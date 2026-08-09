@@ -33,21 +33,22 @@ import {
   pickNextOnboardingStyleCarouselIndex,
   type OnboardingStyleCarouselEntry,
 } from '../lib/onboardingStyleCarousel';
+import { getOnboardingPreviewImage } from '../lib/onboardingPreviewCatalog';
 import type {
   HealthResponse,
   LocalCodexSessionResponse,
   StudioReadinessSnapshot,
 } from '../packages/shared/src';
 
-const ONBOARDING_STYLE_PREVIEW_IMAGES: Record<string, string | undefined> = {
-  'SP01-005': stylePreviewSp01005,
-  'SP02-001': stylePreviewSp02001,
-  'SP02-003': stylePreviewSp02003,
-  'SP02-004': stylePreviewSp02004,
-  'SP06-082': stylePreviewSp06082,
-  'SP06-095': stylePreviewSp06095,
-  'SP11-047': stylePreviewSp11047,
-  'SP11-050': stylePreviewSp11050,
+const ONBOARDING_STYLE_PREVIEW_IMAGES = {
+  'SP01-005': getOnboardingPreviewImage('SP01-005', stylePreviewSp01005),
+  'SP02-001': getOnboardingPreviewImage('SP02-001', stylePreviewSp02001),
+  'SP02-003': getOnboardingPreviewImage('SP02-003', stylePreviewSp02003),
+  'SP02-004': getOnboardingPreviewImage('SP02-004', stylePreviewSp02004),
+  'SP06-082': getOnboardingPreviewImage('SP06-082', stylePreviewSp06082),
+  'SP06-095': getOnboardingPreviewImage('SP06-095', stylePreviewSp06095),
+  'SP11-047': getOnboardingPreviewImage('SP11-047', stylePreviewSp11047),
+  'SP11-050': getOnboardingPreviewImage('SP11-050', stylePreviewSp11050),
 };
 
 type OnboardingStatus = 'idle' | 'checking' | 'starting' | 'ready';
@@ -152,6 +153,8 @@ function PreviewCard({ entry }: { entry: OnboardingStyleCarouselEntry }) {
               >
                 <img
                   src={entry.imageUrl}
+                  srcSet={entry.imageSrcSet}
+                  sizes="(min-width: 1536px) 224px, (min-width: 1280px) 192px, (min-width: 1024px) 384px, (min-width: 640px) 352px, 140px"
                   alt={entry.alt}
                   width={1024}
                   height={1536}

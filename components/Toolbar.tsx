@@ -29,7 +29,7 @@ import {
   IconX as X,
   IconBolt as Zap,
 } from '@tabler/icons-react';
-import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   formatCodexModelLabel,
   formatCodexSpeedLabel,
@@ -57,6 +57,7 @@ import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 import KeyPopover from './KeyPopover';
 import Tooltip from './Tooltip';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
+import { GenerationElapsedStatus, LivePromptTextarea } from './ToolbarLiveStatus';
 
 export interface ToolbarProps {
   generationConfig: ImageGenerationConfig;
@@ -218,8 +219,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     const [magicInstruction, setMagicInstruction] = useState('');
     const [isRefactoring, setIsRefactoring] = useState(false);
-    const [elapsedTick, setElapsedTick] = useState(0);
-    const [scrambleTick, setScrambleTick] = useState(0);
 
     const codexModels = codexModelCatalog?.models ?? EMPTY_CODEX_MODELS;
     const preferredExecutionModelId = pickPreferredCodexModel(
@@ -249,40 +248,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       .join(' · ');
 
     const isScrambling = isEnhancingPrompt || isRefactoring;
-
-    useEffect(() => {
-      if (!isScrambling) return;
-      const interval = window.setInterval(() => setScrambleTick((t) => t + 1), 30);
-      return () => clearInterval(interval);
-    }, [isScrambling]);
-
-    const scrambleText = useMemo(() => {
-      if (!isScrambling) return '';
-      void scrambleTick;
-      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
-      const targetLength = localPrompt.length > 0 ? localPrompt.length : 50;
-      let scrambled = '';
-      for (let i = 0; i < targetLength; i++) {
-        if (localPrompt[i] === ' ') {
-          scrambled += ' ';
-        } else {
-          scrambled += chars[Math.floor(Math.random() * chars.length)];
-        }
-      }
-      return scrambled;
-    }, [isScrambling, scrambleTick, localPrompt]);
-
-    useEffect(() => {
-      if (!isGenerating || !generationStartTime) return;
-      const interval = window.setInterval(() => setElapsedTick((t) => t + 1), 100);
-      return () => clearInterval(interval);
-    }, [isGenerating, generationStartTime]);
-
-    const elapsedTime = useMemo(() => {
-      if (!isGenerating || !generationStartTime) return '0.0';
-      void elapsedTick;
-      return ((Date.now() - generationStartTime) / 1000).toFixed(1);
-    }, [isGenerating, generationStartTime, elapsedTick]);
 
     const handleSelectExecutionModel = useCallback(
       (model: CodexModel) => {
@@ -357,19 +322,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         setLocalPrompt(generationConfig.prompt || '');
       }
     }, [generationConfig.prompt, localPrompt]);
-
-    useLayoutEffect(() => {
-      if (textareaRef.current) {
-        const target = textareaRef.current;
-        const scrollPos = target.scrollTop;
-        // Reset height to base height to get the correct scrollHeight when text is deleted
-        target.style.height = '28px';
-        const scrollHeight = target.scrollHeight;
-        target.style.height = `${Math.min(Math.max(scrollHeight, 28), 320)}px`;
-        // Restore scroll position to prevent jumping
-        target.scrollTop = scrollPos;
-      }
-    }, [localPrompt, scrambleText]);
 
     const handleTriggerGenerate = useCallback(() => {
       const trimmedPrompt = localPrompt.trim();
@@ -566,15 +518,15 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 </div>
               ) : null}
 
-              <textarea
-                ref={textareaRef}
-                value={isEnhancingPrompt || isRefactoring ? scrambleText : localPrompt}
-                readOnly={isEnhancingPrompt || isRefactoring}
+              <LivePromptTextarea
+                textareaRef={textareaRef}
+                prompt={localPrompt}
+                isScrambling={isScrambling}
+                isHidden={isContextOnly}
                 onFocus={() => {
                   setIsInteracting(true);
                   setIsPromptFocused(true);
                 }}
-                aria-label="Prompt input"
                 onBlur={() => {
                   setIsPromptFocused(false);
                   // IMMEDIATE SYNC ON BLUR: Fixes race condition when clicking external buttons
@@ -623,10 +575,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   e.preventDefault();
                   e.stopPropagation();
                 }}
-                placeholder="Describe what you want to create..."
-                rows={1}
-                className={`custom-scrollbar max-h-[320px] min-w-0 flex-1 self-end overflow-y-auto resize-none border-none bg-transparent px-1.5 py-1 text-[13px] font-medium leading-normal tracking-tight text-zinc-200 outline-none placeholder-zinc-700 sm:min-w-[100px] ${isEnhancingPrompt || isRefactoring ? 'font-mono text-accent-400 opacity-80' : ''} ${isContextOnly ? 'hidden' : ''}`}
-                style={{ minHeight: '28px' }}
               />
 
               {/* LOGIC AI TOOLS */}
@@ -1299,41 +1247,22 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     }
                 `}
               >
-                {/* Progress Bar Layer */}
-                {isGenerating && (
-                  <div
-                    className="absolute bottom-0 left-0 top-0 z-0 w-full origin-left bg-accent-500/20 transition-transform duration-100 ease-linear"
-                    style={{
-                      transform: `scaleX(${Math.min((parseFloat(elapsedTime) / 120) * 100, 100) / 100})`,
-                    }}
-                  />
+                {isGenerating ? (
+                  <GenerationElapsedStatus startTime={generationStartTime} />
+                ) : (
+                  <>
+                    <div className="absolute inset-0 z-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:animate-[shimmer_1.5s_infinite]" />
+                    <div className="relative z-10 flex items-center gap-2">
+                      <>
+                        <Wand2
+                          size={14}
+                          className="group-hover:rotate-12 transition-transform text-accent-300"
+                        />
+                        <span className="text-white">GENERATE</span>
+                      </>
+                    </div>
+                  </>
                 )}
-
-                {/* Subtle Shine Effect Layer */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full z-0 ${isGenerating ? 'animate-shimmer' : 'group-hover:animate-[shimmer_1.5s_infinite]'}`}
-                />
-
-                {/* Content Layer */}
-                <div className="relative z-10 flex items-center gap-2">
-                  {isGenerating ? (
-                    <>
-                      <Send size={14} className="text-accent-200" />
-                      <span className="text-white">QUEUE</span>
-                      <span className="hidden w-12 text-right text-[8px] tabular-nums text-accent-300/80 sm:inline">
-                        {elapsedTime}s
-                      </span>
-                    </>
-                  ) : (
-                    <>
-                      <Wand2
-                        size={14}
-                        className="group-hover:rotate-12 transition-transform text-accent-300"
-                      />
-                      <span className="text-white">GENERATE</span>
-                    </>
-                  )}
-                </div>
               </button>
             ) : null}
           </div>

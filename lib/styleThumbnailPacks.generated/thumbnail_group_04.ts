@@ -328,7 +328,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP07-070-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP07-070-01.webp',
+      '../../assets/recipes/styles/style-card-thumbnails/SP07-070.webp',
       import.meta.url,
     ).href,
     'SP07-070': new URL(

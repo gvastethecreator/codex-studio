@@ -9,7 +9,7 @@ const assetDir = path.join(repoRoot, 'assets', 'recipes', 'character-lab');
 const sourcePath = path.join(assetDir, 'character-lab-control-atlas.source.json');
 const manifestPath = path.join(assetDir, 'character-lab-control-atlas.manifest.json');
 const reportPath = path.join(assetDir, 'character-lab-control-atlas.report.json');
-const runtimeAtlasPath = path.join(assetDir, 'character-lab-control-atlas.png');
+const runtimeAtlasPath = path.join(assetDir, 'character-lab-control-atlas.webp');
 const source512Dir = path.join(assetDir, 'sources', 'mannequin-v1-512');
 const qaPath = path.join(assetDir, 'character-lab-icon-assets.qa.json');
 
@@ -499,7 +499,7 @@ async function buildRuntimeAtlas(source: SourceContract, manifest: AtlasManifest
     },
   })
     .composite(composites)
-    .png({ compressionLevel: 9, adaptiveFiltering: true })
+    .webp({ lossless: true, effort: 6 })
     .toFile(runtimeAtlasPath);
 
   return { qaFrames, missing };
@@ -532,6 +532,7 @@ async function main() {
   const report = await readJson<Record<string, unknown>>(reportPath);
 
   manifest.frames = {};
+  manifest.image = path.basename(runtimeAtlasPath);
   manifest.cellSize = RUNTIME_CELL;
   manifest.columns = RUNTIME_COLUMNS;
   manifest.rows = Math.ceil(Object.keys(source.frames).length / RUNTIME_COLUMNS);
@@ -610,6 +611,9 @@ async function main() {
     sha256: atlasHash,
   };
   report.assetQa = source.qa;
+  if (report.qa && typeof report.qa === 'object' && !Array.isArray(report.qa)) {
+    (report.qa as Record<string, unknown>).runtimeAtlas = relativePath(runtimeAtlasPath);
+  }
 
   await writeJson(sourcePath, source);
   await writeJson(manifestPath, manifest);

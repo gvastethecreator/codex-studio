@@ -1,3 +1,4 @@
+import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
@@ -6,6 +7,7 @@ const stylesAssetDir = path.join(rootDir, 'assets', 'recipes', 'styles');
 const thumbnailDirName = 'style-card-thumbnails';
 const defaultsDirName = 'defaults';
 const outputDir = path.join(rootDir, 'lib', 'styleThumbnailPacks.generated');
+const aliasesPath = path.join(import.meta.dir, 'style-thumbnail-aliases.json');
 const checkMode = process.argv.includes('--check');
 
 function packIdFor(fileName: string) {
@@ -19,15 +21,22 @@ function assetKey(fileName: string) {
 }
 
 interface ThumbnailAsset {
+  key: string;
   fileName: string;
   sourceDirName: string;
+}
+
+interface ThumbnailAlias {
+  alias: string;
+  target: string;
+  sha256: string;
 }
 
 function buildPackEntries(assets: ThumbnailAsset[]) {
   return assets
     .map(
-      ({ fileName, sourceDirName }) =>
-        `    ${JSON.stringify(assetKey(fileName))}: new URL(${JSON.stringify(`../../assets/recipes/styles/${sourceDirName}/${fileName}`)}, import.meta.url).href,`,
+      ({ key, fileName, sourceDirName }) =>
+        `    ${JSON.stringify(key)}: new URL(${JSON.stringify(`../../assets/recipes/styles/${sourceDirName}/${fileName}`)}, import.meta.url).href,`,
     )
     .join('\n');
 }
@@ -82,17 +91,36 @@ const defaultFiles = (await readdir(path.join(stylesAssetDir, defaultsDirName)))
   .sort((a, b) => a.localeCompare(b));
 const assetsByKey = new Map<string, ThumbnailAsset>();
 for (const fileName of defaultFiles) {
-  assetsByKey.set(assetKey(fileName), { fileName, sourceDirName: defaultsDirName });
+  const key = assetKey(fileName);
+  assetsByKey.set(key, { key, fileName, sourceDirName: defaultsDirName });
 }
 for (const fileName of thumbnailFiles) {
-  assetsByKey.set(assetKey(fileName), { fileName, sourceDirName: thumbnailDirName });
+  const key = assetKey(fileName);
+  assetsByKey.set(key, { key, fileName, sourceDirName: thumbnailDirName });
 }
-const assets = [...assetsByKey.values()].sort((a, b) => a.fileName.localeCompare(b.fileName));
+const aliases = JSON.parse(await readFile(aliasesPath, 'utf8')) as ThumbnailAlias[];
+for (const alias of aliases) {
+  if (assetsByKey.has(alias.alias)) {
+    throw new Error(`Thumbnail alias collides with a physical asset: ${alias.alias}`);
+  }
+  const target = assetsByKey.get(alias.target);
+  if (!target) throw new Error(`Thumbnail alias target is missing: ${alias.target}`);
+  const targetPath = path.join(stylesAssetDir, target.sourceDirName, target.fileName);
+  const targetHash = createHash('sha256')
+    .update(await readFile(targetPath))
+    .digest('hex');
+  if (targetHash !== alias.sha256) {
+    throw new Error(`Thumbnail alias target hash changed: ${alias.target}`);
+  }
+  assetsByKey.set(alias.alias, { ...target, key: alias.alias });
+}
+const assets = [...assetsByKey.values()].sort((a, b) =>
+  `${a.key}.webp`.localeCompare(`${b.key}.webp`),
+);
 const filesByPack = new Map<string, ThumbnailAsset[]>();
 for (const asset of assets) {
-  const { fileName } = asset;
-  const packId = packIdFor(fileName);
-  if (!packId) throw new Error(`Cannot resolve thumbnail pack for ${fileName}`);
+  const packId = packIdFor(asset.key);
+  if (!packId) throw new Error(`Cannot resolve thumbnail pack for ${asset.key}`);
   filesByPack.set(packId, [...(filesByPack.get(packId) ?? []), asset]);
 }
 const packIds = [...filesByPack.keys()].sort();

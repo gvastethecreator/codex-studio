@@ -25,7 +25,7 @@ import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
 import { QueueProgressBar } from './header/QueueProgressBar';
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
-import { getRecipeModule } from '../lib/recipeModules';
+import { getRecipeShellTitle } from '../lib/recipeShellMetadata';
 import type { GenerationProviderId } from '../packages/shared/src';
 
 export interface HeaderToolbarProps {
@@ -99,7 +99,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const providerButtonRef = React.useRef<HTMLButtonElement>(null);
   const activeRecipeAlias = resolveRecipeAlias(activeRecipeAliasId);
   const activeRecipeData = activeRecipe
-    ? { name: activeRecipeAlias?.title ?? getRecipeModule(activeRecipe)?.title ?? activeRecipe }
+    ? { name: activeRecipeAlias?.title ?? getRecipeShellTitle(activeRecipe) }
     : null;
   const isRecipeView = routeView === 'recipe' && Boolean(activeRecipeData);
   const activeWorkspace = workspaces.find((w) => w.id === activeWorkspaceId);

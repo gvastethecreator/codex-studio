@@ -179,6 +179,7 @@ export const useCameraViewport = ({
 
   const mountRef = useRef<HTMLDivElement>(null);
   const sceneObjects = useRef<Record<string, any>>({});
+  const requestRenderRef = useRef<() => void>(() => {});
   const stateRef = useRef<
     CameraViewportState & {
       lastRenderedAz?: number;
@@ -197,10 +198,12 @@ export const useCameraViewport = ({
 
   useEffect(() => {
     stateRef.current = { ...stateRef.current, azimuth, elevation, distance };
+    requestRenderRef.current();
   }, [azimuth, elevation, distance]);
 
   useEffect(() => {
     hasReferenceRef.current = hasReference;
+    requestRenderRef.current();
   }, [hasReference]);
 
   // react-doctor-disable-next-line react-doctor/effect-needs-cleanup
@@ -350,6 +353,7 @@ export const useCameraViewport = ({
             subject.material.color.setHex(0xffffff);
             subject.material.needsUpdate = true;
             stateRef.current.lastRenderedAz = -999;
+            requestRenderRef.current();
           },
           undefined,
           () => {},
@@ -564,8 +568,18 @@ export const useCameraViewport = ({
 
       const requestIdRef = { current: 0 };
       let needsUpdate = true;
+      let disposed = false;
+
+      const requestRender = () => {
+        if (disposed) return;
+        needsUpdate = true;
+        if (requestIdRef.current === 0) {
+          requestIdRef.current = requestAnimationFrame(animate);
+        }
+      };
 
       const animate = () => {
+        requestIdRef.current = 0;
         const {
           azimuth: currentAzimuth,
           elevation: currentElevation,
@@ -669,11 +683,10 @@ export const useCameraViewport = ({
 
           needsUpdate = false;
         }
-
-        requestIdRef.current = requestAnimationFrame(animate);
       };
 
-      requestIdRef.current = requestAnimationFrame(animate);
+      requestRenderRef.current = requestRender;
+      requestRender();
 
       let isDragging = false;
       let lastX = 0;
@@ -745,13 +758,15 @@ export const useCameraViewport = ({
             pipRenderer.setSize(pipWidth, pipHeight);
           }
 
-          needsUpdate = true;
+          requestRender();
         });
       });
       resizeObserver.observe(mountNode);
 
       cleanupViewport = () => {
-        cancelAnimationFrame(requestIdRef.current);
+        disposed = true;
+        if (requestIdRef.current !== 0) cancelAnimationFrame(requestIdRef.current);
+        if (requestRenderRef.current === requestRender) requestRenderRef.current = () => {};
         resizeObserver.disconnect();
         canvasElement.removeEventListener('mousedown', onMouseDown);
         canvasElement.removeEventListener('wheel', onWheel);
@@ -799,6 +814,7 @@ export const useCameraViewport = ({
       subject.material.color.setHex(0x222222);
       subject.material.needsUpdate = true;
       stateRef.current.lastRenderedAz = -999;
+      requestRenderRef.current();
       return;
     }
 
@@ -825,6 +841,7 @@ export const useCameraViewport = ({
           subject.material.color.setHex(0xffffff);
           subject.material.needsUpdate = true;
           stateRef.current.lastRenderedAz = -999;
+          requestRenderRef.current();
         },
         undefined,
         () => {},

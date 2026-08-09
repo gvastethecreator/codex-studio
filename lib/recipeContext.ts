@@ -1,7 +1,7 @@
 import type { ImageGenerationConfig, RecipeId } from '../types';
-import { extractRecipeIdFromRecipeContext } from '../packages/shared/src/promptTransport';
 import { buildRecipeModuleContext, getRecipeModule } from './recipeModules';
 import type { RecipeContextParams } from './recipeContextBuilders';
+export { parseRecipeIdFromContext } from './recipeShellMetadata';
 
 type RegisteredRecipeId = Exclude<RecipeId, null>;
 
@@ -21,14 +21,6 @@ export function resolveGenerationConfig(config: ImageGenerationConfig): ImageGen
     ...config,
     recipeContext,
   };
-}
-
-export function parseRecipeIdFromContext(context: string = ''): RecipeId {
-  const recipeId = extractRecipeIdFromRecipeContext(context);
-  if (recipeId && getRecipeModule(recipeId as RegisteredRecipeId)) {
-    return recipeId as RegisteredRecipeId;
-  }
-  return null;
 }
 
 function getRecipeContextBuilder(recipeId: RegisteredRecipeId) {

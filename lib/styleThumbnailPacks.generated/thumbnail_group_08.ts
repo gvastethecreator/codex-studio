@@ -362,7 +362,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-002-05': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-002-05.webp',
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-002.webp',
       import.meta.url,
     ).href,
     'SP17-002': new URL(
@@ -394,7 +394,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-007-06': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-007-06.webp',
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-007.webp',
       import.meta.url,
     ).href,
     'SP17-007': new URL(
@@ -438,7 +438,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-011-06': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-011-06.webp',
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-011.webp',
       import.meta.url,
     ).href,
     'SP17-011': new URL(
@@ -466,7 +466,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-016-05': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-016-05.webp',
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-016.webp',
       import.meta.url,
     ).href,
     'SP17-016': new URL(
@@ -558,7 +558,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-034-05': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-034-05.webp',
+      '../../assets/recipes/styles/style-card-thumbnails/SP17-034.webp',
       import.meta.url,
     ).href,
     'SP17-034': new URL(

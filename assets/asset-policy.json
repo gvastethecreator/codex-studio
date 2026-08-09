@@ -7,8 +7,8 @@
       "assets/asset-pack-lock.json",
       "assets/asset-policy.json",
       "assets/logo.svg",
-      "assets/recipes/character-lab/character-lab-control-atlas.png",
-      "assets/recipes/character-lab/character-lab-option-atlas.png",
+      "assets/recipes/character-lab/character-lab-control-atlas.webp",
+      "assets/recipes/character-lab/character-lab-option-atlas.webp",
       "assets/recipes/styles/defaults/SP01-001.webp",
       "assets/recipes/styles/defaults/SP01-005.webp",
       "assets/recipes/styles/defaults/SP02-001.webp",
@@ -20,6 +20,7 @@
       "assets/recipes/styles/defaults/SP11-050.webp"
     ],
     "includePrefixes": [
+      "assets/recipes/onboarding/",
       "assets/recipes/cards/",
       "assets/recipes/styles/previews/",
       "assets/recipes/styles/style-card-thumbnails/"

@@ -1,7 +1,7 @@
 // Generated from assets/recipes/character-lab/character-lab-option-atlas.manifest.json.
 // Do not hand-edit frame coordinates.
 export const CHARACTER_LAB_OPTION_ICON_ATLAS_URL = new URL(
-  '../assets/recipes/character-lab/character-lab-option-atlas.png',
+  '../assets/recipes/character-lab/character-lab-option-atlas.webp',
   import.meta.url,
 ).href;
 export const CHARACTER_LAB_OPTION_ICON_ATLAS_CELL_SIZE = 128;

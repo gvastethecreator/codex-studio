@@ -39,6 +39,24 @@ describe('onboardingStyleCarousel', () => {
     });
   });
 
+  it('keeps responsive image candidates with the selected preset', () => {
+    const firstSeed = ONBOARDING_STYLE_CAROUSEL_SEEDS[0];
+    const entries = buildOnboardingStyleCarouselEntries(
+      {
+        [firstSeed.presetId]: {
+          src: '/assets/film-noir.webp',
+          srcSet: '/assets/film-noir-384.webp 384w, /assets/film-noir.webp 1024w',
+        },
+      },
+      '/assets/fallback.webp',
+    );
+
+    expect(entries[0]).toMatchObject({
+      imageUrl: '/assets/film-noir.webp',
+      imageSrcSet: '/assets/film-noir-384.webp 384w, /assets/film-noir.webp 1024w',
+    });
+  });
+
   it('picks a random next slide without repeating the current slide', () => {
     expect(pickNextOnboardingStyleCarouselIndex(4, 2, () => 0.6)).toBe(3);
     expect(pickNextOnboardingStyleCarouselIndex(4, 2, () => 0.2)).toBe(0);

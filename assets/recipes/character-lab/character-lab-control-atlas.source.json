@@ -53,9 +53,9 @@
     }
   },
   "atlas": {
-    "path": "assets/recipes/character-lab/character-lab-control-atlas.png",
+    "path": "assets/recipes/character-lab/character-lab-control-atlas.webp",
     "size": [2048, 2304],
-    "sha256": "a10347718291477aa1c64673f58b6d05ae965469cfeaf1b113cdff19324e622f"
+    "sha256": "d8d924aff9a1c99e5e538be63ab9c8897d6139bcf39d5dde21ca234d2a34e8bc"
   },
   "batches": [
     {
@@ -1916,7 +1916,7 @@
       "sourceRow": 0,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Front View"
     },
     "poses:back": {
@@ -1930,7 +1930,7 @@
       "sourceRow": 0,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Back View"
     },
     "poses:left": {
@@ -1944,7 +1944,7 @@
       "sourceRow": 0,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Left Profile"
     },
     "poses:right": {
@@ -1958,7 +1958,7 @@
       "sourceRow": 0,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Right Profile"
     },
     "poses:three_quarter": {
@@ -1972,7 +1972,7 @@
       "sourceRow": 0,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "3/4 View"
     },
     "poses:expressions": {
@@ -1986,7 +1986,7 @@
       "sourceRow": 0,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Facial Expressions"
     },
     "poses:closeup_portrait": {
@@ -2000,7 +2000,7 @@
       "sourceRow": 0,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Close-up Portrait"
     },
     "poses:action_running": {
@@ -2014,7 +2014,7 @@
       "sourceRow": 0,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Running"
     },
     "poses:action_jumping": {
@@ -2028,7 +2028,7 @@
       "sourceRow": 0,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Jumping"
     },
     "poses:action_fighting": {
@@ -2042,7 +2042,7 @@
       "sourceRow": 0,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Fighting Stance"
     },
     "poses:action_sneaking": {
@@ -2056,7 +2056,7 @@
       "sourceRow": 0,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Sneaking"
     },
     "poses:action_spellcasting": {
@@ -2070,7 +2070,7 @@
       "sourceRow": 0,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Casting Spell"
     },
     "poses:victory_pose": {
@@ -2084,7 +2084,7 @@
       "sourceRow": 0,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Victory Pose"
     },
     "poses:defeated_pose": {
@@ -2098,7 +2098,7 @@
       "sourceRow": 0,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Defeated Pose"
     },
     "poses:dodging": {
@@ -2112,7 +2112,7 @@
       "sourceRow": 0,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dodging"
     },
     "poses:blocking": {
@@ -2126,7 +2126,7 @@
       "sourceRow": 0,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Blocking"
     },
     "poses:throwing": {
@@ -2140,7 +2140,7 @@
       "sourceRow": 1,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Throwing"
     },
     "poses:cheering": {
@@ -2154,7 +2154,7 @@
       "sourceRow": 1,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cheering"
     },
     "poses:thinking": {
@@ -2168,7 +2168,7 @@
       "sourceRow": 1,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Thinking"
     },
     "poses:reaction_scared": {
@@ -2182,7 +2182,7 @@
       "sourceRow": 1,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Scared"
     },
     "poses:reaction_confused": {
@@ -2196,7 +2196,7 @@
       "sourceRow": 1,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Confused"
     },
     "poses:yawning": {
@@ -2210,7 +2210,7 @@
       "sourceRow": 1,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Yawning"
     },
     "poses:smirking": {
@@ -2224,7 +2224,7 @@
       "sourceRow": 1,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Smirking"
     },
     "poses:facepalm": {
@@ -2238,7 +2238,7 @@
       "sourceRow": 1,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Facepalm"
     },
     "poses:pointing": {
@@ -2252,7 +2252,7 @@
       "sourceRow": 1,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Pointing"
     },
     "poses:interaction_waving": {
@@ -2266,7 +2266,7 @@
       "sourceRow": 1,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Waving"
     },
     "poses:interaction_device": {
@@ -2280,7 +2280,7 @@
       "sourceRow": 1,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Using Device"
     },
     "poses:holding_sign": {
@@ -2294,7 +2294,7 @@
       "sourceRow": 1,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Holding Sign"
     },
     "poses:shrugging": {
@@ -2308,7 +2308,7 @@
       "sourceRow": 1,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Shrugging"
     },
     "poses:reading_book": {
@@ -2322,7 +2322,7 @@
       "sourceRow": 1,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Reading a Book"
     },
     "poses:drinking_mug": {
@@ -2336,7 +2336,7 @@
       "sourceRow": 1,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Drinking from a Mug"
     },
     "poses:couples_holding_hands": {
@@ -2350,7 +2350,7 @@
       "sourceRow": 1,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Holding Hands"
     },
     "poses:couples_back_to_back": {
@@ -2364,7 +2364,7 @@
       "sourceRow": 2,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Back to Back"
     },
     "poses:couples_embrace": {
@@ -2378,7 +2378,7 @@
       "sourceRow": 2,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Embrace"
     },
     "poses:couples_fighting": {
@@ -2392,7 +2392,7 @@
       "sourceRow": 2,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Fighting Together"
     },
     "poses:couples_dancing": {
@@ -2406,7 +2406,7 @@
       "sourceRow": 2,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dancing"
     },
     "poses:couples_selfie": {
@@ -2420,7 +2420,7 @@
       "sourceRow": 2,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Taking a Selfie"
     },
     "poses:group_pose": {
@@ -2434,7 +2434,7 @@
       "sourceRow": 2,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Group Pose (3)"
     },
     "poses:carrying": {
@@ -2448,7 +2448,7 @@
       "sourceRow": 2,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Carrying Partner"
     },
     "special:isometric_sheet": {
@@ -2462,7 +2462,7 @@
       "sourceRow": 2,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Isometric Views (2x2)"
     },
     "special:turnaround_sheet": {
@@ -2476,7 +2476,7 @@
       "sourceRow": 2,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Turnaround Sheet"
     },
     "special:dynamic_sheet": {
@@ -2490,7 +2490,7 @@
       "sourceRow": 2,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dynamic Sheet"
     },
     "special:sheet_with_items": {
@@ -2504,7 +2504,7 @@
       "sourceRow": 2,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Sheet with Items"
     },
     "special:anatomy_sheet": {
@@ -2518,7 +2518,7 @@
       "sourceRow": 2,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Anatomy Sheet"
     },
     "special:disassemble_sheet": {
@@ -2532,7 +2532,7 @@
       "sourceRow": 2,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Disassembled View"
     },
     "special:wireframe_sheet": {
@@ -2546,7 +2546,7 @@
       "sourceRow": 2,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "3D Wireframe View"
     },
     "special:skeleton_sheet": {
@@ -2560,7 +2560,7 @@
       "sourceRow": 2,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Skeleton View"
     },
     "special:sticker_sheet": {
@@ -2574,7 +2574,7 @@
       "sourceRow": 2,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-02.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Sticker Sheet"
     },
     "special:pixel_art_portrait": {
@@ -2588,7 +2588,7 @@
       "sourceRow": 3,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Pixel Art Portrait"
     },
     "special:vga_box_art": {
@@ -2602,7 +2602,7 @@
       "sourceRow": 3,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "VGA Box Art"
     },
     "special:tarot_card": {
@@ -2616,7 +2616,7 @@
       "sourceRow": 3,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Tarot Card"
     },
     "special:plastic_toy": {
@@ -2630,7 +2630,7 @@
       "sourceRow": 3,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Plastic Toy"
     },
     "special:collectible_figurine": {
@@ -2644,7 +2644,7 @@
       "sourceRow": 3,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Collectible Figurine"
     },
     "special:bronze_sculpture": {
@@ -2658,7 +2658,7 @@
       "sourceRow": 3,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Bronze Sculpture"
     },
     "special:marble_sculpture": {
@@ -2672,7 +2672,7 @@
       "sourceRow": 3,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Marble Sculpture"
     },
     "special:videogame_screenshot": {
@@ -2686,7 +2686,7 @@
       "sourceRow": 3,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Videogame Screenshot"
     },
     "special:rpg_card": {
@@ -2700,7 +2700,7 @@
       "sourceRow": 3,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "RPG Card"
     },
     "special:transform_child": {
@@ -2714,7 +2714,7 @@
       "sourceRow": 3,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "As a Child"
     },
     "special:transform_teen": {
@@ -2728,7 +2728,7 @@
       "sourceRow": 3,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "As a Teenager"
     },
     "special:transform_young_adult": {
@@ -2742,7 +2742,7 @@
       "sourceRow": 3,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "As a Young Adult"
     },
     "special:transform_elder": {
@@ -2756,7 +2756,7 @@
       "sourceRow": 3,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "As an Elder"
     },
     "special:transform_evil": {
@@ -2770,7 +2770,7 @@
       "sourceRow": 3,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Evil Version"
     },
     "special:transform_holy": {
@@ -2784,7 +2784,7 @@
       "sourceRow": 3,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Holy Version"
     },
     "special:transform_gender_swap": {
@@ -2798,7 +2798,7 @@
       "sourceRow": 3,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-03.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Gender-Swapped"
     },
     "special:transform_cybernetic": {
@@ -2812,7 +2812,7 @@
       "sourceRow": 4,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cybernetic"
     },
     "special:transform_apocalyptic": {
@@ -2826,7 +2826,7 @@
       "sourceRow": 4,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Apocalyptic Survivor"
     },
     "special:transform_antagonist": {
@@ -2840,7 +2840,7 @@
       "sourceRow": 4,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Create Antagonist"
     },
     "special:transform_hologram": {
@@ -2854,7 +2854,7 @@
       "sourceRow": 4,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Hologram"
     },
     "special:transform_crystal": {
@@ -2868,7 +2868,7 @@
       "sourceRow": 4,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Crystallized"
     },
     "special:transform_fire": {
@@ -2882,7 +2882,7 @@
       "sourceRow": 4,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Fire Elemental"
     },
     "special:transform_nature": {
@@ -2896,7 +2896,7 @@
       "sourceRow": 4,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Nature Spirit"
     },
     "special:transform_constellation": {
@@ -2910,7 +2910,7 @@
       "sourceRow": 4,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Constellation"
     },
     "special:weapon_sheet": {
@@ -2924,7 +2924,7 @@
       "sourceRow": 4,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Weapon Sheet"
     },
     "special:outfit_variations": {
@@ -2938,7 +2938,7 @@
       "sourceRow": 4,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Outfit Variations"
     },
     "special:vehicle_mount_sheet": {
@@ -2952,7 +2952,7 @@
       "sourceRow": 4,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Vehicle/Mount Sheet"
     },
     "special:home_base_art": {
@@ -2966,7 +2966,7 @@
       "sourceRow": 4,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Home/Base Concept Art"
     },
     "special:asset_food": {
@@ -2980,7 +2980,7 @@
       "sourceRow": 4,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Favorite Foods"
     },
     "special:asset_possessions": {
@@ -2994,7 +2994,7 @@
       "sourceRow": 4,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Prized Possessions"
     },
     "special:asset_inventory": {
@@ -3008,7 +3008,7 @@
       "sourceRow": 4,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Inventory Sheet"
     },
     "special:asset_powers": {
@@ -3022,7 +3022,7 @@
       "sourceRow": 4,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-04.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Magical Powers"
     },
     "spritesheets:walk": {
@@ -3036,7 +3036,7 @@
       "sourceRow": 5,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Walk"
     },
     "spritesheets:run": {
@@ -3050,7 +3050,7 @@
       "sourceRow": 5,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Run"
     },
     "spritesheets:jump": {
@@ -3064,7 +3064,7 @@
       "sourceRow": 5,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Jump"
     },
     "spritesheets:dash": {
@@ -3078,7 +3078,7 @@
       "sourceRow": 5,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dash"
     },
     "spritesheets:slide": {
@@ -3092,7 +3092,7 @@
       "sourceRow": 5,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Slide"
     },
     "spritesheets:dodge_roll": {
@@ -3106,7 +3106,7 @@
       "sourceRow": 5,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dodge / Roll"
     },
     "spritesheets:swimming": {
@@ -3120,7 +3120,7 @@
       "sourceRow": 5,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Swimming"
     },
     "spritesheets:crawling": {
@@ -3134,7 +3134,7 @@
       "sourceRow": 5,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Crawling"
     },
     "spritesheets:climbing": {
@@ -3148,7 +3148,7 @@
       "sourceRow": 5,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Climbing"
     },
     "spritesheets:levitate_hover": {
@@ -3162,7 +3162,7 @@
       "sourceRow": 5,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Levitate / Hover"
     },
     "spritesheets:melee_attack": {
@@ -3176,7 +3176,7 @@
       "sourceRow": 5,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Melee Attack"
     },
     "spritesheets:ranged_attack": {
@@ -3190,7 +3190,7 @@
       "sourceRow": 5,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Ranged Attack"
     },
     "spritesheets:magic_spell": {
@@ -3204,7 +3204,7 @@
       "sourceRow": 5,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Magic Spell"
     },
     "spritesheets:charge_attack": {
@@ -3218,7 +3218,7 @@
       "sourceRow": 5,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Charge Attack"
     },
     "spritesheets:special_attack": {
@@ -3232,7 +3232,7 @@
       "sourceRow": 5,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Special Attack"
     },
     "spritesheets:block": {
@@ -3246,7 +3246,7 @@
       "sourceRow": 5,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-05.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Block"
     },
     "spritesheets:parry": {
@@ -3260,7 +3260,7 @@
       "sourceRow": 6,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Parry"
     },
     "spritesheets:item_use": {
@@ -3274,7 +3274,7 @@
       "sourceRow": 6,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Item Use"
     },
     "spritesheets:throwing": {
@@ -3288,7 +3288,7 @@
       "sourceRow": 6,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Throwing"
     },
     "spritesheets:interact": {
@@ -3302,7 +3302,7 @@
       "sourceRow": 6,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Interact"
     },
     "spritesheets:idle": {
@@ -3316,7 +3316,7 @@
       "sourceRow": 6,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Idle Animation"
     },
     "spritesheets:hurt_animation": {
@@ -3330,7 +3330,7 @@
       "sourceRow": 6,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Hurt"
     },
     "spritesheets:dizzy_stunned": {
@@ -3344,7 +3344,7 @@
       "sourceRow": 6,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dizzy / Stunned"
     },
     "spritesheets:death_animation": {
@@ -3358,7 +3358,7 @@
       "sourceRow": 6,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Death"
     },
     "spritesheets:get_up": {
@@ -3372,7 +3372,7 @@
       "sourceRow": 6,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Get Up"
     },
     "spritesheets:power_up_aura": {
@@ -3386,7 +3386,7 @@
       "sourceRow": 6,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Power Up"
     },
     "spritesheets:celebrate_victory": {
@@ -3400,7 +3400,7 @@
       "sourceRow": 6,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Celebrate / Victory"
     },
     "spritesheets:sleeping": {
@@ -3414,7 +3414,7 @@
       "sourceRow": 6,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Sleeping"
     },
     "spritesheets:teleport_in": {
@@ -3428,7 +3428,7 @@
       "sourceRow": 6,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Teleport In"
     },
     "spritesheets:crouch": {
@@ -3442,7 +3442,7 @@
       "sourceRow": 6,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Crouch"
     },
     "spritesheets:shocked": {
@@ -3456,7 +3456,7 @@
       "sourceRow": 6,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Shocked"
     },
     "spritesheets:tired": {
@@ -3470,7 +3470,7 @@
       "sourceRow": 6,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-06.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Tired"
     },
     "spritesheets:alert": {
@@ -3484,7 +3484,7 @@
       "sourceRow": 7,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Alert"
     },
     "spritesheets:emote_wave": {
@@ -3498,7 +3498,7 @@
       "sourceRow": 7,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Wave"
     },
     "spritesheets:energetic_greeting": {
@@ -3512,7 +3512,7 @@
       "sourceRow": 7,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Energetic Greeting"
     },
     "spritesheets:emote_laugh": {
@@ -3526,7 +3526,7 @@
       "sourceRow": 7,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Laugh"
     },
     "spritesheets:dance_loop": {
@@ -3540,7 +3540,7 @@
       "sourceRow": 7,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dance"
     },
     "spritesheets:thumbs_up": {
@@ -3554,7 +3554,7 @@
       "sourceRow": 7,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Thumbs Up"
     },
     "spritesheets:bow": {
@@ -3568,7 +3568,7 @@
       "sourceRow": 7,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Bow"
     },
     "spritesheets:emote_taunt": {
@@ -3582,7 +3582,7 @@
       "sourceRow": 7,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Taunt"
     },
     "spritesheets:emote_nod": {
@@ -3596,7 +3596,7 @@
       "sourceRow": 7,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Nod Yes"
     },
     "spritesheets:emote_shake_head": {
@@ -3610,7 +3610,7 @@
       "sourceRow": 7,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Shake Head No"
     },
     "spritesheets:emote_cry": {
@@ -3624,7 +3624,7 @@
       "sourceRow": 7,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cry"
     },
     "spritesheets:shrug": {
@@ -3638,7 +3638,7 @@
       "sourceRow": 7,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Shrug"
     },
     "spritesheets:facepalm": {
@@ -3652,7 +3652,7 @@
       "sourceRow": 7,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Facepalm"
     },
     "spritesheets:point": {
@@ -3666,7 +3666,7 @@
       "sourceRow": 7,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Point"
     },
     "spritesheets:clap": {
@@ -3680,7 +3680,7 @@
       "sourceRow": 7,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Clap"
     },
     "spritesheets:salute": {
@@ -3694,7 +3694,7 @@
       "sourceRow": 7,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-07.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Salute"
     },
     "scenes:char_home": {
@@ -3708,7 +3708,7 @@
       "sourceRow": 8,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Home"
     },
     "scenes:char_workplace": {
@@ -3722,7 +3722,7 @@
       "sourceRow": 8,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Workplace"
     },
     "scenes:char_yard": {
@@ -3736,7 +3736,7 @@
       "sourceRow": 8,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Yard/Garden"
     },
     "scenes:char_room": {
@@ -3750,7 +3750,7 @@
       "sourceRow": 8,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Room"
     },
     "scenes:char_hobby_space": {
@@ -3764,7 +3764,7 @@
       "sourceRow": 8,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Hobby Space"
     },
     "scenes:char_kitchen": {
@@ -3778,7 +3778,7 @@
       "sourceRow": 8,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Kitchen"
     },
     "scenes:char_trophy_room": {
@@ -3792,7 +3792,7 @@
       "sourceRow": 8,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Trophy Room"
     },
     "scenes:char_favorite_spot": {
@@ -3806,7 +3806,7 @@
       "sourceRow": 8,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Favorite Spot"
     },
     "scenes:char_vehicle": {
@@ -3820,7 +3820,7 @@
       "sourceRow": 8,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Vehicle"
     },
     "scenes:char_neighborhood": {
@@ -3834,7 +3834,7 @@
       "sourceRow": 8,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Their Neighborhood"
     },
     "scenes:forest": {
@@ -3848,7 +3848,7 @@
       "sourceRow": 8,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Mystical Forest"
     },
     "scenes:tavern": {
@@ -3862,7 +3862,7 @@
       "sourceRow": 8,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Fantasy Tavern"
     },
     "scenes:dragon_lair": {
@@ -3876,7 +3876,7 @@
       "sourceRow": 8,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dragon's Lair"
     },
     "scenes:ancient_temple": {
@@ -3890,7 +3890,7 @@
       "sourceRow": 8,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Ancient Temple"
     },
     "scenes:library": {
@@ -3904,7 +3904,7 @@
       "sourceRow": 8,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Grand Library"
     },
     "scenes:steampunk_workshop": {
@@ -3918,7 +3918,7 @@
       "sourceRow": 8,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-08.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Steampunk Workshop"
     },
     "scenes:clockwork_city": {
@@ -3932,7 +3932,7 @@
       "sourceRow": 9,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Clockwork City"
     },
     "scenes:crystalline_caverns": {
@@ -3946,7 +3946,7 @@
       "sourceRow": 9,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Crystalline Caverns"
     },
     "scenes:haunted_mansion": {
@@ -3960,7 +3960,7 @@
       "sourceRow": 9,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Haunted Mansion"
     },
     "scenes:marketplace": {
@@ -3974,7 +3974,7 @@
       "sourceRow": 9,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Bustling Marketplace"
     },
     "scenes:gladiator_arena": {
@@ -3988,7 +3988,7 @@
       "sourceRow": 9,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Gladiator Arena"
     },
     "scenes:elemental_plane": {
@@ -4002,7 +4002,7 @@
       "sourceRow": 9,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Elemental Plane"
     },
     "scenes:throne_room": {
@@ -4016,7 +4016,7 @@
       "sourceRow": 9,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Throne Room"
     },
     "scenes:alchemist_lab": {
@@ -4030,7 +4030,7 @@
       "sourceRow": 9,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Alchemist's Lab"
     },
     "scenes:world_tree": {
@@ -4044,7 +4044,7 @@
       "sourceRow": 9,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "World Tree"
     },
     "scenes:dwarven_forge": {
@@ -4058,7 +4058,7 @@
       "sourceRow": 9,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dwarven Forge"
     },
     "scenes:elven_city": {
@@ -4072,7 +4072,7 @@
       "sourceRow": 9,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Elven City"
     },
     "scenes:gothic_cathedral": {
@@ -4086,7 +4086,7 @@
       "sourceRow": 9,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Gothic Cathedral"
     },
     "scenes:wizard_tower_observatory": {
@@ -4100,7 +4100,7 @@
       "sourceRow": 9,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Wizard's Observatory"
     },
     "scenes:undead_crypt": {
@@ -4114,7 +4114,7 @@
       "sourceRow": 9,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Undead Crypt"
     },
     "scenes:cyberpunk": {
@@ -4128,7 +4128,7 @@
       "sourceRow": 9,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cyberpunk City"
     },
     "scenes:space_station": {
@@ -4142,7 +4142,7 @@
       "sourceRow": 9,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-09.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Sci-Fi Space Station"
     },
     "scenes:hightech_lab": {
@@ -4156,7 +4156,7 @@
       "sourceRow": 10,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "High-Tech Lab"
     },
     "scenes:post_apoc": {
@@ -4170,7 +4170,7 @@
       "sourceRow": 10,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Post-Apocalyptic Ruins"
     },
     "scenes:alien_planet": {
@@ -4184,7 +4184,7 @@
       "sourceRow": 10,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Alien Planet"
     },
     "scenes:volcanic_wasteland": {
@@ -4198,7 +4198,7 @@
       "sourceRow": 10,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Volcanic Wasteland"
     },
     "scenes:dystopian_megastructure": {
@@ -4212,7 +4212,7 @@
       "sourceRow": 10,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dystopian Megastructure"
     },
     "scenes:spaceship_bridge": {
@@ -4226,7 +4226,7 @@
       "sourceRow": 10,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Spaceship Bridge"
     },
     "scenes:hangar_bay": {
@@ -4240,7 +4240,7 @@
       "sourceRow": 10,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Hangar Bay"
     },
     "scenes:cryo_chamber": {
@@ -4254,7 +4254,7 @@
       "sourceRow": 10,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cryo Chamber"
     },
     "scenes:biopunk_lab": {
@@ -4268,7 +4268,7 @@
       "sourceRow": 10,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Biopunk Lab"
     },
     "scenes:generation_ship_arboretum": {
@@ -4282,7 +4282,7 @@
       "sourceRow": 10,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Generation Ship Arboretum"
     },
     "scenes:asteroid_mine": {
@@ -4296,7 +4296,7 @@
       "sourceRow": 10,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Asteroid Mine"
     },
     "scenes:solarpunk_city": {
@@ -4310,7 +4310,7 @@
       "sourceRow": 10,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Solarpunk City"
     },
     "scenes:mecha_cockpit": {
@@ -4324,7 +4324,7 @@
       "sourceRow": 10,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Mecha Cockpit"
     },
     "scenes:terraforming_site": {
@@ -4338,7 +4338,7 @@
       "sourceRow": 10,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Terraforming Site"
     },
     "scenes:noir_street": {
@@ -4352,7 +4352,7 @@
       "sourceRow": 10,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Noir Street Corner"
     },
     "scenes:urban_rooftop": {
@@ -4366,7 +4366,7 @@
       "sourceRow": 10,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-10.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Urban Rooftop"
     },
     "scenes:coffee_shop": {
@@ -4380,7 +4380,7 @@
       "sourceRow": 11,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Modern Coffee Shop"
     },
     "scenes:retro_arcade": {
@@ -4394,7 +4394,7 @@
       "sourceRow": 11,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Retro Arcade"
     },
     "scenes:art_museum": {
@@ -4408,7 +4408,7 @@
       "sourceRow": 11,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Art Museum"
     },
     "scenes:rooftop_garden": {
@@ -4422,7 +4422,7 @@
       "sourceRow": 11,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Rooftop Garden"
     },
     "scenes:subway_platform": {
@@ -4436,7 +4436,7 @@
       "sourceRow": 11,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Subway Platform"
     },
     "scenes:public_library": {
@@ -4450,7 +4450,7 @@
       "sourceRow": 11,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Public Library"
     },
     "scenes:city_intersection": {
@@ -4464,7 +4464,7 @@
       "sourceRow": 11,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Bustling Intersection"
     },
     "scenes:airport_terminal": {
@@ -4478,7 +4478,7 @@
       "sourceRow": 11,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Airport Terminal"
     },
     "scenes:shopping_mall": {
@@ -4492,7 +4492,7 @@
       "sourceRow": 11,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Shopping Mall"
     },
     "scenes:amusement_park": {
@@ -4506,7 +4506,7 @@
       "sourceRow": 11,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Amusement Park"
     },
     "scenes:university_campus": {
@@ -4520,7 +4520,7 @@
       "sourceRow": 11,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "University Campus"
     },
     "scenes:skate_park": {
@@ -4534,7 +4534,7 @@
       "sourceRow": 11,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Skate Park"
     },
     "scenes:concert_stage": {
@@ -4548,7 +4548,7 @@
       "sourceRow": 11,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Concert Stage"
     },
     "scenes:abandoned_warehouse": {
@@ -4562,7 +4562,7 @@
       "sourceRow": 11,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Abandoned Warehouse"
     },
     "scenes:neon_diner": {
@@ -4576,7 +4576,7 @@
       "sourceRow": 11,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Neon Diner"
     },
     "scenes:botanical_garden_conservatory": {
@@ -4590,7 +4590,7 @@
       "sourceRow": 11,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-11.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Botanical Garden"
     },
     "scenes:recording_studio": {
@@ -4604,7 +4604,7 @@
       "sourceRow": 12,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Recording Studio"
     },
     "scenes:skyscraper_lounge": {
@@ -4618,7 +4618,7 @@
       "sourceRow": 12,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Skyscraper Lounge"
     },
     "scenes:mountain": {
@@ -4632,7 +4632,7 @@
       "sourceRow": 12,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Mountain Peak"
     },
     "scenes:sky_island": {
@@ -4646,7 +4646,7 @@
       "sourceRow": 12,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Floating Sky Island"
     },
     "scenes:underwater_reef": {
@@ -4660,7 +4660,7 @@
       "sourceRow": 12,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Underwater Reef"
     },
     "scenes:monastery_courtyard": {
@@ -4674,7 +4674,7 @@
       "sourceRow": 12,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Serene Monastery"
     },
     "scenes:zen_garden": {
@@ -4688,7 +4688,7 @@
       "sourceRow": 12,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Zen Garden"
     },
     "scenes:giant_mushroom_forest": {
@@ -4702,7 +4702,7 @@
       "sourceRow": 12,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Giant Mushroom Forest"
     },
     "scenes:desert_oasis": {
@@ -4716,7 +4716,7 @@
       "sourceRow": 12,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Desert Oasis"
     },
     "scenes:aurora_borealis": {
@@ -4730,7 +4730,7 @@
       "sourceRow": 12,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Aurora Borealis"
     },
     "scenes:petrified_forest": {
@@ -4744,7 +4744,7 @@
       "sourceRow": 12,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Petrified Forest"
     },
     "scenes:bioluminescent_beach": {
@@ -4758,7 +4758,7 @@
       "sourceRow": 12,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Bioluminescent Beach"
     },
     "scenes:dreamscape": {
@@ -4772,7 +4772,7 @@
       "sourceRow": 12,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dreamscape"
     },
     "scenes:sea_of_clouds": {
@@ -4786,7 +4786,7 @@
       "sourceRow": 12,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Sea of Clouds"
     },
     "scenes:inside_geode": {
@@ -4800,7 +4800,7 @@
       "sourceRow": 12,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Inside a Geode"
     },
     "scenes:forgotten_god_statue": {
@@ -4814,7 +4814,7 @@
       "sourceRow": 12,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-12.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Forgotten God Statue"
     },
     "effects:zoom_out_fill": {
@@ -4828,7 +4828,7 @@
       "sourceRow": 13,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Zoom Out & Fill"
     },
     "effects:extreme_zoom_out": {
@@ -4842,7 +4842,7 @@
       "sourceRow": 13,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Extreme Zoom Out"
     },
     "effects:cosmic_zoom_out": {
@@ -4856,7 +4856,7 @@
       "sourceRow": 13,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cosmic Zoom Out"
     },
     "effects:low_angle": {
@@ -4870,7 +4870,7 @@
       "sourceRow": 13,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Low Angle Shot"
     },
     "effects:high_angle": {
@@ -4884,7 +4884,7 @@
       "sourceRow": 13,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "High Angle Shot"
     },
     "effects:birds_eye": {
@@ -4898,7 +4898,7 @@
       "sourceRow": 13,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Bird's Eye View"
     },
     "effects:dutch_angle": {
@@ -4912,7 +4912,7 @@
       "sourceRow": 13,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dutch Angle"
     },
     "effects:fisheye": {
@@ -4926,7 +4926,7 @@
       "sourceRow": 13,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Fisheye Lens"
     },
     "effects:pov": {
@@ -4940,7 +4940,7 @@
       "sourceRow": 13,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "POV Shot"
     },
     "effects:third_person": {
@@ -4954,7 +4954,7 @@
       "sourceRow": 13,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Third-Person View"
     },
     "effects:over_shoulder": {
@@ -4968,7 +4968,7 @@
       "sourceRow": 13,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Over-the-Shoulder"
     },
     "effects:cinematic_wide": {
@@ -4982,7 +4982,7 @@
       "sourceRow": 13,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cinematic Wide Shot"
     },
     "effects:closeup_action": {
@@ -4996,7 +4996,7 @@
       "sourceRow": 13,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Close-up Action Shot"
     },
     "effects:aerial_tracking": {
@@ -5010,7 +5010,7 @@
       "sourceRow": 13,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Aerial Tracking Shot"
     },
     "effects:isometric": {
@@ -5024,7 +5024,7 @@
       "sourceRow": 13,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Isometric View"
     },
     "effects:top_down": {
@@ -5038,7 +5038,7 @@
       "sourceRow": 13,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-13.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Top-Down View"
     },
     "effects:day_sunrise": {
@@ -5052,7 +5052,7 @@
       "sourceRow": 14,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Sunrise"
     },
     "effects:day_midday": {
@@ -5066,7 +5066,7 @@
       "sourceRow": 14,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Midday Sun"
     },
     "effects:day_golden_hour": {
@@ -5080,7 +5080,7 @@
       "sourceRow": 14,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Golden Hour"
     },
     "effects:day_night": {
@@ -5094,7 +5094,7 @@
       "sourceRow": 14,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Moonlit Night"
     },
     "effects:weather_overcast": {
@@ -5108,7 +5108,7 @@
       "sourceRow": 14,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Overcast Day"
     },
     "effects:weather_rainy": {
@@ -5122,7 +5122,7 @@
       "sourceRow": 14,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Rainy Day"
     },
     "effects:weather_foggy": {
@@ -5136,7 +5136,7 @@
       "sourceRow": 14,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Foggy Morning"
     },
     "effects:weather_stormy": {
@@ -5150,7 +5150,7 @@
       "sourceRow": 14,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Stormy Skies"
     },
     "effects:quality_phone": {
@@ -5164,7 +5164,7 @@
       "sourceRow": 14,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cellphone Photo"
     },
     "effects:quality_digicam": {
@@ -5178,7 +5178,7 @@
       "sourceRow": 14,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "2000s Digicam"
     },
     "effects:quality_analog": {
@@ -5192,7 +5192,7 @@
       "sourceRow": 14,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Analog Film Photo"
     },
     "effects:quality_professional": {
@@ -5206,7 +5206,7 @@
       "sourceRow": 14,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Professional DSLR"
     },
     "effects:quality_polaroid": {
@@ -5220,7 +5220,7 @@
       "sourceRow": 14,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Polaroid Photo"
     },
     "effects:quality_vhs": {
@@ -5234,7 +5234,7 @@
       "sourceRow": 14,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "VHS Screen Grab"
     },
     "effects:quality_infrared": {
@@ -5248,7 +5248,7 @@
       "sourceRow": 14,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Infrared Photo"
     },
     "effects:quality_daguerreotype": {
@@ -5262,7 +5262,7 @@
       "sourceRow": 14,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-14.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Daguerreotype"
     },
     "effects:bg_remove": {
@@ -5276,7 +5276,7 @@
       "sourceRow": 15,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Remove Background"
     },
     "effects:bg_explosive": {
@@ -5290,7 +5290,7 @@
       "sourceRow": 15,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Explosive Background"
     },
     "effects:bg_gradient": {
@@ -5304,7 +5304,7 @@
       "sourceRow": 15,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Gradient Background"
     },
     "effects:bg_blur": {
@@ -5318,7 +5318,7 @@
       "sourceRow": 15,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Blurred (Bokeh) BG"
     },
     "effects:bg_grid": {
@@ -5332,7 +5332,7 @@
       "sourceRow": 15,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Synthwave Grid BG"
     },
     "effects:bg_pattern": {
@@ -5346,7 +5346,7 @@
       "sourceRow": 15,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Abstract Pattern BG"
     },
     "motion:motion_idle": {
@@ -5360,7 +5360,7 @@
       "sourceRow": 15,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Idle Breathing"
     },
     "motion:motion_walk": {
@@ -5374,7 +5374,7 @@
       "sourceRow": 15,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Walking Forward"
     },
     "motion:motion_run": {
@@ -5388,7 +5388,7 @@
       "sourceRow": 15,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Running"
     },
     "motion:motion_turn": {
@@ -5402,7 +5402,7 @@
       "sourceRow": 15,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Turn Around"
     },
     "motion:motion_attack": {
@@ -5416,7 +5416,7 @@
       "sourceRow": 15,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Combat Attack"
     },
     "motion:motion_spell": {
@@ -5430,7 +5430,7 @@
       "sourceRow": 15,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Cast Spell"
     },
     "motion:motion_block": {
@@ -5444,7 +5444,7 @@
       "sourceRow": 15,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Defensive Block"
     },
     "motion:motion_laugh": {
@@ -5458,7 +5458,7 @@
       "sourceRow": 15,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Laughing"
     },
     "profile:basic-info": {
@@ -5472,7 +5472,7 @@
       "sourceRow": 15,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Basic Profile"
     },
     "profile:live-interview": {
@@ -5486,7 +5486,7 @@
       "sourceRow": 15,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-15.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Live Interview"
     },
     "profile:style-analysis": {
@@ -5500,7 +5500,7 @@
       "sourceRow": 16,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Style Analysis"
     },
     "profile:equipment": {
@@ -5514,7 +5514,7 @@
       "sourceRow": 16,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Equipment"
     },
     "profile:story-hooks": {
@@ -5528,7 +5528,7 @@
       "sourceRow": 16,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Story Hooks"
     },
     "profile:attributes": {
@@ -5542,7 +5542,7 @@
       "sourceRow": 16,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Attributes"
     },
     "profile:dialogue": {
@@ -5556,7 +5556,7 @@
       "sourceRow": 16,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Dialogue"
     },
     "control:source": {
@@ -5570,7 +5570,7 @@
       "sourceRow": 16,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Source Image"
     },
     "control:reference": {
@@ -5584,7 +5584,7 @@
       "sourceRow": 16,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Reference Stack"
     },
     "control:browse-all": {
@@ -5598,7 +5598,7 @@
       "sourceRow": 16,
       "sourceColumn": 7,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Browse All Actions"
     },
     "control:search": {
@@ -5612,7 +5612,7 @@
       "sourceRow": 16,
       "sourceColumn": 8,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Search"
     },
     "control:favorite": {
@@ -5626,7 +5626,7 @@
       "sourceRow": 16,
       "sourceColumn": 9,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Favorite"
     },
     "control:recent": {
@@ -5640,7 +5640,7 @@
       "sourceRow": 16,
       "sourceColumn": 10,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Recent"
     },
     "control:prompt-preview": {
@@ -5654,7 +5654,7 @@
       "sourceRow": 16,
       "sourceColumn": 11,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Prompt Preview"
     },
     "control:batch": {
@@ -5668,7 +5668,7 @@
       "sourceRow": 16,
       "sourceColumn": 12,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Batch"
     },
     "control:generate": {
@@ -5682,7 +5682,7 @@
       "sourceRow": 16,
       "sourceColumn": 13,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Generate"
     },
     "control:use-as-source": {
@@ -5696,7 +5696,7 @@
       "sourceRow": 16,
       "sourceColumn": 14,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Use As Source"
     },
     "control:download": {
@@ -5710,7 +5710,7 @@
       "sourceRow": 16,
       "sourceColumn": 15,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-16.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Download"
     },
     "control:export": {
@@ -5724,7 +5724,7 @@
       "sourceRow": 17,
       "sourceColumn": 0,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Export"
     },
     "control:notes": {
@@ -5738,7 +5738,7 @@
       "sourceRow": 17,
       "sourceColumn": 1,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Notes"
     },
     "control:history": {
@@ -5752,7 +5752,7 @@
       "sourceRow": 17,
       "sourceColumn": 2,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "History"
     },
     "control:motion-preflight": {
@@ -5766,7 +5766,7 @@
       "sourceRow": 17,
       "sourceColumn": 3,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Motion Preflight"
     },
     "control:profile-preflight": {
@@ -5780,7 +5780,7 @@
       "sourceRow": 17,
       "sourceColumn": 4,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Profile Preflight"
     },
     "control:live-preflight": {
@@ -5794,7 +5794,7 @@
       "sourceRow": 17,
       "sourceColumn": 5,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Live Preflight"
     },
     "control:clear": {
@@ -5808,7 +5808,7 @@
       "sourceRow": 17,
       "sourceColumn": 6,
       "workFrame": "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-17.png",
-      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "runtimeFrame": "assets/recipes/character-lab/character-lab-control-atlas.webp",
       "label": "Clear"
     }
   },

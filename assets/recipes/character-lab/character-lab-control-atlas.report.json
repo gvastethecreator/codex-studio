@@ -4,16 +4,16 @@
   "artDirection": "neutral-mannequin-v1-color-accent-props",
   "errors": [],
   "atlas": {
-    "path": "assets/recipes/character-lab/character-lab-control-atlas.png",
+    "path": "assets/recipes/character-lab/character-lab-control-atlas.webp",
     "size": [2048, 2304],
-    "sha256": "a10347718291477aa1c64673f58b6d05ae965469cfeaf1b113cdff19324e622f"
+    "sha256": "d8d924aff9a1c99e5e538be63ab9c8897d6139bcf39d5dde21ca234d2a34e8bc"
   },
   "manifest": "assets/recipes/character-lab/character-lab-control-atlas.manifest.json",
   "source": "assets/recipes/character-lab/character-lab-control-atlas.source.json",
   "qa": {
     "runDir": ".tmp/character-lab/mannequin-v1-atlas-run",
     "allContact": ".tmp/character-lab/mannequin-v1-atlas-run/qa/all-contact.png",
-    "runtimeAtlas": "assets/recipes/character-lab/character-lab-control-atlas.png"
+    "runtimeAtlas": "assets/recipes/character-lab/character-lab-control-atlas.webp"
   },
   "compose": {
     "ok": true,

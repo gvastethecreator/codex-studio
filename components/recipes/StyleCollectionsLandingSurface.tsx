@@ -25,7 +25,6 @@ import {
   IconMoonStars as MoonStars,
 } from '@tabler/icons-react';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-import gsap from '../../lib/motionRuntime';
 import {
   STYLE_COLLECTION_FAMILIES,
   STYLE_COLLECTIONS,
@@ -47,6 +46,16 @@ const STYLE_FOLDER_SCATTER_X = [-34, 32, -12, 25, -24] as const;
 const STYLE_FOLDER_SCATTER_Y = [-52, -66, -78, -59, -72] as const;
 const STYLE_FOLDER_SCATTER_ROTATE = [-7, 8, -4, 5, -6] as const;
 const STYLE_NAVIGATION_PREVIEW_DELAY_MS = 150;
+
+type StyleFolderGsap = typeof import('../../lib/motionRuntime').default;
+type StyleFolderTimeline = ReturnType<StyleFolderGsap['timeline']>;
+
+let styleFolderGsapPromise: Promise<StyleFolderGsap> | null = null;
+
+function loadStyleFolderGsap() {
+  styleFolderGsapPromise ??= import('../../lib/motionRuntime').then((module) => module.default);
+  return styleFolderGsapPromise;
+}
 
 type StyleTheme = { bg: string; text: string };
 
@@ -313,8 +322,8 @@ function StyleFolderCard({
   const rootRef = useRef<HTMLButtonElement | null>(null);
   const coverRef = useRef<HTMLDivElement | null>(null);
   const fileRefs = useRef<Array<HTMLDivElement | null>>([]);
-  const timelineRef = useRef<ReturnType<typeof gsap.timeline> | null>(null);
-  const entryTimelineRef = useRef<ReturnType<typeof gsap.timeline> | null>(null);
+  const gsapRef = useRef<StyleFolderGsap | null>(null);
+  const timelineRef = useRef<StyleFolderTimeline | null>(null);
   const isOpenRef = useRef(false);
   const isNavigatingRef = useRef(false);
   const [filesMounted, setFilesMounted] = useState(false);
@@ -337,18 +346,24 @@ function StyleFolderCard({
 
     timelineRef.current?.kill();
     timelineRef.current = null;
-    gsap.killTweensOf([root, coverNode, ...fileNodes].filter(Boolean));
-    gsap.set([root, coverNode, ...fileNodes].filter(Boolean), { willChange: 'auto' });
+    gsapRef.current?.killTweensOf([root, coverNode, ...fileNodes].filter(Boolean));
+    gsapRef.current?.set([root, coverNode, ...fileNodes].filter(Boolean), {
+      willChange: 'auto',
+    });
   }, [getFileNodes]);
 
   const animateFolder = useCallback(
-    (nextOpen: boolean) => {
+    async (nextOpen: boolean) => {
       const root = rootRef.current;
       const coverNode = coverRef.current;
       const fileNodes = getFileNodes();
       if (shouldReduceMotion()) return;
       if (!root || !coverNode || fileNodes.length === 0 || isNavigatingRef.current) return;
       if (isOpenRef.current === nextOpen) return;
+
+      const gsap = await loadStyleFolderGsap();
+      if (!rootRef.current || isNavigatingRef.current) return;
+      gsapRef.current = gsap;
 
       isOpenRef.current = nextOpen;
       root.dataset.stylePackFolderOpen = nextOpen ? 'true' : 'false';
@@ -406,7 +421,7 @@ function StyleFolderCard({
     [getFileNodes, stopFolderAnimation],
   );
 
-  const runExitAnimation = useCallback(() => {
+  const runExitAnimation = useCallback(async () => {
     const root = rootRef.current;
     const coverNode = coverRef.current;
     const fileNodes = getFileNodes();
@@ -416,10 +431,13 @@ function StyleFolderCard({
     }
     if (!root || !coverNode || fileNodes.length === 0 || isNavigatingRef.current) return;
 
+    const gsap = await loadStyleFolderGsap();
+    if (!rootRef.current || isNavigatingRef.current) return;
+    gsapRef.current = gsap;
+
     isNavigatingRef.current = true;
     root.dataset.stylePackFolderOpen = 'exit';
     stopFolderAnimation();
-    entryTimelineRef.current?.kill();
 
     const animatedNodes = [root, coverNode, ...fileNodes];
     const timeline = gsap.timeline({
@@ -474,26 +492,26 @@ function StyleFolderCard({
   const handleOpen = useCallback(() => {
     if (!filesMounted) {
       setFilesMounted(true);
-      window.requestAnimationFrame(runExitAnimation);
+      window.requestAnimationFrame(() => void runExitAnimation());
       return;
     }
 
-    runExitAnimation();
+    void runExitAnimation();
   }, [filesMounted, runExitAnimation]);
 
   const handleFolderEnter = useCallback(() => {
     if (!filesMounted) setFilesMounted(true);
-    animateFolder(true);
+    void animateFolder(true);
   }, [animateFolder, filesMounted]);
 
   useEffect(() => {
     if (isHighlighted) {
       if (!filesMounted) setFilesMounted(true);
-      window.requestAnimationFrame(() => animateFolder(true));
+      window.requestAnimationFrame(() => void animateFolder(true));
       return;
     }
 
-    animateFolder(false);
+    if (isOpenRef.current || timelineRef.current) void animateFolder(false);
   }, [animateFolder, filesMounted, isHighlighted]);
 
   useLayoutEffect(() => {
@@ -506,56 +524,11 @@ function StyleFolderCard({
     isOpenRef.current = false;
     isNavigatingRef.current = false;
 
-    gsap.set(root, {
-      opacity: shouldReduceMotion() ? 1 : 0,
-      y: shouldReduceMotion() ? 0 : 14,
-      scale: shouldReduceMotion() ? 1 : 0.985,
-      transformOrigin: 'center bottom',
-    });
-    gsap.set(coverNode, {
-      y: 0,
-      rotation: 0,
-      scale: 1,
-      opacity: 1,
-      zIndex: 40,
-      transformOrigin: 'center bottom',
-    });
-    fileNodes.forEach((node, fileIndex) => {
-      gsap.set(node, {
-        x: 0,
-        y: fileIndex * -4,
-        rotation: 0,
-        scale: 0.94 + fileIndex * 0.012,
-        opacity: 1,
-        zIndex: 8 + fileIndex,
-        transformOrigin: 'center center',
-      });
-    });
-
-    if (!shouldReduceMotion()) {
-      entryTimelineRef.current?.kill();
-      entryTimelineRef.current = gsap
-        .timeline({
-          defaults: { overwrite: 'auto' },
-          onStart: () => gsap.set(root, { willChange: 'transform, opacity' }),
-          onComplete: () => gsap.set(root, { willChange: 'auto' }),
-        })
-        .to(root, {
-          opacity: 1,
-          y: 0,
-          scale: 1,
-          duration: 0.36,
-          delay: Math.min(0.42, index * 0.026),
-          ease: STYLE_FOLDER_EASE,
-        });
-    }
-
     return () => {
       timelineRef.current?.kill();
-      entryTimelineRef.current?.kill();
-      gsap.killTweensOf([root, coverNode, ...fileNodes]);
+      gsapRef.current?.killTweensOf([root, coverNode, ...fileNodes]);
     };
-  }, [files.length, getFileNodes, index]);
+  }, [files.length, getFileNodes]);
 
   return (
     <button
@@ -568,13 +541,18 @@ function StyleFolderCard({
       aria-label={`Open ${title}`}
       onClick={handleOpen}
       onPointerEnter={handleFolderEnter}
-      onPointerLeave={() => animateFolder(false)}
+      onPointerLeave={() => void animateFolder(false)}
       onFocus={handleFolderEnter}
-      onBlur={() => animateFolder(false)}
-      className={`group relative z-0 block aspect-[3/4] min-h-[252px] w-full cursor-pointer overflow-visible rounded-[6px] text-left outline-none transition-[filter] duration-200 hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 sm:min-h-[286px] ${
+      onBlur={() => void animateFolder(false)}
+      className={`style-folder-enter group relative z-0 block aspect-[3/4] min-h-[252px] w-full cursor-pointer overflow-visible rounded-[6px] text-left outline-none transition-[filter] duration-200 hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 sm:min-h-[286px] ${
         isHighlighted ? 'z-30 brightness-[1.08]' : ''
       }`}
-      style={{ perspective: '1200px' }}
+      style={
+        {
+          perspective: '1200px',
+          '--style-folder-enter-delay': `${Math.min(0.42, index * 0.026)}s`,
+        } as React.CSSProperties
+      }
       {...dataAttributes}
     >
       {isHighlighted && (
@@ -779,6 +757,224 @@ function SourcePackCard({
       isHighlighted={isHighlighted}
       onOpen={onOpen}
     />
+  );
+}
+
+function useDemandMountedSection(
+  scrollRootRef: React.RefObject<HTMLDivElement | null>,
+  forceMount: boolean,
+) {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [isMounted, setIsMounted] = useState(forceMount);
+
+  useEffect(() => {
+    if (forceMount) {
+      setIsMounted(true);
+      return;
+    }
+    if (isMounted) return;
+    if (typeof IntersectionObserver === 'undefined') {
+      setIsMounted(true);
+      return;
+    }
+
+    const section = sectionRef.current;
+    const root = scrollRootRef.current;
+    if (!section || !root) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        setIsMounted(true);
+        observer.disconnect();
+      },
+      { root, rootMargin: '360px 0px' },
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, [forceMount, isMounted, scrollRootRef]);
+
+  return { sectionRef, isMounted };
+}
+
+function StyleFolderPlaceholder({
+  targetId,
+  title,
+  tabHash,
+  theme,
+  dataAttributes,
+  isHighlighted,
+  onOpen,
+}: {
+  targetId: string;
+  title: string;
+  tabHash: string;
+  theme: StyleTheme;
+  dataAttributes: Record<string, string>;
+  isHighlighted: boolean;
+  onOpen: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      data-style-pack-folder-open="false"
+      data-style-folder-target={targetId}
+      data-style-folder-highlighted={isHighlighted ? 'true' : 'false'}
+      data-style-tab-url={`#${tabHash}`}
+      aria-label={`Open ${title}`}
+      onClick={onOpen}
+      className={`group relative z-0 block aspect-[3/4] min-h-[252px] w-full cursor-pointer overflow-hidden rounded-[6px] border border-white/8 bg-zinc-950 text-left outline-none focus-visible:ring-2 focus-visible:ring-white/35 sm:min-h-[286px] ${
+        isHighlighted ? 'z-30 brightness-[1.08]' : ''
+      }`}
+      {...dataAttributes}
+    >
+      <span className={`absolute inset-x-0 top-0 h-1 ${theme.bg}`} />
+      <span className="absolute inset-x-3 bottom-3 truncate text-xs font-black uppercase text-zinc-500">
+        {title}
+      </span>
+    </button>
+  );
+}
+
+function StyleCollectionFamilySection({
+  family,
+  collections,
+  activeTargetId,
+  scrollRootRef,
+  getCollectionTabId,
+  getStyleTabHash,
+  onNavigateToStyleTab,
+}: {
+  family: (typeof STYLE_COLLECTION_FAMILIES)[number];
+  collections: StyleCollection[];
+  activeTargetId: string | null;
+  scrollRootRef: React.RefObject<HTMLDivElement | null>;
+  getCollectionTabId: (collectionId: string) => string;
+  getStyleTabHash: (tabId: string) => string;
+  onNavigateToStyleTab: (tabId: string) => void;
+}) {
+  const forceMount = collections.some(
+    (collection) => activeTargetId === `collection:${collection.id}`,
+  );
+  const { sectionRef, isMounted } = useDemandMountedSection(scrollRootRef, forceMount);
+  const familyTheme = COLLECTION_FAMILY_THEMES[family.id] ?? PACK_THEMES.pack_01;
+
+  return (
+    <section
+      ref={sectionRef}
+      data-style-collection-family={family.id}
+      data-style-family-mounted={isMounted ? 'true' : 'false'}
+      className="min-w-0"
+    >
+      <div className="mb-2 flex items-center gap-2">
+        <div className={`h-4 w-1 rounded-[2px] ${familyTheme.bg}`} />
+        <div className="min-w-0">
+          <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-300">
+            {family.title}
+          </h3>
+          <p className="mt-0.5 line-clamp-1 text-[10px] font-medium text-zinc-600">
+            {family.description}
+          </p>
+        </div>
+        <div className="h-px flex-1 bg-white/6" />
+      </div>
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-3 xl:grid-cols-[repeat(auto-fill,minmax(210px,1fr))]">
+        {collections.map((collection, index) => {
+          const tabId = getCollectionTabId(collection.id);
+          const targetId = `collection:${collection.id}`;
+          const sharedProps = {
+            targetId,
+            isHighlighted: activeTargetId === targetId,
+            onOpen: () => onNavigateToStyleTab(tabId),
+          };
+
+          return isMounted ? (
+            <StyleCollectionCard
+              key={collection.id}
+              {...sharedProps}
+              collection={collection}
+              countLabel={`${collection.sourcePackIds.length}`}
+              familyLabel={family.title}
+              index={index}
+              tabId={tabId}
+              getStyleTabHash={getStyleTabHash}
+            />
+          ) : (
+            <StyleFolderPlaceholder
+              key={collection.id}
+              {...sharedProps}
+              title={collection.title}
+              tabHash={getStyleTabHash(tabId)}
+              theme={getStyleCollectionTheme(collection)}
+              dataAttributes={{ 'data-style-collection-card': collection.id }}
+            />
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+function StyleSourcePacksSection({
+  activeTargetId,
+  scrollRootRef,
+  getStyleTabHash,
+  onNavigateToStyleTab,
+}: {
+  activeTargetId: string | null;
+  scrollRootRef: React.RefObject<HTMLDivElement | null>;
+  getStyleTabHash: (tabId: string) => string;
+  onNavigateToStyleTab: (tabId: string) => void;
+}) {
+  const forceMount = activeTargetId?.startsWith('source:') ?? false;
+  const { sectionRef, isMounted } = useDemandMountedSection(scrollRootRef, forceMount);
+
+  return (
+    <section
+      ref={sectionRef}
+      data-style-source-packs-section
+      data-style-source-packs-mounted={isMounted ? 'true' : 'false'}
+      className="rounded-[6px] border border-white/8 bg-zinc-950/72"
+    >
+      <div
+        data-style-source-packs-summary
+        className="flex items-center gap-2 px-3 py-3 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400"
+      >
+        <Layers size={16} />
+        Source Packs
+        <span className="ml-auto rounded-[6px] border border-white/10 bg-white/[0.035] px-2 py-1 text-[9px] text-zinc-500">
+          {STYLE_RUNTIME_PACK_SUMMARIES.length}
+        </span>
+      </div>
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(158px,1fr))] gap-3 border-t border-white/6 p-3 sm:grid-cols-[repeat(auto-fill,minmax(190px,1fr))] xl:grid-cols-[repeat(auto-fill,minmax(204px,1fr))]">
+        {STYLE_RUNTIME_PACK_SUMMARIES.map((pack, index) => {
+          const targetId = `source:${pack.id}`;
+          const sharedProps = {
+            targetId,
+            isHighlighted: activeTargetId === targetId,
+            onOpen: () => onNavigateToStyleTab(pack.id),
+          };
+          return isMounted ? (
+            <SourcePackCard
+              key={pack.id}
+              {...sharedProps}
+              pack={pack}
+              index={index}
+              getStyleTabHash={getStyleTabHash}
+            />
+          ) : (
+            <StyleFolderPlaceholder
+              key={pack.id}
+              {...sharedProps}
+              title={PACK_CARD_TITLES[pack.id] ?? pack.name}
+              tabHash={getStyleTabHash(pack.id)}
+              theme={PACK_THEMES[pack.id] ?? PACK_THEMES.pack_01}
+              dataAttributes={{ 'data-style-pack-card': pack.id }}
+            />
+          );
+        })}
+      </div>
+    </section>
   );
 }
 
@@ -1120,81 +1316,25 @@ export function StyleCollectionsLandingSurface({
               </div>
             </section>
 
-            {styleCollectionFamilySections.map(({ family, collections }) => {
-              const familyTheme = COLLECTION_FAMILY_THEMES[family.id] ?? PACK_THEMES.pack_01;
-              return (
-                <section
-                  key={family.id}
-                  data-style-collection-family={family.id}
-                  className="min-w-0"
-                >
-                  <div className="mb-2 flex items-center gap-2">
-                    <div className={`h-4 w-1 rounded-[2px] ${familyTheme.bg}`} />
-                    <div className="min-w-0">
-                      <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-300">
-                        {family.title}
-                      </h3>
-                      <p className="mt-0.5 line-clamp-1 text-[10px] font-medium text-zinc-600">
-                        {family.description}
-                      </p>
-                    </div>
-                    <div className="h-px flex-1 bg-white/6" />
-                  </div>
-                  <div className="grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-3 xl:grid-cols-[repeat(auto-fill,minmax(210px,1fr))]">
-                    {collections.map((collection, index) => {
-                      const tabId = getCollectionTabId(collection.id);
-                      const targetId = `collection:${collection.id}`;
-                      return (
-                        <StyleCollectionCard
-                          key={collection.id}
-                          collection={collection}
-                          countLabel={`${collection.sourcePackIds.length}`}
-                          familyLabel={family.title}
-                          targetId={targetId}
-                          index={index}
-                          tabId={tabId}
-                          isHighlighted={activeNavigationTargetId === targetId}
-                          getStyleTabHash={getStyleTabHash}
-                          onOpen={() => onNavigateToStyleTab(tabId)}
-                        />
-                      );
-                    })}
-                  </div>
-                </section>
-              );
-            })}
+            {styleCollectionFamilySections.map(({ family, collections }) => (
+              <StyleCollectionFamilySection
+                key={family.id}
+                family={family}
+                collections={collections}
+                activeTargetId={activeNavigationTargetId}
+                scrollRootRef={cardsScrollerRef}
+                getCollectionTabId={getCollectionTabId}
+                getStyleTabHash={getStyleTabHash}
+                onNavigateToStyleTab={onNavigateToStyleTab}
+              />
+            ))}
 
-            <section
-              data-style-source-packs-section
-              className="rounded-[6px] border border-white/8 bg-zinc-950/72"
-            >
-              <div
-                data-style-source-packs-summary
-                className="flex items-center gap-2 px-3 py-3 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400"
-              >
-                <Layers size={16} />
-                Source Packs
-                <span className="ml-auto rounded-[6px] border border-white/10 bg-white/[0.035] px-2 py-1 text-[9px] text-zinc-500">
-                  {STYLE_RUNTIME_PACK_SUMMARIES.length}
-                </span>
-              </div>
-              <div className="grid grid-cols-[repeat(auto-fill,minmax(158px,1fr))] gap-3 border-t border-white/6 p-3 sm:grid-cols-[repeat(auto-fill,minmax(190px,1fr))] xl:grid-cols-[repeat(auto-fill,minmax(204px,1fr))]">
-                {STYLE_RUNTIME_PACK_SUMMARIES.map((pack, index) => {
-                  const targetId = `source:${pack.id}`;
-                  return (
-                    <SourcePackCard
-                      key={pack.id}
-                      pack={pack}
-                      targetId={targetId}
-                      index={index}
-                      getStyleTabHash={getStyleTabHash}
-                      isHighlighted={activeNavigationTargetId === targetId}
-                      onOpen={() => onNavigateToStyleTab(pack.id)}
-                    />
-                  );
-                })}
-              </div>
-            </section>
+            <StyleSourcePacksSection
+              activeTargetId={activeNavigationTargetId}
+              scrollRootRef={cardsScrollerRef}
+              getStyleTabHash={getStyleTabHash}
+              onNavigateToStyleTab={onNavigateToStyleTab}
+            />
           </div>
         </div>
       </div>

@@ -24,9 +24,9 @@
     }
   },
   "atlas": {
-    "path": "assets/recipes/character-lab/character-lab-option-atlas.png",
+    "path": "assets/recipes/character-lab/character-lab-option-atlas.webp",
     "size": [2048, 1536],
-    "sha256": "75d80cfc2fef608334cf17142027679fac655d5319c4ab1ed43e5ecce5ed05ae"
+    "sha256": "bb32477d172e5e7a681f09b5db5852038eabfe2dfa6b3a8ee8d370a97431cf5d"
   },
   "batches": [
     {

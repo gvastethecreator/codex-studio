@@ -7,7 +7,13 @@ export interface OnboardingStyleCarouselSeed {
 
 export interface OnboardingStyleCarouselEntry extends OnboardingStyleCarouselSeed {
   imageUrl: string;
+  imageSrcSet?: string;
   alt: string;
+}
+
+export interface OnboardingStyleCarouselImage {
+  src: string;
+  srcSet?: string;
 }
 
 export const ONBOARDING_STYLE_CAROUSEL_SEEDS: OnboardingStyleCarouselSeed[] = [
@@ -78,17 +84,21 @@ const FALLBACK_CAROUSEL_SEED: OnboardingStyleCarouselSeed = {
 };
 
 export function buildOnboardingStyleCarouselEntries(
-  imageByPresetId: Record<string, string | undefined>,
+  imageByPresetId: Record<string, string | OnboardingStyleCarouselImage | undefined>,
   fallbackImageUrl: string,
 ): OnboardingStyleCarouselEntry[] {
   const entries = ONBOARDING_STYLE_CAROUSEL_SEEDS.flatMap((seed) => {
-    const imageUrl = imageByPresetId[seed.presetId];
-    if (!imageUrl) return [];
+    const image = imageByPresetId[seed.presetId];
+    if (!image) return [];
+
+    const imageUrl = typeof image === 'string' ? image : image.src;
+    const imageSrcSet = typeof image === 'string' ? undefined : image.srcSet;
 
     return [
       {
         ...seed,
         imageUrl,
+        imageSrcSet,
         alt: `${seed.styleName} style recipe preview`,
       },
     ];

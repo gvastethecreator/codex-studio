@@ -1,4 +1,4 @@
-import { parseRecipeIdFromContext } from '../lib/recipeContext';
+import { parseRecipeIdFromContext } from '../lib/recipeShellMetadata';
 
 export const detectRecipeFromContext = (context: string = '') => {
   return parseRecipeIdFromContext(context);

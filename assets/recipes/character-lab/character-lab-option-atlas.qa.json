@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-24T03:53:17.463Z",
+  "generatedAt": "2026-08-09T01:37:18.295Z",
   "sourceSheets": 48,
   "sourceSheetHashes": {
     "assets/recipes/character-lab/sources/option-icons-v1/character-lab-option-icons-expression-00.png": "b6796a9db6e9ae55623d084ffe74fe284e534a423baca75d661ddd6aefb120d0",
@@ -55,8 +55,8 @@
   "sourceFrames512": 189,
   "runtimeFrames": 189,
   "expectedFrames": 189,
-  "runtimeAtlas": "assets/recipes/character-lab/character-lab-option-atlas.png",
-  "runtimeAtlasSha256": "75d80cfc2fef608334cf17142027679fac655d5319c4ab1ed43e5ecce5ed05ae",
+  "runtimeAtlas": "assets/recipes/character-lab/character-lab-option-atlas.webp",
+  "runtimeAtlasSha256": "bb32477d172e5e7a681f09b5db5852038eabfe2dfa6b3a8ee8d370a97431cf5d",
   "missing": [],
   "centerStats": {
     "maxOffset": 5,

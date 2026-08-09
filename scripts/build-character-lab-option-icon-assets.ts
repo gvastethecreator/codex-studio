@@ -18,7 +18,7 @@ const tempPlanPath = path.join(
 const sourcePath = path.join(assetDir, 'character-lab-option-atlas.source.json');
 const manifestPath = path.join(assetDir, 'character-lab-option-atlas.manifest.json');
 const qaPath = path.join(assetDir, 'character-lab-option-atlas.qa.json');
-const runtimeAtlasPath = path.join(assetDir, 'character-lab-option-atlas.png');
+const runtimeAtlasPath = path.join(assetDir, 'character-lab-option-atlas.webp');
 const generatedLibPath = path.join(repoRoot, 'lib', 'characterLabOptionIconAtlas.generated.ts');
 
 const SOURCE_GRID_COLUMNS = 2;
@@ -444,7 +444,7 @@ function generatedTs(frames: Record<string, FrameRecord>, atlasWidth: number, at
   return `// Generated from assets/recipes/character-lab/character-lab-option-atlas.manifest.json.
 // Do not hand-edit frame coordinates.
 export const CHARACTER_LAB_OPTION_ICON_ATLAS_URL = new URL(
-  '../assets/recipes/character-lab/character-lab-option-atlas.png',
+  '../assets/recipes/character-lab/character-lab-option-atlas.webp',
   import.meta.url,
 ).href;
 export const CHARACTER_LAB_OPTION_ICON_ATLAS_CELL_SIZE = ${RUNTIME_CELL};
@@ -520,7 +520,7 @@ async function main() {
     },
   })
     .composite(composites)
-    .png({ compressionLevel: 9, adaptiveFiltering: true })
+    .webp({ lossless: true, effort: 6 })
     .toFile(runtimeAtlasPath);
 
   const atlasHash = await sha256(runtimeAtlasPath);

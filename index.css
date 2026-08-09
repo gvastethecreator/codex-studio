@@ -239,6 +239,41 @@ react-scan-overlay,
     min-height: 0;
   }
 
+  .recipe-layout-enter {
+    animation: recipe-layout-enter 500ms ease both;
+  }
+
+  .recipe-layout-dock-enter {
+    animation: recipe-layout-dock-enter 400ms ease 200ms both;
+  }
+
+  @keyframes recipe-layout-enter {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes recipe-layout-dock-enter {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .recipe-layout-enter,
+    .recipe-layout-dock-enter {
+      animation: none;
+    }
+  }
+
   .studio-route-enter {
     animation: studio-route-enter var(--studio-route-dur) var(--studio-route-ease) both;
     transform-origin: center;
@@ -255,6 +290,29 @@ react-scan-overlay,
   }
   .studio-route-enter-neutral {
     --studio-route-from-x: 0px;
+  }
+
+  .style-folder-enter {
+    animation: style-folder-enter 360ms cubic-bezier(0.215, 0.61, 0.355, 1)
+      var(--style-folder-enter-delay, 0ms) backwards;
+    transform-origin: center bottom;
+  }
+
+  @keyframes style-folder-enter {
+    from {
+      opacity: 0;
+      transform: translateY(14px) scale(0.985);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .style-folder-enter {
+      animation: none;
+    }
   }
 
   @keyframes studio-route-enter {

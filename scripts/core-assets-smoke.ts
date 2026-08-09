@@ -50,7 +50,7 @@ function shouldCopy(source: string) {
   }
   if (
     relative.startsWith('assets/recipes/character-lab/character-lab-') &&
-    !relative.endsWith('-atlas.png')
+    !relative.endsWith('-atlas.webp')
   ) {
     return false;
   }

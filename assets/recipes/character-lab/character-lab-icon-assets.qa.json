@@ -1,11 +1,11 @@
 {
   "ok": true,
-  "generatedAt": "2026-06-24T04:06:09.714Z",
+  "generatedAt": "2026-08-09T01:36:07.620Z",
   "sourceSheets512": 18,
   "sourceSlots": 288,
   "runtimeFrames": 279,
-  "runtimeAtlas": "assets/recipes/character-lab/character-lab-control-atlas.png",
-  "runtimeAtlasSha256": "a10347718291477aa1c64673f58b6d05ae965469cfeaf1b113cdff19324e622f",
+  "runtimeAtlas": "assets/recipes/character-lab/character-lab-control-atlas.webp",
+  "runtimeAtlasSha256": "d8d924aff9a1c99e5e538be63ab9c8897d6139bcf39d5dde21ca234d2a34e8bc",
   "sourceSheetHashes": {
     "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-00.png": "07a24bfd3e5abb70b25c66aedd541e3a65e554fa00b9da74468c6b51704d9890",
     "assets/recipes/character-lab/sources/mannequin-v1-512/character-lab-icons-01.png": "1d5d66da31d47b58bece1b2b22c5cad2291e59595ba82dfc1cb82d1369435d45",

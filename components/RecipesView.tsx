@@ -166,7 +166,9 @@ const RecipeCard: React.FC<{
     >
       {bgImage && (
         <img
-          src={bgImage}
+          src={bgImage.src}
+          srcSet={bgImage.srcSet}
+          sizes="(min-width: 1536px) 16vw, (min-width: 1280px) 20vw, (min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full scale-125 object-cover opacity-30 blur-xl saturate-125 transition-[opacity,transform] duration-500 group-hover:scale-[1.32] group-hover:opacity-45"
@@ -198,7 +200,9 @@ const RecipeCard: React.FC<{
           <div className="aspect-square">
             {bgImage ? (
               <img
-                src={bgImage}
+                src={bgImage.src}
+                srcSet={bgImage.srcSet}
+                sizes="(min-width: 1536px) 16vw, (min-width: 1280px) 20vw, (min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
                 alt=""
                 className="h-full w-full object-cover opacity-90 transition-[opacity,transform] duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
                 loading="lazy"
