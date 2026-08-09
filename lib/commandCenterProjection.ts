@@ -38,6 +38,7 @@ export interface StudioCommandCenterProjection {
   compactMode: boolean;
   runtimeStatus: CommandCenterRuntimeProjection;
   provider: CommandCenterProviderProjection;
+  providerOptions: CommandCenterProviderProjection[];
   queue: CommandCenterQueueProjection;
 }
 
@@ -88,15 +89,27 @@ export function summarizeCommandCenterRuntimeStatus(
   };
 }
 
+const QUICK_SWITCH_PROVIDER_IDS = [
+  'codex',
+  'grok',
+] as const satisfies readonly GenerationProviderId[];
+
+function resolveProviderFallbackLabel(providerId: GenerationProviderId) {
+  if (providerId === 'codex') return 'Codex app-server';
+  if (providerId === 'grok') return 'Grok Imagine';
+  return providerId;
+}
+
 function buildProviderProjection({
-  settings,
+  providerId,
   providerCapabilities,
   providerRuntimePreflight,
 }: Pick<
   BuildStudioCommandCenterProjectionArgs,
-  'settings' | 'providerCapabilities' | 'providerRuntimePreflight'
->): CommandCenterProviderProjection {
-  const providerId = settings?.defaultProviderId ?? 'codex';
+  'providerCapabilities' | 'providerRuntimePreflight'
+> & {
+  providerId: GenerationProviderId;
+}): CommandCenterProviderProjection {
   const capability =
     providerCapabilities?.providers.find((provider) => provider.providerId === providerId) ??
     providerCapabilities?.providers.find((provider) => provider.isDefault) ??
@@ -117,7 +130,7 @@ function buildProviderProjection({
 
   return {
     id: providerId,
-    label: capability?.label ?? providerId,
+    label: capability?.label ?? resolveProviderFallbackLabel(providerId),
     status,
     tone,
     tooltip: `${detail}${diagnostics}`,
@@ -135,14 +148,23 @@ export function buildStudioCommandCenterProjection({
   isQueueOpen,
   isGenerating,
 }: BuildStudioCommandCenterProjectionArgs): StudioCommandCenterProjection {
+  const activeProviderId = settings?.defaultProviderId ?? 'codex';
+
   return {
     compactMode: Boolean(settings?.commandCenterCompactMode),
     runtimeStatus: summarizeCommandCenterRuntimeStatus(statusItems),
     provider: buildProviderProjection({
-      settings,
+      providerId: activeProviderId,
       providerCapabilities,
       providerRuntimePreflight,
     }),
+    providerOptions: QUICK_SWITCH_PROVIDER_IDS.map((providerId) =>
+      buildProviderProjection({
+        providerId,
+        providerCapabilities,
+        providerRuntimePreflight,
+      }),
+    ),
     queue: {
       count: activeJobCount,
       isOpen: isQueueOpen,

@@ -6,6 +6,7 @@
 - React + Vite UI (`vp`)
 - Local Hono API on Bun
 - SQLite via `bun:sqlite` in the Studio Library
+- Optional Grok Imagine execution through the locally authenticated Grok Build CLI
 
 ## First run
 

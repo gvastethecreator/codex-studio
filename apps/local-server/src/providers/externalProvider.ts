@@ -3,6 +3,7 @@ import type { TurnResult } from '../codex/turn';
 import { createComfyWorkflowExecutor } from './comfyExecutor';
 import { createFalImageExecutor } from './falExecutor';
 import { createGoogleImageExecutor } from './googleExecutor';
+import { createGrokImagineExecutor } from './grokImagineExecutor';
 import {
   getExternalProviderRuntimePreflight,
   isExternalExecutableProviderId,
@@ -33,6 +34,8 @@ function createDefaultExecutor(providerId: ExternalExecutableProviderId) {
   switch (providerId) {
     case 'google':
       return createGoogleImageExecutor();
+    case 'grok':
+      return createGrokImagineExecutor();
     case 'fal':
       return createFalImageExecutor();
     case 'comfy':

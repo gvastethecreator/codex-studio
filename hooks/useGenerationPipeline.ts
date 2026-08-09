@@ -37,6 +37,14 @@ export function resolveGenerationWorkspaceId(
   return workspaceIdOverride ?? activeWorkspaceId;
 }
 
+export function resolveActiveRecipeGenerationConfig(
+  config: ImageGenerationConfig,
+  activeRecipe: RecipeId,
+): ImageGenerationConfig {
+  if (config.recipeId || !activeRecipe) return config;
+  return { ...config, recipeId: activeRecipe };
+}
+
 export function buildEditGenerationConfig({
   generationConfig,
   original,
@@ -199,9 +207,12 @@ export const useGenerationPipeline = ({
       configOverrides: Partial<ImageGenerationConfig>,
       options?: GenerationOptions,
     ): Promise<GenerationExecutionOutcome> => {
-      const configToUse = { ...generationConfigRef.current, ...configOverrides };
+      const configToUse = resolveActiveRecipeGenerationConfig(
+        { ...generationConfigRef.current, ...configOverrides },
+        activeRecipeRef.current,
+      );
       const runId = beginRun(configToUse);
-      const recipeId = configToUse.recipeId ?? activeRecipeRef.current;
+      const recipeId = configToUse.recipeId;
       const workspaceId = resolveGenerationWorkspaceId(
         activeWorkspaceIdRef.current,
         options?.workspaceId,

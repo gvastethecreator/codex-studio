@@ -37,6 +37,7 @@ Codex Studio keeps public and agent-facing documentation in the repository. Acce
 ## Current Architecture
 
 - [Architecture map](./ARCHITECTURE.md)
+- [Grok Imagine provider decision](./architecture/grok-imagine-provider-2026-08-08.md)
 - [Hardening architecture plan](./architecture/CODEX_STUDIO_HARDENING_PLAN.md)
 - [Product roadmap](../ROADMAP.md)
 

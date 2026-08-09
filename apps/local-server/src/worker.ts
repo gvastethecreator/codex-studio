@@ -311,6 +311,7 @@ export function createWorkerController({
     const result = await codexGenerationProvider.run({
       id: job.id,
       workspaceId: job.workspaceId,
+      libraryContext: job.libraryContext,
       prompt: job.finalPromptUsed,
       execution: job.execution,
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
@@ -370,6 +371,7 @@ export function createWorkerController({
     const result = await externalGenerationProvider.run({
       id: job.id,
       workspaceId: job.workspaceId,
+      libraryContext: job.libraryContext,
       prompt: job.finalPromptUsed,
       execution: job.execution,
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,

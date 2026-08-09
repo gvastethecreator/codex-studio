@@ -5,6 +5,7 @@ import {
   type GenerationProviderId,
 } from '../../../packages/shared/src';
 import { createProviderRoutes } from './providerRoutes';
+import type { GrokRuntimeDoctorReport } from './grokRuntimeDoctor';
 
 function createCodexRuntimeReport(
   overrides: Partial<CodexRuntimeDoctorReport> = {},
@@ -25,11 +26,30 @@ function createCodexRuntimeReport(
   };
 }
 
+function createGrokRuntimeReport(): GrokRuntimeDoctorReport {
+  return {
+    status: 'ready',
+    canRunJobs: true,
+    checkedAt: '2026-08-08T00:00:00.000Z',
+    selectedExecutable: 'grok',
+    selectedVersion: 'grok 1.0.0',
+    selectedVersionNumber: '1.0.0',
+    defaultModel: 'grok-4.5',
+    availableModels: ['grok-4.5'],
+    headlessSupported: true,
+    imagineAvailable: true,
+    recommendedAction: 'Grok Imagine is ready.',
+    issues: [],
+    candidates: [],
+  };
+}
+
 describe('providerRoutes', () => {
   it('returns provider capabilities from Studio Settings', async () => {
     const routes = createProviderRoutes({
       readSettings: () => createDefaultEditableStudioSettings(),
       readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
+      readGrokRuntimeDoctor: () => createGrokRuntimeReport(),
     });
 
     const response = await routes.request('/');
@@ -43,6 +63,7 @@ describe('providerRoutes', () => {
     const routes = createProviderRoutes({
       readSettings: () => createDefaultEditableStudioSettings(),
       readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
+      readGrokRuntimeDoctor: () => createGrokRuntimeReport(),
     });
 
     const response = await routes.request('/preflight');
@@ -77,6 +98,7 @@ describe('providerRoutes', () => {
             },
           ],
         }),
+      readGrokRuntimeDoctor: () => createGrokRuntimeReport(),
     });
 
     const response = await routes.request('/preflight');
@@ -98,6 +120,7 @@ describe('providerRoutes', () => {
     const routes = createProviderRoutes({
       readSettings: () => ({ ...createDefaultEditableStudioSettings(), defaultProviderId }),
       readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
+      readGrokRuntimeDoctor: () => createGrokRuntimeReport(),
     });
 
     const first = (await (await routes.request('/')).json()) as {

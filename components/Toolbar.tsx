@@ -44,6 +44,7 @@ import type {
   CodexModel,
   CodexModelCatalogResponse,
   CodexServiceTier,
+  GenerationProviderId,
 } from '../packages/shared/src';
 import type {
   AspectRatio,
@@ -87,6 +88,7 @@ export interface ToolbarProps {
   codexModelCatalog: CodexModelCatalogResponse | null;
   isLoadingCodexModelCatalog: boolean;
   codexModelCatalogError: string | null;
+  activeProviderId: GenerationProviderId;
   activeRecipe?: ImageGenerationConfig['recipeId'];
   mode?: 'full' | 'context-only';
 }
@@ -135,6 +137,19 @@ const PRO_SIZES: ImageSize[] = ['1K'];
 const BATCH_COUNTS = [1, 2, 3, 4];
 const EMPTY_CODEX_MODELS: CodexModel[] = [];
 
+const GENERATION_PROVIDER_LABELS: Partial<Record<GenerationProviderId, string>> = {
+  codex: 'Codex',
+  grok: 'Grok Imagine',
+  google: 'Google',
+  fal: 'fal.ai',
+  comfy: 'ComfyUI',
+  dry_run: 'Dry run',
+};
+
+function formatGenerationProviderLabel(providerId: GenerationProviderId) {
+  return GENERATION_PROVIDER_LABELS[providerId] ?? providerId;
+}
+
 function buildCodexFallbackCatalogErrorMessage(catalog: CodexModelCatalogResponse | null) {
   if (!catalog || catalog.source !== 'fallback' || !catalog.error) {
     return null;
@@ -168,6 +183,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     codexModelCatalog,
     isLoadingCodexModelCatalog,
     codexModelCatalogError,
+    activeProviderId,
     activeRecipe = null,
     mode = 'full',
   }) => {
@@ -1020,234 +1036,249 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   </DemandMountedGsapDropdown>
                 </div>
 
-                {/* Model Selector */}
-                <div className="relative min-w-0">
-                  <button
-                    ref={modelButtonRef}
-                    type="button"
-                    onClick={() => {
-                      setIsModelOpen(!isModelOpen);
-                      setIsAspectRatioOpen(false);
-                      setIsExecutionOpen(false);
-                    }}
-                    aria-label={`Generation model: ${
-                      AVAILABLE_MODELS.find((m) => m.id === generationConfig.model)?.name ??
-                      generationConfig.model
-                    }`}
-                    aria-haspopup="menu"
-                    aria-expanded={isModelOpen}
-                    className={btnClass}
-                  >
-                    <ModelIcon model={generationConfig.model} />
-                    <span className="text-[8px] sm:hidden 2xl:inline">
-                      {AVAILABLE_MODELS.find((m) => m.id === generationConfig.model)?.name.replace(
-                        'Codex ',
-                        '',
-                      )}
-                    </span>
-                  </button>
-                  <DemandMountedGsapDropdown
-                    open={isModelOpen}
-                    onOpenChange={setIsModelOpen}
-                    triggerRef={modelButtonRef}
-                    placement="top-right"
-                    className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-4 min-w-[240px] p-2"
-                  >
-                    {AVAILABLE_MODELS.map((m) => (
+                {activeProviderId === 'codex' ? (
+                  <>
+                    {/* Model Selector */}
+                    <div className="relative min-w-0">
                       <button
+                        ref={modelButtonRef}
                         type="button"
-                        key={m.id}
-                        role="menuitemradio"
-                        aria-checked={generationConfig.model === m.id}
-                        data-dropdown-item
                         onClick={() => {
-                          updateConfig('model', m.id);
-                          setIsModelOpen(false);
+                          setIsModelOpen(!isModelOpen);
+                          setIsAspectRatioOpen(false);
+                          setIsExecutionOpen(false);
                         }}
-                        className={`mb-1 min-h-12 w-full rounded-xl px-3 py-2.5 text-left transition-[color,background-color,border-color,opacity,transform] last:mb-0 ${generationConfig.model === m.id ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border border-accent-700/30' : 'border border-transparent text-zinc-400 hover:bg-white/5'}`}
+                        aria-label={`Generation model: ${
+                          AVAILABLE_MODELS.find((m) => m.id === generationConfig.model)?.name ??
+                          generationConfig.model
+                        }`}
+                        aria-haspopup="menu"
+                        aria-expanded={isModelOpen}
+                        className={btnClass}
                       >
-                        <div className="flex items-center gap-2 mb-0.5">
-                          <ModelIcon model={m.id} />
-                          <div
-                            className={`text-[10px] font-black uppercase tracking-wide ${generationConfig.model === m.id ? 'text-accent-300' : 'text-zinc-300'}`}
+                        <ModelIcon model={generationConfig.model} />
+                        <span className="text-[8px] sm:hidden 2xl:inline">
+                          {AVAILABLE_MODELS.find(
+                            (m) => m.id === generationConfig.model,
+                          )?.name.replace('Codex ', '')}
+                        </span>
+                      </button>
+                      <DemandMountedGsapDropdown
+                        open={isModelOpen}
+                        onOpenChange={setIsModelOpen}
+                        triggerRef={modelButtonRef}
+                        placement="top-right"
+                        className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-4 min-w-[240px] p-2"
+                      >
+                        {AVAILABLE_MODELS.map((m) => (
+                          <button
+                            type="button"
+                            key={m.id}
+                            role="menuitemradio"
+                            aria-checked={generationConfig.model === m.id}
+                            data-dropdown-item
+                            onClick={() => {
+                              updateConfig('model', m.id);
+                              setIsModelOpen(false);
+                            }}
+                            className={`mb-1 min-h-12 w-full rounded-xl px-3 py-2.5 text-left transition-[color,background-color,border-color,opacity,transform] last:mb-0 ${generationConfig.model === m.id ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border border-accent-700/30' : 'border border-transparent text-zinc-400 hover:bg-white/5'}`}
                           >
-                            {m.name}
+                            <div className="flex items-center gap-2 mb-0.5">
+                              <ModelIcon model={m.id} />
+                              <div
+                                className={`text-[10px] font-black uppercase tracking-wide ${generationConfig.model === m.id ? 'text-accent-300' : 'text-zinc-300'}`}
+                              >
+                                {m.name}
+                              </div>
+                            </div>
+                            <div className="pl-6 text-[10px] font-bold text-zinc-500">
+                              {m.description}
+                            </div>
+                          </button>
+                        ))}
+                      </DemandMountedGsapDropdown>
+                    </div>
+
+                    {/* Codex Task Execution Selector */}
+                    <div className="relative min-w-0">
+                      <button
+                        ref={executionButtonRef}
+                        type="button"
+                        onClick={() => {
+                          setIsExecutionOpen(!isExecutionOpen);
+                          setIsModelOpen(false);
+                          setIsAspectRatioOpen(false);
+                          setIsBatchOpen(false);
+                        }}
+                        aria-label={`Codex task execution: ${executionSummary}`}
+                        aria-haspopup="dialog"
+                        aria-expanded={isExecutionOpen}
+                        className={btnClass}
+                      >
+                        <BrainCircuit size={14} />
+                        <span className="text-[8px] sm:hidden">Task</span>
+                        <span className="hidden text-[8px] 2xl:inline">{executionSummary}</span>
+                      </button>
+                      <DemandMountedGsapDropdown
+                        open={isExecutionOpen}
+                        onOpenChange={setIsExecutionOpen}
+                        triggerRef={executionButtonRef}
+                        placement="top-right"
+                        role="dialog"
+                        aria-label="Codex task execution"
+                        className="studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 w-[min(90vw,420px)] p-3"
+                      >
+                        <div className="flex items-start justify-between gap-4 mb-3">
+                          <div>
+                            <div className="mb-1 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                              Codex Task Execution
+                            </div>
+                            <div className="text-xs font-black uppercase tracking-wide text-zinc-100">
+                              {selectedExecutionModel?.displayName || executionModelLabel}
+                            </div>
+                            <div className="mt-1 max-w-[280px] text-[10px] font-bold leading-relaxed text-zinc-500">
+                              {selectedExecutionModel?.description ||
+                                'Choose the Codex model that executes the generation task, plus its thinking effort and speed tier.'}
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2 shrink-0">
+                            {isLoadingCodexModelCatalog && (
+                              <Loader2 size={12} className="animate-spin text-accent-300" />
+                            )}
+                            <div className="text-[10px] font-black uppercase tracking-[0.12em] text-zinc-500">
+                              {codexModelCatalog?.source === 'fallback' ? 'Docs fallback' : 'Live'}
+                            </div>
                           </div>
                         </div>
-                        <div className="pl-6 text-[10px] font-bold text-zinc-500">
-                          {m.description}
-                        </div>
-                      </button>
-                    ))}
-                  </DemandMountedGsapDropdown>
-                </div>
 
-                {/* Codex Task Execution Selector */}
-                <div className="relative min-w-0">
-                  <button
-                    ref={executionButtonRef}
-                    type="button"
-                    onClick={() => {
-                      setIsExecutionOpen(!isExecutionOpen);
-                      setIsModelOpen(false);
-                      setIsAspectRatioOpen(false);
-                      setIsBatchOpen(false);
-                    }}
-                    aria-label={`Codex task execution: ${executionSummary}`}
-                    aria-haspopup="dialog"
-                    aria-expanded={isExecutionOpen}
-                    className={btnClass}
-                  >
-                    <BrainCircuit size={14} />
-                    <span className="text-[8px] sm:hidden">Task</span>
-                    <span className="hidden text-[8px] 2xl:inline">{executionSummary}</span>
-                  </button>
-                  <DemandMountedGsapDropdown
-                    open={isExecutionOpen}
-                    onOpenChange={setIsExecutionOpen}
-                    triggerRef={executionButtonRef}
-                    placement="top-right"
-                    role="dialog"
-                    aria-label="Codex task execution"
-                    className="studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 w-[min(90vw,420px)] p-3"
-                  >
-                    <div className="flex items-start justify-between gap-4 mb-3">
-                      <div>
-                        <div className="mb-1 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                          Codex Task Execution
-                        </div>
-                        <div className="text-xs font-black uppercase tracking-wide text-zinc-100">
-                          {selectedExecutionModel?.displayName || executionModelLabel}
-                        </div>
-                        <div className="mt-1 max-w-[280px] text-[10px] font-bold leading-relaxed text-zinc-500">
-                          {selectedExecutionModel?.description ||
-                            'Choose the Codex model that executes the generation task, plus its thinking effort and speed tier.'}
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-2 shrink-0">
-                        {isLoadingCodexModelCatalog && (
-                          <Loader2 size={12} className="animate-spin text-accent-300" />
+                        {executionSourceMessage && (
+                          <div className="mb-3 rounded-xl border border-amber-500/20 bg-amber-500/10 px-3 py-2 text-[8px] font-bold text-amber-200">
+                            {executionSourceMessage}
+                          </div>
                         )}
-                        <div className="text-[10px] font-black uppercase tracking-[0.12em] text-zinc-500">
-                          {codexModelCatalog?.source === 'fallback' ? 'Docs fallback' : 'Live'}
-                        </div>
-                      </div>
-                    </div>
 
-                    {executionSourceMessage && (
-                      <div className="mb-3 rounded-xl border border-amber-500/20 bg-amber-500/10 px-3 py-2 text-[8px] font-bold text-amber-200">
-                        {executionSourceMessage}
-                      </div>
-                    )}
-
-                    <div className="mb-3">
-                      <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
-                        Available Codex Models
-                      </div>
-                      <div className="max-h-[220px] overflow-y-auto pr-1 space-y-1.5 custom-scrollbar">
-                        {codexModels.map((model) => {
-                          const isSelected = model.id === selectedExecutionModel?.id;
-                          const modelSpeedOptions = getCodexSpeedOptions(model);
-                          return (
-                            <button
-                              type="button"
-                              key={model.id}
-                              onClick={() => handleSelectExecutionModel(model)}
-                              className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] border ${
-                                isSelected
-                                  ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
-                                  : 'hover:bg-white/5 text-zinc-400 border-transparent'
-                              }`}
-                            >
-                              <div className="flex items-center justify-between gap-3 mb-1">
-                                <div
-                                  className={`text-[10px] font-black uppercase tracking-wide ${
-                                    isSelected ? 'text-accent-300' : 'text-zinc-200'
+                        <div className="mb-3">
+                          <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
+                            Available Codex Models
+                          </div>
+                          <div className="max-h-[220px] overflow-y-auto pr-1 space-y-1.5 custom-scrollbar">
+                            {codexModels.map((model) => {
+                              const isSelected = model.id === selectedExecutionModel?.id;
+                              const modelSpeedOptions = getCodexSpeedOptions(model);
+                              return (
+                                <button
+                                  type="button"
+                                  key={model.id}
+                                  onClick={() => handleSelectExecutionModel(model)}
+                                  className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] border ${
+                                    isSelected
+                                      ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/30'
+                                      : 'hover:bg-white/5 text-zinc-400 border-transparent'
                                   }`}
                                 >
-                                  {model.displayName}
-                                </div>
-                                {isSelected ? (
-                                  <Check size={12} className="text-accent-300 shrink-0" />
-                                ) : null}
-                              </div>
-                              <div className="text-[8px] text-zinc-500 font-bold leading-relaxed">
-                                {model.description || 'Codex execution model'}
-                              </div>
-                              <div className="mt-2 flex flex-wrap gap-1.5">
-                                {model.isDefault && (
-                                  <span className="px-1.5 py-0.5 rounded-md bg-accent-500/15 text-accent-200 text-[7px] font-black uppercase tracking-wide">
-                                    Default
-                                  </span>
-                                )}
-                                {modelSpeedOptions.includes('fast') && (
-                                  <span className="px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-200 text-[7px] font-black uppercase tracking-wide">
-                                    Fast
-                                  </span>
-                                )}
-                                {codexModelCatalog?.planType &&
-                                  model.id === 'gpt-5.3-codex-spark' && (
-                                    <span className="px-1.5 py-0.5 rounded-md bg-fuchsia-500/10 text-fuchsia-200 text-[7px] font-black uppercase tracking-wide">
-                                      {codexModelCatalog.planType}
-                                    </span>
-                                  )}
-                              </div>
-                            </button>
-                          );
-                        })}
-                      </div>
-                    </div>
-
-                    <div className="border-t border-white/5 pt-3 mb-3">
-                      <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
-                        Thinking
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {executionReasoningOptions.map((effort) => (
-                          <button
-                            type="button"
-                            key={effort}
-                            onClick={() => updateConfig('executionReasoningEffort', effort)}
-                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                              generationConfig.executionReasoningEffort === effort
-                                ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
-                                : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                            }`}
-                          >
-                            {effort}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="border-t border-white/5 pt-3">
-                      <div className="flex items-center justify-between gap-3 mb-2">
-                        <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
-                          Speed
+                                  <div className="flex items-center justify-between gap-3 mb-1">
+                                    <div
+                                      className={`text-[10px] font-black uppercase tracking-wide ${
+                                        isSelected ? 'text-accent-300' : 'text-zinc-200'
+                                      }`}
+                                    >
+                                      {model.displayName}
+                                    </div>
+                                    {isSelected ? (
+                                      <Check size={12} className="text-accent-300 shrink-0" />
+                                    ) : null}
+                                  </div>
+                                  <div className="text-[8px] text-zinc-500 font-bold leading-relaxed">
+                                    {model.description || 'Codex execution model'}
+                                  </div>
+                                  <div className="mt-2 flex flex-wrap gap-1.5">
+                                    {model.isDefault && (
+                                      <span className="px-1.5 py-0.5 rounded-md bg-accent-500/15 text-accent-200 text-[7px] font-black uppercase tracking-wide">
+                                        Default
+                                      </span>
+                                    )}
+                                    {modelSpeedOptions.includes('fast') && (
+                                      <span className="px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-200 text-[7px] font-black uppercase tracking-wide">
+                                        Fast
+                                      </span>
+                                    )}
+                                    {codexModelCatalog?.planType &&
+                                      model.id === 'gpt-5.3-codex-spark' && (
+                                        <span className="px-1.5 py-0.5 rounded-md bg-fuchsia-500/10 text-fuchsia-200 text-[7px] font-black uppercase tracking-wide">
+                                          {codexModelCatalog.planType}
+                                        </span>
+                                      )}
+                                  </div>
+                                </button>
+                              );
+                            })}
+                          </div>
                         </div>
-                        <div className="text-[8px] font-bold text-zinc-600">
-                          Fast mode depends on the selected model and Codex sign-in.
+
+                        <div className="border-t border-white/5 pt-3 mb-3">
+                          <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
+                            Thinking
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {executionReasoningOptions.map((effort) => (
+                              <button
+                                type="button"
+                                key={effort}
+                                onClick={() => updateConfig('executionReasoningEffort', effort)}
+                                className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                  generationConfig.executionReasoningEffort === effort
+                                    ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                                    : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                                }`}
+                              >
+                                {effort}
+                              </button>
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                      <div className="flex flex-wrap gap-2">
-                        {executionSpeedOptions.map((speed) => (
-                          <button
-                            type="button"
-                            key={speed}
-                            onClick={() => handleSelectExecutionSpeed(speed)}
-                            className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                              generationConfig.executionSpeed === speed
-                                ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
-                                : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                            }`}
-                          >
-                            {formatCodexSpeedLabel(speed)}
-                          </button>
-                        ))}
-                      </div>
+
+                        <div className="border-t border-white/5 pt-3">
+                          <div className="flex items-center justify-between gap-3 mb-2">
+                            <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                              Speed
+                            </div>
+                            <div className="text-[8px] font-bold text-zinc-600">
+                              Fast mode depends on the selected model and Codex sign-in.
+                            </div>
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {executionSpeedOptions.map((speed) => (
+                              <button
+                                type="button"
+                                key={speed}
+                                onClick={() => handleSelectExecutionSpeed(speed)}
+                                className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                  generationConfig.executionSpeed === speed
+                                    ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/30'
+                                    : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                                }`}
+                              >
+                                {formatCodexSpeedLabel(speed)}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </DemandMountedGsapDropdown>
                     </div>
-                  </DemandMountedGsapDropdown>
-                </div>
+                  </>
+                ) : (
+                  <div
+                    role="status"
+                    aria-label={`Generation provider: ${formatGenerationProviderLabel(activeProviderId)}`}
+                    title="Generation provider"
+                    className={`${btnClass} cursor-default`}
+                  >
+                    <Zap size={14} />
+                    <span className="text-[8px] font-black uppercase tracking-wide">
+                      {formatGenerationProviderLabel(activeProviderId)}
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
 

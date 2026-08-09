@@ -49,6 +49,7 @@ interface StudioHeaderToolbarCommandCenterContext {
   provider: {
     capabilities: GenerationProviderCapabilitiesResponse | null;
     runtimePreflight: GenerationProviderRuntimePreflightResponse | null;
+    isSaving: HeaderToolbarProps['isProviderSaving'];
   };
   queue: {
     statusItems: StudioRuntimeStatusItem[];
@@ -59,6 +60,7 @@ interface StudioHeaderToolbarCommandCenterContext {
   };
   actions: {
     onOpenSettings: HeaderToolbarProps['onOpenSettings'];
+    onSelectProvider: HeaderToolbarProps['onSelectProvider'];
   };
 }
 
@@ -124,5 +126,7 @@ export function buildStudioHeaderToolbarProps({
     isQueueOpen: commandCenter.queue.isQueueOpen,
     onToggleQueue: () => commandCenter.queue.setIsQueueOpen((previous) => !previous),
     onOpenSettings: commandCenter.actions.onOpenSettings,
+    onSelectProvider: commandCenter.actions.onSelectProvider,
+    isProviderSaving: commandCenter.provider.isSaving,
   };
 }

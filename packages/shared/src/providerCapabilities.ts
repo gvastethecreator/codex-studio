@@ -68,6 +68,17 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     missingDetail: 'Codex Product Runtime is blocked by local runtime preflight.',
   },
   {
+    providerId: 'grok',
+    label: 'Grok Imagine',
+    runtimeKind: 'agent_cli',
+    hasAdapter: true,
+    requiresSecret: false,
+    requiresLocalRuntime: true,
+    activeDetail: 'Grok Imagine is available through the authenticated local Grok Build CLI.',
+    plannedDetail: 'Grok Imagine adapter is available.',
+    missingDetail: 'Install Grok Build and run `grok login` before enabling this adapter.',
+  },
+  {
     providerId: 'google',
     label: 'Google image API',
     runtimeKind: 'hosted_api',

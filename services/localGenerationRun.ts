@@ -113,6 +113,21 @@ export function resolveLocalGenerationProviderId({
   return providerId ?? settings?.defaultProviderId ?? 'codex';
 }
 
+export function resolveGenerationExecutionOverride(
+  providerId: GenerationProviderId,
+  config: Pick<
+    ImageGenerationConfig,
+    'executionModel' | 'executionReasoningEffort' | 'executionSpeed'
+  >,
+) {
+  if (providerId !== 'codex') return undefined;
+  return {
+    model: config.executionModel,
+    reasoningEffort: config.executionReasoningEffort,
+    serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
+  };
+}
+
 export function createLocalRunBatchId(now = Date.now, random = Math.random) {
   return `batch-${now()}-${random().toString(36).slice(2, 10)}`;
 }
@@ -291,11 +306,7 @@ export async function runSingleCodexImagegenJob(options: {
       },
     },
     prompt: taskPrompt,
-    execution: {
-      model: config.executionModel,
-      reasoningEffort: config.executionReasoningEffort,
-      serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
-    },
+    execution: resolveGenerationExecutionOverride(providerId, config),
     references: requestAssets.flatMap((asset) =>
       asset.dataUrl && isInlineAttachmentDataUrl(asset.dataUrl)
         ? [

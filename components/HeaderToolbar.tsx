@@ -11,6 +11,8 @@ import {
   IconMessage as MessageSquare,
   IconSettings as Settings,
   IconServer as Server,
+  IconCheck as Check,
+  IconChevronDown as ChevronDown,
 } from '@tabler/icons-react';
 import Tooltip from './Tooltip';
 import Logo from './Logo';
@@ -24,6 +26,7 @@ import { WorkspaceStrip } from './header/WorkspaceStrip';
 import { QueueProgressBar } from './header/QueueProgressBar';
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import { getRecipeModule } from '../lib/recipeModules';
+import type { GenerationProviderId } from '../packages/shared/src';
 
 export interface HeaderToolbarProps {
   isGenerating: boolean;
@@ -50,6 +53,8 @@ export interface HeaderToolbarProps {
   isQueueOpen: boolean;
   onToggleQueue: () => void;
   onOpenSettings: () => void;
+  onSelectProvider: (providerId: GenerationProviderId) => Promise<void>;
+  isProviderSaving: boolean;
   generationStartTime: number | null;
 }
 
@@ -80,14 +85,18 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   isQueueOpen,
   onToggleQueue,
   onOpenSettings,
+  onSelectProvider,
+  isProviderSaving,
   generationStartTime,
 }) => {
   const [isMobileWorkspaceOpen, setIsMobileWorkspaceOpen] = React.useState(false);
   const [isMobileCommandOpen, setIsMobileCommandOpen] = React.useState(false);
+  const [isProviderMenuOpen, setIsProviderMenuOpen] = React.useState(false);
   const mobileWorkspaceRef = React.useRef<HTMLDivElement>(null);
   const mobileWorkspaceButtonRef = React.useRef<HTMLButtonElement>(null);
   const mobileCommandRef = React.useRef<HTMLDivElement>(null);
   const mobileCommandButtonRef = React.useRef<HTMLButtonElement>(null);
+  const providerButtonRef = React.useRef<HTMLButtonElement>(null);
   const activeRecipeAlias = resolveRecipeAlias(activeRecipeAliasId);
   const activeRecipeData = activeRecipe
     ? { name: activeRecipeAlias?.title ?? getRecipeModule(activeRecipe)?.title ?? activeRecipe }
@@ -97,13 +106,20 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const workspaceLabel = activeWorkspace?.name || 'Studio';
   const runtimeStatus = commandCenter.runtimeStatus;
   const activeProvider = commandCenter.provider;
+  const providerOptions = commandCenter.providerOptions;
   const queueResultPreviews = commandCenter.queue.resultPreviews ?? EMPTY_QUEUE_PREVIEWS;
   const queueCount = commandCenter.queue.count;
   const hasQueueResultPreviews = commandCenter.queue.hasResultPreviews;
   const showCollapsedQueueProgress = commandCenter.queue.showCollapsedProgress;
+  const providerShortLabel =
+    activeProvider.id === 'codex'
+      ? 'Codex'
+      : activeProvider.id === 'grok'
+        ? 'Grok'
+        : activeProvider.id;
   const providerToolbarLabel = commandCenter.compactMode
-    ? activeProvider.id.slice(0, 3)
-    : activeProvider.id;
+    ? providerShortLabel.slice(0, 3)
+    : providerShortLabel;
   const runtimeToneClass =
     runtimeStatus.tone === 'success'
       ? 'border-emerald-500/20 bg-emerald-500/8 text-emerald-200'
@@ -139,6 +155,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
     setIsMobileCommandOpen(false);
     action();
   }, []);
+
+  const selectProvider = React.useCallback(
+    (providerId: GenerationProviderId) => {
+      if (providerId === activeProvider.id || isProviderSaving) return;
+      setIsProviderMenuOpen(false);
+      void onSelectProvider(providerId);
+    },
+    [activeProvider.id, isProviderSaving, onSelectProvider],
+  );
 
   return (
     <TopToolbar className="studio-toolbar-shell w-full min-h-10 bg-black/80 flex items-center px-2 py-1 z-40 shrink-0 border-b border-white/5">
@@ -284,18 +309,107 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 </span>
               </button>
             </Tooltip>
-            <Tooltip content={activeProvider.tooltip} position="bottom">
-              <button
-                type="button"
-                onClick={onOpenSettings}
-                aria-label={`Open provider settings for ${activeProvider.label}`}
-                className={`studio-command-surface studio-hit-target hidden h-8 items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:flex ${commandCenter.compactMode ? 'max-w-12' : 'max-w-24'}`}
+            <div className="relative hidden sm:block">
+              <Tooltip content="Change image generation provider" position="bottom">
+                <button
+                  ref={providerButtonRef}
+                  type="button"
+                  onClick={() => setIsProviderMenuOpen((isOpen) => !isOpen)}
+                  aria-label={`Image generation provider: ${activeProvider.label}. Change provider`}
+                  aria-haspopup="dialog"
+                  aria-expanded={isProviderMenuOpen}
+                  aria-controls="provider-quick-switch"
+                  className={`studio-command-surface studio-hit-target flex h-8 w-8 items-center justify-center gap-1 rounded-lg border border-white/10 bg-white/5 px-1.5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:w-auto lg:justify-start lg:gap-1.5 lg:px-2 ${commandCenter.compactMode ? 'lg:max-w-16' : 'lg:max-w-28'}`}
+                >
+                  <span
+                    aria-hidden="true"
+                    className={`size-1.5 shrink-0 rounded-full ${activeProvider.canExecute ? 'bg-emerald-400' : activeProvider.status === 'unknown' ? 'bg-amber-400' : 'bg-rose-400'}`}
+                  />
+                  <span className="text-[9px] font-black uppercase tracking-[0.1em] lg:hidden">
+                    {providerShortLabel.slice(0, 1)}
+                  </span>
+                  <span className="hidden truncate text-[10px] font-black uppercase tracking-[0.16em] lg:inline">
+                    {providerToolbarLabel}
+                  </span>
+                  <ChevronDown
+                    size={12}
+                    aria-hidden="true"
+                    className={`hidden shrink-0 transition-transform lg:block ${isProviderMenuOpen ? 'rotate-180' : ''}`}
+                  />
+                </button>
+              </Tooltip>
+              <DemandMountedGsapDropdown
+                id="provider-quick-switch"
+                open={isProviderMenuOpen}
+                onOpenChange={setIsProviderMenuOpen}
+                triggerRef={providerButtonRef}
+                placement="bottom-right"
+                portal
+                role="dialog"
+                aria-label="Image generation provider"
+                className="w-72 p-2"
               >
-                <span className="truncate text-[10px] font-black uppercase tracking-[0.16em]">
-                  {providerToolbarLabel}
-                </span>
-              </button>
-            </Tooltip>
+                <div className="px-2 pb-2 pt-1">
+                  <div className="text-[9px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                    Image provider
+                  </div>
+                  <div className="mt-1 text-[11px] font-semibold text-zinc-300">
+                    Applies to the next generation.
+                  </div>
+                </div>
+                <div className="space-y-1">
+                  {providerOptions.map((provider) => {
+                    const isSelected = provider.id === activeProvider.id;
+                    const isUnavailable = !provider.canExecute;
+                    return (
+                      <button
+                        key={provider.id}
+                        type="button"
+                        data-dropdown-item
+                        aria-pressed={isSelected}
+                        disabled={isProviderSaving || isUnavailable}
+                        title={provider.tooltip}
+                        onClick={() => selectProvider(provider.id)}
+                        className={`flex min-h-12 w-full items-center gap-3 rounded-xl border px-3 py-2 text-left transition-[color,background-color,border-color,opacity,transform] ${
+                          isSelected
+                            ? 'border-accent-400/30 bg-accent-500/12 text-white'
+                            : 'border-transparent bg-white/[0.03] text-zinc-300 hover:border-white/10 hover:bg-white/[0.07]'
+                        } disabled:cursor-not-allowed disabled:opacity-55`}
+                      >
+                        <span
+                          aria-hidden="true"
+                          className={`size-2 shrink-0 rounded-full ${provider.canExecute ? 'bg-emerald-400' : provider.status === 'unknown' ? 'bg-amber-400' : 'bg-rose-400'}`}
+                        />
+                        <span className="min-w-0 flex-1">
+                          <span className="block truncate text-[10px] font-black uppercase tracking-[0.14em]">
+                            {provider.label}
+                          </span>
+                          <span className="mt-0.5 block text-[9px] font-bold text-zinc-500">
+                            {provider.canExecute
+                              ? 'Ready'
+                              : provider.status === 'unknown'
+                                ? 'Checking runtime'
+                                : 'Needs setup'}
+                          </span>
+                        </span>
+                        {isSelected ? <Check size={15} aria-hidden="true" /> : null}
+                      </button>
+                    );
+                  })}
+                </div>
+                <button
+                  type="button"
+                  data-dropdown-item
+                  onClick={() => {
+                    setIsProviderMenuOpen(false);
+                    onOpenSettings();
+                  }}
+                  className="mt-2 w-full rounded-lg border-t border-white/8 px-3 py-2 text-left text-[9px] font-black uppercase tracking-[0.14em] text-zinc-500 transition-colors hover:text-zinc-200"
+                >
+                  Provider settings and diagnostics
+                </button>
+              </DemandMountedGsapDropdown>
+            </div>
             <Tooltip content="Help & setup" position="bottom">
               <button
                 type="button"
@@ -453,8 +567,55 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                     className="flex min-h-11 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
                   >
                     <Settings size={15} />
-                    <span className="truncate">{activeProvider.label}</span>
+                    <span className="truncate">Settings</span>
                   </button>
+                </div>
+                <div className="mb-2 rounded-xl border border-white/6 bg-white/[0.03] p-2">
+                  <div className="mb-2 flex items-center justify-between gap-3 px-1">
+                    <span className="text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                      Image provider
+                    </span>
+                    <span className="truncate text-[9px] font-bold text-zinc-300">
+                      {providerShortLabel}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    {providerOptions.map((provider) => {
+                      const isSelected = provider.id === activeProvider.id;
+                      return (
+                        <button
+                          key={provider.id}
+                          type="button"
+                          data-dropdown-item
+                          aria-pressed={isSelected}
+                          disabled={isProviderSaving || !provider.canExecute}
+                          title={provider.tooltip}
+                          onClick={() =>
+                            runMobileCommand(() => {
+                              selectProvider(provider.id);
+                            })
+                          }
+                          className={`flex min-h-12 items-center justify-between gap-2 rounded-xl border px-3 text-left text-[10px] font-black uppercase tracking-wider transition-[color,background-color,border-color,opacity] ${
+                            isSelected
+                              ? 'border-accent-400/30 bg-accent-500/12 text-white'
+                              : 'border-white/8 bg-white/5 text-zinc-300'
+                          } disabled:cursor-not-allowed disabled:opacity-55`}
+                        >
+                          <span className="truncate">
+                            {provider.id === 'codex' ? 'Codex' : provider.label}
+                          </span>
+                          {isSelected ? (
+                            <Check size={15} aria-hidden="true" className="shrink-0" />
+                          ) : (
+                            <span
+                              aria-hidden="true"
+                              className={`size-2 shrink-0 rounded-full ${provider.canExecute ? 'bg-emerald-400' : provider.status === 'unknown' ? 'bg-amber-400' : 'bg-rose-400'}`}
+                            />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
                 <div className="grid grid-cols-2 gap-2">
                   <button

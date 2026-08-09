@@ -28,6 +28,7 @@ const ROOT_DIR = process.cwd();
 const LOG_DIR = path.resolve(ROOT_DIR, 'logs', 'tooling');
 const DEFAULT_MAX_OXC_THREADS = 8;
 const DEFAULT_MAX_LINT_THREADS = 8;
+const DEFAULT_MAX_TEST_WORKERS = 8;
 const DEFAULT_TAIL_LINE_COUNT = 12;
 const DEFAULT_TOOLING_LOG_RETENTION = 20;
 
@@ -55,6 +56,7 @@ const UNIT_TEST_FILES = [
 
 const FMT_THREADS = resolveToolThreads('OXFMT_THREADS', DEFAULT_MAX_OXC_THREADS);
 const LINT_THREADS = resolveLintThreads();
+const TEST_WORKERS = resolveToolThreads('VITEST_MAX_WORKERS', DEFAULT_MAX_TEST_WORKERS);
 
 const TASKS: Record<string, TaskDefinition> = {
   'tooling:logs:prune': {
@@ -107,7 +109,14 @@ const TASKS: Record<string, TaskDefinition> = {
   },
   test: {
     description: 'Run the full unit test suite with Vitest via Vite+.',
-    steps: [{ label: 'Test', command: 'vp', args: ['test', 'run'], appendExtraArgs: true }],
+    steps: [
+      {
+        label: 'Test',
+        command: 'vp',
+        args: ['test', 'run', '--maxWorkers', String(TEST_WORKERS)],
+        appendExtraArgs: true,
+      },
+    ],
   },
   'test:unit': {
     description: 'Run the focused fast unit suite used in iterative refactors.',

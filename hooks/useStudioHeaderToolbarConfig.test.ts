@@ -81,6 +81,7 @@ describe('buildStudioHeaderToolbarProps', () => {
               },
             ],
           },
+          isSaving: false,
         },
         queue: {
           statusItems: [
@@ -102,6 +103,9 @@ describe('buildStudioHeaderToolbarProps', () => {
         },
         actions: {
           onOpenSettings: () => calls.push('openSettings'),
+          onSelectProvider: async (providerId) => {
+            calls.push(`provider:${providerId}`);
+          },
         },
       },
       startTransition: (callback) => {
@@ -114,6 +118,7 @@ describe('buildStudioHeaderToolbarProps', () => {
     props.onOpenOnboarding();
     props.onOpenChat();
     props.onToggleQueue();
+    void props.onSelectProvider('grok');
     props.onOpenSettings();
 
     expect(props.activeWorkspaceId).toBe('default');
@@ -145,7 +150,9 @@ describe('buildStudioHeaderToolbarProps', () => {
       'openOnboarding',
       'openChat',
       'toggleQueue:true',
+      'provider:grok',
       'openSettings',
     ]);
+    expect(props.isProviderSaving).toBe(false);
   });
 });

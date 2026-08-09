@@ -22,6 +22,8 @@ graph TD
     PROVIDERS --> CODEX["Codex Product Runtime"]
     CODEX --> CX["codex app-server ws://127.0.0.1:17224"]
     CX --> TURN["Codex image turns"]
+    PROVIDERS --> GROK["Grok Imagine adapter"]
+    GROK --> GCLI["Authenticated Grok Build CLI"]
     PROVIDERS --> FAL["fal.ai hosted API"]
     PROVIDERS --> GOOGLE["Google Gemini image API"]
     PROVIDERS --> COMFY["ComfyUI local runtime"]
@@ -66,7 +68,7 @@ graph TD
 - `apps/local-server/src/eventStreamRoutes.ts` owns SSE.
 - `apps/local-server/src/libraryRoutes.ts` owns local asset serving.
 - `apps/local-server/src/settingsRoutes.ts` owns editable Studio Settings.
-- `apps/local-server/src/providerCapabilities.ts` owns the fixed non-secret capability catalog; `apps/local-server/src/providers/runtimeConfig.ts` owns external runtime preflight.
+- `apps/local-server/src/providerCapabilities.ts` owns the fixed non-secret capability catalog; `apps/local-server/src/providers/runtimeConfig.ts` owns external runtime preflight; `apps/local-server/src/grokRuntimeDoctor.ts` checks the optional local Grok Build runtime and login.
 - `apps/local-server/src/providers/providerInputCompiler.ts`, `apps/local-server/src/providers/externalProvider.ts`, and `apps/local-server/src/workerRouting.ts` use explicit built-in dispatch for compilation, execution, and worker selection.
 - `apps/local-server/src/outputSourceRoutes.ts` owns External Output Source registration and import.
 
@@ -77,7 +79,7 @@ graph TD
 3. The runner resolves Recipe Module data, builds provider-independent Generation Task Specs, and creates Persistent Jobs.
 4. The backend validates intake, captures an immutable Library Context, resolves effective provider execution policy, persists job state, and enqueues work.
 5. The Provider Boundary compiles the Generation Task Spec into provider-specific input.
-6. The Codex provider runs turns through `codex app-server`; external providers run only when concrete preflight passes.
+6. The Codex provider runs turns through `codex app-server`; Grok Imagine runs one bounded headless Grok Build session per Job; other providers run only when concrete preflight passes.
 7. Completed jobs write Local Assets, Catalog Entries, transcripts, and logs into the Studio Library.
 8. The UI refreshes `/api/catalog` by job id and renders catalog-derived images.
 9. The legacy workspace JSON shape is derived from current Catalog Entries only when the user explicitly exports it.
@@ -107,6 +109,11 @@ Studio Readiness combines:
 
 The main product flow is blocked when the local Codex/ChatGPT login cannot run jobs. The default Codex flow does not require `OPENAI_API_KEY`.
 Codex job intake uses this same non-secret runtime readiness signal before persisting or requeueing jobs, so known-bad local runtimes fail fast instead of creating doomed queue rows.
+
+Optional Grok readiness is provider-scoped rather than a global onboarding
+gate. Its Runtime Doctor checks the native CLI, local login, model catalog,
+headless controls, and Imagine capability. Studio never reads or stores the
+CLI's authentication material.
 
 Runtime compatibility is capability-first. Runtime Doctor probes the resolved
 stable launcher before fallback candidates, RPC requests have bounded
@@ -141,6 +148,7 @@ Generation Tasks and Generation Providers stay separate:
 Current concrete adapters:
 
 - **Codex:** primary product runtime through `codex app-server`.
+- **Grok Imagine:** optional local-agent executor through the authenticated Grok Build CLI. Each image Job uses a fresh strict headless session, an exact `image_gen` or `image_edit` allowlist, no automatic retry, and a copy of the verified session image into the captured Studio Library. It requires no Studio-managed Provider Secret.
 - **fal.ai:** hosted executor using `FAL_KEY` or `FAL_API_KEY` from backend env only.
 - **Google Gemini image API:** hosted executor using `GOOGLE_API_KEY`, `GEMINI_API_KEY`, or `NANO_BANANA_API_KEY` from backend env only.
 - **ComfyUI:** local executor using `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`.
@@ -169,6 +177,7 @@ Codex SDK and scripts are automation surfaces, not the product runtime. They sup
 - `recipes:verify`
 - `styles:verify`
 - `runtime:doctor`
+- `providers:preflight`
 - `ui:source:verify`
 - `ui:chunks:verify`
 - `library:layout:verify`

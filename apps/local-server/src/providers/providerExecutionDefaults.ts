@@ -2,6 +2,7 @@ import type { GenerationProviderId, JobExecutionOptions } from '../../../../pack
 import { getSettings } from '../config';
 
 export const DEFAULT_GOOGLE_IMAGE_MODEL = 'gemini-2.5-flash-image';
+export const DEFAULT_GROK_IMAGE_MODEL = 'grok-4.5';
 export const DEFAULT_FAL_IMAGE_MODEL = 'fal-ai/flux/schnell';
 export const DEFAULT_COMFY_MODEL = 'workflow-template';
 
@@ -22,6 +23,14 @@ export function resolveBootstrapProviderExecutionOptions(
     return {
       model: env.GOOGLE_IMAGE_MODEL?.trim() || DEFAULT_GOOGLE_IMAGE_MODEL,
       reasoningEffort: 'minimal',
+      serviceTier: null,
+    };
+  }
+
+  if (providerId === 'grok') {
+    return {
+      model: env.GROK_IMAGE_MODEL?.trim() || DEFAULT_GROK_IMAGE_MODEL,
+      reasoningEffort: 'low',
       serviceTier: null,
     };
   }

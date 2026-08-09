@@ -25,6 +25,8 @@ $null
 *.rej
 *.tsbuildinfo
 .scratch/
+.snapshots/
+docs/codemap/.staging/
 
 # Local DB / WAL
 *.sqlite

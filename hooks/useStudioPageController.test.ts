@@ -218,6 +218,9 @@ describe('buildStudioPageController', () => {
           sync: {
             verifyCodexSession: async () => {},
           },
+          provider: {
+            activeProviderId: 'codex',
+          },
         },
       },
     });

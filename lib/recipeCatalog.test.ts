@@ -27,7 +27,7 @@ describe('recipeCatalog', () => {
       description: 'Browse and apply styles, or generate style-card assets.',
       defaultTask: 'image_generate',
       supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
-      supportedProviders: ['codex', 'dry_run'],
+      supportedProviders: ['codex', 'grok', 'dry_run'],
       parameterGroups: ['identity', 'application', 'visual-dna'],
       requiredParameterIds: ['presetId', 'presetName'],
     });
@@ -52,6 +52,9 @@ describe('recipeCatalog', () => {
       'character-lab',
     ]);
     expect(searchRecipeCatalog({ providerId: 'dry_run' })).toHaveLength(RECIPE_CATALOG.length);
+    expect(searchRecipeCatalog({ providerId: 'grok' }).map((recipe) => recipe.id)).toEqual([
+      'styles',
+    ]);
     expect(searchRecipeCatalog({ query: 'storyboard' }).map((recipe) => recipe.id)).toEqual([
       'cinematic',
       'timeline',

@@ -12,6 +12,7 @@ export type GenerationTaskKind = (typeof GENERATION_TASK_KINDS)[number];
 
 export const BUILT_IN_GENERATION_PROVIDERS = [
   'codex',
+  'grok',
   'google',
   'fal',
   'comfy',
@@ -21,10 +22,16 @@ export const BUILT_IN_GENERATION_PROVIDERS = [
 export type BuiltInGenerationProvider = (typeof BUILT_IN_GENERATION_PROVIDERS)[number];
 export type GenerationProviderId = BuiltInGenerationProvider | (string & {});
 
-export type ProviderRuntimeKind = 'codex_app_server' | 'hosted_api' | 'local_workflow' | 'dry_run';
+export type ProviderRuntimeKind =
+  | 'codex_app_server'
+  | 'agent_cli'
+  | 'hosted_api'
+  | 'local_workflow'
+  | 'dry_run';
 
 export type CompiledProviderPayloadKind =
   | 'codex_prompt'
+  | 'agent_cli_prompt'
   | 'api_request'
   | 'comfy_workflow'
   | 'dry_run';

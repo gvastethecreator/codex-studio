@@ -65,7 +65,7 @@ export interface ProviderInputAuditReport {
   };
 }
 
-const EXTERNAL_FIXTURE_PROVIDERS: GenerationProviderId[] = ['google', 'fal', 'comfy'];
+const EXTERNAL_FIXTURE_PROVIDERS: GenerationProviderId[] = ['grok', 'google', 'fal', 'comfy'];
 const SECRET_LIKE_PATTERN =
   /(api[_-]?key|secret|bearer|access[_-]?token|refresh[_-]?token|sk-[A-Za-z0-9]|SHOULD_NOT_LEAK|SECRET_INLINE_IMAGE|data:image\/[^;]+;base64)/i;
 

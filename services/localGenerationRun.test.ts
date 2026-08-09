@@ -10,6 +10,7 @@ import {
   createLocalRunBatchId,
   createLocalRunTaskSpecId,
   resolveLocalGenerationProviderId,
+  resolveGenerationExecutionOverride,
 } from './localGenerationRun';
 
 describe('localGenerationRun', () => {
@@ -48,6 +49,18 @@ describe('localGenerationRun', () => {
 
   it('falls back to Codex when settings are unavailable', () => {
     expect(resolveLocalGenerationProviderId({ settings: null })).toBe('codex');
+  });
+
+  it('does not send Codex toolbar execution fields to another provider', () => {
+    expect(resolveGenerationExecutionOverride('grok', DEFAULT_GENERATION_CONFIG)).toBeUndefined();
+    expect(resolveGenerationExecutionOverride('codex', DEFAULT_GENERATION_CONFIG)).toEqual({
+      model: DEFAULT_GENERATION_CONFIG.executionModel,
+      reasoningEffort: DEFAULT_GENERATION_CONFIG.executionReasoningEffort,
+      serviceTier:
+        DEFAULT_GENERATION_CONFIG.executionSpeed === 'standard'
+          ? null
+          : DEFAULT_GENERATION_CONFIG.executionSpeed,
+    });
   });
 
   it('keeps image-guided task prompt compact instead of embedding recipe transport text', () => {

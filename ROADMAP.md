@@ -17,6 +17,7 @@ Codex Studio is moving toward a polished open-source preview while staying local
 - Jobs, events, transcripts, and catalog entries are traceable.
 - The browser renders Catalog Entries directly and observes one backend-owned Persistent Job lifecycle.
 - Generation Tasks and Generation Providers are separate concepts.
+- Optional Grok Imagine image Jobs reuse the authenticated local Grok Build CLI without changing the default Codex runtime; Styles supports both providers for direct generation and managed-reference styling.
 - Recipe Modules and Style Preset Manifests are becoming the durable authoring surface.
 
 ## Phases

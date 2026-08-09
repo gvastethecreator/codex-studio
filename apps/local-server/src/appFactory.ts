@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { Hono } from 'hono';
 import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
 import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
+import { readGrokRuntimeDoctor, type GrokRuntimeDoctorReport } from './grokRuntimeDoctor';
 import { createCatalogCommands } from './catalogCommands';
 import { createCatalogRoutes } from './catalogRoutes';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
@@ -127,6 +128,7 @@ export interface CreateStudioAppOptions {
     readLocalCodexSession?: () => Promise<LocalCodexSessionResponse>;
     readCodexModelCatalog?: () => Promise<CodexModelCatalogResponse>;
     readCodexRuntimeDoctor?: typeof readCodexRuntimeDoctor;
+    readGrokRuntimeDoctor?: () => GrokRuntimeDoctorReport;
     ensureAppServer?: (reason?: AppServerEnsureReason) => void;
     stopAppServer?: typeof stopAppServer;
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
@@ -161,6 +163,8 @@ export async function createStudioApp(
   const readCodexModelCatalog = options.dependencies?.readCodexModelCatalog ?? getCodexModelCatalog;
   const readCodexRuntimeDoctorFn =
     options.dependencies?.readCodexRuntimeDoctor ?? readCodexRuntimeDoctor;
+  const readGrokRuntimeDoctorFn =
+    options.dependencies?.readGrokRuntimeDoctor ?? readGrokRuntimeDoctor;
   const ensureLocalAppServer = options.dependencies?.ensureAppServer ?? ensureAppServer;
   const stopLocalAppServer = options.dependencies?.stopAppServer ?? stopAppServer;
   const readAppServerDiagnostics =
@@ -236,6 +240,7 @@ export async function createStudioApp(
       readSettings: () => readEditableStudioSettings(settingsStorage),
       readCodexRuntimeDoctor: () =>
         readiness.readSnapshot().codexRuntime ?? createCheckingRuntimeReport(),
+      readGrokRuntimeDoctor: readGrokRuntimeDoctorFn,
     }),
   );
 
@@ -345,13 +350,22 @@ export async function createStudioApp(
           readEditableStudioSettings(settingsStorage),
           process.env,
           codexRuntime ?? undefined,
+          readGrokRuntimeDoctorFn(),
         );
         const runtimePreflights =
           providerId === 'codex' && codexRuntime
-            ? readGenerationProviderRuntimePreflights(process.env, codexRuntime)
-            : [getExternalProviderRuntimePreflight(providerId)].filter(
-                (preflight) => preflight !== null,
-              );
+            ? readGenerationProviderRuntimePreflights(
+                process.env,
+                codexRuntime,
+                readGrokRuntimeDoctorFn(),
+              )
+            : [
+                getExternalProviderRuntimePreflight(
+                  providerId,
+                  process.env,
+                  readGrokRuntimeDoctorFn(),
+                ),
+              ].filter((preflight) => preflight !== null);
         return getProviderExecutionBlocker(capabilityReport, providerId, runtimePreflights);
       },
       isReferenceProcessingError: (error): error is ReferenceProcessingError =>

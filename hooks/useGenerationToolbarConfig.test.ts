@@ -55,6 +55,9 @@ describe('buildGenerationToolbarProps', () => {
           calls.push('verifyCodexSession');
         },
       },
+      provider: {
+        activeProviderId: 'grok',
+      },
       startTransition: (callback) => {
         calls.push('transition');
         callback();
@@ -71,6 +74,7 @@ describe('buildGenerationToolbarProps', () => {
     await props.onSelectKey();
 
     expect(props.maxAttachments).toBe(4);
+    expect(props.activeProviderId).toBe('grok');
     expect(props.generationConfig.prompt).toBe('Neon city');
     expect(calls).toEqual([
       'openEditor:attachment-1',

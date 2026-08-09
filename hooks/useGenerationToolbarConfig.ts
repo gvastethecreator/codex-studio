@@ -1,6 +1,7 @@
 import { startViewTransition } from '../utils/transitionUtils';
 
 import type { ToolbarProps } from '../components/Toolbar';
+import type { GenerationProviderId } from '../packages/shared/src';
 import type { Attachment } from '../types';
 
 type StartTransition = (callback: () => void) => void;
@@ -42,12 +43,17 @@ interface GenerationToolbarSyncContext {
   verifyCodexSession: () => Promise<void>;
 }
 
+interface GenerationToolbarProviderContext {
+  activeProviderId: GenerationProviderId;
+}
+
 export interface BuildGenerationToolbarPropsArgs {
   config: GenerationToolbarConfigContext;
   actions: GenerationToolbarActions;
   ui: GenerationToolbarUiContext;
   editor: GenerationToolbarEditorContext;
   sync: GenerationToolbarSyncContext;
+  provider: GenerationToolbarProviderContext;
   startTransition?: StartTransition;
 }
 
@@ -61,6 +67,7 @@ export function buildGenerationToolbarProps({
   ui,
   editor,
   sync,
+  provider,
   startTransition = startViewTransition,
 }: BuildGenerationToolbarPropsArgs): ToolbarProps {
   return {
@@ -88,6 +95,7 @@ export function buildGenerationToolbarProps({
       startTransition(() => ui.setIsKeyPopoverOpen(false));
     },
     maxAttachments: config.maxAttachments,
+    activeProviderId: provider.activeProviderId,
   };
 }
 

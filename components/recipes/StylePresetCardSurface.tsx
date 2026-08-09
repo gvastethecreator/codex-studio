@@ -57,6 +57,7 @@ export interface StylePresetCardProps {
   sourceProvenance?: StylePresetSourceProvenance;
   visualState: StylePresetVisualState | undefined;
   active: boolean;
+  selectionDisabled?: boolean;
   copied: boolean;
   favorite: boolean;
   theme: StyleTheme;
@@ -86,6 +87,7 @@ interface StylePresetResultButtonProps {
   activeCardImage: StylePresetCardImage | null;
   preset: StyleRuntimePreset;
   active: boolean;
+  selectionDisabled: boolean;
   onCycle: (dir: number) => void;
   hasMultipleImages: boolean;
   theme: StyleTheme;
@@ -97,6 +99,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   activeCardImage,
   preset,
   active,
+  selectionDisabled,
   onCycle,
   hasMultipleImages,
   theme,
@@ -106,6 +109,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   const presetDisplayName = getStyleRuntimePresetDisplayName(preset);
 
   const handleApplyFromKeyboard = (e: React.KeyboardEvent) => {
+    if (selectionDisabled) return;
     if (e.key !== 'Enter' && e.key !== ' ') return;
     e.preventDefault();
     e.stopPropagation();
@@ -137,7 +141,9 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           type="button"
           aria-label={`${active ? 'Remove' : 'Select'} ${presetDisplayName}`}
           onClick={() => onApply(preset)}
-          className="absolute inset-0 z-10 cursor-pointer"
+          disabled={selectionDisabled}
+          title={selectionDisabled ? 'Maximum 5 styles selected' : undefined}
+          className="absolute inset-0 z-10 cursor-pointer disabled:cursor-not-allowed"
         >
           <FadeImageComponent
             src={activeCardImage.src}
@@ -205,8 +211,15 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
               onApply(preset);
             }}
             onKeyDown={handleApplyFromKeyboard}
-            className="rounded-[6px] border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
-            title={active ? 'Remove style' : 'Select style'}
+            disabled={selectionDisabled}
+            className="rounded-[6px] border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600 disabled:cursor-not-allowed disabled:opacity-45"
+            title={
+              selectionDisabled
+                ? 'Maximum 5 styles selected'
+                : active
+                  ? 'Remove style'
+                  : 'Select style'
+            }
           >
             {active ? <Check size={14} /> : <Plus size={14} />}
           </button>
@@ -219,6 +232,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
     <button
       type="button"
       onClick={() => onApply(preset)}
+      disabled={selectionDisabled}
       className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
       aria-pressed={active}
     >
@@ -240,6 +254,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
   sourceProvenance,
   visualState,
   active,
+  selectionDisabled = false,
   copied,
   favorite,
   theme,
@@ -372,6 +387,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
             activeCardImage={activeCardImage}
             preset={preset}
             active={active}
+            selectionDisabled={selectionDisabled}
             onCycle={handleCycle}
             hasMultipleImages={hasMultipleImages}
             theme={theme}
@@ -427,8 +443,10 @@ export const StylePresetCard = React.memo(function StylePresetCard({
             <button
               type="button"
               onClick={() => onApply(preset)}
+              disabled={selectionDisabled}
               aria-pressed={active}
-              className="flex cursor-pointer flex-col justify-center appearance-none border-none p-0 m-0 bg-transparent text-left w-full"
+              title={selectionDisabled ? 'Maximum 5 styles selected' : undefined}
+              className="flex cursor-pointer flex-col justify-center appearance-none border-none p-0 m-0 bg-transparent text-left w-full disabled:cursor-not-allowed"
             >
               <div className="flex w-full items-center justify-between gap-2">
                 <span

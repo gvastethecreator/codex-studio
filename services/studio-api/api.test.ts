@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, it, vi } from 'vite-plus/test';
 
 import { buildCatalogQuery } from './catalog';
-import { readLocalStudioErrorMessage } from './http';
+import { readLocalStudioErrorMessage, request } from './http';
 import { getStudioRuntimeSnapshot, refreshStudioReadiness } from './runtime';
 
 function jsonResponse(value: unknown) {
@@ -61,6 +61,23 @@ describe('readLocalStudioErrorMessage', () => {
   it('preserves plain text and supplies a status fallback', () => {
     expect(readLocalStudioErrorMessage('Export failed', 409)).toBe('Export failed');
     expect(readLocalStudioErrorMessage('', 503)).toBe('Local studio request failed: 503');
+  });
+});
+
+describe('local studio request headers', () => {
+  it('keeps GET requests simple and sends JSON content type only when there is a body', async () => {
+    const fetchMock = vi
+      .fn<typeof fetch>()
+      .mockImplementation(async () => jsonResponse({ ok: true }));
+    vi.stubGlobal('fetch', fetchMock);
+
+    await request('/api/health');
+    await request('/api/settings', { method: 'PATCH', body: JSON.stringify({}) });
+
+    const getHeaders = fetchMock.mock.calls[0]?.[1]?.headers as Headers;
+    const patchHeaders = fetchMock.mock.calls[1]?.[1]?.headers as Headers;
+    expect(getHeaders.has('Content-Type')).toBe(false);
+    expect(patchHeaders.get('Content-Type')).toBe('application/json');
   });
 });
 

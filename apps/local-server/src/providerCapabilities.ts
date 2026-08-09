@@ -4,6 +4,7 @@ import {
   type GenerationProviderCapabilitiesResponse,
 } from '../../../packages/shared/src/providerCapabilities';
 import type { CodexRuntimeDoctorReport } from '../../../packages/shared/src';
+import type { GrokRuntimeDoctorReport } from './grokRuntimeDoctor';
 import type { EditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import type { GenerationProviderId } from '../../../packages/shared/src/generationContracts';
 import type { ProviderCapabilityDefinition } from '../../../packages/shared/src';
@@ -20,6 +21,17 @@ const PROVIDER_CAPABILITIES: ProviderCapabilityDefinition[] = [
     activeDetail: 'Codex Product Runtime adapter is available.',
     plannedDetail: 'Codex adapter is available.',
     missingDetail: 'Codex Product Runtime is blocked by local runtime preflight.',
+  },
+  {
+    providerId: 'grok',
+    label: 'Grok Imagine',
+    runtimeKind: 'agent_cli',
+    hasAdapter: true,
+    requiresSecret: false,
+    requiresLocalRuntime: true,
+    activeDetail: 'Grok Imagine is available through the authenticated local Grok Build CLI.',
+    plannedDetail: 'Grok Imagine adapter is available.',
+    missingDetail: 'Install Grok Build and run `grok login` before enabling this adapter.',
   },
   {
     providerId: 'google',
@@ -80,8 +92,9 @@ export function readProviderCapabilities(
   settings: Pick<EditableStudioSettings, 'defaultProviderId'>,
   env: Record<string, string | undefined> = process.env,
   codexRuntime?: Pick<CodexRuntimeDoctorReport, 'canRunJobs'>,
+  grokRuntime?: GrokRuntimeDoctorReport,
 ): GenerationProviderCapabilitiesResponse {
-  const readiness = createProviderReadinessMaps(env);
+  const readiness = createProviderReadinessMaps(env, grokRuntime);
   readiness.localRuntimeConfigured.codex = codexRuntime?.canRunJobs ?? true;
 
   return createGenerationProviderCapabilities({

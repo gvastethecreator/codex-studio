@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
-import { copyFileSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { copyFileSync, mkdirSync, mkdtempSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import path from 'node:path';
 
 import type { CatalogImage, EditableStudioSettings } from '../../../packages/shared/src';
@@ -196,7 +197,7 @@ describe('outputSources', () => {
   });
 
   it('imports selected files by copying into the Studio Library and registering Catalog Entries', async () => {
-    const root = path.join(process.cwd(), 'tmp', `output-source-import-${Date.now()}`);
+    const root = mkdtempSync(path.join(tmpdir(), 'codex-studio-output-import-'));
     const sourceDir = path.join(root, 'source');
     const libraryDir = path.join(root, 'library');
     const catalogImages: CatalogImage[] = [];
@@ -285,83 +286,81 @@ describe('outputSources', () => {
   });
 
   it('keeps same-name nested imports from overwriting each other', async () => {
-    const root = path.join(process.cwd(), 'tmp', `output-source-import-collision-${Date.now()}`);
+    const root = path.join(process.cwd(), 'tmp', 'output-source-import-collision');
     const sourceDir = path.join(root, 'source');
     const libraryDir = path.join(root, 'library');
     const catalogImages: CatalogImage[] = [];
-    try {
-      mkdirSync(path.join(sourceDir, 'a'), { recursive: true });
-      mkdirSync(path.join(sourceDir, 'b'), { recursive: true });
-      writeFileSync(path.join(sourceDir, 'a', 'hero.webp'), 'first');
-      writeFileSync(path.join(sourceDir, 'b', 'hero.webp'), 'second');
-      const storage = createMemoryStorage();
-      const registration = registerExternalOutputSource({
-        storage,
-        libraryDir,
-        input: { label: 'Nested source', path: sourceDir, providerId: 'comfy' },
-        pathExists: () => true,
-      });
-      if (!registration.ok) throw new Error(registration.reason);
+    const copiedDestinations: string[] = [];
+    const storage = createMemoryStorage();
+    const registration = registerExternalOutputSource({
+      storage,
+      libraryDir,
+      input: { label: 'Nested source', path: sourceDir, providerId: 'comfy' },
+      pathExists: () => true,
+    });
+    if (!registration.ok) throw new Error(registration.reason);
 
-      const result = await importExternalOutputSourceFiles({
-        storage,
-        sourceId: registration.source.id,
-        libraryDir,
-        input: {
-          files: ['a/hero.webp', 'b/hero.webp'],
-        },
-        copyFile: copyFileSync,
-        ensureThumbnailVariant: async (filePath) => `${filePath}.thumb.webp`,
-        registerCatalogImage(input) {
-          const image = {
-            id: `catalog-${catalogImages.length + 1}`,
-            libraryId: 'library-1',
-            filePath: input.filePath,
-            thumbnailPath: input.thumbnailPath ?? null,
-            publicUrl: `/library/${path.basename(input.filePath)}`,
-            thumbnailUrl: input.thumbnailPath
-              ? `/library/${path.basename(input.thumbnailPath)}`
-              : null,
-            prompt: input.prompt ?? null,
-            negativePrompt: null,
-            aspectRatio: null,
-            imageSize: null,
-            width: null,
-            height: null,
-            mimeType: input.mimeType,
-            fileSizeBytes: input.fileSizeBytes ?? null,
-            jobId: null,
-            workspaceId: input.workspaceId ?? null,
-            batchId: null,
-            recipeId: null,
-            isFavorite: false,
-            isDeleted: false,
-            deletedAt: null,
-            tags: input.tags ?? [],
-            generationConfig: input.generationConfig ?? null,
-            createdAt: '2026-05-25T00:00:00.000Z',
-          } satisfies CatalogImage;
-          catalogImages.push(image);
-          return image;
-        },
-      });
+    const result = await importExternalOutputSourceFiles({
+      storage,
+      sourceId: registration.source.id,
+      libraryDir,
+      input: {
+        files: ['a/hero.webp', 'b/hero.webp'],
+      },
+      copyFile: ((_source, destination) => {
+        copiedDestinations.push(String(destination));
+      }) as typeof copyFileSync,
+      makeDir: (() => undefined) as typeof mkdirSync,
+      statPath: (() => ({ isFile: () => true, size: 5 })) as unknown as typeof statSync,
+      ensureThumbnailVariant: async (filePath) => `${filePath}.thumb.webp`,
+      registerCatalogImage(input) {
+        const image = {
+          id: `catalog-${catalogImages.length + 1}`,
+          libraryId: 'library-1',
+          filePath: input.filePath,
+          thumbnailPath: input.thumbnailPath ?? null,
+          publicUrl: `/library/${path.basename(input.filePath)}`,
+          thumbnailUrl: input.thumbnailPath
+            ? `/library/${path.basename(input.thumbnailPath)}`
+            : null,
+          prompt: input.prompt ?? null,
+          negativePrompt: null,
+          aspectRatio: null,
+          imageSize: null,
+          width: null,
+          height: null,
+          mimeType: input.mimeType,
+          fileSizeBytes: input.fileSizeBytes ?? null,
+          jobId: null,
+          workspaceId: input.workspaceId ?? null,
+          batchId: null,
+          recipeId: null,
+          isFavorite: false,
+          isDeleted: false,
+          deletedAt: null,
+          tags: input.tags ?? [],
+          generationConfig: input.generationConfig ?? null,
+          createdAt: '2026-05-25T00:00:00.000Z',
+        } satisfies CatalogImage;
+        catalogImages.push(image);
+        return image;
+      },
+    });
 
-      expect(result).toMatchObject({
-        ok: true,
-        result: {
-          imported: [
-            { sourceFile: 'a/hero.webp', catalogId: 'catalog-1' },
-            { sourceFile: 'b/hero.webp', catalogId: 'catalog-2' },
-          ],
-          skipped: [],
-        },
-      });
-      expect(catalogImages).toHaveLength(2);
-      expect(catalogImages[0].filePath).not.toBe(catalogImages[1].filePath);
-      expect(path.basename(catalogImages[0].filePath)).toMatch(/^.+-hero-[a-f0-9]{8}\.webp$/);
-      expect(path.basename(catalogImages[1].filePath)).toMatch(/^.+-hero-[a-f0-9]{8}\.webp$/);
-    } finally {
-      rmSync(root, { recursive: true, force: true });
-    }
+    expect(result).toMatchObject({
+      ok: true,
+      result: {
+        imported: [
+          { sourceFile: 'a/hero.webp', catalogId: 'catalog-1' },
+          { sourceFile: 'b/hero.webp', catalogId: 'catalog-2' },
+        ],
+        skipped: [],
+      },
+    });
+    expect(catalogImages).toHaveLength(2);
+    expect(catalogImages[0].filePath).not.toBe(catalogImages[1].filePath);
+    expect(copiedDestinations).toEqual(catalogImages.map((image) => image.filePath));
+    expect(path.basename(catalogImages[0].filePath)).toMatch(/^.+-hero-[a-f0-9]{8}\.webp$/);
+    expect(path.basename(catalogImages[1].filePath)).toMatch(/^.+-hero-[a-f0-9]{8}\.webp$/);
   });
 });

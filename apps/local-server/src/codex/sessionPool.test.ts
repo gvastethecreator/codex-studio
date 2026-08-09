@@ -1,4 +1,7 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { mkdtempSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import path from 'node:path';
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test';
 import { createSessionPool } from './sessionPool';
 
 vi.mock('../logger', () => ({
@@ -8,6 +11,20 @@ vi.mock('../logger', () => ({
 vi.mock('../library', () => ({
   resolveLibraryPath: (...parts: string[]) => `D:/tmp/${parts.join('/')}`,
 }));
+
+const temporaryRegistryRoots: string[] = [];
+
+afterEach(() => {
+  for (const directory of temporaryRegistryRoots.splice(0)) {
+    rmSync(directory, { force: true, recursive: true });
+  }
+});
+
+function createRegistryRoot() {
+  const directory = mkdtempSync(path.join(tmpdir(), 'codex-studio-session-pool-'));
+  temporaryRegistryRoots.push(directory);
+  return directory;
+}
 
 describe('createSessionPool.getSessionKey', () => {
   it('prefers explicit SESSION field over PACK field', () => {
@@ -56,7 +73,7 @@ describe('createSessionPool concurrency', () => {
     const connected = createDeferred<void>();
     const client = createTestClient(() => connected.promise);
     const createClient = vi.fn(() => client as never);
-    const registryRoot = `${process.cwd()}/.scratch/test-runtime/session-pool-${Math.random()}`;
+    const registryRoot = createRegistryRoot();
     const pool = createSessionPool({
       createClient,
       resolveLibraryPath: (...parts) => `${registryRoot}/${parts.join('/')}`,
@@ -82,7 +99,7 @@ describe('createSessionPool concurrency', () => {
       .fn()
       .mockReturnValueOnce(firstClient as never)
       .mockReturnValueOnce(secondClient as never);
-    const registryRoot = `${process.cwd()}/.scratch/test-runtime/session-pool-${Math.random()}`;
+    const registryRoot = createRegistryRoot();
     const pool = createSessionPool({
       createClient,
       resolveLibraryPath: (...parts) => `${registryRoot}/${parts.join('/')}`,

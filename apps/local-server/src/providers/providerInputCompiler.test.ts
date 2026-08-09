@@ -38,4 +38,17 @@ describe('providerInputCompiler', () => {
       }),
     ).toThrow('No provider input compiler registered for "custom-provider".');
   });
+
+  it('registers the Grok Imagine compiler explicitly', () => {
+    expect(hasProviderInputCompiler('grok')).toBe(true);
+    expect(
+      compileProviderInputForJob('grok', {
+        id: 'job-grok',
+        workspaceId: 'workspace-1',
+        providerId: 'grok',
+        prompt: 'A clean paper boat.',
+        execution: { model: 'grok-4.5', reasoningEffort: 'low' },
+      }),
+    ).toMatchObject({ providerId: 'grok', payloadKind: 'agent_cli_prompt' });
+  });
 });

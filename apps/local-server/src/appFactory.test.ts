@@ -35,6 +35,24 @@ vi.mock('./logger', () => ({
   log: vi.fn(),
 }));
 
+vi.mock('./grokRuntimeDoctor', () => ({
+  readGrokRuntimeDoctor: vi.fn(() => ({
+    status: 'ready',
+    canRunJobs: true,
+    checkedAt: '2026-08-08T00:00:00.000Z',
+    selectedExecutable: 'grok',
+    selectedVersion: 'grok 1.0.0',
+    selectedVersionNumber: '1.0.0',
+    defaultModel: 'grok-4.5',
+    availableModels: ['grok-4.5'],
+    headlessSupported: true,
+    imagineAvailable: true,
+    recommendedAction: 'Grok Imagine is ready.',
+    issues: [],
+    candidates: [],
+  })),
+}));
+
 type StudioStoreOverrides = Partial<StudioJobStore & StudioAssetStore & StudioLogStore>;
 
 function createFakeStores(overrides?: StudioStoreOverrides) {

@@ -123,4 +123,73 @@ describe('buildStudioCommandCenterProjection', () => {
     expect(projection.provider.tooltip).toContain('Runtime endpoint is missing.');
     expect(projection.queue.showCollapsedProgress).toBe(false);
   });
+
+  it('projects Codex and Grok as readiness-aware quick-switch options', () => {
+    const projection = buildStudioCommandCenterProjection({
+      settings: {
+        defaultProviderId: 'codex',
+        commandCenterCompactMode: false,
+      },
+      providerCapabilities: {
+        providers: [
+          {
+            providerId: 'codex',
+            label: 'Codex app-server',
+            runtimeKind: 'codex_app_server',
+            status: 'active',
+            isDefault: true,
+            hasAdapter: true,
+            canExecute: true,
+            secretState: 'not_required',
+            detail: 'Codex is ready.',
+          },
+          {
+            providerId: 'grok',
+            label: 'Grok Imagine',
+            runtimeKind: 'agent_cli',
+            status: 'active',
+            isDefault: false,
+            hasAdapter: true,
+            canExecute: true,
+            secretState: 'not_required',
+            detail: 'Grok is ready.',
+          },
+        ],
+      },
+      providerRuntimePreflight: {
+        providers: [
+          {
+            providerId: 'codex',
+            runtimeKind: 'codex_app_server',
+            secretState: 'not_required',
+            secretSource: null,
+            localRuntimeState: 'configured',
+            localRuntimeSource: 'codex',
+            canAttemptExecution: true,
+            diagnostics: [],
+          },
+          {
+            providerId: 'grok',
+            runtimeKind: 'agent_cli',
+            secretState: 'not_required',
+            secretSource: null,
+            localRuntimeState: 'configured',
+            localRuntimeSource: 'grok',
+            canAttemptExecution: true,
+            diagnostics: [],
+          },
+        ],
+      },
+      statusItems: [],
+      queueResultPreviews: [],
+      activeJobCount: 0,
+      isQueueOpen: false,
+      isGenerating: false,
+    });
+
+    expect(projection.providerOptions).toEqual([
+      expect.objectContaining({ id: 'codex', label: 'Codex app-server', canExecute: true }),
+      expect.objectContaining({ id: 'grok', label: 'Grok Imagine', canExecute: true }),
+    ]);
+  });
 });

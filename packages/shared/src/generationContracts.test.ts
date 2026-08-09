@@ -134,6 +134,7 @@ describe('generationContracts', () => {
 
   it('recognizes built-in providers while allowing future provider ids', () => {
     expect(isBuiltInGenerationProvider('codex')).toBe(true);
+    expect(isBuiltInGenerationProvider('grok')).toBe(true);
     expect(isBuiltInGenerationProvider('fal')).toBe(true);
     expect(isBuiltInGenerationProvider('local-experiment')).toBe(false);
   });

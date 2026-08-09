@@ -6,8 +6,9 @@ import type {
   ProviderSecretState,
 } from '../../../../packages/shared/src';
 import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
+import { readGrokRuntimeDoctor, type GrokRuntimeDoctorReport } from '../grokRuntimeDoctor';
 
-export type ExternalExecutableProviderId = 'google' | 'fal' | 'comfy';
+export type ExternalExecutableProviderId = 'grok' | 'google' | 'fal' | 'comfy';
 
 interface ExternalProviderRuntimeDefinition {
   providerId: ExternalExecutableProviderId;
@@ -42,7 +43,12 @@ const EXTERNAL_PROVIDER_RUNTIMES: ExternalProviderRuntimeDefinition[] = [
 export function isExternalExecutableProviderId(
   providerId: GenerationProviderId | null | undefined,
 ): providerId is ExternalExecutableProviderId {
-  return providerId === 'google' || providerId === 'fal' || providerId === 'comfy';
+  return (
+    providerId === 'grok' ||
+    providerId === 'google' ||
+    providerId === 'fal' ||
+    providerId === 'comfy'
+  );
 }
 
 export type ProviderRuntimePreflight = GenerationProviderRuntimePreflight & {
@@ -153,17 +159,45 @@ export function createCodexRuntimePreflight(
   };
 }
 
+export function createGrokRuntimePreflight(
+  grokRuntime: GrokRuntimeDoctorReport,
+): ProviderRuntimePreflight {
+  const unavailable = grokRuntime.issues.some((issue) => issue.code === 'grok_cli_unavailable');
+  return {
+    providerId: 'grok',
+    runtimeKind: 'agent_cli',
+    secretState: 'not_required',
+    secretSource: null,
+    localRuntimeState: grokRuntime.canRunJobs ? 'configured' : unavailable ? 'missing' : 'invalid',
+    localRuntimeSource: grokRuntime.selectedExecutable,
+    canAttemptExecution: grokRuntime.canRunJobs,
+    diagnostics:
+      grokRuntime.issues.length > 0
+        ? grokRuntime.issues.map((issue) => `${issue.message} ${issue.action}`)
+        : [grokRuntime.recommendedAction],
+  };
+}
+
 export function readGenerationProviderRuntimePreflights(
   env: Record<string, string | undefined> = process.env,
   codexRuntime: CodexRuntimeDoctorReport = readCodexRuntimeDoctor(),
+  grokRuntime: GrokRuntimeDoctorReport = readGrokRuntimeDoctor(),
 ) {
-  return [createCodexRuntimePreflight(codexRuntime), ...readExternalProviderRuntimePreflights(env)];
+  return [
+    createCodexRuntimePreflight(codexRuntime),
+    createGrokRuntimePreflight(grokRuntime),
+    ...readExternalProviderRuntimePreflights(env),
+  ];
 }
 
 export function getExternalProviderRuntimePreflight(
   providerId: GenerationProviderId,
   env: Record<string, string | undefined> = process.env,
+  grokRuntime?: GrokRuntimeDoctorReport,
 ) {
+  if (providerId === 'grok') {
+    return createGrokRuntimePreflight(grokRuntime ?? readGrokRuntimeDoctor());
+  }
   return (
     readExternalProviderRuntimePreflights(env).find(
       (preflight) => preflight.providerId === providerId,
@@ -171,7 +205,10 @@ export function getExternalProviderRuntimePreflight(
   );
 }
 
-export function createProviderReadinessMaps(env: Record<string, string | undefined> = process.env) {
+export function createProviderReadinessMaps(
+  env: Record<string, string | undefined> = process.env,
+  grokRuntime: GrokRuntimeDoctorReport = readGrokRuntimeDoctor(),
+) {
   const secretConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
   const localRuntimeConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
 
@@ -180,6 +217,10 @@ export function createProviderReadinessMaps(env: Record<string, string | undefin
     localRuntimeConfigured[preflight.providerId] =
       preflight.localRuntimeState === 'not_required' || preflight.canAttemptExecution;
   }
+
+  const grokPreflight = createGrokRuntimePreflight(grokRuntime);
+  secretConfigured.grok = true;
+  localRuntimeConfigured.grok = grokPreflight.canAttemptExecution;
 
   return { secretConfigured, localRuntimeConfigured };
 }

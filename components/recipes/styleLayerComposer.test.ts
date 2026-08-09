@@ -4,6 +4,7 @@ import type { StyleRuntimePreset } from './styles/runtimeTypes';
 import {
   createDefaultStyleLayerFieldControls,
   createSelectedStyleEmphasis,
+  createSelectedStylesGenerationPlan,
   createSelectedStyleLayer,
   createSelectedStylesPrompt,
   joinSelectedStyleLayerValue,
@@ -113,5 +114,51 @@ describe('styleLayerComposer', () => {
     expect(
       mergeSelectedStyleNegativePrompts({ baseNegativePrompt: 'watermark', slots: [ignored] }),
     ).toBe('watermark');
+  });
+
+  it('deduplicates repeated avoid rules while preserving strict intent', () => {
+    const strict = createSlot({ avoidRulesMode: 'strict' });
+    const mergedDuplicate = createSlot();
+
+    expect(
+      mergeSelectedStyleNegativePrompts({
+        baseNegativePrompt: 'watermark',
+        slots: [strict, mergedDuplicate],
+      }),
+    ).toBe('watermark, strictly avoid: muddy reflections, text');
+  });
+
+  it('registers selected style identity and compiled guidance for toolbar generation', () => {
+    const plan = createSelectedStylesGenerationPlan({
+      slots: [createSlot()],
+      hasReferenceImages: false,
+      baseNegativePrompt: 'watermark',
+    });
+
+    expect(plan).not.toBeNull();
+    expect(plan?.recipeParams).toMatchObject({
+      presetId: 'SP09-006',
+      presetName: 'Polished Glass',
+      mode: 'DIRECT_STYLE_SYNTHESIS',
+      negativePrompt: 'watermark, muddy reflections, text',
+    });
+    expect(plan?.recipeParams.selectedStyles).toHaveLength(1);
+    expect(plan?.recipeParams.styleEmphasis).toContain('Slot 1: Polished Glass');
+  });
+
+  it('switches to creative reimagining when reference images are present', () => {
+    const plan = createSelectedStylesGenerationPlan({
+      slots: [createSlot()],
+      hasReferenceImages: true,
+    });
+
+    expect(plan?.recipeParams).toMatchObject({
+      mode: 'CREATIVE_REIMAGINING',
+      compositionRule:
+        'Preserve only subject intent from the uploaded references; force substantial variation in pose, camera, composition, lighting, and scene staging.',
+    });
+    expect(plan?.recipeParams.roleInstruction).toContain(
+      'Do not preserve pose, framing, camera angle, or original composition',
+    );
   });
 });

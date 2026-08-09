@@ -46,7 +46,7 @@ export function readLocalStudioErrorMessage(text: string, status: number) {
 export async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const apiBase = resolveStudioApiBase();
   const headers = new Headers(init?.headers);
-  if (!headers.has('Content-Type')) {
+  if (init?.body != null && !headers.has('Content-Type')) {
     headers.set('Content-Type', 'application/json');
   }
 

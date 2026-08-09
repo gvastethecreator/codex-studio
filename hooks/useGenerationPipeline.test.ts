@@ -5,6 +5,7 @@ import {
   buildEditGenerationConfig,
   getCurrentActiveGenerationRun,
   removeActiveGenerationRun,
+  resolveActiveRecipeGenerationConfig,
   resolveGenerationWorkspaceId,
   type ActiveGenerationRun,
 } from './useGenerationPipeline';
@@ -18,6 +19,26 @@ describe('resolveGenerationWorkspaceId', () => {
 
   it('falls back to the current active workspace when no override is provided', () => {
     expect(resolveGenerationWorkspaceId('workspace-active')).toBe('workspace-active');
+  });
+});
+
+describe('resolveActiveRecipeGenerationConfig', () => {
+  it('does not silently enqueue a generic job from an active Recipe route', () => {
+    const config = resolveActiveRecipeGenerationConfig(
+      { ...DEFAULT_GENERATION_CONFIG, prompt: 'a brass robot' },
+      'styles',
+    );
+
+    expect(config.recipeId).toBe('styles');
+  });
+
+  it('preserves an explicit recipe carried by the request', () => {
+    const config = resolveActiveRecipeGenerationConfig(
+      { ...DEFAULT_GENERATION_CONFIG, recipeId: 'camera' },
+      'styles',
+    );
+
+    expect(config.recipeId).toBe('camera');
   });
 });
 

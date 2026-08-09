@@ -144,9 +144,16 @@ export function useStudioSettings({
     setError(null);
 
     try {
-      const nextSettings = await getEditableStudioSettings();
+      const [nextSettings, nextProviderCapabilities, nextProviderRuntimePreflight] =
+        await Promise.all([
+          getEditableStudioSettings(),
+          getGenerationProviderCapabilities(),
+          getGenerationProviderRuntimePreflight(),
+        ]);
       if (isMountedRef.current) {
         setSettings(nextSettings);
+        setProviderCapabilities(nextProviderCapabilities);
+        setProviderRuntimePreflight(nextProviderRuntimePreflight);
       }
     } catch (refreshError) {
       const message =

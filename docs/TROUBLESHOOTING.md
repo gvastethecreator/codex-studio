@@ -85,6 +85,36 @@ Symptoms: Codex CLI exists but jobs fail with permission or authorization errors
 
 Check: reauthenticate Codex, then restart `bun run dev:server`.
 
+### Grok Imagine is missing or blocked
+
+Symptoms: the Grok Settings card shows `not_configured`, or Grok Jobs fail
+before execution.
+
+Run:
+
+```bash
+grok version
+grok models
+bun run providers:preflight -- --provider=grok
+```
+
+The preflight must report the local agent runtime as configured and
+`canAttempt=true`. If login is missing, run `grok login` and complete browser
+authentication. If Studio selects the wrong binary, set
+`STUDIO_GROK_CLI_PATH` to the stable native Grok executable and restart the
+backend. Do not add `XAI_API_KEY`; Studio uses the CLI-owned login.
+
+Grok Jobs reject unresolved remote references, source files outside the Job's
+captured Studio Library, more than five source images, unsupported explicit
+aspect ratios, and output counts other than one before invoking media. Import
+the reference into the Library or choose a supported ratio (`1:1`, `16:9`,
+`9:16`, `4:3`, or `3:4`) and retry.
+
+The Styles recipe is available with both Codex and Grok. Grok treats a Styles
+run with one or more managed references as image editing and a run without
+references as direct image generation. Studio creates one Persistent Job per
+requested batch image, so each Grok session still produces exactly one image.
+
 ### Only the UI is running
 
 Symptoms: `dev:ui` opens but jobs and assets do not sync.
@@ -124,6 +154,9 @@ If `check`, `lint`, `test`, or `build` fails and the terminal output is truncate
 
 - run `bun run tooling:logs`
 - inspect the matching `*.latest.log`
+
+The full test task caps Vitest at eight workers to avoid Windows filesystem and process contention. Set `VITEST_MAX_WORKERS` to a positive integer only when a different local limit is needed.
+
 - include the exact log in issue or PR notes
 
 ## Studio Library Problems
@@ -173,6 +206,7 @@ bun run studio:init
 bun run dev:server
 bun run dev:ui
 bun run runtime:doctor
+bun run providers:preflight
 bun run validate:fast
 bun run storage:audit
 bun run storage:thumbnails:backfill

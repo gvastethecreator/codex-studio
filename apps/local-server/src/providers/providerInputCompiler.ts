@@ -1,6 +1,7 @@
 import type { CompiledProviderInput, GenerationProviderId } from '../../../../packages/shared/src';
 import { compileCodexImagegenInput } from './codexProvider';
 import { compileDryRunInput } from './dryRunProvider';
+import { compileGrokImagineInput } from './grokImagineInput';
 import {
   compileComfyWorkflowInput,
   compileFalImageApiInput,
@@ -12,6 +13,7 @@ export type ProviderInputCompiler = (job: GenerationProviderJob) => CompiledProv
 
 const PROVIDER_INPUT_COMPILERS = {
   codex: compileCodexImagegenInput,
+  grok: compileGrokImagineInput,
   dry_run: compileDryRunInput,
   google: compileGoogleImageApiInput,
   fal: compileFalImageApiInput,

@@ -39,7 +39,7 @@ describe('recipeModules', () => {
       title: 'Styles',
       defaultTask: 'image_generate',
       supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
-      supportedProviders: ['codex', 'dry_run'],
+      supportedProviders: ['codex', 'grok', 'dry_run'],
     });
     expect(styles?.parameters.map((parameter) => parameter.id)).toContain('presetId');
     expect(spritesheet?.defaultTask).toBe('sprite_sheet');
@@ -88,7 +88,80 @@ describe('recipeModules', () => {
     expect(styles).toBeTruthy();
     expect(styles && isRecipeTaskSupported(styles, 'style_preset_card')).toBe(true);
     expect(styles && isRecipeProviderSupported(styles, 'codex')).toBe(true);
+    expect(styles && isRecipeProviderSupported(styles, 'grok')).toBe(true);
     expect(styles && isRecipeProviderSupported(styles, 'fal')).toBe(false);
+  });
+
+  it('builds a complete Styles task for Grok without changing the provider-independent recipe contract', () => {
+    const spec = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-style-grok',
+      providerId: 'grok',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'a ceramic bird in a quiet studio',
+        negativePrompt: 'watermark',
+        recipeId: 'styles',
+        recipeParams: {
+          presetId: 'SP01-001',
+          presetName: 'Studio Headshot + Film Noir',
+          mode: 'CREATIVE_REIMAGINING',
+          negativePrompt: 'watermark, muddy shadows',
+          selectedStyles: [
+            {
+              slot: 1,
+              presetId: 'SP01-001',
+              presetName: 'Studio Headshot',
+              packName: 'Photography & Realism',
+              strength: 0.7,
+            },
+            {
+              slot: 2,
+              presetId: 'SP02-010',
+              presetName: 'Film Noir',
+              packName: 'Cinematic & Media',
+              strength: 0.4,
+            },
+          ],
+        },
+        attachments: [
+          {
+            id: 'ref-grok',
+            name: 'bird.png',
+            dataUrl: 'http://127.0.0.1:4317/library/references/bird.png',
+            localPath: 'D:/AI-Studio-Library/references/bird.png',
+            strength: 0.15,
+          },
+        ],
+        aspectRatio: '1:1',
+        batchCount: 1,
+      },
+    });
+
+    expect(spec).toMatchObject({
+      providerId: 'grok',
+      task: 'image_generate',
+      recipeId: 'styles',
+      negativePrompt: 'watermark, muddy shadows',
+      stylePresetId: 'SP01-001',
+      assets: [
+        {
+          role: 'reference',
+          name: 'bird.png',
+          localPath: 'D:/AI-Studio-Library/references/bird.png',
+        },
+      ],
+      output: { count: 1, aspectRatio: '1:1' },
+      metadata: {
+        recipeModule: {
+          supportedProviders: ['codex', 'grok', 'dry_run'],
+        },
+      },
+    });
+    expect(spec.metadata.recipeContext).toContain('STYLE TRANSFER PROTOCOL');
+    expect(spec.metadata.recipeProviderDirectives).toMatchObject({
+      protocol: 'recipe-provider-directives/v1',
+      recipeId: 'styles',
+    });
   });
 
   it('builds a provider-independent Generation Task Spec from recipe params', () => {
@@ -189,6 +262,7 @@ describe('recipeModules', () => {
         recipeParams: {
           presetId: 'SP01-001',
           presetName: 'Studio Headshot + Film Noir',
+          negativePrompt: 'watermark, muddy shadows',
           selectedStyles: [
             {
               slot: 1,
@@ -214,6 +288,7 @@ describe('recipeModules', () => {
     });
 
     expect(spec.stylePresetId).toBe('SP01-001');
+    expect(spec.negativePrompt).toBe('watermark, muddy shadows');
     expect(spec.assets).toHaveLength(2);
     expect(spec.quality).toMatchObject({
       qualityPresetId: 'style_reference',

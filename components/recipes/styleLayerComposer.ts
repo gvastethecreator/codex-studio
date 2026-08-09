@@ -5,6 +5,8 @@ import {
 } from './styles/runtimeTypes';
 
 export const DEFAULT_SELECTED_STYLE_STRENGTH = 0.75;
+export const DEFAULT_STYLE_DIVERSITY_HINT =
+  'Vary camera framing, composition, lighting, palette, or staging enough to avoid near-duplicate renders.';
 
 export const STYLE_LAYER_FIELD_DEFINITIONS = [
   {
@@ -109,6 +111,12 @@ export interface SelectedStyleLayer {
   atmosphereMood: string;
   renderingQuality: string;
   creativeBrief: string;
+}
+
+export interface SelectedStylesGenerationPlan {
+  fallbackPrompt: string;
+  negativePrompt: string;
+  recipeParams: Record<string, unknown>;
 }
 
 export function describeStyleValue(value: unknown, fallback = 'Standard'): string {
@@ -349,21 +357,106 @@ export function mergeSelectedStyleNegativePrompts({
   baseNegativePrompt?: string | null;
   slots: SelectedStyleSlot[];
 }) {
-  return [
-    baseNegativePrompt,
-    ...slots.flatMap((slot) => {
-      if (!(slot.enabled ?? true)) return [];
-      if ((slot.avoidRulesMode ?? 'merge') === 'ignore') return [];
-      const prompt = getStyleNegativePrompt(slot.preset, slot.packId).trim();
-      if (!prompt) return [];
-      return (slot.avoidRulesMode ?? 'merge') === 'strict'
-        ? [`strictly avoid: ${prompt}`]
-        : [prompt];
-    }),
-  ]
-    .flatMap((value) => {
-      const trimmed = value?.trim();
-      return trimmed ? [trimmed] : [];
-    })
+  const rules = new Map<string, { text: string; strict: boolean; order: number }>();
+  let nextOrder = 0;
+
+  const addRules = (value: string | null | undefined, strict: boolean) => {
+    value
+      ?.split(',')
+      .map((rule) => rule.trim())
+      .filter(Boolean)
+      .forEach((rule) => {
+        const key = rule.toLocaleLowerCase();
+        const existing = rules.get(key);
+        if (existing) {
+          if (strict && !existing.strict) existing.strict = true;
+          return;
+        }
+        rules.set(key, { text: rule, strict, order: nextOrder });
+        nextOrder += 1;
+      });
+  };
+
+  addRules(baseNegativePrompt, false);
+  slots.forEach((slot) => {
+    if (!(slot.enabled ?? true)) return;
+    const avoidRulesMode = slot.avoidRulesMode ?? 'merge';
+    if (avoidRulesMode === 'ignore') return;
+    addRules(getStyleNegativePrompt(slot.preset, slot.packId), avoidRulesMode === 'strict');
+  });
+
+  const orderedRules = [...rules.values()].sort((left, right) => left.order - right.order);
+  const groups: Array<{ strict: boolean; rules: string[] }> = [];
+  orderedRules.forEach((rule) => {
+    const currentGroup = groups.at(-1);
+    if (!currentGroup || currentGroup.strict !== rule.strict) {
+      groups.push({ strict: rule.strict, rules: [rule.text] });
+      return;
+    }
+    currentGroup.rules.push(rule.text);
+  });
+
+  return groups
+    .map((group) => `${group.strict ? 'strictly avoid: ' : ''}${group.rules.join(', ')}`)
     .join(', ');
+}
+
+export function createSelectedStylesGenerationPlan({
+  slots,
+  hasReferenceImages,
+  baseNegativePrompt,
+  diversityHint = DEFAULT_STYLE_DIVERSITY_HINT,
+}: {
+  slots: SelectedStyleSlot[];
+  hasReferenceImages: boolean;
+  baseNegativePrompt?: string | null;
+  diversityHint?: string;
+}): SelectedStylesGenerationPlan | null {
+  const layers = slots.map(createSelectedStyleLayer).filter((layer) => layer.enabled);
+  if (layers.length === 0) return null;
+
+  const presetName = layers.map((layer) => layer.presetName).join(' + ');
+  const roleInstruction = hasReferenceImages
+    ? [
+        'Use the uploaded images as loose semantic references for subject intent.',
+        'Do not preserve pose, framing, camera angle, or original composition unless the prompt explicitly asks.',
+        'Re-stage the subject with clearly different gesture, perspective, and environment while applying the selected style layers.',
+        'Make the result feel freshly generated, not a repaint of the input.',
+      ].join(' ')
+    : [
+        'Synthesize the requested subject from the prompt and selected style layers.',
+        'Make the selected style DNA the primary driver of the visual output.',
+        'Focus on a coherent, high-quality image that exposes the combined aesthetic.',
+      ].join(' ');
+  const compositionRule = hasReferenceImages
+    ? 'Preserve only subject intent from the uploaded references; force substantial variation in pose, camera, composition, lighting, and scene staging.'
+    : 'Create a balanced composition from scratch using the selected style layers as the visual system.';
+  const negativePrompt = mergeSelectedStyleNegativePrompts({
+    baseNegativePrompt,
+    slots,
+  });
+
+  return {
+    fallbackPrompt: createSelectedStylesPrompt(slots),
+    negativePrompt,
+    recipeParams: {
+      presetId: layers[0]?.presetId ?? '',
+      presetName,
+      selectedStyles: layers,
+      mode: hasReferenceImages ? 'CREATIVE_REIMAGINING' : 'DIRECT_STYLE_SYNTHESIS',
+      roleInstruction,
+      compositionRule,
+      styleEmphasis: createSelectedStyleEmphasis(slots, diversityHint),
+      aesthetic: joinSelectedStyleLayerValue(slots, 'aesthetic'),
+      subjectTreatment: joinSelectedStyleLayerValue(slots, 'subjectTreatment'),
+      colorTone: joinSelectedStyleLayerValue(slots, 'colorTone'),
+      lightingShadow: joinSelectedStyleLayerValue(slots, 'lightingShadow'),
+      textureMaterial: joinSelectedStyleLayerValue(slots, 'textureMaterial'),
+      cameraComposition: joinSelectedStyleLayerValue(slots, 'cameraComposition'),
+      atmosphereMood: joinSelectedStyleLayerValue(slots, 'atmosphereMood'),
+      renderingQuality: joinSelectedStyleLayerValue(slots, 'renderingQuality'),
+      creativeBrief: joinSelectedStyleCreativeBrief(slots),
+      negativePrompt,
+    },
+  };
 }

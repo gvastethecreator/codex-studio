@@ -13,7 +13,7 @@ Codex Studio runs on your machine: a React/Vite studio UI, a local Bun/Hono serv
 - Generate and edit images from a visual studio surface.
 - Browse workspaces, recipes, recent jobs, and generated assets in one place.
 - Keep job history and catalog metadata traceable through local SQLite.
-- Use Codex first, with optional provider adapters kept behind backend boundaries.
+- Use Codex first, with optional providers such as the locally authenticated Grok Imagine adapter kept behind backend boundaries.
 - Maintain local assets outside git by default.
 
 ## Screenshots
@@ -35,6 +35,13 @@ Requirements:
 - Bun available on `PATH` and able to run this repo's scripts.
 - Codex CLI available, authenticated with ChatGPT, and exposing `codex app-server`.
 - A modern browser.
+
+Grok Imagine is optional. To use it, install Grok Build, run `grok login`, and
+confirm `bun run providers:preflight -- --provider=grok` reports
+`canAttempt=true`. Studio reuses that CLI-owned login; it does not require or
+store `XAI_API_KEY`. The Styles recipe supports both Codex and Grok for direct
+generation and managed-reference styling. Codex stays first and remains the
+initial default provider.
 
 The app readiness checks are the source of truth. Reported Bun and Codex
 metadata is diagnostic, not a hard setup gate; use `bun run runtime:doctor`
@@ -87,12 +94,18 @@ STUDIO_LIBRARY_DIR=/home/<your-user>/AI-Studio-Library
 ```
 
 Provider secrets, if used for optional external adapters, must stay in backend environment variables and out of SQLite, logs, screenshots, docs, and committed files.
+Grok Build authentication remains owned by the local CLI under `GROK_HOME`.
+Use the provider control in the top Command Center to switch the next image
+generation between Codex and Grok. The control shows runtime readiness and
+persists the choice in Studio Settings; deeper diagnostics remain available
+from the same menu. Codex remains the initial default.
 
 ## Useful Commands
 
 ```bash
 bun run dev
 bun run runtime:doctor
+bun run providers:preflight
 bun run studio:init
 bun run check
 bun run test
@@ -104,7 +117,7 @@ bun run validate:release
 
 VS Code users can run the same commands from **Terminal -> Run Task**. The
 tracked task set includes `📦 deps`, `🧱 init`, `🚀 dev`, `🏗 build`, `🧪 test`,
-`✅ gate`, `🛡 release`, and focused UI/API tasks.
+`✅ gate`, `🛡 release`, `🔌 providers`, and focused UI/API tasks.
 
 Maintenance:
 
@@ -132,6 +145,7 @@ Codex Studio is in open-source preview.
 - Local development flow is active and documented.
 - The default path is Codex-first and local-first.
 - Optional provider adapters exist, but should be treated as backend integrations, not the product center.
+- Grok Imagine image generation and managed local image editing are available through the user's authenticated Grok Build CLI; native video remains a separate future media-domain decision.
 - Desktop packaging and broader first-run polish are still being hardened.
 
 ---

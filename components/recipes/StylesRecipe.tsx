@@ -75,15 +75,11 @@ import {
   clampStyleLayerFieldWeight,
   clampStyleStrength,
   createDefaultStyleLayerFieldControls,
-  createSelectedStyleEmphasis,
+  createSelectedStylesGenerationPlan,
   createSelectedStyleLayer,
-  createSelectedStylesPrompt,
   DEFAULT_SELECTED_STYLE_STRENGTH,
   describeStyleValue,
   formatStyleStrength,
-  joinSelectedStyleCreativeBrief,
-  joinSelectedStyleLayerValue,
-  mergeSelectedStyleNegativePrompts,
   type SelectedStyleSlot,
   type StyleLayerAvoidRulesMode,
   type StyleLayerFieldId,
@@ -1829,6 +1825,31 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     [selectedStyles],
   );
   const activeSelectedStyleCount = selectedStyleLayers.filter((layer) => layer.enabled).length;
+  const registeredStyleGenerationPlan = useMemo(
+    () =>
+      createSelectedStylesGenerationPlan({
+        slots: selectedStyles,
+        hasReferenceImages: referenceImages.length > 0,
+        baseNegativePrompt: config.negativePrompt,
+      }),
+    [config.negativePrompt, referenceImages.length, selectedStyles],
+  );
+  const registeredStyleSelectionRef = useRef(false);
+  useEffect(() => {
+    if (!registeredStyleGenerationPlan) {
+      if (!registeredStyleSelectionRef.current) return;
+      registeredStyleSelectionRef.current = false;
+      updateConfig('recipeId', null);
+      updateConfig('recipeParams', null);
+      updateConfig('recipeContext', '');
+      return;
+    }
+
+    registeredStyleSelectionRef.current = true;
+    updateConfig('recipeId', 'styles');
+    updateConfig('recipeParams', registeredStyleGenerationPlan.recipeParams);
+    updateConfig('recipeContext', '');
+  }, [registeredStyleGenerationPlan, updateConfig]);
   const activePreset = useMemo(
     () =>
       searchableStylePresets.find((preset) => preset.id === interactionState.activePresetId) ??
@@ -2028,12 +2049,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   }, []);
 
   const handleGenerateSelectedStyles = useCallback(() => {
-    if (selectedStyles.length === 0) return;
-
-    const layers = selectedStyles.map(createSelectedStyleLayer).filter((layer) => layer.enabled);
-    if (layers.length === 0) return;
-
-    const hasReferenceImages = referenceImages.length > 0;
     const diversityPrompts = [
       'Introduce a noticeably different camera distance and framing from previous renders.',
       'Shift scene energy with a different gesture or action beat while preserving the subject intent.',
@@ -2041,50 +2056,19 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       'Vary background staging and spatial depth so this render is visibly unique.',
     ] as const;
     const diversityHint = diversityPrompts[Math.floor(Math.random() * diversityPrompts.length)];
-    const selectedNames = layers.map((layer) => layer.presetName).join(' + ');
-    const roleInstruction = hasReferenceImages
-      ? `
-        Use the uploaded images as loose semantic references for subject intent.
-        DO NOT preserve pose, framing, camera angle, or original composition unless the prompt explicitly asks.
-        Re-stage the subject with clearly different gesture, perspective, and environment while applying the selected style layers.
-        Make the result feel freshly generated, not a repaint of the input.
-      `
-      : `
-        Synthesize the requested subject from the prompt and selected style layers.
-        Make the selected style DNA the primary driver of the visual output.
-        Focus on a coherent, high-quality image that exposes the combined aesthetic.
-      `;
-    const compositionRule = hasReferenceImages
-      ? 'Preserve only subject intent from the uploaded references; force substantial variation in pose, camera, composition, lighting, and scene staging.'
-      : 'Create a balanced composition from scratch using the selected style layers as the visual system.';
-    const styleEmphasis = createSelectedStyleEmphasis(selectedStyles, diversityHint);
-    const mergedNegativePrompt = mergeSelectedStyleNegativePrompts({
-      baseNegativePrompt: config.negativePrompt,
+    const generationPlan = createSelectedStylesGenerationPlan({
       slots: selectedStyles,
+      hasReferenceImages: referenceImages.length > 0,
+      baseNegativePrompt: config.negativePrompt,
+      diversityHint,
     });
+    if (!generationPlan) return;
 
     onGenerate(
-      config.prompt?.trim() || createSelectedStylesPrompt(selectedStyles),
+      config.prompt?.trim() || generationPlan.fallbackPrompt,
       {
         recipeId: 'styles',
-        recipeParams: {
-          presetId: layers[0]?.presetId ?? '',
-          presetName: selectedNames,
-          selectedStyles: layers,
-          mode: hasReferenceImages ? 'CREATIVE_REIMAGINING' : 'DIRECT_STYLE_SYNTHESIS',
-          roleInstruction: roleInstruction.trim(),
-          compositionRule,
-          styleEmphasis,
-          aesthetic: joinSelectedStyleLayerValue(selectedStyles, 'aesthetic'),
-          subjectTreatment: joinSelectedStyleLayerValue(selectedStyles, 'subjectTreatment'),
-          colorTone: joinSelectedStyleLayerValue(selectedStyles, 'colorTone'),
-          lightingShadow: joinSelectedStyleLayerValue(selectedStyles, 'lightingShadow'),
-          textureMaterial: joinSelectedStyleLayerValue(selectedStyles, 'textureMaterial'),
-          cameraComposition: joinSelectedStyleLayerValue(selectedStyles, 'cameraComposition'),
-          atmosphereMood: joinSelectedStyleLayerValue(selectedStyles, 'atmosphereMood'),
-          renderingQuality: joinSelectedStyleLayerValue(selectedStyles, 'renderingQuality'),
-          creativeBrief: joinSelectedStyleCreativeBrief(selectedStyles),
-        },
+        recipeParams: generationPlan.recipeParams,
         recipeContext: '',
         attachments: referenceImages.map((attachment) => ({
           ...attachment,
@@ -2097,7 +2081,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         executionModel: config.executionModel,
         executionReasoningEffort: config.executionReasoningEffort,
         executionSpeed: config.executionSpeed,
-        negativePrompt: mergedNegativePrompt,
+        negativePrompt: generationPlan.negativePrompt,
       },
       { preventModal: true },
     );
@@ -2238,6 +2222,9 @@ ${styleAnchorLine}
             sourceProvenance={styleSourceByPresetId.get(preset.id)}
             visualState={presetVisualStateById.get(preset.id)}
             active={selectedStyleIds.has(preset.id)}
+            selectionDisabled={
+              selectedStyles.length >= MAX_SELECTED_STYLE_SLOTS && !selectedStyleIds.has(preset.id)
+            }
             copied={copiedStyleId === preset.id}
             favorite={favorites.includes(preset.id)}
             theme={presetTheme}
@@ -2252,6 +2239,7 @@ ${styleAnchorLine}
     },
     [
       selectedStyleIds,
+      selectedStyles.length,
       copiedStyleId,
       favorites,
       activeTheme,

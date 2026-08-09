@@ -1055,6 +1055,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     description: 'Browse and apply styles, or generate style-card assets.',
     defaultTask: 'image_generate',
     supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
+    supportedProviders: ['codex', 'grok', 'dry_run'],
     parameters: [
       {
         id: 'presetId',
@@ -1102,6 +1103,13 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
       {
         id: 'styleEmphasis',
         label: 'Style Emphasis',
+        kind: 'string',
+        control: 'text',
+        group: 'application',
+      },
+      {
+        id: 'negativePrompt',
+        label: 'Avoid',
         kind: 'string',
         control: 'text',
         group: 'application',
@@ -1455,6 +1463,11 @@ export function buildGenerationTaskSpecFromRecipe({
   const resolvedImageSize = config.aspectRatio
     ? getImageGenSizeForRatio(config.aspectRatio).size
     : (config.imageSize ?? null);
+  const recipeNegativePrompt =
+    config.recipeId === 'styles' && typeof config.recipeParams?.negativePrompt === 'string'
+      ? config.recipeParams.negativePrompt.trim() || null
+      : null;
+  const negativePrompt = recipeNegativePrompt || config.negativePrompt || null;
 
   if (module && !isRecipeTaskSupported(module, taskKind)) {
     throw new Error(`Recipe Module ${module.id} does not support task ${taskKind}.`);
@@ -1480,7 +1493,7 @@ export function buildGenerationTaskSpecFromRecipe({
     task: taskKind,
     providerId,
     prompt,
-    negativePrompt: config.negativePrompt ?? null,
+    negativePrompt,
     recipeId: config.recipeId ?? null,
     recipeParams: config.recipeParams ?? null,
     stylePresetId:

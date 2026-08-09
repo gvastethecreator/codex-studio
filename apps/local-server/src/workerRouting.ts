@@ -26,7 +26,12 @@ export function resolveWorkerRuntimeTarget(
     return 'dry_run';
   }
 
-  if (providerId === 'google' || providerId === 'fal' || providerId === 'comfy') {
+  if (
+    providerId === 'grok' ||
+    providerId === 'google' ||
+    providerId === 'fal' ||
+    providerId === 'comfy'
+  ) {
     return 'external';
   }
 

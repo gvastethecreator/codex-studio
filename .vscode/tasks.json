@@ -47,6 +47,13 @@
       "problemMatcher": []
     },
     {
+      "label": "🔌 providers",
+      "type": "shell",
+      "command": "bun run providers:preflight",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
       "label": "✨ fmt",
       "type": "shell",
       "command": "bun run fmt",

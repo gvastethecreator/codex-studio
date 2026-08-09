@@ -600,6 +600,9 @@ export function useStudioShell(): StudioShellController {
       sync: {
         verifyCodexSession: studioRuntime.maintenance.verifyCodexSession,
       },
+      provider: {
+        activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+      },
     }),
     [
       handleGenerate,
@@ -614,6 +617,7 @@ export function useStudioShell(): StudioShellController {
       viewState.editor.open,
       openEditorRoute,
       studioRuntime.maintenance.verifyCodexSession,
+      studioSettings.data.settingsDomain.settings?.defaultProviderId,
     ],
   );
 
@@ -686,6 +690,7 @@ export function useStudioShell(): StudioShellController {
           provider: {
             capabilities: studioSettings.data.providerDomain.capabilities,
             runtimePreflight: studioSettings.data.providerDomain.runtimePreflight,
+            isSaving: studioSettings.data.settingsDomain.isSaving,
           },
           queue: {
             statusItems: studioRuntime.status.diagnostics.statusItems,
@@ -696,6 +701,8 @@ export function useStudioShell(): StudioShellController {
           },
           actions: {
             onOpenSettings: viewState.overlays.settings.open,
+            onSelectProvider: (providerId) =>
+              studioSettings.data.settingsDomain.update({ defaultProviderId: providerId }),
           },
         },
       }),
@@ -724,6 +731,8 @@ export function useStudioShell(): StudioShellController {
       studioSettings.data.settingsDomain.settings,
       studioSettings.data.providerDomain.capabilities,
       studioSettings.data.providerDomain.runtimePreflight,
+      studioSettings.data.settingsDomain.isSaving,
+      studioSettings.data.settingsDomain.update,
       studioRuntime.status.diagnostics.statusItems,
       queueResultPreviews,
       studioRuntime.activity.activeServerJobCount,

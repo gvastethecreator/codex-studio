@@ -2,10 +2,27 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import {
   createCodexRuntimePreflight,
+  createGrokRuntimePreflight,
   createProviderReadinessMaps,
   getExternalProviderRuntimePreflight,
   readExternalProviderRuntimePreflights,
 } from './runtimeConfig';
+
+const READY_GROK_RUNTIME = {
+  status: 'ready' as const,
+  canRunJobs: true,
+  checkedAt: '2026-08-08T00:00:00.000Z',
+  selectedExecutable: 'C:/Users/dev/.grok/bin/grok.exe',
+  selectedVersion: 'grok 1.0.0',
+  selectedVersionNumber: '1.0.0',
+  defaultModel: 'grok-4.5',
+  availableModels: ['grok-4.5'],
+  headlessSupported: true,
+  imagineAvailable: true,
+  recommendedAction: 'Grok Imagine is ready.',
+  issues: [],
+  candidates: [],
+};
 
 describe('provider runtime config', () => {
   it('reports configured secret sources without exposing secret values', () => {
@@ -76,18 +93,23 @@ describe('provider runtime config', () => {
   });
 
   it('creates capability readiness maps from preflight state', () => {
-    const readiness = createProviderReadinessMaps({
-      NANO_BANANA_API_KEY: 'nano-secret-value',
-      COMFYUI_API_URL: 'ftp://127.0.0.1:8188',
-    });
+    const readiness = createProviderReadinessMaps(
+      {
+        NANO_BANANA_API_KEY: 'nano-secret-value',
+        COMFYUI_API_URL: 'ftp://127.0.0.1:8188',
+      },
+      READY_GROK_RUNTIME,
+    );
 
     expect(readiness.secretConfigured).toMatchObject({
       google: true,
       fal: false,
       comfy: true,
+      grok: true,
     });
     expect(readiness.localRuntimeConfigured).toMatchObject({
       comfy: false,
+      grok: true,
     });
     expect(JSON.stringify(readiness)).not.toContain('nano-secret-value');
   });
@@ -121,5 +143,17 @@ describe('provider runtime config', () => {
       canAttemptExecution: false,
     });
     expect(preflight.diagnostics.join(' ')).toContain('legacy');
+  });
+
+  it('maps the local Grok Build login into non-secret provider readiness', () => {
+    const preflight = createGrokRuntimePreflight(READY_GROK_RUNTIME);
+    expect(preflight).toMatchObject({
+      providerId: 'grok',
+      runtimeKind: 'agent_cli',
+      secretState: 'not_required',
+      localRuntimeState: 'configured',
+      canAttemptExecution: true,
+    });
+    expect(JSON.stringify(preflight)).not.toContain('auth');
   });
 });
