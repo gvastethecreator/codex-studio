@@ -2,7 +2,11 @@ import type {
   StyleRuntimePack,
   StyleRuntimePreset,
 } from '../components/recipes/styles/runtimeTypes';
-import type { CreateJobRequest } from '../packages/shared/src';
+import {
+  createGenerationTaskSpec,
+  type CreateJobRequest,
+  type GenerationProviderId,
+} from '../packages/shared/src';
 
 export interface StyleDefaultManifestEntry {
   presetId: string;
@@ -14,6 +18,7 @@ export interface StyleDefaultManifestEntry {
   jobId: string;
   sourceAsset: string;
   generationMode: 'text-to-image';
+  providerId?: GenerationProviderId;
   model: string;
   reasoningEffort: string;
   generatedAt: string;
@@ -26,6 +31,7 @@ export interface StyleDefaultManifestInput {
   file: string;
   jobId: string;
   sourceAsset: string;
+  providerId?: GenerationProviderId;
   model: string;
   reasoningEffort: string;
   generatedAt: string;
@@ -91,6 +97,8 @@ export interface StyleDefaultFailureInput {
 export interface StyleDefaultJobRequestInput {
   workspaceId?: string;
   prompt: string;
+  providerId?: 'codex' | 'grok';
+  presetId?: string;
 }
 
 function normalizeCategory(category?: string) {
@@ -187,6 +195,7 @@ export function createStyleDefaultManifestEntry({
   file,
   jobId,
   sourceAsset,
+  providerId = 'codex',
   model,
   reasoningEffort,
   generatedAt,
@@ -201,6 +210,7 @@ export function createStyleDefaultManifestEntry({
     jobId,
     sourceAsset,
     generationMode: 'text-to-image',
+    providerId,
     model,
     reasoningEffort,
     generatedAt,
@@ -295,7 +305,42 @@ export function createStyleDefaultFailureEntry({
 export function createStyleDefaultJobRequest({
   workspaceId = 'default',
   prompt,
+  providerId = 'codex',
+  presetId,
 }: StyleDefaultJobRequestInput): CreateJobRequest {
+  if (providerId === 'grok') {
+    if (!presetId?.trim()) {
+      throw new Error('Grok style-card jobs require a presetId.');
+    }
+    const sourceSpec = createGenerationTaskSpec({
+      id: `style-preset-card-grok-${presetId.toLowerCase()}`,
+      task: 'style_preset_card',
+      providerId,
+      prompt,
+      stylePresetId: presetId,
+      output: {
+        count: 1,
+        aspectRatio: '3:4',
+        imageSize: '1152x1536',
+        mimeType: 'image/webp',
+        requiresLocalAsset: true,
+        requiresCatalogEntry: true,
+      },
+      metadata: {
+        assetRole: 'style-preset-provider-variant',
+        variantProviderId: providerId,
+      },
+    });
+
+    return {
+      workspaceId,
+      kind: 'style_preset_card',
+      providerId,
+      sourceSpec,
+      prompt,
+    };
+  }
+
   return {
     workspaceId,
     kind: 'codex_imagegen',

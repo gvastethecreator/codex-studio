@@ -721,7 +721,7 @@ Destination for decision fog:
 
 > An implementer can run the Workspace convergence program without re-deciding product authority, Project retirement, or gate names.
 
-Live decision map: `.scratch/wayfinder/codex-studio-hardening/map.md`
+The ignored Wayfinder map used during implementation was retired on 2026-08-09. This tracked plan and `docs/ARCHITECTURE.md` now hold the durable decisions.
 
 ---
 

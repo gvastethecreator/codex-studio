@@ -158,4 +158,34 @@ describe('styleDefaultAssetPipeline', () => {
       },
     );
   });
+
+  it('creates a provider-aware Grok style-card job with one 3:4 output', () => {
+    const request = createStyleDefaultJobRequest({
+      workspaceId: 'default',
+      prompt: 'prompt body',
+      providerId: 'grok',
+      presetId: 'SP99-001',
+    });
+
+    expect(request).toMatchObject({
+      workspaceId: 'default',
+      kind: 'style_preset_card',
+      providerId: 'grok',
+      prompt: 'prompt body',
+      sourceSpec: {
+        task: 'style_preset_card',
+        providerId: 'grok',
+        stylePresetId: 'SP99-001',
+        output: {
+          count: 1,
+          aspectRatio: '3:4',
+          imageSize: '1152x1536',
+        },
+        metadata: {
+          assetRole: 'style-preset-provider-variant',
+          variantProviderId: 'grok',
+        },
+      },
+    });
+  });
 });

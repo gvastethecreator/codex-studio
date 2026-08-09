@@ -13,6 +13,11 @@ export interface StylePresetCardImage {
   label: string;
 }
 
+export interface StylePresetImageVariant {
+  src: string;
+  label: string;
+}
+
 export function packIdFromPresetId(presetId: string) {
   const match = presetId.match(/^SP(\d{2})-/i);
   if (!match) return null;
@@ -64,7 +69,7 @@ export function resolveStylePresetCardImages({
 }: {
   resultImages: GeneratedImageWithConfig[];
   defaultImage?: string;
-  defaultImageVariants?: string[];
+  defaultImageVariants?: StylePresetImageVariant[];
   defaultImageStale: boolean;
   previewImage?: string;
 }): StylePresetCardImage[] {
@@ -94,11 +99,11 @@ export function resolveStylePresetCardImages({
   };
 
   const addDefaultImageVariants = () => {
-    defaultImageVariants.forEach((src, index) => {
+    defaultImageVariants.forEach((variant) => {
       add({
         kind: 'variant',
-        src,
-        label: `Variant ${index + 1}`,
+        src: variant.src,
+        label: variant.label,
       });
     });
   };

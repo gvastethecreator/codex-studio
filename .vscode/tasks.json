@@ -4,7 +4,7 @@
     {
       "label": "📦 deps",
       "type": "shell",
-      "command": "bun install",
+      "command": "bun install --frozen-lockfile",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     },
@@ -130,6 +130,22 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "🎨 styles",
+      "type": "shell",
+      "command": "bun run styles:verify",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🧩 variants",
+      "type": "shell",
+      "command": "bun run styles:provider-variants:verify -- --provider=grok",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
     },
     {
       "label": "👁 preview",

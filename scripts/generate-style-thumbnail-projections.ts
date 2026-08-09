@@ -6,6 +6,7 @@ const rootDir = path.resolve(import.meta.dir, '..');
 const stylesAssetDir = path.join(rootDir, 'assets', 'recipes', 'styles');
 const thumbnailDirName = 'style-card-thumbnails';
 const defaultsDirName = 'defaults';
+const grokVariantsDirName = 'defaults/providers/grok';
 const outputDir = path.join(rootDir, 'lib', 'styleThumbnailPacks.generated');
 const aliasesPath = path.join(import.meta.dir, 'style-thumbnail-aliases.json');
 const checkMode = process.argv.includes('--check');
@@ -89,6 +90,11 @@ const thumbnailFiles = (await readdir(path.join(stylesAssetDir, thumbnailDirName
 const defaultFiles = (await readdir(path.join(stylesAssetDir, defaultsDirName)))
   .filter((fileName) => fileName.endsWith('.webp'))
   .sort((a, b) => a.localeCompare(b));
+const grokVariantFiles = (
+  await readdir(path.join(stylesAssetDir, grokVariantsDirName)).catch(() => [])
+)
+  .filter((fileName) => /^SP\d{2}-\d{3}\.webp$/i.test(fileName))
+  .sort((a, b) => a.localeCompare(b));
 const assetsByKey = new Map<string, ThumbnailAsset>();
 for (const fileName of defaultFiles) {
   const key = assetKey(fileName);
@@ -97,6 +103,10 @@ for (const fileName of defaultFiles) {
 for (const fileName of thumbnailFiles) {
   const key = assetKey(fileName);
   assetsByKey.set(key, { key, fileName, sourceDirName: thumbnailDirName });
+}
+for (const fileName of grokVariantFiles) {
+  const key = `${assetKey(fileName)}-grok`;
+  assetsByKey.set(key, { key, fileName, sourceDirName: grokVariantsDirName });
 }
 const aliases = JSON.parse(await readFile(aliasesPath, 'utf8')) as ThumbnailAlias[];
 for (const alias of aliases) {

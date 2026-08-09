@@ -24,7 +24,10 @@ describe('repo asset audit', () => {
       path.join(assetsDirectory, 'asset-policy.json'),
       JSON.stringify({
         schemaVersion: 1,
-        excludePrefixes: ['assets/recipes/styles/defaults/failures-pack_'],
+        excludePrefixes: [
+          'assets/recipes/styles/defaults/failures-pack_',
+          'assets/recipes/styles/defaults/providers/grok/failures-pack_',
+        ],
         core: {
           maxBytes: 1024,
           includePaths: ['assets/asset-pack-lock.json', 'assets/asset-policy.json'],
@@ -45,6 +48,9 @@ describe('repo asset audit', () => {
     );
     writeFileSync(path.join(defaultsDirectory, 'SP01-001.webp'), 'pack input');
     writeFileSync(path.join(defaultsDirectory, 'failures-pack_01.json'), '{"local":true}');
+    const grokDirectory = path.join(defaultsDirectory, 'providers', 'grok');
+    mkdirSync(grokDirectory, { recursive: true });
+    writeFileSync(path.join(grokDirectory, 'failures-pack_01.json'), '{"local":true}');
 
     const auditScript = path.resolve(import.meta.dirname, 'audit-repo-assets.ts');
     execFileSync('bun', ['run', auditScript, '--update-lock'], { cwd, stdio: 'pipe' });
@@ -71,6 +77,7 @@ describe('repo asset audit', () => {
     ]);
 
     writeFileSync(path.join(defaultsDirectory, 'failures-pack_01.json'), '{"changed":true}');
+    writeFileSync(path.join(grokDirectory, 'failures-pack_01.json'), '{"changed":true}');
     expect(() =>
       execFileSync('bun', ['run', auditScript, '--verify'], { cwd, stdio: 'pipe' }),
     ).not.toThrow();

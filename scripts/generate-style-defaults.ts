@@ -25,6 +25,7 @@ import {
   repoRelative,
   rootDir,
   request,
+  removeStyleDefaultFailuresForPreset,
   sanitizeStylePromptName,
   sanitizeCategory,
   styleCategoryImageKey,
@@ -42,8 +43,12 @@ interface PendingPreset {
   variantSlot?: number;
 }
 
+type StyleCardProvider = 'codex' | 'grok';
+
 const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
+const GROK_IMAGEGEN_MODEL = process.env.GROK_IMAGE_MODEL || 'grok-4.5';
+const GROK_IMAGEGEN_REASONING_EFFORT = 'low';
 const PACK12_REVIEW_SAFE_MODE = process.env.PACK12_REVIEW_SAFE_MODE === '1';
 const PACK12_SHORT_RECOVERY_MODE = process.env.PACK12_SHORT_RECOVERY_MODE === '1';
 const libraryDir = process.env.STUDIO_LIBRARY_DIR || defaultStudioLibraryDir;
@@ -4620,7 +4625,7 @@ function pack16AnimeBasePromptOverride(pack: StyleRuntimePack, preset?: StyleRun
     typeof preset.style.creative_brief === 'string' && preset.style.creative_brief.trim()
       ? ` Creative brief: ${preset.style.creative_brief.trim()}`
       : '';
-  return `A character-led anime classics/prestige style-card with one original hybrid anime protagonist or character-world focal subject chosen specifically for ${preset.name}. Let anatomy, wardrobe silhouette, companion creature, symbolic mask, machine/ritual/weather trait, or background architecture fuse into the character identity instead of showing a plain literal role. Reference lineage: ${lineage}. Use those names as broad visual lineage only: line discipline, era texture, color script, composition grammar, acting style, and lighting behavior; do not copy named characters, costumes, logos, scenes, layouts, or franchise compositions.${brief} Must read as ${sanitizeStylePromptName(preset.name).toLowerCase()} through distinctive pose rhythm, silhouette logic, palette, shot grammar, and a scenario that actively exploits the style, not generic glossy anime, same-face portrait, object-only still life, basic role illustration, rubble field, aura wallpaper, corridor, market/library aisle, camera prop, lamp setup, or empty abstraction.`;
+  return `A character-led anime classics/prestige style-card with one original hybrid anime protagonist or character-world focal subject chosen specifically for ${sanitizeStylePromptName(preset.name)}. Let anatomy, wardrobe silhouette, companion creature, symbolic mask, machine/ritual/weather trait, or background architecture fuse into the character identity instead of showing a plain literal role. Reference lineage: ${lineage}. Use those names as broad visual lineage only: line discipline, era texture, color script, composition grammar, acting style, and lighting behavior; do not copy named characters, costumes, logos, scenes, layouts, or franchise compositions.${brief} Must read as ${sanitizeStylePromptName(preset.name).toLowerCase()} through distinctive pose rhythm, silhouette logic, palette, shot grammar, and a scenario that actively exploits the style, not generic glossy anime, same-face portrait, object-only still life, basic role illustration, rubble field, aura wallpaper, corridor, market/library aisle, camera prop, lamp setup, or empty abstraction.`;
 }
 
 function pack16AnimeIdentityRule(pack: StyleRuntimePack, preset?: StyleRuntimePreset) {
@@ -9562,6 +9567,30 @@ Make it immediately recognizable as ${promptRecognitionLabel}. ${differentiation
   );
 }
 
+function buildProviderStylePrompt(
+  pack: StyleRuntimePack,
+  preset: StyleRuntimePreset,
+  attempt: number,
+  activeSessionSuffix: string | undefined,
+  variantSlot: number | undefined,
+  provider: StyleCardProvider,
+) {
+  const prompt = buildStylePrompt(pack, preset, attempt, activeSessionSuffix, variantSlot);
+  if (provider === 'codex') return prompt;
+
+  const adaptedPrompt = prompt
+    .replace(/^MODEL:\s*.+$/im, `MODEL: ${GROK_IMAGEGEN_MODEL}, ${GROK_IMAGEGEN_REASONING_EFFORT}`)
+    .replaceAll('1024x1536', '1152x1536')
+    .replaceAll('Portrait 2:3, usable in a 3:4 card crop.', 'Portrait 3:4 card composition.');
+
+  return [
+    'GROK OUTPUT OVERRIDE: create exactly one portrait 3:4 image and keep the complete composition readable at card size.',
+    'Do not draw readable text, letters, numbers, labels, logos, brand marks, watermarks, subtitles, signs, HUD, menus, interface panels, or glyph-like pseudo-text, even if later style DNA mentions signage, interface, title graphics, labels, or HUD as source vocabulary.',
+    'Translate those forbidden cues into non-letter color blocks, light bars, material shapes, or environmental geometry while preserving the requested style and scene.',
+    adaptedPrompt,
+  ].join('\n\n');
+}
+
 async function exists(filePath: string) {
   try {
     await stat(filePath);
@@ -9684,11 +9713,11 @@ async function newestAssetForJob(jobId: string) {
 }
 
 function manifestPathForPack(packId: string) {
-  return path.join(defaultsDir, `manifest-${packId}.json`);
+  return path.join(activeOutputDir, `manifest-${packId}.json`);
 }
 
 function failuresPathForPack(packId: string) {
-  return path.join(defaultsDir, `failures-${packId}.json`);
+  return path.join(activeOutputDir, `failures-${packId}.json`);
 }
 
 async function loadManifest(packId: string) {
@@ -9703,8 +9732,11 @@ async function loadManifest(packId: string) {
 }
 
 async function saveManifest(packId: string, entries: StyleDefaultManifestEntry[]) {
-  entries.sort((a, b) => a.presetId.localeCompare(b.presetId));
-  await writeFile(manifestPathForPack(packId), `${JSON.stringify(entries, null, 2)}\n`, 'utf8');
+  const filePath = manifestPathForPack(packId);
+  await enqueueCheckpoint(filePath, () => {
+    const sortedEntries = entries.toSorted((a, b) => a.presetId.localeCompare(b.presetId));
+    return `${JSON.stringify(sortedEntries, null, 2)}\n`;
+  });
 }
 
 async function loadFailures(packId: string) {
@@ -9716,7 +9748,8 @@ async function loadFailures(packId: string) {
 }
 
 async function saveFailures(packId: string, failures: unknown[]) {
-  await writeFile(failuresPathForPack(packId), `${JSON.stringify(failures, null, 2)}\n`, 'utf8');
+  const filePath = failuresPathForPack(packId);
+  await enqueueCheckpoint(filePath, () => `${JSON.stringify(failures, null, 2)}\n`);
 }
 
 function isFailureEntry(
@@ -9795,6 +9828,7 @@ const packFilter = argValue('pack');
 const sessionSuffix = argValue('session-suffix');
 const categoryFilterArg = argValue('category');
 const presetFilterArg = argValue('preset');
+const providerArg = argValue('provider') ?? 'codex';
 const variantSlotArg = argValue('variant-slot');
 const variantSlotsArg = argValue('variant-slots');
 const variantCountArg = argValue('variant-count');
@@ -9830,6 +9864,17 @@ const force = process.argv.includes('--force');
 const parallel = Math.max(1, Number(argValue('parallel') || 1));
 const lockDir = path.join(defaultsDir, '.locks');
 const variantDefaultsDir = path.join(defaultsDir, 'variants');
+const providerDefaultsRoot = path.join(defaultsDir, 'providers');
+
+function parseProvider(value: string): StyleCardProvider {
+  if (value === 'codex' || value === 'grok') return value;
+  throw new Error('--provider must be codex or grok');
+}
+
+const providerId = parseProvider(providerArg);
+const writesProviderVariants = providerId === 'grok';
+const providerDefaultsDir = path.join(providerDefaultsRoot, providerId);
+const activeOutputDir = writesProviderVariants ? providerDefaultsDir : defaultsDir;
 
 function parseVariantSlot(value: string, flagName: string) {
   const slot = Number(value);
@@ -9867,8 +9912,18 @@ function resolveVariantSlots() {
 const variantSlots = resolveVariantSlots();
 const writesVariants = variantSlots.length > 0;
 
+if (writesProviderVariants && writesVariants) {
+  throw new Error('Grok provider variants cannot be combined with numeric variant-slot flags.');
+}
+if (writesProviderVariants && (force || retryFailures)) {
+  throw new Error(
+    'Grok provider variants do not allow --force or --retry-failures because a prior call may already be billable. Select only missing presets.',
+  );
+}
+
 await mkdir(defaultsDir, { recursive: true });
 if (writesVariants) await mkdir(variantDefaultsDir, { recursive: true });
+if (writesProviderVariants) await mkdir(providerDefaultsDir, { recursive: true });
 await mkdir(lockDir, { recursive: true });
 
 const packs = (await loadPacks(packFilter || undefined)).filter(
@@ -9876,6 +9931,7 @@ const packs = (await loadPacks(packFilter || undefined)).filter(
 );
 const manifestByPack = new Map<string, Map<string, StyleDefaultManifestEntry>>();
 const failuresByPack = new Map<string, unknown[]>();
+const checkpointQueues = new Map<string, Promise<void>>();
 const targetPresets: PendingPreset[] = [];
 let attempted = 0;
 let generated = 0;
@@ -9887,6 +9943,13 @@ for (const pack of packs) {
   const manifestEntries = await loadManifest(pack.id);
   manifestByPack.set(pack.id, new Map(manifestEntries.map((entry) => [entry.presetId, entry])));
   failuresByPack.set(pack.id, await loadFailures(pack.id));
+}
+
+async function enqueueCheckpoint(filePath: string, buildContents: () => string) {
+  const previous = checkpointQueues.get(filePath) ?? Promise.resolve();
+  const current = previous.catch(() => {}).then(() => writeFile(filePath, buildContents(), 'utf8'));
+  checkpointQueues.set(filePath, current);
+  await current;
 }
 
 const resolvedPresetFilters = retryFailures
@@ -9918,7 +9981,7 @@ function variantDestinationForPreset(presetId: string, slot: number) {
 for (const pack of packs) {
   for (const preset of pack.presets) {
     const category = sanitizeCategory(preset.category);
-    const destination = path.join(defaultsDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
+    const destination = path.join(activeOutputDir, `${preset.id}${RECIPE_ASSET_EXTENSION}`);
 
     if (resolvedPresetFilters.size > 0 && !resolvedPresetFilters.has(preset.id)) {
       existingDefaultFiles.add(destination);
@@ -9930,7 +9993,18 @@ for (const pack of packs) {
       continue;
     }
 
-    if (!writesVariants && !effectiveForce && (await exists(destination))) {
+    const destinationExists = await exists(destination);
+    if (
+      writesProviderVariants &&
+      destinationExists &&
+      !manifestByPack.get(pack.id)?.has(preset.id)
+    ) {
+      throw new Error(
+        `Refusing to skip orphan Grok asset without provenance: ${repoRelative(destination)}`,
+      );
+    }
+
+    if (!writesVariants && !effectiveForce && destinationExists) {
       existingDefaultFiles.add(destination);
       skipped += 1;
     }
@@ -9944,7 +10018,7 @@ const plannedTargets = createStyleDefaultTargets({
   categoryFilters,
   presetFilters: resolvedPresetFilters,
   limit,
-  defaultsDir,
+  defaultsDir: activeOutputDir,
   assetExtension: RECIPE_ASSET_EXTENSION,
 });
 
@@ -9979,12 +10053,23 @@ if (printPrompts) {
   for (const target of targetPresets) {
     const slot = target.variantSlot
       ? ` variant-${String(target.variantSlot).padStart(2, '0')}`
-      : ' primary';
+      : writesProviderVariants
+        ? ` provider-${providerId}`
+        : ' primary';
     console.log(`\n--- ${target.preset.id}${slot} ${target.pack.name} / ${target.category} ---\n`);
-    console.log(buildStylePrompt(target.pack, target.preset, 1, sessionSuffix, target.variantSlot));
+    console.log(
+      buildProviderStylePrompt(
+        target.pack,
+        target.preset,
+        1,
+        sessionSuffix,
+        target.variantSlot,
+        providerId,
+      ),
+    );
   }
   console.log(
-    `[dry-run] prompts=${targetPresets.length} skipped=${skipped} packs=${
+    `[dry-run] provider=${providerId} prompts=${targetPresets.length} skipped=${skipped} packs=${
       packs.map((pack) => pack.id).join(',') || 'none'
     }`,
   );
@@ -10001,11 +10086,16 @@ async function processPreset(target: PendingPreset) {
   const manifestByPreset = manifestByPack.get(pack.id);
   if (!manifestByPreset) throw new Error(`Missing manifest map for pack ${pack.id}`);
 
-  const variantLabel = variantSlot ? ` / variant-${String(variantSlot).padStart(2, '0')}` : '';
+  const variantLabel = variantSlot
+    ? ` / variant-${String(variantSlot).padStart(2, '0')}`
+    : writesProviderVariants
+      ? ` / provider-${providerId}`
+      : '';
   console.log(`[txt2img] ${preset.id}${variantLabel} ${pack.name} / ${category} / ${preset.name}`);
   let lastError: string | null = null;
+  const totalAttempts = writesProviderVariants ? 1 : IMAGE_RETRY_ATTEMPTS + 1;
 
-  for (let attempt = 1; attempt <= IMAGE_RETRY_ATTEMPTS + 1; attempt += 1) {
+  for (let attempt = 1; attempt <= totalAttempts; attempt += 1) {
     try {
       if (attempt > 1) {
         console.log(
@@ -10018,7 +10108,16 @@ async function processPreset(target: PendingPreset) {
         body: JSON.stringify(
           createStyleDefaultJobRequest({
             workspaceId: 'default',
-            prompt: buildStylePrompt(pack, preset, attempt, sessionSuffix, variantSlot),
+            providerId,
+            presetId: preset.id,
+            prompt: buildProviderStylePrompt(
+              pack,
+              preset,
+              attempt,
+              sessionSuffix,
+              variantSlot,
+              providerId,
+            ),
           }),
         ),
       });
@@ -10027,8 +10126,12 @@ async function processPreset(target: PendingPreset) {
       const asset = await newestAssetForJob(created.id);
       if (!asset) throw new Error(`Completed job ${created.id} has no asset in /api/assets`);
 
-      await writeRepoWebpAsset(asset.filePath, destination);
-      await cleanupExternalJobArtifacts(created.id, asset.filePath);
+      await writeRepoWebpAsset(asset.filePath, destination, {
+        archive: !writesProviderVariants,
+      });
+      if (!writesProviderVariants) {
+        await cleanupExternalJobArtifacts(created.id, asset.filePath);
+      }
       const repoFile = repoRelative(destination);
       if (!variantSlot) {
         manifestByPreset.set(
@@ -10040,12 +10143,25 @@ async function processPreset(target: PendingPreset) {
             file: repoFile,
             jobId: created.id,
             sourceAsset: repoFile,
-            model: IMAGEGEN_MODEL,
-            reasoningEffort: IMAGEGEN_REASONING_EFFORT,
+            providerId,
+            model:
+              created.execution?.model ??
+              (writesProviderVariants ? GROK_IMAGEGEN_MODEL : IMAGEGEN_MODEL),
+            reasoningEffort:
+              created.execution?.reasoningEffort ??
+              (writesProviderVariants ? GROK_IMAGEGEN_REASONING_EFFORT : IMAGEGEN_REASONING_EFFORT),
             generatedAt: new Date().toISOString(),
           }),
         );
         await saveManifest(pack.id, Array.from(manifestByPreset.values()));
+      }
+      const previousFailures = failuresByPack.get(pack.id);
+      if (Array.isArray(previousFailures)) {
+        const unresolvedFailures = removeStyleDefaultFailuresForPreset(previousFailures, preset.id);
+        if (unresolvedFailures.length !== previousFailures.length) {
+          failuresByPack.set(pack.id, unresolvedFailures);
+          await saveFailures(pack.id, unresolvedFailures);
+        }
       }
       generated += 1;
       lastError = null;
@@ -10054,7 +10170,11 @@ async function processPreset(target: PendingPreset) {
       const message = error instanceof Error ? error.message : String(error);
       lastError = message;
 
-      if (!message.includes('status needs_review') || attempt > IMAGE_RETRY_ATTEMPTS) {
+      if (
+        writesProviderVariants ||
+        !message.includes('status needs_review') ||
+        attempt > IMAGE_RETRY_ATTEMPTS
+      ) {
         break;
       }
 
@@ -10071,7 +10191,8 @@ async function processPreset(target: PendingPreset) {
   );
   const failures = failuresByPack.get(pack.id);
   if (Array.isArray(failures)) {
-    failures.push(
+    const unresolvedFailures = removeStyleDefaultFailuresForPreset(failures, preset.id);
+    unresolvedFailures.push(
       createStyleDefaultFailureEntry({
         pack,
         preset,
@@ -10080,7 +10201,8 @@ async function processPreset(target: PendingPreset) {
         failedAt: new Date().toISOString(),
       }),
     );
-    await saveFailures(pack.id, failures);
+    failuresByPack.set(pack.id, unresolvedFailures);
+    await saveFailures(pack.id, unresolvedFailures);
   }
 }
 
@@ -10106,5 +10228,5 @@ for (const [packId, failures] of failuresByPack) {
 }
 
 console.log(
-  `[done] generated=${generated} attempted=${attempted} skipped=${skipped} failed=${failed} packs=${packs.map((pack) => pack.id).join(',') || 'none'}`,
+  `[done] provider=${providerId} generated=${generated} attempted=${attempted} skipped=${skipped} failed=${failed} packs=${packs.map((pack) => pack.id).join(',') || 'none'}`,
 );

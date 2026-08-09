@@ -1,5 +1,5 @@
 #!/usr/bin/env bun
-/** Fail when tracked Markdown entrypoints link to missing or untracked local paths. */
+/** Fail when versionable Markdown entrypoints link to missing or ignored local paths. */
 import { execFileSync } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
@@ -10,8 +10,15 @@ function normalizeRepoPath(value: string) {
   return value.replaceAll('\\', '/').replace(/^\.\//, '');
 }
 
-function readTrackedFiles(cwd: string) {
-  const output = execFileSync('git', ['ls-files', '-z'], { cwd, encoding: 'utf8' });
+function readVersionableFiles(cwd: string) {
+  const output = execFileSync(
+    'git',
+    ['ls-files', '-z', '--cached', '--others', '--exclude-standard'],
+    {
+      cwd,
+      encoding: 'utf8',
+    },
+  );
   return output.split('\0').map(normalizeRepoPath).filter(Boolean);
 }
 
@@ -69,10 +76,14 @@ export function findBrokenDocLinks({
 
 if (import.meta.main) {
   const cwd = process.cwd();
-  const trackedFileList = readTrackedFiles(cwd);
-  const trackedFiles = new Set(trackedFileList);
-  const markdownFiles = trackedFileList.filter((file) => file.toLowerCase().endsWith('.md'));
-  const errors = findBrokenDocLinks({ cwd, markdownFiles, trackedFiles });
+  const versionableFileList = readVersionableFiles(cwd);
+  const versionableFiles = new Set(versionableFileList);
+  const markdownFiles = versionableFileList.filter((file) => file.toLowerCase().endsWith('.md'));
+  const errors = findBrokenDocLinks({
+    cwd,
+    markdownFiles,
+    trackedFiles: versionableFiles,
+  });
 
   if (errors.length > 0) {
     console.error('docs:check failed:');
@@ -80,5 +91,5 @@ if (import.meta.main) {
     process.exit(1);
   }
 
-  console.log(`docs:check passed (${markdownFiles.length} tracked Markdown files)`);
+  console.log(`docs:check passed (${markdownFiles.length} versionable Markdown files)`);
 }

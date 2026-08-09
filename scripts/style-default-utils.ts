@@ -37,14 +37,19 @@ export function repoRelative(filePath: string) {
   return path.relative(rootDir, filePath).replaceAll(path.sep, '/');
 }
 
-export async function writeRepoWebpAsset(sourcePath: string, destinationPath: string) {
+export async function writeRepoWebpAsset(
+  sourcePath: string,
+  destinationPath: string,
+  options: { archive?: boolean } = {},
+) {
   const finalDestination = withRecipeAssetExtension(destinationPath);
+  const archive = options.archive ?? true;
   const archiveRoot =
     process.env.STYLE_DEFAULT_CARD_ARCHIVE_DIR ||
     path.join(rootDir, '.tmp', 'style-default-card-archive');
   const presetName = path.parse(finalDestination).name;
   const previousStats = await stat(finalDestination).catch(() => null);
-  if (previousStats?.size) {
+  if (archive && previousStats?.size) {
     const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
     const previousDir = path.join(archiveRoot, 'previous');
     await mkdir(previousDir, { recursive: true });
@@ -73,9 +78,11 @@ export async function writeRepoWebpAsset(sourcePath: string, destinationPath: st
     );
   }
 
-  const currentDir = path.join(archiveRoot, 'current');
-  await mkdir(currentDir, { recursive: true });
-  await copyFile(finalDestination, path.join(currentDir, `${presetName}.webp`));
+  if (archive) {
+    const currentDir = path.join(archiveRoot, 'current');
+    await mkdir(currentDir, { recursive: true });
+    await copyFile(finalDestination, path.join(currentDir, `${presetName}.webp`));
+  }
 
   return finalDestination;
 }
@@ -211,6 +218,7 @@ const STYLE_PROMPT_NAME_REPLACEMENTS: Array<[RegExp, string]> = [
   [/\bsacrifice\b/gi, 'rite'],
   [/\bsacrificial\b/gi, 'ceremonial'],
   [/\bblood\b/gi, 'ember'],
+  [/\bvulnerable\b/gi, 'expressive'],
 ];
 
 function matchReplacementCase(source: string, replacement: string) {
@@ -229,4 +237,11 @@ export function sanitizeStylePromptName(name: string) {
   }, name)
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+export function removeStyleDefaultFailuresForPreset(failures: unknown[], presetId: string) {
+  return failures.filter((failure) => {
+    if (!failure || typeof failure !== 'object') return true;
+    return !('presetId' in failure) || failure.presetId !== presetId;
+  });
 }

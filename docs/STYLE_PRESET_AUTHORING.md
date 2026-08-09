@@ -243,3 +243,16 @@ attributes:
 Default cards are prompt-derived artifacts. `scripts/generate-style-defaults.ts` builds the image prompt from the current pack, category, preset `name`, `visualDna`, `negativePrompt`, and deterministic variation helpers. Existing `.webp` files do not update when a manifest changes.
 
 If a preset changes `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt`, regenerate `assets/recipes/styles/defaults/<PRESET_ID>.webp` before considering visual work complete. If you keep a local backlog for stale cards, put it in `.local/style-preset-card-regeneration-backlog.md`; `.local/` is ignored.
+
+### Grok provider variants
+
+Grok variants are additional cards. They do not replace the default GPT Image card or numeric variants. The generator writes them to `assets/recipes/styles/defaults/providers/grok/` and records one manifest per pack.
+
+```bash
+bun run styles:defaults:grok -- --dry-run
+bun run styles:defaults:grok -- --preset=SP01-001
+bun run styles:provider-variants:verify -- --provider=grok
+bun run styles:thumbnails
+```
+
+The Grok path creates one fresh CLI-backed Persistent Job per preset and makes one generation attempt. Do not use `--force` or `--retry-failures`: a timeout or ambiguous result may already have consumed credits. Inspect the recorded Job and Grok session before deciding whether to regenerate a missing card.

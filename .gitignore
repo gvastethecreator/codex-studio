@@ -11,6 +11,7 @@ lerna-debug.log*
 .local/
 .cache/
 .bun/
+.bun-cache/
 .tmp
 .tmp-*
 .tmp_*
@@ -23,6 +24,7 @@ $null
 *.pid.lock
 *.orig
 *.rej
+*.bak
 *.tsbuildinfo
 .scratch/
 .snapshots/
@@ -64,6 +66,7 @@ lib/styleDefaultImages.generated.check.*.tmp.ts
 
 # Failure telemetry from past runs (do not commit)
 assets/recipes/styles/defaults/failures-pack_*.json
+assets/recipes/styles/defaults/providers/*/failures-pack_*.json
 
 # Env / secrets
 .env

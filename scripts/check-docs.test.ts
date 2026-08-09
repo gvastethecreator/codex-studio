@@ -14,22 +14,23 @@ afterEach(() => {
 });
 
 describe('findBrokenDocLinks', () => {
-  it('rejects missing and untracked local targets', () => {
+  it('accepts new versionable docs and rejects missing or ignored local targets', () => {
     const cwd = mkdtempSync(path.join(tmpdir(), 'codex-studio-docs-'));
     temporaryDirectories.push(cwd);
     mkdirSync(path.join(cwd, '.scratch'), { recursive: true });
     writeFileSync(
       path.join(cwd, 'README.md'),
-      '[tracked](docs.md) [missing](missing.md) [local evidence](.scratch/evidence.md)',
+      '[tracked](docs.md) [new](new-doc.md) [missing](missing.md) [local evidence](.scratch/evidence.md)',
     );
     writeFileSync(path.join(cwd, 'docs.md'), '# Tracked');
+    writeFileSync(path.join(cwd, 'new-doc.md'), '# New and versionable');
     writeFileSync(path.join(cwd, '.scratch', 'evidence.md'), '# Local only');
 
     expect(
       findBrokenDocLinks({
         cwd,
         markdownFiles: ['README.md'],
-        trackedFiles: new Set(['README.md', 'docs.md']),
+        trackedFiles: new Set(['README.md', 'docs.md', 'new-doc.md']),
       }),
     ).toEqual(['README.md -> missing missing.md', 'README.md -> untracked .scratch/evidence.md']);
   });

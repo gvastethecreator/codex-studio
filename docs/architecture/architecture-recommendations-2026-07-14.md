@@ -6,7 +6,7 @@ Started: 2026-07-14
 
 ## Objective
 
-Close every accepted recommendation from the 2026-07-14 architecture audit without mutating real Studio Library data, weakening provider isolation, or changing behavior outside the affected paths. This document is the tracked implementation ledger; detailed execution notes remain in the ignored durable plan under `.scratch/planning/`.
+Close every accepted recommendation from the 2026-07-14 architecture audit without mutating real Studio Library data, weakening provider isolation, or changing behavior outside the affected paths. This tracked document is the durable implementation ledger. The superseded ignored execution plan was removed during repository cleanup on 2026-08-09.
 
 ## Quality contract
 

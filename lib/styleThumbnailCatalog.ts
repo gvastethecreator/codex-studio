@@ -1,4 +1,5 @@
 import { loadGeneratedStyleThumbnailPack } from './styleThumbnailPacks.generated';
+import type { StylePresetImageVariant } from './stylePresetVisuals';
 
 const stylePreviewImageFiles = import.meta.glob('../assets/recipes/styles/previews/*.webp', {
   query: '?url',
@@ -50,13 +51,16 @@ export function resolveStyleDefaultImageThumbnail(presetId: string) {
 }
 
 export function resolveStyleDefaultImageVariantThumbnails(presetId: string) {
-  const variants: string[] = [];
+  const variants: StylePresetImageVariant[] = [];
   for (let index = 1; index <= 12; index += 1) {
     const key = `${presetId}-${String(index).padStart(2, '0')}`;
     const src = STYLE_CARD_THUMBNAILS[key];
     if (!src) break;
-    variants.push(src);
+    variants.push({ src, label: `Variant ${index}` });
   }
+
+  const grokSrc = STYLE_CARD_THUMBNAILS[`${presetId}-grok`];
+  if (grokSrc) variants.push({ src: grokSrc, label: 'Grok' });
 
   return variants;
 }

@@ -53,7 +53,12 @@ function assertSafeOutputDir() {
 }
 
 async function listWebpFiles(dir: string) {
-  const entries = await readdir(dir, { withFileTypes: true });
+  const entries = await readdir(dir, { withFileTypes: true }).catch(
+    (error: NodeJS.ErrnoException) => {
+      if (error.code === 'ENOENT') return [];
+      throw error;
+    },
+  );
   return entries
     .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith('.webp'))
     .map((entry) => entry.name)

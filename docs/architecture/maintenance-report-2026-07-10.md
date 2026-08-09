@@ -13,8 +13,7 @@ Status: Complete
 
 ## Preserved intentionally
 
-- `.scratch/planning` and final screenshots, because they are execution and verification evidence.
-- `tmp` incremental build metadata, because it is an active supported build cache.
+- At this historical close, `.scratch/planning`, final screenshots, and `tmp` build metadata were retained as active evidence/cache. They were later retired during the 2026-08-09 revalidation after their durable findings were consolidated into tracked docs.
 - Studio Library content under `D:\AI-Studio-Library`, SQLite state, generated outputs, and external output sources.
 - `.env.local` and runtime/provider configuration; no secret values were printed into repository files.
 - Compatibility exports whose tests document continued support.
@@ -34,6 +33,4 @@ Status: Complete
 - Readiness is fresh at revision 3 with Codex CLI 0.144.0 ready.
 - Playwright inspected `http://localhost:17222/` at 1440x900.
 - Recipes and Styles have no document overflow, console errors, page errors, failed requests, or broken loaded images.
-- Evidence:
-  - `.scratch/architecture-maintenance-recipes-1440x900.png`
-  - `.scratch/architecture-maintenance-styles-1440x900.png`
+- The transient Recipes and Styles captures were removed during the 2026-08-09 repository cleanup. This report preserves their recorded result without claiming that the files remain available.

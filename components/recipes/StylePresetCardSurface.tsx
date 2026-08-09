@@ -13,6 +13,7 @@ import type { GeneratedImageWithConfig } from '../../types';
 import {
   resolveStylePresetCardImages,
   type StylePresetCardImage,
+  type StylePresetImageVariant,
 } from '../../lib/stylePresetVisuals';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
 import { getStyleRuntimePresetDisplayName, type StyleRuntimePreset } from './stylesData';
@@ -34,7 +35,7 @@ export interface StylePresetVisualState {
   presetPackName: string;
   resultImages: GeneratedImageWithConfig[];
   defaultImage: string | undefined;
-  defaultImageVariants: string[];
+  defaultImageVariants: StylePresetImageVariant[];
   defaultImageStale: boolean;
   previewImage: string | undefined;
   exampleImageSrc: string | null;
@@ -124,6 +125,17 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   };
 
   if (activeCardImage) {
+    const variantBadge = hasMultipleImages ? (
+      <div
+        aria-live="polite"
+        aria-atomic="true"
+        data-style-active-image-label={activeCardImage.label}
+        className="pointer-events-none absolute left-1/2 top-2 z-20 -translate-x-1/2 rounded-[6px] border border-white/10 bg-zinc-950/65 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-zinc-100 shadow-lg backdrop-blur-md"
+      >
+        {activeCardImage.label}
+      </div>
+    ) : null;
+
     const staleBadge =
       activeCardImage.kind === 'stale-default' ? (
         <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-amber-400/30 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
@@ -172,9 +184,10 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
         </button>
 
         {staleBadge}
+        {variantBadge}
 
         {hasMultipleImages && (
-          <div className="pointer-events-none absolute inset-y-0 left-2 right-2 z-30 flex items-center justify-between opacity-0 transition-opacity group-hover/image:opacity-100 group-focus-within/image:opacity-100">
+          <div className="pointer-events-none absolute inset-y-0 left-2 right-2 z-30 flex items-center justify-between opacity-0 transition-opacity group-hover/image:opacity-100 group-focus-within/image:opacity-100 [@media(hover:none)]:opacity-100 [@media(pointer:coarse)]:opacity-100">
             <button
               type="button"
               onClick={(e) => {
@@ -366,6 +379,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         data-style-category={preset.category || 'General'}
         data-style-image-kind={imageDiagnostics.kind}
         data-style-image-src={imageDiagnostics.src ?? ''}
+        data-style-image-label={'label' in imageDiagnostics ? imageDiagnostics.label : ''}
         data-style-default-stale={visualState?.defaultImageStale ? 'true' : 'false'}
         data-style-source-pack-id={sourceProvenance?.sourcePackId ?? ''}
         data-style-source-category={sourceProvenance?.sourceCategory ?? ''}
@@ -378,7 +392,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         style={
           {
             contentVisibility: 'auto',
-            containIntrinsicSize: '280px 210px',
+            containIntrinsicSize: '210px 280px',
           } as React.CSSProperties
         }
       >

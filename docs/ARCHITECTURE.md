@@ -55,6 +55,7 @@ graph TD
 - `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts` project Command Center state.
 - `components/shell/StudioViewport.tsx` demand-loads route surfaces.
 - `hooks/useStyleRuntimePacks.ts` projects the Style Packs required by the current browser intent; `components/recipes/stylesData.ts` owns the shared value/promise registry and retry boundary.
+- `lib/styleThumbnailCatalog.ts` projects default and provider-specific Style card images from pack-scoped generated modules. Provider variants remain additional presentation assets with validated provenance; they do not replace the canonical default card or Style Preset Manifest.
 
 ## Core Backend Seams
 
@@ -176,6 +177,7 @@ Codex SDK and scripts are automation surfaces, not the product runtime. They sup
 - `providers:verify`
 - `recipes:verify`
 - `styles:verify`
+- `styles:provider-variants:verify` (also part of `styles:verify`)
 - `runtime:doctor`
 - `providers:preflight`
 - `ui:source:verify`

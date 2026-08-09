@@ -4,9 +4,9 @@
     {
       "id": "style-defaults",
       "version": "1.0.0",
-      "sha256": "a16823f4d44fb909b1fe8f136e0e9bb278024f2902bd861341653c842ed8e64a",
-      "fileCount": 2197,
-      "totalBytes": 812675047
+      "sha256": "0a2282b731d40e15ad020d0a43e0b5184297c879e652aa50aa5bbccf0730f4f3",
+      "fileCount": 3891,
+      "totalBytes": 1072057682
     },
     {
       "id": "style-authoring",
@@ -25,9 +25,9 @@
     {
       "id": "character-lab-authoring",
       "version": "1.0.0",
-      "sha256": "8f7a78ded1716fa0cdb47c0d948b80a2b455d11c37bffaff9ebe5715eb8b94c7",
+      "sha256": "c5589ef1b2c425afbeff520a1a9e5dc953037c13820f5c3c88e56e58e3ce0e7e",
       "fileCount": 7,
-      "totalBytes": 989240
+      "totalBytes": 989204
     }
   ]
 }

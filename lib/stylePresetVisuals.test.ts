@@ -103,12 +103,16 @@ describe('stylePresetVisuals', () => {
       resolveStylePresetCardImages({
         resultImages: [],
         defaultImage: '/defaults/SP03-001.webp',
-        defaultImageVariants: ['/defaults/variants/SP03-001-01.webp'],
+        defaultImageVariants: [
+          { src: '/defaults/variants/SP03-001-01.webp', label: 'Variant 1' },
+          { src: '/defaults/providers/grok/SP03-001.webp', label: 'Grok' },
+        ],
         defaultImageStale: false,
       }),
     ).toEqual([
       { kind: 'default', src: '/defaults/SP03-001.webp', label: 'Card' },
       { kind: 'variant', src: '/defaults/variants/SP03-001-01.webp', label: 'Variant 1' },
+      { kind: 'variant', src: '/defaults/providers/grok/SP03-001.webp', label: 'Grok' },
     ]);
   });
 
@@ -117,7 +121,7 @@ describe('stylePresetVisuals', () => {
       resolveStylePresetCardImages({
         resultImages: [],
         defaultImage: '/defaults/SP03-003.webp',
-        defaultImageVariants: ['/defaults/variants/SP03-003-01.webp'],
+        defaultImageVariants: [{ src: '/defaults/variants/SP03-003-01.webp', label: 'Variant 1' }],
         defaultImageStale: true,
       }),
     ).toEqual([

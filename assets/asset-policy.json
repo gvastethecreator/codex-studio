@@ -1,6 +1,9 @@
 {
   "schemaVersion": 1,
-  "excludePrefixes": ["assets/recipes/styles/defaults/failures-pack_"],
+  "excludePrefixes": [
+    "assets/recipes/styles/defaults/failures-pack_",
+    "assets/recipes/styles/defaults/providers/grok/failures-pack_"
+  ],
   "core": {
     "maxBytes": 100663296,
     "includePaths": [

@@ -24,6 +24,50 @@ const PRESET: StyleRuntimePreset = {
 };
 
 describe('StylePresetCard', () => {
+  it('shows the active image label while cycling provider variants', () => {
+    const { container } = render(
+      <StylePresetCard
+        preset={PRESET}
+        packId="pack_09"
+        visualState={{
+          presetPackName: 'Texture & Materiality',
+          resultImages: [],
+          defaultImage: '/style.webp',
+          defaultImageVariants: [{ src: '/style-grok.webp', label: 'Grok' }],
+          defaultImageStale: false,
+          previewImage: undefined,
+          exampleImageSrc: null,
+        }}
+        active={false}
+        selectionDisabled={false}
+        copied={false}
+        favorite={false}
+        theme={{
+          color: 'cyan',
+          bg: 'bg-cyan-500',
+          border: 'border-cyan-500',
+          text: 'text-cyan-400',
+        }}
+        FadeImageComponent={(props) => <img {...props} />}
+        onApply={() => {}}
+        onCopy={() => {}}
+        onToggleFavorite={() => {}}
+        onHoverPreviewChange={() => {}}
+      />,
+    );
+
+    expect(screen.getByText('Card', { selector: '[data-style-active-image-label]' })).toBeTruthy();
+    expect(container.querySelector('[data-style-image-label="Card"]')).toBeTruthy();
+
+    fireEvent.click(screen.getByRole('button', { name: 'Next image for Polished Glass' }));
+
+    expect(screen.getByText('Grok', { selector: '[data-style-active-image-label]' })).toBeTruthy();
+    expect(container.querySelector('[data-style-image-label="Grok"]')).toBeTruthy();
+    expect((screen.getByAltText('Polished Glass') as HTMLImageElement).src).toContain(
+      '/style-grok.webp',
+    );
+  });
+
   it('disables unselected style actions when all five slots are occupied', () => {
     const onApply = vi.fn();
 

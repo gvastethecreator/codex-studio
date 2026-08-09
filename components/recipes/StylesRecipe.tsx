@@ -490,7 +490,7 @@ function createStylePresetVisualState({
       resultImages[0]?.preview ||
       resultImages[0]?.src ||
       defaultImage ||
-      defaultImageVariants[0] ||
+      defaultImageVariants[0]?.src ||
       previewImage ||
       null,
   };
