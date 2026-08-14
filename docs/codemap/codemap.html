@@ -1,2000 +1,1355 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Code map · codex-studio</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        --bg: #090c11;
-        --panel: #10151d;
-        --panel-2: #151c26;
-        --line: #293342;
-        --text: #e5edf7;
-        --muted: #8f9bae;
-        --accent: #63d9ff;
-        --up: #f5c76a;
-        --down: #72e0a4;
-        --flow: #d19cff;
-        --danger: #ff7c8f;
-        --module: #8ca9ff;
-        --service: #63d9ff;
-        --database: #72e0a4;
-        --queue: #f5c76a;
-        --interface: #d19cff;
-        --external: #ff9b73;
-      }
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Code map · codex-studio</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --paper: #111111;
+      --paper-2: #161616;
+      --node-paper: #1b1b1b;
+      --ink: #f2f2f2;
+      --muted: #b7b7b7;
+      --soft: #858585;
+      --rule: rgba(255, 255, 255, .10);
+      --rule-solid: #3a3a3a;
+      --wash-2: rgba(255, 255, 255, .02);
+      --wash-3: rgba(255, 255, 255, .03);
+      --wash-6: rgba(255, 255, 255, .06);
+      --wash-10: rgba(255, 255, 255, .10);
+      --wash-30: rgba(255, 255, 255, .30);
+      --accent: #ff7043;
+      --accent-tint: rgba(255, 112, 67, .12);
+      --link: #79a8ff;
+      --connector: #9a9a9a;
+      --connector-dim: #343434;
+      --edge-imports: #63a4ff;
+      --edge-calls: #bd8cff;
+      --edge-reads: #57d39b;
+      --edge-writes: #f2c15f;
+      --edge-publishes: #ff8a5b;
+      --edge-subscribes: #f56fa1;
+      --edge-unknown: #ff5d5d;
+      --boundary-saturation: 72%;
+      --boundary-lightness: 68%;
+      --serif: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --mono: ui-monospace, SFMono-Regular, "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+    }
+    [data-theme="light"] {
+      color-scheme: light;
+      --paper: #f4f4f4;
+      --paper-2: #e9e9e9;
+      --node-paper: #ffffff;
+      --ink: #181818;
+      --muted: #555555;
+      --soft: #767676;
+      --rule: rgba(0, 0, 0, .13);
+      --rule-solid: #b8b8b8;
+      --wash-2: rgba(0, 0, 0, .02);
+      --wash-3: rgba(0, 0, 0, .03);
+      --wash-6: rgba(0, 0, 0, .06);
+      --wash-10: rgba(0, 0, 0, .10);
+      --wash-30: rgba(0, 0, 0, .30);
+      --accent: #c94714;
+      --accent-tint: rgba(201, 71, 20, .09);
+      --link: #145fc5;
+      --connector: #626262;
+      --connector-dim: #b8b8b8;
+      --edge-imports: #1f5fae;
+      --edge-calls: #7f44b3;
+      --edge-reads: #247d5a;
+      --edge-writes: #946000;
+      --edge-publishes: #b74d20;
+      --edge-subscribes: #ad2f62;
+      --edge-unknown: #c52b2b;
+      --boundary-saturation: 62%;
+      --boundary-lightness: 36%;
+    }
 
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        height: 100vh;
-        overflow: hidden;
-        background: var(--bg);
-        color: var(--text);
-        font:
-          12px/1.45 ui-monospace,
-          SFMono-Regular,
-          Consolas,
-          'Liberation Mono',
-          monospace;
-      }
-      button,
-      input {
-        font: inherit;
-      }
-      button {
-        color: inherit;
-      }
-      header {
-        height: 64px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-        padding: 10px 16px;
-        border-bottom: 1px solid var(--line);
-        background: #0d1118;
-      }
-      h1 {
-        margin: 0;
-        font-size: 16px;
-        letter-spacing: -0.02em;
-      }
-      .meta {
-        display: flex;
-        gap: 18px;
-        color: var(--muted);
-        white-space: nowrap;
-      }
-      .meta strong {
+    * { box-sizing: border-box; }
+    * { scrollbar-color: var(--rule-solid) var(--paper-2); scrollbar-width: thin; }
+    *::-webkit-scrollbar { width: 8px; height: 8px; }
+    *::-webkit-scrollbar-track { background: var(--paper-2); }
+    *::-webkit-scrollbar-thumb {
+      border: 2px solid var(--paper-2);
+      border-radius: 8px;
+      background: var(--rule-solid);
+    }
+    *::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: var(--paper);
+      color: var(--ink);
+      font: 12px/1.5 var(--sans);
+    }
+    button, input { font: inherit; color: inherit; }
+    .eyebrow {
+      margin: 0;
+      color: var(--soft);
+      font: 8px/1.4 var(--mono);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    header {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 8px 16px;
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+    header > div:first-child { min-width: 0; overflow: hidden; }
+    h1 { margin: 0; font: 400 16px/1.2 var(--serif); letter-spacing: -.01em; overflow-wrap: anywhere; }
+    .head-right { display: flex; align-items: center; gap: 16px; }
+    .meta { display: flex; gap: 16px; color: var(--muted); white-space: nowrap; }
+    .meta div { font: 8px/1.4 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--soft); }
+    .meta strong { display: block; margin-top: 2px; color: var(--ink); font: 400 12px/1.3 var(--mono); letter-spacing: 0; text-transform: none; }
+    #theme-toggle {
+      height: 24px;
+      padding: 0 8px;
+      border: 1px solid var(--rule-solid);
+      border-radius: 4px;
+      background: transparent;
+      cursor: pointer;
+      font: 8px/1 var(--mono);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    #theme-toggle:hover, #theme-toggle:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+
+    main { height: calc(100vh - 64px); display: grid; grid-template-columns: 248px minmax(0, 1fr) 280px; }
+    aside { min-width: 0; overflow: auto; background: var(--paper-2); }
+    .left { border-right: 1px solid var(--rule); padding: 16px 12px; }
+    .right { border-left: 1px solid var(--rule); padding: 16px; }
+    .section { margin-bottom: 20px; }
+    .section-title { margin: 0 0 8px; color: var(--soft); font: 8px/1.4 var(--mono); letter-spacing: .18em; text-transform: uppercase; }
+    input[type="search"] {
+      width: 100%;
+      height: 32px;
+      padding: 0 8px;
+      border: 1px solid var(--rule-solid);
+      border-radius: 4px;
+      outline: none;
+      background: var(--paper);
+      font-family: var(--mono);
+    }
+    input[type="search"]:focus { border-color: var(--accent); }
+    .filter, .legend-row { display: flex; align-items: center; gap: 8px; min-height: 24px; }
+    .filter { cursor: pointer; }
+    /* Accent stays reserved for focal signals in the map, so controls use ink. */
+    .filter input { accent-color: var(--ink); width: 13px; height: 13px; margin: 0; }
+    .filter code, .legend-row code { font: 8px/1 var(--mono); letter-spacing: .1em; color: var(--soft); }
+    .type-key { width: 32px; flex: 0 0 auto; color: var(--muted); font: 8px/1 var(--mono); letter-spacing: .08em; }
+    .boundary-chip { width: 16px; height: 12px; flex: 0 0 auto; border: 1px solid var(--group-color); border-radius: 2px; background: color-mix(in srgb, var(--group-color) 14%, var(--paper)); }
+    .edge-key { position: relative; width: 20px; height: 8px; flex: 0 0 auto; color: var(--edge-color); }
+    .edge-key::before { content: ""; position: absolute; top: 3px; left: 0; width: 15px; border-top: 2px solid currentColor; }
+    .edge-key::after { content: ""; position: absolute; top: 1px; right: 0; border-top: 3px solid transparent; border-bottom: 3px solid transparent; border-left: 5px solid currentColor; }
+    .rule-chip { width: 16px; height: 0; flex: 0 0 auto; border-top: 2px solid var(--connector); }
+    .rule-chip[data-state="selected"] { border-top-color: var(--accent); }
+    .rule-chip[data-state="callers"] { border-top-color: var(--link); }
+    .rule-chip[data-state="dependencies"] { border-top-color: var(--ink); }
+    .rule-chip[data-state="flow"] { border-top-color: var(--accent); }
+    .rule-chip[data-state="unknown"] { border-top-style: dashed; border-top-color: var(--accent); }
+    .flow-button {
+      width: 100%;
+      margin: 0 0 8px;
+      padding: 8px;
+      border: 1px solid var(--rule-solid);
+      border-radius: 4px;
+      background: var(--paper);
+      text-align: left;
+      cursor: pointer;
+    }
+    .flow-button:hover, .flow-button:focus-visible { border-color: var(--accent); outline: none; }
+    .flow-button.active { border-color: var(--accent); background: var(--accent-tint); }
+    .flow-button.related { border-color: var(--link); }
+    .flow-button small { display: block; margin-top: 4px; color: var(--muted); font: 8px/1.5 var(--mono); }
+
+    .map-shell { position: relative; min-width: 0; overflow: hidden; background: var(--paper); }
+    .toolbar {
+      position: absolute;
+      z-index: 4;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      gap: 4px;
+      padding: 4px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      background: var(--paper);
+    }
+    .toolbar button {
+      min-width: 28px;
+      height: 24px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background: transparent;
+      cursor: pointer;
+      font: 8px/1 var(--mono);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .toolbar button:hover, .toolbar button:focus-visible { border-color: var(--accent); color: var(--accent); outline: none; }
+    #map-svg { width: 100%; height: 100%; display: block; touch-action: none; }
+    .map-bg { fill: transparent; }
+
+    #arrow-muted path { fill: var(--connector); }
+    #arrow-ink path { fill: var(--ink); }
+    #arrow-link path { fill: var(--link); }
+    #arrow-accent path { fill: var(--accent); }
+    #arrow-soft path { fill: var(--connector-dim); }
+    #arrow-imports path { fill: var(--edge-imports); }
+    #arrow-calls path { fill: var(--edge-calls); }
+    #arrow-reads path { fill: var(--edge-reads); }
+    #arrow-writes path { fill: var(--edge-writes); }
+    #arrow-publishes path { fill: var(--edge-publishes); }
+    #arrow-subscribes path { fill: var(--edge-subscribes); }
+    #arrow-unknown path { fill: var(--edge-unknown); }
+
+    .zone { fill: var(--wash-2); fill: color-mix(in srgb, var(--group-color) 4%, var(--paper)); stroke: color-mix(in srgb, var(--group-color) 38%, transparent); stroke-width: 1; }
+    .zone-mask { fill: var(--paper); }
+    .zone-label { fill: var(--group-color); font: 700 9px var(--mono); letter-spacing: .14em; text-transform: uppercase; }
+
+    [data-edge-type="imports"] { --edge-color: var(--edge-imports); }
+    [data-edge-type="calls"] { --edge-color: var(--edge-calls); }
+    [data-edge-type="reads"] { --edge-color: var(--edge-reads); }
+    [data-edge-type="writes"] { --edge-color: var(--edge-writes); }
+    [data-edge-type="publishes"] { --edge-color: var(--edge-publishes); }
+    [data-edge-type="subscribes"] { --edge-color: var(--edge-subscribes); }
+    .edge { fill: none; stroke: var(--edge-color, var(--connector)); stroke-width: 1.75; marker-end: url(#arrow-muted); }
+    .edge[data-edge-type="imports"] { marker-end: url(#arrow-imports); }
+    .edge[data-edge-type="calls"] { marker-end: url(#arrow-calls); }
+    .edge[data-edge-type="reads"] { marker-end: url(#arrow-reads); }
+    .edge[data-edge-type="writes"] { marker-end: url(#arrow-writes); }
+    .edge[data-edge-type="publishes"] { marker-end: url(#arrow-publishes); }
+    .edge[data-edge-type="subscribes"] { marker-end: url(#arrow-subscribes); }
+    .edge.unknown { --edge-color: var(--edge-unknown); stroke-width: 2; stroke-dasharray: 4 3; marker-end: url(#arrow-unknown); }
+    .edge.up { --edge-color: var(--link); stroke-width: 2; marker-end: url(#arrow-link); }
+    .edge.down { --edge-color: var(--ink); stroke-width: 2; marker-end: url(#arrow-ink); }
+    .edge.up.down { --edge-color: var(--link); stroke-width: 2; marker-end: url(#arrow-link); }
+    .edge.flow { --edge-color: var(--accent); stroke-width: 2; marker-end: url(#arrow-accent); }
+    .edge.dim { --edge-color: var(--connector-dim); stroke-width: 1.25; opacity: .48; marker-end: url(#arrow-soft); }
+    .edge-mask { fill: var(--paper); }
+    .edge-label { fill: var(--edge-color, var(--connector)); font: 700 8px var(--mono); letter-spacing: .06em; }
+
+    .node { cursor: grab; outline: none; --stroke: var(--group-color, var(--ink)); --fill: var(--node-paper); --dash: none; }
+    .node:active { cursor: grabbing; }
+    .node.up { --stroke: var(--link); }
+    .node.down { --stroke: var(--ink); }
+    .node.flow, .node.match, .node.focus { --stroke: var(--accent); --fill: var(--accent-tint); }
+    .node .box { fill: var(--fill); fill: color-mix(in srgb, var(--group-color) 10%, var(--node-paper)); stroke: var(--stroke); stroke-width: 1.25; stroke-dasharray: var(--dash); }
+    .node.flow .box, .node.match .box, .node.focus .box { fill: var(--fill); }
+    .node .group-rail { fill: var(--group-color); }
+    .node.focus .box { stroke-width: 2; }
+    .node.up .box, .node.down .box, .node.flow .box, .node.match .box { stroke-width: 1.2; }
+    .node .tag { fill: color-mix(in srgb, var(--group-color) 14%, var(--node-paper)); stroke: var(--group-color); stroke-width: .8; }
+    .node .tag-text { fill: var(--group-color); font: 700 8px var(--mono); letter-spacing: .08em; }
+    .node .node-title { fill: var(--ink); font: 600 12px var(--sans); }
+    .node .node-path { fill: var(--muted); font: 8px var(--mono); }
+    .node:focus-visible .box { stroke: var(--accent); stroke-width: 2; }
+    .node.dim { opacity: .28; }
+
+    .empty { color: var(--muted); }
+    .detail-title { margin: 0 0 4px; font: 400 16px/1.3 var(--serif); overflow-wrap: anywhere; }
+    .detail-path { margin: 0 0 16px; color: var(--muted); font-family: var(--mono); overflow-wrap: anywhere; }
+    .detail-block { margin: 0 0 16px; }
+    .detail-block h3 { margin: 0 0 4px; color: var(--soft); font: 8px var(--mono); letter-spacing: .18em; text-transform: uppercase; }
+    .detail-block p { margin: 0; }
+    .detail-block ul { margin: 0; padding-left: 16px; }
+    .detail-block li { overflow-wrap: anywhere; }
+    .detail-block code, .detail-block li { font-family: var(--mono); }
+    .detail-boundary { color: var(--group-color); }
+    .test-list { padding: 8px; border: 1px solid var(--rule-solid); border-radius: 4px; background: var(--paper); }
+    .badge {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 0 4px;
+      border: 1px solid var(--rule-solid);
+      border-radius: 2px;
+      color: var(--soft);
+      font: 8px/16px var(--mono);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .status-line {
+      position: absolute;
+      left: 12px;
+      bottom: 12px;
+      padding: 4px 8px;
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      color: var(--muted);
+      background: var(--paper);
+      font: 8px/1.4 var(--mono);
+      letter-spacing: .06em;
+      pointer-events: none;
+    }
+
+    @media (max-width: 900px) {
+      main { grid-template-columns: 200px minmax(0, 1fr); }
+      .right { display: none; }
+      .right:not(:has(> .empty)) {
         display: block;
-        color: var(--text);
-        font-weight: 600;
+        position: fixed;
+        z-index: 8;
+        top: 72px;
+        right: 8px;
+        bottom: 8px;
+        width: min(280px, calc(100vw - 216px));
+        border: 1px solid var(--rule-solid);
+        border-radius: 4px;
       }
+      .meta { gap: 8px; }
+    }
+    @media (max-width: 600px) {
+      body { height: auto; min-height: 100vh; overflow: auto; }
+      header { height: 64px; gap: 8px; padding-inline: 8px; }
+      .meta div:first-child, .meta div:last-child { display: none; }
       main {
-        height: calc(100vh - 64px);
-        display: grid;
-        grid-template-columns: 248px minmax(0, 1fr) 280px;
+        height: auto;
+        min-height: calc(100vh - 64px);
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: calc(100vh - 64px) auto;
       }
-      aside {
-        min-width: 0;
-        overflow: auto;
-        background: var(--panel);
-      }
-      .left {
-        border-right: 1px solid var(--line);
-        padding: 12px;
-      }
-      .right {
-        border-left: 1px solid var(--line);
-        padding: 14px;
-      }
-      .section {
-        margin-bottom: 18px;
-      }
-      .section-title {
-        margin: 0 0 8px;
-        color: var(--muted);
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-      input[type='search'] {
-        width: 100%;
-        height: 32px;
-        padding: 0 10px;
-        border: 1px solid var(--line);
-        border-radius: 5px;
-        outline: none;
-        background: #0b1017;
-        color: var(--text);
-      }
-      input[type='search']:focus {
-        border-color: var(--accent);
-      }
-      .filter,
-      .legend-row {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        min-height: 26px;
-      }
-      .filter input {
-        accent-color: var(--accent);
-      }
-      .swatch {
-        width: 9px;
-        height: 9px;
-        border-radius: 50%;
-        flex: 0 0 auto;
-      }
-      .flow-button {
-        width: 100%;
-        margin: 0 0 6px;
-        padding: 8px;
-        border: 1px solid var(--line);
-        border-radius: 5px;
-        background: var(--panel-2);
-        text-align: left;
-        cursor: pointer;
-      }
-      .flow-button:hover,
-      .flow-button:focus-visible {
-        border-color: var(--flow);
-        outline: none;
-      }
-      .flow-button.active {
-        border-color: var(--flow);
-        box-shadow: 0 0 0 1px var(--flow) inset;
-      }
-      .flow-button.related {
-        color: #f0dcff;
-      }
-      .flow-button small {
-        display: block;
-        margin-top: 3px;
-        color: var(--muted);
-      }
-      .map-shell {
-        position: relative;
-        min-width: 0;
-        overflow: hidden;
-      }
-      .toolbar {
-        position: absolute;
-        z-index: 4;
-        top: 10px;
-        right: 10px;
-        display: flex;
-        gap: 5px;
-        padding: 5px;
-        border: 1px solid var(--line);
-        border-radius: 6px;
-        background: rgba(16, 21, 29, 0.92);
-        backdrop-filter: blur(8px);
-      }
-      .toolbar button {
-        min-width: 29px;
-        height: 28px;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        background: #1a2330;
-        cursor: pointer;
-      }
-      .toolbar button:hover,
-      .toolbar button:focus-visible {
-        border-color: var(--accent);
-        outline: none;
-      }
-      #map-svg {
-        width: 100%;
-        height: 100%;
-        display: block;
-        background: #090d13;
-        touch-action: none;
-      }
-      .map-bg {
-        fill: transparent;
-      }
-      .boundary {
-        fill: rgba(255, 255, 255, 0.018);
-        stroke: #384557;
-        stroke-width: 1;
-        stroke-dasharray: 5 5;
-      }
-      .boundary-label {
-        fill: #69788d;
-        font-size: 10px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      .edge {
-        fill: none;
-        stroke: #526176;
-        stroke-width: 1.35;
-        opacity: 0.72;
-        marker-end: url(#arrow);
-      }
-      .edge.unknown {
-        stroke: var(--danger);
-        stroke-dasharray: 4 5;
-        opacity: 0.8;
-      }
-      .edge.dim {
-        opacity: 0.1;
-      }
-      .edge.up {
-        stroke: var(--up);
-        stroke-width: 2.4;
-        opacity: 1;
-      }
-      .edge.down {
-        stroke: var(--down);
-        stroke-width: 2.4;
-        opacity: 1;
-      }
-      .edge.up.down {
-        stroke: url(#up-down);
-        stroke-width: 2.7;
-      }
-      .edge.flow {
-        stroke: var(--flow);
-        stroke-width: 2.8;
-        opacity: 1;
-      }
-      .edge-label {
-        fill: #9caabd;
-        font-size: 9px;
-        paint-order: stroke;
-        stroke: #090d13;
-        stroke-width: 4px;
-        stroke-linejoin: round;
-      }
-      .edge-label.dim {
-        opacity: 0.12;
-      }
-      .node {
-        cursor: grab;
-        outline: none;
-      }
-      .node:active {
-        cursor: grabbing;
-      }
-      .node rect {
-        fill: #141b25;
-        stroke: var(--node-color);
-        stroke-width: 1.4;
-        rx: 7;
-      }
-      .node .type-bar {
-        fill: var(--node-color);
-        stroke: none;
-        opacity: 0.9;
-      }
-      .node .node-title {
-        fill: var(--text);
-        font-size: 12px;
-        font-weight: 700;
-      }
-      .node .node-path {
-        fill: var(--muted);
-        font-size: 9px;
-      }
-      .node.dim {
-        opacity: 0.16;
-      }
-      .node.focus rect {
-        stroke-width: 3;
-        filter: drop-shadow(0 0 6px var(--node-color));
-      }
-      .node.up rect {
-        stroke: var(--up);
-        stroke-width: 2.5;
-      }
-      .node.down rect {
-        stroke: var(--down);
-        stroke-width: 2.5;
-      }
-      .node.up.down rect {
-        stroke: url(#up-down);
-        stroke-width: 2.7;
-        stroke-dasharray: 8 3;
-      }
-      .node.flow rect {
-        stroke: var(--flow);
-        stroke-width: 2.7;
-      }
-      .node.match rect {
-        stroke: var(--accent);
-        stroke-width: 2.7;
-      }
-      .empty {
-        color: var(--muted);
-      }
-      .detail-title {
-        margin: 0 0 4px;
-        font-size: 15px;
-      }
-      .detail-path {
-        margin: 0 0 14px;
-        color: var(--muted);
-        overflow-wrap: anywhere;
-      }
-      .detail-block {
-        margin: 0 0 15px;
-      }
-      .detail-block h3 {
-        margin: 0 0 5px;
-        color: var(--muted);
-        font-size: 10px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-      }
-      .detail-block p {
-        margin: 0;
-      }
-      .detail-block ul {
-        margin: 0;
-        padding-left: 17px;
-      }
-      .test-list {
-        padding: 8px 10px;
-        border: 1px solid var(--flow);
-        border-radius: 5px;
-        background: rgba(209, 156, 255, 0.06);
-      }
-      .badge {
-        display: inline-block;
-        padding: 2px 6px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        color: var(--muted);
-      }
-      .status-line {
-        position: absolute;
-        left: 10px;
-        bottom: 10px;
-        padding: 5px 8px;
-        border: 1px solid var(--line);
-        border-radius: 4px;
-        color: var(--muted);
-        background: rgba(16, 21, 29, 0.88);
-        pointer-events: none;
-      }
-      @media (max-width: 900px) {
-        main {
-          grid-template-columns: 200px minmax(0, 1fr);
-        }
-        .right {
-          display: none;
-        }
-        .right:not(:has(> .empty)) {
-          display: block;
-          position: fixed;
-          z-index: 8;
-          top: 72px;
-          right: 8px;
-          bottom: 8px;
-          width: min(280px, calc(100vw - 216px));
-          border: 1px solid var(--line);
-          border-radius: 7px;
-          box-shadow: 0 18px 60px rgba(0, 0, 0, 0.48);
-        }
-        .meta {
-          gap: 8px;
-          font-size: 10px;
-        }
-      }
-      @media (max-width: 600px) {
-        body {
-          height: auto;
-          min-height: 100vh;
-          overflow: auto;
-        }
-        header {
-          height: 64px;
-          gap: 8px;
-          padding-inline: 10px;
-        }
-        .badge,
-        .meta div:last-child {
-          display: none;
-        }
-        main {
-          height: auto;
-          min-height: calc(100vh - 64px);
-          grid-template-columns: minmax(0, 1fr);
-          grid-template-rows: calc(100vh - 64px) auto;
-        }
-        .map-shell {
-          grid-row: 1;
-          min-height: 520px;
-        }
-        .left {
-          grid-row: 2;
-          border-top: 1px solid var(--line);
-          border-right: 0;
-        }
-        .right:not(:has(> .empty)) {
-          top: auto;
-          left: 8px;
-          width: auto;
-          max-height: 65vh;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div>
-        <h1 id="repo-name">codex-studio</h1>
-        <span class="badge">interactive code map</span>
-      </div>
+      .map-shell { grid-row: 1; min-height: 520px; }
+      .left { grid-row: 2; border-top: 1px solid var(--rule); border-right: 0; }
+      .right:not(:has(> .empty)) { top: auto; left: 8px; width: auto; max-height: 65vh; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Interactive code map</p>
+      <h1 id="repo-name">codex-studio</h1>
+    </div>
+    <div class="head-right">
       <div class="meta">
         <div>Generated<strong id="generated-at"></strong></div>
         <div>Commit<strong id="generated-commit"></strong></div>
         <div>Scope<strong id="scope"></strong></div>
       </div>
-    </header>
-    <main>
-      <aside class="left">
-        <div class="section">
-          <h2 class="section-title">Search</h2>
-          <input
-            id="search"
-            type="search"
-            placeholder="module, path, role"
-            aria-label="Search modules"
-            autocomplete="off"
-          />
-        </div>
-        <div class="section">
-          <h2 class="section-title">Module types</h2>
-          <div id="type-filters"></div>
-        </div>
-        <div class="section">
-          <h2 class="section-title">Legend</h2>
-          <div id="legend"></div>
-        </div>
-        <div class="section">
-          <h2 class="section-title">End-to-end flows</h2>
-          <div id="flow-list"></div>
-        </div>
-      </aside>
-      <section class="map-shell" aria-label="Code map canvas">
-        <div class="toolbar" aria-label="Map controls">
-          <button id="zoom-out" type="button" title="Zoom out">−</button>
-          <button id="fit" type="button" title="Fit map">Fit</button>
-          <button id="zoom-in" type="button" title="Zoom in">+</button>
-        </div>
-        <svg id="map-svg" role="img" aria-label="Interactive module dependency map">
-          <defs>
-            <linearGradient id="up-down" x1="0%" x2="100%">
-              <stop offset="0" stop-color="#f5c76a"></stop>
-              <stop offset="1" stop-color="#72e0a4"></stop>
-            </linearGradient>
-            <marker
-              id="arrow"
-              viewBox="0 0 10 10"
-              refX="9"
-              refY="5"
-              markerWidth="6"
-              markerHeight="6"
-              orient="auto-start-reverse"
-            >
-              <path d="M 0 0 L 10 5 L 0 10 z" fill="#64738a"></path>
-            </marker>
-          </defs>
-          <rect class="map-bg" width="100%" height="100%"></rect>
-          <g id="viewport"></g>
-        </svg>
-        <div id="status" class="status-line"></div>
-      </section>
-      <aside class="right" id="details">
-        <p class="empty">
-          Select a module to inspect its role, evidence, callers, dependencies, tests, and flows.
-        </p>
-      </aside>
-    </main>
-    <script id="codemap-data" type="application/json">
-      {
-        "generated_at": "2026-08-09T07:35:06Z",
-        "generated_from_commit": "0f9b1c71a33fdb5e27aa1804b3f48fb286016f67",
-        "scope": ["."],
-        "nodes": [
-          {
-            "id": "studio-shell",
-            "path": "hooks/useStudioShell.ts",
-            "role": "Composes the product shell, command center, recipe viewport, generation dock, and demand-mounted overlays.",
-            "type": "interface",
-            "boundary": "React product shell",
-            "entrypoints": ["hooks/useStudioShell.ts:useStudioShell"],
-            "tests": ["hooks/useStudioShell.composition.test.ts"],
-            "constraints": [
-              "Keep backend access behind hooks and services; the shell should remain composition-only."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [{ "path": "hooks/useStudioShell.ts", "symbol": "useStudioShell" }]
-            }
-          },
-          {
-            "id": "generation-context",
-            "path": "contexts/GenerationContext.tsx",
-            "role": "Owns the interactive generation state exposed to recipe and shell surfaces.",
-            "type": "module",
-            "boundary": "Frontend generation state",
-            "entrypoints": ["contexts/GenerationContext.tsx:GenerationProvider"],
-            "tests": ["hooks/useGenerationPipeline.test.ts"],
-            "constraints": [
-              "Generation state stays provider-independent and delegates execution to the pipeline hook."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "contexts/GenerationContext.tsx", "symbol": "GenerationProvider" },
-                { "path": "contexts/GenerationContext.tsx", "symbol": "useGenerationPipeline" }
-              ]
-            }
-          },
-          {
-            "id": "generation-pipeline",
-            "path": "hooks/useGenerationPipeline.ts",
-            "role": "Coordinates a user generation request, cancellation, lifecycle state, and result projection.",
-            "type": "service",
-            "boundary": "Frontend orchestration",
-            "entrypoints": ["hooks/useGenerationPipeline.ts:useGenerationPipeline"],
-            "tests": ["hooks/useGenerationPipeline.test.ts"],
-            "constraints": [
-              "Only one lifecycle owner may publish the completion or failure of a run."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "hooks/useGenerationPipeline.ts", "symbol": "useGenerationPipeline" }
-              ]
-            }
-          },
-          {
-            "id": "local-generation-run",
-            "path": "services/localGenerationRun.ts",
-            "role": "Builds provider-independent task input, submits durable jobs, watches completion, and materializes UI results.",
-            "type": "service",
-            "boundary": "Frontend generation domain service",
-            "entrypoints": ["services/localGenerationRun.ts:runLocalGenerationWithLifecycle"],
-            "tests": [
-              "services/localGenerationRun.test.ts",
-              "services/localGenerationRun.stream.test.ts"
-            ],
-            "constraints": [
-              "Job creation and event observation go through the Studio API service seams."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "services/localGenerationRun.ts",
-                  "symbol": "runLocalGenerationWithLifecycle"
-                },
-                {
-                  "path": "services/localGenerationRun.ts",
-                  "symbol": "buildGenerationTaskSpecFromRecipe"
-                }
-              ]
-            }
-          },
-          {
-            "id": "studio-api-client",
-            "path": "services/studio-api",
-            "role": "Provides typed frontend calls for jobs, settings, catalog, workspaces, runtime, and other backend domains.",
-            "type": "interface",
-            "boundary": "Browser-to-local-server HTTP boundary",
-            "entrypoints": [
-              "services/studio-api/jobs.ts:createStudioJob",
-              "services/studio-api/settings.ts:getEditableStudioSettings"
-            ],
-            "tests": ["services/studio-api/api.test.ts"],
-            "constraints": [
-              "Frontend backend calls belong in this domain service directory instead of components."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "services/studio-api/jobs.ts", "symbol": "createStudioJob" },
-                { "path": "services/studio-api/settings.ts", "symbol": "getEditableStudioSettings" }
-              ]
-            }
-          },
-          {
-            "id": "studio-event-client",
-            "path": "services/studioEventSource.ts",
-            "role": "Maintains the reconnecting browser SSE connection and exposes job-oriented event watchers.",
-            "type": "queue",
-            "boundary": "Browser live-event boundary",
-            "entrypoints": [
-              "services/studioEventSource.ts:createStudioEventStream",
-              "services/studioEventSource.ts:watchJob"
-            ],
-            "tests": ["services/studioEventSource.test.ts"],
-            "constraints": [
-              "Reconnects carry the last revision so the UI can reconcile after server restarts."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "services/studioEventSource.ts", "symbol": "createStudioEventStream" },
-                { "path": "services/studioEventSource.ts", "symbol": "/api/events" }
-              ]
-            }
-          },
-          {
-            "id": "local-api",
-            "path": "apps/local-server/src/appFactory.ts",
-            "role": "Builds the Hono application, wires domain routes, and injects runtime, storage, worker, and event dependencies.",
-            "type": "interface",
-            "boundary": "Local HTTP API",
-            "entrypoints": ["apps/local-server/src/appFactory.ts:createStudioApp"],
-            "tests": [
-              "apps/local-server/src/appFactory.test.ts",
-              "apps/local-server/src/jobRoutes.test.ts"
-            ],
-            "constraints": [
-              "Route handlers compose domain services; provider execution remains behind worker adapters."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/appFactory.ts", "symbol": "createStudioApp" }
-              ]
-            }
-          },
-          {
-            "id": "job-intake",
-            "path": "apps/local-server/src/persistentJobIntake.ts",
-            "role": "Validates generation task specs and managed assets, persists a queued job, publishes creation, and enqueues execution.",
-            "type": "service",
-            "boundary": "Durable job admission",
-            "entrypoints": [
-              "apps/local-server/src/persistentJobIntake.ts:createPersistentJobIntake"
-            ],
-            "tests": ["apps/local-server/src/persistentJobIntake.test.ts"],
-            "constraints": ["A job must be durable before it becomes visible to the worker queue."],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/persistentJobIntake.ts",
-                  "symbol": "createPersistentJobIntake"
-                },
-                {
-                  "path": "apps/local-server/src/persistentJobIntake.ts",
-                  "symbol": "validateGenerationTaskSpec"
-                }
-              ]
-            }
-          },
-          {
-            "id": "job-store",
-            "path": "apps/local-server/src/db/jobs.ts",
-            "role": "Persists job contracts, status transitions, finalization state, recovery queries, and summaries.",
-            "type": "database",
-            "boundary": "SQLite job repository",
-            "entrypoints": [
-              "apps/local-server/src/db/jobs.ts:createJob",
-              "apps/local-server/src/db/jobs.ts:listRecoverableJobs"
-            ],
-            "tests": ["apps/local-server/src/db/jobs.test.ts"],
-            "constraints": [
-              "Status and finalization updates must preserve recoverable durable state."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/db/jobs.ts", "symbol": "createJob" },
-                { "path": "apps/local-server/src/db/jobs.ts", "symbol": "listRecoverableJobs" }
-              ]
-            }
-          },
-          {
-            "id": "job-worker",
-            "path": "apps/local-server/src/worker.ts",
-            "role": "Schedules queued jobs, resolves runtime targets, invokes providers, finalizes assets, and publishes lifecycle events.",
-            "type": "queue",
-            "boundary": "Backend execution scheduler",
-            "entrypoints": ["apps/local-server/src/worker.ts:createWorkerController"],
-            "tests": [
-              "apps/local-server/src/worker.test.ts",
-              "apps/local-server/src/workerShutdown.test.ts"
-            ],
-            "constraints": [
-              "Provider concurrency, cancellation, shutdown, and durable finalization remain worker-owned."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/worker.ts", "symbol": "createWorkerController" },
-                {
-                  "path": "apps/local-server/src/worker.ts",
-                  "symbol": "resolveWorkerRuntimeTarget"
-                }
-              ]
-            }
-          },
-          {
-            "id": "provider-adapters",
-            "path": "apps/local-server/src/providers",
-            "role": "Compiles provider-independent task specs into provider inputs and executes Codex or concrete external providers.",
-            "type": "service",
-            "boundary": "Generation provider boundary",
-            "entrypoints": [
-              "apps/local-server/src/providers/codexProvider.ts:createCodexGenerationProvider",
-              "apps/local-server/src/providers/providerInputCompiler.ts:compileGenerationProviderInput"
-            ],
-            "tests": [
-              "apps/local-server/src/providers/codexProvider.test.ts",
-              "apps/local-server/src/providers/providerInputCompiler.test.ts"
-            ],
-            "constraints": [
-              "Task kind remains provider-independent; provider options stay in provider input."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/providers/codexProvider.ts",
-                  "symbol": "createCodexGenerationProvider"
-                },
-                {
-                  "path": "apps/local-server/src/providers/codexProvider.ts",
-                  "symbol": "compileCodexImagegenInput"
-                }
-              ]
-            }
-          },
-          {
-            "id": "codex-runtime",
-            "path": "apps/local-server/src/codex",
-            "role": "Supervises codex app-server, pools image-generation sessions, performs RPC turns, and extracts generated assets.",
-            "type": "external",
-            "boundary": "Local Codex Product Runtime",
-            "entrypoints": [
-              "apps/local-server/src/codex/turn.ts:createCodexTurn",
-              "apps/local-server/src/codex/processSupervisor.ts:ensureAppServer"
-            ],
-            "tests": [
-              "apps/local-server/src/codex/turn.test.ts",
-              "apps/local-server/src/codex/rpcClient.test.ts",
-              "apps/local-server/src/codex/processSupervisor.test.ts"
-            ],
-            "constraints": [
-              "Interactive Codex work uses codex app-server and the user's local ChatGPT session."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/codex/turn.ts", "symbol": "createCodexTurn" },
-                {
-                  "path": "apps/local-server/src/codex/processSupervisor.ts",
-                  "symbol": "app-server"
-                }
-              ]
-            }
-          },
-          {
-            "id": "event-bus",
-            "path": "apps/local-server/src/events.ts",
-            "role": "Assigns monotonic revisions and fans backend domain events out to live subscribers.",
-            "type": "queue",
-            "boundary": "In-process backend events",
-            "entrypoints": [
-              "apps/local-server/src/events.ts:publishEvent",
-              "apps/local-server/src/events.ts:subscribeEvents"
-            ],
-            "tests": ["apps/local-server/src/events.test.ts"],
-            "constraints": ["Every published event carries a revision used by SSE reconciliation."],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/events.ts", "symbol": "publishEvent" },
-                { "path": "apps/local-server/src/events.ts", "symbol": "subscribeEvents" }
-              ]
-            }
-          },
-          {
-            "id": "event-stream",
-            "path": "apps/local-server/src/eventStreamRoutes.ts",
-            "role": "Exposes revision-aware SSE events with keepalive, backpressure, abort, and reconnect reconciliation.",
-            "type": "interface",
-            "boundary": "Backend-to-browser SSE boundary",
-            "entrypoints": ["apps/local-server/src/eventStreamRoutes.ts:createEventStreamRoutes"],
-            "tests": ["apps/local-server/src/eventStreamRoutes.test.ts"],
-            "constraints": [
-              "Slow clients are aborted before pending writes can grow without bound."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/eventStreamRoutes.ts",
-                  "symbol": "createEventStreamRoutes"
-                },
-                {
-                  "path": "apps/local-server/src/eventStreamRoutes.ts",
-                  "symbol": "EVENT_STREAM_MAX_PENDING_WRITES"
-                }
-              ]
-            }
-          },
-          {
-            "id": "local-studio-sync",
-            "path": "hooks/useLocalStudioSync.ts",
-            "role": "Projects backend jobs and live events into frontend activity state and targeted refreshes.",
-            "type": "service",
-            "boundary": "Frontend runtime synchronization",
-            "entrypoints": ["hooks/useLocalStudioSync.ts:useLocalStudioSync"],
-            "tests": [
-              "hooks/localStudioSyncProjection.test.ts",
-              "hooks/localStudioSyncRefreshPolicy.test.ts"
-            ],
-            "constraints": ["Reconnect and terminal events reconcile from durable server truth."],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "hooks/useLocalStudioSync.ts", "symbol": "useLocalStudioSync" },
-                { "path": "hooks/useLocalStudioSync.ts", "symbol": "createStudioEventStream" }
-              ]
-            }
-          },
-          {
-            "id": "catalog",
-            "path": "apps/local-server/src/catalog.ts",
-            "role": "Maintains durable Catalog Entry image truth, pagination, favorites, trash, and asset registration.",
-            "type": "database",
-            "boundary": "Catalog repository and managed-asset policy",
-            "entrypoints": [
-              "apps/local-server/src/catalog.ts:registerCatalogImage",
-              "apps/local-server/src/catalog.ts:queryCatalog"
-            ],
-            "tests": ["apps/local-server/src/catalog.test.ts"],
-            "constraints": [
-              "Durable and UI image truth is Catalog Entry; legacy snapshots remain export-only."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/catalog.ts", "symbol": "registerCatalogImage" },
-                { "path": "apps/local-server/src/catalog.ts", "symbol": "queryCatalog" }
-              ]
-            }
-          },
-          {
-            "id": "sqlite",
-            "path": "apps/local-server/src/db",
-            "role": "Owns the local SQLite connection, schema migrations, foreign-key integrity, and table repositories.",
-            "type": "database",
-            "boundary": "Durable local relational state",
-            "entrypoints": [
-              "apps/local-server/src/db/connection.ts:getDb",
-              "apps/local-server/src/db/migrations.ts:migrateDatabase"
-            ],
-            "tests": [
-              "apps/local-server/src/db/migrations.test.ts",
-              "apps/local-server/src/db/jobs.test.ts"
-            ],
-            "constraints": [
-              "Foreign keys remain enabled in normal operation and migrations must finish with a clean foreign_key_check."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/db/connection.ts", "symbol": "getDb" },
-                { "path": "apps/local-server/src/db/migrations.ts", "symbol": "foreign_key_check" }
-              ]
-            }
-          },
-          {
-            "id": "studio-library",
-            "path": "apps/local-server/src/library.ts",
-            "role": "Resolves the app-owned Studio Library and its assets, outputs, transcripts, logs, state, and trash folders.",
-            "type": "database",
-            "boundary": "App-owned local filesystem",
-            "entrypoints": [
-              "apps/local-server/src/library.ts:ensureLibrary",
-              "apps/local-server/src/library.ts:resolveLibraryPath"
-            ],
-            "tests": ["apps/local-server/src/library.test.ts"],
-            "constraints": [
-              "Never rewrite or delete Studio Library data without explicit user authorization."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/library.ts", "symbol": "ensureLibrary" },
-                { "path": "apps/local-server/src/library.ts", "symbol": "resolveLibraryPath" }
-              ]
-            }
-          },
-          {
-            "id": "shared-contracts",
-            "path": "packages/shared/src",
-            "role": "Defines provider-independent generation tasks, jobs, settings, workspaces, events, and transport contracts shared by UI and backend.",
-            "type": "interface",
-            "boundary": "Cross-runtime domain contracts",
-            "entrypoints": [
-              "packages/shared/src/generationContracts.ts:createGenerationTaskSpec",
-              "packages/shared/src/generationContracts.ts:GenerationTaskSpec"
-            ],
-            "tests": ["packages/shared/src/generationContracts.test.ts"],
-            "constraints": [
-              "Shared contracts are provider-independent and must remain serializable across the HTTP boundary."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "packages/shared/src/generationContracts.ts",
-                  "symbol": "createGenerationTaskSpec"
-                },
-                {
-                  "path": "packages/shared/src/generationContracts.ts",
-                  "symbol": "GenerationTaskSpec"
-                }
-              ]
-            }
-          },
-          {
-            "id": "settings-store",
-            "path": "apps/local-server/src/studioSettingsStore.ts",
-            "role": "Normalizes, reads, merges, and persists editable Studio Settings without mixing bootstrap configuration or provider secrets.",
-            "type": "database",
-            "boundary": "SQLite-backed editable preferences",
-            "entrypoints": [
-              "apps/local-server/src/studioSettingsStore.ts:readEditableStudioSettings",
-              "apps/local-server/src/studioSettingsStore.ts:updateEditableStudioSettings"
-            ],
-            "tests": [
-              "apps/local-server/src/studioSettingsStore.test.ts",
-              "apps/local-server/src/settingsRoutes.test.ts"
-            ],
-            "constraints": [
-              "Provider secrets and bootstrap configuration never enter SQLite-backed Studio Settings."
-            ],
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/studioSettingsStore.ts",
-                  "symbol": "readEditableStudioSettings"
-                },
-                {
-                  "path": "apps/local-server/src/studioSettingsStore.ts",
-                  "symbol": "updateEditableStudioSettings"
-                }
-              ]
-            }
-          }
-        ],
-        "edges": [
-          {
-            "from": "generation-context",
-            "to": "generation-pipeline",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "contexts/GenerationContext.tsx", "symbol": "useGenerationPipeline" }
-              ]
-            }
-          },
-          {
-            "from": "generation-pipeline",
-            "to": "local-generation-run",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "hooks/useGenerationPipeline.ts",
-                  "symbol": "runLocalGenerationWithLifecycle"
-                }
-              ]
-            }
-          },
-          {
-            "from": "local-generation-run",
-            "to": "studio-api-client",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "services/localGenerationRun.ts", "symbol": "createStudioJob" }
-              ]
-            }
-          },
-          {
-            "from": "local-generation-run",
-            "to": "studio-event-client",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "services/localGenerationRun.ts", "symbol": "createStudioEventStream" }
-              ]
-            }
-          },
-          {
-            "from": "local-generation-run",
-            "to": "shared-contracts",
-            "type": "imports",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "services/localGenerationRun.ts", "symbol": "GenerationProviderId" }
-              ]
-            }
-          },
-          {
-            "from": "studio-api-client",
-            "to": "local-api",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "services/studio-api/jobs.ts", "symbol": "/api/jobs" },
-                { "path": "services/studio-api/settings.ts", "symbol": "/api/settings" }
-              ]
-            }
-          },
-          {
-            "from": "local-api",
-            "to": "job-intake",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/jobRoutes.ts",
-                  "symbol": "createPersistentJobIntake"
-                }
-              ]
-            }
-          },
-          {
-            "from": "local-api",
-            "to": "job-worker",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/appFactory.ts",
-                  "symbol": "createWorkerController"
-                }
-              ]
-            }
-          },
-          {
-            "from": "local-api",
-            "to": "settings-store",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/appFactory.ts",
-                  "symbol": "readEditableStudioSettings"
-                },
-                {
-                  "path": "apps/local-server/src/appFactory.ts",
-                  "symbol": "updateEditableStudioSettings"
-                }
-              ]
-            }
-          },
-          {
-            "from": "local-api",
-            "to": "event-stream",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/appFactory.ts",
-                  "symbol": "createEventStreamRoutes"
-                }
-              ]
-            }
-          },
-          {
-            "from": "job-intake",
-            "to": "shared-contracts",
-            "type": "imports",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/persistentJobIntake.ts",
-                  "symbol": "validateGenerationTaskSpec"
-                }
-              ]
-            }
-          },
-          {
-            "from": "job-intake",
-            "to": "job-store",
-            "type": "writes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/persistentJobIntake.ts", "symbol": "createJob" }
-              ]
-            }
-          },
-          {
-            "from": "job-intake",
-            "to": "job-worker",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/persistentJobIntake.ts", "symbol": "enqueueJob" }
-              ]
-            }
-          },
-          {
-            "from": "job-store",
-            "to": "sqlite",
-            "type": "writes",
-            "evidence": {
-              "status": "verified",
-              "locations": [{ "path": "apps/local-server/src/db/jobs.ts", "symbol": "getDb" }]
-            }
-          },
-          {
-            "from": "job-worker",
-            "to": "job-store",
-            "type": "reads",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/worker.ts", "symbol": "getJob" },
-                { "path": "apps/local-server/src/worker.ts", "symbol": "updateJobStatus" }
-              ]
-            }
-          },
-          {
-            "from": "job-worker",
-            "to": "provider-adapters",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/worker.ts",
-                  "symbol": "createCodexGenerationProvider"
-                },
-                {
-                  "path": "apps/local-server/src/worker.ts",
-                  "symbol": "codexGenerationProvider.run"
-                }
-              ]
-            }
-          },
-          {
-            "from": "provider-adapters",
-            "to": "codex-runtime",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/providers/codexProvider.ts",
-                  "symbol": "turn.runTurn"
-                }
-              ]
-            }
-          },
-          {
-            "from": "codex-runtime",
-            "to": "studio-library",
-            "type": "writes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/codex/turn.ts", "symbol": "resolveLibraryPath" },
-                {
-                  "path": "apps/local-server/src/codex/processSupervisor.ts",
-                  "symbol": "app-server.log"
-                }
-              ]
-            }
-          },
-          {
-            "from": "job-worker",
-            "to": "catalog",
-            "type": "writes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/worker.ts", "symbol": "registerCatalogImage" }
-              ]
-            }
-          },
-          {
-            "from": "job-worker",
-            "to": "studio-library",
-            "type": "writes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/worker.ts", "symbol": "resolveLibraryPath" }
-              ]
-            }
-          },
-          {
-            "from": "job-worker",
-            "to": "event-bus",
-            "type": "publishes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/worker.ts", "symbol": "publishEventFn" }
-              ]
-            }
-          },
-          {
-            "from": "catalog",
-            "to": "sqlite",
-            "type": "writes",
-            "evidence": {
-              "status": "verified",
-              "locations": [{ "path": "apps/local-server/src/catalog.ts", "symbol": "getDb" }]
-            }
-          },
-          {
-            "from": "catalog",
-            "to": "studio-library",
-            "type": "writes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/catalog.ts",
-                  "symbol": "resolveLibraryPathFromRoot"
-                }
-              ]
-            }
-          },
-          {
-            "from": "event-bus",
-            "to": "event-stream",
-            "type": "publishes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/eventStreamRoutes.ts",
-                  "symbol": "subscribeEvents"
-                }
-              ]
-            }
-          },
-          {
-            "from": "event-stream",
-            "to": "studio-event-client",
-            "type": "publishes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/eventStreamRoutes.ts", "symbol": "streamSSE" },
-                { "path": "services/studioEventSource.ts", "symbol": "/api/events" }
-              ]
-            }
-          },
-          {
-            "from": "studio-event-client",
-            "to": "local-studio-sync",
-            "type": "publishes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "hooks/useLocalStudioSync.ts", "symbol": "createStudioEventStream" }
-              ]
-            }
-          },
-          {
-            "from": "local-studio-sync",
-            "to": "studio-shell",
-            "type": "publishes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "hooks/useStudioRuntime.ts", "symbol": "useLocalStudioSync" },
-                { "path": "hooks/useStudioShell.ts", "symbol": "useStudioRuntime" }
-              ]
-            }
-          },
-          {
-            "from": "studio-shell",
-            "to": "studio-api-client",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "hooks/useStudioShell.ts", "symbol": "useStudioSettings" },
-                { "path": "hooks/useStudioSettings.ts", "symbol": "updateEditableStudioSettings" }
-              ]
-            }
-          },
-          {
-            "from": "settings-store",
-            "to": "sqlite",
-            "type": "writes",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                {
-                  "path": "apps/local-server/src/studioSettingsStore.ts",
-                  "symbol": "storage.setSetting"
-                },
-                { "path": "apps/local-server/src/db/settings.ts", "symbol": "setSettingValue" }
-              ]
-            }
-          },
-          {
-            "from": "sqlite",
-            "to": "studio-library",
-            "type": "calls",
-            "evidence": {
-              "status": "verified",
-              "locations": [
-                { "path": "apps/local-server/src/db/connection.ts", "symbol": "resolveLibraryPath" }
-              ]
-            }
-          }
-        ],
-        "flows": [
-          {
-            "trigger": "A user starts an image generation from a recipe surface.",
-            "steps": [
-              "generation-context",
-              "generation-pipeline",
-              "local-generation-run",
-              "studio-api-client",
-              "local-api",
-              "job-intake",
-              "job-worker",
-              "provider-adapters",
-              "codex-runtime"
-            ],
-            "outcome": "The validated task runs through the selected provider while the durable job remains the source of lifecycle truth."
-          },
-          {
-            "trigger": "The local API accepts a valid Generation Task Spec.",
-            "steps": ["job-intake", "job-store", "sqlite"],
-            "outcome": "The queued job is committed to SQLite before worker execution is exposed."
-          },
-          {
-            "trigger": "A provider returns a generated asset.",
-            "steps": ["job-worker", "catalog", "sqlite"],
-            "outcome": "Finalization records durable Catalog Entry truth and preserves recoverable job state."
-          },
-          {
-            "trigger": "The worker publishes a job lifecycle change.",
-            "steps": [
-              "job-worker",
-              "event-bus",
-              "event-stream",
-              "studio-event-client",
-              "local-studio-sync",
-              "studio-shell"
-            ],
-            "outcome": "The shell reconciles live activity from revision-aware events and durable backend state."
-          },
-          {
-            "trigger": "A user changes an editable Studio Setting.",
-            "steps": ["studio-shell", "studio-api-client", "local-api", "settings-store", "sqlite"],
-            "outcome": "The normalized preference is stored in SQLite without mixing provider secrets or bootstrap configuration."
-          }
-        ]
+      <button id="theme-toggle" type="button" aria-pressed="false">Dark</button>
+    </div>
+  </header>
+  <main>
+    <aside class="left">
+      <div class="section">
+        <h2 class="section-title">Search</h2>
+        <input id="search" type="search" placeholder="module, path, role" aria-label="Search modules" autocomplete="off">
+      </div>
+      <div class="section">
+        <h2 class="section-title">Module types</h2>
+        <div id="type-filters"></div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Boundaries</h2>
+        <div id="boundary-legend"></div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">Connection types</h2>
+        <div id="connection-legend"></div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">States</h2>
+        <div id="legend"></div>
+      </div>
+      <div class="section">
+        <h2 class="section-title">End-to-end flows</h2>
+        <div id="flow-list"></div>
+      </div>
+    </aside>
+    <section class="map-shell" aria-label="Code map canvas">
+      <div class="toolbar" aria-label="Map controls">
+        <button id="zoom-out" type="button" title="Zoom out">&minus;</button>
+        <button id="fit" type="button" title="Fit map">Fit</button>
+        <button id="zoom-in" type="button" title="Zoom in">+</button>
+      </div>
+      <svg id="map-svg" role="img" aria-labelledby="codemap-title codemap-desc">
+        <title id="codemap-title">Code map</title>
+        <desc id="codemap-desc">Module dependency map grouped by system boundary.</desc>
+        <defs>
+          <marker id="arrow-muted" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-ink" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-link" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-accent" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-soft" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-imports" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-calls" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-reads" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-writes" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-publishes" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-subscribes" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+          <marker id="arrow-unknown" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="10" markerHeight="8" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 4 L 0 8 z"></path>
+          </marker>
+        </defs>
+        <rect class="map-bg" width="100%" height="100%"></rect>
+        <g id="viewport"></g>
+      </svg>
+      <div id="status" class="status-line"></div>
+    </section>
+    <aside class="right" id="details">
+      <p class="empty">Select a module to inspect its role, evidence, callers, dependencies, tests, and flows.</p>
+    </aside>
+  </main>
+  <script id="codemap-data" type="application/json">{"generated_at":"2026-08-14T04:17:09Z","generated_from_commit":"461fd0dc60cf6a2cda66cb49bce233fcf22b2d42","scope":["."],"nodes":[{"id":"studio-shell","path":"hooks/useStudioShell.ts","role":"Composes the product shell, command center, recipe viewport, generation dock, and demand-mounted overlays.","type":"interface","boundary":"React product shell","entrypoints":["hooks/useStudioShell.ts:useStudioShell"],"tests":["hooks/useStudioShell.composition.test.ts"],"constraints":["Keep backend access behind hooks and services; the shell should remain composition-only."],"evidence":{"status":"verified","locations":[{"path":"hooks/useStudioShell.ts","symbol":"useStudioShell"}]}},{"id":"generation-context","path":"contexts/GenerationContext.tsx","role":"Owns the interactive generation state exposed to recipe and shell surfaces.","type":"module","boundary":"Frontend generation state","entrypoints":["contexts/GenerationContext.tsx:GenerationProvider"],"tests":["hooks/useGenerationPipeline.test.ts"],"constraints":["Generation state stays provider-independent and delegates execution to the pipeline hook."],"evidence":{"status":"verified","locations":[{"path":"contexts/GenerationContext.tsx","symbol":"GenerationProvider"},{"path":"contexts/GenerationContext.tsx","symbol":"useGenerationPipeline"}]}},{"id":"generation-pipeline","path":"hooks/useGenerationPipeline.ts","role":"Coordinates a user generation request, cancellation, lifecycle state, and result projection.","type":"service","boundary":"Frontend orchestration","entrypoints":["hooks/useGenerationPipeline.ts:useGenerationPipeline"],"tests":["hooks/useGenerationPipeline.test.ts"],"constraints":["Only one lifecycle owner may publish the completion or failure of a run."],"evidence":{"status":"verified","locations":[{"path":"hooks/useGenerationPipeline.ts","symbol":"useGenerationPipeline"}]}},{"id":"local-generation-run","path":"services/localGenerationRun.ts","role":"Builds provider-independent task input, submits durable jobs, watches completion, and materializes UI results.","type":"service","boundary":"Frontend generation domain service","entrypoints":["services/localGenerationRun.ts:runLocalGenerationWithLifecycle"],"tests":["services/localGenerationRun.test.ts","services/localGenerationRun.stream.test.ts"],"constraints":["Job creation and event observation go through the Studio API service seams."],"evidence":{"status":"verified","locations":[{"path":"services/localGenerationRun.ts","symbol":"runLocalGenerationWithLifecycle"},{"path":"services/localGenerationRun.ts","symbol":"buildGenerationTaskSpecFromRecipe"}]}},{"id":"studio-api-client","path":"services/studio-api","role":"Provides typed frontend calls for jobs, settings, catalog, workspaces, runtime, and other backend domains.","type":"interface","boundary":"Browser-to-local-server HTTP boundary","entrypoints":["services/studio-api/jobs.ts:createStudioJob","services/studio-api/settings.ts:getEditableStudioSettings"],"tests":["services/studio-api/api.test.ts"],"constraints":["Frontend backend calls belong in this domain service directory instead of components."],"evidence":{"status":"verified","locations":[{"path":"services/studio-api/jobs.ts","symbol":"createStudioJob"},{"path":"services/studio-api/settings.ts","symbol":"getEditableStudioSettings"}]}},{"id":"studio-event-client","path":"services/studioEventSource.ts","role":"Maintains the reconnecting browser SSE connection and exposes job-oriented event watchers.","type":"queue","boundary":"Browser live-event boundary","entrypoints":["services/studioEventSource.ts:createStudioEventStream","services/studioEventSource.ts:watchJob"],"tests":["services/studioEventSource.test.ts"],"constraints":["Reconnects carry the last revision so the UI can reconcile after server restarts."],"evidence":{"status":"verified","locations":[{"path":"services/studioEventSource.ts","symbol":"createStudioEventStream"},{"path":"services/studioEventSource.ts","symbol":"/api/events"}]}},{"id":"local-api","path":"apps/local-server/src/appFactory.ts","role":"Builds the Hono application, wires domain routes, and injects runtime, storage, worker, and event dependencies.","type":"interface","boundary":"Local HTTP API","entrypoints":["apps/local-server/src/appFactory.ts:createStudioApp"],"tests":["apps/local-server/src/appFactory.test.ts","apps/local-server/src/jobRoutes.test.ts"],"constraints":["Route handlers compose domain services; provider execution remains behind worker adapters."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/appFactory.ts","symbol":"createStudioApp"}]}},{"id":"job-intake","path":"apps/local-server/src/persistentJobIntake.ts","role":"Validates generation task specs and managed assets, persists a queued job, publishes creation, and enqueues execution.","type":"service","boundary":"Durable job admission","entrypoints":["apps/local-server/src/persistentJobIntake.ts:createPersistentJobIntake"],"tests":["apps/local-server/src/persistentJobIntake.test.ts"],"constraints":["A job must be durable before it becomes visible to the worker queue."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/persistentJobIntake.ts","symbol":"createPersistentJobIntake"},{"path":"apps/local-server/src/persistentJobIntake.ts","symbol":"validateGenerationTaskSpec"}]}},{"id":"job-store","path":"apps/local-server/src/db/jobs.ts","role":"Persists job contracts, status transitions, finalization state, recovery queries, and summaries.","type":"database","boundary":"SQLite job repository","entrypoints":["apps/local-server/src/db/jobs.ts:createJob","apps/local-server/src/db/jobs.ts:listRecoverableJobs"],"tests":["apps/local-server/src/db/jobs.test.ts"],"constraints":["Status and finalization updates must preserve recoverable durable state."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/db/jobs.ts","symbol":"createJob"},{"path":"apps/local-server/src/db/jobs.ts","symbol":"listRecoverableJobs"}]}},{"id":"job-worker","path":"apps/local-server/src/worker.ts","role":"Schedules queued jobs, resolves runtime targets, invokes providers, finalizes assets, and publishes lifecycle events.","type":"queue","boundary":"Backend execution scheduler","entrypoints":["apps/local-server/src/worker.ts:createWorkerController"],"tests":["apps/local-server/src/worker.test.ts","apps/local-server/src/workerShutdown.test.ts"],"constraints":["Provider concurrency, cancellation, shutdown, and durable finalization remain worker-owned."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/worker.ts","symbol":"createWorkerController"},{"path":"apps/local-server/src/worker.ts","symbol":"resolveWorkerRuntimeTarget"}]}},{"id":"provider-adapters","path":"apps/local-server/src/providers","role":"Compiles provider-independent task specs into provider inputs and executes Codex or concrete external providers.","type":"service","boundary":"Generation provider boundary","entrypoints":["apps/local-server/src/providers/codexProvider.ts:createCodexGenerationProvider","apps/local-server/src/providers/providerInputCompiler.ts:compileGenerationProviderInput"],"tests":["apps/local-server/src/providers/codexProvider.test.ts","apps/local-server/src/providers/providerInputCompiler.test.ts"],"constraints":["Task kind remains provider-independent; provider options stay in provider input."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/providers/codexProvider.ts","symbol":"createCodexGenerationProvider"},{"path":"apps/local-server/src/providers/codexProvider.ts","symbol":"compileCodexImagegenInput"}]}},{"id":"codex-runtime","path":"apps/local-server/src/codex","role":"Supervises codex app-server, pools image-generation sessions, performs RPC turns, and extracts generated assets.","type":"external","boundary":"Local Codex Product Runtime","entrypoints":["apps/local-server/src/codex/turn.ts:createCodexTurn","apps/local-server/src/codex/processSupervisor.ts:ensureAppServer"],"tests":["apps/local-server/src/codex/turn.test.ts","apps/local-server/src/codex/rpcClient.test.ts","apps/local-server/src/codex/processSupervisor.test.ts"],"constraints":["Interactive Codex work uses codex app-server and the user's local ChatGPT session."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/codex/turn.ts","symbol":"createCodexTurn"},{"path":"apps/local-server/src/codex/processSupervisor.ts","symbol":"app-server"}]}},{"id":"event-bus","path":"apps/local-server/src/events.ts","role":"Assigns monotonic revisions and fans backend domain events out to live subscribers.","type":"queue","boundary":"In-process backend events","entrypoints":["apps/local-server/src/events.ts:publishEvent","apps/local-server/src/events.ts:subscribeEvents"],"tests":["apps/local-server/src/events.test.ts"],"constraints":["Every published event carries a revision used by SSE reconciliation."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/events.ts","symbol":"publishEvent"},{"path":"apps/local-server/src/events.ts","symbol":"subscribeEvents"}]}},{"id":"event-stream","path":"apps/local-server/src/eventStreamRoutes.ts","role":"Exposes revision-aware SSE events with keepalive, backpressure, abort, and reconnect reconciliation.","type":"interface","boundary":"Backend-to-browser SSE boundary","entrypoints":["apps/local-server/src/eventStreamRoutes.ts:createEventStreamRoutes"],"tests":["apps/local-server/src/eventStreamRoutes.test.ts"],"constraints":["Slow clients are aborted before pending writes can grow without bound."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/eventStreamRoutes.ts","symbol":"createEventStreamRoutes"},{"path":"apps/local-server/src/eventStreamRoutes.ts","symbol":"EVENT_STREAM_MAX_PENDING_WRITES"}]}},{"id":"local-studio-sync","path":"hooks/useLocalStudioSync.ts","role":"Projects backend jobs and live events into frontend activity state and targeted refreshes.","type":"service","boundary":"Frontend runtime synchronization","entrypoints":["hooks/useLocalStudioSync.ts:useLocalStudioSync"],"tests":["hooks/localStudioSyncProjection.test.ts","hooks/localStudioSyncRefreshPolicy.test.ts"],"constraints":["Reconnect and terminal events reconcile from durable server truth."],"evidence":{"status":"verified","locations":[{"path":"hooks/useLocalStudioSync.ts","symbol":"useLocalStudioSync"},{"path":"hooks/useLocalStudioSync.ts","symbol":"createStudioEventStream"}]}},{"id":"catalog","path":"apps/local-server/src/catalog.ts","role":"Maintains durable Catalog Entry image truth, pagination, favorites, trash, and asset registration.","type":"database","boundary":"Catalog repository and managed-asset policy","entrypoints":["apps/local-server/src/catalog.ts:registerCatalogImage","apps/local-server/src/catalog.ts:queryCatalog"],"tests":["apps/local-server/src/catalog.test.ts"],"constraints":["Durable and UI image truth is Catalog Entry; legacy snapshots remain export-only."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/catalog.ts","symbol":"registerCatalogImage"},{"path":"apps/local-server/src/catalog.ts","symbol":"queryCatalog"}]}},{"id":"sqlite","path":"apps/local-server/src/db","role":"Owns the local SQLite connection, schema migrations, foreign-key integrity, and table repositories.","type":"database","boundary":"Durable local relational state","entrypoints":["apps/local-server/src/db/connection.ts:getDb","apps/local-server/src/db/migrations.ts:migrateDatabase"],"tests":["apps/local-server/src/db/migrations.test.ts","apps/local-server/src/db/jobs.test.ts"],"constraints":["Foreign keys remain enabled in normal operation and migrations must finish with a clean foreign_key_check."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/db/connection.ts","symbol":"getDb"},{"path":"apps/local-server/src/db/migrations.ts","symbol":"foreign_key_check"}]}},{"id":"studio-library","path":"apps/local-server/src/library.ts","role":"Resolves the app-owned Studio Library and its assets, outputs, transcripts, logs, state, and trash folders.","type":"database","boundary":"App-owned local filesystem","entrypoints":["apps/local-server/src/library.ts:ensureLibrary","apps/local-server/src/library.ts:resolveLibraryPath"],"tests":["apps/local-server/src/library.test.ts"],"constraints":["Never rewrite or delete Studio Library data without explicit user authorization."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/library.ts","symbol":"ensureLibrary"},{"path":"apps/local-server/src/library.ts","symbol":"resolveLibraryPath"}]}},{"id":"shared-contracts","path":"packages/shared/src","role":"Defines provider-independent generation tasks, jobs, settings, workspaces, events, and transport contracts shared by UI and backend.","type":"interface","boundary":"Cross-runtime domain contracts","entrypoints":["packages/shared/src/generationContracts.ts:createGenerationTaskSpec","packages/shared/src/generationContracts.ts:GenerationTaskSpec"],"tests":["packages/shared/src/generationContracts.test.ts"],"constraints":["Shared contracts are provider-independent and must remain serializable across the HTTP boundary."],"evidence":{"status":"verified","locations":[{"path":"packages/shared/src/generationContracts.ts","symbol":"createGenerationTaskSpec"},{"path":"packages/shared/src/generationContracts.ts","symbol":"GenerationTaskSpec"}]}},{"id":"settings-store","path":"apps/local-server/src/studioSettingsStore.ts","role":"Normalizes, reads, merges, and persists editable Studio Settings without mixing bootstrap configuration or provider secrets.","type":"database","boundary":"SQLite-backed editable preferences","entrypoints":["apps/local-server/src/studioSettingsStore.ts:readEditableStudioSettings","apps/local-server/src/studioSettingsStore.ts:updateEditableStudioSettings"],"tests":["apps/local-server/src/studioSettingsStore.test.ts","apps/local-server/src/settingsRoutes.test.ts"],"constraints":["Provider secrets and bootstrap configuration never enter SQLite-backed Studio Settings."],"evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/studioSettingsStore.ts","symbol":"readEditableStudioSettings"},{"path":"apps/local-server/src/studioSettingsStore.ts","symbol":"updateEditableStudioSettings"}]}}],"edges":[{"from":"generation-context","to":"generation-pipeline","type":"calls","evidence":{"status":"verified","locations":[{"path":"contexts/GenerationContext.tsx","symbol":"useGenerationPipeline"}]}},{"from":"generation-pipeline","to":"local-generation-run","type":"calls","evidence":{"status":"verified","locations":[{"path":"hooks/useGenerationPipeline.ts","symbol":"runLocalGenerationWithLifecycle"}]}},{"from":"local-generation-run","to":"studio-api-client","type":"calls","evidence":{"status":"verified","locations":[{"path":"services/localGenerationRun.ts","symbol":"createStudioJob"}]}},{"from":"local-generation-run","to":"studio-event-client","type":"calls","evidence":{"status":"verified","locations":[{"path":"services/localGenerationRun.ts","symbol":"createStudioEventStream"}]}},{"from":"local-generation-run","to":"shared-contracts","type":"imports","evidence":{"status":"verified","locations":[{"path":"services/localGenerationRun.ts","symbol":"GenerationProviderId"}]}},{"from":"studio-api-client","to":"local-api","type":"calls","evidence":{"status":"verified","locations":[{"path":"services/studio-api/jobs.ts","symbol":"/api/jobs"},{"path":"services/studio-api/settings.ts","symbol":"/api/settings"}]}},{"from":"local-api","to":"job-intake","type":"calls","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/jobRoutes.ts","symbol":"createPersistentJobIntake"}]}},{"from":"local-api","to":"job-worker","type":"calls","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/appFactory.ts","symbol":"createWorkerController"}]}},{"from":"local-api","to":"settings-store","type":"calls","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/appFactory.ts","symbol":"readEditableStudioSettings"},{"path":"apps/local-server/src/appFactory.ts","symbol":"updateEditableStudioSettings"}]}},{"from":"local-api","to":"event-stream","type":"calls","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/appFactory.ts","symbol":"createEventStreamRoutes"}]}},{"from":"job-intake","to":"shared-contracts","type":"imports","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/persistentJobIntake.ts","symbol":"validateGenerationTaskSpec"}]}},{"from":"job-intake","to":"job-store","type":"writes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/persistentJobIntake.ts","symbol":"createJob"}]}},{"from":"job-intake","to":"job-worker","type":"calls","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/persistentJobIntake.ts","symbol":"enqueueJob"}]}},{"from":"job-store","to":"sqlite","type":"writes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/db/jobs.ts","symbol":"getDb"}]}},{"from":"job-worker","to":"job-store","type":"reads","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/worker.ts","symbol":"getJob"},{"path":"apps/local-server/src/worker.ts","symbol":"updateJobStatus"}]}},{"from":"job-worker","to":"provider-adapters","type":"calls","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/worker.ts","symbol":"createCodexGenerationProvider"},{"path":"apps/local-server/src/worker.ts","symbol":"codexGenerationProvider.run"}]}},{"from":"provider-adapters","to":"codex-runtime","type":"calls","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/providers/codexProvider.ts","symbol":"turn.runTurn"}]}},{"from":"codex-runtime","to":"studio-library","type":"writes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/codex/turn.ts","symbol":"resolveLibraryPath"},{"path":"apps/local-server/src/codex/processSupervisor.ts","symbol":"app-server.log"}]}},{"from":"job-worker","to":"catalog","type":"writes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/worker.ts","symbol":"registerCatalogImage"}]}},{"from":"job-worker","to":"studio-library","type":"writes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/worker.ts","symbol":"resolveLibraryPath"}]}},{"from":"job-worker","to":"event-bus","type":"publishes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/worker.ts","symbol":"publishEventFn"}]}},{"from":"catalog","to":"sqlite","type":"writes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/catalog.ts","symbol":"getDb"}]}},{"from":"catalog","to":"studio-library","type":"writes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/catalog.ts","symbol":"resolveLibraryPathFromRoot"}]}},{"from":"event-bus","to":"event-stream","type":"publishes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/eventStreamRoutes.ts","symbol":"subscribeEvents"}]}},{"from":"event-stream","to":"studio-event-client","type":"publishes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/eventStreamRoutes.ts","symbol":"streamSSE"},{"path":"services/studioEventSource.ts","symbol":"/api/events"}]}},{"from":"studio-event-client","to":"local-studio-sync","type":"publishes","evidence":{"status":"verified","locations":[{"path":"hooks/useLocalStudioSync.ts","symbol":"createStudioEventStream"}]}},{"from":"local-studio-sync","to":"studio-shell","type":"publishes","evidence":{"status":"verified","locations":[{"path":"hooks/useStudioRuntime.ts","symbol":"useLocalStudioSync"},{"path":"hooks/useStudioShell.ts","symbol":"useStudioRuntime"}]}},{"from":"studio-shell","to":"studio-api-client","type":"calls","evidence":{"status":"verified","locations":[{"path":"hooks/useStudioShell.ts","symbol":"useStudioSettings"},{"path":"hooks/useStudioSettings.ts","symbol":"updateEditableStudioSettings"}]}},{"from":"settings-store","to":"sqlite","type":"writes","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/studioSettingsStore.ts","symbol":"storage.setSetting"},{"path":"apps/local-server/src/db/settings.ts","symbol":"setSettingValue"}]}},{"from":"sqlite","to":"studio-library","type":"calls","evidence":{"status":"verified","locations":[{"path":"apps/local-server/src/db/connection.ts","symbol":"resolveLibraryPath"}]}}],"flows":[{"trigger":"A user starts an image generation from a recipe surface.","steps":["generation-context","generation-pipeline","local-generation-run","studio-api-client","local-api","job-intake","job-worker","provider-adapters","codex-runtime"],"outcome":"The validated task runs through the selected provider while the durable job remains the source of lifecycle truth."},{"trigger":"The local API accepts a valid Generation Task Spec.","steps":["job-intake","job-store","sqlite"],"outcome":"The queued job is committed to SQLite before worker execution is exposed."},{"trigger":"A provider returns a generated asset.","steps":["job-worker","catalog","sqlite"],"outcome":"Finalization records durable Catalog Entry truth and preserves recoverable job state."},{"trigger":"The worker publishes a job lifecycle change.","steps":["job-worker","event-bus","event-stream","studio-event-client","local-studio-sync","studio-shell"],"outcome":"The shell reconciles live activity from revision-aware events and durable backend state."},{"trigger":"A user changes an editable Studio Setting.","steps":["studio-shell","studio-api-client","local-api","settings-store","sqlite"],"outcome":"The normalized preference is stored in SQLite without mixing provider secrets or bootstrap configuration."}]}</script>
+  <script>
+    (() => {
+      "use strict";
+
+      const data = JSON.parse(document.getElementById("codemap-data").textContent);
+      const svg = document.getElementById("map-svg");
+      const viewport = document.getElementById("viewport");
+
+      const GRID = 4;
+      const NODE_W = 240;
+      const NODE_H = 72;
+      const GAP = 120;
+      const COL_PITCH = NODE_W + GAP;
+      const ROW_PITCH = NODE_H + GAP;
+      const ORIGIN_X = 48;
+      const ORIGIN_Y = 64;
+      const RADIUS = 8;
+      const LANE_STEP = 12;
+      const LANE_COUNT = Math.floor(GAP / LANE_STEP) - 1;
+      const LANE_CLEARANCE = 24;
+      const PORT_MIN = 12;
+      const SIDE_PORT_MAX = 4;
+      const ZONE_TOP = 32;
+      const ZONE_BOTTOM = 16;
+      const ZONE_SIDE = 24;
+      const HOP = 8;
+      const LABEL_GAP = 8;
+      const LABEL_H = 12;
+      const LABEL_CHAR = 5;
+      const LABEL_BUDGET = 14;
+      const THEME_KEY = "codemap-theme:v1";
+      const TAGS = { module: "[] MOD", service: "<> SVC", database: "## DB", queue: ">> QUE", interface: ":: IFC", external: "// EXT" };
+      const EDGE_TYPES = ["imports", "calls", "reads", "writes", "publishes", "subscribes"];
+      const BOUNDARY_HUES = [210, 270, 190, 135, 42, 345, 165, 25, 310, 90, 230, 5, 200, 255, 115, 55, 325, 150, 15, 290];
+      const STATES = [
+        ["selected", "selected module"],
+        ["callers", "callers, upstream"],
+        ["dependencies", "dependencies, downstream"],
+        ["flow", "selected flow"],
+        ["unknown", "unknown evidence"]
+      ];
+
+      const types = [...new Set(data.nodes.map(node => node.type))].sort();
+      const boundaries = [...new Set(data.nodes.map(node => node.boundary))].sort((a, b) => a.localeCompare(b));
+      const boundaryIndexes = new Map(boundaries.map((boundary, index) => [boundary, index]));
+      const state = {
+        enabledTypes: new Set(types), query: "", selectedNode: null, selectedFlow: null,
+        cells: new Map(), overrides: new Map(), view: { x: 0, y: 0, k: 1 },
+        counts: { nodes: 0, edges: 0 }, drag: null, pan: null, skipCanvasClick: false
+      };
+
+      const snap = value => Math.round(value / GRID) * GRID;
+      const colLeft = col => ORIGIN_X + col * COL_PITCH;
+      const colRight = col => colLeft(col) + NODE_W;
+      const rowTop = row => ORIGIN_Y + row * ROW_PITCH;
+      const rowBottom = row => rowTop(row) + NODE_H;
+      const laneY = (band, lane) => rowBottom(band) + LANE_STEP * (lane + 1);
+      const laneX = (band, lane) => colRight(band) + LANE_STEP * (lane + 1);
+
+      document.getElementById("generated-at").textContent = data.generated_at;
+      document.getElementById("generated-commit").textContent = data.generated_from_commit.slice(0, 12);
+      document.getElementById("scope").textContent = data.scope.join(", ");
+      document.getElementById("codemap-title").textContent = `Code map of ${document.getElementById("repo-name").textContent}`;
+      document.getElementById("codemap-desc").textContent =
+        `${data.nodes.length} modules grouped by system boundary, with ${data.edges.length} verified dependencies and ${data.flows.length} end-to-end flows.`;
+
+      function htmlElement(tag, className, text) {
+        const element = document.createElement(tag);
+        if (className) element.className = className;
+        if (text !== undefined) element.textContent = text;
+        return element;
       }
-    </script>
-    <script>
-      (() => {
-        'use strict';
 
-        const data = JSON.parse(document.getElementById('codemap-data').textContent);
-        const svg = document.getElementById('map-svg');
-        const viewport = document.getElementById('viewport');
-        const nodeWidth = 190;
-        const nodeHeight = 70;
-        const colors = {
-          module: 'var(--module)',
-          service: 'var(--service)',
-          database: 'var(--database)',
-          queue: 'var(--queue)',
-          interface: 'var(--interface)',
-          external: 'var(--external)',
+      function svgElement(tag, attributes = {}) {
+        const element = document.createElementNS("http://www.w3.org/2000/svg", tag);
+        for (const [key, value] of Object.entries(attributes)) element.setAttribute(key, value);
+        return element;
+      }
+
+      function truncate(value, capacity) {
+        return value.length > capacity ? `${value.slice(0, capacity - 1)}\u2026` : value;
+      }
+
+      function boundaryKey(boundary) {
+        return `[${String((boundaryIndexes.get(boundary) ?? 0) + 1).padStart(2, "0")}]`;
+      }
+
+      function applyBoundaryStyle(element, boundary) {
+        const index = boundaryIndexes.get(boundary) ?? 0;
+        const hue = BOUNDARY_HUES[index % BOUNDARY_HUES.length];
+        element.style.setProperty("--group-color", `hsl(${hue} var(--boundary-saturation) var(--boundary-lightness))`);
+        element.dataset.boundary = boundary;
+        element.dataset.boundaryIndex = String(index);
+        return element;
+      }
+
+      function readTheme() {
+        try {
+          return localStorage.getItem(THEME_KEY) === "light" ? "light" : "dark";
+        } catch {
+          return "dark";
+        }
+      }
+
+      function applyTheme(theme) {
+        const toggle = document.getElementById("theme-toggle");
+        document.documentElement.dataset.theme = theme;
+        toggle.textContent = theme === "dark" ? "Light" : "Dark";
+        toggle.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+        try {
+          localStorage.setItem(THEME_KEY, theme);
+        } catch {
+          /* file:// storage can be blocked; the theme still applies for this session. */
+        }
+      }
+
+      function visibleNodes() {
+        return data.nodes.filter(node => state.enabledTypes.has(node.type));
+      }
+
+      function visibleEdges(ids) {
+        return data.edges.filter(edge => ids.has(edge.from) && ids.has(edge.to));
+      }
+
+      function nodeRanks(nodes, edges) {
+        const ids = new Set(nodes.map(node => node.id));
+        const outgoing = new Map([...ids].map(id => [id, []]));
+        const incoming = new Map([...ids].map(id => [id, []]));
+        const indegree = new Map([...ids].map(id => [id, 0]));
+        const rank = new Map([...ids].map(id => [id, 0]));
+        for (const edge of edges) {
+          outgoing.get(edge.from).push(edge.to);
+          incoming.get(edge.to).push(edge.from);
+          indegree.set(edge.to, indegree.get(edge.to) + 1);
+        }
+        const queue = [...ids].filter(id => indegree.get(id) === 0).sort();
+        const visited = new Set();
+        while (queue.length) {
+          const id = queue.shift();
+          visited.add(id);
+          for (const target of outgoing.get(id)) {
+            rank.set(target, Math.max(rank.get(target), rank.get(id) + 1));
+            indegree.set(target, indegree.get(target) - 1);
+            if (indegree.get(target) === 0) queue.push(target);
+          }
+          queue.sort();
+        }
+        for (const id of [...ids].sort()) {
+          if (visited.has(id)) continue;
+          const parents = incoming.get(id).map(parent => rank.get(parent));
+          rank.set(id, parents.length ? Math.min(5, Math.max(...parents) + 1) : 0);
+        }
+        return { rank, outgoing, incoming };
+      }
+
+      // Columns carry dependency rank. Each boundary owns a rectangle of rows, and two boundaries
+      // share a row band only when their column ranges are disjoint, so zone rectangles never overlap.
+      function calculateCells(nodes, edges) {
+        const { rank } = nodeRanks(nodes, edges);
+        const columnOf = id => Math.min(rank.get(id), 5);
+        const groups = new Map();
+        for (const node of nodes) {
+          if (!groups.has(node.boundary)) groups.set(node.boundary, []);
+          groups.get(node.boundary).push(node);
+        }
+        const specs = [...groups].map(([boundary, members]) => {
+          const sorted = [...members].sort((a, b) => columnOf(a.id) - columnOf(b.id) || a.id.localeCompare(b.id));
+          const rows = [];
+          const placement = new Map();
+          for (const node of sorted) {
+            const col = columnOf(node.id);
+            let index = rows.findIndex(used => !used.has(col));
+            if (index === -1) {
+              rows.push(new Set());
+              index = rows.length - 1;
+            }
+            rows[index].add(col);
+            placement.set(node.id, { row: index, col });
+          }
+          const columns = sorted.map(node => columnOf(node.id));
+          return { boundary, placement, height: rows.length, min: Math.min(...columns), max: Math.max(...columns) };
+        }).sort((a, b) => a.min - b.min || b.height - a.height || a.boundary.localeCompare(b.boundary));
+
+        const cells = new Map();
+        const bands = [];
+        let nextRow = 0;
+        for (const spec of specs) {
+          let band = bands.find(candidate =>
+            candidate.height >= spec.height && candidate.spans.every(([low, high]) => spec.max < low || spec.min > high));
+          if (!band) {
+            band = { row: nextRow, height: spec.height, spans: [] };
+            nextRow += spec.height;
+            bands.push(band);
+          }
+          band.spans.push([spec.min, spec.max]);
+          for (const [id, cell] of spec.placement) cells.set(id, { row: band.row + cell.row, col: cell.col });
+        }
+        for (const [id, cell] of state.overrides) {
+          if (!cells.has(id)) continue;
+          const holder = [...cells].find(([other, value]) => other !== id && value.row === cell.row && value.col === cell.col);
+          if (holder) cells.set(holder[0], cells.get(id));
+          cells.set(id, { ...cell });
+        }
+        return cells;
+      }
+
+      function rectOf(id) {
+        const cell = state.cells.get(id);
+        return { x: colLeft(cell.col), y: rowTop(cell.row), row: cell.row, col: cell.col };
+      }
+
+      function laneAllocator() {
+        const bands = new Map();
+        return (key, start, end) => {
+          const from = Math.min(start, end);
+          const to = Math.max(start, end);
+          let lanes = bands.get(key);
+          if (!lanes) {
+            lanes = [];
+            bands.set(key, lanes);
+          }
+          for (let index = 0; index < lanes.length; index += 1) {
+            if (from > lanes[index] + LANE_CLEARANCE) {
+              lanes[index] = to;
+              return index;
+            }
+          }
+          if (lanes.length < LANE_COUNT) {
+            lanes.push(to);
+            return lanes.length - 1;
+          }
+          let best = 0;
+          for (let index = 1; index < lanes.length; index += 1) if (lanes[index] < lanes[best]) best = index;
+          lanes[best] = Math.max(lanes[best], to);
+          return best;
         };
-        const types = [...new Set(data.nodes.map((node) => node.type))].sort();
-        const state = {
-          enabledTypes: new Set(types),
-          query: '',
-          selectedNode: null,
-          selectedFlow: null,
-          positions: new Map(),
-          view: { x: 0, y: 0, k: 1 },
-          drag: null,
-          pan: null,
-          skipCanvasClick: false,
-        };
+      }
 
-        document.getElementById('generated-at').textContent = data.generated_at;
-        document.getElementById('generated-commit').textContent = data.generated_from_commit.slice(
-          0,
-          12,
-        );
-        document.getElementById('scope').textContent = data.scope.join(', ');
-
-        function htmlElement(tag, className, text) {
-          const element = document.createElement(tag);
-          if (className) element.className = className;
-          if (text !== undefined) element.textContent = text;
-          return element;
+      // Top and bottom ports of one column share a single fan per corridor: two stubs that meet in the
+      // same corridor then always land at least PORT_MIN apart instead of nearly on top of each other.
+      function assignPorts(requests) {
+        const ports = new Map();
+        const grouped = new Map();
+        for (const request of requests) {
+          if (!grouped.has(request.group)) grouped.set(request.group, []);
+          grouped.get(request.group).push(request);
         }
-
-        function svgElement(tag, attributes = {}) {
-          const element = document.createElementNS('http://www.w3.org/2000/svg', tag);
-          for (const [key, value] of Object.entries(attributes)) element.setAttribute(key, value);
-          return element;
-        }
-
-        function visibleNodes() {
-          return data.nodes.filter((node) => state.enabledTypes.has(node.type));
-        }
-
-        function visibleEdges(ids) {
-          return data.edges.filter((edge) => ids.has(edge.from) && ids.has(edge.to));
-        }
-
-        function averageNeighborOrder(id, neighbors, order) {
-          const values =
-            neighbors
-              .get(id)
-              ?.map((item) => order.get(item))
-              .filter(Number.isFinite) || [];
-          return values.length
-            ? values.reduce((sum, value) => sum + value, 0) / values.length
-            : Number.MAX_SAFE_INTEGER;
-        }
-
-        function calculateLayout(nodes, edges) {
-          const ids = new Set(nodes.map((node) => node.id));
-          const outgoing = new Map([...ids].map((id) => [id, []]));
-          const incoming = new Map([...ids].map((id) => [id, []]));
-          const indegree = new Map([...ids].map((id) => [id, 0]));
-          const rank = new Map([...ids].map((id) => [id, 0]));
-          for (const edge of edges) {
-            outgoing.get(edge.from).push(edge.to);
-            incoming.get(edge.to).push(edge.from);
-            indegree.set(edge.to, indegree.get(edge.to) + 1);
-          }
-          const queue = [...ids].filter((id) => indegree.get(id) === 0).sort();
-          const visited = new Set();
-          while (queue.length) {
-            const id = queue.shift();
-            visited.add(id);
-            for (const target of outgoing.get(id)) {
-              rank.set(target, Math.max(rank.get(target), rank.get(id) + 1));
-              indegree.set(target, indegree.get(target) - 1);
-              if (indegree.get(target) === 0) queue.push(target);
-            }
-            queue.sort();
-          }
-          for (const id of ids) {
-            if (!visited.has(id)) {
-              const parentRanks = incoming.get(id).map((parent) => rank.get(parent));
-              rank.set(id, parentRanks.length ? Math.min(5, Math.max(...parentRanks) + 1) : 0);
-            }
-          }
-          const layers = new Map();
-          for (const node of nodes) {
-            const layer = Math.min(rank.get(node.id), 5);
-            if (!layers.has(layer)) layers.set(layer, []);
-            layers.get(layer).push(node.id);
-          }
-          for (const layer of layers.values()) layer.sort();
-          for (let pass = 0; pass < 4; pass += 1) {
-            const layerKeys = [...layers.keys()].sort((a, b) => a - b);
-            const order = new Map();
-            for (const key of layerKeys)
-              layers.get(key).forEach((id, index) => order.set(id, index));
-            for (const key of layerKeys.slice(1)) {
-              layers
-                .get(key)
-                .sort(
-                  (a, b) =>
-                    averageNeighborOrder(a, incoming, order) -
-                    averageNeighborOrder(b, incoming, order),
-                );
-            }
-            for (const key of layerKeys.slice(0, -1).reverse()) {
-              layers
-                .get(key)
-                .sort(
-                  (a, b) =>
-                    averageNeighborOrder(a, outgoing, order) -
-                    averageNeighborOrder(b, outgoing, order),
-                );
-            }
-          }
-          const largestLayer = Math.max(...[...layers.values()].map((layer) => layer.length), 1);
-          for (const [layer, identifiers] of layers) {
-            const offset = (largestLayer - identifiers.length) * 58;
-            identifiers.forEach((id, index) => {
-              if (!state.positions.has(id))
-                state.positions.set(id, { x: 55 + layer * 270, y: 55 + offset + index * 116 });
-            });
-          }
-        }
-
-        function graphSets(ids, edges) {
-          const outgoing = new Map([...ids].map((id) => [id, []]));
-          const incoming = new Map([...ids].map((id) => [id, []]));
-          edges.forEach((edge) => {
-            outgoing.get(edge.from).push(edge.to);
-            incoming.get(edge.to).push(edge.from);
+        for (const members of grouped.values()) {
+          const length = members[0].side === "top" || members[0].side === "bottom" ? NODE_W : NODE_H;
+          const spacing = length / (members.length + 1);
+          members.sort((a, b) => a.sort - b.sort || a.edge - b.edge);
+          members.forEach((request, index) => {
+            const ideal = spacing * (index + 1);
+            const offset = spacing >= PORT_MIN + GRID ? snap(ideal) : ideal;
+            ports.set(`${request.edge}\u0000${request.end}`, Math.min(length - PORT_MIN, Math.max(PORT_MIN, offset)));
           });
-          const walk = (start, adjacency) => {
-            const found = new Set();
-            const pending = [...(adjacency.get(start) || [])];
-            while (pending.length) {
-              const id = pending.shift();
-              if (found.has(id)) continue;
-              found.add(id);
-              pending.push(...(adjacency.get(id) || []));
+        }
+        return ports;
+      }
+
+      // Every route travels inside node-free corridors, so a connector never crosses a box it does not touch.
+      function calculateRoutes(edges) {
+        const plans = edges.map((edge, index) => {
+          const source = rectOf(edge.from);
+          const target = rectOf(edge.to);
+          const sameRow = source.row === target.row;
+          const side = sameRow && Math.abs(target.col - source.col) === 1;
+          return { edge, index, source, target, side };
+        });
+        const sideLoad = new Map();
+        for (const plan of plans) {
+          if (!plan.side) continue;
+          const forward = plan.target.col > plan.source.col;
+          for (const key of [`${plan.edge.from}\u0000${forward ? "right" : "left"}`, `${plan.edge.to}\u0000${forward ? "left" : "right"}`]) {
+            sideLoad.set(key, (sideLoad.get(key) || 0) + 1);
+          }
+        }
+        for (const plan of plans) {
+          if (!plan.side) continue;
+          const forward = plan.target.col > plan.source.col;
+          const load = Math.max(
+            sideLoad.get(`${plan.edge.from}\u0000${forward ? "right" : "left"}`) || 0,
+            sideLoad.get(`${plan.edge.to}\u0000${forward ? "left" : "right"}`) || 0
+          );
+          if (load > SIDE_PORT_MAX) plan.side = false;
+        }
+
+        const requests = [];
+        for (const plan of plans) {
+          const forwardCol = plan.target.col > plan.source.col;
+          if (plan.side) {
+            const exit = forwardCol ? "right" : "left";
+            const enter = forwardCol ? "left" : "right";
+            requests.push({ edge: plan.index, end: "from", side: exit, group: `${plan.edge.from}\u0000${exit}`, sort: plan.target.y });
+            requests.push({ edge: plan.index, end: "to", side: enter, group: `${plan.edge.to}\u0000${enter}`, sort: plan.source.y });
+            continue;
+          }
+          const down = plan.target.row > plan.source.row;
+          plan.exit = down || plan.target.row === plan.source.row ? "bottom" : "top";
+          plan.enter = down ? "top" : "bottom";
+          const exitBand = plan.exit === "bottom" ? plan.source.row : plan.source.row - 1;
+          const enterBand = plan.enter === "top" ? plan.target.row - 1 : plan.target.row;
+          requests.push({ edge: plan.index, end: "from", side: plan.exit, group: `c${plan.source.col}:${exitBand}`, sort: plan.target.x });
+          requests.push({ edge: plan.index, end: "to", side: plan.enter, group: `c${plan.target.col}:${enterBand}`, sort: plan.source.x });
+        }
+        const ports = assignPorts(requests);
+
+        // One allocator per corridor axis: every vertical run shares the column-band lanes.
+        const columnLane = laneAllocator();
+        for (const plan of plans) {
+          if (plan.side) {
+            const forward = plan.target.col > plan.source.col;
+            plan.startY = plan.source.y + ports.get(`${plan.index}\u0000from`);
+            plan.endY = plan.target.y + ports.get(`${plan.index}\u0000to`);
+            if (plan.startY === plan.endY) continue;
+            const band = forward ? plan.source.col : plan.target.col;
+            plan.verticalX = laneX(band, columnLane(`v${band}`, plan.startY, plan.endY));
+            continue;
+          }
+          if (Math.abs(plan.target.row - plan.source.row) < 2) continue;
+          const band = plan.target.col > plan.source.col
+            ? plan.target.col - 1
+            : plan.target.col < plan.source.col ? plan.target.col : plan.source.col;
+          const from = Math.min(plan.source.row, plan.target.row);
+          const to = Math.max(plan.source.row, plan.target.row);
+          plan.verticalX = laneX(band, columnLane(`v${band}`, rowBottom(from), rowTop(to)));
+        }
+
+        const rowLane = laneAllocator();
+        const routes = [];
+        for (const plan of plans) {
+          const sourceOffset = ports.get(`${plan.index}\u0000from`);
+          const targetOffset = ports.get(`${plan.index}\u0000to`);
+          if (plan.side) {
+            const forward = plan.target.col > plan.source.col;
+            const startX = forward ? plan.source.x + NODE_W : plan.source.x;
+            const endX = forward ? plan.target.x : plan.target.x + NODE_W;
+            if (plan.startY === plan.endY) {
+              routes.push({ index: plan.index, points: [{ x: startX, y: plan.startY }, { x: endX, y: plan.endY }] });
+              continue;
             }
-            found.delete(start);
-            return found;
-          };
+            routes.push({
+              index: plan.index,
+              points: [
+                { x: startX, y: plan.startY },
+                { x: plan.verticalX, y: plan.startY },
+                { x: plan.verticalX, y: plan.endY },
+                { x: endX, y: plan.endY }
+              ]
+            });
+            continue;
+          }
+          const startX = plan.source.x + sourceOffset;
+          const endX = plan.target.x + targetOffset;
+          const startY = plan.exit === "top" ? plan.source.y : plan.source.y + NODE_H;
+          const endY = plan.enter === "top" ? plan.target.y : plan.target.y + NODE_H;
+          const distance = plan.target.row - plan.source.row;
+          if (Math.abs(distance) < 2) {
+            const band = distance < 0 ? plan.source.row - 1 : plan.source.row;
+            const lane = rowLane(`h${band}`, Math.min(startX, endX), Math.max(startX, endX));
+            const midY = laneY(band, lane);
+            routes.push({
+              index: plan.index,
+              points: [{ x: startX, y: startY }, { x: startX, y: midY }, { x: endX, y: midY }, { x: endX, y: endY }]
+            });
+            continue;
+          }
+          const exitBand = distance > 0 ? plan.source.row : plan.source.row - 1;
+          const enterBand = distance > 0 ? plan.target.row - 1 : plan.target.row;
+          const exitY = laneY(exitBand, rowLane(`h${exitBand}`, Math.min(startX, plan.verticalX), Math.max(startX, plan.verticalX)));
+          const enterY = laneY(enterBand, rowLane(`h${enterBand}`, Math.min(endX, plan.verticalX), Math.max(endX, plan.verticalX)));
+          routes.push({
+            index: plan.index,
+            points: [
+              { x: startX, y: startY },
+              { x: startX, y: exitY },
+              { x: plan.verticalX, y: exitY },
+              { x: plan.verticalX, y: enterY },
+              { x: endX, y: enterY },
+              { x: endX, y: endY }
+            ]
+          });
+        }
+        return routes;
+      }
+
+      function segmentsOf(route) {
+        const segments = [];
+        for (let index = 0; index < route.points.length - 1; index += 1) {
+          const from = route.points[index];
+          const to = route.points[index + 1];
+          if (from.x === to.x && from.y === to.y) continue;
+          segments.push({
+            route: route.index,
+            segment: index,
+            horizontal: from.y === to.y,
+            fixed: from.y === to.y ? from.y : from.x,
+            from: from.y === to.y ? from.x : from.y,
+            to: from.y === to.y ? to.x : to.y
+          });
+        }
+        return segments;
+      }
+
+      // The lower-priority connector hops over the crossing so both stay traceable.
+      function calculateHops(routes, priority) {
+        const all = routes.flatMap(segmentsOf);
+        const hops = new Map();
+        const between = (value, a, b) => value > Math.min(a, b) + HOP + 2 && value < Math.max(a, b) - HOP - 2;
+        for (const first of all) {
+          if (!first.horizontal) continue;
+          for (const second of all) {
+            if (second.horizontal || second.route === first.route) continue;
+            if (!between(second.fixed, first.from, first.to)) continue;
+            if (!between(first.fixed, second.from, second.to)) continue;
+            const target = (priority.get(first.route) ?? 1) <= (priority.get(second.route) ?? 1) ? first : second;
+            const key = `${target.route}\u0000${target.segment}`;
+            if (!hops.has(key)) hops.set(key, []);
+            hops.get(key).push(target.horizontal ? second.fixed : first.fixed);
+          }
+        }
+        return hops;
+      }
+
+      function buildPath(points, hops) {
+        const sign = value => (value > 0 ? 1 : value < 0 ? -1 : 0);
+        let path = `M ${points[0].x} ${points[0].y}`;
+        for (let index = 1; index < points.length; index += 1) {
+          const previous = points[index - 1];
+          const current = points[index];
+          const next = points[index + 1];
+          const horizontal = previous.y === current.y;
+          const direction = horizontal ? sign(current.x - previous.x) : sign(current.y - previous.y);
+          const length = horizontal ? Math.abs(current.x - previous.x) : Math.abs(current.y - previous.y);
+          let radius = 0;
+          if (next) {
+            const nextLength = next.y === current.y ? Math.abs(next.x - current.x) : Math.abs(next.y - current.y);
+            radius = Math.min(RADIUS, length / 2, nextLength / 2);
+          }
+          const positions = (hops.get(`${index - 1}`) || [])
+            .map(value => (value - (horizontal ? previous.x : previous.y)) * direction)
+            .filter(value => value > HOP + 4 && value < length - radius - HOP - 4)
+            .sort((a, b) => a - b);
+          for (const position of positions) {
+            const enter = position - HOP;
+            const leave = position + HOP;
+            if (horizontal) {
+              const y = current.y;
+              path += ` L ${previous.x + direction * enter} ${y}`;
+              path += ` A ${HOP} ${HOP} 0 0 ${direction > 0 ? 1 : 0} ${previous.x + direction * leave} ${y}`;
+            } else {
+              const x = current.x;
+              path += ` L ${x} ${previous.y + direction * enter}`;
+              path += ` A ${HOP} ${HOP} 0 0 ${direction > 0 ? 0 : 1} ${x} ${previous.y + direction * leave}`;
+            }
+          }
+          const stopX = horizontal ? current.x - direction * radius : current.x;
+          const stopY = horizontal ? current.y : current.y - direction * radius;
+          path += ` L ${stopX} ${stopY}`;
+          if (next && radius > 1) {
+            const nextHorizontal = next.y === current.y;
+            const outward = nextHorizontal ? sign(next.x - current.x) : sign(next.y - current.y);
+            const resumeX = nextHorizontal ? current.x + outward * radius : current.x;
+            const resumeY = nextHorizontal ? current.y : current.y + outward * radius;
+            const inX = horizontal ? direction : 0;
+            const inY = horizontal ? 0 : direction;
+            const outX = nextHorizontal ? outward : 0;
+            const outY = nextHorizontal ? 0 : outward;
+            const sweep = inX * outY - inY * outX > 0 ? 1 : 0;
+            path += ` A ${radius} ${radius} 0 0 ${sweep} ${resumeX} ${resumeY}`;
+          }
+        }
+        return path;
+      }
+
+      function labelPlacement(points, text) {
+        let best = null;
+        for (let index = 0; index < points.length - 1; index += 1) {
+          const from = points[index];
+          const to = points[index + 1];
+          const horizontal = from.y === to.y;
+          const length = horizontal ? Math.abs(to.x - from.x) : Math.abs(to.y - from.y);
+          if (!best || length > best.length) best = { from, to, horizontal, length };
+        }
+        const width = text.length * LABEL_CHAR + 8;
+        if (!best || best.length < width + 24) return null;
+        if (best.horizontal) {
+          const centerX = (best.from.x + best.to.x) / 2;
+          const y = best.from.y;
+          const above = y - rowBottom(Math.floor((y - ORIGIN_Y) / ROW_PITCH)) >= LABEL_GAP + LABEL_H + GRID;
+          const maskY = above ? y - LABEL_GAP - LABEL_H : y + LABEL_GAP;
           return {
-            upstream: state.selectedNode ? walk(state.selectedNode, incoming) : new Set(),
-            downstream: state.selectedNode ? walk(state.selectedNode, outgoing) : new Set(),
+            mask: { x: centerX - width / 2, y: maskY, width, height: LABEL_H },
+            text: { x: centerX, y: maskY + 9, anchor: "middle" }
           };
         }
+        const centerY = (best.from.y + best.to.y) / 2;
+        const x = best.from.x;
+        const room = GAP - ((x - colRight(Math.floor((x - ORIGIN_X) / COL_PITCH))) % GAP);
+        const right = room >= width + LABEL_GAP + GRID;
+        const maskX = right ? x + LABEL_GAP : x - LABEL_GAP - width;
+        return {
+          mask: { x: maskX, y: centerY - LABEL_H / 2, width, height: LABEL_H },
+          text: { x: right ? maskX + 4 : maskX + width - 4, y: centerY + 3, anchor: right ? "start" : "end" }
+        };
+      }
 
-        function flowPairs() {
-          if (state.selectedFlow === null) return new Set();
-          const steps = data.flows[state.selectedFlow].steps;
-          return new Set(steps.slice(0, -1).map((id, index) => `${id}\u0000${steps[index + 1]}`));
+      function graphSets(ids, edges) {
+        const outgoing = new Map([...ids].map(id => [id, []]));
+        const incoming = new Map([...ids].map(id => [id, []]));
+        edges.forEach(edge => { outgoing.get(edge.from).push(edge.to); incoming.get(edge.to).push(edge.from); });
+        const walk = (start, adjacency) => {
+          const found = new Set();
+          const pending = [...(adjacency.get(start) || [])];
+          while (pending.length) {
+            const id = pending.shift();
+            if (found.has(id)) continue;
+            found.add(id);
+            pending.push(...(adjacency.get(id) || []));
+          }
+          found.delete(start);
+          return found;
+        };
+        return {
+          upstream: state.selectedNode ? walk(state.selectedNode, incoming) : new Set(),
+          downstream: state.selectedNode ? walk(state.selectedNode, outgoing) : new Set()
+        };
+      }
+
+      function flowPairs() {
+        if (state.selectedFlow === null) return new Set();
+        const steps = data.flows[state.selectedFlow].steps;
+        return new Set(steps.slice(0, -1).map((id, index) => `${id}\u0000${steps[index + 1]}`));
+      }
+
+      function zoneBoxes(nodes) {
+        const groups = new Map();
+        for (const node of nodes) {
+          if (!groups.has(node.boundary)) groups.set(node.boundary, []);
+          groups.get(node.boundary).push(rectOf(node.id));
+        }
+        return [...groups].map(([name, rects]) => {
+          const first = Math.min(...rects.map(rect => rect.row));
+          const last = Math.max(...rects.map(rect => rect.row));
+          const minX = Math.min(...rects.map(rect => rect.x)) - ZONE_SIDE;
+          const maxX = Math.max(...rects.map(rect => rect.x)) + NODE_W + ZONE_SIDE;
+          const top = rowTop(first) - ZONE_TOP;
+          const bottom = rowBottom(last) + ZONE_BOTTOM;
+          return { name, x: minX, y: top, width: maxX - minX, height: bottom - top };
+        });
+      }
+
+      function draw() {
+        const nodes = visibleNodes();
+        const ids = new Set(nodes.map(node => node.id));
+        const edges = visibleEdges(ids);
+        state.cells = calculateCells(nodes, edges);
+        state.counts = { nodes: nodes.length, edges: edges.length };
+        viewport.replaceChildren();
+
+        const selection = graphSets(ids, edges);
+        const selectedFlow = state.selectedFlow === null ? null : data.flows[state.selectedFlow];
+        const selectedFlowNodes = new Set(selectedFlow?.steps || []);
+        const selectedFlowPairs = flowPairs();
+        const query = state.query.trim().toLowerCase();
+        const matches = new Set(nodes
+          .filter(node => `${node.id} ${node.path} ${node.role}`.toLowerCase().includes(query))
+          .map(node => node.id));
+        const hasFocus = Boolean(state.selectedNode || selectedFlow || query);
+
+        for (const box of zoneBoxes(nodes)) {
+          const zone = applyBoundaryStyle(svgElement("rect", { class: "zone", x: box.x, y: box.y, width: box.width, height: box.height, rx: RADIUS }), box.name);
+          viewport.append(zone);
+          const zoneText = `${boundaryKey(box.name)} ${box.name}`;
+          const width = zoneText.length * LABEL_CHAR + 12;
+          viewport.append(svgElement("rect", { class: "zone-mask", x: box.x + 12, y: box.y + 4, width, height: LABEL_H }));
+          const label = applyBoundaryStyle(svgElement("text", { class: "zone-label", x: box.x + 18, y: box.y + 13 }), box.name);
+          label.textContent = zoneText;
+          viewport.append(label);
         }
 
-        function boundaryBoxes(nodes) {
-          const groups = new Map();
-          for (const node of nodes) {
-            const position = state.positions.get(node.id);
-            if (!groups.has(node.boundary)) groups.set(node.boundary, []);
-            groups.get(node.boundary).push(position);
+        const classesFor = edge => {
+          const pair = `${edge.from}\u0000${edge.to}`;
+          const classes = ["edge"];
+          if (edge.evidence.status === "unknown") classes.push("unknown");
+          if (selectedFlowPairs.has(pair)) return [...classes, "flow"];
+          if (state.selectedNode && selection.upstream.has(edge.from) && (selection.upstream.has(edge.to) || edge.to === state.selectedNode)) classes.push("up");
+          if (state.selectedNode && (edge.from === state.selectedNode || selection.downstream.has(edge.from)) && selection.downstream.has(edge.to)) classes.push("down");
+          if (classes.length === (edge.evidence.status === "unknown" ? 2 : 1) && hasFocus) classes.push("dim");
+          return classes;
+        };
+
+        const edgeClasses = edges.map(classesFor);
+        const routes = calculateRoutes(edges);
+        const priority = new Map(routes.map(route => {
+          const classes = edgeClasses[route.index];
+          if (classes.includes("dim")) return [route.index, 0];
+          if (classes.includes("flow")) return [route.index, 3];
+          if (classes.includes("up") || classes.includes("down")) return [route.index, 2];
+          return [route.index, 1];
+        }));
+        const hops = calculateHops(routes, priority);
+        const showLabels = hasFocus || edges.length <= LABEL_BUDGET;
+
+        for (const route of routes) {
+          const classes = edgeClasses[route.index];
+          const segmentHops = new Map();
+          for (const [key, values] of hops) {
+            const [index, segment] = key.split("\u0000");
+            if (Number(index) === route.index) segmentHops.set(segment, values);
           }
-          return [...groups].map(([name, positions]) => {
-            const minX = Math.min(...positions.map((position) => position.x)) - 24;
-            const minY = Math.min(...positions.map((position) => position.y)) - 32;
-            const maxX = Math.max(...positions.map((position) => position.x)) + nodeWidth + 24;
-            const maxY = Math.max(...positions.map((position) => position.y)) + nodeHeight + 24;
-            return { name, x: minX, y: minY, width: maxX - minX, height: maxY - minY };
+          const edge = edges[route.index];
+          viewport.append(svgElement("path", {
+            class: classes.join(" "), d: buildPath(route.points, segmentHops),
+            "data-index": route.index, "data-from": edge.from, "data-to": edge.to, "data-edge-type": edge.type
+          }));
+          if (!showLabels || classes.includes("dim")) continue;
+          const text = edge.type.toUpperCase();
+          const placement = labelPlacement(route.points, text);
+          if (!placement) continue;
+          viewport.append(svgElement("rect", {
+            class: "edge-mask", "data-index": route.index, "data-edge-type": edge.type, x: placement.mask.x, y: placement.mask.y,
+            width: placement.mask.width, height: placement.mask.height, rx: 2
+          }));
+          const label = svgElement("text", {
+            class: "edge-label", "data-index": route.index, "data-edge-type": edge.type,
+            x: placement.text.x, y: placement.text.y, "text-anchor": placement.text.anchor
           });
+          label.textContent = text;
+          viewport.append(label);
         }
 
-        function edgePath(source, target) {
-          const startX = source.x + nodeWidth;
-          const startY = source.y + nodeHeight / 2;
-          const endX = target.x;
-          const endY = target.y + nodeHeight / 2;
-          const bend = Math.max(45, Math.abs(endX - startX) * 0.48);
-          return `M ${startX} ${startY} C ${startX + bend} ${startY}, ${endX - bend} ${endY}, ${endX} ${endY}`;
-        }
-
-        function draw() {
-          const nodes = visibleNodes();
-          const ids = new Set(nodes.map((node) => node.id));
-          const edges = visibleEdges(ids);
-          calculateLayout(nodes, edges);
-          viewport.replaceChildren();
-          const selection = graphSets(ids, edges);
-          const selectedFlow = state.selectedFlow === null ? null : data.flows[state.selectedFlow];
-          const selectedFlowNodes = new Set(selectedFlow?.steps || []);
-          const selectedFlowPairs = flowPairs();
-          const query = state.query.trim().toLowerCase();
-          const matches = new Set(
-            nodes
-              .filter((node) =>
-                `${node.id} ${node.path} ${node.role}`.toLowerCase().includes(query),
-              )
-              .map((node) => node.id),
-          );
-          const hasFocus = Boolean(state.selectedNode || selectedFlow || query);
-
-          for (const box of boundaryBoxes(nodes)) {
-            viewport.append(
-              svgElement('rect', {
-                class: 'boundary',
-                x: box.x,
-                y: box.y,
-                width: box.width,
-                height: box.height,
-                rx: 12,
-              }),
-            );
-            const label = svgElement('text', {
-              class: 'boundary-label',
-              x: box.x + 10,
-              y: box.y + 17,
-            });
-            label.textContent = box.name;
-            viewport.append(label);
+        for (const node of nodes) {
+          const rect = rectOf(node.id);
+          const classes = ["node"];
+          if (node.id === state.selectedNode) classes.push("focus");
+          else if (selectedFlowNodes.has(node.id)) classes.push("flow");
+          else {
+            if (selection.upstream.has(node.id)) classes.push("up");
+            if (selection.downstream.has(node.id)) classes.push("down");
+            if (query && matches.has(node.id)) classes.push("match");
+            if (classes.length === 1 && hasFocus) classes.push("dim");
           }
-
-          for (const edge of edges) {
-            const source = state.positions.get(edge.from);
-            const target = state.positions.get(edge.to);
-            const pair = `${edge.from}\u0000${edge.to}`;
-            const classes = ['edge'];
-            if (edge.evidence.status === 'unknown') classes.push('unknown');
-            if (selectedFlowPairs.has(pair)) classes.push('flow');
-            else {
-              if (
-                state.selectedNode &&
-                selection.upstream.has(edge.from) &&
-                (selection.upstream.has(edge.to) || edge.to === state.selectedNode)
-              )
-                classes.push('up');
-              if (
-                state.selectedNode &&
-                (edge.from === state.selectedNode || selection.downstream.has(edge.from)) &&
-                selection.downstream.has(edge.to)
-              )
-                classes.push('down');
-              if (classes.length === (edge.evidence.status === 'unknown' ? 2 : 1) && hasFocus)
-                classes.push('dim');
+          const group = applyBoundaryStyle(svgElement("g", {
+            class: classes.join(" "), transform: `translate(${rect.x} ${rect.y})`,
+            tabindex: "0", role: "button", "aria-label": `${node.id}, ${node.type}, ${node.boundary}, ${node.role}`
+          }), node.boundary);
+          group.dataset.nodeId = node.id;
+          group.dataset.type = node.type;
+          group.append(svgElement("rect", { class: "box", width: NODE_W, height: NODE_H, rx: 6 }));
+          group.append(svgElement("rect", { class: "group-rail", x: 0, y: 8, width: 4, height: NODE_H - 16, rx: 2 }));
+          group.append(svgElement("rect", { class: "tag", x: 12, y: 12, width: 52, height: LABEL_H, rx: 2 }));
+          const tag = svgElement("text", { class: "tag-text", x: 38, y: 21, "text-anchor": "middle" });
+          tag.textContent = TAGS[node.type] || "MOD";
+          const title = svgElement("text", { class: "node-title", x: 12, y: 44 });
+          title.textContent = truncate(node.id, 33);
+          const path = svgElement("text", { class: "node-path", x: 12, y: 60 });
+          path.textContent = truncate(node.path, 44);
+          group.append(tag, title, path);
+          group.addEventListener("click", event => {
+            event.stopPropagation();
+            if (state.skipCanvasClick) {
+              state.skipCanvasClick = false;
+              return;
             }
-            viewport.append(
-              svgElement('path', { class: classes.join(' '), d: edgePath(source, target) }),
-            );
-            const label = svgElement('text', {
-              class: `edge-label${classes.includes('dim') ? ' dim' : ''}`,
-              x: (source.x + nodeWidth + target.x) / 2,
-              y: (source.y + target.y + nodeHeight) / 2 - 6,
-              'text-anchor': 'middle',
-            });
-            label.textContent = edge.type;
-            viewport.append(label);
-          }
-
-          for (const node of nodes) {
-            const position = state.positions.get(node.id);
-            const classes = ['node'];
-            if (node.id === state.selectedNode) classes.push('focus');
-            else if (selectedFlowNodes.has(node.id)) classes.push('flow');
-            else {
-              if (selection.upstream.has(node.id)) classes.push('up');
-              if (selection.downstream.has(node.id)) classes.push('down');
-              if (query && matches.has(node.id)) classes.push('match');
-              if (classes.length === 1 && hasFocus) classes.push('dim');
-            }
-            const group = svgElement('g', {
-              class: classes.join(' '),
-              transform: `translate(${position.x} ${position.y})`,
-              tabindex: '0',
-              role: 'button',
-              'aria-label': `${node.id}: ${node.role}`,
-              style: `--node-color:${colors[node.type] || 'var(--module)'}`,
-            });
-            group.dataset.nodeId = node.id;
-            group.append(svgElement('rect', { width: nodeWidth, height: nodeHeight }));
-            group.append(
-              svgElement('rect', { class: 'type-bar', width: 5, height: nodeHeight, rx: 3 }),
-            );
-            const title = svgElement('text', { class: 'node-title', x: 16, y: 27 });
-            title.textContent = node.id;
-            const path = svgElement('text', { class: 'node-path', x: 16, y: 48 });
-            path.textContent = node.path.length > 29 ? `${node.path.slice(0, 27)}…` : node.path;
-            group.append(title, path);
-            group.addEventListener('click', (event) => {
-              event.stopPropagation();
-              if (state.skipCanvasClick) {
-                state.skipCanvasClick = false;
-                return;
-              }
-              selectNode(node.id);
-            });
-            group.addEventListener('keydown', (event) => {
-              if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                selectNode(node.id);
-              }
-            });
-            group.addEventListener('pointerdown', (event) => {
-              event.stopPropagation();
-              svg.setPointerCapture(event.pointerId);
-              state.drag = {
-                id: node.id,
-                pointerId: event.pointerId,
-                x: event.clientX,
-                y: event.clientY,
-                start: { ...position },
-                moved: false,
-              };
-            });
-            viewport.append(group);
-          }
-          applyTransform();
-          updateStatus(nodes.length, edges.length);
-        }
-
-        function applyTransform() {
-          viewport.setAttribute(
-            'transform',
-            `translate(${state.view.x} ${state.view.y}) scale(${state.view.k})`,
-          );
-        }
-
-        function fitMap() {
-          const nodes = visibleNodes();
-          if (!nodes.length) return;
-          const boxes = boundaryBoxes(nodes);
-          const minX = Math.min(...boxes.map((box) => box.x));
-          const minY = Math.min(...boxes.map((box) => box.y));
-          const maxX = Math.max(...boxes.map((box) => box.x + box.width));
-          const maxY = Math.max(...boxes.map((box) => box.y + box.height));
-          const width = svg.clientWidth;
-          const height = svg.clientHeight;
-          state.view.k = Math.min(
-            1.15,
-            Math.max(0.28, Math.min((width - 50) / (maxX - minX), (height - 50) / (maxY - minY))),
-          );
-          state.view.x = (width - (maxX - minX) * state.view.k) / 2 - minX * state.view.k;
-          state.view.y = (height - (maxY - minY) * state.view.k) / 2 - minY * state.view.k;
-          applyTransform();
-        }
-
-        function setZoom(factor) {
-          const next = Math.min(2.5, Math.max(0.2, state.view.k * factor));
-          const centerX = svg.clientWidth / 2;
-          const centerY = svg.clientHeight / 2;
-          state.view.x = centerX - (centerX - state.view.x) * (next / state.view.k);
-          state.view.y = centerY - (centerY - state.view.y) * (next / state.view.k);
-          state.view.k = next;
-          applyTransform();
-        }
-
-        function selectNode(id) {
-          state.selectedNode = state.selectedNode === id ? null : id;
-          state.selectedFlow = null;
-          renderFlows();
-          renderDetails();
-          draw();
-        }
-
-        function renderDetails() {
-          const details = document.getElementById('details');
-          details.replaceChildren();
-          const node = data.nodes.find((item) => item.id === state.selectedNode);
-          if (!node) {
-            details.append(
-              htmlElement(
-                'p',
-                'empty',
-                'Select a module to inspect its role, evidence, callers, dependencies, tests, and flows.',
-              ),
-            );
-            return;
-          }
-          details.append(htmlElement('h2', 'detail-title', node.id));
-          details.append(htmlElement('p', 'detail-path', node.path));
-          const blocks = [
-            ['Role', [node.role]],
-            ['Entrypoints', node.entrypoints],
-            ['Constraints', node.constraints],
-            ['Evidence', node.evidence.locations.map((item) => `${item.path}:${item.symbol}`)],
-          ];
-          for (const [title, values] of blocks) {
-            const block = htmlElement('div', 'detail-block');
-            block.append(htmlElement('h3', '', title));
-            if (values.length === 1) block.append(htmlElement('p', '', values[0]));
-            else {
-              const list = htmlElement('ul');
-              values.forEach((value) => list.append(htmlElement('li', '', value)));
-              block.append(list);
-            }
-            details.append(block);
-          }
-          const tests = htmlElement('div', 'detail-block test-list');
-          tests.append(htmlElement('h3', '', 'Related tests'));
-          if (node.tests.length) {
-            const list = htmlElement('ul');
-            node.tests.forEach((value) => list.append(htmlElement('li', '', value)));
-            tests.append(list);
-          } else tests.append(htmlElement('p', 'empty', 'No related test was found.'));
-          details.append(tests);
-          const flowNames = data.flows
-            .filter((flow) => flow.steps.includes(node.id))
-            .map((flow) => flow.trigger);
-          const flowBlock = htmlElement('div', 'detail-block');
-          flowBlock.append(htmlElement('h3', '', 'Flow membership'));
-          flowBlock.append(
-            htmlElement(
-              'p',
-              '',
-              flowNames.length ? flowNames.join(' · ') : 'No selected flow includes this node.',
-            ),
-          );
-          details.append(flowBlock);
-        }
-
-        function renderTypes() {
-          const filters = document.getElementById('type-filters');
-          const legend = document.getElementById('legend');
-          filters.replaceChildren();
-          legend.replaceChildren();
-          for (const type of types) {
-            const label = htmlElement('label', 'filter');
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.checked = state.enabledTypes.has(type);
-            checkbox.addEventListener('change', () => {
-              checkbox.checked ? state.enabledTypes.add(type) : state.enabledTypes.delete(type);
-              draw();
-              fitMap();
-            });
-            label.append(checkbox, htmlElement('span', 'swatch'), document.createTextNode(type));
-            label.querySelector('.swatch').style.background = colors[type];
-            filters.append(label);
-            const row = htmlElement('div', 'legend-row');
-            const swatch = htmlElement('span', 'swatch');
-            swatch.style.background = colors[type];
-            row.append(swatch, document.createTextNode(type));
-            legend.append(row);
-          }
-          const meanings = [
-            ['var(--up)', 'upstream'],
-            ['var(--down)', 'downstream'],
-            ['var(--flow)', 'selected flow'],
-            ['var(--danger)', 'unknown edge'],
-          ];
-          meanings.forEach(([color, text]) => {
-            const row = htmlElement('div', 'legend-row');
-            const swatch = htmlElement('span', 'swatch');
-            swatch.style.background = color;
-            row.append(swatch, document.createTextNode(text));
-            legend.append(row);
+            selectNode(node.id);
           });
-        }
-
-        function renderFlows() {
-          const list = document.getElementById('flow-list');
-          list.replaceChildren();
-          data.flows.forEach((flow, index) => {
-            const button = htmlElement('button', 'flow-button', flow.trigger);
-            button.type = 'button';
-            if (state.selectedFlow === index) button.classList.add('active');
-            if (state.selectedNode && flow.steps.includes(state.selectedNode))
-              button.classList.add('related');
-            button.append(htmlElement('small', '', `${flow.steps.join(' → ')} · ${flow.outcome}`));
-            button.addEventListener('click', () => {
-              state.selectedFlow = state.selectedFlow === index ? null : index;
-              state.selectedNode = null;
-              renderFlows();
-              renderDetails();
-              draw();
-            });
-            list.append(button);
+          group.addEventListener("keydown", event => {
+            if (event.key === "Enter" || event.key === " ") { event.preventDefault(); selectNode(node.id); }
           });
-        }
-
-        function updateStatus(nodeCount, edgeCount) {
-          const unknown = data.edges.filter((edge) => edge.evidence.status === 'unknown').length;
-          document.getElementById('status').textContent =
-            `${nodeCount} nodes · ${edgeCount} edges · ${unknown} unknown · zoom ${Math.round(state.view.k * 100)}%`;
-        }
-
-        document.getElementById('search').addEventListener('input', (event) => {
-          state.query = event.target.value;
-          draw();
-        });
-        document.getElementById('zoom-in').addEventListener('click', () => setZoom(1.2));
-        document.getElementById('zoom-out').addEventListener('click', () => setZoom(1 / 1.2));
-        document.getElementById('fit').addEventListener('click', fitMap);
-        svg.addEventListener(
-          'wheel',
-          (event) => {
-            event.preventDefault();
-            setZoom(event.deltaY < 0 ? 1.12 : 1 / 1.12);
-          },
-          { passive: false },
-        );
-        svg.addEventListener('pointerdown', (event) => {
-          if (event.target.closest?.('.node')) return;
-          svg.setPointerCapture(event.pointerId);
-          state.pan = {
-            pointerId: event.pointerId,
-            x: event.clientX,
-            y: event.clientY,
-            start: { ...state.view },
-          };
-        });
-        svg.addEventListener('pointermove', (event) => {
-          if (state.drag?.pointerId === event.pointerId) {
-            const position = state.drag.start;
-            if (
-              Math.abs(event.clientX - state.drag.x) > 3 ||
-              Math.abs(event.clientY - state.drag.y) > 3
-            )
-              state.drag.moved = true;
-            state.positions.set(state.drag.id, {
-              x: position.x + (event.clientX - state.drag.x) / state.view.k,
-              y: position.y + (event.clientY - state.drag.y) / state.view.k,
-            });
-            draw();
-          } else if (state.pan?.pointerId === event.pointerId) {
-            state.view.x = state.pan.start.x + event.clientX - state.pan.x;
-            state.view.y = state.pan.start.y + event.clientY - state.pan.y;
-            applyTransform();
-          }
-        });
-        svg.addEventListener('pointerup', (event) => {
-          if (state.drag?.pointerId === event.pointerId) {
-            const selectedId = state.drag.moved ? null : state.drag.id;
-            state.drag = null;
-            state.skipCanvasClick = true;
-            if (selectedId) selectNode(selectedId);
-          }
-          if (state.pan?.pointerId === event.pointerId) state.pan = null;
-        });
-        svg.addEventListener('click', (event) => {
-          if (state.skipCanvasClick) {
+          group.addEventListener("pointerdown", event => {
+            event.stopPropagation();
             state.skipCanvasClick = false;
-            return;
+            svg.setPointerCapture(event.pointerId);
+            state.drag = { id: node.id, pointerId: event.pointerId, x: event.clientX, y: event.clientY, start: { ...rect }, moved: false, offset: { x: 0, y: 0 } };
+          });
+          viewport.append(group);
+        }
+        applyTransform();
+      }
+
+      function applyTransform() {
+        viewport.setAttribute("transform", `translate(${state.view.x} ${state.view.y}) scale(${state.view.k})`);
+        updateStatus();
+      }
+
+      function contentBox() {
+        const nodes = visibleNodes();
+        if (!nodes.length) return null;
+        const rects = nodes.map(node => rectOf(node.id));
+        return {
+          minX: Math.min(...rects.map(rect => rect.x)) - ZONE_SIDE - GRID * 4,
+          minY: Math.min(...rects.map(rect => rect.y)) - ZONE_TOP - GRID * 4,
+          maxX: Math.max(...rects.map(rect => rect.x)) + NODE_W + ZONE_SIDE + GRID * 4,
+          maxY: Math.max(...rects.map(rect => rect.y)) + NODE_H + ZONE_BOTTOM + GRID * 4
+        };
+      }
+
+      function fitMap() {
+        const box = contentBox();
+        if (!box) return;
+        const width = svg.clientWidth;
+        const height = svg.clientHeight;
+        const spanX = box.maxX - box.minX;
+        const spanY = box.maxY - box.minY;
+        state.view.k = Math.min(1.15, Math.max(.12, Math.min((width - 48) / spanX, (height - 48) / spanY)));
+        state.view.x = (width - spanX * state.view.k) / 2 - box.minX * state.view.k;
+        state.view.y = (height - spanY * state.view.k) / 2 - box.minY * state.view.k;
+        applyTransform();
+      }
+
+      function setZoom(factor) {
+        const next = Math.min(2.5, Math.max(.1, state.view.k * factor));
+        const centerX = svg.clientWidth / 2;
+        const centerY = svg.clientHeight / 2;
+        state.view.x = centerX - (centerX - state.view.x) * (next / state.view.k);
+        state.view.y = centerY - (centerY - state.view.y) * (next / state.view.k);
+        state.view.k = next;
+        applyTransform();
+      }
+
+      function selectNode(id) {
+        state.selectedNode = state.selectedNode === id ? null : id;
+        state.selectedFlow = null;
+        renderFlows();
+        renderDetails();
+        draw();
+      }
+
+      function renderDetails() {
+        const details = document.getElementById("details");
+        details.replaceChildren();
+        const node = data.nodes.find(item => item.id === state.selectedNode);
+        if (!node) {
+          details.append(htmlElement("p", "empty", "Select a module to inspect its role, evidence, callers, dependencies, tests, and flows."));
+          return;
+        }
+        details.append(applyBoundaryStyle(htmlElement("p", "eyebrow detail-boundary", `${boundaryKey(node.boundary)} ${node.boundary}`), node.boundary));
+        details.append(htmlElement("h2", "detail-title", node.id));
+        details.append(htmlElement("p", "detail-path", node.path));
+        const blocks = [
+          ["Role", [node.role]], ["Entrypoints", node.entrypoints], ["Constraints", node.constraints],
+          ["Evidence", node.evidence.locations.map(item => `${item.path}:${item.symbol}`)]
+        ];
+        for (const [title, values] of blocks) {
+          const block = htmlElement("div", "detail-block");
+          block.append(htmlElement("h3", "", title));
+          if (values.length === 1) block.append(htmlElement("p", "", values[0]));
+          else {
+            const list = htmlElement("ul");
+            values.forEach(value => list.append(htmlElement("li", "", value)));
+            block.append(list);
           }
-          if (event.target === svg || event.target.classList.contains('map-bg')) {
-            state.selectedNode = null;
-            state.selectedFlow = null;
-            renderDetails();
-            renderFlows();
+          details.append(block);
+        }
+        const tests = htmlElement("div", "detail-block test-list");
+        tests.append(htmlElement("h3", "", "Related tests"));
+        if (node.tests.length) {
+          const list = htmlElement("ul");
+          node.tests.forEach(value => list.append(htmlElement("li", "", value)));
+          tests.append(list);
+        } else tests.append(htmlElement("p", "empty", "No related test was found."));
+        details.append(tests);
+        const flowNames = data.flows.filter(flow => flow.steps.includes(node.id)).map(flow => flow.trigger);
+        const flowBlock = htmlElement("div", "detail-block");
+        flowBlock.append(htmlElement("h3", "", "Flow membership"));
+        flowBlock.append(htmlElement("p", "", flowNames.length ? flowNames.join(" \u00b7 ") : "No selected flow includes this node."));
+        details.append(flowBlock);
+      }
+
+      function renderTypes() {
+        const filters = document.getElementById("type-filters");
+        const boundaryLegend = document.getElementById("boundary-legend");
+        const connectionLegend = document.getElementById("connection-legend");
+        const legend = document.getElementById("legend");
+        filters.replaceChildren();
+        boundaryLegend.replaceChildren();
+        connectionLegend.replaceChildren();
+        legend.replaceChildren();
+        for (const type of types) {
+          const label = htmlElement("label", "filter");
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.checked = state.enabledTypes.has(type);
+          checkbox.addEventListener("change", () => {
+            if (checkbox.checked) state.enabledTypes.add(type);
+            else state.enabledTypes.delete(type);
             draw();
-          }
+            fitMap();
+          });
+          label.append(checkbox, htmlElement("code", "type-key", TAGS[type] || "[] MOD"), document.createTextNode(type));
+          filters.append(label);
+        }
+        for (const boundary of boundaries) {
+          const row = applyBoundaryStyle(htmlElement("div", "legend-row"), boundary);
+          row.append(htmlElement("span", "boundary-chip"), htmlElement("code", "", boundaryKey(boundary)), document.createTextNode(boundary));
+          boundaryLegend.append(row);
+        }
+        for (const type of EDGE_TYPES) {
+          const row = htmlElement("div", "legend-row");
+          const key = htmlElement("span", "edge-key");
+          key.dataset.edgeType = type;
+          row.append(key, document.createTextNode(type));
+          connectionLegend.append(row);
+        }
+        for (const [name, meaning] of STATES) {
+          const row = htmlElement("div", "legend-row");
+          const chip = htmlElement("span", "rule-chip");
+          chip.dataset.state = name;
+          row.append(chip, document.createTextNode(meaning));
+          legend.append(row);
+        }
+      }
+
+      function renderFlows() {
+        const list = document.getElementById("flow-list");
+        list.replaceChildren();
+        data.flows.forEach((flow, index) => {
+          const button = htmlElement("button", "flow-button", flow.trigger);
+          button.type = "button";
+          if (state.selectedFlow === index) button.classList.add("active");
+          if (state.selectedNode && flow.steps.includes(state.selectedNode)) button.classList.add("related");
+          button.append(htmlElement("small", "", `${flow.steps.join(" \u2192 ")} \u00b7 ${flow.outcome}`));
+          button.addEventListener("click", () => {
+            state.selectedFlow = state.selectedFlow === index ? null : index;
+            state.selectedNode = null;
+            renderFlows();
+            renderDetails();
+            draw();
+          });
+          list.append(button);
         });
-        window.addEventListener('resize', fitMap);
-        document.addEventListener('keydown', (event) => {
-          if (
-            event.key !== 'Escape' ||
-            (state.selectedNode === null && state.selectedFlow === null)
-          )
-            return;
-          const selectedNode = state.selectedNode;
-          const selectedFlow = state.selectedFlow;
+      }
+
+      function updateStatus() {
+        const unknown = data.edges.filter(edge => edge.evidence.status === "unknown").length;
+        document.getElementById("status").textContent =
+          `${state.counts.nodes} nodes \u00b7 ${state.counts.edges} edges \u00b7 ${unknown} unknown \u00b7 zoom ${Math.round(state.view.k * 100)}%`;
+      }
+
+      function dropNode(id, deltaX, deltaY) {
+        const cell = state.cells.get(id);
+        const row = Math.max(0, cell.row + Math.round(deltaY / ROW_PITCH));
+        const col = Math.max(0, cell.col + Math.round(deltaX / COL_PITCH));
+        if (row === cell.row && col === cell.col) return false;
+        const holder = [...state.cells].find(([other, value]) => other !== id && value.row === row && value.col === col);
+        if (holder) state.overrides.set(holder[0], { ...cell });
+        state.overrides.set(id, { row, col });
+        return true;
+      }
+
+      document.getElementById("theme-toggle").addEventListener("click", () => {
+        applyTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+      });
+      document.getElementById("search").addEventListener("input", event => { state.query = event.target.value; draw(); });
+      document.getElementById("zoom-in").addEventListener("click", () => setZoom(1.2));
+      document.getElementById("zoom-out").addEventListener("click", () => setZoom(1 / 1.2));
+      document.getElementById("fit").addEventListener("click", fitMap);
+      svg.addEventListener("wheel", event => { event.preventDefault(); setZoom(event.deltaY < 0 ? 1.12 : 1 / 1.12); }, { passive: false });
+      svg.addEventListener("pointerdown", event => {
+        if (event.target.closest?.(".node")) return;
+        state.skipCanvasClick = false;
+        svg.setPointerCapture(event.pointerId);
+        state.pan = { pointerId: event.pointerId, x: event.clientX, y: event.clientY, start: { ...state.view } };
+      });
+      svg.addEventListener("pointermove", event => {
+        if (state.drag?.pointerId === event.pointerId) {
+          const deltaX = (event.clientX - state.drag.x) / state.view.k;
+          const deltaY = (event.clientY - state.drag.y) / state.view.k;
+          if (Math.abs(deltaX) > 3 || Math.abs(deltaY) > 3) state.drag.moved = true;
+          state.drag.offset = { x: deltaX, y: deltaY };
+          const group = viewport.querySelector(`[data-node-id="${CSS.escape(state.drag.id)}"]`);
+          if (group) group.setAttribute("transform", `translate(${state.drag.start.x + deltaX} ${state.drag.start.y + deltaY})`);
+        } else if (state.pan?.pointerId === event.pointerId) {
+          state.view.x = state.pan.start.x + event.clientX - state.pan.x;
+          state.view.y = state.pan.start.y + event.clientY - state.pan.y;
+          applyTransform();
+        }
+      });
+      svg.addEventListener("pointerup", event => {
+        if (state.drag?.pointerId === event.pointerId) {
+          const drag = state.drag;
+          state.drag = null;
+          state.skipCanvasClick = true;
+          if (drag.moved) {
+            // Redraw even when the drop snaps back, so no node keeps an off-grid transform.
+            dropNode(drag.id, drag.offset.x, drag.offset.y);
+            draw();
+          } else selectNode(drag.id);
+        }
+        if (state.pan?.pointerId === event.pointerId) state.pan = null;
+      });
+      svg.addEventListener("click", event => {
+        if (state.skipCanvasClick) {
+          state.skipCanvasClick = false;
+          return;
+        }
+        if (event.target === svg || event.target.classList.contains("map-bg")) {
           state.selectedNode = null;
           state.selectedFlow = null;
           renderDetails();
           renderFlows();
           draw();
-          requestAnimationFrame(() => {
-            if (selectedNode)
-              viewport.querySelector(`[data-node-id="${CSS.escape(selectedNode)}"]`)?.focus();
-            else if (selectedFlow !== null)
-              document.querySelectorAll('.flow-button')[selectedFlow]?.focus();
-          });
-        });
-
-        renderTypes();
+        }
+      });
+      window.addEventListener("resize", fitMap);
+      document.addEventListener("keydown", event => {
+        if (event.key !== "Escape" || (state.selectedNode === null && state.selectedFlow === null)) return;
+        const selectedNode = state.selectedNode;
+        const selectedFlow = state.selectedFlow;
+        state.selectedNode = null;
+        state.selectedFlow = null;
+        renderDetails();
         renderFlows();
         draw();
-        requestAnimationFrame(fitMap);
-      })();
-    </script>
-  </body>
+        requestAnimationFrame(() => {
+          if (selectedNode) viewport.querySelector(`[data-node-id="${CSS.escape(selectedNode)}"]`)?.focus();
+          else if (selectedFlow !== null) document.querySelectorAll(".flow-button")[selectedFlow]?.focus();
+        });
+      });
+
+      applyTheme(readTheme());
+      renderTypes();
+      renderFlows();
+      draw();
+      requestAnimationFrame(fitMap);
+    })();
+  </script>
+</body>
 </html>
