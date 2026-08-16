@@ -1,12 +1,21 @@
-# Codex Studio
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://shieldcn.dev/header/document.svg?title=Codex+Studio&subtitle=Local-first+image+operations+through+your+Codex+session&logo=openai&theme=cyan&align=center&mode=dark" />
+    <img alt="Codex Studio — local-first image operations through your Codex session" src="https://shieldcn.dev/header/document.svg?title=Codex+Studio&subtitle=Local-first+image+operations+through+your+Codex+session&logo=openai&theme=cyan&align=center&mode=light" />
+  </picture>
+</p>
 
-> Local-first image studio for creating, reviewing, and organizing AI images through your authenticated Codex/ChatGPT session.
+<p align="center">
+  <a href="https://github.com/gvastethecreator/codex-studio/actions/workflows/ci.yml"><img alt="CI status" src="https://shieldcn.dev/github/ci/gvastethecreator/codex-studio.svg?workflow=ci&branch=main&variant=secondary&size=xs" /></a>
+  <a href="https://gvastethecreator.github.io/codex-studio/"><img alt="Project site" src="https://shieldcn.dev/badge/site-pages-087f86.svg?logo=githubpages&variant=branded&size=xs" /></a>
+  <a href="https://bun.com"><img alt="Bun 1.3.14" src="https://shieldcn.dev/badge/runtime-Bun%201.3.14-000000.svg?logo=bun&variant=branded&size=xs" /></a>
+  <a href="https://github.com/gvastethecreator/codex-studio/stargazers"><img alt="GitHub stars" src="https://shieldcn.dev/github/stars/gvastethecreator/codex-studio.svg?variant=secondary&size=xs" /></a>
+  <a href="LICENSE"><img alt="MIT license" src="https://shieldcn.dev/github/license/gvastethecreator/codex-studio.svg?variant=secondary&size=xs" /></a>
+</p>
 
-[![License: MIT](https://shieldcn.dev/badge/license-MIT-yellow.svg?variant=secondary&size=xs)](./LICENSE)
-[![Bun](https://shieldcn.dev/badge/runtime-Bun-black.svg?logo=bun&variant=branded&size=xs)](https://bun.com)
-[![TypeScript](https://shieldcn.dev/badge/TypeScript-blue.svg?logo=typescript&variant=branded&size=xs)](https://www.typescriptlang.org/)
-[![Status](https://shieldcn.dev/badge/status-preview-purple.svg?variant=secondary&size=xs)](#status)
-[![PRs Welcome](https://shieldcn.dev/badge/PRs-welcome-green.svg?variant=secondary&size=xs)](./CONTRIBUTING.md)
+A local-first image studio for creating, reviewing, and organizing AI images through your authenticated Codex/ChatGPT session.
+
+[Project site](https://gvastethecreator.github.io/codex-studio/) · [Source and issues](https://github.com/gvastethecreator/codex-studio)
 
 Codex Studio runs on your machine: a React/Vite studio UI, a local Bun/Hono server, and `codex app-server` working together against your local ChatGPT login. The main Codex workflow does not require `OPENAI_API_KEY`; assets, job history, logs, and SQLite state live in your local Studio Library instead of the repo.
 
@@ -16,17 +25,13 @@ Codex Studio runs on your machine: a React/Vite studio UI, a local Bun/Hono serv
 - Use Codex first, with optional providers such as the locally authenticated Grok Imagine adapter kept behind backend boundaries.
 - Maintain local assets outside git by default.
 
-## Screenshots
+## Product Tour
 
-![Codex Studio workspace](./docs/assets/screenshots/studio.webp)
-
-### Recipes
-
-![Codex Studio recipes](./docs/assets/screenshots/recipes.webp)
-
-### Style Packs
-
-![Codex Studio styles](./docs/assets/screenshots/styles.webp)
+| Catalog and persistent jobs                                                                                         | Studio Settings                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| <img src="docs/assets/screenshots/studio.webp" alt="Codex Studio catalog beside the persistent generation queue" /> | <img src="docs/assets/screenshots/settings.webp" alt="Codex Studio Settings with the local library path hidden for privacy" /> |
+| **Guided recipes**                                                                                                  | **Style systems**                                                                                                              |
+| <img src="docs/assets/screenshots/recipes.webp" alt="Codex Studio guided recipe index" />                           | <img src="docs/assets/screenshots/styles.webp" alt="Codex Studio style pack browser" />                                        |
 
 ## Quick Start
 
@@ -161,5 +166,6 @@ Codex Studio is in open-source preview.
 <h4 align="right">Support the further development of this tool 🤍</h4>
 <p align="right">
   <a href="https://github.com/sponsors/gvastethecreator/"><img src="https://shieldcn.dev/badge/%E2%9D%A4-sponsor%20this%20project-red.svg?animate=pulse" alt="Sponsor this project" /></a>
+  <a href="https://ko-fi.com/gvaste"><img src="https://shieldcn.dev/badge/Ko--fi-support%20development-ff5e5b.svg?logo=kofi&variant=branded" alt="Support development on Ko-fi" /></a>
   <a href="https://x.com/gvastebb"><img src="https://shieldcn.dev/x/mention/gvastebb.svg?variant=branded" alt="Follow on X" /></a>
 </p>

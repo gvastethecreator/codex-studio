@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Codex Studio is a local-first workspace for generating, reviewing, and organizing AI images through your authenticated Codex session."
+    />
+    <meta name="theme-color" content="#ece9df" />
+    <meta property="og:title" content="Codex Studio — Local image operations" />
+    <meta
+      property="og:description"
+      content="Create through Codex. Keep assets, jobs, and catalog history on your machine."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gvastethecreator.github.io/codex-studio/" />
+    <meta property="og:image" content="assets/landing/studio.webp" />
+    <title>Codex Studio — Local image operations</title>
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Codex Studio home">
+        <span class="brand-mark" aria-hidden="true">C/S</span>
+        <span>Codex Studio</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#principles">Principles</a>
+        <a href="#tour">Tour</a>
+        <a href="#start">Run locally</a>
+      </nav>
+      <a class="header-link" href="https://github.com/gvastethecreator/codex-studio">
+        View source <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker"><span>01</span> Local image operations</p>
+          <h1 id="hero-title">Create.<br />Trace.<br /><em>Keep.</em></h1>
+          <p class="hero-summary">
+            A local-first image studio built around your authenticated Codex session. Generate,
+            review, and organize without turning your creative history into somebody else's cloud
+            library.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#start">Run on your machine</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/gvastethecreator/codex-studio"
+            >
+              Read the code
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="frame-label" aria-hidden="true">
+            <span>WORKSPACE / CATALOG</span><span>LIVE LOCAL STATE</span>
+          </div>
+          <img
+            src="assets/landing/studio-hero.webp"
+            alt="Codex Studio workspace with a local image catalog and persistent generation queue"
+            width="1000"
+            height="609"
+            fetchpriority="high"
+          />
+          <dl class="hero-facts">
+            <div>
+              <dt>Assets</dt>
+              <dd>Local</dd>
+            </div>
+            <div>
+              <dt>History</dt>
+              <dd>SQLite</dd>
+            </div>
+            <div>
+              <dt>Primary runtime</dt>
+              <dd>Codex</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Product qualities">
+        <span>Authenticated session</span>
+        <span>Persistent jobs</span>
+        <span>Catalog-first</span>
+        <span>Open source</span>
+      </section>
+
+      <section class="principles section-grid" id="principles" aria-labelledby="principles-title">
+        <div class="section-heading">
+          <p class="kicker"><span>02</span> What stays true</p>
+          <h2 id="principles-title">A studio with boundaries.</h2>
+        </div>
+        <ol class="principle-list">
+          <li>
+            <span class="principle-number">01</span>
+            <div>
+              <h3>Your library stays yours.</h3>
+              <p>
+                Images, thumbnails, transcripts, logs, and database state live in a Studio Library
+                on your machine.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="principle-number">02</span>
+            <div>
+              <h3>Every result has a trail.</h3>
+              <p>
+                Persistent jobs and Catalog Entries keep generation state inspectable after the
+                browser reloads.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="principle-number">03</span>
+            <div>
+              <h3>Codex stays at the center.</h3>
+              <p>
+                The default path uses your local Codex and ChatGPT session. Optional providers stay
+                behind the same backend contract.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="tour" id="tour" aria-labelledby="tour-title">
+        <div class="section-heading tour-heading">
+          <p class="kicker"><span>03</span> Product tour</p>
+          <h2 id="tour-title">One desk. Four working views.</h2>
+          <p>Real screens from the app—not concept art or a hosted imitation.</p>
+        </div>
+
+        <div class="tour-grid">
+          <figure class="tour-item tour-item-wide">
+            <div class="tour-meta"><span>A</span><span>Catalog + queue</span></div>
+            <img
+              src="assets/landing/studio.webp"
+              alt="The Codex Studio catalog beside a persistent generation queue"
+              width="1400"
+              height="853"
+              decoding="async"
+            />
+            <figcaption>Review assets and job state without leaving the workspace.</figcaption>
+          </figure>
+          <figure class="tour-item">
+            <div class="tour-meta"><span>B</span><span>Recipe index</span></div>
+            <img
+              src="assets/landing/recipes.webp"
+              alt="Codex Studio recipe index with guided image workflows"
+              width="1200"
+              height="902"
+              decoding="async"
+            />
+            <figcaption>Start with a guided workflow when a blank prompt is not enough.</figcaption>
+          </figure>
+          <figure class="tour-item">
+            <div class="tour-meta"><span>C</span><span>Style systems</span></div>
+            <img
+              src="assets/landing/styles.webp"
+              alt="Codex Studio style pack browser"
+              width="1200"
+              height="365"
+              decoding="async"
+            />
+            <figcaption>
+              Browse controlled visual systems rather than generic style labels.
+            </figcaption>
+          </figure>
+          <figure class="tour-item tour-item-wide">
+            <div class="tour-meta"><span>D</span><span>Settings + diagnostics</span></div>
+            <img
+              src="assets/landing/settings.webp"
+              alt="Codex Studio settings and local runtime diagnostics"
+              width="1200"
+              height="750"
+              decoding="async"
+            />
+            <figcaption>See what is ready, what is blocked, and the exact next action.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="flow section-grid" aria-labelledby="flow-title">
+        <div class="section-heading">
+          <p class="kicker"><span>04</span> Durable path</p>
+          <h2 id="flow-title">Intent becomes a local record.</h2>
+        </div>
+        <div class="flow-track" aria-label="Generation flow">
+          <div><span>01</span><strong>Describe</strong><small>Prompt or recipe</small></div>
+          <div><span>02</span><strong>Execute</strong><small>Persistent job</small></div>
+          <div><span>03</span><strong>Store</strong><small>Local asset</small></div>
+          <div><span>04</span><strong>Review</strong><small>Catalog entry</small></div>
+        </div>
+      </section>
+
+      <section class="start" id="start" aria-labelledby="start-title">
+        <div class="start-copy">
+          <p class="kicker"><span>05</span> Run locally</p>
+          <h2 id="start-title">Three commands to the first frame.</h2>
+          <p>
+            Bring Bun, a modern browser, and an authenticated Codex CLI. The default Codex path does
+            not require an OpenAI API key.
+          </p>
+          <a href="https://github.com/gvastethecreator/codex-studio#quick-start"
+            >Open the setup guide <span aria-hidden="true">→</span></a
+          >
+        </div>
+        <pre aria-label="Codex Studio quick start commands"><code><span>$</span> bun install
+<span>$</span> bun run studio:init
+<span>$</span> bun run dev
+
+<i># UI       http://localhost:17222</i>
+<i># Local API http://localhost:17223</i></code></pre>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Codex Studio</strong>
+        <p>Open-source image workbench. Local by design.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/sponsors/gvastethecreator">Sponsor on GitHub</a>
+        <a href="https://ko-fi.com/gvaste">Support on Ko-fi</a>
+        <a href="https://github.com/gvastethecreator/codex-studio/issues">Issues</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

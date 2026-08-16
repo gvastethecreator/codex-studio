@@ -4,9 +4,9 @@ GitHub Issues use one category label and one triage label. Local mirrors record 
 
 ## Categories
 
-| Canonical category | GitHub label  | Meaning                    |
-| ------------------ | ------------- | -------------------------- |
-| `bug`              | `bug`         | Existing behavior is wrong |
+| Canonical category | GitHub label  | Meaning                     |
+| ------------------ | ------------- | --------------------------- |
+| `bug`              | `bug`         | Existing behavior is wrong  |
 | `enhancement`      | `enhancement` | New behavior or improvement |
 
 ## Statuses
@@ -17,7 +17,7 @@ GitHub Issues use one category label and one triage label. Local mirrors record 
 | `needs-info`      | `needs-info`      | Waiting for missing information            |
 | `ready-for-agent` | `ready-for-agent` | Fully specified and ready for an AFK agent |
 | `ready-for-human` | `ready-for-human` | Requires human implementation or judgment  |
-| `wontfix`         | `wontfix`         | Deliberately not actioned                   |
+| `wontfix`         | `wontfix`         | Deliberately not actioned                  |
 
 ## Project status
 

@@ -1,7 +1,7 @@
 {
-  "current_commit": "461fd0dc60cf6a2cda66cb49bce233fcf22b2d42",
+  "source_commit": "0b327ae4d540032a83038c31ac2e54f04c80f9e1",
   "working_tree_dirty": true,
-  "generated_at": "2026-08-14T04:17:09Z",
+  "generated_at": "2026-08-15T00:50:28Z",
   "scanned_scope": [
     "."
   ],
@@ -32,7 +32,7 @@
       "id": ".",
       "path": ".",
       "file_count": 31,
-      "fingerprint": "865d34f1c837d1447898bc3acb24c2b1c5d1721a69d3c9039d5b7e43680dd36b"
+      "fingerprint": "455b7082b57690c5a79ee87f50e3423642170295b5281b3985163077d57cc05c"
     },
     {
       "id": ".agents",
@@ -44,7 +44,7 @@
       "id": ".github",
       "path": ".github",
       "file_count": 6,
-      "fingerprint": "8eaa7e40bf7e3d18af902c1ffdffdc9bda47f788f68e8ddc3aeeabf0c49d28e4"
+      "fingerprint": "4e345d376885f4c9d289c5a999bf1be5a041fe1f5e81519528d2c24116ce521c"
     },
     {
       "id": ".vite-hooks",
@@ -85,8 +85,8 @@
     {
       "id": "docs",
       "path": "docs",
-      "file_count": 47,
-      "fingerprint": "e0e56d8f667e950fb4f1490a8623c335fc035e1ba3878f63a7b297b82105133d"
+      "file_count": 50,
+      "fingerprint": "ccdf4328bb57c5e9415420b70e355bf2a8ef1db91dc9a54354290355627614bd"
     },
     {
       "id": "electron",
