@@ -69,6 +69,8 @@ interface UseStudioGenerationActionsProps {
   onEditSettled?: () => void;
   activeProviderId: GenerationProviderId;
   grokCanExecute: boolean;
+  grokStatus?: string;
+  grokDiagnostics?: string[];
   activeRecipe: RecipeId;
 }
 
@@ -92,6 +94,8 @@ export function useStudioGenerationActions({
   onEditSettled,
   activeProviderId,
   grokCanExecute,
+  grokStatus,
+  grokDiagnostics,
   activeRecipe,
 }: UseStudioGenerationActionsProps) {
   const [isEnhancingPrompt, setIsEnhancingPrompt] = useState(false);
@@ -122,6 +126,8 @@ export function useStudioGenerationActions({
         configOverrides: requestConfigOverrides,
         providerId: activeProviderId,
         grokCanExecute,
+        grokStatus,
+        grokDiagnostics,
       });
 
       if (!request.ok) {
@@ -152,6 +158,8 @@ export function useStudioGenerationActions({
       setGenerationConfig,
       activeProviderId,
       grokCanExecute,
+      grokStatus,
+      grokDiagnostics,
       activeRecipe,
     ],
   );
@@ -193,6 +201,8 @@ export function useStudioGenerationActions({
         aspectRatio: generationConfigRef.current.aspectRatio,
         attachments: [original],
         canExecute: grokCanExecute,
+        status: grokStatus,
+        diagnostics: grokDiagnostics,
       });
       if (grokBlock) {
         addToast(grokBlock.message, 'info');
@@ -218,6 +228,8 @@ export function useStudioGenerationActions({
       executeEdit,
       generationConfigRef,
       grokCanExecute,
+      grokStatus,
+      grokDiagnostics,
       onEditSettled,
     ],
   );

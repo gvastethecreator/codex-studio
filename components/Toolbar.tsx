@@ -56,7 +56,6 @@ import type {
 import {
   listGrokImagineRatioOptions,
   resolveGrokImagineGenerateBlock,
-  resolveGrokImagineToolbarAspectRatio,
 } from '../lib/grokImagineUiPolicy';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 import KeyPopover from './KeyPopover';
@@ -96,6 +95,8 @@ export interface ToolbarProps {
   codexModelCatalogError: string | null;
   activeProviderId: GenerationProviderId;
   grokCanExecute?: boolean;
+  grokStatus?: string;
+  grokDiagnostics?: string[];
   activeRecipe?: ImageGenerationConfig['recipeId'];
   mode?: 'full' | 'context-only';
 }
@@ -192,6 +193,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     codexModelCatalogError,
     activeProviderId,
     grokCanExecute = false,
+    grokStatus,
+    grokDiagnostics,
     activeRecipe = null,
     mode = 'full',
   }) => {
@@ -331,19 +334,16 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     }, [generationConfig.prompt, localPrompt]);
 
     const currentRatios = activeProviderId === 'grok' ? listGrokImagineRatioOptions() : RATIOS;
-    const grokToolbarRatio = resolveGrokImagineToolbarAspectRatio(generationConfig.aspectRatio);
-    useEffect(() => {
-      if (activeProviderId !== 'grok') return;
-      if (generationConfig.aspectRatio === grokToolbarRatio) return;
-      updateConfig('aspectRatio', grokToolbarRatio);
-    }, [activeProviderId, generationConfig.aspectRatio, grokToolbarRatio, updateConfig]);
     const generateBlock = resolveGrokImagineGenerateBlock({
       providerId: activeProviderId,
       recipeId: activeRecipe,
-      aspectRatio: activeProviderId === 'grok' ? grokToolbarRatio : generationConfig.aspectRatio,
+      aspectRatio: generationConfig.aspectRatio,
       attachments: generationConfig.attachments,
       canExecute: grokCanExecute,
+      status: grokStatus,
+      diagnostics: grokDiagnostics,
     });
+    const showCodexPromptTools = activeProviderId !== 'grok';
 
     const handleTriggerGenerate = useCallback(() => {
       if (generateBlock) return;
@@ -358,12 +358,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
-      if (activeProviderId === 'grok' && generationConfig.aspectRatio !== grokToolbarRatio) {
-        updateConfig('aspectRatio', grokToolbarRatio);
-        onGenerate(localPrompt, { aspectRatio: grokToolbarRatio });
-      } else {
-        onGenerate(localPrompt);
-      }
+      onGenerate(localPrompt);
 
       closeAllMenus();
       setIsNegativeOpen(false);
@@ -372,15 +367,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     }, [
       localPrompt,
       generationConfig.attachments.length,
-      generationConfig.aspectRatio,
       updateConfig,
       onGenerate,
       closeAllMenus,
       setIsInteracting,
       interactionScope,
       generateBlock,
-      activeProviderId,
-      grokToolbarRatio,
     ]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -485,30 +477,32 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               {hasAttachments && (
                 <div className="flex items-center gap-2 animate-in fade-in-0 zoom-in-95 duration-150">
                   {generationConfig.attachments.map((att) => (
-                    <div
-                      key={att.id}
-                      className="size-8 group relative rounded-xl overflow-hidden bg-zinc-800 shrink-0"
-                    >
-                      <img
-                        src={att.dataUrl}
-                        width={32}
-                        height={32}
-                        className="size-full object-cover"
-                        alt=""
-                      />
-                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center">
-                        <button
-                          type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            onRemoveAttachment(att.id);
-                          }}
-                          aria-label={`Remove ${att.name}`}
-                          className="p-1 bg-red-500 text-white rounded-lg transition-[color,background-color,border-color,opacity,transform] active:scale-90 hover:bg-red-400"
-                        >
-                          <X size={10} />
-                        </button>
-                      </div>
+                    <div key={att.id} className="relative size-8 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => onOpenEditor(att)}
+                        aria-label={`Edit ${att.name}`}
+                        className="size-8 overflow-hidden rounded-xl bg-zinc-800"
+                      >
+                        <img
+                          src={att.dataUrl}
+                          width={32}
+                          height={32}
+                          className="size-full object-cover"
+                          alt=""
+                        />
+                      </button>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          onRemoveAttachment(att.id);
+                        }}
+                        aria-label={`Remove ${att.name}`}
+                        className="absolute -right-1 -top-1 flex size-4 items-center justify-center rounded-full bg-zinc-950 text-zinc-200 ring-1 ring-white/20 hover:bg-red-500 hover:text-white"
+                      >
+                        <X size={8} />
+                      </button>
                     </div>
                   ))}
                 </div>
@@ -608,7 +602,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
               {/* LOGIC AI TOOLS */}
               <div
-                className={`${isContextOnly ? 'flex shrink-0 items-center gap-1.5' : 'hidden shrink-0 items-center gap-1.5 sm:flex sm:gap-2'}`}
+                className={`${
+                  showCodexPromptTools
+                    ? isContextOnly
+                      ? 'flex shrink-0 items-center gap-1.5'
+                      : 'hidden shrink-0 items-center gap-1.5 sm:flex sm:gap-2'
+                    : 'hidden'
+                }`}
               >
                 {/* 1. NEGATIVE (Exclude) */}
                 <div className="relative">
@@ -796,7 +796,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </div>
 
               <div
-                className={`${isContextOnly ? 'hidden' : 'grid gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2 sm:hidden'}`}
+                className={`${
+                  showCodexPromptTools && !isContextOnly
+                    ? 'grid gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2 sm:hidden'
+                    : 'hidden'
+                }`}
               >
                 <div className="grid gap-1.5">
                   <label
@@ -1302,7 +1306,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             <p
               id="grok-generate-block"
               role="status"
-              className="mt-2 max-w-xl text-[11px] font-medium leading-relaxed text-zinc-400"
+              className="order-first mt-0 max-w-xl text-[11px] font-medium leading-relaxed text-amber-200/90 sm:order-none sm:mt-2"
             >
               {generateBlock.message}
             </p>

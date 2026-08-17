@@ -31,7 +31,11 @@ import { useSettingsSurface } from './useSettingsSurface';
 import { useStudioViewState } from './useStudioViewState';
 import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
-import { describeGrokImagineEditNotice, resolveGrokCanExecute } from '../lib/grokImagineUiPolicy';
+import {
+  describeGrokImagineEditNotice,
+  resolveGrokCanExecute,
+  resolveImageEditorRequiresMask,
+} from '../lib/grokImagineUiPolicy';
 import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
 import {
   buildStudioPageController,
@@ -234,6 +238,12 @@ export function useStudioShell(): StudioShellController {
         (provider) => provider.providerId === 'grok',
       )?.canAttemptExecution,
     }),
+    grokStatus: studioSettings.data.providerDomain.capabilities?.providers.find(
+      (provider) => provider.providerId === 'grok',
+    )?.status,
+    grokDiagnostics: studioSettings.data.providerDomain.runtimePreflight?.providers.find(
+      (provider) => provider.providerId === 'grok',
+    )?.diagnostics,
   });
 
   const { isResettingStudio, resetStudio } = useStudioReset({
@@ -361,6 +371,9 @@ export function useStudioShell(): StudioShellController {
           handleExecuteEdit,
           isEditingImage,
           imageEditNotice: describeGrokImagineEditNotice(
+            studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+          ),
+          requireMask: resolveImageEditorRequiresMask(
             studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
           ),
         },
@@ -642,6 +655,12 @@ export function useStudioShell(): StudioShellController {
             (provider) => provider.providerId === 'grok',
           )?.canAttemptExecution,
         }),
+        grokStatus: studioSettings.data.providerDomain.capabilities?.providers.find(
+          (provider) => provider.providerId === 'grok',
+        )?.status,
+        grokDiagnostics: studioSettings.data.providerDomain.runtimePreflight?.providers.find(
+          (provider) => provider.providerId === 'grok',
+        )?.diagnostics,
       },
     }),
     [

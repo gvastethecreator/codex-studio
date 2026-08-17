@@ -1,10 +1,14 @@
 import { describe, expect, it } from 'vite-plus/test';
 import {
   describeGrokImagineEditNotice,
+  formatCarouselPromptPreview,
+  formatCarouselSourceLabel,
+  isImageEditorApplyDisabled,
   listGrokImagineRatioOptions,
   resolveGrokCanExecute,
   resolveGrokImagineGenerateBlock,
   resolveGrokImagineToolbarAspectRatio,
+  resolveImageEditorRequiresMask,
   summarizeGrokProviderStatusLine,
 } from './grokImagineUiPolicy';
 
@@ -75,5 +79,43 @@ describe('grokImagineUiPolicy', () => {
         diagnostics: ['Grok Build did not report an available model. grok_model_unavailable'],
       }),
     ).toBe('Choose a current Grok model');
+    expect(
+      resolveGrokImagineGenerateBlock({
+        providerId: 'grok',
+        canExecute: false,
+        status: 'not_configured',
+        diagnostics: ['Grok Build did not report an available model. grok_model_unavailable'],
+      }),
+    ).toEqual({
+      code: 'grok_not_ready',
+      message: 'Grok Imagine is blocked. Choose a current Grok model.',
+    });
+    expect(
+      formatCarouselPromptPreview(
+        'GROK OUTPUT OVERRIDE: create exactly one portrait 3:4 image. TARGET STYLE: Expressive Performance Spin Style.',
+      ),
+    ).toBe('Expressive Performance Spin Style');
+    expect(
+      formatCarouselSourceLabel({
+        model: 'codex-imagegen',
+        prompt: 'GROK OUTPUT OVERRIDE: keep one card.',
+      }),
+    ).toBe('Grok Imagine');
+    expect(resolveImageEditorRequiresMask('grok')).toBe(false);
+    expect(
+      isImageEditorApplyDisabled({
+        isGenerating: false,
+        editPrompt: 'softer light',
+        historyIndex: -1,
+      }),
+    ).toBe(true);
+    expect(
+      isImageEditorApplyDisabled({
+        isGenerating: false,
+        editPrompt: 'softer light',
+        historyIndex: -1,
+        requireMask: false,
+      }),
+    ).toBe(false);
   });
 });

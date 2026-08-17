@@ -6,6 +6,7 @@ import {
   IconX as X,
 } from '@tabler/icons-react';
 import React, { useCallback, useEffect, useEffectEvent, useRef, useState } from 'react';
+import { isImageEditorApplyDisabled } from '../lib/grokImagineUiPolicy';
 import type { Attachment } from '../types';
 import ActionButton from './ui/ActionButton';
 import Slider from './ui/Slider';
@@ -17,6 +18,7 @@ interface ImageEditorModalProps {
   onGenerate: (originalImage: Attachment, maskDataUrl: string, editPrompt: string) => void;
   isGenerating: boolean;
   notice?: string | null;
+  requireMask?: boolean;
 }
 
 interface ImageEditorControlsPanelProps {
@@ -31,6 +33,7 @@ interface ImageEditorControlsPanelProps {
   onReset: () => void;
   onGenerate: () => void;
   notice?: string | null;
+  requireMask?: boolean;
 }
 
 function ImageEditorControlsPanel({
@@ -45,6 +48,7 @@ function ImageEditorControlsPanel({
   onReset,
   onGenerate,
   notice,
+  requireMask = true,
 }: ImageEditorControlsPanelProps) {
   return (
     <div className="custom-scrollbar flex max-h-[44vh] w-full flex-col gap-5 overflow-y-auto bg-zinc-950 p-4 shadow-[20px_0_60px_rgba(0,0,0,1)] sm:p-6 md:max-h-none md:w-96 md:gap-10 md:p-8">
@@ -106,7 +110,12 @@ function ImageEditorControlsPanel({
           type="button"
           aria-label="Generate image edit"
           onClick={onGenerate}
-          disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
+          disabled={isImageEditorApplyDisabled({
+            isGenerating,
+            editPrompt,
+            historyIndex,
+            requireMask,
+          })}
           className={`w-full h-12 sm:h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-[color,background-color,border-color,opacity,box-shadow,transform] active:scale-95 shadow-2xl
                     ${
                       isGenerating
@@ -133,6 +142,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   onGenerate,
   isGenerating,
   notice,
+  requireMask = true,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -349,10 +359,10 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           </div>
           <div className="min-w-0">
             <h2 className="truncate text-xs font-black tracking-widest uppercase text-white sm:text-sm">
-              Precision Inpaint
+              {requireMask ? 'Precision Inpaint' : 'Prompt Edit'}
             </h2>
             <p className="hidden text-[10px] text-zinc-600 font-bold uppercase tracking-tight sm:block">
-              Edit masked area and regenerate
+              {requireMask ? 'Edit masked area and regenerate' : 'Describe the change, then apply'}
             </p>
           </div>
         </div>
@@ -414,6 +424,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           onReset={handleReset}
           onGenerate={handleGenerate}
           notice={notice}
+          requireMask={requireMask}
         />
       </div>
     </dialog>

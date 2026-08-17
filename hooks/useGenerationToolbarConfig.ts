@@ -46,6 +46,8 @@ interface GenerationToolbarSyncContext {
 interface GenerationToolbarProviderContext {
   activeProviderId: GenerationProviderId;
   grokCanExecute?: boolean;
+  grokStatus?: string;
+  grokDiagnostics?: string[];
 }
 
 export interface BuildGenerationToolbarPropsArgs {
@@ -98,6 +100,8 @@ export function buildGenerationToolbarProps({
     maxAttachments: config.maxAttachments,
     activeProviderId: provider.activeProviderId,
     grokCanExecute: provider.grokCanExecute ?? false,
+    grokStatus: provider.grokStatus,
+    grokDiagnostics: provider.grokDiagnostics,
   };
 }
 

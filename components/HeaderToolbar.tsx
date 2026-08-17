@@ -310,7 +310,11 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               </button>
             </Tooltip>
             <div className="relative hidden sm:block">
-              <Tooltip content="Change image generation provider" position="bottom">
+              <Tooltip
+                content="Change image generation provider"
+                position="bottom"
+                hidden={isProviderMenuOpen}
+              >
                 <button
                   ref={providerButtonRef}
                   type="button"

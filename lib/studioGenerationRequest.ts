@@ -29,12 +29,16 @@ export function prepareStudioGenerationRequest({
   configOverrides,
   providerId = 'codex',
   grokCanExecute = true,
+  grokStatus,
+  grokDiagnostics,
 }: {
   generationConfig: ImageGenerationConfig;
   promptOverride?: string;
   configOverrides?: Partial<ImageGenerationConfig>;
   providerId?: GenerationProviderId;
   grokCanExecute?: boolean;
+  grokStatus?: string;
+  grokDiagnostics?: string[];
 }): StudioGenerationRequest {
   const promptSource =
     promptOverride !== undefined
@@ -69,6 +73,8 @@ export function prepareStudioGenerationRequest({
     aspectRatio: configOverrides?.aspectRatio ?? generationConfig.aspectRatio,
     attachments: finalAttachments,
     canExecute: grokCanExecute,
+    status: grokStatus,
+    diagnostics: grokDiagnostics,
   });
   if (grokBlock) {
     return { ok: false, message: grokBlock.message };

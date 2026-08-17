@@ -6,6 +6,7 @@ interface TooltipProps {
   position?: 'top' | 'bottom';
   className?: string;
   contentClassName?: string;
+  hidden?: boolean;
 }
 
 const Tooltip: React.FC<TooltipProps> = ({
@@ -14,11 +15,14 @@ const Tooltip: React.FC<TooltipProps> = ({
   position = 'top',
   className = '',
   contentClassName = '',
+  hidden = false,
 }) => {
   return (
     <div className={`tooltip relative inline-flex ${className}`}>
       {children}
-      <div className={`tooltip-content ${position} ${contentClassName}`}>{content}</div>
+      {hidden ? null : (
+        <div className={`tooltip-content ${position} ${contentClassName}`}>{content}</div>
+      )}
     </div>
   );
 };

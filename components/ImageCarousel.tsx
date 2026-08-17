@@ -33,6 +33,7 @@ import {
   resolveStudioCarouselFallbackSrc,
 } from '../lib/studioCarouselImage';
 import { useLatestRef } from '../hooks/useLatestRef';
+import { formatCarouselPromptPreview, formatCarouselSourceLabel } from '../lib/grokImagineUiPolicy';
 
 interface ImageCarouselProps {
   activeImage: GeneratedImageWithConfig | null;
@@ -347,11 +348,14 @@ function CarouselBottomBar({
       <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
         <div className="flex-1 min-w-0 w-full">
           <p className="text-[12px] font-bold text-zinc-400 truncate tracking-tight leading-relaxed">
-            {currentImage.config.prompt || 'Generated image'}
+            {formatCarouselPromptPreview(currentImage.config.prompt)}
           </p>
           <div className="flex gap-4 mt-2">
             <span className="text-[9px] font-black text-accent-500/70 uppercase tracking-widest">
-              {currentImage.config.model.split('-').slice(0, 2).join(' ').toUpperCase()}
+              {formatCarouselSourceLabel({
+                model: currentImage.config.model,
+                prompt: currentImage.config.prompt,
+              })}
             </span>
             <span className="text-[9px] font-black text-zinc-700 uppercase tracking-widest">
               {currentImage.config.aspectRatio} OUTPUT

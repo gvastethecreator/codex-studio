@@ -47,6 +47,7 @@ export interface StudioImageOverlaysProps {
   handleExecuteEdit: (original: Attachment, mask: string, prompt: string) => Promise<unknown>;
   isEditingImage: boolean;
   imageEditNotice?: string | null;
+  requireMask?: boolean;
 }
 
 export interface StudioSystemOverlayFlags {

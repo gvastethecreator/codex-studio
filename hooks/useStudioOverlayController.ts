@@ -29,6 +29,7 @@ interface StudioOverlayEditorContext {
   handleExecuteEdit: StudioImageOverlaysProps['handleExecuteEdit'];
   isEditingImage: StudioImageOverlaysProps['isEditingImage'];
   imageEditNotice?: StudioImageOverlaysProps['imageEditNotice'];
+  requireMask?: StudioImageOverlaysProps['requireMask'];
 }
 
 interface StudioOverlayDebugPanelContext {
@@ -185,6 +186,7 @@ export function buildStudioOverlayController({
       handleExecuteEdit: editor.handleExecuteEdit,
       isEditingImage: editor.isEditingImage,
       imageEditNotice: editor.imageEditNotice,
+      requireMask: editor.requireMask,
     },
     systemOverlays: {
       flags: {

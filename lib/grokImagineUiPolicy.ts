@@ -63,25 +63,89 @@ export function summarizeGrokProviderStatusLine({
   return 'Needs setup';
 }
 
+export function formatGrokImagineNotReadyMessage({
+  status = 'not_configured',
+  diagnostics = [],
+}: {
+  status?: string;
+  diagnostics?: string[];
+} = {}) {
+  const action = summarizeGrokProviderStatusLine({
+    canExecute: false,
+    status,
+    diagnostics,
+  });
+  if (action === 'Run grok login') {
+    return 'Grok Imagine is blocked. Run `grok login`, then retry.';
+  }
+  return `Grok Imagine is blocked. ${action}.`;
+}
+
+export function formatCarouselPromptPreview(prompt?: string | null) {
+  const text = prompt?.trim() || '';
+  if (!text) return 'Generated image';
+
+  const targetStyle = text.match(/TARGET STYLE:\s*([^.\n]+)/i)?.[1]?.trim();
+  if (targetStyle) return targetStyle;
+
+  return text.replace(/^GROK OUTPUT OVERRIDE:\s*/i, '').trim() || text;
+}
+
+export function formatCarouselSourceLabel({
+  model,
+  prompt,
+}: {
+  model?: string | null;
+  prompt?: string | null;
+}) {
+  if (/GROK OUTPUT OVERRIDE/i.test(prompt || '') || /grok/i.test(model || '')) {
+    return 'Grok Imagine';
+  }
+  return (model || 'codex-imagegen').split('-').slice(0, 2).join(' ').toUpperCase();
+}
+
+export function resolveImageEditorRequiresMask(providerId?: GenerationProviderId | null) {
+  return providerId !== 'grok';
+}
+
+export function isImageEditorApplyDisabled({
+  isGenerating,
+  editPrompt,
+  historyIndex,
+  requireMask = true,
+}: {
+  isGenerating: boolean;
+  editPrompt: string;
+  historyIndex: number;
+  requireMask?: boolean;
+}) {
+  if (isGenerating || !editPrompt.trim()) return true;
+  return requireMask && historyIndex < 0;
+}
+
 export function resolveGrokImagineGenerateBlock({
   providerId,
   recipeId,
   aspectRatio,
   attachments,
   canExecute = true,
+  status,
+  diagnostics,
 }: {
   providerId: GenerationProviderId;
   recipeId?: RecipeId | null;
   aspectRatio?: string | null;
   attachments?: Attachment[];
   canExecute?: boolean;
+  status?: string;
+  diagnostics?: string[];
 }): GrokImagineGenerateBlock | null {
   if (providerId !== 'grok') return null;
 
   if (!canExecute) {
     return {
       code: 'grok_not_ready',
-      message: 'Grok Imagine is blocked. Run `grok login`, then retry.',
+      message: formatGrokImagineNotReadyMessage({ status, diagnostics }),
     };
   }
 
