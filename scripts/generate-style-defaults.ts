@@ -3,6 +3,7 @@ import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import type { Asset, Job } from '../packages/shared/src';
 import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
+import { readGrokRuntimeDoctor } from '../apps/local-server/src/grokRuntimeDoctor';
 import type {
   StyleRuntimePack,
   StyleRuntimePreset,
@@ -47,7 +48,8 @@ type StyleCardProvider = 'codex' | 'grok';
 
 const IMAGEGEN_MODEL = process.env.CODEX_IMAGEGEN_MODEL || 'gpt-5.4-mini';
 const IMAGEGEN_REASONING_EFFORT = process.env.CODEX_IMAGEGEN_REASONING_EFFORT || 'low';
-const GROK_IMAGEGEN_MODEL = process.env.GROK_IMAGE_MODEL || 'grok-4.5';
+const GROK_IMAGEGEN_MODEL =
+  process.env.GROK_IMAGE_MODEL?.trim() || readGrokRuntimeDoctor().defaultModel || '';
 const GROK_IMAGEGEN_REASONING_EFFORT = 'low';
 const PACK12_REVIEW_SAFE_MODE = process.env.PACK12_REVIEW_SAFE_MODE === '1';
 const PACK12_SHORT_RECOVERY_MODE = process.env.PACK12_SHORT_RECOVERY_MODE === '1';
@@ -9579,7 +9581,12 @@ function buildProviderStylePrompt(
   if (provider === 'codex') return prompt;
 
   const adaptedPrompt = prompt
-    .replace(/^MODEL:\s*.+$/im, `MODEL: ${GROK_IMAGEGEN_MODEL}, ${GROK_IMAGEGEN_REASONING_EFFORT}`)
+    .replace(
+      /^MODEL:\s*.+$/im,
+      GROK_IMAGEGEN_MODEL
+        ? `MODEL: ${GROK_IMAGEGEN_MODEL}, ${GROK_IMAGEGEN_REASONING_EFFORT}`
+        : `MODEL: ${GROK_IMAGEGEN_REASONING_EFFORT}`,
+    )
     .replaceAll('1024x1536', '1152x1536')
     .replaceAll('Portrait 2:3, usable in a 3:4 card crop.', 'Portrait 3:4 card composition.');
 

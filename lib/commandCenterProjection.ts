@@ -4,6 +4,7 @@ import type {
   GenerationProviderRuntimePreflightResponse,
 } from '../packages/shared/src';
 import type { GenerationProviderId } from '../packages/shared/src/generationContracts';
+import { summarizeGrokProviderStatusLine } from './grokImagineUiPolicy';
 import type { StudioRuntimeStatusItem, StudioStatusTone } from './studioDiagnostics';
 
 export interface CommandCenterQueuePreview {
@@ -24,6 +25,7 @@ export interface CommandCenterProviderProjection {
   tone: StudioStatusTone;
   tooltip: string;
   canExecute: boolean;
+  statusDetail: string;
 }
 
 export interface CommandCenterQueueProjection {
@@ -127,6 +129,18 @@ function buildProviderProjection({
         : 'warning';
   const diagnostics = preflight?.diagnostics.length ? ` ${preflight.diagnostics.join(' ')}` : '';
   const detail = capability?.detail ?? 'Provider capability status is still loading.';
+  const statusDetail =
+    providerId === 'grok'
+      ? summarizeGrokProviderStatusLine({
+          canExecute,
+          status,
+          diagnostics: preflight?.diagnostics ?? [],
+        })
+      : canExecute
+        ? 'Ready'
+        : status === 'unknown'
+          ? 'Checking runtime'
+          : 'Needs setup';
 
   return {
     id: providerId,
@@ -135,6 +149,7 @@ function buildProviderProjection({
     tone,
     tooltip: `${detail}${diagnostics}`,
     canExecute,
+    statusDetail,
   };
 }
 

@@ -6,6 +6,7 @@ import type {
   Attachment,
   RecipeId,
 } from '../types';
+import type { GenerationProviderId } from '../packages/shared/src';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import { LazySurfaceFallback } from './ui/LazySurfaceFallback';
 import {
@@ -40,6 +41,8 @@ interface RecipeRouterProps {
   imagesWithConfig: GeneratedImageWithConfig[];
   openModal: (image: GeneratedImageWithConfig) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
+  activeProviderId?: GenerationProviderId;
+  grokCanExecute?: boolean;
 }
 
 export const RecipeRouter: React.FC<RecipeRouterProps> = ({
@@ -54,6 +57,8 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
   imagesWithConfig,
   openModal,
   handleAddToContext,
+  activeProviderId = 'codex',
+  grokCanExecute = false,
 }) => {
   if (!activeRecipe) return null;
 
@@ -97,6 +102,8 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             onGenerate={handleGenerate}
             isGenerating={isGenerating}
             images={imagesWithConfig}
+            activeProviderId={activeProviderId}
+            grokCanExecute={grokCanExecute}
           />
         )}
         {activeRecipe === 'remaster' && (

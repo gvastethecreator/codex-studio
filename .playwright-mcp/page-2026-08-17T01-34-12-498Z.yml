@@ -1,0 +1,169 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Change Theme" [ref=e8] [cursor=pointer]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: CODEX
+            - generic [ref=e20]: STUDIO
+        - generic [ref=e21]:
+          - button "Open studio workspace Default" [ref=e112] [cursor=pointer]: Default
+          - button "Open recipes" [active] [ref=e23] [cursor=pointer]: Recipes
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - button "Rename workspace Default" [ref=e113] [cursor=pointer]:
+                - generic [ref=e32]: Default
+                - generic "1896 images" [ref=e114]: "1.896"
+              - generic: Default - 1.896 images - updated 9 de ago de 2026
+            - generic [ref=e34]:
+              - button "Open workspace menu for Default" [ref=e115] [cursor=pointer]
+              - generic: Workspace menu
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - button "Switch to workspace Imported (f1f3)" [ref=e118] [cursor=pointer]:
+                - generic [ref=e120]: Imported (f1f3)
+                - generic "5281 images" [ref=e121]: "5.281"
+              - generic: Imported (f1f3) - 5.281 images - updated 7 de jul de 2026
+            - generic [ref=e122]:
+              - button "Open workspace menu for Imported (f1f3)" [ref=e123] [cursor=pointer]
+              - generic: Workspace menu
+          - generic [ref=e40]:
+            - button "Create workspace" [ref=e41] [cursor=pointer]
+            - generic: Create workspace
+      - generic [ref=e43]:
+        - generic [ref=e46]:
+          - button "Weekly 0%" [ref=e128] [cursor=pointer]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: Weekly
+              - generic [ref=e137]: 0%
+          - generic: "Available usage for Pro · Weekly: 0% available, 4d reset"
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - 'button "Open runtime status: Ready" [ref=e139] [cursor=pointer]':
+              - generic [ref=e64]: Ready
+            - generic: Runtime ready.
+          - generic [ref=e66]:
+            - 'button "Image generation provider: Grok Imagine. Change provider" [ref=e675] [cursor=pointer]':
+              - generic [ref=e69]: Grok
+            - generic: Change image generation provider
+          - generic [ref=e72]:
+            - button "Open help and setup" [ref=e73] [cursor=pointer]
+            - generic: Help & setup
+          - generic [ref=e77]:
+            - button "Open studio activity" [ref=e78] [cursor=pointer]
+            - generic: Studio activity
+          - generic [ref=e81]:
+            - button "Open archived images" [ref=e82] [cursor=pointer]
+            - generic: Archived images
+          - generic [ref=e86]:
+            - button "Open Codex chat" [ref=e87] [cursor=pointer]
+            - generic: Codex chat
+          - generic [ref=e90]:
+            - button "Open Studio Settings" [ref=e91] [cursor=pointer]
+            - generic: Studio settings
+          - generic [ref=e95]:
+            - button "Open persistent jobs (0 jobs)" [ref=e96] [cursor=pointer]:
+              - generic [ref=e99]: "0"
+            - generic: Persistent jobs
+  - generic [ref=e730]:
+    - button "GIF ANIMATION-SEQUENCE ANIMATION SEQUENCE Frame Animation Plan and generate frame-by-frame image animations with correction flow and GIF export. image generate" [ref=e731] [cursor=pointer]:
+      - generic [ref=e732]:
+        - generic [ref=e733]:
+          - generic [ref=e734]: GIF
+          - generic [ref=e739]: ANIMATION-SEQUENCE
+        - generic [ref=e746]:
+          - heading "ANIMATION SEQUENCE" [level=3] [ref=e747]
+          - generic [ref=e748]: Frame Animation
+          - paragraph [ref=e749]: Plan and generate frame-by-frame image animations with correction flow and GIF export.
+          - generic [ref=e750]: image generate
+    - button "Fast STYLES STYLES Style Transfer Browse and apply styles, or generate style-card assets. image generate" [ref=e756] [cursor=pointer]:
+      - generic [ref=e757]:
+        - generic [ref=e758]:
+          - generic [ref=e759]: Fast
+          - generic [ref=e766]: STYLES
+        - generic [ref=e775]:
+          - heading "STYLES" [level=3] [ref=e776]
+          - generic [ref=e777]: Style Transfer
+          - paragraph [ref=e778]: Browse and apply styles, or generate style-card assets.
+          - generic [ref=e779]: image generate
+    - button "Enhance REMASTER REMASTER Image Restoration Restore or reinterpret a reference image with controlled fidelity. image generate" [ref=e784] [cursor=pointer]:
+      - generic [ref=e785]:
+        - generic [ref=e786]:
+          - generic [ref=e787]: Enhance
+          - generic [ref=e794]: REMASTER
+        - generic [ref=e803]:
+          - heading "REMASTER" [level=3] [ref=e804]
+          - generic [ref=e805]: Image Restoration
+          - paragraph [ref=e806]: Restore or reinterpret a reference image with controlled fidelity.
+          - generic [ref=e807]: image generate
+    - button "Game Dev SPRITESHEET SPRITE SHEET Game Assets Generate game-ready sprite grids or strips from text and references. sprite sheet" [ref=e812] [cursor=pointer]:
+      - generic [ref=e813]:
+        - generic [ref=e814]:
+          - generic [ref=e815]: Game Dev
+          - generic [ref=e818]: SPRITESHEET
+        - generic [ref=e823]:
+          - heading "SPRITE SHEET" [level=3] [ref=e824]
+          - generic [ref=e825]: Game Assets
+          - paragraph [ref=e826]: Generate game-ready sprite grids or strips from text and references.
+          - generic [ref=e827]: sprite sheet
+    - button "Runtime SPRITE-ATLAS SPRITE ATLAS Atlas Pipeline Prepare runtime-ready sprite atlases with row prompts, layout guides, handoff, extraction, manifest, and QA. sprite sheet" [ref=e833] [cursor=pointer]:
+      - generic [ref=e834]:
+        - generic [ref=e835]:
+          - generic [ref=e836]: Runtime
+          - generic [ref=e841]: SPRITE-ATLAS
+        - generic [ref=e848]:
+          - heading "SPRITE ATLAS" [level=3] [ref=e849]
+          - generic [ref=e850]: Atlas Pipeline
+          - paragraph [ref=e851]: Prepare runtime-ready sprite atlases with row prompts, layout guides, handoff, extraction, manifest, and QA.
+          - generic [ref=e852]: sprite sheet
+    - button "Director CINEMATIC CINEMATIC STORYBOARD Storyboard Creator Build storyboard grids with shot, lens, tone, and continuity controls. image generate" [ref=e858] [cursor=pointer]:
+      - generic [ref=e859]:
+        - generic [ref=e860]:
+          - generic [ref=e861]: Director
+          - generic [ref=e865]: CINEMATIC
+        - generic [ref=e871]:
+          - heading "CINEMATIC STORYBOARD" [level=3] [ref=e872]
+          - generic [ref=e873]: Storyboard Creator
+          - paragraph [ref=e874]: Build storyboard grids with shot, lens, tone, and continuity controls.
+          - generic [ref=e875]: image generate
+    - button "Lab CHARACTER-LAB CHARACTER LAB Asset Workflow Produce character poses, sheets, scenes, sprites, effects, and gated profile/motion workflows from 261 ported actions. image generate" [ref=e880] [cursor=pointer]:
+      - generic [ref=e881]:
+        - generic [ref=e882]:
+          - generic [ref=e883]: Lab
+          - generic [ref=e888]: CHARACTER-LAB
+        - generic [ref=e895]:
+          - heading "CHARACTER LAB" [level=3] [ref=e896]
+          - generic [ref=e897]: Asset Workflow
+          - paragraph [ref=e898]: Produce character poses, sheets, scenes, sprites, effects, and gated profile/motion workflows from 261 ported actions.
+          - generic [ref=e899]: image generate
+    - button "Concept Art CHARACTER CHARACTER SHEET Sheet Designer Generate character reference sheets with layout, shot, and style controls. image generate" [ref=e904] [cursor=pointer]:
+      - generic [ref=e905]:
+        - generic [ref=e906]:
+          - generic [ref=e907]: Concept Art
+          - generic [ref=e912]: CHARACTER
+        - generic [ref=e919]:
+          - heading "CHARACTER SHEET" [level=3] [ref=e920]
+          - generic [ref=e921]: Sheet Designer
+          - paragraph [ref=e922]: Generate character reference sheets with layout, shot, and style controls.
+          - generic [ref=e923]: image generate
+    - button "Control CAMERA CAMERA VIEW Camera Guidance Generate alternate camera views from orbit, pitch, zoom, and framing. image generate" [ref=e931] [cursor=pointer]:
+      - generic [ref=e932]:
+        - generic [ref=e933]:
+          - generic [ref=e934]: Control
+          - generic [ref=e939]: CAMERA
+        - generic [ref=e946]:
+          - heading "CAMERA VIEW" [level=3] [ref=e947]
+          - generic [ref=e948]: Camera Guidance
+          - paragraph [ref=e949]: Generate alternate camera views from orbit, pitch, zoom, and framing.
+          - generic [ref=e950]: image generate
+    - button "Temporal TIMELINE TIMELINE FRAME Scene Extrapolation Generate neighboring storyboard frames with motion and continuity controls. image generate" [ref=e955] [cursor=pointer]:
+      - generic [ref=e956]:
+        - generic [ref=e957]:
+          - generic [ref=e958]: Temporal
+          - generic [ref=e963]: TIMELINE
+        - generic [ref=e970]:
+          - heading "TIMELINE FRAME" [level=3] [ref=e971]
+          - generic [ref=e972]: Scene Extrapolation
+          - paragraph [ref=e973]: Generate neighboring storyboard frames with motion and continuity controls.
+          - generic [ref=e974]: image generate

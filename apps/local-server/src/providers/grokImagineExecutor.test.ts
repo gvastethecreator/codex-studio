@@ -379,4 +379,66 @@ describe('createGrokImagineExecutor', () => {
       rmSync(root, { recursive: true, force: true });
     }
   });
+
+  it('omits --model when the compiled job has no explicit Grok model', async () => {
+    const root = mkdtempSync(path.join(os.tmpdir(), 'studio-grok-default-model-'));
+    const libraryRoot = path.join(root, 'library');
+    const grokHome = path.join(root, 'grok-home');
+    mkdirSync(libraryRoot, { recursive: true });
+    let observedArgs: string[] = [];
+
+    try {
+      const compiledInput = compileGrokImagineInput({
+        id: 'job-grok-default-model',
+        workspaceId: 'workspace-1',
+        providerId: 'grok',
+        prompt: 'A clean geometric red paper boat on calm water.',
+      });
+      const executor = createGrokImagineExecutor({
+        env: {},
+        readRuntimeDoctor: () => READY_RUNTIME,
+        resolveExecutable: () => 'grok',
+        resolveGrokHome: () => grokHome,
+        resolveDefaultLibraryPath: (...segments) => path.join(libraryRoot, ...segments),
+        createSessionId: () => '123e4567-e89b-42d3-a456-426614174002',
+        now: () => 3_000,
+        runCli: async ({ args, cwd }) => {
+          observedArgs = args;
+          const sessionIndex = args.indexOf('--session-id');
+          const sessionId = args[sessionIndex + 1]!;
+          const imagesDirectory = path.join(
+            grokHome,
+            'sessions',
+            encodeURIComponent(cwd),
+            sessionId,
+            'images',
+          );
+          mkdirSync(imagesDirectory, { recursive: true });
+          writeFileSync(path.join(imagesDirectory, 'generated.webp'), 'fake-image');
+          return {
+            status: 0,
+            stdout: JSON.stringify({ stopReason: 'end_turn', sessionId, text: 'Done.' }),
+            stderr: '',
+          };
+        },
+      });
+
+      await executor({
+        providerId: 'grok',
+        preflight: READY_PREFLIGHT,
+        compiledInput,
+        job: {
+          id: 'job-grok-default-model',
+          workspaceId: 'workspace-1',
+          libraryContext: { libraryId: 'library-1', rootPath: libraryRoot },
+          providerId: 'grok',
+          prompt: 'A clean geometric red paper boat on calm water.',
+        },
+      });
+
+      expect(observedArgs).not.toContain('--model');
+    } finally {
+      rmSync(root, { recursive: true, force: true });
+    }
+  });
 });

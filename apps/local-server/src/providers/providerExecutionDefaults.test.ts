@@ -1,13 +1,26 @@
 import { describe, expect, it } from 'vite-plus/test';
-import {
-  DEFAULT_GROK_IMAGE_MODEL,
-  resolveBootstrapProviderExecutionOptions,
-} from './providerExecutionDefaults';
+import { resolveBootstrapProviderExecutionOptions } from './providerExecutionDefaults';
 
 describe('resolveBootstrapProviderExecutionOptions', () => {
-  it('uses Grok-owned execution defaults instead of Codex toolbar values', () => {
-    expect(resolveBootstrapProviderExecutionOptions('grok', {})).toEqual({
-      model: DEFAULT_GROK_IMAGE_MODEL,
+  it('uses the Grok Runtime Doctor default instead of Codex toolbar values', () => {
+    expect(
+      resolveBootstrapProviderExecutionOptions(
+        'grok',
+        {},
+        { grokRuntime: { defaultModel: 'grok-4.6' } },
+      ),
+    ).toEqual({
+      model: 'grok-4.6',
+      reasoningEffort: 'low',
+      serviceTier: null,
+    });
+  });
+
+  it('omits a Grok model when the Runtime Doctor has no default', () => {
+    expect(
+      resolveBootstrapProviderExecutionOptions('grok', {}, { grokRuntime: { defaultModel: null } }),
+    ).toEqual({
+      model: '',
       reasoningEffort: 'low',
       serviceTier: null,
     });
@@ -15,7 +28,11 @@ describe('resolveBootstrapProviderExecutionOptions', () => {
 
   it('accepts a backend Grok model override without storing credentials in Studio Settings', () => {
     expect(
-      resolveBootstrapProviderExecutionOptions('grok', { GROK_IMAGE_MODEL: 'grok-next' }),
+      resolveBootstrapProviderExecutionOptions(
+        'grok',
+        { GROK_IMAGE_MODEL: 'grok-next' },
+        { grokRuntime: { defaultModel: 'grok-4.6' } },
+      ),
     ).toEqual({
       model: 'grok-next',
       reasoningEffort: 'low',

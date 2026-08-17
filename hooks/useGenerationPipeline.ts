@@ -320,6 +320,8 @@ export const useGenerationPipeline = ({
           inputImage: {
             src: original.dataUrl,
             prompt: configToUse.prompt,
+            name: original.name,
+            localPath: original.localPath,
           },
         });
 

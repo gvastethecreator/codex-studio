@@ -51,6 +51,8 @@ import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
 import { resolveStylePresetCardImages } from '../../lib/stylePresetVisuals';
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
+import type { GenerationProviderId } from '../../packages/shared/src';
+import { resolveGrokImagineGenerateBlock } from '../../lib/grokImagineUiPolicy';
 import { useStyleRuntimePacks } from '../../hooks/useStyleRuntimePacks';
 import Tooltip from '../Tooltip';
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
@@ -143,6 +145,8 @@ interface StylesRecipeProps {
   ) => void;
   isGenerating: boolean;
   images?: GeneratedImageWithConfig[];
+  activeProviderId?: GenerationProviderId;
+  grokCanExecute?: boolean;
 }
 
 const FAVORITES_PACK_ID = 'favorites';
@@ -1089,10 +1093,19 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   onGenerate,
   isGenerating,
   images = EMPTY_IMAGES,
+  activeProviderId = 'codex',
+  grokCanExecute = false,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const referenceImages = config.attachments.slice(0, MAX_STYLE_REFERENCE_IMAGES);
   const referenceSlotsRemaining = Math.max(0, MAX_STYLE_REFERENCE_IMAGES - referenceImages.length);
+  const grokGenerateBlock = resolveGrokImagineGenerateBlock({
+    providerId: activeProviderId,
+    recipeId: 'styles',
+    aspectRatio: config.aspectRatio,
+    attachments: referenceImages,
+    canExecute: grokCanExecute,
+  });
 
   const [currentPackId, setCurrentPackId] = useState(DEFAULT_STYLE_PACK_ID);
   const [isPackLandingOpen, setIsPackLandingOpen] = useState(true);
@@ -2062,7 +2075,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       baseNegativePrompt: config.negativePrompt,
       diversityHint,
     });
-    if (!generationPlan) return;
+    if (!generationPlan || grokGenerateBlock) return;
 
     onGenerate(
       config.prompt?.trim() || generationPlan.fallbackPrompt,
@@ -2086,6 +2099,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       { preventModal: true },
     );
   }, [
+    grokGenerateBlock,
     config.aspectRatio,
     config.batchCount,
     config.executionModel,
@@ -2803,7 +2817,8 @@ ${styleAnchorLine}
                 <button
                   type="button"
                   onClick={handleGenerateSelectedStyles}
-                  disabled={activeSelectedStyleCount === 0}
+                  disabled={activeSelectedStyleCount === 0 || Boolean(grokGenerateBlock)}
+                  title={grokGenerateBlock?.message}
                   data-style-generate-button
                   data-generate-active={isGenerating ? 'true' : 'false'}
                   className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
@@ -2811,6 +2826,14 @@ ${styleAnchorLine}
                   <Play size={15} />
                   {isGenerating ? 'Queue' : 'Generate'}
                 </button>
+                {grokGenerateBlock ? (
+                  <p
+                    role="status"
+                    className="mt-2 text-[11px] font-medium leading-relaxed text-zinc-400"
+                  >
+                    {grokGenerateBlock.message}
+                  </p>
+                ) : null}
               </div>
             </div>
           </details>
@@ -3618,7 +3641,8 @@ ${styleAnchorLine}
           <button
             type="button"
             onClick={handleGenerateSelectedStyles}
-            disabled={activeSelectedStyleCount === 0}
+            disabled={activeSelectedStyleCount === 0 || Boolean(grokGenerateBlock)}
+            title={grokGenerateBlock?.message}
             data-style-generate-button
             data-generate-active={isGenerating ? 'true' : 'false'}
             className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/35 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
@@ -3626,6 +3650,11 @@ ${styleAnchorLine}
             <Play size={16} />
             {isGenerating ? 'Queue' : 'Generate'}
           </button>
+          {grokGenerateBlock ? (
+            <p role="status" className="mt-2 text-[11px] font-medium leading-relaxed text-zinc-400">
+              {grokGenerateBlock.message}
+            </p>
+          ) : null}
         </aside>
       ) : (
         <aside

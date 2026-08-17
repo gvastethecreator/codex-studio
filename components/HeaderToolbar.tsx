@@ -385,11 +385,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                             {provider.label}
                           </span>
                           <span className="mt-0.5 block text-[9px] font-bold text-zinc-500">
-                            {provider.canExecute
-                              ? 'Ready'
-                              : provider.status === 'unknown'
-                                ? 'Checking runtime'
-                                : 'Needs setup'}
+                            {provider.statusDetail}
                           </span>
                         </span>
                         {isSelected ? <Check size={15} aria-hidden="true" /> : null}

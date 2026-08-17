@@ -1,8 +1,12 @@
 import { useCallback, useState } from 'react';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import { prepareStudioGenerationRequest } from '../lib/studioGenerationRequest';
+import { resolveGrokImagineGenerateBlock } from '../lib/grokImagineUiPolicy';
+import {
+  prepareStudioGenerationRequest,
+  resolveStudioGenerateRecipeId,
+} from '../lib/studioGenerationRequest';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
-import type { Job as StudioJob } from '../packages/shared/src';
+import type { GenerationProviderId, Job as StudioJob } from '../packages/shared/src';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 
 type GenerateOptions = {
@@ -63,6 +67,9 @@ interface UseStudioGenerationActionsProps {
   onRecipeSelection: (id: RecipeId) => void;
   onViewChange: (view: 'studio' | 'recipes') => void;
   onEditSettled?: () => void;
+  activeProviderId: GenerationProviderId;
+  grokCanExecute: boolean;
+  activeRecipe: RecipeId;
 }
 
 /**
@@ -83,6 +90,9 @@ export function useStudioGenerationActions({
   onRecipeSelection,
   onViewChange,
   onEditSettled,
+  activeProviderId,
+  grokCanExecute,
+  activeRecipe,
 }: UseStudioGenerationActionsProps) {
   const [isEnhancingPrompt, setIsEnhancingPrompt] = useState(false);
   const [isEditingImage, setIsEditingImage] = useState(false);
@@ -96,17 +106,22 @@ export function useStudioGenerationActions({
         closeModal();
       }
 
-      const requestConfigOverrides = options?.useCurrentAttachments
-        ? buildGenerateOverridesWithCurrentAttachments(
-            configOverrides,
-            generationConfigRef.current.attachments,
-          )
-        : configOverrides;
+      const requestConfigOverrides = {
+        ...(options?.useCurrentAttachments
+          ? buildGenerateOverridesWithCurrentAttachments(
+              configOverrides,
+              generationConfigRef.current.attachments,
+            )
+          : configOverrides),
+        recipeId: resolveStudioGenerateRecipeId(configOverrides, activeRecipe),
+      };
 
       const request = prepareStudioGenerationRequest({
         generationConfig: generationConfigRef.current,
         promptOverride,
         configOverrides: requestConfigOverrides,
+        providerId: activeProviderId,
+        grokCanExecute,
       });
 
       if (!request.ok) {
@@ -135,6 +150,9 @@ export function useStudioGenerationActions({
       generationConfigRef,
       isModalOpen,
       setGenerationConfig,
+      activeProviderId,
+      grokCanExecute,
+      activeRecipe,
     ],
   );
 
@@ -169,6 +187,18 @@ export function useStudioGenerationActions({
 
   const handleExecuteEdit = useCallback(
     async (original: Attachment, mask: string, prompt: string) => {
+      const grokBlock = resolveGrokImagineGenerateBlock({
+        providerId: activeProviderId,
+        recipeId: activeRecipe,
+        aspectRatio: generationConfigRef.current.aspectRatio,
+        attachments: [original],
+        canExecute: grokCanExecute,
+      });
+      if (grokBlock) {
+        addToast(grokBlock.message, 'info');
+        return;
+      }
+
       setIsEditingImage(true);
       try {
         await executeEdit(original, mask, prompt);
@@ -180,7 +210,16 @@ export function useStudioGenerationActions({
         onEditSettled?.();
       }
     },
-    [closeOverlay, executeEdit, onEditSettled],
+    [
+      activeProviderId,
+      activeRecipe,
+      addToast,
+      closeOverlay,
+      executeEdit,
+      generationConfigRef,
+      grokCanExecute,
+      onEditSettled,
+    ],
   );
 
   const handleLoadRecipe = useCallback(

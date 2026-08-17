@@ -44,9 +44,9 @@ Requirements:
 Grok Imagine is optional. To use it, install Grok Build, run `grok login`, and
 confirm `bun run providers:preflight -- --provider=grok` reports
 `canAttempt=true`. Studio reuses that CLI-owned login; it does not require or
-store `XAI_API_KEY`. The Styles recipe supports both Codex and Grok for direct
-generation and managed-reference styling. Codex stays first and remains the
-initial default provider.
+store `XAI_API_KEY`. Home and the Styles recipe support both Codex and Grok.
+Styles can generate from a prompt or style managed library references. Codex
+stays first and remains the initial default provider.
 
 The app readiness checks are the source of truth. Reported Bun and Codex
 metadata is diagnostic, not a hard setup gate; use `bun run runtime:doctor`

@@ -358,4 +358,142 @@ describe('persistentJobIntake', () => {
     });
     expect(createJobFn).not.toHaveBeenCalled();
   });
+
+  it('rejects a Grok job with an unsupported ratio before enqueue', async () => {
+    const createJobFn = vi.fn();
+    const enqueueJob = vi.fn();
+    const intake = createPersistentJobIntake({
+      createJobId: () => 'job-grok-ratio',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveBootstrapExecution: () => ({
+        model: 'grok-4.6',
+        reasoningEffort: 'low',
+        serviceTier: null,
+      }),
+      readGrokAvailableModels: () => ['grok-4.6', 'grok-4.5'],
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: vi.fn(),
+      logJobCreated: vi.fn(),
+      enqueueJob,
+    });
+
+    const result = await intake.createJob({
+      kind: 'image_generate',
+      providerId: 'grok',
+      prompt: 'A red paper boat.',
+      sourceSpec: createGenerationTaskSpec({
+        id: 'spec-grok-ratio',
+        task: 'image_generate',
+        providerId: 'grok',
+        prompt: 'A red paper boat.',
+        output: { count: 1, aspectRatio: '2:3' },
+      }),
+    });
+
+    expect(result).toEqual({
+      ok: false,
+      error: {
+        status: 400,
+        body: expect.objectContaining({
+          code: 'invalid_grok_aspect_ratio',
+          field: 'sourceSpec.output.aspectRatio',
+        }),
+      },
+    });
+    expect(createJobFn).not.toHaveBeenCalled();
+    expect(enqueueJob).not.toHaveBeenCalled();
+  });
+
+  it('rejects a Grok job that has no Generation Task Spec', async () => {
+    const createJobFn = vi.fn();
+    const intake = createPersistentJobIntake({
+      createJobId: () => 'job-grok-no-spec',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveBootstrapExecution: () => ({
+        model: 'grok-4.6',
+        reasoningEffort: 'low',
+        serviceTier: null,
+      }),
+      readGrokAvailableModels: () => ['grok-4.6'],
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: vi.fn(),
+      logJobCreated: vi.fn(),
+      enqueueJob: vi.fn(),
+    });
+
+    const result = await intake.createJob({
+      kind: 'image_generate',
+      providerId: 'grok',
+      prompt: 'A red paper boat.',
+    });
+
+    expect(result).toEqual({
+      ok: false,
+      error: {
+        status: 400,
+        body: expect.objectContaining({
+          code: 'missing_source_spec',
+          field: 'sourceSpec',
+        }),
+      },
+    });
+    expect(createJobFn).not.toHaveBeenCalled();
+  });
+
+  it('rejects a Grok job whose model is missing from the Runtime Doctor list', async () => {
+    const createJobFn = vi.fn();
+    const intake = createPersistentJobIntake({
+      createJobId: () => 'job-grok-model',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      resolveBootstrapExecution: () => ({
+        model: 'grok-next-missing',
+        reasoningEffort: 'low',
+        serviceTier: null,
+      }),
+      readGrokAvailableModels: () => ['grok-4.6', 'grok-4.5'],
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: vi.fn(),
+      logJobCreated: vi.fn(),
+      enqueueJob: vi.fn(),
+    });
+
+    const result = await intake.createJob({
+      kind: 'image_generate',
+      providerId: 'grok',
+      prompt: 'A red paper boat.',
+      sourceSpec: createGenerationTaskSpec({
+        id: 'spec-grok-model',
+        task: 'image_generate',
+        providerId: 'grok',
+        prompt: 'A red paper boat.',
+      }),
+    });
+
+    expect(result).toEqual({
+      ok: false,
+      error: {
+        status: 400,
+        body: expect.objectContaining({
+          code: 'unavailable_grok_model',
+          field: 'execution.model',
+        }),
+      },
+    });
+    expect(createJobFn).not.toHaveBeenCalled();
+  });
 });

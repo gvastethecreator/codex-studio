@@ -101,23 +101,34 @@ function isVersionAtLeast(actual: string | null, minimum: string) {
   return true;
 }
 
+const MODEL_ID_PATTERN = /^[A-Za-z0-9][A-Za-z0-9._:-]*$/;
+
 export function parseAvailableGrokModels(output: string) {
   const lines = output.split(/\r?\n/);
   const models: string[] = [];
   let defaultModel: string | null = null;
   let inModels = false;
   for (const line of lines) {
-    if (/^Available models:\s*$/i.test(line.trim())) {
+    const trimmed = line.trim();
+    const headerDefault = trimmed.match(/^Default model:\s+(\S+)/i);
+    if (headerDefault) {
+      const headerModel = headerDefault[1]!;
+      if (MODEL_ID_PATTERN.test(headerModel)) defaultModel = headerModel;
+      continue;
+    }
+    if (/^Available models:\s*$/i.test(trimmed)) {
       inModels = true;
       continue;
     }
-    if (!inModels) continue;
-    const match = line.match(/^\s*\*?\s*([^\s(]+)(?:\s+\(default\))?\s*$/i);
+    if (!inModels || !trimmed) continue;
+    const match = trimmed.match(/^(?:[-*]\s+)?(\S+?)(?:\s+\(default\))?\s*$/i);
     if (!match) continue;
     const model = match[1]!;
+    if (!MODEL_ID_PATTERN.test(model)) continue;
     models.push(model);
-    if (/\(default\)/i.test(line)) defaultModel = model;
+    if (/\(default\)/i.test(trimmed)) defaultModel = model;
   }
+  if (defaultModel && !models.includes(defaultModel)) models.unshift(defaultModel);
   return { models: [...new Set(models)], defaultModel };
 }
 

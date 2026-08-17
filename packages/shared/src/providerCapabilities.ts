@@ -30,6 +30,8 @@ export interface GenerationProviderRuntimePreflight {
   localRuntimeSource: string | null;
   canAttemptExecution: boolean;
   diagnostics: string[];
+  availableModels?: string[];
+  defaultModel?: string | null;
 }
 
 export interface GenerationProviderRuntimePreflightResponse {
@@ -76,7 +78,7 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     requiresLocalRuntime: true,
     activeDetail: 'Grok Imagine is available through the authenticated local Grok Build CLI.',
     plannedDetail: 'Grok Imagine adapter is available.',
-    missingDetail: 'Install Grok Build and run `grok login` before enabling this adapter.',
+    missingDetail: 'Install Grok Build and run `grok login`.',
   },
   {
     providerId: 'google',

@@ -56,6 +56,7 @@ import {
   resolveThumbnailMaxEdge,
 } from './libraryAssetVariants';
 import { getProviderExecutionBlocker, readProviderCapabilities } from './providerCapabilities';
+import { resolveBootstrapProviderExecutionOptions } from './providers/providerExecutionDefaults';
 import {
   getExternalProviderRuntimePreflight,
   readGenerationProviderRuntimePreflights,
@@ -341,6 +342,11 @@ export async function createStudioApp(
         return { libraryId: library.id, rootPath: library.path };
       },
       readEditableSettings: () => readEditableStudioSettings(settingsStorage),
+      resolveBootstrapExecution: (providerId) =>
+        resolveBootstrapProviderExecutionOptions(providerId, process.env, {
+          grokRuntime: readGrokRuntimeDoctorFn(),
+        }),
+      readGrokAvailableModels: () => readGrokRuntimeDoctorFn().availableModels,
       resolveProviderExecutionBlocker: async (providerId) => {
         const codexRuntime =
           providerId === 'codex'

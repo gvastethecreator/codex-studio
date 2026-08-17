@@ -1,0 +1,566 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - generic [ref=f2e5]:
+      - generic [ref=f2e6]:
+        - generic [ref=f2e7]:
+          - button "Change Theme" [ref=f2e8] [cursor=pointer]:
+            - generic [ref=f2e18]:
+              - generic [ref=f2e19]: CODEX
+              - generic [ref=f2e20]: STUDIO
+          - generic [ref=f2e605]:
+            - 'button "Open workspace switcher: Default" [ref=f2e606] [cursor=pointer]':
+              - generic [ref=f2e611]: Default
+            - generic: Workspaces
+        - generic [ref=f2e612]:
+          - button "Go to studio" [ref=f2e613] [cursor=pointer]
+          - generic [ref=f2e618]: /
+          - button "Back to recipes" [ref=f2e619] [cursor=pointer]:
+            - generic [ref=f2e623]: Recipes
+          - generic [ref=f2e624]: /
+          - generic [ref=f2e625]: Styles
+      - generic [ref=f2e43]:
+        - generic [ref=f2e46]:
+          - button "Weekly 0%" [ref=f2e216] [cursor=pointer]:
+            - generic [ref=f2e218]:
+              - generic [ref=f2e219]: Weekly
+              - generic [ref=f2e220]: 0%
+          - generic: "Available usage for Pro · Weekly: 0% available, 4d reset"
+        - generic [ref=f2e58]:
+          - generic [ref=f2e59]:
+            - 'button "Open runtime status: Ready" [ref=f2e222] [cursor=pointer]':
+              - generic [ref=f2e64]: Ready
+            - generic: Runtime ready.
+          - generic [ref=f2e66]:
+            - 'button "Image generation provider: Grok Imagine. Change provider" [ref=f2e223] [cursor=pointer]':
+              - generic [ref=f2e69]: Grok
+            - generic: Change image generation provider
+          - generic [ref=f2e72]:
+            - button "Open help and setup" [ref=f2e73] [cursor=pointer]
+            - generic: Help & setup
+          - generic [ref=f2e77]:
+            - button "Open studio activity" [ref=f2e78] [cursor=pointer]
+            - generic: Studio activity
+          - generic [ref=f2e81]:
+            - button "Open archived images" [ref=f2e82] [cursor=pointer]
+            - generic: Archived images
+          - generic [ref=f2e86]:
+            - button "Open Codex chat" [ref=f2e87] [cursor=pointer]
+            - generic: Codex chat
+          - generic [ref=f2e90]:
+            - button "Open Studio Settings" [ref=f2e91] [cursor=pointer]
+            - generic: Studio settings
+          - generic [ref=f2e95]:
+            - button "Open persistent jobs (0 jobs)" [ref=f2e96] [cursor=pointer]:
+              - generic [ref=f2e99]: "0"
+            - generic: Persistent jobs
+  - generic [ref=f2e696]:
+    - complementary [ref=f2e697]:
+      - generic [ref=f2e698]:
+        - generic [ref=f2e699]:
+          - generic [ref=f2e700]:
+            - heading "References" [level=2] [ref=f2e701]
+            - paragraph [ref=f2e702]: 0/5 Images
+          - button "Hide references panel" [ref=f2e703] [cursor=pointer]
+        - button "Add style reference" [ref=f2e708] [cursor=pointer]:
+          - generic [ref=f2e712]: Add
+        - button "Drop reference image" [ref=f2e734] [cursor=pointer]
+    - generic [ref=f2e741]:
+      - generic [ref=f2e742]:
+        - generic [ref=f2e743]:
+          - button "Previous style tab" [disabled] [ref=f2e744]
+          - button "Next style tab" [ref=f2e747] [cursor=pointer]
+        - button "Show style packs" [ref=f2e750] [cursor=pointer]:
+          - generic [ref=f2e754]: Packs
+        - button "Show all style categories" [ref=f2e755] [cursor=pointer]
+        - button "Show all style cards" [ref=f2e759] [cursor=pointer]
+        - button "Show My Styles" [ref=f2e765] [cursor=pointer]
+        - button "Show favorite styles" [ref=f2e768] [cursor=pointer]:
+          - generic [ref=f2e771]: Favorites
+      - generic [ref=f2e772]:
+        - generic [ref=f2e773]:
+          - heading "Style Packs" [level=2] [ref=f2e774]
+          - paragraph [ref=f2e775]: Collection-first style systems grouped by creative intent.
+        - generic [ref=f2e776]:
+          - complementary [ref=f2e777]:
+            - generic [ref=f2e778]:
+              - generic [ref=f2e779]:
+                - paragraph [ref=f2e781]: Quick Map
+                - button "Hide style map" [ref=f2e782] [cursor=pointer]
+              - generic [ref=f2e785]:
+                - generic [ref=f2e786]:
+                  - generic [ref=f2e787]: Personal
+                  - generic [ref=f2e791]:
+                    - button "My Styles Personal 0" [ref=f2e792] [cursor=pointer]:
+                      - generic [ref=f2e796]:
+                        - generic [ref=f2e797]: My Styles
+                        - generic [ref=f2e798]: Personal
+                      - generic [ref=f2e799]: "0"
+                    - button "Favorites Personal 0" [ref=f2e800] [cursor=pointer]:
+                      - generic [ref=f2e804]:
+                        - generic [ref=f2e805]: Favorites
+                        - generic [ref=f2e806]: Personal
+                      - generic [ref=f2e807]: "0"
+                - generic [ref=f2e808]:
+                  - generic [ref=f2e809]: Capture & Reality
+                  - generic [ref=f2e813]:
+                    - button "Photography & Camera Styles Capture & Reality 1" [ref=f2e814] [cursor=pointer]:
+                      - generic [ref=f2e819]:
+                        - generic [ref=f2e820]: Photography & Camera Styles
+                        - generic [ref=f2e821]: Capture & Reality
+                      - generic [ref=f2e822]: "1"
+                    - button "Analog Film & Photo Processes Capture & Reality 2" [ref=f2e823] [cursor=pointer]:
+                      - generic [ref=f2e827]:
+                        - generic [ref=f2e828]: Analog Film & Photo Processes
+                        - generic [ref=f2e829]: Capture & Reality
+                      - generic [ref=f2e830]: "2"
+                    - button "Lighting, Optics & Atmosphere Capture & Reality 4" [ref=f2e831] [cursor=pointer]:
+                      - generic [ref=f2e835]:
+                        - generic [ref=f2e836]: Lighting, Optics & Atmosphere
+                        - generic [ref=f2e837]: Capture & Reality
+                      - generic [ref=f2e838]: "4"
+                    - button "Scientific, Surveillance & Technical Imaging Capture & Reality 4" [ref=f2e839] [cursor=pointer]:
+                      - generic [ref=f2e844]:
+                        - generic [ref=f2e845]: Scientific, Surveillance & Technical Imaging
+                        - generic [ref=f2e846]: Capture & Reality
+                      - generic [ref=f2e847]: "4"
+                - generic [ref=f2e848]:
+                  - generic [ref=f2e849]: Screen & Motion
+                  - generic [ref=f2e853]:
+                    - button "Cinema & Film Genres Screen & Motion 1" [ref=f2e854] [cursor=pointer]:
+                      - generic [ref=f2e858]:
+                        - generic [ref=f2e859]: Cinema & Film Genres
+                        - generic [ref=f2e860]: Screen & Motion
+                      - generic [ref=f2e861]: "1"
+                    - button "TV, Broadcast & Analog Video Screen & Motion 1" [ref=f2e862] [cursor=pointer]:
+                      - generic [ref=f2e867]:
+                        - generic [ref=f2e868]: TV, Broadcast & Analog Video
+                        - generic [ref=f2e869]: Screen & Motion
+                      - generic [ref=f2e870]: "1"
+                    - button "Animation & Cartoons Screen & Motion 1" [ref=f2e871] [cursor=pointer]:
+                      - generic [ref=f2e875]:
+                        - generic [ref=f2e876]: Animation & Cartoons
+                        - generic [ref=f2e877]: Screen & Motion
+                      - generic [ref=f2e878]: "1"
+                    - button "Anime & Manga Screen & Motion 5" [ref=f2e879] [cursor=pointer]:
+                      - generic [ref=f2e883]:
+                        - generic [ref=f2e884]: Anime & Manga
+                        - generic [ref=f2e885]: Screen & Motion
+                      - generic [ref=f2e886]: "5"
+                - generic [ref=f2e887]:
+                  - generic [ref=f2e888]: Illustration & Art Media
+                  - generic [ref=f2e892]:
+                    - button "Comics & Sequential Art Illustration & Art Media 1" [ref=f2e893] [cursor=pointer]:
+                      - generic [ref=f2e898]:
+                        - generic [ref=f2e899]: Comics & Sequential Art
+                        - generic [ref=f2e900]: Illustration & Art Media
+                      - generic [ref=f2e901]: "1"
+                    - button "Illustration & Publishing Illustration & Art Media 1" [ref=f2e902] [cursor=pointer]:
+                      - generic [ref=f2e909]:
+                        - generic [ref=f2e910]: Illustration & Publishing
+                        - generic [ref=f2e911]: Illustration & Art Media
+                      - generic [ref=f2e912]: "1"
+                    - button "Drawing, Ink & Printmaking Illustration & Art Media 5" [ref=f2e913] [cursor=pointer]:
+                      - generic [ref=f2e918]:
+                        - generic [ref=f2e919]: Drawing, Ink & Printmaking
+                        - generic [ref=f2e920]: Illustration & Art Media
+                      - generic [ref=f2e921]: "5"
+                    - button "Painting & Traditional Media Illustration & Art Media 2" [ref=f2e922] [cursor=pointer]:
+                      - generic [ref=f2e929]:
+                        - generic [ref=f2e930]: Painting & Traditional Media
+                        - generic [ref=f2e931]: Illustration & Art Media
+                      - generic [ref=f2e932]: "2"
+                    - button "Digital Art & Concept Art Illustration & Art Media 2" [ref=f2e933] [cursor=pointer]:
+                      - generic [ref=f2e940]:
+                        - generic [ref=f2e941]: Digital Art & Concept Art
+                        - generic [ref=f2e942]: Illustration & Art Media
+                      - generic [ref=f2e943]: "2"
+                - generic [ref=f2e944]:
+                  - generic [ref=f2e945]: Design, Assets & Materials
+                  - generic [ref=f2e949]:
+                    - button "3D, CGI & Product Render Design, Assets & Materials 1" [ref=f2e950] [cursor=pointer]:
+                      - generic [ref=f2e956]:
+                        - generic [ref=f2e957]: 3D, CGI & Product Render
+                        - generic [ref=f2e958]: Design, Assets & Materials
+                      - generic [ref=f2e959]: "1"
+                    - button "Materials, Textures & Surfaces Design, Assets & Materials 4" [ref=f2e960] [cursor=pointer]:
+                      - generic [ref=f2e965]:
+                        - generic [ref=f2e966]: Materials, Textures & Surfaces
+                        - generic [ref=f2e967]: Design, Assets & Materials
+                      - generic [ref=f2e968]: "4"
+                    - button "Patterns & Ornament Design, Assets & Materials 1" [ref=f2e969] [cursor=pointer]:
+                      - generic [ref=f2e974]:
+                        - generic [ref=f2e975]: Patterns & Ornament
+                        - generic [ref=f2e976]: Design, Assets & Materials
+                      - generic [ref=f2e977]: "1"
+                    - button "Diagrams, Blueprints & Technical Sheets Design, Assets & Materials 4" [ref=f2e978] [cursor=pointer]:
+                      - generic [ref=f2e983]:
+                        - generic [ref=f2e984]: Diagrams, Blueprints & Technical Sheets
+                        - generic [ref=f2e985]: Design, Assets & Materials
+                      - generic [ref=f2e986]: "4"
+                    - button "Fashion, Costume & Wearables Design, Assets & Materials 1" [ref=f2e987] [cursor=pointer]:
+                      - generic [ref=f2e991]:
+                        - generic [ref=f2e992]: Fashion, Costume & Wearables
+                        - generic [ref=f2e993]: Design, Assets & Materials
+                      - generic [ref=f2e994]: "1"
+                    - button "Architecture, Interiors & Places Design, Assets & Materials 3" [ref=f2e995] [cursor=pointer]:
+                      - generic [ref=f2e999]:
+                        - generic [ref=f2e1000]: Architecture, Interiors & Places
+                        - generic [ref=f2e1001]: Design, Assets & Materials
+                      - generic [ref=f2e1002]: "3"
+                    - button "Games, UI & Interactive Worlds Design, Assets & Materials 2" [ref=f2e1003] [cursor=pointer]:
+                      - generic [ref=f2e1008]:
+                        - generic [ref=f2e1009]: Games, UI & Interactive Worlds
+                        - generic [ref=f2e1010]: Design, Assets & Materials
+                      - generic [ref=f2e1011]: "2"
+                - generic [ref=f2e1012]:
+                  - generic [ref=f2e1013]: Worlds & Genres
+                  - generic [ref=f2e1017]:
+                    - button "Speculative Architecture & Impossible Places Worlds & Genres 1" [ref=f2e1018] [cursor=pointer]:
+                      - generic [ref=f2e1022]:
+                        - generic [ref=f2e1023]: Speculative Architecture & Impossible Places
+                        - generic [ref=f2e1024]: Worlds & Genres
+                      - generic [ref=f2e1025]: "1"
+                    - button "Myth, Folklore & Ritual Worlds & Genres 1" [ref=f2e1026] [cursor=pointer]:
+                      - generic [ref=f2e1032]:
+                        - generic [ref=f2e1033]: Myth, Folklore & Ritual
+                        - generic [ref=f2e1034]: Worlds & Genres
+                      - generic [ref=f2e1035]: "1"
+                    - button "Dungeon, Dark Fantasy & Wargame Worlds & Genres 1" [ref=f2e1036] [cursor=pointer]:
+                      - generic [ref=f2e1041]:
+                        - generic [ref=f2e1042]: Dungeon, Dark Fantasy & Wargame
+                        - generic [ref=f2e1043]: Worlds & Genres
+                      - generic [ref=f2e1044]: "1"
+                    - button "Punk & Alternate Futures Worlds & Genres 3" [ref=f2e1045] [cursor=pointer]:
+                      - generic [ref=f2e1049]:
+                        - generic [ref=f2e1050]: Punk & Alternate Futures
+                        - generic [ref=f2e1051]: Worlds & Genres
+                      - generic [ref=f2e1052]: "3"
+                    - button "Surreal, Dream & Symbolic Worlds & Genres 2" [ref=f2e1053] [cursor=pointer]:
+                      - generic [ref=f2e1059]:
+                        - generic [ref=f2e1060]: Surreal, Dream & Symbolic
+                        - generic [ref=f2e1061]: Worlds & Genres
+                      - generic [ref=f2e1062]: "2"
+                - generic [ref=f2e1063]:
+                  - generic [ref=f2e1064]: Experimental & Play
+                  - generic [ref=f2e1068]:
+                    - button "Abstract, Glitch & Systems Experimental & Play 1" [ref=f2e1069] [cursor=pointer]:
+                      - generic [ref=f2e1075]:
+                        - generic [ref=f2e1076]: Abstract, Glitch & Systems
+                        - generic [ref=f2e1077]: Experimental & Play
+                      - generic [ref=f2e1078]: "1"
+                    - button "Toys, Craft, Food & Scale Play Experimental & Play 2" [ref=f2e1079] [cursor=pointer]:
+                      - generic [ref=f2e1084]:
+                        - generic [ref=f2e1085]: Toys, Craft, Food & Scale Play
+                        - generic [ref=f2e1086]: Experimental & Play
+                      - generic [ref=f2e1087]: "2"
+                - generic [ref=f2e1088]:
+                  - generic [ref=f2e1089]: Source
+                  - generic [ref=f2e1093]:
+                    - button "Photo Realism Source pack 87" [ref=f2e1094] [cursor=pointer]:
+                      - generic [ref=f2e1099]:
+                        - generic [ref=f2e1100]: Photo Realism
+                        - generic [ref=f2e1101]: Source pack
+                      - generic [ref=f2e1102]: "87"
+                    - button "Cinematic Media Source pack 128" [ref=f2e1103] [cursor=pointer]:
+                      - generic [ref=f2e1107]:
+                        - generic [ref=f2e1108]: Cinematic Media
+                        - generic [ref=f2e1109]: Source pack
+                      - generic [ref=f2e1110]: "128"
+                    - button "3D CGI Source pack 80" [ref=f2e1111] [cursor=pointer]:
+                      - generic [ref=f2e1117]:
+                        - generic [ref=f2e1118]: 3D CGI
+                        - generic [ref=f2e1119]: Source pack
+                      - generic [ref=f2e1120]: "80"
+                    - button "Graphic Novel Source pack 100" [ref=f2e1121] [cursor=pointer]:
+                      - generic [ref=f2e1126]:
+                        - generic [ref=f2e1127]: Graphic Novel
+                        - generic [ref=f2e1128]: Source pack
+                      - generic [ref=f2e1129]: "100"
+                    - button "Anime Battle Source pack 135" [ref=f2e1130] [cursor=pointer]:
+                      - generic [ref=f2e1135]:
+                        - generic [ref=f2e1136]: Anime Battle
+                        - generic [ref=f2e1137]: Source pack
+                      - generic [ref=f2e1138]: "135"
+                    - button "Anime Lifestyle Source pack 132" [ref=f2e1139] [cursor=pointer]:
+                      - generic [ref=f2e1143]:
+                        - generic [ref=f2e1144]: Anime Lifestyle
+                        - generic [ref=f2e1145]: Source pack
+                      - generic [ref=f2e1146]: "132"
+                    - button "Anime Prestige Source pack 140" [ref=f2e1147] [cursor=pointer]:
+                      - generic [ref=f2e1151]:
+                        - generic [ref=f2e1152]: Anime Prestige
+                        - generic [ref=f2e1153]: Source pack
+                      - generic [ref=f2e1154]: "140"
+                    - button "Essential Art Source pack 120" [ref=f2e1155] [cursor=pointer]:
+                      - generic [ref=f2e1162]:
+                        - generic [ref=f2e1163]: Essential Art
+                        - generic [ref=f2e1164]: Source pack
+                      - generic [ref=f2e1165]: "120"
+                    - button "Architecture Source pack 80" [ref=f2e1166] [cursor=pointer]:
+                      - generic [ref=f2e1170]:
+                        - generic [ref=f2e1171]: Architecture
+                        - generic [ref=f2e1172]: Source pack
+                      - generic [ref=f2e1173]: "80"
+                    - button "Fashion Costume Source pack 80" [ref=f2e1174] [cursor=pointer]:
+                      - generic [ref=f2e1178]:
+                        - generic [ref=f2e1179]: Fashion Costume
+                        - generic [ref=f2e1180]: Source pack
+                      - generic [ref=f2e1181]: "80"
+                    - button "Texture Material Source pack 80" [ref=f2e1182] [cursor=pointer]:
+                      - generic [ref=f2e1187]:
+                        - generic [ref=f2e1188]: Texture Material
+                        - generic [ref=f2e1189]: Source pack
+                      - generic [ref=f2e1190]: "80"
+                    - button "Abstract Lab Source pack 80" [ref=f2e1191] [cursor=pointer]:
+                      - generic [ref=f2e1198]:
+                        - generic [ref=f2e1199]: Abstract Lab
+                        - generic [ref=f2e1200]: Source pack
+                      - generic [ref=f2e1201]: "80"
+                    - button "Fun Oddities Source pack 80" [ref=f2e1202] [cursor=pointer]:
+                      - generic [ref=f2e1207]:
+                        - generic [ref=f2e1208]: Fun Oddities
+                        - generic [ref=f2e1209]: Source pack
+                      - generic [ref=f2e1210]: "80"
+                    - button "Game Originals Source pack 80" [ref=f2e1211] [cursor=pointer]:
+                      - generic [ref=f2e1216]:
+                        - generic [ref=f2e1217]: Game Originals
+                        - generic [ref=f2e1218]: Source pack
+                      - generic [ref=f2e1219]: "80"
+                    - button "Mythic Noir Source pack 123" [ref=f2e1220] [cursor=pointer]:
+                      - generic [ref=f2e1226]:
+                        - generic [ref=f2e1227]: Mythic Noir
+                        - generic [ref=f2e1228]: Source pack
+                      - generic [ref=f2e1229]: "123"
+                    - button "Punk Spectrum Source pack 80" [ref=f2e1230] [cursor=pointer]:
+                      - generic [ref=f2e1234]:
+                        - generic [ref=f2e1235]: Punk Spectrum
+                        - generic [ref=f2e1236]: Source pack
+                      - generic [ref=f2e1237]: "80"
+                    - button "Dungeon Zine Source pack 72" [ref=f2e1238] [cursor=pointer]:
+                      - generic [ref=f2e1243]:
+                        - generic [ref=f2e1244]: Dungeon Zine
+                        - generic [ref=f2e1245]: Source pack
+                      - generic [ref=f2e1246]: "72"
+          - generic [ref=f2e1248]:
+            - generic [ref=f2e1249]:
+              - heading "Personal" [level=3] [ref=f2e1252]
+              - generic [ref=f2e1254]:
+                - button "Open My Styles" [ref=f2e1255] [cursor=pointer]:
+                  - generic [ref=f2e1297]:
+                    - generic "My Styles count 0" [ref=f2e1299]: "0"
+                    - generic [ref=f2e1300]:
+                      - paragraph [ref=f2e1301]: Personal
+                      - heading "My Styles" [level=3] [ref=f2e1302]
+                      - paragraph [ref=f2e1307]: Local user-authored styles.
+                - button "Open Favorites" [ref=f2e1308] [cursor=pointer]:
+                  - generic [ref=f2e1350]:
+                    - generic "Favorites count 0" [ref=f2e1352]: "0"
+                    - generic [ref=f2e1353]:
+                      - paragraph [ref=f2e1354]: Personal
+                      - heading "Favorites" [level=3] [ref=f2e1355]
+                      - paragraph [ref=f2e1360]: Styles the user has saved for quick reuse.
+            - generic [ref=f2e1361]:
+              - generic [ref=f2e1364]:
+                - heading "Capture & Reality" [level=3] [ref=f2e1365]
+                - paragraph [ref=f2e1366]: Camera, optics, lighting, analog processes, and technical imaging.
+              - generic [ref=f2e1368]:
+                - button "Open Photography & Camera Styles" [ref=f2e1369] [cursor=pointer]:
+                  - generic [ref=f2e1417]:
+                    - generic "Photography & Camera Styles count 1" [ref=f2e1419]: "1"
+                    - generic [ref=f2e1420]:
+                      - paragraph [ref=f2e1421]: Capture & Reality
+                      - heading "Photography & Camera Styles" [level=3] [ref=f2e1422]
+                      - paragraph [ref=f2e1428]: Real-world photographic language, portrait, documentary, product, and nature looks.
+                - button "Open Analog Film & Photo Processes" [ref=f2e1429] [cursor=pointer]:
+                  - generic [ref=f2e1471]:
+                    - generic "Analog Film & Photo Processes count 2" [ref=f2e1473]: "2"
+                    - generic [ref=f2e1474]:
+                      - paragraph [ref=f2e1475]: Capture & Reality
+                      - heading "Analog Film & Photo Processes" [level=3] [ref=f2e1476]
+                      - paragraph [ref=f2e1481]: Film stocks, historical photo eras, darkroom processes, and camera artifacts.
+                - button "Open Lighting, Optics & Atmosphere" [ref=f2e1482] [cursor=pointer]:
+                  - generic [ref=f2e1524]:
+                    - generic "Lighting, Optics & Atmosphere count 4" [ref=f2e1526]: "4"
+                    - generic [ref=f2e1527]:
+                      - paragraph [ref=f2e1528]: Capture & Reality
+                      - heading "Lighting, Optics & Atmosphere" [level=3] [ref=f2e1529]
+                      - paragraph [ref=f2e1534]: Lighting setups, optical effects, atmosphere, and camera-adjacent techniques.
+                - button "Open Scientific, Surveillance & Technical Imaging" [ref=f2e1535] [cursor=pointer]:
+                  - generic [ref=f2e1583]:
+                    - generic "Scientific, Surveillance & Technical Imaging count 4" [ref=f2e1585]: "4"
+                    - generic [ref=f2e1586]:
+                      - paragraph [ref=f2e1587]: Capture & Reality
+                      - heading "Scientific, Surveillance & Technical Imaging" [level=3] [ref=f2e1588]
+                      - paragraph [ref=f2e1594]: Specialist imaging, surveillance looks, x-ray, thermal, micro, and macro scale views.
+            - generic [ref=f2e1595]:
+              - generic [ref=f2e1598]:
+                - heading "Screen & Motion" [level=3] [ref=f2e1599]
+                - paragraph [ref=f2e1600]: Film, broadcast, animation, cartoons, anime, and manga.
+              - generic [ref=f2e1602]:
+                - button "Open Cinema & Film Genres" [ref=f2e1603] [cursor=pointer]:
+                  - generic [ref=f2e1605]: Cinema & Film Genres
+                - button "Open TV, Broadcast & Analog Video" [ref=f2e1606] [cursor=pointer]:
+                  - generic [ref=f2e1608]: TV, Broadcast & Analog Video
+                - button "Open Animation & Cartoons" [ref=f2e1609] [cursor=pointer]:
+                  - generic [ref=f2e1611]: Animation & Cartoons
+                - button "Open Anime & Manga" [ref=f2e1612] [cursor=pointer]:
+                  - generic [ref=f2e1614]: Anime & Manga
+            - generic [ref=f2e1615]:
+              - generic [ref=f2e1618]:
+                - heading "Illustration & Art Media" [level=3] [ref=f2e1619]
+                - paragraph [ref=f2e1620]: Comics, publishing, painting, drawing, printmaking, and digital art.
+              - generic [ref=f2e1622]:
+                - button "Open Comics & Sequential Art" [ref=f2e1623] [cursor=pointer]:
+                  - generic [ref=f2e1625]: Comics & Sequential Art
+                - button "Open Illustration & Publishing" [ref=f2e1626] [cursor=pointer]:
+                  - generic [ref=f2e1628]: Illustration & Publishing
+                - button "Open Drawing, Ink & Printmaking" [ref=f2e1629] [cursor=pointer]:
+                  - generic [ref=f2e1631]: Drawing, Ink & Printmaking
+                - button "Open Painting & Traditional Media" [ref=f2e1632] [cursor=pointer]:
+                  - generic [ref=f2e1634]: Painting & Traditional Media
+                - button "Open Digital Art & Concept Art" [ref=f2e1635] [cursor=pointer]:
+                  - generic [ref=f2e1637]: Digital Art & Concept Art
+            - generic [ref=f2e1638]:
+              - generic [ref=f2e1641]:
+                - heading "Design, Assets & Materials" [level=3] [ref=f2e1642]
+                - paragraph [ref=f2e1643]: 3D render, surfaces, patterns, fashion, spaces, games, and UI.
+              - generic [ref=f2e1645]:
+                - button "Open 3D, CGI & Product Render" [ref=f2e1646] [cursor=pointer]:
+                  - generic [ref=f2e1648]: 3D, CGI & Product Render
+                - button "Open Materials, Textures & Surfaces" [ref=f2e1649] [cursor=pointer]:
+                  - generic [ref=f2e1651]: Materials, Textures & Surfaces
+                - button "Open Patterns & Ornament" [ref=f2e1652] [cursor=pointer]:
+                  - generic [ref=f2e1654]: Patterns & Ornament
+                - button "Open Diagrams, Blueprints & Technical Sheets" [ref=f2e1655] [cursor=pointer]:
+                  - generic [ref=f2e1657]: Diagrams, Blueprints & Technical Sheets
+                - button "Open Fashion, Costume & Wearables" [ref=f2e1658] [cursor=pointer]:
+                  - generic [ref=f2e1660]: Fashion, Costume & Wearables
+                - button "Open Architecture, Interiors & Places" [ref=f2e1661] [cursor=pointer]:
+                  - generic [ref=f2e1663]: Architecture, Interiors & Places
+                - button "Open Games, UI & Interactive Worlds" [ref=f2e1664] [cursor=pointer]:
+                  - generic [ref=f2e1666]: Games, UI & Interactive Worlds
+            - generic [ref=f2e1667]:
+              - generic [ref=f2e1670]:
+                - heading "Worlds & Genres" [level=3] [ref=f2e1671]
+                - paragraph [ref=f2e1672]: Mythic, fantasy, punk, symbolic, and genre-world visual systems.
+              - generic [ref=f2e1674]:
+                - button "Open Speculative Architecture & Impossible Places" [ref=f2e1675] [cursor=pointer]:
+                  - generic [ref=f2e1677]: Speculative Architecture & Impossible Places
+                - button "Open Myth, Folklore & Ritual" [ref=f2e1678] [cursor=pointer]:
+                  - generic [ref=f2e1680]: Myth, Folklore & Ritual
+                - button "Open Dungeon, Dark Fantasy & Wargame" [ref=f2e1681] [cursor=pointer]:
+                  - generic [ref=f2e1683]: Dungeon, Dark Fantasy & Wargame
+                - button "Open Punk & Alternate Futures" [ref=f2e1684] [cursor=pointer]:
+                  - generic [ref=f2e1686]: Punk & Alternate Futures
+                - button "Open Surreal, Dream & Symbolic" [ref=f2e1687] [cursor=pointer]:
+                  - generic [ref=f2e1689]: Surreal, Dream & Symbolic
+            - generic [ref=f2e1690]:
+              - generic [ref=f2e1693]:
+                - heading "Experimental & Play" [level=3] [ref=f2e1694]
+                - paragraph [ref=f2e1695]: Abstract systems, glitch, toys, craft, food, and scale play.
+              - generic [ref=f2e1697]:
+                - button "Open Abstract, Glitch & Systems" [ref=f2e1698] [cursor=pointer]:
+                  - generic [ref=f2e1700]: Abstract, Glitch & Systems
+                - button "Open Toys, Craft, Food & Scale Play" [ref=f2e1701] [cursor=pointer]:
+                  - generic [ref=f2e1703]: Toys, Craft, Food & Scale Play
+            - generic [ref=f2e1704]:
+              - generic [ref=f2e1705]:
+                - text: Source Packs
+                - generic [ref=f2e1709]: "17"
+              - generic [ref=f2e1710]:
+                - button "Open Photo Realism" [ref=f2e1711] [cursor=pointer]:
+                  - generic [ref=f2e1713]: Photo Realism
+                - button "Open Cinematic Media" [ref=f2e1714] [cursor=pointer]:
+                  - generic [ref=f2e1716]: Cinematic Media
+                - button "Open 3D CGI" [ref=f2e1717] [cursor=pointer]:
+                  - generic [ref=f2e1719]: 3D CGI
+                - button "Open Graphic Novel" [ref=f2e1720] [cursor=pointer]:
+                  - generic [ref=f2e1722]: Graphic Novel
+                - button "Open Anime Battle" [ref=f2e1723] [cursor=pointer]:
+                  - generic [ref=f2e1725]: Anime Battle
+                - button "Open Anime Lifestyle" [ref=f2e1726] [cursor=pointer]:
+                  - generic [ref=f2e1728]: Anime Lifestyle
+                - button "Open Anime Prestige" [ref=f2e1729] [cursor=pointer]:
+                  - generic [ref=f2e1731]: Anime Prestige
+                - button "Open Essential Art" [ref=f2e1732] [cursor=pointer]:
+                  - generic [ref=f2e1734]: Essential Art
+                - button "Open Architecture" [ref=f2e1735] [cursor=pointer]:
+                  - generic [ref=f2e1737]: Architecture
+                - button "Open Fashion Costume" [ref=f2e1738] [cursor=pointer]:
+                  - generic [ref=f2e1740]: Fashion Costume
+                - button "Open Texture Material" [ref=f2e1741] [cursor=pointer]:
+                  - generic [ref=f2e1743]: Texture Material
+                - button "Open Abstract Lab" [ref=f2e1744] [cursor=pointer]:
+                  - generic [ref=f2e1746]: Abstract Lab
+                - button "Open Fun Oddities" [ref=f2e1747] [cursor=pointer]:
+                  - generic [ref=f2e1749]: Fun Oddities
+                - button "Open Game Originals" [ref=f2e1750] [cursor=pointer]:
+                  - generic [ref=f2e1752]: Game Originals
+                - button "Open Mythic Noir" [ref=f2e1753] [cursor=pointer]:
+                  - generic [ref=f2e1755]: Mythic Noir
+                - button "Open Punk Spectrum" [ref=f2e1756] [cursor=pointer]:
+                  - generic [ref=f2e1758]: Punk Spectrum
+                - button "Open Dungeon Zine" [ref=f2e1759] [cursor=pointer]:
+                  - generic [ref=f2e1761]: Dungeon Zine
+    - complementary [ref=f2e1762]:
+      - generic [ref=f2e1763]:
+        - generic [ref=f2e1764]:
+          - heading "Style Slots" [level=2] [ref=f2e1765]
+          - paragraph [ref=f2e1766]: 0/5 Selected
+        - generic [ref=f2e1767]:
+          - button "Hide style slots panel" [ref=f2e1768] [cursor=pointer]
+          - button "Toggle advanced style controls" [ref=f2e1771] [cursor=pointer]
+      - generic [ref=f2e1776]:
+        - generic [ref=f2e1777]: Empty Slot 1
+        - generic [ref=f2e1785]: Empty Slot 2
+        - generic [ref=f2e1793]: Empty Slot 3
+        - generic [ref=f2e1801]: Empty Slot 4
+        - generic [ref=f2e1809]: Empty Slot 5
+      - button "Generate" [disabled] [ref=f2e1817]
+  - contentinfo [ref=f2e632]:
+    - generic [ref=f2e634]:
+      - generic [ref=f2e636]:
+        - button "Add image reference" [ref=f2e637] [cursor=pointer]
+        - 'generic "Active recipe: Styles. Style locked." [ref=f2e1820]':
+          - generic [ref=f2e642]:
+            - generic [ref=f2e643]: Recipe
+            - generic [ref=f2e644]: Styles
+            - generic [ref=f2e645]: Style locked
+        - textbox "Prompt input" [ref=f2e646]:
+          - /placeholder: Describe what you want to create...
+        - generic [ref=f2e647]:
+          - generic [ref=f2e649]:
+            - button "Open negative prompt" [ref=f2e650] [cursor=pointer]
+            - generic: Negative Prompt (Exclude)
+          - generic [ref=f2e655]:
+            - button "Open edit instructions" [ref=f2e656] [cursor=pointer]
+            - generic: Edit with AI (Refine)
+          - generic [ref=f2e661]:
+            - button "Enhance prompt" [ref=f2e662] [cursor=pointer]
+            - generic: Auto Enhance Prompt
+      - generic [ref=f2e668]:
+        - generic [ref=f2e670]:
+          - generic [ref=f2e671]:
+            - 'button "Aspect ratio: 1:1" [expanded] [active] [ref=f2e672] [cursor=pointer]':
+              - generic [ref=f2e675]: 1:1
+            - menu [ref=f2e1821]:
+              - menuitemradio "16:9 1536x864" [ref=f2e1822] [cursor=pointer]:
+                - generic [ref=f2e1825]: 16:9
+                - generic [ref=f2e1826]: 1536x864
+              - menuitemradio "4:3 1536x1152" [ref=f2e1827] [cursor=pointer]:
+                - generic [ref=f2e1830]: 4:3
+                - generic [ref=f2e1831]: 1536x1152
+              - menuitemradio "1:1 1024x1024" [checked] [ref=f2e1832] [cursor=pointer]:
+                - generic [ref=f2e1835]: 1:1
+                - generic [ref=f2e1836]: 1024x1024
+              - menuitemradio "3:4 1152x1536" [ref=f2e1837] [cursor=pointer]:
+                - generic [ref=f2e1840]: 3:4
+                - generic [ref=f2e1841]: 1152x1536
+              - menuitemradio "9:16 864x1536" [ref=f2e1842] [cursor=pointer]:
+                - generic [ref=f2e1845]: 9:16
+                - generic [ref=f2e1846]: 864x1536
+          - 'button "Batch count: 1" [ref=f2e677] [cursor=pointer]':
+            - generic [ref=f2e681]: 1x
+          - 'status "Generation provider: Grok Imagine" [ref=f2e682] [cursor=pointer]':
+            - generic [ref=f2e685]: Grok Imagine
+        - button "GENERATE" [ref=f2e686] [cursor=pointer]

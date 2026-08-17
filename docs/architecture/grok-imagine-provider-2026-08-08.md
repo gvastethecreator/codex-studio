@@ -41,10 +41,12 @@ Grok-owned session data remains under `GROK_HOME`. Studio copies generated media
 - Provider id: `grok`.
 - Runtime kind: local agent CLI.
 - Current tasks: image generation and image-led editing through the existing image task kinds.
-- Current recipe integration: Styles supports direct generation, style-card generation, and managed-reference styling with the same provider-independent recipe directives used by Codex.
+- Current recipe integration: Home and Styles. Styles supports direct generation, style-card generation, and managed-reference styling with the same provider-independent recipe directives used by Codex.
 - Output count: one image per Persistent Job. UI batches already create one Job per requested image.
-- Source images: up to five hydrated, managed local image paths, matching the Styles reference slots. Remote-only URLs and unresolved inline bytes fail before the billable CLI call.
-- Aspect ratios: only ratios supported by the installed Imagine tool are sent. Unsupported explicit ratios fail before execution instead of silently changing the request.
+- Source images: up to five hydrated, managed local image paths, matching the Styles reference slots. Remote-only URLs and unresolved inline bytes fail before enqueue.
+- Aspect ratios: only `auto`, `1:1`, `16:9`, `9:16`, `4:3`, and `3:4` are sent. Unsupported toolbar ratios fail in the Generate dock and at job intake.
+- Model policy: use the Grok Runtime Doctor default from `grok models`. `GROK_IMAGE_MODEL` and a valid Settings override still win. Omit `--model` when no explicit model is compiled.
+- Verified CLI: Grok Build 1.0.4. Minimum supported release remains 0.2.114.
 - Provider model and reasoning defaults remain editable through existing per-provider Studio Settings. They contain no credentials.
 - The Command Center offers a readiness-aware Codex/Grok quick switch for the next image generation. The selection persists through Studio Settings; unavailable runtimes stay visible but cannot be selected until their preflight is ready.
 

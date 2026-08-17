@@ -2,9 +2,33 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import {
+  buildGeneratedImageContextAttachment,
   normalizeGenerationConfigForCodexModels,
   prepareGenerationConfigForPersist,
 } from './useGenerationConfig';
+
+describe('buildGeneratedImageContextAttachment', () => {
+  it('keeps a catalog library path so Grok can use the image as a reference', () => {
+    expect(
+      buildGeneratedImageContextAttachment(
+        {
+          id: 'img-1',
+          src: 'http://127.0.0.1:17223/library/outputs/boat.png',
+          localPath: 'D:/AI-Studio-Library/outputs/boat.png',
+          sourceUrl: 'http://127.0.0.1:17223/library/outputs/boat.png',
+        },
+        () => 100,
+      ),
+    ).toEqual({
+      id: 'gen-img-1-100',
+      name: 'Generated Image',
+      dataUrl: 'http://127.0.0.1:17223/library/outputs/boat.png',
+      localPath: 'D:/AI-Studio-Library/outputs/boat.png',
+      sourceUrl: 'http://127.0.0.1:17223/library/outputs/boat.png',
+      strength: 0.5,
+    });
+  });
+});
 
 describe('prepareGenerationConfigForPersist', () => {
   it('drops oversized inline attachments from composer recovery', () => {

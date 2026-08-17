@@ -175,6 +175,8 @@ export function createGrokRuntimePreflight(
       grokRuntime.issues.length > 0
         ? grokRuntime.issues.map((issue) => `${issue.message} ${issue.action}`)
         : [grokRuntime.recommendedAction],
+    availableModels: grokRuntime.availableModels,
+    defaultModel: grokRuntime.defaultModel,
   };
 }
 

@@ -31,6 +31,8 @@ interface RunLocalGenerationOptions {
   inputImage?: {
     src: string;
     prompt?: string;
+    name?: string;
+    localPath?: string | null;
   };
   signal?: AbortSignal;
   onJobCreated?: (job: StudioJob) => void;
@@ -144,28 +146,46 @@ export function createLocalRunTaskSpecId({
   return `spec-${batchId}-${batchIndex}-${now()}`;
 }
 
-export async function buildJobAssets({
+export function listQueuedGenerationAttachments({
   config,
   inputImage,
+  providerId,
 }: {
   config: ImageGenerationConfig;
   inputImage?: RunLocalGenerationOptions['inputImage'];
+  providerId?: GenerationProviderId | null;
+}) {
+  if (!inputImage) return config.attachments;
+  if (providerId === 'grok') return [];
+  return config.attachments.filter((attachment) => attachment.id.startsWith('mask-'));
+}
+
+export async function buildJobAssets({
+  config,
+  inputImage,
+  providerId,
+}: {
+  config: ImageGenerationConfig;
+  inputImage?: RunLocalGenerationOptions['inputImage'];
+  providerId?: GenerationProviderId | null;
 }): Promise<GenerationTaskAssetRef[]> {
   const assets: GenerationTaskAssetRef[] = [];
-  const isEditMode = Boolean(inputImage);
 
   if (inputImage) {
+    const localPath = inputImage.localPath?.trim();
     assets.push({
       role: 'input',
-      name: 'input-image.png',
-      dataUrl: await toGenerationDataUrl(inputImage.src),
+      name: inputImage.name?.trim() || 'input-image.png',
+      ...(localPath ? { localPath } : { dataUrl: await toGenerationDataUrl(inputImage.src) }),
       strength: 1,
     });
   }
 
-  const queuedAttachments = isEditMode
-    ? config.attachments.filter((attachment) => attachment.id.startsWith('mask-'))
-    : config.attachments;
+  const queuedAttachments = listQueuedGenerationAttachments({
+    config,
+    inputImage,
+    providerId,
+  });
 
   for (const [index, attachment] of queuedAttachments.entries()) {
     assets.push({
@@ -271,7 +291,7 @@ export async function runSingleCodexImagegenJob(options: {
   } = options;
   throwIfGenerationAborted(signal);
   const taskPrompt = buildLocalGenerationTaskPrompt({ config, inputImage });
-  const requestAssets = await buildJobAssets({ config, inputImage });
+  const requestAssets = await buildJobAssets({ config, inputImage, providerId });
   const variationKey = createGenerationVariationKey(batchId);
   const variationBrief = inputImage
     ? null

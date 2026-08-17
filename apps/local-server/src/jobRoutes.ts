@@ -10,6 +10,7 @@ import {
   CreateJobRequestBoundarySchema,
   type CreateJobRequestBoundary,
 } from '../../../packages/shared/src/studioApiSchemas';
+import { collectGrokImagineJobIssues } from '../../../packages/shared/src/grokImagineContract';
 import {
   createPersistentJobIntake,
   type PersistentJobIntakeDependencies,
@@ -50,6 +51,9 @@ export function createJobRoutes({
   readLibraryContext,
   validateManagedAssets,
   resolveProviderExecutionBlocker,
+  readGrokAvailableModels,
+  resolveBootstrapExecution,
+  readEditableSettings,
   isReferenceProcessingError,
   publishEvent,
   logJobCreated,
@@ -67,6 +71,9 @@ export function createJobRoutes({
     readLibraryContext,
     validateManagedAssets,
     resolveProviderExecutionBlocker,
+    readGrokAvailableModels,
+    resolveBootstrapExecution,
+    readEditableSettings,
     isReferenceProcessingError,
     publishEvent,
     logJobCreated,
@@ -118,9 +125,30 @@ export function createJobRoutes({
       );
     }
 
-    const providerBlocker = await resolveProviderExecutionBlocker(resolveJobProviderId(job));
+    const providerId = resolveJobProviderId(job);
+    const providerBlocker = await resolveProviderExecutionBlocker(providerId);
     if (providerBlocker) {
       return c.json(providerBlocker as Record<string, unknown>, 400);
+    }
+
+    if (providerId === 'grok') {
+      const grokIssues = collectGrokImagineJobIssues({
+        sourceSpec: job.sourceSpec,
+        execution: job.execution,
+        availableModels: readGrokAvailableModels?.() ?? [],
+      });
+      if (grokIssues.length > 0) {
+        return c.json(
+          {
+            error: grokIssues[0]!.message,
+            code: grokIssues[0]!.code,
+            field: grokIssues[0]!.field,
+            reason: grokIssues[0]!.message,
+            issues: grokIssues,
+          },
+          400,
+        );
+      }
     }
 
     const updatedJob = requeueJob?.(jobId);

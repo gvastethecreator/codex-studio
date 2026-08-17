@@ -1,4 +1,6 @@
+import type { GenerationProviderId } from '../packages/shared/src/generationContracts';
 import type { ImageGenerationConfig } from '../types';
+import { resolveGrokImagineGenerateBlock } from './grokImagineUiPolicy';
 
 export type StudioGenerationRequest =
   | {
@@ -11,14 +13,28 @@ export type StudioGenerationRequest =
       message: string;
     };
 
+export function resolveStudioGenerateRecipeId(
+  configOverrides: Partial<ImageGenerationConfig> | undefined,
+  fallbackRecipeId: ImageGenerationConfig['recipeId'],
+): ImageGenerationConfig['recipeId'] {
+  if (configOverrides && Object.hasOwn(configOverrides, 'recipeId')) {
+    return configOverrides.recipeId ?? null;
+  }
+  return fallbackRecipeId ?? null;
+}
+
 export function prepareStudioGenerationRequest({
   generationConfig,
   promptOverride,
   configOverrides,
+  providerId = 'codex',
+  grokCanExecute = true,
 }: {
   generationConfig: ImageGenerationConfig;
   promptOverride?: string;
   configOverrides?: Partial<ImageGenerationConfig>;
+  providerId?: GenerationProviderId;
+  grokCanExecute?: boolean;
 }): StudioGenerationRequest {
   const promptSource =
     promptOverride !== undefined
@@ -28,7 +44,10 @@ export function prepareStudioGenerationRequest({
         : generationConfig.prompt;
   const finalPrompt = promptSource?.trim() ?? '';
   const baseAttachments = configOverrides?.attachments ?? generationConfig.attachments;
-  const effectiveRecipeId = configOverrides?.recipeId ?? generationConfig.recipeId;
+  const effectiveRecipeId = resolveStudioGenerateRecipeId(
+    configOverrides,
+    generationConfig.recipeId,
+  );
   const maxAttachments =
     effectiveRecipeId === 'styles'
       ? 5
@@ -42,6 +61,17 @@ export function prepareStudioGenerationRequest({
 
   if (!finalPrompt && !hasReferenceImage) {
     return { ok: false, message: 'Type a prompt before generating' };
+  }
+
+  const grokBlock = resolveGrokImagineGenerateBlock({
+    providerId,
+    recipeId: effectiveRecipeId,
+    aspectRatio: configOverrides?.aspectRatio ?? generationConfig.aspectRatio,
+    attachments: finalAttachments,
+    canExecute: grokCanExecute,
+  });
+  if (grokBlock) {
+    return { ok: false, message: grokBlock.message };
   }
 
   return {

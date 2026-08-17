@@ -1,0 +1,88 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e798]:
+    - generic [ref=f1e799]:
+      - generic [ref=f1e800]:
+        - generic [ref=f1e801]:
+          - button "Change Theme" [ref=f1e802] [cursor=pointer]:
+            - generic [ref=f1e812]:
+              - generic [ref=f1e813]: CODEX
+              - generic [ref=f1e814]: STUDIO
+          - generic [ref=f1e971]:
+            - 'button "Open workspace switcher: Default" [ref=f1e972] [cursor=pointer]':
+              - generic [ref=f1e977]: Default
+            - generic: Workspaces
+        - generic [ref=f1e978]:
+          - button "Go to studio" [ref=f1e979] [cursor=pointer]
+          - generic [ref=f1e984]: /
+          - button "Back to recipes" [ref=f1e985] [cursor=pointer]:
+            - generic [ref=f1e989]: Recipes
+          - generic [ref=f1e990]: /
+          - generic [ref=f1e991]: Camera View
+      - generic [ref=f1e847]:
+        - generic [ref=f1e850]:
+          - button "Weekly 0%" [ref=f1e851] [cursor=pointer]:
+            - generic [ref=f1e860]:
+              - generic [ref=f1e861]: Weekly
+              - generic [ref=f1e862]: 0%
+          - generic: "Available usage for Pro · Weekly: 0% available, 4d reset"
+        - generic [ref=f1e864]:
+          - generic [ref=f1e865]:
+            - 'button "Open runtime status: Ready" [ref=f1e866] [cursor=pointer]':
+              - generic [ref=f1e870]: Ready
+            - generic: Runtime ready.
+          - generic [ref=f1e872]:
+            - 'button "Image generation provider: Grok Imagine. Change provider" [ref=f1e873] [cursor=pointer]':
+              - generic [ref=f1e875]: Grok
+            - generic: Change image generation provider
+          - generic [ref=f1e878]:
+            - button "Open help and setup" [ref=f1e879] [cursor=pointer]
+            - generic: Help & setup
+          - generic [ref=f1e883]:
+            - button "Open studio activity" [ref=f1e884] [cursor=pointer]
+            - generic: Studio activity
+          - generic [ref=f1e887]:
+            - button "Open archived images" [ref=f1e888] [cursor=pointer]
+            - generic: Archived images
+          - generic [ref=f1e892]:
+            - button "Open Codex chat" [ref=f1e893] [cursor=pointer]
+            - generic: Codex chat
+          - generic [ref=f1e896]:
+            - button "Open Studio Settings" [ref=f1e897] [cursor=pointer]
+            - generic: Studio settings
+          - generic [ref=f1e901]:
+            - button "Open persistent jobs (0 jobs)" [ref=f1e902] [cursor=pointer]:
+              - generic [ref=f1e909]: "0"
+            - generic: Persistent jobs
+  - status [ref=f1e993]:
+    - generic [ref=f1e994]: Loading view
+  - contentinfo [ref=f1e998]:
+    - generic [ref=f1e1000]:
+      - generic [ref=f1e1002]:
+        - button "Add image reference" [ref=f1e1003] [cursor=pointer]
+        - 'generic "Active recipe: Camera. View orbit." [ref=f1e1006]':
+          - generic [ref=f1e1008]:
+            - generic [ref=f1e1009]: Recipe
+            - generic [ref=f1e1010]: Camera
+            - generic [ref=f1e1011]: View orbit
+        - textbox "Prompt input" [ref=f1e1012]:
+          - /placeholder: Describe what you want to create...
+        - generic [ref=f1e1013]:
+          - generic [ref=f1e1015]:
+            - button "Open negative prompt" [ref=f1e1016] [cursor=pointer]
+            - generic: Negative Prompt (Exclude)
+          - generic [ref=f1e1021]:
+            - button "Open edit instructions" [ref=f1e1022] [cursor=pointer]
+            - generic: Edit with AI (Refine)
+          - generic [ref=f1e1027]:
+            - button "Enhance prompt" [ref=f1e1028] [cursor=pointer]
+            - generic: Auto Enhance Prompt
+      - generic [ref=f1e1034]:
+        - generic [ref=f1e1036]:
+          - 'button "Aspect ratio: 1:1" [ref=f1e1038] [cursor=pointer]':
+            - generic [ref=f1e1041]: 1:1
+          - 'button "Batch count: 1" [ref=f1e1043] [cursor=pointer]':
+            - generic [ref=f1e1047]: 1x
+          - 'status "Generation provider: Grok Imagine" [ref=f1e1048] [cursor=pointer]':
+            - generic [ref=f1e1051]: Grok Imagine
+        - button "GENERATE" [disabled] [ref=f1e1052]
+      - status [ref=f1e1061]: This recipe uses Codex. Switch provider or open a Grok recipe.

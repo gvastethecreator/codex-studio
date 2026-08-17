@@ -104,16 +104,22 @@ authentication. If Studio selects the wrong binary, set
 `STUDIO_GROK_CLI_PATH` to the stable native Grok executable and restart the
 backend. Do not add `XAI_API_KEY`; Studio uses the CLI-owned login.
 
+`grok models` on Grok Build 1.0.4 prints `Default model:` plus a `*` default
+and `-` other models. Studio uses that default when Settings and
+`GROK_IMAGE_MODEL` are empty. If a stored Settings model is missing from the
+list, intake rejects the job before enqueue.
+
 Grok Jobs reject unresolved remote references, source files outside the Job's
 captured Studio Library, more than five source images, unsupported explicit
-aspect ratios, and output counts other than one before invoking media. Import
+aspect ratios, and output counts other than one before enqueue. Import
 the reference into the Library or choose a supported ratio (`1:1`, `16:9`,
-`9:16`, `4:3`, or `3:4`) and retry.
+`9:16`, `4:3`, or `3:4`) and retry. The Generate dock names the same blocks.
 
-The Styles recipe is available with both Codex and Grok. Grok treats a Styles
-run with one or more managed references as image editing and a run without
-references as direct image generation. Studio creates one Persistent Job per
-requested batch image, so each Grok session still produces exactly one image.
+Home and Styles work with Grok. Other recipes stay Codex-first until they
+declare Grok and have a compiler fixture. Grok treats a Styles run with one
+or more managed references as image editing and a run without references as
+direct image generation. Studio creates one Persistent Job per requested
+batch image, so each Grok session still produces exactly one image.
 
 ### Only the UI is running
 

@@ -23,11 +23,14 @@ import type {
   ExternalProviderExecutionContext,
   ExternalProviderExecutor,
 } from './externalProvider';
+import {
+  GROK_IMAGINE_ASPECT_RATIOS,
+  MAX_GROK_IMAGINE_SOURCE_IMAGES,
+} from '../../../../packages/shared/src/grokImagineContract';
 import type { GrokImagineCompiledInput, GrokImagineCompiledPayload } from './grokImagineInput';
 
 const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp']);
-export const GROK_IMAGINE_ASPECT_RATIOS = new Set(['auto', '1:1', '16:9', '9:16', '4:3', '3:4']);
-export const MAX_GROK_IMAGINE_SOURCE_IMAGES = 5;
+export { GROK_IMAGINE_ASPECT_RATIOS, MAX_GROK_IMAGINE_SOURCE_IMAGES };
 const MAX_PROCESS_OUTPUT_BYTES = 4 * 1024 * 1024;
 const DEFAULT_TIMEOUT_MS = 15 * 60 * 1000;
 

@@ -38,6 +38,23 @@ interface CodexModelCatalogState {
 }
 
 const LEGACY_DEFAULT_CODEX_EXECUTION_MODEL = 'gpt-5.4-mini';
+
+export function buildGeneratedImageContextAttachment(
+  image: Pick<GeneratedImageWithConfig, 'id' | 'src' | 'localPath' | 'sourceUrl'>,
+  now = Date.now,
+): Attachment {
+  const isAbsoluteOrData = image.src.startsWith('data:') || /^https?:\/\//i.test(image.src);
+  const dataUrl = isAbsoluteOrData ? image.src : `${resolveStudioApiBase()}${image.src}`;
+  const localPath = image.localPath?.trim() || undefined;
+  return {
+    id: `gen-${image.id}-${now()}`,
+    name: 'Generated Image',
+    dataUrl,
+    localPath,
+    sourceUrl: image.sourceUrl?.trim() || dataUrl,
+    strength: 0.5,
+  };
+}
 const LEGACY_DEFAULT_CODEX_EXECUTION_REASONING_EFFORT = 'low';
 
 function toWebpAttachmentName(name: string) {
@@ -347,24 +364,10 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
 
   const handleAddToContext = useCallback(
     (image: GeneratedImageWithConfig) => {
-      setGenerationConfig((prev) => {
-        const dataUrl = image.src.startsWith('data:')
-          ? image.src
-          : `${resolveStudioApiBase()}${image.src}`;
-
-        return {
-          ...prev,
-          attachments: [
-            {
-              id: `gen-${image.id}-${Date.now()}`,
-              name: 'Generated Image',
-              dataUrl,
-              sourceUrl: dataUrl,
-              strength: 0.5,
-            },
-          ],
-        };
-      });
+      setGenerationConfig((prev) => ({
+        ...prev,
+        attachments: [buildGeneratedImageContextAttachment(image)],
+      }));
       log('Added generated image as the active reference context.');
     },
     [log, setGenerationConfig],

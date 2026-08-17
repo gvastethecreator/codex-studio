@@ -31,6 +31,7 @@ import { useSettingsSurface } from './useSettingsSurface';
 import { useStudioViewState } from './useStudioViewState';
 import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
+import { describeGrokImagineEditNotice, resolveGrokCanExecute } from '../lib/grokImagineUiPolicy';
 import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
 import {
   buildStudioPageController,
@@ -223,6 +224,16 @@ export function useStudioShell(): StudioShellController {
     onRecipeSelection: handleRecipeSelection,
     onViewChange: handleViewChange,
     onEditSettled,
+    activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+    activeRecipe: recipe.activeRecipe,
+    grokCanExecute: resolveGrokCanExecute({
+      canExecute: studioSettings.data.providerDomain.capabilities?.providers.find(
+        (provider) => provider.providerId === 'grok',
+      )?.canExecute,
+      canAttemptExecution: studioSettings.data.providerDomain.runtimePreflight?.providers.find(
+        (provider) => provider.providerId === 'grok',
+      )?.canAttemptExecution,
+    }),
   });
 
   const { isResettingStudio, resetStudio } = useStudioReset({
@@ -349,6 +360,9 @@ export function useStudioShell(): StudioShellController {
           imageToEdit: viewState.editor.image,
           handleExecuteEdit,
           isEditingImage,
+          imageEditNotice: describeGrokImagineEditNotice(
+            studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+          ),
         },
         chrome: {
           debugPanel: {
@@ -432,6 +446,7 @@ export function useStudioShell(): StudioShellController {
       viewState.editor.image,
       handleExecuteEdit,
       isEditingImage,
+      studioSettings.data.settingsDomain.settings?.defaultProviderId,
       isDebugPanelOpen,
       closeDebugPanel,
       viewState.overlays.chat.isOpen,
@@ -482,8 +497,25 @@ export function useStudioShell(): StudioShellController {
       isGenerating: pipeline.isGenerating,
       imagesWithConfig,
       openModal: handleOpenModal,
+      activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+      grokCanExecute: resolveGrokCanExecute({
+        canExecute: studioSettings.data.providerDomain.capabilities?.providers.find(
+          (provider) => provider.providerId === 'grok',
+        )?.canExecute,
+        canAttemptExecution: studioSettings.data.providerDomain.runtimePreflight?.providers.find(
+          (provider) => provider.providerId === 'grok',
+        )?.canAttemptExecution,
+      }),
     }),
-    [handleGenerate, pipeline.isGenerating, imagesWithConfig, handleOpenModal],
+    [
+      handleGenerate,
+      pipeline.isGenerating,
+      imagesWithConfig,
+      handleOpenModal,
+      studioSettings.data.settingsDomain.settings?.defaultProviderId,
+      studioSettings.data.providerDomain.capabilities,
+      studioSettings.data.providerDomain.runtimePreflight,
+    ],
   );
 
   const studioPageController = useMemo(
@@ -602,6 +634,14 @@ export function useStudioShell(): StudioShellController {
       },
       provider: {
         activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+        grokCanExecute: resolveGrokCanExecute({
+          canExecute: studioSettings.data.providerDomain.capabilities?.providers.find(
+            (provider) => provider.providerId === 'grok',
+          )?.canExecute,
+          canAttemptExecution: studioSettings.data.providerDomain.runtimePreflight?.providers.find(
+            (provider) => provider.providerId === 'grok',
+          )?.canAttemptExecution,
+        }),
       },
     }),
     [
@@ -618,6 +658,8 @@ export function useStudioShell(): StudioShellController {
       openEditorRoute,
       studioRuntime.maintenance.verifyCodexSession,
       studioSettings.data.settingsDomain.settings?.defaultProviderId,
+      studioSettings.data.providerDomain.capabilities,
+      studioSettings.data.providerDomain.runtimePreflight,
     ],
   );
 

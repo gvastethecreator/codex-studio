@@ -9,6 +9,7 @@ import {
   classifyLocalGenerationFailureReason,
   createLocalRunBatchId,
   createLocalRunTaskSpecId,
+  listQueuedGenerationAttachments,
   resolveLocalGenerationProviderId,
   resolveGenerationExecutionOverride,
 } from './localGenerationRun';
@@ -86,6 +87,62 @@ describe('localGenerationRun', () => {
     expect(prompt).toBe('Apply the selected style using the provided reference image.');
     expect(prompt).not.toContain('CODEX RECIPE CONTEXT');
     expect(prompt).not.toContain('Avoid:');
+  });
+
+  it('keeps a Grok edit on the library image and drops the painted mask', async () => {
+    const original = {
+      id: 'img-1',
+      name: 'base.png',
+      dataUrl: 'data:image/png;base64,BBBB',
+      localPath: 'D:/AI-Studio-Library/outputs/base.png',
+      strength: 1,
+    };
+    const config: ImageGenerationConfig = {
+      ...DEFAULT_GENERATION_CONFIG,
+      attachments: [
+        {
+          id: 'mask-1',
+          name: 'base-mask.png',
+          dataUrl: 'data:image/png;base64,MASK',
+          strength: 1,
+        },
+      ],
+    };
+
+    expect(
+      listQueuedGenerationAttachments({
+        config,
+        inputImage: { src: original.dataUrl, localPath: original.localPath },
+        providerId: 'grok',
+      }),
+    ).toEqual([]);
+
+    await expect(
+      buildJobAssets({
+        config,
+        inputImage: {
+          src: original.dataUrl,
+          name: original.name,
+          localPath: original.localPath,
+        },
+        providerId: 'grok',
+      }),
+    ).resolves.toEqual([
+      {
+        role: 'input',
+        name: 'base.png',
+        localPath: 'D:/AI-Studio-Library/outputs/base.png',
+        strength: 1,
+      },
+    ]);
+
+    expect(
+      listQueuedGenerationAttachments({
+        config,
+        inputImage: { src: original.dataUrl },
+        providerId: 'codex',
+      }),
+    ).toHaveLength(1);
   });
 
   it('materializes queued attachments as backend task assets', async () => {

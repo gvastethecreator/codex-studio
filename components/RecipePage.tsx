@@ -6,6 +6,7 @@ import type {
   RecipeId,
 } from '../types';
 import type { RecipeAliasId } from '../lib/recipeAliases';
+import type { GenerationProviderId } from '../packages/shared/src';
 import { RecipeRouter } from './RecipeRouter';
 
 export interface RecipePageProps {
@@ -27,6 +28,8 @@ export interface RecipePageProps {
   imagesWithConfig: GeneratedImageWithConfig[];
   openModal: (image: GeneratedImageWithConfig) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
+  activeProviderId?: GenerationProviderId;
+  grokCanExecute?: boolean;
 }
 
 export type RecipePageRuntimeProps = Omit<
@@ -52,6 +55,8 @@ export const RecipePage: React.FC<RecipePageProps> = ({
   imagesWithConfig,
   openModal,
   handleAddToContext,
+  activeProviderId,
+  grokCanExecute,
 }) => {
   return (
     <RecipeRouter
@@ -66,6 +71,8 @@ export const RecipePage: React.FC<RecipePageProps> = ({
       imagesWithConfig={imagesWithConfig}
       openModal={openModal}
       handleAddToContext={handleAddToContext}
+      activeProviderId={activeProviderId}
+      grokCanExecute={grokCanExecute}
     />
   );
 };

@@ -61,6 +61,8 @@ export function materializeCatalogEntryImage(
     batchId,
     createdAt,
     isFavorite: entry.isFavorite,
+    localPath: entry.filePath || undefined,
+    sourceUrl,
   };
 }
 

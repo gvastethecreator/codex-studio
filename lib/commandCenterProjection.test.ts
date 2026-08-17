@@ -124,6 +124,55 @@ describe('buildStudioCommandCenterProjection', () => {
     expect(projection.queue.showCollapsedProgress).toBe(false);
   });
 
+  it('names the Grok login action when the local CLI is blocked', () => {
+    const projection = buildStudioCommandCenterProjection({
+      settings: {
+        defaultProviderId: 'grok',
+        commandCenterCompactMode: false,
+      },
+      providerCapabilities: {
+        providers: [
+          {
+            providerId: 'grok',
+            label: 'Grok Imagine',
+            runtimeKind: 'agent_cli',
+            status: 'not_configured',
+            isDefault: true,
+            hasAdapter: true,
+            canExecute: false,
+            secretState: 'not_required',
+            detail: 'Install Grok Build and run `grok login`.',
+          },
+        ],
+      },
+      providerRuntimePreflight: {
+        providers: [
+          {
+            providerId: 'grok',
+            runtimeKind: 'agent_cli',
+            secretState: 'not_required',
+            secretSource: null,
+            localRuntimeState: 'invalid',
+            localRuntimeSource: 'grok',
+            canAttemptExecution: false,
+            diagnostics: ['Grok Build does not have a usable local login. Run `grok login`.'],
+          },
+        ],
+      },
+      statusItems: [],
+      queueResultPreviews: [],
+      activeJobCount: 0,
+      isQueueOpen: false,
+      isGenerating: false,
+    });
+
+    expect(projection.provider).toMatchObject({
+      id: 'grok',
+      canExecute: false,
+      statusDetail: 'Run grok login',
+    });
+  });
+
   it('projects Codex and Grok as readiness-aware quick-switch options', () => {
     const projection = buildStudioCommandCenterProjection({
       settings: {
@@ -188,8 +237,18 @@ describe('buildStudioCommandCenterProjection', () => {
     });
 
     expect(projection.providerOptions).toEqual([
-      expect.objectContaining({ id: 'codex', label: 'Codex app-server', canExecute: true }),
-      expect.objectContaining({ id: 'grok', label: 'Grok Imagine', canExecute: true }),
+      expect.objectContaining({
+        id: 'codex',
+        label: 'Codex app-server',
+        canExecute: true,
+        statusDetail: 'Ready',
+      }),
+      expect.objectContaining({
+        id: 'grok',
+        label: 'Grok Imagine',
+        canExecute: true,
+        statusDetail: 'Ready',
+      }),
     ]);
   });
 });

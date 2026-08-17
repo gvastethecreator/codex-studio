@@ -295,6 +295,50 @@ describe('jobRoutes', () => {
     expect(enqueueJob).not.toHaveBeenCalled();
   });
 
+  it('blocks Grok retry when the stored job uses an unsupported ratio', async () => {
+    const failed = createJob({
+      id: 'job-grok-failed',
+      status: 'failed',
+      providerId: 'grok',
+      sourceSpec: createSourceSpec({
+        providerId: 'grok',
+        output: { count: 1, aspectRatio: '2:3' },
+      }),
+      execution: { model: 'grok-4.6', reasoningEffort: 'low', serviceTier: null },
+    });
+    const requeueJob = vi.fn();
+    const enqueueJob = vi.fn();
+
+    const routes = createJobRoutes({
+      listJobs: () => [],
+      getJob: (jobId) => (jobId === 'job-grok-failed' ? failed : null),
+      getJobDetail: async () => null,
+      requeueJob,
+      cancelQueuedOrRunningJob: () => null,
+      createJobId: () => 'job-new',
+      createJob: () => createJob({ id: 'job-new' }),
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      readGrokAvailableModels: () => ['grok-4.6'],
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError,
+      publishEvent,
+      logJobCreated: () => {},
+      enqueueJob,
+    });
+
+    const response = await routes.request('/job-grok-failed/retry', { method: 'POST' });
+
+    expect(response.status).toBe(400);
+    await expect(response.json()).resolves.toMatchObject({
+      code: 'invalid_grok_aspect_ratio',
+    });
+    expect(requeueJob).not.toHaveBeenCalled();
+    expect(enqueueJob).not.toHaveBeenCalled();
+  });
+
   it('creates jobs with reference processing and provider blocker checks', async () => {
     const publishEvent = vi.fn();
     const enqueueJob = vi.fn();

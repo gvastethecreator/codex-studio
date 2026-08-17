@@ -25,6 +25,7 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps> = ({
   imageToEdit,
   handleExecuteEdit,
   isEditingImage,
+  imageEditNotice,
 }) => {
   return (
     <>
@@ -70,6 +71,7 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps> = ({
               image={imageToEdit}
               onGenerate={handleExecuteEdit}
               isGenerating={isEditingImage}
+              notice={imageEditNotice}
             />
           </Suspense>
         </ErrorBoundary>

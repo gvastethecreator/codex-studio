@@ -1,0 +1,240 @@
+- generic [ref=e3]:
+  - alert [ref=e658]:
+    - generic [ref=e659]:
+      - paragraph [ref=e665]: Studio Settings saved
+      - button "Dismiss" [ref=e666] [cursor=pointer]
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - button "Change Theme" [ref=e8] [cursor=pointer]:
+          - generic [ref=e18]:
+            - generic [ref=e19]: CODEX
+            - generic [ref=e20]: STUDIO
+        - generic [ref=e21]:
+          - button "Open studio workspace Default" [ref=e112] [cursor=pointer]: Default
+          - button "Open recipes" [ref=e23] [cursor=pointer]: Recipes
+        - generic [ref=e25]:
+          - generic [ref=e26]:
+            - generic [ref=e27]:
+              - button "Rename workspace Default" [ref=e113] [cursor=pointer]:
+                - generic [ref=e32]: Default
+                - generic "1896 images" [ref=e114]: "1.896"
+              - generic: Default - 1.896 images - updated 9 de ago de 2026
+            - generic [ref=e34]:
+              - button "Open workspace menu for Default" [ref=e115] [cursor=pointer]
+              - generic: Workspace menu
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - button "Switch to workspace Imported (f1f3)" [ref=e118] [cursor=pointer]:
+                - generic [ref=e120]: Imported (f1f3)
+                - generic "5281 images" [ref=e121]: "5.281"
+              - generic: Imported (f1f3) - 5.281 images - updated 7 de jul de 2026
+            - generic [ref=e122]:
+              - button "Open workspace menu for Imported (f1f3)" [ref=e123] [cursor=pointer]
+              - generic: Workspace menu
+          - generic [ref=e40]:
+            - button "Create workspace" [ref=e41] [cursor=pointer]
+            - generic: Create workspace
+      - generic [ref=e43]:
+        - generic [ref=e46]:
+          - button "Weekly 0%" [ref=e128] [cursor=pointer]:
+            - generic [ref=e135]:
+              - generic [ref=e136]: Weekly
+              - generic [ref=e137]: 0%
+          - generic: "Available usage for Pro · Weekly: 0% available, 4d reset"
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - 'button "Open runtime status: Ready" [ref=e139] [cursor=pointer]':
+              - generic [ref=e64]: Ready
+            - generic: Runtime ready.
+          - generic [ref=e66]:
+            - 'button "Image generation provider: Grok Imagine. Change provider" [ref=e675] [cursor=pointer]':
+              - generic [ref=e69]: Grok
+            - generic: Change image generation provider
+          - generic [ref=e72]:
+            - button "Open help and setup" [ref=e73] [cursor=pointer]
+            - generic: Help & setup
+          - generic [ref=e77]:
+            - button "Open studio activity" [ref=e78] [cursor=pointer]
+            - generic: Studio activity
+          - generic [ref=e81]:
+            - button "Open archived images" [ref=e82] [cursor=pointer]
+            - generic: Archived images
+          - generic [ref=e86]:
+            - button "Open Codex chat" [ref=e87] [cursor=pointer]
+            - generic: Codex chat
+          - generic [ref=e90]:
+            - button "Open Studio Settings" [ref=e91] [cursor=pointer]
+            - generic: Studio settings
+          - generic [ref=e95]:
+            - button "Open persistent jobs (0 jobs)" [ref=e96] [cursor=pointer]:
+              - generic [ref=e99]: "0"
+            - generic: Persistent jobs
+  - generic [ref=e146]:
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - button "Select All" [ref=e150] [cursor=pointer]
+          - generic: Select All
+        - generic [ref=e153]:
+          - button "Favorites (0)" [ref=e154] [cursor=pointer]
+          - generic: Favorites (0)
+      - 'group "Image view: Mosaic" [ref=e157]':
+        - generic [ref=e158]:
+          - button "Grid view" [ref=e159] [cursor=pointer]
+          - generic: "Grid: Uniform thumbnails"
+        - generic [ref=e160]:
+          - button "Mosaic view" [pressed] [ref=e161] [cursor=pointer]
+          - generic: "Mosaic: Real aspect ratios"
+        - generic [ref=e162]:
+          - button "List view" [ref=e163] [cursor=pointer]
+          - generic: "List: Dense rows"
+        - generic [ref=e164]:
+          - button "Cards view" [ref=e165] [cursor=pointer]
+          - generic: "Cards: Image cards"
+      - generic [ref=e166]:
+        - slider "Thumbnail size" [ref=e172] [cursor=pointer]: "176"
+        - generic: Thumbnail size
+      - generic [ref=e174]:
+        - 'button "Sort images: Created newest" [ref=e175] [cursor=pointer]':
+          - generic [ref=e179]: Created newest
+        - generic: Sort Images
+    - generic [ref=e180]:
+      - generic [ref=e181]:
+        - generic [ref=e182]:
+          - button "Open image preview" [ref=e185] [cursor=pointer]
+          - button "Open image preview" [ref=e190] [cursor=pointer]
+          - button "Open image preview" [ref=e195] [cursor=pointer]
+          - button "Open image preview" [ref=e200] [cursor=pointer]
+          - button "Open image preview" [ref=e205] [cursor=pointer]
+          - button "Open image preview" [ref=e210] [cursor=pointer]
+          - button "Open image preview" [ref=e215] [cursor=pointer]
+          - button "Open image preview" [ref=e220] [cursor=pointer]
+          - button "Open image preview" [ref=e225] [cursor=pointer]
+        - generic [ref=e229]:
+          - button "Open image preview" [ref=e232] [cursor=pointer]
+          - button "Open image preview" [ref=e237] [cursor=pointer]
+          - button "Open image preview" [ref=e242] [cursor=pointer]
+          - button "Open image preview" [ref=e247] [cursor=pointer]
+          - button "Open image preview" [ref=e252] [cursor=pointer]
+          - button "Open image preview" [ref=e257] [cursor=pointer]
+          - button "Open image preview" [ref=e262] [cursor=pointer]
+          - button "Open image preview" [ref=e267] [cursor=pointer]
+          - button "Open image preview" [ref=e272] [cursor=pointer]
+        - generic [ref=e276]:
+          - button "Open image preview" [ref=e279] [cursor=pointer]
+          - button "Open image preview" [ref=e284] [cursor=pointer]
+          - button "Open image preview" [ref=e289] [cursor=pointer]
+          - button "Open image preview" [ref=e294] [cursor=pointer]
+          - button "Open image preview" [ref=e299] [cursor=pointer]
+          - button "Open image preview" [ref=e304] [cursor=pointer]
+          - button "Open image preview" [ref=e309] [cursor=pointer]
+          - button "Open image preview" [ref=e314] [cursor=pointer]
+          - button "Open image preview" [ref=e319] [cursor=pointer]
+        - generic [ref=e323]:
+          - button "Open image preview" [ref=e326] [cursor=pointer]
+          - button "Open image preview" [ref=e331] [cursor=pointer]
+          - button "Open image preview" [ref=e336] [cursor=pointer]
+          - button "Open image preview" [ref=e341] [cursor=pointer]
+          - button "Open image preview" [ref=e346] [cursor=pointer]
+          - button "Open image preview" [ref=e351] [cursor=pointer]
+          - button "Open image preview" [ref=e356] [cursor=pointer]
+          - button "Open image preview" [ref=e361] [cursor=pointer]
+          - button "Open image preview" [ref=e366] [cursor=pointer]
+        - generic [ref=e370]:
+          - button "Open image preview" [ref=e373] [cursor=pointer]
+          - button "Open image preview" [ref=e378] [cursor=pointer]
+          - button "Open image preview" [ref=e383] [cursor=pointer]
+          - button "Open image preview" [ref=e388] [cursor=pointer]
+          - button "Open image preview" [ref=e393] [cursor=pointer]
+          - button "Open image preview" [ref=e398] [cursor=pointer]
+          - button "Open image preview" [ref=e403] [cursor=pointer]
+          - button "Open image preview" [ref=e408] [cursor=pointer]
+          - button "Open image preview" [ref=e413] [cursor=pointer]
+        - generic [ref=e417]:
+          - generic [ref=e419] [cursor=pointer]:
+            - button "Open image preview" [ref=e420]
+            - generic [ref=e676]:
+              - generic [ref=e677]:
+                - button "Add favorite" [ref=e678]
+                - generic: Add Favorite
+              - generic [ref=e681]:
+                - button "Select image" [ref=e682]
+                - generic: Select
+            - generic [ref=e685]:
+              - generic [ref=e686]:
+                - generic [ref=e687]:
+                  - button "Use" [ref=e688]
+                  - generic: Use
+                - generic [ref=e691]:
+                  - button "Recipe" [ref=e692]
+                  - generic: Recipe
+                - generic [ref=e696]:
+                  - button "Regen" [ref=e697]
+                  - generic: Regen
+              - generic [ref=e701]:
+                - generic [ref=e702]:
+                  - button "Save" [ref=e703]
+                  - generic: Save
+                - generic [ref=e707]:
+                  - button "Copy Prompt" [ref=e708]
+                  - generic: Copy Prompt
+                - generic [ref=e712]:
+                  - button "Delete" [ref=e713]
+                  - generic: Delete
+          - button "Open image preview" [ref=e425] [cursor=pointer]
+          - button "Open image preview" [ref=e430] [cursor=pointer]
+          - button "Open image preview" [ref=e435] [cursor=pointer]
+          - button "Open image preview" [ref=e440] [cursor=pointer]
+          - button "Open image preview" [ref=e445] [cursor=pointer]
+          - button "Open image preview" [ref=e450] [cursor=pointer]
+          - button "Open image preview" [ref=e455] [cursor=pointer]
+          - button "Open image preview" [ref=e460] [cursor=pointer]
+        - generic [ref=e464]:
+          - button "Open image preview" [ref=e467] [cursor=pointer]
+          - button "Open image preview" [ref=e472] [cursor=pointer]
+          - button "Open image preview" [ref=e477] [cursor=pointer]
+          - button "Open image preview" [ref=e482] [cursor=pointer]
+          - button "Open image preview" [ref=e487] [cursor=pointer]
+          - button "Open image preview" [ref=e492] [cursor=pointer]
+          - button "Open image preview" [ref=e497] [cursor=pointer]
+          - button "Open image preview" [ref=e502] [cursor=pointer]
+          - button "Open image preview" [ref=e507] [cursor=pointer]
+        - generic [ref=e511]:
+          - button "Open image preview" [ref=e514] [cursor=pointer]
+          - button "Open image preview" [ref=e519] [cursor=pointer]
+          - button "Open image preview" [ref=e524] [cursor=pointer]
+          - button "Open image preview" [ref=e529] [cursor=pointer]
+          - button "Open image preview" [ref=e534] [cursor=pointer]
+          - button "Open image preview" [ref=e539] [cursor=pointer]
+          - button "Open image preview" [ref=e544] [cursor=pointer]
+          - button "Open image preview" [ref=e549] [cursor=pointer]
+          - button "Open image preview" [ref=e554] [cursor=pointer]
+      - generic [ref=e559]:
+        - generic [ref=e560]: 160 / 1896 loaded
+        - button "Load more" [ref=e561] [cursor=pointer]
+  - contentinfo [ref=e565]:
+    - generic [ref=e567]:
+      - generic [ref=e569]:
+        - button "Add image reference" [ref=e570] [cursor=pointer]
+        - textbox "Prompt input" [ref=e573]:
+          - /placeholder: Describe what you want to create...
+        - generic [ref=e574]:
+          - generic [ref=e576]:
+            - button "Open negative prompt" [ref=e577] [cursor=pointer]
+            - generic: Negative Prompt (Exclude)
+          - generic [ref=e582]:
+            - button "Open edit instructions" [ref=e583] [cursor=pointer]
+            - generic: Edit with AI (Refine)
+          - generic [ref=e588]:
+            - button "Enhance prompt" [ref=e589] [cursor=pointer]
+            - generic: Auto Enhance Prompt
+      - generic [ref=e595]:
+        - generic [ref=e597]:
+          - 'button "Aspect ratio: 1:1" [ref=e599] [cursor=pointer]':
+            - generic [ref=e602]: 1:1
+          - 'button "Batch count: 1" [ref=e604] [cursor=pointer]':
+            - generic [ref=e608]: 1x
+          - 'status "Generation provider: Grok Imagine" [ref=e717] [cursor=pointer]':
+            - generic [ref=e720]: Grok Imagine
+        - button "GENERATE" [ref=e627] [cursor=pointer]

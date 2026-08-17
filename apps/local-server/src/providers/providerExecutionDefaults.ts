@@ -1,14 +1,19 @@
 import type { GenerationProviderId, JobExecutionOptions } from '../../../../packages/shared/src';
 import { getSettings } from '../config';
+import { readGrokRuntimeDoctor, type GrokRuntimeDoctorReport } from '../grokRuntimeDoctor';
 
 export const DEFAULT_GOOGLE_IMAGE_MODEL = 'gemini-2.5-flash-image';
-export const DEFAULT_GROK_IMAGE_MODEL = 'grok-4.5';
 export const DEFAULT_FAL_IMAGE_MODEL = 'fal-ai/flux/schnell';
 export const DEFAULT_COMFY_MODEL = 'workflow-template';
+
+export interface ResolveBootstrapProviderExecutionOptionsInput {
+  grokRuntime?: Pick<GrokRuntimeDoctorReport, 'defaultModel'>;
+}
 
 export function resolveBootstrapProviderExecutionOptions(
   providerId: GenerationProviderId,
   env: Record<string, string | undefined> = process.env,
+  options: ResolveBootstrapProviderExecutionOptionsInput = {},
 ): JobExecutionOptions {
   if (providerId === 'codex') {
     const settings = getSettings();
@@ -28,8 +33,10 @@ export function resolveBootstrapProviderExecutionOptions(
   }
 
   if (providerId === 'grok') {
+    const override = env.GROK_IMAGE_MODEL?.trim() || null;
+    const grokRuntime = options.grokRuntime ?? readGrokRuntimeDoctor();
     return {
-      model: env.GROK_IMAGE_MODEL?.trim() || DEFAULT_GROK_IMAGE_MODEL,
+      model: override || grokRuntime.defaultModel || '',
       reasoningEffort: 'low',
       serviceTier: null,
     };

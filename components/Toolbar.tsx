@@ -53,6 +53,11 @@ import type {
   ImageGenerationConfig,
   ImageSize,
 } from '../types';
+import {
+  listGrokImagineRatioOptions,
+  resolveGrokImagineGenerateBlock,
+  resolveGrokImagineToolbarAspectRatio,
+} from '../lib/grokImagineUiPolicy';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 import KeyPopover from './KeyPopover';
 import Tooltip from './Tooltip';
@@ -90,6 +95,7 @@ export interface ToolbarProps {
   isLoadingCodexModelCatalog: boolean;
   codexModelCatalogError: string | null;
   activeProviderId: GenerationProviderId;
+  grokCanExecute?: boolean;
   activeRecipe?: ImageGenerationConfig['recipeId'];
   mode?: 'full' | 'context-only';
 }
@@ -185,6 +191,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     isLoadingCodexModelCatalog,
     codexModelCatalogError,
     activeProviderId,
+    grokCanExecute = false,
     activeRecipe = null,
     mode = 'full',
   }) => {
@@ -323,7 +330,23 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     }, [generationConfig.prompt, localPrompt]);
 
+    const currentRatios = activeProviderId === 'grok' ? listGrokImagineRatioOptions() : RATIOS;
+    const grokToolbarRatio = resolveGrokImagineToolbarAspectRatio(generationConfig.aspectRatio);
+    useEffect(() => {
+      if (activeProviderId !== 'grok') return;
+      if (generationConfig.aspectRatio === grokToolbarRatio) return;
+      updateConfig('aspectRatio', grokToolbarRatio);
+    }, [activeProviderId, generationConfig.aspectRatio, grokToolbarRatio, updateConfig]);
+    const generateBlock = resolveGrokImagineGenerateBlock({
+      providerId: activeProviderId,
+      recipeId: activeRecipe,
+      aspectRatio: activeProviderId === 'grok' ? grokToolbarRatio : generationConfig.aspectRatio,
+      attachments: generationConfig.attachments,
+      canExecute: grokCanExecute,
+    });
+
     const handleTriggerGenerate = useCallback(() => {
+      if (generateBlock) return;
       const trimmedPrompt = localPrompt.trim();
       if (!trimmedPrompt && generationConfig.attachments.length === 0) {
         setQuickStartErrorScope(interactionScope);
@@ -335,7 +358,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
-      onGenerate(localPrompt);
+      if (activeProviderId === 'grok' && generationConfig.aspectRatio !== grokToolbarRatio) {
+        updateConfig('aspectRatio', grokToolbarRatio);
+        onGenerate(localPrompt, { aspectRatio: grokToolbarRatio });
+      } else {
+        onGenerate(localPrompt);
+      }
 
       closeAllMenus();
       setIsNegativeOpen(false);
@@ -344,11 +372,15 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     }, [
       localPrompt,
       generationConfig.attachments.length,
+      generationConfig.aspectRatio,
       updateConfig,
       onGenerate,
       closeAllMenus,
       setIsInteracting,
       interactionScope,
+      generateBlock,
+      activeProviderId,
+      grokToolbarRatio,
     ]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -381,7 +413,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     };
 
-    const currentRatios = RATIOS;
     const showSizeControl = false;
     const currentSizes = PRO_SIZES;
 
@@ -396,9 +427,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const isContextOnly = mode === 'context-only';
     const isNearLimit = generationConfig.attachments.length >= maxAttachments;
     const hasQuickStartInput = localPrompt.trim().length > 0 || hasAttachments;
-    const activeRecipeIndicator = getActiveRecipeIndicator(
-      generationConfig.recipeId ?? activeRecipe,
-    );
+    const activeRecipeIndicator = getActiveRecipeIndicator(activeRecipe);
 
     if (quickStartError && (quickStartErrorScope !== interactionScope || hasQuickStartInput)) {
       setQuickStartError(false);
@@ -1235,11 +1264,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               <button
                 type="button"
                 onClick={handleTriggerGenerate}
+                disabled={Boolean(generateBlock)}
+                title={generateBlock?.message}
+                aria-describedby={generateBlock ? 'grok-generate-block' : undefined}
                 data-studio-generate-button
                 data-generate-active={isGenerating ? 'true' : 'false'}
                 className={`
                     group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-xl flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
-                    text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer
+                    text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer disabled:cursor-not-allowed disabled:opacity-45
                     ${
                       isGenerating
                         ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-200 border border-accent-500/30 shadow-lg hover:border-accent-300/45 hover:text-white active:scale-95'
@@ -1266,6 +1298,15 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </button>
             ) : null}
           </div>
+          {generateBlock ? (
+            <p
+              id="grok-generate-block"
+              role="status"
+              className="mt-2 max-w-xl text-[11px] font-medium leading-relaxed text-zinc-400"
+            >
+              {generateBlock.message}
+            </p>
+          ) : null}
         </div>
 
         {/* Key Selector Popover (External) */}

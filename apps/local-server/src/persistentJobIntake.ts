@@ -5,8 +5,10 @@ import type {
   Job,
   JobLibraryContext,
 } from '../../../packages/shared/src';
+import { collectGrokImagineJobIssues } from '../../../packages/shared/src/grokImagineContract';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
+import { readGrokRuntimeDoctor } from './grokRuntimeDoctor';
 import {
   normalizeWorkspaceId,
   readWorkspaceIdFromSourceSpecMetadata,
@@ -63,6 +65,7 @@ export interface PersistentJobIntakeDependencies {
   resolveProviderExecutionBlocker: (
     providerId: string,
   ) => Record<string, unknown> | null | Promise<Record<string, unknown> | null>;
+  readGrokAvailableModels?: () => string[];
   isReferenceProcessingError: (error: unknown) => error is ReferenceProcessingErrorLike;
   publishEvent: typeof publishEvent;
   logJobCreated: (kind: string, jobId: string) => void;
@@ -165,6 +168,7 @@ export function createPersistentJobIntake({
   resolveBootstrapExecution = resolveBootstrapProviderExecutionOptions,
   validateManagedAssets = validateManagedGenerationAssets,
   resolveProviderExecutionBlocker,
+  readGrokAvailableModels = () => readGrokRuntimeDoctor().availableModels,
   isReferenceProcessingError,
   publishEvent,
   logJobCreated,
@@ -276,6 +280,35 @@ export function createPersistentJobIntake({
         }
       }
 
+      const execution = resolveEffectiveJobExecutionOptions({
+        providerId,
+        explicit: request.execution,
+        settings: readEditableSettings(),
+        bootstrap: resolveBootstrapExecution(providerId),
+      });
+      if (providerId === 'grok') {
+        const grokIssues = collectGrokImagineJobIssues({
+          sourceSpec,
+          execution,
+          availableModels: readGrokAvailableModels(),
+        });
+        if (grokIssues.length > 0) {
+          return {
+            ok: false,
+            error: {
+              status: 400,
+              body: {
+                error: grokIssues[0]!.message,
+                code: grokIssues[0]!.code,
+                field: grokIssues[0]!.field,
+                reason: grokIssues[0]!.message,
+                issues: grokIssues,
+              },
+            },
+          };
+        }
+      }
+
       const job = createJob({
         id: jobId,
         workspaceId,
@@ -283,12 +316,7 @@ export function createPersistentJobIntake({
         providerId,
         sourceSpec,
         prompt,
-        execution: resolveEffectiveJobExecutionOptions({
-          providerId,
-          explicit: request.execution,
-          settings: readEditableSettings(),
-          bootstrap: resolveBootstrapExecution(providerId),
-        }),
+        execution,
         libraryContext,
       });
 

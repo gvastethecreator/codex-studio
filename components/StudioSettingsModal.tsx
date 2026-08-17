@@ -125,10 +125,20 @@ interface SettingsFormPanelProps {
 function ProviderExecutionDefaultsFields({
   value,
   onChange,
+  grokModels,
+  grokDefaultModel,
 }: {
   value: ProviderDefaultSettings;
   onChange: (patch: Partial<ProviderDefaultSettings>) => void;
+  grokModels?: string[];
+  grokDefaultModel?: string | null;
 }) {
+  const isGrok = value.providerId === 'grok';
+  const grokModelOptions = grokModels ?? [];
+  const storedGrokModel = value.model?.trim() || '';
+  const grokModelIsKnown = !storedGrokModel || grokModelOptions.includes(storedGrokModel);
+  const cliDefaultLabel = grokDefaultModel ? `CLI default (${grokDefaultModel})` : 'CLI default';
+
   return (
     <div className="md:col-span-2 grid gap-3 rounded-lg border border-white/8 bg-white/4 p-4 md:grid-cols-3">
       <div className="md:col-span-3">
@@ -142,48 +152,89 @@ function ProviderExecutionDefaultsFields({
       </div>
       <label className="flex flex-col gap-2">
         <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">Model</span>
-        <input
-          value={value.model ?? ''}
-          onChange={(event) => onChange({ model: event.target.value.trim() || null })}
-          placeholder="Provider bootstrap"
-          aria-label="Provider default model"
-          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
-        />
+        {isGrok ? (
+          <select
+            value={value.model ?? ''}
+            onChange={(event) => onChange({ model: event.target.value.trim() || null })}
+            aria-label="Provider default model"
+            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors focus:border-accent-400/50"
+          >
+            <option value="">{cliDefaultLabel}</option>
+            {storedGrokModel && !grokModelIsKnown ? (
+              <option value={storedGrokModel}>{storedGrokModel} (unavailable)</option>
+            ) : null}
+            {grokModelOptions.map((model) => (
+              <option key={model} value={model}>
+                {model}
+              </option>
+            ))}
+          </select>
+        ) : (
+          <input
+            value={value.model ?? ''}
+            onChange={(event) => onChange({ model: event.target.value.trim() || null })}
+            placeholder="Provider bootstrap"
+            aria-label="Provider default model"
+            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+          />
+        )}
+        {isGrok && storedGrokModel && !grokModelIsKnown ? (
+          <p role="status" className="text-[10px] leading-relaxed text-amber-200/80">
+            {storedGrokModel} is not in the current Grok model list. Choose CLI default or a listed
+            model.
+          </p>
+        ) : null}
       </label>
       <label className="flex flex-col gap-2">
         <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
           Reasoning
         </span>
-        <input
-          value={value.reasoningEffort ?? ''}
-          onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
-          placeholder="Provider bootstrap"
-          aria-label="Provider default reasoning effort"
-          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
-        />
+        {isGrok ? (
+          <select
+            value={value.reasoningEffort ?? ''}
+            onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
+            aria-label="Provider default reasoning effort"
+            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+          >
+            <option value="">Provider bootstrap</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        ) : (
+          <input
+            value={value.reasoningEffort ?? ''}
+            onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
+            placeholder="Provider bootstrap"
+            aria-label="Provider default reasoning effort"
+            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+          />
+        )}
       </label>
-      <label className="flex flex-col gap-2">
-        <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
-          Service Tier
-        </span>
-        <select
-          value={value.serviceTier ?? ''}
-          onChange={(event) =>
-            onChange({
-              serviceTier:
-                event.target.value === 'fast' || event.target.value === 'flex'
-                  ? event.target.value
-                  : null,
-            })
-          }
-          aria-label="Provider default service tier"
-          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
-        >
-          <option value="">Provider bootstrap</option>
-          <option value="fast">Fast</option>
-          <option value="flex">Flex</option>
-        </select>
-      </label>
+      {isGrok ? null : (
+        <label className="flex flex-col gap-2">
+          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+            Service Tier
+          </span>
+          <select
+            value={value.serviceTier ?? ''}
+            onChange={(event) =>
+              onChange({
+                serviceTier:
+                  event.target.value === 'fast' || event.target.value === 'flex'
+                    ? event.target.value
+                    : null,
+              })
+            }
+            aria-label="Provider default service tier"
+            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+          >
+            <option value="">Provider bootstrap</option>
+            <option value="fast">Fast</option>
+            <option value="flex">Flex</option>
+          </select>
+        </label>
+      )}
     </div>
   );
 }
@@ -282,6 +333,8 @@ function SettingsFormPanel({
       <ProviderExecutionDefaultsFields
         value={selectedProviderDefaults}
         onChange={updateSelectedProviderDefaults}
+        grokModels={preflightByProvider.get('grok')?.availableModels}
+        grokDefaultModel={preflightByProvider.get('grok')?.defaultModel}
       />
 
       <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
@@ -380,22 +433,29 @@ function SettingsFormPanel({
                         {provider.label}
                       </div>
                       <div className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest opacity-70">
-                        {provider.runtimeKind}
+                        {provider.providerId === 'grok'
+                          ? 'Local Grok Build CLI'
+                          : provider.runtimeKind}
                       </div>
                     </div>
                     <div className="flex shrink-0 items-center gap-1 text-[9px] font-black uppercase tracking-widest">
                       {provider.isDefault ? <span>Default</span> : null}
-                      <span>{provider.status}</span>
+                      <span>
+                        {provider.providerId === 'grok' && provider.status === 'not_configured'
+                          ? 'Needs Grok Build login'
+                          : provider.status}
+                      </span>
                     </div>
                   </div>
                   <p className="mt-2 text-[10px] leading-relaxed opacity-80">{provider.detail}</p>
                   {preflight ? (
                     <div className="mt-2 grid gap-1 border-t border-white/10 pt-2 text-[9px] font-bold uppercase tracking-widest opacity-80">
                       <div className="flex justify-between gap-2">
-                        <span>Secret</span>
+                        <span>{provider.providerId === 'grok' ? 'Login' : 'Secret'}</span>
                         <span className="truncate text-right">
-                          {preflight.secretState}
-                          {preflight.secretSource ? ` / ${preflight.secretSource}` : ''}
+                          {provider.providerId === 'grok'
+                            ? 'Owned by grok login'
+                            : `${preflight.secretState}${preflight.secretSource ? ` / ${preflight.secretSource}` : ''}`}
                         </span>
                       </div>
                       <div className="flex justify-between gap-2">

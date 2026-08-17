@@ -16,6 +16,7 @@ interface ImageEditorModalProps {
   image: Attachment | null;
   onGenerate: (originalImage: Attachment, maskDataUrl: string, editPrompt: string) => void;
   isGenerating: boolean;
+  notice?: string | null;
 }
 
 interface ImageEditorControlsPanelProps {
@@ -29,6 +30,7 @@ interface ImageEditorControlsPanelProps {
   onUndo: () => void;
   onReset: () => void;
   onGenerate: () => void;
+  notice?: string | null;
 }
 
 function ImageEditorControlsPanel({
@@ -42,9 +44,15 @@ function ImageEditorControlsPanel({
   onUndo,
   onReset,
   onGenerate,
+  notice,
 }: ImageEditorControlsPanelProps) {
   return (
     <div className="custom-scrollbar flex max-h-[44vh] w-full flex-col gap-5 overflow-y-auto bg-zinc-950 p-4 shadow-[20px_0_60px_rgba(0,0,0,1)] sm:p-6 md:max-h-none md:w-96 md:gap-10 md:p-8">
+      {notice ? (
+        <p role="status" className="text-[11px] font-medium leading-relaxed text-zinc-400">
+          {notice}
+        </p>
+      ) : null}
       <div className="space-y-3 sm:space-y-4">
         <label
           htmlFor="image-editor-prompt"
@@ -124,6 +132,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   image,
   onGenerate,
   isGenerating,
+  notice,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -404,6 +413,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           onUndo={handleUndo}
           onReset={handleReset}
           onGenerate={handleGenerate}
+          notice={notice}
         />
       </div>
     </dialog>

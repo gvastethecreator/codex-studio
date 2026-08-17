@@ -68,6 +68,8 @@ export interface GeneratedImage {
   batchId: string;
   createdAt: number;
   isFavorite?: boolean; // Added for pinning
+  localPath?: string;
+  sourceUrl?: string;
 }
 
 export interface GeneratedImageWithConfig extends GeneratedImage {

@@ -16,7 +16,8 @@ function readySpawn(command: string, args: string[]) {
   if (args.includes('models')) {
     return {
       status: 0,
-      stdout: 'You are logged in with grok.com.\n\nAvailable models:\n  * grok-4.5 (default)\n',
+      stdout:
+        'You are logged in with grok.com.\n\nDefault model: grok-4.6\n\nAvailable models:\n  * grok-4.6 (default)\n  - grok-4.5\n',
       stderr: '',
     };
   }
@@ -47,8 +48,8 @@ describe('grokRuntimeDoctor', () => {
       status: 'ready',
       canRunJobs: true,
       selectedVersionNumber: '1.0.0',
-      defaultModel: 'grok-4.5',
-      availableModels: ['grok-4.5'],
+      defaultModel: 'grok-4.6',
+      availableModels: ['grok-4.6', 'grok-4.5'],
       headlessSupported: true,
       imagineAvailable: true,
       issues: [],
@@ -79,5 +80,13 @@ describe('grokRuntimeDoctor', () => {
     expect(
       parseAvailableGrokModels('Available models:\n  * grok-4.5 (default)\n    grok-next\n'),
     ).toEqual({ models: ['grok-4.5', 'grok-next'], defaultModel: 'grok-4.5' });
+  });
+
+  it('parses Grok Build 1.0.4 dash lists and the Default model header', () => {
+    expect(
+      parseAvailableGrokModels(
+        'You are logged in with grok.com.\n\nDefault model: grok-4.6\n\nAvailable models:\n  * grok-4.6 (default)\n  - grok-4.5\n',
+      ),
+    ).toEqual({ models: ['grok-4.6', 'grok-4.5'], defaultModel: 'grok-4.6' });
   });
 });
