@@ -1,8 +1,8 @@
 # Documentation
 
-Codex Studio keeps public and agent-facing documentation in the repository. Local execution plans, completed workplans, audits, and review notes stay in the ignored `.scratch/dev-docs/` workspace.
+This folder holds public and agent-facing docs. Local execution plans, completed workplans, audits, and review notes live in the ignored `.scratch/dev-docs/` workspace.
 
-## Public Docs
+## Public docs
 
 - [Development guide](./DEV_GUIDE.md)
 - [Tooling and dependency maintenance](./TOOLING.md)
@@ -14,7 +14,7 @@ Codex Studio keeps public and agent-facing documentation in the repository. Loca
 - [Contributing](../CONTRIBUTING.md)
 - [Security](../SECURITY.md)
 
-## Architecture Decisions
+## Architecture decisions
 
 - [ADR 0001: Sprite Atlas workflow recipe](./adr/0001-sprite-atlas-workflow.md)
 - [ADR 0002: Animation Sequence workflow recipe](./adr/0002-animation-sequence-workflow.md)
@@ -25,14 +25,14 @@ Codex Studio keeps public and agent-facing documentation in the repository. Loca
 - [ADR 0007: Single package until real packages](./adr/0007-single-package-until-real-packages.md)
 - [ADR 0008: Versioned optional asset packs](./adr/0008-versioned-optional-asset-packs.md)
 
-## Current Architecture
+## Current architecture
 
 - [Architecture map](./ARCHITECTURE.md)
 - [Design tokens and UI contract](./DESIGN.md)
 - [Grok Imagine provider decision](./architecture/grok-imagine-provider-2026-08-08.md)
 - [Product roadmap](../ROADMAP.md)
 
-## Agent-Facing Docs
+## Agent-facing docs
 
 - [Agent guide](../AGENTS.md)
 - [Project vocabulary](../CONTEXT.md)

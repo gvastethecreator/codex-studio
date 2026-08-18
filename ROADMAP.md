@@ -1,54 +1,54 @@
 # Roadmap
 
-Codex Studio is moving toward a polished open-source preview while staying local-first, Codex-first, and library-backed.
+Codex Studio moves toward a polished open-source preview. It stays local-first, Codex-first, and library-backed.
 
-## Current Focus
+## Current focus
 
 1. Make first run easier to understand and recover.
-2. Keep generated assets catalog-first and generation lifecycle persistent-job-first.
+2. Keep generated assets catalog-first. Keep the generation lifecycle Persistent-Job-first.
 3. Improve diagnostics for jobs, storage, providers, and Codex session readiness.
-4. Keep the desktop path credible without making packaging the center of the project.
-5. Prepare a small, presentable release candidate.
+4. Keep the desktop path credible. Do not make packaging the center of the project.
+5. Prepare a small release candidate.
 
-## What Works Today
+## What works today
 
 - Local assets, logs, transcripts, and SQLite state live in a Studio Library outside the repo.
-- The main flow runs through `codex app-server` and does not require `OPENAI_API_KEY`.
+- The main flow runs through `codex app-server` and does not need `OPENAI_API_KEY`.
 - Jobs, events, transcripts, and catalog entries are traceable.
-- The browser renders Catalog Entries directly and observes one backend-owned Persistent Job lifecycle.
+- The browser shows Catalog Entries and one backend-owned Persistent Job lifecycle.
 - Generation Tasks and Generation Providers are separate concepts.
-- Optional Grok Imagine image Jobs reuse the authenticated local Grok Build CLI without changing the default Codex runtime; Styles supports both providers for direct generation and managed-reference styling.
-- Recipe Modules and Style Preset Manifests are becoming the durable authoring surface.
+- Optional Grok Imagine jobs reuse the signed-in Grok Build CLI. Codex stays the default runtime. Styles supports both providers.
+- Recipe Modules and Style Preset Manifests are the durable authoring surface.
 
 ## Phases
 
-| Phase | Goal                          | Expected result                                  |
-| ----- | ----------------------------- | ------------------------------------------------ |
-| 0     | Stabilize the current shell   | Clearer navigation and global state              |
-| 1     | Finish catalog-first behavior | UI aligned around SQLite and Image Catalog truth |
-| 2     | Improve operations            | Common failures produce actionable diagnostics   |
-| 3     | Harden setup and portability  | Smoother Windows/macOS/Linux development setup   |
-| 4     | Release candidate             | Public repo is clear, safe, and reproducible     |
+| Phase | Goal                          | Expected result                                |
+| ----- | ----------------------------- | ---------------------------------------------- |
+| 0     | Stabilize the current shell   | Clearer navigation and global state            |
+| 1     | Finish catalog-first behavior | UI aligned with SQLite and Image Catalog truth |
+| 2     | Improve operations            | Common failures produce useful diagnostics     |
+| 3     | Harden setup and portability  | Smoother Windows, macOS, and Linux setup       |
+| 4     | Release candidate             | Public repo is clear, safe, and reproducible   |
 
-## Near-Term Priorities
+## Near-term priorities
 
 - Improve onboarding and error messages.
 - Strengthen job recovery and detail views.
 - Reduce orchestration debt in shell code.
-- Keep validation focused during iteration and complete at closeout.
-- Keep public docs short, current, and easy to scan.
+- Keep validation focused during iteration. Run the full gate at closeout.
+- Keep public docs short and current.
 
-## Release Candidate Checklist
+## Release candidate checklist
 
-- [ ] Fresh checkout can run `bun run studio:init`.
-- [ ] `bun run dev` starts UI and backend.
+- [ ] A fresh checkout can run `bun run studio:init`.
+- [ ] `bun run dev` starts the UI and the backend.
 - [ ] `/api/health` reports local backend status.
-- [ ] UI shows useful readiness state when Codex auth is missing.
-- [ ] Public docs, troubleshooting, and contributing notes agree with current scripts.
+- [ ] The UI shows a useful readiness state when Codex auth is missing.
+- [ ] Public docs, troubleshooting, and contributing notes match current scripts.
 - [ ] No local DBs, logs, transcripts, secrets, or Studio Library assets are committed by mistake.
 
-## Non-Goals For Now
+## Not now
 
-- Turning Codex Studio into a hosted SaaS.
-- Making API keys mandatory for the default Codex flow.
-- Publishing it as a reusable npm library.
+- Turn Codex Studio into hosted SaaS.
+- Make API keys mandatory for the default Codex flow.
+- Publish this app as a reusable npm library.

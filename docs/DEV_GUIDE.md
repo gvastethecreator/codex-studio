@@ -6,7 +6,7 @@
 - React + Vite UI (`vp`)
 - Local Hono API on Bun
 - SQLite via `bun:sqlite` in the Studio Library
-- Optional Grok Imagine execution through the locally authenticated Grok Build CLI
+- Optional Grok Imagine through the signed-in Grok Build CLI
 
 ## First run
 
@@ -16,10 +16,12 @@ bun run studio:init
 bun run dev
 ```
 
-The repository also tracks common VS Code tasks under `.vscode/tasks.json`.
-Use `🧱 init` once for setup, `🚀 dev` for the complete local stack, and the
-focused `🖥 ui` or `⚙ api` tasks only when you intentionally run one side.
-`🧬 typecheck`, `🧾 docs`, and `🧼 hygiene` cover the extra contributor gates.
+The repo tracks common VS Code tasks in `.vscode/tasks.json`.
+
+- Use `🧱 init` once for setup.
+- Use `🚀 dev` for the complete local stack.
+- Use `🖥 ui` or `⚙ api` only when you want one side.
+- Use `🧬 typecheck`, `🧾 docs`, and `🧼 hygiene` for extra contributor gates.
 
 ## Quality gates
 
@@ -30,8 +32,7 @@ bun run validate:full    # compatibility alias of validate:release
 bun run validate:release # release gate (providers + recipes + styles + docs + hygiene)
 ```
 
-`🏗 build` is the default VS Code build task and `🧪 test` is the default test
-task. `⚡ quick`, `✅ gate`, and `🛡 release` map to the three validation levels.
+`🏗 build` is the default VS Code build task. `🧪 test` is the default test task. `⚡ quick`, `✅ gate`, and `🛡 release` map to the three validation levels.
 
 ## Dependency health
 
@@ -41,13 +42,11 @@ bun audit
 bun install --frozen-lockfile
 ```
 
-`bun outdated` must be empty after a dependency refresh. `bun audit` must have
-no known advisories, and the frozen install proves that `package.json` and
-`bun.lock` agree.
+After a dependency refresh, `bun outdated` must be empty. `bun audit` must have no known advisories. The frozen install proves that `package.json` and `bun.lock` agree.
 
 ## Workspace model
 
-`Workspace` is the durable organization entity. Persistent Jobs store `workspace_id`. Do not reintroduce Project APIs on the generate path.
+`Workspace` is the durable organization entity. Persistent Jobs store `workspace_id`. Do not put Project APIs back on the generate path.
 
 ## Safety
 

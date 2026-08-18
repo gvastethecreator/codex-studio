@@ -1,21 +1,21 @@
-# Design System And UX
+# Design system and UX
 
 ## Objective
 
-Codex Studio should feel like a professional creative tool: precise, technical, and task-oriented without sacrificing clarity for new users.
+Codex Studio must feel like a professional creative tool. It is precise and technical. It stays clear for new users.
 
 ## Principles
 
 - Clarity before decoration.
 - Visible and actionable system state.
-- Consistent vocabulary across the UI.
+- One vocabulary across the UI.
 
 ## Palette
 
-- Dark main background, near-black/zinc.
-- Restrained surfaces, no decorative glassmorphism.
-- Accent color for generation/ready states.
-- Clear color semantics for danger and info.
+- Dark main background, near-black or zinc.
+- Restrained surfaces. No decorative glassmorphism.
+- Accent color for generation and ready states.
+- Clear color meaning for danger and info.
 
 ## Typography
 
@@ -26,22 +26,20 @@ Codex Studio should feel like a professional creative tool: precise, technical, 
 
 - GSAP is the standard.
 - Typical durations: 150-250 ms.
-- Animate state, reveal, and feedback; avoid motion for its own sake.
-- Prioritize `transform` and `opacity`.
+- Animate state, reveal, and feedback. Do not add motion for its own sake.
+- Prefer `transform` and `opacity`.
 
 ## Interaction
 
 - Global drag and drop for references.
 - Useful shortcuts: `Escape`, carousel navigation, comparison.
 - Destructive confirmations must explain impact and recovery.
+- Demand-mounted surfaces need visible loading and error states. Do not leave silent gaps.
+- Show a command only when it has real behavior or a blocked reason that the user can act on.
+- The bottom composer must keep stable rows on mobile. Controls must not overlap the prompt or create horizontal overflow.
 
-- Demand-mounted surfaces need visible loading and error states; do not leave silent gaps.
-- Commands should be visible only when they have real behavior or an actionable blocked reason.
+## Open-source goal
 
-- The bottom composer must keep stable rows on mobile; controls must not overlap the prompt or create horizontal overflow.
-
-## Open-Source Goal
-
-- Copy should be clear for first-time visitors.
-- Empty states should teach the next step.
-- Diagnostics should explain the blocker and recommended action.
+- Copy must be clear for first-time visitors.
+- Empty states must teach the next step.
+- Diagnostics must name the blocker and the next action.

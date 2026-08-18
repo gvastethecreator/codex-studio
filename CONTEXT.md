@@ -1,6 +1,8 @@
 # Codex Studio Context
 
-Canonical language for the local-first image studio. This file defines the project vocabulary only; current system shape lives in `docs/ARCHITECTURE.md`, and agent workflows live in `SKILLS.md`.
+This file defines the project vocabulary only.
+Current system shape lives in `docs/ARCHITECTURE.md`.
+Agent workflows live in `SKILLS.md`.
 
 ## Language
 
@@ -93,7 +95,8 @@ Backend seam that turns a job creation request into one durable Persistent Job, 
 _Avoid_: route-owned job creation, provider-named task intake, ad-hoc enqueue path
 
 **Recipe Provider Directives**:
-Compact provider-ready directive snapshot derived from a Recipe Module's Generation Task Spec metadata when the recipe has enough structured data to avoid sending the full Recipe Context.
+Compact provider-ready directive snapshot derived from Recipe Module Generation Task Spec metadata.
+Use them when the recipe has enough structured data to avoid sending the full Recipe Context.
 _Avoid_: recipeContext replacement for every recipe, hidden prompt copy, lossy summary
 
 **Codex Product Runtime**:
@@ -187,7 +190,8 @@ Frontend budget that caps how many Catalog Entries each hot catalog surface init
 _Avoid_: magic page size, gallery default limit, arbitrary load cap
 
 **Catalog Card Action Surface**:
-Frontend surface that decides when secondary Image Catalog card commands mount, preserving touch access and desktop hover/focus polish without mounting every command for every idle card.
+Frontend surface that decides when secondary Image Catalog card commands mount.
+It keeps touch access and desktop hover or focus polish. It does not mount every command on every idle card.
 _Avoid_: hidden per-card toolbar, always-mounted action row, tooltip farm
 
 **Image Grid Geometry Budget**:
@@ -211,7 +215,9 @@ Frontend seam that materializes navigation, overlays, Studio Runtime state, and 
 _Avoid_: AppContent glue, root orchestrator
 
 **Studio Readiness**:
-Single non-secret ready-or-blocked product snapshot that says whether local generation can run now and why, built from Studio Runtime, Studio Library, App-Server Lifecycle, and Local Codex Session facts.
+Single non-secret ready-or-blocked product snapshot.
+It says whether local generation can run now and why.
+It is built from Studio Runtime, Studio Library, App-Server Lifecycle, and Local Codex Session facts.
 _Avoid_: simple health boolean, account check, deep diagnostic command
 
 **Command Center**:
@@ -238,7 +244,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 
 - A **Library Registry** tracks one or more **Studio Libraries** and exactly one default library at a time.
 - **Bootstrap Configuration** locates the initial **Studio Library**, then **Studio Settings** become the editable source of truth.
-- **Provider Secrets** live outside **Studio Settings**; settings may expose only availability or validation state.
+- **Provider Secrets** live outside **Studio Settings**. Settings can show only availability or validation state.
 - One **Studio Library** contains many **Local Assets** and contributes many **Catalog Entries** to the **Image Catalog**.
 - An **External Output Source** can be discovered or registered, then imported into a **Studio Library** before destructive or catalog operations.
 - A **Catalog Page** contains many **Catalog Entries**.
@@ -247,20 +253,20 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - A **Persistent Job** has one **Generation Task** and one **Generation Provider** selected through the **Provider Boundary**.
 - **Persistent Job Intake** creates Persistent Jobs and checks the **Provider Capability Catalog** plus runtime preflight to keep Generation Task and Generation Provider policy explicit.
 - A **Recipe Module** produces a **Generation Task Spec** for a **Generation Task**.
-- A **Recipe Module Catalog** exposes Recipe Module metadata for navigation, scripts, and agents; the **Recipe Discovery Projection** is the query view over modules and aliases.
-- An **Animation Frame Handoff** is dispatched and reconciled by the **Animation Sequence Run Coordinator**; the UI consumes an **Animation Sequence Run View**.
-- **Recipe Provider Directives** may be attached to a **Generation Task Spec** when structured recipe data is strong enough to compile a compact prompt safely.
+- A **Recipe Module Catalog** exposes Recipe Module metadata for navigation, scripts, and agents. The **Recipe Discovery Projection** is the query view over modules and aliases.
+- An **Animation Frame Handoff** is dispatched and reconciled by the **Animation Sequence Run Coordinator**. The UI consumes an **Animation Sequence Run View**.
+- **Recipe Provider Directives** can attach to a **Generation Task Spec** when structured recipe data is strong enough to compile a compact prompt safely.
 - A **Generation Provider** compiles a **Generation Task Spec** into provider-specific execution.
-- A **Compiled Provider Input** is derived from a **Generation Task Spec** and may be much smaller than the stored spec.
+- A **Compiled Provider Input** is derived from a **Generation Task Spec**. It can be much smaller than the stored spec.
 - A **Provider Session Contract** supplies stable rules that do not need to be repeated in every **Compiled Provider Input**.
-- The **Codex Product Runtime** powers interactive Codex jobs; the **Codex Automation Surface** supports non-interactive maintenance workflows.
+- The **Codex Product Runtime** powers interactive Codex jobs. The **Codex Automation Surface** supports non-interactive maintenance workflows.
 - A **Style Search Projection** is derived from **Style Preset Manifests** and **Style Pack Manifests**.
 - A **Style Thumbnail Projection** derives pack-scoped asset URLs from style manifests without becoming style authoring truth.
 - A **Style Pack Manifest** groups many **Style Preset Manifests** without owning all preset content inline.
 - A **Local Generation Run** creates one or more **Persistent Jobs** and returns their catalog-derived image results.
 - **Local Studio Sync** mirrors **Persistent Jobs** and requests scoped **Image Catalog** reconciliation.
 - **Local Studio Sync** uses **Studio Event Revisions** to detect missed changes and request scoped reconciliation.
-- A **Shell Activity Job** is the shell-facing model for hot job reads; full **Persistent Job** detail is loaded on demand.
+- A **Shell Activity Job** is the shell-facing model for hot job reads. Full **Persistent Job** detail is loaded on demand.
 - A **Catalog Operation Result** lets the shell show scoped command outcomes without treating every mutation as a blind full refresh.
 - A **Catalog Render Budget** keeps hot **Catalog Page** reads bounded per surface.
 - A **Catalog Card Action Surface** keeps secondary card commands available by intent instead of permanently mounted for every **Catalog Entry** card.
@@ -269,37 +275,37 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - **Studio Shell** materializes **Studio Runtime**, navigation state, overlays, and **Catalog Entries** into the renderable app layout.
 - **Studio Readiness** depends on **Studio Runtime**, **Studio Library**, **App-Server Lifecycle**, and the **Local Codex Session**.
 - The **Command Center** exposes global status and commands, while deeper configuration and diagnostics open from it.
-- A **Demand-Mounted Surface** is opened from the **Command Center** or another explicit user action; the **Settings Surface** is the settings-specific demand-mounted surface.
+- A **Demand-Mounted Surface** is opened from the **Command Center** or another explicit user action. The **Settings Surface** is the settings-specific demand-mounted surface.
 - The **Provider Boundary** is Codex-first: Codex remains the primary integration path, while external image systems plug into the same durable local contracts.
 
 ## Example dialogue
 
 > **Dev:** "When a generation finishes, do we render the **Catalog Entry** directly?"
-> **Domain expert:** "Yes — the backend persists the **Catalog Entry**, **Local Studio Sync** refreshes the affected catalog scope, and the grid materializes that entry directly."
+> **Domain expert:** "Yes. The backend persists the **Catalog Entry**. **Local Studio Sync** refreshes the affected catalog scope. Then the grid materializes that entry directly."
 >
 > **Dev:** "So what actually blocks the user from generating?"
-> **Domain expert:** "**Studio Readiness** does; it combines backend health, the **Studio Library**, the **App-Server Lifecycle**, and the **Local Codex Session** into one answer."
+> **Domain expert:** "**Studio Readiness** does. It combines backend health, the **Studio Library**, the **App-Server Lifecycle**, and the **Local Codex Session** into one answer."
 
 ## Flagged ambiguities
 
-- `CONTEXT.md` is glossary-only; system shape belongs in `docs/ARCHITECTURE.md`, and workflow rules belong in `AGENTS.md` or `SKILLS.md`.
-- `AGENTS.md` should guide repo work practices, while `SKILLS.md` should guide specialized workflows; neither should duplicate the glossary in `CONTEXT.md`.
+- `CONTEXT.md` is glossary-only. System shape belongs in `docs/ARCHITECTURE.md`. Workflow rules belong in `AGENTS.md` or `SKILLS.md`.
+- `AGENTS.md` guides repo work practices. `SKILLS.md` guides specialized workflows. Neither file duplicates the glossary in `CONTEXT.md`.
 - **Legacy Workspace Snapshot** is export-only compatibility. It is not read, recovered, or stored as browser state.
-- **Studio Settings** are not `.env.local`; environment files are for **Bootstrap Configuration** and secrets that must exist before the app can load the library.
+- **Studio Settings** are not `.env.local`. Environment files are for **Bootstrap Configuration** and secrets that must exist before the app can load the library.
 - **Provider Secret** values must not be stored in the Image Catalog, job metadata, or SQLite-backed Studio Settings.
-- **External Output Source** is not a second source of truth; catalog operations belong to imported **Local Assets** in a **Studio Library**.
-- **Studio Runtime** names the backend-resolution adapter; readiness and onboarding status belong to **Studio Readiness**.
-- **Command Center** does not mean putting every control in the toolbar; it means global controls live there or open from there instead of floating separately.
-- **Demand-Mounted Surface** should be the default for heavy diagnostics, file views, activity panels, and visual effects that are not always visible.
-- **Local Codex Session** is the local ChatGPT-login capability snapshot; avoid calling it "account status" except when referring to the compatibility endpoint `/api/codex/account`.
-- **Provider Boundary** does not mean the product becomes a generic provider router; it preserves a Codex-first studio while allowing external generation systems behind backend adapters.
-- **Generation Task** and **Generation Provider** are separate concepts; do not encode provider names into task names.
+- **External Output Source** is not a second source of truth. Catalog operations belong to imported **Local Assets** in a **Studio Library**.
+- **Studio Runtime** names the backend-resolution adapter. Readiness and onboarding status belong to **Studio Readiness**.
+- **Command Center** does not mean putting every control in the toolbar. Global controls live there or open from there instead of floating separately.
+- **Demand-Mounted Surface** is the default for heavy diagnostics, file views, activity panels, and visual effects that are not always visible.
+- **Local Codex Session** is the local ChatGPT-login capability snapshot. The phrase "account status" applies only to the compatibility endpoint `/api/codex/account`.
+- **Provider Boundary** does not mean the product becomes a generic provider router. It keeps a Codex-first studio while it allows external generation systems behind backend adapters.
+- **Generation Task** and **Generation Provider** are separate concepts. Task names do not encode provider names.
 - **Provider Capability Catalog** is a fixed build-time capability description, not runtime plugin machinery or a Provider Secret store.
-- **Persistent Job Intake** may accept compatibility aliases, but new durable policy must preserve the **Generation Task** / **Generation Provider** split.
+- **Persistent Job Intake** can accept compatibility aliases. New durable policy must preserve the **Generation Task** / **Generation Provider** split.
 - **Recipe Module** means a declarative workflow module, not a React-only page or a prebuilt prompt string.
-- **Recipe Discovery Projection** aliases help discovery; aliases are not new **Recipe Modules**.
-- **Style Preset Manifest** preserves preset identity and editing locality; avoid returning to giant pack files where one edit risks a whole category.
-- **Style Search Projection** should derive from manifests, not from visual runtime pack shortcuts.
-- **Compiled Provider Input** is execution data, not the durable source of truth; preserve the richer **Generation Task Spec** for traceability.
-- **Provider Session Contract** should contain stable rules only; task-specific requirements belong in the **Generation Task Spec** and its **Compiled Provider Input**.
-- **Codex Automation Surface** should not replace the **Codex Product Runtime** unless a future ADR explicitly changes the product architecture.
+- **Recipe Discovery Projection** aliases help discovery. Aliases are not new **Recipe Modules**.
+- **Style Preset Manifest** preserves preset identity and editing locality. One edit must not risk a whole category in a giant pack file.
+- **Style Search Projection** derives from manifests, not from visual runtime pack shortcuts.
+- **Compiled Provider Input** is execution data, not the durable source of truth. The richer **Generation Task Spec** remains for traceability.
+- **Provider Session Contract** contains stable rules only. Task-specific requirements belong in the **Generation Task Spec** and its **Compiled Provider Input**.
+- **Codex Automation Surface** does not replace the **Codex Product Runtime** unless a future ADR changes the product architecture.

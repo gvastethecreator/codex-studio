@@ -2,23 +2,23 @@
 
 ## Supported versions
 
-Codex Studio is in an open-source preview stage. Security fixes are applied on the main branch as long as no stable releases exist.
+Codex Studio is in open-source preview. Security fixes land on the `main` branch until a stable release exists.
 
 ## Reporting vulnerabilities
 
 Do not open public issues for vulnerabilities that involve local files, credentials, Provider Secrets, or asset exposure.
 
-Report privately through the maintainer's private channel and include:
+Report in private through the maintainer private channel. Include:
 
 - affected commit or version
 - operating system
 - steps to reproduce
-- expected vs observed impact
-- sanitized logs (no secrets)
+- expected impact and observed impact
+- sanitized logs with no secrets
 
-## Local-first security notes
+## Local-first notes
 
-- Provider Secrets must stay outside Studio Settings persisted in SQLite.
+- Keep Provider Secrets outside Studio Settings that persist in SQLite.
 - Never commit `.env.local`, SQLite databases, logs, transcripts, or local library folders.
 - Treat Studio Library paths as user-controlled data.
-- Avoid destructive operations on arbitrary paths: register or import External Output Sources first.
+- Do not operate on arbitrary paths. Register or import External Output Sources first.

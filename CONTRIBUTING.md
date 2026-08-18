@@ -1,15 +1,15 @@
 # Contributing to Codex Studio
 
-Thanks for helping turn this repo into a more robust, clearer, and installable open-source project.
+Thank you for helping make this repo clearer and easier to install.
 
-## Quick path to contribute
+## Quick path
 
 1. Read `README.md` and `ROADMAP.md`.
-2. Bring up the local environment with `bun run studio:init` + `bun run dev`.
-3. Make a small, verifiable change with context.
-4. Run the minimum checks before opening a PR.
+2. Start the local environment with `bun run studio:init` and `bun run dev`.
+3. Make a small change that you can prove.
+4. Run the minimum gates before you open a pull request.
 
-## Recommended setup
+## Setup
 
 ```bash
 bun install
@@ -17,7 +17,7 @@ bun run studio:init
 bun run dev
 ```
 
-Optional, run servers separately:
+To run the servers apart:
 
 ```bash
 bun run dev:server
@@ -26,11 +26,11 @@ bun run dev:ui
 
 ## Requirements
 
-- Bun available on `PATH`.
-- Codex CLI installed and authenticated locally.
-- No dependency on API keys for the main flow.
+- Bun is on `PATH`.
+- Codex CLI is installed and signed in on this machine.
+- The main flow does not need API keys.
 
-## Checklist before opening a PR
+## Checklist before a pull request
 
 ```bash
 bun run fmt:check
@@ -40,36 +40,36 @@ bun run test
 bun run build
 ```
 
-## Important conventions
+## Conventions
 
-- Do not commit generated assets, logs, SQLite DBs, local library content, Playwright MCP dumps, or scratch images.
+- Do not commit generated assets, logs, SQLite DBs, Studio Library data, Playwright MCP dumps, or scratch images.
 - Do not commit `.env.local` or real secrets.
-- Keep the local-first experience working without `OPENAI_API_KEY`.
-- Document new variables and public scripts in `README.md`.
-- If you change structural behavior, explain the rationale in the PR and update public or agent-facing docs when the change affects contributors.
+- Keep the local-first path working without `OPENAI_API_KEY`.
+- Document new environment variables and public scripts in `README.md`.
+- If you change structural behavior, explain why in the pull request. Update public or agent docs when contributors need the new fact.
 
-## How to file useful bug reports
+## Bug reports
 
 Include:
 
 - operating system
 - Bun version (`bun --version`)
 - Codex version (`codex --version`)
-- command executed
-- expected vs actual result
-- relevant logs (`logs/tooling/` or Studio Library logs)
+- the command that you ran
+- expected result and actual result
+- relevant logs from `logs/tooling/` or the Studio Library
 
-## Contributions with the most impact today
+## High-value work
 
 - onboarding and error messages
-- Windows/macOS/Linux compatibility
+- Windows, macOS, and Linux compatibility
 - job and asset traceability
 - public documentation
-- copy/UX clarity in the UI
+- clear UI copy
 
-## Contribution style
+## Style
 
-We prefer small, explainable changes that are easy to verify. Less heroics, more clarity.
+Prefer small changes that a reader can understand. Clarity is better than heroics.
 
 ## Code of conduct
 

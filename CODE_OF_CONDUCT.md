@@ -20,7 +20,7 @@ We are committed to making participation in Codex Studio a respectful, inclusive
 
 ## Enforcement
 
-The maintainer team may moderate comments, close issues, block users, or take other reasonable actions when this code is violated.
+The maintainer team can moderate comments, close issues, block users, or take other reasonable actions when this code is violated.
 
 To report an issue, use the private channel indicated by the person or team that owns the repository.
 

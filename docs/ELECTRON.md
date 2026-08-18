@@ -1,33 +1,33 @@
-# Electron: Proposed Direction
+# Electron: proposed direction
 
-This document does not announce an immediate Electron release. It defines a gradual strategy for desktop support without coupling the renderer to desktop APIs.
+This document does not announce an Electron release. It defines a gradual desktop strategy. The renderer must not couple to desktop APIs.
 
-## Current State
+## Current state
 
-The primary flow is still React/Vite UI + local Bun/Hono backend over HTTP.
+The primary flow is still React/Vite UI plus a local Bun/Hono backend over HTTP.
 
-The key seam is `Studio Runtime`: the renderer resolves `apiBase` dynamically (`window.codexStudio?.apiBase` -> `VITE_STUDIO_API_BASE` -> localhost by default).
+The key seam is Studio Runtime. The renderer resolves `apiBase` in this order: `window.codexStudio?.apiBase`, then `VITE_STUDIO_API_BASE`, then localhost.
 
-## Fast Path
+## Fast path
 
-1. `bun run dev:electron` validates the desktop shell in development.
-2. `bun run preview:electron` tests local build loading.
+1. Run `bun run dev:electron` to try the desktop shell in development.
+2. Run `bun run preview:electron` to load a local build.
 3. Keep the web app as the primary path while the runtime stabilizes.
 
-## Security Baseline
+## Security baseline
 
 - Use an explicit `preload` script for `BrowserWindow`.
 - Keep `nodeIntegration: false`.
 - Keep `contextIsolation: true`.
-- Use `sandbox: true` when viable.
+- Use `sandbox: true` when it works.
 - Expose only minimal wrappers through `contextBridge`.
 - Block unexpected navigation and arbitrary window opens.
 
-## Real Friction
+## Real friction
 
-The hard part is not opening an Electron window. The hard part is packaging the local backend correctly, including Bun and `codex app-server`, inside a desktop distribution.
+The hard part is not opening an Electron window. The hard part is packaging the local backend, including Bun and `codex app-server`, inside a desktop distribution.
 
-## Phased Strategy
+## Phased strategy
 
 | Phase | Goal                                                   |
 | ----- | ------------------------------------------------------ |
@@ -35,15 +35,15 @@ The hard part is not opening an Electron window. The hard part is packaging the 
 | 2     | Minimal desktop adapter (`main` + `preload`)           |
 | 3     | Serious packaging with embedded Bun or another runtime |
 
-## Current Practical Decision
+## Current practical decision
 
 - Do not attempt a final Electron release yet.
-- Consolidate runtime/onboarding and decouple the renderer.
+- Consolidate runtime and onboarding. Decouple the renderer.
 - Treat Electron as a future adapter, not a rewrite.
 
-## Pre-Distribution Checklist
+## Pre-distribution checklist
 
-- [ ] Define Bun packaging/supervision.
-- [ ] Validate `codex app-server` behavior in a distributed app.
+- [ ] Define Bun packaging and supervision.
+- [ ] Make sure that `codex app-server` works in a distributed app.
 - [ ] Review Studio Library paths per OS.
-- [ ] Define the health/log channel between main, preload, and renderer.
+- [ ] Define the health and log channel between main, preload, and renderer.

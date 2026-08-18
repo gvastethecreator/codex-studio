@@ -12,14 +12,14 @@ screen provides a setup handoff prompt.
 
 Bring a Codex Studio checkout to a runnable local state:
 
-- dependencies installed and repo scripts runnable;
-- `.env.local` bootstrap present and sane;
-- Studio Library initialized outside the repo;
-- SQLite migrations/default library/default project created;
-- Codex CLI available, app-server-capable, and authenticated with ChatGPT login;
-- `codex app-server` reachable through the backend;
-- UI and backend start cleanly;
-- closeout checks run once.
+- dependencies installed and repo scripts runnable
+- `.env.local` bootstrap present and sane
+- Studio Library initialized outside the repo
+- SQLite migrations, default library, and default project created
+- Codex CLI available, app-server-capable, and authenticated with ChatGPT login
+- `codex app-server` reachable through the backend
+- UI and backend start cleanly
+- closeout checks run once
 
 ## Safety
 
@@ -59,9 +59,9 @@ For UI onboarding changes, also read:
 
 1. Inspect current state.
    - `git status --short`
-   - Bun can run repo scripts; collect tool metadata only when useful for diagnosis
-   - Codex Runtime Doctor status, selected executable, and app-server support; collect CLI metadata only when useful for diagnosis
-   - check whether `.env.local` exists without printing secret values
+   - Bun can run repo scripts. Collect tool metadata only when it helps diagnosis.
+   - Codex Runtime Doctor status, selected executable, and app-server support. Collect CLI metadata only when it helps diagnosis.
+   - make sure that `.env.local` exists without printing secret values
    - inspect `package.json` scripts
 
 2. Initialize local bootstrap.
@@ -104,9 +104,8 @@ For UI onboarding changes, also read:
 
 End with:
 
-- changed files;
-- setup actions performed;
-- commands run and pass/fail result;
-- current readiness summary from `/api/health` and `/api/codex/session` when
-  reachable;
-- any remaining user-only actions, such as interactive `codex login`.
+- changed files
+- setup actions performed
+- commands run and pass or fail result
+- current readiness summary from `/api/health` and `/api/codex/session` when reachable
+- any remaining user-only actions, such as interactive `codex login`

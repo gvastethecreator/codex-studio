@@ -1,4 +1,4 @@
-# Style Preset Authoring Guide
+# Style Preset authoring guide
 
 Real presets live in `components/recipes/styles/manifests/presets/<pack_id>/<PRESET_ID>.yaml`.
 Start from one of these templates:
@@ -7,13 +7,16 @@ Start from one of these templates:
 - `components/recipes/styles/manifests/templates/sprite-sheet-preset.template.yaml` for sprite or animation-sheet presets.
 - `components/recipes/styles/manifests/templates/texture-preset.template.yaml` for texture/material presets.
 
-Do not add new presets to legacy YAML. That monolithic format is retired; `scripts/style-migration/legacy-packs/` must stay YAML-free. `bun run styles:source:verify` fails if YAML reappears outside `manifests/`.
+Do not add new presets to legacy YAML.
+That monolithic format is retired.
+`scripts/style-migration/legacy-packs/` must stay YAML-free.
+`bun run styles:source:verify` fails if YAML reappears outside `manifests/`.
 
-## Scaffold First, Then Edit
+## Scaffold first, then edit
 
 Use `styles:scaffold` to create the preset skeleton and update `presetRefs` at both pack and category level.
 
-The command runs in dry-run mode by default and prints planned changes plus validation steps. Use `--write` to mutate files.
+The command runs in dry-run mode by default and prints planned changes plus validation steps. Use `--write` to change files.
 
 ```bash
 bun run styles:scaffold -- --preset=SP01-082 --pack=pack_01 --category=portrait-styles --name="Morning Window Portrait" --template=style
@@ -27,23 +30,32 @@ Optional flags:
 
 If `--default-image` is omitted, the scaffold still points to `/assets/recipes/styles/defaults/<PRESET_ID>.webp`, but leaves `taxonomy.hasDefaultImage: false` to reflect the missing asset.
 
-## Prompt Specificity
+## Prompt specificity
 
-Batch generation prompts are deliberately pack- and category-specific. Before running a new pack, extend `scripts/generate-style-defaults.ts` with distinct scene anchors and motif rules for that pack instead of relying on the generic fallback. This keeps thumbnails from converging on the same generic props or staging.
+Batch generation prompts are pack-specific and category-specific.
+Before you run a new pack, extend `scripts/generate-style-defaults.ts` with distinct scene anchors and motif rules for that pack.
+Do not rely on the generic fallback.
+This keeps thumbnails from converging on the same generic props or staging.
 
-`generate-style-defaults.ts` checkpoints `manifest-<pack>.json` and `failures-<pack>.json` after each preset and polls job/asset completion from local Studio SQLite (`.studio/studio.sqlite`) instead of hammering HTTP list endpoints. If a long batch is interrupted, trust the `.webp` files on disk and the latest checkpoint files before assuming the pack did not advance.
+`generate-style-defaults.ts` checkpoints `manifest-<pack>.json` and `failures-<pack>.json` after each preset.
+It polls job and asset completion from local Studio SQLite (`.studio/studio.sqlite`) instead of hammering HTTP list endpoints.
+If a long batch is interrupted, trust the `.webp` files on disk and the latest checkpoint files.
+Do not assume that the pack did not advance.
 
-Frontend style previews should trust existing `.webp` files on disk, not only manifest intent. If a preset points at a default image path that has not been generated yet, suppress the broken URL and fall back to a real category or pack preview instead.
+Frontend style previews must trust existing `.webp` files on disk, not only manifest intent.
+If a preset points at a default image path that has not been generated yet, suppress the broken URL.
+Fall back to a real category or pack preview instead.
 
 Anime packs have a deliberately finer split:
 
 - `pack_05` is `Anime Battle & Worlds`: modern shonen/action, mecha/cyberpunk, isekai/high fantasy, dark fantasy/seinen, and action.
 - `pack_13` is `Anime Character & Lifestyle`: shojo/magical/visionary classics, slice-of-life/moe, anime style spectrum, core anime, and slice-of-life / school / music.
 - `pack_16` is `Anime Classics & Prestige`: 2000s classics, 90s golden era, sports/performance, studio masterpieces, 70s/80s retro anime, samurai/medieval, and horror.
-- Non-anime packs also rely on semantic buckets now, especially `pack_01`, `pack_02`, `pack_03`, `pack_04`, `pack_06`, `pack_07`, `pack_08`, `pack_09`, `pack_10`, `pack_11`, and `pack_12`; do not collapse them back into catch-all categories like `Pattern & Texture`, `Oddities`, or generic game buckets.
-- When authoring or regenerating those packs, keep prompt anchors and category labels aligned with that split instead of collapsing them back into generic anime staging.
+- Non-anime packs also use semantic buckets, especially `pack_01`, `pack_02`, `pack_03`, `pack_04`, `pack_06`, `pack_07`, `pack_08`, `pack_09`, `pack_10`, `pack_11`, and `pack_12`.
+- Do not collapse them back into catch-all categories like `Pattern & Texture`, `Oddities`, or generic game buckets.
+- When you author or regenerate those packs, keep prompt anchors and category labels aligned with that split.
 
-## Naming And Language Policy
+## Naming and language policy
 
 Use one durable convention in manifests:
 
@@ -54,7 +66,7 @@ Use one durable convention in manifests:
 
 Do not introduce legacy non-English catch-all slugs. The normalized slug for pack 12 is `video-game-originals-vault`.
 
-## Style-First Contract
+## Style-first contract
 
 `Style Preset` means reusable visual language, not a fixed scene.
 
@@ -65,11 +77,11 @@ Do not introduce legacy non-English catch-all slugs. The normalized slug for pac
 
 Quick self-check before saving:
 
-1. Could this style apply to at least 5 different subjects without rewriting the DNA?
-2. If I remove location/story nouns, does the preset still have a clear visual identity?
+1. Can this style apply to at least 5 different subjects without rewriting the DNA?
+2. If I remove location or story nouns, does the preset still have a clear visual identity?
 3. Is this preset materially distinct from neighboring presets in the same category?
 
-## Template Flow
+## Template flow
 
 `styles:scaffold` uses the template files below automatically. If you need a manual flow, use the same files directly:
 
@@ -86,7 +98,7 @@ bun run styles:templates:verify
 bun run styles:verify
 ```
 
-## Quick Example
+## Quick example
 
 Create `presets/pack_01/MY-CUSTOM.yaml`:
 
@@ -143,7 +155,7 @@ taxonomy:
   hasDefaultImage: true
 ```
 
-## Register In The Pack Manifest
+## Register in the pack manifest
 
 Edit `manifests/packs/pack_01.yaml`:
 
@@ -157,14 +169,14 @@ Edit `manifests/packs/pack_01.yaml`:
 
 Both references are required. `styles:validate` rejects duplicate pack refs, category refs missing from the pack-level list, and refs that point outside the pack namespace.
 
-## Generate Runtime And Validate
+## Generate runtime and validate
 
 ```bash
 bun run styles:runtime:check   # verify runtime data is current
 bun run styles:verify          # full validation: taxonomy, coverage, source audit
 ```
 
-## Taxonomy Contract
+## Taxonomy contract
 
 Every preset manifest must include a `taxonomy` block:
 
@@ -190,13 +202,15 @@ It also enforces pack-reference drift:
 - category `presetRefs` must also exist in top-level `presetRefs`.
 - pack and category refs must use the same `<pack_id>/<PRESET_ID>.yaml` namespace.
 
-## Visual DNA Fields
+## Visual DNA fields
 
-All 8 fields are required by exact canonical key name and checked by `validateStyleManifestGraph`.
+All 8 fields are required by exact canonical key name.
+`validateStyleManifestGraph` reports missing or invalid keys.
 Alias fields such as `form_and_line`, `color_palette`, `lighting_setup`, `material_texture`,
 `spatial_distortion`, `atmosphere`, and `render_quality` are retired for authored manifests.
 Do not use placeholder values such as `Standard`, `Default`, `None`, `N/A`, `TBD`, `TODO`, or
-`placeholder`; write preset-specific language that represents the intended visual system.
+`placeholder`.
+Write preset-specific language that represents the intended visual system.
 
 | Field                    | Purpose                           |
 | ------------------------ | --------------------------------- |
@@ -209,7 +223,7 @@ Do not use placeholder values such as `Standard`, `Default`, `None`, `N/A`, `TBD
 | `atmosphere_and_mood`    | Emotional quality, ambient feel   |
 | `rendering_and_quality`  | Resolution, polish level          |
 
-## Avoid Rules
+## Avoid rules
 
 Negative prompt snippets applied per preset. Use simple lowercase keywords:
 
@@ -238,11 +252,15 @@ attributes:
   negativePrompt: illustration, 3d render, watermark, text
 ```
 
-## Default Card Regeneration
+## Default card regeneration
 
-Default cards are prompt-derived artifacts. `scripts/generate-style-defaults.ts` builds the image prompt from the current pack, category, preset `name`, `visualDna`, `negativePrompt`, and deterministic variation helpers. Existing `.webp` files do not update when a manifest changes.
+Default cards are prompt-derived artifacts.
+`scripts/generate-style-defaults.ts` builds the image prompt from the current pack, category, preset `name`, `visualDna`, `negativePrompt`, and deterministic variation helpers.
+Existing `.webp` files do not update when a manifest changes.
 
-If a preset changes `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt`, regenerate `assets/recipes/styles/defaults/<PRESET_ID>.webp` before considering visual work complete. If you keep a local backlog for stale cards, put it in `.local/style-preset-card-regeneration-backlog.md`; `.local/` is ignored.
+If a preset changes `name`, `visualDna`, `avoidRules`, or `attributes.negativePrompt`, regenerate `assets/recipes/styles/defaults/<PRESET_ID>.webp` before visual work is complete.
+If you keep a local backlog for stale cards, put it in `.local/style-preset-card-regeneration-backlog.md`.
+`.local/` is ignored.
 
 ### Grok provider variants
 
@@ -255,4 +273,7 @@ bun run styles:provider-variants:verify -- --provider=grok
 bun run styles:thumbnails
 ```
 
-The Grok path creates one fresh CLI-backed Persistent Job per preset and makes one generation attempt. Do not use `--force` or `--retry-failures`: a timeout or ambiguous result may already have consumed credits. Inspect the recorded Job and Grok session before deciding whether to regenerate a missing card.
+The Grok path creates one fresh CLI-backed Persistent Job per preset and makes one generation attempt.
+Do not use `--force` or `--retry-failures`.
+A timeout or ambiguous result can already have consumed credits.
+Inspect the recorded Job and Grok session before you decide whether to regenerate a missing card.

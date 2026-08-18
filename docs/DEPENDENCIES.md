@@ -2,7 +2,7 @@
 
 Last verified: 2026-08-17.
 
-Codex Studio uses Bun 1.3.14 as package manager and runtime. This is an operational contract, not a replaceable command preference: the local API uses `bun:sqlite`, repo scripts use Bun APIs, and CI/tooling use Bun. A pnpm migration would require replacing those runtime seams first, so Bun remains intentional.
+Codex Studio uses Bun 1.3.14 as package manager and runtime. This is an operational contract, not a replaceable command preference. The local API uses `bun:sqlite`. Repo scripts use Bun APIs. CI and tooling use Bun. A pnpm migration requires replacing those runtime seams first. Bun remains intentional.
 
 ## Current status
 
@@ -25,13 +25,13 @@ No `package.json` version changed during this revalidation. The review compared 
 | Styling            | `tailwindcss@4.3.3`, `@tailwindcss/vite@4.3.3`, `tailwind-merge@3.6.0`, `clsx@2.1.1`                                                  | Tailwind 4.3 adds logical utilities and first-party scrollbar/zoom/tab controls. The Vite integration stays aligned with core.                                                  | [Tailwind CSS 4.3](https://tailwindcss.com/blog/tailwindcss-v4-3)                                                                                                                                       |
 | Desktop            | `electron@43.4.0`                                                                                                                     | Electron 43 upgrades Chromium, V8, and embedded Node and improves startup. The desktop shell remains a secondary path and its build is verified separately.                     | [Electron 43](https://www.electronjs.org/blog/electron-43-0), [Electron releases](https://releases.electronjs.org/release)                                                                              |
 | Backend            | `hono@4.13.2`, `effect@3.22.1`, `js-yaml@5.3.0`, `sharp@0.35.3`                                                                       | These packages own HTTP routing, schemas/effects, manifest parsing, and image processing. Current server build, style validation, and asset audit cover their active contracts. | [Hono releases](https://github.com/honojs/hono/releases), [Effect releases](https://github.com/Effect-TS/effect/releases), [Sharp changelog](https://sharp.pixelplumbing.com/changelog/)                |
-| Creative runtime   | `gsap@3.15.0`, `@gsap/react@2.1.2`, `three@0.185.1`, `@tabler/icons-react@3.46.0`, `@chenglou/pretext@0.0.8`                          | GSAP remains the motion standard; Three is demand-loaded for Camera; icon and prompt helpers remain tree-shaken. Chunk budgets guard eager regressions.                         | [GSAP releases](https://github.com/greensock/GSAP/releases), [Three.js releases](https://github.com/mrdoob/three.js/releases), [Tabler Icons releases](https://github.com/tabler/tabler-icons/releases) |
-| Provider and files | `@fal-ai/client@1.10.1`, `file-saver@2.0.5`, `jszip@3.10.1`                                                                           | Provider execution stays behind backend adapters; ZIP is demand-loaded and secret-bearing configuration remains outside SQLite and client bundles.                              | [fal client releases](https://github.com/fal-ai/fal-js/releases), [JSZip releases](https://github.com/Stuk/jszip/releases)                                                                              |
+| Creative runtime   | `gsap@3.15.0`, `@gsap/react@2.1.2`, `three@0.185.1`, `@tabler/icons-react@3.46.0`, `@chenglou/pretext@0.0.8`                          | GSAP remains the motion standard. Three is demand-loaded for Camera. Icon and prompt helpers remain tree-shaken. Chunk budgets guard eager regressions.                         | [GSAP releases](https://github.com/greensock/GSAP/releases), [Three.js releases](https://github.com/mrdoob/three.js/releases), [Tabler Icons releases](https://github.com/tabler/tabler-icons/releases) |
+| Provider and files | `@fal-ai/client@1.10.1`, `file-saver@2.0.5`, `jszip@3.10.1`                                                                           | Provider execution stays behind backend adapters. ZIP is demand-loaded. Secret-bearing settings stay outside SQLite and client bundles.                                         | [fal client releases](https://github.com/fal-ai/fal-js/releases), [JSZip releases](https://github.com/Stuk/jszip/releases)                                                                              |
 
 ## Update workflow
 
 1. Run `bun outdated` and inspect official release notes before changing versions.
-2. Use `bun update` or explicit `bun add` commands; never edit `bun.lock` manually.
+2. Use `bun update` or explicit `bun add` commands. Never edit `bun.lock` manually.
 3. Keep `vite`, `oxlint`, `oxfmt`, and matching overrides aligned.
 4. Run `bun install --frozen-lockfile`, focused migration checks, then `bun run check`, `bun run test`, and `bun run build` once at integration close.
 5. Record any blocked latest version here with the exact incompatible contract and evidence.

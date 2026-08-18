@@ -15,4 +15,4 @@ Workspace is the only user-visible durable organization entity. Persistent Jobs 
 ## Consequences
 
 - Generate uses `workspaceId`, not Project list APIs.
-- IndexedDB may keep drafts, not durable workspace ownership.
+- IndexedDB can keep drafts. It does not own durable workspace ownership.

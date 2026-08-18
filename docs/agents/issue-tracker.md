@@ -14,7 +14,7 @@ GitHub Issues and the linked GitHub Project hold live work state. Local Markdown
 ## Authority
 
 - GitHub owns open or closed state, assignees, comments, native dependencies, labels, and Project field values.
-- Local files own expanded task context, decisions, verification evidence, and offline handoff notes.
+- Local files own expanded task context, decisions, proof, and offline handoff notes.
 - Shared fields must match: title, category, triage state, execution state, source, dependencies, acceptance criteria, and outcome.
 - Do not copy the full GitHub comment history into local files. Add durable decisions and proof to `## Sync log`.
 
@@ -47,10 +47,10 @@ Blocked by: <GitHub issue numbers or None>
 
 ## Sync protocol
 
-1. Read the Issue, Project item, and local mirror before a mutation.
+1. Read the Issue, the Project item, and the local mirror before a mutation.
 2. If both surfaces changed after `Last synced`, set `Sync: conflict` and stop.
 3. Write the local draft with `Sync: pending` before remote creation.
-4. Create or update the GitHub Issue. Use native parent and blocking relationships when available.
+4. Create or update the GitHub Issue. Use native parent and blocking relationships when they are available.
 5. Add the Issue to Project `8` under `gvastethecreator`.
 6. Set the Project `Status` field to `Todo`, `In Progress`, or `Done`.
 7. Update the local identifiers, shared fields, timestamps, and `Sync: synced`.
@@ -74,8 +74,8 @@ gh project item-edit 8 --owner gvastethecreator --url <issue-url> --field Status
 ## Triage and implementation
 
 - Triage updates one category label, one triage label, and the matching local fields.
-- Starting work assigns the Issue, sets Project status to `In Progress`, and sets local `Execution:` to `active`.
-- Verified completion posts proof, closes the Issue, sets Project status to `Done`, and sets local `Execution:` to `finished`.
+- When work starts, assign the Issue, set Project status to `In Progress`, and set local `Execution:` to `active`.
+- When completion is proven, post proof, close the Issue, set Project status to `Done`, and set local `Execution:` to `finished`.
 - A blocker keeps the Issue open. Record the blocker on GitHub and set local `Execution:` to `blocked`.
 
 ## Wayfinding operations
