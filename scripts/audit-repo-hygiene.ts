@@ -18,6 +18,8 @@ const forbidden = [
   /\.db$/i,
   /^\.scratch\//,
   /^logs\//,
+  /^\.playwright-mcp\//,
+  /^test-files\//,
   /\.pem$/i,
 ];
 

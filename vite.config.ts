@@ -16,6 +16,9 @@ export default defineConfig({
     port: 17222,
     host: 'localhost',
   },
+  build: {
+    emptyOutDir: false,
+  },
   plugins: [...react(), ...tailwindcss()] as never,
   resolve: {
     alias: {

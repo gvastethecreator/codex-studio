@@ -32,8 +32,10 @@ const STYLE_THUMBNAIL_PACK_LOADERS: Record<string, () => Promise<Record<string, 
     import('./thumbnail_group_07').then((module) => module.STYLE_THUMBNAIL_PACKS['pack_14'] ?? {}),
   pack_15: () =>
     import('./thumbnail_group_08').then((module) => module.STYLE_THUMBNAIL_PACKS['pack_15'] ?? {}),
+  pack_16: () =>
+    import('./thumbnail_group_08').then((module) => module.STYLE_THUMBNAIL_PACKS['pack_16'] ?? {}),
   pack_17: () =>
-    import('./thumbnail_group_08').then((module) => module.STYLE_THUMBNAIL_PACKS['pack_17'] ?? {}),
+    import('./thumbnail_group_09').then((module) => module.STYLE_THUMBNAIL_PACKS['pack_17'] ?? {}),
 };
 
 export function loadGeneratedStyleThumbnailPack(packId: string) {

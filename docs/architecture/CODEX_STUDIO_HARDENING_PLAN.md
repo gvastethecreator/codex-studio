@@ -6,7 +6,7 @@
 
 **Date:** 2026-08-07 (baseline); implementation closed 2026-08-08
 **Baseline commit inspected:** `169d96541663d0c87a18e2de29990f43421a4ad0` (`main`)  
-**Supersedes:** root draft `codex-studio-hardening-architecture-plan.md` (audit notes)  
+**Supersedes:** the retired root hardening pointer draft. Use this file as the only public hardening record.
 **Audience:** implementers and agents  
 **Language rule:** short sentences, one name per concept, no optional “should” requirements
 

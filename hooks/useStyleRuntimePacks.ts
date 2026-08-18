@@ -6,6 +6,19 @@ import {
 } from '../components/recipes/stylesData';
 
 const STYLE_RUNTIME_PACK_ID_SET = new Set(STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id));
+export const STYLE_RUNTIME_PACK_LOAD_BATCH_SIZE = 3;
+
+export function chunkStyleRuntimePackIds(
+  packIds: readonly string[],
+  batchSize = STYLE_RUNTIME_PACK_LOAD_BATCH_SIZE,
+) {
+  const size = Math.max(1, Math.floor(batchSize));
+  const batches: string[][] = [];
+  for (let index = 0; index < packIds.length; index += size) {
+    batches.push(packIds.slice(index, index + size));
+  }
+  return batches;
+}
 
 export function resolveRequiredStyleRuntimePackIds({
   requiredPackIds,
@@ -63,24 +76,28 @@ export function useStyleRuntimePacks({
     if (requestedPackIds.length === 0) return;
     let cancelled = false;
     setLoadState((current) => ({ ...current, isLoading: true, error: null }));
-    void Promise.all(requestedPackIds.map((packId) => loadStyleRuntimePack(packId))).then(
-      (packs) => {
-        if (cancelled) return;
-        const loaded = packs.filter((pack): pack is StyleRuntimePack => pack !== null);
-        if (loaded.length > 0) {
-          setPacksById((current) => cacheLoadedPacks(current, loaded));
+    void (async () => {
+      try {
+        for (const batch of chunkStyleRuntimePackIds(requestedPackIds)) {
+          const packs = await Promise.all(batch.map((packId) => loadStyleRuntimePack(packId)));
+          if (cancelled) return;
+          const loaded = packs.filter((pack): pack is StyleRuntimePack => pack !== null);
+          if (loaded.length > 0) {
+            setPacksById((current) => cacheLoadedPacks(current, loaded));
+          }
         }
-        setLoadState((current) => ({ ...current, isLoading: false, error: null }));
-      },
-      (error) => {
+        if (!cancelled) {
+          setLoadState((current) => ({ ...current, isLoading: false, error: null }));
+        }
+      } catch (error) {
         if (cancelled) return;
         setLoadState((current) => ({
           ...current,
           isLoading: false,
           error: error instanceof Error ? error : new Error(String(error)),
         }));
-      },
-    );
+      }
+    })();
     return () => {
       cancelled = true;
     };

@@ -2,20 +2,31 @@ import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
+import { composeStyleRuntimePacksFromManifests } from '../components/recipes/stylePresetManifests';
+import { STYLE_COLLECTIONS } from '../components/recipes/styles/collections/styleCollectionDefinitions';
+import {
+  createStyleCollectionSourceIndex,
+  resolveStyleCollection,
+} from '../components/recipes/styles/collections/styleCollectionProjection';
+import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
+import { loadStyleManifestGraph } from './style-manifest-files';
+import {
+  categoryImageSuffix,
+  collectStyleLandingFolderPreferredKeys,
+  resolveThumbnailAssetPackId,
+  selectStyleLandingFolderImageKeys,
+  STYLE_LANDING_FOLDER_IMAGE_LIMIT,
+} from './styleThumbnailProjection';
+
 const rootDir = path.resolve(import.meta.dir, '..');
 const stylesAssetDir = path.join(rootDir, 'assets', 'recipes', 'styles');
 const thumbnailDirName = 'style-card-thumbnails';
 const defaultsDirName = 'defaults';
 const grokVariantsDirName = 'defaults/providers/grok';
 const outputDir = path.join(rootDir, 'lib', 'styleThumbnailPacks.generated');
+const landingOutputPath = path.join(rootDir, 'lib', 'styleLandingFolderIndex.generated.ts');
 const aliasesPath = path.join(import.meta.dir, 'style-thumbnail-aliases.json');
 const checkMode = process.argv.includes('--check');
-
-function packIdFor(fileName: string) {
-  return fileName.match(/^SP(\d{2})-/i)?.[1]
-    ? `pack_${fileName.match(/^SP(\d{2})-/i)![1]}`
-    : (fileName.match(/^(pack_\d{2})/i)?.[1].toLowerCase() ?? null);
-}
 
 function assetKey(fileName: string) {
   return fileName.replace(/\.[^.]+$/, '');
@@ -84,6 +95,139 @@ function buildIndexSource(packGroups: string[][]) {
   ].join('\n');
 }
 
+function collectLandingPreferredKeys(input: {
+  featuredPresetIds?: readonly string[];
+  categoryNames?: readonly { packId: string; categoryName: string }[];
+  presetIds?: readonly string[];
+}) {
+  return collectStyleLandingFolderPreferredKeys({
+    featuredPresetIds: input.featuredPresetIds,
+    categoryKeys: (input.categoryNames ?? []).map((entry) =>
+      styleCategoryImageKey(entry.packId, entry.categoryName),
+    ),
+    presetIds: input.presetIds,
+  });
+}
+
+function collectCategoryEntries(
+  entries: Array<{
+    kind: string;
+    packId?: string;
+    categoryName?: string;
+    entries?: unknown[];
+  }>,
+): Array<{ packId: string; categoryName: string }> {
+  return entries.flatMap((entry) => {
+    if (entry.kind === 'manual_group') {
+      return collectCategoryEntries(
+        (entry.entries ?? []) as Array<{
+          kind: string;
+          packId?: string;
+          categoryName?: string;
+          entries?: unknown[];
+        }>,
+      );
+    }
+    if (entry.kind === 'category' && entry.packId && entry.categoryName) {
+      return [{ packId: entry.packId, categoryName: entry.categoryName }];
+    }
+    return [];
+  });
+}
+
+function buildLandingFolderIndexSource() {
+  const availableKeys = new Set(assetsByKey.keys());
+  const folders: string[] = [];
+
+  const addFolder = ({
+    id,
+    kind,
+    presetCount,
+    preferredKeys,
+  }: {
+    id: string;
+    kind: 'collection' | 'source';
+    presetCount: number;
+    preferredKeys: readonly string[];
+  }) => {
+    const imageKeys = selectStyleLandingFolderImageKeys(
+      preferredKeys,
+      availableKeys,
+      STYLE_LANDING_FOLDER_IMAGE_LIMIT,
+    );
+    folders.push(
+      [
+        '  {',
+        `    id: ${JSON.stringify(id)},`,
+        `    kind: ${JSON.stringify(kind)},`,
+        `    presetCount: ${presetCount},`,
+        `    imageKeys: ${JSON.stringify(imageKeys)},`,
+        '  },',
+      ].join('\n'),
+    );
+  };
+
+  for (const collection of STYLE_COLLECTIONS) {
+    if (
+      collection.id === 'my_styles' ||
+      collection.id === 'favorites' ||
+      collection.id === 'recent'
+    ) {
+      continue;
+    }
+    const resolved = resolveStyleCollection(collection, collectionSourceIndex);
+    addFolder({
+      id: collection.id,
+      kind: 'collection',
+      presetCount: resolved.presets.length,
+      preferredKeys: collectLandingPreferredKeys({
+        featuredPresetIds:
+          'featuredPresetIds' in collection ? collection.featuredPresetIds : undefined,
+        categoryNames: collectCategoryEntries(collection.entries),
+        presetIds: [
+          ...(resolved.summary.featuredPresetIds ?? []),
+          ...resolved.presets.map((item) => item.presetId),
+        ],
+      }),
+    });
+  }
+
+  for (const pack of runtimePacks) {
+    addFolder({
+      id: pack.id,
+      kind: 'source',
+      presetCount: pack.presets.length,
+      preferredKeys: collectLandingPreferredKeys({
+        categoryNames: [...new Set(pack.presets.map((preset) => preset.category ?? 'General'))].map(
+          (categoryName) => ({ packId: pack.id, categoryName }),
+        ),
+        presetIds: pack.presets.map((preset) => preset.id),
+      }),
+    });
+  }
+
+  return [
+    '// Generated by scripts/generate-style-thumbnail-projections.ts.',
+    '// Add/remove style card thumbnails, then run `bun run styles:thumbnails`.',
+    '',
+    'export interface StyleLandingFolderSummary {',
+    '  id: string;',
+    '  kind: "collection" | "source";',
+    '  presetCount: number;',
+    '  imageKeys: string[];',
+    '}',
+    '',
+    'export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [',
+    ...folders,
+    '];',
+    '',
+    'export const STYLE_LANDING_FOLDER_SUMMARIES_BY_ID = Object.fromEntries(',
+    '  STYLE_LANDING_FOLDER_SUMMARIES.map((folder) => [folder.id, folder]),',
+    ') as Record<string, StyleLandingFolderSummary>;',
+    '',
+  ].join('\n');
+}
+
 const thumbnailFiles = (await readdir(path.join(stylesAssetDir, thumbnailDirName)))
   .filter((fileName) => fileName.endsWith('.webp'))
   .sort((a, b) => a.localeCompare(b));
@@ -124,19 +268,63 @@ for (const alias of aliases) {
   }
   assetsByKey.set(alias.alias, { ...target, key: alias.alias });
 }
+const { graph, packManifests, presetManifests } = await loadStyleManifestGraph();
+if (graph.errors.length > 0) {
+  console.error(`[styles:thumbnails] graph errors=${graph.errors.length}`);
+  for (const error of graph.errors) console.error(`- ${error}`);
+  process.exit(1);
+}
+
+const packIdByPresetId = new Map(presetManifests.map((preset) => [preset.id, preset.packId]));
+const runtimePacks = composeStyleRuntimePacksFromManifests(packManifests, presetManifests);
+const collectionSourceIndex = createStyleCollectionSourceIndex(runtimePacks);
+
 const assets = [...assetsByKey.values()].sort((a, b) =>
   `${a.key}.webp`.localeCompare(`${b.key}.webp`),
 );
 const filesByPack = new Map<string, ThumbnailAsset[]>();
 for (const asset of assets) {
-  const packId = packIdFor(asset.key);
+  const packId = resolveThumbnailAssetPackId(asset.key, packIdByPresetId);
   if (!packId) throw new Error(`Cannot resolve thumbnail pack for ${asset.key}`);
   filesByPack.set(packId, [...(filesByPack.get(packId) ?? []), asset]);
+}
+
+const donorByCategorySuffix = new Map<string, ThumbnailAsset>();
+for (const asset of assets) {
+  const suffix = categoryImageSuffix(asset.key);
+  if (suffix && !donorByCategorySuffix.has(suffix)) donorByCategorySuffix.set(suffix, asset);
+}
+
+for (const pack of packManifests) {
+  for (const category of pack.categories ?? []) {
+    const neededKey = styleCategoryImageKey(pack.id, category.name);
+    if (assetsByKey.has(neededKey)) {
+      const existing = assetsByKey.get(neededKey);
+      if (existing && !(filesByPack.get(pack.id) ?? []).some((asset) => asset.key === neededKey)) {
+        filesByPack.set(pack.id, [...(filesByPack.get(pack.id) ?? []), existing]);
+      }
+      continue;
+    }
+    const suffix = categoryImageSuffix(neededKey);
+    const donor = suffix ? donorByCategorySuffix.get(suffix) : undefined;
+    if (!donor) continue;
+    const aliased = { ...donor, key: neededKey };
+    assetsByKey.set(neededKey, aliased);
+    filesByPack.set(pack.id, [...(filesByPack.get(pack.id) ?? []), aliased]);
+  }
+}
+
+for (const [packId, packAssets] of filesByPack) {
+  filesByPack.set(
+    packId,
+    [...packAssets].sort((first, second) => first.key.localeCompare(second.key)),
+  );
 }
 const packIds = [...filesByPack.keys()].sort();
 const packGroups = Array.from({ length: Math.ceil(packIds.length / 2) }, (_, index) =>
   packIds.slice(index * 2, index * 2 + 2),
 );
+const landingSource = buildLandingFolderIndexSource();
 const expected = new Map<string, string>([
   ['index.ts', buildIndexSource(packGroups)],
   ...packGroups.map(
@@ -179,8 +367,23 @@ if (checkMode) {
     console.error('[styles:thumbnails] generated directory contains stale modules.');
     stale = true;
   }
+  const actualLanding = await readFile(landingOutputPath, 'utf8').catch(() => '');
+  const landingIds = [...landingSource.matchAll(/id:\s*("[^"]+"|'[^']+')/g)].map((match) =>
+    match[1].replace(/['"]/g, ''),
+  );
+  const landingCounts = [...landingSource.matchAll(/presetCount:\s*\d+/g)].map((match) => match[0]);
+  if (
+    !actualLanding.includes('STYLE_LANDING_FOLDER_SUMMARIES_BY_ID') ||
+    landingIds.some((id) => !actualLanding.includes(id)) ||
+    landingCounts.some((count) => !actualLanding.includes(count))
+  ) {
+    console.error('[styles:thumbnails] styleLandingFolderIndex.generated.ts is stale.');
+    stale = true;
+  }
   if (stale) process.exit(1);
-  console.log(`[styles:thumbnails] packs=${packIds.length} thumbnails=${assets.length} current`);
+  console.log(
+    `[styles:thumbnails] packs=${packIds.length} thumbnails=${assets.length} landing=${STYLE_COLLECTIONS.length} current`,
+  );
   process.exit(0);
 }
 
@@ -196,5 +399,16 @@ const formatter = Bun.spawn(['bunx', 'vp', 'fmt', outputDir], {
   stdout: 'inherit',
   stderr: 'inherit',
 });
+await writeFile(landingOutputPath, landingSource, 'utf8');
 if ((await formatter.exited) !== 0) throw new Error('Could not format thumbnail projections');
-console.log(`[styles:thumbnails] packs=${packIds.length} thumbnails=${assets.length} written`);
+const landingFormatter = Bun.spawn(['bunx', 'vp', 'fmt', landingOutputPath], {
+  cwd: rootDir,
+  stdout: 'inherit',
+  stderr: 'inherit',
+});
+if ((await landingFormatter.exited) !== 0) {
+  throw new Error('Could not format landing folder index');
+}
+console.log(
+  `[styles:thumbnails] packs=${packIds.length} thumbnails=${assets.length} landing written`,
+);

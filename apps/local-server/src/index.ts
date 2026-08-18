@@ -2,25 +2,23 @@ import { getSettings } from './config';
 import { listRecoverableJobs } from './db/jobs';
 import { createStudioApp } from './appFactory';
 import { log } from './logger';
+import { serveWithPortFallback } from './portUtils';
 import { beginSignalShutdown, shutdownStudioServer } from './serverShutdown';
 
 export { createStudioApp } from './appFactory';
 
 if (import.meta.main) {
   const studio = await createStudioApp();
-  const port = getSettings().serverPort;
+  const configuredPort = getSettings().serverPort;
   const hostname = '127.0.0.1';
 
-  log(
-    'info',
-    'server',
-    `Local server starting on http://${hostname}:${port}. Library: ${studio.config.libraryDir}`,
-  );
-
-  const server = Bun.serve({
+  const { server, port: boundPort } = serveWithPortFallback({
     hostname,
-    port,
-    fetch(req, server) {
+    port: configuredPort,
+    onPortConflict(attemptedPort, nextPort) {
+      log('warn', 'server', `Port ${attemptedPort} is in use; attempting next port ${nextPort}...`);
+    },
+    fetch(req: Request, server: any) {
       if (new URL(req.url).pathname === '/api/events') {
         server.timeout(req, 0);
       }
@@ -29,7 +27,13 @@ if (import.meta.main) {
     },
   });
 
-  console.log(`Codex Studio local-server listening on http://${hostname}:${port}`);
+  log(
+    'info',
+    'server',
+    `Local server listening on http://${hostname}:${boundPort}. Library: ${studio.config.libraryDir}`,
+  );
+
+  console.log(`Codex Studio local-server listening on http://${hostname}:${boundPort}`);
 
   let shutdownPromise: Promise<void> | null = null;
   const shutdown = () => {

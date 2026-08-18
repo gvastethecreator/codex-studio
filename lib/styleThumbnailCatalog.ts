@@ -36,6 +36,19 @@ const stylePreviewCatalog = buildUrlCatalog(stylePreviewImageFiles);
 export const STYLE_CARD_THUMBNAILS: Record<string, string> = {};
 export const STYLE_CATEGORY_IMAGES: Record<string, string> = {};
 
+const styleThumbnailCatalogListeners = new Set<() => void>();
+
+export function subscribeStyleThumbnailCatalog(listener: () => void) {
+  styleThumbnailCatalogListeners.add(listener);
+  return () => {
+    styleThumbnailCatalogListeners.delete(listener);
+  };
+}
+
+function notifyStyleThumbnailCatalog() {
+  styleThumbnailCatalogListeners.forEach((listener) => listener());
+}
+
 export async function loadStyleThumbnailPack(packId: string) {
   const projection = await loadGeneratedStyleThumbnailPack(packId);
   Object.assign(STYLE_CARD_THUMBNAILS, projection);
@@ -43,6 +56,7 @@ export async function loadStyleThumbnailPack(packId: string) {
     STYLE_CATEGORY_IMAGES,
     Object.fromEntries(Object.entries(projection).filter(([key]) => key.startsWith('pack_'))),
   );
+  notifyStyleThumbnailCatalog();
   return projection;
 }
 

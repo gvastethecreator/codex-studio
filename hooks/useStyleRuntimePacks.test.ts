@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vite-plus/test';
 import { STYLE_RUNTIME_PACK_SUMMARIES } from '../components/recipes/stylesData';
-import { resolveRequiredStyleRuntimePackIds } from './useStyleRuntimePacks';
+import {
+  chunkStyleRuntimePackIds,
+  resolveRequiredStyleRuntimePackIds,
+} from './useStyleRuntimePacks';
 
 describe('resolveRequiredStyleRuntimePackIds', () => {
   it('deduplicates focused packs and rejects non-runtime tabs', () => {
@@ -16,5 +19,12 @@ describe('resolveRequiredStyleRuntimePackIds', () => {
     expect(resolveRequiredStyleRuntimePackIds({ requiredPackIds: [], loadAll: true })).toEqual(
       STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id),
     );
+  });
+
+  it('loads global browse packs in small batches', () => {
+    expect(chunkStyleRuntimePackIds(['pack_01', 'pack_02', 'pack_03', 'pack_04'], 3)).toEqual([
+      ['pack_01', 'pack_02', 'pack_03'],
+      ['pack_04'],
+    ]);
   });
 });

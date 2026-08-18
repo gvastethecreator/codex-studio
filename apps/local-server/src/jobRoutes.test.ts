@@ -53,7 +53,9 @@ type CreateJobInput = {
   execution: Job['execution'];
 };
 
-function createSourceSpec(overrides: Partial<GenerationTaskSpec> = {}): GenerationTaskSpec {
+function createSourceSpec(
+  overrides: Partial<Parameters<typeof createGenerationTaskSpec>[0]> = {},
+): GenerationTaskSpec {
   return createGenerationTaskSpec({
     id: overrides.id ?? 'spec-1',
     task: overrides.task ?? 'image_generate',

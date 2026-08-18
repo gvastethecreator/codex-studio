@@ -42,7 +42,7 @@ bun run build
 
 ## Important conventions
 
-- Do not commit generated assets, logs, SQLite DBs, or local library content.
+- Do not commit generated assets, logs, SQLite DBs, local library content, Playwright MCP dumps, or scratch images.
 - Do not commit `.env.local` or real secrets.
 - Keep the local-first experience working without `OPENAI_API_KEY`.
 - Document new variables and public scripts in `README.md`.

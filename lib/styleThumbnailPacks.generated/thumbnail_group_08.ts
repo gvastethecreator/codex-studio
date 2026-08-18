@@ -3,1422 +3,1782 @@
 
 export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
   pack_15: {
-    'SP15-001-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-001.webp',
-      import.meta.url,
-    ).href,
     'SP15-001': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-001.webp',
       import.meta.url,
     ).href,
-    'SP15-002-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-002.webp',
+    'SP15-001-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-001.webp',
       import.meta.url,
     ).href,
     'SP15-002': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-002.webp',
       import.meta.url,
     ).href,
-    'SP15-003-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-003.webp',
+    'SP15-002-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-002.webp',
       import.meta.url,
     ).href,
     'SP15-003': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-003.webp',
       import.meta.url,
     ).href,
-    'SP15-004-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-004.webp',
+    'SP15-003-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-003.webp',
       import.meta.url,
     ).href,
     'SP15-004': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-004.webp',
       import.meta.url,
     ).href,
-    'SP15-005-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-005.webp',
+    'SP15-004-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-004.webp',
       import.meta.url,
     ).href,
     'SP15-005': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-005.webp',
       import.meta.url,
     ).href,
-    'SP15-006-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-006.webp',
+    'SP15-005-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-005.webp',
       import.meta.url,
     ).href,
     'SP15-006': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-006.webp',
       import.meta.url,
     ).href,
-    'SP15-007-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-007.webp',
+    'SP15-006-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-006.webp',
       import.meta.url,
     ).href,
     'SP15-007': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-007.webp',
       import.meta.url,
     ).href,
-    'SP15-008-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-008.webp',
+    'SP15-007-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-007.webp',
       import.meta.url,
     ).href,
     'SP15-008': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-008.webp',
       import.meta.url,
     ).href,
-    'SP15-009-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-009.webp',
+    'SP15-008-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-008.webp',
       import.meta.url,
     ).href,
     'SP15-009': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-009.webp',
       import.meta.url,
     ).href,
-    'SP15-010-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-010.webp',
+    'SP15-009-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-009.webp',
       import.meta.url,
     ).href,
     'SP15-010': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-010.webp',
       import.meta.url,
     ).href,
-    'SP15-011-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-011.webp',
+    'SP15-010-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-010.webp',
       import.meta.url,
     ).href,
     'SP15-011': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-011.webp',
       import.meta.url,
     ).href,
-    'SP15-012-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-012.webp',
+    'SP15-011-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-011.webp',
       import.meta.url,
     ).href,
     'SP15-012': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-012.webp',
       import.meta.url,
     ).href,
-    'SP15-013-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-013.webp',
+    'SP15-012-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-012.webp',
       import.meta.url,
     ).href,
     'SP15-013': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-013.webp',
       import.meta.url,
     ).href,
-    'SP15-014-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-014.webp',
+    'SP15-013-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-013.webp',
       import.meta.url,
     ).href,
     'SP15-014': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-014.webp',
       import.meta.url,
     ).href,
-    'SP15-015-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-015.webp',
+    'SP15-014-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-014.webp',
       import.meta.url,
     ).href,
     'SP15-015': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-015.webp',
       import.meta.url,
     ).href,
-    'SP15-016-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-016.webp',
+    'SP15-015-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-015.webp',
       import.meta.url,
     ).href,
     'SP15-016': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-016.webp',
       import.meta.url,
     ).href,
-    'SP15-017-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-017.webp',
+    'SP15-016-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-016.webp',
       import.meta.url,
     ).href,
     'SP15-017': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-017.webp',
       import.meta.url,
     ).href,
-    'SP15-018-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-018.webp',
+    'SP15-017-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-017.webp',
       import.meta.url,
     ).href,
     'SP15-018': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-018.webp',
       import.meta.url,
     ).href,
-    'SP15-019-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-019.webp',
+    'SP15-018-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-018.webp',
       import.meta.url,
     ).href,
     'SP15-019': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-019.webp',
       import.meta.url,
     ).href,
-    'SP15-020-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-020.webp',
+    'SP15-019-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-019.webp',
       import.meta.url,
     ).href,
     'SP15-020': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-020.webp',
       import.meta.url,
     ).href,
-    'SP15-021-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-021.webp',
+    'SP15-020-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-020.webp',
       import.meta.url,
     ).href,
     'SP15-021': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-021.webp',
       import.meta.url,
     ).href,
-    'SP15-022-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-022.webp',
+    'SP15-021-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-021.webp',
       import.meta.url,
     ).href,
     'SP15-022': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-022.webp',
       import.meta.url,
     ).href,
-    'SP15-023-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-023.webp',
+    'SP15-022-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-022.webp',
       import.meta.url,
     ).href,
     'SP15-023': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-023.webp',
       import.meta.url,
     ).href,
-    'SP15-024-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-024.webp',
+    'SP15-023-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-023.webp',
       import.meta.url,
     ).href,
     'SP15-024': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-024.webp',
       import.meta.url,
     ).href,
-    'SP15-025-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-025.webp',
+    'SP15-024-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-024.webp',
       import.meta.url,
     ).href,
     'SP15-025': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-025.webp',
       import.meta.url,
     ).href,
-    'SP15-026-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-026.webp',
+    'SP15-025-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-025.webp',
       import.meta.url,
     ).href,
     'SP15-026': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-026.webp',
       import.meta.url,
     ).href,
-    'SP15-027-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-027.webp',
+    'SP15-026-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-026.webp',
       import.meta.url,
     ).href,
     'SP15-027': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-027.webp',
       import.meta.url,
     ).href,
-    'SP15-028-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-028.webp',
+    'SP15-027-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-027.webp',
       import.meta.url,
     ).href,
     'SP15-028': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-028.webp',
       import.meta.url,
     ).href,
-    'SP15-029-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-029.webp',
+    'SP15-028-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-028.webp',
       import.meta.url,
     ).href,
     'SP15-029': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-029.webp',
       import.meta.url,
     ).href,
-    'SP15-030-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-030.webp',
+    'SP15-029-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-029.webp',
       import.meta.url,
     ).href,
     'SP15-030': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-030.webp',
       import.meta.url,
     ).href,
-    'SP15-031-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-031.webp',
+    'SP15-030-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-030.webp',
       import.meta.url,
     ).href,
     'SP15-031': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-031.webp',
       import.meta.url,
     ).href,
-    'SP15-032-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-032.webp',
+    'SP15-031-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-031.webp',
       import.meta.url,
     ).href,
     'SP15-032': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-032.webp',
       import.meta.url,
     ).href,
-    'SP15-033-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-033.webp',
+    'SP15-032-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-032.webp',
       import.meta.url,
     ).href,
     'SP15-033': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-033.webp',
       import.meta.url,
     ).href,
-    'SP15-034-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-034.webp',
+    'SP15-033-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-033.webp',
       import.meta.url,
     ).href,
     'SP15-034': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-034.webp',
       import.meta.url,
     ).href,
-    'SP15-035-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-035.webp',
+    'SP15-034-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-034.webp',
       import.meta.url,
     ).href,
     'SP15-035': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-035.webp',
       import.meta.url,
     ).href,
-    'SP15-036-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-036.webp',
+    'SP15-035-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-035.webp',
       import.meta.url,
     ).href,
     'SP15-036': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-036.webp',
       import.meta.url,
     ).href,
-    'SP15-037-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-037.webp',
+    'SP15-036-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-036.webp',
       import.meta.url,
     ).href,
     'SP15-037': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-037.webp',
       import.meta.url,
     ).href,
-    'SP15-038-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-038.webp',
+    'SP15-037-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-037.webp',
       import.meta.url,
     ).href,
     'SP15-038': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-038.webp',
       import.meta.url,
     ).href,
-    'SP15-039-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-039.webp',
+    'SP15-038-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-038.webp',
       import.meta.url,
     ).href,
     'SP15-039': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-039.webp',
       import.meta.url,
     ).href,
-    'SP15-040-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-040.webp',
+    'SP15-039-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-039.webp',
       import.meta.url,
     ).href,
     'SP15-040': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-040.webp',
       import.meta.url,
     ).href,
-    'SP15-041-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-041.webp',
+    'SP15-040-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-040.webp',
       import.meta.url,
     ).href,
     'SP15-041': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-041.webp',
       import.meta.url,
     ).href,
-    'SP15-042-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-042.webp',
+    'SP15-041-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-041.webp',
       import.meta.url,
     ).href,
     'SP15-042': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-042.webp',
       import.meta.url,
     ).href,
-    'SP15-043-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-043.webp',
+    'SP15-042-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-042.webp',
       import.meta.url,
     ).href,
     'SP15-043': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-043.webp',
       import.meta.url,
     ).href,
-    'SP15-044-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-044.webp',
+    'SP15-043-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-043.webp',
       import.meta.url,
     ).href,
     'SP15-044': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-044.webp',
       import.meta.url,
     ).href,
-    'SP15-045-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-045.webp',
+    'SP15-044-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-044.webp',
       import.meta.url,
     ).href,
     'SP15-045': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-045.webp',
       import.meta.url,
     ).href,
-    'SP15-046-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-046.webp',
+    'SP15-045-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-045.webp',
       import.meta.url,
     ).href,
     'SP15-046': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-046.webp',
       import.meta.url,
     ).href,
-    'SP15-047-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-047.webp',
+    'SP15-046-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-046.webp',
       import.meta.url,
     ).href,
     'SP15-047': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-047.webp',
       import.meta.url,
     ).href,
-    'SP15-048-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-048.webp',
+    'SP15-047-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-047.webp',
       import.meta.url,
     ).href,
     'SP15-048': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-048.webp',
       import.meta.url,
     ).href,
-    'SP15-049-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-049.webp',
+    'SP15-048-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-048.webp',
       import.meta.url,
     ).href,
     'SP15-049': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-049.webp',
       import.meta.url,
     ).href,
-    'SP15-050-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-050.webp',
+    'SP15-049-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-049.webp',
       import.meta.url,
     ).href,
     'SP15-050': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-050.webp',
       import.meta.url,
     ).href,
-    'SP15-051-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-051.webp',
+    'SP15-050-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-050.webp',
       import.meta.url,
     ).href,
     'SP15-051': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-051.webp',
       import.meta.url,
     ).href,
-    'SP15-052-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-052.webp',
+    'SP15-051-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-051.webp',
       import.meta.url,
     ).href,
     'SP15-052': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-052.webp',
       import.meta.url,
     ).href,
-    'SP15-053-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-053.webp',
+    'SP15-052-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-052.webp',
       import.meta.url,
     ).href,
     'SP15-053': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-053.webp',
       import.meta.url,
     ).href,
-    'SP15-054-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-054.webp',
+    'SP15-053-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-053.webp',
       import.meta.url,
     ).href,
     'SP15-054': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-054.webp',
       import.meta.url,
     ).href,
-    'SP15-055-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-055.webp',
+    'SP15-054-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-054.webp',
       import.meta.url,
     ).href,
     'SP15-055': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-055.webp',
       import.meta.url,
     ).href,
-    'SP15-056-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-056.webp',
+    'SP15-055-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-055.webp',
       import.meta.url,
     ).href,
     'SP15-056': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-056.webp',
       import.meta.url,
     ).href,
-    'SP15-057-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-057.webp',
+    'SP15-056-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-056.webp',
       import.meta.url,
     ).href,
     'SP15-057': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-057.webp',
       import.meta.url,
     ).href,
-    'SP15-058-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-058.webp',
+    'SP15-057-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-057.webp',
       import.meta.url,
     ).href,
     'SP15-058': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-058.webp',
       import.meta.url,
     ).href,
-    'SP15-059-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-059.webp',
+    'SP15-058-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-058.webp',
       import.meta.url,
     ).href,
     'SP15-059': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-059.webp',
       import.meta.url,
     ).href,
-    'SP15-060-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-060.webp',
+    'SP15-059-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-059.webp',
       import.meta.url,
     ).href,
     'SP15-060': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-060.webp',
       import.meta.url,
     ).href,
-    'SP15-061-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-061.webp',
+    'SP15-060-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-060.webp',
       import.meta.url,
     ).href,
     'SP15-061': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-061.webp',
       import.meta.url,
     ).href,
-    'SP15-062-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-062.webp',
+    'SP15-061-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-061.webp',
       import.meta.url,
     ).href,
     'SP15-062': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-062.webp',
       import.meta.url,
     ).href,
-    'SP15-063-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-063.webp',
+    'SP15-062-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-062.webp',
       import.meta.url,
     ).href,
     'SP15-063': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-063.webp',
       import.meta.url,
     ).href,
-    'SP15-064-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-064.webp',
+    'SP15-063-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-063.webp',
       import.meta.url,
     ).href,
     'SP15-064': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-064.webp',
       import.meta.url,
     ).href,
-    'SP15-065-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-065.webp',
+    'SP15-064-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-064.webp',
       import.meta.url,
     ).href,
     'SP15-065': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-065.webp',
       import.meta.url,
     ).href,
-    'SP15-066-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-066.webp',
+    'SP15-065-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-065.webp',
       import.meta.url,
     ).href,
     'SP15-066': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-066.webp',
       import.meta.url,
     ).href,
-    'SP15-067-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-067.webp',
+    'SP15-066-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-066.webp',
       import.meta.url,
     ).href,
     'SP15-067': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-067.webp',
       import.meta.url,
     ).href,
-    'SP15-068-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-068.webp',
+    'SP15-067-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-067.webp',
       import.meta.url,
     ).href,
     'SP15-068': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-068.webp',
       import.meta.url,
     ).href,
-    'SP15-069-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-069.webp',
+    'SP15-068-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-068.webp',
       import.meta.url,
     ).href,
     'SP15-069': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-069.webp',
       import.meta.url,
     ).href,
-    'SP15-070-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-070.webp',
+    'SP15-069-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-069.webp',
       import.meta.url,
     ).href,
     'SP15-070': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-070.webp',
       import.meta.url,
     ).href,
-    'SP15-071-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-071.webp',
+    'SP15-070-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-070.webp',
       import.meta.url,
     ).href,
     'SP15-071': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-071.webp',
       import.meta.url,
     ).href,
-    'SP15-072-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-072.webp',
+    'SP15-071-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-071.webp',
       import.meta.url,
     ).href,
     'SP15-072': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-072.webp',
       import.meta.url,
     ).href,
-    'SP15-073-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-073.webp',
+    'SP15-072-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-072.webp',
       import.meta.url,
     ).href,
     'SP15-073': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-073.webp',
       import.meta.url,
     ).href,
-    'SP15-074-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-074.webp',
+    'SP15-073-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-073.webp',
       import.meta.url,
     ).href,
     'SP15-074': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-074.webp',
       import.meta.url,
     ).href,
-    'SP15-075-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-075.webp',
+    'SP15-074-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-074.webp',
       import.meta.url,
     ).href,
     'SP15-075': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-075.webp',
       import.meta.url,
     ).href,
-    'SP15-076-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-076.webp',
+    'SP15-075-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-075.webp',
       import.meta.url,
     ).href,
     'SP15-076': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-076.webp',
       import.meta.url,
     ).href,
-    'SP15-077-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-077.webp',
+    'SP15-076-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-076.webp',
       import.meta.url,
     ).href,
     'SP15-077': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-077.webp',
       import.meta.url,
     ).href,
-    'SP15-078-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-078.webp',
+    'SP15-077-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-077.webp',
       import.meta.url,
     ).href,
     'SP15-078': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-078.webp',
       import.meta.url,
     ).href,
-    'SP15-079-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-079.webp',
+    'SP15-078-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-078.webp',
       import.meta.url,
     ).href,
     'SP15-079': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-079.webp',
       import.meta.url,
     ).href,
-    'SP15-080-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP15-080.webp',
+    'SP15-079-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-079.webp',
       import.meta.url,
     ).href,
     'SP15-080': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP15-080.webp',
       import.meta.url,
     ).href,
+    'SP15-080-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP15-080.webp',
+      import.meta.url,
+    ).href,
   },
-  pack_17: {
-    pack_17__dark_fantasy_and_gothic_courts: new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/pack_17__dark_fantasy_and_gothic_courts.webp',
+  pack_16: {
+    pack_16__2000s_classics: new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/pack_05__2000s_classics.webp',
       import.meta.url,
     ).href,
-    pack_17__dungeon_zine_and_risograph_prints: new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/pack_17__dungeon_zine_and_risograph_prints.webp',
+    pack_16__70s_and_80s_retro_anime: new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/pack_05__70s_and_80s_retro_anime.webp',
       import.meta.url,
     ).href,
-    pack_17__grimdark_game_systems_and_tabletop: new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/pack_17__grimdark_game_systems_and_tabletop.webp',
+    pack_16__90s_golden_era: new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/pack_05__90s_golden_era.webp',
       import.meta.url,
     ).href,
-    pack_17__ink_tarot_and_bestiary_plates: new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/pack_17__ink_tarot_and_bestiary_plates.webp',
+    pack_16__studio_masterpieces: new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/pack_05__studio_masterpieces.webp',
       import.meta.url,
     ).href,
-    pack_17__rune_tech_and_apocalyptic_warfronts: new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/pack_17__rune_tech_and_apocalyptic_warfronts.webp',
+    'SP05-001': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-001.webp',
       import.meta.url,
     ).href,
-    'SP17-001-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-001-01.webp',
+    'SP05-001-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-001.webp',
       import.meta.url,
     ).href,
-    'SP17-001-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-001-02.webp',
+    'SP05-002': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-002.webp',
       import.meta.url,
     ).href,
-    'SP17-001-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-001.webp',
+    'SP05-002-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-002.webp',
       import.meta.url,
     ).href,
-    'SP17-001': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-001.webp',
+    'SP05-003': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-003.webp',
       import.meta.url,
     ).href,
-    'SP17-002-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-002-02.webp',
+    'SP05-003-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-003.webp',
       import.meta.url,
     ).href,
-    'SP17-002-05': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-002.webp',
+    'SP05-004': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-004.webp',
       import.meta.url,
     ).href,
-    'SP17-002-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-002.webp',
+    'SP05-004-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-004.webp',
       import.meta.url,
     ).href,
-    'SP17-002': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-002.webp',
+    'SP05-005': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-005.webp',
       import.meta.url,
     ).href,
-    'SP17-003-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-003.webp',
+    'SP05-005-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-005.webp',
       import.meta.url,
     ).href,
-    'SP17-003': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-003.webp',
+    'SP05-006': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-006.webp',
       import.meta.url,
     ).href,
-    'SP17-004-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-004.webp',
+    'SP05-006-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-006.webp',
       import.meta.url,
     ).href,
-    'SP17-004': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-004.webp',
+    'SP05-007': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-007.webp',
       import.meta.url,
     ).href,
-    'SP17-005-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-005.webp',
+    'SP05-007-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-007.webp',
       import.meta.url,
     ).href,
-    'SP17-005': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-005.webp',
+    'SP05-008': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-008.webp',
       import.meta.url,
     ).href,
-    'SP17-006-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-006.webp',
+    'SP05-008-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-008.webp',
       import.meta.url,
     ).href,
-    'SP17-006': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-006.webp',
+    'SP05-009': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-009.webp',
       import.meta.url,
     ).href,
-    'SP17-007-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-007-02.webp',
+    'SP05-009-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-009.webp',
       import.meta.url,
     ).href,
-    'SP17-007-05': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-007-05.webp',
+    'SP05-010': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-010.webp',
       import.meta.url,
     ).href,
-    'SP17-007-06': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-007.webp',
+    'SP05-010-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-010.webp',
       import.meta.url,
     ).href,
-    'SP17-007-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-007.webp',
+    'SP05-011': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-011.webp',
       import.meta.url,
     ).href,
-    'SP17-007': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-007.webp',
+    'SP05-011-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-011.webp',
       import.meta.url,
     ).href,
-    'SP17-008-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-008-01.webp',
+    'SP05-012': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-012.webp',
       import.meta.url,
     ).href,
-    'SP17-008-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-008-02.webp',
+    'SP05-012-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-012.webp',
       import.meta.url,
     ).href,
-    'SP17-008-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-008.webp',
+    'SP05-014': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-014.webp',
       import.meta.url,
     ).href,
-    'SP17-008': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-008.webp',
+    'SP05-014-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-014.webp',
       import.meta.url,
     ).href,
-    'SP17-009-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-009.webp',
+    'SP05-015': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-015.webp',
       import.meta.url,
     ).href,
-    'SP17-009': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-009.webp',
+    'SP05-015-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-015.webp',
       import.meta.url,
     ).href,
-    'SP17-010-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-010.webp',
+    'SP05-016': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-016.webp',
       import.meta.url,
     ).href,
-    'SP17-010': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-010.webp',
+    'SP05-016-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-016.webp',
       import.meta.url,
     ).href,
-    'SP17-011-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-011-02.webp',
+    'SP05-017': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-017.webp',
       import.meta.url,
     ).href,
-    'SP17-011-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-011-03.webp',
+    'SP05-017-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-017.webp',
       import.meta.url,
     ).href,
-    'SP17-011-04': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-011-04.webp',
+    'SP05-018': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-018.webp',
       import.meta.url,
     ).href,
-    'SP17-011-05': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-011-05.webp',
+    'SP05-018-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-018.webp',
       import.meta.url,
     ).href,
-    'SP17-011-06': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-011.webp',
+    'SP05-024': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-024.webp',
       import.meta.url,
     ).href,
-    'SP17-011-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-011.webp',
+    'SP05-024-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-024.webp',
       import.meta.url,
     ).href,
-    'SP17-011': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-011.webp',
+    'SP05-026': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-026.webp',
       import.meta.url,
     ).href,
-    'SP17-012-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-012.webp',
+    'SP05-026-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-026.webp',
       import.meta.url,
     ).href,
-    'SP17-012': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-012.webp',
+    'SP05-027': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-027.webp',
       import.meta.url,
     ).href,
-    'SP17-013-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-013.webp',
+    'SP05-027-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-027.webp',
       import.meta.url,
     ).href,
-    'SP17-013': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-013.webp',
+    'SP05-030': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-030.webp',
       import.meta.url,
     ).href,
-    'SP17-014-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-014.webp',
+    'SP05-030-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-030.webp',
       import.meta.url,
     ).href,
-    'SP17-014': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-014.webp',
+    'SP05-071': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-071.webp',
       import.meta.url,
     ).href,
-    'SP17-015-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-015.webp',
+    'SP05-071-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-071.webp',
       import.meta.url,
     ).href,
-    'SP17-015': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-015.webp',
+    'SP05-072': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-072.webp',
       import.meta.url,
     ).href,
-    'SP17-016-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-016-02.webp',
+    'SP05-072-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-072.webp',
       import.meta.url,
     ).href,
-    'SP17-016-05': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-016.webp',
+    'SP05-073': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-073.webp',
       import.meta.url,
     ).href,
-    'SP17-016-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-016.webp',
+    'SP05-073-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-073.webp',
       import.meta.url,
     ).href,
-    'SP17-016': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-016.webp',
+    'SP05-074': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-074.webp',
       import.meta.url,
     ).href,
-    'SP17-017-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-017.webp',
+    'SP05-074-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-074.webp',
       import.meta.url,
     ).href,
-    'SP17-017': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-017.webp',
+    'SP05-075': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-075.webp',
       import.meta.url,
     ).href,
-    'SP17-018-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-018.webp',
+    'SP05-075-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-075.webp',
       import.meta.url,
     ).href,
-    'SP17-018': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-018.webp',
+    'SP05-076': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-076.webp',
       import.meta.url,
     ).href,
-    'SP17-019-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-019-01.webp',
+    'SP05-076-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-076.webp',
       import.meta.url,
     ).href,
-    'SP17-019-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-019-02.webp',
+    'SP05-077': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-077.webp',
       import.meta.url,
     ).href,
-    'SP17-019-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-019.webp',
+    'SP05-077-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-077.webp',
       import.meta.url,
     ).href,
-    'SP17-019': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-019.webp',
+    'SP05-078': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-078.webp',
       import.meta.url,
     ).href,
-    'SP17-020-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-020.webp',
+    'SP05-078-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-078.webp',
       import.meta.url,
     ).href,
-    'SP17-020': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-020.webp',
+    'SP05-079': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-079.webp',
       import.meta.url,
     ).href,
-    'SP17-021-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-021.webp',
+    'SP05-079-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-079.webp',
       import.meta.url,
     ).href,
-    'SP17-021': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-021.webp',
+    'SP05-080': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-080.webp',
       import.meta.url,
     ).href,
-    'SP17-022-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-022.webp',
+    'SP05-080-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-080.webp',
       import.meta.url,
     ).href,
-    'SP17-022': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-022.webp',
+    'SP05-141': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-141.webp',
       import.meta.url,
     ).href,
-    'SP17-023-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-023.webp',
+    'SP05-141-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-141.webp',
       import.meta.url,
     ).href,
-    'SP17-023': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-023.webp',
+    'SP05-145': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-145.webp',
       import.meta.url,
     ).href,
-    'SP17-024-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-024.webp',
+    'SP05-145-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-145.webp',
       import.meta.url,
     ).href,
-    'SP17-024': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-024.webp',
+    'SP05-146': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-146.webp',
       import.meta.url,
     ).href,
-    'SP17-025-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-025.webp',
+    'SP05-146-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-146.webp',
       import.meta.url,
     ).href,
-    'SP17-025': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-025.webp',
+    'SP05-147': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-147.webp',
       import.meta.url,
     ).href,
-    'SP17-026-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-026.webp',
+    'SP05-147-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-147.webp',
       import.meta.url,
     ).href,
-    'SP17-026': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-026.webp',
+    'SP05-149': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-149.webp',
       import.meta.url,
     ).href,
-    'SP17-027-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-027.webp',
+    'SP05-149-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-149.webp',
       import.meta.url,
     ).href,
-    'SP17-027': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-027.webp',
+    'SP05-150': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-150.webp',
       import.meta.url,
     ).href,
-    'SP17-028-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-028.webp',
+    'SP05-150-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-150.webp',
       import.meta.url,
     ).href,
-    'SP17-028': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-028.webp',
+    'SP05-151': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-151.webp',
       import.meta.url,
     ).href,
-    'SP17-029-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-029.webp',
+    'SP05-151-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-151.webp',
       import.meta.url,
     ).href,
-    'SP17-029': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-029.webp',
+    'SP05-152': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-152.webp',
       import.meta.url,
     ).href,
-    'SP17-030-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-030.webp',
+    'SP05-152-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-152.webp',
       import.meta.url,
     ).href,
-    'SP17-030': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-030.webp',
+    'SP05-153': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-153.webp',
       import.meta.url,
     ).href,
-    'SP17-031-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-031.webp',
+    'SP05-153-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-153.webp',
       import.meta.url,
     ).href,
-    'SP17-031': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-031.webp',
+    'SP05-154': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-154.webp',
       import.meta.url,
     ).href,
-    'SP17-032-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-032.webp',
+    'SP05-154-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-154.webp',
       import.meta.url,
     ).href,
-    'SP17-032': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-032.webp',
+    'SP05-155': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-155.webp',
       import.meta.url,
     ).href,
-    'SP17-033-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-033.webp',
+    'SP05-155-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-155.webp',
       import.meta.url,
     ).href,
-    'SP17-033': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-033.webp',
+    'SP05-156': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-156.webp',
       import.meta.url,
     ).href,
-    'SP17-034-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-034-02.webp',
+    'SP05-156-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-156.webp',
       import.meta.url,
     ).href,
-    'SP17-034-03': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-034-03.webp',
+    'SP05-157': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-157.webp',
       import.meta.url,
     ).href,
-    'SP17-034-05': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-034.webp',
+    'SP05-157-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-157.webp',
       import.meta.url,
     ).href,
-    'SP17-034-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-034.webp',
+    'SP05-158': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-158.webp',
       import.meta.url,
     ).href,
-    'SP17-034': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-034.webp',
+    'SP05-158-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-158.webp',
       import.meta.url,
     ).href,
-    'SP17-035-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-035.webp',
+    'SP05-159': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-159.webp',
       import.meta.url,
     ).href,
-    'SP17-035': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-035.webp',
+    'SP05-159-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-159.webp',
       import.meta.url,
     ).href,
-    'SP17-036-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-036.webp',
+    'SP05-160': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-160.webp',
       import.meta.url,
     ).href,
-    'SP17-036': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-036.webp',
+    'SP05-160-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-160.webp',
       import.meta.url,
     ).href,
-    'SP17-037-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-037.webp',
+    'SP05-161': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-161.webp',
       import.meta.url,
     ).href,
-    'SP17-037': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-037.webp',
+    'SP05-161-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-161.webp',
       import.meta.url,
     ).href,
-    'SP17-038-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-038.webp',
+    'SP05-163': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-163.webp',
       import.meta.url,
     ).href,
-    'SP17-038': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-038.webp',
+    'SP05-163-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-163.webp',
       import.meta.url,
     ).href,
-    'SP17-039-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-039.webp',
+    'SP05-164': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-164.webp',
       import.meta.url,
     ).href,
-    'SP17-039': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-039.webp',
+    'SP05-164-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-164.webp',
       import.meta.url,
     ).href,
-    'SP17-040-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-040.webp',
+    'SP05-165': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-165.webp',
       import.meta.url,
     ).href,
-    'SP17-040': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-040.webp',
+    'SP05-165-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-165.webp',
       import.meta.url,
     ).href,
-    'SP17-041-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-041.webp',
+    'SP05-166': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-166.webp',
       import.meta.url,
     ).href,
-    'SP17-041': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-041.webp',
+    'SP05-166-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-166.webp',
       import.meta.url,
     ).href,
-    'SP17-042-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-042.webp',
+    'SP05-167': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-167.webp',
       import.meta.url,
     ).href,
-    'SP17-042': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-042.webp',
+    'SP05-167-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-167.webp',
       import.meta.url,
     ).href,
-    'SP17-043-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-043.webp',
+    'SP05-169': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-169.webp',
       import.meta.url,
     ).href,
-    'SP17-043': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-043.webp',
+    'SP05-169-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-169.webp',
       import.meta.url,
     ).href,
-    'SP17-044-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-044.webp',
+    'SP05-170': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-170.webp',
       import.meta.url,
     ).href,
-    'SP17-044': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-044.webp',
+    'SP05-170-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-170.webp',
       import.meta.url,
     ).href,
-    'SP17-045-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-045.webp',
+    'SP05-173': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-173.webp',
       import.meta.url,
     ).href,
-    'SP17-045': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-045.webp',
+    'SP05-173-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-173.webp',
       import.meta.url,
     ).href,
-    'SP17-046-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-046.webp',
+    'SP05-174': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-174.webp',
       import.meta.url,
     ).href,
-    'SP17-046': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-046.webp',
+    'SP05-174-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-174.webp',
       import.meta.url,
     ).href,
-    'SP17-047-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-047.webp',
+    'SP05-175': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-175.webp',
       import.meta.url,
     ).href,
-    'SP17-047': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-047.webp',
+    'SP05-175-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-175.webp',
       import.meta.url,
     ).href,
-    'SP17-048-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-048.webp',
+    'SP05-179': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-179.webp',
       import.meta.url,
     ).href,
-    'SP17-048': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-048.webp',
+    'SP05-179-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-179.webp',
       import.meta.url,
     ).href,
-    'SP17-049-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-049.webp',
+    'SP05-180': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-180.webp',
       import.meta.url,
     ).href,
-    'SP17-049': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-049.webp',
+    'SP05-180-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-180.webp',
       import.meta.url,
     ).href,
-    'SP17-050-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-050.webp',
+    'SP05-281': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-281.webp',
       import.meta.url,
     ).href,
-    'SP17-050': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-050.webp',
+    'SP05-281-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-281.webp',
       import.meta.url,
     ).href,
-    'SP17-051-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-051.webp',
+    'SP05-282': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-282.webp',
       import.meta.url,
     ).href,
-    'SP17-051': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-051.webp',
+    'SP05-282-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-282.webp',
       import.meta.url,
     ).href,
-    'SP17-052-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-052.webp',
+    'SP05-283': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-283.webp',
       import.meta.url,
     ).href,
-    'SP17-052': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-052.webp',
+    'SP05-283-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-283.webp',
       import.meta.url,
     ).href,
-    'SP17-053-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-053-01.webp',
+    'SP05-284': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-284.webp',
       import.meta.url,
     ).href,
-    'SP17-053-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-053-02.webp',
+    'SP05-284-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-284.webp',
       import.meta.url,
     ).href,
-    'SP17-053-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-053.webp',
+    'SP05-285': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-285.webp',
       import.meta.url,
     ).href,
-    'SP17-053': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-053.webp',
+    'SP05-285-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-285.webp',
       import.meta.url,
     ).href,
-    'SP17-054-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-054-01.webp',
+    'SP05-286': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-286.webp',
       import.meta.url,
     ).href,
-    'SP17-054-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-054-02.webp',
+    'SP05-286-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-286.webp',
       import.meta.url,
     ).href,
-    'SP17-054-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-054.webp',
+    'SP05-287': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-287.webp',
       import.meta.url,
     ).href,
-    'SP17-054': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-054.webp',
+    'SP05-287-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-287.webp',
       import.meta.url,
     ).href,
-    'SP17-055-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-055-01.webp',
+    'SP05-288': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-288.webp',
       import.meta.url,
     ).href,
-    'SP17-055-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-055-02.webp',
+    'SP05-288-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-288.webp',
       import.meta.url,
     ).href,
-    'SP17-055-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-055.webp',
+    'SP05-289': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-289.webp',
       import.meta.url,
     ).href,
-    'SP17-055': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-055.webp',
+    'SP05-289-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-289.webp',
       import.meta.url,
     ).href,
-    'SP17-056-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-056-01.webp',
+    'SP05-290': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-290.webp',
       import.meta.url,
     ).href,
-    'SP17-056-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-056-02.webp',
+    'SP05-290-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-290.webp',
       import.meta.url,
     ).href,
-    'SP17-056-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-056.webp',
+    'SP05-291': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-291.webp',
       import.meta.url,
     ).href,
-    'SP17-056': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-056.webp',
+    'SP05-291-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-291.webp',
       import.meta.url,
     ).href,
-    'SP17-057-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-057-01.webp',
+    'SP05-292': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-292.webp',
       import.meta.url,
     ).href,
-    'SP17-057-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-057-02.webp',
+    'SP05-292-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-292.webp',
       import.meta.url,
     ).href,
-    'SP17-057-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-057.webp',
+    'SP05-293': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-293.webp',
       import.meta.url,
     ).href,
-    'SP17-057': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-057.webp',
+    'SP05-293-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-293.webp',
       import.meta.url,
     ).href,
-    'SP17-058-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-058-01.webp',
+    'SP05-294': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-294.webp',
       import.meta.url,
     ).href,
-    'SP17-058-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-058-02.webp',
+    'SP05-294-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-294.webp',
       import.meta.url,
     ).href,
-    'SP17-058-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-058.webp',
+    'SP05-295': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-295.webp',
       import.meta.url,
     ).href,
-    'SP17-058': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-058.webp',
+    'SP05-295-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-295.webp',
       import.meta.url,
     ).href,
-    'SP17-059-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-059-01.webp',
+    'SP05-296': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-296.webp',
       import.meta.url,
     ).href,
-    'SP17-059-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-059-02.webp',
+    'SP05-296-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-296.webp',
       import.meta.url,
     ).href,
-    'SP17-059-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-059.webp',
+    'SP05-297': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-297.webp',
       import.meta.url,
     ).href,
-    'SP17-059': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-059.webp',
+    'SP05-297-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-297.webp',
       import.meta.url,
     ).href,
-    'SP17-060-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-060-01.webp',
+    'SP05-298': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-298.webp',
       import.meta.url,
     ).href,
-    'SP17-060-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-060-02.webp',
+    'SP05-298-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-298.webp',
       import.meta.url,
     ).href,
-    'SP17-060-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-060.webp',
+    'SP05-299': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-299.webp',
       import.meta.url,
     ).href,
-    'SP17-060': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-060.webp',
+    'SP05-299-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-299.webp',
       import.meta.url,
     ).href,
-    'SP17-061-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-061-01.webp',
+    'SP05-300': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-300.webp',
       import.meta.url,
     ).href,
-    'SP17-061-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-061-02.webp',
+    'SP05-300-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-300.webp',
       import.meta.url,
     ).href,
-    'SP17-061-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-061.webp',
+    'SP05-301': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-301.webp',
       import.meta.url,
     ).href,
-    'SP17-061': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-061.webp',
+    'SP05-301-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-301.webp',
       import.meta.url,
     ).href,
-    'SP17-062-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-062-01.webp',
+    'SP05-302': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-302.webp',
       import.meta.url,
     ).href,
-    'SP17-062-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-062-02.webp',
+    'SP05-302-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-302.webp',
       import.meta.url,
     ).href,
-    'SP17-062-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-062.webp',
+    'SP05-303': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-303.webp',
       import.meta.url,
     ).href,
-    'SP17-062': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-062.webp',
+    'SP05-303-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-303.webp',
       import.meta.url,
     ).href,
-    'SP17-063-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-063-01.webp',
+    'SP05-304': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-304.webp',
       import.meta.url,
     ).href,
-    'SP17-063-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-063-02.webp',
+    'SP05-304-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-304.webp',
       import.meta.url,
     ).href,
-    'SP17-063-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-063.webp',
+    'SP05-305': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-305.webp',
       import.meta.url,
     ).href,
-    'SP17-063': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-063.webp',
+    'SP05-305-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-305.webp',
       import.meta.url,
     ).href,
-    'SP17-064-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-064.webp',
+    'SP05-306': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-306.webp',
       import.meta.url,
     ).href,
-    'SP17-064': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-064.webp',
+    'SP05-306-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-306.webp',
       import.meta.url,
     ).href,
-    'SP17-065-01': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-065-01.webp',
+    'SP05-307': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-307.webp',
       import.meta.url,
     ).href,
-    'SP17-065-02': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-065-02.webp',
+    'SP05-307-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-307.webp',
       import.meta.url,
     ).href,
-    'SP17-065-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-065.webp',
+    'SP05-308': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-308.webp',
       import.meta.url,
     ).href,
-    'SP17-065': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-065.webp',
+    'SP05-308-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-308.webp',
       import.meta.url,
     ).href,
-    'SP17-066-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-066.webp',
+    'SP05-309': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-309.webp',
       import.meta.url,
     ).href,
-    'SP17-066': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-066.webp',
+    'SP05-309-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-309.webp',
       import.meta.url,
     ).href,
-    'SP17-067-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-067.webp',
+    'SP05-310': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-310.webp',
       import.meta.url,
     ).href,
-    'SP17-067': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-067.webp',
+    'SP05-310-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-310.webp',
       import.meta.url,
     ).href,
-    'SP17-068-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-068.webp',
+    'SP05-311': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-311.webp',
       import.meta.url,
     ).href,
-    'SP17-068': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-068.webp',
+    'SP05-311-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-311.webp',
       import.meta.url,
     ).href,
-    'SP17-069-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-069.webp',
+    'SP05-312': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-312.webp',
       import.meta.url,
     ).href,
-    'SP17-069': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-069.webp',
+    'SP05-312-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-312.webp',
       import.meta.url,
     ).href,
-    'SP17-070-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-070.webp',
+    'SP05-313': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-313.webp',
       import.meta.url,
     ).href,
-    'SP17-070': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-070.webp',
+    'SP05-313-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-313.webp',
       import.meta.url,
     ).href,
-    'SP17-071-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-071.webp',
+    'SP05-314': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-314.webp',
       import.meta.url,
     ).href,
-    'SP17-071': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-071.webp',
+    'SP05-314-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-314.webp',
       import.meta.url,
     ).href,
-    'SP17-072-grok': new URL(
-      '../../assets/recipes/styles/defaults/providers/grok/SP17-072.webp',
+    'SP05-315': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-315.webp',
       import.meta.url,
     ).href,
-    'SP17-072': new URL(
-      '../../assets/recipes/styles/style-card-thumbnails/SP17-072.webp',
+    'SP05-315-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-315.webp',
+      import.meta.url,
+    ).href,
+    'SP05-316': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-316.webp',
+      import.meta.url,
+    ).href,
+    'SP05-316-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-316.webp',
+      import.meta.url,
+    ).href,
+    'SP05-317': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-317.webp',
+      import.meta.url,
+    ).href,
+    'SP05-317-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-317.webp',
+      import.meta.url,
+    ).href,
+    'SP05-318': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-318.webp',
+      import.meta.url,
+    ).href,
+    'SP05-318-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-318.webp',
+      import.meta.url,
+    ).href,
+    'SP05-319': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-319.webp',
+      import.meta.url,
+    ).href,
+    'SP05-319-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-319.webp',
+      import.meta.url,
+    ).href,
+    'SP05-320': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-320.webp',
+      import.meta.url,
+    ).href,
+    'SP05-320-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-320.webp',
+      import.meta.url,
+    ).href,
+    'SP05-343': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-343.webp',
+      import.meta.url,
+    ).href,
+    'SP05-343-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-343.webp',
+      import.meta.url,
+    ).href,
+    'SP05-344': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-344.webp',
+      import.meta.url,
+    ).href,
+    'SP05-344-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-344.webp',
+      import.meta.url,
+    ).href,
+    'SP05-345': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-345.webp',
+      import.meta.url,
+    ).href,
+    'SP05-345-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-345.webp',
+      import.meta.url,
+    ).href,
+    'SP05-346': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-346.webp',
+      import.meta.url,
+    ).href,
+    'SP05-346-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-346.webp',
+      import.meta.url,
+    ).href,
+    'SP05-347': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-347.webp',
+      import.meta.url,
+    ).href,
+    'SP05-347-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-347.webp',
+      import.meta.url,
+    ).href,
+    'SP05-348': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-348.webp',
+      import.meta.url,
+    ).href,
+    'SP05-348-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-348.webp',
+      import.meta.url,
+    ).href,
+    'SP05-349': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-349.webp',
+      import.meta.url,
+    ).href,
+    'SP05-349-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-349.webp',
+      import.meta.url,
+    ).href,
+    'SP05-350': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-350.webp',
+      import.meta.url,
+    ).href,
+    'SP05-350-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-350.webp',
+      import.meta.url,
+    ).href,
+    'SP05-351': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-351.webp',
+      import.meta.url,
+    ).href,
+    'SP05-351-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-351.webp',
+      import.meta.url,
+    ).href,
+    'SP05-352': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-352.webp',
+      import.meta.url,
+    ).href,
+    'SP05-352-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-352.webp',
+      import.meta.url,
+    ).href,
+    'SP05-353': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-353.webp',
+      import.meta.url,
+    ).href,
+    'SP05-353-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-353.webp',
+      import.meta.url,
+    ).href,
+    'SP05-354': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-354.webp',
+      import.meta.url,
+    ).href,
+    'SP05-354-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-354.webp',
+      import.meta.url,
+    ).href,
+    'SP05-355': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-355.webp',
+      import.meta.url,
+    ).href,
+    'SP05-355-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-355.webp',
+      import.meta.url,
+    ).href,
+    'SP05-356': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-356.webp',
+      import.meta.url,
+    ).href,
+    'SP05-356-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-356.webp',
+      import.meta.url,
+    ).href,
+    'SP05-357': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-357.webp',
+      import.meta.url,
+    ).href,
+    'SP05-357-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-357.webp',
+      import.meta.url,
+    ).href,
+    'SP05-358': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-358.webp',
+      import.meta.url,
+    ).href,
+    'SP05-358-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-358.webp',
+      import.meta.url,
+    ).href,
+    'SP05-359': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-359.webp',
+      import.meta.url,
+    ).href,
+    'SP05-359-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-359.webp',
+      import.meta.url,
+    ).href,
+    'SP05-360': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-360.webp',
+      import.meta.url,
+    ).href,
+    'SP05-360-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-360.webp',
+      import.meta.url,
+    ).href,
+    'SP05-361': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-361.webp',
+      import.meta.url,
+    ).href,
+    'SP05-361-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-361.webp',
+      import.meta.url,
+    ).href,
+    'SP05-362': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-362.webp',
+      import.meta.url,
+    ).href,
+    'SP05-362-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-362.webp',
+      import.meta.url,
+    ).href,
+    'SP05-363': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-363.webp',
+      import.meta.url,
+    ).href,
+    'SP05-363-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-363.webp',
+      import.meta.url,
+    ).href,
+    'SP05-364': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-364.webp',
+      import.meta.url,
+    ).href,
+    'SP05-364-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-364.webp',
+      import.meta.url,
+    ).href,
+    'SP05-365': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-365.webp',
+      import.meta.url,
+    ).href,
+    'SP05-365-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-365.webp',
+      import.meta.url,
+    ).href,
+    'SP05-366': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-366.webp',
+      import.meta.url,
+    ).href,
+    'SP05-366-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-366.webp',
+      import.meta.url,
+    ).href,
+    'SP05-367': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-367.webp',
+      import.meta.url,
+    ).href,
+    'SP05-367-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-367.webp',
+      import.meta.url,
+    ).href,
+    'SP05-368': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-368.webp',
+      import.meta.url,
+    ).href,
+    'SP05-368-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-368.webp',
+      import.meta.url,
+    ).href,
+    'SP05-369': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-369.webp',
+      import.meta.url,
+    ).href,
+    'SP05-369-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-369.webp',
+      import.meta.url,
+    ).href,
+    'SP05-370': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-370.webp',
+      import.meta.url,
+    ).href,
+    'SP05-370-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-370.webp',
+      import.meta.url,
+    ).href,
+    'SP05-371': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-371.webp',
+      import.meta.url,
+    ).href,
+    'SP05-371-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-371.webp',
+      import.meta.url,
+    ).href,
+    'SP05-372': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP05-372.webp',
+      import.meta.url,
+    ).href,
+    'SP05-372-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP05-372.webp',
+      import.meta.url,
+    ).href,
+    'SP13-026': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-026.webp',
+      import.meta.url,
+    ).href,
+    'SP13-026-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-026.webp',
+      import.meta.url,
+    ).href,
+    'SP13-027': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-027.webp',
+      import.meta.url,
+    ).href,
+    'SP13-027-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-027.webp',
+      import.meta.url,
+    ).href,
+    'SP13-028': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-028.webp',
+      import.meta.url,
+    ).href,
+    'SP13-028-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-028.webp',
+      import.meta.url,
+    ).href,
+    'SP13-029': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-029.webp',
+      import.meta.url,
+    ).href,
+    'SP13-029-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-029.webp',
+      import.meta.url,
+    ).href,
+    'SP13-030': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-030.webp',
+      import.meta.url,
+    ).href,
+    'SP13-030-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-030.webp',
+      import.meta.url,
+    ).href,
+    'SP13-031': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-031.webp',
+      import.meta.url,
+    ).href,
+    'SP13-031-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-031.webp',
+      import.meta.url,
+    ).href,
+    'SP13-032': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-032.webp',
+      import.meta.url,
+    ).href,
+    'SP13-032-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-032.webp',
+      import.meta.url,
+    ).href,
+    'SP13-033': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-033.webp',
+      import.meta.url,
+    ).href,
+    'SP13-033-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-033.webp',
+      import.meta.url,
+    ).href,
+    'SP13-034': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-034.webp',
+      import.meta.url,
+    ).href,
+    'SP13-034-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-034.webp',
+      import.meta.url,
+    ).href,
+    'SP13-035': new URL(
+      '../../assets/recipes/styles/style-card-thumbnails/SP13-035.webp',
+      import.meta.url,
+    ).href,
+    'SP13-035-grok': new URL(
+      '../../assets/recipes/styles/defaults/providers/grok/SP13-035.webp',
       import.meta.url,
     ).href,
   },

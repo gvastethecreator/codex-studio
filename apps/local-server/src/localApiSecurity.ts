@@ -51,14 +51,36 @@ function applyCorsHeaders(headers: Headers, origin: string) {
   headers.set('Vary', 'Origin');
 }
 
-function isAllowedLocalApiOrigin(
+function isLoopbackHostname(hostname: string) {
+  return (
+    hostname === 'localhost' ||
+    hostname === '127.0.0.1' ||
+    hostname === '[::1]' ||
+    hostname === '::1'
+  );
+}
+
+export function isAllowedLocalApiOrigin(
   origin: string | undefined,
   allowedOrigins: Iterable<string> = DEFAULT_ALLOWED_ORIGINS,
 ) {
   if (!origin) return true;
   const normalized = normalizeOrigin(origin);
   if (!normalized) return false;
-  return createAllowedOriginSet(allowedOrigins).has(normalized);
+  const originSet = createAllowedOriginSet(allowedOrigins);
+  if (originSet.has(normalized)) return true;
+  try {
+    const url = new URL(normalized);
+    if (
+      (url.protocol === 'http:' || url.protocol === 'https:') &&
+      isLoopbackHostname(url.hostname)
+    ) {
+      return true;
+    }
+  } catch {
+    return false;
+  }
+  return false;
 }
 
 export function createLocalApiSecurityMiddleware(
@@ -70,7 +92,10 @@ export function createLocalApiSecurityMiddleware(
     const origin = c.req.header('Origin');
     const normalizedOrigin = origin ? normalizeOrigin(origin) : null;
 
-    if (origin && (!normalizedOrigin || !allowedOrigins.has(normalizedOrigin))) {
+    if (
+      origin &&
+      (!normalizedOrigin || !isAllowedLocalApiOrigin(normalizedOrigin, allowedOrigins))
+    ) {
       return c.json(
         {
           error: 'Forbidden origin',

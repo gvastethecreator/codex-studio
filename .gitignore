@@ -46,6 +46,7 @@ coverage
 playwright-report/
 test-results/
 blob-report/
+.playwright-mcp/
 output/
 outputs/
 generated/
@@ -81,6 +82,10 @@ assets/recipes/styles/defaults/providers/*/failures-pack_*.json
 # Tool reports (allow the canonical config only)
 react-doctor-*.json
 !react-doctor.config.json
+
+# Local scratch images and agent session dumps
+test-files/
+.grok/
 
 # Third-party agent / IDE workspace dirs (local-only)
 .agents/

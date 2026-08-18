@@ -19,6 +19,7 @@ bun run dev
 The repository also tracks common VS Code tasks under `.vscode/tasks.json`.
 Use `🧱 init` once for setup, `🚀 dev` for the complete local stack, and the
 focused `🖥 ui` or `⚙ api` tasks only when you intentionally run one side.
+`🧬 typecheck`, `🧾 docs`, and `🧼 hygiene` cover the extra contributor gates.
 
 ## Quality gates
 

@@ -47,7 +47,7 @@ import {
   resolveStyleDefaultImageVariantThumbnails,
 } from '../../lib/styleThumbnailCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
-import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
+import { hasStylePresetIdentity, resolveRecipeIdentity } from '../../lib/recipeIdentity';
 import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
 import { resolveStylePresetCardImages } from '../../lib/stylePresetVisuals';
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
@@ -611,26 +611,6 @@ type StyleFadeImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   fadeScale?: number;
 };
 
-type StyleImageGsap = typeof import('../../lib/motionRuntime').default;
-
-const STYLE_IMAGE_FADE_DURATION_SECONDS = 0.26;
-const STYLE_IMAGE_FADE_SCALE = 1.01;
-const STYLE_IMAGE_FADE_CLEAR_PROPS = 'opacity,visibility,transform';
-const STYLE_IMAGE_FADE_GSAP_FALLBACK_MS = 700;
-
-let styleImageGsapPromise: Promise<StyleImageGsap> | null = null;
-
-function loadStyleImageGsap() {
-  styleImageGsapPromise ??= import('../../lib/motionRuntime').then((module) => module.default);
-  return styleImageGsapPromise;
-}
-
-function readStyleImageOpacity(node: HTMLImageElement) {
-  if (typeof window === 'undefined') return 1;
-  const opacity = Number.parseFloat(window.getComputedStyle(node).opacity);
-  return Number.isFinite(opacity) ? opacity : 1;
-}
-
 function shouldReduceStyleImageMotion() {
   return (
     typeof window !== 'undefined' &&
@@ -639,143 +619,40 @@ function shouldReduceStyleImageMotion() {
   );
 }
 
-function primeStyleImageFade(node: HTMLImageElement, fadeScale: number) {
-  node.style.opacity = '0';
-  node.style.visibility = 'hidden';
-  node.style.transform = `scale(${fadeScale})`;
-  node.style.transformOrigin = '50% 50%';
-  node.style.willChange = 'transform, opacity';
-}
-
-function clearStyleImageFadeState(node: HTMLImageElement, runtime?: StyleImageGsap | null) {
-  if (runtime) {
-    runtime.set(node, {
-      clearProps: STYLE_IMAGE_FADE_CLEAR_PROPS,
-      willChange: 'auto',
-    });
-    return;
-  }
-
-  node.style.removeProperty('opacity');
-  node.style.removeProperty('visibility');
-  node.style.removeProperty('transform');
-  node.style.willChange = 'auto';
-}
-
 const StyleFadeImage = React.memo(function StyleFadeImage({
-  fadeDuration = STYLE_IMAGE_FADE_DURATION_SECONDS,
-  fadeScale = STYLE_IMAGE_FADE_SCALE,
   src,
+  style,
   ...imageProps
 }: StyleFadeImageProps) {
   const imageRef = useRef<HTMLImageElement | null>(null);
+  const [isVisible, setIsVisible] = useState(() => shouldReduceStyleImageMotion());
 
   useLayoutEffect(() => {
     const node = imageRef.current;
-    if (!node) return undefined;
-
-    if (shouldReduceStyleImageMotion()) {
-      clearStyleImageFadeState(node);
-      return undefined;
+    if (!node) return;
+    if (shouldReduceStyleImageMotion() || node.complete) {
+      setIsVisible(true);
+      return;
     }
+    setIsVisible(false);
+  }, [src]);
 
-    let disposed = false;
-    let fallbackVisible = false;
-    let runtime: StyleImageGsap | null = null;
-    let context: { revert: () => void } | null = null;
-    const targetOpacity = readStyleImageOpacity(node);
-
-    const showWithoutMotion = () => {
-      if (disposed || fallbackVisible || runtime) return;
-      fallbackVisible = true;
-      clearStyleImageFadeState(node);
-    };
-    let fallbackTimer = window.setTimeout(() => {
-      if (node.complete) showWithoutMotion();
-    }, STYLE_IMAGE_FADE_GSAP_FALLBACK_MS);
-    const scheduleFallback = () => {
-      window.clearTimeout(fallbackTimer);
-      fallbackTimer = window.setTimeout(() => {
-        if (node.complete) showWithoutMotion();
-      }, STYLE_IMAGE_FADE_GSAP_FALLBACK_MS);
-    };
-
-    const revealImage = () => {
-      if (disposed || fallbackVisible) return;
-      if (!runtime) return;
-      if (node.naturalWidth <= 0) {
-        clearStyleImageFadeState(node, runtime);
-        return;
-      }
-
-      runtime.killTweensOf(node);
-      runtime.fromTo(
-        node,
-        {
-          autoAlpha: 0,
-          scale: fadeScale,
-        },
-        {
-          autoAlpha: targetOpacity,
-          scale: 1,
-          duration: fadeDuration,
-          ease: 'power2.out',
-          overwrite: 'auto',
-          onStart: () => {
-            runtime?.set(node, { willChange: 'transform, opacity' });
-          },
-          onComplete: () => clearStyleImageFadeState(node, runtime),
-        },
-      );
-    };
-
-    const handleLoad = () => {
-      if (runtime) {
-        revealImage();
-        return;
-      }
-      scheduleFallback();
-    };
-    const handleError = () => {
-      fallbackVisible = true;
-      clearStyleImageFadeState(node, runtime);
-    };
-
-    primeStyleImageFade(node, fadeScale);
-
-    if (!node.complete) {
-      node.addEventListener('load', handleLoad, { once: true });
-      node.addEventListener('error', handleError, { once: true });
-    }
-
-    void loadStyleImageGsap().then((loadedRuntime) => {
-      if (disposed || fallbackVisible) return;
-      runtime = loadedRuntime;
-      context = loadedRuntime.context(() => {
-        loadedRuntime.killTweensOf(node);
-        loadedRuntime.set(node, {
-          autoAlpha: 0,
-          scale: fadeScale,
-          transformOrigin: '50% 50%',
-          willChange: 'transform, opacity',
-        });
-      }, node);
-
-      if (node.complete) revealImage();
-    });
-
-    return () => {
-      disposed = true;
-      window.clearTimeout(fallbackTimer);
-      node.removeEventListener('load', handleLoad);
-      node.removeEventListener('error', handleError);
-      runtime?.killTweensOf(node);
-      context?.revert();
-      clearStyleImageFadeState(node, runtime);
-    };
-  }, [fadeDuration, fadeScale, src]);
-
-  return <img ref={imageRef} src={src} alt="" data-style-fade-image {...imageProps} />;
+  return (
+    <img
+      ref={imageRef}
+      src={src}
+      alt=""
+      data-style-fade-image
+      {...imageProps}
+      style={{
+        ...style,
+        opacity: isVisible ? (style?.opacity ?? 1) : 0,
+        transition: shouldReduceStyleImageMotion() ? undefined : 'opacity 180ms ease',
+      }}
+      onLoad={() => setIsVisible(true)}
+      onError={() => setIsVisible(true)}
+    />
+  );
 });
 
 const StylePresetGroupSection = React.memo(
@@ -819,6 +696,21 @@ const StylePresetGroupSection = React.memo(
       () => presets.slice(gridWindow.startIndex, gridWindow.endIndex),
       [gridWindow.endIndex, gridWindow.startIndex, presets],
     );
+
+    useLayoutEffect(() => {
+      if (initiallyVisible || isNearViewport) return;
+      const node = sectionRef.current;
+      const root = scrollRootRef.current;
+      if (!node) return;
+      const rootRect = root?.getBoundingClientRect() ?? {
+        top: 0,
+        bottom: typeof window === 'undefined' ? 0 : window.innerHeight,
+      };
+      const rect = node.getBoundingClientRect();
+      if (rect.bottom >= rootRect.top - 220 && rect.top <= rootRect.bottom + 220) {
+        setIsNearViewport(true);
+      }
+    }, [initiallyVisible, isNearViewport]);
 
     useEffect(() => {
       if (initiallyVisible) {
@@ -1231,30 +1123,27 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             : {};
       currentStyleTabRef.current = normalizedTabId;
 
-      startViewTransition(
-        () => {
-          if (normalizedTabId === STYLE_PACKS_TAB_ID) {
-            setIsPackLandingOpen(true);
-          } else {
-            setIsPackLandingOpen(false);
-            setCurrentPackId(normalizedTabId);
-          }
+      startViewTransition(() => {
+        if (normalizedTabId === STYLE_PACKS_TAB_ID) {
+          setIsPackLandingOpen(true);
+        } else {
+          setIsPackLandingOpen(false);
+          setCurrentPackId(normalizedTabId);
+        }
 
-          if (
-            options.resetSearch ||
-            options.browserStatePatch ||
-            Object.keys(tabBrowserStatePatch).length > 0
-          ) {
-            setBrowserState((prev) => ({
-              ...prev,
-              ...(options.resetSearch ? { searchQuery: '' } : {}),
-              ...tabBrowserStatePatch,
-              ...options.browserStatePatch,
-            }));
-          }
-        },
-        { useNative: true },
-      );
+        if (
+          options.resetSearch ||
+          options.browserStatePatch ||
+          Object.keys(tabBrowserStatePatch).length > 0
+        ) {
+          setBrowserState((prev) => ({
+            ...prev,
+            ...(options.resetSearch ? { searchQuery: '' } : {}),
+            ...tabBrowserStatePatch,
+            ...options.browserStatePatch,
+          }));
+        }
+      });
     },
     [],
   );
@@ -1363,6 +1252,35 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     requiredPackIds: styleRuntimePackLoadRequest.requiredPackIds,
     loadAll: styleRuntimePackLoadRequest.loadAll,
   });
+
+  const prefetchStyleTab = useCallback(
+    (tabId: StyleTabId) => {
+      const normalizedTabId = normalizeStyleTabRouteId(tabId, STYLE_TAB_ROUTE_OPTIONS);
+      if (normalizedTabId === STYLE_PACKS_TAB_ID) return;
+      if (
+        normalizedTabId === ALL_STYLE_CATEGORIES_TAB_ID ||
+        normalizedTabId === ALL_STYLE_CARDS_TAB_ID
+      ) {
+        void loadStyleRuntimePacks(STYLE_RUNTIME_PACK_IDS.slice(0, 3));
+        return;
+      }
+      const collectionId = getStyleCollectionIdFromTabId(normalizedTabId);
+      if (collectionId) {
+        const collection = styleCollectionsModule?.STYLE_COLLECTIONS.find(
+          (item) => item.id === collectionId,
+        );
+        const packIds = (collection?.sourcePackIds ?? []).filter((packId) =>
+          STYLE_RUNTIME_PACK_IDS.includes(packId),
+        );
+        if (packIds.length > 0) void loadStyleRuntimePacks(packIds);
+        return;
+      }
+      if (STYLE_RUNTIME_PACK_IDS.includes(normalizedTabId)) {
+        void loadStyleRuntimePacks([normalizedTabId]);
+      }
+    },
+    [loadStyleRuntimePacks, styleCollectionsModule],
+  );
 
   const toggleFavorite = React.useCallback(
     (presetId: string) => {
@@ -1751,34 +1669,77 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     return [...presetById.values()];
   }, [processedData]);
 
-  const presetVisualStateById = useMemo(() => {
-    const stateMap = new Map<string, StylePresetVisualState>();
+  const resultImagesByPresetId = useMemo(() => {
+    const imagesByPresetId = new Map<string, GeneratedImageWithConfig[]>();
+    for (const image of images) {
+      const identity = resolveRecipeIdentity(image.config);
+      if (identity?.recipeId !== 'styles') continue;
+      const presetIds = new Set<string>();
+      if (typeof identity.recipeParams.presetId === 'string') {
+        presetIds.add(identity.recipeParams.presetId);
+      }
+      const selectedStylesParam = identity.recipeParams.selectedStyles;
+      if (Array.isArray(selectedStylesParam)) {
+        for (const entry of selectedStylesParam) {
+          if (
+            entry &&
+            typeof entry === 'object' &&
+            !Array.isArray(entry) &&
+            typeof (entry as { presetId?: unknown }).presetId === 'string'
+          ) {
+            presetIds.add((entry as { presetId: string }).presetId);
+          }
+        }
+      }
+      for (const presetId of presetIds) {
+        const current = imagesByPresetId.get(presetId);
+        if (current) current.push(image);
+        else imagesByPresetId.set(presetId, [image]);
+      }
+    }
+    for (const presetImages of imagesByPresetId.values()) {
+      presetImages.sort((first, second) => second.createdAt - first.createdAt);
+    }
+    return imagesByPresetId;
+  }, [images]);
 
-    filteredStylePresets.forEach((preset) => {
+  const getPresetVisualState = useCallback(
+    (preset: StyleRuntimePreset) => {
       const presetPackId = getPackIdForPreset(preset);
       const presetPack =
         presetPackId === USER_STYLE_PACK_ID
           ? userStylePack
           : (loadedStylePacksById[presetPackId] ?? activePack);
-      stateMap.set(
-        preset.id,
-        createStylePresetVisualState({
-          preset,
-          presetPackId,
-          presetPackName: presetPack.name,
-          images,
-        }),
-      );
-    });
+      return createStylePresetVisualState({
+        preset,
+        presetPackId,
+        presetPackName: presetPack.name,
+        images: resultImagesByPresetId.get(preset.id) ?? EMPTY_IMAGES,
+      });
+    },
+    [activePack, getPackIdForPreset, loadedStylePacksById, resultImagesByPresetId, userStylePack],
+  );
 
+  const eagerPresetVisualStateById = useMemo(() => {
+    const stateMap = new Map<string, StylePresetVisualState>();
+    const addPresets = (presets: StyleRuntimePreset[]) => {
+      for (const preset of presets) {
+        if (!stateMap.has(preset.id)) stateMap.set(preset.id, getPresetVisualState(preset));
+      }
+    };
+    if (processedData.favorites.length > 0) addPresets(processedData.favorites);
+    for (const [, presets] of styleRenderPlan.visibleStyleGroupEntries.slice(
+      0,
+      styleCategoryEagerBudget,
+    )) {
+      addPresets(presets);
+    }
     return stateMap;
   }, [
-    activePack,
-    filteredStylePresets,
-    getPackIdForPreset,
-    images,
-    loadedStylePacksById,
-    userStylePack,
+    getPresetVisualState,
+    processedData.favorites,
+    styleCategoryEagerBudget,
+    styleRenderPlan.visibleStyleGroupEntries,
   ]);
 
   const stylePreviewPreloadSources = useMemo(
@@ -1786,11 +1747,11 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       collectStylePresetPreviewSources({
         processedData,
         renderPlan: styleRenderPlan,
-        visualStateByPresetId: presetVisualStateById,
+        visualStateByPresetId: eagerPresetVisualStateById,
         gridColumns,
         containerWidth: styleScrollWidth,
       }),
-    [gridColumns, processedData, presetVisualStateById, styleRenderPlan, styleScrollWidth],
+    [eagerPresetVisualStateById, gridColumns, processedData, styleRenderPlan, styleScrollWidth],
   );
 
   useEffect(() => {
@@ -2219,36 +2180,25 @@ ${styleAnchorLine}
       const presetPackId = getPackIdForPreset(preset);
       const presetTheme = PACK_THEMES[presetPackId] || activeTheme;
       return (
-        <React.Suspense
+        <StylePresetCard
           key={preset.id}
-          fallback={
-            <div
-              data-style-preset-card-loading={preset.id}
-              className="aspect-[3/4] overflow-hidden rounded-[6px] border border-white/[0.055] bg-zinc-950"
-            >
-              <div className="size-full bg-linear-to-b from-white/[0.04] via-zinc-900/30 to-black/35" />
-            </div>
+          preset={preset}
+          packId={presetPackId}
+          sourceProvenance={styleSourceByPresetId.get(preset.id)}
+          visualState={eagerPresetVisualStateById.get(preset.id) ?? getPresetVisualState(preset)}
+          active={selectedStyleIds.has(preset.id)}
+          selectionDisabled={
+            selectedStyles.length >= MAX_SELECTED_STYLE_SLOTS && !selectedStyleIds.has(preset.id)
           }
-        >
-          <StylePresetCard
-            preset={preset}
-            packId={presetPackId}
-            sourceProvenance={styleSourceByPresetId.get(preset.id)}
-            visualState={presetVisualStateById.get(preset.id)}
-            active={selectedStyleIds.has(preset.id)}
-            selectionDisabled={
-              selectedStyles.length >= MAX_SELECTED_STYLE_SLOTS && !selectedStyleIds.has(preset.id)
-            }
-            copied={copiedStyleId === preset.id}
-            favorite={favorites.includes(preset.id)}
-            theme={presetTheme}
-            FadeImageComponent={StyleFadeImage}
-            onApply={(selectedPreset) => handleApplyStyleRef.current(selectedPreset, presetPackId)}
-            onCopy={handleCopyStylePrompt}
-            onToggleFavorite={toggleFavorite}
-            onHoverPreviewChange={handleHoverPreviewChange}
-          />
-        </React.Suspense>
+          copied={copiedStyleId === preset.id}
+          favorite={favorites.includes(preset.id)}
+          theme={presetTheme}
+          FadeImageComponent={StyleFadeImage}
+          onApply={(selectedPreset) => handleApplyStyleRef.current(selectedPreset, presetPackId)}
+          onCopy={handleCopyStylePrompt}
+          onToggleFavorite={toggleFavorite}
+          onHoverPreviewChange={handleHoverPreviewChange}
+        />
       );
     },
     [
@@ -2260,7 +2210,8 @@ ${styleAnchorLine}
       styleSourceByPresetId,
       getPackIdForPreset,
       toggleFavorite,
-      presetVisualStateById,
+      eagerPresetVisualStateById,
+      getPresetVisualState,
       handleHoverPreviewChange,
       handleCopyStylePrompt,
       handleApplyStyleRef,
@@ -3005,6 +2956,7 @@ ${styleAnchorLine}
               getCollectionTabId={getStyleCollectionTabId}
               getStyleTabHash={getStyleTabHash}
               onNavigateToStyleTab={navigateToStyleTab}
+              onPrefetchStyleTab={prefetchStyleTab}
               onToggleNavigationPanel={() => toggleStylePanel('navigation')}
             />
           </React.Suspense>
@@ -3314,114 +3266,125 @@ ${styleAnchorLine}
                 ref={styleScrollRootRef}
                 className="min-h-0 min-w-0 overflow-y-auto pb-12 custom-scrollbar"
               >
-                <div className="w-full space-y-6 pb-20">
-                  {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
-                  {processedData.favorites.length > 0 && currentPackId !== FAVORITES_PACK_ID && (
-                    <StylePresetGroupSection
-                      key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
-                      groupKey="favorites"
-                      title="Pinned / Favorites"
-                      presets={processedData.favorites}
-                      gridColumns={gridColumns}
-                      scrollRootRef={styleScrollRootRef}
-                      scrollContainerWidth={styleScrollWidth}
-                      initiallyVisible
-                      headerClassName="opacity-100"
-                      accentClassName="bg-rose-500"
-                      titleClassName="text-rose-400"
-                      dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
-                      renderPresetCard={renderPresetCard}
+                <React.Suspense
+                  fallback={
+                    <LazySurfaceFallback
+                      label="Loading style cards"
+                      className="flex min-h-64 items-center justify-center text-zinc-500"
                     />
-                  )}
-
-                  {visibleStyleGroupEntries.map(([groupKey, presets], index) => {
-                    const isFlatStyleGroup =
-                      activeStyleViewMode === 'flat' && groupKey === STYLE_BROWSER_FLAT_GROUP_KEY;
-                    const categoryIdentity = isFlatStyleGroup
-                      ? null
-                      : getCategoryVisualIdentity(currentPackId, groupKey);
-                    return (
+                  }
+                >
+                  <div className="w-full space-y-6 pb-20">
+                    {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
+                    {processedData.favorites.length > 0 && currentPackId !== FAVORITES_PACK_ID && (
                       <StylePresetGroupSection
-                        key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
-                        groupKey={groupKey}
-                        title={isFlatStyleGroup ? 'All Styles' : groupKey}
-                        icon={isFlatStyleGroup ? <LayoutGrid size={12} /> : categoryIdentity?.icon}
-                        presets={presets}
+                        key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
+                        groupKey="favorites"
+                        title="Pinned / Favorites"
+                        presets={processedData.favorites}
                         gridColumns={gridColumns}
                         scrollRootRef={styleScrollRootRef}
                         scrollContainerWidth={styleScrollWidth}
-                        initiallyVisible={index < styleCategoryEagerBudget}
-                        headerClassName=""
-                        accentClassName={categoryIdentity?.accentClassName ?? activeTheme.bg}
-                        titleClassName={categoryIdentity?.titleClassName ?? 'text-zinc-300'}
-                        dividerClassName="bg-white/10"
+                        initiallyVisible
+                        headerClassName="opacity-100"
+                        accentClassName="bg-rose-500"
+                        titleClassName="text-rose-400"
+                        dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
                         renderPresetCard={renderPresetCard}
                       />
-                    );
-                  })}
+                    )}
 
-                  {filteredStylePresets.length === 0 && (
-                    <div className="h-64 flex flex-col items-center justify-center text-zinc-600 gap-4">
-                      {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
-                        <>
-                          <Filter size={32} className="opacity-20" />
-                          <span className="text-xs font-bold uppercase tracking-widest">
-                            Could not load this style pack
-                          </span>
-                          <button
-                            type="button"
-                            onClick={retryStylePacks}
-                            className="flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
-                          >
-                            <Wand2 size={13} />
-                            Retry
-                          </button>
-                        </>
-                      ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
-                        <>
-                          <Filter size={32} className="opacity-20" />
-                          <span className="text-xs font-bold uppercase tracking-widest">
-                            Could not load styles
-                          </span>
-                          <button
-                            type="button"
-                            onClick={() => void refreshUserStyles()}
-                            className="flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
-                          >
-                            <Wand2 size={13} />
-                            Retry
-                          </button>
-                        </>
-                      ) : currentPackId === USER_STYLE_PACK_ID &&
-                        !isLoadingUserStyles &&
-                        normalizedStyleSearchQuery.length === 0 ? (
-                        <>
-                          <Sparkles size={32} className="opacity-30 text-sky-300" />
-                          <span className="text-xs font-bold uppercase tracking-widest text-zinc-500">
-                            No custom styles yet
-                          </span>
-                          <button
-                            type="button"
-                            onClick={handleCreateUserStyle}
-                            className="flex h-9 items-center gap-2 rounded-[6px] border border-sky-400/20 bg-sky-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-sky-100 transition-colors hover:bg-sky-500/16"
-                          >
-                            <Plus size={13} />
-                            Create Style
-                          </button>
-                        </>
-                      ) : (
-                        <>
-                          <Filter size={32} className="opacity-20" />
-                          <span className="text-xs font-bold uppercase tracking-widest">
-                            {isLoadingUserStyles || isLoadingStylePacks
-                              ? 'Loading styles'
-                              : 'No styles found matching criteria'}
-                          </span>
-                        </>
-                      )}
-                    </div>
-                  )}
-                </div>
+                    {visibleStyleGroupEntries.map(([groupKey, presets], index) => {
+                      const isFlatStyleGroup =
+                        activeStyleViewMode === 'flat' && groupKey === STYLE_BROWSER_FLAT_GROUP_KEY;
+                      const categoryIdentity = isFlatStyleGroup
+                        ? null
+                        : getCategoryVisualIdentity(currentPackId, groupKey);
+                      return (
+                        <StylePresetGroupSection
+                          key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
+                          groupKey={groupKey}
+                          title={isFlatStyleGroup ? 'All Styles' : groupKey}
+                          icon={
+                            isFlatStyleGroup ? <LayoutGrid size={12} /> : categoryIdentity?.icon
+                          }
+                          presets={presets}
+                          gridColumns={gridColumns}
+                          scrollRootRef={styleScrollRootRef}
+                          scrollContainerWidth={styleScrollWidth}
+                          initiallyVisible={index < styleCategoryEagerBudget}
+                          headerClassName=""
+                          accentClassName={categoryIdentity?.accentClassName ?? activeTheme.bg}
+                          titleClassName={categoryIdentity?.titleClassName ?? 'text-zinc-300'}
+                          dividerClassName="bg-white/10"
+                          renderPresetCard={renderPresetCard}
+                        />
+                      );
+                    })}
+
+                    {filteredStylePresets.length === 0 && (
+                      <div className="h-64 flex flex-col items-center justify-center text-zinc-600 gap-4">
+                        {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
+                          <>
+                            <Filter size={32} className="opacity-20" />
+                            <span className="text-xs font-bold uppercase tracking-widest">
+                              Could not load this style pack
+                            </span>
+                            <button
+                              type="button"
+                              onClick={retryStylePacks}
+                              className="flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                            >
+                              <Wand2 size={13} />
+                              Retry
+                            </button>
+                          </>
+                        ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
+                          <>
+                            <Filter size={32} className="opacity-20" />
+                            <span className="text-xs font-bold uppercase tracking-widest">
+                              Could not load styles
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => void refreshUserStyles()}
+                              className="flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                            >
+                              <Wand2 size={13} />
+                              Retry
+                            </button>
+                          </>
+                        ) : currentPackId === USER_STYLE_PACK_ID &&
+                          !isLoadingUserStyles &&
+                          normalizedStyleSearchQuery.length === 0 ? (
+                          <>
+                            <Sparkles size={32} className="opacity-30 text-sky-300" />
+                            <span className="text-xs font-bold uppercase tracking-widest text-zinc-500">
+                              No custom styles yet
+                            </span>
+                            <button
+                              type="button"
+                              onClick={handleCreateUserStyle}
+                              className="flex h-9 items-center gap-2 rounded-[6px] border border-sky-400/20 bg-sky-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-sky-100 transition-colors hover:bg-sky-500/16"
+                            >
+                              <Plus size={13} />
+                              Create Style
+                            </button>
+                          </>
+                        ) : (
+                          <>
+                            <Filter size={32} className="opacity-20" />
+                            <span className="text-xs font-bold uppercase tracking-widest">
+                              {isLoadingUserStyles || isLoadingStylePacks
+                                ? 'Loading styles'
+                                : 'No styles found matching criteria'}
+                            </span>
+                          </>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                </React.Suspense>
               </div>
             </div>
           </div>

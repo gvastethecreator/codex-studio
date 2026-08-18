@@ -161,6 +161,46 @@
       "command": "bun run tooling:logs",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
+    },
+    {
+      "label": "🧬 typecheck",
+      "type": "shell",
+      "command": "bun run typecheck:environments",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🧾 docs",
+      "type": "shell",
+      "command": "bun run docs:check",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🧼 hygiene",
+      "type": "shell",
+      "command": "bun run repo:hygiene:verify",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🧭 architecture",
+      "type": "shell",
+      "command": "bun run architecture:verify",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🖼 electron",
+      "type": "shell",
+      "command": "bun run dev:electron",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "isBackground": true
     }
   ]
 }

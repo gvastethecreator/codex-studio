@@ -36,12 +36,17 @@ import {
   STYLE_FOLDER_FILE_LIMIT,
   type StyleFolderImageCandidate,
 } from './styles/collections/styleCollectionFolderImages';
+import { STYLE_LANDING_FOLDER_SUMMARIES_BY_ID } from '../../lib/styleLandingFolderIndex.generated';
+import {
+  loadStyleThumbnailPack,
+  STYLE_CARD_THUMBNAILS,
+  subscribeStyleThumbnailCatalog,
+} from '../../lib/styleThumbnailCatalog';
 import { STYLE_RUNTIME_PACK_SUMMARIES } from './stylesData';
 import { USER_STYLE_PACK_ID } from './userStyleRuntimeAdapter';
 
 const FAVORITES_PACK_ID = 'favorites';
 const STYLE_FOLDER_EASE = 'power3.out';
-const STYLE_FOLDER_EXIT_EASE = 'power2.inOut';
 const STYLE_FOLDER_SCATTER_X = [-34, 32, -12, 25, -24] as const;
 const STYLE_FOLDER_SCATTER_Y = [-52, -66, -78, -59, -72] as const;
 const STYLE_FOLDER_SCATTER_ROTATE = [-7, 8, -4, 5, -6] as const;
@@ -145,6 +150,7 @@ interface StyleCollectionsLandingSurfaceProps {
   getCollectionTabId: (collectionId: string) => string;
   getStyleTabHash: (tabId: string) => string;
   onNavigateToStyleTab: (tabId: string) => void;
+  onPrefetchStyleTab?: (tabId: string) => void;
   onToggleNavigationPanel: () => void;
 }
 
@@ -166,6 +172,7 @@ interface StyleFolderCardProps {
   dataAttributes: Record<string, string>;
   isHighlighted: boolean;
   onOpen: () => void;
+  onPrefetch?: () => void;
 }
 
 interface StyleNavigationItem {
@@ -318,6 +325,7 @@ function StyleFolderCard({
   dataAttributes,
   isHighlighted,
   onOpen,
+  onPrefetch,
 }: StyleFolderCardProps) {
   const rootRef = useRef<HTMLButtonElement | null>(null);
   const coverRef = useRef<HTMLDivElement | null>(null);
@@ -325,12 +333,19 @@ function StyleFolderCard({
   const gsapRef = useRef<StyleFolderGsap | null>(null);
   const timelineRef = useRef<StyleFolderTimeline | null>(null);
   const isOpenRef = useRef(false);
-  const isNavigatingRef = useRef(false);
-  const [filesMounted, setFilesMounted] = useState(false);
   const folderImages = useMemo(
     () => getStyleFolderImages({ seedId: id, sourcePackIds, imageCandidates }),
     [id, sourcePackIds, imageCandidates],
   );
+  const [filesMounted, setFilesMounted] = useState(
+    () => Boolean(folderImages.cover.src) || folderImages.files.some((file) => Boolean(file.src)),
+  );
+
+  useEffect(() => {
+    if (folderImages.cover.src || folderImages.files.some((file) => Boolean(file.src))) {
+      setFilesMounted(true);
+    }
+  }, [folderImages]);
   const { cover, files } = folderImages;
   const coverImage = cover.src;
   const titleClassName = getStyleCollectionTitleClassName(title);
@@ -358,11 +373,11 @@ function StyleFolderCard({
       const coverNode = coverRef.current;
       const fileNodes = getFileNodes();
       if (shouldReduceMotion()) return;
-      if (!root || !coverNode || fileNodes.length === 0 || isNavigatingRef.current) return;
+      if (!root || !coverNode || fileNodes.length === 0) return;
       if (isOpenRef.current === nextOpen) return;
 
       const gsap = await loadStyleFolderGsap();
-      if (!rootRef.current || isNavigatingRef.current) return;
+      if (!rootRef.current) return;
       gsapRef.current = gsap;
 
       isOpenRef.current = nextOpen;
@@ -421,98 +436,20 @@ function StyleFolderCard({
     [getFileNodes, stopFolderAnimation],
   );
 
-  const runExitAnimation = useCallback(async () => {
-    const root = rootRef.current;
-    const coverNode = coverRef.current;
-    const fileNodes = getFileNodes();
-    if (shouldReduceMotion()) {
-      onOpen();
-      return;
-    }
-    if (!root || !coverNode || fileNodes.length === 0 || isNavigatingRef.current) return;
-
-    const gsap = await loadStyleFolderGsap();
-    if (!rootRef.current || isNavigatingRef.current) return;
-    gsapRef.current = gsap;
-
-    isNavigatingRef.current = true;
-    root.dataset.stylePackFolderOpen = 'exit';
-    stopFolderAnimation();
-
-    const animatedNodes = [root, coverNode, ...fileNodes];
-    const timeline = gsap.timeline({
-      defaults: { overwrite: 'auto' },
-      onStart: () => gsap.set(animatedNodes, { willChange: 'transform, opacity' }),
-      onComplete: onOpen,
-    });
-
-    fileNodes.forEach((node, fileIndex) => {
-      timeline.to(
-        node,
-        {
-          x: STYLE_FOLDER_SCATTER_X[fileIndex % STYLE_FOLDER_SCATTER_X.length] * 0.8,
-          y: STYLE_FOLDER_SCATTER_Y[fileIndex % STYLE_FOLDER_SCATTER_Y.length] - 20,
-          rotation:
-            STYLE_FOLDER_SCATTER_ROTATE[fileIndex % STYLE_FOLDER_SCATTER_ROTATE.length] * 1.2,
-          scale: 0.98,
-          opacity: 0,
-          duration: 0.24,
-          ease: STYLE_FOLDER_EXIT_EASE,
-        },
-        fileIndex * 0.018,
-      );
-    });
-
-    timeline.to(
-      coverNode,
-      {
-        y: 10,
-        scale: 0.96,
-        opacity: 0,
-        duration: 0.22,
-        ease: STYLE_FOLDER_EXIT_EASE,
-      },
-      0.04,
-    );
-    timeline.to(
-      root,
-      {
-        y: -10,
-        scale: 0.985,
-        opacity: 0,
-        duration: 0.24,
-        ease: STYLE_FOLDER_EXIT_EASE,
-      },
-      0.08,
-    );
-
-    timelineRef.current = timeline;
-  }, [getFileNodes, onOpen, stopFolderAnimation]);
-
   const handleOpen = useCallback(() => {
-    if (!filesMounted) {
-      setFilesMounted(true);
-      window.requestAnimationFrame(() => void runExitAnimation());
-      return;
-    }
-
-    void runExitAnimation();
-  }, [filesMounted, runExitAnimation]);
+    if (!filesMounted) setFilesMounted(true);
+    onOpen();
+  }, [filesMounted, onOpen]);
 
   const handleFolderEnter = useCallback(() => {
     if (!filesMounted) setFilesMounted(true);
+    onPrefetch?.();
     void animateFolder(true);
-  }, [animateFolder, filesMounted]);
+  }, [animateFolder, filesMounted, onPrefetch]);
 
   useEffect(() => {
-    if (isHighlighted) {
-      if (!filesMounted) setFilesMounted(true);
-      window.requestAnimationFrame(() => void animateFolder(true));
-      return;
-    }
-
-    if (isOpenRef.current || timelineRef.current) void animateFolder(false);
-  }, [animateFolder, filesMounted, isHighlighted]);
+    if (isHighlighted && !filesMounted) setFilesMounted(true);
+  }, [filesMounted, isHighlighted]);
 
   useLayoutEffect(() => {
     const root = rootRef.current;
@@ -522,7 +459,6 @@ function StyleFolderCard({
 
     root.dataset.stylePackFolderOpen = 'false';
     isOpenRef.current = false;
-    isNavigatingRef.current = false;
 
     return () => {
       timelineRef.current?.kill();
@@ -670,6 +606,57 @@ function StyleFolderCard({
   );
 }
 
+function formatLandingFolderLabel(key: string) {
+  const rawName = key.includes('__') ? key.slice(key.indexOf('__') + 2) : key;
+  return (
+    rawName
+      .replace(/_/g, ' ')
+      .replace(/\b[a-z]/g, (letter) => letter.toUpperCase())
+      .trim() || key
+  );
+}
+
+function getLandingFolderImageCandidates(id: string): StyleFolderImageCandidate[] {
+  return (STYLE_LANDING_FOLDER_SUMMARIES_BY_ID[id]?.imageKeys ?? []).flatMap((key) => {
+    const src = STYLE_CARD_THUMBNAILS[key];
+    if (!src) return [];
+    return [{ id: key, src, label: formatLandingFolderLabel(key) }];
+  });
+}
+
+function useStyleLandingThumbnailCatalog() {
+  const [revision, setRevision] = useState(0);
+
+  useEffect(() => subscribeStyleThumbnailCatalog(() => setRevision((value) => value + 1)), []);
+
+  useEffect(() => {
+    const packIds = [
+      ...new Set([
+        ...VISIBLE_STYLE_COLLECTIONS.flatMap((collection) => collection.sourcePackIds),
+        ...STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id),
+      ]),
+    ].filter((packId) => /^pack_\d+$/.test(packId));
+    let cancelled = false;
+    void (async () => {
+      for (let index = 0; index < packIds.length; index += 2) {
+        if (cancelled) return;
+        await Promise.all(
+          packIds.slice(index, index + 2).map((packId) => loadStyleThumbnailPack(packId)),
+        );
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  return revision;
+}
+
+function getLandingFolderPresetCount(id: string, fallback: number) {
+  return STYLE_LANDING_FOLDER_SUMMARIES_BY_ID[id]?.presetCount ?? fallback;
+}
+
 function StyleCollectionCard({
   collection,
   countLabel,
@@ -679,7 +666,9 @@ function StyleCollectionCard({
   tabId,
   isHighlighted,
   onOpen,
+  onPrefetch,
   getStyleTabHash,
+  thumbnailRevision,
 }: {
   collection: StyleCollection;
   countLabel: string;
@@ -689,13 +678,17 @@ function StyleCollectionCard({
   tabId: string;
   isHighlighted: boolean;
   onOpen: () => void;
+  onPrefetch?: () => void;
   getStyleTabHash: (tabId: string) => string;
+  thumbnailRevision: number;
 }) {
   const theme = getStyleCollectionTheme(collection);
-  const imageCandidates = useMemo(
-    () => getStyleCollectionFolderImageCandidates(collection),
-    [collection],
-  );
+  const imageCandidates = useMemo(() => {
+    const landingImages = getLandingFolderImageCandidates(collection.id);
+    return landingImages.length > 0
+      ? landingImages
+      : getStyleCollectionFolderImageCandidates(collection);
+  }, [collection, thumbnailRevision]);
 
   return (
     <StyleFolderCard
@@ -716,6 +709,7 @@ function StyleCollectionCard({
       dataAttributes={{ 'data-style-collection-card': collection.id }}
       isHighlighted={isHighlighted}
       onOpen={onOpen}
+      onPrefetch={onPrefetch}
     />
   );
 }
@@ -727,6 +721,8 @@ function SourcePackCard({
   getStyleTabHash,
   isHighlighted,
   onOpen,
+  onPrefetch,
+  thumbnailRevision,
 }: {
   pack: (typeof STYLE_RUNTIME_PACK_SUMMARIES)[number];
   targetId: string;
@@ -734,9 +730,15 @@ function SourcePackCard({
   getStyleTabHash: (tabId: string) => string;
   isHighlighted: boolean;
   onOpen: () => void;
+  onPrefetch?: () => void;
+  thumbnailRevision: number;
 }) {
   const theme = PACK_THEMES[pack.id] ?? PACK_THEMES.pack_01;
   const title = PACK_CARD_TITLES[pack.id] ?? pack.name;
+  const imageCandidates = useMemo(
+    () => getLandingFolderImageCandidates(pack.id),
+    [pack.id, thumbnailRevision],
+  );
 
   return (
     <StyleFolderCard
@@ -748,6 +750,7 @@ function SourcePackCard({
       countAriaLabel={`${pack.name} presets ${pack.presetCount}`}
       eyebrow="Source pack"
       sourcePackIds={[pack.id]}
+      imageCandidates={imageCandidates}
       icon={getPackIcon(pack.id)}
       theme={theme}
       index={index}
@@ -756,6 +759,7 @@ function SourcePackCard({
       dataAttributes={{ 'data-style-pack-card': pack.id }}
       isHighlighted={isHighlighted}
       onOpen={onOpen}
+      onPrefetch={onPrefetch}
     />
   );
 }
@@ -813,6 +817,7 @@ function StyleFolderPlaceholder({
   dataAttributes: Record<string, string>;
   isHighlighted: boolean;
   onOpen: () => void;
+  onPrefetch?: () => void;
 }) {
   return (
     <button
@@ -844,6 +849,8 @@ function StyleCollectionFamilySection({
   getCollectionTabId,
   getStyleTabHash,
   onNavigateToStyleTab,
+  onPrefetchStyleTab,
+  thumbnailRevision,
 }: {
   family: (typeof STYLE_COLLECTION_FAMILIES)[number];
   collections: StyleCollection[];
@@ -852,6 +859,8 @@ function StyleCollectionFamilySection({
   getCollectionTabId: (collectionId: string) => string;
   getStyleTabHash: (tabId: string) => string;
   onNavigateToStyleTab: (tabId: string) => void;
+  onPrefetchStyleTab?: (tabId: string) => void;
+  thumbnailRevision: number;
 }) {
   const forceMount = collections.some(
     (collection) => activeTargetId === `collection:${collection.id}`,
@@ -886,6 +895,7 @@ function StyleCollectionFamilySection({
             targetId,
             isHighlighted: activeTargetId === targetId,
             onOpen: () => onNavigateToStyleTab(tabId),
+            onPrefetch: () => onPrefetchStyleTab?.(tabId),
           };
 
           return isMounted ? (
@@ -893,11 +903,12 @@ function StyleCollectionFamilySection({
               key={collection.id}
               {...sharedProps}
               collection={collection}
-              countLabel={`${collection.sourcePackIds.length}`}
+              countLabel={`${getLandingFolderPresetCount(collection.id, collection.sourcePackIds.length)}`}
               familyLabel={family.title}
               index={index}
               tabId={tabId}
               getStyleTabHash={getStyleTabHash}
+              thumbnailRevision={thumbnailRevision}
             />
           ) : (
             <StyleFolderPlaceholder
@@ -920,11 +931,15 @@ function StyleSourcePacksSection({
   scrollRootRef,
   getStyleTabHash,
   onNavigateToStyleTab,
+  onPrefetchStyleTab,
+  thumbnailRevision,
 }: {
   activeTargetId: string | null;
   scrollRootRef: React.RefObject<HTMLDivElement | null>;
   getStyleTabHash: (tabId: string) => string;
   onNavigateToStyleTab: (tabId: string) => void;
+  onPrefetchStyleTab?: (tabId: string) => void;
+  thumbnailRevision: number;
 }) {
   const forceMount = activeTargetId?.startsWith('source:') ?? false;
   const { sectionRef, isMounted } = useDemandMountedSection(scrollRootRef, forceMount);
@@ -953,6 +968,7 @@ function StyleSourcePacksSection({
             targetId,
             isHighlighted: activeTargetId === targetId,
             onOpen: () => onNavigateToStyleTab(pack.id),
+            onPrefetch: () => onPrefetchStyleTab?.(pack.id),
           };
           return isMounted ? (
             <SourcePackCard
@@ -961,6 +977,7 @@ function StyleSourcePacksSection({
               pack={pack}
               index={index}
               getStyleTabHash={getStyleTabHash}
+              thumbnailRevision={thumbnailRevision}
             />
           ) : (
             <StyleFolderPlaceholder
@@ -1115,11 +1132,12 @@ export function StyleCollectionsLandingSurface({
   getCollectionTabId,
   getStyleTabHash,
   onNavigateToStyleTab,
+  onPrefetchStyleTab,
   onToggleNavigationPanel,
 }: StyleCollectionsLandingSurfaceProps) {
+  const thumbnailRevision = useStyleLandingThumbnailCatalog();
   const [activeNavigationTargetId, setActiveNavigationTargetId] = useState<string | null>(null);
   const cardsScrollerRef = useRef<HTMLDivElement | null>(null);
-  const previewFrameRef = useRef<number | null>(null);
   const personalStyleCollections = useMemo(
     () =>
       STYLE_COLLECTIONS.filter(
@@ -1165,7 +1183,7 @@ export function StyleCollectionsLandingSurface({
           targetId: `collection:${collection.id}`,
           label: collection.title,
           caption: family.title,
-          countLabel: `${collection.sourcePackIds.length}`,
+          countLabel: `${getLandingFolderPresetCount(collection.id, collection.sourcePackIds.length)}`,
           tabId: getCollectionTabId(collection.id),
           theme,
           icon: getStyleCollectionIcon(collection.icon, 14),
@@ -1204,35 +1222,13 @@ export function StyleCollectionsLandingSurface({
     userStyleCount,
   ]);
 
-  const previewNavigationItem = useCallback((item: StyleNavigationItem) => {
-    setActiveNavigationTargetId(item.targetId);
-    if (previewFrameRef.current !== null) window.cancelAnimationFrame(previewFrameRef.current);
-
-    previewFrameRef.current = window.requestAnimationFrame(() => {
-      const scroller = cardsScrollerRef.current;
-      const target = document.querySelector<HTMLElement>(
-        `[data-style-folder-target="${item.targetId}"]`,
-      );
-      if (!scroller || !target) return;
-
-      const scrollerRect = scroller.getBoundingClientRect();
-      const targetRect = target.getBoundingClientRect();
-      const targetTop = targetRect.top - scrollerRect.top + scroller.scrollTop;
-      const centeredTop = targetTop - Math.max(0, (scroller.clientHeight - targetRect.height) / 2);
-      const maxTop = Math.max(0, scroller.scrollHeight - scroller.clientHeight);
-
-      scroller.scrollTo({
-        top: Math.min(Math.max(0, centeredTop), maxTop),
-        behavior: shouldReduceMotion() ? 'auto' : 'smooth',
-      });
-    });
-  }, []);
-
-  useEffect(() => {
-    return () => {
-      if (previewFrameRef.current !== null) window.cancelAnimationFrame(previewFrameRef.current);
-    };
-  }, []);
+  const previewNavigationItem = useCallback(
+    (item: StyleNavigationItem) => {
+      setActiveNavigationTargetId(item.targetId);
+      onPrefetchStyleTab?.(item.tabId);
+    },
+    [onPrefetchStyleTab],
+  );
 
   return (
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden px-4 py-4 sm:px-5 sm:py-5 2xl:px-6">
@@ -1310,6 +1306,7 @@ export function StyleCollectionsLandingSurface({
                       isHighlighted={activeNavigationTargetId === targetId}
                       getStyleTabHash={getStyleTabHash}
                       onOpen={() => onNavigateToStyleTab(tabId)}
+                      thumbnailRevision={thumbnailRevision}
                     />
                   );
                 })}
@@ -1326,6 +1323,8 @@ export function StyleCollectionsLandingSurface({
                 getCollectionTabId={getCollectionTabId}
                 getStyleTabHash={getStyleTabHash}
                 onNavigateToStyleTab={onNavigateToStyleTab}
+                onPrefetchStyleTab={onPrefetchStyleTab}
+                thumbnailRevision={thumbnailRevision}
               />
             ))}
 
@@ -1334,6 +1333,8 @@ export function StyleCollectionsLandingSurface({
               scrollRootRef={cardsScrollerRef}
               getStyleTabHash={getStyleTabHash}
               onNavigateToStyleTab={onNavigateToStyleTab}
+              onPrefetchStyleTab={onPrefetchStyleTab}
+              thumbnailRevision={thumbnailRevision}
             />
           </div>
         </div>
