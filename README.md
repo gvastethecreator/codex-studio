@@ -141,7 +141,6 @@ bun run tooling:logs:prune
 - [Development guide](./docs/DEV_GUIDE.md)
 - [Tooling](./docs/TOOLING.md)
 - [Dependencies and upgrades](./docs/DEPENDENCIES.md)
-- [Maintenance reviews](./docs/reviews/README.md)
 - [Troubleshooting](./docs/TROUBLESHOOTING.md)
 - [Roadmap](./ROADMAP.md)
 

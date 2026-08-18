@@ -19,6 +19,7 @@ const forbidden = [
   /^\.scratch\//,
   /^logs\//,
   /^\.playwright-mcp\//,
+  /^\.grok\//,
   /^test-files\//,
   /\.pem$/i,
 ];

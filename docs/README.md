@@ -1,24 +1,15 @@
 # Documentation
 
-Codex Studio keeps public and agent-facing documentation in the repository. Accepted architecture reviews and their active workplan are tracked here; transient implementation logs, local execution plans, and readiness reports stay outside git.
+Codex Studio keeps public and agent-facing documentation in the repository. Local execution plans, completed workplans, audits, and review notes stay in the ignored `.scratch/dev-docs/` workspace.
 
 ## Public Docs
 
 - [Development guide](./DEV_GUIDE.md)
 - [Tooling and dependency maintenance](./TOOLING.md)
+- [Dependencies](./DEPENDENCIES.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 - [Desktop app notes](./ELECTRON.md)
 - [Style preset authoring](./STYLE_PRESET_AUTHORING.md)
-- [Style recipe workflow plan](./STYLE_RECIPE_WORKFLOW_PLAN.md)
-- [Style pack 09 texture audit](./STYLE_PACK_09_TEXTURE_AUDIT.md)
-- [Style pack reorganization plan](./STYLE_PACK_REORGANIZATION_PLAN.md)
-- [Style collection architecture plan](./STYLE_COLLECTION_ARCHITECTURE_PLAN.md)
-- [Style collection refactor roadmap](./STYLE_COLLECTION_REFACTOR_ROADMAP.md)
-- [Style duplicate family report](./STYLE_DUPLICATE_FAMILY_REPORT.md)
-- [Style collection migration readiness](./STYLE_COLLECTION_MIGRATION_READINESS.md)
-- [Sprite Atlas workflow plan](./SPRITE_ATLAS_WORKFLOW_PLAN.md)
-- [Sprite Atlas implementation tasks](./SPRITE_ATLAS_TASKS.md)
-- [Animation Sequence workflow plan](./ANIMATION_SEQUENCE_WORKFLOW_PLAN.md)
 - [Roadmap](../ROADMAP.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Security](../SECURITY.md)
@@ -37,24 +28,15 @@ Codex Studio keeps public and agent-facing documentation in the repository. Acce
 ## Current Architecture
 
 - [Architecture map](./ARCHITECTURE.md)
+- [Design tokens and UI contract](./DESIGN.md)
 - [Grok Imagine provider decision](./architecture/grok-imagine-provider-2026-08-08.md)
-- [Hardening architecture plan](./architecture/CODEX_STUDIO_HARDENING_PLAN.md)
 - [Product roadmap](../ROADMAP.md)
-
-## Historical Architecture Reviews and Reports
-
-These documents record earlier baselines and completed work. They do not override the current architecture map or accepted ADRs.
-
-- [Repo-wide simplification report (2026-07-18)](./architecture/simplification-2026-07-18.md)
-- [Architecture workplan](./architecture/WORKPLAN.md)
-- [Architecture recommendations closure](./architecture/architecture-recommendations-2026-07-14.md)
-- [General app performance and architecture review](./architecture/architecture-review-2026-07-10-app-performance.md)
-- [Animation Sequence architecture review](./architecture/architecture-review-2026-07-10-animation-sequence.md)
-- [Technical-debt audit](./architecture/technical-debt-audit-2026-07-10.md)
-- [Maintenance and cleanup report](./architecture/maintenance-report-2026-07-10.md)
 
 ## Agent-Facing Docs
 
 - [Agent guide](../AGENTS.md)
 - [Project vocabulary](../CONTEXT.md)
 - [Workflow skills](../SKILLS.md)
+- [Domain docs](./agents/domain.md)
+- [Issue tracker](./agents/issue-tracker.md)
+- [Triage labels](./agents/triage-labels.md)
