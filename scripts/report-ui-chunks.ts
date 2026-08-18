@@ -71,9 +71,16 @@ export const uiChunkBudgets: UiChunkBudget[] = [
   {
     id: 'styles-recipe',
     pattern: /^StylesRecipe-[\w-]+\.js$/,
+    maxBytes: 64 * KIB,
+    required: true,
+    note: 'Styles recipe page only collects parameters and loads the browser owner.',
+  },
+  {
+    id: 'styles-browser',
+    pattern: /^StylesBrowser-[\w-]+\.js$/,
     maxBytes: 80 * KIB,
     required: true,
-    note: 'Styles UI should import pack summaries only.',
+    note: 'Styles browser owner stays a required child chunk of the recipe page.',
   },
   {
     id: 'style-catalog-search-surface',

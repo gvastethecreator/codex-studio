@@ -33,8 +33,8 @@ function buildUrlCatalog(files: Record<string, string>) {
 
 const stylePreviewCatalog = buildUrlCatalog(stylePreviewImageFiles);
 
-export const STYLE_CARD_THUMBNAILS: Record<string, string> = {};
-export const STYLE_CATEGORY_IMAGES: Record<string, string> = {};
+const styleCardThumbnails: Record<string, string> = {};
+const styleCategoryImages: Record<string, string> = {};
 
 const styleThumbnailCatalogListeners = new Set<() => void>();
 
@@ -49,31 +49,50 @@ function notifyStyleThumbnailCatalog() {
   styleThumbnailCatalogListeners.forEach((listener) => listener());
 }
 
-export async function loadStyleThumbnailPack(packId: string) {
-  const projection = await loadGeneratedStyleThumbnailPack(packId);
-  Object.assign(STYLE_CARD_THUMBNAILS, projection);
+function rememberThumbnailProjection(projection: Record<string, string>) {
+  Object.assign(styleCardThumbnails, projection);
   Object.assign(
-    STYLE_CATEGORY_IMAGES,
+    styleCategoryImages,
     Object.fromEntries(Object.entries(projection).filter(([key]) => key.startsWith('pack_'))),
   );
+}
+
+export async function loadStyleThumbnailPack(packId: string) {
+  const projection = await loadGeneratedStyleThumbnailPack(packId);
+  rememberThumbnailProjection(projection);
   notifyStyleThumbnailCatalog();
   return projection;
 }
 
-export function resolveStyleDefaultImageThumbnail(presetId: string) {
-  return STYLE_CARD_THUMBNAILS[presetId];
+export function getStyleThumbnail(key: string) {
+  return styleCardThumbnails[key];
 }
 
-export function resolveStyleDefaultImageVariantThumbnails(presetId: string) {
+export function getStyleCategoryImage(key: string) {
+  return styleCategoryImages[key];
+}
+
+export function getStyleThumbnailCatalog(): Readonly<Record<string, string>> {
+  return styleCardThumbnails;
+}
+
+export function resolveStyleDefaultImageThumbnail(presetId: string) {
+  return getStyleThumbnail(presetId);
+}
+
+export function resolveStyleDefaultImageVariantThumbnails(
+  presetId: string,
+  getThumbnail: (key: string) => string | undefined = getStyleThumbnail,
+) {
   const variants: StylePresetImageVariant[] = [];
   for (let index = 1; index <= 12; index += 1) {
     const key = `${presetId}-${String(index).padStart(2, '0')}`;
-    const src = STYLE_CARD_THUMBNAILS[key];
+    const src = getThumbnail(key);
     if (!src) break;
     variants.push({ src, label: `Variant ${index}` });
   }
 
-  const grokSrc = STYLE_CARD_THUMBNAILS[`${presetId}-grok`];
+  const grokSrc = getThumbnail(`${presetId}-grok`);
   if (grokSrc) variants.push({ src: grokSrc, label: 'Grok' });
 
   return variants;

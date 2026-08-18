@@ -24,28 +24,22 @@ import type {
   ImageGenerationConfig,
 } from '../../types';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
+import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
 import {
-  CHARACTER_LAB_ACTIONS,
-  CHARACTER_LAB_CATEGORIES,
-  CHARACTER_LAB_GLOBAL_OPTIONS,
-  CHARACTER_LAB_MODES,
-  CHARACTER_LAB_OPTION_COUNTS,
+  characterLabActions,
+  characterLabCategories,
+  characterLabGlobalOptions,
+  characterLabIconAtlas,
+  characterLabIconAtlasSize,
+  characterLabModes,
+  characterLabOptionCounts,
+  characterLabOptionIconAtlas,
+  getCharacterLabIconFrame,
+  getCharacterLabOptionIconFrame,
+  getFirstReadyCharacterLabAction,
   type CharacterLabAction,
   type CharacterLabModeId,
-} from '../../lib/characterLabCatalog.generated';
-import {
-  CHARACTER_LAB_ICON_ATLAS_CELL_SIZE,
-  CHARACTER_LAB_ICON_ATLAS_URL,
-  CHARACTER_LAB_ICON_FRAMES,
-} from '../../lib/characterLabIconAtlas.generated';
-import {
-  CHARACTER_LAB_OPTION_ICON_ATLAS_CELL_SIZE,
-  CHARACTER_LAB_OPTION_ICON_ATLAS_HEIGHT,
-  CHARACTER_LAB_OPTION_ICON_ATLAS_URL,
-  CHARACTER_LAB_OPTION_ICON_ATLAS_WIDTH,
-  CHARACTER_LAB_OPTION_ICON_FRAMES,
-} from '../../lib/characterLabOptionIconAtlas.generated';
-import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
+} from '../../lib/characterLabView';
 import { resolveRecipeAlias, type RecipeAliasId } from '../../lib/recipeAliases';
 import { normalizeImageGenRatio } from '../../utils/imageGenSizing';
 import { RecipeLayout } from './RecipeLayout';
@@ -171,17 +165,12 @@ const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string;
   },
 };
 
-const atlasFrames = Object.values(CHARACTER_LAB_ICON_FRAMES);
-const ATLAS_WIDTH = Math.max(...atlasFrames.map((frame) => frame.x + frame.w));
-const ATLAS_HEIGHT = Math.max(...atlasFrames.map((frame) => frame.y + frame.h));
-const FIRST_READY_ACTION = CHARACTER_LAB_ACTIONS.find((action) => action.capability === 'ready')!;
+const ATLAS_WIDTH = characterLabIconAtlasSize.width;
+const ATLAS_HEIGHT = characterLabIconAtlasSize.height;
+const FIRST_READY_ACTION = getFirstReadyCharacterLabAction();
 
 function getFirstReadyActionForMode(mode: CharacterLabModeId) {
-  return (
-    CHARACTER_LAB_ACTIONS.find((action) => action.mode === mode && action.capability === 'ready') ??
-    CHARACTER_LAB_ACTIONS.find((action) => action.mode === mode) ??
-    FIRST_READY_ACTION
-  );
+  return getFirstReadyCharacterLabAction(mode);
 }
 
 function resolveCharacterLabModeFromAlias(aliasId: RecipeAliasId | null | undefined) {
@@ -194,10 +183,10 @@ function getAccent(accent: string) {
 }
 
 function CharacterLabIcon({ id, size = 18 }: { id: string; size?: number }) {
-  const frame = CHARACTER_LAB_ICON_FRAMES[id as keyof typeof CHARACTER_LAB_ICON_FRAMES];
+  const frame = getCharacterLabIconFrame(id);
   if (!frame) return <Sparkles size={size} aria-hidden="true" />;
 
-  const scale = size / CHARACTER_LAB_ICON_ATLAS_CELL_SIZE;
+  const scale = size / characterLabIconAtlas.cellSize;
   return (
     <span
       aria-hidden="true"
@@ -205,7 +194,7 @@ function CharacterLabIcon({ id, size = 18 }: { id: string; size?: number }) {
       style={{
         width: size,
         height: size,
-        backgroundImage: `url(${CHARACTER_LAB_ICON_ATLAS_URL})`,
+        backgroundImage: `url(${characterLabIconAtlas.url})`,
         backgroundPosition: `${-frame.x * scale}px ${-frame.y * scale}px`,
         backgroundSize: `${ATLAS_WIDTH * scale}px ${ATLAS_HEIGHT * scale}px`,
       }}
@@ -222,11 +211,10 @@ function CharacterLabOptionIcon({
   fallbackId: string;
   size?: number;
 }) {
-  const frame =
-    CHARACTER_LAB_OPTION_ICON_FRAMES[id as keyof typeof CHARACTER_LAB_OPTION_ICON_FRAMES];
+  const frame = getCharacterLabOptionIconFrame(id);
   if (!frame) return <CharacterLabIcon id={fallbackId} size={size} />;
 
-  const scale = size / CHARACTER_LAB_OPTION_ICON_ATLAS_CELL_SIZE;
+  const scale = size / characterLabOptionIconAtlas.cellSize;
   return (
     <span
       aria-hidden="true"
@@ -234,10 +222,10 @@ function CharacterLabOptionIcon({
       style={{
         width: size,
         height: size,
-        backgroundImage: `url(${CHARACTER_LAB_OPTION_ICON_ATLAS_URL})`,
+        backgroundImage: `url(${characterLabOptionIconAtlas.url})`,
         backgroundPosition: `${-frame.x * scale}px ${-frame.y * scale}px`,
-        backgroundSize: `${CHARACTER_LAB_OPTION_ICON_ATLAS_WIDTH * scale}px ${
-          CHARACTER_LAB_OPTION_ICON_ATLAS_HEIGHT * scale
+        backgroundSize: `${characterLabOptionIconAtlas.width * scale}px ${
+          characterLabOptionIconAtlas.height * scale
         }px`,
       }}
     />
@@ -293,7 +281,7 @@ const FIELD_ICON_IDS: Record<SelectFieldKind, string> = {
 };
 
 function getAspectRatioGroup(option: string) {
-  const group = CHARACTER_LAB_GLOBAL_OPTIONS.aspectRatios.find((item) =>
+  const group = characterLabGlobalOptions.aspectRatios.find((item) =>
     (item.ratios as readonly string[]).includes(option),
   );
   return group?.label ?? 'Flexible';
@@ -839,12 +827,12 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   const [search, setSearch] = useState('');
   const [capabilityNotice, setCapabilityNotice] = useState('');
   const [subject, setSubject] = useState('');
-  const [style, setStyle] = useState<string>(CHARACTER_LAB_GLOBAL_OPTIONS.styles[0]);
-  const [clothing, setClothing] = useState<string>(CHARACTER_LAB_GLOBAL_OPTIONS.clothing[0]);
-  const [bodyType, setBodyType] = useState<string>(CHARACTER_LAB_GLOBAL_OPTIONS.bodyTypes[0]);
-  const [expression, setExpression] = useState<string>(CHARACTER_LAB_GLOBAL_OPTIONS.expressions[0]);
+  const [style, setStyle] = useState<string>(characterLabGlobalOptions.styles[0]);
+  const [clothing, setClothing] = useState<string>(characterLabGlobalOptions.clothing[0]);
+  const [bodyType, setBodyType] = useState<string>(characterLabGlobalOptions.bodyTypes[0]);
+  const [expression, setExpression] = useState<string>(characterLabGlobalOptions.expressions[0]);
   const [backgroundColor, setBackgroundColor] = useState<string>(
-    CHARACTER_LAB_GLOBAL_OPTIONS.palettes[0].backgroundColor,
+    characterLabGlobalOptions.palettes[0].backgroundColor,
   );
   const [labAspectRatio, setLabAspectRatio] = useState<string>('1:1');
   const sourceInputRef = useRef<HTMLInputElement>(null);
@@ -853,11 +841,11 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   const source = config.attachments[0] ?? null;
   const references = config.attachments.slice(1, 4);
   const selectedAction =
-    CHARACTER_LAB_ACTIONS.find((action) => action.id === selectedActionId) ?? FIRST_READY_ACTION;
+    characterLabActions.find((action) => action.id === selectedActionId) ?? FIRST_READY_ACTION;
   const selectedAccent = getAccent(selectedAction.accent);
   const selectedModeMeta =
-    CHARACTER_LAB_MODES.find((mode) => mode.id === selectedMode) ?? CHARACTER_LAB_MODES[0];
-  const selectedModeActions = CHARACTER_LAB_ACTIONS.filter(
+    characterLabModes.find((mode) => mode.id === selectedMode) ?? characterLabModes[0];
+  const selectedModeActions = characterLabActions.filter(
     (action) => action.mode === selectedMode,
   );
   const selectedModeReadyActions = selectedModeActions.filter(
@@ -995,10 +983,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
 
   const filteredCategoryGroups = useMemo(() => {
     const query = normalizeSearch(search);
-    return CHARACTER_LAB_CATEGORIES.filter((category) => category.mode === selectedMode)
+    return characterLabCategories.filter((category) => category.mode === selectedMode)
       .map((category) => ({
         category,
-        actions: CHARACTER_LAB_ACTIONS.filter(
+        actions: characterLabActions.filter(
           (action) =>
             action.mode === selectedMode &&
             action.category === category.label &&
@@ -1228,21 +1216,21 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               <SelectField
                 label="Base Expression"
                 value={expression}
-                options={CHARACTER_LAB_GLOBAL_OPTIONS.expressions}
+                options={characterLabGlobalOptions.expressions}
                 onChange={setExpression}
                 kind="expression"
               />
               <SelectField
                 label="Aspect Ratio"
                 value={labAspectRatio}
-                options={CHARACTER_LAB_GLOBAL_OPTIONS.aspectRatios.flatMap((group) => group.ratios)}
+                options={characterLabGlobalOptions.aspectRatios.flatMap((group) => group.ratios)}
                 onChange={setOutputRatio}
                 kind="ratio"
               />
               <SelectField
                 label="Artistic Style"
                 value={style}
-                options={CHARACTER_LAB_GLOBAL_OPTIONS.styles}
+                options={characterLabGlobalOptions.styles}
                 onChange={setStyle}
                 kind="style"
                 className="col-span-2"
@@ -1250,7 +1238,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               <SelectField
                 label="Clothing"
                 value={clothing}
-                options={CHARACTER_LAB_GLOBAL_OPTIONS.clothing}
+                options={characterLabGlobalOptions.clothing}
                 onChange={setClothing}
                 kind="clothing"
                 className="col-span-2"
@@ -1258,7 +1246,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               <SelectField
                 label="Body Type"
                 value={bodyType}
-                options={CHARACTER_LAB_GLOBAL_OPTIONS.bodyTypes}
+                options={characterLabGlobalOptions.bodyTypes}
                 onChange={setBodyType}
                 kind="body"
                 className="col-span-2"
@@ -1270,7 +1258,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 Background Color
               </div>
               <div className="grid grid-cols-4 gap-1.5">
-                {CHARACTER_LAB_GLOBAL_OPTIONS.palettes.map((palette) => (
+                {characterLabGlobalOptions.palettes.map((palette) => (
                   <button
                     key={palette.name}
                     type="button"
@@ -1304,7 +1292,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
         >
           <div className="shrink-0 border-b border-white/10 p-2.5">
             <div className="custom-scrollbar flex gap-1 overflow-x-auto pb-1">
-              {CHARACTER_LAB_MODES.map((mode) => {
+              {characterLabModes.map((mode) => {
                 const active = selectedMode === mode.id;
                 return (
                   <button
@@ -1338,7 +1326,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   name="character-lab-action-search"
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
-                  placeholder={`Search ${CHARACTER_LAB_OPTION_COUNTS.total} actions`}
+                  placeholder={`Search ${characterLabOptionCounts.total} actions`}
                   className="h-9 w-full rounded-lg border border-white/10 bg-black/40 pl-9 pr-3 text-[12px] text-zinc-200 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/70 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 />
               </div>

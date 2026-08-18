@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vite-plus/test';
 import type { ImageGenerationConfig } from '../types';
 import {
@@ -85,5 +86,11 @@ describe('recipeIdentity', () => {
         0,
       ),
     ).toBe(3);
+  });
+
+  it('does not import the Recipe Module catalog', () => {
+    const source = readFileSync(new URL('./recipeIdentity.ts', import.meta.url), 'utf8');
+    expect(source.includes("from './recipeModules'")).toBe(false);
+    expect(source.includes('RECIPE_MODULES')).toBe(false);
   });
 });

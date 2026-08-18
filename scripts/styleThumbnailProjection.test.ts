@@ -2,6 +2,9 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import {
   collectStyleLandingFolderPreferredKeys,
+  groupThumbnailPackIds,
+  isGeneratedThumbnailModuleStale,
+  isLandingFolderIndexStale,
   packIdFromThumbnailAssetKey,
   presetIdFromThumbnailAssetKey,
   resolveThumbnailAssetPackId,
@@ -27,6 +30,25 @@ describe('style thumbnail projection helpers', () => {
       'pack_16',
     );
     expect(packIdFromThumbnailAssetKey('SP05-001')).toBe('pack_05');
+    expect(groupThumbnailPackIds(['pack_05', 'pack_13', 'pack_16'])).toEqual([
+      ['pack_05'],
+      ['pack_13'],
+      ['pack_16'],
+    ]);
+    expect(
+      isGeneratedThumbnailModuleStale({
+        actual: "pack_16: () => import('./thumbnail_group_09')",
+        referencedFiles: ['./thumbnail_group_09'],
+        isIndex: true,
+      }),
+    ).toBe(false);
+    expect(
+      isLandingFolderIndexStale({
+        actual: 'export const STYLE_LANDING_FOLDER_SUMMARIES_BY_ID = { pack_16: true }\npresetCount: 12',
+        expectedIds: ['pack_16'],
+        expectedCounts: ['presetCount: 12'],
+      }),
+    ).toBe(false);
   });
 
   it('keeps landing folder keys unique and limited to available assets', () => {

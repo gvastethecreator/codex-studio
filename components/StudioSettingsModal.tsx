@@ -14,6 +14,14 @@ import {
 import type React from 'react';
 import { useLayoutEffect, useMemo, useState } from 'react';
 
+type StudioSettingsDomainId = 'library' | 'output' | 'maintenance';
+
+const SETTINGS_DOMAIN_TABS: Array<{ id: StudioSettingsDomainId; label: string }> = [
+  { id: 'library', label: 'Library' },
+  { id: 'output', label: 'Output' },
+  { id: 'maintenance', label: 'Maintenance' },
+];
+
 import {
   BUILT_IN_GENERATION_PROVIDERS,
   type GenerationProviderId,
@@ -1049,6 +1057,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   const [formState, setFormState] = useState<StudioSettingsFormState>(
     createInitialStudioSettingsFormState,
   );
+  const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('library');
 
   useLayoutEffect(() => {
     if (isOpen && settings) {
@@ -1124,6 +1133,24 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </div>
         </div>
 
+        <div className="flex gap-1 border-b border-white/8 px-5">
+          {SETTINGS_DOMAIN_TABS.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              onClick={() => setActiveDomain(tab.id)}
+              aria-pressed={activeDomain === tab.id}
+              className={`h-10 px-3 text-[10px] font-black uppercase tracking-widest transition-colors ${
+                activeDomain === tab.id
+                  ? 'border-b-2 border-accent-400 text-white'
+                  : 'text-zinc-500 hover:text-white'
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+
         <div className="custom-scrollbar flex-1 overflow-y-auto p-5">
           {error && (
             <div className="mb-4 rounded-lg border border-rose-500/20 bg-rose-500/10 px-4 py-3 text-xs font-bold text-rose-100">
@@ -1131,28 +1158,34 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             </div>
           )}
 
-          <SettingsFormPanel
-            formState={formState}
-            onFormChange={setFormState}
-            libraryDir={libraryDir}
-            providerOptions={providerOptions}
-            providerCapabilities={providerCapabilities}
-            providerRuntimePreflight={providerRuntimePreflight}
-            onResetStudio={onResetStudio}
-            isResettingStudio={isResettingStudio}
-          />
-          <SettingsOutputSourcesPanel
-            outputSources={outputSources}
-            outputSourceFiles={outputSourceFiles}
-            loadingOutputSourceFiles={loadingOutputSourceFiles}
-            importingOutputSources={importingOutputSources}
-            isLoadingOutputSources={isLoadingOutputSources}
-            isRegisteringOutputSource={isRegisteringOutputSource}
-            onLoadOutputSourceFiles={onLoadOutputSourceFiles}
-            onImportOutputSourceFiles={onImportOutputSourceFiles}
-            onRegisterOutputSource={onRegisterOutputSource}
-          />
-          <SettingsMaintenancePanel maintenance={maintenance} />
+          {activeDomain === 'library' ? (
+            <SettingsFormPanel
+              formState={formState}
+              onFormChange={setFormState}
+              libraryDir={libraryDir}
+              providerOptions={providerOptions}
+              providerCapabilities={providerCapabilities}
+              providerRuntimePreflight={providerRuntimePreflight}
+              onResetStudio={onResetStudio}
+              isResettingStudio={isResettingStudio}
+            />
+          ) : null}
+          {activeDomain === 'output' ? (
+            <SettingsOutputSourcesPanel
+              outputSources={outputSources}
+              outputSourceFiles={outputSourceFiles}
+              loadingOutputSourceFiles={loadingOutputSourceFiles}
+              importingOutputSources={importingOutputSources}
+              isLoadingOutputSources={isLoadingOutputSources}
+              isRegisteringOutputSource={isRegisteringOutputSource}
+              onLoadOutputSourceFiles={onLoadOutputSourceFiles}
+              onImportOutputSourceFiles={onImportOutputSourceFiles}
+              onRegisterOutputSource={onRegisterOutputSource}
+            />
+          ) : null}
+          {activeDomain === 'maintenance' ? (
+            <SettingsMaintenancePanel maintenance={maintenance} />
+          ) : null}
         </div>
 
         <div className="flex items-center justify-end gap-3 border-t border-white/8 px-5 py-4">

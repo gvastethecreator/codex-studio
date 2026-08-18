@@ -17,6 +17,7 @@ describe('UI chunk report', () => {
       chunk('StudioGenerationDock-abc.js', 62),
       chunk('localGenerationRun-abc.js', 60),
       chunk('StylesRecipe-abc.js', 42),
+      chunk('StylesBrowser-abc.js', 70),
       chunk('StylePresetCatalogSearchSurface-abc.js', 8),
       chunk('CameraAnglesRecipe-abc.js', 23),
       chunk('three.module-abc.js', 723),
@@ -25,7 +26,7 @@ describe('UI chunk report', () => {
 
     expect(report.ok).toBe(true);
     expect(report.unbudgetedLargeChunks).toEqual([]);
-    expect(report.packaging).toMatchObject({ chunkCount: 8, tinyChunkCount: 0, ok: true });
+    expect(report.packaging).toMatchObject({ chunkCount: 9, tinyChunkCount: 0, ok: true });
   });
 
   it('fails packaging when microchunks multiply', () => {
@@ -34,6 +35,7 @@ describe('UI chunk report', () => {
       chunk('StudioGenerationDock-abc.js', 62),
       chunk('localGenerationRun-abc.js', 60),
       chunk('StylesRecipe-abc.js', 42),
+      chunk('StylesBrowser-abc.js', 70),
       chunk('StylePresetCatalogSearchSurface-abc.js', 8),
       chunk('CameraAnglesRecipe-abc.js', 23),
       chunk('three.module-abc.js', 723),
@@ -56,6 +58,7 @@ describe('UI chunk report', () => {
       chunk('StudioGenerationDock-abc.js', 62),
       chunk('localGenerationRun-abc.js', 60),
       chunk('StylesRecipe-abc.js', 42),
+      chunk('StylesBrowser-abc.js', 70),
       chunk('StylePresetCatalogSearchSurface-abc.js', 155),
       chunk('stylePresetCatalogData-abc.js', 149),
       chunk('stylePresetCatalogData.pack_01-abc.js', 21),
@@ -80,6 +83,7 @@ describe('UI chunk report', () => {
       chunk('StudioGenerationDock-abc.js', 62),
       chunk('localGenerationRun-abc.js', 60),
       chunk('StylesRecipe-abc.js', 42),
+      chunk('StylesBrowser-abc.js', 70),
       chunk('StylePresetCatalogSearchSurface-abc.js', 8),
       chunk('CameraAnglesRecipe-abc.js', 23),
       chunk('three.module-abc.js', 723),

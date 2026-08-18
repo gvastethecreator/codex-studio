@@ -63,6 +63,8 @@ describe('buildStudioCommandCenterProjection', () => {
       expect.objectContaining({
         id: 'google',
         label: 'Google image API',
+        shortLabel: 'google',
+        toolbarLabel: 'goo',
         tone: 'success',
         canExecute: true,
       }),

@@ -30,15 +30,8 @@ import {
   IconBolt as Zap,
 } from '@tabler/icons-react';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import {
-  formatCodexModelLabel,
-  formatCodexSpeedLabel,
-  getCodexReasoningOptions,
-  getCodexSpeedOptions,
-  normalizeCodexReasoningEffort,
-  normalizeCodexSpeed,
-  pickPreferredCodexModel,
-} from '../lib/codexExecution';
+import { normalizeCodexReasoningEffort, normalizeCodexSpeed } from '../lib/codexExecution';
+import { buildComposerProviderProjection } from '../lib/composerProviderProjection';
 import { getActiveRecipeIndicator } from '../lib/activeRecipeIndicator';
 import type {
   CodexModel,
@@ -53,11 +46,6 @@ import type {
   ImageGenerationConfig,
   ImageSize,
 } from '../types';
-import {
-  listGrokImagineRatioOptions,
-  resolveGrokImagineGenerateBlock,
-} from '../lib/grokImagineUiPolicy';
-import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 import KeyPopover from './KeyPopover';
 import Tooltip from './Tooltip';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
@@ -140,10 +128,8 @@ const AVAILABLE_MODELS: {
   },
 ];
 
-const RATIOS = IMAGE_GEN_RATIO_OPTIONS;
 const PRO_SIZES: ImageSize[] = ['1K'];
 const BATCH_COUNTS = [1, 2, 3, 4];
-const EMPTY_CODEX_MODELS: CodexModel[] = [];
 
 const GENERATION_PROVIDER_LABELS: Partial<Record<GenerationProviderId, string>> = {
   codex: 'Codex',
@@ -156,14 +142,6 @@ const GENERATION_PROVIDER_LABELS: Partial<Record<GenerationProviderId, string>> 
 
 function formatGenerationProviderLabel(providerId: GenerationProviderId) {
   return GENERATION_PROVIDER_LABELS[providerId] ?? providerId;
-}
-
-function buildCodexFallbackCatalogErrorMessage(catalog: CodexModelCatalogResponse | null) {
-  if (!catalog || catalog.source !== 'fallback' || !catalog.error) {
-    return null;
-  }
-
-  return 'Using documented catalog while Codex app-server is not responding live.';
 }
 
 import { useToastUi } from '../contexts/GlobalContext';
@@ -230,32 +208,50 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const [magicInstruction, setMagicInstruction] = useState('');
     const [isRefactoring, setIsRefactoring] = useState(false);
 
-    const codexModels = codexModelCatalog?.models ?? EMPTY_CODEX_MODELS;
-    const preferredExecutionModelId = pickPreferredCodexModel(
-      codexModels,
-      generationConfig.executionModel,
+    const providerChrome = useMemo(
+      () =>
+        buildComposerProviderProjection({
+          providerId: activeProviderId,
+          recipeId: activeRecipe,
+          aspectRatio: generationConfig.aspectRatio,
+          attachments: generationConfig.attachments,
+          grokCanExecute,
+          grokStatus,
+          grokDiagnostics,
+          codexModelCatalog,
+          executionModel: generationConfig.executionModel,
+          executionReasoningEffort: generationConfig.executionReasoningEffort,
+          executionSpeed: generationConfig.executionSpeed,
+          catalogError: codexModelCatalogError,
+        }),
+      [
+        activeProviderId,
+        activeRecipe,
+        codexModelCatalog,
+        codexModelCatalogError,
+        generationConfig.aspectRatio,
+        generationConfig.attachments,
+        generationConfig.executionModel,
+        generationConfig.executionReasoningEffort,
+        generationConfig.executionSpeed,
+        grokCanExecute,
+        grokDiagnostics,
+        grokStatus,
+      ],
     );
-    const selectedExecutionModel =
-      codexModels.find((model) => model.id === generationConfig.executionModel) ??
-      codexModels.find((model) => model.id === preferredExecutionModelId) ??
-      null;
-    const executionReasoningOptions = getCodexReasoningOptions(selectedExecutionModel);
-    const executionSpeedOptions = getCodexSpeedOptions(selectedExecutionModel);
-    const executionModelLabel = formatCodexModelLabel(
-      generationConfig.executionModel,
-      selectedExecutionModel?.displayName,
-    );
-    const executionSourceMessage =
-      buildCodexFallbackCatalogErrorMessage(codexModelCatalog) || codexModelCatalogError;
-    const executionSummary = [
-      executionModelLabel,
-      generationConfig.executionReasoningEffort?.toUpperCase(),
-      generationConfig.executionSpeed !== 'standard'
-        ? formatCodexSpeedLabel(generationConfig.executionSpeed)
-        : null,
-    ]
-      .filter(Boolean)
-      .join(' · ');
+    const {
+      generateBlock,
+      ratios: currentRatios,
+      showCodexPromptTools,
+      showCodexModelChrome,
+      execution,
+    } = providerChrome;
+    const codexModels = execution.models;
+    const selectedExecutionModel = execution.selectedModel;
+    const executionReasoningOptions = execution.reasoningOptions;
+    const executionSpeedOptions = execution.speedOptions;
+    const executionSourceMessage = execution.sourceMessage;
+    const executionSummary = execution.summary;
 
     const isScrambling = isEnhancingPrompt || isRefactoring;
 
@@ -333,17 +329,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     }, [generationConfig.prompt, localPrompt]);
 
-    const currentRatios = activeProviderId === 'grok' ? listGrokImagineRatioOptions() : RATIOS;
-    const generateBlock = resolveGrokImagineGenerateBlock({
-      providerId: activeProviderId,
-      recipeId: activeRecipe,
-      aspectRatio: generationConfig.aspectRatio,
-      attachments: generationConfig.attachments,
-      canExecute: grokCanExecute,
-      status: grokStatus,
-      diagnostics: grokDiagnostics,
-    });
-    const showCodexPromptTools = activeProviderId !== 'grok';
+
 
     const handleTriggerGenerate = useCallback(() => {
       if (generateBlock) return;
@@ -1017,7 +1003,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   </DemandMountedGsapDropdown>
                 </div>
 
-                {activeProviderId === 'codex' ? (
+                {showCodexModelChrome ? (
                   <>
                     {/* Model Selector */}
                     <div className="relative min-w-0">

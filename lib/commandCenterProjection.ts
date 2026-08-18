@@ -21,6 +21,8 @@ export interface CommandCenterRuntimeProjection {
 export interface CommandCenterProviderProjection {
   id: GenerationProviderId;
   label: string;
+  shortLabel: string;
+  toolbarLabel: string;
   status: 'active' | 'planned' | 'not_configured' | 'unknown';
   tone: StudioStatusTone;
   tooltip: string;
@@ -102,8 +104,23 @@ function resolveProviderFallbackLabel(providerId: GenerationProviderId) {
   return providerId;
 }
 
+export function resolveProviderShortLabel(providerId: GenerationProviderId) {
+  if (providerId === 'codex') return 'Codex';
+  if (providerId === 'grok') return 'Grok';
+  return providerId;
+}
+
+export function resolveProviderToolbarLabel(
+  providerId: GenerationProviderId,
+  compactMode: boolean,
+) {
+  const shortLabel = resolveProviderShortLabel(providerId);
+  return compactMode ? shortLabel.slice(0, 3) : shortLabel;
+}
+
 function buildProviderProjection({
   providerId,
+  compactMode,
   providerCapabilities,
   providerRuntimePreflight,
 }: Pick<
@@ -111,6 +128,7 @@ function buildProviderProjection({
   'providerCapabilities' | 'providerRuntimePreflight'
 > & {
   providerId: GenerationProviderId;
+  compactMode: boolean;
 }): CommandCenterProviderProjection {
   const capability =
     providerCapabilities?.providers.find((provider) => provider.providerId === providerId) ??
@@ -145,6 +163,8 @@ function buildProviderProjection({
   return {
     id: providerId,
     label: capability?.label ?? resolveProviderFallbackLabel(providerId),
+    shortLabel: resolveProviderShortLabel(providerId),
+    toolbarLabel: resolveProviderToolbarLabel(providerId, compactMode),
     status,
     tone,
     tooltip: `${detail}${diagnostics}`,
@@ -164,18 +184,21 @@ export function buildStudioCommandCenterProjection({
   isGenerating,
 }: BuildStudioCommandCenterProjectionArgs): StudioCommandCenterProjection {
   const activeProviderId = settings?.defaultProviderId ?? 'codex';
+  const compactMode = Boolean(settings?.commandCenterCompactMode);
 
   return {
-    compactMode: Boolean(settings?.commandCenterCompactMode),
+    compactMode,
     runtimeStatus: summarizeCommandCenterRuntimeStatus(statusItems),
     provider: buildProviderProjection({
       providerId: activeProviderId,
+      compactMode,
       providerCapabilities,
       providerRuntimePreflight,
     }),
     providerOptions: QUICK_SWITCH_PROVIDER_IDS.map((providerId) =>
       buildProviderProjection({
         providerId,
+        compactMode,
         providerCapabilities,
         providerRuntimePreflight,
       }),

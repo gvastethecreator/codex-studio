@@ -1,6 +1,7 @@
 export interface StyleRuntimePackLoadRequest {
   requiredPackIds: string[];
   loadAll: boolean;
+  requiredThumbnailPackIds: string[];
 }
 
 export interface ResolveStyleRuntimePackLoadRequestOptions {
@@ -13,11 +14,24 @@ export interface ResolveStyleRuntimePackLoadRequestOptions {
   isGlobalStyleSearchActive: boolean;
   runtimePackIds: readonly string[];
   favoritesPackId: string;
+  visibleCollectionSourcePackIds?: readonly string[];
+}
+
+export function isStyleThumbnailPackId(packId: string) {
+  return /^pack_\d+$/.test(packId);
+}
+
+function uniquePackIds(packIds: readonly string[]) {
+  return [...new Set(packIds)];
+}
+
+function listNumericPackIds(packIds: readonly string[]) {
+  return uniquePackIds(packIds.filter(isStyleThumbnailPackId));
 }
 
 /**
- * Keep the landing surface metadata-only. Runtime pack modules are loaded only
- * after the user has selected a pack, a collection, or a global browsing mode.
+ * Landing needs thumbnail projections for folder covers. Runtime pack modules
+ * stay unloaded until the user selects a pack, a collection, or a browse tab.
  */
 export function resolveStyleRuntimePackLoadRequest({
   isPackLandingOpen,
@@ -29,20 +43,28 @@ export function resolveStyleRuntimePackLoadRequest({
   isGlobalStyleSearchActive,
   runtimePackIds,
   favoritesPackId,
+  visibleCollectionSourcePackIds = [],
 }: ResolveStyleRuntimePackLoadRequestOptions): StyleRuntimePackLoadRequest {
   if (isPackLandingOpen) {
-    return { requiredPackIds: [], loadAll: false };
+    return {
+      requiredPackIds: [],
+      loadAll: false,
+      requiredThumbnailPackIds: listNumericPackIds(visibleCollectionSourcePackIds),
+    };
   }
 
   const requiredPackIds = runtimePackIds.includes(currentPackId)
     ? [currentPackId, ...activeCollectionSourcePackIds]
     : [...activeCollectionSourcePackIds];
 
+  const loadAll =
+    isGlobalStyleBrowseTab ||
+    (currentPackId === favoritesPackId && favoritesCount > 0) ||
+    (isGlobalStyleSearchActive && !activeStyleCollectionId);
+
   return {
     requiredPackIds,
-    loadAll:
-      isGlobalStyleBrowseTab ||
-      (currentPackId === favoritesPackId && favoritesCount > 0) ||
-      (isGlobalStyleSearchActive && !activeStyleCollectionId),
+    loadAll,
+    requiredThumbnailPackIds: listNumericPackIds(loadAll ? runtimePackIds : requiredPackIds),
   };
 }

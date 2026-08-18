@@ -24,11 +24,10 @@ import {
 } from '../packages/shared/src/spriteAtlasContracts';
 import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
+import { type RegisteredRecipeId } from './recipeIds';
 import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
 import type { RecipeContextParams } from './recipeContextBuilders';
 import { buildRecipeProviderDirectives } from './recipeProviderDirectives';
-
-type RegisteredRecipeId = Exclude<RecipeId, null>;
 
 function isInlineAttachmentDataUrl(value: string | null | undefined) {
   return /^data:image\/[^;]+;base64,/i.test(value?.trim() ?? '');

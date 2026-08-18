@@ -1,5 +1,5 @@
 import { styleCategoryImageKey } from '../../../../lib/recipeAssetKeys';
-import { STYLE_CARD_THUMBNAILS } from '../../../../lib/styleThumbnailCatalog';
+import { getStyleThumbnailCatalog } from '../../../../lib/styleThumbnailCatalog';
 import type { StyleCollection, StyleCollectionEntry } from './styleCollectionTypes';
 
 export const STYLE_FOLDER_FILE_LIMIT = 5;
@@ -93,7 +93,7 @@ export function getStyleFolderImages({
   seedId,
   sourcePackIds,
   imageCandidates = [],
-  thumbnailCatalog = STYLE_CARD_THUMBNAILS,
+  thumbnailCatalog = getStyleThumbnailCatalog(),
 }: {
   seedId: string;
   sourcePackIds: readonly string[];
@@ -133,7 +133,7 @@ export function getStyleFolderImages({
 
 export function getStyleCollectionFolderImageCandidates(
   collection: StyleCollection,
-  thumbnailCatalog: StyleThumbnailCatalog = STYLE_CARD_THUMBNAILS,
+  thumbnailCatalog: StyleThumbnailCatalog = getStyleThumbnailCatalog(),
 ): StyleFolderImageCandidate[] {
   const candidates: StyleFolderImageCandidate[] = [];
   const seen = new Set<string>();

@@ -29,7 +29,26 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           currentPackId: 'pack_01',
         }),
       ),
-    ).toEqual({ requiredPackIds: [], loadAll: false });
+    ).toEqual({
+      requiredPackIds: [],
+      loadAll: false,
+      requiredThumbnailPackIds: [],
+    });
+  });
+
+  test('requests landing thumbs from visible family source packs only', () => {
+    expect(
+      resolveStyleRuntimePackLoadRequest(
+        createOptions({
+          isPackLandingOpen: true,
+          visibleCollectionSourcePackIds: ['pack_05', 'favorites', 'pack_16'],
+        }),
+      ),
+    ).toEqual({
+      requiredPackIds: [],
+      loadAll: false,
+      requiredThumbnailPackIds: ['pack_05', 'pack_16'],
+    });
   });
 
   test('requests only the explicitly selected runtime pack', () => {
@@ -39,7 +58,11 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           currentPackId: 'pack_02',
         }),
       ),
-    ).toEqual({ requiredPackIds: ['pack_02'], loadAll: false });
+    ).toEqual({
+      requiredPackIds: ['pack_02'],
+      loadAll: false,
+      requiredThumbnailPackIds: ['pack_02'],
+    });
   });
 
   test('keeps collection source packs available for an active collection', () => {
@@ -51,7 +74,11 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           activeCollectionSourcePackIds: ['pack_01', 'pack_02'],
         }),
       ),
-    ).toEqual({ requiredPackIds: ['pack_01', 'pack_02'], loadAll: false });
+    ).toEqual({
+      requiredPackIds: ['pack_01', 'pack_02'],
+      loadAll: false,
+      requiredThumbnailPackIds: ['pack_01', 'pack_02'],
+    });
   });
 
   test('loads every runtime pack for global browse tabs', () => {
@@ -62,7 +89,11 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           isGlobalStyleBrowseTab: true,
         }),
       ),
-    ).toEqual({ requiredPackIds: [], loadAll: true });
+    ).toEqual({
+      requiredPackIds: [],
+      loadAll: true,
+      requiredThumbnailPackIds: ['pack_01', 'pack_02', 'pack_03'],
+    });
   });
 
   test('loads every runtime pack when favorites are selected and populated', () => {
@@ -73,7 +104,11 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           favoritesCount: 2,
         }),
       ),
-    ).toEqual({ requiredPackIds: [], loadAll: true });
+    ).toEqual({
+      requiredPackIds: [],
+      loadAll: true,
+      requiredThumbnailPackIds: ['pack_01', 'pack_02', 'pack_03'],
+    });
   });
 
   test('does not load all runtime packs for an empty favorites tab', () => {
@@ -83,7 +118,11 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           currentPackId: 'favorites',
         }),
       ),
-    ).toEqual({ requiredPackIds: [], loadAll: false });
+    ).toEqual({
+      requiredPackIds: [],
+      loadAll: false,
+      requiredThumbnailPackIds: [],
+    });
   });
 
   test('loads every runtime pack for global search without an active collection', () => {
@@ -94,7 +133,11 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           isGlobalStyleSearchActive: true,
         }),
       ),
-    ).toEqual({ requiredPackIds: ['pack_01'], loadAll: true });
+    ).toEqual({
+      requiredPackIds: ['pack_01'],
+      loadAll: true,
+      requiredThumbnailPackIds: ['pack_01', 'pack_02', 'pack_03'],
+    });
   });
 
   test('keeps collection source packs scoped during collection search', () => {
@@ -107,7 +150,11 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           isGlobalStyleSearchActive: true,
         }),
       ),
-    ).toEqual({ requiredPackIds: ['pack_01', 'pack_02'], loadAll: false });
+    ).toEqual({
+      requiredPackIds: ['pack_01', 'pack_02'],
+      loadAll: false,
+      requiredThumbnailPackIds: ['pack_01', 'pack_02'],
+    });
   });
 
   test('does not load runtime packs for the user styles surface', () => {
@@ -117,7 +164,11 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           currentPackId: 'user-styles',
         }),
       ),
-    ).toEqual({ requiredPackIds: [], loadAll: false });
+    ).toEqual({
+      requiredPackIds: [],
+      loadAll: false,
+      requiredThumbnailPackIds: [],
+    });
   });
 
   test('landing mode takes precedence over global browse and search', () => {
@@ -131,6 +182,10 @@ describe('resolveStyleRuntimePackLoadRequest', () => {
           isGlobalStyleSearchActive: true,
         }),
       ),
-    ).toEqual({ requiredPackIds: [], loadAll: false });
+    ).toEqual({
+      requiredPackIds: [],
+      loadAll: false,
+      requiredThumbnailPackIds: [],
+    });
   });
 });

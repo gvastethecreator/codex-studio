@@ -22,9 +22,9 @@ describe('resolveRequiredStyleRuntimePackIds', () => {
   });
 
   it('loads global browse packs in small batches', () => {
-    expect(chunkStyleRuntimePackIds(['pack_01', 'pack_02', 'pack_03', 'pack_04'], 3)).toEqual([
-      ['pack_01', 'pack_02', 'pack_03'],
-      ['pack_04'],
+    expect(chunkStyleRuntimePackIds(['pack_01', 'pack_02', 'pack_03', 'pack_04'], 2)).toEqual([
+      ['pack_01', 'pack_02'],
+      ['pack_03', 'pack_04'],
     ]);
   });
 });

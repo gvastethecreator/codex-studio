@@ -1,19 +1,22 @@
 {
-  "source_commit": "0b327ae4d540032a83038c31ac2e54f04c80f9e1",
+  "source_commit": "3dd225d12ed4c13dd9109ec8ba96c03b93a19c12",
   "working_tree_dirty": true,
-  "generated_at": "2026-08-15T00:50:28Z",
+  "generated_at": "2026-08-18T12:00:00Z",
   "scanned_scope": [
     "."
   ],
   "excluded_directories": [
+    ".agents",
     ".cache",
     ".git",
     ".hg",
     ".next",
     ".nuxt",
+    ".obsidian",
     ".svn",
     ".turbo",
     ".venv",
+    ".vscode",
     "__pycache__",
     "build",
     "coverage",
@@ -26,121 +29,103 @@
     "vendor",
     "venv"
   ],
-  "fingerprint_algorithm": "sha256-path-content-v1",
+  "fingerprint_algorithm": "sha256-path-content-v2",
   "modules": [
     {
       "id": ".",
       "path": ".",
-      "file_count": 31,
-      "fingerprint": "455b7082b57690c5a79ee87f50e3423642170295b5281b3985163077d57cc05c"
-    },
-    {
-      "id": ".agents",
-      "path": ".agents",
-      "file_count": 1,
-      "fingerprint": "6cbf2e46a80bd048dfa5356af72f034ca8d56d32c5aff528e0df3a35b83ea2f1"
+      "file_count": 30,
+      "fingerprint": "3b020f03eb90d1ff57f14503f58fe6c500c65ebad6b3417c004480e368b247ba"
     },
     {
       "id": ".github",
       "path": ".github",
-      "file_count": 6,
-      "fingerprint": "4e345d376885f4c9d289c5a999bf1be5a041fe1f5e81519528d2c24116ce521c"
+      "file_count": 8,
+      "fingerprint": "3e6aef70033475e6fbef7f70ce7699073fa793b0cc21eaad251ae847926bba64"
     },
     {
       "id": ".vite-hooks",
       "path": ".vite-hooks",
       "file_count": 1,
-      "fingerprint": "1f1bb7af440835e3687609f2f7dfd61e2f3bdb1237d8c631c781c6f80d6ec7d1"
-    },
-    {
-      "id": ".vscode",
-      "path": ".vscode",
-      "file_count": 2,
-      "fingerprint": "b089309b581f0d23749f1949836110d0aab6188dbb079ca0be0c0176283d9429"
+      "fingerprint": "acbb756f3f502b71b2833bfaf6a8dd9e27fc1904b9e638f5b799eb47203210eb"
     },
     {
       "id": "apps",
       "path": "apps",
-      "file_count": 189,
-      "fingerprint": "ef414c9db3254e6e33852443e4d1233b774b6e9b74ba92f4e852e5dc20e47488"
+      "file_count": 192,
+      "fingerprint": "796aed60fcfd11f94bed104ec4b62de91e8089b1f11ecba85da90f427f528ebb"
     },
     {
       "id": "assets",
       "path": "assets",
       "file_count": 6607,
-      "fingerprint": "838a347133deb5aed3cb4ceb2f537bd4f03f5259f98abd356845a2400a9c142a"
+      "fingerprint": "348e282748afa998b1ca8d7ebe2c64162277d7914ee39571d3acca736bb3b954"
     },
     {
       "id": "components",
       "path": "components",
       "file_count": 1970,
-      "fingerprint": "30989d7b8bebefefb693ccd828477d05476cffa16de7b006fd45eabdeb3eef7b"
+      "fingerprint": "9fcbf528fb135e7efb5fa584f5124233ab09cb35ebc46308e22673d929ed25ff"
     },
     {
       "id": "contexts",
       "path": "contexts",
       "file_count": 12,
-      "fingerprint": "b10d5fc4f844ef99d7164b5025754ee3eaee4d044fe1cd236c5b4a0fb22edd5e"
+      "fingerprint": "b51108492190cb5089da4507ba4d82cebfb87f3f0bd2aeb901bb9ab084ea5c50"
     },
     {
       "id": "docs",
       "path": "docs",
-      "file_count": 50,
-      "fingerprint": "ccdf4328bb57c5e9415420b70e355bf2a8ef1db91dc9a54354290355627614bd"
+      "file_count": 60,
+      "fingerprint": "8da6c7e4150f4c16574aff749af93feb0ba7c923ec0eaa56fbdc2e2bc4222df4"
     },
     {
       "id": "electron",
       "path": "electron",
       "file_count": 2,
-      "fingerprint": "d8b50df5201a0664d6bfd2ccca74b02aa493a5a713fd6601b9932f6b3625ad90"
+      "fingerprint": "7c22ef4f3766ea64b8ad6cd45f5c08cb2dacf12c002f0141c55fed1fbcfa1fe8"
     },
     {
       "id": "hooks",
       "path": "hooks",
       "file_count": 68,
-      "fingerprint": "78c13038986b9efb4d6f1cc99c5c4d6b714f84270f3b1bcae55d92feb52a9174"
+      "fingerprint": "5b8606331eeb4681d48e2c1d269f4c47be5d4e8c0d58cba203ccbdc64320f0f3"
     },
     {
       "id": "lib",
       "path": "lib",
-      "file_count": 140,
-      "fingerprint": "d56482b9116b23831b9bc883b9de8fba68a6531ec7f7ceb642a32d209c19f7cf"
+      "file_count": 144,
+      "fingerprint": "6d87e2a1d3fc1fc2a60f87b15445866f50cb1a833450abd4a58b07115822ea38"
     },
     {
       "id": "packages",
       "path": "packages",
-      "file_count": 28,
-      "fingerprint": "01d0e39f57a81ea5c68eb0ac77f84aee3421a5f5e5c86c651267e96746ef7d5b"
+      "file_count": 30,
+      "fingerprint": "684837a730f3bba8255f0502546be8ee16d1cf91528e538ce1dbcef7873da5ea"
     },
     {
       "id": "scripts",
       "path": "scripts",
-      "file_count": 119,
-      "fingerprint": "c59d7946b4465e68707a3add427141acf5a8b743fcdfeefbab7fada9d293a930"
+      "file_count": 125,
+      "fingerprint": "8105cb533794f429a4b7480c135ce09e2e028a8436427cd12cd06d09d687270e"
     },
     {
       "id": "services",
       "path": "services",
       "file_count": 28,
-      "fingerprint": "3facd54738e64b5088e34a49c2904e8d559ae6fe9a6765594e5604aa7a58e513"
+      "fingerprint": "6e5f24e56f2d7c652fbf56bd08fbe91b5e065dad42da6c265f3f53b559d9b3b5"
     },
     {
       "id": "skills",
       "path": "skills",
       "file_count": 18,
-      "fingerprint": "52189d059aad5caa6e9b7c68cb2c93fd5cf71c3b52b01abecef019c464400723"
-    },
-    {
-      "id": "test-files",
-      "path": "test-files",
-      "file_count": 4,
-      "fingerprint": "56aa15416e636929d5cd8b04f216454d4798e80f62fc6f7b57439b70acefc449"
+      "fingerprint": "f99415b5f576075b6708f46d615f39c0d0e0852932abb9bd9eadaa0907c48b51"
     },
     {
       "id": "utils",
       "path": "utils",
       "file_count": 12,
-      "fingerprint": "f59288c4e69358b14d74108630822790d5c31e32319e2d9b8e16fd5f9f393722"
+      "fingerprint": "eb29bdcde3e1a9d00150baa384aeaa5371684eb47b93691f81c2c1392c005ea2"
     }
   ]
 }

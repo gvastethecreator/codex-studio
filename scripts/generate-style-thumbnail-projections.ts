@@ -13,6 +13,9 @@ import { loadStyleManifestGraph } from './style-manifest-files';
 import {
   categoryImageSuffix,
   collectStyleLandingFolderPreferredKeys,
+  groupThumbnailPackIds,
+  isGeneratedThumbnailModuleStale,
+  isLandingFolderIndexStale,
   resolveThumbnailAssetPackId,
   selectStyleLandingFolderImageKeys,
   STYLE_LANDING_FOLDER_IMAGE_LIMIT,
@@ -321,9 +324,7 @@ for (const [packId, packAssets] of filesByPack) {
   );
 }
 const packIds = [...filesByPack.keys()].sort();
-const packGroups = Array.from({ length: Math.ceil(packIds.length / 2) }, (_, index) =>
-  packIds.slice(index * 2, index * 2 + 2),
-);
+const packGroups = groupThumbnailPackIds(packIds);
 const landingSource = buildLandingFolderIndexSource();
 const expected = new Map<string, string>([
   ['index.ts', buildIndexSource(packGroups)],
@@ -350,13 +351,12 @@ if (checkMode) {
               (asset) => `${asset.sourceDirName}/${asset.fileName}`,
             ),
           );
-    const referenceCount =
-      fileName === 'index.ts'
-        ? (actual.match(/=>\s*import\(/g) ?? []).length
-        : (actual.match(/new URL\(/g) ?? []).length;
     if (
-      referenceCount !== referencedFiles.length ||
-      referencedFiles.some((reference) => !actual.includes(reference))
+      isGeneratedThumbnailModuleStale({
+        actual,
+        referencedFiles,
+        isIndex: fileName === 'index.ts',
+      })
     ) {
       console.error(`[styles:thumbnails] ${fileName} is stale.`);
       stale = true;
@@ -373,9 +373,11 @@ if (checkMode) {
   );
   const landingCounts = [...landingSource.matchAll(/presetCount:\s*\d+/g)].map((match) => match[0]);
   if (
-    !actualLanding.includes('STYLE_LANDING_FOLDER_SUMMARIES_BY_ID') ||
-    landingIds.some((id) => !actualLanding.includes(id)) ||
-    landingCounts.some((count) => !actualLanding.includes(count))
+    isLandingFolderIndexStale({
+      actual: actualLanding,
+      expectedIds: landingIds,
+      expectedCounts: landingCounts,
+    })
   ) {
     console.error('[styles:thumbnails] styleLandingFolderIndex.generated.ts is stale.');
     stale = true;

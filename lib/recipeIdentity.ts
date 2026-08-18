@@ -1,8 +1,8 @@
-import type { ImageGenerationConfig, RecipeId } from '../types';
+import type { ImageGenerationConfig } from '../types';
 import { extractRecipeIdFromRecipeContext } from '../packages/shared/src/promptTransport';
-import { RECIPE_MODULES } from './recipeModules';
+import { isRegisteredRecipeId, type RegisteredRecipeId } from './recipeIds';
 
-export type RegisteredRecipeId = Exclude<RecipeId, null>;
+export type { RegisteredRecipeId } from './recipeIds';
 
 export interface RecipeIdentity {
   recipeId: RegisteredRecipeId;
@@ -10,16 +10,8 @@ export interface RecipeIdentity {
   recipeContext: string;
 }
 
-const KNOWN_RECIPE_IDS = new Set<RegisteredRecipeId>(
-  Object.keys(RECIPE_MODULES) as RegisteredRecipeId[],
-);
-
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
-}
-
-function isRegisteredRecipeId(value: unknown): value is RegisteredRecipeId {
-  return typeof value === 'string' && KNOWN_RECIPE_IDS.has(value as RegisteredRecipeId);
 }
 
 export function resolveRecipeIdentity(

@@ -70,3 +70,44 @@ export function collectStyleLandingFolderPreferredKeys({
 export function neededCategoryImageKey(packId: string, categoryName: string) {
   return styleCategoryImageKey(packId, categoryName);
 }
+
+export function groupThumbnailPackIds(packIds: readonly string[], packGroupSize = 1) {
+  const size = Math.max(1, Math.floor(packGroupSize));
+  return Array.from({ length: Math.ceil(packIds.length / size) }, (_, index) =>
+    packIds.slice(index * size, index * size + size),
+  );
+}
+
+export function isGeneratedThumbnailModuleStale({
+  actual,
+  referencedFiles,
+  isIndex,
+}: {
+  actual: string;
+  referencedFiles: readonly string[];
+  isIndex: boolean;
+}) {
+  const referenceCount = isIndex
+    ? (actual.match(/=>\s*import\(/g) ?? []).length
+    : (actual.match(/new URL\(/g) ?? []).length;
+  return (
+    referenceCount !== referencedFiles.length ||
+    referencedFiles.some((reference) => !actual.includes(reference))
+  );
+}
+
+export function isLandingFolderIndexStale({
+  actual,
+  expectedIds,
+  expectedCounts,
+}: {
+  actual: string;
+  expectedIds: readonly string[];
+  expectedCounts: readonly string[];
+}) {
+  return (
+    !actual.includes('STYLE_LANDING_FOLDER_SUMMARIES_BY_ID') ||
+    expectedIds.some((id) => !actual.includes(id)) ||
+    expectedCounts.some((count) => !actual.includes(count))
+  );
+}

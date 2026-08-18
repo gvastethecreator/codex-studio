@@ -39,10 +39,12 @@ import {
 import { STYLE_LANDING_FOLDER_SUMMARIES_BY_ID } from '../../lib/styleLandingFolderIndex.generated';
 import {
   loadStyleThumbnailPack,
-  STYLE_CARD_THUMBNAILS,
+  getStyleThumbnail,
   subscribeStyleThumbnailCatalog,
 } from '../../lib/styleThumbnailCatalog';
 import { STYLE_RUNTIME_PACK_SUMMARIES } from './stylesData';
+import { resolveStyleRuntimePackLoadRequest } from './styleRuntimePackRequirements';
+import { STYLE_PACKS_TAB_ID } from './styleTabRouting';
 import { USER_STYLE_PACK_ID } from './userStyleRuntimeAdapter';
 
 const FAVORITES_PACK_ID = 'favorites';
@@ -618,7 +620,7 @@ function formatLandingFolderLabel(key: string) {
 
 function getLandingFolderImageCandidates(id: string): StyleFolderImageCandidate[] {
   return (STYLE_LANDING_FOLDER_SUMMARIES_BY_ID[id]?.imageKeys ?? []).flatMap((key) => {
-    const src = STYLE_CARD_THUMBNAILS[key];
+    const src = getStyleThumbnail(key);
     if (!src) return [];
     return [{ id: key, src, label: formatLandingFolderLabel(key) }];
   });
@@ -630,12 +632,20 @@ function useStyleLandingThumbnailCatalog() {
   useEffect(() => subscribeStyleThumbnailCatalog(() => setRevision((value) => value + 1)), []);
 
   useEffect(() => {
-    const packIds = [
-      ...new Set([
-        ...VISIBLE_STYLE_COLLECTIONS.flatMap((collection) => collection.sourcePackIds),
-        ...STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id),
-      ]),
-    ].filter((packId) => /^pack_\d+$/.test(packId));
+    const packIds = resolveStyleRuntimePackLoadRequest({
+      isPackLandingOpen: true,
+      currentPackId: STYLE_PACKS_TAB_ID,
+      activeStyleCollectionId: null,
+      activeCollectionSourcePackIds: [],
+      isGlobalStyleBrowseTab: false,
+      favoritesCount: 0,
+      isGlobalStyleSearchActive: false,
+      runtimePackIds: STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => pack.id),
+      favoritesPackId: FAVORITES_PACK_ID,
+      visibleCollectionSourcePackIds: VISIBLE_STYLE_COLLECTIONS.flatMap(
+        (collection) => collection.sourcePackIds,
+      ),
+    }).requiredThumbnailPackIds;
     let cancelled = false;
     void (async () => {
       for (let index = 0; index < packIds.length; index += 2) {

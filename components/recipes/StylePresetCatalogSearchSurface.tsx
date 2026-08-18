@@ -10,8 +10,8 @@ import {
   IconLoader as LoaderCircle,
 } from '@tabler/icons-react';
 import {
-  STYLE_CARD_THUMBNAILS,
-  STYLE_CATEGORY_IMAGES,
+  getStyleCategoryImage,
+  getStyleThumbnail,
   STYLE_CATEGORY_PREVIEWS,
 } from '../../lib/styleThumbnailCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
@@ -285,9 +285,10 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         ) : results.length > 0 ? (
           <div data-style-catalog-results className="grid grid-cols-1 gap-3 2xl:grid-cols-2">
             {results.map((result) => {
-              const resultImageFromDefault = STYLE_CARD_THUMBNAILS[result.id];
-              const categoryImage =
-                STYLE_CATEGORY_IMAGES[styleCategoryImageKey(result.packId, result.categoryName)];
+              const resultImageFromDefault = getStyleThumbnail(result.id);
+              const categoryImage = getStyleCategoryImage(
+                styleCategoryImageKey(result.packId, result.categoryName),
+              );
               const resultImageFromPreview = resolveStylePreviewImage({
                 categoryImage,
                 categoryPreviewImage: STYLE_CATEGORY_PREVIEWS[result.categoryName],
