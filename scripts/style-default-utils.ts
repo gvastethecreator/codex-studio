@@ -9,6 +9,7 @@ import { composeStyleRuntimePacksFromManifests } from '../components/recipes/sty
 import { compareStylePackIdsForDisplay } from '../components/recipes/styles/packOrdering';
 import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
 import { runWithScriptRetry } from './runtimePolicy';
+import { DEFAULT_STUDIO_LIBRARY_FOLDER_NAME } from '../packages/shared/src/onboardingContracts';
 
 export const rootDir = process.cwd();
 const homeDir = resolveUserHome();
@@ -23,7 +24,7 @@ const previewsDir = path.join(recipeStylesDir, 'previews');
 export const RECIPE_ASSET_EXTENSION = '.webp';
 export const IMAGEGEN_DENOISE_SUFFIX =
   'Preserve the preset native rendering language: photographic, material, macro, painting, illustration, game-art, cartoon, fashion, architecture, graphic, or abstract media are all allowed when they match the preset visual DNA. Do not convert a non-anime preset into anime, manga, big-eye cel faces, visual-novel polish, gacha framing, or generic anime character grammar unless the preset, pack, or category explicitly calls for anime, manga, visual novel, gacha, shonen, shojo, seinen, josei, moe, or isekai. Use controlled grain only when it helps the preset. Avoid noisy grain, dirty dark-color artifact buildup, crushed black blotches, flat black fill, oversharpening, crunchy micro-contrast, excessive ultra-fine noise, ugly texture chatter, low-light compression artifacts, dense mesh artifacts, chainmail-like filler texture, dense cross-hatching carpets, dirty monochrome grain, muddy black ink fields, repeated camera-in-hand, library or market corridor, fantasy hallway, studio chair, curtain, and lamp filler. Favor cleaner large shapes, smoother tonal transitions, controlled material behavior, readable forms, and one clear representative subject, object, material, character, environment, or scene fragment. When a preset asks for people, the character plus environment requirement overrides object/material fallback: keep one clear character integrated with an environment/background, and vary age, body type, crop distance, pose, role, and render lineage across neighboring cards. For human figures, including anime only when explicitly requested, prioritize readable anatomy over spectacle: clean hand count, believable fingers, stable feet, clear joints, head-neck-shoulder alignment, no fused limbs, no melted hands, no tangled instruments, no extra limbs, and simplified secondary figures when action or ensemble staging becomes complex.';
-export const defaultStudioLibraryDir = path.join(homeDir, 'AI-Studio-Library');
+export const defaultStudioLibraryDir = path.join(homeDir, DEFAULT_STUDIO_LIBRARY_FOLDER_NAME);
 export const defaultCodexHome = path.join(homeDir, '.codex');
 
 export { styleCategoryImageKey };

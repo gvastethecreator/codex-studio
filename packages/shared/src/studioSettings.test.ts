@@ -17,7 +17,7 @@ describe('studioSettings', () => {
       preferredLibraryId: null,
       preferredOutputPath: null,
       outputOrganization: {
-        subfolderTokens: ['date', 'provider', 'recipe'],
+        subfolderTokens: ['workspace'],
         fileNameTemplate: '{timestamp}-{provider}-{jobId}',
       },
       providerDefaults: {
@@ -93,6 +93,16 @@ describe('studioSettings', () => {
       serviceTier: null,
     });
     expect(settings.updatedAt).toBe('2026-05-25T00:00:00.000Z');
+  });
+
+  it('keeps workspace as a valid output subfolder token', () => {
+    const settings = mergeEditableStudioSettingsPatch(createDefaultEditableStudioSettings(), {
+      outputOrganization: {
+        subfolderTokens: ['workspace', 'date', 'invalid'],
+      },
+    });
+
+    expect(settings.outputOrganization.subfolderTokens).toEqual(['workspace', 'date']);
   });
 
   it('preserves explicit nulls so provider defaults can be cleared', () => {

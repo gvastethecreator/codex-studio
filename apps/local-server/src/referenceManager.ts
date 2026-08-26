@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import sharp from 'sharp';
 import type { GenerationTaskSpec } from '../../../packages/shared/src';
+import { encodeResizedWebpFromBytes } from './imagePipeline';
 import { resolveLibraryPathFromRoot } from './library';
 
 export interface RawReference {
@@ -101,7 +101,7 @@ interface DecodedReference {
 }
 
 interface NormalizedReference {
-  bytes: Buffer;
+  bytes: Uint8Array;
   width: number | null;
   height: number | null;
 }
@@ -153,23 +153,14 @@ async function normalizeReferenceForContext(
 
   for (const attempt of attempts) {
     try {
-      const result = await sharp(decoded.bytes, {
-        failOn: 'none',
-        animated: false,
-      })
-        .rotate()
-        .resize({
-          width: attempt.maxEdge,
-          height: attempt.maxEdge,
-          fit: 'inside',
-          withoutEnlargement: true,
-        })
-        .webp({ quality: attempt.quality, effort: 5 })
-        .toBuffer({ resolveWithObject: true });
+      const result = await encodeResizedWebpFromBytes(decoded.bytes, {
+        maxEdge: attempt.maxEdge,
+        quality: attempt.quality,
+      });
       const normalized = {
-        bytes: result.data,
-        width: result.info.width ?? null,
-        height: result.info.height ?? null,
+        bytes: result.bytes,
+        width: result.width,
+        height: result.height,
       };
 
       if (!smallest || normalized.bytes.length < smallest.bytes.length) {

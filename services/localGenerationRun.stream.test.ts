@@ -8,6 +8,8 @@ const mocks = vi.hoisted(() => {
     onAssetAdded: vi.fn(),
     onCatalogChanged: vi.fn(),
     onLogAdded: vi.fn(),
+    onOnboardingStage: vi.fn(),
+    onOnboardingProbe: vi.fn(),
     onConnectionChange: vi.fn(),
     close: vi.fn(),
   };
@@ -140,6 +142,8 @@ describe('runSingleCodexImagegenJob stream ownership', () => {
       onAssetAdded: vi.fn(),
       onCatalogChanged: vi.fn(),
       onLogAdded: vi.fn(),
+      onOnboardingStage: vi.fn(),
+      onOnboardingProbe: vi.fn(),
       onConnectionChange: vi.fn(),
       close: vi.fn(),
     };

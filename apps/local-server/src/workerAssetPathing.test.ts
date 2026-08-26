@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vite-plus/test';
 import { createDefaultEditableStudioSettings, type Job } from '../../../packages/shared/src';
 import { createWorkerAssetPathing, inferGeneratedAssetMimeType } from './workerAssetPathing';
@@ -58,7 +59,7 @@ describe('workerAssetPathing', () => {
       const organizedPath = pathing.organizeGeneratedAssetPath(job, sourcePath, 'codex');
 
       expect(organizedPath).not.toBe(sourcePath);
-      expect(organizedPath).toContain(`${path.sep}outputs${path.sep}`);
+      expect(organizedPath).toContain(`${path.sep}outputs${path.sep}default${path.sep}`);
       expect(existsSync(organizedPath)).toBe(true);
       expect(existsSync(sourcePath)).toBe(false);
       expect(readFileSync(organizedPath, 'utf8')).toBe('pixel-data');
@@ -126,5 +127,88 @@ describe('workerAssetPathing', () => {
       rmSync(bootstrapRoot, { recursive: true, force: true });
       rmSync(selectedRoot, { recursive: true, force: true });
     }
+  });
+
+  it('places a named Workspace job under outputs/<workspace-slug>/', () => {
+    const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'worker-asset-workspace-'));
+
+    try {
+      const pathing = createWorkerAssetPathing({
+        resolveExecutionOptions: () => ({
+          model: 'gpt-5.4-mini',
+          reasoningEffort: 'medium',
+          serviceTier: null,
+        }),
+        readEditableStudioSettings: () => createDefaultEditableStudioSettings(),
+        getSetting: () => null,
+        setSetting: () => {},
+        resolveLibraryPath: (...segments: string[]) => path.join(tempRoot, ...segments),
+        getWorkspace: (id) =>
+          id === 'ws-pixel'
+            ? { id: 'ws-pixel', name: 'Pixel Art' }
+            : { id: 'default', name: 'Default' },
+        listWorkspaces: () => [
+          { id: 'default', name: 'Default' },
+          { id: 'ws-pixel', name: 'Pixel Art' },
+        ],
+      });
+
+      const target = pathing.resolveGeneratedAssetTargetPath(
+        createJob({ workspaceId: 'ws-pixel' }),
+        'codex',
+        '.png',
+      );
+
+      expect(target).toContain(`${path.sep}outputs${path.sep}Pixel-Art${path.sep}`);
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  });
+
+  it('does not use preferredOutputPath as the generate library root', () => {
+    const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'worker-asset-library-root-'));
+    const scanPath = path.join(tempRoot, 'external-scan');
+
+    try {
+      const settings = createDefaultEditableStudioSettings();
+      settings.preferredOutputPath = scanPath;
+
+      const pathing = createWorkerAssetPathing({
+        resolveExecutionOptions: () => ({
+          model: 'gpt-5.4-mini',
+          reasoningEffort: 'medium',
+          serviceTier: null,
+        }),
+        readEditableStudioSettings: () => settings,
+        getSetting: () => null,
+        setSetting: () => {},
+        resolveLibraryPath: (...segments: string[]) => path.join(tempRoot, ...segments),
+      });
+
+      const job = createJob({
+        libraryContext: { libraryId: 'library-selected', rootPath: tempRoot },
+      });
+      const target = pathing.resolveGeneratedAssetTargetPath(job, 'codex', '.png');
+
+      expect(job.libraryContext?.rootPath).toBe(tempRoot);
+      expect(job.libraryContext?.rootPath).not.toBe(scanPath);
+      expect(path.relative(path.join(tempRoot, 'outputs'), target)).not.toMatch(/^\.\./);
+      expect(target.includes('external-scan')).toBe(false);
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  });
+
+  it('does not capture preferredOutputPath when creating a generate job library context', () => {
+    const intake = readFileSync(
+      fileURLToPath(new URL('./persistentJobIntake.ts', import.meta.url)),
+      'utf8',
+    );
+    const factory = readFileSync(
+      fileURLToPath(new URL('./appFactory.ts', import.meta.url)),
+      'utf8',
+    );
+    expect(intake).not.toMatch(/preferredOutputPath/);
+    expect(factory).not.toMatch(/preferredOutputPath/);
   });
 });

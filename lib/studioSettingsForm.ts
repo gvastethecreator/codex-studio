@@ -10,12 +10,18 @@ export const OUTPUT_SUBFOLDER_PRESETS: {
   label: string;
   value: StudioOutputSubfolderToken[];
 }[] = [
+  { label: 'Workspace', value: ['workspace'] },
+  { label: 'Workspace / Date', value: ['workspace', 'date'] },
   { label: 'Date / Provider / Recipe', value: ['date', 'provider', 'recipe'] },
   { label: 'Date / Model / Recipe', value: ['date', 'model', 'recipe'] },
   { label: 'Provider / Recipe', value: ['provider', 'recipe'] },
   { label: 'Recipe / Date', value: ['recipe', 'date'] },
   { label: 'No Subfolders', value: [] },
 ];
+
+export const EXTERNAL_SCAN_PATH_LABEL = 'External folder to scan';
+export const EXTERNAL_SCAN_PATH_HELP =
+  'Used to discover External Output Sources. Generate still writes inside the Studio Library.';
 
 export interface StudioSettingsFormState {
   defaultProviderId: GenerationProviderId;
@@ -37,7 +43,7 @@ export function createInitialStudioSettingsFormState(): StudioSettingsFormState 
     defaultProviderId: 'codex',
     defaultOutputMode: 'studio_library',
     preferredOutputPath: '',
-    outputSubfolderPreset: encodeSubfolderTokens(['date', 'provider', 'recipe']),
+    outputSubfolderPreset: encodeSubfolderTokens(['workspace']),
     outputFileNameTemplate: '{timestamp}-{provider}-{jobId}',
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,

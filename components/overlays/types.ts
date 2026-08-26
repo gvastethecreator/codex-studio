@@ -8,6 +8,7 @@ import type {
   GenerationProviderRuntimePreflightResponse,
   JobDetailResponse,
   LocalCodexSessionResponse,
+  OnboardingProbe,
   RegisterExternalOutputSourceInput,
   StudioReadinessSnapshot,
   StorageMaintenanceAuditReport,
@@ -93,6 +94,7 @@ export interface StudioSystemOverlaysProps {
   apiBase: string;
   onboardingError: string | null;
   onboardingHealth: HealthResponse | null;
+  onboardingProbe: OnboardingProbe | null;
   localCodexSession: LocalCodexSessionResponse | null;
   readiness: StudioReadinessSnapshot;
   closeOnboarding: () => void;

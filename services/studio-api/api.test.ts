@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from 'vite-plus/test';
 
 import { buildCatalogQuery } from './catalog';
 import { readLocalStudioErrorMessage, request } from './http';
-import { getStudioRuntimeSnapshot, refreshStudioReadiness } from './runtime';
+import { getStudioRuntimeSnapshot, refreshStudioReadiness, runOnboardingSetup } from './runtime';
 
 function jsonResponse(value: unknown) {
   return new Response(JSON.stringify(value), {
@@ -102,6 +102,44 @@ describe('runtime snapshot cache', () => {
     staleResponse.resolve(jsonResponse(staleSnapshot));
     await expect(staleRead).resolves.toEqual(staleSnapshot);
     await expect(getStudioRuntimeSnapshot()).resolves.toEqual(freshSnapshot);
+    expect(fetchMock).toHaveBeenCalledTimes(3);
+  });
+});
+
+describe('runOnboardingSetup', () => {
+  it('posts Setup and invalidates the runtime snapshot cache', async () => {
+    const setupResponse = {
+      ok: true,
+      libraryPath: 'D:/Codex Studio',
+      wroteEnv: true,
+      initializedLibrary: true,
+      installedDeps: false,
+      skippedDepInstall: true,
+      cloudSyncProvider: null,
+      probe: { primaryCta: 'start_app_server' },
+    };
+    const fetchMock = vi
+      .fn<typeof fetch>()
+      .mockResolvedValueOnce(jsonResponse({ health: { ok: true } }))
+      .mockResolvedValueOnce(jsonResponse(setupResponse))
+      .mockResolvedValueOnce(jsonResponse({ health: { ok: true, refreshed: true } }));
+    vi.stubGlobal('fetch', fetchMock);
+
+    await getStudioRuntimeSnapshot({ bypassCache: true });
+    await expect(
+      runOnboardingSetup({
+        consent: true,
+        libraryPath: 'D:/Codex Studio',
+        confirmCloudSync: false,
+        initLibrary: true,
+        installDeps: true,
+      }),
+    ).resolves.toMatchObject({ ok: true, libraryPath: 'D:/Codex Studio' });
+    await getStudioRuntimeSnapshot();
+
+    const setupCall = fetchMock.mock.calls[1];
+    expect(String(setupCall?.[0])).toContain('/api/onboarding/setup');
+    expect(setupCall?.[1]).toMatchObject({ method: 'POST' });
     expect(fetchMock).toHaveBeenCalledTimes(3);
   });
 });

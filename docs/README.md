@@ -8,7 +8,7 @@ This folder holds public and agent-facing docs. Local execution plans, completed
 - [Tooling and dependency maintenance](./TOOLING.md)
 - [Dependencies](./DEPENDENCIES.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
-- [Desktop app notes](./ELECTRON.md)
+- [Electron development shell](./ELECTRON.md)
 - [Style preset authoring](./STYLE_PRESET_AUTHORING.md)
 - [Roadmap](../ROADMAP.md)
 - [Contributing](../CONTRIBUTING.md)

@@ -141,7 +141,10 @@ describe('buildCodexStudioSetupPrompt', () => {
     expect(prompt).toContain('Codex Runtime Capability: ready; app-server support: yes');
     expect(prompt).toContain('Codex Runtime Action: Codex Product Runtime is ready.');
     expect(prompt).toContain('Bun and Codex command output as diagnostic metadata only');
-    expect(prompt).toContain('Run or repair `bun run studio:init`');
+    expect(prompt).toContain('`bun run studio:onboard` after consent');
+    expect(prompt).toContain('run or repair `bun run studio:init`');
+    expect(prompt).toContain('Never silent-install Bun or Codex CLI');
+    expect(prompt).toContain('Do not treat Preferred Output Path as the generate destination');
     expect(prompt).toContain('Provider Secrets out of SQLite');
     expect(prompt).toContain('bun run test');
     expect(prompt).toContain('bun run check');

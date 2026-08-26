@@ -323,6 +323,92 @@ describe('studioEventSource', () => {
     }
   });
 
+  it('dispatches onboarding stage, probe, and onboarding-scoped logs', () => {
+    const previousEventSource = globalThis.EventSource;
+    const sources: Array<{
+      onmessage: ((event: MessageEvent) => void) | null;
+    }> = [];
+
+    class FakeEventSource {
+      static OPEN = 1;
+      close = vi.fn();
+      onopen: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      onmessage: ((event: MessageEvent) => void) | null = null;
+      readyState = FakeEventSource.OPEN;
+      constructor() {
+        sources.push(this);
+      }
+    }
+
+    Object.defineProperty(globalThis, 'EventSource', {
+      configurable: true,
+      value: FakeEventSource,
+    });
+
+    try {
+      const stream = createStudioEventStream();
+      const stages: string[] = [];
+      const ctas: string[] = [];
+      const logs: string[] = [];
+      stream.onOnboardingStage((payload) => stages.push(payload.stage));
+      stream.onOnboardingProbe((probe) => ctas.push(probe.primaryCta));
+      stream.onLogAdded((entry) => logs.push(`${entry.scope}:${entry.message}`));
+      const send = (event: unknown) =>
+        sources[0]?.onmessage?.({ data: JSON.stringify(event) } as MessageEvent);
+
+      send({
+        type: 'onboarding.stage',
+        payload: {
+          action: 'setup',
+          stage: 'write_bootstrap',
+          message: 'Writing Bootstrap Configuration.',
+        },
+        revision: 1,
+        createdAt: '2026-08-26T00:00:00.000Z',
+      });
+      send({
+        type: 'log.created',
+        payload: {
+          id: 0,
+          level: 'info',
+          scope: 'onboarding',
+          message: 'Wrote STUDIO_LIBRARY_DIR into .env.local.',
+          jobId: null,
+          createdAt: '2026-08-26T00:00:01.000Z',
+        },
+        revision: 2,
+        createdAt: '2026-08-26T00:00:01.000Z',
+      });
+      send({
+        type: 'onboarding.probe',
+        payload: {
+          primaryCta: 'start_app_server',
+          checks: [],
+          facts: {},
+          studioLibraryPath: 'D:/lib',
+          grok: {},
+        },
+        revision: 3,
+        createdAt: '2026-08-26T00:00:02.000Z',
+      });
+
+      expect(stages).toEqual(['write_bootstrap']);
+      expect(logs).toEqual(['onboarding:Wrote STUDIO_LIBRARY_DIR into .env.local.']);
+      expect(ctas).toEqual(['start_app_server']);
+      stream.close();
+    } finally {
+      if (previousEventSource) {
+        Object.defineProperty(globalThis, 'EventSource', {
+          configurable: true,
+          value: previousEventSource,
+        });
+      } else {
+        Reflect.deleteProperty(globalThis, 'EventSource');
+      }
+    }
+  });
+
   it('identifies terminal job statuses', () => {
     expect(isTerminalStudioJobStatus('completed')).toBe(true);
     expect(isTerminalStudioJobStatus('failed')).toBe(true);
@@ -353,6 +439,8 @@ describe('studioEventSource', () => {
       onAssetAdded: () => () => {},
       onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
+      onOnboardingStage: () => () => {},
+      onOnboardingProbe: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -367,6 +455,8 @@ describe('studioEventSource', () => {
       onAssetAdded: () => () => {},
       onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
+      onOnboardingStage: () => () => {},
+      onOnboardingProbe: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -389,6 +479,8 @@ describe('studioEventSource', () => {
       onAssetAdded: () => () => {},
       onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
+      onOnboardingStage: () => () => {},
+      onOnboardingProbe: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -415,6 +507,8 @@ describe('studioEventSource', () => {
       onAssetAdded: () => () => {},
       onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
+      onOnboardingStage: () => () => {},
+      onOnboardingProbe: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -450,6 +544,8 @@ describe('studioEventSource', () => {
       onAssetAdded: () => () => {},
       onCatalogChanged: () => () => {},
       onLogAdded: () => () => {},
+      onOnboardingStage: () => () => {},
+      onOnboardingProbe: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };

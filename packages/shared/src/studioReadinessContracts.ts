@@ -1,3 +1,4 @@
+import type { OnboardingProbe } from './onboardingContracts';
 import type { CodexRuntimeDoctorReport, HealthResponse, LocalCodexSessionResponse } from './types';
 
 export type StudioReadinessRefreshReason =
@@ -27,4 +28,5 @@ export interface StudioReadinessRefreshRequest {
 export interface StudioRuntimeSnapshotResponse {
   health: HealthResponse;
   readiness: StudioReadinessEnvelope;
+  onboarding: OnboardingProbe;
 }

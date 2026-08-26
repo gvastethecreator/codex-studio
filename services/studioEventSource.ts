@@ -3,6 +3,8 @@ import type {
   CatalogBatchChangedEventPayload,
   CatalogImage,
   Job,
+  OnboardingProbe,
+  OnboardingStagePayload,
   StudioEvent,
   SystemLog,
   UnknownStudioEvent,
@@ -83,6 +85,8 @@ export interface StudioEventStream {
   onAssetAdded(callback: Listener<Asset>): Unsubscribe;
   onCatalogChanged(callback: Listener<StudioCatalogEventPayload>): Unsubscribe;
   onLogAdded(callback: Listener<SystemLog>): Unsubscribe;
+  onOnboardingStage(callback: Listener<OnboardingStagePayload>): Unsubscribe;
+  onOnboardingProbe(callback: Listener<OnboardingProbe>): Unsubscribe;
   onConnectionChange(callback: Listener<boolean>): Unsubscribe;
   onRevisionGap?(callback: Listener<void>): Unsubscribe;
   close(): void;
@@ -101,6 +105,8 @@ class BrowserStudioEventStream implements StudioEventStream {
   private assetListeners = new Set<Listener<Asset>>();
   private catalogListeners = new Set<Listener<StudioCatalogEventPayload>>();
   private logListeners = new Set<Listener<SystemLog>>();
+  private onboardingStageListeners = new Set<Listener<OnboardingStagePayload>>();
+  private onboardingProbeListeners = new Set<Listener<OnboardingProbe>>();
   private connectionListeners = new Set<Listener<boolean>>();
   private revisionGapListeners = new Set<Listener<void>>();
   private lastRevision = 0;
@@ -132,6 +138,16 @@ class BrowserStudioEventStream implements StudioEventStream {
   onLogAdded(callback: Listener<SystemLog>) {
     this.logListeners.add(callback);
     return () => this.logListeners.delete(callback);
+  }
+
+  onOnboardingStage(callback: Listener<OnboardingStagePayload>) {
+    this.onboardingStageListeners.add(callback);
+    return () => this.onboardingStageListeners.delete(callback);
+  }
+
+  onOnboardingProbe(callback: Listener<OnboardingProbe>) {
+    this.onboardingProbeListeners.add(callback);
+    return () => this.onboardingProbeListeners.delete(callback);
   }
 
   onConnectionChange(callback: Listener<boolean>) {
@@ -236,6 +252,14 @@ class BrowserStudioEventStream implements StudioEventStream {
       );
     } else if (event.type === 'log.appended' || event.type === 'log.created') {
       this.logListeners.forEach((listener) => listener(event.payload as SystemLog));
+    } else if (event.type === 'onboarding.stage') {
+      this.onboardingStageListeners.forEach((listener) =>
+        listener(event.payload as OnboardingStagePayload),
+      );
+    } else if (event.type === 'onboarding.probe') {
+      this.onboardingProbeListeners.forEach((listener) =>
+        listener(event.payload as OnboardingProbe),
+      );
     }
   }
 }
@@ -262,6 +286,14 @@ class StudioEventStreamLease implements StudioEventStream {
 
   onLogAdded(callback: Listener<SystemLog>) {
     return this.closed ? () => {} : this.stream.onLogAdded(callback);
+  }
+
+  onOnboardingStage(callback: Listener<OnboardingStagePayload>) {
+    return this.closed ? () => {} : this.stream.onOnboardingStage(callback);
+  }
+
+  onOnboardingProbe(callback: Listener<OnboardingProbe>) {
+    return this.closed ? () => {} : this.stream.onOnboardingProbe(callback);
   }
 
   onConnectionChange(callback: Listener<boolean>) {

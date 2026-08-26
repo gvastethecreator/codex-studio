@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import sharp from 'sharp';
+import { readCoverFitFlattenedRgba, writeCoverFitFlattenedPng } from './sharpAuthoringAdapter';
 import {
   createAnimationSequenceContract,
   createAnimationSequenceFramePlan,
@@ -353,12 +353,11 @@ export function createAnimationSequenceService({
       );
       const framePath = path.join(run.paths.framesDir, `${frame.id}.png`);
       await copyFile(sourcePath, rawPath);
-      const info = await sharp(sourcePath)
-        .rotate()
-        .resize(run.contract.dimensions.width, run.contract.dimensions.height, { fit: 'cover' })
-        .flatten({ background: run.contract.matteColor })
-        .png()
-        .toFile(framePath);
+      const info = await writeCoverFitFlattenedPng(sourcePath, framePath, {
+        width: run.contract.dimensions.width,
+        height: run.contract.dimensions.height,
+        matteColor: run.contract.matteColor,
+      });
 
       frame.status = 'generated';
       frame.rawPath = rawPath;
@@ -398,14 +397,11 @@ export function createAnimationSequenceService({
         await Promise.all(
           frames.map(async (frame): Promise<GifRgbaFrame | null> => {
             if (!frame.framePath) return null;
-            const { data } = await sharp(frame.framePath)
-              .resize(run.contract.dimensions.width, run.contract.dimensions.height, {
-                fit: 'cover',
-              })
-              .flatten({ background: run.contract.matteColor })
-              .ensureAlpha()
-              .raw()
-              .toBuffer({ resolveWithObject: true });
+            const data = await readCoverFitFlattenedRgba(frame.framePath, {
+              width: run.contract.dimensions.width,
+              height: run.contract.dimensions.height,
+              matteColor: run.contract.matteColor,
+            });
             return { rgba: data, delayCentiseconds };
           }),
         )

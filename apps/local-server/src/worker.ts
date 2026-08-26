@@ -7,6 +7,7 @@ import { upsertCodexTurn } from './db/codexTurns';
 import { addJobEvent } from './db/events';
 import { getJob, updateJobFinalization, updateJobStatus } from './db/jobs';
 import { getSettingValue, setSettingValue } from './db/settings';
+import { getWorkspace, listWorkspaces } from './db/workspaces';
 import { publishEvent } from './events';
 import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
@@ -171,6 +172,8 @@ export function createWorkerController({
     getSetting: getSettingValue,
     setSetting: setSettingValue,
     resolveLibraryPath: resolveLibraryPathFn,
+    getWorkspace,
+    listWorkspaces,
   });
 
   function getMaxConcurrentJobs() {

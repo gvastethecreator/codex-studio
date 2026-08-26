@@ -2,7 +2,11 @@ import { randomUUID } from 'node:crypto';
 import { Hono } from 'hono';
 import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
 import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
-import { readGrokRuntimeDoctor, type GrokRuntimeDoctorReport } from './grokRuntimeDoctor';
+import {
+  grokOnboardingFactsFromDoctor,
+  readGrokRuntimeDoctor,
+  type GrokRuntimeDoctorReport,
+} from './grokRuntimeDoctor';
 import { createCatalogCommands } from './catalogCommands';
 import { createCatalogRoutes } from './catalogRoutes';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
@@ -82,6 +86,7 @@ import { createStudioReadinessLifecycle } from './studioReadinessLifecycle';
 import { createDefaultUserStyleStore } from './sqliteUserStyles';
 import type { UserStyleStore } from './userStyles';
 import { createLocalApiSecurityMiddleware } from './localApiSecurity';
+import { createUiStaticHandler, resolveUiDistDir, uiDistIsReady } from './uiStaticRoutes';
 import type {
   AppServerEnsureReason,
   CodexModelCatalogResponse,
@@ -135,6 +140,7 @@ export interface CreateStudioAppOptions {
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
     isAppServerRunning?: typeof isAppServerRunning;
     allowedOrigins?: string[];
+    uiDistDir?: string | null;
     libraryRoutes?: Partial<LibrariesRoutesDependencies>;
     workspaceRoutes?: Partial<WorkspaceRoutesDependencies>;
     catalogStore?: StudioCatalogStore;
@@ -224,6 +230,7 @@ export async function createStudioApp(
       isAppServerRunning: isLocalAppServerRunning,
       readWorkerStatus: () => workerController.getWorkerStatus(),
       readiness,
+      readGrokOnboardingFacts: () => grokOnboardingFactsFromDoctor(readGrokRuntimeDoctorFn()),
     }),
   );
 
@@ -447,6 +454,14 @@ export async function createStudioApp(
       logger: appLogger,
     }),
   );
+
+  const uiDistDir =
+    options.dependencies?.uiDistDir === undefined
+      ? resolveUiDistDir()
+      : options.dependencies.uiDistDir;
+  if (uiDistDir && uiDistIsReady(uiDistDir)) {
+    app.on(['GET', 'HEAD'], '*', createUiStaticHandler({ rootDir: uiDistDir }));
+  }
 
   void readiness.refresh({ reason: 'startup' }).catch((error) => {
     appLogger(

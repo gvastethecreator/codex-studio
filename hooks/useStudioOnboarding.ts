@@ -5,6 +5,10 @@ import { getStudioApiBase } from '../services/studio-api/http';
 import { startStudioAppServer } from '../services/studio-api/runtime';
 import { resolveStudioRuntime } from '../services/studioRuntime';
 import { useLocalStorage } from './useLocalStorage';
+import {
+  shouldAutoOpenOnboarding,
+  shouldCloseOnboardingBecauseReady,
+} from '../lib/onboardingEventLog';
 
 interface UseStudioOnboardingProps {
   log: (message: string) => void;
@@ -29,21 +33,13 @@ export function useStudioOnboarding({
     'studio-onboarding-complete',
     false,
   );
-  const [isOpen, setIsOpen] = useState(() => !hasSeenOnboarding && shouldAutoOpen);
+  const [isOpen, setIsOpen] = useState(false);
   const [isStartingAppServer, setIsStartingAppServer] = useState(false);
 
   const runtime = useMemo(() => resolveStudioRuntime(), []);
   const apiBase = useMemo(() => getStudioApiBase(), []);
   const isDesktopRuntime = runtime.isDesktop;
   const isReady = Boolean(health?.ok && health.checks.onboardingReady);
-
-  const autoOpenedRef = useRef(false);
-  useEffect(() => {
-    if (autoOpenedRef.current || hasSeenOnboarding || !shouldAutoOpen) return;
-    autoOpenedRef.current = true;
-    setHasSeenOnboarding(true);
-    setIsOpen(true);
-  }, [hasSeenOnboarding, setHasSeenOnboarding, shouldAutoOpen]);
 
   const openOnboarding = useCallback(() => {
     setIsOpen(true);
@@ -58,6 +54,29 @@ export function useStudioOnboarding({
     setHasSeenOnboarding(true);
     setIsOpen(false);
   }, [setHasSeenOnboarding]);
+
+  const autoOpenedRef = useRef(false);
+  useEffect(() => {
+    if (
+      autoOpenedRef.current ||
+      !shouldAutoOpenOnboarding({
+        hasSeenOnboarding,
+        shouldAutoOpen,
+        isReady,
+        hasHealthSnapshot: health !== null,
+      })
+    ) {
+      return;
+    }
+    autoOpenedRef.current = true;
+    setHasSeenOnboarding(true);
+    setIsOpen(true);
+  }, [hasSeenOnboarding, health, isReady, setHasSeenOnboarding, shouldAutoOpen]);
+
+  useEffect(() => {
+    if (!shouldCloseOnboardingBecauseReady(isReady, isOpen)) return;
+    completeOnboarding();
+  }, [completeOnboarding, isOpen, isReady]);
 
   const ensureAppServer = useCallback(async () => {
     setIsStartingAppServer(true);

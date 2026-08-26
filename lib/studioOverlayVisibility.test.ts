@@ -58,6 +58,7 @@ function createController(): StudioOverlayController {
       apiBase: 'http://127.0.0.1:17223',
       onboardingError: null,
       onboardingHealth: null,
+      onboardingProbe: null,
       localCodexSession: null,
       readiness: null as never,
       closeOnboarding: () => {},

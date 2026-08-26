@@ -11,5 +11,6 @@ export * from './animationSequenceContracts';
 export * from './storageMaintenance';
 export * from './userStyles';
 export * from './studioReadinessContracts';
+export * from './onboardingContracts';
 export * from './workspaceContracts';
 export * from './studioApiSchemas';

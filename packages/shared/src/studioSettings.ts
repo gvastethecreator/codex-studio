@@ -4,7 +4,7 @@ import type { GenerationProviderId } from './generationContracts';
 const EDITABLE_STUDIO_SETTINGS_VERSION = 'editable-studio-settings/v1' as const;
 
 export type StudioOutputMode = 'studio_library' | 'external_source';
-export type StudioOutputSubfolderToken = 'date' | 'provider' | 'model' | 'recipe';
+export type StudioOutputSubfolderToken = 'workspace' | 'date' | 'provider' | 'model' | 'recipe';
 
 export interface ProviderDefaultSettings {
   providerId: GenerationProviderId;
@@ -71,7 +71,13 @@ function cleanServiceTier(value: unknown): Exclude<CodexServiceTier, 'standard'>
 
 function cleanSubfolderTokens(value: unknown): StudioOutputSubfolderToken[] | undefined {
   if (!Array.isArray(value)) return undefined;
-  const allowed = new Set<StudioOutputSubfolderToken>(['date', 'provider', 'model', 'recipe']);
+  const allowed = new Set<StudioOutputSubfolderToken>([
+    'workspace',
+    'date',
+    'provider',
+    'model',
+    'recipe',
+  ]);
   const tokens = value.filter((item): item is StudioOutputSubfolderToken => allowed.has(item));
   return tokens.filter((token, index) => tokens.indexOf(token) === index).slice(0, 4);
 }
@@ -150,7 +156,7 @@ export function createDefaultEditableStudioSettings(): EditableStudioSettings {
     preferredLibraryId: null,
     preferredOutputPath: null,
     outputOrganization: {
-      subfolderTokens: ['date', 'provider', 'recipe'],
+      subfolderTokens: ['workspace'],
       fileNameTemplate: '{timestamp}-{provider}-{jobId}',
     },
     providerDefaults: {

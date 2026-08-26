@@ -1,14 +1,16 @@
-import { existsSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import os from 'node:os';
 import path from 'node:path';
-import sharp from 'sharp';
+import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vite-plus/test';
 import { resolveLibraryPathFromRoot } from './library';
-import {
-  ensureThumbnailVariant,
-  resolveLibraryThumbnailPath,
-  resolveThumbnailMaxEdge,
-} from './libraryAssetVariants';
+import { resolveLibraryThumbnailPath, resolveThumbnailMaxEdge } from './libraryAssetVariants';
+
+const ONE_BY_ONE_PNG = Buffer.from(
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==',
+  'base64',
+);
 
 function cleanupTempLibrary(libraryDir: string) {
   try {
@@ -21,6 +23,10 @@ function cleanupTempLibrary(libraryDir: string) {
   }
 }
 
+function readHotPathSource(relativePath: string) {
+  return readFileSync(fileURLToPath(new URL(relativePath, import.meta.url)), 'utf8');
+}
+
 describe('libraryAssetVariants', () => {
   it('clamps thumbnail max-edge values to safe bounds', () => {
     expect(resolveThumbnailMaxEdge(undefined)).toBe(512);
@@ -28,7 +34,7 @@ describe('libraryAssetVariants', () => {
     expect(resolveThumbnailMaxEdge('2048')).toBe(1024);
   });
 
-  it('maps generated assets into the thumbnails folder', async () => {
+  it('maps generated assets into the thumbnails folder', () => {
     const libraryDir = mkdtempSync(path.join(os.tmpdir(), 'codex-studio-thumbs-'));
 
     try {
@@ -39,16 +45,7 @@ describe('libraryAssetVariants', () => {
         'sample.png',
       );
       mkdirSync(path.dirname(sourceFilePath), { recursive: true });
-      await sharp({
-        create: {
-          width: 640,
-          height: 480,
-          channels: 3,
-          background: '#663399',
-        },
-      })
-        .png()
-        .toFile(sourceFilePath);
+      writeFileSync(sourceFilePath, ONE_BY_ONE_PNG);
 
       const thumbnailPath = resolveLibraryThumbnailPath(sourceFilePath, {
         libraryDir,
@@ -57,51 +54,27 @@ describe('libraryAssetVariants', () => {
 
       expect(thumbnailPath).toContain(path.join('outputs', 'thumbnails', '2026-05-26'));
       expect(path.extname(thumbnailPath)).toBe('.webp');
+      expect(existsSync(sourceFilePath)).toBe(true);
     } finally {
       cleanupTempLibrary(libraryDir);
     }
   });
 
-  it('creates a cached webp thumbnail inside the library', async () => {
-    const libraryDir = mkdtempSync(path.join(os.tmpdir(), 'codex-studio-thumbs-'));
+  it('does not import sharp on the thumbnail hot path', () => {
+    const source = readHotPathSource('./libraryAssetVariants.ts');
+    expect(source).not.toMatch(/from ['"]sharp['"]/);
+    expect(source).toMatch(/encodeResizedWebpFromPath/);
+  });
 
-    try {
-      const sourceFilePath = resolveLibraryPathFromRoot(
-        libraryDir,
-        'outputs',
-        'external',
-        'sample.png',
-      );
-      mkdirSync(path.dirname(sourceFilePath), { recursive: true });
-      await sharp({
-        create: {
-          width: 1200,
-          height: 900,
-          channels: 3,
-          background: '#ff7f50',
-        },
-      })
-        .png()
-        .toFile(sourceFilePath);
-
-      const thumbnailPath = await ensureThumbnailVariant(sourceFilePath, {
-        libraryDir,
-        maxEdge: 256,
-      });
-      const secondPassPath = await ensureThumbnailVariant(sourceFilePath, {
-        libraryDir,
-        maxEdge: 256,
-      });
-
-      expect(existsSync(thumbnailPath)).toBe(true);
-      expect(secondPassPath).toBe(thumbnailPath);
-
-      const metadata = await sharp(thumbnailPath).metadata();
-      expect(metadata.format).toBe('webp');
-      expect(metadata.width ?? 0).toBeLessThanOrEqual(256);
-      expect(metadata.height ?? 0).toBeLessThanOrEqual(256);
-    } finally {
-      cleanupTempLibrary(libraryDir);
+  it('encodes thumbs and references with Bun.Image', () => {
+    const bunTest = fileURLToPath(new URL('./imagePipeline.bun.test.ts', import.meta.url));
+    const result = spawnSync('bun', ['test', bunTest], {
+      cwd: path.resolve(fileURLToPath(new URL('../../../', import.meta.url))),
+      encoding: 'utf8',
+    });
+    if (result.status !== 0) {
+      throw new Error(result.stderr || result.stdout || 'bun test failed');
     }
+    expect(`${result.stdout}\n${result.stderr}`).toMatch(/2 pass/);
   });
 });

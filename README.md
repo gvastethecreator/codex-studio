@@ -39,11 +39,27 @@ The main Codex path does not need `OPENAI_API_KEY`. Assets, job history, logs, a
 
 You need:
 
-- Bun on `PATH`, able to run the repo scripts
-- Codex CLI, signed in with ChatGPT, with `codex app-server`
+- Bun on `PATH`. Install it yourself from <https://bun.sh/docs/installation>. Codex Studio never silent-installs Bun.
+- Codex CLI from <https://github.com/openai/codex>
+- ChatGPT login through `codex login`. That login is not bundled.
 - A modern browser
 
-Grok Imagine is optional.
+The first-run surface is a detect, consent, mutate, stream, re-validate loop. One primary button follows this order:
+
+1. Missing Bun: open the official Bun installer.
+2. Missing Codex CLI: open the Codex install docs.
+3. Codex CLI present, ChatGPT login missing: open a visible `codex login` terminal.
+4. Studio Library or Bootstrap Configuration missing: in-app Setup, or `bun run studio:onboard --setup`.
+5. Everything else ready except Codex Product Runtime: Start app-server.
+6. Ready: Open Studio.
+
+Ask Codex is an extra path when Codex CLI exists. Copy prompt stays a fallback. Grok Imagine is an optional provider row, not a Studio installer.
+
+The default Studio Library is a folder named `Codex Studio` in your user home. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`. New generations go under `outputs/<workspace>/` inside that library.
+
+Portable zip: double-click `Codex Studio.bat` on Windows or `Codex Studio.command` on macOS. Read `PORTABLE.txt`. If `STUDIO_LIBRARY_DIR` is unset, portable start uses `Codex Studio Library` beside the unpacked folder. Linux is best-effort. Electron is a development shell, not this user channel.
+
+To use Grok Imagine:
 
 1. Install Grok Build.
 2. Run `grok login`.
@@ -55,7 +71,7 @@ App readiness is the source of truth. Bun and Codex version strings are only dia
 
 Do not set `STUDIO_CODEX_CLI_PATH` to a `node_modules/.../vendor` binary. Use a supported launcher such as the desktop binary or `codex.cmd`.
 
-Fast path: ask Codex in this repo to run first setup.
+Fast path: ask Codex in this repo to run first setup, or use Copy prompt / Ask Codex on the onboarding surface. That prompt points at `skills/codex-studio-setup/SKILL.md`.
 
 ```text
 Set up Codex Studio for first run.
@@ -65,6 +81,7 @@ Manual path:
 
 ```bash
 bun install
+bun run studio:onboard --setup
 bun run studio:init
 bun run dev
 ```
@@ -88,18 +105,20 @@ Run `bun run studio:init` to create local defaults and apply pending SQLite migr
 
 For manual setup, copy `.env.example` to `.env.local`.
 
-By default, the Studio Library lives under your OS home directory as `AI-Studio-Library`. Set a custom absolute path only when you need one:
+By default, the Studio Library lives under your OS home directory as `Codex Studio`. Set a custom absolute path only when you need one:
 
 ```env
 # Windows
-STUDIO_LIBRARY_DIR=C:\Users\<your-user>\AI-Studio-Library
+STUDIO_LIBRARY_DIR=C:\Users\<your-user>\Codex Studio
 
 # macOS
-STUDIO_LIBRARY_DIR=/Users/<your-user>/AI-Studio-Library
+STUDIO_LIBRARY_DIR=/Users/<your-user>/Codex Studio
 
 # Linux
-STUDIO_LIBRARY_DIR=/home/<your-user>/AI-Studio-Library
+STUDIO_LIBRARY_DIR=/home/<your-user>/Codex Studio
 ```
+
+Preferred Output Path in Settings is an External Output Source scan hint. Generate still writes inside the Studio Library.
 
 If you use optional external adapters, keep Provider Secrets in backend environment variables. Do not put them in SQLite, logs, screenshots, docs, or committed files.
 
@@ -113,6 +132,7 @@ Use the provider control in the top Command Center to switch the next image job 
 bun run dev
 bun run runtime:doctor
 bun run providers:preflight
+bun run studio:onboard
 bun run studio:init
 bun run check
 bun run test
@@ -142,6 +162,8 @@ bun run tooling:logs:prune
 - [Tooling](./docs/TOOLING.md)
 - [Dependencies and upgrades](./docs/DEPENDENCIES.md)
 - [Troubleshooting](./docs/TROUBLESHOOTING.md)
+- [Portable launch](./PORTABLE.txt)
+- [Electron development shell](./docs/ELECTRON.md)
 - [Roadmap](./ROADMAP.md)
 
 ## Status
@@ -152,7 +174,7 @@ Codex Studio is in open-source preview.
 - The default path is Codex-first and local-first.
 - Optional provider adapters are backend integrations, not the product center.
 - Grok Imagine image generation and managed local image edits use your Grok Build CLI login. Native video is a later media-domain decision.
-- Desktop packaging and first-run polish are still in progress.
+- Desktop packaging is not the user channel. Use the browser plus portable launchers, or `bun run dev` in a checkout.
 
 ---
 

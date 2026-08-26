@@ -1,6 +1,11 @@
 import type {
   CodexRuntimeDoctorReport,
   HealthResponse,
+  OnboardingHostActionRequest,
+  OnboardingHostActionResult,
+  OnboardingProbe,
+  OnboardingSetupRequest,
+  OnboardingSetupSuccessResponse,
   StudioReadinessEnvelope,
   StudioReadinessRefreshReason,
   StudioResetResponse,
@@ -30,6 +35,28 @@ function invalidateRuntimeSnapshot() {
 
 export async function getStudioHealth() {
   return request<HealthResponse>('/api/health');
+}
+
+export async function getOnboardingProbe() {
+  return request<OnboardingProbe>('/api/onboarding/probe');
+}
+
+export async function runOnboardingSetup(body: OnboardingSetupRequest) {
+  const result = await request<OnboardingSetupSuccessResponse>('/api/onboarding/setup', {
+    method: 'POST',
+    body: JSON.stringify(body),
+  });
+  invalidateRuntimeSnapshot();
+  return result;
+}
+
+export async function runOnboardingHostAction(body: OnboardingHostActionRequest) {
+  const result = await request<OnboardingHostActionResult>('/api/onboarding/host-action', {
+    method: 'POST',
+    body: JSON.stringify(body),
+  });
+  invalidateRuntimeSnapshot();
+  return result;
 }
 
 export async function getStudioRuntimeSnapshot({ bypassCache = false } = {}) {

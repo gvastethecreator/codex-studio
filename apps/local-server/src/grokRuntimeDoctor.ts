@@ -323,6 +323,18 @@ export function inspectGrokRuntime({
   };
 }
 
+export function grokOnboardingFactsFromDoctor(
+  report: Pick<GrokRuntimeDoctorReport, 'canRunJobs' | 'selectedVersion' | 'issues'>,
+) {
+  const grokCliAvailable =
+    Boolean(report.selectedVersion) &&
+    !report.issues.some((issue) => issue.code === 'grok_cli_unavailable');
+  return {
+    grokCliAvailable,
+    grokLoggedIn: grokCliAvailable && report.canRunJobs,
+  };
+}
+
 export function readGrokRuntimeDoctor({ maxAgeMs = DEFAULT_DOCTOR_CACHE_MS } = {}) {
   const now = Date.now();
   if (maxAgeMs > 0 && cachedReport && cachedReport.expiresAt > now) return cachedReport.report;

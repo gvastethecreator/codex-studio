@@ -2,11 +2,35 @@
 
 ## Fast diagnostics
 
-1. Run `bun run studio:init`.
-2. Start the backend with `bun run dev:server`.
-3. Run `bun run runtime:doctor`.
-4. Open `http://localhost:17223/api/health`.
-5. If a quality gate failed, run `bun run tooling:logs` and inspect `*.latest.log`.
+1. Run `bun run studio:onboard --probe` or use the in-app onboarding checklist.
+2. Run `bun run studio:init` when Bootstrap Configuration or the Studio Library still needs repair.
+3. Start the backend with `bun run dev:server`.
+4. Run `bun run runtime:doctor`.
+5. Open `http://localhost:17223/api/health`.
+6. If a quality gate failed, run `bun run tooling:logs` and inspect `*.latest.log`.
+
+## First-run onboarding
+
+The welcome surface detects Bun, Codex CLI, ChatGPT login, Studio Library, Bootstrap Configuration, and app-server. It asks consent before it writes `.env.local`, runs `studio:init`, installs repo deps, or opens a visible terminal.
+
+Headless equivalent:
+
+```bash
+bun run studio:onboard --probe
+bun run studio:onboard --setup
+```
+
+Mutating steps need an explicit yes. On a TTY the command asks `[y/N]`. Agents that already have user authority can pass `--yes`. A no leaves disk unchanged.
+
+Default Studio Library is `Codex Studio` in the user home. To keep or choose another folder, set an absolute path in `.env.local`:
+
+```env
+STUDIO_LIBRARY_DIR=C:\Users\<you>\Codex Studio
+```
+
+Then run `bun run studio:init`. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`.
+
+Preferred Output Path is not the generate destination. Generate writes under `outputs/<workspace>/` inside the Studio Library.
 
 ## Common startup problems
 
@@ -138,7 +162,7 @@ The full test task caps Vitest at eight workers to avoid Windows filesystem and 
 
 ## Studio Library problems
 
-If the default path does not exist, set an absolute `STUDIO_LIBRARY_DIR` in `.env.local`. Then run:
+If the default `Codex Studio` home folder is wrong for this machine, set an absolute `STUDIO_LIBRARY_DIR` in `.env.local`. Then run:
 
 ```bash
 bun run studio:init
@@ -180,6 +204,7 @@ bun run storage:thumbnails:backfill -- --limit=1000 --write --confirm=backfill-t
 ## Useful commands
 
 ```bash
+bun run studio:onboard
 bun run studio:init
 bun run dev:server
 bun run dev:ui

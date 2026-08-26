@@ -1,4 +1,7 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 
 import type {
   CodexRuntimeDoctorReport,
@@ -656,5 +659,44 @@ describe('createStudioApp', () => {
 
     await expect(studio.shutdown()).rejects.toThrow('Studio shutdown did not complete cleanly');
     expect(stopAppServer).toHaveBeenCalledTimes(1);
+  });
+
+  it('serves the built UI and health from one origin when dist is present', async () => {
+    const uiDistDir = mkdtempSync(path.join(os.tmpdir(), 'studio-app-ui-'));
+    writeFileSync(path.join(uiDistDir, 'index.html'), '<html>one-origin</html>', 'utf8');
+    mkdirSync(path.join(uiDistDir, 'assets'), { recursive: true });
+    writeFileSync(path.join(uiDistDir, 'assets', 'app.js'), 'export {}', 'utf8');
+
+    try {
+      const studio = await createStudioApp({
+        runInit: false,
+        dependencies: {
+          ...createFakeStores(),
+          catalogStore: createFakeCatalogStore(),
+          worker: createWorkerDependency(),
+          uiDistDir,
+          readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
+        },
+      });
+
+      const health = await studio.app.request('/api/health');
+      expect(health.status).toBe(200);
+
+      const ui = await studio.app.request('/');
+      expect(ui.status).toBe(200);
+      expect(await ui.text()).toContain('one-origin');
+
+      const asset = await studio.app.request('/assets/app.js');
+      expect(asset.status).toBe(200);
+
+      const fileOrigin = await studio.app.request('/', {
+        headers: { Origin: 'file://' },
+      });
+      expect(fileOrigin.status).toBe(403);
+
+      await studio.shutdown();
+    } finally {
+      rmSync(uiDistDir, { recursive: true, force: true });
+    }
   });
 });

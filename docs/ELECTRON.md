@@ -4,15 +4,17 @@ This document does not announce an Electron release. It defines a gradual deskto
 
 ## Current state
 
-The primary flow is still React/Vite UI plus a local Bun/Hono backend over HTTP.
+The user channel for this spec is a browser against local-server: `bun run dev` in a checkout, or the portable `Codex Studio.bat` / `Codex Studio.command` launchers after unzip. Electron is not that channel.
 
-The key seam is Studio Runtime. The renderer resolves `apiBase` in this order: `window.codexStudio?.apiBase`, then `VITE_STUDIO_API_BASE`, then localhost.
+The renderer must not couple to desktop APIs. The key seam is Studio Runtime. The renderer resolves `apiBase` in this order: `window.codexStudio?.apiBase`, then `VITE_STUDIO_API_BASE`, then localhost.
 
-## Fast path
+## Development shell only
+
+These commands are for developers. They are not first-run onboarding and not the user channel.
 
 1. Run `bun run dev:electron` to try the desktop shell in development.
 2. Run `bun run preview:electron` to load a local build.
-3. Keep the web app as the primary path while the runtime stabilizes.
+3. Keep unzip + launcher + browser, or `bun run dev`, as the user path.
 
 ## Security baseline
 
@@ -37,9 +39,10 @@ The hard part is not opening an Electron window. The hard part is packaging the 
 
 ## Current practical decision
 
-- Do not attempt a final Electron release yet.
-- Consolidate runtime and onboarding. Decouple the renderer.
-- Treat Electron as a future adapter, not a rewrite.
+- Electron is an optional development Studio Runtime shell. It is not the packaged user product for this spec.
+- Do not treat `bun run dev:electron` as first-run onboarding.
+- This spec does not add electron-builder, does not bundle Bun or Codex CLI, and does not bundle ChatGPT login.
+- Consolidate runtime and onboarding on local-server plus the browser. Decouple the renderer.
 
 ## Pre-distribution checklist
 

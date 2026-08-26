@@ -65,6 +65,7 @@ interface StudioOverlayOnboardingContext {
   apiBase: StudioSystemOverlaysProps['apiBase'];
   error: StudioSystemOverlaysProps['onboardingError'];
   health: StudioSystemOverlaysProps['onboardingHealth'];
+  probe: StudioSystemOverlaysProps['onboardingProbe'];
   localCodexSession: StudioSystemOverlaysProps['localCodexSession'];
   readiness: StudioSystemOverlaysProps['readiness'];
   isChecking: StudioSystemOverlayFlags['isCheckingOnboarding'];
@@ -225,6 +226,7 @@ export function buildStudioOverlayController({
       apiBase: onboarding.apiBase,
       onboardingError: onboarding.error,
       onboardingHealth: onboarding.health,
+      onboardingProbe: onboarding.probe,
       localCodexSession: onboarding.localCodexSession,
       readiness: onboarding.readiness,
       closeOnboarding: () => startTransition(() => onboarding.close()),

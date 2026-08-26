@@ -54,6 +54,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   apiBase,
   onboardingError,
   onboardingHealth,
+  onboardingProbe,
   localCodexSession,
   readiness,
   closeOnboarding,
@@ -173,6 +174,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
               apiBase={apiBase}
               error={onboardingError}
               health={onboardingHealth}
+              probe={onboardingProbe}
               localCodexSession={localCodexSession}
               readiness={readiness}
               status={

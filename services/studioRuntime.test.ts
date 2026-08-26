@@ -39,6 +39,16 @@ describe('resolveStudioRuntimeFromSources', () => {
     });
   });
 
+  it('keeps the Vite env api base ahead of the page origin for split-port dev', () => {
+    const runtime = resolveStudioRuntimeFromSources({
+      envApiBase: 'http://127.0.0.1:17223',
+      productionUi: true,
+      pageOrigin: 'http://127.0.0.1:17222',
+    });
+
+    expect(runtime.apiBase).toBe('http://127.0.0.1:17223');
+  });
+
   it('uses the default local backend when no bridge or env override exists', () => {
     const runtime = resolveStudioRuntimeFromSources();
 
@@ -47,5 +57,23 @@ describe('resolveStudioRuntimeFromSources', () => {
       apiBase: 'http://127.0.0.1:17223',
       isDesktop: false,
     });
+  });
+
+  it('uses the loopback page origin in production UI when env is unset', () => {
+    const runtime = resolveStudioRuntimeFromSources({
+      productionUi: true,
+      pageOrigin: 'http://127.0.0.1:18000/',
+    });
+
+    expect(runtime.apiBase).toBe('http://127.0.0.1:18000');
+  });
+
+  it('does not treat file:// as a Studio API origin', () => {
+    const runtime = resolveStudioRuntimeFromSources({
+      productionUi: true,
+      pageOrigin: 'file:///C:/CodexStudio/index.html',
+    });
+
+    expect(runtime.apiBase).toBe('http://127.0.0.1:17223');
   });
 });

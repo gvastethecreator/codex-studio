@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import sharp from 'sharp';
+import { writePngFromSvg } from './sharpAuthoringAdapter';
 import {
   createSpriteAtlasContract,
   createSpriteAtlasPresetSummaries,
@@ -148,7 +148,7 @@ async function writeLayoutGuide(run: SpriteAtlasRun, row: SpriteAtlasRowState) {
       <text x="8" y="${height - 10}" fill="#a1a1aa" font-size="14" font-family="monospace">${row.id}</text>
     </svg>
   `;
-  await sharp(Buffer.from(svg)).png().toFile(row.layoutGuidePath);
+  await writePngFromSvg(svg, row.layoutGuidePath);
 }
 
 function createRows(run: Pick<SpriteAtlasRun, 'contract' | 'paths'>, timestamp: string) {
@@ -411,7 +411,7 @@ export function createSpriteAtlasService({
         })
         .join('');
       const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="100%" height="100%" fill="none"/>${rects}${labels}</svg>`;
-      await sharp(Buffer.from(svg)).png().toFile(run.paths.atlasPath);
+      await writePngFromSvg(svg, run.paths.atlasPath);
 
       await writeJson(run.paths.manifestPath, {
         version: 1,

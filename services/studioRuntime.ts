@@ -43,6 +43,8 @@ export interface StudioRuntimeInfo {
 export interface StudioRuntimeSources {
   desktopBridge?: Window['codexStudio'];
   envApiBase?: string;
+  pageOrigin?: string;
+  productionUi?: boolean;
   fallbackApiBase?: string;
 }
 
@@ -50,24 +52,62 @@ function trimTrailingSlash(value: string) {
   return value.replace(/\/+$/, '');
 }
 
+function resolveLoopbackHttpOrigin(value: string | undefined) {
+  if (!value?.trim()) return null;
+  try {
+    const url = new URL(value);
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return null;
+    if (
+      url.hostname !== 'localhost' &&
+      url.hostname !== '127.0.0.1' &&
+      url.hostname !== '[::1]' &&
+      url.hostname !== '::1'
+    ) {
+      return null;
+    }
+    return trimTrailingSlash(normalizeStudioLoopback(url.origin));
+  } catch {
+    return null;
+  }
+}
+
 function resolveApiBase({
   desktopBridge,
   envApiBase,
+  pageOrigin,
+  productionUi = false,
   fallbackApiBase = DEFAULT_STUDIO_API_BASE,
 }: StudioRuntimeSources = {}) {
   const desktopBase = desktopBridge?.apiBase?.trim();
+  if (desktopBase) {
+    return trimTrailingSlash(normalizeStudioLoopback(desktopBase));
+  }
+
   const envBase = envApiBase?.trim();
-  return trimTrailingSlash(normalizeStudioLoopback(desktopBase || envBase || fallbackApiBase));
+  if (envBase) {
+    return trimTrailingSlash(normalizeStudioLoopback(envBase));
+  }
+
+  if (productionUi) {
+    const sameOrigin = resolveLoopbackHttpOrigin(pageOrigin);
+    if (sameOrigin) return sameOrigin;
+  }
+
+  return trimTrailingSlash(normalizeStudioLoopback(fallbackApiBase));
 }
 
 export function resolveStudioRuntimeFromSources({
   desktopBridge,
   envApiBase,
+  pageOrigin,
+  productionUi = false,
   fallbackApiBase = DEFAULT_STUDIO_API_BASE,
 }: StudioRuntimeSources = {}): StudioRuntimeInfo {
   const apiBase = resolveApiBase({
     desktopBridge,
     envApiBase,
+    pageOrigin,
+    productionUi,
     fallbackApiBase,
   });
   const isDesktop = desktopBridge?.desktop === true;
@@ -105,6 +145,8 @@ export function resolveStudioRuntime(): StudioRuntimeInfo {
   return resolveStudioRuntimeFromSources({
     desktopBridge: typeof window !== 'undefined' ? window.codexStudio : undefined,
     envApiBase: import.meta.env.VITE_STUDIO_API_BASE,
+    pageOrigin: typeof window !== 'undefined' ? window.location.origin : undefined,
+    productionUi: import.meta.env.PROD,
   });
 }
 

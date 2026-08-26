@@ -2,7 +2,11 @@ import { createHash } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import sharp, { type OutputInfo, type OverlayOptions } from 'sharp';
+import {
+  authoringSharp as sharp,
+  type OutputInfo,
+  type OverlayOptions,
+} from '../apps/local-server/src/sharpAuthoringAdapter';
 
 const repoRoot = process.cwd();
 const assetDir = path.join(repoRoot, 'assets', 'recipes', 'character-lab');

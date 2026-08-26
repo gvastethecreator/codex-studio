@@ -34,11 +34,37 @@ import {
   type OnboardingStyleCarouselEntry,
 } from '../lib/onboardingStyleCarousel';
 import { getOnboardingPreviewImage } from '../lib/onboardingPreviewCatalog';
-import type {
-  HealthResponse,
-  LocalCodexSessionResponse,
-  StudioReadinessSnapshot,
+import {
+  ONBOARDING_ASK_CODEX_LABEL,
+  type HealthResponse,
+  type LocalCodexSessionResponse,
+  type OnboardingCheck,
+  type OnboardingProbe,
+  type StudioReadinessSnapshot,
 } from '../packages/shared/src';
+import { resolveOnboardingPrimaryAction } from '../lib/onboardingPrimaryAction';
+import {
+  buildInAppSetupRequest,
+  inAppSetupCanSubmit,
+  inAppSetupCloudProvider,
+  resolveInAppSetupDraftPath,
+} from '../lib/onboardingInAppSetup';
+import { shouldShowAskCodex } from '../lib/onboardingHostActions';
+import {
+  grokRowNeedsInstall,
+  grokRowNeedsLogin,
+  ONBOARDING_GROK_INSTALL_URL,
+} from '../lib/onboardingGrokRow';
+import { StudioApiError } from '../services/studio-api/http';
+import { runOnboardingHostAction, runOnboardingSetup } from '../services/studio-api/runtime';
+import { createStudioEventStream } from '../services/studioEventSource';
+import {
+  appendOnboardingLogLine,
+  ONBOARDING_LOG_PANEL_EMPTY,
+  onboardingLogLineFromStage,
+  onboardingLogLineFromSystemLog,
+  type OnboardingLogLine,
+} from '../lib/onboardingEventLog';
 
 const ONBOARDING_STYLE_PREVIEW_IMAGES = {
   'SP01-005': getOnboardingPreviewImage('SP01-005', stylePreviewSp01005),
@@ -73,6 +99,7 @@ interface OnboardingModalProps {
   apiBase: string;
   error: string | null;
   health: HealthResponse | null;
+  probe: OnboardingProbe | null;
   localCodexSession: LocalCodexSessionResponse | null;
   readiness: StudioReadinessSnapshot;
   status: OnboardingStatus;
@@ -297,6 +324,120 @@ function CopyCommandButton({ command, label }: { command: string; label: string 
   );
 }
 
+function InAppSetupForm({
+  cloudProvider,
+  confirmCloudSync,
+  consent,
+  error,
+  libraryPath,
+  onConfirmCloudSyncChange,
+  onConsentChange,
+  onLibraryPathChange,
+}: {
+  cloudProvider: string | null;
+  confirmCloudSync: boolean;
+  consent: boolean;
+  error: string | null;
+  libraryPath: string;
+  onConfirmCloudSyncChange: (value: boolean) => void;
+  onConsentChange: (value: boolean) => void;
+  onLibraryPathChange: (value: string) => void;
+}) {
+  return (
+    <div className="mt-5 rounded-2xl border border-blue-500/18 bg-blue-500/[0.06] p-4 xl:mt-3 xl:p-3">
+      <p className="text-[11px] font-black uppercase tracking-[0.24em] text-blue-300 xl:text-[10px]">
+        Studio Library
+      </p>
+      <p className="mt-2 text-sm leading-6 text-zinc-400 xl:mt-1 xl:text-xs xl:leading-5">
+        Choose an absolute folder. Codex Studio stays in your home unless you pick another path.
+      </p>
+      <label className="mt-3 block xl:mt-2">
+        <span className="sr-only">Studio Library path</span>
+        <input
+          type="text"
+          value={libraryPath}
+          onChange={(event) => onLibraryPathChange(event.target.value)}
+          aria-label="Studio Library path"
+          className="w-full rounded-xl border border-white/10 bg-black/35 px-3 py-2.5 font-mono text-sm text-zinc-200 outline-none focus:border-blue-400/40 xl:py-2 xl:text-xs"
+        />
+      </label>
+      {cloudProvider ? (
+        <label className="mt-3 flex items-start gap-2 text-sm leading-6 text-amber-200 xl:mt-2 xl:text-xs xl:leading-5">
+          <input
+            type="checkbox"
+            checked={confirmCloudSync}
+            onChange={(event) => onConfirmCloudSyncChange(event.target.checked)}
+            className="mt-1"
+          />
+          <span>
+            This folder looks like it syncs through {cloudProvider}. SQLite and images can break if
+            the folder syncs. Continue anyway.
+          </span>
+        </label>
+      ) : null}
+      <label className="mt-3 flex items-start gap-2 text-sm leading-6 text-zinc-300 xl:mt-2 xl:text-xs xl:leading-5">
+        <input
+          type="checkbox"
+          checked={consent}
+          onChange={(event) => onConsentChange(event.target.checked)}
+          className="mt-1"
+        />
+        <span>Create this Studio Library and write Bootstrap Configuration on this machine.</span>
+      </label>
+      {error ? (
+        <p className="mt-3 rounded-xl border border-rose-500/20 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-rose-200 xl:mt-2 xl:text-xs xl:leading-5">
+          {error}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
+function OptionalGrokRow({
+  busy,
+  onInstall,
+  onLogin,
+  row,
+}: {
+  busy: boolean;
+  onInstall: () => void;
+  onLogin: () => void;
+  row: NonNullable<OnboardingProbe['grok']>;
+}) {
+  const needsInstall = grokRowNeedsInstall(row);
+  const needsLogin = grokRowNeedsLogin(row);
+  return (
+    <div className="mt-5 rounded-2xl border border-white/10 bg-white/[0.03] p-4 xl:mt-3 xl:p-3">
+      <p className="text-[11px] font-black uppercase tracking-[0.24em] text-zinc-400 xl:text-[10px]">
+        Optional provider
+      </p>
+      <p className="mt-2 text-sm font-semibold text-white xl:mt-1 xl:text-xs">{row.label}</p>
+      <p className="mt-1 text-sm leading-6 text-zinc-400 xl:text-xs xl:leading-5">{row.detail}</p>
+      <div className="mt-3 flex flex-wrap gap-2 xl:mt-2">
+        {needsInstall ? (
+          <button
+            type="button"
+            onClick={onInstall}
+            className="inline-flex h-10 items-center rounded-xl border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 xl:h-9"
+          >
+            Install Grok Build
+          </button>
+        ) : null}
+        {needsLogin ? (
+          <button
+            type="button"
+            onClick={onLogin}
+            disabled={busy}
+            className="inline-flex h-10 items-center rounded-xl border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-60 xl:h-9"
+          >
+            {busy ? 'Opening terminal' : 'grok login'}
+          </button>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
 function CodexRuntimeRepairCard({
   health,
   onRefresh,
@@ -371,10 +512,53 @@ function CodexRuntimeRepairCard({
   );
 }
 
+function OnboardingLogPanel({ lines }: { lines: OnboardingLogLine[] }) {
+  const endRef = React.useRef<HTMLDivElement>(null);
+  React.useEffect(() => {
+    endRef.current?.scrollIntoView({ block: 'end' });
+  }, [lines]);
+
+  return (
+    <section
+      aria-live="polite"
+      aria-label="Setup log"
+      className="mt-4 rounded-xl border border-white/8 bg-black/40 px-3 py-3 xl:mt-3"
+    >
+      <p className="text-[11px] font-black uppercase tracking-[0.24em] text-zinc-500 xl:text-[10px]">
+        Setup log
+      </p>
+      <div className="custom-scrollbar mt-2 max-h-36 overflow-y-auto font-mono text-[11px] leading-5 text-zinc-400 xl:max-h-28 xl:text-[10px] xl:leading-4">
+        {lines.length === 0 ? (
+          <p>{ONBOARDING_LOG_PANEL_EMPTY}</p>
+        ) : (
+          lines.map((line) => (
+            <p key={line.id} className={line.kind === 'stage' ? 'text-zinc-200' : undefined}>
+              {line.text}
+            </p>
+          ))
+        )}
+        <div ref={endRef} />
+      </div>
+    </section>
+  );
+}
+
+function checkIcon(id: OnboardingCheck['id']) {
+  if (id === 'studio_library' || id === 'bootstrap_config') return <Folder size={18} />;
+  if (id === 'chatgpt_login') return <Sparkles size={18} />;
+  return <Terminal size={18} />;
+}
+
+function checkTone(ready: boolean, backendReachable: boolean): CheckTone {
+  if (!backendReachable) return 'pending';
+  return ready ? 'ready' : 'warning';
+}
+
 export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   apiBase,
   error,
   health,
+  probe,
   localCodexSession,
   readiness,
   status,
@@ -394,6 +578,25 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const libraryReady = Boolean(health?.checks.libraryReady);
   const codexReady = Boolean(localCodexSession?.canRunLocalJobs);
   const appServerReady = Boolean(health?.appServer.running);
+  const [libraryPathDraft, setLibraryPathDraft] = React.useState('');
+  const [consent, setConsent] = React.useState(false);
+  const [confirmCloudSync, setConfirmCloudSync] = React.useState(false);
+  const [setupBusy, setSetupBusy] = React.useState(false);
+  const [setupError, setSetupError] = React.useState<string | null>(null);
+  const [hostBusy, setHostBusy] = React.useState(false);
+  const [hostError, setHostError] = React.useState<string | null>(null);
+  const [logLines, setLogLines] = React.useState<OnboardingLogLine[]>([]);
+  const lastProbePath = React.useRef<string | null>(null);
+  const primaryAction = probe ? resolveOnboardingPrimaryAction(probe.primaryCta) : null;
+  const showLegacyStartAppServer = canStartAppServer && primaryAction?.type !== 'start_app_server';
+  const showInAppSetup = primaryAction?.type === 'in_app_setup';
+  const cloudProvider = inAppSetupCloudProvider(libraryPathDraft);
+  const canSubmitSetup = inAppSetupCanSubmit({
+    consent,
+    libraryPath: libraryPathDraft,
+    confirmCloudSync,
+  });
+  const showAskCodex = shouldShowAskCodex(probe?.facts);
 
   const libraryTone: CheckTone = !backendReachable ? 'pending' : libraryReady ? 'ready' : 'warning';
   const sessionTone: CheckTone = !backendReachable
@@ -462,6 +665,112 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
 
     return () => window.clearInterval(intervalId);
   }, [isOpen, previewEntries.length]);
+
+  React.useEffect(() => {
+    const next = resolveInAppSetupDraftPath(probe);
+    if (lastProbePath.current === next) return;
+    lastProbePath.current = next;
+    setLibraryPathDraft(next);
+    setConfirmCloudSync(false);
+    setSetupError(null);
+  }, [probe]);
+
+  React.useEffect(() => {
+    if (!isOpen) return;
+    const stream = createStudioEventStream(apiBase);
+    const unstage = stream.onOnboardingStage((payload) => {
+      setLogLines((lines) => appendOnboardingLogLine(lines, onboardingLogLineFromStage(payload)));
+    });
+    const unlog = stream.onLogAdded((entry) => {
+      const line = onboardingLogLineFromSystemLog(entry);
+      if (!line) return;
+      setLogLines((lines) => appendOnboardingLogLine(lines, line));
+    });
+    return () => {
+      unstage();
+      unlog();
+      stream.close();
+    };
+  }, [apiBase, isOpen]);
+
+  const runSetup = React.useCallback(async () => {
+    if (!inAppSetupCanSubmit({ consent, libraryPath: libraryPathDraft, confirmCloudSync })) {
+      return;
+    }
+    setSetupBusy(true);
+    setSetupError(null);
+    try {
+      await runOnboardingSetup(
+        buildInAppSetupRequest({
+          consent,
+          libraryPath: libraryPathDraft,
+          confirmCloudSync,
+        }),
+      );
+      onRefresh();
+    } catch (caught) {
+      setSetupError(
+        caught instanceof StudioApiError || caught instanceof Error
+          ? caught.message
+          : 'Setup failed.',
+      );
+    } finally {
+      setSetupBusy(false);
+    }
+  }, [confirmCloudSync, consent, libraryPathDraft, onRefresh]);
+
+  const runHostAction = React.useCallback(
+    async (action: 'codex_login' | 'ask_codex' | 'grok_login') => {
+      setHostBusy(true);
+      setHostError(null);
+      try {
+        const result = await runOnboardingHostAction({
+          consent: true,
+          action,
+          prompt: action === 'ask_codex' ? setupPrompt : null,
+        });
+        if (!result.ok) {
+          setHostError(result.error ?? `Run this in the repo root: ${result.command}`);
+        }
+        onRefresh();
+      } catch (caught) {
+        setHostError(
+          caught instanceof StudioApiError || caught instanceof Error
+            ? caught.message
+            : 'Could not open a visible terminal.',
+        );
+      } finally {
+        setHostBusy(false);
+      }
+    },
+    [onRefresh, setupPrompt],
+  );
+
+  const handlePrimaryCta = React.useCallback(() => {
+    if (!primaryAction) {
+      onComplete();
+      return;
+    }
+    if (primaryAction.type === 'open_url') {
+      window.open(primaryAction.url, '_blank', 'noopener,noreferrer');
+      return;
+    }
+    if (primaryAction.type === 'start_app_server') {
+      onStartAppServer();
+      return;
+    }
+    if (primaryAction.type === 'in_app_setup') {
+      void runSetup();
+      return;
+    }
+    if (primaryAction.type === 'codex_login') {
+      void runHostAction('codex_login');
+      return;
+    }
+    if (primaryAction.type === 'complete') {
+      onComplete();
+    }
+  }, [onComplete, onStartAppServer, primaryAction, runHostAction, runSetup]);
 
   return (
     <AnimatePresence>
@@ -557,42 +866,81 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       Local environment check
                     </p>
                     <div className="mt-4 xl:mt-3">
-                      <CheckRow
-                        icon={<Folder size={18} />}
-                        title="Studio Library"
-                        detail={
-                          libraryReady
-                            ? 'Your assets and generations are stored locally.'
-                            : 'Repair the local library path or permissions.'
-                        }
-                        meta={health?.libraryDir || 'path not set'}
-                        status={libraryReady ? 'Ready' : 'Needs attention'}
-                        tone={libraryTone}
-                      />
-                      <CheckRow
-                        icon={<Sparkles size={18} />}
-                        title="ChatGPT Codex login"
-                        detail={sessionDetail}
-                        meta={localCodexSession?.authLabel}
-                        status={codexReady ? 'Ready' : 'Action needed'}
-                        tone={sessionTone}
-                      />
-                      <CheckRow
-                        icon={<Terminal size={18} />}
-                        title="app-server connection"
-                        detail={appServerDetail}
-                        meta={appServerReady ? health?.appServer.wsUrl : apiBase}
-                        status={
-                          appServerReady
-                            ? 'Running'
-                            : codexRuntimeBlocked
-                              ? 'Blocked'
-                              : 'Not running'
-                        }
-                        tone={serverTone}
-                      />
+                      {probe ? (
+                        probe.checks.map((row) => (
+                          <CheckRow
+                            key={row.id}
+                            icon={checkIcon(row.id)}
+                            title={row.label}
+                            detail={row.detail}
+                            meta={row.meta}
+                            status={row.ready ? 'Ready' : 'Needs attention'}
+                            tone={checkTone(row.ready, backendReachable)}
+                          />
+                        ))
+                      ) : (
+                        <>
+                          <CheckRow
+                            icon={<Folder size={18} />}
+                            title="Studio Library"
+                            detail={
+                              libraryReady
+                                ? 'Your assets and generations are stored locally.'
+                                : 'Repair the local library path or permissions.'
+                            }
+                            meta={health?.libraryDir || 'path not set'}
+                            status={libraryReady ? 'Ready' : 'Needs attention'}
+                            tone={libraryTone}
+                          />
+                          <CheckRow
+                            icon={<Sparkles size={18} />}
+                            title="ChatGPT Codex login"
+                            detail={sessionDetail}
+                            meta={localCodexSession?.authLabel}
+                            status={codexReady ? 'Ready' : 'Action needed'}
+                            tone={sessionTone}
+                          />
+                          <CheckRow
+                            icon={<Terminal size={18} />}
+                            title="app-server connection"
+                            detail={appServerDetail}
+                            meta={appServerReady ? health?.appServer.wsUrl : apiBase}
+                            status={
+                              appServerReady
+                                ? 'Running'
+                                : codexRuntimeBlocked
+                                  ? 'Blocked'
+                                  : 'Not running'
+                            }
+                            tone={serverTone}
+                          />
+                        </>
+                      )}
                     </div>
+                    <OnboardingLogPanel lines={logLines} />
                     <CodexRuntimeRepairCard health={health} onRefresh={onRefresh} />
+                    {probe?.grok ? (
+                      <OptionalGrokRow
+                        row={probe.grok}
+                        busy={hostBusy}
+                        onInstall={() => {
+                          window.open(ONBOARDING_GROK_INSTALL_URL, '_blank', 'noopener,noreferrer');
+                        }}
+                        onLogin={() => void runHostAction('grok_login')}
+                      />
+                    ) : null}
+                    {showInAppSetup ? (
+                      <InAppSetupForm
+                        libraryPath={libraryPathDraft}
+                        consent={consent}
+                        confirmCloudSync={confirmCloudSync}
+                        cloudProvider={cloudProvider}
+                        error={setupError}
+                        onLibraryPathChange={setLibraryPathDraft}
+                        onConsentChange={setConsent}
+                        onConfirmCloudSyncChange={setConfirmCloudSync}
+                      />
+                    ) : null}
                     <SetupPromptCard prompt={setupPrompt} />
                   </div>
                 </section>
@@ -604,10 +952,21 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                 <div className="flex flex-col gap-2 sm:flex-row">
                   <button
                     type="button"
-                    onClick={onComplete}
-                    className="inline-flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow-[0_14px_40px_rgba(37,99,235,0.28)] transition-colors hover:bg-blue-500 xl:px-5 xl:py-2.5"
+                    onClick={handlePrimaryCta}
+                    disabled={
+                      (primaryAction?.type === 'start_app_server' && isStartingAppServer) ||
+                      (primaryAction?.type === 'in_app_setup' && (!canSubmitSetup || setupBusy)) ||
+                      (primaryAction?.type === 'codex_login' && hostBusy)
+                    }
+                    className="inline-flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow-[0_14px_40px_rgba(37,99,235,0.28)] transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-60 xl:px-5 xl:py-2.5"
                   >
-                    {isReady ? 'Open Studio' : 'Got it'}
+                    {primaryAction?.type === 'start_app_server' && isStartingAppServer
+                      ? 'Starting'
+                      : primaryAction?.type === 'in_app_setup' && setupBusy
+                        ? 'Setting up'
+                        : primaryAction?.type === 'codex_login' && hostBusy
+                          ? 'Opening terminal'
+                          : (primaryAction?.label ?? (isReady ? 'Open Studio' : 'Got it'))}
                     <ArrowRight size={17} />
                   </button>
                   <button
@@ -619,7 +978,18 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     <RefreshCw size={16} className={isChecking ? 'animate-spin' : ''} />
                     Refresh
                   </button>
-                  {canStartAppServer ? (
+                  {showAskCodex ? (
+                    <button
+                      type="button"
+                      onClick={() => void runHostAction('ask_codex')}
+                      disabled={hostBusy}
+                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
+                    >
+                      <Terminal size={16} />
+                      {hostBusy ? 'Opening terminal' : ONBOARDING_ASK_CODEX_LABEL}
+                    </button>
+                  ) : null}
+                  {showLegacyStartAppServer ? (
                     <button
                       type="button"
                       onClick={onStartAppServer}
@@ -631,10 +1001,16 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     </button>
                   ) : null}
                 </div>
-                <div className="hidden items-center gap-2 text-sm text-zinc-500 md:flex">
-                  <Folder size={15} />
-                  Local-first. Private by design. Built for creators.
-                </div>
+                {hostError ? (
+                  <p className="rounded-xl border border-rose-500/20 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-rose-200 xl:text-xs xl:leading-5">
+                    {hostError}
+                  </p>
+                ) : (
+                  <div className="hidden items-center gap-2 text-sm text-zinc-500 md:flex">
+                    <Folder size={15} />
+                    Local-first. Private by design. Built for creators.
+                  </div>
+                )}
               </div>
             </footer>
           </MotionDiv>

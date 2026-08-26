@@ -1,9 +1,11 @@
 import { Hono } from 'hono';
-import type {
-  AppServerEnsureReason,
-  CodexRuntimeDoctorReport,
-  StudioReadinessRefreshReason,
-  StudioReadinessRefreshRequest,
+import {
+  buildOnboardingProbe,
+  onboardingFactsFromHealth,
+  type AppServerEnsureReason,
+  type CodexRuntimeDoctorReport,
+  type StudioReadinessRefreshReason,
+  type StudioReadinessRefreshRequest,
 } from '../../../packages/shared/src';
 import type { getSettings } from './config';
 import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
@@ -11,6 +13,19 @@ import type { getAppServerDiagnostics } from './codex/processSupervisor';
 import type { inspectLibrary } from './library';
 import type { WorkerStatus } from './worker';
 import type { StudioReadinessLifecycle } from './studioReadinessLifecycle';
+import {
+  applyOnboardingSetup,
+  OnboardingSetupError,
+  setupResultWithProbe,
+} from './onboardingSetup';
+import { applyOnboardingHostAction, OnboardingHostActionError } from './hostTerminal';
+import {
+  publishOnboardingActionFinished,
+  publishOnboardingLog,
+  publishOnboardingProbe,
+  publishOnboardingStage,
+  reportOnboardingProgress,
+} from './onboardingEvents';
 
 interface RuntimeRoutesDependencies {
   readSettings: () => ReturnType<typeof getSettings>;
@@ -24,6 +39,9 @@ interface RuntimeRoutesDependencies {
   isAppServerRunning: () => boolean;
   readWorkerStatus: () => WorkerStatus;
   readiness?: StudioReadinessLifecycle;
+  applyOnboardingSetupFn?: typeof applyOnboardingSetup;
+  applyOnboardingHostActionFn?: typeof applyOnboardingHostAction;
+  readGrokOnboardingFacts?: () => { grokCliAvailable: boolean; grokLoggedIn: boolean };
 }
 
 export function createCheckingRuntimeReport(): CodexRuntimeDoctorReport {
@@ -97,6 +115,9 @@ export function createRuntimeRoutes({
   isAppServerRunning,
   readWorkerStatus,
   readiness,
+  applyOnboardingSetupFn = applyOnboardingSetup,
+  applyOnboardingHostActionFn = applyOnboardingHostAction,
+  readGrokOnboardingFacts = () => ({ grokCliAvailable: false, grokLoggedIn: false }),
 }: RuntimeRoutesDependencies) {
   const routes = new Hono();
 
@@ -173,6 +194,22 @@ export function createRuntimeRoutes({
     };
   };
 
+  const buildOnboardingResponse = (health: ReturnType<typeof buildHealthResponse>) => {
+    const session = readiness?.readSnapshot()?.localCodexSession ?? null;
+    return buildOnboardingProbe(
+      onboardingFactsFromHealth({
+        bunVersion: health.runtime.bunVersion,
+        codexCliAvailable: health.codexCli.available,
+        chatgptLoggedIn: session?.isChatgptLogin === true || session?.canRunLocalJobs === true,
+        studioLibraryReady: health.checks.libraryReady,
+        studioLibraryPath: health.libraryDir,
+        bootstrapConfigReady: health.runtime.envLocalPresent,
+        appServerReady: health.appServer.running,
+        ...readGrokOnboardingFacts(),
+      }),
+    );
+  };
+
   routes.get('/health', (c) => c.json(buildHealthResponse()));
 
   const readPublicReadiness = () => {
@@ -181,12 +218,71 @@ export function createRuntimeRoutes({
     return { ...snapshot, codexRuntime: redactRuntimeDoctor(snapshot.codexRuntime) };
   };
 
-  routes.get('/runtime/snapshot', (c) =>
-    c.json({
-      health: buildHealthResponse(),
+  routes.get('/runtime/snapshot', (c) => {
+    const health = buildHealthResponse();
+    return c.json({
+      health,
       readiness: readPublicReadiness(),
-    }),
-  );
+      onboarding: buildOnboardingResponse(health),
+    });
+  });
+
+  routes.get('/onboarding/probe', (c) => c.json(buildOnboardingResponse(buildHealthResponse())));
+
+  routes.post('/onboarding/setup', async (c) => {
+    let body: unknown = {};
+    try {
+      body = await c.req.json();
+    } catch {
+      body = {};
+    }
+    try {
+      const result = applyOnboardingSetupFn(body, {
+        report: (event) => reportOnboardingProgress('setup', event),
+      });
+      await readiness?.refresh({ reason: 'onboarding' });
+      const probe = buildOnboardingResponse(buildHealthResponse());
+      publishOnboardingActionFinished('setup', probe);
+      return c.json(setupResultWithProbe(result, probe));
+    } catch (error) {
+      if (error instanceof OnboardingSetupError) {
+        return c.json(error.body, error.status);
+      }
+      publishOnboardingStage('setup', 'failed', 'Setup failed.');
+      publishOnboardingLog('Setup failed.', 'error');
+      throw error;
+    }
+  });
+
+  routes.post('/onboarding/host-action', async (c) => {
+    let body: unknown = {};
+    try {
+      body = await c.req.json();
+    } catch {
+      body = {};
+    }
+    try {
+      const result = applyOnboardingHostActionFn(body, {
+        report: (event) => reportOnboardingProgress('host_action', event),
+      });
+      const probe = buildOnboardingResponse(buildHealthResponse());
+      if (result.ok) {
+        publishOnboardingActionFinished('host_action', probe);
+      } else {
+        publishOnboardingStage('host_action', 'failed', result.error ?? 'Host action failed.');
+        publishOnboardingLog(result.error ?? 'Host action failed.', 'error');
+        publishOnboardingProbe(probe);
+      }
+      return c.json({ ...result, probe });
+    } catch (error) {
+      if (error instanceof OnboardingHostActionError) {
+        return c.json(error.body, error.status);
+      }
+      publishOnboardingStage('host_action', 'failed', 'Host action failed.');
+      publishOnboardingLog('Host action failed.', 'error');
+      throw error;
+    }
+  });
 
   routes.get('/readiness', (c) => c.json(readPublicReadiness()));
 

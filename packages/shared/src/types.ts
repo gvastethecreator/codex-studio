@@ -3,6 +3,7 @@ import type {
   GenerationTaskKind,
   GenerationTaskSpec,
 } from './generationContracts';
+import type { OnboardingProbe, OnboardingStagePayload } from './onboardingContracts';
 
 export type JobStatus =
   | 'queued'
@@ -469,6 +470,18 @@ export type StudioEvent =
         | 'output-source.registered'
         | 'output-source.imported';
       payload: unknown;
+      createdAt: string;
+      revision?: number;
+    }
+  | {
+      type: 'onboarding.stage';
+      payload: OnboardingStagePayload;
+      createdAt: string;
+      revision?: number;
+    }
+  | {
+      type: 'onboarding.probe';
+      payload: OnboardingProbe;
       createdAt: string;
       revision?: number;
     };

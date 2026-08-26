@@ -21,6 +21,32 @@ Bring a Codex Studio checkout to a runnable local state:
 - UI and backend start cleanly
 - closeout checks run once
 
+## Onboarding loop
+
+Copy prompt and Ask Codex on the welcome surface use this skill as the Setup Prompt
+(`CODEX_STUDIO_SETUP_SKILL_PATH` in `lib/onboardingSetupPrompt.ts`). Keep that
+ownership. Do not move the prompt body into the renderer.
+
+The product loop is detect, consent, mutate, stream, re-validate. One primary CTA:
+
+1. Missing Bun: open <https://bun.sh/docs/installation>. Never silent-install Bun.
+2. Missing Codex CLI: open <https://github.com/openai/codex>. Never silent-install Codex.
+3. Codex CLI present, ChatGPT login missing: stop and ask the user to run `codex login`
+   and choose ChatGPT. Login is not bundled.
+4. Studio Library or Bootstrap Configuration missing: in-app Setup, or
+   `bun run studio:onboard --setup`, after explicit consent.
+5. Everything else ready except Codex Product Runtime: start app-server through the
+   local backend.
+6. Ready: Open Studio.
+
+Ask Codex is an extra path when Codex CLI exists. Grok Imagine is an optional provider
+row, never a Studio installer.
+
+Default Studio Library is a folder named `Codex Studio` in the user home. Existing
+`STUDIO_LIBRARY_DIR` is kept. Do not auto-migrate `AI-Studio-Library`. Preferred Output
+Path is not the generate destination. New generations go under `outputs/<workspace>/`
+inside the Studio Library.
+
 ## Safety
 
 - Preserve dirty worktree changes you did not make.
@@ -66,9 +92,11 @@ For UI onboarding changes, also read:
 
 2. Initialize local bootstrap.
    - Run `bun install` only when dependencies are missing or stale enough to
-     block scripts.
+     block scripts. Never silent-install Bun or Codex CLI.
+   - Prefer `bun run studio:onboard --setup` (or in-app Setup) when the probe says
+     library or Bootstrap Configuration is missing. Mutations need consent.
    - Run `bun run studio:init` when `.env.local`, Studio Library folders,
-     SQLite state, default library, or default project are missing.
+     SQLite state, default library, or default project are missing after that.
    - Keep existing `.env.local` values unless they are invalid. If editing is
      needed, preserve user-specific paths and never add secrets.
 

@@ -105,6 +105,7 @@ export function useStudioReadiness(refreshIntervalMs = 30_000) {
   return {
     error,
     health: response?.health ?? null,
+    onboardingProbe: response?.onboarding ?? null,
     isRefreshing,
     localCodexSession: response?.readiness.localCodexSession ?? null,
     refresh,

@@ -103,6 +103,7 @@ export function useStudioRuntime({
       apiBase: onboarding.apiBase,
       error: onboarding.error,
       health: onboarding.health,
+      probe: readinessState.onboardingProbe,
       isChecking: onboarding.isChecking,
       isDesktopRuntime: onboarding.isDesktopRuntime,
       isOpen: onboarding.isOpen,

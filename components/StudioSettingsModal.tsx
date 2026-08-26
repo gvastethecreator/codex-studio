@@ -53,6 +53,8 @@ import {
   buildStudioSettingsPatch,
   createInitialStudioSettingsFormState,
   encodeSubfolderTokens,
+  EXTERNAL_SCAN_PATH_HELP,
+  EXTERNAL_SCAN_PATH_LABEL,
   getStudioSettingsFormState,
   OUTPUT_SUBFOLDER_PRESETS,
   type StudioSettingsFormState,
@@ -403,15 +405,16 @@ function SettingsFormPanel({
 
       <label className="md:col-span-2 flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
         <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-          Preferred Output Path
+          {EXTERNAL_SCAN_PATH_LABEL}
         </span>
+        <p className="text-[11px] leading-relaxed text-zinc-500">{EXTERNAL_SCAN_PATH_HELP}</p>
         <input
           value={preferredOutputPath}
           onChange={(event) =>
             setFormState((prev) => ({ ...prev, preferredOutputPath: event.target.value }))
           }
           placeholder={libraryDir ?? 'D:/outputs'}
-          aria-label="Preferred output path"
+          aria-label={EXTERNAL_SCAN_PATH_LABEL}
           className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
         />
       </label>

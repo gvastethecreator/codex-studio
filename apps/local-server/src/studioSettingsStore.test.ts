@@ -26,6 +26,7 @@ describe('studioSettingsStore', () => {
 
     expect(settings.defaultProviderId).toBe('codex');
     expect(settings.defaultOutputMode).toBe('studio_library');
+    expect(settings.outputOrganization.subfolderTokens).toEqual(['workspace']);
     expect(settings.updatedAt).toBe(null);
   });
 

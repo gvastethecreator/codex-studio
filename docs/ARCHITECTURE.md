@@ -97,9 +97,9 @@ graph TD
 - `StudioWorkspace` is the shared API contract. Shared Effect schemas validate Workspace and Job intake boundaries before route logic runs.
 - Persistent jobs carry immutable Library identity or root context and durable finalization checkpoints. Recovery can resume file, Asset, Catalog, or job completion without duplicating records or events.
 - `/api/jobs` and `/api/catalog` are summary-first hot reads. Detail paths load full payloads on demand.
-- The Studio Library defaults to a local user folder: `C:\Users\<user>\AI-Studio-Library` on Windows, `/Users/<user>/AI-Studio-Library` on macOS, or `/home/<user>/AI-Studio-Library` on Linux.
+- The Studio Library defaults to a folder named `Codex Studio` in the user home. Portable start uses `Codex Studio Library` beside the unpacked folder when `STUDIO_LIBRARY_DIR` is unset.
 - Internal Studio Library state lives under `.studio/`.
-- Generated outputs, thumbnails, exports, and trash assets live under `outputs/`.
+- Generated outputs, thumbnails, exports, and trash assets live under `outputs/`. New generations use `outputs/<workspace>/`.
 - Browser storage contains bounded transient preferences and input state, not job or image truth.
 - External Output Sources are read-only candidates until selected files are imported as Local Assets.
 

@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { StudioSettings } from '../../../packages/shared/src';
+import { DEFAULT_STUDIO_LIBRARY_FOLDER_NAME } from '../../../packages/shared/src/onboardingContracts';
 import { resolveUserHome } from './platformHome';
 
 const DEFAULT_SERVER_PORT = 17223;
@@ -18,7 +19,7 @@ export function getEnvLocalPath() {
 }
 
 export function resolveDefaultLibraryDir() {
-  return path.join(resolveUserHome(), 'AI-Studio-Library');
+  return path.join(resolveUserHome(), DEFAULT_STUDIO_LIBRARY_FOLDER_NAME);
 }
 
 export function hasEnvLocalFile() {

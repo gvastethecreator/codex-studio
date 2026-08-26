@@ -20,6 +20,7 @@
     "dev:server": "bun apps/local-server/src/index.ts",
     "dev:electron": "bun run scripts/dev-electron.ts",
     "studio:init": "bun run scripts/studio-init.ts",
+    "studio:onboard": "bun run scripts/studio-onboard.ts",
     "assets:migrate:webp": "bun run scripts/migrate-image-assets-to-webp.ts",
     "assets:responsive": "bun run scripts/build-responsive-ui-images.ts",
     "assets:responsive:check": "bun run scripts/build-responsive-ui-images.ts --check",

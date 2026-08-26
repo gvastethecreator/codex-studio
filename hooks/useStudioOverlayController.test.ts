@@ -106,6 +106,7 @@ describe('buildStudioOverlayController', () => {
         apiBase: 'http://localhost:17223',
         error: null,
         health: null,
+        probe: null,
         localCodexSession: null,
         readiness: {
           stage: 'checking',
@@ -400,6 +401,7 @@ describe('buildStudioOverlayController', () => {
               trackedJobs: 0,
             },
           },
+          probe: null,
           localCodexSession: null,
           readiness: {
             stage: 'checking',

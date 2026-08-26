@@ -1,8 +1,8 @@
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, statSync } from 'node:fs';
 import path from 'node:path';
-import sharp from 'sharp';
 import { getSettings } from './config';
+import { encodeResizedWebpFromPath } from './imagePipeline';
 
 const DEFAULT_THUMBNAIL_MAX_EDGE = 512;
 const MIN_THUMBNAIL_MAX_EDGE = 48;
@@ -115,18 +115,10 @@ export async function ensureThumbnailVariant(
 
   const generation = (async () => {
     mkdirSync(path.dirname(thumbnailPath), { recursive: true });
-
-    await sharp(sourceFilePath)
-      .rotate()
-      .resize({
-        width: maxEdge,
-        height: maxEdge,
-        fit: 'inside',
-        withoutEnlargement: true,
-      })
-      .webp({ quality: 82, effort: 4 })
-      .toFile(thumbnailPath);
-
+    await encodeResizedWebpFromPath(sourceFilePath, thumbnailPath, {
+      maxEdge,
+      quality: 82,
+    });
     return thumbnailPath;
   })();
 

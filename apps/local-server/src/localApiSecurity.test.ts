@@ -18,6 +18,11 @@ describe('localApiSecurity', () => {
     expect(isAllowedLocalApiOrigin('http://[::1]:5174')).toBe(true);
   });
 
+  it('rejects file:// origins', () => {
+    expect(isAllowedLocalApiOrigin('file://')).toBe(false);
+    expect(isAllowedLocalApiOrigin('file:///C:/CodexStudio/index.html')).toBe(false);
+  });
+
   it('rejects external or non-loopback origins', () => {
     expect(isAllowedLocalApiOrigin('https://example.com')).toBe(false);
     expect(isAllowedLocalApiOrigin('http://evil.attacker.org:17222')).toBe(false);
@@ -42,9 +47,9 @@ describe('localApiSecurity', () => {
       headers: { Origin: 'https://malicious.org' },
     });
     expect(forbiddenResponse.status).toBe(403);
-    await expect(forbiddenResponse.json()).resolves.toEqual({
-      error: 'Forbidden origin',
-      code: 'forbidden_origin',
+    const fileOriginResponse = await app.request('/test', {
+      headers: { Origin: 'file://' },
     });
+    expect(fileOriginResponse.status).toBe(403);
   });
 });

@@ -1,5 +1,9 @@
 import { describe, expect, it } from 'vite-plus/test';
-import { inspectGrokRuntime, parseAvailableGrokModels } from './grokRuntimeDoctor';
+import {
+  grokOnboardingFactsFromDoctor,
+  inspectGrokRuntime,
+  parseAvailableGrokModels,
+} from './grokRuntimeDoctor';
 
 function readySpawn(command: string, args: string[]) {
   const invocation = [command, ...args].join(' ');
@@ -88,5 +92,23 @@ describe('grokRuntimeDoctor', () => {
         'You are logged in with grok.com.\n\nDefault model: grok-4.6\n\nAvailable models:\n  * grok-4.6 (default)\n  - grok-4.5\n',
       ),
     ).toEqual({ models: ['grok-4.6', 'grok-4.5'], defaultModel: 'grok-4.6' });
+  });
+});
+
+describe('grokOnboardingFactsFromDoctor', () => {
+  it('does not treat a missing Grok CLI as a Studio blocker', () => {
+    expect(
+      grokOnboardingFactsFromDoctor({
+        canRunJobs: false,
+        selectedVersion: null,
+        issues: [
+          {
+            code: 'grok_cli_unavailable',
+            message: 'missing',
+            action: 'install',
+          },
+        ],
+      }),
+    ).toEqual({ grokCliAvailable: false, grokLoggedIn: false });
   });
 });

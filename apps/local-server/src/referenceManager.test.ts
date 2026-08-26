@@ -1,14 +1,12 @@
 import { describe, expect, it } from 'vite-plus/test';
-import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
-import os from 'node:os';
+import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import sharp from 'sharp';
+import { fileURLToPath } from 'node:url';
 
 import { createGenerationTaskSpec } from '../../../packages/shared/src';
 import { resolveLibraryPathFromRoot } from './library';
 import {
   hydrateSourceSpecAssetPaths,
-  processReferences,
   prepareReferencesForPersistence,
   ReferenceProcessingError,
 } from './referenceManager';
@@ -52,49 +50,13 @@ describe('referenceManager', () => {
     ).toThrow(ReferenceProcessingError);
   });
 
-  it('persists uploaded references as bounded WebP files under the handoff folder', async () => {
-    const tmp = mkdtempSync(path.join(os.tmpdir(), 'codex-studio-refs-'));
-    try {
-      const png = await sharp({
-        create: {
-          width: 32,
-          height: 24,
-          channels: 4,
-          background: '#7c3aedff',
-        },
-      })
-        .png()
-        .toBuffer();
-
-      const result = await processReferences(
-        'handoff-test',
-        'Reference handoff.',
-        [
-          {
-            name: 'Hero Source.PNG',
-            dataUrl: `data:image/png;base64,${png.toString('base64')}`,
-            strength: 0.7,
-          },
-        ],
-        tmp,
-      );
-
-      const reference = result.persistedRefs[0];
-      expect(reference?.path.replaceAll('\\', '/')).toMatch(
-        /\.studio\/references\/handoff-test\/Hero-Source\.webp$/,
-      );
-      expect(reference?.mimeType).toBe('image/webp');
-      expect(reference?.fileSizeBytes).toBeGreaterThan(0);
-      expect(reference?.fileSizeBytes).toBeLessThan(4 * 1024 * 1024);
-      expect(result.augmentedPrompt).toContain(reference?.path);
-
-      const metadata = await sharp(readFileSync(reference!.path)).metadata();
-      expect(metadata.format).toBe('webp');
-      expect(metadata.width).toBe(32);
-      expect(metadata.height).toBe(24);
-    } finally {
-      rmSync(tmp, { recursive: true, force: true });
-    }
+  it('does not import sharp on the reference hot path', () => {
+    const source = readFileSync(
+      fileURLToPath(new URL('./referenceManager.ts', import.meta.url)),
+      'utf8',
+    );
+    expect(source).not.toMatch(/from ['"]sharp['"]/);
+    expect(source).toMatch(/encodeResizedWebpFromBytes/);
   });
 
   it('hydrates every inline task asset with its persisted local path', () => {

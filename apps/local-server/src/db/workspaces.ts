@@ -169,3 +169,7 @@ export function ensureDefaultWorkspace(db?: Database) {
 export function getWorkspace(id: string, db?: Database) {
   return getWorkspaceFromDb(getDb(db), id);
 }
+
+export function listWorkspaces(db?: Database) {
+  return listWorkspacesFromDb(getDb(db));
+}
