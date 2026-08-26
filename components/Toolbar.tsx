@@ -30,7 +30,13 @@ import {
   IconBolt as Zap,
 } from '@tabler/icons-react';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { normalizeCodexReasoningEffort, normalizeCodexSpeed } from '../lib/codexExecution';
+import {
+  formatCodexModelLabel,
+  formatCodexSpeedLabel,
+  getCodexSpeedOptions,
+  normalizeCodexReasoningEffort,
+  normalizeCodexSpeed,
+} from '../lib/codexExecution';
 import { buildComposerProviderProjection } from '../lib/composerProviderProjection';
 import { getActiveRecipeIndicator } from '../lib/activeRecipeIndicator';
 import type {
@@ -328,8 +334,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         setLocalPrompt(generationConfig.prompt || '');
       }
     }, [generationConfig.prompt, localPrompt]);
-
-
 
     const handleTriggerGenerate = useCallback(() => {
       if (generateBlock) return;
@@ -1101,7 +1105,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               Codex Task Execution
                             </div>
                             <div className="text-xs font-black uppercase tracking-wide text-zinc-100">
-                              {selectedExecutionModel?.displayName || executionModelLabel}
+                              {selectedExecutionModel?.displayName ||
+                                formatCodexModelLabel(generationConfig.executionModel)}
                             </div>
                             <div className="mt-1 max-w-[280px] text-[10px] font-bold leading-relaxed text-zinc-500">
                               {selectedExecutionModel?.description ||

@@ -112,6 +112,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const hasQueueResultPreviews = commandCenter.queue.hasResultPreviews;
   const showCollapsedQueueProgress = commandCenter.queue.showCollapsedProgress;
   const providerToolbarLabel = activeProvider.toolbarLabel;
+  const providerShortLabel = activeProvider.shortLabel;
   const runtimeToneClass =
     runtimeStatus.tone === 'success'
       ? 'border-emerald-500/20 bg-emerald-500/8 text-emerald-200'

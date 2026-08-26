@@ -138,7 +138,7 @@ describe('runOnboardingSetup', () => {
     await getStudioRuntimeSnapshot();
 
     const setupCall = fetchMock.mock.calls[1];
-    expect(String(setupCall?.[0])).toContain('/api/onboarding/setup');
+    expect(String(setupCall?.[0] as string)).toContain('/api/onboarding/setup');
     expect(setupCall?.[1]).toMatchObject({ method: 'POST' });
     expect(fetchMock).toHaveBeenCalledTimes(3);
   });

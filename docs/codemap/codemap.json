@@ -1,18 +1,14 @@
 {
   "generated_at": "2026-08-18T12:00:00Z",
   "generated_from_commit": "3dd225d12ed4c13dd9109ec8ba96c03b93a19c12",
-  "scope": [
-    "."
-  ],
+  "scope": ["."],
   "nodes": [
     {
       "id": "app",
       "path": "App.tsx",
       "type": "module",
       "boundary": "App",
-      "entrypoints": [
-        "App.tsx:App"
-      ],
+      "entrypoints": ["App.tsx:App"],
       "tests": [],
       "callers": [
         {
@@ -49,9 +45,7 @@
       "path": "apps/local-server",
       "type": "service",
       "boundary": "Apps",
-      "entrypoints": [
-        "apps/local-server/src/index.ts:studio"
-      ],
+      "entrypoints": ["apps/local-server/src/index.ts:studio"],
       "tests": [
         "apps/local-server/src/animationGifEncoder.test.ts",
         "apps/local-server/src/animationSequenceRoutes.test.ts",
@@ -187,9 +181,7 @@
       "path": "constants.ts",
       "type": "module",
       "boundary": "Constants",
-      "entrypoints": [
-        "constants.ts:MODELS"
-      ],
+      "entrypoints": ["constants.ts:MODELS"],
       "tests": [
         "apps/local-server/src/providers/grokImagineInput.test.ts",
         "components/recipes/AnimationSequenceRecipe.test.tsx",
@@ -256,9 +248,7 @@
       "path": "contexts",
       "type": "module",
       "boundary": "Contexts",
-      "entrypoints": [
-        "contexts/GenerationContext.tsx:useRequiredGenerationContext"
-      ],
+      "entrypoints": ["contexts/GenerationContext.tsx:useRequiredGenerationContext"],
       "tests": [
         "contexts/GenerationIsolation.runtime.test.tsx",
         "contexts/RuntimeLogIsolation.runtime.test.tsx",
@@ -331,9 +321,7 @@
       "path": "App.tsx",
       "type": "external",
       "boundary": "External",
-      "entrypoints": [
-        "App.tsx:react"
-      ],
+      "entrypoints": ["App.tsx:react"],
       "tests": [],
       "callers": [
         {
@@ -417,9 +405,7 @@
       "path": "hooks",
       "type": "module",
       "boundary": "Hooks",
-      "entrypoints": [
-        "hooks/catalogEventRefreshPolicy.ts:mergeCatalogRefreshScopes"
-      ],
+      "entrypoints": ["hooks/catalogEventRefreshPolicy.ts:mergeCatalogRefreshScopes"],
       "tests": [
         "hooks/catalogEventRefreshPolicy.test.ts",
         "hooks/catalogMutationReconciliationPolicy.test.ts",
@@ -498,9 +484,7 @@
       "path": "lib",
       "type": "module",
       "boundary": "Lib",
-      "entrypoints": [
-        "lib/activeRecipeIndicator.ts:getActiveRecipeIndicator"
-      ],
+      "entrypoints": ["lib/activeRecipeIndicator.ts:getActiveRecipeIndicator"],
       "tests": [
         "apps/local-server/src/providers/grokImagineInput.test.ts",
         "components/QueuePanel.test.ts",
@@ -599,12 +583,8 @@
       "path": "lib/recipeContextBuilders",
       "type": "interface",
       "boundary": "Lib",
-      "entrypoints": [
-        "lib/recipeContextBuilders/index.ts:RECIPE_CONTEXT_BUILDERS"
-      ],
-      "tests": [
-        "lib/recipeContextBuilders/index.test.ts"
-      ],
+      "entrypoints": ["lib/recipeContextBuilders/index.ts:RECIPE_CONTEXT_BUILDERS"],
+      "tests": ["lib/recipeContextBuilders/index.test.ts"],
       "callers": [
         {
           "id": "lib",
@@ -644,9 +624,7 @@
       "path": "lib/styleThumbnailPacks.generated",
       "type": "module",
       "boundary": "Lib",
-      "entrypoints": [
-        "lib/styleThumbnailPacks.generated/index.ts:loadGeneratedStyleThumbnailPack"
-      ],
+      "entrypoints": ["lib/styleThumbnailPacks.generated/index.ts:loadGeneratedStyleThumbnailPack"],
       "tests": [],
       "callers": [
         {
@@ -670,9 +648,7 @@
       "path": "main.tsx",
       "type": "module",
       "boundary": "Other Modules",
-      "entrypoints": [
-        "main.tsx:rootElement"
-      ],
+      "entrypoints": ["main.tsx:rootElement"],
       "tests": [],
       "callers": [],
       "callees": [
@@ -700,9 +676,7 @@
       "path": "packages/shared",
       "type": "module",
       "boundary": "Packages",
-      "entrypoints": [
-        "packages/shared/src/index.ts:export * from './types';"
-      ],
+      "entrypoints": ["packages/shared/src/index.ts:export * from './types';"],
       "tests": [
         "apps/local-server/src/animationSequenceRoutes.test.ts",
         "apps/local-server/src/appFactory.test.ts",
@@ -773,9 +747,7 @@
       "path": "package.json",
       "type": "module",
       "boundary": "Repository",
-      "entrypoints": [
-        "package.json:{"
-      ],
+      "entrypoints": ["package.json:{"],
       "tests": [],
       "callers": [],
       "callees": [
@@ -811,9 +783,7 @@
       "path": "scripts",
       "type": "service",
       "boundary": "Scripts",
-      "entrypoints": [
-        "scripts/audit-provider-inputs.ts:argValue"
-      ],
+      "entrypoints": ["scripts/audit-provider-inputs.ts:argValue"],
       "tests": [
         "scripts/audit-style-preset-dna-completeness.test.ts",
         "scripts/audit-style-preset-scene-lock.test.ts",
@@ -872,9 +842,7 @@
       "path": "scripts/style-migration",
       "type": "database",
       "boundary": "Scripts",
-      "entrypoints": [
-        "scripts/style-migration/enrich-pack-01-photo-dna.ts:argValue"
-      ],
+      "entrypoints": ["scripts/style-migration/enrich-pack-01-photo-dna.ts:argValue"],
       "tests": [],
       "callers": [],
       "callees": [
@@ -971,9 +939,7 @@
       "path": "skills/imagegen/scripts/image_gen.py",
       "type": "service",
       "boundary": "Skills",
-      "entrypoints": [
-        "skills/imagegen/scripts/image_gen.py:_NullContext"
-      ],
+      "entrypoints": ["skills/imagegen/scripts/image_gen.py:_NullContext"],
       "tests": [],
       "callers": [],
       "callees": [
@@ -997,9 +963,7 @@
       "path": "skills/imagegen/scripts/remove_chroma_key.py",
       "type": "service",
       "boundary": "Skills",
-      "entrypoints": [
-        "skills/imagegen/scripts/remove_chroma_key.py:_die"
-      ],
+      "entrypoints": ["skills/imagegen/scripts/remove_chroma_key.py:_die"],
       "tests": [],
       "callers": [],
       "callees": [
@@ -1023,9 +987,7 @@
       "path": "types.ts",
       "type": "module",
       "boundary": "Types",
-      "entrypoints": [
-        "types.ts:Attachment"
-      ],
+      "entrypoints": ["types.ts:Attachment"],
       "tests": [
         "contexts/GenerationIsolation.runtime.test.tsx",
         "hooks/useWorkspaceStrip.test.ts",
@@ -1100,9 +1062,7 @@
       "path": "utils",
       "type": "module",
       "boundary": "Utils",
-      "entrypoints": [
-        "utils/catalogImageGenerationConfig.ts:isRecordLike"
-      ],
+      "entrypoints": ["utils/catalogImageGenerationConfig.ts:isRecordLike"],
       "tests": [
         "utils/catalogImageGenerationConfig.test.ts",
         "utils/fileUtils.test.ts",

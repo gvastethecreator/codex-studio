@@ -10,7 +10,11 @@ import {
   resolveGrokImagineGenerateBlock,
   type GrokImagineGenerateBlock,
 } from './grokImagineUiPolicy';
-import type { CodexModel, CodexModelCatalogResponse, GenerationProviderId } from '../packages/shared/src';
+import type {
+  CodexModel,
+  CodexModelCatalogResponse,
+  GenerationProviderId,
+} from '../packages/shared/src';
 import type { AspectRatio, Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 

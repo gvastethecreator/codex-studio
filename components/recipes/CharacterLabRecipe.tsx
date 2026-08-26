@@ -845,9 +845,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   const selectedAccent = getAccent(selectedAction.accent);
   const selectedModeMeta =
     characterLabModes.find((mode) => mode.id === selectedMode) ?? characterLabModes[0];
-  const selectedModeActions = characterLabActions.filter(
-    (action) => action.mode === selectedMode,
-  );
+  const selectedModeActions = characterLabActions.filter((action) => action.mode === selectedMode);
   const selectedModeReadyActions = selectedModeActions.filter(
     (action) => action.capability === 'ready',
   );
@@ -983,7 +981,8 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
 
   const filteredCategoryGroups = useMemo(() => {
     const query = normalizeSearch(search);
-    return characterLabCategories.filter((category) => category.mode === selectedMode)
+    return characterLabCategories
+      .filter((category) => category.mode === selectedMode)
       .map((category) => ({
         category,
         actions: characterLabActions.filter(

@@ -24,7 +24,7 @@ describe('characterLabView', () => {
     expect(source.includes('characterLabCatalog.generated')).toBe(false);
     expect(source.includes('characterLabIconAtlas.generated')).toBe(false);
     expect(source.includes('characterLabOptionIconAtlas.generated')).toBe(false);
-    expect(source.includes('from \'../../lib/characterLabView\'')).toBe(true);
+    expect(source.includes("from '../../lib/characterLabView'")).toBe(true);
     expect(source.includes('buildCharacterLabPrompt')).toBe(true);
   });
 

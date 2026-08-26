@@ -44,7 +44,8 @@ describe('style thumbnail projection helpers', () => {
     ).toBe(false);
     expect(
       isLandingFolderIndexStale({
-        actual: 'export const STYLE_LANDING_FOLDER_SUMMARIES_BY_ID = { pack_16: true }\npresetCount: 12',
+        actual:
+          'export const STYLE_LANDING_FOLDER_SUMMARIES_BY_ID = { pack_16: true }\npresetCount: 12',
         expectedIds: ['pack_16'],
         expectedCounts: ['presetCount: 12'],
       }),

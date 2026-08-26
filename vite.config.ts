@@ -10,11 +10,11 @@ export default defineConfig({
   base: './',
   server: {
     port: 17222,
-    host: 'localhost',
+    host: '0.0.0.0',
   },
   preview: {
     port: 17222,
-    host: 'localhost',
+    host: '0.0.0.0',
   },
   build: {
     emptyOutDir: false,
