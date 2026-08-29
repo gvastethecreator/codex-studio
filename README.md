@@ -142,7 +142,7 @@ bun run validate
 bun run validate:release
 ```
 
-In VS Code, run the same commands from **Terminal -> Run Task**. The tracked tasks include `📦 deps`, `🧱 init`, `🚀 dev`, `🏗 build`, `🧪 test`, `✅ gate`, `🛡 release`, `🔌 providers`, and focused UI or API tasks.
+In VS Code, run the same commands from **Terminal -> Run Task**. Daily tasks start with `🚀 dev`, `🧪 test`, `🔍 check`, and `🏗 build`. Setup and infrequent tasks (`🧱 init`, `📦 deps`, `🛡 release`, `🔌 providers`) sit later in the list.
 
 Maintenance:
 

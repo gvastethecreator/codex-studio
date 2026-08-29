@@ -1,7 +1,7 @@
 {
-  "source_commit": "3dd225d12ed4c13dd9109ec8ba96c03b93a19c12",
+  "source_commit": "89ddd3f07a3aab7812f0fc77ee4439ac6236609b",
   "working_tree_dirty": true,
-  "generated_at": "2026-08-18T12:00:00Z",
+  "generated_at": "2026-08-29T20:41:45Z",
   "scanned_scope": [
     "."
   ],
@@ -34,8 +34,8 @@
     {
       "id": ".",
       "path": ".",
-      "file_count": 30,
-      "fingerprint": "3b020f03eb90d1ff57f14503f58fe6c500c65ebad6b3417c004480e368b247ba"
+      "file_count": 33,
+      "fingerprint": "beb2f9ec9a740fab32aee86b490fda3acd12b16206f62dc5d6c56aac7ff3df8f"
     },
     {
       "id": ".github",
@@ -52,8 +52,8 @@
     {
       "id": "apps",
       "path": "apps",
-      "file_count": 192,
-      "fingerprint": "796aed60fcfd11f94bed104ec4b62de91e8089b1f11ecba85da90f427f528ebb"
+      "file_count": 204,
+      "fingerprint": "b0f954c0b7bdcc58d2ee820c3240d6d74b77baf807837eae1754354069fc351e"
     },
     {
       "id": "assets",
@@ -64,8 +64,8 @@
     {
       "id": "components",
       "path": "components",
-      "file_count": 1970,
-      "fingerprint": "9fcbf528fb135e7efb5fa584f5124233ab09cb35ebc46308e22673d929ed25ff"
+      "file_count": 1971,
+      "fingerprint": "5a7484d60282f368328c3d0d75d13d95c6df58537d2b67fc2c9e940fa1e0532f"
     },
     {
       "id": "contexts",
@@ -76,8 +76,8 @@
     {
       "id": "docs",
       "path": "docs",
-      "file_count": 60,
-      "fingerprint": "8da6c7e4150f4c16574aff749af93feb0ba7c923ec0eaa56fbdc2e2bc4222df4"
+      "file_count": 34,
+      "fingerprint": "d5936652782bc5a82bd15f429658a7137231c83af17b10e2c0d60af8a37d41df"
     },
     {
       "id": "electron",
@@ -89,37 +89,37 @@
       "id": "hooks",
       "path": "hooks",
       "file_count": 68,
-      "fingerprint": "5b8606331eeb4681d48e2c1d269f4c47be5d4e8c0d58cba203ccbdc64320f0f3"
+      "fingerprint": "a312d7f41564df6a2872d83fa38bf911bd20dba7b4dbf8ce7b95fd683a6888c3"
     },
     {
       "id": "lib",
       "path": "lib",
-      "file_count": 144,
-      "fingerprint": "6d87e2a1d3fc1fc2a60f87b15445866f50cb1a833450abd4a58b07115822ea38"
+      "file_count": 167,
+      "fingerprint": "a269967db79424eba7dfc2813547c2fb59fa2137d8ca69246f9167cbfb929713"
     },
     {
       "id": "packages",
       "path": "packages",
-      "file_count": 30,
-      "fingerprint": "684837a730f3bba8255f0502546be8ee16d1cf91528e538ce1dbcef7873da5ea"
+      "file_count": 32,
+      "fingerprint": "f0b936d7cd5fe9b6e0e21368f27452ed738166d00a64f57f11711e185aad6364"
     },
     {
       "id": "scripts",
       "path": "scripts",
-      "file_count": 125,
-      "fingerprint": "8105cb533794f429a4b7480c135ce09e2e028a8436427cd12cd06d09d687270e"
+      "file_count": 130,
+      "fingerprint": "f5ec2d9490721d21c529a13f68ed8d0c3a7d3c973f472f7ec4399fd881ae3263"
     },
     {
       "id": "services",
       "path": "services",
       "file_count": 28,
-      "fingerprint": "6e5f24e56f2d7c652fbf56bd08fbe91b5e065dad42da6c265f3f53b559d9b3b5"
+      "fingerprint": "d2f53c34c0501e48d9bc395b620d4ed863ff6e9ef91754d09bcba1e71b273cb0"
     },
     {
       "id": "skills",
       "path": "skills",
       "file_count": 18,
-      "fingerprint": "f99415b5f576075b6708f46d615f39c0d0e0852932abb9bd9eadaa0907c48b51"
+      "fingerprint": "2e2deace6cc55ef6eea24f8de354190ccc32f087655432c4c978e865e3dd4c39"
     },
     {
       "id": "utils",

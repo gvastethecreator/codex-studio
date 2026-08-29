@@ -24,12 +24,12 @@ This folder holds public and agent-facing docs. Local execution plans, completed
 - [ADR 0006: Workspace as canonical scope](./adr/0006-workspace-as-canonical-scope.md)
 - [ADR 0007: Single package until real packages](./adr/0007-single-package-until-real-packages.md)
 - [ADR 0008: Versioned optional asset packs](./adr/0008-versioned-optional-asset-packs.md)
+- [ADR 0009: Grok Imagine provider](./adr/0009-grok-imagine-provider.md)
 
 ## Current architecture
 
 - [Architecture map](./ARCHITECTURE.md)
 - [Design tokens and UI contract](./DESIGN.md)
-- [Grok Imagine provider decision](./architecture/grok-imagine-provider-2026-08-08.md)
 - [Product roadmap](../ROADMAP.md)
 
 ## Agent-facing docs

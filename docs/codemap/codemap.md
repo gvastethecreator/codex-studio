@@ -1,7 +1,7 @@
 # Code map · codex-studio
 
-generated: 2026-08-18T12:00:00Z
-commit: 3dd225d12ed4
+generated: 2026-08-29T20:41:45Z
+commit: 89ddd3f07a3a
 scope: .
 
 counts: 20 nodes · 80 edges · 0 flows · 0 unknown
@@ -53,7 +53,7 @@ counts: 20 nodes · 80 edges · 0 flows · 0 unknown
 - `lib` · `lib` · module · Lib
   callers: apps-local-server (imports), components (imports), contexts (imports), hooks (imports), lib-recipecontextbuilders (imports), scripts (imports), services (imports), utils (imports)
   callees: components (imports), constants (imports), external-dependencies (imports), hooks (imports), lib-recipecontextbuilders (imports), lib-stylethumbnailpacks-generated (imports), packages-shared (imports), services (imports), types (imports), utils (imports)
-  tests: apps/local-server/src/providers/grokImagineInput.test.ts, components/QueuePanel.test.ts, components/StudioSettingsModal.test.ts, hooks/useStudioGallery.test.ts, hooks/useStudioGenerationActions.test.ts
+  tests: apps/local-server/src/hostTerminal.test.ts, apps/local-server/src/providers/grokImagineInput.test.ts, components/QueuePanel.test.ts, components/StudioSettingsModal.test.ts, hooks/useStudioGallery.test.ts
   entry: lib/activeRecipeIndicator.ts:getActiveRecipeIndicator
 
 - `lib-recipecontextbuilders` · `lib/recipeContextBuilders` · interface · Lib

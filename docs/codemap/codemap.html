@@ -1136,8 +1136,8 @@
     </main>
     <script id="codemap-data" type="application/json">
       {
-        "generated_at": "2026-08-18T12:00:00Z",
-        "generated_from_commit": "3dd225d12ed4c13dd9109ec8ba96c03b93a19c12",
+        "generated_at": "2026-08-29T20:41:45Z",
+        "generated_from_commit": "89ddd3f07a3aab7812f0fc77ee4439ac6236609b",
         "scope": ["."],
         "nodes": [
           {
@@ -1374,11 +1374,11 @@
             "boundary": "Lib",
             "entrypoints": ["lib/activeRecipeIndicator.ts:getActiveRecipeIndicator"],
             "tests": [
+              "apps/local-server/src/hostTerminal.test.ts",
               "apps/local-server/src/providers/grokImagineInput.test.ts",
               "components/QueuePanel.test.ts",
               "components/StudioSettingsModal.test.ts",
-              "hooks/useStudioGallery.test.ts",
-              "hooks/useStudioGenerationActions.test.ts"
+              "hooks/useStudioGallery.test.ts"
             ],
             "callers": [
               { "id": "apps-local-server", "type": "imports" },
@@ -1783,6 +1783,10 @@
               "status": "verified",
               "locations": [
                 {
+                  "path": "apps/local-server/src/hostTerminal.test.ts",
+                  "symbol": "../../../lib/onboardingSetupPrompt"
+                },
+                {
                   "path": "apps/local-server/src/providers/grokImagineInput.test.ts",
                   "symbol": "../../../../lib/recipeModules"
                 }
@@ -1913,12 +1917,12 @@
                   "symbol": "../services/studio-api/http"
                 },
                 {
-                  "path": "components/recipes/AnimationSequenceRecipe.tsx",
-                  "symbol": "../../services/animationSequenceRunCoordinator"
+                  "path": "components/OnboardingModal.tsx",
+                  "symbol": "../services/studio-api/http"
                 },
                 {
-                  "path": "components/recipes/AnimationSequenceRecipe.tsx",
-                  "symbol": "../../services/studio-api/animationSequences"
+                  "path": "components/OnboardingModal.tsx",
+                  "symbol": "../services/studio-api/runtime"
                 }
               ]
             }
@@ -2371,8 +2375,11 @@
                   "path": "lib/buildStudioHeaderToolbarProps.ts",
                   "symbol": "../utils/transitionUtils"
                 },
-                { "path": "lib/grokImagineUiPolicy.ts", "symbol": "../utils/imageGenSizing" },
-                { "path": "lib/recipeModules.ts", "symbol": "../utils/imageGenSizing" }
+                {
+                  "path": "lib/composerProviderProjection.ts",
+                  "symbol": "../utils/imageGenSizing"
+                },
+                { "path": "lib/grokImagineUiPolicy.ts", "symbol": "../utils/imageGenSizing" }
               ]
             }
           },
@@ -2538,16 +2545,16 @@
               "status": "verified",
               "locations": [
                 {
+                  "path": "scripts/build-character-lab-icon-assets.ts",
+                  "symbol": "../apps/local-server/src/sharpAuthoringAdapter"
+                },
+                {
+                  "path": "scripts/build-character-lab-option-icon-assets.ts",
+                  "symbol": "../apps/local-server/src/sharpAuthoringAdapter"
+                },
+                {
                   "path": "scripts/embed-metadata-bulk.ts",
                   "symbol": "../apps/local-server/src/init"
-                },
-                {
-                  "path": "scripts/embed-metadata-bulk.ts",
-                  "symbol": "../apps/local-server/src/db/connection"
-                },
-                {
-                  "path": "scripts/embed-metadata-bulk.ts",
-                  "symbol": "../apps/local-server/src/metadataEmbedder"
                 }
               ]
             }

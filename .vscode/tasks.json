@@ -2,20 +2,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "📦 deps",
-      "type": "shell",
-      "command": "bun install --frozen-lockfile",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": []
-    },
-    {
-      "label": "🧱 init",
-      "type": "shell",
-      "command": "bun run studio:init",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": []
-    },
-    {
       "label": "🚀 dev",
       "type": "shell",
       "command": "bun run dev",
@@ -40,18 +26,15 @@
       "isBackground": true
     },
     {
-      "label": "🩺 doctor",
+      "label": "🧪 test",
       "type": "shell",
-      "command": "bun run runtime:doctor",
+      "command": "bun run test",
       "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": []
-    },
-    {
-      "label": "🔌 providers",
-      "type": "shell",
-      "command": "bun run providers:preflight",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
     },
     {
       "label": "✨ fmt",
@@ -78,28 +61,36 @@
       "group": "test"
     },
     {
-      "label": "🧪 test",
+      "label": "⚡ quick",
       "type": "shell",
-      "command": "bun run test",
-      "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "📊 coverage",
-      "type": "shell",
-      "command": "bun run test:coverage",
+      "command": "bun run validate:fast",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
     },
     {
-      "label": "⚡ quick",
+      "label": "🏗 build",
       "type": "shell",
-      "command": "bun run validate:fast",
+      "command": "bun run build",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "🧬 typecheck",
+      "type": "shell",
+      "command": "bun run typecheck:environments",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "📊 coverage",
+      "type": "shell",
+      "command": "bun run test:coverage",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
@@ -121,15 +112,18 @@
       "group": "test"
     },
     {
-      "label": "🏗 build",
+      "label": "🩺 doctor",
       "type": "shell",
-      "command": "bun run build",
+      "command": "bun run runtime:doctor",
       "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
+      "problemMatcher": []
+    },
+    {
+      "label": "🔌 providers",
+      "type": "shell",
+      "command": "bun run providers:preflight",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
     },
     {
       "label": "🎨 styles",
@@ -156,19 +150,26 @@
       "isBackground": true
     },
     {
-      "label": "📜 logs",
+      "label": "🖼 electron",
       "type": "shell",
-      "command": "bun run tooling:logs",
+      "command": "bun run dev:electron",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "🧱 init",
+      "type": "shell",
+      "command": "bun run studio:init",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     },
     {
-      "label": "🧬 typecheck",
+      "label": "📦 deps",
       "type": "shell",
-      "command": "bun run typecheck:environments",
+      "command": "bun install --frozen-lockfile",
       "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "group": "test"
+      "problemMatcher": []
     },
     {
       "label": "🧾 docs",
@@ -195,12 +196,11 @@
       "group": "test"
     },
     {
-      "label": "🖼 electron",
+      "label": "📜 logs",
       "type": "shell",
-      "command": "bun run dev:electron",
+      "command": "bun run tooling:logs",
       "options": { "cwd": "${workspaceFolder}" },
-      "problemMatcher": [],
-      "isBackground": true
+      "problemMatcher": []
     }
   ]
 }

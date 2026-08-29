@@ -15,7 +15,7 @@ Bring a Codex Studio checkout to a runnable local state:
 - dependencies installed and repo scripts runnable
 - `.env.local` bootstrap present and sane
 - Studio Library initialized outside the repo
-- SQLite migrations, default library, and default project created
+- SQLite migrations, default library, and default workspace created
 - Codex CLI available, app-server-capable, and authenticated with ChatGPT login
 - `codex app-server` reachable through the backend
 - UI and backend start cleanly
@@ -96,7 +96,7 @@ For UI onboarding changes, also read:
    - Prefer `bun run studio:onboard --setup` (or in-app Setup) when the probe says
      library or Bootstrap Configuration is missing. Mutations need consent.
    - Run `bun run studio:init` when `.env.local`, Studio Library folders,
-     SQLite state, default library, or default project are missing after that.
+     SQLite state, default library, or default workspace are missing after that.
    - Keep existing `.env.local` values unless they are invalid. If editing is
      needed, preserve user-specific paths and never add secrets.
 

@@ -29,7 +29,7 @@ Setup agent flow:
    - Studio Library path and initialization state
    - `/api/health` and `/api/codex/session` when the server is reachable
 3. Run `bun install` only when dependencies are missing or stale enough to block setup.
-4. Run `bun run studio:init` when `.env.local`, the Studio Library, SQLite state, the default library, or the default project is missing.
+4. Run `bun run studio:init` when `.env.local`, the Studio Library, SQLite state, the default library, or the default workspace is missing.
 5. Start or make sure that the local runtime works with `bun run dev` when needed. Then make sure that the UI and backend are healthy.
 6. If ChatGPT auth is missing, stop. Ask the user to run `codex login` and choose ChatGPT. Do not claim setup is complete until that user-only step is done and you make sure that it works.
 7. Do not block setup on an exact Bun or Codex release when readiness, supported scripts, app-server support, and Local Codex Session are healthy.
