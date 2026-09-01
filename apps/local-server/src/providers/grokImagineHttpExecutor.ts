@@ -79,8 +79,12 @@ export function resolveGrokImagineHttpAspectRatio(payload: GrokImagineCompiledPa
 
 function resolveResolution(payload: GrokImagineCompiledPayload) {
   const size = payload.output.imageSize?.toLowerCase() ?? '';
-  if (size.includes('2k') || size.includes('2048') || size.includes('1536')) return '2k';
+  if (/\b2k\b/.test(size) || size.includes('2048')) return '2k';
   return '1k';
+}
+
+function toImageUrlPart(filePath: string, readFile: ReadLocalFile) {
+  return { url: toDataUri(filePath, readFile), type: 'image_url' as const };
 }
 
 function toDataUri(filePath: string, readFile: ReadLocalFile) {
@@ -89,12 +93,14 @@ function toDataUri(filePath: string, readFile: ReadLocalFile) {
   return `data:${mime};base64,${data}`;
 }
 
-function grokErrorMessage(payload: unknown, fallback: string) {
+function grokErrorMessage(payload: unknown, fallback: string, secrets: string[] = []) {
   if (isRecord(payload)) {
     const error = payload.error;
-    if (typeof error === 'string' && error.trim()) return error.trim();
+    if (typeof error === 'string' && error.trim()) {
+      return responseSnippet(error.trim(), secrets);
+    }
     if (isRecord(error) && typeof error.message === 'string' && error.message.trim()) {
-      return error.message.trim();
+      return responseSnippet(error.message.trim(), secrets);
     }
   }
   return fallback;
@@ -158,20 +164,18 @@ export function createGrokImagineHttpExecutor({
     }
 
     const isEdit = payload.operation === 'image_edit' || sources.length > 0;
-    const model = isEdit
-      ? payload.model?.startsWith('grok-imagine-image-2')
-        ? resolveGrokImagineHttpModel(payload.model, env)
-        : 'grok-imagine-image-quality'
-      : resolveGrokImagineHttpModel(payload.model, env);
+    const model = resolveGrokImagineHttpModel(payload.model, env);
     const token = await getAccessToken();
+    const secrets = [token, readXaiApiKey(env) ?? ''];
     const endpointBase = env.XAI_BASE_URL?.trim().replace(/\/+$/, '') || XAI_API_BASE_URL;
     const endpoint = isEdit ? `${endpointBase}/images/edits` : `${endpointBase}/images/generations`;
     const body: Record<string, unknown> = {
       model,
       prompt: payload.prompt,
+      response_format: 'b64_json',
     };
     if (isEdit) {
-      const images = sources.map((asset) => toDataUri(asset.localPath!, readFile));
+      const images = sources.map((asset) => toImageUrlPart(asset.localPath!, readFile));
       if (images.length === 0) {
         throw new SubscriptionHttpError(
           'Grok Imagine image editing requires a Studio Library source image.',
@@ -226,7 +230,7 @@ export function createGrokImagineHttpExecutor({
     if (!response.ok) {
       throw classifyGrokHttpFailure(
         response.status,
-        grokErrorMessage(json, responseSnippet(rawText, [token, readXaiApiKey(env) ?? ''])),
+        grokErrorMessage(json, responseSnippet(rawText, secrets), secrets),
       );
     }
     const data = isRecord(json) && Array.isArray(json.data) ? json.data : [];
@@ -254,24 +258,32 @@ export function createGrokImagineHttpExecutor({
       });
     }
     if (url) {
-      return storeHostedImageResult({
-        providerId: 'grok',
-        providerSlug: 'grok-http',
-        model,
-        endpointBase,
-        job: { id: context.job.id, signal: context.job.signal },
-        compiledInput: context.compiledInput,
-        responseJson: { keys: isRecord(json) ? Object.keys(json) : [] },
-        imageUrl: url,
-        requestAttempts: 1,
-        startedAt,
-        diagnostics: { runtime: 'subscription_http' },
-        fetch: fetchImpl,
-        files,
-        maxAttempts: 3,
-        retryDelayMs: 400,
-        sleep: (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
-      });
+      try {
+        return await storeHostedImageResult({
+          providerId: 'grok',
+          providerSlug: 'grok-http',
+          model,
+          endpointBase,
+          job: { id: context.job.id, signal: context.job.signal },
+          compiledInput: context.compiledInput,
+          responseJson: { keys: isRecord(json) ? Object.keys(json) : [] },
+          imageUrl: url,
+          requestAttempts: 1,
+          startedAt,
+          diagnostics: { runtime: 'subscription_http' },
+          fetch: fetchImpl,
+          files,
+          maxAttempts: 3,
+          retryDelayMs: 400,
+          sleep: (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
+        });
+      } catch (error) {
+        if (isAbortError(error)) throw error;
+        throw new SubscriptionHttpError(
+          error instanceof Error ? error.message : 'xAI image download failed.',
+          { code: 'timeout', fallbackAllowed: true },
+        );
+      }
     }
     throw new SubscriptionHttpError('xAI returned no image data.', {
       code: 'empty_response',

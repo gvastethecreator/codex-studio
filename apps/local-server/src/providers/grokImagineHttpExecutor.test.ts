@@ -50,15 +50,40 @@ function createContext() {
   };
 }
 
-describe('grok HTTP executor', () => {
+function createEditContext() {
+  const sourceSpec = createGenerationTaskSpec({
+    id: 'spec-grok-edit',
+    task: 'image_edit',
+    providerId: 'grok',
+    prompt: 'make the keep larger',
+    assets: [{ role: 'input', name: 'keep.png', localPath: 'D:/studio-library/keep.png' }],
+  });
+  const job = {
+    id: 'job-grok-edit',
+    workspaceId: 'workspace-1',
+    providerId: 'grok' as const,
+    prompt: 'fallback',
+    execution: { model: 'grok-4.5', reasoningEffort: 'low' as const, serviceTier: null },
+    sourceSpec,
+  };
+  return {
+    providerId: 'grok' as const,
+    job,
+    compiledInput: compileGrokImagineInput(job),
+    preflight: READY_PREFLIGHT,
+  };
+}
+
+describe('Grok Imagine HTTP executor', () => {
   it('maps chat models to grok-imagine-image and stores inline PNG without leaking the token', async () => {
-    expect(resolveGrokImagineHttpModel('grok-4.5')).toBe('grok-imagine-image');
+    expect(resolveGrokImagineHttpModel('grok-4.5', {})).toBe('grok-imagine-image');
     const writes: Array<{ filePath: string; content: unknown }> = [];
     const fetchMock = async (input: string | URL | Request, init?: RequestInit) => {
       expect(inputToUrl(input)).toBe('https://api.x.ai/v1/images/generations');
       if (typeof init?.body !== 'string') throw new Error('Expected string request body.');
       const body = JSON.parse(init.body) as Record<string, unknown>;
       expect(body.model).toBe('grok-imagine-image');
+      expect(body.response_format).toBe('b64_json');
       expect(body.aspect_ratio).toBe('16:9');
       expect(JSON.stringify(init?.headers)).toContain('xai-secret');
       return new Response(JSON.stringify({ data: [{ b64_json: 'AQID' }] }), {
@@ -108,6 +133,58 @@ describe('grok HTTP executor', () => {
       fetch: async () => {
         throw new TypeError('fetch failed');
       },
+      getAccessToken: async () => 'xai-secret',
+      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+      writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+    });
+    await expect(executor(createContext())).rejects.toMatchObject({
+      code: 'timeout',
+      fallbackAllowed: true,
+    });
+  });
+
+  it('posts image_url objects for edits and maps chat models to grok-imagine-image', async () => {
+    const fetchMock = async (_input: string | URL | Request, init?: RequestInit) => {
+      if (typeof init?.body !== 'string') throw new Error('Expected string request body.');
+      const body = JSON.parse(init.body) as Record<string, unknown>;
+      expect(body.model).toBe('grok-imagine-image');
+      expect(body.response_format).toBe('b64_json');
+      expect(body.image).toEqual({
+        url: expect.stringMatching(/^data:image\/png;base64,/),
+        type: 'image_url',
+      });
+      expect(body.images).toBeUndefined();
+      return new Response(JSON.stringify({ data: [{ b64_json: 'AQID' }] }), {
+        headers: { 'content-type': 'application/json' },
+      });
+    };
+    const executor = createGrokImagineHttpExecutor({
+      env: {},
+      fetch: fetchMock,
+      getAccessToken: async () => 'xai-secret',
+      readFile: () => new Uint8Array([1, 2, 3]),
+      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+      writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+      now: () => 1000,
+    });
+    await executor(createEditContext());
+  });
+
+  it('falls back to CLI when a hosted image URL cannot be downloaded', async () => {
+    const fetchMock = async (input: string | URL | Request) => {
+      const url = inputToUrl(input);
+      if (url.endsWith('/images/generations')) {
+        return new Response(JSON.stringify({ data: [{ url: 'https://cdn.x.ai/out.png' }] }), {
+          headers: { 'content-type': 'application/json' },
+        });
+      }
+      return new Response('unavailable', { status: 503 });
+    };
+    const executor = createGrokImagineHttpExecutor({
+      env: {},
+      fetch: fetchMock,
       getAccessToken: async () => 'xai-secret',
       resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
       mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
