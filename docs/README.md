@@ -1,42 +1,12 @@
 # Documentation
 
-This folder holds public and agent-facing docs. Local execution plans, completed workplans, audits, and review notes live in the ignored `.scratch/dev-docs/` workspace.
+Setup and usage notes for running Codex Studio locally.
 
-## Public docs
-
-- [Development guide](./DEV_GUIDE.md)
-- [Tooling and dependency maintenance](./TOOLING.md)
 - [Dependencies](./DEPENDENCIES.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 - [Electron development shell](./ELECTRON.md)
 - [Style preset authoring](./STYLE_PRESET_AUTHORING.md)
-- [Roadmap](../ROADMAP.md)
+- [Portable launch](../PORTABLE.txt)
 - [Contributing](../CONTRIBUTING.md)
 - [Security](../SECURITY.md)
-
-## Architecture decisions
-
-- [ADR 0001: Sprite Atlas workflow recipe](./adr/0001-sprite-atlas-workflow.md)
-- [ADR 0002: Animation Sequence workflow recipe](./adr/0002-animation-sequence-workflow.md)
-- [ADR 0003: Studio Readiness snapshot lifecycle](./adr/0003-studio-readiness-snapshot-lifecycle.md)
-- [ADR 0004: Durable Studio Event revisions](./adr/0004-durable-studio-event-revisions.md)
-- [ADR 0005: Persistent Jobs as queue truth](./adr/0005-persistent-jobs-as-queue-truth.md)
-- [ADR 0006: Workspace as canonical scope](./adr/0006-workspace-as-canonical-scope.md)
-- [ADR 0007: Single package until real packages](./adr/0007-single-package-until-real-packages.md)
-- [ADR 0008: Versioned optional asset packs](./adr/0008-versioned-optional-asset-packs.md)
-- [ADR 0009: Grok Imagine provider](./adr/0009-grok-imagine-provider.md)
-
-## Current architecture
-
-- [Architecture map](./ARCHITECTURE.md)
-- [Design tokens and UI contract](./DESIGN.md)
-- [Product roadmap](../ROADMAP.md)
-
-## Agent-facing docs
-
-- [Agent guide](../AGENTS.md)
-- [Project vocabulary](../CONTEXT.md)
-- [Workflow skills](../SKILLS.md)
-- [Domain docs](./agents/domain.md)
-- [Issue tracker](./agents/issue-tracker.md)
-- [Triage labels](./agents/triage-labels.md)
+- [Agent rules](../AGENTS.md)

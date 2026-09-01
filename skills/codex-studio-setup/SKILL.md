@@ -66,20 +66,15 @@ inside the Studio Library.
 Before changing repo files, read:
 
 1. `AGENTS.md`
-2. `CONTEXT.md`
-3. `docs/ARCHITECTURE.md`
-4. `ROADMAP.md`
-5. `SKILLS.md`
-6. `README.md`
-7. `docs/TROUBLESHOOTING.md`
+2. `README.md`
+3. `docs/TROUBLESHOOTING.md`
 
 For UI onboarding changes, also read:
 
-1. `docs/DESIGN.md`
-2. `components/OnboardingModal.tsx`
-3. `hooks/useStudioOnboarding.ts`
-4. `hooks/useStudioRuntime.ts`
-5. `components/overlays/StudioSystemOverlays.tsx`
+1. `components/OnboardingModal.tsx`
+2. `hooks/useStudioOnboarding.ts`
+3. `hooks/useStudioRuntime.ts`
+4. `components/overlays/StudioSystemOverlays.tsx`
 
 ## Setup Workflow
 

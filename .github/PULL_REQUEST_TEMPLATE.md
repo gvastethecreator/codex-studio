@@ -12,5 +12,5 @@
 
 ## Notes
 
-- Link related issues, ADRs, or docs.
+- Link related issues or docs.
 - Mention any skipped validation with the reason and risk.

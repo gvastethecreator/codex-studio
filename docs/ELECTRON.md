@@ -1,6 +1,6 @@
-# Electron: proposed direction
+# Electron development shell
 
-This document does not announce an Electron release. It defines a gradual desktop strategy. The renderer must not couple to desktop APIs.
+This document does not announce an Electron release. It describes the current development shell and a gradual desktop strategy. The renderer must not couple to desktop APIs.
 
 ## Current state
 

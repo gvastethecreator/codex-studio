@@ -57,8 +57,8 @@ UI-compiled jobs:
 
 Direct agent requests without UI:
 
-- If the user names a Codex Studio recipe, inspect `SKILLS.md` and
-  `lib/recipeModules.ts` instead of inventing a free-form prompt path.
+- If the user names a Codex Studio recipe, inspect `lib/recipeModules.ts`
+  instead of inventing a free-form prompt path.
 - For any recipe, identify: recipe id, intended Generation Task, useful
   recipe params, attachments/reference roles, aspect ratio or output format, and
   provider constraints.

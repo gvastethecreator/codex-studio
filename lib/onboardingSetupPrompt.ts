@@ -84,7 +84,7 @@ export function buildCodexStudioSetupPrompt({
     renderReadinessChecks(readiness),
     '',
     'Work rules:',
-    '- Read AGENTS.md, CONTEXT.md, docs/ARCHITECTURE.md, ROADMAP.md, and SKILLS.md before editing.',
+    '- Read AGENTS.md and README.md before editing.',
     '- Preserve dirty worktree changes you did not make.',
     '- Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.',
     '- Do not delete, move, compact, or rewrite Studio Library data unless the user explicitly confirms it.',

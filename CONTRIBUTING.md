@@ -4,7 +4,7 @@ Thank you for helping make this repo clearer and easier to install.
 
 ## Quick path
 
-1. Read `README.md` and `ROADMAP.md`.
+1. Read `README.md`.
 2. Start the local environment with `bun run studio:init` and `bun run dev`.
 3. Make a small change that you can prove.
 4. Run the minimum gates before you open a pull request.
@@ -46,7 +46,7 @@ bun run build
 - Do not commit `.env.local` or real secrets.
 - Keep the local-first path working without `OPENAI_API_KEY`.
 - Document new environment variables and public scripts in `README.md`.
-- If you change structural behavior, explain why in the pull request. Update public or agent docs when contributors need the new fact.
+- If you change behavior that users or contributors rely on, explain why in the pull request.
 
 ## Bug reports
 

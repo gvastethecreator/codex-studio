@@ -155,16 +155,14 @@ bun run tooling:logs:prune
 
 ## Documentation
 
-- [Agent guide](./AGENTS.md)
-- [Project vocabulary](./CONTEXT.md)
-- [Architecture](./docs/ARCHITECTURE.md)
-- [Development guide](./docs/DEV_GUIDE.md)
-- [Tooling](./docs/TOOLING.md)
-- [Dependencies and upgrades](./docs/DEPENDENCIES.md)
+- [Agent rules](./AGENTS.md)
+- [Dependencies](./docs/DEPENDENCIES.md)
 - [Troubleshooting](./docs/TROUBLESHOOTING.md)
 - [Portable launch](./PORTABLE.txt)
 - [Electron development shell](./docs/ELECTRON.md)
-- [Roadmap](./ROADMAP.md)
+- [Style preset authoring](./docs/STYLE_PRESET_AUTHORING.md)
+- [Contributing](./CONTRIBUTING.md)
+- [Security](./SECURITY.md)
 
 ## Status
 
