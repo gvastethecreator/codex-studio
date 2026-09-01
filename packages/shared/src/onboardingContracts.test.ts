@@ -40,6 +40,17 @@ const matrix: Array<{ name: string; patch: Partial<OnboardingFacts>; cta: Onboar
   ];
 
 describe('resolvePrimaryCta', () => {
+  it('skips Codex CLI install and app-server when Studio Sign in is ready', () => {
+    expect(
+      resolvePrimaryCta({
+        ...readyFacts,
+        codexCliAvailable: false,
+        chatgptLoggedIn: true,
+        codexSubscriptionReady: true,
+        appServerReady: false,
+      }),
+    ).toBe('ready');
+  });
   it.each(matrix)('selects $cta when $name', ({ patch, cta }) => {
     expect(resolvePrimaryCta({ ...readyFacts, ...patch })).toBe(cta);
   });

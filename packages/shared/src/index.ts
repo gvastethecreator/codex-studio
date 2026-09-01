@@ -5,6 +5,7 @@ export * from './grokImagineContract';
 export * from './studioSettings';
 export * from './outputSources';
 export * from './providerCapabilities';
+export * from './subscriptionAuth';
 export * from './recipeProviderDirectives';
 export * from './spriteAtlasContracts';
 export * from './animationSequenceContracts';

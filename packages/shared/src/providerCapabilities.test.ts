@@ -3,6 +3,25 @@ import { describe, expect, it } from 'vite-plus/test';
 import { createGenerationProviderCapabilities } from './providerCapabilities';
 
 describe('providerCapabilities', () => {
+  it('marks Codex executable from Studio Sign in when Product Runtime is missing', () => {
+    const report = createGenerationProviderCapabilities({
+      settings: { defaultProviderId: 'codex' },
+      localRuntimeConfigured: { codex: false },
+      subscriptionAuthConfigured: { codex: true },
+      subscriptionAuthState: { codex: 'logged_in' },
+    });
+
+    expect(report.providers).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          providerId: 'codex',
+          runtimeKind: 'subscription_http',
+          canExecute: true,
+          subscriptionAuthState: 'logged_in',
+        }),
+      ]),
+    );
+  });
   it('marks Codex and dry run as executable adapters', () => {
     const report = createGenerationProviderCapabilities({
       settings: { defaultProviderId: 'codex' },

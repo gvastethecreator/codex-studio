@@ -4,6 +4,12 @@ import type { EditableStudioSettings } from './studioSettings';
 export type ProviderCapabilityStatus = 'active' | 'planned' | 'not_configured';
 export type ProviderSecretState = 'not_required' | 'configured' | 'missing';
 export type ProviderLocalRuntimeState = 'not_required' | 'configured' | 'missing' | 'invalid';
+export type ProviderSubscriptionAuthState =
+  | 'not_applicable'
+  | 'logged_out'
+  | 'pending'
+  | 'logged_in'
+  | 'refresh_failed';
 
 export interface GenerationProviderCapability {
   providerId: GenerationProviderId;
@@ -14,6 +20,7 @@ export interface GenerationProviderCapability {
   hasAdapter: boolean;
   canExecute: boolean;
   secretState: ProviderSecretState;
+  subscriptionAuthState: ProviderSubscriptionAuthState;
   detail: string;
 }
 
@@ -42,6 +49,8 @@ export interface CreateProviderCapabilitiesInput {
   settings: Pick<EditableStudioSettings, 'defaultProviderId'>;
   secretConfigured?: Partial<Record<GenerationProviderId, boolean>>;
   localRuntimeConfigured?: Partial<Record<GenerationProviderId, boolean>>;
+  subscriptionAuthConfigured?: Partial<Record<GenerationProviderId, boolean>>;
+  subscriptionAuthState?: Partial<Record<GenerationProviderId, ProviderSubscriptionAuthState>>;
   providers?: ProviderCapabilityDefinition[];
 }
 
@@ -53,6 +62,7 @@ export interface ProviderCapabilityDefinition {
   requiresSecret: boolean;
   requiresLocalRuntime?: boolean;
   activeDetail: string;
+  subscriptionReadyDetail?: string;
   plannedDetail: string;
   missingDetail: string;
 }
@@ -66,8 +76,9 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     requiresSecret: false,
     requiresLocalRuntime: true,
     activeDetail: 'Codex Product Runtime adapter is available.',
+    subscriptionReadyDetail: 'ChatGPT Sign in is ready. Codex Product Runtime stays as fallback.',
     plannedDetail: 'Codex adapter is available.',
-    missingDetail: 'Codex Product Runtime is blocked by local runtime preflight.',
+    missingDetail: 'Sign in with ChatGPT in Studio Settings, or start Codex Product Runtime.',
   },
   {
     providerId: 'grok',
@@ -77,8 +88,9 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     requiresSecret: false,
     requiresLocalRuntime: true,
     activeDetail: 'Grok Imagine is available through the authenticated local Grok Build CLI.',
+    subscriptionReadyDetail: 'xAI Sign in is ready. Grok Build CLI stays as fallback.',
     plannedDetail: 'Grok Imagine adapter is available.',
-    missingDetail: 'Install Grok Build and run `grok login`.',
+    missingDetail: 'Sign in with xAI in Studio Settings, set XAI_API_KEY, or install Grok Build.',
   },
   {
     providerId: 'google',
@@ -131,18 +143,30 @@ function resolveSecretState(requiresSecret: boolean, configured: boolean): Provi
   return configured ? 'configured' : 'missing';
 }
 
+function resolveSubscriptionAuthState(
+  providerId: GenerationProviderId,
+  subscriptionAuthState: Partial<Record<GenerationProviderId, ProviderSubscriptionAuthState>>,
+): ProviderSubscriptionAuthState {
+  if (providerId === 'codex' || providerId === 'grok') {
+    return subscriptionAuthState[providerId] ?? 'logged_out';
+  }
+  return 'not_applicable';
+}
+
 export function createGenerationProviderCapabilities({
   settings,
   secretConfigured = {},
   localRuntimeConfigured = {},
+  subscriptionAuthConfigured = {},
+  subscriptionAuthState = {},
   providers = PROVIDERS,
 }: CreateProviderCapabilitiesInput): GenerationProviderCapabilitiesResponse {
   return {
     providers: providers.map((provider) => {
       const secretReady = Boolean(secretConfigured[provider.providerId]);
-      const runtimeReady = provider.requiresLocalRuntime
-        ? Boolean(localRuntimeConfigured[provider.providerId])
-        : true;
+      const subscriptionReady = Boolean(subscriptionAuthConfigured[provider.providerId]);
+      const localReady = Boolean(localRuntimeConfigured[provider.providerId]);
+      const runtimeReady = provider.requiresLocalRuntime ? localReady || subscriptionReady : true;
       const configured = (!provider.requiresSecret || secretReady) && runtimeReady;
       const canExecute = provider.hasAdapter && configured;
       const status: ProviderCapabilityStatus = canExecute
@@ -150,19 +174,31 @@ export function createGenerationProviderCapabilities({
         : configured
           ? 'planned'
           : 'not_configured';
+      const runtimeKind =
+        subscriptionReady && (provider.providerId === 'codex' || provider.providerId === 'grok')
+          ? 'subscription_http'
+          : provider.runtimeKind;
+      const activeDetail =
+        subscriptionReady && provider.subscriptionReadyDetail
+          ? provider.subscriptionReadyDetail
+          : provider.activeDetail;
 
       return {
         providerId: provider.providerId,
         label: provider.label,
-        runtimeKind: provider.runtimeKind,
+        runtimeKind,
         status,
         isDefault: settings.defaultProviderId === provider.providerId,
         hasAdapter: provider.hasAdapter,
         canExecute,
         secretState: resolveSecretState(provider.requiresSecret, secretReady),
+        subscriptionAuthState: resolveSubscriptionAuthState(
+          provider.providerId,
+          subscriptionAuthState,
+        ),
         detail:
           status === 'active'
-            ? provider.activeDetail
+            ? activeDetail
             : status === 'planned'
               ? provider.plannedDetail
               : provider.missingDetail,

@@ -4,6 +4,7 @@ import type {
   GenerationTaskSpec,
 } from './generationContracts';
 import type { OnboardingProbe, OnboardingStagePayload } from './onboardingContracts';
+import type { SubscriptionAuthUpdatedEventPayload } from './subscriptionAuth';
 
 export type JobStatus =
   | 'queued'
@@ -482,6 +483,12 @@ export type StudioEvent =
   | {
       type: 'onboarding.probe';
       payload: OnboardingProbe;
+      createdAt: string;
+      revision?: number;
+    }
+  | {
+      type: 'auth.updated';
+      payload: SubscriptionAuthUpdatedEventPayload;
       createdAt: string;
       revision?: number;
     };

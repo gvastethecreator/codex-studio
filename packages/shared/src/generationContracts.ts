@@ -26,6 +26,7 @@ export type ProviderRuntimeKind =
   | 'codex_app_server'
   | 'agent_cli'
   | 'hosted_api'
+  | 'subscription_http'
   | 'local_workflow'
   | 'dry_run';
 

@@ -67,6 +67,7 @@ export interface OnboardingFacts {
   bunAvailable: boolean;
   codexCliAvailable: boolean;
   chatgptLoggedIn: boolean;
+  codexSubscriptionReady?: boolean;
   studioLibraryReady: boolean;
   studioLibraryPath: string;
   bootstrapConfigReady: boolean;
@@ -100,10 +101,10 @@ export interface OnboardingProbe {
 
 export function resolvePrimaryCta(facts: OnboardingFacts): OnboardingPrimaryCta {
   if (!facts.bunAvailable) return 'open_bun_install';
-  if (!facts.codexCliAvailable) return 'open_codex_install';
+  if (!facts.codexCliAvailable && !facts.codexSubscriptionReady) return 'open_codex_install';
   if (!facts.chatgptLoggedIn) return 'codex_login';
   if (!facts.studioLibraryReady || !facts.bootstrapConfigReady) return 'in_app_setup';
-  if (!facts.appServerReady) return 'start_app_server';
+  if (!facts.appServerReady && !facts.codexSubscriptionReady) return 'start_app_server';
   return 'ready';
 }
 
@@ -150,8 +151,8 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
         facts.chatgptLoggedIn,
         'ChatGPT login',
         facts.chatgptLoggedIn
-          ? 'ChatGPT login can run local Codex jobs.'
-          : 'Run `codex login` and choose ChatGPT.',
+          ? 'ChatGPT login is ready for Studio image jobs.'
+          : 'Sign in from Studio Settings, or run `codex login` and choose ChatGPT.',
         null,
       ),
       check(
@@ -187,10 +188,10 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
       loggedIn: facts.grokLoggedIn,
       label: 'Grok Imagine',
       detail: facts.grokLoggedIn
-        ? 'Optional Grok Build CLI is signed in.'
+        ? 'Grok Imagine is signed in.'
         : facts.grokCliAvailable
-          ? 'Optional. Run grok login to enable Grok Imagine.'
-          : 'Optional. Install Grok Build if you want Grok Imagine.',
+          ? 'Optional. Sign in from Studio Settings, or run grok login.'
+          : 'Optional. Sign in from Studio Settings, or install Grok Build.',
     },
   };
 }
@@ -199,6 +200,7 @@ export function onboardingFactsFromHealth(input: {
   bunVersion: string | null;
   codexCliAvailable: boolean;
   chatgptLoggedIn: boolean;
+  codexSubscriptionReady?: boolean;
   studioLibraryReady: boolean;
   studioLibraryPath: string;
   bootstrapConfigReady: boolean;
@@ -210,6 +212,7 @@ export function onboardingFactsFromHealth(input: {
     bunAvailable: Boolean(input.bunVersion),
     codexCliAvailable: input.codexCliAvailable,
     chatgptLoggedIn: input.chatgptLoggedIn,
+    codexSubscriptionReady: Boolean(input.codexSubscriptionReady),
     studioLibraryReady: input.studioLibraryReady,
     studioLibraryPath: input.studioLibraryPath,
     bootstrapConfigReady: input.bootstrapConfigReady,

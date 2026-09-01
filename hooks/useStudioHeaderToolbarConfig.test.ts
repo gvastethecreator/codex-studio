@@ -63,6 +63,7 @@ describe('buildStudioHeaderToolbarProps', () => {
                 hasAdapter: true,
                 canExecute: true,
                 secretState: 'configured',
+                subscriptionAuthState: 'not_applicable',
                 detail: 'Google adapter is available.',
               },
             ],
