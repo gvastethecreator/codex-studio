@@ -46,15 +46,19 @@ export function summarizeGrokProviderStatusLine({
   canExecute,
   status,
   diagnostics,
+  subscriptionAuthState,
 }: {
   canExecute: boolean;
   status: string;
   diagnostics: string[];
+  subscriptionAuthState?: string;
 }) {
   if (canExecute) return 'Ready';
   if (status === 'unknown') return 'Checking runtime';
   const text = diagnostics.join(' ');
-  if (/login/i.test(text)) return 'Run grok login';
+  if (/login/i.test(text)) {
+    return subscriptionAuthState === 'logged_in' ? 'Run grok login' : 'Sign in with xAI';
+  }
   if (/Install Grok Build|grok_cli_unavailable/i.test(text)) return 'Install Grok Build';
   if (/Update Grok Build|Imagine|outdated|headless/i.test(text)) return 'Update Grok Build';
   if (/available model|current Grok model|grok_model_unavailable/i.test(text)) {
@@ -66,15 +70,21 @@ export function summarizeGrokProviderStatusLine({
 export function formatGrokImagineNotReadyMessage({
   status = 'not_configured',
   diagnostics = [],
+  subscriptionAuthState,
 }: {
   status?: string;
   diagnostics?: string[];
+  subscriptionAuthState?: string;
 } = {}) {
   const action = summarizeGrokProviderStatusLine({
     canExecute: false,
     status,
     diagnostics,
+    subscriptionAuthState,
   });
+  if (action === 'Sign in with xAI') {
+    return 'Grok Imagine is blocked. Sign in with xAI in Studio Settings, then retry.';
+  }
   if (action === 'Run grok login') {
     return 'Grok Imagine is blocked. Run `grok login`, then retry.';
   }
@@ -131,6 +141,7 @@ export function resolveGrokImagineGenerateBlock({
   canExecute = true,
   status,
   diagnostics,
+  subscriptionAuthState,
 }: {
   providerId: GenerationProviderId;
   recipeId?: RecipeId | null;
@@ -139,13 +150,14 @@ export function resolveGrokImagineGenerateBlock({
   canExecute?: boolean;
   status?: string;
   diagnostics?: string[];
+  subscriptionAuthState?: string;
 }): GrokImagineGenerateBlock | null {
   if (providerId !== 'grok') return null;
 
   if (!canExecute) {
     return {
       code: 'grok_not_ready',
-      message: formatGrokImagineNotReadyMessage({ status, diagnostics }),
+      message: formatGrokImagineNotReadyMessage({ status, diagnostics, subscriptionAuthState }),
     };
   }
 

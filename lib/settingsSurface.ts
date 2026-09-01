@@ -4,6 +4,7 @@ export type SettingsSurfaceModule = StudioSystemOverlaysProps['settingsModule'];
 
 export interface BuildSettingsSurfaceModuleArgs {
   close: SettingsSurfaceModule['close'];
+  open: SettingsSurfaceModule['open'];
   settingsDomain: SettingsSurfaceModule['settingsDomain'];
   providerDomain: SettingsSurfaceModule['providerDomain'];
   outputSourcesDomain: SettingsSurfaceModule['outputSourcesDomain'];
@@ -20,6 +21,7 @@ export function shouldHydrateSettingsSurface(isOpen: boolean) {
 
 export function buildSettingsSurfaceModule({
   close,
+  open,
   settingsDomain,
   providerDomain,
   outputSourcesDomain,
@@ -31,6 +33,7 @@ export function buildSettingsSurfaceModule({
 }: BuildSettingsSurfaceModuleArgs): SettingsSurfaceModule {
   return {
     close,
+    open,
     settingsDomain,
     providerDomain,
     outputSourcesDomain,

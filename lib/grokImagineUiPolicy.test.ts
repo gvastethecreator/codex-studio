@@ -65,6 +65,14 @@ describe('grokImagineUiPolicy', () => {
         status: 'not_configured',
         diagnostics: ['Grok Build does not have a usable local login. Run `grok login`.'],
       }),
+    ).toBe('Sign in with xAI');
+    expect(
+      summarizeGrokProviderStatusLine({
+        canExecute: false,
+        status: 'not_configured',
+        subscriptionAuthState: 'logged_in',
+        diagnostics: ['Grok Build does not have a usable local login. Run `grok login`.'],
+      }),
     ).toBe('Run grok login');
     expect(resolveGrokImagineToolbarAspectRatio('2:3')).toBe('1:1');
     expect(resolveGrokImagineToolbarAspectRatio('16:9')).toBe('16:9');

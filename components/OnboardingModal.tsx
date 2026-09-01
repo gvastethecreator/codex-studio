@@ -109,6 +109,7 @@ interface OnboardingModalProps {
   onComplete: () => void;
   onRefresh: () => void;
   onStartAppServer: () => void;
+  onOpenSettings: () => void;
 }
 
 function getToneIcon(tone: CheckTone) {
@@ -430,7 +431,7 @@ function OptionalGrokRow({
             disabled={busy}
             className="inline-flex h-10 items-center rounded-xl border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-60 xl:h-9"
           >
-            {busy ? 'Opening terminal' : 'grok login'}
+            {busy ? 'Opening settings' : 'Sign in'}
           </button>
         ) : null}
       </div>
@@ -440,13 +441,15 @@ function OptionalGrokRow({
 
 function CodexRuntimeRepairCard({
   health,
+  subscriptionReady,
   onRefresh,
 }: {
   health: HealthResponse | null;
+  subscriptionReady: boolean;
   onRefresh: () => void;
 }) {
   const runtime = health?.codexRuntime ?? null;
-  if (!runtime || runtime.canRunJobs) return null;
+  if (!runtime || runtime.canRunJobs || subscriptionReady) return null;
 
   const primaryIssue = runtime.issues[0];
   const selectedCandidate = runtime.candidates.find((candidate) => candidate.selected);
@@ -568,6 +571,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   onComplete,
   onRefresh,
   onStartAppServer,
+  onOpenSettings,
 }) => {
   const isChecking = status === 'checking';
   const isReady = status === 'ready';
@@ -765,13 +769,13 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
       return;
     }
     if (primaryAction.type === 'codex_login') {
-      void runHostAction('codex_login');
+      onOpenSettings();
       return;
     }
     if (primaryAction.type === 'complete') {
       onComplete();
     }
-  }, [onComplete, onStartAppServer, primaryAction, runHostAction, runSetup]);
+  }, [onComplete, onOpenSettings, onStartAppServer, primaryAction, runSetup]);
 
   return (
     <AnimatePresence>
@@ -919,15 +923,19 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       )}
                     </div>
                     <OnboardingLogPanel lines={logLines} />
-                    <CodexRuntimeRepairCard health={health} onRefresh={onRefresh} />
+                    <CodexRuntimeRepairCard
+                      health={health}
+                      subscriptionReady={subscriptionReady}
+                      onRefresh={onRefresh}
+                    />
                     {probe?.grok ? (
                       <OptionalGrokRow
                         row={probe.grok}
-                        busy={hostBusy}
+                        busy={false}
                         onInstall={() => {
                           window.open(ONBOARDING_GROK_INSTALL_URL, '_blank', 'noopener,noreferrer');
                         }}
-                        onLogin={() => void runHostAction('grok_login')}
+                        onLogin={onOpenSettings}
                       />
                     ) : null}
                     {showInAppSetup ? (
@@ -956,8 +964,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     onClick={handlePrimaryCta}
                     disabled={
                       (primaryAction?.type === 'start_app_server' && isStartingAppServer) ||
-                      (primaryAction?.type === 'in_app_setup' && (!canSubmitSetup || setupBusy)) ||
-                      (primaryAction?.type === 'codex_login' && hostBusy)
+                      (primaryAction?.type === 'in_app_setup' && (!canSubmitSetup || setupBusy))
                     }
                     className="inline-flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow-[0_14px_40px_rgba(37,99,235,0.28)] transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-60 xl:px-5 xl:py-2.5"
                   >
@@ -965,8 +972,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       ? 'Starting'
                       : primaryAction?.type === 'in_app_setup' && setupBusy
                         ? 'Setting up'
-                        : primaryAction?.type === 'codex_login' && hostBusy
-                          ? 'Opening terminal'
+                        : primaryAction?.type === 'codex_login'
+                          ? primaryAction.label
                           : (primaryAction?.label ?? (isReady ? 'Open Studio' : 'Got it'))}
                     <ArrowRight size={17} />
                   </button>

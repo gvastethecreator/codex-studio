@@ -7,5 +7,5 @@ export function grokRowNeedsInstall(row: OnboardingGrokRow) {
 }
 
 export function grokRowNeedsLogin(row: OnboardingGrokRow) {
-  return row.cliAvailable && !row.loggedIn;
+  return !row.loggedIn;
 }

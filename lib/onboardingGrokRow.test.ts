@@ -5,13 +5,13 @@ import { ONBOARDING_ACTION_IDS } from '../packages/shared/src';
 import { grokRowNeedsInstall, grokRowNeedsLogin } from './onboardingGrokRow';
 
 describe('optional Grok onboarding row', () => {
-  it('shows install docs when the CLI is missing and grok login when it is present', () => {
+  it('shows Sign in even when Grok Build is missing', () => {
     expect(
       grokRowNeedsInstall({ cliAvailable: false, loggedIn: false, label: 'Grok', detail: '' }),
     ).toBe(true);
     expect(
       grokRowNeedsLogin({ cliAvailable: false, loggedIn: false, label: 'Grok', detail: '' }),
-    ).toBe(false);
+    ).toBe(true);
     expect(
       grokRowNeedsLogin({ cliAvailable: true, loggedIn: false, label: 'Grok', detail: '' }),
     ).toBe(true);
@@ -30,7 +30,7 @@ describe('optional Grok onboarding row', () => {
       'utf8',
     );
     expect(source).toContain('ONBOARDING_GROK_INSTALL_URL');
-    expect(source).toContain('grok_login');
+    expect(source).toContain('onOpenSettings');
     expect(source).not.toMatch(/Ask Grok/i);
   });
 });

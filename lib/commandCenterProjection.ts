@@ -153,6 +153,7 @@ function buildProviderProjection({
           canExecute,
           status,
           diagnostics: preflight?.diagnostics ?? [],
+          subscriptionAuthState: capability?.subscriptionAuthState,
         })
       : canExecute
         ? 'Ready'

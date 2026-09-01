@@ -174,7 +174,7 @@ describe('buildStudioCommandCenterProjection', () => {
     expect(projection.provider).toMatchObject({
       id: 'grok',
       canExecute: false,
-      statusDetail: 'Run grok login',
+      statusDetail: 'Sign in with xAI',
     });
   });
 

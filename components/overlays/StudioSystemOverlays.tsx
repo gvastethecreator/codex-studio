@@ -192,6 +192,10 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
               onComplete={completeOnboarding}
               onRefresh={refreshOnboardingHealth}
               onStartAppServer={ensureAppServer}
+              onOpenSettings={() => {
+                settingsModule.open();
+                closeOnboarding();
+              }}
             />
           </Suspense>
         </ErrorBoundary>

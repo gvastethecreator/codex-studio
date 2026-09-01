@@ -38,6 +38,11 @@ describe('StudioSettingsModal provider defaults', () => {
     expect(settingsSource).toContain('EXTERNAL_SCAN_PATH_LABEL');
     expect(settingsSource).toContain('EXTERNAL_SCAN_PATH_HELP');
     expect(settingsSource).not.toMatch(/Preferred Output Path/);
+    expect(settingsSource).toContain('STUDIO_SETTINGS_DOMAIN_TABS');
+    expect(settingsSource).toContain('Accounts');
+    expect(
+      readFileSync(path.join(import.meta.dirname, '..', 'lib', 'studioSettingsDomains.ts'), 'utf8'),
+    ).toContain("label: 'Providers'");
   });
 
   it('keeps Workspace-first output presets alongside date provider model and recipe', () => {

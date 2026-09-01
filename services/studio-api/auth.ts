@@ -4,8 +4,11 @@ import type {
 } from '../../packages/shared/src';
 import { request } from './http';
 
-export async function getSubscriptionAuthStatus(providerId: SubscriptionProviderId) {
-  return request<SubscriptionAuthPublicStatus>(`/api/auth/${providerId}`);
+export async function getSubscriptionAuthStatus(
+  providerId: SubscriptionProviderId,
+  init?: RequestInit,
+) {
+  return request<SubscriptionAuthPublicStatus>(`/api/auth/${providerId}`, init);
 }
 
 export async function startSubscriptionAuth(providerId: SubscriptionProviderId) {

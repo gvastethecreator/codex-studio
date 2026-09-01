@@ -29,7 +29,7 @@ describe('resolveOnboardingPrimaryAction', () => {
     expect(resolveOnboardingPrimaryAction('ready').type).toBe('complete');
   });
 
-  it('opens a visible terminal for ChatGPT login', () => {
+  it('opens Studio Settings for ChatGPT Sign in', () => {
     expect(resolveOnboardingPrimaryAction('codex_login')).toEqual({
       type: 'codex_login',
       cta: 'codex_login',

@@ -12,15 +12,7 @@ import {
   IconX as X,
 } from '@tabler/icons-react';
 import type React from 'react';
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
-
-type StudioSettingsDomainId = 'library' | 'output' | 'maintenance';
-
-const SETTINGS_DOMAIN_TABS: Array<{ id: StudioSettingsDomainId; label: string }> = [
-  { id: 'library', label: 'Library' },
-  { id: 'output', label: 'Output' },
-  { id: 'maintenance', label: 'Maintenance' },
-];
+import { useLayoutEffect, useMemo, useState } from 'react';
 
 import {
   BUILT_IN_GENERATION_PROVIDERS,
@@ -36,18 +28,7 @@ import type {
   GenerationProviderCapabilitiesResponse,
   GenerationProviderRuntimePreflightResponse,
 } from '../packages/shared/src/providerCapabilities';
-import {
-  subscriptionProviderIdForGeneration,
-  type SubscriptionAuthPublicStatus,
-  type SubscriptionProviderId,
-} from '../packages/shared/src/subscriptionAuth';
-import {
-  cancelSubscriptionAuth,
-  getSubscriptionAuthStatus,
-  logoutSubscriptionAuth,
-  startSubscriptionAuth,
-} from '../services/studio-api/auth';
-import { createStudioEventStream } from '../services/studioEventSource';
+import { subscriptionProviderIdForGeneration } from '../packages/shared/src/subscriptionAuth';
 import type {
   EditableStudioSettings,
   EditableStudioSettingsPatch,
@@ -71,6 +52,17 @@ import {
   OUTPUT_SUBFOLDER_PRESETS,
   type StudioSettingsFormState,
 } from '../lib/studioSettingsForm';
+import {
+  STUDIO_SETTINGS_DOMAIN_TABS,
+  type StudioSettingsDomainId,
+} from '../lib/studioSettingsDomains';
+import {
+  providerReadyLabel,
+  providerRuntimeLabel,
+  providerSecretLabel,
+} from '../lib/subscriptionAuthUi';
+import { resolveProviderShortLabel } from '../lib/commandCenterProjection';
+import { SubscriptionAuthControls } from './settings/SubscriptionAuthControls';
 
 interface StudioSettingsModalProps {
   isOpen: boolean;
@@ -127,161 +119,6 @@ function formatBytes(value: number) {
   return `${(value / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-function SubscriptionAuthControls({
-  providerId,
-  onChanged,
-}: {
-  providerId: SubscriptionProviderId;
-  onChanged: () => void;
-}) {
-  const [status, setStatus] = useState<SubscriptionAuthPublicStatus | null>(null);
-  const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const onChangedRef = useRef(onChanged);
-  onChangedRef.current = onChanged;
-
-  const refresh = useCallback(async () => {
-    const next = await getSubscriptionAuthStatus(providerId);
-    setStatus(next);
-    return next;
-  }, [providerId]);
-
-  useEffect(() => {
-    let cancelled = false;
-    void getSubscriptionAuthStatus(providerId)
-      .then((next) => {
-        if (!cancelled) setStatus(next);
-      })
-      .catch((loadError) => {
-        if (!cancelled) {
-          setError(
-            loadError instanceof Error ? loadError.message : 'Unable to load Sign in status.',
-          );
-        }
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, [providerId]);
-
-  useEffect(() => {
-    const stream = createStudioEventStream();
-    const unsubscribe = stream.onAuthUpdated((payload) => {
-      if (payload.providerId !== providerId) return;
-      void getSubscriptionAuthStatus(providerId)
-        .then((next) => {
-          setStatus(next);
-          if (next.status === 'logged_in' || next.status === 'logged_out') {
-            onChangedRef.current();
-          }
-        })
-        .catch(() => undefined);
-    });
-    return () => {
-      unsubscribe();
-      stream.close();
-    };
-  }, [providerId]);
-
-  useEffect(() => {
-    if (status?.status !== 'pending') return;
-    let cancelled = false;
-    const timer = window.setInterval(() => {
-      void refresh()
-        .then((next) => {
-          if (cancelled) return;
-          if (next.status === 'logged_in') onChangedRef.current();
-        })
-        .catch(() => undefined);
-    }, 1500);
-    return () => {
-      cancelled = true;
-      window.clearInterval(timer);
-    };
-  }, [status?.status, providerId, refresh]);
-
-  const label = providerId === 'codex' ? 'ChatGPT' : 'xAI';
-
-  const run = async (work: () => Promise<SubscriptionAuthPublicStatus>) => {
-    setBusy(true);
-    setError(null);
-    try {
-      const next = await work();
-      setStatus(next);
-      onChangedRef.current();
-    } catch (actionError) {
-      setError(actionError instanceof Error ? actionError.message : 'Sign in failed.');
-    } finally {
-      setBusy(false);
-    }
-  };
-
-  return (
-    <div className="mt-2 grid gap-2 border-t border-white/10 pt-2">
-      <div className="flex items-center justify-between gap-2 text-[9px] font-black uppercase tracking-widest">
-        <span>{label} Sign in</span>
-        <span className="truncate opacity-80">{status?.status ?? 'loading'}</span>
-      </div>
-      {status?.accountLabel ? (
-        <div className="truncate text-[10px] leading-relaxed opacity-80">{status.accountLabel}</div>
-      ) : null}
-      {status?.status === 'pending' && status.verificationUrl ? (
-        <div className="grid gap-1 text-[10px] leading-relaxed normal-case tracking-normal opacity-80">
-          <a
-            href={status.verificationUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="truncate text-accent-300 underline"
-          >
-            {status.verificationUrl}
-          </a>
-          {status.userCode ? (
-            <div className="font-mono text-zinc-200">{status.userCode}</div>
-          ) : null}
-        </div>
-      ) : null}
-      {error || status?.lastError ? (
-        <div className="text-[10px] leading-relaxed normal-case tracking-normal text-rose-300">
-          {error || status?.lastError}
-        </div>
-      ) : null}
-      <div className="flex flex-wrap gap-2">
-        {status?.status === 'logged_in' ? (
-          <button
-            type="button"
-            disabled={busy}
-            onClick={() => void run(() => logoutSubscriptionAuth(providerId))}
-            className="rounded border border-white/15 px-2 py-1 text-[9px] font-black uppercase tracking-widest"
-          >
-            Sign out
-          </button>
-        ) : status?.status === 'pending' ? (
-          <button
-            type="button"
-            disabled={busy}
-            onClick={() => void run(() => cancelSubscriptionAuth(providerId))}
-            className="rounded border border-white/15 px-2 py-1 text-[9px] font-black uppercase tracking-widest"
-          >
-            Cancel
-          </button>
-        ) : (
-          <button
-            type="button"
-            disabled={busy}
-            onClick={() => void run(() => startSubscriptionAuth(providerId))}
-            className="rounded border border-accent-500/30 bg-accent-500/10 px-2 py-1 text-[9px] font-black uppercase tracking-widest text-accent-100"
-          >
-            Sign in
-          </button>
-        )}
-      </div>
-      <p className="text-[9px] leading-relaxed normal-case tracking-normal opacity-60">
-        Tokens stay in the Studio Library. CLI stays as automatic fallback.
-      </p>
-    </div>
-  );
-}
-
 function providerStatusClass(status: string) {
   if (status === 'active') return 'border-emerald-500/20 bg-emerald-500/10 text-emerald-200';
   if (status === 'planned') return 'border-amber-500/20 bg-amber-500/10 text-amber-200';
@@ -289,6 +126,7 @@ function providerStatusClass(status: string) {
 }
 
 interface SettingsFormPanelProps {
+  domain: Extract<StudioSettingsDomainId, 'library' | 'providers' | 'output'>;
   formState: StudioSettingsFormState;
   onFormChange: React.Dispatch<React.SetStateAction<StudioSettingsFormState>>;
   libraryDir: string | null;
@@ -418,6 +256,7 @@ function ProviderExecutionDefaultsFields({
 }
 
 function SettingsFormPanel({
+  domain,
   formState,
   onFormChange: setFormState,
   libraryDir,
@@ -472,264 +311,270 @@ function SettingsFormPanel({
 
   return (
     <div className="grid gap-4 md:grid-cols-2">
-      <div className="md:col-span-2 rounded-lg border border-white/8 bg-white/4 p-4">
-        <div className="flex items-center gap-3">
-          <FolderOpen size={16} className="text-zinc-500" />
-          <div className="min-w-0">
-            <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-              Studio Library
-            </div>
-            <div className="truncate font-mono text-[10px] text-zinc-300">
-              {libraryDir ?? 'Waiting for local library path...'}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-          Default Provider
-        </span>
-        <select
-          aria-label="Default provider"
-          value={defaultProviderId}
-          onChange={(event) =>
-            setFormState((prev) => ({
-              ...prev,
-              defaultProviderId: event.target.value as GenerationProviderId,
-            }))
-          }
-          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
-        >
-          {providerOptions.map((providerId) => (
-            <option key={providerId} value={providerId}>
-              {providerId}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      <ProviderExecutionDefaultsFields
-        value={selectedProviderDefaults}
-        onChange={updateSelectedProviderDefaults}
-        grokModels={preflightByProvider.get('grok')?.availableModels}
-        grokDefaultModel={preflightByProvider.get('grok')?.defaultModel}
-      />
-
-      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-          Output Mode
-        </span>
-        <select
-          value={defaultOutputMode}
-          onChange={(event) =>
-            setFormState((prev) => ({
-              ...prev,
-              defaultOutputMode: event.target.value as StudioOutputMode,
-            }))
-          }
-          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
-        >
-          <option value="studio_library">Studio Library</option>
-          <option value="external_source">External Source</option>
-        </select>
-      </label>
-
-      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-          Output Subfolders
-        </span>
-        <select
-          value={outputSubfolderPreset}
-          onChange={(event) =>
-            setFormState((prev) => ({ ...prev, outputSubfolderPreset: event.target.value }))
-          }
-          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
-        >
-          {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
-            <option
-              key={encodeSubfolderTokens(preset.value)}
-              value={encodeSubfolderTokens(preset.value)}
-            >
-              {preset.label}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-          File Name Template
-        </span>
-        <input
-          value={outputFileNameTemplate}
-          onChange={(event) =>
-            setFormState((prev) => ({ ...prev, outputFileNameTemplate: event.target.value }))
-          }
-          placeholder="{timestamp}-{provider}-{jobId}"
-          aria-label="File name template"
-          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
-        />
-      </label>
-
-      <label className="md:col-span-2 flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-        <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-          {EXTERNAL_SCAN_PATH_LABEL}
-        </span>
-        <p className="text-[11px] leading-relaxed text-zinc-500">{EXTERNAL_SCAN_PATH_HELP}</p>
-        <input
-          value={preferredOutputPath}
-          onChange={(event) =>
-            setFormState((prev) => ({ ...prev, preferredOutputPath: event.target.value }))
-          }
-          placeholder={libraryDir ?? 'D:/outputs'}
-          aria-label={EXTERNAL_SCAN_PATH_LABEL}
-          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
-        />
-      </label>
-
-      {providerCapabilities ? (
-        <div className="md:col-span-2 rounded-lg border border-white/8 bg-white/4 p-4">
-          <div className="mb-3 flex items-center justify-between gap-3">
-            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-              Provider Capability Status
-            </span>
-            <span className="text-[9px] font-black uppercase tracking-widest text-zinc-700">
-              Non-secret
-            </span>
-          </div>
-          <div className="grid gap-2 md:grid-cols-2">
-            {providerCapabilities.providers.map((provider) => {
-              const preflight = preflightByProvider.get(provider.providerId);
-              const subscriptionId = subscriptionProviderIdForGeneration(provider.providerId);
-
-              return (
-                <div
-                  key={provider.providerId}
-                  className={`rounded-lg border px-3 py-2 ${providerStatusClass(provider.status)}`}
-                >
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="min-w-0">
-                      <div className="truncate text-[10px] font-black uppercase tracking-widest">
-                        {provider.label}
-                      </div>
-                      <div className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest opacity-70">
-                        {provider.runtimeKind}
-                      </div>
-                    </div>
-                    <div className="flex shrink-0 items-center gap-1 text-[9px] font-black uppercase tracking-widest">
-                      {provider.isDefault ? <span>Default</span> : null}
-                      <span>{provider.status}</span>
-                    </div>
-                  </div>
-                  <p className="mt-2 text-[10px] leading-relaxed opacity-80">{provider.detail}</p>
-                  {preflight ? (
-                    <div className="mt-2 grid gap-1 border-t border-white/10 pt-2 text-[9px] font-bold uppercase tracking-widest opacity-80">
-                      <div className="flex justify-between gap-2">
-                        <span>
-                          {provider.providerId === 'grok' || provider.providerId === 'codex'
-                            ? 'Sign in'
-                            : 'Secret'}
-                        </span>
-                        <span className="truncate text-right">
-                          {provider.providerId === 'grok' || provider.providerId === 'codex'
-                            ? provider.subscriptionAuthState
-                            : `${preflight.secretState}${preflight.secretSource ? ` / ${preflight.secretSource}` : ''}`}
-                        </span>
-                      </div>
-                      <div className="flex justify-between gap-2">
-                        <span>Runtime</span>
-                        <span className="truncate text-right">
-                          {preflight.localRuntimeState}
-                          {preflight.localRuntimeSource ? ` / ${preflight.localRuntimeSource}` : ''}
-                        </span>
-                      </div>
-                      {preflight.diagnostics.length > 0 ? (
-                        <div className="pt-1 text-[9px] leading-relaxed normal-case tracking-normal opacity-70">
-                          {preflight.diagnostics.join(' ')}
-                        </div>
-                      ) : null}
-                    </div>
-                  ) : null}
-                  {subscriptionId ? (
-                    <SubscriptionAuthControls
-                      providerId={subscriptionId}
-                      onChanged={() => void onRefresh()}
-                    />
-                  ) : null}
+      {domain === 'library' ? (
+        <>
+          <div className="md:col-span-2 rounded-lg border border-white/8 bg-white/4 p-4">
+            <div className="flex items-center gap-3">
+              <FolderOpen size={16} className="text-zinc-500" />
+              <div className="min-w-0">
+                <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                  Studio Library
                 </div>
-              );
-            })}
+                <div className="truncate font-mono text-[10px] text-zinc-300">
+                  {libraryDir ?? 'Waiting for local library path...'}
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+          <button
+            type="button"
+            onClick={() =>
+              setFormState((prev) => ({
+                ...prev,
+                commandCenterCompactMode: !prev.commandCenterCompactMode,
+              }))
+            }
+            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
+          >
+            <span className="flex items-center gap-3">
+              <Settings
+                size={16}
+                className={commandCenterCompactMode ? 'text-accent-300' : 'text-zinc-500'}
+              />
+              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+                Compact Command Center
+              </span>
+            </span>
+            <span
+              className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
+            />
+          </button>
+          <button
+            type="button"
+            onClick={() => void onResetStudio()}
+            disabled={isResettingStudio}
+            className="flex items-center justify-between rounded-lg border border-rose-500/20 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
+          >
+            <span className="flex items-center gap-3">
+              <Database size={16} className="text-rose-300" />
+              <span className="text-[10px] font-black uppercase tracking-widest text-rose-100">
+                Rebuild Library
+              </span>
+            </span>
+            {isResettingStudio ? (
+              <LoaderCircle size={16} className="animate-spin text-rose-300" />
+            ) : (
+              <RotateCcw size={16} className="text-rose-300" />
+            )}
+          </button>
+        </>
       ) : null}
 
-      <button
-        type="button"
-        onClick={() =>
-          setFormState((prev) => ({
-            ...prev,
-            autoDetectOutputSources: !prev.autoDetectOutputSources,
-          }))
-        }
-        className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
-      >
-        <span className="flex items-center gap-3">
-          <FolderOpen
-            size={16}
-            className={autoDetectOutputSources ? 'text-accent-300' : 'text-zinc-500'}
-          />
-          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
-            Auto Detect Outputs
-          </span>
-        </span>
-        <span
-          className={`size-2.5 rounded-full ${autoDetectOutputSources ? 'bg-accent-300' : 'bg-zinc-700'}`}
-        />
-      </button>
+      {domain === 'providers' ? (
+        <>
+          <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+              Default Provider
+            </span>
+            <select
+              aria-label="Default provider"
+              value={defaultProviderId}
+              onChange={(event) =>
+                setFormState((prev) => ({
+                  ...prev,
+                  defaultProviderId: event.target.value as GenerationProviderId,
+                }))
+              }
+              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-semibold text-white outline-none transition-colors focus:border-accent-400/50"
+            >
+              {providerOptions.map((providerId) => (
+                <option key={providerId} value={providerId}>
+                  {providerCapabilities?.providers.find(
+                    (provider) => provider.providerId === providerId,
+                  )?.label ?? resolveProviderShortLabel(providerId)}
+                </option>
+              ))}
+            </select>
+          </label>
 
-      <button
-        type="button"
-        onClick={() =>
-          setFormState((prev) => ({
-            ...prev,
-            commandCenterCompactMode: !prev.commandCenterCompactMode,
-          }))
-        }
-        className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
-      >
-        <span className="flex items-center gap-3">
-          <Settings
-            size={16}
-            className={commandCenterCompactMode ? 'text-accent-300' : 'text-zinc-500'}
+          <ProviderExecutionDefaultsFields
+            value={selectedProviderDefaults}
+            onChange={updateSelectedProviderDefaults}
+            grokModels={preflightByProvider.get('grok')?.availableModels}
+            grokDefaultModel={preflightByProvider.get('grok')?.defaultModel}
           />
-          <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
-            Compact Command Center
-          </span>
-        </span>
-        <span
-          className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
-        />
-      </button>
 
-      <button
-        type="button"
-        onClick={() => void onResetStudio()}
-        disabled={isResettingStudio}
-        className="flex items-center justify-between rounded-lg border border-rose-500/20 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
-      >
-        <span className="flex items-center gap-3">
-          <Database size={16} className="text-rose-300" />
-          <span className="text-[10px] font-black uppercase tracking-widest text-rose-100">
-            Rebuild Library
-          </span>
-        </span>
-        {isResettingStudio ? (
-          <LoaderCircle size={16} className="animate-spin text-rose-300" />
-        ) : (
-          <RotateCcw size={16} className="text-rose-300" />
-        )}
-      </button>
+          {providerCapabilities ? (
+            <div className="md:col-span-2 grid gap-3">
+              <div>
+                <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                  Accounts
+                </div>
+                <p className="mt-1 text-[12px] leading-relaxed text-zinc-500">
+                  Sign in here for HTTP image generation. Codex CLI and Grok Build stay as automatic
+                  fallback.
+                </p>
+              </div>
+              <div className="grid gap-3 md:grid-cols-2">
+                {providerCapabilities.providers.map((provider) => {
+                  const preflight = preflightByProvider.get(provider.providerId);
+                  const subscriptionId = subscriptionProviderIdForGeneration(provider.providerId);
+                  const runtimeLabel = providerRuntimeLabel(preflight?.localRuntimeState);
+                  const secretLabel = subscriptionId
+                    ? null
+                    : providerSecretLabel(preflight?.secretState, preflight?.secretSource);
+                  const readyLabel = providerReadyLabel({
+                    canExecute: provider.canExecute,
+                    status: provider.status,
+                  });
+
+                  return (
+                    <div
+                      key={provider.providerId}
+                      className={`rounded-xl border p-4 ${providerStatusClass(provider.status)}`}
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="min-w-0">
+                          <div className="truncate text-sm font-semibold text-white">
+                            {provider.label}
+                          </div>
+                          {provider.isDefault ? (
+                            <p className="mt-0.5 text-[11px] text-zinc-400">Default provider</p>
+                          ) : null}
+                        </div>
+                        <span className="shrink-0 text-[11px] font-medium">{readyLabel}</span>
+                      </div>
+                      <p className="mt-2 text-[12px] leading-relaxed text-zinc-300">
+                        {provider.detail}
+                      </p>
+                      {runtimeLabel || secretLabel ? (
+                        <p className="mt-2 text-[11px] leading-relaxed text-zinc-400">
+                          {[runtimeLabel, secretLabel].filter(Boolean).join(' · ')}
+                        </p>
+                      ) : null}
+                      {preflight?.diagnostics.length ? (
+                        <p className="mt-2 text-[12px] leading-relaxed text-zinc-400">
+                          {preflight.diagnostics.join(' ')}
+                        </p>
+                      ) : null}
+                      {subscriptionId ? (
+                        <SubscriptionAuthControls
+                          providerId={subscriptionId}
+                          onChanged={() => void onRefresh()}
+                        />
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : (
+            <p className="md:col-span-2 text-[12px] leading-relaxed text-zinc-500">
+              Provider status loads with Studio Settings.
+            </p>
+          )}
+        </>
+      ) : null}
+
+      {domain === 'output' ? (
+        <>
+          <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+              Output Mode
+            </span>
+            <select
+              value={defaultOutputMode}
+              onChange={(event) =>
+                setFormState((prev) => ({
+                  ...prev,
+                  defaultOutputMode: event.target.value as StudioOutputMode,
+                }))
+              }
+              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+            >
+              <option value="studio_library">Studio Library</option>
+              <option value="external_source">External Source</option>
+            </select>
+          </label>
+
+          <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+              Output Subfolders
+            </span>
+            <select
+              value={outputSubfolderPreset}
+              onChange={(event) =>
+                setFormState((prev) => ({ ...prev, outputSubfolderPreset: event.target.value }))
+              }
+              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+            >
+              {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
+                <option
+                  key={encodeSubfolderTokens(preset.value)}
+                  value={encodeSubfolderTokens(preset.value)}
+                >
+                  {preset.label}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+              File Name Template
+            </span>
+            <input
+              value={outputFileNameTemplate}
+              onChange={(event) =>
+                setFormState((prev) => ({ ...prev, outputFileNameTemplate: event.target.value }))
+              }
+              placeholder="{timestamp}-{provider}-{jobId}"
+              aria-label="File name template"
+              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+            />
+          </label>
+
+          <label className="md:col-span-2 flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+              {EXTERNAL_SCAN_PATH_LABEL}
+            </span>
+            <p className="text-[11px] leading-relaxed text-zinc-500">{EXTERNAL_SCAN_PATH_HELP}</p>
+            <input
+              value={preferredOutputPath}
+              onChange={(event) =>
+                setFormState((prev) => ({ ...prev, preferredOutputPath: event.target.value }))
+              }
+              placeholder={libraryDir ?? 'D:/outputs'}
+              aria-label={EXTERNAL_SCAN_PATH_LABEL}
+              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+            />
+          </label>
+
+          <button
+            type="button"
+            onClick={() =>
+              setFormState((prev) => ({
+                ...prev,
+                autoDetectOutputSources: !prev.autoDetectOutputSources,
+              }))
+            }
+            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
+          >
+            <span className="flex items-center gap-3">
+              <FolderOpen
+                size={16}
+                className={autoDetectOutputSources ? 'text-accent-300' : 'text-zinc-500'}
+              />
+              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+                Auto Detect Outputs
+              </span>
+            </span>
+            <span
+              className={`size-2.5 rounded-full ${autoDetectOutputSources ? 'bg-accent-300' : 'bg-zinc-700'}`}
+            />
+          </button>
+        </>
+      ) : null}
     </div>
   );
 }
@@ -1234,7 +1079,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   const [formState, setFormState] = useState<StudioSettingsFormState>(
     createInitialStudioSettingsFormState,
   );
-  const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('library');
+  const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('providers');
 
   useLayoutEffect(() => {
     if (isOpen && settings) {
@@ -1281,7 +1126,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                 Studio Settings
               </h2>
               <p className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-zinc-500">
-                Local Library Config
+                Accounts, library, and output
               </p>
             </div>
           </div>
@@ -1311,7 +1156,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
         </div>
 
         <div className="flex gap-1 border-b border-white/8 px-5">
-          {SETTINGS_DOMAIN_TABS.map((tab) => (
+          {STUDIO_SETTINGS_DOMAIN_TABS.map((tab) => (
             <button
               key={tab.id}
               type="button"
@@ -1335,31 +1180,36 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             </div>
           )}
 
-          {activeDomain === 'library' ? (
-            <SettingsFormPanel
-              formState={formState}
-              onFormChange={setFormState}
-              libraryDir={libraryDir}
-              providerOptions={providerOptions}
-              providerCapabilities={providerCapabilities}
-              providerRuntimePreflight={providerRuntimePreflight}
-              onResetStudio={onResetStudio}
-              isResettingStudio={isResettingStudio}
-              onRefresh={onRefresh}
-            />
-          ) : null}
-          {activeDomain === 'output' ? (
-            <SettingsOutputSourcesPanel
-              outputSources={outputSources}
-              outputSourceFiles={outputSourceFiles}
-              loadingOutputSourceFiles={loadingOutputSourceFiles}
-              importingOutputSources={importingOutputSources}
-              isLoadingOutputSources={isLoadingOutputSources}
-              isRegisteringOutputSource={isRegisteringOutputSource}
-              onLoadOutputSourceFiles={onLoadOutputSourceFiles}
-              onImportOutputSourceFiles={onImportOutputSourceFiles}
-              onRegisterOutputSource={onRegisterOutputSource}
-            />
+          {activeDomain === 'library' ||
+          activeDomain === 'providers' ||
+          activeDomain === 'output' ? (
+            <div className={activeDomain === 'output' ? 'grid gap-4' : undefined}>
+              <SettingsFormPanel
+                domain={activeDomain}
+                formState={formState}
+                onFormChange={setFormState}
+                libraryDir={libraryDir}
+                providerOptions={providerOptions}
+                providerCapabilities={providerCapabilities}
+                providerRuntimePreflight={providerRuntimePreflight}
+                onResetStudio={onResetStudio}
+                isResettingStudio={isResettingStudio}
+                onRefresh={onRefresh}
+              />
+              {activeDomain === 'output' ? (
+                <SettingsOutputSourcesPanel
+                  outputSources={outputSources}
+                  outputSourceFiles={outputSourceFiles}
+                  loadingOutputSourceFiles={loadingOutputSourceFiles}
+                  importingOutputSources={importingOutputSources}
+                  isLoadingOutputSources={isLoadingOutputSources}
+                  isRegisteringOutputSource={isRegisteringOutputSource}
+                  onLoadOutputSourceFiles={onLoadOutputSourceFiles}
+                  onImportOutputSourceFiles={onImportOutputSourceFiles}
+                  onRegisterOutputSource={onRegisterOutputSource}
+                />
+              ) : null}
+            </div>
           ) : null}
           {activeDomain === 'maintenance' ? (
             <SettingsMaintenancePanel maintenance={maintenance} />

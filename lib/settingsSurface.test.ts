@@ -11,6 +11,7 @@ const noopAsync = async () => {};
 function createSettingsSurfaceArgs() {
   return {
     close: noop,
+    open: noop,
     settingsDomain: {
       settings: null,
       error: null,

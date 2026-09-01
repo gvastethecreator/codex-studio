@@ -282,6 +282,7 @@ export function useStudioShell(): StudioShellController {
   const settingsSurfaceModule = useSettingsSurface({
     isOpen: viewState.overlays.settings.isOpen,
     close: viewState.overlays.settings.close,
+    open: viewState.overlays.settings.open,
     settingsDomain: studioSettings.data.settingsDomain,
     providerDomain: studioSettings.data.providerDomain,
     outputSourcesDomain: studioSettings.data.outputSourcesDomain,

@@ -103,6 +103,7 @@ export interface StudioSystemOverlaysProps {
   ensureAppServer: () => void;
   settingsModule: {
     close: () => void;
+    open: () => void;
     settingsDomain: {
       settings: EditableStudioSettings | null;
       error: string | null;

@@ -33,6 +33,7 @@ import {
   runStorageCompactMaintenance,
   runThumbnailBackfillMaintenance,
 } from '../services/studio-api/maintenance';
+import { createStudioEventStream } from '../services/studioEventSource';
 import type { Toast } from '../types';
 import {
   removeImportedOutputSourceFiles,
@@ -472,6 +473,26 @@ export function useStudioSettings({
   useEffect(() => {
     void refreshSettingsSummary();
   }, [refreshSettingsSummary]);
+
+  useEffect(() => {
+    const stream = createStudioEventStream();
+    const unsubscribe = stream.onAuthUpdated(() => {
+      void Promise.all([
+        getGenerationProviderCapabilities(),
+        getGenerationProviderRuntimePreflight(),
+      ])
+        .then(([nextProviderCapabilities, nextProviderRuntimePreflight]) => {
+          if (!isMountedRef.current) return;
+          setProviderCapabilities(nextProviderCapabilities);
+          setProviderRuntimePreflight(nextProviderRuntimePreflight);
+        })
+        .catch(() => undefined);
+    });
+    return () => {
+      unsubscribe();
+      stream.close();
+    };
+  }, []);
 
   return useMemo(
     () => ({

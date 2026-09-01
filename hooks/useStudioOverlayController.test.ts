@@ -134,6 +134,7 @@ describe('buildStudioOverlayController', () => {
       isSettingsModalOpen: false,
       settingsModule: {
         close: () => calls.push('closeSettings'),
+        open: () => calls.push('openSettings'),
         settingsDomain: {
           settings: null,
           error: null,
@@ -449,6 +450,9 @@ describe('buildStudioOverlayController', () => {
       settingsModule: {
         close: () => {
           calls.push('closeSettings');
+        },
+        open: () => {
+          calls.push('openSettings');
         },
         settingsDomain: {
           settings: null,

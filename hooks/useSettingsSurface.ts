@@ -14,6 +14,7 @@ export interface UseSettingsSurfaceArgs extends BuildSettingsSurfaceModuleArgs {
 export function useSettingsSurface({
   isOpen,
   close,
+  open,
   settingsDomain,
   providerDomain,
   outputSourcesDomain,
@@ -32,6 +33,7 @@ export function useSettingsSurface({
     () =>
       buildSettingsSurfaceModule({
         close,
+        open,
         settingsDomain,
         providerDomain,
         outputSourcesDomain,
@@ -43,6 +45,7 @@ export function useSettingsSurface({
       }),
     [
       close,
+      open,
       fallbackLibraryDir,
       isResettingStudio,
       libraryDir,
