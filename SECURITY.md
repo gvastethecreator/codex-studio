@@ -19,6 +19,8 @@ Report in private through the maintainer private channel. Include:
 ## Local-first notes
 
 - Keep Provider Secrets outside Studio Settings that persist in SQLite.
+- Keep ChatGPT and xAI Sign in tokens in `.studio/auth/studio-oauth.json` under the Studio Library. Never copy them into SQLite, logs, transcripts, catalog metadata, or the UI.
+- Studio Sign in talks to vendor device-code endpoints. OpenAI and xAI do not document this as a supported Studio API. Treat 403 (xAI tier) and empty Codex image responses as expected surfaces, then use CLI fallback when it is ready.
 - Never commit `.env.local`, SQLite databases, logs, transcripts, or local library folders.
 - Treat Studio Library paths as user-controlled data.
 - Do not operate on arbitrary paths. Register or import External Output Sources first.

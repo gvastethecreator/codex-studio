@@ -17,7 +17,7 @@ Codex Studio is a local image studio. You create, review, and organize AI images
 
 [Project site](https://gvastethecreator.github.io/codex-studio/) · [Source and issues](https://github.com/gvastethecreator/codex-studio)
 
-The app runs on your machine. The UI is React/Vite. The API is Bun/Hono. Image jobs run through `codex app-server` and your local ChatGPT login.
+The app runs on your machine. The UI is React/Vite. The API is Bun/Hono. Image jobs run through ChatGPT HTTP (`gpt-image-2`) when Studio Sign in is ready, then fall back to `codex app-server`.
 
 The main Codex path does not need `OPENAI_API_KEY`. Assets, job history, logs, and SQLite state live in your Studio Library, not in this repo.
 
@@ -41,16 +41,16 @@ You need:
 
 - Bun on `PATH`. Install it yourself from <https://bun.sh/docs/installation>. Codex Studio never silent-installs Bun.
 - Codex CLI from <https://github.com/openai/codex>
-- ChatGPT login through `codex login`. That login is not bundled.
+- ChatGPT login through Studio Settings Sign in, or `codex login`. That login is not bundled.
 - A modern browser
 
 The first-run surface is a detect, consent, mutate, stream, re-validate loop. One primary button follows this order:
 
 1. Missing Bun: open the official Bun installer.
-2. Missing Codex CLI: open the Codex install docs.
-3. Codex CLI present, ChatGPT login missing: open a visible `codex login` terminal.
+2. Missing Codex CLI and no Studio ChatGPT Sign in: open the Codex install docs.
+3. ChatGPT login missing: Sign in from Studio Settings, or open a visible `codex login` terminal.
 4. Studio Library or Bootstrap Configuration missing: in-app Setup, or `bun run studio:onboard --setup`.
-5. Everything else ready except Codex Product Runtime: Start app-server.
+5. Everything else ready except Codex Product Runtime, and Studio ChatGPT Sign in is not ready: Start app-server.
 6. Ready: Open Studio.
 
 Ask Codex is an extra path when Codex CLI exists. Copy prompt stays a fallback. Grok Imagine is an optional provider row, not a Studio installer.
@@ -61,11 +61,11 @@ Portable zip: double-click `Codex Studio.bat` on Windows or `Codex Studio.comman
 
 To use Grok Imagine:
 
-1. Install Grok Build.
-2. Run `grok login`.
+1. Sign in with xAI from Studio Settings, or install Grok Build and run `grok login`.
+2. `XAI_API_KEY` in `.env.local` also works on the same HTTP path.
 3. Make sure that `bun run providers:preflight -- --provider=grok` reports `canAttempt=true`.
 
-Studio reuses that CLI login. It does not store `XAI_API_KEY`. Home and the Styles recipe support Codex and Grok. Styles can generate from a prompt or from managed library references. Codex stays the first default provider.
+Studio stores xAI and ChatGPT tokens in `.studio/auth/studio-oauth.json` under the Studio Library, not in SQLite. Grok Build CLI login stays under `GROK_HOME` and is automatic fallback. It does not store `XAI_API_KEY` in SQLite. Home and the Styles recipe support Codex and Grok. Styles can generate from a prompt or from managed library references. Codex stays the first default provider.
 
 App readiness is the source of truth. Bun and Codex version strings are only diagnosis. If the Codex path or app-server support is unclear, run `bun run runtime:doctor`.
 
@@ -122,7 +122,7 @@ Preferred Output Path in Settings is an External Output Source scan hint. Genera
 
 If you use optional external adapters, keep Provider Secrets in backend environment variables. Do not put them in SQLite, logs, screenshots, docs, or committed files.
 
-Grok Build auth stays on the local CLI under `GROK_HOME`.
+Grok Build CLI login stays under `GROK_HOME`. Studio Sign in tokens stay in the Studio Library auth file.
 
 Use the provider control in the top Command Center to switch the next image job between Codex and Grok. The control shows runtime readiness. It stores the choice in Studio Settings. Deeper diagnostics stay in the same menu. Codex stays the initial default.
 
@@ -171,7 +171,7 @@ Codex Studio is in open-source preview.
 - Local development is documented and works.
 - The default path is Codex-first and local-first.
 - Optional provider adapters are backend integrations, not the product center.
-- Grok Imagine image generation and managed local image edits use your Grok Build CLI login. Native video is a later media-domain decision.
+- Grok Imagine image generation and managed local image edits use Studio Sign in, `XAI_API_KEY`, or Grok Build CLI login. Native video is a later media-domain decision.
 - Desktop packaging is not the user channel. Use the browser plus portable launchers, or `bun run dev` in a checkout.
 
 ---

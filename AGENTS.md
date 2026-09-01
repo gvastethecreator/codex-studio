@@ -11,7 +11,7 @@ If the user asks for setup, getting started, first run, or onboarding, or if the
 3. Run `bun install` only when missing or stale dependencies block setup.
 4. Run `bun run studio:init` when `.env.local`, the Studio Library, SQLite state, the default library, or the default workspace is missing.
 5. Start the local runtime with `bun run dev` when needed, then confirm the UI and backend are healthy.
-6. If ChatGPT auth is missing, stop. Ask the user to run `codex login` and choose ChatGPT.
+6. If ChatGPT auth is missing, stop. Ask the user to Sign in from Studio Settings, or run `codex login` and choose ChatGPT.
 7. Do not block setup on an exact Bun or Codex release when readiness, supported scripts, app-server support, and Local Codex Session are healthy.
 8. Close with one validation pass and a short readiness summary.
 

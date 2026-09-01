@@ -54,7 +54,7 @@ Symptoms: a checkout that worked before the update no longer starts jobs. `app-s
 
 1. Stop the old `bun run dev` process and start it again. Managed shutdown closes the UI, the backend, and the owned `codex app-server` process tree.
 2. Run `bun run runtime:doctor`. Make sure that it selects a supported desktop, npm, Bun, or PATH launcher with `app-server` capability.
-3. Open `http://localhost:17223/api/health`. `checks.onboardingReady` is true only after the Library, runtime, app-server, and Local Codex Session are all ready.
+3. Open `http://localhost:17223/api/health`. `checks.onboardingReady` is true after the Library is ready and either Studio ChatGPT Sign in or Codex CLI + app-server + Local Codex Session is ready.
 4. If a custom `STUDIO_CODEX_CLI_PATH` or `CODEX_CLI_PATH` is set, point it at a stable launcher. Never pin a release-specific vendor path.
 
 The normal readiness path probes the selected launcher first. It scans fallback candidates only when that launcher fails. A changed version string alone is not a setup failure.
@@ -87,7 +87,9 @@ Make sure that app-server support is present, the Codex session is signed in, an
 
 Symptoms: Codex CLI exists but jobs fail with permission or authorization errors.
 
-Sign in to Codex again. Then restart `bun run dev:server`.
+Sign in from Studio Settings, or run `codex login` and choose ChatGPT. Then restart `bun run dev:server`.
+
+Studio ChatGPT Sign in uses the Codex device-code flow. OpenAI does not document this as a supported Studio API. If HTTP generation returns no image (`empty_response`), Studio falls back to `codex app-server` when that runtime can run jobs.
 
 ### Grok Imagine is missing or blocked
 
@@ -99,11 +101,13 @@ grok models
 bun run providers:preflight -- --provider=grok
 ```
 
-The preflight must report the local agent runtime as configured and `canAttempt=true`. If login is missing, run `grok login` and complete browser authentication.
+The preflight must report `canAttempt=true`. Sign in with xAI from Studio Settings, set `XAI_API_KEY` in `.env.local`, or run `grok login` and complete browser authentication.
 
-If Studio selects the wrong binary, set `STUDIO_GROK_CLI_PATH` to the stable native Grok executable and restart the backend. Do not add `XAI_API_KEY`. Studio uses the CLI-owned login.
+Some SuperGrok tiers return HTTP 403 after a successful xAI Sign in. That is an entitlement gate, not a bad token. Studio then falls back to Grok Build CLI when it is signed in.
 
-`grok models` on Grok Build 1.0.4 prints `Default model:` plus a `*` default and `-` other models. Studio uses that default when Settings and `GROK_IMAGE_MODEL` are empty. If a stored Settings model is missing from the list, intake rejects the job before enqueue.
+If Studio selects the wrong binary, set `STUDIO_GROK_CLI_PATH` to the stable native Grok executable and restart the backend.
+
+`grok models` on Grok Build 1.0.4 prints `Default model:` plus a `*` default and `-` other models. HTTP generation uses `grok-imagine-image` unless `GROK_IMAGE_MODEL` or Settings store a `grok-imagine-*` id. If a stored Settings model is missing from the list, intake rejects the job before enqueue.
 
 Grok Jobs reject these cases before enqueue:
 

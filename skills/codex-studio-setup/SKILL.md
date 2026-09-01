@@ -31,7 +31,7 @@ The product loop is detect, consent, mutate, stream, re-validate. One primary CT
 
 1. Missing Bun: open <https://bun.sh/docs/installation>. Never silent-install Bun.
 2. Missing Codex CLI: open <https://github.com/openai/codex>. Never silent-install Codex.
-3. Codex CLI present, ChatGPT login missing: stop and ask the user to run `codex login`
+3. ChatGPT login missing: Sign in from Studio Settings, or stop and ask the user to run `codex login`
    and choose ChatGPT. Login is not bundled.
 4. Studio Library or Bootstrap Configuration missing: in-app Setup, or
    `bun run studio:onboard --setup`, after explicit consent.
@@ -102,7 +102,7 @@ For UI onboarding changes, also read:
    - Check `GET /api/health` and `/api/codex/session`.
    - Use `/api/app-server/start` or the UI button to start `codex app-server`
      when backend health says the backend is reachable but app-server is down.
-   - If ChatGPT auth is missing, stop and ask the user to run `codex login`
+   - If ChatGPT auth is missing, stop and ask the user to Sign in from Studio Settings, or run `codex login`
      and choose ChatGPT. Do not fake readiness.
 
 4. Diagnose failures.
@@ -131,4 +131,4 @@ End with:
 - setup actions performed
 - commands run and pass or fail result
 - current readiness summary from `/api/health` and `/api/codex/session` when reachable
-- any remaining user-only actions, such as interactive `codex login`
+- any remaining user-only actions, such as Studio Settings Sign in or interactive `codex login`
