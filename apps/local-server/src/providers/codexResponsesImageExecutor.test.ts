@@ -30,6 +30,18 @@ describe('codex responses image executor', () => {
       }),
     };
     expect(resolveCodexImageSize(job)).toBe('1024x1536');
+    expect(
+      resolveCodexImageSize({
+        ...job,
+        sourceSpec: createGenerationTaskSpec({
+          id: 'spec-wide',
+          task: 'image_generate',
+          providerId: 'codex',
+          prompt: 'key',
+          output: { aspectRatio: '4:3', imageSize: '1536x1152' },
+        }),
+      }),
+    ).toBe('1536x1024');
   });
 
   it('saves only a final image_generation_call result from SSE', async () => {
@@ -109,6 +121,35 @@ describe('codex responses image executor', () => {
       code: 'entitlement_denied',
       fallbackAllowed: true,
       httpStatus: 403,
+    } satisfies Partial<SubscriptionHttpError>);
+  });
+
+  it('does not fall back when the SSE reports a failed or moderated response', async () => {
+    const executor = createCodexResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      fetch: async () =>
+        new Response(
+          [
+            'event: response.failed',
+            'data: {"type":"response.failed","error":{"message":"safety system rejected the request"}}',
+            '',
+          ].join('\n'),
+          { headers: { 'content-type': 'text/event-stream' } },
+        ),
+      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+      writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+    });
+    await expect(
+      executor({
+        id: 'job-moderation',
+        workspaceId: 'workspace-1',
+        prompt: 'stone keep',
+        execution: null,
+      }),
+    ).rejects.toMatchObject({
+      code: 'moderation',
+      fallbackAllowed: false,
     } satisfies Partial<SubscriptionHttpError>);
   });
 });

@@ -58,9 +58,23 @@ export function resolveCodexImageSize(job: GenerationProviderJob) {
   const output = job.sourceSpec?.output;
   const size = output?.imageSize?.trim();
   if (size === '1536x1024' || size === '1024x1536' || size === '1024x1024') return size;
+  const pixels = size?.match(/^(\d+)\s*x\s*(\d+)$/i);
+  if (pixels) {
+    const width = Number.parseInt(pixels[1] ?? '', 10);
+    const height = Number.parseInt(pixels[2] ?? '', 10);
+    if (width > height) return '1536x1024';
+    if (height > width) return '1024x1536';
+    return '1024x1024';
+  }
   const aspect = output?.aspectRatio?.trim();
-  if (aspect === '16:9' || aspect === '3:2') return '1536x1024';
-  if (aspect === '9:16' || aspect === '2:3') return '1024x1536';
+  if (!aspect) return '1024x1024';
+  const parts = aspect.split(':').map((part) => Number.parseFloat(part));
+  const width = parts[0];
+  const height = parts[1];
+  if (Number.isFinite(width) && Number.isFinite(height)) {
+    if (width > height) return '1536x1024';
+    if (height > width) return '1024x1536';
+  }
   return '1024x1024';
 }
 
@@ -87,7 +101,9 @@ function extractImageCandidates(value: unknown): { final: string | null; partial
     }
     if (!isRecord(node)) return;
     if (node.type === 'image_generation_call' && typeof node.result === 'string' && node.result) {
-      finalB64 = node.result;
+      if (node.status == null || node.status === 'completed') {
+        finalB64 = node.result;
+      }
     }
     if (typeof node.partial_image_b64 === 'string' && node.partial_image_b64) {
       partialB64 = node.partial_image_b64;
@@ -134,6 +150,36 @@ function parseSseJson(raw: string): unknown[] {
   }
   flush();
   return events;
+}
+
+function sseFailureMessage(event: Record<string, unknown>) {
+  const error = event.error;
+  if (typeof error === 'string' && error.trim()) return error.trim();
+  if (isRecord(error) && typeof error.message === 'string' && error.message.trim()) {
+    return error.message.trim();
+  }
+  if (typeof event.message === 'string' && event.message.trim()) return event.message.trim();
+  return 'Codex Responses rejected the image request.';
+}
+
+function classifySseFailure(event: Record<string, unknown>) {
+  const message = sseFailureMessage(event);
+  const lower = message.toLowerCase();
+  if (lower.includes('moderat') || lower.includes('safety')) {
+    return new SubscriptionHttpError(message, {
+      code: 'moderation',
+      fallbackAllowed: false,
+    });
+  }
+  return new SubscriptionHttpError(message, {
+    code: 'invalid_request',
+    fallbackAllowed: false,
+  });
+}
+
+function isFailedSseEvent(event: unknown): event is Record<string, unknown> {
+  if (!isRecord(event)) return false;
+  return event.type === 'response.failed' || event.type === 'error' || event.status === 'failed';
 }
 
 function summarizeCodexError(body: string) {
@@ -255,13 +301,35 @@ export function createCodexResponsesImageExecutor({
       );
     }
 
-    const raw = await response.text();
+    let raw = '';
+    try {
+      raw = await response.text();
+    } catch (error) {
+      if (isAbortError(error) || job.signal?.aborted) {
+        const abortError = error instanceof Error ? error : new Error('Codex Responses aborted.');
+        abortError.name = 'AbortError';
+        throw abortError;
+      }
+      throw new SubscriptionHttpError(
+        error instanceof Error ? error.message : 'Codex Responses stream failed.',
+        { code: 'timeout', fallbackAllowed: true },
+      );
+    }
+    if (job.signal?.aborted) {
+      const abortError = new Error('Codex Responses aborted.');
+      abortError.name = 'AbortError';
+      throw abortError;
+    }
     if (!response.ok) {
       throw classifyCodexHttpFailure(response.status, summarizeCodexError(raw));
     }
 
+    const events = parseSseJson(raw);
+    for (const event of events) {
+      if (isFailedSseEvent(event)) throw classifySseFailure(event);
+    }
     let finalB64: string | null = null;
-    for (const event of parseSseJson(raw)) {
+    for (const event of events) {
       const found = extractImageCandidates(event);
       if (found.final) finalB64 = found.final;
     }
