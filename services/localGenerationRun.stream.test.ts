@@ -10,6 +10,7 @@ const mocks = vi.hoisted(() => {
     onLogAdded: vi.fn(),
     onOnboardingStage: vi.fn(),
     onOnboardingProbe: vi.fn(),
+    onAuthUpdated: vi.fn(),
     onConnectionChange: vi.fn(),
     close: vi.fn(),
   };
@@ -144,6 +145,7 @@ describe('runSingleCodexImagegenJob stream ownership', () => {
       onLogAdded: vi.fn(),
       onOnboardingStage: vi.fn(),
       onOnboardingProbe: vi.fn(),
+      onAuthUpdated: vi.fn(),
       onConnectionChange: vi.fn(),
       close: vi.fn(),
     };

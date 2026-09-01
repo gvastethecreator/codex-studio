@@ -354,6 +354,10 @@ describe('studioEventSource', () => {
       stream.onOnboardingStage((payload) => stages.push(payload.stage));
       stream.onOnboardingProbe((probe) => ctas.push(probe.primaryCta));
       stream.onLogAdded((entry) => logs.push(`${entry.scope}:${entry.message}`));
+      const authUpdates: string[] = [];
+      stream.onAuthUpdated((payload) =>
+        authUpdates.push(`${payload.providerId}:${payload.status}`),
+      );
       const send = (event: unknown) =>
         sources[0]?.onmessage?.({ data: JSON.stringify(event) } as MessageEvent);
 
@@ -393,9 +397,18 @@ describe('studioEventSource', () => {
         createdAt: '2026-08-26T00:00:02.000Z',
       });
 
+      send({
+        type: 'auth.updated',
+        payload: { providerId: 'codex', status: 'logged_in', accountLabel: 'user@example.com' },
+        revision: 4,
+        createdAt: '2026-08-26T00:00:03.000Z',
+      });
+
       expect(stages).toEqual(['write_bootstrap']);
       expect(logs).toEqual(['onboarding:Wrote STUDIO_LIBRARY_DIR into .env.local.']);
       expect(ctas).toEqual(['start_app_server']);
+      expect(authUpdates).toEqual(['codex:logged_in']);
+      expect(JSON.stringify(authUpdates)).not.toMatch(/accessToken|refreshToken/);
       stream.close();
     } finally {
       if (previousEventSource) {
@@ -441,6 +454,7 @@ describe('studioEventSource', () => {
       onLogAdded: () => () => {},
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
+      onAuthUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -457,6 +471,7 @@ describe('studioEventSource', () => {
       onLogAdded: () => () => {},
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
+      onAuthUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -481,6 +496,7 @@ describe('studioEventSource', () => {
       onLogAdded: () => () => {},
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
+      onAuthUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -509,6 +525,7 @@ describe('studioEventSource', () => {
       onLogAdded: () => () => {},
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
+      onAuthUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };
@@ -546,6 +563,7 @@ describe('studioEventSource', () => {
       onLogAdded: () => () => {},
       onOnboardingStage: () => () => {},
       onOnboardingProbe: () => () => {},
+      onAuthUpdated: () => () => {},
       onConnectionChange: () => () => {},
       close: () => {},
     };

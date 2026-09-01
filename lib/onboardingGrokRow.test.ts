@@ -18,6 +18,9 @@ describe('optional Grok onboarding row', () => {
     expect(
       grokRowNeedsInstall({ cliAvailable: true, loggedIn: true, label: 'Grok', detail: '' }),
     ).toBe(false);
+    expect(
+      grokRowNeedsInstall({ cliAvailable: false, loggedIn: true, label: 'Grok', detail: '' }),
+    ).toBe(false);
   });
 
   it('keeps Grok off the Studio installer contract and primary CTA', () => {

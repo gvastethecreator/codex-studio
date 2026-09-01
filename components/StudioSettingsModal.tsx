@@ -12,7 +12,7 @@ import {
   IconX as X,
 } from '@tabler/icons-react';
 import type React from 'react';
-import { useLayoutEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 type StudioSettingsDomainId = 'library' | 'output' | 'maintenance';
 
@@ -36,6 +36,18 @@ import type {
   GenerationProviderCapabilitiesResponse,
   GenerationProviderRuntimePreflightResponse,
 } from '../packages/shared/src/providerCapabilities';
+import {
+  subscriptionProviderIdForGeneration,
+  type SubscriptionAuthPublicStatus,
+  type SubscriptionProviderId,
+} from '../packages/shared/src/subscriptionAuth';
+import {
+  cancelSubscriptionAuth,
+  getSubscriptionAuthStatus,
+  logoutSubscriptionAuth,
+  startSubscriptionAuth,
+} from '../services/studio-api/auth';
+import { createStudioEventStream } from '../services/studioEventSource';
 import type {
   EditableStudioSettings,
   EditableStudioSettingsPatch,
@@ -115,6 +127,161 @@ function formatBytes(value: number) {
   return `${(value / (1024 * 1024)).toFixed(1)} MB`;
 }
 
+function SubscriptionAuthControls({
+  providerId,
+  onChanged,
+}: {
+  providerId: SubscriptionProviderId;
+  onChanged: () => void;
+}) {
+  const [status, setStatus] = useState<SubscriptionAuthPublicStatus | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const onChangedRef = useRef(onChanged);
+  onChangedRef.current = onChanged;
+
+  const refresh = useCallback(async () => {
+    const next = await getSubscriptionAuthStatus(providerId);
+    setStatus(next);
+    return next;
+  }, [providerId]);
+
+  useEffect(() => {
+    let cancelled = false;
+    void getSubscriptionAuthStatus(providerId)
+      .then((next) => {
+        if (!cancelled) setStatus(next);
+      })
+      .catch((loadError) => {
+        if (!cancelled) {
+          setError(
+            loadError instanceof Error ? loadError.message : 'Unable to load Sign in status.',
+          );
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [providerId]);
+
+  useEffect(() => {
+    const stream = createStudioEventStream();
+    const unsubscribe = stream.onAuthUpdated((payload) => {
+      if (payload.providerId !== providerId) return;
+      void getSubscriptionAuthStatus(providerId)
+        .then((next) => {
+          setStatus(next);
+          if (next.status === 'logged_in' || next.status === 'logged_out') {
+            onChangedRef.current();
+          }
+        })
+        .catch(() => undefined);
+    });
+    return () => {
+      unsubscribe();
+      stream.close();
+    };
+  }, [providerId]);
+
+  useEffect(() => {
+    if (status?.status !== 'pending') return;
+    let cancelled = false;
+    const timer = window.setInterval(() => {
+      void refresh()
+        .then((next) => {
+          if (cancelled) return;
+          if (next.status === 'logged_in') onChangedRef.current();
+        })
+        .catch(() => undefined);
+    }, 1500);
+    return () => {
+      cancelled = true;
+      window.clearInterval(timer);
+    };
+  }, [status?.status, providerId, refresh]);
+
+  const label = providerId === 'codex' ? 'ChatGPT' : 'xAI';
+
+  const run = async (work: () => Promise<SubscriptionAuthPublicStatus>) => {
+    setBusy(true);
+    setError(null);
+    try {
+      const next = await work();
+      setStatus(next);
+      onChanged();
+    } catch (actionError) {
+      setError(actionError instanceof Error ? actionError.message : 'Sign in failed.');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  return (
+    <div className="mt-2 grid gap-2 border-t border-white/10 pt-2">
+      <div className="flex items-center justify-between gap-2 text-[9px] font-black uppercase tracking-widest">
+        <span>{label} Sign in</span>
+        <span className="truncate opacity-80">{status?.status ?? 'loading'}</span>
+      </div>
+      {status?.accountLabel ? (
+        <div className="truncate text-[10px] leading-relaxed opacity-80">{status.accountLabel}</div>
+      ) : null}
+      {status?.status === 'pending' && status.verificationUrl ? (
+        <div className="grid gap-1 text-[10px] leading-relaxed normal-case tracking-normal opacity-80">
+          <a
+            href={status.verificationUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="truncate text-accent-300 underline"
+          >
+            {status.verificationUrl}
+          </a>
+          {status.userCode ? (
+            <div className="font-mono text-zinc-200">{status.userCode}</div>
+          ) : null}
+        </div>
+      ) : null}
+      {error || status?.lastError ? (
+        <div className="text-[10px] leading-relaxed normal-case tracking-normal text-rose-300">
+          {error || status?.lastError}
+        </div>
+      ) : null}
+      <div className="flex flex-wrap gap-2">
+        {status?.status === 'logged_in' ? (
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => void run(() => logoutSubscriptionAuth(providerId))}
+            className="rounded border border-white/15 px-2 py-1 text-[9px] font-black uppercase tracking-widest"
+          >
+            Sign out
+          </button>
+        ) : status?.status === 'pending' ? (
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => void run(() => cancelSubscriptionAuth(providerId))}
+            className="rounded border border-white/15 px-2 py-1 text-[9px] font-black uppercase tracking-widest"
+          >
+            Cancel
+          </button>
+        ) : (
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => void run(() => startSubscriptionAuth(providerId))}
+            className="rounded border border-accent-500/30 bg-accent-500/10 px-2 py-1 text-[9px] font-black uppercase tracking-widest text-accent-100"
+          >
+            Sign in
+          </button>
+        )}
+      </div>
+      <p className="text-[9px] leading-relaxed normal-case tracking-normal opacity-60">
+        Tokens stay in the Studio Library. CLI stays as automatic fallback.
+      </p>
+    </div>
+  );
+}
+
 function providerStatusClass(status: string) {
   if (status === 'active') return 'border-emerald-500/20 bg-emerald-500/10 text-emerald-200';
   if (status === 'planned') return 'border-amber-500/20 bg-amber-500/10 text-amber-200';
@@ -130,6 +297,7 @@ interface SettingsFormPanelProps {
   providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
   onResetStudio: () => void | Promise<void>;
   isResettingStudio: boolean;
+  onRefresh: () => void | Promise<void>;
 }
 
 function ProviderExecutionDefaultsFields({
@@ -258,6 +426,7 @@ function SettingsFormPanel({
   providerRuntimePreflight,
   onResetStudio,
   isResettingStudio,
+  onRefresh,
 }: SettingsFormPanelProps) {
   const {
     defaultProviderId,
@@ -432,6 +601,7 @@ function SettingsFormPanel({
           <div className="grid gap-2 md:grid-cols-2">
             {providerCapabilities.providers.map((provider) => {
               const preflight = preflightByProvider.get(provider.providerId);
+              const subscriptionId = subscriptionProviderIdForGeneration(provider.providerId);
 
               return (
                 <div
@@ -444,28 +614,26 @@ function SettingsFormPanel({
                         {provider.label}
                       </div>
                       <div className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest opacity-70">
-                        {provider.providerId === 'grok'
-                          ? 'Local Grok Build CLI'
-                          : provider.runtimeKind}
+                        {provider.runtimeKind}
                       </div>
                     </div>
                     <div className="flex shrink-0 items-center gap-1 text-[9px] font-black uppercase tracking-widest">
                       {provider.isDefault ? <span>Default</span> : null}
-                      <span>
-                        {provider.providerId === 'grok' && provider.status === 'not_configured'
-                          ? 'Needs Grok Build login'
-                          : provider.status}
-                      </span>
+                      <span>{provider.status}</span>
                     </div>
                   </div>
                   <p className="mt-2 text-[10px] leading-relaxed opacity-80">{provider.detail}</p>
                   {preflight ? (
                     <div className="mt-2 grid gap-1 border-t border-white/10 pt-2 text-[9px] font-bold uppercase tracking-widest opacity-80">
                       <div className="flex justify-between gap-2">
-                        <span>{provider.providerId === 'grok' ? 'Login' : 'Secret'}</span>
+                        <span>
+                          {provider.providerId === 'grok' || provider.providerId === 'codex'
+                            ? 'Sign in'
+                            : 'Secret'}
+                        </span>
                         <span className="truncate text-right">
-                          {provider.providerId === 'grok'
-                            ? 'Owned by grok login'
+                          {provider.providerId === 'grok' || provider.providerId === 'codex'
+                            ? provider.subscriptionAuthState
                             : `${preflight.secretState}${preflight.secretSource ? ` / ${preflight.secretSource}` : ''}`}
                         </span>
                       </div>
@@ -482,6 +650,12 @@ function SettingsFormPanel({
                         </div>
                       ) : null}
                     </div>
+                  ) : null}
+                  {subscriptionId ? (
+                    <SubscriptionAuthControls
+                      providerId={subscriptionId}
+                      onChanged={() => void onRefresh()}
+                    />
                   ) : null}
                 </div>
               );
@@ -1171,6 +1345,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               providerRuntimePreflight={providerRuntimePreflight}
               onResetStudio={onResetStudio}
               isResettingStudio={isResettingStudio}
+              onRefresh={onRefresh}
             />
           ) : null}
           {activeDomain === 'output' ? (

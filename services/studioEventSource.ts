@@ -7,6 +7,7 @@ import type {
   OnboardingStagePayload,
   StudioEvent,
   SystemLog,
+  SubscriptionAuthUpdatedEventPayload,
   UnknownStudioEvent,
 } from '../packages/shared/src';
 import { getStudioApiBase } from './studio-api/http';
@@ -87,6 +88,7 @@ export interface StudioEventStream {
   onLogAdded(callback: Listener<SystemLog>): Unsubscribe;
   onOnboardingStage(callback: Listener<OnboardingStagePayload>): Unsubscribe;
   onOnboardingProbe(callback: Listener<OnboardingProbe>): Unsubscribe;
+  onAuthUpdated(callback: Listener<SubscriptionAuthUpdatedEventPayload>): Unsubscribe;
   onConnectionChange(callback: Listener<boolean>): Unsubscribe;
   onRevisionGap?(callback: Listener<void>): Unsubscribe;
   close(): void;
@@ -107,6 +109,7 @@ class BrowserStudioEventStream implements StudioEventStream {
   private logListeners = new Set<Listener<SystemLog>>();
   private onboardingStageListeners = new Set<Listener<OnboardingStagePayload>>();
   private onboardingProbeListeners = new Set<Listener<OnboardingProbe>>();
+  private authUpdatedListeners = new Set<Listener<SubscriptionAuthUpdatedEventPayload>>();
   private connectionListeners = new Set<Listener<boolean>>();
   private revisionGapListeners = new Set<Listener<void>>();
   private lastRevision = 0;
@@ -148,6 +151,11 @@ class BrowserStudioEventStream implements StudioEventStream {
   onOnboardingProbe(callback: Listener<OnboardingProbe>) {
     this.onboardingProbeListeners.add(callback);
     return () => this.onboardingProbeListeners.delete(callback);
+  }
+
+  onAuthUpdated(callback: Listener<SubscriptionAuthUpdatedEventPayload>) {
+    this.authUpdatedListeners.add(callback);
+    return () => this.authUpdatedListeners.delete(callback);
   }
 
   onConnectionChange(callback: Listener<boolean>) {
@@ -260,6 +268,10 @@ class BrowserStudioEventStream implements StudioEventStream {
       this.onboardingProbeListeners.forEach((listener) =>
         listener(event.payload as OnboardingProbe),
       );
+    } else if (event.type === 'auth.updated') {
+      this.authUpdatedListeners.forEach((listener) =>
+        listener(event.payload as SubscriptionAuthUpdatedEventPayload),
+      );
     }
   }
 }
@@ -294,6 +306,10 @@ class StudioEventStreamLease implements StudioEventStream {
 
   onOnboardingProbe(callback: Listener<OnboardingProbe>) {
     return this.closed ? () => {} : this.stream.onOnboardingProbe(callback);
+  }
+
+  onAuthUpdated(callback: Listener<SubscriptionAuthUpdatedEventPayload>) {
+    return this.closed ? () => {} : this.stream.onAuthUpdated(callback);
   }
 
   onConnectionChange(callback: Listener<boolean>) {
