@@ -225,7 +225,7 @@ describe('buildStudioReadinessSnapshot', () => {
           ...createHealth().codexRuntime,
           status: 'blocked',
           canRunJobs: false,
-          selectedExecutable: null,
+          selectedExecutable: '',
           selectedVersion: null,
           recommendedAction: 'Install Codex CLI.',
         },
