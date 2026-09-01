@@ -37,6 +37,8 @@ export interface SubscriptionAuthStore {
   readProvider(providerId: SubscriptionProviderId): StoredSubscriptionTokens;
   writeProvider(providerId: SubscriptionProviderId, record: StoredSubscriptionTokens): void;
   clearProvider(providerId: SubscriptionProviderId): void;
+  generation(providerId: SubscriptionProviderId): number;
+  bumpGeneration(providerId: SubscriptionProviderId): void;
 }
 
 export interface SubscriptionAuthStoreDependencies {
@@ -120,7 +122,9 @@ function defaultFilePath() {
 
 function atomicWrite(filePath: string, contents: string) {
   mkdirSync(path.dirname(filePath), { recursive: true });
-  const tempPath = `${filePath}.tmp`;
+  const tempPath = `${filePath}.${process.pid}.${Date.now().toString(36)}.${Math.random()
+    .toString(16)
+    .slice(2)}.tmp`;
   writeFileSync(tempPath, contents, { encoding: 'utf8', mode: 0o600 });
   try {
     renameSync(tempPath, filePath);
@@ -153,6 +157,8 @@ export function createSubscriptionAuthStore({
     atomicWrite(resolveFilePath(), `${JSON.stringify(next, null, 2)}\n`);
   };
 
+  const generations: Record<SubscriptionProviderId, number> = { codex: 0, xai: 0 };
+
   return {
     filePath: resolveFilePath,
     read: readSync,
@@ -165,7 +171,14 @@ export function createSubscriptionAuthStore({
       writeSync(next);
     },
     clearProvider(providerId) {
+      generations[providerId] += 1;
       this.writeProvider(providerId, emptyRecord(now()));
+    },
+    generation(providerId) {
+      return generations[providerId];
+    },
+    bumpGeneration(providerId) {
+      generations[providerId] += 1;
     },
   };
 }

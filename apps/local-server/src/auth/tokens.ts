@@ -31,8 +31,14 @@ function formBody(fields: Record<string, string>) {
 }
 
 function expiryIso(accessToken: string, expiresIn: unknown, nowMs: number) {
-  if (typeof expiresIn === 'number' && Number.isFinite(expiresIn) && expiresIn > 0) {
-    return new Date(nowMs + expiresIn * 1000).toISOString();
+  const seconds =
+    typeof expiresIn === 'number'
+      ? expiresIn
+      : typeof expiresIn === 'string'
+        ? Number(expiresIn)
+        : Number.NaN;
+  if (Number.isFinite(seconds) && seconds > 0) {
+    return new Date(nowMs + seconds * 1000).toISOString();
   }
   const jwtExpiry = readJwtExpiryMs(accessToken);
   return jwtExpiry ? new Date(jwtExpiry).toISOString() : null;
@@ -45,7 +51,7 @@ function isExpired(record: StoredSubscriptionTokens, nowMs: number, skewMs: numb
     return jwtExpiry - skewMs <= nowMs;
   }
   const expiresAt = Date.parse(record.expiresAt);
-  if (!Number.isFinite(expiresAt)) return false;
+  if (!Number.isFinite(expiresAt)) return true;
   return expiresAt - skewMs <= nowMs;
 }
 
@@ -110,23 +116,41 @@ export function tokensFromOAuthPayload(
   };
 }
 
+function throwRefreshTransportError(error: unknown): never {
+  if (error instanceof SubscriptionHttpError) throw error;
+  const name = error instanceof Error ? error.name : '';
+  if (name === 'TimeoutError' || name === 'AbortError') {
+    throw new SubscriptionHttpError('Token refresh timed out.', {
+      code: 'timeout',
+      fallbackAllowed: true,
+    });
+  }
+  throw error;
+}
+
 async function refreshCodexToken(
   refreshToken: string,
   fetchImpl: AuthFetch,
 ): Promise<Record<string, unknown>> {
-  const response = await fetchImpl(CODEX_OAUTH_TOKEN_URL, {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'User-Agent': studioUserAgent(),
-    },
-    body: formBody({
-      grant_type: 'refresh_token',
-      refresh_token: refreshToken,
-      client_id: CODEX_OAUTH_CLIENT_ID,
-    }),
-  });
+  let response: Response;
+  try {
+    response = await fetchImpl(CODEX_OAUTH_TOKEN_URL, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': studioUserAgent(),
+      },
+      signal: AbortSignal.timeout(20_000),
+      body: formBody({
+        grant_type: 'refresh_token',
+        refresh_token: refreshToken,
+        client_id: CODEX_OAUTH_CLIENT_ID,
+      }),
+    });
+  } catch (error) {
+    throwRefreshTransportError(error);
+  }
   const payload = await parseJson(response);
   if (response.status === 429) {
     throw new SubscriptionHttpError(
@@ -154,18 +178,25 @@ async function refreshXaiToken(
   refreshToken: string,
   fetchImpl: AuthFetch,
 ): Promise<Record<string, unknown>> {
-  const response = await fetchImpl(XAI_OAUTH_TOKEN_URL, {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: formBody({
-      grant_type: 'refresh_token',
-      client_id: XAI_OAUTH_CLIENT_ID,
-      refresh_token: refreshToken,
-    }),
-  });
+  let response: Response;
+  try {
+    response = await fetchImpl(XAI_OAUTH_TOKEN_URL, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': studioUserAgent(),
+      },
+      signal: AbortSignal.timeout(20_000),
+      body: formBody({
+        grant_type: 'refresh_token',
+        client_id: XAI_OAUTH_CLIENT_ID,
+        refresh_token: refreshToken,
+      }),
+    });
+  } catch (error) {
+    throwRefreshTransportError(error);
+  }
   const payload = await parseJson(response);
   if (response.status === 403) {
     throw new SubscriptionHttpError(
@@ -179,7 +210,7 @@ async function refreshXaiToken(
   }
   if (!response.ok) {
     const code = oauthErrorCode(payload);
-    const relogin = code === 'invalid_grant' || response.status === 400 || response.status === 401;
+    const relogin = code === 'invalid_grant' || response.status === 401;
     throw new SubscriptionHttpError(oauthErrorMessage(payload, 'xAI token refresh failed.'), {
       code: relogin ? 'invalid_grant' : 'refresh_failed',
       fallbackAllowed: false,
@@ -208,65 +239,90 @@ export async function getUsableAccessToken(
   const pending = refreshLocks.get(providerId);
   if (pending) return pending;
 
-  const run = (async () => {
-    const record = store.readProvider(providerId);
-    if (!record.accessToken && !record.refreshToken) {
-      throw new SubscriptionHttpError('Studio Sign in is required before HTTP image generation.', {
-        code: 'not_signed_in',
-        fallbackAllowed: true,
-      });
-    }
-    const skew =
-      providerId === 'codex'
-        ? CODEX_ACCESS_TOKEN_REFRESH_SKEW_MS
-        : XAI_ACCESS_TOKEN_REFRESH_SKEW_MS;
-    if (record.accessToken && !isExpired(record, now(), skew)) {
-      return record.accessToken;
-    }
-    if (!record.refreshToken) {
-      store.writeProvider(providerId, {
-        ...record,
-        status: 'refresh_failed',
-        lastError: 'Missing refresh token. Sign in again.',
-      });
-      throw new SubscriptionHttpError('Missing refresh token. Sign in again.', {
-        code: 'invalid_grant',
-        fallbackAllowed: false,
-      });
-    }
+  let settle!: (value: string) => void;
+  let fail!: (reason: unknown) => void;
+  const gate = new Promise<string>((resolve, reject) => {
+    settle = resolve;
+    fail = reject;
+  });
+  refreshLocks.set(providerId, gate);
+
+  void (async () => {
+    const writeIfCurrent = (generation: number, record: StoredSubscriptionTokens) => {
+      if (store.generation(providerId) !== generation) return;
+      store.writeProvider(providerId, record);
+    };
     try {
-      const payload =
+      const generation = store.generation(providerId);
+      const record = store.readProvider(providerId);
+      if (!record.accessToken && !record.refreshToken) {
+        throw new SubscriptionHttpError(
+          'Studio Sign in is required before HTTP image generation.',
+          {
+            code: 'not_signed_in',
+            fallbackAllowed: true,
+          },
+        );
+      }
+      const skew =
         providerId === 'codex'
-          ? await refreshCodexToken(record.refreshToken, fetchImpl)
-          : await refreshXaiToken(record.refreshToken, fetchImpl);
-      const next = tokensFromOAuthPayload(payload, record, now());
-      store.writeProvider(providerId, next);
-      return next.accessToken!;
-    } catch (error) {
-      if (error instanceof SubscriptionHttpError && error.code === 'invalid_grant') {
-        store.writeProvider(providerId, {
+          ? CODEX_ACCESS_TOKEN_REFRESH_SKEW_MS
+          : XAI_ACCESS_TOKEN_REFRESH_SKEW_MS;
+      if (record.accessToken && !isExpired(record, now(), skew)) {
+        settle(record.accessToken);
+        return;
+      }
+      if (!record.refreshToken) {
+        writeIfCurrent(generation, {
           ...record,
           status: 'refresh_failed',
-          accessToken: null,
-          lastError: error.message,
+          lastError: 'Missing refresh token. Sign in again.',
         });
-      } else if (error instanceof SubscriptionHttpError && error.code === 'refresh_failed') {
-        store.writeProvider(providerId, {
-          ...record,
-          status: 'refresh_failed',
-          lastError: error.message,
+        throw new SubscriptionHttpError('Missing refresh token. Sign in again.', {
+          code: 'invalid_grant',
+          fallbackAllowed: false,
         });
       }
-      throw error;
+      try {
+        const payload =
+          providerId === 'codex'
+            ? await refreshCodexToken(record.refreshToken, fetchImpl)
+            : await refreshXaiToken(record.refreshToken, fetchImpl);
+        const next = tokensFromOAuthPayload(payload, record, now());
+        if (store.generation(providerId) !== generation) {
+          throw new SubscriptionHttpError('Studio Sign in was cancelled.', {
+            code: 'not_signed_in',
+            fallbackAllowed: true,
+          });
+        }
+        store.writeProvider(providerId, next);
+        settle(next.accessToken!);
+      } catch (error) {
+        if (error instanceof SubscriptionHttpError && error.code === 'invalid_grant') {
+          writeIfCurrent(generation, {
+            ...record,
+            status: 'refresh_failed',
+            accessToken: null,
+            refreshToken: null,
+            lastError: error.message,
+          });
+        } else if (error instanceof SubscriptionHttpError && error.code === 'refresh_failed') {
+          writeIfCurrent(generation, {
+            ...record,
+            status: 'refresh_failed',
+            lastError: error.message,
+          });
+        }
+        throw error;
+      }
+    } catch (error) {
+      fail(error);
+    } finally {
+      if (refreshLocks.get(providerId) === gate) refreshLocks.delete(providerId);
     }
   })();
 
-  refreshLocks.set(providerId, run);
-  try {
-    return await run;
-  } finally {
-    refreshLocks.delete(providerId);
-  }
+  return gate;
 }
 
 export function readXaiApiKey(env: Record<string, string | undefined> = process.env) {

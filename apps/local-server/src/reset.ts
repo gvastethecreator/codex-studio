@@ -1,4 +1,5 @@
 import { existsSync, rmSync } from 'node:fs';
+import { getSubscriptionAuthController } from './auth/controller';
 import { getSettings } from './config';
 import { stopAppServer } from './codex/processSupervisor';
 import { migrateDb } from './db/migrations';
@@ -13,6 +14,8 @@ const LIBRARY_RESET_TARGETS = ['library.sqlite', ...LIBRARY_FOLDERS, 'auth'] as 
 export async function resetStudioData(worker: { resetWorkerState(): Promise<void> }) {
   await worker.resetWorkerState();
   await stopAppServer();
+  getSubscriptionAuthController().logout('codex');
+  getSubscriptionAuthController().logout('xai');
   closeDb();
 
   for (const target of LIBRARY_RESET_TARGETS) {

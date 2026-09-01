@@ -66,5 +66,25 @@ describe('subscription auth store', () => {
       accessToken: null,
       refreshToken: null,
     });
+    expect(store.generation('xai')).toBeGreaterThan(0);
+  });
+
+  it('uses a unique temp file per atomic write', () => {
+    const { dir, store } = makeStore();
+    dirs.push(dir);
+    const generationsBefore = store.generation('codex');
+    store.writeProvider('codex', {
+      status: 'logged_in',
+      accessToken: 'one',
+      refreshToken: 'two',
+      expiresAt: null,
+      accountLabel: null,
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2026-09-01T00:00:00.000Z',
+    });
+    store.bumpGeneration('codex');
+    expect(store.generation('codex')).toBe(generationsBefore + 1);
+    expect(store.readProvider('codex').accessToken).toBe('one');
   });
 });

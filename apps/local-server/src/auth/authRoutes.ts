@@ -4,7 +4,7 @@ import {
   type SubscriptionProviderId,
 } from '../../../../packages/shared/src';
 import {
-  createSubscriptionAuthController,
+  getSubscriptionAuthController,
   SubscriptionAuthRouteError,
   type SubscriptionAuthController,
 } from './controller';
@@ -14,7 +14,7 @@ function providerFromParam(value: string): SubscriptionProviderId | null {
 }
 
 export function createSubscriptionAuthRoutes(
-  controller: SubscriptionAuthController = createSubscriptionAuthController(),
+  controller: SubscriptionAuthController = getSubscriptionAuthController(),
 ) {
   const routes = new Hono();
 

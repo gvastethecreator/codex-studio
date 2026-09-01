@@ -11,6 +11,7 @@ export const LIBRARY_FOLDERS = [
   '.studio/state',
   '.studio/logs',
   '.studio/logs/history',
+  '.studio/auth',
   '.studio/.trash',
   '.studio/.trash/transcripts',
   'outputs',

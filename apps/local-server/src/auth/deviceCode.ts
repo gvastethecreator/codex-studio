@@ -59,6 +59,15 @@ function asPositiveInt(value: unknown, fallback: number) {
   return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
 }
 
+export function isAllowedXaiAuthUrl(value: string) {
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && url.hostname === 'auth.x.ai';
+  } catch {
+    return false;
+  }
+}
+
 export function sleepWithSignal(ms: number, signal?: AbortSignal) {
   if (signal?.aborted) {
     const error = new Error('Login cancelled.');
@@ -89,7 +98,11 @@ async function startCodexDeviceCode({
   for (let attempt = 1; attempt <= 4; attempt += 1) {
     response = await fetchImpl(CODEX_DEVICE_USERCODE_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        'User-Agent': studioUserAgent(),
+      },
       body: JSON.stringify({ client_id: CODEX_OAUTH_CLIENT_ID }),
     });
     if (response.status !== 429) break;
@@ -130,10 +143,18 @@ async function startCodexDeviceCode({
         await sleep(intervalMs, signal);
         const pollResponse = await fetchImpl(CODEX_DEVICE_TOKEN_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            'User-Agent': studioUserAgent(),
+          },
           body: JSON.stringify({ device_auth_id: deviceAuthId, user_code: userCode }),
           signal,
         });
+        if (pollResponse.status === 429) {
+          await sleep(intervalMs, signal);
+          continue;
+        }
         if (pollResponse.status === 403 || pollResponse.status === 404) continue;
         if (!pollResponse.ok) {
           throw new Error(`ChatGPT login poll failed (${pollResponse.status}).`);
@@ -187,12 +208,13 @@ async function startXaiDeviceCode({
   let tokenEndpoint = XAI_OAUTH_TOKEN_URL;
   try {
     const discovery = await fetchImpl(XAI_OAUTH_DISCOVERY_URL, {
-      headers: { Accept: 'application/json' },
+      headers: { Accept: 'application/json', 'User-Agent': studioUserAgent() },
+      redirect: 'error',
     });
     if (discovery.ok) {
       const payload = await parseJson(discovery);
       const discovered = asString(payload.token_endpoint);
-      if (discovered.startsWith('https://') && discovered.includes('x.ai')) {
+      if (isAllowedXaiAuthUrl(discovered)) {
         tokenEndpoint = discovered;
       }
     }
@@ -205,6 +227,7 @@ async function startXaiDeviceCode({
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
       Accept: 'application/json',
+      'User-Agent': studioUserAgent(),
     },
     body: formBody({
       client_id: XAI_OAUTH_CLIENT_ID,
@@ -241,6 +264,7 @@ async function startXaiDeviceCode({
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
             Accept: 'application/json',
+            'User-Agent': studioUserAgent(),
           },
           body: formBody({
             grant_type: 'urn:ietf:params:oauth:grant-type:device_code',
@@ -260,6 +284,11 @@ async function startXaiDeviceCode({
             },
             now(),
           );
+        }
+        if (pollResponse.status === 429) {
+          currentInterval = Math.min(currentInterval + 1000, 30_000);
+          await sleep(currentInterval, signal);
+          continue;
         }
         const errorCode = asString(tokenPayload.error);
         if (errorCode === 'authorization_pending') {

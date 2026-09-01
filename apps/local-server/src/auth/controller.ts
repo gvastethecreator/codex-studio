@@ -29,6 +29,7 @@ interface PendingLogin {
   start: DeviceCodeStart;
   controller: AbortController;
   poll: Promise<void>;
+  epoch: number;
 }
 
 export interface SubscriptionAuthControllerDependencies {
@@ -65,6 +66,7 @@ export function createSubscriptionAuthController({
   publish = (type, payload) => publishEvent(type, payload),
 }: SubscriptionAuthControllerDependencies = {}) {
   const pending = new Map<SubscriptionProviderId, PendingLogin>();
+  const starting = new Map<SubscriptionProviderId, Promise<SubscriptionAuthPublicStatus>>();
 
   const emit = (
     providerId: SubscriptionProviderId,
@@ -104,6 +106,13 @@ export function createSubscriptionAuthController({
     }
   };
 
+  const abortPending = (providerId: SubscriptionProviderId) => {
+    const active = pending.get(providerId);
+    if (!active) return;
+    active.controller.abort();
+    pending.delete(providerId);
+  };
+
   const start = async (
     providerId: SubscriptionProviderId,
   ): Promise<SubscriptionAuthPublicStatus> => {
@@ -112,73 +121,76 @@ export function createSubscriptionAuthController({
     if (existingPending) {
       return publicFromPending(providerId, existingPending.start);
     }
-    const current = store.readProvider(providerId);
-    if (current.status === 'logged_in' && current.accessToken) {
-      throw new SubscriptionAuthRouteError(
-        'Already signed in. Sign out first to use a different account.',
-        409,
-        'already_signed_in',
-      );
+    const inFlight = starting.get(providerId);
+    if (inFlight) return inFlight;
+
+    const work = (async () => {
+      const epoch = store.generation(providerId);
+      const current = store.readProvider(providerId);
+      if (current.status === 'logged_in' && current.accessToken) {
+        throw new SubscriptionAuthRouteError(
+          'Already signed in. Sign out first to use a different account.',
+          409,
+          'already_signed_in',
+        );
+      }
+      const started = await startDeviceCode(providerId, { fetch: fetchImpl, now, sleep });
+      if (store.generation(providerId) !== epoch) {
+        return readPublic(providerId);
+      }
+      const controller = new AbortController();
+      const login: PendingLogin = {
+        start: started,
+        controller,
+        epoch,
+        poll: started
+          .poll(controller.signal)
+          .then((tokens) => {
+            if (controller.signal.aborted) return;
+            if (pending.get(providerId) !== login) return;
+            if (store.generation(providerId) !== epoch) return;
+            store.writeProvider(providerId, tokens);
+            pending.delete(providerId);
+            emit(providerId, 'logged_in', tokens.accountLabel);
+          })
+          .catch((error) => {
+            if (controller.signal.aborted || pending.get(providerId) !== login) return;
+            pending.delete(providerId);
+            if (error instanceof Error && error.name === 'AbortError') return;
+            const message = error instanceof Error ? error.message : 'Sign in failed.';
+            const previous = store.readProvider(providerId);
+            store.writeProvider(providerId, {
+              ...previous,
+              status: previous.accessToken ? previous.status : 'logged_out',
+              lastError: message,
+            });
+            const next = readPublic(providerId);
+            emit(providerId, next.status, next.accountLabel);
+          }),
+      };
+      pending.set(providerId, login);
+      emit(providerId, 'pending', null);
+      return publicFromPending(providerId, started);
+    })();
+
+    starting.set(providerId, work);
+    try {
+      return await work;
+    } finally {
+      if (starting.get(providerId) === work) starting.delete(providerId);
     }
-    const started = await startDeviceCode(providerId, { fetch: fetchImpl, now, sleep });
-    const controller = new AbortController();
-    const login: PendingLogin = {
-      start: started,
-      controller,
-      poll: started
-        .poll(controller.signal)
-        .then((tokens) => {
-          if (pending.get(providerId) !== login) return;
-          pending.delete(providerId);
-          store.writeProvider(providerId, tokens);
-          emit(providerId, 'logged_in', tokens.accountLabel);
-        })
-        .catch((error) => {
-          if (pending.get(providerId) !== login) return;
-          pending.delete(providerId);
-          if (error instanceof Error && error.name === 'AbortError') {
-            emit(
-              providerId,
-              store.readProvider(providerId).status,
-              store.readProvider(providerId).accountLabel,
-            );
-            return;
-          }
-          const message = error instanceof Error ? error.message : 'Sign in failed.';
-          const previous = store.readProvider(providerId);
-          store.writeProvider(providerId, {
-            ...previous,
-            status: previous.accessToken ? previous.status : 'logged_out',
-            lastError: message,
-          });
-          emit(providerId, 'logged_out', null);
-        }),
-    };
-    pending.set(providerId, login);
-    emit(providerId, 'pending', null);
-    return publicFromPending(providerId, started);
   };
 
   const cancel = (providerId: SubscriptionProviderId) => {
-    const active = pending.get(providerId);
-    if (active) {
-      pending.delete(providerId);
-      active.controller.abort();
-    }
-    emit(
-      providerId,
-      store.readProvider(providerId).status,
-      store.readProvider(providerId).accountLabel,
-    );
-    return readPublic(providerId);
+    abortPending(providerId);
+    store.bumpGeneration(providerId);
+    const next = readPublic(providerId);
+    emit(providerId, next.status, next.accountLabel);
+    return next;
   };
 
   const logout = (providerId: SubscriptionProviderId) => {
-    const active = pending.get(providerId);
-    if (active) {
-      pending.delete(providerId);
-      active.controller.abort();
-    }
+    abortPending(providerId);
     store.clearProvider(providerId);
     emit(providerId, 'logged_out', null);
     return readPublic(providerId);

@@ -78,6 +78,71 @@ describe('subscription tokens', () => {
     expect(store.readProvider('codex')).toMatchObject({
       status: 'refresh_failed',
       accessToken: null,
+      refreshToken: null,
     });
+  });
+
+  it('does not treat a generic xAI 400 as invalid_grant', async () => {
+    const store = makeStore();
+    store.writeProvider('xai', {
+      status: 'logged_in',
+      accessToken: 'stale-access',
+      refreshToken: 'xai-refresh',
+      expiresAt: '2020-01-01T00:00:00.000Z',
+      accountLabel: 'grok-user',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2020-01-01T00:00:00.000Z',
+    });
+    await expect(
+      getUsableAccessToken('xai', {
+        store,
+        env: {},
+        fetch: (async (_input: RequestInfo | URL) =>
+          new Response(JSON.stringify({ error: 'invalid_request' }), {
+            status: 400,
+          })) as typeof fetch,
+      }),
+    ).rejects.toMatchObject({ code: 'refresh_failed', fallbackAllowed: false });
+    expect(store.readProvider('xai')).toMatchObject({
+      status: 'refresh_failed',
+      refreshToken: 'xai-refresh',
+    });
+  });
+
+  it('does not write a refresh after logout', async () => {
+    const store = makeStore();
+    store.writeProvider('codex', {
+      status: 'logged_in',
+      accessToken: 'stale-access',
+      refreshToken: 'refresh-secret',
+      expiresAt: '2020-01-01T00:00:00.000Z',
+      accountLabel: 'user@example.com',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2020-01-01T00:00:00.000Z',
+    });
+    let finishRefresh: ((value: Response) => void) | undefined;
+    const fetchMock = async (_input: RequestInfo | URL) =>
+      new Promise<Response>((resolve) => {
+        finishRefresh = resolve;
+      });
+    const pending = getUsableAccessToken('codex', {
+      store,
+      fetch: fetchMock as typeof fetch,
+    });
+    store.clearProvider('codex');
+    finishRefresh?.(
+      new Response(
+        JSON.stringify({
+          access_token: 'new-access',
+          refresh_token: 'new-refresh',
+          expires_in: 3600,
+        }),
+        { status: 200, headers: { 'Content-Type': 'application/json' } },
+      ),
+    );
+    await expect(pending).rejects.toMatchObject({ code: 'not_signed_in' });
+    expect(store.readProvider('codex').accessToken).toBeNull();
   });
 });

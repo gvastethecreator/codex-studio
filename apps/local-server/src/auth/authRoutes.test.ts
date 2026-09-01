@@ -130,4 +130,86 @@ describe('subscription auth routes', () => {
     });
     expect(JSON.stringify(body)).not.toContain('refresh-secret');
   });
+
+  it('rejects a second Sign in while already logged in', async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), 'studio-oauth-routes-'));
+    dirs.push(dir);
+    const store = createSubscriptionAuthStore({
+      resolveFilePath: () => path.join(dir, 'studio-oauth.json'),
+    });
+    store.writeProvider('codex', {
+      status: 'logged_in',
+      accessToken: 'access-secret',
+      refreshToken: 'refresh-secret',
+      expiresAt: '2026-09-02T00:00:00.000Z',
+      accountLabel: 'user@example.com',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2026-09-01T00:00:00.000Z',
+    });
+    const app = new Hono().route(
+      '/api/auth',
+      createSubscriptionAuthRoutes(
+        createSubscriptionAuthController({
+          store,
+          inspectLibraryWritable: () => true,
+        }),
+      ),
+    );
+    const response = await app.request('/api/auth/codex/start', { method: 'POST' });
+    expect(response.status).toBe(409);
+    expect(await response.json()).toMatchObject({ code: 'already_signed_in' });
+  });
+
+  it('does not write tokens after cancel', async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), 'studio-oauth-routes-'));
+    dirs.push(dir);
+    const store = createSubscriptionAuthStore({
+      resolveFilePath: () => path.join(dir, 'studio-oauth.json'),
+    });
+    let releaseToken: (() => void) | undefined;
+    const tokenGate = new Promise<void>((resolve) => {
+      releaseToken = resolve;
+    });
+    const fetchMock = async (input: RequestInfo | URL, init?: RequestInit) => {
+      const url = requestUrl(input);
+      if (url === CODEX_DEVICE_USERCODE_URL) {
+        return jsonResponse({ user_code: 'ABCD-1234', device_auth_id: 'device-1', interval: 1 });
+      }
+      if (url === CODEX_DEVICE_TOKEN_URL) {
+        return jsonResponse({ authorization_code: 'auth-code', code_verifier: 'verifier' });
+      }
+      if (url === CODEX_OAUTH_TOKEN_URL) {
+        await tokenGate;
+        return jsonResponse({
+          access_token: 'access-secret',
+          refresh_token: 'refresh-secret',
+          expires_in: 3600,
+        });
+      }
+      return jsonResponse({ error: 'unexpected' }, 500);
+    };
+    const app = new Hono().route(
+      '/api/auth',
+      createSubscriptionAuthRoutes(
+        createSubscriptionAuthController({
+          store,
+          fetch: fetchMock as typeof fetch,
+          now: () => Date.parse('2026-09-01T00:00:00.000Z'),
+          sleep: async () => undefined,
+          inspectLibraryWritable: () => true,
+        }),
+      ),
+    );
+
+    const started = await app.request('/api/auth/codex/start', { method: 'POST' });
+    expect(started.status).toBe(200);
+    const cancelled = await app.request('/api/auth/codex/cancel', { method: 'POST' });
+    expect(cancelled.status).toBe(200);
+    releaseToken?.();
+    await new Promise((resolve) => setTimeout(resolve, 20));
+    expect(store.readProvider('codex').accessToken).toBeNull();
+    const status = await app.request('/api/auth/codex');
+    expect(await status.json()).toMatchObject({ status: 'logged_out' });
+  });
 });
