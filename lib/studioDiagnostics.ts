@@ -75,48 +75,58 @@ export function buildStudioDiagnosticsSnapshot({
   isBackendConnected,
 }: BuildStudioDiagnosticsSnapshotArgs): StudioDiagnosticsSnapshot {
   const codexRuntime = health?.codexRuntime ?? null;
-  const blockedCodexRuntime = codexRuntime?.canRunJobs === false ? codexRuntime : null;
-  const localSessionStatus = !localCodexSession
-    ? {
-        value: 'Checking',
-        detail: 'Waiting for the first Local Codex Session check from the local backend.',
-        tone: 'warning' as const,
-      }
-    : localCodexSession.canRunLocalJobs
+  const httpCoversCodex = health?.checks.codexReady === true;
+  const httpCoversOnboarding = health?.checks.onboardingReady === true;
+  const blockedCodexRuntime =
+    !httpCoversCodex && codexRuntime?.canRunJobs === false ? codexRuntime : null;
+  const localSessionStatus =
+    httpCoversOnboarding && !localCodexSession?.canRunLocalJobs
       ? {
-          value: 'ChatGPT Login',
-          detail: localCodexSession.planType
-            ? `Local session ready · ${formatCodexPlan(localCodexSession.planType)}`
-            : 'Local ChatGPT login ready for Codex turns.',
+          value: 'Studio Sign in',
+          detail: 'ChatGPT Sign in is ready. Local Codex CLI stays as fallback.',
           tone: 'success' as const,
         }
-      : localCodexSession.reason === 'chatgpt_login_required'
+      : !localCodexSession
         ? {
-            value: 'Login Required',
-            detail: 'Run `codex login` and choose ChatGPT before running local image tasks.',
+            value: 'Checking',
+            detail: 'Waiting for the first Local Codex Session check from the local backend.',
             tone: 'warning' as const,
           }
-        : localCodexSession.reason === 'api_key_not_supported'
+        : localCodexSession.canRunLocalJobs
           ? {
-              value: 'API Key',
-              detail:
-                'Local-only mode does not use API key sessions. Re-authenticate the local Codex CLI with ChatGPT.',
-              tone: 'danger' as const,
+              value: 'ChatGPT Login',
+              detail: localCodexSession.planType
+                ? `Local session ready · ${formatCodexPlan(localCodexSession.planType)}`
+                : 'Local ChatGPT login ready for Codex turns.',
+              tone: 'success' as const,
             }
-          : localCodexSession.reason === 'external_tokens_not_supported'
+          : localCodexSession.reason === 'chatgpt_login_required'
             ? {
-                value: 'External Tokens',
-                detail:
-                  'Codex Studio expects the user-managed ChatGPT login from the local Codex CLI.',
-                tone: 'danger' as const,
+                value: 'Login Required',
+                detail: 'Run `codex login` and choose ChatGPT before running local image tasks.',
+                tone: 'warning' as const,
               }
-            : {
-                value: 'Unavailable',
-                detail: localCodexSession.error
-                  ? `Could not read the local session: ${localCodexSession.error}`
-                  : 'The Local Codex Session is unavailable right now.',
-                tone: 'danger' as const,
-              };
+            : localCodexSession.reason === 'api_key_not_supported'
+              ? {
+                  value: 'API Key',
+                  detail:
+                    'Local-only mode does not use API key sessions. Re-authenticate the local Codex CLI with ChatGPT.',
+                  tone: 'danger' as const,
+                }
+              : localCodexSession.reason === 'external_tokens_not_supported'
+                ? {
+                    value: 'External Tokens',
+                    detail:
+                      'Codex Studio expects the user-managed ChatGPT login from the local Codex CLI.',
+                    tone: 'danger' as const,
+                  }
+                : {
+                    value: 'Unavailable',
+                    detail: localCodexSession.error
+                      ? `Could not read the local session: ${localCodexSession.error}`
+                      : 'The Local Codex Session is unavailable right now.',
+                    tone: 'danger' as const,
+                  };
 
   const statusItems: StudioRuntimeStatusItem[] = [
     {
@@ -135,19 +145,23 @@ export function buildStudioDiagnosticsSnapshot({
         ? 'Blocked'
         : health?.codexCli.available === true
           ? 'Ready'
-          : health
-            ? 'Unavailable'
-            : 'Checking',
+          : httpCoversCodex
+            ? 'Sign in'
+            : health
+              ? 'Unavailable'
+              : 'Checking',
       detail: blockedCodexRuntime
         ? blockedCodexRuntime.recommendedAction
         : health?.codexCli.available === true
           ? (health.codexCli.version ?? health.codexCli.command ?? 'Codex CLI detected.')
-          : health
-            ? 'Install Codex CLI or confirm it is available on your PATH before running image tasks.'
-            : 'Waiting for the first runtime check from the local backend.',
+          : httpCoversCodex
+            ? 'ChatGPT Sign in is ready. Codex CLI stays as fallback.'
+            : health
+              ? 'Install Codex CLI or confirm it is available on your PATH before running image tasks.'
+              : 'Waiting for the first runtime check from the local backend.',
       tone: blockedCodexRuntime
         ? 'danger'
-        : health?.codexCli.available === true
+        : health?.codexCli.available === true || httpCoversCodex
           ? 'success'
           : health
             ? 'danger'
@@ -160,19 +174,23 @@ export function buildStudioDiagnosticsSnapshot({
         ? 'Blocked'
         : health?.appServer.running === true
           ? 'Running'
-          : health
-            ? 'Standby'
-            : 'Checking',
+          : httpCoversOnboarding
+            ? 'Fallback'
+            : health
+              ? 'Standby'
+              : 'Checking',
       detail: blockedCodexRuntime
         ? blockedCodexRuntime.recommendedAction
         : health?.appServer.running === true
           ? health.appServer.wsUrl || 'Codex app-server websocket is live.'
-          : health
-            ? 'The App-Server Lifecycle will start codex app-server automatically when a generation or Local Codex Session check needs it.'
-            : 'Waiting for the first runtime check from the local backend.',
+          : httpCoversOnboarding
+            ? 'ChatGPT Sign in is ready. Codex Product Runtime stays as fallback.'
+            : health
+              ? 'The App-Server Lifecycle will start codex app-server automatically when a generation or Local Codex Session check needs it.'
+              : 'Waiting for the first runtime check from the local backend.',
       tone: blockedCodexRuntime
         ? 'danger'
-        : health?.appServer.running === true
+        : health?.appServer.running === true || httpCoversOnboarding
           ? 'success'
           : 'warning',
     },
@@ -190,19 +208,23 @@ export function buildStudioDiagnosticsSnapshot({
     ? 'Local backend offline'
     : localCodexSession?.planType
       ? formatCodexPlan(localCodexSession.planType)
-      : localCodexSession?.reason === 'chatgpt_login_required'
-        ? 'ChatGPT login required'
-        : localCodexSession?.reason === 'api_key_not_supported'
-          ? 'Unsupported API key session'
-          : 'Local Codex session';
+      : httpCoversOnboarding
+        ? 'Studio Sign in'
+        : localCodexSession?.reason === 'chatgpt_login_required'
+          ? 'ChatGPT login required'
+          : localCodexSession?.reason === 'api_key_not_supported'
+            ? 'Unsupported API key session'
+            : 'Local Codex session';
   const usageValue = !isBackendConnected
     ? 'Offline'
     : usageIsLoading
       ? 'Checking…'
       : (localCodexSession?.usage?.display ??
-        (localCodexSession?.reason === 'chatgpt_login_required'
-          ? 'Sign in with ChatGPT'
-          : 'Unavailable'));
+        (httpCoversOnboarding
+          ? 'Studio Sign in'
+          : localCodexSession?.reason === 'chatgpt_login_required'
+            ? 'Sign in with ChatGPT'
+            : 'Unavailable'));
   const usageTooltip = !isBackendConnected
     ? 'Reconnect the local backend to refresh health, usage, and app-server status.'
     : localCodexSession?.error

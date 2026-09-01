@@ -120,7 +120,13 @@ describe('buildStudioReadinessSnapshot', () => {
 
   it('asks for a ChatGPT login when the local session is missing', () => {
     const snapshot = buildStudioReadinessSnapshot({
-      health: createHealth(),
+      health: createHealth({
+        checks: {
+          libraryReady: true,
+          codexReady: true,
+          onboardingReady: false,
+        },
+      }),
       isBackendConnected: true,
       localCodexSession: createSession({
         authMode: null,
@@ -139,7 +145,7 @@ describe('buildStudioReadinessSnapshot', () => {
       stage: 'action_required',
       isReady: false,
       nextAction: 'login-chatgpt',
-      title: 'Use ChatGPT login',
+      title: 'Sign in with ChatGPT',
     });
   });
 
@@ -149,6 +155,11 @@ describe('buildStudioReadinessSnapshot', () => {
         appServer: {
           ...createHealth().appServer,
           running: false,
+        },
+        checks: {
+          libraryReady: true,
+          codexReady: true,
+          onboardingReady: false,
         },
       }),
       isBackendConnected: true,
@@ -202,6 +213,48 @@ describe('buildStudioReadinessSnapshot', () => {
           ok: false,
           detail: 'Use the OpenAI Codex desktop CLI binary.',
         }),
+      ]),
+    );
+  });
+
+  it('treats Studio ChatGPT Sign in as ready without a Local Codex Session', () => {
+    const snapshot = buildStudioReadinessSnapshot({
+      health: createHealth({
+        codexCli: { available: false, version: null, command: '' },
+        codexRuntime: {
+          ...createHealth().codexRuntime,
+          status: 'blocked',
+          canRunJobs: false,
+          selectedExecutable: null,
+          selectedVersion: null,
+          recommendedAction: 'Install Codex CLI.',
+        },
+        appServer: {
+          ...createHealth().appServer,
+          running: false,
+        },
+        checks: {
+          libraryReady: true,
+          codexReady: true,
+          onboardingReady: true,
+        },
+      }),
+      isBackendConnected: true,
+      localCodexSession: null,
+      runtime,
+    });
+
+    expect(snapshot).toMatchObject({
+      stage: 'ready',
+      isReady: true,
+      nextAction: null,
+      title: 'Desktop runtime ready',
+    });
+    expect(snapshot.checks).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ key: 'codexCli', ok: true }),
+        expect.objectContaining({ key: 'appServer', ok: true }),
+        expect.objectContaining({ key: 'localCodexSession', ok: true }),
       ]),
     );
   });

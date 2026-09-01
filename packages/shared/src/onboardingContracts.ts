@@ -139,11 +139,13 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
       ),
       check(
         'codex_cli',
-        facts.codexCliAvailable,
+        facts.codexCliAvailable || Boolean(facts.codexSubscriptionReady),
         'Codex CLI',
         facts.codexCliAvailable
           ? 'Codex CLI is on this machine.'
-          : 'Install Codex CLI, then return here.',
+          : facts.codexSubscriptionReady
+            ? 'Studio Sign in is ready. Codex CLI stays as fallback.'
+            : 'Install Codex CLI, then return here.',
         null,
       ),
       check(
@@ -175,11 +177,13 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
       ),
       check(
         'app_server',
-        facts.appServerReady,
+        facts.appServerReady || Boolean(facts.codexSubscriptionReady),
         'Codex Product Runtime',
         facts.appServerReady
           ? 'codex app-server is running.'
-          : 'Start app-server after Codex CLI and ChatGPT login are ready.',
+          : facts.codexSubscriptionReady
+            ? 'Studio Sign in is ready. Codex Product Runtime stays as fallback.'
+            : 'Start app-server after Codex CLI and ChatGPT login are ready.',
         null,
       ),
     ],

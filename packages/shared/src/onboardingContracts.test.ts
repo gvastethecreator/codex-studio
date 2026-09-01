@@ -106,6 +106,22 @@ describe('buildOnboardingProbe', () => {
     expect(probe.checks.map((check) => check.id)).not.toContain('grok');
     expect(probe.grok).toMatchObject({ cliAvailable: false, loggedIn: false });
   });
+
+  it('marks Codex CLI and app-server checks ready when Studio Sign in covers them', () => {
+    const probe = buildOnboardingProbe({
+      ...readyFacts,
+      codexCliAvailable: false,
+      chatgptLoggedIn: true,
+      codexSubscriptionReady: true,
+      appServerReady: false,
+    });
+    expect(probe.primaryCta).toBe('ready');
+    expect(probe.checks.find((check) => check.id === 'codex_cli')).toMatchObject({ ready: true });
+    expect(probe.checks.find((check) => check.id === 'app_server')).toMatchObject({ ready: true });
+    expect(probe.checks.find((check) => check.id === 'chatgpt_login')).toMatchObject({
+      ready: true,
+    });
+  });
 });
 
 describe('onboardingFactsFromHealth', () => {

@@ -184,6 +184,11 @@ describe('studioDiagnostics', () => {
           ...createHealth().appServer,
           running: false,
         },
+        checks: {
+          libraryReady: true,
+          codexReady: true,
+          onboardingReady: false,
+        },
       }),
       localCodexSession: createLocalCodexSession({
         planType: null,
@@ -264,5 +269,47 @@ describe('studioDiagnostics', () => {
         }),
       ]),
     );
+  });
+
+  it('treats Studio ChatGPT Sign in as healthy without Codex CLI', () => {
+    const snapshot = buildStudioDiagnosticsSnapshot({
+      health: createHealth({
+        codexCli: { available: false, version: null, command: '' },
+        codexRuntime: {
+          ...createHealth().codexRuntime,
+          status: 'blocked',
+          canRunJobs: false,
+          recommendedAction: 'Install Codex CLI.',
+        },
+        appServer: {
+          ...createHealth().appServer,
+          running: false,
+        },
+        checks: {
+          libraryReady: true,
+          codexReady: true,
+          onboardingReady: true,
+        },
+      }),
+      localCodexSession: null,
+      hasFetchedDiagnostics: true,
+      isBackendConnected: true,
+    });
+
+    expect(snapshot.usage).toMatchObject({
+      value: 'Studio Sign in',
+      meta: 'Studio Sign in',
+      tone: 'neutral',
+    });
+    expect(snapshot.statusItems).toEqual([
+      expect.objectContaining({ key: 'backend', value: 'Connected', tone: 'success' }),
+      expect.objectContaining({ key: 'codexCli', value: 'Sign in', tone: 'success' }),
+      expect.objectContaining({ key: 'appServer', value: 'Fallback', tone: 'success' }),
+      expect.objectContaining({
+        key: 'localCodexSession',
+        value: 'Studio Sign in',
+        tone: 'success',
+      }),
+    ]);
   });
 });

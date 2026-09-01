@@ -67,7 +67,8 @@ function resolveNextAction(
   if (!isBackendConnected) return 'retry';
   if (!health) return null;
   if (!health.checks.libraryReady) return 'fix-library';
-  if (!health.codexRuntime.canRunJobs) return 'install-codex';
+  if (health.checks.onboardingReady) return null;
+  if (!health.codexRuntime.canRunJobs && !health.checks.codexReady) return 'install-codex';
   if (!health.appServer.running) return 'start-app-server';
   if (!localCodexSession?.canRunLocalJobs) {
     return localCodexSession?.reason === 'app_server_unavailable' ? 'retry' : 'login-chatgpt';
@@ -82,7 +83,7 @@ function buildTitle(nextAction: StudioReadinessAction, runtimeLabel: string) {
     case 'start-app-server':
       return 'Start codex app-server';
     case 'login-chatgpt':
-      return 'Use ChatGPT login';
+      return 'Sign in with ChatGPT';
     case 'fix-library':
       return 'Repair the Studio Library';
     case 'retry':
@@ -99,13 +100,13 @@ function buildDescription(nextAction: StudioReadinessAction, runtimeLabel: strin
     case 'start-app-server':
       return 'The backend is reachable, but the App-Server Lifecycle still needs to start `codex app-server`.';
     case 'login-chatgpt':
-      return 'Codex Studio is locked to ChatGPT login only. Re-authenticate the local Codex CLI with ChatGPT to continue.';
+      return 'Sign in from Studio Settings, or run `codex login` and choose ChatGPT.';
     case 'fix-library':
       return 'The Studio Library is missing folders or write access, so Local Assets cannot be persisted safely.';
     case 'retry':
       return 'The local backend or app-server is unavailable. Refresh after the local runtime comes back.';
     default:
-      return `${runtimeLabel} is ready for Local Generation Runs with the Local Codex Session.`;
+      return `${runtimeLabel} is ready for Local Generation Runs.`;
   }
 }
 
@@ -116,6 +117,15 @@ export function buildStudioReadinessSnapshot({
   runtime,
 }: BuildStudioReadinessSnapshotArgs): StudioReadinessSnapshot {
   const sessionStatus = resolveLocalCodexSessionDetail(localCodexSession);
+  const httpCoversCodex = Boolean(health?.checks.codexReady);
+  const httpCoversOnboarding = Boolean(health?.checks.onboardingReady);
+  const cliReady = Boolean(health?.codexRuntime?.canRunJobs);
+  const sessionOk = sessionStatus.ok || httpCoversOnboarding;
+  const sessionDetail = sessionStatus.ok
+    ? sessionStatus.detail
+    : httpCoversOnboarding
+      ? 'ChatGPT Sign in is ready. Local Codex CLI stays as fallback.'
+      : sessionStatus.detail;
   const checks: StudioReadinessCheck[] = [
     {
       key: 'backend',
@@ -138,32 +148,37 @@ export function buildStudioReadinessSnapshot({
     {
       key: 'codexCli',
       label: 'Codex CLI',
-      ok: Boolean(health?.codexRuntime?.canRunJobs),
-      detail:
-        health?.codexRuntime && !health.codexRuntime.canRunJobs
-          ? health.codexRuntime.recommendedAction
-          : health?.codexCli.available
-            ? health.codexCli.version || 'Codex CLI detected.'
+      ok: cliReady || httpCoversCodex,
+      detail: cliReady
+        ? health?.codexCli.available
+          ? health.codexCli.version || 'Codex CLI detected.'
+          : 'Codex Product Runtime is ready.'
+        : httpCoversCodex
+          ? 'ChatGPT Sign in is ready. Codex CLI stays as fallback.'
+          : health?.codexRuntime
+            ? health.codexRuntime.recommendedAction
             : 'Install or restore the local Codex CLI.',
       blocking: true,
     },
     {
       key: 'appServer',
       label: 'codex app-server',
-      ok: Boolean(health?.appServer.running && health?.codexRuntime.canRunJobs),
+      ok: Boolean((health?.appServer.running && cliReady) || httpCoversOnboarding),
       detail:
-        health?.codexRuntime && !health.codexRuntime.canRunJobs
-          ? health.codexRuntime.recommendedAction
-          : health?.appServer.running
-            ? health.appServer.wsUrl || 'The app-server websocket is live.'
-            : 'The local app-server is not running yet.',
+        health?.appServer.running && cliReady
+          ? health.appServer.wsUrl || 'The app-server websocket is live.'
+          : httpCoversOnboarding
+            ? 'ChatGPT Sign in is ready. Codex Product Runtime stays as fallback.'
+            : health?.codexRuntime && !cliReady
+              ? health.codexRuntime.recommendedAction
+              : 'The local app-server is not running yet.',
       blocking: true,
     },
     {
       key: 'localCodexSession',
       label: 'Local Codex Session',
-      ok: sessionStatus.ok,
-      detail: sessionStatus.detail,
+      ok: sessionOk,
+      detail: sessionDetail,
       blocking: true,
     },
   ];
@@ -179,7 +194,7 @@ export function buildStudioReadinessSnapshot({
     };
   }
 
-  if (!health || !localCodexSession) {
+  if (!health || (!localCodexSession && !httpCoversOnboarding)) {
     return {
       stage: 'checking',
       isReady: false,
