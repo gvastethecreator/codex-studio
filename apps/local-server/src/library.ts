@@ -32,6 +32,7 @@ const LOGICAL_LIBRARY_PATHS: Record<string, string[]> = {
   masks: ['.studio', 'masks'],
   transcripts: ['.studio', 'transcripts'],
   state: ['.studio', 'state'],
+  auth: ['.studio', 'auth'],
   logs: ['.studio', 'logs'],
   'logs/history': ['.studio', 'logs', 'history'],
   '.trash': ['outputs', '.trash'],
@@ -75,7 +76,7 @@ export function ensureLibrary() {
       readmePath,
       [
         'Codex Studio workspace.',
-        '.studio stores local state, settings, SQLite, logs, references, and transcripts.',
+        '.studio stores local state, settings, SQLite, logs, references, transcripts, and Sign in tokens.',
         'outputs stores generated images and user-facing exports.',
         '',
       ].join('\n'),

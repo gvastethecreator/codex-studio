@@ -8,7 +8,7 @@ import { LIBRARY_FOLDERS, ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';
 import { log } from './logger';
 
-const LIBRARY_RESET_TARGETS = ['library.sqlite', ...LIBRARY_FOLDERS] as const;
+const LIBRARY_RESET_TARGETS = ['library.sqlite', ...LIBRARY_FOLDERS, 'auth'] as const;
 
 export async function resetStudioData(worker: { resetWorkerState(): Promise<void> }) {
   await worker.resetWorkerState();
