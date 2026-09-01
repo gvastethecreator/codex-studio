@@ -100,4 +100,34 @@ describe('subscription auth routes', () => {
     expect(response.status).toBe(503);
     expect(await response.json()).toMatchObject({ code: 'library_not_writable' });
   });
+
+  it('does not report logged_in when the stored access token is missing', async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), 'studio-oauth-routes-'));
+    dirs.push(dir);
+    const store = createSubscriptionAuthStore({
+      resolveFilePath: () => path.join(dir, 'studio-oauth.json'),
+    });
+    store.writeProvider('codex', {
+      status: 'logged_in',
+      accessToken: null,
+      refreshToken: 'refresh-secret',
+      expiresAt: null,
+      accountLabel: 'user@example.com',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2026-09-01T00:00:00.000Z',
+    });
+    const controller = createSubscriptionAuthController({
+      store,
+      inspectLibraryWritable: () => true,
+    });
+    const app = new Hono().route('/api/auth', createSubscriptionAuthRoutes(controller));
+    const response = await app.request('/api/auth/codex');
+    const body = await response.json();
+    expect(body).toMatchObject({
+      providerId: 'codex',
+      status: 'logged_out',
+    });
+    expect(JSON.stringify(body)).not.toContain('refresh-secret');
+  });
 });

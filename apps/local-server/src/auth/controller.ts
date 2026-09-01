@@ -6,7 +6,11 @@ import type {
 import { inspectLibrary } from '../library';
 import { publishEvent } from '../events';
 import { startDeviceCode, type DeviceCodeStart } from './deviceCode';
-import { getSubscriptionAuthStore, type SubscriptionAuthStore } from './store';
+import {
+  getSubscriptionAuthStore,
+  isSubscriptionLoggedIn,
+  type SubscriptionAuthStore,
+} from './store';
 import type { AuthFetch } from './tokens';
 
 export class SubscriptionAuthRouteError extends Error {
@@ -74,9 +78,14 @@ export function createSubscriptionAuthController({
     const active = pending.get(providerId);
     if (active) return publicFromPending(providerId, active.start);
     const record = store.readProvider(providerId);
+    const status = isSubscriptionLoggedIn(record)
+      ? 'logged_in'
+      : record.status === 'logged_in'
+        ? 'logged_out'
+        : record.status;
     return {
       providerId,
-      status: record.status,
+      status,
       accountLabel: record.accountLabel,
       expiresAt: record.expiresAt,
       lastError: record.lastError,
@@ -181,7 +190,7 @@ export function createSubscriptionAuthController({
     cancel,
     logout,
     isLoggedIn(providerId: SubscriptionProviderId) {
-      return store.readProvider(providerId).status === 'logged_in';
+      return isSubscriptionLoggedIn(store.readProvider(providerId));
     },
   };
 }

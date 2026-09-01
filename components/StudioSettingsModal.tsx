@@ -208,7 +208,7 @@ function SubscriptionAuthControls({
     try {
       const next = await work();
       setStatus(next);
-      onChanged();
+      onChangedRef.current();
     } catch (actionError) {
       setError(actionError instanceof Error ? actionError.message : 'Sign in failed.');
     } finally {
