@@ -13,8 +13,11 @@ import {
   CODEX_IMAGEGEN_DENOISE_INSTRUCTION,
   CODEX_IMAGEGEN_SESSION_CONTRACT,
 } from '../codex/imagegenContract';
-import type { CodexTurn } from '../codex/turn';
+import type { CodexTurn, TurnResult } from '../codex/turn';
 import type { GenerationProvider, GenerationProviderJob } from './types';
+import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
+import { isCodexHttpCredentialReady } from '../auth/tokens';
+import { isAbortError, isSubscriptionHttpFallbackAllowed } from './subscriptionHttpError';
 
 export { CODEX_IMAGEGEN_DENOISE_INSTRUCTION } from '../codex/imagegenContract';
 
@@ -160,20 +163,39 @@ function buildCodexPromptText(sourceSpec: GenerationTaskSpec) {
 
 export interface CreateCodexGenerationProviderDependencies {
   turn: CodexTurn;
+  runHttp?: (job: GenerationProviderJob) => Promise<TurnResult>;
+  isHttpReady?: () => boolean;
+  canUseCli?: () => boolean;
 }
 
 export function createCodexGenerationProvider({
   turn,
+  runHttp,
+  isHttpReady = () => isCodexHttpCredentialReady(),
+  canUseCli = () => readCodexRuntimeDoctor().canRunJobs,
 }: CreateCodexGenerationProviderDependencies): GenerationProvider {
   return {
     id: 'codex',
-    run(job) {
+    async run(job) {
+      const compiledInput = compileCodexImagegenInput(job);
+      if (isHttpReady()) {
+        try {
+          const http =
+            runHttp ??
+            (await import('./codexResponsesImageExecutor')).createCodexResponsesImageExecutor();
+          return await http(job);
+        } catch (error) {
+          if (isAbortError(error) || !isSubscriptionHttpFallbackAllowed(error) || !canUseCli()) {
+            throw error;
+          }
+        }
+      }
       return turn.runTurn({
         jobId: job.id,
         prompt: job.prompt,
         execution: job.execution,
         signal: job.signal,
-        compiledInput: compileCodexImagegenInput(job),
+        compiledInput,
       });
     },
   };

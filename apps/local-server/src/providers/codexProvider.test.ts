@@ -10,6 +10,7 @@ import {
   createCodexGenerationProvider,
 } from './codexProvider';
 import type { CodexTurn, TurnParams, TurnResult } from '../codex/turn';
+import { SubscriptionHttpError } from './subscriptionHttpError';
 
 function createTurnResult(overrides: Partial<TurnResult> = {}): TurnResult {
   return {
@@ -22,7 +23,7 @@ function createTurnResult(overrides: Partial<TurnResult> = {}): TurnResult {
   };
 }
 
-describe('codexProvider', () => {
+describe('codex generation provider', () => {
   it('compiles a compact Codex provider input from the job delta', () => {
     const compiled = compileCodexImagegenInput({
       id: 'job-1',
@@ -317,7 +318,7 @@ describe('codexProvider', () => {
         });
       },
     };
-    const provider = createCodexGenerationProvider({ turn });
+    const provider = createCodexGenerationProvider({ turn, isHttpReady: () => false });
 
     const result = await provider.run({
       id: 'job-2',
@@ -333,5 +334,36 @@ describe('codexProvider', () => {
       prompt: 'Prompt:\nsmall brass key',
     });
     expect(calls[0].compiledInput?.payload.text).toContain('Task: image_generate');
+  });
+
+  it('uses HTTP when signed in and falls back to app-server on empty_response', async () => {
+    const calls: string[] = [];
+    const turn: CodexTurn = {
+      async runTurn() {
+        calls.push('cli');
+        return createTurnResult({
+          assets: [{ type: 'file', sourcePath: 'out.png', mimeType: 'image/png' }],
+        });
+      },
+    };
+    const provider = createCodexGenerationProvider({
+      turn,
+      isHttpReady: () => true,
+      canUseCli: () => true,
+      runHttp: async () => {
+        calls.push('http');
+        throw new SubscriptionHttpError('no image', {
+          code: 'empty_response',
+          fallbackAllowed: true,
+        });
+      },
+    });
+    await provider.run({
+      id: 'job-fallback',
+      workspaceId: 'workspace-1',
+      prompt: 'Prompt:\nkey',
+      execution: null,
+    });
+    expect(calls).toEqual(['http', 'cli']);
   });
 });
