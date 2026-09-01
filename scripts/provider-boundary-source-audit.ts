@@ -15,10 +15,16 @@ const forbiddenMarkers = [
   'createFalImageExecutor',
   'createComfyWorkflowExecutor',
   'createGrokImagineExecutor',
+  'createGrokImagineHttpExecutor',
+  'createGrokRuntimeExecutor',
+  'createCodexResponsesImageExecutor',
   'googleExecutor',
   'falExecutor',
   'comfyExecutor',
   'grokImagineExecutor',
+  'grokImagineHttpExecutor',
+  'grokRuntimeExecutor',
+  'codexResponsesImageExecutor',
 ] as const;
 
 export interface ProviderBoundarySourceAuditUsage {

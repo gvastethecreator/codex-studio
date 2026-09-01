@@ -19,8 +19,9 @@ const PROVIDER_CAPABILITIES: ProviderCapabilityDefinition[] = [
     requiresSecret: false,
     requiresLocalRuntime: true,
     activeDetail: 'Codex Product Runtime adapter is available.',
+    subscriptionReadyDetail: 'ChatGPT Sign in is ready. Codex Product Runtime stays as fallback.',
     plannedDetail: 'Codex adapter is available.',
-    missingDetail: 'Codex Product Runtime is blocked by local runtime preflight.',
+    missingDetail: 'Sign in with ChatGPT in Studio Settings, or start Codex Product Runtime.',
   },
   {
     providerId: 'grok',
@@ -30,8 +31,9 @@ const PROVIDER_CAPABILITIES: ProviderCapabilityDefinition[] = [
     requiresSecret: false,
     requiresLocalRuntime: true,
     activeDetail: 'Grok Imagine is available through the authenticated local Grok Build CLI.',
+    subscriptionReadyDetail: 'xAI Sign in is ready. Grok Build CLI stays as fallback.',
     plannedDetail: 'Grok Imagine adapter is available.',
-    missingDetail: 'Install Grok Build and run `grok login` before enabling this adapter.',
+    missingDetail: 'Sign in with xAI in Studio Settings, set XAI_API_KEY, or install Grok Build.',
   },
   {
     providerId: 'google',
@@ -93,15 +95,19 @@ export function readProviderCapabilities(
   env: Record<string, string | undefined> = process.env,
   codexRuntime?: Pick<CodexRuntimeDoctorReport, 'canRunJobs'>,
   grokRuntime?: GrokRuntimeDoctorReport,
+  subscriptionReady?: { codexHttpReady?: boolean; grokHttpReady?: boolean },
 ): GenerationProviderCapabilitiesResponse {
-  const readiness = createProviderReadinessMaps(env, grokRuntime);
-  readiness.localRuntimeConfigured.codex = codexRuntime?.canRunJobs ?? true;
+  const readiness = createProviderReadinessMaps(env, grokRuntime, subscriptionReady);
+  readiness.localRuntimeConfigured.codex =
+    (codexRuntime?.canRunJobs ?? true) || Boolean(readiness.subscriptionAuthConfigured.codex);
 
   return createGenerationProviderCapabilities({
     settings,
     providers: PROVIDER_CAPABILITIES,
     secretConfigured: readiness.secretConfigured,
     localRuntimeConfigured: readiness.localRuntimeConfigured,
+    subscriptionAuthConfigured: readiness.subscriptionAuthConfigured,
+    subscriptionAuthState: readiness.subscriptionAuthState,
   });
 }
 

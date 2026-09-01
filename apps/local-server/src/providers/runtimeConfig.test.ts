@@ -99,6 +99,7 @@ describe('provider runtime config', () => {
         COMFYUI_API_URL: 'ftp://127.0.0.1:8188',
       },
       READY_GROK_RUNTIME,
+      { grokHttpReady: false, codexHttpReady: false },
     );
 
     expect(readiness.secretConfigured).toMatchObject({
@@ -115,26 +116,29 @@ describe('provider runtime config', () => {
   });
 
   it('maps Codex Runtime Doctor blockers into provider preflight diagnostics', () => {
-    const preflight = createCodexRuntimePreflight({
-      status: 'blocked',
-      canRunJobs: false,
-      checkedAt: '2026-05-31T00:00:00.000Z',
-      selectedExecutable: 'C:/Users/dev/AppData/Roaming/npm/codex.cmd',
-      selectedCommand: 'codex --version',
-      selectedVersion: 'codex 0.2.3',
-      selectedVersionNumber: '0.2.3',
-      appServerSupported: false,
-      recommendedAction: 'Use the OpenAI Codex desktop CLI binary.',
-      issues: [
-        {
-          code: 'codex_cli_legacy',
-          severity: 'error',
-          message: 'Selected Codex CLI looks legacy.',
-          action: 'Use the OpenAI Codex desktop CLI binary.',
-        },
-      ],
-      candidates: [],
-    });
+    const preflight = createCodexRuntimePreflight(
+      {
+        status: 'blocked',
+        canRunJobs: false,
+        checkedAt: '2026-05-31T00:00:00.000Z',
+        selectedExecutable: 'C:/Users/dev/AppData/Roaming/npm/codex.cmd',
+        selectedCommand: 'codex --version',
+        selectedVersion: 'codex 0.2.3',
+        selectedVersionNumber: '0.2.3',
+        appServerSupported: false,
+        recommendedAction: 'Use the OpenAI Codex desktop CLI binary.',
+        issues: [
+          {
+            code: 'codex_cli_legacy',
+            severity: 'error',
+            message: 'Selected Codex CLI looks legacy.',
+            action: 'Use the OpenAI Codex desktop CLI binary.',
+          },
+        ],
+        candidates: [],
+      },
+      { httpReady: false },
+    );
 
     expect(preflight).toMatchObject({
       providerId: 'codex',
@@ -146,12 +150,25 @@ describe('provider runtime config', () => {
   });
 
   it('maps the local Grok Build login into non-secret provider readiness', () => {
-    const preflight = createGrokRuntimePreflight(READY_GROK_RUNTIME);
+    const preflight = createGrokRuntimePreflight(READY_GROK_RUNTIME, { env: {}, httpReady: false });
     expect(preflight).toMatchObject({
       providerId: 'grok',
       runtimeKind: 'agent_cli',
       secretState: 'not_required',
       localRuntimeState: 'configured',
+      canAttemptExecution: true,
+    });
+    expect(JSON.stringify(preflight)).not.toContain('auth');
+  });
+
+  it('lets Grok attempt execution from Studio Sign in when the CLI is missing', () => {
+    const preflight = createGrokRuntimePreflight(
+      { ...READY_GROK_RUNTIME, canRunJobs: false, status: 'blocked' },
+      { env: {}, httpReady: true },
+    );
+    expect(preflight).toMatchObject({
+      providerId: 'grok',
+      runtimeKind: 'subscription_http',
       canAttemptExecution: true,
     });
     expect(JSON.stringify(preflight)).not.toContain('auth');

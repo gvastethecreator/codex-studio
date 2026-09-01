@@ -68,6 +68,7 @@ import {
 import { createOutputSourceRoutes } from './outputSourceRoutes';
 import { createProviderRoutes } from './providerRoutes';
 import { createSettingsRoutes } from './settingsRoutes';
+import { createSubscriptionAuthRoutes } from './auth/authRoutes';
 import { createCodexRoutes } from './codexRoutes';
 import { createLibrariesRoutes, type LibrariesRoutesDependencies } from './librariesRoutes';
 
@@ -233,6 +234,8 @@ export async function createStudioApp(
       readGrokOnboardingFacts: () => grokOnboardingFactsFromDoctor(readGrokRuntimeDoctorFn()),
     }),
   );
+
+  app.route('/api/auth', createSubscriptionAuthRoutes());
 
   app.route(
     '/api/settings',

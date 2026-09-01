@@ -4,9 +4,16 @@ import type {
   GenerationProviderRuntimePreflight,
   ProviderRuntimeKind,
   ProviderSecretState,
+  ProviderSubscriptionAuthState,
 } from '../../../../packages/shared/src';
+import {
+  DEFAULT_GROK_IMAGINE_HTTP_MODEL,
+  GROK_IMAGINE_HTTP_MODELS,
+} from '../../../../packages/shared/src/grokImagineContract';
 import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
 import { readGrokRuntimeDoctor, type GrokRuntimeDoctorReport } from '../grokRuntimeDoctor';
+import { isCodexHttpCredentialReady, isGrokHttpCredentialReady } from '../auth/tokens';
+import { getSubscriptionAuthStore } from '../auth/store';
 
 export type ExternalExecutableProviderId = 'grok' | 'google' | 'fal' | 'comfy';
 
@@ -142,42 +149,82 @@ export function readExternalProviderRuntimePreflights(
 
 export function createCodexRuntimePreflight(
   codexRuntime: CodexRuntimeDoctorReport,
+  options: { httpReady?: boolean } = {},
 ): GenerationProviderRuntimePreflight {
   const unavailable = codexRuntime.issues.some((issue) => issue.code === 'codex_cli_unavailable');
+  const httpReady = options.httpReady ?? safeCodexHttpReady();
+  const cliReady = codexRuntime.canRunJobs;
+  const diagnostics: string[] = [];
+  if (httpReady)
+    diagnostics.push('Studio Sign in is ready. Codex Product Runtime stays as fallback.');
+  if (codexRuntime.issues.length > 0) {
+    diagnostics.push(...codexRuntime.issues.map((issue) => `${issue.message} ${issue.action}`));
+  } else if (!httpReady) {
+    diagnostics.push(codexRuntime.recommendedAction);
+  }
   return {
     providerId: 'codex',
-    runtimeKind: 'codex_app_server',
+    runtimeKind: httpReady ? 'subscription_http' : 'codex_app_server',
     secretState: 'not_required',
     secretSource: null,
-    localRuntimeState: codexRuntime.canRunJobs ? 'configured' : unavailable ? 'missing' : 'invalid',
+    localRuntimeState: cliReady ? 'configured' : unavailable ? 'missing' : 'invalid',
     localRuntimeSource: codexRuntime.selectedExecutable,
-    canAttemptExecution: codexRuntime.canRunJobs,
-    diagnostics:
-      codexRuntime.issues.length > 0
-        ? codexRuntime.issues.map((issue) => `${issue.message} ${issue.action}`)
-        : [codexRuntime.recommendedAction],
+    canAttemptExecution: httpReady || cliReady,
+    diagnostics,
   };
 }
 
 export function createGrokRuntimePreflight(
   grokRuntime: GrokRuntimeDoctorReport,
+  options: { env?: Record<string, string | undefined>; httpReady?: boolean } = {},
 ): ProviderRuntimePreflight {
+  const env = options.env ?? process.env;
   const unavailable = grokRuntime.issues.some((issue) => issue.code === 'grok_cli_unavailable');
+  const httpReady = options.httpReady ?? safeGrokHttpReady(env);
+  const cliReady = grokRuntime.canRunJobs;
+  const diagnostics: string[] = [];
+  if (httpReady) diagnostics.push('Studio Sign in is ready. Grok Build CLI stays as fallback.');
+  if (grokRuntime.issues.length > 0) {
+    diagnostics.push(...grokRuntime.issues.map((issue) => `${issue.message} ${issue.action}`));
+  } else if (!httpReady) {
+    diagnostics.push(grokRuntime.recommendedAction);
+  }
+  const availableModels = uniqueStrings([
+    ...(httpReady ? GROK_IMAGINE_HTTP_MODELS : []),
+    ...grokRuntime.availableModels,
+  ]);
   return {
     providerId: 'grok',
-    runtimeKind: 'agent_cli',
+    runtimeKind: httpReady ? 'subscription_http' : 'agent_cli',
     secretState: 'not_required',
     secretSource: null,
-    localRuntimeState: grokRuntime.canRunJobs ? 'configured' : unavailable ? 'missing' : 'invalid',
+    localRuntimeState: cliReady ? 'configured' : unavailable ? 'missing' : 'invalid',
     localRuntimeSource: grokRuntime.selectedExecutable,
-    canAttemptExecution: grokRuntime.canRunJobs,
-    diagnostics:
-      grokRuntime.issues.length > 0
-        ? grokRuntime.issues.map((issue) => `${issue.message} ${issue.action}`)
-        : [grokRuntime.recommendedAction],
-    availableModels: grokRuntime.availableModels,
-    defaultModel: grokRuntime.defaultModel,
+    canAttemptExecution: httpReady || cliReady,
+    diagnostics,
+    availableModels,
+    defaultModel: httpReady ? DEFAULT_GROK_IMAGINE_HTTP_MODEL : grokRuntime.defaultModel,
   };
+}
+
+function uniqueStrings(values: readonly string[]) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function safeCodexHttpReady() {
+  try {
+    return isCodexHttpCredentialReady();
+  } catch {
+    return false;
+  }
+}
+
+function safeGrokHttpReady(env: Record<string, string | undefined>) {
+  try {
+    return isGrokHttpCredentialReady(undefined, env);
+  } catch {
+    return Boolean(env.XAI_API_KEY?.trim());
+  }
 }
 
 export function readGenerationProviderRuntimePreflights(
@@ -187,7 +234,7 @@ export function readGenerationProviderRuntimePreflights(
 ) {
   return [
     createCodexRuntimePreflight(codexRuntime),
-    createGrokRuntimePreflight(grokRuntime),
+    createGrokRuntimePreflight(grokRuntime, { env }),
     ...readExternalProviderRuntimePreflights(env),
   ];
 }
@@ -198,7 +245,7 @@ export function getExternalProviderRuntimePreflight(
   grokRuntime?: GrokRuntimeDoctorReport,
 ) {
   if (providerId === 'grok') {
-    return createGrokRuntimePreflight(grokRuntime ?? readGrokRuntimeDoctor());
+    return createGrokRuntimePreflight(grokRuntime ?? readGrokRuntimeDoctor(), { env });
   }
   return (
     readExternalProviderRuntimePreflights(env).find(
@@ -210,9 +257,19 @@ export function getExternalProviderRuntimePreflight(
 export function createProviderReadinessMaps(
   env: Record<string, string | undefined> = process.env,
   grokRuntime: GrokRuntimeDoctorReport = readGrokRuntimeDoctor(),
+  options: { codexHttpReady?: boolean; grokHttpReady?: boolean } = {},
 ) {
   const secretConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
   const localRuntimeConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
+  const subscriptionAuthConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
+  const subscriptionAuthState: Partial<
+    Record<GenerationProviderId, ProviderSubscriptionAuthState>
+  > = {
+    google: 'not_applicable',
+    fal: 'not_applicable',
+    comfy: 'not_applicable',
+    dry_run: 'not_applicable',
+  };
 
   for (const preflight of readExternalProviderRuntimePreflights(env)) {
     secretConfigured[preflight.providerId] = preflight.secretState !== 'missing';
@@ -220,9 +277,30 @@ export function createProviderReadinessMaps(
       preflight.localRuntimeState === 'not_required' || preflight.canAttemptExecution;
   }
 
-  const grokPreflight = createGrokRuntimePreflight(grokRuntime);
+  const grokHttpReady = options.grokHttpReady ?? safeGrokHttpReady(env);
+  const grokPreflight = createGrokRuntimePreflight(grokRuntime, { env, httpReady: grokHttpReady });
   secretConfigured.grok = true;
   localRuntimeConfigured.grok = grokPreflight.canAttemptExecution;
+  subscriptionAuthConfigured.grok = grokHttpReady;
+  subscriptionAuthState.grok = readStoredSubscriptionState('xai');
+  const codexHttpReady = options.codexHttpReady ?? safeCodexHttpReady();
+  subscriptionAuthConfigured.codex = codexHttpReady;
+  subscriptionAuthState.codex = readStoredSubscriptionState('codex');
 
-  return { secretConfigured, localRuntimeConfigured };
+  return {
+    secretConfigured,
+    localRuntimeConfigured,
+    subscriptionAuthConfigured,
+    subscriptionAuthState,
+  };
+}
+
+function readStoredSubscriptionState(providerId: 'codex' | 'xai') {
+  try {
+    const record = getSubscriptionAuthStore().readProvider(providerId);
+    if (record.status === 'logged_in' && !record.accessToken) return 'logged_out' as const;
+    return record.status;
+  } catch {
+    return 'logged_out' as const;
+  }
 }

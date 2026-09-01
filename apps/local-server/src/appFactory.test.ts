@@ -618,6 +618,12 @@ describe('createStudioApp', () => {
 
     expect((await studio.app.request('/api/providers')).status).toBe(200);
     expect((await studio.app.request('/api/providers/preflight')).status).toBe(200);
+    const auth = await studio.app.request('/api/auth/codex');
+    expect(auth.status).toBe(200);
+    const authBody = await auth.json();
+    expect(JSON.stringify(authBody)).not.toMatch(
+      /accessToken|refreshToken|access_token|refresh_token/,
+    );
     expect(readCodexRuntimeDoctor).toHaveBeenCalledTimes(probeCountAfterStartup);
     await studio.shutdown();
   });

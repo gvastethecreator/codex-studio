@@ -112,6 +112,7 @@ describe('providerCapabilities', () => {
       {},
       { canRunJobs: false },
       READY_GROK_RUNTIME,
+      { codexHttpReady: false, grokHttpReady: false },
     );
 
     expect(report.providers).toEqual(
@@ -131,23 +132,53 @@ describe('providerCapabilities', () => {
     );
   });
 
-  it('enables Grok only from local CLI readiness and never from a Provider Secret', () => {
+  it('enables Grok from local CLI readiness without a Provider Secret', () => {
     const ready = readProviderCapabilities(
       { defaultProviderId: 'grok' },
       {},
       undefined,
       READY_GROK_RUNTIME,
+      { grokHttpReady: false, codexHttpReady: false },
     );
     expect(ready.providers).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
           providerId: 'grok',
-          runtimeKind: 'agent_cli',
           isDefault: true,
           secretState: 'not_required',
           canExecute: true,
         }),
       ]),
     );
+  });
+
+  it('enables Grok from XAI_API_KEY when the local CLI is missing', () => {
+    const report = readProviderCapabilities(
+      { defaultProviderId: 'grok' },
+      { XAI_API_KEY: 'xai-secret' },
+      { canRunJobs: false },
+      {
+        ...READY_GROK_RUNTIME,
+        canRunJobs: false,
+        status: 'blocked',
+        issues: [
+          {
+            code: 'grok_cli_unavailable',
+            message: 'Grok Build is missing.',
+            action: 'Install Grok Build.',
+          },
+        ],
+      },
+    );
+    expect(report.providers).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          providerId: 'grok',
+          runtimeKind: 'subscription_http',
+          canExecute: true,
+        }),
+      ]),
+    );
+    expect(JSON.stringify(report)).not.toContain('xai-secret');
   });
 });

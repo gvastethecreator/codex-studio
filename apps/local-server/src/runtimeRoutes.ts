@@ -19,6 +19,8 @@ import {
   setupResultWithProbe,
 } from './onboardingSetup';
 import { applyOnboardingHostAction, OnboardingHostActionError } from './hostTerminal';
+import { getSubscriptionAuthStore, isSubscriptionLoggedIn } from './auth/store';
+import { readXaiApiKey } from './auth/tokens';
 import {
   publishOnboardingActionFinished,
   publishOnboardingLog,
@@ -42,6 +44,7 @@ interface RuntimeRoutesDependencies {
   applyOnboardingSetupFn?: typeof applyOnboardingSetup;
   applyOnboardingHostActionFn?: typeof applyOnboardingHostAction;
   readGrokOnboardingFacts?: () => { grokCliAvailable: boolean; grokLoggedIn: boolean };
+  readSubscriptionFacts?: () => { codexSignedIn: boolean; grokSignedIn: boolean };
 }
 
 export function createCheckingRuntimeReport(): CodexRuntimeDoctorReport {
@@ -83,6 +86,28 @@ const forceableReadinessReasons: readonly StudioReadinessRefreshReason[] = [
   'app_server_change',
 ];
 
+function readSubscriptionOnboardingFacts() {
+  try {
+    const store = getSubscriptionAuthStore();
+    return {
+      codexSignedIn: isSubscriptionLoggedIn(store.readProvider('codex')),
+      grokSignedIn: isSubscriptionLoggedIn(store.readProvider('xai')) || Boolean(readXaiApiKey()),
+    };
+  } catch {
+    return { codexSignedIn: false, grokSignedIn: false };
+  }
+}
+
+function mergeGrokOnboardingFacts(
+  grok: { grokCliAvailable: boolean; grokLoggedIn: boolean },
+  grokSignedIn: boolean,
+) {
+  return {
+    grokCliAvailable: grok.grokCliAvailable,
+    grokLoggedIn: grok.grokLoggedIn || grokSignedIn,
+  };
+}
+
 /**
  * Keep the local readiness endpoint passive by default. A forced Runtime
  * Doctor probe must be an explicit, named action from the caller.
@@ -118,6 +143,7 @@ export function createRuntimeRoutes({
   applyOnboardingSetupFn = applyOnboardingSetup,
   applyOnboardingHostActionFn = applyOnboardingHostAction,
   readGrokOnboardingFacts = () => ({ grokCliAvailable: false, grokLoggedIn: false }),
+  readSubscriptionFacts = readSubscriptionOnboardingFacts,
 }: RuntimeRoutesDependencies) {
   const routes = new Hono();
 
@@ -139,6 +165,11 @@ export function createRuntimeRoutes({
     const libraryReady = library.exists && library.writable && library.missingFolders.length === 0;
     const appServerRunning = isAppServerRunning();
     const localCodexSession = readinessSnapshot?.localCodexSession ?? null;
+    const subscription = readSubscriptionFacts();
+    const cliReady =
+      fullCodexRuntime.canRunJobs &&
+      appServerRunning &&
+      localCodexSession?.canRunLocalJobs === true;
 
     return {
       ok: true,
@@ -183,12 +214,8 @@ export function createRuntimeRoutes({
       },
       checks: {
         libraryReady,
-        codexReady: codexRuntime.canRunJobs,
-        onboardingReady:
-          libraryReady &&
-          codexRuntime.canRunJobs &&
-          appServerRunning &&
-          localCodexSession?.canRunLocalJobs === true,
+        codexReady: fullCodexRuntime.canRunJobs || subscription.codexSignedIn,
+        onboardingReady: libraryReady && (cliReady || subscription.codexSignedIn),
       },
       worker: readWorkerStatus(),
     };
@@ -196,16 +223,21 @@ export function createRuntimeRoutes({
 
   const buildOnboardingResponse = (health: ReturnType<typeof buildHealthResponse>) => {
     const session = readiness?.readSnapshot()?.localCodexSession ?? null;
+    const subscription = readSubscriptionFacts();
     return buildOnboardingProbe(
       onboardingFactsFromHealth({
         bunVersion: health.runtime.bunVersion,
         codexCliAvailable: health.codexCli.available,
-        chatgptLoggedIn: session?.isChatgptLogin === true || session?.canRunLocalJobs === true,
+        chatgptLoggedIn:
+          subscription.codexSignedIn ||
+          session?.isChatgptLogin === true ||
+          session?.canRunLocalJobs === true,
+        codexSubscriptionReady: subscription.codexSignedIn,
         studioLibraryReady: health.checks.libraryReady,
         studioLibraryPath: health.libraryDir,
         bootstrapConfigReady: health.runtime.envLocalPresent,
         appServerReady: health.appServer.running,
-        ...readGrokOnboardingFacts(),
+        ...mergeGrokOnboardingFacts(readGrokOnboardingFacts(), subscription.grokSignedIn),
       }),
     );
   };

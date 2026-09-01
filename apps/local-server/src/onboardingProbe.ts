@@ -8,6 +8,8 @@ import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import { grokOnboardingFactsFromDoctor, readGrokRuntimeDoctor } from './grokRuntimeDoctor';
 import { inspectLibrary } from './library';
 import { isAppServerRunning } from './codex/processSupervisor';
+import { getSubscriptionAuthStore, isSubscriptionLoggedIn } from './auth/store';
+import { readXaiApiKey } from './auth/tokens';
 
 export function readLocalOnboardingProbe(): OnboardingProbe {
   const bunVersion =
@@ -21,17 +23,28 @@ export function readLocalOnboardingProbe(): OnboardingProbe {
     library.exists && library.writable && library.missingFolders.length === 0;
 
   const grok = grokOnboardingFactsFromDoctor(readGrokRuntimeDoctor());
+  let codexSignedIn = false;
+  let grokSignedIn = false;
+  try {
+    const store = getSubscriptionAuthStore();
+    codexSignedIn = isSubscriptionLoggedIn(store.readProvider('codex'));
+    grokSignedIn = isSubscriptionLoggedIn(store.readProvider('xai')) || Boolean(readXaiApiKey());
+  } catch {
+    // Store may be unavailable before the Studio Library exists.
+  }
 
   return buildOnboardingProbe(
     onboardingFactsFromHealth({
       bunVersion,
       codexCliAvailable: doctor.selectedVersion !== null,
-      chatgptLoggedIn: false,
+      chatgptLoggedIn: codexSignedIn,
+      codexSubscriptionReady: codexSignedIn,
       studioLibraryReady,
       studioLibraryPath: settings.libraryDir,
       bootstrapConfigReady: hasEnvLocalFile(),
       appServerReady: isAppServerRunning(),
-      ...grok,
+      grokCliAvailable: grok.grokCliAvailable,
+      grokLoggedIn: grok.grokLoggedIn || grokSignedIn,
     }),
   );
 }

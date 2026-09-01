@@ -74,6 +74,7 @@ function createReadiness(
 
 function createRoutes(overrides: Partial<Parameters<typeof createRuntimeRoutes>[0]> = {}) {
   return createRuntimeRoutes({
+    readSubscriptionFacts: () => ({ codexSignedIn: false, grokSignedIn: false }),
     readSettings: () => ({
       libraryDir: 'D:/library',
       serverPort: 17223,
@@ -145,6 +146,7 @@ describe('runtimeRoutes', () => {
   it('returns health snapshot and bootstrap config', async () => {
     const ensureAppServer = vi.fn();
     const routes = createRuntimeRoutes({
+      readSubscriptionFacts: () => ({ codexSignedIn: false, grokSignedIn: false }),
       readSettings: () => ({
         libraryDir: 'D:/library',
         serverPort: 17223,
@@ -218,6 +220,7 @@ describe('runtimeRoutes', () => {
   it('starts app-server and returns diagnostics', async () => {
     const ensureAppServer = vi.fn();
     const routes = createRuntimeRoutes({
+      readSubscriptionFacts: () => ({ codexSignedIn: false, grokSignedIn: false }),
       readSettings: () => ({
         libraryDir: 'D:/library',
         serverPort: 17223,
@@ -273,6 +276,7 @@ describe('runtimeRoutes', () => {
   it('does not start app-server when Runtime Doctor blocks Codex execution', async () => {
     const ensureAppServer = vi.fn();
     const routes = createRuntimeRoutes({
+      readSubscriptionFacts: () => ({ codexSignedIn: false, grokSignedIn: false }),
       readSettings: () => ({
         libraryDir: 'D:/library',
         serverPort: 17223,
@@ -331,6 +335,7 @@ describe('runtimeRoutes', () => {
 
   it('keeps onboarding blocked when the local Codex session cannot run jobs', async () => {
     const routes = createRuntimeRoutes({
+      readSubscriptionFacts: () => ({ codexSignedIn: false, grokSignedIn: false }),
       readSettings: () => ({
         libraryDir: 'D:/library',
         serverPort: 17223,
@@ -376,6 +381,30 @@ describe('runtimeRoutes', () => {
     expect(payload.checks.onboardingReady).toBe(false);
   });
 
+  it('treats Studio ChatGPT Sign in as onboarding-ready without app-server', async () => {
+    vi.stubGlobal('Bun', { ...(globalThis as { Bun?: object }).Bun, version: '1.3.14' });
+    try {
+      const routes = createRoutes({
+        isAppServerRunning: () => false,
+        readiness: createReadiness(false),
+        readSubscriptionFacts: () => ({ codexSignedIn: true, grokSignedIn: false }),
+      });
+
+      const health = (await (await routes.request('/health')).json()) as {
+        checks: { onboardingReady: boolean; codexReady: boolean };
+      };
+      expect(health.checks.onboardingReady).toBe(true);
+      expect(health.checks.codexReady).toBe(true);
+
+      const probe = (await (await routes.request('/onboarding/probe')).json()) as OnboardingProbe;
+      expect(probe.facts.chatgptLoggedIn).toBe(true);
+      expect(probe.facts.codexSubscriptionReady).toBe(true);
+      expect(probe.primaryCta).toBe('ready');
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
+
   it('defaults readiness refreshes to passive and only honors explicit force requests', async () => {
     expect(normalizeReadinessRefreshRequest(undefined)).toEqual({
       reason: 'passive',
@@ -392,6 +421,7 @@ describe('runtimeRoutes', () => {
 
     const readiness = createReadiness(true);
     const routes = createRuntimeRoutes({
+      readSubscriptionFacts: () => ({ codexSignedIn: false, grokSignedIn: false }),
       readSettings: () => ({
         libraryDir: 'D:/library',
         serverPort: 17223,
@@ -450,6 +480,7 @@ describe('runtimeRoutes', () => {
   it('returns an onboarding probe from cached readiness without a doctor call', async () => {
     const readCodexRuntimeDoctor = vi.fn(() => createCodexRuntimeReport());
     const routes = createRuntimeRoutes({
+      readSubscriptionFacts: () => ({ codexSignedIn: false, grokSignedIn: false }),
       readSettings: () => ({
         libraryDir: 'D:/Codex Studio',
         serverPort: 17223,
