@@ -20,7 +20,9 @@ export function readChatgptAccountId(accessToken: string): string | null {
   const auth = claims?.['https://api.openai.com/auth'];
   if (!auth || typeof auth !== 'object') return null;
   const accountId = (auth as Record<string, unknown>).chatgpt_account_id;
-  return typeof accountId === 'string' && accountId.trim() ? accountId.trim() : null;
+  if (typeof accountId !== 'string') return null;
+  const trimmed = accountId.trim();
+  return /^[A-Za-z0-9._:-]{1,128}$/.test(trimmed) ? trimmed : null;
 }
 
 export function readJwtAccountLabel(token: string | null | undefined): string | null {
@@ -29,7 +31,14 @@ export function readJwtAccountLabel(token: string | null | undefined): string | 
   if (!claims) return null;
   for (const key of ['email', 'preferred_username', 'name', 'sub']) {
     const value = claims[key];
-    if (typeof value === 'string' && value.trim()) return value.trim();
+    if (typeof value === 'string' && value.trim()) {
+      const sanitized = value
+        .replace(/[\u0000-\u001f\u007f]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 200);
+      if (sanitized) return sanitized;
+    }
   }
   return null;
 }
@@ -38,5 +47,7 @@ export function readJwtExpiryMs(token: string | null | undefined): number | null
   if (!token) return null;
   const claims = decodeJwtPayload(token);
   const exp = claims?.exp;
-  return typeof exp === 'number' && Number.isFinite(exp) ? exp * 1000 : null;
+  if (typeof exp !== 'number' || !Number.isFinite(exp)) return null;
+  const expiryMs = exp * 1000;
+  return expiryMs > 0 && Number.isFinite(expiryMs) && expiryMs <= 8.64e15 ? expiryMs : null;
 }

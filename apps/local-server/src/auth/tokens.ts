@@ -7,9 +7,12 @@ import {
   XAI_ACCESS_TOKEN_REFRESH_SKEW_MS,
   XAI_OAUTH_CLIENT_ID,
   XAI_OAUTH_TOKEN_URL,
+  studioPackageVersion,
   studioUserAgent,
 } from './constants';
 import { readChatgptAccountId, readJwtAccountLabel, readJwtExpiryMs } from './jwt';
+import { readOAuthJson, safeOAuthText } from './oauthHttp';
+import { revokeSubscriptionToken } from './revoke';
 import {
   type StoredSubscriptionTokens,
   type SubscriptionAuthStore,
@@ -24,6 +27,7 @@ export interface TokenRefreshDependencies {
   fetch?: AuthFetch;
   now?: () => number;
   env?: Record<string, string | undefined>;
+  revokeToken?: typeof revokeSubscriptionToken;
 }
 
 function formBody(fields: Record<string, string>) {
@@ -38,7 +42,10 @@ function expiryIso(accessToken: string, expiresIn: unknown, nowMs: number) {
         ? Number(expiresIn)
         : Number.NaN;
   if (Number.isFinite(seconds) && seconds > 0) {
-    return new Date(nowMs + seconds * 1000).toISOString();
+    const expiryMs = nowMs + seconds * 1000;
+    if (Number.isFinite(expiryMs) && Math.abs(expiryMs) <= 8.64e15) {
+      return new Date(expiryMs).toISOString();
+    }
   }
   const jwtExpiry = readJwtExpiryMs(accessToken);
   return jwtExpiry ? new Date(jwtExpiry).toISOString() : null;
@@ -47,43 +54,62 @@ function expiryIso(accessToken: string, expiresIn: unknown, nowMs: number) {
 function isExpired(record: StoredSubscriptionTokens, nowMs: number, skewMs: number) {
   if (!record.expiresAt) {
     const jwtExpiry = readJwtExpiryMs(record.accessToken);
-    if (!jwtExpiry) return false;
-    return jwtExpiry - skewMs <= nowMs;
+    if (jwtExpiry) return jwtExpiry - skewMs <= nowMs;
+    const updatedAt = Date.parse(record.updatedAt);
+    return !Number.isFinite(updatedAt) || updatedAt + 30 * 24 * 60 * 60_000 - skewMs <= nowMs;
   }
   const expiresAt = Date.parse(record.expiresAt);
   if (!Number.isFinite(expiresAt)) return true;
   return expiresAt - skewMs <= nowMs;
 }
 
-async function parseJson(response: Response) {
-  try {
-    return (await response.json()) as Record<string, unknown>;
-  } catch {
-    return {};
-  }
-}
-
 function oauthErrorCode(payload: Record<string, unknown>) {
   const error = payload.error;
-  if (typeof error === 'string' && error.trim()) return error.trim();
+  const directCode = safeOAuthText(error, 80);
+  if (directCode) return directCode;
   if (error && typeof error === 'object') {
     const nested = error as Record<string, unknown>;
     const code = nested.code ?? nested.type;
-    if (typeof code === 'string' && code.trim()) return code.trim();
+    const nestedCode = safeOAuthText(code, 80);
+    if (nestedCode) return nestedCode;
   }
   return null;
 }
 
 function oauthErrorMessage(payload: Record<string, unknown>, fallback: string) {
   const description = payload.error_description;
-  if (typeof description === 'string' && description.trim()) return description.trim();
+  const safeDescription = safeOAuthText(description);
+  if (safeDescription) return safeDescription;
   const error = payload.error;
   if (error && typeof error === 'object') {
     const message = (error as Record<string, unknown>).message;
-    if (typeof message === 'string' && message.trim()) return message.trim();
+    const safeMessage = safeOAuthText(message);
+    if (safeMessage) return safeMessage;
   }
-  if (typeof error === 'string' && error.trim()) return error.trim();
+  const safeError = safeOAuthText(error);
+  if (safeError) return safeError;
   return fallback;
+}
+
+function asOAuthToken(value: unknown) {
+  if (typeof value !== 'string') return '';
+  const token = value.trim();
+  return token && token.length <= 64 * 1024 && !/[\s\u0000-\u001f\u007f]/.test(token) ? token : '';
+}
+
+async function readRefreshPayload(response: Response, providerLabel: string) {
+  try {
+    return await readOAuthJson(response);
+  } catch {
+    throw new SubscriptionHttpError(
+      `${providerLabel} token refresh returned an invalid response.`,
+      {
+        code: 'refresh_failed',
+        fallbackAllowed: true,
+        httpStatus: response.status,
+      },
+    );
+  }
 }
 
 export function tokensFromOAuthPayload(
@@ -91,18 +117,35 @@ export function tokensFromOAuthPayload(
   previous: Pick<StoredSubscriptionTokens, 'refreshToken' | 'accountLabel' | 'chatgptAccountId'>,
   nowMs: number,
 ): StoredSubscriptionTokens {
-  const accessToken = typeof payload.access_token === 'string' ? payload.access_token.trim() : '';
+  const accessToken = asOAuthToken(payload.access_token);
   if (!accessToken) {
     throw new SubscriptionHttpError('Token response did not include an access token.', {
       code: 'invalid_grant',
       fallbackAllowed: false,
     });
   }
-  const nextRefresh =
-    typeof payload.refresh_token === 'string' && payload.refresh_token.trim()
-      ? payload.refresh_token.trim()
-      : previous.refreshToken;
-  const idToken = typeof payload.id_token === 'string' ? payload.id_token : null;
+  const tokenType = safeOAuthText(payload.token_type, 32);
+  if (tokenType && tokenType.toLowerCase() !== 'bearer') {
+    throw new SubscriptionHttpError('Token response returned an unsupported token type.', {
+      code: 'invalid_grant',
+      fallbackAllowed: false,
+    });
+  }
+  let nextRefresh = previous.refreshToken;
+  if (payload.refresh_token !== undefined && payload.refresh_token !== null) {
+    const suppliedRefresh = asOAuthToken(payload.refresh_token);
+    if (
+      typeof payload.refresh_token !== 'string' ||
+      (payload.refresh_token.trim() && !suppliedRefresh)
+    ) {
+      throw new SubscriptionHttpError('Token response returned an invalid refresh token.', {
+        code: 'invalid_grant',
+        fallbackAllowed: false,
+      });
+    }
+    if (suppliedRefresh) nextRefresh = suppliedRefresh;
+  }
+  const idToken = asOAuthToken(payload.id_token) || null;
   return {
     status: 'logged_in',
     accessToken,
@@ -125,7 +168,14 @@ function throwRefreshTransportError(error: unknown): never {
       fallbackAllowed: true,
     });
   }
-  throw error;
+  throw new SubscriptionHttpError('Token refresh could not reach the provider.', {
+    code: 'refresh_failed',
+    fallbackAllowed: true,
+  });
+}
+
+function isTransientRefreshStatus(status: number) {
+  return status === 408 || status === 429 || status >= 500;
 }
 
 async function refreshCodexToken(
@@ -147,11 +197,12 @@ async function refreshCodexToken(
         refresh_token: refreshToken,
         client_id: CODEX_OAUTH_CLIENT_ID,
       }),
+      redirect: 'error',
     });
   } catch (error) {
     throwRefreshTransportError(error);
   }
-  const payload = await parseJson(response);
+  const payload = await readRefreshPayload(response, 'Codex');
   if (response.status === 429) {
     throw new SubscriptionHttpError(
       'Codex token refresh is rate-limited. Credentials are still valid.',
@@ -167,7 +218,7 @@ async function refreshCodexToken(
     const relogin = code === 'invalid_grant' || code === 'invalid_token' || response.status === 401;
     throw new SubscriptionHttpError(oauthErrorMessage(payload, 'Codex token refresh failed.'), {
       code: relogin ? 'invalid_grant' : 'refresh_failed',
-      fallbackAllowed: false,
+      fallbackAllowed: !relogin && isTransientRefreshStatus(response.status),
       httpStatus: response.status,
     });
   }
@@ -186,6 +237,8 @@ async function refreshXaiToken(
         Accept: 'application/json',
         'Content-Type': 'application/x-www-form-urlencoded',
         'User-Agent': studioUserAgent(),
+        'x-grok-client-version': studioPackageVersion(),
+        'x-grok-client-surface': 'ui',
       },
       signal: AbortSignal.timeout(20_000),
       body: formBody({
@@ -193,34 +246,37 @@ async function refreshXaiToken(
         client_id: XAI_OAUTH_CLIENT_ID,
         refresh_token: refreshToken,
       }),
+      redirect: 'error',
     });
   } catch (error) {
     throwRefreshTransportError(error);
   }
-  const payload = await parseJson(response);
-  if (response.status === 403) {
-    throw new SubscriptionHttpError(
-      'This xAI account is not authorized for API image generation. Grok Build CLI can still run if it is signed in.',
-      {
-        code: 'entitlement_denied',
-        fallbackAllowed: true,
-        httpStatus: 403,
-      },
-    );
-  }
+  const payload = await readRefreshPayload(response, 'xAI');
   if (!response.ok) {
     const code = oauthErrorCode(payload);
-    const relogin = code === 'invalid_grant' || response.status === 401;
+    const relogin = code === 'invalid_grant' || code === 'invalid_token' || response.status === 401;
     throw new SubscriptionHttpError(oauthErrorMessage(payload, 'xAI token refresh failed.'), {
       code: relogin ? 'invalid_grant' : 'refresh_failed',
-      fallbackAllowed: false,
+      fallbackAllowed: !relogin && isTransientRefreshStatus(response.status),
       httpStatus: response.status,
     });
   }
   return payload;
 }
 
-const refreshLocks = new Map<SubscriptionProviderId, Promise<string>>();
+const refreshLocks = new WeakMap<
+  SubscriptionAuthStore,
+  Map<SubscriptionProviderId, Promise<string>>
+>();
+
+function refreshLockMap(store: SubscriptionAuthStore) {
+  let locks = refreshLocks.get(store);
+  if (!locks) {
+    locks = new Map();
+    refreshLocks.set(store, locks);
+  }
+  return locks;
+}
 
 export async function getUsableAccessToken(
   providerId: SubscriptionProviderId,
@@ -229,6 +285,7 @@ export async function getUsableAccessToken(
     fetch: fetchImpl = fetch,
     now = Date.now,
     env = process.env,
+    revokeToken = revokeSubscriptionToken,
   }: TokenRefreshDependencies = {},
 ): Promise<string> {
   if (providerId === 'xai') {
@@ -236,7 +293,8 @@ export async function getUsableAccessToken(
     if (apiKey) return apiKey;
   }
 
-  const pending = refreshLocks.get(providerId);
+  const storeRefreshLocks = refreshLockMap(store);
+  const pending = storeRefreshLocks.get(providerId);
   if (pending) return pending;
 
   let settle!: (value: string) => void;
@@ -245,7 +303,7 @@ export async function getUsableAccessToken(
     settle = resolve;
     fail = reject;
   });
-  refreshLocks.set(providerId, gate);
+  storeRefreshLocks.set(providerId, gate);
 
   void (async () => {
     const writeIfCurrent = (generation: number, record: StoredSubscriptionTokens) => {
@@ -288,8 +346,28 @@ export async function getUsableAccessToken(
           providerId === 'codex'
             ? await refreshCodexToken(record.refreshToken, fetchImpl)
             : await refreshXaiToken(record.refreshToken, fetchImpl);
-        const next = tokensFromOAuthPayload(payload, record, now());
+        let next: StoredSubscriptionTokens;
+        try {
+          next = tokensFromOAuthPayload(payload, record, now());
+        } catch (error) {
+          if (error instanceof SubscriptionHttpError && error.code === 'invalid_grant') {
+            const providerLabel = providerId === 'codex' ? 'Codex' : 'xAI';
+            throw new SubscriptionHttpError(
+              `${providerLabel} token refresh returned an invalid response.`,
+              {
+                code: 'refresh_failed',
+                fallbackAllowed: true,
+              },
+            );
+          }
+          throw error;
+        }
         if (store.generation(providerId) !== generation) {
+          try {
+            await revokeToken(providerId, next, { fetch: fetchImpl });
+          } catch {
+            // The local generation changed; never restore these newly issued tokens.
+          }
           throw new SubscriptionHttpError('Studio Sign in was cancelled.', {
             code: 'not_signed_in',
             fallbackAllowed: true,
@@ -306,7 +384,12 @@ export async function getUsableAccessToken(
             refreshToken: null,
             lastError: error.message,
           });
-        } else if (error instanceof SubscriptionHttpError && error.code === 'refresh_failed') {
+        } else if (
+          error instanceof SubscriptionHttpError &&
+          (error.code === 'refresh_failed' ||
+            error.code === 'timeout' ||
+            error.code === 'http_error')
+        ) {
           writeIfCurrent(generation, {
             ...record,
             status: 'refresh_failed',
@@ -318,7 +401,7 @@ export async function getUsableAccessToken(
     } catch (error) {
       fail(error);
     } finally {
-      if (refreshLocks.get(providerId) === gate) refreshLocks.delete(providerId);
+      if (storeRefreshLocks.get(providerId) === gate) storeRefreshLocks.delete(providerId);
     }
   })();
 
@@ -327,6 +410,21 @@ export async function getUsableAccessToken(
 
 export function readXaiApiKey(env: Record<string, string | undefined> = process.env) {
   return env.XAI_API_KEY?.trim() || null;
+}
+
+export function invalidateStoredAccessToken(
+  providerId: SubscriptionProviderId,
+  message: string,
+  store: SubscriptionAuthStore = getSubscriptionAuthStore(),
+) {
+  store.bumpGeneration(providerId);
+  const record = store.readProvider(providerId);
+  store.writeProvider(providerId, {
+    ...record,
+    status: record.refreshToken ? 'refresh_failed' : 'logged_out',
+    accessToken: null,
+    lastError: safeOAuthText(message) || 'Provider rejected the access token.',
+  });
 }
 
 export function isCodexHttpCredentialReady(

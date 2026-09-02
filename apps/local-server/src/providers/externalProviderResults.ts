@@ -14,8 +14,19 @@ export type ExternalProviderFetch = (
   input: string | URL | Request,
   init?: RequestInit,
 ) => Promise<
-  Pick<Response, 'ok' | 'status' | 'statusText' | 'headers' | 'json' | 'text' | 'arrayBuffer'>
+  Pick<Response, 'ok' | 'status' | 'statusText' | 'headers' | 'json' | 'text' | 'arrayBuffer'> & {
+    body?: Response['body'];
+  }
 >;
+
+const MAX_IMAGE_BYTES = 25 * 1024 * 1024;
+
+export class ExternalProviderImageError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'ExternalProviderImageError';
+  }
+}
 
 export interface ExternalProviderRetryOptions {
   maxAttempts: number;
@@ -78,7 +89,39 @@ function redactSecrets(value: string, secrets: readonly string[]) {
 }
 
 export function responseSnippet(value: string, secrets: readonly string[] = []) {
-  return redactSecrets(value, secrets).replace(/\s+/g, ' ').trim().slice(0, 500);
+  return redactSecrets(value, secrets)
+    .replace(/[\u0000-\u001f\u007f]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 500);
+}
+
+export async function readResponseTextLimited(
+  response: Pick<Response, 'text'> & { body?: Response['body'] },
+  maxBytes: number,
+) {
+  if (!response.body) {
+    const text = await response.text();
+    if (Buffer.byteLength(text, 'utf8') > maxBytes) {
+      throw new Error(`Provider response exceeded ${maxBytes} bytes.`);
+    }
+    return text;
+  }
+
+  const reader = response.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    total += value.byteLength;
+    if (total > maxBytes) {
+      await reader.cancel();
+      throw new Error(`Provider response exceeded ${maxBytes} bytes.`);
+    }
+    chunks.push(value);
+  }
+  return Buffer.concat(chunks).toString('utf8');
 }
 
 function isRetryableStatus(status: number) {
@@ -212,6 +255,7 @@ function sanitizeFilePart(value: string) {
 function extensionFromMime(mimeType: string | null) {
   if (mimeType === 'image/jpeg') return '.jpg';
   if (mimeType === 'image/webp') return '.webp';
+  if (mimeType === 'image/gif') return '.gif';
   if (mimeType === 'image/png') return '.png';
   return null;
 }
@@ -219,16 +263,93 @@ function extensionFromMime(mimeType: string | null) {
 function extensionFromUrl(url: string) {
   try {
     const ext = path.extname(new URL(url).pathname).toLowerCase();
-    return ['.jpg', '.jpeg', '.png', '.webp'].includes(ext) ? ext : null;
+    return ['.gif', '.jpg', '.jpeg', '.png', '.webp'].includes(ext) ? ext : null;
   } catch {
     return null;
   }
 }
 
-function mimeFromExtension(ext: string) {
-  if (ext === '.jpg' || ext === '.jpeg') return 'image/jpeg';
-  if (ext === '.webp') return 'image/webp';
-  return 'image/png';
+function imageMimeFromBytes(buffer: Buffer) {
+  if (
+    buffer.length >= 8 &&
+    buffer.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))
+  ) {
+    return 'image/png';
+  }
+  if (buffer.length >= 3 && buffer[0] === 0xff && buffer[1] === 0xd8 && buffer[2] === 0xff) {
+    return 'image/jpeg';
+  }
+  if (buffer.length >= 6) {
+    const signature = buffer.subarray(0, 6).toString('ascii');
+    if (signature === 'GIF87a' || signature === 'GIF89a') return 'image/gif';
+  }
+  if (
+    buffer.length >= 12 &&
+    buffer.subarray(0, 4).toString('ascii') === 'RIFF' &&
+    buffer.subarray(8, 12).toString('ascii') === 'WEBP'
+  ) {
+    return 'image/webp';
+  }
+  return null;
+}
+
+function decodeAndValidateInlineImage(data: string, declaredMime: string | null) {
+  const normalized = data.replace(/\s+/g, '');
+  if (!normalized || normalized.length % 4 !== 0 || !/^[A-Za-z0-9+/]*={0,2}$/.test(normalized)) {
+    throw new ExternalProviderImageError('Provider returned invalid base64 image data.');
+  }
+  if (normalized.length > Math.ceil((MAX_IMAGE_BYTES * 4) / 3) + 4) {
+    throw new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
+  }
+  const buffer = Buffer.from(normalized, 'base64');
+  return validateImageBuffer(buffer, declaredMime);
+}
+
+function validateImageBuffer(buffer: Buffer, declaredMime: string | null) {
+  if (buffer.length > MAX_IMAGE_BYTES) {
+    throw new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
+  }
+  const detectedMime = imageMimeFromBytes(buffer);
+  if (!detectedMime) {
+    throw new ExternalProviderImageError('Provider returned bytes that are not a supported image.');
+  }
+  if (declaredMime?.startsWith('image/') && declaredMime !== detectedMime) {
+    throw new ExternalProviderImageError(
+      `Provider image type mismatch: declared ${declaredMime}, received ${detectedMime}.`,
+    );
+  }
+  return { buffer, mimeType: detectedMime };
+}
+
+async function readImageBytesLimited(
+  response: Pick<Response, 'arrayBuffer' | 'headers'> & { body?: Response['body'] },
+) {
+  const contentLength = Number(response.headers.get('content-length'));
+  if (Number.isFinite(contentLength) && contentLength > MAX_IMAGE_BYTES) {
+    throw new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
+  }
+  if (!response.body) {
+    const buffer = Buffer.from(await response.arrayBuffer());
+    if (buffer.length > MAX_IMAGE_BYTES) {
+      throw new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
+    }
+    return buffer;
+  }
+
+  const reader = response.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    total += value.byteLength;
+    if (total > MAX_IMAGE_BYTES) {
+      await reader.cancel();
+      throw new ExternalProviderImageError('Provider image exceeded the 25 MB limit.');
+    }
+    chunks.push(value);
+  }
+  return Buffer.concat(chunks);
 }
 
 export async function storeHostedImageResult({
@@ -249,34 +370,46 @@ export async function storeHostedImageResult({
   retryDelayMs,
   sleep,
 }: StoreHostedImageResultInput): Promise<TurnResult> {
-  const { response: imageResponse, attempts: imageAttempts } = await fetchExternalProviderWithRetry(
-    {
+  let imageResponse: Awaited<ReturnType<ExternalProviderFetch>>;
+  let imageAttempts: number;
+  try {
+    const result = await fetchExternalProviderWithRetry({
       label: `${providerId} image download`,
       fetch,
       input: imageUrl,
-      init: { signal: job.signal },
+      init: { signal: job.signal, redirect: 'error' },
       maxAttempts,
       retryDelayMs,
       sleep,
-    },
-  );
+    });
+    imageResponse = result.response;
+    imageAttempts = result.attempts;
+  } catch (error) {
+    if (isAbortError(error)) throw error;
+    throw new ExternalProviderImageError(
+      error instanceof Error ? error.message : `${providerId} image download failed.`,
+    );
+  }
   if (!imageResponse.ok) {
-    throw new Error(
+    throw new ExternalProviderImageError(
       `${providerId} image download failed after ${imageAttempts} attempt(s): ${imageResponse.status} ${imageResponse.statusText}`,
     );
   }
 
   const responseMime = imageResponse.headers.get('content-type')?.split(';')[0]?.trim() ?? null;
-  const ext = extensionFromMime(responseMime) ?? extensionFromUrl(imageUrl) ?? '.png';
-  const mimeType = responseMime?.startsWith('image/') ? responseMime : mimeFromExtension(ext);
+  if (!responseMime?.startsWith('image/')) {
+    throw new ExternalProviderImageError('Provider image download returned a non-image response.');
+  }
+  const validated = validateImageBuffer(await readImageBytesLimited(imageResponse), responseMime);
+  const ext = extensionFromMime(validated.mimeType) ?? extensionFromUrl(imageUrl) ?? '.png';
+  const mimeType = validated.mimeType;
   const safeJobId = sanitizeFilePart(job.id);
   const outputPath = files.resolveLibraryPath(
     'assets',
     `${safeJobId}-${providerSlug}-${files.now()}${ext}`,
   );
   files.mkdir(path.dirname(outputPath), { recursive: true });
-  const buffer = Buffer.from(await imageResponse.arrayBuffer());
-  files.writeFile(outputPath, buffer);
+  files.writeFile(outputPath, validated.buffer);
 
   const transcriptDir = files.resolveLibraryPath('transcripts', safeJobId);
   files.mkdir(transcriptDir, { recursive: true });
@@ -326,15 +459,16 @@ export function storeInlineImageResult({
   files,
 }: StoreInlineImageResultInput): TurnResult {
   const responseMime = image.mimeType?.split(';')[0]?.trim() ?? null;
-  const ext = extensionFromMime(responseMime) ?? '.png';
-  const mimeType = responseMime?.startsWith('image/') ? responseMime : mimeFromExtension(ext);
+  const validated = decodeAndValidateInlineImage(image.data, responseMime);
+  const ext = extensionFromMime(validated.mimeType) ?? '.png';
+  const mimeType = validated.mimeType;
   const safeJobId = sanitizeFilePart(job.id);
   const outputPath = files.resolveLibraryPath(
     'assets',
     `${safeJobId}-${providerSlug}-${files.now()}${ext}`,
   );
   files.mkdir(path.dirname(outputPath), { recursive: true });
-  files.writeFile(outputPath, Buffer.from(image.data, 'base64'));
+  files.writeFile(outputPath, validated.buffer);
 
   const transcriptDir = files.resolveLibraryPath('transcripts', safeJobId);
   files.mkdir(transcriptDir, { recursive: true });

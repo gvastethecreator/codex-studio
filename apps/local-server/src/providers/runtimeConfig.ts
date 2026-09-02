@@ -183,7 +183,8 @@ export function createGrokRuntimePreflight(
   const httpReady = options.httpReady ?? safeGrokHttpReady(env);
   const cliReady = grokRuntime.canRunJobs;
   const diagnostics: string[] = [];
-  if (httpReady) diagnostics.push('Studio Sign in is ready. Grok Build CLI stays as fallback.');
+  if (httpReady)
+    diagnostics.push('xAI HTTP credentials are ready. Grok Build CLI stays as fallback.');
   if (grokRuntime.issues.length > 0) {
     diagnostics.push(...grokRuntime.issues.map((issue) => `${issue.message} ${issue.action}`));
   } else if (!httpReady) {

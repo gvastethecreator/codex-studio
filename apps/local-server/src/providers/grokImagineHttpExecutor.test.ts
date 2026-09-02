@@ -4,10 +4,15 @@ import { createGenerationTaskSpec } from '../../../../packages/shared/src';
 import { compileGrokImagineInput } from './grokImagineInput';
 import {
   createGrokImagineHttpExecutor,
+  isAllowedXaiImageUrl,
   resolveGrokImagineHttpModel,
+  resolveXaiApiEndpointBase,
 } from './grokImagineHttpExecutor';
 import type { ProviderRuntimePreflight } from './runtimeConfig';
 import { SubscriptionHttpError } from './subscriptionHttpError';
+
+const PNG_B64 =
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
 
 const READY_PREFLIGHT: ProviderRuntimePreflight = {
   providerId: 'grok',
@@ -75,6 +80,32 @@ function createEditContext() {
 }
 
 describe('Grok Imagine HTTP executor', () => {
+  it('accepts hosted image URLs only from xAI over HTTPS', () => {
+    expect(isAllowedXaiImageUrl('https://cdn.x.ai/out.png')).toBe(true);
+    expect(isAllowedXaiImageUrl('https://x.ai/out.png')).toBe(true);
+    expect(isAllowedXaiImageUrl('http://cdn.x.ai/out.png')).toBe(false);
+    expect(isAllowedXaiImageUrl('https://x.ai.evil.example/out.png')).toBe(false);
+    expect(isAllowedXaiImageUrl('https://127.0.0.1/out.png')).toBe(false);
+  });
+
+  it('never sends an OAuth token to XAI_BASE_URL overrides', () => {
+    expect(resolveXaiApiEndpointBase({ XAI_BASE_URL: 'https://token-sink.example/v1' })).toBe(
+      'https://api.x.ai/v1',
+    );
+    expect(
+      resolveXaiApiEndpointBase({
+        XAI_API_KEY: 'explicit-api-key',
+        XAI_BASE_URL: 'https://proxy.example/v1/',
+      }),
+    ).toBe('https://proxy.example/v1');
+    expect(() =>
+      resolveXaiApiEndpointBase({
+        XAI_API_KEY: 'explicit-api-key',
+        XAI_BASE_URL: 'http://proxy.example/v1',
+      }),
+    ).toThrow('must use HTTPS');
+  });
+
   it('maps chat models to grok-imagine-image and stores inline PNG without leaking the token', async () => {
     expect(resolveGrokImagineHttpModel('grok-4.5', {})).toBe('grok-imagine-image');
     const writes: Array<{ filePath: string; content: unknown }> = [];
@@ -86,7 +117,7 @@ describe('Grok Imagine HTTP executor', () => {
       expect(body.response_format).toBe('b64_json');
       expect(body.aspect_ratio).toBe('16:9');
       expect(JSON.stringify(init?.headers)).toContain('xai-secret');
-      return new Response(JSON.stringify({ data: [{ b64_json: 'AQID' }] }), {
+      return new Response(JSON.stringify({ data: [{ b64_json: PNG_B64 }] }), {
         headers: { 'content-type': 'application/json' },
       });
     };
@@ -155,7 +186,7 @@ describe('Grok Imagine HTTP executor', () => {
         type: 'image_url',
       });
       expect(body.images).toBeUndefined();
-      return new Response(JSON.stringify({ data: [{ b64_json: 'AQID' }] }), {
+      return new Response(JSON.stringify({ data: [{ b64_json: PNG_B64 }] }), {
         headers: { 'content-type': 'application/json' },
       });
     };
@@ -194,5 +225,48 @@ describe('Grok Imagine HTTP executor', () => {
       code: 'timeout',
       fallbackAllowed: true,
     });
+  });
+
+  it('does not misclassify Studio Library write failures as provider timeouts', async () => {
+    const fetchMock = async (input: string | URL | Request) => {
+      const url = inputToUrl(input);
+      if (url.endsWith('/images/generations')) {
+        return new Response(JSON.stringify({ data: [{ url: 'https://cdn.x.ai/out.png' }] }), {
+          headers: { 'content-type': 'application/json' },
+        });
+      }
+      return new Response(Buffer.from(PNG_B64, 'base64'), {
+        headers: { 'content-type': 'image/png' },
+      });
+    };
+    const executor = createGrokImagineHttpExecutor({
+      env: {},
+      fetch: fetchMock,
+      getAccessToken: async () => 'xai-secret',
+      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+      writeFile: (() => {
+        throw new Error('disk full');
+      }) as typeof import('node:fs').writeFileSync,
+    });
+
+    await expect(executor(createContext())).rejects.toThrow('disk full');
+  });
+
+  it('invalidates rejected OAuth credentials', async () => {
+    const invalidations: string[] = [];
+    const executor = createGrokImagineHttpExecutor({
+      env: {},
+      fetch: async () =>
+        new Response(JSON.stringify({ error: { message: 'rejected' } }), { status: 401 }),
+      getAccessToken: async () => 'xai-secret',
+      invalidateAccessToken: (message) => invalidations.push(message),
+      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+      writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+    });
+
+    await expect(executor(createContext())).rejects.toMatchObject({ code: 'invalid_grant' });
+    expect(invalidations).toEqual(['rejected']);
   });
 });

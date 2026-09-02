@@ -43,6 +43,7 @@ import {
   type StudioReadinessSnapshot,
 } from '../packages/shared/src';
 import { resolveOnboardingPrimaryAction } from '../lib/onboardingPrimaryAction';
+import { ProviderBrandMark } from './ProviderBrandMark';
 import {
   buildInAppSetupRequest,
   inAppSetupCanSubmit,
@@ -142,8 +143,8 @@ function CheckRow({
   }[tone];
 
   return (
-    <div className="grid grid-cols-[44px_minmax(0,1fr)_auto] items-start gap-4 border-b border-white/8 py-5 last:border-b-0 xl:grid-cols-[36px_minmax(0,1fr)_auto] xl:gap-3 xl:py-3">
-      <div className="grid size-11 place-items-center rounded-2xl border border-white/10 bg-white/5 text-blue-300 xl:size-9 xl:rounded-xl">
+    <div className="grid grid-cols-[44px_minmax(0,1fr)_auto] items-start gap-4 border-b border-white/2 py-5 last:border-b-0 xl:grid-cols-[36px_minmax(0,1fr)_auto] xl:gap-3 xl:py-3">
+      <div className="grid size-11 place-items-center rounded-2xl border border-white/2 bg-white/5 text-blue-300 xl:size-9 xl:rounded-xl">
         {icon}
       </div>
       <div className="min-w-0">
@@ -152,7 +153,7 @@ function CheckRow({
           {detail}
         </p>
         {meta ? (
-          <p className="mt-2 inline-flex max-w-full rounded-lg border border-white/8 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:mt-1 xl:max-w-[18rem] xl:text-[10px]">
+          <p className="mt-2 inline-flex max-w-full rounded-lg border border-white/2 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:mt-1 xl:max-w-[18rem] xl:text-[10px]">
             <span className="truncate">{meta}</span>
           </p>
         ) : null}
@@ -169,7 +170,7 @@ function PreviewCard({ entry }: { entry: OnboardingStyleCarouselEntry }) {
   return (
     <div className="mt-6 grid grid-cols-[minmax(7.5rem,0.42fr)_minmax(0,1fr)] items-start gap-3 sm:grid-cols-1 sm:gap-4 lg:grid-cols-[minmax(15rem,0.7fr)_minmax(0,1fr)] xl:mt-4 xl:grid-cols-[minmax(9rem,0.32fr)_minmax(0,1fr)] xl:gap-4">
       <div className="mx-auto w-full max-w-[8.75rem] sm:max-w-[22rem] lg:max-w-[24rem] xl:max-w-[12rem] 2xl:max-w-[14rem]">
-        <div className="relative overflow-hidden rounded-xl border border-white/10 bg-black/45 shadow-2xl shadow-black/40">
+        <div className="relative overflow-hidden rounded-xl border border-white/2 bg-black/45 shadow-2xl shadow-black/40">
           <div className="aspect-[2/3] w-full">
             <AnimatePresence mode="wait">
               <MotionDiv
@@ -203,14 +204,14 @@ function PreviewCard({ entry }: { entry: OnboardingStyleCarouselEntry }) {
         </div>
       </div>
 
-      <div className="rounded-xl border border-white/10 bg-black/35 p-3 sm:p-5 xl:p-3">
+      <div className="rounded-xl border border-white/2 bg-black/35 p-3 sm:p-5 xl:p-3">
         <div className="mb-3 flex flex-wrap items-center gap-2 sm:mb-4 xl:mb-2">
-          <span className="inline-flex items-center gap-2 rounded-lg border border-blue-400/20 bg-blue-500/10 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-blue-200">
+          <span className="inline-flex items-center gap-2 rounded-lg border border-blue-400/2 bg-blue-500/10 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-blue-200">
             <Sparkles size={13} />
             <span className="hidden sm:inline">Styles recipe</span>
             <span className="sm:hidden">Style</span>
           </span>
-          <span className="hidden rounded-lg border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400 sm:inline-flex">
+          <span className="hidden rounded-lg border border-white/2 bg-white/5 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400 sm:inline-flex">
             {entry.packName}
           </span>
         </div>
@@ -222,7 +223,7 @@ function PreviewCard({ entry }: { entry: OnboardingStyleCarouselEntry }) {
             transition={{ duration: 0.32, ease: 'power2.out' }}
           >
             <p className="text-sm font-semibold text-white xl:text-xs">{entry.styleName}</p>
-            <p className="mt-2 rounded-lg border border-white/8 bg-black/35 p-2.5 font-mono text-[10px] leading-5 text-zinc-300 sm:mt-3 sm:p-3 sm:text-[12px] sm:leading-6 xl:mt-2 xl:max-h-28 xl:overflow-hidden xl:p-2 xl:text-[10px] xl:leading-5">
+            <p className="mt-2 rounded-lg border border-white/2 bg-black/35 p-2.5 font-mono text-[10px] leading-5 text-zinc-300 sm:mt-3 sm:p-3 sm:text-[12px] sm:leading-6 xl:mt-2 xl:max-h-28 xl:overflow-hidden xl:p-2 xl:text-[10px] xl:leading-5">
               {entry.prompt}
             </p>
           </MotionDiv>
@@ -248,7 +249,7 @@ function SetupPromptCard({ prompt }: { prompt: string }) {
   }, [prompt]);
 
   return (
-    <div className="mt-6 rounded-2xl border border-blue-500/18 bg-blue-500/[0.06] p-4 xl:mt-3 xl:p-3">
+    <div className="mt-6 rounded-2xl border border-blue-500/2 bg-blue-500/[0.06] p-4 xl:mt-3 xl:p-3">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <p className="text-[11px] font-black uppercase tracking-[0.24em] text-blue-300 xl:text-[10px]">
@@ -261,30 +262,30 @@ function SetupPromptCard({ prompt }: { prompt: string }) {
         <button
           type="button"
           onClick={copyPrompt}
-          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl border border-blue-400/20 bg-blue-500/12 px-3 text-[10px] font-black uppercase tracking-widest text-blue-100 transition-colors hover:bg-blue-500/20 xl:h-9 xl:px-2.5"
+          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl border border-blue-400/2 bg-blue-500/12 px-3 text-[10px] font-black uppercase tracking-widest text-blue-100 transition-colors hover:bg-blue-500/20 xl:h-9 xl:px-2.5"
         >
           <CopyIcon size={15} />
           {copyState === 'copied' ? 'Copied' : copyState === 'failed' ? 'Failed' : 'Copy'}
         </button>
       </div>
-      <p className="mt-3 truncate rounded-lg border border-white/8 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:mt-2 xl:text-[10px]">
+      <p className="mt-3 truncate rounded-lg border border-white/2 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:mt-2 xl:text-[10px]">
         {CODEX_STUDIO_SETUP_SKILL_PATH}
       </p>
       <textarea
         readOnly
         value={prompt}
         aria-label="Codex Studio setup prompt"
-        className="custom-scrollbar mt-3 h-52 w-full resize-none rounded-xl border border-white/8 bg-black/35 p-3 font-mono text-[11px] leading-5 text-zinc-300 outline-none xl:hidden"
+        className="custom-scrollbar mt-3 h-52 w-full resize-none rounded-xl border border-white/2 bg-black/35 p-3 font-mono text-[11px] leading-5 text-zinc-300 outline-none xl:hidden"
       />
       <details className="hidden xl:block">
-        <summary className="mt-2 cursor-pointer rounded-lg border border-white/8 bg-black/20 px-2.5 py-1.5 text-[10px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:bg-white/5 hover:text-zinc-200">
+        <summary className="mt-2 cursor-pointer rounded-lg border border-white/2 bg-black/20 px-2.5 py-1.5 text-[10px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:bg-white/5 hover:text-zinc-200">
           Prompt preview
         </summary>
         <textarea
           readOnly
           value={prompt}
           aria-label="Codex Studio setup prompt preview"
-          className="custom-scrollbar mt-2 h-20 w-full resize-none rounded-xl border border-white/8 bg-black/35 p-2 font-mono text-[10px] leading-4 text-zinc-300 outline-none"
+          className="custom-scrollbar mt-2 h-20 w-full resize-none rounded-xl border border-white/2 bg-black/35 p-2 font-mono text-[10px] leading-4 text-zinc-300 outline-none"
         />
       </details>
     </div>
@@ -310,7 +311,7 @@ function CopyCommandButton({ command, label }: { command: string; label: string 
     <button
       type="button"
       onClick={copyCommand}
-      className="flex min-h-11 min-w-0 items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/5 px-3 text-left transition-colors hover:border-blue-400/25 hover:bg-blue-500/10 xl:min-h-9 xl:px-2.5"
+      className="flex min-h-11 min-w-0 items-center justify-between gap-3 rounded-xl border border-white/2 bg-white/5 px-3 text-left transition-colors hover:border-blue-400/2 hover:bg-blue-500/10 xl:min-h-9 xl:px-2.5"
     >
       <span className="min-w-0">
         <span className="block text-[10px] font-black uppercase tracking-widest text-zinc-300">
@@ -345,7 +346,7 @@ function InAppSetupForm({
   onLibraryPathChange: (value: string) => void;
 }) {
   return (
-    <div className="mt-5 rounded-2xl border border-blue-500/18 bg-blue-500/[0.06] p-4 xl:mt-3 xl:p-3">
+    <div className="mt-5 rounded-2xl border border-blue-500/2 bg-blue-500/[0.06] p-4 xl:mt-3 xl:p-3">
       <p className="text-[11px] font-black uppercase tracking-[0.24em] text-blue-300 xl:text-[10px]">
         Studio Library
       </p>
@@ -359,7 +360,7 @@ function InAppSetupForm({
           value={libraryPath}
           onChange={(event) => onLibraryPathChange(event.target.value)}
           aria-label="Studio Library path"
-          className="w-full rounded-xl border border-white/10 bg-black/35 px-3 py-2.5 font-mono text-sm text-zinc-200 outline-none focus:border-blue-400/40 xl:py-2 xl:text-xs"
+          className="w-full rounded-xl border border-white/2 bg-black/35 px-3 py-2.5 font-mono text-sm text-zinc-200 outline-none focus:border-blue-400/2 xl:py-2 xl:text-xs"
         />
       </label>
       {cloudProvider ? (
@@ -386,7 +387,7 @@ function InAppSetupForm({
         <span>Create this Studio Library and write Bootstrap Configuration on this machine.</span>
       </label>
       {error ? (
-        <p className="mt-3 rounded-xl border border-rose-500/20 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-rose-200 xl:mt-2 xl:text-xs xl:leading-5">
+        <p className="mt-3 rounded-xl border border-rose-500/2 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-rose-200 xl:mt-2 xl:text-xs xl:leading-5">
           {error}
         </p>
       ) : null}
@@ -408,30 +409,37 @@ function OptionalGrokRow({
   const needsInstall = grokRowNeedsInstall(row);
   const needsLogin = grokRowNeedsLogin(row);
   return (
-    <div className="mt-5 rounded-2xl border border-white/10 bg-white/[0.03] p-4 xl:mt-3 xl:p-3">
-      <p className="text-[11px] font-black uppercase tracking-[0.24em] text-zinc-400 xl:text-[10px]">
-        Optional provider
-      </p>
-      <p className="mt-2 text-sm font-semibold text-white xl:mt-1 xl:text-xs">{row.label}</p>
-      <p className="mt-1 text-sm leading-6 text-zinc-400 xl:text-xs xl:leading-5">{row.detail}</p>
+    <div className="mt-5 rounded-2xl border border-white/2 bg-white/[0.03] p-4 xl:mt-3 xl:p-3">
+      <div className="flex items-start gap-3">
+        <ProviderBrandMark providerId="grok" size="md" />
+        <div className="min-w-0 flex-1">
+          <p className="text-[11px] font-black uppercase tracking-[0.24em] text-zinc-400 xl:text-[10px]">
+            Optional provider
+          </p>
+          <p className="mt-2 text-sm font-semibold text-white xl:mt-1 xl:text-xs">{row.label}</p>
+          <p className="mt-1 text-sm leading-6 text-zinc-400 xl:text-xs xl:leading-5">
+            {row.detail}
+          </p>
+        </div>
+      </div>
       <div className="mt-3 flex flex-wrap gap-2 xl:mt-2">
-        {needsInstall ? (
-          <button
-            type="button"
-            onClick={onInstall}
-            className="inline-flex h-10 items-center rounded-xl border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 xl:h-9"
-          >
-            Install Grok Build
-          </button>
-        ) : null}
         {needsLogin ? (
           <button
             type="button"
             onClick={onLogin}
             disabled={busy}
-            className="inline-flex h-10 items-center rounded-xl border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-60 xl:h-9"
+            className="inline-flex h-10 items-center rounded-xl border border-accent-400/2 bg-accent-500/18 px-3 text-[10px] font-black uppercase tracking-widest text-accent-50 transition-colors hover:bg-accent-500/28 disabled:cursor-not-allowed disabled:opacity-60 xl:h-9"
           >
             {busy ? 'Opening settings' : 'Sign in'}
+          </button>
+        ) : null}
+        {needsInstall ? (
+          <button
+            type="button"
+            onClick={onInstall}
+            className="inline-flex h-10 items-center rounded-xl border border-white/2 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 xl:h-9"
+          >
+            Install Grok Build
           </button>
         ) : null}
       </div>
@@ -455,7 +463,7 @@ function CodexRuntimeRepairCard({
   const selectedCandidate = runtime.candidates.find((candidate) => candidate.selected);
 
   return (
-    <div className="mt-5 rounded-2xl border border-rose-500/20 bg-rose-500/[0.06] p-4 xl:mt-3 xl:p-3">
+    <div className="mt-5 rounded-2xl border border-rose-500/2 bg-rose-500/[0.06] p-4 xl:mt-3 xl:p-3">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div className="min-w-0">
           <p className="text-[11px] font-black uppercase tracking-[0.24em] text-rose-200 xl:text-[10px]">
@@ -471,7 +479,7 @@ function CodexRuntimeRepairCard({
         <button
           type="button"
           onClick={onRefresh}
-          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white xl:h-9"
+          className="inline-flex h-10 shrink-0 items-center justify-center gap-2 rounded-xl border border-white/2 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white xl:h-9"
         >
           <RefreshCw size={14} />
           Refresh
@@ -479,14 +487,14 @@ function CodexRuntimeRepairCard({
       </div>
 
       <div className="mt-4 grid gap-2 xl:mt-3 xl:grid-cols-3">
-        <p className="truncate rounded-lg border border-white/8 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:text-[10px]">
+        <p className="truncate rounded-lg border border-white/2 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:text-[10px]">
           selected: {runtime.selectedExecutable}
         </p>
-        <p className="truncate rounded-lg border border-white/8 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:text-[10px]">
+        <p className="truncate rounded-lg border border-white/2 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:text-[10px]">
           command: {runtime.selectedCommand}
         </p>
         {selectedCandidate ? (
-          <p className="truncate rounded-lg border border-white/8 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:text-[10px]">
+          <p className="truncate rounded-lg border border-white/2 bg-black/30 px-2.5 py-1 font-mono text-[11px] text-zinc-500 xl:text-[10px]">
             source: {selectedCandidate.source}
           </p>
         ) : null}
@@ -502,7 +510,7 @@ function CodexRuntimeRepairCard({
         {runtime.candidates.slice(0, 5).map((candidate) => (
           <div
             key={`${candidate.source}-${candidate.executable}`}
-            className="grid grid-cols-[5.5rem_minmax(0,1fr)] gap-2 rounded-lg border border-white/8 bg-black/20 px-2.5 py-1.5 font-mono text-[10px] text-zinc-500"
+            className="grid grid-cols-[5.5rem_minmax(0,1fr)] gap-2 rounded-lg border border-white/2 bg-black/20 px-2.5 py-1.5 font-mono text-[10px] text-zinc-500"
           >
             <span className={candidate.selected ? 'text-rose-200' : 'text-zinc-600'}>
               {candidate.selected ? 'selected' : candidate.exists ? 'exists' : 'missing'}
@@ -525,7 +533,7 @@ function OnboardingLogPanel({ lines }: { lines: OnboardingLogLine[] }) {
     <section
       aria-live="polite"
       aria-label="Setup log"
-      className="mt-4 rounded-xl border border-white/8 bg-black/40 px-3 py-3 xl:mt-3"
+      className="mt-4 rounded-xl border border-white/2 bg-black/40 px-3 py-3 xl:mt-3"
     >
       <p className="text-[11px] font-black uppercase tracking-[0.24em] text-zinc-500 xl:text-[10px]">
         Setup log
@@ -795,9 +803,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
             exit={{ opacity: 0, scale: 0.98, y: 16 }}
             className="relative z-10 flex h-full w-full flex-col overflow-hidden bg-zinc-950 shadow-[0_40px_160px_rgba(0,0,0,0.75)]"
           >
-            <header className="flex items-center justify-between border-b border-white/8 px-5 py-4 sm:px-14 xl:px-10 xl:py-3">
+            <header className="flex items-center justify-between border-b border-white/2 px-5 py-4 sm:px-14 xl:px-10 xl:py-3">
               <div className="flex min-w-0 items-center gap-3">
-                <div className="grid size-10 place-items-center rounded-2xl border border-white/10 bg-white/5 text-blue-300 xl:size-9 xl:rounded-xl">
+                <div className="grid size-10 place-items-center rounded-2xl border border-white/2 bg-white/5 text-blue-300 xl:size-9 xl:rounded-xl">
                   <ImageIcon size={18} />
                 </div>
                 <div className="min-w-0">
@@ -815,7 +823,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   type="button"
                   onClick={onRefresh}
                   disabled={isChecking}
-                  className="hidden h-10 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:border-white/20 hover:bg-white/8 hover:text-white disabled:cursor-not-allowed disabled:opacity-60 sm:inline-flex"
+                  className="hidden h-10 items-center gap-2 rounded-xl border border-white/2 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:border-white/2 hover:bg-white/8 hover:text-white disabled:cursor-not-allowed disabled:opacity-60 sm:inline-flex"
                 >
                   <RefreshCw size={14} className={isChecking ? 'animate-spin' : ''} />
                   Status
@@ -823,7 +831,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                 <button
                   type="button"
                   onClick={onClose}
-                  className="grid size-10 place-items-center rounded-xl border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+                  className="grid size-10 place-items-center rounded-xl border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
                   aria-label="Close onboarding"
                 >
                   <X size={18} />
@@ -833,7 +841,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
 
             <main className="custom-scrollbar min-h-0 flex-1 overflow-y-auto overflow-x-hidden px-4 py-6 sm:px-8 sm:py-8 lg:px-10 xl:overflow-hidden xl:px-8 xl:py-4">
               <div className="mx-auto w-full max-w-[100rem] xl:flex xl:h-full xl:max-w-[92rem] xl:flex-col">
-                <section className="border-b border-white/8 pb-7 sm:pb-9 xl:flex xl:items-end xl:justify-between xl:gap-8 xl:pb-3">
+                <section className="border-b border-white/2 pb-7 sm:pb-9 xl:flex xl:items-end xl:justify-between xl:gap-8 xl:pb-3">
                   <div className="min-w-0">
                     <h2 className="max-w-4xl text-3xl font-semibold leading-tight text-white sm:text-5xl xl:text-4xl">
                       {headline}
@@ -842,7 +850,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       {error ? 'Could not query the local backend.' : intro}
                     </p>
                     {error ? (
-                      <p className="mt-3 max-w-3xl rounded-xl border border-rose-500/20 bg-rose-500/8 px-4 py-3 text-sm leading-6 text-rose-200 xl:mt-2 xl:py-2 xl:text-xs xl:leading-5">
+                      <p className="mt-3 max-w-3xl rounded-xl border border-rose-500/2 bg-rose-500/8 px-4 py-3 text-sm leading-6 text-rose-200 xl:mt-2 xl:py-2 xl:text-xs xl:leading-5">
                         {error}
                       </p>
                     ) : null}
@@ -866,7 +874,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     </p>
                   </div>
 
-                  <div className="min-w-0 lg:border-l lg:border-white/8 lg:pl-7 xl:min-h-0 xl:pl-6">
+                  <div className="min-w-0 lg:border-l lg:border-white/2 lg:pl-7 xl:min-h-0 xl:pl-6">
                     <p className="text-[11px] font-black uppercase tracking-[0.24em] text-blue-300 xl:text-[10px]">
                       Local environment check
                     </p>
@@ -956,7 +964,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               </div>
             </main>
 
-            <footer className="border-t border-white/8 px-5 py-4 sm:px-14 sm:py-5 xl:px-10 xl:py-3">
+            <footer className="border-t border-white/2 px-5 py-4 sm:px-14 sm:py-5 xl:px-10 xl:py-3">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-col gap-2 sm:flex-row">
                   <button
@@ -981,7 +989,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     type="button"
                     onClick={onRefresh}
                     disabled={isChecking}
-                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
+                    className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/2 bg-white/5 px-5 py-3 text-sm font-semibold text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
                   >
                     <RefreshCw size={16} className={isChecking ? 'animate-spin' : ''} />
                     Refresh
@@ -991,7 +999,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       type="button"
                       onClick={() => void runHostAction('ask_codex')}
                       disabled={hostBusy}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-5 py-3 text-sm font-semibold text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
+                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/2 bg-white/5 px-5 py-3 text-sm font-semibold text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
                     >
                       <Terminal size={16} />
                       {hostBusy ? 'Opening terminal' : ONBOARDING_ASK_CODEX_LABEL}
@@ -1002,7 +1010,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       type="button"
                       onClick={onStartAppServer}
                       disabled={isStartingAppServer}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-500/25 bg-blue-500/10 px-5 py-3 text-sm font-semibold text-blue-200 transition-colors hover:bg-blue-500/18 disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
+                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-blue-500/2 bg-blue-500/10 px-5 py-3 text-sm font-semibold text-blue-200 transition-colors hover:bg-blue-500/18 disabled:cursor-not-allowed disabled:opacity-60 xl:px-4 xl:py-2.5"
                     >
                       <Play size={16} />
                       {isStartingAppServer ? 'Starting' : 'Start app-server'}
@@ -1010,7 +1018,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   ) : null}
                 </div>
                 {hostError ? (
-                  <p className="rounded-xl border border-rose-500/20 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-rose-200 xl:text-xs xl:leading-5">
+                  <p className="rounded-xl border border-rose-500/2 bg-rose-500/8 px-3 py-2 text-sm leading-6 text-rose-200 xl:text-xs xl:leading-5">
                     {hostError}
                   </p>
                 ) : (

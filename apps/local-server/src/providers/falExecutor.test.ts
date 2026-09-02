@@ -66,7 +66,7 @@ describe('fal executor', () => {
           headers: { 'content-type': 'application/json' },
         });
       }
-      return new Response(new Uint8Array([1, 2, 3]), {
+      return new Response(new Uint8Array([82, 73, 70, 70, 0, 0, 0, 0, 87, 69, 66, 80]), {
         headers: { 'content-type': 'image/webp' },
       });
     };
@@ -133,7 +133,7 @@ describe('fal executor', () => {
           headers: { 'content-type': 'application/json' },
         });
       }
-      return new Response(new Uint8Array([1, 2, 3]), {
+      return new Response(new Uint8Array([82, 73, 70, 70, 0, 0, 0, 0, 87, 69, 66, 80]), {
         headers: { 'content-type': 'image/webp' },
       });
     };
@@ -181,7 +181,7 @@ describe('fal executor', () => {
           headers: { 'content-type': 'application/json' },
         });
       }
-      return new Response(new Uint8Array([1, 2, 3]), {
+      return new Response(new Uint8Array([82, 73, 70, 70, 0, 0, 0, 0, 87, 69, 66, 80]), {
         headers: { 'content-type': 'image/webp' },
       });
     };
@@ -303,7 +303,7 @@ describe('fal executor', () => {
           statusText: 'Bad Gateway',
         });
       }
-      return new Response(new Uint8Array([4, 5, 6]), {
+      return new Response(new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]), {
         headers: { 'content-type': 'image/png' },
       });
     };
@@ -361,7 +361,7 @@ describe('fal executor', () => {
           headers: { 'content-type': 'application/json' },
         });
       }
-      return new Response(new Uint8Array([1, 2, 3]), {
+      return new Response(new Uint8Array([82, 73, 70, 70, 0, 0, 0, 0, 87, 69, 66, 80]), {
         headers: { 'content-type': 'image/webp' },
       });
     };

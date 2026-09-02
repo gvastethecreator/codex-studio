@@ -92,7 +92,7 @@ describe('comfyExecutor', () => {
         expect(url).toContain('filename=out.png');
         expect(url).toContain('subfolder=studio');
         expect(url).toContain('type=output');
-        return imageResponse(new Uint8Array([1, 2, 3, 4]));
+        return imageResponse(new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]));
       }
       throw new Error(`unexpected fetch ${url}`);
     };

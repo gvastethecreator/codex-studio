@@ -5,6 +5,9 @@ import { compileGoogleImageApiInput } from './externalProviderInputs';
 import { createGoogleImageExecutor } from './googleExecutor';
 import { getExternalProviderRuntimePreflight } from './runtimeConfig';
 
+const PNG_B64 =
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
+
 function inputToUrl(input: string | URL | Request) {
   if (typeof input === 'string') return input;
   if (input instanceof URL) return input.href;
@@ -79,7 +82,7 @@ describe('google executor', () => {
           candidates: [
             {
               content: {
-                parts: [{ inlineData: { mimeType: 'image/png', data: 'AQID' } }],
+                parts: [{ inlineData: { mimeType: 'image/png', data: PNG_B64 } }],
               },
             },
           ],
@@ -154,7 +157,7 @@ describe('google executor', () => {
             candidates: [
               {
                 content: {
-                  parts: [{ inlineData: { mimeType: 'image/jpeg', data: 'BAUG' } }],
+                  parts: [{ inlineData: { mimeType: 'image/jpeg', data: '/9j/4A==' } }],
                 },
               },
             ],

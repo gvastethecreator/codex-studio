@@ -131,7 +131,7 @@ describe('codex responses image executor', () => {
         new Response(
           [
             'event: response.failed',
-            'data: {"type":"response.failed","error":{"message":"safety system rejected the request"}}',
+            'data: {"type":"response.failed","error":{"message":"safety system rejected codex-secret\\u0000"}}',
             '',
           ].join('\n'),
           { headers: { 'content-type': 'text/event-stream' } },
@@ -150,6 +150,64 @@ describe('codex responses image executor', () => {
     ).rejects.toMatchObject({
       code: 'moderation',
       fallbackAllowed: false,
+      message: 'safety system rejected [redacted]',
     } satisfies Partial<SubscriptionHttpError>);
+  });
+
+  it('invalidates rejected credentials and redacts the access token from the error', async () => {
+    const invalidations: string[] = [];
+    const executor = createCodexResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      invalidateAccessToken: (message) => invalidations.push(message),
+      fetch: async () =>
+        new Response(JSON.stringify({ error: { message: 'rejected codex-secret' } }), {
+          status: 401,
+        }),
+      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+      writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+    });
+
+    await expect(
+      executor({
+        id: 'job-unauthorized',
+        workspaceId: 'workspace-1',
+        prompt: 'stone keep',
+        execution: null,
+      }),
+    ).rejects.toMatchObject({ code: 'invalid_grant', message: 'rejected [redacted]' });
+    expect(invalidations).toEqual(['rejected [redacted]']);
+  });
+
+  it('falls back instead of silently dropping source images beyond the HTTP limit', async () => {
+    const assets = Array.from({ length: 17 }, (_, index) => ({
+      role: 'input' as const,
+      name: `source-${index}.png`,
+      localPath: `D:/inputs/source-${index}.png`,
+    }));
+    const executor = createCodexResponsesImageExecutor({
+      getAccessToken: async () => {
+        throw new Error('must not load credentials');
+      },
+      fetch: async () => {
+        throw new Error('must not fetch');
+      },
+      readFile: () => new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]),
+    });
+    await expect(
+      executor({
+        id: 'job-too-many-sources',
+        workspaceId: 'workspace-1',
+        prompt: 'combine sources',
+        execution: null,
+        sourceSpec: createGenerationTaskSpec({
+          id: 'spec-too-many-sources',
+          task: 'image_edit',
+          providerId: 'codex',
+          prompt: 'combine sources',
+          assets,
+        }),
+      }),
+    ).rejects.toMatchObject({ code: 'source_limit', fallbackAllowed: true });
   });
 });

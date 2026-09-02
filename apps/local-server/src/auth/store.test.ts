@@ -1,9 +1,9 @@
-import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { afterEach, describe, expect, it } from 'vite-plus/test';
 
-import { createSubscriptionAuthStore } from './store';
+import { createSubscriptionAuthStore, resolveSubscriptionAuthFilePath } from './store';
 
 function makeStore() {
   const dir = mkdtempSync(path.join(os.tmpdir(), 'studio-oauth-'));
@@ -24,7 +24,7 @@ describe('subscription auth store', () => {
     }
   });
 
-  it('writes tokens to a library file and never through the public status shape', () => {
+  it('writes tokens to the private credential file and never through the public status shape', () => {
     const { dir, filePath, store } = makeStore();
     dirs.push(dir);
     store.writeProvider('codex', {
@@ -86,5 +86,37 @@ describe('subscription auth store', () => {
     store.bumpGeneration('codex');
     expect(store.generation('codex')).toBe(generationsBefore + 1);
     expect(store.readProvider('codex').accessToken).toBe('one');
+  });
+
+  it('resolves credentials outside the portable Studio Library', () => {
+    expect(
+      resolveSubscriptionAuthFilePath({
+        platform: 'win32',
+        homeDir: 'C:\\Users\\studio',
+        env: {
+          LOCALAPPDATA: 'C:\\Users\\studio\\AppData\\Local',
+          STUDIO_LIBRARY_DIR: 'D:\\Portable\\Codex Studio Library',
+        },
+      }),
+    ).toBe('C:\\Users\\studio\\AppData\\Local\\Codex Studio\\auth\\studio-oauth.json');
+    expect(
+      resolveSubscriptionAuthFilePath({
+        platform: 'linux',
+        homeDir: '/home/studio',
+        env: {
+          XDG_STATE_HOME: '/home/studio/.state',
+          STUDIO_LIBRARY_DIR: '/mnt/shared/studio-library',
+        },
+      }),
+    ).toBe('/home/studio/.state/codex-studio/auth/studio-oauth.json');
+  });
+
+  it('reports a corrupt credential file without overwriting it', () => {
+    const { dir, filePath, store } = makeStore();
+    dirs.push(dir);
+    writeFileSync(filePath, '{broken', 'utf8');
+
+    expect(() => store.read()).toThrow('credential store is corrupted');
+    expect(readFileSync(filePath, 'utf8')).toBe('{broken');
   });
 });

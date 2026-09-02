@@ -173,4 +173,14 @@ describe('provider runtime config', () => {
     });
     expect(JSON.stringify(preflight)).not.toContain('auth');
   });
+
+  it('describes XAI_API_KEY readiness as HTTP credentials, not Studio Sign in', () => {
+    const preflight = createGrokRuntimePreflight(
+      { ...READY_GROK_RUNTIME, canRunJobs: false, status: 'blocked' },
+      { env: { XAI_API_KEY: 'xai-secret' }, httpReady: true },
+    );
+    expect(preflight.diagnostics.join(' ')).toContain('xAI HTTP credentials are ready');
+    expect(preflight.diagnostics.join(' ')).not.toContain('Studio Sign in is ready');
+    expect(JSON.stringify(preflight)).not.toContain('xai-secret');
+  });
 });

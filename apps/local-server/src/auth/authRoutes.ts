@@ -8,6 +8,7 @@ import {
   SubscriptionAuthRouteError,
   type SubscriptionAuthController,
 } from './controller';
+import { safeOAuthText } from './oauthHttp';
 
 function providerFromParam(value: string): SubscriptionProviderId | null {
   return isSubscriptionProviderId(value) ? value : null;
@@ -18,6 +19,12 @@ export function createSubscriptionAuthRoutes(
 ) {
   const routes = new Hono();
 
+  routes.use('*', async (c, next) => {
+    await next();
+    c.header('Cache-Control', 'no-store');
+    c.header('Pragma', 'no-cache');
+  });
+
   const handleError = (error: unknown) => {
     if (error instanceof SubscriptionAuthRouteError) {
       return {
@@ -25,14 +32,22 @@ export function createSubscriptionAuthRoutes(
         status: error.status as 409 | 503,
       };
     }
-    const message = error instanceof Error ? error.message : 'Sign in failed.';
+    const candidate = safeOAuthText(error instanceof Error ? error.message : '');
+    const message = /^(ChatGPT|xAI|Studio Sign in credential store)\b/.test(candidate)
+      ? candidate
+      : 'Authentication request failed.';
     return { body: { error: message, code: 'auth_failed' }, status: 503 as const };
   };
 
   routes.get('/:provider', (c) => {
     const providerId = providerFromParam(c.req.param('provider'));
     if (!providerId) return c.json({ error: 'Unknown provider.', code: 'unknown_provider' }, 404);
-    return c.json(controller.readPublic(providerId));
+    try {
+      return c.json(controller.readPublic(providerId));
+    } catch (error) {
+      const mapped = handleError(error);
+      return c.json(mapped.body, mapped.status);
+    }
   });
 
   routes.post('/:provider/start', async (c) => {
@@ -49,13 +64,23 @@ export function createSubscriptionAuthRoutes(
   routes.post('/:provider/cancel', (c) => {
     const providerId = providerFromParam(c.req.param('provider'));
     if (!providerId) return c.json({ error: 'Unknown provider.', code: 'unknown_provider' }, 404);
-    return c.json(controller.cancel(providerId));
+    try {
+      return c.json(controller.cancel(providerId));
+    } catch (error) {
+      const mapped = handleError(error);
+      return c.json(mapped.body, mapped.status);
+    }
   });
 
-  routes.post('/:provider/logout', (c) => {
+  routes.post('/:provider/logout', async (c) => {
     const providerId = providerFromParam(c.req.param('provider'));
     if (!providerId) return c.json({ error: 'Unknown provider.', code: 'unknown_provider' }, 404);
-    return c.json(controller.logout(providerId));
+    try {
+      return c.json(await controller.logout(providerId));
+    } catch (error) {
+      const mapped = handleError(error);
+      return c.json(mapped.body, mapped.status);
+    }
   });
 
   return routes;

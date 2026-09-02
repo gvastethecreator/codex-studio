@@ -7,11 +7,13 @@ import {
   studioUserAgent,
 } from '../auth/constants';
 import { readChatgptAccountId } from '../auth/jwt';
-import { getUsableAccessToken } from '../auth/tokens';
+import { getUsableAccessToken, invalidateStoredAccessToken } from '../auth/tokens';
 import type { CodexImagegenInputItem } from './codexProvider';
 import type { GenerationProviderJob } from './types';
 import {
   isRecord,
+  ExternalProviderImageError,
+  readResponseTextLimited,
   responseSnippet,
   storeInlineImageResult,
   type ExternalProviderFetch,
@@ -29,6 +31,8 @@ export interface CodexResponsesImageExecutorDependencies {
   readFile?: ReadLocalFile;
   now?: () => number;
   getAccessToken?: () => Promise<string>;
+  invalidateAccessToken?: (message: string) => void;
+  requestTimeoutMs?: number;
 }
 
 const CODEX_CHAT_MODEL = 'gpt-5.5';
@@ -152,18 +156,20 @@ function parseSseJson(raw: string): unknown[] {
   return events;
 }
 
-function sseFailureMessage(event: Record<string, unknown>) {
+function sseFailureMessage(event: Record<string, unknown>, secrets: readonly string[]) {
   const error = event.error;
-  if (typeof error === 'string' && error.trim()) return error.trim();
+  if (typeof error === 'string' && error.trim()) return responseSnippet(error, secrets);
   if (isRecord(error) && typeof error.message === 'string' && error.message.trim()) {
-    return error.message.trim();
+    return responseSnippet(error.message, secrets);
   }
-  if (typeof event.message === 'string' && event.message.trim()) return event.message.trim();
+  if (typeof event.message === 'string' && event.message.trim()) {
+    return responseSnippet(event.message, secrets);
+  }
   return 'Codex Responses rejected the image request.';
 }
 
-function classifySseFailure(event: Record<string, unknown>) {
-  const message = sseFailureMessage(event);
+function classifySseFailure(event: Record<string, unknown>, secrets: readonly string[]) {
+  const message = sseFailureMessage(event, secrets);
   const lower = message.toLowerCase();
   if (lower.includes('moderat') || lower.includes('safety')) {
     return new SubscriptionHttpError(message, {
@@ -182,16 +188,16 @@ function isFailedSseEvent(event: unknown): event is Record<string, unknown> {
   return event.type === 'response.failed' || event.type === 'error' || event.status === 'failed';
 }
 
-function summarizeCodexError(body: string) {
+function summarizeCodexError(body: string, secrets: readonly string[]) {
   try {
     const payload = JSON.parse(body) as unknown;
     if (isRecord(payload) && isRecord(payload.error) && typeof payload.error.message === 'string') {
-      return payload.error.message.trim().slice(0, 500);
+      return responseSnippet(payload.error.message.trim(), secrets);
     }
   } catch {
     // Fall through to a bounded raw snippet.
   }
-  return responseSnippet(body).slice(0, 500);
+  return responseSnippet(body, secrets);
 }
 
 function classifyCodexHttpFailure(status: number, message: string): SubscriptionHttpError {
@@ -240,17 +246,25 @@ export function createCodexResponsesImageExecutor({
   readFile = (filePath) => readFileSync(filePath),
   now = Date.now,
   getAccessToken = () => getUsableAccessToken('codex', { env, fetch: fetchImpl as typeof fetch }),
+  invalidateAccessToken = (message) => invalidateStoredAccessToken('codex', message),
+  requestTimeoutMs = 120_000,
 }: CodexResponsesImageExecutorDependencies = {}) {
   return async (job: GenerationProviderJob) => {
     const { compileCodexImagegenInput } = await import('./codexProvider');
     const compiled = compileCodexImagegenInput(job);
     const startedAt = now();
-    const token = await getAccessToken();
     const quality = resolveCodexImageQuality(job.execution?.model, job.execution?.reasoningEffort);
     const size = resolveCodexImageSize(job);
-    const inputImages = compiled.payload.imageInputs
-      .slice(0, MAX_INPUT_IMAGES)
-      .map((item) => toInputImagePart(item, readFile));
+    if (compiled.payload.imageInputs.length > MAX_INPUT_IMAGES) {
+      throw new SubscriptionHttpError(
+        `Codex HTTP image edits accept at most ${MAX_INPUT_IMAGES} source images. Codex Product Runtime can take more.`,
+        { code: 'source_limit', fallbackAllowed: true },
+      );
+    }
+    const inputImages = compiled.payload.imageInputs.map((item) =>
+      toInputImagePart(item, readFile),
+    );
+    const token = await getAccessToken();
     const payload = {
       model: CODEX_CHAT_MODEL,
       store: false,
@@ -286,12 +300,16 @@ export function createCodexResponsesImageExecutor({
     if (accountId) headers['ChatGPT-Account-ID'] = accountId;
 
     let response: Awaited<ReturnType<ExternalProviderFetch>>;
+    const requestSignal = job.signal
+      ? AbortSignal.any([job.signal, AbortSignal.timeout(requestTimeoutMs)])
+      : AbortSignal.timeout(requestTimeoutMs);
     try {
       response = await fetchImpl(`${CODEX_RESPONSES_BASE_URL}/responses`, {
         method: 'POST',
         headers,
         body: JSON.stringify(payload),
-        signal: job.signal,
+        redirect: 'error',
+        signal: requestSignal,
       });
     } catch (error) {
       if (isAbortError(error)) throw error;
@@ -303,7 +321,7 @@ export function createCodexResponsesImageExecutor({
 
     let raw = '';
     try {
-      raw = await response.text();
+      raw = await readResponseTextLimited(response, 5 * 1024 * 1024);
     } catch (error) {
       if (isAbortError(error) || job.signal?.aborted) {
         const abortError = error instanceof Error ? error : new Error('Codex Responses aborted.');
@@ -321,12 +339,14 @@ export function createCodexResponsesImageExecutor({
       throw abortError;
     }
     if (!response.ok) {
-      throw classifyCodexHttpFailure(response.status, summarizeCodexError(raw));
+      const failure = classifyCodexHttpFailure(response.status, summarizeCodexError(raw, [token]));
+      if (response.status === 401) invalidateAccessToken(failure.message);
+      throw failure;
     }
 
     const events = parseSseJson(raw);
     for (const event of events) {
-      if (isFailedSseEvent(event)) throw classifySseFailure(event);
+      if (isFailedSseEvent(event)) throw classifySseFailure(event, [token]);
     }
     let finalB64: string | null = null;
     for (const event of events) {
@@ -340,19 +360,27 @@ export function createCodexResponsesImageExecutor({
       });
     }
 
-    return storeInlineImageResult({
-      providerId: 'codex',
-      providerSlug: 'codex-http',
-      model: CODEX_IMAGE_MODEL,
-      endpointBase: CODEX_RESPONSES_BASE_URL,
-      job: { id: job.id },
-      compiledInput: compiled,
-      responseJson: { quality, size },
-      image: { data: finalB64, mimeType: 'image/png' },
-      requestAttempts: 1,
-      startedAt,
-      diagnostics: { runtime: 'subscription_http', quality, size },
-      files: { resolveLibraryPath: resolveLibraryPathFn, mkdir, writeFile, now },
-    });
+    try {
+      return storeInlineImageResult({
+        providerId: 'codex',
+        providerSlug: 'codex-http',
+        model: CODEX_IMAGE_MODEL,
+        endpointBase: CODEX_RESPONSES_BASE_URL,
+        job: { id: job.id },
+        compiledInput: compiled,
+        responseJson: { quality, size },
+        image: { data: finalB64, mimeType: 'image/png' },
+        requestAttempts: 1,
+        startedAt,
+        diagnostics: { runtime: 'subscription_http', quality, size },
+        files: { resolveLibraryPath: resolveLibraryPathFn, mkdir, writeFile, now },
+      });
+    } catch (error) {
+      if (!(error instanceof ExternalProviderImageError)) throw error;
+      throw new SubscriptionHttpError(error.message, {
+        code: 'empty_response',
+        fallbackAllowed: true,
+      });
+    }
   };
 }

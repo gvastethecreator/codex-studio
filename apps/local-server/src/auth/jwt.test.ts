@@ -32,4 +32,14 @@ describe('subscription jwt claims', () => {
     expect(readJwtAccountLabel(null)).toBeNull();
     expect(readJwtExpiryMs('header.eyJmb28iOiJiYXIifQ.sig')).toBeNull();
   });
+
+  it('rejects claims that are unsafe for headers or dates', () => {
+    const token = encodeJwt({
+      exp: Number.MAX_SAFE_INTEGER,
+      'https://api.openai.com/auth': { chatgpt_account_id: 'acct-9\r\ninjected' },
+    });
+    expect(readChatgptAccountId(token)).toBeNull();
+    expect(readJwtExpiryMs(token)).toBeNull();
+    expect(readJwtAccountLabel(encodeJwt({ email: '\u0000\r\n' }))).toBeNull();
+  });
 });

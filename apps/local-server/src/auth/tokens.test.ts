@@ -8,6 +8,7 @@ import {
   getUsableAccessToken,
   isCodexHttpCredentialReady,
   isGrokHttpCredentialReady,
+  tokensFromOAuthPayload,
 } from './tokens';
 
 describe('subscription tokens', () => {
@@ -47,6 +48,16 @@ describe('subscription tokens', () => {
       getUsableAccessToken('xai', { store, env: { XAI_API_KEY: 'xai-secret' } }),
     ).resolves.toBe('xai-secret');
     expect(isGrokHttpCredentialReady(store, { XAI_API_KEY: 'xai-secret' })).toBe(true);
+  });
+
+  it('rejects OAuth token responses that require a non-Bearer authorization scheme', () => {
+    expect(() =>
+      tokensFromOAuthPayload(
+        { access_token: 'access-secret', token_type: 'MAC' },
+        { refreshToken: null, accountLabel: null, chatgptAccountId: null },
+        Date.parse('2026-09-01T00:00:00.000Z'),
+      ),
+    ).toThrow('unsupported token type');
   });
 
   it('refreshes an expired Codex token and refuses invalid_grant without fallback', async () => {
@@ -110,6 +121,115 @@ describe('subscription tokens', () => {
     });
   });
 
+  it('preserves credentials when a successful refresh response is malformed', async () => {
+    const store = makeStore();
+    store.writeProvider('codex', {
+      status: 'logged_in',
+      accessToken: 'stale-access',
+      refreshToken: 'refresh-secret',
+      expiresAt: '2020-01-01T00:00:00.000Z',
+      accountLabel: 'user@example.com',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2020-01-01T00:00:00.000Z',
+    });
+
+    await expect(
+      getUsableAccessToken('codex', {
+        store,
+        fetch: (async (_input: RequestInfo | URL) =>
+          new Response('{}', { status: 200 })) as typeof fetch,
+      }),
+    ).rejects.toMatchObject({ code: 'refresh_failed', fallbackAllowed: true });
+    expect(store.readProvider('codex')).toMatchObject({
+      status: 'refresh_failed',
+      accessToken: 'stale-access',
+      refreshToken: 'refresh-secret',
+    });
+  });
+
+  it('clears xAI credentials when a forbidden refresh reports invalid_grant', async () => {
+    const store = makeStore();
+    store.writeProvider('xai', {
+      status: 'logged_in',
+      accessToken: 'stale-access',
+      refreshToken: 'xai-refresh',
+      expiresAt: '2020-01-01T00:00:00.000Z',
+      accountLabel: 'grok-user',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2020-01-01T00:00:00.000Z',
+    });
+    await expect(
+      getUsableAccessToken('xai', {
+        store,
+        env: {},
+        fetch: (async (_input: RequestInfo | URL) =>
+          new Response(JSON.stringify({ error: 'invalid_grant' }), {
+            status: 403,
+          })) as typeof fetch,
+      }),
+    ).rejects.toMatchObject({ code: 'invalid_grant', fallbackAllowed: false });
+    expect(store.readProvider('xai')).toMatchObject({
+      status: 'refresh_failed',
+      accessToken: null,
+      refreshToken: null,
+    });
+  });
+
+  it('does not refresh a valid xAI token more than five minutes early', async () => {
+    const store = makeStore();
+    const now = Date.parse('2026-09-01T00:00:00.000Z');
+    store.writeProvider('xai', {
+      status: 'logged_in',
+      accessToken: 'current-access',
+      refreshToken: 'xai-refresh',
+      expiresAt: new Date(now + 10 * 60_000).toISOString(),
+      accountLabel: 'grok-user',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: new Date(now).toISOString(),
+    });
+
+    await expect(
+      getUsableAccessToken('xai', {
+        store,
+        env: {},
+        now: () => now,
+        fetch: (async (_input: RequestInfo | URL, _init?: RequestInit): Promise<Response> => {
+          throw new Error('refresh should not run');
+        }) as typeof fetch,
+      }),
+    ).resolves.toBe('current-access');
+  });
+
+  it('allows CLI fallback when refresh transport or provider availability fails', async () => {
+    for (const failure of [
+      () => Promise.reject(new TypeError('fetch failed')),
+      () => Promise.resolve(new Response('unavailable', { status: 503 })),
+    ]) {
+      const store = makeStore();
+      store.writeProvider('codex', {
+        status: 'logged_in',
+        accessToken: 'stale-access',
+        refreshToken: 'refresh-secret',
+        expiresAt: '2020-01-01T00:00:00.000Z',
+        accountLabel: 'user@example.com',
+        chatgptAccountId: null,
+        lastError: null,
+        updatedAt: '2020-01-01T00:00:00.000Z',
+      });
+
+      await expect(
+        getUsableAccessToken('codex', {
+          store,
+          fetch: failure as unknown as typeof fetch,
+        }),
+      ).rejects.toMatchObject({ fallbackAllowed: true });
+      expect(store.readProvider('codex').status).toBe('refresh_failed');
+    }
+  });
+
   it('does not write a refresh after logout', async () => {
     const store = makeStore();
     store.writeProvider('codex', {
@@ -127,9 +247,14 @@ describe('subscription tokens', () => {
       new Promise<Response>((resolve) => {
         finishRefresh = resolve;
       });
+    const revoked: string[] = [];
     const pending = getUsableAccessToken('codex', {
       store,
       fetch: fetchMock as typeof fetch,
+      revokeToken: async (_providerId, record) => {
+        revoked.push(record.refreshToken ?? record.accessToken ?? '');
+        return 'revoked';
+      },
     });
     store.clearProvider('codex');
     finishRefresh?.(
@@ -144,5 +269,41 @@ describe('subscription tokens', () => {
     );
     await expect(pending).rejects.toMatchObject({ code: 'not_signed_in' });
     expect(store.readProvider('codex').accessToken).toBeNull();
+    expect(revoked).toEqual(['new-refresh']);
+  });
+
+  it('does not share an in-flight refresh between different credential stores', async () => {
+    const firstStore = makeStore();
+    const secondStore = makeStore();
+    for (const [store, refreshToken] of [
+      [firstStore, 'refresh-one'],
+      [secondStore, 'refresh-two'],
+    ] as const) {
+      store.writeProvider('codex', {
+        status: 'logged_in',
+        accessToken: 'expired',
+        refreshToken,
+        expiresAt: '2020-01-01T00:00:00.000Z',
+        accountLabel: null,
+        chatgptAccountId: null,
+        lastError: null,
+        updatedAt: '2020-01-01T00:00:00.000Z',
+      });
+    }
+    const refresh = (accessToken: string) =>
+      (async (_input: RequestInfo | URL, init?: RequestInit) => {
+        expect(init?.redirect).toBe('error');
+        return new Response(
+          JSON.stringify({ access_token: accessToken, refresh_token: `${accessToken}-refresh` }),
+          { status: 200, headers: { 'Content-Type': 'application/json' } },
+        );
+      }) as typeof fetch;
+
+    await expect(
+      Promise.all([
+        getUsableAccessToken('codex', { store: firstStore, fetch: refresh('access-one') }),
+        getUsableAccessToken('codex', { store: secondStore, fetch: refresh('access-two') }),
+      ]),
+    ).resolves.toEqual(['access-one', 'access-two']);
   });
 });

@@ -1,5 +1,5 @@
 import { IconCheck, IconCopy, IconExternalLink } from '@tabler/icons-react';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import type {
   SubscriptionAuthPublicStatus,
@@ -12,39 +12,48 @@ import {
   startSubscriptionAuth,
 } from '../../services/studio-api/auth';
 import { createStudioEventStream } from '../../services/studioEventSource';
+import { subscriptionAuthPillClass } from '../../lib/providerBrand';
 import {
-  subscriptionAccountTitle,
-  subscriptionAccountUsedBy,
   subscriptionAuthOpenLabel,
   subscriptionAuthStatusLabel,
 } from '../../lib/subscriptionAuthUi';
 
-export function SubscriptionAuthControls({
-  providerId,
-  onChanged,
-}: {
-  providerId: SubscriptionProviderId;
-  onChanged: () => void;
-}) {
+const controlBase =
+  'inline-flex h-9 items-center justify-center gap-2 rounded-lg px-3 text-[11px] font-semibold transition-[color,background-color,border-color,transform] active:scale-[0.96] disabled:cursor-not-allowed disabled:opacity-60';
+const controlPrimary = `${controlBase} border border-accent-400/2 bg-accent-500/18 text-accent-50 hover:bg-accent-500/28`;
+const controlGhost = `${controlBase} border border-white/2 bg-white/[0.04] text-zinc-200 hover:bg-white/8`;
+const controlQuiet = `${controlBase} border border-white/2 bg-transparent text-zinc-400 hover:border-rose-500/2 hover:bg-rose-500/10 hover:text-rose-100`;
+
+export function SubscriptionAuthControls({ providerId }: { providerId: SubscriptionProviderId }) {
   const [status, setStatus] = useState<SubscriptionAuthPublicStatus | null>(null);
+  const [isLoadingStatus, setIsLoadingStatus] = useState(true);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
-  const onChangedRef = useRef(onChanged);
-  onChangedRef.current = onChanged;
+
+  const loadStatus = useCallback(
+    async (signal?: AbortSignal) => {
+      setIsLoadingStatus(true);
+      setError(null);
+      try {
+        const next = await getSubscriptionAuthStatus(providerId, { signal });
+        if (signal?.aborted) return;
+        setStatus(next);
+      } catch (loadError) {
+        if (signal?.aborted) return;
+        setError(loadError instanceof Error ? loadError.message : 'Unable to load Sign in status.');
+      } finally {
+        if (!signal?.aborted) setIsLoadingStatus(false);
+      }
+    },
+    [providerId],
+  );
 
   useEffect(() => {
     const controller = new AbortController();
-    void getSubscriptionAuthStatus(providerId, { signal: controller.signal })
-      .then((next) => {
-        setStatus(next);
-      })
-      .catch((loadError) => {
-        if (controller.signal.aborted) return;
-        setError(loadError instanceof Error ? loadError.message : 'Unable to load Sign in status.');
-      });
+    void loadStatus(controller.signal);
     return () => controller.abort();
-  }, [providerId]);
+  }, [loadStatus]);
 
   useEffect(() => {
     const stream = createStudioEventStream();
@@ -53,9 +62,7 @@ export function SubscriptionAuthControls({
       void getSubscriptionAuthStatus(providerId)
         .then((next) => {
           setStatus(next);
-          if (next.status === 'logged_in' || next.status === 'logged_out') {
-            onChangedRef.current();
-          }
+          setError(null);
         })
         .catch(() => undefined);
     });
@@ -75,7 +82,7 @@ export function SubscriptionAuthControls({
       void getSubscriptionAuthStatus(providerId, { signal })
         .then((next) => {
           setStatus(next);
-          if (next.status === 'logged_in') onChangedRef.current();
+          setError(null);
         })
         .catch(() => undefined);
     }, 1500);
@@ -85,9 +92,8 @@ export function SubscriptionAuthControls({
     };
   }, [status?.status, providerId]);
 
-  const label = subscriptionAccountTitle(providerId);
   const statusLabel = subscriptionAuthStatusLabel(status?.status ?? null);
-  const signInDisabled = busy || status === null || status.status === 'pending';
+  const signInDisabled = busy || isLoadingStatus || status?.status === 'pending';
 
   const run = async (work: () => Promise<SubscriptionAuthPublicStatus>) => {
     setBusy(true);
@@ -95,7 +101,6 @@ export function SubscriptionAuthControls({
     try {
       const next = await work();
       setStatus(next);
-      onChangedRef.current();
     } catch (actionError) {
       setError(actionError instanceof Error ? actionError.message : 'Sign in failed.');
     } finally {
@@ -105,91 +110,117 @@ export function SubscriptionAuthControls({
 
   const copyCode = async () => {
     if (!status?.userCode) return;
-    await navigator.clipboard.writeText(status.userCode);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1500);
+    try {
+      await navigator.clipboard.writeText(status.userCode);
+      setError(null);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+      setError('Unable to copy. Copy the code manually.');
+    }
   };
 
   return (
-    <div className="mt-3 grid gap-3 border-t border-white/10 pt-3">
-      <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0">
-          <div className="text-xs font-semibold text-white">{label}</div>
-          <p className="mt-0.5 text-[11px] leading-relaxed text-zinc-500">
-            {subscriptionAccountUsedBy(providerId)}
-          </p>
-        </div>
-        <span className="shrink-0 text-[11px] font-medium text-zinc-300">{statusLabel}</span>
-      </div>
-      {status?.accountLabel ? (
-        <p className="truncate text-[12px] leading-relaxed text-zinc-300">{status.accountLabel}</p>
-      ) : null}
+    <div className="mt-4 flex flex-col gap-3 border-t border-white/2 pt-3">
       {status?.status === 'pending' && status.verificationUrl ? (
-        <div className="grid gap-2 rounded-lg border border-accent-500/20 bg-accent-500/8 p-3">
-          <p className="text-[12px] leading-relaxed text-zinc-300">
-            Confirm this code in the browser. Studio finishes Sign in automatically.
-          </p>
+        <div className="grid gap-3 rounded-lg border border-accent-400/2 bg-accent-500/10 p-3">
+          <div className="flex items-start justify-between gap-2">
+            <p className="text-[12px] leading-relaxed text-zinc-300">
+              Confirm this code in the browser. Studio finishes Sign in automatically.
+            </p>
+            <span
+              className={`inline-flex h-6 shrink-0 items-center rounded-md border px-2 text-[10px] font-semibold ${subscriptionAuthPillClass(status.status)}`}
+            >
+              {statusLabel}
+            </span>
+          </div>
           {status.userCode ? (
             <div className="flex items-center gap-2">
-              <code className="min-w-0 flex-1 truncate rounded-md bg-black/40 px-2 py-1.5 font-mono text-sm tracking-[0.18em] text-white">
+              <code className="min-w-0 flex-1 truncate rounded-lg bg-black/45 px-3 py-2 font-mono text-sm tracking-[0.18em] text-white">
                 {status.userCode}
               </code>
               <button
                 type="button"
                 onClick={() => void copyCode()}
                 aria-label="Copy user code"
-                className="flex size-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-200 transition-colors hover:bg-white/10"
+                className={`${controlGhost} size-9 shrink-0 px-0`}
               >
                 {copied ? <IconCheck size={15} /> : <IconCopy size={15} />}
               </button>
             </div>
           ) : null}
-          <a
-            href={status.verificationUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex h-9 items-center justify-center gap-2 rounded-lg border border-accent-400/30 bg-accent-500/15 px-3 text-[11px] font-semibold text-accent-100 transition-colors hover:bg-accent-500/25"
-          >
-            <IconExternalLink size={14} />
-            {subscriptionAuthOpenLabel(providerId)}
-          </a>
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-2">
+            <a
+              href={status.verificationUrl}
+              target="_blank"
+              rel="noreferrer"
+              className={controlPrimary}
+            >
+              <IconExternalLink size={14} />
+              {subscriptionAuthOpenLabel(providerId)}
+            </a>
+            <button
+              type="button"
+              disabled={busy}
+              onClick={() => void run(() => cancelSubscriptionAuth(providerId))}
+              className={controlGhost}
+            >
+              Cancel
+            </button>
+          </div>
         </div>
+      ) : (
+        <div className="flex items-center justify-between gap-2">
+          <span
+            className={`inline-flex h-6 items-center rounded-md border px-2 text-[10px] font-semibold ${subscriptionAuthPillClass(status?.status)}`}
+          >
+            {statusLabel}
+          </span>
+          {status?.status === 'logged_in' ? (
+            <button
+              type="button"
+              disabled={busy}
+              onClick={() => void run(() => logoutSubscriptionAuth(providerId))}
+              className={controlQuiet}
+            >
+              Sign out
+            </button>
+          ) : null}
+        </div>
+      )}
+      {status?.accountLabel ? (
+        <p className="truncate text-[12px] leading-relaxed text-zinc-300">{status.accountLabel}</p>
       ) : null}
+      <span role="status" aria-live="polite" className="sr-only">
+        {copied ? 'User code copied.' : ''}
+      </span>
       {error || status?.lastError ? (
-        <p className="text-[12px] leading-relaxed text-rose-300">{error || status?.lastError}</p>
+        <p role="alert" className="text-[12px] leading-relaxed text-rose-300">
+          {error || status?.lastError}
+        </p>
       ) : null}
-      <div className="flex flex-wrap gap-2">
-        {status?.status === 'logged_in' ? (
-          <button
-            type="button"
-            disabled={busy}
-            onClick={() => void run(() => logoutSubscriptionAuth(providerId))}
-            className="h-9 rounded-lg border border-white/15 px-3 text-[11px] font-semibold text-zinc-200 transition-colors hover:bg-white/8 disabled:opacity-60"
-          >
-            Sign out
-          </button>
-        ) : status?.status === 'pending' ? (
-          <button
-            type="button"
-            disabled={busy}
-            onClick={() => void run(() => cancelSubscriptionAuth(providerId))}
-            className="h-9 rounded-lg border border-white/15 px-3 text-[11px] font-semibold text-zinc-200 transition-colors hover:bg-white/8 disabled:opacity-60"
-          >
-            Cancel
-          </button>
-        ) : (
-          <button
-            type="button"
-            disabled={signInDisabled}
-            onClick={() => void run(() => startSubscriptionAuth(providerId))}
-            className="h-9 rounded-lg border border-accent-500/30 bg-accent-500/10 px-3 text-[11px] font-semibold text-accent-100 transition-colors hover:bg-accent-500/20 disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            Sign in
-          </button>
-        )}
-      </div>
+      {status === null ? (
+        <button
+          type="button"
+          disabled={busy || isLoadingStatus}
+          onClick={() => void loadStatus()}
+          className={`${controlGhost} w-full`}
+        >
+          {isLoadingStatus ? 'Loading status' : 'Retry status'}
+        </button>
+      ) : status.status === 'pending' ? null : status.status === 'logged_in' ? null : (
+        <button
+          type="button"
+          disabled={signInDisabled}
+          onClick={() => void run(() => startSubscriptionAuth(providerId))}
+          className={`${controlPrimary} w-full`}
+        >
+          Sign in
+        </button>
+      )}
       <p className="text-[11px] leading-relaxed text-zinc-600">
-        Tokens stay in the Studio Library. CLI stays as automatic fallback.
+        Tokens stay in your private app-data folder. CLI stays as automatic fallback.
       </p>
     </div>
   );

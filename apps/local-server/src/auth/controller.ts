@@ -3,12 +3,14 @@ import type {
   SubscriptionAuthUpdatedEventPayload,
   SubscriptionProviderId,
 } from '../../../../packages/shared/src';
-import { inspectLibrary } from '../library';
 import { publishEvent } from '../events';
 import { startDeviceCode, type DeviceCodeStart } from './deviceCode';
+import { safeOAuthText } from './oauthHttp';
+import { revokeSubscriptionToken } from './revoke';
 import {
   getSubscriptionAuthStore,
   isSubscriptionLoggedIn,
+  type StoredSubscriptionTokens,
   type SubscriptionAuthStore,
 } from './store';
 import type { AuthFetch } from './tokens';
@@ -32,12 +34,18 @@ interface PendingLogin {
   epoch: number;
 }
 
+interface StartingLogin {
+  controller: AbortController;
+  work: Promise<SubscriptionAuthPublicStatus>;
+}
+
 export interface SubscriptionAuthControllerDependencies {
   store?: SubscriptionAuthStore;
   fetch?: AuthFetch;
   now?: () => number;
   sleep?: (ms: number, signal?: AbortSignal) => Promise<void>;
-  inspectLibraryWritable?: () => boolean;
+  ensureCredentialStoreWritable?: () => void;
+  revokeToken?: typeof revokeSubscriptionToken;
   publish?: (type: string, payload: SubscriptionAuthUpdatedEventPayload) => void;
 }
 
@@ -62,11 +70,12 @@ export function createSubscriptionAuthController({
   fetch: fetchImpl,
   now,
   sleep,
-  inspectLibraryWritable = () => inspectLibrary().writable,
+  ensureCredentialStoreWritable = () => store.assertWritable(),
+  revokeToken = revokeSubscriptionToken,
   publish = (type, payload) => publishEvent(type, payload),
 }: SubscriptionAuthControllerDependencies = {}) {
   const pending = new Map<SubscriptionProviderId, PendingLogin>();
-  const starting = new Map<SubscriptionProviderId, Promise<SubscriptionAuthPublicStatus>>();
+  const starting = new Map<SubscriptionProviderId, StartingLogin>();
 
   const emit = (
     providerId: SubscriptionProviderId,
@@ -97,16 +106,20 @@ export function createSubscriptionAuthController({
   };
 
   const assertWritable = () => {
-    if (!inspectLibraryWritable()) {
+    try {
+      ensureCredentialStoreWritable();
+    } catch {
       throw new SubscriptionAuthRouteError(
-        'Studio Library is not writable. Repair the library before Sign in.',
+        'Studio cannot write its private credential store. Repair app-data permissions before Sign in.',
         503,
-        'library_not_writable',
+        'credential_store_not_writable',
       );
     }
   };
 
   const abortPending = (providerId: SubscriptionProviderId) => {
+    const startingLogin = starting.get(providerId);
+    if (startingLogin) startingLogin.controller.abort();
     const active = pending.get(providerId);
     if (!active) return;
     active.controller.abort();
@@ -122,7 +135,9 @@ export function createSubscriptionAuthController({
       return publicFromPending(providerId, existingPending.start);
     }
     const inFlight = starting.get(providerId);
-    if (inFlight) return inFlight;
+    if (inFlight) return inFlight.work;
+
+    const startController = new AbortController();
 
     const work = (async () => {
       const epoch = store.generation(providerId);
@@ -134,38 +149,72 @@ export function createSubscriptionAuthController({
           'already_signed_in',
         );
       }
-      const started = await startDeviceCode(providerId, { fetch: fetchImpl, now, sleep });
+      let started: DeviceCodeStart;
+      try {
+        started = await startDeviceCode(providerId, {
+          fetch: fetchImpl,
+          now,
+          sleep,
+          signal: startController.signal,
+        });
+      } catch (error) {
+        if (startController.signal.aborted) return readPublic(providerId);
+        throw error;
+      }
       if (store.generation(providerId) !== epoch) {
         return readPublic(providerId);
       }
       const controller = new AbortController();
+      let issuedTokens: StoredSubscriptionTokens | null = null;
       const login: PendingLogin = {
         start: started,
         controller,
         epoch,
         poll: started
           .poll(controller.signal)
-          .then((tokens) => {
-            if (controller.signal.aborted) return;
-            if (pending.get(providerId) !== login) return;
-            if (store.generation(providerId) !== epoch) return;
+          .then(async (tokens) => {
+            issuedTokens = tokens;
+            if (
+              controller.signal.aborted ||
+              pending.get(providerId) !== login ||
+              store.generation(providerId) !== epoch
+            ) {
+              try {
+                await revokeToken(providerId, tokens, { fetch: fetchImpl });
+              } catch {
+                // A cancelled login must never restore or retain its issued token locally.
+              }
+              return;
+            }
             store.writeProvider(providerId, tokens);
             pending.delete(providerId);
             emit(providerId, 'logged_in', tokens.accountLabel);
           })
-          .catch((error) => {
+          .catch(async (error) => {
             if (controller.signal.aborted || pending.get(providerId) !== login) return;
             pending.delete(providerId);
             if (error instanceof Error && error.name === 'AbortError') return;
-            const message = error instanceof Error ? error.message : 'Sign in failed.';
-            const previous = store.readProvider(providerId);
-            store.writeProvider(providerId, {
-              ...previous,
-              status: previous.accessToken ? previous.status : 'logged_out',
-              lastError: message,
-            });
-            const next = readPublic(providerId);
-            emit(providerId, next.status, next.accountLabel);
+            const message =
+              safeOAuthText(error instanceof Error ? error.message : '') || 'Sign in failed.';
+            if (issuedTokens) {
+              try {
+                await revokeToken(providerId, issuedTokens, { fetch: fetchImpl });
+              } catch {
+                // Token persistence already failed; revocation remains best effort.
+              }
+            }
+            try {
+              const previous = store.readProvider(providerId);
+              store.writeProvider(providerId, {
+                ...previous,
+                status: previous.accessToken ? previous.status : 'logged_out',
+                lastError: message,
+              });
+              const next = readPublic(providerId);
+              emit(providerId, next.status, next.accountLabel);
+            } catch {
+              emit(providerId, 'logged_out', null);
+            }
           }),
       };
       pending.set(providerId, login);
@@ -173,11 +222,11 @@ export function createSubscriptionAuthController({
       return publicFromPending(providerId, started);
     })();
 
-    starting.set(providerId, work);
+    starting.set(providerId, { controller: startController, work });
     try {
       return await work;
     } finally {
-      if (starting.get(providerId) === work) starting.delete(providerId);
+      if (starting.get(providerId)?.work === work) starting.delete(providerId);
     }
   };
 
@@ -189,10 +238,16 @@ export function createSubscriptionAuthController({
     return next;
   };
 
-  const logout = (providerId: SubscriptionProviderId) => {
+  const logout = async (providerId: SubscriptionProviderId) => {
     abortPending(providerId);
+    const record = store.readProvider(providerId);
     store.clearProvider(providerId);
     emit(providerId, 'logged_out', null);
+    try {
+      await revokeToken(providerId, record, { fetch: fetchImpl });
+    } catch {
+      // Local logout is authoritative; provider revocation is best effort.
+    }
     return readPublic(providerId);
   };
 

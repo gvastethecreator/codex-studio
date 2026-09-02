@@ -27,6 +27,8 @@ import { QueueProgressBar } from './header/QueueProgressBar';
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import { getRecipeShellTitle } from '../lib/recipeShellMetadata';
 import type { GenerationProviderId } from '../packages/shared/src';
+import { providerBrandChipLabel } from '../lib/providerBrand';
+import { ProviderBrandMark } from './ProviderBrandMark';
 
 export interface HeaderToolbarProps {
   isGenerating: boolean;
@@ -115,10 +117,10 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const providerShortLabel = activeProvider.shortLabel;
   const runtimeToneClass =
     runtimeStatus.tone === 'success'
-      ? 'border-emerald-500/20 bg-emerald-500/8 text-emerald-200'
+      ? 'border-emerald-500/2 bg-emerald-500/8 text-emerald-200'
       : runtimeStatus.tone === 'warning'
-        ? 'border-amber-500/20 bg-amber-500/8 text-amber-200'
-        : 'border-rose-500/20 bg-rose-500/8 text-rose-200';
+        ? 'border-amber-500/2 bg-amber-500/8 text-amber-200'
+        : 'border-rose-500/2 bg-rose-500/8 text-rose-200';
 
   React.useEffect(() => {
     if (!isMobileWorkspaceOpen && !isMobileCommandOpen) return;
@@ -159,7 +161,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   );
 
   return (
-    <TopToolbar className="studio-toolbar-shell w-full min-h-10 bg-black/80 flex items-center px-2 py-1 z-40 shrink-0 border-b border-white/5">
+    <TopToolbar className="studio-toolbar-shell w-full min-h-10 bg-black/80 flex items-center px-2 py-1 z-40 shrink-0 border-b border-white/2">
       <div className="w-full flex flex-nowrap items-center justify-between gap-1 sm:gap-2 relative z-50">
         <div className="flex min-w-0 flex-1 flex-nowrap items-center gap-1 sm:gap-1.5 lg:gap-2">
           <div className="flex shrink-0 items-center gap-1.5">
@@ -177,7 +179,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   aria-haspopup="menu"
                   aria-expanded={isMobileWorkspaceOpen}
                   aria-controls="mobile-workspace-menu"
-                  className={`studio-command-surface studio-hit-target flex cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white ${isRecipeView ? 'h-8 w-auto gap-1.5 px-2' : 'size-8'}`}
+                  className={`studio-command-surface studio-hit-target flex cursor-pointer items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white ${isRecipeView ? 'h-8 w-auto gap-1.5 px-2' : 'size-8'}`}
                 >
                   <Briefcase size={15} />
                   {isRecipeView ? (
@@ -248,7 +250,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               </div>
             </div>
           ) : (
-            <div className="studio-command-group flex shrink-0 items-center gap-1 rounded-lg border border-white/5 bg-white/5 p-0.5">
+            <div className="studio-command-group flex shrink-0 items-center gap-1 rounded-lg border border-white/2 bg-white/5 p-0.5">
               <button
                 type="button"
                 onClick={() => onViewChange('studio')}
@@ -294,7 +296,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenDashboard}
                 aria-label={`Open runtime status: ${runtimeStatus.label}`}
-                className={`studio-command-surface studio-hit-target hidden size-8 items-center justify-center gap-1.5 rounded-lg border transition-[color,background-color,border-color,opacity,transform] hover:border-white/20 hover:bg-white/8 sm:flex xl:w-auto xl:px-2 ${runtimeToneClass}`}
+                className={`studio-command-surface studio-hit-target hidden size-8 items-center justify-center gap-1.5 rounded-lg border transition-[color,background-color,border-color,opacity,transform] hover:border-white/2 hover:bg-white/8 sm:flex xl:w-auto xl:px-2 ${runtimeToneClass}`}
               >
                 <Server size={14} />
                 <span className="hidden text-[10px] font-black uppercase tracking-[0.16em] xl:inline">
@@ -316,15 +318,9 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   aria-haspopup="dialog"
                   aria-expanded={isProviderMenuOpen}
                   aria-controls="provider-quick-switch"
-                  className={`studio-command-surface studio-hit-target flex h-8 w-8 items-center justify-center gap-1 rounded-lg border border-white/10 bg-white/5 px-1.5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:w-auto lg:justify-start lg:gap-1.5 lg:px-2 ${commandCenter.compactMode ? 'lg:max-w-16' : 'lg:max-w-28'}`}
+                  className={`studio-command-surface studio-hit-target flex h-8 w-8 items-center justify-center gap-1 rounded-lg border border-white/2 bg-white/5 px-1 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white lg:w-auto lg:justify-start lg:gap-1.5 lg:px-2 ${commandCenter.compactMode ? 'lg:max-w-20' : 'lg:max-w-32'}`}
                 >
-                  <span
-                    aria-hidden="true"
-                    className={`size-1.5 shrink-0 rounded-full ${activeProvider.canExecute ? 'bg-emerald-400' : activeProvider.status === 'unknown' ? 'bg-amber-400' : 'bg-rose-400'}`}
-                  />
-                  <span className="text-[9px] font-black uppercase tracking-[0.1em] lg:hidden">
-                    {providerShortLabel.slice(0, 1)}
-                  </span>
+                  <ProviderBrandMark providerId={activeProvider.id} size="xs" />
                   <span className="hidden truncate text-[10px] font-black uppercase tracking-[0.16em] lg:inline">
                     {providerToolbarLabel}
                   </span>
@@ -369,13 +365,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                         onClick={() => selectProvider(provider.id)}
                         className={`flex min-h-12 w-full items-center gap-3 rounded-xl border px-3 py-2 text-left transition-[color,background-color,border-color,opacity,transform] ${
                           isSelected
-                            ? 'border-accent-400/30 bg-accent-500/12 text-white'
-                            : 'border-transparent bg-white/[0.03] text-zinc-300 hover:border-white/10 hover:bg-white/[0.07]'
+                            ? 'border-accent-400/2 bg-accent-500/12 text-white'
+                            : 'border-transparent bg-white/[0.03] text-zinc-300 hover:border-white/2 hover:bg-white/[0.07]'
                         } disabled:cursor-not-allowed disabled:opacity-55`}
                       >
-                        <span
-                          aria-hidden="true"
-                          className={`size-2 shrink-0 rounded-full ${provider.canExecute ? 'bg-emerald-400' : provider.status === 'unknown' ? 'bg-amber-400' : 'bg-rose-400'}`}
+                        <ProviderBrandMark
+                          providerId={provider.id}
+                          size="sm"
+                          canExecute={provider.canExecute}
+                          status={provider.status}
                         />
                         <span className="min-w-0 flex-1">
                           <span className="block truncate text-[10px] font-black uppercase tracking-[0.14em]">
@@ -397,7 +395,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                     setIsProviderMenuOpen(false);
                     onOpenSettings();
                   }}
-                  className="mt-2 w-full rounded-lg border-t border-white/8 px-3 py-2 text-left text-[9px] font-black uppercase tracking-[0.14em] text-zinc-500 transition-colors hover:text-zinc-200"
+                  className="mt-2 w-full rounded-lg border-t border-white/2 px-3 py-2 text-left text-[9px] font-black uppercase tracking-[0.14em] text-zinc-500 transition-colors hover:text-zinc-200"
                 >
                   Provider settings and diagnostics
                 </button>
@@ -408,7 +406,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenOnboarding}
                 aria-label="Open help and setup"
-                className="studio-command-surface studio-hit-target hidden size-8 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
+                className="studio-command-surface studio-hit-target hidden size-8 cursor-pointer items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
               >
                 <CircleHelp size={15} />
               </button>
@@ -418,7 +416,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onToggleDebug}
                 aria-label="Open studio activity"
-                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
+                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
               >
                 <Activity size={15} />
               </button>
@@ -428,11 +426,11 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenTrash}
                 aria-label="Open archived images"
-                className={`studio-hit-target relative hidden size-8 items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity,transform] sm:flex ${trashCount > 0 ? 'studio-command-danger border-red-500/20 bg-red-500/10 text-red-300 hover:border-red-400/30 hover:bg-red-500/15 hover:text-red-200' : 'studio-command-surface border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
+                className={`studio-hit-target relative hidden size-8 items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity,transform] sm:flex ${trashCount > 0 ? 'studio-command-danger border-red-500/20 bg-red-500/10 text-red-300 hover:border-red-400/30 hover:bg-red-500/15 hover:text-red-200' : 'studio-command-surface border-white/2 bg-white/5 text-zinc-300 hover:border-white/2 hover:bg-white/8 hover:text-white'}`}
               >
                 <Trash2 size={15} />
                 {trashCount > 0 && (
-                  <span className="absolute right-1 top-1 size-2 rounded-full border border-black bg-red-500 animate-pulse" />
+                  <span className="absolute right-1 top-1 size-2 rounded-full border border-black/2 bg-red-500 animate-pulse" />
                 )}
               </button>
             </Tooltip>
@@ -441,7 +439,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenChat}
                 aria-label="Open Codex chat"
-                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
+                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
               >
                 <MessageSquare size={15} />
               </button>
@@ -451,7 +449,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenSettings}
                 aria-label="Open Studio Settings"
-                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
+                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
               >
                 <Settings size={15} />
               </button>
@@ -464,10 +462,10 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 aria-pressed={isQueueOpen}
                 className={`studio-command-surface studio-hit-target relative flex h-8 min-w-8 items-center justify-center gap-1.5 overflow-hidden rounded-lg border px-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] xl:px-2.5 ${
                   isQueueOpen
-                    ? 'border-accent-500/30 bg-accent-500/12 text-white'
+                    ? 'border-accent-500/2 bg-accent-500/12 text-white'
                     : showCollapsedQueueProgress
-                      ? 'border-accent-400/35 bg-accent-500/15 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.16)]'
-                      : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'
+                      ? 'border-accent-400/2 bg-accent-500/15 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.16)]'
+                      : 'border-white/2 bg-white/5 text-zinc-300 hover:border-white/2 hover:bg-white/8 hover:text-white'
                 }`}
               >
                 {showCollapsedQueueProgress && (
@@ -482,7 +480,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                     {queueResultPreviews.slice(0, 3).map((preview) => (
                       <span
                         key={preview.id}
-                        className="size-5 overflow-hidden rounded-md border border-black/40 bg-black/40 shadow-sm"
+                        className="size-5 overflow-hidden rounded-md border border-black/2 bg-black/40 shadow-sm"
                       >
                         <img
                           src={preview.src}
@@ -512,7 +510,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   aria-expanded={isMobileCommandOpen}
                   aria-haspopup="menu"
                   aria-controls="mobile-command-menu"
-                  className="studio-command-surface studio-hit-target flex size-10 touch-manipulation items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:bg-white/10 hover:text-white"
+                  className="studio-command-surface studio-hit-target flex size-10 touch-manipulation items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:bg-white/10 hover:text-white"
                 >
                   <Menu2 size={15} />
                 </button>
@@ -526,7 +524,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 className="fixed left-2 right-2 top-12 z-[60] p-2"
               >
                 {isRecipeView && (
-                  <div className="mb-2 border-b border-white/8 pb-2">
+                  <div className="mb-2 border-b border-white/2 pb-2">
                     <div className="mb-1 px-1 text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
                       Workspace
                     </div>
@@ -541,7 +539,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                     />
                   </div>
                 )}
-                <div className="mb-2 grid grid-cols-2 gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2">
+                <div className="mb-2 grid grid-cols-2 gap-2 rounded-xl border border-white/2 bg-white/[0.03] p-2">
                   <button
                     type="button"
                     aria-label={`Open runtime status: ${runtimeStatus.label}`}
@@ -557,19 +555,22 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                     aria-label="Open Studio Settings"
                     data-dropdown-item
                     onClick={() => runMobileCommand(onOpenSettings)}
-                    className="flex min-h-11 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                    className="flex min-h-11 items-center gap-2 rounded-xl border border-white/2 bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
                   >
                     <Settings size={15} />
                     <span className="truncate">Settings</span>
                   </button>
                 </div>
-                <div className="mb-2 rounded-xl border border-white/6 bg-white/[0.03] p-2">
+                <div className="mb-2 rounded-xl border border-white/2 bg-white/[0.03] p-2">
                   <div className="mb-2 flex items-center justify-between gap-3 px-1">
                     <span className="text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
                       Image provider
                     </span>
-                    <span className="truncate text-[9px] font-bold text-zinc-300">
-                      {providerShortLabel}
+                    <span className="flex min-w-0 items-center gap-1.5">
+                      <ProviderBrandMark providerId={activeProvider.id} size="xs" />
+                      <span className="truncate text-[9px] font-bold text-zinc-300">
+                        {providerShortLabel}
+                      </span>
                     </span>
                   </div>
                   <div className="grid grid-cols-2 gap-2">
@@ -588,23 +589,24 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                               selectProvider(provider.id);
                             })
                           }
-                          className={`flex min-h-12 items-center justify-between gap-2 rounded-xl border px-3 text-left text-[10px] font-black uppercase tracking-wider transition-[color,background-color,border-color,opacity] ${
+                          className={`flex min-h-12 items-center gap-2 rounded-xl border px-2.5 text-left transition-[color,background-color,border-color,opacity] ${
                             isSelected
-                              ? 'border-accent-400/30 bg-accent-500/12 text-white'
-                              : 'border-white/8 bg-white/5 text-zinc-300'
+                              ? 'border-accent-400/2 bg-accent-500/12 text-white'
+                              : 'border-white/2 bg-white/5 text-zinc-300'
                           } disabled:cursor-not-allowed disabled:opacity-55`}
                         >
-                          <span className="truncate">
-                            {provider.id === 'codex' ? 'Codex' : provider.label}
+                          <ProviderBrandMark
+                            providerId={provider.id}
+                            size="sm"
+                            canExecute={provider.canExecute}
+                            status={provider.status}
+                          />
+                          <span className="min-w-0 flex-1 truncate text-[10px] font-black uppercase tracking-wider">
+                            {providerBrandChipLabel(provider.id)}
                           </span>
                           {isSelected ? (
                             <Check size={15} aria-hidden="true" className="shrink-0" />
-                          ) : (
-                            <span
-                              aria-hidden="true"
-                              className={`size-2 shrink-0 rounded-full ${provider.canExecute ? 'bg-emerald-400' : provider.status === 'unknown' ? 'bg-amber-400' : 'bg-rose-400'}`}
-                            />
-                          )}
+                          ) : null}
                         </button>
                       );
                     })}

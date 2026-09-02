@@ -40,6 +40,9 @@ describe('StudioSettingsModal provider defaults', () => {
     expect(settingsSource).not.toMatch(/Preferred Output Path/);
     expect(settingsSource).toContain('STUDIO_SETTINGS_DOMAIN_TABS');
     expect(settingsSource).toContain('Accounts');
+    expect(settingsSource).toContain('ProviderBrandMark');
+    expect(settingsSource).toContain('type="radio"');
+    expect(settingsSource).toContain('overflow-x-auto');
     expect(
       readFileSync(path.join(import.meta.dirname, '..', 'lib', 'studioSettingsDomains.ts'), 'utf8'),
     ).toContain("label: 'Providers'");

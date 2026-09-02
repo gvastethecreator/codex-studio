@@ -92,6 +92,7 @@ test-files/
 .agents/
 !.agents/skills/
 .claude/
+.code-review-graph/
 .codebuddy/
 .commandcode/
 .continue/

@@ -1,5 +1,7 @@
 import {
+  accessSync,
   chmodSync,
+  constants,
   existsSync,
   mkdirSync,
   readFileSync,
@@ -12,7 +14,7 @@ import type {
   SubscriptionAuthStatus,
   SubscriptionProviderId,
 } from '../../../../packages/shared/src';
-import { resolveLibraryPath } from '../library';
+import { resolveUserHome } from '../platformHome';
 import { STUDIO_OAUTH_FILE_NAME, STUDIO_OAUTH_STORE_VERSION } from './constants';
 
 export interface StoredSubscriptionTokens {
@@ -33,6 +35,7 @@ export interface SubscriptionAuthFile {
 
 export interface SubscriptionAuthStore {
   filePath(): string;
+  assertWritable(): void;
   read(): SubscriptionAuthFile;
   readProvider(providerId: SubscriptionProviderId): StoredSubscriptionTokens;
   writeProvider(providerId: SubscriptionProviderId, record: StoredSubscriptionTokens): void;
@@ -44,6 +47,12 @@ export interface SubscriptionAuthStore {
 export interface SubscriptionAuthStoreDependencies {
   resolveFilePath?: () => string;
   now?: () => Date;
+}
+
+export interface SubscriptionAuthStorePathOptions {
+  env?: Record<string, string | undefined>;
+  platform?: NodeJS.Platform;
+  homeDir?: string;
 }
 
 const EMPTY_RECORD: Omit<StoredSubscriptionTokens, 'updatedAt'> = {
@@ -74,67 +83,201 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null;
 }
 
-function asNullableString(value: unknown) {
-  return typeof value === 'string' && value.trim() ? value : null;
+function parseNullableString(
+  value: unknown,
+  field: string,
+  options: { maximum: number; allowWhitespace?: boolean },
+) {
+  if (value === null) return null;
+  if (typeof value !== 'string') {
+    throw new Error(`Studio Sign in credential store has an invalid ${field} field.`);
+  }
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  if (
+    trimmed.length > options.maximum ||
+    /[\u0000-\u001f\u007f]/.test(trimmed) ||
+    (!options.allowWhitespace && /\s/.test(trimmed))
+  ) {
+    throw new Error(`Studio Sign in credential store has an invalid ${field} field.`);
+  }
+  return trimmed;
 }
 
-function parseProvider(value: unknown, now: Date): StoredSubscriptionTokens {
-  const fallback = emptyRecord(now);
-  if (!isRecord(value)) return fallback;
-  const status =
-    value.status === 'logged_in' ||
-    value.status === 'refresh_failed' ||
-    value.status === 'logged_out'
-      ? value.status
-      : 'logged_out';
+function parseProvider(value: unknown): StoredSubscriptionTokens {
+  if (!isRecord(value)) {
+    throw new Error('Studio Sign in credential store has an invalid provider record.');
+  }
+  if (
+    value.status !== 'logged_in' &&
+    value.status !== 'refresh_failed' &&
+    value.status !== 'logged_out'
+  ) {
+    throw new Error('Studio Sign in credential store has an invalid status field.');
+  }
+  const accessToken = parseNullableString(value.accessToken, 'accessToken', { maximum: 64 * 1024 });
+  const refreshToken = parseNullableString(value.refreshToken, 'refreshToken', {
+    maximum: 64 * 1024,
+  });
+  const expiresAt = parseNullableString(value.expiresAt, 'expiresAt', {
+    maximum: 64,
+  });
+  const accountLabel = parseNullableString(value.accountLabel, 'accountLabel', {
+    maximum: 200,
+    allowWhitespace: true,
+  });
+  const chatgptAccountId = parseNullableString(value.chatgptAccountId, 'chatgptAccountId', {
+    maximum: 128,
+  });
+  const lastError = parseNullableString(value.lastError, 'lastError', {
+    maximum: 300,
+    allowWhitespace: true,
+  });
+  const updatedAt = parseNullableString(value.updatedAt, 'updatedAt', { maximum: 64 });
+  if (chatgptAccountId && !/^[A-Za-z0-9._:-]+$/.test(chatgptAccountId)) {
+    throw new Error('Studio Sign in credential store has an invalid chatgptAccountId field.');
+  }
+  if (
+    (expiresAt && !Number.isFinite(Date.parse(expiresAt))) ||
+    !updatedAt ||
+    !Number.isFinite(Date.parse(updatedAt))
+  ) {
+    throw new Error('Studio Sign in credential store has an invalid timestamp field.');
+  }
   return {
-    status,
-    accessToken: asNullableString(value.accessToken),
-    refreshToken: asNullableString(value.refreshToken),
-    expiresAt: asNullableString(value.expiresAt),
-    accountLabel: asNullableString(value.accountLabel),
-    chatgptAccountId: asNullableString(value.chatgptAccountId),
-    lastError: asNullableString(value.lastError),
-    updatedAt: asNullableString(value.updatedAt) ?? fallback.updatedAt,
+    status: value.status,
+    accessToken,
+    refreshToken,
+    expiresAt,
+    accountLabel,
+    chatgptAccountId,
+    lastError,
+    updatedAt,
   };
 }
 
-function parseFile(raw: string, now: Date): SubscriptionAuthFile {
+function parseFile(raw: string): SubscriptionAuthFile {
+  let parsed: unknown;
   try {
-    const parsed = JSON.parse(raw) as unknown;
-    if (!isRecord(parsed)) return emptyFile(now);
-    const providers = isRecord(parsed.providers) ? parsed.providers : {};
-    return {
-      version: STUDIO_OAUTH_STORE_VERSION,
-      providers: {
-        codex: parseProvider(providers.codex, now),
-        xai: parseProvider(providers.xai, now),
-      },
-    };
+    parsed = JSON.parse(raw) as unknown;
   } catch {
-    return emptyFile(now);
+    throw new Error('Studio Sign in credential store is corrupted. Sign in data was not changed.');
   }
+  if (
+    !isRecord(parsed) ||
+    parsed.version !== STUDIO_OAUTH_STORE_VERSION ||
+    !isRecord(parsed.providers)
+  ) {
+    throw new Error('Studio Sign in credential store has an unsupported format.');
+  }
+  return {
+    version: STUDIO_OAUTH_STORE_VERSION,
+    providers: {
+      codex: parseProvider(parsed.providers.codex),
+      xai: parseProvider(parsed.providers.xai),
+    },
+  };
+}
+
+function absoluteEnvPath(
+  value: string | undefined,
+  pathApi: Pick<typeof path, 'isAbsolute' | 'join'>,
+) {
+  const trimmed = value?.trim();
+  return trimmed && pathApi.isAbsolute(trimmed) ? trimmed : null;
+}
+
+export function resolveSubscriptionAuthFilePath({
+  env = process.env,
+  platform = process.platform,
+  homeDir = resolveUserHome({ env: env as NodeJS.ProcessEnv, platform }),
+}: SubscriptionAuthStorePathOptions = {}) {
+  const pathApi = platform === 'win32' ? path.win32 : path.posix;
+  let privateStateRoot: string;
+  if (platform === 'win32') {
+    privateStateRoot =
+      absoluteEnvPath(env.LOCALAPPDATA, pathApi) ?? pathApi.join(homeDir, 'AppData', 'Local');
+    return pathApi.join(privateStateRoot, 'Codex Studio', 'auth', STUDIO_OAUTH_FILE_NAME);
+  }
+  if (platform === 'darwin') {
+    return pathApi.join(
+      homeDir,
+      'Library',
+      'Application Support',
+      'Codex Studio',
+      'auth',
+      STUDIO_OAUTH_FILE_NAME,
+    );
+  }
+  privateStateRoot =
+    absoluteEnvPath(env.XDG_STATE_HOME, pathApi) ?? pathApi.join(homeDir, '.local', 'state');
+  return pathApi.join(privateStateRoot, 'codex-studio', 'auth', STUDIO_OAUTH_FILE_NAME);
 }
 
 function defaultFilePath() {
-  return resolveLibraryPath('auth', STUDIO_OAUTH_FILE_NAME);
+  if (process.env.VITEST === 'true') {
+    return path.join(
+      process.cwd(),
+      'tmp',
+      'vitest-auth',
+      String(process.pid),
+      STUDIO_OAUTH_FILE_NAME,
+    );
+  }
+  return resolveSubscriptionAuthFilePath();
+}
+
+function ensurePrivateDirectory(directoryPath: string) {
+  mkdirSync(directoryPath, { recursive: true, mode: 0o700 });
+  try {
+    chmodSync(directoryPath, 0o700);
+  } catch {
+    // Windows protects LocalAppData through inherited user ACLs instead of POSIX modes.
+  }
 }
 
 function atomicWrite(filePath: string, contents: string) {
-  mkdirSync(path.dirname(filePath), { recursive: true });
+  ensurePrivateDirectory(path.dirname(filePath));
   const tempPath = `${filePath}.${process.pid}.${Date.now().toString(36)}.${Math.random()
     .toString(16)
     .slice(2)}.tmp`;
+  const backupPath = `${tempPath}.backup`;
   writeFileSync(tempPath, contents, { encoding: 'utf8', mode: 0o600 });
   try {
-    renameSync(tempPath, filePath);
-  } catch {
     try {
-      unlinkSync(filePath);
-    } catch {
-      // Destination may not exist yet.
+      renameSync(tempPath, filePath);
+    } catch (initialError) {
+      if (!existsSync(filePath)) throw initialError;
+      renameSync(filePath, backupPath);
+      try {
+        renameSync(tempPath, filePath);
+      } catch (replaceError) {
+        if (!existsSync(filePath) && existsSync(backupPath)) {
+          renameSync(backupPath, filePath);
+        }
+        throw replaceError;
+      }
+      try {
+        unlinkSync(backupPath);
+      } catch {
+        // The finalizer makes one more best-effort cleanup pass.
+      }
     }
-    renameSync(tempPath, filePath);
+  } finally {
+    if (existsSync(tempPath)) {
+      try {
+        unlinkSync(tempPath);
+      } catch {
+        // Keep the original write failure if cleanup is blocked.
+      }
+    }
+    if (existsSync(backupPath) && existsSync(filePath)) {
+      try {
+        unlinkSync(backupPath);
+      } catch {
+        // Keep the original write failure if cleanup is blocked.
+      }
+    }
   }
   try {
     chmodSync(filePath, 0o600);
@@ -150,7 +293,7 @@ export function createSubscriptionAuthStore({
   const readSync = (): SubscriptionAuthFile => {
     const filePath = resolveFilePath();
     if (!existsSync(filePath)) return emptyFile(now());
-    return parseFile(readFileSync(filePath, 'utf8'), now());
+    return parseFile(readFileSync(filePath, 'utf8'));
   };
 
   const writeSync = (next: SubscriptionAuthFile) => {
@@ -161,6 +304,13 @@ export function createSubscriptionAuthStore({
 
   return {
     filePath: resolveFilePath,
+    assertWritable() {
+      const filePath = resolveFilePath();
+      const directoryPath = path.dirname(filePath);
+      ensurePrivateDirectory(directoryPath);
+      accessSync(directoryPath, constants.W_OK);
+      if (existsSync(filePath)) accessSync(filePath, constants.R_OK | constants.W_OK);
+    },
     read: readSync,
     readProvider(providerId) {
       return readSync().providers[providerId];

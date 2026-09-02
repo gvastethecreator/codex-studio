@@ -10,7 +10,9 @@ import { createSubscriptionAuthStore } from './store';
 import {
   CODEX_DEVICE_TOKEN_URL,
   CODEX_DEVICE_USERCODE_URL,
+  CODEX_OAUTH_REVOKE_URL,
   CODEX_OAUTH_TOKEN_URL,
+  XAI_OAUTH_REVOKE_URL,
 } from './constants';
 
 function jsonResponse(body: unknown, status = 200) {
@@ -64,7 +66,7 @@ describe('subscription auth routes', () => {
       fetch: fetchMock as typeof fetch,
       now: () => Date.parse('2026-09-01T00:00:00.000Z'),
       sleep: async () => undefined,
-      inspectLibraryWritable: () => true,
+      ensureCredentialStoreWritable: () => undefined,
       publish: (_type, payload) => published.push(payload),
     });
     const app = new Hono().route('/api/auth', createSubscriptionAuthRoutes(controller));
@@ -72,6 +74,7 @@ describe('subscription auth routes', () => {
     const started = await app.request('/api/auth/codex/start', { method: 'POST' });
     const startBody = await started.json();
     expect(started.status).toBe(200);
+    expect(started.headers.get('cache-control')).toBe('no-store');
     expect(startBody).toMatchObject({
       providerId: 'codex',
       status: 'pending',
@@ -91,14 +94,16 @@ describe('subscription auth routes', () => {
     expect(calls.some((call) => call.includes(CODEX_OAUTH_TOKEN_URL))).toBe(true);
   });
 
-  it('rejects start when the Studio Library is not writable', async () => {
+  it('rejects start when the private credential store is not writable', async () => {
     const controller = createSubscriptionAuthController({
-      inspectLibraryWritable: () => false,
+      ensureCredentialStoreWritable: () => {
+        throw new Error('read only');
+      },
     });
     const app = new Hono().route('/api/auth', createSubscriptionAuthRoutes(controller));
     const response = await app.request('/api/auth/xai/start', { method: 'POST' });
     expect(response.status).toBe(503);
-    expect(await response.json()).toMatchObject({ code: 'library_not_writable' });
+    expect(await response.json()).toMatchObject({ code: 'credential_store_not_writable' });
   });
 
   it('does not report logged_in when the stored access token is missing', async () => {
@@ -119,7 +124,7 @@ describe('subscription auth routes', () => {
     });
     const controller = createSubscriptionAuthController({
       store,
-      inspectLibraryWritable: () => true,
+      ensureCredentialStoreWritable: () => undefined,
     });
     const app = new Hono().route('/api/auth', createSubscriptionAuthRoutes(controller));
     const response = await app.request('/api/auth/codex');
@@ -152,7 +157,7 @@ describe('subscription auth routes', () => {
       createSubscriptionAuthRoutes(
         createSubscriptionAuthController({
           store,
-          inspectLibraryWritable: () => true,
+          ensureCredentialStoreWritable: () => undefined,
         }),
       ),
     );
@@ -168,6 +173,7 @@ describe('subscription auth routes', () => {
       resolveFilePath: () => path.join(dir, 'studio-oauth.json'),
     });
     let releaseToken: (() => void) | undefined;
+    let revoked = false;
     const tokenGate = new Promise<void>((resolve) => {
       releaseToken = resolve;
     });
@@ -187,6 +193,10 @@ describe('subscription auth routes', () => {
           expires_in: 3600,
         });
       }
+      if (url === CODEX_OAUTH_REVOKE_URL) {
+        revoked = true;
+        return new Response(null, { status: 200 });
+      }
       return jsonResponse({ error: 'unexpected' }, 500);
     };
     const app = new Hono().route(
@@ -197,7 +207,7 @@ describe('subscription auth routes', () => {
           fetch: fetchMock as typeof fetch,
           now: () => Date.parse('2026-09-01T00:00:00.000Z'),
           sleep: async () => undefined,
-          inspectLibraryWritable: () => true,
+          ensureCredentialStoreWritable: () => undefined,
         }),
       ),
     );
@@ -209,7 +219,138 @@ describe('subscription auth routes', () => {
     releaseToken?.();
     await new Promise((resolve) => setTimeout(resolve, 20));
     expect(store.readProvider('codex').accessToken).toBeNull();
+    expect(revoked).toBe(true);
     const status = await app.request('/api/auth/codex');
     expect(await status.json()).toMatchObject({ status: 'logged_out' });
+  });
+
+  it('revokes newly issued tokens when credential persistence fails', async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), 'studio-oauth-routes-'));
+    dirs.push(dir);
+    const backingStore = createSubscriptionAuthStore({
+      resolveFilePath: () => path.join(dir, 'studio-oauth.json'),
+    });
+    const store = {
+      ...backingStore,
+      writeProvider(
+        providerId: Parameters<typeof backingStore.writeProvider>[0],
+        record: Parameters<typeof backingStore.writeProvider>[1],
+      ) {
+        if (record.accessToken === 'issued-access') throw new Error('disk full');
+        backingStore.writeProvider(providerId, record);
+      },
+    };
+    const fetchMock = async (input: RequestInfo | URL) => {
+      const url = requestUrl(input);
+      if (url === CODEX_DEVICE_USERCODE_URL) {
+        return jsonResponse({ user_code: 'ABCD-1234', device_auth_id: 'device-1', interval: 1 });
+      }
+      if (url === CODEX_DEVICE_TOKEN_URL) {
+        return jsonResponse({ authorization_code: 'auth-code', code_verifier: 'verifier' });
+      }
+      return jsonResponse({
+        access_token: 'issued-access',
+        refresh_token: 'issued-refresh',
+        expires_in: 3600,
+      });
+    };
+    const revoked: string[] = [];
+    const controller = createSubscriptionAuthController({
+      store,
+      fetch: fetchMock as typeof fetch,
+      sleep: async () => undefined,
+      ensureCredentialStoreWritable: () => undefined,
+      revokeToken: async (_providerId, record) => {
+        revoked.push(record.refreshToken ?? record.accessToken ?? '');
+        return 'revoked';
+      },
+    });
+    const app = new Hono().route('/api/auth', createSubscriptionAuthRoutes(controller));
+
+    expect((await app.request('/api/auth/codex/start', { method: 'POST' })).status).toBe(200);
+    await new Promise((resolve) => setTimeout(resolve, 20));
+
+    expect(revoked).toEqual(['issued-refresh']);
+    expect(backingStore.readProvider('codex')).toMatchObject({
+      status: 'logged_out',
+      accessToken: null,
+      lastError: 'disk full',
+    });
+  });
+
+  it('cancels device-code discovery before polling starts', async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), 'studio-oauth-routes-'));
+    dirs.push(dir);
+    const store = createSubscriptionAuthStore({
+      resolveFilePath: () => path.join(dir, 'studio-oauth.json'),
+    });
+    let requestSignal!: AbortSignal;
+    const fetchMock = async (_input: RequestInfo | URL, init?: RequestInit) => {
+      requestSignal = init?.signal as AbortSignal;
+      return await new Promise<Response>((_resolve, reject) => {
+        requestSignal?.addEventListener(
+          'abort',
+          () => {
+            const error = new Error('cancelled');
+            error.name = 'AbortError';
+            reject(error);
+          },
+          { once: true },
+        );
+      });
+    };
+    const controller = createSubscriptionAuthController({
+      store,
+      fetch: fetchMock as typeof fetch,
+      ensureCredentialStoreWritable: () => undefined,
+    });
+
+    const start = controller.start('codex');
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    expect(requestSignal.aborted).toBe(false);
+    expect(controller.cancel('codex')).toMatchObject({ status: 'logged_out' });
+    await expect(start).resolves.toMatchObject({ status: 'logged_out' });
+    expect(requestSignal.aborted).toBe(true);
+  });
+
+  it('clears xAI credentials before best-effort provider revocation', async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), 'studio-oauth-routes-'));
+    dirs.push(dir);
+    const store = createSubscriptionAuthStore({
+      resolveFilePath: () => path.join(dir, 'studio-oauth.json'),
+    });
+    store.writeProvider('xai', {
+      status: 'logged_in',
+      accessToken: 'xai-access',
+      refreshToken: 'xai-refresh',
+      expiresAt: '2026-09-02T00:00:00.000Z',
+      accountLabel: 'grok-user',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2026-09-01T00:00:00.000Z',
+    });
+    const fetchMock = async (input: RequestInfo | URL, init?: RequestInit) => {
+      expect(requestUrl(input)).toBe(XAI_OAUTH_REVOKE_URL);
+      expect(store.readProvider('xai').refreshToken).toBeNull();
+      expect(init?.redirect).toBe('error');
+      const body = await new Response(init?.body ?? null).text();
+      expect(new URLSearchParams(body).get('token')).toBe('xai-refresh');
+      return new Response(null, { status: 503 });
+    };
+    const controller = createSubscriptionAuthController({
+      store,
+      fetch: fetchMock as typeof fetch,
+      ensureCredentialStoreWritable: () => undefined,
+    });
+    const app = new Hono().route('/api/auth', createSubscriptionAuthRoutes(controller));
+
+    const response = await app.request('/api/auth/xai/logout', { method: 'POST' });
+
+    expect(response.status).toBe(200);
+    expect(await response.json()).toMatchObject({ status: 'logged_out' });
+    expect(store.readProvider('xai')).toMatchObject({
+      accessToken: null,
+      refreshToken: null,
+    });
   });
 });

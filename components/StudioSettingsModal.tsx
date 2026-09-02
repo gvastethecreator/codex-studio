@@ -61,7 +61,8 @@ import {
   providerRuntimeLabel,
   providerSecretLabel,
 } from '../lib/subscriptionAuthUi';
-import { resolveProviderShortLabel } from '../lib/commandCenterProjection';
+import { providerBrandChipLabel, providerReadyPillClass } from '../lib/providerBrand';
+import { ProviderBrandMark } from './ProviderBrandMark';
 import { SubscriptionAuthControls } from './settings/SubscriptionAuthControls';
 
 interface StudioSettingsModalProps {
@@ -119,10 +120,14 @@ function formatBytes(value: number) {
   return `${(value / (1024 * 1024)).toFixed(1)} MB`;
 }
 
-function providerStatusClass(status: string) {
-  if (status === 'active') return 'border-emerald-500/20 bg-emerald-500/10 text-emerald-200';
-  if (status === 'planned') return 'border-amber-500/20 bg-amber-500/10 text-amber-200';
-  return 'border-white/8 bg-white/4 text-zinc-400';
+function StatusPill({ children, className }: { children: React.ReactNode; className: string }) {
+  return (
+    <span
+      className={`inline-flex h-6 shrink-0 items-center rounded-md border px-2 text-[10px] font-semibold ${className}`}
+    >
+      {children}
+    </span>
+  );
 }
 
 interface SettingsFormPanelProps {
@@ -135,7 +140,6 @@ interface SettingsFormPanelProps {
   providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
   onResetStudio: () => void | Promise<void>;
   isResettingStudio: boolean;
-  onRefresh: () => void | Promise<void>;
 }
 
 function ProviderExecutionDefaultsFields({
@@ -156,7 +160,7 @@ function ProviderExecutionDefaultsFields({
   const cliDefaultLabel = grokDefaultModel ? `CLI default (${grokDefaultModel})` : 'CLI default';
 
   return (
-    <div className="md:col-span-2 grid gap-3 rounded-lg border border-white/8 bg-white/4 p-4 md:grid-cols-3">
+    <div className="md:col-span-2 grid gap-3 rounded-lg border border-white/2 bg-white/4 p-4 md:grid-cols-3">
       <div className="md:col-span-3">
         <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
           Provider Execution Defaults
@@ -173,7 +177,7 @@ function ProviderExecutionDefaultsFields({
             value={value.model ?? ''}
             onChange={(event) => onChange({ model: event.target.value.trim() || null })}
             aria-label="Provider default model"
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors focus:border-accent-400/50"
+            className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors focus:border-accent-400/2"
           >
             <option value="">{cliDefaultLabel}</option>
             {storedGrokModel && !grokModelIsKnown ? (
@@ -191,7 +195,7 @@ function ProviderExecutionDefaultsFields({
             onChange={(event) => onChange({ model: event.target.value.trim() || null })}
             placeholder="Provider bootstrap"
             aria-label="Provider default model"
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+            className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/2"
           />
         )}
         {isGrok && storedGrokModel && !grokModelIsKnown ? (
@@ -210,7 +214,7 @@ function ProviderExecutionDefaultsFields({
             value={value.reasoningEffort ?? ''}
             onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
             aria-label="Provider default reasoning effort"
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+            className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/2"
           >
             <option value="">Provider bootstrap</option>
             <option value="low">Low</option>
@@ -223,7 +227,7 @@ function ProviderExecutionDefaultsFields({
             onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
             placeholder="Provider bootstrap"
             aria-label="Provider default reasoning effort"
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+            className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/2"
           />
         )}
       </label>
@@ -243,7 +247,7 @@ function ProviderExecutionDefaultsFields({
               })
             }
             aria-label="Provider default service tier"
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+            className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/2"
           >
             <option value="">Provider bootstrap</option>
             <option value="fast">Fast</option>
@@ -265,7 +269,6 @@ function SettingsFormPanel({
   providerRuntimePreflight,
   onResetStudio,
   isResettingStudio,
-  onRefresh,
 }: SettingsFormPanelProps) {
   const {
     defaultProviderId,
@@ -310,10 +313,10 @@ function SettingsFormPanel({
   );
 
   return (
-    <div className="grid gap-4 md:grid-cols-2">
+    <div className={domain === 'providers' ? 'grid gap-4' : 'grid gap-4 md:grid-cols-2'}>
       {domain === 'library' ? (
         <>
-          <div className="md:col-span-2 rounded-lg border border-white/8 bg-white/4 p-4">
+          <div className="md:col-span-2 rounded-lg border border-white/2 bg-white/4 p-4">
             <div className="flex items-center gap-3">
               <FolderOpen size={16} className="text-zinc-500" />
               <div className="min-w-0">
@@ -334,7 +337,7 @@ function SettingsFormPanel({
                 commandCenterCompactMode: !prev.commandCenterCompactMode,
               }))
             }
-            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
+            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/2 bg-accent-500/10' : 'border-white/2 bg-white/4 hover:bg-white/8'}`}
           >
             <span className="flex items-center gap-3">
               <Settings
@@ -353,7 +356,7 @@ function SettingsFormPanel({
             type="button"
             onClick={() => void onResetStudio()}
             disabled={isResettingStudio}
-            className="flex items-center justify-between rounded-lg border border-rose-500/20 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
+            className="flex items-center justify-between rounded-lg border border-rose-500/2 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
           >
             <span className="flex items-center gap-3">
               <Database size={16} className="text-rose-300" />
@@ -372,30 +375,45 @@ function SettingsFormPanel({
 
       {domain === 'providers' ? (
         <>
-          <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
-            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+          <div className="md:col-span-2 flex flex-col gap-2 rounded-xl border border-white/2 bg-white/[0.03] p-4">
+            <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
               Default Provider
-            </span>
-            <select
-              aria-label="Default provider"
-              value={defaultProviderId}
-              onChange={(event) =>
-                setFormState((prev) => ({
-                  ...prev,
-                  defaultProviderId: event.target.value as GenerationProviderId,
-                }))
-              }
-              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-semibold text-white outline-none transition-colors focus:border-accent-400/50"
-            >
-              {providerOptions.map((providerId) => (
-                <option key={providerId} value={providerId}>
-                  {providerCapabilities?.providers.find(
-                    (provider) => provider.providerId === providerId,
-                  )?.label ?? resolveProviderShortLabel(providerId)}
-                </option>
-              ))}
-            </select>
-          </label>
+            </div>
+            <fieldset className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
+              <legend className="sr-only">Default provider</legend>
+              {providerOptions.map((providerId) => {
+                const isSelected = providerId === defaultProviderId;
+                return (
+                  <label
+                    key={providerId}
+                    className={`flex h-11 min-w-0 cursor-pointer items-center gap-2.5 rounded-lg border px-2.5 text-left transition-[color,background-color,border-color,transform] focus-within:ring-2 focus-within:ring-accent-300 active:scale-[0.98] ${
+                      isSelected
+                        ? 'border-accent-400/2 bg-accent-500/14 text-white'
+                        : 'border-white/2 bg-white/[0.03] text-zinc-300 hover:border-white/2 hover:bg-white/[0.06]'
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="default-provider"
+                      value={providerId}
+                      checked={isSelected}
+                      onChange={() =>
+                        setFormState((prev) => ({
+                          ...prev,
+                          defaultProviderId: providerId,
+                        }))
+                      }
+                      className="sr-only"
+                    />
+                    <ProviderBrandMark providerId={providerId} size="sm" />
+                    <span className="min-w-0 truncate text-[11px] font-semibold">
+                      {providerBrandChipLabel(providerId)}
+                    </span>
+                  </label>
+                );
+              })}
+            </fieldset>
+          </div>
 
           <ProviderExecutionDefaultsFields
             value={selectedProviderDefaults}
@@ -431,20 +449,41 @@ function SettingsFormPanel({
                   return (
                     <div
                       key={provider.providerId}
-                      className={`rounded-xl border p-4 ${providerStatusClass(provider.status)}`}
+                      className={`rounded-xl border p-4 ${
+                        provider.isDefault
+                          ? 'border-accent-400/2 bg-accent-500/[0.06]'
+                          : 'border-white/2 bg-white/[0.03]'
+                      }`}
                     >
-                      <div className="flex items-start justify-between gap-2">
-                        <div className="min-w-0">
-                          <div className="truncate text-sm font-semibold text-white">
-                            {provider.label}
+                      <div className="flex items-start gap-3">
+                        <ProviderBrandMark
+                          providerId={provider.providerId}
+                          size="md"
+                          canExecute={provider.canExecute}
+                          status={provider.status}
+                        />
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-start justify-between gap-2">
+                            <div className="min-w-0">
+                              <div className="truncate text-sm font-semibold text-white">
+                                {provider.label}
+                              </div>
+                              {provider.isDefault ? (
+                                <p className="mt-0.5 text-[11px] text-zinc-500">Default provider</p>
+                              ) : null}
+                            </div>
+                            <StatusPill
+                              className={providerReadyPillClass({
+                                canExecute: provider.canExecute,
+                                status: provider.status,
+                              })}
+                            >
+                              {readyLabel}
+                            </StatusPill>
                           </div>
-                          {provider.isDefault ? (
-                            <p className="mt-0.5 text-[11px] text-zinc-400">Default provider</p>
-                          ) : null}
                         </div>
-                        <span className="shrink-0 text-[11px] font-medium">{readyLabel}</span>
                       </div>
-                      <p className="mt-2 text-[12px] leading-relaxed text-zinc-300">
+                      <p className="mt-3 text-[12px] leading-relaxed text-zinc-400">
                         {provider.detail}
                       </p>
                       {runtimeLabel || secretLabel ? (
@@ -458,10 +497,7 @@ function SettingsFormPanel({
                         </p>
                       ) : null}
                       {subscriptionId ? (
-                        <SubscriptionAuthControls
-                          providerId={subscriptionId}
-                          onChanged={() => void onRefresh()}
-                        />
+                        <SubscriptionAuthControls providerId={subscriptionId} />
                       ) : null}
                     </div>
                   );
@@ -478,7 +514,7 @@ function SettingsFormPanel({
 
       {domain === 'output' ? (
         <>
-          <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+          <label className="flex flex-col gap-2 rounded-lg border border-white/2 bg-white/4 p-4">
             <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
               Output Mode
             </span>
@@ -490,14 +526,14 @@ function SettingsFormPanel({
                   defaultOutputMode: event.target.value as StudioOutputMode,
                 }))
               }
-              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+              className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/2"
             >
               <option value="studio_library">Studio Library</option>
               <option value="external_source">External Source</option>
             </select>
           </label>
 
-          <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+          <label className="flex flex-col gap-2 rounded-lg border border-white/2 bg-white/4 p-4">
             <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
               Output Subfolders
             </span>
@@ -506,7 +542,7 @@ function SettingsFormPanel({
               onChange={(event) =>
                 setFormState((prev) => ({ ...prev, outputSubfolderPreset: event.target.value }))
               }
-              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+              className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/2"
             >
               {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
                 <option
@@ -519,7 +555,7 @@ function SettingsFormPanel({
             </select>
           </label>
 
-          <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+          <label className="flex flex-col gap-2 rounded-lg border border-white/2 bg-white/4 p-4">
             <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
               File Name Template
             </span>
@@ -530,11 +566,11 @@ function SettingsFormPanel({
               }
               placeholder="{timestamp}-{provider}-{jobId}"
               aria-label="File name template"
-              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+              className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/2"
             />
           </label>
 
-          <label className="md:col-span-2 flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
+          <label className="md:col-span-2 flex flex-col gap-2 rounded-lg border border-white/2 bg-white/4 p-4">
             <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
               {EXTERNAL_SCAN_PATH_LABEL}
             </span>
@@ -546,7 +582,7 @@ function SettingsFormPanel({
               }
               placeholder={libraryDir ?? 'D:/outputs'}
               aria-label={EXTERNAL_SCAN_PATH_LABEL}
-              className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+              className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/2"
             />
           </label>
 
@@ -558,7 +594,7 @@ function SettingsFormPanel({
                 autoDetectOutputSources: !prev.autoDetectOutputSources,
               }))
             }
-            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/20 bg-accent-500/10' : 'border-white/8 bg-white/4 hover:bg-white/8'}`}
+            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/2 bg-accent-500/10' : 'border-white/2 bg-white/4 hover:bg-white/8'}`}
           >
             <span className="flex items-center gap-3">
               <FolderOpen
@@ -643,7 +679,7 @@ function SettingsOutputSourcesPanel({
   };
 
   return (
-    <div className="mt-4 rounded-lg border border-white/8 bg-white/4 p-4">
+    <div className="mt-4 rounded-lg border border-white/2 bg-white/4 p-4">
       <div className="mb-3 flex items-center justify-between gap-3">
         <div>
           <h3 className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
@@ -671,7 +707,7 @@ function SettingsOutputSourcesPanel({
           return (
             <div
               key={source.id}
-              className="rounded-lg border border-emerald-500/15 bg-emerald-500/8 p-3"
+              className="rounded-lg border border-emerald-500/2 bg-emerald-500/8 p-3"
             >
               <div className="flex items-center justify-between gap-3">
                 <div className="min-w-0">
@@ -687,7 +723,7 @@ function SettingsOutputSourcesPanel({
                     type="button"
                     onClick={() => void onLoadOutputSourceFiles(source.id)}
                     disabled={isScanning}
-                    className="flex h-8 items-center gap-2 rounded-lg border border-emerald-400/20 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-200 transition-colors hover:bg-emerald-400/10 disabled:opacity-40"
+                    className="flex h-8 items-center gap-2 rounded-lg border border-emerald-400/2 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-200 transition-colors hover:bg-emerald-400/10 disabled:opacity-40"
                   >
                     {isScanning ? (
                       <LoaderCircle size={13} className="animate-spin" />
@@ -717,7 +753,7 @@ function SettingsOutputSourcesPanel({
                   {files.slice(0, 25).map((file) => (
                     <label
                       key={file.relativePath}
-                      className="flex cursor-pointer items-center justify-between gap-3 rounded-md border border-white/8 bg-black/20 px-3 py-2 transition-colors hover:bg-white/8"
+                      className="flex cursor-pointer items-center justify-between gap-3 rounded-md border border-white/2 bg-black/20 px-3 py-2 transition-colors hover:bg-white/8"
                     >
                       <span className="flex min-w-0 items-center gap-2">
                         <input
@@ -745,7 +781,7 @@ function SettingsOutputSourcesPanel({
         {outputSourceCandidates.map((candidate) => (
           <div
             key={candidate.id}
-            className="flex items-center justify-between gap-3 rounded-lg border border-white/8 bg-black/20 px-3 py-2"
+            className="flex items-center justify-between gap-3 rounded-lg border border-white/2 bg-black/20 px-3 py-2"
           >
             <div className="min-w-0">
               <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
@@ -763,7 +799,7 @@ function SettingsOutputSourcesPanel({
                 candidate.status !== 'detected' ||
                 candidate.isInsideStudioLibrary
               }
-              className="h-8 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+              className="h-8 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
             >
               Register
             </button>
@@ -773,7 +809,7 @@ function SettingsOutputSourcesPanel({
         {outputSources &&
         outputSources.registry.sources.length === 0 &&
         outputSourceCandidates.length === 0 ? (
-          <div className="rounded-lg border border-white/8 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+          <div className="rounded-lg border border-white/2 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
             No external output sources detected.
           </div>
         ) : null}
@@ -836,7 +872,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
   };
 
   return (
-    <div className="mt-4 rounded-lg border border-white/8 bg-white/4 p-4">
+    <div className="mt-4 rounded-lg border border-white/2 bg-white/4 p-4">
       <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
         <div>
           <h3 className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
@@ -850,7 +886,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
           type="button"
           onClick={() => void refreshAudit()}
           disabled={isLoadingAudit}
-          className="flex h-9 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+          className="flex h-9 items-center gap-2 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
         >
           {isLoadingAudit ? (
             <LoaderCircle size={13} className="animate-spin" />
@@ -863,7 +899,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
 
       {audit ? (
         <div className="grid gap-2 md:grid-cols-4">
-          <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+          <div className="rounded-lg border border-white/2 bg-black/20 p-3">
             <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
               SQLite
             </div>
@@ -871,7 +907,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
               {audit.database.formattedBytes}
             </div>
           </div>
-          <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+          <div className="rounded-lg border border-white/2 bg-black/20 p-3">
             <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
               Inline Payloads
             </div>
@@ -879,7 +915,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
               {formatBytes(inlineBytes)}
             </div>
           </div>
-          <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+          <div className="rounded-lg border border-white/2 bg-black/20 p-3">
             <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
               Missing Thumbs
             </div>
@@ -887,7 +923,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
               {audit.catalog.missingThumbnails}
             </div>
           </div>
-          <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+          <div className="rounded-lg border border-white/2 bg-black/20 p-3">
             <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
               Tooling Logs
             </div>
@@ -897,13 +933,13 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
           </div>
         </div>
       ) : (
-        <div className="rounded-lg border border-white/8 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+        <div className="rounded-lg border border-white/2 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
           Run audit to load current storage metrics.
         </div>
       )}
 
       <div className="mt-3 grid gap-2 md:grid-cols-3">
-        <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+        <div className="rounded-lg border border-white/2 bg-black/20 p-3">
           <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
             <Database size={14} className="text-zinc-500" />
             Payloads
@@ -914,7 +950,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
               aria-label="Plan storage compaction"
               onClick={() => void compactStorage()}
               disabled={isCompactRunning}
-              className="flex h-8 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+              className="flex h-8 items-center gap-2 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
             >
               {isCompactRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
               Plan
@@ -923,14 +959,14 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
               type="button"
               onClick={handleWriteCompact}
               disabled={isCompactRunning}
-              className="h-8 rounded-lg border border-amber-400/20 bg-amber-500/10 px-3 text-[9px] font-black uppercase tracking-widest text-amber-100 transition-colors hover:bg-amber-500/15 disabled:opacity-40"
+              className="h-8 rounded-lg border border-amber-400/2 bg-amber-500/10 px-3 text-[9px] font-black uppercase tracking-widest text-amber-100 transition-colors hover:bg-amber-500/15 disabled:opacity-40"
             >
               Write
             </button>
           </div>
         </div>
 
-        <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+        <div className="rounded-lg border border-white/2 bg-black/20 p-3">
           <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
             <FileImage size={14} className="text-zinc-500" />
             Thumbnails
@@ -940,7 +976,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
               type="button"
               onClick={() => void backfillThumbnails({ limit: 1000 })}
               disabled={isThumbnailRunning}
-              className="flex h-8 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+              className="flex h-8 items-center gap-2 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
             >
               {isThumbnailRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
               Plan
@@ -949,14 +985,14 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
               type="button"
               onClick={handleWriteThumbnails}
               disabled={isThumbnailRunning}
-              className="h-8 rounded-lg border border-emerald-400/20 bg-emerald-500/10 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-100 transition-colors hover:bg-emerald-500/15 disabled:opacity-40"
+              className="h-8 rounded-lg border border-emerald-400/2 bg-emerald-500/10 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-100 transition-colors hover:bg-emerald-500/15 disabled:opacity-40"
             >
               Write
             </button>
           </div>
         </div>
 
-        <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+        <div className="rounded-lg border border-white/2 bg-black/20 p-3">
           <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
             <RefreshCw size={14} className="text-zinc-500" />
             Tooling Logs
@@ -965,7 +1001,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
             type="button"
             onClick={() => void pruneToolingLogs({ retainPerTask: 20 })}
             disabled={isPruneRunning}
-            className="flex h-8 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+            className="flex h-8 items-center gap-2 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
           >
             {isPruneRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
             Prune
@@ -974,7 +1010,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
       </div>
 
       {repairPlan ? (
-        <div className="mt-3 rounded-lg border border-white/8 bg-black/20 p-3">
+        <div className="mt-3 rounded-lg border border-white/2 bg-black/20 p-3">
           <div className="mb-2 flex items-center justify-between gap-3">
             <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
               Repair Plan
@@ -988,7 +1024,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
               {repairPlan.items.map((item) => (
                 <div
                   key={item.id}
-                  className="rounded-md border border-white/8 bg-white/[0.03] px-3 py-2"
+                  className="rounded-md border border-white/2 bg-white/[0.03] px-3 py-2"
                 >
                   <div className="flex items-center justify-between gap-2">
                     <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
@@ -1020,7 +1056,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
       {(compactResult || thumbnailBackfillResult || toolingLogsPruneResult) && (
         <div className="mt-3 grid gap-2 text-[10px] font-bold uppercase tracking-widest text-zinc-500 md:grid-cols-3">
           {compactResult ? (
-            <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+            <div className="rounded-lg border border-white/2 bg-black/20 p-3">
               <span className="text-zinc-300">Compact {compactResult.mode}</span>
               <div className="mt-1 font-mono text-zinc-500">
                 {compactRows} rows / {formatBytes(compactBytes)}
@@ -1028,7 +1064,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
             </div>
           ) : null}
           {thumbnailBackfillResult ? (
-            <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+            <div className="rounded-lg border border-white/2 bg-black/20 p-3">
               <span className="text-zinc-300">Thumbs {thumbnailBackfillResult.mode}</span>
               <div className="mt-1 font-mono text-zinc-500">
                 {thumbnailBackfillResult.wroteRows} wrote / {thumbnailBackfillResult.plannedRows}{' '}
@@ -1037,7 +1073,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
             </div>
           ) : null}
           {toolingLogsPruneResult ? (
-            <div className="rounded-lg border border-white/8 bg-black/20 p-3">
+            <div className="rounded-lg border border-white/2 bg-black/20 p-3">
               <span className="text-zinc-300">Logs pruned</span>
               <div className="mt-1 font-mono text-zinc-500">
                 {toolingLogsPruneResult.pruned} files / keep {toolingLogsPruneResult.retainPerTask}
@@ -1115,8 +1151,8 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
-      <div className="flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-white/10 bg-zinc-950 shadow-2xl">
-        <div className="flex items-center justify-between border-b border-white/8 px-5 py-4">
+      <div className="flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950 shadow-2xl">
+        <div className="flex items-center justify-between border-b border-white/2 px-5 py-4">
           <div className="flex items-center gap-3">
             <div className="flex size-9 items-center justify-center rounded-lg bg-accent-500/10 text-accent-300">
               <Settings size={18} />
@@ -1136,7 +1172,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               aria-label="Refresh settings"
               onClick={() => void onRefresh()}
               disabled={isLoading}
-              className="flex size-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 disabled:opacity-60"
+              className="flex size-9 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 disabled:opacity-60"
             >
               {isLoading ? (
                 <LoaderCircle size={16} className="animate-spin" />
@@ -1155,16 +1191,16 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </div>
         </div>
 
-        <div className="flex gap-1 border-b border-white/8 px-5">
+        <div className="flex gap-1 overflow-x-auto border-b border-white/2 px-3 sm:px-5">
           {STUDIO_SETTINGS_DOMAIN_TABS.map((tab) => (
             <button
               key={tab.id}
               type="button"
               onClick={() => setActiveDomain(tab.id)}
               aria-pressed={activeDomain === tab.id}
-              className={`h-10 px-3 text-[10px] font-black uppercase tracking-widest transition-colors ${
+              className={`h-10 shrink-0 px-3 text-[10px] font-black uppercase tracking-widest transition-colors ${
                 activeDomain === tab.id
-                  ? 'border-b-2 border-accent-400 text-white'
+                  ? 'border-b-2 border-accent-400/2 text-white'
                   : 'text-zinc-500 hover:text-white'
               }`}
             >
@@ -1175,7 +1211,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
 
         <div className="custom-scrollbar flex-1 overflow-y-auto p-5">
           {error && (
-            <div className="mb-4 rounded-lg border border-rose-500/20 bg-rose-500/10 px-4 py-3 text-xs font-bold text-rose-100">
+            <div className="mb-4 rounded-lg border border-rose-500/2 bg-rose-500/10 px-4 py-3 text-xs font-bold text-rose-100">
               {error}
             </div>
           )}
@@ -1194,7 +1230,6 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                 providerRuntimePreflight={providerRuntimePreflight}
                 onResetStudio={onResetStudio}
                 isResettingStudio={isResettingStudio}
-                onRefresh={onRefresh}
               />
               {activeDomain === 'output' ? (
                 <SettingsOutputSourcesPanel
@@ -1216,7 +1251,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           ) : null}
         </div>
 
-        <div className="flex items-center justify-end gap-3 border-t border-white/8 px-5 py-4">
+        <div className="flex items-center justify-end gap-3 border-t border-white/2 px-5 py-4">
           <button
             type="button"
             onClick={onClose}

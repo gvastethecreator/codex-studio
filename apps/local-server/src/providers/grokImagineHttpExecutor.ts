@@ -8,7 +8,7 @@ import {
 } from '../../../../packages/shared/src/grokImagineContract';
 import { resolveLibraryPath } from '../library';
 import { XAI_API_BASE_URL, studioUserAgent } from '../auth/constants';
-import { getUsableAccessToken, readXaiApiKey } from '../auth/tokens';
+import { getUsableAccessToken, invalidateStoredAccessToken, readXaiApiKey } from '../auth/tokens';
 import type {
   ExternalProviderExecutionContext,
   ExternalProviderExecutor,
@@ -16,6 +16,8 @@ import type {
 import type { GrokImagineCompiledPayload } from './grokImagineInput';
 import {
   isRecord,
+  ExternalProviderImageError,
+  readResponseTextLimited,
   responseSnippet,
   storeHostedImageResult,
   storeInlineImageResult,
@@ -34,6 +36,8 @@ export interface GrokImagineHttpExecutorDependencies {
   readFile?: ReadLocalFile;
   now?: () => number;
   getAccessToken?: () => Promise<string>;
+  invalidateAccessToken?: (message: string) => void;
+  requestTimeoutMs?: number;
 }
 
 const MIME_BY_EXTENSION: Record<string, string> = {
@@ -65,6 +69,39 @@ export function resolveGrokImagineHttpModel(
   return DEFAULT_GROK_IMAGINE_HTTP_MODEL;
 }
 
+export function resolveXaiApiEndpointBase(env: Record<string, string | undefined> = process.env) {
+  const configured = env.XAI_BASE_URL?.trim();
+  if (!configured || !readXaiApiKey(env)) return XAI_API_BASE_URL;
+  let url: URL;
+  try {
+    url = new URL(configured);
+  } catch {
+    throw new SubscriptionHttpError('XAI_BASE_URL is not a valid URL.', {
+      code: 'invalid_request',
+      fallbackAllowed: false,
+    });
+  }
+  const isLoopback =
+    url.hostname === 'localhost' ||
+    url.hostname === '127.0.0.1' ||
+    url.hostname === '[::1]' ||
+    url.hostname === '::1';
+  if (
+    (url.protocol !== 'https:' && !(url.protocol === 'http:' && isLoopback)) ||
+    url.username ||
+    url.password ||
+    url.search ||
+    url.hash
+  ) {
+    throw new SubscriptionHttpError(
+      'XAI_BASE_URL must use HTTPS, or HTTP on loopback, without credentials, query, or fragment.',
+      { code: 'invalid_request', fallbackAllowed: false },
+    );
+  }
+  const pathname = url.pathname.replace(/\/+$/, '');
+  return `${url.origin}${pathname === '/' ? '' : pathname}`;
+}
+
 export function resolveGrokImagineHttpAspectRatio(payload: GrokImagineCompiledPayload) {
   const aspect = payload.output.aspectRatio?.trim();
   if (aspect && GROK_IMAGINE_ASPECT_RATIOS.has(aspect) && aspect !== 'auto') return aspect;
@@ -91,6 +128,21 @@ function toDataUri(filePath: string, readFile: ReadLocalFile) {
   const mime = inferMimeType(filePath);
   const data = Buffer.from(readFile(filePath)).toString('base64');
   return `data:${mime};base64,${data}`;
+}
+
+export function isAllowedXaiImageUrl(value: string) {
+  try {
+    const url = new URL(value);
+    const hostname = url.hostname.toLowerCase();
+    return (
+      url.protocol === 'https:' &&
+      !url.username &&
+      !url.password &&
+      (hostname === 'x.ai' || hostname.endsWith('.x.ai'))
+    );
+  } catch {
+    return false;
+  }
 }
 
 function grokErrorMessage(payload: unknown, fallback: string, secrets: string[] = []) {
@@ -151,6 +203,8 @@ export function createGrokImagineHttpExecutor({
   readFile = (filePath) => readFileSync(filePath),
   now = Date.now,
   getAccessToken = () => getUsableAccessToken('xai', { env, fetch: fetchImpl as typeof fetch }),
+  invalidateAccessToken = (message) => invalidateStoredAccessToken('xai', message),
+  requestTimeoutMs = 120_000,
 }: GrokImagineHttpExecutorDependencies = {}): ExternalProviderExecutor {
   return async (context: ExternalProviderExecutionContext) => {
     const startedAt = now();
@@ -167,7 +221,7 @@ export function createGrokImagineHttpExecutor({
     const model = resolveGrokImagineHttpModel(payload.model, env);
     const token = await getAccessToken();
     const secrets = [token, readXaiApiKey(env) ?? ''];
-    const endpointBase = env.XAI_BASE_URL?.trim().replace(/\/+$/, '') || XAI_API_BASE_URL;
+    const endpointBase = resolveXaiApiEndpointBase(env);
     const endpoint = isEdit ? `${endpointBase}/images/edits` : `${endpointBase}/images/generations`;
     const body: Record<string, unknown> = {
       model,
@@ -193,6 +247,9 @@ export function createGrokImagineHttpExecutor({
     }
 
     let response: Awaited<ReturnType<ExternalProviderFetch>>;
+    const requestSignal = context.job.signal
+      ? AbortSignal.any([context.job.signal, AbortSignal.timeout(requestTimeoutMs)])
+      : AbortSignal.timeout(requestTimeoutMs);
     try {
       response = await fetchImpl(endpoint, {
         method: 'POST',
@@ -202,7 +259,8 @@ export function createGrokImagineHttpExecutor({
           'User-Agent': studioUserAgent(),
         },
         body: JSON.stringify(body),
-        signal: context.job.signal,
+        redirect: 'error',
+        signal: requestSignal,
       });
     } catch (error) {
       if (isAbortError(error)) throw error;
@@ -213,7 +271,7 @@ export function createGrokImagineHttpExecutor({
     }
     let rawText = '';
     try {
-      rawText = await response.text();
+      rawText = await readResponseTextLimited(response, 2 * 1024 * 1024);
     } catch (error) {
       if (isAbortError(error)) throw error;
       throw new SubscriptionHttpError(
@@ -228,10 +286,12 @@ export function createGrokImagineHttpExecutor({
       json = { error: rawText.slice(0, 300) };
     }
     if (!response.ok) {
-      throw classifyGrokHttpFailure(
+      const failure = classifyGrokHttpFailure(
         response.status,
         grokErrorMessage(json, responseSnippet(rawText, secrets), secrets),
       );
+      if (response.status === 401 && !readXaiApiKey(env)) invalidateAccessToken(failure.message);
+      throw failure;
     }
     const data = isRecord(json) && Array.isArray(json.data) ? json.data : [];
     const first = isRecord(data[0]) ? data[0] : null;
@@ -239,25 +299,39 @@ export function createGrokImagineHttpExecutor({
     const url = typeof first?.url === 'string' ? first.url : null;
     const files = { resolveLibraryPath: resolveLibraryPathFn, mkdir, writeFile, now };
     if (b64) {
-      return storeInlineImageResult({
-        providerId: 'grok',
-        providerSlug: 'grok-http',
-        model,
-        endpointBase,
-        job: context.job,
-        compiledInput: context.compiledInput,
-        responseJson: { keys: isRecord(json) ? Object.keys(json) : [] },
-        image: { data: b64, mimeType: 'image/png' },
-        requestAttempts: 1,
-        startedAt,
-        diagnostics: {
-          runtime: 'subscription_http',
-          models: [...GROK_IMAGINE_HTTP_MODELS],
-        },
-        files,
-      });
+      try {
+        return storeInlineImageResult({
+          providerId: 'grok',
+          providerSlug: 'grok-http',
+          model,
+          endpointBase,
+          job: context.job,
+          compiledInput: context.compiledInput,
+          responseJson: { keys: isRecord(json) ? Object.keys(json) : [] },
+          image: { data: b64, mimeType: 'image/png' },
+          requestAttempts: 1,
+          startedAt,
+          diagnostics: {
+            runtime: 'subscription_http',
+            models: [...GROK_IMAGINE_HTTP_MODELS],
+          },
+          files,
+        });
+      } catch (error) {
+        if (!(error instanceof ExternalProviderImageError)) throw error;
+        throw new SubscriptionHttpError(error.message, {
+          code: 'empty_response',
+          fallbackAllowed: true,
+        });
+      }
     }
     if (url) {
+      if (!isAllowedXaiImageUrl(url)) {
+        throw new SubscriptionHttpError('xAI returned an untrusted image URL.', {
+          code: 'invalid_request',
+          fallbackAllowed: true,
+        });
+      }
       try {
         return await storeHostedImageResult({
           providerId: 'grok',
@@ -279,6 +353,7 @@ export function createGrokImagineHttpExecutor({
         });
       } catch (error) {
         if (isAbortError(error)) throw error;
+        if (!(error instanceof ExternalProviderImageError)) throw error;
         throw new SubscriptionHttpError(
           error instanceof Error ? error.message : 'xAI image download failed.',
           { code: 'timeout', fallbackAllowed: true },

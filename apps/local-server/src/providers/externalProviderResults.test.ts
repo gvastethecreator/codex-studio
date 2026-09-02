@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import {
+  ExternalProviderImageError,
   fetchExternalProviderWithRetry,
   findFirstHostedImageUrl,
   findFirstInlineImageData,
@@ -8,6 +9,9 @@ import {
   storeHostedImageResult,
   storeInlineImageResult,
 } from './externalProviderResults';
+
+const PNG_B64 =
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
 
 function inputToUrl(input: string | URL | Request) {
   if (typeof input === 'string') return input;
@@ -51,7 +55,7 @@ describe('external provider results', () => {
   });
 
   it('redacts secrets in response snippets', () => {
-    expect(responseSnippet('failure secret-value with    whitespace', ['secret-value'])).toBe(
+    expect(responseSnippet('failure\u0000 secret-value with    whitespace', ['secret-value'])).toBe(
       'failure [redacted] with whitespace',
     );
   });
@@ -68,7 +72,7 @@ describe('external provider results', () => {
           statusText: 'Bad Gateway',
         });
       }
-      return new Response(new Uint8Array([1, 2, 3]), {
+      return new Response(new Uint8Array([0xff, 0xd8, 0xff, 0xe0]), {
         headers: { 'content-type': 'image/jpeg' },
       });
     };
@@ -128,6 +132,49 @@ describe('external provider results', () => {
     });
   });
 
+  it('rejects an oversized hosted image before reading its body', async () => {
+    let readBody = false;
+    await expect(
+      storeHostedImageResult({
+        providerId: 'test-provider',
+        providerSlug: 'test',
+        model: 'model-a',
+        endpointBase: 'provider',
+        job: { id: 'job-large' },
+        compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
+        responseJson: {},
+        imageUrl: 'provider-image',
+        requestAttempts: 1,
+        startedAt: 0,
+        fetch: async () => ({
+          ok: true,
+          status: 200,
+          statusText: 'OK',
+          headers: new Headers({
+            'content-type': 'image/png',
+            'content-length': String(26 * 1024 * 1024),
+          }),
+          json: async () => ({}),
+          text: async () => '',
+          arrayBuffer: async () => {
+            readBody = true;
+            return new ArrayBuffer(0);
+          },
+        }),
+        files: {
+          resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+          mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+          writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+          now: () => 1,
+        },
+        maxAttempts: 1,
+        retryDelayMs: 1,
+        sleep: async () => undefined,
+      }),
+    ).rejects.toThrow('25 MB limit');
+    expect(readBody).toBe(false);
+  });
+
   it('stores inline image results without a provider image download', () => {
     const writes: Array<{ filePath: string; content: unknown; encoding?: unknown }> = [];
 
@@ -139,7 +186,7 @@ describe('external provider results', () => {
       job: { id: 'job-inline' },
       compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
       responseJson: { candidates: [] },
-      image: { data: 'AQID', mimeType: 'image/png' },
+      image: { data: PNG_B64, mimeType: 'image/png' },
       requestAttempts: 1,
       startedAt: 1000,
       diagnostics: { requestFieldNames: ['contents'] },
@@ -167,13 +214,39 @@ describe('external provider results', () => {
       mimeType: 'image/png',
     });
     expect(Buffer.isBuffer(assetWrite?.content)).toBe(true);
-    expect(Array.from(assetWrite?.content as Buffer)).toEqual([1, 2, 3]);
+    const assetBuffer = assetWrite?.content as Buffer;
+    expect(assetBuffer.subarray(0, 8)).toEqual(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]));
     expect(transcript).toMatchObject({
       providerId: 'google',
       requestAttempts: 1,
       imageAttempts: 0,
       diagnostics: { requestFieldNames: ['contents'] },
     });
+  });
+
+  it('rejects malformed inline image bytes before writing files', () => {
+    expect(() =>
+      storeInlineImageResult({
+        providerId: 'google',
+        providerSlug: 'google',
+        model: 'model',
+        endpointBase: 'https://provider.example',
+        job: { id: 'job-invalid' },
+        compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },
+        responseJson: {},
+        image: { data: 'AQID', mimeType: 'image/png' },
+        requestAttempts: 1,
+        startedAt: 0,
+        files: {
+          resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+          mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+          writeFile: (() => {
+            throw new Error('must not write');
+          }) as typeof import('node:fs').writeFileSync,
+          now: () => 1,
+        },
+      }),
+    ).toThrow(ExternalProviderImageError);
   });
 
   it('returns final retryable failure after max attempts', async () => {

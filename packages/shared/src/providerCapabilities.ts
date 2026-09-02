@@ -88,7 +88,7 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     requiresSecret: false,
     requiresLocalRuntime: true,
     activeDetail: 'Grok Imagine is available through the authenticated local Grok Build CLI.',
-    subscriptionReadyDetail: 'xAI Sign in is ready. Grok Build CLI stays as fallback.',
+    subscriptionReadyDetail: 'xAI HTTP credentials are ready. Grok Build CLI stays as fallback.',
     plannedDetail: 'Grok Imagine adapter is available.',
     missingDetail: 'Sign in with xAI in Studio Settings, set XAI_API_KEY, or install Grok Build.',
   },

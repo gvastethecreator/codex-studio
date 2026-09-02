@@ -9,13 +9,15 @@ import { LIBRARY_FOLDERS, ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';
 import { log } from './logger';
 
-const LIBRARY_RESET_TARGETS = ['library.sqlite', ...LIBRARY_FOLDERS, 'auth'] as const;
+const LIBRARY_RESET_TARGETS = ['library.sqlite', ...LIBRARY_FOLDERS] as const;
 
 export async function resetStudioData(worker: { resetWorkerState(): Promise<void> }) {
   await worker.resetWorkerState();
   await stopAppServer();
-  getSubscriptionAuthController().logout('codex');
-  getSubscriptionAuthController().logout('xai');
+  await Promise.all([
+    getSubscriptionAuthController().logout('codex'),
+    getSubscriptionAuthController().logout('xai'),
+  ]);
   closeDb();
 
   for (const target of LIBRARY_RESET_TARGETS) {
