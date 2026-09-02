@@ -83,33 +83,33 @@ function getParams(config: ImageGenerationConfig) {
 }
 
 function getRowTone(row: SpriteAtlasRowState) {
-  if (row.status === 'blocked') return 'border-rose-500/30 bg-rose-500/10 text-rose-200';
+  if (row.status === 'blocked') return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
   if (row.status === 'raw_imported' || row.status === 'extracted') {
-    return 'border-emerald-500/30 bg-emerald-500/10 text-emerald-200';
+    return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
   }
   if (row.status === 'handoff_ready' || row.status === 'generating') {
-    return 'border-sky-500/30 bg-sky-500/10 text-sky-200';
+    return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
   }
-  return 'border-white/10 bg-white/[0.035] text-zinc-300';
+  return 'border-white/2 bg-white/[0.035] text-zinc-300';
 }
 
 function getRunTone(status: SpriteAtlasRun['status'] | null | undefined) {
-  if (status === 'blocked') return 'border-rose-500/30 bg-rose-500/10 text-rose-200';
+  if (status === 'blocked') return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
   if (status === 'qa_passed') {
-    return 'border-emerald-500/30 bg-emerald-500/10 text-emerald-200';
+    return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
   }
   if (status === 'ready_to_extract' || status === 'composed') {
-    return 'border-amber-500/30 bg-amber-500/10 text-amber-200';
+    return 'border-amber-500/2 bg-amber-500/10 text-amber-200';
   }
-  return 'border-sky-500/30 bg-sky-500/10 text-sky-200';
+  return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
 }
 
 function getPresetTone(assetKind: SpriteAtlasAssetKind) {
-  if (assetKind === 'tileset') return 'border-emerald-500/25 bg-emerald-500/10 text-emerald-200';
-  if (assetKind === 'texture') return 'border-amber-500/25 bg-amber-500/10 text-amber-200';
-  if (assetKind === 'asset') return 'border-pink-500/25 bg-pink-500/10 text-pink-200';
-  if (assetKind === 'custom') return 'border-violet-500/25 bg-violet-500/10 text-violet-200';
-  return 'border-sky-500/25 bg-sky-500/10 text-sky-200';
+  if (assetKind === 'tileset') return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
+  if (assetKind === 'texture') return 'border-amber-500/2 bg-amber-500/10 text-amber-200';
+  if (assetKind === 'asset') return 'border-pink-500/2 bg-pink-500/10 text-pink-200';
+  if (assetKind === 'custom') return 'border-violet-500/2 bg-violet-500/10 text-violet-200';
+  return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
 }
 
 function normalizeSearch(value: string) {
@@ -447,8 +447,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   return (
     <div className="flex h-full min-h-0 flex-col bg-zinc-950 text-zinc-100">
       <div className="grid min-h-0 flex-1 grid-cols-1 gap-2 overflow-hidden p-3 xl:grid-cols-[20rem_minmax(0,1fr)_24rem] xl:grid-rows-[minmax(0,1fr)_auto]">
-        <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/10 bg-black/40 shadow-2xl">
-          <div className="border-b border-white/10 p-3">
+        <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 shadow-2xl">
+          <div className="border-b border-white/2 p-3">
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
                 <div className="text-[10px] font-black uppercase tracking-widest text-sky-300">
@@ -459,12 +459,12 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   {contract.assetKind} / {contract.extractionMode}
                 </p>
               </div>
-              <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-sky-400/25 bg-sky-500/10 text-sky-200">
+              <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-sky-400/2 bg-sky-500/10 text-sky-200">
                 <Package size={20} />
               </span>
             </div>
 
-            <div className="mt-3 grid grid-cols-3 gap-2 rounded-lg border border-white/10 bg-white/[0.03] p-2">
+            <div className="mt-3 grid grid-cols-3 gap-2 rounded-lg border border-white/2 bg-white/[0.03] p-2">
               <Metric label="Rows" value={String(contract.rows.length)} />
               <Metric label="Frames" value={String(getFrameTotal(contract.rows))} />
               <Metric label="Cell" value={`${contract.cell.width}px`} />
@@ -492,10 +492,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     key={preset.id}
                     type="button"
                     onClick={() => selectPreset(preset)}
-                    className={`group grid gap-2 rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-white/25 ${
-                      active
-                        ? 'border-sky-400/60 bg-sky-500/10'
-                        : 'border-white/10 bg-white/[0.035]'
+                    className={`group grid gap-2 rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-white/2 ${
+                      active ? 'border-sky-400/2 bg-sky-500/10' : 'border-white/2 bg-white/[0.035]'
                     }`}
                   >
                     <div className="flex items-start justify-between gap-2">
@@ -552,9 +550,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
             </div>
           </div>
 
-          <div className="border-t border-white/10 p-3">
+          <div className="border-t border-white/2 p-3">
             {currentPreset && (
-              <div className="mb-2 rounded-lg border border-white/10 bg-white/[0.03] p-2 text-xs leading-relaxed text-zinc-400">
+              <div className="mb-2 rounded-lg border border-white/2 bg-white/[0.03] p-2 text-xs leading-relaxed text-zinc-400">
                 {currentPreset.description}
               </div>
             )}
@@ -562,7 +560,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
               type="button"
               onClick={handleCreateRun}
               disabled={busy}
-              className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-sky-300/30 bg-sky-400 px-3 text-xs font-black uppercase tracking-widest text-black transition hover:bg-sky-300 disabled:cursor-not-allowed disabled:opacity-50"
+              className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-sky-300/2 bg-sky-400 px-3 text-xs font-black uppercase tracking-widest text-black transition hover:bg-sky-300 disabled:cursor-not-allowed disabled:opacity-50"
             >
               {busy ? <Loader2 size={15} className="animate-spin" /> : <Plus size={15} />}
               Prepare Run
@@ -570,8 +568,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           </div>
         </aside>
 
-        <main className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border border-white/10 bg-black/25 shadow-2xl xl:row-span-2">
-          <div className="border-b border-white/10 p-3">
+        <main className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/25 shadow-2xl xl:row-span-2">
+          <div className="border-b border-white/2 p-3">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
@@ -638,13 +636,13 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           </div>
 
           {error && (
-            <div className="m-3 flex items-start gap-2 rounded-lg border border-rose-500/25 bg-rose-500/10 p-3 text-sm text-rose-100">
+            <div className="m-3 flex items-start gap-2 rounded-lg border border-rose-500/2 bg-rose-500/10 p-3 text-sm text-rose-100">
               <AlertTriangle size={16} className="mt-0.5 shrink-0" />
               <span>{error}</span>
             </div>
           )}
           {message && (
-            <div className="m-3 rounded-lg border border-emerald-500/20 bg-emerald-500/10 p-3 text-sm text-emerald-100">
+            <div className="m-3 rounded-lg border border-emerald-500/2 bg-emerald-500/10 p-3 text-sm text-emerald-100">
               {message}
             </div>
           )}
@@ -652,7 +650,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           <div className="min-h-0 flex-1 overflow-hidden">
             {activeRun ? (
               <section className="flex h-full min-h-0 flex-col">
-                <div className="grid gap-2 border-b border-white/10 p-3 lg:grid-cols-[minmax(0,1fr)_auto]">
+                <div className="grid gap-2 border-b border-white/2 p-3 lg:grid-cols-[minmax(0,1fr)_auto]">
                   <label className="grid min-w-0 gap-1">
                     <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
                       Search rows
@@ -667,7 +665,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         value={rowQuery}
                         onChange={(event) => setRowQuery(event.target.value)}
                         placeholder="Names, jobs, paths"
-                        className="h-9 w-full rounded-lg border border-white/10 bg-black/45 pl-9 pr-3 text-xs text-zinc-200 outline-none placeholder:text-zinc-600 transition focus:border-sky-400/60"
+                        className="h-9 w-full rounded-lg border border-white/2 bg-black/45 pl-9 pr-3 text-xs text-zinc-200 outline-none placeholder:text-zinc-600 transition focus:border-sky-400/2"
                       />
                     </span>
                   </label>
@@ -684,7 +682,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   </div>
                 </div>
 
-                <div className="grid grid-cols-4 gap-2 border-b border-white/10 p-3">
+                <div className="grid grid-cols-4 gap-2 border-b border-white/2 p-3">
                   <Metric label="Handoff" value={String(rowCounts.handoff_ready)} />
                   <Metric label="Imported" value={String(rowCounts.raw_imported)} />
                   <Metric label="Blocked" value={String(rowCounts.blocked)} />
@@ -702,10 +700,10 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                             setSelectedRowId(row.id);
                             setInspectorTab('guide');
                           }}
-                          className={`group flex min-h-[96px] flex-col justify-between rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-white/25 ${
+                          className={`group flex min-h-[96px] flex-col justify-between rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-white/2 ${
                             selectedRow?.id === row.id
-                              ? 'border-sky-400/60 bg-sky-500/10'
-                              : 'border-white/10 bg-white/[0.035]'
+                              ? 'border-sky-400/2 bg-sky-500/10'
+                              : 'border-white/2 bg-white/[0.035]'
                           }`}
                         >
                           <div className="flex items-start justify-between gap-3">
@@ -773,10 +771,10 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           </div>
         </main>
 
-        <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/10 bg-black/35 shadow-2xl xl:row-span-2">
+        <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/35 shadow-2xl xl:row-span-2">
           {activeRun && selectedRow ? (
             <>
-              <div className="border-b border-white/10 p-3">
+              <div className="border-b border-white/2 p-3">
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
                     <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
@@ -795,7 +793,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   </span>
                 </div>
 
-                <div className="mt-3 grid grid-cols-3 gap-1.5 rounded-lg border border-white/10 bg-white/[0.03] p-1.5">
+                <div className="mt-3 grid grid-cols-3 gap-1.5 rounded-lg border border-white/2 bg-white/[0.03] p-1.5">
                   {(['guide', 'prompt', 'artifacts'] as const).map((tab) => (
                     <button
                       key={tab}
@@ -816,7 +814,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
               <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
                 {inspectorTab === 'guide' && (
                   <div className="grid gap-3">
-                    <div className="rounded-lg border border-white/10 bg-white/[0.03] p-2">
+                    <div className="rounded-lg border border-white/2 bg-white/[0.03] p-2">
                       <div className="mb-2 flex items-center justify-between gap-2">
                         <span className="text-xs font-black uppercase tracking-widest text-zinc-500">
                           Layout Guide
@@ -826,7 +824,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       <img
                         src={getSpriteAtlasLayoutGuideUrl(activeRun.id, selectedRow.id)}
                         alt=""
-                        className="h-auto w-full rounded-md border border-white/10 bg-black object-contain"
+                        className="h-auto w-full rounded-md border border-white/2 bg-black object-contain"
                       />
                     </div>
 
@@ -835,7 +833,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         type="button"
                         onClick={handleCreateRowJob}
                         disabled={busy}
-                        className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-sky-400/20 bg-sky-500/10 px-3 text-xs font-black uppercase tracking-widest text-sky-100 hover:bg-sky-500/15 disabled:opacity-50"
+                        className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-sky-400/2 bg-sky-500/10 px-3 text-xs font-black uppercase tracking-widest text-sky-100 hover:bg-sky-500/15 disabled:opacity-50"
                       >
                         <ClipboardList size={15} />
                         Row Job
@@ -844,7 +842,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         type="button"
                         onClick={handleBlockRow}
                         disabled={busy}
-                        className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-rose-400/20 bg-rose-500/10 px-3 text-xs font-bold uppercase tracking-widest text-rose-100 hover:bg-rose-500/15 disabled:opacity-50"
+                        className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-xs font-bold uppercase tracking-widest text-rose-100 hover:bg-rose-500/15 disabled:opacity-50"
                       >
                         <AlertTriangle size={15} />
                         Block
@@ -860,14 +858,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           value={rowSourcePath}
                           onChange={(event) => setRowSourcePath(event.target.value)}
                           placeholder="D:\\path\\row.png"
-                          className="min-h-10 w-full min-w-0 rounded-md border border-white/10 bg-zinc-900 px-2 font-mono text-xs text-white outline-none focus:border-sky-400/60"
+                          className="min-h-10 w-full min-w-0 rounded-md border border-white/2 bg-zinc-900 px-2 font-mono text-xs text-white outline-none focus:border-sky-400/2"
                         />
                       </label>
                       <button
                         type="button"
                         onClick={handleImportRow}
                         disabled={busy || !rowSourcePath.trim()}
-                        className="inline-flex min-h-10 items-center justify-center rounded-md border border-white/10 bg-white/[0.04] px-3 text-zinc-200 hover:bg-white/10 disabled:opacity-50"
+                        className="inline-flex min-h-10 items-center justify-center rounded-md border border-white/2 bg-white/[0.04] px-3 text-zinc-200 hover:bg-white/10 disabled:opacity-50"
                         aria-label="Import selected row"
                       >
                         <FileImport size={15} />
@@ -878,18 +876,18 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
                 {inspectorTab === 'prompt' && (
                   <div className="grid gap-3">
-                    <div className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+                    <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
                       <div className="mb-2 flex items-center justify-between gap-2">
                         <span className="text-xs font-black uppercase tracking-widest text-zinc-500">
                           Prompt
                         </span>
                         {isPromptLoading && <Loader2 size={14} className="animate-spin" />}
                       </div>
-                      <pre className="custom-scrollbar max-h-[420px] overflow-y-auto whitespace-pre-wrap rounded-md border border-white/10 bg-black/45 p-3 text-[11px] leading-relaxed text-zinc-300">
+                      <pre className="custom-scrollbar max-h-[420px] overflow-y-auto whitespace-pre-wrap rounded-md border border-white/2 bg-black/45 p-3 text-[11px] leading-relaxed text-zinc-300">
                         {selectedPrompt || 'Prompt unavailable.'}
                       </pre>
                     </div>
-                    <div className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+                    <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
                       <dl className="grid gap-2 text-xs">
                         <PathRow label="Prompt" value={selectedRow.promptPath} />
                         <PathRow label="Request" value={activeRun.paths.requestPath} />
@@ -901,7 +899,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
                 {inspectorTab === 'artifacts' && (
                   <div className="grid gap-3">
-                    <div className="rounded-lg border border-white/10 bg-white/[0.03] p-3">
+                    <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
                       <div className="text-xs font-black uppercase tracking-widest text-zinc-500">
                         Row Paths
                       </div>
@@ -914,14 +912,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     </div>
 
                     {activeRun.status === 'composed' || activeRun.status === 'qa_passed' ? (
-                      <div className="rounded-lg border border-white/10 bg-white/[0.03] p-2">
+                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-2">
                         <div className="mb-2 text-xs font-black uppercase tracking-widest text-zinc-500">
                           Atlas
                         </div>
                         <img
                           src={getSpriteAtlasAtlasUrl(activeRun.id)}
                           alt=""
-                          className="h-auto w-full rounded-md border border-white/10 bg-black object-contain"
+                          className="h-auto w-full rounded-md border border-white/2 bg-black object-contain"
                         />
                       </div>
                     ) : (
@@ -933,7 +931,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     )}
 
                     {activeRun.qa && (
-                      <div className="rounded-lg border border-white/10 bg-white/[0.03] p-3 text-xs text-zinc-300">
+                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3 text-xs text-zinc-300">
                         <div className="flex items-center justify-between gap-2">
                           <span className="font-black uppercase tracking-widest text-zinc-500">
                             QA Report
@@ -965,8 +963,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           )}
         </aside>
 
-        <aside className="min-h-0 overflow-hidden rounded-lg border border-white/10 bg-black/30 xl:col-start-1 xl:row-start-2">
-          <div className="flex items-center justify-between gap-2 border-b border-white/10 p-3">
+        <aside className="min-h-0 overflow-hidden rounded-lg border border-white/2 bg-black/30 xl:col-start-1 xl:row-start-2">
+          <div className="flex items-center justify-between gap-2 border-b border-white/2 p-3">
             <div className="text-xs font-black uppercase tracking-widest text-zinc-500">
               Recent Runs
             </div>
@@ -983,10 +981,10 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       setActiveRun(run);
                       setSelectedRowId(run.rows[0]?.id ?? null);
                     }}
-                    className={`rounded-lg border p-2 text-left transition hover:border-white/25 ${
+                    className={`rounded-lg border p-2 text-left transition hover:border-white/2 ${
                       activeRun?.id === run.id
-                        ? 'border-sky-400/50 bg-sky-500/10'
-                        : 'border-white/10 bg-white/[0.025]'
+                        ? 'border-sky-400/2 bg-sky-500/10'
+                        : 'border-white/2 bg-white/[0.025]'
                     }`}
                   >
                     <div className="flex items-center justify-between gap-2">
@@ -1058,8 +1056,8 @@ const SelectField: React.FC<{
           onClick={() => setIsOpen((open) => !open)}
           className={`flex min-h-10 w-full items-center justify-between gap-2 rounded-md border px-2 text-left text-sm font-bold normal-case tracking-normal transition-[background-color,border-color,color,transform] ${
             isOpen
-              ? 'border-sky-400/55 bg-sky-500/10 text-white'
-              : 'border-white/10 bg-zinc-900 text-white hover:border-white/25 hover:bg-white/[0.04]'
+              ? 'border-sky-400/2 bg-sky-500/10 text-white'
+              : 'border-white/2 bg-zinc-900 text-white hover:border-white/2 hover:bg-white/[0.04]'
           }`}
           aria-labelledby={labelId}
           aria-haspopup="listbox"
@@ -1125,8 +1123,8 @@ const FilterChip: React.FC<{
     onClick={onClick}
     className={`min-h-8 rounded-md border px-2 text-[9px] font-black uppercase tracking-widest transition ${
       active
-        ? 'border-sky-400/60 bg-sky-500/15 text-white'
-        : 'border-white/10 bg-white/[0.035] text-zinc-500 hover:border-white/25 hover:text-zinc-200'
+        ? 'border-sky-400/2 bg-sky-500/15 text-white'
+        : 'border-white/2 bg-white/[0.035] text-zinc-500 hover:border-white/2 hover:text-zinc-200'
     }`}
   >
     {children}
@@ -1142,12 +1140,12 @@ const IconButton: React.FC<{
 }> = ({ label, onClick, disabled = false, tone = 'neutral', children }) => {
   const toneClass =
     tone === 'sky'
-      ? 'border-sky-400/20 bg-sky-500/10 text-sky-100 hover:bg-sky-500/15'
+      ? 'border-sky-400/2 bg-sky-500/10 text-sky-100 hover:bg-sky-500/15'
       : tone === 'amber'
-        ? 'border-amber-400/20 bg-amber-500/10 text-amber-100 hover:bg-amber-500/15'
+        ? 'border-amber-400/2 bg-amber-500/10 text-amber-100 hover:bg-amber-500/15'
         : tone === 'emerald'
-          ? 'border-emerald-400/20 bg-emerald-500/10 text-emerald-100 hover:bg-emerald-500/15'
-          : 'border-white/10 bg-white/[0.04] text-zinc-300 hover:bg-white/10';
+          ? 'border-emerald-400/2 bg-emerald-500/10 text-emerald-100 hover:bg-emerald-500/15'
+          : 'border-white/2 bg-white/[0.04] text-zinc-300 hover:bg-white/10';
   return (
     <button
       type="button"
@@ -1166,12 +1164,12 @@ const PipelineStep: React.FC<{
 }> = ({ stage }) => {
   const tone =
     stage.state === 'complete'
-      ? 'border-emerald-500/25 bg-emerald-500/10 text-emerald-200'
+      ? 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200'
       : stage.state === 'blocked'
-        ? 'border-rose-500/25 bg-rose-500/10 text-rose-200'
+        ? 'border-rose-500/2 bg-rose-500/10 text-rose-200'
         : stage.state === 'active'
-          ? 'border-sky-500/25 bg-sky-500/10 text-sky-200'
-          : 'border-white/10 bg-white/[0.025] text-zinc-500';
+          ? 'border-sky-500/2 bg-sky-500/10 text-sky-200'
+          : 'border-white/2 bg-white/[0.025] text-zinc-500';
   return (
     <div className={`min-w-0 rounded-lg border p-2 ${tone}`}>
       <div className="truncate text-[9px] font-black uppercase tracking-widest">{stage.label}</div>
@@ -1185,9 +1183,9 @@ const EmptyState: React.FC<{
   title: string;
   copy: string;
 }> = ({ icon, title, copy }) => (
-  <div className="grid min-h-44 place-items-center rounded-lg border border-dashed border-white/10 bg-white/[0.02] p-5 text-center">
+  <div className="grid min-h-44 place-items-center rounded-lg border border-dashed border-white/2 bg-white/[0.02] p-5 text-center">
     <div>
-      <div className="mx-auto grid size-12 place-items-center rounded-lg border border-white/10 bg-black/30 text-zinc-600">
+      <div className="mx-auto grid size-12 place-items-center rounded-lg border border-white/2 bg-black/30 text-zinc-600">
         {icon}
       </div>
       <p className="mt-3 text-sm font-bold text-zinc-300">{title}</p>

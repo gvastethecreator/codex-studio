@@ -352,7 +352,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
         handleClose();
       }}
     >
-      <div className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-white/5 px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
+      <div className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-white/2 px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
         <div className="flex min-w-0 items-center gap-3 sm:gap-5">
           <div className="rounded-xl bg-accent-500/10 p-2 sm:p-2.5">
             <Sparkles size={18} className="text-accent-400 sm:size-5" />
@@ -403,7 +403,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           />
           <div
             ref={brushCursorRef}
-            className="fixed pointer-events-none border border-white/40 shadow-2xl rounded-full mix-blend-difference z-110"
+            className="fixed pointer-events-none border border-white/2 shadow-2xl rounded-full mix-blend-difference z-110"
             style={{
               width: brushSize,
               height: brushSize,

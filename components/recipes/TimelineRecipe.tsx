@@ -141,9 +141,9 @@ function TimelineBottomDock({
         <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest pl-1">
           Sequence
         </span>
-        <div className="flex items-center p-1 bg-white/5 rounded-xl border border-white/5 relative">
+        <div className="flex items-center p-1 bg-white/5 rounded-xl border border-white/2 relative">
           <div
-            className={`absolute inset-y-1 w-1/2 bg-teal-600/20 border border-teal-500/30 rounded-lg transition-transform duration-300 ${direction === 'forward' ? 'translate-x-full' : 'translate-x-0'}`}
+            className={`absolute inset-y-1 w-1/2 bg-teal-600/20 border border-teal-500/2 rounded-lg transition-transform duration-300 ${direction === 'forward' ? 'translate-x-full' : 'translate-x-0'}`}
           />
           <button
             type="button"
@@ -212,7 +212,7 @@ function TimelineBottomDock({
           <button
             type="button"
             onClick={() => onSetCameraMode(cameraMode === 'locked' ? 'dynamic' : 'locked')}
-            className={`flex min-w-25 items-center gap-2 rounded-xl border px-4 transition-colors h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-red-400' : 'bg-blue-500/10 border-blue-500/30 text-blue-400'}`}
+            className={`flex min-w-25 items-center gap-2 rounded-xl border px-4 transition-colors h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-red-400' : 'bg-blue-500/10 border-blue-500/2 text-blue-400'}`}
           >
             {cameraMode === 'locked' ? <Lock size={14} /> : <Video size={14} />}
             <span className="text-[10px] font-black uppercase tracking-widest">{cameraMode}</span>
@@ -226,7 +226,7 @@ function TimelineBottomDock({
           <button
             type="button"
             onClick={onToggleOnionSkin}
-            className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-white/10 border-white/30 text-white' : 'bg-transparent border-white/5 text-zinc-500'}`}
+            className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-white/10 border-white/2 text-white' : 'bg-transparent border-white/2 text-zinc-500'}`}
             title="Toggle Onion Skin"
           >
             <Layers size={14} />
@@ -277,7 +277,7 @@ function TimelineCanvas({
       {/* Main Viewport */}
       <div className="flex-1 w-full flex items-center justify-center min-h-0 relative">
         <div
-          className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-zinc-950"
+          className="relative rounded-2xl overflow-hidden border border-white/2 shadow-2xl bg-zinc-950"
           style={{
             aspectRatio: ratioValue,
             width: 'min(86vw, 72vh)',
@@ -302,17 +302,17 @@ function TimelineCanvas({
               )}
               <div className="absolute inset-0 z-30 flex items-center justify-between px-8 pointer-events-none">
                 <div
-                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/10 transition-[opacity,transform] duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/2 transition-[opacity,transform] duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
                 >
                   <Rewind size={32} className="text-teal-400" />
                 </div>
                 <div
-                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/10 transition-[opacity,transform] duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/2 transition-[opacity,transform] duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                 >
                   <FastForward size={32} className="text-teal-400" />
                 </div>
               </div>
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-zinc-950/60 rounded-full border border-white/10 flex items-center gap-3 backdrop-blur-md z-30">
+              <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-zinc-950/60 rounded-full border border-white/2 flex items-center gap-3 backdrop-blur-md z-30">
                 <span className="text-[9px] font-bold text-zinc-400 uppercase">
                   Frame: {currentRefIndex}
                 </span>
@@ -324,7 +324,7 @@ function TimelineCanvas({
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-zinc-950/60 text-zinc-400 hover:text-white hover:bg-white/10 transition-colors pointer-events-auto border border-white/10 flex items-center gap-2"
+                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-zinc-950/60 text-zinc-400 hover:text-white hover:bg-white/10 transition-colors pointer-events-auto border border-white/2 flex items-center gap-2"
               >
                 <span className="text-[9px] font-bold uppercase hidden sm:block">Replace</span>
                 <Upload size={14} />
@@ -358,7 +358,7 @@ function TimelineCanvas({
                 className="hidden"
                 accept="image/*"
               />
-              <div className="size-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+              <div className="size-20 rounded-full bg-zinc-900 border border-white/2 flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                 <Clock size={32} className="text-zinc-600 group-hover:text-teal-400" />
               </div>
               <QuickStartText
@@ -372,7 +372,7 @@ function TimelineCanvas({
       </div>
 
       {/* Timeline Strip (Carousel) */}
-      <div className="relative z-20 flex h-auto w-full shrink-0 flex-col gap-2 border-t border-white/5 bg-[#060606] pb-4">
+      <div className="relative z-20 flex h-auto w-full shrink-0 flex-col gap-2 border-t border-white/2 bg-[#060606] pb-4">
         <div className="flex items-center justify-between px-6 pt-2">
           <div className="flex items-center gap-2 text-teal-500/60">
             <Film size={12} />
@@ -396,8 +396,8 @@ function TimelineCanvas({
         <div className="w-full h-28 relative group">
           {/* Playhead Indicator (Absolute Center) */}
           <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-teal-500 z-30 pointer-events-none shadow-[0_0_15px_rgba(20,184,166,1)]">
-            <div className="absolute top-0 left-1/2 size-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-l-[6px] border-l-transparent border-t-8 border-t-teal-500" />
-            <div className="absolute bottom-0 left-1/2 size-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-b-8 border-b-teal-500 border-l-[6px] border-l-transparent" />
+            <div className="absolute top-0 left-1/2 size-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-l-[6px] border-l-transparent border-t-8 border-t-teal-500/2" />
+            <div className="absolute bottom-0 left-1/2 size-0 -translate-x-1/2 border-r-[6px] border-r-transparent border-b-8 border-b-teal-500/2 border-l-[6px] border-l-transparent" />
           </div>
 
           {/* SCROLL CONTAINER */}
@@ -412,7 +412,7 @@ function TimelineCanvas({
 
             <div className="flex items-center gap-4 px-4">
               {timelineItems.length === 0 && (
-                <div className="h-20 w-48 flex items-center justify-center text-[10px] text-zinc-600 font-bold uppercase tracking-widest italic opacity-50 border border-white/5 rounded-lg snap-center mx-auto border-dashed">
+                <div className="h-20 w-48 flex items-center justify-center text-[10px] text-zinc-600 font-bold uppercase tracking-widest italic opacity-50 border border-white/2 rounded-lg snap-center mx-auto border-dashed">
                   Sequence Empty
                 </div>
               )}
@@ -435,8 +435,8 @@ function TimelineCanvas({
                       className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-lg border-2 bg-zinc-900 transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo
                                             ${
                                               isActive
-                                                ? 'border-teal-500 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
-                                                : 'border-white/5 opacity-40 scale-90 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-95'
+                                                ? 'border-teal-500/2 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
+                                                : 'border-white/2 opacity-40 scale-90 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-95'
                                             }
                                         `}
                       onClick={() => onItemClick(item)}
@@ -450,13 +450,13 @@ function TimelineCanvas({
 
                       {/* Frame Number Tag */}
                       <div
-                        className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-[7px] font-black font-mono border backdrop-blur-md uppercase tracking-wider ${isActive ? 'bg-teal-500 text-black border-teal-400' : 'bg-zinc-950/80 text-white/50 border-white/10'}`}
+                        className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-[7px] font-black font-mono border backdrop-blur-md uppercase tracking-wider ${isActive ? 'bg-teal-500 text-black border-teal-400/2' : 'bg-zinc-950/80 text-white/50 border-white/2'}`}
                       >
                         {item.isOrigin ? 'ORIGIN' : `SEQ.${item.index}`}
                       </div>
 
                       {isAnchor && !isActive && (
-                        <div className="absolute inset-0 border-2 border-dashed border-teal-500/30 rounded-lg pointer-events-none" />
+                        <div className="absolute inset-0 border-2 border-dashed border-teal-500/2 rounded-lg pointer-events-none" />
                       )}
                     </MotionButton>
                   );

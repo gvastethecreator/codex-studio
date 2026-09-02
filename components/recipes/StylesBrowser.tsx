@@ -235,37 +235,37 @@ const PACK_THEMES: Record<string, StyleTheme> = {
   [USER_STYLE_PACK_ID]: {
     color: 'sky',
     bg: 'bg-sky-500',
-    border: 'border-sky-500',
+    border: 'border-sky-500/2',
     text: 'text-sky-400',
   },
   [FAVORITES_PACK_ID]: {
     color: 'rose',
     bg: 'bg-rose-600',
-    border: 'border-rose-600',
+    border: 'border-rose-600/2',
     text: 'text-rose-500',
   },
   pack_01: {
     color: 'cyan',
     bg: 'bg-cyan-500',
-    border: 'border-cyan-500',
+    border: 'border-cyan-500/2',
     text: 'text-cyan-400',
   }, // Photography & Realism
   pack_02: {
     color: 'indigo',
     bg: 'bg-indigo-500',
-    border: 'border-indigo-500',
+    border: 'border-indigo-500/2',
     text: 'text-indigo-400',
   }, // Cinematic & Media
   pack_03: {
     color: 'rose',
     bg: 'bg-rose-500',
-    border: 'border-rose-500',
+    border: 'border-rose-500/2',
     text: 'text-rose-400',
   }, // 3D & CGI Rendering
   pack_04: {
     color: 'fuchsia',
     bg: 'bg-fuchsia-500',
-    border: 'border-fuchsia-500',
+    border: 'border-fuchsia-500/2',
     text: 'text-fuchsia-400',
   }, // Illustration & Graphic Novel
   pack_05: {
@@ -277,73 +277,73 @@ const PACK_THEMES: Record<string, StyleTheme> = {
   pack_06: {
     color: 'amber',
     bg: 'bg-amber-500',
-    border: 'border-amber-500',
+    border: 'border-amber-500/2',
     text: 'text-amber-400',
   }, // Essential Art Styles
   pack_07: {
     color: 'emerald',
     bg: 'bg-emerald-500',
-    border: 'border-emerald-500',
+    border: 'border-emerald-500/2',
     text: 'text-emerald-400',
   }, // Architecture & Interior
   pack_08: {
     color: 'violet',
     bg: 'bg-violet-500',
-    border: 'border-violet-500',
+    border: 'border-violet-500/2',
     text: 'text-violet-400',
   }, // Fashion & Costume
   pack_09: {
     color: 'lime',
     bg: 'bg-lime-500',
-    border: 'border-lime-500',
+    border: 'border-lime-500/2',
     text: 'text-lime-400',
   }, // Texture & Materiality
   pack_10: {
     color: 'blue',
     bg: 'bg-blue-500',
-    border: 'border-blue-500',
+    border: 'border-blue-500/2',
     text: 'text-blue-400',
   }, // Abstract & Experimental
   pack_11: {
     color: 'orange',
     bg: 'bg-orange-500',
-    border: 'border-orange-500',
+    border: 'border-orange-500/2',
     text: 'text-orange-400',
   }, // Miscellaneous & Fun
   pack_12: {
     color: 'emerald',
     bg: 'bg-emerald-500',
-    border: 'border-emerald-500',
+    border: 'border-emerald-500/2',
     text: 'text-emerald-400',
   }, // Video Game Originals Vault
   pack_13: {
     color: 'pink',
     bg: 'bg-pink-500',
-    border: 'border-pink-500',
+    border: 'border-pink-500/2',
     text: 'text-pink-400',
   }, // Anime Character & Lifestyle
   pack_14: {
     color: 'violet',
     bg: 'bg-violet-500',
-    border: 'border-violet-500',
+    border: 'border-violet-500/2',
     text: 'text-violet-400',
   }, // Mythic Noir Curated Vault
   pack_15: {
     color: 'teal',
     bg: 'bg-teal-500',
-    border: 'border-teal-500',
+    border: 'border-teal-500/2',
     text: 'text-teal-400',
   }, // Punk Spectrum Vault
   pack_16: {
     color: 'rose',
     bg: 'bg-rose-500',
-    border: 'border-rose-500',
+    border: 'border-rose-500/2',
     text: 'text-rose-400',
   }, // Anime Classics & Prestige
   pack_17: {
     color: 'green',
     bg: 'bg-green-500',
-    border: 'border-green-500',
+    border: 'border-green-500/2',
     text: 'text-green-400',
   }, // Medieval Fantasy & Dungeon Zine
 };
@@ -566,7 +566,7 @@ function StyleGridPlaceholderCells({
         <div
           key={index}
           data-style-grid-placeholder-card
-          className="aspect-[3/4] rounded-[6px] border border-white/[0.055] bg-zinc-900/32 shadow-[inset_0_1px_0_rgba(255,255,255,0.035)]"
+          className="aspect-[3/4] rounded-[6px] border border-white/2 bg-zinc-900/32 shadow-[inset_0_1px_0_rgba(255,255,255,0.035)]"
         >
           <div className="h-full rounded-[6px] bg-linear-to-b from-white/[0.035] via-transparent to-black/20" />
         </div>
@@ -801,7 +801,7 @@ const StylePresetGroupSection = React.memo(
         style={isNearViewport ? undefined : { minHeight: placeholderHeight }}
       >
         <div
-          className={`sticky top-0 z-30 mb-2 flex items-center gap-2 border-y border-white/5 bg-zinc-950/92 px-2 py-2 shadow-[0_10px_18px_rgba(0,0,0,0.28)] ${headerClassName}`}
+          className={`sticky top-0 z-30 mb-2 flex items-center gap-2 border-y border-white/2 bg-zinc-950/92 px-2 py-2 shadow-[0_10px_18px_rgba(0,0,0,0.28)] ${headerClassName}`}
         >
           <div className={`h-4 w-1 rounded-[2px] ${accentClassName}`} />
           {icon ? <span className="text-zinc-400">{icon}</span> : null}
@@ -846,7 +846,7 @@ const StylePresetGroupSection = React.memo(
           <div
             aria-hidden="true"
             data-style-group-placeholder
-            className="relative overflow-hidden rounded-[6px] border border-white/5 bg-zinc-950/20 p-2"
+            className="relative overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950/20 p-2"
             style={{ height: Math.max(120, placeholderHeight - 40) }}
           >
             <StyleGridPlaceholderCells gridColumns={gridColumns} presetCount={presets.length} />
@@ -2335,7 +2335,7 @@ ${styleAnchorLine}
       {isReferencePanelOpen ? (
         <aside
           data-style-reference-panel
-          className="relative z-10 hidden h-full w-[clamp(280px,18vw,420px)] shrink-0 flex-col overflow-hidden border-r border-white/5 bg-zinc-950/72 px-3 py-3 xl:flex 2xl:px-4"
+          className="relative z-10 hidden h-full w-[clamp(280px,18vw,420px)] shrink-0 flex-col overflow-hidden border-r border-white/2 bg-zinc-950/72 px-3 py-3 xl:flex 2xl:px-4"
         >
           <div className="flex min-h-0 w-full flex-1 flex-col gap-3">
             <div className="flex h-12 shrink-0 items-center justify-between">
@@ -2351,7 +2351,7 @@ ${styleAnchorLine}
                 type="button"
                 onClick={() => toggleStylePanel('references')}
                 data-style-reference-panel-toggle
-                className="flex size-8 shrink-0 items-center justify-center rounded-[6px] border border-white/8 bg-white/[0.035] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
+                className="flex size-8 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/[0.035] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
                 aria-label="Hide references panel"
                 title="Hide references"
               >
@@ -2362,7 +2362,7 @@ ${styleAnchorLine}
             <div
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
-              className="rounded-[6px] border border-white/8 bg-white/[0.025] p-1.5"
+              className="rounded-[6px] border border-white/2 bg-white/[0.025] p-1.5"
             >
               <input
                 type="file"
@@ -2390,7 +2390,7 @@ ${styleAnchorLine}
                       <div
                         key={image.id}
                         data-style-reference-image={image.id}
-                        className="group/reference relative h-12 overflow-hidden rounded-md border border-white/10 bg-zinc-950"
+                        className="group/reference relative h-12 overflow-hidden rounded-md border border-white/2 bg-zinc-950"
                       >
                         <StyleFadeImage
                           src={image.dataUrl}
@@ -2399,7 +2399,7 @@ ${styleAnchorLine}
                           height={48}
                           className="size-full object-contain p-0.5 opacity-95 transition-opacity group-hover/reference:opacity-100"
                         />
-                        <div className="absolute left-1 top-1 rounded-sm border border-black/30 bg-black/70 px-1 py-0.5 text-[10px] font-black tabular-nums text-white/80">
+                        <div className="absolute left-1 top-1 rounded-sm border border-black/2 bg-black/70 px-1 py-0.5 text-[10px] font-black tabular-nums text-white/80">
                           {index + 1}
                         </div>
                         <button
@@ -2427,7 +2427,7 @@ ${styleAnchorLine}
                         key="add-reference"
                         data-style-reference-add
                         onClick={() => fileInputRef.current?.click()}
-                        className="group/add flex h-12 min-w-0 flex-col items-center justify-center gap-0.5 overflow-hidden rounded-md border border-dashed border-white/12 bg-zinc-950/70 text-zinc-500 transition-[border-color,background-color,color] hover:border-white/24 hover:bg-white/6 hover:text-white"
+                        className="group/add flex h-12 min-w-0 flex-col items-center justify-center gap-0.5 overflow-hidden rounded-md border border-dashed border-white/2 bg-zinc-950/70 text-zinc-500 transition-[border-color,background-color,color] hover:border-white/2 hover:bg-white/6 hover:text-white"
                       >
                         <Upload size={14} />
                         <span className="max-w-full truncate px-1 text-[10px] font-black uppercase tracking-[0.14em]">
@@ -2441,7 +2441,7 @@ ${styleAnchorLine}
                     <div
                       key={`empty-reference-${index}`}
                       data-style-reference-empty={index}
-                      className="flex h-12 items-center justify-center rounded-md border border-white/6 bg-zinc-950/40 text-zinc-700"
+                      className="flex h-12 items-center justify-center rounded-md border border-white/2 bg-zinc-950/40 text-zinc-700"
                       aria-hidden="true"
                     >
                       <ImageIcon size={13} />
@@ -2455,7 +2455,7 @@ ${styleAnchorLine}
               data-style-preview-card
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
-              className="relative min-h-[360px] flex-1 overflow-hidden rounded-[6px] border border-white/14 bg-zinc-950 shadow-[0_24px_70px_rgba(0,0,0,0.48)] ring-1 ring-white/6"
+              className="relative min-h-[360px] flex-1 overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950 shadow-[0_24px_70px_rgba(0,0,0,0.48)] ring-1 ring-white/6"
             >
               {resolvedHoveredPresetPreview?.imageSrc ? (
                 <StyleFadeImage
@@ -2477,10 +2477,10 @@ ${styleAnchorLine}
                 <button
                   type="button"
                   onClick={() => fileInputRef.current?.click()}
-                  className="absolute inset-3 flex items-center justify-center rounded-[6px] border border-dashed border-white/12 bg-white/[0.025] text-zinc-600 transition-[border-color,background-color,color] hover:border-white/22 hover:bg-white/[0.045] hover:text-zinc-300"
+                  className="absolute inset-3 flex items-center justify-center rounded-[6px] border border-dashed border-white/2 bg-white/[0.025] text-zinc-600 transition-[border-color,background-color,color] hover:border-white/2 hover:bg-white/[0.045] hover:text-zinc-300"
                 >
                   <div className="flex flex-col items-center gap-3">
-                    <div className="flex size-14 items-center justify-center rounded-[6px] border border-white/10 bg-white/5">
+                    <div className="flex size-14 items-center justify-center rounded-[6px] border border-white/2 bg-white/5">
                       <Upload size={24} />
                     </div>
                     <span className="text-[10px] font-black uppercase tracking-[0.16em]">
@@ -2494,12 +2494,12 @@ ${styleAnchorLine}
                 <>
                   <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/5" />
                   <div className="absolute inset-x-0 bottom-0 p-3">
-                    <div className="max-w-[94%] rounded-[6px] border border-white/12 bg-zinc-950/86 px-3 py-2.5 shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
+                    <div className="max-w-[94%] rounded-[6px] border border-white/2 bg-zinc-950/86 px-3 py-2.5 shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
                       <div className="flex min-w-0 flex-wrap items-center gap-1.5">
-                        <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-white/65">
+                        <span className="rounded-full border border-white/2 bg-white/6 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-white/65">
                           {resolvedHoveredPresetPreview.packName}
                         </span>
-                        <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-zinc-300/80">
+                        <span className="rounded-full border border-white/2 bg-white/6 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-zinc-300/80">
                           {resolvedHoveredPresetPreview.category}
                         </span>
                       </div>
@@ -2519,7 +2519,7 @@ ${styleAnchorLine}
       ) : (
         <aside
           data-style-reference-panel-rail
-          className="hidden h-full w-10 shrink-0 items-start justify-center border-r border-white/5 bg-zinc-950/60 p-1.5 xl:flex"
+          className="hidden h-full w-10 shrink-0 items-start justify-center border-r border-white/2 bg-zinc-950/60 p-1.5 xl:flex"
         >
           <button
             type="button"
@@ -2541,8 +2541,8 @@ ${styleAnchorLine}
       >
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none" />
 
-        <div className="xl:hidden border-b border-white/5 bg-zinc-950/72 px-3 py-2 backdrop-blur-md">
-          <details className="group rounded-[6px] border border-white/8 bg-white/[0.025]">
+        <div className="xl:hidden border-b border-white/2 bg-zinc-950/72 px-3 py-2 backdrop-blur-md">
+          <details className="group rounded-[6px] border border-white/2 bg-white/[0.025]">
             <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3 py-2">
               <div className="min-w-0">
                 <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
@@ -2560,19 +2560,19 @@ ${styleAnchorLine}
                     fileInputRef.current?.click();
                   }}
                   disabled={referenceSlotsRemaining <= 0}
-                  className="flex size-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-40"
+                  className="flex size-9 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-40"
                   aria-label="Add style reference"
                 >
                   <Upload size={15} />
                 </button>
-                <span className="rounded-lg border border-white/8 bg-black/30 px-2 py-1 text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                <span className="rounded-lg border border-white/2 bg-black/30 px-2 py-1 text-[9px] font-black uppercase tracking-widest text-zinc-400">
                   Edit
                 </span>
               </div>
             </summary>
 
-            <div className="grid gap-3 border-t border-white/6 p-3">
-              <div className="rounded-[6px] border border-white/6 bg-black/20 p-2">
+            <div className="grid gap-3 border-t border-white/2 p-3">
+              <div className="rounded-[6px] border border-white/2 bg-black/20 p-2">
                 <div className="mb-2 flex items-center justify-between gap-3">
                   <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
                     References
@@ -2593,7 +2593,7 @@ ${styleAnchorLine}
                           disabled={
                             index !== referenceImages.length || referenceSlotsRemaining <= 0
                           }
-                          className="flex h-12 items-center justify-center rounded-md border border-dashed border-white/10 bg-zinc-950/70 text-zinc-600 disabled:pointer-events-none disabled:opacity-45"
+                          className="flex h-12 items-center justify-center rounded-md border border-dashed border-white/2 bg-zinc-950/70 text-zinc-600 disabled:pointer-events-none disabled:opacity-45"
                           aria-label={`Add reference image ${index + 1}`}
                         >
                           {index === referenceImages.length && referenceSlotsRemaining > 0 ? (
@@ -2607,7 +2607,7 @@ ${styleAnchorLine}
                     return (
                       <div
                         key={image.id}
-                        className="group/reference-mobile relative h-12 overflow-hidden rounded-md border border-white/10 bg-zinc-950"
+                        className="group/reference-mobile relative h-12 overflow-hidden rounded-md border border-white/2 bg-zinc-950"
                       >
                         <StyleFadeImage
                           src={image.dataUrl}
@@ -2635,7 +2635,7 @@ ${styleAnchorLine}
                 </div>
               </div>
 
-              <div className="rounded-[6px] border border-white/6 bg-black/20 p-2">
+              <div className="rounded-[6px] border border-white/2 bg-black/20 p-2">
                 <div className="mb-2 flex items-center justify-between gap-3">
                   <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
                     Style Slots
@@ -2648,8 +2648,8 @@ ${styleAnchorLine}
                       aria-pressed={isAdvancedStyleControlsOpen}
                       className={`flex h-7 items-center gap-1 rounded-lg border px-2 text-[8px] font-black uppercase tracking-widest ${
                         isAdvancedStyleControlsOpen
-                          ? 'border-accent-400/25 bg-accent-500/15 text-accent-100'
-                          : 'border-white/8 bg-white/5 text-zinc-400'
+                          ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
+                          : 'border-white/2 bg-white/5 text-zinc-400'
                       }`}
                     >
                       <SlidersHorizontal size={11} />
@@ -2659,7 +2659,7 @@ ${styleAnchorLine}
                       <button
                         type="button"
                         onClick={() => setSelectedStyles([])}
-                        className="rounded-lg border border-white/8 bg-white/5 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-400"
+                        className="rounded-lg border border-white/2 bg-white/5 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-400"
                       >
                         Clear
                       </button>
@@ -2669,7 +2669,7 @@ ${styleAnchorLine}
 
                 <div className="flex max-h-44 flex-col gap-2 overflow-y-auto pr-1 custom-scrollbar">
                   {selectedStyles.length === 0 ? (
-                    <div className="rounded-lg border border-dashed border-white/8 bg-white/[0.02] px-3 py-4 text-center text-[9px] font-black uppercase tracking-widest text-zinc-600">
+                    <div className="rounded-lg border border-dashed border-white/2 bg-white/[0.02] px-3 py-4 text-center text-[9px] font-black uppercase tracking-widest text-zinc-600">
                       Pick styles from the browser
                     </div>
                   ) : (
@@ -2681,10 +2681,10 @@ ${styleAnchorLine}
                       return (
                         <div
                           key={slot.preset.id}
-                          className="rounded-[6px] border border-white/8 bg-zinc-950/80 p-2"
+                          className="rounded-[6px] border border-white/2 bg-zinc-950/80 p-2"
                         >
                           <div className="grid grid-cols-[2.75rem_minmax(0,1fr)_2rem] items-start gap-2">
-                            <div className="relative aspect-[2/3] w-[2.75rem] overflow-hidden rounded-[6px] border border-white/10 bg-zinc-950">
+                            <div className="relative aspect-[2/3] w-[2.75rem] overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950">
                               {slotCardImage ? (
                                 <StyleFadeImage
                                   src={slotCardImage.src}
@@ -2715,7 +2715,7 @@ ${styleAnchorLine}
                             <button
                               type="button"
                               onClick={() => removeSelectedStyle(slot.preset.id)}
-                              className="flex size-8 shrink-0 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 text-zinc-400"
+                              className="flex size-8 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 text-zinc-400"
                               aria-label={`Remove ${presetName}`}
                             >
                               <X size={13} />
@@ -2772,7 +2772,7 @@ ${styleAnchorLine}
                   title={grokGenerateBlock?.message}
                   data-style-generate-button
                   data-generate-active={isGenerating ? 'true' : 'false'}
-                  className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
+                  className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
                 >
                   <Play size={15} />
                   {isGenerating ? 'Queue' : 'Generate'}
@@ -2791,8 +2791,8 @@ ${styleAnchorLine}
         </div>
 
         {/* Pack Tabs */}
-        <div className="vt-recipe-tabs vt-style-tabs z-20 flex h-11 items-center gap-1.5 overflow-x-auto border-b border-white/5 bg-zinc-950/88 py-0 pl-3 pr-1 custom-scrollbar sm:h-12 sm:pl-6 sm:pr-2">
-          <div className="mr-1 flex shrink-0 items-center gap-1 rounded-[6px] border border-white/5 bg-zinc-950/55 p-1">
+        <div className="vt-recipe-tabs vt-style-tabs z-20 flex h-11 items-center gap-1.5 overflow-x-auto border-b border-white/2 bg-zinc-950/88 py-0 pl-3 pr-1 custom-scrollbar sm:h-12 sm:pl-6 sm:pr-2">
+          <div className="mr-1 flex shrink-0 items-center gap-1 rounded-[6px] border border-white/2 bg-zinc-950/55 p-1">
             <button
               type="button"
               onClick={() => previousStyleTab && navigateToStyleTab(previousStyleTab.id)}
@@ -2827,7 +2827,7 @@ ${styleAnchorLine}
                   group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
                       isPackLandingOpen
-                        ? 'bg-zinc-800 border border-white/10 text-white shadow-lg'
+                        ? 'bg-zinc-800 border border-white/2 text-white shadow-lg'
                         : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-zinc-300'
                     }
                 `}
@@ -2850,7 +2850,7 @@ ${styleAnchorLine}
                   group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
                       !isPackLandingOpen && currentPackId === ALL_STYLE_CATEGORIES_TAB_ID
-                        ? 'bg-blue-950 border border-blue-500/50 text-blue-300 shadow-lg'
+                        ? 'bg-blue-950 border border-blue-500/2 text-blue-300 shadow-lg'
                         : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-blue-300'
                     }
                 `}
@@ -2873,7 +2873,7 @@ ${styleAnchorLine}
                   group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
                       !isPackLandingOpen && currentPackId === ALL_STYLE_CARDS_TAB_ID
-                        ? 'bg-amber-950 border border-amber-500/50 text-amber-300 shadow-lg'
+                        ? 'bg-amber-950 border border-amber-500/2 text-amber-300 shadow-lg'
                         : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-amber-300'
                     }
                 `}
@@ -2900,7 +2900,7 @@ ${styleAnchorLine}
                   group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
                       !isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID
-                        ? 'bg-sky-950 border border-sky-500/50 text-sky-300 shadow-lg'
+                        ? 'bg-sky-950 border border-sky-500/2 text-sky-300 shadow-lg'
                         : 'bg-transparent hover:bg-white/5 text-zinc-500 hover:text-sky-300'
                     }
                 `}
@@ -2922,7 +2922,7 @@ ${styleAnchorLine}
                   group sticky right-0 z-20 ml-auto h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 backdrop-blur-md transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
                       !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID
-                        ? `bg-rose-950 border border-rose-500/50 text-rose-400 shadow-lg`
+                        ? `bg-rose-950 border border-rose-500/2 text-rose-400 shadow-lg`
                         : 'bg-zinc-950/45 text-zinc-500 hover:bg-white/5 hover:text-rose-400'
                     }
                 `}
@@ -2964,7 +2964,7 @@ ${styleAnchorLine}
           <div data-style-folder={currentPackId} className="flex min-h-0 flex-1 flex-col">
             {/* Pack Header Info + Search Bar */}
             <div
-              className={`grid h-12 min-w-0 gap-4 border-b border-white/5 px-4 py-1.5 sm:px-5 2xl:px-6 ${
+              className={`grid h-12 min-w-0 gap-4 border-b border-white/2 px-4 py-1.5 sm:px-5 2xl:px-6 ${
                 isStyleNavigationPanelOpen
                   ? 'lg:grid-cols-[216px_minmax(0,1fr)]'
                   : 'lg:grid-cols-[40px_minmax(0,1fr)]'
@@ -2984,8 +2984,8 @@ ${styleAnchorLine}
                 </div>
 
                 {/* Search & Filter Toolbar */}
-                <div className="vt-style-actionbar flex h-9 shrink-0 flex-nowrap items-center gap-1.5 rounded-[6px] border border-white/5 p-1">
-                  <div className="flex h-7 min-w-0 w-40 items-center gap-2 rounded-[6px] border border-white/5 bg-zinc-950/40 px-3 2xl:w-48">
+                <div className="vt-style-actionbar flex h-9 shrink-0 flex-nowrap items-center gap-1.5 rounded-[6px] border border-white/2 p-1">
+                  <div className="flex h-7 min-w-0 w-40 items-center gap-2 rounded-[6px] border border-white/2 bg-zinc-950/40 px-3 2xl:w-48">
                     <Search size={14} className="text-zinc-500" />
                     <input
                       type="text"
@@ -3064,7 +3064,7 @@ ${styleAnchorLine}
 
                   <div
                     data-style-view-mode={activeStyleViewMode}
-                    className="flex h-7 items-center rounded-[6px] border border-white/5 bg-zinc-950/40 p-0.5"
+                    className="flex h-7 items-center rounded-[6px] border border-white/2 bg-zinc-950/40 p-0.5"
                   >
                     <button
                       type="button"
@@ -3115,8 +3115,8 @@ ${styleAnchorLine}
                       aria-controls={sortMenuId}
                       className={`flex min-h-9 w-[9.75rem] touch-manipulation items-center gap-1.5 rounded-[6px] border px-2 text-left transition-[border-color,background-color,color,transform] ${
                         isSortDropdownOpen
-                          ? 'border-white/15 bg-white/[0.075] text-white shadow-[0_0_0_1px_rgba(255,255,255,0.035),0_10px_28px_rgba(0,0,0,0.28)]'
-                          : 'border-white/5 bg-zinc-950/40 text-zinc-500 hover:border-white/10 hover:bg-white/[0.045] hover:text-white'
+                          ? 'border-white/2 bg-white/[0.075] text-white shadow-[0_0_0_1px_rgba(255,255,255,0.035),0_10px_28px_rgba(0,0,0,0.28)]'
+                          : 'border-white/2 bg-zinc-950/40 text-zinc-500 hover:border-white/2 hover:bg-white/[0.045] hover:text-white'
                       }`}
                       title="Sort styles"
                     >
@@ -3196,7 +3196,7 @@ ${styleAnchorLine}
 
                   <div className="h-6 w-px bg-white/5" />
 
-                  <div className="hidden items-center gap-2 rounded-[6px] border border-white/5 bg-zinc-950/40 px-2 py-1 2xl:flex">
+                  <div className="hidden items-center gap-2 rounded-[6px] border border-white/2 bg-zinc-950/40 px-2 py-1 2xl:flex">
                     <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
                       Zoom
                     </span>
@@ -3230,7 +3230,7 @@ ${styleAnchorLine}
                 <React.Suspense
                   fallback={
                     <aside data-style-detail-navigation className="hidden min-h-0 min-w-0 lg:block">
-                      <div className="flex h-full min-h-0 items-center justify-center rounded-[6px] border border-white/8 bg-zinc-950/78 p-3">
+                      <div className="flex h-full min-h-0 items-center justify-center rounded-[6px] border border-white/2 bg-zinc-950/78 p-3">
                         <LazySurfaceFallback label="Loading style map" />
                       </div>
                     </aside>
@@ -3246,7 +3246,7 @@ ${styleAnchorLine}
               ) : (
                 <aside
                   data-style-detail-navigation-rail
-                  className="hidden min-h-0 min-w-0 items-start justify-center rounded-[6px] border border-white/8 bg-zinc-950/70 p-1.5 lg:flex"
+                  className="hidden min-h-0 min-w-0 items-start justify-center rounded-[6px] border border-white/2 bg-zinc-950/70 p-1.5 lg:flex"
                 >
                   <button
                     type="button"
@@ -3333,7 +3333,7 @@ ${styleAnchorLine}
                             <button
                               type="button"
                               onClick={retryStylePacks}
-                              className="flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                              className="flex h-9 items-center gap-2 rounded-[6px] border border-white/2 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
                             >
                               <Wand2 size={13} />
                               Retry
@@ -3348,7 +3348,7 @@ ${styleAnchorLine}
                             <button
                               type="button"
                               onClick={() => void refreshUserStyles()}
-                              className="flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                              className="flex h-9 items-center gap-2 rounded-[6px] border border-white/2 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
                             >
                               <Wand2 size={13} />
                               Retry
@@ -3365,7 +3365,7 @@ ${styleAnchorLine}
                             <button
                               type="button"
                               onClick={handleCreateUserStyle}
-                              className="flex h-9 items-center gap-2 rounded-[6px] border border-sky-400/20 bg-sky-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-sky-100 transition-colors hover:bg-sky-500/16"
+                              className="flex h-9 items-center gap-2 rounded-[6px] border border-sky-400/2 bg-sky-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-sky-100 transition-colors hover:bg-sky-500/16"
                             >
                               <Plus size={13} />
                               Create Style
@@ -3411,7 +3411,7 @@ ${styleAnchorLine}
       {isStyleSlotsPanelOpen ? (
         <aside
           data-style-slots-panel
-          className="hidden h-full w-[clamp(280px,16vw,340px)] shrink-0 flex-col border-l border-white/5 bg-zinc-950/72 px-3 py-3 xl:flex 2xl:px-4"
+          className="hidden h-full w-[clamp(280px,16vw,340px)] shrink-0 flex-col border-l border-white/2 bg-zinc-950/72 px-3 py-3 xl:flex 2xl:px-4"
         >
           <div className="mb-3 flex h-12 shrink-0 items-center justify-between gap-3">
             <div>
@@ -3427,7 +3427,7 @@ ${styleAnchorLine}
                 type="button"
                 onClick={() => toggleStylePanel('slots')}
                 data-style-slots-panel-toggle
-                className="flex size-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+                className="flex size-8 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
                 aria-label="Hide style slots panel"
                 title="Hide style slots"
               >
@@ -3439,8 +3439,8 @@ ${styleAnchorLine}
                 aria-pressed={isAdvancedStyleControlsOpen}
                 className={`flex size-8 items-center justify-center rounded-[6px] border transition-colors ${
                   isAdvancedStyleControlsOpen
-                    ? 'border-accent-400/25 bg-accent-500/15 text-accent-100'
-                    : 'border-white/10 bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
+                    ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
+                    : 'border-white/2 bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
                 }`}
                 aria-label="Toggle advanced style controls"
               >
@@ -3450,7 +3450,7 @@ ${styleAnchorLine}
                 <button
                   type="button"
                   onClick={() => setSelectedStyles([])}
-                  className="flex size-8 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+                  className="flex size-8 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
                   aria-label="Clear selected styles"
                 >
                   <X size={14} />
@@ -3479,12 +3479,12 @@ ${styleAnchorLine}
                   <div
                     key={`empty-${index}`}
                     data-selected-style-empty-slot={index + 1}
-                    className={`flex min-h-0 flex-col items-center justify-center rounded-[6px] border border-dashed border-white/8 bg-white/[0.02] text-center text-zinc-600 ${
+                    className={`flex min-h-0 flex-col items-center justify-center rounded-[6px] border border-dashed border-white/2 bg-white/[0.02] text-center text-zinc-600 ${
                       isAdvancedStyleControlsOpen ? 'h-16 gap-1 p-2' : 'aspect-[2/3] gap-2 p-3'
                     }`}
                   >
                     <div
-                      className={`flex shrink-0 items-center justify-center rounded-[6px] border border-white/8 bg-white/4 ${
+                      className={`flex shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/4 ${
                         isAdvancedStyleControlsOpen ? 'size-7' : 'size-10'
                       }`}
                     >
@@ -3503,7 +3503,7 @@ ${styleAnchorLine}
                   key={slot.preset.id}
                   data-selected-style-slot={slot.preset.id}
                   data-selected-style-card-image={slotCardImage?.kind ?? 'empty'}
-                  className={`group/slot relative overflow-hidden rounded-[6px] border border-white/10 bg-zinc-950 shadow-[0_14px_30px_rgba(0,0,0,0.22)] ${
+                  className={`group/slot relative overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950 shadow-[0_14px_30px_rgba(0,0,0,0.22)] ${
                     isAdvancedStyleControlsOpen ? 'h-24' : 'aspect-[2/3]'
                   }`}
                 >
@@ -3527,13 +3527,13 @@ ${styleAnchorLine}
 
                   <div className="absolute inset-0 bg-linear-to-t from-black/92 via-black/18 to-black/18" />
 
-                  <div className="absolute left-1.5 top-1.5 rounded-[4px] border border-black/30 bg-black/70 px-1 py-0.5 text-[10px] font-black text-white/80">
+                  <div className="absolute left-1.5 top-1.5 rounded-[4px] border border-black/2 bg-black/70 px-1 py-0.5 text-[10px] font-black text-white/80">
                     {index + 1}
                   </div>
                   <button
                     type="button"
                     onClick={() => removeSelectedStyle(slot.preset.id)}
-                    className="absolute right-1.5 top-1.5 flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/10 bg-black/70 text-zinc-300 opacity-0 transition-[background-color,color,opacity] hover:bg-red-500/20 hover:text-red-100 group-hover/slot:opacity-100 group-focus-within/slot:opacity-100"
+                    className="absolute right-1.5 top-1.5 flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-black/70 text-zinc-300 opacity-0 transition-[background-color,color,opacity] hover:bg-red-500/20 hover:text-red-100 group-hover/slot:opacity-100 group-focus-within/slot:opacity-100"
                     aria-label={`Remove ${presetName}`}
                   >
                     <X size={13} />
@@ -3542,7 +3542,7 @@ ${styleAnchorLine}
                   <div className="absolute inset-x-0 bottom-0 p-2">
                     <div className="mb-1 flex items-center gap-1 text-[7px] font-black uppercase tracking-[0.16em] text-zinc-300/75">
                       <span
-                        className={`flex size-4 items-center justify-center rounded-[4px] border border-white/10 bg-black/42 ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'} backdrop-blur`}
+                        className={`flex size-4 items-center justify-center rounded-[4px] border border-white/2 bg-black/42 ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'} backdrop-blur`}
                       >
                         {getPackIcon(slot.packId)}
                       </span>
@@ -3608,7 +3608,7 @@ ${styleAnchorLine}
             title={grokGenerateBlock?.message}
             data-style-generate-button
             data-generate-active={isGenerating ? 'true' : 'false'}
-            className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/35 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
+            className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/2 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
           >
             <Play size={16} />
             {isGenerating ? 'Queue' : 'Generate'}
@@ -3622,7 +3622,7 @@ ${styleAnchorLine}
       ) : (
         <aside
           data-style-slots-panel-rail
-          className="hidden h-full w-10 shrink-0 items-start justify-center border-l border-white/5 bg-zinc-950/60 p-1.5 xl:flex"
+          className="hidden h-full w-10 shrink-0 items-start justify-center border-l border-white/2 bg-zinc-950/60 p-1.5 xl:flex"
         >
           <button
             type="button"

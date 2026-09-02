@@ -24,14 +24,14 @@ interface SessionOverviewProps {
 function getJobTone(job: StudioJob) {
   switch (job.status) {
     case 'completed':
-      return 'text-emerald-300 border-emerald-500/20 bg-emerald-500/10';
+      return 'text-emerald-300 border-emerald-500/2 bg-emerald-500/10';
     case 'failed':
     case 'cancelled':
-      return 'text-rose-300 border-rose-500/20 bg-rose-500/10';
+      return 'text-rose-300 border-rose-500/2 bg-rose-500/10';
     case 'needs_review':
-      return 'text-amber-200 border-amber-500/20 bg-amber-500/10';
+      return 'text-amber-200 border-amber-500/2 bg-amber-500/10';
     default:
-      return 'text-accent-300 border-accent-500/20 bg-accent-500/10';
+      return 'text-accent-300 border-accent-500/2 bg-accent-500/10';
   }
 }
 
@@ -64,15 +64,15 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
           <h3 className={sectionTitleClass}>Session Metrics</h3>
         </div>
         <div className="grid grid-cols-3 gap-2">
-          <div className="rounded-xl border border-white/5 bg-white/5 p-3">
+          <div className="rounded-xl border border-white/2 bg-white/5 p-3">
             <span className="block text-[8px] uppercase tracking-widest text-zinc-600">Groups</span>
             <span className="text-lg font-black text-zinc-200">{visualGroupsCount}</span>
           </div>
-          <div className="rounded-xl border border-white/5 bg-white/5 p-3">
+          <div className="rounded-xl border border-white/2 bg-white/5 p-3">
             <span className="block text-[8px] uppercase tracking-widest text-zinc-600">Images</span>
             <span className="text-lg font-black text-zinc-200">{imagesCount}</span>
           </div>
-          <div className="rounded-xl border border-white/5 bg-white/5 p-3">
+          <div className="rounded-xl border border-white/2 bg-white/5 p-3">
             <span className="block text-[8px] uppercase tracking-widest text-zinc-600">
               Active Jobs
             </span>
@@ -91,7 +91,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
             workspaces.slice(0, isDrawer ? 12 : 8).map((workspace) => (
               <div
                 key={workspace.id}
-                className="flex items-center justify-between rounded-xl border border-white/5 bg-white/5 px-3 py-2"
+                className="flex items-center justify-between rounded-xl border border-white/2 bg-white/5 px-3 py-2"
               >
                 <span className="min-w-0 truncate text-[10px] font-mono text-zinc-300">
                   {workspace.name || workspace.id.slice(0, 8)}
@@ -102,7 +102,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
               </div>
             ))
           ) : (
-            <div className="rounded-xl border border-dashed border-white/5 bg-black/20 px-3 py-4 text-[10px] text-zinc-600">
+            <div className="rounded-xl border border-dashed border-white/2 bg-black/20 px-3 py-4 text-[10px] text-zinc-600">
               No workspaces yet.
             </div>
           )}
@@ -154,8 +154,8 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
                     className={cn(
                       'rounded-xl border px-3 py-2.5',
                       isSelected
-                        ? 'border-accent-500/30 bg-accent-500/10'
-                        : 'border-white/5 bg-black/20',
+                        ? 'border-accent-500/2 bg-accent-500/10'
+                        : 'border-white/2 bg-black/20',
                     )}
                   >
                     {content}
@@ -171,8 +171,8 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
                   className={cn(
                     'w-full rounded-xl border px-3 py-2.5 text-left transition-colors',
                     isSelected
-                      ? 'border-accent-500/30 bg-accent-500/10'
-                      : 'border-white/5 bg-black/20 hover:border-white/10 hover:bg-white/5',
+                      ? 'border-accent-500/2 bg-accent-500/10'
+                      : 'border-white/2 bg-black/20 hover:border-white/2 hover:bg-white/5',
                   )}
                 >
                   {content}
@@ -180,7 +180,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
               );
             })
           ) : (
-            <div className="rounded-xl border border-dashed border-white/5 bg-black/20 px-3 py-4 text-[10px] text-zinc-600">
+            <div className="rounded-xl border border-dashed border-white/2 bg-black/20 px-3 py-4 text-[10px] text-zinc-600">
               No backend jobs yet.
             </div>
           )}
@@ -192,7 +192,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
           <Terminal size={14} className="text-accent-400" />
           <h3 className={sectionTitleClass}>Recent Activity</h3>
         </div>
-        <div className="custom-scrollbar max-h-110 space-y-1.5 overflow-y-auto rounded-xl border border-white/5 bg-black/30 p-3 font-mono text-[10px] leading-relaxed">
+        <div className="custom-scrollbar max-h-110 space-y-1.5 overflow-y-auto rounded-xl border border-white/2 bg-black/30 p-3 font-mono text-[10px] leading-relaxed">
           {recentLogs.length > 0 ? (
             recentLogs.map((log) => (
               <div key={log.id} className="flex gap-2">

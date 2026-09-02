@@ -61,7 +61,7 @@ function CameraAnglesInfoPanel({
   return (
     <>
       {/* Output Stats */}
-      <div className="shrink-0 rounded-2xl border border-white/5 bg-zinc-900/40 p-5 shadow-xl">
+      <div className="shrink-0 rounded-2xl border border-white/2 bg-zinc-900/40 p-5 shadow-xl">
         <div className="flex items-center gap-3 mb-3">
           <div className="p-2 bg-cyan-500/10 rounded-lg">
             <Eye size={14} className="text-cyan-400" />
@@ -73,7 +73,7 @@ function CameraAnglesInfoPanel({
             <p className="text-[8px] text-zinc-500 font-bold uppercase">Prompt Translation</p>
           </div>
         </div>
-        <div className="p-3 bg-black/40 rounded-xl border border-white/5 space-y-2">
+        <div className="p-3 bg-black/40 rounded-xl border border-white/2 space-y-2">
           <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
             <span className="text-cyan-500">POS:</span> {hPos}
           </p>
@@ -88,7 +88,7 @@ function CameraAnglesInfoPanel({
 
       {/* Workspace Gallery */}
       {cameraImages.length > 0 && (
-        <div className="flex-1 min-h-0 bg-black/40 border border-white/5 rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
+        <div className="flex-1 min-h-0 bg-black/40 border border-white/2 rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
           <div className="flex shrink-0 items-center justify-between px-2">
             <span className="text-[9px] font-black text-zinc-500 uppercase tracking-widest">
               Workspace Gallery
@@ -105,7 +105,7 @@ function CameraAnglesInfoPanel({
                 aria-label={`Select camera image ${img.id}`}
                 key={img.id}
                 onClick={() => onSelectImage(img)}
-                className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-[border-color,box-shadow] group shadow-sm hover:shadow-lg"
+                className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/2 hover:border-cyan-500/2 transition-[border-color,box-shadow] group shadow-sm hover:shadow-lg"
               >
                 <img
                   src={img.thumbnail || img.src}
@@ -270,16 +270,16 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
     >
       <div className="custom-scrollbar flex h-full flex-col gap-4 overflow-y-auto lg:flex-row lg:gap-6 lg:overflow-hidden">
         {/* LEFT: THREE.JS VIEWPORT */}
-        <div className="relative flex min-h-[320px] flex-1 flex-col overflow-hidden rounded-2xl border border-white/5 shadow-2xl sm:rounded-3xl sm:min-h-100 lg:min-h-0">
+        <div className="relative flex min-h-[320px] flex-1 flex-col overflow-hidden rounded-2xl border border-white/2 shadow-2xl sm:rounded-3xl sm:min-h-100 lg:min-h-0">
           {/* Viewport Overlay Controls */}
           <div className="absolute top-6 left-6 z-20 flex flex-col gap-2 pointer-events-none">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 bg-black/40 backdrop-blur-sm">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/2 bg-black/40 backdrop-blur-sm">
               <Move3d size={12} className="text-cyan-400" />
               <span className="text-[9px] font-black text-zinc-300 uppercase tracking-widest">
                 Orbit & Zoom
               </span>
             </div>
-            <div className="flex flex-col gap-1 text-[9px] font-mono text-zinc-500 bg-black/40 p-2 rounded-lg border border-white/5">
+            <div className="flex flex-col gap-1 text-[9px] font-mono text-zinc-500 bg-black/40 p-2 rounded-lg border border-white/2">
               <span className="text-cyan-400">AZ: {Math.round(azimuth)}°</span>
               <span className="text-pink-400">EL: {Math.round(elevation)}°</span>
               <span className="text-yellow-400">DIST: {Math.round(distance)}%</span>
@@ -288,14 +288,14 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
 
           {/* CANVAS CONTAINER */}
           <div ref={mountRef} className="flex-1 size-full relative cursor-move touch-none group">
-            <div className="pip-viewport absolute right-3 top-3 z-30 hidden h-28 w-36 overflow-hidden rounded-lg border-2 border-white/10 bg-black/50 shadow-2xl backdrop-blur-sm pointer-events-none sm:block lg:right-6 lg:top-6 lg:h-45 lg:w-60">
+            <div className="pip-viewport absolute right-3 top-3 z-30 hidden h-28 w-36 overflow-hidden rounded-lg border-2 border-white/2 bg-black/50 shadow-2xl backdrop-blur-sm pointer-events-none sm:block lg:right-6 lg:top-6 lg:h-45 lg:w-60">
               <div className="absolute top-0 left-0 px-2 py-0.5 bg-black/50 text-cyan-400 text-[8px] font-black uppercase tracking-widest">
                 CAM VIEW
               </div>
             </div>
 
             {/* Instruction Overlay */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-black/40 border border-white/5 backdrop-blur-sm text-zinc-400 text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-black/40 border border-white/2 backdrop-blur-sm text-zinc-400 text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
               <span className="flex items-center gap-1.5">
                 <MousePointer2 size={12} className="text-white" /> Drag to Orbit
               </span>
@@ -311,12 +311,12 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
         <div className="w-full lg:w-80 flex min-h-0 shrink-0 flex-col gap-4">
           {/* 1. Reference Image Panel */}
           <div
-            className="group relative w-full shrink-0 overflow-hidden rounded-xl border border-white/5 bg-zinc-950 shadow-2xl"
+            className="group relative w-full shrink-0 overflow-hidden rounded-xl border border-white/2 bg-zinc-950 shadow-2xl"
             style={{ aspectRatio: ratioValue }}
           >
             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
 
-            <div className="absolute top-0 left-0 right-0 h-10 bg-black/60 z-20 flex items-center px-4 justify-between border-b border-white/5">
+            <div className="absolute top-0 left-0 right-0 h-10 bg-black/60 z-20 flex items-center px-4 justify-between border-b border-white/2">
               <span className="text-[9px] font-black text-white uppercase tracking-widest flex items-center gap-2">
                 <Camera size={12} className="text-cyan-500" /> Subject
               </span>
@@ -327,7 +327,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                     aria-label="Remove camera reference"
                     onClick={handleEstimateCamera}
                     disabled={isEstimating}
-                    className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/10 transition-[color,background-color,border-color] ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/30'}`}
+                    className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/2 transition-[color,background-color,border-color] ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/2'}`}
                     title="Estimate initial view from image shape"
                   >
                     {isEstimating ? (
@@ -373,7 +373,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                   className="hidden"
                   accept="image/*"
                 />
-                <div className="size-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/50 transition-[border-color,transform]">
+                <div className="size-16 rounded-full bg-zinc-900 border border-white/2 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/2 transition-[border-color,transform]">
                   <Upload
                     size={20}
                     className="text-zinc-500 group-hover:text-white transition-colors"

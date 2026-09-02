@@ -42,7 +42,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
 
   return (
     <div
-      className="fixed inset-x-2 z-40 flex overflow-hidden rounded-2xl border border-white/10 shadow-2xl studio-route-enter studio-route-enter-forward sm:static sm:h-full sm:shrink-0 sm:rounded-none sm:border-none sm:shadow-none"
+      className="fixed inset-x-2 z-40 flex overflow-hidden rounded-2xl border border-white/2 shadow-2xl studio-route-enter studio-route-enter-forward sm:static sm:h-full sm:shrink-0 sm:rounded-none sm:border-none sm:shadow-none"
       style={{
         top: 'var(--studio-mobile-header-height)',
         bottom: hasGenerationDock
@@ -52,7 +52,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
     >
       <React.Suspense
         fallback={
-          <div className="h-full w-full border-l border-white/10 bg-black/40 sm:w-[304px]" />
+          <div className="h-full w-full border-l border-white/2 bg-black/40 sm:w-[304px]" />
         }
       >
         <QueuePanel

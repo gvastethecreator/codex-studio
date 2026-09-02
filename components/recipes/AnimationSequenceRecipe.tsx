@@ -96,24 +96,24 @@ function getParams(recipeParams: ImageGenerationConfig['recipeParams']) {
 }
 
 function getFrameTone(frame: Pick<AnimationSequenceFrameState, 'status'> | null | undefined) {
-  if (!frame) return 'border-white/10 bg-white/[0.035] text-zinc-400';
-  if (frame.status === 'blocked') return 'border-rose-500/30 bg-rose-500/10 text-rose-200';
+  if (!frame) return 'border-white/2 bg-white/[0.035] text-zinc-400';
+  if (frame.status === 'blocked') return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
   if (frame.status === 'generated') {
-    return 'border-emerald-500/30 bg-emerald-500/10 text-emerald-200';
+    return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
   }
   if (frame.status === 'generating' || frame.status === 'correcting') {
-    return 'border-sky-500/30 bg-sky-500/10 text-sky-200';
+    return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
   }
-  return 'border-white/10 bg-white/[0.035] text-zinc-300';
+  return 'border-white/2 bg-white/[0.035] text-zinc-300';
 }
 
 function getRunTone(status: AnimationSequenceRun['status'] | null | undefined) {
-  if (status === 'blocked') return 'border-rose-500/30 bg-rose-500/10 text-rose-200';
-  if (status === 'qa_passed') return 'border-emerald-500/30 bg-emerald-500/10 text-emerald-200';
+  if (status === 'blocked') return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
+  if (status === 'qa_passed') return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
   if (status === 'exported' || status === 'ready_for_review') {
-    return 'border-amber-500/30 bg-amber-500/10 text-amber-200';
+    return 'border-amber-500/2 bg-amber-500/10 text-amber-200';
   }
-  return 'border-sky-500/30 bg-sky-500/10 text-sky-200';
+  return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
 }
 
 function frameMatchesRun(image: GeneratedImageWithConfig, runId: string, frameId: string) {
@@ -166,7 +166,7 @@ function NumberField({
           const nextValue = parseBoundedNumberInput(event.target.value, min, max);
           if (nextValue !== null) onChange(nextValue);
         }}
-        className="h-9 rounded-md border border-white/10 bg-black/35 px-2 text-sm font-bold text-white outline-none transition-colors focus:border-amber-400/50"
+        className="h-9 rounded-md border border-white/2 bg-black/35 px-2 text-sm font-bold text-white outline-none transition-colors focus:border-amber-400/2"
       />
     </label>
   );
@@ -189,7 +189,7 @@ function SelectField({
       <select
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="h-9 rounded-md border border-white/10 bg-black/35 px-2 text-xs font-bold uppercase tracking-wide text-white outline-none transition-colors focus:border-amber-400/50"
+        className="h-9 rounded-md border border-white/2 bg-black/35 px-2 text-xs font-bold uppercase tracking-wide text-white outline-none transition-colors focus:border-amber-400/2"
       >
         {options.map((option) => (
           <option key={option} value={option}>
@@ -217,8 +217,8 @@ function ToggleField({
       aria-pressed={value}
       className={`flex h-9 items-center justify-between rounded-md border px-2 text-[10px] font-black uppercase tracking-widest transition-colors ${
         value
-          ? 'border-amber-400/35 bg-amber-500/10 text-amber-100'
-          : 'border-white/10 bg-black/30 text-zinc-500'
+          ? 'border-amber-400/2 bg-amber-500/10 text-amber-100'
+          : 'border-white/2 bg-black/30 text-zinc-500'
       }`}
     >
       {label}
@@ -247,8 +247,8 @@ function ActionButton({
       disabled={disabled}
       className={`inline-flex h-9 items-center justify-center gap-2 rounded-md border px-3 text-[10px] font-black uppercase tracking-widest transition-[background-color,border-color,color,opacity] disabled:cursor-not-allowed disabled:opacity-45 ${
         tone === 'primary'
-          ? 'border-amber-400/40 bg-amber-500/15 text-amber-100 hover:bg-amber-500/20'
-          : 'border-white/10 bg-white/[0.04] text-zinc-300 hover:border-white/20 hover:bg-white/[0.07]'
+          ? 'border-amber-400/2 bg-amber-500/15 text-amber-100 hover:bg-amber-500/20'
+          : 'border-white/2 bg-white/[0.04] text-zinc-300 hover:border-white/2 hover:bg-white/[0.07]'
       } ${className}`}
     >
       {children}
@@ -569,8 +569,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
         data-animation-workbench="true"
         className="custom-scrollbar grid min-h-0 flex-1 grid-cols-1 gap-2 overflow-y-auto p-3 lg:grid-cols-[18rem_minmax(0,1fr)] xl:grid-cols-[20rem_minmax(0,1fr)_24rem] xl:overflow-hidden"
       >
-        <aside className="flex min-h-[34rem] flex-col overflow-hidden rounded-lg border border-white/10 bg-black/40 xl:min-h-0">
-          <div className="border-b border-white/10 p-3">
+        <aside className="flex min-h-[34rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 xl:min-h-0">
+          <div className="border-b border-white/2 p-3">
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
                 <div className="text-[10px] font-black uppercase tracking-widest text-amber-300">
@@ -581,7 +581,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   {contract.frameCount} frames / {contract.fps} fps / GIF
                 </p>
               </div>
-              <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-amber-400/25 bg-amber-500/10 text-amber-200">
+              <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-amber-400/2 bg-amber-500/10 text-amber-200">
                 <Gif size={20} />
               </span>
             </div>
@@ -598,7 +598,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 rows={5}
                 placeholder="Describe motion, timing, camera, and the visual anchor to preserve."
                 aria-describedby={!prompt.trim() ? 'animation-prompt-requirement' : undefined}
-                className="resize-none rounded-md border border-white/10 bg-black/35 p-2 text-sm text-zinc-100 outline-none transition-colors focus:border-amber-400/50"
+                className="resize-none rounded-md border border-white/2 bg-black/35 p-2 text-sm text-zinc-100 outline-none transition-colors focus:border-amber-400/2"
               />
             </label>
 
@@ -646,7 +646,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   type="color"
                   value={contract.matteColor}
                   onChange={(event) => setParam('matteColor', event.target.value)}
-                  className="h-9 w-full rounded-md border border-white/10 bg-black/35"
+                  className="h-9 w-full rounded-md border border-white/2 bg-black/35"
                 />
               </label>
             </div>
@@ -688,7 +688,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 {isRunsLoading ? (
                   <div
                     role="status"
-                    className="rounded-md border border-white/10 px-3 py-4 text-xs text-zinc-500"
+                    className="rounded-md border border-white/2 px-3 py-4 text-xs text-zinc-500"
                   >
                     Loading runs...
                   </div>
@@ -696,20 +696,20 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 {!isRunsLoading && runsLoadError ? (
                   <div
                     role="alert"
-                    className="rounded-md border border-rose-500/30 bg-rose-500/10 p-3 text-xs text-rose-200"
+                    className="rounded-md border border-rose-500/2 bg-rose-500/10 p-3 text-xs text-rose-200"
                   >
                     <div>{runsLoadError}</div>
                     <button
                       type="button"
                       onClick={() => void refreshRuns().catch(() => {})}
-                      className="mt-2 h-8 rounded-md border border-rose-400/25 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
+                      className="mt-2 h-8 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
                     >
                       Retry runs
                     </button>
                   </div>
                 ) : null}
                 {!isRunsLoading && !runsLoadError && runs.length === 0 ? (
-                  <div className="rounded-md border border-dashed border-white/10 px-3 py-4 text-xs leading-relaxed text-zinc-600">
+                  <div className="rounded-md border border-dashed border-white/2 px-3 py-4 text-xs leading-relaxed text-zinc-600">
                     Prepared runs will appear here and remain available after refresh.
                   </div>
                 ) : null}
@@ -721,8 +721,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     aria-pressed={activeRun?.id === run.id}
                     className={`rounded-md border p-2 text-left transition-colors ${
                       activeRun?.id === run.id
-                        ? 'border-amber-400/45 bg-amber-500/10'
-                        : 'border-white/10 bg-white/[0.035] hover:border-white/20'
+                        ? 'border-amber-400/2 bg-amber-500/10'
+                        : 'border-white/2 bg-white/[0.035] hover:border-white/2'
                     }`}
                   >
                     <div className="flex items-center justify-between gap-2">
@@ -743,8 +743,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
           </div>
         </aside>
 
-        <main className="flex min-h-[40rem] flex-col overflow-hidden rounded-lg border border-white/10 bg-black/35 xl:min-h-0">
-          <div className="flex items-center justify-between gap-3 border-b border-white/10 p-3">
+        <main className="flex min-h-[40rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/35 xl:min-h-0">
+          <div className="flex items-center justify-between gap-3 border-b border-white/2 p-3">
             <div className="min-w-0">
               <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
                 Active Run
@@ -771,7 +771,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
           <div className="grid min-h-0 flex-1 grid-rows-[minmax(0,1fr)_auto] overflow-hidden">
             <div className="custom-scrollbar overflow-y-auto p-3">
               {activeRun && gifExport ? (
-                <div className="mb-3 overflow-hidden rounded-lg border border-emerald-500/25 bg-emerald-500/10">
+                <div className="mb-3 overflow-hidden rounded-lg border border-emerald-500/2 bg-emerald-500/10">
                   <img
                     src={`${getAnimationSequenceGifUrl(activeRun.id)}?t=${encodeURIComponent(activeRun.updatedAt)}`}
                     alt="Exported animation preview"
@@ -779,7 +779,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   />
                 </div>
               ) : (
-                <div className="mb-3 grid min-h-[220px] place-items-center rounded-lg border border-white/10 bg-white/[0.025] text-center">
+                <div className="mb-3 grid min-h-[220px] place-items-center rounded-lg border border-white/2 bg-white/[0.025] text-center">
                   <div>
                     <Gif size={44} className="mx-auto text-white/15" />
                     <p className="mt-3 text-xs font-bold text-zinc-500">
@@ -807,7 +807,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       aria-label={`Select ${frameLabel}, ${frameStatus}`}
                       aria-pressed={selected}
                       className={`group min-h-28 overflow-hidden rounded-lg border text-left transition-colors ${
-                        selected ? 'border-amber-400/60 bg-amber-500/10' : getFrameTone(state)
+                        selected ? 'border-amber-400/2 bg-amber-500/10' : getFrameTone(state)
                       }`}
                     >
                       <div className="aspect-video bg-black/45">
@@ -840,7 +840,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
               </div>
             </div>
 
-            <div className="border-t border-white/10 p-3">
+            <div className="border-t border-white/2 p-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="flex flex-wrap items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-500">
                   <span>
@@ -864,8 +864,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   aria-live={error ? 'assertive' : 'polite'}
                   className={`mt-2 flex items-center gap-2 rounded-md border px-2 py-1.5 text-xs ${
                     error
-                      ? 'border-rose-500/30 bg-rose-500/10 text-rose-200'
-                      : 'border-emerald-500/25 bg-emerald-500/10 text-emerald-200'
+                      ? 'border-rose-500/2 bg-rose-500/10 text-rose-200'
+                      : 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200'
                   }`}
                 >
                   {error ? <AlertTriangle size={14} /> : <Check size={14} />}
@@ -876,8 +876,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
           </div>
         </main>
 
-        <aside className="flex min-h-[30rem] flex-col overflow-hidden rounded-lg border border-white/10 bg-black/40 lg:col-span-2 xl:col-span-1 xl:min-h-0">
-          <div className="border-b border-white/10 p-3">
+        <aside className="flex min-h-[30rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 lg:col-span-2 xl:col-span-1 xl:min-h-0">
+          <div className="border-b border-white/2 p-3">
             <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
               Frame Inspector
             </div>
@@ -901,20 +901,20 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
               readOnly
               rows={12}
               aria-describedby={promptLoadError ? 'animation-frame-prompt-error' : undefined}
-              className="w-full resize-none rounded-md border border-white/10 bg-black/35 p-2 font-mono text-[11px] leading-relaxed text-zinc-300 outline-none"
+              className="w-full resize-none rounded-md border border-white/2 bg-black/35 p-2 font-mono text-[11px] leading-relaxed text-zinc-300 outline-none"
             />
 
             {promptLoadError ? (
               <div
                 id="animation-frame-prompt-error"
                 role="alert"
-                className="mt-2 rounded-md border border-rose-500/30 bg-rose-500/10 p-2 text-xs text-rose-200"
+                className="mt-2 rounded-md border border-rose-500/2 bg-rose-500/10 p-2 text-xs text-rose-200"
               >
                 <div>{promptLoadError}</div>
                 <button
                   type="button"
                   onClick={() => setPromptReloadVersion((version) => version + 1)}
-                  className="mt-2 h-8 rounded-md border border-rose-400/25 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
+                  className="mt-2 h-8 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
                 >
                   Retry prompt
                 </button>
@@ -944,7 +944,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
             </div>
 
             {activeRun && selectedFrame ? (
-              <div className="mt-3 rounded-md border border-white/10 bg-white/[0.03] p-2 text-[10px] text-zinc-500">
+              <div className="mt-3 rounded-md border border-white/2 bg-white/[0.03] p-2 text-[10px] text-zinc-500">
                 <div className="flex justify-between gap-2">
                   <span>Status</span>
                   <span className="font-black uppercase text-zinc-300">{selectedFrame.status}</span>
@@ -962,7 +962,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       const image = images.find((item) => item.id === selectedFrame.catalogImageId);
                       if (image) onSelectImage(image);
                     }}
-                    className="mt-2 h-8 w-full rounded-md border border-white/10 bg-white/[0.04] text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                    className="mt-2 h-8 w-full rounded-md border border-white/2 bg-white/[0.04] text-[10px] font-black uppercase tracking-widest text-zinc-300"
                   >
                     Preview
                   </button>

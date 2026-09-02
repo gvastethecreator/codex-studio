@@ -221,8 +221,8 @@ export function WorkspaceStrip({
         const tooltipContent = `${workspaceName} - ${formattedImageCount} images - updated ${updatedLabel}`;
         const workspaceButtonClassName = `studio-command-surface studio-hit-target min-h-10 ${isCompact ? 'w-full min-w-0 max-w-none' : 'min-w-[8.5rem] max-w-[11rem]'} rounded-lg border transition-[color,background-color,border-color,opacity,transform,box-shadow] relative flex items-center gap-2 overflow-hidden px-1.5 pr-2 text-left cursor-pointer ${
           isActive
-            ? 'border-accent-500/55 bg-accent-500/12 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.12)]'
-            : 'border-white/10 bg-white/[0.04] text-zinc-400 opacity-75 hover:border-white/20 hover:bg-white/8 hover:text-zinc-100 hover:opacity-100'
+            ? 'border-accent-500/2 bg-accent-500/12 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.12)]'
+            : 'border-white/2 bg-white/[0.04] text-zinc-400 opacity-75 hover:border-white/2 hover:bg-white/8 hover:text-zinc-100 hover:opacity-100'
         }`;
 
         return (
@@ -277,7 +277,7 @@ export function WorkspaceStrip({
                 }}
                 className={workspaceButtonClassName}
               >
-                <span className="size-6 shrink-0 overflow-hidden rounded-md border border-white/10 bg-zinc-900">
+                <span className="size-6 shrink-0 overflow-hidden rounded-md border border-white/2 bg-zinc-900">
                   {workspace.lastImage ? (
                     <img
                       src={workspace.lastImage}
@@ -339,8 +339,8 @@ export function WorkspaceStrip({
                 }}
                 className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity] ${
                   contextMenuWorkspaceId === workspace.id
-                    ? 'border-accent-400/40 bg-accent-500/15 text-accent-100'
-                    : 'border-white/10 bg-white/[0.035] text-zinc-500 opacity-75 hover:border-white/20 hover:bg-white/8 hover:text-zinc-200 hover:opacity-100'
+                    ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
+                    : 'border-white/2 bg-white/[0.035] text-zinc-500 opacity-75 hover:border-white/2 hover:bg-white/8 hover:text-zinc-200 hover:opacity-100'
                 }`}
               >
                 <DotsVertical size={15} />
@@ -368,7 +368,7 @@ export function WorkspaceStrip({
                     }
                   }}
                   aria-label="Rename workspace"
-                  className="w-36 rounded-lg border border-white/10 bg-black/50 px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500"
+                  className="w-36 rounded-lg border border-white/2 bg-black/50 px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500/2"
                   placeholder="Workspace name"
                 />
               </DemandMountedGsapDropdown>
@@ -390,7 +390,7 @@ export function WorkspaceStrip({
                   top: contextMenuPosition?.top ?? 44,
                 }}
               >
-                <div className="border-b border-white/10 pb-2">
+                <div className="border-b border-white/2 pb-2">
                   <div className="truncate text-[11px] font-black uppercase tracking-widest text-zinc-100">
                     {workspaceName}
                   </div>
@@ -481,7 +481,7 @@ export function WorkspaceStrip({
             onAddWorkspace();
           }}
           aria-label="Create workspace"
-          className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200 ${isCompact ? 'w-full' : ''}`}
+          className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border border-dashed border-white/2 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200 ${isCompact ? 'w-full' : ''}`}
         >
           <Plus size={16} />
         </button>

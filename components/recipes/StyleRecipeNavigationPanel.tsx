@@ -36,8 +36,8 @@ export function StyleRecipeNavigationPanel({
 }: StyleRecipeNavigationPanelProps) {
   return (
     <aside data-style-detail-navigation className="hidden min-h-0 min-w-0 lg:block">
-      <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-[6px] border border-white/8 bg-zinc-950/78 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
-        <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-white/6 px-3">
+      <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950/78 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+        <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-white/2 px-3">
           <div className="min-w-0">
             <p className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
               Style Map
@@ -47,7 +47,7 @@ export function StyleRecipeNavigationPanel({
             type="button"
             onClick={onClose}
             data-style-detail-navigation-toggle
-            className="flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/8 bg-white/[0.035] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
+            className="flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/[0.035] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
             aria-label="Hide style map"
             title="Hide style map"
           >
@@ -76,12 +76,12 @@ export function StyleRecipeNavigationPanel({
                       onClick={() => onOpen(item.tabId)}
                       className={`group/nav flex min-h-9 w-full items-center gap-2 rounded-[6px] border px-2 py-1.5 text-left outline-none transition-[background-color,border-color,transform,color] duration-150 focus-visible:ring-2 focus-visible:ring-white/30 ${
                         active
-                          ? 'border-white/18 bg-white/10 text-white'
-                          : 'border-transparent bg-transparent text-zinc-500 hover:border-white/10 hover:bg-white/[0.045] hover:text-zinc-200'
+                          ? 'border-white/2 bg-white/10 text-white'
+                          : 'border-transparent bg-transparent text-zinc-500 hover:border-white/2 hover:bg-white/[0.045] hover:text-zinc-200'
                       }`}
                     >
                       <span
-                        className={`flex size-6 shrink-0 items-center justify-center rounded-[5px] border border-white/8 bg-white/[0.035] ${item.theme.text}`}
+                        className={`flex size-6 shrink-0 items-center justify-center rounded-[5px] border border-white/2 bg-white/[0.035] ${item.theme.text}`}
                       >
                         {item.icon}
                       </span>
@@ -98,7 +98,7 @@ export function StyleRecipeNavigationPanel({
                         </span>
                       </span>
                       <span
-                        className={`rounded-[5px] border border-white/8 px-1.5 py-0.5 text-[8px] font-black tabular-nums ${active ? `${item.theme.bg} text-white` : 'bg-white/[0.035] text-zinc-500'}`}
+                        className={`rounded-[5px] border border-white/2 px-1.5 py-0.5 text-[8px] font-black tabular-nums ${active ? `${item.theme.bg} text-white` : 'bg-white/[0.035] text-zinc-500'}`}
                         style={
                           active
                             ? ({ '--tw-bg-opacity': '0.68' } as React.CSSProperties)

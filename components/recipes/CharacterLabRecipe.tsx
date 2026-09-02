@@ -87,55 +87,55 @@ const SELECTED_INPUT_PREVIEW_SLOT_IDS = [
 const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string; soft: string }> = {
   amber: {
     text: 'text-amber-300',
-    border: 'border-amber-500/40',
+    border: 'border-amber-500/2',
     bg: 'bg-amber-500',
     soft: 'bg-amber-500/10',
   },
   orange: {
     text: 'text-orange-300',
-    border: 'border-orange-500/40',
+    border: 'border-orange-500/2',
     bg: 'bg-orange-500',
     soft: 'bg-orange-500/10',
   },
   blue: {
     text: 'text-blue-300',
-    border: 'border-blue-500/40',
+    border: 'border-blue-500/2',
     bg: 'bg-blue-500',
     soft: 'bg-blue-500/10',
   },
   cyan: {
     text: 'text-cyan-300',
-    border: 'border-cyan-500/40',
+    border: 'border-cyan-500/2',
     bg: 'bg-cyan-500',
     soft: 'bg-cyan-500/10',
   },
   emerald: {
     text: 'text-emerald-300',
-    border: 'border-emerald-500/40',
+    border: 'border-emerald-500/2',
     bg: 'bg-emerald-500',
     soft: 'bg-emerald-500/10',
   },
   green: {
     text: 'text-green-300',
-    border: 'border-green-500/40',
+    border: 'border-green-500/2',
     bg: 'bg-green-500',
     soft: 'bg-green-500/10',
   },
   indigo: {
     text: 'text-indigo-300',
-    border: 'border-indigo-500/40',
+    border: 'border-indigo-500/2',
     bg: 'bg-indigo-500',
     soft: 'bg-indigo-500/10',
   },
   pink: {
     text: 'text-pink-300',
-    border: 'border-pink-500/40',
+    border: 'border-pink-500/2',
     bg: 'bg-pink-500',
     soft: 'bg-pink-500/10',
   },
   purple: {
     text: 'text-purple-300',
-    border: 'border-purple-500/40',
+    border: 'border-purple-500/2',
     bg: 'bg-purple-500',
     soft: 'bg-purple-500/10',
   },
@@ -147,19 +147,19 @@ const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string;
   },
   teal: {
     text: 'text-teal-300',
-    border: 'border-teal-500/40',
+    border: 'border-teal-500/2',
     bg: 'bg-teal-500',
     soft: 'bg-teal-500/10',
   },
   yellow: {
     text: 'text-yellow-300',
-    border: 'border-yellow-500/40',
+    border: 'border-yellow-500/2',
     bg: 'bg-yellow-500',
     soft: 'bg-yellow-500/10',
   },
   zinc: {
     text: 'text-zinc-300',
-    border: 'border-white/10',
+    border: 'border-white/2',
     bg: 'bg-zinc-500',
     soft: 'bg-white/[0.04]',
   },
@@ -515,8 +515,8 @@ function SelectField({
         onKeyDown={handleKeyDown}
         className={`character-lab-control-card flex min-h-12 w-full min-w-0 items-center gap-3 rounded-xl border px-2.5 py-2 text-left outline-none transition-[background-color,border-color,color,transform] duration-150 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
           isOpen
-            ? 'border-violet-400/60 bg-violet-500/10 text-white'
-            : 'border-white/10 bg-black/35 text-zinc-100 hover:border-white/20 hover:bg-white/[0.05]'
+            ? 'border-violet-400/2 bg-violet-500/10 text-white'
+            : 'border-white/2 bg-black/35 text-zinc-100 hover:border-white/2 hover:bg-white/[0.05]'
         }`}
         onClick={() => {
           if (isOpen) closeDropdown();
@@ -619,14 +619,14 @@ function PreviewOptionCard({
 }) {
   return (
     <div
-      className={`character-lab-preview-option group flex h-full min-h-[132px] min-w-0 flex-col rounded-xl border border-white/10 bg-black/40 p-2 shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition-[border-color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.045] ${
+      className={`character-lab-preview-option group flex h-full min-h-[132px] min-w-0 flex-col rounded-xl border border-white/2 bg-black/40 p-2 shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition-[border-color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:border-white/2 hover:bg-white/[0.045] ${
         prominent ? 'sm:col-span-2 xl:col-span-1' : ''
       }`}
     >
       <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg bg-black">
         <CharacterLabOptionIcon id={item.iconId} fallbackId={item.fallbackIconId} size={64} />
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
-        <span className="absolute left-1.5 top-1.5 rounded-md border border-white/10 bg-black/70 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-zinc-500">
+        <span className="absolute left-1.5 top-1.5 rounded-md border border-white/2 bg-black/70 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-zinc-500">
           {item.label}
         </span>
       </div>
@@ -664,8 +664,8 @@ function AttachmentSetupSlot({
   return (
     <div
       className={`group relative min-w-0 overflow-hidden rounded-xl border bg-black/45 transition-[border-color,opacity] duration-150 ${
-        attachment ? 'border-white/15' : 'border-dashed border-white/10'
-      } ${disabled ? 'opacity-45' : 'hover:border-white/25'}`}
+        attachment ? 'border-white/2' : 'border-dashed border-white/2'
+      } ${disabled ? 'opacity-45' : 'hover:border-white/2'}`}
     >
       <button
         type="button"
@@ -721,8 +721,8 @@ function AttachmentSetupSlot({
 
 function SourcePreviewCard({ source }: { source: Attachment | null }) {
   return (
-    <div className="character-lab-preview-option group flex h-full min-h-[180px] flex-col rounded-xl border border-white/10 bg-black/45 p-2 shadow-[0_16px_36px_rgba(0,0,0,0.28)] transition-[border-color,background-color] duration-200 hover:border-white/20 hover:bg-white/[0.04]">
-      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg border border-white/10 bg-black">
+    <div className="character-lab-preview-option group flex h-full min-h-[180px] flex-col rounded-xl border border-white/2 bg-black/45 p-2 shadow-[0_16px_36px_rgba(0,0,0,0.28)] transition-[border-color,background-color] duration-200 hover:border-white/2 hover:bg-white/[0.04]">
+      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg border border-white/2 bg-black">
         {source ? (
           <img
             src={source.dataUrl}
@@ -733,7 +733,7 @@ function SourcePreviewCard({ source }: { source: Attachment | null }) {
           <CharacterLabIcon id="control:source" size={76} />
         )}
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
-        <span className="absolute left-3 top-3 rounded-lg border border-white/10 bg-black/70 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-300">
+        <span className="absolute left-3 top-3 rounded-lg border border-white/2 bg-black/70 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-300">
           Source Image
         </span>
       </div>
@@ -769,7 +769,7 @@ function ActionButton({
       className={`character-lab-action-card group relative flex aspect-[5/6] min-h-[132px] w-full min-w-0 flex-col overflow-hidden rounded-xl border p-1.5 text-left shadow-[0_10px_22px_rgba(0,0,0,0.22)] transition-[background-color,border-color,color,opacity,transform] duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
         selected
           ? `${accent.border} ${accent.soft} text-white ring-1 ring-inset ring-white/10`
-          : 'border-white/10 bg-black/35 text-zinc-400 hover:border-white/20 hover:bg-white/[0.06] hover:text-zinc-100'
+          : 'border-white/2 bg-black/35 text-zinc-400 hover:border-white/2 hover:bg-white/[0.06] hover:text-zinc-100'
       }`}
     >
       <span className="relative flex min-h-0 w-full flex-1 items-center justify-center overflow-hidden rounded-lg bg-black">
@@ -1102,10 +1102,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
     >
       <div className="grid size-full min-h-0 grid-cols-[minmax(250px,5fr)_minmax(320px,6fr)_minmax(440px,9fr)] gap-3 max-xl:flex max-xl:h-auto max-xl:min-h-[1120px] max-xl:flex-col max-sm:min-h-0">
         <aside
-          className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/10 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px] max-sm:min-h-[680px]"
+          className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px] max-sm:min-h-[680px]"
           data-panel="left"
         >
-          <div className="shrink-0 border-b border-white/10 p-2.5">
+          <div className="shrink-0 border-b border-white/2 p-2.5">
             <div className="mb-1.5 flex items-center justify-between gap-2">
               <div>
                 <div className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
@@ -1115,7 +1115,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   Principal + 3 refs
                 </div>
               </div>
-              <span className="rounded-lg border border-white/10 bg-black/30 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
+              <span className="rounded-lg border border-white/2 bg-black/30 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
                 {source ? `${references.length}/3 refs` : 'source first'}
               </span>
             </div>
@@ -1179,7 +1179,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
             />
           </div>
 
-          <div className="shrink-0 border-b border-white/10 p-3">
+          <div className="shrink-0 border-b border-white/2 p-3">
             <div className="flex items-center justify-between gap-2">
               <div>
                 <h2 className="text-[12px] font-black uppercase tracking-widest text-zinc-200">
@@ -1207,7 +1207,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 value={subject}
                 onChange={(event) => setSubject(event.target.value)}
                 placeholder="e.g. Brave elven ranger, scar over left eye..."
-                className="h-20 resize-none rounded-xl border border-white/10 bg-black/35 p-2.5 text-[12px] leading-relaxed text-zinc-100 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/70 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="h-20 resize-none rounded-xl border border-white/2 bg-black/35 p-2.5 text-[12px] leading-relaxed text-zinc-100 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               />
             </label>
 
@@ -1262,10 +1262,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     key={palette.name}
                     type="button"
                     onClick={() => setBackgroundColor(palette.backgroundColor)}
-                    className={`flex h-8 items-center justify-center rounded-lg border bg-black/35 transition-[border-color,background-color] duration-150 hover:border-white/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+                    className={`flex h-8 items-center justify-center rounded-lg border bg-black/35 transition-[border-color,background-color] duration-150 hover:border-white/2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
                       backgroundColor === palette.backgroundColor
-                        ? 'border-violet-400 bg-violet-500/10'
-                        : 'border-white/10'
+                        ? 'border-violet-400/2 bg-violet-500/10'
+                        : 'border-white/2'
                     }`}
                     aria-label={`Background ${palette.name}`}
                   >
@@ -1273,7 +1273,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                       {palette.swatches.map((swatch) => (
                         <span
                           key={swatch}
-                          className="size-3.5 rounded-full border border-black/40"
+                          className="size-3.5 rounded-full border border-black/2"
                           style={{ backgroundColor: swatch }}
                         />
                       ))}
@@ -1286,10 +1286,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
         </aside>
 
         <main
-          className="character-lab-panel z-10 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/10 bg-zinc-950/75 shadow-2xl max-xl:min-h-[560px] max-sm:min-h-[500px]"
+          className="character-lab-panel z-10 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/75 shadow-2xl max-xl:min-h-[560px] max-sm:min-h-[500px]"
           data-panel="main"
         >
-          <div className="shrink-0 border-b border-white/10 p-2.5">
+          <div className="shrink-0 border-b border-white/2 p-2.5">
             <div className="custom-scrollbar flex gap-1 overflow-x-auto pb-1">
               {characterLabModes.map((mode) => {
                 const active = selectedMode === mode.id;
@@ -1304,8 +1304,8 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     }}
                     className={`character-lab-control-card flex h-10 min-w-[76px] flex-none items-center justify-center gap-1.5 rounded-lg border px-2 text-[8px] font-black transition-[background-color,border-color,color,transform] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
                       active
-                        ? 'border-violet-400/60 bg-violet-500/10 text-white'
-                        : 'border-white/10 bg-black/25 text-zinc-500 hover:border-white/20 hover:bg-white/[0.04] hover:text-zinc-200'
+                        ? 'border-violet-400/2 bg-violet-500/10 text-white'
+                        : 'border-white/2 bg-black/25 text-zinc-500 hover:border-white/2 hover:bg-white/[0.04] hover:text-zinc-200'
                     }`}
                   >
                     <CharacterLabIcon id={MODE_ICON_IDS[mode.id]} size={18} />
@@ -1326,10 +1326,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
                   placeholder={`Search ${characterLabOptionCounts.total} actions`}
-                  className="h-9 w-full rounded-lg border border-white/10 bg-black/40 pl-9 pr-3 text-[12px] text-zinc-200 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/70 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="h-9 w-full rounded-lg border border-white/2 bg-black/40 pl-9 pr-3 text-[12px] text-zinc-200 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 />
               </div>
-              <div className="shrink-0 rounded-lg border border-white/10 bg-black/30 px-2 py-1.5 text-right">
+              <div className="shrink-0 rounded-lg border border-white/2 bg-black/30 px-2 py-1.5 text-right">
                 <div className="text-[9px] font-black tabular-nums text-zinc-300">
                   {selectedModeReadyActions.length}/{selectedModeActions.length}
                 </div>
@@ -1362,7 +1362,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                       <button
                         type="button"
                         onClick={() => runCategoryBatch(actions)}
-                        className="flex h-7 items-center gap-1 rounded-lg border border-violet-400/25 bg-violet-500/15 px-2 text-[8px] font-black uppercase tracking-wide text-violet-100 transition-[background-color,border-color] duration-150 hover:border-violet-300/50 hover:bg-violet-500/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                        className="flex h-7 items-center gap-1 rounded-lg border border-violet-400/2 bg-violet-500/15 px-2 text-[8px] font-black uppercase tracking-wide text-violet-100 transition-[background-color,border-color] duration-150 hover:border-violet-300/2 hover:bg-violet-500/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                       >
                         <CharacterLabIcon id="control:batch" size={16} />
                         Batch
@@ -1384,7 +1384,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
             })}
 
             {filteredCategoryGroups.length === 0 && (
-              <div className="rounded-xl border border-dashed border-white/10 p-6 text-center text-[11px] font-bold uppercase tracking-widest text-zinc-600">
+              <div className="rounded-xl border border-dashed border-white/2 p-6 text-center text-[11px] font-bold uppercase tracking-widest text-zinc-600">
                 No matching actions
               </div>
             )}
@@ -1392,10 +1392,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
         </main>
 
         <aside
-          className="character-lab-panel relative z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/10 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px]"
+          className="character-lab-panel relative z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px]"
           data-panel="right"
         >
-          <div className="shrink-0 border-b border-white/10 p-3">
+          <div className="shrink-0 border-b border-white/2 p-3">
             <div className="flex items-start gap-2.5">
               <span
                 className={`grid size-10 shrink-0 place-items-center rounded-lg border ${selectedAccent.border} ${selectedAccent.soft}`}
@@ -1416,7 +1416,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
           <div className="min-h-0 flex-1 overflow-y-auto p-2.5 pb-20 custom-scrollbar">
             <div className="grid grid-cols-[minmax(210px,0.9fr)_minmax(250px,1.1fr)] gap-2.5 max-[1180px]:grid-cols-1">
               <SourcePreviewCard source={source} />
-              <div className="flex h-full min-h-[180px] flex-col rounded-xl border border-white/10 bg-black/45 p-2.5 shadow-[0_16px_36px_rgba(0,0,0,0.26)]">
+              <div className="flex h-full min-h-[180px] flex-col rounded-xl border border-white/2 bg-black/45 p-2.5 shadow-[0_16px_36px_rgba(0,0,0,0.26)]">
                 <div className="mb-2 flex items-center justify-between gap-2">
                   <div>
                     <div className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
@@ -1426,7 +1426,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                       Source and refs
                     </div>
                   </div>
-                  <span className="rounded-lg border border-white/10 bg-black/45 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
+                  <span className="rounded-lg border border-white/2 bg-black/45 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
                     {source ? `${references.length + 1}/4` : '0/4'}
                   </span>
                 </div>
@@ -1436,7 +1436,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     .map((attachment, index) => (
                       <div
                         key={attachment?.id ?? SELECTED_INPUT_PREVIEW_SLOT_IDS[index]}
-                        className="relative aspect-[4/5] overflow-hidden rounded-md border border-white/10 bg-zinc-950"
+                        className="relative aspect-[4/5] overflow-hidden rounded-md border border-white/2 bg-zinc-950"
                       >
                         {attachment ? (
                           <img
@@ -1458,7 +1458,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                       </div>
                     ))}
                 </div>
-                <div className="mt-2.5 flex min-h-0 flex-1 flex-col rounded-lg border border-white/10 bg-zinc-950/75 p-2">
+                <div className="mt-2.5 flex min-h-0 flex-1 flex-col rounded-lg border border-white/2 bg-zinc-950/75 p-2">
                   <div className="mb-1 flex items-center justify-between gap-2">
                     <span className="truncate text-[11px] font-black uppercase tracking-wide text-zinc-100">
                       {selectedAction.label}
@@ -1486,7 +1486,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 ))}
               </div>
 
-              <div className="rounded-xl border border-white/10 bg-black/45 p-2.5 shadow-[0_14px_34px_rgba(0,0,0,0.24)]">
+              <div className="rounded-xl border border-white/2 bg-black/45 p-2.5 shadow-[0_14px_34px_rgba(0,0,0,0.24)]">
                 <div className="mb-1.5 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
                   <FileText size={12} aria-hidden="true" />
                   Prompt Snapshot
@@ -1511,7 +1511,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   {recentImages.map((image) => (
                     <div
                       key={image.id}
-                      className="group relative aspect-square overflow-hidden rounded-xl border border-white/10 bg-zinc-900 shadow-xl"
+                      className="group relative aspect-square overflow-hidden rounded-xl border border-white/2 bg-zinc-900 shadow-xl"
                     >
                       <button
                         type="button"
@@ -1540,7 +1540,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
             )}
 
             {capabilityNotice && (
-              <div className="mt-4 rounded-xl border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-[12px] font-semibold text-amber-100">
+              <div className="mt-4 rounded-xl border border-amber-500/2 bg-amber-500/10 px-4 py-3 text-[12px] font-semibold text-amber-100">
                 {capabilityNotice}
               </div>
             )}
@@ -1551,7 +1551,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
             onClick={() => runAction(selectedAction)}
             data-character-lab-generate-button
             data-generate-active={isGenerating ? 'true' : 'false'}
-            className="group absolute bottom-3 right-3 z-30 flex min-h-11 w-fit min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/40 bg-violet-500/20 px-3 py-2 text-left text-white shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/60 hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            className="group absolute bottom-3 right-3 z-30 flex min-h-11 w-fit min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/2 bg-violet-500/20 px-3 py-2 text-left text-white shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/2 hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
             <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-black">
               {isGenerating ? (

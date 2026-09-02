@@ -142,7 +142,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
             maxWidth: '100%',
             maxHeight: 'calc(100dvh - var(--studio-chrome-block))',
             borderStyle: hasReference ? 'solid' : 'dashed',
-            borderColor: hasReference ? 'rgb(var(--indigo-500) / 0.3)' : 'rgb(255 255 255 / 0.1)',
+            borderColor: hasReference ? 'rgb(var(--indigo-500) / 0.02)' : 'rgb(255 255 255 / 0.02)',
           }}
         >
           {hasReference ? (
@@ -153,7 +153,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 className="size-full object-contain shadow-2xl"
               />
               <div className="absolute top-4 left-4 z-20 flex gap-2">
-                <span className="px-2 py-1 bg-indigo-500/20 text-indigo-300 text-[8px] font-black uppercase tracking-widest border border-indigo-500/30 rounded">
+                <span className="px-2 py-1 bg-indigo-500/20 text-indigo-300 text-[8px] font-black uppercase tracking-widest border border-indigo-500/2 rounded">
                   REF ACTIVE
                 </span>
               </div>
@@ -184,7 +184,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 accept="image/*"
               />
 
-              <div className="size-24 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:border-indigo-500/50 transition-[border-color,transform] shadow-2xl relative z-10">
+              <div className="size-24 rounded-full bg-zinc-900 border border-white/2 flex items-center justify-center group-hover:scale-110 group-hover:border-indigo-500/2 transition-[border-color,transform] shadow-2xl relative z-10">
                 <Brush
                   size={32}
                   className="text-zinc-600 group-hover:text-indigo-400 transition-colors"

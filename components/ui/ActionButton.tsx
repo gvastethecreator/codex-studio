@@ -35,7 +35,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   } else if (variant === 'primary' || isActive) {
     baseClasses += disabled
       ? ''
-      : ' bg-gradient-to-b from-accent-950 to-accent-800 border border-accent-700/30 text-accent-300 shadow-[0_2px_8px_rgba(0,0,0,0.4)] hover:text-white hover:border-accent-500/50';
+      : ' bg-gradient-to-b from-accent-950 to-accent-800 border border-accent-700/2 text-accent-300 shadow-[0_2px_8px_rgba(0,0,0,0.4)] hover:text-white hover:border-accent-500/2';
   } else {
     baseClasses += disabled ? '' : ' text-zinc-500 hover:text-white hover:bg-white/5';
   }

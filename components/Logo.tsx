@@ -31,7 +31,7 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
     >
       <div className="relative flex size-7 items-center justify-center">
         <div className="absolute inset-0 rounded-xl bg-accent-500/18 transition-[opacity,transform] duration-500 ease-out-expo group-hover:scale-110 group-hover:opacity-100" />
-        <div className="absolute inset-[1.5px] rounded-xl border border-white/10 bg-zinc-950/85 backdrop-blur-sm transition-[background-color,border-color] duration-500 ease-out-expo group-hover:border-white/15 group-hover:bg-zinc-900/85" />
+        <div className="absolute inset-[1.5px] rounded-xl border border-white/2 bg-zinc-950/85 backdrop-blur-sm transition-[background-color,border-color] duration-500 ease-out-expo group-hover:border-white/2 group-hover:bg-zinc-900/85" />
         <div
           aria-hidden="true"
           className={`relative z-10 size-[18px] text-accent-300 transition-[color,transform] duration-300 ease-out-expo group-hover:-translate-y-0.5 group-hover:scale-110 group-hover:text-white ${isGenerating ? 'animate-pulse text-accent-100' : ''}`}

@@ -104,7 +104,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   const BottomDock = useMemo(
     () => (
       <>
-        <div className="flex flex-col gap-2 px-6 border-r border-white/5 min-w-[240px]">
+        <div className="flex flex-col gap-2 px-6 border-r border-white/2 min-w-[240px]">
           <div className="flex justify-between text-[8px] font-black uppercase tracking-[0.2em] text-zinc-600">
             <span>Creative Freedom</span>
             <span>Faithful to Original</span>
@@ -176,7 +176,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
       className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-8 sm:pt-20 sm:pb-48 flex items-center justify-center"
     >
       <div
-        className="relative shadow-2xl transition-[background-color,border-color,box-shadow,opacity,transform] duration-500 ease-out-expo bg-zinc-900 border border-white/10 rounded-lg overflow-hidden group"
+        className="relative shadow-2xl transition-[background-color,border-color,box-shadow,opacity,transform] duration-500 ease-out-expo bg-zinc-900 border border-white/2 rounded-lg overflow-hidden group"
         style={{
           aspectRatio: ratioValue,
           width: 'min(86vw, 72vh)',
@@ -192,7 +192,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
               className="size-full object-contain opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-[filter,opacity] duration-1000"
             />
             <div className="absolute top-4 right-4">
-              <div className="px-3 py-1.5 rounded-lg bg-black/50 backdrop-blur-sm border border-white/10 flex items-center gap-2">
+              <div className="px-3 py-1.5 rounded-lg bg-black/50 backdrop-blur-sm border border-white/2 flex items-center gap-2">
                 <span className="text-[9px] font-black text-zinc-300 uppercase tracking-widest">
                   Remaster Active
                 </span>
@@ -213,7 +213,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             onDragOver={(e) => e.preventDefault()}
             onDrop={handleDrop}
             onClick={() => fileInputRef.current?.click()}
-            className="size-full border-2 border-dashed border-white/10 hover:border-accent-500/50 bg-white/[0.01] flex flex-col items-center justify-center gap-6 cursor-pointer transition-[background-color,border-color,opacity,transform] group appearance-none p-0 m-0"
+            className="size-full border-2 border-dashed border-white/2 hover:border-accent-500/2 bg-white/[0.01] flex flex-col items-center justify-center gap-6 cursor-pointer transition-[background-color,border-color,opacity,transform] group appearance-none p-0 m-0"
           >
             <input
               type="file"
@@ -223,7 +223,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
               className="hidden"
               accept="image/*"
             />
-            <div className="size-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <div className="size-16 rounded-full bg-zinc-900 border border-white/2 flex items-center justify-center group-hover:scale-110 transition-transform">
               <Upload size={24} className="text-zinc-600 group-hover:text-accent-400" />
             </div>
             <QuickStartText

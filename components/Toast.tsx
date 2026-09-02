@@ -22,9 +22,9 @@ const icons = {
 
 const borderColors = {
   error: 'border-red-500/50',
-  success: 'border-green-500/50',
-  info: 'border-accent-500/50',
-  warning: 'border-yellow-500/50',
+  success: 'border-green-500/2',
+  info: 'border-accent-500/2',
+  warning: 'border-yellow-500/2',
 };
 
 const progressColors = {

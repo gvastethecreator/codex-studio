@@ -255,7 +255,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         data-state={open ? 'open' : 'closed'}
         style={portal ? { ...style, ...portalStyle } : style}
         className={cn(
-          'origin-top-right rounded-xl border border-white/10 bg-zinc-950/96 shadow-[0_20px_60px_rgba(0,0,0,0.46)] outline-none',
+          'origin-top-right rounded-xl border border-white/2 bg-zinc-950/96 shadow-[0_20px_60px_rgba(0,0,0,0.46)] outline-none',
           className,
         )}
       >

@@ -469,13 +469,13 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
       data-user-style-editor
       className="absolute inset-0 z-50 flex items-center justify-center bg-black/76 p-2 text-white backdrop-blur-md sm:p-4"
     >
-      <div className="flex h-full max-h-[calc(100vh-4.5rem)] w-full max-w-[1180px] flex-col overflow-hidden rounded-[8px] border border-white/14 bg-zinc-950 shadow-[0_24px_80px_rgba(0,0,0,0.72)]">
-        <div className="flex min-h-14 shrink-0 items-center justify-between gap-3 border-b border-white/10 bg-zinc-950/98 px-4 sm:px-5">
+      <div className="flex h-full max-h-[calc(100vh-4.5rem)] w-full max-w-[1180px] flex-col overflow-hidden rounded-[8px] border border-white/2 bg-zinc-950 shadow-[0_24px_80px_rgba(0,0,0,0.72)]">
+        <div className="flex min-h-14 shrink-0 items-center justify-between gap-3 border-b border-white/2 bg-zinc-950/98 px-4 sm:px-5">
           <div className="min-w-0">
             <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
               <Sparkles size={13} />
               <span>{mode === 'edit' ? 'Edit Style' : 'Style Editor'}</span>
-              <span className="rounded-[5px] border border-white/12 bg-white/8 px-1.5 py-0.5 text-[8px] text-zinc-300">
+              <span className="rounded-[5px] border border-white/2 bg-white/8 px-1.5 py-0.5 text-[8px] text-zinc-300">
                 {sourceKind.replace(/_/g, ' ')}
               </span>
             </div>
@@ -486,7 +486,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="flex size-9 shrink-0 items-center justify-center rounded-[6px] border border-white/12 bg-white/7 text-zinc-300 transition-colors hover:bg-white/12 hover:text-white"
+            className="flex size-9 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/7 text-zinc-300 transition-colors hover:bg-white/12 hover:text-white"
             aria-label="Close style editor"
           >
             <X size={16} />
@@ -494,7 +494,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
         </div>
 
         <div className="grid min-h-0 flex-1 grid-cols-1 gap-3 overflow-hidden bg-zinc-950/95 p-3 lg:grid-cols-[minmax(0,1fr)_360px] lg:p-4">
-          <section className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-white/12 bg-zinc-900/88 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
+          <section className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-white/2 bg-zinc-900/88 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
             <div className="grid gap-3 sm:grid-cols-2">
               <label className="grid gap-1.5">
                 <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
@@ -503,7 +503,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 <input
                   value={draft.name}
                   onChange={(event) => updateDraft('name', event.target.value)}
-                  className="h-10 rounded-[6px] border border-white/14 bg-zinc-950 px-3 text-sm font-bold text-white outline-none transition-colors focus:border-accent-400/45"
+                  className="h-10 rounded-[6px] border border-white/2 bg-zinc-950 px-3 text-sm font-bold text-white outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
               <label className="grid gap-1.5">
@@ -513,7 +513,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 <input
                   value={draft.category}
                   onChange={(event) => updateDraft('category', event.target.value)}
-                  className="h-10 rounded-[6px] border border-white/14 bg-zinc-950 px-3 text-sm font-bold text-white outline-none transition-colors focus:border-accent-400/45"
+                  className="h-10 rounded-[6px] border border-white/2 bg-zinc-950 px-3 text-sm font-bold text-white outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
             </div>
@@ -526,14 +526,14 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 <input
                   value={tagsText}
                   onChange={(event) => setTagsText(event.target.value)}
-                  className="h-10 rounded-[6px] border border-white/14 bg-zinc-950 px-3 text-xs font-bold text-white outline-none transition-colors focus:border-accent-400/45"
+                  className="h-10 rounded-[6px] border border-white/2 bg-zinc-950 px-3 text-xs font-bold text-white outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
               <div className="grid gap-1.5">
                 <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
                   Tasks
                 </span>
-                <div className="flex min-h-10 flex-wrap items-center gap-1.5 rounded-[6px] border border-white/14 bg-zinc-950 p-1">
+                <div className="flex min-h-10 flex-wrap items-center gap-1.5 rounded-[6px] border border-white/2 bg-zinc-950 p-1">
                   {USER_STYLE_SUPPORTED_TASKS.map((task) => {
                     const active = draft.supportedTasks.includes(task);
                     return (
@@ -544,8 +544,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                         aria-pressed={active}
                         className={`flex h-7 items-center gap-1 rounded-[5px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                           active
-                            ? 'border-accent-400/25 bg-accent-500/15 text-accent-100'
-                            : 'border-white/8 bg-white/5 text-zinc-500 hover:text-white'
+                            ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
+                            : 'border-white/2 bg-white/5 text-zinc-500 hover:text-white'
                         }`}
                       >
                         {active && <Check size={10} />}
@@ -566,7 +566,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 value={draft.visualDna.creative_brief ?? ''}
                 onChange={(event) => updateVisualDna('creative_brief', event.target.value)}
                 rows={3}
-                className="resize-none rounded-[6px] border border-white/14 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/45"
+                className="resize-none rounded-[6px] border border-white/2 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/2"
               />
             </label>
 
@@ -580,7 +580,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     value={draft.visualDna[field.key] ?? ''}
                     onChange={(event) => updateVisualDna(field.key, event.target.value)}
                     rows={4}
-                    className="resize-none rounded-[6px] border border-white/14 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/45"
+                    className="resize-none rounded-[6px] border border-white/2 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/2"
                   />
                 </label>
               ))}
@@ -594,19 +594,19 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 value={avoidRulesText}
                 onChange={(event) => setAvoidRulesText(event.target.value)}
                 rows={3}
-                className="resize-none rounded-[6px] border border-white/14 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/45"
+                className="resize-none rounded-[6px] border border-white/2 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/2"
               />
             </label>
           </section>
 
-          <aside className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-white/12 bg-zinc-900/92 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
-            <div className="rounded-[8px] border border-white/10 bg-zinc-950/70 p-3">
+          <aside className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-white/2 bg-zinc-900/92 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
+            <div className="rounded-[8px] border border-white/2 bg-zinc-950/70 p-3">
               <div className="mb-3 flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
                   <Sparkles size={13} />
                   Source
                 </div>
-                <span className="rounded-[5px] border border-white/10 bg-white/5 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
+                <span className="rounded-[5px] border border-white/2 bg-white/5 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
                   {authoringMode === 'codex_assist' ? 'Codex' : 'Manual'}
                 </span>
               </div>
@@ -623,8 +623,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     aria-pressed={authoringMode === item.id}
                     className={`h-8 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                       authoringMode === item.id
-                        ? 'border-sky-300/25 bg-sky-500/15 text-sky-100'
-                        : 'border-white/8 bg-white/5 text-zinc-500 hover:text-white'
+                        ? 'border-sky-300/2 bg-sky-500/15 text-sky-100'
+                        : 'border-white/2 bg-white/5 text-zinc-500 hover:text-white'
                     }`}
                   >
                     {item.label}
@@ -638,10 +638,10 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     key={step.label}
                     className={`grid grid-cols-[72px_minmax(0,1fr)] items-center gap-2 rounded-[6px] border px-2 py-1.5 ${
                       step.state === 'complete'
-                        ? 'border-emerald-400/12 bg-emerald-500/8 text-emerald-100'
+                        ? 'border-emerald-400/2 bg-emerald-500/8 text-emerald-100'
                         : step.state === 'active'
-                          ? 'border-sky-400/12 bg-sky-500/8 text-sky-100'
-                          : 'border-white/8 bg-white/4 text-zinc-500'
+                          ? 'border-sky-400/2 bg-sky-500/8 text-sky-100'
+                          : 'border-white/2 bg-white/4 text-zinc-500'
                     }`}
                   >
                     <span className="text-[8px] font-black uppercase tracking-widest">
@@ -653,13 +653,13 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
               </div>
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-white/10 bg-zinc-950/70 p-3">
+            <div className="mt-3 rounded-[8px] border border-white/2 bg-zinc-950/70 p-3">
               <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
                 <Photo size={13} />
                 References
               </div>
 
-              <label className="flex min-h-24 cursor-pointer flex-col items-center justify-center rounded-[7px] border border-dashed border-white/14 bg-white/[0.03] px-3 py-4 text-center transition-colors hover:border-sky-300/30 hover:bg-sky-500/8">
+              <label className="flex min-h-24 cursor-pointer flex-col items-center justify-center rounded-[7px] border border-dashed border-white/2 bg-white/[0.03] px-3 py-4 text-center transition-colors hover:border-sky-300/2 hover:bg-sky-500/8">
                 <input
                   type="file"
                   accept="image/*"
@@ -686,8 +686,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                       key={image.id}
                       className={`rounded-[7px] border p-2 ${
                         image.included
-                          ? 'border-white/12 bg-white/[0.045]'
-                          : 'border-white/6 bg-white/[0.02] opacity-60'
+                          ? 'border-white/2 bg-white/[0.045]'
+                          : 'border-white/2 bg-white/[0.02] opacity-60'
                       }`}
                     >
                       <div className="flex items-start gap-2">
@@ -712,8 +712,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                               aria-pressed={image.included}
                               className={`h-6 rounded-[5px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                                 image.included
-                                  ? 'border-emerald-400/20 bg-emerald-500/12 text-emerald-100'
-                                  : 'border-white/8 bg-white/5 text-zinc-500'
+                                  ? 'border-emerald-400/2 bg-emerald-500/12 text-emerald-100'
+                                  : 'border-white/2 bg-white/5 text-zinc-500'
                               }`}
                             >
                               {image.included ? 'On' : 'Off'}
@@ -728,7 +728,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                                       : 'avoid_reference',
                                 })
                               }
-                              className="h-6 rounded-[5px] border border-white/8 bg-white/5 px-2 text-[8px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:text-white"
+                              className="h-6 rounded-[5px] border border-white/2 bg-white/5 px-2 text-[8px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:text-white"
                             >
                               {image.role === 'avoid_reference' ? 'Avoid' : 'Style'}
                             </button>
@@ -752,7 +752,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                             updateReferenceImage(image.id, { notes: event.target.value })
                           }
                           placeholder={`Notes for ${image.name}`}
-                          className="h-8 w-full rounded-[6px] border border-white/10 bg-zinc-950 px-2 text-[10px] font-medium text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-sky-300/35"
+                          className="h-8 w-full rounded-[6px] border border-white/2 bg-zinc-950 px-2 text-[10px] font-medium text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-sky-300/2"
                         />
                       </label>
                     </div>
@@ -761,7 +761,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
               )}
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-white/10 bg-zinc-950/70 p-3">
+            <div className="mt-3 rounded-[8px] border border-white/2 bg-zinc-950/70 p-3">
               <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
                 <Check size={13} />
                 Apply
@@ -777,8 +777,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                       aria-pressed={enabled}
                       className={`flex h-8 items-center justify-between gap-2 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                         enabled
-                          ? 'border-emerald-400/14 bg-emerald-500/8 text-emerald-100'
-                          : 'border-white/8 bg-white/4 text-zinc-600'
+                          ? 'border-emerald-400/2 bg-emerald-500/8 text-emerald-100'
+                          : 'border-white/2 bg-white/4 text-zinc-600'
                       }`}
                     >
                       <span className="truncate">{field.label}</span>
@@ -789,7 +789,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
               </div>
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-white/10 bg-zinc-950/70 p-3">
+            <div className="mt-3 rounded-[8px] border border-white/2 bg-zinc-950/70 p-3">
               <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
                 <Wand2 size={13} />
                 Assist
@@ -803,8 +803,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     aria-pressed={assistAction === action.id}
                     className={`h-8 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                       assistAction === action.id
-                        ? 'border-accent-400/25 bg-accent-500/15 text-accent-100'
-                        : 'border-white/8 bg-white/5 text-zinc-500 hover:text-white'
+                        ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
+                        : 'border-white/2 bg-white/5 text-zinc-500 hover:text-white'
                     }`}
                   >
                     {action.label}
@@ -816,13 +816,13 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 value={assistPrompt}
                 onChange={(event) => setAssistPrompt(event.target.value)}
                 rows={8}
-                className="mt-3 w-full resize-none rounded-[6px] border border-white/14 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/45"
+                className="mt-3 w-full resize-none rounded-[6px] border border-white/2 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/2"
               />
               <button
                 type="button"
                 onClick={handleAssist}
                 disabled={isAssisting}
-                className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/25 disabled:opacity-45"
+                className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/25 disabled:opacity-45"
               >
                 <Sparkles size={14} />
                 {isAssisting ? 'Working' : 'Assist'}
@@ -834,7 +834,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 {assistWarnings.map((warning) => (
                   <div
                     key={warning}
-                    className="rounded-[6px] border border-amber-400/12 bg-amber-500/8 px-3 py-2 text-[10px] font-medium leading-relaxed text-amber-100/85"
+                    className="rounded-[6px] border border-amber-400/2 bg-amber-500/8 px-3 py-2 text-[10px] font-medium leading-relaxed text-amber-100/85"
                   >
                     {warning}
                   </div>
@@ -850,7 +850,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
           </aside>
         </div>
 
-        <div className="flex min-h-14 shrink-0 flex-wrap items-center justify-between gap-2 border-t border-white/10 bg-zinc-950/98 px-4 py-2 sm:px-5">
+        <div className="flex min-h-14 shrink-0 flex-wrap items-center justify-between gap-2 border-t border-white/2 bg-zinc-950/98 px-4 py-2 sm:px-5">
           <div className="flex items-center gap-2">
             {mode === 'edit' && (
               <>
@@ -858,7 +858,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                   type="button"
                   onClick={handleDuplicate}
                   disabled={isSaving}
-                  className="flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-45"
+                  className="flex h-9 items-center gap-2 rounded-[6px] border border-white/2 bg-white/5 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-45"
                 >
                   <Copy size={14} />
                   Duplicate
@@ -880,7 +880,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             type="button"
             onClick={handleSave}
             disabled={!canSave}
-            className="flex h-10 items-center gap-2 rounded-[6px] border border-accent-400/20 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/8 disabled:bg-white/5 disabled:text-zinc-600"
+            className="flex h-10 items-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
           >
             <Save size={15} />
             {isSaving ? 'Saving' : 'Save Style'}

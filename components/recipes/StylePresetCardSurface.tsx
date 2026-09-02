@@ -130,7 +130,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
         aria-live="polite"
         aria-atomic="true"
         data-style-active-image-label={activeCardImage.label}
-        className="pointer-events-none absolute left-1/2 top-2 z-20 -translate-x-1/2 rounded-[6px] border border-white/10 bg-zinc-950/65 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-zinc-100 shadow-lg backdrop-blur-md"
+        className="pointer-events-none absolute left-1/2 top-2 z-20 -translate-x-1/2 rounded-[6px] border border-white/2 bg-zinc-950/65 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-zinc-100 shadow-lg backdrop-blur-md"
       >
         {activeCardImage.label}
       </div>
@@ -138,11 +138,11 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
 
     const staleBadge =
       activeCardImage.kind === 'stale-default' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-amber-400/30 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
+        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-amber-400/2 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
           Stale
         </div>
       ) : activeCardImage.kind === 'preview' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
+        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-sky-400/2 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
           Preview
         </div>
       ) : null;
@@ -177,7 +177,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           ) : null}
           <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
-            <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
+            <div className="flex size-10 items-center justify-center rounded-full border border-white/2 bg-zinc-950/55 text-white backdrop-blur-md">
               {active ? <Check size={18} /> : <Plus size={18} />}
             </div>
           </div>
@@ -195,7 +195,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(-1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
+              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/2 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
               aria-label={`Previous image for ${presetDisplayName}`}
             >
               <ChevronLeft size={14} />
@@ -207,7 +207,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
+              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/2 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
               aria-label={`Next image for ${presetDisplayName}`}
             >
               <ChevronRight size={14} />
@@ -225,7 +225,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
             }}
             onKeyDown={handleApplyFromKeyboard}
             disabled={selectionDisabled}
-            className="rounded-[6px] border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600 disabled:cursor-not-allowed disabled:opacity-45"
+            className="rounded-[6px] border border-white/2 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600 disabled:cursor-not-allowed disabled:opacity-45"
             title={
               selectionDisabled
                 ? 'Maximum 5 styles selected'
@@ -250,7 +250,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       aria-pressed={active}
     >
       <div
-        className={`flex size-14 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
+        className={`flex size-14 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
       >
         <Palette size={24} />
       </div>
@@ -387,7 +387,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         className={`group relative aspect-[3/4] overflow-hidden rounded-[6px] text-left transition-[border-color,background-color,box-shadow,transform] duration-200 ease-out hover:-translate-y-0.5 ${
           active
             ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
-            : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
+            : 'border border-white/2 bg-zinc-950 hover:border-white/2 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
         }`}
         style={
           {
@@ -418,7 +418,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
               e.stopPropagation();
               onToggleFavorite(preset.id);
             }}
-            className={`rounded-[6px] border border-white/10 p-1.5 backdrop-blur-md transition-[background-color,color,border-color,transform] duration-150 ${favorite ? 'bg-zinc-950/60 text-rose-500' : 'bg-zinc-950/35 text-zinc-500 hover:bg-zinc-950/60 hover:text-rose-400'}`}
+            className={`rounded-[6px] border border-white/2 p-1.5 backdrop-blur-md transition-[background-color,color,border-color,transform] duration-150 ${favorite ? 'bg-zinc-950/60 text-rose-500' : 'bg-zinc-950/35 text-zinc-500 hover:bg-zinc-950/60 hover:text-rose-400'}`}
             title={favorite ? 'Unpin' : 'Pin to top'}
           >
             <Heart
@@ -430,7 +430,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         </div>
 
         <div className="absolute inset-x-0 bottom-0 z-20">
-          <div className="relative w-full rounded-t-[6px] rounded-b-none border-t border-white/10 bg-zinc-950/58 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md transition-transform duration-200 ease-out group-hover:-translate-y-1 group-focus-within:-translate-y-1">
+          <div className="relative w-full rounded-t-[6px] rounded-b-none border-t border-white/2 bg-zinc-950/58 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md transition-transform duration-200 ease-out group-hover:-translate-y-1 group-focus-within:-translate-y-1">
             {sourceProvenance ? (
               <div
                 data-style-source-provenance
@@ -440,14 +440,14 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                 className="mb-1 flex min-w-0 items-center gap-1 text-[8px] font-black uppercase tracking-widest text-zinc-400"
                 title={`${sourceProvenance.sourcePackName} / ${sourceProvenance.sourceCategory}`}
               >
-                <span className="shrink-0 rounded-[4px] border border-white/10 bg-white/[0.045] px-1.5 py-0.5 text-zinc-300">
+                <span className="shrink-0 rounded-[4px] border border-white/2 bg-white/[0.045] px-1.5 py-0.5 text-zinc-300">
                   {sourceProvenance.sourcePackName}
                 </span>
-                <span className="min-w-0 truncate rounded-[4px] border border-white/8 bg-black/18 px-1.5 py-0.5 text-zinc-500">
+                <span className="min-w-0 truncate rounded-[4px] border border-white/2 bg-black/18 px-1.5 py-0.5 text-zinc-500">
                   {sourceProvenance.sourceCategory}
                 </span>
                 {sourceProvenance.collectionRole !== 'primary' ? (
-                  <span className="shrink-0 rounded-[4px] border border-white/8 px-1 py-0.5 text-zinc-500">
+                  <span className="shrink-0 rounded-[4px] border border-white/2 px-1 py-0.5 text-zinc-500">
                     {sourceProvenance.collectionRole.replace('_', ' ')}
                   </span>
                 ) : null}

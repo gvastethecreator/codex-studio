@@ -33,31 +33,31 @@ interface JobInspectorDetailProps {
 function toneForStatus(status: StudioJob['status']) {
   switch (status) {
     case 'completed':
-      return 'border-emerald-500/20 bg-emerald-500/10 text-emerald-200';
+      return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
     case 'failed':
     case 'cancelled':
-      return 'border-rose-500/20 bg-rose-500/10 text-rose-200';
+      return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
     case 'needs_review':
-      return 'border-amber-500/20 bg-amber-500/10 text-amber-100';
+      return 'border-amber-500/2 bg-amber-500/10 text-amber-100';
     default:
-      return 'border-accent-500/20 bg-accent-500/10 text-accent-200';
+      return 'border-accent-500/2 bg-accent-500/10 text-accent-200';
   }
 }
 
 function toneForTimeline(item: JobInspectorTimelineItem) {
   if (item.sourceType === 'event') {
-    return 'border-white/10 bg-white/[0.04] text-zinc-100';
+    return 'border-white/2 bg-white/[0.04] text-zinc-100';
   }
 
   switch (item.tone) {
     case 'reasoning':
-      return 'border-fuchsia-500/20 bg-fuchsia-500/8 text-fuchsia-100';
+      return 'border-fuchsia-500/2 bg-fuchsia-500/8 text-fuchsia-100';
     case 'tool':
-      return 'border-cyan-500/20 bg-cyan-500/8 text-cyan-100';
+      return 'border-cyan-500/2 bg-cyan-500/8 text-cyan-100';
     case 'message':
-      return 'border-emerald-500/20 bg-emerald-500/8 text-emerald-100';
+      return 'border-emerald-500/2 bg-emerald-500/8 text-emerald-100';
     default:
-      return 'border-white/10 bg-white/[0.04] text-zinc-100';
+      return 'border-white/2 bg-white/[0.04] text-zinc-100';
   }
 }
 
@@ -118,7 +118,7 @@ function JobStatusBanner({
         : 'This job was cancelled before it could complete.';
 
     return (
-      <section className="rounded-[22px] border border-rose-500/25 bg-rose-500/8 p-5">
+      <section className="rounded-[22px] border border-rose-500/2 bg-rose-500/8 p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex items-start gap-3">
             <AlertCircle size={18} className="mt-0.5 shrink-0 text-rose-400" />
@@ -138,7 +138,7 @@ function JobStatusBanner({
     const transcriptPath = detail.turn?.transcriptPath;
 
     return (
-      <section className="rounded-[22px] border border-amber-500/25 bg-amber-500/8 p-5">
+      <section className="rounded-[22px] border border-amber-500/2 bg-amber-500/8 p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex items-start gap-3">
             <Eye size={18} className="mt-0.5 shrink-0 text-amber-400" />
@@ -153,14 +153,14 @@ function JobStatusBanner({
               </div>
 
               {hasReadableAssistantReply ? (
-                <div className="rounded-2xl border border-amber-500/10 bg-black/20 px-3 py-2.5 text-[12px] leading-5 text-amber-100/70">
+                <div className="rounded-2xl border border-amber-500/2 bg-black/20 px-3 py-2.5 text-[12px] leading-5 text-amber-100/70">
                   The final assistant response is already captured in the timeline below, so we do
                   not repeat it here.
                 </div>
               ) : null}
 
               {transcriptPath ? (
-                <div className="rounded-2xl border border-amber-500/10 bg-black/20 px-3 py-2.5">
+                <div className="rounded-2xl border border-amber-500/2 bg-black/20 px-3 py-2.5">
                   <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-400/50">
                     Transcript path
                   </p>
@@ -227,7 +227,7 @@ function RenderTextBlocks({ blocks }: { blocks: JobInspectorTextBlock[] }) {
         block.kind === 'code' ? (
           <pre
             key={`${block.kind}-${block.text}`}
-            className="custom-scrollbar overflow-x-auto rounded-2xl border border-white/8 bg-black/30 p-3 text-[11px] leading-6 text-zinc-300"
+            className="custom-scrollbar overflow-x-auto rounded-2xl border border-white/2 bg-black/30 p-3 text-[11px] leading-6 text-zinc-300"
           >
             {block.text}
           </pre>
@@ -254,12 +254,12 @@ function ArtifactTile({
   const tile = (
     <div
       className={cn(
-        'min-w-0 overflow-hidden rounded-2xl border border-white/8 bg-black/30 transition-colors hover:border-white/15 hover:bg-black/40',
+        'min-w-0 overflow-hidden rounded-2xl border border-white/2 bg-black/30 transition-colors hover:border-white/2 hover:bg-black/40',
         className,
       )}
     >
       {artifact.previewSrc ? (
-        <div className="aspect-[4/3] overflow-hidden border-b border-white/8 bg-black/50">
+        <div className="aspect-[4/3] overflow-hidden border-b border-white/2 bg-black/50">
           <img
             src={artifact.previewSrc}
             alt={artifact.label}
@@ -319,7 +319,7 @@ function OutputPreviewStrip({
           <ImageIcon size={14} className="text-accent-300" />
           <span>{title}</span>
         </div>
-        <div className="rounded-2xl border border-dashed border-white/8 bg-black/20 px-4 py-5 text-sm text-zinc-500">
+        <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 px-4 py-5 text-sm text-zinc-500">
           {emptyMessage}
         </div>
       </div>
@@ -338,7 +338,7 @@ function OutputPreviewStrip({
         ))}
       </div>
       {artifacts.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-white/8 bg-black/20 px-4 py-5 text-sm text-zinc-500">
+        <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 px-4 py-5 text-sm text-zinc-500">
           {emptyMessage}
         </div>
       ) : null}
@@ -355,7 +355,7 @@ function ArtifactGallery({
 }) {
   if (artifacts.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-white/8 bg-black/20 px-4 py-5 text-sm text-zinc-500">
+      <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 px-4 py-5 text-sm text-zinc-500">
         {emptyMessage}
       </div>
     );
@@ -378,7 +378,7 @@ function FactGrid({ facts }: { facts: JobInspectorTimelineItem['facts'] }) {
       {facts.map((fact) => (
         <div
           key={`${fact.label}-${fact.value}`}
-          className="min-w-0 rounded-2xl border border-white/8 bg-black/25 px-3 py-2.5"
+          className="min-w-0 rounded-2xl border border-white/2 bg-black/25 px-3 py-2.5"
         >
           <dt className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
             {fact.label}
@@ -400,7 +400,7 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
   return (
     <SectionCard title="Runtime summary" eyebrow="Metrics" icon={<Clock3 size={16} />}>
       <div className="grid gap-2 sm:grid-cols-2">
-        <div className="rounded-2xl border border-white/8 bg-black/25 p-3.5">
+        <div className="rounded-2xl border border-white/2 bg-black/25 p-3.5">
           <div className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
             Total runtime
           </div>
@@ -408,7 +408,7 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
             {formatDuration(findTiming(metrics.timings, 'total'))}
           </div>
         </div>
-        <div className="rounded-2xl border border-white/8 bg-black/25 p-3.5">
+        <div className="rounded-2xl border border-white/2 bg-black/25 p-3.5">
           <div className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
             Tokens spent
           </div>
@@ -428,7 +428,7 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
           ['Provider turn', formatDuration(providerMs)],
           ['Asset import', formatDuration(assetImportMs)],
         ].map(([label, value]) => (
-          <div key={label} className="rounded-2xl border border-white/8 bg-black/25 px-3 py-2.5">
+          <div key={label} className="rounded-2xl border border-white/2 bg-black/25 px-3 py-2.5">
             <div className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
               {label}
             </div>
@@ -451,7 +451,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
     <article
       className={cn(
         'rounded-[20px] border p-3 transition-colors',
-        isExpanded ? 'border-white/12 bg-white/[0.055]' : toneForTimeline(item),
+        isExpanded ? 'border-white/2 bg-white/[0.055]' : toneForTimeline(item),
       )}
     >
       <button
@@ -460,7 +460,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
         aria-expanded={isExpanded}
         className="flex w-full items-start gap-3 text-left cursor-pointer"
       >
-        <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-white/8 bg-black/25 text-zinc-100">
+        <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-white/2 bg-black/25 text-zinc-100">
           <TimelineIcon item={item} />
         </div>
 
@@ -469,10 +469,10 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
             <h4 className="text-[14px] font-semibold leading-5 text-white [overflow-wrap:anywhere]">
               {item.title}
             </h4>
-            <span className="rounded-full border border-white/10 bg-black/25 px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-400">
+            <span className="rounded-full border border-white/2 bg-black/25 px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-400">
               {item.sourceType === 'transcript' ? 'Transcript' : 'Event'}
             </span>
-            <span className="rounded-full border border-white/10 bg-black/25 px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-500">
+            <span className="rounded-full border border-white/2 bg-black/25 px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-500">
               {formatTimestamp(item.timestamp)}
             </span>
           </div>
@@ -494,13 +494,13 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
           </div>
         </div>
 
-        <div className="mt-1 shrink-0 rounded-full border border-white/10 bg-black/20 px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-400 transition-colors hover:border-white/15 hover:text-white">
+        <div className="mt-1 shrink-0 rounded-full border border-white/2 bg-black/20 px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-400 transition-colors hover:border-white/2 hover:text-white">
           {isExpanded ? 'Hide' : 'Open'}
         </div>
       </button>
 
       {isExpanded ? (
-        <div className="mt-3 space-y-3 border-t border-white/8 pt-3">
+        <div className="mt-3 space-y-3 border-t border-white/2 pt-3">
           <RenderTextBlocks blocks={item.blocks} />
           <FactGrid facts={item.facts} />
 
@@ -517,11 +517,11 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
           ) : null}
 
           {item.rawJson && item.tone !== 'reasoning' && item.tone !== 'message' ? (
-            <details className="rounded-2xl border border-white/8 bg-black/25 p-3">
+            <details className="rounded-2xl border border-white/2 bg-black/25 p-3">
               <summary className="cursor-pointer text-[10px] font-black uppercase tracking-[0.18em] text-zinc-400">
                 {item.tone === 'tool' ? 'Tool call payload' : 'Event payload'}
               </summary>
-              <pre className="custom-scrollbar mt-3 max-h-72 overflow-auto rounded-2xl border border-white/8 bg-black/40 p-3 text-[11px] leading-6 text-zinc-300">
+              <pre className="custom-scrollbar mt-3 max-h-72 overflow-auto rounded-2xl border border-white/2 bg-black/40 p-3 text-[11px] leading-6 text-zinc-300">
                 {item.rawJson}
               </pre>
             </details>
@@ -589,8 +589,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
   ] as const;
 
   return (
-    <section className="overflow-hidden rounded-[28px] border border-white/10 bg-zinc-950 shadow-[0_28px_90px_rgba(0,0,0,0.45)]">
-      <div className="border-b border-white/8 px-5 py-4 sm:px-6">
+    <section className="overflow-hidden rounded-[28px] border border-white/2 bg-zinc-950 shadow-[0_28px_90px_rgba(0,0,0,0.45)]">
+      <div className="border-b border-white/2 px-5 py-4 sm:px-6">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="min-w-0">
             <div className="mb-3 flex flex-wrap items-center gap-2">
@@ -602,10 +602,10 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               >
                 {detail.job.status}
               </span>
-              <span className="rounded-full border border-white/10 bg-black/25 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-300">
+              <span className="rounded-full border border-white/2 bg-black/25 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-300">
                 {detail.job.kind.replace(/_/g, ' ')}
               </span>
-              <span className="rounded-full border border-white/10 bg-black/25 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+              <span className="rounded-full border border-white/2 bg-black/25 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
                 {detail.job.providerId ?? 'provider unknown'}
               </span>
             </div>
@@ -640,7 +640,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               <button
                 type="button"
                 onClick={() => onRetryJob(detail.job.id)}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-accent-500/20 bg-black/25 px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-accent-100 transition-colors hover:border-accent-400/35 hover:bg-black/35 hover:text-white cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-accent-500/2 bg-black/25 px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-accent-100 transition-colors hover:border-accent-400/2 hover:bg-black/35 hover:text-white cursor-pointer"
               >
                 <RotateCcw size={14} />
                 <span>Retry job</span>
@@ -649,7 +649,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             <button
               type="button"
               onClick={onClearSelectedJob}
-              className="shrink-0 rounded-2xl border border-white/10 bg-black/25 px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white cursor-pointer"
+              className="shrink-0 rounded-2xl border border-white/2 bg-black/25 px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-white/2 hover:bg-white/10 hover:text-white cursor-pointer"
             >
               Back to activity
             </button>
@@ -661,8 +661,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
         <div className="grid gap-4 xl:grid-cols-[minmax(0,1.7fr)_minmax(300px,0.9fr)]">
           <JobStatusBanner detail={detail} hasReadableAssistantReply={hasReadableAssistantReply} />
 
-          <section className="rounded-2xl border border-white/10 bg-zinc-900/80 overflow-hidden">
-            <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
+          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
+            <div className="flex items-center justify-between border-b border-white/2 px-4 py-3">
               <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
                 <ImageIcon size={14} className="text-emerald-400" />
                 <span>Returned image</span>
@@ -695,7 +695,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               )}
             </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/8 px-4 py-3">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/2 px-4 py-3">
               <div className="min-w-0">
                 <p className="truncate text-xs font-semibold uppercase tracking-wide text-zinc-200">
                   {outputName}
@@ -709,7 +709,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                   href={primaryOutput.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-300 transition-colors hover:border-white/30 hover:text-white"
+                  className="rounded-lg border border-white/2 bg-white/5 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-300 transition-colors hover:border-white/2 hover:text-white"
                 >
                   Open image
                 </a>
@@ -717,8 +717,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             </div>
           </section>
 
-          <section className="rounded-2xl border border-white/10 bg-zinc-900/80 overflow-hidden">
-            <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
+            <div className="flex items-center gap-2 border-b border-white/2 px-4 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
               <Layers3 size={14} className="text-indigo-300" />
               <span>Reference context</span>
             </div>
@@ -730,18 +730,18 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                   alt={primaryReference.label}
                   width={512}
                   height={512}
-                  className="h-[214px] w-full rounded-xl border border-white/10 object-cover"
+                  className="h-[214px] w-full rounded-xl border border-white/2 object-cover"
                   loading="lazy"
                   decoding="async"
                 />
               ) : (
-                <div className="flex h-[214px] items-center justify-center rounded-xl border border-dashed border-white/10 text-sm text-zinc-500">
+                <div className="flex h-[214px] items-center justify-center rounded-xl border border-dashed border-white/2 text-sm text-zinc-500">
                   No reference image.
                 </div>
               )}
             </div>
 
-            <div className="border-t border-white/8 px-4 py-3 space-y-2">
+            <div className="border-t border-white/2 px-4 py-3 space-y-2">
               <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-zinc-300">
                 {primaryReference?.label ?? 'Reference unavailable'}
               </p>
@@ -780,7 +780,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                           rel="noreferrer"
                           className="block size-16 shrink-0"
                         >
-                          <div className="size-16 overflow-hidden rounded-lg border border-white/10 bg-black/30">
+                          <div className="size-16 overflow-hidden rounded-lg border border-white/2 bg-black/30">
                             {preview ? (
                               <img
                                 src={preview}
@@ -807,8 +807,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </section>
         </div>
 
-        <section className="rounded-2xl border border-white/10 bg-zinc-900/80 overflow-hidden">
-          <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
+        <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
+          <div className="flex items-center justify-between border-b border-white/2 px-4 py-3">
             <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
               <FileText size={14} className="text-violet-300" />
               <span>Prompt used</span>
@@ -826,11 +826,11 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
         </section>
 
         <div className="grid gap-4 xl:grid-cols-3">
-          <section className="rounded-2xl border border-white/10 bg-zinc-900/80 p-4">
+          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4">
             <TaskMetricSummary metrics={detail.metrics} />
           </section>
 
-          <section className="rounded-2xl border border-white/10 bg-zinc-900/80 p-4 space-y-3">
+          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4 space-y-3">
             <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
               <BrainCircuit size={14} className="text-emerald-300" />
               <span>Execution facts</span>
@@ -849,7 +849,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             </dl>
           </section>
 
-          <section className="rounded-2xl border border-white/10 bg-zinc-900/80 p-4 space-y-3">
+          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4 space-y-3">
             <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
               <Layers3 size={14} className="text-amber-300" />
               <span>Job snapshot</span>
@@ -869,7 +869,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </section>
         </div>
 
-        <details className="rounded-2xl border border-white/10 bg-zinc-900/80 p-4">
+        <details className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4">
           <summary className="cursor-pointer text-[11px] font-black uppercase tracking-[0.18em] text-zinc-300">
             Activity timeline ({model.timeline.length})
           </summary>
@@ -877,7 +877,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             {model.timeline.length > 0 ? (
               model.timeline.map((item) => <TimelineItemCard key={item.id} item={item} />)
             ) : (
-              <div className="rounded-2xl border border-dashed border-white/8 bg-black/20 px-4 py-6 text-sm text-zinc-500">
+              <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 px-4 py-6 text-sm text-zinc-500">
                 No transcript or event history was recorded for this job.
               </div>
             )}

@@ -119,7 +119,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             fallback={
               <LazySurfaceFallback
                 label="Loading activity"
-                className="fixed inset-y-0 left-0 z-50 grid w-96 max-w-full place-items-center border-r border-white/10 bg-black/80 text-zinc-400"
+                className="fixed inset-y-0 left-0 z-50 grid w-96 max-w-full place-items-center border-r border-white/2 bg-black/80 text-zinc-400"
               />
             }
           >

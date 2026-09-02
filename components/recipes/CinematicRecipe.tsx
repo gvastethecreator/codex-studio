@@ -87,8 +87,8 @@ const ShotTypeDropdown: React.FC<{
         onClick={() => setIsOpen((open) => !open)}
         className={`flex min-h-7 max-w-[120px] items-center gap-1.5 rounded border px-2 py-1 text-center text-[9px] font-bold uppercase tracking-wider transition-[background-color,border-color,color,transform] ${
           isOpen
-            ? 'border-rose-400/55 bg-rose-500/14 text-white'
-            : 'border-white/10 bg-black/50 text-white/70 hover:bg-white/10 hover:text-white'
+            ? 'border-rose-400/2 bg-rose-500/14 text-white'
+            : 'border-white/2 bg-black/50 text-white/70 hover:bg-white/10 hover:text-white'
         }`}
         aria-label={`${sceneLabel} shot type: ${value}`}
         aria-haspopup="listbox"
@@ -220,7 +220,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest pl-1">
             Layout
           </span>
-          <div className="flex items-center gap-2 p-1 bg-white/5 rounded-xl border border-white/5">
+          <div className="flex items-center gap-2 p-1 bg-white/5 rounded-xl border border-white/2">
             {FRAME_COUNTS.map((count) => (
               <button
                 type="button"
@@ -318,7 +318,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
       className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-6 sm:pt-20 sm:pb-48 flex items-center justify-center"
     >
       <div
-        className="relative overflow-hidden rounded-lg border border-white/10 bg-zinc-900 shadow-2xl transition-[background-color,border-color,box-shadow,transform] duration-500 ease-out-expo group"
+        className="relative overflow-hidden rounded-lg border border-white/2 bg-zinc-900 shadow-2xl transition-[background-color,border-color,box-shadow,transform] duration-500 ease-out-expo group"
         style={{
           aspectRatio: ratioValue,
           width: 'min(90vw, 74vh)',
@@ -344,7 +344,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           {Array.from({ length: params.frames }).map((_, i) => (
             <div
               key={i}
-              className="relative bg-white/[0.02] backdrop-blur-[1px] flex flex-col items-center justify-center border border-white/5 group/cell pointer-events-auto"
+              className="relative bg-white/[0.02] backdrop-blur-[1px] flex flex-col items-center justify-center border border-white/2 group/cell pointer-events-auto"
             >
               <span className="text-[9px] font-black text-white/30 group-hover/cell:text-white/60 uppercase tracking-widest transition-colors mb-2">
                 {i === 0 ? 'START' : i === params.frames - 1 ? 'END' : `SCENE ${i + 1}`}
@@ -381,7 +381,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               className="hidden"
               accept="image/*"
             />
-            <div className="mb-6 flex size-20 items-center justify-center rounded-full border border-white/10 bg-zinc-900 shadow-2xl transition-[border-color,transform] group-hover:scale-110 group-hover:border-rose-500/50">
+            <div className="mb-6 flex size-20 items-center justify-center rounded-full border border-white/2 bg-zinc-900 shadow-2xl transition-[border-color,transform] group-hover:scale-110 group-hover:border-rose-500/2">
               <Upload
                 size={28}
                 className="text-zinc-600 group-hover:text-rose-400 transition-colors"
@@ -402,7 +402,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
             type="button"
             aria-label="Remove cinematic reference"
             onClick={() => updateConfig('attachments', [])}
-            className="pointer-events-auto absolute right-4 top-4 z-20 rounded-lg border border-white/10 bg-black/60 p-2 text-white transition-[background-color,color] hover:bg-red-500 hover:text-white"
+            className="pointer-events-auto absolute right-4 top-4 z-20 rounded-lg border border-white/2 bg-black/60 p-2 text-white transition-[background-color,color] hover:bg-red-500 hover:text-white"
           >
             <X size={14} />
           </button>

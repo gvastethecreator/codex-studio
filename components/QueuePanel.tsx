@@ -113,7 +113,7 @@ function resolveQueueRecipeTone(recipeId: string | null | undefined, fallbackTas
 
   return {
     label: formatQueueTaskLabel(fallbackTask),
-    toneClassName: 'border-white/10 bg-white/5 text-white/45',
+    toneClassName: 'border-white/2 bg-white/5 text-white/45',
     dotClassName: 'bg-white/35',
   };
 }
@@ -151,8 +151,8 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     }, [hasLiveDurations]);
 
     return (
-      <div className="flex h-full w-full flex-col border border-white/10 bg-zinc-950 backdrop-blur-xl sm:w-[304px] sm:border-y-0 sm:border-r-0 sm:border-l sm:bg-black/45">
-        <div className="flex items-center justify-between border-b border-white/10 bg-white/5 px-2.5 py-2">
+      <div className="flex h-full w-full flex-col border border-white/2 bg-zinc-950 backdrop-blur-xl sm:w-[304px] sm:border-y-0 sm:border-r-0 sm:border-l sm:bg-black/45">
+        <div className="flex items-center justify-between border-b border-white/2 bg-white/5 px-2.5 py-2">
           <div className="flex items-center gap-1.5">
             <div className="rounded-md bg-accent-500/20 p-1.5 text-accent-400">
               <Layers size={16} />
@@ -177,7 +177,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
           ) : null}
         </div>
 
-        <div className="grid grid-cols-4 gap-px border-b border-white/10 bg-white/10">
+        <div className="grid grid-cols-4 gap-px border-b border-white/2 bg-white/10">
           <StatItem label="Wait" value={summary.queued} color="text-white/40" />
           <StatItem label="Active" value={summary.running} color="text-accent-400" />
           <StatItem label="Done" value={summary.completed} color="text-emerald-400" />
@@ -185,7 +185,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
         </div>
 
         <div className="custom-scrollbar flex-1 space-y-1 overflow-y-auto p-1">
-          <section className="rounded-lg border border-white/10 bg-white/5 p-1.5">
+          <section className="rounded-lg border border-white/2 bg-white/5 p-1.5">
             <div className="mb-1 flex items-center justify-between px-1">
               <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
                 Recent Results
@@ -203,8 +203,8 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                       className={cn(
                         'group relative rounded border p-0.5 transition-colors cursor-pointer',
                         selectedJobId && result.jobId === selectedJobId
-                          ? 'border-accent-500/30 bg-accent-500/10'
-                          : 'border-white/5 bg-black/20 hover:border-white/20',
+                          ? 'border-accent-500/2 bg-accent-500/10'
+                          : 'border-white/2 bg-black/20 hover:border-white/2',
                       )}
                       title={result.prompt || 'Generated result'}
                     >
@@ -225,13 +225,13 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 </div>
               </div>
             ) : (
-              <div className="rounded-lg border border-dashed border-white/5 bg-black/20 p-3 text-[10px] text-zinc-600">
+              <div className="rounded-lg border border-dashed border-white/2 bg-black/20 p-3 text-[10px] text-zinc-600">
                 Completed images for the active workspace will appear here.
               </div>
             )}
           </section>
 
-          <section className="rounded-lg border border-white/10 bg-white/5 p-1.5">
+          <section className="rounded-lg border border-white/2 bg-white/5 p-1.5">
             <div className="mb-2 flex items-center justify-between px-1 py-1">
               <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
                 Backend Jobs
@@ -316,7 +316,7 @@ const RecentResultViewer: React.FC<{
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col bg-black/92 backdrop-blur-md">
-      <div className="flex h-14 shrink-0 items-center justify-between border-b border-white/10 px-3">
+      <div className="flex h-14 shrink-0 items-center justify-between border-b border-white/2 px-3">
         <div className="min-w-0">
           <p className="truncate text-xs font-semibold text-white/90">
             {result.prompt || 'Generated result'}
@@ -330,7 +330,7 @@ const RecentResultViewer: React.FC<{
             <button
               type="button"
               onClick={onInspect}
-              className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-white/70 transition-colors hover:bg-white/10 hover:text-white"
+              className="rounded-lg border border-white/2 bg-white/5 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-white/70 transition-colors hover:bg-white/10 hover:text-white"
             >
               Inspect
             </button>
@@ -349,7 +349,7 @@ const RecentResultViewer: React.FC<{
         <button
           type="button"
           onClick={onPrevious}
-          className="absolute left-3 z-10 rounded-lg border border-white/10 bg-black/50 p-2 text-white/65 transition-colors hover:bg-white/10 hover:text-white"
+          className="absolute left-3 z-10 rounded-lg border border-white/2 bg-black/50 p-2 text-white/65 transition-colors hover:bg-white/10 hover:text-white"
           aria-label="Previous recent result"
         >
           <ChevronLeft size={20} />
@@ -365,7 +365,7 @@ const RecentResultViewer: React.FC<{
         <button
           type="button"
           onClick={onNext}
-          className="absolute right-3 z-10 rounded-lg border border-white/10 bg-black/50 p-2 text-white/65 transition-colors hover:bg-white/10 hover:text-white"
+          className="absolute right-3 z-10 rounded-lg border border-white/2 bg-black/50 p-2 text-white/65 transition-colors hover:bg-white/10 hover:text-white"
           aria-label="Next recent result"
         >
           <ChevronRight size={20} />
@@ -408,8 +408,8 @@ const ServerJobItem: React.FC<{
       className={cn(
         'relative flex items-start gap-1.5 overflow-hidden rounded-[6px] border px-1.5 py-1 transition-colors',
         isSelected
-          ? 'border-accent-500/30 bg-accent-500/10'
-          : 'border-white/5 bg-black/20 hover:border-white/10 hover:bg-white/5',
+          ? 'border-accent-500/2 bg-accent-500/10'
+          : 'border-white/2 bg-black/20 hover:border-white/2 hover:bg-white/5',
       )}
     >
       <span className={cn('absolute inset-y-0 left-0 w-0.5', recipeTone.dotClassName)} />
@@ -419,7 +419,7 @@ const ServerJobItem: React.FC<{
         className="flex min-w-0 flex-1 items-start gap-1.5 text-left cursor-pointer"
       >
         <div className="mt-0.5 shrink-0">{icon}</div>
-        <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-[6px] border border-white/10 bg-black/40">
+        <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-[6px] border border-white/2 bg-black/40">
           {previewSrc ? (
             <img
               src={previewSrc}
@@ -455,12 +455,12 @@ const ServerJobItem: React.FC<{
                 'rounded-[6px] border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
                 statusColor,
                 job.status === 'completed'
-                  ? 'border-emerald-500/20 bg-emerald-500/10'
+                  ? 'border-emerald-500/2 bg-emerald-500/10'
                   : job.status === 'needs_review'
-                    ? 'border-amber-500/20 bg-amber-500/10'
+                    ? 'border-amber-500/2 bg-amber-500/10'
                     : job.status === 'failed' || job.status === 'cancelled'
-                      ? 'border-rose-500/20 bg-rose-500/10'
-                      : 'border-accent-500/20 bg-accent-500/10',
+                      ? 'border-rose-500/2 bg-rose-500/10'
+                      : 'border-accent-500/2 bg-accent-500/10',
               )}
             >
               {job.status}
@@ -480,7 +480,7 @@ const ServerJobItem: React.FC<{
             ) : null}
           </div>
           {job.error ? (
-            <p className="mt-1 line-clamp-2 rounded-[6px] border border-rose-500/10 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
+            <p className="mt-1 line-clamp-2 rounded-[6px] border border-rose-500/2 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
               {job.error}
             </p>
           ) : null}

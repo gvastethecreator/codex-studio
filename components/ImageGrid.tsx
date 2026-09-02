@@ -93,7 +93,7 @@ const CompactActionButton: React.FC<CompactActionButtonProps> = ({
     variant === 'danger'
       ? 'text-red-400/70 hover:bg-red-500/12 hover:text-red-200'
       : variant === 'primary' || isActive
-        ? 'border-accent-500/25 bg-accent-500/12 text-accent-100 shadow-[0_0_14px_rgba(var(--accent-500),0.12)]'
+        ? 'border-accent-500/2 bg-accent-500/12 text-accent-100 shadow-[0_0_14px_rgba(var(--accent-500),0.12)]'
         : 'text-zinc-500 hover:bg-white/7 hover:text-zinc-100';
 
   return (
@@ -356,7 +356,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     );
 
     const visibleActionGroup = (
-      <div className="flex flex-wrap items-center justify-between gap-1 rounded-lg border border-white/10 bg-black/30 p-1 shadow-inner shadow-black/30">
+      <div className="flex flex-wrap items-center justify-between gap-1 rounded-lg border border-white/2 bg-black/30 p-1 shadow-inner shadow-black/30">
         {compactPrimaryActions}
         {compactStateActions}
       </div>
@@ -370,8 +370,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           onMouseLeave={() => setIsActionSurfaceActive(false)}
           onFocusCapture={handleFocusCapture}
           onBlurCapture={handleBlurCapture}
-          className={`group flex min-w-0 flex-col gap-3 rounded-xl border border-white/10 bg-zinc-950/75 p-2 text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow] sm:flex-row sm:items-center
-          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/18 hover:bg-zinc-900/85'}
+          className={`group flex min-w-0 flex-col gap-3 rounded-xl border border-white/2 bg-zinc-950/75 p-2 text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow] sm:flex-row sm:items-center
+          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/2 hover:bg-zinc-900/85'}
         `}
           style={{ contentVisibility: 'auto', containIntrinsicSize: '720px 120px' }}
         >
@@ -406,8 +406,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           onMouseLeave={() => setIsActionSurfaceActive(false)}
           onFocusCapture={handleFocusCapture}
           onBlurCapture={handleBlurCapture}
-          className={`group min-w-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950/75 text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow]
-          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/18 hover:bg-zinc-900/85'}
+          className={`group min-w-0 overflow-hidden rounded-xl border border-white/2 bg-zinc-950/75 text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow]
+          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/2 hover:bg-zinc-900/85'}
         `}
           style={{ contentVisibility: 'auto', containIntrinsicSize: '320px 460px' }}
         >
@@ -426,7 +426,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             />
           </button>
           <div className="space-y-2.5 p-3">
-            <div className="min-w-0 border-b border-white/6 pb-2.5">
+            <div className="min-w-0 border-b border-white/2 pb-2.5">
               <div className="line-clamp-2 text-[13px] font-semibold leading-5 text-zinc-200">
                 {promptText}
               </div>
@@ -484,8 +484,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 className={`flex size-10 items-center justify-center rounded-lg border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
                         ${
                           image.isFavorite
-                            ? 'bg-accent-500 border-accent-400 text-white scale-110'
-                            : 'bg-black/45 border-white/15 text-white/60 hover:border-white/30 hover:bg-black/60 hover:text-white group-hover:text-white/80'
+                            ? 'bg-accent-500 border-accent-400/2 text-white scale-110'
+                            : 'bg-black/45 border-white/2 text-white/60 hover:border-white/2 hover:bg-black/60 hover:text-white group-hover:text-white/80'
                         }`}
               >
                 <Heart
@@ -504,8 +504,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 className={`flex size-10 items-center justify-center rounded-lg border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
                         ${
                           isSelected
-                            ? 'bg-accent-600 border-accent-400 text-white scale-110'
-                            : 'bg-black/45 border-white/15 text-white/60 hover:border-white/30 hover:bg-black/60 hover:text-white group-hover:text-white/80'
+                            ? 'bg-accent-600 border-accent-400/2 text-white scale-110'
+                            : 'bg-black/45 border-white/2 text-white/60 hover:border-white/2 hover:bg-black/60 hover:text-white group-hover:text-white/80'
                         }`}
               >
                 <Check size={14} strokeWidth={3} />
@@ -516,7 +516,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
 
         {shouldMountActions && (
           <div className="absolute bottom-2 left-2 right-2 z-20 flex translate-y-0 flex-col gap-1 opacity-100 transition-[opacity,transform] sm:bottom-3 sm:left-3 sm:right-3 sm:flex-row sm:items-center sm:justify-between sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:group-focus-within:translate-y-0 sm:group-focus-within:opacity-100">
-            <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/10">
+            <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/2">
               <ActionButton
                 onClick={(e) => {
                   e.stopPropagation();
@@ -542,7 +542,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 label="Regen"
               />
             </div>
-            <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/10">
+            <div className="flex items-center gap-1.5 p-1 rounded-lg bg-black/60 backdrop-blur-md border border-white/2">
               <ActionButton
                 onClick={(e) => {
                   e.stopPropagation();
@@ -668,7 +668,7 @@ const GenerationPlaceholderItem: React.FC<{
   viewMode: ImageGridViewMode;
 }> = React.memo(({ placeholder, viewMode }) => (
   <div
-    className={`masonry-item overflow-hidden rounded-xl border border-accent-400/20 bg-zinc-950/80 shadow-lg animate-in fade-in-0 zoom-in-95 ${viewMode === 'mosaic' ? 'mb-4' : ''}`}
+    className={`masonry-item overflow-hidden rounded-xl border border-accent-400/2 bg-zinc-950/80 shadow-lg animate-in fade-in-0 zoom-in-95 ${viewMode === 'mosaic' ? 'mb-4' : ''}`}
   >
     <output
       aria-label={`Generation job ${placeholder.status}`}
@@ -684,11 +684,11 @@ const GenerationPlaceholderItem: React.FC<{
     >
       <div className="absolute inset-0 animate-pulse bg-linear-to-br from-white/10 via-zinc-800/70 to-zinc-950" />
       <div className="absolute inset-x-0 top-0 h-16 bg-linear-to-b from-accent-400/10 to-transparent" />
-      <div className="absolute left-2 top-2 flex max-w-[calc(100%-1rem)] items-center gap-1.5 rounded-lg border border-white/10 bg-black/55 px-2 py-1 text-[10px] font-black uppercase tracking-widest text-zinc-100 backdrop-blur-md">
+      <div className="absolute left-2 top-2 flex max-w-[calc(100%-1rem)] items-center gap-1.5 rounded-lg border border-white/2 bg-black/55 px-2 py-1 text-[10px] font-black uppercase tracking-widest text-zinc-100 backdrop-blur-md">
         <Loader2 size={12} className={placeholder.status === 'running' ? 'animate-spin' : ''} />
         <span className="truncate">{placeholder.status}</span>
       </div>
-      <div className="absolute inset-x-2 bottom-2 rounded-lg border border-white/10 bg-black/50 px-2 py-1.5 text-[10px] font-semibold text-zinc-300 backdrop-blur-md">
+      <div className="absolute inset-x-2 bottom-2 rounded-lg border border-white/2 bg-black/50 px-2 py-1.5 text-[10px] font-semibold text-zinc-300 backdrop-blur-md">
         <div className="truncate">{placeholder.prompt}</div>
       </div>
     </output>
@@ -1137,14 +1137,14 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
       return (
         <div className="flex h-full w-full items-center justify-center px-6 text-center">
           {catalogError ? (
-            <div className="max-w-md rounded-xl border border-rose-500/20 bg-rose-950/20 p-4 text-sm text-rose-100">
+            <div className="max-w-md rounded-xl border border-rose-500/2 bg-rose-950/20 p-4 text-sm text-rose-100">
               <div className="font-semibold">Catalog failed to load</div>
               <div className="mt-1 text-rose-200/70">{catalogError}</div>
               {onRetryCatalog && (
                 <button
                   type="button"
                   onClick={onRetryCatalog}
-                  className="mt-3 rounded-lg border border-rose-300/20 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-rose-100 hover:bg-rose-300/10"
+                  className="mt-3 rounded-lg border border-rose-300/2 px-3 py-1.5 text-xs font-bold uppercase tracking-widest text-rose-100 hover:bg-rose-300/10"
                 >
                   Retry
                 </button>
@@ -1159,7 +1159,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
       <div className="w-full h-full relative">
         <div className="absolute left-3 right-3 top-3 z-30 flex items-center justify-end gap-2 sm:left-auto sm:right-8 sm:top-4">
           {sourceImageCount > 0 && (
-            <div className="flex items-center gap-1 rounded-xl border border-white/10 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md">
+            <div className="flex items-center gap-1 rounded-xl border border-white/2 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md">
               {imageCount > 1 && (
                 <ActionButton
                   onClick={isAllSelected ? onDeselectAll : () => onSelectAll(sortedImages)}
@@ -1229,7 +1229,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
           <div
             role="group"
             aria-label={`Image view: ${activeViewOption.label}`}
-            className="flex h-10 items-center gap-1 rounded-xl border border-white/10 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md"
+            className="flex h-10 items-center gap-1 rounded-xl border border-white/2 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md"
           >
             {IMAGE_GRID_VIEW_OPTIONS.map(({ value, label, description, Icon }) => {
               const selected = value === viewMode;
@@ -1254,7 +1254,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
             })}
           </div>
           <Tooltip content="Thumbnail size" position="bottom">
-            <label className="hidden h-10 items-center gap-2 rounded-xl border border-white/10 bg-zinc-900/80 px-2 text-zinc-400 shadow-2xl backdrop-blur-md sm:flex">
+            <label className="hidden h-10 items-center gap-2 rounded-xl border border-white/2 bg-zinc-900/80 px-2 text-zinc-400 shadow-2xl backdrop-blur-md sm:flex">
               <Photo size={15} />
               <input
                 type="range"
@@ -1280,8 +1280,8 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                 aria-controls={sortMenuId}
                 className={`flex min-h-10 min-w-10 touch-manipulation items-center justify-center gap-2 rounded-xl border px-2.5 text-zinc-300 shadow-2xl backdrop-blur-md transition-[background-color,border-color,color,transform] focus-visible:ring-2 focus-visible:ring-white/25 ${
                   isSortMenuOpen
-                    ? 'border-white/18 bg-zinc-800/95 text-white'
-                    : 'border-white/10 bg-zinc-900/80 hover:border-white/18 hover:bg-zinc-800 hover:text-white'
+                    ? 'border-white/2 bg-zinc-800/95 text-white'
+                    : 'border-white/2 bg-zinc-900/80 hover:border-white/2 hover:bg-zinc-800 hover:text-white'
                 }`}
               >
                 <ArrowUpDown size={16} />
@@ -1345,7 +1345,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
         >
           {showFavoritesOnly && imageCount === 0 && generationPlaceholders.length === 0 && (
             <div className="flex min-h-[45vh] items-center justify-center text-center">
-              <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-xs font-semibold text-zinc-500">
+              <div className="rounded-xl border border-white/2 bg-white/[0.03] px-4 py-3 text-xs font-semibold text-zinc-500">
                 No favorite images in this workspace.
               </div>
             </div>
@@ -1423,7 +1423,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   type="button"
                   onClick={onLoadMore}
                   disabled={isCatalogLoading}
-                  className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="inline-flex items-center gap-2 rounded-xl border border-white/2 bg-white/5 px-4 py-2 text-[10px] font-black uppercase tracking-widest text-zinc-200 transition-colors hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   <RefreshCw size={14} className={isCatalogLoading ? 'animate-spin' : ''} />
                   {isCatalogLoading ? 'Loading' : 'Load more'}
@@ -1433,7 +1433,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                 <button
                   type="button"
                   onClick={onRetryCatalog}
-                  className="rounded-xl border border-rose-300/20 bg-rose-500/10 px-4 py-2 text-[10px] font-black uppercase tracking-widest text-rose-100 hover:bg-rose-500/20"
+                  className="rounded-xl border border-rose-300/2 bg-rose-500/10 px-4 py-2 text-[10px] font-black uppercase tracking-widest text-rose-100 hover:bg-rose-500/20"
                 >
                   Retry
                 </button>

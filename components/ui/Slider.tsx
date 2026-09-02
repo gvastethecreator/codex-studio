@@ -30,7 +30,7 @@ const Slider: React.FC<SliderProps> = ({
           {icon}
           <span>{label}</span>
         </div>
-        <span className="font-mono text-accent-300 bg-accent-950/40 px-1.5 py-0.5 rounded border border-accent-500/20 transition-colors">
+        <span className="font-mono text-accent-300 bg-accent-950/40 px-1.5 py-0.5 rounded border border-accent-500/2 transition-colors">
           {value}
         </span>
       </div>
@@ -53,7 +53,7 @@ const Slider: React.FC<SliderProps> = ({
         />
 
         <div
-          className="absolute size-4 bg-white rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.5)] pointer-events-none transform -translate-x-1/2 transition-transform duration-100 ease-out border border-zinc-200"
+          className="absolute size-4 bg-white rounded-full shadow-[0_2px_4px_rgba(0,0,0,0.5)] pointer-events-none transform -translate-x-1/2 transition-transform duration-100 ease-out border border-zinc-200/2"
           style={{ left: `${percentage}%` }}
         >
           <div className="absolute inset-0.5 bg-zinc-200 rounded-full" />

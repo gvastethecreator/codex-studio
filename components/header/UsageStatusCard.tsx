@@ -17,10 +17,10 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
   const visibleLimits = usage.limits.slice(0, 2);
   const usageToneClasses =
     usage.tone === 'offline'
-      ? 'border-rose-500/20 bg-rose-500/8 text-rose-200'
+      ? 'border-rose-500/2 bg-rose-500/8 text-rose-200'
       : usage.tone === 'available'
-        ? 'border-accent-500/20 bg-accent-500/8 text-white'
-        : 'border-white/10 bg-white/5 text-zinc-200';
+        ? 'border-accent-500/2 bg-accent-500/8 text-white'
+        : 'border-white/2 bg-white/5 text-zinc-200';
   const tooltip =
     visibleLimits.length > 0
       ? `${usage.tooltip} · ${visibleLimits
@@ -37,7 +37,7 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
         <button
           type="button"
           onClick={onOpenDashboard}
-          className={`studio-hit-target flex h-8 items-center gap-1.5 rounded-lg border px-2 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-white/8 cursor-pointer ${usageToneClasses}`}
+          className={`studio-hit-target flex h-8 items-center gap-1.5 rounded-lg border px-2 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-white/8 cursor-pointer ${usageToneClasses}`}
         >
           <div className="flex size-5 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
             {usage.tone === 'offline' ? <WifiOff size={13} /> : <Gauge size={13} />}

@@ -28,21 +28,21 @@ const TONE_STYLES: Record<
 > = {
   danger: {
     icon: <ShieldAlert size={18} />,
-    shell: 'bg-rose-500/10 text-rose-300 border border-rose-500/20',
+    shell: 'bg-rose-500/10 text-rose-300 border border-rose-500/2',
     button:
-      'bg-rose-500/15 text-rose-100 border border-rose-500/20 hover:bg-rose-500/20 hover:border-rose-400/30',
+      'bg-rose-500/15 text-rose-100 border border-rose-500/2 hover:bg-rose-500/20 hover:border-rose-400/2',
   },
   warning: {
     icon: <AlertTriangle size={18} />,
-    shell: 'bg-amber-500/10 text-amber-300 border border-amber-500/20',
+    shell: 'bg-amber-500/10 text-amber-300 border border-amber-500/2',
     button:
-      'bg-amber-500/15 text-amber-100 border border-amber-500/20 hover:bg-amber-500/20 hover:border-amber-400/30',
+      'bg-amber-500/15 text-amber-100 border border-amber-500/2 hover:bg-amber-500/20 hover:border-amber-400/2',
   },
   accent: {
     icon: <RotateCcw size={18} />,
-    shell: 'bg-accent-500/10 text-accent-300 border border-accent-500/20',
+    shell: 'bg-accent-500/10 text-accent-300 border border-accent-500/2',
     button:
-      'bg-accent-500/15 text-accent-100 border border-accent-500/20 hover:bg-accent-500/20 hover:border-accent-400/30',
+      'bg-accent-500/15 text-accent-100 border border-accent-500/2 hover:bg-accent-500/20 hover:border-accent-400/2',
   },
 };
 
@@ -77,9 +77,9 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative w-full max-w-lg overflow-hidden rounded-3xl border border-white/10 bg-zinc-900 shadow-2xl"
+          className="relative w-full max-w-lg overflow-hidden rounded-3xl border border-white/2 bg-zinc-900 shadow-2xl"
         >
-          <div className="flex items-start justify-between gap-4 border-b border-white/5 p-6 bg-zinc-900/50">
+          <div className="flex items-start justify-between gap-4 border-b border-white/2 p-6 bg-zinc-900/50">
             <div className="flex min-w-0 items-start gap-3">
               <div
                 className={`flex size-11 shrink-0 items-center justify-center rounded-2xl ${toneStyles.shell}`}
@@ -104,7 +104,7 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
           </div>
 
           {(details?.length || note) && (
-            <div className="border-b border-white/5 px-6 py-5">
+            <div className="border-b border-white/2 px-6 py-5">
               {details?.length ? (
                 <ul className="space-y-2">
                   {details.map((detail) => (
@@ -130,7 +130,7 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="h-11 rounded-2xl border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-white/10 hover:text-white cursor-pointer"
+              className="h-11 rounded-2xl border border-white/2 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-white/10 hover:text-white cursor-pointer"
             >
               {cancelLabel}
             </button>

@@ -62,12 +62,12 @@ function getStatusIcon(status: StudioJob['status']) {
 }
 
 function getStatusClass(status: StudioJob['status']) {
-  if (status === 'completed') return 'border-emerald-500/20 bg-emerald-500/10 text-emerald-300';
+  if (status === 'completed') return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-300';
   if (status === 'failed' || status === 'cancelled') {
-    return 'border-rose-500/20 bg-rose-500/10 text-rose-300';
+    return 'border-rose-500/2 bg-rose-500/10 text-rose-300';
   }
-  if (status === 'needs_review') return 'border-amber-500/20 bg-amber-500/10 text-amber-200';
-  return 'border-accent-500/20 bg-accent-500/10 text-accent-300';
+  if (status === 'needs_review') return 'border-amber-500/2 bg-amber-500/10 text-amber-200';
+  return 'border-accent-500/2 bg-accent-500/10 text-accent-300';
 }
 
 export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
@@ -147,11 +147,11 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
         onClick={onClose}
       />
 
-      <section className="absolute inset-x-3 bottom-3 top-3 mx-auto flex max-w-5xl overflow-hidden rounded-[28px] border border-white/10 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.7)] sm:inset-x-6 sm:bottom-6 sm:top-6">
+      <section className="absolute inset-x-3 bottom-3 top-3 mx-auto flex max-w-5xl overflow-hidden rounded-[28px] border border-white/2 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.7)] sm:inset-x-6 sm:bottom-6 sm:top-6">
         <div className="flex min-w-0 flex-1 flex-col">
-          <header className="flex items-center justify-between border-b border-white/8 px-5 py-4 sm:px-6">
+          <header className="flex items-center justify-between border-b border-white/2 px-5 py-4 sm:px-6">
             <div className="flex min-w-0 items-center gap-3">
-              <div className="grid size-10 shrink-0 place-items-center rounded-2xl border border-accent-500/20 bg-accent-500/10 text-accent-300">
+              <div className="grid size-10 shrink-0 place-items-center rounded-2xl border border-accent-500/2 bg-accent-500/10 text-accent-300">
                 <MessageSquare size={18} />
               </div>
               <div className="min-w-0">
@@ -171,7 +171,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="rounded-full border border-white/10 bg-white/5 p-2.5 text-zinc-300 transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white"
+              className="rounded-full border border-white/2 bg-white/5 p-2.5 text-zinc-300 transition-colors hover:border-white/2 hover:bg-white/10 hover:text-white"
               aria-label="Close Codex chat"
             >
               <X size={18} />
@@ -195,7 +195,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                       )}
                     >
                       {message.role === 'assistant' ? (
-                        <div className="mt-1 grid size-8 shrink-0 place-items-center rounded-xl border border-accent-500/20 bg-accent-500/10 text-accent-300">
+                        <div className="mt-1 grid size-8 shrink-0 place-items-center rounded-xl border border-accent-500/2 bg-accent-500/10 text-accent-300">
                           <Icon size={15} />
                         </div>
                       ) : null}
@@ -203,8 +203,8 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                         className={cn(
                           'max-w-[min(680px,88%)] rounded-2xl border px-4 py-3',
                           message.role === 'user'
-                            ? 'border-white/10 bg-white/10 text-white'
-                            : 'border-white/8 bg-black/30 text-zinc-300',
+                            ? 'border-white/2 bg-white/10 text-white'
+                            : 'border-white/2 bg-black/30 text-zinc-300',
                         )}
                       >
                         <p className="whitespace-pre-wrap text-sm leading-6">{message.text}</p>
@@ -217,8 +217,8 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                 })}
               </div>
 
-              <div className="border-t border-white/8 p-4 sm:p-5">
-                <div className="flex min-h-14 items-end gap-2 rounded-2xl border border-white/10 bg-black/30 p-2">
+              <div className="border-t border-white/2 p-4 sm:p-5">
+                <div className="flex min-h-14 items-end gap-2 rounded-2xl border border-white/2 bg-black/30 p-2">
                   <textarea
                     ref={textareaRef}
                     value={prompt}
@@ -238,7 +238,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     type="button"
                     onClick={submit}
                     disabled={!prompt.trim()}
-                    className="grid size-11 shrink-0 place-items-center rounded-2xl border border-accent-500/20 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:cursor-not-allowed disabled:border-white/10 disabled:bg-white/5 disabled:text-zinc-600"
+                    className="grid size-11 shrink-0 place-items-center rounded-2xl border border-accent-500/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
                     aria-label="Send generation prompt"
                   >
                     {isGenerating ? (
@@ -251,8 +251,8 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
               </div>
             </main>
 
-            <aside className="hidden min-h-0 flex-col border-l border-white/8 bg-black/20 xl:flex">
-              <div className="border-b border-white/8 px-4 py-3">
+            <aside className="hidden min-h-0 flex-col border-l border-white/2 bg-black/20 xl:flex">
+              <div className="border-b border-white/2 px-4 py-3">
                 <div className="text-[9px] font-black uppercase tracking-[0.2em] text-zinc-500">
                   Live jobs
                 </div>
@@ -264,7 +264,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     return (
                       <div
                         key={job.id}
-                        className="rounded-2xl border border-white/8 bg-white/[0.03] p-3"
+                        className="rounded-2xl border border-white/2 bg-white/[0.03] p-3"
                       >
                         <div className="flex items-center justify-between gap-2">
                           <span
@@ -288,12 +288,12 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     );
                   })
                 ) : (
-                  <div className="rounded-2xl border border-dashed border-white/8 bg-black/20 p-4 text-xs text-zinc-600">
+                  <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 p-4 text-xs text-zinc-600">
                     No jobs yet.
                   </div>
                 )}
               </div>
-              <div className="border-t border-white/8 p-3">
+              <div className="border-t border-white/2 p-3">
                 <div className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-zinc-500">
                   Recent logs
                 </div>

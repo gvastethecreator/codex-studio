@@ -18,12 +18,12 @@ interface ControlDropdownProps {
 
 // Static color mapping for Tailwind classes
 const colorMap: Record<string, { text: string; bg: string; border: string }> = {
-  accent: { text: 'text-accent-400', bg: 'bg-accent-500/10', border: 'border-accent-500/20' },
-  rose: { text: 'text-rose-400', bg: 'bg-rose-500/10', border: 'border-rose-500/20' },
-  emerald: { text: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
-  blue: { text: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/20' },
-  amber: { text: 'text-amber-400', bg: 'bg-amber-500/10', border: 'border-amber-500/20' },
-  violet: { text: 'text-violet-400', bg: 'bg-violet-500/10', border: 'border-violet-500/20' },
+  accent: { text: 'text-accent-400', bg: 'bg-accent-500/10', border: 'border-accent-500/2' },
+  rose: { text: 'text-rose-400', bg: 'bg-rose-500/10', border: 'border-rose-500/2' },
+  emerald: { text: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/2' },
+  blue: { text: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/2' },
+  amber: { text: 'text-amber-400', bg: 'bg-amber-500/10', border: 'border-amber-500/2' },
+  violet: { text: 'text-violet-400', bg: 'bg-violet-500/10', border: 'border-violet-500/2' },
 };
 
 export const ControlDropdown: React.FC<ControlDropdownProps> = ({
@@ -58,8 +58,8 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
           onClick={() => setIsOpen((open) => !open)}
           className={`group flex min-h-10 min-w-[140px] items-center gap-3 rounded-xl border px-4 shadow-lg transition-[background-color,border-color,color,transform] active:scale-95 ${
             isOpen
-              ? 'border-white/25 bg-white/8 text-white'
-              : 'border-white/10 bg-zinc-900 text-zinc-200 hover:border-white/20 hover:bg-white/[0.04]'
+              ? 'border-white/2 bg-white/8 text-white'
+              : 'border-white/2 bg-zinc-900 text-zinc-200 hover:border-white/2 hover:bg-white/[0.04]'
           }`}
           aria-labelledby={title ? labelId : undefined}
           aria-label={title ? undefined : label}
@@ -136,7 +136,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
         ref={triggerRef}
         type="button"
         onClick={() => setIsOpen((open) => !open)}
-        className="group relative flex h-10 w-12 items-center justify-center overflow-hidden rounded-xl border border-white/10 transition-[border-color,transform] hover:border-emerald-500/50 active:scale-95"
+        className="group relative flex h-10 w-12 items-center justify-center overflow-hidden rounded-xl border border-white/2 transition-[border-color,transform] hover:border-emerald-500/2 active:scale-95"
         style={{ backgroundColor: color }}
         aria-label="Open color picker"
         aria-haspopup="dialog"

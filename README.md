@@ -65,7 +65,7 @@ To use Grok Imagine:
 2. `XAI_API_KEY` in `.env.local` also works on the same HTTP path.
 3. Make sure that `bun run providers:preflight -- --provider=grok` reports `canAttempt=true`.
 
-Studio stores xAI and ChatGPT tokens in `.studio/auth/studio-oauth.json` under the Studio Library, not in SQLite. Grok Build CLI login stays under `GROK_HOME` and is automatic fallback. It does not store `XAI_API_KEY` in SQLite. Home and the Styles recipe support Codex and Grok. Styles can generate from a prompt or from managed library references. Codex stays the first default provider.
+Studio stores xAI and ChatGPT tokens in the current user's private app-data folder, separate from the portable or shareable Studio Library and never in SQLite. Grok Build CLI login stays under `GROK_HOME` and is automatic fallback. It does not store `XAI_API_KEY` in SQLite. Home and the Styles recipe support Codex and Grok. Styles can generate from a prompt or from managed library references. Codex stays the first default provider.
 
 App readiness is the source of truth. Bun and Codex version strings are only diagnosis. If the Codex path or app-server support is unclear, run `bun run runtime:doctor`.
 
@@ -122,7 +122,7 @@ Preferred Output Path in Settings is an External Output Source scan hint. Genera
 
 If you use optional external adapters, keep Provider Secrets in backend environment variables. Do not put them in SQLite, logs, screenshots, docs, or committed files.
 
-Grok Build CLI login stays under `GROK_HOME`. Studio Sign in tokens stay in the Studio Library auth file.
+Grok Build CLI login stays under `GROK_HOME`. Studio Sign in tokens stay in the current user's private app-data folder.
 
 Use the provider control in the top Command Center to switch the next image job between Codex and Grok. The control shows runtime readiness. It stores the choice in Studio Settings. Deeper diagnostics stay in the same menu. Codex stays the initial default.
 

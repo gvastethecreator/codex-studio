@@ -83,49 +83,49 @@ const COLOR_CLASSES: Record<
   teal: {
     text: 'group-hover:text-teal-400',
     shadow: 'group-hover:drop-shadow-[0_0_30px_rgba(45,212,191,0.6)]',
-    border: 'group-hover:border-teal-500/50',
+    border: 'group-hover:border-teal-500/2',
     bg: 'group-hover:bg-teal-500',
     baseBg: 'bg-teal-950',
   },
   purple: {
     text: 'group-hover:text-purple-400',
     shadow: 'group-hover:drop-shadow-[0_0_30px_rgba(192,132,252,0.6)]',
-    border: 'group-hover:border-purple-500/50',
+    border: 'group-hover:border-purple-500/2',
     bg: 'group-hover:bg-purple-500',
     baseBg: 'bg-purple-950',
   },
   cyan: {
     text: 'group-hover:text-cyan-400',
     shadow: 'group-hover:drop-shadow-[0_0_30px_rgba(34,211,238,0.6)]',
-    border: 'group-hover:border-cyan-500/50',
+    border: 'group-hover:border-cyan-500/2',
     bg: 'group-hover:bg-cyan-500',
     baseBg: 'bg-cyan-950',
   },
   indigo: {
     text: 'group-hover:text-indigo-400',
     shadow: 'group-hover:drop-shadow-[0_0_30px_rgba(129,140,248,0.6)]',
-    border: 'group-hover:border-indigo-500/50',
+    border: 'group-hover:border-indigo-500/2',
     bg: 'group-hover:bg-indigo-500',
     baseBg: 'bg-indigo-950',
   },
   rose: {
     text: 'group-hover:text-rose-400',
     shadow: 'group-hover:drop-shadow-[0_0_30px_rgba(251,113,133,0.6)]',
-    border: 'group-hover:border-rose-500/50',
+    border: 'group-hover:border-rose-500/2',
     bg: 'group-hover:bg-rose-500',
     baseBg: 'bg-rose-950',
   },
   emerald: {
     text: 'group-hover:text-emerald-400',
     shadow: 'group-hover:drop-shadow-[0_0_30px_rgba(52,211,153,0.6)]',
-    border: 'group-hover:border-emerald-500/50',
+    border: 'group-hover:border-emerald-500/2',
     bg: 'group-hover:bg-emerald-500',
     baseBg: 'bg-emerald-950',
   },
   amber: {
     text: 'group-hover:text-amber-400',
     shadow: 'group-hover:drop-shadow-[0_0_30px_rgba(251,191,36,0.6)]',
-    border: 'group-hover:border-amber-500/50',
+    border: 'group-hover:border-amber-500/2',
     bg: 'group-hover:bg-amber-500',
     baseBg: 'bg-amber-950',
   },
@@ -159,8 +159,8 @@ const RecipeCard: React.FC<{
       onFocus={preloadRecipe}
       onPointerEnter={preloadRecipe}
       className={`
-                group relative isolate flex aspect-[3/5] flex-col overflow-hidden rounded-lg border border-white/10 bg-zinc-950 p-1 text-left shadow-black/30 sm:aspect-[2/3]
-                cursor-pointer appearance-none grayscale-[0.25] transition-[color,background-color,border-color,opacity,transform] duration-200 hover:-translate-y-0.5 hover:border-white/25 hover:grayscale-0
+                group relative isolate flex aspect-[3/5] flex-col overflow-hidden rounded-lg border border-white/2 bg-zinc-950 p-1 text-left shadow-black/30 sm:aspect-[2/3]
+                cursor-pointer appearance-none grayscale-[0.25] transition-[color,background-color,border-color,opacity,transform] duration-200 hover:-translate-y-0.5 hover:border-white/2 hover:grayscale-0
                 ${colors.border}
             `}
     >
@@ -185,8 +185,8 @@ const RecipeCard: React.FC<{
         style={{ backgroundImage: NOISE_SVG }}
       />
 
-      <div className="relative flex min-h-0 flex-1 flex-col rounded-md border border-white/10 bg-black/45 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm">
-        <div className="flex items-center justify-between border-b border-white/10 px-2 py-1">
+      <div className="relative flex min-h-0 flex-1 flex-col rounded-md border border-white/2 bg-black/45 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm">
+        <div className="flex items-center justify-between border-b border-white/2 px-2 py-1">
           <span className="inline-flex min-w-0 items-center gap-1.5 text-[8px] font-black uppercase tracking-widest text-white/55">
             <TagIcon size={10} className={colors.text.replace('group-hover:', '')} />
             <span className="truncate">{recipe.tag}</span>
@@ -196,7 +196,7 @@ const RecipeCard: React.FC<{
           </span>
         </div>
 
-        <div className="relative m-1.5 overflow-hidden rounded-md border border-white/10 bg-black/40 shadow-lg shadow-black/20">
+        <div className="relative m-1.5 overflow-hidden rounded-md border border-white/2 bg-black/40 shadow-lg shadow-black/20">
           <div className="aspect-square">
             {bgImage ? (
               <img
@@ -214,7 +214,7 @@ const RecipeCard: React.FC<{
               </div>
             )}
           </div>
-          <div className="absolute right-1.5 top-1.5 rounded-md border border-black/45 bg-black/55 p-1 text-white/70 backdrop-blur-sm">
+          <div className="absolute right-1.5 top-1.5 rounded-md border border-black/2 bg-black/55 p-1 text-white/70 backdrop-blur-sm">
             <TagIcon size={14} strokeWidth={1.4} />
           </div>
         </div>
@@ -230,7 +230,7 @@ const RecipeCard: React.FC<{
             {recipe.description}
           </p>
 
-          <div className="mt-auto flex items-center justify-between gap-2 border-t border-white/10 pt-1.5">
+          <div className="mt-auto flex items-center justify-between gap-2 border-t border-white/2 pt-1.5">
             <span className="truncate text-[8px] font-bold uppercase tracking-widest text-white/30">
               {recipe.defaultTask.replaceAll('_', ' ')}
             </span>

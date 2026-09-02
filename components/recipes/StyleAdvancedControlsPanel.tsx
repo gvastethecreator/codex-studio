@@ -40,7 +40,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
 }) => {
   if (selectedStyles.length === 0) {
     return (
-      <div className="rounded-[8px] border border-dashed border-white/12 bg-zinc-950/88 px-3 py-4 text-center text-[9px] font-black uppercase tracking-widest text-zinc-500 shadow-lg shadow-black/25">
+      <div className="rounded-[8px] border border-dashed border-white/2 bg-zinc-950/88 px-3 py-4 text-center text-[9px] font-black uppercase tracking-widest text-zinc-500 shadow-lg shadow-black/25">
         Select styles first
       </div>
     );
@@ -49,13 +49,13 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
   return (
     <div
       data-style-advanced-controls
-      className="rounded-[8px] border border-white/12 bg-zinc-950/92 p-2 shadow-lg shadow-black/35"
+      className="rounded-[8px] border border-white/2 bg-zinc-950/92 p-2 shadow-lg shadow-black/35"
     >
-      <div className="mb-2 flex items-center justify-between gap-2 border-b border-white/8 px-1 pb-2">
+      <div className="mb-2 flex items-center justify-between gap-2 border-b border-white/2 px-1 pb-2">
         <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
           Advanced Layers
         </div>
-        <div className="rounded-[5px] border border-white/10 bg-white/6 px-1.5 py-0.5 text-[8px] font-black uppercase tracking-widest text-zinc-500">
+        <div className="rounded-[5px] border border-white/2 bg-white/6 px-1.5 py-0.5 text-[8px] font-black uppercase tracking-widest text-zinc-500">
           {selectedStyles.length} active
         </div>
       </div>
@@ -69,8 +69,8 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
               key={slot.preset.id}
               className={`rounded-[7px] border p-2.5 transition-colors ${
                 enabled
-                  ? 'border-white/12 bg-zinc-900/84'
-                  : 'border-white/7 bg-zinc-900/52 text-zinc-500 opacity-75'
+                  ? 'border-white/2 bg-zinc-900/84'
+                  : 'border-white/2 bg-zinc-900/52 text-zinc-500 opacity-75'
               }`}
             >
               <div className="mb-2 flex items-start justify-between gap-2">
@@ -88,8 +88,8 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                   aria-pressed={enabled}
                   className={`flex h-7 shrink-0 items-center gap-1 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                     enabled
-                      ? 'border-emerald-400/24 bg-emerald-500/14 text-emerald-100'
-                      : 'border-white/10 bg-white/7 text-zinc-500'
+                      ? 'border-emerald-400/2 bg-emerald-500/14 text-emerald-100'
+                      : 'border-white/2 bg-white/7 text-zinc-500'
                   }`}
                 >
                   <Check size={11} />
@@ -107,8 +107,8 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                       onClick={() => onSetAvoidRulesMode(slot.preset.id, mode.id)}
                       className={`h-7 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                         active
-                          ? 'border-accent-400/25 bg-accent-500/15 text-accent-100'
-                          : 'border-white/10 bg-white/[0.05] text-zinc-500 hover:text-zinc-300'
+                          ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
+                          : 'border-white/2 bg-white/[0.05] text-zinc-500 hover:text-zinc-300'
                       }`}
                     >
                       {mode.label}
@@ -124,7 +124,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                   return (
                     <div
                       key={field.id}
-                      className="grid grid-cols-[4.9rem_minmax(0,1fr)] items-center gap-2 rounded-[6px] border border-white/6 bg-black/22 p-1.5"
+                      className="grid grid-cols-[4.9rem_minmax(0,1fr)] items-center gap-2 rounded-[6px] border border-white/2 bg-black/22 p-1.5"
                     >
                       <button
                         type="button"
@@ -132,8 +132,8 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                         aria-pressed={fieldEnabled}
                         className={`h-7 rounded-[6px] border px-2 text-left text-[8px] font-black uppercase tracking-widest transition-colors ${
                           fieldEnabled
-                            ? 'border-white/14 bg-white/10 text-zinc-100'
-                            : 'border-white/8 bg-white/[0.03] text-zinc-600'
+                            ? 'border-white/2 bg-white/10 text-zinc-100'
+                            : 'border-white/2 bg-white/[0.03] text-zinc-600'
                         }`}
                       >
                         {field.label}

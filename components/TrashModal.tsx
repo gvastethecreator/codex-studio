@@ -44,10 +44,10 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative flex h-full w-full max-w-4xl flex-col overflow-hidden bg-zinc-900 shadow-2xl sm:h-auto sm:max-h-[88vh] sm:rounded-3xl sm:border sm:border-white/10"
+          className="relative flex h-full w-full max-w-4xl flex-col overflow-hidden bg-zinc-900 shadow-2xl sm:h-auto sm:max-h-[88vh] sm:rounded-3xl sm:border sm:border-white/2"
         >
           {/* Header */}
-          <div className="flex shrink-0 items-start justify-between gap-3 border-b border-white/5 bg-zinc-900/50 p-4 sm:items-center sm:p-6">
+          <div className="flex shrink-0 items-start justify-between gap-3 border-b border-white/2 bg-zinc-900/50 p-4 sm:items-center sm:p-6">
             <div className="flex min-w-0 items-center gap-3">
               <div className="rounded-xl bg-red-500/10 p-2.5 text-red-400">
                 <Trash2 size={20} />
@@ -113,9 +113,9 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                 {trash.map((group) => (
                   <div
                     key={group.id}
-                    className="group flex flex-col gap-3 rounded-2xl border border-white/5 bg-white/5 p-3 transition-[background-color,border-color,box-shadow] hover:border-white/10 sm:flex-row sm:items-center sm:gap-4 sm:p-4"
+                    className="group flex flex-col gap-3 rounded-2xl border border-white/2 bg-white/5 p-3 transition-[background-color,border-color,box-shadow] hover:border-white/2 sm:flex-row sm:items-center sm:gap-4 sm:p-4"
                   >
-                    <div className="size-20 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/5">
+                    <div className="size-20 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/2">
                       {group.thumbnail && (
                         <img
                           src={group.thumbnail}
@@ -165,7 +165,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           </div>
 
           {/* Footer */}
-          <div className="p-4 bg-black/20 border-t border-white/5 flex items-center gap-3">
+          <div className="p-4 bg-black/20 border-t border-white/2 flex items-center gap-3">
             <AlertCircle size={14} className="text-zinc-600" />
             <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider">
               Archived items do not count towards your active workspace limits.

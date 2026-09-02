@@ -261,7 +261,7 @@ const CarouselImageItem: React.FC<{
       />
 
       {fallbackDisplaySrc && failedDisplaySrcs.length > 0 && (
-        <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-300/20 bg-amber-500/10 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-amber-100">
+        <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-300/2 bg-amber-500/10 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-amber-100">
           Using catalog preview
         </div>
       )}
@@ -344,7 +344,7 @@ function CarouselBottomBar({
   onDelete,
 }: CarouselBottomBarProps) {
   return (
-    <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-white/5 bg-black/80 px-6 py-3 backdrop-blur-sm">
+    <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-white/2 bg-black/80 px-6 py-3 backdrop-blur-sm">
       <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
         <div className="flex-1 min-w-0 w-full">
           <p className="text-[12px] font-bold text-zinc-400 truncate tracking-tight leading-relaxed">
@@ -458,7 +458,7 @@ function CarouselTopBar({
   thumbnailWindow,
 }: CarouselTopBarProps) {
   return (
-    <TopToolbar className="absolute top-0 left-0 right-0 w-full h-14 bg-black/80 backdrop-blur-sm flex items-center px-6 z-50 border-b border-white/5">
+    <TopToolbar className="absolute top-0 left-0 right-0 w-full h-14 bg-black/80 backdrop-blur-sm flex items-center px-6 z-50 border-b border-white/2">
       <div className="mx-auto flex w-full max-w-480 items-center justify-between gap-4">
         <Logo />
         <div
@@ -475,7 +475,7 @@ function CarouselTopBar({
               className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-[border-color,box-shadow,opacity,transform] duration-300
                             ${
                               idx === activeIndex
-                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
+                                ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500/2 opacity-100'
                                 : 'opacity-30 hover:opacity-80 border-transparent hover:scale-105'
                             }
                         `}

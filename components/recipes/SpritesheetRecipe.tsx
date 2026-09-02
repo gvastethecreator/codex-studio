@@ -104,12 +104,12 @@ function SpritesheetSidebar({
     <>
       <div
         className={`
-              fixed inset-x-3 z-50 flex max-h-[42vh] flex-col overflow-hidden rounded-2xl border border-white/8 bg-zinc-950/95 shadow-2xl backdrop-blur-xl transition-[color,background-color,border-color,opacity,box-shadow,transform,filter] duration-500 ease-out-expo sm:relative sm:inset-auto sm:z-auto sm:max-h-none sm:flex-shrink-0 sm:bg-black/40 sm:rounded-3xl
+              fixed inset-x-3 z-50 flex max-h-[42vh] flex-col overflow-hidden rounded-2xl border border-white/2 bg-zinc-950/95 shadow-2xl backdrop-blur-xl transition-[color,background-color,border-color,opacity,box-shadow,transform,filter] duration-500 ease-out-expo sm:relative sm:inset-auto sm:z-auto sm:max-h-none sm:flex-shrink-0 sm:bg-black/40 sm:rounded-3xl
               ${isOpen ? 'translate-y-0 opacity-100 sm:w-72' : 'pointer-events-none translate-y-4 opacity-0 sm:w-0 sm:border-0'}
            `}
         style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
       >
-        <div className="h-14 border-b border-white/5 flex items-center px-5 gap-2 bg-white/[0.02]">
+        <div className="h-14 border-b border-white/2 flex items-center px-5 gap-2 bg-white/[0.02]">
           <Hash size={14} className="text-emerald-500" />
           <span className="text-[10px] font-black text-white uppercase tracking-widest">
             Edit Cells
@@ -130,7 +130,7 @@ function SpritesheetSidebar({
               key={i}
               onClick={() => onSetEditingCell(i)}
               className={`group p-2.5 rounded-xl border transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-200 cursor-pointer appearance-none
-                              ${hoveredCell === i || editingCell === i ? 'bg-white/10 border-emerald-500/50 shadow-lg' : 'bg-black/20 border-white/5 hover:bg-white/5'}\n                          `}
+                              ${hoveredCell === i || editingCell === i ? 'bg-white/10 border-emerald-500/2 shadow-lg' : 'bg-black/20 border-white/2 hover:bg-white/5'}\n                          `}
               onMouseEnter={() => onSetHoveredCell(i)}
               onMouseLeave={() => onSetHoveredCell(null)}
             >
@@ -160,7 +160,7 @@ function SpritesheetSidebar({
         <button
           type="button"
           onClick={onOpen}
-          className="fixed right-3 z-50 rounded-xl border border-white/10 bg-zinc-900 p-3 text-zinc-400 shadow-lg transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-zinc-800 hover:text-white sm:absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 sm:rounded-l-xl sm:p-2"
+          className="fixed right-3 z-50 rounded-xl border border-white/2 bg-zinc-900 p-3 text-zinc-400 shadow-lg transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-zinc-800 hover:text-white sm:absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 sm:rounded-l-xl sm:p-2"
           style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
           aria-label="Open cell editor"
         >
@@ -322,7 +322,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           {/* Auto-Scaling Container */}
           <div
             className={`relative border-2 border-dashed transition-[background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo overflow-hidden shadow-2xl bg-zinc-900/30
-                        ${hasDividers ? getDividerStyle(params.dividers) : 'border-white/20'}
+                        ${hasDividers ? getDividerStyle(params.dividers) : 'border-white/2'}
                     `}
             style={gridContainerStyle}
           >
@@ -384,7 +384,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
             ))}
           </div>
 
-          <div className="absolute bottom-2 left-2 right-2 justify-center bg-black/60 border border-white/10 px-3 py-2 rounded-xl flex items-center gap-3 shadow-lg pointer-events-none sm:-bottom-12 sm:left-auto sm:right-auto sm:justify-start sm:px-4">
+          <div className="absolute bottom-2 left-2 right-2 justify-center bg-black/60 border border-white/2 px-3 py-2 rounded-xl flex items-center gap-3 shadow-lg pointer-events-none sm:-bottom-12 sm:left-auto sm:right-auto sm:justify-start sm:px-4">
             <ScanLine size={16} className="text-emerald-400" />
             <div className="flex flex-col">
               <span className="text-[10px] font-black text-white uppercase tracking-widest">

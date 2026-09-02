@@ -45,7 +45,7 @@ describe('StylePresetCard', () => {
         theme={{
           color: 'cyan',
           bg: 'bg-cyan-500',
-          border: 'border-cyan-500',
+          border: 'border-cyan-500/2',
           text: 'text-cyan-400',
         }}
         FadeImageComponent={(props) => <img {...props} />}
@@ -91,7 +91,7 @@ describe('StylePresetCard', () => {
         theme={{
           color: 'cyan',
           bg: 'bg-cyan-500',
-          border: 'border-cyan-500',
+          border: 'border-cyan-500/2',
           text: 'text-cyan-400',
         }}
         FadeImageComponent={(props) => <img {...props} />}

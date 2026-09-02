@@ -72,8 +72,8 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
         onClick={onClose}
       />
 
-      <div className="absolute inset-4 overflow-hidden rounded-[30px] border border-white/10 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.65)]">
-        <div className="flex items-center justify-between border-b border-white/8 px-6 py-5">
+      <div className="absolute inset-4 overflow-hidden rounded-[30px] border border-white/2 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.65)]">
+        <div className="flex items-center justify-between border-b border-white/2 px-6 py-5">
           <div>
             <div className="text-[10px] font-black uppercase tracking-[0.22em] text-zinc-500">
               Studio activity
@@ -84,14 +84,14 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
             type="button"
             aria-label="Close job inspector"
             onClick={onClose}
-            className="rounded-full border border-white/10 bg-white/5 p-2.5 text-zinc-300 transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white"
+            className="rounded-full border border-white/2 bg-white/5 p-2.5 text-zinc-300 transition-colors hover:border-white/2 hover:bg-white/10 hover:text-white"
           >
             <X size={18} />
           </button>
         </div>
 
         <div className="grid h-[calc(100%-88px)] grid-cols-1 overflow-hidden xl:grid-cols-[340px_minmax(0,1fr)]">
-          <aside className="custom-scrollbar overflow-y-auto border-b border-white/8 bg-black/20 px-5 py-5 xl:border-b-0 xl:border-r xl:px-6">
+          <aside className="custom-scrollbar overflow-y-auto border-b border-white/2 bg-black/20 px-5 py-5 xl:border-b-0 xl:border-r xl:px-6">
             <SessionOverview
               variant="drawer"
               workspaces={workspaces}
@@ -112,11 +112,11 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
                 onRetryJob={onRetryJob}
               />
             ) : isLoadingSelectedJob ? (
-              <div className="flex h-full min-h-80 items-center justify-center rounded-[28px] border border-white/8 bg-white/[0.03] text-zinc-500">
+              <div className="flex h-full min-h-80 items-center justify-center rounded-[28px] border border-white/2 bg-white/[0.03] text-zinc-500">
                 Loading job detail…
               </div>
             ) : (
-              <div className="flex h-full min-h-80 flex-col items-center justify-center rounded-[28px] border border-dashed border-white/8 bg-white/[0.03] p-8 text-center">
+              <div className="flex h-full min-h-80 flex-col items-center justify-center rounded-[28px] border border-dashed border-white/2 bg-white/[0.03] p-8 text-center">
                 <BrainCircuit size={30} className="mb-4 text-accent-400" />
                 <h3 className="text-xl font-semibold text-white">Pick a job to inspect</h3>
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-zinc-500">
