@@ -100,7 +100,8 @@ function inferLabel(sourcePath: string, providerId: GenerationProviderId | null)
   if (providerId === 'codex') return 'Codex generated images';
   if (providerId === 'comfy') return 'Comfy output';
   if (providerId === 'fal') return 'fal.ai output';
-  if (providerId === 'google') return 'Google image output';
+  if (providerId === 'google') return 'Google Nano Banana output';
+  if (providerId === 'antigravity') return 'Antigravity image output';
   return path.basename(sourcePath) || 'External output source';
 }
 

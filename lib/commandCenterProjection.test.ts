@@ -64,8 +64,8 @@ describe('buildStudioCommandCenterProjection', () => {
       expect.objectContaining({
         id: 'google',
         label: 'Google image API',
-        shortLabel: 'google',
-        toolbarLabel: 'goo',
+        shortLabel: 'Google',
+        toolbarLabel: 'Goo',
         tone: 'success',
         canExecute: true,
       }),
@@ -178,7 +178,7 @@ describe('buildStudioCommandCenterProjection', () => {
     });
   });
 
-  it('projects Codex and Grok as readiness-aware quick-switch options', () => {
+  it('projects the primary providers as readiness-aware quick-switch options', () => {
     const projection = buildStudioCommandCenterProjection({
       settings: {
         defaultProviderId: 'codex',
@@ -210,6 +210,30 @@ describe('buildStudioCommandCenterProjection', () => {
             subscriptionAuthState: 'logged_out',
             detail: 'Grok is ready.',
           },
+          {
+            providerId: 'google',
+            label: 'Google Nano Banana',
+            runtimeKind: 'hosted_api',
+            status: 'active',
+            isDefault: false,
+            hasAdapter: true,
+            canExecute: true,
+            secretState: 'configured',
+            subscriptionAuthState: 'logged_in',
+            detail: 'Google is ready.',
+          },
+          {
+            providerId: 'antigravity',
+            label: 'Antigravity',
+            runtimeKind: 'agent_cli',
+            status: 'not_configured',
+            isDefault: false,
+            hasAdapter: true,
+            canExecute: false,
+            secretState: 'not_required',
+            subscriptionAuthState: 'not_applicable',
+            detail: 'Antigravity login is required.',
+          },
         ],
       },
       providerRuntimePreflight: {
@@ -234,6 +258,26 @@ describe('buildStudioCommandCenterProjection', () => {
             canAttemptExecution: true,
             diagnostics: [],
           },
+          {
+            providerId: 'google',
+            runtimeKind: 'hosted_api',
+            secretState: 'configured',
+            secretSource: 'Studio Google OAuth',
+            localRuntimeState: 'not_required',
+            localRuntimeSource: null,
+            canAttemptExecution: true,
+            diagnostics: [],
+          },
+          {
+            providerId: 'antigravity',
+            runtimeKind: 'agent_cli',
+            secretState: 'not_required',
+            secretSource: null,
+            localRuntimeState: 'invalid',
+            localRuntimeSource: 'agy',
+            canAttemptExecution: false,
+            diagnostics: ['Run agy and complete login.'],
+          },
         ],
       },
       statusItems: [],
@@ -255,6 +299,18 @@ describe('buildStudioCommandCenterProjection', () => {
         label: 'Grok Imagine',
         canExecute: true,
         statusDetail: 'Ready',
+      }),
+      expect.objectContaining({
+        id: 'google',
+        label: 'Google Nano Banana',
+        canExecute: true,
+        statusDetail: 'Ready',
+      }),
+      expect.objectContaining({
+        id: 'antigravity',
+        label: 'Antigravity',
+        canExecute: false,
+        statusDetail: 'Needs setup',
       }),
     ]);
   });

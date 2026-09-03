@@ -56,6 +56,30 @@ vi.mock('./grokRuntimeDoctor', () => ({
   })),
 }));
 
+vi.mock('./antigravityRuntimeDoctor', () => ({
+  readAntigravityRuntimeDoctor: vi.fn(() => ({
+    status: 'blocked',
+    canRunJobs: false,
+    checkedAt: '2026-09-02T00:00:00.000Z',
+    selectedExecutable: 'agy',
+    selectedVersion: null,
+    selectedVersionNumber: null,
+    defaultModel: null,
+    availableModels: [],
+    headlessSupported: false,
+    generateImageSupported: false,
+    recommendedAction: 'Install Antigravity CLI.',
+    issues: [
+      {
+        code: 'antigravity_cli_unavailable',
+        message: 'Antigravity CLI is missing.',
+        action: 'Install Antigravity CLI.',
+      },
+    ],
+    candidates: [],
+  })),
+}));
+
 type StudioStoreOverrides = Partial<StudioJobStore & StudioAssetStore & StudioLogStore>;
 
 function createFakeStores(overrides?: StudioStoreOverrides) {

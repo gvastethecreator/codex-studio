@@ -110,6 +110,7 @@ describe('grokImagineUiPolicy', () => {
       }),
     ).toBe('Grok Imagine');
     expect(resolveImageEditorRequiresMask('grok')).toBe(false);
+    expect(resolveImageEditorRequiresMask('antigravity')).toBe(false);
     expect(
       isImageEditorApplyDisabled({
         isGenerating: false,

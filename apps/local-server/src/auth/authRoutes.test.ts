@@ -94,6 +94,52 @@ describe('subscription auth routes', () => {
     expect(calls.some((call) => call.includes(CODEX_OAUTH_TOKEN_URL))).toBe(true);
   });
 
+  it('starts Google browser authorization without a device code', async () => {
+    const dir = mkdtempSync(path.join(os.tmpdir(), 'studio-oauth-routes-'));
+    dirs.push(dir);
+    const store = createSubscriptionAuthStore({
+      resolveFilePath: () => path.join(dir, 'studio-oauth.json'),
+    });
+    const controller = createSubscriptionAuthController({
+      store,
+      ensureCredentialStoreWritable: () => undefined,
+      publish: () => undefined,
+      startGoogle: async () => ({
+        providerId: 'google',
+        authorizationUrl: 'https://accounts.google.com/o/oauth2/v2/auth?state=safe',
+        expiresAt: '2026-09-02T00:15:00.000Z',
+        poll: async () => ({
+          status: 'logged_in',
+          accessToken: 'google-access-secret',
+          refreshToken: 'google-refresh-secret',
+          expiresAt: '2026-09-02T01:00:00.000Z',
+          accountLabel: 'user@example.com',
+          chatgptAccountId: null,
+          lastError: null,
+          updatedAt: '2026-09-02T00:00:00.000Z',
+        }),
+      }),
+    });
+    const app = new Hono().route('/api/auth', createSubscriptionAuthRoutes(controller));
+
+    const response = await app.request('/api/auth/google/start', { method: 'POST' });
+    const body = await response.json();
+    expect(response.status).toBe(200);
+    expect(body).toMatchObject({
+      providerId: 'google',
+      status: 'pending',
+      authorizationUrl: 'https://accounts.google.com/o/oauth2/v2/auth?state=safe',
+      verificationUrl: null,
+      userCode: null,
+    });
+    expect(JSON.stringify(body)).not.toContain('google-access-secret');
+    await new Promise((resolve) => setTimeout(resolve, 0));
+    expect(await (await app.request('/api/auth/google')).json()).toMatchObject({
+      status: 'logged_in',
+      accountLabel: 'user@example.com',
+    });
+  });
+
   it('rejects start when the private credential store is not writable', async () => {
     const controller = createSubscriptionAuthController({
       ensureCredentialStoreWritable: () => {

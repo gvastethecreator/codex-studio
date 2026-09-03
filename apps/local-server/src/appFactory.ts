@@ -7,6 +7,10 @@ import {
   readGrokRuntimeDoctor,
   type GrokRuntimeDoctorReport,
 } from './grokRuntimeDoctor';
+import {
+  readAntigravityRuntimeDoctor,
+  type AntigravityRuntimeDoctorReport,
+} from './antigravityRuntimeDoctor';
 import { createCatalogCommands } from './catalogCommands';
 import { createCatalogRoutes } from './catalogRoutes';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
@@ -136,6 +140,7 @@ export interface CreateStudioAppOptions {
     readCodexModelCatalog?: () => Promise<CodexModelCatalogResponse>;
     readCodexRuntimeDoctor?: typeof readCodexRuntimeDoctor;
     readGrokRuntimeDoctor?: () => GrokRuntimeDoctorReport;
+    readAntigravityRuntimeDoctor?: () => AntigravityRuntimeDoctorReport;
     ensureAppServer?: (reason?: AppServerEnsureReason) => void;
     stopAppServer?: typeof stopAppServer;
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
@@ -173,6 +178,8 @@ export async function createStudioApp(
     options.dependencies?.readCodexRuntimeDoctor ?? readCodexRuntimeDoctor;
   const readGrokRuntimeDoctorFn =
     options.dependencies?.readGrokRuntimeDoctor ?? readGrokRuntimeDoctor;
+  const readAntigravityRuntimeDoctorFn =
+    options.dependencies?.readAntigravityRuntimeDoctor ?? readAntigravityRuntimeDoctor;
   const ensureLocalAppServer = options.dependencies?.ensureAppServer ?? ensureAppServer;
   const stopLocalAppServer = options.dependencies?.stopAppServer ?? stopAppServer;
   const readAppServerDiagnostics =
@@ -252,6 +259,7 @@ export async function createStudioApp(
       readCodexRuntimeDoctor: () =>
         readiness.readSnapshot().codexRuntime ?? createCheckingRuntimeReport(),
       readGrokRuntimeDoctor: readGrokRuntimeDoctorFn,
+      readAntigravityRuntimeDoctor: readAntigravityRuntimeDoctorFn,
     }),
   );
 
@@ -367,6 +375,8 @@ export async function createStudioApp(
           process.env,
           codexRuntime ?? undefined,
           readGrokRuntimeDoctorFn(),
+          undefined,
+          readAntigravityRuntimeDoctorFn(),
         );
         const runtimePreflights =
           providerId === 'codex' && codexRuntime
@@ -374,6 +384,7 @@ export async function createStudioApp(
                 process.env,
                 codexRuntime,
                 readGrokRuntimeDoctorFn(),
+                readAntigravityRuntimeDoctorFn(),
               )
             : [
                 getExternalProviderRuntimePreflight(

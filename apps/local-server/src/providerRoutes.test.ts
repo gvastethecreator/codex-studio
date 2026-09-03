@@ -6,6 +6,7 @@ import {
 } from '../../../packages/shared/src';
 import { createProviderRoutes } from './providerRoutes';
 import type { GrokRuntimeDoctorReport } from './grokRuntimeDoctor';
+import type { AntigravityRuntimeDoctorReport } from './antigravityRuntimeDoctor';
 
 function createCodexRuntimeReport(
   overrides: Partial<CodexRuntimeDoctorReport> = {},
@@ -44,12 +45,31 @@ function createGrokRuntimeReport(): GrokRuntimeDoctorReport {
   };
 }
 
+function createAntigravityRuntimeReport(): AntigravityRuntimeDoctorReport {
+  return {
+    status: 'ready',
+    canRunJobs: true,
+    checkedAt: '2026-09-02T00:00:00.000Z',
+    selectedExecutable: 'agy',
+    selectedVersion: '1.1.24',
+    selectedVersionNumber: '1.1.24',
+    defaultModel: null,
+    availableModels: ['gemini-3.8-flash-low'],
+    headlessSupported: true,
+    generateImageSupported: true,
+    recommendedAction: 'Antigravity is ready.',
+    issues: [],
+    candidates: [],
+  };
+}
+
 describe('providerRoutes', () => {
   it('returns provider capabilities from Studio Settings', async () => {
     const routes = createProviderRoutes({
       readSettings: () => createDefaultEditableStudioSettings(),
       readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
       readGrokRuntimeDoctor: () => createGrokRuntimeReport(),
+      readAntigravityRuntimeDoctor: () => createAntigravityRuntimeReport(),
     });
 
     const response = await routes.request('/');
@@ -64,6 +84,7 @@ describe('providerRoutes', () => {
       readSettings: () => createDefaultEditableStudioSettings(),
       readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
       readGrokRuntimeDoctor: () => createGrokRuntimeReport(),
+      readAntigravityRuntimeDoctor: () => createAntigravityRuntimeReport(),
     });
 
     const response = await routes.request('/preflight');
@@ -99,6 +120,7 @@ describe('providerRoutes', () => {
           ],
         }),
       readGrokRuntimeDoctor: () => createGrokRuntimeReport(),
+      readAntigravityRuntimeDoctor: () => createAntigravityRuntimeReport(),
     });
 
     const response = await routes.request('/preflight');
@@ -121,6 +143,7 @@ describe('providerRoutes', () => {
       readSettings: () => ({ ...createDefaultEditableStudioSettings(), defaultProviderId }),
       readCodexRuntimeDoctor: () => createCodexRuntimeReport(),
       readGrokRuntimeDoctor: () => createGrokRuntimeReport(),
+      readAntigravityRuntimeDoctor: () => createAntigravityRuntimeReport(),
     });
 
     const first = (await (await routes.request('/')).json()) as {

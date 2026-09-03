@@ -2,6 +2,7 @@ export * from './types';
 export * from './promptTransport';
 export * from './generationContracts';
 export * from './grokImagineContract';
+export * from './googleImageContract';
 export * from './studioSettings';
 export * from './outputSources';
 export * from './providerCapabilities';

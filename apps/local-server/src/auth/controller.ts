@@ -4,7 +4,11 @@ import type {
   SubscriptionProviderId,
 } from '../../../../packages/shared/src';
 import { publishEvent } from '../events';
-import { startDeviceCode, type DeviceCodeStart } from './deviceCode';
+import { startDeviceCode, type DeviceCodeProviderId, type DeviceCodeStart } from './deviceCode';
+import {
+  startGoogleAuthorizationCode,
+  type GoogleAuthorizationCodeStart,
+} from './googleAuthorizationCode';
 import { safeOAuthText } from './oauthHttp';
 import { revokeSubscriptionToken } from './revoke';
 import {
@@ -28,7 +32,7 @@ export class SubscriptionAuthRouteError extends Error {
 }
 
 interface PendingLogin {
-  start: DeviceCodeStart;
+  start: AuthFlowStart;
   controller: AbortController;
   poll: Promise<void>;
   epoch: number;
@@ -44,6 +48,9 @@ export interface SubscriptionAuthControllerDependencies {
   fetch?: AuthFetch;
   now?: () => number;
   sleep?: (ms: number, signal?: AbortSignal) => Promise<void>;
+  env?: Record<string, string | undefined>;
+  startDevice?: typeof startDeviceCode;
+  startGoogle?: typeof startGoogleAuthorizationCode;
   ensureCredentialStoreWritable?: () => void;
   revokeToken?: typeof revokeSubscriptionToken;
   publish?: (type: string, payload: SubscriptionAuthUpdatedEventPayload) => void;
@@ -51,7 +58,7 @@ export interface SubscriptionAuthControllerDependencies {
 
 function publicFromPending(
   providerId: SubscriptionProviderId,
-  start: DeviceCodeStart,
+  start: AuthFlowStart,
   lastError: string | null = null,
 ): SubscriptionAuthPublicStatus {
   return {
@@ -60,16 +67,22 @@ function publicFromPending(
     accountLabel: null,
     expiresAt: start.expiresAt,
     lastError,
-    verificationUrl: start.verificationUrl,
-    userCode: start.userCode,
+    verificationUrl: 'verificationUrl' in start ? start.verificationUrl : null,
+    authorizationUrl: 'authorizationUrl' in start ? start.authorizationUrl : null,
+    userCode: 'userCode' in start ? start.userCode : null,
   };
 }
+
+type AuthFlowStart = DeviceCodeStart | GoogleAuthorizationCodeStart;
 
 export function createSubscriptionAuthController({
   store = getSubscriptionAuthStore(),
   fetch: fetchImpl,
   now,
   sleep,
+  env = process.env,
+  startDevice = startDeviceCode,
+  startGoogle = startGoogleAuthorizationCode,
   ensureCredentialStoreWritable = () => store.assertWritable(),
   revokeToken = revokeSubscriptionToken,
   publish = (type, payload) => publishEvent(type, payload),
@@ -101,6 +114,7 @@ export function createSubscriptionAuthController({
       expiresAt: record.expiresAt,
       lastError: record.lastError,
       verificationUrl: null,
+      authorizationUrl: null,
       userCode: null,
     };
   };
@@ -149,14 +163,22 @@ export function createSubscriptionAuthController({
           'already_signed_in',
         );
       }
-      let started: DeviceCodeStart;
+      let started: AuthFlowStart;
       try {
-        started = await startDeviceCode(providerId, {
-          fetch: fetchImpl,
-          now,
-          sleep,
-          signal: startController.signal,
-        });
+        started =
+          providerId === 'google'
+            ? await startGoogle({
+                env,
+                fetch: fetchImpl,
+                now,
+                signal: startController.signal,
+              })
+            : await startDevice(providerId as DeviceCodeProviderId, {
+                fetch: fetchImpl,
+                now,
+                sleep,
+                signal: startController.signal,
+              });
       } catch (error) {
         if (startController.signal.aborted) return readPublic(providerId);
         throw error;
@@ -180,7 +202,7 @@ export function createSubscriptionAuthController({
               store.generation(providerId) !== epoch
             ) {
               try {
-                await revokeToken(providerId, tokens, { fetch: fetchImpl });
+                await revokeToken(providerId, tokens, { fetch: fetchImpl, env });
               } catch {
                 // A cancelled login must never restore or retain its issued token locally.
               }
@@ -198,7 +220,7 @@ export function createSubscriptionAuthController({
               safeOAuthText(error instanceof Error ? error.message : '') || 'Sign in failed.';
             if (issuedTokens) {
               try {
-                await revokeToken(providerId, issuedTokens, { fetch: fetchImpl });
+                await revokeToken(providerId, issuedTokens, { fetch: fetchImpl, env });
               } catch {
                 // Token persistence already failed; revocation remains best effort.
               }
@@ -244,7 +266,7 @@ export function createSubscriptionAuthController({
     store.clearProvider(providerId);
     emit(providerId, 'logged_out', null);
     try {
-      await revokeToken(providerId, record, { fetch: fetchImpl });
+      await revokeToken(providerId, record, { fetch: fetchImpl, env });
     } catch {
       // Local logout is authoritative; provider revocation is best effort.
     }

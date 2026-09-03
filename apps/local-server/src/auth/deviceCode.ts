@@ -21,8 +21,10 @@ import type { AuthFetch } from './tokens';
 import { tokensFromOAuthPayload } from './tokens';
 import type { StoredSubscriptionTokens } from './store';
 
+export type DeviceCodeProviderId = Exclude<SubscriptionProviderId, 'google'>;
+
 export interface DeviceCodeStart {
-  providerId: SubscriptionProviderId;
+  providerId: DeviceCodeProviderId;
   verificationUrl: string;
   userCode: string;
   expiresAt: string;
@@ -364,7 +366,7 @@ async function startXaiDeviceCode({
 }
 
 export async function startDeviceCode(
-  providerId: SubscriptionProviderId,
+  providerId: DeviceCodeProviderId,
   deps: DeviceCodeDependencies = {},
 ): Promise<DeviceCodeStart> {
   return providerId === 'codex' ? startCodexDeviceCode(deps) : startXaiDeviceCode(deps);

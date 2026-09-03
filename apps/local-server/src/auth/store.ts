@@ -75,6 +75,7 @@ function emptyFile(now: Date): SubscriptionAuthFile {
     providers: {
       codex: emptyRecord(now),
       xai: emptyRecord(now),
+      google: emptyRecord(now),
     },
   };
 }
@@ -156,7 +157,7 @@ function parseProvider(value: unknown): StoredSubscriptionTokens {
   };
 }
 
-function parseFile(raw: string): SubscriptionAuthFile {
+function parseFile(raw: string, now: Date): SubscriptionAuthFile {
   let parsed: unknown;
   try {
     parsed = JSON.parse(raw) as unknown;
@@ -165,7 +166,7 @@ function parseFile(raw: string): SubscriptionAuthFile {
   }
   if (
     !isRecord(parsed) ||
-    parsed.version !== STUDIO_OAUTH_STORE_VERSION ||
+    (parsed.version !== 1 && parsed.version !== STUDIO_OAUTH_STORE_VERSION) ||
     !isRecord(parsed.providers)
   ) {
     throw new Error('Studio Sign in credential store has an unsupported format.');
@@ -175,6 +176,10 @@ function parseFile(raw: string): SubscriptionAuthFile {
     providers: {
       codex: parseProvider(parsed.providers.codex),
       xai: parseProvider(parsed.providers.xai),
+      google:
+        parsed.version === 1 || parsed.providers.google === undefined
+          ? emptyRecord(now)
+          : parseProvider(parsed.providers.google),
     },
   };
 }
@@ -293,14 +298,14 @@ export function createSubscriptionAuthStore({
   const readSync = (): SubscriptionAuthFile => {
     const filePath = resolveFilePath();
     if (!existsSync(filePath)) return emptyFile(now());
-    return parseFile(readFileSync(filePath, 'utf8'));
+    return parseFile(readFileSync(filePath, 'utf8'), now());
   };
 
   const writeSync = (next: SubscriptionAuthFile) => {
     atomicWrite(resolveFilePath(), `${JSON.stringify(next, null, 2)}\n`);
   };
 
-  const generations: Record<SubscriptionProviderId, number> = { codex: 0, xai: 0 };
+  const generations: Record<SubscriptionProviderId, number> = { codex: 0, xai: 0, google: 0 };
 
   return {
     filePath: resolveFilePath,

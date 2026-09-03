@@ -29,6 +29,7 @@ export function resolveWorkerRuntimeTarget(
   if (
     providerId === 'grok' ||
     providerId === 'google' ||
+    providerId === 'antigravity' ||
     providerId === 'fal' ||
     providerId === 'comfy'
   ) {

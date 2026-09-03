@@ -5,6 +5,7 @@ import {
 } from '../../../packages/shared/src/providerCapabilities';
 import type { CodexRuntimeDoctorReport } from '../../../packages/shared/src';
 import type { GrokRuntimeDoctorReport } from './grokRuntimeDoctor';
+import type { AntigravityRuntimeDoctorReport } from './antigravityRuntimeDoctor';
 import type { EditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import type { GenerationProviderId } from '../../../packages/shared/src/generationContracts';
 import type { ProviderCapabilityDefinition } from '../../../packages/shared/src';
@@ -37,13 +38,25 @@ const PROVIDER_CAPABILITIES: ProviderCapabilityDefinition[] = [
   },
   {
     providerId: 'google',
-    label: 'Google image API',
+    label: 'Google Nano Banana',
     runtimeKind: 'hosted_api',
     hasAdapter: true,
     requiresSecret: true,
-    activeDetail: 'Google adapter is available.',
-    plannedDetail: 'Google adapter is available once backend Provider Secret is configured.',
-    missingDetail: 'Add a backend Google API key before enabling this adapter.',
+    activeDetail: 'Nano Banana is ready through the Google Interactions API.',
+    subscriptionReadyDetail: 'Google OAuth is connected for direct Nano Banana requests.',
+    plannedDetail: 'Google Nano Banana adapter is available.',
+    missingDetail: 'Add a Google API key or connect Google OAuth in Studio Settings.',
+  },
+  {
+    providerId: 'antigravity',
+    label: 'Antigravity',
+    runtimeKind: 'agent_cli',
+    hasAdapter: true,
+    requiresSecret: false,
+    requiresLocalRuntime: true,
+    activeDetail: 'Antigravity image generation is ready through the authenticated local CLI.',
+    plannedDetail: 'Antigravity adapter is available.',
+    missingDetail: 'Install Antigravity CLI and complete its local login.',
   },
   {
     providerId: 'fal',
@@ -96,8 +109,12 @@ export function readProviderCapabilities(
   codexRuntime?: Pick<CodexRuntimeDoctorReport, 'canRunJobs'>,
   grokRuntime?: GrokRuntimeDoctorReport,
   subscriptionReady?: { codexHttpReady?: boolean; grokHttpReady?: boolean },
+  antigravityRuntime?: AntigravityRuntimeDoctorReport,
 ): GenerationProviderCapabilitiesResponse {
-  const readiness = createProviderReadinessMaps(env, grokRuntime, subscriptionReady);
+  const readiness = createProviderReadinessMaps(env, grokRuntime, {
+    ...subscriptionReady,
+    antigravityRuntime,
+  });
   readiness.localRuntimeConfigured.codex =
     (codexRuntime?.canRunJobs ?? true) || Boolean(readiness.subscriptionAuthConfigured.codex);
 

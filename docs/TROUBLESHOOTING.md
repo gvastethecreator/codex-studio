@@ -127,6 +127,41 @@ A run without references is direct image generation.
 Studio creates one Persistent Job per requested batch image.
 Each Grok session still produces exactly one image.
 
+### Google Nano Banana is missing or blocked
+
+Symptoms: the Google Settings card shows `not_configured`, Sign in cannot start, or a Google Job is rejected before execution.
+
+```bash
+bun run providers:preflight -- --provider=google
+```
+
+Use one of these credential paths:
+
+- Set `GOOGLE_API_KEY` or `GEMINI_API_KEY` to a restricted Gemini API key.
+- Set `GOOGLE_OAUTH_CLIENT_ID` and `GOOGLE_CLOUD_PROJECT_ID`, then connect Google from Studio Settings. Add `GOOGLE_OAUTH_CLIENT_SECRET` only when your Desktop app client requires it.
+
+The Google Cloud project must have the Generative Language API enabled. OAuth users also need permission to consume services in the billing project. The preflight reports the missing field without returning its value.
+
+Studio supports `gemini-3.1-flash-lite-image`, `gemini-3.1-flash-image`, and `gemini-3-pro-image`. Flash Lite produces 1K images only. Remove an old `gemini-2.5-flash-image` override before retrying.
+
+The OAuth callback binds to `127.0.0.1` on a temporary port. If the browser cannot return to Studio, allow local loopback traffic, cancel the pending login, and retry. A state mismatch closes that login. Studio does not reuse credentials from Antigravity, Gemini CLI, a browser profile, or another token store.
+
+### Antigravity is missing or blocked
+
+Symptoms: the Antigravity Settings card shows `not_configured`, or the Job fails before the CLI starts.
+
+```bash
+agy --version
+agy models
+bun run providers:preflight -- --provider=antigravity
+```
+
+Studio requires a current CLI with the headless stream, sandbox, model, and permission controls. Open `agy` interactively and complete Google authentication when `agy models` reports an authentication error. Set `STUDIO_ANTIGRAVITY_CLI_PATH` to an absolute native executable path only when normal discovery selects the wrong binary.
+
+Antigravity Jobs allow one `generate_image` call and one output image. Managed edit sources must already be inside the Job's captured Studio Library. Studio stages copies in its temporary workspace, does not pass other provider keys to the CLI, and does not delete Antigravity's artifact history.
+
+A ready preflight proves CLI, login, flags, and model discovery. It does not prove image credits or account entitlement. A live generation remains the final external-account check.
+
 ### Only the UI is running
 
 Symptoms: `dev:ui` opens but jobs and assets do not sync.

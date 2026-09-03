@@ -119,4 +119,32 @@ describe('subscription auth store', () => {
     expect(() => store.read()).toThrow('credential store is corrupted');
     expect(readFileSync(filePath, 'utf8')).toBe('{broken');
   });
+
+  it('migrates a version 1 store without changing Codex or xAI credentials', () => {
+    const { dir, filePath, store } = makeStore();
+    dirs.push(dir);
+    const record = {
+      status: 'logged_in',
+      accessToken: 'existing-access',
+      refreshToken: 'existing-refresh',
+      expiresAt: '2026-09-03T00:00:00.000Z',
+      accountLabel: 'existing-user',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2026-09-01T00:00:00.000Z',
+    };
+    writeFileSync(
+      filePath,
+      JSON.stringify({ version: 1, providers: { codex: record, xai: record } }),
+      'utf8',
+    );
+
+    expect(store.readProvider('codex').accessToken).toBe('existing-access');
+    expect(store.readProvider('xai').refreshToken).toBe('existing-refresh');
+    expect(store.readProvider('google')).toMatchObject({
+      status: 'logged_out',
+      accessToken: null,
+      refreshToken: null,
+    });
+  });
 });

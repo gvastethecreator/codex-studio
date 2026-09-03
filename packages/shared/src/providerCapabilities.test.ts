@@ -72,6 +72,26 @@ describe('providerCapabilities', () => {
     );
   });
 
+  it('marks Google executable from OAuth without an API key', () => {
+    const report = createGenerationProviderCapabilities({
+      settings: { defaultProviderId: 'google' },
+      subscriptionAuthConfigured: { google: true },
+      subscriptionAuthState: { google: 'logged_in' },
+    });
+
+    expect(report.providers).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          providerId: 'google',
+          runtimeKind: 'hosted_api',
+          status: 'active',
+          canExecute: true,
+          subscriptionAuthState: 'logged_in',
+        }),
+      ]),
+    );
+  });
+
   it('marks configured local workflow adapters executable when runtime is ready', () => {
     const report = createGenerationProviderCapabilities({
       settings: { defaultProviderId: 'comfy' },
@@ -86,6 +106,25 @@ describe('providerCapabilities', () => {
           canExecute: true,
           isDefault: true,
           secretState: 'not_required',
+        }),
+      ]),
+    );
+  });
+
+  it('marks Antigravity executable only when its local runtime is ready', () => {
+    const report = createGenerationProviderCapabilities({
+      settings: { defaultProviderId: 'antigravity' },
+      localRuntimeConfigured: { antigravity: true },
+    });
+
+    expect(report.providers).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          providerId: 'antigravity',
+          runtimeKind: 'agent_cli',
+          status: 'active',
+          canExecute: true,
+          isDefault: true,
         }),
       ]),
     );

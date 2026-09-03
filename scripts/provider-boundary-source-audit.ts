@@ -17,6 +17,7 @@ const forbiddenMarkers = [
   'createGrokImagineExecutor',
   'createGrokImagineHttpExecutor',
   'createGrokRuntimeExecutor',
+  'createAntigravityImageExecutor',
   'createCodexResponsesImageExecutor',
   'googleExecutor',
   'falExecutor',
@@ -24,6 +25,7 @@ const forbiddenMarkers = [
   'grokImagineExecutor',
   'grokImagineHttpExecutor',
   'grokRuntimeExecutor',
+  'antigravityImageExecutor',
   'codexResponsesImageExecutor',
 ] as const;
 

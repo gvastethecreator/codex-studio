@@ -32,6 +32,7 @@ const loggedOutStatus: SubscriptionAuthPublicStatus = {
   expiresAt: null,
   lastError: null,
   verificationUrl: null,
+  authorizationUrl: null,
   userCode: null,
 };
 
@@ -82,5 +83,21 @@ describe('SubscriptionAuthControls', () => {
     expect((await screen.findByRole('alert')).textContent).toContain(
       'Unable to copy. Copy the code manually.',
     );
+  });
+
+  it('opens Google authorization without showing a device code', async () => {
+    vi.mocked(getSubscriptionAuthStatus).mockResolvedValueOnce({
+      ...loggedOutStatus,
+      providerId: 'google',
+      status: 'pending',
+      authorizationUrl: 'https://accounts.google.com/o/oauth2/v2/auth?state=safe',
+    });
+
+    render(<SubscriptionAuthControls providerId="google" />);
+
+    const link = await screen.findByRole('link', { name: 'Open Google' });
+    expect(link.getAttribute('href')).toContain('accounts.google.com');
+    expect(screen.queryByRole('button', { name: 'Copy user code' })).toBeNull();
+    expect(screen.getByText(/Google Cloud project for billing/)).toBeTruthy();
   });
 });

@@ -213,6 +213,19 @@ export function findFirstHostedImageUrl(value: unknown): string | null {
 export function findFirstInlineImageData(value: unknown): InlineImageData | null {
   if (!isRecord(value)) return null;
 
+  const outputImage = isRecord(value.output_image) ? value.output_image : null;
+  if (outputImage && typeof outputImage.data === 'string') {
+    return {
+      data: outputImage.data,
+      mimeType: typeof outputImage.mime_type === 'string' ? outputImage.mime_type : null,
+    };
+  }
+
+  if (isRecord(value.interaction)) {
+    const image = findFirstInlineImageData(value.interaction);
+    if (image) return image;
+  }
+
   const inlineData = isRecord(value.inlineData) ? value.inlineData : null;
   if (inlineData && typeof inlineData.data === 'string') {
     return {
@@ -236,6 +249,20 @@ export function findFirstInlineImageData(value: unknown): InlineImageData | null
     for (const part of parts) {
       const image = findFirstInlineImageData(part);
       if (image) return image;
+    }
+  }
+
+  const steps = Array.isArray(value.steps) ? value.steps : [];
+  for (const step of steps) {
+    if (!isRecord(step)) continue;
+    const content = Array.isArray(step.content) ? step.content : [];
+    for (const block of content) {
+      if (isRecord(block) && block.type === 'image' && typeof block.data === 'string') {
+        return {
+          data: block.data,
+          mimeType: typeof block.mime_type === 'string' ? block.mime_type : null,
+        };
+      }
     }
   }
 

@@ -1,4 +1,4 @@
-export const SUBSCRIPTION_PROVIDER_IDS = ['codex', 'xai'] as const;
+export const SUBSCRIPTION_PROVIDER_IDS = ['codex', 'xai', 'google'] as const;
 
 export type SubscriptionProviderId = (typeof SUBSCRIPTION_PROVIDER_IDS)[number];
 
@@ -11,14 +11,16 @@ export interface SubscriptionAuthPublicStatus {
   expiresAt: string | null;
   lastError: string | null;
   verificationUrl: string | null;
+  authorizationUrl: string | null;
   userCode: string | null;
 }
 
 export interface SubscriptionAuthStartResponse {
   providerId: SubscriptionProviderId;
   status: 'pending';
-  verificationUrl: string;
-  userCode: string;
+  verificationUrl: string | null;
+  authorizationUrl: string | null;
+  userCode: string | null;
   expiresAt: string;
 }
 
@@ -33,7 +35,8 @@ export function isSubscriptionProviderId(value: string): value is SubscriptionPr
 }
 
 export function generationProviderIdForSubscription(providerId: SubscriptionProviderId) {
-  return providerId === 'xai' ? 'grok' : 'codex';
+  if (providerId === 'xai') return 'grok';
+  return providerId;
 }
 
 export function subscriptionProviderIdForGeneration(
@@ -41,5 +44,6 @@ export function subscriptionProviderIdForGeneration(
 ): SubscriptionProviderId | null {
   if (providerId === 'codex') return 'codex';
   if (providerId === 'grok') return 'xai';
+  if (providerId === 'google') return 'google';
   return null;
 }

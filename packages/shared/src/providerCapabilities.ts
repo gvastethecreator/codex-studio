@@ -94,13 +94,25 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
   },
   {
     providerId: 'google',
-    label: 'Google image API',
+    label: 'Google Nano Banana',
     runtimeKind: 'hosted_api',
     hasAdapter: true,
     requiresSecret: true,
-    activeDetail: 'Google adapter is available.',
-    plannedDetail: 'Google adapter is available once backend Provider Secret is configured.',
-    missingDetail: 'Add a backend Google API key before enabling this adapter.',
+    activeDetail: 'Nano Banana is ready through the Google Interactions API.',
+    subscriptionReadyDetail: 'Google OAuth is connected for direct Nano Banana requests.',
+    plannedDetail: 'Google Nano Banana adapter is available.',
+    missingDetail: 'Add a Google API key or connect Google OAuth in Studio Settings.',
+  },
+  {
+    providerId: 'antigravity',
+    label: 'Antigravity',
+    runtimeKind: 'agent_cli',
+    hasAdapter: true,
+    requiresSecret: false,
+    requiresLocalRuntime: true,
+    activeDetail: 'Antigravity image generation is ready through the authenticated local CLI.',
+    plannedDetail: 'Antigravity adapter is available.',
+    missingDetail: 'Install Antigravity CLI and complete its local login.',
   },
   {
     providerId: 'fal',
@@ -147,7 +159,7 @@ function resolveSubscriptionAuthState(
   providerId: GenerationProviderId,
   subscriptionAuthState: Partial<Record<GenerationProviderId, ProviderSubscriptionAuthState>>,
 ): ProviderSubscriptionAuthState {
-  if (providerId === 'codex' || providerId === 'grok') {
+  if (providerId === 'codex' || providerId === 'grok' || providerId === 'google') {
     return subscriptionAuthState[providerId] ?? 'logged_out';
   }
   return 'not_applicable';
@@ -167,7 +179,8 @@ export function createGenerationProviderCapabilities({
       const subscriptionReady = Boolean(subscriptionAuthConfigured[provider.providerId]);
       const localReady = Boolean(localRuntimeConfigured[provider.providerId]);
       const runtimeReady = provider.requiresLocalRuntime ? localReady || subscriptionReady : true;
-      const configured = (!provider.requiresSecret || secretReady) && runtimeReady;
+      const credentialReady = !provider.requiresSecret || secretReady || subscriptionReady;
+      const configured = credentialReady && runtimeReady;
       const canExecute = provider.hasAdapter && configured;
       const status: ProviderCapabilityStatus = canExecute
         ? 'active'

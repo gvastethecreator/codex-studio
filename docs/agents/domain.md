@@ -1,27 +1,15 @@
-# Domain docs
+# Domain documents
 
-Read these documents before you explore or change Codex Studio:
+Codex Studio uses one product context. Its shared language and decisions can live in these files when the project needs them:
 
-- Read `CONTEXT.md` for canonical product terms.
-- Read `docs/ARCHITECTURE.md` for the current system shape.
-- Read the relevant files under `docs/adr/` for accepted decisions.
-- Read `SKILLS.md` for provider, recipe, preset, output, storage, and setup workflows.
+- Root `CONTEXT.md`: product glossary, invariants, actors, and boundaries.
+- `docs/adr/`: published decisions that contributors must preserve.
+- `.scratch/architecture/`: local design spikes and audits.
 
-## Layout
+Read the root context and relevant ADRs before changing a named domain concept. If a file does not exist, continue with terms already used by product code and user documentation.
 
-Codex Studio uses one domain context:
+Tickets and in-flight plans never live under `docs/`. Store ticket mirrors under `.scratch/codex-studio/issues/` and decision maps under `.scratch/wayfinder/`.
 
-```text
-/
-├── CONTEXT.md
-├── docs/
-│   ├── ARCHITECTURE.md
-│   └── adr/
-└── SKILLS.md
-```
+Use one term for each concept. Current core terms include `Studio Library`, `Catalog Entry`, `Persistent Job`, `Generation Task Spec`, `Provider Input`, `Provider Secret`, and `External Output Source`.
 
-Use the terms from `CONTEXT.md` in Issues, plans, tests, and implementation notes. Do not replace a canonical term with a synonym that the glossary rejects.
-
-If a proposal conflicts with an ADR, name the ADR and the conflict. Do not replace the accepted decision in silence.
-
-If a needed term is missing, record the gap for a focused domain review. Do not expand `CONTEXT.md` during unrelated work.
+Surface any conflict with an existing ADR before implementation.

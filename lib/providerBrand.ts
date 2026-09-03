@@ -2,6 +2,7 @@ export function providerBrandWellClass(providerId: string) {
   if (providerId === 'codex') return 'border-emerald-400/2 bg-emerald-500/15 text-emerald-100';
   if (providerId === 'grok') return 'border-white/2 bg-zinc-950 text-white';
   if (providerId === 'google') return 'border-sky-400/2 bg-sky-500/15 text-sky-100';
+  if (providerId === 'antigravity') return 'border-violet-400/2 bg-violet-500/15 text-violet-100';
   if (providerId === 'fal') return 'border-fuchsia-400/2 bg-fuchsia-500/15 text-fuchsia-100';
   if (providerId === 'comfy') return 'border-orange-400/2 bg-orange-500/15 text-orange-100';
   if (providerId === 'dry_run') return 'border-white/2 bg-white/[0.06] text-zinc-300';
@@ -12,6 +13,7 @@ export function providerBrandChipLabel(providerId: string) {
   if (providerId === 'codex') return 'Codex';
   if (providerId === 'grok') return 'Grok';
   if (providerId === 'google') return 'Google';
+  if (providerId === 'antigravity') return 'Antigravity';
   if (providerId === 'fal') return 'fal.ai';
   if (providerId === 'comfy') return 'Comfy';
   if (providerId === 'dry_run') return 'Dry run';

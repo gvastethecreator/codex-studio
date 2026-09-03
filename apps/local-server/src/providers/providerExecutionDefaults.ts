@@ -1,8 +1,9 @@
 import type { GenerationProviderId, JobExecutionOptions } from '../../../../packages/shared/src';
+import { DEFAULT_GOOGLE_IMAGE_MODEL } from '../../../../packages/shared/src/googleImageContract';
 import { getSettings } from '../config';
 import { readGrokRuntimeDoctor, type GrokRuntimeDoctorReport } from '../grokRuntimeDoctor';
 
-export const DEFAULT_GOOGLE_IMAGE_MODEL = 'gemini-2.5-flash-image';
+export { DEFAULT_GOOGLE_IMAGE_MODEL };
 export const DEFAULT_FAL_IMAGE_MODEL = 'fal-ai/flux/schnell';
 export const DEFAULT_COMFY_MODEL = 'workflow-template';
 
@@ -37,6 +38,14 @@ export function resolveBootstrapProviderExecutionOptions(
     const grokRuntime = options.grokRuntime ?? readGrokRuntimeDoctor();
     return {
       model: override || grokRuntime.defaultModel || '',
+      reasoningEffort: 'low',
+      serviceTier: null,
+    };
+  }
+
+  if (providerId === 'antigravity') {
+    return {
+      model: env.ANTIGRAVITY_IMAGE_MODEL?.trim() || '',
       reasoningEffort: 'low',
       serviceTier: null,
     };

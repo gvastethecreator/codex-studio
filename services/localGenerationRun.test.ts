@@ -116,6 +116,13 @@ describe('localGenerationRun', () => {
         providerId: 'grok',
       }),
     ).toEqual([]);
+    expect(
+      listQueuedGenerationAttachments({
+        config,
+        inputImage: { src: original.dataUrl, localPath: original.localPath },
+        providerId: 'antigravity',
+      }),
+    ).toEqual([]);
 
     await expect(
       buildJobAssets({

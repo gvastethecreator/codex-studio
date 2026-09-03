@@ -24,7 +24,7 @@ The main Codex path does not need `OPENAI_API_KEY`. Assets, job history, logs, a
 - Generate and edit images in the studio UI.
 - Browse workspaces, recipes, recent jobs, and assets in one place.
 - Keep job history and catalog metadata in local SQLite.
-- Use Codex first. Optional providers such as Grok Imagine stay behind the backend.
+- Use Codex first. Optional Grok Imagine, Google Nano Banana, and Antigravity providers stay behind the backend.
 - Keep local assets out of git.
 
 ## Product tour
@@ -53,7 +53,7 @@ The first-run surface is a detect, consent, mutate, stream, re-validate loop. On
 5. Everything else ready except Codex Product Runtime, and Studio ChatGPT Sign in is not ready: Start app-server.
 6. Ready: Open Studio.
 
-Ask Codex is an extra path when Codex CLI exists. Copy prompt stays a fallback. Grok Imagine is an optional provider row, not a Studio installer.
+Ask Codex is an extra path when Codex CLI exists. Copy prompt stays a fallback. Optional providers are separate backend rows, not Studio installers.
 
 The default Studio Library is a folder named `Codex Studio` in your user home. Existing `STUDIO_LIBRARY_DIR` is kept. The app does not auto-migrate `AI-Studio-Library`. New generations go under `outputs/<workspace>/` inside that library.
 
@@ -65,7 +65,23 @@ To use Grok Imagine:
 2. `XAI_API_KEY` in `.env.local` also works on the same HTTP path.
 3. Make sure that `bun run providers:preflight -- --provider=grok` reports `canAttempt=true`.
 
-Studio stores xAI and ChatGPT tokens in the current user's private app-data folder, separate from the portable or shareable Studio Library and never in SQLite. Grok Build CLI login stays under `GROK_HOME` and is automatic fallback. It does not store `XAI_API_KEY` in SQLite. Home and the Styles recipe support Codex and Grok. Styles can generate from a prompt or from managed library references. Codex stays the first default provider.
+To use Google Nano Banana directly:
+
+1. Set `GOOGLE_API_KEY` or `GEMINI_API_KEY` to a restricted Gemini key; or enable the Generative Language API, create a Desktop app OAuth client, and set `GOOGLE_OAUTH_CLIENT_ID` plus `GOOGLE_CLOUD_PROJECT_ID`.
+2. For OAuth, add your account to the consent-screen test users when the app is still in testing, then connect Google from Studio Settings. `GOOGLE_OAUTH_CLIENT_SECRET` is optional.
+3. Confirm that `bun run providers:preflight -- --provider=google` reports `canAttempt=true`.
+
+Direct requests use the Interactions API and current Nano Banana models. An API key takes priority over OAuth. OAuth requests charge quota to `GOOGLE_CLOUD_PROJECT_ID`. Studio requests `store: false`, but Google's service terms and account controls still apply.
+
+To use Nano Banana through Antigravity:
+
+1. Install the official `agy` CLI, open it interactively once, and complete its Google authentication.
+2. Run `agy models`, then confirm that `bun run providers:preflight -- --provider=antigravity` reports `canAttempt=true`.
+3. Select Antigravity in Studio. Its model setting chooses an Antigravity reasoning model; Nano Banana runs behind the CLI as the `generate_image` tool.
+
+Studio never reads or copies Antigravity credentials. It runs one sandboxed headless conversation in a temporary workspace, imports one validated image, and leaves Antigravity's own artifact history in place.
+
+Studio stores xAI, Google, and ChatGPT OAuth tokens in the current user's private app-data folder, separate from the portable or shareable Studio Library and never in SQLite. Grok Build and Antigravity keep their own CLI login state. Provider API keys stay in the backend environment. Home and the Styles recipe support Codex, Grok, Google, and Antigravity. Styles can generate from a prompt or from managed library references. Codex stays the first default provider.
 
 App readiness is the source of truth. Bun and Codex version strings are only diagnosis. If the Codex path or app-server support is unclear, run `bun run runtime:doctor`.
 
@@ -122,9 +138,9 @@ Preferred Output Path in Settings is an External Output Source scan hint. Genera
 
 If you use optional external adapters, keep Provider Secrets in backend environment variables. Do not put them in SQLite, logs, screenshots, docs, or committed files.
 
-Grok Build CLI login stays under `GROK_HOME`. Studio Sign in tokens stay in the current user's private app-data folder.
+Grok Build CLI login stays under `GROK_HOME`. Antigravity owns its CLI login and artifacts. Studio Sign in tokens stay in the current user's private app-data folder.
 
-Use the provider control in the top Command Center to switch the next image job between Codex and Grok. The control shows runtime readiness. It stores the choice in Studio Settings. Deeper diagnostics stay in the same menu. Codex stays the initial default.
+Use the provider control in the top Command Center to switch the next image job between Codex, Grok, Google, and Antigravity. The control shows runtime readiness. It stores the choice in Studio Settings. Deeper diagnostics stay in the same menu. Codex stays the initial default.
 
 ## Useful commands
 
@@ -171,7 +187,9 @@ Codex Studio is in open-source preview.
 - Local development is documented and works.
 - The default path is Codex-first and local-first.
 - Optional provider adapters are backend integrations, not the product center.
-- Grok Imagine image generation and managed local image edits use Studio Sign in, `XAI_API_KEY`, or Grok Build CLI login. Native video is a later media-domain decision.
+- Grok Imagine image generation and managed local image edits use Studio Sign in, `XAI_API_KEY`, or Grok Build CLI login.
+- Google Nano Banana uses the Interactions API through a restricted API key or Studio-owned desktop OAuth. Antigravity is a separate local CLI path and never supplies Google credentials to Studio.
+- Native video is a later media-domain decision.
 - Desktop packaging is not the user channel. Use the browser plus portable launchers, or `bun run dev` in a checkout.
 
 ---

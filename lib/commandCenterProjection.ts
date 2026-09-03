@@ -96,17 +96,23 @@ export function summarizeCommandCenterRuntimeStatus(
 const QUICK_SWITCH_PROVIDER_IDS = [
   'codex',
   'grok',
+  'google',
+  'antigravity',
 ] as const satisfies readonly GenerationProviderId[];
 
 function resolveProviderFallbackLabel(providerId: GenerationProviderId) {
   if (providerId === 'codex') return 'Codex app-server';
   if (providerId === 'grok') return 'Grok Imagine';
+  if (providerId === 'google') return 'Google Nano Banana';
+  if (providerId === 'antigravity') return 'Antigravity';
   return providerId;
 }
 
 export function resolveProviderShortLabel(providerId: GenerationProviderId) {
   if (providerId === 'codex') return 'Codex';
   if (providerId === 'grok') return 'Grok';
+  if (providerId === 'google') return 'Google';
+  if (providerId === 'antigravity') return 'AGY';
   return providerId;
 }
 
@@ -131,9 +137,7 @@ function buildProviderProjection({
   compactMode: boolean;
 }): CommandCenterProviderProjection {
   const capability =
-    providerCapabilities?.providers.find((provider) => provider.providerId === providerId) ??
-    providerCapabilities?.providers.find((provider) => provider.isDefault) ??
-    null;
+    providerCapabilities?.providers.find((provider) => provider.providerId === providerId) ?? null;
   const preflight =
     providerRuntimePreflight?.providers.find((provider) => provider.providerId === providerId) ??
     null;

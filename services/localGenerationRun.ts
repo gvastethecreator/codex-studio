@@ -156,7 +156,7 @@ export function listQueuedGenerationAttachments({
   providerId?: GenerationProviderId | null;
 }) {
   if (!inputImage) return config.attachments;
-  if (providerId === 'grok') return [];
+  if (providerId === 'grok' || providerId === 'antigravity') return [];
   return config.attachments.filter((attachment) => attachment.id.startsWith('mask-'));
 }
 

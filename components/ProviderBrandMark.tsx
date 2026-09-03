@@ -20,6 +20,7 @@ function ProviderGlyph({ providerId, size }: { providerId: string; size: number 
   if (providerId === 'codex') return <IconBrandOpenai size={size} stroke={1.7} />;
   if (providerId === 'grok') return <IconBrandX size={size} stroke={1.7} />;
   if (providerId === 'google') return <IconBrandGoogle size={size} stroke={1.7} />;
+  if (providerId === 'antigravity') return <IconTopologyStar3 size={size} stroke={1.7} />;
   if (providerId === 'fal') return <IconBolt size={size} stroke={1.7} />;
   if (providerId === 'comfy') return <IconTopologyStar3 size={size} stroke={1.7} />;
   if (providerId === 'dry_run') return <IconFlask size={size} stroke={1.7} />;

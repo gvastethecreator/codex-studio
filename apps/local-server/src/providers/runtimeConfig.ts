@@ -10,12 +10,25 @@ import {
   DEFAULT_GROK_IMAGINE_HTTP_MODEL,
   GROK_IMAGINE_HTTP_MODELS,
 } from '../../../../packages/shared/src/grokImagineContract';
+import {
+  DEFAULT_GOOGLE_IMAGE_MODEL,
+  GOOGLE_IMAGE_MODELS,
+} from '../../../../packages/shared/src/googleImageContract';
 import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
+import {
+  readAntigravityRuntimeDoctor,
+  type AntigravityRuntimeDoctorReport,
+} from '../antigravityRuntimeDoctor';
 import { readGrokRuntimeDoctor, type GrokRuntimeDoctorReport } from '../grokRuntimeDoctor';
-import { isCodexHttpCredentialReady, isGrokHttpCredentialReady } from '../auth/tokens';
+import {
+  isCodexHttpCredentialReady,
+  isGoogleOAuthCredentialReady,
+  isGrokHttpCredentialReady,
+} from '../auth/tokens';
 import { getSubscriptionAuthStore } from '../auth/store';
+import { readGoogleOAuthConfig } from '../auth/googleOAuthConfig';
 
-export type ExternalExecutableProviderId = 'grok' | 'google' | 'fal' | 'comfy';
+export type ExternalExecutableProviderId = 'grok' | 'google' | 'antigravity' | 'fal' | 'comfy';
 
 interface ExternalProviderRuntimeDefinition {
   providerId: ExternalExecutableProviderId;
@@ -26,12 +39,6 @@ interface ExternalProviderRuntimeDefinition {
 }
 
 const EXTERNAL_PROVIDER_RUNTIMES: ExternalProviderRuntimeDefinition[] = [
-  {
-    providerId: 'google',
-    runtimeKind: 'hosted_api',
-    secretEnvNames: ['GOOGLE_API_KEY', 'GEMINI_API_KEY', 'NANO_BANANA_API_KEY'],
-    localRuntimeEnvNames: [],
-  },
   {
     providerId: 'fal',
     runtimeKind: 'hosted_api',
@@ -53,6 +60,7 @@ export function isExternalExecutableProviderId(
   return (
     providerId === 'grok' ||
     providerId === 'google' ||
+    providerId === 'antigravity' ||
     providerId === 'fal' ||
     providerId === 'comfy'
   );
@@ -144,7 +152,56 @@ function createPreflight(
 export function readExternalProviderRuntimePreflights(
   env: Record<string, string | undefined> = process.env,
 ) {
-  return EXTERNAL_PROVIDER_RUNTIMES.map((definition) => createPreflight(definition, env));
+  return [
+    createGoogleRuntimePreflight(env),
+    ...EXTERNAL_PROVIDER_RUNTIMES.map((definition) => createPreflight(definition, env)),
+  ];
+}
+
+export function createGoogleRuntimePreflight(
+  env: Record<string, string | undefined> = process.env,
+): ProviderRuntimePreflight {
+  const apiKeySource = firstConfiguredEnvName(env, [
+    'GOOGLE_API_KEY',
+    'GEMINI_API_KEY',
+    'NANO_BANANA_API_KEY',
+  ]);
+  let oauthConfigurationError: string | null = null;
+  try {
+    readGoogleOAuthConfig(env);
+  } catch (error) {
+    oauthConfigurationError =
+      error instanceof Error ? error.message : 'Google OAuth configuration is invalid.';
+  }
+  const storedAuthState = readStoredSubscriptionState('google');
+  const oauthReady = !oauthConfigurationError && storedAuthState === 'logged_in';
+  const credentialReady = Boolean(apiKeySource) || oauthReady;
+  const diagnostics: string[] = [];
+  if (apiKeySource) {
+    diagnostics.push(`Google API key detected in ${apiKeySource}.`);
+  } else if (oauthReady) {
+    diagnostics.push('Google OAuth and Cloud billing project are ready.');
+  } else if (oauthConfigurationError) {
+    diagnostics.push(oauthConfigurationError);
+  } else if (storedAuthState === 'refresh_failed') {
+    diagnostics.push('Google OAuth refresh failed. Sign in to Google again in Studio Settings.');
+  } else {
+    diagnostics.push(
+      'Google OAuth is configured but disconnected. Connect Google in Studio Settings.',
+    );
+  }
+  return {
+    providerId: 'google',
+    runtimeKind: 'hosted_api',
+    secretState: credentialReady ? 'configured' : 'missing',
+    secretSource: apiKeySource ?? (oauthReady ? 'Studio Google OAuth' : null),
+    localRuntimeState: 'not_required',
+    localRuntimeSource: null,
+    canAttemptExecution: credentialReady,
+    diagnostics,
+    availableModels: [...GOOGLE_IMAGE_MODELS],
+    defaultModel: DEFAULT_GOOGLE_IMAGE_MODEL,
+  };
 }
 
 export function createCodexRuntimePreflight(
@@ -208,6 +265,27 @@ export function createGrokRuntimePreflight(
   };
 }
 
+export function createAntigravityRuntimePreflight(
+  runtime: AntigravityRuntimeDoctorReport,
+): ProviderRuntimePreflight {
+  const unavailable = runtime.issues.some((issue) => issue.code === 'antigravity_cli_unavailable');
+  return {
+    providerId: 'antigravity',
+    runtimeKind: 'agent_cli',
+    secretState: 'not_required',
+    secretSource: null,
+    localRuntimeState: runtime.canRunJobs ? 'configured' : unavailable ? 'missing' : 'invalid',
+    localRuntimeSource: runtime.selectedExecutable,
+    canAttemptExecution: runtime.canRunJobs,
+    diagnostics:
+      runtime.issues.length > 0
+        ? runtime.issues.map((issue) => `${issue.message} ${issue.action}`)
+        : [runtime.recommendedAction],
+    availableModels: runtime.availableModels,
+    defaultModel: runtime.defaultModel,
+  };
+}
+
 function uniqueStrings(values: readonly string[]) {
   return [...new Set(values.filter(Boolean))];
 }
@@ -232,10 +310,12 @@ export function readGenerationProviderRuntimePreflights(
   env: Record<string, string | undefined> = process.env,
   codexRuntime: CodexRuntimeDoctorReport = readCodexRuntimeDoctor(),
   grokRuntime: GrokRuntimeDoctorReport = readGrokRuntimeDoctor(),
+  antigravityRuntime: AntigravityRuntimeDoctorReport = readAntigravityRuntimeDoctor(),
 ) {
   return [
     createCodexRuntimePreflight(codexRuntime),
     createGrokRuntimePreflight(grokRuntime, { env }),
+    createAntigravityRuntimePreflight(antigravityRuntime),
     ...readExternalProviderRuntimePreflights(env),
   ];
 }
@@ -248,6 +328,9 @@ export function getExternalProviderRuntimePreflight(
   if (providerId === 'grok') {
     return createGrokRuntimePreflight(grokRuntime ?? readGrokRuntimeDoctor(), { env });
   }
+  if (providerId === 'antigravity') {
+    return createAntigravityRuntimePreflight(readAntigravityRuntimeDoctor());
+  }
   return (
     readExternalProviderRuntimePreflights(env).find(
       (preflight) => preflight.providerId === providerId,
@@ -258,7 +341,11 @@ export function getExternalProviderRuntimePreflight(
 export function createProviderReadinessMaps(
   env: Record<string, string | undefined> = process.env,
   grokRuntime: GrokRuntimeDoctorReport = readGrokRuntimeDoctor(),
-  options: { codexHttpReady?: boolean; grokHttpReady?: boolean } = {},
+  options: {
+    codexHttpReady?: boolean;
+    grokHttpReady?: boolean;
+    antigravityRuntime?: AntigravityRuntimeDoctorReport;
+  } = {},
 ) {
   const secretConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
   const localRuntimeConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
@@ -266,7 +353,8 @@ export function createProviderReadinessMaps(
   const subscriptionAuthState: Partial<
     Record<GenerationProviderId, ProviderSubscriptionAuthState>
   > = {
-    google: 'not_applicable',
+    google: 'logged_out',
+    antigravity: 'not_applicable',
     fal: 'not_applicable',
     comfy: 'not_applicable',
     dry_run: 'not_applicable',
@@ -277,6 +365,12 @@ export function createProviderReadinessMaps(
     localRuntimeConfigured[preflight.providerId] =
       preflight.localRuntimeState === 'not_required' || preflight.canAttemptExecution;
   }
+
+  const googleOAuthReady = safeGoogleOAuthReady(env);
+  subscriptionAuthConfigured.google = googleOAuthReady;
+  subscriptionAuthState.google = readStoredSubscriptionState('google');
+  localRuntimeConfigured.antigravity = Boolean(options.antigravityRuntime?.canRunJobs);
+  secretConfigured.antigravity = true;
 
   const grokHttpReady = options.grokHttpReady ?? safeGrokHttpReady(env);
   const grokPreflight = createGrokRuntimePreflight(grokRuntime, { env, httpReady: grokHttpReady });
@@ -296,12 +390,20 @@ export function createProviderReadinessMaps(
   };
 }
 
-function readStoredSubscriptionState(providerId: 'codex' | 'xai') {
+function readStoredSubscriptionState(providerId: 'codex' | 'xai' | 'google') {
   try {
     const record = getSubscriptionAuthStore().readProvider(providerId);
     if (record.status === 'logged_in' && !record.accessToken) return 'logged_out' as const;
     return record.status;
   } catch {
     return 'logged_out' as const;
+  }
+}
+
+function safeGoogleOAuthReady(env: Record<string, string | undefined>) {
+  try {
+    return isGoogleOAuthCredentialReady(undefined, env);
+  } catch {
+    return false;
   }
 }

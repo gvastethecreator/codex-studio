@@ -9,11 +9,12 @@ import {
 
 describe('provider brand chrome', () => {
   it('gives each built-in provider a distinct well and chip label', () => {
-    const wells = ['codex', 'grok', 'google', 'fal', 'comfy', 'dry_run'].map(
+    const wells = ['codex', 'grok', 'google', 'antigravity', 'fal', 'comfy', 'dry_run'].map(
       providerBrandWellClass,
     );
-    expect(new Set(wells).size).toBe(6);
+    expect(new Set(wells).size).toBe(7);
     expect(providerBrandChipLabel('codex')).toBe('Codex');
+    expect(providerBrandChipLabel('antigravity')).toBe('Antigravity');
     expect(providerBrandChipLabel('fal')).toBe('fal.ai');
     expect(providerBrandChipLabel('dry_run')).toBe('Dry run');
   });

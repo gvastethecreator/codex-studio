@@ -4,6 +4,8 @@ import {
   CODEX_ACCESS_TOKEN_REFRESH_SKEW_MS,
   CODEX_OAUTH_CLIENT_ID,
   CODEX_OAUTH_TOKEN_URL,
+  GOOGLE_ACCESS_TOKEN_REFRESH_SKEW_MS,
+  GOOGLE_OAUTH_TOKEN_URL,
   XAI_ACCESS_TOKEN_REFRESH_SKEW_MS,
   XAI_OAUTH_CLIENT_ID,
   XAI_OAUTH_TOKEN_URL,
@@ -11,6 +13,11 @@ import {
   studioUserAgent,
 } from './constants';
 import { readChatgptAccountId, readJwtAccountLabel, readJwtExpiryMs } from './jwt';
+import {
+  readGoogleOAuthClientCredentials,
+  readGoogleOAuthConfig,
+  resolveGoogleOAuthEndpoint,
+} from './googleOAuthConfig';
 import { readOAuthJson, safeOAuthText } from './oauthHttp';
 import { revokeSubscriptionToken } from './revoke';
 import {
@@ -264,6 +271,56 @@ async function refreshXaiToken(
   return payload;
 }
 
+async function refreshGoogleToken(
+  refreshToken: string,
+  fetchImpl: AuthFetch,
+  env: Record<string, string | undefined>,
+): Promise<Record<string, unknown>> {
+  let config: ReturnType<typeof readGoogleOAuthClientCredentials>;
+  let tokenUrl: string;
+  try {
+    config = readGoogleOAuthClientCredentials(env);
+    tokenUrl = resolveGoogleOAuthEndpoint(env.GOOGLE_OAUTH_TOKEN_URL, GOOGLE_OAUTH_TOKEN_URL);
+  } catch (error) {
+    throw new SubscriptionHttpError(
+      error instanceof Error ? error.message : 'Google OAuth configuration is invalid.',
+      { code: 'refresh_failed', fallbackAllowed: false },
+    );
+  }
+  let response: Response;
+  try {
+    response = await fetchImpl(tokenUrl, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'User-Agent': studioUserAgent(),
+      },
+      signal: AbortSignal.timeout(20_000),
+      body: formBody({
+        grant_type: 'refresh_token',
+        refresh_token: refreshToken,
+        client_id: config.clientId,
+        ...(config.clientSecret ? { client_secret: config.clientSecret } : {}),
+      }),
+      redirect: 'error',
+    });
+  } catch (error) {
+    throwRefreshTransportError(error);
+  }
+  const payload = await readRefreshPayload(response, 'Google');
+  if (!response.ok) {
+    const code = oauthErrorCode(payload);
+    const relogin = code === 'invalid_grant' || code === 'invalid_token' || response.status === 401;
+    throw new SubscriptionHttpError(oauthErrorMessage(payload, 'Google token refresh failed.'), {
+      code: relogin ? 'invalid_grant' : 'refresh_failed',
+      fallbackAllowed: !relogin && isTransientRefreshStatus(response.status),
+      httpStatus: response.status,
+    });
+  }
+  return payload;
+}
+
 const refreshLocks = new WeakMap<
   SubscriptionAuthStore,
   Map<SubscriptionProviderId, Promise<string>>
@@ -325,7 +382,9 @@ export async function getUsableAccessToken(
       const skew =
         providerId === 'codex'
           ? CODEX_ACCESS_TOKEN_REFRESH_SKEW_MS
-          : XAI_ACCESS_TOKEN_REFRESH_SKEW_MS;
+          : providerId === 'xai'
+            ? XAI_ACCESS_TOKEN_REFRESH_SKEW_MS
+            : GOOGLE_ACCESS_TOKEN_REFRESH_SKEW_MS;
       if (record.accessToken && !isExpired(record, now(), skew)) {
         settle(record.accessToken);
         return;
@@ -345,13 +404,16 @@ export async function getUsableAccessToken(
         const payload =
           providerId === 'codex'
             ? await refreshCodexToken(record.refreshToken, fetchImpl)
-            : await refreshXaiToken(record.refreshToken, fetchImpl);
+            : providerId === 'xai'
+              ? await refreshXaiToken(record.refreshToken, fetchImpl)
+              : await refreshGoogleToken(record.refreshToken, fetchImpl, env);
         let next: StoredSubscriptionTokens;
         try {
           next = tokensFromOAuthPayload(payload, record, now());
         } catch (error) {
           if (error instanceof SubscriptionHttpError && error.code === 'invalid_grant') {
-            const providerLabel = providerId === 'codex' ? 'Codex' : 'xAI';
+            const providerLabel =
+              providerId === 'codex' ? 'Codex' : providerId === 'xai' ? 'xAI' : 'Google';
             throw new SubscriptionHttpError(
               `${providerLabel} token refresh returned an invalid response.`,
               {
@@ -364,7 +426,7 @@ export async function getUsableAccessToken(
         }
         if (store.generation(providerId) !== generation) {
           try {
-            await revokeToken(providerId, next, { fetch: fetchImpl });
+            await revokeToken(providerId, next, { fetch: fetchImpl, env });
           } catch {
             // The local generation changed; never restore these newly issued tokens.
           }
@@ -412,6 +474,15 @@ export function readXaiApiKey(env: Record<string, string | undefined> = process.
   return env.XAI_API_KEY?.trim() || null;
 }
 
+export function readGoogleApiKey(env: Record<string, string | undefined> = process.env) {
+  return (
+    env.GOOGLE_API_KEY?.trim() ||
+    env.GEMINI_API_KEY?.trim() ||
+    env.NANO_BANANA_API_KEY?.trim() ||
+    null
+  );
+}
+
 export function invalidateStoredAccessToken(
   providerId: SubscriptionProviderId,
   message: string,
@@ -438,4 +509,24 @@ export function isGrokHttpCredentialReady(
   env: Record<string, string | undefined> = process.env,
 ) {
   return isSubscriptionLoggedIn(store.readProvider('xai')) || Boolean(readXaiApiKey(env));
+}
+
+export function isGoogleOAuthCredentialReady(
+  store: SubscriptionAuthStore = getSubscriptionAuthStore(),
+  env: Record<string, string | undefined> = process.env,
+) {
+  if (!isSubscriptionLoggedIn(store.readProvider('google'))) return false;
+  try {
+    readGoogleOAuthConfig(env);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function isGoogleHttpCredentialReady(
+  store: SubscriptionAuthStore = getSubscriptionAuthStore(),
+  env: Record<string, string | undefined> = process.env,
+) {
+  return Boolean(readGoogleApiKey(env)) || isGoogleOAuthCredentialReady(store, env);
 }

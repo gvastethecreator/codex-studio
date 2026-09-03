@@ -1,6 +1,7 @@
 import type { CompiledProviderInput, GenerationProviderId } from '../../../../packages/shared/src';
 import type { TurnResult } from '../codex/turn';
 import { createComfyWorkflowExecutor } from './comfyExecutor';
+import { createAntigravityImageExecutor } from './antigravityImageExecutor';
 import { createFalImageExecutor } from './falExecutor';
 import { createGoogleImageExecutor } from './googleExecutor';
 import { createGrokRuntimeExecutor } from './grokRuntimeExecutor';
@@ -34,6 +35,8 @@ function createDefaultExecutor(providerId: ExternalExecutableProviderId) {
   switch (providerId) {
     case 'google':
       return createGoogleImageExecutor();
+    case 'antigravity':
+      return createAntigravityImageExecutor();
     case 'grok':
       return createGrokRuntimeExecutor();
     case 'fal':

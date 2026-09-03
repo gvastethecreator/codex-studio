@@ -33,7 +33,7 @@ export function createSubscriptionAuthRoutes(
       };
     }
     const candidate = safeOAuthText(error instanceof Error ? error.message : '');
-    const message = /^(ChatGPT|xAI|Studio Sign in credential store)\b/.test(candidate)
+    const message = /^(ChatGPT|xAI|Google|Studio Sign in credential store)\b/.test(candidate)
       ? candidate
       : 'Authentication request failed.';
     return { body: { error: message, code: 'auth_failed' }, status: 503 as const };

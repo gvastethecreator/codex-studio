@@ -1,4 +1,4 @@
-export const STUDIO_OAUTH_STORE_VERSION = 1;
+export const STUDIO_OAUTH_STORE_VERSION = 2;
 export const STUDIO_OAUTH_FILE_NAME = 'studio-oauth.json';
 
 export const CODEX_OAUTH_CLIENT_ID = 'app_EMoamEEZ73f0CkXaXp7hrann';
@@ -20,6 +20,18 @@ export const XAI_OAUTH_DEVICE_CODE_URL = `${XAI_OAUTH_ISSUER}/oauth2/device/code
 export const XAI_OAUTH_TOKEN_URL = `${XAI_OAUTH_ISSUER}/oauth2/token`;
 export const XAI_OAUTH_REVOKE_URL = `${XAI_OAUTH_ISSUER}/oauth2/revoke`;
 export const XAI_ACCESS_TOKEN_REFRESH_SKEW_MS = 5 * 60_000;
+
+export const GOOGLE_OAUTH_AUTHORIZE_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
+export const GOOGLE_OAUTH_TOKEN_URL = 'https://oauth2.googleapis.com/token';
+export const GOOGLE_OAUTH_REVOKE_URL = 'https://oauth2.googleapis.com/revoke';
+export const GOOGLE_OAUTH_SCOPE = [
+  'openid',
+  'email',
+  'https://www.googleapis.com/auth/cloud-platform',
+  'https://www.googleapis.com/auth/generative-language.retriever',
+].join(' ');
+export const GOOGLE_ACCESS_TOKEN_REFRESH_SKEW_MS = 5 * 60_000;
+export const GOOGLE_OAUTH_LOGIN_MAX_MS = 15 * 60_000;
 
 export const CODEX_RESPONSES_BASE_URL = 'https://chatgpt.com/backend-api/codex';
 export const XAI_API_BASE_URL = 'https://api.x.ai/v1';

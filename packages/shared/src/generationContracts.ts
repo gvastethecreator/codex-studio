@@ -14,6 +14,7 @@ export const BUILT_IN_GENERATION_PROVIDERS = [
   'codex',
   'grok',
   'google',
+  'antigravity',
   'fal',
   'comfy',
   'dry_run',

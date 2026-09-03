@@ -51,6 +51,7 @@ describe('providerCapabilities', () => {
       'codex',
       'grok',
       'google',
+      'antigravity',
       'fal',
       'comfy',
       'dry_run',

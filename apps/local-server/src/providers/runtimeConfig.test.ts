@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import {
   createCodexRuntimePreflight,
+  createAntigravityRuntimePreflight,
   createGrokRuntimePreflight,
   createProviderReadinessMaps,
   getExternalProviderRuntimePreflight,
@@ -20,6 +21,22 @@ const READY_GROK_RUNTIME = {
   headlessSupported: true,
   imagineAvailable: true,
   recommendedAction: 'Grok Imagine is ready.',
+  issues: [],
+  candidates: [],
+};
+
+const READY_ANTIGRAVITY_RUNTIME = {
+  status: 'ready' as const,
+  canRunJobs: true,
+  checkedAt: '2026-09-02T00:00:00.000Z',
+  selectedExecutable: 'C:/Users/dev/AppData/Local/agy/bin/agy.exe',
+  selectedVersion: '1.1.24',
+  selectedVersionNumber: '1.1.24',
+  defaultModel: null,
+  availableModels: ['gemini-3.8-flash-low'],
+  headlessSupported: true,
+  generateImageSupported: true,
+  recommendedAction: 'Antigravity is ready.',
   issues: [],
   candidates: [],
 };
@@ -92,6 +109,19 @@ describe('provider runtime config', () => {
     });
   });
 
+  it('reports the missing Google OAuth configuration field', () => {
+    expect(
+      getExternalProviderRuntimePreflight('google', {
+        GOOGLE_CLOUD_PROJECT_ID: 'studio-project',
+      })?.diagnostics,
+    ).toEqual(['Google OAuth requires a valid GOOGLE_OAUTH_CLIENT_ID.']);
+    expect(
+      getExternalProviderRuntimePreflight('google', {
+        GOOGLE_OAUTH_CLIENT_ID: 'studio.apps.googleusercontent.com',
+      })?.diagnostics,
+    ).toEqual(['Google OAuth requires a valid GOOGLE_CLOUD_PROJECT_ID.']);
+  });
+
   it('creates capability readiness maps from preflight state', () => {
     const readiness = createProviderReadinessMaps(
       {
@@ -99,7 +129,11 @@ describe('provider runtime config', () => {
         COMFYUI_API_URL: 'ftp://127.0.0.1:8188',
       },
       READY_GROK_RUNTIME,
-      { grokHttpReady: false, codexHttpReady: false },
+      {
+        grokHttpReady: false,
+        codexHttpReady: false,
+        antigravityRuntime: READY_ANTIGRAVITY_RUNTIME,
+      },
     );
 
     expect(readiness.secretConfigured).toMatchObject({
@@ -107,10 +141,12 @@ describe('provider runtime config', () => {
       fal: false,
       comfy: true,
       grok: true,
+      antigravity: true,
     });
     expect(readiness.localRuntimeConfigured).toMatchObject({
       comfy: false,
       grok: true,
+      antigravity: true,
     });
     expect(JSON.stringify(readiness)).not.toContain('nano-secret-value');
   });
@@ -159,6 +195,16 @@ describe('provider runtime config', () => {
       canAttemptExecution: true,
     });
     expect(JSON.stringify(preflight)).not.toContain('auth');
+  });
+
+  it('maps the local Antigravity login into non-secret provider readiness', () => {
+    expect(createAntigravityRuntimePreflight(READY_ANTIGRAVITY_RUNTIME)).toMatchObject({
+      providerId: 'antigravity',
+      runtimeKind: 'agent_cli',
+      localRuntimeState: 'configured',
+      canAttemptExecution: true,
+      availableModels: ['gemini-3.8-flash-low'],
+    });
   });
 
   it('lets Grok attempt execution from Studio Sign in when the CLI is missing', () => {

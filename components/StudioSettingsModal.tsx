@@ -145,19 +145,23 @@ interface SettingsFormPanelProps {
 function ProviderExecutionDefaultsFields({
   value,
   onChange,
-  grokModels,
-  grokDefaultModel,
+  availableModels,
+  providerDefaultModel,
 }: {
   value: ProviderDefaultSettings;
   onChange: (patch: Partial<ProviderDefaultSettings>) => void;
-  grokModels?: string[];
-  grokDefaultModel?: string | null;
+  availableModels?: string[];
+  providerDefaultModel?: string | null;
 }) {
-  const isGrok = value.providerId === 'grok';
-  const grokModelOptions = grokModels ?? [];
-  const storedGrokModel = value.model?.trim() || '';
-  const grokModelIsKnown = !storedGrokModel || grokModelOptions.includes(storedGrokModel);
-  const cliDefaultLabel = grokDefaultModel ? `CLI default (${grokDefaultModel})` : 'CLI default';
+  const isAgentCli = value.providerId === 'grok' || value.providerId === 'antigravity';
+  const modelOptions = availableModels ?? [];
+  const storedModel = value.model?.trim() || '';
+  const modelIsKnown = !storedModel || modelOptions.includes(storedModel);
+  const defaultLabel = providerDefaultModel
+    ? `${isAgentCli ? 'CLI' : 'Provider'} default (${providerDefaultModel})`
+    : isAgentCli
+      ? 'CLI default'
+      : 'Provider bootstrap';
 
   return (
     <div className="md:col-span-2 grid gap-3 rounded-lg border border-white/2 bg-white/4 p-4 md:grid-cols-3">
@@ -172,18 +176,18 @@ function ProviderExecutionDefaultsFields({
       </div>
       <label className="flex flex-col gap-2">
         <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">Model</span>
-        {isGrok ? (
+        {modelOptions.length > 0 ? (
           <select
             value={value.model ?? ''}
             onChange={(event) => onChange({ model: event.target.value.trim() || null })}
             aria-label="Provider default model"
             className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors focus:border-accent-400/2"
           >
-            <option value="">{cliDefaultLabel}</option>
-            {storedGrokModel && !grokModelIsKnown ? (
-              <option value={storedGrokModel}>{storedGrokModel} (unavailable)</option>
+            <option value="">{defaultLabel}</option>
+            {storedModel && !modelIsKnown ? (
+              <option value={storedModel}>{storedModel} (unavailable)</option>
             ) : null}
-            {grokModelOptions.map((model) => (
+            {modelOptions.map((model) => (
               <option key={model} value={model}>
                 {model}
               </option>
@@ -198,10 +202,10 @@ function ProviderExecutionDefaultsFields({
             className="h-10 rounded-lg border border-white/2 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/2"
           />
         )}
-        {isGrok && storedGrokModel && !grokModelIsKnown ? (
+        {modelOptions.length > 0 && storedModel && !modelIsKnown ? (
           <p role="status" className="text-[10px] leading-relaxed text-amber-200/80">
-            {storedGrokModel} is not in the current Grok model list. Choose CLI default or a listed
-            model.
+            {storedModel} is not in the current provider model list. Choose the provider default or
+            a listed model.
           </p>
         ) : null}
       </label>
@@ -209,7 +213,7 @@ function ProviderExecutionDefaultsFields({
         <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
           Reasoning
         </span>
-        {isGrok ? (
+        {isAgentCli ? (
           <select
             value={value.reasoningEffort ?? ''}
             onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
@@ -231,7 +235,7 @@ function ProviderExecutionDefaultsFields({
           />
         )}
       </label>
-      {isGrok ? null : (
+      {isAgentCli ? null : (
         <label className="flex flex-col gap-2">
           <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
             Service Tier
@@ -418,8 +422,8 @@ function SettingsFormPanel({
           <ProviderExecutionDefaultsFields
             value={selectedProviderDefaults}
             onChange={updateSelectedProviderDefaults}
-            grokModels={preflightByProvider.get('grok')?.availableModels}
-            grokDefaultModel={preflightByProvider.get('grok')?.defaultModel}
+            availableModels={preflightByProvider.get(defaultProviderId)?.availableModels}
+            providerDefaultModel={preflightByProvider.get(defaultProviderId)?.defaultModel}
           />
 
           {providerCapabilities ? (
@@ -429,8 +433,8 @@ function SettingsFormPanel({
                   Accounts
                 </div>
                 <p className="mt-1 text-[12px] leading-relaxed text-zinc-500">
-                  Sign in here for HTTP image generation. Codex CLI and Grok Build stay as automatic
-                  fallback.
+                  Connect HTTP accounts here. Local CLI providers keep their own authenticated
+                  sessions.
                 </p>
               </div>
               <div className="grid gap-3 md:grid-cols-2">

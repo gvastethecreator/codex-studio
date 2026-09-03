@@ -115,7 +115,7 @@ export function formatCarouselSourceLabel({
 }
 
 export function resolveImageEditorRequiresMask(providerId?: GenerationProviderId | null) {
-  return providerId !== 'grok';
+  return providerId !== 'grok' && providerId !== 'antigravity';
 }
 
 export function isImageEditorApplyDisabled({

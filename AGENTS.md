@@ -54,6 +54,20 @@ If `rg` fails on Windows in this checkout, use PowerShell `Get-ChildItem` and `S
 - New behavior needs tests. Use `vite-plus/test`.
 - Keep the legacy workspace snapshot shape export-only. Durable and UI image truth is Catalog Entry.
 
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues and Project `#8` hold live state. `.scratch/` holds synchronized local mirrors. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Use `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, or `wontfix` for triage. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+This repository uses one product context. Read the root `CONTEXT.md` and relevant `docs/adr/` entries when they exist. See `docs/agents/domain.md`.
+
 ## Closeout
 
 Do not claim completion without fresh command output. Minimum closeout for broad changes:

@@ -36,6 +36,21 @@ describe('external provider results', () => {
   it('finds inline image data across Gemini response shapes', () => {
     expect(
       findFirstInlineImageData({
+        output_image: { mime_type: 'image/png', data: 'AQID' },
+      }),
+    ).toEqual({ data: 'AQID', mimeType: 'image/png' });
+    expect(
+      findFirstInlineImageData({
+        steps: [
+          {
+            type: 'model_output',
+            content: [{ type: 'image', mime_type: 'image/webp', data: 'BwgJ' }],
+          },
+        ],
+      }),
+    ).toEqual({ data: 'BwgJ', mimeType: 'image/webp' });
+    expect(
+      findFirstInlineImageData({
         candidates: [
           {
             content: {
@@ -181,7 +196,7 @@ describe('external provider results', () => {
     const result = storeInlineImageResult({
       providerId: 'google',
       providerSlug: 'google',
-      model: 'gemini-2.5-flash-image',
+      model: 'gemini-3.1-flash-image',
       endpointBase: 'https://generativelanguage.googleapis.com/v1beta',
       job: { id: 'job-inline' },
       compiledInput: { sourceSpecId: 'spec-1', task: 'image_generate' },

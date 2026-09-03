@@ -7,9 +7,16 @@ import { createSubscriptionAuthStore } from './store';
 import {
   getUsableAccessToken,
   isCodexHttpCredentialReady,
+  isGoogleHttpCredentialReady,
+  isGoogleOAuthCredentialReady,
   isGrokHttpCredentialReady,
   tokensFromOAuthPayload,
 } from './tokens';
+
+function formBody(value: BodyInit | null | undefined) {
+  if (typeof value !== 'string') throw new Error('Expected a form body.');
+  return new URLSearchParams(value);
+}
 
 describe('subscription tokens', () => {
   const dirs: string[] = [];
@@ -48,6 +55,57 @@ describe('subscription tokens', () => {
       getUsableAccessToken('xai', { store, env: { XAI_API_KEY: 'xai-secret' } }),
     ).resolves.toBe('xai-secret');
     expect(isGrokHttpCredentialReady(store, { XAI_API_KEY: 'xai-secret' })).toBe(true);
+  });
+
+  it('refreshes Google OAuth with the configured desktop client', async () => {
+    const store = makeStore();
+    store.writeProvider('google', {
+      status: 'logged_in',
+      accessToken: 'stale-google-access',
+      refreshToken: 'google-refresh',
+      expiresAt: '2020-01-01T00:00:00.000Z',
+      accountLabel: 'user@example.com',
+      chatgptAccountId: null,
+      lastError: null,
+      updatedAt: '2020-01-01T00:00:00.000Z',
+    });
+    const calls: Array<{ url: string; init?: RequestInit }> = [];
+    await expect(
+      getUsableAccessToken('google', {
+        store,
+        env: {
+          GOOGLE_OAUTH_CLIENT_ID: 'studio.apps.googleusercontent.com',
+          GOOGLE_CLOUD_PROJECT_ID: 'studio-project',
+          GOOGLE_OAUTH_TOKEN_URL: 'http://127.0.0.1:4567/token',
+        },
+        fetch: (async (input: RequestInfo | URL, init?: RequestInit) => {
+          const url =
+            typeof input === 'string' ? input : input instanceof URL ? input.href : input.url;
+          calls.push({ url, init });
+          return new Response(
+            JSON.stringify({ access_token: 'fresh-google-access', expires_in: 3600 }),
+          );
+        }) as typeof fetch,
+      }),
+    ).resolves.toBe('fresh-google-access');
+
+    expect(calls[0]?.url).toBe('http://127.0.0.1:4567/token');
+    const body = formBody(calls[0]?.init?.body);
+    expect(body.get('client_id')).toBe('studio.apps.googleusercontent.com');
+    expect(body.get('refresh_token')).toBe('google-refresh');
+    expect(store.readProvider('google').refreshToken).toBe('google-refresh');
+    expect(
+      isGoogleOAuthCredentialReady(store, {
+        GOOGLE_OAUTH_CLIENT_ID: 'studio.apps.googleusercontent.com',
+        GOOGLE_CLOUD_PROJECT_ID: 'studio-project',
+      }),
+    ).toBe(true);
+  });
+
+  it('accepts a Google API key without treating OAuth as connected', () => {
+    const store = makeStore();
+    expect(isGoogleHttpCredentialReady(store, { GOOGLE_API_KEY: 'google-secret' })).toBe(true);
+    expect(isGoogleOAuthCredentialReady(store, { GOOGLE_API_KEY: 'google-secret' })).toBe(false);
   });
 
   it('rejects OAuth token responses that require a non-Bearer authorization scheme', () => {

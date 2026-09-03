@@ -93,6 +93,7 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
   }, [status?.status, providerId]);
 
   const statusLabel = subscriptionAuthStatusLabel(status?.status ?? null);
+  const browserUrl = status?.authorizationUrl || status?.verificationUrl || null;
   const signInDisabled = busy || isLoadingStatus || status?.status === 'pending';
 
   const run = async (work: () => Promise<SubscriptionAuthPublicStatus>) => {
@@ -123,11 +124,13 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
 
   return (
     <div className="mt-4 flex flex-col gap-3 border-t border-white/2 pt-3">
-      {status?.status === 'pending' && status.verificationUrl ? (
+      {status?.status === 'pending' && browserUrl ? (
         <div className="grid gap-3 rounded-lg border border-accent-400/2 bg-accent-500/10 p-3">
           <div className="flex items-start justify-between gap-2">
             <p className="text-[12px] leading-relaxed text-zinc-300">
-              Confirm this code in the browser. Studio finishes Sign in automatically.
+              {status.userCode
+                ? 'Confirm this code in the browser. Studio finishes Sign in automatically.'
+                : 'Approve access in the browser. Studio finishes Sign in automatically.'}
             </p>
             <span
               className={`inline-flex h-6 shrink-0 items-center rounded-md border px-2 text-[10px] font-semibold ${subscriptionAuthPillClass(status.status)}`}
@@ -151,12 +154,7 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
             </div>
           ) : null}
           <div className="grid grid-cols-[minmax(0,1fr)_auto] gap-2">
-            <a
-              href={status.verificationUrl}
-              target="_blank"
-              rel="noreferrer"
-              className={controlPrimary}
-            >
+            <a href={browserUrl} target="_blank" rel="noreferrer" className={controlPrimary}>
               <IconExternalLink size={14} />
               {subscriptionAuthOpenLabel(providerId)}
             </a>
@@ -220,7 +218,9 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
         </button>
       )}
       <p className="text-[11px] leading-relaxed text-zinc-600">
-        Tokens stay in your private app-data folder. CLI stays as automatic fallback.
+        {providerId === 'google'
+          ? 'Tokens stay in your private app-data folder. Requests use your configured Google Cloud project for billing and quota.'
+          : 'Tokens stay in your private app-data folder. CLI stays as automatic fallback.'}
       </p>
     </div>
   );

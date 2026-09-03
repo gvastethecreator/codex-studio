@@ -17,6 +17,7 @@ export async function resetStudioData(worker: { resetWorkerState(): Promise<void
   await Promise.all([
     getSubscriptionAuthController().logout('codex'),
     getSubscriptionAuthController().logout('xai'),
+    getSubscriptionAuthController().logout('google'),
   ]);
   closeDb();
 

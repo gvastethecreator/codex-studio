@@ -15,8 +15,9 @@ function inputToUrl(input: string | URL | Request) {
 }
 
 interface GoogleRequestBody {
-  contents: Array<{ parts: unknown[] }>;
-  generationConfig: { responseModalities: string[] };
+  model: string;
+  input: unknown[];
+  response_format: Record<string, unknown>;
 }
 
 function parseJsonBody(body: BodyInit | null | undefined): GoogleRequestBody {
@@ -27,6 +28,7 @@ function parseJsonBody(body: BodyInit | null | undefined): GoogleRequestBody {
 function createGoogleContext(
   overrides: {
     env?: Record<string, string | undefined>;
+    model?: string;
     sourceSpec?: Partial<Parameters<typeof createGenerationTaskSpec>[0]>;
   } = {},
 ) {
@@ -40,6 +42,7 @@ function createGoogleContext(
     ...overrides.sourceSpec,
   });
   const env = overrides.env ?? { GOOGLE_API_KEY: 'secret-google-value' };
+  const model = overrides.model ?? 'gemini-3.1-flash-image';
 
   return {
     providerId: 'google' as const,
@@ -49,7 +52,7 @@ function createGoogleContext(
       providerId: 'google' as const,
       prompt: 'fallback prompt',
       execution: {
-        model: 'gemini-2.5-flash-image',
+        model,
         reasoningEffort: 'minimal' as const,
         serviceTier: null,
       },
@@ -61,7 +64,7 @@ function createGoogleContext(
       providerId: 'google',
       prompt: 'fallback prompt',
       execution: {
-        model: 'gemini-2.5-flash-image',
+        model,
         reasoningEffort: 'minimal',
         serviceTier: null,
       },
@@ -72,18 +75,18 @@ function createGoogleContext(
 }
 
 describe('google executor', () => {
-  it('runs generateContent, stores inline image output, and avoids secret leaks', async () => {
+  it('runs Interactions, stores output_image, and avoids secret leaks', async () => {
     const calls: Array<{ input: string; init?: RequestInit }> = [];
     const writes: Array<{ filePath: string; content: unknown; encoding?: unknown }> = [];
     const fetchMock = async (input: string | URL | Request, init?: RequestInit) => {
       calls.push({ input: inputToUrl(input), init });
       return new Response(
         JSON.stringify({
-          candidates: [
+          id: 'interaction-1',
+          steps: [
             {
-              content: {
-                parts: [{ inlineData: { mimeType: 'image/png', data: PNG_B64 } }],
-              },
+              type: 'model_output',
+              content: [{ type: 'image', mime_type: 'image/png', data: PNG_B64 }],
             },
           ],
         }),
@@ -109,21 +112,16 @@ describe('google executor', () => {
     const transcript = JSON.parse(String(transcriptWrite?.content));
 
     expect(calls).toHaveLength(1);
-    expect(calls[0].input).toBe(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image:generateContent',
-    );
+    expect(calls[0].input).toBe('https://generativelanguage.googleapis.com/v1beta/interactions');
     expect(calls[0].init?.headers).toMatchObject({
       'Content-Type': 'application/json',
       'x-goog-api-key': 'secret-google-value',
     });
     expect(requestBody).toMatchObject({
-      contents: [
-        {
-          role: 'user',
-          parts: [{ text: 'small brass key\n\nAvoid: blur' }],
-        },
-      ],
-      generationConfig: { responseModalities: ['TEXT', 'IMAGE'] },
+      model: 'gemini-3.1-flash-image',
+      input: [{ type: 'text', text: 'small brass key\n\nAvoid: blur' }],
+      response_format: { type: 'image', mime_type: 'image/png', image_size: '1K' },
+      store: false,
     });
     expect(result.assets).toEqual([
       {
@@ -139,7 +137,7 @@ describe('google executor', () => {
       diagnostics: {
         assetCount: 0,
         inlineImagePartCount: 0,
-        requestFieldNames: ['contents', 'generationConfig'],
+        requestFieldNames: ['input', 'model', 'response_format', 'store'],
       },
     });
     expect(JSON.stringify(writes)).not.toContain('secret-google-value');
@@ -154,13 +152,7 @@ describe('google executor', () => {
         calls.push({ input: inputToUrl(input), init });
         return new Response(
           JSON.stringify({
-            candidates: [
-              {
-                content: {
-                  parts: [{ inlineData: { mimeType: 'image/jpeg', data: '/9j/4A==' } }],
-                },
-              },
-            ],
+            output_image: { mime_type: 'image/jpeg', data: '/9j/4A==' },
           }),
         );
       },
@@ -193,9 +185,10 @@ describe('google executor', () => {
     );
     const transcript = JSON.parse(transcriptText);
 
-    expect(requestBody.contents[0].parts).toEqual([
-      { inlineData: { mimeType: 'image/png', data: 'AQID' } },
+    expect(requestBody.input).toEqual([
+      { type: 'image', mime_type: 'image/png', data: 'AQID' },
       {
+        type: 'text',
         text: 'small brass key\n\nAvoid: blur Edit the input image following the instructions above. Preserve the original composition, subject identity, and overall structure while applying the requested changes.',
       },
     ]);
@@ -241,6 +234,89 @@ describe('google executor', () => {
         }),
       ),
     ).rejects.toThrow('must be imported as a localPath asset');
+    expect(calls).toHaveLength(0);
+  });
+
+  it('keeps model-specific image sizes inside the supported catalog', async () => {
+    const executor = createGoogleImageExecutor({
+      env: { GOOGLE_API_KEY: 'secret-google-value' },
+      fetch: async () => new Response('{}'),
+    });
+
+    await expect(
+      executor(
+        createGoogleContext({
+          model: 'gemini-3.1-flash-lite-image',
+          sourceSpec: { output: { count: 1, imageSize: '4K' } },
+        }),
+      ),
+    ).rejects.toThrow('does not support 4K output');
+  });
+
+  it('uses Studio-owned OAuth with the billing project when no API key exists', async () => {
+    const calls: Array<{ input: string; init?: RequestInit }> = [];
+    let accessTokenCalls = 0;
+    const executor = createGoogleImageExecutor({
+      env: {
+        GOOGLE_OAUTH_CLIENT_ID: 'desktop.apps.googleusercontent.com',
+        GOOGLE_CLOUD_PROJECT_ID: 'studio-billing-project',
+      },
+      getAccessToken: async () => {
+        accessTokenCalls += 1;
+        return 'oauth-access-secret';
+      },
+      fetch: async (input, init) => {
+        calls.push({ input: inputToUrl(input), init });
+        return new Response(
+          JSON.stringify({ output_image: { mime_type: 'image/png', data: PNG_B64 } }),
+        );
+      },
+      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+      writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+      now: () => 3000,
+    });
+
+    await executor(
+      createGoogleContext({
+        env: {
+          GOOGLE_OAUTH_CLIENT_ID: 'desktop.apps.googleusercontent.com',
+          GOOGLE_CLOUD_PROJECT_ID: 'studio-billing-project',
+        },
+      }),
+    );
+
+    expect(accessTokenCalls).toBe(1);
+    expect(calls[0]?.init?.headers).toMatchObject({
+      Authorization: 'Bearer oauth-access-secret',
+      'x-goog-user-project': 'studio-billing-project',
+    });
+    expect(calls[0]?.input).not.toContain('oauth-access-secret');
+  });
+
+  it('rejects unsafe custom API bases before network access', async () => {
+    const calls: string[] = [];
+    const executor = createGoogleImageExecutor({
+      env: {
+        GOOGLE_API_KEY: 'secret-google-value',
+        GOOGLE_API_BASE: 'https://user:pass@example.com/v1beta?key=secret-google-value',
+      },
+      fetch: async (input) => {
+        calls.push(inputToUrl(input));
+        return new Response('{}');
+      },
+    });
+
+    await expect(
+      executor(
+        createGoogleContext({
+          env: {
+            GOOGLE_API_KEY: 'secret-google-value',
+            GOOGLE_API_BASE: 'https://user:pass@example.com/v1beta?key=secret-google-value',
+          },
+        }),
+      ),
+    ).rejects.toThrow('credential-free loopback URL');
     expect(calls).toHaveLength(0);
   });
 });

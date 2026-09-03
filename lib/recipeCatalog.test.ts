@@ -27,7 +27,7 @@ describe('recipeCatalog', () => {
       description: 'Browse and apply styles, or generate style-card assets.',
       defaultTask: 'image_generate',
       supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
-      supportedProviders: ['codex', 'grok', 'dry_run'],
+      supportedProviders: ['codex', 'grok', 'google', 'antigravity', 'dry_run'],
       parameterGroups: ['identity', 'application', 'visual-dna'],
       requiredParameterIds: ['presetId', 'presetName'],
     });

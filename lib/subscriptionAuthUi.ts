@@ -4,11 +4,15 @@ import type {
 } from '../packages/shared/src/subscriptionAuth';
 
 export function subscriptionAccountTitle(providerId: SubscriptionProviderId) {
-  return providerId === 'codex' ? 'ChatGPT' : 'xAI';
+  if (providerId === 'codex') return 'ChatGPT';
+  if (providerId === 'xai') return 'xAI';
+  return 'Google';
 }
 
 export function subscriptionAccountUsedBy(providerId: SubscriptionProviderId) {
-  return providerId === 'codex' ? 'Codex image generation' : 'Grok Imagine';
+  if (providerId === 'codex') return 'Codex image generation';
+  if (providerId === 'xai') return 'Grok Imagine';
+  return 'Nano Banana image generation';
 }
 
 export function subscriptionAuthStatusLabel(
@@ -22,7 +26,9 @@ export function subscriptionAuthStatusLabel(
 }
 
 export function subscriptionAuthOpenLabel(providerId: SubscriptionProviderId) {
-  return providerId === 'codex' ? 'Open ChatGPT' : 'Open xAI';
+  if (providerId === 'codex') return 'Open ChatGPT';
+  if (providerId === 'xai') return 'Open xAI';
+  return 'Open Google';
 }
 
 export function providerReadyLabel({
