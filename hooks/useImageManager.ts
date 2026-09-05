@@ -1,4 +1,4 @@
-import { useState, useCallback, useMemo } from 'react';
+import { useState, useCallback, useMemo, useEffect } from 'react';
 import type { GeneratedImage, GeneratedImageWithConfig } from '../types';
 
 import { startViewTransition } from '../utils/transitionUtils';
@@ -31,19 +31,39 @@ export const useImageManager = ({
   clearWorkspace,
   onRequestClearWorkspace,
 }: UseImageManagerProps) => {
-  const [selectedImageIds, setSelectedImageIds] = useState<string[]>([]);
+  const [storedSelection, setSelectedImageIds] = useState<string[]>([]);
 
   const allImages = useMemo(() => {
     return images ?? [];
   }, [images]);
 
-  const handleSelectionChange = useCallback((id: string, selected: boolean) => {
-    startViewTransition(() => {
-      setSelectedImageIds((prev) =>
-        selected ? [...prev, id] : prev.filter((imageId) => imageId !== id),
-      );
-    });
-  }, []);
+  const availableIds = useMemo(() => new Set(allImages.map((image) => image.id)), [allImages]);
+  const selectedImageIds = useMemo(
+    () => storedSelection.filter((id) => availableIds.has(id)),
+    [storedSelection, availableIds],
+  );
+  useEffect(() => {
+    setSelectedImageIds((previous) =>
+      previous.every((id) => availableIds.has(id))
+        ? previous
+        : previous.filter((id) => availableIds.has(id)),
+    );
+  }, [availableIds]);
+
+  const handleSelectionChange = useCallback(
+    (id: string, selected: boolean) => {
+      startViewTransition(() => {
+        setSelectedImageIds((prev) =>
+          selected
+            ? prev.includes(id) || !availableIds.has(id)
+              ? prev
+              : [...prev, id]
+            : prev.filter((imageId) => imageId !== id),
+        );
+      });
+    },
+    [availableIds],
+  );
 
   const handleDelete = useCallback(
     (imageId: string) => {
@@ -66,6 +86,7 @@ export const useImageManager = ({
 
   const handleDeleteSelected = useCallback(
     (imageIds = selectedImageIds) => {
+      imageIds = [...new Set(imageIds)].filter((id) => availableIds.has(id));
       const performDelete = () => {
         if (imageIds.length > 0) {
           const imageIdSet = new Set(imageIds);
@@ -79,17 +100,19 @@ export const useImageManager = ({
       };
       startViewTransition(performDelete);
     },
-    [selectedImageIds, deleteImages, log, modalImage, handleCloseModal],
+    [selectedImageIds, availableIds, deleteImages, log, modalImage, handleCloseModal],
   );
 
   const handleSelectAll = useCallback(
     (images: GeneratedImage[]) => {
       startViewTransition(() => {
-        setSelectedImageIds(images.map((img) => img.id));
+        setSelectedImageIds(
+          [...new Set(images.map((img) => img.id))].filter((id) => availableIds.has(id)),
+        );
         log(`Selected all ${images.length} images.`);
       });
     },
-    [log],
+    [log, availableIds],
   );
 
   const handleDeselectAll = useCallback(() => {

@@ -20,6 +20,7 @@ import {
 import {
   getGenerationProviderCapabilities,
   getGenerationProviderRuntimePreflight,
+  invalidateGenerationProviderReads,
 } from '../services/studio-api/providers';
 import {
   getExternalOutputSources,
@@ -132,42 +133,81 @@ export function useStudioSettings({
   const [error, setError] = useState<string | null>(null);
   const isMountedRef = useRef(true);
 
+  const revisions = useRef({ settings: 0, outputSources: 0, capabilities: 0, preflight: 0 });
+  const refreshRevision = useRef(0);
+  const savingRef = useRef(false);
+  const readResource = useCallback(
+    async <T>(
+      key: keyof typeof revisions.current,
+      load: () => Promise<T>,
+      apply: (value: T) => void,
+    ): Promise<string | null> => {
+      const revision = ++revisions.current[key];
+      try {
+        const value = await load();
+        if (
+          isMountedRef.current &&
+          revisions.current[key] === revision &&
+          !(key === 'settings' && savingRef.current)
+        )
+          apply(value);
+        return null;
+      } catch (cause) {
+        if (!isMountedRef.current || revisions.current[key] !== revision) return null;
+        return cause instanceof Error ? cause.message : String(cause);
+      }
+    },
+    [],
+  );
+
+  const refreshProviders = useCallback(
+    () =>
+      Promise.all([
+        readResource('capabilities', getGenerationProviderCapabilities, setProviderCapabilities),
+        readResource(
+          'preflight',
+          getGenerationProviderRuntimePreflight,
+          setProviderRuntimePreflight,
+        ),
+      ]),
+    [readResource],
+  );
+
+  const refreshDomains = useCallback(
+    async (includeOutputSources: boolean, includeSettings = true) => {
+      const revision = ++refreshRevision.current;
+      setIsLoading(true);
+      setError(null);
+      const errors = await Promise.all([
+        ...(includeSettings
+          ? [readResource('settings', getEditableStudioSettings, setSettings)]
+          : []),
+        ...(includeOutputSources
+          ? [readResource('outputSources', getExternalOutputSources, setOutputSources)]
+          : []),
+        ...[refreshProviders().then((results) => results.filter(Boolean).join('; ') || null)],
+      ]);
+      if (isMountedRef.current && refreshRevision.current === revision) {
+        const message = errors.filter(Boolean).join('; ');
+        setError(message ? `Some settings could not refresh: ${message}` : null);
+        setIsLoading(false);
+      }
+    },
+    [readResource, refreshProviders],
+  );
+
   useEffect(() => {
     isMountedRef.current = true;
 
     return () => {
       isMountedRef.current = false;
+      for (const key of Object.keys(revisions.current) as Array<keyof typeof revisions.current>)
+        revisions.current[key] += 1;
+      refreshRevision.current += 1;
     };
   }, []);
 
-  const refreshSettingsSummary = useCallback(async () => {
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      const [nextSettings, nextProviderCapabilities, nextProviderRuntimePreflight] =
-        await Promise.all([
-          getEditableStudioSettings(),
-          getGenerationProviderCapabilities(),
-          getGenerationProviderRuntimePreflight(),
-        ]);
-      if (isMountedRef.current) {
-        setSettings(nextSettings);
-        setProviderCapabilities(nextProviderCapabilities);
-        setProviderRuntimePreflight(nextProviderRuntimePreflight);
-      }
-    } catch (refreshError) {
-      const message =
-        refreshError instanceof Error ? refreshError.message : 'Unable to load Studio Settings';
-      if (isMountedRef.current) {
-        setError(message);
-      }
-    } finally {
-      if (isMountedRef.current) {
-        setIsLoading(false);
-      }
-    }
-  }, []);
+  const refreshSettingsSummary = useCallback(() => refreshDomains(false), [refreshDomains]);
 
   const refreshOutputSources = useCallback(async () => {
     setIsLoadingOutputSources(true);
@@ -191,75 +231,34 @@ export function useStudioSettings({
     }
   }, []);
 
-  const refreshSettings = useCallback(async () => {
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      const [
-        nextSettings,
-        nextOutputSources,
-        nextProviderCapabilities,
-        nextProviderRuntimePreflight,
-      ] = await Promise.all([
-        getEditableStudioSettings(),
-        getExternalOutputSources(),
-        getGenerationProviderCapabilities(),
-        getGenerationProviderRuntimePreflight(),
-      ]);
-      if (isMountedRef.current) {
-        setSettings(nextSettings);
-        setOutputSources(nextOutputSources);
-        setProviderCapabilities(nextProviderCapabilities);
-        setProviderRuntimePreflight(nextProviderRuntimePreflight);
-      }
-    } catch (refreshError) {
-      const message =
-        refreshError instanceof Error ? refreshError.message : 'Unable to load Studio Settings';
-      if (isMountedRef.current) {
-        setError(message);
-      }
-    } finally {
-      if (isMountedRef.current) {
-        setIsLoading(false);
-      }
-    }
-  }, []);
+  const refreshSettings = useCallback(() => refreshDomains(true), [refreshDomains]);
 
   const updateSettings = useCallback(
     async (patch: EditableStudioSettingsPatch) => {
+      if (savingRef.current) return;
+      savingRef.current = true;
+      revisions.current.settings += 1;
       setIsSaving(true);
       setError(null);
-
       try {
         const nextSettings = await updateEditableStudioSettings(patch);
-        const [nextOutputSources, nextProviderCapabilities, nextProviderRuntimePreflight] =
-          await Promise.all([
-            getExternalOutputSources(),
-            getGenerationProviderCapabilities(),
-            getGenerationProviderRuntimePreflight(),
-          ]);
-        if (isMountedRef.current) {
-          setSettings(nextSettings);
-          setOutputSources(nextOutputSources);
-          setProviderCapabilities(nextProviderCapabilities);
-          setProviderRuntimePreflight(nextProviderRuntimePreflight);
-          addToast?.('Studio Settings saved', 'success');
-        }
-      } catch (saveError) {
-        const message =
-          saveError instanceof Error ? saveError.message : 'Unable to save Studio Settings';
-        if (isMountedRef.current) {
-          setError(message);
-          addToast?.(message, 'error');
-        }
+        revisions.current.settings += 1;
+        if (!isMountedRef.current) return;
+        setSettings(nextSettings);
+        addToast?.('Studio Settings saved', 'success');
+        invalidateGenerationProviderReads();
+        await refreshDomains(true, false);
+      } catch (cause) {
+        if (!isMountedRef.current) return;
+        const message = cause instanceof Error ? cause.message : 'Unable to save Studio Settings';
+        setError(message);
+        addToast?.(message, 'error');
       } finally {
-        if (isMountedRef.current) {
-          setIsSaving(false);
-        }
+        savingRef.current = false;
+        if (isMountedRef.current) setIsSaving(false);
       }
     },
-    [addToast],
+    [addToast, refreshDomains],
   );
 
   const registerOutputSource = useCallback(
@@ -477,22 +476,14 @@ export function useStudioSettings({
   useEffect(() => {
     const stream = createStudioEventStream();
     const unsubscribe = stream.onAuthUpdated(() => {
-      void Promise.all([
-        getGenerationProviderCapabilities(),
-        getGenerationProviderRuntimePreflight(),
-      ])
-        .then(([nextProviderCapabilities, nextProviderRuntimePreflight]) => {
-          if (!isMountedRef.current) return;
-          setProviderCapabilities(nextProviderCapabilities);
-          setProviderRuntimePreflight(nextProviderRuntimePreflight);
-        })
-        .catch(() => undefined);
+      invalidateGenerationProviderReads();
+      void refreshProviders();
     });
     return () => {
       unsubscribe();
       stream.close();
     };
-  }, []);
+  }, [refreshProviders]);
 
   return useMemo(
     () => ({

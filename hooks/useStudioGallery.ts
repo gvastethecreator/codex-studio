@@ -38,10 +38,11 @@ export function useStudioGallery({
   closeModal,
   onRequestClearWorkspace,
 }: UseStudioGalleryProps) {
-  const catalogImagesWithConfig = useMemo(() => {
-    if (!catalogView) return [];
-    return buildStudioGalleryImages(catalogView);
-  }, [catalogView]);
+  const catalogEntries = catalogView?.entries;
+  const catalogImagesWithConfig = useMemo(
+    () => catalogEntries?.map(materializeCatalogEntryImageWithConfig) ?? [],
+    [catalogEntries],
+  );
 
   const {
     allImages,

@@ -1,5 +1,11 @@
 # Troubleshooting
 
+## Settings refresh and imports
+
+Settings keeps unsaved edits when you refresh diagnostics. Save is available after you change a field and enter a nonempty output filename template. A failed provider diagnostic can appear beside successfully loaded or saved settings; it does not mean the settings write failed.
+
+In External Output Sources, scan a registered source before choosing files. Select all applies to the files returned by that scan. Files that fail to import remain selected so you can retry; files that import successfully leave the list. The file list scrolls and includes every result returned by the scan.
+
 ## Fast diagnostics
 
 1. Run `bun run studio:onboard --probe` or use the in-app onboarding checklist.

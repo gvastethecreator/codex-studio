@@ -1,7 +1,9 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { act, cleanup, renderHook } from '@testing-library/react';
+/** @vitest-environment jsdom */
+import { afterEach, describe, expect, it, vi } from 'vite-plus/test';
 import type { CatalogImage } from '../packages/shared/src';
 import { createCatalogView } from '../lib/studioCatalogView';
-import { buildStudioGalleryImages } from './useStudioGallery';
+import { buildStudioGalleryImages, useStudioGallery } from './useStudioGallery';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'catalog-image';
@@ -67,4 +69,35 @@ describe('buildStudioGalleryImages', () => {
 
     expect(images.map((image) => image.id)).toEqual(catalogView.entries.map((entry) => entry.id));
   });
+});
+
+afterEach(cleanup);
+it('reuses gallery images for the same entries and keeps selection unique and visible', () => {
+  const view = createCatalogView([catalogImage({ id: 'one' }), catalogImage({ id: 'two' })]);
+  const props = {
+    activeWorkspaceId: 'default',
+    deleteImage: vi.fn(),
+    deleteImages: vi.fn(),
+    toggleImageFavorite: vi.fn(),
+    clearWorkspace: vi.fn(),
+    log: vi.fn(),
+    modalImage: null,
+    closeModal: vi.fn(),
+  };
+  const { result, rerender } = renderHook(
+    ({ catalogView }) => useStudioGallery({ ...props, catalogView }),
+    { initialProps: { catalogView: view } },
+  );
+  const images = result.current.imagesWithConfig;
+  act(() => {
+    result.current.handleSelectionChange('one', true);
+    result.current.handleSelectionChange('one', true);
+  });
+  expect(result.current.selectedImageIds).toEqual(['one']);
+  rerender({ catalogView: { ...view } });
+  expect(result.current.imagesWithConfig).toBe(images);
+  rerender({ catalogView: createCatalogView([catalogImage({ id: 'two' })]) });
+  expect(result.current.selectedImageIds).toEqual([]);
+  act(() => result.current.handleDeleteSelected(['one', 'two', 'two']));
+  expect(props.deleteImages).toHaveBeenCalledWith(['two']);
 });
