@@ -1,7 +1,7 @@
 # Code map · codex-studio
 
-generated: 2026-09-05T04:21:37Z
-commit: de447600b290
+generated: 2026-09-05T15:36:48Z
+commit: b2d635e4646e
 scope: .
 
 counts: 20 nodes · 80 edges · 0 flows · 0 unknown

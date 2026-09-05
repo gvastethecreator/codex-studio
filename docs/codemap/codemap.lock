@@ -1,7 +1,7 @@
 {
-  "source_commit": "de447600b2907cedb15a0d6137c0088d5a4d649d",
+  "source_commit": "b2d635e4646e90b5a029c133a9912d5fa336ab19",
   "working_tree_dirty": false,
-  "generated_at": "2026-09-05T04:21:37Z",
+  "generated_at": "2026-09-05T15:36:48Z",
   "scanned_scope": [
     "."
   ],
@@ -47,13 +47,13 @@
       "id": ".vite-hooks",
       "path": ".vite-hooks",
       "file_count": 1,
-      "fingerprint": "acbb756f3f502b71b2833bfaf6a8dd9e27fc1904b9e638f5b799eb47203210eb"
+      "fingerprint": "c651947e8b33c04895037bbfc509c2282d54b6d21432ba1c7fa62a1acfa3b618"
     },
     {
       "id": "apps",
       "path": "apps",
       "file_count": 237,
-      "fingerprint": "d8e51b109b2ab5764af0b70fc12b3dbcc48394424d07ece14e8b777ff2376f0e"
+      "fingerprint": "4c38dc09a1d8b5f3161194ed276a48f472aeb10a1a5a9f8e356a079686726185"
     },
     {
       "id": "assets",
@@ -64,8 +64,8 @@
     {
       "id": "components",
       "path": "components",
-      "file_count": 1978,
-      "fingerprint": "0186dec4fbe808f4bc8fefb3a281a196829cd980ee0e5a2f0c8e392fcb2ca65d"
+      "file_count": 1979,
+      "fingerprint": "d3d8c10a9d158e691cc224878ac6e730e7d1d329d37f951341b0a85131e39114"
     },
     {
       "id": "contexts",
@@ -77,7 +77,7 @@
       "id": "docs",
       "path": "docs",
       "file_count": 34,
-      "fingerprint": "bdb0cae1ad7a0b01728383a3454d6ce3f3216e8f399aface3c14b15809a64474"
+      "fingerprint": "b5a1fd63971b90cb18f5c150f59e4b586e11cb20e7b062b389371590bc1f6cee"
     },
     {
       "id": "electron",
