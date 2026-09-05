@@ -63,6 +63,10 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       onboardingReady: true,
     },
     worker: {
+      providerLimits: { codex: 1 },
+      activeByProvider: {},
+      waiting: [],
+      stopping: false,
       maxConcurrentJobs: 1,
       activeWorkerCount: 0,
       queuedJobs: 0,

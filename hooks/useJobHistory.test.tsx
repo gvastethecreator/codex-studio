@@ -15,6 +15,16 @@ import { mergeJobHistory, useJobHistory } from './useJobHistory';
 import { QueueBatchCard } from '../components/QueueBatchCard';
 
 const api = vi.hoisted(() => ({ list: vi.fn(), batch: vi.fn(), retry: vi.fn() }));
+const stream = vi.hoisted(() => ({ gaps: new Set<() => void>(), close: vi.fn() }));
+vi.mock('../services/studioEventSource', () => ({
+  createStudioEventStream: () => ({
+    onRevisionGap: (callback: () => void) => {
+      stream.gaps.add(callback);
+      return () => stream.gaps.delete(callback);
+    },
+    close: stream.close,
+  }),
+}));
 vi.mock('../services/studio-api/jobs', () => ({
   listStudioJobs: api.list,
   getStudioJobBatchSummary: api.batch,
@@ -97,7 +107,10 @@ it('keeps loaded pages on an older-page failure and retries the same cursor', as
     .mockResolvedValueOnce({ ...emptyPage, history: [job('first')], nextCursor: 'page-2' })
     .mockRejectedValueOnce(new Error('History unavailable'))
     .mockResolvedValueOnce({ ...emptyPage, history: [job('older', 'cancelled')] });
-  const { result } = renderHook(() => useJobHistory(noJobs, '', ''));
+  const known = [toShellActivityJob(job('active', 'running'))];
+  const { result, rerender } = renderHook(({ jobs }) => useJobHistory(jobs, '', ''), {
+    initialProps: { jobs: known },
+  });
   await waitFor(() => expect(result.current.history).toHaveLength(1));
   act(() => result.current.loadMore());
   await waitFor(() => expect(result.current.error).toBe('History unavailable'));
@@ -105,6 +118,13 @@ it('keeps loaded pages on an older-page failure and retries the same cursor', as
   act(() => result.current.retry());
   await waitFor(() => expect(result.current.history).toHaveLength(2));
   expect(api.list.mock.calls[2][0].cursor).toBe('page-2');
+  expect(result.current.nextCursor).toBeNull();
+  rerender({ jobs: known.map((row) => ({ ...row })) });
+  await act(async () => {
+    await new Promise((resolve) => setTimeout(resolve, 150));
+  });
+  expect(api.list).toHaveBeenCalledTimes(3);
+  expect(result.current.history).toHaveLength(2);
   expect(result.current.nextCursor).toBeNull();
 });
 
@@ -169,20 +189,35 @@ it('projects new and completed events even when refreshing an existing page fail
   expect(result.current.history.map((row) => row.id)).toEqual(['old-active']);
 });
 
-it('restarts the cursor chain after reconnect without hiding already loaded pages', async () => {
+it('reconciles older terminal changes after a revision gap with an identical recent summary', async () => {
+  const head = { ...emptyPage, history: [job('recent')], nextCursor: 'page-2' };
+  const changedCounts = { ...emptyPage.counts, cancelled: 1, failed: 1, history: 2, total: 2 };
   api.list
+    .mockResolvedValueOnce(head)
     .mockResolvedValueOnce({ ...emptyPage, history: [job('older')] })
-    .mockResolvedValueOnce({ ...emptyPage, history: [job('new-head')], nextCursor: 'new-gap' })
-    .mockResolvedValueOnce({ ...emptyPage, history: [job('middle'), job('older')] });
-  const { result, rerender } = renderHook(({ jobs }) => useJobHistory(jobs, '', ''), {
-    initialProps: { jobs: noJobs },
-  });
+    .mockResolvedValueOnce({ ...head, counts: changedCounts })
+    .mockResolvedValueOnce({
+      ...emptyPage,
+      counts: changedCounts,
+      history: [job('older', 'cancelled', '2026-09-05T00:02:00.000Z')],
+    });
+  const known = [toShellActivityJob(job('recent'))];
+  const { result, unmount } = renderHook(() => useJobHistory(known, '', ''));
   await waitFor(() => expect(result.current.history).toHaveLength(1));
-  rerender({ jobs: [] });
-  await waitFor(() => expect(result.current.nextCursor).toBe('new-gap'));
+  act(() => result.current.loadMore());
+  await waitFor(() => expect(result.current.history).toHaveLength(2));
+  expect(result.current.nextCursor).toBeNull();
+  act(() => stream.gaps.forEach((callback) => callback()));
+  await waitFor(() => expect(result.current.nextCursor).toBe('page-2'));
+  expect(result.current.page?.counts).toEqual(changedCounts);
   expect(result.current.history.map((row) => row.id)).toContain('older');
   act(() => result.current.loadMore());
-  await waitFor(() => expect(result.current.history).toHaveLength(3));
-  expect(api.list.mock.calls[2][0].cursor).toBe('new-gap');
+  await waitFor(() =>
+    expect(result.current.history.find((row) => row.id === 'older')?.status).toBe('cancelled'),
+  );
+  expect(api.list.mock.calls[3][0].cursor).toBe('page-2');
   expect(result.current.nextCursor).toBeNull();
+  unmount();
+  expect(stream.gaps.size).toBe(0);
+  expect(stream.close).toHaveBeenCalledOnce();
 });

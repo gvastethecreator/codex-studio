@@ -17,7 +17,7 @@ export default defineConfig({
     host: '0.0.0.0',
   },
   build: {
-    emptyOutDir: false,
+    emptyOutDir: true,
   },
   plugins: [...react(), ...tailwindcss()] as never,
   resolve: {

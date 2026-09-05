@@ -62,13 +62,11 @@ it('ignores an old running snapshot when a later refresh already confirmed compl
     },
   };
   let releaseOldLogs!: (logs: SystemLog[]) => void;
-  api.jobs
-    .mockResolvedValueOnce(page)
-    .mockResolvedValue({
-      ...page,
-      open: [],
-      history: [{ ...running, status: 'completed', updatedAt: '2026-09-02' }],
-    });
+  api.jobs.mockResolvedValueOnce(page).mockResolvedValue({
+    ...page,
+    open: [],
+    history: [{ ...running, status: 'completed', updatedAt: '2026-09-02' }],
+  });
   api.logs
     .mockImplementationOnce(
       () =>

@@ -13,6 +13,8 @@
     "scripts/core-assets-browser-smoke.ts",
     "scripts/verify-responsive-mobile.ts",
     "scripts/measure-style-workflow.ts",
+    "scripts/verify-style-editing.ts",
+    "scripts/verify-job-workflow.ts",
     "scripts/verify-styles-browser-gate.ts"
   ]
 }

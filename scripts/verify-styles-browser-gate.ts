@@ -34,6 +34,7 @@ export interface VerifyStylesBrowserGateOptions {
   catalogQuery?: string;
   timeoutMs?: number;
   headed?: boolean;
+  fixture?: boolean;
 }
 
 export interface VerifyStylesBrowserGateReport {
@@ -68,10 +69,13 @@ function numberArgValue(name: string) {
 function usage() {
   return [
     'Usage:',
-    '  bun run styles:browser -- [--url=http://localhost:17222/#recipe-styles] [--pack=pack_05] [--collection=analog_film_process] [--query=boudoir] [--timeout=30000] [--headed] [--verify] [--json]',
+    '  bun run styles:browser -- [--url=http://localhost:17222/#recipe-styles] [--pack=pack_05] [--collection=analog_film_process] [--query=boudoir] [--timeout=30000] [--headed] [--fixture] [--verify] [--json]',
     '  bun run scripts/verify-styles-browser-gate.ts --measure --url=http://127.0.0.1:17228/#recipe-styles/pack_05 [--comparison-url=http://127.0.0.1:17229/#recipe-styles/pack_05] [--output=.scratch/workflow-performance/styles/comparison.json]',
+    '  bun run scripts/verify-styles-browser-gate.ts --workflow --url=http://127.0.0.1:17229/#recipe-styles/user_styles [--output=.scratch/workflow-performance/styles/editing.json]',
+    '  bun run scripts/verify-styles-browser-gate.ts --jobs-workflow --url=http://127.0.0.1:17229/ [--output=.scratch/workflow-performance/jobs.json]',
     '',
     'Notes:',
+    '  - --fixture uses Chrome at 1440x1000 with fail-closed local API fixtures for the parity gate. Workflow modes use that same browser and viewport.',
     '  - Measurement requires production previews. It uses fixed API fixtures, five fresh-context entries and twenty warm samples after three warmups. Paired mode alternates variant order. No real provider calls are made.',
     '  - Start the UI first (for example `bun run dev:ui`) and keep this gate optional until it is stable enough for wider release use.',
     '  - The script verifies collection navigation, pack DOM budgets with all categories visible, confirms the Style Catalog surface is demand-mounted, checks the catalog query result count, and fails on fresh console warnings/errors.',
@@ -127,13 +131,7 @@ function toFriendlyBrowserError(error: unknown) {
 
 async function clickViaDom(page: Page, selector: string, timeoutMs: number) {
   await page.waitForSelector(selector, { timeout: timeoutMs });
-  await page.locator(selector).evaluate((node) => {
-    if (!(node instanceof HTMLElement)) {
-      throw new Error('Target is not an HTMLElement');
-    }
-
-    node.click();
-  });
+  await page.locator(selector).click();
 }
 
 export async function verifyStylesBrowserGate({
@@ -143,6 +141,7 @@ export async function verifyStylesBrowserGate({
   catalogQuery = DEFAULT_CATALOG_QUERY,
   timeoutMs = DEFAULT_TIMEOUT_MS,
   headed = false,
+  fixture = false,
 }: VerifyStylesBrowserGateOptions = {}): Promise<VerifyStylesBrowserGateReport> {
   const [renderReport, manifestGraph] = await Promise.all([
     createStyleRenderBudgetReport(),
@@ -173,10 +172,19 @@ export async function verifyStylesBrowserGate({
 
   const browser = await chromium.launch({
     headless: !headed,
+    ...(fixture ? { channel: 'chrome' } : {}),
   });
 
   try {
-    const page = await browser.newPage({ viewport: DEFAULT_VIEWPORT });
+    const context = await browser.newContext({
+      viewport: fixture ? { width: 1440, height: 1000 } : DEFAULT_VIEWPORT,
+    });
+    const unmatched = new Set<string>();
+    if (fixture) {
+      const { installStyleBrowserFixture } = await import('./measure-style-workflow');
+      await installStyleBrowserFixture(context, unmatched);
+    }
+    const page = await context.newPage();
     await page.addInitScript(() => {
       window.localStorage.setItem('studio-onboarding-complete', 'true');
     });
@@ -348,6 +356,8 @@ export async function verifyStylesBrowserGate({
       pageErrors: filterLogs(pageErrors, captureStart),
     };
     const violations = evaluateStylesBrowserGate(expectation, observation);
+    if (unmatched.size)
+      violations.push(`Unmatched fixture endpoints: ${[...unmatched].join(', ')}`);
 
     return {
       url,
@@ -366,7 +376,19 @@ export async function verifyStylesBrowserGate({
 }
 
 if (import.meta.main) {
-  if (process.argv.includes('--measure')) {
+  if (process.argv.includes('--jobs-workflow')) {
+    const { verifyJobWorkflow } = await import('./verify-job-workflow');
+    await verifyJobWorkflow(
+      argValue('url') ?? DEFAULT_URL,
+      argValue('output') ?? '.scratch/workflow-performance/jobs.json',
+    );
+  } else if (process.argv.includes('--workflow')) {
+    const { verifyStyleEditing } = await import('./verify-style-editing');
+    await verifyStyleEditing(
+      argValue('url') ?? DEFAULT_URL,
+      argValue('output') ?? '.scratch/workflow-performance/styles/editing.json',
+    );
+  } else if (process.argv.includes('--measure')) {
     const { measureStyleWorkflow } = await import('./measure-style-workflow');
     await measureStyleWorkflow({
       url: argValue('url') ?? DEFAULT_URL,
@@ -387,6 +409,7 @@ if (import.meta.main) {
         catalogQuery: argValue('query') ?? DEFAULT_CATALOG_QUERY,
         timeoutMs: numberArgValue('timeout') ?? DEFAULT_TIMEOUT_MS,
         headed: process.argv.includes('--headed'),
+        fixture: process.argv.includes('--fixture'),
       });
 
       if (asJson) {

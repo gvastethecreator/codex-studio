@@ -162,7 +162,7 @@ describe('accepted batch observation', () => {
     expect(mocks.watchJob).not.toHaveBeenCalled();
   });
 
-  it('retains a successful image and reports partial from durable batch counts', async () => {
+  it('keeps every batch member in the requested workspace and retains partial success', async () => {
     const job = await mocks.createJobFixture();
     mocks.createStudioJobBatch.mockResolvedValueOnce({
       id: 'batch-partial',
@@ -178,7 +178,7 @@ describe('accepted batch observation', () => {
     const { runLocalGenerationWithLifecycle } = await import('./localGenerationRun');
     const outcome = await runLocalGenerationWithLifecycle({
       config: { ...DEFAULT_GENERATION_CONFIG, batchCount: 2 },
-      workspaceId: 'default',
+      workspaceId: 'workspace-selected',
     });
     expect(outcome).toMatchObject({
       status: 'partial',
@@ -191,6 +191,10 @@ describe('accepted batch observation', () => {
     });
     const request = mocks.createStudioJobBatch.mock.calls[0][0];
     expect(request.items).toHaveLength(2);
+    for (const item of request.items) {
+      expect(item.workspaceId).toBe('workspace-selected');
+      expect(item).not.toHaveProperty('projectId');
+    }
     expect(request.requestId).toMatch(/^batch-/);
     expect(mocks.createStudioJobBatch).toHaveBeenCalledTimes(1);
   });

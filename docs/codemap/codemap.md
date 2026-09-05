@@ -1,10 +1,10 @@
 # Code map · codex-studio
 
-generated: 2026-09-05T20:20:53Z
-commit: baf1510004cd
+generated: 2026-09-05T21:47:54Z
+commit: 1fd0e8eaad0d
 scope: .
 
-counts: 20 nodes · 32 edges · 5 flows · 0 unknown
+counts: 20 nodes · 34 edges · 5 flows · 0 unknown
 
 ## Modules
 
@@ -35,14 +35,14 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
 - `generation-run` · `services/localGenerationRun.ts` · service · Persistent generation observation and catalog results
   callers: generation-ui (calls)
   callees: job-client (calls), job-observer (calls)
-  tests: services/localGenerationRun.stream.test.ts, services/localGenerationRun.test.ts, services/localGenerationRun.workspace.test.ts
+  tests: services/localGenerationRun.stream.test.ts, services/localGenerationRun.test.ts, services/localGenerationRuntimeAdapters.test.ts
   entry: services/localGenerationRun.ts:runLocalGeneration
 
 - `generation-ui` · `hooks/useGenerationPipeline.ts` · interface · User generation lifecycle
-  callers: (none)
+  callers: styles (calls)
   callees: generation-run (calls)
   tests: hooks/useGenerationPipeline.test.ts
-  entry: hooks/useGenerationPipeline.ts:useGenerationPipeline
+  entry: hooks/useGenerationPipeline.ts:useGenerationPipeline, components/shell/StudioViewport.tsx:StudioViewport, hooks/useStudioShell.ts:useStudioShell
 
 - `job-client` · `services/studio-api/jobs.ts` · service · Browser job and atomic batch API
   callers: generation-run (calls), job-history (calls), job-observer (calls)
@@ -52,7 +52,7 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
 
 - `job-history` · `hooks/useJobHistory.ts` · interface · Open jobs and filtered terminal history
   callers: (none)
-  callees: job-client (calls), runtime-settings (calls)
+  callees: job-client (calls), job-observer (subscribes), runtime-settings (calls)
   tests: hooks/useJobHistory.test.tsx
   entry: hooks/useJobHistory.ts:useJobHistory, hooks/useWorkerDiagnostics.ts:useWorkerDiagnostics, components/QueuePanel.tsx:QueuePanel, components/QueueBatchCard.tsx:QueueBatchCard
 
@@ -63,7 +63,7 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
   entry: apps/local-server/src/persistentJobIntake.ts:createPersistentJobIntake
 
 - `job-observer` · `services/studioEventSource.ts` · service · Shared event connection and job reconciliation
-  callers: generation-run (calls)
+  callers: generation-run (calls), job-history (subscribes)
   callees: event-routes (subscribes), job-client (calls)
   tests: services/studioEventSource.test.ts
   entry: services/studioEventSource.ts:watchJob
@@ -82,7 +82,7 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
 
 - `providers` · `apps/local-server/src/providers` · service · Provider execution adapters and runtime identity
   callers: worker (calls)
-  callees: shared (calls)
+  callees: shared (calls), worker (calls)
   tests: apps/local-server/src/providers/comfyExecutor.test.ts, apps/local-server/src/providers/codexProvider.test.ts, apps/local-server/src/providers/externalProvider.test.ts
   entry: apps/local-server/src/providers/externalProvider.ts:createExternalGenerationProvider, apps/local-server/src/providers/comfyExecutor.ts:createComfyWorkflowExecutor, apps/local-server/src/providers/codexProvider.ts:createCodexGenerationProvider
 
@@ -99,16 +99,16 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
   entry: packages/shared/src/jobBatches.ts:JobStatus, packages/shared/src/workerContracts.ts:validateWorkerLimits, packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy
 
 - `style-client` · `services/studio-api/userStyles.ts` · service · User style API
-  callers: style-editor (calls), styles (calls)
+  callers: style-editor (calls)
   callees: style-routes (calls)
   tests: (none)
   entry: services/studio-api/userStyles.ts:createUserStylePreset
 
-- `style-editor` · `components/recipes/UserStyleEditorSurface.tsx` · interface · User style draft and save session
+- `style-editor` · `components/recipes/useUserStyleLibrary.ts` · interface · User style data, editor identity and mutation reconciliation
   callers: styles (calls)
   callees: style-client (calls)
-  tests: (none)
-  entry: components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface
+  tests: components/recipes/userStyleDraftBuilders.test.ts, scripts/verify-style-editing.ts
+  entry: components/recipes/useUserStyleLibrary.ts:useUserStyleLibrary, components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface, components/recipes/userStyleDraftBuilders.ts:prepareUserStyleEditorSession
 
 - `style-routes` · `apps/local-server/src/userStyleRoutes.ts` · interface · Persistent user style CRUD
   callers: style-client (calls)
@@ -118,12 +118,12 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
 
 - `styles` · `components/recipes/StylesBrowser.tsx` · interface · Style browsing and selected composition
   callers: (none)
-  callees: style-client (calls), style-editor (calls)
-  tests: (none)
-  entry: components/recipes/StylesBrowser.tsx:StylesBrowser
+  callees: generation-ui (calls), style-editor (calls)
+  tests: components/recipes/styleLayerComposer.test.ts, components/recipes/styleTabRouting.test.ts, scripts/measure-style-workflow.ts
+  entry: components/recipes/StylesBrowser.tsx:StylesBrowser, components/recipes/useStyleBrowserNavigation.ts:useStyleBrowserNavigation, components/recipes/useStyleComposition.ts:useStyleComposition
 
 - `worker` · `apps/local-server/src/worker.ts` · queue · Fair provider scheduling, execution, cancellation and recovery
-  callers: job-intake (calls), job-routes (calls), runtime-settings (calls)
+  callers: job-intake (calls), job-routes (calls), providers (calls), runtime-settings (calls)
   callees: asset-finalizer (calls), event-bus (publishes), jobs-db (writes), providers (calls), runtime-settings (calls)
   tests: apps/local-server/src/workerShutdown.test.ts, apps/local-server/src/workerAssetFinalizer.test.ts, apps/local-server/src/workerRouting.test.ts
   entry: apps/local-server/src/worker.ts:createWorkerController
@@ -139,6 +139,7 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
 - generation-ui -> generation-run · calls
 - job-client -> job-routes · calls
 - job-history -> job-client · calls
+- job-history -> job-observer · subscribes
 - job-history -> runtime-settings · calls
 - job-intake -> jobs-db · writes
 - job-intake -> runtime-settings · calls
@@ -151,11 +152,12 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
 - job-routes -> shared · imports
 - job-routes -> worker · calls
 - providers -> shared · calls
+- providers -> worker · calls
 - runtime-settings -> shared · calls
 - runtime-settings -> worker · calls
 - style-client -> style-routes · calls
 - style-editor -> style-client · calls
-- styles -> style-client · calls
+- styles -> generation-ui · calls
 - styles -> style-editor · calls
 - worker -> asset-finalizer · calls
 - worker -> event-bus · publishes
@@ -169,18 +171,18 @@ counts: 20 nodes · 32 edges · 5 flows · 0 unknown
 
 ## Flows
 
-- User starts generation
-  generation-ui -> generation-run -> job-client -> job-routes -> job-intake -> worker -> providers
-  Every batch member is accepted before dispatch and uses its captured execution policy
+- User selects style layers and generates
+  styles -> generation-ui -> generation-run -> job-client -> job-routes -> job-intake -> worker -> providers
+  Selected fields and strengths form recipe input; every batch member is accepted before dispatch with its captured execution policy
 - Observer attaches or recovers its connection
   generation-run -> job-observer -> job-client -> job-routes -> jobs-db
   Observer reads durable job truth independently of event delivery
 - User opens Queue or pages terminal history
   job-history -> job-client -> job-routes -> jobs-db
   All open work remains visible beside terminal history and authoritative counts
-- Worker resumes a persisted finalization checkpoint
-  worker -> asset-finalizer -> catalog
-  Existing asset is finalized into catalog truth
+- Worker resumes a captured Comfy remote execution or asset checkpoint
+  worker -> providers -> worker -> asset-finalizer -> catalog
+  The bound runtime reconciles the existing remote job without a second prompt; existing output is finalized into catalog truth
 - User opens a style draft and saves
   styles -> style-editor -> style-client -> style-routes
   User style changes persist through the existing API

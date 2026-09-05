@@ -38,7 +38,7 @@ boundaries = [
     ("asset-finalizer", "apps/local-server/src/workerAssetFinalizer.ts", "service", "Resumable asset and catalog finalization", "createWorkerAssetFinalizer"),
     ("catalog", "apps/local-server/src/catalog.ts", "database", "Library catalog truth", "registerCatalogImage"),
     ("styles", "components/recipes/StylesBrowser.tsx", "interface", "Style browsing and selected composition", "StylesBrowser"),
-    ("style-editor", "components/recipes/UserStyleEditorSurface.tsx", "interface", "User style draft and save session", "UserStyleEditorSurface"),
+    ("style-editor", "components/recipes/useUserStyleLibrary.ts", "interface", "User style data, editor identity and mutation reconciliation", "useUserStyleLibrary"),
     ("style-client", "services/studio-api/userStyles.ts", "service", "User style API", "createUserStylePreset"),
     ("style-routes", "apps/local-server/src/userStyleRoutes.ts", "interface", "Persistent user style CRUD", "createUserStyleRoutes"),
     ("shared", "packages/shared/src", "module", "Provider-independent domain and API contracts", "JobStatus"),
@@ -61,11 +61,27 @@ for node_id, path, kind, boundary, symbol in boundaries:
                       callers=[], callees=[], evidence=evidence(source_path, symbol)))
 
 for node in nodes:
+    if node["id"] == "styles":
+        node["tests"] = ["components/recipes/styleLayerComposer.test.ts", "components/recipes/styleTabRouting.test.ts", "scripts/measure-style-workflow.ts"]
+        for source_path, symbol in [("components/recipes/useStyleBrowserNavigation.ts", "useStyleBrowserNavigation"), ("components/recipes/useStyleComposition.ts", "useStyleComposition")]:
+            node["entrypoints"].append(source_path + ":" + symbol)
+            node["evidence"]["locations"].append(dict(path=source_path, symbol=symbol))
+    if node["id"] == "style-editor":
+        node["tests"] = ["components/recipes/userStyleDraftBuilders.test.ts", "scripts/verify-style-editing.ts"]
+        node["entrypoints"].append("components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface")
+        node["evidence"]["locations"].append(dict(path="components/recipes/UserStyleEditorSurface.tsx", symbol="UserStyleEditorSurface"))
+        node["entrypoints"].append("components/recipes/userStyleDraftBuilders.ts:prepareUserStyleEditorSession")
+        node["evidence"]["locations"].append(dict(path="components/recipes/userStyleDraftBuilders.ts", symbol="prepareUserStyleEditorSession"))
     if node["id"] == "shared":
         node["entrypoints"].append("packages/shared/src/workerContracts.ts:validateWorkerLimits")
         node["evidence"]["locations"].append(dict(path="packages/shared/src/workerContracts.ts", symbol="validateWorkerLimits"))
         node["entrypoints"].append("packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy")
         node["evidence"]["locations"].append(dict(path="packages/shared/src/codexExecutionContract.ts", symbol="resolveCodexExecutionPolicy"))
+    if node["id"] == "generation-ui":
+        node["entrypoints"].append("components/shell/StudioViewport.tsx:StudioViewport")
+        node["evidence"]["locations"].append(dict(path="components/shell/StudioViewport.tsx", symbol="StudioViewport"))
+        node["entrypoints"].append("hooks/useStudioShell.ts:useStudioShell")
+        node["evidence"]["locations"].append(dict(path="hooks/useStudioShell.ts", symbol="useStudioShell"))
     if node["id"] == "job-history":
         node["entrypoints"].append("hooks/useWorkerDiagnostics.ts:useWorkerDiagnostics")
         node["evidence"]["locations"].append(dict(path="hooks/useWorkerDiagnostics.ts", symbol="useWorkerDiagnostics"))
@@ -93,11 +109,13 @@ for node in nodes:
 
 # from, to, interaction, evidence path and literal
 links = [
+    ("styles", "generation-ui", "calls", "components/recipes/useStyleComposition.ts", "onGenerate("),
     ("job-history", "runtime-settings", "calls", "services/studio-api/runtime.ts", "/api/health"),
     ("runtime-settings", "worker", "calls", "apps/local-server/src/runtimeRoutes.ts", "readWorkerStatus()"),
     ("worker", "runtime-settings", "calls", "apps/local-server/src/worker.ts", "getSettingsFn().workerLimits"),
     ("runtime-settings", "shared", "calls", "apps/local-server/src/config.ts", "validateWorkerLimits"),
     ("job-history", "job-client", "calls", "hooks/useJobHistory.ts", "listStudioJobs"),
+    ("job-history", "job-observer", "subscribes", "hooks/useJobHistory.ts", "stream.onRevisionGap"),
     ("generation-ui", "generation-run", "calls", "hooks/useGenerationPipeline.ts", "runLocalGenerationWithLifecycle"),
     ("generation-run", "job-client", "calls", "services/localGenerationRun.ts", "createStudioJobBatch"),
     ("generation-run", "job-observer", "calls", "services/localGenerationRun.ts", "watchJob"),
@@ -109,6 +127,7 @@ links = [
     ("job-intake", "worker", "calls", "apps/local-server/src/persistentJobIntake.ts", "enqueueJob(job)"),
     ("job-intake", "runtime-settings", "calls", "apps/local-server/src/persistentJobIntake.ts", "resolveProviderExecutionBlocker"),
     ("worker", "providers", "calls", "apps/local-server/src/worker.ts", "createExternalGenerationProvider"),
+    ("providers", "worker", "calls", "apps/local-server/src/providers/comfyExecutor.ts", "job.checkpointRemoteExecution!(value)"),
     ("worker", "jobs-db", "writes", "apps/local-server/src/worker.ts", "updateJobStatusFn"),
     ("worker", "asset-finalizer", "calls", "apps/local-server/src/worker.ts", "assetFinalizer.finalizeJobAsset"),
     ("worker", "event-bus", "publishes", "apps/local-server/src/worker.ts", "publishEventFn"),
@@ -119,8 +138,7 @@ links = [
     ("job-observer", "event-routes", "subscribes", "services/studioEventSource.ts", "/api/events"),
     ("job-observer", "job-client", "calls", "services/studioEventSource.ts", "./studio-api/jobs"),
     ("styles", "style-editor", "calls", "components/recipes/StylesBrowser.tsx", "<UserStyleEditorSurface"),
-    ("styles", "style-client", "calls", "components/recipes/StylesBrowser.tsx", "listUserStylePresets"),
-    ("style-editor", "style-client", "calls", "components/recipes/UserStyleEditorSurface.tsx", "createUserStylePreset"),
+    ("style-editor", "style-client", "calls", "components/recipes/useUserStyleLibrary.ts", "listUserStylePresets"),
     ("style-client", "style-routes", "calls", "services/studio-api/userStyles.ts", "/api/styles/user"),
     ("job-routes", "shared", "imports", "apps/local-server/src/jobRoutes.ts", "packages/shared/src/types"),
     ("job-intake", "shared", "calls", "apps/local-server/src/persistentJobIntake.ts", "resolveCodexExecutionPolicy"),
@@ -128,15 +146,20 @@ links = [
 ]
 edges = [dict(**{"from": a, "to": b}, type=kind, evidence=evidence(path, symbol))
          for a, b, kind, path, symbol in links]
+for edge in edges:
+    if edge["from"] == "providers" and edge["to"] == "worker":
+        edge["evidence"]["locations"].append(dict(path="apps/local-server/src/worker.ts", symbol="checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint)"))
+    if edge["from"] == "styles" and edge["to"] == "generation-ui":
+        edge["evidence"]["locations"].append(dict(path="components/RecipeRouter.tsx", symbol="onGenerate={handleGenerate}"))
 for node in nodes:
     node["callers"] = sorted([dict(id=e["from"], type=e["type"]) for e in edges if e["to"] == node["id"]], key=lambda x: (x["id"], x["type"]))
     node["callees"] = sorted([dict(id=e["to"], type=e["type"]) for e in edges if e["from"] == node["id"]], key=lambda x: (x["id"], x["type"]))
 
 flows = [
-    dict(id="generation", trigger="User starts generation", steps=["generation-ui", "generation-run", "job-client", "job-routes", "job-intake", "worker", "providers"], outcome="Every batch member is accepted before dispatch and uses its captured execution policy"),
+    dict(id="generation", trigger="User selects style layers and generates", steps=["styles", "generation-ui", "generation-run", "job-client", "job-routes", "job-intake", "worker", "providers"], outcome="Selected fields and strengths form recipe input; every batch member is accepted before dispatch with its captured execution policy"),
     dict(id="reconciliation", trigger="Observer attaches or recovers its connection", steps=["generation-run", "job-observer", "job-client", "job-routes", "jobs-db"], outcome="Observer reads durable job truth independently of event delivery"),
     dict(id="job-history", trigger="User opens Queue or pages terminal history", steps=["job-history", "job-client", "job-routes", "jobs-db"], outcome="All open work remains visible beside terminal history and authoritative counts"),
-    dict(id="finalization-recovery", trigger="Worker resumes a persisted finalization checkpoint", steps=["worker", "asset-finalizer", "catalog"], outcome="Existing asset is finalized into catalog truth"),
+    dict(id="provider-recovery", trigger="Worker resumes a captured Comfy remote execution or asset checkpoint", steps=["worker", "providers", "worker", "asset-finalizer", "catalog"], outcome="The bound runtime reconciles the existing remote job without a second prompt; existing output is finalized into catalog truth"),
     dict(id="user-style-edit", trigger="User opens a style draft and saves", steps=["styles", "style-editor", "style-client", "style-routes"], outcome="User style changes persist through the existing API"),
 ]
 commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=repo, text=True).strip()

@@ -16,7 +16,7 @@ type Sample = { index: number; routeMs?: number; searchMs?: number; selectionMs?
 const quantile = (values: number[], p: number) =>
   values.toSorted((a, b) => a - b)[Math.ceil(values.length * p) - 1];
 
-async function installFixture(context: BrowserContext, unmatched: Set<string>) {
+export async function installStyleBrowserFixture(context: BrowserContext, unmatched: Set<string>) {
   const settings = createDefaultEditableStudioSettings();
   const timestamp = '2026-09-05T00:00:00.000Z';
   const readiness = {
@@ -73,6 +73,11 @@ async function installFixture(context: BrowserContext, unmatched: Set<string>) {
       };
     else if (endpoint === '/api/workspaces') body = [workspace];
     else if (endpoint === '/api/styles/user') body = { styles: [] };
+    else if (endpoint === '/api/output-sources')
+      body = {
+        registry: { schemaVersion: 'external-output-sources/v1', sources: [] },
+        candidates: [],
+      };
     else if (endpoint === '/api/jobs')
       body = {
         open: [],
@@ -216,7 +221,7 @@ export async function measureStyleWorkflow({
   await mkdir(captureDir, { recursive: true });
   const openPage = async () => {
     const context = await browser.newContext({ viewport });
-    await installFixture(context, unmatched);
+    await installStyleBrowserFixture(context, unmatched);
     const page = await context.newPage();
     page.on('pageerror', (error) => pageErrors.push(error.message));
     page.on('console', (message) => {
@@ -242,6 +247,9 @@ export async function measureStyleWorkflow({
       const { context, page } = await openPage();
       pages.push({ name: variant.name, context, page });
       await page.goto(variant.url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+      // Let initial fixture reads settle before warmups. The retained baseline
+      // remounts its lazy route on the first refresh and can swallow an early click.
+      await page.waitForLoadState('networkidle');
       for (let index = 0; index < warmups; index += 1)
         await warmSample(page, target, results.length);
     }
@@ -276,6 +284,25 @@ export async function measureStyleWorkflow({
         ),
       ]),
     );
+    const regressionChecks = comparisonUrl
+      ? ['routeMs', 'searchMs', 'selectionMs'].flatMap((metric) =>
+          (['median', 'p95'] as const).map((statistic) => {
+            const baseline = summaries.baseline[metric];
+            const treatment = summaries.treatment[metric];
+            const allowedIncreaseMs = Math.max(baseline[statistic] * 0.1, baseline.noiseBandMs);
+            const increaseMs = treatment[statistic] - baseline[statistic];
+            return {
+              metric,
+              statistic,
+              baselineMs: baseline[statistic],
+              treatmentMs: treatment[statistic],
+              allowedIncreaseMs,
+              increaseMs,
+              passed: increaseMs <= allowedIncreaseMs,
+            };
+          }),
+        )
+      : [];
     const report = {
       recordedAt: new Date().toISOString(),
       protocol: 'workflow-styles-v1',
@@ -309,6 +336,12 @@ export async function measureStyleWorkflow({
       variants,
       observations,
       summaries,
+      regressionChecks,
+      verdict: comparisonUrl
+        ? regressionChecks.every((check) => check.passed)
+          ? 'pass'
+          : 'regression'
+        : 'baseline-only',
       unmatchedEndpoints: [...unmatched],
       pageErrors,
       consoleErrors: [...new Set(consoleErrors)],
@@ -320,6 +353,8 @@ export async function measureStyleWorkflow({
       throw new Error(
         `Performance fixture needs correction: ${pageErrors.length} page errors; unmatched endpoints: ${[...unmatched].join(', ')}`,
       );
+    if (regressionChecks.some((check) => !check.passed))
+      throw new Error(`Styles performance regressed beyond the recorded threshold; see ${output}.`);
     return report;
   } catch (error) {
     for (const { name, page } of pages) {

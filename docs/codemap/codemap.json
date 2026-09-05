@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05T20:20:53Z",
-  "generated_from_commit": "baf1510004cdd05abb9c753439c93cceb52b1fea",
+  "generated_at": "2026-09-05T21:47:54Z",
+  "generated_from_commit": "1fd0e8eaad0d63d795b4a436f38a2a4f17a67d61",
   "scope": ["."],
   "nodes": [
     {
@@ -141,7 +141,7 @@
       "tests": [
         "services/localGenerationRun.stream.test.ts",
         "services/localGenerationRun.test.ts",
-        "services/localGenerationRun.workspace.test.ts"
+        "services/localGenerationRuntimeAdapters.test.ts"
       ],
       "callers": [
         {
@@ -174,9 +174,18 @@
       "path": "hooks/useGenerationPipeline.ts",
       "type": "interface",
       "boundary": "User generation lifecycle",
-      "entrypoints": ["hooks/useGenerationPipeline.ts:useGenerationPipeline"],
+      "entrypoints": [
+        "hooks/useGenerationPipeline.ts:useGenerationPipeline",
+        "components/shell/StudioViewport.tsx:StudioViewport",
+        "hooks/useStudioShell.ts:useStudioShell"
+      ],
       "tests": ["hooks/useGenerationPipeline.test.ts"],
-      "callers": [],
+      "callers": [
+        {
+          "id": "styles",
+          "type": "calls"
+        }
+      ],
       "callees": [
         {
           "id": "generation-run",
@@ -189,6 +198,14 @@
           {
             "path": "hooks/useGenerationPipeline.ts",
             "symbol": "useGenerationPipeline"
+          },
+          {
+            "path": "components/shell/StudioViewport.tsx",
+            "symbol": "StudioViewport"
+          },
+          {
+            "path": "hooks/useStudioShell.ts",
+            "symbol": "useStudioShell"
           }
         ]
       }
@@ -247,6 +264,10 @@
         {
           "id": "job-client",
           "type": "calls"
+        },
+        {
+          "id": "job-observer",
+          "type": "subscribes"
         },
         {
           "id": "runtime-settings",
@@ -323,6 +344,10 @@
         {
           "id": "generation-run",
           "type": "calls"
+        },
+        {
+          "id": "job-history",
+          "type": "subscribes"
         }
       ],
       "callees": [
@@ -461,6 +486,10 @@
         {
           "id": "shared",
           "type": "calls"
+        },
+        {
+          "id": "worker",
+          "type": "calls"
         }
       ],
       "evidence": {
@@ -593,10 +622,6 @@
         {
           "id": "style-editor",
           "type": "calls"
-        },
-        {
-          "id": "styles",
-          "type": "calls"
         }
       ],
       "callees": [
@@ -617,11 +642,18 @@
     },
     {
       "id": "style-editor",
-      "path": "components/recipes/UserStyleEditorSurface.tsx",
+      "path": "components/recipes/useUserStyleLibrary.ts",
       "type": "interface",
-      "boundary": "User style draft and save session",
-      "entrypoints": ["components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface"],
-      "tests": [],
+      "boundary": "User style data, editor identity and mutation reconciliation",
+      "entrypoints": [
+        "components/recipes/useUserStyleLibrary.ts:useUserStyleLibrary",
+        "components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface",
+        "components/recipes/userStyleDraftBuilders.ts:prepareUserStyleEditorSession"
+      ],
+      "tests": [
+        "components/recipes/userStyleDraftBuilders.test.ts",
+        "scripts/verify-style-editing.ts"
+      ],
       "callers": [
         {
           "id": "styles",
@@ -638,8 +670,16 @@
         "status": "verified",
         "locations": [
           {
+            "path": "components/recipes/useUserStyleLibrary.ts",
+            "symbol": "useUserStyleLibrary"
+          },
+          {
             "path": "components/recipes/UserStyleEditorSurface.tsx",
             "symbol": "UserStyleEditorSurface"
+          },
+          {
+            "path": "components/recipes/userStyleDraftBuilders.ts",
+            "symbol": "prepareUserStyleEditorSession"
           }
         ]
       }
@@ -673,12 +713,20 @@
       "path": "components/recipes/StylesBrowser.tsx",
       "type": "interface",
       "boundary": "Style browsing and selected composition",
-      "entrypoints": ["components/recipes/StylesBrowser.tsx:StylesBrowser"],
-      "tests": [],
+      "entrypoints": [
+        "components/recipes/StylesBrowser.tsx:StylesBrowser",
+        "components/recipes/useStyleBrowserNavigation.ts:useStyleBrowserNavigation",
+        "components/recipes/useStyleComposition.ts:useStyleComposition"
+      ],
+      "tests": [
+        "components/recipes/styleLayerComposer.test.ts",
+        "components/recipes/styleTabRouting.test.ts",
+        "scripts/measure-style-workflow.ts"
+      ],
       "callers": [],
       "callees": [
         {
-          "id": "style-client",
+          "id": "generation-ui",
           "type": "calls"
         },
         {
@@ -692,6 +740,14 @@
           {
             "path": "components/recipes/StylesBrowser.tsx",
             "symbol": "StylesBrowser"
+          },
+          {
+            "path": "components/recipes/useStyleBrowserNavigation.ts",
+            "symbol": "useStyleBrowserNavigation"
+          },
+          {
+            "path": "components/recipes/useStyleComposition.ts",
+            "symbol": "useStyleComposition"
           }
         ]
       }
@@ -714,6 +770,10 @@
         },
         {
           "id": "job-routes",
+          "type": "calls"
+        },
+        {
+          "id": "providers",
           "type": "calls"
         },
         {
@@ -877,6 +937,20 @@
           {
             "path": "hooks/useJobHistory.ts",
             "symbol": "listStudioJobs"
+          }
+        ]
+      }
+    },
+    {
+      "from": "job-history",
+      "to": "job-observer",
+      "type": "subscribes",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "hooks/useJobHistory.ts",
+            "symbol": "stream.onRevisionGap"
           }
         ]
       }
@@ -1050,6 +1124,24 @@
       }
     },
     {
+      "from": "providers",
+      "to": "worker",
+      "type": "calls",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/providers/comfyExecutor.ts",
+            "symbol": "job.checkpointRemoteExecution!(value)"
+          },
+          {
+            "path": "apps/local-server/src/worker.ts",
+            "symbol": "checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint)"
+          }
+        ]
+      }
+    },
+    {
       "from": "runtime-settings",
       "to": "shared",
       "type": "calls",
@@ -1099,22 +1191,26 @@
         "status": "verified",
         "locations": [
           {
-            "path": "components/recipes/UserStyleEditorSurface.tsx",
-            "symbol": "createUserStylePreset"
+            "path": "components/recipes/useUserStyleLibrary.ts",
+            "symbol": "listUserStylePresets"
           }
         ]
       }
     },
     {
       "from": "styles",
-      "to": "style-client",
+      "to": "generation-ui",
       "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "components/recipes/StylesBrowser.tsx",
-            "symbol": "listUserStylePresets"
+            "path": "components/recipes/useStyleComposition.ts",
+            "symbol": "onGenerate("
+          },
+          {
+            "path": "components/RecipeRouter.tsx",
+            "symbol": "onGenerate={handleGenerate}"
           }
         ]
       }
@@ -1207,8 +1303,9 @@
   "flows": [
     {
       "id": "generation",
-      "trigger": "User starts generation",
+      "trigger": "User selects style layers and generates",
       "steps": [
+        "styles",
         "generation-ui",
         "generation-run",
         "job-client",
@@ -1217,7 +1314,7 @@
         "worker",
         "providers"
       ],
-      "outcome": "Every batch member is accepted before dispatch and uses its captured execution policy"
+      "outcome": "Selected fields and strengths form recipe input; every batch member is accepted before dispatch with its captured execution policy"
     },
     {
       "id": "reconciliation",
@@ -1232,10 +1329,10 @@
       "outcome": "All open work remains visible beside terminal history and authoritative counts"
     },
     {
-      "id": "finalization-recovery",
-      "trigger": "Worker resumes a persisted finalization checkpoint",
-      "steps": ["worker", "asset-finalizer", "catalog"],
-      "outcome": "Existing asset is finalized into catalog truth"
+      "id": "provider-recovery",
+      "trigger": "Worker resumes a captured Comfy remote execution or asset checkpoint",
+      "steps": ["worker", "providers", "worker", "asset-finalizer", "catalog"],
+      "outcome": "The bound runtime reconciles the existing remote job without a second prompt; existing output is finalized into catalog truth"
     },
     {
       "id": "user-style-edit",

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { JobListPage, TerminalJobStatus } from '../packages/shared/src';
 import { listStudioJobs } from '../services/studio-api/jobs';
+import { createStudioEventStream } from '../services/studioEventSource';
 import { toShellActivityJob, type ShellActivityJob } from '../lib/shellActivityJob';
 import { useLatestRef } from './useLatestRef';
 
@@ -136,9 +137,35 @@ export function useJobHistory(
     void request();
     return () => pending.current?.abort();
   }, [request]);
+  useEffect(() => {
+    const stream = createStudioEventStream();
+    const unsubscribe = stream.onRevisionGap?.(() => {
+      // Missed events can change older pages while the recent summary stays identical.
+      if (pending.current) refreshAfterRequest.current = true;
+      else void request();
+    });
+    return () => {
+      unsubscribe?.();
+      stream.close();
+    };
+  }, [request]);
   const previousJobs = useRef(serverJobs);
   useEffect(() => {
     if (previousJobs.current === serverJobs) return;
+    if (
+      previousJobs.current.length === serverJobs.length &&
+      previousJobs.current.every((previous, index) => {
+        const next = serverJobs[index];
+        return (
+          previous.id === next.id &&
+          previous.updatedAt === next.updatedAt &&
+          previous.status === next.status
+        );
+      })
+    ) {
+      previousJobs.current = serverJobs;
+      return;
+    }
     const timer = setTimeout(() => {
       previousJobs.current = serverJobs;
       if (pending.current) refreshAfterRequest.current = true;

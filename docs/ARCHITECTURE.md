@@ -56,6 +56,9 @@ graph TD
 - `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts` project Command Center state.
 - `components/shell/StudioViewport.tsx` demand-loads route surfaces.
 - `hooks/useStyleRuntimePacks.ts` projects the Style Packs that the current browser intent needs. `components/recipes/stylesData.ts` owns the shared value or promise registry and retry boundary.
+- Styles separates three state owners: `useStyleBrowserNavigation` owns routes, filters and favorites; `useStyleComposition` owns selected layers and generation inputs; `useUserStyleLibrary` owns catalog reads and editor sessions. Draft preparation and the editor remain demand-loaded. Late mutation responses update catalog and selected layers only when their version is current, even after the editor closes.
+- `StudioViewport` keeps each lazy route component's identity stable after preloading. Switching to its loaded component during a later render would remount the route and discard an open editor or selection.
+- Settings covers the shell while keeping its header mounted. The modal can capture and restore the opening control; suppressing and unmounting that header discards the focus target before the modal opens.
 - `lib/styleThumbnailCatalog.ts` projects default and provider-specific Style card images from pack-scoped generated modules.
   Provider variants stay additional presentation assets with validated provenance.
   They do not replace the canonical default card or Style Preset Manifest.
@@ -97,7 +100,7 @@ graph TD
 - `StudioWorkspace` is the shared API contract. Shared Effect schemas validate Workspace and Job intake boundaries before route logic runs.
 - Persistent jobs carry immutable Library identity or root context and durable finalization checkpoints. Recovery can resume file, Asset, Catalog, or job completion without duplicating records or events.
 - `/api/jobs` and `/api/catalog` are summary-first hot reads. Detail paths load full payloads on demand.
-- `/api/jobs` returns all open jobs (`queued`, `running`, `needs_review`) separately from cursor-paged terminal history (`completed`, `failed`, `cancelled`). Workspace filters scope the rows and counts; the response also names the global open count. History status filters do not hide open work. Queue owns pagination and keeps loaded rows visible during a failed page read. Job-specific observers and animation recovery read `/api/jobs/{id}/status`, independent of the history window.
+- `/api/jobs` returns all open jobs (`queued`, `running`, `needs_review`) separately from cursor-paged terminal history (`completed`, `failed`, `cancelled`). Workspace filters scope the rows and counts; the response also names the global open count. History status filters do not hide open work. Queue owns pagination and keeps loaded rows visible during a failed page read. Identical summary reads preserve its cursor; a revision gap on the shared event connection restarts reconciliation because older pages may have changed. Job-specific observers and animation recovery read `/api/jobs/{id}/status`, independent of the history window.
 - The Studio Library defaults to a folder named `Codex Studio` in the user home. Portable start uses `Codex Studio Library` beside the unpacked folder when `STUDIO_LIBRARY_DIR` is unset.
 - Internal Studio Library state lives under `.studio/`.
 - Generated outputs, thumbnails, exports, and trash assets live under `outputs/`. New generations use `outputs/<workspace>/`.
