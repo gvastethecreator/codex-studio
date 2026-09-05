@@ -358,13 +358,17 @@ function readLastTranscriptLines(
 }
 
 export async function getJobDetail(jobId: string): Promise<JobDetailResponse | null> {
-  const [{ queryCatalogDetails }, { getCodexTurnByJobId }, { getJob }, { listJobEvents }] =
-    await Promise.all([
-      import('./catalog'),
-      import('./db/codexTurns'),
-      import('./db/jobs'),
-      import('./db/events'),
-    ]);
+  const [
+    { queryCatalogDetails },
+    { getCodexTurnByJobId },
+    { getJob, listJobAttempts },
+    { listJobEvents },
+  ] = await Promise.all([
+    import('./catalog'),
+    import('./db/codexTurns'),
+    import('./db/jobs'),
+    import('./db/events'),
+  ]);
   const job = getJob(jobId);
   if (!job) return null;
 
@@ -383,6 +387,7 @@ export async function getJobDetail(jobId: string): Promise<JobDetailResponse | n
 
   return {
     job,
+    attempts: listJobAttempts(job.id),
     events,
     turn,
     transcriptEntries,

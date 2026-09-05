@@ -136,8 +136,8 @@ function handleNonCompletedGenerationOutcome({
 
 function isCompletedGenerationOutcome(
   outcome: LocalGenerationLifecycleOutcome,
-): outcome is Extract<LocalGenerationLifecycleOutcome, { status: 'completed' }> {
-  return outcome.status === 'completed';
+): outcome is Extract<LocalGenerationLifecycleOutcome, { status: 'completed' | 'partial' }> {
+  return outcome.status === 'completed' || outcome.status === 'partial';
 }
 
 interface UseGenerationPipelineProps {
@@ -281,10 +281,12 @@ export const useGenerationPipeline = ({
           `Generated local result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`,
         );
         addToastRef.current(
-          `Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`,
-          'success',
+          outcome.status === 'partial'
+            ? `Partial result: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready. ${result.batch ? `${result.batch.counts.failed} failed, ${result.batch.counts.cancelled} cancelled, ${result.batch.counts.needs_review} need review.` : 'Batch counts are unavailable.'} Open Queue to recover the batch.`
+            : `Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`,
+          outcome.status === 'partial' ? 'info' : 'success',
         );
-        return { status: 'completed' };
+        return { status: outcome.status };
       } catch (error) {
         reportGenerationError({
           error,
@@ -358,7 +360,12 @@ export const useGenerationPipeline = ({
         logRef.current(
           `Generated edit result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`,
         );
-        addToastRef.current('Image edit complete', 'success');
+        addToastRef.current(
+          outcome.status === 'partial'
+            ? 'Edited image is ready, but batch status needs reconciliation. Open Queue.'
+            : 'Image edit complete',
+          outcome.status === 'partial' ? 'info' : 'success',
+        );
       } catch (error) {
         reportGenerationError({
           error,

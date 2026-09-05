@@ -1,4 +1,5 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vite-plus/test';
+import { BatchSubmissionUncertainError, createStudioJobBatch } from './studio-api/jobs';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import { JobNeedsReviewError, JobObservationError } from './studioEventSource';
@@ -16,6 +17,43 @@ import {
 } from './localGenerationRun';
 
 describe('localGenerationRun', () => {
+  it('keeps the request identity and reports disconnection when both batch acknowledgements are lost', async () => {
+    const accepted = new Set<string>();
+    const bodies: string[] = [];
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async (_url, init?: RequestInit) => {
+        if (init?.method === 'POST') {
+          if (typeof init.body !== 'string')
+            throw new Error('Expected a serialized batch request.');
+          bodies.push(init.body);
+          accepted.add(JSON.parse(init.body).requestId);
+        }
+        throw new TypeError('Network disconnected after server acceptance');
+      }),
+    );
+    try {
+      let failure: unknown;
+      try {
+        await createStudioJobBatch({
+          requestId: 'batch-lost-ack',
+          items: [{ kind: 'dry_run', prompt: 'draw' }],
+        });
+      } catch (error) {
+        failure = error;
+      }
+      expect(bodies).toHaveLength(2);
+      expect(bodies[0]).toBe(bodies[1]);
+      expect([...accepted]).toEqual(['batch-lost-ack']);
+      expect(failure).toBeInstanceOf(BatchSubmissionUncertainError);
+      expect(buildLocalGenerationFailureOutcome({ error: failure, durationMs: 20 })).toMatchObject({
+        status: 'disconnected',
+        message: expect.stringContaining('batch-lost-ack'),
+      });
+    } finally {
+      vi.unstubAllGlobals();
+    }
+  });
   it('keeps uncertain execution and lost observation distinct from generation failure', () => {
     expect(
       buildLocalGenerationFailureOutcome({

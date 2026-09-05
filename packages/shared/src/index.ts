@@ -1,6 +1,7 @@
 export * from './types';
 export * from './jobRecovery';
 export * from './codexExecutionContract';
+export * from './jobBatches';
 export * from './promptTransport';
 export * from './generationContracts';
 export * from './grokImagineContract';

@@ -85,6 +85,7 @@ import { createCodexRoutes } from './codexRoutes';
 import { createLibrariesRoutes, type LibrariesRoutesDependencies } from './librariesRoutes';
 
 import { createJobRoutes } from './jobRoutes';
+import { jobBatchStore } from './db/jobBatches';
 import { createAssetLogRoutes } from './assetLogRoutes';
 import { createCheckingRuntimeReport, createRuntimeRoutes } from './runtimeRoutes';
 import { createStudioControlRoutes } from './studioControlRoutes';
@@ -332,7 +333,8 @@ export async function createStudioApp(
       getJob: (jobId) => jobStore.getJob(jobId),
       getJobStatus: (jobId) => jobStore.getJobStatus(jobId),
       getJobDetail,
-      requeueJob: (jobId) => jobStore.requeueJob(jobId),
+      requeueJob: (jobId, expected) => jobStore.requeueJob(jobId, undefined, expected),
+      batchStore: jobBatchStore,
       cancelQueuedOrRunningJob: (jobId) => workerController.cancelQueuedOrRunningJob(jobId),
       ensureDefaultWorkspaceId: () => ensureDefaultWorkspace()?.id ?? 'default',
       createJobId: () => randomUUID(),

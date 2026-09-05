@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05T19:14:24Z",
-  "generated_from_commit": "531a1d893ea81e90aee6c45b0f6077905b534bd1",
+  "generated_at": "2026-09-05T19:38:04Z",
+  "generated_from_commit": "20ae3ff3ee4de74aeb1d73cf3854b3ebb6d2b869",
   "scope": ["."],
   "nodes": [
     {
@@ -197,8 +197,8 @@
       "id": "job-client",
       "path": "services/studio-api/jobs.ts",
       "type": "service",
-      "boundary": "Browser job API",
-      "entrypoints": ["services/studio-api/jobs.ts:createStudioJob"],
+      "boundary": "Browser job and atomic batch API",
+      "entrypoints": ["services/studio-api/jobs.ts:createStudioJobBatch"],
       "tests": [],
       "callers": [
         {
@@ -225,7 +225,7 @@
         "locations": [
           {
             "path": "services/studio-api/jobs.ts",
-            "symbol": "createStudioJob"
+            "symbol": "createStudioJobBatch"
           }
         ]
       }
@@ -237,7 +237,8 @@
       "boundary": "Open jobs and filtered terminal history",
       "entrypoints": [
         "hooks/useJobHistory.ts:useJobHistory",
-        "components/QueuePanel.tsx:QueuePanel"
+        "components/QueuePanel.tsx:QueuePanel",
+        "components/QueueBatchCard.tsx:QueueBatchCard"
       ],
       "tests": ["hooks/useJobHistory.test.tsx"],
       "callers": [],
@@ -257,6 +258,10 @@
           {
             "path": "components/QueuePanel.tsx",
             "symbol": "useJobHistory"
+          },
+          {
+            "path": "components/QueueBatchCard.tsx",
+            "symbol": "QueueBatchCard"
           }
         ]
       }
@@ -265,7 +270,7 @@
       "id": "job-intake",
       "path": "apps/local-server/src/persistentJobIntake.ts",
       "type": "service",
-      "boundary": "Validate and persist before dispatch",
+      "boundary": "Prepare all requests before acceptance and dispatch",
       "entrypoints": ["apps/local-server/src/persistentJobIntake.ts:createPersistentJobIntake"],
       "tests": ["apps/local-server/src/persistentJobIntake.test.ts"],
       "callers": [
@@ -340,7 +345,10 @@
       "path": "apps/local-server/src/jobRoutes.ts",
       "type": "interface",
       "boundary": "Job intake, inspection and actions",
-      "entrypoints": ["apps/local-server/src/jobRoutes.ts:createJobRoutes"],
+      "entrypoints": [
+        "apps/local-server/src/jobRoutes.ts:createJobRoutes",
+        "apps/local-server/src/jobBatchRoutes.ts:createJobBatchRoutes"
+      ],
       "tests": ["apps/local-server/src/jobRoutes.test.ts"],
       "callers": [
         {
@@ -372,6 +380,10 @@
           {
             "path": "apps/local-server/src/jobRoutes.ts",
             "symbol": "createJobRoutes"
+          },
+          {
+            "path": "apps/local-server/src/jobBatchRoutes.ts",
+            "symbol": "createJobBatchRoutes"
           }
         ]
       }
@@ -380,8 +392,11 @@
       "id": "jobs-db",
       "path": "apps/local-server/src/db/jobs.ts",
       "type": "database",
-      "boundary": "Durable job states and checkpoints",
-      "entrypoints": ["apps/local-server/src/db/jobs.ts:updateJobStatus"],
+      "boundary": "Durable jobs, batch membership, attempts and checkpoints",
+      "entrypoints": [
+        "apps/local-server/src/db/jobs.ts:updateJobStatus",
+        "apps/local-server/src/db/jobBatches.ts:createJobBatch"
+      ],
       "tests": ["apps/local-server/src/db/jobs.test.ts"],
       "callers": [
         {
@@ -408,6 +423,10 @@
           {
             "path": "apps/local-server/src/db/jobs.ts",
             "symbol": "updateJobStatus"
+          },
+          {
+            "path": "apps/local-server/src/db/jobBatches.ts",
+            "symbol": "createJobBatch"
           }
         ]
       }
@@ -489,7 +508,7 @@
       "type": "module",
       "boundary": "Provider-independent domain and API contracts",
       "entrypoints": [
-        "packages/shared/src/types.ts:JobStatus",
+        "packages/shared/src/jobBatches.ts:JobStatus",
         "packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy"
       ],
       "tests": [],
@@ -512,7 +531,7 @@
         "status": "verified",
         "locations": [
           {
-            "path": "packages/shared/src/types.ts",
+            "path": "packages/shared/src/jobBatches.ts",
             "symbol": "JobStatus"
           },
           {
@@ -752,7 +771,7 @@
         "locations": [
           {
             "path": "services/localGenerationRun.ts",
-            "symbol": "createStudioJob"
+            "symbol": "createStudioJobBatch"
           }
         ]
       }
@@ -864,7 +883,7 @@
         "locations": [
           {
             "path": "apps/local-server/src/persistentJobIntake.ts",
-            "symbol": "enqueueJob(queuedJob)"
+            "symbol": "enqueueJob(job)"
           }
         ]
       }
@@ -1093,7 +1112,7 @@
         "worker",
         "providers"
       ],
-      "outcome": "Validated persistent job uses its captured provider transport and execution policy"
+      "outcome": "Every batch member is accepted before dispatch and uses its captured execution policy"
     },
     {
       "id": "reconciliation",

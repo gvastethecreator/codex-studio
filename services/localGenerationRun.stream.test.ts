@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
+import type { Job } from '../packages/shared/src';
 
 const mocks = vi.hoisted(() => {
   const stream = {
@@ -34,7 +35,7 @@ const mocks = vi.hoisted(() => {
       updatedAt: '2026-06-19T00:00:00.000Z',
       completedAt: '2026-06-19T00:00:01.000Z',
     })),
-    createStudioJob: vi.fn(async () => ({
+    createJobFixture: vi.fn(async (): Promise<Job> => ({
       id: 'job-1',
       workspaceId: 'default',
       kind: 'image_generate',
@@ -50,7 +51,9 @@ const mocks = vi.hoisted(() => {
       updatedAt: '2026-06-19T00:00:00.000Z',
       completedAt: null,
     })),
-    cancelStudioJob: vi.fn(async () => ({ status: 'cancelled' })),
+    createStudioJobBatch: vi.fn(),
+    getStudioJobBatchSummary: vi.fn(),
+    cancelStudioJob: vi.fn(async (_jobId: string) => ({ status: 'cancelled' })),
     queryCatalog: vi.fn(async () => ({
       images: [
         {
@@ -92,13 +95,15 @@ vi.mock('./studioEventSource', async (importOriginal) => ({
   watchJob: mocks.watchJob,
 }));
 
-vi.mock('./studio-api/jobs', () => ({
+vi.mock('./studio-api/jobs', async (importOriginal) => ({
+  ...(await importOriginal<typeof import('./studio-api/jobs')>()),
   cancelStudioJob: mocks.cancelStudioJob,
-  createStudioJob: mocks.createStudioJob,
+  createStudioJobBatch: mocks.createStudioJobBatch,
+  getStudioJobBatchSummary: mocks.getStudioJobBatchSummary,
 }));
 
 vi.mock('./studio-api/settings', () => ({
-  getEditableStudioSettings: vi.fn(),
+  getEditableStudioSettings: vi.fn(async () => ({ defaultProviderId: 'codex' })),
 }));
 
 vi.mock('./studio-api/catalog', () => ({
@@ -115,98 +120,78 @@ vi.mock('../lib/recipeModules', () => ({
   })),
 }));
 
-describe('runSingleCodexImagegenJob stream ownership', () => {
+describe('accepted batch observation', () => {
   beforeEach(() => {
     vi.resetModules();
     vi.clearAllMocks();
   });
 
-  it('closes the event stream it creates', async () => {
-    const { runSingleCodexImagegenJob } = await import('./localGenerationRun');
-
-    await runSingleCodexImagegenJob({
-      config: DEFAULT_GENERATION_CONFIG,
-      batchId: 'batch-1',
-      batchIndex: 1,
-      batchCount: 1,
-      workspaceId: 'workspace-1',
-      providerId: 'codex',
-    });
-
+  it('closes an owned stream and leaves an injected stream open', async () => {
+    const { observeAcceptedGenerationJob } = await import('./localGenerationRun');
+    const job = await mocks.createJobFixture();
+    await observeAcceptedGenerationJob({ job, batchId: 'batch-1' });
     expect(mocks.createStudioEventStream).toHaveBeenCalledTimes(1);
     expect(mocks.stream.close).toHaveBeenCalledTimes(1);
-  }, 60_000);
+    mocks.stream.close.mockClear();
+    await observeAcceptedGenerationJob({ job, batchId: 'batch-1', stream: mocks.stream });
+    expect(mocks.createStudioEventStream).toHaveBeenCalledTimes(1);
+    expect(mocks.stream.close).not.toHaveBeenCalled();
+  });
 
-  it('does not close an injected event stream', async () => {
-    const { runSingleCodexImagegenJob } = await import('./localGenerationRun');
-    const injectedStream = {
-      onJobUpdate: vi.fn(),
-      onAssetAdded: vi.fn(),
-      onCatalogChanged: vi.fn(),
-      onLogAdded: vi.fn(),
-      onOnboardingStage: vi.fn(),
-      onOnboardingProbe: vi.fn(),
-      onAuthUpdated: vi.fn(),
-      onConnectionChange: vi.fn(),
-      close: vi.fn(),
-    };
-
-    await runSingleCodexImagegenJob({
-      config: DEFAULT_GENERATION_CONFIG,
-      batchId: 'batch-1',
-      batchIndex: 1,
-      batchCount: 1,
-      workspaceId: 'workspace-1',
-      providerId: 'codex',
-      stream: injectedStream,
-    });
-
-    expect(mocks.createStudioEventStream).not.toHaveBeenCalled();
-    expect(injectedStream.close).not.toHaveBeenCalled();
-  }, 60_000);
-
-  it('cancels a backend job linked after the caller already aborted', async () => {
-    let resolveCreatedJob!: (job: Awaited<ReturnType<typeof mocks.createStudioJob>>) => void;
-    mocks.createStudioJob.mockImplementationOnce(
+  it('cancels every accepted member when the acknowledgement arrives after abort', async () => {
+    const job = await mocks.createJobFixture();
+    let accept!: (value: unknown) => void;
+    mocks.createStudioJobBatch.mockImplementationOnce(
       () =>
         new Promise((resolve) => {
-          resolveCreatedJob = resolve;
+          accept = resolve;
         }),
     );
-    const abortController = new AbortController();
-    const { runSingleCodexImagegenJob } = await import('./localGenerationRun');
-
-    const run = runSingleCodexImagegenJob({
-      config: DEFAULT_GENERATION_CONFIG,
-      batchId: 'batch-late-cancel',
-      batchIndex: 1,
-      batchCount: 1,
-      workspaceId: 'workspace-1',
-      providerId: 'codex',
-      signal: abortController.signal,
-    });
-
-    await vi.waitFor(() => expect(mocks.createStudioJob).toHaveBeenCalledTimes(1));
-    abortController.abort();
-    resolveCreatedJob({
-      id: 'job-late',
+    const controller = new AbortController();
+    const { runLocalGeneration } = await import('./localGenerationRun');
+    const run = runLocalGeneration({
+      config: { ...DEFAULT_GENERATION_CONFIG, batchCount: 2 },
       workspaceId: 'default',
-      kind: 'image_generate',
-      providerId: 'codex',
-      sourceSpec: null,
-      status: 'queued',
-      execution: null,
-      originalPrompt: 'prompt',
-      expandedPrompt: null,
-      finalPromptUsed: 'prompt',
-      error: null,
-      createdAt: '2026-06-19T00:00:00.000Z',
-      updatedAt: '2026-06-19T00:00:00.000Z',
-      completedAt: null,
+      signal: controller.signal,
     });
-
+    await vi.waitFor(() => expect(mocks.createStudioJobBatch).toHaveBeenCalledTimes(1));
+    controller.abort();
+    accept({ id: 'batch-late', jobs: [job, { ...job, id: 'job-2' }] });
     await expect(run).rejects.toMatchObject({ name: 'AbortError' });
-    expect(mocks.cancelStudioJob).toHaveBeenCalledWith('job-late');
+    expect(mocks.cancelStudioJob.mock.calls.map(([id]) => id)).toEqual(['job-1', 'job-2']);
     expect(mocks.watchJob).not.toHaveBeenCalled();
+  });
+
+  it('retains a successful image and reports partial from durable batch counts', async () => {
+    const job = await mocks.createJobFixture();
+    mocks.createStudioJobBatch.mockResolvedValueOnce({
+      id: 'batch-partial',
+      jobs: [job, { ...job, id: 'job-2' }],
+    });
+    mocks.watchJob.mockRejectedValueOnce(new Error('Provider rejected one item'));
+    mocks.getStudioJobBatchSummary.mockResolvedValueOnce({
+      id: 'batch-partial',
+      requestedCount: 2,
+      status: 'partial',
+      counts: { completed: 1, failed: 1, queued: 0, running: 0, cancelled: 0, needs_review: 0 },
+    });
+    const { runLocalGenerationWithLifecycle } = await import('./localGenerationRun');
+    const outcome = await runLocalGenerationWithLifecycle({
+      config: { ...DEFAULT_GENERATION_CONFIG, batchCount: 2 },
+      workspaceId: 'default',
+    });
+    expect(outcome).toMatchObject({
+      status: 'partial',
+      result: {
+        batchId: 'batch-partial',
+        generatedCount: 1,
+        batch: { requestedCount: 2, counts: { completed: 1, failed: 1 } },
+        images: [{ id: 'asset-1' }],
+      },
+    });
+    const request = mocks.createStudioJobBatch.mock.calls[0][0];
+    expect(request.items).toHaveLength(2);
+    expect(request.requestId).toMatch(/^batch-/);
+    expect(mocks.createStudioJobBatch).toHaveBeenCalledTimes(1);
   });
 });

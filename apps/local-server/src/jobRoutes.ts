@@ -14,6 +14,8 @@ import {
 } from '../../../packages/shared/src/studioApiSchemas';
 import { collectGrokImagineJobIssues } from '../../../packages/shared/src/grokImagineContract';
 import { canResumeStudioJob } from '../../../packages/shared/src/jobRecovery';
+import { createJobBatchRoutes } from './jobBatchRoutes';
+import type { JobBatchStore } from './db/jobBatches';
 import {
   createPersistentJobIntake,
   type PersistentJobIntakeDependencies,
@@ -24,7 +26,8 @@ interface JobRoutesDependencies extends PersistentJobIntakeDependencies {
   getJob: (jobId: string) => Job | null;
   getJobStatus?: (jobId: string) => JobStatusSnapshot | null;
   getJobDetail: (jobId: string) => Promise<JobDetailResponse | null>;
-  requeueJob?: (jobId: string) => Job | null;
+  requeueJob?: (jobId: string, expected?: { attempt: number; status: Job['status'] }) => Job | null;
+  batchStore?: JobBatchStore;
   cancelQueuedOrRunningJob: (jobId: string) => Job | null;
 }
 
@@ -48,6 +51,7 @@ export function createJobRoutes({
   },
   getJobDetail,
   requeueJob,
+  batchStore,
   cancelQueuedOrRunningJob,
   ensureDefaultWorkspaceId,
   createJobId,
@@ -89,6 +93,16 @@ export function createJobRoutes({
     logJobCreated,
     enqueueJob,
   });
+
+  if (batchStore)
+    routes.route(
+      '/batches',
+      createJobBatchRoutes({
+        store: batchStore,
+        intake: persistentJobIntake,
+        resolveProviderExecutionBlocker,
+      }),
+    );
 
   routes.get('/', (c) => {
     const status = c.req.query('status');
@@ -163,6 +177,19 @@ export function createJobRoutes({
     const jobId = c.req.param('id');
     const job = getJob(jobId);
     if (!job) return c.json({ error: 'Job not found' }, 404);
+    const body: unknown = await c.req.json().catch(() => null);
+    const expectedAttempt =
+      body && typeof body === 'object' && 'attempt' in body ? Number(body.attempt) : null;
+    if (job.batchId && job.status === 'cancelled')
+      return c.json({ error: 'Cancelled batch items require a new generation request.' }, 409);
+    if (
+      job.batchId &&
+      batchStore?.getJobBatchSummary(job.batchId) &&
+      !Number.isInteger(expectedAttempt)
+    )
+      return c.json({ error: 'Review the current batch attempt before retrying.' }, 409);
+    if (expectedAttempt !== null && job.attempt !== expectedAttempt)
+      return c.json({ error: 'This attempt changed. Refresh the job before retrying.' }, 409);
 
     if (ACTIVE_RETRY_STATUSES.has(job.status)) {
       return c.json(job);
@@ -218,7 +245,10 @@ export function createJobRoutes({
       }
     }
 
-    const updatedJob = requeueJob?.(jobId);
+    const updatedJob = requeueJob?.(jobId, {
+      attempt: expectedAttempt ?? job.attempt ?? 1,
+      status: job.status,
+    });
     if (!updatedJob) {
       return c.json({ error: 'Job retry is unavailable' }, 409);
     }

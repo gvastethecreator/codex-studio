@@ -47,7 +47,7 @@ graph TD
 - `lib/catalogRequestGate.ts` gives Catalog replacement, pagination, filter, and detail reads generation-scoped ownership. Stale responses cannot publish across view generations.
 - `services/studio-api/http.ts` owns the shared typed HTTP and error boundary. Sibling modules split requests by domain: jobs, catalog, workspaces, runtime, settings, providers, recipes, output sources, maintenance, and logs.
 - `services/studioEventSource.ts` owns the shared SSE connection.
-- `services/localGenerationRun.ts` creates Persistent Jobs, waits for terminal state, and returns catalog-derived results.
+- `services/localGenerationRun.ts` submits an atomic Persistent Job batch, observes accepted members, and returns catalog-derived results with complete or partial status.
 - `lib/studioCatalogView.ts` and `lib/studioCatalogImageAdapter.ts` materialize UI images from Catalog Entries.
 - `lib/studioLegacyWorkspaceSnapshotExport.ts` derives the export-only legacy workspace JSON shape from Catalog Entries. There is no browser batch store, import, or recovery path.
 - `lib/catalogRenderBudget.ts`, `lib/catalogCardActionSurface.ts`, and `lib/imageGridPresentation.ts` keep hot Catalog rendering bounded.
@@ -81,7 +81,7 @@ graph TD
 1. The user works in the UI with a prompt, recipe, attachments, provider choice, batch count, and workspace.
 2. `useGenerationPipeline` delegates directly to the local generation runner. No browser queue owns or mirrors job lifecycle.
 3. The runner resolves Recipe Module data, builds provider-independent Generation Task Specs, and creates Persistent Jobs.
-4. The backend validates intake, captures an immutable Library Context, resolves effective provider execution policy, persists job state, and enqueues work.
+4. The backend prepares every batch item, captures its Library Context and execution policy, then commits the requested count, ordered membership, and all jobs in one SQLite transaction before dispatch.
 5. The Provider Boundary compiles the Generation Task Spec into provider-specific input.
 6. The Codex provider uses the transport captured at intake: `codex app-server` or subscription HTTP. Grok Imagine runs one bounded headless Grok Build session per Job. Other providers run only when concrete preflight passes.
 7. Completed jobs write Local Assets, Catalog Entries, transcripts, and logs into the Studio Library.
@@ -190,6 +190,19 @@ Job observers use `/api/jobs/{id}/status` to reconcile attachment, reconnection,
 This compact read does not load prompts, assets, or transcripts. Observation failures stay separate
 from durable job failure. A `needs_review` job exposes inspection, or Resume when it has a known
 remote identity; it does not authorize a fresh provider submission.
+
+`/api/jobs/batches` accepts a client request identity. Repeating the same payload returns the
+same accepted batch; reusing that identity for different content is a conflict. Lost HTTP
+acknowledgements retain the identity and trigger reconciliation, not a fresh generation.
+`job_batches` and `job_batch_members` define the requested membership. Older metadata-only
+batches retain their known IDs without an invented requested count.
+
+Queue reads batch counts from the backend, including partial results, cancelled items, and
+jobs that need review. Retry failed carries the observed attempt numbers and a request identity.
+SQLite requeues only still-failed matching attempts, records the receipt, and archives each
+prior job snapshot with its event boundary in `job_attempts`. Successful assets stay in Catalog.
+Cancelled or uncertain items do not qualify for this action. Intake queues every accepted member
+before emitting notifications, so an observer or log error cannot leave a batch partly dispatched.
 
 ## Demand-Mounted Surfaces
 

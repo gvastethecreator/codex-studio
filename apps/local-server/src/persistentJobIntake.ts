@@ -87,6 +87,14 @@ export type PersistentJobIntakeResult =
   | { ok: true; status: 201; job: Job }
   | { ok: false; error: PersistentJobIntakeError };
 
+export interface PreparedPersistentJob {
+  input: Parameters<PersistentJobIntakeDependencies['createJob']>[0];
+  finalPrompt: string;
+}
+type PreparedResult =
+  | { ok: true; prepared: PreparedPersistentJob }
+  | { ok: false; error: PersistentJobIntakeError };
+
 function shouldRequireLocalRunIds(sourceSpec: GenerationTaskSpec | null) {
   const metadata =
     sourceSpec?.metadata &&
@@ -181,194 +189,218 @@ export function createPersistentJobIntake({
   logJobCreated,
   enqueueJob,
 }: PersistentJobIntakeDependencies) {
-  return {
-    async createJob(request: CreateJobRequest): Promise<PersistentJobIntakeResult> {
-      const workspaceId = normalizeWorkspaceId(
-        request.workspaceId ||
-          readWorkspaceIdFromSourceSpecMetadata(
-            request.sourceSpec &&
-              typeof request.sourceSpec === 'object' &&
-              !Array.isArray(request.sourceSpec)
-              ? (request.sourceSpec as GenerationTaskSpec).metadata
-              : null,
-          ) ||
-          ensureDefaultWorkspaceId(),
+  async function prepareJob(request: CreateJobRequest): Promise<PreparedResult> {
+    const workspaceId = normalizeWorkspaceId(
+      request.workspaceId ||
+        readWorkspaceIdFromSourceSpecMetadata(
+          request.sourceSpec &&
+            typeof request.sourceSpec === 'object' &&
+            !Array.isArray(request.sourceSpec)
+            ? (request.sourceSpec as GenerationTaskSpec).metadata
+            : null,
+        ) ||
+        ensureDefaultWorkspaceId(),
+    );
+    const prompt = (request.prompt || readSourceSpecPrompt(request.sourceSpec) || '').trim();
+    if (!prompt)
+      return { ok: false, error: { status: 400, body: { error: 'Prompt is required' } } };
+    const jobId = createJobId();
+
+    const providerId: Job['providerId'] =
+      request.kind === 'dry_run'
+        ? 'dry_run'
+        : (request.providerId ?? readSourceSpecProviderId(request.sourceSpec) ?? 'codex');
+
+    let sourceSpec = createSourceSpecDraft(request.sourceSpec, providerId);
+    if (sourceSpec) {
+      sourceSpec = withWorkspaceMetadata(sourceSpec, workspaceId) ?? sourceSpec;
+    }
+    if (sourceSpec) {
+      const structuralValidationError = createValidationErrorResponse(sourceSpec, providerId, {
+        requireHydratedAssets: false,
+      });
+      if (structuralValidationError) {
+        return { ok: false, error: { status: 400, body: structuralValidationError } };
+      }
+      sourceSpec = cloneValidatedSourceSpec(sourceSpec);
+    }
+
+    const providerBlocker = await resolveProviderExecutionBlocker(providerId);
+    if (providerBlocker) {
+      return {
+        ok: false,
+        error: { status: 400, body: providerBlocker as Record<string, unknown> },
+      };
+    }
+
+    let finalPrompt = prompt;
+    const libraryContext = readLibraryContext?.() ?? {
+      libraryId: 'legacy-default',
+      rootPath: readLibraryDir(),
+    };
+    try {
+      const libraryDir = libraryContext.rootPath;
+      const processedReferences = await processReferences(
+        jobId,
+        prompt,
+        request.references || [],
+        libraryDir,
       );
-      const prompt = (request.prompt || readSourceSpecPrompt(request.sourceSpec) || '').trim();
-      if (!prompt)
-        return { ok: false, error: { status: 400, body: { error: 'Prompt is required' } } };
-      const jobId = createJobId();
-
-      const providerId: Job['providerId'] =
-        request.kind === 'dry_run'
-          ? 'dry_run'
-          : (request.providerId ?? readSourceSpecProviderId(request.sourceSpec) ?? 'codex');
-
-      let sourceSpec = createSourceSpecDraft(request.sourceSpec, providerId);
-      if (sourceSpec) {
-        sourceSpec = withWorkspaceMetadata(sourceSpec, workspaceId) ?? sourceSpec;
-      }
-      if (sourceSpec) {
-        const structuralValidationError = createValidationErrorResponse(sourceSpec, providerId, {
-          requireHydratedAssets: false,
-        });
-        if (structuralValidationError) {
-          return { ok: false, error: { status: 400, body: structuralValidationError } };
-        }
-        sourceSpec = cloneValidatedSourceSpec(sourceSpec);
-      }
-
-      const providerBlocker = await resolveProviderExecutionBlocker(providerId);
-      if (providerBlocker) {
+      finalPrompt = processedReferences.augmentedPrompt;
+      sourceSpec = hydrateSourceSpecAssetPaths(
+        sourceSpec,
+        request.references || [],
+        processedReferences.persistedRefs,
+        libraryDir,
+        libraryContext,
+      );
+    } catch (error) {
+      if (isReferenceProcessingError(error)) {
         return {
           ok: false,
-          error: { status: 400, body: providerBlocker as Record<string, unknown> },
+          error: {
+            status: 400,
+            body: {
+              error: error.message,
+              referenceName: error.referenceName,
+              reason: error.reason,
+            },
+          },
         };
       }
+      throw error;
+    }
 
-      let finalPrompt = prompt;
-      const libraryContext = readLibraryContext?.() ?? {
-        libraryId: 'legacy-default',
-        rootPath: readLibraryDir(),
-      };
+    if (sourceSpec) {
+      const validationError = createValidationErrorResponse(sourceSpec, providerId);
+      if (validationError) {
+        return { ok: false, error: { status: 400, body: validationError } };
+      }
+      const managedAssetIssues = validateManagedAssets(sourceSpec, libraryContext);
+      if (managedAssetIssues.length > 0) {
+        return {
+          ok: false,
+          error: {
+            status: 400,
+            body: {
+              error: 'Unmanaged Generation Task asset',
+              code: managedAssetIssues[0].code,
+              field: managedAssetIssues[0].field,
+              reason: managedAssetIssues[0].message,
+              issues: managedAssetIssues,
+            },
+          },
+        };
+      }
+    }
+
+    const codexTransport = providerId === 'codex' ? readCodexTransport() : null;
+    const execution = resolveEffectiveJobExecutionOptions({
+      providerId,
+      explicit: request.execution,
+      settings: readEditableSettings(),
+      bootstrap:
+        codexTransport === 'subscription_http'
+          ? CODEX_HTTP_EXECUTION_DEFAULTS
+          : resolveBootstrapExecution(providerId),
+    });
+    if (codexTransport) {
+      const previewTransport = request.execution?.providerOptions?.codex?.transport;
+      if (previewTransport && previewTransport !== codexTransport) {
+        return {
+          ok: false,
+          error: {
+            status: 400,
+            body: {
+              error:
+                'Codex sign-in changed the execution route. Review the current settings and generate again.',
+              code: 'codex_execution_changed',
+            },
+          },
+        };
+      }
       try {
-        const libraryDir = libraryContext.rootPath;
-        const processedReferences = await processReferences(
-          jobId,
-          prompt,
-          request.references || [],
-          libraryDir,
-        );
-        finalPrompt = processedReferences.augmentedPrompt;
-        sourceSpec = hydrateSourceSpecAssetPaths(
-          sourceSpec,
-          request.references || [],
-          processedReferences.persistedRefs,
-          libraryDir,
-          libraryContext,
-        );
+        execution.providerOptions = {
+          codex: resolveCodexExecutionPolicy(execution, sourceSpec, codexTransport),
+        };
       } catch (error) {
-        if (isReferenceProcessingError(error)) {
-          return {
-            ok: false,
-            error: {
-              status: 400,
-              body: {
-                error: error.message,
-                referenceName: error.referenceName,
-                reason: error.reason,
-              },
+        return {
+          ok: false,
+          error: {
+            status: 400,
+            body: {
+              error: error instanceof Error ? error.message : 'Invalid Codex execution options.',
+              code: 'codex_execution_unsupported',
             },
-          };
-        }
-        throw error;
+          },
+        };
       }
-
-      if (sourceSpec) {
-        const validationError = createValidationErrorResponse(sourceSpec, providerId);
-        if (validationError) {
-          return { ok: false, error: { status: 400, body: validationError } };
-        }
-        const managedAssetIssues = validateManagedAssets(sourceSpec, libraryContext);
-        if (managedAssetIssues.length > 0) {
-          return {
-            ok: false,
-            error: {
-              status: 400,
-              body: {
-                error: 'Unmanaged Generation Task asset',
-                code: managedAssetIssues[0].code,
-                field: managedAssetIssues[0].field,
-                reason: managedAssetIssues[0].message,
-                issues: managedAssetIssues,
-              },
-            },
-          };
-        }
-      }
-
-      const codexTransport = providerId === 'codex' ? readCodexTransport() : null;
-      const execution = resolveEffectiveJobExecutionOptions({
-        providerId,
-        explicit: request.execution,
-        settings: readEditableSettings(),
-        bootstrap:
-          codexTransport === 'subscription_http'
-            ? CODEX_HTTP_EXECUTION_DEFAULTS
-            : resolveBootstrapExecution(providerId),
-      });
-      if (codexTransport) {
-        const previewTransport = request.execution?.providerOptions?.codex?.transport;
-        if (previewTransport && previewTransport !== codexTransport) {
-          return {
-            ok: false,
-            error: {
-              status: 400,
-              body: {
-                error:
-                  'Codex sign-in changed the execution route. Review the current settings and generate again.',
-                code: 'codex_execution_changed',
-              },
-            },
-          };
-        }
-        try {
-          execution.providerOptions = {
-            codex: resolveCodexExecutionPolicy(execution, sourceSpec, codexTransport),
-          };
-        } catch (error) {
-          return {
-            ok: false,
-            error: {
-              status: 400,
-              body: {
-                error: error instanceof Error ? error.message : 'Invalid Codex execution options.',
-                code: 'codex_execution_unsupported',
-              },
-            },
-          };
-        }
-      }
-      if (providerId === 'grok') {
-        const grokIssues = collectGrokImagineJobIssues({
-          sourceSpec,
-          execution,
-          availableModels: readGrokAvailableModels(),
-        });
-        if (grokIssues.length > 0) {
-          return {
-            ok: false,
-            error: {
-              status: 400,
-              body: {
-                error: grokIssues[0]!.message,
-                code: grokIssues[0]!.code,
-                field: grokIssues[0]!.field,
-                reason: grokIssues[0]!.message,
-                issues: grokIssues,
-              },
-            },
-          };
-        }
-      }
-
-      const job = createJob({
-        id: jobId,
-        workspaceId,
-        kind: resolvePersistentJobIntakeKind(request.kind, sourceSpec),
-        providerId,
+    }
+    if (providerId === 'grok') {
+      const grokIssues = collectGrokImagineJobIssues({
         sourceSpec,
-        prompt,
         execution,
-        libraryContext,
+        availableModels: readGrokAvailableModels(),
       });
+      if (grokIssues.length > 0) {
+        return {
+          ok: false,
+          error: {
+            status: 400,
+            body: {
+              error: grokIssues[0]!.message,
+              code: grokIssues[0]!.code,
+              field: grokIssues[0]!.field,
+              reason: grokIssues[0]!.message,
+              issues: grokIssues,
+            },
+          },
+        };
+      }
+    }
 
+    return {
+      ok: true,
+      prepared: {
+        input: {
+          id: jobId,
+          workspaceId,
+          kind: resolvePersistentJobIntakeKind(request.kind, sourceSpec),
+          providerId,
+          sourceSpec,
+          prompt,
+          execution,
+          libraryContext,
+        },
+        finalPrompt,
+      },
+    };
+  }
+  function dispatchJobs(jobs: Job[]) {
+    // Notifications and log I/O cannot strand already accepted members.
+    for (const job of jobs) enqueueJob(job);
+    for (const job of jobs) {
+      try {
+        publishEvent('job.created', job);
+        logJobCreated(job.kind, job.id);
+      } catch {
+        console.warn(
+          'An accepted job was queued, but its intake notification could not be delivered.',
+        );
+      }
+    }
+  }
+  return {
+    prepareJob,
+    dispatchJobs,
+    async createJob(request: CreateJobRequest): Promise<PersistentJobIntakeResult> {
+      const prepared = await prepareJob(request);
+      if (!prepared.ok) return prepared;
+      const { input, finalPrompt } = prepared.prepared;
+      const job = createJob(input);
       const queuedJob =
-        finalPrompt === prompt ? job : (updateJobFinalPrompt(job.id, finalPrompt) ?? job);
-
-      publishEvent('job.created', queuedJob);
-      logJobCreated(queuedJob.kind, queuedJob.id);
-      enqueueJob(queuedJob);
+        finalPrompt === input.prompt ? job : (updateJobFinalPrompt(job.id, finalPrompt) ?? job);
+      dispatchJobs([queuedJob]);
       return { ok: true, status: 201, job: queuedJob };
     },
   };

@@ -4,6 +4,8 @@ import type {
   GenerationProviderId,
   GenerationTaskAssetRef,
   Job as StudioJob,
+  CreateJobRequest,
+  JobBatchSummary,
 } from '../packages/shared/src';
 import { createThumbnail } from '../utils/imageUtils';
 import {
@@ -13,7 +15,12 @@ import {
 import { resolveGenerationConfig } from '../lib/recipeContext';
 import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
 import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
-import { cancelStudioJob, createStudioJob } from './studio-api/jobs';
+import {
+  cancelStudioJob,
+  createStudioJobBatch,
+  getStudioJobBatchSummary,
+  BatchSubmissionUncertainError,
+} from './studio-api/jobs';
 import { getEditableStudioSettings } from './studio-api/settings';
 import { queryCatalog } from './studio-api/catalog';
 import { resolveStudioApiBase } from './studioRuntime';
@@ -47,7 +54,7 @@ interface RunLocalGenerationOptions {
 
 export type LocalGenerationLifecycleOutcome =
   | {
-      status: 'completed';
+      status: 'completed' | 'partial';
       result: LocalGenerationRunResult;
       durationMs: number;
     }
@@ -78,6 +85,8 @@ export type LocalGenerationFailureReason =
   | 'disconnected';
 
 export interface LocalGenerationRunResult {
+  batch?: JobBatchSummary | null;
+  partial?: boolean;
   batchId: string;
   workspaceId: string;
   config: ImageGenerationConfig;
@@ -87,6 +96,7 @@ export interface LocalGenerationRunResult {
 }
 
 export function classifyLocalGenerationFailureReason(error: unknown): LocalGenerationFailureReason {
+  if (error instanceof BatchSubmissionUncertainError) return 'disconnected';
   if (error instanceof JobNeedsReviewError) return 'needs_review';
   if (error instanceof JobObservationError) return 'disconnected';
   if (isGenerationCancellationError(error)) {
@@ -103,7 +113,7 @@ export function buildLocalGenerationFailureOutcome({
 }: {
   error: unknown;
   durationMs: number;
-}): Exclude<LocalGenerationLifecycleOutcome, { status: 'completed' }> {
+}): Exclude<LocalGenerationLifecycleOutcome, { status: 'completed' | 'partial' }> {
   const reason = classifyLocalGenerationFailureReason(error);
   const message = error instanceof Error ? error.message : String(error);
 
@@ -289,7 +299,7 @@ export function buildLocalGenerationTaskPrompt({
  * Run a single persistent local generation backend job and materialize its assets
  * into the UI image shape consumed by the visual batch cache.
  */
-export async function runSingleCodexImagegenJob(options: {
+interface LocalJobRequestOptions {
   config: ImageGenerationConfig;
   batchId: string;
   batchIndex: number;
@@ -297,25 +307,16 @@ export async function runSingleCodexImagegenJob(options: {
   workspaceId: string;
   providerId: GenerationProviderId;
   inputImage?: RunLocalGenerationOptions['inputImage'];
-  stream?: StudioEventStream;
-  signal?: AbortSignal;
-  onJobCreated?: (job: StudioJob) => void;
-  onProgress?: (message: string) => void;
-  cancelJob?: typeof cancelStudioJob;
-}) {
-  const {
-    config,
-    batchId,
-    batchIndex,
-    batchCount,
-    workspaceId,
-    providerId,
-    inputImage,
-    signal,
-    onProgress,
-    cancelJob = cancelStudioJob,
-  } = options;
-  throwIfGenerationAborted(signal);
+}
+async function buildLocalJobRequest({
+  config,
+  batchId,
+  batchIndex,
+  batchCount,
+  workspaceId,
+  providerId,
+  inputImage,
+}: LocalJobRequestOptions): Promise<CreateJobRequest> {
   const taskPrompt = buildLocalGenerationTaskPrompt({ config, inputImage });
   const requestAssets = await buildJobAssets({ config, inputImage, providerId });
   const variationKey = createGenerationVariationKey(batchId);
@@ -336,7 +337,7 @@ export async function runSingleCodexImagegenJob(options: {
       batchCount: 1,
     },
   });
-  const createdJob = await createStudioJob({
+  return {
     workspaceId,
     kind: sourceSpec.task,
     providerId,
@@ -364,9 +365,19 @@ export async function runSingleCodexImagegenJob(options: {
           ]
         : [],
     ),
-  });
+  };
+}
 
-  options.onJobCreated?.(createdJob);
+export async function observeAcceptedGenerationJob(options: {
+  job: StudioJob;
+  batchId: string;
+  stream?: StudioEventStream;
+  signal?: AbortSignal;
+  onProgress?: (message: string) => void;
+  cancelJob?: typeof cancelStudioJob;
+}) {
+  const { job: createdJob, batchId, signal, onProgress, cancelJob = cancelStudioJob } = options;
+  const providerId = createdJob.providerId;
 
   let cancellationRequest: Promise<void> | null = null;
   const requestBackendCancellation = () => {
@@ -448,20 +459,30 @@ export async function runLocalGeneration({
     const resolvedConfig = resolveGenerationConfig(config);
     const batchId = createLocalRunBatchId();
     const batchCount = inputImage ? 1 : resolvedConfig.batchCount || 1;
-    const settledRuns = await Promise.allSettled(
+    const items = await Promise.all(
       Array.from({ length: batchCount }, (_, index) =>
-        runSingleCodexImagegenJob({
+        buildLocalJobRequest({
           config: resolvedConfig,
           batchId,
           batchIndex: index + 1,
           batchCount,
           workspaceId,
           providerId,
+          inputImage,
+        }),
+      ),
+    );
+    throwIfGenerationAborted(signal);
+    const accepted = await createStudioJobBatch({ requestId: batchId, items });
+    for (const job of accepted.jobs) onJobCreated?.(job);
+    const settledRuns = await Promise.allSettled(
+      accepted.jobs.map((job) =>
+        observeAcceptedGenerationJob({
+          job,
+          batchId: accepted.id,
           signal,
-          onJobCreated,
           onProgress,
           stream,
-          inputImage,
         }),
       ),
     );
@@ -484,9 +505,17 @@ export async function runLocalGeneration({
       throw new Error('No assets were synthesized. Please check your prompt or context.');
     }
 
+    const batch = await getStudioJobBatchSummary(accepted.id).catch((error) => {
+      onProgress?.(
+        `Batch counts are unavailable. Open Queue to reconcile: ${error instanceof Error ? error.message : String(error)}`,
+      );
+      return null;
+    });
     return {
       generatedCount: batchImages.length,
-      batchId,
+      batch,
+      partial: Boolean(firstFailure) || batch?.status !== 'completed',
+      batchId: accepted.id,
       workspaceId,
       config: resolvedConfig,
       images: batchImages,
@@ -504,7 +533,7 @@ export async function runLocalGenerationWithLifecycle(
   try {
     const result = await runLocalGeneration(options);
     return {
-      status: 'completed',
+      status: result.partial ? 'partial' : 'completed',
       result,
       durationMs: Date.now() - startedAt,
     };

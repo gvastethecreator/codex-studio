@@ -16,6 +16,7 @@ import type {
   JobListPage,
   JobListQuery,
   JobCounts,
+  JobAttemptRecord,
 } from '../../../../packages/shared/src';
 import {
   normalizeWorkspaceId,
@@ -68,6 +69,8 @@ export function mapJobRow(row: Record<string, unknown>): Job {
   });
   return {
     id: String(row.id),
+    attempt: Number(row.attempt ?? 1),
+    attemptQueuedAt: String(row.attempt_queued_at ?? row.created_at),
     workspaceId,
     recipeId: nullableString(row.recipe_id) ?? sourceSpec?.recipeId ?? null,
     batchId: nullableString(row.batch_id),
@@ -97,6 +100,8 @@ export function mapJobSummaryRow(row: Record<string, unknown>): JobSummary {
   return {
     remoteExecution: parseJson<JobRemoteExecution | null>(row.remote_execution_json, null),
     id: String(row.id),
+    attempt: Number(row.attempt ?? 1),
+    attemptQueuedAt: String(row.attempt_queued_at ?? row.created_at),
     kind: row.kind as JobSummary['kind'],
     providerId: row.provider_id as JobSummary['providerId'],
     workspaceId: resolveJobWorkspaceId({
@@ -119,6 +124,7 @@ export function createJob(
   input: {
     id?: string;
     workspaceId?: string | null;
+    batchId?: string | null;
     kind: JobKind;
     providerId?: GenerationProviderId | null;
     sourceSpec?: GenerationTaskSpec | null;
@@ -131,25 +137,32 @@ export function createJob(
   const database = getDb(db);
   ensureDefaultWorkspaceRow(database);
   const workspaceId = normalizeWorkspaceId(input.workspaceId);
-  const sourceSpec =
+  const workspaceSpec =
     withWorkspaceMetadata(input.sourceSpec ?? null, workspaceId) ?? input.sourceSpec ?? null;
+  const sourceSpec =
+    workspaceSpec && input.batchId
+      ? { ...workspaceSpec, metadata: { ...workspaceSpec.metadata, batchId: input.batchId } }
+      : workspaceSpec;
   const recipeId =
     typeof sourceSpec?.recipeId === 'string' && sourceSpec.recipeId.trim()
       ? sourceSpec.recipeId
       : null;
   const batchId =
-    sourceSpec?.metadata &&
+    input.batchId ??
+    (sourceSpec?.metadata &&
     typeof sourceSpec.metadata === 'object' &&
     !Array.isArray(sourceSpec.metadata) &&
     typeof sourceSpec.metadata.batchId === 'string'
       ? sourceSpec.metadata.batchId
-      : null;
+      : null);
   const aspectRatio =
     typeof sourceSpec?.output?.aspectRatio === 'string' ? sourceSpec.output.aspectRatio : null;
   const timestamp = now();
 
   const job: Job = {
     id: input.id ?? randomUUID(),
+    attempt: 1,
+    attemptQueuedAt: timestamp,
     workspaceId,
     recipeId,
     batchId,
@@ -175,9 +188,9 @@ export function createJob(
         id, workspace_id, recipe_id, batch_id, aspect_ratio,
         kind, provider_id, source_spec_json, status, execution_json,
         library_id, library_root, original_prompt, expanded_prompt, final_prompt_used,
-        error, created_at, updated_at, completed_at
+        error, created_at, updated_at, completed_at, attempt_queued_at
       )
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `)
     .run(
       job.id,
@@ -199,6 +212,7 @@ export function createJob(
       job.createdAt,
       job.updatedAt,
       job.completedAt,
+      timestamp,
     );
   return job;
 }
@@ -246,17 +260,61 @@ export function updateJobFinalization(id: string, finalization: JobFinalization,
   return getJob(id, db);
 }
 
-export function requeueJob(id: string, db?: Database) {
-  const result = getDb(db)
-    .query(
-      `UPDATE jobs SET status = 'queued', error = NULL, updated_at = ?, completed_at = NULL,
+export function requeueJob(
+  id: string,
+  db?: Database,
+  expected?: { attempt: number; status: JobStatus },
+) {
+  const database = getDb(db);
+  return database.transaction(() => {
+    const previous = getJob(id, database);
+    if (!previous || !['failed', 'cancelled', 'needs_review'].includes(previous.status))
+      return null;
+    if (expected && (previous.status !== expected.status || previous.attempt !== expected.attempt))
+      return null;
+    const resume = previous.status === 'needs_review';
+    if (!resume) {
+      const eventEnd = database
+        .query('SELECT COALESCE(MAX(id), 0) AS id FROM job_events WHERE job_id = ?')
+        .get(id) as { id: number };
+      database
+        .query(`INSERT INTO job_attempts (job_id, attempt, queued_at, archived_at, event_end_id, job_json)
+        VALUES (?, ?, ?, ?, ?, ?)`)
+        .run(
+          id,
+          previous.attempt ?? 1,
+          previous.attemptQueuedAt ?? previous.createdAt,
+          now(),
+          eventEnd.id,
+          JSON.stringify(previous),
+        );
+    }
+    const result = database
+      .query(
+        `UPDATE jobs SET status = 'queued', error = NULL, updated_at = ?, completed_at = NULL,
+       attempt = attempt + ?, attempt_queued_at = CASE WHEN ? = 1 THEN ? ELSE attempt_queued_at END,
        remote_execution_json = CASE WHEN json_extract(remote_execution_json, '$.phase') IN ('failed', 'cancelled')
          THEN NULL ELSE remote_execution_json END
        WHERE id = ? AND status IN ('failed', 'cancelled', 'needs_review')`,
-    )
-    .run(now(), id);
-  if (result.changes !== 1) return null;
-  return getJob(id, db);
+      )
+      .run(now(), resume ? 0 : 1, resume ? 0 : 1, now(), id);
+    if (result.changes !== 1) return null;
+    return getJob(id, database);
+  })();
+}
+
+export function listJobAttempts(id: string, db?: Database): JobAttemptRecord[] {
+  return (
+    getDb(db)
+      .query('SELECT * FROM job_attempts WHERE job_id = ? ORDER BY attempt')
+      .all(id) as Array<Record<string, unknown>>
+  ).map((row) => ({
+    attempt: Number(row.attempt),
+    queuedAt: String(row.queued_at),
+    archivedAt: String(row.archived_at),
+    eventEndId: Number(row.event_end_id),
+    job: JSON.parse(String(row.job_json)) as Job,
+  }));
 }
 
 export function updateJobRemoteExecution(
@@ -287,7 +345,7 @@ export function getJobStatus(id: string, db?: Database) {
   return row && { id: row.id, status: row.status, error: row.error, updatedAt: row.updated_at };
 }
 
-const JOB_SUMMARY_COLUMNS = `id, workspace_id, recipe_id, batch_id, aspect_ratio,
+export const JOB_SUMMARY_COLUMNS = `id, attempt, attempt_queued_at, workspace_id, recipe_id, batch_id, aspect_ratio,
   kind, provider_id, status, execution_json, remote_execution_json,
   substr(COALESCE(NULLIF(trim(final_prompt_used), ''), original_prompt, ''), 1, 160) AS prompt_preview,
   error, created_at, updated_at, completed_at`;

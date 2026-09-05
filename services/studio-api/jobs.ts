@@ -7,8 +7,12 @@ import type {
   JobStatusSnapshot,
   ReferenceHandoffRequest,
   ReferenceHandoffResponse,
+  CreateJobBatchRequest,
+  JobBatchDetail,
+  JobBatchSummary,
+  RetryJobBatchRequest,
 } from '../../packages/shared/src';
-import { request } from './http';
+import { request, StudioApiError } from './http';
 
 export async function createStudioJob(body: CreateJobRequest) {
   return request<Job>('/api/jobs', {
@@ -43,7 +47,53 @@ export async function getStudioJobStatus(jobId: string, signal?: AbortSignal) {
 }
 
 export async function retryStudioJobById(jobId: string) {
-  return request<Job>(`/api/jobs/${encodeURIComponent(jobId)}/retry`, { method: 'POST' });
+  const { job } = await getStudioJobDetail(jobId);
+  return request<Job>(`/api/jobs/${encodeURIComponent(jobId)}/retry`, {
+    method: 'POST',
+    body: JSON.stringify({ attempt: job.attempt }),
+  });
+}
+
+export class BatchSubmissionUncertainError extends Error {
+  constructor(readonly batchId: string) {
+    super(
+      `Batch ${batchId} may have been accepted, but its acknowledgement was lost. Open Queue to reconcile it before generating again.`,
+    );
+    this.name = 'BatchSubmissionUncertainError';
+  }
+}
+export async function createStudioJobBatch(body: CreateJobBatchRequest) {
+  const submit = () =>
+    request<JobBatchDetail>('/api/jobs/batches', { method: 'POST', body: JSON.stringify(body) });
+  try {
+    return await submit();
+  } catch (error) {
+    if (error instanceof StudioApiError && error.status < 500) throw error;
+    // A lost acknowledgement repeats only this accepted request identity.
+    try {
+      return await submit();
+    } catch {
+      try {
+        return await getStudioJobBatch(body.requestId);
+      } catch {
+        throw new BatchSubmissionUncertainError(body.requestId);
+      }
+    }
+  }
+}
+export async function getStudioJobBatch(batchId: string) {
+  return request<JobBatchDetail>(`/api/jobs/batches/${encodeURIComponent(batchId)}`);
+}
+export async function getStudioJobBatchSummary(batchId: string, signal?: AbortSignal) {
+  return request<JobBatchSummary>(`/api/jobs/batches/${encodeURIComponent(batchId)}/summary`, {
+    signal,
+  });
+}
+export async function retryStudioJobBatch(batchId: string, body: RetryJobBatchRequest) {
+  return request<JobBatchDetail>(`/api/jobs/batches/${encodeURIComponent(batchId)}/retry`, {
+    method: 'POST',
+    body: JSON.stringify(body),
+  });
 }
 
 export async function cancelStudioJob(jobId: string) {

@@ -1,18 +1,57 @@
 /** @vitest-environment jsdom */
-import { act, cleanup, renderHook, waitFor } from '@testing-library/react';
+import {
+  act,
+  cleanup,
+  renderHook,
+  waitFor,
+  render,
+  screen,
+  fireEvent,
+} from '@testing-library/react';
 import { afterEach, expect, it, vi } from 'vite-plus/test';
 import type { JobListPage, JobSummary } from '../packages/shared/src';
 import { toShellActivityJob, type ShellActivityJob } from '../lib/shellActivityJob';
 import { mergeJobHistory, useJobHistory } from './useJobHistory';
+import { QueueBatchCard } from '../components/QueueBatchCard';
 
-const api = vi.hoisted(() => ({ list: vi.fn() }));
-vi.mock('../services/studio-api/jobs', () => ({ listStudioJobs: api.list }));
+const api = vi.hoisted(() => ({ list: vi.fn(), batch: vi.fn(), retry: vi.fn() }));
+vi.mock('../services/studio-api/jobs', () => ({
+  listStudioJobs: api.list,
+  getStudioJobBatchSummary: api.batch,
+  retryStudioJobBatch: api.retry,
+}));
 afterEach(() => {
   cleanup();
   vi.resetAllMocks();
 });
 
 const noJobs: ShellActivityJob[] = [];
+it('reconciles a fast terminal retry instead of applying a delayed queued acknowledgement', async () => {
+  const snapshot = {
+    id: 'batch-one',
+    requestedCount: 2,
+    status: 'partial',
+    counts: { completed: 1, failed: 1, queued: 0, running: 0, cancelled: 0, needs_review: 0 },
+    retryable: [{ jobId: 'retry-one', attempt: 1 }],
+  };
+  const next = { ...snapshot, retryable: [{ jobId: 'retry-one', attempt: 2 }] };
+  api.batch.mockResolvedValueOnce(snapshot).mockResolvedValue(next);
+  let acknowledge!: (value: unknown) => void;
+  api.retry.mockImplementationOnce(
+    () =>
+      new Promise((resolve) => {
+        acknowledge = resolve;
+      }),
+  );
+  const view = render(<QueueBatchCard batchId="batch-one" revision="1" />);
+  fireEvent.click(await screen.findByRole('button', { name: 'Retry failed (1)' }));
+  view.rerender(<QueueBatchCard batchId="batch-one" revision="2" />);
+  await waitFor(() => expect(api.batch).toHaveBeenCalledTimes(2));
+  await act(async () => acknowledge({ ...snapshot, status: 'queued', retryable: [] }));
+  await waitFor(() => expect(api.batch).toHaveBeenCalledTimes(3));
+  expect(screen.getByRole('button', { name: 'Retry failed (1)' })).toBeTruthy();
+  expect(screen.getByText(/1 completed · 1 failed/)).toBeTruthy();
+});
 const emptyPage: JobListPage = {
   open: [],
   history: [],

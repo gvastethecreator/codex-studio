@@ -1,7 +1,7 @@
 # Code map · codex-studio
 
-generated: 2026-09-05T19:14:24Z
-commit: 531a1d893ea8
+generated: 2026-09-05T19:38:04Z
+commit: 20ae3ff3ee4d
 scope: .
 
 counts: 20 nodes · 28 edges · 5 flows · 0 unknown
@@ -44,19 +44,19 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
   tests: hooks/useGenerationPipeline.test.ts
   entry: hooks/useGenerationPipeline.ts:useGenerationPipeline
 
-- `job-client` · `services/studio-api/jobs.ts` · service · Browser job API
+- `job-client` · `services/studio-api/jobs.ts` · service · Browser job and atomic batch API
   callers: generation-run (calls), job-history (calls), job-observer (calls)
   callees: job-routes (calls)
   tests: (none)
-  entry: services/studio-api/jobs.ts:createStudioJob
+  entry: services/studio-api/jobs.ts:createStudioJobBatch
 
 - `job-history` · `hooks/useJobHistory.ts` · interface · Open jobs and filtered terminal history
   callers: (none)
   callees: job-client (calls)
   tests: hooks/useJobHistory.test.tsx
-  entry: hooks/useJobHistory.ts:useJobHistory, components/QueuePanel.tsx:QueuePanel
+  entry: hooks/useJobHistory.ts:useJobHistory, components/QueuePanel.tsx:QueuePanel, components/QueueBatchCard.tsx:QueueBatchCard
 
-- `job-intake` · `apps/local-server/src/persistentJobIntake.ts` · service · Validate and persist before dispatch
+- `job-intake` · `apps/local-server/src/persistentJobIntake.ts` · service · Prepare all requests before acceptance and dispatch
   callers: job-routes (calls)
   callees: jobs-db (writes), runtime-settings (calls), shared (calls), worker (calls)
   tests: apps/local-server/src/persistentJobIntake.test.ts
@@ -72,13 +72,13 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
   callers: job-client (calls)
   callees: job-intake (calls), jobs-db (reads), shared (imports), worker (calls)
   tests: apps/local-server/src/jobRoutes.test.ts
-  entry: apps/local-server/src/jobRoutes.ts:createJobRoutes
+  entry: apps/local-server/src/jobRoutes.ts:createJobRoutes, apps/local-server/src/jobBatchRoutes.ts:createJobBatchRoutes
 
-- `jobs-db` · `apps/local-server/src/db/jobs.ts` · database · Durable job states and checkpoints
+- `jobs-db` · `apps/local-server/src/db/jobs.ts` · database · Durable jobs, batch membership, attempts and checkpoints
   callers: asset-finalizer (writes), job-intake (writes), job-routes (reads), worker (writes)
   callees: (none)
   tests: apps/local-server/src/db/jobs.test.ts
-  entry: apps/local-server/src/db/jobs.ts:updateJobStatus
+  entry: apps/local-server/src/db/jobs.ts:updateJobStatus, apps/local-server/src/db/jobBatches.ts:createJobBatch
 
 - `providers` · `apps/local-server/src/providers` · service · Provider execution adapters and runtime identity
   callers: worker (calls)
@@ -96,7 +96,7 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
   callers: job-intake (calls), job-routes (imports), providers (calls)
   callees: (none)
   tests: (none)
-  entry: packages/shared/src/types.ts:JobStatus, packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy
+  entry: packages/shared/src/jobBatches.ts:JobStatus, packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy
 
 - `style-client` · `services/studio-api/userStyles.ts` · service · User style API
   callers: style-editor (calls), styles (calls)
@@ -167,7 +167,7 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
 
 - User starts generation
   generation-ui -> generation-run -> job-client -> job-routes -> job-intake -> worker -> providers
-  Validated persistent job uses its captured provider transport and execution policy
+  Every batch member is accepted before dispatch and uses its captured execution policy
 - Observer attaches or recovers its connection
   generation-run -> job-observer -> job-client -> job-routes -> jobs-db
   Observer reads durable job truth independently of event delivery

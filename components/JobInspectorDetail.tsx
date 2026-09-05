@@ -641,8 +641,22 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             <h2 className="mt-2 max-w-5xl text-[21px] font-semibold leading-tight text-white">
               {truncateHeadline(titlePrompt)}
             </h2>
+            {detail.attempts?.length ? (
+              <details className="mt-2 text-xs text-zinc-400">
+                <summary className="cursor-pointer">
+                  Previous attempts ({detail.attempts.length})
+                </summary>
+                {detail.attempts.map((attempt) => (
+                  <p key={attempt.attempt} className="mt-1">
+                    Attempt {attempt.attempt}: {attempt.job.status}
+                    {attempt.job.error ? ` — ${attempt.job.error}` : ''}
+                  </p>
+                ))}
+              </details>
+            ) : null}
             <div className="mt-3 flex flex-wrap items-center gap-3 text-[11px] text-zinc-500">
               <span className="font-mono [overflow-wrap:anywhere]">{detail.job.id}</span>
+              <span>Attempt {detail.job.attempt ?? 1}</span>
               <span>•</span>
               <span>{model.stats.transcriptCount} transcript steps</span>
               {model.stats.collapsedTranscriptCount > 0 ? (

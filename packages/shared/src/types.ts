@@ -203,6 +203,8 @@ export interface StudioSettings {
 
 export interface Job {
   id: string;
+  attempt?: number;
+  attemptQueuedAt?: string;
   workspaceId: string;
   recipeId?: string | null;
   batchId?: string | null;
@@ -246,6 +248,8 @@ export type JobRemoteExecution = ComfyRemoteExecution | CodexHttpSubmission;
 
 export interface JobSummary {
   id: string;
+  attempt?: number;
+  attemptQueuedAt?: string;
   kind: JobKind;
   providerId: GenerationProviderId | null;
   workspaceId: string;
@@ -346,6 +350,7 @@ export interface JobTraceSummary {
 
 export interface JobDetailResponse {
   job: Job;
+  attempts?: import('./jobBatches').JobAttemptRecord[];
   events: JobEventRecord[];
   turn: CodexTurnRecord | null;
   transcriptEntries: JobTranscriptEntry[];

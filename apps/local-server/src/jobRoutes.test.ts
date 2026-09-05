@@ -260,7 +260,7 @@ describe('jobRoutes', () => {
     expect(response.status).toBe(200);
     await expect(response.json()).resolves.toEqual(requeued);
     expect(createJobFn).not.toHaveBeenCalled();
-    expect(requeueJob).toHaveBeenCalledWith('job-failed');
+    expect(requeueJob).toHaveBeenCalledWith('job-failed', { attempt: 1, status: 'failed' });
     expect(publishEvent).toHaveBeenCalledWith('job.progress', requeued);
     expect(enqueueJob).toHaveBeenCalledWith(requeued);
   });

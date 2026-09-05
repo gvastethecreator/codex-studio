@@ -7,7 +7,20 @@ import {
   listRecoverableJobs,
   updateJobFinalization,
   updateJobRemoteExecution,
+  updateJobStatus,
+  updateJobFinalPrompt,
+  listJobAttempts,
 } from './db/jobs';
+import { createJobBatchRoutes } from './jobBatchRoutes';
+import { createPersistentJobIntake } from './persistentJobIntake';
+import {
+  createJobBatch,
+  getJobBatch,
+  getJobBatchSummary,
+  findAcceptedJobBatch,
+  retryFailedJobBatch,
+} from './db/jobBatches';
+import type { Job } from '../../../packages/shared/src';
 import { addAsset } from './db/assets';
 import { LATEST_DATABASE_SCHEMA_VERSION, migrateDatabase } from './db/migrations';
 import { createGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
@@ -273,6 +286,158 @@ function inspectJobHistory() {
   }
 }
 
+async function inspectJobBatches() {
+  const batchDb = createLegacyDatabase();
+  try {
+    migrateDatabase(batchDb);
+    let sequence = 0;
+    const dispatched: Job[] = [];
+    const dispatchedCount = () => dispatched.length;
+    const store = {
+      createJobBatch: (id: string, hash: string, items: Parameters<typeof createJobBatch>[2]) =>
+        createJobBatch(id, hash, items, batchDb),
+      getJobBatch: (id: string) => getJobBatch(id, batchDb),
+      getJobBatchSummary: (id: string) => getJobBatchSummary(id, batchDb),
+      findAcceptedJobBatch: (id: string, hash: string) => findAcceptedJobBatch(id, hash, batchDb),
+      retryFailedJobBatch: (
+        id: string,
+        request: Parameters<typeof retryFailedJobBatch>[1],
+        hash: string,
+      ) => retryFailedJobBatch(id, request, hash, batchDb),
+    };
+    const intake = createPersistentJobIntake({
+      createJobId: () => `batch-job-${++sequence}`,
+      createJob: (input) => createJob(input, batchDb),
+      updateJobFinalPrompt: (id, prompt) => updateJobFinalPrompt(id, prompt, batchDb),
+      processReferences: async (_id, prompt) => ({ augmentedPrompt: prompt, persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (spec) => spec,
+      readLibraryDir: () => 'X:/isolated-fixture',
+      readCodexTransport: () => 'codex_app_server',
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is never => false,
+      publishEvent: (type, payload) => ({ type, payload, createdAt: new Date().toISOString() }),
+      logJobCreated: () => {},
+      enqueueJob: (job) => {
+        const batch = store.getJobBatch(job.batchId!);
+        if (!batch || batch.jobs.length !== batch.requestedCount)
+          throw new Error('Dispatch observed an incomplete batch.');
+        dispatched.push(job);
+      },
+    });
+    let cancelDuringPreflight: string | null = null;
+    const routes = createJobBatchRoutes({
+      store,
+      intake,
+      resolveProviderExecutionBlocker: async () => {
+        if (cancelDuringPreflight)
+          updateJobStatus(cancelDuringPreflight, 'cancelled', null, batchDb);
+        return null;
+      },
+    });
+    const post = (path: string, body: unknown) =>
+      routes.request(path, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+    const item = { kind: 'dry_run', prompt: 'draw', workspaceId: 'batch-workspace' };
+    const count = () => (batchDb.query('SELECT COUNT(*) AS n FROM jobs').get() as { n: number }).n;
+    const before = count();
+    const invalid = await post('/', {
+      requestId: 'batch-invalid',
+      items: [item, { ...item, prompt: '' }],
+    });
+    if (invalid.status !== 400 || count() !== before || dispatched.length)
+      throw new Error('Invalid batch left accepted work.');
+    const request = { requestId: 'batch-atomic', items: [item, item] };
+    const [left, right] = await Promise.all([post('/', request), post('/', request)]);
+    const accepted = store.getJobBatch(request.requestId)!;
+    if (
+      ![200, 201].includes(left.status) ||
+      ![200, 201].includes(right.status) ||
+      count() !== before + 2 ||
+      dispatchedCount() !== 2 ||
+      accepted.requestedCount !== 2
+    )
+      throw new Error('Concurrent delivery duplicated or lost batch members.');
+    const conflict = await post('/', {
+      ...request,
+      items: [{ ...item, prompt: 'different' }, item],
+    });
+    if (conflict.status !== 409 || count() !== before + 2)
+      throw new Error('Request identity accepted a different payload.');
+    const [success, failure] = accepted.jobs;
+    updateJobStatus(success.id, 'completed', null, batchDb);
+    updateJobStatus(failure.id, 'failed', 'provider rejected request', batchDb);
+    const keptAsset = addAsset(
+      {
+        jobId: success.id,
+        filePath: 'outputs/kept.webp',
+        thumbnailPath: null,
+        publicUrl: '/kept.webp',
+        prompt: 'draw',
+        width: null,
+        height: null,
+        mimeType: 'image/webp',
+      },
+      batchDb,
+    );
+    const partial = store.getJobBatchSummary(request.requestId)!;
+    if (
+      partial.status !== 'partial' ||
+      partial.counts.completed !== 1 ||
+      partial.counts.failed !== 1 ||
+      partial.retryable.length !== 1
+    )
+      throw new Error('Partial counts lost backend truth.');
+    const retry = { requestId: 'retry-atomic', items: partial.retryable };
+    const retries = await Promise.all([
+      post('/batch-atomic/retry', retry),
+      post('/batch-atomic/retry', retry),
+    ]);
+    if (
+      retries.some((response) => response.status !== 200) ||
+      dispatchedCount() !== 3 ||
+      getJob(failure.id, batchDb)?.attempt !== 2
+    )
+      throw new Error('Repeated retry duplicated dispatch.');
+    const archived = listJobAttempts(failure.id, batchDb);
+    if (
+      archived.length !== 1 ||
+      archived[0].job.error !== 'provider rejected request' ||
+      archived[0].job.status !== 'failed'
+    )
+      throw new Error('Retry erased prior attempt evidence.');
+    updateJobStatus(failure.id, 'failed', 'second failure', batchDb);
+    await post('/batch-atomic/retry', retry);
+    await post('/batch-atomic/retry', { ...retry, requestId: 'retry-stale-view' });
+    if (dispatchedCount() !== 3 || getJob(failure.id, batchDb)?.status !== 'failed')
+      throw new Error('Stale retry dispatched a later attempt.');
+    cancelDuringPreflight = failure.id;
+    await post('/batch-atomic/retry', {
+      requestId: 'retry-cancel-race',
+      items: [{ jobId: failure.id, attempt: 2 }],
+    });
+    cancelDuringPreflight = null;
+    updateJobStatus(failure.id, 'needs_review', null, batchDb);
+    await post('/batch-atomic/retry', {
+      requestId: 'retry-uncertain',
+      items: [{ jobId: failure.id, attempt: 2 }],
+    });
+    if (
+      dispatchedCount() !== 3 ||
+      getJob(success.id, batchDb)?.status !== 'completed' ||
+      !batchDb.query('SELECT id FROM assets WHERE id = ?').get(keptAsset.id)
+    )
+      throw new Error('Retry lost success or dispatched an ineligible item.');
+    if (store.getJobBatchSummary('batch-1'))
+      throw new Error('Migration invented historical batch membership.');
+    return true;
+  } finally {
+    batchDb.close();
+  }
+}
+
 const database = createLegacyDatabase();
 try {
   const remoteDatabase = createLegacyDatabase();
@@ -518,6 +683,7 @@ try {
       legacyComfyIsolated,
       remoteIdentityPreserved,
       completeJobHistory: inspectJobHistory(),
+      atomicBatchRecovery: await inspectJobBatches(),
       executionPolicyPreserved:
         getJob('job-workspace-only', database)?.execution?.providerOptions?.codex?.image?.size ===
           '1536x864' &&

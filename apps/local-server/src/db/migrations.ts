@@ -311,6 +311,34 @@ const DATABASE_MIGRATIONS = [
           ))`);
     },
   },
+  {
+    version: 8,
+    name: 'atomic-job-batches-and-attempt-history',
+    migrate(database: Database) {
+      ensureColumn(database, 'jobs', 'attempt', 'INTEGER NOT NULL DEFAULT 1');
+      ensureColumn(database, 'jobs', 'attempt_queued_at', 'TEXT');
+      database.run(
+        'UPDATE jobs SET attempt_queued_at = created_at WHERE attempt_queued_at IS NULL',
+      );
+      database.run(`CREATE TABLE job_batches (
+        id TEXT PRIMARY KEY, request_hash TEXT NOT NULL, workspace_id TEXT NOT NULL,
+        requested_count INTEGER NOT NULL CHECK(requested_count > 0), created_at TEXT NOT NULL
+      )`);
+      database.run(`CREATE TABLE job_batch_members (
+        batch_id TEXT NOT NULL REFERENCES job_batches(id), job_id TEXT NOT NULL UNIQUE REFERENCES jobs(id),
+        position INTEGER NOT NULL, PRIMARY KEY(batch_id, position)
+      )`);
+      database.run(`CREATE TABLE job_attempts (
+        job_id TEXT NOT NULL REFERENCES jobs(id), attempt INTEGER NOT NULL, queued_at TEXT NOT NULL,
+        archived_at TEXT NOT NULL, event_end_id INTEGER NOT NULL, job_json TEXT NOT NULL,
+        PRIMARY KEY(job_id, attempt)
+      )`);
+      database.run(`CREATE TABLE job_batch_retries (
+        request_id TEXT PRIMARY KEY, batch_id TEXT NOT NULL REFERENCES job_batches(id),
+        request_hash TEXT NOT NULL, job_ids_json TEXT NOT NULL
+      )`);
+    },
+  },
 ] as const;
 
 function backfillJobOperationalColumns(database: Database) {

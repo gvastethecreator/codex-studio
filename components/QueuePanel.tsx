@@ -22,6 +22,7 @@ import { cn } from '../lib/utils';
 import { useLatestRef } from '../hooks/useLatestRef';
 import { isRegisteredRecipeId } from '../lib/recipeIds';
 import { useJobHistory } from '../hooks/useJobHistory';
+import { QueueBatchCard } from './QueueBatchCard';
 import type { TerminalJobStatus } from '../packages/shared/src';
 
 interface QueuePanelProps {
@@ -114,6 +115,17 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const [workspaceFilter, setWorkspaceFilter] = useState('');
     const [statusFilter, setStatusFilter] = useState<TerminalJobStatus | ''>('');
     const jobHistory = useJobHistory(serverJobs, workspaceFilter, statusFilter);
+    const batches = useMemo(() => {
+      const revisions = new Map<string, string>();
+      for (const job of [...jobHistory.open, ...jobHistory.history]) {
+        if (
+          job.batchId &&
+          (!revisions.has(job.batchId) || job.updatedAt > revisions.get(job.batchId)!)
+        )
+          revisions.set(job.batchId, job.updatedAt);
+      }
+      return [...revisions];
+    }, [jobHistory.open, jobHistory.history]);
     const activeResultIndex = activeResultId
       ? results.findIndex((result) => result.id === activeResultId)
       : -1;
@@ -173,6 +185,9 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
         </div>
 
         <div className="custom-scrollbar flex-1 space-y-1 overflow-y-auto p-1">
+          {batches.map(([batchId, revision]) => (
+            <QueueBatchCard key={batchId} batchId={batchId} revision={revision} />
+          ))}
           <section className="rounded-lg border border-white/2 bg-white/5 p-1.5">
             <div className="mb-1 flex items-center justify-between px-1">
               <span className="text-[9px] font-black uppercase tracking-widest text-white/35">

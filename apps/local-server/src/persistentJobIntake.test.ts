@@ -101,6 +101,20 @@ describe('persistentJobIntake', () => {
     );
     expect(logJobCreated).toHaveBeenCalledWith('image_generate', 'job-new');
     expect(enqueueJob).toHaveBeenCalledWith(expect.objectContaining({ id: 'job-new' }));
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    try {
+      publishEvent.mockImplementationOnce(() => {
+        throw new Error('Notification disconnected');
+      });
+      intake.dispatchJobs([createJob({ id: 'accepted-one' }), createJob({ id: 'accepted-two' })]);
+      expect(enqueueJob.mock.calls.slice(-2).map(([job]) => job.id)).toEqual([
+        'accepted-one',
+        'accepted-two',
+      ]);
+      expect(warn).toHaveBeenCalledOnce();
+    } finally {
+      warn.mockRestore();
+    }
   });
 
   it('captures execution policy and rejects stale previews after an auth change', async () => {

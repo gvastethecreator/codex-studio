@@ -26,12 +26,12 @@ boundaries = [
     ("job-history", "hooks/useJobHistory.ts", "interface", "Open jobs and filtered terminal history", "useJobHistory"),
     ("generation-ui", "hooks/useGenerationPipeline.ts", "interface", "User generation lifecycle", "useGenerationPipeline"),
     ("generation-run", "services/localGenerationRun.ts", "service", "Persistent generation observation and catalog results", "runLocalGeneration"),
-    ("job-client", "services/studio-api/jobs.ts", "service", "Browser job API", "createStudioJob"),
+    ("job-client", "services/studio-api/jobs.ts", "service", "Browser job and atomic batch API", "createStudioJobBatch"),
     ("job-routes", "apps/local-server/src/jobRoutes.ts", "interface", "Job intake, inspection and actions", "createJobRoutes"),
-    ("job-intake", "apps/local-server/src/persistentJobIntake.ts", "service", "Validate and persist before dispatch", "createPersistentJobIntake"),
+    ("job-intake", "apps/local-server/src/persistentJobIntake.ts", "service", "Prepare all requests before acceptance and dispatch", "createPersistentJobIntake"),
     ("worker", "apps/local-server/src/worker.ts", "queue", "Execution, cancellation and recovery ownership", "createWorkerController"),
     ("providers", "apps/local-server/src/providers", "service", "Provider execution adapters and runtime identity", "createExternalGenerationProvider"),
-    ("jobs-db", "apps/local-server/src/db/jobs.ts", "database", "Durable job states and checkpoints", "updateJobStatus"),
+    ("jobs-db", "apps/local-server/src/db/jobs.ts", "database", "Durable jobs, batch membership, attempts and checkpoints", "updateJobStatus"),
     ("event-bus", "apps/local-server/src/events.ts", "service", "Revisioned job and catalog events", "publishEvent"),
     ("event-routes", "apps/local-server/src/eventStreamRoutes.ts", "interface", "Bounded SSE delivery and revision handshake", "createEventStreamRoutes"),
     ("job-observer", "services/studioEventSource.ts", "service", "Shared event connection and job reconciliation", "watchJob"),
@@ -67,6 +67,14 @@ for node in nodes:
     if node["id"] == "job-history":
         node["entrypoints"].append("components/QueuePanel.tsx:QueuePanel")
         node["evidence"]["locations"].append(dict(path="components/QueuePanel.tsx", symbol="useJobHistory"))
+        node["entrypoints"].append("components/QueueBatchCard.tsx:QueueBatchCard")
+        node["evidence"]["locations"].append(dict(path="components/QueueBatchCard.tsx", symbol="QueueBatchCard"))
+    if node["id"] == "job-routes":
+        node["entrypoints"].append("apps/local-server/src/jobBatchRoutes.ts:createJobBatchRoutes")
+        node["evidence"]["locations"].append(dict(path="apps/local-server/src/jobBatchRoutes.ts", symbol="createJobBatchRoutes"))
+    if node["id"] == "jobs-db":
+        node["entrypoints"].append("apps/local-server/src/db/jobBatches.ts:createJobBatch")
+        node["evidence"]["locations"].append(dict(path="apps/local-server/src/db/jobBatches.ts", symbol="createJobBatch"))
     if node["id"] == "worker":
         node["tests"] = ["apps/local-server/src/workerShutdown.test.ts", "apps/local-server/src/workerAssetFinalizer.test.ts", "apps/local-server/src/workerRouting.test.ts"]
     if node["id"] == "providers":
@@ -80,14 +88,14 @@ for node in nodes:
 links = [
     ("job-history", "job-client", "calls", "hooks/useJobHistory.ts", "listStudioJobs"),
     ("generation-ui", "generation-run", "calls", "hooks/useGenerationPipeline.ts", "runLocalGenerationWithLifecycle"),
-    ("generation-run", "job-client", "calls", "services/localGenerationRun.ts", "createStudioJob"),
+    ("generation-run", "job-client", "calls", "services/localGenerationRun.ts", "createStudioJobBatch"),
     ("generation-run", "job-observer", "calls", "services/localGenerationRun.ts", "watchJob"),
     ("job-client", "job-routes", "calls", "services/studio-api/jobs.ts", "/api/jobs"),
     ("job-routes", "job-intake", "calls", "apps/local-server/src/jobRoutes.ts", "persistentJobIntake.createJob"),
     ("job-routes", "jobs-db", "reads", "apps/local-server/src/jobRoutes.ts", "getJob(jobId)"),
     ("job-routes", "worker", "calls", "apps/local-server/src/jobRoutes.ts", "cancelQueuedOrRunningJob(jobId)"),
     ("job-intake", "jobs-db", "writes", "apps/local-server/src/persistentJobIntake.ts", "const job = createJob("),
-    ("job-intake", "worker", "calls", "apps/local-server/src/persistentJobIntake.ts", "enqueueJob(queuedJob)"),
+    ("job-intake", "worker", "calls", "apps/local-server/src/persistentJobIntake.ts", "enqueueJob(job)"),
     ("job-intake", "runtime-settings", "calls", "apps/local-server/src/persistentJobIntake.ts", "resolveProviderExecutionBlocker"),
     ("worker", "providers", "calls", "apps/local-server/src/worker.ts", "createExternalGenerationProvider"),
     ("worker", "jobs-db", "writes", "apps/local-server/src/worker.ts", "updateJobStatusFn"),
@@ -114,7 +122,7 @@ for node in nodes:
     node["callees"] = sorted([dict(id=e["to"], type=e["type"]) for e in edges if e["from"] == node["id"]], key=lambda x: (x["id"], x["type"]))
 
 flows = [
-    dict(id="generation", trigger="User starts generation", steps=["generation-ui", "generation-run", "job-client", "job-routes", "job-intake", "worker", "providers"], outcome="Validated persistent job uses its captured provider transport and execution policy"),
+    dict(id="generation", trigger="User starts generation", steps=["generation-ui", "generation-run", "job-client", "job-routes", "job-intake", "worker", "providers"], outcome="Every batch member is accepted before dispatch and uses its captured execution policy"),
     dict(id="reconciliation", trigger="Observer attaches or recovers its connection", steps=["generation-run", "job-observer", "job-client", "job-routes", "jobs-db"], outcome="Observer reads durable job truth independently of event delivery"),
     dict(id="job-history", trigger="User opens Queue or pages terminal history", steps=["job-history", "job-client", "job-routes", "jobs-db"], outcome="All open work remains visible beside terminal history and authoritative counts"),
     dict(id="finalization-recovery", trigger="Worker resumes a persisted finalization checkpoint", steps=["worker", "asset-finalizer", "catalog"], outcome="Existing asset is finalized into catalog truth"),
