@@ -1,7 +1,7 @@
 {
-  "source_commit": "ca8d50b108f039161b3a938ca84cd0b2943323a8",
+  "source_commit": "de447600b2907cedb15a0d6137c0088d5a4d649d",
   "working_tree_dirty": false,
-  "generated_at": "2026-09-05T04:13:00Z",
+  "generated_at": "2026-09-05T04:21:37Z",
   "scanned_scope": [
     "."
   ],
@@ -65,7 +65,7 @@
       "id": "components",
       "path": "components",
       "file_count": 1978,
-      "fingerprint": "3a3bba3f727b11bd32358b880906158596e803d4e33e46b88105b40515ec0f36"
+      "fingerprint": "0186dec4fbe808f4bc8fefb3a281a196829cd980ee0e5a2f0c8e392fcb2ca65d"
     },
     {
       "id": "contexts",
@@ -89,7 +89,7 @@
       "id": "hooks",
       "path": "hooks",
       "file_count": 72,
-      "fingerprint": "5be9aebfef03c52a3e566dfd62a45df309094b6977369fd40d3f5bb259632c4d"
+      "fingerprint": "bccb997304f7d2ecb3fafe73f00a46b3c4f59ec82c8b839b20653c87865e61a9"
     },
     {
       "id": "lib",
