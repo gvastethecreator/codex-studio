@@ -20,6 +20,14 @@ export interface JobInspectorFact {
   value: string;
 }
 
+export function formatJobDuration(durationMs: number | null | undefined) {
+  if (durationMs == null || !Number.isFinite(durationMs) || durationMs < 0) return 'Unavailable';
+  if (durationMs < 1000) return `${Math.round(durationMs)} ms`;
+  if (durationMs < 60_000) return `${(durationMs / 1000).toFixed(1)} s`;
+  const seconds = Math.round(durationMs / 1000);
+  return `${Math.floor(seconds / 60)} min ${seconds % 60} s`;
+}
+
 export interface JobInspectorTextBlock {
   kind: 'paragraph' | 'code';
   text: string;

@@ -331,6 +331,9 @@ export interface JobTimingSegment {
 }
 
 export interface JobMetricSummary {
+  attempt?: number;
+  executionId?: string | null;
+  transport?: string | null;
   timings: JobTimingSegment[];
   tokenUsage: JobTokenUsageSummary | null;
   estimatedPromptTokens: number;

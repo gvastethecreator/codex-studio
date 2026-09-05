@@ -1,7 +1,7 @@
 {
-  "source_commit": "20ae3ff3ee4de74aeb1d73cf3854b3ebb6d2b869",
+  "source_commit": "715a8cebe86274d5e81200a6d243db588627ab1d",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-05T19:38:04Z",
+  "generated_at": "2026-09-05T20:08:52Z",
   "scanned_scope": [
     "."
   ],
@@ -35,7 +35,7 @@
       "id": ".",
       "path": ".",
       "file_count": 33,
-      "fingerprint": "88f1d99825292aeeaa233cfac1ad15ce6564fa6e694d0d4b164bc820c31655b3"
+      "fingerprint": "edb00256cd1207f10b80f81f42540d60e6f24b0b26c0e7c5d74da8415fbeab51"
     },
     {
       "id": ".github",
@@ -52,8 +52,8 @@
     {
       "id": "apps",
       "path": "apps",
-      "file_count": 238,
-      "fingerprint": "e5da892ee0b798c313369f2bedc4f56163b18b5cf8be442fe21dc05173dc2245"
+      "file_count": 240,
+      "fingerprint": "b37e6c72158e38807aeef14f9e343232f0c070091a2860d98a99c26a92f26198"
     },
     {
       "id": "assets",
@@ -64,8 +64,8 @@
     {
       "id": "components",
       "path": "components",
-      "file_count": 1979,
-      "fingerprint": "b9994bd03708dc9f622d5ccc10fcc21a932aed0c82aff7023beb2f69ebf29931"
+      "file_count": 1980,
+      "fingerprint": "8534e043d910bb37aaacfa0ff2aacf79b94273b3ea73d1f7c89219ba312a9e6e"
     },
     {
       "id": "contexts",
@@ -95,19 +95,19 @@
       "id": "lib",
       "path": "lib",
       "file_count": 173,
-      "fingerprint": "df14260eed38f017bc55ead88015be4974e3dee1b32ada161409fff3978e6821"
+      "fingerprint": "ca23a32ed3d7592e4afa24f876f571a0a80d61018e679562f1eefc20bb5b6ae0"
     },
     {
       "id": "packages",
       "path": "packages",
-      "file_count": 36,
-      "fingerprint": "ae491ab2c755c6e0df9b10b59f7c99e38e6ddedfe5ecef7d9becef85dce2a708"
+      "file_count": 37,
+      "fingerprint": "bdf5db068e83cbd25a5868b91d776bb9c3861a0241490972e30b124835a242a8"
     },
     {
       "id": "scripts",
       "path": "scripts",
       "file_count": 130,
-      "fingerprint": "81d5b4cf33ea1a097783db02f6216259708d7ae8393dc8cbb643bae2af352bc8"
+      "fingerprint": "1cef39c31e10604f05b37ab0c598bf63937a343a79a6ad9168f66f726c01f6c1"
     },
     {
       "id": "services",

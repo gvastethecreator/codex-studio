@@ -1,7 +1,15 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import type { JobDetailResponse } from '../packages/shared/src';
-import { buildJobInspectorDetailModel } from './jobInspectorFormatter';
+import { buildJobInspectorDetailModel, formatJobDuration } from './jobInspectorFormatter';
+
+it('shows missing timings explicitly and rounds minute boundaries with units', () => {
+  expect(formatJobDuration(null)).toBe('Unavailable');
+  expect(formatJobDuration(Number.NaN)).toBe('Unavailable');
+  expect(formatJobDuration(0)).toBe('0 ms');
+  expect(formatJobDuration(1500)).toBe('1.5 s');
+  expect(formatJobDuration(119_900)).toBe('2 min 0 s');
+});
 
 function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResponse {
   const base: JobDetailResponse = {

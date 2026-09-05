@@ -1,4 +1,7 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import path from 'node:path';
+import os from 'node:os';
 
 import type { Job } from '../../../packages/shared/src';
 import type { GenerationProvider } from './providers/types';
@@ -88,7 +91,7 @@ function createDeferred() {
   return { promise, resolve };
 }
 
-function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run']) {
+function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run'], concurrency = 1) {
   const jobs = new Map(jobList.map((job) => [job.id, job]));
   const providerStarted = createDeferred();
   const provider: GenerationProvider = {
@@ -119,7 +122,7 @@ function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run']) {
   const controller = createWorkerController({
     createGenerationProvider: () => provider,
     createExternalProvider: () => provider,
-    getSettings: () => ({ codexMaxConcurrentJobs: 1 }) as never,
+    getSettings: () => ({ codexMaxConcurrentJobs: concurrency }) as never,
     addJobEvent,
     getJob: (id) => jobs.get(id) ?? null,
     updateJobStatus,
@@ -135,6 +138,107 @@ function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run']) {
 }
 
 describe('worker shutdown', () => {
+  it('records the fixed mixed-provider scheduling workload without real provider calls', async () => {
+    const workload = [
+      ...Array.from({ length: 4 }, (_, index) => ({
+        id: `slow-${index}`,
+        providerId: 'comfy' as const,
+        durationMs: 100,
+      })),
+      ...(['codex', 'grok', 'google', 'antigravity', 'fal'] as const).map((providerId) => ({
+        id: `fast-${providerId}`,
+        providerId,
+        durationMs: 5,
+      })),
+    ];
+    const jobList = workload.map(({ id, providerId }) => ({ ...createJob(id), providerId }));
+    const sequence: Array<{
+      event: string;
+      id: string;
+      providerId: string;
+      atMs: number;
+      active: number;
+    }> = [];
+    const startedAt = performance.now();
+    let active = 0;
+    let maximumActive = 0;
+    const harness = createWorkerHarness(
+      jobList,
+      async ({ id }) => {
+        const item = workload.find((candidate) => candidate.id === id)!;
+        active += 1;
+        maximumActive = Math.max(maximumActive, active);
+        sequence.push({
+          event: 'start',
+          id,
+          providerId: item.providerId,
+          atMs: performance.now() - startedAt,
+          active,
+        });
+        await new Promise((resolve) => setTimeout(resolve, item.durationMs));
+        sequence.push({
+          event: 'provider-complete',
+          id,
+          providerId: item.providerId,
+          atMs: performance.now() - startedAt,
+          active,
+        });
+        active -= 1;
+        return {
+          assets: [],
+          transcript: '',
+          threadId: null,
+          turnId: null,
+          durationMs: item.durationMs,
+        };
+      },
+      2,
+    );
+    try {
+      jobList.forEach((job) => harness.controller.enqueueJob(job));
+      harness.controller.enqueueJob(jobList[0]!);
+      await vi.waitFor(() => expect(harness.controller.getWorkerStatus().trackedJobs).toBe(0));
+      expect(
+        sequence
+          .filter((entry) => entry.event === 'start')
+          .map((entry) => entry.id)
+          .toSorted(),
+      ).toEqual(jobList.map((job) => job.id).toSorted());
+      expect(
+        sequence
+          .filter((entry) => entry.event === 'start' && entry.providerId === 'comfy')
+          .map((entry) => entry.id),
+      ).toEqual(['slow-0', 'slow-1', 'slow-2', 'slow-3']);
+      expect(maximumActive).toBeLessThanOrEqual(2);
+      const output = process.env.WORKFLOW_SCHEDULER_OUTPUT;
+      if (output) {
+        mkdirSync(path.dirname(output), { recursive: true });
+        writeFileSync(
+          output,
+          JSON.stringify(
+            {
+              protocol: 'mixed-provider-v1',
+              recordedAt: new Date().toISOString(),
+              runtime: process.version,
+              device: { os: `${os.platform()} ${os.release()}`, cpu: os.cpus()[0]?.model },
+              samples: 1,
+              globalLimit: 2,
+              workload,
+              sequence,
+              maximumActive,
+              elapsedMs: sequence.at(-1)!.atMs,
+              scope:
+                'Fake provider execution through the real worker. No assets or import I/O; empty results settle as needs_review. Wall time is descriptive; ordering and capacity are deterministic assertions.',
+            },
+            null,
+            2,
+          ),
+        );
+      }
+    } finally {
+      await harness.controller.shutdown();
+    }
+  });
   it('persists an HTTP marker before POST and does not resend recovered running work', async () => {
     const job = createJob('http-restart');
     job.execution = {
@@ -259,12 +363,9 @@ describe('worker shutdown', () => {
       first.id,
       'job.interrupted',
       'Studio shutdown interrupted this job.',
+      expect.objectContaining({ attempt: 1, executionId: expect.any(String) }),
     );
-    expect(addJobEvent).not.toHaveBeenCalledWith(
-      expect.anything(),
-      'job.cancelled',
-      expect.anything(),
-    );
+    expect(addJobEvent.mock.calls.map((call) => call[1])).not.toContain('job.cancelled');
     expect(controller.getWorkerStatus()).toEqual({
       maxConcurrentJobs: 1,
       activeWorkerCount: 0,
@@ -286,7 +387,12 @@ describe('worker shutdown', () => {
     await controller.shutdown();
 
     expect(jobs.get(job.id)?.status).toBe('cancelled');
-    expect(addJobEvent).toHaveBeenCalledWith(job.id, 'job.cancelled', 'Job cancelled by user.');
-    expect(addJobEvent).not.toHaveBeenCalledWith(job.id, 'job.interrupted', expect.anything());
+    expect(addJobEvent).toHaveBeenCalledWith(
+      job.id,
+      'job.cancelled',
+      'Job cancelled by user.',
+      expect.objectContaining({ attempt: 1, executionId: expect.any(String) }),
+    );
+    expect(addJobEvent.mock.calls.map((call) => call[1])).not.toContain('job.interrupted');
   });
 });

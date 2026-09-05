@@ -317,9 +317,6 @@ const DATABASE_MIGRATIONS = [
     migrate(database: Database) {
       ensureColumn(database, 'jobs', 'attempt', 'INTEGER NOT NULL DEFAULT 1');
       ensureColumn(database, 'jobs', 'attempt_queued_at', 'TEXT');
-      database.run(
-        'UPDATE jobs SET attempt_queued_at = created_at WHERE attempt_queued_at IS NULL',
-      );
       database.run(`CREATE TABLE job_batches (
         id TEXT PRIMARY KEY, request_hash TEXT NOT NULL, workspace_id TEXT NOT NULL,
         requested_count INTEGER NOT NULL CHECK(requested_count > 0), created_at TEXT NOT NULL
@@ -329,7 +326,7 @@ const DATABASE_MIGRATIONS = [
         position INTEGER NOT NULL, PRIMARY KEY(batch_id, position)
       )`);
       database.run(`CREATE TABLE job_attempts (
-        job_id TEXT NOT NULL REFERENCES jobs(id), attempt INTEGER NOT NULL, queued_at TEXT NOT NULL,
+        job_id TEXT NOT NULL REFERENCES jobs(id), attempt INTEGER NOT NULL, queued_at TEXT,
         archived_at TEXT NOT NULL, event_end_id INTEGER NOT NULL, job_json TEXT NOT NULL,
         PRIMARY KEY(job_id, attempt)
       )`);

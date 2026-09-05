@@ -70,7 +70,7 @@ export function mapJobRow(row: Record<string, unknown>): Job {
   return {
     id: String(row.id),
     attempt: Number(row.attempt ?? 1),
-    attemptQueuedAt: String(row.attempt_queued_at ?? row.created_at),
+    attemptQueuedAt: nullableString(row.attempt_queued_at) ?? undefined,
     workspaceId,
     recipeId: nullableString(row.recipe_id) ?? sourceSpec?.recipeId ?? null,
     batchId: nullableString(row.batch_id),
@@ -101,7 +101,7 @@ export function mapJobSummaryRow(row: Record<string, unknown>): JobSummary {
     remoteExecution: parseJson<JobRemoteExecution | null>(row.remote_execution_json, null),
     id: String(row.id),
     attempt: Number(row.attempt ?? 1),
-    attemptQueuedAt: String(row.attempt_queued_at ?? row.created_at),
+    attemptQueuedAt: nullableString(row.attempt_queued_at) ?? undefined,
     kind: row.kind as JobSummary['kind'],
     providerId: row.provider_id as JobSummary['providerId'],
     workspaceId: resolveJobWorkspaceId({
@@ -283,7 +283,7 @@ export function requeueJob(
         .run(
           id,
           previous.attempt ?? 1,
-          previous.attemptQueuedAt ?? previous.createdAt,
+          previous.attemptQueuedAt ?? null,
           now(),
           eventEnd.id,
           JSON.stringify(previous),
@@ -310,7 +310,7 @@ export function listJobAttempts(id: string, db?: Database): JobAttemptRecord[] {
       .all(id) as Array<Record<string, unknown>>
   ).map((row) => ({
     attempt: Number(row.attempt),
-    queuedAt: String(row.queued_at),
+    queuedAt: nullableString(row.queued_at),
     archivedAt: String(row.archived_at),
     eventEndId: Number(row.event_end_id),
     job: JSON.parse(String(row.job_json)) as Job,

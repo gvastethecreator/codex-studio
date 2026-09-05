@@ -1,4 +1,4 @@
-import type { CreateJobRequest, Job, JobStatus, JobSummary } from './types';
+import type { CreateJobRequest, Job, JobStatus, JobSummary, JobMetricSummary } from './types';
 
 export interface CreateJobBatchRequest {
   requestId: string;
@@ -30,10 +30,11 @@ export interface RetryJobBatchRequest {
 }
 export interface JobAttemptRecord {
   attempt: number;
-  queuedAt: string;
+  queuedAt: string | null;
   archivedAt: string;
   eventEndId: number;
   job: Job;
+  metrics?: JobMetricSummary;
 }
 export function canRetryFailedBatchItem(job: Pick<Job, 'status' | 'providerId' | 'execution'>) {
   return (

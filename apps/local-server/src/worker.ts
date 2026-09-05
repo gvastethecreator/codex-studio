@@ -1,4 +1,5 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
+import { randomUUID } from 'node:crypto';
 import path from 'node:path';
 import { getSettings } from './config';
 import { getCatalogImageByJobId, registerCatalogImage } from './catalog';
@@ -162,6 +163,16 @@ export function createWorkerController({
   resolveWorkerRuntimeTarget: resolveWorkerRuntimeTargetFn = resolveWorkerRuntimeTarget,
   ensureThumbnailVariant: ensureThumbnailVariantFn = ensureThumbnailVariantDefault,
 }: CreateWorkerControllerDependencies = {}): WorkerController {
+  const executionSpans = new Map<
+    string,
+    { attempt: number; executionId: string; transport: string }
+  >();
+  const recordJobEvent: typeof addJobEvent = (jobId, type, message, metadata) => {
+    const span = executionSpans.get(jobId);
+    const fields =
+      metadata && typeof metadata === 'object' && !Array.isArray(metadata) ? metadata : {};
+    addJobEventFn(jobId, type, message, span ? { ...fields, ...span } : metadata);
+  };
   const runningJobs = new Set<string>();
   const jobQueue: Job[] = [];
   const runningJobControllers = new Map<string, AbortController>();
@@ -265,7 +276,7 @@ export function createWorkerController({
     getCatalogImageByJobId: getCatalogImageByJobIdFn,
     addAsset: addAssetFn,
     getAssetByJobId: getAssetByJobIdFn,
-    addJobEvent: addJobEventFn,
+    addJobEvent: recordJobEvent,
     updateJobStatus: updateJobStatusFn,
     updateJobFinalization: updateJobFinalizationFn,
     publishEvent: publishEventFn,
@@ -284,7 +295,7 @@ export function createWorkerController({
 
   async function runDryJob(job: Job, signal?: AbortSignal) {
     const startedAt = Date.now();
-    addJobEventFn(job.id, 'dry_run.started', 'Dry run asset creation started.');
+    recordJobEvent(job.id, 'dry_run.started', 'Dry run asset creation started.');
     logger('info', 'worker', 'Dry run job started.', job.id);
     await waitWithAbort(500, signal);
     throwIfAborted(signal);
@@ -307,7 +318,7 @@ export function createWorkerController({
       providerId: 'dry_run',
       options: { logPrefix: 'Dry run', width: 1200, height: 800 },
     });
-    addJobEventFn(job.id, 'dry_run.completed', 'Dry run asset creation completed.', {
+    recordJobEvent(job.id, 'dry_run.completed', 'Dry run asset creation completed.', {
       durationMs: Date.now() - startedAt,
       assetCount: 1,
     });
@@ -316,15 +327,15 @@ export function createWorkerController({
   function persistProviderCheckpoint(job: Job, checkpoint: NonNullable<Job['remoteExecution']>) {
     updateJobRemoteExecutionFn(job.id, checkpoint);
     job.remoteExecution = checkpoint;
-    addJobEventFn(job.id, 'provider.checkpoint', `Remote execution ${checkpoint.phase}.`, {
+    recordJobEvent(job.id, 'provider.checkpoint', `Remote execution ${checkpoint.phase}.`, {
       ...checkpoint,
     });
   }
 
   async function runCodexJob(job: Job, signal?: AbortSignal) {
-    addJobEventFn(job.id, 'codex.started', 'Codex image generation started.');
     logger('info', 'worker', 'Codex imagegen job started.', job.id);
     const turnRecordId = upsertCodexTurnFn({ jobId: job.id, status: 'running' });
+    recordJobEvent(job.id, 'codex.started', 'Codex image generation started.', { turnRecordId });
     const catalogContext = resolveJobCatalogContextFn(job);
     const executionOptions = resolveExecutionOptions(job.execution);
     const result = await codexGenerationProvider.run({
@@ -341,7 +352,7 @@ export function createWorkerController({
     });
 
     throwIfAborted(signal);
-    addJobEventFn(job.id, 'codex.completed', 'Codex image generation completed.', {
+    recordJobEvent(job.id, 'codex.completed', 'Codex image generation completed.', {
       durationMs: result.durationMs,
       assetCount: result.assets.length,
       threadId: result.threadId,
@@ -385,7 +396,7 @@ export function createWorkerController({
 
   async function runExternalJob(job: Job, signal?: AbortSignal) {
     const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'unknown';
-    addJobEventFn(job.id, 'external.started', `External provider job started: ${providerId}.`);
+    recordJobEvent(job.id, 'external.started', `External provider job started: ${providerId}.`);
     logger('info', 'worker', `External provider job started: ${providerId}.`, job.id);
     const catalogContext = resolveJobCatalogContextFn(job);
 
@@ -404,7 +415,7 @@ export function createWorkerController({
 
     throwIfAborted(signal);
 
-    addJobEventFn(job.id, 'external.completed', 'External provider execution completed.', {
+    recordJobEvent(job.id, 'external.completed', 'External provider execution completed.', {
       transcript: result.transcript,
       durationMs: result.durationMs,
       assetCount: result.assets.length,
@@ -435,11 +446,16 @@ export function createWorkerController({
   }
 
   async function processJob(job: Job) {
+    executionSpans.set(job.id, {
+      attempt: job.attempt ?? 1,
+      executionId: randomUUID(),
+      transport: job.execution?.providerOptions?.codex?.transport ?? job.providerId ?? 'unknown',
+    });
     const controller = new AbortController();
     runningJobControllers.set(job.id, controller);
 
     try {
-      addJobEventFn(job.id, 'job.started', 'Job execution started.', {
+      recordJobEvent(job.id, 'job.started', 'Job execution started.', {
         startedAt: new Date().toISOString(),
       });
       updateJobStatusFn(job.id, 'running');
@@ -493,7 +509,7 @@ export function createWorkerController({
           error instanceof ProviderExecutionUncertainError
             ? error.message
             : 'Provider execution was recorded, but local completion could not be confirmed. Review this job before creating another request.';
-        addJobEventFn(job.id, 'job.needs_review', message);
+        recordJobEvent(job.id, 'job.needs_review', message);
         updateJobStatusFn(job.id, 'needs_review', message);
         publishEventFn('job.progress', getJobFn(job.id));
         logger('warn', 'worker', message, job.id);
@@ -508,14 +524,14 @@ export function createWorkerController({
             'Remote cancellation is not confirmed. Resume this job to reconcile its provider result.';
           updateJobStatusFn(job.id, 'needs_review', message);
           publishEventFn('job.progress', getJobFn(job.id));
-          addJobEventFn(job.id, 'job.needs_review', message);
+          recordJobEvent(job.id, 'job.needs_review', message);
         } else if (abortReason === 'shutdown') {
-          addJobEventFn(job.id, 'job.interrupted', 'Studio shutdown interrupted this job.');
+          recordJobEvent(job.id, 'job.interrupted', 'Studio shutdown interrupted this job.');
           updateJobStatusFn(job.id, 'queued');
           publishEventFn('job.queued', getJobFn(job.id));
           logger('info', 'worker', 'Job requeued for recovery after studio shutdown.', job.id);
         } else {
-          addJobEventFn(job.id, 'job.cancelled', 'Job cancelled by user.');
+          recordJobEvent(job.id, 'job.cancelled', 'Job cancelled by user.');
           updateJobStatusFn(job.id, 'cancelled');
           publishEventFn('job.cancelled', getJobFn(job.id));
           logger('info', 'worker', 'Job cancelled by user.', job.id);
@@ -527,6 +543,7 @@ export function createWorkerController({
         logger('error', 'worker', message, job.id);
       }
     } finally {
+      executionSpans.delete(job.id);
       runningJobControllers.delete(job.id);
       runningJobAbortReasons.delete(job.id);
       runningJobs.delete(job.id);
@@ -568,12 +585,12 @@ export function createWorkerController({
         if (queuedJob?.remoteExecution) {
           const message =
             'Local observation stopped; the remote Comfy job may still be running. Resume to inspect its result.';
-          addJobEventFn(jobId, 'job.needs_review', message);
+          recordJobEvent(jobId, 'job.needs_review', message);
           const job = updateJobStatusFn(jobId, 'needs_review', message);
           publishEventFn('job.progress', job);
           return job;
         }
-        addJobEventFn(jobId, 'job.cancelled', 'Queued job cancelled before execution.');
+        recordJobEvent(jobId, 'job.cancelled', 'Queued job cancelled before execution.');
         const job = updateJobStatusFn(jobId, 'cancelled');
         publishEventFn('job.cancelled', job);
         logger('info', 'worker', 'Queued job cancelled before execution.', jobId);
@@ -582,7 +599,7 @@ export function createWorkerController({
 
       const controller = runningJobControllers.get(jobId);
       if (controller) {
-        addJobEventFn(jobId, 'job.cancel.requested', 'Cancellation requested for running job.');
+        recordJobEvent(jobId, 'job.cancel.requested', 'Cancellation requested for running job.');
         runningJobAbortReasons.set(jobId, 'user');
         controller.abort();
         logger('info', 'worker', 'Cancellation requested for running job.', jobId);
@@ -609,17 +626,17 @@ export function createWorkerController({
             'Studio reset stopped local observation. Resume to reconcile the existing remote execution.';
           updateJobStatusFn(queuedJob.id, 'needs_review', message);
           publishEventFn('job.progress', getJobFn(queuedJob.id));
-          addJobEventFn(queuedJob.id, 'job.needs_review', message);
+          recordJobEvent(queuedJob.id, 'job.needs_review', message);
           continue;
         }
-        addJobEventFn(queuedJob.id, 'job.cancelled', 'Queued job cancelled during studio reset.');
+        recordJobEvent(queuedJob.id, 'job.cancelled', 'Queued job cancelled during studio reset.');
         updateJobStatusFn(queuedJob.id, 'cancelled');
         publishEventFn('job.cancelled', getJobFn(queuedJob.id));
       }
 
       for (const [jobId, controller] of runningJobControllers.entries()) {
         if (!controller.signal.aborted) {
-          addJobEventFn(jobId, 'job.cancel.requested', 'Studio reset requested cancellation.');
+          recordJobEvent(jobId, 'job.cancel.requested', 'Studio reset requested cancellation.');
           runningJobAbortReasons.set(jobId, 'reset');
           controller.abort();
         }
@@ -643,7 +660,7 @@ export function createWorkerController({
 
           for (const [jobId, controller] of runningJobControllers.entries()) {
             if (!controller.signal.aborted) {
-              addJobEventFn(
+              recordJobEvent(
                 jobId,
                 'job.interrupt.requested',
                 'Studio shutdown requested a recoverable interruption.',

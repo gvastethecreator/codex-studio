@@ -22,6 +22,7 @@ import {
 } from '../packages/shared/src/codexExecutionContract';
 import {
   buildJobInspectorDetailModel,
+  formatJobDuration as formatDuration,
   type JobInspectorArtifact,
   type JobInspectorTextBlock,
   type JobInspectorTimelineItem,
@@ -64,16 +65,6 @@ function toneForTimeline(item: JobInspectorTimelineItem) {
     default:
       return 'border-white/2 bg-white/[0.04] text-zinc-100';
   }
-}
-
-function formatDuration(durationMs: number | null) {
-  if (durationMs == null) return '—';
-  if (durationMs < 1000) return `${Math.round(durationMs)}ms`;
-  const seconds = durationMs / 1000;
-  if (seconds < 60) return `${seconds.toFixed(1)}s`;
-  const minutes = Math.floor(seconds / 60);
-  const remainingSeconds = Math.round(seconds % 60);
-  return `${minutes}m ${remainingSeconds}s`;
 }
 
 function formatTokenCount(value: number | null | undefined) {
@@ -405,10 +396,15 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
 
   return (
     <SectionCard title="Runtime summary" eyebrow="Metrics" icon={<Clock3 size={16} />}>
+      <p className="mb-2 text-xs text-zinc-400">
+        Attempt {metrics.attempt ?? 'unknown'} ·{' '}
+        {metrics.transport ?? 'Execution transport unavailable'}. Stages describe the latest worker
+        execution. Elapsed time includes this attempt's queue and interruptions.
+      </p>
       <div className="grid gap-2 sm:grid-cols-2">
         <div className="rounded-2xl border border-white/2 bg-black/25 p-3.5">
           <div className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
-            Total runtime
+            Attempt elapsed
           </div>
           <div className="mt-1.5 font-mono text-xl font-semibold text-white">
             {formatDuration(findTiming(metrics.timings, 'total'))}
@@ -430,9 +426,9 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
 
       <div className="mt-2 grid gap-2 sm:grid-cols-3">
         {[
-          ['Queue wait', formatDuration(queuedMs)],
-          ['Provider turn', formatDuration(providerMs)],
-          ['Asset import', formatDuration(assetImportMs)],
+          ['Initial queue wait', formatDuration(queuedMs)],
+          ['Latest provider execution', formatDuration(providerMs)],
+          ['Latest asset import', formatDuration(assetImportMs)],
         ].map(([label, value]) => (
           <div key={label} className="rounded-2xl border border-white/2 bg-black/25 px-3 py-2.5">
             <div className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
@@ -649,6 +645,9 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                 {detail.attempts.map((attempt) => (
                   <p key={attempt.attempt} className="mt-1">
                     Attempt {attempt.attempt}: {attempt.job.status}
+                    {attempt.metrics
+                      ? ` · elapsed ${formatDuration(findTiming(attempt.metrics.timings, 'total'))}`
+                      : ''}
                     {attempt.job.error ? ` — ${attempt.job.error}` : ''}
                   </p>
                 ))}
@@ -656,7 +655,11 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             ) : null}
             <div className="mt-3 flex flex-wrap items-center gap-3 text-[11px] text-zinc-500">
               <span className="font-mono [overflow-wrap:anywhere]">{detail.job.id}</span>
-              <span>Attempt {detail.job.attempt ?? 1}</span>
+              <span>
+                {detail.job.attemptQueuedAt
+                  ? `Attempt ${detail.job.attempt ?? 1}`
+                  : 'Earlier attempt timing unavailable'}
+              </span>
               <span>•</span>
               <span>{model.stats.transcriptCount} transcript steps</span>
               {model.stats.collapsedTranscriptCount > 0 ? (

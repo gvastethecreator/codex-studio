@@ -69,8 +69,10 @@ function usage() {
   return [
     'Usage:',
     '  bun run styles:browser -- [--url=http://localhost:17222/#recipe-styles] [--pack=pack_05] [--collection=analog_film_process] [--query=boudoir] [--timeout=30000] [--headed] [--verify] [--json]',
+    '  bun run scripts/verify-styles-browser-gate.ts --measure --url=http://127.0.0.1:17228/#recipe-styles/pack_05 [--comparison-url=http://127.0.0.1:17229/#recipe-styles/pack_05] [--output=.scratch/workflow-performance/styles/comparison.json]',
     '',
     'Notes:',
+    '  - Measurement requires production previews. It uses fixed API fixtures, five fresh-context entries and twenty warm samples after three warmups. Paired mode alternates variant order. No real provider calls are made.',
     '  - Start the UI first (for example `bun run dev:ui`) and keep this gate optional until it is stable enough for wider release use.',
     '  - The script verifies collection navigation, pack DOM budgets with all categories visible, confirms the Style Catalog surface is demand-mounted, checks the catalog query result count, and fails on fresh console warnings/errors.',
   ].join('\n');
@@ -364,7 +366,14 @@ export async function verifyStylesBrowserGate({
 }
 
 if (import.meta.main) {
-  if (process.argv.includes('--help') || process.argv.includes('-h')) {
+  if (process.argv.includes('--measure')) {
+    const { measureStyleWorkflow } = await import('./measure-style-workflow');
+    await measureStyleWorkflow({
+      url: argValue('url') ?? DEFAULT_URL,
+      comparisonUrl: argValue('comparison-url'),
+      output: argValue('output') ?? '.scratch/workflow-performance/styles/baseline.json',
+    });
+  } else if (process.argv.includes('--help') || process.argv.includes('-h')) {
     console.log(usage());
   } else {
     const verify = process.argv.includes('--verify');

@@ -110,51 +110,75 @@ function getEvent(events: JobEventRecord[], type: string) {
   return events.find((event) => event.type === type) ?? null;
 }
 
-function getEventDuration(event: JobEventRecord | null) {
-  return coercePositiveNumber(event?.metadata?.durationMs);
-}
-
 export function buildJobMetrics(
   job: Job,
   events: JobEventRecord[],
   transcriptEntries: JobTranscriptEntry[],
+  context: { afterEventId?: number; transcriptExecutionId?: string; now?: string } = {},
 ): JobMetricSummary {
-  const startedEvent =
-    getEvent(events, 'job.started') ??
-    getEvent(events, 'codex.started') ??
-    getEvent(events, 'external.started') ??
-    getEvent(events, 'dry_run.started');
-  const providerCompletedEvent =
-    getEvent(events, 'codex.completed') ??
-    getEvent(events, 'external.completed') ??
-    getEvent(events, 'dry_run.completed');
-  const assetEvent = getEvent(events, 'asset.created');
-  const totalDurationMs = durationBetween(job.createdAt, job.completedAt ?? job.updatedAt);
-  const queuedDurationMs = startedEvent
-    ? durationBetween(job.createdAt, startedEvent.createdAt)
-    : null;
-  const providerDurationMs =
-    getEventDuration(providerCompletedEvent) ??
-    (startedEvent && providerCompletedEvent
-      ? durationBetween(startedEvent.createdAt, providerCompletedEvent.createdAt)
-      : null);
-  const assetImportDurationMs =
-    providerCompletedEvent && assetEvent
-      ? durationBetween(providerCompletedEvent.createdAt, assetEvent.createdAt)
+  const attemptEvents = events.filter((event) => event.id > (context.afterEventId ?? 0));
+  const starts = attemptEvents.filter((event) => event.type === 'job.started');
+  const latestStart = starts.at(-1);
+  const executionId =
+    typeof latestStart?.metadata?.executionId === 'string'
+      ? latestStart.metadata.executionId
       : null;
+  const spanEvents = executionId
+    ? attemptEvents.filter((event) => event.metadata?.executionId === executionId)
+    : [];
+  const providerStarted =
+    getEvent(spanEvents, 'codex.started') ??
+    getEvent(spanEvents, 'external.started') ??
+    getEvent(spanEvents, 'dry_run.started');
+  const providerCompleted =
+    getEvent(spanEvents, 'codex.completed') ??
+    getEvent(spanEvents, 'external.completed') ??
+    getEvent(spanEvents, 'dry_run.completed');
+  const importStarted = getEvent(spanEvents, 'asset.import.started');
+  const importCompleted = getEvent(spanEvents, 'asset.import.completed');
+  const terminalAt =
+    job.completedAt ??
+    (job.status === 'queued' || job.status === 'running'
+      ? (context.now ?? new Date().toISOString())
+      : null);
+  const firstStart = starts[0];
+  const queuedDurationMs = durationBetween(
+    job.attemptQueuedAt,
+    firstStart?.createdAt ??
+      (job.status === 'queued' || job.status === 'cancelled' ? terminalAt : null),
+  );
   const tokenUsage =
-    events.map((event) => extractTokenUsage(event.metadata, `event.${event.type}`)).find(Boolean) ??
-    transcriptEntries
-      .map((entry) => extractTokenUsage(entry.raw, `transcript.${entry.source}`))
+    spanEvents
+      .map((event) => extractTokenUsage(event.metadata, `event.${event.type}`))
       .find(Boolean) ??
+    (executionId && context.transcriptExecutionId === executionId
+      ? transcriptEntries
+          .map((entry) => extractTokenUsage(entry.raw, `transcript.${entry.source}`))
+          .find(Boolean)
+      : null) ??
     null;
-
   return {
+    attempt: job.attempt,
+    executionId,
+    transport:
+      typeof latestStart?.metadata?.transport === 'string' ? latestStart.metadata.transport : null,
     timings: [
-      { id: 'total', label: 'Total process', durationMs: totalDurationMs },
-      { id: 'queued', label: 'Queue wait', durationMs: queuedDurationMs },
-      { id: 'provider', label: 'Provider turn', durationMs: providerDurationMs },
-      { id: 'asset_import', label: 'Asset import', durationMs: assetImportDurationMs },
+      {
+        id: 'total',
+        label: 'Attempt elapsed',
+        durationMs: durationBetween(job.attemptQueuedAt, terminalAt),
+      },
+      { id: 'queued', label: 'Initial queue wait', durationMs: queuedDurationMs },
+      {
+        id: 'provider',
+        label: 'Latest provider execution',
+        durationMs: durationBetween(providerStarted?.createdAt, providerCompleted?.createdAt),
+      },
+      {
+        id: 'asset_import',
+        label: 'Latest asset import',
+        durationMs: durationBetween(importStarted?.createdAt, importCompleted?.createdAt),
+      },
     ],
     tokenUsage,
     estimatedPromptTokens: Math.ceil((job.finalPromptUsed || job.originalPrompt).length / 4),
@@ -383,11 +407,32 @@ export async function getJobDetail(jobId: string): Promise<JobDetailResponse | n
     turn?.transcriptPath && existsSync(turn.transcriptPath)
       ? parseJobTranscript(readLastTranscriptLines(turn.transcriptPath, 180)).slice(-120)
       : [];
-  const metrics = buildJobMetrics(job, events, transcriptEntries);
+  const attempts = listJobAttempts(job.id);
+  const afterEventId = attempts.at(-1)?.eventEndId ?? 0;
+  const currentStart = events.findLast(
+    (event) => event.id > afterEventId && event.type === 'codex.started',
+  );
+  const transcriptExecutionId =
+    currentStart?.metadata?.turnRecordId === turn?.id &&
+    typeof currentStart?.metadata?.executionId === 'string'
+      ? currentStart.metadata.executionId
+      : undefined;
+  const metrics = buildJobMetrics(job, events, transcriptEntries, {
+    afterEventId,
+    transcriptExecutionId,
+  });
 
   return {
     job,
-    attempts: listJobAttempts(job.id),
+    attempts: attempts.map((attempt, index) => ({
+      ...attempt,
+      metrics: buildJobMetrics(
+        attempt.job,
+        events.filter((event) => event.id <= attempt.eventEndId),
+        [],
+        { afterEventId: attempts[index - 1]?.eventEndId ?? 0 },
+      ),
+    })),
     events,
     turn,
     transcriptEntries,

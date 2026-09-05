@@ -81,6 +81,7 @@ export function createWorkerAssetFinalizer({
     providerId: string;
     options: FinalizeWorkerAssetOptions;
   }) {
+    addJobEvent(job.id, 'asset.import.started', 'Asset import started.');
     const checkpoint = job.finalization ?? null;
     const sourcePath = checkpoint?.sourcePath ?? discoveredImagePath;
     const targetPath =
@@ -213,6 +214,7 @@ export function createWorkerAssetFinalizer({
     if (!existingCatalogImage) {
       publishEvent('catalog.created', catalogImage);
     }
+    addJobEvent(job.id, 'asset.import.completed', 'Asset import completed.');
     updateJobFinalization(job.id, {
       state: 'completed',
       sourcePath,
