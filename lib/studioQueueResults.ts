@@ -12,6 +12,7 @@ export interface StudioQueueResultPreview {
 
 interface BuildStudioQueueResultPreviewsOptions {
   limit?: number;
+  alreadySorted?: boolean;
   thumbnailMaxEdge?: number;
   toAssetUrl?: (
     assetPath: string,
@@ -34,12 +35,12 @@ export function buildStudioQueueResultPreviews(
   entries: CatalogImage[],
   {
     limit = 6,
+    alreadySorted = false,
     thumbnailMaxEdge = 96,
     toAssetUrl = (assetPath) => assetPath,
   }: BuildStudioQueueResultPreviewsOptions = {},
 ): StudioQueueResultPreview[] {
-  return entries
-    .toSorted(compareCatalogEntries)
+  return (alreadySorted ? entries : entries.toSorted(compareCatalogEntries))
     .slice(0, limit)
     .map((entry) => ({
       id: entry.id,

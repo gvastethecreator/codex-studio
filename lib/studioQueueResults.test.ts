@@ -74,3 +74,14 @@ describe('buildStudioQueueResultPreviews', () => {
     expect(previews.map((preview) => preview.id)).toEqual(['three', 'two']);
   });
 });
+
+it('reuses the catalog order without sorting again', () => {
+  const entries = [
+    catalogImage({ id: 'new', createdAt: '2026-09-02' }),
+    catalogImage({ id: 'old', createdAt: '2026-09-01' }),
+  ];
+  const expected = buildStudioQueueResultPreviews(entries, { limit: 1 });
+  expect(buildStudioQueueResultPreviews(entries, { limit: 1, alreadySorted: true })).toEqual(
+    expected,
+  );
+});

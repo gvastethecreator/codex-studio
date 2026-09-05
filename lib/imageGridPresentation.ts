@@ -128,6 +128,26 @@ export function resolveImageGridIntrinsicSize(
   return { width: undefined, height: undefined };
 }
 
+function resolveImageGridNumericRatio(
+  image: Pick<GeneratedImageWithConfig, 'config' | 'width' | 'height'>,
+) {
+  if (
+    typeof image.width === 'number' &&
+    Number.isFinite(image.width) &&
+    image.width > 0 &&
+    typeof image.height === 'number' &&
+    Number.isFinite(image.height) &&
+    image.height > 0
+  ) {
+    return image.width / image.height;
+  }
+  const match = /^(\d+):(\d+)$/.exec(image.config.aspectRatio);
+  if (!match) return 1;
+  const width = Number(match[1]);
+  const height = Number(match[2]);
+  return width > 0 && height > 0 ? width / height : 1;
+}
+
 export function estimateImageGridItemHeight({
   image,
   thumbnailSize,
@@ -135,10 +155,7 @@ export function estimateImageGridItemHeight({
   image: Pick<GeneratedImageWithConfig, 'config' | 'width' | 'height'>;
   thumbnailSize: number;
 }) {
-  const [width, height] = resolveImageGridAspectRatio(image)
-    .split('/')
-    .map((part) => Number(part.trim()));
-  const ratio = width > 0 && height > 0 ? width / height : 1;
+  const ratio = resolveImageGridNumericRatio(image);
   return thumbnailSize / ratio;
 }
 
@@ -195,10 +212,7 @@ export function estimateImageGridCardItemHeight({
 }) {
   if (viewMode === 'list') return 104;
   if (viewMode === 'grid') return itemWidth;
-  const [width, height] = resolveImageGridAspectRatio(image)
-    .split('/')
-    .map((part) => Number(part.trim()));
-  const ratio = width > 0 && height > 0 ? width / height : 1;
+  const ratio = resolveImageGridNumericRatio(image);
   return itemWidth / ratio + 112;
 }
 
@@ -226,21 +240,23 @@ export function resolveImageGridVirtualWindow({
   const safeOverscan = Math.max(0, Number.isFinite(overscanPx) ? overscanPx : 0);
   const minTop = Math.max(0, safeScrollTop - safeOverscan);
   const maxBottom = safeScrollTop + safeViewportHeight + safeOverscan;
-  const safeSizes = itemSizes.map((size) => Math.max(1, Number.isFinite(size) ? size : 1));
-  const totalHeight = safeSizes.reduce((sum, size) => sum + size, 0);
-
+  let totalHeight = 0;
   let beforeHeight = 0;
+  let visibleHeight = 0;
   let startIndex = 0;
-  while (startIndex < safeSizes.length && beforeHeight + safeSizes[startIndex] < minTop) {
-    beforeHeight += safeSizes[startIndex];
-    startIndex += 1;
-  }
-
-  let visibleHeight = beforeHeight;
-  let endIndex = startIndex;
-  while (endIndex < safeSizes.length && visibleHeight < maxBottom) {
-    visibleHeight += safeSizes[endIndex];
-    endIndex += 1;
+  let endIndex = 0;
+  for (let index = 0; index < itemSizes.length; index += 1) {
+    const size = Math.max(1, Number.isFinite(itemSizes[index]) ? itemSizes[index] : 1);
+    if (totalHeight + size < minTop) {
+      startIndex = index + 1;
+      beforeHeight = totalHeight + size;
+      endIndex = startIndex;
+      visibleHeight = beforeHeight;
+    } else if (totalHeight < maxBottom) {
+      endIndex = index + 1;
+      visibleHeight = totalHeight + size;
+    }
+    totalHeight += size;
   }
 
   return {

@@ -1,4 +1,3 @@
-import type { GenerationProviderId, GenerationTaskKind } from '../packages/shared/src';
 import {
   RECIPE_DISCOVERY_CATALOG,
   type RecipeCatalogDisplayEntry,
@@ -20,14 +19,11 @@ function normalize(value?: string) {
 function recipeMatchesFilters(
   entry: RecipeCatalogDisplayEntry,
   filters: RecipeCatalogSearchFilters,
+  query: string,
+  parameterId: string,
 ) {
-  const query = normalize(filters.query);
-  const parameterId = normalize(filters.parameterId);
-  const supportedTasksSet = new Set<GenerationTaskKind>(entry.supportedTasks);
-  const supportedProvidersSet = new Set<GenerationProviderId>(entry.supportedProviders);
-
-  if (filters.task && !supportedTasksSet.has(filters.task)) return false;
-  if (filters.providerId && !supportedProvidersSet.has(filters.providerId)) return false;
+  if (filters.task && !entry.supportedTasks.includes(filters.task)) return false;
+  if (filters.providerId && !entry.supportedProviders.includes(filters.providerId)) return false;
   if (
     parameterId &&
     !entry.parameters.some((parameter) => normalize(parameter.id) === parameterId)
@@ -74,9 +70,11 @@ export function searchRecipeDiscoveryProjection(
 ) {
   const limit = filters.limit && filters.limit > 0 ? filters.limit : undefined;
   const results: RecipeCatalogDisplayEntry[] = [];
+  const query = normalize(filters.query);
+  const parameterId = normalize(filters.parameterId);
 
   for (const entry of projection.entries) {
-    if (!recipeMatchesFilters(entry, filters)) continue;
+    if (!recipeMatchesFilters(entry, filters, query, parameterId)) continue;
 
     results.push(entry);
     if (limit && results.length >= limit) break;

@@ -18,16 +18,15 @@ function createdAtMs(entry: Pick<CatalogImage, 'createdAt'>) {
   return Date.parse(entry.createdAt) || 0;
 }
 
-function compareCatalogEntries(a: CatalogImage, b: CatalogImage) {
-  return createdAtMs(b) - createdAtMs(a) || a.id.localeCompare(b.id);
-}
-
 function resolveCatalogBatchGroupId(entry: Pick<CatalogImage, 'batchId' | 'jobId' | 'id'>) {
   return entry.batchId || `studio-${entry.jobId ?? entry.id}`;
 }
 
 export function createCatalogView(entries: CatalogImage[]): StudioCatalogView {
-  const sortedEntries = entries.toSorted(compareCatalogEntries);
+  const timestamps = new Map(entries.map((entry) => [entry, createdAtMs(entry)]));
+  const sortedEntries = entries.toSorted(
+    (a, b) => timestamps.get(b)! - timestamps.get(a)! || a.id.localeCompare(b.id),
+  );
   const byId = new Map<string, CatalogImage>();
   const byBatchId = new Map<string, CatalogImage[]>();
 

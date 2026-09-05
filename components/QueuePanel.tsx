@@ -20,7 +20,7 @@ import type { StudioQueueResultPreview } from '../lib/studioQueueResults';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import { cn } from '../lib/utils';
 import { useLatestRef } from '../hooks/useLatestRef';
-import type { RecipeId } from '../types';
+import { isRegisteredRecipeId } from '../lib/recipeIds';
 
 interface QueuePanelProps {
   results?: StudioQueueResultPreview[];
@@ -34,7 +34,6 @@ interface QueuePanelProps {
 
 const EMPTY_RESULTS: StudioQueueResultPreview[] = [];
 const EMPTY_SERVER_JOBS: StudioJob[] = [];
-const ACTIVE_STATUSES = new Set<StudioJob['status']>(['queued', 'running']);
 
 function getServerStatusColor(status: StudioJob['status']) {
   switch (status) {
@@ -76,33 +75,13 @@ const StatItem = ({ label, value, color }: { label: string; value: number; color
   </div>
 );
 
-type RegisteredRecipeId = Exclude<RecipeId, null>;
-
-function normalizeQueueRecipeId(value: string | null | undefined): RegisteredRecipeId | null {
-  switch (value) {
-    case 'animation-sequence':
-    case 'styles':
-    case 'remaster':
-    case 'spritesheet':
-    case 'sprite-atlas':
-    case 'cinematic':
-    case 'character-lab':
-    case 'character':
-    case 'camera':
-    case 'timeline':
-      return value;
-    default:
-      return null;
-  }
-}
-
 function formatQueueTaskLabel(value: string | null | undefined) {
   if (!value) return 'Task';
   return value.replace(/_/g, ' ').replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
 function resolveQueueRecipeTone(recipeId: string | null | undefined, fallbackTask?: string | null) {
-  const recipe = getActiveRecipeIndicator(normalizeQueueRecipeId(recipeId));
+  const recipe = getActiveRecipeIndicator(isRegisteredRecipeId(recipeId) ? recipeId : null);
   if (recipe) {
     return {
       label: recipe.title,
@@ -141,8 +120,8 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
       }
       return previews;
     }, [results]);
-    const summary = summarizePersistentJobs(serverJobs);
-    const hasLiveDurations = serverJobs.some((job) => ACTIVE_STATUSES.has(job.status));
+    const summary = useMemo(() => summarizePersistentJobs(serverJobs), [serverJobs]);
+    const hasLiveDurations = summary.queued + summary.running > 0;
 
     useEffect(() => {
       if (!hasLiveDurations) return;
