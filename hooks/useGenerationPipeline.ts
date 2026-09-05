@@ -114,6 +114,11 @@ function handleNonCompletedGenerationOutcome({
   addToast: (msg: string, type: 'success' | 'error' | 'info') => void;
   log: (msg: string) => void;
 }) {
+  if (outcome.status === 'needs_review' || outcome.status === 'disconnected') {
+    addToast(outcome.message, 'info');
+    log(`Generation requires attention: ${outcome.message}`);
+    return true;
+  }
   if (outcome.status === 'cancelled') {
     addToast('Generation cancelled', 'info');
     log(`Generation cancelled: ${outcome.message}`);
@@ -239,6 +244,9 @@ export const useGenerationPipeline = ({
             log: logRef.current,
           })
         ) {
+          if (outcome.status === 'needs_review' || outcome.status === 'disconnected') {
+            return { status: outcome.status, message: outcome.message };
+          }
           if (outcome.status === 'cancelled') {
             return { status: 'cancelled', message: outcome.message };
           }

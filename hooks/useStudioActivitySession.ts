@@ -72,11 +72,14 @@ export function useStudioActivitySession({
       }
 
       retryingJobIdsRef.current.add(jobId);
-      addToast('Retrying backend job...', 'info');
+      addToast('Recovering backend job...', 'info');
 
       void retryStudioJobById(jobId)
         .then((createdJob) => {
-          addToast('Retry queued', 'success');
+          addToast(
+            createdJob.remoteExecution ? 'Remote job resume queued' : 'Retry queued',
+            'info',
+          );
 
           if (isDebugPanelOpen) {
             inspectStudioJob(createdJob.id);
@@ -100,7 +103,11 @@ export function useStudioActivitySession({
       void cancelStudioJob(jobId)
         .then((job) => {
           addToast(
-            job.status === 'cancelled' ? 'Backend job cancelled' : 'Cancellation requested',
+            job.status === 'needs_review'
+              ? job.error || 'Review the remote job result'
+              : job.status === 'cancelled'
+                ? 'Backend job cancelled'
+                : 'Cancellation requested',
             'info',
           );
         })

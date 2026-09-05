@@ -1,5 +1,13 @@
 import { Database } from 'bun:sqlite';
-import { createJob, listJobSummaries, listRecoverableJobs, updateJobFinalization } from './db/jobs';
+import {
+  createJob,
+  getJob,
+  getJobStatus,
+  listJobSummaries,
+  listRecoverableJobs,
+  updateJobFinalization,
+  updateJobRemoteExecution,
+} from './db/jobs';
 import { addAsset } from './db/assets';
 import { LATEST_DATABASE_SCHEMA_VERSION, migrateDatabase } from './db/migrations';
 import { createGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
@@ -202,6 +210,33 @@ function readColumnNames(database: Database) {
 
 const database = createLegacyDatabase();
 try {
+  const remoteDatabase = createLegacyDatabase();
+  remoteDatabase.run('ALTER TABLE jobs ADD COLUMN provider_id TEXT');
+  for (const status of ['running', 'queued']) {
+    remoteDatabase
+      .query(`INSERT INTO jobs (id, project_id, kind, status, original_prompt, final_prompt_used, created_at, updated_at, provider_id)
+      SELECT ?, project_id, 'image_generate', ?, original_prompt, final_prompt_used, created_at, updated_at, 'comfy'
+      FROM jobs WHERE id = 'job-sentinel'`)
+      .run(`comfy-legacy-${status}`, status);
+  }
+  migrateDatabase(remoteDatabase);
+  const legacyComfyIsolated =
+    getJobStatus('comfy-legacy-running', remoteDatabase)?.status === 'needs_review' &&
+    !listRecoverableJobs(remoteDatabase).some((job) => job.id === 'comfy-legacy-running') &&
+    listRecoverableJobs(remoteDatabase).some((job) => job.id === 'comfy-legacy-queued');
+  const remoteCheckpoint = {
+    providerId: 'comfy' as const,
+    runtimeIdentity: 'runtime-a-hash',
+    promptId: '6f2d33aa-8e3c-4a56-8677-f496062a87f9',
+    phase: 'accepted' as const,
+    startedAt: 1000,
+  };
+  updateJobRemoteExecution('comfy-legacy-queued', remoteCheckpoint, remoteDatabase);
+  migrateDatabase(remoteDatabase);
+  const remoteIdentityPreserved =
+    JSON.stringify(getJob('comfy-legacy-queued', remoteDatabase)?.remoteExecution) ===
+    JSON.stringify(remoteCheckpoint);
+  remoteDatabase.close();
   migrateDatabase(database);
   migrateDatabase(database);
   const migrationRows = database
@@ -397,6 +432,8 @@ try {
         summary.promptPreview === 'sentinel prompt' &&
         !summary.workspaceId?.includes('{'),
       schemaVersion: LATEST_DATABASE_SCHEMA_VERSION,
+      legacyComfyIsolated,
+      remoteIdentityPreserved,
     }),
   );
 } finally {

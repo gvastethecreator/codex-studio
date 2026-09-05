@@ -1,4 +1,5 @@
 export * from './types';
+export * from './jobRecovery';
 export * from './promptTransport';
 export * from './generationContracts';
 export * from './grokImagineContract';

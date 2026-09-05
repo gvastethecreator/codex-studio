@@ -7,7 +7,7 @@ import {
   watchJob,
 } from '../services/studioEventSource';
 import type { LogEntry } from '../types';
-import type { Job, SystemLog as StudioLog } from '../packages/shared/src';
+import type { JobStatusSnapshot, SystemLog as StudioLog } from '../packages/shared/src';
 import type { ShellActivityJob } from '../lib/shellActivityJob';
 import {
   catalogRefreshScopeFromImage,
@@ -38,7 +38,11 @@ export interface LocalStudioSyncActivity {
 export interface LocalStudioSyncResult {
   activity: LocalStudioSyncActivity;
   refreshBackendState: () => Promise<void>;
-  waitForBackendJob: (jobId: string, signal?: AbortSignal, timeoutMs?: number) => Promise<Job>;
+  waitForBackendJob: (
+    jobId: string,
+    signal?: AbortSignal,
+    timeoutMs?: number,
+  ) => Promise<JobStatusSnapshot>;
 }
 
 export function useLocalStudioSync({

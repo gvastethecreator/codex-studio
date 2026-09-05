@@ -50,6 +50,7 @@ export interface StoreHostedImageResultInput extends ExternalProviderRetryOption
   compiledInput: Pick<CompiledProviderInput, 'sourceSpecId' | 'task'>;
   responseJson: unknown;
   imageUrl: string;
+  fileTimestamp?: number;
   requestAttempts: number;
   startedAt: number;
   diagnostics?: Record<string, unknown>;
@@ -388,6 +389,7 @@ export async function storeHostedImageResult({
   compiledInput,
   responseJson,
   imageUrl,
+  fileTimestamp,
   requestAttempts,
   startedAt,
   diagnostics,
@@ -433,7 +435,7 @@ export async function storeHostedImageResult({
   const safeJobId = sanitizeFilePart(job.id);
   const outputPath = files.resolveLibraryPath(
     'assets',
-    `${safeJobId}-${providerSlug}-${files.now()}${ext}`,
+    `${safeJobId}-${providerSlug}-${fileTimestamp ?? files.now()}${ext}`,
   );
   files.mkdir(path.dirname(outputPath), { recursive: true });
   files.writeFile(outputPath, validated.buffer);

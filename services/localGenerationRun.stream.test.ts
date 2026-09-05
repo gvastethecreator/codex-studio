@@ -86,7 +86,8 @@ const mocks = vi.hoisted(() => {
   };
 });
 
-vi.mock('./studioEventSource', () => ({
+vi.mock('./studioEventSource', async (importOriginal) => ({
+  ...(await importOriginal<typeof import('./studioEventSource')>()),
   createStudioEventStream: mocks.createStudioEventStream,
   watchJob: mocks.watchJob,
 }));

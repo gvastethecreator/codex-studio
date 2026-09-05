@@ -1,72 +1,8 @@
-import type { CreateJobRequest, Job, JobDetailResponse } from '../packages/shared/src';
-import { buildGenerationVariationBrief, createGenerationVariationKey } from './generationVariation';
+import type { Job } from '../packages/shared/src';
+export { canResumeStudioJob } from '../packages/shared/src/jobRecovery';
 
-const RETRYABLE_JOB_STATUSES = new Set<Job['status']>(['needs_review', 'failed', 'cancelled']);
-
-function createRetryBatchId(now = Date.now, random = Math.random) {
-  return `batch-retry-${now()}-${random().toString(36).slice(2, 10)}`;
-}
-
-function createRetrySourceSpecId(batchId: string, now = Date.now) {
-  return `spec-${batchId}-1-${now()}`;
-}
+const RETRYABLE_JOB_STATUSES = new Set<Job['status']>(['failed', 'cancelled']);
 
 export function canRetryStudioJob(status: Job['status']) {
   return RETRYABLE_JOB_STATUSES.has(status);
-}
-
-export function buildStudioJobRetryRequest(
-  detail: JobDetailResponse,
-  options: { batchId?: string; now?: () => number } = {},
-): CreateJobRequest {
-  const now = options.now ?? Date.now;
-  const batchId = options.batchId ?? createRetryBatchId(now);
-  const variationKey = createGenerationVariationKey('retry');
-  const sourceSpec = detail.job.sourceSpec
-    ? {
-        ...detail.job.sourceSpec,
-        id: createRetrySourceSpecId(batchId, now),
-        assets: detail.job.sourceSpec.assets.map((asset) => ({ ...asset })),
-        metadata: {
-          ...(detail.job.sourceSpec.metadata ?? {}),
-          batchId,
-          variationKey,
-          variationBrief: buildGenerationVariationBrief({
-            batchIndex: 1,
-            batchCount: 1,
-            variationKey,
-          }),
-        },
-      }
-    : null;
-
-  const prompt =
-    sourceSpec?.prompt?.trim() ||
-    detail.job.originalPrompt.trim() ||
-    detail.job.finalPromptUsed.trim() ||
-    '';
-
-  if (!prompt) {
-    throw new Error('Unable to retry this job because no prompt was recorded.');
-  }
-
-  return {
-    workspaceId: detail.job.workspaceId,
-    kind: sourceSpec?.task ?? detail.job.kind,
-    providerId: detail.job.providerId ?? sourceSpec?.providerId ?? undefined,
-    sourceSpec,
-    prompt,
-    execution: detail.job.execution ? { ...detail.job.execution } : undefined,
-    references: sourceSpec?.assets.flatMap((asset) =>
-      asset.dataUrl
-        ? [
-            {
-              name: asset.name,
-              dataUrl: asset.dataUrl,
-              strength: asset.strength ?? 0,
-            },
-          ]
-        : [],
-    ),
-  };
 }

@@ -5,7 +5,12 @@ import { getCatalogImageByJobId, registerCatalogImage } from './catalog';
 import { addAsset, getAssetByJobId } from './db/assets';
 import { upsertCodexTurn } from './db/codexTurns';
 import { addJobEvent } from './db/events';
-import { getJob, updateJobFinalization, updateJobStatus } from './db/jobs';
+import {
+  getJob,
+  updateJobFinalization,
+  updateJobStatus,
+  updateJobRemoteExecution,
+} from './db/jobs';
 import { getSettingValue, setSettingValue } from './db/settings';
 import { getWorkspace, listWorkspaces } from './db/workspaces';
 import { publishEvent } from './events';
@@ -30,6 +35,7 @@ import {
   createAbortWorkerError,
   createUnsupportedRuntimeTargetError,
   formatWorkerErrorMessage,
+  ProviderExecutionUncertainError,
 } from './workerErrors';
 
 export interface WorkerStatus {
@@ -58,6 +64,7 @@ export interface CreateWorkerControllerDependencies {
   getJob?: typeof getJob;
   updateJobStatus?: typeof updateJobStatus;
   updateJobFinalization?: typeof updateJobFinalization;
+  updateJobRemoteExecution?: typeof updateJobRemoteExecution;
   upsertCodexTurn?: typeof upsertCodexTurn;
   publishEvent?: typeof publishEvent;
   resolveLibraryPath?: typeof resolveLibraryPath;
@@ -139,6 +146,7 @@ export function createWorkerController({
   getJob: getJobFn = getJob,
   updateJobStatus: updateJobStatusFn = updateJobStatus,
   updateJobFinalization: updateJobFinalizationFn = updateJobFinalization,
+  updateJobRemoteExecution: updateJobRemoteExecutionFn = updateJobRemoteExecution,
   upsertCodexTurn: upsertCodexTurnFn = upsertCodexTurn,
   publishEvent: publishEventFn = publishEvent,
   resolveLibraryPath: resolveLibraryPathFn = resolveLibraryPath,
@@ -379,6 +387,15 @@ export function createWorkerController({
       execution: job.execution,
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,
       sourceSpec: job.sourceSpec,
+      remoteExecution: job.remoteExecution,
+      checkpointRemoteExecution: (checkpoint) => {
+        updateJobRemoteExecutionFn(job.id, checkpoint);
+        job.remoteExecution = checkpoint;
+        addJobEventFn(job.id, 'provider.checkpoint', `Remote execution ${checkpoint.phase}.`, {
+          promptId: checkpoint.promptId,
+          runtimeIdentity: checkpoint.runtimeIdentity,
+        });
+      },
       signal,
     });
 
@@ -463,9 +480,24 @@ export function createWorkerController({
         );
       }
     } catch (error) {
-      if (isAbortError(error)) {
+      if (error instanceof ProviderExecutionUncertainError) {
+        addJobEventFn(job.id, 'job.needs_review', error.message);
+        updateJobStatusFn(job.id, 'needs_review', error.message);
+        publishEventFn('job.progress', getJobFn(job.id));
+        logger('warn', 'worker', error.message, job.id);
+      } else if (isAbortError(error)) {
         const abortReason = runningJobAbortReasons.get(job.id) ?? 'user';
-        if (abortReason === 'shutdown') {
+        if (
+          abortReason !== 'shutdown' &&
+          job.remoteExecution &&
+          job.remoteExecution.phase !== 'cancelled'
+        ) {
+          const message =
+            'Remote cancellation is not confirmed. Resume this job to reconcile its provider result.';
+          updateJobStatusFn(job.id, 'needs_review', message);
+          publishEventFn('job.progress', getJobFn(job.id));
+          addJobEventFn(job.id, 'job.needs_review', message);
+        } else if (abortReason === 'shutdown') {
           addJobEventFn(job.id, 'job.interrupted', 'Studio shutdown interrupted this job.');
           updateJobStatusFn(job.id, 'queued');
           publishEventFn('job.queued', getJobFn(job.id));
@@ -519,8 +551,16 @@ export function createWorkerController({
     cancelQueuedOrRunningJob(jobId: string) {
       const queuedIndex = jobQueue.findIndex((job) => job.id === jobId);
       if (queuedIndex >= 0) {
-        jobQueue.splice(queuedIndex, 1);
+        const [queuedJob] = jobQueue.splice(queuedIndex, 1);
         runningJobs.delete(jobId);
+        if (queuedJob?.remoteExecution) {
+          const message =
+            'Local observation stopped; the remote Comfy job may still be running. Resume to inspect its result.';
+          addJobEventFn(jobId, 'job.needs_review', message);
+          const job = updateJobStatusFn(jobId, 'needs_review', message);
+          publishEventFn('job.progress', job);
+          return job;
+        }
         addJobEventFn(jobId, 'job.cancelled', 'Queued job cancelled before execution.');
         const job = updateJobStatusFn(jobId, 'cancelled');
         publishEventFn('job.cancelled', job);
@@ -552,6 +592,14 @@ export function createWorkerController({
 
       for (const queuedJob of queuedJobs) {
         runningJobs.delete(queuedJob.id);
+        if (queuedJob.remoteExecution) {
+          const message =
+            'Studio reset stopped local observation. Resume to reconcile the existing remote execution.';
+          updateJobStatusFn(queuedJob.id, 'needs_review', message);
+          publishEventFn('job.progress', getJobFn(queuedJob.id));
+          addJobEventFn(queuedJob.id, 'job.needs_review', message);
+          continue;
+        }
         addJobEventFn(queuedJob.id, 'job.cancelled', 'Queued job cancelled during studio reset.');
         updateJobStatusFn(queuedJob.id, 'cancelled');
         publishEventFn('job.cancelled', getJobFn(queuedJob.id));
@@ -589,7 +637,7 @@ export function createWorkerController({
                 'Studio shutdown requested a recoverable interruption.',
               );
               runningJobAbortReasons.set(jobId, 'shutdown');
-              controller.abort();
+              controller.abort('studio_shutdown');
             }
           }
 

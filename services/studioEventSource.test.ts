@@ -1,8 +1,11 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
-import type { Job, JobSummary } from '../packages/shared/src';
+import type { Job } from '../packages/shared/src';
 import {
   JobWatchCancelledError,
   JobWatchTimeoutError,
+  JobNeedsReviewError,
+  JobObservationError,
+  type StudioEventStream,
   createJobTerminalStatusError,
   createStudioEventStream,
   isTerminalStudioJobStatus,
@@ -15,11 +18,15 @@ vi.mock('./studio-api/http', () => ({
 }));
 
 vi.mock('./studio-api/jobs', () => ({
-  getStudioJobDetail: vi.fn(),
-  listStudioJobs: vi.fn(async () => []),
+  getStudioJobStatus: vi.fn(async (id: string) => ({
+    id,
+    status: 'running',
+    error: null,
+    updatedAt: '2026-05-31T00:00:00.000Z',
+  })),
 }));
 
-const { getStudioJobDetail, listStudioJobs } = await import('./studio-api/jobs');
+const { getStudioJobStatus } = await import('./studio-api/jobs');
 
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
@@ -40,26 +47,189 @@ function createJob(overrides: Partial<Job> = {}): Job {
   };
 }
 
-function createJobSummary(overrides: Partial<Job> = {}): JobSummary {
-  const job = createJob(overrides);
-  return {
-    id: job.id,
-    kind: job.kind,
-    providerId: job.providerId,
-    workspaceId: job.workspaceId,
-    recipeId: job.sourceSpec?.recipeId ?? null,
-    aspectRatio: job.sourceSpec?.output.aspectRatio ?? null,
-    status: job.status,
-    execution: job.execution,
-    error: job.error,
-    promptPreview: job.finalPromptUsed || job.originalPrompt,
-    createdAt: job.createdAt,
-    updatedAt: job.updatedAt,
-    completedAt: job.completedAt,
+function createWatchStream() {
+  const jobs = new Set<(job: Job) => void>();
+  const connections = new Set<(connected: boolean) => void>();
+  const gaps = new Set<() => void>();
+  const stream: StudioEventStream = {
+    onJobUpdate: (_id, listener) => {
+      jobs.add(listener);
+      return () => {
+        jobs.delete(listener);
+      };
+    },
+    onConnectionChange: (listener) => {
+      connections.add(listener);
+      return () => {
+        connections.delete(listener);
+      };
+    },
+    onRevisionGap: (listener) => {
+      gaps.add(listener);
+      return () => {
+        gaps.delete(listener);
+      };
+    },
+    onAssetAdded: () => () => {},
+    onCatalogChanged: () => () => {},
+    onLogAdded: () => () => {},
+    onOnboardingStage: () => () => {},
+    onOnboardingProbe: () => () => {},
+    onAuthUpdated: () => () => {},
+    close: () => {},
   };
+  return { stream, jobs, connections, gaps };
 }
 
 describe('studioEventSource', () => {
+  it('keeps long-running jobs alive and reconciles a missed completion once for shared observers', async () => {
+    vi.useFakeTimers();
+    const { stream, jobs, connections, gaps } = createWatchStream();
+    const cancelled = new AbortController();
+    const first = watchJob(stream, 'long-job', cancelled.signal);
+    const firstResult = expect(first).rejects.toBeInstanceOf(JobWatchCancelledError);
+    const second = watchJob(stream, 'long-job');
+    let completed = false;
+    void second.then(() => {
+      completed = true;
+    });
+    try {
+      await vi.advanceTimersByTimeAsync(300_000);
+      expect(completed).toBe(false);
+      expect(jobs.size).toBe(1);
+      cancelled.abort();
+      await firstResult;
+      expect(jobs.size).toBe(1);
+      const snapshot = Promise.withResolvers<Job>();
+      vi.mocked(getStudioJobStatus).mockClear().mockReturnValueOnce(snapshot.promise);
+      connections.forEach((listener) => listener(true));
+      gaps.forEach((listener) => listener());
+      expect(getStudioJobStatus).toHaveBeenCalledTimes(1);
+      snapshot.resolve(createJob({ id: 'long-job', status: 'completed' }));
+      await expect(second).resolves.toMatchObject({ id: 'long-job', status: 'completed' });
+      expect(jobs.size + connections.size + gaps.size).toBe(0);
+      expect(vi.getTimerCount()).toBe(0);
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('ignores a stale snapshot received after a newer event', async () => {
+    vi.useFakeTimers();
+    const snapshot = Promise.withResolvers<Job>();
+    vi.mocked(getStudioJobStatus).mockReturnValueOnce(snapshot.promise);
+    const { stream, jobs } = createWatchStream();
+    let completed = false;
+    const waiting = watchJob(stream, 'stale-job').then((job) => {
+      completed = true;
+      return job;
+    });
+    try {
+      jobs.forEach((listener) => listener(createJob({ id: 'stale-job', status: 'running' })));
+      snapshot.resolve(createJob({ id: 'stale-job', status: 'completed' }));
+      await vi.advanceTimersByTimeAsync(0);
+      expect(completed).toBe(false);
+      vi.mocked(getStudioJobStatus).mockResolvedValueOnce(
+        createJob({ id: 'stale-job', status: 'completed' }),
+      );
+      await vi.advanceTimersByTimeAsync(30_000);
+      await expect(waiting).resolves.toMatchObject({ status: 'completed' });
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('ignores an old terminal event delivered after a newer running snapshot', async () => {
+    vi.useFakeTimers();
+    const { stream, jobs } = createWatchStream();
+    vi.mocked(getStudioJobStatus).mockResolvedValueOnce(
+      createJob({ id: 'recovered-job', status: 'running', updatedAt: '2026-06-01T00:00:00.000Z' }),
+    );
+    let completed = false;
+    const waiting = watchJob(stream, 'recovered-job').then((job) => {
+      completed = true;
+      return job;
+    });
+    try {
+      await vi.advanceTimersByTimeAsync(0);
+      jobs.forEach((listener) =>
+        listener(createJob({ id: 'recovered-job', status: 'needs_review' })),
+      );
+      expect(completed).toBe(false);
+      expect(jobs.size).toBe(1);
+      jobs.forEach((listener) =>
+        listener(
+          createJob({
+            id: 'recovered-job',
+            status: 'completed',
+            updatedAt: '2026-06-01T00:00:01.000Z',
+          }),
+        ),
+      );
+      await expect(waiting).resolves.toMatchObject({ status: 'completed' });
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('reconciles an old terminal event received before the initial snapshot', async () => {
+    vi.useFakeTimers();
+    const { stream, jobs } = createWatchStream();
+    const snapshot = Promise.withResolvers<Job>();
+    vi.mocked(getStudioJobStatus).mockReturnValueOnce(snapshot.promise);
+    const waiting = watchJob(stream, 'attachment-job');
+    try {
+      jobs.forEach((listener) =>
+        listener(createJob({ id: 'attachment-job', status: 'needs_review' })),
+      );
+      snapshot.resolve(
+        createJob({
+          id: 'attachment-job',
+          status: 'running',
+          updatedAt: '2026-06-01T00:00:00.000Z',
+        }),
+      );
+      await vi.advanceTimersByTimeAsync(0);
+      expect(jobs.size).toBe(1);
+      jobs.forEach((listener) =>
+        listener(
+          createJob({
+            id: 'attachment-job',
+            status: 'completed',
+            updatedAt: '2026-06-01T00:00:01.000Z',
+          }),
+        ),
+      );
+      await expect(waiting).resolves.toMatchObject({ status: 'completed' });
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it('reports provider review separately from completed and stops retrying unavailable observation', async () => {
+    const review = createWatchStream();
+    vi.mocked(getStudioJobStatus).mockResolvedValueOnce(
+      createJob({ id: 'review-job', status: 'needs_review' }),
+    );
+    await expect(watchJob(review.stream, 'review-job')).rejects.toBeInstanceOf(JobNeedsReviewError);
+    expect(review.jobs.size + review.connections.size + review.gaps.size).toBe(0);
+    vi.useFakeTimers();
+    const offline = createWatchStream();
+    for (let i = 0; i < 5; i++)
+      vi.mocked(getStudioJobStatus).mockRejectedValueOnce(new Error('offline'));
+    const failure = expect(watchJob(offline.stream, 'offline-job')).rejects.toBeInstanceOf(
+      JobObservationError,
+    );
+    try {
+      await vi.advanceTimersByTimeAsync(16_000);
+      await failure;
+      expect(offline.jobs.size + offline.connections.size + offline.gaps.size).toBe(0);
+      expect(vi.getTimerCount()).toBe(0);
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
   it('normalizes reconnect policy bounds', () => {
     expect(normalizeStudioEventReconnectPolicy({ initialDelayMs: 0, maxDelayMs: 50 })).toEqual({
       initialDelayMs: 100,
@@ -449,10 +619,7 @@ describe('studioEventSource', () => {
 
   it('returns already-terminal completed job from initial snapshot', async () => {
     const completed = createJob({ id: 'job-1', status: 'completed' });
-    vi.mocked(listStudioJobs).mockResolvedValueOnce([
-      createJobSummary({ id: 'job-1', status: 'completed' }),
-    ]);
-    vi.mocked(getStudioJobDetail).mockResolvedValueOnce({ job: completed } as never);
+    vi.mocked(getStudioJobStatus).mockResolvedValueOnce(completed);
     const stream = {
       onJobUpdate: () => () => {},
       onAssetAdded: () => () => {},
@@ -469,7 +636,6 @@ describe('studioEventSource', () => {
   });
 
   it('rejects on timeout when job never reaches terminal status', async () => {
-    vi.mocked(listStudioJobs).mockResolvedValueOnce([]);
     const stream = {
       onJobUpdate: () => () => {},
       onAssetAdded: () => () => {},
@@ -488,7 +654,6 @@ describe('studioEventSource', () => {
   });
 
   it('rejects with AbortError when signal aborts while watching', async () => {
-    vi.mocked(listStudioJobs).mockResolvedValueOnce([]);
     let emit: ((job: Job) => void) | null = null;
     const stream = {
       onJobUpdate: (_jobId: string, callback: (job: Job) => void) => {
@@ -517,7 +682,6 @@ describe('studioEventSource', () => {
   });
 
   it('resolves when watcher receives terminal completed update', async () => {
-    vi.mocked(listStudioJobs).mockResolvedValueOnce([]);
     let emit: ((job: Job) => void) | null = null;
     const stream = {
       onJobUpdate: (_jobId: string, callback: (job: Job) => void) => {
@@ -549,13 +713,13 @@ describe('studioEventSource', () => {
 
   it('does not miss terminal updates emitted while the initial snapshot is loading', async () => {
     let emit: ((job: Job) => void) | null = null;
-    vi.mocked(listStudioJobs).mockImplementationOnce(async () => {
+    vi.mocked(getStudioJobStatus).mockImplementationOnce(async () => {
       const emitCallback = emit;
       if (!emitCallback) {
         throw new Error('Expected watchJob to subscribe before loading the initial snapshot');
       }
       emitCallback(createJob({ id: 'job-race', status: 'completed' }));
-      return [];
+      return createJob({ id: 'job-race', status: 'completed' });
     });
     const stream = {
       onJobUpdate: (_jobId: string, callback: (job: Job) => void) => {

@@ -90,6 +90,7 @@ function createFakeStores(overrides?: StudioStoreOverrides) {
     updateJobFinalPrompt: vi.fn(() => null),
     requeueJob: vi.fn(() => null),
     getJob: vi.fn(() => null),
+    getJobStatus: vi.fn(() => null),
     listJobSummaries: vi.fn(() => []),
     ...overrides,
   };

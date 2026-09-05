@@ -5,12 +5,14 @@ import type {
   Job,
   JobDetailResponse,
   JobSummary,
+  JobStatusSnapshot,
 } from '../../../packages/shared/src/types';
 import {
   CreateJobRequestBoundarySchema,
   type CreateJobRequestBoundary,
 } from '../../../packages/shared/src/studioApiSchemas';
 import { collectGrokImagineJobIssues } from '../../../packages/shared/src/grokImagineContract';
+import { canResumeStudioJob } from '../../../packages/shared/src/jobRecovery';
 import {
   createPersistentJobIntake,
   type PersistentJobIntakeDependencies,
@@ -19,13 +21,14 @@ import {
 interface JobRoutesDependencies extends PersistentJobIntakeDependencies {
   listJobs: () => Array<Job | JobSummary>;
   getJob: (jobId: string) => Job | null;
+  getJobStatus?: (jobId: string) => JobStatusSnapshot | null;
   getJobDetail: (jobId: string) => Promise<JobDetailResponse | null>;
   requeueJob?: (jobId: string) => Job | null;
   cancelQueuedOrRunningJob: (jobId: string) => Job | null;
 }
 
 const ACTIVE_RETRY_STATUSES = new Set<Job['status']>(['queued', 'running']);
-const REQUEUEABLE_STATUSES = new Set<Job['status']>(['failed', 'cancelled', 'needs_review']);
+const REQUEUEABLE_STATUSES = new Set<Job['status']>(['failed', 'cancelled']);
 
 function decodeCreateJobRequestBoundary(body: unknown) {
   return Schema.decodeUnknownEither(CreateJobRequestBoundarySchema)(body);
@@ -38,6 +41,10 @@ function resolveJobProviderId(job: Pick<Job, 'providerId' | 'sourceSpec'>) {
 export function createJobRoutes({
   listJobs,
   getJob,
+  getJobStatus = (id) => {
+    const job = getJob(id);
+    return job && { id: job.id, status: job.status, error: job.error, updatedAt: job.updatedAt };
+  },
   getJobDetail,
   requeueJob,
   cancelQueuedOrRunningJob,
@@ -82,6 +89,12 @@ export function createJobRoutes({
 
   routes.get('/', (c) => c.json(listJobs()));
 
+  routes.get('/:id/status', (c) => {
+    const snapshot = getJobStatus(c.req.param('id'));
+    if (!snapshot) return c.json({ error: 'Job not found' }, 404);
+    return c.json(snapshot);
+  });
+
   routes.get('/:id', async (c) => {
     const detail = await getJobDetail(c.req.param('id'));
     if (!detail) return c.json({ error: 'Job not found' }, 404);
@@ -92,6 +105,17 @@ export function createJobRoutes({
     const jobId = c.req.param('id');
     const job = getJob(jobId);
     if (!job) return c.json({ error: 'Job not found' }, 404);
+
+    if (job.status === 'needs_review') {
+      return c.json(
+        {
+          error: 'Review the job and reconcile its provider result before taking another action.',
+          code: 'job_requires_review',
+          status: job.status,
+        },
+        409,
+      );
+    }
 
     if (job.status === 'completed' || job.status === 'failed' || job.status === 'cancelled') {
       return c.json(job);
@@ -114,7 +138,8 @@ export function createJobRoutes({
       return c.json(job);
     }
 
-    if (!REQUEUEABLE_STATUSES.has(job.status)) {
+    const resumeRemoteExecution = canResumeStudioJob(job);
+    if (!REQUEUEABLE_STATUSES.has(job.status) && !resumeRemoteExecution) {
       return c.json(
         {
           error: 'Job cannot be retried from its current status',
@@ -126,7 +151,9 @@ export function createJobRoutes({
     }
 
     const providerId = resolveJobProviderId(job);
-    const providerBlocker = await resolveProviderExecutionBlocker(providerId);
+    const providerBlocker = resumeRemoteExecution
+      ? null
+      : await resolveProviderExecutionBlocker(providerId);
     if (providerBlocker) {
       return c.json(providerBlocker as Record<string, unknown>, 400);
     }

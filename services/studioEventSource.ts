@@ -3,6 +3,7 @@ import type {
   CatalogBatchChangedEventPayload,
   CatalogImage,
   Job,
+  JobStatusSnapshot,
   OnboardingProbe,
   OnboardingStagePayload,
   StudioEvent,
@@ -11,7 +12,7 @@ import type {
   UnknownStudioEvent,
 } from '../packages/shared/src';
 import { getStudioApiBase } from './studio-api/http';
-import { getStudioJobDetail, listStudioJobs } from './studio-api/jobs';
+import { getStudioJobStatus } from './studio-api/jobs';
 
 type Unsubscribe = () => void;
 type Listener<T> = (payload: T) => void;
@@ -70,10 +71,29 @@ export function isTerminalStudioJobStatus(status: Job['status']) {
   return TERMINAL_STATUSES.has(status);
 }
 
-export class JobWatchTimeoutError extends Error {
+export class JobObservationError extends Error {
+  constructor(readonly jobId: string) {
+    super(
+      `Could not confirm job ${jobId}. Open Queue to reconnect and inspect its current status.`,
+    );
+    this.name = 'JobObservationError';
+  }
+}
+
+export class JobWatchTimeoutError extends JobObservationError {
   constructor(jobId: string) {
-    super(`Local studio job ${jobId} timed out`);
+    super(jobId);
     this.name = 'JobWatchTimeoutError';
+  }
+}
+
+export class JobNeedsReviewError extends Error {
+  constructor(
+    readonly jobId: string,
+    message?: string | null,
+  ) {
+    super(message || `Job ${jobId} needs review. Inspect its provider result in Queue.`);
+    this.name = 'JobNeedsReviewError';
   }
 }
 
@@ -84,7 +104,8 @@ export class JobWatchCancelledError extends Error {
   }
 }
 
-export function createJobTerminalStatusError(job: Job) {
+export function createJobTerminalStatusError(job: JobStatusSnapshot) {
+  if (job.status === 'needs_review') return new JobNeedsReviewError(job.id, job.error);
   if (job.status === 'cancelled') {
     return new JobWatchCancelledError();
   }
@@ -135,7 +156,10 @@ class BrowserStudioEventStream implements StudioEventStream {
     const listeners = this.jobListeners.get(jobIdOrWildcard) ?? new Set<Listener<Job>>();
     listeners.add(callback);
     this.jobListeners.set(jobIdOrWildcard, listeners);
-    return () => listeners.delete(callback);
+    return () => {
+      listeners.delete(callback);
+      if (listeners.size === 0) this.jobListeners.delete(jobIdOrWildcard);
+    };
   }
 
   onAssetAdded(callback: Listener<Asset>) {
@@ -338,6 +362,7 @@ class StudioEventStreamLease implements StudioEventStream {
 }
 
 const sharedStreams = new Map<string, { stream: BrowserStudioEventStream; refCount: number }>();
+const streamOwners = new WeakMap<StudioEventStream, StudioEventStream>();
 
 /**
  * Create a live SSE stream for backend events. Consumers should reuse the same
@@ -359,29 +384,152 @@ export function createStudioEventStream(apiBase?: string): StudioEventStream {
 
   entry.refCount += 1;
 
-  return new StudioEventStreamLease(entry.stream, () => {
+  const lease = new StudioEventStreamLease(entry.stream, () => {
     entry.refCount -= 1;
     if (entry.refCount > 0) return;
     entry.stream.close();
     sharedStreams.delete(resolvedApiBase);
   });
+  streamOwners.set(lease, entry.stream);
+  return lease;
 }
 
-/**
- * Wait for one persistent backend job to reach a terminal status.
- */
+interface JobObservation {
+  result: Promise<JobStatusSnapshot>;
+  consumers: number;
+  dispose: () => void;
+}
+
+const jobObservations = new WeakMap<StudioEventStream, Map<string, JobObservation>>();
+
+function acquireJobObservation(stream: StudioEventStream, jobId: string) {
+  const owner = streamOwners.get(stream) ?? stream;
+  let observations = jobObservations.get(owner);
+  if (!observations) {
+    observations = new Map();
+    jobObservations.set(owner, observations);
+  }
+  const existing = observations.get(jobId);
+  if (existing) {
+    existing.consumers += 1;
+    return existing;
+  }
+
+  let disposed = false;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  let requestController: AbortController | undefined;
+  let eventVersion = 0;
+  let latestUpdatedAt = Number.NEGATIVE_INFINITY;
+  let hasSnapshot = false;
+  let refreshRequested = false;
+  let failures = 0;
+  const subscriptions: Unsubscribe[] = [];
+  let resolve!: (job: JobStatusSnapshot) => void;
+  let reject!: (error: unknown) => void;
+  const promise = new Promise<JobStatusSnapshot>((onResolve, onReject) => {
+    resolve = onResolve;
+    reject = onReject;
+  });
+  const observation: JobObservation = {
+    result: promise,
+    consumers: 1,
+    dispose: () => {
+      if (disposed) return;
+      disposed = true;
+      globalThis.clearTimeout(timer);
+      requestController?.abort();
+      subscriptions.splice(0).forEach((unsubscribe) => unsubscribe());
+      if (observations.get(jobId) === observation) observations.delete(jobId);
+    },
+  };
+  observations.set(jobId, observation);
+
+  const handleJob = (job: JobStatusSnapshot) => {
+    if (disposed || job.id !== jobId) return;
+    const updatedAt = Date.parse(job.updatedAt);
+    if (updatedAt < latestUpdatedAt) return;
+    if (Number.isFinite(updatedAt)) latestUpdatedAt = updatedAt;
+    if (!isTerminalStudioJobStatus(job.status)) return;
+    observation.dispose();
+    if (job.status === 'completed') resolve(job);
+    else reject(createJobTerminalStatusError(job));
+  };
+  const schedule = (delay: number) => {
+    if (disposed) return;
+    globalThis.clearTimeout(timer);
+    timer = globalThis.setTimeout(() => void reconcile(), delay);
+  };
+  const reconcile = async () => {
+    if (disposed) return;
+    if (requestController) {
+      refreshRequested = true;
+      return;
+    }
+    globalThis.clearTimeout(timer);
+    const controller = new AbortController();
+    requestController = controller;
+    const version = eventVersion;
+    const deadline = globalThis.setTimeout(() => controller.abort(), 10_000);
+    try {
+      const job = await getStudioJobStatus(jobId, controller.signal);
+      if (disposed) return;
+      failures = 0;
+      hasSnapshot = true;
+      // An event delivered during this read is newer than the request's snapshot.
+      if (version === eventVersion || Date.parse(job.updatedAt) > latestUpdatedAt) handleJob(job);
+    } catch {
+      if (disposed) return;
+      failures += 1;
+      if (failures >= 5) {
+        observation.dispose();
+        reject(new JobObservationError(jobId));
+      }
+    } finally {
+      globalThis.clearTimeout(deadline);
+      requestController = undefined;
+      if (!disposed) {
+        const delay = failures > 0 ? Math.min(1000 * 2 ** (failures - 1), 30_000) : 30_000;
+        schedule(refreshRequested && failures === 0 ? 0 : delay);
+        refreshRequested = false;
+      }
+    }
+  };
+  const subscribe = (unsubscribe: Unsubscribe) => {
+    if (disposed) unsubscribe();
+    else subscriptions.push(unsubscribe);
+  };
+  subscribe(
+    owner.onJobUpdate(jobId, (job) => {
+      eventVersion += 1;
+      if (!hasSnapshot && isTerminalStudioJobStatus(job.status)) {
+        void reconcile();
+        return;
+      }
+      handleJob(job);
+    }),
+  );
+  subscribe(
+    owner.onConnectionChange((connected) => {
+      if (connected) void reconcile();
+    }),
+  );
+  if (owner.onRevisionGap) subscribe(owner.onRevisionGap(() => void reconcile()));
+  void reconcile();
+  return observation;
+}
+
+/** Observe one durable job. A caller deadline ends observation, never execution. */
 export async function watchJob(
   stream: StudioEventStream,
   jobId: string,
   signal?: AbortSignal,
-  timeoutMs = 240_000,
+  timeoutMs?: number,
 ) {
-  return new Promise<Job>((resolve, reject) => {
+  if (signal?.aborted) throw new JobWatchCancelledError();
+  const observation = acquireJobObservation(stream, jobId);
+  return new Promise<JobStatusSnapshot>((resolve, reject) => {
     let settled = false;
-    let unsubscribe: Unsubscribe = () => {};
-    const timeout = globalThis.setTimeout(() => {
-      settle(() => reject(new JobWatchTimeoutError(jobId)));
-    }, timeoutMs);
+    let timeout: ReturnType<typeof setTimeout> | undefined;
     const abort = () => {
       settle(() => reject(new JobWatchCancelledError()));
     };
@@ -389,7 +537,8 @@ export async function watchJob(
     const cleanup = () => {
       globalThis.clearTimeout(timeout);
       signal?.removeEventListener('abort', abort);
-      unsubscribe();
+      observation.consumers -= 1;
+      if (observation.consumers === 0) observation.dispose();
     };
 
     const settle = (complete: () => void) => {
@@ -399,32 +548,22 @@ export async function watchJob(
       complete();
     };
 
-    const handleJob = (job: Job) => {
-      if (!isTerminalStudioJobStatus(job.status)) return;
-      if (job.status === 'failed' || job.status === 'cancelled') {
-        settle(() => reject(createJobTerminalStatusError(job)));
-      } else {
-        settle(() => resolve(job));
-      }
-    };
-
-    unsubscribe = stream.onJobUpdate(jobId, handleJob);
-    if (settled) unsubscribe();
-
+    observation.result.then(
+      (job) => settle(() => resolve(job)),
+      (error) => settle(() => reject(error)),
+    );
+    if (timeoutMs !== undefined && Number.isFinite(timeoutMs)) {
+      timeout = globalThis.setTimeout(
+        () => {
+          settle(() => reject(new JobWatchTimeoutError(jobId)));
+        },
+        Math.max(0, timeoutMs),
+      );
+    }
     signal?.addEventListener('abort', abort);
     if (signal?.aborted) {
       abort();
       return;
     }
-
-    void listStudioJobs()
-      .then((jobs) => {
-        const initial = jobs.find((job) => job.id === jobId);
-        if (!initial || !isTerminalStudioJobStatus(initial.status)) return;
-        return getStudioJobDetail(jobId).then((detail) => handleJob(detail.job));
-      })
-      .catch((error) => {
-        settle(() => reject(error));
-      });
   });
 }

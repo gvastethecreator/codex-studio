@@ -1,4 +1,18 @@
-export type WorkerErrorCode = 'abort' | 'unsupported_runtime_target' | 'unknown_worker_error';
+export type WorkerErrorCode =
+  | 'abort'
+  | 'unsupported_runtime_target'
+  | 'unknown_worker_error'
+  | 'execution_uncertain';
+
+/** A provider may have accepted work. Retrying or confirming cancellation is unsafe. */
+export class ProviderExecutionUncertainError extends Error {
+  readonly code = 'execution_uncertain';
+
+  constructor(message: string) {
+    super(message);
+    this.name = 'ProviderExecutionUncertainError';
+  }
+}
 
 export interface WorkerErrorMeta {
   jobId?: string;

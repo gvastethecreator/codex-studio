@@ -1,35 +1,17 @@
 {
-  "generated_at": "2026-09-05T15:36:48Z",
-  "generated_from_commit": "b2d635e4646e90b5a029c133a9912d5fa336ab19",
+  "generated_at": "2026-09-05T18:16:25Z",
+  "generated_from_commit": "a905a0f111425789088018212726ecf6dbfad24c",
   "scope": ["."],
   "nodes": [
     {
       "id": "app",
       "path": "App.tsx",
-      "type": "module",
-      "boundary": "App",
+      "type": "interface",
+      "boundary": "Application providers and routes",
       "entrypoints": ["App.tsx:App"],
       "tests": [],
-      "callers": [
-        {
-          "id": "other-modules",
-          "type": "imports"
-        }
-      ],
-      "callees": [
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        }
-      ],
+      "callers": [],
+      "callees": [],
       "evidence": {
         "status": "verified",
         "locations": [
@@ -41,1083 +23,624 @@
       }
     },
     {
-      "id": "apps-local-server",
-      "path": "apps/local-server",
+      "id": "asset-finalizer",
+      "path": "apps/local-server/src/workerAssetFinalizer.ts",
       "type": "service",
-      "boundary": "Apps",
-      "entrypoints": ["apps/local-server/src/index.ts:studio"],
-      "tests": [
-        "apps/local-server/src/animationGifEncoder.test.ts",
-        "apps/local-server/src/animationSequenceRoutes.test.ts",
-        "apps/local-server/src/antigravityRuntimeDoctor.test.ts",
-        "apps/local-server/src/appFactory.test.ts",
-        "apps/local-server/src/assetLogRoutes.test.ts"
-      ],
+      "boundary": "Resumable asset and catalog finalization",
+      "entrypoints": ["apps/local-server/src/workerAssetFinalizer.ts:createWorkerAssetFinalizer"],
+      "tests": ["apps/local-server/src/workerAssetFinalizer.test.ts"],
       "callers": [
         {
-          "id": "repository",
-          "type": "calls"
-        },
-        {
-          "id": "scripts",
-          "type": "imports"
-        }
-      ],
-      "callees": [
-        {
-          "id": "constants",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "apps/local-server/src/index.ts",
-            "symbol": "studio"
-          }
-        ]
-      }
-    },
-    {
-      "id": "components",
-      "path": "components",
-      "type": "interface",
-      "boundary": "Components",
-      "entrypoints": [
-        "components/recipes/styles/collections/index.ts:export * from './styleCollectionDefinitions';"
-      ],
-      "tests": [
-        "components/ToolbarLiveStatus.test.tsx",
-        "components/header/QueueProgressBar.test.ts",
-        "components/overlays/StudioSystemOverlays.test.tsx",
-        "components/recipes/AnimationSequenceRecipe.test.tsx",
-        "components/recipes/SpritesheetRecipe.test.tsx"
-      ],
-      "callers": [
-        {
-          "id": "app",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "scripts",
-          "type": "imports"
-        },
-        {
-          "id": "scripts-style-migration",
-          "type": "imports"
-        }
-      ],
-      "callees": [
-        {
-          "id": "constants",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/recipes/styles/collections/index.ts",
-            "symbol": "export * from './styleCollectionDefinitions';"
-          }
-        ]
-      }
-    },
-    {
-      "id": "constants",
-      "path": "constants.ts",
-      "type": "module",
-      "boundary": "Constants",
-      "entrypoints": ["constants.ts:MODELS"],
-      "tests": [
-        "apps/local-server/src/providers/grokImagineInput.test.ts",
-        "components/recipes/AnimationSequenceRecipe.test.tsx",
-        "components/recipes/SpritesheetRecipe.test.tsx",
-        "contexts/GenerationIsolation.runtime.test.tsx",
-        "hooks/useGenerationConfig.test.ts"
-      ],
-      "callers": [
-        {
-          "id": "apps-local-server",
-          "type": "imports"
-        },
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "scripts",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
-        }
-      ],
-      "callees": [
-        {
-          "id": "types",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "constants.ts",
-            "symbol": "MODELS"
-          }
-        ]
-      }
-    },
-    {
-      "id": "contexts",
-      "path": "contexts",
-      "type": "module",
-      "boundary": "Contexts",
-      "entrypoints": ["contexts/GenerationContext.tsx:useRequiredGenerationContext"],
-      "tests": [
-        "contexts/GenerationIsolation.runtime.test.tsx",
-        "contexts/RuntimeLogIsolation.runtime.test.tsx",
-        "contexts/globalReducer.test.ts"
-      ],
-      "callers": [
-        {
-          "id": "app",
-          "type": "imports"
-        },
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "repository",
+          "id": "worker",
           "type": "calls"
         }
       ],
       "callees": [
         {
-          "id": "constants",
-          "type": "imports"
+          "id": "catalog",
+          "type": "writes"
         },
         {
-          "id": "external-dependencies",
-          "type": "imports"
+          "id": "event-bus",
+          "type": "publishes"
         },
         {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
+          "id": "jobs-db",
+          "type": "writes"
         }
       ],
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "contexts/GenerationContext.tsx",
-            "symbol": "useRequiredGenerationContext"
+            "path": "apps/local-server/src/workerAssetFinalizer.ts",
+            "symbol": "createWorkerAssetFinalizer"
           }
         ]
       }
     },
     {
-      "id": "external-dependencies",
-      "path": "App.tsx",
-      "type": "external",
-      "boundary": "External",
-      "entrypoints": ["App.tsx:react"],
-      "tests": [],
-      "callers": [
-        {
-          "id": "app",
-          "type": "imports"
-        },
-        {
-          "id": "apps-local-server",
-          "type": "imports"
-        },
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "lib-recipecontextbuilders",
-          "type": "imports"
-        },
-        {
-          "id": "other-modules",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "scripts",
-          "type": "imports"
-        },
-        {
-          "id": "scripts-style-migration",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "skills-imagegen-scripts-image-gen",
-          "type": "imports"
-        },
-        {
-          "id": "skills-imagegen-scripts-remove-chroma-key",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
-        }
-      ],
-      "callees": [],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "App.tsx",
-            "symbol": "react"
-          }
-        ]
-      }
-    },
-    {
-      "id": "hooks",
-      "path": "hooks",
-      "type": "module",
-      "boundary": "Hooks",
-      "entrypoints": ["hooks/catalogEventRefreshPolicy.ts:mergeCatalogRefreshScopes"],
+      "id": "catalog",
+      "path": "apps/local-server/src/catalog.ts",
+      "type": "database",
+      "boundary": "Library catalog truth",
+      "entrypoints": ["apps/local-server/src/catalog.ts:registerCatalogImage"],
       "tests": [
-        "hooks/catalogEventRefreshPolicy.test.ts",
-        "hooks/catalogMutationReconciliationPolicy.test.ts",
-        "hooks/localStudioSyncProjection.test.ts",
-        "hooks/localStudioSyncRefreshPolicy.test.ts",
-        "hooks/studioDiagnosticsRefreshPolicy.test.ts"
-      ],
-      "callers": [
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "repository",
-          "type": "calls"
-        }
-      ],
-      "callees": [
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "constants",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/catalogEventRefreshPolicy.ts",
-            "symbol": "mergeCatalogRefreshScopes"
-          }
-        ]
-      }
-    },
-    {
-      "id": "lib",
-      "path": "lib",
-      "type": "module",
-      "boundary": "Lib",
-      "entrypoints": ["lib/activeRecipeIndicator.ts:getActiveRecipeIndicator"],
-      "tests": [
-        "apps/local-server/src/hostTerminal.test.ts",
-        "apps/local-server/src/providers/grokImagineInput.test.ts",
-        "components/QueuePanel.test.ts",
-        "components/StudioSettingsModal.test.ts",
-        "hooks/useStudioGallery.test.ts"
-      ],
-      "callers": [
-        {
-          "id": "apps-local-server",
-          "type": "imports"
-        },
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib-recipecontextbuilders",
-          "type": "imports"
-        },
-        {
-          "id": "scripts",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
-        }
-      ],
-      "callees": [
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "constants",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib-recipecontextbuilders",
-          "type": "imports"
-        },
-        {
-          "id": "lib-stylethumbnailpacks-generated",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/activeRecipeIndicator.ts",
-            "symbol": "getActiveRecipeIndicator"
-          }
-        ]
-      }
-    },
-    {
-      "id": "lib-recipecontextbuilders",
-      "path": "lib/recipeContextBuilders",
-      "type": "interface",
-      "boundary": "Lib",
-      "entrypoints": ["lib/recipeContextBuilders/index.ts:RECIPE_CONTEXT_BUILDERS"],
-      "tests": ["lib/recipeContextBuilders/index.test.ts"],
-      "callers": [
-        {
-          "id": "lib",
-          "type": "imports"
-        }
-      ],
-      "callees": [
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/recipeContextBuilders/index.ts",
-            "symbol": "RECIPE_CONTEXT_BUILDERS"
-          }
-        ]
-      }
-    },
-    {
-      "id": "lib-stylethumbnailpacks-generated",
-      "path": "lib/styleThumbnailPacks.generated",
-      "type": "module",
-      "boundary": "Lib",
-      "entrypoints": ["lib/styleThumbnailPacks.generated/index.ts:loadGeneratedStyleThumbnailPack"],
-      "tests": [],
-      "callers": [
-        {
-          "id": "lib",
-          "type": "imports"
-        }
-      ],
-      "callees": [],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/styleThumbnailPacks.generated/index.ts",
-            "symbol": "loadGeneratedStyleThumbnailPack"
-          }
-        ]
-      }
-    },
-    {
-      "id": "other-modules",
-      "path": "main.tsx",
-      "type": "module",
-      "boundary": "Other Modules",
-      "entrypoints": ["main.tsx:rootElement"],
-      "tests": [],
-      "callers": [],
-      "callees": [
-        {
-          "id": "app",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "main.tsx",
-            "symbol": "rootElement"
-          }
-        ]
-      }
-    },
-    {
-      "id": "packages-shared",
-      "path": "packages/shared",
-      "type": "module",
-      "boundary": "Packages",
-      "entrypoints": ["packages/shared/src/index.ts:export * from './types';"],
-      "tests": [
-        "apps/local-server/src/animationSequenceRoutes.test.ts",
-        "apps/local-server/src/appFactory.test.ts",
-        "apps/local-server/src/assetLogRoutes.test.ts",
+        "apps/local-server/src/catalog.test.ts",
         "apps/local-server/src/catalogCommands.test.ts",
         "apps/local-server/src/catalogRoutes.test.ts"
       ],
       "callers": [
         {
-          "id": "apps-local-server",
-          "type": "imports"
-        },
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "lib-recipecontextbuilders",
-          "type": "imports"
-        },
-        {
-          "id": "scripts",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
+          "id": "asset-finalizer",
+          "type": "writes"
         }
       ],
-      "callees": [
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        }
-      ],
+      "callees": [],
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "packages/shared/src/index.ts",
-            "symbol": "export * from './types';"
+            "path": "apps/local-server/src/catalog.ts",
+            "symbol": "registerCatalogImage"
           }
         ]
       }
     },
     {
-      "id": "repository",
-      "path": "package.json",
-      "type": "module",
-      "boundary": "Repository",
-      "entrypoints": ["package.json:{"],
-      "tests": [],
-      "callers": [],
-      "callees": [
-        {
-          "id": "apps-local-server",
-          "type": "calls"
-        },
-        {
-          "id": "contexts",
-          "type": "calls"
-        },
-        {
-          "id": "hooks",
-          "type": "calls"
-        },
-        {
-          "id": "scripts",
-          "type": "calls"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "package.json",
-            "symbol": "{"
-          }
-        ]
-      }
-    },
-    {
-      "id": "scripts",
-      "path": "scripts",
+      "id": "event-bus",
+      "path": "apps/local-server/src/events.ts",
       "type": "service",
-      "boundary": "Scripts",
-      "entrypoints": ["scripts/audit-provider-inputs.ts:argValue"],
+      "boundary": "Revisioned job and catalog events",
+      "entrypoints": ["apps/local-server/src/events.ts:publishEvent"],
       "tests": [
-        "scripts/audit-style-preset-dna-completeness.test.ts",
-        "scripts/audit-style-preset-scene-lock.test.ts",
-        "scripts/catalog-first-source-audit.test.ts",
-        "scripts/check-docs.test.ts",
-        "scripts/devPortFinder.test.ts"
+        "apps/local-server/src/eventStreamRoutes.test.ts",
+        "apps/local-server/src/events.test.ts"
       ],
       "callers": [
         {
-          "id": "repository",
-          "type": "calls"
+          "id": "asset-finalizer",
+          "type": "publishes"
+        },
+        {
+          "id": "event-routes",
+          "type": "subscribes"
+        },
+        {
+          "id": "worker",
+          "type": "publishes"
+        }
+      ],
+      "callees": [],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/events.ts",
+            "symbol": "publishEvent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "event-routes",
+      "path": "apps/local-server/src/eventStreamRoutes.ts",
+      "type": "interface",
+      "boundary": "Bounded SSE delivery and revision handshake",
+      "entrypoints": ["apps/local-server/src/eventStreamRoutes.ts:createEventStreamRoutes"],
+      "tests": ["apps/local-server/src/eventStreamRoutes.test.ts"],
+      "callers": [
+        {
+          "id": "job-observer",
+          "type": "subscribes"
         }
       ],
       "callees": [
         {
-          "id": "apps-local-server",
-          "type": "imports"
-        },
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "constants",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
+          "id": "event-bus",
+          "type": "subscribes"
         }
       ],
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/audit-provider-inputs.ts",
-            "symbol": "argValue"
+            "path": "apps/local-server/src/eventStreamRoutes.ts",
+            "symbol": "createEventStreamRoutes"
           }
         ]
       }
     },
     {
-      "id": "scripts-style-migration",
-      "path": "scripts/style-migration",
-      "type": "database",
-      "boundary": "Scripts",
-      "entrypoints": ["scripts/style-migration/enrich-pack-01-photo-dna.ts:argValue"],
-      "tests": [],
-      "callers": [],
-      "callees": [
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "scripts/style-migration/enrich-pack-01-photo-dna.ts",
-            "symbol": "argValue"
-          }
-        ]
-      }
-    },
-    {
-      "id": "services",
-      "path": "services",
+      "id": "generation-run",
+      "path": "services/localGenerationRun.ts",
       "type": "service",
-      "boundary": "Services",
-      "entrypoints": [
-        "services/animationSequenceRunCoordinator.ts:createAnimationSequenceRunCoordinator"
-      ],
+      "boundary": "Persistent generation observation and catalog results",
+      "entrypoints": ["services/localGenerationRun.ts:runLocalGeneration"],
       "tests": [
-        "components/settings/SubscriptionAuthControls.test.tsx",
-        "services/animationSequenceRunCoordinator.test.ts",
         "services/localGenerationRun.stream.test.ts",
         "services/localGenerationRun.test.ts",
-        "services/localGenerationRuntimeAdapters.test.ts"
+        "services/localGenerationRun.workspace.test.ts"
       ],
       "callers": [
         {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
+          "id": "generation-ui",
+          "type": "calls"
         }
       ],
       "callees": [
         {
-          "id": "constants",
-          "type": "imports"
+          "id": "job-client",
+          "type": "calls"
         },
         {
-          "id": "external-dependencies",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
+          "id": "job-observer",
+          "type": "calls"
         }
       ],
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "services/animationSequenceRunCoordinator.ts",
-            "symbol": "createAnimationSequenceRunCoordinator"
+            "path": "services/localGenerationRun.ts",
+            "symbol": "runLocalGeneration"
           }
         ]
       }
     },
     {
-      "id": "skills-imagegen-scripts-image-gen",
-      "path": "skills/imagegen/scripts/image_gen.py",
+      "id": "generation-ui",
+      "path": "hooks/useGenerationPipeline.ts",
+      "type": "interface",
+      "boundary": "User generation lifecycle",
+      "entrypoints": ["hooks/useGenerationPipeline.ts:useGenerationPipeline"],
+      "tests": ["hooks/useGenerationPipeline.test.ts"],
+      "callers": [],
+      "callees": [
+        {
+          "id": "generation-run",
+          "type": "calls"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "hooks/useGenerationPipeline.ts",
+            "symbol": "useGenerationPipeline"
+          }
+        ]
+      }
+    },
+    {
+      "id": "job-client",
+      "path": "services/studio-api/jobs.ts",
       "type": "service",
-      "boundary": "Skills",
-      "entrypoints": ["skills/imagegen/scripts/image_gen.py:_NullContext"],
+      "boundary": "Browser job API",
+      "entrypoints": ["services/studio-api/jobs.ts:createStudioJob"],
+      "tests": [],
+      "callers": [
+        {
+          "id": "generation-run",
+          "type": "calls"
+        },
+        {
+          "id": "job-observer",
+          "type": "calls"
+        }
+      ],
+      "callees": [
+        {
+          "id": "job-routes",
+          "type": "calls"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "services/studio-api/jobs.ts",
+            "symbol": "createStudioJob"
+          }
+        ]
+      }
+    },
+    {
+      "id": "job-intake",
+      "path": "apps/local-server/src/persistentJobIntake.ts",
+      "type": "service",
+      "boundary": "Validate and persist before dispatch",
+      "entrypoints": ["apps/local-server/src/persistentJobIntake.ts:createPersistentJobIntake"],
+      "tests": ["apps/local-server/src/persistentJobIntake.test.ts"],
+      "callers": [
+        {
+          "id": "job-routes",
+          "type": "calls"
+        }
+      ],
+      "callees": [
+        {
+          "id": "jobs-db",
+          "type": "writes"
+        },
+        {
+          "id": "runtime-settings",
+          "type": "calls"
+        },
+        {
+          "id": "worker",
+          "type": "calls"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/persistentJobIntake.ts",
+            "symbol": "createPersistentJobIntake"
+          }
+        ]
+      }
+    },
+    {
+      "id": "job-observer",
+      "path": "services/studioEventSource.ts",
+      "type": "service",
+      "boundary": "Shared event connection and job reconciliation",
+      "entrypoints": ["services/studioEventSource.ts:watchJob"],
+      "tests": ["services/studioEventSource.test.ts"],
+      "callers": [
+        {
+          "id": "generation-run",
+          "type": "calls"
+        }
+      ],
+      "callees": [
+        {
+          "id": "event-routes",
+          "type": "subscribes"
+        },
+        {
+          "id": "job-client",
+          "type": "calls"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "services/studioEventSource.ts",
+            "symbol": "watchJob"
+          }
+        ]
+      }
+    },
+    {
+      "id": "job-routes",
+      "path": "apps/local-server/src/jobRoutes.ts",
+      "type": "interface",
+      "boundary": "Job intake, inspection and actions",
+      "entrypoints": ["apps/local-server/src/jobRoutes.ts:createJobRoutes"],
+      "tests": ["apps/local-server/src/jobRoutes.test.ts"],
+      "callers": [
+        {
+          "id": "job-client",
+          "type": "calls"
+        }
+      ],
+      "callees": [
+        {
+          "id": "job-intake",
+          "type": "calls"
+        },
+        {
+          "id": "jobs-db",
+          "type": "reads"
+        },
+        {
+          "id": "shared",
+          "type": "imports"
+        },
+        {
+          "id": "worker",
+          "type": "calls"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/jobRoutes.ts",
+            "symbol": "createJobRoutes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jobs-db",
+      "path": "apps/local-server/src/db/jobs.ts",
+      "type": "database",
+      "boundary": "Durable job states and checkpoints",
+      "entrypoints": ["apps/local-server/src/db/jobs.ts:updateJobStatus"],
+      "tests": ["apps/local-server/src/db/jobs.test.ts"],
+      "callers": [
+        {
+          "id": "asset-finalizer",
+          "type": "writes"
+        },
+        {
+          "id": "job-intake",
+          "type": "writes"
+        },
+        {
+          "id": "job-routes",
+          "type": "reads"
+        },
+        {
+          "id": "worker",
+          "type": "writes"
+        }
+      ],
+      "callees": [],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/db/jobs.ts",
+            "symbol": "updateJobStatus"
+          }
+        ]
+      }
+    },
+    {
+      "id": "providers",
+      "path": "apps/local-server/src/providers",
+      "type": "service",
+      "boundary": "Provider execution adapters and runtime identity",
+      "entrypoints": [
+        "apps/local-server/src/providers/externalProvider.ts:createExternalGenerationProvider",
+        "apps/local-server/src/providers/comfyExecutor.ts:createComfyWorkflowExecutor",
+        "apps/local-server/src/providers/codexProvider.ts:createCodexGenerationProvider"
+      ],
+      "tests": [
+        "apps/local-server/src/providers/comfyExecutor.test.ts",
+        "apps/local-server/src/providers/codexProvider.test.ts",
+        "apps/local-server/src/providers/externalProvider.test.ts"
+      ],
+      "callers": [
+        {
+          "id": "worker",
+          "type": "calls"
+        }
+      ],
+      "callees": [],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/providers/externalProvider.ts",
+            "symbol": "createExternalGenerationProvider"
+          },
+          {
+            "path": "apps/local-server/src/providers/comfyExecutor.ts",
+            "symbol": "createComfyWorkflowExecutor"
+          },
+          {
+            "path": "apps/local-server/src/providers/codexProvider.ts",
+            "symbol": "createCodexGenerationProvider"
+          }
+        ]
+      }
+    },
+    {
+      "id": "runtime-settings",
+      "path": "apps/local-server/src/providers/runtimeConfig.ts",
+      "type": "service",
+      "boundary": "Provider readiness and configuration",
+      "entrypoints": [
+        "apps/local-server/src/providers/runtimeConfig.ts:getExternalProviderRuntimePreflight"
+      ],
+      "tests": ["apps/local-server/src/providers/runtimeConfig.test.ts"],
+      "callers": [
+        {
+          "id": "job-intake",
+          "type": "calls"
+        }
+      ],
+      "callees": [],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/providers/runtimeConfig.ts",
+            "symbol": "getExternalProviderRuntimePreflight"
+          }
+        ]
+      }
+    },
+    {
+      "id": "shared",
+      "path": "packages/shared/src",
+      "type": "module",
+      "boundary": "Provider-independent domain and API contracts",
+      "entrypoints": ["packages/shared/src/types.ts:JobStatus"],
+      "tests": [],
+      "callers": [
+        {
+          "id": "job-routes",
+          "type": "imports"
+        }
+      ],
+      "callees": [],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "packages/shared/src/types.ts",
+            "symbol": "JobStatus"
+          }
+        ]
+      }
+    },
+    {
+      "id": "style-client",
+      "path": "services/studio-api/userStyles.ts",
+      "type": "service",
+      "boundary": "User style API",
+      "entrypoints": ["services/studio-api/userStyles.ts:createUserStylePreset"],
+      "tests": [],
+      "callers": [
+        {
+          "id": "style-editor",
+          "type": "calls"
+        },
+        {
+          "id": "styles",
+          "type": "calls"
+        }
+      ],
+      "callees": [
+        {
+          "id": "style-routes",
+          "type": "calls"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "services/studio-api/userStyles.ts",
+            "symbol": "createUserStylePreset"
+          }
+        ]
+      }
+    },
+    {
+      "id": "style-editor",
+      "path": "components/recipes/UserStyleEditorSurface.tsx",
+      "type": "interface",
+      "boundary": "User style draft and save session",
+      "entrypoints": ["components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface"],
+      "tests": [],
+      "callers": [
+        {
+          "id": "styles",
+          "type": "calls"
+        }
+      ],
+      "callees": [
+        {
+          "id": "style-client",
+          "type": "calls"
+        }
+      ],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "components/recipes/UserStyleEditorSurface.tsx",
+            "symbol": "UserStyleEditorSurface"
+          }
+        ]
+      }
+    },
+    {
+      "id": "style-routes",
+      "path": "apps/local-server/src/userStyleRoutes.ts",
+      "type": "interface",
+      "boundary": "Persistent user style CRUD",
+      "entrypoints": ["apps/local-server/src/userStyleRoutes.ts:createUserStyleRoutes"],
+      "tests": ["apps/local-server/src/userStyleRoutes.test.ts"],
+      "callers": [
+        {
+          "id": "style-client",
+          "type": "calls"
+        }
+      ],
+      "callees": [],
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/userStyleRoutes.ts",
+            "symbol": "createUserStyleRoutes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "styles",
+      "path": "components/recipes/StylesBrowser.tsx",
+      "type": "interface",
+      "boundary": "Style browsing and selected composition",
+      "entrypoints": ["components/recipes/StylesBrowser.tsx:StylesBrowser"],
       "tests": [],
       "callers": [],
       "callees": [
         {
-          "id": "external-dependencies",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "skills/imagegen/scripts/image_gen.py",
-            "symbol": "_NullContext"
-          }
-        ]
-      }
-    },
-    {
-      "id": "skills-imagegen-scripts-remove-chroma-key",
-      "path": "skills/imagegen/scripts/remove_chroma_key.py",
-      "type": "service",
-      "boundary": "Skills",
-      "entrypoints": ["skills/imagegen/scripts/remove_chroma_key.py:_die"],
-      "tests": [],
-      "callers": [],
-      "callees": [
+          "id": "style-client",
+          "type": "calls"
+        },
         {
-          "id": "external-dependencies",
-          "type": "imports"
+          "id": "style-editor",
+          "type": "calls"
         }
       ],
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "skills/imagegen/scripts/remove_chroma_key.py",
-            "symbol": "_die"
+            "path": "components/recipes/StylesBrowser.tsx",
+            "symbol": "StylesBrowser"
           }
         ]
       }
     },
     {
-      "id": "types",
-      "path": "types.ts",
-      "type": "module",
-      "boundary": "Types",
-      "entrypoints": ["types.ts:Attachment"],
+      "id": "worker",
+      "path": "apps/local-server/src/worker.ts",
+      "type": "queue",
+      "boundary": "Execution, cancellation and recovery ownership",
+      "entrypoints": ["apps/local-server/src/worker.ts:createWorkerController"],
       "tests": [
-        "contexts/GenerationIsolation.runtime.test.tsx",
-        "hooks/useWorkspaceStrip.test.ts",
-        "lib/activeRecipeIndicator.test.ts",
-        "lib/imageGridPresentation.test.ts",
-        "lib/recipeIdentity.test.ts"
+        "apps/local-server/src/workerShutdown.test.ts",
+        "apps/local-server/src/workerAssetFinalizer.test.ts",
+        "apps/local-server/src/workerRouting.test.ts"
       ],
       "callers": [
         {
-          "id": "components",
-          "type": "imports"
+          "id": "job-intake",
+          "type": "calls"
         },
         {
-          "id": "constants",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "lib-recipecontextbuilders",
-          "type": "imports"
-        },
-        {
-          "id": "scripts",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        },
-        {
-          "id": "utils",
-          "type": "imports"
+          "id": "job-routes",
+          "type": "calls"
         }
       ],
       "callees": [
         {
-          "id": "constants",
-          "type": "imports"
+          "id": "asset-finalizer",
+          "type": "calls"
         },
         {
-          "id": "external-dependencies",
-          "type": "imports"
+          "id": "event-bus",
+          "type": "publishes"
         },
         {
-          "id": "packages-shared",
-          "type": "imports"
+          "id": "jobs-db",
+          "type": "writes"
+        },
+        {
+          "id": "providers",
+          "type": "calls"
         }
       ],
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "types.ts",
-            "symbol": "Attachment"
-          }
-        ]
-      }
-    },
-    {
-      "id": "utils",
-      "path": "utils",
-      "type": "module",
-      "boundary": "Utils",
-      "entrypoints": ["utils/catalogImageGenerationConfig.ts:isRecordLike"],
-      "tests": [
-        "utils/catalogImageGenerationConfig.test.ts",
-        "utils/fileUtils.test.ts",
-        "utils/imageGenSizing.test.ts"
-      ],
-      "callers": [
-        {
-          "id": "components",
-          "type": "imports"
-        },
-        {
-          "id": "contexts",
-          "type": "imports"
-        },
-        {
-          "id": "hooks",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "services",
-          "type": "imports"
-        }
-      ],
-      "callees": [
-        {
-          "id": "constants",
-          "type": "imports"
-        },
-        {
-          "id": "external-dependencies",
-          "type": "imports"
-        },
-        {
-          "id": "lib",
-          "type": "imports"
-        },
-        {
-          "id": "packages-shared",
-          "type": "imports"
-        },
-        {
-          "id": "types",
-          "type": "imports"
-        }
-      ],
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "utils/catalogImageGenerationConfig.ts",
-            "symbol": "isRecordLike"
+            "path": "apps/local-server/src/worker.ts",
+            "symbol": "createWorkerController"
           }
         ]
       }
@@ -1125,1569 +648,394 @@
   ],
   "edges": [
     {
-      "from": "app",
-      "to": "components",
-      "type": "imports",
+      "from": "asset-finalizer",
+      "to": "catalog",
+      "type": "writes",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "App.tsx",
-            "symbol": "./components/AppContent"
+            "path": "apps/local-server/src/workerAssetFinalizer.ts",
+            "symbol": "registerCatalogImage"
           }
         ]
       }
     },
     {
-      "from": "app",
-      "to": "contexts",
-      "type": "imports",
+      "from": "asset-finalizer",
+      "to": "event-bus",
+      "type": "publishes",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "App.tsx",
-            "symbol": "./contexts/GlobalContext"
-          },
-          {
-            "path": "App.tsx",
-            "symbol": "./contexts/GenerationContext"
+            "path": "apps/local-server/src/workerAssetFinalizer.ts",
+            "symbol": "publishEvent('job.completed'"
           }
         ]
       }
     },
     {
-      "from": "app",
-      "to": "external-dependencies",
-      "type": "imports",
+      "from": "asset-finalizer",
+      "to": "jobs-db",
+      "type": "writes",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "App.tsx",
-            "symbol": "react"
+            "path": "apps/local-server/src/workerAssetFinalizer.ts",
+            "symbol": "updateJobFinalization"
           }
         ]
       }
     },
     {
-      "from": "apps-local-server",
-      "to": "constants",
-      "type": "imports",
+      "from": "event-routes",
+      "to": "event-bus",
+      "type": "subscribes",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "apps/local-server/src/providers/grokImagineInput.test.ts",
-            "symbol": "../../../../constants"
+            "path": "apps/local-server/src/eventStreamRoutes.ts",
+            "symbol": "subscribeEvents(send)"
           }
         ]
       }
     },
     {
-      "from": "apps-local-server",
-      "to": "external-dependencies",
-      "type": "imports",
+      "from": "generation-run",
+      "to": "job-client",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "apps/local-server/src/animationGifEncoder.test.ts",
-            "symbol": "sharp"
-          },
-          {
-            "path": "apps/local-server/src/animationGifEncoder.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "apps/local-server/src/animationSequenceRoutes.test.ts",
-            "symbol": "sharp"
+            "path": "services/localGenerationRun.ts",
+            "symbol": "createStudioJob"
           }
         ]
       }
     },
     {
-      "from": "apps-local-server",
-      "to": "lib",
-      "type": "imports",
+      "from": "generation-run",
+      "to": "job-observer",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "apps/local-server/src/hostTerminal.test.ts",
-            "symbol": "../../../lib/onboardingSetupPrompt"
-          },
-          {
-            "path": "apps/local-server/src/providers/grokImagineInput.test.ts",
-            "symbol": "../../../../lib/recipeModules"
+            "path": "services/localGenerationRun.ts",
+            "symbol": "watchJob"
           }
         ]
       }
     },
     {
-      "from": "apps-local-server",
-      "to": "packages-shared",
-      "type": "imports",
+      "from": "generation-ui",
+      "to": "generation-run",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
-          {
-            "path": "apps/local-server/src/animationSequenceRoutes.test.ts",
-            "symbol": "../../../packages/shared/src"
-          },
-          {
-            "path": "apps/local-server/src/animationSequenceRoutes.ts",
-            "symbol": "../../../packages/shared/src"
-          },
-          {
-            "path": "apps/local-server/src/animationSequenceRunView.ts",
-            "symbol": "../../../packages/shared/src"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "constants",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/Toolbar.tsx",
-            "symbol": "../constants"
-          },
-          {
-            "path": "components/recipes/AnimationSequenceRecipe.test.tsx",
-            "symbol": "../../constants"
-          },
-          {
-            "path": "components/recipes/CharacterSheetRecipe.tsx",
-            "symbol": "../../constants"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "contexts",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/ToastContainer.tsx",
-            "symbol": "../contexts/ToastUiContext"
-          },
-          {
-            "path": "components/Toolbar.tsx",
-            "symbol": "../contexts/GlobalContext"
-          },
-          {
-            "path": "components/overlays/StudioSystemOverlays.tsx",
-            "symbol": "../../contexts/RuntimeLogContext"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/AppContent.tsx",
-            "symbol": "react"
-          },
-          {
-            "path": "components/AppOverlays.tsx",
-            "symbol": "react"
-          },
-          {
-            "path": "components/ConfirmationModal.tsx",
-            "symbol": "react"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "hooks",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/AppContent.tsx",
-            "symbol": "../hooks/useStudioShell"
-          },
-          {
-            "path": "components/ConfirmationModal.tsx",
-            "symbol": "../hooks/useStudioActionConfirmations"
-          },
-          {
-            "path": "components/DebugPanel.tsx",
-            "symbol": "../hooks/useLatestRef"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "lib",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/AppContent.tsx",
-            "symbol": "../lib/studioOverlayVisibility"
-          },
-          {
-            "path": "components/ConfirmationModal.tsx",
-            "symbol": "../lib/gsapMotion"
-          },
-          {
-            "path": "components/DebugPanel.tsx",
-            "symbol": "../lib/shellActivityJob"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "packages-shared",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/DebugPanel.tsx",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "components/HeaderToolbar.tsx",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "components/JobInspectorDetail.tsx",
-            "symbol": "../packages/shared/src"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "services",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/JobInspectorDetail.tsx",
-            "symbol": "../services/studio-api/http"
-          },
-          {
-            "path": "components/OnboardingModal.tsx",
-            "symbol": "../services/studio-api/http"
-          },
-          {
-            "path": "components/OnboardingModal.tsx",
-            "symbol": "../services/studio-api/runtime"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "types",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/DashboardModal.tsx",
-            "symbol": "../types"
-          },
-          {
-            "path": "components/DebugPanel.tsx",
-            "symbol": "../types"
-          },
-          {
-            "path": "components/FormatPreview.tsx",
-            "symbol": "../types"
-          }
-        ]
-      }
-    },
-    {
-      "from": "components",
-      "to": "utils",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/ErrorBoundary.tsx",
-            "symbol": "../utils/runtimeLogger"
-          },
-          {
-            "path": "components/FormatPreview.tsx",
-            "symbol": "../utils/imageGenSizing"
-          },
-          {
-            "path": "components/ImageCarousel.tsx",
-            "symbol": "../utils/fileUtils"
-          }
-        ]
-      }
-    },
-    {
-      "from": "constants",
-      "to": "types",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "constants.ts",
-            "symbol": "./types"
-          }
-        ]
-      }
-    },
-    {
-      "from": "contexts",
-      "to": "constants",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "contexts/GenerationIsolation.runtime.test.tsx",
-            "symbol": "../constants"
-          }
-        ]
-      }
-    },
-    {
-      "from": "contexts",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "contexts/GenerationContext.tsx",
-            "symbol": "react"
-          },
-          {
-            "path": "contexts/GenerationIsolation.runtime.test.tsx",
-            "symbol": "react"
-          },
-          {
-            "path": "contexts/GenerationIsolation.runtime.test.tsx",
-            "symbol": "@testing-library/react"
-          }
-        ]
-      }
-    },
-    {
-      "from": "contexts",
-      "to": "hooks",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "contexts/GenerationContext.tsx",
-            "symbol": "../hooks/useGenerationConfig"
-          },
-          {
-            "path": "contexts/GenerationContext.tsx",
-            "symbol": "../hooks/useGenerationPipeline"
-          },
-          {
-            "path": "contexts/GenerationContext.tsx",
-            "symbol": "../hooks/useModalManager"
-          }
-        ]
-      }
-    },
-    {
-      "from": "contexts",
-      "to": "lib",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "contexts/WorkspaceContext.tsx",
-            "symbol": "../lib/workspaceIdbMigration"
-          }
-        ]
-      }
-    },
-    {
-      "from": "contexts",
-      "to": "packages-shared",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "contexts/GenerationContext.tsx",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "contexts/WorkspaceContext.tsx",
-            "symbol": "../packages/shared/src/workspaceContracts"
-          }
-        ]
-      }
-    },
-    {
-      "from": "contexts",
-      "to": "services",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "contexts/WorkspaceContext.tsx",
-            "symbol": "../services/studio-api/workspaces"
-          }
-        ]
-      }
-    },
-    {
-      "from": "contexts",
-      "to": "types",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "contexts/GenerationContext.tsx",
-            "symbol": "../types"
-          },
-          {
-            "path": "contexts/GenerationIsolation.runtime.test.tsx",
-            "symbol": "../types"
-          },
-          {
-            "path": "contexts/RuntimeLogContext.tsx",
-            "symbol": "../types"
-          }
-        ]
-      }
-    },
-    {
-      "from": "contexts",
-      "to": "utils",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "contexts/WorkspaceContext.tsx",
-            "symbol": "../utils/runtimeLogger"
-          },
-          {
-            "path": "contexts/WorkspaceContext.tsx",
-            "symbol": "../utils/idb"
-          },
-          {
-            "path": "contexts/runtimeLogStore.ts",
-            "symbol": "../utils/logger"
-          }
-        ]
-      }
-    },
-    {
-      "from": "hooks",
-      "to": "components",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/useGenerationToolbarConfig.ts",
-            "symbol": "../components/Toolbar"
-          },
-          {
-            "path": "hooks/useStudioOverlayController.ts",
-            "symbol": "../components/overlays/types"
-          },
-          {
-            "path": "hooks/useStudioShell.ts",
-            "symbol": "../components/HeaderToolbar"
-          }
-        ]
-      }
-    },
-    {
-      "from": "hooks",
-      "to": "constants",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/useGenerationConfig.test.ts",
-            "symbol": "../constants"
-          },
-          {
-            "path": "hooks/useGenerationConfig.ts",
-            "symbol": "../constants"
-          },
-          {
-            "path": "hooks/useGenerationPipeline.test.ts",
-            "symbol": "../constants"
-          }
-        ]
-      }
-    },
-    {
-      "from": "hooks",
-      "to": "contexts",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/useStudioShell.ts",
-            "symbol": "../contexts/GlobalContext"
-          },
-          {
-            "path": "hooks/useStudioShell.ts",
-            "symbol": "../contexts/GenerationContext"
-          }
-        ]
-      }
-    },
-    {
-      "from": "hooks",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/catalogEventRefreshPolicy.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "hooks/catalogMutationReconciliationPolicy.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "hooks/localStudioSyncProjection.test.ts",
-            "symbol": "vite-plus/test"
-          }
-        ]
-      }
-    },
-    {
-      "from": "hooks",
-      "to": "lib",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/catalogEventRefreshPolicy.ts",
-            "symbol": "../lib/catalogOperationResult"
-          },
-          {
-            "path": "hooks/catalogMutationReconciliationPolicy.ts",
-            "symbol": "../lib/catalogOperationResult"
-          },
-          {
-            "path": "hooks/localStudioSyncProjection.ts",
-            "symbol": "../lib/shellActivityJob"
-          }
-        ]
-      }
-    },
-    {
-      "from": "hooks",
-      "to": "packages-shared",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/localStudioSyncProjection.test.ts",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "hooks/localStudioSyncProjection.ts",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "hooks/useCatalog.ts",
-            "symbol": "../packages/shared/src"
-          }
-        ]
-      }
-    },
-    {
-      "from": "hooks",
-      "to": "services",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/useCatalog.ts",
-            "symbol": "../services/studio-api/catalog"
-          },
-          {
-            "path": "hooks/useCatalog.ts",
-            "symbol": "../services/studio-api/assetUrls"
-          },
-          {
-            "path": "hooks/useCatalogPage.ts",
-            "symbol": "../services/studio-api/catalog"
-          }
-        ]
-      }
-    },
-    {
-      "from": "hooks",
-      "to": "types",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/localStudioSyncProjection.ts",
-            "symbol": "../types"
-          },
-          {
-            "path": "hooks/useGenerationConfig.ts",
-            "symbol": "../types"
-          },
           {
             "path": "hooks/useGenerationPipeline.ts",
-            "symbol": "../types"
+            "symbol": "runLocalGenerationWithLifecycle"
           }
         ]
       }
     },
     {
-      "from": "hooks",
-      "to": "utils",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "hooks/useGenerationConfig.ts",
-            "symbol": "../utils/imageGenSizing"
-          },
-          {
-            "path": "hooks/useGenerationConfig.ts",
-            "symbol": "../utils/runtimeLogger"
-          },
-          {
-            "path": "hooks/useGenerationConfig.ts",
-            "symbol": "../utils/imageUtils"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "components",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/buildStudioHeaderToolbarProps.ts",
-            "symbol": "../components/HeaderToolbar"
-          },
-          {
-            "path": "lib/buildStudioPageController.ts",
-            "symbol": "../components/RecipePage"
-          },
-          {
-            "path": "lib/buildStudioPageController.ts",
-            "symbol": "../components/shell/StudioGenerationDock"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "constants",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/imageGridPresentation.test.ts",
-            "symbol": "../constants"
-          },
-          {
-            "path": "lib/recipeContext.test.ts",
-            "symbol": "../constants"
-          },
-          {
-            "path": "lib/recipeModules.test.ts",
-            "symbol": "../constants"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/activeRecipeIndicator.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "lib/animationFrameHandoff.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "lib/animationSequenceFrameSelection.test.ts",
-            "symbol": "vite-plus/test"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "hooks",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/buildStudioPageController.ts",
-            "symbol": "../hooks/useHashRouter"
-          },
-          {
-            "path": "lib/routePreloadBudget.ts",
-            "symbol": "../hooks/useHashRouter"
-          },
-          {
-            "path": "lib/studioCatalogView.test.ts",
-            "symbol": "../hooks/useCatalog"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "lib-recipecontextbuilders",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/recipeContext.ts",
-            "symbol": "./recipeContextBuilders"
-          },
-          {
-            "path": "lib/recipeModules.ts",
-            "symbol": "./recipeContextBuilders"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "lib-stylethumbnailpacks-generated",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/styleThumbnailCatalog.ts",
-            "symbol": "./styleThumbnailPacks.generated"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "packages-shared",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/animationFrameHandoff.test.ts",
-            "symbol": "../packages/shared/src/animationSequenceContracts"
-          },
-          {
-            "path": "lib/animationFrameHandoff.ts",
-            "symbol": "../packages/shared/src/animationSequenceContracts"
-          },
-          {
-            "path": "lib/buildStudioHeaderToolbarProps.ts",
-            "symbol": "../packages/shared/src"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "services",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/studioCatalogImageAdapter.ts",
-            "symbol": "../services/studio-api/assetUrls"
-          },
-          {
-            "path": "lib/studioReadiness.ts",
-            "symbol": "../services/studioRuntime"
-          },
-          {
-            "path": "lib/workspaceIdbMigration.ts",
-            "symbol": "../services/studio-api/workspaces"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "types",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/activeRecipeIndicator.test.ts",
-            "symbol": "../types"
-          },
-          {
-            "path": "lib/activeRecipeIndicator.ts",
-            "symbol": "../types"
-          },
-          {
-            "path": "lib/browserPersistenceBudget.ts",
-            "symbol": "../types"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib",
-      "to": "utils",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/buildStudioHeaderToolbarProps.ts",
-            "symbol": "../utils/transitionUtils"
-          },
-          {
-            "path": "lib/composerProviderProjection.ts",
-            "symbol": "../utils/imageGenSizing"
-          },
-          {
-            "path": "lib/grokImagineUiPolicy.ts",
-            "symbol": "../utils/imageGenSizing"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib-recipecontextbuilders",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/recipeContextBuilders/index.test.ts",
-            "symbol": "vite-plus/test"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib-recipecontextbuilders",
-      "to": "lib",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/recipeContextBuilders/character.ts",
-            "symbol": "../recipePromptFragments"
-          },
-          {
-            "path": "lib/recipeContextBuilders/cinematic.ts",
-            "symbol": "../recipePromptFragments"
-          },
-          {
-            "path": "lib/recipeContextBuilders/spritesheet.ts",
-            "symbol": "../recipePromptFragments"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib-recipecontextbuilders",
-      "to": "packages-shared",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/recipeContextBuilders/animationSequence.ts",
-            "symbol": "../../packages/shared/src/animationSequenceContracts"
-          },
-          {
-            "path": "lib/recipeContextBuilders/spriteAtlas.ts",
-            "symbol": "../../packages/shared/src/spriteAtlasContracts"
-          }
-        ]
-      }
-    },
-    {
-      "from": "lib-recipecontextbuilders",
-      "to": "types",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "lib/recipeContextBuilders/shared.ts",
-            "symbol": "../../types"
-          }
-        ]
-      }
-    },
-    {
-      "from": "other-modules",
-      "to": "app",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "main.tsx",
-            "symbol": "./App"
-          }
-        ]
-      }
-    },
-    {
-      "from": "other-modules",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "electron/main.cjs",
-            "symbol": "electron"
-          },
-          {
-            "path": "electron/preload.cjs",
-            "symbol": "electron"
-          },
-          {
-            "path": "main.tsx",
-            "symbol": "react-dom/client"
-          }
-        ]
-      }
-    },
-    {
-      "from": "packages-shared",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "packages/shared/src/animationSequenceContracts.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "packages/shared/src/generationContracts.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "packages/shared/src/grokImagineContract.test.ts",
-            "symbol": "vite-plus/test"
-          }
-        ]
-      }
-    },
-    {
-      "from": "repository",
-      "to": "apps-local-server",
+      "from": "job-client",
+      "to": "job-routes",
       "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "package.json",
-            "symbol": "apps/local-server/src/index.ts"
+            "path": "services/studio-api/jobs.ts",
+            "symbol": "/api/jobs"
           }
         ]
       }
     },
     {
-      "from": "repository",
-      "to": "contexts",
+      "from": "job-intake",
+      "to": "jobs-db",
+      "type": "writes",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "apps/local-server/src/persistentJobIntake.ts",
+            "symbol": "const job = createJob("
+          }
+        ]
+      }
+    },
+    {
+      "from": "job-intake",
+      "to": "runtime-settings",
       "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "package.json",
-            "symbol": "contexts/RuntimeLogContext.subscription.test.ts"
+            "path": "apps/local-server/src/persistentJobIntake.ts",
+            "symbol": "resolveProviderExecutionBlocker"
           }
         ]
       }
     },
     {
-      "from": "repository",
-      "to": "hooks",
+      "from": "job-intake",
+      "to": "worker",
       "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "package.json",
-            "symbol": "hooks/useStudioShell.composition.test.ts"
-          },
-          {
-            "path": "package.json",
-            "symbol": "hooks/useStudioReset.test.ts"
+            "path": "apps/local-server/src/persistentJobIntake.ts",
+            "symbol": "enqueueJob(queuedJob)"
           }
         ]
       }
     },
     {
-      "from": "repository",
-      "to": "scripts",
+      "from": "job-observer",
+      "to": "event-routes",
+      "type": "subscribes",
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "services/studioEventSource.ts",
+            "symbol": "/api/events"
+          }
+        ]
+      }
+    },
+    {
+      "from": "job-observer",
+      "to": "job-client",
       "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "package.json",
-            "symbol": "scripts/dev.ts"
-          },
-          {
-            "path": "package.json",
-            "symbol": "scripts/dev-electron.ts"
-          },
-          {
-            "path": "package.json",
-            "symbol": "scripts/studio-init.ts"
+            "path": "services/studioEventSource.ts",
+            "symbol": "./studio-api/jobs"
           }
         ]
       }
     },
     {
-      "from": "scripts",
-      "to": "apps-local-server",
-      "type": "imports",
+      "from": "job-routes",
+      "to": "job-intake",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/build-character-lab-icon-assets.ts",
-            "symbol": "../apps/local-server/src/sharpAuthoringAdapter"
-          },
-          {
-            "path": "scripts/build-character-lab-option-icon-assets.ts",
-            "symbol": "../apps/local-server/src/sharpAuthoringAdapter"
-          },
-          {
-            "path": "scripts/embed-metadata-bulk.ts",
-            "symbol": "../apps/local-server/src/init"
+            "path": "apps/local-server/src/jobRoutes.ts",
+            "symbol": "persistentJobIntake.createJob"
           }
         ]
       }
     },
     {
-      "from": "scripts",
-      "to": "components",
-      "type": "imports",
+      "from": "job-routes",
+      "to": "jobs-db",
+      "type": "reads",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/audit-style-preset-dna-completeness.test.ts",
-            "symbol": "../components/recipes/styles/manifestTypes"
-          },
-          {
-            "path": "scripts/audit-style-preset-dna-completeness.ts",
-            "symbol": "../components/recipes/styles/manifestTypes"
-          },
-          {
-            "path": "scripts/audit-style-preset-scene-lock.test.ts",
-            "symbol": "../components/recipes/styles/manifestTypes"
+            "path": "apps/local-server/src/jobRoutes.ts",
+            "symbol": "getJob(jobId)"
           }
         ]
       }
     },
     {
-      "from": "scripts",
-      "to": "constants",
+      "from": "job-routes",
+      "to": "shared",
       "type": "imports",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/evaluate-recipe-prompts.ts",
-            "symbol": "../constants"
-          },
-          {
-            "path": "scripts/provider-input-audit.ts",
-            "symbol": "../constants"
+            "path": "apps/local-server/src/jobRoutes.ts",
+            "symbol": "packages/shared/src/types"
           }
         ]
       }
     },
     {
-      "from": "scripts",
-      "to": "external-dependencies",
-      "type": "imports",
+      "from": "job-routes",
+      "to": "worker",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/audit-repo-assets.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "scripts/audit-style-preset-dna-completeness.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "scripts/audit-style-preset-quality.ts",
-            "symbol": "js-yaml"
+            "path": "apps/local-server/src/jobRoutes.ts",
+            "symbol": "cancelQueuedOrRunningJob(jobId)"
           }
         ]
       }
     },
     {
-      "from": "scripts",
-      "to": "lib",
-      "type": "imports",
+      "from": "style-client",
+      "to": "style-routes",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/evaluate-recipe-prompts-live.test.ts",
-            "symbol": "../lib/recipeModules"
-          },
-          {
-            "path": "scripts/evaluate-recipe-prompts-live.ts",
-            "symbol": "../lib/recipeModules"
-          },
-          {
-            "path": "scripts/evaluate-recipe-prompts.ts",
-            "symbol": "../lib/recipeModules"
+            "path": "services/studio-api/userStyles.ts",
+            "symbol": "/api/styles/user"
           }
         ]
       }
     },
     {
-      "from": "scripts",
-      "to": "packages-shared",
-      "type": "imports",
+      "from": "style-editor",
+      "to": "style-client",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/audit-provider-inputs.ts",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "scripts/evaluate-recipe-prompts-live.test.ts",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "scripts/evaluate-recipe-prompts-live.ts",
-            "symbol": "../packages/shared/src"
+            "path": "components/recipes/UserStyleEditorSurface.tsx",
+            "symbol": "createUserStylePreset"
           }
         ]
       }
     },
     {
-      "from": "scripts",
-      "to": "types",
-      "type": "imports",
+      "from": "styles",
+      "to": "style-client",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/catalog-first-source-audit.test.ts",
-            "symbol": "../types"
+            "path": "components/recipes/StylesBrowser.tsx",
+            "symbol": "listUserStylePresets"
           }
         ]
       }
     },
     {
-      "from": "scripts-style-migration",
-      "to": "components",
-      "type": "imports",
+      "from": "styles",
+      "to": "style-editor",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/style-migration/enrich-pack-01-photo-dna.ts",
-            "symbol": "../../components/recipes/styles/manifestTypes"
-          },
-          {
-            "path": "scripts/style-migration/enrich-pack-02-media-dna.ts",
-            "symbol": "../../components/recipes/styles/manifestTypes"
-          },
-          {
-            "path": "scripts/style-migration/enrich-pack-03-cgi-dna.ts",
-            "symbol": "../../components/recipes/styles/manifestTypes"
+            "path": "components/recipes/StylesBrowser.tsx",
+            "symbol": "<UserStyleEditorSurface"
           }
         ]
       }
     },
     {
-      "from": "scripts-style-migration",
-      "to": "external-dependencies",
-      "type": "imports",
+      "from": "worker",
+      "to": "asset-finalizer",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "scripts/style-migration/enrich-pack-01-photo-dna.ts",
-            "symbol": "js-yaml"
-          },
-          {
-            "path": "scripts/style-migration/enrich-pack-02-media-dna.ts",
-            "symbol": "js-yaml"
-          },
-          {
-            "path": "scripts/style-migration/enrich-pack-03-cgi-dna.ts",
-            "symbol": "js-yaml"
+            "path": "apps/local-server/src/worker.ts",
+            "symbol": "assetFinalizer.finalizeJobAsset"
           }
         ]
       }
     },
     {
-      "from": "services",
-      "to": "constants",
-      "type": "imports",
+      "from": "worker",
+      "to": "event-bus",
+      "type": "publishes",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "services/localGenerationRun.stream.test.ts",
-            "symbol": "../constants"
-          },
-          {
-            "path": "services/localGenerationRun.test.ts",
-            "symbol": "../constants"
+            "path": "apps/local-server/src/worker.ts",
+            "symbol": "publishEventFn"
           }
         ]
       }
     },
     {
-      "from": "services",
-      "to": "external-dependencies",
-      "type": "imports",
+      "from": "worker",
+      "to": "jobs-db",
+      "type": "writes",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "services/animationSequenceRunCoordinator.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "services/localGenerationRun.stream.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "services/localGenerationRun.test.ts",
-            "symbol": "vite-plus/test"
+            "path": "apps/local-server/src/worker.ts",
+            "symbol": "updateJobStatusFn"
           }
         ]
       }
     },
     {
-      "from": "services",
-      "to": "lib",
-      "type": "imports",
+      "from": "worker",
+      "to": "providers",
+      "type": "calls",
       "evidence": {
         "status": "verified",
         "locations": [
           {
-            "path": "services/localGenerationRun.ts",
-            "symbol": "../lib/generationVariation"
-          },
-          {
-            "path": "services/localGenerationRun.ts",
-            "symbol": "../lib/recipeContext"
-          },
-          {
-            "path": "services/localGenerationRun.ts",
-            "symbol": "../lib/studioCatalogImageAdapter"
-          }
-        ]
-      }
-    },
-    {
-      "from": "services",
-      "to": "packages-shared",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "services/animationSequenceRunCoordinator.test.ts",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "services/animationSequenceRunCoordinator.ts",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "services/localGenerationRun.ts",
-            "symbol": "../packages/shared/src"
-          }
-        ]
-      }
-    },
-    {
-      "from": "services",
-      "to": "types",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "services/localGenerationRun.test.ts",
-            "symbol": "../types"
-          },
-          {
-            "path": "services/localGenerationRun.ts",
-            "symbol": "../types"
-          }
-        ]
-      }
-    },
-    {
-      "from": "services",
-      "to": "utils",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "services/localGenerationRun.ts",
-            "symbol": "../utils/imageUtils"
-          }
-        ]
-      }
-    },
-    {
-      "from": "skills-imagegen-scripts-image-gen",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "skills/imagegen/scripts/image_gen.py",
-            "symbol": "__future__"
-          },
-          {
-            "path": "skills/imagegen/scripts/image_gen.py",
-            "symbol": "pathlib"
-          },
-          {
-            "path": "skills/imagegen/scripts/image_gen.py",
-            "symbol": "typing"
-          }
-        ]
-      }
-    },
-    {
-      "from": "skills-imagegen-scripts-remove-chroma-key",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "skills/imagegen/scripts/remove_chroma_key.py",
-            "symbol": "__future__"
-          },
-          {
-            "path": "skills/imagegen/scripts/remove_chroma_key.py",
-            "symbol": "io"
-          },
-          {
-            "path": "skills/imagegen/scripts/remove_chroma_key.py",
-            "symbol": "pathlib"
-          }
-        ]
-      }
-    },
-    {
-      "from": "types",
-      "to": "constants",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "types.ts",
-            "symbol": "./constants"
-          }
-        ]
-      }
-    },
-    {
-      "from": "types",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "types.ts",
-            "symbol": "react"
-          }
-        ]
-      }
-    },
-    {
-      "from": "types",
-      "to": "packages-shared",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "types.ts",
-            "symbol": "./packages/shared/src"
-          }
-        ]
-      }
-    },
-    {
-      "from": "utils",
-      "to": "constants",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "utils/catalogImageGenerationConfig.test.ts",
-            "symbol": "../constants"
-          },
-          {
-            "path": "utils/catalogImageGenerationConfig.ts",
-            "symbol": "../constants"
-          }
-        ]
-      }
-    },
-    {
-      "from": "utils",
-      "to": "external-dependencies",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "utils/catalogImageGenerationConfig.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "utils/fileUtils.test.ts",
-            "symbol": "vite-plus/test"
-          },
-          {
-            "path": "utils/fileUtils.ts",
-            "symbol": "jszip"
-          }
-        ]
-      }
-    },
-    {
-      "from": "utils",
-      "to": "lib",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "utils/recipeUtils.ts",
-            "symbol": "../lib/recipeShellMetadata"
-          }
-        ]
-      }
-    },
-    {
-      "from": "utils",
-      "to": "packages-shared",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "utils/catalogImageGenerationConfig.test.ts",
-            "symbol": "../packages/shared/src"
-          },
-          {
-            "path": "utils/catalogImageGenerationConfig.ts",
-            "symbol": "../packages/shared/src/types"
-          },
-          {
-            "path": "utils/catalogImageGenerationConfig.ts",
-            "symbol": "../packages/shared/src/promptTransport"
-          }
-        ]
-      }
-    },
-    {
-      "from": "utils",
-      "to": "types",
-      "type": "imports",
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "utils/catalogImageGenerationConfig.ts",
-            "symbol": "../types"
-          },
-          {
-            "path": "utils/fileUtils.ts",
-            "symbol": "../types"
-          },
-          {
-            "path": "utils/imageGenSizing.ts",
-            "symbol": "../types"
+            "path": "apps/local-server/src/worker.ts",
+            "symbol": "createExternalGenerationProvider"
           }
         ]
       }
     }
   ],
-  "flows": []
+  "flows": [
+    {
+      "id": "generation",
+      "trigger": "User starts generation",
+      "steps": [
+        "generation-ui",
+        "generation-run",
+        "job-client",
+        "job-routes",
+        "job-intake",
+        "worker",
+        "providers"
+      ],
+      "outcome": "Validated persistent job reaches its provider adapter"
+    },
+    {
+      "id": "reconciliation",
+      "trigger": "Observer attaches or recovers its connection",
+      "steps": ["generation-run", "job-observer", "job-client", "job-routes", "jobs-db"],
+      "outcome": "Observer reads durable job truth independently of event delivery"
+    },
+    {
+      "id": "event-delivery",
+      "trigger": "Browser opens a revisioned event stream",
+      "steps": ["job-observer", "event-routes", "event-bus"],
+      "outcome": "Subscription receives worker and catalog updates"
+    },
+    {
+      "id": "finalization-recovery",
+      "trigger": "Worker resumes a persisted finalization checkpoint",
+      "steps": ["worker", "asset-finalizer", "catalog"],
+      "outcome": "Existing asset is finalized into catalog truth"
+    },
+    {
+      "id": "user-style-edit",
+      "trigger": "User opens a style draft and saves",
+      "steps": ["styles", "style-editor", "style-client", "style-routes"],
+      "outcome": "User style changes persist through the existing API"
+    }
+  ]
 }

@@ -1,215 +1,160 @@
 # Code map · codex-studio
 
-generated: 2026-09-05T15:36:48Z
-commit: b2d635e4646e
+generated: 2026-09-05T18:16:25Z
+commit: a905a0f11142
 scope: .
 
-counts: 20 nodes · 80 edges · 0 flows · 0 unknown
+counts: 20 nodes · 25 edges · 5 flows · 0 unknown
 
 ## Modules
 
-- `app` · `App.tsx` · module · App
-  callers: other-modules (imports)
-  callees: components (imports), contexts (imports), external-dependencies (imports)
+- `app` · `App.tsx` · interface · Application providers and routes
+  callers: (none)
+  callees: (none)
   tests: (none)
   entry: App.tsx:App
 
-- `apps-local-server` · `apps/local-server` · service · Apps
-  callers: repository (calls), scripts (imports)
-  callees: constants (imports), external-dependencies (imports), lib (imports), packages-shared (imports)
-  tests: apps/local-server/src/animationGifEncoder.test.ts, apps/local-server/src/animationSequenceRoutes.test.ts, apps/local-server/src/antigravityRuntimeDoctor.test.ts, apps/local-server/src/appFactory.test.ts, apps/local-server/src/assetLogRoutes.test.ts
-  entry: apps/local-server/src/index.ts:studio
+- `asset-finalizer` · `apps/local-server/src/workerAssetFinalizer.ts` · service · Resumable asset and catalog finalization
+  callers: worker (calls)
+  callees: catalog (writes), event-bus (publishes), jobs-db (writes)
+  tests: apps/local-server/src/workerAssetFinalizer.test.ts
+  entry: apps/local-server/src/workerAssetFinalizer.ts:createWorkerAssetFinalizer
 
-- `components` · `components` · interface · Components
-  callers: app (imports), hooks (imports), lib (imports), scripts (imports), scripts-style-migration (imports)
-  callees: constants (imports), contexts (imports), external-dependencies (imports), hooks (imports), lib (imports), packages-shared (imports), services (imports), types (imports), utils (imports)
-  tests: components/ToolbarLiveStatus.test.tsx, components/header/QueueProgressBar.test.ts, components/overlays/StudioSystemOverlays.test.tsx, components/recipes/AnimationSequenceRecipe.test.tsx, components/recipes/SpritesheetRecipe.test.tsx
-  entry: components/recipes/styles/collections/index.ts:export * from './styleCollectionDefinitions';
+- `catalog` · `apps/local-server/src/catalog.ts` · database · Library catalog truth
+  callers: asset-finalizer (writes)
+  callees: (none)
+  tests: apps/local-server/src/catalog.test.ts, apps/local-server/src/catalogCommands.test.ts, apps/local-server/src/catalogRoutes.test.ts
+  entry: apps/local-server/src/catalog.ts:registerCatalogImage
 
-- `constants` · `constants.ts` · module · Constants
-  callers: apps-local-server (imports), components (imports), contexts (imports), hooks (imports), lib (imports), scripts (imports), services (imports), types (imports), utils (imports)
-  callees: types (imports)
-  tests: apps/local-server/src/providers/grokImagineInput.test.ts, components/recipes/AnimationSequenceRecipe.test.tsx, components/recipes/SpritesheetRecipe.test.tsx, contexts/GenerationIsolation.runtime.test.tsx, hooks/useGenerationConfig.test.ts
-  entry: constants.ts:MODELS
+- `event-bus` · `apps/local-server/src/events.ts` · service · Revisioned job and catalog events
+  callers: asset-finalizer (publishes), event-routes (subscribes), worker (publishes)
+  callees: (none)
+  tests: apps/local-server/src/eventStreamRoutes.test.ts, apps/local-server/src/events.test.ts
+  entry: apps/local-server/src/events.ts:publishEvent
 
-- `contexts` · `contexts` · module · Contexts
-  callers: app (imports), components (imports), hooks (imports), repository (calls)
-  callees: constants (imports), external-dependencies (imports), hooks (imports), lib (imports), packages-shared (imports), services (imports), types (imports), utils (imports)
-  tests: contexts/GenerationIsolation.runtime.test.tsx, contexts/RuntimeLogIsolation.runtime.test.tsx, contexts/globalReducer.test.ts
-  entry: contexts/GenerationContext.tsx:useRequiredGenerationContext
+- `event-routes` · `apps/local-server/src/eventStreamRoutes.ts` · interface · Bounded SSE delivery and revision handshake
+  callers: job-observer (subscribes)
+  callees: event-bus (subscribes)
+  tests: apps/local-server/src/eventStreamRoutes.test.ts
+  entry: apps/local-server/src/eventStreamRoutes.ts:createEventStreamRoutes
 
-- `external-dependencies` · `App.tsx` · external · External
-  callers: app (imports), apps-local-server (imports), components (imports), contexts (imports), hooks (imports), lib (imports), lib-recipecontextbuilders (imports), other-modules (imports), packages-shared (imports), scripts (imports), scripts-style-migration (imports), services (imports), skills-imagegen-scripts-image-gen (imports), skills-imagegen-scripts-remove-chroma-key (imports), types (imports), utils (imports)
+- `generation-run` · `services/localGenerationRun.ts` · service · Persistent generation observation and catalog results
+  callers: generation-ui (calls)
+  callees: job-client (calls), job-observer (calls)
+  tests: services/localGenerationRun.stream.test.ts, services/localGenerationRun.test.ts, services/localGenerationRun.workspace.test.ts
+  entry: services/localGenerationRun.ts:runLocalGeneration
+
+- `generation-ui` · `hooks/useGenerationPipeline.ts` · interface · User generation lifecycle
+  callers: (none)
+  callees: generation-run (calls)
+  tests: hooks/useGenerationPipeline.test.ts
+  entry: hooks/useGenerationPipeline.ts:useGenerationPipeline
+
+- `job-client` · `services/studio-api/jobs.ts` · service · Browser job API
+  callers: generation-run (calls), job-observer (calls)
+  callees: job-routes (calls)
+  tests: (none)
+  entry: services/studio-api/jobs.ts:createStudioJob
+
+- `job-intake` · `apps/local-server/src/persistentJobIntake.ts` · service · Validate and persist before dispatch
+  callers: job-routes (calls)
+  callees: jobs-db (writes), runtime-settings (calls), worker (calls)
+  tests: apps/local-server/src/persistentJobIntake.test.ts
+  entry: apps/local-server/src/persistentJobIntake.ts:createPersistentJobIntake
+
+- `job-observer` · `services/studioEventSource.ts` · service · Shared event connection and job reconciliation
+  callers: generation-run (calls)
+  callees: event-routes (subscribes), job-client (calls)
+  tests: services/studioEventSource.test.ts
+  entry: services/studioEventSource.ts:watchJob
+
+- `job-routes` · `apps/local-server/src/jobRoutes.ts` · interface · Job intake, inspection and actions
+  callers: job-client (calls)
+  callees: job-intake (calls), jobs-db (reads), shared (imports), worker (calls)
+  tests: apps/local-server/src/jobRoutes.test.ts
+  entry: apps/local-server/src/jobRoutes.ts:createJobRoutes
+
+- `jobs-db` · `apps/local-server/src/db/jobs.ts` · database · Durable job states and checkpoints
+  callers: asset-finalizer (writes), job-intake (writes), job-routes (reads), worker (writes)
+  callees: (none)
+  tests: apps/local-server/src/db/jobs.test.ts
+  entry: apps/local-server/src/db/jobs.ts:updateJobStatus
+
+- `providers` · `apps/local-server/src/providers` · service · Provider execution adapters and runtime identity
+  callers: worker (calls)
+  callees: (none)
+  tests: apps/local-server/src/providers/comfyExecutor.test.ts, apps/local-server/src/providers/codexProvider.test.ts, apps/local-server/src/providers/externalProvider.test.ts
+  entry: apps/local-server/src/providers/externalProvider.ts:createExternalGenerationProvider, apps/local-server/src/providers/comfyExecutor.ts:createComfyWorkflowExecutor, apps/local-server/src/providers/codexProvider.ts:createCodexGenerationProvider
+
+- `runtime-settings` · `apps/local-server/src/providers/runtimeConfig.ts` · service · Provider readiness and configuration
+  callers: job-intake (calls)
+  callees: (none)
+  tests: apps/local-server/src/providers/runtimeConfig.test.ts
+  entry: apps/local-server/src/providers/runtimeConfig.ts:getExternalProviderRuntimePreflight
+
+- `shared` · `packages/shared/src` · module · Provider-independent domain and API contracts
+  callers: job-routes (imports)
   callees: (none)
   tests: (none)
-  entry: App.tsx:react
+  entry: packages/shared/src/types.ts:JobStatus
 
-- `hooks` · `hooks` · module · Hooks
-  callers: components (imports), contexts (imports), lib (imports), repository (calls)
-  callees: components (imports), constants (imports), contexts (imports), external-dependencies (imports), lib (imports), packages-shared (imports), services (imports), types (imports), utils (imports)
-  tests: hooks/catalogEventRefreshPolicy.test.ts, hooks/catalogMutationReconciliationPolicy.test.ts, hooks/localStudioSyncProjection.test.ts, hooks/localStudioSyncRefreshPolicy.test.ts, hooks/studioDiagnosticsRefreshPolicy.test.ts
-  entry: hooks/catalogEventRefreshPolicy.ts:mergeCatalogRefreshScopes
+- `style-client` · `services/studio-api/userStyles.ts` · service · User style API
+  callers: style-editor (calls), styles (calls)
+  callees: style-routes (calls)
+  tests: (none)
+  entry: services/studio-api/userStyles.ts:createUserStylePreset
 
-- `lib` · `lib` · module · Lib
-  callers: apps-local-server (imports), components (imports), contexts (imports), hooks (imports), lib-recipecontextbuilders (imports), scripts (imports), services (imports), utils (imports)
-  callees: components (imports), constants (imports), external-dependencies (imports), hooks (imports), lib-recipecontextbuilders (imports), lib-stylethumbnailpacks-generated (imports), packages-shared (imports), services (imports), types (imports), utils (imports)
-  tests: apps/local-server/src/hostTerminal.test.ts, apps/local-server/src/providers/grokImagineInput.test.ts, components/QueuePanel.test.ts, components/StudioSettingsModal.test.ts, hooks/useStudioGallery.test.ts
-  entry: lib/activeRecipeIndicator.ts:getActiveRecipeIndicator
+- `style-editor` · `components/recipes/UserStyleEditorSurface.tsx` · interface · User style draft and save session
+  callers: styles (calls)
+  callees: style-client (calls)
+  tests: (none)
+  entry: components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface
 
-- `lib-recipecontextbuilders` · `lib/recipeContextBuilders` · interface · Lib
-  callers: lib (imports)
-  callees: external-dependencies (imports), lib (imports), packages-shared (imports), types (imports)
-  tests: lib/recipeContextBuilders/index.test.ts
-  entry: lib/recipeContextBuilders/index.ts:RECIPE_CONTEXT_BUILDERS
-
-- `lib-stylethumbnailpacks-generated` · `lib/styleThumbnailPacks.generated` · module · Lib
-  callers: lib (imports)
+- `style-routes` · `apps/local-server/src/userStyleRoutes.ts` · interface · Persistent user style CRUD
+  callers: style-client (calls)
   callees: (none)
-  tests: (none)
-  entry: lib/styleThumbnailPacks.generated/index.ts:loadGeneratedStyleThumbnailPack
+  tests: apps/local-server/src/userStyleRoutes.test.ts
+  entry: apps/local-server/src/userStyleRoutes.ts:createUserStyleRoutes
 
-- `other-modules` · `main.tsx` · module · Other Modules
+- `styles` · `components/recipes/StylesBrowser.tsx` · interface · Style browsing and selected composition
   callers: (none)
-  callees: app (imports), external-dependencies (imports)
+  callees: style-client (calls), style-editor (calls)
   tests: (none)
-  entry: main.tsx:rootElement
+  entry: components/recipes/StylesBrowser.tsx:StylesBrowser
 
-- `packages-shared` · `packages/shared` · module · Packages
-  callers: apps-local-server (imports), components (imports), contexts (imports), hooks (imports), lib (imports), lib-recipecontextbuilders (imports), scripts (imports), services (imports), types (imports), utils (imports)
-  callees: external-dependencies (imports)
-  tests: apps/local-server/src/animationSequenceRoutes.test.ts, apps/local-server/src/appFactory.test.ts, apps/local-server/src/assetLogRoutes.test.ts, apps/local-server/src/catalogCommands.test.ts, apps/local-server/src/catalogRoutes.test.ts
-  entry: packages/shared/src/index.ts:export * from './types';
-
-- `repository` · `package.json` · module · Repository
-  callers: (none)
-  callees: apps-local-server (calls), contexts (calls), hooks (calls), scripts (calls)
-  tests: (none)
-  entry: package.json:{
-
-- `scripts` · `scripts` · service · Scripts
-  callers: repository (calls)
-  callees: apps-local-server (imports), components (imports), constants (imports), external-dependencies (imports), lib (imports), packages-shared (imports), types (imports)
-  tests: scripts/audit-style-preset-dna-completeness.test.ts, scripts/audit-style-preset-scene-lock.test.ts, scripts/catalog-first-source-audit.test.ts, scripts/check-docs.test.ts, scripts/devPortFinder.test.ts
-  entry: scripts/audit-provider-inputs.ts:argValue
-
-- `scripts-style-migration` · `scripts/style-migration` · database · Scripts
-  callers: (none)
-  callees: components (imports), external-dependencies (imports)
-  tests: (none)
-  entry: scripts/style-migration/enrich-pack-01-photo-dna.ts:argValue
-
-- `services` · `services` · service · Services
-  callers: components (imports), contexts (imports), hooks (imports), lib (imports)
-  callees: constants (imports), external-dependencies (imports), lib (imports), packages-shared (imports), types (imports), utils (imports)
-  tests: components/settings/SubscriptionAuthControls.test.tsx, services/animationSequenceRunCoordinator.test.ts, services/localGenerationRun.stream.test.ts, services/localGenerationRun.test.ts, services/localGenerationRuntimeAdapters.test.ts
-  entry: services/animationSequenceRunCoordinator.ts:createAnimationSequenceRunCoordinator
-
-- `skills-imagegen-scripts-image-gen` · `skills/imagegen/scripts/image_gen.py` · service · Skills
-  callers: (none)
-  callees: external-dependencies (imports)
-  tests: (none)
-  entry: skills/imagegen/scripts/image_gen.py:_NullContext
-
-- `skills-imagegen-scripts-remove-chroma-key` · `skills/imagegen/scripts/remove_chroma_key.py` · service · Skills
-  callers: (none)
-  callees: external-dependencies (imports)
-  tests: (none)
-  entry: skills/imagegen/scripts/remove_chroma_key.py:_die
-
-- `types` · `types.ts` · module · Types
-  callers: components (imports), constants (imports), contexts (imports), hooks (imports), lib (imports), lib-recipecontextbuilders (imports), scripts (imports), services (imports), utils (imports)
-  callees: constants (imports), external-dependencies (imports), packages-shared (imports)
-  tests: contexts/GenerationIsolation.runtime.test.tsx, hooks/useWorkspaceStrip.test.ts, lib/activeRecipeIndicator.test.ts, lib/imageGridPresentation.test.ts, lib/recipeIdentity.test.ts
-  entry: types.ts:Attachment
-
-- `utils` · `utils` · module · Utils
-  callers: components (imports), contexts (imports), hooks (imports), lib (imports), services (imports)
-  callees: constants (imports), external-dependencies (imports), lib (imports), packages-shared (imports), types (imports)
-  tests: utils/catalogImageGenerationConfig.test.ts, utils/fileUtils.test.ts, utils/imageGenSizing.test.ts
-  entry: utils/catalogImageGenerationConfig.ts:isRecordLike
+- `worker` · `apps/local-server/src/worker.ts` · queue · Execution, cancellation and recovery ownership
+  callers: job-intake (calls), job-routes (calls)
+  callees: asset-finalizer (calls), event-bus (publishes), jobs-db (writes), providers (calls)
+  tests: apps/local-server/src/workerShutdown.test.ts, apps/local-server/src/workerAssetFinalizer.test.ts, apps/local-server/src/workerRouting.test.ts
+  entry: apps/local-server/src/worker.ts:createWorkerController
 
 ## Edges
 
-- app -> components · imports
-- app -> contexts · imports
-- app -> external-dependencies · imports
-- apps-local-server -> constants · imports
-- apps-local-server -> external-dependencies · imports
-- apps-local-server -> lib · imports
-- apps-local-server -> packages-shared · imports
-- components -> constants · imports
-- components -> contexts · imports
-- components -> external-dependencies · imports
-- components -> hooks · imports
-- components -> lib · imports
-- components -> packages-shared · imports
-- components -> services · imports
-- components -> types · imports
-- components -> utils · imports
-- constants -> types · imports
-- contexts -> constants · imports
-- contexts -> external-dependencies · imports
-- contexts -> hooks · imports
-- contexts -> lib · imports
-- contexts -> packages-shared · imports
-- contexts -> services · imports
-- contexts -> types · imports
-- contexts -> utils · imports
-- hooks -> components · imports
-- hooks -> constants · imports
-- hooks -> contexts · imports
-- hooks -> external-dependencies · imports
-- hooks -> lib · imports
-- hooks -> packages-shared · imports
-- hooks -> services · imports
-- hooks -> types · imports
-- hooks -> utils · imports
-- lib -> components · imports
-- lib -> constants · imports
-- lib -> external-dependencies · imports
-- lib -> hooks · imports
-- lib -> lib-recipecontextbuilders · imports
-- lib -> lib-stylethumbnailpacks-generated · imports
-- lib -> packages-shared · imports
-- lib -> services · imports
-- lib -> types · imports
-- lib -> utils · imports
-- lib-recipecontextbuilders -> external-dependencies · imports
-- lib-recipecontextbuilders -> lib · imports
-- lib-recipecontextbuilders -> packages-shared · imports
-- lib-recipecontextbuilders -> types · imports
-- other-modules -> app · imports
-- other-modules -> external-dependencies · imports
-- packages-shared -> external-dependencies · imports
-- repository -> apps-local-server · calls
-- repository -> contexts · calls
-- repository -> hooks · calls
-- repository -> scripts · calls
-- scripts -> apps-local-server · imports
-- scripts -> components · imports
-- scripts -> constants · imports
-- scripts -> external-dependencies · imports
-- scripts -> lib · imports
-- scripts -> packages-shared · imports
-- scripts -> types · imports
-- scripts-style-migration -> components · imports
-- scripts-style-migration -> external-dependencies · imports
-- services -> constants · imports
-- services -> external-dependencies · imports
-- services -> lib · imports
-- services -> packages-shared · imports
-- services -> types · imports
-- services -> utils · imports
-- skills-imagegen-scripts-image-gen -> external-dependencies · imports
-- skills-imagegen-scripts-remove-chroma-key -> external-dependencies · imports
-- types -> constants · imports
-- types -> external-dependencies · imports
-- types -> packages-shared · imports
-- utils -> constants · imports
-- utils -> external-dependencies · imports
-- utils -> lib · imports
-- utils -> packages-shared · imports
-- utils -> types · imports
+- asset-finalizer -> catalog · writes
+- asset-finalizer -> event-bus · publishes
+- asset-finalizer -> jobs-db · writes
+- event-routes -> event-bus · subscribes
+- generation-run -> job-client · calls
+- generation-run -> job-observer · calls
+- generation-ui -> generation-run · calls
+- job-client -> job-routes · calls
+- job-intake -> jobs-db · writes
+- job-intake -> runtime-settings · calls
+- job-intake -> worker · calls
+- job-observer -> event-routes · subscribes
+- job-observer -> job-client · calls
+- job-routes -> job-intake · calls
+- job-routes -> jobs-db · reads
+- job-routes -> shared · imports
+- job-routes -> worker · calls
+- style-client -> style-routes · calls
+- style-editor -> style-client · calls
+- styles -> style-client · calls
+- styles -> style-editor · calls
+- worker -> asset-finalizer · calls
+- worker -> event-bus · publishes
+- worker -> jobs-db · writes
+- worker -> providers · calls
 
 ## Unknown
 
@@ -217,4 +162,18 @@ counts: 20 nodes · 80 edges · 0 flows · 0 unknown
 
 ## Flows
 
-- none
+- User starts generation
+  generation-ui -> generation-run -> job-client -> job-routes -> job-intake -> worker -> providers
+  Validated persistent job reaches its provider adapter
+- Observer attaches or recovers its connection
+  generation-run -> job-observer -> job-client -> job-routes -> jobs-db
+  Observer reads durable job truth independently of event delivery
+- Browser opens a revisioned event stream
+  job-observer -> event-routes -> event-bus
+  Subscription receives worker and catalog updates
+- Worker resumes a persisted finalization checkpoint
+  worker -> asset-finalizer -> catalog
+  Existing asset is finalized into catalog truth
+- User opens a style draft and saves
+  styles -> style-editor -> style-client -> style-routes
+  User style changes persist through the existing API

@@ -15,7 +15,7 @@ import {
 
 import { getActiveRecipeIndicator } from '../lib/activeRecipeIndicator';
 import { summarizePersistentJobs } from '../lib/persistentJobSummary';
-import { canRetryStudioJob } from '../lib/studioJobRetry';
+import { canRetryStudioJob, canResumeStudioJob } from '../lib/studioJobRetry';
 import type { StudioQueueResultPreview } from '../lib/studioQueueResults';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import { cn } from '../lib/utils';
@@ -364,7 +364,8 @@ const ServerJobItem: React.FC<{
   onCancel: () => void;
 }> = ({ job, previewSrc, nowMs, isSelected, onInspect, onRetry, onCancel }) => {
   const canCancel = job.status === 'queued' || job.status === 'running';
-  const canRetry = Boolean(onRetry) && canRetryStudioJob(job.status);
+  const canResume = canResumeStudioJob(job);
+  const canRetry = Boolean(onRetry) && (canRetryStudioJob(job.status) || canResume);
   const statusColor = getServerStatusColor(job.status);
   const recipeTone = resolveQueueRecipeTone(job.recipeId, job.kind);
   const createdAtMs = toEpochMs(job.createdAt);
@@ -481,10 +482,10 @@ const ServerJobItem: React.FC<{
         {canRetry ? (
           <button
             type="button"
-            aria-label={`Retry backend job ${job.id}`}
+            aria-label={`${canResume ? 'Resume' : 'Retry'} backend job ${job.id}`}
             onClick={onRetry}
             className="studio-hit-target rounded-[6px] p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
-            title="Retry backend job"
+            title={canResume ? 'Resume existing remote job' : 'Retry backend job'}
           >
             <RotateCcw size={13} />
           </button>

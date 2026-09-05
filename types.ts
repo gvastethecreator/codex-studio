@@ -79,6 +79,7 @@ export interface GeneratedImageWithConfig extends GeneratedImage {
 export type GenerationExecutionOutcome =
   | { status: 'completed' }
   | { status: 'cancelled'; message?: string }
+  | { status: 'needs_review' | 'disconnected'; message: string }
   | { status: 'failed'; message: string };
 
 export interface Workspace {

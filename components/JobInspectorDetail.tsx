@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { canRetryStudioJob, canResumeStudioJob } from '../lib/studioJobRetry';
 import {
   IconActivity as Activity,
   IconAlertCircle as AlertCircle,
@@ -144,11 +145,12 @@ function JobStatusBanner({
             <Eye size={18} className="mt-0.5 shrink-0 text-amber-400" />
             <div className="min-w-0 space-y-3">
               <div>
-                <h3 className="text-sm font-semibold text-amber-200">No image was generated</h3>
+                <h3 className="text-sm font-semibold text-amber-200">Review the provider result</h3>
                 <p className="mt-2 text-[13px] leading-6 text-amber-100/70">
-                  Codex completed this turn but did not return a usable image file. Review the
-                  timeline below to see the final assistant reply and any provider events before
-                  retrying with an adjusted prompt or the same settings.
+                  {error || 'The provider did not return a confirmed, usable image result.'} Check
+                  the activity timeline and the provider runtime for this job. Retry and
+                  cancellation stay unavailable until its result is reconciled. When a remote ID is
+                  available, Resume job checks that existing execution and imports its output.
                 </p>
               </div>
 
@@ -636,14 +638,15 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </div>
 
           <div className="flex shrink-0 flex-wrap items-center gap-2">
-            {onRetryJob ? (
+            {onRetryJob &&
+            (canRetryStudioJob(detail.job.status) || canResumeStudioJob(detail.job)) ? (
               <button
                 type="button"
                 onClick={() => onRetryJob(detail.job.id)}
                 className="inline-flex items-center justify-center gap-2 rounded-2xl border border-accent-500/2 bg-black/25 px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-accent-100 transition-colors hover:border-accent-400/2 hover:bg-black/35 hover:text-white cursor-pointer"
               >
                 <RotateCcw size={14} />
-                <span>Retry job</span>
+                <span>{canResumeStudioJob(detail.job) ? 'Resume job' : 'Retry job'}</span>
               </button>
             ) : null}
             <button

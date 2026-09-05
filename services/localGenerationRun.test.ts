@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
+import { JobNeedsReviewError, JobObservationError } from './studioEventSource';
 import type { ImageGenerationConfig } from '../types';
 import {
   buildLocalGenerationFailureOutcome,
@@ -15,6 +16,20 @@ import {
 } from './localGenerationRun';
 
 describe('localGenerationRun', () => {
+  it('keeps uncertain execution and lost observation distinct from generation failure', () => {
+    expect(
+      buildLocalGenerationFailureOutcome({
+        error: new JobNeedsReviewError('job-1'),
+        durationMs: 12,
+      }),
+    ).toMatchObject({ status: 'needs_review', reason: 'needs_review' });
+    expect(
+      buildLocalGenerationFailureOutcome({
+        error: new JobObservationError('job-1'),
+        durationMs: 12,
+      }),
+    ).toMatchObject({ status: 'disconnected', reason: 'disconnected' });
+  });
   it('uses app-server-safe local generation identifiers', () => {
     const batchId = createLocalRunBatchId(
       () => 1234,

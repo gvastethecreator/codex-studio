@@ -17,7 +17,13 @@ import { cancelStudioJob, createStudioJob } from './studio-api/jobs';
 import { getEditableStudioSettings } from './studio-api/settings';
 import { queryCatalog } from './studio-api/catalog';
 import { resolveStudioApiBase } from './studioRuntime';
-import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
+import {
+  createStudioEventStream,
+  type StudioEventStream,
+  watchJob,
+  JobNeedsReviewError,
+  JobObservationError,
+} from './studioEventSource';
 import {
   isGenerationCancellationError,
   throwIfGenerationAborted,
@@ -52,13 +58,24 @@ export type LocalGenerationLifecycleOutcome =
       durationMs: number;
     }
   | {
+      status: 'needs_review' | 'disconnected';
+      reason: 'needs_review' | 'disconnected';
+      message: string;
+      durationMs: number;
+    }
+  | {
       status: 'failed';
       reason: 'timeout' | 'failed';
       message: string;
       durationMs: number;
     };
 
-export type LocalGenerationFailureReason = 'cancelled' | 'timeout' | 'failed';
+export type LocalGenerationFailureReason =
+  | 'cancelled'
+  | 'timeout'
+  | 'failed'
+  | 'needs_review'
+  | 'disconnected';
 
 export interface LocalGenerationRunResult {
   batchId: string;
@@ -70,6 +87,8 @@ export interface LocalGenerationRunResult {
 }
 
 export function classifyLocalGenerationFailureReason(error: unknown): LocalGenerationFailureReason {
+  if (error instanceof JobNeedsReviewError) return 'needs_review';
+  if (error instanceof JobObservationError) return 'disconnected';
   if (isGenerationCancellationError(error)) {
     return 'cancelled';
   }
@@ -84,9 +103,13 @@ export function buildLocalGenerationFailureOutcome({
 }: {
   error: unknown;
   durationMs: number;
-}): Extract<LocalGenerationLifecycleOutcome, { status: 'cancelled' | 'failed' }> {
+}): Exclude<LocalGenerationLifecycleOutcome, { status: 'completed' }> {
   const reason = classifyLocalGenerationFailureReason(error);
   const message = error instanceof Error ? error.message : String(error);
+
+  if (reason === 'needs_review' || reason === 'disconnected') {
+    return { status: reason, reason, message, durationMs };
+  }
 
   if (reason === 'cancelled') {
     return {

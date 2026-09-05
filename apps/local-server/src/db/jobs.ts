@@ -12,6 +12,7 @@ import type {
   JobLibraryContext,
   JobStatus,
   JobSummary,
+  JobRemoteExecution,
 } from '../../../../packages/shared/src';
 import {
   normalizeWorkspaceId,
@@ -78,6 +79,7 @@ export function mapJobRow(row: Record<string, unknown>): Job {
         ? { libraryId: row.library_id, rootPath: row.library_root }
         : null,
     finalization: mapJobFinalization(row),
+    remoteExecution: parseJson<JobRemoteExecution | null>(row.remote_execution_json, null),
     originalPrompt: String(row.original_prompt),
     expandedPrompt: nullableString(row.expanded_prompt),
     finalPromptUsed: String(row.final_prompt_used),
@@ -90,6 +92,7 @@ export function mapJobRow(row: Record<string, unknown>): Job {
 
 export function mapJobSummaryRow(row: Record<string, unknown>): JobSummary {
   return {
+    remoteExecution: parseJson<JobRemoteExecution | null>(row.remote_execution_json, null),
     id: String(row.id),
     kind: row.kind as JobSummary['kind'],
     providerId: row.provider_id as JobSummary['providerId'],
@@ -243,12 +246,27 @@ export function updateJobFinalization(id: string, finalization: JobFinalization,
 }
 
 export function requeueJob(id: string, db?: Database) {
-  getDb(db)
+  const result = getDb(db)
     .query(
-      "UPDATE jobs SET status = 'queued', error = NULL, updated_at = ?, completed_at = NULL WHERE id = ?",
+      `UPDATE jobs SET status = 'queued', error = NULL, updated_at = ?, completed_at = NULL,
+       remote_execution_json = CASE WHEN json_extract(remote_execution_json, '$.phase') IN ('failed', 'cancelled')
+         THEN NULL ELSE remote_execution_json END
+       WHERE id = ? AND status IN ('failed', 'cancelled', 'needs_review')`,
     )
     .run(now(), id);
+  if (result.changes !== 1) return null;
   return getJob(id, db);
+}
+
+export function updateJobRemoteExecution(
+  id: string,
+  checkpoint: JobRemoteExecution,
+  db?: Database,
+) {
+  const result = getDb(db)
+    .query('UPDATE jobs SET remote_execution_json = ?, updated_at = ? WHERE id = ?')
+    .run(JSON.stringify(checkpoint), now(), id);
+  if (result.changes !== 1) throw new Error('Could not persist remote execution identity.');
 }
 
 export function getJob(id: string, db?: Database) {
@@ -256,12 +274,24 @@ export function getJob(id: string, db?: Database) {
   return row ? mapJobRow(row as Record<string, unknown>) : null;
 }
 
+export function getJobStatus(id: string, db?: Database) {
+  const row = getDb(db)
+    .query('SELECT id, status, error, updated_at FROM jobs WHERE id = ?')
+    .get(id) as {
+    id: string;
+    status: Job['status'];
+    error: string | null;
+    updated_at: string;
+  } | null;
+  return row && { id: row.id, status: row.status, error: row.error, updatedAt: row.updated_at };
+}
+
 export function listJobSummariesFromDb(database: Database) {
   return database
     .query(
       `SELECT
          id, workspace_id, recipe_id, batch_id, aspect_ratio,
-         kind, provider_id, status, execution_json,
+         kind, provider_id, status, execution_json, remote_execution_json,
          original_prompt, final_prompt_used, error,
          created_at, updated_at, completed_at
        FROM jobs

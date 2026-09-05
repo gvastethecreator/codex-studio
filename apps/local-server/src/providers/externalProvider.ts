@@ -73,7 +73,7 @@ export function createExternalGenerationProvider({
         throw new Error(`Provider runtime preflight is not registered for ${providerId}.`);
       }
 
-      if (!preflight.canAttemptExecution) {
+      if (!preflight.canAttemptExecution && !job.remoteExecution) {
         throw new Error(
           `Provider runtime preflight failed for ${providerId}: ${formatPreflightDiagnostics(preflight)}`,
         );

@@ -16,7 +16,14 @@ import { createCatalogRoutes } from './catalogRoutes';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
 import { listAssets } from './db/assets';
 import { listLogs } from './db/events';
-import { createJob, getJob, listJobSummaries, requeueJob, updateJobFinalPrompt } from './db/jobs';
+import {
+  createJob,
+  getJob,
+  getJobStatus,
+  listJobSummaries,
+  requeueJob,
+  updateJobFinalPrompt,
+} from './db/jobs';
 import { getSettingValue, setSettingValue } from './db/settings';
 import { ensureDefaultWorkspace } from './db/workspaces';
 import { getCurrentEventRevision, publishEvent, subscribeEvents } from './events';
@@ -112,6 +119,7 @@ export interface StudioJobStore {
   updateJobFinalPrompt: typeof updateJobFinalPrompt;
   requeueJob: typeof requeueJob;
   getJob: typeof getJob;
+  getJobStatus: typeof getJobStatus;
   listJobSummaries: typeof listJobSummaries;
 }
 
@@ -128,6 +136,7 @@ const defaultJobStore: StudioJobStore = {
   updateJobFinalPrompt,
   requeueJob,
   getJob,
+  getJobStatus,
   listJobSummaries,
 };
 const defaultAssetStore: StudioAssetStore = { listAssets };
@@ -320,6 +329,7 @@ export async function createStudioApp(
     createJobRoutes({
       listJobs: () => jobStore.listJobSummaries(),
       getJob: (jobId) => jobStore.getJob(jobId),
+      getJobStatus: (jobId) => jobStore.getJobStatus(jobId),
       getJobDetail,
       requeueJob: (jobId) => jobStore.requeueJob(jobId),
       cancelQueuedOrRunningJob: (jobId) => workerController.cancelQueuedOrRunningJob(jobId),

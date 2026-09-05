@@ -212,6 +212,7 @@ export interface Job {
   execution: JobExecutionOptions | null;
   libraryContext?: JobLibraryContext | null;
   finalization?: JobFinalization | null;
+  remoteExecution?: JobRemoteExecution | null;
   originalPrompt: string;
   expandedPrompt: string | null;
   finalPromptUsed: string;
@@ -219,6 +220,18 @@ export interface Job {
   createdAt: string;
   updatedAt: string;
   completedAt: string | null;
+}
+
+/** Observation never loads the job prompt, assets, or provider transcript. */
+export type JobStatusSnapshot = Pick<Job, 'id' | 'status' | 'error' | 'updatedAt'>;
+
+/** Non-secret identity persisted before sending any remote execution request. */
+export interface JobRemoteExecution {
+  providerId: 'comfy';
+  runtimeIdentity: string;
+  promptId: string;
+  phase: 'submitting' | 'accepted' | 'completed' | 'failed' | 'cancelled';
+  startedAt: number;
 }
 
 export interface JobSummary {
@@ -231,6 +244,7 @@ export interface JobSummary {
   aspectRatio: string | null;
   status: JobStatus;
   execution: JobExecutionOptions | null;
+  remoteExecution?: JobRemoteExecution | null;
   error: string | null;
   promptPreview: string;
   createdAt: string;

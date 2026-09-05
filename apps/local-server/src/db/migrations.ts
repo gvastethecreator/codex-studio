@@ -295,6 +295,22 @@ const DATABASE_MIGRATIONS = [
     name: 'remove-project-contract',
     migrate: removeLegacyProjectContract,
   },
+  {
+    version: 7,
+    name: 'remote-execution-identity',
+    migrate(database: Database) {
+      ensureColumn(database, 'jobs', 'remote_execution_json', 'TEXT');
+      // Older executions may already be accepted by Comfy. A missing checkpoint
+      // cannot turn an upgrade or shutdown recovery into permission to resubmit.
+      database.run(`UPDATE jobs SET status = 'needs_review',
+        error = 'Legacy Comfy execution has no remote identity. Inspect the original runtime before starting another job.'
+        WHERE remote_execution_json IS NULL AND status IN ('queued', 'running')
+          AND (provider_id = 'comfy' OR json_extract(source_spec_json, '$.providerId') = 'comfy')
+          AND (status = 'running' OR EXISTS (
+            SELECT 1 FROM job_events WHERE job_events.job_id = jobs.id AND job_events.type = 'external.started'
+          ))`);
+    },
+  },
 ] as const;
 
 function backfillJobOperationalColumns(database: Database) {

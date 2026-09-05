@@ -165,6 +165,19 @@ Current concrete adapters:
 - **fal.ai:** hosted executor using `FAL_KEY` or `FAL_API_KEY` from backend env only.
 - **Google Gemini image API:** hosted executor using `GOOGLE_API_KEY`, `GEMINI_API_KEY`, or `NANO_BANANA_API_KEY` from backend env only.
 - **ComfyUI:** local executor using `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`.
+  The API workflow is checked against the configured runtime's node definitions and model enums.
+  Partner nodes (`api_node`) require separate paid-workflow authorization and are rejected here.
+  Studio stores a non-secret runtime fingerprint and client prompt ID before submitting once.
+  Modern `/api/jobs/{id}` status and targeted `/api/jobs/{id}/cancel` replace the old fixed history poll loop.
+  Resume reads the original remote execution; a different runtime configuration never receives its requests.
+  Legacy active Comfy jobs without a remote identity move to review during migration instead of resubmitting.
+  The official local Comfy MCP/CLI can inspect nodes, templates, queue, and hardware before configuring a workflow.
+  Pin CLI inspection to `--where local`; Studio itself talks directly to the configured runtime and does not start it.
+
+Job observers use `/api/jobs/{id}/status` to reconcile attachment, reconnection, and missed events.
+This compact read does not load prompts, assets, or transcripts. Observation failures stay separate
+from durable job failure. A `needs_review` job exposes inspection, or Resume when it has a known
+remote identity; it does not authorize a fresh provider submission.
 
 ## Demand-Mounted Surfaces
 

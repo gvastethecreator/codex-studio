@@ -3,6 +3,7 @@ import type {
   Job,
   JobDetailResponse,
   JobSummary,
+  JobStatusSnapshot,
   ReferenceHandoffRequest,
   ReferenceHandoffResponse,
 } from '../../packages/shared/src';
@@ -30,8 +31,8 @@ export async function getStudioJobDetail(jobId: string) {
   return request<JobDetailResponse>(`/api/jobs/${encodeURIComponent(jobId)}`);
 }
 
-export async function retryStudioJob(detail: JobDetailResponse) {
-  return retryStudioJobById(detail.job.id);
+export async function getStudioJobStatus(jobId: string, signal?: AbortSignal) {
+  return request<JobStatusSnapshot>(`/api/jobs/${encodeURIComponent(jobId)}/status`, { signal });
 }
 
 export async function retryStudioJobById(jobId: string) {

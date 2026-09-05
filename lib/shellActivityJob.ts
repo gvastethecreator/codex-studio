@@ -10,6 +10,7 @@ export interface ShellActivityJob {
   providerId: Job['providerId'];
   status: Job['status'];
   execution: Job['execution'];
+  remoteExecution?: Job['remoteExecution'];
   originalPrompt: string;
   error: string | null;
   promptPreview: string;
@@ -50,6 +51,7 @@ export function toShellActivityJob(
     providerId: job.providerId,
     status: job.status,
     execution: job.execution,
+    remoteExecution: job.remoteExecution,
     originalPrompt: fullJob?.originalPrompt ?? promptPreview,
     error: job.error,
     promptPreview,
