@@ -248,6 +248,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       disabled={selectionDisabled}
       className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
       aria-pressed={active}
+      aria-label={`${active ? 'Remove' : 'Select'} ${presetDisplayName}`}
     >
       <div
         className={`flex size-14 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}

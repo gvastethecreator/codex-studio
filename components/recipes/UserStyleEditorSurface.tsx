@@ -10,6 +10,7 @@ import {
   IconX as X,
 } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useLatestRef } from '../../hooks/useLatestRef';
 import type {
   CodexStyleReferenceImage,
   UserStyleDraftAction,
@@ -167,6 +168,55 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
   const [isAssisting, setIsAssisting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const referenceImageUrlsRef = useRef<string[]>([]);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useLatestRef(onClose);
+  useEffect(() => {
+    const previousFocus = document.activeElement;
+    const dialog = dialogRef.current;
+    dialog?.querySelector<HTMLButtonElement>('[aria-label="Close style editor"]')?.focus();
+    const handleKey = (event: KeyboardEvent) => {
+      if (!dialog) return;
+      const focusedModal = document.activeElement?.closest('[aria-modal="true"]');
+      if (focusedModal && focusedModal !== dialog) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        event.stopPropagation();
+        closeRef.current();
+        return;
+      }
+      if (event.key !== 'Tab') return;
+      const controls = Array.from(
+        dialog.querySelectorAll<HTMLElement>(
+          'button, input, select, textarea, a[href], [tabindex]',
+        ),
+      ).filter(
+        (element) =>
+          element.tabIndex >= 0 &&
+          !element.matches(':disabled') &&
+          element.getClientRects().length > 0,
+      );
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (!first) {
+        event.preventDefault();
+        dialog.focus();
+        return;
+      }
+      const outside = !dialog.contains(document.activeElement);
+      if (event.shiftKey && (document.activeElement === first || outside)) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && (document.activeElement === last || outside)) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+    document.addEventListener('keydown', handleKey, true);
+    return () => {
+      document.removeEventListener('keydown', handleKey, true);
+      if (previousFocus instanceof HTMLElement && previousFocus.isConnected) previousFocus.focus();
+    };
+  }, [closeRef]);
 
   useEffect(
     () => () => {
@@ -467,6 +517,11 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
   return (
     <div
       data-user-style-editor
+      ref={dialogRef}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Style editor"
+      tabIndex={-1}
       className="absolute inset-0 z-50 flex items-center justify-center bg-black/76 p-2 text-white backdrop-blur-md sm:p-4"
     >
       <div className="flex h-full max-h-[calc(100vh-4.5rem)] w-full max-w-[1180px] flex-col overflow-hidden rounded-[8px] border border-white/2 bg-zinc-950 shadow-[0_24px_80px_rgba(0,0,0,0.72)]">

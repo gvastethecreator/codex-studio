@@ -117,9 +117,6 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
     };
   }, [activeRecipe, routeView]);
 
-  const RouteRecipePage = recipePageSurface.getLoaded() ?? RecipePage;
-  const RouteRecipesView = recipesViewSurface.getLoaded() ?? RecipesView;
-  const RouteStudioPage = studioPageSurface.getLoaded() ?? StudioPage;
   const handlePreviewRecipe = useCallback((recipeId: RecipeId) => {
     preloadStudioViewportPlan(buildRecipeIntentPreloadPlan(recipeId));
   }, []);
@@ -137,18 +134,15 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
         <Suspense fallback={<LazySurfaceFallback label="Loading view" />}>
           {routeView === 'recipe' && activeRecipe ? (
             <ConnectedRecipePage
-              Component={RouteRecipePage}
+              Component={RecipePage}
               activeRecipe={activeRecipe}
               {...recipePageProps}
               activeRecipeAliasId={activeRecipeAliasId}
             />
           ) : routeView === 'studio' ? (
-            <RouteStudioPage {...studioPageController.grid} />
+            <StudioPage {...studioPageController.grid} />
           ) : (
-            <RouteRecipesView
-              onPreviewRecipe={handlePreviewRecipe}
-              onSelectRecipe={onSelectRecipe}
-            />
+            <RecipesView onPreviewRecipe={handlePreviewRecipe} onSelectRecipe={onSelectRecipe} />
           )}
         </Suspense>
       </div>

@@ -825,7 +825,6 @@ export function useStudioShell(): StudioShellController {
     modal.isModalOpen ||
     viewState.editor.isOpen ||
     viewState.overlays.dashboard.isOpen ||
-    viewState.overlays.settings.isOpen ||
     viewState.overlays.trash.isOpen ||
     viewState.overlays.chat.isOpen ||
     studioRuntime.onboarding.isOpen;

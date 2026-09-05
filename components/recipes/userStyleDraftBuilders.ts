@@ -412,3 +412,80 @@ export function createUserStyleInputFromBlend(
     },
   });
 }
+
+export type UserStyleEditorIntent =
+  | { kind: 'create' }
+  | { kind: 'edit'; styleId: string }
+  | { kind: 'clone'; preset: StyleRuntimePreset; packId: string; packName: string }
+  | { kind: 'blend'; slots: SelectedStyleSlot[]; layers: SelectedStyleLayer[] };
+
+export interface PreparedUserStyleEditorSession {
+  mode: 'create' | 'edit';
+  draft: UserStylePresetDraft;
+  source: UserStylePresetSource | null;
+  editingStyleId?: string;
+}
+
+/** Prepare a draft only when the user opens the editor. */
+export function prepareUserStyleEditorSession(
+  intent: UserStyleEditorIntent,
+  presets: UserStylePreset[],
+): PreparedUserStyleEditorSession | null {
+  let next: PreparedUserStyleEditorSession;
+  switch (intent.kind) {
+    case 'create':
+      next = {
+        mode: 'create',
+        draft: createEmptyUserStyleDraft(),
+        source: { kind: 'manual', note: 'Created manually in Style Editor.' },
+      };
+      break;
+    case 'edit': {
+      const style = presets.find((candidate) => candidate.id === intent.styleId);
+      if (!style) return null;
+      next = {
+        mode: 'edit',
+        draft: createUserStyleDraftFromUserStyle(style),
+        source: style.source,
+        editingStyleId: style.id,
+      };
+      break;
+    }
+    case 'clone':
+      next = {
+        mode: 'create',
+        draft: createUserStyleDraftFromRuntimePreset(intent.preset, intent.packId, intent.packName),
+        source: {
+          kind: 'clone',
+          presetId: intent.preset.id,
+          packId: intent.packId,
+          note: `Cloned from ${intent.packName}.`,
+          data: { presetName: intent.preset.name, packName: intent.packName },
+        },
+      };
+      break;
+    case 'blend':
+      if (!intent.layers.some((layer) => layer.enabled)) return null;
+      next = {
+        mode: 'create',
+        draft: createUserStyleDraftFromBlend(intent.slots, intent.layers),
+        source: {
+          kind: 'blend',
+          note: 'Saved from selected style slots.',
+          data: {
+            styles: intent.layers
+              .filter((layer) => layer.enabled)
+              .map((layer) => ({
+                presetId: layer.presetId,
+                presetName: layer.presetName,
+                packId: layer.packId,
+                packName: layer.packName,
+                strength: layer.strength,
+              })),
+          },
+        },
+      };
+      break;
+  }
+  return next;
+}

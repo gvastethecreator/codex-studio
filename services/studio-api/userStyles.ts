@@ -7,11 +7,15 @@ import type {
 } from '../../packages/shared/src';
 import { request } from './http';
 
-export async function listUserStylePresets(options: { includeArchived?: boolean } = {}) {
+export async function listUserStylePresets(
+  options: { includeArchived?: boolean; signal?: AbortSignal } = {},
+) {
   const search = new URLSearchParams();
   if (options.includeArchived) search.set('include_archived', 'true');
   const suffix = search.size > 0 ? `?${search.toString()}` : '';
-  return request<{ styles: UserStylePreset[] }>(`/api/styles/user${suffix}`);
+  return request<{ styles: UserStylePreset[] }>(`/api/styles/user${suffix}`, {
+    signal: options.signal,
+  });
 }
 
 export async function createUserStylePreset(input: CreateUserStylePresetInput) {

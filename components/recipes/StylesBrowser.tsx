@@ -73,19 +73,7 @@ import {
   estimateStyleGroupPlaceholderHeight,
   type StyleGridVirtualWindow,
 } from './styleGridVirtualization';
-import {
-  clampStyleLayerFieldWeight,
-  clampStyleStrength,
-  createDefaultStyleLayerFieldControls,
-  createSelectedStylesGenerationPlan,
-  createSelectedStyleLayer,
-  DEFAULT_SELECTED_STYLE_STRENGTH,
-  describeStyleValue,
-  formatStyleStrength,
-  type SelectedStyleSlot,
-  type StyleLayerAvoidRulesMode,
-  type StyleLayerFieldId,
-} from './styleLayerComposer';
+import { describeStyleValue, formatStyleStrength } from './styleLayerComposer';
 import type { StylePresetCatalogSearchResult } from './stylePresetManifests';
 import {
   getStyleRuntimePresetDisplayName,
@@ -100,10 +88,8 @@ import {
   getStyleCollectionIdFromTabId,
   getStyleCollectionTabId,
   getStyleTabHash as getStyleTabHashForRoute,
-  readStyleTabIdFromHash as readStyleTabIdFromRouteHash,
   normalizeStyleTabId as normalizeStyleTabRouteId,
   STYLE_PACKS_TAB_ID,
-  STYLE_RECIPE_HASH_PREFIX,
   type StyleTabId,
   type StyleTabRouteOptions,
 } from './styleTabRouting';
@@ -111,14 +97,11 @@ import {
   USER_STYLE_PACK_DESCRIPTION,
   USER_STYLE_PACK_ID,
   USER_STYLE_PACK_NAME,
-  createUserStyleRuntimePack,
+  userStylePresetToRuntimePreset,
 } from './userStyleRuntimeAdapter';
-import { listUserStylePresets } from '../../services/studio-api/userStyles';
-import type {
-  UserStylePreset,
-  UserStylePresetDraft,
-  UserStylePresetSource,
-} from '../../packages/shared/src';
+import { useUserStyleLibrary } from './useUserStyleLibrary';
+import { useStyleComposition } from './useStyleComposition';
+import { useStyleBrowserNavigation } from './useStyleBrowserNavigation';
 import type {
   StyleRecipeNavigationItem,
   StyleRecipeNavigationSection,
@@ -439,23 +422,9 @@ function getCategoryVisualIdentity(
 }
 
 import { useLocalStorage } from '../../hooks/useLocalStorage';
-import { startViewTransition } from '../../utils/transitionUtils';
 
 function getStyleTabHash(tabId: StyleTabId) {
   return getStyleTabHashForRoute(tabId, STYLE_TAB_ROUTE_OPTIONS);
-}
-
-function writeStyleTabHash(tabId: StyleTabId, mode: 'push' | 'replace' = 'push') {
-  const nextHash = `#${getStyleTabHash(tabId)}`;
-  if (window.location.hash === nextHash) return;
-
-  const nextUrl = `${window.location.pathname}${window.location.search}${nextHash}`;
-  if (mode === 'replace') {
-    window.history.replaceState(null, '', nextUrl);
-    return;
-  }
-
-  window.location.hash = nextHash.slice(1);
 }
 
 function createStylePresetVisualState({
@@ -969,14 +938,6 @@ function getStyleCollectionTheme(collection: StyleCollection): StyleTheme {
   return COLLECTION_FAMILY_THEMES[collection.familyId] ?? PACK_THEMES.pack_01;
 }
 
-interface UserStyleEditorSession {
-  id: number;
-  mode: 'create' | 'edit';
-  draft: UserStylePresetDraft;
-  source: UserStylePresetSource | null;
-  editingStyleId?: string;
-}
-
 // react-doctor-disable-next-line react-doctor/no-giant-component
 export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   config,
@@ -999,16 +960,29 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     canExecute: grokCanExecute,
   });
 
-  const [currentPackId, setCurrentPackId] = useState(DEFAULT_STYLE_PACK_ID);
-  const [isPackLandingOpen, setIsPackLandingOpen] = useState(true);
-  const currentStyleTabRef = useRef<StyleTabId>(STYLE_PACKS_TAB_ID);
-  const [selectedStyles, setSelectedStyles] = useState<SelectedStyleSlot[]>([]);
-  const [isAdvancedStyleControlsOpen, setIsAdvancedStyleControlsOpen] = useState(false);
-  const [userStylePresets, setUserStylePresets] = useState<UserStylePreset[]>([]);
-  const [isLoadingUserStyles, setIsLoadingUserStyles] = useState(false);
-  const [userStyleError, setUserStyleError] = useState<string | null>(null);
-  const [userStyleEditorSession, setUserStyleEditorSession] =
-    useState<UserStyleEditorSession | null>(null);
+  const composition = useStyleComposition({
+    config,
+    updateConfig,
+    onGenerate,
+    referenceImages,
+    generationBlocked: Boolean(grokGenerateBlock),
+    maxSlots: MAX_SELECTED_STYLE_SLOTS,
+  });
+  const {
+    selectedStyles,
+    selectedStyleIds,
+    selectedStyleLayers,
+    activeSelectedStyleCount,
+    isAdvancedStyleControlsOpen,
+    toggleStyle,
+    updateSelectedStyleStrength,
+    toggleSelectedStyleEnabled,
+    toggleSelectedStyleField,
+    updateSelectedStyleFieldWeight,
+    setSelectedStyleAvoidRulesMode,
+    removeSelectedStyle,
+    handleGenerateSelectedStyles,
+  } = composition;
   const [styleCollectionsModule, setStyleCollectionsModule] =
     useState<StyleCollectionsModule | null>(null);
   const [styleCollectionsLoadError, setStyleCollectionsLoadError] = useState<string | null>(null);
@@ -1018,10 +992,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     hoveredPresetPreview: null as StyleCardHoverPreview | null,
   });
   const { copiedStyleId, hoveredPresetPreview } = interactionState;
-  const selectedStyleIds = useMemo(
-    () => new Set(selectedStyles.map((slot) => slot.preset.id)),
-    [selectedStyles],
-  );
   const timeoutRef = useRef<number | null>(null);
   const hoverPreviewClearTimeoutRef = useRef<number | null>(null);
 
@@ -1043,36 +1013,38 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   }, []);
 
   // -- FILTERS & STATE --
-  const [browserState, setBrowserState] = useState({
-    searchQuery: '',
-    sortOrder: 'source' as StyleBrowserSortOrder,
-    viewMode: 'grouped' as StyleBrowserViewMode,
-    showFavoritesOnly: false,
-    isCatalogSearchOpen: false,
-    styleScrollWidth: 0,
+  const navigation = useStyleBrowserNavigation({
+    routeOptions: STYLE_TAB_ROUTE_OPTIONS,
+    defaultPackId: DEFAULT_STYLE_PACK_ID,
+    allCategoriesTabId: ALL_STYLE_CATEGORIES_TAB_ID,
+    allCardsTabId: ALL_STYLE_CARDS_TAB_ID,
   });
   const {
+    currentPackId,
+    isPackLandingOpen,
     searchQuery,
     sortOrder,
-    viewMode,
     showFavoritesOnly,
     isCatalogSearchOpen,
-    styleScrollWidth,
-  } = browserState;
+    isAllStyleCategoriesTab,
+    isAllStyleCardsTab,
+    isGlobalStyleBrowseTab,
+    activeStyleViewMode,
+    favorites,
+    applyStyleTab,
+    navigateToStyleTab,
+    writeStyleTabHash,
+    toggleFavorite,
+    updateFilters,
+    setCatalogOpen,
+    toggleFavoritesOnly,
+  } = navigation;
+  const [styleScrollWidth, setStyleScrollWidth] = useState(0);
   const normalizedStyleSearchQuery = searchQuery.trim();
   const isGlobalStyleSearchActive = normalizedStyleSearchQuery.length > 0;
   const activeSortOption =
     STYLE_BROWSER_SORT_OPTIONS.find((option) => option.value === sortOrder) ??
     STYLE_BROWSER_SORT_OPTIONS[0];
-  const isAllStyleCategoriesTab = currentPackId === ALL_STYLE_CATEGORIES_TAB_ID;
-  const isAllStyleCardsTab = currentPackId === ALL_STYLE_CARDS_TAB_ID;
-  const isGlobalStyleBrowseTab = isAllStyleCategoriesTab || isAllStyleCardsTab;
-  const activeStyleViewMode: StyleBrowserViewMode = isAllStyleCardsTab
-    ? 'flat'
-    : isAllStyleCategoriesTab
-      ? 'grouped'
-      : viewMode;
-  const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
   const [gridColumns, setGridColumns] = useLocalStorage<number>('styles-grid-columns', 4);
   const [isSortDropdownOpen, setIsSortDropdownOpen] = useState(false);
   const [stylePanelVisibility, setStylePanelVisibility] = useLocalStorage<
@@ -1098,99 +1070,33 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const sortButtonRef = useRef<HTMLButtonElement>(null);
   const sortMenuId = React.useId();
 
-  const applyStyleTab = useCallback(
-    (
-      tabId: StyleTabId,
-      options: {
-        resetSearch?: boolean;
-        browserStatePatch?: Partial<typeof browserState>;
-      } = {},
-    ) => {
-      const normalizedTabId = normalizeStyleTabRouteId(tabId, STYLE_TAB_ROUTE_OPTIONS);
-      const tabBrowserStatePatch =
-        normalizedTabId === ALL_STYLE_CARDS_TAB_ID
-          ? ({
-              showFavoritesOnly: false,
-              sortOrder: 'source',
-              viewMode: 'flat',
-            } satisfies Partial<typeof browserState>)
-          : normalizedTabId === ALL_STYLE_CATEGORIES_TAB_ID
-            ? ({
-                showFavoritesOnly: false,
-                sortOrder: 'source',
-                viewMode: 'grouped',
-              } satisfies Partial<typeof browserState>)
-            : {};
-      currentStyleTabRef.current = normalizedTabId;
-
-      startViewTransition(() => {
-        if (normalizedTabId === STYLE_PACKS_TAB_ID) {
-          setIsPackLandingOpen(true);
-        } else {
-          setIsPackLandingOpen(false);
-          setCurrentPackId(normalizedTabId);
-        }
-
-        if (
-          options.resetSearch ||
-          options.browserStatePatch ||
-          Object.keys(tabBrowserStatePatch).length > 0
-        ) {
-          setBrowserState((prev) => ({
-            ...prev,
-            ...(options.resetSearch ? { searchQuery: '' } : {}),
-            ...tabBrowserStatePatch,
-            ...options.browserStatePatch,
-          }));
-        }
-      });
+  const userStyles = useUserStyleLibrary({
+    onReconciled: (style, archived) => {
+      if (archived) {
+        removeSelectedStyle(style.id);
+        setInteractionState((prev) => ({
+          ...prev,
+          activePresetId: prev.activePresetId === style.id ? null : prev.activePresetId,
+        }));
+      } else composition.replacePreset(userStylePresetToRuntimePreset(style));
     },
-    [],
-  );
-
-  const navigateToStyleTab = useCallback(
-    (tabId: StyleTabId) => {
-      const normalizedTabId = normalizeStyleTabRouteId(tabId, STYLE_TAB_ROUTE_OPTIONS);
-      applyStyleTab(normalizedTabId, { resetSearch: true });
-      writeStyleTabHash(normalizedTabId);
+    onSaved: (style) => {
+      setInteractionState((prev) => ({ ...prev, activePresetId: style.id }));
+      navigateToStyleTab(USER_STYLE_PACK_ID);
     },
-    [applyStyleTab],
-  );
-
-  useEffect(() => {
-    const syncStyleTabFromHash = () => {
-      const hashTabId = readStyleTabIdFromRouteHash(window.location.hash, STYLE_TAB_ROUTE_OPTIONS);
-      if (!hashTabId) return;
-
-      if (window.location.hash === `#${STYLE_RECIPE_HASH_PREFIX}`) {
-        writeStyleTabHash(hashTabId, 'replace');
-      }
-
-      if (currentStyleTabRef.current === hashTabId) return;
-      applyStyleTab(hashTabId, { resetSearch: true });
-    };
-
-    syncStyleTabFromHash();
-    window.addEventListener('hashchange', syncStyleTabFromHash);
-    return () => window.removeEventListener('hashchange', syncStyleTabFromHash);
-  }, [applyStyleTab]);
-
-  const refreshUserStyles = useCallback(async () => {
-    setIsLoadingUserStyles(true);
-    setUserStyleError(null);
-    try {
-      const response = await listUserStylePresets();
-      setUserStylePresets(response.styles);
-    } catch (error) {
-      setUserStyleError(error instanceof Error ? error.message : 'Could not load user styles.');
-    } finally {
-      setIsLoadingUserStyles(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    void refreshUserStyles();
-  }, [refreshUserStyles]);
+    onArchived: () => {
+      navigateToStyleTab(USER_STYLE_PACK_ID);
+    },
+  });
+  const {
+    presets: userStylePresets,
+    loading: isLoadingUserStyles,
+    error: userStyleError,
+    session: userStyleEditorSession,
+    runtimePack: userStylePack,
+    byId: userStylePresetById,
+    refresh: refreshUserStyles,
+  } = userStyles;
 
   useEffect(() => {
     if (styleCollectionsModule) return;
@@ -1282,15 +1188,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     [loadStyleRuntimePacks, styleCollectionsModule],
   );
 
-  const toggleFavorite = React.useCallback(
-    (presetId: string) => {
-      setFavorites((prev) =>
-        prev.includes(presetId) ? prev.filter((id) => id !== presetId) : [...prev, presetId],
-      );
-    },
-    [setFavorites],
-  );
-
   useEffect(() => {
     if (!isSortDropdownOpen) return;
 
@@ -1316,8 +1213,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     const node = styleScrollRootRef.current;
     if (!node || typeof ResizeObserver === 'undefined') return;
 
-    const updateWidth = () =>
-      setBrowserState((prev) => ({ ...prev, styleScrollWidth: node.clientWidth }));
+    const updateWidth = () => setStyleScrollWidth(node.clientWidth);
     // react-doctor-disable-next-line react-doctor/no-initialize-state
     updateWidth();
 
@@ -1349,14 +1245,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     setInteractionState((prev) => ({ ...prev, activePresetId: recipePresetId }));
   }, [recipePresetId]);
 
-  const userStylePack = useMemo(
-    () => createUserStyleRuntimePack(userStylePresets),
-    [userStylePresets],
-  );
-  const userStylePresetById = useMemo(
-    () => new Map(userStylePresets.map((style) => [style.id, style])),
-    [userStylePresets],
-  );
   const loadedRuntimeStylePacks = useMemo(
     () =>
       STYLE_RUNTIME_PACK_IDS.flatMap((packId) => {
@@ -1764,66 +1652,15 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
 
   const handleSelectStyle = useCallback(
     (preset: StyleRuntimePreset, presetPackIdOverride?: string) => {
-      const presetPackId = presetPackIdOverride ?? getPackIdForPreset(preset);
-      const packName = getPackNameForId(presetPackId);
-
+      const packId = presetPackIdOverride ?? getPackIdForPreset(preset);
       setInteractionState((prev) => ({ ...prev, activePresetId: preset.id }));
-      setSelectedStyles((current) => {
-        if (current.some((slot) => slot.preset.id === preset.id)) {
-          return current.filter((slot) => slot.preset.id !== preset.id);
-        }
-        if (current.length >= MAX_SELECTED_STYLE_SLOTS) {
-          return current;
-        }
-        return [
-          ...current,
-          {
-            preset,
-            packId: presetPackId,
-            packName,
-            strength: DEFAULT_SELECTED_STYLE_STRENGTH,
-            enabled: true,
-            fieldControls: createDefaultStyleLayerFieldControls(),
-            avoidRulesMode: 'merge',
-          },
-        ];
-      });
+      toggleStyle(preset, packId, getPackNameForId(packId));
     },
-    [getPackIdForPreset, getPackNameForId],
+    [getPackIdForPreset, getPackNameForId, toggleStyle],
   );
 
   const handleApplyStyleRef = useLatestRef(handleSelectStyle);
 
-  const selectedStyleLayers = useMemo(
-    () => selectedStyles.map(createSelectedStyleLayer),
-    [selectedStyles],
-  );
-  const activeSelectedStyleCount = selectedStyleLayers.filter((layer) => layer.enabled).length;
-  const registeredStyleGenerationPlan = useMemo(
-    () =>
-      createSelectedStylesGenerationPlan({
-        slots: selectedStyles,
-        hasReferenceImages: referenceImages.length > 0,
-        baseNegativePrompt: config.negativePrompt,
-      }),
-    [config.negativePrompt, referenceImages.length, selectedStyles],
-  );
-  const registeredStyleSelectionRef = useRef(false);
-  useEffect(() => {
-    if (!registeredStyleGenerationPlan) {
-      if (!registeredStyleSelectionRef.current) return;
-      registeredStyleSelectionRef.current = false;
-      updateConfig('recipeId', null);
-      updateConfig('recipeParams', null);
-      updateConfig('recipeContext', '');
-      return;
-    }
-
-    registeredStyleSelectionRef.current = true;
-    updateConfig('recipeId', 'styles');
-    updateConfig('recipeParams', registeredStyleGenerationPlan.recipeParams);
-    updateConfig('recipeContext', '');
-  }, [registeredStyleGenerationPlan, updateConfig]);
   const activePreset = useMemo(
     () =>
       searchableStylePresets.find((preset) => preset.id === interactionState.activePresetId) ??
@@ -1838,247 +1675,26 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const canCloneActiveStyle = Boolean(activePreset && activePresetPackId !== USER_STYLE_PACK_ID);
   const canEditActiveUserStyle = Boolean(activeUserStyle);
 
-  const openUserStyleEditor = useCallback(
-    (
-      mode: UserStyleEditorSession['mode'],
-      draft: UserStylePresetDraft,
-      source: UserStylePresetSource | null,
-      editingStyleId?: string,
-    ) => {
-      setUserStyleEditorSession({
-        id: Date.now(),
-        mode,
-        draft,
-        source,
-        editingStyleId,
+  const handleCreateUserStyle = () => {
+    void userStyles.open({ kind: 'create' });
+  };
+  const handleSaveSelectedStyleBlend = () => {
+    if (canSaveStyleBlend)
+      void userStyles.open({ kind: 'blend', slots: selectedStyles, layers: selectedStyleLayers });
+  };
+  const handleCloneActiveStyle = () => {
+    if (activePreset && activePresetPackId && canCloneActiveStyle)
+      void userStyles.open({
+        kind: 'clone',
+        preset: activePreset,
+        packId: activePresetPackId,
+        packName: getPackNameForId(activePresetPackId),
       });
-    },
-    [],
-  );
-
-  const handleCreateUserStyle = useCallback(() => {
-    void import('./userStyleDraftBuilders').then(({ createEmptyUserStyleDraft }) => {
-      openUserStyleEditor('create', createEmptyUserStyleDraft(), {
-        kind: 'manual',
-        note: 'Created manually in Style Editor.',
-      });
-    });
-  }, [openUserStyleEditor]);
-
-  const handleSaveSelectedStyleBlend = useCallback(() => {
-    if (activeSelectedStyleCount === 0) return;
-    void import('./userStyleDraftBuilders').then(({ createUserStyleDraftFromBlend }) => {
-      openUserStyleEditor(
-        'create',
-        createUserStyleDraftFromBlend(selectedStyles, selectedStyleLayers),
-        {
-          kind: 'blend',
-          note: 'Saved from selected style slots.',
-          data: {
-            styles: selectedStyleLayers
-              .filter((layer) => layer.enabled)
-              .map((layer) => ({
-                presetId: layer.presetId,
-                presetName: layer.presetName,
-                packId: layer.packId,
-                packName: layer.packName,
-                strength: layer.strength,
-              })),
-          },
-        },
-      );
-    });
-  }, [activeSelectedStyleCount, openUserStyleEditor, selectedStyleLayers, selectedStyles]);
-
-  const handleCloneActiveStyle = useCallback(() => {
-    if (!activePreset || !activePresetPackId || activePresetPackId === USER_STYLE_PACK_ID) return;
-    const packName = getPackNameForId(activePresetPackId);
-    void import('./userStyleDraftBuilders').then(({ createUserStyleDraftFromRuntimePreset }) => {
-      openUserStyleEditor(
-        'create',
-        createUserStyleDraftFromRuntimePreset(activePreset, activePresetPackId, packName),
-        {
-          kind: 'clone',
-          presetId: activePreset.id,
-          packId: activePresetPackId,
-          note: `Cloned from ${packName}.`,
-          data: { presetName: activePreset.name, packName },
-        },
-      );
-    });
-  }, [activePreset, activePresetPackId, getPackNameForId, openUserStyleEditor]);
-
-  const handleEditActiveUserStyle = useCallback(() => {
-    if (!activeUserStyle) return;
-    void import('./userStyleDraftBuilders').then(({ createUserStyleDraftFromUserStyle }) => {
-      openUserStyleEditor(
-        'edit',
-        createUserStyleDraftFromUserStyle(activeUserStyle),
-        activeUserStyle.source,
-        activeUserStyle.id,
-      );
-    });
-  }, [activeUserStyle, openUserStyleEditor]);
-
-  const handleUserStyleSaved = useCallback(
-    (style: UserStylePreset) => {
-      setUserStyleEditorSession(null);
-      setInteractionState((prev) => ({ ...prev, activePresetId: style.id }));
-      navigateToStyleTab(USER_STYLE_PACK_ID);
-      void refreshUserStyles();
-    },
-    [navigateToStyleTab, refreshUserStyles],
-  );
-
-  const handleUserStyleArchived = useCallback(
-    (style: UserStylePreset) => {
-      setUserStyleEditorSession(null);
-      setSelectedStyles((current) => current.filter((slot) => slot.preset.id !== style.id));
-      setInteractionState((prev) => ({
-        ...prev,
-        activePresetId: prev.activePresetId === style.id ? null : prev.activePresetId,
-      }));
-      navigateToStyleTab(USER_STYLE_PACK_ID);
-      void refreshUserStyles();
-    },
-    [navigateToStyleTab, refreshUserStyles],
-  );
-
-  const updateSelectedStyleStrength = useCallback((presetId: string, strength: number) => {
-    setSelectedStyles((current) =>
-      current.map((slot) =>
-        slot.preset.id === presetId ? { ...slot, strength: clampStyleStrength(strength) } : slot,
-      ),
-    );
-  }, []);
-
-  const toggleSelectedStyleEnabled = useCallback((presetId: string) => {
-    setSelectedStyles((current) =>
-      current.map((slot) =>
-        slot.preset.id === presetId ? { ...slot, enabled: !(slot.enabled ?? true) } : slot,
-      ),
-    );
-  }, []);
-
-  const toggleSelectedStyleField = useCallback((presetId: string, fieldId: StyleLayerFieldId) => {
-    setSelectedStyles((current) =>
-      current.map((slot) => {
-        if (slot.preset.id !== presetId) return slot;
-        const controls = {
-          ...createDefaultStyleLayerFieldControls(),
-          ...slot.fieldControls,
-        };
-        const currentField = controls[fieldId] ?? { enabled: true, weight: 1 };
-        return {
-          ...slot,
-          fieldControls: {
-            ...controls,
-            [fieldId]: {
-              ...currentField,
-              enabled: !currentField.enabled,
-            },
-          },
-        };
-      }),
-    );
-  }, []);
-
-  const updateSelectedStyleFieldWeight = useCallback(
-    (presetId: string, fieldId: StyleLayerFieldId, weight: number) => {
-      setSelectedStyles((current) =>
-        current.map((slot) => {
-          if (slot.preset.id !== presetId) return slot;
-          const controls = {
-            ...createDefaultStyleLayerFieldControls(),
-            ...slot.fieldControls,
-          };
-          const currentField = controls[fieldId] ?? { enabled: true, weight: 1 };
-          return {
-            ...slot,
-            fieldControls: {
-              ...controls,
-              [fieldId]: {
-                ...currentField,
-                weight: clampStyleLayerFieldWeight(weight),
-              },
-            },
-          };
-        }),
-      );
-    },
-    [],
-  );
-
-  const setSelectedStyleAvoidRulesMode = useCallback(
-    (presetId: string, avoidRulesMode: StyleLayerAvoidRulesMode) => {
-      setSelectedStyles((current) =>
-        current.map((slot) => (slot.preset.id === presetId ? { ...slot, avoidRulesMode } : slot)),
-      );
-    },
-    [],
-  );
-
-  const removeSelectedStyle = useCallback((presetId: string) => {
-    setSelectedStyles((current) => current.filter((slot) => slot.preset.id !== presetId));
-  }, []);
-
-  const handleGenerateSelectedStyles = useCallback(() => {
-    const diversityPrompts = [
-      'Introduce a noticeably different camera distance and framing from previous renders.',
-      'Shift scene energy with a different gesture or action beat while preserving the subject intent.',
-      'Use a clearly distinct lighting setup and color balance versus prior attempts.',
-      'Vary background staging and spatial depth so this render is visibly unique.',
-    ] as const;
-    const diversityHint = diversityPrompts[Math.floor(Math.random() * diversityPrompts.length)];
-    const generationPlan = createSelectedStylesGenerationPlan({
-      slots: selectedStyles,
-      hasReferenceImages: referenceImages.length > 0,
-      baseNegativePrompt: config.negativePrompt,
-      diversityHint,
-    });
-    if (!generationPlan || grokGenerateBlock) return;
-
-    onGenerate(
-      config.prompt?.trim() || generationPlan.fallbackPrompt,
-      {
-        recipeId: 'styles',
-        recipeParams: generationPlan.recipeParams,
-        recipeContext: '',
-        attachments: referenceImages.map((attachment) => ({
-          ...attachment,
-          strength: 0.15,
-        })),
-        model: config.model,
-        imageSize: config.imageSize,
-        batchCount: config.batchCount,
-        aspectRatio: config.aspectRatio,
-        executionModel: config.executionModel,
-        executionReasoningEffort: config.executionReasoningEffort,
-        executionSpeed: config.executionSpeed,
-        negativePrompt: generationPlan.negativePrompt,
-      },
-      { preventModal: true },
-    );
-  }, [
-    grokGenerateBlock,
-    config.aspectRatio,
-    config.batchCount,
-    config.executionModel,
-    config.executionReasoningEffort,
-    config.executionSpeed,
-    config.imageSize,
-    config.model,
-    config.negativePrompt,
-    config.prompt,
-    onGenerate,
-    referenceImages,
-    selectedStyles,
-  ]);
-
-  const handleCloseCatalogSearch = useCallback(
-    () => setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false })),
-    [],
-  );
+  };
+  const handleEditActiveUserStyle = () => {
+    if (activeUserStyle) void userStyles.open({ kind: 'edit', styleId: activeUserStyle.id });
+  };
+  const handleCloseCatalogSearch = useCallback(() => setCatalogOpen(false), [setCatalogOpen]);
 
   const handleSelectCatalogPreset = useCallback(
     (result: StylePresetCatalogSearchResult) => {
@@ -2089,9 +1705,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       });
       writeStyleTabHash(result.packId);
       setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
-      setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: false }));
+      setCatalogOpen(false);
     },
-    [applyStyleTab],
+    [applyStyleTab, setCatalogOpen, writeStyleTabHash],
   );
 
   const handleApplyCatalogPreset = useCallback(
@@ -2644,7 +2260,7 @@ ${styleAnchorLine}
                     <button
                       type="button"
                       aria-label="Toggle advanced style controls"
-                      onClick={() => setIsAdvancedStyleControlsOpen((isOpen) => !isOpen)}
+                      onClick={composition.toggleAdvanced}
                       aria-pressed={isAdvancedStyleControlsOpen}
                       className={`flex h-7 items-center gap-1 rounded-lg border px-2 text-[8px] font-black uppercase tracking-widest ${
                         isAdvancedStyleControlsOpen
@@ -2658,7 +2274,7 @@ ${styleAnchorLine}
                     {selectedStyles.length > 0 && (
                       <button
                         type="button"
-                        onClick={() => setSelectedStyles([])}
+                        onClick={composition.clear}
                         className="rounded-lg border border-white/2 bg-white/5 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-400"
                       >
                         Clear
@@ -2962,6 +2578,19 @@ ${styleAnchorLine}
           </React.Suspense>
         ) : (
           <div data-style-folder={currentPackId} className="flex min-h-0 flex-1 flex-col">
+            {currentPackId === USER_STYLE_PACK_ID &&
+            userStyleError &&
+            userStylePresets.length > 0 ? (
+              <div
+                role="alert"
+                className="flex items-center justify-between gap-2 p-3 text-xs text-amber-300"
+              >
+                <span>{userStyleError} The list may be incomplete.</span>
+                <button type="button" onClick={() => void refreshUserStyles()}>
+                  Retry
+                </button>
+              </div>
+            ) : null}
             {/* Pack Header Info + Search Bar */}
             <div
               className={`grid h-12 min-w-0 gap-4 border-b border-white/2 px-4 py-1.5 sm:px-5 2xl:px-6 ${
@@ -2991,9 +2620,7 @@ ${styleAnchorLine}
                       type="text"
                       placeholder="Search styles..."
                       value={searchQuery}
-                      onChange={(e) =>
-                        setBrowserState((prev) => ({ ...prev, searchQuery: e.target.value }))
-                      }
+                      onChange={(e) => updateFilters({ searchQuery: e.target.value })}
                       aria-label="Search styles"
                       className="bg-transparent border-none outline-none text-[11px] text-white placeholder-zinc-600 w-full font-medium"
                     />
@@ -3001,7 +2628,7 @@ ${styleAnchorLine}
                       <button
                         type="button"
                         aria-label="Clear style search"
-                        onClick={() => setBrowserState((prev) => ({ ...prev, searchQuery: '' }))}
+                        onClick={() => updateFilters({ searchQuery: '' })}
                       >
                         <X size={12} className="text-zinc-500 hover:text-white" />
                       </button>
@@ -3012,9 +2639,7 @@ ${styleAnchorLine}
 
                   <button
                     type="button"
-                    onClick={() =>
-                      setBrowserState((prev) => ({ ...prev, isCatalogSearchOpen: true }))
-                    }
+                    onClick={() => setCatalogOpen(true)}
                     data-style-open-catalog
                     className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
                     title="Open Style Catalog"
@@ -3071,7 +2696,7 @@ ${styleAnchorLine}
                       onClick={() =>
                         isGlobalStyleBrowseTab
                           ? navigateToStyleTab(ALL_STYLE_CATEGORIES_TAB_ID)
-                          : setBrowserState((prev) => ({ ...prev, viewMode: 'grouped' }))
+                          : updateFilters({ viewMode: 'grouped' })
                       }
                       aria-label="Show grouped style categories"
                       aria-pressed={activeStyleViewMode === 'grouped'}
@@ -3089,7 +2714,7 @@ ${styleAnchorLine}
                       onClick={() =>
                         isGlobalStyleBrowseTab
                           ? navigateToStyleTab(ALL_STYLE_CARDS_TAB_ID)
-                          : setBrowserState((prev) => ({ ...prev, viewMode: 'flat' }))
+                          : updateFilters({ viewMode: 'flat' })
                       }
                       aria-label="Show all style cards in one grid"
                       aria-pressed={activeStyleViewMode === 'flat'}
@@ -3156,10 +2781,7 @@ ${styleAnchorLine}
                               aria-selected={selected}
                               data-dropdown-item
                               onClick={() => {
-                                setBrowserState((prev) => ({
-                                  ...prev,
-                                  sortOrder: option.value,
-                                }));
+                                updateFilters({ sortOrder: option.value });
                                 setIsSortDropdownOpen(false);
                               }}
                               className={`flex min-h-9 w-full items-center justify-between gap-3 rounded-[5px] px-2 text-left text-[9px] font-black uppercase tracking-widest transition-[background-color,color,transform] ${
@@ -3181,12 +2803,7 @@ ${styleAnchorLine}
                     <button
                       type="button"
                       aria-label="Filter favorite styles"
-                      onClick={() =>
-                        setBrowserState((prev) => ({
-                          ...prev,
-                          showFavoritesOnly: !prev.showFavoritesOnly,
-                        }))
-                      }
+                      onClick={() => toggleFavoritesOnly()}
                       className={`rounded-[6px] p-1.5 transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
                       title="Filter Favorites in this Pack"
                     >
@@ -3435,7 +3052,7 @@ ${styleAnchorLine}
               </button>
               <button
                 type="button"
-                onClick={() => setIsAdvancedStyleControlsOpen((isOpen) => !isOpen)}
+                onClick={composition.toggleAdvanced}
                 aria-pressed={isAdvancedStyleControlsOpen}
                 className={`flex size-8 items-center justify-center rounded-[6px] border transition-colors ${
                   isAdvancedStyleControlsOpen
@@ -3449,7 +3066,7 @@ ${styleAnchorLine}
               {selectedStyles.length > 0 && (
                 <button
                   type="button"
-                  onClick={() => setSelectedStyles([])}
+                  onClick={composition.clear}
                   className="flex size-8 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
                   aria-label="Clear selected styles"
                 >
@@ -3653,9 +3270,9 @@ ${styleAnchorLine}
             initialSource={userStyleEditorSession.source}
             editingStyleId={userStyleEditorSession.editingStyleId}
             selectedStyleLayers={selectedStyleLayers}
-            onClose={() => setUserStyleEditorSession(null)}
-            onSaved={handleUserStyleSaved}
-            onArchived={handleUserStyleArchived}
+            onClose={userStyles.close}
+            onSaved={(style) => userStyles.reconcile(userStyleEditorSession.id, style, false)}
+            onArchived={(style) => userStyles.reconcile(userStyleEditorSession.id, style, true)}
           />
         </React.Suspense>
       )}

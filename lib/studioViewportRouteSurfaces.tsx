@@ -27,7 +27,6 @@ function createPreloadableSurface<TProps>(
 
   return {
     Component: React.lazy(load),
-    getLoaded: () => loadedComponent,
     load,
   };
 }
