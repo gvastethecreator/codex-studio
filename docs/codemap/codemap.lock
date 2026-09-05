@@ -1,7 +1,7 @@
 {
-  "source_commit": "89ddd3f07a3aab7812f0fc77ee4439ac6236609b",
-  "working_tree_dirty": true,
-  "generated_at": "2026-08-29T20:41:45Z",
+  "source_commit": "cfbdc371f4d43ea7fc45dda7909eecf7f16f0600",
+  "working_tree_dirty": false,
+  "generated_at": "2026-09-05T03:24:12Z",
   "scanned_scope": [
     "."
   ],
@@ -35,37 +35,37 @@
       "id": ".",
       "path": ".",
       "file_count": 33,
-      "fingerprint": "beb2f9ec9a740fab32aee86b490fda3acd12b16206f62dc5d6c56aac7ff3df8f"
+      "fingerprint": "bd77d9235cfd2e517c427f270a703dbd6f7ff3d5d70d9b601982fa260ed4999c"
     },
     {
       "id": ".github",
       "path": ".github",
       "file_count": 8,
-      "fingerprint": "3e6aef70033475e6fbef7f70ce7699073fa793b0cc21eaad251ae847926bba64"
+      "fingerprint": "2c8a6367c81f505a7a4cc10519567da5e004d0b040b7e09976a740de2a325fcb"
     },
     {
       "id": ".vite-hooks",
       "path": ".vite-hooks",
       "file_count": 1,
-      "fingerprint": "acbb756f3f502b71b2833bfaf6a8dd9e27fc1904b9e638f5b799eb47203210eb"
+      "fingerprint": "3b429721a0c511700be4da1e87070b4a0a9905d46d44d422067d03051b01d430"
     },
     {
       "id": "apps",
       "path": "apps",
-      "file_count": 204,
-      "fingerprint": "b0f954c0b7bdcc58d2ee820c3240d6d74b77baf807837eae1754354069fc351e"
+      "file_count": 237,
+      "fingerprint": "d8e51b109b2ab5764af0b70fc12b3dbcc48394424d07ece14e8b777ff2376f0e"
     },
     {
       "id": "assets",
       "path": "assets",
       "file_count": 6607,
-      "fingerprint": "348e282748afa998b1ca8d7ebe2c64162277d7914ee39571d3acca736bb3b954"
+      "fingerprint": "5a2512d0efc6b969241acecff35885b00f16ee4aed7329d98f63b7c4ccaab5ce"
     },
     {
       "id": "components",
       "path": "components",
-      "file_count": 1971,
-      "fingerprint": "5a7484d60282f368328c3d0d75d13d95c6df58537d2b67fc2c9e940fa1e0532f"
+      "file_count": 1978,
+      "fingerprint": "3a3bba3f727b11bd32358b880906158596e803d4e33e46b88105b40515ec0f36"
     },
     {
       "id": "contexts",
@@ -77,7 +77,7 @@
       "id": "docs",
       "path": "docs",
       "file_count": 34,
-      "fingerprint": "d5936652782bc5a82bd15f429658a7137231c83af17b10e2c0d60af8a37d41df"
+      "fingerprint": "bdb0cae1ad7a0b01728383a3454d6ce3f3216e8f399aface3c14b15809a64474"
     },
     {
       "id": "electron",
@@ -88,38 +88,38 @@
     {
       "id": "hooks",
       "path": "hooks",
-      "file_count": 68,
-      "fingerprint": "a312d7f41564df6a2872d83fa38bf911bd20dba7b4dbf8ce7b95fd683a6888c3"
+      "file_count": 72,
+      "fingerprint": "5be9aebfef03c52a3e566dfd62a45df309094b6977369fd40d3f5bb259632c4d"
     },
     {
       "id": "lib",
       "path": "lib",
-      "file_count": 167,
-      "fingerprint": "a269967db79424eba7dfc2813547c2fb59fa2137d8ca69246f9167cbfb929713"
+      "file_count": 173,
+      "fingerprint": "ed2d88b20ed7cc23694fefb1bbf396d7614ff2878d57b37a2f7f12215f5f193d"
     },
     {
       "id": "packages",
       "path": "packages",
-      "file_count": 32,
-      "fingerprint": "f0b936d7cd5fe9b6e0e21368f27452ed738166d00a64f57f11711e185aad6364"
+      "file_count": 34,
+      "fingerprint": "0500f7990f82d5a3c6d2d51ae446052b2960f90e2ad6dba7d7e6277e33f0cf38"
     },
     {
       "id": "scripts",
       "path": "scripts",
       "file_count": 130,
-      "fingerprint": "f5ec2d9490721d21c529a13f68ed8d0c3a7d3c973f472f7ec4399fd881ae3263"
+      "fingerprint": "d492db8e7af98aeb641dc8d483383ae8125fcd18c78203d737af7c5e6fb716d4"
     },
     {
       "id": "services",
       "path": "services",
-      "file_count": 28,
-      "fingerprint": "d2f53c34c0501e48d9bc395b620d4ed863ff6e9ef91754d09bcba1e71b273cb0"
+      "file_count": 30,
+      "fingerprint": "56090cd8962d1fad94ad5fc0afa51653527513cecb70a5be6867bce4f10fd0ad"
     },
     {
       "id": "skills",
       "path": "skills",
-      "file_count": 18,
-      "fingerprint": "2e2deace6cc55ef6eea24f8de354190ccc32f087655432c4c978e865e3dd4c39"
+      "file_count": 17,
+      "fingerprint": "59df1cd57e415f64f7a17a0a53344fc6b748e1a32f8187d400b7b68e6ecd51a1"
     },
     {
       "id": "utils",

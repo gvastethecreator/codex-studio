@@ -1,7 +1,7 @@
-# Code map · codex-studio
+# Code map · tune-up-full-rebase
 
-generated: 2026-08-29T20:41:45Z
-commit: 89ddd3f07a3a
+generated: 2026-09-05T03:24:12Z
+commit: cfbdc371f4d4
 scope: .
 
 counts: 20 nodes · 80 edges · 0 flows · 0 unknown
@@ -17,7 +17,7 @@ counts: 20 nodes · 80 edges · 0 flows · 0 unknown
 - `apps-local-server` · `apps/local-server` · service · Apps
   callers: repository (calls), scripts (imports)
   callees: constants (imports), external-dependencies (imports), lib (imports), packages-shared (imports)
-  tests: apps/local-server/src/animationGifEncoder.test.ts, apps/local-server/src/animationSequenceRoutes.test.ts, apps/local-server/src/appFactory.test.ts, apps/local-server/src/assetLogRoutes.test.ts, apps/local-server/src/catalog.test.ts
+  tests: apps/local-server/src/animationGifEncoder.test.ts, apps/local-server/src/animationSequenceRoutes.test.ts, apps/local-server/src/antigravityRuntimeDoctor.test.ts, apps/local-server/src/appFactory.test.ts, apps/local-server/src/assetLogRoutes.test.ts
   entry: apps/local-server/src/index.ts:studio
 
 - `components` · `components` · interface · Components
@@ -101,7 +101,7 @@ counts: 20 nodes · 80 edges · 0 flows · 0 unknown
 - `services` · `services` · service · Services
   callers: components (imports), contexts (imports), hooks (imports), lib (imports)
   callees: constants (imports), external-dependencies (imports), lib (imports), packages-shared (imports), types (imports), utils (imports)
-  tests: services/animationSequenceRunCoordinator.test.ts, services/localGenerationRun.stream.test.ts, services/localGenerationRun.test.ts, services/localGenerationRuntimeAdapters.test.ts, services/studio-api/api.test.ts
+  tests: components/settings/SubscriptionAuthControls.test.tsx, services/animationSequenceRunCoordinator.test.ts, services/localGenerationRun.stream.test.ts, services/localGenerationRun.test.ts, services/localGenerationRuntimeAdapters.test.ts
   entry: services/animationSequenceRunCoordinator.ts:createAnimationSequenceRunCoordinator
 
 - `skills-imagegen-scripts-image-gen` · `skills/imagegen/scripts/image_gen.py` · service · Skills
