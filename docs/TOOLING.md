@@ -27,6 +27,12 @@ The repository is one Bun package. Nested `apps/*` and `packages/*` folders are 
 | `bun run core-assets:smoke`      | Build and route smoke without optional packs |
 | `bun run portability:smoke`      | Isolated local API health smoke              |
 
+## React Doctor
+
+At integration, run `bun run doctor -- --verbose --scope changed --base origin/main`. Use the target branch as `--base` when it differs from `origin/main`. An explicit base also works when local commits are on `main`; automatic diff detection can run a full scan in that case.
+
+The commit hook calls the same pinned `doctor` script with `--staged --blocking warning --no-score`. It skips changes that contain only documentation or generated code maps. The hook remains advisory. A nonzero exit can mean diagnostics or a tool execution error; inspect `logs/react-doctor/pre-commit.log` before calling it a regression. Each scan replaces that ignored local log.
+
 ## Dependency maintenance
 
 ```bash

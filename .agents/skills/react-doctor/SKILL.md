@@ -10,13 +10,13 @@ Scans React codebases for security, performance, correctness, and architecture i
 
 ## At final integration
 
-Use `bun run doctor -- --verbose --diff` for a substantial React change or an explicit diagnostic request. The repository pins the tool in `package.json`. Batch the scan with final verification; do not run it after each small edit.
+Use `bun run doctor -- --verbose --scope changed --base origin/main` for a substantial React change or an explicit diagnostic request. Set `--base` to the integration branch when it differs from `origin/main`. The repository pins the tool in `package.json`. Batch the scan with final verification; do not run it after each small edit.
 
 Review findings on changed paths. Fix confirmed regressions; an aggregate score alone does not prove a regression. Preserve unrelated work and request commit consent separately.
 
 ## For general cleanup or code improvement:
 
-Run `bun run doctor -- --verbose` (without `--diff`) when a full scan is requested. Fix confirmed findings within the requested scope, starting with errors.
+Run `bun run doctor -- --verbose --scope full` when a full scan is requested. Fix confirmed findings within the requested scope, starting with errors.
 
 ## /doctor — full local triage workflow
 
@@ -35,12 +35,14 @@ Pair it with the matching per-rule prompts at `https://www.react.doctor/prompts/
 ## Command
 
 ```bash
-bun run doctor -- --verbose --diff
+bun run doctor -- --verbose --scope changed --base origin/main
 ```
 
 | Flag        | Purpose                                       |
 | ----------- | --------------------------------------------- |
 | `.`         | Scan current directory                        |
 | `--verbose` | Show affected files and line numbers per rule |
-| `--diff`    | Only scan changed files vs base branch        |
+| `--scope changed --base <ref>` | Report new findings against a specific Git ref |
+| `--staged`  | Scan files in the Git index                   |
+| `--blocking warning` | Return a nonzero status for warnings or errors |
 | `--score`   | Output only the numeric score                 |
