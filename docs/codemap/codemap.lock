@@ -1,7 +1,7 @@
 {
-  "source_commit": "1fd0e8eaad0d63d795b4a436f38a2a4f17a67d61",
+  "source_commit": "04fe53d715c2ee8b47af799531eee08782e4d440",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-05T21:47:54Z",
+  "generated_at": "2026-09-05T21:52:03Z",
   "scanned_scope": [
     "."
   ],
@@ -65,7 +65,7 @@
       "id": "components",
       "path": "components",
       "file_count": 1983,
-      "fingerprint": "ae8c9fab807181a65453ce03b7963c7284809198509d5698cbcbf320b6d7cb7c"
+      "fingerprint": "d29d1efbe4fa57a65e18fb7777cba249103c8e61803a6e80c6a990a39ce88f3c"
     },
     {
       "id": "contexts",
@@ -106,14 +106,14 @@
     {
       "id": "scripts",
       "path": "scripts",
-      "file_count": 131,
-      "fingerprint": "98a8d53937abf4f7ac087ad4fb5b04811e9294d3b6c89fb0292cd573068ef442"
+      "file_count": 133,
+      "fingerprint": "df3690f2bc601c5f79d7fbd57196982ebe3bfdced2f678f311722ae2d95317be"
     },
     {
       "id": "services",
       "path": "services",
-      "file_count": 30,
-      "fingerprint": "b007d43383da1a4eb5f872668b02715538c9a3f14fc82dca14acfcdcbf6b98b0"
+      "file_count": 29,
+      "fingerprint": "7b0b562003244c0577b003c3063be61056c6ce0a4aeee74ef071dac883242104"
     },
     {
       "id": "skills",

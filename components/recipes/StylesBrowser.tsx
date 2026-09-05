@@ -1732,7 +1732,13 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
       handleApplyStyleRef.current(preset, result.packId);
     },
-    [loadedStylePacksById, loadStyleRuntimePacks, applyStyleTab, handleApplyStyleRef],
+    [
+      loadedStylePacksById,
+      loadStyleRuntimePacks,
+      applyStyleTab,
+      writeStyleTabHash,
+      handleApplyStyleRef,
+    ],
   );
 
   const handleCopyStylePrompt = useCallback((e: React.MouseEvent, preset: StyleRuntimePreset) => {
