@@ -33,8 +33,8 @@ function invalidateRuntimeSnapshot() {
   runtimeSnapshotCache = null;
 }
 
-export async function getStudioHealth() {
-  return request<HealthResponse>('/api/health');
+export async function getStudioHealth(signal?: AbortSignal) {
+  return request<HealthResponse>('/api/health', { signal });
 }
 
 export async function getOnboardingProbe() {

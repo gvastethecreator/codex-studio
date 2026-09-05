@@ -19,3 +19,4 @@ export * from './studioReadinessContracts';
 export * from './onboardingContracts';
 export * from './workspaceContracts';
 export * from './studioApiSchemas';
+export * from './workerContracts';

@@ -25,7 +25,10 @@ export function initStudio() {
         `STUDIO_SERVER_PORT=${settings.serverPort}`,
         `STUDIO_CODEX_WS_PORT=${settings.codexWsPort}`,
         `VITE_STUDIO_API_BASE=http://127.0.0.1:${settings.serverPort}`,
-        `STUDIO_MAX_CONCURRENT_CODEX_JOBS=${settings.codexMaxConcurrentJobs}`,
+        `STUDIO_MAX_CONCURRENT_JOBS=${settings.workerLimits.global}`,
+        ...Object.entries(settings.workerLimits.providers).map(
+          ([provider, limit]) => `STUDIO_MAX_CONCURRENT_${provider.toUpperCase()}_JOBS=${limit}`,
+        ),
         `CODEX_IMAGEGEN_MODEL=${settings.codexImagegenModel}`,
         `CODEX_IMAGEGEN_REASONING_EFFORT=${settings.codexImagegenReasoningEffort}`,
         '',

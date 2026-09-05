@@ -121,6 +121,10 @@ describe('live recipe prompt quality evaluation', () => {
         activeWorkerCount: 0,
         queuedJobs: 0,
         trackedJobs: 0,
+        providerLimits: {},
+        activeByProvider: {},
+        waiting: [],
+        stopping: false,
       },
     } satisfies HealthResponse;
     const session = {

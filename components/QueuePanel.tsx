@@ -22,8 +22,23 @@ import { cn } from '../lib/utils';
 import { useLatestRef } from '../hooks/useLatestRef';
 import { isRegisteredRecipeId } from '../lib/recipeIds';
 import { useJobHistory } from '../hooks/useJobHistory';
+import { useWorkerDiagnostics } from '../hooks/useWorkerDiagnostics';
 import { QueueBatchCard } from './QueueBatchCard';
 import type { TerminalJobStatus } from '../packages/shared/src';
+import type { WorkerStatus } from '../packages/shared/src/workerContracts';
+
+function formatWaitReason(wait: WorkerStatus['waiting'][number]) {
+  switch (wait.reason) {
+    case 'provider_capacity':
+      return `Waiting for ${wait.providerId} capacity`;
+    case 'global_capacity':
+      return 'Waiting for a worker slot';
+    case 'provider_turn':
+      return `Waiting for ${wait.providerId}'s turn`;
+    case 'stopping':
+      return 'Worker stopping; job remains queued';
+  }
+}
 
 interface QueuePanelProps {
   results?: StudioQueueResultPreview[];
@@ -115,6 +130,8 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const [workspaceFilter, setWorkspaceFilter] = useState('');
     const [statusFilter, setStatusFilter] = useState<TerminalJobStatus | ''>('');
     const jobHistory = useJobHistory(serverJobs, workspaceFilter, statusFilter);
+    const worker = useWorkerDiagnostics();
+    const waitReasons = new Map(worker.status?.waiting.map((entry) => [entry.jobId, entry]) ?? []);
     const batches = useMemo(() => {
       const revisions = new Map<string, string>();
       for (const job of [...jobHistory.open, ...jobHistory.history]) {
@@ -189,6 +206,26 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <QueueBatchCard key={batchId} batchId={batchId} revision={revision} />
           ))}
           <section className="rounded-lg border border-white/2 bg-white/5 p-1.5">
+            <div className="mb-2 px-1 text-[10px] text-white/60" aria-label="Worker capacity">
+              {worker.status ? (
+                <>
+                  <p>
+                    {worker.status.activeWorkerCount} / {worker.status.maxConcurrentJobs} worker
+                    slots active{worker.status.stopping ? ' · Stopping' : ''}
+                  </p>
+                  <details>
+                    <summary className="cursor-pointer">Provider limits</summary>
+                    {Object.entries(worker.status.providerLimits).map(([provider, limit]) => (
+                      <p key={provider}>
+                        {provider}: {worker.status!.activeByProvider[provider] ?? 0} / {limit}
+                      </p>
+                    ))}
+                  </details>
+                </>
+              ) : (
+                <p>{worker.error ? 'Worker capacity unavailable' : 'Reading worker capacity'}</p>
+              )}
+            </div>
             <div className="mb-1 flex items-center justify-between px-1">
               <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
                 Recent Results
@@ -263,6 +300,11 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   <ServerJobItem
                     key={job.id}
                     job={job}
+                    waitReason={
+                      job.status === 'queued' && waitReasons.has(job.id)
+                        ? formatWaitReason(waitReasons.get(job.id)!)
+                        : undefined
+                    }
                     previewSrc={resultsByJobId.get(job.id) ?? null}
                     nowMs={nowMs}
                     isSelected={selectedJobId === job.id}
@@ -454,13 +496,14 @@ const RecentResultViewer: React.FC<{
 
 const ServerJobItem: React.FC<{
   job: StudioJob;
+  waitReason?: string;
   previewSrc: string | null;
   nowMs: number;
   isSelected: boolean;
   onInspect: () => void;
   onRetry?: () => void;
   onCancel: () => void;
-}> = ({ job, previewSrc, nowMs, isSelected, onInspect, onRetry, onCancel }) => {
+}> = ({ job, waitReason, previewSrc, nowMs, isSelected, onInspect, onRetry, onCancel }) => {
   const canCancel = job.status === 'queued' || job.status === 'running';
   const canResume = canResumeStudioJob(job);
   const canRetry = Boolean(onRetry) && (canRetryStudioJob(job) || canResume);
@@ -557,6 +600,7 @@ const ServerJobItem: React.FC<{
               </>
             ) : null}
           </div>
+          {waitReason ? <p className="mt-1 text-[10px] text-amber-300">{waitReason}</p> : null}
           {job.error ? (
             <p className="mt-1 line-clamp-2 rounded-[6px] border border-rose-500/2 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
               {job.error}

@@ -1136,8 +1136,8 @@
     </main>
     <script id="codemap-data" type="application/json">
       {
-        "generated_at": "2026-09-05T20:08:52Z",
-        "generated_from_commit": "715a8cebe86274d5e81200a6d243db588627ab1d",
+        "generated_at": "2026-09-05T20:20:53Z",
+        "generated_from_commit": "baf1510004cdd05abb9c753439c93cceb52b1fea",
         "scope": ["."],
         "nodes": [
           {
@@ -1291,17 +1291,21 @@
             "boundary": "Open jobs and filtered terminal history",
             "entrypoints": [
               "hooks/useJobHistory.ts:useJobHistory",
+              "hooks/useWorkerDiagnostics.ts:useWorkerDiagnostics",
               "components/QueuePanel.tsx:QueuePanel",
               "components/QueueBatchCard.tsx:QueueBatchCard"
             ],
             "tests": ["hooks/useJobHistory.test.tsx"],
             "callers": [],
-            "callees": [{ "id": "job-client", "type": "calls" }],
+            "callees": [
+              { "id": "job-client", "type": "calls" },
+              { "id": "runtime-settings", "type": "calls" }
+            ],
             "evidence": {
               "status": "verified",
               "locations": [
                 { "path": "hooks/useJobHistory.ts", "symbol": "useJobHistory" },
-                { "path": "components/QueuePanel.tsx", "symbol": "useJobHistory" },
+                { "path": "hooks/useWorkerDiagnostics.ts", "symbol": "useWorkerDiagnostics" },
                 { "path": "components/QueueBatchCard.tsx", "symbol": "QueueBatchCard" }
               ]
             }
@@ -1441,19 +1445,33 @@
             "id": "runtime-settings",
             "path": "apps/local-server/src/providers/runtimeConfig.ts",
             "type": "service",
-            "boundary": "Provider readiness and configuration",
+            "boundary": "Provider readiness, host limits and runtime diagnostics",
             "entrypoints": [
-              "apps/local-server/src/providers/runtimeConfig.ts:getExternalProviderRuntimePreflight"
+              "apps/local-server/src/providers/runtimeConfig.ts:getExternalProviderRuntimePreflight",
+              "apps/local-server/src/config.ts:getSettings",
+              "apps/local-server/src/runtimeRoutes.ts:createRuntimeRoutes"
             ],
             "tests": ["apps/local-server/src/providers/runtimeConfig.test.ts"],
-            "callers": [{ "id": "job-intake", "type": "calls" }],
-            "callees": [],
+            "callers": [
+              { "id": "job-history", "type": "calls" },
+              { "id": "job-intake", "type": "calls" },
+              { "id": "worker", "type": "calls" }
+            ],
+            "callees": [
+              { "id": "shared", "type": "calls" },
+              { "id": "worker", "type": "calls" }
+            ],
             "evidence": {
               "status": "verified",
               "locations": [
                 {
                   "path": "apps/local-server/src/providers/runtimeConfig.ts",
                   "symbol": "getExternalProviderRuntimePreflight"
+                },
+                { "path": "apps/local-server/src/config.ts", "symbol": "getSettings" },
+                {
+                  "path": "apps/local-server/src/runtimeRoutes.ts",
+                  "symbol": "createRuntimeRoutes"
                 }
               ]
             }
@@ -1465,19 +1483,25 @@
             "boundary": "Provider-independent domain and API contracts",
             "entrypoints": [
               "packages/shared/src/jobBatches.ts:JobStatus",
+              "packages/shared/src/workerContracts.ts:validateWorkerLimits",
               "packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy"
             ],
             "tests": [],
             "callers": [
               { "id": "job-intake", "type": "calls" },
               { "id": "job-routes", "type": "imports" },
-              { "id": "providers", "type": "calls" }
+              { "id": "providers", "type": "calls" },
+              { "id": "runtime-settings", "type": "calls" }
             ],
             "callees": [],
             "evidence": {
               "status": "verified",
               "locations": [
                 { "path": "packages/shared/src/jobBatches.ts", "symbol": "JobStatus" },
+                {
+                  "path": "packages/shared/src/workerContracts.ts",
+                  "symbol": "validateWorkerLimits"
+                },
                 {
                   "path": "packages/shared/src/codexExecutionContract.ts",
                   "symbol": "resolveCodexExecutionPolicy"
@@ -1565,7 +1589,7 @@
             "id": "worker",
             "path": "apps/local-server/src/worker.ts",
             "type": "queue",
-            "boundary": "Execution, cancellation and recovery ownership",
+            "boundary": "Fair provider scheduling, execution, cancellation and recovery",
             "entrypoints": ["apps/local-server/src/worker.ts:createWorkerController"],
             "tests": [
               "apps/local-server/src/workerShutdown.test.ts",
@@ -1574,13 +1598,15 @@
             ],
             "callers": [
               { "id": "job-intake", "type": "calls" },
-              { "id": "job-routes", "type": "calls" }
+              { "id": "job-routes", "type": "calls" },
+              { "id": "runtime-settings", "type": "calls" }
             ],
             "callees": [
               { "id": "asset-finalizer", "type": "calls" },
               { "id": "event-bus", "type": "publishes" },
               { "id": "jobs-db", "type": "writes" },
-              { "id": "providers", "type": "calls" }
+              { "id": "providers", "type": "calls" },
+              { "id": "runtime-settings", "type": "calls" }
             ],
             "evidence": {
               "status": "verified",
@@ -1697,6 +1723,15 @@
             "evidence": {
               "status": "verified",
               "locations": [{ "path": "hooks/useJobHistory.ts", "symbol": "listStudioJobs" }]
+            }
+          },
+          {
+            "from": "job-history",
+            "to": "runtime-settings",
+            "type": "calls",
+            "evidence": {
+              "status": "verified",
+              "locations": [{ "path": "services/studio-api/runtime.ts", "symbol": "/api/health" }]
             }
           },
           {
@@ -1843,6 +1878,28 @@
             }
           },
           {
+            "from": "runtime-settings",
+            "to": "shared",
+            "type": "calls",
+            "evidence": {
+              "status": "verified",
+              "locations": [
+                { "path": "apps/local-server/src/config.ts", "symbol": "validateWorkerLimits" }
+              ]
+            }
+          },
+          {
+            "from": "runtime-settings",
+            "to": "worker",
+            "type": "calls",
+            "evidence": {
+              "status": "verified",
+              "locations": [
+                { "path": "apps/local-server/src/runtimeRoutes.ts", "symbol": "readWorkerStatus()" }
+              ]
+            }
+          },
+          {
             "from": "style-client",
             "to": "style-routes",
             "type": "calls",
@@ -1938,6 +1995,20 @@
                 {
                   "path": "apps/local-server/src/worker.ts",
                   "symbol": "createExternalGenerationProvider"
+                }
+              ]
+            }
+          },
+          {
+            "from": "worker",
+            "to": "runtime-settings",
+            "type": "calls",
+            "evidence": {
+              "status": "verified",
+              "locations": [
+                {
+                  "path": "apps/local-server/src/worker.ts",
+                  "symbol": "getSettingsFn().workerLimits"
                 }
               ]
             }

@@ -1,10 +1,10 @@
 # Code map · codex-studio
 
-generated: 2026-09-05T20:08:52Z
-commit: 715a8cebe862
+generated: 2026-09-05T20:20:53Z
+commit: baf1510004cd
 scope: .
 
-counts: 20 nodes · 28 edges · 5 flows · 0 unknown
+counts: 20 nodes · 32 edges · 5 flows · 0 unknown
 
 ## Modules
 
@@ -52,9 +52,9 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
 
 - `job-history` · `hooks/useJobHistory.ts` · interface · Open jobs and filtered terminal history
   callers: (none)
-  callees: job-client (calls)
+  callees: job-client (calls), runtime-settings (calls)
   tests: hooks/useJobHistory.test.tsx
-  entry: hooks/useJobHistory.ts:useJobHistory, components/QueuePanel.tsx:QueuePanel, components/QueueBatchCard.tsx:QueueBatchCard
+  entry: hooks/useJobHistory.ts:useJobHistory, hooks/useWorkerDiagnostics.ts:useWorkerDiagnostics, components/QueuePanel.tsx:QueuePanel, components/QueueBatchCard.tsx:QueueBatchCard
 
 - `job-intake` · `apps/local-server/src/persistentJobIntake.ts` · service · Prepare all requests before acceptance and dispatch
   callers: job-routes (calls)
@@ -86,17 +86,17 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
   tests: apps/local-server/src/providers/comfyExecutor.test.ts, apps/local-server/src/providers/codexProvider.test.ts, apps/local-server/src/providers/externalProvider.test.ts
   entry: apps/local-server/src/providers/externalProvider.ts:createExternalGenerationProvider, apps/local-server/src/providers/comfyExecutor.ts:createComfyWorkflowExecutor, apps/local-server/src/providers/codexProvider.ts:createCodexGenerationProvider
 
-- `runtime-settings` · `apps/local-server/src/providers/runtimeConfig.ts` · service · Provider readiness and configuration
-  callers: job-intake (calls)
-  callees: (none)
+- `runtime-settings` · `apps/local-server/src/providers/runtimeConfig.ts` · service · Provider readiness, host limits and runtime diagnostics
+  callers: job-history (calls), job-intake (calls), worker (calls)
+  callees: shared (calls), worker (calls)
   tests: apps/local-server/src/providers/runtimeConfig.test.ts
-  entry: apps/local-server/src/providers/runtimeConfig.ts:getExternalProviderRuntimePreflight
+  entry: apps/local-server/src/providers/runtimeConfig.ts:getExternalProviderRuntimePreflight, apps/local-server/src/config.ts:getSettings, apps/local-server/src/runtimeRoutes.ts:createRuntimeRoutes
 
 - `shared` · `packages/shared/src` · module · Provider-independent domain and API contracts
-  callers: job-intake (calls), job-routes (imports), providers (calls)
+  callers: job-intake (calls), job-routes (imports), providers (calls), runtime-settings (calls)
   callees: (none)
   tests: (none)
-  entry: packages/shared/src/jobBatches.ts:JobStatus, packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy
+  entry: packages/shared/src/jobBatches.ts:JobStatus, packages/shared/src/workerContracts.ts:validateWorkerLimits, packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy
 
 - `style-client` · `services/studio-api/userStyles.ts` · service · User style API
   callers: style-editor (calls), styles (calls)
@@ -122,9 +122,9 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
   tests: (none)
   entry: components/recipes/StylesBrowser.tsx:StylesBrowser
 
-- `worker` · `apps/local-server/src/worker.ts` · queue · Execution, cancellation and recovery ownership
-  callers: job-intake (calls), job-routes (calls)
-  callees: asset-finalizer (calls), event-bus (publishes), jobs-db (writes), providers (calls)
+- `worker` · `apps/local-server/src/worker.ts` · queue · Fair provider scheduling, execution, cancellation and recovery
+  callers: job-intake (calls), job-routes (calls), runtime-settings (calls)
+  callees: asset-finalizer (calls), event-bus (publishes), jobs-db (writes), providers (calls), runtime-settings (calls)
   tests: apps/local-server/src/workerShutdown.test.ts, apps/local-server/src/workerAssetFinalizer.test.ts, apps/local-server/src/workerRouting.test.ts
   entry: apps/local-server/src/worker.ts:createWorkerController
 
@@ -139,6 +139,7 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
 - generation-ui -> generation-run · calls
 - job-client -> job-routes · calls
 - job-history -> job-client · calls
+- job-history -> runtime-settings · calls
 - job-intake -> jobs-db · writes
 - job-intake -> runtime-settings · calls
 - job-intake -> shared · calls
@@ -150,6 +151,8 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
 - job-routes -> shared · imports
 - job-routes -> worker · calls
 - providers -> shared · calls
+- runtime-settings -> shared · calls
+- runtime-settings -> worker · calls
 - style-client -> style-routes · calls
 - style-editor -> style-client · calls
 - styles -> style-client · calls
@@ -158,6 +161,7 @@ counts: 20 nodes · 28 edges · 5 flows · 0 unknown
 - worker -> event-bus · publishes
 - worker -> jobs-db · writes
 - worker -> providers · calls
+- worker -> runtime-settings · calls
 
 ## Unknown
 

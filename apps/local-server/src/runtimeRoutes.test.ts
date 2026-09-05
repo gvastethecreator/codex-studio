@@ -82,7 +82,7 @@ function createRoutes(overrides: Partial<Parameters<typeof createRuntimeRoutes>[
       codexImagegenModel: 'gpt-image-1',
       codexImagegenReasoningEffort: 'medium',
       codexImagegenServiceTier: null,
-      codexMaxConcurrentJobs: 1,
+      workerLimits: { global: 1, providers: {} },
     }),
     inspectLibrary: () => ({
       exists: true,
@@ -111,6 +111,10 @@ function createRoutes(overrides: Partial<Parameters<typeof createRuntimeRoutes>[
       activeWorkerCount: 0,
       queuedJobs: 0,
       trackedJobs: 0,
+      providerLimits: {},
+      activeByProvider: {},
+      waiting: [],
+      stopping: false,
     }),
     readiness: createReadiness(true),
     ...overrides,
@@ -154,7 +158,7 @@ describe('runtimeRoutes', () => {
         codexImagegenModel: 'gpt-image-1',
         codexImagegenReasoningEffort: 'medium',
         codexImagegenServiceTier: null,
-        codexMaxConcurrentJobs: 1,
+        workerLimits: { global: 1, providers: {} },
       }),
       inspectLibrary: () => ({
         exists: true,
@@ -183,6 +187,10 @@ describe('runtimeRoutes', () => {
         activeWorkerCount: 0,
         queuedJobs: 0,
         trackedJobs: 0,
+        providerLimits: {},
+        activeByProvider: {},
+        waiting: [],
+        stopping: false,
       }),
       readiness: createReadiness(true),
     });
@@ -228,7 +236,7 @@ describe('runtimeRoutes', () => {
         codexImagegenModel: 'gpt-image-1',
         codexImagegenReasoningEffort: 'medium',
         codexImagegenServiceTier: null,
-        codexMaxConcurrentJobs: 1,
+        workerLimits: { global: 1, providers: {} },
       }),
       inspectLibrary: () => ({
         exists: true,
@@ -257,6 +265,10 @@ describe('runtimeRoutes', () => {
         activeWorkerCount: 0,
         queuedJobs: 0,
         trackedJobs: 0,
+        providerLimits: {},
+        activeByProvider: {},
+        waiting: [],
+        stopping: false,
       }),
     });
 
@@ -284,7 +296,7 @@ describe('runtimeRoutes', () => {
         codexImagegenModel: 'gpt-image-1',
         codexImagegenReasoningEffort: 'medium',
         codexImagegenServiceTier: null,
-        codexMaxConcurrentJobs: 1,
+        workerLimits: { global: 1, providers: {} },
       }),
       inspectLibrary: () => ({
         exists: true,
@@ -319,6 +331,10 @@ describe('runtimeRoutes', () => {
         activeWorkerCount: 0,
         queuedJobs: 0,
         trackedJobs: 0,
+        providerLimits: {},
+        activeByProvider: {},
+        waiting: [],
+        stopping: false,
       }),
     });
 
@@ -343,7 +359,7 @@ describe('runtimeRoutes', () => {
         codexImagegenModel: 'gpt-image-1',
         codexImagegenReasoningEffort: 'medium',
         codexImagegenServiceTier: null,
-        codexMaxConcurrentJobs: 1,
+        workerLimits: { global: 1, providers: {} },
       }),
       inspectLibrary: () => ({
         exists: true,
@@ -371,6 +387,10 @@ describe('runtimeRoutes', () => {
         activeWorkerCount: 0,
         queuedJobs: 0,
         trackedJobs: 0,
+        providerLimits: {},
+        activeByProvider: {},
+        waiting: [],
+        stopping: false,
       }),
       readiness: createReadiness(false),
     });
@@ -429,7 +449,7 @@ describe('runtimeRoutes', () => {
         codexImagegenModel: 'gpt-image-1',
         codexImagegenReasoningEffort: 'medium',
         codexImagegenServiceTier: null,
-        codexMaxConcurrentJobs: 1,
+        workerLimits: { global: 1, providers: {} },
       }),
       inspectLibrary: () => ({
         exists: true,
@@ -457,6 +477,10 @@ describe('runtimeRoutes', () => {
         activeWorkerCount: 0,
         queuedJobs: 0,
         trackedJobs: 0,
+        providerLimits: {},
+        activeByProvider: {},
+        waiting: [],
+        stopping: false,
       }),
       readiness,
     });
@@ -488,7 +512,7 @@ describe('runtimeRoutes', () => {
         codexImagegenModel: 'gpt-image-1',
         codexImagegenReasoningEffort: 'medium',
         codexImagegenServiceTier: null,
-        codexMaxConcurrentJobs: 1,
+        workerLimits: { global: 1, providers: {} },
       }),
       inspectLibrary: () => ({
         exists: false,
@@ -517,6 +541,10 @@ describe('runtimeRoutes', () => {
         activeWorkerCount: 0,
         queuedJobs: 0,
         trackedJobs: 0,
+        providerLimits: {},
+        activeByProvider: {},
+        waiting: [],
+        stopping: false,
       }),
       readiness: createReadiness(true),
     });
@@ -583,7 +611,7 @@ describe('runtimeRoutes', () => {
         codexImagegenModel: 'gpt-image-1',
         codexImagegenReasoningEffort: 'medium',
         codexImagegenServiceTier: null,
-        codexMaxConcurrentJobs: 1,
+        workerLimits: { global: 1, providers: {} },
       }),
     });
 

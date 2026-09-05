@@ -121,6 +121,8 @@ Run `bun run studio:init` to create local defaults and apply pending SQLite migr
 
 For manual setup, copy `.env.example` to `.env.local`.
 
+Worker capacity is configured on the host and takes effect after a server restart. `STUDIO_MAX_CONCURRENT_JOBS` is the global ceiling (default 4, range 1–16). Each `STUDIO_MAX_CONCURRENT_<PROVIDER>_JOBS` value limits that provider (default 1, no higher than the global ceiling). The Codex-named setting now controls only Codex; set the global variable explicitly when updating an older checkout. Invalid limits stop startup. Queue shows active slots, provider limits, and why each job is waiting. Available providers take turns; jobs within one provider keep their arrival order. Cancellation and asset import retain their slot until processing finishes.
+
 By default, the Studio Library lives under your OS home directory as `Codex Studio`. Set a custom absolute path only when you need one:
 
 ```env

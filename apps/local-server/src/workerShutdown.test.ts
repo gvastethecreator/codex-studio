@@ -4,6 +4,8 @@ import path from 'node:path';
 import os from 'node:os';
 
 import type { Job } from '../../../packages/shared/src';
+import { BUILT_IN_GENERATION_PROVIDERS } from '../../../packages/shared/src/generationContracts';
+import { validateWorkerLimits } from '../../../packages/shared/src/workerContracts';
 import type { GenerationProvider } from './providers/types';
 import { ProviderExecutionUncertainError } from './workerErrors';
 import { createJobRoutes } from './jobRoutes';
@@ -122,7 +124,15 @@ function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run'], co
   const controller = createWorkerController({
     createGenerationProvider: () => provider,
     createExternalProvider: () => provider,
-    getSettings: () => ({ codexMaxConcurrentJobs: concurrency }) as never,
+    getSettings: () =>
+      ({
+        workerLimits: {
+          global: concurrency,
+          providers: Object.fromEntries(
+            BUILT_IN_GENERATION_PROVIDERS.map((provider) => [provider, 1]),
+          ),
+        },
+      }) as never,
     addJobEvent,
     getJob: (id) => jobs.get(id) ?? null,
     updateJobStatus,
@@ -138,6 +148,35 @@ function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run'], co
 }
 
 describe('worker shutdown', () => {
+  it('rejects invalid resource limits and cancels reserved work before a provider starts', async () => {
+    for (const global of [0, -1, 1.5, Infinity, 17]) {
+      expect(() => validateWorkerLimits({ global, providers: {} })).toThrow('global capacity');
+    }
+    for (const limit of [0, -1, 1.5, Infinity, 3]) {
+      expect(() => validateWorkerLimits({ global: 2, providers: { comfy: limit } })).toThrow(
+        'comfy',
+      );
+    }
+    const cancelled = { ...createJob('reserved'), providerId: 'comfy' as const };
+    const next = { ...createJob('next'), providerId: 'codex' as const };
+    const run = vi.fn(async () => ({
+      assets: [],
+      transcript: '',
+      threadId: null,
+      turnId: null,
+      durationMs: 1,
+    }));
+    const harness = createWorkerHarness([cancelled, next], run);
+    harness.controller.enqueueJob(cancelled);
+    harness.controller.enqueueJob(next);
+    queueMicrotask(() => harness.controller.cancelQueuedOrRunningJob(cancelled.id));
+    await vi.waitFor(() => expect(harness.controller.getWorkerStatus().trackedJobs).toBe(0));
+    expect(harness.jobs.get(cancelled.id)?.status).toBe('cancelled');
+    expect(run.mock.calls).toHaveLength(1);
+    expect(run).toHaveBeenCalledWith(expect.objectContaining({ id: next.id }));
+    expect(harness.controller.getWorkerStatus().activeByProvider).toEqual({});
+    await harness.controller.shutdown();
+  });
   it('records the fixed mixed-provider scheduling workload without real provider calls', async () => {
     const workload = [
       ...Array.from({ length: 4 }, (_, index) => ({
@@ -197,6 +236,17 @@ describe('worker shutdown', () => {
     try {
       jobList.forEach((job) => harness.controller.enqueueJob(job));
       harness.controller.enqueueJob(jobList[0]!);
+      await new Promise<void>((resolve) => queueMicrotask(resolve));
+      expect(harness.controller.getWorkerStatus().waiting).toContainEqual({
+        jobId: 'slow-1',
+        providerId: 'comfy',
+        reason: 'provider_capacity',
+      });
+      expect(harness.controller.getWorkerStatus().waiting).toContainEqual({
+        jobId: 'fast-grok',
+        providerId: 'grok',
+        reason: 'global_capacity',
+      });
       await vi.waitFor(() => expect(harness.controller.getWorkerStatus().trackedJobs).toBe(0));
       expect(
         sequence
@@ -210,6 +260,16 @@ describe('worker shutdown', () => {
           .map((entry) => entry.id),
       ).toEqual(['slow-0', 'slow-1', 'slow-2', 'slow-3']);
       expect(maximumActive).toBeLessThanOrEqual(2);
+      const starts = sequence.filter((entry) => entry.event === 'start');
+      expect(starts.slice(0, 2).map((entry) => entry.id)).toEqual(['slow-0', 'fast-codex']);
+      expect(starts.findIndex((entry) => entry.id === 'fast-fal')).toBeLessThan(
+        starts.findIndex((entry) => entry.id === 'slow-1'),
+      );
+      let activeComfy = 0;
+      for (const entry of sequence.filter((entry) => entry.providerId === 'comfy')) {
+        activeComfy += entry.event === 'start' ? 1 : -1;
+        expect(activeComfy).toBeLessThanOrEqual(1);
+      }
       const output = process.env.WORKFLOW_SCHEDULER_OUTPUT;
       if (output) {
         mkdirSync(path.dirname(output), { recursive: true });
@@ -223,6 +283,7 @@ describe('worker shutdown', () => {
               device: { os: `${os.platform()} ${os.release()}`, cpu: os.cpus()[0]?.model },
               samples: 1,
               globalLimit: 2,
+              providerLimits: harness.controller.getWorkerStatus().providerLimits,
               workload,
               sequence,
               maximumActive,
@@ -371,6 +432,12 @@ describe('worker shutdown', () => {
       activeWorkerCount: 0,
       queuedJobs: 0,
       trackedJobs: 0,
+      providerLimits: Object.fromEntries(
+        BUILT_IN_GENERATION_PROVIDERS.map((provider) => [provider, 1]),
+      ),
+      activeByProvider: {},
+      waiting: [],
+      stopping: true,
     });
 
     controller.enqueueJob(createJob('job-after-shutdown'));

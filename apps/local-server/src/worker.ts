@@ -27,6 +27,10 @@ import type { GenerationProvider } from './providers/types';
 import { embedMetadata } from './metadataEmbedder';
 import { parsePromptTransport } from '../../../packages/shared/src/promptTransport';
 import type { Job } from '../../../packages/shared/src/types';
+import {
+  validateWorkerLimits,
+  type WorkerStatus,
+} from '../../../packages/shared/src/workerContracts';
 import { readEditableStudioSettings } from './studioSettingsStore';
 import { resolveJobCatalogContext } from './workerCatalogContext';
 import { resolveWorkerRuntimeTarget } from './workerRouting';
@@ -39,12 +43,7 @@ import {
   ProviderExecutionUncertainError,
 } from './workerErrors';
 
-export interface WorkerStatus {
-  maxConcurrentJobs: number;
-  activeWorkerCount: number;
-  queuedJobs: number;
-  trackedJobs: number;
-}
+export type { WorkerStatus } from '../../../packages/shared/src/workerContracts';
 
 export interface WorkerController {
   enqueueJob(job: Job): void;
@@ -163,6 +162,12 @@ export function createWorkerController({
   resolveWorkerRuntimeTarget: resolveWorkerRuntimeTargetFn = resolveWorkerRuntimeTarget,
   ensureThumbnailVariant: ensureThumbnailVariantFn = ensureThumbnailVariantDefault,
 }: CreateWorkerControllerDependencies = {}): WorkerController {
+  const limits = validateWorkerLimits(structuredClone(getSettingsFn().workerLimits));
+  const activeByProvider = new Map<string, number>();
+  let lastStartedProvider: string | null = null;
+  const providerFor = (job: Job) =>
+    job.kind === 'dry_run' ? 'dry_run' : (job.providerId ?? job.sourceSpec?.providerId ?? 'codex');
+  const providerLimit = (provider: string) => limits.providers[provider] ?? 1;
   const executionSpans = new Map<
     string,
     { attempt: number; executionId: string; transport: string }
@@ -196,7 +201,7 @@ export function createWorkerController({
   });
 
   function getMaxConcurrentJobs() {
-    return getSettingsFn().codexMaxConcurrentJobs;
+    return limits.global;
   }
 
   function buildCatalogGenerationConfig(prompt: string) {
@@ -445,16 +450,14 @@ export function createWorkerController({
     });
   }
 
-  async function processJob(job: Job) {
+  async function processJob(job: Job, controller: AbortController) {
     executionSpans.set(job.id, {
       attempt: job.attempt ?? 1,
       executionId: randomUUID(),
       transport: job.execution?.providerOptions?.codex?.transport ?? job.providerId ?? 'unknown',
     });
-    const controller = new AbortController();
-    runningJobControllers.set(job.id, controller);
-
     try {
+      throwIfAborted(controller.signal);
       recordJobEvent(job.id, 'job.started', 'Job execution started.', {
         startedAt: new Date().toISOString(),
       });
@@ -553,15 +556,36 @@ export function createWorkerController({
   async function processQueue() {
     if (isShuttingDown) return;
     while (activeWorkerCount < getMaxConcurrentJobs() && jobQueue.length > 0) {
-      const job = jobQueue.shift();
-      if (!job) continue;
+      const providers = [...new Set(jobQueue.map(providerFor))];
+      const lastIndex = lastStartedProvider ? providers.indexOf(lastStartedProvider) : -1;
+      let selectedProvider: string | undefined;
+      for (let offset = 1; offset <= providers.length; offset += 1) {
+        const provider = providers[(lastIndex + offset) % providers.length]!;
+        if ((activeByProvider.get(provider) ?? 0) < providerLimit(provider)) {
+          selectedProvider = provider;
+          break;
+        }
+      }
+      if (!selectedProvider) return;
+      const selectedIndex = jobQueue.findIndex(
+        (candidate) => providerFor(candidate) === selectedProvider,
+      );
+      const job = jobQueue.splice(selectedIndex, 1)[0]!;
+      const provider = selectedProvider;
+      lastStartedProvider = provider;
+      activeByProvider.set(provider, (activeByProvider.get(provider) ?? 0) + 1);
+      const controller = new AbortController();
+      runningJobControllers.set(job.id, controller);
 
       activeWorkerCount += 1;
       const workPromise = Promise.resolve().then(async () => {
         try {
-          await processJob(job);
+          await processJob(job, controller);
         } finally {
           activeWorkerCount -= 1;
+          const remaining = (activeByProvider.get(provider) ?? 1) - 1;
+          if (remaining === 0) activeByProvider.delete(provider);
+          else activeByProvider.set(provider, remaining);
           activeJobPromises.delete(job.id);
           queueMicrotask(processQueue);
         }
@@ -614,6 +638,20 @@ export function createWorkerController({
         activeWorkerCount,
         queuedJobs: jobQueue.length,
         trackedJobs: runningJobs.size,
+        providerLimits: { ...limits.providers },
+        activeByProvider: Object.fromEntries(activeByProvider),
+        stopping: isShuttingDown,
+        waiting: jobQueue.map((job) => {
+          const providerId = providerFor(job);
+          const reason = isShuttingDown
+            ? 'stopping'
+            : (activeByProvider.get(providerId) ?? 0) >= providerLimit(providerId)
+              ? 'provider_capacity'
+              : activeWorkerCount >= limits.global
+                ? 'global_capacity'
+                : 'provider_turn';
+          return { jobId: job.id, providerId, reason };
+        }),
       };
     },
     async resetWorkerState() {

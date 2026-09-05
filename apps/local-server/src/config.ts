@@ -1,6 +1,8 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import type { StudioSettings } from '../../../packages/shared/src';
+import { BUILT_IN_GENERATION_PROVIDERS } from '../../../packages/shared/src/generationContracts';
+import { validateWorkerLimits } from '../../../packages/shared/src/workerContracts';
 import { DEFAULT_STUDIO_LIBRARY_FOLDER_NAME } from '../../../packages/shared/src/onboardingContracts';
 import { resolveUserHome } from './platformHome';
 
@@ -10,7 +12,6 @@ const DEFAULT_CODEX_IMAGEGEN_MODEL = 'gpt-5.4';
 const DEFAULT_CODEX_IMAGEGEN_REASONING_EFFORT: StudioSettings['codexImagegenReasoningEffort'] =
   'medium';
 const DEFAULT_CODEX_IMAGEGEN_SERVICE_TIER: StudioSettings['codexImagegenServiceTier'] = null;
-const DEFAULT_MAX_CONCURRENT_CODEX_JOBS = 4;
 
 let envLocalLoaded = false;
 
@@ -116,10 +117,15 @@ export function getSettings(): StudioSettings {
       'CODEX_IMAGEGEN_SERVICE_TIER',
       DEFAULT_CODEX_IMAGEGEN_SERVICE_TIER,
     ),
-    codexMaxConcurrentJobs: readPositiveIntSetting(
-      'STUDIO_MAX_CONCURRENT_CODEX_JOBS',
-      DEFAULT_MAX_CONCURRENT_CODEX_JOBS,
-    ),
+    workerLimits: validateWorkerLimits({
+      global: Number(process.env.STUDIO_MAX_CONCURRENT_JOBS ?? 4),
+      providers: Object.fromEntries(
+        BUILT_IN_GENERATION_PROVIDERS.map((provider) => [
+          provider,
+          Number(process.env[`STUDIO_MAX_CONCURRENT_${provider.toUpperCase()}_JOBS`] ?? 1),
+        ]),
+      ),
+    }),
   };
 }
 

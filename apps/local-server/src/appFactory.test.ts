@@ -192,6 +192,10 @@ function createWorkerDependency(): Pick<
       activeWorkerCount: 0,
       queuedJobs: 0,
       trackedJobs: 0,
+      providerLimits: {},
+      activeByProvider: {},
+      waiting: [],
+      stopping: false,
     })),
     resetWorkerState: vi.fn(async () => {}),
     shutdown: vi.fn(async () => {}),
@@ -507,6 +511,10 @@ describe('createStudioApp', () => {
       activeWorkerCount: 3,
       queuedJobs: 4,
       trackedJobs: 7,
+      providerLimits: {},
+      activeByProvider: {},
+      waiting: [],
+      stopping: false,
     };
     const worker = createWorkerDependency();
     worker.getWorkerStatus = vi.fn(() => workerStatus);

@@ -198,7 +198,7 @@ export interface StudioSettings {
   codexImagegenModel: string;
   codexImagegenReasoningEffort: CodexReasoningEffort;
   codexImagegenServiceTier: Exclude<CodexServiceTier, 'standard'> | null;
-  codexMaxConcurrentJobs: number;
+  workerLimits: import('./workerContracts').WorkerLimits;
 }
 
 export interface Job {
@@ -599,12 +599,7 @@ export interface HealthResponse {
     codexReady: boolean;
     onboardingReady: boolean;
   };
-  worker: {
-    maxConcurrentJobs: number;
-    activeWorkerCount: number;
-    queuedJobs: number;
-    trackedJobs: number;
-  };
+  worker: import('./workerContracts').WorkerStatus;
 }
 
 export interface StudioResetResponse {

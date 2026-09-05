@@ -29,7 +29,7 @@ boundaries = [
     ("job-client", "services/studio-api/jobs.ts", "service", "Browser job and atomic batch API", "createStudioJobBatch"),
     ("job-routes", "apps/local-server/src/jobRoutes.ts", "interface", "Job intake, inspection and actions", "createJobRoutes"),
     ("job-intake", "apps/local-server/src/persistentJobIntake.ts", "service", "Prepare all requests before acceptance and dispatch", "createPersistentJobIntake"),
-    ("worker", "apps/local-server/src/worker.ts", "queue", "Execution, cancellation and recovery ownership", "createWorkerController"),
+    ("worker", "apps/local-server/src/worker.ts", "queue", "Fair provider scheduling, execution, cancellation and recovery", "createWorkerController"),
     ("providers", "apps/local-server/src/providers", "service", "Provider execution adapters and runtime identity", "createExternalGenerationProvider"),
     ("jobs-db", "apps/local-server/src/db/jobs.ts", "database", "Durable jobs, batch membership, attempts and checkpoints", "updateJobStatus"),
     ("event-bus", "apps/local-server/src/events.ts", "service", "Revisioned job and catalog events", "publishEvent"),
@@ -42,7 +42,7 @@ boundaries = [
     ("style-client", "services/studio-api/userStyles.ts", "service", "User style API", "createUserStylePreset"),
     ("style-routes", "apps/local-server/src/userStyleRoutes.ts", "interface", "Persistent user style CRUD", "createUserStyleRoutes"),
     ("shared", "packages/shared/src", "module", "Provider-independent domain and API contracts", "JobStatus"),
-    ("runtime-settings", "apps/local-server/src/providers/runtimeConfig.ts", "service", "Provider readiness and configuration", "getExternalProviderRuntimePreflight"),
+    ("runtime-settings", "apps/local-server/src/providers/runtimeConfig.ts", "service", "Provider readiness, host limits and runtime diagnostics", "getExternalProviderRuntimePreflight"),
 ]
 
 def evidence(path, symbol):
@@ -62,11 +62,14 @@ for node_id, path, kind, boundary, symbol in boundaries:
 
 for node in nodes:
     if node["id"] == "shared":
+        node["entrypoints"].append("packages/shared/src/workerContracts.ts:validateWorkerLimits")
+        node["evidence"]["locations"].append(dict(path="packages/shared/src/workerContracts.ts", symbol="validateWorkerLimits"))
         node["entrypoints"].append("packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy")
         node["evidence"]["locations"].append(dict(path="packages/shared/src/codexExecutionContract.ts", symbol="resolveCodexExecutionPolicy"))
     if node["id"] == "job-history":
+        node["entrypoints"].append("hooks/useWorkerDiagnostics.ts:useWorkerDiagnostics")
+        node["evidence"]["locations"].append(dict(path="hooks/useWorkerDiagnostics.ts", symbol="useWorkerDiagnostics"))
         node["entrypoints"].append("components/QueuePanel.tsx:QueuePanel")
-        node["evidence"]["locations"].append(dict(path="components/QueuePanel.tsx", symbol="useJobHistory"))
         node["entrypoints"].append("components/QueueBatchCard.tsx:QueueBatchCard")
         node["evidence"]["locations"].append(dict(path="components/QueueBatchCard.tsx", symbol="QueueBatchCard"))
     if node["id"] == "job-routes":
@@ -77,6 +80,10 @@ for node in nodes:
         node["evidence"]["locations"].append(dict(path="apps/local-server/src/db/jobBatches.ts", symbol="createJobBatch"))
     if node["id"] == "worker":
         node["tests"] = ["apps/local-server/src/workerShutdown.test.ts", "apps/local-server/src/workerAssetFinalizer.test.ts", "apps/local-server/src/workerRouting.test.ts"]
+    if node["id"] == "runtime-settings":
+        for source_path, symbol in [("apps/local-server/src/config.ts", "getSettings"), ("apps/local-server/src/runtimeRoutes.ts", "createRuntimeRoutes")]:
+            node["entrypoints"].append(source_path + ":" + symbol)
+            node["evidence"]["locations"].append(dict(path=source_path, symbol=symbol))
     if node["id"] == "providers":
         node["tests"] = ["apps/local-server/src/providers/comfyExecutor.test.ts", "apps/local-server/src/providers/codexProvider.test.ts", "apps/local-server/src/providers/externalProvider.test.ts"]
         for filename, symbol in [("comfyExecutor.ts", "createComfyWorkflowExecutor"), ("codexProvider.ts", "createCodexGenerationProvider")]:
@@ -86,6 +93,10 @@ for node in nodes:
 
 # from, to, interaction, evidence path and literal
 links = [
+    ("job-history", "runtime-settings", "calls", "services/studio-api/runtime.ts", "/api/health"),
+    ("runtime-settings", "worker", "calls", "apps/local-server/src/runtimeRoutes.ts", "readWorkerStatus()"),
+    ("worker", "runtime-settings", "calls", "apps/local-server/src/worker.ts", "getSettingsFn().workerLimits"),
+    ("runtime-settings", "shared", "calls", "apps/local-server/src/config.ts", "validateWorkerLimits"),
     ("job-history", "job-client", "calls", "hooks/useJobHistory.ts", "listStudioJobs"),
     ("generation-ui", "generation-run", "calls", "hooks/useGenerationPipeline.ts", "runLocalGenerationWithLifecycle"),
     ("generation-run", "job-client", "calls", "services/localGenerationRun.ts", "createStudioJobBatch"),
