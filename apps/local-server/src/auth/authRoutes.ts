@@ -2,7 +2,7 @@ import { Hono } from 'hono';
 import {
   isSubscriptionProviderId,
   type SubscriptionProviderId,
-} from '../../../../packages/shared/src';
+} from '../../../../packages/shared/src/subscriptionAuth';
 import {
   getSubscriptionAuthController,
   SubscriptionAuthRouteError,

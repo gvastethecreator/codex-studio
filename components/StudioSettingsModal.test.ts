@@ -31,7 +31,11 @@ describe('StudioSettingsModal provider defaults', () => {
     expect(EXTERNAL_SCAN_PATH_HELP).toContain('Studio Library');
     expect(EXTERNAL_SCAN_PATH_LABEL.toLowerCase()).not.toContain('preferred output');
 
-    const settingsSource = ['StudioSettingsModal.tsx', 'settings/SettingsFormPanel.tsx']
+    const settingsSource = [
+      'StudioSettingsModal.tsx',
+      'settings/SettingsFormPanel.tsx',
+      'settings/SettingsProvidersPanel.tsx',
+    ]
       .map((file) => readFileSync(path.join(import.meta.dirname, file), 'utf8'))
       .join('\n');
     expect(settingsSource).toContain('EXTERNAL_SCAN_PATH_LABEL');
