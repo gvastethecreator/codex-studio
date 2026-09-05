@@ -17,6 +17,13 @@ import type {
 } from '../packages/shared/src';
 import type { AspectRatio, Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
+import {
+  CODEX_HTTP_MODEL,
+  CODEX_HTTP_REASONING,
+  resolveCodexExecutionPolicy,
+  describeCodexExecution,
+  type CodexExecutionTransport,
+} from '../packages/shared/src/codexExecutionContract';
 
 const EMPTY_CODEX_MODELS: CodexModel[] = [];
 
@@ -64,6 +71,7 @@ export function buildComposerProviderProjection({
   grokStatus,
   grokDiagnostics,
   codexModelCatalog,
+  codexTransport,
   executionModel,
   executionReasoningEffort,
   executionSpeed,
@@ -77,49 +85,91 @@ export function buildComposerProviderProjection({
   grokStatus?: string;
   grokDiagnostics?: string[];
   codexModelCatalog: CodexModelCatalogResponse | null;
+  codexTransport?: CodexExecutionTransport | null;
   executionModel: ImageGenerationConfig['executionModel'];
   executionReasoningEffort: ImageGenerationConfig['executionReasoningEffort'];
   executionSpeed: ImageGenerationConfig['executionSpeed'];
   catalogError: string | null;
 }): ComposerProviderProjection {
   const kind = resolveComposerProviderKind(providerId);
-  const models = codexModelCatalog?.models ?? EMPTY_CODEX_MODELS;
+  const isHttp = kind === 'codex' && codexTransport === 'subscription_http';
+  const models = isHttp ? [CODEX_HTTP_MODEL] : (codexModelCatalog?.models ?? EMPTY_CODEX_MODELS);
   const preferredModelId = pickPreferredCodexModel(models, executionModel);
-  const selectedModel =
-    models.find((model) => model.id === executionModel) ??
-    models.find((model) => model.id === preferredModelId) ??
-    null;
+  const selectedModel = models.find((model) => model.id === executionModel) ?? null;
   const modelLabel = formatCodexModelLabel(executionModel, selectedModel?.displayName);
   const sourceMessage = buildCodexFallbackCatalogErrorMessage(codexModelCatalog) || catalogError;
+  let codexBlock: GrokImagineGenerateBlock | null = null;
+  let transportSummary = codexTransport === 'codex_app_server' ? 'Codex app-server' : '';
+  if (kind === 'codex') {
+    if (!codexTransport)
+      codexBlock = {
+        code: 'codex_execution_checking',
+        message: 'Checking the Codex execution route.',
+      };
+    else if (isHttp) {
+      try {
+        const policy = resolveCodexExecutionPolicy(
+          {
+            model: executionModel,
+            reasoningEffort: executionReasoningEffort,
+            serviceTier: executionSpeed === 'standard' ? null : executionSpeed,
+          },
+          { output: { aspectRatio }, assets: attachments },
+          codexTransport,
+        );
+        transportSummary = describeCodexExecution(policy);
+      } catch (error) {
+        codexBlock = {
+          code: 'codex_execution_unsupported',
+          message: error instanceof Error ? error.message : 'Review HTTP execution settings.',
+        };
+        transportSummary = 'ChatGPT HTTP · review execution settings';
+      }
+    } else if (
+      !selectedModel ||
+      !getCodexReasoningOptions(selectedModel).includes(executionReasoningEffort) ||
+      !getCodexSpeedOptions(selectedModel).includes(executionSpeed)
+    ) {
+      codexBlock = {
+        code: 'codex_execution_unsupported',
+        message: 'Choose a current Codex model, reasoning effort and speed before generating.',
+      };
+    }
+  }
 
   return {
     kind,
     ratios: kind === 'grok' ? listGrokImagineRatioOptions() : IMAGE_GEN_RATIO_OPTIONS,
     showCodexPromptTools: kind !== 'grok',
     showCodexModelChrome: kind === 'codex',
-    generateBlock: resolveGrokImagineGenerateBlock({
-      providerId,
-      recipeId,
-      aspectRatio,
-      attachments,
-      canExecute: grokCanExecute,
-      status: grokStatus,
-      diagnostics: grokDiagnostics,
-    }),
+    generateBlock:
+      codexBlock ??
+      resolveGrokImagineGenerateBlock({
+        providerId,
+        recipeId,
+        aspectRatio,
+        attachments,
+        canExecute: grokCanExecute,
+        status: grokStatus,
+        diagnostics: grokDiagnostics,
+      }),
     execution: {
       models,
       selectedModel,
       preferredModelId,
-      reasoningOptions: getCodexReasoningOptions(selectedModel),
-      speedOptions: getCodexSpeedOptions(selectedModel),
+      reasoningOptions: isHttp ? [CODEX_HTTP_REASONING] : getCodexReasoningOptions(selectedModel),
+      speedOptions: isHttp ? ['standard'] : getCodexSpeedOptions(selectedModel),
       summary: [
         modelLabel,
-        executionReasoningEffort?.toUpperCase(),
-        executionSpeed !== 'standard' ? formatCodexSpeedLabel(executionSpeed) : null,
+        transportSummary,
+        !isHttp ? executionReasoningEffort?.toUpperCase() : null,
+        !isHttp && executionSpeed !== 'standard' ? formatCodexSpeedLabel(executionSpeed) : null,
       ]
         .filter(Boolean)
         .join(' · '),
-      sourceMessage,
+      sourceMessage: isHttp
+        ? 'HTTP uses GPT-5.5 and GPT Image 2. Image quality is medium; reasoning and speed are managed by the provider.'
+        : sourceMessage,
     },
   };
 }

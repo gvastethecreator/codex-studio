@@ -313,6 +313,14 @@ export function createWorkerController({
     });
   }
 
+  function persistProviderCheckpoint(job: Job, checkpoint: NonNullable<Job['remoteExecution']>) {
+    updateJobRemoteExecutionFn(job.id, checkpoint);
+    job.remoteExecution = checkpoint;
+    addJobEventFn(job.id, 'provider.checkpoint', `Remote execution ${checkpoint.phase}.`, {
+      ...checkpoint,
+    });
+  }
+
   async function runCodexJob(job: Job, signal?: AbortSignal) {
     addJobEventFn(job.id, 'codex.started', 'Codex image generation started.');
     logger('info', 'worker', 'Codex imagegen job started.', job.id);
@@ -327,6 +335,8 @@ export function createWorkerController({
       execution: job.execution,
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
       sourceSpec: job.sourceSpec,
+      remoteExecution: job.remoteExecution,
+      checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint),
       signal,
     });
 
@@ -388,14 +398,7 @@ export function createWorkerController({
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,
       sourceSpec: job.sourceSpec,
       remoteExecution: job.remoteExecution,
-      checkpointRemoteExecution: (checkpoint) => {
-        updateJobRemoteExecutionFn(job.id, checkpoint);
-        job.remoteExecution = checkpoint;
-        addJobEventFn(job.id, 'provider.checkpoint', `Remote execution ${checkpoint.phase}.`, {
-          promptId: checkpoint.promptId,
-          runtimeIdentity: checkpoint.runtimeIdentity,
-        });
-      },
+      checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint),
       signal,
     });
 
@@ -480,11 +483,20 @@ export function createWorkerController({
         );
       }
     } catch (error) {
-      if (error instanceof ProviderExecutionUncertainError) {
-        addJobEventFn(job.id, 'job.needs_review', error.message);
-        updateJobStatusFn(job.id, 'needs_review', error.message);
+      if (
+        error instanceof ProviderExecutionUncertainError ||
+        (!isAbortError(error) &&
+          job.remoteExecution &&
+          ['submitting', 'accepted', 'completed'].includes(job.remoteExecution.phase))
+      ) {
+        const message =
+          error instanceof ProviderExecutionUncertainError
+            ? error.message
+            : 'Provider execution was recorded, but local completion could not be confirmed. Review this job before creating another request.';
+        addJobEventFn(job.id, 'job.needs_review', message);
+        updateJobStatusFn(job.id, 'needs_review', message);
         publishEventFn('job.progress', getJobFn(job.id));
-        logger('warn', 'worker', error.message, job.id);
+        logger('warn', 'worker', message, job.id);
       } else if (isAbortError(error)) {
         const abortReason = runningJobAbortReasons.get(job.id) ?? 'user';
         if (

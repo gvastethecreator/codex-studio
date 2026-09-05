@@ -1,55 +1,41 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vite-plus/test';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
+import { createCodexResponsesImageExecutor } from './codexResponsesImageExecutor';
 import {
-  createCodexResponsesImageExecutor,
-  resolveCodexImageQuality,
-  resolveCodexImageSize,
-} from './codexResponsesImageExecutor';
+  CODEX_HTTP_EXECUTION_DEFAULTS,
+  type JobExecutionOptions,
+  type JobRemoteExecution,
+} from '../../../../packages/shared/src';
 import { SubscriptionHttpError } from './subscriptionHttpError';
 
 const PNG_B64 =
   'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==';
 
-describe('codex responses image executor', () => {
-  it('maps quality and size from job options', () => {
-    expect(resolveCodexImageQuality('gpt-image-2-high', 'low')).toBe('high');
-    expect(resolveCodexImageQuality(null, 'minimal')).toBe('low');
-    expect(resolveCodexImageQuality(null, null)).toBe('medium');
-    const job = {
-      id: 'job-1',
-      workspaceId: 'workspace-1',
-      prompt: 'key',
-      execution: null,
-      sourceSpec: createGenerationTaskSpec({
-        id: 'spec-1',
-        task: 'image_generate',
-        providerId: 'codex',
-        prompt: 'key',
-        output: { aspectRatio: '2:3' },
-      }),
-    };
-    expect(resolveCodexImageSize(job)).toBe('1024x1536');
-    expect(
-      resolveCodexImageSize({
-        ...job,
-        sourceSpec: createGenerationTaskSpec({
-          id: 'spec-wide',
-          task: 'image_generate',
-          providerId: 'codex',
-          prompt: 'key',
-          output: { aspectRatio: '4:3', imageSize: '1536x1152' },
-        }),
-      }),
-    ).toBe('1536x1024');
-  });
+function httpExecution(size = '1024x1024'): JobExecutionOptions {
+  return {
+    ...CODEX_HTTP_EXECUTION_DEFAULTS,
+    providerOptions: {
+      codex: {
+        transport: 'subscription_http',
+        image: { model: 'gpt-image-2', size, quality: 'medium' },
+      },
+    },
+  };
+}
 
+describe('codex responses image executor', () => {
   it('saves only a final image_generation_call result from SSE', async () => {
     const writes: Array<{ filePath: string; content: unknown }> = [];
+    let payload: Record<string, unknown> | undefined;
     const executor = createCodexResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
-      fetch: async () =>
-        new Response(
+      fetch: async (_url, init) => {
+        payload = JSON.parse(typeof init?.body === 'string' ? init.body : '{}') as Record<
+          string,
+          unknown
+        >;
+        return new Response(
           [
             'event: response.output_item.done',
             `data: {"type":"image_generation_call","partial_image_b64":"partial","result":"${PNG_B64}"}`,
@@ -58,7 +44,8 @@ describe('codex responses image executor', () => {
             '',
           ].join('\n'),
           { headers: { 'content-type': 'text/event-stream' } },
-        ),
+        );
+      },
       resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
       mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
       writeFile: ((filePath, content) => {
@@ -70,14 +57,30 @@ describe('codex responses image executor', () => {
       id: 'job-codex',
       workspaceId: 'workspace-1',
       prompt: 'stone keep',
-      execution: { model: 'gpt-5.5', reasoningEffort: 'medium', serviceTier: null },
+      checkpointRemoteExecution: vi.fn(),
+      execution: httpExecution('1536x864'),
+      sourceSpec: createGenerationTaskSpec({
+        id: 'spec-wide',
+        task: 'image_generate',
+        providerId: 'codex',
+        prompt: 'stone keep',
+        output: { aspectRatio: '16:9', imageSize: '1536x864' },
+      }),
     });
     expect(result.assets).toHaveLength(1);
+    expect(payload).toMatchObject({
+      model: 'gpt-5.5',
+      tools: [
+        { type: 'image_generation', model: 'gpt-image-2', size: '1536x864', quality: 'medium' },
+      ],
+    });
+    expect(payload).not.toHaveProperty('reasoning');
+    expect(payload).not.toHaveProperty('service_tier');
     const transcript = writes.find((write) => String(write.filePath).includes('transcripts'));
     expect(String(transcript?.content)).not.toContain('codex-secret');
   });
 
-  it('treats a tool-less stream as empty_response so app-server can run', async () => {
+  it('keeps a tool-less stream uncertain without permitting another submission', async () => {
     const executor = createCodexResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
       fetch: async () =>
@@ -93,15 +96,15 @@ describe('codex responses image executor', () => {
         id: 'job-empty',
         workspaceId: 'workspace-1',
         prompt: 'stone keep',
-        execution: null,
+        checkpointRemoteExecution: vi.fn(),
+        execution: httpExecution(),
       }),
     ).rejects.toMatchObject({
-      code: 'empty_response',
-      fallbackAllowed: true,
-    } satisfies Partial<SubscriptionHttpError>);
+      code: 'execution_uncertain',
+    });
   });
 
-  it('treats ChatGPT 403 as entitlement so app-server can still run', async () => {
+  it('reports ChatGPT 403 as entitlement without switching transports', async () => {
     const executor = createCodexResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
       fetch: async () =>
@@ -115,11 +118,12 @@ describe('codex responses image executor', () => {
         id: 'job-forbidden',
         workspaceId: 'workspace-1',
         prompt: 'stone keep',
-        execution: null,
+        checkpointRemoteExecution: vi.fn(),
+        execution: httpExecution(),
       }),
     ).rejects.toMatchObject({
       code: 'entitlement_denied',
-      fallbackAllowed: true,
+      fallbackAllowed: false,
       httpStatus: 403,
     } satisfies Partial<SubscriptionHttpError>);
   });
@@ -145,7 +149,8 @@ describe('codex responses image executor', () => {
         id: 'job-moderation',
         workspaceId: 'workspace-1',
         prompt: 'stone keep',
-        execution: null,
+        checkpointRemoteExecution: vi.fn(),
+        execution: httpExecution(),
       }),
     ).rejects.toMatchObject({
       code: 'moderation',
@@ -173,13 +178,14 @@ describe('codex responses image executor', () => {
         id: 'job-unauthorized',
         workspaceId: 'workspace-1',
         prompt: 'stone keep',
-        execution: null,
+        checkpointRemoteExecution: vi.fn(),
+        execution: httpExecution(),
       }),
     ).rejects.toMatchObject({ code: 'invalid_grant', message: 'rejected [redacted]' });
     expect(invalidations).toEqual(['rejected [redacted]']);
   });
 
-  it('falls back instead of silently dropping source images beyond the HTTP limit', async () => {
+  it('rejects source images beyond the HTTP limit before reading credentials', async () => {
     const assets = Array.from({ length: 17 }, (_, index) => ({
       role: 'input' as const,
       name: `source-${index}.png`,
@@ -199,7 +205,8 @@ describe('codex responses image executor', () => {
         id: 'job-too-many-sources',
         workspaceId: 'workspace-1',
         prompt: 'combine sources',
-        execution: null,
+        checkpointRemoteExecution: vi.fn(),
+        execution: httpExecution(),
         sourceSpec: createGenerationTaskSpec({
           id: 'spec-too-many-sources',
           task: 'image_edit',
@@ -208,6 +215,69 @@ describe('codex responses image executor', () => {
           assets,
         }),
       }),
-    ).rejects.toMatchObject({ code: 'source_limit', fallbackAllowed: true });
+    ).rejects.toThrow('at most 16 input images');
+  });
+  it('rejects unsupported execution settings before credentials or submission', async () => {
+    const getAccessToken = vi.fn();
+    const fetch = vi.fn();
+    const executor = createCodexResponsesImageExecutor({ getAccessToken, fetch });
+    await expect(
+      executor({
+        id: 'invalid',
+        workspaceId: 'a',
+        prompt: 'prompt',
+        checkpointRemoteExecution: vi.fn(),
+        execution: {
+          ...httpExecution(),
+          model: 'gpt-5.4',
+          reasoningEffort: 'high',
+          serviceTier: 'fast',
+        },
+      }),
+    ).rejects.toThrow('Apply the HTTP settings');
+    expect(getAccessToken).not.toHaveBeenCalled();
+    expect(fetch).not.toHaveBeenCalled();
+  });
+
+  it('records submission before POST and prevents resending after restart or lost acknowledgement', async () => {
+    let stored: JobRemoteExecution | null = null;
+    const checkpointRemoteExecution = (value: JobRemoteExecution) => {
+      stored = JSON.parse(JSON.stringify(value)) as JobRemoteExecution;
+    };
+    const fetch = vi.fn(async () => {
+      expect(stored).toMatchObject({ providerId: 'codex', phase: 'submitting' });
+      throw new Error('socket closed codex-secret');
+    });
+    const executor = createCodexResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      fetch,
+    });
+    await expect(
+      executor({
+        id: 'lost',
+        workspaceId: 'a',
+        prompt: 'prompt',
+        execution: httpExecution(),
+        checkpointRemoteExecution,
+      }),
+    ).rejects.toMatchObject({
+      code: 'execution_uncertain',
+      message: expect.not.stringContaining('codex-secret'),
+    });
+    const restarted = createCodexResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      fetch,
+    });
+    await expect(
+      restarted({
+        id: 'lost',
+        workspaceId: 'a',
+        prompt: 'prompt',
+        execution: httpExecution(),
+        remoteExecution: stored,
+        checkpointRemoteExecution,
+      }),
+    ).rejects.toMatchObject({ code: 'execution_uncertain' });
+    expect(fetch).toHaveBeenCalledTimes(1);
   });
 });

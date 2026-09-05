@@ -61,6 +61,9 @@ for node_id, path, kind, boundary, symbol in boundaries:
                       callers=[], callees=[], evidence=evidence(source_path, symbol)))
 
 for node in nodes:
+    if node["id"] == "shared":
+        node["entrypoints"].append("packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy")
+        node["evidence"]["locations"].append(dict(path="packages/shared/src/codexExecutionContract.ts", symbol="resolveCodexExecutionPolicy"))
     if node["id"] == "job-history":
         node["entrypoints"].append("components/QueuePanel.tsx:QueuePanel")
         node["evidence"]["locations"].append(dict(path="components/QueuePanel.tsx", symbol="useJobHistory"))
@@ -101,6 +104,8 @@ links = [
     ("style-editor", "style-client", "calls", "components/recipes/UserStyleEditorSurface.tsx", "createUserStylePreset"),
     ("style-client", "style-routes", "calls", "services/studio-api/userStyles.ts", "/api/styles/user"),
     ("job-routes", "shared", "imports", "apps/local-server/src/jobRoutes.ts", "packages/shared/src/types"),
+    ("job-intake", "shared", "calls", "apps/local-server/src/persistentJobIntake.ts", "resolveCodexExecutionPolicy"),
+    ("providers", "shared", "calls", "apps/local-server/src/providers/codexResponsesImageExecutor.ts", "resolveCodexExecutionPolicy"),
 ]
 edges = [dict(**{"from": a, "to": b}, type=kind, evidence=evidence(path, symbol))
          for a, b, kind, path, symbol in links]
@@ -109,7 +114,7 @@ for node in nodes:
     node["callees"] = sorted([dict(id=e["to"], type=e["type"]) for e in edges if e["from"] == node["id"]], key=lambda x: (x["id"], x["type"]))
 
 flows = [
-    dict(id="generation", trigger="User starts generation", steps=["generation-ui", "generation-run", "job-client", "job-routes", "job-intake", "worker", "providers"], outcome="Validated persistent job reaches its provider adapter"),
+    dict(id="generation", trigger="User starts generation", steps=["generation-ui", "generation-run", "job-client", "job-routes", "job-intake", "worker", "providers"], outcome="Validated persistent job uses its captured provider transport and execution policy"),
     dict(id="reconciliation", trigger="Observer attaches or recovers its connection", steps=["generation-run", "job-observer", "job-client", "job-routes", "jobs-db"], outcome="Observer reads durable job truth independently of event delivery"),
     dict(id="job-history", trigger="User opens Queue or pages terminal history", steps=["job-history", "job-client", "job-routes", "jobs-db"], outcome="All open work remains visible beside terminal history and authoritative counts"),
     dict(id="finalization-recovery", trigger="Worker resumes a persisted finalization checkpoint", steps=["worker", "asset-finalizer", "catalog"], outcome="Existing asset is finalized into catalog truth"),

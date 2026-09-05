@@ -142,7 +142,7 @@ export function resolveGenerationExecutionOverride(
   providerId: GenerationProviderId,
   config: Pick<
     ImageGenerationConfig,
-    'executionModel' | 'executionReasoningEffort' | 'executionSpeed'
+    'executionModel' | 'executionReasoningEffort' | 'executionSpeed' | 'codexTransport'
   >,
 ) {
   if (providerId !== 'codex') return undefined;
@@ -150,6 +150,9 @@ export function resolveGenerationExecutionOverride(
     model: config.executionModel,
     reasoningEffort: config.executionReasoningEffort,
     serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
+    ...(config.codexTransport
+      ? { providerOptions: { codex: { transport: config.codexTransport } } }
+      : {}),
   };
 }
 

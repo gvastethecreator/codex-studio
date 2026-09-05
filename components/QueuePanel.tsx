@@ -448,7 +448,7 @@ const ServerJobItem: React.FC<{
 }> = ({ job, previewSrc, nowMs, isSelected, onInspect, onRetry, onCancel }) => {
   const canCancel = job.status === 'queued' || job.status === 'running';
   const canResume = canResumeStudioJob(job);
-  const canRetry = Boolean(onRetry) && (canRetryStudioJob(job.status) || canResume);
+  const canRetry = Boolean(onRetry) && (canRetryStudioJob(job) || canResume);
   const statusColor = getServerStatusColor(job.status);
   const recipeTone = resolveQueueRecipeTone(job.recipeId, job.kind);
   const createdAtMs = toEpochMs(job.createdAt);

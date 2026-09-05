@@ -5,6 +5,7 @@ import type {
 } from './generationContracts';
 import type { OnboardingProbe, OnboardingStagePayload } from './onboardingContracts';
 import type { SubscriptionAuthUpdatedEventPayload } from './subscriptionAuth';
+import type { CodexExecutionPolicy } from './codexExecutionContract';
 
 export type JobStatus =
   | 'queued'
@@ -57,6 +58,7 @@ export interface JobExecutionOptions {
   model: string;
   reasoningEffort: CodexReasoningEffort;
   serviceTier?: Exclude<CodexServiceTier, 'standard'> | null;
+  providerOptions?: { codex?: CodexExecutionPolicy };
 }
 
 export interface JobLibraryContext {
@@ -226,13 +228,21 @@ export interface Job {
 export type JobStatusSnapshot = Pick<Job, 'id' | 'status' | 'error' | 'updatedAt'>;
 
 /** Non-secret identity persisted before sending any remote execution request. */
-export interface JobRemoteExecution {
+export interface ComfyRemoteExecution {
   providerId: 'comfy';
   runtimeIdentity: string;
   promptId: string;
   phase: 'submitting' | 'accepted' | 'completed' | 'failed' | 'cancelled';
   startedAt: number;
 }
+
+/** A subscription POST may have been accepted; it has no supported resume API. */
+export interface CodexHttpSubmission {
+  providerId: 'codex';
+  phase: 'submitting' | 'completed' | 'failed';
+  startedAt: number;
+}
+export type JobRemoteExecution = ComfyRemoteExecution | CodexHttpSubmission;
 
 export interface JobSummary {
   id: string;

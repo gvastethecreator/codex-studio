@@ -34,6 +34,7 @@ describe('database migrations', () => {
       legacyComfyIsolated: true,
       remoteIdentityPreserved: true,
       completeJobHistory: true,
+      executionPolicyPreserved: true,
     });
   });
 });

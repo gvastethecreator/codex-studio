@@ -60,6 +60,7 @@ export function createJobRoutes({
   validateManagedAssets,
   resolveProviderExecutionBlocker,
   readGrokAvailableModels,
+  readCodexTransport,
   resolveBootstrapExecution,
   readEditableSettings,
   isReferenceProcessingError,
@@ -80,6 +81,7 @@ export function createJobRoutes({
     validateManagedAssets,
     resolveProviderExecutionBlocker,
     readGrokAvailableModels,
+    readCodexTransport,
     resolveBootstrapExecution,
     readEditableSettings,
     isReferenceProcessingError,
@@ -179,6 +181,16 @@ export function createJobRoutes({
     }
 
     const providerId = resolveJobProviderId(job);
+    if (providerId === 'codex' && !job.execution?.providerOptions?.codex) {
+      return c.json(
+        {
+          error:
+            'This job has no captured execution policy. Review its result and create a new job.',
+          code: 'codex_execution_missing',
+        },
+        409,
+      );
+    }
     const providerBlocker = resumeRemoteExecution
       ? null
       : await resolveProviderExecutionBlocker(providerId);

@@ -76,7 +76,7 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     requiresSecret: false,
     requiresLocalRuntime: true,
     activeDetail: 'Codex Product Runtime adapter is available.',
-    subscriptionReadyDetail: 'ChatGPT Sign in is ready. Codex Product Runtime stays as fallback.',
+    subscriptionReadyDetail: 'ChatGPT HTTP is ready. Each job keeps its accepted execution route.',
     plannedDetail: 'Codex adapter is available.',
     missingDetail: 'Sign in with ChatGPT in Studio Settings, or start Codex Product Runtime.',
   },

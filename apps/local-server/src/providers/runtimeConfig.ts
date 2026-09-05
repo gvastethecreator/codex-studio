@@ -213,7 +213,7 @@ export function createCodexRuntimePreflight(
   const cliReady = codexRuntime.canRunJobs;
   const diagnostics: string[] = [];
   if (httpReady)
-    diagnostics.push('Studio Sign in is ready. Codex Product Runtime stays as fallback.');
+    diagnostics.push('ChatGPT HTTP is ready. Each job keeps its accepted execution route.');
   if (codexRuntime.issues.length > 0) {
     diagnostics.push(...codexRuntime.issues.map((issue) => `${issue.message} ${issue.action}`));
   } else if (!httpReady) {

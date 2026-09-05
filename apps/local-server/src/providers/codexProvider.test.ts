@@ -318,13 +318,21 @@ describe('codex generation provider', () => {
         });
       },
     };
-    const provider = createCodexGenerationProvider({ turn, isHttpReady: () => false });
+    const provider = createCodexGenerationProvider({
+      turn,
+      isHttpReady: () => true,
+      canUseCli: () => true,
+    });
 
     const result = await provider.run({
       id: 'job-2',
       workspaceId: 'workspace-1',
       prompt: 'Prompt:\nsmall brass key',
-      execution: null,
+      execution: {
+        model: 'gpt-5.4',
+        reasoningEffort: 'low',
+        providerOptions: { codex: { transport: 'codex_app_server' } },
+      },
     });
 
     expect(result.assets).toHaveLength(1);
@@ -336,7 +344,7 @@ describe('codex generation provider', () => {
     expect(calls[0].compiledInput?.payload.text).toContain('Task: image_generate');
   });
 
-  it('uses HTTP when signed in and falls back to app-server on empty_response', async () => {
+  it('keeps the accepted HTTP route even when the adapter reports a fallback-eligible error', async () => {
     const calls: string[] = [];
     const turn: CodexTurn = {
       async runTurn() {
@@ -358,12 +366,18 @@ describe('codex generation provider', () => {
         });
       },
     });
-    await provider.run({
-      id: 'job-fallback',
-      workspaceId: 'workspace-1',
-      prompt: 'Prompt:\nkey',
-      execution: null,
-    });
-    expect(calls).toEqual(['http', 'cli']);
+    await expect(
+      provider.run({
+        id: 'job-fallback',
+        workspaceId: 'workspace-1',
+        prompt: 'Prompt:\nkey',
+        execution: {
+          model: 'gpt-5.5',
+          reasoningEffort: 'provider_default',
+          providerOptions: { codex: { transport: 'subscription_http' } },
+        },
+      }),
+    ).rejects.toThrow('no image');
+    expect(calls).toEqual(['http']);
   });
 });

@@ -2,6 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { Hono } from 'hono';
 import { getCodexWsUrl, getEnvLocalPath, getSettings, hasEnvLocalFile } from './config';
 import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
+import { isCodexHttpCredentialReady } from './auth/tokens';
 import {
   grokOnboardingFactsFromDoctor,
   readGrokRuntimeDoctor,
@@ -375,6 +376,8 @@ export async function createStudioApp(
           grokRuntime: readGrokRuntimeDoctorFn(),
         }),
       readGrokAvailableModels: () => readGrokRuntimeDoctorFn().availableModels,
+      readCodexTransport: () =>
+        isCodexHttpCredentialReady() ? 'subscription_http' : 'codex_app_server',
       resolveProviderExecutionBlocker: async (providerId) => {
         const codexRuntime =
           providerId === 'codex'

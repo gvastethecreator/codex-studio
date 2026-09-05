@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { randomUUID } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
-import type { JobRemoteExecution } from '../../../../packages/shared/src';
+import type { ComfyRemoteExecution } from '../../../../packages/shared/src';
 import { resolveLibraryPath } from '../library';
 import type { TurnResult } from '../codex/turn';
 import type { ExternalProviderExecutor } from './externalProvider';
@@ -159,7 +159,12 @@ export function createComfyWorkflowExecutor({
     }
     const apiBase = runtime.base;
     const templatePath = resolveWorkflowTemplatePath(env);
-    let checkpoint = job.remoteExecution ?? null;
+    if (job.remoteExecution && job.remoteExecution.providerId !== 'comfy') {
+      throw new ProviderExecutionUncertainError(
+        'This job checkpoint belongs to another provider. Review it before continuing.',
+      );
+    }
+    let checkpoint: ComfyRemoteExecution | null = job.remoteExecution ?? null;
     if (checkpoint && checkpoint.runtimeIdentity !== runtime.identity) {
       throw new ProviderExecutionUncertainError(
         'This Comfy job belongs to a different runtime. Restore its original runtime configuration, then resume.',
@@ -169,7 +174,7 @@ export function createComfyWorkflowExecutor({
       throw new Error('Comfy executor missing COMFY_WORKFLOW_TEMPLATE_PATH.');
     if (!job.checkpointRemoteExecution)
       throw new Error('Comfy execution requires durable checkpoint storage.');
-    const save = (value: JobRemoteExecution) => {
+    const save = (value: ComfyRemoteExecution) => {
       try {
         job.checkpointRemoteExecution!(value);
       } catch (error) {
@@ -197,7 +202,7 @@ export function createComfyWorkflowExecutor({
         phase: 'submitting',
         startedAt: now(),
       });
-      const submission = checkpoint! as JobRemoteExecution;
+      const submission = checkpoint! as ComfyRemoteExecution;
       let definitivelyRejected = false;
       try {
         // Never retry a POST whose acceptance is unknown. The local ID is durable
@@ -238,7 +243,7 @@ export function createComfyWorkflowExecutor({
       }
     }
 
-    const remote = checkpoint as JobRemoteExecution;
+    const remote = checkpoint as ComfyRemoteExecution;
     const promptId = remote.promptId;
     const startedAt = remote.startedAt;
     const requestAttempts = 1;

@@ -3,7 +3,10 @@ import path from 'node:path';
 import { tmpdir } from 'node:os';
 import { describe, expect, it, vi } from 'vite-plus/test';
 
-import { createGenerationTaskSpec } from '../../../../packages/shared/src';
+import {
+  createGenerationTaskSpec,
+  type ComfyRemoteExecution,
+} from '../../../../packages/shared/src';
 import { compileComfyWorkflowInput } from './externalProviderInputs';
 import type { ExternalProviderFetch } from './externalProviderResults';
 import { createComfyWorkflowExecutor } from './comfyExecutor';
@@ -44,7 +47,8 @@ function requestBodyText(body: BodyInit | null | undefined) {
   return typeof body === 'string' ? body : '';
 }
 
-function createJob(): GenerationProviderJob {
+type ComfyTestJob = GenerationProviderJob & { remoteExecution?: ComfyRemoteExecution | null };
+function createJob(): ComfyTestJob {
   const sourceSpec = createGenerationTaskSpec({
     id: 'spec-comfy',
     task: 'texture_generate',
@@ -53,7 +57,7 @@ function createJob(): GenerationProviderJob {
     negativePrompt: 'text, watermark',
   });
 
-  const job: GenerationProviderJob = {
+  const job: ComfyTestJob = {
     id: 'job-comfy',
     workspaceId: 'workspace-1',
     providerId: 'comfy',
@@ -62,6 +66,7 @@ function createJob(): GenerationProviderJob {
     execution: { model: 'local-sdxl', reasoningEffort: 'minimal', serviceTier: null },
   };
   job.checkpointRemoteExecution = (checkpoint) => {
+    if (checkpoint.providerId !== 'comfy') throw new Error('Unexpected checkpoint provider');
     job.remoteExecution = structuredClone(checkpoint);
   };
   return job;

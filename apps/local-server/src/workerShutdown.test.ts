@@ -4,6 +4,11 @@ import type { Job } from '../../../packages/shared/src';
 import type { GenerationProvider } from './providers/types';
 import { ProviderExecutionUncertainError } from './workerErrors';
 import { createJobRoutes } from './jobRoutes';
+import { createCodexResponsesImageExecutor } from './providers/codexResponsesImageExecutor';
+import {
+  CODEX_HTTP_EXECUTION_DEFAULTS,
+  resolveCodexExecutionPolicy,
+} from '../../../packages/shared/src/codexExecutionContract';
 
 const emptyJobPage = {
   open: [],
@@ -118,6 +123,9 @@ function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run']) {
     addJobEvent,
     getJob: (id) => jobs.get(id) ?? null,
     updateJobStatus,
+    updateJobRemoteExecution: (id, checkpoint) => {
+      jobs.set(id, { ...jobs.get(id)!, remoteExecution: structuredClone(checkpoint) });
+    },
     upsertCodexTurn: vi.fn(() => 'turn-record-1'),
     publishEvent,
     logger: vi.fn(),
@@ -127,6 +135,40 @@ function createWorkerHarness(jobList: Job[], run?: GenerationProvider['run']) {
 }
 
 describe('worker shutdown', () => {
+  it('persists an HTTP marker before POST and does not resend recovered running work', async () => {
+    const job = createJob('http-restart');
+    job.execution = {
+      ...CODEX_HTTP_EXECUTION_DEFAULTS,
+      providerOptions: {
+        codex: resolveCodexExecutionPolicy(
+          CODEX_HTTP_EXECUTION_DEFAULTS,
+          null,
+          'subscription_http',
+        ),
+      },
+    };
+    const fetch = vi.fn(async () => {
+      expect(first.jobs.get(job.id)?.remoteExecution).toMatchObject({
+        providerId: 'codex',
+        phase: 'submitting',
+      });
+      throw new Error('connection lost');
+    });
+    const run = createCodexResponsesImageExecutor({
+      fetch,
+      getAccessToken: async () => 'test-token',
+    });
+    const first = createWorkerHarness([job], run);
+    first.controller.enqueueJob(job);
+    await vi.waitFor(() => expect(first.jobs.get(job.id)?.status).toBe('needs_review'));
+    await first.controller.shutdown();
+    const recovered = { ...structuredClone(first.jobs.get(job.id)!), status: 'queued' as const };
+    const restarted = createWorkerHarness([recovered], run);
+    restarted.controller.enqueueJob(recovered);
+    await vi.waitFor(() => expect(restarted.jobs.get(job.id)?.status).toBe('needs_review'));
+    expect(fetch).toHaveBeenCalledTimes(1);
+    await restarted.controller.shutdown();
+  });
   it('does not confirm cancellation of a recovered remote execution waiting for local capacity', async () => {
     const active = createJob('active');
     const remote = {
@@ -176,6 +218,7 @@ describe('worker shutdown', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'prompt', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (spec) => spec,
+      readCodexTransport: () => 'codex_app_server',
       readLibraryDir: () => 'unused',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError: (

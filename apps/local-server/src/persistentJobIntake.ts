@@ -4,7 +4,12 @@ import type {
   GenerationTaskSpec,
   Job,
   JobLibraryContext,
+  CodexExecutionTransport,
 } from '../../../packages/shared/src';
+import {
+  CODEX_HTTP_EXECUTION_DEFAULTS,
+  resolveCodexExecutionPolicy,
+} from '../../../packages/shared/src/codexExecutionContract';
 import { collectGrokImagineJobIssues } from '../../../packages/shared/src/grokImagineContract';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
@@ -61,6 +66,7 @@ export interface PersistentJobIntakeDependencies {
   readLibraryContext?: () => JobLibraryContext;
   readEditableSettings?: () => EditableStudioSettings;
   resolveBootstrapExecution?: typeof resolveBootstrapProviderExecutionOptions;
+  readCodexTransport: () => CodexExecutionTransport;
   validateManagedAssets?: typeof validateManagedGenerationAssets;
   resolveProviderExecutionBlocker: (
     providerId: string,
@@ -166,6 +172,7 @@ export function createPersistentJobIntake({
   readLibraryContext,
   readEditableSettings = createDefaultEditableStudioSettings,
   resolveBootstrapExecution = resolveBootstrapProviderExecutionOptions,
+  readCodexTransport,
   validateManagedAssets = validateManagedGenerationAssets,
   resolveProviderExecutionBlocker,
   readGrokAvailableModels = () => readGrokRuntimeDoctor().availableModels,
@@ -280,12 +287,48 @@ export function createPersistentJobIntake({
         }
       }
 
+      const codexTransport = providerId === 'codex' ? readCodexTransport() : null;
       const execution = resolveEffectiveJobExecutionOptions({
         providerId,
         explicit: request.execution,
         settings: readEditableSettings(),
-        bootstrap: resolveBootstrapExecution(providerId),
+        bootstrap:
+          codexTransport === 'subscription_http'
+            ? CODEX_HTTP_EXECUTION_DEFAULTS
+            : resolveBootstrapExecution(providerId),
       });
+      if (codexTransport) {
+        const previewTransport = request.execution?.providerOptions?.codex?.transport;
+        if (previewTransport && previewTransport !== codexTransport) {
+          return {
+            ok: false,
+            error: {
+              status: 400,
+              body: {
+                error:
+                  'Codex sign-in changed the execution route. Review the current settings and generate again.',
+                code: 'codex_execution_changed',
+              },
+            },
+          };
+        }
+        try {
+          execution.providerOptions = {
+            codex: resolveCodexExecutionPolicy(execution, sourceSpec, codexTransport),
+          };
+        } catch (error) {
+          return {
+            ok: false,
+            error: {
+              status: 400,
+              body: {
+                error: error instanceof Error ? error.message : 'Invalid Codex execution options.',
+                code: 'codex_execution_unsupported',
+              },
+            },
+          };
+        }
+      }
       if (providerId === 'grok') {
         const grokIssues = collectGrokImagineJobIssues({
           sourceSpec,

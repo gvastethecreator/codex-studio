@@ -17,7 +17,7 @@ import type { CodexTurn, TurnResult } from '../codex/turn';
 import type { GenerationProvider, GenerationProviderJob } from './types';
 import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
 import { isCodexHttpCredentialReady } from '../auth/tokens';
-import { isAbortError, isSubscriptionHttpFallbackAllowed } from './subscriptionHttpError';
+import { ProviderExecutionUncertainError } from '../workerErrors';
 
 export { CODEX_IMAGEGEN_DENOISE_INSTRUCTION } from '../codex/imagegenContract';
 
@@ -178,18 +178,27 @@ export function createCodexGenerationProvider({
     id: 'codex',
     async run(job) {
       const compiledInput = compileCodexImagegenInput(job);
-      if (isHttpReady()) {
-        try {
-          const http =
-            runHttp ??
-            (await import('./codexResponsesImageExecutor')).createCodexResponsesImageExecutor();
-          return await http(job);
-        } catch (error) {
-          if (isAbortError(error) || !isSubscriptionHttpFallbackAllowed(error) || !canUseCli()) {
-            throw error;
-          }
-        }
+      const policy = job.execution?.providerOptions?.codex;
+      if (!policy)
+        throw new ProviderExecutionUncertainError(
+          'The Codex execution policy was not captured. Review the existing job before creating another request.',
+        );
+      if (policy.transport === 'subscription_http') {
+        if (!isHttpReady())
+          throw new Error(
+            'This job requires its accepted ChatGPT HTTP session. Sign in again and retry.',
+          );
+        const http =
+          runHttp ??
+          (await import('./codexResponsesImageExecutor')).createCodexResponsesImageExecutor();
+        return http(job);
       }
+      if (policy.transport !== 'codex_app_server')
+        throw new Error('The saved Codex execution route is invalid.');
+      if (!canUseCli())
+        throw new Error(
+          'This job requires its accepted Codex app-server runtime. Start it and retry.',
+        );
       return turn.runTurn({
         jobId: job.id,
         prompt: job.prompt,

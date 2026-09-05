@@ -12,13 +12,14 @@ import type { CodexImagegenInputItem } from './codexProvider';
 import type { GenerationProviderJob } from './types';
 import {
   isRecord,
-  ExternalProviderImageError,
   readResponseTextLimited,
   responseSnippet,
   storeInlineImageResult,
   type ExternalProviderFetch,
 } from './externalProviderResults';
-import { SubscriptionHttpError, isAbortError } from './subscriptionHttpError';
+import { SubscriptionHttpError } from './subscriptionHttpError';
+import { ProviderExecutionUncertainError } from '../workerErrors';
+import { resolveCodexExecutionPolicy } from '../../../../packages/shared/src/codexExecutionContract';
 
 type ReadLocalFile = (path: string) => Uint8Array;
 
@@ -35,11 +36,9 @@ export interface CodexResponsesImageExecutorDependencies {
   requestTimeoutMs?: number;
 }
 
-const CODEX_CHAT_MODEL = 'gpt-5.5';
-const CODEX_IMAGE_MODEL = 'gpt-image-2';
 const CODEX_INSTRUCTIONS =
   'You are an assistant that must fulfill image generation and image editing requests by using the image_generation tool when provided.';
-const MAX_INPUT_IMAGES = 16;
+
 const MIME_BY_EXTENSION: Record<string, string> = {
   '.gif': 'image/gif',
   '.jpeg': 'image/jpeg',
@@ -47,40 +46,6 @@ const MIME_BY_EXTENSION: Record<string, string> = {
   '.png': 'image/png',
   '.webp': 'image/webp',
 };
-
-export function resolveCodexImageQuality(
-  model: string | null | undefined,
-  reasoningEffort: string | null | undefined,
-): 'low' | 'medium' | 'high' {
-  const hay = `${model ?? ''} ${reasoningEffort ?? ''}`.toLowerCase();
-  if (hay.includes('high')) return 'high';
-  if (hay.includes('low') || hay.includes('minimal')) return 'low';
-  return 'medium';
-}
-
-export function resolveCodexImageSize(job: GenerationProviderJob) {
-  const output = job.sourceSpec?.output;
-  const size = output?.imageSize?.trim();
-  if (size === '1536x1024' || size === '1024x1536' || size === '1024x1024') return size;
-  const pixels = size?.match(/^(\d+)\s*x\s*(\d+)$/i);
-  if (pixels) {
-    const width = Number.parseInt(pixels[1] ?? '', 10);
-    const height = Number.parseInt(pixels[2] ?? '', 10);
-    if (width > height) return '1536x1024';
-    if (height > width) return '1024x1536';
-    return '1024x1024';
-  }
-  const aspect = output?.aspectRatio?.trim();
-  if (!aspect) return '1024x1024';
-  const parts = aspect.split(':').map((part) => Number.parseFloat(part));
-  const width = parts[0];
-  const height = parts[1];
-  if (Number.isFinite(width) && Number.isFinite(height)) {
-    if (width > height) return '1536x1024';
-    if (height > width) return '1024x1536';
-  }
-  return '1024x1024';
-}
 
 function inferMimeType(filePath: string) {
   return MIME_BY_EXTENSION[extname(filePath).toLowerCase()] ?? 'image/png';
@@ -211,14 +176,14 @@ function classifyCodexHttpFailure(status: number, message: string): Subscription
   if (status === 403) {
     return new SubscriptionHttpError(
       message ||
-        'This ChatGPT account is not authorized for HTTP image generation. Codex Product Runtime can still run if it is signed in.',
-      { code: 'entitlement_denied', fallbackAllowed: true, httpStatus: status },
+        'This ChatGPT account is not authorized for HTTP image generation. Restore access to the accepted account before retrying.',
+      { code: 'entitlement_denied', fallbackAllowed: false, httpStatus: status },
     );
   }
   if (status >= 500 || status === 429) {
     return new SubscriptionHttpError(message || `Codex Responses failed (${status}).`, {
       code: 'http_error',
-      fallbackAllowed: true,
+      fallbackAllowed: false,
       httpStatus: status,
     });
   }
@@ -250,23 +215,46 @@ export function createCodexResponsesImageExecutor({
   requestTimeoutMs = 120_000,
 }: CodexResponsesImageExecutorDependencies = {}) {
   return async (job: GenerationProviderJob) => {
+    if (job.remoteExecution) {
+      if (job.remoteExecution.providerId === 'codex' && job.remoteExecution.phase === 'failed') {
+        throw new Error(
+          'The previous HTTP attempt was rejected. Retry this failed job after restoring access.',
+        );
+      }
+      throw new ProviderExecutionUncertainError(
+        'An HTTP submission is already recorded for this job. Review the existing result; Studio will not send it again.',
+      );
+    }
+    if (!job.checkpointRemoteExecution)
+      throw new Error('HTTP execution requires durable submission storage.');
     const { compileCodexImagegenInput } = await import('./codexProvider');
     const compiled = compileCodexImagegenInput(job);
     const startedAt = now();
-    const quality = resolveCodexImageQuality(job.execution?.model, job.execution?.reasoningEffort);
-    const size = resolveCodexImageSize(job);
-    if (compiled.payload.imageInputs.length > MAX_INPUT_IMAGES) {
-      throw new SubscriptionHttpError(
-        `Codex HTTP image edits accept at most ${MAX_INPUT_IMAGES} source images. Codex Product Runtime can take more.`,
-        { code: 'source_limit', fallbackAllowed: true },
+    const policy = job.execution?.providerOptions?.codex;
+    if (!job.execution || policy?.transport !== 'subscription_http' || !policy.image) {
+      throw new ProviderExecutionUncertainError(
+        'This job has no captured HTTP execution contract. Review it before creating another request.',
       );
     }
+    const expected = resolveCodexExecutionPolicy(
+      job.execution,
+      job.sourceSpec,
+      'subscription_http',
+    );
+    if (
+      policy.image.model !== expected.image?.model ||
+      policy.image.size !== expected.image?.size ||
+      policy.image.quality !== expected.image?.quality
+    ) {
+      throw new Error('The saved HTTP execution contract does not match this job.');
+    }
+    const { quality, size, model: imageModel } = policy.image;
     const inputImages = compiled.payload.imageInputs.map((item) =>
       toInputImagePart(item, readFile),
     );
     const token = await getAccessToken();
     const payload = {
-      model: CODEX_CHAT_MODEL,
+      model: job.execution.model,
       store: false,
       instructions: CODEX_INSTRUCTIONS,
       input: [
@@ -279,7 +267,7 @@ export function createCodexResponsesImageExecutor({
       tools: [
         {
           type: 'image_generation',
-          model: CODEX_IMAGE_MODEL,
+          model: imageModel,
           size,
           quality,
           output_format: 'png',
@@ -303,6 +291,8 @@ export function createCodexResponsesImageExecutor({
     const requestSignal = job.signal
       ? AbortSignal.any([job.signal, AbortSignal.timeout(requestTimeoutMs)])
       : AbortSignal.timeout(requestTimeoutMs);
+    job.signal?.throwIfAborted();
+    job.checkpointRemoteExecution({ providerId: 'codex', phase: 'submitting', startedAt });
     try {
       response = await fetchImpl(`${CODEX_RESPONSES_BASE_URL}/responses`, {
         method: 'POST',
@@ -312,41 +302,42 @@ export function createCodexResponsesImageExecutor({
         signal: requestSignal,
       });
     } catch (error) {
-      if (isAbortError(error)) throw error;
-      throw new SubscriptionHttpError(
-        error instanceof Error ? error.message : 'Codex Responses request failed.',
-        { code: 'timeout', fallbackAllowed: true },
+      throw new ProviderExecutionUncertainError(
+        `ChatGPT HTTP submission could not be confirmed. Review this job before sending another request. ${responseSnippet(error instanceof Error ? error.message : '', [token])}`,
       );
     }
 
     let raw = '';
     try {
-      raw = await readResponseTextLimited(response, 5 * 1024 * 1024);
-    } catch (error) {
-      if (isAbortError(error) || job.signal?.aborted) {
-        const abortError = error instanceof Error ? error : new Error('Codex Responses aborted.');
-        abortError.name = 'AbortError';
-        throw abortError;
-      }
-      throw new SubscriptionHttpError(
-        error instanceof Error ? error.message : 'Codex Responses stream failed.',
-        { code: 'timeout', fallbackAllowed: true },
+      raw = await readResponseTextLimited(response, 32 * 1024 * 1024);
+    } catch {
+      throw new ProviderExecutionUncertainError(
+        'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
       );
     }
     if (job.signal?.aborted) {
-      const abortError = new Error('Codex Responses aborted.');
-      abortError.name = 'AbortError';
-      throw abortError;
+      throw new ProviderExecutionUncertainError(
+        'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
+      );
+    }
+    if (response.status >= 500) {
+      throw new ProviderExecutionUncertainError(
+        `ChatGPT HTTP returned ${response.status} after submission. Review this job before sending another request.`,
+      );
     }
     if (!response.ok) {
       const failure = classifyCodexHttpFailure(response.status, summarizeCodexError(raw, [token]));
       if (response.status === 401) invalidateAccessToken(failure.message);
+      job.checkpointRemoteExecution({ providerId: 'codex', phase: 'failed', startedAt });
       throw failure;
     }
 
     const events = parseSseJson(raw);
     for (const event of events) {
-      if (isFailedSseEvent(event)) throw classifySseFailure(event, [token]);
+      if (isFailedSseEvent(event)) {
+        job.checkpointRemoteExecution({ providerId: 'codex', phase: 'failed', startedAt });
+        throw classifySseFailure(event, [token]);
+      }
     }
     let finalB64: string | null = null;
     for (const event of events) {
@@ -354,17 +345,16 @@ export function createCodexResponsesImageExecutor({
       if (found.final) finalB64 = found.final;
     }
     if (!finalB64) {
-      throw new SubscriptionHttpError('Codex Responses did not return a final image.', {
-        code: 'empty_response',
-        fallbackAllowed: true,
-      });
+      throw new ProviderExecutionUncertainError(
+        'ChatGPT HTTP returned no final image. Review the existing request before creating another job.',
+      );
     }
 
     try {
-      return storeInlineImageResult({
+      const result = storeInlineImageResult({
         providerId: 'codex',
         providerSlug: 'codex-http',
-        model: CODEX_IMAGE_MODEL,
+        model: imageModel,
         endpointBase: CODEX_RESPONSES_BASE_URL,
         job: { id: job.id },
         compiledInput: compiled,
@@ -375,12 +365,12 @@ export function createCodexResponsesImageExecutor({
         diagnostics: { runtime: 'subscription_http', quality, size },
         files: { resolveLibraryPath: resolveLibraryPathFn, mkdir, writeFile, now },
       });
-    } catch (error) {
-      if (!(error instanceof ExternalProviderImageError)) throw error;
-      throw new SubscriptionHttpError(error.message, {
-        code: 'empty_response',
-        fallbackAllowed: true,
-      });
+      job.checkpointRemoteExecution({ providerId: 'codex', phase: 'completed', startedAt });
+      return result;
+    } catch {
+      throw new ProviderExecutionUncertainError(
+        'ChatGPT HTTP returned a result, but Studio could not save it. Review the result before creating another job.',
+      );
     }
   };
 }

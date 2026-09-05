@@ -386,7 +386,22 @@ try {
         prompt: 'workspace-only prompt',
       }),
       prompt: 'workspace-only prompt',
+      execution: {
+        model: 'gpt-5.5',
+        reasoningEffort: 'provider_default',
+        providerOptions: {
+          codex: {
+            transport: 'subscription_http',
+            image: { model: 'gpt-image-2', size: '1536x864', quality: 'medium' },
+          },
+        },
+      },
     },
+    database,
+  );
+  updateJobRemoteExecution(
+    createdJob.id,
+    { providerId: 'codex', phase: 'submitting', startedAt: 2000 },
     database,
   );
   const createdJobRow = database
@@ -503,6 +518,10 @@ try {
       legacyComfyIsolated,
       remoteIdentityPreserved,
       completeJobHistory: inspectJobHistory(),
+      executionPolicyPreserved:
+        getJob('job-workspace-only', database)?.execution?.providerOptions?.codex?.image?.size ===
+          '1536x864' &&
+        getJob('job-workspace-only', database)?.remoteExecution?.providerId === 'codex',
     }),
   );
 } finally {

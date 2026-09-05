@@ -1136,8 +1136,8 @@
     </main>
     <script id="codemap-data" type="application/json">
       {
-        "generated_at": "2026-09-05T18:44:53Z",
-        "generated_from_commit": "ddc2b6647a3682c0b4ddbfc12f95134c5d7d33d4",
+        "generated_at": "2026-09-05T19:14:24Z",
+        "generated_from_commit": "531a1d893ea81e90aee6c45b0f6077905b534bd1",
         "scope": ["."],
         "nodes": [
           {
@@ -1315,6 +1315,7 @@
             "callees": [
               { "id": "jobs-db", "type": "writes" },
               { "id": "runtime-settings", "type": "calls" },
+              { "id": "shared", "type": "calls" },
               { "id": "worker", "type": "calls" }
             ],
             "evidence": {
@@ -1402,7 +1403,7 @@
               "apps/local-server/src/providers/externalProvider.test.ts"
             ],
             "callers": [{ "id": "worker", "type": "calls" }],
-            "callees": [],
+            "callees": [{ "id": "shared", "type": "calls" }],
             "evidence": {
               "status": "verified",
               "locations": [
@@ -1447,13 +1448,26 @@
             "path": "packages/shared/src",
             "type": "module",
             "boundary": "Provider-independent domain and API contracts",
-            "entrypoints": ["packages/shared/src/types.ts:JobStatus"],
+            "entrypoints": [
+              "packages/shared/src/types.ts:JobStatus",
+              "packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy"
+            ],
             "tests": [],
-            "callers": [{ "id": "job-routes", "type": "imports" }],
+            "callers": [
+              { "id": "job-intake", "type": "calls" },
+              { "id": "job-routes", "type": "imports" },
+              { "id": "providers", "type": "calls" }
+            ],
             "callees": [],
             "evidence": {
               "status": "verified",
-              "locations": [{ "path": "packages/shared/src/types.ts", "symbol": "JobStatus" }]
+              "locations": [
+                { "path": "packages/shared/src/types.ts", "symbol": "JobStatus" },
+                {
+                  "path": "packages/shared/src/codexExecutionContract.ts",
+                  "symbol": "resolveCodexExecutionPolicy"
+                }
+              ]
             }
           },
           {
@@ -1700,6 +1714,20 @@
           },
           {
             "from": "job-intake",
+            "to": "shared",
+            "type": "calls",
+            "evidence": {
+              "status": "verified",
+              "locations": [
+                {
+                  "path": "apps/local-server/src/persistentJobIntake.ts",
+                  "symbol": "resolveCodexExecutionPolicy"
+                }
+              ]
+            }
+          },
+          {
+            "from": "job-intake",
             "to": "worker",
             "type": "calls",
             "evidence": {
@@ -1781,6 +1809,20 @@
                 {
                   "path": "apps/local-server/src/jobRoutes.ts",
                   "symbol": "cancelQueuedOrRunningJob(jobId)"
+                }
+              ]
+            }
+          },
+          {
+            "from": "providers",
+            "to": "shared",
+            "type": "calls",
+            "evidence": {
+              "status": "verified",
+              "locations": [
+                {
+                  "path": "apps/local-server/src/providers/codexResponsesImageExecutor.ts",
+                  "symbol": "resolveCodexExecutionPolicy"
                 }
               ]
             }
@@ -1899,7 +1941,7 @@
               "worker",
               "providers"
             ],
-            "outcome": "Validated persistent job reaches its provider adapter"
+            "outcome": "Validated persistent job uses its captured provider transport and execution policy"
           },
           {
             "id": "reconciliation",

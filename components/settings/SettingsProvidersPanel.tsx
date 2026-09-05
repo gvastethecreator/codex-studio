@@ -122,6 +122,11 @@ export function SettingsProvidersPanel({
         onChange={updateSelectedProviderDefaults}
         availableModels={preflightByProvider.get(defaultProviderId)?.availableModels}
         providerDefaultModel={preflightByProvider.get(defaultProviderId)?.defaultModel}
+        codexTransport={
+          preflightByProvider.get('codex')?.runtimeKind === 'subscription_http'
+            ? 'subscription_http'
+            : 'codex_app_server'
+        }
       />
 
       {providerCapabilities ? (

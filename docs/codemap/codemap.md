@@ -1,10 +1,10 @@
 # Code map · codex-studio
 
-generated: 2026-09-05T18:44:53Z
-commit: ddc2b6647a36
+generated: 2026-09-05T19:14:24Z
+commit: 531a1d893ea8
 scope: .
 
-counts: 20 nodes · 26 edges · 5 flows · 0 unknown
+counts: 20 nodes · 28 edges · 5 flows · 0 unknown
 
 ## Modules
 
@@ -58,7 +58,7 @@ counts: 20 nodes · 26 edges · 5 flows · 0 unknown
 
 - `job-intake` · `apps/local-server/src/persistentJobIntake.ts` · service · Validate and persist before dispatch
   callers: job-routes (calls)
-  callees: jobs-db (writes), runtime-settings (calls), worker (calls)
+  callees: jobs-db (writes), runtime-settings (calls), shared (calls), worker (calls)
   tests: apps/local-server/src/persistentJobIntake.test.ts
   entry: apps/local-server/src/persistentJobIntake.ts:createPersistentJobIntake
 
@@ -82,7 +82,7 @@ counts: 20 nodes · 26 edges · 5 flows · 0 unknown
 
 - `providers` · `apps/local-server/src/providers` · service · Provider execution adapters and runtime identity
   callers: worker (calls)
-  callees: (none)
+  callees: shared (calls)
   tests: apps/local-server/src/providers/comfyExecutor.test.ts, apps/local-server/src/providers/codexProvider.test.ts, apps/local-server/src/providers/externalProvider.test.ts
   entry: apps/local-server/src/providers/externalProvider.ts:createExternalGenerationProvider, apps/local-server/src/providers/comfyExecutor.ts:createComfyWorkflowExecutor, apps/local-server/src/providers/codexProvider.ts:createCodexGenerationProvider
 
@@ -93,10 +93,10 @@ counts: 20 nodes · 26 edges · 5 flows · 0 unknown
   entry: apps/local-server/src/providers/runtimeConfig.ts:getExternalProviderRuntimePreflight
 
 - `shared` · `packages/shared/src` · module · Provider-independent domain and API contracts
-  callers: job-routes (imports)
+  callers: job-intake (calls), job-routes (imports), providers (calls)
   callees: (none)
   tests: (none)
-  entry: packages/shared/src/types.ts:JobStatus
+  entry: packages/shared/src/types.ts:JobStatus, packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy
 
 - `style-client` · `services/studio-api/userStyles.ts` · service · User style API
   callers: style-editor (calls), styles (calls)
@@ -141,6 +141,7 @@ counts: 20 nodes · 26 edges · 5 flows · 0 unknown
 - job-history -> job-client · calls
 - job-intake -> jobs-db · writes
 - job-intake -> runtime-settings · calls
+- job-intake -> shared · calls
 - job-intake -> worker · calls
 - job-observer -> event-routes · subscribes
 - job-observer -> job-client · calls
@@ -148,6 +149,7 @@ counts: 20 nodes · 26 edges · 5 flows · 0 unknown
 - job-routes -> jobs-db · reads
 - job-routes -> shared · imports
 - job-routes -> worker · calls
+- providers -> shared · calls
 - style-client -> style-routes · calls
 - style-editor -> style-client · calls
 - styles -> style-client · calls
@@ -165,7 +167,7 @@ counts: 20 nodes · 26 edges · 5 flows · 0 unknown
 
 - User starts generation
   generation-ui -> generation-run -> job-client -> job-routes -> job-intake -> worker -> providers
-  Validated persistent job reaches its provider adapter
+  Validated persistent job uses its captured provider transport and execution policy
 - Observer attaches or recovers its connection
   generation-run -> job-observer -> job-client -> job-routes -> jobs-db
   Observer reads durable job truth independently of event delivery

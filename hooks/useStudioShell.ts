@@ -650,6 +650,16 @@ export function useStudioShell(): StudioShellController {
       },
       provider: {
         activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+        codexTransport:
+          studioSettings.data.providerDomain.capabilities?.providers.find(
+            (provider) => provider.providerId === 'codex',
+          )?.runtimeKind === 'subscription_http'
+            ? 'subscription_http'
+            : studioSettings.data.providerDomain.capabilities?.providers.some(
+                  (provider) => provider.providerId === 'codex',
+                )
+              ? 'codex_app_server'
+              : undefined,
         grokCanExecute: resolveGrokCanExecute({
           canExecute: studioSettings.data.providerDomain.capabilities?.providers.find(
             (provider) => provider.providerId === 'grok',

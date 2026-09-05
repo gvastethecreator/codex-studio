@@ -1,6 +1,14 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vite-plus/test';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src';
 import { resolveEffectiveJobExecutionOptions } from './providerExecutionPolicy';
+import { resolveJobExecutionOptions } from './codex/executionOptions';
+vi.mock('./config', () => ({
+  getSettings: () => ({
+    codexImagegenModel: 'changed-model',
+    codexImagegenReasoningEffort: 'high',
+    codexImagegenServiceTier: 'fast',
+  }),
+}));
 
 describe('resolveEffectiveJobExecutionOptions', () => {
   const bootstrap = {
@@ -46,5 +54,14 @@ describe('resolveEffectiveJobExecutionOptions', () => {
         bootstrap,
       }),
     ).toEqual(bootstrap);
+  });
+  it('preserves captured standard speed after global defaults change', () => {
+    expect(
+      resolveJobExecutionOptions({
+        model: 'accepted-model',
+        reasoningEffort: 'low',
+        serviceTier: null,
+      }),
+    ).toEqual({ model: 'accepted-model', reasoningEffort: 'low', serviceTier: null });
   });
 });

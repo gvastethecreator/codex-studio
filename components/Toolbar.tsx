@@ -88,6 +88,7 @@ export interface ToolbarProps {
   isLoadingCodexModelCatalog: boolean;
   codexModelCatalogError: string | null;
   activeProviderId: GenerationProviderId;
+  codexTransport?: import('../packages/shared/src').CodexExecutionTransport;
   grokCanExecute?: boolean;
   grokStatus?: string;
   grokDiagnostics?: string[];
@@ -176,6 +177,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     isLoadingCodexModelCatalog,
     codexModelCatalogError,
     activeProviderId,
+    codexTransport,
     grokCanExecute = false,
     grokStatus,
     grokDiagnostics,
@@ -225,6 +227,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           grokStatus,
           grokDiagnostics,
           codexModelCatalog,
+          codexTransport,
           executionModel: generationConfig.executionModel,
           executionReasoningEffort: generationConfig.executionReasoningEffort,
           executionSpeed: generationConfig.executionSpeed,
@@ -235,6 +238,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         activeRecipe,
         codexModelCatalog,
         codexModelCatalogError,
+        codexTransport,
         generationConfig.aspectRatio,
         generationConfig.attachments,
         generationConfig.executionModel,
@@ -348,7 +352,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
-      onGenerate(localPrompt);
+      onGenerate(localPrompt, { codexTransport });
 
       closeAllMenus();
       setIsNegativeOpen(false);
@@ -359,6 +363,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       generationConfig.attachments.length,
       updateConfig,
       onGenerate,
+      codexTransport,
       closeAllMenus,
       setIsInteracting,
       interactionScope,
@@ -1118,7 +1123,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               <Loader2 size={12} className="animate-spin text-accent-300" />
                             )}
                             <div className="text-[10px] font-black uppercase tracking-[0.12em] text-zinc-500">
-                              {codexModelCatalog?.source === 'fallback' ? 'Docs fallback' : 'Live'}
+                              {codexTransport === 'subscription_http'
+                                ? 'HTTP contract'
+                                : codexModelCatalog?.source === 'fallback'
+                                  ? 'Docs fallback'
+                                  : 'Live'}
                             </div>
                           </div>
                         </div>
@@ -1195,7 +1204,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             {executionReasoningOptions.map((effort) => (
                               <button
                                 type="button"
-                                key={effort}
+                                key={effort === 'provider_default' ? 'Managed by provider' : effort}
                                 onClick={() => updateConfig('executionReasoningEffort', effort)}
                                 className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                                   generationConfig.executionReasoningEffort === effort
@@ -1203,7 +1212,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                     : 'bg-white/5 text-zinc-400 hover:bg-white/10'
                                 }`}
                               >
-                                {effort}
+                                {effort === 'provider_default' ? 'Managed by provider' : effort}
                               </button>
                             ))}
                           </div>
@@ -1215,7 +1224,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               Speed
                             </div>
                             <div className="text-[8px] font-bold text-zinc-600">
-                              Fast mode depends on the selected model and Codex sign-in.
+                              {codexTransport === 'subscription_http'
+                                ? 'HTTP speed is managed by the provider.'
+                                : 'Fast mode depends on the selected model and Codex sign-in.'}
                             </div>
                           </div>
                           <div className="flex flex-wrap gap-2">
@@ -1230,7 +1241,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                     : 'bg-white/5 text-zinc-400 hover:bg-white/10'
                                 }`}
                               >
-                                {formatCodexSpeedLabel(speed)}
+                                {codexTransport === 'subscription_http'
+                                  ? 'Managed by provider'
+                                  : formatCodexSpeedLabel(speed)}
                               </button>
                             ))}
                           </div>

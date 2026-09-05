@@ -7,6 +7,9 @@ export function resolveJobExecutionOptions(execution?: JobExecutionOptions | nul
   return {
     model: execution?.model?.trim() || settings.codexImagegenModel,
     reasoningEffort: execution?.reasoningEffort?.trim() || settings.codexImagegenReasoningEffort,
-    serviceTier: execution?.serviceTier ?? settings.codexImagegenServiceTier ?? null,
+    serviceTier:
+      execution && Object.hasOwn(execution, 'serviceTier')
+        ? (execution.serviceTier ?? null)
+        : (settings.codexImagegenServiceTier ?? null),
   };
 }

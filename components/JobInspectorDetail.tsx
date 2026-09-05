@@ -17,6 +17,10 @@ import {
 
 import type { Job as StudioJob, JobDetailResponse } from '../packages/shared/src';
 import {
+  describeCodexExecution,
+  CODEX_HTTP_REASONING,
+} from '../packages/shared/src/codexExecutionContract';
+import {
   buildJobInspectorDetailModel,
   type JobInspectorArtifact,
   type JobInspectorTextBlock,
@@ -586,7 +590,26 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
     ['Created', new Date(detail.job.createdAt).toLocaleString()],
     ['Completed', detail.job.completedAt ? new Date(detail.job.completedAt).toLocaleString() : '—'],
     ['Model', detail.job.execution?.model || 'default'],
-    ['Speed', detail.job.execution?.serviceTier || 'standard'],
+    ...(detail.job.providerId === 'codex'
+      ? [
+          [
+            'Accepted execution',
+            describeCodexExecution(detail.job.execution?.providerOptions?.codex),
+          ],
+          [
+            'Reasoning',
+            detail.job.execution?.reasoningEffort === CODEX_HTTP_REASONING
+              ? 'Managed by provider'
+              : detail.job.execution?.reasoningEffort || 'default',
+          ],
+        ]
+      : []),
+    [
+      'Speed',
+      detail.job.execution?.providerOptions?.codex?.transport === 'subscription_http'
+        ? 'Managed by provider'
+        : detail.job.execution?.serviceTier || 'standard',
+    ],
     ['Token source', detail.metrics.tokenUsage?.source || 'not reported'],
   ] as const;
 
@@ -638,8 +661,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </div>
 
           <div className="flex shrink-0 flex-wrap items-center gap-2">
-            {onRetryJob &&
-            (canRetryStudioJob(detail.job.status) || canResumeStudioJob(detail.job)) ? (
+            {onRetryJob && (canRetryStudioJob(detail.job) || canResumeStudioJob(detail.job)) ? (
               <button
                 type="button"
                 onClick={() => onRetryJob(detail.job.id)}

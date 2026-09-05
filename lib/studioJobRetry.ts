@@ -3,6 +3,9 @@ export { canResumeStudioJob } from '../packages/shared/src/jobRecovery';
 
 const RETRYABLE_JOB_STATUSES = new Set<Job['status']>(['failed', 'cancelled']);
 
-export function canRetryStudioJob(status: Job['status']) {
-  return RETRYABLE_JOB_STATUSES.has(status);
+export function canRetryStudioJob(job: Pick<Job, 'status' | 'providerId' | 'execution'>) {
+  return (
+    RETRYABLE_JOB_STATUSES.has(job.status) &&
+    (job.providerId !== 'codex' || Boolean(job.execution?.providerOptions?.codex))
+  );
 }

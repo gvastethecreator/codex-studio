@@ -54,6 +54,7 @@ export interface ImageGenerationConfig {
   executionModel: string;
   executionReasoningEffort: CodexReasoningEffort;
   executionSpeed: CodexServiceTier;
+  codexTransport?: import('./packages/shared/src').CodexExecutionTransport;
   batchCount: number;
   useThinkingAndSearch?: boolean;
 }

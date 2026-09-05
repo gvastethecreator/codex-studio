@@ -83,7 +83,7 @@ graph TD
 3. The runner resolves Recipe Module data, builds provider-independent Generation Task Specs, and creates Persistent Jobs.
 4. The backend validates intake, captures an immutable Library Context, resolves effective provider execution policy, persists job state, and enqueues work.
 5. The Provider Boundary compiles the Generation Task Spec into provider-specific input.
-6. The Codex provider runs turns through `codex app-server`. Grok Imagine runs one bounded headless Grok Build session per Job. Other providers run only when concrete preflight passes.
+6. The Codex provider uses the transport captured at intake: `codex app-server` or subscription HTTP. Grok Imagine runs one bounded headless Grok Build session per Job. Other providers run only when concrete preflight passes.
 7. Completed jobs write Local Assets, Catalog Entries, transcripts, and logs into the Studio Library.
 8. The UI refreshes `/api/catalog` by job id and shows catalog-derived images.
 9. The legacy workspace JSON shape is derived from current Catalog Entries only when the user exports it.
@@ -157,7 +157,18 @@ Generation Tasks and Generation Providers stay separate:
 
 Current concrete adapters:
 
-- **Codex:** primary product runtime through `codex app-server`.
+- **Codex:** the composer, Settings, intake, and adapter share `codexExecutionContract.ts`.
+  Accepted jobs retain their transport, model, image size, quality, and supported options.
+  Studio's subscription HTTP adapter currently exposes `gpt-5.5`, `gpt-image-2`, medium quality,
+  and provider-managed reasoning and speed. This is Studio's supported contract, not a claim
+  about every option offered by the public API. Exact 16:9 output stays 1536x864.
+  The public [image generation guide](https://developers.openai.com/api/docs/guides/image-generation)
+  defines the image size constraints; it does not prove subscription endpoint entitlement.
+  An auth change revalidates the preview and never changes an accepted job's transport.
+  HTTP persists a submission marker before its single POST. A lost acknowledgement or restart
+  moves the job to review without a second POST or CLI fallback. Only confirmed rejection permits
+  a fresh retry. Jobs predating the captured contract require a new, reviewed request.
+  Explicit Standard speed on an accepted CLI job remains Standard when global defaults change.
 - **Grok Imagine:** optional local-agent executor through the signed-in Grok Build CLI.
   Each image Job uses a fresh strict headless session and an exact `image_gen` or `image_edit` allowlist.
   There is no automatic retry.
