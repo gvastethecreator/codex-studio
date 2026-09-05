@@ -99,7 +99,9 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('providers');
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef(onClose);
-  closeRef.current = onClose;
+  useEffect(() => {
+    closeRef.current = onClose;
+  }, [onClose]);
   useEffect(() => {
     if (!isOpen) return;
     const previousFocus = document.activeElement;

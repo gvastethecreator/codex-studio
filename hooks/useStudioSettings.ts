@@ -178,19 +178,24 @@ export function useStudioSettings({
       const revision = ++refreshRevision.current;
       setIsLoading(true);
       setError(null);
-      const errors = await Promise.all([
-        ...(includeSettings
-          ? [readResource('settings', getEditableStudioSettings, setSettings)]
-          : []),
-        ...(includeOutputSources
-          ? [readResource('outputSources', getExternalOutputSources, setOutputSources)]
-          : []),
-        ...[refreshProviders().then((results) => results.filter(Boolean).join('; ') || null)],
-      ]);
-      if (isMountedRef.current && refreshRevision.current === revision) {
-        const message = errors.filter(Boolean).join('; ');
-        setError(message ? `Some settings could not refresh: ${message}` : null);
-        setIsLoading(false);
+      try {
+        const errors = await Promise.all([
+          ...(includeSettings
+            ? [readResource('settings', getEditableStudioSettings, setSettings)]
+            : []),
+          ...(includeOutputSources
+            ? [readResource('outputSources', getExternalOutputSources, setOutputSources)]
+            : []),
+          ...[refreshProviders().then((results) => results.filter(Boolean).join('; ') || null)],
+        ]);
+        if (isMountedRef.current && refreshRevision.current === revision) {
+          const message = errors.filter(Boolean).join('; ');
+          setError(message ? `Some settings could not refresh: ${message}` : null);
+        }
+      } finally {
+        if (isMountedRef.current && refreshRevision.current === revision) {
+          setIsLoading(false);
+        }
       }
     },
     [readResource, refreshProviders],
