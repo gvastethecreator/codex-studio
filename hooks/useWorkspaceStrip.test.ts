@@ -2,7 +2,10 @@ import { describe, expect, it } from 'vite-plus/test';
 import type { CatalogImage, CatalogWorkspaceSummary } from '../packages/shared/src';
 import type { Workspace } from '../types';
 import { createCatalogView } from '../lib/studioCatalogView';
-import { buildWorkspacesWithThumbs, mergeWorkspacesWithCatalogEntries } from './useWorkspaceStrip';
+import {
+  buildWorkspacesWithThumbs,
+  mergeWorkspacesWithCatalogEntries,
+} from '../lib/workspaceCatalogProjection';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'catalog-image';

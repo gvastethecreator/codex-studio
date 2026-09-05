@@ -17,27 +17,31 @@ export class StudioApiError extends Error {
   }
 }
 
-export function readLocalStudioErrorMessage(text: string, status: number) {
+function decodeLocalStudioError(text: string, status: number) {
   const trimmed = text.trim();
-  if (trimmed) {
-    try {
-      const payload = JSON.parse(trimmed) as {
-        error?: unknown;
-        message?: unknown;
-        code?: unknown;
-        reason?: unknown;
-      };
-      if (typeof payload.error === 'string' && payload.error.trim()) return payload.error.trim();
-      if (typeof payload.message === 'string' && payload.message.trim()) {
-        return payload.message.trim();
-      }
-    } catch {
-      return trimmed;
+  let message = trimmed || `Local studio request failed: ${status}`;
+  let code: string | null = null;
+  let reason: string | null = null;
+  try {
+    const value: unknown = JSON.parse(trimmed);
+    if (value && typeof value === 'object') {
+      const payload = value as Record<string, unknown>;
+      if (typeof payload.error === 'string' && payload.error.trim()) message = payload.error.trim();
+      else if (typeof payload.message === 'string' && payload.message.trim())
+        message = payload.message.trim();
+      code = typeof payload.code === 'string' ? payload.code : null;
+      reason = typeof payload.reason === 'string' ? payload.reason : null;
+    } else if (value === null) {
+      message = `Local studio request failed: ${status}`;
     }
-    return trimmed;
+  } catch {
+    /* Plain-text errors retain the backend message. */
   }
+  return { message, code, reason };
+}
 
-  return `Local studio request failed: ${status}`;
+export function readLocalStudioErrorMessage(text: string, status: number) {
+  return decodeLocalStudioError(text, status).message;
 }
 
 /**
@@ -56,21 +60,11 @@ export async function request<T>(path: string, init?: RequestInit): Promise<T> {
   });
 
   if (!response.ok) {
-    const text = await response.text();
-    let code: string | null = null;
-    let reason: string | null = null;
-    try {
-      const payload = JSON.parse(text) as { code?: unknown; reason?: unknown };
-      code = typeof payload.code === 'string' ? payload.code : null;
-      reason = typeof payload.reason === 'string' ? payload.reason : null;
-    } catch {
-      // non-JSON error body
-    }
-    throw new StudioApiError(readLocalStudioErrorMessage(text, response.status), {
-      status: response.status,
-      code,
-      reason,
-    });
+    const { message, code, reason } = decodeLocalStudioError(
+      await response.text(),
+      response.status,
+    );
+    throw new StudioApiError(message, { status: response.status, code, reason });
   }
 
   if (response.status === 204) {

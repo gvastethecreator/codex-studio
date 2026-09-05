@@ -61,6 +61,7 @@ describe('readLocalStudioErrorMessage', () => {
   it('preserves plain text and supplies a status fallback', () => {
     expect(readLocalStudioErrorMessage('Export failed', 409)).toBe('Export failed');
     expect(readLocalStudioErrorMessage('', 503)).toBe('Local studio request failed: 503');
+    expect(readLocalStudioErrorMessage('null', 503)).toBe('Local studio request failed: 503');
   });
 });
 

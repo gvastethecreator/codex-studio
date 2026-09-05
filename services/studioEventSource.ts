@@ -16,6 +16,16 @@ import { getStudioJobDetail, listStudioJobs } from './studio-api/jobs';
 type Unsubscribe = () => void;
 type Listener<T> = (payload: T) => void;
 
+function notifyListener<T>(listener: Listener<T>, payload: T) {
+  try {
+    listener(payload);
+  } catch (error) {
+    // Report subscriber failures without interrupting other consumers of the shared stream.
+    // eslint-disable-next-line no-console
+    console.error('Studio event listener failed', error);
+  }
+}
+
 export type StudioCatalogEventPayload =
   | {
       type: 'catalog.created' | 'catalog.updated' | 'catalog.deleted';
@@ -208,7 +218,7 @@ class BrowserStudioEventStream implements StudioEventStream {
   }
 
   private emitConnection(connected: boolean) {
-    for (const listener of this.connectionListeners) listener(connected);
+    for (const listener of this.connectionListeners) notifyListener(listener, connected);
   }
 
   private dispatch(event: StudioEvent | UnknownStudioEvent) {
@@ -216,7 +226,7 @@ class BrowserStudioEventStream implements StudioEventStream {
       const connected = event as Extract<StudioEvent, { type: 'server.connected' }>;
       const serverRevision = connected.payload.revision ?? event.revision ?? 0;
       if (connected.payload.reconciled === false) {
-        this.revisionGapListeners.forEach((listener) => listener());
+        this.revisionGapListeners.forEach((listener) => notifyListener(listener, undefined));
       }
       // A backend restart begins a new in-memory revision epoch. The connected
       // frame is authoritative after reconciliation, even when it is lower.
@@ -227,7 +237,7 @@ class BrowserStudioEventStream implements StudioEventStream {
     if (typeof event.revision === 'number') {
       if (event.revision <= this.lastRevision) return;
       if (this.lastRevision > 0 && event.revision > this.lastRevision + 1) {
-        this.revisionGapListeners.forEach((listener) => listener());
+        this.revisionGapListeners.forEach((listener) => notifyListener(listener, undefined));
       }
       this.lastRevision = event.revision;
     }
@@ -235,10 +245,10 @@ class BrowserStudioEventStream implements StudioEventStream {
     if (event.type.startsWith('job.')) {
       const job = event.payload as Job | null;
       if (!job) return;
-      this.jobListeners.get('*')?.forEach((listener) => listener(job));
-      this.jobListeners.get(job.id)?.forEach((listener) => listener(job));
+      this.jobListeners.get('*')?.forEach((listener) => notifyListener(listener, job));
+      this.jobListeners.get(job.id)?.forEach((listener) => notifyListener(listener, job));
     } else if (event.type === 'asset.created') {
-      this.assetListeners.forEach((listener) => listener(event.payload as Asset));
+      this.assetListeners.forEach((listener) => notifyListener(listener, event.payload as Asset));
     } else if (
       event.type === 'catalog.created' ||
       event.type === 'catalog.updated' ||
@@ -249,28 +259,28 @@ class BrowserStudioEventStream implements StudioEventStream {
         'catalog.batch_changed'
       >;
       this.catalogListeners.forEach((listener) =>
-        listener({ type, image: event.payload as CatalogImage }),
+        notifyListener(listener, { type, image: event.payload as CatalogImage }),
       );
     } else if (event.type === 'catalog.batch_changed') {
       this.catalogListeners.forEach((listener) =>
-        listener({
+        notifyListener(listener, {
           type: 'catalog.batch_changed',
           batch: event.payload as CatalogBatchChangedEventPayload,
         }),
       );
     } else if (event.type === 'log.appended' || event.type === 'log.created') {
-      this.logListeners.forEach((listener) => listener(event.payload as SystemLog));
+      this.logListeners.forEach((listener) => notifyListener(listener, event.payload as SystemLog));
     } else if (event.type === 'onboarding.stage') {
       this.onboardingStageListeners.forEach((listener) =>
-        listener(event.payload as OnboardingStagePayload),
+        notifyListener(listener, event.payload as OnboardingStagePayload),
       );
     } else if (event.type === 'onboarding.probe') {
       this.onboardingProbeListeners.forEach((listener) =>
-        listener(event.payload as OnboardingProbe),
+        notifyListener(listener, event.payload as OnboardingProbe),
       );
     } else if (event.type === 'auth.updated') {
       this.authUpdatedListeners.forEach((listener) =>
-        listener(event.payload as SubscriptionAuthUpdatedEventPayload),
+        notifyListener(listener, event.payload as SubscriptionAuthUpdatedEventPayload),
       );
     }
   }

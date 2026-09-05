@@ -146,6 +146,10 @@ describe('studioEventSource', () => {
 
     try {
       const stream = createStudioEventStream();
+      const consoleError = vi.spyOn(console, 'error').mockImplementation(() => {});
+      stream.onJobUpdate('*', () => {
+        throw new Error('Broken consumer');
+      });
       const seen: string[] = [];
       let reconciliationCount = 0;
       stream.onJobUpdate('*', (job) => seen.push(job.id));
@@ -182,6 +186,8 @@ describe('studioEventSource', () => {
 
       expect(seen).toEqual(['before-restart', 'after-restart']);
       expect(reconciliationCount).toBe(1);
+      expect(consoleError).toHaveBeenCalledTimes(2);
+      consoleError.mockRestore();
       stream.close();
     } finally {
       if (previousEventSource) {
