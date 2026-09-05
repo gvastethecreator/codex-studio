@@ -1,17 +1,18 @@
-import type { AnimationSequenceRunView, JobSummary } from '../packages/shared/src';
+import type { AnimationSequenceRunView } from '../packages/shared/src';
 import { attachAnimationSequenceFrame } from './studio-api/animationSequences';
-import { listStudioJobs } from './studio-api/jobs';
+import { getStudioJobStatus } from './studio-api/jobs';
+import { StudioApiError } from './studio-api/http';
 import { queryCatalog } from './studio-api/catalog';
 
 interface AnimationSequenceRunCoordinatorDependencies {
   attachFrame?: typeof attachAnimationSequenceFrame;
-  listJobs?: () => Promise<JobSummary[]>;
+  readJobStatus?: typeof getStudioJobStatus;
   queryCatalogByJob?: (jobId: string) => ReturnType<typeof queryCatalog>;
 }
 
 export function createAnimationSequenceRunCoordinator({
   attachFrame = attachAnimationSequenceFrame,
-  listJobs = listStudioJobs,
+  readJobStatus = getStudioJobStatus,
   queryCatalogByJob = (jobId) => queryCatalog({ jobId, limit: 1 }),
 }: AnimationSequenceRunCoordinatorDependencies = {}) {
   return {
@@ -20,13 +21,20 @@ export function createAnimationSequenceRunCoordinator({
     },
 
     async reconcile(run: AnimationSequenceRunView) {
-      const jobs = await listJobs();
-      const jobsById = new Map(jobs.map((job) => [job.id, job]));
-      const completedFrames = run.frames.flatMap((frame) => {
-        if (!frame.jobId || frame.catalogImageId) return [];
-        const job = jobsById.get(frame.jobId);
-        return job?.status === 'completed' ? [{ frame, job }] : [];
-      });
+      const pendingFrames = run.frames.filter((frame) => frame.jobId && !frame.catalogImageId);
+      const snapshots = await Promise.all(
+        pendingFrames.map(async (frame) => {
+          try {
+            return { frame, job: await readJobStatus(frame.jobId!) };
+          } catch (error) {
+            if (error instanceof StudioApiError && error.status === 404) return null;
+            throw error;
+          }
+        }),
+      );
+      const completedFrames = snapshots.flatMap((entry) =>
+        entry?.job.status === 'completed' ? [entry] : [],
+      );
       const resolvedFrames = await Promise.all(
         completedFrames.map(async ({ frame, job }) => ({
           frame,

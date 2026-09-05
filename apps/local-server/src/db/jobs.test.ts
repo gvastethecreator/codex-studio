@@ -6,6 +6,11 @@ describe('listJobSummariesFromDb', () => {
   it('uses projected columns without reading the Generation Task Spec', () => {
     const query = vi.fn((sql: string) => {
       expect(sql).not.toContain('source_spec_json');
+      if (sql.includes('GROUP BY status'))
+        return { all: () => [{ status: 'completed', count: 1 }] };
+      if (sql.includes('COUNT(*)')) return { get: () => ({ count: 0 }) };
+      if (sql.includes('SELECT DISTINCT') || !sql.includes("'completed', 'failed', 'cancelled'"))
+        return { all: () => [] };
       return {
         all: () => [
           {
@@ -18,8 +23,7 @@ describe('listJobSummariesFromDb', () => {
             provider_id: 'codex',
             status: 'completed',
             execution_json: null,
-            original_prompt: 'original prompt',
-            final_prompt_used: 'final prompt',
+            prompt_preview: 'final prompt',
             error: null,
             created_at: '2026-08-08T00:00:00.000Z',
             updated_at: '2026-08-08T00:00:01.000Z',
@@ -29,9 +33,12 @@ describe('listJobSummariesFromDb', () => {
       };
     });
 
-    const summaries = listJobSummariesFromDb({ query } as never);
+    const summaries = listJobSummariesFromDb({
+      query,
+      transaction: (read: () => unknown) => read,
+    } as never);
 
-    expect(summaries).toEqual([
+    expect(summaries.history).toEqual([
       expect.objectContaining({
         id: 'job-1',
         workspaceId: 'workspace-1',

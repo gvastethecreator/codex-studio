@@ -11,16 +11,25 @@ export interface LocalStudioSyncBackendState {
   jobs: ShellActivityJob[];
   logs: StudioLog[];
   connected: boolean;
+  eventVersion: number;
+  jobEventVersions: Record<string, number>;
 }
 
 export const INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE: LocalStudioSyncBackendState = {
   jobs: [],
   logs: [],
   connected: false,
+  eventVersion: 0,
+  jobEventVersions: {},
 };
 
 export type LocalStudioSyncBackendAction =
-  | { type: 'refresh'; jobs: Array<StudioJob | JobSummary>; logs: StudioLog[] }
+  | {
+      type: 'refresh';
+      jobs: Array<StudioJob | JobSummary>;
+      logs: StudioLog[];
+      requestedAtVersion: number;
+    }
   | { type: 'job_update'; job: StudioJob }
   | { type: 'log_added'; entry: StudioLog }
   | { type: 'connection_change'; connected: boolean }
@@ -31,15 +40,33 @@ export function localStudioSyncBackendReducer(
   action: LocalStudioSyncBackendAction,
 ): LocalStudioSyncBackendState {
   switch (action.type) {
-    case 'refresh':
+    case 'refresh': {
+      const jobs = new Map(
+        action.jobs.map((job) => [job.id, toShellActivityJob(job, 'backend_summary')]),
+      );
+      for (const job of state.jobs) {
+        if ((state.jobEventVersions[job.id] ?? 0) <= action.requestedAtVersion) continue;
+        const snapshot = jobs.get(job.id);
+        if (!snapshot || Date.parse(job.updatedAt) >= Date.parse(snapshot.updatedAt))
+          jobs.set(job.id, job);
+      }
       return {
-        jobs: action.jobs.map((job) => toShellActivityJob(job, 'backend_summary')),
+        ...state,
+        jobs: [...jobs.values()].sort(
+          (a, b) => Date.parse(b.updatedAt) - Date.parse(a.updatedAt) || b.id.localeCompare(a.id),
+        ),
+        jobEventVersions: Object.fromEntries(
+          [...jobs.keys()].map((id) => [id, state.jobEventVersions[id] ?? 0]),
+        ),
         logs: action.logs,
         connected: true,
       };
+    }
     case 'job_update':
       return {
         ...state,
+        eventVersion: state.eventVersion + 1,
+        jobEventVersions: { ...state.jobEventVersions, [action.job.id]: state.eventVersion + 1 },
         jobs: mergeShellActivityJobs(state.jobs, toShellActivityJob(action.job, 'backend_event')),
       };
     case 'log_added':

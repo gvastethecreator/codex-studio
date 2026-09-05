@@ -33,6 +33,7 @@ describe('database migrations', () => {
       schemaVersion: 7,
       legacyComfyIsolated: true,
       remoteIdentityPreserved: true,
+      completeJobHistory: true,
     });
   });
 });

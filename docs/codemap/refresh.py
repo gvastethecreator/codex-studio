@@ -23,7 +23,7 @@ generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 # id, path, type, responsibility, public entry symbol
 boundaries = [
-    ("app", "App.tsx", "interface", "Application providers and routes", "App"),
+    ("job-history", "hooks/useJobHistory.ts", "interface", "Open jobs and filtered terminal history", "useJobHistory"),
     ("generation-ui", "hooks/useGenerationPipeline.ts", "interface", "User generation lifecycle", "useGenerationPipeline"),
     ("generation-run", "services/localGenerationRun.ts", "service", "Persistent generation observation and catalog results", "runLocalGeneration"),
     ("job-client", "services/studio-api/jobs.ts", "service", "Browser job API", "createStudioJob"),
@@ -61,6 +61,9 @@ for node_id, path, kind, boundary, symbol in boundaries:
                       callers=[], callees=[], evidence=evidence(source_path, symbol)))
 
 for node in nodes:
+    if node["id"] == "job-history":
+        node["entrypoints"].append("components/QueuePanel.tsx:QueuePanel")
+        node["evidence"]["locations"].append(dict(path="components/QueuePanel.tsx", symbol="useJobHistory"))
     if node["id"] == "worker":
         node["tests"] = ["apps/local-server/src/workerShutdown.test.ts", "apps/local-server/src/workerAssetFinalizer.test.ts", "apps/local-server/src/workerRouting.test.ts"]
     if node["id"] == "providers":
@@ -72,6 +75,7 @@ for node in nodes:
 
 # from, to, interaction, evidence path and literal
 links = [
+    ("job-history", "job-client", "calls", "hooks/useJobHistory.ts", "listStudioJobs"),
     ("generation-ui", "generation-run", "calls", "hooks/useGenerationPipeline.ts", "runLocalGenerationWithLifecycle"),
     ("generation-run", "job-client", "calls", "services/localGenerationRun.ts", "createStudioJob"),
     ("generation-run", "job-observer", "calls", "services/localGenerationRun.ts", "watchJob"),
@@ -107,7 +111,7 @@ for node in nodes:
 flows = [
     dict(id="generation", trigger="User starts generation", steps=["generation-ui", "generation-run", "job-client", "job-routes", "job-intake", "worker", "providers"], outcome="Validated persistent job reaches its provider adapter"),
     dict(id="reconciliation", trigger="Observer attaches or recovers its connection", steps=["generation-run", "job-observer", "job-client", "job-routes", "jobs-db"], outcome="Observer reads durable job truth independently of event delivery"),
-    dict(id="event-delivery", trigger="Browser opens a revisioned event stream", steps=["job-observer", "event-routes", "event-bus"], outcome="Subscription receives worker and catalog updates"),
+    dict(id="job-history", trigger="User opens Queue or pages terminal history", steps=["job-history", "job-client", "job-routes", "jobs-db"], outcome="All open work remains visible beside terminal history and authoritative counts"),
     dict(id="finalization-recovery", trigger="Worker resumes a persisted finalization checkpoint", steps=["worker", "asset-finalizer", "catalog"], outcome="Existing asset is finalized into catalog truth"),
     dict(id="user-style-edit", trigger="User opens a style draft and saves", steps=["styles", "style-editor", "style-client", "style-routes"], outcome="User style changes persist through the existing API"),
 ]

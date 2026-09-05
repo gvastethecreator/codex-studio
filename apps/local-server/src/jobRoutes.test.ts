@@ -97,11 +97,35 @@ function createJobDetail(job: Job): JobDetailResponse {
   };
 }
 
+const emptyJobPage = {
+  open: [],
+  history: [],
+  nextCursor: null,
+  globalOpenCount: 0,
+  workspaces: [],
+  counts: {
+    queued: 0,
+    running: 0,
+    needs_review: 0,
+    completed: 0,
+    failed: 0,
+    cancelled: 0,
+    open: 0,
+    history: 0,
+    total: 0,
+  },
+};
+
 describe('jobRoutes', () => {
   it('lists jobs and returns detail when found', async () => {
     const job = createJob({ id: 'job-1' });
+    const page = {
+      ...emptyJobPage,
+      open: [{ ...job, recipeId: null, aspectRatio: null, promptPreview: 'orig' }],
+    };
+    const listJobs = vi.fn(() => page);
     const routes = createJobRoutes({
-      listJobs: () => [job],
+      listJobs,
       getJob: () => null,
       getJobDetail: async (jobId) => (jobId === 'job-1' ? createJobDetail(job) : null),
       cancelQueuedOrRunningJob: () => null,
@@ -120,7 +144,18 @@ describe('jobRoutes', () => {
 
     const listResponse = await routes.request('/');
     expect(listResponse.status).toBe(200);
-    await expect(listResponse.json()).resolves.toEqual([job]);
+    await expect(listResponse.json()).resolves.toEqual(page);
+
+    await routes.request('/?workspaceId=space-a&status=failed&limit=2&cursor=next');
+    expect(listJobs).toHaveBeenLastCalledWith({
+      workspaceId: 'space-a',
+      status: 'failed',
+      limit: 2,
+      cursor: 'next',
+    });
+    for (const query of ['status=running', 'limit=0', 'limit=101', 'limit=no']) {
+      expect((await routes.request(`/?${query}`)).status).toBe(400);
+    }
 
     const detailResponse = await routes.request('/job-1');
     expect(detailResponse.status).toBe(200);
@@ -146,7 +181,7 @@ describe('jobRoutes', () => {
       .mockImplementation((jobId) => (jobId === 'job-q' ? cancelled : null));
 
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob,
@@ -195,7 +230,7 @@ describe('jobRoutes', () => {
     const publishEvent = vi.fn();
 
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: (jobId) => (jobId === 'job-failed' ? failed : null),
       getJobDetail: async () => null,
       requeueJob,
@@ -228,7 +263,7 @@ describe('jobRoutes', () => {
     const enqueueJob = vi.fn();
 
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: (jobId) => (jobId === 'job-done' ? completed : null),
       getJobDetail: async () => null,
       requeueJob: () => createJob(),
@@ -262,7 +297,7 @@ describe('jobRoutes', () => {
     const enqueueJob = vi.fn();
 
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: (jobId) => (jobId === 'job-failed' ? failed : null),
       getJobDetail: async () => null,
       requeueJob,
@@ -312,7 +347,7 @@ describe('jobRoutes', () => {
     const enqueueJob = vi.fn();
 
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: (jobId) => (jobId === 'job-grok-failed' ? failed : null),
       getJobDetail: async () => null,
       requeueJob,
@@ -358,7 +393,7 @@ describe('jobRoutes', () => {
     const created = createJob({ id: 'job-new', kind: 'image_generate' });
 
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
@@ -419,7 +454,7 @@ describe('jobRoutes', () => {
   it('rejects invalid local queued batch ids before enqueue', async () => {
     const enqueueJob = vi.fn();
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
@@ -464,7 +499,7 @@ describe('jobRoutes', () => {
   it('rejects provider mismatch between job request and source spec', async () => {
     const enqueueJob = vi.fn();
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
@@ -506,7 +541,7 @@ describe('jobRoutes', () => {
   it('rejects malformed JSON and invalid boundary payloads', async () => {
     const enqueueJob = vi.fn();
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
@@ -555,7 +590,7 @@ describe('jobRoutes', () => {
       persistedRefs: [],
     }));
     const routes = createJobRoutes({
-      listJobs: () => [],
+      listJobs: () => emptyJobPage,
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,

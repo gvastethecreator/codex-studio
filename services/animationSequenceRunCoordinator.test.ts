@@ -21,7 +21,12 @@ describe('Animation Sequence Run Coordinator', () => {
     const attachFrame = vi.fn(async () => run);
     const coordinator = createAnimationSequenceRunCoordinator({
       attachFrame,
-      listJobs: async () => [{ id: 'job-1', status: 'completed' } as never],
+      readJobStatus: async () => ({
+        id: 'job-1',
+        status: 'completed',
+        error: null,
+        updatedAt: '2026-09-05',
+      }),
       queryCatalogByJob: async () =>
         ({ images: [{ id: 'image-1' }], total: 1, hasMore: false }) as never,
     });

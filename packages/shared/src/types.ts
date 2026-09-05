@@ -252,6 +252,27 @@ export interface JobSummary {
   completedAt: string | null;
 }
 
+export type TerminalJobStatus = Extract<JobStatus, 'completed' | 'failed' | 'cancelled'>;
+export interface JobListQuery {
+  workspaceId?: string;
+  status?: TerminalJobStatus;
+  cursor?: string;
+  limit?: number;
+}
+export type JobCounts = Record<JobStatus, number> & {
+  open: number;
+  history: number;
+  total: number;
+};
+export interface JobListPage {
+  open: JobSummary[];
+  history: JobSummary[];
+  counts: JobCounts;
+  globalOpenCount: number;
+  nextCursor: string | null;
+  workspaces: Array<{ id: string; name: string }>;
+}
+
 export interface JobEventRecord {
   id: number;
   jobId: string | null;

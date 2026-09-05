@@ -10,7 +10,7 @@ import {
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
-    workspaceId: overrides.workspaceId ?? 'default',
+    workspaceId: overrides.workspaceId ?? 'workspace-1',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
     sourceSpec:

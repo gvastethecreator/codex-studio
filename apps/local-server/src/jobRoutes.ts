@@ -4,7 +4,8 @@ import type {
   CreateJobRequest,
   Job,
   JobDetailResponse,
-  JobSummary,
+  JobListPage,
+  JobListQuery,
   JobStatusSnapshot,
 } from '../../../packages/shared/src/types';
 import {
@@ -19,7 +20,7 @@ import {
 } from './persistentJobIntake';
 
 interface JobRoutesDependencies extends PersistentJobIntakeDependencies {
-  listJobs: () => Array<Job | JobSummary>;
+  listJobs: (query: JobListQuery) => JobListPage;
   getJob: (jobId: string) => Job | null;
   getJobStatus?: (jobId: string) => JobStatusSnapshot | null;
   getJobDetail: (jobId: string) => Promise<JobDetailResponse | null>;
@@ -87,7 +88,34 @@ export function createJobRoutes({
     enqueueJob,
   });
 
-  routes.get('/', (c) => c.json(listJobs()));
+  routes.get('/', (c) => {
+    const status = c.req.query('status');
+    const limit = c.req.query('limit');
+    const cursor = c.req.query('cursor');
+    const workspaceId = c.req.query('workspaceId');
+    if (
+      (status && !['completed', 'failed', 'cancelled'].includes(status)) ||
+      (limit && (!/^\d+$/.test(limit) || Number(limit) < 1 || Number(limit) > 100)) ||
+      (cursor && cursor.length > 1024) ||
+      (workspaceId && workspaceId.length > 512)
+    ) {
+      return c.json({ error: 'Invalid job history filter.' }, 400);
+    }
+    try {
+      return c.json(
+        listJobs({
+          workspaceId,
+          status: status as JobListQuery['status'],
+          cursor,
+          limit: limit ? Number(limit) : undefined,
+        }),
+      );
+    } catch (error) {
+      if (error instanceof Error && error.message === 'Invalid job history cursor.')
+        return c.json({ error: error.message }, 400);
+      throw error;
+    }
+  });
 
   routes.get('/:id/status', (c) => {
     const snapshot = getJobStatus(c.req.param('id'));

@@ -56,7 +56,9 @@ export function toShellActivityJob(
     error: job.error,
     promptPreview,
     workspaceId:
-      summaryJob?.workspaceId ?? readMetadataString(fullJob?.sourceSpec?.metadata, 'workspaceId'),
+      summaryJob?.workspaceId ??
+      fullJob?.workspaceId ??
+      readMetadataString(fullJob?.sourceSpec?.metadata, 'workspaceId'),
     recipeId:
       summaryJob?.recipeId ??
       fullJob?.sourceSpec?.recipeId ??
@@ -74,14 +76,13 @@ export function toShellActivityJob(
   };
 }
 
-export function mergeShellActivityJobs(
-  current: ShellActivityJob[],
-  incoming: ShellActivityJob,
-  limit = 100,
-) {
-  return [incoming, ...current.filter((candidate) => candidate.id !== incoming.id)]
-    .sort((left, right) => Date.parse(right.updatedAt) - Date.parse(left.updatedAt))
-    .slice(0, limit);
+export function mergeShellActivityJobs(current: ShellActivityJob[], incoming: ShellActivityJob) {
+  const previous = current.find((candidate) => candidate.id === incoming.id);
+  if (previous && Date.parse(previous.updatedAt) > Date.parse(incoming.updatedAt)) return current;
+  return [incoming, ...current.filter((candidate) => candidate.id !== incoming.id)].sort(
+    (left, right) =>
+      Date.parse(right.updatedAt) - Date.parse(left.updatedAt) || right.id.localeCompare(left.id),
+  );
 }
 
 export function countActiveShellActivityJobs(jobs: ShellActivityJob[]) {

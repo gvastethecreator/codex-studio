@@ -208,6 +208,71 @@ function readColumnNames(database: Database) {
   );
 }
 
+function inspectJobHistory() {
+  const historyDb = createLegacyDatabase();
+  try {
+    migrateDatabase(historyDb);
+    historyDb.query("UPDATE jobs SET workspace_id = 'history-a', status = 'running'").run();
+    const insert = historyDb.query(`INSERT INTO jobs (id, workspace_id, kind, provider_id, status,
+      original_prompt, final_prompt_used, created_at, updated_at)
+      VALUES (?, ?, 'image_generate', 'codex', ?, 'prompt', 'prompt', ?, ?)`);
+    const timestamp = '2026-09-05T12:00:00.000Z';
+    for (let index = 0; index < 103; index += 1) {
+      const status = index === 0 ? 'failed' : index === 1 ? 'cancelled' : 'completed';
+      insert.run(
+        `history-${String(index).padStart(3, '0')}`,
+        'history-a',
+        status,
+        timestamp,
+        timestamp,
+      );
+    }
+    insert.run('other-review', 'history-b', 'needs_review', timestamp, timestamp);
+    const first = listJobSummaries({ workspaceId: 'history-a', limit: 20 }, historyDb);
+    // A terminal event while older pages are being read must not move the cursor or duplicate rows.
+    historyDb
+      .query("UPDATE jobs SET status = 'completed', updated_at = ? WHERE id = 'job-sentinel'")
+      .run(timestamp);
+    const ids = first.history.map((job) => job.id);
+    let cursor = first.nextCursor;
+    while (cursor) {
+      const page = listJobSummaries({ workspaceId: 'history-a', limit: 20, cursor }, historyDb);
+      ids.push(...page.history.map((job) => job.id));
+      cursor = page.nextCursor;
+    }
+    const failed = listJobSummaries({ workspaceId: 'history-a', status: 'failed' }, historyDb);
+    const cancelled = listJobSummaries(
+      { workspaceId: 'history-a', status: 'cancelled' },
+      historyDb,
+    );
+    let rejectsInvalidCursor = false;
+    try {
+      listJobSummaries({ cursor: 'invalid' }, historyDb);
+    } catch {
+      rejectsInvalidCursor = true;
+    }
+    return (
+      first.open.some((job) => job.id === 'job-sentinel') &&
+      first.history.length === 20 &&
+      first.counts.open === 1 &&
+      first.counts.history === 103 &&
+      first.globalOpenCount === 2 &&
+      ids.length === 104 &&
+      new Set(ids).size === 104 &&
+      ids.includes('job-sentinel') &&
+      failed.history[0]?.id === 'history-000' &&
+      failed.counts.history === 1 &&
+      failed.counts.open === 0 &&
+      cancelled.history[0]?.id === 'history-001' &&
+      cancelled.counts.history === 1 &&
+      failed.workspaces.some((workspace) => workspace.id === 'history-b') &&
+      rejectsInvalidCursor
+    );
+  } finally {
+    historyDb.close();
+  }
+}
+
 const database = createLegacyDatabase();
 try {
   const remoteDatabase = createLegacyDatabase();
@@ -304,7 +369,10 @@ try {
       '2:3',
       'job-sentinel',
     );
-  const summary = listJobSummaries(database).find((job) => job.id === 'job-sentinel');
+  const summaryPage = listJobSummaries({}, database);
+  const summary = [...summaryPage.open, ...summaryPage.history].find(
+    (job) => job.id === 'job-sentinel',
+  );
   const createdJob = createJob(
     {
       id: 'job-workspace-only',
@@ -434,6 +502,7 @@ try {
       schemaVersion: LATEST_DATABASE_SCHEMA_VERSION,
       legacyComfyIsolated,
       remoteIdentityPreserved,
+      completeJobHistory: inspectJobHistory(),
     }),
   );
 } finally {

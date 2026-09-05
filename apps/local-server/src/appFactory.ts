@@ -327,7 +327,7 @@ export async function createStudioApp(
   app.route(
     '/api/jobs',
     createJobRoutes({
-      listJobs: () => jobStore.listJobSummaries(),
+      listJobs: (query) => jobStore.listJobSummaries(query),
       getJob: (jobId) => jobStore.getJob(jobId),
       getJobStatus: (jobId) => jobStore.getJobStatus(jobId),
       getJobDetail,

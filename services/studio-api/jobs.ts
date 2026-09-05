@@ -2,7 +2,8 @@ import type {
   CreateJobRequest,
   Job,
   JobDetailResponse,
-  JobSummary,
+  JobListQuery,
+  JobListPage,
   JobStatusSnapshot,
   ReferenceHandoffRequest,
   ReferenceHandoffResponse,
@@ -23,8 +24,14 @@ export async function createReferenceHandoff(input: ReferenceHandoffRequest) {
   });
 }
 
-export async function listStudioJobs() {
-  return request<JobSummary[]>('/api/jobs');
+export async function listStudioJobs(query: JobListQuery = {}, signal?: AbortSignal) {
+  const params = new URLSearchParams();
+  if (query.workspaceId) params.set('workspaceId', query.workspaceId);
+  if (query.status) params.set('status', query.status);
+  if (query.cursor) params.set('cursor', query.cursor);
+  if (query.limit !== undefined) params.set('limit', String(query.limit));
+  const suffix = params.size ? `?${params}` : '';
+  return request<JobListPage>(`/api/jobs${suffix}`, { signal });
 }
 
 export async function getStudioJobDetail(jobId: string) {

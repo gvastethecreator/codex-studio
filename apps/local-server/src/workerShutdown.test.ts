@@ -5,6 +5,25 @@ import type { GenerationProvider } from './providers/types';
 import { ProviderExecutionUncertainError } from './workerErrors';
 import { createJobRoutes } from './jobRoutes';
 
+const emptyJobPage = {
+  open: [],
+  history: [],
+  nextCursor: null,
+  globalOpenCount: 0,
+  workspaces: [],
+  counts: {
+    queued: 0,
+    running: 0,
+    needs_review: 0,
+    completed: 0,
+    failed: 0,
+    cancelled: 0,
+    open: 0,
+    history: 0,
+    total: 0,
+  },
+};
+
 vi.mock('./catalog', () => ({
   getCatalogImageByJobId: vi.fn(() => null),
   registerCatalogImage: vi.fn(() => null),
@@ -147,7 +166,7 @@ describe('worker shutdown', () => {
     const retry = vi.fn(() => jobs.get(job.id)!);
     const cancel = vi.fn(() => jobs.get(job.id)!);
     const routes = createJobRoutes({
-      listJobs: () => [...jobs.values()],
+      listJobs: () => emptyJobPage,
       getJob: (id) => jobs.get(id) ?? null,
       getJobDetail: async () => null,
       requeueJob: retry,

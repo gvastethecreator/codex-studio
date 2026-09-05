@@ -269,10 +269,9 @@ async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: strin
 
 async function waitForJob(jobId: string) {
   while (true) {
-    const jobs = await request<Job[]>('/api/jobs');
-    const jobsById = new Map(jobs.map((candidate) => [candidate.id, candidate]));
-    const job = jobsById.get(jobId);
-    if (!job) throw new Error(`Job ${jobId} disappeared from /api/jobs`);
+    const job = await request<Pick<Job, 'id' | 'status' | 'error' | 'updatedAt'>>(
+      `/api/jobs/${encodeURIComponent(jobId)}/status`,
+    );
     if (job.status === 'completed') return job;
     if (job.status === 'failed' || job.status === 'cancelled' || job.status === 'needs_review') {
       throw new Error(`Job ${jobId} ended as ${job.status}: ${job.error || 'no error'}`);

@@ -13,6 +13,9 @@ import type {
   JobStatus,
   JobSummary,
   JobRemoteExecution,
+  JobListPage,
+  JobListQuery,
+  JobCounts,
 } from '../../../../packages/shared/src';
 import {
   normalizeWorkspaceId,
@@ -108,9 +111,7 @@ export function mapJobSummaryRow(row: Record<string, unknown>): JobSummary {
     createdAt: String(row.created_at),
     updatedAt: String(row.updated_at),
     completedAt: nullableString(row.completed_at),
-    promptPreview: createPromptPreview(
-      nullableString(row.final_prompt_used) ?? nullableString(row.original_prompt),
-    ),
+    promptPreview: createPromptPreview(nullableString(row.prompt_preview)),
   };
 }
 
@@ -286,24 +287,99 @@ export function getJobStatus(id: string, db?: Database) {
   return row && { id: row.id, status: row.status, error: row.error, updatedAt: row.updated_at };
 }
 
-export function listJobSummariesFromDb(database: Database) {
-  return database
-    .query(
-      `SELECT
-         id, workspace_id, recipe_id, batch_id, aspect_ratio,
-         kind, provider_id, status, execution_json, remote_execution_json,
-         original_prompt, final_prompt_used, error,
-         created_at, updated_at, completed_at
-       FROM jobs
-       ORDER BY created_at DESC
-       LIMIT 100`,
-    )
-    .all()
-    .map((row) => mapJobSummaryRow(row as Record<string, unknown>));
+const JOB_SUMMARY_COLUMNS = `id, workspace_id, recipe_id, batch_id, aspect_ratio,
+  kind, provider_id, status, execution_json, remote_execution_json,
+  substr(COALESCE(NULLIF(trim(final_prompt_used), ''), original_prompt, ''), 1, 160) AS prompt_preview,
+  error, created_at, updated_at, completed_at`;
+const OPEN_JOB_SQL = "status IN ('queued', 'running', 'needs_review')";
+const TERMINAL_JOB_SQL = "status IN ('completed', 'failed', 'cancelled')";
+
+function decodeJobHistoryCursor(cursor: string) {
+  let value: unknown;
+  try {
+    value = JSON.parse(Buffer.from(cursor, 'base64url').toString('utf8'));
+  } catch {
+    throw new Error('Invalid job history cursor.');
+  }
+  if (
+    !Array.isArray(value) ||
+    value.length !== 2 ||
+    typeof value[0] !== 'string' ||
+    !Number.isFinite(Date.parse(value[0])) ||
+    typeof value[1] !== 'string' ||
+    value[1].length === 0
+  ) {
+    throw new Error('Invalid job history cursor.');
+  }
+  return value as [string, string];
 }
 
-export function listJobSummaries(db?: Database) {
-  return listJobSummariesFromDb(getDb(db));
+export function listJobSummariesFromDb(database: Database, query: JobListQuery = {}): JobListPage {
+  const limit = Math.min(100, Math.max(1, query.limit ?? 20));
+  const cursor = query.cursor ? decodeJobHistoryCursor(query.cursor) : null;
+  const scope = query.workspaceId ? 'workspace_id = ?' : '1 = 1';
+  const params: Array<string | number> = query.workspaceId ? [query.workspaceId] : [];
+  return database.transaction(() => {
+    const counts: JobCounts = {
+      queued: 0,
+      running: 0,
+      needs_review: 0,
+      completed: 0,
+      failed: 0,
+      cancelled: 0,
+      open: 0,
+      history: 0,
+      total: 0,
+    };
+    const grouped = database
+      .query(`SELECT status, COUNT(*) AS count FROM jobs WHERE ${scope} GROUP BY status`)
+      .all(...params) as Array<{ status: JobStatus; count: number }>;
+    for (const row of grouped) counts[row.status] = row.count;
+    counts.open = counts.queued + counts.running + counts.needs_review;
+    counts.history = query.status
+      ? counts[query.status]
+      : counts.completed + counts.failed + counts.cancelled;
+    counts.total = counts.open + counts.history;
+    const open = database
+      .query(
+        `SELECT ${JOB_SUMMARY_COLUMNS} FROM jobs WHERE ${scope} AND ${OPEN_JOB_SQL} ORDER BY created_at DESC, id DESC`,
+      )
+      .all(...params);
+    const historyWhere = `${scope} AND ${query.status ? 'status = ?' : TERMINAL_JOB_SQL}`;
+    const historyParams = query.status ? [...params, query.status] : [...params];
+    if (cursor) historyParams.push(cursor[0], cursor[0], cursor[1]);
+    const history = database
+      .query(`SELECT ${JOB_SUMMARY_COLUMNS} FROM jobs WHERE ${historyWhere}
+      ${cursor ? 'AND (created_at < ? OR (created_at = ? AND id < ?))' : ''}
+      ORDER BY created_at DESC, id DESC LIMIT ?`)
+      .all(...historyParams, limit + 1)
+      .map((row) => mapJobSummaryRow(row as Record<string, unknown>));
+    const hasMore = history.length > limit;
+    history.length = Math.min(limit, history.length);
+    const last = history.at(-1);
+    const global = database
+      .query(`SELECT COUNT(*) AS count FROM jobs WHERE ${OPEN_JOB_SQL}`)
+      .get() as { count: number };
+    const workspaces = database
+      .query(`SELECT DISTINCT jobs.workspace_id AS id, COALESCE(workspaces.name, jobs.workspace_id) AS name
+      FROM jobs LEFT JOIN workspaces ON jobs.workspace_id = workspaces.id ORDER BY name, jobs.workspace_id`)
+      .all() as Array<{ id: string; name: string }>;
+    return {
+      open: open.map((row) => mapJobSummaryRow(row as Record<string, unknown>)),
+      history,
+      counts,
+      globalOpenCount: global.count,
+      workspaces,
+      nextCursor:
+        hasMore && last
+          ? Buffer.from(JSON.stringify([last.createdAt, last.id])).toString('base64url')
+          : null,
+    };
+  })();
+}
+
+export function listJobSummaries(query: JobListQuery = {}, db?: Database) {
+  return listJobSummariesFromDb(getDb(db), query);
 }
 
 export function listRecoverableJobs(db?: Database) {

@@ -17,6 +17,25 @@ import {
 } from './appFactory';
 import type { WorkerController } from './worker';
 
+const emptyJobPage = {
+  open: [],
+  history: [],
+  nextCursor: null,
+  globalOpenCount: 0,
+  workspaces: [],
+  counts: {
+    queued: 0,
+    running: 0,
+    needs_review: 0,
+    completed: 0,
+    failed: 0,
+    cancelled: 0,
+    open: 0,
+    history: 0,
+    total: 0,
+  },
+};
+
 vi.mock('./db/settings', () => ({
   getSettingValue: vi.fn(() => null),
   setSettingValue: vi.fn(() => null),
@@ -91,7 +110,7 @@ function createFakeStores(overrides?: StudioStoreOverrides) {
     requeueJob: vi.fn(() => null),
     getJob: vi.fn(() => null),
     getJobStatus: vi.fn(() => null),
-    listJobSummaries: vi.fn(() => []),
+    listJobSummaries: vi.fn(() => emptyJobPage),
     ...overrides,
   };
   const assetStore: StudioAssetStore = {
@@ -292,7 +311,7 @@ describe('createStudioApp', () => {
   });
 
   it('rejects browser requests from foreign origins before mounted routes run', async () => {
-    const listJobSummaries = vi.fn(() => []);
+    const listJobSummaries = vi.fn(() => emptyJobPage);
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {

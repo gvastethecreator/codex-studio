@@ -10,7 +10,7 @@ import {
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
-    workspaceId: overrides.workspaceId ?? 'default',
+    workspaceId: overrides.workspaceId ?? 'workspace-1',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
     sourceSpec:
@@ -57,6 +57,7 @@ describe('localStudioSyncProjection', () => {
   it('stores summary-first shell activity jobs on refresh', () => {
     const state = localStudioSyncBackendReducer(INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE, {
       type: 'refresh',
+      requestedAtVersion: 0,
       jobs: [createJobSummary(createJob())],
       logs: [],
     });
@@ -76,6 +77,7 @@ describe('localStudioSyncProjection', () => {
   it('merges full job events without requiring hot reads to include sourceSpec', () => {
     const refreshed = localStudioSyncBackendReducer(INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE, {
       type: 'refresh',
+      requestedAtVersion: 0,
       jobs: [createJobSummary(createJob({ updatedAt: '2026-06-28T00:00:01.000Z' }))],
       logs: [],
     });
@@ -93,5 +95,29 @@ describe('localStudioSyncProjection', () => {
         source: 'backend_event',
       }),
     ]);
+  });
+  it('keeps all open jobs and a terminal event newer than an in-flight refresh', () => {
+    const jobs = Array.from({ length: 105 }, (_, index) =>
+      createJobSummary(createJob({ id: `job-${index}` })),
+    );
+    const loaded = localStudioSyncBackendReducer(INITIAL_LOCAL_STUDIO_SYNC_BACKEND_STATE, {
+      type: 'refresh',
+      requestedAtVersion: 0,
+      jobs,
+      logs: [],
+    });
+    const terminal = localStudioSyncBackendReducer(loaded, {
+      type: 'job_update',
+      job: createJob({ id: 'job-0', status: 'completed', updatedAt: '2026-06-28T00:01:00.000Z' }),
+    });
+    const reconciled = localStudioSyncBackendReducer(terminal, {
+      type: 'refresh',
+      requestedAtVersion: loaded.eventVersion,
+      jobs,
+      logs: [],
+    });
+    expect(reconciled.jobs).toHaveLength(105);
+    expect(countActiveServerJobs(reconciled.jobs)).toBe(104);
+    expect(reconciled.jobs.find((job) => job.id === 'job-0')?.status).toBe('completed');
   });
 });

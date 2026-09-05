@@ -21,6 +21,8 @@ import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import { cn } from '../lib/utils';
 import { useLatestRef } from '../hooks/useLatestRef';
 import { isRegisteredRecipeId } from '../lib/recipeIds';
+import { useJobHistory } from '../hooks/useJobHistory';
+import type { TerminalJobStatus } from '../packages/shared/src';
 
 interface QueuePanelProps {
   results?: StudioQueueResultPreview[];
@@ -109,6 +111,9 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
   }) => {
     const [activeResultId, setActiveResultId] = useState<string | null>(null);
     const [nowMs, setNowMs] = useState(() => Date.now());
+    const [workspaceFilter, setWorkspaceFilter] = useState('');
+    const [statusFilter, setStatusFilter] = useState<TerminalJobStatus | ''>('');
+    const jobHistory = useJobHistory(serverJobs, workspaceFilter, statusFilter);
     const activeResultIndex = activeResultId
       ? results.findIndex((result) => result.id === activeResultId)
       : -1;
@@ -120,7 +125,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
       }
       return previews;
     }, [results]);
-    const summary = useMemo(() => summarizePersistentJobs(serverJobs), [serverJobs]);
+    const summary = useMemo(() => summarizePersistentJobs(jobHistory.open), [jobHistory.open]);
     const hasLiveDurations = summary.queued + summary.running > 0;
 
     useEffect(() => {
@@ -139,7 +144,11 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <div>
               <h3 className="text-xs font-semibold text-white/90">Persistent Jobs</h3>
               <p className="text-[10px] font-medium uppercase tracking-wider text-white/40">
-                {summary.total} backend-owned jobs
+                {jobHistory.page
+                  ? `${jobHistory.page.globalOpenCount} open across all workspaces${jobHistory.error ? ' (last confirmed)' : ''}`
+                  : jobHistory.error
+                    ? 'Jobs unavailable'
+                    : 'Loading jobs'}
               </p>
             </div>
           </div>
@@ -157,10 +166,10 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
         </div>
 
         <div className="grid grid-cols-4 gap-px border-b border-white/2 bg-white/10">
-          <StatItem label="Wait" value={summary.queued} color="text-white/40" />
-          <StatItem label="Active" value={summary.running} color="text-accent-400" />
-          <StatItem label="Done" value={summary.completed} color="text-emerald-400" />
-          <StatItem label="Fail/X" value={summary.attention} color="text-rose-400" />
+          <StatItem label="Open" value={summary.total} color="text-white/40" />
+          <StatItem label="Running" value={summary.running} color="text-accent-400" />
+          <StatItem label="Queued" value={summary.queued} color="text-white/40" />
+          <StatItem label="Review" value={summary.attention} color="text-amber-400" />
         </div>
 
         <div className="custom-scrollbar flex-1 space-y-1 overflow-y-auto p-1">
@@ -213,34 +222,108 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
           <section className="rounded-lg border border-white/2 bg-white/5 p-1.5">
             <div className="mb-2 flex items-center justify-between px-1 py-1">
               <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
-                Backend Jobs
+                Open jobs
               </span>
-              <span className="text-[9px] font-bold text-accent-400">{serverJobs.length}</span>
+              <span className="text-[9px] font-bold text-accent-400">{jobHistory.open.length}</span>
             </div>
+            <label className="mb-2 block text-[10px] text-white/60">
+              Workspace
+              <select
+                aria-label="Job workspace"
+                value={workspaceFilter}
+                onChange={(event) => setWorkspaceFilter(event.target.value)}
+                className="mt-1 w-full rounded bg-zinc-900 p-2 text-white"
+              >
+                <option value="">All workspaces</option>
+                {jobHistory.workspaces.map((workspace) => (
+                  <option key={workspace.id} value={workspace.id}>
+                    {workspace.name}
+                  </option>
+                ))}
+              </select>
+            </label>
             <div className="space-y-1">
-              {serverJobs.length > 0 ? (
-                serverJobs
-                  .slice(0, 20)
-                  .map((job) => (
-                    <ServerJobItem
-                      key={job.id}
-                      job={job}
-                      previewSrc={resultsByJobId.get(job.id) ?? null}
-                      nowMs={nowMs}
-                      isSelected={selectedJobId === job.id}
-                      onInspect={() => onInspectJob(job.id)}
-                      onRetry={onRetryServerJob ? () => onRetryServerJob(job.id) : undefined}
-                      onCancel={() => onCancelServerJob(job.id)}
-                    />
-                  ))
+              {jobHistory.open.length > 0 ? (
+                jobHistory.open.map((job) => (
+                  <ServerJobItem
+                    key={job.id}
+                    job={job}
+                    previewSrc={resultsByJobId.get(job.id) ?? null}
+                    nowMs={nowMs}
+                    isSelected={selectedJobId === job.id}
+                    onInspect={() => onInspectJob(job.id)}
+                    onRetry={onRetryServerJob ? () => onRetryServerJob(job.id) : undefined}
+                    onCancel={() => onCancelServerJob(job.id)}
+                  />
+                ))
               ) : (
                 <div className="flex flex-col items-center justify-center p-8 text-center opacity-20">
                   <Layers size={42} className="mb-3" />
-                  <p className="text-sm font-medium">No jobs yet</p>
+                  <p className="text-sm font-medium">
+                    {jobHistory.loading ? 'Loading jobs' : 'No open jobs'}
+                  </p>
                   <p className="text-xs">New generations will appear here</p>
                 </div>
               )}
             </div>
+          </section>
+          <section className="space-y-2 rounded-lg border border-white/2 bg-white/5 p-2">
+            <div className="flex items-center justify-between text-[10px] text-white/60">
+              <span>History</span>
+              <span>
+                {jobHistory.page?.counts.history ?? '—'} matching jobs
+                {jobHistory.error ? ' (last confirmed)' : ''}
+              </span>
+            </div>
+            <select
+              aria-label="Job history status"
+              value={statusFilter}
+              onChange={(event) => setStatusFilter(event.target.value as TerminalJobStatus | '')}
+              className="w-full rounded bg-zinc-900 p-2 text-[11px] text-white"
+            >
+              <option value="">All finished states</option>
+              <option value="completed">Completed</option>
+              <option value="failed">Failed</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+            {jobHistory.history.map((job) => (
+              <ServerJobItem
+                key={job.id}
+                job={job}
+                previewSrc={resultsByJobId.get(job.id) ?? null}
+                nowMs={nowMs}
+                isSelected={selectedJobId === job.id}
+                onInspect={() => onInspectJob(job.id)}
+                onRetry={onRetryServerJob ? () => onRetryServerJob(job.id) : undefined}
+                onCancel={() => onCancelServerJob(job.id)}
+              />
+            ))}
+            {!jobHistory.loading && !jobHistory.error && jobHistory.history.length === 0 ? (
+              <p className="text-[11px] text-white/50">No matching history.</p>
+            ) : null}
+            {jobHistory.error ? (
+              <div role="alert" className="space-y-1 text-[11px] text-rose-300">
+                <p>{jobHistory.error}</p>
+                <button type="button" onClick={jobHistory.retry} className="underline">
+                  Retry history
+                </button>
+              </div>
+            ) : null}
+            {jobHistory.loading ? (
+              <p role="status" className="text-[11px] text-white/50">
+                Loading history…
+              </p>
+            ) : jobHistory.nextCursor ? (
+              <button
+                type="button"
+                onClick={jobHistory.loadMore}
+                className="w-full rounded bg-white/10 p-2 text-[11px] text-white"
+              >
+                Load older jobs
+              </button>
+            ) : jobHistory.history.length > 0 && !jobHistory.error ? (
+              <p className="text-[10px] text-white/40">All matching history loaded.</p>
+            ) : null}
           </section>
         </div>
 

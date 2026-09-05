@@ -56,6 +56,8 @@ export function useLocalStudioSync({
   );
   const isMountedRef = useRef(true);
   const streamRef = useRef<StudioEventStream | null>(null);
+  const eventVersionRef = useRef(0);
+  const refreshRequestRef = useRef(0);
 
   useEffect(() => {
     isMountedRef.current = true;
@@ -74,16 +76,24 @@ export function useLocalStudioSync({
   }, [backendState.jobs]);
 
   const refreshBackendState = useCallback(async () => {
+    const requestId = ++refreshRequestRef.current;
     try {
       if (!isMountedRef.current) {
         return;
       }
 
+      const requestedAtVersion = eventVersionRef.current;
       const [backendJobs, backendLogs] = await Promise.all([listStudioJobs(), listStudioLogs()]);
+      if (!isMountedRef.current || requestId !== refreshRequestRef.current) return;
 
-      dispatch({ type: 'refresh', jobs: backendJobs, logs: backendLogs });
+      dispatch({
+        type: 'refresh',
+        jobs: [...backendJobs.open, ...backendJobs.history],
+        logs: backendLogs,
+        requestedAtVersion,
+      });
     } catch (error) {
-      if (!isMountedRef.current) {
+      if (!isMountedRef.current || requestId !== refreshRequestRef.current) {
         return;
       }
 
@@ -112,6 +122,7 @@ export function useLocalStudioSync({
     const stream = createStudioEventStream();
     streamRef.current = stream;
     const unsubscribeJob = stream.onJobUpdate('*', (job) => {
+      eventVersionRef.current += 1;
       dispatch({ type: 'job_update', job });
     });
     const unsubscribeAsset = stream.onAssetAdded(() => {

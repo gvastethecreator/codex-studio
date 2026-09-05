@@ -1136,24 +1136,10 @@
     </main>
     <script id="codemap-data" type="application/json">
       {
-        "generated_at": "2026-09-05T18:16:25Z",
-        "generated_from_commit": "a905a0f111425789088018212726ecf6dbfad24c",
+        "generated_at": "2026-09-05T18:44:53Z",
+        "generated_from_commit": "ddc2b6647a3682c0b4ddbfc12f95134c5d7d33d4",
         "scope": ["."],
         "nodes": [
-          {
-            "id": "app",
-            "path": "App.tsx",
-            "type": "interface",
-            "boundary": "Application providers and routes",
-            "entrypoints": ["App.tsx:App"],
-            "tests": [],
-            "callers": [],
-            "callees": [],
-            "evidence": {
-              "status": "verified",
-              "locations": [{ "path": "App.tsx", "symbol": "App" }]
-            }
-          },
           {
             "id": "asset-finalizer",
             "path": "apps/local-server/src/workerAssetFinalizer.ts",
@@ -1287,12 +1273,33 @@
             "tests": [],
             "callers": [
               { "id": "generation-run", "type": "calls" },
+              { "id": "job-history", "type": "calls" },
               { "id": "job-observer", "type": "calls" }
             ],
             "callees": [{ "id": "job-routes", "type": "calls" }],
             "evidence": {
               "status": "verified",
               "locations": [{ "path": "services/studio-api/jobs.ts", "symbol": "createStudioJob" }]
+            }
+          },
+          {
+            "id": "job-history",
+            "path": "hooks/useJobHistory.ts",
+            "type": "interface",
+            "boundary": "Open jobs and filtered terminal history",
+            "entrypoints": [
+              "hooks/useJobHistory.ts:useJobHistory",
+              "components/QueuePanel.tsx:QueuePanel"
+            ],
+            "tests": ["hooks/useJobHistory.test.tsx"],
+            "callers": [],
+            "callees": [{ "id": "job-client", "type": "calls" }],
+            "evidence": {
+              "status": "verified",
+              "locations": [
+                { "path": "hooks/useJobHistory.ts", "symbol": "useJobHistory" },
+                { "path": "components/QueuePanel.tsx", "symbol": "useJobHistory" }
+              ]
             }
           },
           {
@@ -1655,6 +1662,15 @@
             }
           },
           {
+            "from": "job-history",
+            "to": "job-client",
+            "type": "calls",
+            "evidence": {
+              "status": "verified",
+              "locations": [{ "path": "hooks/useJobHistory.ts", "symbol": "listStudioJobs" }]
+            }
+          },
+          {
             "from": "job-intake",
             "to": "jobs-db",
             "type": "writes",
@@ -1892,10 +1908,10 @@
             "outcome": "Observer reads durable job truth independently of event delivery"
           },
           {
-            "id": "event-delivery",
-            "trigger": "Browser opens a revisioned event stream",
-            "steps": ["job-observer", "event-routes", "event-bus"],
-            "outcome": "Subscription receives worker and catalog updates"
+            "id": "job-history",
+            "trigger": "User opens Queue or pages terminal history",
+            "steps": ["job-history", "job-client", "job-routes", "jobs-db"],
+            "outcome": "All open work remains visible beside terminal history and authoritative counts"
           },
           {
             "id": "finalization-recovery",

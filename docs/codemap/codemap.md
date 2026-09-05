@@ -1,18 +1,12 @@
 # Code map · codex-studio
 
-generated: 2026-09-05T18:16:25Z
-commit: a905a0f11142
+generated: 2026-09-05T18:44:53Z
+commit: ddc2b6647a36
 scope: .
 
-counts: 20 nodes · 25 edges · 5 flows · 0 unknown
+counts: 20 nodes · 26 edges · 5 flows · 0 unknown
 
 ## Modules
-
-- `app` · `App.tsx` · interface · Application providers and routes
-  callers: (none)
-  callees: (none)
-  tests: (none)
-  entry: App.tsx:App
 
 - `asset-finalizer` · `apps/local-server/src/workerAssetFinalizer.ts` · service · Resumable asset and catalog finalization
   callers: worker (calls)
@@ -51,10 +45,16 @@ counts: 20 nodes · 25 edges · 5 flows · 0 unknown
   entry: hooks/useGenerationPipeline.ts:useGenerationPipeline
 
 - `job-client` · `services/studio-api/jobs.ts` · service · Browser job API
-  callers: generation-run (calls), job-observer (calls)
+  callers: generation-run (calls), job-history (calls), job-observer (calls)
   callees: job-routes (calls)
   tests: (none)
   entry: services/studio-api/jobs.ts:createStudioJob
+
+- `job-history` · `hooks/useJobHistory.ts` · interface · Open jobs and filtered terminal history
+  callers: (none)
+  callees: job-client (calls)
+  tests: hooks/useJobHistory.test.tsx
+  entry: hooks/useJobHistory.ts:useJobHistory, components/QueuePanel.tsx:QueuePanel
 
 - `job-intake` · `apps/local-server/src/persistentJobIntake.ts` · service · Validate and persist before dispatch
   callers: job-routes (calls)
@@ -138,6 +138,7 @@ counts: 20 nodes · 25 edges · 5 flows · 0 unknown
 - generation-run -> job-observer · calls
 - generation-ui -> generation-run · calls
 - job-client -> job-routes · calls
+- job-history -> job-client · calls
 - job-intake -> jobs-db · writes
 - job-intake -> runtime-settings · calls
 - job-intake -> worker · calls
@@ -168,9 +169,9 @@ counts: 20 nodes · 25 edges · 5 flows · 0 unknown
 - Observer attaches or recovers its connection
   generation-run -> job-observer -> job-client -> job-routes -> jobs-db
   Observer reads durable job truth independently of event delivery
-- Browser opens a revisioned event stream
-  job-observer -> event-routes -> event-bus
-  Subscription receives worker and catalog updates
+- User opens Queue or pages terminal history
+  job-history -> job-client -> job-routes -> jobs-db
+  All open work remains visible beside terminal history and authoritative counts
 - Worker resumes a persisted finalization checkpoint
   worker -> asset-finalizer -> catalog
   Existing asset is finalized into catalog truth
