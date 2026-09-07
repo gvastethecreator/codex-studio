@@ -51,5 +51,6 @@ describe('RuntimeLogContext subscription placement', () => {
       'utf8',
     );
     expect(overlays).toMatch(/\buseRuntimeLogs\s*\(/);
+    expect(overlays).toContain('clientSessionLogs');
   });
 });

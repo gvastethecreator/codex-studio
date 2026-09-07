@@ -20,18 +20,6 @@ export interface RpcClientDependencies {
   requestTimeoutMs?: number;
 }
 
-export interface RpcSession {
-  request(method: string, params?: unknown): Promise<unknown>;
-  disconnect(): void;
-}
-
-export interface RpcClient {
-  connect(
-    wsUrl: string,
-    retryConfig?: { maxRetries?: number; retryDelayMs?: number },
-  ): Promise<RpcSession>;
-}
-
 interface PendingRequest {
   resolve: (value: any) => void;
   reject: (error: Error) => void;
@@ -252,21 +240,4 @@ export class CodexRpcClient {
       }
     }
   }
-}
-
-export function createRpcClient(): RpcClient {
-  return {
-    async connect() {
-      const client = new CodexRpcClient();
-      await client.connect();
-      return {
-        request(method, params) {
-          return client.request(method, params);
-        },
-        disconnect() {
-          client.close();
-        },
-      };
-    },
-  };
 }

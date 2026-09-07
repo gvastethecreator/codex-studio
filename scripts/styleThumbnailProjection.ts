@@ -1,5 +1,3 @@
-import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
-
 export const STYLE_LANDING_FOLDER_IMAGE_LIMIT = 6;
 
 export function presetIdFromThumbnailAssetKey(key: string) {
@@ -65,10 +63,6 @@ export function collectStyleLandingFolderPreferredKeys({
   presetIds?: readonly string[];
 }) {
   return [...featuredPresetIds, ...categoryKeys, ...presetIds];
-}
-
-export function neededCategoryImageKey(packId: string, categoryName: string) {
-  return styleCategoryImageKey(packId, categoryName);
 }
 
 export function groupThumbnailPackIds(packIds: readonly string[], packGroupSize = 1) {

@@ -196,7 +196,6 @@ Compare collapsed and expanded DOM counts against this report.
 Run `bun run styles:browser:verify -- --url=http://localhost:17222/#recipe-styles` (or the active dev URL) after major Styles UI changes when you want the reusable browser gate instead of a manual pass.
 
 Legacy pack YAML is retired.
-`bun run styles:split`, `scripts/expand-pack-02-pack-05.ts`, and `scripts/reorder-style-packs.ts` reject mutations from old flows.
 Use `StyleRuntimePack`, `StyleRuntimePreset`, `composeStyleRuntimePacksFromManifests()`, `STYLE_RUNTIME_PACK_SUMMARIES`, `loadStyleRuntimePack()`, `loadStyleRuntimePacks()`, and manifest or catalog types for new code.
 `styles:source:verify` blocks legacy aliases or exports outside the source-audit guard.
 

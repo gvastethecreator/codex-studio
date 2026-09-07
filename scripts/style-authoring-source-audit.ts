@@ -36,8 +36,6 @@ const ignoredPathParts = new Set(['.git', 'dist', 'logs', 'node_modules', 'tmp']
 
 const allowedLegacyFiles = new Set([
   'components/recipes/stylePresetManifests.test.ts',
-  'scripts/split-style-preset-manifests.ts',
-  'scripts/split-style-preset-manifests.test.ts',
   'scripts/style-authoring-source-audit.ts',
   'scripts/style-authoring-source-audit.test.ts',
 ]);

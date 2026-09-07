@@ -7,7 +7,7 @@ import {
 } from '../lib/studioGenerationRequest';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import type { GenerationProviderId, Job as StudioJob } from '../packages/shared/src';
-import { detectRecipeFromContext } from '../utils/recipeUtils';
+import { parseRecipeIdFromContext } from '../lib/recipeShellMetadata';
 
 type GenerateOptions = {
   preventModal?: boolean;
@@ -242,7 +242,7 @@ export function useStudioGenerationActions({
       addToast('Recipe restored', 'success');
 
       const detectedRecipe =
-        nextConfig.recipeId ?? detectRecipeFromContext(nextConfig.recipeContext);
+        nextConfig.recipeId ?? parseRecipeIdFromContext(nextConfig.recipeContext);
       if (detectedRecipe) {
         onRecipeSelection(detectedRecipe);
       } else {

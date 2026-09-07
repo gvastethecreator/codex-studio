@@ -31,12 +31,6 @@ export class AppServerStartError extends Error {
   }
 }
 
-export interface ProcessSupervisor {
-  ensureAppServer(reason?: AppServerEnsureReason): Promise<ProcessInfo>;
-  stopAppServer(): Promise<void>;
-  onDiagnostics(cb: (info: ProcessInfo) => void): () => void;
-}
-
 let appServerProcess: ReturnType<typeof Bun.spawn> | null = null;
 const diagnostics: Omit<ProcessInfo, 'status'> = {
   pid: null,
@@ -49,12 +43,8 @@ const diagnostics: Omit<ProcessInfo, 'status'> = {
   lastStartError: null,
 };
 
-function isProcessRunning() {
-  return appServerProcess !== null && appServerProcess.exitCode === null;
-}
-
 export function isAppServerRunning() {
-  return isProcessRunning();
+  return appServerProcess !== null && appServerProcess.exitCode === null;
 }
 
 export function getAppServerDiagnostics() {
@@ -74,16 +64,6 @@ export function resolveAppServerProcessStatus({
   if (running) return 'running';
   if (lastStartError) return 'error';
   return 'stopped';
-}
-
-function currentInfo(): ProcessInfo {
-  return {
-    ...getAppServerDiagnostics(),
-    status: resolveAppServerProcessStatus({
-      running: isAppServerRunning(),
-      lastStartError: diagnostics.lastStartError,
-    }),
-  };
 }
 
 export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
@@ -184,25 +164,4 @@ export async function stopAppServer() {
   } catch {
     // Ignore exit await failures; diagnostics are updated best-effort.
   }
-}
-
-export function createProcessSupervisor(): ProcessSupervisor {
-  const listeners = new Set<(info: ProcessInfo) => void>();
-  const publish = () => listeners.forEach((listener) => listener(currentInfo()));
-  return {
-    async ensureAppServer(reason) {
-      ensureAppServer(reason);
-      publish();
-      return currentInfo();
-    },
-    async stopAppServer() {
-      await stopAppServer();
-      publish();
-    },
-    onDiagnostics(cb) {
-      listeners.add(cb);
-      cb(currentInfo());
-      return () => listeners.delete(cb);
-    },
-  };
 }

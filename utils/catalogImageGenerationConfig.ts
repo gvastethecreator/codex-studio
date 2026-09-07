@@ -3,7 +3,7 @@ import { parsePromptTransport } from '../packages/shared/src/promptTransport';
 import { DEFAULT_GENERATION_CONFIG, MODELS } from '../constants';
 import type { ImageGenerationConfig, ImageSize, RecipeId } from '../types';
 import { normalizeImageGenRatio } from './imageGenSizing';
-import { detectRecipeFromContext } from './recipeUtils';
+import { parseRecipeIdFromContext } from '../lib/recipeShellMetadata';
 
 type RecordLike = Record<string, unknown>;
 
@@ -63,7 +63,7 @@ function normalizeRecipeId(candidate: unknown, recipeContext: string): RecipeId 
     }
   }
 
-  return detectRecipeFromContext(recipeContext);
+  return parseRecipeIdFromContext(recipeContext);
 }
 
 export function buildGenerationConfigFromCatalogImage(asset: CatalogImage): ImageGenerationConfig {

@@ -47,12 +47,6 @@ export function appendRuntimeLog(message: string): LogEntry {
   return entry;
 }
 
-export function replaceRuntimeLogs(next: LogEntry[]) {
-  logs = next.slice(0, MAX_LOGS);
-  emit();
-  schedulePersist();
-}
-
 export function clearRuntimeLogs() {
   logs = [];
   emit();
@@ -72,7 +66,7 @@ export function hydrateRuntimeLogsFromIdb(): () => void {
   void get<LogEntry[]>(PERSIST_KEY)
     .then((stored) => {
       if (cancelled || !stored || !Array.isArray(stored)) return;
-      // Avoid re-persist loop noise: replace without forcing extra write if same ref path.
+      // Hydration must not write the stored logs back to IndexedDB.
       logs = stored.slice(0, MAX_LOGS);
       emit();
     })
