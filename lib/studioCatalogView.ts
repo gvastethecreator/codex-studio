@@ -18,7 +18,7 @@ function createdAtMs(entry: Pick<CatalogImage, 'createdAt'>) {
   return Date.parse(entry.createdAt) || 0;
 }
 
-function resolveCatalogBatchGroupId(entry: Pick<CatalogImage, 'batchId' | 'jobId' | 'id'>) {
+export function resolveCatalogEntryBatchId(entry: Pick<CatalogImage, 'batchId' | 'jobId' | 'id'>) {
   return entry.batchId || `studio-${entry.jobId ?? entry.id}`;
 }
 
@@ -32,7 +32,7 @@ export function createCatalogView(entries: CatalogImage[]): StudioCatalogView {
 
   for (const entry of sortedEntries) {
     byId.set(entry.id, entry);
-    const batchId = resolveCatalogBatchGroupId(entry);
+    const batchId = resolveCatalogEntryBatchId(entry);
     const batchEntries = byBatchId.get(batchId) ?? [];
     batchEntries.push(entry);
     byBatchId.set(batchId, batchEntries);

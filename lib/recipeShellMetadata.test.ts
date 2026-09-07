@@ -12,5 +12,8 @@ describe('recipeShellMetadata', () => {
   it('parses only registered recipe IDs from context envelopes', () => {
     expect(parseRecipeIdFromContext('--- CODEX RECIPE CONTEXT ---\nrecipe: camera')).toBe('camera');
     expect(parseRecipeIdFromContext('CAMERA VIEW PROMPT')).toBeNull();
+    expect(
+      parseRecipeIdFromContext('--- CODEX RECIPE CONTEXT ---\nrecipe: constructor'),
+    ).toBeNull();
   });
 });

@@ -2,6 +2,7 @@ import type { CatalogImage } from '../packages/shared/src';
 import type { GeneratedImage, GeneratedImageWithConfig } from '../types';
 import { toStudioAssetUrl } from '../services/studio-api/assetUrls';
 import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
+import { resolveCatalogEntryBatchId } from './studioCatalogView';
 
 const GRID_THUMBNAIL_MAX_EDGE = 512;
 const MODAL_PREVIEW_MAX_EDGE = 1024;
@@ -10,10 +11,6 @@ export interface MaterializeCatalogEntryImageOptions {
   batchId?: string;
   createdAt?: number;
   thumbnail?: string;
-}
-
-export function resolveCatalogEntryBatchId(entry: Pick<CatalogImage, 'batchId' | 'jobId' | 'id'>) {
-  return entry.batchId || `studio-${entry.jobId ?? entry.id}`;
 }
 
 export function resolveCatalogEntryCreatedAt(entry: Pick<CatalogImage, 'createdAt'>) {

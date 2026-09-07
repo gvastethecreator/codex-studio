@@ -1,7 +1,6 @@
 import type { RecipeId } from '../types';
 import { extractRecipeIdFromRecipeContext } from '../packages/shared/src/promptTransport';
-
-type RegisteredRecipeId = Exclude<RecipeId, null>;
+import { isRegisteredRecipeId, type RegisteredRecipeId } from './recipeIds';
 
 const RECIPE_SHELL_TITLES: Record<RegisteredRecipeId, string> = {
   'animation-sequence': 'Animation Sequence',
@@ -18,10 +17,6 @@ const RECIPE_SHELL_TITLES: Record<RegisteredRecipeId, string> = {
 
 export function getRecipeShellTitle(recipeId: RegisteredRecipeId) {
   return RECIPE_SHELL_TITLES[recipeId] ?? recipeId;
-}
-
-export function isRegisteredRecipeId(value: unknown): value is RegisteredRecipeId {
-  return typeof value === 'string' && value in RECIPE_SHELL_TITLES;
 }
 
 export function parseRecipeIdFromContext(context: string = ''): RecipeId {

@@ -4,8 +4,8 @@ import {
   materializeCatalogEntryImage,
   materializeCatalogEntryImageWithConfig,
   resolveCatalogEntryPreviewUrl,
-  resolveCatalogEntryBatchId,
 } from './studioCatalogImageAdapter';
+import { resolveCatalogEntryBatchId } from './studioCatalogView';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'image-1';
