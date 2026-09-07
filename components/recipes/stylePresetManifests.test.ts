@@ -338,8 +338,8 @@ describe('stylePresetManifests', () => {
     expect(
       searchStylePresetCatalog(catalog, {
         packId: 'pack-a',
-        tag: 'cinematic',
-        task: 'style_preset_card',
+        tag: 'CINEMATIC',
+        task: 'STYLE_PRESET_CARD',
         limit: 1,
       }),
     ).toEqual([

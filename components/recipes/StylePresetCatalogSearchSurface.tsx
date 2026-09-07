@@ -39,10 +39,10 @@ interface StylePresetCatalogSearchSurfaceProps {
   onApplyPreset: (result: StylePresetCatalogSearchResult) => void;
 }
 
-type StyleCatalogLoadState = {
-  searchIndex: StylePresetCatalogSearchIndex | null;
-  isLoading: boolean;
-};
+type StyleCatalogLoadState =
+  | { status: 'loading' }
+  | { status: 'ready'; searchIndex: StylePresetCatalogSearchIndex }
+  | { status: 'error' };
 
 export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchSurfaceProps> = ({
   onClose,
@@ -50,16 +50,21 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   onApplyPreset,
 }) => {
   const [catalogLoad, setCatalogLoad] = useState<StyleCatalogLoadState>({
-    searchIndex: null,
-    isLoading: true,
+    status: 'loading',
   });
-  const { searchIndex, isLoading } = catalogLoad;
+  const searchIndex = catalogLoad.status === 'ready' ? catalogLoad.searchIndex : null;
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [query, setQuery] = useState('');
   const [packId, setPackId] = useState('');
   const [task, setTask] = useState('');
   const [isPackFilterOpen, setIsPackFilterOpen] = useState(false);
   const packFilterButtonRef = useRef<HTMLButtonElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const packFilterId = useId();
+
+  useEffect(() => {
+    searchInputRef.current?.focus();
+  }, []);
 
   const filters = useMemo(
     () =>
@@ -71,15 +76,14 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
       }),
     [packId, query, task],
   );
-  const packIdsToLoad = useMemo(
+  const packIdsToLoadKey = useMemo(
     () =>
       planStyleSearchPackIds({
         packSummaries: STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES,
         filters,
-      }),
+      }).join('|'),
     [filters],
   );
-  const packIdsToLoadKey = packIdsToLoad.join('|');
   const totalPresetCount = STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES.reduce(
     (total, pack) => total + pack.presetCount,
     0,
@@ -96,16 +100,20 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
 
   useEffect(() => {
     let cancelled = false;
-    setCatalogLoad({ searchIndex: null, isLoading: true });
-    void loadStylePresetCatalogSearchIndex(packIdsToLoad).then((loaded) => {
-      if (!cancelled) {
-        setCatalogLoad({ searchIndex: loaded, isLoading: false });
-      }
-    });
+    setCatalogLoad({ status: 'loading' });
+    const packIds = packIdsToLoadKey ? packIdsToLoadKey.split('|') : [];
+    void loadStylePresetCatalogSearchIndex(packIds).then(
+      (loaded) => {
+        if (!cancelled) setCatalogLoad({ status: 'ready', searchIndex: loaded });
+      },
+      () => {
+        if (!cancelled) setCatalogLoad({ status: 'error' });
+      },
+    );
     return () => {
       cancelled = true;
     };
-  }, [packIdsToLoad, packIdsToLoadKey]);
+  }, [packIdsToLoadKey, loadAttempt]);
 
   const results = useMemo(
     () =>
@@ -121,7 +129,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   return (
     <div
       data-style-catalog-root
-      data-style-catalog-state={searchIndex ? 'ready' : isLoading ? 'loading' : 'empty'}
+      data-style-catalog-state={catalogLoad.status}
       data-style-catalog-results-count={searchIndex ? results.length : -1}
       className="absolute inset-0 z-40 flex flex-col bg-black/86"
     >
@@ -138,14 +146,14 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
               <p className="mt-1 truncate text-[10px] font-bold uppercase tracking-[0.16em] text-zinc-500">
                 {searchIndex.totalPresetCount} loaded / {totalPresetCount} presets
               </p>
-            ) : (
+            ) : catalogLoad.status === 'loading' ? (
               <div className="mt-1 flex items-center gap-1.5 text-zinc-500">
                 <LoaderCircle size={10} className="animate-spin" />
                 <span className="text-[10px] font-bold uppercase tracking-[0.16em]">
                   Loading...
                 </span>
               </div>
-            )}
+            ) : null}
           </div>
         </div>
 
@@ -169,7 +177,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             placeholder="Search presets, tags, DNA..."
             aria-label="Search presets"
             className="w-full border-none bg-transparent text-xs font-medium text-white outline-none placeholder:text-zinc-600"
-            ref={(el) => el?.focus()}
+            ref={searchInputRef}
           />
           {query && (
             <button type="button" onClick={() => setQuery('')} aria-label="Clear catalog search">
@@ -277,8 +285,24 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto px-6 py-5 custom-scrollbar">
-        {!searchIndex ? (
-          <div className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-zinc-600">
+        {catalogLoad.status === 'error' ? (
+          <div className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-zinc-400">
+            <p role="alert" className="text-sm">
+              Could not load the style catalog.
+            </p>
+            <button
+              type="button"
+              onClick={() => setLoadAttempt((attempt) => attempt + 1)}
+              className="rounded-lg border border-white/10 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              Try again
+            </button>
+          </div>
+        ) : !searchIndex ? (
+          <div
+            role="status"
+            className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-zinc-600"
+          >
             <LoaderCircle size={32} className="animate-spin opacity-25" />
             <span className="text-xs font-black uppercase tracking-widest">Loading catalog…</span>
           </div>

@@ -882,16 +882,13 @@ export function searchStylePresetCatalogIndex(
   const results: StylePresetCatalogSearchResult[] = [];
 
   for (const entry of index.presets) {
-    const tags = new Set(entry.tags.map((value) => value.toLowerCase()));
-    const supportedTasks = new Set(entry.supportedTasks.map((value) => value.toLowerCase()));
-
     if (query && !entry.searchableText.includes(query)) continue;
     if (packId && normalizeSearchText(entry.packId) !== packId) continue;
     if (categoryId && normalizeSearchText(entry.categoryId) !== categoryId) continue;
     if (categoryName && !includesText(entry.categoryName, categoryName)) continue;
     if (domain && !includesText(entry.domain, domain)) continue;
-    if (tag && !tags.has(tag)) continue;
-    if (task && !supportedTasks.has(task)) continue;
+    if (tag && !entry.tags.some((value) => value.toLowerCase() === tag)) continue;
+    if (task && !entry.supportedTasks.some((value) => value.toLowerCase() === task)) continue;
 
     const { searchableText: _searchableText, ...result } = entry;
     results.push(result);
