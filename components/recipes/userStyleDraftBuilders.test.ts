@@ -6,7 +6,7 @@ import {
   createUserStyleDraftFromBlend,
   createUserStyleReferenceImageSummary,
   createUserStyleInputFromDraft,
-  createUserStyleInputFromRuntimePreset,
+  prepareUserStyleEditorSession,
   mergeUserStyleDraftWithDisabledFields,
 } from './userStyleDraftBuilders';
 import type { StyleRuntimePreset } from './styles/runtimeTypes';
@@ -40,7 +40,11 @@ describe('userStyleDraftBuilders', () => {
   });
 
   it('clones a runtime preset into a user style input', () => {
-    const input = createUserStyleInputFromRuntimePreset(preset, 'pack_04', 'Graphic Novel');
+    const session = prepareUserStyleEditorSession(
+      { kind: 'clone', preset, packId: 'pack_04', packName: 'Graphic Novel' },
+      [],
+    )!;
+    const input = createUserStyleInputFromDraft(session.draft, session.source);
 
     expect(input.name).toBe('Ink Circuit Remix');
     expect(input.source?.kind).toBe('clone');
@@ -49,11 +53,16 @@ describe('userStyleDraftBuilders', () => {
   });
 
   it('uses display names when cloning renamed runtime presets', () => {
-    const input = createUserStyleInputFromRuntimePreset(
-      { ...preset, displayName: 'Graphic Circuit System' },
-      'pack_04',
-      'Graphic Novel',
-    );
+    const session = prepareUserStyleEditorSession(
+      {
+        kind: 'clone',
+        preset: { ...preset, displayName: 'Graphic Circuit System' },
+        packId: 'pack_04',
+        packName: 'Graphic Novel',
+      },
+      [],
+    )!;
+    const input = createUserStyleInputFromDraft(session.draft, session.source);
 
     expect(input.name).toBe('Graphic Circuit System Remix');
     expect(input.source?.data).toEqual({

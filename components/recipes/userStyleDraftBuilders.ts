@@ -374,45 +374,6 @@ export function createUserStyleInputFromDraft(
   };
 }
 
-export function createUserStyleInputFromRuntimePreset(
-  preset: StyleRuntimePreset,
-  packId: string,
-  packName: string,
-): CreateUserStylePresetInput {
-  const presetName = getStyleRuntimePresetDisplayName(preset);
-  return createUserStyleInputFromDraft(
-    createUserStyleDraftFromRuntimePreset(preset, packId, packName),
-    {
-      kind: 'clone',
-      presetId: preset.id,
-      packId,
-      note: `Cloned from ${packName}.`,
-      data: { presetName, packName },
-    },
-  );
-}
-
-export function createUserStyleInputFromBlend(
-  slots: SelectedStyleSlot[],
-  layers: SelectedStyleLayer[],
-): CreateUserStylePresetInput {
-  return createUserStyleInputFromDraft(createUserStyleDraftFromBlend(slots, layers), {
-    kind: 'blend',
-    note: 'Saved from selected style slots.',
-    data: {
-      styles: layers
-        .filter((layer) => layer.enabled)
-        .map((layer) => ({
-          presetId: layer.presetId,
-          presetName: layer.presetName,
-          packId: layer.packId,
-          packName: layer.packName,
-          strength: layer.strength,
-        })),
-    },
-  });
-}
-
 export type UserStyleEditorIntent =
   | { kind: 'create' }
   | { kind: 'edit'; styleId: string }
@@ -460,7 +421,10 @@ export function prepareUserStyleEditorSession(
           presetId: intent.preset.id,
           packId: intent.packId,
           note: `Cloned from ${intent.packName}.`,
-          data: { presetName: intent.preset.name, packName: intent.packName },
+          data: {
+            presetName: getStyleRuntimePresetDisplayName(intent.preset),
+            packName: intent.packName,
+          },
         },
       };
       break;
