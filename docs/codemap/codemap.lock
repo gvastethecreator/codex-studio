@@ -1,7 +1,7 @@
 {
-  "source_commit": "e43008bc521cd7f417bf14f41fff32fccc14bd94",
+  "source_commit": "d911cec6ef4b2f2060de061dcf52919afc95e0e9",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-06T20:01:55Z",
+  "generated_at": "2026-09-07T00:56:44Z",
   "scanned_scope": [
     "."
   ],
@@ -64,8 +64,8 @@
     {
       "id": "components",
       "path": "components",
-      "file_count": 1983,
-      "fingerprint": "d29d1efbe4fa57a65e18fb7777cba249103c8e61803a6e80c6a990a39ce88f3c"
+      "file_count": 1984,
+      "fingerprint": "50a5b2785f00feb90948f1fd584deb98cd8eb0f3578c5874f798feea6cca24c6"
     },
     {
       "id": "contexts",
@@ -77,7 +77,7 @@
       "id": "docs",
       "path": "docs",
       "file_count": 34,
-      "fingerprint": "22b9271811a5edc714eb7c39b6badffe6538c2b68ac3dadd2c838921fdf87f96"
+      "fingerprint": "abd3ada4371eebcdaf928bdc4c37704b203efbdebd8293a106031a58e94a2232"
     },
     {
       "id": "electron",
@@ -94,8 +94,8 @@
     {
       "id": "lib",
       "path": "lib",
-      "file_count": 173,
-      "fingerprint": "7d2bdd3e80c620af9881f4a2fc9bb41fc3563cebacc73f9daa049a469730720f"
+      "file_count": 171,
+      "fingerprint": "40881b285e20db971147ba16329fda9864d85ce4921dff87f89906caa94f4da3"
     },
     {
       "id": "packages",
@@ -106,8 +106,8 @@
     {
       "id": "scripts",
       "path": "scripts",
-      "file_count": 133,
-      "fingerprint": "3886865dabfab531addb86b0de6d7a4a3dc14a830e9995a94c42e7511ccaff5f"
+      "file_count": 129,
+      "fingerprint": "b56c3447bf349928e71a1faa3fd7b296368ee88957659ca9b705667808613b76"
     },
     {
       "id": "services",
@@ -124,8 +124,8 @@
     {
       "id": "utils",
       "path": "utils",
-      "file_count": 12,
-      "fingerprint": "497a10f0217bc6bcd44620b292e2e0332eb4760279906dfea5d9e62e59e769a2"
+      "file_count": 11,
+      "fingerprint": "5ea5797197555a4172dcffbb41ab0a6b32677f2e80b494a0f4e1561f0d7446e6"
     }
   ]
 }

@@ -49,6 +49,8 @@ graph TD
 - `services/studioEventSource.ts` owns the shared SSE connection.
 - `services/localGenerationRun.ts` submits an atomic Persistent Job batch, observes accepted members, and returns catalog-derived results with complete or partial status.
 - `lib/studioCatalogView.ts` and `lib/studioCatalogImageAdapter.ts` materialize UI images from Catalog Entries.
+  The view owns batch grouping IDs; the adapter uses that rule when materializing images.
+  `lib/recipeIds.ts` owns recipe identity validation; shell metadata only adds titles and context parsing.
 - `lib/studioLegacyWorkspaceSnapshotExport.ts` derives the export-only legacy workspace JSON shape from Catalog Entries. There is no browser batch store, import, or recovery path.
 - `lib/catalogRenderBudget.ts`, `lib/catalogCardActionSurface.ts`, and `lib/imageGridPresentation.ts` keep hot Catalog rendering bounded.
   They preserve card animation, hover or focus commands, and initial-viewport image discovery.
@@ -56,7 +58,9 @@ graph TD
 - `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts` project Command Center state.
 - `components/shell/StudioViewport.tsx` demand-loads route surfaces.
 - `hooks/useStyleRuntimePacks.ts` projects the Style Packs that the current browser intent needs. `components/recipes/stylesData.ts` owns the shared value or promise registry and retry boundary.
+  Catalog search loads raw generated packs without forcing all thumbnails. Its surface owns loading, failure, and explicit retry; it reuses the search index while the effective pack set is unchanged. It does not retain rejected loader promises.
 - Styles separates three state owners: `useStyleBrowserNavigation` owns routes, filters and favorites; `useStyleComposition` owns selected layers and generation inputs; `useUserStyleLibrary` owns catalog reads and editor sessions. Draft preparation and the editor remain demand-loaded. Late mutation responses update catalog and selected layers only when their version is current, even after the editor closes.
+  Clone and blend inputs pass through `prepareUserStyleEditorSession` and `createUserStyleInputFromDraft`; clone provenance preserves the preset display name.
 - `StudioViewport` keeps each lazy route component's identity stable after preloading. Switching to its loaded component during a later render would remount the route and discard an open editor or selection.
 - Settings covers the shell while keeping its header mounted. The modal can capture and restore the opening control; suppressing and unmounting that header discards the focus target before the modal opens.
 - `lib/styleThumbnailCatalog.ts` projects default and provider-specific Style card images from pack-scoped generated modules.
