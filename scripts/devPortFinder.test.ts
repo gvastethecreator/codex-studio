@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import { findAvailablePort, isPortAvailable, probeHttpHealth, probeUrl } from './devPortFinder';
 import http from 'node:http';
 

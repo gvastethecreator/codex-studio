@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { listRecipeModules } from '../lib/recipeModules';
 import { createProviderInputAuditReport } from './provider-input-audit';

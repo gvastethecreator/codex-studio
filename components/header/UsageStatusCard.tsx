@@ -13,6 +13,11 @@ function getUsageBarClass(availablePercent: number) {
   return 'bg-emerald-300';
 }
 
+function getUsageDetailLabel(label: string, meta: string) {
+  const scope = meta.split(' · ').at(-1)?.trim();
+  return scope && label.startsWith(`${scope} · `) ? label.slice(scope.length + 3) : label;
+}
+
 export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps) {
   const visibleLimits = usage.limits.slice(0, 2);
   const usageToneClasses =
@@ -26,7 +31,7 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
       ? `${usage.tooltip} · ${visibleLimits
           .map(
             (limit) =>
-              `${limit.label}: ${Math.round(limit.availablePercent)}% available${limit.resetLabel ? `, ${limit.resetLabel}` : ''}`,
+              `${getUsageDetailLabel(limit.label, usage.meta)}: ${Math.round(limit.availablePercent)}% available${limit.resetLabel ? `, ${limit.resetLabel}` : ''}`,
           )
           .join(' · ')}`
       : usage.tooltip;

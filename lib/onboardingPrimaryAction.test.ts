@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { ONBOARDING_BUN_INSTALL_URL, ONBOARDING_CODEX_INSTALL_URL } from '../packages/shared/src';
 import { resolveOnboardingPrimaryAction } from './onboardingPrimaryAction';

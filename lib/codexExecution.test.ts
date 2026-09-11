@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import type { CodexModel } from '../packages/shared/src';
 import {
@@ -71,5 +71,6 @@ describe('codexExecution', () => {
   it('formats missing model labels without crashing the toolbar', () => {
     expect(formatCodexModelLabel(undefined, undefined)).toBe('Default');
     expect(formatCodexModelLabel('gpt-5.3-codex-spark')).toBe('5.3 Spark');
+    expect(formatCodexModelLabel('gpt-reserve', 'GPT-RESERVE')).toBe('Luna Reserve');
   });
 });

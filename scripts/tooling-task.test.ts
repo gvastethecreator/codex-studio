@@ -1,7 +1,7 @@
 import { mkdtempSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { getToolingTaskDefinition, pruneToolingLogs } from './tooling-task';
 

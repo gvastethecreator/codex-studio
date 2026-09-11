@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import {
   createCodexRuntimePreflight,
@@ -183,6 +183,31 @@ describe('provider runtime config', () => {
       canAttemptExecution: false,
     });
     expect(preflight.diagnostics.join(' ')).toContain('legacy');
+  });
+
+  it('reports Codex app-server and ChatGPT HTTP as separate usable routes', () => {
+    const preflight = createCodexRuntimePreflight(
+      {
+        status: 'ready',
+        canRunJobs: true,
+        checkedAt: '2026-05-31T00:00:00.000Z',
+        selectedExecutable: 'C:/Users/dev/AppData/Roaming/npm/codex.cmd',
+        selectedCommand: 'codex --version',
+        selectedVersion: 'codex 0.2.3',
+        selectedVersionNumber: '0.2.3',
+        appServerSupported: true,
+        recommendedAction: 'Codex app-server is ready.',
+        issues: [],
+        candidates: [],
+      },
+      { httpReady: true },
+    );
+
+    expect(preflight).toMatchObject({
+      runtimeKind: 'codex_app_server',
+      availableRuntimeKinds: ['codex_app_server', 'subscription_http'],
+      canAttemptExecution: true,
+    });
   });
 
   it('maps the local Grok Build login into non-secret provider readiness', () => {

@@ -4,26 +4,6 @@
 
 Accepted for implementation.
 
-## Context
-
-Codex Studio already has a `spritesheet` recipe for simple generated grids.
-Character Lab can request sprite-like actions.
-Neither surface owns the complete production workflow for runtime-ready sprite atlases.
-That workflow needs a contract, row prompts, layout guides, row-by-row image generation, extraction, curation, atlas composition, QA reports, and a durable `manifest.json.frame_layout`.
-
-The local `sprite-atlas-builder` skill defines the intended pipeline:
-
-```text
-preset/custom contract -> sprite-request.json -> layout guides + row prompts
--> imagegen row strips -> background removal + frame extraction
--> curated frames -> atlas PNG + manifest.json.frame_layout
-```
-
-Codex Studio architecture requires Recipe Modules to produce provider-independent Generation Task Specs.
-UI surfaces collect parameters and preview state.
-Providers compile and run specs behind the Provider Boundary.
-Generated user data belongs in the Studio Library, not the repository.
-
 ## Decision
 
 Add a new `sprite-atlas` Recipe Module and route-lazy workbench UI. Keep the existing `spritesheet` recipe as the lightweight one-shot grid generator.

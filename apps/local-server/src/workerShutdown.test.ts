@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';

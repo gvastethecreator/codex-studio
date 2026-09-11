@@ -31,6 +31,8 @@ export interface GenerationProviderCapabilitiesResponse {
 export interface GenerationProviderRuntimePreflight {
   providerId: GenerationProviderId;
   runtimeKind: ProviderRuntimeKind;
+  /** Every execution route currently usable for this provider. */
+  availableRuntimeKinds?: ProviderRuntimeKind[];
   secretState: ProviderSecretState;
   secretSource: string | null;
   localRuntimeState: ProviderLocalRuntimeState;
@@ -187,12 +189,17 @@ export function createGenerationProviderCapabilities({
         : configured
           ? 'planned'
           : 'not_configured';
+      const codexHasLocalAndSubscriptionRoutes =
+        provider.providerId === 'codex' && localReady && subscriptionReady;
       const runtimeKind =
-        subscriptionReady && (provider.providerId === 'codex' || provider.providerId === 'grok')
+        subscriptionReady &&
+        (provider.providerId === 'codex' || provider.providerId === 'grok') &&
+        !codexHasLocalAndSubscriptionRoutes
           ? 'subscription_http'
           : provider.runtimeKind;
-      const activeDetail =
-        subscriptionReady && provider.subscriptionReadyDetail
+      const activeDetail = codexHasLocalAndSubscriptionRoutes
+        ? 'Codex app-server and ChatGPT HTTP are ready. Choose the execution route per job.'
+        : subscriptionReady && provider.subscriptionReadyDetail
           ? provider.subscriptionReadyDetail
           : provider.activeDetail;
 

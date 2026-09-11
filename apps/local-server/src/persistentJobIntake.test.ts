@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 
 import {
   createDefaultEditableStudioSettings,
@@ -117,8 +117,9 @@ describe('persistentJobIntake', () => {
     }
   });
 
-  it('captures execution policy and rejects stale previews after an auth change', async () => {
+  it('captures the selected execution route and validates its availability', async () => {
     let transport: 'codex_app_server' | 'subscription_http' = 'codex_app_server';
+    let httpReady = true;
     const createJobFn = vi.fn((input: CreateJobInput) =>
       createJob({
         providerId: input.providerId,
@@ -132,6 +133,10 @@ describe('persistentJobIntake', () => {
       processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
       readCodexTransport: () => transport,
+      readCodexTransportAvailability: () => ({
+        codex_app_server: true,
+        subscription_http: httpReady,
+      }),
       readLibraryDir: () => 'D:/library',
       readEditableSettings: () => ({
         ...createDefaultEditableStudioSettings(),
@@ -184,8 +189,8 @@ describe('persistentJobIntake', () => {
       execution: captured,
     });
     expect(changed).toMatchObject({
-      ok: false,
-      error: { body: { code: 'codex_execution_changed' } },
+      ok: true,
+      job: { execution: { providerOptions: { codex: { transport: 'codex_app_server' } } } },
     });
     const unsupported = await intake.createJob({
       kind: 'image_generate',
@@ -196,7 +201,7 @@ describe('persistentJobIntake', () => {
       ok: false,
       error: { body: { code: 'codex_execution_unsupported' } },
     });
-    expect(createJobFn).toHaveBeenCalledTimes(1);
+    expect(createJobFn).toHaveBeenCalledTimes(2);
     const accepted = await intake.createJob({
       kind: 'image_generate',
       prompt: 'draw',
@@ -204,7 +209,9 @@ describe('persistentJobIntake', () => {
         model: 'gpt-5.5',
         reasoningEffort: 'provider_default',
         serviceTier: null,
-        providerOptions: { codex: { transport: 'subscription_http' } },
+        providerOptions: {
+          codex: { transport: 'subscription_http', imageModel: 'gpt-image-2.5-sunburst' },
+        },
       },
       sourceSpec: createGenerationTaskSpec({
         id: 'http-wide',
@@ -221,13 +228,37 @@ describe('persistentJobIntake', () => {
           providerOptions: {
             codex: {
               transport: 'subscription_http',
-              image: { size: '1536x864', quality: 'medium' },
+              image: { model: 'gpt-image-2.5-sunburst', size: '1536x864', quality: 'medium' },
             },
           },
         },
       },
     });
     expect(captured.providerOptions?.codex?.transport).toBe('codex_app_server');
+
+    httpReady = false;
+    const unavailable = await intake.createJob({
+      kind: 'image_generate',
+      providerId: 'codex',
+      prompt: 'draw',
+      execution: {
+        model: 'gpt-5.5',
+        reasoningEffort: 'provider_default',
+        serviceTier: null,
+        providerOptions: { codex: { transport: 'subscription_http' } },
+      },
+      sourceSpec: createGenerationTaskSpec({
+        id: 'http-unavailable',
+        task: 'image_generate',
+        providerId: 'codex',
+        prompt: 'draw',
+      }),
+    });
+    expect(unavailable).toMatchObject({
+      ok: false,
+      error: { body: { code: 'codex_transport_unavailable', transport: 'subscription_http' } },
+    });
+    expect(createJobFn).toHaveBeenCalledTimes(3);
   });
 
   it('hydrates Studio Library recipe retry assets before final source spec validation', async () => {

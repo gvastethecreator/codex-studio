@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import { listPlatformPathCandidates } from './platformPaths';
 
 describe('platformPaths', () => {
@@ -12,6 +12,11 @@ describe('platformPaths', () => {
     const openAiIndex = candidates.findIndex((candidate) =>
       candidate.path.includes('Programs\\OpenAI\\Codex\\bin\\codex.exe'),
     );
+    const currentDesktopRuntimeIndex = candidates.findIndex(
+      (candidate) =>
+        candidate.source === 'OpenAI desktop runtime' &&
+        candidate.path.includes('AppData\\Local\\OpenAI\\Codex\\bin\\'),
+    );
     const npmShimIndex = candidates.findIndex((candidate) =>
       candidate.path.includes('AppData\\Roaming\\npm\\codex.cmd'),
     );
@@ -19,6 +24,9 @@ describe('platformPaths', () => {
     expect(openAiIndex).toBeGreaterThanOrEqual(0);
     expect(npmShimIndex).toBeGreaterThanOrEqual(0);
     expect(openAiIndex).toBeLessThan(npmShimIndex);
+    if (currentDesktopRuntimeIndex >= 0) {
+      expect(currentDesktopRuntimeIndex).toBeLessThan(openAiIndex);
+    }
   });
 
   it('prefers stable launchers before npm package internals on Windows', () => {

@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import type { Asset, SystemLog } from '../../../packages/shared/src';
 import { createAssetLogRoutes } from './assetLogRoutes';
 

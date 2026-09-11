@@ -1,4 +1,14 @@
-import { beforeAll, describe, expect, it, vi } from 'vite-plus/test';
+import { beforeAll, describe, expect, it, vi } from 'vitest';
+
+vi.mock('node:fs', async () => {
+  const actual = await vi.importActual<typeof import('node:fs')>('node:fs');
+  return {
+    ...actual,
+    copyFileSync: vi.fn(),
+    mkdirSync: vi.fn(),
+    writeFileSync: vi.fn(),
+  };
+});
 
 vi.mock('../logger', () => ({
   log: vi.fn(),
@@ -116,5 +126,69 @@ describe('createCodexTurn', () => {
     expect(closeSession).toHaveBeenCalledWith('pack_08', {
       invalidatePersistedThread: true,
     });
+  });
+
+  it('surfaces an actionable error when app-server reports exhausted model usage', async () => {
+    const closeSession = vi.fn();
+    const request = vi.fn().mockResolvedValue({ turn: { id: 'turn-usage' } });
+    const getSession = vi.fn().mockResolvedValue({
+      client: {
+        getNotificationCount: () => 0,
+        request,
+        waitForNotification: vi.fn().mockResolvedValue({
+          method: 'turn/completed',
+          params: { turn: { id: 'turn-usage' } },
+        }),
+        getNotificationsSince: () => [
+          {
+            method: 'turn/completed',
+            params: {
+              turn: {
+                id: 'turn-usage',
+                error: { codexErrorInfo: 'usageLimitExceeded' },
+              },
+            },
+          },
+        ],
+      },
+      codexHome: null,
+      threadId: 'thread-usage',
+      sessionKey: 'pack_usage',
+      queue: Promise.resolve(),
+    });
+
+    const turn = createCodexTurn({
+      getSession,
+      closeSession,
+      getSessionKey: () => 'pack_usage',
+      resolveLibraryPath: (...parts) => `D:/tmp/${parts.join('/')}`,
+      resolveProcessCwd: () => 'D:/DEV/codex-studio',
+      createAssetExtractor: () => ({ extract: async () => [] }),
+      resolveExecutionOptions: () => ({
+        model: 'gpt-5.6-luna',
+        reasoningEffort: 'max',
+        serviceTier: 'fast',
+      }),
+      maxAttempts: 1,
+      retryDelayMs: 0,
+    });
+
+    await expect(
+      turn.runTurn({
+        jobId: 'job-usage',
+        prompt: 'PACK: Luna Reserve usage check',
+      }),
+    ).rejects.toThrow(
+      'Select GPT-Reserve to use the available Luna Reserve bucket, or wait for the regular bucket to reset.',
+    );
+
+    expect(request).toHaveBeenCalledWith(
+      'turn/start',
+      expect.objectContaining({
+        model: 'gpt-5.6-luna',
+        effort: 'max',
+        serviceTier: 'fast',
+      }),
+    );
   });
 });

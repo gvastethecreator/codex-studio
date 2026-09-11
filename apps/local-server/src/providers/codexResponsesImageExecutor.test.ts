@@ -1,11 +1,14 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
 import { createCodexResponsesImageExecutor } from './codexResponsesImageExecutor';
 import {
   CODEX_HTTP_EXECUTION_DEFAULTS,
+  CODEX_HTTP_IMAGE_MODEL,
+  CODEX_HTTP_IMAGE_MODELS,
   type JobExecutionOptions,
   type JobRemoteExecution,
+  resolveCodexExecutionPolicy,
 } from '../../../../packages/shared/src';
 import { SubscriptionHttpError } from './subscriptionHttpError';
 
@@ -18,7 +21,7 @@ function httpExecution(size = '1024x1024'): JobExecutionOptions {
     providerOptions: {
       codex: {
         transport: 'subscription_http',
-        image: { model: 'gpt-image-2', size, quality: 'medium' },
+        image: { model: CODEX_HTTP_IMAGE_MODEL, size, quality: 'medium' },
       },
     },
   };
@@ -71,13 +74,34 @@ describe('codex responses image executor', () => {
     expect(payload).toMatchObject({
       model: 'gpt-5.5',
       tools: [
-        { type: 'image_generation', model: 'gpt-image-2', size: '1536x864', quality: 'medium' },
+        {
+          type: 'image_generation',
+          model: CODEX_HTTP_IMAGE_MODEL,
+          size: '1536x864',
+          quality: 'medium',
+        },
       ],
     });
     expect(payload).not.toHaveProperty('reasoning');
     expect(payload).not.toHaveProperty('service_tier');
     const transcript = writes.find((write) => String(write.filePath).includes('transcripts'));
     expect(String(transcript?.content)).not.toContain('codex-secret');
+  });
+
+  it('accepts each available GPT Image contract without changing the selected model', () => {
+    for (const imageModel of CODEX_HTTP_IMAGE_MODELS) {
+      const policy = resolveCodexExecutionPolicy(
+        {
+          ...CODEX_HTTP_EXECUTION_DEFAULTS,
+          providerOptions: {
+            codex: { transport: 'subscription_http', imageModel: imageModel.id },
+          },
+        },
+        { output: { aspectRatio: '1:1' }, assets: [] },
+        'subscription_http',
+      );
+      expect(policy.image?.model).toBe(imageModel.id);
+    }
   });
 
   it('keeps a tool-less stream uncertain without permitting another submission', async () => {
@@ -125,6 +149,30 @@ describe('codex responses image executor', () => {
       code: 'entitlement_denied',
       fallbackAllowed: false,
       httpStatus: 403,
+    } satisfies Partial<SubscriptionHttpError>);
+  });
+
+  it('reports HTTP usage exhaustion as a route-specific limit instead of empty output', async () => {
+    const executor = createCodexResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      fetch: async () =>
+        new Response(JSON.stringify({ error: { message: 'The usage limit has been reached' } }), {
+          status: 429,
+        }),
+    });
+
+    await expect(
+      executor({
+        id: 'job-http-usage-limit',
+        workspaceId: 'workspace-1',
+        prompt: 'stone keep',
+        checkpointRemoteExecution: vi.fn(),
+        execution: httpExecution(),
+      }),
+    ).rejects.toMatchObject({
+      code: 'source_limit',
+      fallbackAllowed: false,
+      message: expect.stringContaining('GPT-Reserve'),
     } satisfies Partial<SubscriptionHttpError>);
   });
 

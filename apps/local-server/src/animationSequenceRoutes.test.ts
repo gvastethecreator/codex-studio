@@ -2,7 +2,7 @@ import { existsSync, mkdtempSync, rmSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import type { CatalogImage } from '../../../packages/shared/src';
 
 import { createAnimationSequenceRoutes } from './animationSequenceRoutes';

@@ -1,7 +1,7 @@
 import { spawnSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import {
   ONBOARDING_BUN_INSTALL_URL,
   ONBOARDING_CODEX_INSTALL_URL,

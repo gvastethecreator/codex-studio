@@ -1,5 +1,10 @@
 import React from 'react';
-import type { CodexReasoningEffort, CodexServiceTier, JobStatus } from './packages/shared/src';
+import type {
+  CodexHttpImageModel,
+  CodexReasoningEffort,
+  CodexServiceTier,
+  JobStatus,
+} from './packages/shared/src';
 import { MODELS } from './constants';
 
 export interface Attachment {
@@ -54,6 +59,7 @@ export interface ImageGenerationConfig {
   executionModel: string;
   executionReasoningEffort: CodexReasoningEffort;
   executionSpeed: CodexServiceTier;
+  codexImageModel?: CodexHttpImageModel;
   codexTransport?: import('./packages/shared/src').CodexExecutionTransport;
   batchCount: number;
   useThinkingAndSearch?: boolean;

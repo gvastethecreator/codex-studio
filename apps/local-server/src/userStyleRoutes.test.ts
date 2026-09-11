@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 
 import { createUserStyleRoutes } from './userStyleRoutes';
 import { createMemoryUserStyleStore } from './userStyles';

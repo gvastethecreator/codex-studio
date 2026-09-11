@@ -1,7 +1,7 @@
 import { mkdirSync, mkdtempSync, rmSync, symlinkSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import { createGenerationTaskSpec } from '../../../packages/shared/src';
 import {
   isManagedGenerationAssetPath,

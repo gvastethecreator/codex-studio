@@ -1,188 +1,125 @@
-# Code map · codex-studio
+# Code map: codex-studio
 
-generated: 2026-09-07T00:56:44Z
-commit: d911cec6ef4b
-scope: .
+Generated: 2026-09-11T06:59:39Z | Commit: `8c13a3dd2b35` | Schema: 2
+Generation: `c5dbb3f0902736e6bdcbdb8767137482098312b065a9737448dd9b72079381f8`
+Scope: . | Inventory: working-tree
+Nodes: 1067 | Edges: 5311 | Flows: 5
 
-counts: 20 nodes · 34 edges · 5 flows · 0 unknown
+## Coverage
+
+- Analysis: **partial**; 1002 analyzed of 1013 included files.
+- Configuration files: 7; omitted untracked files: 0.
+- Unresolved references and analysis limits: 2600.
+- Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules
 
-- `asset-finalizer` · `apps/local-server/src/workerAssetFinalizer.ts` · service · Resumable asset and catalog finalization
-  callers: worker (calls)
-  callees: catalog (writes), event-bus (publishes), jobs-db (writes)
-  tests: apps/local-server/src/workerAssetFinalizer.test.ts
-  entry: apps/local-server/src/workerAssetFinalizer.ts:createWorkerAssetFinalizer
-
-- `catalog` · `apps/local-server/src/catalog.ts` · database · Library catalog truth
-  callers: asset-finalizer (writes)
-  callees: (none)
-  tests: apps/local-server/src/catalog.test.ts, apps/local-server/src/catalogCommands.test.ts, apps/local-server/src/catalogRoutes.test.ts
-  entry: apps/local-server/src/catalog.ts:registerCatalogImage
-
-- `event-bus` · `apps/local-server/src/events.ts` · service · Revisioned job and catalog events
-  callers: asset-finalizer (publishes), event-routes (subscribes), worker (publishes)
-  callees: (none)
-  tests: apps/local-server/src/eventStreamRoutes.test.ts, apps/local-server/src/events.test.ts
-  entry: apps/local-server/src/events.ts:publishEvent
-
-- `event-routes` · `apps/local-server/src/eventStreamRoutes.ts` · interface · Bounded SSE delivery and revision handshake
-  callers: job-observer (subscribes)
-  callees: event-bus (subscribes)
-  tests: apps/local-server/src/eventStreamRoutes.test.ts
-  entry: apps/local-server/src/eventStreamRoutes.ts:createEventStreamRoutes
-
-- `generation-run` · `services/localGenerationRun.ts` · service · Persistent generation observation and catalog results
-  callers: generation-ui (calls)
-  callees: job-client (calls), job-observer (calls)
-  tests: services/localGenerationRun.stream.test.ts, services/localGenerationRun.test.ts, services/localGenerationRuntimeAdapters.test.ts
-  entry: services/localGenerationRun.ts:runLocalGeneration
-
-- `generation-ui` · `hooks/useGenerationPipeline.ts` · interface · User generation lifecycle
-  callers: styles (calls)
-  callees: generation-run (calls)
-  tests: hooks/useGenerationPipeline.test.ts
-  entry: hooks/useGenerationPipeline.ts:useGenerationPipeline, components/shell/StudioViewport.tsx:StudioViewport, hooks/useStudioShell.ts:useStudioShell
-
-- `job-client` · `services/studio-api/jobs.ts` · service · Browser job and atomic batch API
-  callers: generation-run (calls), job-history (calls), job-observer (calls)
-  callees: job-routes (calls)
-  tests: (none)
-  entry: services/studio-api/jobs.ts:createStudioJobBatch
-
-- `job-history` · `hooks/useJobHistory.ts` · interface · Open jobs and filtered terminal history
-  callers: (none)
-  callees: job-client (calls), job-observer (subscribes), runtime-settings (calls)
-  tests: hooks/useJobHistory.test.tsx
-  entry: hooks/useJobHistory.ts:useJobHistory, hooks/useWorkerDiagnostics.ts:useWorkerDiagnostics, components/QueuePanel.tsx:QueuePanel, components/QueueBatchCard.tsx:QueueBatchCard
-
-- `job-intake` · `apps/local-server/src/persistentJobIntake.ts` · service · Prepare all requests before acceptance and dispatch
-  callers: job-routes (calls)
-  callees: jobs-db (writes), runtime-settings (calls), shared (calls), worker (calls)
-  tests: apps/local-server/src/persistentJobIntake.test.ts
-  entry: apps/local-server/src/persistentJobIntake.ts:createPersistentJobIntake
-
-- `job-observer` · `services/studioEventSource.ts` · service · Shared event connection and job reconciliation
-  callers: generation-run (calls), job-history (subscribes)
-  callees: event-routes (subscribes), job-client (calls)
-  tests: services/studioEventSource.test.ts
-  entry: services/studioEventSource.ts:watchJob
-
-- `job-routes` · `apps/local-server/src/jobRoutes.ts` · interface · Job intake, inspection and actions
-  callers: job-client (calls)
-  callees: job-intake (calls), jobs-db (reads), shared (imports), worker (calls)
-  tests: apps/local-server/src/jobRoutes.test.ts
-  entry: apps/local-server/src/jobRoutes.ts:createJobRoutes, apps/local-server/src/jobBatchRoutes.ts:createJobBatchRoutes
-
-- `jobs-db` · `apps/local-server/src/db/jobs.ts` · database · Durable jobs, batch membership, attempts and checkpoints
-  callers: asset-finalizer (writes), job-intake (writes), job-routes (reads), worker (writes)
-  callees: (none)
-  tests: apps/local-server/src/db/jobs.test.ts
-  entry: apps/local-server/src/db/jobs.ts:updateJobStatus, apps/local-server/src/db/jobBatches.ts:createJobBatch
-
-- `providers` · `apps/local-server/src/providers` · service · Provider execution adapters and runtime identity
-  callers: worker (calls)
-  callees: shared (calls), worker (calls)
-  tests: apps/local-server/src/providers/comfyExecutor.test.ts, apps/local-server/src/providers/codexProvider.test.ts, apps/local-server/src/providers/externalProvider.test.ts
-  entry: apps/local-server/src/providers/externalProvider.ts:createExternalGenerationProvider, apps/local-server/src/providers/comfyExecutor.ts:createComfyWorkflowExecutor, apps/local-server/src/providers/codexProvider.ts:createCodexGenerationProvider
-
-- `runtime-settings` · `apps/local-server/src/providers/runtimeConfig.ts` · service · Provider readiness, host limits and runtime diagnostics
-  callers: job-history (calls), job-intake (calls), worker (calls)
-  callees: shared (calls), worker (calls)
-  tests: apps/local-server/src/providers/runtimeConfig.test.ts
-  entry: apps/local-server/src/providers/runtimeConfig.ts:getExternalProviderRuntimePreflight, apps/local-server/src/config.ts:getSettings, apps/local-server/src/runtimeRoutes.ts:createRuntimeRoutes
-
-- `shared` · `packages/shared/src` · module · Provider-independent domain and API contracts
-  callers: job-intake (calls), job-routes (imports), providers (calls), runtime-settings (calls)
-  callees: (none)
-  tests: (none)
-  entry: packages/shared/src/jobBatches.ts:JobStatus, packages/shared/src/workerContracts.ts:validateWorkerLimits, packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy
-
-- `style-client` · `services/studio-api/userStyles.ts` · service · User style API
-  callers: style-editor (calls)
-  callees: style-routes (calls)
-  tests: (none)
-  entry: services/studio-api/userStyles.ts:createUserStylePreset
-
-- `style-editor` · `components/recipes/useUserStyleLibrary.ts` · interface · User style data, editor identity and mutation reconciliation
-  callers: styles (calls)
-  callees: style-client (calls)
-  tests: components/recipes/userStyleDraftBuilders.test.ts, scripts/verify-style-editing.ts
-  entry: components/recipes/useUserStyleLibrary.ts:useUserStyleLibrary, components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface, components/recipes/userStyleDraftBuilders.ts:prepareUserStyleEditorSession
-
-- `style-routes` · `apps/local-server/src/userStyleRoutes.ts` · interface · Persistent user style CRUD
-  callers: style-client (calls)
-  callees: (none)
-  tests: apps/local-server/src/userStyleRoutes.test.ts
-  entry: apps/local-server/src/userStyleRoutes.ts:createUserStyleRoutes
-
-- `styles` · `components/recipes/StylesBrowser.tsx` · interface · Style browsing and selected composition
-  callers: (none)
-  callees: generation-ui (calls), style-editor (calls)
-  tests: components/recipes/styleLayerComposer.test.ts, components/recipes/styleTabRouting.test.ts, scripts/measure-style-workflow.ts
-  entry: components/recipes/StylesBrowser.tsx:StylesBrowser, components/recipes/useStyleBrowserNavigation.ts:useStyleBrowserNavigation, components/recipes/useStyleComposition.ts:useStyleComposition
-
-- `worker` · `apps/local-server/src/worker.ts` · queue · Fair provider scheduling, execution, cancellation and recovery
-  callers: job-intake (calls), job-routes (calls), providers (calls), runtime-settings (calls)
-  callees: asset-finalizer (calls), event-bus (publishes), jobs-db (writes), providers (calls), runtime-settings (calls)
-  tests: apps/local-server/src/workerShutdown.test.ts, apps/local-server/src/workerAssetFinalizer.test.ts, apps/local-server/src/workerRouting.test.ts
-  entry: apps/local-server/src/worker.ts:createWorkerController
+- `App.tsx` | module | Repository | callers: main.tsx | callees: components/AppContent.tsx, contexts/GenerationContext.tsx, contexts/GlobalContext.tsx, external:javascript:react | tests: 0 | entry: none
+- `apps/local-server/src/animationGifEncoder.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/animationGifEncoder.ts, apps/local-server/src/animationGifEncoder.ts, external:javascript:sharp, external:javascript:sharp | tests: 0 | entry: none
+- `apps/local-server/src/animationGifEncoder.ts` | module | Repository | callers: apps/local-server/src/animationGifEncoder.test.ts, apps/local-server/src/animationGifEncoder.test.ts, apps/local-server/src/animationSequenceService.ts, apps/local-server/src/animationSequenceService.ts | callees: none | tests: 1 | entry: none
+- `apps/local-server/src/animationSequenceRoutes.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/animationSequenceRoutes.ts, apps/local-server/src/animationSequenceRoutes.ts, external:javascript:node:fs, external:javascript:node:fs | tests: 0 | entry: none
+- `apps/local-server/src/animationSequenceRoutes.ts` | module | Repository | callers: apps/local-server/src/animationSequenceRoutes.test.ts, apps/local-server/src/animationSequenceRoutes.test.ts, apps/local-server/src/appFactory.ts, apps/local-server/src/appFactory.ts | callees: apps/local-server/src/animationSequenceRunView.ts, apps/local-server/src/animationSequenceRunView.ts, apps/local-server/src/animationSequenceService.ts, apps/local-server/src/animationSequenceService.ts | tests: 1 | entry: none
+- `apps/local-server/src/animationSequenceRunView.ts` | module | Repository | callers: apps/local-server/src/animationSequenceRoutes.ts, apps/local-server/src/animationSequenceRoutes.ts | callees: packages/shared/src/index.ts | tests: 0 | entry: none
+- `apps/local-server/src/animationSequenceService.ts` | module | Repository | callers: apps/local-server/src/animationSequenceRoutes.ts, apps/local-server/src/animationSequenceRoutes.ts | callees: apps/local-server/src/animationGifEncoder.ts, apps/local-server/src/animationGifEncoder.ts, apps/local-server/src/library.ts, apps/local-server/src/library.ts | tests: 0 | entry: none
+- `apps/local-server/src/antigravityExecutable.ts` | module | Repository | callers: apps/local-server/src/antigravityRuntimeDoctor.test.ts, apps/local-server/src/antigravityRuntimeDoctor.test.ts, apps/local-server/src/antigravityRuntimeDoctor.ts, apps/local-server/src/antigravityRuntimeDoctor.ts | callees: apps/local-server/src/platformHome.ts, apps/local-server/src/platformHome.ts, external:javascript:node:fs, external:javascript:node:fs | tests: 1 | entry: none
+- `apps/local-server/src/antigravityRuntimeDoctor.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/antigravityExecutable.ts, apps/local-server/src/antigravityExecutable.ts, apps/local-server/src/antigravityRuntimeDoctor.ts, apps/local-server/src/antigravityRuntimeDoctor.ts | tests: 0 | entry: none
+- `apps/local-server/src/antigravityRuntimeDoctor.ts` | module | Repository | callers: apps/local-server/src/antigravityRuntimeDoctor.test.ts, apps/local-server/src/antigravityRuntimeDoctor.test.ts, apps/local-server/src/appFactory.ts, apps/local-server/src/providerCapabilities.ts | callees: apps/local-server/src/antigravityExecutable.ts, apps/local-server/src/antigravityExecutable.ts, external:javascript:node:child_process, external:javascript:node:fs | tests: 3 | entry: none
+- `apps/local-server/src/appFactory.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/appFactory.ts, apps/local-server/src/appFactory.ts, apps/local-server/src/catalogStore.ts, apps/local-server/src/worker.ts | tests: 0 | entry: none
+- `apps/local-server/src/appFactory.ts` | module | Repository | callers: apps/local-server/src/appFactory.test.ts, apps/local-server/src/appFactory.test.ts, apps/local-server/src/index.ts, apps/local-server/src/index.ts | callees: apps/local-server/src/animationSequenceRoutes.ts, apps/local-server/src/animationSequenceRoutes.ts, apps/local-server/src/antigravityRuntimeDoctor.ts, apps/local-server/src/assetLogRoutes.ts | tests: 1 | entry: none
+- `apps/local-server/src/assetLogRoutes.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/assetLogRoutes.ts, apps/local-server/src/assetLogRoutes.ts, external:javascript:vitest, external:javascript:vitest | tests: 0 | entry: none
+- `apps/local-server/src/assetLogRoutes.ts` | module | Repository | callers: apps/local-server/src/appFactory.ts, apps/local-server/src/appFactory.ts, apps/local-server/src/assetLogRoutes.test.ts, apps/local-server/src/assetLogRoutes.test.ts | callees: external:javascript:hono, packages/shared/src/index.ts | tests: 1 | entry: none
+- `apps/local-server/src/auth/authRoutes.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/auth/authRoutes.ts, apps/local-server/src/auth/authRoutes.ts, apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/controller.ts | tests: 0 | entry: none
+- `apps/local-server/src/auth/authRoutes.ts` | module | Repository | callers: apps/local-server/src/appFactory.ts, apps/local-server/src/appFactory.ts, apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.test.ts | callees: apps/local-server/src/auth/controller.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts, external:javascript:hono | tests: 1 | entry: none
+- `apps/local-server/src/auth/constants.ts` | module | Repository | callers: apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/deviceCode.test.ts, apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/deviceCode.ts | callees: none | tests: 3 | entry: none
+- `apps/local-server/src/auth/controller.ts` | module | Repository | callers: apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.ts, apps/local-server/src/reset.ts | callees: apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/googleAuthorizationCode.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
+- `apps/local-server/src/auth/deviceCode.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/deviceCode.ts, external:javascript:vitest | tests: 0 | entry: none
+- `apps/local-server/src/auth/deviceCode.ts` | module | Repository | callers: apps/local-server/src/auth/controller.ts, apps/local-server/src/auth/deviceCode.test.ts, apps/local-server/src/auth/deviceCode.test.ts | callees: apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
+- Showing 20 of 1067 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
 
 ## Edges
 
-- asset-finalizer -> catalog · writes
-- asset-finalizer -> event-bus · publishes
-- asset-finalizer -> jobs-db · writes
-- event-routes -> event-bus · subscribes
-- generation-run -> job-client · calls
-- generation-run -> job-observer · calls
-- generation-ui -> generation-run · calls
-- job-client -> job-routes · calls
-- job-history -> job-client · calls
-- job-history -> job-observer · subscribes
-- job-history -> runtime-settings · calls
-- job-intake -> jobs-db · writes
-- job-intake -> runtime-settings · calls
-- job-intake -> shared · calls
-- job-intake -> worker · calls
-- job-observer -> event-routes · subscribes
-- job-observer -> job-client · calls
-- job-routes -> job-intake · calls
-- job-routes -> jobs-db · reads
-- job-routes -> shared · imports
-- job-routes -> worker · calls
-- providers -> shared · calls
-- providers -> worker · calls
-- runtime-settings -> shared · calls
-- runtime-settings -> worker · calls
-- style-client -> style-routes · calls
-- style-editor -> style-client · calls
-- styles -> generation-ui · calls
-- styles -> style-editor · calls
-- worker -> asset-finalizer · calls
-- worker -> event-bus · publishes
-- worker -> jobs-db · writes
-- worker -> providers · calls
-- worker -> runtime-settings · calls
+- `App.tsx` -> `components/AppContent.tsx` | imports
+- `App.tsx` -> `contexts/GenerationContext.tsx` | imports
+- `App.tsx` -> `contexts/GlobalContext.tsx` | imports
+- `App.tsx` -> `external:javascript:react` | imports
+- `apps/local-server/src/animationGifEncoder.test.ts` -> `apps/local-server/src/animationGifEncoder.ts` | calls
+- `apps/local-server/src/animationGifEncoder.test.ts` -> `apps/local-server/src/animationGifEncoder.ts` | imports
+- `apps/local-server/src/animationGifEncoder.test.ts` -> `external:javascript:sharp` | calls
+- `apps/local-server/src/animationGifEncoder.test.ts` -> `external:javascript:sharp` | imports
+- `apps/local-server/src/animationGifEncoder.test.ts` -> `external:javascript:vitest` | calls
+- `apps/local-server/src/animationGifEncoder.test.ts` -> `external:javascript:vitest` | imports
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `apps/local-server/src/animationSequenceRoutes.ts` | calls
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `apps/local-server/src/animationSequenceRoutes.ts` | imports
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `external:javascript:node:fs` | calls
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `external:javascript:node:fs` | imports
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `external:javascript:node:os` | imports
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `external:javascript:node:path` | imports
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `external:javascript:sharp` | calls
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `external:javascript:sharp` | imports
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `external:javascript:vitest` | calls
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `external:javascript:vitest` | imports
+- `apps/local-server/src/animationSequenceRoutes.test.ts` -> `packages/shared/src/index.ts` | imports (type only)
+- `apps/local-server/src/animationSequenceRoutes.ts` -> `apps/local-server/src/animationSequenceRunView.ts` | calls
+- `apps/local-server/src/animationSequenceRoutes.ts` -> `apps/local-server/src/animationSequenceRunView.ts` | imports
+- `apps/local-server/src/animationSequenceRoutes.ts` -> `apps/local-server/src/animationSequenceService.ts` | calls
+- `apps/local-server/src/animationSequenceRoutes.ts` -> `apps/local-server/src/animationSequenceService.ts` | imports
+- `apps/local-server/src/animationSequenceRoutes.ts` -> `external:javascript:hono` | imports
+- `apps/local-server/src/animationSequenceRoutes.ts` -> `external:javascript:node:fs` | calls
+- `apps/local-server/src/animationSequenceRoutes.ts` -> `external:javascript:node:fs` | imports
+- `apps/local-server/src/animationSequenceRoutes.ts` -> `packages/shared/src/index.ts` | imports (type only)
+- `apps/local-server/src/animationSequenceRunView.ts` -> `packages/shared/src/index.ts` | imports (type only)
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/animationGifEncoder.ts` | calls
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/animationGifEncoder.ts` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/library.ts` | calls
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/library.ts` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/sharpAuthoringAdapter.ts` | calls
+- `apps/local-server/src/animationSequenceService.ts` -> `apps/local-server/src/sharpAuthoringAdapter.ts` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:crypto` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:fs` | calls
+- `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:fs` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `external:javascript:node:path` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `packages/shared/src/animationSequenceContracts.ts` | calls
+- `apps/local-server/src/animationSequenceService.ts` -> `packages/shared/src/animationSequenceContracts.ts` | imports
+- `apps/local-server/src/animationSequenceService.ts` -> `packages/shared/src/types.ts` | imports (type only)
+- `apps/local-server/src/antigravityExecutable.ts` -> `apps/local-server/src/platformHome.ts` | calls
+- `apps/local-server/src/antigravityExecutable.ts` -> `apps/local-server/src/platformHome.ts` | imports
+- `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | calls
+- `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | imports
+- `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:path` | imports
+- `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | calls
+- `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | imports
+- Showing 50 of 5311 edges; JSON contains every edge and its evidence.
 
 ## Unknown
 
-- none
+- `apps/local-server/src/animationSequenceRoutes.test.ts:29`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:54`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:54`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:56`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:57`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:90`: object-member-call-not-resolved (expect)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:154`: object-member-call-not-resolved (expect)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:163`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:163`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:189`: object-member-call-not-resolved (path)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:189`: object-member-call-not-resolved (os)
+- `apps/local-server/src/animationSequenceRoutes.test.ts:190`: object-member-call-not-resolved (path)
 
 ## Flows
 
-- User selects style layers and generates
-  styles -> generation-ui -> generation-run -> job-client -> job-routes -> job-intake -> worker -> providers
-  Selected fields and strengths form recipe input; every batch member is accepted before dispatch with its captured execution policy
-- Observer attaches or recovers its connection
-  generation-run -> job-observer -> job-client -> job-routes -> jobs-db
-  Observer reads durable job truth independently of event delivery
-- User opens Queue or pages terminal history
-  job-history -> job-client -> job-routes -> jobs-db
-  All open work remains visible beside terminal history and authoritative counts
-- Worker resumes a captured Comfy remote execution or asset checkpoint
-  worker -> providers -> worker -> asset-finalizer -> catalog
-  The bound runtime reconciles the existing remote job without a second prompt; existing output is finalized into catalog truth
-- User opens a style draft and saves
-  styles -> style-editor -> style-client -> style-routes
-  User style changes persist through the existing API
+- Python __main__: `skills/imagegen/scripts/remove_chroma_key.py` -> `external:python:argparse` | Static call path reaches external:python:argparse:ArgumentParser
+- Python __main__: `skills/imagegen/scripts/remove_chroma_key.py` -> `external:python:re` | Static call path reaches external:python:re:fullmatch
+- Python __main__: `skills/imagegen/scripts/remove_chroma_key.py` -> `external:python:statistics` | Static call path reaches external:python:statistics:median
+- Python __main__: `skills/imagegen/scripts/remove_chroma_key.py` -> `external:python:pathlib` | Static call path reaches external:python:pathlib:Path
+- Python __main__: `skills/imagegen/scripts/remove_chroma_key.py` -> `external:python:io` | Static call path reaches external:python:io:BytesIO
+
+## Architecture changes
+
+- Nodes: +1 / -0; edges: +6 / -0.
+- Boundary changes: 0; new cycles: 0.
+
+## Read next
+
+- Use `status` before relying on this generation.
+- Use `impact --changed` for possible impact and related test evidence.
+- Use `diff --before <model> --after <model>` for architecture changes.

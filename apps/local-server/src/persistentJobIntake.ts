@@ -67,6 +67,7 @@ export interface PersistentJobIntakeDependencies {
   readEditableSettings?: () => EditableStudioSettings;
   resolveBootstrapExecution?: typeof resolveBootstrapProviderExecutionOptions;
   readCodexTransport: () => CodexExecutionTransport;
+  readCodexTransportAvailability?: () => Partial<Record<CodexExecutionTransport, boolean>>;
   validateManagedAssets?: typeof validateManagedGenerationAssets;
   resolveProviderExecutionBlocker: (
     providerId: string,
@@ -181,6 +182,7 @@ export function createPersistentJobIntake({
   readEditableSettings = createDefaultEditableStudioSettings,
   resolveBootstrapExecution = resolveBootstrapProviderExecutionOptions,
   readCodexTransport,
+  readCodexTransportAvailability,
   validateManagedAssets = validateManagedGenerationAssets,
   resolveProviderExecutionBlocker,
   readGrokAvailableModels = () => readGrokRuntimeDoctor().availableModels,
@@ -294,7 +296,15 @@ export function createPersistentJobIntake({
       }
     }
 
-    const codexTransport = providerId === 'codex' ? readCodexTransport() : null;
+    const requestedCodexTransport =
+      providerId === 'codex' ? request.execution?.providerOptions?.codex?.transport : undefined;
+    const requestedCodexImageModel =
+      providerId === 'codex'
+        ? (request.execution?.providerOptions?.codex?.imageModel ??
+          request.execution?.providerOptions?.codex?.image?.model)
+        : undefined;
+    const codexTransport =
+      providerId === 'codex' ? (requestedCodexTransport ?? readCodexTransport()) : null;
     const execution = resolveEffectiveJobExecutionOptions({
       providerId,
       explicit: request.execution,
@@ -305,23 +315,36 @@ export function createPersistentJobIntake({
           : resolveBootstrapExecution(providerId),
     });
     if (codexTransport) {
-      const previewTransport = request.execution?.providerOptions?.codex?.transport;
-      if (previewTransport && previewTransport !== codexTransport) {
+      const transportAvailability = readCodexTransportAvailability?.();
+      if (transportAvailability && transportAvailability[codexTransport] !== true) {
+        const routeLabel =
+          codexTransport === 'subscription_http' ? 'ChatGPT Sign in' : 'Codex app-server';
         return {
           ok: false,
           error: {
             status: 400,
             body: {
-              error:
-                'Codex sign-in changed the execution route. Review the current settings and generate again.',
-              code: 'codex_execution_changed',
+              error: `${routeLabel} is not ready. Open Studio Settings and complete its setup before generating.`,
+              code: 'codex_transport_unavailable',
+              transport: codexTransport,
             },
           },
         };
       }
       try {
+        const executionForPolicy = requestedCodexImageModel
+          ? {
+              ...execution,
+              providerOptions: {
+                codex: {
+                  transport: codexTransport,
+                  imageModel: requestedCodexImageModel,
+                },
+              },
+            }
+          : execution;
         execution.providerOptions = {
-          codex: resolveCodexExecutionPolicy(execution, sourceSpec, codexTransport),
+          codex: resolveCodexExecutionPolicy(executionForPolicy, sourceSpec, codexTransport),
         };
       } catch (error) {
         return {

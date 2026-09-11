@@ -8,7 +8,7 @@ import {
   screen,
   fireEvent,
 } from '@testing-library/react';
-import { afterEach, expect, it, vi } from 'vite-plus/test';
+import { afterEach, expect, it, vi } from 'vitest';
 import type { JobListPage, JobSummary } from '../packages/shared/src';
 import { toShellActivityJob, type ShellActivityJob } from '../lib/shellActivityJob';
 import { mergeJobHistory, useJobHistory } from './useJobHistory';

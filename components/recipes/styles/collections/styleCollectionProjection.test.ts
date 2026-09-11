@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 
 import { loadStyleRuntimePack, loadStyleRuntimePacks } from '../../stylesData';
 import type { StyleRuntimePack, StyleRuntimePreset } from '../runtimeTypes';

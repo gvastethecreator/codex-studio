@@ -1,6 +1,6 @@
 import { act, cleanup, renderHook } from '@testing-library/react';
 /** @vitest-environment jsdom */
-import { afterEach, describe, expect, it, vi } from 'vite-plus/test';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import type { CatalogImage } from '../packages/shared/src';
 import { createCatalogView } from '../lib/studioCatalogView';
 import { buildStudioGalleryImages, useStudioGallery } from './useStudioGallery';

@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 describe('useStudioShell composition', () => {
   it('composes feature controllers instead of owning project/generate policy', () => {

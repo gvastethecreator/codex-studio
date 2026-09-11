@@ -93,9 +93,11 @@ Make sure that app-server support is present, the Codex session is signed in, an
 
 Symptoms: Codex CLI exists but jobs fail with permission or authorization errors.
 
-Sign in from Studio Settings, or run `codex login` and choose ChatGPT. Then restart `bun run dev:server`.
+Sign in from Studio Settings for the ChatGPT HTTP route, or run `codex login` and choose ChatGPT for the local app-server route. Then restart `bun run dev:server` if the runtime was already running.
 
-Studio ChatGPT Sign in uses the Codex device-code flow. OpenAI does not document this as a supported Studio API. If HTTP generation returns no image (`empty_response`), Studio falls back to `codex app-server` when that runtime can run jobs.
+Studio ChatGPT Sign in uses the Codex device-code flow. OpenAI does not document this as a supported Studio API. The execution selector shows ChatGPT HTTP and Codex app-server independently, and captures the selected route when the job is accepted. If the selected route is unavailable, Studio blocks the job with the route-specific setup action instead of silently switching accounts.
+
+Luna Reserve belongs to the signed-in Codex app-server session. When the regular Codex bucket is exhausted, select `GPT-Reserve` and the desired reasoning mode, such as `MAX`. ChatGPT Sign in is a separate subscription HTTP route: it does not consume Luna Reserve, and it does not provide public OpenAI API credits. An API-key route requires separate OpenAI API credentials and billing.
 
 ### Grok Imagine is missing or blocked
 

@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 import { createStudioDiagnosticsRefreshPolicy } from './studioDiagnosticsRefreshPolicy';
 
 function createPolicyHarness(initialVisibility: DocumentVisibilityState | null = 'visible') {

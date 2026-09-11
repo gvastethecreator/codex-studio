@@ -1,6 +1,7 @@
 import type { ProviderDefaultSettings } from '../../packages/shared/src/studioSettings';
 import {
   CODEX_HTTP_CHAT_MODEL,
+  CODEX_HTTP_IMAGE_DISPLAY_NAME,
   CODEX_HTTP_REASONING,
   type CodexExecutionTransport,
 } from '../../packages/shared/src/codexExecutionContract';
@@ -25,11 +26,8 @@ export function ProviderExecutionDefaultsFields({
       value.serviceTier;
     return (
       <div className="md:col-span-2 space-y-3 rounded-lg border border-white/2 bg-white/4 p-4">
-        <p className="text-xs text-white">ChatGPT HTTP · GPT-5.5 · GPT Image 2</p>
-        <p className="text-xs text-zinc-400">
-          Image quality is medium. Reasoning and speed are managed by the provider. New jobs keep
-          this route after submission.
-        </p>
+        <p className="text-xs text-white">ChatGPT HTTP · GPT-5.5</p>
+        <p className="text-xs text-zinc-400">{CODEX_HTTP_IMAGE_DISPLAY_NAME} · Medium · Managed</p>
         {incompatible ? (
           <p role="status" className="text-xs text-amber-200">
             The saved execution defaults do not match HTTP. Apply the current HTTP settings before

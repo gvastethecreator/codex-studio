@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import type { CatalogImage, CatalogWorkspaceSummary } from '../packages/shared/src';
 import type { Workspace } from '../types';
 import { createCatalogView } from '../lib/studioCatalogView';

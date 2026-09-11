@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import { createLocalApiSecurityMiddleware, isAllowedLocalApiOrigin } from './localApiSecurity';
 import { Hono } from 'hono';
 

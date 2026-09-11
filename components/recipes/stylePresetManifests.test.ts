@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import type { StylePackManifest } from './styles/manifestTypes';
 import type { StyleRuntimePack } from './styles/runtimeTypes';

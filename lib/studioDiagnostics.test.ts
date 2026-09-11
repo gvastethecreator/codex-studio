@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import type { HealthResponse, LocalCodexSessionResponse } from '../packages/shared/src';
 import { buildStudioDiagnosticsSnapshot, formatCodexPlan } from './studioDiagnostics';
@@ -169,6 +169,40 @@ describe('studioDiagnostics', () => {
       tone: 'available',
       isLoading: false,
     });
+
+    const reserveSnapshot = buildStudioDiagnosticsSnapshot({
+      health: createHealth(),
+      localCodexSession: createLocalCodexSession({
+        usage: {
+          available: 83,
+          unit: 'quota_percent',
+          display: '83%',
+          path: 'rateLimitsByLimitId.base_model_inference.primary',
+          limitId: 'base_model_inference',
+          limitName: 'gpt-reserve',
+          limits: [
+            {
+              id: 'primary',
+              label: 'Weekly',
+              usedPercent: 17,
+              availablePercent: 83,
+              windowMinutes: 10080,
+              resetsAt: null,
+              path: 'rateLimitsByLimitId.base_model_inference.primary',
+            },
+          ],
+          raw: {},
+        },
+      }),
+      hasFetchedDiagnostics: true,
+      isBackendConnected: true,
+    });
+
+    expect(reserveSnapshot.usage).toMatchObject({
+      value: '83%',
+      meta: 'ChatGPT Pro · Luna Reserve',
+      limits: [expect.objectContaining({ label: 'Luna Reserve · Weekly' })],
+    });
     expect(snapshot.statusItems).toEqual([
       expect.objectContaining({ key: 'backend', value: 'Connected', tone: 'success' }),
       expect.objectContaining({ key: 'codexCli', value: 'Ready', tone: 'success' }),
@@ -308,7 +342,7 @@ describe('studioDiagnostics', () => {
     expect(snapshot.statusItems).toEqual([
       expect.objectContaining({ key: 'backend', value: 'Connected', tone: 'success' }),
       expect.objectContaining({ key: 'codexCli', value: 'Sign in', tone: 'success' }),
-      expect.objectContaining({ key: 'appServer', value: 'Fallback', tone: 'success' }),
+      expect.objectContaining({ key: 'appServer', value: 'Alternate', tone: 'success' }),
       expect.objectContaining({
         key: 'localCodexSession',
         value: 'Studio Sign in',

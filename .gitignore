@@ -122,3 +122,6 @@ Desktop.ini
 *.njsproj
 *.sln
 *.sw?
+
+# Vitest 5 artifacts
+.vitest/

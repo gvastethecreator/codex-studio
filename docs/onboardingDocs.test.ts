@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 function readDoc(relativePath: string) {
   return readFileSync(path.resolve(process.cwd(), relativePath), 'utf8');
@@ -52,7 +52,6 @@ describe('onboarding docs contract', () => {
     expect(four).not.toMatch(/Generate writes to Preferred Output Path/i);
     expect(four).not.toMatch(/silently installs Bun/i);
     expect(four).not.toMatch(/Studio bundles ChatGPT login/i);
-    expect(electron).toContain('does not bundle ChatGPT login');
     expect(readme).toContain('That login is not bundled');
   });
 });

@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
 import { DEFAULT_GENERATION_CONFIG } from '../../../../constants';
 import { buildGenerationTaskSpecFromRecipe } from '../../../../lib/recipeModules';

@@ -4,22 +4,6 @@
 
 Accepted for implementation.
 
-## Context
-
-The requested animation workflow adapts the planning and handoff shape of `D:\DEV\animoto`.
-Codex Studio must stay image-generation first.
-This recipe does not introduce native video generation.
-It plans an ordered sequence of still image frames.
-It sends each frame through existing image generation tasks.
-It stores run state in the Studio Library.
-It exports an animated GIF as the minimum playable artifact.
-
-Codex Studio architecture separates Generation Task Specs from Generation Providers.
-Recipe Modules produce provider-independent specs.
-Providers compile compact inputs.
-UI surfaces collect parameters, preview state, and call backend workflow routes.
-Generated assets belong in the Studio Library, not the repo.
-
 ## Decision
 
 Add a route-lazy `animation-sequence` Recipe Module and workbench.
@@ -42,7 +26,7 @@ Frame generation uses existing provider-independent tasks:
 The backend owns run persistence, frame attachment, normalization, GIF encoding, and QA.
 The React recipe surface owns parameter collection, run selection, status display, frame job dispatch, and export commands.
 
-### Accepted architecture amendment — 2026-07-10
+### Shared workflow contracts
 
 - One provider-independent Animation Frame Handoff owns frame selection, task choice, executable references, correction input, variants, and metadata.
 - An Animation Sequence Run Coordinator outside React dispatches Persistent Jobs, records transitions, and reconciles Catalog Entries after refresh.

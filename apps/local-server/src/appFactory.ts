@@ -379,7 +379,15 @@ export async function createStudioApp(
         }),
       readGrokAvailableModels: () => readGrokRuntimeDoctorFn().availableModels,
       readCodexTransport: () =>
-        isCodexHttpCredentialReady() ? 'subscription_http' : 'codex_app_server',
+        readCodexRuntimeDoctorFn().canRunJobs
+          ? 'codex_app_server'
+          : isCodexHttpCredentialReady()
+            ? 'subscription_http'
+            : 'codex_app_server',
+      readCodexTransportAvailability: () => ({
+        codex_app_server: readCodexRuntimeDoctorFn().canRunJobs,
+        subscription_http: isCodexHttpCredentialReady(),
+      }),
       resolveProviderExecutionBlocker: async (providerId) => {
         const codexRuntime =
           providerId === 'codex'

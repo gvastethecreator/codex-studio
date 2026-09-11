@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { createGenerationProviderCapabilities } from './providerCapabilities';
 
@@ -22,6 +22,27 @@ describe('providerCapabilities', () => {
       ]),
     );
   });
+  it('keeps Codex app-server primary while exposing the signed-in HTTP route', () => {
+    const report = createGenerationProviderCapabilities({
+      settings: { defaultProviderId: 'codex' },
+      localRuntimeConfigured: { codex: true },
+      subscriptionAuthConfigured: { codex: true },
+      subscriptionAuthState: { codex: 'logged_in' },
+    });
+
+    expect(report.providers).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          providerId: 'codex',
+          runtimeKind: 'codex_app_server',
+          canExecute: true,
+          detail:
+            'Codex app-server and ChatGPT HTTP are ready. Choose the execution route per job.',
+        }),
+      ]),
+    );
+  });
+
   it('marks Codex and dry run as executable adapters', () => {
     const report = createGenerationProviderCapabilities({
       settings: { defaultProviderId: 'codex' },

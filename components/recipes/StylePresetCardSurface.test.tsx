@@ -1,6 +1,6 @@
 /** @vitest-environment jsdom */
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
-import { afterEach, describe, expect, it, vi } from 'vite-plus/test';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import type { StyleRuntimePreset } from './styles/runtimeTypes';
 import { StylePresetCard } from './StylePresetCardSurface';

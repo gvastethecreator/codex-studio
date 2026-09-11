@@ -155,6 +155,32 @@ function extractAssistantText(notifications: JsonRpcMessage[]) {
     .join('\n');
 }
 
+const CODEX_USAGE_LIMIT_ERROR_MESSAGE =
+  'Codex app-server reported no available usage for the selected model. Select GPT-Reserve to use the available Luna Reserve bucket, or wait for the regular bucket to reset.';
+
+function isCodexUsageLimitValue(value: unknown) {
+  const serialized =
+    value instanceof Error
+      ? value.message
+      : typeof value === 'string'
+        ? value
+        : (() => {
+            try {
+              return JSON.stringify(value);
+            } catch {
+              return String(value);
+            }
+          })();
+
+  return /usageLimitExceeded|(?:usage|rate)[\s_-]*(?:limit|quota)(?:[\s\S]{0,80})(?:reached|exceeded|exhausted|empty|depleted)/i.test(
+    serialized,
+  );
+}
+
+function createCodexUsageLimitError() {
+  return new Error(CODEX_USAGE_LIMIT_ERROR_MESSAGE);
+}
+
 function shouldInvalidatePersistedThread(message: string) {
   return /thread.+not found|unknown thread|invalid thread|socket closed|timed out waiting for codex notification/i.test(
     message,
@@ -202,28 +228,36 @@ async function runCodexImagegenTurn(
       invalidatePersistedThread: true,
     });
 
-  const turn = await raceWithAbort(
-    raceWithTimeout(
-      session.client.request('turn/start', {
-        threadId: session.threadId,
-        input: buildCodexImagegenTurnInput({
-          imagegenSkillPath: dependencies.imagegenSkillPath,
-          fallbackPrompt: job.prompt,
-          compiledInput: job.compiledInput ?? null,
+  let turn;
+  try {
+    turn = await raceWithAbort(
+      raceWithTimeout(
+        session.client.request('turn/start', {
+          threadId: session.threadId,
+          input: buildCodexImagegenTurnInput({
+            imagegenSkillPath: dependencies.imagegenSkillPath,
+            fallbackPrompt: job.prompt,
+            compiledInput: job.compiledInput ?? null,
+          }),
+          cwd: dependencies.resolveProcessCwd(),
+          approvalPolicy: 'never',
+          model: executionOptions.model,
+          effort: executionOptions.reasoningEffort,
+          serviceTier: executionOptions.serviceTier ?? undefined,
         }),
-        cwd: dependencies.resolveProcessCwd(),
-        approvalPolicy: 'never',
-        model: executionOptions.model,
-        effort: executionOptions.reasoningEffort,
-        serviceTier: executionOptions.serviceTier ?? undefined,
-      }),
-      dependencies.turnStartTimeoutMs,
-      'Timed out waiting for Codex notification (turn start)',
+        dependencies.turnStartTimeoutMs,
+        'Timed out waiting for Codex notification (turn start)',
+        invalidateSession,
+      ),
+      signal,
       invalidateSession,
-    ),
-    signal,
-    invalidateSession,
-  );
+    );
+  } catch (error) {
+    if (isCodexUsageLimitValue(error)) {
+      throw createCodexUsageLimitError();
+    }
+    throw error;
+  }
   turnId = turn?.turn?.id ?? null;
 
   await raceWithAbort(
@@ -240,7 +274,13 @@ async function runCodexImagegenTurn(
 
   const notifications = session.client.getNotificationsSince(notificationStart);
   for (const notification of notifications) {
-    writeFileSync(transcriptPath, `${JSON.stringify(notification)}\n`, { flag: 'a' });
+    writeFileSync(transcriptPath, `${JSON.stringify(notification)}\n`, {
+      flag: 'a',
+    });
+  }
+
+  if (notifications.some(isCodexUsageLimitValue)) {
+    throw createCodexUsageLimitError();
   }
 
   const discoveredAssets = await assetExtractor.extract(notifications, {
@@ -362,12 +402,16 @@ async function runImagegenJob(
     try {
       await run;
       if (!reusableSession) {
-        dependencies.closeSession(sessionKey, { invalidatePersistedThread: true });
+        dependencies.closeSession(sessionKey, {
+          invalidatePersistedThread: true,
+        });
       }
       return runResult;
     } catch (error) {
       if (!reusableSession) {
-        dependencies.closeSession(sessionKey, { invalidatePersistedThread: true });
+        dependencies.closeSession(sessionKey, {
+          invalidatePersistedThread: true,
+        });
       }
       lastError = error;
       if (isAbortError(error)) throw error;

@@ -53,6 +53,10 @@ export function formatCodexPlan(planType: string | null | undefined) {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
+function formatUsageBucket(usage: LocalCodexSessionResponse['usage']) {
+  return usage?.limitName?.toLowerCase() === 'gpt-reserve' ? 'Luna Reserve' : null;
+}
+
 function formatResetLabel(resetsAt: number | null | undefined, now = Date.now()) {
   if (!resetsAt) return null;
 
@@ -83,7 +87,7 @@ export function buildStudioDiagnosticsSnapshot({
     httpCoversOnboarding && !localCodexSession?.canRunLocalJobs
       ? {
           value: 'Studio Sign in',
-          detail: 'ChatGPT Sign in is ready. Local Codex CLI stays as fallback.',
+          detail: 'ChatGPT Sign in is ready for HTTP jobs. Local Codex app-server is optional.',
           tone: 'success' as const,
         }
       : !localCodexSession
@@ -155,7 +159,7 @@ export function buildStudioDiagnosticsSnapshot({
         : health?.codexCli.available === true
           ? (health.codexCli.version ?? health.codexCli.command ?? 'Codex CLI detected.')
           : httpCoversCodex
-            ? 'ChatGPT Sign in is ready. Codex CLI stays as fallback.'
+            ? 'ChatGPT Sign in is ready for HTTP jobs. Codex CLI is optional for app-server jobs.'
             : health
               ? 'Install Codex CLI or confirm it is available on your PATH before running image tasks.'
               : 'Waiting for the first runtime check from the local backend.',
@@ -175,7 +179,7 @@ export function buildStudioDiagnosticsSnapshot({
         : health?.appServer.running === true
           ? 'Running'
           : httpCoversOnboarding
-            ? 'Fallback'
+            ? 'Alternate'
             : health
               ? 'Standby'
               : 'Checking',
@@ -184,7 +188,7 @@ export function buildStudioDiagnosticsSnapshot({
         : health?.appServer.running === true
           ? health.appServer.wsUrl || 'Codex app-server websocket is live.'
           : httpCoversOnboarding
-            ? 'ChatGPT Sign in is ready. Codex Product Runtime stays as fallback.'
+            ? 'ChatGPT Sign in is ready for HTTP jobs. Start app-server to use the local route.'
             : health
               ? 'The App-Server Lifecycle will start codex app-server automatically when a generation or Local Codex Session check needs it.'
               : 'Waiting for the first runtime check from the local backend.',
@@ -204,10 +208,14 @@ export function buildStudioDiagnosticsSnapshot({
   ];
 
   const usageIsLoading = isBackendConnected && !hasFetchedDiagnostics;
+  const usageBucket = formatUsageBucket(localCodexSession?.usage ?? null);
+  const usagePlan = localCodexSession?.planType
+    ? formatCodexPlan(localCodexSession.planType)
+    : null;
   const usageMeta = !isBackendConnected
     ? 'Local backend offline'
-    : localCodexSession?.planType
-      ? formatCodexPlan(localCodexSession.planType)
+    : usagePlan
+      ? [usagePlan, usageBucket].filter(Boolean).join(' · ')
       : httpCoversOnboarding
         ? 'Studio Sign in'
         : localCodexSession?.reason === 'chatgpt_login_required'
@@ -238,7 +246,7 @@ export function buildStudioDiagnosticsSnapshot({
   const usageLimits =
     localCodexSession?.usage?.limits?.map((limit) => ({
       id: limit.id,
-      label: limit.label,
+      label: usageBucket ? `${usageBucket} · ${limit.label}` : limit.label,
       availablePercent: limit.availablePercent,
       usedPercent: limit.usedPercent,
       resetLabel: formatResetLabel(limit.resetsAt),

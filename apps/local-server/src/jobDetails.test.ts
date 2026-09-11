@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import type { Job, JobEventRecord } from '../../../packages/shared/src';
 import { buildJobMetrics, buildJobTraceSummary, parseJobTranscript } from './jobDetails';

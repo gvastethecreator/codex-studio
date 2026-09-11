@@ -18,11 +18,13 @@ import type {
 import type { AspectRatio, Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 import {
+  CODEX_HTTP_IMAGE_MODELS,
   CODEX_HTTP_MODEL,
   CODEX_HTTP_REASONING,
+  getCodexHttpImageModelOption,
   resolveCodexExecutionPolicy,
-  describeCodexExecution,
   type CodexExecutionTransport,
+  type CodexHttpImageModelOption,
 } from '../packages/shared/src/codexExecutionContract';
 
 const EMPTY_CODEX_MODELS: CodexModel[] = [];
@@ -39,6 +41,10 @@ export interface ComposerProviderProjection {
     models: CodexModel[];
     selectedModel: CodexModel | null;
     preferredModelId: string | null;
+    availableTransports: CodexExecutionTransport[];
+    selectedTransport: CodexExecutionTransport | null;
+    imageModels: CodexHttpImageModelOption[];
+    selectedImageModel: CodexHttpImageModelOption | null;
     reasoningOptions: ReturnType<typeof getCodexReasoningOptions>;
     speedOptions: ReturnType<typeof getCodexSpeedOptions>;
     summary: string;
@@ -72,9 +78,11 @@ export function buildComposerProviderProjection({
   grokDiagnostics,
   codexModelCatalog,
   codexTransport,
+  codexAvailableTransports,
   executionModel,
   executionReasoningEffort,
   executionSpeed,
+  codexImageModel,
   catalogError,
 }: {
   providerId: GenerationProviderId;
@@ -86,38 +94,83 @@ export function buildComposerProviderProjection({
   grokDiagnostics?: string[];
   codexModelCatalog: CodexModelCatalogResponse | null;
   codexTransport?: CodexExecutionTransport | null;
+  codexAvailableTransports?: readonly CodexExecutionTransport[];
   executionModel: ImageGenerationConfig['executionModel'];
   executionReasoningEffort: ImageGenerationConfig['executionReasoningEffort'];
   executionSpeed: ImageGenerationConfig['executionSpeed'];
+  codexImageModel?: ImageGenerationConfig['codexImageModel'];
   catalogError: string | null;
 }): ComposerProviderProjection {
   const kind = resolveComposerProviderKind(providerId);
+  const availableTransports = codexAvailableTransports
+    ? [...new Set(codexAvailableTransports)]
+    : codexTransport
+      ? [codexTransport]
+      : [];
+  const selectedTransport = codexTransport ?? null;
+  const transportAvailabilityKnown = codexAvailableTransports !== undefined;
+  const selectedTransportAvailable =
+    kind !== 'codex' ||
+    !selectedTransport ||
+    !transportAvailabilityKnown ||
+    availableTransports.includes(selectedTransport);
   const isHttp = kind === 'codex' && codexTransport === 'subscription_http';
   const models = isHttp ? [CODEX_HTTP_MODEL] : (codexModelCatalog?.models ?? EMPTY_CODEX_MODELS);
   const preferredModelId = pickPreferredCodexModel(models, executionModel);
-  const selectedModel = models.find((model) => model.id === executionModel) ?? null;
-  const modelLabel = formatCodexModelLabel(executionModel, selectedModel?.displayName);
+  const selectedModel = isHttp
+    ? CODEX_HTTP_MODEL
+    : (models.find((model) => model.id === executionModel) ?? null);
+  const imageModels = isHttp ? [...CODEX_HTTP_IMAGE_MODELS] : [];
+  const selectedImageModel = isHttp ? getCodexHttpImageModelOption(codexImageModel) : null;
+  const effectiveModelId = selectedModel?.id ?? executionModel;
+  const effectiveReasoningEffort = isHttp ? CODEX_HTTP_REASONING : executionReasoningEffort;
+  const effectiveSpeed = isHttp ? 'standard' : executionSpeed;
+  const modelLabel = isHttp
+    ? (selectedModel?.displayName ?? CODEX_HTTP_MODEL.displayName)
+    : formatCodexModelLabel(effectiveModelId, selectedModel?.displayName);
   const sourceMessage = buildCodexFallbackCatalogErrorMessage(codexModelCatalog) || catalogError;
   let codexBlock: GrokImagineGenerateBlock | null = null;
-  let transportSummary = codexTransport === 'codex_app_server' ? 'Codex app-server' : '';
+  let transportSummary =
+    codexTransport === 'codex_app_server'
+      ? 'Codex app'
+      : codexTransport === 'subscription_http'
+        ? 'ChatGPT'
+        : '';
   if (kind === 'codex') {
     if (!codexTransport)
       codexBlock = {
         code: 'codex_execution_checking',
         message: 'Checking the Codex execution route.',
       };
-    else if (isHttp) {
+    else if (!selectedTransportAvailable) {
+      codexBlock = {
+        code: 'codex_transport_unavailable',
+        message:
+          codexTransport === 'subscription_http'
+            ? 'ChatGPT Sign in is not ready. Sign in again in Studio Settings before generating.'
+            : 'Codex app-server is not ready. Start the local Codex runtime before generating.',
+      };
+      transportSummary =
+        codexTransport === 'subscription_http'
+          ? 'ChatGPT Sign in · unavailable'
+          : 'Codex app-server · unavailable';
+    } else if (isHttp) {
       try {
-        const policy = resolveCodexExecutionPolicy(
+        resolveCodexExecutionPolicy(
           {
-            model: executionModel,
-            reasoningEffort: executionReasoningEffort,
-            serviceTier: executionSpeed === 'standard' ? null : executionSpeed,
+            model: effectiveModelId,
+            reasoningEffort: effectiveReasoningEffort,
+            serviceTier: effectiveSpeed === 'standard' ? null : effectiveSpeed,
+            providerOptions: {
+              codex: {
+                transport: 'subscription_http',
+                imageModel: selectedImageModel?.id,
+              },
+            },
           },
           { output: { aspectRatio }, assets: attachments },
           codexTransport,
         );
-        transportSummary = describeCodexExecution(policy);
       } catch (error) {
         codexBlock = {
           code: 'codex_execution_unsupported',
@@ -157,19 +210,22 @@ export function buildComposerProviderProjection({
       models,
       selectedModel,
       preferredModelId,
+      availableTransports,
+      selectedTransport,
+      imageModels,
+      selectedImageModel,
       reasoningOptions: isHttp ? [CODEX_HTTP_REASONING] : getCodexReasoningOptions(selectedModel),
       speedOptions: isHttp ? ['standard'] : getCodexSpeedOptions(selectedModel),
       summary: [
         modelLabel,
         transportSummary,
-        !isHttp ? executionReasoningEffort?.toUpperCase() : null,
+        isHttp ? selectedImageModel?.shortName : null,
+        isHttp ? 'AUTO' : executionReasoningEffort?.toUpperCase(),
         !isHttp && executionSpeed !== 'standard' ? formatCodexSpeedLabel(executionSpeed) : null,
       ]
         .filter(Boolean)
         .join(' · '),
-      sourceMessage: isHttp
-        ? 'HTTP uses GPT-5.5 and GPT Image 2. Image quality is medium; reasoning and speed are managed by the provider.'
-        : sourceMessage,
+      sourceMessage: isHttp ? null : sourceMessage,
     },
   };
 }

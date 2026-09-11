@@ -1,6 +1,6 @@
 /** @vitest-environment jsdom */
 import { renderHook } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 
 import { useGenerationQueueController } from './useGenerationQueueController';
 

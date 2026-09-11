@@ -1,6 +1,15 @@
 import type { CodexModel, CodexServiceTier } from '../packages/shared/src';
 
-const PREFERRED_MODEL_IDS = ['gpt-5.4', 'gpt-5.4-mini', 'gpt-5.3-codex-spark'] as const;
+const PREFERRED_MODEL_IDS = [
+  'gpt-5.6-luna',
+  'gpt-6-astra',
+  'gpt-5.6-sol',
+  'gpt-5.6-terra',
+  'gpt-5.4',
+  'gpt-5.4-mini',
+  'gpt-5.5',
+  'gpt-5.3-codex-spark',
+] as const;
 const FALLBACK_REASONING_EFFORTS = ['low', 'medium', 'high'];
 const KNOWN_SPEED_TIERS: Exclude<CodexServiceTier, 'standard'>[] = ['fast', 'flex'];
 
@@ -70,6 +79,8 @@ export function normalizeCodexSpeed(
 }
 
 export function formatCodexModelLabel(modelId?: string | null, displayName?: string | null) {
+  if (modelId?.trim().toLowerCase() === 'gpt-reserve') return 'Luna Reserve';
+
   const source = (displayName || modelId || 'Default').trim();
 
   return source

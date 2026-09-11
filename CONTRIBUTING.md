@@ -1,6 +1,6 @@
 # Contributing to Codex Studio
 
-Thank you for helping make this repo clearer and easier to install.
+Use the existing Bun toolchain and keep changes small enough to review and verify.
 
 ## Quick path
 
@@ -33,12 +33,12 @@ bun run dev:ui
 ## Checklist before a pull request
 
 ```bash
-bun run fmt:check
-bun run lint
-bun run check
-bun run test
-bun run build
+bun run validate
 ```
+
+This gate runs architecture checks, format/lint/type checks, environment typechecks, tests, and builds. Do not repeat its individual commands. For release validation, use `bun run validate:release`.
+
+For focused work, use `bun run test -- path/to/test.ts`. See the [development guide](docs/DEV_GUIDE.md) for editor tasks and [tooling guide](docs/TOOLING.md) for command details. The [architecture overview](docs/ARCHITECTURE.md) describes the boundaries contributors must preserve.
 
 ## Conventions
 
@@ -69,7 +69,7 @@ Include:
 
 ## Style
 
-Prefer small changes that a reader can understand. Clarity is better than heroics.
+Prefer small changes that a reader can understand.
 
 ## Code of conduct
 

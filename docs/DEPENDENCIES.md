@@ -1,47 +1,30 @@
 # Dependencies
 
-Last verified: 2026-09-05.
+Codex Studio uses Bun as its package manager and backend runtime. `bun:sqlite` and Bun script APIs are runtime dependencies. Changing the package manager alone does not replace them.
 
-Codex Studio uses Bun 1.3.14 as package manager and runtime. This is an operational contract, not a replaceable command preference. The local API uses `bun:sqlite`. Repo scripts use Bun APIs. CI and tooling use Bun. A pnpm migration requires replacing those runtime seams first. Bun remains intentional.
+## Version sources
 
-## Current status
+- `package.json` declares dependency ranges, overrides, and the Bun baseline.
+- `bun.lock` records resolved packages.
+- `.github/workflows/ci.yml` selects the CI runtime.
+- `vitest.config.ts` owns tests. Tests import `vitest` directly; Vite+ supplies the build and check commands.
 
-- `packageManager`, docs, and CI agree on Bun 1.3.14. `@types/bun` stays on 1.3.14 with that pin.
-- Vite `8.2.2`, Oxlint `1.78.0`, Oxfmt `0.63.0`, and their overrides stay pinned together.
-- 2026-08-29 patch bumps: `hono@4.13.5`, `js-yaml@5.4.1`, `@testing-library/react@16.3.3`, `@types/react-dom@19.2.5`, `electron@43.4.1`, `vite@8.2.2`, `vitest@4.1.11`.
-- 2026-09-02 patch bump: `tsx@4.23.13`. It fixes an unbounded shared transform cache without changing the runtime contract.
+Read these files for current versions. A local run on another Bun release does not prove compatibility with the CI baseline.
 
-- 2026-09-05 security patch: `hono@4.13.7`. It fixes escaping in Hono JSX boundaries. Studio uses Hono for routing; this patch preserves its routing contract. See [the release notes](https://github.com/honojs/hono/releases/tag/v4.13.7).
+## Compatibility constraints
 
-Deferred updates:
-
-- Bun 1.4.0 and `@types/bun@1.4.1` until CI and `packageManager` move together.
-- `oxlint@1.81.0` and `oxfmt@0.66.0` until a dedicated OXC pin update.
-- `vite-plus@0.3.0` and `@vitejs/plugin-react@6.1.1` until a Vite-plus seam check.
-- Electron 44 until the development shell is proven on that major.
-- `sharp@0.35.4` until `writePngFromSvg` in the Sprite Atlas fixture path no longer hangs.
-
-Other optional type and tooling updates are deferred because no observed failure requires them. The local verification host uses Bun 1.4.0. The declared and CI baseline remains Bun 1.3.14; issue #36 owns that runtime change. Local checks do not prove CI runtime parity.
-
-## Release-note review
-
-| Area               | Current packages                                                                                                                      | Important value and migration notes                                                                                                                                             | Official source                                                                                                                                                                                                                                                                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Runtime            | `bun@1.3.14`, `@types/bun@1.3.14`                                                                                                     | Keeps the SQLite backend, Bun scripts, tests, and package resolution on one supported baseline.                                                                                 | [Bun releases](https://bun.sh/blog)                                                                                                                                                                                                                                               |
-| UI                 | `react@19.2.8`, `react-dom@19.2.8`, `@types/react@19.2.18`, `@types/react-dom@19.2.5`                                                 | React 19.2 adds Activity, effect events, performance tracks, and several Suspense fixes. This client does not need an SSR migration.                                            | [React 19.2](https://react.dev/blog/2025/10/01/react-19-2)                                                                                                                                                                                                                        |
-| Build              | `vite@8.2.2`, `@vitejs/plugin-react@6.0.5`, `vite-plus@0.2.9`                                                                         | Vite 8 uses Rolldown and Oxc. Existing chunk budgets and the production build prove the migration contract.                                                                     | [Vite 8](https://vite.dev/blog/announcing-vite8), [Vite changelog](https://github.com/vitejs/vite/blob/v8.2.2/packages/vite/CHANGELOG.md)                                                                                                                                         |
-| Types              | `typescript@7.0.2`, `@types/node@26.2.0`, `@types/jsdom@30.0.0`, `@types/file-saver@2.0.7`, `@types/three@0.185.4`                    | TypeScript 7 removes options deprecated during the 6.0 transition. All four project tsconfigs pass under the native compiler.                                                   | [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/)                                                                                                                                                                                           |
-| Quality            | `vitest@4.1.11`, `oxlint@1.78.0`, `oxfmt@0.63.0`, `@testing-library/react@16.3.3`, `jsdom@30.0.1`, `playwright@1.62.1`, `tsx@4.23.13` | The current stack supplies faster lint and format passes, Node 26 DOM coverage, bounded TSX transforms, and browser verification. Formatter output is a required gate.          | [Vitest releases](https://github.com/vitest-dev/vitest/releases), [Oxc releases](https://github.com/oxc-project/oxc/releases), [Playwright releases](https://github.com/microsoft/playwright/releases), [tsx 4.23.13](https://github.com/privatenumber/tsx/releases/tag/v4.23.13) |
-| Styling            | `tailwindcss@4.3.3`, `@tailwindcss/vite@4.3.3`, `tailwind-merge@3.6.0`, `clsx@2.1.1`                                                  | Tailwind 4.3 adds logical utilities and first-party scrollbar/zoom/tab controls. The Vite integration stays aligned with core.                                                  | [Tailwind CSS 4.3](https://tailwindcss.com/blog/tailwindcss-v4-3)                                                                                                                                                                                                                 |
-| Desktop            | `electron@43.4.1`                                                                                                                     | Electron 43 upgrades Chromium, V8, and embedded Node and improves startup. The desktop shell remains a secondary path and its build is verified separately.                     | [Electron 43](https://www.electronjs.org/blog/electron-43-0), [Electron releases](https://releases.electronjs.org/release)                                                                                                                                                        |
-| Backend            | `hono@4.13.7`, `effect@3.22.1`, `js-yaml@5.4.1`, `sharp@0.35.3`                                                                       | These packages own HTTP routing, schemas/effects, manifest parsing, and image processing. Current server build, style validation, and asset audit cover their active contracts. | [Hono releases](https://github.com/honojs/hono/releases), [Effect releases](https://github.com/Effect-TS/effect/releases), [Sharp changelog](https://sharp.pixelplumbing.com/changelog/)                                                                                          |
-| Creative runtime   | `gsap@3.15.0`, `@gsap/react@2.1.2`, `three@0.185.1`, `@tabler/icons-react@3.46.0`, `@chenglou/pretext@0.0.8`                          | GSAP remains the motion standard. Three is demand-loaded for Camera. Icon and prompt helpers remain tree-shaken. Chunk budgets guard eager regressions.                         | [GSAP releases](https://github.com/greensock/GSAP/releases), [Three.js releases](https://github.com/mrdoob/three.js/releases), [Tabler Icons releases](https://github.com/tabler/tabler-icons/releases)                                                                           |
-| Provider and files | `@fal-ai/client@1.10.1`, `file-saver@2.0.5`, `jszip@3.10.1`                                                                           | Provider execution stays behind backend adapters. ZIP is demand-loaded. Secret-bearing settings stay outside SQLite and client bundles.                                         | [fal client releases](https://github.com/fal-ai/fal-js/releases), [JSZip releases](https://github.com/Stuk/jszip/releases)                                                                                                                                                        |
+- Keep the Bun baseline, CI runtime, and `@types/bun` aligned when changing the runtime.
+- Review Vite, Vite+, the React plugin, Oxfmt, Oxlint, and matching overrides together. Do not bump one pin solely to clear an outdated-package report.
+- Verify the Electron development shell before a major Electron update.
+- Before updating Sharp, verify `writePngFromSvg` through the Sprite Atlas fixture path. A previous `sharp@0.35.4` evaluation stalled there; resolve that path before accepting the update.
+- Use a top-level override only for a demonstrated compatibility or security problem. Bun does not support nested overrides.
 
 ## Update workflow
 
-1. Run `bun outdated` and inspect official release notes before changing versions.
-2. Use `bun update` or explicit `bun add` commands. Never edit `bun.lock` manually.
-3. Keep `vite`, `oxlint`, `oxfmt`, and matching overrides aligned.
-4. Run `bun install --frozen-lockfile`, focused migration checks, then `bun run check`, `bun run test`, and `bun run build` once at integration close.
-5. Record any blocked latest version here with the exact incompatible contract and evidence.
+1. Run `bun outdated` and `bun audit`. Review official release notes for the affected packages.
+2. Identify the compatibility issue or feature that justifies each update. Keep unrelated versions unchanged.
+3. Use `bun update` or explicit `bun add` commands. Do not edit `bun.lock` manually.
+4. Run `bun install --frozen-lockfile`, then the affected migration check and `bun run validate` once at integration.
+5. Record unresolved advisories and incompatible updates with their failing command. An outdated package is not, by itself, a failed gate.
+
+See [Tooling](TOOLING.md) for the command and logging contracts.

@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { DEFAULT_GENERATION_CONFIG } from '../../constants';
 import { AnimationSequenceRecipe } from './AnimationSequenceRecipe';

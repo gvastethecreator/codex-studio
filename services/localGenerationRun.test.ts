@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 import { BatchSubmissionUncertainError, createStudioJobBatch } from './studio-api/jobs';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
@@ -114,6 +114,25 @@ describe('localGenerationRun', () => {
         DEFAULT_GENERATION_CONFIG.executionSpeed === 'standard'
           ? null
           : DEFAULT_GENERATION_CONFIG.executionSpeed,
+    });
+  });
+
+  it('uses the fixed HTTP contract while preserving app-server choices in the draft', () => {
+    expect(
+      resolveGenerationExecutionOverride('codex', {
+        ...DEFAULT_GENERATION_CONFIG,
+        codexTransport: 'subscription_http',
+        executionModel: 'gpt-5.6-luna',
+        executionReasoningEffort: 'max',
+        executionSpeed: 'fast',
+      }),
+    ).toEqual({
+      model: 'gpt-5.5',
+      reasoningEffort: 'provider_default',
+      serviceTier: null,
+      providerOptions: {
+        codex: { transport: 'subscription_http', imageModel: 'gpt-image-2.5-flare' },
+      },
     });
   });
 

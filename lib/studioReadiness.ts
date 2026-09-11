@@ -124,7 +124,7 @@ export function buildStudioReadinessSnapshot({
   const sessionDetail = sessionStatus.ok
     ? sessionStatus.detail
     : httpCoversOnboarding
-      ? 'ChatGPT Sign in is ready. Local Codex CLI stays as fallback.'
+      ? 'ChatGPT Sign in is ready for HTTP jobs. Local Codex app-server is optional.'
       : sessionStatus.detail;
   const checks: StudioReadinessCheck[] = [
     {
@@ -154,7 +154,7 @@ export function buildStudioReadinessSnapshot({
           ? health.codexCli.version || 'Codex CLI detected.'
           : 'Codex Product Runtime is ready.'
         : httpCoversCodex
-          ? 'ChatGPT Sign in is ready. Codex CLI stays as fallback.'
+          ? 'ChatGPT Sign in is ready for HTTP jobs. Codex CLI is optional for app-server jobs.'
           : health?.codexRuntime
             ? health.codexRuntime.recommendedAction
             : 'Install or restore the local Codex CLI.',
@@ -168,7 +168,7 @@ export function buildStudioReadinessSnapshot({
         health?.appServer.running && cliReady
           ? health.appServer.wsUrl || 'The app-server websocket is live.'
           : httpCoversOnboarding
-            ? 'ChatGPT Sign in is ready. Codex Product Runtime stays as fallback.'
+            ? 'ChatGPT Sign in is ready for HTTP jobs. Select app-server after completing its local setup.'
             : health?.codexRuntime && !cliReady
               ? health.codexRuntime.recommendedAction
               : 'The local app-server is not running yet.',

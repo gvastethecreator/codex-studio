@@ -1,183 +1,28 @@
-"""Regenerate the workflow map with the maintain-code-map toolkit.
+"""Refresh all four code-map artifacts with the installed source analyzer.
 
 Usage: python docs/codemap/refresh.py --tool-dir <maintain-code-map/scripts>
-The curated boundaries keep runtime flows visible instead of grouping the entire
-server into one node. Evidence is checked before all four artifacts are published.
 """
 
 import argparse
-import json
 from pathlib import Path
 import subprocess
 import sys
-from datetime import datetime, timezone
 
-parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("--tool-dir", type=Path, required=True)
-args = parser.parse_args()
-repo = Path(__file__).resolve().parents[2]
-tool = args.tool_dir.resolve() / "codemap_tool.py"
-stage = repo / "docs/codemap/.staging"
-stage.mkdir(exist_ok=True)
-generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-# id, path, type, responsibility, public entry symbol
-boundaries = [
-    ("job-history", "hooks/useJobHistory.ts", "interface", "Open jobs and filtered terminal history", "useJobHistory"),
-    ("generation-ui", "hooks/useGenerationPipeline.ts", "interface", "User generation lifecycle", "useGenerationPipeline"),
-    ("generation-run", "services/localGenerationRun.ts", "service", "Persistent generation observation and catalog results", "runLocalGeneration"),
-    ("job-client", "services/studio-api/jobs.ts", "service", "Browser job and atomic batch API", "createStudioJobBatch"),
-    ("job-routes", "apps/local-server/src/jobRoutes.ts", "interface", "Job intake, inspection and actions", "createJobRoutes"),
-    ("job-intake", "apps/local-server/src/persistentJobIntake.ts", "service", "Prepare all requests before acceptance and dispatch", "createPersistentJobIntake"),
-    ("worker", "apps/local-server/src/worker.ts", "queue", "Fair provider scheduling, execution, cancellation and recovery", "createWorkerController"),
-    ("providers", "apps/local-server/src/providers", "service", "Provider execution adapters and runtime identity", "createExternalGenerationProvider"),
-    ("jobs-db", "apps/local-server/src/db/jobs.ts", "database", "Durable jobs, batch membership, attempts and checkpoints", "updateJobStatus"),
-    ("event-bus", "apps/local-server/src/events.ts", "service", "Revisioned job and catalog events", "publishEvent"),
-    ("event-routes", "apps/local-server/src/eventStreamRoutes.ts", "interface", "Bounded SSE delivery and revision handshake", "createEventStreamRoutes"),
-    ("job-observer", "services/studioEventSource.ts", "service", "Shared event connection and job reconciliation", "watchJob"),
-    ("asset-finalizer", "apps/local-server/src/workerAssetFinalizer.ts", "service", "Resumable asset and catalog finalization", "createWorkerAssetFinalizer"),
-    ("catalog", "apps/local-server/src/catalog.ts", "database", "Library catalog truth", "registerCatalogImage"),
-    ("styles", "components/recipes/StylesBrowser.tsx", "interface", "Style browsing and selected composition", "StylesBrowser"),
-    ("style-editor", "components/recipes/useUserStyleLibrary.ts", "interface", "User style data, editor identity and mutation reconciliation", "useUserStyleLibrary"),
-    ("style-client", "services/studio-api/userStyles.ts", "service", "User style API", "createUserStylePreset"),
-    ("style-routes", "apps/local-server/src/userStyleRoutes.ts", "interface", "Persistent user style CRUD", "createUserStyleRoutes"),
-    ("shared", "packages/shared/src", "module", "Provider-independent domain and API contracts", "JobStatus"),
-    ("runtime-settings", "apps/local-server/src/providers/runtimeConfig.ts", "service", "Provider readiness, host limits and runtime diagnostics", "getExternalProviderRuntimePreflight"),
-]
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--tool-dir", type=Path, required=True)
+    args = parser.parse_args()
+    tool = args.tool_dir.resolve() / "codemap_tool.py"
+    if not tool.is_file():
+        parser.error(f"code-map tool not found: {tool}")
+    repo = Path(__file__).resolve().parents[2]
+    return subprocess.run(
+        [sys.executable, str(tool), "build", "--repo", str(repo), "--publish"],
+        cwd=repo,
+        check=False,
+    ).returncode
 
-def evidence(path, symbol):
-    return {"status": "verified", "locations": [{"path": path, "symbol": symbol}]}
 
-nodes = []
-for node_id, path, kind, boundary, symbol in boundaries:
-    source = repo / path
-    if source.is_dir():
-        candidates = sorted(source.rglob("*.ts"))
-        source = next(p for p in candidates if not p.name.endswith(".test.ts") and symbol in p.read_text(encoding="utf-8"))
-    source_path = source.relative_to(repo).as_posix()
-    tests = sorted(p.relative_to(repo).as_posix() for p in source.parent.glob(source.stem + "*.test.*"))[:3]
-    nodes.append(dict(id=node_id, path=path, type=kind, boundary=boundary,
-                      entrypoints=[source_path + ":" + symbol], tests=tests,
-                      callers=[], callees=[], evidence=evidence(source_path, symbol)))
-
-for node in nodes:
-    if node["id"] == "styles":
-        node["tests"] = ["components/recipes/styleLayerComposer.test.ts", "components/recipes/styleTabRouting.test.ts", "scripts/measure-style-workflow.ts"]
-        for source_path, symbol in [("components/recipes/useStyleBrowserNavigation.ts", "useStyleBrowserNavigation"), ("components/recipes/useStyleComposition.ts", "useStyleComposition")]:
-            node["entrypoints"].append(source_path + ":" + symbol)
-            node["evidence"]["locations"].append(dict(path=source_path, symbol=symbol))
-    if node["id"] == "style-editor":
-        node["tests"] = ["components/recipes/userStyleDraftBuilders.test.ts", "scripts/verify-style-editing.ts"]
-        node["entrypoints"].append("components/recipes/UserStyleEditorSurface.tsx:UserStyleEditorSurface")
-        node["evidence"]["locations"].append(dict(path="components/recipes/UserStyleEditorSurface.tsx", symbol="UserStyleEditorSurface"))
-        node["entrypoints"].append("components/recipes/userStyleDraftBuilders.ts:prepareUserStyleEditorSession")
-        node["evidence"]["locations"].append(dict(path="components/recipes/userStyleDraftBuilders.ts", symbol="prepareUserStyleEditorSession"))
-    if node["id"] == "shared":
-        node["entrypoints"].append("packages/shared/src/workerContracts.ts:validateWorkerLimits")
-        node["evidence"]["locations"].append(dict(path="packages/shared/src/workerContracts.ts", symbol="validateWorkerLimits"))
-        node["entrypoints"].append("packages/shared/src/codexExecutionContract.ts:resolveCodexExecutionPolicy")
-        node["evidence"]["locations"].append(dict(path="packages/shared/src/codexExecutionContract.ts", symbol="resolveCodexExecutionPolicy"))
-    if node["id"] == "generation-ui":
-        node["entrypoints"].append("components/shell/StudioViewport.tsx:StudioViewport")
-        node["evidence"]["locations"].append(dict(path="components/shell/StudioViewport.tsx", symbol="StudioViewport"))
-        node["entrypoints"].append("hooks/useStudioShell.ts:useStudioShell")
-        node["evidence"]["locations"].append(dict(path="hooks/useStudioShell.ts", symbol="useStudioShell"))
-    if node["id"] == "job-history":
-        node["entrypoints"].append("hooks/useWorkerDiagnostics.ts:useWorkerDiagnostics")
-        node["evidence"]["locations"].append(dict(path="hooks/useWorkerDiagnostics.ts", symbol="useWorkerDiagnostics"))
-        node["entrypoints"].append("components/QueuePanel.tsx:QueuePanel")
-        node["entrypoints"].append("components/QueueBatchCard.tsx:QueueBatchCard")
-        node["evidence"]["locations"].append(dict(path="components/QueueBatchCard.tsx", symbol="QueueBatchCard"))
-    if node["id"] == "job-routes":
-        node["entrypoints"].append("apps/local-server/src/jobBatchRoutes.ts:createJobBatchRoutes")
-        node["evidence"]["locations"].append(dict(path="apps/local-server/src/jobBatchRoutes.ts", symbol="createJobBatchRoutes"))
-    if node["id"] == "jobs-db":
-        node["entrypoints"].append("apps/local-server/src/db/jobBatches.ts:createJobBatch")
-        node["evidence"]["locations"].append(dict(path="apps/local-server/src/db/jobBatches.ts", symbol="createJobBatch"))
-    if node["id"] == "worker":
-        node["tests"] = ["apps/local-server/src/workerShutdown.test.ts", "apps/local-server/src/workerAssetFinalizer.test.ts", "apps/local-server/src/workerRouting.test.ts"]
-    if node["id"] == "runtime-settings":
-        for source_path, symbol in [("apps/local-server/src/config.ts", "getSettings"), ("apps/local-server/src/runtimeRoutes.ts", "createRuntimeRoutes")]:
-            node["entrypoints"].append(source_path + ":" + symbol)
-            node["evidence"]["locations"].append(dict(path=source_path, symbol=symbol))
-    if node["id"] == "providers":
-        node["tests"] = ["apps/local-server/src/providers/comfyExecutor.test.ts", "apps/local-server/src/providers/codexProvider.test.ts", "apps/local-server/src/providers/externalProvider.test.ts"]
-        for filename, symbol in [("comfyExecutor.ts", "createComfyWorkflowExecutor"), ("codexProvider.ts", "createCodexGenerationProvider")]:
-            path = "apps/local-server/src/providers/" + filename
-            node["entrypoints"].append(path + ":" + symbol)
-            node["evidence"]["locations"].append(dict(path=path, symbol=symbol))
-
-# from, to, interaction, evidence path and literal
-links = [
-    ("styles", "generation-ui", "calls", "components/recipes/useStyleComposition.ts", "onGenerate("),
-    ("job-history", "runtime-settings", "calls", "services/studio-api/runtime.ts", "/api/health"),
-    ("runtime-settings", "worker", "calls", "apps/local-server/src/runtimeRoutes.ts", "readWorkerStatus()"),
-    ("worker", "runtime-settings", "calls", "apps/local-server/src/worker.ts", "getSettingsFn().workerLimits"),
-    ("runtime-settings", "shared", "calls", "apps/local-server/src/config.ts", "validateWorkerLimits"),
-    ("job-history", "job-client", "calls", "hooks/useJobHistory.ts", "listStudioJobs"),
-    ("job-history", "job-observer", "subscribes", "hooks/useJobHistory.ts", "stream.onRevisionGap"),
-    ("generation-ui", "generation-run", "calls", "hooks/useGenerationPipeline.ts", "runLocalGenerationWithLifecycle"),
-    ("generation-run", "job-client", "calls", "services/localGenerationRun.ts", "createStudioJobBatch"),
-    ("generation-run", "job-observer", "calls", "services/localGenerationRun.ts", "watchJob"),
-    ("job-client", "job-routes", "calls", "services/studio-api/jobs.ts", "/api/jobs"),
-    ("job-routes", "job-intake", "calls", "apps/local-server/src/jobRoutes.ts", "persistentJobIntake.createJob"),
-    ("job-routes", "jobs-db", "reads", "apps/local-server/src/jobRoutes.ts", "getJob(jobId)"),
-    ("job-routes", "worker", "calls", "apps/local-server/src/jobRoutes.ts", "cancelQueuedOrRunningJob(jobId)"),
-    ("job-intake", "jobs-db", "writes", "apps/local-server/src/persistentJobIntake.ts", "const job = createJob("),
-    ("job-intake", "worker", "calls", "apps/local-server/src/persistentJobIntake.ts", "enqueueJob(job)"),
-    ("job-intake", "runtime-settings", "calls", "apps/local-server/src/persistentJobIntake.ts", "resolveProviderExecutionBlocker"),
-    ("worker", "providers", "calls", "apps/local-server/src/worker.ts", "createExternalGenerationProvider"),
-    ("providers", "worker", "calls", "apps/local-server/src/providers/comfyExecutor.ts", "job.checkpointRemoteExecution!(value)"),
-    ("worker", "jobs-db", "writes", "apps/local-server/src/worker.ts", "updateJobStatusFn"),
-    ("worker", "asset-finalizer", "calls", "apps/local-server/src/worker.ts", "assetFinalizer.finalizeJobAsset"),
-    ("worker", "event-bus", "publishes", "apps/local-server/src/worker.ts", "publishEventFn"),
-    ("asset-finalizer", "catalog", "writes", "apps/local-server/src/workerAssetFinalizer.ts", "registerCatalogImage"),
-    ("asset-finalizer", "jobs-db", "writes", "apps/local-server/src/workerAssetFinalizer.ts", "updateJobFinalization"),
-    ("asset-finalizer", "event-bus", "publishes", "apps/local-server/src/workerAssetFinalizer.ts", "publishEvent('job.completed'"),
-    ("event-routes", "event-bus", "subscribes", "apps/local-server/src/eventStreamRoutes.ts", "subscribeEvents(send)"),
-    ("job-observer", "event-routes", "subscribes", "services/studioEventSource.ts", "/api/events"),
-    ("job-observer", "job-client", "calls", "services/studioEventSource.ts", "./studio-api/jobs"),
-    ("styles", "style-editor", "calls", "components/recipes/StylesBrowser.tsx", "<UserStyleEditorSurface"),
-    ("style-editor", "style-client", "calls", "components/recipes/useUserStyleLibrary.ts", "listUserStylePresets"),
-    ("style-client", "style-routes", "calls", "services/studio-api/userStyles.ts", "/api/styles/user"),
-    ("job-routes", "shared", "imports", "apps/local-server/src/jobRoutes.ts", "packages/shared/src/types"),
-    ("job-intake", "shared", "calls", "apps/local-server/src/persistentJobIntake.ts", "resolveCodexExecutionPolicy"),
-    ("providers", "shared", "calls", "apps/local-server/src/providers/codexResponsesImageExecutor.ts", "resolveCodexExecutionPolicy"),
-]
-edges = [dict(**{"from": a, "to": b}, type=kind, evidence=evidence(path, symbol))
-         for a, b, kind, path, symbol in links]
-for edge in edges:
-    if edge["from"] == "providers" and edge["to"] == "worker":
-        edge["evidence"]["locations"].append(dict(path="apps/local-server/src/worker.ts", symbol="checkpointRemoteExecution: (checkpoint) => persistProviderCheckpoint(job, checkpoint)"))
-    if edge["from"] == "styles" and edge["to"] == "generation-ui":
-        edge["evidence"]["locations"].append(dict(path="components/RecipeRouter.tsx", symbol="onGenerate={handleGenerate}"))
-for node in nodes:
-    node["callers"] = sorted([dict(id=e["from"], type=e["type"]) for e in edges if e["to"] == node["id"]], key=lambda x: (x["id"], x["type"]))
-    node["callees"] = sorted([dict(id=e["to"], type=e["type"]) for e in edges if e["from"] == node["id"]], key=lambda x: (x["id"], x["type"]))
-
-flows = [
-    dict(id="generation", trigger="User selects style layers and generates", steps=["styles", "generation-ui", "generation-run", "job-client", "job-routes", "job-intake", "worker", "providers"], outcome="Selected fields and strengths form recipe input; every batch member is accepted before dispatch with its captured execution policy"),
-    dict(id="reconciliation", trigger="Observer attaches or recovers its connection", steps=["generation-run", "job-observer", "job-client", "job-routes", "jobs-db"], outcome="Observer reads durable job truth independently of event delivery"),
-    dict(id="job-history", trigger="User opens Queue or pages terminal history", steps=["job-history", "job-client", "job-routes", "jobs-db"], outcome="All open work remains visible beside terminal history and authoritative counts"),
-    dict(id="provider-recovery", trigger="Worker resumes a captured Comfy remote execution or asset checkpoint", steps=["worker", "providers", "worker", "asset-finalizer", "catalog"], outcome="The bound runtime reconciles the existing remote job without a second prompt; existing output is finalized into catalog truth"),
-    dict(id="user-style-edit", trigger="User opens a style draft and saves", steps=["styles", "style-editor", "style-client", "style-routes"], outcome="User style changes persist through the existing API"),
-]
-commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=repo, text=True).strip()
-model = dict(generated_at=generated_at, generated_from_commit=commit, scope=["."],
-             nodes=sorted(nodes, key=lambda n: n["id"]),
-             edges=sorted(edges, key=lambda e: (e["from"], e["to"], e["type"])), flows=flows)
-(stage / "codemap.json").write_text(json.dumps(model, indent=2) + "\n", encoding="utf-8")
-
-def run(*arguments):
-    subprocess.run([sys.executable, str(tool), *arguments], cwd=repo, check=True)
-
-for command, suffix in [("markdown", "md"), ("render", "html")]:
-    run(command, "--repo", ".", "--json", str(stage / "codemap.json"), "--output", str(stage / ("codemap." + suffix)))
-run("lock", "--repo", ".", "--scope", ".", "--exclude", "docs/codemap", "--generated-at", generated_at, "--output", str(stage / "codemap.lock"))
-for suffix in ("json", "md", "html"):
-    artifact = stage / ("codemap." + suffix)
-    formatted = subprocess.run(["vp", "fmt", "--stdin-filepath", "docs/codemap/codemap." + suffix],
-                               cwd=repo, input=artifact.read_bytes(), stdout=subprocess.PIPE, check=True)
-    artifact.write_bytes(formatted.stdout)
-run("validate", "--repo", ".", "--dir", str(stage), "--html")
-run("publish", "--repo", ".", "--staging", str(stage), "--target", "docs/codemap")
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import { STYLE_RUNTIME_PACK_SUMMARIES } from '../components/recipes/stylesData';
 import {
   chunkStyleRuntimePackIds,

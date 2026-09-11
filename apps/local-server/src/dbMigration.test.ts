@@ -1,6 +1,6 @@
 import { execFileSync } from 'node:child_process';
 import path from 'node:path';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 function resolveBunExecutable() {
   if (process.platform !== 'win32') return 'bun';

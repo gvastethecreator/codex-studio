@@ -46,6 +46,10 @@ import type {
   GenerationProviderId,
 } from '../packages/shared/src';
 import type {
+  CodexExecutionTransport,
+  CodexHttpImageModelOption,
+} from '../packages/shared/src/codexExecutionContract';
+import type {
   AspectRatio,
   Attachment,
   GenerationModel,
@@ -88,7 +92,8 @@ export interface ToolbarProps {
   isLoadingCodexModelCatalog: boolean;
   codexModelCatalogError: string | null;
   activeProviderId: GenerationProviderId;
-  codexTransport?: import('../packages/shared/src').CodexExecutionTransport;
+  codexTransport?: CodexExecutionTransport;
+  codexAvailableTransports?: readonly CodexExecutionTransport[];
   grokCanExecute?: boolean;
   grokStatus?: string;
   grokDiagnostics?: string[];
@@ -97,6 +102,26 @@ export interface ToolbarProps {
 }
 
 const ICON_SIZE = 14;
+
+const CODEX_EXECUTION_TRANSPORTS: readonly {
+  id: CodexExecutionTransport;
+  label: string;
+  detail: string;
+  accessibleLabel: string;
+}[] = [
+  {
+    id: 'codex_app_server',
+    label: 'Codex app',
+    detail: 'Local',
+    accessibleLabel: 'Codex app-server',
+  },
+  {
+    id: 'subscription_http',
+    label: 'ChatGPT',
+    detail: 'Sign in',
+    accessibleLabel: 'ChatGPT Sign in',
+  },
+];
 
 const AspectRatioIcon: React.FC<{ ratio: AspectRatio }> = ({ ratio }) => {
   const [width = 1, height = 1] = ratio.split(':').map(Number);
@@ -178,6 +203,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     codexModelCatalogError,
     activeProviderId,
     codexTransport,
+    codexAvailableTransports,
     grokCanExecute = false,
     grokStatus,
     grokDiagnostics,
@@ -216,6 +242,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const [magicInstruction, setMagicInstruction] = useState('');
     const [isRefactoring, setIsRefactoring] = useState(false);
 
+    const selectedCodexTransport = generationConfig.codexTransport ?? codexTransport;
+
     const providerChrome = useMemo(
       () =>
         buildComposerProviderProjection({
@@ -227,7 +255,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           grokStatus,
           grokDiagnostics,
           codexModelCatalog,
-          codexTransport,
+          codexTransport: selectedCodexTransport,
+          codexAvailableTransports,
+          codexImageModel: generationConfig.codexImageModel,
           executionModel: generationConfig.executionModel,
           executionReasoningEffort: generationConfig.executionReasoningEffort,
           executionSpeed: generationConfig.executionSpeed,
@@ -239,6 +269,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         codexModelCatalog,
         codexModelCatalogError,
         codexTransport,
+        codexAvailableTransports,
+        generationConfig.codexImageModel,
+        selectedCodexTransport,
         generationConfig.aspectRatio,
         generationConfig.attachments,
         generationConfig.executionModel,
@@ -260,6 +293,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const selectedExecutionModel = execution.selectedModel;
     const executionReasoningOptions = execution.reasoningOptions;
     const executionSpeedOptions = execution.speedOptions;
+    const executionImageModels = execution.imageModels;
+    const selectedExecutionImageModel = execution.selectedImageModel;
     const executionSourceMessage = execution.sourceMessage;
     const executionSummary = execution.summary;
 
@@ -267,6 +302,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     const handleSelectExecutionModel = useCallback(
       (model: CodexModel) => {
+        if (selectedCodexTransport === 'subscription_http') return;
         updateConfig('executionModel', model.id);
         updateConfig(
           'executionReasoningEffort',
@@ -274,14 +310,35 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         );
         updateConfig('executionSpeed', normalizeCodexSpeed(model, generationConfig.executionSpeed));
       },
-      [generationConfig.executionReasoningEffort, generationConfig.executionSpeed, updateConfig],
+      [
+        generationConfig.executionReasoningEffort,
+        generationConfig.executionSpeed,
+        selectedCodexTransport,
+        updateConfig,
+      ],
+    );
+
+    const handleSelectExecutionTransport = useCallback(
+      (transport: CodexExecutionTransport) => {
+        updateConfig('codexTransport', transport);
+      },
+      [updateConfig],
+    );
+
+    const handleSelectExecutionImageModel = useCallback(
+      (model: CodexHttpImageModelOption) => {
+        if (selectedCodexTransport !== 'subscription_http') return;
+        updateConfig('codexImageModel', model.id);
+      },
+      [selectedCodexTransport, updateConfig],
     );
 
     const handleSelectExecutionSpeed = useCallback(
       (speed: CodexServiceTier) => {
+        if (selectedCodexTransport === 'subscription_http') return;
         updateConfig('executionSpeed', normalizeCodexSpeed(selectedExecutionModel, speed));
       },
-      [selectedExecutionModel, updateConfig],
+      [selectedCodexTransport, selectedExecutionModel, updateConfig],
     );
 
     const closeAllMenus = useCallback(() => {
@@ -352,7 +409,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
-      onGenerate(localPrompt, { codexTransport });
+      onGenerate(localPrompt, { codexTransport: selectedCodexTransport });
 
       closeAllMenus();
       setIsNegativeOpen(false);
@@ -363,7 +420,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       generationConfig.attachments.length,
       updateConfig,
       onGenerate,
-      codexTransport,
+      selectedCodexTransport,
       closeAllMenus,
       setIsInteracting,
       interactionScope,
@@ -1102,152 +1159,281 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         placement="top-right"
                         role="dialog"
                         aria-label="Codex task execution"
-                        className="studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 w-[min(90vw,420px)] p-3"
+                        className="studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 w-[min(94vw,560px)] p-3"
                       >
-                        <div className="flex items-start justify-between gap-4 mb-3">
-                          <div>
-                            <div className="mb-1 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                              Codex Task Execution
+                        <div className="mb-3 flex items-center justify-between gap-3">
+                          <div className="min-w-0">
+                            <div className="text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                              Execution
                             </div>
-                            <div className="text-xs font-black uppercase tracking-wide text-zinc-100">
-                              {selectedExecutionModel?.displayName ||
-                                formatCodexModelLabel(generationConfig.executionModel)}
-                            </div>
-                            <div className="mt-1 max-w-[280px] text-[10px] font-bold leading-relaxed text-zinc-500">
-                              {selectedExecutionModel?.description ||
-                                'Choose the Codex model that executes the generation task, plus its thinking effort and speed tier.'}
+                            <div className="mt-1 truncate text-xs font-black uppercase tracking-wide text-zinc-100">
+                              {formatCodexModelLabel(
+                                selectedExecutionModel?.id ?? generationConfig.executionModel,
+                                selectedExecutionModel?.displayName,
+                              )}
                             </div>
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
                             {isLoadingCodexModelCatalog && (
                               <Loader2 size={12} className="animate-spin text-accent-300" />
                             )}
-                            <div className="text-[10px] font-black uppercase tracking-[0.12em] text-zinc-500">
-                              {codexTransport === 'subscription_http'
-                                ? 'HTTP contract'
+                            <div className="text-[9px] font-black uppercase tracking-[0.12em] text-zinc-500">
+                              {selectedCodexTransport === 'subscription_http'
+                                ? (selectedExecutionImageModel?.shortName ?? 'Image')
                                 : codexModelCatalog?.source === 'fallback'
-                                  ? 'Docs fallback'
+                                  ? 'Fallback'
                                   : 'Live'}
                             </div>
                           </div>
                         </div>
 
+                        <div className="grid grid-cols-[112px_minmax(0,1fr)] gap-3">
+                          <section aria-labelledby="codex-execution-provider-label">
+                            <div
+                              id="codex-execution-provider-label"
+                              className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                            >
+                              Provider
+                            </div>
+                            <div
+                              className="space-y-1.5"
+                              role="group"
+                              aria-label="Codex execution provider"
+                            >
+                              {CODEX_EXECUTION_TRANSPORTS.map((option) => {
+                                const isAvailable = codexAvailableTransports
+                                  ? codexAvailableTransports.includes(option.id)
+                                  : option.id === selectedCodexTransport;
+                                const isSelected = selectedCodexTransport === option.id;
+                                return (
+                                  <button
+                                    type="button"
+                                    key={option.id}
+                                    data-codex-transport={option.id}
+                                    aria-pressed={isSelected}
+                                    aria-label={`${option.accessibleLabel}: ${isAvailable ? 'Ready' : 'Unavailable'}`}
+                                    title={option.accessibleLabel}
+                                    disabled={!isAvailable}
+                                    onClick={() => handleSelectExecutionTransport(option.id)}
+                                    className={`flex min-h-[52px] w-full flex-col justify-between rounded-xl border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] disabled:cursor-not-allowed disabled:opacity-45 ${
+                                      isSelected
+                                        ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
+                                        : 'border-transparent bg-white/5 hover:bg-white/10'
+                                    }`}
+                                  >
+                                    <div className="flex items-center justify-between gap-2">
+                                      <div className="flex items-center gap-1.5">
+                                        {option.id === 'codex_app_server' ? (
+                                          <Monitor size={12} className="text-accent-300" />
+                                        ) : (
+                                          <Key size={12} className="text-accent-300" />
+                                        )}
+                                        <span
+                                          className={`text-[9px] font-black uppercase tracking-wide ${
+                                            isSelected ? 'text-accent-300' : 'text-zinc-200'
+                                          }`}
+                                        >
+                                          {option.label}
+                                        </span>
+                                      </div>
+                                      {isSelected && (
+                                        <Check size={11} className="text-accent-300" />
+                                      )}
+                                    </div>
+                                    <div className="mt-1 text-[7px] font-bold uppercase tracking-wide text-zinc-500">
+                                      {option.detail}
+                                    </div>
+                                    <div
+                                      className={`text-[7px] font-black uppercase tracking-wide ${
+                                        isAvailable ? 'text-emerald-300' : 'text-zinc-600'
+                                      }`}
+                                    >
+                                      {isAvailable ? 'Ready' : 'Unavailable'}
+                                    </div>
+                                  </button>
+                                );
+                              })}
+                            </div>
+                          </section>
+
+                          <section
+                            className="min-w-0 border-l border-white/2 pl-3"
+                            aria-labelledby="codex-execution-model-label"
+                          >
+                            <div
+                              id="codex-execution-model-label"
+                              className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                            >
+                              Model
+                            </div>
+                            <div className="max-h-[176px] space-y-1.5 overflow-y-auto pr-1 custom-scrollbar">
+                              {codexModels.map((model) => {
+                                const isSelected = model.id === selectedExecutionModel?.id;
+                                const modelLabel = formatCodexModelLabel(
+                                  model.id,
+                                  model.displayName,
+                                );
+                                const modelSpeedOptions = getCodexSpeedOptions(model);
+                                const modelMeta = [
+                                  model.isDefault ? 'Default' : null,
+                                  modelSpeedOptions.includes('fast') ? 'Fast' : null,
+                                  codexModelCatalog?.planType && model.id === 'gpt-5.3-codex-spark'
+                                    ? codexModelCatalog.planType
+                                    : null,
+                                ].filter(Boolean);
+                                return (
+                                  <button
+                                    type="button"
+                                    key={model.id}
+                                    data-codex-model={model.id}
+                                    aria-pressed={isSelected}
+                                    aria-label={modelLabel}
+                                    title={model.description || modelLabel}
+                                    disabled={selectedCodexTransport === 'subscription_http'}
+                                    onClick={() => handleSelectExecutionModel(model)}
+                                    className={`flex min-h-[42px] w-full items-center justify-between gap-2 rounded-lg border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] disabled:cursor-default disabled:opacity-100 ${
+                                      isSelected
+                                        ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
+                                        : 'border-transparent bg-white/5 text-zinc-400 hover:bg-white/10'
+                                    }`}
+                                  >
+                                    <span className="min-w-0 truncate text-[10px] font-black uppercase tracking-wide text-zinc-100">
+                                      {modelLabel}
+                                    </span>
+                                    <span className="flex shrink-0 items-center gap-1.5">
+                                      {modelMeta.map((meta) => (
+                                        <span
+                                          key={meta}
+                                          className="rounded-md bg-white/8 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-wide text-zinc-400"
+                                        >
+                                          {meta}
+                                        </span>
+                                      ))}
+                                      {isSelected ? (
+                                        <Check size={12} className="shrink-0 text-accent-300" />
+                                      ) : null}
+                                    </span>
+                                  </button>
+                                );
+                              })}
+                            </div>
+
+                            {selectedCodexTransport === 'subscription_http' ? (
+                              <div className="mt-3">
+                                <div className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                                  Image
+                                </div>
+                                <div className="grid grid-cols-2 gap-1.5">
+                                  {executionImageModels.map((imageModel) => {
+                                    const isSelected =
+                                      imageModel.id === selectedExecutionImageModel?.id;
+                                    return (
+                                      <button
+                                        type="button"
+                                        key={imageModel.id}
+                                        data-codex-image-model={imageModel.id}
+                                        aria-pressed={isSelected}
+                                        aria-label={imageModel.displayName}
+                                        title={imageModel.displayName}
+                                        onClick={() => handleSelectExecutionImageModel(imageModel)}
+                                        className={`flex min-h-[40px] items-center justify-between gap-2 rounded-lg border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                          isSelected
+                                            ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
+                                            : 'border-transparent bg-white/5 hover:bg-white/10'
+                                        }`}
+                                      >
+                                        <span
+                                          className={`truncate text-[9px] font-black uppercase tracking-wide ${
+                                            isSelected ? 'text-accent-300' : 'text-zinc-200'
+                                          }`}
+                                        >
+                                          {imageModel.displayName}
+                                        </span>
+                                        <span className="flex shrink-0 items-center gap-1.5">
+                                          {imageModel.lifecycle === 'previous' ? (
+                                            <span className="rounded-md bg-white/8 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-wide text-zinc-500">
+                                              Previous
+                                            </span>
+                                          ) : null}
+                                          {isSelected ? (
+                                            <Check size={12} className="shrink-0 text-accent-300" />
+                                          ) : null}
+                                        </span>
+                                      </button>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            ) : null}
+
+                            <div className="mt-3">
+                              <div className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                                Mode
+                              </div>
+                              <div className="flex flex-wrap gap-1.5">
+                                {executionReasoningOptions.map((effort) => {
+                                  const isManaged = effort === 'provider_default';
+                                  const label = isManaged ? 'Auto' : effort.toUpperCase();
+                                  return (
+                                    <button
+                                      type="button"
+                                      key={effort}
+                                      aria-label={`Reasoning: ${isManaged ? 'Managed' : effort}`}
+                                      onClick={() => {
+                                        if (
+                                          !isManaged &&
+                                          selectedCodexTransport !== 'subscription_http'
+                                        ) {
+                                          updateConfig('executionReasoningEffort', effort);
+                                        }
+                                      }}
+                                      className={`min-h-[32px] rounded-lg px-2.5 py-1.5 text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                        selectedCodexTransport === 'subscription_http' ||
+                                        generationConfig.executionReasoningEffort === effort
+                                          ? 'border border-accent-500/2 bg-gradient-to-r from-accent-700 to-accent-800 text-white'
+                                          : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                                      }`}
+                                    >
+                                      {label}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                            </div>
+
+                            <div className="mt-3">
+                              <div className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                                Speed
+                              </div>
+                              <div className="flex flex-wrap gap-1.5">
+                                {executionSpeedOptions.map((speed) => {
+                                  const isManaged = selectedCodexTransport === 'subscription_http';
+                                  return (
+                                    <button
+                                      type="button"
+                                      key={speed}
+                                      aria-label={`Speed: ${isManaged ? 'Managed' : formatCodexSpeedLabel(speed)}`}
+                                      onClick={() => handleSelectExecutionSpeed(speed)}
+                                      className={`min-h-[32px] rounded-lg px-2.5 py-1.5 text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                        isManaged || generationConfig.executionSpeed === speed
+                                          ? 'border border-accent-500/2 bg-gradient-to-r from-accent-700 to-accent-800 text-white'
+                                          : 'bg-white/5 text-zinc-400 hover:bg-white/10'
+                                      }`}
+                                    >
+                                      {isManaged ? 'Auto' : formatCodexSpeedLabel(speed)}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                            </div>
+                          </section>
+                        </div>
+
                         {executionSourceMessage && (
-                          <div className="mb-3 rounded-xl border border-amber-500/2 bg-amber-500/10 px-3 py-2 text-[8px] font-bold text-amber-200">
+                          <div className="mt-3 rounded-xl border border-amber-500/2 bg-amber-500/10 px-3 py-2 text-[8px] font-bold text-amber-200">
                             {executionSourceMessage}
                           </div>
                         )}
-
-                        <div className="mb-3">
-                          <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
-                            Available Codex Models
-                          </div>
-                          <div className="max-h-[220px] overflow-y-auto pr-1 space-y-1.5 custom-scrollbar">
-                            {codexModels.map((model) => {
-                              const isSelected = model.id === selectedExecutionModel?.id;
-                              const modelSpeedOptions = getCodexSpeedOptions(model);
-                              return (
-                                <button
-                                  type="button"
-                                  key={model.id}
-                                  onClick={() => handleSelectExecutionModel(model)}
-                                  className={`w-full text-left px-3 py-2.5 rounded-xl transition-[color,background-color,border-color,opacity,transform,box-shadow] border ${
-                                    isSelected
-                                      ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border-accent-700/2'
-                                      : 'hover:bg-white/5 text-zinc-400 border-transparent'
-                                  }`}
-                                >
-                                  <div className="flex items-center justify-between gap-3 mb-1">
-                                    <div
-                                      className={`text-[10px] font-black uppercase tracking-wide ${
-                                        isSelected ? 'text-accent-300' : 'text-zinc-200'
-                                      }`}
-                                    >
-                                      {model.displayName}
-                                    </div>
-                                    {isSelected ? (
-                                      <Check size={12} className="text-accent-300 shrink-0" />
-                                    ) : null}
-                                  </div>
-                                  <div className="text-[8px] text-zinc-500 font-bold leading-relaxed">
-                                    {model.description || 'Codex execution model'}
-                                  </div>
-                                  <div className="mt-2 flex flex-wrap gap-1.5">
-                                    {model.isDefault && (
-                                      <span className="px-1.5 py-0.5 rounded-md bg-accent-500/15 text-accent-200 text-[7px] font-black uppercase tracking-wide">
-                                        Default
-                                      </span>
-                                    )}
-                                    {modelSpeedOptions.includes('fast') && (
-                                      <span className="px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-200 text-[7px] font-black uppercase tracking-wide">
-                                        Fast
-                                      </span>
-                                    )}
-                                    {codexModelCatalog?.planType &&
-                                      model.id === 'gpt-5.3-codex-spark' && (
-                                        <span className="px-1.5 py-0.5 rounded-md bg-fuchsia-500/10 text-fuchsia-200 text-[7px] font-black uppercase tracking-wide">
-                                          {codexModelCatalog.planType}
-                                        </span>
-                                      )}
-                                  </div>
-                                </button>
-                              );
-                            })}
-                          </div>
-                        </div>
-
-                        <div className="border-t border-white/2 pt-3 mb-3">
-                          <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500 mb-2">
-                            Thinking
-                          </div>
-                          <div className="flex flex-wrap gap-2">
-                            {executionReasoningOptions.map((effort) => (
-                              <button
-                                type="button"
-                                key={effort === 'provider_default' ? 'Managed by provider' : effort}
-                                onClick={() => updateConfig('executionReasoningEffort', effort)}
-                                className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                                  generationConfig.executionReasoningEffort === effort
-                                    ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/2'
-                                    : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                                }`}
-                              >
-                                {effort === 'provider_default' ? 'Managed by provider' : effort}
-                              </button>
-                            ))}
-                          </div>
-                        </div>
-
-                        <div className="border-t border-white/2 pt-3">
-                          <div className="flex items-center justify-between gap-3 mb-2">
-                            <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
-                              Speed
-                            </div>
-                            <div className="text-[8px] font-bold text-zinc-600">
-                              {codexTransport === 'subscription_http'
-                                ? 'HTTP speed is managed by the provider.'
-                                : 'Fast mode depends on the selected model and Codex sign-in.'}
-                            </div>
-                          </div>
-                          <div className="flex flex-wrap gap-2">
-                            {executionSpeedOptions.map((speed) => (
-                              <button
-                                type="button"
-                                key={speed}
-                                onClick={() => handleSelectExecutionSpeed(speed)}
-                                className={`px-3 py-2 rounded-xl text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                                  generationConfig.executionSpeed === speed
-                                    ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white border border-accent-500/2'
-                                    : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                                }`}
-                              >
-                                {codexTransport === 'subscription_http'
-                                  ? 'Managed by provider'
-                                  : formatCodexSpeedLabel(speed)}
-                              </button>
-                            ))}
-                          </div>
-                        </div>
                       </DemandMountedGsapDropdown>
                     </div>
                   </>

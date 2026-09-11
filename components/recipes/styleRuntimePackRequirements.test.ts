@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'vite-plus/test';
+import { describe, expect, test } from 'vitest';
 import { resolveStyleRuntimePackLoadRequest } from './styleRuntimePackRequirements';
 
 const runtimePackIds = ['pack_01', 'pack_02', 'pack_03'] as const;

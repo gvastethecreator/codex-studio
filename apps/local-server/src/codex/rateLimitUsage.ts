@@ -1,10 +1,84 @@
 import type { CodexUsageLimitWindow, CodexUsageSnapshot } from '../../../../packages/shared/src';
 
+function readNumber(value: any, keys: string[]) {
+  for (const key of keys) {
+    const raw = value?.[key];
+    if (typeof raw === 'number' && Number.isFinite(raw)) return raw;
+  }
+
+  return null;
+}
+
+function readString(value: any, keys: string[]) {
+  for (const key of keys) {
+    const raw = value?.[key];
+    if (typeof raw === 'string' && raw.trim()) return raw.trim();
+  }
+
+  return null;
+}
+
+function quotaWindows(snapshot: any) {
+  return (['primary', 'secondary'] as const)
+    .map((key) => readNumber(snapshot?.[key], ['usedPercent', 'used_percent']))
+    .filter((used): used is number => used !== null);
+}
+
+function hasAvailableQuota(snapshot: any) {
+  const windows = quotaWindows(snapshot);
+  if (windows.some((used) => used < 100)) return true;
+
+  const credits = snapshot?.credits;
+  if (!credits || typeof credits !== 'object') return false;
+  if (credits.unlimited === true) return true;
+  if (typeof credits.balance === 'number') return credits.balance > 0;
+  if (typeof credits.balance === 'string') return Number(credits.balance) > 0;
+  return credits.hasCredits === true;
+}
+
+function isQuotaExhausted(snapshot: any) {
+  const windows = quotaWindows(snapshot);
+  if (windows.some((used) => used >= 100)) return true;
+
+  const credits = snapshot?.credits;
+  return Boolean(
+    windows.length === 0 &&
+    credits &&
+    typeof credits === 'object' &&
+    credits.unlimited !== true &&
+    ((typeof credits.balance === 'number' && credits.balance <= 0) ||
+      (typeof credits.balance === 'string' && Number(credits.balance) <= 0) ||
+      credits.hasCredits === false),
+  );
+}
+
+function isReserveSnapshot(limitId: string, snapshot: any) {
+  const limitName = readString(snapshot, ['limitName', 'limit_name']);
+  return limitId === 'base_model_inference' || limitName?.toLowerCase() === 'gpt-reserve';
+}
+
 export function pickRateLimitSnapshot(response: any) {
   const byLimitId = response?.rateLimitsByLimitId ?? response?.rate_limits_by_limit_id;
   if (byLimitId && typeof byLimitId === 'object') {
-    if (byLimitId.codex && typeof byLimitId.codex === 'object') {
-      return { snapshot: byLimitId.codex, path: 'rateLimitsByLimitId.codex' };
+    const regular = byLimitId.codex;
+    const reserveEntry = Object.entries(byLimitId).find(
+      ([limitId, snapshot]) =>
+        snapshot && typeof snapshot === 'object' && isReserveSnapshot(limitId, snapshot),
+    );
+
+    if (
+      reserveEntry &&
+      reserveEntry[1] &&
+      typeof reserveEntry[1] === 'object' &&
+      hasAvailableQuota(reserveEntry[1]) &&
+      (!regular || typeof regular !== 'object' || isQuotaExhausted(regular))
+    ) {
+      const [limitId, snapshot] = reserveEntry;
+      return { snapshot, path: `rateLimitsByLimitId.${limitId}` };
+    }
+
+    if (regular && typeof regular === 'object') {
+      return { snapshot: regular, path: 'rateLimitsByLimitId.codex' };
     }
 
     for (const [limitId, snapshot] of Object.entries(byLimitId)) {
@@ -23,15 +97,6 @@ export function pickRateLimitSnapshot(response: any) {
   }
 
   return { snapshot: null, path: null };
-}
-
-function readNumber(value: any, keys: string[]) {
-  for (const key of keys) {
-    const raw = value?.[key];
-    if (typeof raw === 'number' && Number.isFinite(raw)) return raw;
-  }
-
-  return null;
 }
 
 function formatQuotaWindowLabel(windowMinutes: number | null, fallback: string) {
@@ -83,6 +148,11 @@ export function extractUsageSnapshot(
 ): CodexUsageSnapshot | null {
   if (!snapshot || typeof snapshot !== 'object') return null;
 
+  const limitId = pathPrefix?.split('.').at(-1) ?? null;
+  const limitName =
+    readString(snapshot, ['limitName', 'limit_name']) ??
+    (limitId === 'base_model_inference' ? 'gpt-reserve' : null);
+
   const limits = (['primary', 'secondary'] as const)
     .map((key) => extractQuotaWindow(snapshot, key, pathPrefix))
     .filter((window): window is CodexUsageLimitWindow => window !== null);
@@ -95,6 +165,8 @@ export function extractUsageSnapshot(
       unit: 'quota_percent',
       display: `${roundedAvailable}%`,
       path: primary.path,
+      limitId,
+      limitName,
       limits,
       raw: snapshot,
     };
@@ -108,6 +180,8 @@ export function extractUsageSnapshot(
         unit: 'credits',
         display: 'Unlimited',
         path: pathPrefix ? `${pathPrefix}.credits` : 'credits',
+        limitId,
+        limitName,
         raw: credits,
       };
     }
@@ -119,6 +193,8 @@ export function extractUsageSnapshot(
         unit: 'credits',
         display: credits.balance.trim(),
         path: pathPrefix ? `${pathPrefix}.credits.balance` : 'credits.balance',
+        limitId,
+        limitName,
         raw: credits,
       };
     }
@@ -129,6 +205,8 @@ export function extractUsageSnapshot(
         unit: 'credits',
         display: '0',
         path: pathPrefix ? `${pathPrefix}.credits` : 'credits',
+        limitId,
+        limitName,
         raw: credits,
       };
     }

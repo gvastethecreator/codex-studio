@@ -108,27 +108,33 @@ const TASKS: Record<string, TaskDefinition> = {
     steps: [{ label: 'Check Fix', command: 'vp', args: ['check', '--fix'], appendExtraArgs: true }],
   },
   test: {
-    description: 'Run the full unit test suite with Vitest via Vite+.',
+    description: 'Run the full unit test suite with Vitest 5.',
     steps: [
       {
         label: 'Test',
-        command: 'vp',
-        args: ['test', 'run', '--maxWorkers', String(TEST_WORKERS)],
+        command: 'bunx',
+        args: ['vitest', 'run', '--maxWorkers', String(TEST_WORKERS)],
         appendExtraArgs: true,
       },
     ],
   },
   'test:unit': {
     description: 'Run the focused fast unit suite used in iterative refactors.',
-    steps: [{ label: 'Unit Test', command: 'vp', args: ['test', 'run', ...UNIT_TEST_FILES] }],
+    steps: [
+      {
+        label: 'Unit Test',
+        command: 'bunx',
+        args: ['vitest', 'run', ...UNIT_TEST_FILES],
+      },
+    ],
   },
   'test:coverage': {
     description: 'Run tests with coverage output.',
     steps: [
       {
         label: 'Coverage',
-        command: 'vp',
-        args: ['test', 'run', '--coverage'],
+        command: 'bunx',
+        args: ['vitest', 'run', '--coverage'],
         appendExtraArgs: true,
       },
     ],
@@ -163,7 +169,7 @@ const TASKS: Record<string, TaskDefinition> = {
   'validate:fast': {
     description: 'Fast validation loop used during refactors.',
     steps: [
-      { label: 'Focused Unit Test', command: 'vp', args: ['test', 'run', ...UNIT_TEST_FILES] },
+      { label: 'Focused Unit Test', command: 'bunx', args: ['vitest', 'run', ...UNIT_TEST_FILES] },
       { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
     ],
   },
@@ -181,7 +187,7 @@ const TASKS: Record<string, TaskDefinition> = {
         command: 'bun',
         args: ['run', 'typecheck:environments'],
       },
-      { label: 'Test', command: 'vp', args: ['test', 'run'] },
+      { label: 'Test', command: 'bunx', args: ['vitest', 'run'] },
       { label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
       {
         label: 'UI Chunk Verify',

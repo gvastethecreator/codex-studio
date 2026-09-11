@@ -1,6 +1,6 @@
 /** @vitest-environment jsdom */
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vite-plus/test';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { loadGeneratedStyleRuntimePack } from './styleRuntimeData.generated';
 import type { StyleRuntimePack } from './styles/runtimeTypes';
 import { StylePresetCatalogSearchSurface } from './StylePresetCatalogSearchSurface';

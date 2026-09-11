@@ -1,4 +1,4 @@
-import { beforeAll, describe, expect, it, vi } from 'vite-plus/test';
+import { beforeAll, describe, expect, it, vi } from 'vitest';
 
 vi.mock('../config', () => ({
   getCodexWsUrl: () => 'ws://127.0.0.1:4317',

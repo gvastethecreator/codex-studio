@@ -2,7 +2,7 @@ import { mkdtemp, mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { tmpdir } from 'node:os';
 import * as yaml from 'js-yaml';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import type {
   StylePackManifest,

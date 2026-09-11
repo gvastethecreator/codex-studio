@@ -12,6 +12,8 @@ The repository is one Bun package. Nested `apps/*` and `packages/*` folders are 
 
 ## Canonical scripts
 
+Use one validation level per integration. Each broader gate includes the narrower checks it needs; do not rerun its components separately. For one test file, use `bun run test -- path/to/test.ts`.
+
 | Script                           | Purpose                                      |
 | -------------------------------- | -------------------------------------------- |
 | `bun run validate:fast`          | Focused unit tests + server typecheck        |
@@ -43,18 +45,6 @@ bun install --frozen-lockfile
 ```
 
 Review the direct dependency diff and every changed upstream release before you accept the new lock. Use top-level overrides only for a real transitive security or compatibility gap. Bun does not support nested overrides.
-
-### 2026-08-08 security refresh
-
-All direct dependencies were already current. The lock refresh removed nine transitive advisories:
-
-| Package | Previous                 | Current                                      | Project value                                                                                                                                                                                                                                                                                             |
-| ------- | ------------------------ | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Undici  | Global `7.28.0` override | `8.10.0` for JSDOM and `7.29.0` for Electron | Removes cache disclosure, header or cookie injection, retry desynchronization, and related HTTP correctness risks. Adds HTTP/2 and retry or readable-body fixes. See [8.10.0](https://github.com/nodejs/undici/releases/tag/v8.10.0) and [7.29.0](https://github.com/nodejs/undici/releases/tag/v7.29.0). |
-| PostCSS | `8.5.15` in Vite Plus    | `8.5.26`                                     | Hardens source-map path loading, tracks symlinks, and fixes `list.split()` and BOM regressions. See [8.5.23](https://github.com/postcss/postcss/releases/tag/8.5.23) and [8.5.26](https://github.com/postcss/postcss/releases/tag/8.5.26).                                                                |
-| Nano ID | `3.3.15` in Vite Plus    | `3.3.18`                                     | Removes the negative-size infinite loop and keeps the supported PostCSS `^3.3.17` contract. See [3.3.16](https://github.com/ai/nanoid/releases/tag/3.3.16) and [3.3.18](https://github.com/ai/nanoid/releases/tag/3.3.18).                                                                                |
-
-Nano ID 6 is the newest standalone major. PostCSS consumes Nano ID 3 as a private dependency. Forcing 6 violates the PostCSS range without adding a project feature. The lock uses the newest compatible 3.x release.
 
 ## CI
 

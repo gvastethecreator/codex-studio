@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import type { StudioOverlayController } from '../components/overlays/types';
 import { hasMountedStudioOverlay } from './studioOverlayVisibility';

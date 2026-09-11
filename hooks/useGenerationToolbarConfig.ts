@@ -46,6 +46,7 @@ interface GenerationToolbarSyncContext {
 interface GenerationToolbarProviderContext {
   activeProviderId: GenerationProviderId;
   codexTransport?: ToolbarProps['codexTransport'];
+  codexAvailableTransports?: ToolbarProps['codexAvailableTransports'];
   grokCanExecute?: boolean;
   grokStatus?: string;
   grokDiagnostics?: string[];
@@ -101,6 +102,7 @@ export function buildGenerationToolbarProps({
     maxAttachments: config.maxAttachments,
     activeProviderId: provider.activeProviderId,
     codexTransport: provider.codexTransport,
+    codexAvailableTransports: provider.codexAvailableTransports,
     grokCanExecute: provider.grokCanExecute ?? false,
     grokStatus: provider.grokStatus,
     grokDiagnostics: provider.grokDiagnostics,

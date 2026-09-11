@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src';
 import { resolveEffectiveJobExecutionOptions } from './providerExecutionPolicy';
 import { resolveJobExecutionOptions } from './codex/executionOptions';

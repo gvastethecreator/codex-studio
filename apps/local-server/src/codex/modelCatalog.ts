@@ -10,7 +10,28 @@ import {
   withInitializedCodexClient,
 } from './localCodexSession';
 
+export const CODEX_RESERVE_MODEL_ID = 'gpt-reserve';
+
 const FALLBACK_MODELS: CodexModel[] = [
+  {
+    id: CODEX_RESERVE_MODEL_ID,
+    model: CODEX_RESERVE_MODEL_ID,
+    displayName: 'GPT-Reserve',
+    description: 'Reserve model exposed by the signed-in Codex account.',
+    hidden: true,
+    defaultReasoningEffort: 'medium',
+    supportedReasoningEfforts: [
+      { reasoningEffort: 'low', description: 'Lower latency' },
+      { reasoningEffort: 'medium', description: 'Balanced' },
+      { reasoningEffort: 'high', description: 'More thinking' },
+      { reasoningEffort: 'xhigh', description: 'Extra high reasoning' },
+      { reasoningEffort: 'max', description: 'Maximum reasoning' },
+    ],
+    additionalSpeedTiers: ['fast'],
+    inputModalities: ['text', 'image'],
+    supportsPersonality: true,
+    isDefault: false,
+  },
   {
     id: 'gpt-5.4-mini',
     model: 'gpt-5.4-mini',
@@ -118,6 +139,10 @@ function now() {
   return new Date().toISOString();
 }
 
+export function filterSelectableCodexModels(models: CodexModel[]) {
+  return models.filter((model) => !model.hidden || model.id === CODEX_RESERVE_MODEL_ID);
+}
+
 function normalizeSpeedTiers(value: unknown): CodexModel['additionalSpeedTiers'] {
   if (!Array.isArray(value)) return [];
   return value.filter((tier): tier is CodexModel['additionalSpeedTiers'][number] => {
@@ -171,7 +196,16 @@ function mapModel(entry: any): CodexModel | null {
 }
 
 function pickRecommendedModel(models: CodexModel[]) {
-  const preferred = ['gpt-5.4', 'gpt-5.4-mini', 'gpt-5.3-codex-spark'];
+  const preferred = [
+    'gpt-5.6-luna',
+    'gpt-6-astra',
+    'gpt-5.6-sol',
+    'gpt-5.6-terra',
+    'gpt-5.4',
+    'gpt-5.4-mini',
+    'gpt-5.5',
+    'gpt-5.3-codex-spark',
+  ];
   for (const modelId of preferred) {
     if (models.some((model) => model.id === modelId)) {
       return modelId;
@@ -206,14 +240,16 @@ function createCodexModelCatalogReader({
     try {
       return await withInitializedCodexClient({ createClient }, async (client) => {
         const [modelResponse, accountResponse] = await Promise.all([
-          client.request('model/list', { limit: 100, includeHidden: false }),
+          client.request('model/list', { limit: 100, includeHidden: true }),
           client.request('account/read', { refreshToken: false }).catch(() => null),
         ]);
 
         const models = Array.isArray((modelResponse as any)?.data)
-          ? ((modelResponse as any).data as any[])
-              .map(mapModel)
-              .filter((model): model is CodexModel => Boolean(model))
+          ? filterSelectableCodexModels(
+              ((modelResponse as any).data as any[])
+                .map(mapModel)
+                .filter((model): model is CodexModel => Boolean(model)),
+            )
           : [];
 
         const account = accountResponse?.account ?? null;

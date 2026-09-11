@@ -133,8 +133,20 @@ function sseFailureMessage(event: Record<string, unknown>, secrets: readonly str
   return 'Codex Responses rejected the image request.';
 }
 
+function isUsageLimitMessage(message: string) {
+  return /usage\s*(?:limit|quota)|rate[\s_-]*limit|usagelimitexceeded/i.test(message);
+}
+
+function createUsageLimitError(httpStatus?: number | null) {
+  return new SubscriptionHttpError(
+    'ChatGPT Sign in has no available usage for this HTTP route. Luna Reserve is available through Codex app; choose GPT-Reserve there or use separate API credits.',
+    { code: 'source_limit', fallbackAllowed: false, httpStatus },
+  );
+}
+
 function classifySseFailure(event: Record<string, unknown>, secrets: readonly string[]) {
   const message = sseFailureMessage(event, secrets);
+  if (isUsageLimitMessage(message)) return createUsageLimitError();
   const lower = message.toLowerCase();
   if (lower.includes('moderat') || lower.includes('safety')) {
     return new SubscriptionHttpError(message, {
@@ -166,6 +178,7 @@ function summarizeCodexError(body: string, secrets: readonly string[]) {
 }
 
 function classifyCodexHttpFailure(status: number, message: string): SubscriptionHttpError {
+  if (isUsageLimitMessage(message)) return createUsageLimitError(status);
   if (status === 401) {
     return new SubscriptionHttpError(message || 'ChatGPT credentials were rejected.', {
       code: 'invalid_grant',

@@ -37,17 +37,17 @@
       }
     },
     {
-      "label": "✨ fmt",
+      "label": "🧹 lint",
       "type": "shell",
-      "command": "bun run fmt",
+      "command": "bun run lint",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
     },
     {
-      "label": "🧹 lint",
+      "label": "✨ fmt",
       "type": "shell",
-      "command": "bun run lint",
+      "command": "bun run fmt",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
@@ -61,9 +61,9 @@
       "group": "test"
     },
     {
-      "label": "⚡ quick",
+      "label": "🧬 typecheck",
       "type": "shell",
-      "command": "bun run validate:fast",
+      "command": "bun run typecheck:environments",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
@@ -80,9 +80,9 @@
       }
     },
     {
-      "label": "🧬 typecheck",
+      "label": "⚡ quick",
       "type": "shell",
-      "command": "bun run typecheck:environments",
+      "command": "bun run validate:fast",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"

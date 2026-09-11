@@ -1,6 +1,6 @@
 /** @vitest-environment jsdom */
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
-import { afterEach, describe, expect, it } from 'vite-plus/test';
+import { afterEach, describe, expect, it } from 'vitest';
 
 import { DEFAULT_GENERATION_CONFIG } from '../../constants';
 import { SpritesheetRecipe } from './SpritesheetRecipe';

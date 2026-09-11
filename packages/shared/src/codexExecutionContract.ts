@@ -2,15 +2,50 @@ import type { GenerationTaskSpec } from './generationContracts';
 import type { CodexModel, JobExecutionOptions } from './types';
 
 export type CodexExecutionTransport = 'codex_app_server' | 'subscription_http';
+export type CodexHttpImageModel = 'gpt-image-2.5-flare' | 'gpt-image-2.5-sunburst' | 'gpt-image-2';
+
+export interface CodexHttpImageModelOption {
+  id: CodexHttpImageModel;
+  displayName: string;
+  shortName: string;
+  lifecycle: 'current' | 'previous';
+}
+
 export interface CodexExecutionPolicy {
   transport: CodexExecutionTransport;
-  image?: { model: string; size: string; quality: 'medium' };
+  /** Request-time image choice; the captured policy also records it in image.model. */
+  imageModel?: CodexHttpImageModel;
+  image?: { model: CodexHttpImageModel; size: string; quality: 'medium' };
 }
 
 // Studio's subscription adapter has one chat model contract. Public API model
 // support does not establish entitlement on the ChatGPT subscription endpoint.
 export const CODEX_HTTP_CHAT_MODEL = 'gpt-5.5';
-export const CODEX_HTTP_IMAGE_MODEL = 'gpt-image-2';
+// OpenAI's current default GPT Image model for everyday generation. Keep this
+// separate from the mainline chat model sent to the Responses endpoint.
+export const CODEX_HTTP_IMAGE_MODEL: CodexHttpImageModel = 'gpt-image-2.5-flare';
+export const CODEX_HTTP_IMAGE_DISPLAY_NAME = 'GPT Image 2.5 Flare';
+export const CODEX_HTTP_IMAGE_QUALITY = 'medium' as const;
+export const CODEX_HTTP_IMAGE_MODELS: readonly CodexHttpImageModelOption[] = [
+  {
+    id: 'gpt-image-2.5-flare',
+    displayName: 'GPT Image 2.5 Flare',
+    shortName: 'Flare',
+    lifecycle: 'current',
+  },
+  {
+    id: 'gpt-image-2.5-sunburst',
+    displayName: 'GPT Image 2.5 Sunburst',
+    shortName: 'Sunburst',
+    lifecycle: 'current',
+  },
+  {
+    id: 'gpt-image-2',
+    displayName: 'GPT Image 2',
+    shortName: 'GPT Image 2',
+    lifecycle: 'previous',
+  },
+];
 export const CODEX_HTTP_REASONING = 'provider_default';
 export const CODEX_HTTP_MAX_INPUT_IMAGES = 16;
 export const CODEX_HTTP_RATIO_SIZES: Record<string, string> = {
@@ -28,8 +63,8 @@ export const CODEX_HTTP_RATIO_SIZES: Record<string, string> = {
 export const CODEX_HTTP_MODEL: CodexModel = {
   id: CODEX_HTTP_CHAT_MODEL,
   model: CODEX_HTTP_CHAT_MODEL,
-  displayName: 'GPT-5.5 (HTTP)',
-  description: 'ChatGPT HTTP image generation. Reasoning and speed are managed by the provider.',
+  displayName: 'GPT-5.5',
+  description: 'ChatGPT HTTP image generation.',
   hidden: false,
   defaultReasoningEffort: CODEX_HTTP_REASONING,
   supportedReasoningEfforts: [
@@ -45,6 +80,21 @@ export const CODEX_HTTP_EXECUTION_DEFAULTS: JobExecutionOptions = {
   reasoningEffort: CODEX_HTTP_REASONING,
   serviceTier: null,
 };
+
+export function isCodexHttpImageModel(value: unknown): value is CodexHttpImageModel {
+  return CODEX_HTTP_IMAGE_MODELS.some((option) => option.id === value);
+}
+
+export function resolveCodexHttpImageModel(value?: string | null): CodexHttpImageModel {
+  return isCodexHttpImageModel(value) ? value : CODEX_HTTP_IMAGE_MODEL;
+}
+
+export function getCodexHttpImageModelOption(value?: string | null): CodexHttpImageModelOption {
+  const model = resolveCodexHttpImageModel(value);
+  return (
+    CODEX_HTTP_IMAGE_MODELS.find((option) => option.id === model) ?? CODEX_HTTP_IMAGE_MODELS[0]
+  );
+}
 
 type CodexImageOutput = Partial<Pick<GenerationTaskSpec['output'], 'imageSize' | 'aspectRatio'>>;
 export function resolveCodexHttpImageSize(output?: CodexImageOutput | null): string {
@@ -87,6 +137,11 @@ export function resolveCodexExecutionPolicy(
       throw new Error('Select a reasoning effort supported by the Codex app-server model.');
     return { transport };
   }
+  const requestedImageModel =
+    execution.providerOptions?.codex?.imageModel ?? execution.providerOptions?.codex?.image?.model;
+  if (requestedImageModel !== undefined && !isCodexHttpImageModel(requestedImageModel)) {
+    throw new Error('Codex HTTP image model is not available in the current contract.');
+  }
   if (
     execution.model !== CODEX_HTTP_CHAT_MODEL ||
     execution.reasoningEffort !== CODEX_HTTP_REASONING ||
@@ -104,9 +159,9 @@ export function resolveCodexExecutionPolicy(
   return {
     transport,
     image: {
-      model: CODEX_HTTP_IMAGE_MODEL,
+      model: requestedImageModel ?? CODEX_HTTP_IMAGE_MODEL,
       size: resolveCodexHttpImageSize(sourceSpec?.output),
-      quality: 'medium',
+      quality: CODEX_HTTP_IMAGE_QUALITY,
     },
   };
 }

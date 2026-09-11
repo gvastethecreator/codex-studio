@@ -7,6 +7,10 @@ import type {
   CreateJobRequest,
   JobBatchSummary,
 } from '../packages/shared/src';
+import {
+  CODEX_HTTP_EXECUTION_DEFAULTS,
+  resolveCodexHttpImageModel,
+} from '../packages/shared/src/codexExecutionContract';
 import { createThumbnail } from '../utils/imageUtils';
 import {
   buildGenerationVariationBrief,
@@ -152,10 +156,25 @@ export function resolveGenerationExecutionOverride(
   providerId: GenerationProviderId,
   config: Pick<
     ImageGenerationConfig,
-    'executionModel' | 'executionReasoningEffort' | 'executionSpeed' | 'codexTransport'
+    | 'executionModel'
+    | 'executionReasoningEffort'
+    | 'executionSpeed'
+    | 'codexImageModel'
+    | 'codexTransport'
   >,
 ) {
   if (providerId !== 'codex') return undefined;
+  if (config.codexTransport === 'subscription_http') {
+    return {
+      ...CODEX_HTTP_EXECUTION_DEFAULTS,
+      providerOptions: {
+        codex: {
+          transport: 'subscription_http' as const,
+          imageModel: resolveCodexHttpImageModel(config.codexImageModel),
+        },
+      },
+    };
+  }
   return {
     model: config.executionModel,
     reasoningEffort: config.executionReasoningEffort,

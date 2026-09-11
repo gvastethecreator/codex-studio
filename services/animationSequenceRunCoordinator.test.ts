@@ -1,4 +1,4 @@
-import { describe, expect, it, vi } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vitest';
 import type { AnimationSequenceRunView } from '../packages/shared/src';
 import { createAnimationSequenceRunCoordinator } from './animationSequenceRunCoordinator';
 

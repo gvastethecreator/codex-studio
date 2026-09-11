@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from 'vite-plus/test';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { Job } from '../packages/shared/src';

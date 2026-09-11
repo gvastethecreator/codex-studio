@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { STYLE_COLLECTIONS_BY_ID } from './styleCollectionDefinitions';
 import {

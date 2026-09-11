@@ -2,7 +2,7 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import { createDefaultEditableStudioSettings, type Job } from '../../../packages/shared/src';
 import { createWorkerAssetPathing, inferGeneratedAssetMimeType } from './workerAssetPathing';
 

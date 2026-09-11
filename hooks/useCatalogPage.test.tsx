@@ -1,6 +1,6 @@
 /** @vitest-environment jsdom */
 import { act, cleanup, renderHook, waitFor } from '@testing-library/react';
-import { afterEach, expect, it, vi } from 'vite-plus/test';
+import { afterEach, expect, it, vi } from 'vitest';
 import type { CatalogImage, CatalogPage } from '../packages/shared/src';
 import { useCatalogPage } from './useCatalogPage';
 import { useStudioCatalogController } from './useCatalog';

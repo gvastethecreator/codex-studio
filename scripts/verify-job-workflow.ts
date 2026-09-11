@@ -326,7 +326,7 @@ export async function verifyJobWorkflow(url: string, output: string) {
     );
     await settingsOpener.click();
     const settings = page.getByRole('dialog', { name: 'Studio Settings', exact: true });
-    await settings.getByText('ChatGPT HTTP · GPT-5.5 · GPT Image 2', { exact: true }).waitFor();
+    await settings.getByText('GPT Image 2.5 Flare · Medium · Managed', { exact: true }).waitFor();
     assert.equal(await settings.getByLabel('Provider default model', { exact: true }).count(), 0);
     assert.equal(
       await settings.getByLabel('Provider default reasoning effort', { exact: true }).count(),

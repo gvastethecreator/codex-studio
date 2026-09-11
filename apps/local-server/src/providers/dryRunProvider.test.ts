@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
 import { compileDryRunInput } from './dryRunProvider';

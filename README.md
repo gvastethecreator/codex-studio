@@ -17,7 +17,7 @@ Codex Studio is a local image studio. You create, review, and organize AI images
 
 [Project site](https://gvastethecreator.github.io/codex-studio/) · [Source and issues](https://github.com/gvastethecreator/codex-studio)
 
-The app runs on your machine. The UI is React/Vite. The API is Bun/Hono. Image jobs run through ChatGPT HTTP (`gpt-image-2`) when Studio Sign in is ready, then fall back to `codex app-server`.
+The app runs on your machine. The UI is React/Vite. The API is Bun/Hono. Each image job can use either ChatGPT HTTP (GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, or GPT Image 2 when available) or `codex app-server`; when both are ready, the Studio execution selector keeps both routes available.
 
 The main Codex path does not need `OPENAI_API_KEY`. Assets, job history, logs, and SQLite state live in your Studio Library, not in this repo.
 
@@ -41,7 +41,8 @@ You need:
 
 - Bun on `PATH`. Install it yourself from <https://bun.sh/docs/installation>. Codex Studio never silent-installs Bun.
 - Codex CLI from <https://github.com/openai/codex>
-- ChatGPT login through Studio Settings Sign in, or `codex login`. That login is not bundled.
+- Codex CLI with `codex login` for the local app-server route.
+- Optional ChatGPT subscription login through Studio Settings Sign in for the HTTP route. That login is not bundled.
 - A modern browser
 
 The first-run surface is a detect, consent, mutate, stream, re-validate loop. One primary button follows this order:

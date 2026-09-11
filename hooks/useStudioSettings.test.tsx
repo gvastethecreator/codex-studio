@@ -1,6 +1,6 @@
 /** @vitest-environment jsdom */
 import { act, cleanup, renderHook, waitFor } from '@testing-library/react';
-import { afterEach, expect, it, vi } from 'vite-plus/test';
+import { afterEach, expect, it, vi } from 'vitest';
 import { createDefaultEditableStudioSettings } from '../packages/shared/src';
 import { useStudioSettings } from './useStudioSettings';
 

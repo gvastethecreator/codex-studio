@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { createGenerationTaskSpec, type Job } from '../../../packages/shared/src';
 import { resolveWorkerRuntimeTarget } from './workerRouting';

@@ -4,21 +4,6 @@
 
 Accepted
 
-## Context
-
-Codex Studio needs an optional image provider that uses a local Grok Build login. The xAI REST API and a Studio-managed `XAI_API_KEY` are out of scope for this path.
-
-Grok Build supports headless execution and the Agent Client Protocol (ACP). ACP fits long-lived chat and editor integrations. An image Persistent Job needs a smaller contract:
-
-- a fresh session for each Job
-- exactly one allowed media tool: `image_gen` or `image_edit`
-- no shell, repository editing, memory, web search, planning, or subagents
-- cancellation through the Job `AbortSignal`
-- one complete image file before Catalog finalization
-- no automatic retry after a possibly billable media call
-
-Headless mode exposes those controls. A bounded live smoke also showed that Grok stores generated media under the fresh session, so Studio can validate the count and copy the file. ACP persists the same session updates and adds a long-lived protocol lifecycle without improving this image artifact contract.
-
 ## Decision
 
 Support Grok Imagine as an optional Generation Provider through the locally installed and authenticated Grok Build CLI.
@@ -31,6 +16,15 @@ Studio runs one bounded headless Grok process per Persistent Job. It does not:
 - require `XAI_API_KEY`
 - import an external agent skill at runtime
 - create a Grok-specific Generation Task kind
+
+Execution limits:
+
+- a fresh session for each Job
+- exactly one allowed media tool: `image_gen` or `image_edit`
+- no shell, repository editing, memory, web search, planning, or subagents
+- cancellation through the Job `AbortSignal`
+- one complete image file before Catalog finalization
+- no automatic retry after a possibly billable media call
 
 Runtime contract:
 

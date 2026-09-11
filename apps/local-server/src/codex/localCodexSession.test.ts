@@ -1,4 +1,4 @@
-import { beforeAll, describe, expect, it, vi } from 'vite-plus/test';
+import { beforeAll, describe, expect, it, vi } from 'vitest';
 
 import { extractUsageSnapshot, pickRateLimitSnapshot } from './rateLimitUsage';
 
@@ -114,6 +114,48 @@ describe('localCodexSession usage parsing', () => {
 
     expect(path).toBe('rateLimitsByLimitId.codex');
     expect(snapshot.primary.used_percent).toBe(25);
+  });
+
+  it('uses the available GPT-Reserve bucket after the regular Codex bucket is exhausted', () => {
+    const { snapshot, path } = pickRateLimitSnapshot({
+      rateLimitsByLimitId: {
+        base_model_inference: {
+          limitName: 'gpt-reserve',
+          primary: { usedPercent: 17, windowDurationMins: 10080 },
+        },
+        codex: {
+          primary: { usedPercent: 100, windowDurationMins: 10080 },
+          rateLimitReachedType: 'rate_limit_reached',
+        },
+      },
+    });
+
+    expect(path).toBe('rateLimitsByLimitId.base_model_inference');
+    expect(snapshot.limitName).toBe('gpt-reserve');
+
+    expect(extractUsageSnapshot(snapshot, path)).toMatchObject({
+      available: 83,
+      display: '83%',
+      limitId: 'base_model_inference',
+      limitName: 'gpt-reserve',
+    });
+  });
+
+  it('keeps regular Codex usage when its bucket is still available', () => {
+    const { snapshot, path } = pickRateLimitSnapshot({
+      rateLimitsByLimitId: {
+        base_model_inference: {
+          limitName: 'gpt-reserve',
+          primary: { usedPercent: 17, windowDurationMins: 10080 },
+        },
+        codex: {
+          primary: { usedPercent: 25, windowDurationMins: 300 },
+        },
+      },
+    });
+
+    expect(path).toBe('rateLimitsByLimitId.codex');
+    expect(snapshot.primary.usedPercent).toBe(25);
   });
 
   it('extracts 5h and weekly quota availability from snake_case rate limits', () => {

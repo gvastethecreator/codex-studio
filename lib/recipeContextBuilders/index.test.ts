@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import { RECIPE_CONTEXT_BUILDERS } from './index';
 import type { RegisteredRecipeId } from './shared';

@@ -166,7 +166,8 @@ Current concrete adapters:
 
 - **Codex:** the composer, Settings, intake, and adapter share `codexExecutionContract.ts`.
   Accepted jobs retain their transport, model, image size, quality, and supported options.
-  Studio's subscription HTTP adapter currently exposes `gpt-5.5`, `gpt-image-2`, medium quality,
+  Studio's subscription HTTP adapter currently exposes `gpt-5.5`, GPT Image 2.5 Flare, GPT Image 2.5
+  Sunburst, and GPT Image 2 when available, with medium quality,
   and provider-managed reasoning and speed. This is Studio's supported contract, not a claim
   about every option offered by the public API. Exact 16:9 output stays 1536x864.
   The public [image generation guide](https://developers.openai.com/api/docs/guides/image-generation)

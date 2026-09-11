@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 import { CODEX_HTTP_MODEL } from '../packages/shared/src/codexExecutionContract';
 import { buildComposerProviderProjection } from './composerProviderProjection';
 
@@ -59,37 +59,66 @@ describe('composerProviderProjection', () => {
     expect(projection.showCodexPromptTools).toBe(false);
     expect(projection.generateBlock).toMatchObject({ code: 'unsupported_grok_recipe' });
   });
-  it('requires explicit HTTP settings and previews exact output after an auth change', () => {
+  it('projects both Codex routes without overwriting the app-server settings', () => {
     const input = {
       providerId: 'codex' as const,
       codexTransport: 'subscription_http' as const,
+      codexAvailableTransports: ['codex_app_server', 'subscription_http'] as const,
       recipeId: null,
       aspectRatio: '16:9' as const,
       attachments: [],
       grokCanExecute: false,
       codexModelCatalog: null,
-      executionModel: 'gpt-5.4',
-      executionReasoningEffort: 'high',
+      executionModel: 'gpt-5.6-luna',
+      executionReasoningEffort: 'max',
       executionSpeed: 'fast' as const,
       catalogError: null,
     };
-    expect(buildComposerProviderProjection(input).generateBlock?.code).toBe(
-      'codex_execution_unsupported',
-    );
-    const ready = {
-      ...input,
-      executionModel: 'gpt-5.5',
-      executionReasoningEffort: 'provider_default',
-      executionSpeed: 'standard' as const,
-    };
-    const projection = buildComposerProviderProjection(ready);
+    const projection = buildComposerProviderProjection(input);
     expect(projection.generateBlock).toBeNull();
-    expect(projection.execution.summary).toContain('1536x864');
+    expect(projection.execution.selectedModel?.id).toBe('gpt-5.5');
+    expect(projection.execution.summary).toContain('Flare');
+    expect(projection.execution.selectedImageModel?.id).toBe('gpt-image-2.5-flare');
+    expect(projection.execution.imageModels.map((model) => model.id)).toEqual([
+      'gpt-image-2.5-flare',
+      'gpt-image-2.5-sunburst',
+      'gpt-image-2',
+    ]);
     expect(projection.execution.reasoningOptions).toEqual(['provider_default']);
     expect(projection.execution.speedOptions).toEqual(['standard']);
+    expect(projection.execution.availableTransports).toEqual([
+      'codex_app_server',
+      'subscription_http',
+    ]);
+
+    const appProjection = buildComposerProviderProjection({
+      ...input,
+      codexTransport: 'codex_app_server',
+      codexModelCatalog: {
+        models: [
+          {
+            ...CODEX_HTTP_MODEL,
+            id: 'gpt-5.6-luna',
+            displayName: 'GPT-5.6-LUNA',
+            supportedReasoningEfforts: [{ reasoningEffort: 'max', description: null }],
+            additionalSpeedTiers: ['fast'],
+          },
+        ],
+        source: 'app-server',
+        authMode: 'chatgpt',
+        fetchedAt: '2026-09-05',
+        planType: 'pro',
+        error: null,
+        recommendedDefaultModel: 'gpt-5.6-luna',
+      },
+    });
+    expect(appProjection.generateBlock).toBeNull();
+    expect(appProjection.execution.selectedModel?.id).toBe('gpt-5.6-luna');
+    expect(appProjection.execution.summary).toContain('MAX');
+
     expect(
-      buildComposerProviderProjection({ ...ready, codexTransport: 'codex_app_server' })
+      buildComposerProviderProjection({ ...input, codexAvailableTransports: ['codex_app_server'] })
         .generateBlock?.code,
-    ).toBe('codex_execution_unsupported');
+    ).toBe('codex_transport_unavailable');
   });
 });

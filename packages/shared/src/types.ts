@@ -125,6 +125,8 @@ export interface CodexUsageSnapshot {
   unit: string | null;
   display: string | null;
   path: string | null;
+  limitId?: string | null;
+  limitName?: string | null;
   limits?: CodexUsageLimitWindow[];
   raw: unknown;
 }

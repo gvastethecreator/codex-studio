@@ -144,7 +144,7 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
         facts.codexCliAvailable
           ? 'Codex CLI is on this machine.'
           : facts.codexSubscriptionReady
-            ? 'Studio Sign in is ready. Codex CLI stays as fallback.'
+            ? 'Studio Sign in is ready for HTTP image jobs. Codex CLI is optional for app-server jobs.'
             : 'Install Codex CLI, then return here.',
         null,
       ),
@@ -182,7 +182,7 @@ export function buildOnboardingProbe(facts: OnboardingFacts): OnboardingProbe {
         facts.appServerReady
           ? 'codex app-server is running.'
           : facts.codexSubscriptionReady
-            ? 'Studio Sign in is ready. Codex Product Runtime stays as fallback.'
+            ? 'Studio Sign in is ready for HTTP image jobs. Codex app-server is optional for local jobs.'
             : 'Start app-server after Codex CLI and ChatGPT login are ready.',
         null,
       ),

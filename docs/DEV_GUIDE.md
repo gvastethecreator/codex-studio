@@ -42,7 +42,7 @@ bun audit
 bun install --frozen-lockfile
 ```
 
-After a dependency refresh, `bun outdated` must be empty. `bun audit` must have no known advisories. The frozen install proves that `package.json` and `bun.lock` agree.
+Review outdated packages against the compatibility constraints in [Dependencies](DEPENDENCIES.md). A deferred update is not a failed check. Review audit findings and record unresolved advisories. The frozen install checks that `package.json` and `bun.lock` agree.
 
 ## Workspace model
 

@@ -211,17 +211,27 @@ export function createCodexRuntimePreflight(
   const unavailable = codexRuntime.issues.some((issue) => issue.code === 'codex_cli_unavailable');
   const httpReady = options.httpReady ?? safeCodexHttpReady();
   const cliReady = codexRuntime.canRunJobs;
+  const availableRuntimeKinds = [
+    ...(cliReady ? (['codex_app_server'] as const) : []),
+    ...(httpReady ? (['subscription_http'] as const) : []),
+  ];
   const diagnostics: string[] = [];
+  if (cliReady) diagnostics.push('Codex app-server is ready. Live Codex models are available.');
   if (httpReady)
     diagnostics.push('ChatGPT HTTP is ready. Each job keeps its accepted execution route.');
   if (codexRuntime.issues.length > 0) {
     diagnostics.push(...codexRuntime.issues.map((issue) => `${issue.message} ${issue.action}`));
-  } else if (!httpReady) {
+  } else if (!cliReady && !httpReady) {
     diagnostics.push(codexRuntime.recommendedAction);
   }
   return {
     providerId: 'codex',
-    runtimeKind: httpReady ? 'subscription_http' : 'codex_app_server',
+    runtimeKind: cliReady
+      ? 'codex_app_server'
+      : httpReady
+        ? 'subscription_http'
+        : 'codex_app_server',
+    availableRuntimeKinds,
     secretState: 'not_required',
     secretSource: null,
     localRuntimeState: cliReady ? 'configured' : unavailable ? 'missing' : 'invalid',

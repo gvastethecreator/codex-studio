@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync, statSync } from 'node:fs';
 import path from 'node:path';
 import { resolveUserHome } from './platformHome';
 
@@ -19,6 +19,29 @@ function firstExisting(paths: string[], fallback: string) {
 export interface PlatformPathCandidate {
   path: string;
   source: string;
+}
+
+function windowsOpenAiRuntimeCandidates(localAppData: string): PlatformPathCandidate[] {
+  const runtimeRoot = path.join(localAppData, 'OpenAI', 'Codex', 'bin');
+  try {
+    return readdirSync(runtimeRoot, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => path.join(runtimeRoot, entry.name, 'codex.exe'))
+      .filter((candidate) => existsSync(candidate))
+      .toSorted((left, right) => {
+        try {
+          return statSync(right).mtimeMs - statSync(left).mtimeMs;
+        } catch {
+          return 0;
+        }
+      })
+      .map((candidate) => ({
+        path: candidate,
+        source: 'OpenAI desktop runtime',
+      }));
+  } catch {
+    return [];
+  }
 }
 
 function windowsCodexBinaryCandidates() {
@@ -48,6 +71,7 @@ function windowsCodexBinaryCandidates() {
     ...(process.env.STUDIO_CODEX_CLI_PATH
       ? [{ path: process.env.STUDIO_CODEX_CLI_PATH, source: 'STUDIO_CODEX_CLI_PATH' }]
       : []),
+    ...windowsOpenAiRuntimeCandidates(localAppData),
     ...(process.env.CODEX_CLI_PATH
       ? [{ path: process.env.CODEX_CLI_PATH, source: 'CODEX_CLI_PATH' }]
       : []),

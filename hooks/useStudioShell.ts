@@ -44,6 +44,7 @@ import {
 } from '../lib/buildStudioPageController';
 import { resolveStudioCarouselImage } from '../lib/studioCarouselImage';
 import type { LogEntry } from '../types';
+import type { CodexExecutionTransport } from '../packages/shared/src/codexExecutionContract';
 
 const EMPTY_RUNTIME_LOGS: LogEntry[] = [];
 
@@ -626,6 +627,31 @@ export function useStudioShell(): StudioShellController {
     ],
   );
 
+  const codexAvailableTransports = useMemo<readonly CodexExecutionTransport[] | undefined>(() => {
+    const preflight = studioSettings.data.providerDomain.runtimePreflight?.providers.find(
+      (provider) => provider.providerId === 'codex',
+    );
+    if (!preflight?.availableRuntimeKinds) return undefined;
+    return preflight.availableRuntimeKinds.filter(
+      (runtimeKind): runtimeKind is CodexExecutionTransport =>
+        runtimeKind === 'codex_app_server' || runtimeKind === 'subscription_http',
+    );
+  }, [studioSettings.data.providerDomain.runtimePreflight]);
+
+  const codexDefaultTransport: CodexExecutionTransport | undefined =
+    codexAvailableTransports?.includes('codex_app_server')
+      ? 'codex_app_server'
+      : (codexAvailableTransports?.[0] ??
+        (studioSettings.data.providerDomain.capabilities?.providers.find(
+          (provider) => provider.providerId === 'codex',
+        )?.runtimeKind === 'subscription_http'
+          ? 'subscription_http'
+          : studioSettings.data.providerDomain.capabilities?.providers.some(
+                (provider) => provider.providerId === 'codex',
+              )
+            ? 'codex_app_server'
+            : undefined));
+
   const toolbarArgs = useMemo<GenerationToolbarRuntimeArgs>(
     () => ({
       actions: {
@@ -650,16 +676,8 @@ export function useStudioShell(): StudioShellController {
       },
       provider: {
         activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
-        codexTransport:
-          studioSettings.data.providerDomain.capabilities?.providers.find(
-            (provider) => provider.providerId === 'codex',
-          )?.runtimeKind === 'subscription_http'
-            ? 'subscription_http'
-            : studioSettings.data.providerDomain.capabilities?.providers.some(
-                  (provider) => provider.providerId === 'codex',
-                )
-              ? 'codex_app_server'
-              : undefined,
+        codexTransport: codexDefaultTransport,
+        codexAvailableTransports,
         grokCanExecute: resolveGrokCanExecute({
           canExecute: studioSettings.data.providerDomain.capabilities?.providers.find(
             (provider) => provider.providerId === 'grok',
@@ -692,6 +710,8 @@ export function useStudioShell(): StudioShellController {
       studioSettings.data.settingsDomain.settings?.defaultProviderId,
       studioSettings.data.providerDomain.capabilities,
       studioSettings.data.providerDomain.runtimePreflight,
+      codexAvailableTransports,
+      codexDefaultTransport,
     ],
   );
 

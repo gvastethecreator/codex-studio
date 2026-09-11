@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 describe('migrateDatabase', () => {
   it('creates composite catalog indexes for hot workspace and gallery queries', () => {

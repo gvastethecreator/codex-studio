@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it } from 'vitest';
 
 import {
   STYLE_GRID_WINDOW_TARGET_PRESET_COUNT,
