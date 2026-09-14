@@ -106,7 +106,7 @@ export interface BuildStudioPageControllerArgs {
   operations: StudioPageOperationsContext;
 }
 
-const ACTIVE_SERVER_JOB_STATUSES = new Set<JobStatus>(['queued', 'running', 'needs_review']);
+const ACTIVE_SERVER_JOB_STATUSES = new Set<JobStatus>(['queued', 'running']);
 
 function createdAtMs(value: string | number) {
   return typeof value === 'number' ? value : Date.parse(value) || Date.now();

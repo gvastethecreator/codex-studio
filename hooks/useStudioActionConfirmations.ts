@@ -133,13 +133,13 @@ export function useStudioActionConfirmations({
     (groupCount: number) => {
       requestConfirmation(
         {
-          title: 'Permanently empty Archived Images',
+          title: 'Permanently empty trash',
           description:
             'This permanently removes archived catalog image groups from the in-app archive and they will no longer be recoverable from the Studio UI.',
-          confirmLabel: 'Empty bin',
+          confirmLabel: 'Empty trash',
           tone: 'danger',
           details: [
-            `${groupCount} archived image group${groupCount === 1 ? '' : 's'} will be purged.`,
+            `${groupCount} archived image group${groupCount === 1 ? '' : 's'} will be permanently deleted.`,
             'This action cannot be undone from the Studio interface.',
           ],
         },

@@ -115,6 +115,10 @@ describe('buildStudioPageController', () => {
         studioJobs: [
           toShellActivityJob(runningJob, 'backend_event'),
           toShellActivityJob({ ...runningJob, id: 'done-1', status: 'completed' }, 'backend_event'),
+          toShellActivityJob(
+            { ...runningJob, id: 'review-1', status: 'needs_review' },
+            'backend_event',
+          ),
         ],
       }),
     ).toEqual([

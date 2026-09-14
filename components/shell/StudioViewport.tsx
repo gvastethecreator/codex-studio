@@ -4,7 +4,8 @@ import type { AppPageView } from '../../hooks/useHashRouter';
 import type { StudioPageController } from '../../lib/buildStudioPageController';
 import type { RecipeAliasId } from '../../lib/recipeAliases';
 import type { RecipeId } from '../../types';
-import { useGenerationDraft } from '../../contexts/GenerationContext';
+import { useWorkspaceState } from '../../contexts/GlobalContext';
+import { useGenerationChrome, useGenerationDraft } from '../../contexts/GenerationContext';
 import { ErrorBoundary } from '../ErrorBoundary';
 import type { RecipePageProps, RecipePageRuntimeProps } from '../RecipePage';
 import { preloadRecipeComponent } from '../../lib/recipeRouteModules';
@@ -64,9 +65,14 @@ function ConnectedRecipePage({
   ...runtimeProps
 }: ConnectedRecipePageProps) {
   const draft = useGenerationDraft();
+  const chrome = useGenerationChrome();
+  const { activeWorkspaceId } = useWorkspaceState();
+  if (!draft.isDraftReady || chrome.recipe.activeRecipe !== activeRecipe)
+    return <LazySurfaceFallback label="Loading recipe draft" />;
 
   return (
     <Component
+      key={`${activeWorkspaceId}:${activeRecipe}`}
       {...runtimeProps}
       activeRecipe={activeRecipe}
       activeRecipeAliasId={activeRecipeAliasId}

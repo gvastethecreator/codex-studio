@@ -48,10 +48,9 @@ describe('buildStudioCommandCenterProjection', () => {
           tone: 'success',
         },
       ],
-      queueResultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
       activeJobCount: 3,
+      reviewJobCount: 614,
       isQueueOpen: false,
-      isGenerating: true,
     });
 
     expect(projection.compactMode).toBe(true);
@@ -71,11 +70,9 @@ describe('buildStudioCommandCenterProjection', () => {
       }),
     );
     expect(projection.queue).toEqual({
-      count: 3,
+      activeCount: 3,
+      reviewCount: 614,
       isOpen: false,
-      resultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
-      hasResultPreviews: true,
-      showCollapsedProgress: true,
     });
   });
 
@@ -116,16 +113,15 @@ describe('buildStudioCommandCenterProjection', () => {
         ],
       },
       statusItems: [],
-      queueResultPreviews: [],
       activeJobCount: 0,
+      reviewJobCount: 614,
       isQueueOpen: true,
-      isGenerating: true,
     });
 
     expect(projection.provider.tone).toBe('danger');
     expect(projection.provider.canExecute).toBe(false);
     expect(projection.provider.tooltip).toContain('Runtime endpoint is missing.');
-    expect(projection.queue.showCollapsedProgress).toBe(false);
+    expect(projection.queue).toEqual({ activeCount: 0, reviewCount: 614, isOpen: true });
   });
 
   it('names the Grok login action when the local CLI is blocked', () => {
@@ -165,10 +161,9 @@ describe('buildStudioCommandCenterProjection', () => {
         ],
       },
       statusItems: [],
-      queueResultPreviews: [],
       activeJobCount: 0,
+      reviewJobCount: 614,
       isQueueOpen: false,
-      isGenerating: false,
     });
 
     expect(projection.provider).toMatchObject({
@@ -281,10 +276,9 @@ describe('buildStudioCommandCenterProjection', () => {
         ],
       },
       statusItems: [],
-      queueResultPreviews: [],
       activeJobCount: 0,
+      reviewJobCount: 614,
       isQueueOpen: false,
-      isGenerating: false,
     });
 
     expect(projection.providerOptions).toEqual([

@@ -1,4 +1,5 @@
 import React from 'react';
+import { RecipeControls } from './RecipeWorkbenchContext';
 
 interface RecipeLayoutProps {
   isGenerating: boolean;
@@ -13,7 +14,7 @@ export const RecipeLayout: React.FC<RecipeLayoutProps> = ({
   isGenerating,
   children,
   bottomDock,
-  className = 'p-6 pb-32 flex items-center justify-center',
+  className = 'p-6 flex items-center justify-center',
 }) => {
   return (
     <div
@@ -27,11 +28,9 @@ export const RecipeLayout: React.FC<RecipeLayoutProps> = ({
 
       {/* Universal Bottom Dock */}
       {bottomDock && (
-        <div className="recipe-layout-dock-enter recipe-module-bottom-dock absolute bottom-0 left-0 w-full z-40 transition-[opacity,transform] duration-200 ease-out">
-          <div className="custom-scrollbar w-full max-w-[1920px] mx-auto px-3 py-2 sm:px-4 flex flex-nowrap sm:flex-wrap items-center justify-start sm:justify-center gap-2 sm:gap-4">
-            {bottomDock}
-          </div>
-        </div>
+        <RecipeControls>
+          <div className="recipe-parameters">{bottomDock}</div>
+        </RecipeControls>
       )}
     </div>
   );

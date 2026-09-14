@@ -718,3 +718,577 @@ react-scan-overlay,
     margin-bottom: 1.5rem;
   }
 }
+
+/* Creation workspace: one canvas and one configuration rail. */
+.studio-experience {
+  background: #111214;
+  font-size: 14px;
+}
+.studio-experience :focus-visible {
+  outline: 2px solid rgb(var(--accent-400));
+  outline-offset: 3px;
+}
+.studio-experience [class*='text-[7px]'],
+.studio-experience [class*='text-[8px]'],
+.studio-experience [class*='text-[9px]'],
+.studio-experience [class*='text-[10px]'] {
+  font-size: 12px;
+  letter-spacing: normal;
+  text-transform: none;
+  font-weight: 500;
+}
+.workbench-config {
+  width: 360px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  background: #191a1d;
+  border-left: 1px solid #ffffff12;
+  padding: 16px;
+}
+.workbench-tabs {
+  display: none;
+}
+.recipe-controls {
+  margin-bottom: 20px;
+}
+.recipe-parameters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.recipe-parameters > * {
+  width: 100%;
+  max-width: 100%;
+}
+.recipe-layout-content {
+  min-height: 0;
+}
+:is(.workbench-config, .create-studio) [data-toolbar-mode] > .relative {
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  gap: 12px;
+}
+:is(.workbench-config, .create-studio) [data-toolbar-mode] > .absolute {
+  display: none;
+}
+:is(.workbench-config, .create-studio) [data-toolbar-mode] > .relative > * {
+  width: 100%;
+}
+:is(.workbench-config, .create-studio) [data-toolbar-mode] textarea {
+  min-height: 112px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+:is(.workbench-config, .create-studio) [data-toolbar-mode] .sm\:flex-row {
+  flex-wrap: wrap;
+}
+:is(.workbench-config, .create-studio) [data-toolbar-mode] button {
+  min-height: 32px;
+}
+:is(.workbench-config, .create-studio) [data-toolbar-mode] [role='menu'],
+:is(.workbench-config, .create-studio) [data-toolbar-mode] .absolute.z-\[100\] {
+  max-width: 320px;
+}
+.styles-workbench [data-style-reference-panel],
+.styles-workbench [data-style-reference-panel-rail] {
+  display: none;
+}
+.styles-workbench [data-style-browser-root][hidden] {
+  display: none;
+}
+.styles-workbench [data-style-browser-root] > .xl\:hidden {
+  display: none;
+}
+.styles-result-area {
+  width: 100%;
+  height: 100%;
+  padding-top: 52px;
+}
+.style-explorer-toggle {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  z-index: 45;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #303239;
+  color: white;
+}
+.styles-workbench [data-style-browser-root] {
+  padding-top: 52px;
+}
+.workbench-config [data-style-slots-panel] {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+.workbench-config [data-style-slots-panel-toggle] {
+  display: none;
+}
+.workbench-config [data-style-slots-panel] .opacity-0 {
+  opacity: 1;
+}
+[hidden][data-style-generate-button] {
+  display: none;
+}
+.recipe-result {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  padding: 16px 24px;
+  gap: 16px;
+}
+.recipe-result-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #b3b6bf;
+}
+.recipe-result-heading button {
+  padding: 6px 10px;
+  background: #ffffff0a;
+  border-radius: 6px;
+}
+.recipe-result-image {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #b3b6bf;
+}
+.recipe-result-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+}
+.recipe-result-image h2 {
+  font-size: 22px;
+  color: #f4f4f5;
+  margin-bottom: 10px;
+}
+.recipe-result-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  flex-shrink: 0;
+  padding: 4px;
+}
+.recipe-result-strip button {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.recipe-result-strip button[aria-pressed='true'] {
+  outline: 2px solid rgb(var(--accent-400));
+}
+.recipe-result-strip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1023px) {
+  .workbench-tabs {
+    display: flex;
+    gap: 8px;
+    padding: 8px 12px;
+    background: #191a1d;
+  }
+  .workbench-tabs button {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  .workbench-tabs [aria-selected='true'] {
+    background: #ffffff12;
+  }
+  [data-workbench='recipe'][data-workbench-tab='result'] > .workbench-config {
+    display: none;
+  }
+  [data-workbench='recipe'][data-workbench-tab='configure'] > .workbench-canvas {
+    display: none;
+  }
+  .workbench-config {
+    width: 100%;
+  }
+}
+
+.recipe-layout-content > :has(> [data-recipe-stage]) {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+[data-recipe-stage] {
+  flex: 1;
+  width: 100%;
+  min-height: 0 !important;
+}
+.workbench-config .recipe-controls > aside {
+  width: 100%;
+  min-height: 0;
+  max-height: none;
+}
+.workbench-config .recipe-controls > aside > .overflow-y-auto {
+  overflow: visible;
+}
+
+:is(.workbench-config, .create-studio) [data-composer-input] {
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 8px;
+}
+:is(.workbench-config, .create-studio) [data-composer-input] [aria-label^='Active recipe:'] {
+  display: none;
+}
+:is(.workbench-config, .create-studio) [data-composer-input] textarea {
+  flex: 1 0 100%;
+  width: 100%;
+  order: -1;
+}
+.workbench-config [data-style-needs-selection='true']::after {
+  content: 'Choose at least one style to generate.';
+  color: #a1a1aa;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.workbench-config [data-task-context] {
+  flex-basis: 100%;
+}
+
+[hidden][data-recipe-stage] {
+  display: none !important;
+}
+.character-result-area {
+  height: 100%;
+  padding-top: 48px;
+}
+.character-lab-shell [data-recipe-stage] {
+  padding-top: 48px;
+}
+.workbench-config .character-lab-panel {
+  min-height: 0 !important;
+}
+.workbench-config [data-panel='right'] .grid:has(> .grid > .relative) {
+  max-width: 100%;
+}
+
+.studio-experience [data-animation-workbench],
+.studio-experience div:has(> [data-recipe-stage]) {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+.studio-experience div:has(> .character-result-area) {
+  min-height: 0 !important;
+  height: 100% !important;
+}
+.workbench-config .recipe-controls {
+  flex-shrink: 0;
+}
+
+.workbench-config {
+  display: flex;
+  flex-direction: column;
+}
+.workbench-config > footer {
+  margin-top: auto;
+}
+.workbench-config textarea::placeholder {
+  color: #9b9da5;
+}
+.workbench-config .text-zinc-600 {
+  color: #a1a1aa;
+}
+
+.workbench-config {
+  overflow: hidden;
+}
+.workbench-config > div:first-child {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.workbench-config > footer {
+  flex-shrink: 0;
+  padding-top: 12px;
+}
+.recipe-controls h2 {
+  text-transform: none;
+  font-size: 16px;
+  letter-spacing: normal;
+}
+
+.recipe-draft-settings > summary {
+  padding: 12px;
+  cursor: pointer;
+  color: #d4d4d8;
+  font-size: 14px;
+}
+.studio-experience .text-zinc-500,
+.studio-experience .text-zinc-600 {
+  color: #a1a1aa;
+}
+.workbench-config .recipe-controls > aside {
+  min-height: 0 !important;
+}
+
+:is(.workbench-config, .create-studio) button[aria-label^='Generation model:'] > span {
+  display: inline;
+}
+:is(.workbench-config, .create-studio)
+  button[aria-label^='Codex task execution:']
+  > span:last-child {
+  display: inline;
+}
+:is(.workbench-config, .create-studio)
+  button[aria-label^='Codex task execution:']
+  > span:not(:last-child) {
+  display: none;
+}
+:is(.workbench-config, .create-studio) button[aria-label^='Codex task execution:'] {
+  height: auto;
+  white-space: normal;
+  text-align: left;
+}
+
+.recipe-parameters > .w-px {
+  display: none;
+}
+.recipe-parameters > .flex-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.recipe-parameters button[aria-haspopup='listbox'] {
+  min-width: 0;
+  width: 100%;
+  padding: 10px;
+  gap: 6px;
+}
+.recipe-parameters > .flex-wrap > * {
+  min-width: 0;
+}
+.workbench-config {
+  overflow-x: clip;
+}
+
+:is(.workbench-config, .create-studio) [data-composer-input] textarea {
+  min-height: 80px !important;
+  max-height: 160px;
+}
+.reference-tray {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.reference-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-width: 200px;
+  padding: 6px;
+  background: #ffffff06;
+  border-radius: 8px;
+  font-size: 12px;
+}
+.reference-item > button {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.reference-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+:is(.workbench-config, .create-studio) .reference-tray {
+  flex-basis: 100%;
+  max-height: 144px;
+  overflow-y: auto;
+  flex-direction: column;
+}
+.reference-item label:focus-within {
+  outline: 2px solid rgb(var(--accent-400));
+  outline-offset: 2px;
+}
+
+.recipe-primary-action:empty {
+  display: none;
+}
+.recipe-primary-action {
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+
+.workbench-config [data-selected-style-slot] p {
+  display: none;
+}
+.workbench-config [data-style-slots-panel] > .grid {
+  grid-template-columns: 1fr;
+}
+
+.styles-workbench [data-style-landing-navigation-rail] {
+  display: none;
+}
+.styles-workbench div:has(> [data-style-landing-navigation-rail]) {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.workbench-canvas {
+  --studio-chrome-block: 160px;
+}
+@media (max-width: 1023px) {
+  .workbench-canvas {
+    --studio-chrome-block: 208px;
+  }
+}
+
+/* Create pairs the freeform workspace with the recipe catalog. */
+.create-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 38%);
+  gap: 12px;
+  width: 100%;
+  min-height: 0;
+  padding: 12px;
+}
+.create-studio {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #141517;
+  border-radius: 16px;
+}
+.create-recipes {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #191a1d;
+  border-radius: 16px;
+}
+.create-studio > footer {
+  flex-shrink: 0;
+}
+.create-studio [data-composer-input] textarea {
+  min-height: 72px !important;
+  max-height: 144px;
+}
+.create-studio .reference-tray {
+  max-height: 140px;
+  overflow: auto;
+}
+@media (max-width: 1023px) {
+  .create-workspace {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .create-studio {
+    height: 650px;
+    min-height: 650px;
+    flex: 0 0 650px;
+  }
+  .create-recipes {
+    min-height: 600px;
+    flex-shrink: 0;
+  }
+}
+
+.create-studio > footer {
+  padding: 12px;
+}
+.create-studio [data-toolbar-mode] textarea {
+  width: 100%;
+}
+.create-studio .recipe-result-strip {
+  scrollbar-width: thin;
+  scrollbar-color: #45464b transparent;
+}
+.create-studio [data-composer-input] textarea {
+  height: 80px !important;
+  min-height: 80px !important;
+  max-height: 80px !important;
+}
+.create-studio .reference-tray {
+  flex-basis: calc(100% - 56px);
+  flex-direction: row;
+  max-height: 80px;
+}
+.create-studio .reference-item {
+  flex: 1;
+}
+.create-studio [data-composer-input] {
+  gap: 6px;
+  padding: 8px;
+}
+
+.recipe-advanced {
+  border-radius: 10px;
+  background: #ffffff03;
+}
+.recipe-advanced > summary {
+  padding: 12px;
+  font-size: 14px;
+  color: #c4c5cb;
+  cursor: pointer;
+}
+.recipe-advanced-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 12px;
+}
+.recipe-advanced-grid > * {
+  min-width: 0;
+}
+.recipe-advanced-grid button {
+  width: 100%;
+  min-width: 0;
+}
+
+.create-studio [data-composer-input] {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) repeat(3, 40px);
+  align-items: center;
+}
+.create-studio [data-composer-input] textarea {
+  grid-column: 1/-1;
+}
+.create-studio .reference-tray {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  grid-column: 2;
+}
+.create-studio .reference-item {
+  min-width: 0;
+}
+.create-studio .recipe-result-strip button {
+  width: 48px;
+  height: 48px;
+}
+@media (max-width: 600px) {
+  .create-studio [data-composer-input] {
+    display: flex;
+  }
+}
+
+.recipe-parameters > .flex-wrap > :only-child {
+  grid-column: 1/-1;
+}

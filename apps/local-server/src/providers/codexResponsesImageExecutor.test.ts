@@ -172,40 +172,76 @@ describe('codex responses image executor', () => {
     ).rejects.toMatchObject({
       code: 'source_limit',
       fallbackAllowed: false,
-      message: expect.stringContaining('GPT-Reserve'),
+      message: expect.stringContaining('this HTTP route'),
     } satisfies Partial<SubscriptionHttpError>);
   });
 
-  it('does not fall back when the SSE reports a failed or moderated response', async () => {
-    const executor = createCodexResponsesImageExecutor({
-      getAccessToken: async () => 'codex-secret',
-      fetch: async () =>
-        new Response(
-          [
-            'event: response.failed',
-            'data: {"type":"response.failed","error":{"message":"safety system rejected codex-secret\\u0000"}}',
-            '',
-          ].join('\n'),
-          { headers: { 'content-type': 'text/event-stream' } },
-        ),
-      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
-      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
-      writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
-    });
-    await expect(
-      executor({
-        id: 'job-moderation',
-        workspaceId: 'workspace-1',
-        prompt: 'stone keep',
-        checkpointRemoteExecution: vi.fn(),
-        execution: httpExecution(),
-      }),
-    ).rejects.toMatchObject({
+  it.each([
+    {
+      event: {
+        type: 'response.failed',
+        error: { message: 'safety system rejected codex-secret\u0000' },
+      },
       code: 'moderation',
-      fallbackAllowed: false,
       message: 'safety system rejected [redacted]',
-    } satisfies Partial<SubscriptionHttpError>);
-  });
+    },
+    {
+      event: {
+        type: 'response.failed',
+        response: {
+          status: 'failed',
+          error: { message: 'safety system rejected codex-secret\u0000' },
+        },
+      },
+      code: 'moderation',
+      message: 'safety system rejected [redacted]',
+    },
+    {
+      event: {
+        type: 'response.failed',
+        response: { status: 'failed', error: { message: 'The usage limit has been reached' } },
+      },
+      code: 'source_limit',
+      message: expect.stringContaining('this HTTP route'),
+    },
+    {
+      event: {
+        type: 'response.incomplete',
+        response: { status: 'incomplete', incomplete_details: { reason: 'content_filter' } },
+      },
+      code: 'moderation',
+      message: expect.stringContaining('content_filter'),
+    },
+  ])(
+    'reports terminal SSE failure details: $event.type $code',
+    async ({ event, code, message }) => {
+      const checkpoint = vi.fn();
+      const executor = createCodexResponsesImageExecutor({
+        getAccessToken: async () => 'codex-secret',
+        fetch: async () =>
+          new Response([`event: ${event.type}`, `data: ${JSON.stringify(event)}`, ''].join('\n'), {
+            headers: { 'content-type': 'text/event-stream' },
+          }),
+        resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+        mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+        writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+      });
+      await expect(
+        executor({
+          id: 'job-moderation',
+          workspaceId: 'workspace-1',
+          prompt: 'stone keep',
+          checkpointRemoteExecution: checkpoint,
+          execution: httpExecution(),
+        }),
+      ).rejects.toMatchObject({
+        code,
+        fallbackAllowed: false,
+        message,
+      });
+      expect(checkpoint).toHaveBeenLastCalledWith(expect.objectContaining({ phase: 'failed' }));
+    },
+  );
 
   it('invalidates rejected credentials and redacts the access token from the error', async () => {
     const invalidations: string[] = [];

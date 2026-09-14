@@ -1,3 +1,4 @@
+import { ReferenceTray } from './ReferenceTray';
 import {
   IconBan as Ban,
   IconRobot as Bot,
@@ -76,7 +77,7 @@ export interface ToolbarProps {
   isGenerating: boolean;
   generationStartTime: number | null;
   onFileSelect: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  onFilesDrop: (files: File[]) => void;
+  onFilesDrop: (files: File[], replaceId?: string) => void;
   onRemoveAttachment: (id: string) => void;
   isEnhancingPrompt: boolean;
   onEnhancePrompt: () => void;
@@ -363,6 +364,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     // Click outside
     useEffect(() => {
       const handleOutsideClick = (event: MouseEvent) => {
+        if (event.target instanceof Element && event.target.closest('[data-toolbar-popup]')) return;
         if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
           closeAllMenus();
           setIsNegativeOpen(false);
@@ -397,8 +399,18 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     }, [generationConfig.prompt, localPrompt]);
 
     const handleTriggerGenerate = useCallback(() => {
-      if (generateBlock) return;
-      const trimmedPrompt = localPrompt.trim();
+      if (
+        generateBlock ||
+        (activeRecipe === 'styles' &&
+          !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)?.selectedStyles
+            ?.length)
+      )
+        return;
+      const trimmedPrompt =
+        localPrompt.trim() ||
+        (activeRecipe === 'styles'
+          ? 'Create a balanced composition using the selected styles.'
+          : '');
       if (!trimmedPrompt && generationConfig.attachments.length === 0) {
         setQuickStartErrorScope(interactionScope);
         setQuickStartError(true);
@@ -409,7 +421,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
-      onGenerate(localPrompt, { codexTransport: selectedCodexTransport });
+      onGenerate(trimmedPrompt, { codexTransport: selectedCodexTransport }, { preventModal: true });
 
       closeAllMenus();
       setIsNegativeOpen(false);
@@ -417,6 +429,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       setIsMobileControlsOpen(false);
     }, [
       localPrompt,
+      activeRecipe,
+      generationConfig.recipeParams,
       generationConfig.attachments.length,
       updateConfig,
       onGenerate,
@@ -485,6 +499,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       <div
         ref={containerRef}
         data-toolbar-mode={mode}
+        data-style-needs-selection={
+          activeRecipe === 'styles' &&
+          !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)?.selectedStyles
+            ?.length
+        }
         onMouseEnter={handleToolbarMouseEnter}
         onMouseMove={handleToolbarMouseEnter}
         onMouseLeave={handleToolbarMouseLeave}
@@ -508,6 +527,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           <div className="flex-1 relative min-w-0">
             {/* Input Container */}
             <div
+              data-composer-input
               className={`flex min-h-9 items-end gap-1.5 rounded-lg border border-white/2 bg-zinc-900/50 p-1 px-2 shadow-lg transition-colors duration-300 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
             >
               {showQuickStartErrorText && (
@@ -527,37 +547,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </button>
 
               {hasAttachments && (
-                <div className="flex items-center gap-2 animate-in fade-in-0 zoom-in-95 duration-150">
-                  {generationConfig.attachments.map((att) => (
-                    <div key={att.id} className="relative size-8 shrink-0">
-                      <button
-                        type="button"
-                        onClick={() => onOpenEditor(att)}
-                        aria-label={`Edit ${att.name}`}
-                        className="size-8 overflow-hidden rounded-xl bg-zinc-800"
-                      >
-                        <img
-                          src={att.dataUrl}
-                          width={32}
-                          height={32}
-                          className="size-full object-cover"
-                          alt=""
-                        />
-                      </button>
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onRemoveAttachment(att.id);
-                        }}
-                        aria-label={`Remove ${att.name}`}
-                        className="absolute -right-1 -top-1 flex size-4 items-center justify-center rounded-full bg-zinc-950 text-zinc-200 ring-1 ring-white/20 hover:bg-red-500 hover:text-white"
-                      >
-                        <X size={8} />
-                      </button>
-                    </div>
-                  ))}
-                </div>
+                <ReferenceTray
+                  attachments={generationConfig.attachments}
+                  onEdit={onOpenEditor}
+                  onRemove={onRemoveAttachment}
+                  onFiles={onFilesDrop}
+                />
               )}
 
               {activeRecipeIndicator && (
@@ -586,10 +581,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
               {isContextOnly ? (
                 <div
-                  data-animation-frame-context
+                  data-task-context
                   className="hidden min-w-0 flex-1 px-1.5 py-1 text-[11px] leading-relaxed text-zinc-500 sm:block"
                 >
-                  Add frame references here. Generate and Correct stay in the Frame Inspector.
+                  Add references here. Use the selected task action above to continue.
                 </div>
               ) : null}
 
@@ -684,6 +679,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     </button>
                   </Tooltip>
                   <DemandMountedGsapDropdown
+                    portal
+                    data-toolbar-popup
                     open={isNegativeOpen}
                     onOpenChange={setIsNegativeOpen}
                     triggerRef={negativeButtonRef}
@@ -733,6 +730,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         </button>
                       </Tooltip>
                       <DemandMountedGsapDropdown
+                        portal
+                        data-toolbar-popup
                         open={isRefineOpen}
                         onOpenChange={setIsRefineOpen}
                         triggerRef={refineButtonRef}
@@ -945,6 +944,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     <span>{generationConfig.aspectRatio}</span>
                   </button>
                   <DemandMountedGsapDropdown
+                    portal
+                    data-toolbar-popup
                     open={isAspectRatioOpen}
                     onOpenChange={setIsAspectRatioOpen}
                     triggerRef={aspectRatioButtonRef}
@@ -999,6 +1000,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <span>{generationConfig.imageSize || '1K'}</span>
                     </button>
                     <DemandMountedGsapDropdown
+                      portal
+                      data-toolbar-popup
                       open={isSizeOpen}
                       onOpenChange={setIsSizeOpen}
                       triggerRef={sizeButtonRef}
@@ -1044,6 +1047,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     <span>{generationConfig.batchCount || 1}x</span>
                   </button>
                   <DemandMountedGsapDropdown
+                    portal
+                    data-toolbar-popup
                     open={isBatchOpen}
                     onOpenChange={setIsBatchOpen}
                     triggerRef={batchButtonRef}
@@ -1097,6 +1102,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         </span>
                       </button>
                       <DemandMountedGsapDropdown
+                        portal
+                        data-toolbar-popup
                         open={isModelOpen}
                         onOpenChange={setIsModelOpen}
                         triggerRef={modelButtonRef}
@@ -1153,6 +1160,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         <span className="hidden text-[8px] 2xl:inline">{executionSummary}</span>
                       </button>
                       <DemandMountedGsapDropdown
+                        portal
+                        data-toolbar-popup
                         open={isExecutionOpen}
                         onOpenChange={setIsExecutionOpen}
                         triggerRef={executionButtonRef}
@@ -1458,7 +1467,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               <button
                 type="button"
                 onClick={handleTriggerGenerate}
-                disabled={Boolean(generateBlock)}
+                disabled={
+                  Boolean(generateBlock) ||
+                  (activeRecipe === 'styles' &&
+                    !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)
+                      ?.selectedStyles?.length)
+                }
                 title={generateBlock?.message}
                 aria-describedby={generateBlock ? 'grok-generate-block' : undefined}
                 data-studio-generate-button

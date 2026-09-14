@@ -243,6 +243,9 @@ export async function buildJobAssets({
   });
 
   for (const [index, attachment] of queuedAttachments.entries()) {
+    if (attachment.isProcessing) {
+      throw new Error('Wait for reference images to finish loading before generating.');
+    }
     assets.push({
       role: getQueuedAttachmentAssetRole({ config, attachment, index }),
       name: attachment.name,

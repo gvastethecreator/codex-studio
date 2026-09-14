@@ -82,6 +82,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
           />
         </button>
         <DemandMountedGsapDropdown
+          portal
           id={menuId}
           open={isOpen}
           onOpenChange={setIsOpen}
@@ -150,6 +151,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
         />
       </button>
       <DemandMountedGsapDropdown
+        portal
         id={popoverId}
         open={isOpen}
         onOpenChange={setIsOpen}

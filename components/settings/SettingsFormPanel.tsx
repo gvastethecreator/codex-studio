@@ -23,7 +23,7 @@ import { type StudioSettingsDomainId } from '../../lib/studioSettingsDomains';
 import { SettingsProvidersPanel } from './SettingsProvidersPanel';
 
 interface SettingsFormPanelProps {
-  domain: Extract<StudioSettingsDomainId, 'library' | 'providers' | 'output'>;
+  domain: Extract<StudioSettingsDomainId, 'appearance' | 'library' | 'providers' | 'output'>;
   formState: StudioSettingsFormState;
   fileNameError: string | null;
   onFormChange: React.Dispatch<React.SetStateAction<StudioSettingsFormState>>;
@@ -73,29 +73,7 @@ export function SettingsFormPanel({
               </div>
             </div>
           </div>
-          <button
-            type="button"
-            onClick={() =>
-              setFormState((prev) => ({
-                ...prev,
-                commandCenterCompactMode: !prev.commandCenterCompactMode,
-              }))
-            }
-            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/2 bg-accent-500/10' : 'border-white/2 bg-white/4 hover:bg-white/8'}`}
-          >
-            <span className="flex items-center gap-3">
-              <Settings
-                size={16}
-                className={commandCenterCompactMode ? 'text-accent-300' : 'text-zinc-500'}
-              />
-              <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
-                Compact Command Center
-              </span>
-            </span>
-            <span
-              className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
-            />
-          </button>
+
           <button
             type="button"
             onClick={() => void onResetStudio()}
@@ -115,6 +93,32 @@ export function SettingsFormPanel({
             )}
           </button>
         </>
+      ) : null}
+
+      {domain === 'appearance' ? (
+        <button
+          type="button"
+          onClick={() =>
+            setFormState((prev) => ({
+              ...prev,
+              commandCenterCompactMode: !prev.commandCenterCompactMode,
+            }))
+          }
+          className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/2 bg-accent-500/10' : 'border-white/2 bg-white/4 hover:bg-white/8'}`}
+        >
+          <span className="flex items-center gap-3">
+            <Settings
+              size={16}
+              className={commandCenterCompactMode ? 'text-accent-300' : 'text-zinc-500'}
+            />
+            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+              Compact workspace controls
+            </span>
+          </span>
+          <span
+            className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-zinc-700'}`}
+          />
+        </button>
       ) : null}
 
       {domain === 'providers' ? (

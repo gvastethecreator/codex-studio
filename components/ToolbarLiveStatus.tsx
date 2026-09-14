@@ -102,13 +102,6 @@ export function GenerationElapsedStatus({ startTime }: { startTime: number | nul
 
   return (
     <>
-      <div
-        className="absolute bottom-0 left-0 top-0 z-0 w-full origin-left bg-accent-500/20 transition-transform duration-100 ease-linear"
-        style={{
-          transform: `scaleX(${Math.min(Number.parseFloat(elapsedTime) / 120, 1)})`,
-        }}
-      />
-      <div className="absolute inset-0 z-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       <div className="relative z-10 flex items-center gap-2" data-generation-elapsed-status>
         <Send size={14} className="text-accent-200" />
         <span className="text-white">QUEUE</span>

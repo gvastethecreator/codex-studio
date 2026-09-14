@@ -1,4 +1,5 @@
 import type { GenerationProviderId } from '../packages/shared/src/generationContracts';
+import type { CodexExecutionTransport } from '../packages/shared/src/codexExecutionContract';
 import type { ImageGenerationConfig } from '../types';
 import { resolveGrokImagineGenerateBlock } from './grokImagineUiPolicy';
 
@@ -28,6 +29,7 @@ export function prepareStudioGenerationRequest({
   promptOverride,
   configOverrides,
   providerId = 'codex',
+  defaultCodexTransport,
   grokCanExecute = true,
   grokStatus,
   grokDiagnostics,
@@ -36,6 +38,7 @@ export function prepareStudioGenerationRequest({
   promptOverride?: string;
   configOverrides?: Partial<ImageGenerationConfig>;
   providerId?: GenerationProviderId;
+  defaultCodexTransport?: CodexExecutionTransport;
   grokCanExecute?: boolean;
   grokStatus?: string;
   grokDiagnostics?: string[];
@@ -61,6 +64,9 @@ export function prepareStudioGenerationRequest({
         ? 4
         : 1;
   const finalAttachments = baseAttachments.slice(0, maxAttachments);
+  if (finalAttachments.some((attachment) => attachment.isProcessing)) {
+    return { ok: false, message: 'Wait for reference images to finish loading before generating.' };
+  }
   const hasReferenceImage = finalAttachments.length > 0;
 
   if (!finalPrompt && !hasReferenceImage) {
@@ -85,7 +91,12 @@ export function prepareStudioGenerationRequest({
     finalConfig: {
       ...generationConfig,
       ...configOverrides,
-      attachments: finalAttachments.map((attachment) => ({ ...attachment })),
+      codexTransport:
+        configOverrides?.codexTransport ?? generationConfig.codexTransport ?? defaultCodexTransport,
+      attachments: finalAttachments.map((attachment) => ({
+        ...attachment,
+        strength: effectiveRecipeId === 'styles' ? 0.15 : attachment.strength,
+      })),
       prompt: finalPrompt,
     },
     shouldClearComposerAttachments: false,

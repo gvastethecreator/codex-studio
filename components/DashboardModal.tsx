@@ -1,3 +1,4 @@
+import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import {
   IconX as X,
@@ -14,7 +15,6 @@ interface DashboardModalProps {
   onClose: () => void;
   imagesCount: number;
   workspaces: Workspace[];
-  onExportLegacyWorkspaceSnapshot: () => void;
 }
 
 export const DashboardModal: React.FC<DashboardModalProps> = ({
@@ -22,20 +22,27 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
   onClose,
   imagesCount,
   workspaces,
-  onExportLegacyWorkspaceSnapshot,
 }) => {
+  const dialogRef = useDialogFocus(isOpen, onClose);
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/80 p-0 backdrop-blur-sm sm:p-4">
-      <div className="vt-dashboard-modal flex h-full w-full max-w-xl flex-col overflow-hidden bg-zinc-900 shadow-2xl sm:h-auto sm:max-h-[88vh] sm:rounded-3xl sm:border sm:border-white/2">
+      <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Library summary"
+        tabIndex={-1}
+        className="vt-dashboard-modal flex h-full w-full max-w-xl flex-col overflow-hidden bg-zinc-900 shadow-2xl sm:h-auto sm:max-h-[88vh] sm:rounded-3xl sm:border sm:border-white/2"
+      >
         <div className="flex shrink-0 items-center justify-between border-b border-white/2 p-4 sm:p-6">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-xl bg-accent-500/10 text-accent-400">
               <User size={20} />
             </div>
             <h2 className="text-sm font-black uppercase tracking-widest text-white">
-              Studio Dashboard
+              Library summary
             </h2>
           </div>
           <button
@@ -82,7 +89,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               <div className="flex items-center gap-2">
                 <Layers size={14} className="text-blue-400" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                  Images
+                  Images loaded
                 </span>
               </div>
               <p className="text-lg font-mono font-black text-white">{imagesCount}</p>
@@ -95,25 +102,6 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
                 </span>
               </div>
               <p className="text-lg font-mono font-black text-white">{workspaces.length}</p>
-            </div>
-          </div>
-
-          <div className="space-y-3">
-            <h4 className="text-[10px] font-black uppercase tracking-widest text-zinc-600 px-1">
-              Legacy Workspace Snapshot
-            </h4>
-            <div className="grid grid-cols-1 gap-3">
-              <button
-                type="button"
-                onClick={onExportLegacyWorkspaceSnapshot}
-                className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/2 text-zinc-300 hover:text-white transition-[color,background-color,border-color,opacity,box-shadow,transform] text-xs font-black uppercase tracking-widest cursor-pointer group"
-              >
-                <Download
-                  size={16}
-                  className="text-blue-400 group-hover:scale-110 transition-transform"
-                />
-                Export Legacy Snapshot
-              </button>
             </div>
           </div>
 

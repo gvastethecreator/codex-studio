@@ -29,6 +29,10 @@ The main Codex path does not need `OPENAI_API_KEY`. Assets, job history, logs, a
 
 ## Product tour
 
+Create pairs a freeform text/image workspace and composer on the left with compact recipe cards on the right. Library focuses on search and review; using an image as a reference opens Create. Each recipe keeps a separate draft per workspace, with a central preview and a right configuration panel. On narrow windows, Result and Configure tabs share the space. Styles and Character Lab open their explorers on demand. Use a result as a reference or reuse its settings to continue explicitly.
+
+Library search queries the whole workspace catalog. Jobs separates active work, results needing review, and history; the inspector shows returned images before technical details. Animation frames show linked job status separately from attached frames. Sprite Atlas labels fixture checks separately from validation of imported art.
+
 | Catalog and persistent jobs                                                                                         | Studio Settings                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | <img src="docs/assets/screenshots/studio.webp" alt="Codex Studio catalog beside the persistent generation queue" /> | <img src="docs/assets/screenshots/settings.webp" alt="Codex Studio Settings with the local library path hidden for privacy" /> |
@@ -122,7 +126,7 @@ Run `bun run studio:init` to create local defaults and apply pending SQLite migr
 
 For manual setup, copy `.env.example` to `.env.local`.
 
-Worker capacity is configured on the host and takes effect after a server restart. `STUDIO_MAX_CONCURRENT_JOBS` is the global ceiling (default 4, range 1–16). Each `STUDIO_MAX_CONCURRENT_<PROVIDER>_JOBS` value limits that provider (default 1, no higher than the global ceiling). The Codex-named setting now controls only Codex; set the global variable explicitly when updating an older checkout. Invalid limits stop startup. Queue shows active slots, provider limits, and why each job is waiting. Available providers take turns; jobs within one provider keep their arrival order. Cancellation and asset import retain their slot until processing finishes.
+Worker capacity is configured on the host and takes effect after a server restart. `STUDIO_MAX_CONCURRENT_JOBS` is the global ceiling (default 4, range 1–16). Each `STUDIO_MAX_CONCURRENT_<PROVIDER>_JOBS` value limits that provider (default 1, no higher than the global ceiling). The Codex-named setting now controls only Codex; set the global variable explicitly when updating an older checkout. Invalid limits stop startup. Jobs separates Active, Review, and History, with a workspace filter for each view. Active contains only queued and running jobs; jobs needing review stay in Review and do not appear as loading images in the gallery. Batch progress and retry are available within each job, and Worker details shows active slots and provider limits. Queued jobs show why they are waiting. Available providers take turns; jobs within one provider keep their arrival order. Cancellation and asset import retain their slot until processing finishes.
 
 By default, the Studio Library lives under your OS home directory as `Codex Studio`. Set a custom absolute path only when you need one:
 

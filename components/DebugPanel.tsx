@@ -1,8 +1,8 @@
+import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import { IconBrain as BrainCircuit, IconX as X } from '@tabler/icons-react';
 
 import type { JobDetailResponse } from '../packages/shared/src';
-import { useLatestRef } from '../hooks/useLatestRef';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import type { LogEntry, Workspace } from '../types';
 import { JobInspectorDetail } from './JobInspectorDetail';
@@ -37,48 +37,36 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   onClearSelectedJob,
   onRetryJob,
 }) => {
-  const onCloseRef = useLatestRef(onClose);
-
-  React.useEffect(() => {
-    if (!isOpen) return undefined;
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        onCloseRef.current();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [isOpen, onCloseRef]);
+  const dialogRef = useDialogFocus(isOpen, onClose);
 
   if (!isOpen) {
     return null;
   }
 
   return (
-    <dialog
+    <div
+      ref={dialogRef}
+      role="dialog"
+      tabIndex={-1}
       className="fixed inset-0 z-50 m-0 h-full w-full max-h-none max-w-none bg-transparent p-0"
       aria-label="Studio activity inspector"
       aria-modal="true"
-      open
     >
       <button
         type="button"
         aria-label="Close activity inspector"
+        tabIndex={-1}
         className="absolute inset-0 h-full w-full bg-black/70 backdrop-blur-sm"
         onClick={onClose}
       />
 
-      <div className="absolute inset-4 overflow-hidden rounded-[30px] border border-white/2 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.65)]">
+      <div className="absolute inset-y-3 right-3 left-3 lg:left-auto lg:w-[min(960px,90vw)] overflow-hidden rounded-xl border border-white/2 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.65)]">
         <div className="flex items-center justify-between border-b border-white/2 px-6 py-5">
           <div>
             <div className="text-[10px] font-black uppercase tracking-[0.22em] text-zinc-500">
               Studio activity
             </div>
-            <h2 className="mt-1 text-xl font-semibold text-white">Readable job inspector</h2>
+            <h2 className="mt-1 text-xl font-semibold text-white">Job details</h2>
           </div>
           <button
             type="button"
@@ -90,8 +78,9 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
           </button>
         </div>
 
-        <div className="grid h-[calc(100%-88px)] grid-cols-1 overflow-hidden xl:grid-cols-[340px_minmax(0,1fr)]">
-          <aside className="custom-scrollbar overflow-y-auto border-b border-white/2 bg-black/20 px-5 py-5 xl:border-b-0 xl:border-r xl:px-6">
+        <div className="flex h-[calc(100%-88px)] flex-col overflow-y-auto">
+          <details className="custom-scrollbar overflow-y-auto border-b border-white/2 bg-black/20 px-5 py-5 xl:border-b-0 xl:border-r xl:px-6">
+            <summary className="cursor-pointer text-sm">Workspace activity and logs</summary>
             <SessionOverview
               variant="drawer"
               workspaces={workspaces}
@@ -102,7 +91,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
               selectedJobId={selectedJobDetail?.job.id ?? null}
               onInspectJob={onInspectJob}
             />
-          </aside>
+          </details>
 
           <main className="custom-scrollbar overflow-y-auto px-5 py-5 xl:px-6">
             {selectedJobDetail ? (
@@ -129,6 +118,6 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
           </main>
         </div>
       </div>
-    </dialog>
+    </div>
   );
 };

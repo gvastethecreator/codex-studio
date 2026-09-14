@@ -1,3 +1,4 @@
+import { RecipeControls } from './RecipeWorkbenchContext';
 import React from 'react';
 import {
   IconAlertTriangle as AlertTriangle,
@@ -22,7 +23,7 @@ import {
   type SpriteAtlasRowStatus,
   type SpriteAtlasRun,
 } from '../../packages/shared/src/spriteAtlasContracts';
-import type { ImageGenerationConfig } from '../../types';
+import type { ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import {
   composeSpriteAtlasFixture,
   createSpriteAtlasRowJob,
@@ -39,6 +40,7 @@ import {
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface SpriteAtlasRecipeProps {
+  images?: GeneratedImageWithConfig[];
   config: ImageGenerationConfig;
   updateConfig: <K extends keyof ImageGenerationConfig>(
     key: K,
@@ -53,7 +55,7 @@ const STAGE_LABELS: Record<SpriteAtlasRun['status'], string> = {
   waiting_for_rows: 'Waiting',
   ready_to_extract: 'Ready',
   composed: 'Composed',
-  qa_passed: 'QA Passed',
+  qa_passed: 'QA report available',
   blocked: 'Blocked',
 };
 
@@ -193,9 +195,17 @@ function buildPipeline(run: SpriteAtlasRun | null) {
     {
       id: 'compose',
       label: 'Compose',
-      detail: run?.status === 'composed' || run?.status === 'qa_passed' ? 'atlas.png' : 'pending',
+      detail:
+        run?.qa?.mode === 'fixture_smoke'
+          ? 'Fixture artifact'
+          : run?.status === 'composed' || run?.status === 'qa_passed'
+            ? 'atlas.png'
+            : 'pending',
       state:
-        run?.status === 'composed' || run?.status === 'qa_passed'
+        (run?.status === 'composed' || run?.status === 'qa_passed') &&
+        run?.qa?.mode !== 'fixture_smoke' &&
+        imported === total &&
+        total > 0
           ? 'complete'
           : run
             ? 'idle'
@@ -204,14 +214,20 @@ function buildPipeline(run: SpriteAtlasRun | null) {
     {
       id: 'qa',
       label: 'QA',
-      detail: run?.qa ? run.qa.mode : 'not run',
+      detail:
+        run?.qa?.mode === 'fixture_smoke' ? 'Fixture only' : run?.qa ? 'Generated art' : 'not run',
       state:
-        run?.status === 'blocked' ? 'blocked' : run?.qa?.ok ? 'complete' : run ? 'idle' : 'idle',
+        run?.status === 'blocked'
+          ? 'blocked'
+          : run?.qa?.ok && run.qa.mode !== 'fixture_smoke' && imported === total && total > 0
+            ? 'complete'
+            : 'idle',
     },
   ] as const;
 }
 
 export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
+  images = [],
   config,
   updateConfig,
   isGenerating,
@@ -447,128 +463,140 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   return (
     <div className="flex h-full min-h-0 flex-col bg-zinc-950 text-zinc-100">
       <div className="grid min-h-0 flex-1 grid-cols-1 gap-2 overflow-hidden p-3 xl:grid-cols-[20rem_minmax(0,1fr)_24rem] xl:grid-rows-[minmax(0,1fr)_auto]">
-        <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 shadow-2xl">
-          <div className="border-b border-white/2 p-3">
-            <div className="flex items-start justify-between gap-3">
-              <div className="min-w-0">
-                <div className="text-[10px] font-black uppercase tracking-widest text-sky-300">
-                  Atlas Recipe
-                </div>
-                <h2 className="mt-1 truncate text-base font-black text-white">Sprite Atlas</h2>
-                <p className="mt-1 truncate text-xs text-zinc-500">
-                  {contract.assetKind} / {contract.extractionMode}
-                </p>
-              </div>
-              <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-sky-400/2 bg-sky-500/10 text-sky-200">
-                <Package size={20} />
-              </span>
-            </div>
-
-            <div className="mt-3 grid grid-cols-3 gap-2 rounded-lg border border-white/2 bg-white/[0.03] p-2">
-              <Metric label="Rows" value={String(contract.rows.length)} />
-              <Metric label="Frames" value={String(getFrameTotal(contract.rows))} />
-              <Metric label="Cell" value={`${contract.cell.width}px`} />
-            </div>
-          </div>
-
-          <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
-            <div className="mb-3 flex flex-wrap gap-1.5">
-              {(['all', ...SPRITE_ATLAS_ASSET_KINDS] as const).map((kind) => (
-                <FilterChip
-                  key={kind}
-                  active={assetKindFilter === kind}
-                  onClick={() => setAssetKindFilter(kind)}
-                >
-                  {kind}
-                </FilterChip>
-              ))}
-            </div>
-
-            <div className="grid gap-2">
-              {filteredPresets.map((preset) => {
-                const active = preset.id === contract.presetId;
-                return (
-                  <button
-                    key={preset.id}
-                    type="button"
-                    onClick={() => selectPreset(preset)}
-                    className={`group grid gap-2 rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-white/2 ${
-                      active ? 'border-sky-400/2 bg-sky-500/10' : 'border-white/2 bg-white/[0.035]'
-                    }`}
-                  >
-                    <div className="flex items-start justify-between gap-2">
-                      <div className="min-w-0">
-                        <div className="truncate text-sm font-black text-white">{preset.label}</div>
-                        <div className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
-                          {preset.rows} rows / {preset.frames} frames / {preset.cell.width}px
-                        </div>
-                      </div>
-                      <span
-                        className={`shrink-0 rounded-md border px-1.5 py-1 text-[8px] font-black uppercase tracking-widest ${getPresetTone(
-                          preset.assetKind,
-                        )}`}
-                      >
-                        {preset.assetKind}
-                      </span>
+        <RecipeControls>
+          <details open={!activeRun} className="recipe-draft-settings">
+            <summary>New atlas configuration</summary>
+            <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 shadow-2xl">
+              <div className="border-b border-white/2 p-3">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <div className="text-[10px] font-black uppercase tracking-widest text-sky-300">
+                      Atlas Recipe
                     </div>
-                    <p className="line-clamp-2 text-xs leading-relaxed text-zinc-500">
-                      {preset.description}
+                    <h2 className="mt-1 truncate text-base font-black text-white">Sprite Atlas</h2>
+                    <p className="mt-1 truncate text-xs text-zinc-500">
+                      {contract.assetKind} / {contract.extractionMode}
                     </p>
-                  </button>
-                );
-              })}
-            </div>
+                  </div>
+                  <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-sky-400/2 bg-sky-500/10 text-sky-200">
+                    <Package size={20} />
+                  </span>
+                </div>
 
-            <div className="mt-4 grid grid-cols-2 gap-2">
-              <SelectField
-                label="Style"
-                value={contract.stylePreset}
-                onChange={(value) => setRecipeParam('stylePreset', value)}
-                options={[
-                  'pixel-art',
-                  'illustration',
-                  'painterly',
-                  'realistic',
-                  'anime',
-                  'vector',
-                  'custom',
-                ]}
-              />
-              <SelectField
-                label="QA"
-                value={contract.qaMode}
-                onChange={(value) => setRecipeParam('qaMode', value)}
-                options={['standard', 'strict']}
-              />
-              <SelectField
-                label="Background"
-                value={contract.backgroundRemoval}
-                onChange={(value) => setRecipeParam('backgroundRemoval', value)}
-                options={['chroma', 'auto', 'rembg', 'alpha']}
-                className="col-span-2"
-              />
-            </div>
-          </div>
-
-          <div className="border-t border-white/2 p-3">
-            {currentPreset && (
-              <div className="mb-2 rounded-lg border border-white/2 bg-white/[0.03] p-2 text-xs leading-relaxed text-zinc-400">
-                {currentPreset.description}
+                <div className="mt-3 grid grid-cols-3 gap-2 rounded-lg border border-white/2 bg-white/[0.03] p-2">
+                  <Metric label="Rows" value={String(contract.rows.length)} />
+                  <Metric label="Frames" value={String(getFrameTotal(contract.rows))} />
+                  <Metric label="Cell" value={`${contract.cell.width}px`} />
+                </div>
               </div>
-            )}
-            <button
-              type="button"
-              onClick={handleCreateRun}
-              disabled={busy}
-              className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-sky-300/2 bg-sky-400 px-3 text-xs font-black uppercase tracking-widest text-black transition hover:bg-sky-300 disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              {busy ? <Loader2 size={15} className="animate-spin" /> : <Plus size={15} />}
-              Prepare Run
-            </button>
-          </div>
-        </aside>
 
-        <main className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/25 shadow-2xl xl:row-span-2">
+              <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
+                <div className="mb-3 flex flex-wrap gap-1.5">
+                  {(['all', ...SPRITE_ATLAS_ASSET_KINDS] as const).map((kind) => (
+                    <FilterChip
+                      key={kind}
+                      active={assetKindFilter === kind}
+                      onClick={() => setAssetKindFilter(kind)}
+                    >
+                      {kind}
+                    </FilterChip>
+                  ))}
+                </div>
+
+                <div className="grid gap-2">
+                  {filteredPresets.map((preset) => {
+                    const active = preset.id === contract.presetId;
+                    return (
+                      <button
+                        key={preset.id}
+                        type="button"
+                        onClick={() => selectPreset(preset)}
+                        className={`group grid gap-2 rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-white/2 ${
+                          active
+                            ? 'border-sky-400/2 bg-sky-500/10'
+                            : 'border-white/2 bg-white/[0.035]'
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-2">
+                          <div className="min-w-0">
+                            <div className="truncate text-sm font-black text-white">
+                              {preset.label}
+                            </div>
+                            <div className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+                              {preset.rows} rows / {preset.frames} frames / {preset.cell.width}px
+                            </div>
+                          </div>
+                          <span
+                            className={`shrink-0 rounded-md border px-1.5 py-1 text-[8px] font-black uppercase tracking-widest ${getPresetTone(
+                              preset.assetKind,
+                            )}`}
+                          >
+                            {preset.assetKind}
+                          </span>
+                        </div>
+                        <p className="line-clamp-2 text-xs leading-relaxed text-zinc-500">
+                          {preset.description}
+                        </p>
+                      </button>
+                    );
+                  })}
+                </div>
+
+                <div className="mt-4 grid grid-cols-2 gap-2">
+                  <SelectField
+                    label="Style"
+                    value={contract.stylePreset}
+                    onChange={(value) => setRecipeParam('stylePreset', value)}
+                    options={[
+                      'pixel-art',
+                      'illustration',
+                      'painterly',
+                      'realistic',
+                      'anime',
+                      'vector',
+                      'custom',
+                    ]}
+                  />
+                  <SelectField
+                    label="QA"
+                    value={contract.qaMode}
+                    onChange={(value) => setRecipeParam('qaMode', value)}
+                    options={['standard', 'strict']}
+                  />
+                  <SelectField
+                    label="Background"
+                    value={contract.backgroundRemoval}
+                    onChange={(value) => setRecipeParam('backgroundRemoval', value)}
+                    options={['chroma', 'auto', 'rembg', 'alpha']}
+                    className="col-span-2"
+                  />
+                </div>
+              </div>
+
+              <div className="border-t border-white/2 p-3">
+                {currentPreset && (
+                  <div className="mb-2 rounded-lg border border-white/2 bg-white/[0.03] p-2 text-xs leading-relaxed text-zinc-400">
+                    {currentPreset.description}
+                  </div>
+                )}
+                <button
+                  type="button"
+                  onClick={handleCreateRun}
+                  disabled={busy}
+                  className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-sky-300/2 bg-sky-400 px-3 text-xs font-black uppercase tracking-widest text-black transition hover:bg-sky-300 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {busy ? <Loader2 size={15} className="animate-spin" /> : <Plus size={15} />}
+                  Prepare Run
+                </button>
+              </div>
+            </aside>
+          </details>
+        </RecipeControls>
+
+        <main
+          data-recipe-stage
+          className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/25 shadow-2xl xl:row-span-2"
+        >
           <div className="border-b border-white/2 p-3">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div className="min-w-0">
@@ -586,7 +614,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                 </div>
                 {activeRun ? (
                   <p className="mt-1 truncate font-mono text-[11px] text-zinc-500">
-                    {activeRun.paths.runDir}
+                    {activeRun.qa?.mode === 'fixture_smoke'
+                      ? 'Fixture check only. Generated rows still require import and validation.'
+                      : 'Import rows, compose the atlas, then validate the generated art.'}
                   </p>
                 ) : (
                   <p className="mt-1 text-xs text-zinc-500">Choose a preset and prepare a run.</p>
@@ -609,18 +639,31 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                 >
                   <ClipboardList size={14} />
                 </IconButton>
+                <details className="relative">
+                  <summary className="cursor-pointer rounded-lg bg-white/5 px-3 py-2 text-xs">
+                    Diagnostics
+                  </summary>
+                  <div className="absolute right-0 z-50 mt-2 w-60 rounded-xl bg-zinc-800 p-3">
+                    <p className="mb-2 text-xs text-zinc-300">
+                      Creates test art to check the pipeline. This does not compose your imported
+                      rows.
+                    </p>
+                    <IconButton
+                      label="Compose fixture"
+                      onClick={handleComposeFixture}
+                      disabled={busy || !activeRun}
+                      tone="amber"
+                    >
+                      <Package size={14} />
+                    </IconButton>
+                  </div>
+                </details>
                 <IconButton
-                  label="Compose"
-                  onClick={handleComposeFixture}
-                  disabled={busy || !activeRun}
-                  tone="amber"
-                >
-                  <Package size={14} />
-                </IconButton>
-                <IconButton
-                  label="QA"
+                  label="Validate artifact"
                   onClick={handleRunQa}
-                  disabled={busy || !activeRun}
+                  disabled={
+                    busy || !activeRun || !['composed', 'qa_passed'].includes(activeRun.status)
+                  }
                   tone="emerald"
                 >
                   <Check size={14} />
@@ -628,6 +671,13 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
               </div>
             </div>
 
+            {activeRun && (
+              <p className="mt-3 text-sm text-zinc-300">
+                {activeRun.rows.some((row) => !row.rawPath)
+                  ? 'Next: generate and import the missing row images. Select a row to see its prompt and import controls.'
+                  : 'Rows imported. Review their artifacts. Production atlas composition is not available in Studio yet.'}
+              </p>
+            )}
             <div className="mt-3 grid grid-cols-5 gap-1.5">
               {pipeline.map((stage) => (
                 <PipelineStep key={stage.id} stage={stage} />
@@ -721,27 +771,6 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                               {ROW_STATUS_LABELS[row.status]}
                             </span>
                           </div>
-                          <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/[0.06]">
-                            <div
-                              className={`h-full rounded-full ${
-                                row.status === 'blocked'
-                                  ? 'bg-rose-400'
-                                  : row.status === 'raw_imported' || row.status === 'extracted'
-                                    ? 'bg-emerald-400'
-                                    : row.jobId
-                                      ? 'bg-sky-400'
-                                      : 'bg-zinc-600'
-                              }`}
-                              style={{
-                                width:
-                                  row.status === 'raw_imported' || row.status === 'extracted'
-                                    ? '100%'
-                                    : row.jobId
-                                      ? '52%'
-                                      : '18%',
-                              }}
-                            />
-                          </div>
                           {row.blocked && (
                             <p className="mt-2 line-clamp-2 text-xs text-rose-100/90">
                               {row.blocked.userMessage}
@@ -771,246 +800,262 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           </div>
         </main>
 
-        <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/35 shadow-2xl xl:row-span-2">
-          {activeRun && selectedRow ? (
-            <>
-              <div className="border-b border-white/2 p-3">
-                <div className="flex items-start justify-between gap-3">
-                  <div className="min-w-0">
-                    <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                      Row Inspector
+        <RecipeControls>
+          <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/35 shadow-2xl xl:row-span-2">
+            {activeRun && selectedRow ? (
+              <>
+                <div className="border-b border-white/2 p-3">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                        Row Inspector
+                      </div>
+                      <h3 className="mt-1 truncate text-base font-black text-white">
+                        {selectedRow.id}
+                      </h3>
                     </div>
-                    <h3 className="mt-1 truncate text-base font-black text-white">
-                      {selectedRow.id}
-                    </h3>
-                  </div>
-                  <span
-                    className={`shrink-0 rounded-md border px-2 py-1 text-[9px] font-black uppercase tracking-widest ${getRowTone(
-                      selectedRow,
-                    )}`}
-                  >
-                    {ROW_STATUS_LABELS[selectedRow.status]}
-                  </span>
-                </div>
-
-                <div className="mt-3 grid grid-cols-3 gap-1.5 rounded-lg border border-white/2 bg-white/[0.03] p-1.5">
-                  {(['guide', 'prompt', 'artifacts'] as const).map((tab) => (
-                    <button
-                      key={tab}
-                      type="button"
-                      onClick={() => setInspectorTab(tab)}
-                      className={`min-h-8 rounded-md px-2 text-[9px] font-black uppercase tracking-widest transition ${
-                        inspectorTab === tab
-                          ? 'bg-white/12 text-white'
-                          : 'text-zinc-500 hover:bg-white/[0.06] hover:text-zinc-200'
-                      }`}
+                    <span
+                      className={`shrink-0 rounded-md border px-2 py-1 text-[9px] font-black uppercase tracking-widest ${getRowTone(
+                        selectedRow,
+                      )}`}
                     >
-                      {tab}
-                    </button>
-                  ))}
+                      {ROW_STATUS_LABELS[selectedRow.status]}
+                    </span>
+                  </div>
+
+                  <div className="mt-3 grid grid-cols-3 gap-1.5 rounded-lg border border-white/2 bg-white/[0.03] p-1.5">
+                    {(['guide', 'prompt', 'artifacts'] as const).map((tab) => (
+                      <button
+                        key={tab}
+                        type="button"
+                        onClick={() => setInspectorTab(tab)}
+                        className={`min-h-8 rounded-md px-2 text-[9px] font-black uppercase tracking-widest transition ${
+                          inspectorTab === tab
+                            ? 'bg-white/12 text-white'
+                            : 'text-zinc-500 hover:bg-white/[0.06] hover:text-zinc-200'
+                        }`}
+                      >
+                        {tab}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
 
-              <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
-                {inspectorTab === 'guide' && (
-                  <div className="grid gap-3">
-                    <div className="rounded-lg border border-white/2 bg-white/[0.03] p-2">
-                      <div className="mb-2 flex items-center justify-between gap-2">
-                        <span className="text-xs font-black uppercase tracking-widest text-zinc-500">
-                          Layout Guide
-                        </span>
-                        <FileText size={14} className="text-zinc-500" />
-                      </div>
-                      <img
-                        src={getSpriteAtlasLayoutGuideUrl(activeRun.id, selectedRow.id)}
-                        alt=""
-                        className="h-auto w-full rounded-md border border-white/2 bg-black object-contain"
-                      />
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-2">
-                      <button
-                        type="button"
-                        onClick={handleCreateRowJob}
-                        disabled={busy}
-                        className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-sky-400/2 bg-sky-500/10 px-3 text-xs font-black uppercase tracking-widest text-sky-100 hover:bg-sky-500/15 disabled:opacity-50"
-                      >
-                        <ClipboardList size={15} />
-                        Row Job
-                      </button>
-                      <button
-                        type="button"
-                        onClick={handleBlockRow}
-                        disabled={busy}
-                        className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-xs font-bold uppercase tracking-widest text-rose-100 hover:bg-rose-500/15 disabled:opacity-50"
-                      >
-                        <AlertTriangle size={15} />
-                        Block
-                      </button>
-                    </div>
-
-                    <div className="flex items-end gap-2">
-                      <label className="grid min-w-0 flex-1 gap-1">
-                        <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                          Source image path
-                        </span>
-                        <input
-                          value={rowSourcePath}
-                          onChange={(event) => setRowSourcePath(event.target.value)}
-                          placeholder="D:\\path\\row.png"
-                          className="min-h-10 w-full min-w-0 rounded-md border border-white/2 bg-zinc-900 px-2 font-mono text-xs text-white outline-none focus:border-sky-400/2"
-                        />
-                      </label>
-                      <button
-                        type="button"
-                        onClick={handleImportRow}
-                        disabled={busy || !rowSourcePath.trim()}
-                        className="inline-flex min-h-10 items-center justify-center rounded-md border border-white/2 bg-white/[0.04] px-3 text-zinc-200 hover:bg-white/10 disabled:opacity-50"
-                        aria-label="Import selected row"
-                      >
-                        <FileImport size={15} />
-                      </button>
-                    </div>
-                  </div>
-                )}
-
-                {inspectorTab === 'prompt' && (
-                  <div className="grid gap-3">
-                    <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
-                      <div className="mb-2 flex items-center justify-between gap-2">
-                        <span className="text-xs font-black uppercase tracking-widest text-zinc-500">
-                          Prompt
-                        </span>
-                        {isPromptLoading && <Loader2 size={14} className="animate-spin" />}
-                      </div>
-                      <pre className="custom-scrollbar max-h-[420px] overflow-y-auto whitespace-pre-wrap rounded-md border border-white/2 bg-black/45 p-3 text-[11px] leading-relaxed text-zinc-300">
-                        {selectedPrompt || 'Prompt unavailable.'}
-                      </pre>
-                    </div>
-                    <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
-                      <dl className="grid gap-2 text-xs">
-                        <PathRow label="Prompt" value={selectedRow.promptPath} />
-                        <PathRow label="Request" value={activeRun.paths.requestPath} />
-                        <PathRow label="Inbox" value={activeRun.paths.handoffInboxDir} />
-                      </dl>
-                    </div>
-                  </div>
-                )}
-
-                {inspectorTab === 'artifacts' && (
-                  <div className="grid gap-3">
-                    <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
-                      <div className="text-xs font-black uppercase tracking-widest text-zinc-500">
-                        Row Paths
-                      </div>
-                      <dl className="mt-2 grid gap-2 text-xs">
-                        <PathRow label="Guide" value={selectedRow.layoutGuidePath} />
-                        <PathRow label="Raw" value={selectedRow.rawPath ?? 'not imported'} />
-                        <PathRow label="Frames" value={activeRun.paths.framesDir} />
-                        <PathRow label="Outbox" value={activeRun.paths.handoffOutboxDir} />
-                      </dl>
-                    </div>
-
-                    {activeRun.status === 'composed' || activeRun.status === 'qa_passed' ? (
+                <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
+                  {inspectorTab === 'guide' && (
+                    <div className="grid gap-3">
                       <div className="rounded-lg border border-white/2 bg-white/[0.03] p-2">
-                        <div className="mb-2 text-xs font-black uppercase tracking-widest text-zinc-500">
-                          Atlas
+                        <div className="mb-2 flex items-center justify-between gap-2">
+                          <span className="text-xs font-black uppercase tracking-widest text-zinc-500">
+                            Layout Guide
+                          </span>
+                          <FileText size={14} className="text-zinc-500" />
                         </div>
                         <img
-                          src={getSpriteAtlasAtlasUrl(activeRun.id)}
+                          src={getSpriteAtlasLayoutGuideUrl(activeRun.id, selectedRow.id)}
                           alt=""
                           className="h-auto w-full rounded-md border border-white/2 bg-black object-contain"
                         />
                       </div>
-                    ) : (
-                      <EmptyState
-                        icon={<Package size={28} />}
-                        title="Atlas not composed"
-                        copy="Compose writes atlas.png and manifest.json."
-                      />
-                    )}
 
-                    {activeRun.qa && (
-                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3 text-xs text-zinc-300">
-                        <div className="flex items-center justify-between gap-2">
-                          <span className="font-black uppercase tracking-widest text-zinc-500">
-                            QA Report
-                          </span>
-                          <span className="font-mono text-zinc-500">{activeRun.qa.mode}</span>
-                        </div>
-                        <p className="mt-2 text-zinc-300">{activeRun.qa.summary}</p>
-                        {activeRun.qa.issues.length > 0 && (
-                          <ul className="mt-2 grid gap-1 text-amber-200">
-                            {activeRun.qa.issues.map((issue) => (
-                              <li key={issue}>{issue}</li>
-                            ))}
-                          </ul>
-                        )}
+                      <div className="grid grid-cols-2 gap-2">
+                        <button
+                          type="button"
+                          onClick={handleCreateRowJob}
+                          disabled={busy}
+                          className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-sky-400/2 bg-sky-500/10 px-3 text-xs font-black uppercase tracking-widest text-sky-100 hover:bg-sky-500/15 disabled:opacity-50"
+                        >
+                          <ClipboardList size={15} />
+                          Row Job
+                        </button>
+                        <button
+                          type="button"
+                          onClick={handleBlockRow}
+                          disabled={busy}
+                          className="inline-flex min-h-10 items-center justify-center gap-2 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-xs font-bold uppercase tracking-widest text-rose-100 hover:bg-rose-500/15 disabled:opacity-50"
+                        >
+                          <AlertTriangle size={15} />
+                          Block
+                        </button>
                       </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            </>
-          ) : (
-            <div className="grid h-full place-items-center p-3">
-              <EmptyState
-                icon={<FileText size={32} />}
-                title="Select a row"
-                copy="No row loaded."
-              />
-            </div>
-          )}
-        </aside>
 
-        <aside className="min-h-0 overflow-hidden rounded-lg border border-white/2 bg-black/30 xl:col-start-1 xl:row-start-2">
-          <div className="flex items-center justify-between gap-2 border-b border-white/2 p-3">
-            <div className="text-xs font-black uppercase tracking-widest text-zinc-500">
-              Recent Runs
-            </div>
-            <span className="font-mono text-[10px] text-zinc-600">{runs.length}</span>
-          </div>
-          <div className="custom-scrollbar max-h-52 overflow-y-auto p-2 xl:max-h-64">
-            {runs.length > 0 ? (
-              <div className="grid gap-1.5">
-                {runs.slice(0, 12).map((run) => (
-                  <button
-                    key={run.id}
-                    type="button"
-                    onClick={() => {
-                      setActiveRun(run);
-                      setSelectedRowId(run.rows[0]?.id ?? null);
-                    }}
-                    className={`rounded-lg border p-2 text-left transition hover:border-white/2 ${
-                      activeRun?.id === run.id
-                        ? 'border-sky-400/2 bg-sky-500/10'
-                        : 'border-white/2 bg-white/[0.025]'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="min-w-0 truncate text-xs font-bold text-zinc-200">
-                        {run.title}
-                      </span>
-                      <span
-                        className={`shrink-0 rounded border px-1.5 py-0.5 text-[8px] font-black uppercase tracking-widest ${getRunTone(
-                          run.status,
-                        )}`}
-                      >
-                        {STAGE_LABELS[run.status]}
-                      </span>
+                      <div className="flex items-end gap-2">
+                        <label className="grid min-w-0 flex-1 gap-1">
+                          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                            Source image
+                          </span>
+                          <select
+                            aria-label="Row source image"
+                            value={rowSourcePath}
+                            onChange={(event) => setRowSourcePath(event.target.value)}
+                            className="min-h-10 w-full rounded-md bg-zinc-900 px-2 text-sm text-white"
+                          >
+                            <option value="">Choose a library image</option>
+                            {images
+                              .filter((image) => image.localPath)
+                              .map((image) => (
+                                <option key={image.id} value={image.localPath}>
+                                  {image.config.prompt?.slice(0, 70) || image.id}
+                                </option>
+                              ))}
+                          </select>
+                          <span className="text-xs text-zinc-400">
+                            Import external images through Settings → Library &amp; imports.
+                          </span>
+                        </label>
+                        <button
+                          type="button"
+                          onClick={handleImportRow}
+                          disabled={busy || !rowSourcePath.trim()}
+                          className="inline-flex min-h-10 items-center justify-center rounded-md border border-white/2 bg-white/[0.04] px-3 text-zinc-200 hover:bg-white/10 disabled:opacity-50"
+                          aria-label="Import selected row"
+                        >
+                          <FileImport size={15} />
+                        </button>
+                      </div>
                     </div>
-                    <div className="mt-1 flex items-center justify-between gap-2 text-[10px] text-zinc-600">
-                      <span>{run.contract.presetId}</span>
-                      <span>{formatUpdatedAt(run.updatedAt)}</span>
+                  )}
+
+                  {inspectorTab === 'prompt' && (
+                    <div className="grid gap-3">
+                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
+                        <div className="mb-2 flex items-center justify-between gap-2">
+                          <span className="text-xs font-black uppercase tracking-widest text-zinc-500">
+                            Prompt
+                          </span>
+                          {isPromptLoading && <Loader2 size={14} className="animate-spin" />}
+                        </div>
+                        <pre className="custom-scrollbar max-h-[420px] overflow-y-auto whitespace-pre-wrap rounded-md border border-white/2 bg-black/45 p-3 text-[11px] leading-relaxed text-zinc-300">
+                          {selectedPrompt || 'Prompt unavailable.'}
+                        </pre>
+                      </div>
+                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
+                        <dl className="grid gap-2 text-xs">
+                          <PathRow label="Prompt" value={selectedRow.promptPath} />
+                          <PathRow label="Request" value={activeRun.paths.requestPath} />
+                          <PathRow label="Inbox" value={activeRun.paths.handoffInboxDir} />
+                        </dl>
+                      </div>
                     </div>
-                  </button>
-                ))}
-              </div>
+                  )}
+
+                  {inspectorTab === 'artifacts' && (
+                    <div className="grid gap-3">
+                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
+                        <div className="text-xs font-black uppercase tracking-widest text-zinc-500">
+                          Row Paths
+                        </div>
+                        <dl className="mt-2 grid gap-2 text-xs">
+                          <PathRow label="Guide" value={selectedRow.layoutGuidePath} />
+                          <PathRow label="Raw" value={selectedRow.rawPath ?? 'not imported'} />
+                          <PathRow label="Frames" value={activeRun.paths.framesDir} />
+                          <PathRow label="Outbox" value={activeRun.paths.handoffOutboxDir} />
+                        </dl>
+                      </div>
+
+                      {activeRun.status === 'composed' || activeRun.status === 'qa_passed' ? (
+                        <div className="rounded-lg border border-white/2 bg-white/[0.03] p-2">
+                          <div className="mb-2 text-xs font-black uppercase tracking-widest text-zinc-500">
+                            Atlas
+                          </div>
+                          <img
+                            src={getSpriteAtlasAtlasUrl(activeRun.id)}
+                            alt=""
+                            className="h-auto w-full rounded-md border border-white/2 bg-black object-contain"
+                          />
+                        </div>
+                      ) : (
+                        <EmptyState
+                          icon={<Package size={28} />}
+                          title="Atlas not composed"
+                          copy="Compose writes atlas.png and manifest.json."
+                        />
+                      )}
+
+                      {activeRun.qa && (
+                        <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3 text-xs text-zinc-300">
+                          <div className="flex items-center justify-between gap-2">
+                            <span className="font-black uppercase tracking-widest text-zinc-500">
+                              QA Report
+                            </span>
+                            <span className="font-mono text-zinc-500">{activeRun.qa.mode}</span>
+                          </div>
+                          <p className="mt-2 text-zinc-300">{activeRun.qa.summary}</p>
+                          {activeRun.qa.issues.length > 0 && (
+                            <ul className="mt-2 grid gap-1 text-amber-200">
+                              {activeRun.qa.issues.map((issue) => (
+                                <li key={issue}>{issue}</li>
+                              ))}
+                            </ul>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </>
             ) : (
-              <div className="py-5 text-center text-xs text-zinc-600">No runs yet</div>
+              <div className="grid h-full place-items-center p-3">
+                <EmptyState
+                  icon={<FileText size={32} />}
+                  title="Select a row"
+                  copy="No row loaded."
+                />
+              </div>
             )}
-          </div>
-        </aside>
+          </aside>
+        </RecipeControls>
+
+        <RecipeControls>
+          <aside className="min-h-0 overflow-hidden rounded-lg border border-white/2 bg-black/30 xl:col-start-1 xl:row-start-2">
+            <div className="flex items-center justify-between gap-2 border-b border-white/2 p-3">
+              <div className="text-xs font-black uppercase tracking-widest text-zinc-500">
+                Recent Runs
+              </div>
+              <span className="font-mono text-[10px] text-zinc-600">{runs.length}</span>
+            </div>
+            <div className="custom-scrollbar max-h-52 overflow-y-auto p-2 xl:max-h-64">
+              {runs.length > 0 ? (
+                <div className="grid gap-1.5">
+                  {runs.slice(0, 12).map((run) => (
+                    <button
+                      key={run.id}
+                      type="button"
+                      onClick={() => {
+                        setActiveRun(run);
+                        setSelectedRowId(run.rows[0]?.id ?? null);
+                      }}
+                      className={`rounded-lg border p-2 text-left transition hover:border-white/2 ${
+                        activeRun?.id === run.id
+                          ? 'border-sky-400/2 bg-sky-500/10'
+                          : 'border-white/2 bg-white/[0.025]'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="min-w-0 truncate text-xs font-bold text-zinc-200">
+                          {run.title}
+                        </span>
+                        <span
+                          className={`shrink-0 rounded border px-1.5 py-0.5 text-[8px] font-black uppercase tracking-widest ${getRunTone(
+                            run.status,
+                          )}`}
+                        >
+                          {STAGE_LABELS[run.status]}
+                        </span>
+                      </div>
+                      <div className="mt-1 flex items-center justify-between gap-2 text-[10px] text-zinc-600">
+                        <span>{run.contract.presetId}</span>
+                        <span>{formatUpdatedAt(run.updatedAt)}</span>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <div className="py-5 text-center text-xs text-zinc-600">No runs yet</div>
+              )}
+            </div>
+          </aside>
+        </RecipeControls>
       </div>
     </div>
   );

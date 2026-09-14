@@ -438,10 +438,20 @@ export function createSpriteAtlasService({
       const run = await getRun(runId);
       if (!run) return null;
       const issues: string[] = [];
-      const hasGeneratedRows = run.rows.some((row) => Boolean(row.rawPath));
-      const mode: SpriteAtlasQaReport['mode'] = hasGeneratedRows
-        ? 'generated_art'
-        : 'fixture_smoke';
+      const manifest = await readFile(run.paths.manifestPath, 'utf8')
+        .then((contents) => JSON.parse(contents) as { mode?: string })
+        .catch(() => null);
+      const mode: SpriteAtlasQaReport['mode'] =
+        manifest?.mode === 'generated_art' ? 'generated_art' : 'fixture_smoke';
+      if (!manifest || !['generated_art', 'fixture_smoke'].includes(manifest.mode ?? ''))
+        issues.push('The atlas manifest does not identify a valid composition mode.');
+      if (mode === 'generated_art') {
+        const importedRows = await Promise.all(
+          run.rows.map((row) => (row.rawPath ? fileExists(row.rawPath) : Promise.resolve(false))),
+        );
+        if (!importedRows.length || importedRows.some((exists) => !exists))
+          issues.push('Generated-art validation requires every imported row image.');
+      }
       const checks = await Promise.all([
         fileExists(run.paths.requestPath),
         fileExists(run.paths.atlasPath),
@@ -455,8 +465,8 @@ export function createSpriteAtlasService({
       if (!checks[2]) issues.push('manifest.json is missing.');
       if (checks.slice(3).some((ok) => !ok))
         issues.push('One or more prompts or layout guides are missing.');
-      if (!hasGeneratedRows) {
-        issues.push('No imagegen-backed row art has been imported; QA is fixture smoke only.');
+      if (mode === 'fixture_smoke') {
+        issues.push('The composed atlas is test art; QA is fixture smoke only.');
       }
 
       const report: SpriteAtlasQaReport = {

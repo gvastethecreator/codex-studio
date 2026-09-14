@@ -1,3 +1,4 @@
+import { summarizePersistentJobs } from '../lib/persistentJobSummary';
 import React from 'react';
 import {
   IconActivity as Activity,
@@ -25,8 +26,9 @@ function getJobTone(job: StudioJob) {
   switch (job.status) {
     case 'completed':
       return 'text-emerald-300 border-emerald-500/2 bg-emerald-500/10';
-    case 'failed':
     case 'cancelled':
+      return 'text-zinc-300 border-white/10 bg-white/5';
+    case 'failed':
       return 'text-rose-300 border-rose-500/2 bg-rose-500/10';
     case 'needs_review':
       return 'text-amber-200 border-amber-500/2 bg-amber-500/10';
@@ -48,9 +50,8 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
   const isDrawer = variant === 'drawer';
   const recentJobs = studioJobs.slice(0, isDrawer ? 10 : 6);
   const recentLogs = logs.slice(0, isDrawer ? 80 : 30);
-  const activeJobCount = studioJobs.filter(
-    (job) => job.status === 'queued' || job.status === 'running' || job.status === 'needs_review',
-  ).length;
+  const jobSummary = summarizePersistentJobs(studioJobs);
+  const activeJobCount = jobSummary.queued + jobSummary.running;
 
   const sectionTitleClass = isDrawer
     ? 'text-[11px] font-black text-zinc-400 uppercase tracking-[0.18em]'

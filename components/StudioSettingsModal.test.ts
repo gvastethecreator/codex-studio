@@ -48,7 +48,7 @@ describe('StudioSettingsModal provider defaults', () => {
     expect(settingsSource).toContain('overflow-x-auto');
     expect(
       readFileSync(path.join(import.meta.dirname, '..', 'lib', 'studioSettingsDomains.ts'), 'utf8'),
-    ).toContain("label: 'Providers'");
+    ).toContain("label: 'Providers & accounts'");
   });
 
   it('keeps Workspace-first output presets alongside date provider model and recipe', () => {

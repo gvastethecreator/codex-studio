@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
   IconAlertTriangle as AlertTriangle,
-  IconBrain as BrainCircuit,
   IconCircleCheck as CheckCircle2,
   IconChevronLeft as ChevronLeft,
   IconChevronRight as ChevronRight,
@@ -58,8 +57,9 @@ function getServerStatusColor(status: StudioJob['status']) {
     case 'completed':
       return 'text-emerald-400';
     case 'failed':
-    case 'cancelled':
       return 'text-rose-400';
+    case 'cancelled':
+      return 'text-zinc-400';
     case 'needs_review':
       return 'text-amber-300';
     default:
@@ -86,33 +86,19 @@ function formatDurationMs(value: number | null) {
   return minutes <= 0 ? `${seconds}s` : `${minutes}m ${seconds}s`;
 }
 
-const StatItem = ({ label, value, color }: { label: string; value: number; color: string }) => (
-  <div className="flex flex-col items-center justify-center bg-black/20 px-1.5 py-1">
-    <span className={cn('text-[11px] font-bold', color)}>{value}</span>
-    <span className="text-[8px] font-bold uppercase tracking-tighter text-white/30">{label}</span>
-  </div>
-);
-
 function formatQueueTaskLabel(value: string | null | undefined) {
   if (!value) return 'Task';
   return value.replace(/_/g, ' ').replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
-function resolveQueueRecipeTone(recipeId: string | null | undefined, fallbackTask?: string | null) {
-  const recipe = getActiveRecipeIndicator(isRegisteredRecipeId(recipeId) ? recipeId : null);
-  if (recipe) {
-    return {
-      label: recipe.title,
-      toneClassName: recipe.toneClassName,
-      dotClassName: recipe.dotClassName,
-    };
-  }
-
-  return {
-    label: formatQueueTaskLabel(fallbackTask),
-    toneClassName: 'border-white/2 bg-white/5 text-white/45',
-    dotClassName: 'bg-white/35',
-  };
+function resolveQueueRecipeLabel(
+  recipeId: string | null | undefined,
+  fallbackTask?: string | null,
+) {
+  return (
+    getActiveRecipeIndicator(isRegisteredRecipeId(recipeId) ? recipeId : null)?.title ??
+    formatQueueTaskLabel(fallbackTask)
+  );
 }
 
 export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
@@ -132,17 +118,24 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const jobHistory = useJobHistory(serverJobs, workspaceFilter, statusFilter);
     const worker = useWorkerDiagnostics();
     const waitReasons = new Map(worker.status?.waiting.map((entry) => [entry.jobId, entry]) ?? []);
-    const batches = useMemo(() => {
-      const revisions = new Map<string, string>();
-      for (const job of [...jobHistory.open, ...jobHistory.history]) {
-        if (
-          job.batchId &&
-          (!revisions.has(job.batchId) || job.updatedAt > revisions.get(job.batchId)!)
-        )
-          revisions.set(job.batchId, job.updatedAt);
-      }
-      return [...revisions];
-    }, [jobHistory.open, jobHistory.history]);
+    const [view, setView] = useState<'active' | 'review' | 'history'>('active');
+    const [visibleCount, setVisibleCount] = useState(20);
+    const activeJobs = jobHistory.open.filter((job) => job.status !== 'needs_review');
+    const reviewJobs = jobHistory.open.filter((job) => job.status === 'needs_review');
+    const jobs =
+      view === 'history' ? jobHistory.history : view === 'review' ? reviewJobs : activeJobs;
+    const visibleJobs = view === 'history' ? jobs : jobs.slice(0, visibleCount);
+    const jobGroups = Array.from(
+      visibleJobs
+        .reduce((groups, job) => {
+          const key = job.batchId ?? job.id;
+          const group = groups.get(key) ?? [];
+          group.push(job);
+          groups.set(key, group);
+          return groups;
+        }, new Map<string, StudioJob[]>())
+        .entries(),
+    );
     const activeResultIndex = activeResultId
       ? results.findIndex((result) => result.id === activeResultId)
       : -1;
@@ -164,142 +157,188 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     }, [hasLiveDurations]);
 
     return (
-      <div className="flex h-full w-full flex-col border border-white/2 bg-zinc-950 backdrop-blur-xl sm:w-[304px] sm:border-y-0 sm:border-r-0 sm:border-l sm:bg-black/45">
-        <div className="flex items-center justify-between border-b border-white/2 bg-white/5 px-2.5 py-2">
-          <div className="flex items-center gap-1.5">
-            <div className="rounded-md bg-accent-500/20 p-1.5 text-accent-400">
-              <Layers size={16} />
-            </div>
-            <div>
-              <h3 className="text-xs font-semibold text-white/90">Persistent Jobs</h3>
-              <p className="text-[10px] font-medium uppercase tracking-wider text-white/40">
-                {jobHistory.page
-                  ? `${jobHistory.page.globalOpenCount} open across all workspaces${jobHistory.error ? ' (last confirmed)' : ''}`
-                  : jobHistory.error
-                    ? 'Jobs unavailable'
-                    : 'Loading jobs'}
-              </p>
-            </div>
+      <div
+        aria-label="Jobs"
+        className="flex h-full min-h-0 w-full flex-col border border-white/10 bg-zinc-950 sm:w-[304px] sm:border-y-0 sm:border-r-0"
+      >
+        <div className="flex items-center justify-between px-3 py-3">
+          <div>
+            <h3 className="text-sm font-semibold text-white/90">Jobs</h3>
+            <p className="mt-0.5 text-xs text-zinc-400">
+              {jobHistory.error
+                ? 'Updates unavailable · last confirmed state'
+                : jobHistory.loading && !jobHistory.page
+                  ? 'Loading jobs…'
+                  : summary.running + summary.queued > 0
+                    ? `${summary.running} running · ${summary.queued} queued`
+                    : 'No jobs running or queued'}
+            </p>
           </div>
           {onClose ? (
             <button
               type="button"
               aria-label="Close jobs"
               onClick={onClose}
-              className="studio-hit-target rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
-              title="Close jobs"
+              className="studio-hit-target rounded-lg p-1.5 text-zinc-400 hover:bg-white/10 hover:text-white"
             >
-              <XCircle size={16} />
+              <XCircle size={18} />
             </button>
           ) : null}
         </div>
-
-        <div className="grid grid-cols-4 gap-px border-b border-white/2 bg-white/10">
-          <StatItem label="Open" value={summary.total} color="text-white/40" />
-          <StatItem label="Running" value={summary.running} color="text-accent-400" />
-          <StatItem label="Queued" value={summary.queued} color="text-white/40" />
-          <StatItem label="Review" value={summary.attention} color="text-amber-400" />
-        </div>
-
-        <div className="custom-scrollbar flex-1 space-y-1 overflow-y-auto p-1">
-          {batches.map(([batchId, revision]) => (
-            <QueueBatchCard key={batchId} batchId={batchId} revision={revision} />
-          ))}
-          <section className="rounded-lg border border-white/2 bg-white/5 p-1.5">
-            <div className="mb-2 px-1 text-[10px] text-white/60" aria-label="Worker capacity">
-              {worker.status ? (
-                <>
-                  <p>
-                    {worker.status.activeWorkerCount} / {worker.status.maxConcurrentJobs} worker
-                    slots active{worker.status.stopping ? ' · Stopping' : ''}
-                  </p>
-                  <details>
-                    <summary className="cursor-pointer">Provider limits</summary>
-                    {Object.entries(worker.status.providerLimits).map(([provider, limit]) => (
-                      <p key={provider}>
-                        {provider}: {worker.status!.activeByProvider[provider] ?? 0} / {limit}
-                      </p>
-                    ))}
-                  </details>
-                </>
-              ) : (
-                <p>{worker.error ? 'Worker capacity unavailable' : 'Reading worker capacity'}</p>
-              )}
-            </div>
-            <div className="mb-1 flex items-center justify-between px-1">
-              <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
-                Recent Results
-              </span>
-              <span className="text-[9px] font-bold text-emerald-400">{results.length}</span>
-            </div>
-            {results.length > 0 ? (
-              <div className="custom-scrollbar h-24 overflow-y-auto pr-1">
-                <div className="grid grid-cols-4 gap-1">
-                  {results.map((result) => (
-                    <button
-                      type="button"
-                      key={result.id}
-                      onClick={() => setActiveResultId(result.id)}
-                      className={cn(
-                        'group relative rounded border p-0.5 transition-colors cursor-pointer',
-                        selectedJobId && result.jobId === selectedJobId
-                          ? 'border-accent-500/2 bg-accent-500/10'
-                          : 'border-white/2 bg-black/20 hover:border-white/2',
-                      )}
-                      title={result.prompt || 'Generated result'}
-                    >
-                      <img
-                        src={result.src}
-                        alt={result.prompt || 'Generated result'}
-                        width={64}
-                        height={64}
-                        className="aspect-square w-full rounded object-cover"
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <span className="absolute inset-0 grid place-items-center rounded text-white opacity-0 transition-opacity group-hover:bg-black/35 group-hover:opacity-100">
-                        <Maximize2 size={12} />
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <div className="rounded-lg border border-dashed border-white/2 bg-black/20 p-3 text-[10px] text-zinc-600">
-                Completed images for the active workspace will appear here.
-              </div>
-            )}
-          </section>
-
-          <section className="rounded-lg border border-white/2 bg-white/5 p-1.5">
-            <div className="mb-2 flex items-center justify-between px-1 py-1">
-              <span className="text-[9px] font-black uppercase tracking-widest text-white/35">
-                Open jobs
-              </span>
-              <span className="text-[9px] font-bold text-accent-400">{jobHistory.open.length}</span>
-            </div>
-            <label className="mb-2 block text-[10px] text-white/60">
-              Workspace
-              <select
-                aria-label="Job workspace"
-                value={workspaceFilter}
-                onChange={(event) => setWorkspaceFilter(event.target.value)}
-                className="mt-1 w-full rounded bg-zinc-900 p-2 text-white"
+        <div className="space-y-3 border-b border-white/10 px-3 pb-3">
+          <label className="block text-xs text-zinc-400">
+            Workspace
+            <select
+              aria-label="Job workspace"
+              value={workspaceFilter}
+              onChange={(event) => {
+                setWorkspaceFilter(event.target.value);
+                setVisibleCount(20);
+              }}
+              className="mt-1 w-full rounded-lg border border-white/10 bg-zinc-900 p-2 text-xs text-white"
+            >
+              <option value="">All workspaces</option>
+              {jobHistory.workspaces.map((workspace) => (
+                <option key={workspace.id} value={workspace.id}>
+                  {workspace.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <div
+            role="group"
+            aria-label="Job views"
+            className="grid grid-cols-3 gap-1 rounded-lg bg-black/40 p-1"
+          >
+            {(['active', 'review', 'history'] as const).map((item) => (
+              <button
+                key={item}
+                type="button"
+                aria-pressed={view === item}
+                onClick={() => {
+                  setView(item);
+                  setVisibleCount(20);
+                }}
+                className={cn(
+                  'min-h-9 rounded-md px-1 text-xs transition-colors',
+                  view === item
+                    ? 'bg-white/10 text-white'
+                    : 'text-zinc-400 hover:bg-white/5 hover:text-white',
+                )}
               >
-                <option value="">All workspaces</option>
-                {jobHistory.workspaces.map((workspace) => (
-                  <option key={workspace.id} value={workspace.id}>
-                    {workspace.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <div className="space-y-1">
-              {jobHistory.open.length > 0 ? (
-                jobHistory.open.map((job) => (
+                {item === 'active' ? 'Active' : item === 'review' ? 'Review' : 'History'}
+                {item !== 'history' ? (
+                  <span
+                    className={cn(
+                      'ml-1 tabular-nums',
+                      item === 'review' && reviewJobs.length > 0 && 'text-amber-300',
+                    )}
+                  >
+                    {item === 'active' ? activeJobs.length : reviewJobs.length}
+                  </span>
+                ) : null}
+              </button>
+            ))}
+          </div>
+        </div>
+        <div
+          key={`${view}:${workspaceFilter}`}
+          className="custom-scrollbar min-h-0 flex-1 space-y-3 overflow-y-auto p-3"
+        >
+          {jobHistory.error ? (
+            <div
+              role="alert"
+              className="space-y-2 rounded-lg border border-rose-500/20 p-3 text-xs text-rose-300"
+            >
+              <p>{jobHistory.error}</p>
+              <button type="button" onClick={jobHistory.retry} className="min-h-8 underline">
+                Refresh jobs
+              </button>
+            </div>
+          ) : null}
+          {view === 'review' ? (
+            <p className="text-xs leading-relaxed text-zinc-400">
+              These jobs have stopped and need a decision. Open a job to review what happened.
+            </p>
+          ) : null}
+          {view === 'history' ? (
+            <>
+              <label className="block text-xs text-zinc-400">
+                Status
+                <select
+                  aria-label="Job history status"
+                  value={statusFilter}
+                  onChange={(event) =>
+                    setStatusFilter(event.target.value as TerminalJobStatus | '')
+                  }
+                  className="mt-1 w-full rounded-lg border border-white/10 bg-zinc-900 p-2 text-xs text-white"
+                >
+                  <option value="">All finished jobs</option>
+                  <option value="completed">Completed</option>
+                  <option value="failed">Failed</option>
+                  <option value="cancelled">Cancelled</option>
+                </select>
+              </label>
+              {results.length > 0 ? (
+                <details className="rounded-lg border border-white/10 p-2 text-xs text-zinc-400">
+                  <summary className="cursor-pointer py-1">
+                    Recent images · current workspace
+                  </summary>
+                  <div className="mt-2 grid grid-cols-4 gap-1">
+                    {results.map((result) => (
+                      <button
+                        type="button"
+                        key={result.id}
+                        onClick={() => setActiveResultId(result.id)}
+                        className="group relative overflow-hidden rounded border border-white/10"
+                        title={result.prompt || 'Generated result'}
+                      >
+                        <img
+                          src={result.src}
+                          alt={result.prompt || 'Generated result'}
+                          width={64}
+                          height={64}
+                          className="aspect-square w-full object-cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        <span className="absolute inset-0 grid place-items-center text-white opacity-0 group-hover:bg-black/35 group-hover:opacity-100 group-focus-visible:opacity-100">
+                          <Maximize2 size={14} />
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                </details>
+              ) : null}
+              <p className="text-xs text-zinc-400">
+                {jobHistory.page?.counts.history ?? '—'} matching jobs
+              </p>
+            </>
+          ) : null}
+          <section
+            aria-label={
+              view === 'active'
+                ? 'Active jobs'
+                : view === 'review'
+                  ? 'Jobs needing review'
+                  : 'Job history'
+            }
+            className="space-y-2"
+          >
+            {jobGroups.map(([groupId, group]) => (
+              <div key={groupId} className="space-y-2">
+                {group.length > 1 && (
+                  <p className="pt-3 text-xs text-zinc-300">
+                    {resolveQueueRecipeLabel(group[0].recipeId, group[0].kind)} · {group.length}{' '}
+                    jobs on this page · {group.filter((job) => job.status === 'completed').length}{' '}
+                    completed
+                  </p>
+                )}
+                {group.map((job, index) => (
                   <ServerJobItem
                     key={job.id}
                     job={job}
+                    showBatch={index === 0}
                     waitReason={
                       job.status === 'queued' && waitReasons.has(job.id)
                         ? formatWaitReason(waitReasons.get(job.id)!)
@@ -312,76 +351,74 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                     onRetry={onRetryServerJob ? () => onRetryServerJob(job.id) : undefined}
                     onCancel={() => onCancelServerJob(job.id)}
                   />
-                ))
-              ) : (
-                <div className="flex flex-col items-center justify-center p-8 text-center opacity-20">
-                  <Layers size={42} className="mb-3" />
-                  <p className="text-sm font-medium">
-                    {jobHistory.loading ? 'Loading jobs' : 'No open jobs'}
-                  </p>
-                  <p className="text-xs">New generations will appear here</p>
-                </div>
-              )}
-            </div>
-          </section>
-          <section className="space-y-2 rounded-lg border border-white/2 bg-white/5 p-2">
-            <div className="flex items-center justify-between text-[10px] text-white/60">
-              <span>History</span>
-              <span>
-                {jobHistory.page?.counts.history ?? '—'} matching jobs
-                {jobHistory.error ? ' (last confirmed)' : ''}
-              </span>
-            </div>
-            <select
-              aria-label="Job history status"
-              value={statusFilter}
-              onChange={(event) => setStatusFilter(event.target.value as TerminalJobStatus | '')}
-              className="w-full rounded bg-zinc-900 p-2 text-[11px] text-white"
-            >
-              <option value="">All finished states</option>
-              <option value="completed">Completed</option>
-              <option value="failed">Failed</option>
-              <option value="cancelled">Cancelled</option>
-            </select>
-            {jobHistory.history.map((job) => (
-              <ServerJobItem
-                key={job.id}
-                job={job}
-                previewSrc={resultsByJobId.get(job.id) ?? null}
-                nowMs={nowMs}
-                isSelected={selectedJobId === job.id}
-                onInspect={() => onInspectJob(job.id)}
-                onRetry={onRetryServerJob ? () => onRetryServerJob(job.id) : undefined}
-                onCancel={() => onCancelServerJob(job.id)}
-              />
-            ))}
-            {!jobHistory.loading && !jobHistory.error && jobHistory.history.length === 0 ? (
-              <p className="text-[11px] text-white/50">No matching history.</p>
-            ) : null}
-            {jobHistory.error ? (
-              <div role="alert" className="space-y-1 text-[11px] text-rose-300">
-                <p>{jobHistory.error}</p>
-                <button type="button" onClick={jobHistory.retry} className="underline">
-                  Retry history
-                </button>
+                ))}
               </div>
-            ) : null}
-            {jobHistory.loading ? (
-              <p role="status" className="text-[11px] text-white/50">
-                Loading history…
-              </p>
-            ) : jobHistory.nextCursor ? (
-              <button
-                type="button"
-                onClick={jobHistory.loadMore}
-                className="w-full rounded bg-white/10 p-2 text-[11px] text-white"
-              >
-                Load older jobs
-              </button>
-            ) : jobHistory.history.length > 0 && !jobHistory.error ? (
-              <p className="text-[10px] text-white/40">All matching history loaded.</p>
-            ) : null}
+            ))}
           </section>
+          {!jobHistory.loading && !jobHistory.error && jobs.length === 0 ? (
+            <div className="py-8 text-center">
+              <Layers size={24} className="mx-auto mb-3 text-zinc-500" />
+              <p className="text-sm text-zinc-200">
+                {view === 'active'
+                  ? 'No active jobs'
+                  : view === 'review'
+                    ? 'Nothing to review'
+                    : 'No matching history'}
+              </p>
+              <p className="mt-1 text-xs leading-relaxed text-zinc-400">
+                {view === 'active'
+                  ? 'New generations will appear here.'
+                  : view === 'review'
+                    ? 'Jobs that need your input will appear here.'
+                    : 'Try another status or workspace.'}
+              </p>
+            </div>
+          ) : null}
+          {jobHistory.loading ? (
+            <p role="status" className="text-xs text-zinc-400">
+              Loading jobs…
+            </p>
+          ) : null}
+          {view !== 'history' && jobs.length > visibleCount ? (
+            <button
+              type="button"
+              onClick={() => setVisibleCount((count) => count + 20)}
+              className="min-h-9 w-full rounded-lg bg-white/10 px-2 text-xs text-white"
+            >
+              Show more · {visibleJobs.length} of {jobs.length}
+            </button>
+          ) : view === 'history' && jobHistory.nextCursor && !jobHistory.loading ? (
+            <button
+              type="button"
+              onClick={jobHistory.loadMore}
+              className="min-h-9 w-full rounded-lg bg-white/10 px-2 text-xs text-white"
+            >
+              Load older jobs
+            </button>
+          ) : null}
+          {view === 'active' ? (
+            <details className="border-t border-white/10 pt-3 text-xs text-zinc-400">
+              <summary className="cursor-pointer py-1">Worker details</summary>
+              <div className="mt-2 space-y-1" aria-label="Worker capacity">
+                {worker.status ? (
+                  <>
+                    <p>
+                      {worker.status.activeWorkerCount} / {worker.status.maxConcurrentJobs} worker
+                      slots active{worker.status.stopping ? ' · Stopping' : ''}
+                    </p>
+                    {Object.entries(worker.status.providerLimits).map(([providerId, limit]) => (
+                      <p key={providerId}>
+                        {providerId}: {worker.status?.activeByProvider[providerId] ?? 0} / {limit}{' '}
+                        active
+                      </p>
+                    ))}
+                  </>
+                ) : (
+                  <p>{worker.error ? 'Worker capacity unavailable' : 'Reading worker capacity'}</p>
+                )}
+              </div>
+            </details>
+          ) : null}
         </div>
 
         {activeResult ? (
@@ -496,6 +533,7 @@ const RecentResultViewer: React.FC<{
 
 const ServerJobItem: React.FC<{
   job: StudioJob;
+  showBatch?: boolean;
   waitReason?: string;
   previewSrc: string | null;
   nowMs: number;
@@ -503,136 +541,121 @@ const ServerJobItem: React.FC<{
   onInspect: () => void;
   onRetry?: () => void;
   onCancel: () => void;
-}> = ({ job, waitReason, previewSrc, nowMs, isSelected, onInspect, onRetry, onCancel }) => {
+}> = ({
+  job,
+  showBatch = true,
+  waitReason,
+  previewSrc,
+  nowMs,
+  isSelected,
+  onInspect,
+  onRetry,
+  onCancel,
+}) => {
+  const [batchOpen, setBatchOpen] = useState(false);
   const canCancel = job.status === 'queued' || job.status === 'running';
   const canResume = canResumeStudioJob(job);
   const canRetry = Boolean(onRetry) && (canRetryStudioJob(job) || canResume);
-  const statusColor = getServerStatusColor(job.status);
-  const recipeTone = resolveQueueRecipeTone(job.recipeId, job.kind);
+  const recipeLabel = resolveQueueRecipeLabel(job.recipeId, job.kind);
   const createdAtMs = toEpochMs(job.createdAt);
-  const completedAtMs = toEpochMs(job.completedAt ?? null);
-  const durationMs = createdAtMs ? (completedAtMs ?? nowMs) - createdAtMs : null;
-  const icon = canCancel ? (
-    <Loader2 size={13} className="mt-0.5 shrink-0 animate-spin text-accent-400" />
-  ) : job.status === 'completed' ? (
-    <CheckCircle2 size={13} className="mt-0.5 shrink-0 text-emerald-400" />
-  ) : job.status === 'needs_review' ? (
-    <AlertTriangle size={13} className="mt-0.5 shrink-0 text-amber-300" />
-  ) : job.status === 'failed' || job.status === 'cancelled' ? (
-    <AlertTriangle size={13} className="mt-0.5 shrink-0 text-rose-400" />
-  ) : (
-    <Clock size={13} className="mt-0.5 shrink-0 text-white/30" />
-  );
-
+  const statusLabel =
+    job.status === 'needs_review' ? 'Needs review' : formatQueueTaskLabel(job.status);
+  const icon =
+    job.status === 'running' ? (
+      <Loader2 size={14} className="motion-safe:animate-spin" />
+    ) : job.status === 'completed' ? (
+      <CheckCircle2 size={14} />
+    ) : job.status === 'needs_review' || job.status === 'failed' ? (
+      <AlertTriangle size={14} />
+    ) : (
+      <Clock size={14} />
+    );
   return (
-    <div
+    <article
       className={cn(
-        'relative flex items-start gap-1.5 overflow-hidden rounded-[6px] border px-1.5 py-1 transition-colors',
-        isSelected
-          ? 'border-accent-500/2 bg-accent-500/10'
-          : 'border-white/2 bg-black/20 hover:border-white/2 hover:bg-white/5',
+        'overflow-hidden rounded-lg border p-2.5',
+        isSelected ? 'border-accent-500/50 bg-accent-500/10' : 'border-white/10 bg-white/[0.025]',
       )}
     >
-      <span className={cn('absolute inset-y-0 left-0 w-0.5', recipeTone.dotClassName)} />
       <button
         type="button"
         onClick={onInspect}
-        className="flex min-w-0 flex-1 items-start gap-1.5 text-left cursor-pointer"
+        aria-label={`Inspect job: ${job.originalPrompt || 'Untitled job'}`}
+        className="block w-full rounded text-left"
       >
-        <div className="mt-0.5 shrink-0">{icon}</div>
-        <div className="mt-0.5 size-7 shrink-0 overflow-hidden rounded-[6px] border border-white/2 bg-black/40">
+        <div className="mb-2 flex items-center justify-between gap-2 text-[11px]">
+          <span className={cn('flex items-center gap-1.5', getServerStatusColor(job.status))}>
+            {icon}
+            {statusLabel}
+          </span>
+          <span className="truncate text-zinc-400">{recipeLabel}</span>
+        </div>
+        <div className="flex items-start gap-2">
           {previewSrc ? (
             <img
               src={previewSrc}
-              alt="Job thumbnail"
-              width={28}
-              height={28}
-              className="h-full w-full object-cover"
+              alt=""
+              width={36}
+              height={36}
+              className="size-9 shrink-0 rounded object-cover"
               loading="lazy"
               decoding="async"
             />
-          ) : (
-            <div className="flex h-full w-full items-center justify-center text-[9px] text-zinc-600">
-              -
-            </div>
-          )}
-        </div>
-        <div className="min-w-0 flex-1">
-          <p className="line-clamp-1 text-[10px] font-semibold leading-tight text-white/90">
-            {job.originalPrompt}
+          ) : null}
+          <p className="line-clamp-2 text-xs leading-relaxed text-zinc-200">
+            {job.originalPrompt || 'Untitled job'}
           </p>
-          <div className="mt-0.5 flex items-center gap-1">
-            <span
-              className={cn(
-                'inline-flex items-center gap-1 rounded-[6px] border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
-                recipeTone.toneClassName,
-              )}
+        </div>
+        <p className="mt-2 text-[11px] text-zinc-400">
+          {job.status === 'running'
+            ? `Submitted ${formatDurationMs(createdAtMs === null ? null : nowMs - createdAtMs)} ago`
+            : job.status === 'queued'
+              ? 'Waiting to start'
+              : new Date(job.createdAt).toLocaleDateString([], { month: 'short', day: 'numeric' })}
+          <span className="mx-1.5">·</span>
+          {formatClockTime(createdAtMs)}
+          <span className="float-right text-zinc-300">Details →</span>
+        </p>
+      </button>
+      {waitReason ? <p className="mt-2 text-xs text-amber-300">{waitReason}</p> : null}
+      {job.error ? (
+        <p className="mt-2 line-clamp-2 text-[11px] leading-relaxed text-rose-300">{job.error}</p>
+      ) : null}
+      {canCancel || canRetry ? (
+        <div className="mt-2 flex justify-end">
+          {canCancel ? (
+            <button
+              type="button"
+              aria-label={`Cancel backend job ${job.id}`}
+              onClick={onCancel}
+              className="min-h-8 rounded-md px-2 text-xs text-zinc-300 hover:bg-white/10"
             >
-              <span className={cn('size-1.5 rounded-full', recipeTone.dotClassName)} />
-              {recipeTone.label}
-            </span>
-            <span
-              className={cn(
-                'rounded-[6px] border px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider',
-                statusColor,
-                job.status === 'completed'
-                  ? 'border-emerald-500/2 bg-emerald-500/10'
-                  : job.status === 'needs_review'
-                    ? 'border-amber-500/2 bg-amber-500/10'
-                    : job.status === 'failed' || job.status === 'cancelled'
-                      ? 'border-rose-500/2 bg-rose-500/10'
-                      : 'border-accent-500/2 bg-accent-500/10',
-              )}
+              Cancel
+            </button>
+          ) : null}
+          {canRetry ? (
+            <button
+              type="button"
+              aria-label={`${canResume ? 'Resume' : 'Retry'} backend job ${job.id}`}
+              onClick={onRetry}
+              title={canResume ? 'Resume existing remote job' : 'Retry this job'}
+              className="flex min-h-8 items-center gap-1.5 rounded-md bg-white/5 px-2 text-xs text-zinc-200 hover:bg-white/10"
             >
-              {job.status}
-            </span>
-          </div>
-          <div className="mt-0.5 flex items-center gap-1 text-[9px] text-white/35">
-            <span>{formatClockTime(createdAtMs)}</span>
-            <span>•</span>
-            <span>{formatDurationMs(durationMs)}</span>
-            {job.execution?.model ? (
-              <>
-                <span>•</span>
-                <span className="max-w-[120px] truncate text-zinc-500" title={job.execution.model}>
-                  {job.execution.model}
-                </span>
-              </>
-            ) : null}
-          </div>
-          {waitReason ? <p className="mt-1 text-[10px] text-amber-300">{waitReason}</p> : null}
-          {job.error ? (
-            <p className="mt-1 line-clamp-2 rounded-[6px] border border-rose-500/2 bg-rose-500/5 p-1 text-[9px] text-rose-300/80">
-              {job.error}
-            </p>
+              <RotateCcw size={13} />
+              {canResume ? 'Resume' : 'Retry'}
+            </button>
           ) : null}
         </div>
-      </button>
-      <div className="flex shrink-0 flex-col items-center gap-1 pt-0.5">
-        <BrainCircuit size={13} className="text-zinc-500" />
-        {canCancel ? (
-          <button
-            type="button"
-            aria-label={`Cancel backend job ${job.id}`}
-            onClick={onCancel}
-            className="studio-hit-target rounded-[6px] p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
-            title="Cancel backend job"
-          >
-            <XCircle size={13} />
-          </button>
-        ) : null}
-        {canRetry ? (
-          <button
-            type="button"
-            aria-label={`${canResume ? 'Resume' : 'Retry'} backend job ${job.id}`}
-            onClick={onRetry}
-            className="studio-hit-target rounded-[6px] p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
-            title={canResume ? 'Resume existing remote job' : 'Retry backend job'}
-          >
-            <RotateCcw size={13} />
-          </button>
-        ) : null}
-      </div>
-    </div>
+      ) : null}
+      {job.batchId && showBatch ? (
+        <details
+          onToggle={(event) => setBatchOpen(event.currentTarget.open)}
+          className="mt-2 border-t border-white/10 pt-1 text-[11px] text-zinc-400"
+        >
+          <summary className="cursor-pointer py-1">Batch progress and retry</summary>
+          {batchOpen ? <QueueBatchCard batchId={job.batchId} revision={job.updatedAt} /> : null}
+        </details>
+      ) : null}
+    </article>
   );
 };

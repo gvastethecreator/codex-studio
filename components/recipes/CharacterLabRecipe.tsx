@@ -1,3 +1,4 @@
+import { getRecipeStringParam } from '../../lib/recipeIdentity';
 import React, {
   useCallback,
   useEffect,
@@ -42,6 +43,8 @@ import {
 } from '../../lib/characterLabView';
 import { resolveRecipeAlias, type RecipeAliasId } from '../../lib/recipeAliases';
 import { normalizeImageGenRatio } from '../../utils/imageGenSizing';
+import { RecipeResultPreview } from './RecipeResultPreview';
+import { RecipeControls, RecipePrimaryAction } from './RecipeWorkbenchContext';
 import { RecipeLayout } from './RecipeLayout';
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
@@ -779,7 +782,7 @@ function ActionButton({
           <span
             className={`absolute left-2 top-2 rounded-md border bg-black/60 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest ${accent.border} ${accent.text}`}
           >
-            Active
+            Selected
           </span>
         )}
       </span>
@@ -797,7 +800,7 @@ function ActionButton({
         <span
           className={`mt-0.5 block truncate text-[7px] font-black uppercase tracking-widest ${selected ? accent.text : 'text-zinc-600'}`}
         >
-          {action.task}
+          {action.capability === 'ready' ? 'Prompt or reference' : 'Not yet available'}
         </span>
       </span>
       {locked && (
@@ -819,22 +822,37 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   onSelectImage,
   onUseAsSource,
 }) => {
-  const initialAliasMode = resolveCharacterLabModeFromAlias(recipeAliasId);
+  const [actionBrowserOpen, setActionBrowserOpen] = useState(false);
+  const actionToggleRef = useRef<HTMLButtonElement>(null);
+  const initialAliasMode =
+    (config.recipeParams?.mode as CharacterLabModeId) ??
+    resolveCharacterLabModeFromAlias(recipeAliasId);
   const [selectedMode, setSelectedMode] = useState<CharacterLabModeId>(initialAliasMode);
-  const [selectedActionId, setSelectedActionId] = useState(
-    () => getFirstReadyActionForMode(initialAliasMode).id,
+  const [selectedActionId, setSelectedActionId] = useState(() =>
+    getRecipeStringParam(config, 'actionId', getFirstReadyActionForMode(initialAliasMode).id),
   );
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(() => getRecipeStringParam(config, 'actionSearch', ''));
   const [capabilityNotice, setCapabilityNotice] = useState('');
-  const [subject, setSubject] = useState('');
-  const [style, setStyle] = useState<string>(characterLabGlobalOptions.styles[0]);
-  const [clothing, setClothing] = useState<string>(characterLabGlobalOptions.clothing[0]);
-  const [bodyType, setBodyType] = useState<string>(characterLabGlobalOptions.bodyTypes[0]);
-  const [expression, setExpression] = useState<string>(characterLabGlobalOptions.expressions[0]);
-  const [backgroundColor, setBackgroundColor] = useState<string>(
-    characterLabGlobalOptions.palettes[0].backgroundColor,
+  const [subject, setSubject] = useState(() => getRecipeStringParam(config, 'subject', ''));
+  const [style, setStyle] = useState<string>(() =>
+    getRecipeStringParam(config, 'style', characterLabGlobalOptions.styles[0]),
   );
-  const [labAspectRatio, setLabAspectRatio] = useState<string>('1:1');
+  const [clothing, setClothing] = useState<string>(() =>
+    getRecipeStringParam(config, 'clothing', characterLabGlobalOptions.clothing[0]),
+  );
+  const [bodyType, setBodyType] = useState<string>(() =>
+    getRecipeStringParam(config, 'bodyType', characterLabGlobalOptions.bodyTypes[0]),
+  );
+  const [expression, setExpression] = useState<string>(() =>
+    getRecipeStringParam(config, 'expression', characterLabGlobalOptions.expressions[0]),
+  );
+  const [backgroundColor, setBackgroundColor] = useState<string>(
+    getRecipeStringParam(config, 'backgroundColor') ||
+      characterLabGlobalOptions.palettes[0].backgroundColor,
+  );
+  const [labAspectRatio, setLabAspectRatio] = useState<string>(
+    () => getRecipeStringParam(config, 'labAspectRatio') || config.aspectRatio || '1:1',
+  );
   const sourceInputRef = useRef<HTMLInputElement>(null);
   const referenceInputRef = useRef<HTMLInputElement>(null);
 
@@ -852,7 +870,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   const hasCharacterBrief = subject.trim().length > 0;
   const sourceLabel = source ? 'Source locked' : 'Prompt guided';
   const workflowStateTitle = source
-    ? 'Source Ready'
+    ? 'Reference attached'
     : hasCharacterBrief
       ? 'Brief Ready'
       : 'Start With Source Or Brief';
@@ -875,6 +893,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
       hasSource: Boolean(source),
     }),
     [
+      search,
       backgroundColor,
       bodyType,
       clothing,
@@ -891,6 +910,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
     (action: CharacterLabAction, paramsOverride: Record<string, unknown> = {}) => ({
       mode: action.mode,
       actionId: action.id,
+      actionSearch: search,
       actionLabel: action.label,
       category: action.category,
       actionPrompt: action.prompt,
@@ -1101,191 +1121,144 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
       className="character-lab-shell overflow-hidden bg-[#101010] p-2 pb-[var(--studio-recipe-dock-space)] sm:p-3 sm:pb-3 max-xl:overflow-y-auto"
     >
       <div className="grid size-full min-h-0 grid-cols-[minmax(250px,5fr)_minmax(320px,6fr)_minmax(440px,9fr)] gap-3 max-xl:flex max-xl:h-auto max-xl:min-h-[1120px] max-xl:flex-col max-sm:min-h-0">
-        <aside
-          className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px] max-sm:min-h-[680px]"
-          data-panel="left"
+        <RecipeControls>
+          <aside
+            className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px] max-sm:min-h-[680px]"
+            data-panel="left"
+          >
+            <div className="shrink-0 border-b border-white/2 p-3">
+              <div className="flex items-center justify-between gap-2">
+                <div>
+                  <h2 className="text-[12px] font-black uppercase tracking-widest text-zinc-200">
+                    Action Setup
+                  </h2>
+                  <p className="mt-1 text-[10px] font-semibold text-zinc-600">
+                    {selectedAction.label} · {sourceLabel}
+                  </p>
+                </div>
+                <span
+                  className={`rounded-lg border px-2 py-1 text-[9px] font-black uppercase tracking-widest ${selectedAccent.border} ${selectedAccent.text}`}
+                >
+                  {capabilityLabel}
+                </span>
+              </div>
+            </div>
+
+            <div className="min-h-0 flex-1 overflow-y-auto p-3 pb-20 custom-scrollbar">
+              <label className="flex flex-col gap-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+                  Character Brief
+                </span>
+                <textarea
+                  name="character-lab-brief"
+                  value={subject}
+                  onChange={(event) => setSubject(event.target.value)}
+                  placeholder="e.g. Brave elven ranger, scar over left eye..."
+                  className="h-20 resize-none rounded-xl border border-white/2 bg-black/35 p-2.5 text-[12px] leading-relaxed text-zinc-100 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                />
+              </label>
+
+              <div className="mt-3 grid grid-cols-2 gap-2">
+                <SelectField
+                  label="Base Expression"
+                  value={expression}
+                  options={characterLabGlobalOptions.expressions}
+                  onChange={setExpression}
+                  kind="expression"
+                />
+                <SelectField
+                  label="Aspect Ratio"
+                  value={labAspectRatio}
+                  options={characterLabGlobalOptions.aspectRatios.flatMap((group) => group.ratios)}
+                  onChange={setOutputRatio}
+                  kind="ratio"
+                />
+                <SelectField
+                  label="Artistic Style"
+                  value={style}
+                  options={characterLabGlobalOptions.styles}
+                  onChange={setStyle}
+                  kind="style"
+                  className="col-span-2"
+                />
+                <SelectField
+                  label="Clothing"
+                  value={clothing}
+                  options={characterLabGlobalOptions.clothing}
+                  onChange={setClothing}
+                  kind="clothing"
+                  className="col-span-2"
+                />
+                <SelectField
+                  label="Body Type"
+                  value={bodyType}
+                  options={characterLabGlobalOptions.bodyTypes}
+                  onChange={setBodyType}
+                  kind="body"
+                  className="col-span-2"
+                />
+              </div>
+
+              <div className="mt-3">
+                <div className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+                  Background Color
+                </div>
+                <div className="grid grid-cols-4 gap-1.5">
+                  {characterLabGlobalOptions.palettes.map((palette) => (
+                    <button
+                      key={palette.name}
+                      type="button"
+                      onClick={() => setBackgroundColor(palette.backgroundColor)}
+                      className={`flex h-8 items-center justify-center rounded-lg border bg-black/35 transition-[border-color,background-color] duration-150 hover:border-white/2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+                        backgroundColor === palette.backgroundColor
+                          ? 'border-violet-400/2 bg-violet-500/10'
+                          : 'border-white/2'
+                      }`}
+                      aria-label={`Background ${palette.name}`}
+                    >
+                      <span className="flex -space-x-1">
+                        {palette.swatches.map((swatch) => (
+                          <span
+                            key={swatch}
+                            className="size-3.5 rounded-full border border-black/2"
+                            style={{ backgroundColor: swatch }}
+                          />
+                        ))}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </aside>
+        </RecipeControls>
+
+        <div className="character-result-area" hidden={actionBrowserOpen}>
+          <RecipeResultPreview
+            images={images.filter((image) => image.config.recipeId === 'character-lab')}
+            reference={config.attachments[0]}
+            onOpen={onSelectImage}
+          />
+        </div>
+        <button
+          type="button"
+          className="style-explorer-toggle"
+          ref={actionToggleRef}
+          aria-expanded={actionBrowserOpen}
+          onClick={() => setActionBrowserOpen(!actionBrowserOpen)}
         >
-          <div className="shrink-0 border-b border-white/2 p-2.5">
-            <div className="mb-1.5 flex items-center justify-between gap-2">
-              <div>
-                <div className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
-                  Attachments
-                </div>
-                <div className="mt-0.5 text-[8px] font-bold uppercase tracking-widest text-zinc-600">
-                  Principal + 3 refs
-                </div>
-              </div>
-              <span className="rounded-lg border border-white/2 bg-black/30 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
-                {source ? `${references.length}/3 refs` : 'source first'}
-              </span>
-            </div>
-
-            <div className="grid grid-cols-4 gap-1.5">
-              <AttachmentSetupSlot
-                kind="source"
-                label="Main"
-                attachment={source}
-                onClick={() => sourceInputRef.current?.click()}
-                onDrop={(files) => void handleSourceFiles(files)}
-                onRemove={source ? clearSource : undefined}
-              />
-              {[0, 1, 2].map((index) => {
-                const reference = references[index] ?? null;
-                return (
-                  <AttachmentSetupSlot
-                    key={index}
-                    kind="reference"
-                    label={`R${index + 1}`}
-                    attachment={reference}
-                    disabled={!source}
-                    onClick={() => referenceInputRef.current?.click()}
-                    onDrop={(files) => void handleReferenceFiles(files)}
-                    onRemove={reference ? () => removeReference(index) : undefined}
-                  />
-                );
-              })}
-            </div>
-
-            <p className="mt-1.5 line-clamp-2 text-[9px] leading-snug text-zinc-600">
-              {source
-                ? 'References are unlocked for costume, prop, mood, or identity details.'
-                : 'Add the principal image to unlock reference slots. Brief-only generation still works.'}
-            </p>
-
-            <input
-              ref={sourceInputRef}
-              name="character-lab-source"
-              type="file"
-              accept="image/png,image/jpeg,image/webp"
-              className="hidden"
-              aria-label="Upload source image"
-              onChange={(event) => {
-                if (event.target.files) void handleSourceFiles(Array.from(event.target.files));
-                event.currentTarget.value = '';
-              }}
-            />
-            <input
-              ref={referenceInputRef}
-              name="character-lab-references"
-              type="file"
-              multiple
-              accept="image/png,image/jpeg,image/webp"
-              className="hidden"
-              aria-label="Upload reference images"
-              onChange={(event) => {
-                if (event.target.files) void handleReferenceFiles(Array.from(event.target.files));
-                event.currentTarget.value = '';
-              }}
-            />
-          </div>
-
-          <div className="shrink-0 border-b border-white/2 p-3">
-            <div className="flex items-center justify-between gap-2">
-              <div>
-                <h2 className="text-[12px] font-black uppercase tracking-widest text-zinc-200">
-                  Action Setup
-                </h2>
-                <p className="mt-1 text-[10px] font-semibold text-zinc-600">
-                  {sourceLabel} / {selectedAction.task} / {selectedModeMeta.mediaType}
-                </p>
-              </div>
-              <span
-                className={`rounded-lg border px-2 py-1 text-[9px] font-black uppercase tracking-widest ${selectedAccent.border} ${selectedAccent.text}`}
-              >
-                {capabilityLabel}
-              </span>
-            </div>
-          </div>
-
-          <div className="min-h-0 flex-1 overflow-y-auto p-3 pb-20 custom-scrollbar">
-            <label className="flex flex-col gap-1.5">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
-                Character Brief
-              </span>
-              <textarea
-                name="character-lab-brief"
-                value={subject}
-                onChange={(event) => setSubject(event.target.value)}
-                placeholder="e.g. Brave elven ranger, scar over left eye..."
-                className="h-20 resize-none rounded-xl border border-white/2 bg-black/35 p-2.5 text-[12px] leading-relaxed text-zinc-100 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              />
-            </label>
-
-            <div className="mt-3 grid grid-cols-2 gap-2">
-              <SelectField
-                label="Base Expression"
-                value={expression}
-                options={characterLabGlobalOptions.expressions}
-                onChange={setExpression}
-                kind="expression"
-              />
-              <SelectField
-                label="Aspect Ratio"
-                value={labAspectRatio}
-                options={characterLabGlobalOptions.aspectRatios.flatMap((group) => group.ratios)}
-                onChange={setOutputRatio}
-                kind="ratio"
-              />
-              <SelectField
-                label="Artistic Style"
-                value={style}
-                options={characterLabGlobalOptions.styles}
-                onChange={setStyle}
-                kind="style"
-                className="col-span-2"
-              />
-              <SelectField
-                label="Clothing"
-                value={clothing}
-                options={characterLabGlobalOptions.clothing}
-                onChange={setClothing}
-                kind="clothing"
-                className="col-span-2"
-              />
-              <SelectField
-                label="Body Type"
-                value={bodyType}
-                options={characterLabGlobalOptions.bodyTypes}
-                onChange={setBodyType}
-                kind="body"
-                className="col-span-2"
-              />
-            </div>
-
-            <div className="mt-3">
-              <div className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-zinc-400">
-                Background Color
-              </div>
-              <div className="grid grid-cols-4 gap-1.5">
-                {characterLabGlobalOptions.palettes.map((palette) => (
-                  <button
-                    key={palette.name}
-                    type="button"
-                    onClick={() => setBackgroundColor(palette.backgroundColor)}
-                    className={`flex h-8 items-center justify-center rounded-lg border bg-black/35 transition-[border-color,background-color] duration-150 hover:border-white/2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
-                      backgroundColor === palette.backgroundColor
-                        ? 'border-violet-400/2 bg-violet-500/10'
-                        : 'border-white/2'
-                    }`}
-                    aria-label={`Background ${palette.name}`}
-                  >
-                    <span className="flex -space-x-1">
-                      {palette.swatches.map((swatch) => (
-                        <span
-                          key={swatch}
-                          className="size-3.5 rounded-full border border-black/2"
-                          style={{ backgroundColor: swatch }}
-                        />
-                      ))}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-        </aside>
-
+          {actionBrowserOpen ? 'Back to result' : 'Choose action'}
+        </button>
         <main
+          hidden={!actionBrowserOpen}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape' && !event.defaultPrevented) {
+              event.stopPropagation();
+              setActionBrowserOpen(false);
+              actionToggleRef.current?.focus();
+            }
+          }}
+          data-recipe-stage
           className="character-lab-panel z-10 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/75 shadow-2xl max-xl:min-h-[560px] max-sm:min-h-[500px]"
           data-panel="main"
         >
@@ -1323,6 +1296,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 />
                 <input
                   name="character-lab-action-search"
+                  aria-label="Search character actions"
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
                   placeholder={`Search ${characterLabOptionCounts.total} actions`}
@@ -1375,7 +1349,11 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                         key={action.id}
                         action={action}
                         selected={action.id === selectedAction.id}
-                        onSelect={setAction}
+                        onSelect={(action) => {
+                          setAction(action);
+                          setActionBrowserOpen(false);
+                          actionToggleRef.current?.focus();
+                        }}
                       />
                     ))}
                   </div>
@@ -1391,185 +1369,119 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
           </div>
         </main>
 
-        <aside
-          className="character-lab-panel relative z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px]"
-          data-panel="right"
-        >
-          <div className="shrink-0 border-b border-white/2 p-3">
-            <div className="flex items-start gap-2.5">
-              <span
-                className={`grid size-10 shrink-0 place-items-center rounded-lg border ${selectedAccent.border} ${selectedAccent.soft}`}
-              >
-                <CharacterLabIcon id={selectedAction.id} size={32} />
-              </span>
-              <div className="min-w-0">
-                <h2 className="text-[16px] font-black leading-tight text-balance text-zinc-100">
-                  {workflowStateTitle}
-                </h2>
-                <p className="mt-1 text-[11px] leading-relaxed text-pretty text-zinc-500">
-                  {workflowStateCopy}
-                </p>
+        <RecipeControls>
+          <aside
+            className="character-lab-panel relative z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px]"
+            data-panel="right"
+          >
+            <div className="shrink-0 border-b border-white/2 p-3">
+              <div className="flex items-start gap-2.5">
+                <span
+                  className={`grid size-10 shrink-0 place-items-center rounded-lg border ${selectedAccent.border} ${selectedAccent.soft}`}
+                >
+                  <CharacterLabIcon id={selectedAction.id} size={32} />
+                </span>
+                <div className="min-w-0">
+                  <h2 className="text-[16px] font-black leading-tight text-balance text-zinc-100">
+                    {workflowStateTitle}
+                  </h2>
+                  <p className="mt-1 text-[11px] leading-relaxed text-pretty text-zinc-500">
+                    {workflowStateCopy}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="min-h-0 flex-1 overflow-y-auto p-2.5 pb-20 custom-scrollbar">
-            <div className="grid grid-cols-[minmax(210px,0.9fr)_minmax(250px,1.1fr)] gap-2.5 max-[1180px]:grid-cols-1">
-              <SourcePreviewCard source={source} />
-              <div className="flex h-full min-h-[180px] flex-col rounded-xl border border-white/2 bg-black/45 p-2.5 shadow-[0_16px_36px_rgba(0,0,0,0.26)]">
-                <div className="mb-2 flex items-center justify-between gap-2">
-                  <div>
-                    <div className="text-[10px] font-black uppercase tracking-widest text-zinc-400">
-                      Selected Inputs
-                    </div>
-                    <div className="mt-0.5 text-[8px] font-bold uppercase tracking-widest text-zinc-600">
-                      Source and refs
-                    </div>
+            <div className="min-h-0 flex-1 overflow-y-auto p-2.5 pb-20 custom-scrollbar">
+              <div className="mt-2.5">
+                <details className="rounded-xl border border-white/2 bg-black/45 p-2.5">
+                  <summary>Compiled prompt</summary>
+                  <div className="mb-1.5 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                    <FileText size={12} aria-hidden="true" />
+                    Compiled prompt
                   </div>
-                  <span className="rounded-lg border border-white/2 bg-black/45 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
-                    {source ? `${references.length + 1}/4` : '0/4'}
-                  </span>
-                </div>
-                <div className="grid grid-cols-4 gap-1.5">
-                  {[source, ...references, null, null, null]
-                    .slice(0, 4)
-                    .map((attachment, index) => (
+                  <p className="max-h-56 overflow-y-auto whitespace-pre-wrap text-[10px] leading-relaxed text-zinc-500 custom-scrollbar">
+                    {selectedPrompt}
+                  </p>
+                </details>
+              </div>
+
+              {recentImages.length > 0 && (
+                <div className="mt-2.5">
+                  <div className="mb-1.5 flex items-center justify-between gap-2">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+                      Recent Outputs
+                    </div>
+                    <span className="text-[9px] font-black tabular-nums text-zinc-600">
+                      {recentImages.length}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-4 gap-1.5 max-sm:grid-cols-2">
+                    {recentImages.map((image) => (
                       <div
-                        key={attachment?.id ?? SELECTED_INPUT_PREVIEW_SLOT_IDS[index]}
-                        className="relative aspect-[4/5] overflow-hidden rounded-md border border-white/2 bg-zinc-950"
+                        key={image.id}
+                        className="group relative aspect-square overflow-hidden rounded-xl border border-white/2 bg-zinc-900 shadow-xl"
                       >
-                        {attachment ? (
+                        <button
+                          type="button"
+                          onClick={() => onSelectImage(image)}
+                          className="size-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                          aria-label="Open generated image"
+                        >
                           <img
-                            src={attachment.dataUrl}
-                            alt={index === 0 ? 'Source preview' : `Reference preview ${index}`}
-                            className="size-full object-cover outline outline-1 -outline-offset-1 outline-white/10"
+                            src={image.thumbnail ?? image.preview ?? image.src}
+                            alt=""
+                            className="size-full object-cover opacity-90 transition-[opacity] duration-150 group-hover:opacity-100"
                           />
-                        ) : (
-                          <div className="flex size-full items-center justify-center text-zinc-700">
-                            <CharacterLabIcon
-                              id={index === 0 ? 'control:source' : 'control:reference'}
-                              size={30}
-                            />
-                          </div>
-                        )}
-                        <span className="absolute bottom-1 left-1 rounded bg-black/70 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-zinc-400">
-                          {index === 0 ? 'Main' : `R${index}`}
-                        </span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => onUseAsSource(image)}
+                          className="absolute inset-x-1 bottom-1 flex min-h-7 items-center justify-center gap-1 rounded-lg bg-black/80 px-1.5 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-200 opacity-0 transition-[opacity] duration-150 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                        >
+                          <CharacterLabIcon id="control:use-as-source" size={14} />
+                          Source
+                        </button>
                       </div>
                     ))}
-                </div>
-                <div className="mt-2.5 flex min-h-0 flex-1 flex-col rounded-lg border border-white/2 bg-zinc-950/75 p-2">
-                  <div className="mb-1 flex items-center justify-between gap-2">
-                    <span className="truncate text-[11px] font-black uppercase tracking-wide text-zinc-100">
-                      {selectedAction.label}
-                    </span>
-                    <span
-                      className={`shrink-0 rounded-md border bg-black/50 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest ${selectedAccent.border} ${selectedAccent.text}`}
-                    >
-                      {capabilityLabel}
-                    </span>
-                  </div>
-                  <p className="line-clamp-3 text-[10px] leading-snug text-pretty text-zinc-500">
-                    {selectedAction.prompt}
-                  </p>
-                  <div className="mt-auto pt-2 text-[8px] font-black uppercase tracking-widest text-zinc-600">
-                    {selectedActionSummary}
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="mt-2.5 grid grid-cols-[minmax(0,1.35fr)_minmax(220px,0.65fr)] gap-2.5 max-[1360px]:grid-cols-1">
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(148px,1fr))] gap-2">
-                {previewControlItems.map((item) => (
-                  <PreviewOptionCard key={item.label} item={item} />
-                ))}
-              </div>
-
-              <div className="rounded-xl border border-white/2 bg-black/45 p-2.5 shadow-[0_14px_34px_rgba(0,0,0,0.24)]">
-                <div className="mb-1.5 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                  <FileText size={12} aria-hidden="true" />
-                  Prompt Snapshot
-                </div>
-                <p className="max-h-56 overflow-y-auto whitespace-pre-wrap text-[10px] leading-relaxed text-zinc-500 custom-scrollbar">
-                  {selectedPrompt}
-                </p>
-              </div>
-            </div>
-
-            {recentImages.length > 0 && (
-              <div className="mt-2.5">
-                <div className="mb-1.5 flex items-center justify-between gap-2">
-                  <div className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
-                    Recent Outputs
-                  </div>
-                  <span className="text-[9px] font-black tabular-nums text-zinc-600">
-                    {recentImages.length}
-                  </span>
-                </div>
-                <div className="grid grid-cols-4 gap-1.5 max-sm:grid-cols-2">
-                  {recentImages.map((image) => (
-                    <div
-                      key={image.id}
-                      className="group relative aspect-square overflow-hidden rounded-xl border border-white/2 bg-zinc-900 shadow-xl"
-                    >
-                      <button
-                        type="button"
-                        onClick={() => onSelectImage(image)}
-                        className="size-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-                        aria-label="Open generated image"
-                      >
-                        <img
-                          src={image.thumbnail ?? image.preview ?? image.src}
-                          alt=""
-                          className="size-full object-cover opacity-90 transition-[opacity] duration-150 group-hover:opacity-100"
-                        />
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => onUseAsSource(image)}
-                        className="absolute inset-x-1 bottom-1 flex min-h-7 items-center justify-center gap-1 rounded-lg bg-black/80 px-1.5 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-200 opacity-0 transition-[opacity] duration-150 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-                      >
-                        <CharacterLabIcon id="control:use-as-source" size={14} />
-                        Source
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {capabilityNotice && (
-              <div className="mt-4 rounded-xl border border-amber-500/2 bg-amber-500/10 px-4 py-3 text-[12px] font-semibold text-amber-100">
-                {capabilityNotice}
-              </div>
-            )}
-          </div>
-
-          <button
-            type="button"
-            onClick={() => runAction(selectedAction)}
-            data-character-lab-generate-button
-            data-generate-active={isGenerating ? 'true' : 'false'}
-            className="group absolute bottom-3 right-3 z-30 flex min-h-11 w-fit min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/2 bg-violet-500/20 px-3 py-2 text-left text-white shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/2 hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-          >
-            <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-black">
-              {isGenerating ? (
-                <Loader2 size={15} className="animate-spin" />
-              ) : (
-                <CharacterLabIcon id="control:generate" size={22} />
               )}
-            </span>
-            <span className="min-w-0">
-              <span className="block truncate text-[10px] font-black uppercase tracking-widest">
-                {isGenerating ? 'Queue' : 'Generate'}
-              </span>
-              <span className="mt-0.5 block truncate text-[8px] font-bold uppercase tracking-wider text-violet-200/70">
-                Current action
-              </span>
-            </span>
-          </button>
-        </aside>
+
+              {capabilityNotice && (
+                <div className="mt-4 rounded-xl border border-amber-500/2 bg-amber-500/10 px-4 py-3 text-[12px] font-semibold text-amber-100">
+                  {capabilityNotice}
+                </div>
+              )}
+            </div>
+
+            <RecipePrimaryAction>
+              <button
+                type="button"
+                onClick={() => runAction(selectedAction)}
+                data-character-lab-generate-button
+                data-generate-active={isGenerating ? 'true' : 'false'}
+                className="group relative flex min-h-11 w-full min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/2 bg-violet-500/20 px-3 py-2 text-left text-white shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/2 hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              >
+                <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-black">
+                  {isGenerating ? (
+                    <Loader2 size={15} className="animate-spin" />
+                  ) : (
+                    <CharacterLabIcon id="control:generate" size={22} />
+                  )}
+                </span>
+                <span className="min-w-0">
+                  <span className="block truncate text-[10px] font-black uppercase tracking-widest">
+                    {isGenerating ? 'Queue' : 'Generate'}
+                  </span>
+                  <span className="mt-0.5 block truncate text-[8px] font-bold uppercase tracking-wider text-violet-200/70">
+                    Current action
+                  </span>
+                </span>
+              </button>
+            </RecipePrimaryAction>
+          </aside>
+        </RecipeControls>
       </div>
     </RecipeLayout>
   );

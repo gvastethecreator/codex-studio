@@ -1,3 +1,5 @@
+import { useLinkedJobStatuses } from '../../hooks/useLinkedJobStatuses';
+import { RecipeControls, RecipePrimaryAction } from './RecipeWorkbenchContext';
 import React from 'react';
 import {
   IconAlertTriangle as AlertTriangle,
@@ -64,7 +66,7 @@ const EMPTY_IMAGES: GeneratedImageWithConfig[] = [];
 const STATUS_LABELS: Record<AnimationSequenceRun['status'], string> = {
   draft: 'Draft',
   planned: 'Planned',
-  generating: 'Generating',
+  generating: 'Awaiting frame result',
   waiting_for_frame: 'Waiting',
   ready_for_review: 'Ready',
   correcting: 'Correcting',
@@ -76,7 +78,7 @@ const STATUS_LABELS: Record<AnimationSequenceRun['status'], string> = {
 const FRAME_STATUS_LABELS: Record<AnimationSequenceFrameState['status'], string> = {
   planned: 'Planned',
   prompt_ready: 'Prompt ready',
-  generating: 'Generating',
+  generating: 'Awaiting frame result',
   generated: 'Generated',
   correcting: 'Correcting',
   blocked: 'Blocked',
@@ -326,8 +328,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
       const payload = await listAnimationSequenceRuns();
       setRuns(payload.runs);
       setActiveRun((current) => {
-        if (!current) return payload.runs[0] ?? null;
-        return payload.runs.find((run) => run.id === current.id) ?? payload.runs[0] ?? null;
+        if (!current) return null;
+        return payload.runs.find((run) => run.id === current.id) ?? current;
       });
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
@@ -351,7 +353,6 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
       .then((payload) => {
         if (cancelled) return;
         setRuns(payload.runs);
-        setActiveRun(payload.runs[0] ?? null);
       })
       .catch((err) => {
         if (!cancelled) setRunsLoadError(err instanceof Error ? err.message : String(err));
@@ -364,6 +365,18 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
     };
   }, []);
 
+  const linkedJobs = useLinkedJobStatuses(
+    activeRun?.frames.flatMap((frame) => (frame.jobId ? [frame.jobId] : [])) ?? [],
+  );
+  const executionLabel = activeRun?.frames.some(
+    (frame) => frame.jobId && ['queued', 'running'].includes(linkedJobs[frame.jobId]),
+  )
+    ? 'Generating frames'
+    : activeRun?.frames.some((frame) => frame.jobId && !frame.catalogImageId)
+      ? 'Review frame results'
+      : activeRun
+        ? STATUS_LABELS[activeRun.status]
+        : 'Draft';
   const activeRunId = activeRun?.id ?? null;
   const resolvedSelectedFrameId = selectedFrame?.id ?? null;
 
@@ -569,191 +582,218 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
         data-animation-workbench="true"
         className="custom-scrollbar grid min-h-0 flex-1 grid-cols-1 gap-2 overflow-y-auto p-3 lg:grid-cols-[18rem_minmax(0,1fr)] xl:grid-cols-[20rem_minmax(0,1fr)_24rem] xl:overflow-hidden"
       >
-        <aside className="flex min-h-[34rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 xl:min-h-0">
-          <div className="border-b border-white/2 p-3">
-            <div className="flex items-start justify-between gap-3">
-              <div className="min-w-0">
-                <div className="text-[10px] font-black uppercase tracking-widest text-amber-300">
-                  Animation Recipe
+        <RecipeControls>
+          <aside className="flex min-h-[34rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 xl:min-h-0">
+            <details open={!activeRun} className="recipe-draft-settings">
+              <summary>New sequence configuration</summary>
+              <div className="border-b border-white/2 p-3">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <div className="text-[10px] font-black uppercase tracking-widest text-amber-300">
+                      New sequence draft
+                    </div>
+                    <h2 className="mt-1 truncate text-base font-black text-white">
+                      Frame Sequence
+                    </h2>
+                    <p className="mt-1 truncate text-xs text-zinc-500">
+                      {contract.frameCount} frames / {contract.fps} fps / GIF
+                    </p>
+                  </div>
+                  <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-amber-400/2 bg-amber-500/10 text-amber-200">
+                    <Gif size={20} />
+                  </span>
                 </div>
-                <h2 className="mt-1 truncate text-base font-black text-white">Frame Sequence</h2>
-                <p className="mt-1 truncate text-xs text-zinc-500">
-                  {contract.frameCount} frames / {contract.fps} fps / GIF
-                </p>
               </div>
-              <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-amber-400/2 bg-amber-500/10 text-amber-200">
-                <Gif size={20} />
-              </span>
-            </div>
-          </div>
 
-          <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
-            <label className="grid gap-1.5">
-              <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                Motion Prompt
-              </span>
-              <textarea
-                value={prompt}
-                onChange={(event) => updateConfig('prompt', event.target.value)}
-                rows={5}
-                placeholder="Describe motion, timing, camera, and the visual anchor to preserve."
-                aria-describedby={!prompt.trim() ? 'animation-prompt-requirement' : undefined}
-                className="resize-none rounded-md border border-white/2 bg-black/35 p-2 text-sm text-zinc-100 outline-none transition-colors focus:border-amber-400/2"
-              />
-            </label>
+              <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
+                <label className="grid gap-1.5">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                    Motion Prompt
+                  </span>
+                  <textarea
+                    value={prompt}
+                    onChange={(event) => updateConfig('prompt', event.target.value)}
+                    rows={5}
+                    placeholder="Describe motion, timing, camera, and the visual anchor to preserve."
+                    aria-describedby={!prompt.trim() ? 'animation-prompt-requirement' : undefined}
+                    className="resize-none rounded-md border border-white/2 bg-black/35 p-2 text-sm text-zinc-100 outline-none transition-colors focus:border-amber-400/2"
+                  />
+                </label>
 
-            <div className="mt-3 grid grid-cols-2 gap-2">
-              <NumberField
-                label="Frames"
-                value={contract.frameCount}
-                min={2}
-                max={48}
-                onChange={(value) => setParam('frameCount', value)}
-              />
-              <NumberField
-                label="FPS"
-                value={contract.fps}
-                min={1}
-                max={30}
-                onChange={(value) => setParam('fps', value)}
-              />
-              <SelectField
-                label="Ratio"
-                value={contract.aspectRatio}
-                options={['1:1', '16:9', '9:16', '4:3', '3:4']}
-                onChange={(value) => {
-                  setParam('aspectRatio', value);
-                  updateConfig('aspectRatio', value as ImageGenerationConfig['aspectRatio']);
-                }}
-              />
-              <SelectField
-                label="Method"
-                value={contract.method}
-                options={['recursive', 'sequential']}
-                onChange={(value) => setParam('method', value)}
-              />
-              <SelectField
-                label="Continuity"
-                value={contract.continuity}
-                options={['loose', 'balanced', 'strict']}
-                onChange={(value) => setParam('continuity', value)}
-              />
-              <label className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                  Matte
-                </span>
-                <input
-                  type="color"
-                  value={contract.matteColor}
-                  onChange={(event) => setParam('matteColor', event.target.value)}
-                  className="h-9 w-full rounded-md border border-white/2 bg-black/35"
-                />
-              </label>
-            </div>
+                <div className="mt-3 grid grid-cols-2 gap-2">
+                  <NumberField
+                    label="Frames"
+                    value={contract.frameCount}
+                    min={2}
+                    max={48}
+                    onChange={(value) => setParam('frameCount', value)}
+                  />
+                  <NumberField
+                    label="FPS"
+                    value={contract.fps}
+                    min={1}
+                    max={30}
+                    onChange={(value) => setParam('fps', value)}
+                  />
+                  <SelectField
+                    label="Ratio"
+                    value={contract.aspectRatio}
+                    options={['1:1', '16:9', '9:16', '4:3', '3:4']}
+                    onChange={(value) => {
+                      setParam('aspectRatio', value);
+                      updateConfig('aspectRatio', value as ImageGenerationConfig['aspectRatio']);
+                    }}
+                  />
+                  <SelectField
+                    label="Method"
+                    value={contract.method}
+                    options={['recursive', 'sequential']}
+                    onChange={(value) => setParam('method', value)}
+                  />
+                  <SelectField
+                    label="Continuity"
+                    value={contract.continuity}
+                    options={['loose', 'balanced', 'strict']}
+                    onChange={(value) => setParam('continuity', value)}
+                  />
+                  <label className="grid gap-1.5">
+                    <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                      Matte
+                    </span>
+                    <input
+                      type="color"
+                      value={contract.matteColor}
+                      onChange={(event) => setParam('matteColor', event.target.value)}
+                      className="h-9 w-full rounded-md border border-white/2 bg-black/35"
+                    />
+                  </label>
+                </div>
 
-            <div className="mt-3 grid grid-cols-2 gap-2">
-              <ToggleField
-                label="Loop"
-                value={contract.cyclic}
-                onChange={(v) => setParam('cyclic', v)}
-              />
-              <ToggleField
-                label="Style"
-                value={contract.styleLock}
-                onChange={(v) => setParam('styleLock', v)}
-              />
-            </div>
+                <div className="mt-3 grid grid-cols-2 gap-2">
+                  <ToggleField
+                    label="Loop"
+                    value={contract.cyclic}
+                    onChange={(v) => setParam('cyclic', v)}
+                  />
+                  <ToggleField
+                    label="Style"
+                    value={contract.styleLock}
+                    onChange={(v) => setParam('styleLock', v)}
+                  />
+                </div>
 
-            <ActionButton
-              tone="primary"
-              onClick={handleCreateRun}
-              disabled={busy || !prompt.trim()}
-              className="mt-3 w-full"
-            >
-              {busy ? <Loader2 size={13} className="animate-spin" /> : <Sparkles size={13} />}
-              Prepare
-            </ActionButton>
-
-            {!prompt.trim() ? (
-              <p id="animation-prompt-requirement" className="mt-2 text-[11px] text-zinc-500">
-                A motion prompt is required to prepare a run.
-              </p>
-            ) : null}
-
-            <div className="mt-4">
-              <div className="mb-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                Recent runs
-              </div>
-              <div className="grid gap-2">
-                {isRunsLoading ? (
-                  <div
-                    role="status"
-                    className="rounded-md border border-white/2 px-3 py-4 text-xs text-zinc-500"
-                  >
-                    Loading runs...
-                  </div>
-                ) : null}
-                {!isRunsLoading && runsLoadError ? (
-                  <div
-                    role="alert"
-                    className="rounded-md border border-rose-500/2 bg-rose-500/10 p-3 text-xs text-rose-200"
-                  >
-                    <div>{runsLoadError}</div>
-                    <button
-                      type="button"
-                      onClick={() => void refreshRuns().catch(() => {})}
-                      className="mt-2 h-8 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
+                {!activeRun && (
+                  <RecipePrimaryAction>
+                    <ActionButton
+                      tone="primary"
+                      onClick={handleCreateRun}
+                      disabled={busy || !prompt.trim()}
+                      className="mt-3 w-full"
                     >
-                      Retry runs
-                    </button>
-                  </div>
+                      {busy ? (
+                        <Loader2 size={13} className="animate-spin" />
+                      ) : (
+                        <Sparkles size={13} />
+                      )}
+                      Prepare
+                    </ActionButton>
+                  </RecipePrimaryAction>
+                )}
+
+                {!prompt.trim() ? (
+                  <p id="animation-prompt-requirement" className="mt-2 text-[11px] text-zinc-500">
+                    A motion prompt is required to prepare a run.
+                  </p>
                 ) : null}
-                {!isRunsLoading && !runsLoadError && runs.length === 0 ? (
-                  <div className="rounded-md border border-dashed border-white/2 px-3 py-4 text-xs leading-relaxed text-zinc-600">
-                    Prepared runs will appear here and remain available after refresh.
-                  </div>
-                ) : null}
-                {runs.map((run) => (
-                  <button
-                    key={run.id}
-                    type="button"
-                    onClick={() => setActiveRun(run)}
-                    aria-pressed={activeRun?.id === run.id}
-                    className={`rounded-md border p-2 text-left transition-colors ${
-                      activeRun?.id === run.id
-                        ? 'border-amber-400/2 bg-amber-500/10'
-                        : 'border-white/2 bg-white/[0.035] hover:border-white/2'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="truncate text-xs font-black text-white">{run.title}</span>
-                      <span
-                        className={`rounded px-1.5 py-0.5 text-[8px] font-black uppercase ${getRunTone(run.status)}`}
+              </div>
+            </details>
+            <div className="p-3">
+              <div className="mt-4">
+                <div className="mb-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                  Recent runs
+                </div>
+                <div className="grid gap-2">
+                  {isRunsLoading ? (
+                    <div
+                      role="status"
+                      className="rounded-md border border-white/2 px-3 py-4 text-xs text-zinc-500"
+                    >
+                      Loading runs...
+                    </div>
+                  ) : null}
+                  {!isRunsLoading && runsLoadError ? (
+                    <div
+                      role="alert"
+                      className="rounded-md border border-rose-500/2 bg-rose-500/10 p-3 text-xs text-rose-200"
+                    >
+                      <div>{runsLoadError}</div>
+                      <button
+                        type="button"
+                        onClick={() => void refreshRuns().catch(() => {})}
+                        className="mt-2 h-8 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
                       >
-                        {STATUS_LABELS[run.status]}
-                      </span>
+                        Retry runs
+                      </button>
                     </div>
-                    <div className="mt-1 truncate font-mono text-[10px] text-zinc-600">
-                      {run.id}
+                  ) : null}
+                  {!isRunsLoading && !runsLoadError && runs.length === 0 ? (
+                    <div className="rounded-md border border-dashed border-white/2 px-3 py-4 text-xs leading-relaxed text-zinc-600">
+                      Prepared runs will appear here and remain available after refresh.
                     </div>
-                  </button>
-                ))}
+                  ) : null}
+                  {runs.map((run) => (
+                    <button
+                      key={run.id}
+                      type="button"
+                      onClick={() => setActiveRun(run)}
+                      aria-pressed={activeRun?.id === run.id}
+                      className={`rounded-md border p-2 text-left transition-colors ${
+                        activeRun?.id === run.id
+                          ? 'border-amber-400/2 bg-amber-500/10'
+                          : 'border-white/2 bg-white/[0.035] hover:border-white/2'
+                      }`}
+                    >
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="truncate text-xs font-black text-white">{run.title}</span>
+                        <span
+                          className={`rounded px-1.5 py-0.5 text-[8px] font-black uppercase ${getRunTone(run.status)}`}
+                        >
+                          {STATUS_LABELS[run.status]}
+                        </span>
+                      </div>
+                      <div className="mt-1 truncate font-mono text-[10px] text-zinc-600">
+                        {run.id}
+                      </div>
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        </aside>
+          </aside>
+        </RecipeControls>
 
-        <main className="flex min-h-[40rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/35 xl:min-h-0">
+        <main
+          data-recipe-stage
+          className="flex min-h-[40rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/35 xl:min-h-0"
+        >
           <div className="flex items-center justify-between gap-3 border-b border-white/2 p-3">
             <div className="min-w-0">
               <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-                Active Run
+                {activeRun ? 'Selected sequence' : 'New sequence draft'}
               </div>
               <h3 className="truncate text-sm font-black text-white">
                 {activeRun?.title ?? 'Draft plan'}
               </h3>
             </div>
             <div className="flex shrink-0 items-center gap-2">
+              <ActionButton
+                onClick={() => {
+                  setActiveRun(null);
+                  setSelectedFrameId(null);
+                }}
+              >
+                New sequence
+              </ActionButton>
               <ActionButton onClick={syncGeneratedFrames} disabled={!activeRun || busy}>
                 <RefreshCw size={13} />
                 Sync
@@ -798,7 +838,11 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     : null;
                   const selected = selectedFrameKey === planFrame.id;
                   const frameLabel = getFrameDisplayLabel(planFrame.ordinal);
-                  const frameStatus = getFrameDisplayStatus(planFrame, state);
+                  const frameStatus = state?.jobId
+                    ? state.catalogImageId
+                      ? 'Image attached'
+                      : `Job ${linkedJobs[state.jobId] ?? 'checking'} · image pending`
+                    : getFrameDisplayStatus(planFrame, state);
                   return (
                     <button
                       key={planFrame.id}
@@ -846,7 +890,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   <span>
                     {generatedCount}/{activeRun?.frames.length ?? contract.frameCount} frames
                   </span>
-                  <span>{activeRun ? STATUS_LABELS[activeRun.status] : 'Draft'}</span>
+                  <span>{executionLabel}</span>
                   {activeRun?.qa ? (
                     <span className={activeRun.qa.ok ? 'text-emerald-300' : 'text-rose-300'}>
                       QA {activeRun.qa.ok ? 'OK' : 'Issues'}
@@ -876,101 +920,109 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
           </div>
         </main>
 
-        <aside className="flex min-h-[30rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 lg:col-span-2 xl:col-span-1 xl:min-h-0">
-          <div className="border-b border-white/2 p-3">
-            <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-              Frame Inspector
-            </div>
-            <h3 className="mt-1 truncate text-sm font-black text-white">
-              {selectedFrame?.id ?? selectedPlanFrame?.id ?? 'No frame'}
-            </h3>
-          </div>
-
-          <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
-            <textarea
-              aria-label="Animation frame prompt"
-              value={
-                isPromptLoading
-                  ? 'Loading prompt...'
-                  : promptLoadError
-                    ? ''
-                    : !activeRun && !prompt.trim()
-                      ? 'Enter a motion prompt to preview frame instructions.'
-                      : selectedPrompt
-              }
-              readOnly
-              rows={12}
-              aria-describedby={promptLoadError ? 'animation-frame-prompt-error' : undefined}
-              className="w-full resize-none rounded-md border border-white/2 bg-black/35 p-2 font-mono text-[11px] leading-relaxed text-zinc-300 outline-none"
-            />
-
-            {promptLoadError ? (
-              <div
-                id="animation-frame-prompt-error"
-                role="alert"
-                className="mt-2 rounded-md border border-rose-500/2 bg-rose-500/10 p-2 text-xs text-rose-200"
-              >
-                <div>{promptLoadError}</div>
-                <button
-                  type="button"
-                  onClick={() => setPromptReloadVersion((version) => version + 1)}
-                  className="mt-2 h-8 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
-                >
-                  Retry prompt
-                </button>
+        <RecipeControls>
+          <aside className="flex min-h-[30rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 lg:col-span-2 xl:col-span-1 xl:min-h-0">
+            <div className="border-b border-white/2 p-3">
+              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                Frame Inspector
               </div>
-            ) : null}
-
-            <div className="mt-3 grid gap-2">
-              <ActionButton
-                tone="primary"
-                onClick={() => generateFrame(false)}
-                disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
-              >
-                <Play size={13} />
-                Generate
-              </ActionButton>
-              <ActionButton
-                onClick={() => generateFrame(true)}
-                disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
-              >
-                <Sparkles size={13} />
-                Correct
-              </ActionButton>
-              <ActionButton onClick={attachSelectedGeneratedFrame} disabled={!activeRun || busy}>
-                <RefreshCw size={13} />
-                Attach
-              </ActionButton>
+              <h3 className="mt-1 truncate text-sm font-black text-white">
+                {selectedFrame?.id ?? selectedPlanFrame?.id ?? 'No frame'}
+              </h3>
             </div>
 
-            {activeRun && selectedFrame ? (
-              <div className="mt-3 rounded-md border border-white/2 bg-white/[0.03] p-2 text-[10px] text-zinc-500">
-                <div className="flex justify-between gap-2">
-                  <span>Status</span>
-                  <span className="font-black uppercase text-zinc-300">{selectedFrame.status}</span>
-                </div>
-                <div className="mt-1 flex justify-between gap-2">
-                  <span>Catalog</span>
-                  <span className="truncate font-mono text-zinc-300">
-                    {selectedFrame.catalogImageId ?? 'none'}
-                  </span>
-                </div>
-                {selectedFrame.catalogImageId && onSelectImage ? (
+            <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
+              <textarea
+                aria-label="Animation frame prompt"
+                value={
+                  isPromptLoading
+                    ? 'Loading prompt...'
+                    : promptLoadError
+                      ? ''
+                      : !activeRun && !prompt.trim()
+                        ? 'Enter a motion prompt to preview frame instructions.'
+                        : selectedPrompt
+                }
+                readOnly
+                rows={12}
+                aria-describedby={promptLoadError ? 'animation-frame-prompt-error' : undefined}
+                className="w-full resize-none rounded-md border border-white/2 bg-black/35 p-2 font-mono text-[11px] leading-relaxed text-zinc-300 outline-none"
+              />
+
+              {promptLoadError ? (
+                <div
+                  id="animation-frame-prompt-error"
+                  role="alert"
+                  className="mt-2 rounded-md border border-rose-500/2 bg-rose-500/10 p-2 text-xs text-rose-200"
+                >
+                  <div>{promptLoadError}</div>
                   <button
                     type="button"
-                    onClick={() => {
-                      const image = images.find((item) => item.id === selectedFrame.catalogImageId);
-                      if (image) onSelectImage(image);
-                    }}
-                    className="mt-2 h-8 w-full rounded-md border border-white/2 bg-white/[0.04] text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                    onClick={() => setPromptReloadVersion((version) => version + 1)}
+                    className="mt-2 h-8 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
                   >
-                    Preview
+                    Retry prompt
                   </button>
-                ) : null}
+                </div>
+              ) : null}
+
+              <div className="mt-3 grid gap-2">
+                <ActionButton
+                  tone="primary"
+                  onClick={() => generateFrame(false)}
+                  disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
+                >
+                  <Play size={13} />
+                  Generate
+                </ActionButton>
+                <ActionButton
+                  onClick={() => generateFrame(true)}
+                  disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
+                >
+                  <Sparkles size={13} />
+                  Correct
+                </ActionButton>
+                <ActionButton onClick={attachSelectedGeneratedFrame} disabled={!activeRun || busy}>
+                  <RefreshCw size={13} />
+                  Attach
+                </ActionButton>
               </div>
-            ) : null}
-          </div>
-        </aside>
+
+              {activeRun && selectedFrame ? (
+                <div className="mt-3 rounded-md border border-white/2 bg-white/[0.03] p-2 text-[10px] text-zinc-500">
+                  <div className="flex justify-between gap-2">
+                    <span>Job status</span>
+                    <span className="font-black uppercase text-zinc-300">
+                      {selectedFrame.jobId
+                        ? (linkedJobs[selectedFrame.jobId] ?? 'Checking job')
+                        : FRAME_STATUS_LABELS[selectedFrame.status]}
+                    </span>
+                  </div>
+                  <div className="mt-1 flex justify-between gap-2">
+                    <span>Catalog</span>
+                    <span className="truncate font-mono text-zinc-300">
+                      {selectedFrame.catalogImageId ?? 'none'}
+                    </span>
+                  </div>
+                  {selectedFrame.catalogImageId && onSelectImage ? (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const image = images.find(
+                          (item) => item.id === selectedFrame.catalogImageId,
+                        );
+                        if (image) onSelectImage(image);
+                      }}
+                      className="mt-2 h-8 w-full rounded-md border border-white/2 bg-white/[0.04] text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                    >
+                      Preview
+                    </button>
+                  ) : null}
+                </div>
+              ) : null}
+            </div>
+          </aside>
+        </RecipeControls>
       </div>
     </div>
   );

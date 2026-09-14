@@ -50,7 +50,13 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
   onFileSelect,
   isGenerating,
 }) => {
-  const [params, setParams] = useState(DEFAULT_PARAMS);
+  const [params, setParams] = useState(
+    () =>
+      ({
+        ...DEFAULT_PARAMS,
+        ...(config.recipeId === 'character' ? config.recipeParams : {}),
+      }) as typeof DEFAULT_PARAMS,
+  );
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const activeImage = config.attachments[0];
@@ -95,32 +101,29 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           onSelect={(v) => setParams((p) => ({ ...p, shot: v }))}
           activeColor="indigo"
         />
-        <ControlDropdown
-          title="Detail Focus"
-          icon={<ScanFace size={14} />}
-          label={params.focus}
-          options={CONTROL_OPTIONS.focus}
-          onSelect={(v) => setParams((p) => ({ ...p, focus: v }))}
-          activeColor="indigo"
-        />
-        <div className="w-px h-8 bg-white/10 mx-1 hidden sm:block" />
-        <ControlDropdown
-          title="Art Style"
-          icon={<Palette size={14} />}
-          label={params.style}
-          options={CONTROL_OPTIONS.style}
-          onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
-          activeColor="indigo"
-        />
-
-        <div className="px-3 hidden xl:block">
-          <div className="text-[8px] font-black text-indigo-500 uppercase tracking-widest mb-0.5">
-            Mode
+        <details className="recipe-advanced">
+          <summary>Advanced appearance</summary>
+          <div className="recipe-advanced-grid">
+            {' '}
+            <ControlDropdown
+              title="Detail Focus"
+              icon={<ScanFace size={14} />}
+              label={params.focus}
+              options={CONTROL_OPTIONS.focus}
+              onSelect={(v) => setParams((p) => ({ ...p, focus: v }))}
+              activeColor="indigo"
+            />
+            <div className="w-px h-8 bg-white/10 mx-1 hidden sm:block" />
+            <ControlDropdown
+              title="Art Style"
+              icon={<Palette size={14} />}
+              label={params.style}
+              options={CONTROL_OPTIONS.style}
+              onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
+              activeColor="indigo"
+            />
           </div>
-          <div className="text-[10px] font-bold text-white leading-none">
-            {hasReference ? 'Ref Active' : 'Txt Mode'}
-          </div>
-        </div>
+        </details>
       </>
     ),
     [params, hasReference],

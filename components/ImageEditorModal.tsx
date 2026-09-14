@@ -1,3 +1,4 @@
+import { useDialogFocus } from '../hooks/useDialogFocus';
 import {
   IconBrush as Brush,
   IconSparkles as Sparkles,
@@ -60,7 +61,7 @@ function ImageEditorControlsPanel({
       <div className="space-y-3 sm:space-y-4">
         <label
           htmlFor="image-editor-prompt"
-          className="text-[10px] font-black text-zinc-700 uppercase tracking-widest"
+          className="text-[10px] font-black text-zinc-400 uppercase tracking-widest"
         >
           Edit Prompt
         </label>
@@ -128,7 +129,7 @@ function ImageEditorControlsPanel({
           ) : (
             <Sparkles size={18} />
           )}
-          {!isGenerating && <span>Apply Edit</span>}
+          {!isGenerating && <span>Generate edit</span>}
         </button>
       </div>
     </div>
@@ -340,17 +341,21 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     saveHistory();
   }, [saveHistory]);
 
+  const dialogRef = useDialogFocus(
+    isOpen,
+    handleClose,
+    image ? `[aria-label="Edit ${CSS.escape(image.name)}"]` : undefined,
+  );
   if (!isOpen) return null;
 
   return (
-    <dialog
-      open
+    <div
+      ref={dialogRef}
+      role="dialog"
+      aria-modal="true"
+      tabIndex={-1}
       aria-label="Image editor"
       className="fixed inset-0 z-100 m-0 flex h-full w-full flex-col border-none bg-black/98 p-0 backdrop-blur-3xl animate-in fade-in duration-500"
-      onCancel={(e) => {
-        e.preventDefault();
-        handleClose();
-      }}
     >
       <div className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-white/2 px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
         <div className="flex min-w-0 items-center gap-3 sm:gap-5">
@@ -385,7 +390,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
             <img
               src={image.dataUrl}
               alt=""
-              className="absolute object-contain pointer-events-none opacity-30 grayscale"
+              className="absolute object-contain pointer-events-none opacity-100"
               style={{
                 width: canvasRef.current?.style.width,
                 height: canvasRef.current?.style.height,
@@ -399,7 +404,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
             onPointerUp={stopDrawing}
             onPointerCancel={stopDrawing}
             onPointerLeave={stopDrawing}
-            className="relative z-10 cursor-none touch-none opacity-90 mix-blend-screen shadow-[0_0_100px_rgba(255,255,255,0.05)]"
+            className="relative z-10 cursor-none touch-none opacity-50 shadow-[0_0_100px_rgba(255,255,255,0.05)]"
           />
           <div
             ref={brushCursorRef}
@@ -427,6 +432,6 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           requireMask={requireMask}
         />
       </div>
-    </dialog>
+    </div>
   );
 };

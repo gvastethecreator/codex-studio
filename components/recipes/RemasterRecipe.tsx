@@ -66,7 +66,13 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   onGenerate,
   isGenerating,
 }) => {
-  const [params, setParams] = useState(DEFAULT_PARAMS);
+  const [params, setParams] = useState(
+    () =>
+      ({
+        ...DEFAULT_PARAMS,
+        ...(config.recipeId === 'remaster' ? config.recipeParams : {}),
+      }) as typeof DEFAULT_PARAMS,
+  );
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const activeImage = config.attachments[0];
@@ -128,42 +134,48 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             options={CONTROL_OPTIONS.style}
             onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
           />
-          <ControlDropdown
-            title="Lighting"
-            icon={<Sun size={14} />}
-            label={params.lighting}
-            options={CONTROL_OPTIONS.lighting}
-            onSelect={(v) => setParams((p) => ({ ...p, lighting: v }))}
-          />
-          <ControlDropdown
-            title="Correction"
-            icon={<Fingerprint size={14} />}
-            label={params.anatomy}
-            options={CONTROL_OPTIONS.anatomy}
-            onSelect={(v) => setParams((p) => ({ ...p, anatomy: v }))}
-          />
-          <ControlDropdown
-            title="Text Handling"
-            icon={<TextIcon size={14} />}
-            label={params.text}
-            options={CONTROL_OPTIONS.text}
-            onSelect={(v) => setParams((p) => ({ ...p, text: v }))}
-          />
-          <ControlDropdown
-            title="Color Grading"
-            icon={<Palette size={14} />}
-            label={params.color}
-            options={CONTROL_OPTIONS.color}
-            onSelect={(v) => setParams((p) => ({ ...p, color: v }))}
-          />
-          <ControlDropdown
-            title="Lens Details"
-            icon={<Camera size={14} />}
-            label={params.camera}
-            options={CONTROL_OPTIONS.camera}
-            onSelect={(v) => setParams((p) => ({ ...p, camera: v }))}
-          />
         </div>
+        <details className="recipe-advanced">
+          <summary>Advanced corrections</summary>
+          <div className="recipe-advanced-grid">
+            {' '}
+            <ControlDropdown
+              title="Lighting"
+              icon={<Sun size={14} />}
+              label={params.lighting}
+              options={CONTROL_OPTIONS.lighting}
+              onSelect={(v) => setParams((p) => ({ ...p, lighting: v }))}
+            />
+            <ControlDropdown
+              title="Correction"
+              icon={<Fingerprint size={14} />}
+              label={params.anatomy}
+              options={CONTROL_OPTIONS.anatomy}
+              onSelect={(v) => setParams((p) => ({ ...p, anatomy: v }))}
+            />
+            <ControlDropdown
+              title="Text Handling"
+              icon={<TextIcon size={14} />}
+              label={params.text}
+              options={CONTROL_OPTIONS.text}
+              onSelect={(v) => setParams((p) => ({ ...p, text: v }))}
+            />
+            <ControlDropdown
+              title="Color Grading"
+              icon={<Palette size={14} />}
+              label={params.color}
+              options={CONTROL_OPTIONS.color}
+              onSelect={(v) => setParams((p) => ({ ...p, color: v }))}
+            />
+            <ControlDropdown
+              title="Lens Details"
+              icon={<Camera size={14} />}
+              label={params.camera}
+              options={CONTROL_OPTIONS.camera}
+              onSelect={(v) => setParams((p) => ({ ...p, camera: v }))}
+            />
+          </div>
+        </details>
       </>
     ),
     [params],
@@ -194,7 +206,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             <div className="absolute top-4 right-4">
               <div className="px-3 py-1.5 rounded-lg bg-black/50 backdrop-blur-sm border border-white/2 flex items-center gap-2">
                 <span className="text-[9px] font-black text-zinc-300 uppercase tracking-widest">
-                  Remaster Active
+                  Original reference
                 </span>
               </div>
             </div>

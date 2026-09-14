@@ -56,9 +56,14 @@ export function QueueBatchCard({ batchId, revision }: { batchId: string; revisio
       </div>
       {batch ? (
         <p>
-          {batch.counts.completed} completed · {batch.counts.failed} failed ·{' '}
-          {batch.counts.cancelled} cancelled · {batch.counts.needs_review} need review ·{' '}
-          {batch.counts.queued} queued · {batch.counts.running} running
+          {batch.counts.completed} of {batch.requestedCount} completed
+          {Object.entries(batch.counts)
+            .filter(([status, count]) => status !== 'completed' && count > 0)
+            .map(
+              ([status, count]) =>
+                ` · ${count} ${status === 'needs_review' ? 'need review' : status}`,
+            )
+            .join('')}
           {error ? ' (last confirmed)' : ''}
         </p>
       ) : null}

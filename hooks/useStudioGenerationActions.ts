@@ -6,7 +6,11 @@ import {
   resolveStudioGenerateRecipeId,
 } from '../lib/studioGenerationRequest';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
-import type { GenerationProviderId, Job as StudioJob } from '../packages/shared/src';
+import type {
+  CodexExecutionTransport,
+  GenerationProviderId,
+  Job as StudioJob,
+} from '../packages/shared/src';
 import { parseRecipeIdFromContext } from '../lib/recipeShellMetadata';
 
 type GenerateOptions = {
@@ -47,6 +51,7 @@ interface UseStudioGenerationActionsProps {
   generationConfigRef: React.RefObject<ImageGenerationConfig>;
   activeWorkspaceId: string;
   setGenerationConfig: React.Dispatch<React.SetStateAction<ImageGenerationConfig>>;
+  setRecipeDraft: (recipeId: RecipeId, config: ImageGenerationConfig) => void;
   updateGenerationConfig: <K extends keyof ImageGenerationConfig>(
     key: K,
     value: ImageGenerationConfig[K],
@@ -68,6 +73,7 @@ interface UseStudioGenerationActionsProps {
   onViewChange: (view: 'studio' | 'recipes') => void;
   onEditSettled?: () => void;
   activeProviderId: GenerationProviderId;
+  defaultCodexTransport?: CodexExecutionTransport;
   grokCanExecute: boolean;
   grokStatus?: string;
   grokDiagnostics?: string[];
@@ -82,6 +88,7 @@ export function useStudioGenerationActions({
   generationConfigRef,
   activeWorkspaceId,
   setGenerationConfig,
+  setRecipeDraft,
   updateGenerationConfig,
   executeEdit,
   executeGeneration,
@@ -93,6 +100,7 @@ export function useStudioGenerationActions({
   onViewChange,
   onEditSettled,
   activeProviderId,
+  defaultCodexTransport,
   grokCanExecute,
   grokStatus,
   grokDiagnostics,
@@ -125,6 +133,7 @@ export function useStudioGenerationActions({
         promptOverride,
         configOverrides: requestConfigOverrides,
         providerId: activeProviderId,
+        defaultCodexTransport,
         grokCanExecute,
         grokStatus,
         grokDiagnostics,
@@ -157,6 +166,7 @@ export function useStudioGenerationActions({
       isModalOpen,
       setGenerationConfig,
       activeProviderId,
+      defaultCodexTransport,
       grokCanExecute,
       grokStatus,
       grokDiagnostics,
@@ -236,20 +246,21 @@ export function useStudioGenerationActions({
 
   const handleLoadRecipe = useCallback(
     (nextConfig: ImageGenerationConfig) => {
-      setGenerationConfig((previousConfig) =>
-        buildRecipeRestoreConfig(nextConfig, previousConfig.attachments),
-      );
       addToast('Recipe restored', 'success');
 
       const detectedRecipe =
         nextConfig.recipeId ?? parseRecipeIdFromContext(nextConfig.recipeContext);
+      setRecipeDraft(
+        detectedRecipe,
+        buildRecipeRestoreConfig(nextConfig, generationConfigRef.current.attachments),
+      );
       if (detectedRecipe) {
         onRecipeSelection(detectedRecipe);
       } else {
-        onViewChange('studio');
+        onViewChange('recipes');
       }
     },
-    [addToast, onRecipeSelection, onViewChange, setGenerationConfig],
+    [addToast, onRecipeSelection, onViewChange, setRecipeDraft, generationConfigRef],
   );
 
   const resetGenerationUi = useCallback(() => {

@@ -155,7 +155,6 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
               onClose={closeDashboard}
               imagesCount={imagesCount}
               workspaces={workspaces}
-              onExportLegacyWorkspaceSnapshot={handleExportLegacyWorkspaceSnapshot}
             />
           </Suspense>
         </ErrorBoundary>
@@ -211,6 +210,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             }
           >
             <StudioSettingsModal
+              onExportLegacyWorkspaceSnapshot={handleExportLegacyWorkspaceSnapshot}
               isOpen={isSettingsModalOpen}
               onClose={closeSettings}
               settings={settings}

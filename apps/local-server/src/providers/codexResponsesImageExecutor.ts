@@ -122,13 +122,20 @@ function parseSseJson(raw: string): unknown[] {
 }
 
 function sseFailureMessage(event: Record<string, unknown>, secrets: readonly string[]) {
-  const error = event.error;
+  const response = isRecord(event.response) ? event.response : event;
+  const error = response.error ?? event.error;
   if (typeof error === 'string' && error.trim()) return responseSnippet(error, secrets);
   if (isRecord(error) && typeof error.message === 'string' && error.message.trim()) {
     return responseSnippet(error.message, secrets);
   }
   if (typeof event.message === 'string' && event.message.trim()) {
     return responseSnippet(event.message, secrets);
+  }
+  if (
+    isRecord(response.incomplete_details) &&
+    typeof response.incomplete_details.reason === 'string'
+  ) {
+    return `ChatGPT HTTP response incomplete: ${responseSnippet(response.incomplete_details.reason, secrets)}`;
   }
   return 'Codex Responses rejected the image request.';
 }
@@ -139,7 +146,7 @@ function isUsageLimitMessage(message: string) {
 
 function createUsageLimitError(httpStatus?: number | null) {
   return new SubscriptionHttpError(
-    'ChatGPT Sign in has no available usage for this HTTP route. Luna Reserve is available through Codex app; choose GPT-Reserve there or use separate API credits.',
+    'ChatGPT Sign in has no available usage for this HTTP route. Wait for its usage limit to reset or select another available route.',
     { code: 'source_limit', fallbackAllowed: false, httpStatus },
   );
 }
@@ -148,7 +155,7 @@ function classifySseFailure(event: Record<string, unknown>, secrets: readonly st
   const message = sseFailureMessage(event, secrets);
   if (isUsageLimitMessage(message)) return createUsageLimitError();
   const lower = message.toLowerCase();
-  if (lower.includes('moderat') || lower.includes('safety')) {
+  if (lower.includes('moderat') || lower.includes('safety') || lower.includes('content_filter')) {
     return new SubscriptionHttpError(message, {
       code: 'moderation',
       fallbackAllowed: false,
@@ -162,7 +169,14 @@ function classifySseFailure(event: Record<string, unknown>, secrets: readonly st
 
 function isFailedSseEvent(event: unknown): event is Record<string, unknown> {
   if (!isRecord(event)) return false;
-  return event.type === 'response.failed' || event.type === 'error' || event.status === 'failed';
+  const response = isRecord(event.response) ? event.response : event;
+  return (
+    event.type === 'response.failed' ||
+    event.type === 'response.incomplete' ||
+    event.type === 'error' ||
+    response.status === 'failed' ||
+    response.status === 'incomplete'
+  );
 }
 
 function summarizeCodexError(body: string, secrets: readonly string[]) {

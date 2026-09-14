@@ -13,6 +13,7 @@ export interface Attachment {
   dataUrl: string; // Inline data URL or browser-renderable reference URL.
   localPath?: string;
   sourceUrl?: string;
+  isProcessing?: boolean;
   strength: number; // Value from 0 to 1
 }
 

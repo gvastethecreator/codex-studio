@@ -15,19 +15,27 @@ import {
 /** Owns URL navigation, browse filters and favorites; runtime pack loading stays demand-driven. */
 export function useStyleBrowserNavigation({
   routeOptions,
+  scopeKey = 'default',
   defaultPackId,
   allCategoriesTabId,
   allCardsTabId,
 }: {
   routeOptions: StyleTabRouteOptions;
+  scopeKey?: string;
   defaultPackId: string;
   allCategoriesTabId: string;
   allCardsTabId: string;
 }) {
-  const [currentPackId, setCurrentPackId] = useState(defaultPackId);
-  const [isPackLandingOpen, setIsPackLandingOpen] = useState(true);
-  const currentStyleTabRef = useRef<StyleTabId>(STYLE_PACKS_TAB_ID);
-  const [browserState, setBrowserState] = useState({
+  const [lastTab, setLastTab] = useLocalStorage<StyleTabId>(
+    `style-browser-tab:${scopeKey}`,
+    STYLE_PACKS_TAB_ID,
+  );
+  const [currentPackId, setCurrentPackId] = useState(
+    lastTab === STYLE_PACKS_TAB_ID ? defaultPackId : lastTab,
+  );
+  const [isPackLandingOpen, setIsPackLandingOpen] = useState(lastTab === STYLE_PACKS_TAB_ID);
+  const currentStyleTabRef = useRef<StyleTabId>(lastTab);
+  const [browserState, setBrowserState] = useLocalStorage(`style-browser:${scopeKey}`, {
     searchQuery: '',
     sortOrder: 'source' as StyleBrowserSortOrder,
     viewMode: 'grouped' as StyleBrowserViewMode,
@@ -83,6 +91,7 @@ export function useStyleBrowserNavigation({
               } satisfies Partial<typeof browserState>)
             : {};
       currentStyleTabRef.current = normalizedTabId;
+      setLastTab(normalizedTabId);
 
       startViewTransition(() => {
         if (normalizedTabId === STYLE_PACKS_TAB_ID) {
@@ -106,7 +115,7 @@ export function useStyleBrowserNavigation({
         }
       });
     },
-    [routeOptions, allCategoriesTabId, allCardsTabId],
+    [routeOptions, allCategoriesTabId, allCardsTabId, setLastTab],
   );
 
   const navigateToStyleTab = useCallback(
@@ -124,17 +133,18 @@ export function useStyleBrowserNavigation({
       if (!hashTabId) return;
 
       if (window.location.hash === `#${STYLE_RECIPE_HASH_PREFIX}`) {
-        writeStyleTabHash(hashTabId, 'replace');
+        writeStyleTabHash(lastTab, 'replace');
+        return;
       }
 
       if (currentStyleTabRef.current === hashTabId) return;
-      applyStyleTab(hashTabId, { resetSearch: true });
+      applyStyleTab(hashTabId, { resetSearch: false });
     };
 
     syncStyleTabFromHash();
     window.addEventListener('hashchange', syncStyleTabFromHash);
     return () => window.removeEventListener('hashchange', syncStyleTabFromHash);
-  }, [applyStyleTab, routeOptions, writeStyleTabHash]);
+  }, [applyStyleTab, routeOptions, writeStyleTabHash, lastTab]);
 
   const toggleFavorite = useCallback(
     (presetId: string) => {

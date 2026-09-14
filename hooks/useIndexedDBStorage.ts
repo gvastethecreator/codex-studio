@@ -21,7 +21,7 @@ function useIndexedDBStorage<T>(
   key: string,
   initialValue: T,
   options: { prepareForPersist?: (value: T) => T } = {},
-): [T, (value: T | ((val: T) => T)) => void] {
+): [T, (value: T | ((val: T) => T)) => void, boolean] {
   const [state, setState] = useState<IDBState<T>>({ value: initialValue, initialized: false });
   const timeoutRef = useRef<number | null>(null);
   const prepareForPersist = options.prepareForPersist;
@@ -81,7 +81,7 @@ function useIndexedDBStorage<T>(
     };
   }, [key, prepareForPersist, state.value, state.initialized]);
 
-  return [state.value, setValue];
+  return [state.value, setValue, state.initialized];
 }
 
 export default useIndexedDBStorage;

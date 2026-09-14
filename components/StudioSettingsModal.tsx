@@ -1,3 +1,4 @@
+import { ConfirmationModal } from './ConfirmationModal';
 import {
   IconLoader as LoaderCircle,
   IconRefresh as RefreshCw,
@@ -39,6 +40,7 @@ import {
 } from './settings/SettingsMaintenancePanel';
 
 interface StudioSettingsModalProps {
+  onExportLegacyWorkspaceSnapshot: () => void;
   isOpen: boolean;
   onClose: () => void;
   settings: EditableStudioSettings | null;
@@ -69,6 +71,7 @@ interface StudioSettingsModalProps {
 }
 
 export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
+  onExportLegacyWorkspaceSnapshot,
   isOpen,
   onClose,
   settings,
@@ -98,17 +101,29 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   );
   const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('providers');
   const dialogRef = useRef<HTMLDivElement>(null);
-  const closeRef = useRef(onClose);
+  const dirtyRef = useRef(false);
+  const [confirmDiscard, setConfirmDiscard] = useState(false);
+  const requestClose = () => {
+    if (dirtyRef.current) setConfirmDiscard(true);
+    else onClose();
+  };
+  const closeRef = useRef(requestClose);
   useEffect(() => {
-    closeRef.current = onClose;
-  }, [onClose]);
+    closeRef.current = requestClose;
+  });
   useEffect(() => {
     if (!isOpen) return;
     const previousFocus = document.activeElement;
     dialogRef.current?.querySelector<HTMLButtonElement>('[aria-label="Close settings"]')?.focus();
     const handleKey = (event: KeyboardEvent) => {
       const dialog = dialogRef.current;
-      if (!dialog) return;
+      if (
+        !dialog ||
+        document
+          .querySelectorAll('[aria-modal="true"]')
+          .item(document.querySelectorAll('[aria-modal="true"]').length - 1) !== dialog
+      )
+        return;
       if (event.key === 'Escape') {
         event.preventDefault();
         event.stopPropagation();
@@ -174,6 +189,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   const hasChanges =
     JSON.stringify(buildStudioSettingsPatch(formState)) !==
     JSON.stringify(buildStudioSettingsPatch(savedForm));
+  dirtyRef.current = hasChanges;
   const fileNameError = formState.outputFileNameTemplate.trim()
     ? null
     : 'Enter an output filename template.';
@@ -240,7 +256,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             <button
               type="button"
               aria-label="Close settings"
-              onClick={onClose}
+              onClick={requestClose}
               className="flex size-9 items-center justify-center rounded-lg text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
             >
               <X size={18} />
@@ -279,7 +295,8 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             </div>
           )}
 
-          {activeDomain === 'library' ||
+          {activeDomain === 'appearance' ||
+          activeDomain === 'library' ||
           activeDomain === 'providers' ||
           activeDomain === 'output' ? (
             <div className={activeDomain === 'output' ? 'grid gap-4' : undefined}>
@@ -297,7 +314,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
                   isResettingStudio={isResettingStudio}
                 />
               </fieldset>
-              {activeDomain === 'output' ? (
+              {activeDomain === 'library' ? (
                 <SettingsOutputSourcesPanel
                   outputSources={outputSources}
                   outputSourceFiles={outputSourceFiles}
@@ -312,6 +329,22 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               ) : null}
             </div>
           ) : null}
+          {activeDomain === 'library' && (
+            <section className="mt-4 rounded-lg border border-white/10 p-4">
+              <h3 className="text-sm font-semibold">Export workspace metadata</h3>
+              <p className="my-2 text-xs text-zinc-400">
+                Legacy snapshot of workspace settings. This does not include image files or replace
+                a library backup.
+              </p>
+              <button
+                type="button"
+                className="rounded-lg bg-white/10 px-3 py-2 text-sm"
+                onClick={onExportLegacyWorkspaceSnapshot}
+              >
+                Export legacy snapshot
+              </button>
+            </section>
+          )}
           {activeDomain === 'maintenance' ? (
             <SettingsMaintenancePanel maintenance={maintenance} />
           ) : null}
@@ -323,7 +356,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </span>
           <button
             type="button"
-            onClick={onClose}
+            onClick={requestClose}
             className="h-10 rounded-lg px-4 text-[10px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
           >
             Close
@@ -339,6 +372,19 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </button>
         </div>
       </div>
+      <ConfirmationModal
+        isOpen={confirmDiscard}
+        title="Discard unsaved settings?"
+        description="Your saved settings will stay unchanged."
+        confirmLabel="Discard changes"
+        cancelLabel="Keep editing"
+        tone="warning"
+        onClose={() => setConfirmDiscard(false)}
+        onConfirm={() => {
+          setConfirmDiscard(false);
+          onClose();
+        }}
+      />
     </div>
   );
 };

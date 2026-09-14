@@ -15,6 +15,7 @@ import {
   IconChevronDown as ChevronDown,
 } from '@tabler/icons-react';
 import Tooltip from './Tooltip';
+import { cn } from '../lib/utils';
 import Logo from './Logo';
 import { TopToolbar } from './ui/TopToolbar';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
@@ -23,7 +24,6 @@ import type { StudioUsageSummary } from '../lib/studioDiagnostics';
 import type { Workspace, RecipeId } from '../types';
 import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
-import { QueueProgressBar } from './header/QueueProgressBar';
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import { getRecipeShellTitle } from '../lib/recipeShellMetadata';
 import type { GenerationProviderId } from '../packages/shared/src';
@@ -57,10 +57,7 @@ export interface HeaderToolbarProps {
   onOpenSettings: () => void;
   onSelectProvider: (providerId: GenerationProviderId) => Promise<void>;
   isProviderSaving: boolean;
-  generationStartTime: number | null;
 }
-
-const EMPTY_QUEUE_PREVIEWS: StudioCommandCenterProjection['queue']['resultPreviews'] = [];
 
 const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   isGenerating,
@@ -89,7 +86,6 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   onOpenSettings,
   onSelectProvider,
   isProviderSaving,
-  generationStartTime,
 }) => {
   const [isMobileWorkspaceOpen, setIsMobileWorkspaceOpen] = React.useState(false);
   const [isMobileCommandOpen, setIsMobileCommandOpen] = React.useState(false);
@@ -109,10 +105,9 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const runtimeStatus = commandCenter.runtimeStatus;
   const activeProvider = commandCenter.provider;
   const providerOptions = commandCenter.providerOptions;
-  const queueResultPreviews = commandCenter.queue.resultPreviews ?? EMPTY_QUEUE_PREVIEWS;
-  const queueCount = commandCenter.queue.count;
-  const hasQueueResultPreviews = commandCenter.queue.hasResultPreviews;
-  const showCollapsedQueueProgress = commandCenter.queue.showCollapsedProgress;
+  const queueCount = commandCenter.queue.activeCount;
+  const reviewCount = commandCenter.queue.reviewCount;
+  const queueLabel = `${queueCount} active, ${reviewCount} need review`;
   const providerToolbarLabel = activeProvider.toolbarLabel;
   const providerShortLabel = activeProvider.shortLabel;
   const runtimeToneClass =
@@ -166,10 +161,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
         <div className="flex min-w-0 flex-1 flex-nowrap items-center gap-1 sm:gap-1.5 lg:gap-2">
           <div className="flex shrink-0 items-center gap-1.5">
             <Logo isGenerating={isGenerating} />
-            <div
-              ref={mobileWorkspaceRef}
-              className={`relative ${isRecipeView ? 'hidden sm:block' : 'sm:hidden'}`}
-            >
+            <div ref={mobileWorkspaceRef} className="relative">
               <Tooltip content="Workspaces" position="bottom">
                 <button
                   ref={mobileWorkspaceButtonRef}
@@ -179,14 +171,12 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   aria-haspopup="menu"
                   aria-expanded={isMobileWorkspaceOpen}
                   aria-controls="mobile-workspace-menu"
-                  className={`studio-command-surface studio-hit-target flex cursor-pointer items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white ${isRecipeView ? 'h-8 w-auto gap-1.5 px-2' : 'size-8'}`}
+                  className={`studio-command-surface studio-hit-target flex cursor-pointer items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white h-8 w-auto gap-1.5 px-2`}
                 >
                   <Briefcase size={15} />
-                  {isRecipeView ? (
-                    <span className="hidden max-w-28 truncate text-[10px] font-black uppercase tracking-[0.14em] lg:inline">
-                      {workspaceLabel}
-                    </span>
-                  ) : null}
+                  <span className="hidden max-w-28 truncate text-[10px] font-black uppercase tracking-[0.14em] lg:inline">
+                    {workspaceLabel}
+                  </span>
                 </button>
               </Tooltip>
               <DemandMountedGsapDropdown
@@ -218,71 +208,31 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             </div>
           </div>
 
-          {isRecipeView && activeRecipeData ? (
-            <div className="flex min-w-0 items-center gap-1 sm:gap-2">
-              <div className="flex min-w-0 items-center gap-1 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                <button
-                  type="button"
-                  onClick={() => onViewChange('studio')}
-                  aria-label="Go to studio"
-                  title="Studio"
-                  className="vt-nav-studio studio-command-surface studio-hit-target flex size-8 items-center justify-center rounded-lg bg-zinc-800 text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white cursor-pointer"
-                >
-                  <Home size={14} />
-                </button>
-                <span className="hidden opacity-50 sm:inline">/</span>
-                <button
-                  type="button"
-                  onClick={onCloseRecipe}
-                  aria-label="Back to recipes"
-                  className="vt-nav-recipes studio-command-surface studio-hit-target flex h-8 shrink-0 items-center gap-1.5 rounded-lg bg-zinc-800 px-2 text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white group cursor-pointer sm:px-2.5"
-                >
-                  <ArrowLeft size={14} />
-                  <span className="hidden sm:inline">Recipes</span>
-                </button>
-                <span className="opacity-50">/</span>
-                <span
-                  aria-current="page"
-                  className="min-w-0 max-w-[7.5rem] truncate text-white sm:max-w-none"
-                >
-                  {activeRecipeData.name}
-                </span>
-              </div>
-            </div>
-          ) : (
-            <div className="studio-command-group flex shrink-0 items-center gap-1 rounded-lg border border-white/2 bg-white/5 p-0.5">
-              <button
-                type="button"
-                onClick={() => onViewChange('studio')}
-                aria-label={`Open studio workspace ${workspaceLabel}`}
-                aria-current={currentView === 'studio' ? 'page' : undefined}
-                className={`vt-nav-studio studio-hit-target rounded-md px-2.5 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer sm:px-3 ${currentView === 'studio' ? 'studio-command-active bg-zinc-800 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
-              >
-                <span className="sm:hidden">Studio</span>
-                <span className="hidden sm:inline">{workspaceLabel}</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => onViewChange('recipes')}
-                aria-label="Open recipes"
-                aria-current={currentView === 'recipes' ? 'page' : undefined}
-                className={`vt-nav-recipes studio-hit-target rounded-md px-2.5 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer sm:px-3 ${currentView === 'recipes' ? 'studio-command-active bg-accent-600 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
-              >
-                Recipes
-              </button>
-            </div>
-          )}
-
-          <div className={`${isRecipeView ? 'hidden' : 'hidden min-w-0 md:block'}`}>
-            <WorkspaceStrip
-              workspaces={workspaces}
-              activeWorkspaceId={activeWorkspaceId}
-              onSwitchWorkspace={onSwitchWorkspace}
-              onAddWorkspace={onAddWorkspace}
-              onDeleteWorkspace={onDeleteWorkspace}
-              onRenameWorkspace={onRenameWorkspace}
-            />
-          </div>
+          <nav className="flex min-w-0 items-center gap-1" aria-label="Studio navigation">
+            <button
+              type="button"
+              className="rounded-lg px-3 py-2 text-sm hover:bg-white/10"
+              aria-label="Open recipes"
+              aria-current={currentView !== 'studio' ? 'page' : undefined}
+              onClick={() => onViewChange('recipes')}
+            >
+              Create
+            </button>
+            <button
+              type="button"
+              className="rounded-lg px-3 py-2 text-sm hover:bg-white/10"
+              aria-label="Go to studio"
+              aria-current={currentView === 'studio' ? 'page' : undefined}
+              onClick={() => onViewChange('studio')}
+            >
+              Library
+            </button>
+            {isRecipeView && activeRecipeData && (
+              <span className="hidden truncate border-l border-white/10 pl-3 text-sm text-zinc-400 lg:inline">
+                {activeRecipeData.name}
+              </span>
+            )}
+          </nav>
         </div>
 
         <div className="ml-auto flex shrink-0 items-center gap-1">
@@ -294,7 +244,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             <Tooltip content={runtimeStatus.tooltip} position="bottom">
               <button
                 type="button"
-                onClick={onOpenDashboard}
+                onClick={onOpenOnboarding}
                 aria-label={`Open runtime status: ${runtimeStatus.label}`}
                 className={`studio-command-surface studio-hit-target hidden size-8 items-center justify-center gap-1.5 rounded-lg border transition-[color,background-color,border-color,opacity,transform] hover:border-white/2 hover:bg-white/8 sm:flex xl:w-auto xl:px-2 ${runtimeToneClass}`}
               >
@@ -314,7 +264,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   ref={providerButtonRef}
                   type="button"
                   onClick={() => setIsProviderMenuOpen((isOpen) => !isOpen)}
-                  aria-label={`Image generation provider: ${activeProvider.label}. Change provider`}
+                  aria-label={`Image generation provider: ${activeProvider.id === 'codex' ? 'Codex' : activeProvider.label}. Change provider`}
                   aria-haspopup="dialog"
                   aria-expanded={isProviderMenuOpen}
                   aria-controls="provider-quick-switch"
@@ -401,49 +351,37 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 </button>
               </DemandMountedGsapDropdown>
             </div>
-            <Tooltip content="Help & setup" position="bottom">
-              <button
-                type="button"
-                onClick={onOpenOnboarding}
-                aria-label="Open help and setup"
-                className="studio-command-surface studio-hit-target hidden size-8 cursor-pointer items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
-              >
-                <CircleHelp size={15} />
-              </button>
-            </Tooltip>
-            <Tooltip content="Studio activity" position="bottom">
-              <button
-                type="button"
-                onClick={onToggleDebug}
-                aria-label="Open studio activity"
-                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
-              >
-                <Activity size={15} />
-              </button>
-            </Tooltip>
-            <Tooltip content="Archived images" position="bottom">
-              <button
-                type="button"
-                onClick={onOpenTrash}
-                aria-label="Open archived images"
-                className={`studio-hit-target relative hidden size-8 items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity,transform] sm:flex ${trashCount > 0 ? 'studio-command-danger border-red-500/20 bg-red-500/10 text-red-300 hover:border-red-400/30 hover:bg-red-500/15 hover:text-red-200' : 'studio-command-surface border-white/2 bg-white/5 text-zinc-300 hover:border-white/2 hover:bg-white/8 hover:text-white'}`}
-              >
-                <Trash2 size={15} />
-                {trashCount > 0 && (
-                  <span className="absolute right-1 top-1 size-2 rounded-full border border-black/2 bg-red-500 animate-pulse" />
-                )}
-              </button>
-            </Tooltip>
-            <Tooltip content="Codex chat" position="bottom">
-              <button
-                type="button"
-                onClick={onOpenChat}
-                aria-label="Open Codex chat"
-                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
-              >
-                <MessageSquare size={15} />
-              </button>
-            </Tooltip>
+            <details className="relative hidden sm:block">
+              <summary className="cursor-pointer rounded-lg px-3 py-2 text-sm text-zinc-300">
+                Tools
+              </summary>
+              <div className="absolute right-0 top-11 z-50 grid w-48 gap-2 rounded-xl border border-white/10 bg-zinc-900 p-3 shadow-xl">
+                <button
+                  type="button"
+                  className="rounded p-2 text-left hover:bg-white/10"
+                  onClick={onOpenOnboarding}
+                  aria-label="Open help and setup"
+                >
+                  Help &amp; setup
+                </button>
+                <button
+                  type="button"
+                  className="rounded p-2 text-left hover:bg-white/10"
+                  onClick={onToggleDebug}
+                  aria-label="Open studio activity"
+                >
+                  Activity
+                </button>
+                <button
+                  type="button"
+                  className="rounded p-2 text-left hover:bg-white/10"
+                  onClick={onOpenTrash}
+                  aria-label="Open archived images"
+                >
+                  Trash
+                </button>
+              </div>
+            </details>
             <Tooltip content="Studio settings" position="bottom">
               <button
                 type="button"
@@ -454,50 +392,29 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 <Settings size={15} />
               </button>
             </Tooltip>
-            <Tooltip content="Persistent jobs" position="bottom">
+            <Tooltip content={`Jobs · ${queueLabel}`} position="bottom">
               <button
                 type="button"
                 onClick={onToggleQueue}
-                aria-label={`${isQueueOpen ? 'Close' : 'Open'} persistent jobs (${queueCount} jobs)`}
+                aria-label={`${isQueueOpen ? 'Close' : 'Open'} jobs (${queueLabel})`}
                 aria-pressed={isQueueOpen}
-                className={`studio-command-surface studio-hit-target relative flex h-8 min-w-8 items-center justify-center gap-1.5 overflow-hidden rounded-lg border px-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] xl:px-2.5 ${
+                className={cn(
+                  'studio-command-surface studio-hit-target flex h-8 items-center justify-center gap-1.5 rounded-lg border px-2 text-xs transition-colors',
                   isQueueOpen
-                    ? 'border-accent-500/2 bg-accent-500/12 text-white'
-                    : showCollapsedQueueProgress
-                      ? 'border-accent-400/2 bg-accent-500/15 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.16)]'
-                      : 'border-white/2 bg-white/5 text-zinc-300 hover:border-white/2 hover:bg-white/8 hover:text-white'
-                }`}
+                    ? 'border-accent-500/20 bg-accent-500/12 text-white'
+                    : 'border-white/10 bg-white/5 text-zinc-300 hover:bg-white/10',
+                )}
               >
-                {showCollapsedQueueProgress && (
-                  <QueueProgressBar generationStartTime={generationStartTime} />
-                )}
-                <SidebarRight
-                  size={15}
-                  className={showCollapsedQueueProgress ? 'text-accent-200' : undefined}
-                />
-                {hasQueueResultPreviews && (
-                  <div className="hidden items-center sm:flex [&>*+*]:-ml-2">
-                    {queueResultPreviews.slice(0, 3).map((preview) => (
-                      <span
-                        key={preview.id}
-                        className="size-5 overflow-hidden rounded-md border border-black/2 bg-black/40 shadow-sm"
-                      >
-                        <img
-                          src={preview.src}
-                          alt=""
-                          width={20}
-                          height={20}
-                          className="size-full object-cover"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                      </span>
-                    ))}
-                  </div>
-                )}
-                <span className="text-[10px] font-black tabular-nums uppercase tracking-[0.16em]">
-                  {queueCount}
-                </span>
+                <SidebarRight size={15} />
+                <span>Jobs</span>
+                {queueCount > 0 ? (
+                  <span className="tabular-nums text-accent-200">{queueCount} active</span>
+                ) : null}
+                {reviewCount > 0 ? (
+                  <span className="border-l border-white/15 pl-1.5 text-amber-300">
+                    {reviewCount} review
+                  </span>
+                ) : null}
               </button>
             </Tooltip>
             <div ref={mobileCommandRef} className="relative sm:hidden">
@@ -615,13 +532,19 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 <div className="grid grid-cols-2 gap-2">
                   <button
                     type="button"
-                    aria-label="Open Codex chat"
+                    aria-label="Focus generation prompt"
                     data-dropdown-item
-                    onClick={() => runMobileCommand(onOpenChat)}
+                    onClick={() =>
+                      runMobileCommand(() =>
+                        document
+                          .querySelector<HTMLTextAreaElement>('[aria-label="Prompt input"]')
+                          ?.focus(),
+                      )
+                    }
                     className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
                   >
                     <MessageSquare size={15} />
-                    Chat
+                    Compose
                   </button>
                   <button
                     type="button"

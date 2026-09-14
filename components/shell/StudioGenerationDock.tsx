@@ -48,7 +48,11 @@ function ConnectedGenerationToolbar({
     <Toolbar
       {...toolbarProps}
       activeRecipe={activeRecipe}
-      mode={activeRecipe === 'animation-sequence' ? 'context-only' : 'full'}
+      mode={
+        ['animation-sequence', 'sprite-atlas', 'character-lab'].includes(activeRecipe ?? '')
+          ? 'context-only'
+          : 'full'
+      }
       interactionScope={`${currentView}:${activeRecipe ?? 'studio'}`}
     />
   );
@@ -63,7 +67,7 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   toolbarArgs,
 }) => {
   const isVisible =
-    !isModalOpen && !isUiChromeSuppressed && (currentView === 'studio' || !!activeRecipe);
+    !isModalOpen && !isUiChromeSuppressed && (currentView === 'recipes' || !!activeRecipe);
 
   if (!isVisible) {
     return null;

@@ -122,12 +122,6 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
     setMessages((current) => [
       ...current,
       { id: `user-${now}`, role: 'user', text: trimmed, createdAt: now },
-      {
-        id: `assistant-${now}`,
-        role: 'assistant',
-        text: `Queued on ${providerId}.`,
-        createdAt: now,
-      },
     ]);
     onGenerate(trimmed, undefined, { preventModal: true });
     setPrompt('');

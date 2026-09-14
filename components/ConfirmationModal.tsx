@@ -1,3 +1,4 @@
+import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
@@ -58,6 +59,7 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
   onClose,
   onConfirm,
 }) => {
+  const dialogRef = useDialogFocus(isOpen, onClose);
   if (!isOpen) return null;
 
   const toneStyles = TONE_STYLES[tone];
@@ -74,6 +76,11 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
         />
 
         <MotionDiv
+          ref={dialogRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label={title}
+          tabIndex={-1}
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}

@@ -378,7 +378,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           <button
             type="button"
             onClick={handleImageClick}
-            aria-label="Open image preview"
+            aria-label={`Open image preview: ${image.config.prompt?.slice(0, 80) || image.id}`}
             className="flex min-w-0 flex-1 cursor-pointer items-center gap-3 appearance-none border-none bg-transparent p-0 text-left"
           >
             {renderImageFrame({
@@ -414,7 +414,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           <button
             type="button"
             onClick={handleImageClick}
-            aria-label="Open image preview"
+            aria-label={`Open image preview: ${image.config.prompt?.slice(0, 80) || image.id}`}
             className="relative block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
           >
             {renderImageFrame({
@@ -455,7 +455,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         <button
           type="button"
           onClick={handleImageClick}
-          aria-label="Open image preview"
+          aria-label={`Open image preview: ${image.config.prompt?.slice(0, 80) || image.id}`}
           className="block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
         >
           {renderImageFrame({
@@ -1170,7 +1170,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                       <Square size={16} />
                     )
                   }
-                  label={isAllSelected ? 'Deselect' : 'Select All'}
+                  label={isAllSelected ? 'Deselect' : 'Select loaded images'}
                   isActive={isAllSelected}
                   tooltipPosition="bottom"
                 />
@@ -1226,48 +1226,56 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
               )}
             </div>
           )}
-          <div
-            role="group"
-            aria-label={`Image view: ${activeViewOption.label}`}
-            className="flex h-10 items-center gap-1 rounded-xl border border-white/2 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md"
-          >
-            {IMAGE_GRID_VIEW_OPTIONS.map(({ value, label, description, Icon }) => {
-              const selected = value === viewMode;
+          <details className="relative">
+            <summary className="cursor-pointer rounded-lg bg-zinc-900 px-3 py-2 text-sm">
+              View
+            </summary>
+            <div className="absolute right-0 top-12 z-50 grid gap-3 rounded-xl border border-white/10 bg-zinc-900 p-3 shadow-xl">
+              {' '}
+              <div
+                role="group"
+                aria-label={`Image view: ${activeViewOption.label}`}
+                className="flex h-10 items-center gap-1 rounded-xl border border-white/2 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md"
+              >
+                {IMAGE_GRID_VIEW_OPTIONS.map(({ value, label, description, Icon }) => {
+                  const selected = value === viewMode;
 
-              return (
-                <Tooltip key={value} content={`${label}: ${description}`} position="bottom">
-                  <button
-                    type="button"
-                    onClick={() => handleViewModeChange(value)}
-                    aria-label={`${label} view`}
-                    aria-pressed={selected}
-                    className={`flex min-h-8 min-w-8 touch-manipulation items-center justify-center rounded-lg transition-[background-color,color,transform,box-shadow] focus-visible:ring-2 focus-visible:ring-white/25 ${
-                      selected
-                        ? 'bg-accent-600 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.18)]'
-                        : 'text-zinc-500 hover:bg-white/8 hover:text-zinc-200'
-                    }`}
-                  >
-                    <Icon size={16} className="pointer-events-none" />
-                  </button>
-                </Tooltip>
-              );
-            })}
-          </div>
-          <Tooltip content="Thumbnail size" position="bottom">
-            <label className="hidden h-10 items-center gap-2 rounded-xl border border-white/2 bg-zinc-900/80 px-2 text-zinc-400 shadow-2xl backdrop-blur-md sm:flex">
-              <Photo size={15} />
-              <input
-                type="range"
-                aria-label="Thumbnail size"
-                min={MIN_THUMBNAIL_SIZE}
-                max={MAX_THUMBNAIL_SIZE}
-                step={THUMBNAIL_SIZE_STEP}
-                value={thumbnailSize}
-                onChange={(event) => setThumbnailSize(Number(event.target.value))}
-                className="h-1 w-24 cursor-pointer accent-accent-500 sm:w-28"
-              />
-            </label>
-          </Tooltip>
+                  return (
+                    <Tooltip key={value} content={`${label}: ${description}`} position="bottom">
+                      <button
+                        type="button"
+                        onClick={() => handleViewModeChange(value)}
+                        aria-label={`${label} view`}
+                        aria-pressed={selected}
+                        className={`flex min-h-8 min-w-8 touch-manipulation items-center justify-center rounded-lg transition-[background-color,color,transform,box-shadow] focus-visible:ring-2 focus-visible:ring-white/25 ${
+                          selected
+                            ? 'bg-accent-600 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.18)]'
+                            : 'text-zinc-500 hover:bg-white/8 hover:text-zinc-200'
+                        }`}
+                      >
+                        <Icon size={16} className="pointer-events-none" />
+                      </button>
+                    </Tooltip>
+                  );
+                })}
+              </div>
+              <Tooltip content="Thumbnail size" position="bottom">
+                <label className="hidden h-10 items-center gap-2 rounded-xl border border-white/2 bg-zinc-900/80 px-2 text-zinc-400 shadow-2xl backdrop-blur-md sm:flex">
+                  <Photo size={15} />
+                  <input
+                    type="range"
+                    aria-label="Thumbnail size"
+                    min={MIN_THUMBNAIL_SIZE}
+                    max={MAX_THUMBNAIL_SIZE}
+                    step={THUMBNAIL_SIZE_STEP}
+                    value={thumbnailSize}
+                    onChange={(event) => setThumbnailSize(Number(event.target.value))}
+                    className="h-1 w-24 cursor-pointer accent-accent-500 sm:w-28"
+                  />
+                </label>
+              </Tooltip>
+            </div>
+          </details>
           <div className="relative">
             <Tooltip content="Sort Images" position="bottom">
               <button

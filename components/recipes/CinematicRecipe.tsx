@@ -153,9 +153,17 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
   onGenerate,
   isGenerating,
 }) => {
-  const [params, setParams] = useState(DEFAULT_PARAMS);
+  const [params, setParams] = useState(
+    () =>
+      ({
+        ...DEFAULT_PARAMS,
+        ...(config.recipeId === 'cinematic' ? config.recipeParams : {}),
+      }) as typeof DEFAULT_PARAMS,
+  );
 
-  const [frameShots, setFrameShots] = useState<Record<number, string>>({});
+  const [frameShots, setFrameShots] = useState<Record<number, string>>(
+    () => (config.recipeParams?.frameShots as Record<number, string>) ?? {},
+  );
 
   const fileInputRef = useRef<HTMLInputElement>(null);
   const activeImage = config.attachments[0];
@@ -272,40 +280,43 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
 
         <div className="h-10 w-px bg-white/10 mx-2 hidden xl:block" />
 
-        <div className="flex items-center gap-3 flex-wrap justify-center">
-          <ControlDropdown
-            title="Genre"
-            icon={<Film size={14} />}
-            label={params.genre}
-            options={CONTROL_OPTIONS.genre}
-            onSelect={(v) => setParams((p) => ({ ...p, genre: v }))}
-            activeColor="rose"
-          />
-          <ControlDropdown
-            title="Tone"
-            icon={<Aperture size={14} />}
-            label={params.tone}
-            options={CONTROL_OPTIONS.tone}
-            onSelect={(v) => setParams((p) => ({ ...p, tone: v }))}
-            activeColor="rose"
-          />
-          <ControlDropdown
-            title="Camera"
-            icon={<Video size={14} />}
-            label={params.movement}
-            options={CONTROL_OPTIONS.movement}
-            onSelect={(v) => setParams((p) => ({ ...p, movement: v }))}
-            activeColor="rose"
-          />
-          <ControlDropdown
-            title="Lens"
-            icon={<Clapperboard size={14} />}
-            label={params.lens}
-            options={CONTROL_OPTIONS.lens}
-            onSelect={(v) => setParams((p) => ({ ...p, lens: v }))}
-            activeColor="rose"
-          />
-        </div>
+        <details className="recipe-advanced">
+          <summary>Advanced camera and mood</summary>
+          <div className="recipe-advanced-grid">
+            <ControlDropdown
+              title="Genre"
+              icon={<Film size={14} />}
+              label={params.genre}
+              options={CONTROL_OPTIONS.genre}
+              onSelect={(v) => setParams((p) => ({ ...p, genre: v }))}
+              activeColor="rose"
+            />
+            <ControlDropdown
+              title="Tone"
+              icon={<Aperture size={14} />}
+              label={params.tone}
+              options={CONTROL_OPTIONS.tone}
+              onSelect={(v) => setParams((p) => ({ ...p, tone: v }))}
+              activeColor="rose"
+            />
+            <ControlDropdown
+              title="Camera"
+              icon={<Video size={14} />}
+              label={params.movement}
+              options={CONTROL_OPTIONS.movement}
+              onSelect={(v) => setParams((p) => ({ ...p, movement: v }))}
+              activeColor="rose"
+            />
+            <ControlDropdown
+              title="Lens"
+              icon={<Clapperboard size={14} />}
+              label={params.lens}
+              options={CONTROL_OPTIONS.lens}
+              onSelect={(v) => setParams((p) => ({ ...p, lens: v }))}
+              activeColor="rose"
+            />
+          </div>
+        </details>
       </>
     ),
     [params, handleFrameChange],
@@ -360,42 +371,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
             </div>
           ))}
         </div>
-
-        {!activeImage && (
-          <button
-            type="button"
-            aria-label="Add cinematic reference"
-            className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer z-10 hover:bg-white/5 transition-colors bg-white/[0.01] appearance-none border-none p-0 m-0"
-            onClick={() => fileInputRef.current?.click()}
-            onDragOver={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
-            onDrop={handleDrop}
-          >
-            <input
-              type="file"
-              ref={fileInputRef}
-              onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
-              aria-label="Upload reference image"
-              className="hidden"
-              accept="image/*"
-            />
-            <div className="mb-6 flex size-20 items-center justify-center rounded-full border border-white/2 bg-zinc-900 shadow-2xl transition-[border-color,transform] group-hover:scale-110 group-hover:border-rose-500/2">
-              <Upload
-                size={28}
-                className="text-zinc-600 group-hover:text-rose-400 transition-colors"
-              />
-            </div>
-            <QuickStartText
-              title="Source Frame"
-              subtitle="Upload shot or enter prompt"
-              toneClassName="text-white"
-              subtitleClassName="text-zinc-400"
-              maxTitleFontSize={14}
-            />
-          </button>
-        )}
 
         {activeImage && (
           <button

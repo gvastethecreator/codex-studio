@@ -41,7 +41,9 @@ export function useStudioOnboarding({
   const isDesktopRuntime = runtime.isDesktop;
   const isReady = Boolean(health?.ok && health.checks.onboardingReady);
 
+  const manuallyOpenedRef = useRef(false);
   const openOnboarding = useCallback(() => {
+    manuallyOpenedRef.current = true;
     setIsOpen(true);
     void refreshHealth();
   }, [refreshHealth]);
@@ -74,7 +76,7 @@ export function useStudioOnboarding({
   }, [hasSeenOnboarding, health, isReady, setHasSeenOnboarding, shouldAutoOpen]);
 
   useEffect(() => {
-    if (!shouldCloseOnboardingBecauseReady(isReady, isOpen)) return;
+    if (manuallyOpenedRef.current || !shouldCloseOnboardingBecauseReady(isReady, isOpen)) return;
     completeOnboarding();
   }, [completeOnboarding, isOpen, isReady]);
 

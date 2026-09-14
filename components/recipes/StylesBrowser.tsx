@@ -1,3 +1,4 @@
+import { useWorkspaceState } from '../../contexts/GlobalContext';
 import {
   IconArchive as Archive,
   IconArrowsSort as ArrowUpDown,
@@ -57,6 +58,8 @@ import { useStyleRuntimePacks } from '../../hooks/useStyleRuntimePacks';
 import Tooltip from '../Tooltip';
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
+import { RecipeControls } from './RecipeWorkbenchContext';
+import { RecipeResultPreview } from './RecipeResultPreview';
 import { RecipeLayout } from './RecipeLayout';
 import {
   STYLE_BROWSER_EAGER_SECTION_LIMIT,
@@ -128,6 +131,7 @@ export interface StylesBrowserProps {
   ) => void;
   isGenerating: boolean;
   images?: GeneratedImageWithConfig[];
+  onSelectImage?: (image: GeneratedImageWithConfig) => void;
   activeProviderId?: GenerationProviderId;
   grokCanExecute?: boolean;
 }
@@ -624,6 +628,55 @@ const StyleFadeImage = React.memo(function StyleFadeImage({
   );
 });
 
+function StyleReferenceThumbnail({
+  image,
+  index,
+  onRemove,
+  compact = false,
+}: {
+  image: Attachment;
+  index: number;
+  onRemove: () => void;
+  compact?: boolean;
+}) {
+  return (
+    <div
+      data-style-reference-image={compact ? undefined : image.id}
+      aria-busy={image.isProcessing || undefined}
+      className="group/reference relative h-12 overflow-hidden rounded-md border border-white/2 bg-zinc-950"
+    >
+      <StyleFadeImage
+        src={image.dataUrl}
+        alt=""
+        width={80}
+        height={48}
+        className="size-full object-contain p-0.5"
+      />
+      {!compact && (
+        <div className="absolute left-1 top-1 rounded-sm border border-black/2 bg-black/70 px-1 py-0.5 text-[10px] font-black tabular-nums text-white/80">
+          {index + 1}
+        </div>
+      )}
+      {image.isProcessing && (
+        <span
+          role="status"
+          className="pointer-events-none absolute inset-x-0 bottom-0 bg-black/75 text-center text-[9px] text-white"
+        >
+          Loading…
+        </span>
+      )}
+      <button
+        type="button"
+        onClick={onRemove}
+        className={`absolute right-1 top-1 flex size-5 items-center justify-center rounded-md border border-red-400/20 bg-red-500/15 text-red-200 transition-[opacity,background-color,color] hover:bg-red-500 hover:text-white group-hover/reference:opacity-100 focus-visible:opacity-100 ${compact ? 'opacity-100' : 'opacity-0'}`}
+        aria-label={`Remove reference image ${index + 1}`}
+      >
+        <X size={11} />
+      </button>
+    </div>
+  );
+}
+
 const StylePresetGroupSection = React.memo(
   ({
     groupKey,
@@ -946,6 +999,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   onGenerate,
   isGenerating,
   images = EMPTY_IMAGES,
+  onSelectImage,
   activeProviderId = 'codex',
   grokCanExecute = false,
 }) => {
@@ -1013,7 +1067,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   }, []);
 
   // -- FILTERS & STATE --
+  const { activeWorkspaceId } = useWorkspaceState();
   const navigation = useStyleBrowserNavigation({
+    scopeKey: activeWorkspaceId,
     routeOptions: STYLE_TAB_ROUTE_OPTIONS,
     defaultPackId: DEFAULT_STYLE_PACK_ID,
     allCategoriesTabId: ALL_STYLE_CATEGORIES_TAB_ID,
@@ -1050,9 +1106,11 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const [stylePanelVisibility, setStylePanelVisibility] = useLocalStorage<
     Partial<StylePanelVisibility>
   >('styles-panel-visibility', DEFAULT_STYLE_PANEL_VISIBILITY);
-  const isReferencePanelOpen = stylePanelVisibility.references !== false;
-  const isStyleNavigationPanelOpen = stylePanelVisibility.navigation !== false;
-  const isStyleSlotsPanelOpen = stylePanelVisibility.slots !== false;
+  const [explorerOpen, setExplorerOpen] = useState(false);
+  const explorerToggleRef = useRef<HTMLButtonElement>(null);
+  const isReferencePanelOpen = false;
+  const isStyleNavigationPanelOpen = false;
+  const isStyleSlotsPanelOpen = true;
   const toggleStylePanel = useCallback(
     (panel: keyof StylePanelVisibility) => {
       setStylePanelVisibility((current) => {
@@ -1220,19 +1278,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     const observer = new ResizeObserver(updateWidth);
     observer.observe(node);
     return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    return () => updateConfig('recipeContext', '');
-  }, [updateConfig]);
-
-  useEffect(() => {
-    return () => {
-      updateConfig('recipeId', null);
-      updateConfig('recipeParams', null);
-      updateConfig('recipeContext', '');
-    };
-  }, [updateConfig]);
+  }, [currentPackId, isPackLandingOpen, explorerOpen]);
 
   const recipePresetId =
     config.recipeId === 'styles' &&
@@ -1952,466 +1998,70 @@ ${styleAnchorLine}
   const nextStyleTab = styleTabNavigationItems[currentStyleTabIndex + 1] ?? null;
 
   return (
-    <RecipeLayout isGenerating={isGenerating} className="flex size-full bg-[#050505]">
-      {/* LEFT: VISUAL CONTEXT PREVIEW */}
-      {isReferencePanelOpen ? (
-        <aside
-          data-style-reference-panel
-          className="relative z-10 hidden h-full w-[clamp(280px,18vw,420px)] shrink-0 flex-col overflow-hidden border-r border-white/2 bg-zinc-950/72 px-3 py-3 xl:flex 2xl:px-4"
-        >
-          <div className="flex min-h-0 w-full flex-1 flex-col gap-3">
-            <div className="flex h-12 shrink-0 items-center justify-between">
-              <div>
-                <h2 className="text-lg font-black text-white uppercase tracking-tighter">
-                  References
-                </h2>
-                <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-zinc-600">
-                  {referenceImages.length}/{MAX_STYLE_REFERENCE_IMAGES} Images
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={() => toggleStylePanel('references')}
-                data-style-reference-panel-toggle
-                className="flex size-8 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/[0.035] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
-                aria-label="Hide references panel"
-                title="Hide references"
-              >
-                <ChevronLeft size={15} />
-              </button>
-            </div>
-
-            <div
-              onDragOver={(e) => e.preventDefault()}
-              onDrop={handleDrop}
-              className="rounded-[6px] border border-white/2 bg-white/[0.025] p-1.5"
-            >
-              <input
-                type="file"
-                ref={fileInputRef}
-                aria-label="Upload reference images"
-                onChange={(e) => {
-                  if (e.target.files) {
-                    onFileSelect(Array.from(e.target.files).slice(0, referenceSlotsRemaining));
-                    e.target.value = '';
-                  }
-                }}
-                className="hidden"
-                accept="image/*"
-                multiple
-              />
-
-              <div className="grid grid-cols-5 gap-1.5">
-                {Array.from({ length: MAX_STYLE_REFERENCE_IMAGES }).map((_, index) => {
-                  const image = referenceImages[index];
-                  const isAddSlot =
-                    !image && index === referenceImages.length && referenceSlotsRemaining > 0;
-
-                  if (image) {
-                    return (
-                      <div
-                        key={image.id}
-                        data-style-reference-image={image.id}
-                        className="group/reference relative h-12 overflow-hidden rounded-md border border-white/2 bg-zinc-950"
-                      >
-                        <StyleFadeImage
-                          src={image.dataUrl}
-                          alt=""
-                          width={80}
-                          height={48}
-                          className="size-full object-contain p-0.5 opacity-95 transition-opacity group-hover/reference:opacity-100"
-                        />
-                        <div className="absolute left-1 top-1 rounded-sm border border-black/2 bg-black/70 px-1 py-0.5 text-[10px] font-black tabular-nums text-white/80">
-                          {index + 1}
-                        </div>
-                        <button
-                          type="button"
-                          onClick={() =>
-                            updateConfig(
-                              'attachments',
-                              config.attachments.filter((attachment) => attachment.id !== image.id),
-                            )
-                          }
-                          className="absolute right-1 top-1 flex size-5 items-center justify-center rounded-md border border-red-400/20 bg-red-500/15 text-red-200 opacity-0 transition-[opacity,background-color,color] hover:bg-red-500 hover:text-white group-hover/reference:opacity-100"
-                          aria-label={`Remove reference image ${index + 1}`}
-                        >
-                          <X size={11} />
-                        </button>
-                      </div>
-                    );
-                  }
-
-                  if (isAddSlot) {
-                    return (
-                      <button
-                        type="button"
-                        aria-label="Add style reference"
-                        key="add-reference"
-                        data-style-reference-add
-                        onClick={() => fileInputRef.current?.click()}
-                        className="group/add flex h-12 min-w-0 flex-col items-center justify-center gap-0.5 overflow-hidden rounded-md border border-dashed border-white/2 bg-zinc-950/70 text-zinc-500 transition-[border-color,background-color,color] hover:border-white/2 hover:bg-white/6 hover:text-white"
-                      >
-                        <Upload size={14} />
-                        <span className="max-w-full truncate px-1 text-[10px] font-black uppercase tracking-[0.14em]">
-                          Add
-                        </span>
-                      </button>
-                    );
-                  }
-
-                  return (
-                    <div
-                      key={`empty-reference-${index}`}
-                      data-style-reference-empty={index}
-                      className="flex h-12 items-center justify-center rounded-md border border-white/2 bg-zinc-950/40 text-zinc-700"
-                      aria-hidden="true"
-                    >
-                      <ImageIcon size={13} />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            <div
-              data-style-preview-card
-              onDragOver={(e) => e.preventDefault()}
-              onDrop={handleDrop}
-              className="relative min-h-[360px] flex-1 overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950 shadow-[0_24px_70px_rgba(0,0,0,0.48)] ring-1 ring-white/6"
-            >
-              {resolvedHoveredPresetPreview?.imageSrc ? (
-                <StyleFadeImage
-                  src={resolvedHoveredPresetPreview.imageSrc}
-                  width={480}
-                  height={640}
-                  className="absolute inset-0 size-full object-cover"
-                  alt={resolvedHoveredPresetPreview.name}
-                />
-              ) : referenceImages[0] ? (
-                <StyleFadeImage
-                  src={referenceImages[0].dataUrl}
-                  width={480}
-                  height={480}
-                  className="absolute inset-0 size-full object-cover opacity-95"
-                  alt=""
-                />
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => fileInputRef.current?.click()}
-                  className="absolute inset-3 flex items-center justify-center rounded-[6px] border border-dashed border-white/2 bg-white/[0.025] text-zinc-600 transition-[border-color,background-color,color] hover:border-white/2 hover:bg-white/[0.045] hover:text-zinc-300"
-                >
-                  <div className="flex flex-col items-center gap-3">
-                    <div className="flex size-14 items-center justify-center rounded-[6px] border border-white/2 bg-white/5">
-                      <Upload size={24} />
-                    </div>
-                    <span className="text-[10px] font-black uppercase tracking-[0.16em]">
-                      Drop reference image
-                    </span>
-                  </div>
-                </button>
-              )}
-
-              {resolvedHoveredPresetPreview && (
-                <>
-                  <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/5" />
-                  <div className="absolute inset-x-0 bottom-0 p-3">
-                    <div className="max-w-[94%] rounded-[6px] border border-white/2 bg-zinc-950/86 px-3 py-2.5 shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
-                      <div className="flex min-w-0 flex-wrap items-center gap-1.5">
-                        <span className="rounded-full border border-white/2 bg-white/6 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-white/65">
-                          {resolvedHoveredPresetPreview.packName}
-                        </span>
-                        <span className="rounded-full border border-white/2 bg-white/6 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-zinc-300/80">
-                          {resolvedHoveredPresetPreview.category}
-                        </span>
-                      </div>
-                      <h3 className="mt-2 truncate text-xs font-black uppercase tracking-[0.02em] text-white">
-                        {resolvedHoveredPresetPreview.name}
-                      </h3>
-                      <p className="mt-1.5 line-clamp-2 text-[10px] leading-relaxed text-zinc-200/78">
-                        {resolvedHoveredPresetPreview.aesthetic}
-                      </p>
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-          </div>
-        </aside>
-      ) : (
-        <aside
-          data-style-reference-panel-rail
-          className="hidden h-full w-10 shrink-0 items-start justify-center border-r border-white/2 bg-zinc-950/60 p-1.5 xl:flex"
-        >
-          <button
-            type="button"
-            onClick={() => toggleStylePanel('references')}
-            data-style-reference-panel-toggle
-            className="flex size-7 items-center justify-center rounded-[6px] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
-            aria-label="Show references panel"
-            title="Show references"
-          >
-            <ChevronRight size={14} />
-          </button>
-        </aside>
-      )}
-
+    <RecipeLayout isGenerating={isGenerating} className="styles-workbench flex size-full">
+      <div className="styles-result-area" hidden={explorerOpen}>
+        <RecipeResultPreview
+          onOpen={onSelectImage}
+          images={images.filter((image) => image.config?.recipeId === 'styles')}
+          reference={referenceImages[0]}
+        />
+      </div>
+      <button
+        type="button"
+        className="style-explorer-toggle"
+        ref={explorerToggleRef}
+        onClick={() => setExplorerOpen(!explorerOpen)}
+        aria-expanded={explorerOpen}
+      >
+        {explorerOpen ? 'Back to result' : 'Choose styles'}
+      </button>
+      <input
+        type="file"
+        ref={fileInputRef}
+        aria-label="Upload reference images"
+        onChange={(e) => {
+          if (e.target.files) {
+            onFileSelect(Array.from(e.target.files).slice(0, referenceSlotsRemaining));
+            e.target.value = '';
+          }
+        }}
+        className="hidden"
+        accept="image/*"
+        multiple
+      />
       {/* CENTER: STYLE BROWSER */}
       <div
+        hidden={!explorerOpen}
         data-style-browser-root
+        onKeyDown={(event) => {
+          if (event.key === 'Escape' && !event.defaultPrevented) {
+            event.preventDefault();
+            event.stopPropagation();
+            setExplorerOpen(false);
+            explorerToggleRef.current?.focus();
+          }
+        }}
         className="vt-style-browser-surface relative flex h-full min-w-0 flex-1 flex-col bg-[#060606]"
       >
         <div className="absolute inset-0 opacity-[0.02] pointer-events-none" />
 
-        <div className="xl:hidden border-b border-white/2 bg-zinc-950/72 px-3 py-2 backdrop-blur-md">
-          <details className="group rounded-[6px] border border-white/2 bg-white/[0.025]">
-            <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 px-3 py-2">
-              <div className="min-w-0">
-                <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
-                  Style Setup
-                </div>
-                <div className="mt-0.5 truncate text-xs font-black uppercase tracking-tight text-white">
-                  {selectedStyles.length} styles / {referenceImages.length} refs
-                </div>
-              </div>
-              <div className="flex shrink-0 items-center gap-2">
-                <button
-                  type="button"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    fileInputRef.current?.click();
-                  }}
-                  disabled={referenceSlotsRemaining <= 0}
-                  className="flex size-9 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-40"
-                  aria-label="Add style reference"
-                >
-                  <Upload size={15} />
-                </button>
-                <span className="rounded-lg border border-white/2 bg-black/30 px-2 py-1 text-[9px] font-black uppercase tracking-widest text-zinc-400">
-                  Edit
-                </span>
-              </div>
-            </summary>
-
-            <div className="grid gap-3 border-t border-white/2 p-3">
-              <div className="rounded-[6px] border border-white/2 bg-black/20 p-2">
-                <div className="mb-2 flex items-center justify-between gap-3">
-                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                    References
-                  </span>
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-zinc-600">
-                    {referenceImages.length}/{MAX_STYLE_REFERENCE_IMAGES}
-                  </span>
-                </div>
-                <div className="grid grid-cols-5 gap-1.5">
-                  {Array.from({ length: MAX_STYLE_REFERENCE_IMAGES }).map((_, index) => {
-                    const image = referenceImages[index];
-                    if (!image) {
-                      return (
-                        <button
-                          type="button"
-                          key={`mobile-reference-empty-${index}`}
-                          onClick={() => fileInputRef.current?.click()}
-                          disabled={
-                            index !== referenceImages.length || referenceSlotsRemaining <= 0
-                          }
-                          className="flex h-12 items-center justify-center rounded-md border border-dashed border-white/2 bg-zinc-950/70 text-zinc-600 disabled:pointer-events-none disabled:opacity-45"
-                          aria-label={`Add reference image ${index + 1}`}
-                        >
-                          {index === referenceImages.length && referenceSlotsRemaining > 0 ? (
-                            <Upload size={13} />
-                          ) : (
-                            <ImageIcon size={13} />
-                          )}
-                        </button>
-                      );
-                    }
-                    return (
-                      <div
-                        key={image.id}
-                        className="group/reference-mobile relative h-12 overflow-hidden rounded-md border border-white/2 bg-zinc-950"
-                      >
-                        <StyleFadeImage
-                          src={image.dataUrl}
-                          alt=""
-                          className="size-full object-contain p-0.5"
-                          loading="lazy"
-                          decoding="async"
-                        />
-                        <button
-                          type="button"
-                          onClick={() =>
-                            updateConfig(
-                              'attachments',
-                              config.attachments.filter((attachment) => attachment.id !== image.id),
-                            )
-                          }
-                          className="absolute right-1 top-1 flex size-5 items-center justify-center rounded-md bg-black/65 text-red-200 opacity-100"
-                          aria-label={`Remove reference image ${index + 1}`}
-                        >
-                          <X size={11} />
-                        </button>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="rounded-[6px] border border-white/2 bg-black/20 p-2">
-                <div className="mb-2 flex items-center justify-between gap-3">
-                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
-                    Style Slots
-                  </span>
-                  <div className="flex items-center gap-1">
-                    <button
-                      type="button"
-                      aria-label="Toggle advanced style controls"
-                      onClick={composition.toggleAdvanced}
-                      aria-pressed={isAdvancedStyleControlsOpen}
-                      className={`flex h-7 items-center gap-1 rounded-lg border px-2 text-[8px] font-black uppercase tracking-widest ${
-                        isAdvancedStyleControlsOpen
-                          ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
-                          : 'border-white/2 bg-white/5 text-zinc-400'
-                      }`}
-                    >
-                      <SlidersHorizontal size={11} />
-                      Advanced
-                    </button>
-                    {selectedStyles.length > 0 && (
-                      <button
-                        type="button"
-                        onClick={composition.clear}
-                        className="rounded-lg border border-white/2 bg-white/5 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-400"
-                      >
-                        Clear
-                      </button>
-                    )}
-                  </div>
-                </div>
-
-                <div className="flex max-h-44 flex-col gap-2 overflow-y-auto pr-1 custom-scrollbar">
-                  {selectedStyles.length === 0 ? (
-                    <div className="rounded-lg border border-dashed border-white/2 bg-white/[0.02] px-3 py-4 text-center text-[9px] font-black uppercase tracking-widest text-zinc-600">
-                      Pick styles from the browser
-                    </div>
-                  ) : (
-                    selectedStyles.map((slot, index) => {
-                      const slotCardImage = resolveStylePresetPrimaryCardImage(
-                        selectedStyleVisualStateById.get(slot.preset.id),
-                      );
-                      const presetName = getStyleRuntimePresetDisplayName(slot.preset);
-                      return (
-                        <div
-                          key={slot.preset.id}
-                          className="rounded-[6px] border border-white/2 bg-zinc-950/80 p-2"
-                        >
-                          <div className="grid grid-cols-[2.75rem_minmax(0,1fr)_2rem] items-start gap-2">
-                            <div className="relative aspect-[2/3] w-[2.75rem] overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950">
-                              {slotCardImage ? (
-                                <StyleFadeImage
-                                  src={slotCardImage.src}
-                                  alt=""
-                                  className="size-full object-cover"
-                                  loading="lazy"
-                                  decoding="async"
-                                />
-                              ) : (
-                                <div
-                                  className={`flex size-full items-center justify-center ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'}`}
-                                >
-                                  {getPackIcon(slot.packId)}
-                                </div>
-                              )}
-                              <div className="absolute left-1 top-1 rounded-[4px] bg-black/55 px-1 text-[7px] font-black text-white/80">
-                                {index + 1}
-                              </div>
-                            </div>
-                            <div className="min-w-0 flex-1">
-                              <div className="truncate text-[8px] font-black uppercase tracking-widest text-zinc-500">
-                                {slot.packName}
-                              </div>
-                              <div className="truncate text-[11px] font-black uppercase tracking-tight text-white">
-                                {presetName}
-                              </div>
-                            </div>
-                            <button
-                              type="button"
-                              onClick={() => removeSelectedStyle(slot.preset.id)}
-                              className="flex size-8 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 text-zinc-400"
-                              aria-label={`Remove ${presetName}`}
-                            >
-                              <X size={13} />
-                            </button>
-                          </div>
-                          <div className="mt-2 flex items-center gap-2">
-                            <Palette className="size-3 shrink-0 text-zinc-500" />
-                            <input
-                              type="range"
-                              min={0.1}
-                              max={1}
-                              step={0.05}
-                              value={slot.strength}
-                              onChange={(event) =>
-                                updateSelectedStyleStrength(
-                                  slot.preset.id,
-                                  Number(event.target.value),
-                                )
-                              }
-                              className="h-1 min-w-0 flex-1 accent-white"
-                              aria-label={`Style Strength ${presetName}`}
-                            />
-                            <span className="w-8 text-right text-[8px] font-black tabular-nums text-zinc-400">
-                              {formatStyleStrength(slot.strength)}
-                            </span>
-                          </div>
-                        </div>
-                      );
-                    })
-                  )}
-                </div>
-
-                {isAdvancedStyleControlsOpen && (
-                  <div className="mt-3 max-h-72 overflow-y-auto pr-1 custom-scrollbar">
-                    <React.Suspense
-                      fallback={<LazySurfaceFallback label="Loading advanced controls" />}
-                    >
-                      <StyleAdvancedControlsPanel
-                        selectedStyles={selectedStyles}
-                        selectedStyleLayers={selectedStyleLayers}
-                        onToggleStyleEnabled={toggleSelectedStyleEnabled}
-                        onToggleField={toggleSelectedStyleField}
-                        onUpdateFieldWeight={updateSelectedStyleFieldWeight}
-                        onSetAvoidRulesMode={setSelectedStyleAvoidRulesMode}
-                      />
-                    </React.Suspense>
-                  </div>
-                )}
-
-                <button
-                  type="button"
-                  onClick={handleGenerateSelectedStyles}
-                  disabled={activeSelectedStyleCount === 0 || Boolean(grokGenerateBlock)}
-                  title={grokGenerateBlock?.message}
-                  data-style-generate-button
-                  data-generate-active={isGenerating ? 'true' : 'false'}
-                  className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
-                >
-                  <Play size={15} />
-                  {isGenerating ? 'Queue' : 'Generate'}
-                </button>
-                {grokGenerateBlock ? (
-                  <p
-                    role="status"
-                    className="mt-2 text-[11px] font-medium leading-relaxed text-zinc-400"
-                  >
-                    {grokGenerateBlock.message}
-                  </p>
-                ) : null}
-              </div>
-            </div>
-          </details>
-        </div>
-
+        <label className="mx-4 mt-3 mb-2 flex items-center gap-3 rounded-xl bg-white/5 px-3 py-2 text-sm">
+          <Search size={16} aria-hidden="true" />
+          <input
+            type="search"
+            aria-label="Search styles"
+            placeholder="Search the whole style catalog"
+            value={searchQuery}
+            className="min-w-0 flex-1 bg-transparent outline-none"
+            onChange={(event) => {
+              const searchQuery = event.target.value;
+              if (isPackLandingOpen) {
+                applyStyleTab(ALL_STYLE_CARDS_TAB_ID, { browserStatePatch: { searchQuery } });
+                writeStyleTabHash(ALL_STYLE_CARDS_TAB_ID);
+              } else updateFilters({ searchQuery });
+            }}
+          />
+        </label>
         {/* Pack Tabs */}
         <div className="vt-recipe-tabs vt-style-tabs z-20 flex h-11 items-center gap-1.5 overflow-x-auto border-b border-white/2 bg-zinc-950/88 py-0 pl-3 pr-1 custom-scrollbar sm:h-12 sm:pl-6 sm:pr-2">
           <div className="mr-1 flex shrink-0 items-center gap-1 rounded-[6px] border border-white/2 bg-zinc-950/55 p-1">
@@ -2620,79 +2270,51 @@ ${styleAnchorLine}
 
                 {/* Search & Filter Toolbar */}
                 <div className="vt-style-actionbar flex h-9 shrink-0 flex-nowrap items-center gap-1.5 rounded-[6px] border border-white/2 p-1">
-                  <div className="flex h-7 min-w-0 w-40 items-center gap-2 rounded-[6px] border border-white/2 bg-zinc-950/40 px-3 2xl:w-48">
-                    <Search size={14} className="text-zinc-500" />
-                    <input
-                      type="text"
-                      placeholder="Search styles..."
-                      value={searchQuery}
-                      onChange={(e) => updateFilters({ searchQuery: e.target.value })}
-                      aria-label="Search styles"
-                      className="bg-transparent border-none outline-none text-[11px] text-white placeholder-zinc-600 w-full font-medium"
-                    />
-                    {searchQuery && (
+                  <details className="relative">
+                    <summary className="cursor-pointer px-2 text-xs text-zinc-300">
+                      Manage styles
+                    </summary>
+                    <div className="absolute right-0 top-8 z-50 grid w-44 gap-2 rounded-lg border border-white/10 bg-zinc-900 p-2">
                       <button
                         type="button"
-                        aria-label="Clear style search"
-                        onClick={() => updateFilters({ searchQuery: '' })}
+                        onClick={handleCreateUserStyle}
+                        data-style-create-user-style
+                        className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-sky-300 transition-colors hover:bg-sky-500/10 hover:text-sky-100"
+                        title="Create Style"
                       >
-                        <X size={12} className="text-zinc-500 hover:text-white" />
+                        <Plus size={15} />
+                        <span className="inline">Create</span>
                       </button>
-                    )}
-                  </div>
 
-                  <div className="h-6 w-px bg-white/5" />
+                      <button
+                        type="button"
+                        onClick={handleSaveSelectedStyleBlend}
+                        disabled={!canSaveStyleBlend}
+                        data-style-save-blend
+                        className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
+                        title="Save Blend"
+                      >
+                        <Layers size={15} />
+                        <span className="inline">Blend</span>
+                      </button>
 
-                  <button
-                    type="button"
-                    onClick={() => setCatalogOpen(true)}
-                    data-style-open-catalog
-                    className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
-                    title="Open Style Catalog"
-                  >
-                    <BookOpen size={15} />
-                    Catalog
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={handleCreateUserStyle}
-                    data-style-create-user-style
-                    className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-sky-300 transition-colors hover:bg-sky-500/10 hover:text-sky-100"
-                    title="Create Style"
-                  >
-                    <Plus size={15} />
-                    <span className="hidden 2xl:inline">Create</span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={handleSaveSelectedStyleBlend}
-                    disabled={!canSaveStyleBlend}
-                    data-style-save-blend
-                    className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
-                    title="Save Blend"
-                  >
-                    <Layers size={15} />
-                    <span className="hidden 2xl:inline">Blend</span>
-                  </button>
-
-                  <button
-                    type="button"
-                    onClick={
-                      canEditActiveUserStyle ? handleEditActiveUserStyle : handleCloneActiveStyle
-                    }
-                    disabled={!canEditActiveUserStyle && !canCloneActiveStyle}
-                    data-style-edit-or-clone
-                    className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
-                    title={canEditActiveUserStyle ? 'Edit Style' : 'Clone Style'}
-                  >
-                    {canEditActiveUserStyle ? <PenTool size={15} /> : <Copy size={15} />}
-                    <span className="hidden 2xl:inline">
-                      {canEditActiveUserStyle ? 'Edit' : 'Clone'}
-                    </span>
-                  </button>
-
+                      <button
+                        type="button"
+                        onClick={
+                          canEditActiveUserStyle
+                            ? handleEditActiveUserStyle
+                            : handleCloneActiveStyle
+                        }
+                        disabled={!canEditActiveUserStyle && !canCloneActiveStyle}
+                        data-style-edit-or-clone
+                        className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white disabled:cursor-not-allowed disabled:opacity-35"
+                        title={canEditActiveUserStyle ? 'Edit Style' : 'Clone Style'}
+                      >
+                        {canEditActiveUserStyle ? <PenTool size={15} /> : <Copy size={15} />}
+                        <span className="inline">{canEditActiveUserStyle ? 'Edit' : 'Clone'}</span>
+                      </button>
+                    </div>
+                  </details>
                   <div
                     data-style-view-mode={activeStyleViewMode}
                     className="flex h-7 items-center rounded-[6px] border border-white/2 bg-zinc-950/40 p-0.5"
@@ -2842,48 +2464,7 @@ ${styleAnchorLine}
               </div>
             </div>
 
-            <div
-              className={`grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6 ${
-                isStyleNavigationPanelOpen
-                  ? 'lg:grid-cols-[216px_minmax(0,1fr)]'
-                  : 'lg:grid-cols-[40px_minmax(0,1fr)]'
-              }`}
-            >
-              {isStyleNavigationPanelOpen ? (
-                <React.Suspense
-                  fallback={
-                    <aside data-style-detail-navigation className="hidden min-h-0 min-w-0 lg:block">
-                      <div className="flex h-full min-h-0 items-center justify-center rounded-[6px] border border-white/2 bg-zinc-950/78 p-3">
-                        <LazySurfaceFallback label="Loading style map" />
-                      </div>
-                    </aside>
-                  }
-                >
-                  <StyleRecipeNavigationPanel
-                    sections={styleRecipeNavigationSections}
-                    activeTabId={currentStyleTabId}
-                    onOpen={navigateToStyleTab}
-                    onClose={() => toggleStylePanel('navigation')}
-                  />
-                </React.Suspense>
-              ) : (
-                <aside
-                  data-style-detail-navigation-rail
-                  className="hidden min-h-0 min-w-0 items-start justify-center rounded-[6px] border border-white/2 bg-zinc-950/70 p-1.5 lg:flex"
-                >
-                  <button
-                    type="button"
-                    onClick={() => toggleStylePanel('navigation')}
-                    data-style-detail-navigation-toggle
-                    className="flex size-7 items-center justify-center rounded-[6px] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
-                    aria-label="Show style map"
-                    title="Show style map"
-                  >
-                    <ChevronRight size={14} />
-                  </button>
-                </aside>
-              )}
-
+            <div className="grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6">
               {/* The Grid */}
               <div
                 ref={styleScrollRootRef}
@@ -3031,235 +2612,242 @@ ${styleAnchorLine}
         )}
       </div>
 
-      {isStyleSlotsPanelOpen ? (
-        <aside
-          data-style-slots-panel
-          className="hidden h-full w-[clamp(280px,16vw,340px)] shrink-0 flex-col border-l border-white/2 bg-zinc-950/72 px-3 py-3 xl:flex 2xl:px-4"
-        >
-          <div className="mb-3 flex h-12 shrink-0 items-center justify-between gap-3">
-            <div>
-              <h2 className="text-lg font-black uppercase tracking-tighter text-white">
-                Style Slots
-              </h2>
-              <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
-                {selectedStyles.length}/{MAX_SELECTED_STYLE_SLOTS} Selected
-              </p>
-            </div>
-            <div className="flex shrink-0 items-center gap-1">
-              <button
-                type="button"
-                onClick={() => toggleStylePanel('slots')}
-                data-style-slots-panel-toggle
-                className="flex size-8 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
-                aria-label="Hide style slots panel"
-                title="Hide style slots"
-              >
-                <ChevronRight size={14} />
-              </button>
-              <button
-                type="button"
-                onClick={composition.toggleAdvanced}
-                aria-pressed={isAdvancedStyleControlsOpen}
-                className={`flex size-8 items-center justify-center rounded-[6px] border transition-colors ${
-                  isAdvancedStyleControlsOpen
-                    ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
-                    : 'border-white/2 bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
-                }`}
-                aria-label="Toggle advanced style controls"
-              >
-                <SlidersHorizontal size={14} />
-              </button>
-              {selectedStyles.length > 0 && (
+      <RecipeControls>
+        {isStyleSlotsPanelOpen ? (
+          <aside
+            data-style-slots-panel
+            className="hidden h-full w-[clamp(280px,16vw,340px)] shrink-0 flex-col border-l border-white/2 bg-zinc-950/72 px-3 py-3 xl:flex 2xl:px-4"
+          >
+            <div className="mb-3 flex h-12 shrink-0 items-center justify-between gap-3">
+              <div>
+                <h2 className="text-lg font-black uppercase tracking-tighter text-white">
+                  Selected styles
+                </h2>
+                <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+                  {selectedStyles.length}/{MAX_SELECTED_STYLE_SLOTS} Selected
+                </p>
+              </div>
+              <div className="flex shrink-0 items-center gap-1">
                 <button
                   type="button"
-                  onClick={composition.clear}
+                  onClick={() => toggleStylePanel('slots')}
+                  data-style-slots-panel-toggle
                   className="flex size-8 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
-                  aria-label="Clear selected styles"
+                  aria-label="Hide style slots panel"
+                  title="Hide style slots"
                 >
-                  <X size={14} />
+                  <ChevronRight size={14} />
                 </button>
-              )}
-            </div>
-          </div>
-
-          <div
-            className={`grid grid-cols-2 gap-2 overflow-y-auto custom-scrollbar pr-1 ${
-              isAdvancedStyleControlsOpen
-                ? 'max-h-[26vh] shrink-0 content-start'
-                : selectedStyles.length > 0
-                  ? 'min-h-0 flex-1 content-start'
-                  : 'max-h-[44vh] shrink-0 content-start'
-            }`}
-          >
-            {Array.from({ length: MAX_SELECTED_STYLE_SLOTS }).map((_, index) => {
-              const slot = selectedStyles[index];
-              const layer = selectedStyleLayers[index];
-              const slotCardImage = resolveStylePresetPrimaryCardImage(
-                slot ? selectedStyleVisualStateById.get(slot.preset.id) : undefined,
-              );
-              if (!slot || !layer) {
-                return (
-                  <div
-                    key={`empty-${index}`}
-                    data-selected-style-empty-slot={index + 1}
-                    className={`flex min-h-0 flex-col items-center justify-center rounded-[6px] border border-dashed border-white/2 bg-white/[0.02] text-center text-zinc-600 ${
-                      isAdvancedStyleControlsOpen ? 'h-16 gap-1 p-2' : 'aspect-[2/3] gap-2 p-3'
-                    }`}
-                  >
-                    <div
-                      className={`flex shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/4 ${
-                        isAdvancedStyleControlsOpen ? 'size-7' : 'size-10'
-                      }`}
-                    >
-                      <Palette size={13} />
-                    </div>
-                    <span className="text-[9px] font-black uppercase tracking-widest">
-                      Empty Slot {index + 1}
-                    </span>
-                  </div>
-                );
-              }
-              const presetName = getStyleRuntimePresetDisplayName(slot.preset);
-
-              return (
-                <div
-                  key={slot.preset.id}
-                  data-selected-style-slot={slot.preset.id}
-                  data-selected-style-card-image={slotCardImage?.kind ?? 'empty'}
-                  className={`group/slot relative overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950 shadow-[0_14px_30px_rgba(0,0,0,0.22)] ${
-                    isAdvancedStyleControlsOpen ? 'h-24' : 'aspect-[2/3]'
+                <button
+                  type="button"
+                  onClick={composition.toggleAdvanced}
+                  aria-pressed={isAdvancedStyleControlsOpen}
+                  className={`flex size-8 items-center justify-center rounded-[6px] border transition-colors ${
+                    isAdvancedStyleControlsOpen
+                      ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
+                      : 'border-white/2 bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
                   }`}
+                  aria-label="Toggle advanced style controls"
                 >
-                  {slotCardImage ? (
-                    <StyleFadeImage
-                      src={slotCardImage.src}
-                      alt=""
-                      width={180}
-                      height={270}
-                      className="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover/slot:scale-[1.025]"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  ) : (
-                    <div
-                      className={`absolute inset-0 flex items-center justify-center ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'}`}
-                    >
-                      {getPackIcon(slot.packId)}
-                    </div>
-                  )}
-
-                  <div className="absolute inset-0 bg-linear-to-t from-black/92 via-black/18 to-black/18" />
-
-                  <div className="absolute left-1.5 top-1.5 rounded-[4px] border border-black/2 bg-black/70 px-1 py-0.5 text-[10px] font-black text-white/80">
-                    {index + 1}
-                  </div>
+                  <SlidersHorizontal size={14} />
+                </button>
+                {selectedStyles.length > 0 && (
                   <button
                     type="button"
-                    onClick={() => removeSelectedStyle(slot.preset.id)}
-                    className="absolute right-1.5 top-1.5 flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-black/70 text-zinc-300 opacity-0 transition-[background-color,color,opacity] hover:bg-red-500/20 hover:text-red-100 group-hover/slot:opacity-100 group-focus-within/slot:opacity-100"
-                    aria-label={`Remove ${presetName}`}
+                    onClick={composition.clear}
+                    className="flex size-8 items-center justify-center rounded-[6px] border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+                    aria-label="Clear selected styles"
                   >
-                    <X size={13} />
+                    <X size={14} />
                   </button>
+                )}
+              </div>
+            </div>
 
-                  <div className="absolute inset-x-0 bottom-0 p-2">
-                    <div className="mb-1 flex items-center gap-1 text-[7px] font-black uppercase tracking-[0.16em] text-zinc-300/75">
-                      <span
-                        className={`flex size-4 items-center justify-center rounded-[4px] border border-white/2 bg-black/42 ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'} backdrop-blur`}
+            <div
+              className={`grid grid-cols-2 gap-2 overflow-y-auto custom-scrollbar pr-1 ${
+                isAdvancedStyleControlsOpen
+                  ? 'max-h-[26vh] shrink-0 content-start'
+                  : selectedStyles.length > 0
+                    ? 'min-h-0 flex-1 content-start'
+                    : 'max-h-[44vh] shrink-0 content-start'
+              }`}
+            >
+              {Array.from({ length: selectedStyles.length }).map((_, index) => {
+                const slot = selectedStyles[index];
+                const layer = selectedStyleLayers[index];
+                const slotCardImage = resolveStylePresetPrimaryCardImage(
+                  slot ? selectedStyleVisualStateById.get(slot.preset.id) : undefined,
+                );
+                if (!slot || !layer) {
+                  return (
+                    <div
+                      key={`empty-${index}`}
+                      data-selected-style-empty-slot={index + 1}
+                      className={`flex min-h-0 flex-col items-center justify-center rounded-[6px] border border-dashed border-white/2 bg-white/[0.02] text-center text-zinc-600 ${
+                        isAdvancedStyleControlsOpen ? 'h-16 gap-1 p-2' : 'aspect-[2/3] gap-2 p-3'
+                      }`}
+                    >
+                      <div
+                        className={`flex shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/4 ${
+                          isAdvancedStyleControlsOpen ? 'size-7' : 'size-10'
+                        }`}
+                      >
+                        <Palette size={13} />
+                      </div>
+                      <span className="text-[9px] font-black uppercase tracking-widest">
+                        Empty Slot {index + 1}
+                      </span>
+                    </div>
+                  );
+                }
+                const presetName = getStyleRuntimePresetDisplayName(slot.preset);
+
+                return (
+                  <div
+                    key={slot.preset.id}
+                    data-selected-style-slot={slot.preset.id}
+                    data-selected-style-card-image={slotCardImage?.kind ?? 'empty'}
+                    className={`group/slot relative overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950 shadow-[0_14px_30px_rgba(0,0,0,0.22)] ${
+                      isAdvancedStyleControlsOpen ? 'h-24' : 'h-28'
+                    }`}
+                  >
+                    {slotCardImage ? (
+                      <StyleFadeImage
+                        src={slotCardImage.src}
+                        alt=""
+                        width={180}
+                        height={270}
+                        className="absolute inset-0 size-full object-cover transition-transform duration-300 group-hover/slot:scale-[1.025]"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div
+                        className={`absolute inset-0 flex items-center justify-center ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'}`}
                       >
                         {getPackIcon(slot.packId)}
-                      </span>
-                      <span className="truncate">
-                        Slot {index + 1} - {slot.packName}
-                      </span>
-                    </div>
-                    <h3 className="truncate text-[10px] font-black uppercase leading-tight tracking-tight text-white">
-                      {presetName}
-                    </h3>
-                    {!isAdvancedStyleControlsOpen && (
-                      <p className="mt-1 line-clamp-2 text-[8px] leading-relaxed text-zinc-300/82">
-                        {layer.aesthetic}
-                      </p>
+                      </div>
                     )}
 
-                    <div
-                      className={`${isAdvancedStyleControlsOpen ? 'mt-1' : 'mt-2'} flex items-center gap-1.5`}
+                    <div className="absolute inset-0 bg-linear-to-t from-black/92 via-black/18 to-black/18" />
+
+                    <div className="absolute left-1.5 top-1.5 rounded-[4px] border border-black/2 bg-black/70 px-1 py-0.5 text-[10px] font-black text-white/80">
+                      {index + 1}
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => removeSelectedStyle(slot.preset.id)}
+                      className="absolute right-1.5 top-1.5 flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-black/70 text-zinc-300 opacity-0 transition-[background-color,color,opacity] hover:bg-red-500/20 hover:text-red-100 group-hover/slot:opacity-100 group-focus-within/slot:opacity-100"
+                      aria-label={`Remove ${presetName}`}
                     >
-                      <Palette className="size-3 shrink-0 text-zinc-400" />
-                      <input
-                        type="range"
-                        min={0.1}
-                        max={1}
-                        step={0.05}
-                        value={slot.strength}
-                        onChange={(event) =>
-                          updateSelectedStyleStrength(slot.preset.id, Number(event.target.value))
-                        }
-                        className="h-1 min-w-0 flex-1 accent-white"
-                        aria-label={`Style Strength ${presetName}`}
-                        data-selected-style-strength={slot.preset.id}
-                      />
-                      <span className="w-7 text-right text-[8px] font-black tabular-nums text-zinc-300">
-                        {formatStyleStrength(slot.strength)}
-                      </span>
+                      <X size={13} />
+                    </button>
+
+                    <div className="absolute inset-x-0 bottom-0 p-2">
+                      <div className="mb-1 flex items-center gap-1 text-[7px] font-black uppercase tracking-[0.16em] text-zinc-300/75">
+                        <span
+                          className={`flex size-4 items-center justify-center rounded-[4px] border border-white/2 bg-black/42 ${PACK_THEMES[slot.packId]?.text ?? 'text-zinc-300'} backdrop-blur`}
+                        >
+                          {getPackIcon(slot.packId)}
+                        </span>
+                        <span className="truncate">
+                          Slot {index + 1} - {slot.packName}
+                        </span>
+                      </div>
+                      <h3 className="truncate text-[10px] font-black uppercase leading-tight tracking-tight text-white">
+                        {presetName}
+                      </h3>
+                      {!isAdvancedStyleControlsOpen && (
+                        <p className="mt-1 line-clamp-2 text-[8px] leading-relaxed text-zinc-300/82">
+                          {layer.aesthetic}
+                        </p>
+                      )}
+
+                      <div
+                        className={`${isAdvancedStyleControlsOpen ? 'mt-1' : 'mt-2'} flex items-center gap-1.5`}
+                      >
+                        <Palette className="size-3 shrink-0 text-zinc-400" />
+                        <input
+                          type="range"
+                          min={0.1}
+                          max={1}
+                          step={0.05}
+                          value={slot.strength}
+                          onChange={(event) =>
+                            updateSelectedStyleStrength(slot.preset.id, Number(event.target.value))
+                          }
+                          className="h-1 min-w-0 flex-1 accent-white"
+                          aria-label={`Style Strength ${presetName}`}
+                          data-selected-style-strength={slot.preset.id}
+                        />
+                        <span className="w-7 text-right text-[8px] font-black tabular-nums text-zinc-300">
+                          {formatStyleStrength(slot.strength)}
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {isAdvancedStyleControlsOpen && (
-            <div className="mt-3 min-h-0 flex-1 overflow-y-auto pr-1 custom-scrollbar">
-              <React.Suspense fallback={<LazySurfaceFallback label="Loading advanced controls" />}>
-                <StyleAdvancedControlsPanel
-                  selectedStyles={selectedStyles}
-                  selectedStyleLayers={selectedStyleLayers}
-                  onToggleStyleEnabled={toggleSelectedStyleEnabled}
-                  onToggleField={toggleSelectedStyleField}
-                  onUpdateFieldWeight={updateSelectedStyleFieldWeight}
-                  onSetAvoidRulesMode={setSelectedStyleAvoidRulesMode}
-                />
-              </React.Suspense>
+                );
+              })}
             </div>
-          )}
 
-          <button
-            type="button"
-            onClick={handleGenerateSelectedStyles}
-            disabled={activeSelectedStyleCount === 0 || Boolean(grokGenerateBlock)}
-            title={grokGenerateBlock?.message}
-            data-style-generate-button
-            data-generate-active={isGenerating ? 'true' : 'false'}
-            className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/2 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
-          >
-            <Play size={16} />
-            {isGenerating ? 'Queue' : 'Generate'}
-          </button>
-          {grokGenerateBlock ? (
-            <p role="status" className="mt-2 text-[11px] font-medium leading-relaxed text-zinc-400">
-              {grokGenerateBlock.message}
-            </p>
-          ) : null}
-        </aside>
-      ) : (
-        <aside
-          data-style-slots-panel-rail
-          className="hidden h-full w-10 shrink-0 items-start justify-center border-l border-white/2 bg-zinc-950/60 p-1.5 xl:flex"
-        >
-          <button
-            type="button"
-            onClick={() => toggleStylePanel('slots')}
-            data-style-slots-panel-toggle
-            className="flex size-7 items-center justify-center rounded-[6px] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
-            aria-label="Show style slots panel"
-            title="Show style slots"
-          >
-            <ChevronLeft size={14} />
-          </button>
-        </aside>
-      )}
+            {isAdvancedStyleControlsOpen && (
+              <div className="mt-3 min-h-0 flex-1 overflow-y-auto pr-1 custom-scrollbar">
+                <React.Suspense
+                  fallback={<LazySurfaceFallback label="Loading advanced controls" />}
+                >
+                  <StyleAdvancedControlsPanel
+                    selectedStyles={selectedStyles}
+                    selectedStyleLayers={selectedStyleLayers}
+                    onToggleStyleEnabled={toggleSelectedStyleEnabled}
+                    onToggleField={toggleSelectedStyleField}
+                    onUpdateFieldWeight={updateSelectedStyleFieldWeight}
+                    onSetAvoidRulesMode={setSelectedStyleAvoidRulesMode}
+                  />
+                </React.Suspense>
+              </div>
+            )}
 
+            <button
+              type="button"
+              onClick={handleGenerateSelectedStyles}
+              disabled={activeSelectedStyleCount === 0 || Boolean(grokGenerateBlock)}
+              title={grokGenerateBlock?.message}
+              hidden
+              data-style-generate-button
+              data-generate-active={isGenerating ? 'true' : 'false'}
+              className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/2 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
+            >
+              <Play size={16} />
+              {isGenerating ? 'Queue' : 'Generate'}
+            </button>
+            {grokGenerateBlock ? (
+              <p
+                role="status"
+                className="mt-2 text-[11px] font-medium leading-relaxed text-zinc-400"
+              >
+                {grokGenerateBlock.message}
+              </p>
+            ) : null}
+          </aside>
+        ) : (
+          <aside
+            data-style-slots-panel-rail
+            className="hidden h-full w-10 shrink-0 items-start justify-center border-l border-white/2 bg-zinc-950/60 p-1.5 xl:flex"
+          >
+            <button
+              type="button"
+              onClick={() => toggleStylePanel('slots')}
+              data-style-slots-panel-toggle
+              className="flex size-7 items-center justify-center rounded-[6px] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
+              aria-label="Show style slots panel"
+              title="Show style slots"
+            >
+              <ChevronLeft size={14} />
+            </button>
+          </aside>
+        )}
+      </RecipeControls>
       {userStyleEditorSession && (
         <React.Suspense
           fallback={

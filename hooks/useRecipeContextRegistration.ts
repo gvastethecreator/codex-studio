@@ -19,11 +19,5 @@ export function useRecipeContextRegistration(
     updateConfig('recipeId', recipeId);
     updateConfig('recipeParams', params);
     updateConfig('recipeContext', '');
-
-    return () => {
-      updateConfig('recipeId', null);
-      updateConfig('recipeParams', null);
-      updateConfig('recipeContext', '');
-    };
   }, [paramsKey, params, recipeId, updateConfig]);
 }

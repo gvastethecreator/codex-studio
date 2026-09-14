@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react';
+import { useCallback, useMemo, useState, useDeferredValue } from 'react';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
@@ -49,6 +49,7 @@ import type { CodexExecutionTransport } from '../packages/shared/src/codexExecut
 const EMPTY_RUNTIME_LOGS: LogEntry[] = [];
 
 export interface StudioShellController {
+  librarySearch: { query: string; setQuery: (value: string) => void };
   root: {
     onDragOver: ReturnType<typeof useImageInputSurface>['handleDragOver'];
     onDragLeave: ReturnType<typeof useImageInputSurface>['handleDragLeave'];
@@ -85,6 +86,8 @@ export interface StudioShellController {
  * only renders the shell instead of stitching the whole Studio inline.
  */
 export function useStudioShell(): StudioShellController {
+  const [catalogQuery, setCatalogQuery] = useState('');
+  const deferredCatalogQuery = useDeferredValue(catalogQuery);
   // Selective subscriptions: workspace + toast + stable log actions only.
   // Runtime log *list* updates must not re-render this shell (log-list hook is overlay-only).
   const {
@@ -133,6 +136,7 @@ export function useStudioShell(): StudioShellController {
     emptyCatalogTrash,
     hydrateCatalogDetail,
   } = useStudioCatalogController({
+    query: route.view === 'studio' ? deferredCatalogQuery : '',
     activeWorkspaceId,
     isTrashOpen: viewState.overlays.trash.isOpen,
     addToast,
@@ -148,6 +152,31 @@ export function useStudioShell(): StudioShellController {
     onCatalogChanged: refreshCatalogs,
   });
   const studioSettings = useStudioSettings({ addToast });
+
+  const codexAvailableTransports = useMemo<readonly CodexExecutionTransport[] | undefined>(() => {
+    const preflight = studioSettings.data.providerDomain.runtimePreflight?.providers.find(
+      (provider) => provider.providerId === 'codex',
+    );
+    if (!preflight?.availableRuntimeKinds) return undefined;
+    return preflight.availableRuntimeKinds.filter(
+      (runtimeKind): runtimeKind is CodexExecutionTransport =>
+        runtimeKind === 'codex_app_server' || runtimeKind === 'subscription_http',
+    );
+  }, [studioSettings.data.providerDomain.runtimePreflight]);
+
+  const codexDefaultTransport: CodexExecutionTransport | undefined =
+    codexAvailableTransports?.includes('codex_app_server')
+      ? 'codex_app_server'
+      : (codexAvailableTransports?.[0] ??
+        (studioSettings.data.providerDomain.capabilities?.providers.find(
+          (provider) => provider.providerId === 'codex',
+        )?.runtimeKind === 'subscription_http'
+          ? 'subscription_http'
+          : studioSettings.data.providerDomain.capabilities?.providers.some(
+                (provider) => provider.providerId === 'codex',
+              )
+            ? 'codex_app_server'
+            : undefined));
 
   const activitySession = useStudioActivitySession({
     studioJobs: studioRuntime.activity.studioJobs,
@@ -219,6 +248,7 @@ export function useStudioShell(): StudioShellController {
     generationConfigRef: config.generationConfigRef,
     activeWorkspaceId,
     setGenerationConfig: config.setGenerationConfig,
+    setRecipeDraft: config.setRecipeDraft,
     updateGenerationConfig: config.updateGenerationConfig,
     executeEdit: pipeline.executeEdit,
     executeGeneration: pipeline.executeGeneration,
@@ -230,6 +260,7 @@ export function useStudioShell(): StudioShellController {
     onViewChange: handleViewChange,
     onEditSettled,
     activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+    defaultCodexTransport: codexDefaultTransport,
     activeRecipe: recipe.activeRecipe,
     grokCanExecute: resolveGrokCanExecute({
       canExecute: studioSettings.data.providerDomain.capabilities?.providers.find(
@@ -351,6 +382,14 @@ export function useStudioShell(): StudioShellController {
     onFiles: config.handlePastedFiles,
   });
 
+  const handleUseAsReference = useCallback(
+    (image: Parameters<typeof config.handleAddToContext>[0]) => {
+      config.handleAddToContext(image);
+      if (route.view === 'studio') handleViewChange('recipes');
+    },
+    [config.handleAddToContext, route.view, handleViewChange],
+  );
+
   const overlayController = useMemo(
     () =>
       buildStudioShellOverlayController({
@@ -361,7 +400,7 @@ export function useStudioShell(): StudioShellController {
           closeModal: handleCloseModal,
           handleDelete,
           handleGenerate,
-          handleAddToContext: config.handleAddToContext,
+          handleAddToContext: handleUseAsReference,
           handleLoadRecipe,
           handleToggleFavorite,
           setActiveCarouselId: modal.setActiveCarouselId,
@@ -453,7 +492,7 @@ export function useStudioShell(): StudioShellController {
       handleCloseModal,
       handleDelete,
       handleGenerate,
-      config.handleAddToContext,
+      handleUseAsReference,
       handleLoadRecipe,
       handleToggleFavorite,
       modal.setActiveCarouselId,
@@ -552,7 +591,7 @@ export function useStudioShell(): StudioShellController {
           openModal: handleOpenModal,
           handleSelectionChange,
           handleGenerate,
-          handleAddToContext: config.handleAddToContext,
+          handleAddToContext: handleUseAsReference,
           handleLoadRecipe,
           handleDelete,
           handleToggleFavorite,
@@ -596,7 +635,7 @@ export function useStudioShell(): StudioShellController {
       handleOpenModal,
       handleSelectionChange,
       handleGenerate,
-      config.handleAddToContext,
+      handleUseAsReference,
       handleLoadRecipe,
       handleDelete,
       handleToggleFavorite,
@@ -626,31 +665,6 @@ export function useStudioShell(): StudioShellController {
       activitySession.selection.inspectJob,
     ],
   );
-
-  const codexAvailableTransports = useMemo<readonly CodexExecutionTransport[] | undefined>(() => {
-    const preflight = studioSettings.data.providerDomain.runtimePreflight?.providers.find(
-      (provider) => provider.providerId === 'codex',
-    );
-    if (!preflight?.availableRuntimeKinds) return undefined;
-    return preflight.availableRuntimeKinds.filter(
-      (runtimeKind): runtimeKind is CodexExecutionTransport =>
-        runtimeKind === 'codex_app_server' || runtimeKind === 'subscription_http',
-    );
-  }, [studioSettings.data.providerDomain.runtimePreflight]);
-
-  const codexDefaultTransport: CodexExecutionTransport | undefined =
-    codexAvailableTransports?.includes('codex_app_server')
-      ? 'codex_app_server'
-      : (codexAvailableTransports?.[0] ??
-        (studioSettings.data.providerDomain.capabilities?.providers.find(
-          (provider) => provider.providerId === 'codex',
-        )?.runtimeKind === 'subscription_http'
-          ? 'subscription_http'
-          : studioSettings.data.providerDomain.capabilities?.providers.some(
-                (provider) => provider.providerId === 'codex',
-              )
-            ? 'codex_app_server'
-            : undefined));
 
   const toolbarArgs = useMemo<GenerationToolbarRuntimeArgs>(
     () => ({
@@ -754,7 +768,6 @@ export function useStudioShell(): StudioShellController {
       buildStudioHeaderToolbarProps({
         view: {
           isGenerating: pipeline.isGenerating,
-          generationStartTime: pipeline.generationStartTime,
           routeView: route.view,
           currentView,
           onViewChange: handleViewChange,
@@ -788,8 +801,12 @@ export function useStudioShell(): StudioShellController {
           },
           queue: {
             statusItems: studioRuntime.status.diagnostics.statusItems,
-            queueResultPreviews,
-            activeJobCount: studioRuntime.activity.activeServerJobCount,
+            activeJobCount: studioRuntime.activity.studioJobs.filter(
+              (job) => job.status === 'queued' || job.status === 'running',
+            ).length,
+            reviewJobCount: studioRuntime.activity.studioJobs.filter(
+              (job) => job.status === 'needs_review',
+            ).length,
             isQueueOpen: viewState.queue.isOpen,
             setIsQueueOpen: viewState.queue.setIsOpen,
           },
@@ -802,7 +819,6 @@ export function useStudioShell(): StudioShellController {
       }),
     [
       pipeline.isGenerating,
-      pipeline.generationStartTime,
       route.view,
       currentView,
       handleViewChange,
@@ -828,8 +844,7 @@ export function useStudioShell(): StudioShellController {
       studioSettings.data.settingsDomain.isSaving,
       studioSettings.data.settingsDomain.update,
       studioRuntime.status.diagnostics.statusItems,
-      queueResultPreviews,
-      studioRuntime.activity.activeServerJobCount,
+      studioRuntime.activity.studioJobs,
       viewState.queue.isOpen,
       viewState.queue.setIsOpen,
       viewState.overlays.settings.open,
@@ -851,6 +866,7 @@ export function useStudioShell(): StudioShellController {
 
   return useMemo(
     (): StudioShellController => ({
+      librarySearch: { query: catalogQuery, setQuery: setCatalogQuery },
       root: {
         onDragOver: handleDragOver,
         onDragLeave: handleDragLeave,
@@ -870,6 +886,7 @@ export function useStudioShell(): StudioShellController {
       overlays: overlayController,
     }),
     [
+      catalogQuery,
       handleDragOver,
       handleDragLeave,
       handleDrop,

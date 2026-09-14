@@ -16,7 +16,6 @@ type StartTransition = (callback: () => void) => void;
 
 interface StudioHeaderToolbarViewContext {
   isGenerating: HeaderToolbarProps['isGenerating'];
-  generationStartTime: HeaderToolbarProps['generationStartTime'];
   routeView: HeaderToolbarProps['routeView'];
   currentView: HeaderToolbarProps['currentView'];
   onViewChange: HeaderToolbarProps['onViewChange'];
@@ -53,8 +52,8 @@ interface StudioHeaderToolbarCommandCenterContext {
   };
   queue: {
     statusItems: StudioRuntimeStatusItem[];
-    queueResultPreviews: HeaderToolbarProps['commandCenter']['queue']['resultPreviews'];
     activeJobCount: number;
+    reviewJobCount: number;
     isQueueOpen: HeaderToolbarProps['isQueueOpen'];
     setIsQueueOpen: Dispatch<SetStateAction<boolean>>;
   };
@@ -85,7 +84,6 @@ export function buildStudioHeaderToolbarProps({
 }: BuildStudioHeaderToolbarPropsArgs): HeaderToolbarProps {
   return {
     isGenerating: view.isGenerating,
-    generationStartTime: view.generationStartTime,
     workspaces: workspace.workspaces,
     activeWorkspaceId: workspace.activeWorkspaceId,
     onSwitchWorkspace: (workspaceId) =>
@@ -118,10 +116,9 @@ export function buildStudioHeaderToolbarProps({
       providerCapabilities: commandCenter.provider.capabilities,
       providerRuntimePreflight: commandCenter.provider.runtimePreflight,
       statusItems: commandCenter.queue.statusItems,
-      queueResultPreviews: commandCenter.queue.queueResultPreviews,
       activeJobCount: commandCenter.queue.activeJobCount,
+      reviewJobCount: commandCenter.queue.reviewJobCount,
       isQueueOpen: commandCenter.queue.isQueueOpen,
-      isGenerating: view.isGenerating,
     }),
     isQueueOpen: commandCenter.queue.isQueueOpen,
     onToggleQueue: () => commandCenter.queue.setIsQueueOpen((previous) => !previous),

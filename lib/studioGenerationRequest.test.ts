@@ -17,6 +17,37 @@ function attachment(id: string): Attachment {
 }
 
 describe('prepareStudioGenerationRequest', () => {
+  it('uses the same reference influence from the Styles button and the composer', () => {
+    const generationConfig = {
+      ...DEFAULT_GENERATION_CONFIG,
+      prompt: 'red cube',
+      recipeId: 'styles' as const,
+      attachments: [attachment('current')],
+    };
+    const composer = prepareStudioGenerationRequest({ generationConfig });
+    const recipe = prepareStudioGenerationRequest({
+      generationConfig,
+      configOverrides: { attachments: generationConfig.attachments },
+    });
+    expect(composer.ok && composer.finalConfig.attachments).toEqual(
+      recipe.ok && recipe.finalConfig.attachments,
+    );
+    expect(composer.ok && composer.finalConfig.attachments[0]?.strength).toBe(0.15);
+    expect(generationConfig.attachments[0]?.strength).toBe(0.5);
+  });
+  it('captures the displayed HTTP default while preserving an explicit transport choice', () => {
+    const generationConfig = { ...DEFAULT_GENERATION_CONFIG, prompt: 'red cube' };
+    const request = prepareStudioGenerationRequest({
+      generationConfig,
+      defaultCodexTransport: 'subscription_http',
+    });
+    expect(request.ok && request.finalConfig.codexTransport).toBe('subscription_http');
+    const explicit = prepareStudioGenerationRequest({
+      generationConfig: { ...generationConfig, codexTransport: 'codex_app_server' },
+      defaultCodexTransport: 'subscription_http',
+    });
+    expect(explicit.ok && explicit.finalConfig.codexTransport).toBe('codex_app_server');
+  });
   it('keeps source plus three references for Character Lab requests', () => {
     const request = prepareStudioGenerationRequest({
       generationConfig: {

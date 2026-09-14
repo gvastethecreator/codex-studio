@@ -46,7 +46,7 @@ function getRecipeParam(
   return resolveRecipeIdentity(config)?.recipeParams[key];
 }
 
-function getRecipeStringParam(
+export function getRecipeStringParam(
   config: Pick<ImageGenerationConfig, 'recipeContext' | 'recipeId' | 'recipeParams'>,
   key: string,
   fallback = '',

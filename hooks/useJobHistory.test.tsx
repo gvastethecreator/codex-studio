@@ -60,7 +60,7 @@ it('reconciles a fast terminal retry instead of applying a delayed queued acknow
   await act(async () => acknowledge({ ...snapshot, status: 'queued', retryable: [] }));
   await waitFor(() => expect(api.batch).toHaveBeenCalledTimes(3));
   expect(screen.getByRole('button', { name: 'Retry failed (1)' })).toBeTruthy();
-  expect(screen.getByText(/1 completed · 1 failed/)).toBeTruthy();
+  expect(screen.getByText(/1 of 2 completed · 1 failed/)).toBeTruthy();
 });
 const emptyPage: JobListPage = {
   open: [],

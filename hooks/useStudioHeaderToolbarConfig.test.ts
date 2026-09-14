@@ -10,7 +10,6 @@ describe('buildStudioHeaderToolbarProps', () => {
     const props = buildStudioHeaderToolbarProps({
       view: {
         isGenerating: false,
-        generationStartTime: 1234,
         routeView: 'recipes',
         currentView: 'recipes',
         onViewChange: (view) => calls.push(`view:${view}`),
@@ -94,8 +93,8 @@ describe('buildStudioHeaderToolbarProps', () => {
               tone: 'danger',
             },
           ],
-          queueResultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
           activeJobCount: 1,
+          reviewJobCount: 614,
           isQueueOpen: false,
           setIsQueueOpen: (value) => {
             nextQueueOpen = typeof value === 'function' ? value(false) : value;
@@ -125,12 +124,9 @@ describe('buildStudioHeaderToolbarProps', () => {
     expect(props.activeWorkspaceId).toBe('default');
     expect(props.trashCount).toBe(2);
     expect(props.usage.value).toBe('120');
-    expect(props.generationStartTime).toBe(1234);
     expect(props.commandCenter.compactMode).toBe(true);
-    expect(props.commandCenter.queue.count).toBe(1);
-    expect(props.commandCenter.queue.resultPreviews).toEqual([
-      { id: 'result-1', src: '/library/assets/result-1.png' },
-    ]);
+    expect(props.commandCenter.queue.activeCount).toBe(1);
+    expect(props.commandCenter.queue.reviewCount).toBe(614);
     expect(props.commandCenter.provider).toEqual(
       expect.objectContaining({
         id: 'google',

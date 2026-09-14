@@ -64,8 +64,8 @@ const Toast: React.FC<ToastProps> = ({ toast, onDismiss }) => {
   return (
     <div
       className={`relative w-full max-w-md bg-zinc-900/95 backdrop-blur-xl rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.5)] p-5 border-l-4 ${borderColors[toast.type]} animate-in slide-in-from-top-4 fade-in-0 duration-300 overflow-hidden`}
-      role="alert"
-      aria-live="assertive"
+      role={toast.type === 'error' ? 'alert' : 'status'}
+      aria-live={toast.type === 'error' ? 'assertive' : 'polite'}
     >
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0 mt-0.5">{icons[toast.type]}</div>

@@ -21,7 +21,7 @@ const ACTIVE_RECIPE_INDICATORS: Record<RegisteredRecipeId, ActiveRecipeIndicator
   styles: {
     id: 'styles',
     title: 'Styles',
-    summary: 'Style locked',
+    summary: 'Style blend',
     toneClassName: 'border-fuchsia-400/2 bg-fuchsia-500/10 text-fuchsia-100',
     dotClassName: 'bg-fuchsia-300',
   },

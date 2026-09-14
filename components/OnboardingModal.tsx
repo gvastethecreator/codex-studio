@@ -1,3 +1,4 @@
+import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
@@ -584,6 +585,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const isChecking = status === 'checking';
   const isReady = status === 'ready';
   const isStartingAppServer = status === 'starting';
+  const dialogRef = useDialogFocus(isOpen, onClose, '[aria-label^="Open runtime status:"]');
   const backendReachable = !error && Boolean(health);
   const codexRuntimeBlocked = Boolean(health?.codexRuntime && !health.codexRuntime.canRunJobs);
   const canStartAppServer = backendReachable && !health?.appServer.running && !codexRuntimeBlocked;
@@ -631,7 +633,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
     ? 'Welcome to Codex Studio'
     : readiness.title || 'Welcome to Codex Studio';
   const intro = isReady
-    ? 'Create images locally with Codex. Your data stays on your machine.'
+    ? 'Create images with Codex and manage your library on this machine.'
     : readiness.description;
   const previewEntries = React.useMemo(
     () =>
@@ -798,6 +800,11 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
           />
 
           <MotionDiv
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Help and setup"
+            tabIndex={-1}
             initial={{ opacity: 0, scale: 0.98, y: 16 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.98, y: 16 }}
@@ -860,7 +867,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                 <section className="grid gap-7 py-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(21rem,0.78fr)] xl:min-h-0 xl:flex-1 xl:grid-cols-[minmax(0,0.95fr)_minmax(28rem,0.75fr)] xl:gap-5 xl:py-4 2xl:grid-cols-[minmax(0,1.05fr)_minmax(30rem,0.7fr)]">
                   <div className="min-w-0 xl:flex xl:min-h-0 xl:flex-col">
                     <p className="text-[11px] font-black uppercase tracking-[0.24em] text-blue-300 xl:text-[10px]">
-                      Create images locally with Codex
+                      Create images with Codex
                     </p>
                     <p className="mt-5 max-w-xl text-base leading-7 text-zinc-200 xl:mt-3 xl:text-sm xl:leading-6">
                       Describe what you want. Codex turns the prompt into images while your library
@@ -869,8 +876,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     <PreviewCard entry={previewEntry} />
                     <p className="mt-5 flex items-start gap-2 text-sm leading-6 text-zinc-500 xl:mt-3 xl:text-xs xl:leading-5">
                       <Folder size={15} />
-                      Everything runs locally. Nothing leaves your Studio Library unless you move
-                      it.
+                      Your library is stored locally. Generation sends prompts and selected
+                      references to your chosen provider.
                     </p>
                   </div>
 

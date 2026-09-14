@@ -7,11 +7,6 @@ import type { GenerationProviderId } from '../packages/shared/src/generationCont
 import { summarizeGrokProviderStatusLine } from './grokImagineUiPolicy';
 import type { StudioRuntimeStatusItem, StudioStatusTone } from './studioDiagnostics';
 
-export interface CommandCenterQueuePreview {
-  id: string;
-  src: string;
-}
-
 export interface CommandCenterRuntimeProjection {
   label: string;
   tone: StudioStatusTone;
@@ -31,11 +26,9 @@ export interface CommandCenterProviderProjection {
 }
 
 export interface CommandCenterQueueProjection {
-  count: number;
+  activeCount: number;
+  reviewCount: number;
   isOpen: boolean;
-  resultPreviews: CommandCenterQueuePreview[];
-  hasResultPreviews: boolean;
-  showCollapsedProgress: boolean;
 }
 
 export interface StudioCommandCenterProjection {
@@ -51,10 +44,9 @@ export interface BuildStudioCommandCenterProjectionArgs {
   providerCapabilities: GenerationProviderCapabilitiesResponse | null;
   providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
   statusItems: StudioRuntimeStatusItem[];
-  queueResultPreviews: CommandCenterQueuePreview[];
   activeJobCount: number;
+  reviewJobCount: number;
   isQueueOpen: boolean;
-  isGenerating: boolean;
 }
 
 export function summarizeCommandCenterRuntimeStatus(
@@ -183,10 +175,9 @@ export function buildStudioCommandCenterProjection({
   providerCapabilities,
   providerRuntimePreflight,
   statusItems,
-  queueResultPreviews,
   activeJobCount,
+  reviewJobCount,
   isQueueOpen,
-  isGenerating,
 }: BuildStudioCommandCenterProjectionArgs): StudioCommandCenterProjection {
   const activeProviderId = settings?.defaultProviderId ?? 'codex';
   const compactMode = Boolean(settings?.commandCenterCompactMode);
@@ -209,11 +200,9 @@ export function buildStudioCommandCenterProjection({
       }),
     ),
     queue: {
-      count: activeJobCount,
+      activeCount: activeJobCount,
+      reviewCount: reviewJobCount,
       isOpen: isQueueOpen,
-      resultPreviews: queueResultPreviews,
-      hasResultPreviews: queueResultPreviews.length > 0,
-      showCollapsedProgress: isGenerating && !isQueueOpen,
     },
   };
 }

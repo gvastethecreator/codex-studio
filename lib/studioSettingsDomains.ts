@@ -1,6 +1,7 @@
 export const STUDIO_SETTINGS_DOMAIN_TABS = [
-  { id: 'providers', label: 'Providers' },
-  { id: 'library', label: 'Library' },
+  { id: 'appearance', label: 'Appearance' },
+  { id: 'providers', label: 'Providers & accounts' },
+  { id: 'library', label: 'Library & imports' },
   { id: 'output', label: 'Output' },
   { id: 'maintenance', label: 'Maintenance' },
 ] as const;

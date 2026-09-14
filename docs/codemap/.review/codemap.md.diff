@@ -1,0 +1,42 @@
+diff --git "a/X:\\codex-studio\\docs\\codemap\\codemap.md" "b/X:\\codex-studio\\docs\\codemap\\.staging\\codemap.md"
+index c52e363b..3a4d9e74 100644
+--- "a/X:\\codex-studio\\docs\\codemap\\codemap.md"
++++ "b/X:\\codex-studio\\docs\\codemap\\.staging\\codemap.md"
+@@ -1,15 +1,15 @@
+ # Code map: codex-studio
+ 
+-Generated: 2026-09-13T18:30:31Z | Commit: `9054a9902bfd` | Schema: 2
+-Generation: `ecca7be90f03888f33a653cb5aad40a242ca48d7b4b52b03bbd558d1ba55b2b4`
++Generated: 2026-09-13T19:24:04Z | Commit: `9054a9902bfd` | Schema: 2
++Generation: `a5e52afb63d079718ddfde9451236b831fad75239d73433d9e901def8afd26a1`
+ Scope: . | Inventory: working-tree
+-Nodes: 1070 | Edges: 5377 | Flows: 5
++Nodes: 1070 | Edges: 5380 | Flows: 5
+ 
+ ## Coverage
+ 
+ - Analysis: **partial**; 1005 analyzed of 1019 included files.
+ - Configuration files: 7; omitted untracked files: 0.
+-- Unresolved references and analysis limits: 2658.
++- Unresolved references and analysis limits: 2660.
+ - Static references and call paths do not prove runtime execution or test coverage.
+ 
+ ## Modules
+@@ -88,7 +88,7 @@ Nodes: 1070 | Edges: 5377 | Flows: 5
+ - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:path` | imports
+ - `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | calls
+ - `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | imports
+-- Showing 50 of 5377 edges; JSON contains every edge and its evidence.
++- Showing 50 of 5380 edges; JSON contains every edge and its evidence.
+ 
+ ## Unknown
+ 
+@@ -115,7 +115,7 @@ Nodes: 1070 | Edges: 5377 | Flows: 5
+ 
+ ## Architecture changes
+ 
+-- Nodes: +6 / -0; edges: +65 / -5.
++- Nodes: +0 / -0; edges: +3 / -0.
+ - Boundary changes: 0; new cycles: 0.
+ 
+ ## Read next

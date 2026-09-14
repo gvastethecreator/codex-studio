@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect, useMemo } from 'react';
+import React, { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import { useLatestRef } from './useLatestRef';
 import type {
   ImageGenerationConfig,
@@ -8,7 +8,7 @@ import type {
   GenerationModel,
 } from '../types';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import useIndexedDBStorage from './useIndexedDBStorage';
+import { useScopedGenerationDraft } from './useScopedGenerationDraft';
 import { normalizeImageGenRatio } from '../utils/imageGenSizing';
 import { formatErrorMessage } from '../utils/runtimeLogger';
 import { resolveStudioApiBase } from '../services/studioRuntime';
@@ -28,6 +28,7 @@ import {
 import { createContextImageDataUrl } from '../utils/imageUtils';
 
 interface UseGenerationConfigProps {
+  scopeKey?: string;
   log: (message: string) => void;
 }
 
@@ -68,7 +69,9 @@ export function prepareGenerationConfigForPersist(
 ): ImageGenerationConfig {
   return {
     ...config,
-    attachments: filterPersistableInlineAttachments(config.attachments),
+    attachments: filterPersistableInlineAttachments(
+      config.attachments.filter((attachment) => !attachment.isProcessing),
+    ),
   };
 }
 
@@ -122,12 +125,12 @@ export function normalizeGenerationConfigForCodexModels(
   return next;
 }
 
-export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
-  const [generationConfig, setGenerationConfig] = useIndexedDBStorage<ImageGenerationConfig>(
-    'generation-config',
-    DEFAULT_GENERATION_CONFIG,
-    { prepareForPersist: prepareGenerationConfigForPersist },
-  );
+export const useGenerationConfig = ({
+  log,
+  scopeKey = 'default:studio',
+}: UseGenerationConfigProps) => {
+  const [generationConfig, setGenerationConfig, setRecipeDraft, isDraftReady] =
+    useScopedGenerationDraft(scopeKey, prepareGenerationConfigForPersist);
   const [codexModelCatalogState, setCodexModelCatalogState] = useState<CodexModelCatalogState>({
     catalog: null,
     isLoading: true,
@@ -135,6 +138,30 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
   });
 
   const logRef = useLatestRef(log);
+  const uploadPreviews = useRef(new Map<string, string>());
+  const uploadScopes = useRef(new Map<string, string>());
+
+  useEffect(() => {
+    for (const [id, url] of uploadPreviews.current) {
+      if (uploadScopes.current.get(id) !== scopeKey) continue;
+      if (
+        !generationConfig.attachments.some(
+          (attachment) => attachment.id === id && attachment.dataUrl === url,
+        )
+      ) {
+        URL.revokeObjectURL(url);
+        uploadPreviews.current.delete(id);
+      }
+    }
+  }, [generationConfig.attachments, scopeKey]);
+
+  useEffect(() => {
+    const previews = uploadPreviews.current;
+    return () => {
+      for (const url of previews.values()) URL.revokeObjectURL(url);
+      previews.clear();
+    };
+  }, []);
 
   const maxAttachments = 5;
 
@@ -250,11 +277,41 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
   );
 
   const processFiles = useCallback(
-    async (files: File[]) => {
-      const filesToProcess = files.slice(0, maxAttachments);
+    async (files: File[], replaceId?: string) => {
+      const filesToProcess = files.slice(0, replaceId ? 1 : maxAttachments);
+      if (replaceId) {
+        const preview = uploadPreviews.current.get(replaceId);
+        if (preview) URL.revokeObjectURL(preview);
+        uploadPreviews.current.delete(replaceId);
+      }
+      const uploads = filesToProcess.map((file) => {
+        const attachment: Attachment = {
+          id: crypto.randomUUID(),
+          name: file.name,
+          dataUrl: URL.createObjectURL(file),
+          strength: 0.5,
+          isProcessing: true,
+        };
+        uploadPreviews.current.set(attachment.id, attachment.dataUrl);
+        uploadScopes.current.set(attachment.id, scopeKey);
+        return { file, attachment };
+      });
+      setGenerationConfig((prev) => ({
+        ...prev,
+        attachments: replaceId
+          ? prev.attachments.map((attachment) =>
+              attachment.id === replaceId && uploads[0]
+                ? { ...uploads[0].attachment, strength: attachment.strength }
+                : attachment,
+            )
+          : [...prev.attachments, ...uploads.map(({ attachment }) => attachment)].slice(
+              0,
+              maxAttachments,
+            ),
+      }));
 
-      const results = await Promise.all(
-        filesToProcess.map(async (file) => {
+      await Promise.all(
+        uploads.map(async ({ file, attachment: pendingAttachment }) => {
           try {
             const rawDataUrl = await new Promise<string>((resolve, reject) => {
               const reader = new FileReader();
@@ -262,6 +319,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
               reader.onerror = reject;
               reader.readAsDataURL(file);
             });
+            if (!uploadPreviews.current.has(pendingAttachment.id)) return;
             const contextImage = await createContextImageDataUrl(rawDataUrl).catch((error) => {
               log(
                 `WebP conversion failed for "${file.name}": ${formatErrorMessage(error)}. Using original image for handoff.`,
@@ -274,10 +332,13 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
               };
             });
             const dataUrl = contextImage.dataUrl;
-            const attachmentName = toWebpAttachmentName(file.name);
+            if (!uploadPreviews.current.has(pendingAttachment.id)) return;
+            const attachmentName = dataUrl.startsWith('data:image/webp;')
+              ? toWebpAttachmentName(file.name)
+              : file.name;
 
-            const attachment: Attachment = {
-              id: `att-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`,
+            let attachment: Attachment = {
+              id: pendingAttachment.id,
               name: attachmentName,
               dataUrl,
               strength: 0.5,
@@ -297,7 +358,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
                 const persistedReference = handoff.references[0];
                 if (persistedReference) {
                   const sourceUrl = toStudioAssetUrl(persistedReference.publicUrl);
-                  return {
+                  attachment = {
                     ...attachment,
                     dataUrl: sourceUrl,
                     localPath: persistedReference.localPath,
@@ -311,27 +372,29 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
               }
             }
 
-            return attachment;
+            if (!uploadPreviews.current.has(pendingAttachment.id)) return;
+            setGenerationConfig((prev) => ({
+              ...prev,
+              attachments: prev.attachments.map((current) =>
+                current.id === attachment.id
+                  ? { ...attachment, strength: current.strength }
+                  : current,
+              ),
+            }));
           } catch (err) {
+            if (!uploadPreviews.current.has(pendingAttachment.id)) return;
             log(`Failed to read attachment "${file.name}": ${formatErrorMessage(err)}`);
-            return null;
+            setGenerationConfig((prev) => ({
+              ...prev,
+              attachments: prev.attachments.filter(
+                (current) => current.id !== pendingAttachment.id,
+              ),
+            }));
           }
         }),
       );
-
-      const newAttachments = results.filter((r): r is Attachment => r !== null);
-
-      if (newAttachments.length > 0) {
-        setGenerationConfig((prev) => ({
-          ...prev,
-          attachments: [...prev.attachments, ...newAttachments].slice(0, maxAttachments),
-        }));
-        log(
-          `Added ${newAttachments.length} reference image${newAttachments.length === 1 ? '' : 's'}.`,
-        );
-      }
     },
-    [log, maxAttachments, setGenerationConfig],
+    [log, maxAttachments, setGenerationConfig, scopeKey],
   );
 
   const handleFileSelect = useCallback(
@@ -346,8 +409,8 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
   );
 
   const handlePastedFiles = useCallback(
-    (files: File[]) => {
-      void processFiles(files);
+    (files: File[], replaceId?: string) => {
+      void processFiles(files, replaceId);
     },
     [processFiles],
   );
@@ -376,6 +439,8 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
   return {
     generationConfig,
     setGenerationConfig,
+    setRecipeDraft,
+    isDraftReady,
     updateGenerationConfig,
     updateAttachment,
     handleFileSelect,

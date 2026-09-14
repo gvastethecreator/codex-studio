@@ -1,12 +1,15 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useState } from 'react';
 
 import { useStudioShell } from '../hooks/useStudioShell';
 import { hasMountedStudioOverlay } from '../lib/studioOverlayVisibility';
 
+import { useGenerationDraft } from '../contexts/GenerationContext';
+import { RecipeResultPreview } from './recipes/RecipeResultPreview';
 import { HeaderToolbar } from './HeaderToolbar';
 import { StudioOperationsRail } from './studio/StudioOperationsRail';
 import { StudioViewport } from './shell/StudioViewport';
 import { ErrorBoundary } from './ErrorBoundary';
+import { RecipeWorkbenchContext } from './recipes/RecipeWorkbenchContext';
 import ToastContainer from './ToastContainer';
 
 const AppOverlays = React.lazy(() =>
@@ -57,52 +60,137 @@ const StudioGenerationDockFallback: React.FC = () => (
 
 export const AppContent: React.FC = () => {
   const shell = useStudioShell();
+  const draft = useGenerationDraft();
+  const isCreate = shell.viewport.routeView === 'recipes';
+  const [actionTarget, setActionTarget] = useState<HTMLElement | null>(null);
+  const [controlsTarget, setControlsTarget] = useState<HTMLElement | null>(null);
+  const [workbenchTab, setWorkbenchTab] = useState<'result' | 'configure'>('result');
+  const isRecipe = shell.viewport.routeView === 'recipe';
   const hasGenerationDock =
     !shell.generationDock.isModalOpen &&
     !shell.generationDock.isUiChromeSuppressed &&
-    (shell.generationDock.currentView === 'studio' || !!shell.generationDock.activeRecipe);
+    (isCreate || isRecipe);
   const hasActiveOverlay = hasMountedStudioOverlay(shell.overlays);
 
   return (
-    <div
-      className="fixed inset-0 text-white font-sans flex flex-col selection:bg-accent-500/35 selection:text-white overflow-hidden"
-      data-ui-chrome-suppressed={shell.root.isUiChromeSuppressed ? 'true' : 'false'}
-      onDragOver={shell.root.onDragOver}
-      onDragLeave={shell.root.onDragLeave}
-      onDrop={shell.root.onDrop}
-    >
-      <ToastContainer />
-
-      {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
-
+    <RecipeWorkbenchContext value={{ controls: controlsTarget, action: actionTarget }}>
       <div
-        className="relative z-10 flex w-full flex-1 min-h-0 overflow-hidden appearance-none border-none p-0 m-0 bg-transparent"
-        onPointerDownCapture={shell.root.onMainClick}
+        className="studio-experience fixed inset-0 text-white font-sans flex flex-col selection:bg-accent-500/35 selection:text-white overflow-hidden"
+        data-ui-chrome-suppressed={shell.root.isUiChromeSuppressed ? 'true' : 'false'}
+        onDragOver={shell.root.onDragOver}
+        onDragLeave={shell.root.onDragLeave}
+        onDrop={shell.root.onDrop}
       >
-        <div className="relative min-w-0 flex-1 overflow-hidden">
-          <StudioViewport {...shell.viewport} />
+        <ToastContainer />
+
+        {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
+
+        {shell.viewport.routeView === 'studio' && (
+          <div className="flex items-center gap-3 px-4 py-2">
+            <label className="flex flex-1 items-center gap-3 text-sm text-zinc-300">
+              Search library
+              <input
+                type="search"
+                aria-label="Search library"
+                placeholder="Search all images in this workspace"
+                value={shell.librarySearch.query}
+                onChange={(event) => shell.librarySearch.setQuery(event.target.value)}
+                className="h-10 w-full max-w-xl rounded-lg bg-white/5 px-3 text-white"
+              />
+            </label>
+          </div>
+        )}
+        {isRecipe && (
+          <div className="workbench-tabs" role="tablist" aria-label="Recipe workspace">
+            <button
+              role="tab"
+              aria-selected={workbenchTab === 'result'}
+              onClick={() => setWorkbenchTab('result')}
+            >
+              Result
+            </button>
+            <button
+              role="tab"
+              data-configure-tab
+              aria-selected={workbenchTab === 'configure'}
+              onClick={() => setWorkbenchTab('configure')}
+            >
+              Configure
+            </button>
+          </div>
+        )}
+        <div
+          data-workbench={isRecipe ? 'recipe' : isCreate ? 'create' : 'library'}
+          data-workbench-tab={workbenchTab}
+          className="studio-workbench relative z-10 flex w-full flex-1 min-h-0 overflow-hidden appearance-none border-none p-0 m-0 bg-transparent"
+          onPointerDownCapture={shell.root.onMainClick}
+        >
+          {isCreate ? (
+            <div className="create-workspace">
+              <section className="create-studio" aria-label="Text and image workspace">
+                <header className="px-5 pt-4 pb-2">
+                  <h1 className="text-xl font-semibold">Create an image</h1>
+                  <p className="mt-1 text-sm text-zinc-400">
+                    Start with a prompt, or add an image as a reference.
+                  </p>
+                </header>
+                <div className="min-h-0 flex-1 overflow-hidden">
+                  <RecipeResultPreview
+                    images={shell.viewport.recipePageProps.imagesWithConfig.filter(
+                      (image) => !image.config.recipeId,
+                    )}
+                    reference={draft.generationConfig.attachments[0]}
+                    onOpen={shell.viewport.recipePageProps.openModal}
+                  />
+                </div>
+                {hasGenerationDock && (
+                  <Suspense fallback={<StudioGenerationDockFallback />}>
+                    <StudioGenerationDock {...shell.generationDock} />
+                  </Suspense>
+                )}
+              </section>
+              <aside className="create-recipes" aria-label="Recipes">
+                <StudioViewport {...shell.viewport} />
+              </aside>
+            </div>
+          ) : (
+            <div className="workbench-canvas relative min-w-0 flex-1 overflow-hidden">
+              <StudioViewport {...shell.viewport} />
+            </div>
+          )}
+          {isRecipe && (
+            <aside className="workbench-config custom-scrollbar" aria-label="Recipe configuration">
+              <div ref={setControlsTarget} />
+              <div className="recipe-primary-action" ref={setActionTarget} />
+              {hasGenerationDock && (
+                <Suspense fallback={<StudioGenerationDockFallback />}>
+                  <StudioGenerationDock {...shell.generationDock} />
+                </Suspense>
+              )}
+            </aside>
+          )}
+          <StudioOperationsRail
+            {...shell.viewport.studioPageController.operations}
+            hasGenerationDock={hasGenerationDock}
+          />
         </div>
-        <StudioOperationsRail
-          {...shell.viewport.studioPageController.operations}
-          hasGenerationDock={hasGenerationDock}
-        />
-      </div>
 
-      {hasGenerationDock ? (
-        <Suspense fallback={<StudioGenerationDockFallback />}>
-          <StudioGenerationDock {...shell.generationDock} />
-        </Suspense>
-      ) : null}
-
-      {shell.overlays.systemOverlays.flags.isOnboardingOpen ? <StudioFirstReadyScrim /> : null}
-
-      {hasActiveOverlay ? (
-        <ErrorBoundary fallbackMessage="Could not load studio overlays.">
-          <Suspense fallback={null}>
-            <AppOverlays controller={shell.overlays} />
+        {hasGenerationDock && !isRecipe && !isCreate ? (
+          <Suspense fallback={<StudioGenerationDockFallback />}>
+            <StudioGenerationDock {...shell.generationDock} />
           </Suspense>
-        </ErrorBoundary>
-      ) : null}
-    </div>
+        ) : null}
+
+        {shell.overlays.systemOverlays.flags.isOnboardingOpen ? <StudioFirstReadyScrim /> : null}
+
+        {hasActiveOverlay ? (
+          <ErrorBoundary fallbackMessage="Could not load studio overlays.">
+            <Suspense fallback={null}>
+              <AppOverlays controller={shell.overlays} />
+            </Suspense>
+          </ErrorBoundary>
+        ) : null}
+      </div>
+    </RecipeWorkbenchContext>
   );
 };

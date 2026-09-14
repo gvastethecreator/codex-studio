@@ -96,7 +96,10 @@ export function useStudioViewState({
   }, []);
 
   const openChat = useCallback(() => {
-    startViewTransition(() => setIsChatPanelOpen(true));
+    document.querySelector<HTMLButtonElement>('[role="tab"][data-configure-tab]')?.click();
+    requestAnimationFrame(() =>
+      document.querySelector<HTMLTextAreaElement>('[aria-label="Prompt input"]')?.focus(),
+    );
   }, []);
 
   const closeChat = useCallback(() => {

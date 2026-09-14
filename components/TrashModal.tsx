@@ -1,3 +1,4 @@
+import { useDialogFocus } from '../hooks/useDialogFocus';
 import React from 'react';
 import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
@@ -26,6 +27,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
   onRestoreAll,
   onEmpty,
 }) => {
+  const dialogRef = useDialogFocus(isOpen, onClose);
   if (!isOpen) return null;
 
   return (
@@ -41,6 +43,11 @@ export const TrashModal: React.FC<TrashModalProps> = ({
         />
 
         <MotionDiv
+          ref={dialogRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Trash"
+          tabIndex={-1}
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -54,10 +61,10 @@ export const TrashModal: React.FC<TrashModalProps> = ({
               </div>
               <div className="min-w-0">
                 <h2 className="truncate text-base font-black uppercase tracking-widest text-white sm:text-lg">
-                  Recycle Bin
+                  Trash
                 </h2>
                 <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-wider">
-                  {trash.length} image groups archived • Auto-purges after 100 items
+                  {trash.length} image groups available to restore
                 </p>
               </div>
             </div>
@@ -79,7 +86,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                     className="flex items-center gap-2 rounded-xl bg-red-500/10 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-red-400 transition-colors hover:bg-red-500/20 sm:px-4 cursor-pointer"
                   >
                     <Trash size={14} />
-                    <span>Empty Bin</span>
+                    <span>Empty trash</span>
                   </button>
                 </>
               )}
@@ -102,10 +109,10 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                   <Trash2 size={32} />
                 </div>
                 <h3 className="text-zinc-400 font-bold uppercase tracking-widest text-sm mb-1">
-                  Bin is Empty
+                  Trash is empty
                 </h3>
                 <p className="text-zinc-600 text-xs max-w-[240px]">
-                  Deleted generations and archived image groups will appear here for recovery.
+                  Images moved to trash appear here until you restore or permanently delete them.
                 </p>
               </div>
             ) : (
@@ -154,7 +161,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                       aria-label={`Restore batch ${group.id}`}
                       onClick={() => onRestore(group.id)}
                       className="flex h-11 w-full items-center justify-center rounded-xl bg-accent-500/10 p-3 text-accent-400 transition-[color,background-color,transform] hover:bg-accent-500 hover:text-white active:scale-90 sm:w-auto cursor-pointer"
-                      title="Restore Batch"
+                      title="Restore image group"
                     >
                       <RotateCcw size={18} />
                     </button>
@@ -168,7 +175,8 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           <div className="p-4 bg-black/20 border-t border-white/2 flex items-center gap-3">
             <AlertCircle size={14} className="text-zinc-600" />
             <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider">
-              Archived items do not count towards your active workspace limits.
+              Restore images to return them to their workspace. Emptying trash permanently deletes
+              them.
             </p>
           </div>
         </MotionDiv>

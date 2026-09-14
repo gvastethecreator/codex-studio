@@ -40,8 +40,9 @@ function toneForStatus(status: StudioJob['status']) {
   switch (status) {
     case 'completed':
       return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
-    case 'failed':
     case 'cancelled':
+      return 'border-white/10 bg-white/5 text-zinc-300';
+    case 'failed':
       return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
     case 'needs_review':
       return 'border-amber-500/2 bg-amber-500/10 text-amber-100';
@@ -653,28 +654,37 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                 ))}
               </details>
             ) : null}
-            <div className="mt-3 flex flex-wrap items-center gap-3 text-[11px] text-zinc-500">
-              <span className="font-mono [overflow-wrap:anywhere]">{detail.job.id}</span>
-              <span>
-                {detail.job.attemptQueuedAt
-                  ? `Attempt ${detail.job.attempt ?? 1}`
-                  : 'Earlier attempt timing unavailable'}
-              </span>
-              <span>•</span>
-              <span>{model.stats.transcriptCount} transcript steps</span>
-              {model.stats.collapsedTranscriptCount > 0 ? (
-                <>
-                  <span>•</span>
-                  <span>{model.stats.collapsedTranscriptCount} streaming updates compacted</span>
-                </>
-              ) : null}
-              <span>•</span>
-              <span>{model.stats.eventCount} system events</span>
-              <span>•</span>
-              <span>{model.stats.outputCount} returned images</span>
-              <span>•</span>
-              <span>{referenceArtifacts.length} reference context</span>
-            </div>
+            <p className="mt-2 text-sm text-zinc-400">
+              Accepted execution:{' '}
+              {detail.job.execution?.providerOptions?.codex
+                ? describeCodexExecution(detail.job.execution.providerOptions.codex)
+                : `${detail.job.providerId ?? 'Provider unavailable'} · transport not recorded`}
+            </p>
+            <details className="mt-3 text-xs text-zinc-400">
+              <summary className="cursor-pointer">Execution details</summary>
+              <div className="mt-3 flex flex-wrap items-center gap-3 text-[11px] text-zinc-500">
+                <span className="font-mono [overflow-wrap:anywhere]">{detail.job.id}</span>
+                <span>
+                  {detail.job.attemptQueuedAt
+                    ? `Attempt ${detail.job.attempt ?? 1}`
+                    : 'Earlier attempt timing unavailable'}
+                </span>
+                <span>•</span>
+                <span>{model.stats.transcriptCount} transcript steps</span>
+                {model.stats.collapsedTranscriptCount > 0 ? (
+                  <>
+                    <span>•</span>
+                    <span>{model.stats.collapsedTranscriptCount} streaming updates compacted</span>
+                  </>
+                ) : null}
+                <span>•</span>
+                <span>{model.stats.eventCount} system events</span>
+                <span>•</span>
+                <span>{model.stats.outputCount} returned images</span>
+                <span>•</span>
+                <span>{referenceArtifacts.length} reference context</span>
+              </div>
+            </details>
           </div>
 
           <div className="flex shrink-0 flex-wrap items-center gap-2">
@@ -700,7 +710,13 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
       </div>
 
       <div className="space-y-5 p-5 sm:p-6">
-        <div className="grid gap-4 xl:grid-cols-[minmax(0,1.7fr)_minmax(300px,0.9fr)]">
+        <div
+          className={
+            primaryReference
+              ? 'grid gap-4 xl:grid-cols-[minmax(0,1.7fr)_minmax(300px,0.9fr)]'
+              : 'grid gap-4'
+          }
+        >
           <JobStatusBanner detail={detail} hasReadableAssistantReply={hasReadableAssistantReply} />
 
           <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
@@ -759,94 +775,96 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             </div>
           </section>
 
-          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
-            <div className="flex items-center gap-2 border-b border-white/2 px-4 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
-              <Layers3 size={14} className="text-indigo-300" />
-              <span>Reference context</span>
-            </div>
-
-            <div className="p-3">
-              {primaryReference?.previewSrc || primaryReference?.href ? (
-                <img
-                  src={primaryReference.previewSrc ?? primaryReference?.href ?? ''}
-                  alt={primaryReference.label}
-                  width={512}
-                  height={512}
-                  className="h-[214px] w-full rounded-xl border border-white/2 object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-              ) : (
-                <div className="flex h-[214px] items-center justify-center rounded-xl border border-dashed border-white/2 text-sm text-zinc-500">
-                  No reference image.
-                </div>
-              )}
-            </div>
-
-            <div className="border-t border-white/2 px-4 py-3 space-y-2">
-              <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-zinc-300">
-                {primaryReference?.label ?? 'Reference unavailable'}
-              </p>
-              <div className="flex items-center justify-between text-[11px] text-zinc-400">
-                <span className="uppercase tracking-[0.16em] text-zinc-500 text-[9px] font-black">
-                  Reference strength
-                </span>
-                <span className="font-mono text-zinc-200">
-                  {referenceSourceSpec?.strength != null
-                    ? referenceSourceSpec.strength.toFixed(2)
-                    : '—'}
-                </span>
-              </div>
-              <div className="h-1.5 rounded-full bg-white/10">
-                <div
-                  className="h-full rounded-full bg-indigo-300"
-                  style={{
-                    width: `${Math.max(0, Math.min(100, (referenceSourceSpec?.strength ?? 0) * 100))}%`,
-                  }}
-                />
+          {primaryReference && (
+            <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
+              <div className="flex items-center gap-2 border-b border-white/2 px-4 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+                <Layers3 size={14} className="text-indigo-300" />
+                <span>Reference context</span>
               </div>
 
-              {additionalReferences.length > 0 ? (
-                <div className="space-y-2 pt-1">
-                  <p className="text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                    More references ({additionalReferences.length})
-                  </p>
-                  <div className="custom-scrollbar flex gap-2 overflow-x-auto pb-1">
-                    {additionalReferences.map((artifact) => {
-                      const preview = artifact.previewSrc ?? artifact.href;
-                      return (
-                        <a
-                          key={artifact.id}
-                          href={artifact.href ?? undefined}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="block size-16 shrink-0"
-                        >
-                          <div className="size-16 overflow-hidden rounded-lg border border-white/2 bg-black/30">
-                            {preview ? (
-                              <img
-                                src={preview}
-                                alt={artifact.label}
-                                width={64}
-                                height={64}
-                                className="h-full w-full object-cover"
-                                loading="lazy"
-                                decoding="async"
-                              />
-                            ) : (
-                              <div className="flex h-full w-full items-center justify-center text-[9px] text-zinc-500">
-                                N/A
-                              </div>
-                            )}
-                          </div>
-                        </a>
-                      );
-                    })}
+              <div className="p-3">
+                {primaryReference?.previewSrc || primaryReference?.href ? (
+                  <img
+                    src={primaryReference.previewSrc ?? primaryReference?.href ?? ''}
+                    alt={primaryReference.label}
+                    width={512}
+                    height={512}
+                    className="h-[214px] w-full rounded-xl border border-white/2 object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div className="flex h-[214px] items-center justify-center rounded-xl border border-dashed border-white/2 text-sm text-zinc-500">
+                    No reference image.
                   </div>
+                )}
+              </div>
+
+              <div className="border-t border-white/2 px-4 py-3 space-y-2">
+                <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-zinc-300">
+                  {primaryReference?.label ?? 'Reference unavailable'}
+                </p>
+                <div className="flex items-center justify-between text-[11px] text-zinc-400">
+                  <span className="uppercase tracking-[0.16em] text-zinc-500 text-[9px] font-black">
+                    Reference strength
+                  </span>
+                  <span className="font-mono text-zinc-200">
+                    {referenceSourceSpec?.strength != null
+                      ? referenceSourceSpec.strength.toFixed(2)
+                      : '—'}
+                  </span>
                 </div>
-              ) : null}
-            </div>
-          </section>
+                <div className="h-1.5 rounded-full bg-white/10">
+                  <div
+                    className="h-full rounded-full bg-indigo-300"
+                    style={{
+                      width: `${Math.max(0, Math.min(100, (referenceSourceSpec?.strength ?? 0) * 100))}%`,
+                    }}
+                  />
+                </div>
+
+                {additionalReferences.length > 0 ? (
+                  <div className="space-y-2 pt-1">
+                    <p className="text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                      More references ({additionalReferences.length})
+                    </p>
+                    <div className="custom-scrollbar flex gap-2 overflow-x-auto pb-1">
+                      {additionalReferences.map((artifact) => {
+                        const preview = artifact.previewSrc ?? artifact.href;
+                        return (
+                          <a
+                            key={artifact.id}
+                            href={artifact.href ?? undefined}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="block size-16 shrink-0"
+                          >
+                            <div className="size-16 overflow-hidden rounded-lg border border-white/2 bg-black/30">
+                              {preview ? (
+                                <img
+                                  src={preview}
+                                  alt={artifact.label}
+                                  width={64}
+                                  height={64}
+                                  className="h-full w-full object-cover"
+                                  loading="lazy"
+                                  decoding="async"
+                                />
+                              ) : (
+                                <div className="flex h-full w-full items-center justify-center text-[9px] text-zinc-500">
+                                  N/A
+                                </div>
+                              )}
+                            </div>
+                          </a>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            </section>
+          )}
         </div>
 
         <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
@@ -867,49 +885,52 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </div>
         </section>
 
-        <div className="grid gap-4 xl:grid-cols-3">
-          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4">
-            <TaskMetricSummary metrics={detail.metrics} />
-          </section>
+        <details className="rounded-2xl border border-white/10 p-4">
+          <summary className="cursor-pointer text-sm">Execution details and metrics</summary>{' '}
+          <div className="grid gap-4 xl:grid-cols-3">
+            <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4">
+              <TaskMetricSummary metrics={detail.metrics} />
+            </section>
 
-          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4 space-y-3">
-            <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
-              <BrainCircuit size={14} className="text-emerald-300" />
-              <span>Execution facts</span>
-            </div>
-            <dl className="space-y-2.5">
-              {executionItems.map(([label, value]) => (
-                <div key={label} className="flex items-start justify-between gap-3">
-                  <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                    {label}
-                  </dt>
-                  <dd className="text-right text-[12px] leading-5 text-zinc-200 [overflow-wrap:anywhere]">
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </section>
+            <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4 space-y-3">
+              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+                <BrainCircuit size={14} className="text-emerald-300" />
+                <span>Execution facts</span>
+              </div>
+              <dl className="space-y-2.5">
+                {executionItems.map(([label, value]) => (
+                  <div key={label} className="flex items-start justify-between gap-3">
+                    <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                      {label}
+                    </dt>
+                    <dd className="text-right text-[12px] leading-5 text-zinc-200 [overflow-wrap:anywhere]">
+                      {value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
 
-          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4 space-y-3">
-            <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
-              <Layers3 size={14} className="text-amber-300" />
-              <span>Job snapshot</span>
-            </div>
-            <dl className="space-y-2.5">
-              {snapshotItems.map(([label, value]) => (
-                <div key={label} className="flex items-start justify-between gap-3">
-                  <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                    {label}
-                  </dt>
-                  <dd className="text-right text-[12px] leading-5 text-zinc-200 [overflow-wrap:anywhere]">
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </section>
-        </div>
+            <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4 space-y-3">
+              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+                <Layers3 size={14} className="text-amber-300" />
+                <span>Job snapshot</span>
+              </div>
+              <dl className="space-y-2.5">
+                {snapshotItems.map(([label, value]) => (
+                  <div key={label} className="flex items-start justify-between gap-3">
+                    <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                      {label}
+                    </dt>
+                    <dd className="text-right text-[12px] leading-5 text-zinc-200 [overflow-wrap:anywhere]">
+                      {value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          </div>
+        </details>
 
         <details className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4">
           <summary className="cursor-pointer text-[11px] font-black uppercase tracking-[0.18em] text-zinc-300">

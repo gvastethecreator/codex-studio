@@ -9,6 +9,8 @@ import {
   createSelectedStyleLayer,
   DEFAULT_SELECTED_STYLE_STRENGTH,
   type SelectedStyleSlot,
+  type SelectedStyleLayer,
+  STYLE_LAYER_FIELD_DEFINITIONS,
   type StyleLayerAvoidRulesMode,
   type StyleLayerFieldId,
 } from './styleLayerComposer';
@@ -39,6 +41,54 @@ export function useStyleComposition({
   maxSlots,
 }: StyleCompositionInput) {
   const [selectedStyles, setSelectedStyles] = useState<SelectedStyleSlot[]>([]);
+  const didRestoreSelection = useRef(false);
+  useEffect(() => {
+    if (didRestoreSelection.current) return;
+    if (selectedStyles.length > 0) {
+      didRestoreSelection.current = true;
+      return;
+    }
+    const draftSlots = config.recipeParams?.selectedStyleDraft;
+    if (Array.isArray(draftSlots)) {
+      didRestoreSelection.current = true;
+      setSelectedStyles(draftSlots as SelectedStyleSlot[]);
+      return;
+    }
+    const layers = (config.recipeParams as { selectedStyles?: SelectedStyleLayer[] } | null)
+      ?.selectedStyles;
+    if (!Array.isArray(layers) || !layers.length) return;
+    didRestoreSelection.current = true;
+    setSelectedStyles(
+      layers.map((layer) => ({
+        packId: layer.packId,
+        packName: layer.packName,
+        strength: layer.strength,
+        enabled: layer.enabled,
+        avoidRulesMode: layer.avoidRulesMode,
+        fieldControls: layer.fields,
+        preset: {
+          id: layer.presetId,
+          name: layer.presetSourceName || layer.presetName,
+          displayName: layer.presetName,
+          category: layer.category,
+          styleAnchors: layer.styleAnchors,
+          negativePrompt:
+            typeof config.recipeParams?.negativePrompt === 'string'
+              ? config.recipeParams.negativePrompt
+              : '',
+          style: {
+            creative_brief: layer.creativeBrief,
+            ...Object.fromEntries(
+              STYLE_LAYER_FIELD_DEFINITIONS.map((field) => [
+                field.sourceKeys[0],
+                layer[field.paramKey]?.replace(/ \(field weight [^)]+\)$/, ''),
+              ]),
+            ),
+          } as SelectedStyleSlot['preset']['style'],
+        },
+      })),
+    );
+  }, [config.recipeParams, selectedStyles.length]);
   const [isAdvancedStyleControlsOpen, setIsAdvancedStyleControlsOpen] = useState(false);
   const selectedStyleIds = useMemo(
     () => new Set(selectedStyles.map((slot) => slot.preset.id)),
@@ -83,22 +133,16 @@ export function useStyleComposition({
       }),
     [config.negativePrompt, referenceImages.length, selectedStyles],
   );
-  const registeredStyleSelectionRef = useRef(false);
   useEffect(() => {
-    if (!registeredStyleGenerationPlan) {
-      if (!registeredStyleSelectionRef.current) return;
-      registeredStyleSelectionRef.current = false;
-      updateConfig('recipeId', null);
-      updateConfig('recipeParams', null);
-      updateConfig('recipeContext', '');
-      return;
-    }
-
-    registeredStyleSelectionRef.current = true;
+    if (!didRestoreSelection.current && selectedStyles.length === 0) return;
     updateConfig('recipeId', 'styles');
-    updateConfig('recipeParams', registeredStyleGenerationPlan.recipeParams);
+    updateConfig('recipeParams', {
+      ...registeredStyleGenerationPlan?.recipeParams,
+      selectedStyles: registeredStyleGenerationPlan?.recipeParams.selectedStyles ?? [],
+      selectedStyleDraft: selectedStyles,
+    });
     updateConfig('recipeContext', '');
-  }, [registeredStyleGenerationPlan, updateConfig]);
+  }, [registeredStyleGenerationPlan, selectedStyles, updateConfig]);
   const updateSelectedStyleStrength = useCallback((presetId: string, strength: number) => {
     setSelectedStyles((current) =>
       current.map((slot) =>
@@ -199,10 +243,7 @@ export function useStyleComposition({
         recipeId: 'styles',
         recipeParams: generationPlan.recipeParams,
         recipeContext: '',
-        attachments: referenceImages.map((attachment) => ({
-          ...attachment,
-          strength: 0.15,
-        })),
+        attachments: referenceImages,
         model: config.model,
         imageSize: config.imageSize,
         batchCount: config.batchCount,

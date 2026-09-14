@@ -1,3 +1,4 @@
+import { RecipeControls } from './RecipeWorkbenchContext';
 import React, { useState, useRef, useMemo } from 'react';
 import {
   IconUpload as Upload,
@@ -68,9 +69,11 @@ function CameraAnglesInfoPanel({
           </div>
           <div>
             <h3 className="text-[10px] font-black text-white uppercase tracking-widest">
-              Virtual Output
+              Virtual framing
             </h3>
-            <p className="text-[8px] text-zinc-500 font-bold uppercase">Prompt Translation</p>
+            <p className="text-[8px] text-zinc-500 font-bold uppercase">
+              Camera settings for the next image
+            </p>
           </div>
         </div>
         <div className="p-3 bg-black/40 rounded-xl border border-white/2 space-y-2">
@@ -149,6 +152,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
     setDistance,
   } = useCameraViewport({
     aspectRatio: config.aspectRatio,
+    initialState: config.recipeId === 'camera' ? (config.recipeParams ?? undefined) : undefined,
     referenceImageSrc: activeImage?.dataUrl ?? null,
   });
 
@@ -307,97 +311,25 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
           </div>
         </div>
 
-        {/* RIGHT: SIDEBAR (Reference & Gallery) */}
-        <div className="w-full lg:w-80 flex min-h-0 shrink-0 flex-col gap-4">
-          {/* 1. Reference Image Panel */}
-          <div
-            className="group relative w-full shrink-0 overflow-hidden rounded-xl border border-white/2 bg-zinc-950 shadow-2xl"
-            style={{ aspectRatio: ratioValue }}
-          >
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 pointer-events-none" />
-
-            <div className="absolute top-0 left-0 right-0 h-10 bg-black/60 z-20 flex items-center px-4 justify-between border-b border-white/2">
-              <span className="text-[9px] font-black text-white uppercase tracking-widest flex items-center gap-2">
-                <Camera size={12} className="text-cyan-500" /> Subject
-              </span>
-              {hasReference && (
-                <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    aria-label="Remove camera reference"
-                    onClick={handleEstimateCamera}
-                    disabled={isEstimating}
-                    className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/2 transition-[color,background-color,border-color] ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/2'}`}
-                    title="Estimate initial view from image shape"
-                  >
-                    {isEstimating ? (
-                      <Loader2 size={10} className="animate-spin" />
-                    ) : (
-                      <SlidersHorizontal size={10} />
-                    )}
-                    <span className="text-[8px] font-bold uppercase">Fit</span>
-                  </button>
-                  <button
-                    type="button"
-                    aria-label="Remove camera reference"
-                    onClick={() => updateConfig('attachments', [])}
-                    className="text-zinc-500 hover:text-red-500 transition-colors"
-                  >
-                    <X size={12} />
-                  </button>
-                </div>
-              )}
-            </div>
-
-            {hasReference ? (
-              <div className="size-full flex items-center justify-center p-6 bg-black/50">
-                <img
-                  src={activeImage.dataUrl}
-                  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl opacity-90"
-                  alt="ref"
-                />
-              </div>
-            ) : (
-              <button
-                type="button"
-                className="relative z-10 flex size-full cursor-pointer flex-col items-center justify-center p-6 transition-colors hover:bg-white/2 appearance-none border-none p-0 m-0 bg-transparent"
-                onClick={() => fileInputRef.current?.click()}
-                onDragOver={(e) => e.preventDefault()}
-                onDrop={handleDrop}
-              >
-                <input
-                  type="file"
-                  ref={fileInputRef}
-                  onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
-                  aria-label="Upload reference image"
-                  className="hidden"
-                  accept="image/*"
-                />
-                <div className="size-16 rounded-full bg-zinc-900 border border-white/2 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/2 transition-[border-color,transform]">
-                  <Upload
-                    size={20}
-                    className="text-zinc-500 group-hover:text-white transition-colors"
-                  />
-                </div>
-                <QuickStartText
-                  title="Add Reference"
-                  subtitle="Optional: upload a reference"
-                  toneClassName="text-zinc-400 group-hover:text-white"
-                  subtitleClassName="text-zinc-600"
-                  maxTitleFontSize={12}
-                />
+        <RecipeControls>
+          <div className="w-full flex min-h-0 shrink-0 flex-col gap-4">
+            {hasReference && (
+              <button type="button" onClick={handleEstimateCamera} disabled={isEstimating}>
+                Fit camera to reference
               </button>
             )}
+            <details>
+              <summary>Virtual framing details</summary>
+              <CameraAnglesInfoPanel
+                hPos={hPos}
+                vPos={vPos}
+                framing={framing}
+                cameraImages={cameraImages}
+                onSelectImage={onSelectImage}
+              />
+            </details>
           </div>
-
-          <CameraAnglesInfoPanel
-            hPos={hPos}
-            vPos={vPos}
-            framing={framing}
-            cameraImages={cameraImages}
-            onSelectImage={onSelectImage}
-          />
-        </div>
+        </RecipeControls>
       </div>
     </RecipeLayout>
   );

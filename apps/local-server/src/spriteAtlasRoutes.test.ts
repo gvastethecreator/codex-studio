@@ -100,6 +100,13 @@ describe('spriteAtlasRoutes', () => {
       expect(existsSync(run.paths.atlasPath)).toBe(true);
       expect(existsSync(run.paths.manifestPath)).toBe(true);
 
+      // Importing a row must not turn an existing fixture atlas into generated-art QA.
+      const importedResponse = await routes.request(`/runs/${run.id}/import-row`, {
+        method: 'POST',
+        body: JSON.stringify({ rowId: 'idle', sourcePath: run.paths.atlasPath }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      expect(importedResponse.status).toBe(200);
       const qaResponse = await routes.request(`/runs/${run.id}/qa`, { method: 'POST' });
       expect(qaResponse.status).toBe(200);
       await expect(qaResponse.json()).resolves.toMatchObject({

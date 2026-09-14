@@ -104,6 +104,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             images={imagesWithConfig}
             activeProviderId={activeProviderId}
             grokCanExecute={grokCanExecute}
+            onSelectImage={openModal}
           />
         )}
         {activeRecipe === 'remaster' && (
@@ -150,6 +151,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
         )}
         {activeRecipe === 'sprite-atlas' && (
           <LoadedSpriteAtlasRecipe
+            images={imagesWithConfig}
             config={generationConfig}
             updateConfig={updateGenerationConfig}
             isGenerating={isGenerating}

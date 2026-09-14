@@ -17,13 +17,15 @@ interface GenerationContextType {
   config: {
     generationConfig: ImageGenerationConfig;
     setGenerationConfig: React.Dispatch<React.SetStateAction<ImageGenerationConfig>>;
+    setRecipeDraft: (recipeId: RecipeId, config: ImageGenerationConfig) => void;
+    isDraftReady: boolean;
     updateGenerationConfig: <K extends keyof ImageGenerationConfig>(
       key: K,
       value: ImageGenerationConfig[K],
     ) => void;
     updateAttachment: (id: string, updates: Partial<Attachment>) => void;
     handleFileSelect: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    handlePastedFiles: (files: File[]) => void;
+    handlePastedFiles: (files: File[], replaceId?: string) => void;
     handleRemoveAttachment: (id: string) => void;
     handleAddToContext: (img: GeneratedImageWithConfig) => void;
     maxAttachments: number;
@@ -107,7 +109,10 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
     setModalImage,
   } = useModalManager(activeRecipe);
 
-  const configHook = useGenerationConfig({ log });
+  const configHook = useGenerationConfig({
+    log,
+    scopeKey: `${activeWorkspaceId}:${activeRecipe ?? 'studio'}`,
+  });
   const generationConfigRef = useLatestRef(configHook.generationConfig);
 
   const pipelineHook = useGenerationPipeline({
@@ -124,6 +129,8 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
     () => ({
       generationConfig: configHook.generationConfig,
       setGenerationConfig: configHook.setGenerationConfig,
+      setRecipeDraft: configHook.setRecipeDraft,
+      isDraftReady: configHook.isDraftReady,
       updateGenerationConfig: configHook.updateGenerationConfig,
       updateAttachment: configHook.updateAttachment,
       handleFileSelect: configHook.handleFileSelect,
@@ -138,6 +145,8 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
     [
       configHook.generationConfig,
       configHook.setGenerationConfig,
+      configHook.setRecipeDraft,
+      configHook.isDraftReady,
       configHook.updateGenerationConfig,
       configHook.updateAttachment,
       configHook.handleFileSelect,
@@ -171,6 +180,8 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
       generationConfigRef,
       aspectRatio: configHook.generationConfig.aspectRatio,
       setGenerationConfig: configHook.setGenerationConfig,
+      setRecipeDraft: configHook.setRecipeDraft,
+      isDraftReady: configHook.isDraftReady,
       updateGenerationConfig: configHook.updateGenerationConfig,
       updateAttachment: configHook.updateAttachment,
       handleFileSelect: configHook.handleFileSelect,
@@ -186,6 +197,8 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
       generationConfigRef,
       configHook.generationConfig.aspectRatio,
       configHook.setGenerationConfig,
+      configHook.setRecipeDraft,
+      configHook.isDraftReady,
       configHook.updateGenerationConfig,
       configHook.updateAttachment,
       configHook.handleFileSelect,

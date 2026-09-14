@@ -1,3 +1,4 @@
+import { getRecipeStringParam } from '../../lib/recipeIdentity';
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import {
   IconClock as Clock,
@@ -148,7 +149,7 @@ function TimelineBottomDock({
           <button
             type="button"
             onClick={() => onSetDirection('backward')}
-            className={`relative px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-zinc-500 hover:text-zinc-300'}`}
+            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-zinc-500 hover:text-zinc-300'}`}
           >
             <StepBack size={14} fill={direction === 'backward' ? 'currentColor' : 'none'} />
             <span className="text-[10px] font-black uppercase tracking-widest">Prev</span>
@@ -156,7 +157,7 @@ function TimelineBottomDock({
           <button
             type="button"
             onClick={() => onSetDirection('forward')}
-            className={`relative px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'forward' ? 'text-teal-400' : 'text-zinc-500 hover:text-zinc-300'}`}
+            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'forward' ? 'text-teal-400' : 'text-zinc-500 hover:text-zinc-300'}`}
           >
             <span className="text-[10px] font-black uppercase tracking-widest">Next</span>
             <StepForward size={14} fill={direction === 'forward' ? 'currentColor' : 'none'} />
@@ -182,24 +183,27 @@ function TimelineBottomDock({
       <div className="h-8 w-px bg-white/10 mx-2 hidden sm:block" />
 
       {/* GROUP 3: PHYSICS (Motion & Light) */}
-      <div className="flex gap-2">
-        <ControlDropdown
-          title="Motion"
-          icon={<Activity size={14} />}
-          label={motionAmount}
-          options={MOTION_OPTIONS}
-          onSelect={onSetMotionAmount}
-          activeColor="orange"
-        />
-        <ControlDropdown
-          title="Lighting"
-          icon={<Sun size={14} />}
-          label={lightingMode}
-          options={LIGHTING_OPTIONS}
-          onSelect={onSetLightingMode}
-          activeColor="yellow"
-        />
-      </div>
+      <details className="recipe-advanced">
+        <summary>Continuity details</summary>
+        <div className="recipe-advanced-grid">
+          <ControlDropdown
+            title="Motion"
+            icon={<Activity size={14} />}
+            label={motionAmount}
+            options={MOTION_OPTIONS}
+            onSelect={onSetMotionAmount}
+            activeColor="orange"
+          />
+          <ControlDropdown
+            title="Lighting"
+            icon={<Sun size={14} />}
+            label={lightingMode}
+            options={LIGHTING_OPTIONS}
+            onSelect={onSetLightingMode}
+            activeColor="yellow"
+          />
+        </div>
+      </details>
 
       <div className="h-8 w-px bg-white/10 mx-2 hidden sm:block" />
 
@@ -318,7 +322,7 @@ function TimelineCanvas({
                 </span>
                 <div className="size-1 bg-white/20 rounded-full" />
                 <span className="text-[9px] font-black text-teal-400 uppercase tracking-widest">
-                  {direction === 'forward' ? 'Generating Future' : 'Reconstructing Past'}
+                  {direction === 'forward' ? 'Next frame' : 'Previous frame'}
                 </span>
               </div>
               <button
@@ -497,14 +501,12 @@ function useTimelineRecipeController({
   images: GeneratedImageWithConfig[];
 }) {
   // --- Persistent UI State ---
-  const [direction, setDirection] = useLocalStorage<'forward' | 'backward'>(
-    'timeline-direction',
-    DEFAULT_DIRECTION === 'backward' ? 'backward' : 'forward',
+  const [direction, setDirection] = useState<'forward' | 'backward'>(() =>
+    config.recipeParams?.direction === 'backward' ? 'backward' : 'forward',
   );
 
-  const [timeDeltaLabel, setTimeDeltaLabel] = useLocalStorage(
-    'timeline-delta',
-    DEFAULT_TIME_DELTA_LABEL,
+  const [timeDeltaLabel, setTimeDeltaLabel] = useState(() =>
+    getRecipeStringParam(config, 'timeDeltaLabel', DEFAULT_TIME_DELTA_LABEL),
   );
   const timeDelta = useMemo(
     () =>
@@ -518,13 +520,16 @@ function useTimelineRecipeController({
     [setTimeDeltaLabel],
   );
 
-  const [cameraMode, setCameraMode] = useLocalStorage<'locked' | 'dynamic'>(
-    'timeline-camera',
-    DEFAULT_CAMERA_MODE === 'dynamic' ? 'dynamic' : 'locked',
+  const [cameraMode, setCameraMode] = useState<'locked' | 'dynamic'>(() =>
+    config.recipeParams?.cameraMode === 'dynamic' ? 'dynamic' : 'locked',
   );
 
-  const [motionAmount, setMotionAmount] = useState(DEFAULT_MOTION_AMOUNT);
-  const [lightingMode, setLightingMode] = useState(DEFAULT_LIGHTING_MODE);
+  const [motionAmount, setMotionAmount] = useState(() =>
+    getRecipeStringParam(config, 'motionAmount', DEFAULT_MOTION_AMOUNT),
+  );
+  const [lightingMode, setLightingMode] = useState(() =>
+    getRecipeStringParam(config, 'lightingMode', DEFAULT_LIGHTING_MODE),
+  );
 
   const [isOnionSkinEnabled, setIsOnionSkinEnabled] = useState(false);
 
@@ -688,20 +693,6 @@ function useTimelineRecipeController({
       }
     }
   }, [activeImage, scrollToItemRef, timelineItems]);
-
-  const prevIsGenerating = useRef(isGenerating);
-  useEffect(() => {
-    if (prevIsGenerating.current && !isGenerating) {
-      const newestImage = images[0];
-      if (newestImage && hasRecipeIdentity(newestImage.config, 'timeline')) {
-        const matchedItem = timelineItems.find((item) => item.src === newestImage.src);
-        if (matchedItem && activeImage?.dataUrl !== matchedItem.src) {
-          handleItemClick(matchedItem);
-        }
-      }
-    }
-    prevIsGenerating.current = isGenerating;
-  }, [activeImage?.dataUrl, handleItemClick, images, isGenerating, timelineItems]);
 
   useTimelineKeyboard(timelineItems, activeImage, handleItemClick);
 

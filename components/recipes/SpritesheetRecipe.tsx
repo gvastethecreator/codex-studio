@@ -1,3 +1,4 @@
+import { getRecipeStringParam } from '../../lib/recipeIdentity';
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   IconGrid3x3 as Grid3X3,
@@ -177,10 +178,20 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   onGenerate,
   isGenerating = false,
 }) => {
-  const [params, setParams] = useState(DEFAULT_PARAMS);
+  const [params, setParams] = useState(
+    () =>
+      ({
+        ...DEFAULT_PARAMS,
+        ...(config.recipeId === 'spritesheet' ? config.recipeParams : {}),
+      }) as typeof DEFAULT_PARAMS,
+  );
 
-  const [customColor, setCustomColor] = useState('#3f3f46');
-  const [cellPrompts, setCellPrompts] = useState<Record<number, string>>({});
+  const [customColor, setCustomColor] = useState(() =>
+    getRecipeStringParam(config, 'customColor', '#3f3f46'),
+  );
+  const [cellPrompts, setCellPrompts] = useState<Record<number, string>>(
+    () => (config.recipeParams?.cellPrompts as Record<number, string>) ?? {},
+  );
   const [gridInteraction, setGridInteraction] = useState({
     hoveredCell: null as number | null,
     editingCell: null as number | null,
@@ -373,7 +384,11 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                       {i + 1}
                     </span>
                     {cellPrompts[i] && (
-                      <div className="size-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(var(--emerald-500),0.8)]" />
+                      <span
+                        className={`line-clamp-3 text-xs leading-relaxed ${isLightBg ? 'text-black' : 'text-white'}`}
+                      >
+                        {cellPrompts[i]}
+                      </span>
                     )}
                     {hoveredCell === i && !cellPrompts[i] && (
                       <Edit3 size={12} className={isLightBg ? 'text-black/30' : 'text-white/30'} />
@@ -396,19 +411,6 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
             </div>
           </div>
         </div>
-
-        {/* SIDEBAR */}
-        <SpritesheetSidebar
-          isOpen={isSidebarOpen}
-          onClose={() => setIsSidebarOpen(false)}
-          onOpen={() => setIsSidebarOpen(true)}
-          cellCount={gridCols * gridRows}
-          cellPrompts={cellPrompts}
-          hoveredCell={hoveredCell}
-          editingCell={editingCell}
-          onSetEditingCell={setEditingCell}
-          onSetHoveredCell={setHoveredCell}
-        />
       </div>
     </RecipeLayout>
   );

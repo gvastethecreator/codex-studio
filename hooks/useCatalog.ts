@@ -23,6 +23,7 @@ import {
 import { toStudioAssetUrl } from '../services/studio-api/assetUrls';
 
 export interface UseStudioCatalogControllerOptions {
+  query?: string;
   activeWorkspaceId: string;
   isTrashOpen: boolean;
   addToast: (message: string, type: 'success' | 'error' | 'info') => void;
@@ -65,11 +66,13 @@ export function collectWorkspaceCatalogImageIds(entries: CatalogImage[], workspa
 }
 
 export function useStudioCatalogController({
+  query = '',
   activeWorkspaceId,
   isTrashOpen,
   addToast,
 }: UseStudioCatalogControllerOptions): UseStudioCatalogControllerResult {
   const activeCatalog = useCatalogPage({
+    q: query,
     workspaceId: activeWorkspaceId,
     deleted: false,
     pageSize: CATALOG_RENDER_BUDGET.activePageSize,

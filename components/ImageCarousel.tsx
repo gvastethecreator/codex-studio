@@ -33,6 +33,7 @@ import {
   resolveStudioCarouselFallbackSrc,
 } from '../lib/studioCarouselImage';
 import { useLatestRef } from '../hooks/useLatestRef';
+import { useDialogFocus } from '../hooks/useDialogFocus';
 import { formatCarouselPromptPreview, formatCarouselSourceLabel } from '../lib/grokImagineUiPolicy';
 
 interface ImageCarouselProps {
@@ -346,9 +347,10 @@ function CarouselBottomBar({
   return (
     <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-white/2 bg-black/80 px-6 py-3 backdrop-blur-sm">
       <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-        <div className="flex-1 min-w-0 w-full">
-          <p className="text-[12px] font-bold text-zinc-400 truncate tracking-tight leading-relaxed">
-            {formatCarouselPromptPreview(currentImage.config.prompt)}
+        <details className="flex-1 min-w-0 w-full">
+          <summary className="cursor-pointer text-sm text-zinc-300">Image details</summary>
+          <p className="mt-3 whitespace-pre-wrap max-h-40 overflow-auto text-[12px] font-medium text-zinc-300 tracking-tight leading-relaxed">
+            {currentImage.config.prompt}
           </p>
           <div className="flex gap-4 mt-2">
             <span className="text-[9px] font-black text-accent-500/70 uppercase tracking-widest">
@@ -361,13 +363,24 @@ function CarouselBottomBar({
               {currentImage.config.aspectRatio} OUTPUT
             </span>
           </div>
-        </div>
+        </details>
 
         <div className="flex flex-wrap items-center gap-2 w-full md:w-auto justify-start md:justify-end">
           {hasReference && (
             <div className="flex items-center gap-1.5 rounded-xl bg-white/3 p-1">
               <button
                 type="button"
+                aria-label="Compare with original"
+                onKeyDown={(event) => {
+                  if (event.key === ' ' || event.key === 'Enter') {
+                    event.preventDefault();
+                    onCompareStart();
+                  }
+                }}
+                onKeyUp={(event) => {
+                  if (event.key === ' ' || event.key === 'Enter') onCompareEnd();
+                }}
+                onBlur={onCompareEnd}
                 onPointerDown={onCompareStart}
                 onPointerUp={onCompareEnd}
                 onPointerLeave={onCompareEnd}
@@ -403,7 +416,7 @@ function CarouselBottomBar({
             <ActionButton
               onClick={() => onLoadConfig(currentImage.config)}
               icon={<History size={16} />}
-              label="Load Recipe"
+              label="Reuse settings"
             />
           </div>
 
@@ -411,10 +424,10 @@ function CarouselBottomBar({
             <ActionButton
               onClick={() => onAddToContext(currentImage)}
               icon={<PlusCircle size={16} />}
-              label="To Context"
+              label="Use as reference"
             />
             <div className="relative">
-              <ActionButton onClick={onDownload} icon={<Download size={16} />} label="Save Local" />
+              <ActionButton onClick={onDownload} icon={<Download size={16} />} label="Download" />
             </div>
           </div>
 
@@ -422,13 +435,13 @@ function CarouselBottomBar({
             <ActionButton
               onClick={() => onRegenerate(currentImage.config)}
               icon={<RefreshCw size={16} />}
-              label="Re-Synthesize"
+              label="Generate variation"
               variant="primary"
             />
             <ActionButton
               onClick={() => onDelete(currentImage.id)}
               icon={<Trash2 size={16} />}
-              label="Purge"
+              label="Move to trash"
               variant="danger"
             />
           </div>
@@ -568,7 +581,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   }, []);
   const isProcessingDownloadRef = useRef(false);
 
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useDialogFocus(Boolean(activeImage), () => {
+    if (document.fullscreenElement) void document.exitFullscreen();
+    else onClose();
+  });
   const navScrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -697,6 +713,10 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   return (
     <div
       ref={containerRef}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image viewer"
+      tabIndex={-1}
       className="fixed inset-0 z-100 flex flex-col bg-black/90 overflow-hidden pt-12 pb-12"
       style={{ viewTransitionName: 'modal-backdrop' }}
     >
