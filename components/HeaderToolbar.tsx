@@ -1,34 +1,24 @@
 import React from 'react';
 import {
   IconTrash as Trash2,
-  IconArrowLeft as ArrowLeft,
   IconHelpCircle as CircleHelp,
-  IconHome as Home,
   IconActivity as Activity,
   IconBriefcase as Briefcase,
-  IconLayoutSidebarRight as SidebarRight,
   IconMenu2 as Menu2,
   IconMessage as MessageSquare,
   IconSettings as Settings,
-  IconServer as Server,
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
 } from '@tabler/icons-react';
 import Tooltip from './Tooltip';
-import { cn } from '../lib/utils';
 import Logo from './Logo';
 import { TopToolbar } from './ui/TopToolbar';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
 import { resolveRecipeAlias, type RecipeAliasId } from '../lib/recipeAliases';
 import type { StudioUsageSummary } from '../lib/studioDiagnostics';
 import type { Workspace, RecipeId } from '../types';
-import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import { getRecipeShellTitle } from '../lib/recipeShellMetadata';
 import type { GenerationProviderId } from '../packages/shared/src';
-import { providerBrandChipLabel } from '../lib/providerBrand';
-import { ProviderBrandMark } from './ProviderBrandMark';
 
 export interface HeaderToolbarProps {
   isGenerating: boolean;
@@ -72,29 +62,18 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   onViewChange,
   activeRecipe,
   activeRecipeAliasId = null,
-  onCloseRecipe,
   onOpenOnboarding,
-  onOpenChat,
-  onOpenDashboard,
   onOpenTrash,
   trashCount,
   onToggleDebug,
-  usage,
-  commandCenter,
-  isQueueOpen,
-  onToggleQueue,
   onOpenSettings,
-  onSelectProvider,
-  isProviderSaving,
 }) => {
-  const [isMobileWorkspaceOpen, setIsMobileWorkspaceOpen] = React.useState(false);
+  const [isWorkspaceOpen, setIsWorkspaceOpen] = React.useState(false);
   const [isMobileCommandOpen, setIsMobileCommandOpen] = React.useState(false);
-  const [isProviderMenuOpen, setIsProviderMenuOpen] = React.useState(false);
-  const mobileWorkspaceRef = React.useRef<HTMLDivElement>(null);
-  const mobileWorkspaceButtonRef = React.useRef<HTMLButtonElement>(null);
+  const workspaceRef = React.useRef<HTMLDivElement>(null);
+  const workspaceButtonRef = React.useRef<HTMLButtonElement>(null);
   const mobileCommandRef = React.useRef<HTMLDivElement>(null);
   const mobileCommandButtonRef = React.useRef<HTMLButtonElement>(null);
-  const providerButtonRef = React.useRef<HTMLButtonElement>(null);
   const activeRecipeAlias = resolveRecipeAlias(activeRecipeAliasId);
   const activeRecipeData = activeRecipe
     ? { name: activeRecipeAlias?.title ?? getRecipeShellTitle(activeRecipe) }
@@ -102,31 +81,17 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const isRecipeView = routeView === 'recipe' && Boolean(activeRecipeData);
   const activeWorkspace = workspaces.find((w) => w.id === activeWorkspaceId);
   const workspaceLabel = activeWorkspace?.name || 'Studio';
-  const runtimeStatus = commandCenter.runtimeStatus;
-  const activeProvider = commandCenter.provider;
-  const providerOptions = commandCenter.providerOptions;
-  const queueCount = commandCenter.queue.activeCount;
-  const reviewCount = commandCenter.queue.reviewCount;
-  const queueLabel = `${queueCount} active, ${reviewCount} need review`;
-  const providerToolbarLabel = activeProvider.toolbarLabel;
-  const providerShortLabel = activeProvider.shortLabel;
-  const runtimeToneClass =
-    runtimeStatus.tone === 'success'
-      ? 'border-emerald-500/2 bg-emerald-500/8 text-emerald-200'
-      : runtimeStatus.tone === 'warning'
-        ? 'border-amber-500/2 bg-amber-500/8 text-amber-200'
-        : 'border-rose-500/2 bg-rose-500/8 text-rose-200';
 
   React.useEffect(() => {
-    if (!isMobileWorkspaceOpen && !isMobileCommandOpen) return;
+    if (!isWorkspaceOpen && !isMobileCommandOpen) return;
 
     const handleOutsideClick = (event: MouseEvent) => {
       if (
-        mobileWorkspaceRef.current &&
-        !mobileWorkspaceRef.current.contains(event.target as Node) &&
-        isMobileWorkspaceOpen
+        workspaceRef.current &&
+        !workspaceRef.current.contains(event.target as Node) &&
+        isWorkspaceOpen
       ) {
-        setIsMobileWorkspaceOpen(false);
+        setIsWorkspaceOpen(false);
       }
       if (
         mobileCommandRef.current &&
@@ -139,75 +104,18 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
 
     document.addEventListener('mousedown', handleOutsideClick);
     return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, [isMobileCommandOpen, isMobileWorkspaceOpen]);
+  }, [isMobileCommandOpen, isWorkspaceOpen]);
 
   const runMobileCommand = React.useCallback((action: () => void) => {
     setIsMobileCommandOpen(false);
     action();
   }, []);
 
-  const selectProvider = React.useCallback(
-    (providerId: GenerationProviderId) => {
-      if (providerId === activeProvider.id || isProviderSaving) return;
-      setIsProviderMenuOpen(false);
-      void onSelectProvider(providerId);
-    },
-    [activeProvider.id, isProviderSaving, onSelectProvider],
-  );
-
   return (
     <TopToolbar className="studio-toolbar-shell w-full min-h-10 bg-black/80 flex items-center px-2 py-1 z-40 shrink-0 border-b border-white/2">
       <div className="w-full flex flex-nowrap items-center justify-between gap-1 sm:gap-2 relative z-50">
         <div className="flex min-w-0 flex-1 flex-nowrap items-center gap-1 sm:gap-1.5 lg:gap-2">
-          <div className="flex shrink-0 items-center gap-1.5">
-            <Logo isGenerating={isGenerating} />
-            <div ref={mobileWorkspaceRef} className="relative">
-              <Tooltip content="Workspaces" position="bottom">
-                <button
-                  ref={mobileWorkspaceButtonRef}
-                  type="button"
-                  onClick={() => setIsMobileWorkspaceOpen((isOpen) => !isOpen)}
-                  aria-label={`Open workspace switcher: ${workspaceLabel}`}
-                  aria-haspopup="menu"
-                  aria-expanded={isMobileWorkspaceOpen}
-                  aria-controls="mobile-workspace-menu"
-                  className={`studio-command-surface studio-hit-target flex cursor-pointer items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white h-8 w-auto gap-1.5 px-2`}
-                >
-                  <Briefcase size={15} />
-                  <span className="hidden max-w-28 truncate text-[10px] font-black uppercase tracking-[0.14em] lg:inline">
-                    {workspaceLabel}
-                  </span>
-                </button>
-              </Tooltip>
-              <DemandMountedGsapDropdown
-                id="mobile-workspace-menu"
-                open={isMobileWorkspaceOpen}
-                onOpenChange={setIsMobileWorkspaceOpen}
-                triggerRef={mobileWorkspaceButtonRef}
-                placement="bottom-left"
-                role="menu"
-                aria-label="Mobile workspace switcher"
-                className="absolute left-0 top-full z-50 mt-1.5 p-1.5"
-              >
-                <WorkspaceStrip
-                  layout="compact"
-                  workspaces={workspaces}
-                  activeWorkspaceId={activeWorkspaceId}
-                  onSwitchWorkspace={(id) => {
-                    onSwitchWorkspace(id);
-                    setIsMobileWorkspaceOpen(false);
-                  }}
-                  onAddWorkspace={() => {
-                    onAddWorkspace();
-                    setIsMobileWorkspaceOpen(false);
-                  }}
-                  onDeleteWorkspace={onDeleteWorkspace}
-                  onRenameWorkspace={onRenameWorkspace}
-                />
-              </DemandMountedGsapDropdown>
-            </div>
-          </div>
-
+          <Logo isGenerating={isGenerating} />
           <nav className="flex min-w-0 items-center gap-1" aria-label="Studio navigation">
             <button
               type="button"
@@ -236,354 +144,179 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
         </div>
 
         <div className="ml-auto flex shrink-0 items-center gap-1">
-          <div className="hidden sm:block">
-            <UsageStatusCard usage={usage} onOpenDashboard={onOpenDashboard} />
-          </div>
-
-          <div className="flex shrink-0 items-center gap-1">
-            <Tooltip content={runtimeStatus.tooltip} position="bottom">
+          <div ref={workspaceRef} className="relative">
+            <Tooltip content="Workspaces" position="bottom">
               <button
+                ref={workspaceButtonRef}
                 type="button"
-                onClick={onOpenOnboarding}
-                aria-label={`Open runtime status: ${runtimeStatus.label}`}
-                className={`studio-command-surface studio-hit-target hidden size-8 items-center justify-center gap-1.5 rounded-lg border transition-[color,background-color,border-color,opacity,transform] hover:border-white/2 hover:bg-white/8 sm:flex xl:w-auto xl:px-2 ${runtimeToneClass}`}
+                onClick={() => setIsWorkspaceOpen((isOpen) => !isOpen)}
+                aria-label={`Open workspace switcher: ${workspaceLabel}`}
+                aria-haspopup="menu"
+                aria-expanded={isWorkspaceOpen}
+                aria-controls="studio-workspace-menu"
+                className="studio-command-surface studio-hit-target flex h-8 w-auto cursor-pointer items-center justify-center gap-1.5 rounded-lg border border-white/2 bg-white/5 px-2 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white"
               >
-                <Server size={14} />
-                <span className="hidden text-[10px] font-black uppercase tracking-[0.16em] xl:inline">
-                  {runtimeStatus.label}
+                <Briefcase size={15} />
+                <span className="hidden max-w-28 truncate text-[10px] font-black uppercase tracking-[0.14em] lg:inline">
+                  {workspaceLabel}
                 </span>
               </button>
             </Tooltip>
-            <div className="relative hidden sm:block">
-              <Tooltip
-                content="Change image generation provider"
-                position="bottom"
-                hidden={isProviderMenuOpen}
+            <DemandMountedGsapDropdown
+              id="studio-workspace-menu"
+              open={isWorkspaceOpen}
+              onOpenChange={setIsWorkspaceOpen}
+              triggerRef={workspaceButtonRef}
+              placement="bottom-right"
+              role="menu"
+              aria-label="Workspace switcher"
+              className="absolute right-0 top-full z-50 mt-1.5 p-1.5"
+            >
+              <WorkspaceStrip
+                layout="compact"
+                workspaces={workspaces}
+                activeWorkspaceId={activeWorkspaceId}
+                onSwitchWorkspace={(id) => {
+                  onSwitchWorkspace(id);
+                  setIsWorkspaceOpen(false);
+                }}
+                onAddWorkspace={() => {
+                  onAddWorkspace();
+                  setIsWorkspaceOpen(false);
+                }}
+                onDeleteWorkspace={onDeleteWorkspace}
+                onRenameWorkspace={onRenameWorkspace}
+              />
+            </DemandMountedGsapDropdown>
+          </div>
+          <details className="relative hidden sm:block">
+            <summary className="cursor-pointer rounded-lg px-3 py-2 text-sm text-zinc-300">
+              Tools
+            </summary>
+            <div className="absolute right-0 top-11 z-50 grid w-48 gap-2 rounded-xl border border-white/10 bg-zinc-900 p-3 shadow-xl">
+              <button
+                type="button"
+                className="rounded p-2 text-left hover:bg-white/10"
+                onClick={onOpenOnboarding}
+                aria-label="Open help and setup"
               >
-                <button
-                  ref={providerButtonRef}
-                  type="button"
-                  onClick={() => setIsProviderMenuOpen((isOpen) => !isOpen)}
-                  aria-label={`Image generation provider: ${activeProvider.id === 'codex' ? 'Codex' : activeProvider.label}. Change provider`}
-                  aria-haspopup="dialog"
-                  aria-expanded={isProviderMenuOpen}
-                  aria-controls="provider-quick-switch"
-                  className={`studio-command-surface studio-hit-target flex h-8 w-8 items-center justify-center gap-1 rounded-lg border border-white/2 bg-white/5 px-1 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white lg:w-auto lg:justify-start lg:gap-1.5 lg:px-2 ${commandCenter.compactMode ? 'lg:max-w-20' : 'lg:max-w-32'}`}
-                >
-                  <ProviderBrandMark providerId={activeProvider.id} size="xs" />
-                  <span className="hidden truncate text-[10px] font-black uppercase tracking-[0.16em] lg:inline">
-                    {providerToolbarLabel}
-                  </span>
-                  <ChevronDown
-                    size={12}
-                    aria-hidden="true"
-                    className={`hidden shrink-0 transition-transform lg:block ${isProviderMenuOpen ? 'rotate-180' : ''}`}
-                  />
-                </button>
-              </Tooltip>
-              <DemandMountedGsapDropdown
-                id="provider-quick-switch"
-                open={isProviderMenuOpen}
-                onOpenChange={setIsProviderMenuOpen}
-                triggerRef={providerButtonRef}
-                placement="bottom-right"
-                portal
-                role="dialog"
-                aria-label="Image generation provider"
-                className="w-72 p-2"
+                Help &amp; setup
+              </button>
+              <button
+                type="button"
+                className="rounded p-2 text-left hover:bg-white/10"
+                onClick={onToggleDebug}
+                aria-label="Open studio activity"
               >
-                <div className="px-2 pb-2 pt-1">
-                  <div className="text-[9px] font-black uppercase tracking-[0.18em] text-zinc-500">
-                    Image provider
-                  </div>
-                  <div className="mt-1 text-[11px] font-semibold text-zinc-300">
-                    Applies to the next generation.
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  {providerOptions.map((provider) => {
-                    const isSelected = provider.id === activeProvider.id;
-                    const isUnavailable = !provider.canExecute;
-                    return (
-                      <button
-                        key={provider.id}
-                        type="button"
-                        data-dropdown-item
-                        aria-pressed={isSelected}
-                        disabled={isProviderSaving || isUnavailable}
-                        title={provider.tooltip}
-                        onClick={() => selectProvider(provider.id)}
-                        className={`flex min-h-12 w-full items-center gap-3 rounded-xl border px-3 py-2 text-left transition-[color,background-color,border-color,opacity,transform] ${
-                          isSelected
-                            ? 'border-accent-400/2 bg-accent-500/12 text-white'
-                            : 'border-transparent bg-white/[0.03] text-zinc-300 hover:border-white/2 hover:bg-white/[0.07]'
-                        } disabled:cursor-not-allowed disabled:opacity-55`}
-                      >
-                        <ProviderBrandMark
-                          providerId={provider.id}
-                          size="sm"
-                          canExecute={provider.canExecute}
-                          status={provider.status}
-                        />
-                        <span className="min-w-0 flex-1">
-                          <span className="block truncate text-[10px] font-black uppercase tracking-[0.14em]">
-                            {provider.label}
-                          </span>
-                          <span className="mt-0.5 block text-[9px] font-bold text-zinc-500">
-                            {provider.statusDetail}
-                          </span>
-                        </span>
-                        {isSelected ? <Check size={15} aria-hidden="true" /> : null}
-                      </button>
-                    );
-                  })}
-                </div>
-                <button
-                  type="button"
-                  data-dropdown-item
-                  onClick={() => {
-                    setIsProviderMenuOpen(false);
-                    onOpenSettings();
-                  }}
-                  className="mt-2 w-full rounded-lg border-t border-white/2 px-3 py-2 text-left text-[9px] font-black uppercase tracking-[0.14em] text-zinc-500 transition-colors hover:text-zinc-200"
-                >
-                  Provider settings and diagnostics
-                </button>
-              </DemandMountedGsapDropdown>
+                Activity
+              </button>
+              <button
+                type="button"
+                className="rounded p-2 text-left hover:bg-white/10"
+                onClick={onOpenTrash}
+                aria-label="Open archived images"
+              >
+                Trash
+              </button>
             </div>
-            <details className="relative hidden sm:block">
-              <summary className="cursor-pointer rounded-lg px-3 py-2 text-sm text-zinc-300">
-                Tools
-              </summary>
-              <div className="absolute right-0 top-11 z-50 grid w-48 gap-2 rounded-xl border border-white/10 bg-zinc-900 p-3 shadow-xl">
+          </details>
+          <Tooltip content="Studio settings" position="bottom">
+            <button
+              type="button"
+              onClick={onOpenSettings}
+              aria-label="Open Studio Settings"
+              className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
+            >
+              <Settings size={15} />
+            </button>
+          </Tooltip>
+          <div ref={mobileCommandRef} className="relative sm:hidden">
+            <Tooltip content="Commands" position="bottom">
+              <button
+                ref={mobileCommandButtonRef}
+                type="button"
+                onClick={() => setIsMobileCommandOpen((isOpen) => !isOpen)}
+                aria-label="Open mobile commands"
+                aria-expanded={isMobileCommandOpen}
+                aria-haspopup="menu"
+                aria-controls="mobile-command-menu"
+                className="studio-command-surface studio-hit-target flex size-10 touch-manipulation items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:bg-white/10 hover:text-white"
+              >
+                <Menu2 size={15} />
+              </button>
+            </Tooltip>
+            <DemandMountedGsapDropdown
+              id="mobile-command-menu"
+              open={isMobileCommandOpen}
+              onOpenChange={setIsMobileCommandOpen}
+              triggerRef={mobileCommandButtonRef}
+              placement="bottom-right"
+              className="fixed left-2 right-2 top-12 z-[60] p-2"
+            >
+              <div className="mb-2 grid grid-cols-2 gap-2">
                 <button
                   type="button"
-                  className="rounded p-2 text-left hover:bg-white/10"
-                  onClick={onOpenOnboarding}
-                  aria-label="Open help and setup"
+                  aria-label="Open Studio Settings"
+                  data-dropdown-item
+                  onClick={() => runMobileCommand(onOpenSettings)}
+                  className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
                 >
-                  Help &amp; setup
+                  <Settings size={15} />
+                  Settings
                 </button>
                 <button
                   type="button"
-                  className="rounded p-2 text-left hover:bg-white/10"
-                  onClick={onToggleDebug}
-                  aria-label="Open studio activity"
+                  aria-label="Focus generation prompt"
+                  data-dropdown-item
+                  onClick={() =>
+                    runMobileCommand(() =>
+                      document
+                        .querySelector<HTMLTextAreaElement>('[aria-label="Prompt input"]')
+                        ?.focus(),
+                    )
+                  }
+                  className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
                 >
+                  <MessageSquare size={15} />
+                  Compose
+                </button>
+                <button
+                  type="button"
+                  aria-label="Open studio activity"
+                  data-dropdown-item
+                  onClick={() => runMobileCommand(onToggleDebug)}
+                  className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                >
+                  <Activity size={15} />
                   Activity
                 </button>
                 <button
                   type="button"
-                  className="rounded p-2 text-left hover:bg-white/10"
-                  onClick={onOpenTrash}
                   aria-label="Open archived images"
+                  data-dropdown-item
+                  onClick={() => runMobileCommand(onOpenTrash)}
+                  className="relative flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
                 >
-                  Trash
+                  <Trash2 size={15} />
+                  Archive
+                  {trashCount > 0 && (
+                    <span className="ml-auto rounded-full bg-red-500/20 px-1.5 py-0.5 text-[9px] text-red-200">
+                      {trashCount}
+                    </span>
+                  )}
+                </button>
+                <button
+                  type="button"
+                  aria-label="Open help and setup"
+                  data-dropdown-item
+                  onClick={() => runMobileCommand(onOpenOnboarding)}
+                  className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                >
+                  <CircleHelp size={15} />
+                  Help
                 </button>
               </div>
-            </details>
-            <Tooltip content="Studio settings" position="bottom">
-              <button
-                type="button"
-                onClick={onOpenSettings}
-                aria-label="Open Studio Settings"
-                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white sm:flex"
-              >
-                <Settings size={15} />
-              </button>
-            </Tooltip>
-            <Tooltip content={`Jobs · ${queueLabel}`} position="bottom">
-              <button
-                type="button"
-                onClick={onToggleQueue}
-                aria-label={`${isQueueOpen ? 'Close' : 'Open'} jobs (${queueLabel})`}
-                aria-pressed={isQueueOpen}
-                className={cn(
-                  'studio-command-surface studio-hit-target flex h-8 items-center justify-center gap-1.5 rounded-lg border px-2 text-xs transition-colors',
-                  isQueueOpen
-                    ? 'border-accent-500/20 bg-accent-500/12 text-white'
-                    : 'border-white/10 bg-white/5 text-zinc-300 hover:bg-white/10',
-                )}
-              >
-                <SidebarRight size={15} />
-                <span>Jobs</span>
-                {queueCount > 0 ? (
-                  <span className="tabular-nums text-accent-200">{queueCount} active</span>
-                ) : null}
-                {reviewCount > 0 ? (
-                  <span className="border-l border-white/15 pl-1.5 text-amber-300">
-                    {reviewCount} review
-                  </span>
-                ) : null}
-              </button>
-            </Tooltip>
-            <div ref={mobileCommandRef} className="relative sm:hidden">
-              <Tooltip content="Commands" position="bottom">
-                <button
-                  ref={mobileCommandButtonRef}
-                  type="button"
-                  onClick={() => setIsMobileCommandOpen((isOpen) => !isOpen)}
-                  aria-label="Open mobile commands"
-                  aria-expanded={isMobileCommandOpen}
-                  aria-haspopup="menu"
-                  aria-controls="mobile-command-menu"
-                  className="studio-command-surface studio-hit-target flex size-10 touch-manipulation items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:bg-white/10 hover:text-white"
-                >
-                  <Menu2 size={15} />
-                </button>
-              </Tooltip>
-              <DemandMountedGsapDropdown
-                id="mobile-command-menu"
-                open={isMobileCommandOpen}
-                onOpenChange={setIsMobileCommandOpen}
-                triggerRef={mobileCommandButtonRef}
-                placement="bottom-right"
-                className="fixed left-2 right-2 top-12 z-[60] p-2"
-              >
-                {isRecipeView && (
-                  <div className="mb-2 border-b border-white/2 pb-2">
-                    <div className="mb-1 px-1 text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                      Workspace
-                    </div>
-                    <WorkspaceStrip
-                      layout="compact"
-                      workspaces={workspaces}
-                      activeWorkspaceId={activeWorkspaceId}
-                      onSwitchWorkspace={(id) => runMobileCommand(() => onSwitchWorkspace(id))}
-                      onAddWorkspace={() => runMobileCommand(onAddWorkspace)}
-                      onDeleteWorkspace={onDeleteWorkspace}
-                      onRenameWorkspace={onRenameWorkspace}
-                    />
-                  </div>
-                )}
-                <div className="mb-2 grid grid-cols-2 gap-2 rounded-xl border border-white/2 bg-white/[0.03] p-2">
-                  <button
-                    type="button"
-                    aria-label={`Open runtime status: ${runtimeStatus.label}`}
-                    data-dropdown-item
-                    onClick={() => runMobileCommand(onOpenDashboard)}
-                    className={`flex min-h-11 items-center gap-2 rounded-xl border px-3 text-left text-[10px] font-black uppercase tracking-widest ${runtimeToneClass}`}
-                  >
-                    <Server size={15} />
-                    <span className="truncate">{runtimeStatus.label}</span>
-                  </button>
-                  <button
-                    type="button"
-                    aria-label="Open Studio Settings"
-                    data-dropdown-item
-                    onClick={() => runMobileCommand(onOpenSettings)}
-                    className="flex min-h-11 items-center gap-2 rounded-xl border border-white/2 bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                  >
-                    <Settings size={15} />
-                    <span className="truncate">Settings</span>
-                  </button>
-                </div>
-                <div className="mb-2 rounded-xl border border-white/2 bg-white/[0.03] p-2">
-                  <div className="mb-2 flex items-center justify-between gap-3 px-1">
-                    <span className="text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                      Image provider
-                    </span>
-                    <span className="flex min-w-0 items-center gap-1.5">
-                      <ProviderBrandMark providerId={activeProvider.id} size="xs" />
-                      <span className="truncate text-[9px] font-bold text-zinc-300">
-                        {providerShortLabel}
-                      </span>
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-2 gap-2">
-                    {providerOptions.map((provider) => {
-                      const isSelected = provider.id === activeProvider.id;
-                      return (
-                        <button
-                          key={provider.id}
-                          type="button"
-                          data-dropdown-item
-                          aria-pressed={isSelected}
-                          disabled={isProviderSaving || !provider.canExecute}
-                          title={provider.tooltip}
-                          onClick={() =>
-                            runMobileCommand(() => {
-                              selectProvider(provider.id);
-                            })
-                          }
-                          className={`flex min-h-12 items-center gap-2 rounded-xl border px-2.5 text-left transition-[color,background-color,border-color,opacity] ${
-                            isSelected
-                              ? 'border-accent-400/2 bg-accent-500/12 text-white'
-                              : 'border-white/2 bg-white/5 text-zinc-300'
-                          } disabled:cursor-not-allowed disabled:opacity-55`}
-                        >
-                          <ProviderBrandMark
-                            providerId={provider.id}
-                            size="sm"
-                            canExecute={provider.canExecute}
-                            status={provider.status}
-                          />
-                          <span className="min-w-0 flex-1 truncate text-[10px] font-black uppercase tracking-wider">
-                            {providerBrandChipLabel(provider.id)}
-                          </span>
-                          {isSelected ? (
-                            <Check size={15} aria-hidden="true" className="shrink-0" />
-                          ) : null}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-2">
-                  <button
-                    type="button"
-                    aria-label="Focus generation prompt"
-                    data-dropdown-item
-                    onClick={() =>
-                      runMobileCommand(() =>
-                        document
-                          .querySelector<HTMLTextAreaElement>('[aria-label="Prompt input"]')
-                          ?.focus(),
-                      )
-                    }
-                    className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                  >
-                    <MessageSquare size={15} />
-                    Compose
-                  </button>
-                  <button
-                    type="button"
-                    aria-label="Open studio activity"
-                    data-dropdown-item
-                    onClick={() => runMobileCommand(onToggleDebug)}
-                    className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                  >
-                    <Activity size={15} />
-                    Activity
-                  </button>
-                  <button
-                    type="button"
-                    aria-label="Open archived images"
-                    data-dropdown-item
-                    onClick={() => runMobileCommand(onOpenTrash)}
-                    className="relative flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                  >
-                    <Trash2 size={15} />
-                    Archive
-                    {trashCount > 0 && (
-                      <span className="ml-auto rounded-full bg-red-500/20 px-1.5 py-0.5 text-[9px] text-red-200">
-                        {trashCount}
-                      </span>
-                    )}
-                  </button>
-                  <button
-                    type="button"
-                    aria-label="Open help and setup"
-                    data-dropdown-item
-                    onClick={() => runMobileCommand(onOpenOnboarding)}
-                    className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                  >
-                    <CircleHelp size={15} />
-                    Help
-                  </button>
-                </div>
-              </DemandMountedGsapDropdown>
-            </div>
+            </DemandMountedGsapDropdown>
           </div>
         </div>
       </div>

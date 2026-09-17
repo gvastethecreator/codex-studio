@@ -18,7 +18,7 @@ describe('StudioViewport routing', () => {
     expect(resolveStudioViewportRouteKey('recipe', null)).toBe('recipes-list');
   });
 
-  it('shows RecipesView for recipes and default routes', () => {
+  it('keeps RecipesView as the StudioViewport fallback for recipes and default routes', () => {
     expect(isRecipesViewVisible('recipes')).toBe(true);
     expect(isRecipesViewVisible('studio')).toBe(false);
     expect(isRecipesViewVisible('recipe')).toBe(false);

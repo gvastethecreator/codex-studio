@@ -45,6 +45,10 @@ interface GenerationToolbarSyncContext {
 
 interface GenerationToolbarProviderContext {
   activeProviderId: GenerationProviderId;
+  commandCenter?: ToolbarProps['commandCenter'];
+  onSelectProvider?: ToolbarProps['onSelectProvider'];
+  isProviderSaving?: boolean;
+  onOpenSettings?: ToolbarProps['onOpenSettings'];
   codexTransport?: ToolbarProps['codexTransport'];
   codexAvailableTransports?: ToolbarProps['codexAvailableTransports'];
   grokCanExecute?: boolean;
@@ -101,6 +105,10 @@ export function buildGenerationToolbarProps({
     },
     maxAttachments: config.maxAttachments,
     activeProviderId: provider.activeProviderId,
+    commandCenter: provider.commandCenter,
+    onSelectProvider: provider.onSelectProvider,
+    isProviderSaving: provider.isProviderSaving,
+    onOpenSettings: provider.onOpenSettings,
     codexTransport: provider.codexTransport,
     codexAvailableTransports: provider.codexAvailableTransports,
     grokCanExecute: provider.grokCanExecute ?? false,

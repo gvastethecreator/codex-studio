@@ -31,6 +31,40 @@ export const IMAGE_GEN_RATIO_OPTIONS: {
   { ratio: '9:16', label: 'Vertical', size: '864x1536', width: 864, height: 1536 },
 ];
 
+export type RatioOrientation = 'landscape' | 'square' | 'portrait';
+
+export const RATIO_ORIENTATION_LABELS: Record<RatioOrientation, string> = {
+  landscape: 'Landscape',
+  square: 'Square',
+  portrait: 'Portrait',
+};
+
+export function getRatioOrientation(ratio: string): RatioOrientation {
+  const [width = 1, height = 1] = ratio.split(':').map(Number);
+  if (width === height) return 'square';
+  return width > height ? 'landscape' : 'portrait';
+}
+
+export function groupImageGenRatiosByOrientation<
+  T extends { ratio: string; width: number; height: number },
+>(options: readonly T[]) {
+  const groups: Record<RatioOrientation, T[]> = {
+    landscape: [],
+    square: [],
+    portrait: [],
+  };
+  for (const option of options) {
+    groups[getRatioOrientation(option.ratio)].push(option);
+  }
+  return (['landscape', 'square', 'portrait'] as const)
+    .filter((orientation) => groups[orientation].length > 0)
+    .map((orientation) => ({
+      orientation,
+      label: RATIO_ORIENTATION_LABELS[orientation],
+      options: groups[orientation],
+    }));
+}
+
 export function getImageGenSizeForRatio(ratio: AspectRatio | null | undefined) {
   return (
     IMAGE_GEN_RATIO_OPTIONS.find((option) => option.ratio === ratio) || IMAGE_GEN_RATIO_OPTIONS[0]

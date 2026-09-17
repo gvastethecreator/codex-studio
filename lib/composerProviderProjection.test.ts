@@ -37,6 +37,7 @@ describe('composerProviderProjection', () => {
     expect(projection.kind).toBe('codex');
     expect(projection.showCodexModelChrome).toBe(true);
     expect(projection.showCodexPromptTools).toBe(true);
+    expect(projection.maxOutputCount).toBe(10);
     expect(projection.generateBlock).toBeNull();
   });
 
@@ -57,6 +58,7 @@ describe('composerProviderProjection', () => {
     expect(projection.kind).toBe('grok');
     expect(projection.showCodexModelChrome).toBe(false);
     expect(projection.showCodexPromptTools).toBe(false);
+    expect(projection.maxOutputCount).toBe(1);
     expect(projection.generateBlock).toMatchObject({ code: 'unsupported_grok_recipe' });
   });
   it('projects both Codex routes without overwriting the app-server settings', () => {
@@ -120,5 +122,36 @@ describe('composerProviderProjection', () => {
       buildComposerProviderProjection({ ...input, codexAvailableTransports: ['codex_app_server'] })
         .generateBlock?.code,
     ).toBe('codex_transport_unavailable');
+  });
+
+  it('caps fal output count at 4 and google at 1', () => {
+    expect(
+      buildComposerProviderProjection({
+        providerId: 'fal',
+        recipeId: null,
+        aspectRatio: '1:1',
+        attachments: emptyAttachments,
+        grokCanExecute: false,
+        codexModelCatalog: null,
+        executionModel: 'gpt-5.4-mini',
+        executionReasoningEffort: 'low',
+        executionSpeed: 'standard',
+        catalogError: null,
+      }).maxOutputCount,
+    ).toBe(4);
+    expect(
+      buildComposerProviderProjection({
+        providerId: 'google',
+        recipeId: null,
+        aspectRatio: '1:1',
+        attachments: emptyAttachments,
+        grokCanExecute: false,
+        codexModelCatalog: null,
+        executionModel: 'gpt-5.4-mini',
+        executionReasoningEffort: 'low',
+        executionSpeed: 'standard',
+        catalogError: null,
+      }).maxOutputCount,
+    ).toBe(1);
   });
 });

@@ -13,20 +13,24 @@ import { BottomToolbar } from '../ui/BottomToolbar';
 
 export type GenerationToolbarRuntimeArgs = Omit<BuildGenerationToolbarPropsArgs, 'config'>;
 
-interface StudioGenerationDockProps {
+export type GenerationToolbarLayout = 'dock' | 'rail';
+
+export interface StudioGenerationDockProps {
   isModalOpen: boolean;
   isUiChromeSuppressed: boolean;
   currentView: AppPageView;
   activeRecipe: RecipeId | null;
   isDragging: boolean;
   toolbarArgs: GenerationToolbarRuntimeArgs;
+  layout?: GenerationToolbarLayout;
 }
 
 function ConnectedGenerationToolbar({
   activeRecipe,
   currentView,
   toolbarArgs,
-}: Pick<StudioGenerationDockProps, 'activeRecipe' | 'currentView' | 'toolbarArgs'>) {
+  layout = 'dock',
+}: Pick<StudioGenerationDockProps, 'activeRecipe' | 'currentView' | 'toolbarArgs' | 'layout'>) {
   const draft = useGenerationDraft();
   const toolbarProps = useGenerationToolbarConfig({
     ...toolbarArgs,
@@ -47,6 +51,7 @@ function ConnectedGenerationToolbar({
   return (
     <Toolbar
       {...toolbarProps}
+      layout={layout}
       activeRecipe={activeRecipe}
       mode={
         ['animation-sequence', 'sprite-atlas', 'character-lab'].includes(activeRecipe ?? '')
@@ -65,6 +70,7 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   activeRecipe,
   isDragging,
   toolbarArgs,
+  layout = 'dock',
 }) => {
   const isVisible =
     !isModalOpen && !isUiChromeSuppressed && (currentView === 'recipes' || !!activeRecipe);
@@ -73,14 +79,28 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
     return null;
   }
 
+  const toolbar = (
+    <ConnectedGenerationToolbar
+      activeRecipe={activeRecipe}
+      currentView={currentView}
+      toolbarArgs={toolbarArgs}
+      layout={layout}
+    />
+  );
+
+  if (layout === 'rail') {
+    return (
+      <div className="create-tool-dock relative z-30 flex min-h-0 flex-1 flex-col">
+        <DropZoneOverlay isVisible={isDragging} />
+        {toolbar}
+      </div>
+    );
+  }
+
   return (
     <BottomToolbar className="w-full relative z-30 shrink-0">
       <DropZoneOverlay isVisible={isDragging} />
-      <ConnectedGenerationToolbar
-        activeRecipe={activeRecipe}
-        currentView={currentView}
-        toolbarArgs={toolbarArgs}
-      />
+      {toolbar}
     </BottomToolbar>
   );
 };

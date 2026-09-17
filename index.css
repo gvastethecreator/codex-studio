@@ -482,7 +482,7 @@ react-scan-overlay,
       --studio-mobile-dock-height: calc(112px + var(--studio-mobile-safe-bottom));
       --studio-recipe-dock-space: 12rem;
       --studio-chrome-block: calc(
-        var(--studio-mobile-header-height) + var(--studio-mobile-dock-height) + 5rem
+        var(--studio-mobile-header-height) + var(--studio-mobile-dock-height) + 5rem + 32px
       );
     }
 
@@ -724,6 +724,60 @@ react-scan-overlay,
   background: #111214;
   font-size: 14px;
 }
+.studio-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  flex-shrink: 0;
+  padding: 0 10px;
+  border-top: 1px solid #ffffff12;
+  background: #111214;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.studio-status-bar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.studio-status-providers {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.studio-status-provider {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: #b5b5b5;
+  font-size: 10px;
+}
+.studio-status-provider.is-active {
+  border-color: #ffffff18;
+  background: #ffffff08;
+  color: #f3f3f3;
+}
+.studio-status-provider-label {
+  display: none;
+}
+@media (min-width: 640px) {
+  .studio-status-provider-label {
+    display: inline;
+  }
+}
+.studio-status-spacer {
+  flex: 1;
+  min-width: 8px;
+}
 .studio-experience :focus-visible {
   outline: 2px solid rgb(var(--accent-400));
   outline-offset: 3px;
@@ -763,31 +817,31 @@ react-scan-overlay,
 .recipe-layout-content {
   min-height: 0;
 }
-:is(.workbench-config, .create-studio) [data-toolbar-mode] > .relative {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-toolbar-mode] > .relative {
   flex-direction: column;
   align-items: stretch;
   padding: 0;
   gap: 12px;
 }
-:is(.workbench-config, .create-studio) [data-toolbar-mode] > .absolute {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-toolbar-mode] > .absolute {
   display: none;
 }
-:is(.workbench-config, .create-studio) [data-toolbar-mode] > .relative > * {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-toolbar-mode] > .relative > * {
   width: 100%;
 }
-:is(.workbench-config, .create-studio) [data-toolbar-mode] textarea {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-toolbar-mode] textarea {
   min-height: 112px;
   font-size: 14px;
   line-height: 1.6;
 }
-:is(.workbench-config, .create-studio) [data-toolbar-mode] .sm\:flex-row {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-toolbar-mode] .sm\:flex-row {
   flex-wrap: wrap;
 }
-:is(.workbench-config, .create-studio) [data-toolbar-mode] button {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-toolbar-mode] button {
   min-height: 32px;
 }
-:is(.workbench-config, .create-studio) [data-toolbar-mode] [role='menu'],
-:is(.workbench-config, .create-studio) [data-toolbar-mode] .absolute.z-\[100\] {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-toolbar-mode] [role='menu'],
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-toolbar-mode] .absolute.z-\[100\] {
   max-width: 320px;
 }
 .styles-workbench [data-style-reference-panel],
@@ -916,7 +970,20 @@ react-scan-overlay,
   [data-workbench='recipe'][data-workbench-tab='configure'] > .workbench-canvas {
     display: none;
   }
-  .workbench-config {
+  [data-workbench='create'][data-workbench-tab='configure'] .create-stage {
+    display: none;
+  }
+  [data-workbench='create'][data-workbench-tab='preview'] .create-tools {
+    display: none;
+  }
+  .create-workspace {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    padding: 8px 10px 10px;
+  }
+  .workbench-config,
+  .create-tools,
+  .create-stage {
     width: 100%;
   }
 }
@@ -942,15 +1009,17 @@ react-scan-overlay,
   overflow: visible;
 }
 
-:is(.workbench-config, .create-studio) [data-composer-input] {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-composer-input] {
   flex-wrap: wrap;
   padding: 10px;
   gap: 8px;
 }
-:is(.workbench-config, .create-studio) [data-composer-input] [aria-label^='Active recipe:'] {
+:is(.workbench-config, [data-toolbar-layout='rail'])
+  [data-composer-input]
+  [aria-label^='Active recipe:'] {
   display: none;
 }
-:is(.workbench-config, .create-studio) [data-composer-input] textarea {
+:is(.workbench-config, [data-toolbar-layout='rail']) [data-composer-input] textarea {
   flex: 1 0 100%;
   width: 100%;
   order: -1;
@@ -1042,23 +1111,16 @@ react-scan-overlay,
   min-height: 0 !important;
 }
 
-:is(.workbench-config, .create-studio) button[aria-label^='Generation model:'] > span {
-  display: inline;
-}
-:is(.workbench-config, .create-studio)
+:is(.workbench-config, [data-toolbar-layout='rail'])
   button[aria-label^='Codex task execution:']
   > span:last-child {
   display: inline;
+  min-width: 0;
 }
-:is(.workbench-config, .create-studio)
+:is(.workbench-config, [data-toolbar-layout='rail'])
   button[aria-label^='Codex task execution:']
   > span:not(:last-child) {
   display: none;
-}
-:is(.workbench-config, .create-studio) button[aria-label^='Codex task execution:'] {
-  height: auto;
-  white-space: normal;
-  text-align: left;
 }
 
 .recipe-parameters > .w-px {
@@ -1082,7 +1144,7 @@ react-scan-overlay,
   overflow-x: clip;
 }
 
-:is(.workbench-config, .create-studio) [data-composer-input] textarea {
+:is(.workbench-config) [data-composer-input] textarea {
   min-height: 80px !important;
   max-height: 160px;
 }
@@ -1114,11 +1176,32 @@ react-scan-overlay,
   height: 100%;
   object-fit: cover;
 }
-:is(.workbench-config, .create-studio) .reference-tray {
+:is(.workbench-config, [data-toolbar-layout='rail']) .reference-tray {
   flex-basis: 100%;
-  max-height: 144px;
+  max-height: 168px;
   overflow-y: auto;
+  flex-wrap: wrap;
+}
+[data-toolbar-layout='rail'] .reference-item {
+  min-width: 0;
+  width: 56px;
   flex-direction: column;
+  align-items: stretch;
+  gap: 4px;
+  padding: 3px;
+  background: #101010;
+  border: 1px solid #2a2a2a;
+}
+[data-toolbar-layout='rail'] .reference-item > button {
+  width: 50px;
+  height: 50px;
+}
+[data-toolbar-layout='rail'] .reference-item-copy {
+  display: none;
+}
+[data-toolbar-layout='rail'] .reference-item-actions {
+  justify-content: center;
+  gap: 4px;
 }
 .reference-item label:focus-within {
   outline: 2px solid rgb(var(--accent-400));
@@ -1148,94 +1231,671 @@ react-scan-overlay,
 }
 
 .workbench-canvas {
-  --studio-chrome-block: 160px;
+  --studio-chrome-block: 224px;
 }
 @media (max-width: 1023px) {
   .workbench-canvas {
-    --studio-chrome-block: 208px;
+    --studio-chrome-block: 272px;
   }
 }
 
-/* Create pairs the freeform workspace with the recipe catalog. */
 .create-workspace {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 38%);
+  grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
   gap: 12px;
   width: 100%;
   min-height: 0;
-  padding: 12px;
+  padding: 8px 12px 12px;
+  background: transparent;
 }
-.create-studio {
+.create-tools {
   display: flex;
   flex-direction: column;
   min-width: 0;
   min-height: 0;
   overflow: hidden;
-  background: #141517;
+  border: 1px solid #ffffff14;
   border-radius: 16px;
+  background: #1c1c1c;
 }
-.create-recipes {
-  position: relative;
+.create-stage {
+  display: flex;
   min-width: 0;
   min-height: 0;
+  flex-direction: column;
   overflow: hidden;
-  background: #191a1d;
+  border: 1px solid #ffffff10;
   border-radius: 16px;
+  background: #0a0a0a;
 }
-.create-studio > footer {
+.create-workflow-block {
   flex-shrink: 0;
+  padding: 16px 16px 0;
 }
-.create-studio [data-composer-input] textarea {
-  min-height: 72px !important;
-  max-height: 144px;
-}
-.create-studio .reference-tray {
-  max-height: 140px;
-  overflow: auto;
-}
-@media (max-width: 1023px) {
-  .create-workspace {
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-  }
-  .create-studio {
-    height: 650px;
-    min-height: 650px;
-    flex: 0 0 650px;
-  }
-  .create-recipes {
-    min-height: 600px;
-    flex-shrink: 0;
-  }
-}
-
-.create-studio > footer {
-  padding: 12px;
-}
-.create-studio [data-toolbar-mode] textarea {
+.create-workflow-trigger {
+  display: flex;
   width: 100%;
+  min-height: 43px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  background: #101010;
+  text-align: left;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    transform 140ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1));
 }
-.create-studio .recipe-result-strip {
+.create-workflow-trigger:hover {
+  border-color: #3d3d3d;
+  background: #141414;
+}
+.create-workflow-trigger:active {
+  transform: scale(0.985);
+}
+.create-workflow-label {
+  font-size: 11px;
+  color: #a0a0a0;
+}
+.create-workflow-title {
+  min-width: 0;
+  flex: 1;
+  font-size: 13px;
+  font-weight: 650;
+}
+.create-workflow-chevron {
+  margin-left: auto;
+  color: #aaa;
+  transition: transform 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1));
+}
+.create-workflow-chevron.is-open {
+  transform: rotate(180deg);
+}
+.create-workflow-popover {
+  position: absolute;
+  z-index: 70;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: min(52vh, 360px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 6px 4px 6px 6px;
+  border: 1px solid #ffffff18;
+  border-radius: 12px;
+  background: #141414;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1)),
+    transform 160ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1));
+}
+@starting-style {
+  .create-workflow-popover {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+.create-workflow-popover.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a3a transparent;
+}
+.create-workflow-popover.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.create-workflow-popover.custom-scrollbar::-webkit-scrollbar-track {
+  margin: 6px 0;
+  background: transparent;
+}
+.create-workflow-popover.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 99px;
+}
+.create-workflow-popover.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+.create-workflow-default {
+  display: flex;
+  width: 100%;
+  min-height: 40px;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  margin-bottom: 4px;
+  border-radius: 7px;
+  background: #101010;
+  text-align: left;
+  transition:
+    background-color 140ms ease,
+    transform 140ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1));
+}
+.create-workflow-default:hover {
+  background: #181818;
+}
+.create-workflow-default-icon {
+  display: grid;
+  width: 25px;
+  height: 25px;
+  place-items: center;
+  border: 1px solid #3c3c3c;
+  border-radius: 6px;
+  color: #ccc;
+}
+.create-tool-dock,
+.create-tool-composer,
+.create-tool-dock-loading {
+  min-height: 0;
+  flex: 1;
+}
+.create-tool-scroll {
+  padding: 12px 16px 16px;
+}
+.create-tool-block {
+  margin-bottom: 16px;
+}
+.create-tool-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 20px;
+  margin-bottom: 7px;
+  font-size: 12px;
+  font-weight: 550;
+  color: #bcbcbc;
+}
+.create-tool-heading-meta,
+.create-tool-hint {
+  font-size: 11px;
+  color: #929292;
+}
+.create-upload-control,
+.create-upload-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px dashed #3a3a3a;
+  background: #101010;
+  color: #b0b0b0;
+  transition:
+    border-color 140ms ease,
+    background-color 140ms ease,
+    color 140ms ease;
+}
+.create-upload-control {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 9px;
+  font-size: 12px;
+}
+.create-upload-add {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.create-upload-control:hover,
+.create-upload-add:hover {
+  border-color: #525252;
+  background: #141414;
+  color: #eee;
+}
+.create-upload-accent {
+  color: #ddd;
+}
+.create-reference-strip {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+}
+.create-reference-strip .reference-tray {
+  flex: 1;
+  min-width: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  max-height: none;
+}
+.create-prompt-box {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+  border-radius: 9px;
+  background: #101010;
+}
+.create-prompt-box textarea {
+  display: block;
+  width: 100%;
+  min-height: 120px !important;
+  max-height: 280px;
+  padding: 13px 14px;
+  font-size: 13px;
+  line-height: 1.72;
+  background: transparent;
+  scrollbar-gutter: stable;
+}
+[data-toolbar-layout='rail'] .create-prompt-box textarea {
+  min-height: 120px !important;
+  max-height: 280px;
+}
+.create-prompt-tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.create-prompt-tool {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  place-items: center;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #8f8f8f;
+  transition:
+    background-color 140ms ease,
+    color 140ms ease;
+}
+.create-prompt-tool:hover,
+.create-prompt-tool.is-active {
+  background: #101010;
+  color: #f0f0f0;
+}
+.create-ratio-groups {
+  display: grid;
+  gap: 10px;
+}
+.create-ratio-group {
+  display: grid;
+  gap: 6px;
+}
+.create-ratio-group-label {
+  font-size: 11px;
+  color: #8d8d8d;
+}
+.create-ratio-segment {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 6px;
+  min-width: 0;
+}
+.create-ratio-option {
+  display: flex;
+  min-width: 0;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  height: 58px;
+  padding: 6px 4px 5px;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  background: #101010;
+  color: #b0b0b0;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    color 140ms ease;
+}
+.create-ratio-group[aria-label='Square'] .create-ratio-option {
+  flex: 0 0 52px;
+}
+.create-ratio-option:hover {
+  border-color: #444;
+  color: #f0f0f0;
+}
+.create-ratio-option[aria-pressed='true'] {
+  border-color: #8a8a8a;
+  background: #171717;
+  color: #f7f7f7;
+}
+.create-ratio-frame {
+  display: block;
+  height: 22px;
+  max-width: 100%;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  background: #1d1d1d;
+}
+.create-ratio-code {
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+.create-images-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+.create-images-line .create-tool-heading {
+  margin: 0;
+}
+.create-stepper {
+  display: flex;
+  width: 96px;
+  height: 32px;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  background: #101010;
+}
+.create-stepper button {
+  width: 28px;
+  color: #b5b5b5;
+  transition:
+    background-color 140ms ease,
+    color 140ms ease;
+}
+.create-stepper button:hover {
+  background: #181818;
+  color: #fff;
+}
+.create-stepper output {
+  display: grid;
+  flex: 1;
+  place-items: center;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.create-field-input {
+  width: 100%;
+  height: 36px;
+  padding: 0 11px;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  background: #101010;
+  color: #e8e8e8;
+  font-size: 12px;
+}
+.create-field-input::placeholder {
+  color: #6d6d6d;
+}
+.create-tool-footer {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 16px 12px;
+  border-top: 1px solid #2d2d2d;
+  background: #191919;
+}
+.create-tool-execution {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+.create-tool-provider-row {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  background: #101010;
+  grid-column: 1 / -1;
+}
+.create-tool-provider-row > * {
+  display: flex;
+  min-width: 0;
+  align-items: stretch;
+}
+.create-tool-provider-row > :first-child {
+  flex: 0 1 40%;
+}
+.create-tool-provider-row > :last-child:not(:first-child) {
+  flex: 1 1 60%;
+  border-left: 1px solid #2a2a2a;
+}
+.create-tool-provider-row > :only-child {
+  flex: 1 1 auto;
+}
+.create-tool-chip {
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  min-height: 40px;
+  justify-content: flex-start;
+  padding: 0 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.create-tool-chip span {
+  display: inline !important;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.create-tool-chip svg:last-of-type {
+  display: block;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+.create-tool-chip:hover {
+  background: #161616;
+  border-color: transparent;
+}
+.create-execution-menu {
+  width: min(94vw, 348px);
+}
+.create-tool-footer [data-studio-generate-button] {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+.create-tool-footer .create-generate-button {
+  background: #cfc8bd;
+  color: #161412;
+  border: 0;
+  box-shadow: none;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition:
+    background-color 140ms ease,
+    transform 140ms var(--ease-out-expo, cubic-bezier(0.16, 1, 0.3, 1));
+}
+.create-tool-footer .create-generate-button span,
+.create-tool-footer .create-generate-button svg {
+  color: #161412;
+}
+.create-tool-footer .create-generate-button:hover {
+  background: #ddd6cb;
+  transform: none;
+}
+.create-tool-footer .create-generate-button:active {
+  transform: scale(0.985);
+}
+.create-tool-footer .create-generate-button.is-busy {
+  background: #2a2a2a;
+  color: #e8e8e8;
+  transform: none;
+}
+.create-tool-footer .create-generate-button.is-busy span,
+.create-tool-footer .create-generate-button.is-busy svg {
+  color: #e8e8e8;
+}
+@media (prefers-reduced-motion: reduce) {
+  .create-workflow-trigger,
+  .create-workflow-chevron,
+  .create-workflow-popover,
+  .create-workflow-default,
+  .create-upload-control,
+  .create-upload-add,
+  .create-prompt-tool,
+  .create-ratio-option,
+  .create-stepper button,
+  .create-tool-chip,
+  .create-tool-footer .create-generate-button {
+    transition: none;
+    transform: none;
+  }
+  @starting-style {
+    .create-workflow-popover {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+.recipe-result-stage {
+  padding: 0;
+  gap: 0;
+  flex: 1;
+  min-height: 0;
+}
+.recipe-result-stage .recipe-result-heading {
+  height: 50px;
+  flex-shrink: 0;
+  padding: 0 19px;
+  border-bottom: 1px solid #242424;
+  background: #111;
+  gap: 8px;
+}
+.recipe-result-stage .recipe-result-image {
+  position: relative;
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+  background: #0a0a0a;
+}
+.recipe-result-stage .recipe-result-image.is-light {
+  background: #ececec;
+}
+.recipe-result-stage .recipe-result-image.is-checkered {
+  background-color: #d0d0d0;
+  background-image:
+    linear-gradient(45deg, #bdbdbd 25%, transparent 25%),
+    linear-gradient(-45deg, #bdbdbd 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #bdbdbd 75%),
+    linear-gradient(-45deg, transparent 75%, #bdbdbd 75%);
+  background-size: 24px 24px;
+  background-position:
+    0 0,
+    0 12px,
+    12px -12px,
+    -12px 0;
+}
+.recipe-result-actions {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 4;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 10px;
+  background: #111111cc;
+}
+.recipe-result-actions button,
+.recipe-result-zoom button,
+.recipe-result-nav,
+.recipe-result-background button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #ffffff10;
+  color: #d8d8d8;
+}
+.recipe-result-actions button[aria-pressed='true'] {
+  color: #f43f5e;
+}
+.recipe-result-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+}
+.recipe-result-nav.is-prev {
+  left: 12px;
+}
+.recipe-result-nav.is-next {
+  right: 12px;
+}
+.recipe-result-nav:disabled {
+  opacity: 0.3;
+}
+.recipe-result-background {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 4;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 10px;
+  background: #111111cc;
+}
+.recipe-result-background button[aria-label='Dark background'] {
+  background: #111;
+  border: 1px solid #444;
+}
+.recipe-result-background button[aria-label='Light background'] {
+  background: #f4f4f4;
+  border: 1px solid #bbb;
+}
+.recipe-result-background button[aria-label='Checkered background'] {
+  background-color: #ccc;
+  background-image:
+    linear-gradient(45deg, #999 25%, transparent 25%),
+    linear-gradient(-45deg, #999 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #999 75%),
+    linear-gradient(-45deg, transparent 75%, #999 75%);
+  background-size: 10px 10px;
+  border: 1px solid #888;
+}
+.recipe-result-background button[aria-pressed='true'] {
+  outline: 2px solid #fff;
+}
+.recipe-result-zoom {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 4;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 10px;
+  background: #111111cc;
+}
+.recipe-result-stage .recipe-result-strip {
+  gap: 10px;
+  min-height: 112px;
+  padding: 12px 19px 15px;
+  border-top: 1px solid #292929;
+  background: #131313;
   scrollbar-width: thin;
   scrollbar-color: #45464b transparent;
 }
-.create-studio [data-composer-input] textarea {
-  height: 80px !important;
-  min-height: 80px !important;
-  max-height: 80px !important;
+.recipe-result-stage .recipe-result-strip button {
+  width: 98px;
+  height: 75px;
+  border: 1px solid #363636;
+  border-radius: 8px;
 }
-.create-studio .reference-tray {
-  flex-basis: calc(100% - 56px);
-  flex-direction: row;
-  max-height: 80px;
-}
-.create-studio .reference-item {
-  flex: 1;
-}
-.create-studio [data-composer-input] {
-  gap: 6px;
-  padding: 8px;
+.recipe-result-stage .recipe-result-strip button[aria-pressed='true'] {
+  border-color: #ccc;
 }
 
 .recipe-advanced {
@@ -1260,33 +1920,6 @@ react-scan-overlay,
 .recipe-advanced-grid button {
   width: 100%;
   min-width: 0;
-}
-
-.create-studio [data-composer-input] {
-  display: grid;
-  grid-template-columns: 40px minmax(0, 1fr) repeat(3, 40px);
-  align-items: center;
-}
-.create-studio [data-composer-input] textarea {
-  grid-column: 1/-1;
-}
-.create-studio .reference-tray {
-  min-width: 0;
-  max-width: 100%;
-  width: 100%;
-  grid-column: 2;
-}
-.create-studio .reference-item {
-  min-width: 0;
-}
-.create-studio .recipe-result-strip button {
-  width: 48px;
-  height: 48px;
-}
-@media (max-width: 600px) {
-  .create-studio [data-composer-input] {
-    display: flex;
-  }
 }
 
 .recipe-parameters > .flex-wrap > :only-child {

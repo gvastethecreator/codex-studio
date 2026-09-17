@@ -3,14 +3,14 @@ import React, { Suspense, useState } from 'react';
 import { useStudioShell } from '../hooks/useStudioShell';
 import { hasMountedStudioOverlay } from '../lib/studioOverlayVisibility';
 
-import { useGenerationDraft } from '../contexts/GenerationContext';
-import { RecipeResultPreview } from './recipes/RecipeResultPreview';
 import { HeaderToolbar } from './HeaderToolbar';
 import { StudioOperationsRail } from './studio/StudioOperationsRail';
 import { StudioViewport } from './shell/StudioViewport';
 import { ErrorBoundary } from './ErrorBoundary';
 import { RecipeWorkbenchContext } from './recipes/RecipeWorkbenchContext';
 import ToastContainer from './ToastContainer';
+import { CreateWorkspace } from './create/CreateWorkspace';
+import { StudioStatusBar } from './shell/StudioStatusBar';
 
 const AppOverlays = React.lazy(() =>
   import('./AppOverlays').then((m) => ({ default: m.AppOverlays })),
@@ -60,11 +60,11 @@ const StudioGenerationDockFallback: React.FC = () => (
 
 export const AppContent: React.FC = () => {
   const shell = useStudioShell();
-  const draft = useGenerationDraft();
   const isCreate = shell.viewport.routeView === 'recipes';
   const [actionTarget, setActionTarget] = useState<HTMLElement | null>(null);
   const [controlsTarget, setControlsTarget] = useState<HTMLElement | null>(null);
   const [workbenchTab, setWorkbenchTab] = useState<'result' | 'configure'>('result');
+  const [createTab, setCreateTab] = useState<'configure' | 'preview'>('configure');
   const isRecipe = shell.viewport.routeView === 'recipe';
   const hasGenerationDock =
     !shell.generationDock.isModalOpen &&
@@ -100,6 +100,25 @@ export const AppContent: React.FC = () => {
             </label>
           </div>
         )}
+        {isCreate && (
+          <div className="workbench-tabs" role="tablist" aria-label="Create workspace">
+            <button
+              role="tab"
+              data-configure-tab
+              aria-selected={createTab === 'configure'}
+              onClick={() => setCreateTab('configure')}
+            >
+              Configure
+            </button>
+            <button
+              role="tab"
+              aria-selected={createTab === 'preview'}
+              onClick={() => setCreateTab('preview')}
+            >
+              Preview
+            </button>
+          </div>
+        )}
         {isRecipe && (
           <div className="workbench-tabs" role="tablist" aria-label="Recipe workspace">
             <button
@@ -121,38 +140,20 @@ export const AppContent: React.FC = () => {
         )}
         <div
           data-workbench={isRecipe ? 'recipe' : isCreate ? 'create' : 'library'}
-          data-workbench-tab={workbenchTab}
+          data-workbench-tab={isCreate ? createTab : workbenchTab}
           className="studio-workbench relative z-10 flex w-full flex-1 min-h-0 overflow-hidden appearance-none border-none p-0 m-0 bg-transparent"
           onPointerDownCapture={shell.root.onMainClick}
         >
           {isCreate ? (
-            <div className="create-workspace">
-              <section className="create-studio" aria-label="Text and image workspace">
-                <header className="px-5 pt-4 pb-2">
-                  <h1 className="text-xl font-semibold">Create an image</h1>
-                  <p className="mt-1 text-sm text-zinc-400">
-                    Start with a prompt, or add an image as a reference.
-                  </p>
-                </header>
-                <div className="min-h-0 flex-1 overflow-hidden">
-                  <RecipeResultPreview
-                    images={shell.viewport.recipePageProps.imagesWithConfig.filter(
-                      (image) => !image.config.recipeId,
-                    )}
-                    reference={draft.generationConfig.attachments[0]}
-                    onOpen={shell.viewport.recipePageProps.openModal}
-                  />
-                </div>
-                {hasGenerationDock && (
-                  <Suspense fallback={<StudioGenerationDockFallback />}>
-                    <StudioGenerationDock {...shell.generationDock} />
-                  </Suspense>
-                )}
-              </section>
-              <aside className="create-recipes" aria-label="Recipes">
-                <StudioViewport {...shell.viewport} />
-              </aside>
-            </div>
+            <CreateWorkspace
+              recipePageProps={shell.viewport.recipePageProps}
+              onSelectRecipe={shell.viewport.onSelectRecipe}
+              hasGenerationDock={hasGenerationDock}
+              GenerationDock={StudioGenerationDock}
+              generationDockProps={shell.generationDock}
+              onToggleFavorite={shell.viewport.studioPageController.grid.handleToggleFavorite}
+              onUseAsReference={shell.viewport.studioPageController.grid.handleAddToContext}
+            />
           ) : (
             <div className="workbench-canvas relative min-w-0 flex-1 overflow-hidden">
               <StudioViewport {...shell.viewport} />
@@ -179,6 +180,17 @@ export const AppContent: React.FC = () => {
           <Suspense fallback={<StudioGenerationDockFallback />}>
             <StudioGenerationDock {...shell.generationDock} />
           </Suspense>
+        ) : null}
+
+        {shell.headerToolbar.isVisible ? (
+          <StudioStatusBar
+            usage={shell.headerToolbar.props.usage}
+            commandCenter={shell.headerToolbar.props.commandCenter}
+            isQueueOpen={shell.headerToolbar.props.isQueueOpen}
+            onToggleQueue={shell.headerToolbar.props.onToggleQueue}
+            onOpenDashboard={shell.headerToolbar.props.onOpenDashboard}
+            onOpenOnboarding={shell.headerToolbar.props.onOpenOnboarding}
+          />
         ) : null}
 
         {shell.overlays.systemOverlays.flags.isOnboardingOpen ? <StudioFirstReadyScrim /> : null}

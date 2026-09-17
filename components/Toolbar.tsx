@@ -16,6 +16,8 @@ import {
   IconDeviceDesktop as Monitor,
   IconDots as MoreHorizontal,
   IconCirclePlus as PlusCircle,
+  IconMinus as Minus,
+  IconPlus as Plus,
   IconAspectRatio as Ratio,
   IconRectangle as RectangleHorizontal,
   IconRectangleVertical as RectangleVertical,
@@ -23,7 +25,6 @@ import {
   IconAdjustmentsHorizontal as SlidersHorizontal,
   IconSend as Send,
   IconShieldExclamation as ShieldAlert,
-  IconSparkles as Sparkles,
   IconSquare as Square,
   IconWand as Wand,
   IconWand as Wand2,
@@ -50,16 +51,13 @@ import type {
   CodexExecutionTransport,
   CodexHttpImageModelOption,
 } from '../packages/shared/src/codexExecutionContract';
-import type {
-  AspectRatio,
-  Attachment,
-  GenerationModel,
-  ImageGenerationConfig,
-  ImageSize,
-} from '../types';
+import type { AspectRatio, Attachment, ImageGenerationConfig, ImageSize } from '../types';
+import { groupImageGenRatiosByOrientation } from '../utils/imageGenSizing';
 import KeyPopover from './KeyPopover';
 import Tooltip from './Tooltip';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
+import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
+import { ProviderQuickSwitch } from './header/ProviderQuickSwitch';
 import { GenerationElapsedStatus, LivePromptTextarea } from './ToolbarLiveStatus';
 
 export interface ToolbarProps {
@@ -98,8 +96,13 @@ export interface ToolbarProps {
   grokCanExecute?: boolean;
   grokStatus?: string;
   grokDiagnostics?: string[];
+  commandCenter?: StudioCommandCenterProjection;
+  onSelectProvider?: (providerId: GenerationProviderId) => Promise<void> | void;
+  isProviderSaving?: boolean;
+  onOpenSettings?: () => void;
   activeRecipe?: ImageGenerationConfig['recipeId'];
   mode?: 'full' | 'context-only';
+  layout?: 'dock' | 'rail';
 }
 
 const ICON_SIZE = 14;
@@ -131,38 +134,8 @@ const AspectRatioIcon: React.FC<{ ratio: AspectRatio }> = ({ ratio }) => {
   return <RectangleVertical size={ICON_SIZE} />;
 };
 
-import { MODELS as MODEL_IDS } from '../constants';
-
-const ModelIcon: React.FC<{ model: GenerationModel }> = ({ model }) => {
-  if (model === MODEL_IDS.CODEX_IMAGEGEN) {
-    return (
-      <div className="relative flex items-center justify-center size-4">
-        <Sparkles size={ICON_SIZE} className="text-accent-400 group-hover:text-accent-300" />
-        <Sparkles
-          size={8}
-          strokeWidth={3}
-          className="absolute -top-1 -right-1.5 text-accent-200 fill-accent-100/50 animate-pulse"
-        />
-      </div>
-    );
-  }
-  return <Zap size={ICON_SIZE} />;
-};
-
-const AVAILABLE_MODELS: {
-  id: GenerationModel;
-  name: string;
-  description: string;
-}[] = [
-  {
-    id: MODEL_IDS.CODEX_IMAGEGEN,
-    name: 'Codex ImageGen',
-    description: 'Local ChatGPT/Codex session',
-  },
-];
-
 const PRO_SIZES: ImageSize[] = ['1K'];
-const BATCH_COUNTS = [1, 2, 3, 4];
+const BATCH_COUNTS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const GENERATION_PROVIDER_LABELS: Partial<Record<GenerationProviderId, string>> = {
   codex: 'Codex',
@@ -208,8 +181,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     grokCanExecute = false,
     grokStatus,
     grokDiagnostics,
+    commandCenter,
+    onSelectProvider,
+    isProviderSaving = false,
+    onOpenSettings,
     activeRecipe = null,
     mode = 'full',
+    layout = 'dock',
   }) => {
     const { addToast } = useToastUi();
     const containerRef = useRef<HTMLDivElement>(null);
@@ -220,7 +198,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const aspectRatioButtonRef = useRef<HTMLButtonElement>(null);
     const sizeButtonRef = useRef<HTMLButtonElement>(null);
     const batchButtonRef = useRef<HTMLButtonElement>(null);
-    const modelButtonRef = useRef<HTMLButtonElement>(null);
     const executionButtonRef = useRef<HTMLButtonElement>(null);
 
     const [localPrompt, setLocalPrompt] = useState(generationConfig.prompt || '');
@@ -230,7 +207,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     // Menu States
     const [isAspectRatioOpen, setIsAspectRatioOpen] = useState(false);
-    const [isModelOpen, setIsModelOpen] = useState(false);
     const [isExecutionOpen, setIsExecutionOpen] = useState(false);
     const [isSizeOpen, setIsSizeOpen] = useState(false);
     const [isBatchOpen, setIsBatchOpen] = useState(false);
@@ -288,6 +264,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       ratios: currentRatios,
       showCodexPromptTools,
       showCodexModelChrome,
+      maxOutputCount,
       execution,
     } = providerChrome;
     const codexModels = execution.models;
@@ -298,6 +275,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const selectedExecutionImageModel = execution.selectedImageModel;
     const executionSourceMessage = execution.sourceMessage;
     const executionSummary = execution.summary;
+    const executionChipLabel = formatCodexModelLabel(
+      selectedExecutionModel?.id ?? generationConfig.executionModel,
+      selectedExecutionModel?.displayName,
+    );
 
     const isScrambling = isEnhancingPrompt || isRefactoring;
 
@@ -344,7 +325,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
     const closeAllMenus = useCallback(() => {
       setIsAspectRatioOpen(false);
-      setIsModelOpen(false);
       setIsExecutionOpen(false);
       setIsSizeOpen(false);
       setIsBatchOpen(false);
@@ -398,6 +378,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     }, [generationConfig.prompt, localPrompt]);
 
+    useEffect(() => {
+      const current = generationConfig.batchCount || 1;
+      if (current > maxOutputCount) {
+        updateConfig('batchCount', maxOutputCount);
+      }
+    }, [generationConfig.batchCount, maxOutputCount, updateConfig]);
+
     const handleTriggerGenerate = useCallback(() => {
       if (
         generateBlock ||
@@ -448,6 +435,25 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     };
 
+    const handleAnalyzeReferences = () => {
+      if (generationConfig.attachments.length === 0) {
+        addToast('Add an image reference before analyzing attachments', 'info');
+        return;
+      }
+      const notes = [
+        'Reference notes:',
+        ...generationConfig.attachments.map(
+          (attachment, index) =>
+            `- ${index === 0 ? 'Source image' : `Detail reference ${index}`}: ${attachment.name}. Preserve identity, clothing, and palette.`,
+        ),
+        'Use the attached images as the visual source of truth.',
+      ].join('\n');
+      const nextPrompt = [localPrompt.trim(), notes].filter(Boolean).join('\n\n');
+      setLocalPrompt(nextPrompt);
+      updateConfig('prompt', nextPrompt);
+      addToast('Reference notes added to the prompt', 'success');
+    };
+
     const handleMagicEdit = async () => {
       if (!magicInstruction.trim() || isRefactoring) return;
       setIsRefactoring(true);
@@ -494,11 +500,106 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const shouldShowQuickStartError =
       quickStartError && quickStartErrorScope === interactionScope && !hasQuickStartInput;
     const showQuickStartErrorText = shouldShowQuickStartError && isPromptFocused;
+    const isRail = layout === 'rail';
+    const currentBatch = Math.min(generationConfig.batchCount || 1, maxOutputCount);
+    const batchCounts = BATCH_COUNTS.filter((count) => count <= maxOutputCount);
+    const nextBatchCount = Math.min(maxOutputCount, currentBatch + 1);
+    const previousBatchCount = Math.max(1, currentBatch - 1);
+    const ratioGroups = useMemo(
+      () => groupImageGenRatiosByOrientation(currentRatios),
+      [currentRatios],
+    );
+    const acceptRailImageDrop = useCallback(
+      (event: React.DragEvent) => {
+        event.preventDefault();
+        event.stopPropagation();
+        const files = Array.from(event.dataTransfer.files as any as Iterable<File>).filter((file) =>
+          file.type.startsWith('image/'),
+        );
+        if (files.length === 0) return;
+        onFilesDrop(files);
+      },
+      [onFilesDrop],
+    );
+
+    const fileInput = (
+      <input
+        type="file"
+        ref={fileInputRef}
+        onChange={onFileSelect}
+        aria-label="Upload images"
+        className="hidden"
+        accept="image/*"
+        multiple
+      />
+    );
+
+    const promptField = (
+      <LivePromptTextarea
+        textareaRef={textareaRef}
+        prompt={localPrompt}
+        isScrambling={isScrambling}
+        isHidden={isContextOnly}
+        onFocus={() => {
+          setIsInteracting(true);
+          setIsPromptFocused(true);
+        }}
+        onBlur={() => {
+          setIsPromptFocused(false);
+          updateConfig('prompt', localPrompt);
+          closeAllMenus();
+        }}
+        onChange={(e) => {
+          const next = e.target.value;
+          setLocalPrompt(next);
+          setIsInteracting(true);
+          if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
+          debounceTimerRef.current = window.setTimeout(() => {
+            lastPushedPromptRef.current = next;
+            updateConfig('prompt', next);
+          }, 300);
+        }}
+        onKeyDown={handleKeyDown}
+        onPaste={(e) => {
+          const items = e.clipboardData?.items;
+          if (!items) return;
+          const files = Array.from(items as any as Iterable<DataTransferItem>).reduce<File[]>(
+            (acc, item) => {
+              if (!item.type.startsWith('image/')) return acc;
+              const file = item.getAsFile();
+              if (file !== null) acc.push(file);
+              return acc;
+            },
+            [],
+          );
+          if (files.length > 0) {
+            e.preventDefault();
+            e.stopPropagation();
+            onFilesDrop(files);
+          }
+        }}
+        onDrop={(e) => {
+          const files = Array.from(e.dataTransfer.files as any as Iterable<File>).filter((f) =>
+            f.type.startsWith('image/'),
+          );
+          if (files.length > 0) {
+            e.preventDefault();
+            e.stopPropagation();
+            onFilesDrop(files);
+          }
+        }}
+        onDragOver={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+        }}
+      />
+    );
 
     return (
       <div
         ref={containerRef}
         data-toolbar-mode={mode}
+        data-toolbar-layout={layout}
         data-style-needs-selection={
           activeRecipe === 'styles' &&
           !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)?.selectedStyles
@@ -507,321 +608,532 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         onMouseEnter={handleToolbarMouseEnter}
         onMouseMove={handleToolbarMouseEnter}
         onMouseLeave={handleToolbarMouseLeave}
-        className="w-full flex flex-col justify-end z-50 transition-colors duration-200 ease-out relative"
+        className={
+          isRail
+            ? 'create-tool-composer relative z-50 flex h-full min-h-0 w-full flex-col'
+            : 'w-full flex flex-col justify-end z-50 transition-colors duration-200 ease-out relative'
+        }
       >
-        {/* Fixed height background that doesn't expand with the textarea */}
-        <div className="absolute inset-x-0 bottom-0 h-[106px] pointer-events-none bg-black/80 transition-colors duration-200 ease-out sm:h-[56px]" />
+        {isRail ? null : (
+          <div className="absolute inset-x-0 bottom-0 h-[106px] pointer-events-none bg-black/80 transition-colors duration-200 ease-out sm:h-[56px]" />
+        )}
 
-        <div className="relative z-10 flex w-full flex-col items-stretch gap-1 px-2 py-1.5 sm:flex-row sm:items-end sm:gap-1.5">
-          <input
-            type="file"
-            ref={fileInputRef}
-            onChange={onFileSelect}
-            aria-label="Upload images"
-            className="hidden"
-            accept="image/*"
-            multiple
-          />
+        <div
+          className={
+            isRail
+              ? 'relative z-10 flex min-h-0 w-full flex-1 flex-col'
+              : 'relative z-10 flex w-full flex-col items-stretch gap-1 px-2 py-1.5 sm:flex-row sm:items-end sm:gap-1.5'
+          }
+        >
+          {fileInput}
 
-          {/* INPUT AREA - ALWAYS VISIBLE */}
-          <div className="flex-1 relative min-w-0">
-            {/* Input Container */}
-            <div
-              data-composer-input
-              className={`flex min-h-9 items-end gap-1.5 rounded-lg border border-white/2 bg-zinc-900/50 p-1 px-2 shadow-lg transition-colors duration-300 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
-            >
-              {showQuickStartErrorText && (
-                <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200 animate-in fade-in-0 slide-in-from-bottom-1 duration-150">
-                  Add prompt or image to generate
-                </div>
-              )}
-              <button
-                type="button"
-                onClick={() => fileInputRef.current?.click()}
-                disabled={isNearLimit}
-                aria-label="Add image reference"
-                className={iconBtnClass}
-                title="Add Image"
-              >
-                <PlusCircle size={17} />
-              </button>
-
-              {hasAttachments && (
-                <ReferenceTray
-                  attachments={generationConfig.attachments}
-                  onEdit={onOpenEditor}
-                  onRemove={onRemoveAttachment}
-                  onFiles={onFilesDrop}
-                />
-              )}
-
-              {activeRecipeIndicator && (
-                <div
-                  data-active-recipe-card={activeRecipeIndicator.id}
-                  aria-label={`Active recipe: ${activeRecipeIndicator.title}. ${activeRecipeIndicator.summary}.`}
-                  title={`${activeRecipeIndicator.title}: ${activeRecipeIndicator.summary}`}
-                  className={`group flex h-10 min-h-10 min-w-[6rem] max-w-[10.75rem] flex-[0_1_10.75rem] items-center gap-1.5 overflow-hidden rounded-xl border px-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-[border-color,background-color,box-shadow] hover:shadow-[0_0_18px_rgba(255,255,255,0.05)] sm:flex-[0_0_10.75rem] ${activeRecipeIndicator.toneClassName}`}
-                >
-                  <span
-                    className={`h-5 w-1 shrink-0 rounded-[2px] shadow-[0_0_12px_currentColor] ${activeRecipeIndicator.dotClassName}`}
-                  />
-                  <span className="min-w-0">
-                    <span className="block text-[10px] font-black uppercase leading-none tracking-[0.12em] opacity-60">
-                      Recipe
-                    </span>
-                    <span className="block truncate text-[11px] font-black uppercase leading-tight tracking-[0.06em] text-white">
-                      {activeRecipeIndicator.title}
-                    </span>
-                    <span className="block truncate text-[10px] font-medium leading-none opacity-70">
-                      {activeRecipeIndicator.summary}
-                    </span>
+          {isRail ? (
+            <div className="create-tool-scroll custom-scrollbar min-h-0 flex-1 overflow-y-auto">
+              <section className="create-tool-block" aria-label="Attachments">
+                <div className="create-tool-heading">
+                  <span>Attachments</span>
+                  <span className="create-tool-heading-meta">
+                    {generationConfig.attachments.length} / {maxAttachments}
                   </span>
                 </div>
-              )}
+                {hasAttachments ? (
+                  <div
+                    className="create-reference-strip"
+                    onDragOver={(event) => {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }}
+                    onDrop={acceptRailImageDrop}
+                  >
+                    <ReferenceTray
+                      attachments={generationConfig.attachments}
+                      onEdit={onOpenEditor}
+                      onRemove={onRemoveAttachment}
+                      onFiles={onFilesDrop}
+                      density="compact"
+                    />
+                    <button
+                      type="button"
+                      className="create-upload-add"
+                      onClick={() => fileInputRef.current?.click()}
+                      disabled={isNearLimit}
+                      aria-label="Add image reference"
+                    >
+                      <PlusCircle size={18} />
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    type="button"
+                    className="create-upload-control"
+                    onClick={() => fileInputRef.current?.click()}
+                    disabled={isNearLimit}
+                    aria-label="Add image reference"
+                    onDragOver={(event) => {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }}
+                    onDrop={acceptRailImageDrop}
+                  >
+                    <PlusCircle size={16} />
+                    <span>
+                      Drop an image or <span className="create-upload-accent">browse</span>
+                    </span>
+                  </button>
+                )}
+              </section>
 
               {isContextOnly ? (
-                <div
-                  data-task-context
-                  className="hidden min-w-0 flex-1 px-1.5 py-1 text-[11px] leading-relaxed text-zinc-500 sm:block"
-                >
+                <p className="create-tool-hint">
                   Add references here. Use the selected task action above to continue.
-                </div>
-              ) : null}
-
-              <LivePromptTextarea
-                textareaRef={textareaRef}
-                prompt={localPrompt}
-                isScrambling={isScrambling}
-                isHidden={isContextOnly}
-                onFocus={() => {
-                  setIsInteracting(true);
-                  setIsPromptFocused(true);
-                }}
-                onBlur={() => {
-                  setIsPromptFocused(false);
-                  // IMMEDIATE SYNC ON BLUR: Fixes race condition when clicking external buttons
-                  updateConfig('prompt', localPrompt);
-                  closeAllMenus();
-                }}
-                onChange={(e) => {
-                  const next = e.target.value;
-                  setLocalPrompt(next);
-                  setIsInteracting(true);
-                  if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
-                  debounceTimerRef.current = window.setTimeout(() => {
-                    lastPushedPromptRef.current = next;
-                    updateConfig('prompt', next);
-                  }, 300);
-                }}
-                onKeyDown={handleKeyDown}
-                onPaste={(e) => {
-                  const items = e.clipboardData?.items;
-                  if (!items) return;
-                  const files = Array.from(items as any as Iterable<DataTransferItem>).reduce<
-                    File[]
-                  >((acc, item) => {
-                    if (!item.type.startsWith('image/')) return acc;
-                    const file = item.getAsFile();
-                    if (file !== null) acc.push(file);
-                    return acc;
-                  }, []);
-                  if (files.length > 0) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    onFilesDrop(files);
-                  }
-                }}
-                onDrop={(e) => {
-                  const files = Array.from(e.dataTransfer.files as any as Iterable<File>).filter(
-                    (f) => f.type.startsWith('image/'),
-                  );
-                  if (files.length > 0) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    onFilesDrop(files);
-                  }
-                }}
-                onDragOver={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                }}
-              />
-
-              {/* LOGIC AI TOOLS */}
-              <div
-                className={`${
-                  showCodexPromptTools
-                    ? isContextOnly
-                      ? 'flex shrink-0 items-center gap-1.5'
-                      : 'hidden shrink-0 items-center gap-1.5 sm:flex sm:gap-2'
-                    : 'hidden'
-                }`}
-              >
-                {/* 1. NEGATIVE (Exclude) */}
-                <div className="relative">
-                  <Tooltip content="Negative Prompt (Exclude)">
-                    <button
-                      ref={negativeButtonRef}
-                      type="button"
-                      onClick={() => {
-                        setIsNegativeOpen(!isNegativeOpen);
-                        setIsRefineOpen(false);
-                      }}
-                      aria-label="Open negative prompt"
-                      aria-haspopup="dialog"
-                      aria-expanded={isNegativeOpen}
-                      className={`${iconBtnClass} ${isNegativeOpen || generationConfig.negativePrompt ? 'text-red-400' : ''}`}
-                    >
-                      <Ban size={15} />
-                      {generationConfig.negativePrompt && (
-                        <div className="absolute top-1 right-1 size-1.5 bg-red-500 rounded-full" />
-                      )}
-                    </button>
-                  </Tooltip>
-                  <DemandMountedGsapDropdown
-                    portal
-                    data-toolbar-popup
-                    open={isNegativeOpen}
-                    onOpenChange={setIsNegativeOpen}
-                    triggerRef={negativeButtonRef}
-                    placement="top-right"
-                    role="dialog"
-                    aria-label="Negative prompt"
-                    className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-3 w-64 p-3"
-                  >
-                    <label
-                      htmlFor="negative-prompt-input"
-                      className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
-                    >
-                      Exclude from Image
-                    </label>
-                    <input
-                      id="negative-prompt-input"
-                      type="text"
-                      value={generationConfig.negativePrompt || ''}
-                      onChange={(e) => updateConfig('negativePrompt', e.target.value)}
-                      placeholder="Blurry, low quality, distortion..."
-                      autoComplete="off"
-                      ref={(el) => el?.focus()}
-                      aria-label="Negative prompt"
-                      className="h-10 w-full rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
-                    />
-                  </DemandMountedGsapDropdown>
-                </div>
-
-                {!isContextOnly ? (
-                  <>
-                    {/* 2. REFINE (Edit with AI) */}
-                    <div className="relative">
-                      <Tooltip content="Edit with AI (Refine)">
+                </p>
+              ) : (
+                <section className="create-tool-block" aria-label="Prompt">
+                  <div className="create-tool-heading">
+                    <span>Prompt</span>
+                    <div className="create-prompt-tools">
+                      <Tooltip content="Analyze references">
                         <button
-                          ref={refineButtonRef}
                           type="button"
-                          onClick={() => {
-                            setIsRefineOpen(!isRefineOpen);
-                            setIsNegativeOpen(false);
-                          }}
-                          aria-label="Open edit instructions"
-                          aria-haspopup="dialog"
-                          aria-expanded={isRefineOpen}
-                          className={`${iconBtnClass} ${isRefineOpen ? activeIconBtnClass : ''}`}
+                          onClick={handleAnalyzeReferences}
+                          aria-label="Analyze references"
+                          className="create-prompt-tool"
                         >
-                          <Edit3 size={15} />
+                          <Scan size={15} />
                         </button>
                       </Tooltip>
-                      <DemandMountedGsapDropdown
-                        portal
-                        data-toolbar-popup
-                        open={isRefineOpen}
-                        onOpenChange={setIsRefineOpen}
-                        triggerRef={refineButtonRef}
-                        placement="top-right"
-                        role="dialog"
-                        aria-label="Edit instructions"
-                        className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-3 w-72 p-3"
-                      >
-                        <label
-                          htmlFor="magic-edit-input"
-                          className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
-                        >
-                          Instructions to Edit
-                        </label>
-                        <div className="flex gap-2">
-                          <input
-                            id="magic-edit-input"
-                            type="text"
-                            value={magicInstruction}
-                            onChange={(e) => setMagicInstruction(e.target.value)}
-                            placeholder="e.g. Make it cyberpunk style..."
-                            autoComplete="off"
-                            ref={(el) => el?.focus()}
-                            onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
-                            aria-label="Edit instructions"
-                            className="h-10 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
-                          />
+                      <div className="relative">
+                        <Tooltip content="Edit with AI (Refine)">
                           <button
+                            ref={refineButtonRef}
                             type="button"
-                            onClick={handleMagicEdit}
-                            disabled={isRefactoring}
-                            aria-label="Apply edit instructions"
-                            className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
+                            onClick={() => {
+                              setIsRefineOpen(!isRefineOpen);
+                              setIsNegativeOpen(false);
+                            }}
+                            aria-label="Open edit instructions"
+                            aria-haspopup="dialog"
+                            aria-expanded={isRefineOpen}
+                            className={`create-prompt-tool ${isRefineOpen ? 'is-active' : ''}`}
                           >
-                            {isRefactoring ? (
-                              <div className="size-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-                            ) : (
-                              <Send size={12} />
-                            )}
+                            <Edit3 size={15} />
                           </button>
-                        </div>
-                      </DemandMountedGsapDropdown>
+                        </Tooltip>
+                        <DemandMountedGsapDropdown
+                          portal
+                          data-toolbar-popup
+                          open={isRefineOpen}
+                          onOpenChange={setIsRefineOpen}
+                          triggerRef={refineButtonRef}
+                          placement="bottom-right"
+                          role="dialog"
+                          aria-label="Edit instructions"
+                          className="studio-mobile-popover z-[100] w-72 p-3"
+                        >
+                          <label
+                            htmlFor="rail-magic-edit-input"
+                            className="mb-2 block text-[10px] font-bold tracking-wide text-zinc-500"
+                          >
+                            Instructions to Edit
+                          </label>
+                          <div className="flex gap-2">
+                            <input
+                              id="rail-magic-edit-input"
+                              type="text"
+                              value={magicInstruction}
+                              onChange={(e) => setMagicInstruction(e.target.value)}
+                              placeholder="e.g. Make it cyberpunk style..."
+                              autoComplete="off"
+                              onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
+                              aria-label="Edit instructions"
+                              className="h-10 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
+                            />
+                            <button
+                              type="button"
+                              onClick={handleMagicEdit}
+                              disabled={isRefactoring}
+                              aria-label="Apply edit instructions"
+                              className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
+                            >
+                              {isRefactoring ? (
+                                <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
+                              ) : (
+                                <Send size={12} />
+                              )}
+                            </button>
+                          </div>
+                        </DemandMountedGsapDropdown>
+                      </div>
+                      <Tooltip content="Auto Enhance Prompt">
+                        <button
+                          type="button"
+                          onClick={onEnhancePrompt}
+                          disabled={isEnhancingPrompt}
+                          aria-label="Enhance prompt"
+                          className={`create-prompt-tool ${isEnhancingPrompt ? 'is-active' : ''}`}
+                        >
+                          {isEnhancingPrompt ? (
+                            <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
+                          ) : (
+                            <Wand2 size={15} />
+                          )}
+                        </button>
+                      </Tooltip>
                     </div>
+                  </div>
+                  <div
+                    data-composer-input
+                    className={`create-prompt-box ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
+                  >
+                    {showQuickStartErrorText ? (
+                      <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200">
+                        Add prompt or image to generate
+                      </div>
+                    ) : null}
+                    {promptField}
+                  </div>
+                </section>
+              )}
 
-                    {/* 3. ENHANCE (Action) */}
-                    <Tooltip content="Auto Enhance Prompt">
+              {isContextOnly ? null : (
+                <section className="create-tool-block" aria-label="Output settings">
+                  <div className="create-tool-heading">
+                    <span>Aspect ratio</span>
+                    <span className="create-tool-heading-meta">{generationConfig.aspectRatio}</span>
+                  </div>
+                  <div className="create-ratio-groups" role="group" aria-label="Aspect ratio">
+                    {ratioGroups.map((group) => (
+                      <div
+                        key={group.orientation}
+                        className="create-ratio-group"
+                        role="group"
+                        aria-label={group.label}
+                      >
+                        <span className="create-ratio-group-label">{group.label}</span>
+                        <div className="create-ratio-segment">
+                          {group.options.map((option) => (
+                            <button
+                              type="button"
+                              key={option.ratio}
+                              aria-label={`${option.ratio} ${option.label}`}
+                              aria-pressed={generationConfig.aspectRatio === option.ratio}
+                              className="create-ratio-option"
+                              onClick={() => {
+                                updateConfig('aspectRatio', option.ratio);
+                                setPreviewRatio(null);
+                              }}
+                              onMouseEnter={() => setPreviewRatio(option.ratio)}
+                              onMouseLeave={() => setPreviewRatio(null)}
+                            >
+                              <span
+                                className="create-ratio-frame"
+                                style={{ aspectRatio: `${option.width} / ${option.height}` }}
+                                aria-hidden="true"
+                              />
+                              <span className="create-ratio-code">{option.ratio}</span>
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="create-images-line">
+                    <span className="create-tool-heading">Images</span>
+                    <div className="create-stepper">
                       <button
                         type="button"
-                        onClick={onEnhancePrompt}
-                        disabled={isEnhancingPrompt}
-                        aria-label="Enhance prompt"
-                        className={`${iconBtnClass} ${isEnhancingPrompt ? 'text-accent-400' : ''}`}
+                        aria-label="Decrease image count"
+                        disabled={currentBatch === previousBatchCount}
+                        onClick={() => updateConfig('batchCount', previousBatchCount)}
                       >
-                        {isEnhancingPrompt ? (
-                          <div className="size-3 border-2 border-accent-400/30 border-t-accent-400 rounded-full animate-spin" />
-                        ) : (
-                          <Wand2 size={15} />
+                        <Minus size={14} />
+                      </button>
+                      <output aria-live="polite">{currentBatch}</output>
+                      <button
+                        type="button"
+                        aria-label="Increase image count"
+                        disabled={currentBatch === nextBatchCount}
+                        onClick={() => updateConfig('batchCount', nextBatchCount)}
+                      >
+                        <Plus size={14} />
+                      </button>
+                    </div>
+                  </div>
+                </section>
+              )}
+
+              {isContextOnly || !showCodexPromptTools ? null : (
+                <section className="create-tool-block" aria-label="Negative prompt">
+                  <div className="create-tool-heading">
+                    <span>Negative prompt</span>
+                  </div>
+                  <input
+                    type="text"
+                    value={generationConfig.negativePrompt || ''}
+                    onChange={(event) => updateConfig('negativePrompt', event.target.value)}
+                    placeholder="Blurry, low quality, distortion..."
+                    autoComplete="off"
+                    aria-label="Negative prompt"
+                    className="create-field-input"
+                  />
+                </section>
+              )}
+            </div>
+          ) : (
+            <div className="flex-1 relative min-w-0">
+              {/* Input Container */}
+              <div
+                data-composer-input
+                className={`flex min-h-9 items-end gap-1.5 rounded-lg border border-white/2 bg-zinc-900/50 p-1 px-2 shadow-lg transition-colors duration-300 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
+              >
+                {showQuickStartErrorText && (
+                  <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200 animate-in fade-in-0 slide-in-from-bottom-1 duration-150">
+                    Add prompt or image to generate
+                  </div>
+                )}
+                <button
+                  type="button"
+                  onClick={() => fileInputRef.current?.click()}
+                  disabled={isNearLimit}
+                  aria-label="Add image reference"
+                  className={iconBtnClass}
+                  title="Add Image"
+                >
+                  <PlusCircle size={17} />
+                </button>
+
+                {hasAttachments && (
+                  <ReferenceTray
+                    attachments={generationConfig.attachments}
+                    onEdit={onOpenEditor}
+                    onRemove={onRemoveAttachment}
+                    onFiles={onFilesDrop}
+                  />
+                )}
+
+                {activeRecipeIndicator && (
+                  <div
+                    data-active-recipe-card={activeRecipeIndicator.id}
+                    aria-label={`Active recipe: ${activeRecipeIndicator.title}. ${activeRecipeIndicator.summary}.`}
+                    title={`${activeRecipeIndicator.title}: ${activeRecipeIndicator.summary}`}
+                    className={`group flex h-10 min-h-10 min-w-[6rem] max-w-[10.75rem] flex-[0_1_10.75rem] items-center gap-1.5 overflow-hidden rounded-xl border px-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-[border-color,background-color,box-shadow] hover:shadow-[0_0_18px_rgba(255,255,255,0.05)] sm:flex-[0_0_10.75rem] ${activeRecipeIndicator.toneClassName}`}
+                  >
+                    <span
+                      className={`h-5 w-1 shrink-0 rounded-[2px] shadow-[0_0_12px_currentColor] ${activeRecipeIndicator.dotClassName}`}
+                    />
+                    <span className="min-w-0">
+                      <span className="block text-[10px] font-black uppercase leading-none tracking-[0.12em] opacity-60">
+                        Recipe
+                      </span>
+                      <span className="block truncate text-[11px] font-black uppercase leading-tight tracking-[0.06em] text-white">
+                        {activeRecipeIndicator.title}
+                      </span>
+                      <span className="block truncate text-[10px] font-medium leading-none opacity-70">
+                        {activeRecipeIndicator.summary}
+                      </span>
+                    </span>
+                  </div>
+                )}
+
+                {isContextOnly ? (
+                  <div
+                    data-task-context
+                    className="hidden min-w-0 flex-1 px-1.5 py-1 text-[11px] leading-relaxed text-zinc-500 sm:block"
+                  >
+                    Add references here. Use the selected task action above to continue.
+                  </div>
+                ) : null}
+
+                {promptField}
+
+                {/* LOGIC AI TOOLS */}
+                <div
+                  className={`${
+                    showCodexPromptTools
+                      ? isContextOnly
+                        ? 'flex shrink-0 items-center gap-1.5'
+                        : 'hidden shrink-0 items-center gap-1.5 sm:flex sm:gap-2'
+                      : 'hidden'
+                  }`}
+                >
+                  {/* 1. NEGATIVE (Exclude) */}
+                  <div className="relative">
+                    <Tooltip content="Negative Prompt (Exclude)">
+                      <button
+                        ref={negativeButtonRef}
+                        type="button"
+                        onClick={() => {
+                          setIsNegativeOpen(!isNegativeOpen);
+                          setIsRefineOpen(false);
+                        }}
+                        aria-label="Open negative prompt"
+                        aria-haspopup="dialog"
+                        aria-expanded={isNegativeOpen}
+                        className={`${iconBtnClass} ${isNegativeOpen || generationConfig.negativePrompt ? 'text-red-400' : ''}`}
+                      >
+                        <Ban size={15} />
+                        {generationConfig.negativePrompt && (
+                          <div className="absolute top-1 right-1 size-1.5 bg-red-500 rounded-full" />
                         )}
                       </button>
                     </Tooltip>
-                  </>
-                ) : null}
+                    <DemandMountedGsapDropdown
+                      portal
+                      data-toolbar-popup
+                      open={isNegativeOpen}
+                      onOpenChange={setIsNegativeOpen}
+                      triggerRef={negativeButtonRef}
+                      placement="top-right"
+                      role="dialog"
+                      aria-label="Negative prompt"
+                      className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-3 w-64 p-3"
+                    >
+                      <label
+                        htmlFor="negative-prompt-input"
+                        className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
+                      >
+                        Exclude from Image
+                      </label>
+                      <input
+                        id="negative-prompt-input"
+                        type="text"
+                        value={generationConfig.negativePrompt || ''}
+                        onChange={(e) => updateConfig('negativePrompt', e.target.value)}
+                        placeholder="Blurry, low quality, distortion..."
+                        autoComplete="off"
+                        ref={(el) => el?.focus()}
+                        aria-label="Negative prompt"
+                        className="h-10 w-full rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
+                      />
+                    </DemandMountedGsapDropdown>
+                  </div>
+
+                  {!isContextOnly ? (
+                    <>
+                      {/* 2. REFINE (Edit with AI) */}
+                      <div className="relative">
+                        <Tooltip content="Edit with AI (Refine)">
+                          <button
+                            ref={refineButtonRef}
+                            type="button"
+                            onClick={() => {
+                              setIsRefineOpen(!isRefineOpen);
+                              setIsNegativeOpen(false);
+                            }}
+                            aria-label="Open edit instructions"
+                            aria-haspopup="dialog"
+                            aria-expanded={isRefineOpen}
+                            className={`${iconBtnClass} ${isRefineOpen ? activeIconBtnClass : ''}`}
+                          >
+                            <Edit3 size={15} />
+                          </button>
+                        </Tooltip>
+                        <DemandMountedGsapDropdown
+                          portal
+                          data-toolbar-popup
+                          open={isRefineOpen}
+                          onOpenChange={setIsRefineOpen}
+                          triggerRef={refineButtonRef}
+                          placement="top-right"
+                          role="dialog"
+                          aria-label="Edit instructions"
+                          className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-3 w-72 p-3"
+                        >
+                          <label
+                            htmlFor="magic-edit-input"
+                            className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
+                          >
+                            Instructions to Edit
+                          </label>
+                          <div className="flex gap-2">
+                            <input
+                              id="magic-edit-input"
+                              type="text"
+                              value={magicInstruction}
+                              onChange={(e) => setMagicInstruction(e.target.value)}
+                              placeholder="e.g. Make it cyberpunk style..."
+                              autoComplete="off"
+                              ref={(el) => el?.focus()}
+                              onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
+                              aria-label="Edit instructions"
+                              className="h-10 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
+                            />
+                            <button
+                              type="button"
+                              onClick={handleMagicEdit}
+                              disabled={isRefactoring}
+                              aria-label="Apply edit instructions"
+                              className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
+                            >
+                              {isRefactoring ? (
+                                <div className="size-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                              ) : (
+                                <Send size={12} />
+                              )}
+                            </button>
+                          </div>
+                        </DemandMountedGsapDropdown>
+                      </div>
+
+                      {/* 3. ENHANCE (Action) */}
+                      <Tooltip content="Auto Enhance Prompt">
+                        <button
+                          type="button"
+                          onClick={onEnhancePrompt}
+                          disabled={isEnhancingPrompt}
+                          aria-label="Enhance prompt"
+                          className={`${iconBtnClass} ${isEnhancingPrompt ? 'text-accent-400' : ''}`}
+                        >
+                          {isEnhancingPrompt ? (
+                            <div className="size-3 border-2 border-accent-400/30 border-t-accent-400 rounded-full animate-spin" />
+                          ) : (
+                            <Wand2 size={15} />
+                          )}
+                        </button>
+                      </Tooltip>
+                    </>
+                  ) : null}
+                </div>
               </div>
             </div>
-          </div>
+          )}
 
           {/* CONTROLS ROW */}
-          <div className="pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1 rounded-lg border border-white/2 bg-zinc-900/50 p-1 shadow-lg transition-colors duration-300 sm:w-auto sm:justify-start">
-            <button
-              type="button"
-              onClick={() => {
-                closeAllMenus();
-                setIsNegativeOpen(false);
-                setIsRefineOpen(false);
-                setIsMobileControlsOpen(true);
-              }}
-              aria-label={
-                isContextOnly ? 'Open frame context controls' : 'Open generation controls'
-              }
-              aria-expanded={isMobileControlsOpen}
-              className={`${btnClass} min-w-0 flex-1 sm:hidden`}
-            >
-              <SlidersHorizontal size={14} />
-              <span>{isContextOnly ? 'Context' : 'Controls'}</span>
-            </button>
+          <div
+            className={
+              isRail
+                ? 'create-tool-footer'
+                : 'pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1 rounded-lg border border-white/2 bg-zinc-900/50 p-1 shadow-lg transition-colors duration-300 sm:w-auto sm:justify-start'
+            }
+          >
+            {isRail ? null : (
+              <button
+                type="button"
+                onClick={() => {
+                  closeAllMenus();
+                  setIsNegativeOpen(false);
+                  setIsRefineOpen(false);
+                  setIsMobileControlsOpen(true);
+                }}
+                aria-label={
+                  isContextOnly ? 'Open frame context controls' : 'Open generation controls'
+                }
+                aria-expanded={isMobileControlsOpen}
+                className={`${btnClass} min-w-0 flex-1 sm:hidden`}
+              >
+                <SlidersHorizontal size={14} />
+                <span>{isContextOnly ? 'Context' : 'Controls'}</span>
+              </button>
+            )}
 
             <div
-              className={`${isMobileControlsOpen ? 'fixed' : 'hidden'} custom-scrollbar inset-x-2 z-[90] flex-col gap-3 overflow-y-auto rounded-2xl border border-white/2 bg-zinc-950/95 p-3 shadow-2xl sm:static sm:flex sm:max-h-none sm:flex-row sm:items-end sm:gap-1 sm:overflow-visible sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none`}
+              className={
+                isRail
+                  ? 'create-tool-execution'
+                  : `${isMobileControlsOpen ? 'fixed' : 'hidden'} custom-scrollbar inset-x-2 z-[90] flex-col gap-3 overflow-y-auto rounded-2xl border border-white/2 bg-zinc-950/95 p-3 shadow-2xl sm:static sm:flex sm:max-h-none sm:flex-row sm:items-end sm:gap-1 sm:overflow-visible sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none`
+              }
               style={
-                isMobileControlsOpen
+                !isRail && isMobileControlsOpen
                   ? {
                       bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)',
                       maxHeight: 'min(62vh, 28rem)',
@@ -829,7 +1141,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   : undefined
               }
             >
-              <div className="flex items-center justify-between border-b border-white/2 pb-2 sm:hidden">
+              <div
+                className={
+                  isRail
+                    ? 'hidden'
+                    : 'flex items-center justify-between border-b border-white/2 pb-2 sm:hidden'
+                }
+              >
                 <div className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
                   {isContextOnly ? 'Frame context' : 'Generation'}
                 </div>
@@ -846,92 +1164,87 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 </button>
               </div>
 
-              <div
-                className={`${
-                  showCodexPromptTools && !isContextOnly
-                    ? 'grid gap-2 rounded-xl border border-white/2 bg-white/[0.03] p-2 sm:hidden'
-                    : 'hidden'
-                }`}
-              >
-                <div className="grid gap-1.5">
-                  <label
-                    htmlFor="mobile-negative-prompt-input"
-                    className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
-                  >
-                    Negative
-                  </label>
-                  <input
-                    id="mobile-negative-prompt-input"
-                    type="text"
-                    value={generationConfig.negativePrompt || ''}
-                    onChange={(e) => updateConfig('negativePrompt', e.target.value)}
-                    placeholder="Blurry, low quality, distortion..."
-                    autoComplete="off"
-                    aria-label="Negative prompt"
-                    className="h-10 rounded-xl border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
-                  />
-                </div>
-                <div className="grid gap-1.5">
-                  <label
-                    htmlFor="mobile-magic-edit-input"
-                    className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
-                  >
-                    Refine
-                  </label>
-                  <div className="flex gap-2">
+              {showCodexPromptTools && !isContextOnly && !isRail ? (
+                <div className="grid gap-2 rounded-xl border border-white/2 bg-white/[0.03] p-2 sm:hidden">
+                  <div className="grid gap-1.5">
+                    <label
+                      htmlFor="mobile-negative-prompt-input"
+                      className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                    >
+                      Negative
+                    </label>
                     <input
-                      id="mobile-magic-edit-input"
+                      id="mobile-negative-prompt-input"
                       type="text"
-                      value={magicInstruction}
-                      onChange={(e) => setMagicInstruction(e.target.value)}
-                      placeholder="Make it sharper, warmer, cinematic..."
+                      value={generationConfig.negativePrompt || ''}
+                      onChange={(e) => updateConfig('negativePrompt', e.target.value)}
+                      placeholder="Blurry, low quality, distortion..."
                       autoComplete="off"
-                      onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
-                      aria-label="Edit instructions"
-                      className="h-10 min-w-0 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
+                      aria-label="Negative prompt"
+                      className="h-10 rounded-xl border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
                     />
+                  </div>
+                  <div className="grid gap-1.5">
+                    <label
+                      htmlFor="mobile-magic-edit-input"
+                      className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                    >
+                      Refine
+                    </label>
+                    <div className="flex gap-2">
+                      <input
+                        id="mobile-magic-edit-input"
+                        type="text"
+                        value={magicInstruction}
+                        onChange={(e) => setMagicInstruction(e.target.value)}
+                        placeholder="Make it sharper, warmer, cinematic..."
+                        autoComplete="off"
+                        onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
+                        aria-label="Edit instructions"
+                        className="h-10 min-w-0 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
+                      />
+                      <button
+                        type="button"
+                        onClick={handleMagicEdit}
+                        disabled={isRefactoring}
+                        aria-label="Apply edit instructions"
+                        className="flex size-10 items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:opacity-50"
+                      >
+                        {isRefactoring ? (
+                          <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
+                        ) : (
+                          <Send size={12} />
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                  <div>
                     <button
                       type="button"
-                      onClick={handleMagicEdit}
-                      disabled={isRefactoring}
-                      aria-label="Apply edit instructions"
-                      className="flex size-10 items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:opacity-50"
+                      onClick={onEnhancePrompt}
+                      disabled={isEnhancingPrompt}
+                      aria-label="Enhance prompt"
+                      className="flex h-10 items-center justify-center gap-2 rounded-xl border border-white/2 bg-white/5 text-[10px] font-black uppercase leading-none tracking-[0.18em] text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
                     >
-                      {isRefactoring ? (
-                        <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
+                      {isEnhancingPrompt ? (
+                        <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
                       ) : (
-                        <Send size={12} />
+                        <Wand2 size={14} />
                       )}
+                      Enhance
                     </button>
                   </div>
                 </div>
-                <div>
-                  <button
-                    type="button"
-                    onClick={onEnhancePrompt}
-                    disabled={isEnhancingPrompt}
-                    aria-label="Enhance prompt"
-                    className="flex h-10 items-center justify-center gap-2 rounded-xl border border-white/2 bg-white/5 text-[10px] font-black uppercase leading-none tracking-[0.18em] text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
-                  >
-                    {isEnhancingPrompt ? (
-                      <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
-                    ) : (
-                      <Wand2 size={14} />
-                    )}
-                    Enhance
-                  </button>
-                </div>
-              </div>
+              ) : null}
 
               <div className="grid grid-cols-2 gap-2 sm:contents">
                 {/* Aspect Ratio */}
-                <div className={`${isContextOnly ? 'hidden' : 'relative min-w-0'}`}>
+                <div className={`${isRail || isContextOnly ? 'hidden' : 'relative min-w-0'}`}>
                   <button
                     ref={aspectRatioButtonRef}
                     type="button"
                     onClick={() => {
                       setIsAspectRatioOpen(!isAspectRatioOpen);
-                      setIsModelOpen(false);
                       setIsExecutionOpen(false);
                       setIsBatchOpen(false);
                     }}
@@ -988,7 +1301,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       type="button"
                       onClick={() => {
                         setIsSizeOpen(!isSizeOpen);
-                        setIsModelOpen(false);
                         setIsExecutionOpen(false);
                       }}
                       aria-label={`Image size: ${generationConfig.imageSize || '1K'}`}
@@ -1029,13 +1341,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 )}
 
                 {/* Batch Count */}
-                <div className={`${isContextOnly ? 'hidden' : 'relative min-w-0'}`}>
+                <div className={`${isRail || isContextOnly ? 'hidden' : 'relative min-w-0'}`}>
                   <button
                     ref={batchButtonRef}
                     type="button"
                     onClick={() => {
                       setIsBatchOpen(!isBatchOpen);
-                      setIsModelOpen(false);
                       setIsExecutionOpen(false);
                     }}
                     aria-label={`Batch count: ${generationConfig.batchCount || 1}`}
@@ -1055,7 +1366,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     placement="top-left"
                     className="studio-mobile-popover absolute bottom-full left-0 z-[100] mb-4 flex gap-2 p-2"
                   >
-                    {BATCH_COUNTS.map((count) => (
+                    {batchCounts.map((count) => (
                       <button
                         type="button"
                         key={count}
@@ -1074,90 +1385,42 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   </DemandMountedGsapDropdown>
                 </div>
 
-                {showCodexModelChrome ? (
-                  <>
-                    {/* Model Selector */}
-                    <div className="relative min-w-0">
-                      <button
-                        ref={modelButtonRef}
-                        type="button"
-                        onClick={() => {
-                          setIsModelOpen(!isModelOpen);
-                          setIsAspectRatioOpen(false);
-                          setIsExecutionOpen(false);
-                        }}
-                        aria-label={`Generation model: ${
-                          AVAILABLE_MODELS.find((m) => m.id === generationConfig.model)?.name ??
-                          generationConfig.model
-                        }`}
-                        aria-haspopup="menu"
-                        aria-expanded={isModelOpen}
-                        className={btnClass}
-                      >
-                        <ModelIcon model={generationConfig.model} />
-                        <span className="text-[8px] sm:hidden 2xl:inline">
-                          {AVAILABLE_MODELS.find(
-                            (m) => m.id === generationConfig.model,
-                          )?.name.replace('Codex ', '')}
-                        </span>
-                      </button>
-                      <DemandMountedGsapDropdown
-                        portal
-                        data-toolbar-popup
-                        open={isModelOpen}
-                        onOpenChange={setIsModelOpen}
-                        triggerRef={modelButtonRef}
-                        placement="top-right"
-                        className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-4 min-w-[240px] p-2"
-                      >
-                        {AVAILABLE_MODELS.map((m) => (
-                          <button
-                            type="button"
-                            key={m.id}
-                            role="menuitemradio"
-                            aria-checked={generationConfig.model === m.id}
-                            data-dropdown-item
-                            onClick={() => {
-                              updateConfig('model', m.id);
-                              setIsModelOpen(false);
-                            }}
-                            className={`mb-1 min-h-12 w-full rounded-xl px-3 py-2.5 text-left transition-[color,background-color,border-color,opacity,transform] last:mb-0 ${generationConfig.model === m.id ? 'bg-gradient-to-r from-accent-900/50 to-accent-800/50 border border-accent-700/2' : 'border border-transparent text-zinc-400 hover:bg-white/5'}`}
-                          >
-                            <div className="flex items-center gap-2 mb-0.5">
-                              <ModelIcon model={m.id} />
-                              <div
-                                className={`text-[10px] font-black uppercase tracking-wide ${generationConfig.model === m.id ? 'text-accent-300' : 'text-zinc-300'}`}
-                              >
-                                {m.name}
-                              </div>
-                            </div>
-                            <div className="pl-6 text-[10px] font-bold text-zinc-500">
-                              {m.description}
-                            </div>
-                          </button>
-                        ))}
-                      </DemandMountedGsapDropdown>
-                    </div>
+                <div className={isRail ? 'create-tool-provider-row' : 'contents'}>
+                  {commandCenter && onSelectProvider ? (
+                    <ProviderQuickSwitch
+                      provider={commandCenter.provider}
+                      providerOptions={commandCenter.providerOptions}
+                      compactMode={commandCenter.compactMode}
+                      isProviderSaving={isProviderSaving}
+                      onSelectProvider={onSelectProvider}
+                      onOpenSettings={onOpenSettings}
+                      placement="top-left"
+                      showLabel
+                      className={isRail ? 'min-w-0' : undefined}
+                      triggerClassName={`${btnClass} ${isRail ? 'create-tool-chip' : ''}`}
+                    />
+                  ) : null}
 
-                    {/* Codex Task Execution Selector */}
+                  {showCodexModelChrome ? (
                     <div className="relative min-w-0">
                       <button
                         ref={executionButtonRef}
                         type="button"
                         onClick={() => {
                           setIsExecutionOpen(!isExecutionOpen);
-                          setIsModelOpen(false);
                           setIsAspectRatioOpen(false);
                           setIsBatchOpen(false);
                         }}
                         aria-label={`Codex task execution: ${executionSummary}`}
                         aria-haspopup="dialog"
                         aria-expanded={isExecutionOpen}
-                        className={btnClass}
+                        className={`${btnClass} ${isRail ? 'create-tool-chip' : ''}`}
                       >
-                        <BrainCircuit size={14} />
-                        <span className="text-[8px] sm:hidden">Task</span>
-                        <span className="hidden text-[8px] 2xl:inline">{executionSummary}</span>
+                        {isRail ? null : <BrainCircuit size={14} />}
+                        <span className="min-w-0 truncate text-[8px]">
+                          {isRail ? executionChipLabel : executionSummary}
+                        </span>
+                        {isRail ? <ChevronDown size={12} aria-hidden="true" /> : null}
                       </button>
                       <DemandMountedGsapDropdown
                         portal
@@ -1168,7 +1431,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         placement="top-right"
                         role="dialog"
                         aria-label="Codex task execution"
-                        className="studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 w-[min(94vw,560px)] p-3"
+                        className={`studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 p-3 ${isRail ? 'create-execution-menu' : 'w-[min(94vw,560px)]'}`}
                       >
                         <div className="mb-3 flex items-center justify-between gap-3">
                           <div className="min-w-0">
@@ -1445,20 +1708,20 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         )}
                       </DemandMountedGsapDropdown>
                     </div>
-                  </>
-                ) : (
-                  <div
-                    role="status"
-                    aria-label={`Generation provider: ${formatGenerationProviderLabel(activeProviderId)}`}
-                    title="Generation provider"
-                    className={`${btnClass} cursor-default`}
-                  >
-                    <Zap size={14} />
-                    <span className="text-[8px] font-black uppercase tracking-wide">
-                      {formatGenerationProviderLabel(activeProviderId)}
-                    </span>
-                  </div>
-                )}
+                  ) : commandCenter && onSelectProvider ? null : (
+                    <div
+                      role="status"
+                      aria-label={`Generation provider: ${formatGenerationProviderLabel(activeProviderId)}`}
+                      title="Generation provider"
+                      className={`${btnClass} cursor-default`}
+                    >
+                      <Zap size={14} />
+                      <span className="text-[8px] font-black uppercase tracking-wide">
+                        {formatGenerationProviderLabel(activeProviderId)}
+                      </span>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -1481,9 +1744,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-xl flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
                     text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer disabled:cursor-not-allowed disabled:opacity-45
                     ${
-                      isGenerating
-                        ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-200 border border-accent-500/2 shadow-lg hover:border-accent-300/2 hover:text-white active:scale-95'
-                        : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/2 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
+                      isRail
+                        ? `create-generate-button ${isGenerating ? 'is-busy' : ''}`
+                        : isGenerating
+                          ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-200 border border-accent-500/2 shadow-lg hover:border-accent-300/2 hover:text-white active:scale-95'
+                          : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/2 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
                     }
                 `}
               >
@@ -1496,9 +1761,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <>
                         <Wand2
                           size={14}
-                          className="group-hover:rotate-12 transition-transform text-accent-300"
+                          className={`group-hover:rotate-12 transition-transform ${isRail ? '' : 'text-accent-300'}`}
                         />
-                        <span className="text-white">GENERATE</span>
+                        <span className={isRail ? '' : 'text-white'}>GENERATE</span>
                       </>
                     </div>
                   </>

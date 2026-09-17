@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState, useDeferredValue } from 'react';
 
+import { buildStudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
 import type { RecipePageRuntimeProps } from '../components/RecipePage';
@@ -690,6 +691,23 @@ export function useStudioShell(): StudioShellController {
       },
       provider: {
         activeProviderId: studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex',
+        commandCenter: buildStudioCommandCenterProjection({
+          settings: studioSettings.data.settingsDomain.settings,
+          providerCapabilities: studioSettings.data.providerDomain.capabilities,
+          providerRuntimePreflight: studioSettings.data.providerDomain.runtimePreflight,
+          statusItems: studioRuntime.status.diagnostics.statusItems,
+          activeJobCount: studioRuntime.activity.studioJobs.filter(
+            (job) => job.status === 'queued' || job.status === 'running',
+          ).length,
+          reviewJobCount: studioRuntime.activity.studioJobs.filter(
+            (job) => job.status === 'needs_review',
+          ).length,
+          isQueueOpen: viewState.queue.isOpen,
+        }),
+        onSelectProvider: (providerId) =>
+          studioSettings.data.settingsDomain.update({ defaultProviderId: providerId }),
+        isProviderSaving: studioSettings.data.settingsDomain.isSaving,
+        onOpenSettings: viewState.overlays.settings.open,
         codexTransport: codexDefaultTransport,
         codexAvailableTransports,
         grokCanExecute: resolveGrokCanExecute({
@@ -722,8 +740,14 @@ export function useStudioShell(): StudioShellController {
       openEditorRoute,
       studioRuntime.maintenance.verifyCodexSession,
       studioSettings.data.settingsDomain.settings?.defaultProviderId,
+      studioSettings.data.settingsDomain.settings,
+      studioSettings.data.settingsDomain.isSaving,
       studioSettings.data.providerDomain.capabilities,
       studioSettings.data.providerDomain.runtimePreflight,
+      studioRuntime.status.diagnostics.statusItems,
+      studioRuntime.activity.studioJobs,
+      viewState.queue.isOpen,
+      viewState.overlays.settings.open,
       codexAvailableTransports,
       codexDefaultTransport,
     ],

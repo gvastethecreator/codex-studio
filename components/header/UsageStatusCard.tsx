@@ -6,6 +6,8 @@ import Tooltip from '../Tooltip';
 interface UsageStatusCardProps {
   usage: StudioUsageSummary;
   onOpenDashboard: () => void;
+  className?: string;
+  popoverPlacement?: 'bottom' | 'top';
 }
 
 function getUsageBarClass(availablePercent: number) {
@@ -19,7 +21,12 @@ function getUsageDetailLabel(label: string, meta: string) {
   return scope && label.startsWith(`${scope} · `) ? label.slice(scope.length + 3) : label;
 }
 
-export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps) {
+export function UsageStatusCard({
+  usage,
+  onOpenDashboard,
+  className,
+  popoverPlacement = 'bottom',
+}: UsageStatusCardProps) {
   const [isOpen, setIsOpen] = useState(false);
   const trigger = useRef<HTMLButtonElement>(null);
   const root = useRef<HTMLDivElement>(null);
@@ -59,14 +66,15 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
       : usage.tooltip;
 
   return (
-    <div ref={root} className="relative hidden h-8 shrink-0 items-center lg:flex">
-      <Tooltip content={tooltip} position="bottom">
+    <div ref={root} className={className ?? 'relative hidden h-8 shrink-0 items-center lg:flex'}>
+      <Tooltip content={tooltip} position={popoverPlacement === 'top' ? 'top' : 'bottom'}>
         <button
           type="button"
           ref={trigger}
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
-          className={`studio-hit-target flex h-8 items-center gap-1.5 rounded-lg border px-2 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-white/8 cursor-pointer ${usageToneClasses}`}
+          className={`studio-hit-target flex items-center gap-1.5 rounded-lg border px-2 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-white/8 cursor-pointer ${popoverPlacement === 'top' ? 'h-7' : 'h-8'} ${usageToneClasses}`}
+          aria-label="Usage status"
         >
           <div className="flex size-5 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
             {usage.tone === 'offline' ? <WifiOff size={13} /> : <Gauge size={13} />}
@@ -117,7 +125,7 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
         <div
           role="region"
           aria-label="Account usage"
-          className="absolute right-0 top-11 z-[100] w-80 rounded-xl border border-white/10 bg-zinc-900 p-4 shadow-xl"
+          className={`absolute right-0 z-[100] w-80 rounded-xl border border-white/10 bg-zinc-900 p-4 shadow-xl ${popoverPlacement === 'top' ? 'bottom-9' : 'top-11'}`}
         >
           <div className="flex items-center justify-between">
             <strong>Account usage</strong>

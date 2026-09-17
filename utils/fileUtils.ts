@@ -85,6 +85,28 @@ export async function fetchImageBlob(source: string) {
   return response.blob();
 }
 
+async function encodePngBlob(blob: Blob): Promise<Blob> {
+  if (blob.type === 'image/png') return blob;
+  if (typeof createImageBitmap !== 'function') return blob;
+  const bitmap = await createImageBitmap(blob);
+  const canvas = document.createElement('canvas');
+  canvas.width = bitmap.width;
+  canvas.height = bitmap.height;
+  const context = canvas.getContext('2d');
+  if (!context) return blob;
+  context.drawImage(bitmap, 0, 0);
+  const png = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'));
+  return png ?? blob;
+}
+
+export async function copyImageToClipboard(source: string) {
+  if (!navigator.clipboard?.write || typeof ClipboardItem === 'undefined') {
+    throw new Error('Clipboard is not available in this browser.');
+  }
+  const blob = await encodePngBlob(await fetchImageBlob(source));
+  await navigator.clipboard.write([new ClipboardItem({ [blob.type || 'image/png']: blob })]);
+}
+
 /**
  * Export any serializable payload as a downloadable JSON file.
  */

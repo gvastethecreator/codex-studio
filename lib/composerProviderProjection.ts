@@ -31,11 +31,20 @@ const EMPTY_CODEX_MODELS: CodexModel[] = [];
 
 export type ComposerProviderKind = 'codex' | 'grok' | 'other';
 
+export const PROVIDER_BATCH_MAX = 10;
+
+export function resolveProviderMaxOutputCount(providerId: GenerationProviderId): number {
+  if (providerId === 'grok' || providerId === 'google' || providerId === 'antigravity') return 1;
+  if (providerId === 'fal') return 4;
+  return PROVIDER_BATCH_MAX;
+}
+
 export interface ComposerProviderProjection {
   kind: ComposerProviderKind;
   ratios: typeof IMAGE_GEN_RATIO_OPTIONS;
   showCodexPromptTools: boolean;
   showCodexModelChrome: boolean;
+  maxOutputCount: number;
   generateBlock: GrokImagineGenerateBlock | null;
   execution: {
     models: CodexModel[];
@@ -195,6 +204,7 @@ export function buildComposerProviderProjection({
     ratios: kind === 'grok' ? listGrokImagineRatioOptions() : IMAGE_GEN_RATIO_OPTIONS,
     showCodexPromptTools: kind !== 'grok',
     showCodexModelChrome: kind === 'codex',
+    maxOutputCount: resolveProviderMaxOutputCount(providerId),
     generateBlock:
       codexBlock ??
       resolveGrokImagineGenerateBlock({
