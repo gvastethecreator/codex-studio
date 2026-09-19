@@ -130,7 +130,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
         aria-live="polite"
         aria-atomic="true"
         data-style-active-image-label={activeCardImage.label}
-        className="pointer-events-none absolute left-1/2 top-2 z-20 -translate-x-1/2 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/65 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-ink)] shadow-lg backdrop-blur-md"
+        className="pointer-events-none absolute left-1/2 top-2 z-20 -translate-x-1/2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/65 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] shadow-lg backdrop-blur-md"
       >
         {activeCardImage.label}
       </div>
@@ -138,11 +138,11 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
 
     const staleBadge =
       activeCardImage.kind === 'stale-default' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-amber-400/2 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
+        <div className="absolute left-2 top-2 z-20 rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)] shadow-lg backdrop-blur-md">
           Stale
         </div>
       ) : activeCardImage.kind === 'preview' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-sky-400/2 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
+        <div className="absolute left-2 top-2 z-20 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)] shadow-lg backdrop-blur-md">
           Preview
         </div>
       ) : null;
@@ -195,7 +195,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(-1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 text-[color:var(--wb-ink)]/90 shadow-lg backdrop-blur-md transition-colors hover:bg-[color:var(--wb-panel)]/85"
+              className="pointer-events-auto flex size-8 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 text-[color:var(--wb-ink)]/90 shadow-lg backdrop-blur-md transition-colors hover:bg-[color:var(--wb-panel)]/85"
               aria-label={`Previous image for ${presetDisplayName}`}
             >
               <ChevronLeft size={14} />
@@ -207,7 +207,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 text-[color:var(--wb-ink)]/90 shadow-lg backdrop-blur-md transition-colors hover:bg-[color:var(--wb-panel)]/85"
+              className="pointer-events-auto flex size-8 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 text-[color:var(--wb-ink)]/90 shadow-lg backdrop-blur-md transition-colors hover:bg-[color:var(--wb-panel)]/85"
               aria-label={`Next image for ${presetDisplayName}`}
             >
               <ChevronRight size={14} />
@@ -225,7 +225,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
             }}
             onKeyDown={handleApplyFromKeyboard}
             disabled={selectionDisabled}
-            className="rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/60 p-1.5 text-[color:var(--wb-ink)] shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600 disabled:cursor-not-allowed disabled:opacity-45"
+            className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/60 p-1.5 text-[color:var(--wb-ink)] shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600 disabled:cursor-not-allowed disabled:opacity-45"
             title={
               selectionDisabled
                 ? 'Maximum 5 styles selected'
@@ -251,11 +251,11 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       aria-label={`${active ? 'Remove' : 'Select'} ${presetDisplayName}`}
     >
       <div
-        className={`flex size-14 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] transition-colors duration-300 group-hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] ${theme.text}`}
+        className={`flex size-14 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] transition-colors duration-300 group-hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] ${theme.text}`}
       >
         <Palette size={24} />
       </div>
-      <span className="translate-y-2 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)] opacity-0 transition-[opacity,transform] group-hover:translate-y-0 group-hover:opacity-100">
+      <span className="translate-y-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)] opacity-0 transition-[opacity,transform] group-hover:translate-y-0 group-hover:opacity-100">
         {active ? 'Selected' : 'Select'}
       </span>
     </button>
@@ -348,16 +348,18 @@ export const StylePresetCard = React.memo(function StylePresetCard({
       delay={200}
       content={
         <div className="flex w-64 flex-col gap-2 p-3 text-left">
-          <div className="mb-1 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+          <div className="mb-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             Prompt Preview
           </div>
-          <div className="flex max-h-48 flex-col gap-1 overflow-y-auto font-mono text-[10px] leading-relaxed text-[color:var(--wb-ink)] custom-scrollbar">
+          <div className="flex max-h-48 flex-col gap-1 overflow-y-auto font-mono text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-ink)] custom-scrollbar">
             {Object.entries(preset.style).map(([key, value]) => {
               const previewValue = describePreviewValue(value);
               if (!previewValue) return null;
               return (
                 <div key={key}>
-                  <span className="capitalize text-[color:var(--wb-muted)]">{key.replace(/_/g, ' ')}:</span>{' '}
+                  <span className="capitalize text-[color:var(--wb-muted)]">
+                    {key.replace(/_/g, ' ')}:
+                  </span>{' '}
                   {previewValue}
                 </div>
               );
@@ -385,7 +387,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         data-style-source-pack-id={sourceProvenance?.sourcePackId ?? ''}
         data-style-source-category={sourceProvenance?.sourceCategory ?? ''}
         data-style-collection-role={sourceProvenance?.collectionRole ?? ''}
-        className={`group relative aspect-[3/4] overflow-hidden rounded-[6px] text-left transition-[border-color,background-color,box-shadow,transform] duration-200 ease-out hover:-translate-y-0.5 ${
+        className={`group relative aspect-[3/4] overflow-hidden rounded-[var(--wb-radius)] text-left transition-[border-color,background-color,box-shadow,transform] duration-200 ease-out hover:-translate-y-0.5 ${
           active
             ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-[color:var(--wb-panel)] shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
             : 'border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-panel)]/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
@@ -419,7 +421,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
               e.stopPropagation();
               onToggleFavorite(preset.id);
             }}
-            className={`rounded-[6px] border border-[color:var(--wb-line)] p-1.5 backdrop-blur-md transition-[background-color,color,border-color,transform] duration-150 ${favorite ? 'bg-[color:var(--wb-panel)]/60 text-rose-500' : 'bg-[color:var(--wb-panel)]/35 text-[color:var(--wb-muted)] hover:bg-[color:var(--wb-panel)]/60 hover:text-rose-400'}`}
+            className={`rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] p-1.5 backdrop-blur-md transition-[background-color,color,border-color,transform] duration-150 ${favorite ? 'bg-[color:var(--wb-panel)]/60 text-rose-500' : 'bg-[color:var(--wb-panel)]/35 text-[color:var(--wb-muted)] hover:bg-[color:var(--wb-panel)]/60 hover:text-[color:var(--wb-danger)]'}`}
             title={favorite ? 'Unpin' : 'Pin to top'}
           >
             <Heart
@@ -438,17 +440,17 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                 data-style-source-pack-id={sourceProvenance.sourcePackId}
                 data-style-source-category={sourceProvenance.sourceCategory}
                 data-style-collection-role={sourceProvenance.collectionRole}
-                className="mb-1 flex min-w-0 items-center gap-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]"
+                className="mb-1 flex min-w-0 items-center gap-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]"
                 title={`${sourceProvenance.sourcePackName} / ${sourceProvenance.sourceCategory}`}
               >
-                <span className="shrink-0 rounded-[4px] border border-[color:var(--wb-line)] bg-white/[0.045] px-1.5 py-0.5 text-[color:var(--wb-ink)]">
+                <span className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.045] px-1.5 py-0.5 text-[color:var(--wb-ink)]">
                   {sourceProvenance.sourcePackName}
                 </span>
-                <span className="min-w-0 truncate rounded-[4px] border border-[color:var(--wb-line)] bg-black/18 px-1.5 py-0.5 text-[color:var(--wb-muted)]">
+                <span className="min-w-0 truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-black/18 px-1.5 py-0.5 text-[color:var(--wb-muted)]">
                   {sourceProvenance.sourceCategory}
                 </span>
                 {sourceProvenance.collectionRole !== 'primary' ? (
-                  <span className="shrink-0 rounded-[4px] border border-[color:var(--wb-line)] px-1 py-0.5 text-[color:var(--wb-muted)]">
+                  <span className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-1 py-0.5 text-[color:var(--wb-muted)]">
                     {sourceProvenance.collectionRole.replace('_', ' ')}
                   </span>
                 ) : null}
@@ -465,7 +467,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
             >
               <div className="flex w-full items-center justify-between gap-2">
                 <span
-                  className={`truncate pr-8 text-[9px] font-black uppercase tracking-tight transition-colors ${active ? 'text-[color:var(--wb-ink)]' : 'text-[color:var(--wb-ink)] group-hover:text-[color:var(--wb-ink)]'}`}
+                  className={`truncate pr-8 text-[length:var(--wbp-label)] font-semibold tracking-tight transition-colors ${active ? 'text-[color:var(--wb-ink)]' : 'text-[color:var(--wb-ink)] group-hover:text-[color:var(--wb-ink)]'}`}
                 >
                   {presetDisplayName}
                 </span>
@@ -473,7 +475,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                   <div className="size-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
                 )}
               </div>
-              <span className="mt-1 block max-h-0 overflow-hidden pr-7 text-[8px] leading-relaxed text-[color:var(--wb-ink)]/80 opacity-0 transition-[max-height,opacity,transform,color] duration-200 ease-out group-hover:max-h-10 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-[color:var(--wb-ink)]/90 group-focus-within:max-h-10 group-focus-within:translate-y-0 group-focus-within:opacity-100">
+              <span className="mt-1 block max-h-0 overflow-hidden pr-7 text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-ink)]/80 opacity-0 transition-[max-height,opacity,transform,color] duration-200 ease-out group-hover:max-h-10 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-[color:var(--wb-ink)]/90 group-focus-within:max-h-10 group-focus-within:translate-y-0 group-focus-within:opacity-100">
                 {preset.style.aesthetic}
               </span>
             </button>
@@ -483,7 +485,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                 type="button"
                 aria-label={`Copy style prompt for ${presetDisplayName}`}
                 onClick={(e) => onCopy(e, preset)}
-                className="rounded-[6px] p-1 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                className="rounded-[var(--wb-radius)] p-1 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                 title="Copy Style Prompt"
               >
                 {copied ? <Check size={12} className="text-green-500" /> : <Copy size={12} />}

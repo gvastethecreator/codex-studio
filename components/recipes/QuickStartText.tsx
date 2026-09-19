@@ -29,13 +29,13 @@ export const QuickStartText: React.FC<QuickStartTextProps> = ({
       <h3
         ref={titleFit.ref as React.RefObject<HTMLHeadingElement>}
         style={titleFit.style}
-        className={`font-black uppercase transition-colors ${toneClassName}`}
+        className={`font-semibold transition-colors ${toneClassName}`}
       >
         {title}
       </h3>
       {subtitle && (
         <p
-          className={`mt-2 text-[10px] font-bold uppercase leading-snug tracking-[0.18em] transition-colors ${subtitleClassName}`}
+          className={`mt-2 text-[length:var(--wbp-label)] font-bold leading-snug tracking-normal transition-colors ${subtitleClassName}`}
         >
           {subtitle}
         </p>

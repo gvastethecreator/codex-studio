@@ -1,24 +1,19 @@
 import { RecipeControls } from './RecipeWorkbenchContext';
-import React, { useState, useRef, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
-  IconUpload as Upload,
-  IconX as X,
   IconRotateClockwise as RotateCw,
   IconArrowBarUp as ArrowUpFromLine,
   IconZoomIn as ZoomIn,
   IconCamera as Camera,
   IconEye as Eye,
   IconRotate3d as Move3d,
-  IconAdjustmentsHorizontal as SlidersHorizontal,
   IconLoader2 as Loader2,
-  IconMaximize as Maximize2,
   IconPointer as MousePointer2,
 } from '@tabler/icons-react';
-import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
+import type { ImageGenerationConfig } from '../../types';
 import { useCameraViewport } from '../../hooks/useCameraViewport';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { createCameraRecipeParams } from '../../lib/recipeDerivedParams';
-import { hasRecipeIdentity } from '../../lib/recipeIdentity';
 import { RecipeLayout } from './RecipeLayout';
 import { QuickStartText } from './QuickStartText';
 import { getRecipeModuleUiModel, getRecipeRange } from './recipeModuleUi';
@@ -29,12 +24,7 @@ interface CameraAnglesRecipeProps {
     key: K,
     value: ImageGenerationConfig[K],
   ) => void;
-  updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
-  onFileSelect: (files: File[]) => void;
-  onGenerate: (prompt?: string) => void;
   isGenerating: boolean;
-  images: GeneratedImageWithConfig[];
-  onSelectImage: (image: GeneratedImageWithConfig) => void;
 }
 
 const { module: CAMERA_MODULE } = getRecipeModuleUiModel('camera');
@@ -48,85 +38,38 @@ interface CameraAnglesInfoPanelProps {
   hPos: string;
   vPos: string;
   framing: string;
-  cameraImages: GeneratedImageWithConfig[];
-  onSelectImage: (img: GeneratedImageWithConfig) => void;
 }
 
-function CameraAnglesInfoPanel({
-  hPos,
-  vPos,
-  framing,
-  cameraImages,
-  onSelectImage,
-}: CameraAnglesInfoPanelProps) {
+function CameraAnglesInfoPanel({ hPos, vPos, framing }: CameraAnglesInfoPanelProps) {
   return (
     <>
       {/* Output Stats */}
-      <div className="shrink-0 rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-5 shadow-xl">
+      <div className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-5 shadow-xl">
         <div className="flex items-center gap-3 mb-3">
-          <div className="p-2 bg-cyan-500/10 rounded-lg">
-            <Eye size={14} className="text-cyan-400" />
+          <div className="p-2 bg-cyan-500/10 rounded-[var(--wb-radius)]">
+            <Eye size={14} className="text-[color:var(--wb-info)]" />
           </div>
           <div>
-            <h3 className="text-[10px] font-black text-[color:var(--wb-ink)] uppercase tracking-widest">
+            <h3 className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tracking-normal">
               Virtual framing
             </h3>
-            <p className="text-[8px] text-[color:var(--wb-muted)] font-bold uppercase">
+            <p className="text-[length:var(--wbp-label)] text-[color:var(--wb-muted)] font-bold">
               Camera settings for the next image
             </p>
           </div>
         </div>
-        <div className="p-3 bg-[color:var(--wb-well)] rounded-xl border border-[color:var(--wb-line)] space-y-2">
-          <p className="text-[10px] font-bold text-[color:var(--wb-ink)] leading-relaxed">
+        <div className="p-3 bg-[color:var(--wb-well)] rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] space-y-2">
+          <p className="text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-ink)] leading-relaxed">
             <span className="text-cyan-500">POS:</span> {hPos}
           </p>
-          <p className="text-[10px] font-bold text-[color:var(--wb-ink)] leading-relaxed">
+          <p className="text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-ink)] leading-relaxed">
             <span className="text-pink-500">ANG:</span> {vPos}
           </p>
-          <p className="text-[10px] font-bold text-[color:var(--wb-ink)] leading-relaxed">
+          <p className="text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-ink)] leading-relaxed">
             <span className="text-yellow-500">LENS:</span> {framing}
           </p>
         </div>
       </div>
-
-      {/* Workspace Gallery */}
-      {cameraImages.length > 0 && (
-        <div className="flex-1 min-h-0 bg-[color:var(--wb-well)] border border-[color:var(--wb-line)] rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
-          <div className="flex shrink-0 items-center justify-between px-2">
-            <span className="text-[9px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest">
-              Workspace Gallery
-            </span>
-            <span className="text-[9px] font-bold text-[color:var(--wb-dim)] uppercase">
-              {cameraImages.length} Renders
-            </span>
-          </div>
-
-          <div className="flex-1 overflow-y-auto custom-scrollbar grid grid-cols-2 gap-2 p-1 content-start">
-            {cameraImages.map((img) => (
-              <button
-                type="button"
-                aria-label={`Select camera image ${img.id}`}
-                key={img.id}
-                onClick={() => onSelectImage(img)}
-                className="relative aspect-square w-full rounded-xl overflow-hidden border border-[color:var(--wb-line)] hover:border-cyan-500/2 transition-[border-color,box-shadow] group shadow-sm hover:shadow-lg"
-              >
-                <img
-                  src={img.thumbnail || img.src}
-                  className="size-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
-                  loading="lazy"
-                  alt=""
-                />
-                <div className="absolute inset-0 bg-[color:var(--wb-well)] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                  <Maximize2 size={16} className="text-[color:var(--wb-ink)] drop-shadow-md" />
-                </div>
-                {img.isFavorite && (
-                  <div className="absolute top-1 right-1 size-2 bg-cyan-500 rounded-full shadow-lg" />
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
     </>
   );
 }
@@ -134,13 +77,9 @@ function CameraAnglesInfoPanel({
 export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
   config,
   updateConfig,
-  onFileSelect,
   isGenerating,
-  images,
-  onSelectImage,
 }) => {
   const [isEstimating, setIsEstimating] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const activeImage = config.attachments[0];
   const hasReference = !!activeImage;
@@ -156,16 +95,6 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
     referenceImageSrc: activeImage?.dataUrl ?? null,
   });
 
-  // Calculate aspect ratio for the box
-  const ratioValue = useMemo(() => {
-    const [w, h] = config.aspectRatio.split(':').map(Number);
-    return w / h;
-  }, [config.aspectRatio]);
-
-  // Find images generated by this recipe specifically
-  const cameraImages = useMemo(() => {
-    return images.filter((img) => hasRecipeIdentity(img.config, 'camera'));
-  }, [images]);
   const recipeParams = useMemo(
     () => createCameraRecipeParams({ azimuth, elevation, distance, hasReference }),
     [azimuth, distance, elevation, hasReference],
@@ -173,12 +102,6 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
   const { hPos, vPos, framing } = recipeParams;
 
   useRecipeContextRegistration(updateConfig, 'camera', recipeParams);
-
-  const handleDrop = (e: React.DragEvent) => {
-    e.preventDefault();
-    const files = Array.from(e.dataTransfer.files).filter((f: File) => f.type.startsWith('image/'));
-    if (files.length > 0) onFileSelect(files);
-  };
 
   const handleEstimateCamera = async () => {
     if (!activeImage || isEstimating) return;
@@ -206,11 +129,11 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
     () => (
       <div className="w-full flex flex-wrap items-center gap-4">
         <div className="flex-1 min-w-45 space-y-3">
-          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+          <div className="flex justify-between text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
-              <RotateCw size={12} className="text-cyan-400" /> Azimuth
+              <RotateCw size={12} className="text-[color:var(--wb-info)]" /> Azimuth
             </div>
-            <span className="text-cyan-400 font-mono">{Math.round(azimuth)}°</span>
+            <span className="text-[color:var(--wb-info)] font-mono">{Math.round(azimuth)}°</span>
           </div>
           <input
             type="range"
@@ -220,16 +143,18 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             value={azimuth}
             onChange={(e) => setAzimuth(parseInt(e.target.value))}
             aria-label="Azimuth"
-            className="w-full h-1.5 bg-[color:var(--wb-bar)] rounded-full appearance-none cursor-pointer accent-cyan-400 hover:accent-cyan-300"
+            className="studio-range"
           />
         </div>
 
         <div className="flex-1 min-w-45 space-y-3">
-          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+          <div className="flex justify-between text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
-              <ArrowUpFromLine size={12} className="text-pink-400" /> Elevation
+              <ArrowUpFromLine size={12} className="text-[color:var(--wb-danger)]" /> Elevation
             </div>
-            <span className="text-pink-400 font-mono">{Math.round(elevation)}°</span>
+            <span className="text-[color:var(--wb-danger)] font-mono">
+              {Math.round(elevation)}°
+            </span>
           </div>
           <input
             type="range"
@@ -239,16 +164,18 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             value={elevation}
             onChange={(e) => setElevation(parseInt(e.target.value))}
             aria-label="Elevation"
-            className="w-full h-1.5 bg-[color:var(--wb-bar)] rounded-full appearance-none cursor-pointer accent-pink-400 hover:accent-pink-300"
+            className="studio-range"
           />
         </div>
 
         <div className="flex-1 min-w-45 space-y-3">
-          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+          <div className="flex justify-between text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
-              <ZoomIn size={12} className="text-yellow-400" /> Zoom
+              <ZoomIn size={12} className="text-[color:var(--wb-warning)]" /> Zoom
             </div>
-            <span className="text-yellow-400 font-mono">{Math.round(distance)}%</span>
+            <span className="text-[color:var(--wb-warning)] font-mono">
+              {Math.round(distance)}%
+            </span>
           </div>
           <input
             type="range"
@@ -258,7 +185,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             value={distance}
             onChange={(e) => setDistance(parseInt(e.target.value))}
             aria-label="Zoom"
-            className="w-full h-1.5 bg-[color:var(--wb-bar)] rounded-full appearance-none cursor-pointer accent-yellow-400 hover:accent-yellow-300"
+            className="studio-range"
           />
         </div>
       </div>
@@ -268,38 +195,39 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
 
   return (
     <RecipeLayout
+      editorLabel="Camera"
       isGenerating={isGenerating}
       bottomDock={BottomDock}
-      className="flex flex-col p-3 pb-[var(--studio-recipe-dock-space)] gap-4 sm:p-4 sm:pb-32 sm:gap-6"
+      className="flex min-h-0 flex-col"
     >
       <div className="custom-scrollbar flex h-full flex-col gap-4 overflow-y-auto lg:flex-row lg:gap-6 lg:overflow-hidden">
         {/* LEFT: THREE.JS VIEWPORT */}
-        <div className="relative flex min-h-[320px] flex-1 flex-col overflow-hidden rounded-2xl border border-[color:var(--wb-line)] shadow-2xl sm:rounded-3xl sm:min-h-100 lg:min-h-0">
+        <div className="relative flex min-h-[320px] flex-1 flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] shadow-2xl sm:rounded-[var(--wb-radius)] sm:min-h-100 lg:min-h-0">
           {/* Viewport Overlay Controls */}
           <div className="absolute top-6 left-6 z-20 flex flex-col gap-2 pointer-events-none">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] backdrop-blur-sm">
-              <Move3d size={12} className="text-cyan-400" />
-              <span className="text-[9px] font-black text-[color:var(--wb-ink)] uppercase tracking-widest">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] backdrop-blur-sm">
+              <Move3d size={12} className="text-[color:var(--wb-info)]" />
+              <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tracking-normal">
                 Orbit & Zoom
               </span>
             </div>
-            <div className="flex flex-col gap-1 text-[9px] font-mono text-[color:var(--wb-muted)] bg-[color:var(--wb-well)] p-2 rounded-lg border border-[color:var(--wb-line)]">
-              <span className="text-cyan-400">AZ: {Math.round(azimuth)}°</span>
-              <span className="text-pink-400">EL: {Math.round(elevation)}°</span>
-              <span className="text-yellow-400">DIST: {Math.round(distance)}%</span>
+            <div className="flex flex-col gap-1 text-[length:var(--wbp-label)] font-mono text-[color:var(--wb-muted)] bg-[color:var(--wb-well)] p-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)]">
+              <span className="text-[color:var(--wb-info)]">AZ: {Math.round(azimuth)}°</span>
+              <span className="text-[color:var(--wb-danger)]">EL: {Math.round(elevation)}°</span>
+              <span className="text-[color:var(--wb-warning)]">DIST: {Math.round(distance)}%</span>
             </div>
           </div>
 
           {/* CANVAS CONTAINER */}
           <div ref={mountRef} className="flex-1 size-full relative cursor-move touch-none group">
-            <div className="pip-viewport absolute right-3 top-3 z-30 hidden h-28 w-36 overflow-hidden rounded-lg border-2 border-[color:var(--wb-line)] bg-[color:var(--wb-well)] shadow-2xl backdrop-blur-sm pointer-events-none sm:block lg:right-6 lg:top-6 lg:h-45 lg:w-60">
-              <div className="absolute top-0 left-0 px-2 py-0.5 bg-[color:var(--wb-well)] text-cyan-400 text-[8px] font-black uppercase tracking-widest">
+            <div className="pip-viewport absolute right-3 top-3 z-30 hidden h-28 w-36 overflow-hidden rounded-[var(--wb-radius)] border-2 border-[color:var(--wb-line)] bg-[color:var(--wb-well)] shadow-2xl backdrop-blur-sm pointer-events-none sm:block lg:right-6 lg:top-6 lg:h-45 lg:w-60">
+              <div className="absolute top-0 left-0 px-2 py-0.5 bg-[color:var(--wb-well)] text-[color:var(--wb-info)] text-[length:var(--wbp-label)] font-semibold tracking-normal">
                 CAM VIEW
               </div>
             </div>
 
             {/* Instruction Overlay */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-[color:var(--wb-well)] border border-[color:var(--wb-line)] backdrop-blur-sm text-[color:var(--wb-muted)] text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-[var(--wb-radius)] bg-[color:var(--wb-well)] border border-[color:var(--wb-line)] backdrop-blur-sm text-[color:var(--wb-muted)] text-[length:var(--wbp-label)] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
               <span className="flex items-center gap-1.5">
                 <MousePointer2 size={12} className="text-[color:var(--wb-ink)]" /> Drag to Orbit
               </span>
@@ -320,13 +248,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             )}
             <details>
               <summary>Virtual framing details</summary>
-              <CameraAnglesInfoPanel
-                hPos={hPos}
-                vPos={vPos}
-                framing={framing}
-                cameraImages={cameraImages}
-                onSelectImage={onSelectImage}
-              />
+              <CameraAnglesInfoPanel hPos={hPos} vPos={vPos} framing={framing} />
             </details>
           </div>
         </RecipeControls>

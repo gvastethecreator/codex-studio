@@ -48,7 +48,7 @@ export function QueueBatchCard({ batchId, revision }: { batchId: string; revisio
   return (
     <section
       aria-label={`Batch ${batchId}`}
-      className="space-y-1 rounded-lg border border-[color:var(--wb-border)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2 text-[11px] text-[color:var(--wb-muted)]"
+      className="space-y-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2 text-[11px] text-[color:var(--wb-muted)]"
     >
       <div className="flex justify-between gap-2">
         <span>Batch · {batch?.requestedCount ?? '—'} requested</span>
@@ -80,7 +80,7 @@ export function QueueBatchCard({ batchId, revision }: { batchId: string; revisio
         </p>
       ) : null}
       {retryError ? (
-        <p role="alert" className="text-rose-300">
+        <p role="alert" className="text-[color:var(--wb-danger)] ">
           {retryError}
         </p>
       ) : null}

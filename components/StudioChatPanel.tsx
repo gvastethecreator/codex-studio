@@ -62,11 +62,13 @@ function getStatusIcon(status: StudioJob['status']) {
 }
 
 function getStatusClass(status: StudioJob['status']) {
-  if (status === 'completed') return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-300';
+  if (status === 'completed')
+    return 'border-emerald-500/2 bg-emerald-500/10 text-[color:var(--wb-success)] ';
   if (status === 'failed' || status === 'cancelled') {
-    return 'border-rose-500/2 bg-rose-500/10 text-rose-300';
+    return 'border-rose-500/2 bg-rose-500/10 text-[color:var(--wb-danger)] ';
   }
-  if (status === 'needs_review') return 'border-amber-500/2 bg-amber-500/10 text-amber-200';
+  if (status === 'needs_review')
+    return 'border-amber-500/2 bg-amber-500/10 text-[color:var(--wb-warning)] ';
   return 'border-accent-500/2 bg-accent-500/10 text-accent-300';
 }
 
@@ -145,7 +147,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
         <div className="flex min-w-0 flex-1 flex-col">
           <header className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-5 py-4 sm:px-6">
             <div className="flex min-w-0 items-center gap-3">
-              <div className="grid size-10 shrink-0 place-items-center rounded-2xl border border-accent-500/2 bg-accent-500/10 text-accent-300">
+              <div className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-accent-500/2 bg-accent-500/10 text-accent-300">
                 <MessageSquare size={18} />
               </div>
               <div className="min-w-0">
@@ -155,7 +157,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                 >
                   Codex Chat
                 </h2>
-                <p className="mt-0.5 text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
+                <p className="mt-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   {activeCount > 0
                     ? `${activeCount} live job${activeCount === 1 ? '' : 's'}`
                     : 'Idle'}
@@ -189,20 +191,20 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                       )}
                     >
                       {message.role === 'assistant' ? (
-                        <div className="mt-1 grid size-8 shrink-0 place-items-center rounded-xl border border-accent-500/2 bg-accent-500/10 text-accent-300">
+                        <div className="mt-1 grid size-8 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-accent-500/2 bg-accent-500/10 text-accent-300">
                           <Icon size={15} />
                         </div>
                       ) : null}
                       <div
                         className={cn(
-                          'max-w-[min(680px,88%)] rounded-2xl border px-4 py-3',
+                          'max-w-[min(680px,88%)] rounded-[var(--wb-radius)] border px-4 py-3',
                           message.role === 'user'
                             ? 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
                             : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-ink)]',
                         )}
                       >
                         <p className="whitespace-pre-wrap text-sm leading-6">{message.text}</p>
-                        <div className="mt-2 text-[9px] font-bold uppercase tracking-wider text-[color:var(--wb-dim)]">
+                        <div className="mt-2 text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-dim)]">
                           {formatTime(message.createdAt)}
                         </div>
                       </div>
@@ -212,7 +214,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
               </div>
 
               <div className="border-t border-[color:var(--wb-line)] p-4 sm:p-5">
-                <div className="flex min-h-14 items-end gap-2 rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2">
+                <div className="flex min-h-14 items-end gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2">
                   <textarea
                     ref={textareaRef}
                     value={prompt}
@@ -232,7 +234,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     type="button"
                     onClick={submit}
                     disabled={!prompt.trim()}
-                    className="grid size-11 shrink-0 place-items-center rounded-2xl border border-accent-500/2 bg-accent-600 text-[color:var(--wb-ink)] transition-colors hover:bg-accent-500 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
+                    className="grid size-11 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-accent-500/2 bg-accent-600 text-[color:var(--wb-ink)] transition-colors hover:bg-accent-500 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
                     aria-label="Send generation prompt"
                   >
                     {isGenerating ? (
@@ -247,7 +249,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
 
             <aside className="hidden min-h-0 flex-col border-l border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:flex">
               <div className="border-b border-[color:var(--wb-line)] px-4 py-3">
-                <div className="text-[9px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
+                <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Live jobs
                 </div>
               </div>
@@ -258,12 +260,12 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     return (
                       <div
                         key={job.id}
-                        className="rounded-2xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3"
+                        className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3"
                       >
                         <div className="flex items-center justify-between gap-2">
                           <span
                             className={cn(
-                              'inline-flex items-center gap-1.5 rounded-lg border px-2 py-1 text-[9px] font-black uppercase tracking-wider',
+                              'inline-flex items-center gap-1.5 rounded-[var(--wb-radius)] border px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal',
                               getStatusClass(job.status),
                             )}
                           >
@@ -273,7 +275,9 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                             />
                             {job.status}
                           </span>
-                          <span className="text-[9px] text-[color:var(--wb-dim)]">#{job.id.slice(0, 8)}</span>
+                          <span className="text-[length:var(--wbp-label)] text-[color:var(--wb-dim)]">
+                            #{job.id.slice(0, 8)}
+                          </span>
                         </div>
                         <p className="mt-2 line-clamp-3 text-[11px] leading-5 text-[color:var(--wb-ink)]">
                           {job.originalPrompt}
@@ -282,26 +286,31 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     );
                   })
                 ) : (
-                  <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-4 text-xs text-[color:var(--wb-dim)]">
+                  <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-4 text-xs text-[color:var(--wb-dim)]">
                     No jobs yet.
                   </div>
                 )}
               </div>
               <div className="border-t border-[color:var(--wb-line)] p-3">
-                <div className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
+                <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Recent logs
                 </div>
                 <div className="space-y-1.5">
                   {latestLogs.length > 0 ? (
                     latestLogs.map((log) => (
-                      <div key={log.id} className="rounded-xl bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-3 py-2">
-                        <div className="line-clamp-2 text-[10px] leading-4 text-[color:var(--wb-muted)]">
+                      <div
+                        key={log.id}
+                        className="rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-3 py-2"
+                      >
+                        <div className="line-clamp-2 text-[length:var(--wbp-label)] leading-4 text-[color:var(--wb-muted)]">
                           {log.message}
                         </div>
                       </div>
                     ))
                   ) : (
-                    <div className="text-[10px] text-[color:var(--wb-dim)]">No logs yet.</div>
+                    <div className="text-[length:var(--wbp-label)] text-[color:var(--wb-dim)]">
+                      No logs yet.
+                    </div>
                   )}
                 </div>
               </div>

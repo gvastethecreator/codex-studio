@@ -25,11 +25,13 @@ export function ProviderExecutionDefaultsFields({
       (value.reasoningEffort && value.reasoningEffort !== CODEX_HTTP_REASONING) ||
       value.serviceTier;
     return (
-      <div className="md:col-span-2 space-y-3 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
+      <div className="md:col-span-2 space-y-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
         <p className="text-xs text-[color:var(--wb-ink)]">ChatGPT HTTP · GPT-5.5</p>
-        <p className="text-xs text-[color:var(--wb-muted)]">{CODEX_HTTP_IMAGE_DISPLAY_NAME} · Medium · Managed</p>
+        <p className="text-xs text-[color:var(--wb-muted)]">
+          {CODEX_HTTP_IMAGE_DISPLAY_NAME} · Medium · Managed
+        </p>
         {incompatible ? (
-          <p role="status" className="text-xs text-amber-200">
+          <p role="status" className="text-xs text-[color:var(--wb-warning)] ">
             The saved execution defaults do not match HTTP. Apply the current HTTP settings before
             generating.
           </p>
@@ -61,24 +63,26 @@ export function ProviderExecutionDefaultsFields({
       : 'Provider bootstrap';
 
   return (
-    <div className="md:col-span-2 grid gap-3 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4 md:grid-cols-3">
+    <div className="md:col-span-2 grid gap-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4 md:grid-cols-3">
       <div className="md:col-span-3">
-        <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+        <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
           Provider Execution Defaults
         </div>
-        <p className="mt-1 text-[10px] leading-relaxed text-[color:var(--wb-dim)]">
+        <p className="mt-1 text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-dim)]">
           Used when a job does not send an explicit override. Empty values fall back to the provider
           bootstrap configuration.
         </p>
       </div>
       <label className="flex flex-col gap-2">
-        <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">Model</span>
+        <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
+          Model
+        </span>
         {modelOptions.length > 0 ? (
           <select
             value={value.model ?? ''}
             onChange={(event) => onChange({ model: event.target.value.trim() || null })}
             aria-label="Provider default model"
-            className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+            className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
           >
             <option value="">{defaultLabel}</option>
             {storedModel && !modelIsKnown ? (
@@ -96,18 +100,21 @@ export function ProviderExecutionDefaultsFields({
             onChange={(event) => onChange({ model: event.target.value.trim() || null })}
             placeholder="Provider bootstrap"
             aria-label="Provider default model"
-            className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
+            className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
           />
         )}
         {modelOptions.length > 0 && storedModel && !modelIsKnown ? (
-          <p role="status" className="text-[10px] leading-relaxed text-amber-200/80">
+          <p
+            role="status"
+            className="text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-warning)] "
+          >
             {storedModel} is not in the current provider model list. Choose the provider default or
             a listed model.
           </p>
         ) : null}
       </label>
       <label className="flex flex-col gap-2">
-        <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
+        <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
           Reasoning
         </span>
         {isAgentCli ? (
@@ -115,7 +122,7 @@ export function ProviderExecutionDefaultsFields({
             value={value.reasoningEffort ?? ''}
             onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
             aria-label="Provider default reasoning effort"
-            className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-black uppercase tracking-widest text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+            className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
           >
             <option value="">Provider bootstrap</option>
             <option value="low">Low</option>
@@ -128,13 +135,13 @@ export function ProviderExecutionDefaultsFields({
             onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
             placeholder="Provider bootstrap"
             aria-label="Provider default reasoning effort"
-            className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
+            className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
           />
         )}
       </label>
       {isAgentCli ? null : (
         <label className="flex flex-col gap-2">
-          <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
+          <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
             Service Tier
           </span>
           <select
@@ -148,7 +155,7 @@ export function ProviderExecutionDefaultsFields({
               })
             }
             aria-label="Provider default service tier"
-            className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-black uppercase tracking-widest text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+            className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
           >
             <option value="">Provider bootstrap</option>
             <option value="fast">Fast</option>

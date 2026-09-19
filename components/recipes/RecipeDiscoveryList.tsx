@@ -9,6 +9,7 @@ import type { RecipeId } from '../../types';
 export interface RecipeDiscoveryListProps {
   entries?: RecipeCatalogDisplayEntry[];
   density?: 'page' | 'compact';
+  selectedId?: string;
   onSelectRecipe: (id: RecipeId, aliasId?: RecipeAliasId | null) => void;
   onPreviewRecipe: (id: RecipeId) => void;
 }
@@ -16,6 +17,7 @@ export interface RecipeDiscoveryListProps {
 export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
   entries,
   density = 'page',
+  selectedId,
   onSelectRecipe,
   onPreviewRecipe,
 }) => {
@@ -34,6 +36,8 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
             key={recipe.id}
             type="button"
             role={isCompact ? 'option' : undefined}
+            aria-selected={isCompact ? recipe.id === selectedId : undefined}
+            tabIndex={isCompact ? -1 : undefined}
             aria-label={`Open ${recipe.title.toLowerCase()}`}
             onClick={() => onSelectRecipe(recipe.targetRecipeId, recipe.routeAliasId)}
             onFocus={() => onPreviewRecipe(recipe.targetRecipeId)}
@@ -67,7 +71,11 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
                 {recipe.description}
               </span>
             </span>
-            <IconArrowRight size={16} className="shrink-0 text-[color:var(--wb-muted)]" aria-hidden="true" />
+            <IconArrowRight
+              size={16}
+              className="shrink-0 text-[color:var(--wb-muted)]"
+              aria-hidden="true"
+            />
           </button>
         );
       })}

@@ -252,7 +252,7 @@ const CarouselImageItem: React.FC<{
             current.includes(displaySrc) ? current : [...current, displaySrc],
           )
         }
-        className={`max-w-[94%] max-h-[90%] object-contain shadow-[0_0_120px_rgba(0,0,0,1)]`}
+        className={`max-w-[94%] max-h-[90%] object-contain shadow-[0_2px_12px_#0002]`}
         style={{
           // Only apply view transition if NOT sliding and NOT comparing, to avoid glitches
           viewTransitionName:
@@ -262,19 +262,19 @@ const CarouselImageItem: React.FC<{
       />
 
       {fallbackDisplaySrc && failedDisplaySrcs.length > 0 && (
-        <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-300/2 bg-amber-500/10 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-amber-100">
+        <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-300/2 bg-amber-500/10 px-3 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)] ">
           Using catalog preview
         </div>
       )}
 
       {isComparing && (
-        <div className="absolute top-12 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-accent-500 text-black rounded-lg text-[10px] font-black uppercase tracking-widest shadow-xl animate-in fade-in zoom-in-95 z-30">
+        <div className="absolute top-12 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-accent-500 text-black rounded-[var(--wb-radius)] text-[length:var(--wbp-label)] font-semibold tracking-normal shadow-xl animate-in fade-in zoom-in-95 z-30">
           Original Reference
         </div>
       )}
 
       {isActive && uiScale > 1.01 && (
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 px-6 py-2.5 bg-black/90 backdrop-blur-3xl rounded-full text-[10px] font-black text-accent-400 tracking-[0.25em] uppercase shadow-2xl z-20 pointer-events-none animate-in fade-in zoom-in-95">
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 px-6 py-2.5 bg-black/90 backdrop-blur-3xl rounded-full text-[length:var(--wbp-label)] font-semibold text-accent-400 tracking-normal shadow-2xl z-20 pointer-events-none animate-in fade-in zoom-in-95">
           ZOOM: {Math.round(uiScale * 100)}%
         </div>
       )}
@@ -348,18 +348,20 @@ function CarouselBottomBar({
     <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-6 py-3 backdrop-blur-sm">
       <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
         <details className="flex-1 min-w-0 w-full">
-          <summary className="cursor-pointer text-sm text-[color:var(--wb-ink)]">Image details</summary>
+          <summary className="cursor-pointer text-sm text-[color:var(--wb-ink)]">
+            Image details
+          </summary>
           <p className="mt-3 whitespace-pre-wrap max-h-40 overflow-auto text-[12px] font-medium text-[color:var(--wb-ink)] tracking-tight leading-relaxed">
             {currentImage.config.prompt}
           </p>
           <div className="flex gap-4 mt-2">
-            <span className="text-[9px] font-black text-accent-500/70 uppercase tracking-widest">
+            <span className="text-[length:var(--wbp-label)] font-semibold text-accent-500/70 tracking-normal">
               {formatCarouselSourceLabel({
                 model: currentImage.config.model,
                 prompt: currentImage.config.prompt,
               })}
             </span>
-            <span className="text-[9px] font-black text-[color:var(--wb-dim)] uppercase tracking-widest">
+            <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-dim)] tracking-normal">
               {currentImage.config.aspectRatio} OUTPUT
             </span>
           </div>
@@ -367,7 +369,7 @@ function CarouselBottomBar({
 
         <div className="flex flex-wrap items-center gap-2 w-full md:w-auto justify-start md:justify-end">
           {hasReference && (
-            <div className="flex items-center gap-1.5 rounded-xl bg-white/3 p-1">
+            <div className="flex items-center gap-1.5 rounded-[var(--wb-radius)] bg-white/3 p-1">
               <button
                 type="button"
                 aria-label="Compare with original"
@@ -384,18 +386,18 @@ function CarouselBottomBar({
                 onPointerDown={onCompareStart}
                 onPointerUp={onCompareEnd}
                 onPointerLeave={onCompareEnd}
-                className={`relative flex items-center justify-center rounded-lg p-2 outline-none transition-[background-color,color,box-shadow,transform] duration-300 group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-[color:var(--wb-ink)] shadow-lg' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'}`}
+                className={`relative flex items-center justify-center rounded-[var(--wb-radius)] p-2 outline-none transition-[background-color,color,box-shadow,transform] duration-300 group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-[color:var(--wb-ink)] shadow-lg' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'}`}
                 title="Hold to Compare with Original"
               >
                 <SplitSquareHorizontal size={16} />
-                <span className="text-[9px] font-black uppercase tracking-widest ml-2 hidden lg:inline">
+                <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal ml-2 hidden lg:inline">
                   Compare
                 </span>
               </button>
             </div>
           )}
 
-          <div className="flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
+          <div className="flex shrink-0 items-center gap-1 rounded-[var(--wb-radius)] bg-white/3 p-1">
             <ActionButton
               onClick={() => onToggleFavorite(currentImage.id)}
               icon={<Heart size={16} fill={currentImage?.isFavorite ? 'currentColor' : 'none'} />}
@@ -420,7 +422,7 @@ function CarouselBottomBar({
             />
           </div>
 
-          <div className="relative flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
+          <div className="relative flex shrink-0 items-center gap-1 rounded-[var(--wb-radius)] bg-white/3 p-1">
             <ActionButton
               onClick={() => onAddToContext(currentImage)}
               icon={<PlusCircle size={16} />}
@@ -431,7 +433,7 @@ function CarouselBottomBar({
             </div>
           </div>
 
-          <div className="flex shrink-0 items-center gap-1 rounded-xl bg-white/3 p-1">
+          <div className="flex shrink-0 items-center gap-1 rounded-[var(--wb-radius)] bg-white/3 p-1">
             <ActionButton
               onClick={() => onRegenerate(currentImage.config)}
               icon={<RefreshCw size={16} />}
@@ -485,7 +487,7 @@ function CarouselTopBar({
               data-carousel-index={idx}
               aria-label={`Open image ${idx + 1} of ${thumbnailWindow.length}`}
               onClick={() => onJumpTo(idx)}
-              className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-[border-color,box-shadow,opacity,transform] duration-300
+              className={`relative size-10 shrink-0 rounded-[var(--wb-radius)] overflow-hidden border snap-center cursor-pointer transition-[border-color,box-shadow,opacity,transform] duration-300
                             ${
                               idx === activeIndex
                                 ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500/2 opacity-100'
@@ -515,7 +517,7 @@ function CarouselTopBar({
             type="button"
             onClick={onToggleFullscreen}
             aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
-            className="min-h-10 min-w-10 rounded-xl bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
+            className="min-h-10 min-w-10 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
           >
             {isFullscreen ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
           </button>
@@ -523,7 +525,7 @@ function CarouselTopBar({
             type="button"
             onClick={onClose}
             aria-label="Close image carousel"
-            className="min-h-10 min-w-10 rounded-xl bg-[color:var(--wb-panel)] p-2 text-[color:var(--wb-ink)] shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
+            className="min-h-10 min-w-10 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] p-2 text-[color:var(--wb-ink)] shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
           >
             <X size={16} />
           </button>
@@ -741,7 +743,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               }}
               disabled={isSliding}
               aria-label="Previous image"
-              className="absolute left-8 z-50 rounded-full bg-[color:var(--wb-well)] p-6 text-[color:var(--wb-ink)]/10 backdrop-blur-3xl transition-[background-color,color,opacity,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] disabled:opacity-0 active:scale-90 group cursor-pointer"
+              className="studio-ghost-control absolute left-4 z-50 size-10 bg-[color:var(--wb-panel)] disabled:opacity-0 group cursor-pointer"
             >
               <ChevronLeft size={40} className="group-hover:-translate-x-1 transition-transform" />
             </button>
@@ -753,7 +755,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               }}
               disabled={isSliding}
               aria-label="Next image"
-              className="absolute right-8 z-50 rounded-full bg-[color:var(--wb-well)] p-6 text-[color:var(--wb-ink)]/10 backdrop-blur-3xl transition-[background-color,color,opacity,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] disabled:opacity-0 active:scale-90 group cursor-pointer"
+              className="studio-ghost-control absolute right-4 z-50 size-10 bg-[color:var(--wb-panel)] disabled:opacity-0 group cursor-pointer"
             >
               <ChevronRight size={40} className="group-hover:translate-x-1 transition-transform" />
             </button>

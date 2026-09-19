@@ -19,10 +19,10 @@ import {
 } from '../../lib/subscriptionAuthUi';
 
 const controlBase =
-  'inline-flex h-9 items-center justify-center gap-2 rounded-lg px-3 text-[11px] font-semibold transition-[color,background-color,border-color,transform] active:scale-[0.96] disabled:cursor-not-allowed disabled:opacity-60';
+  'inline-flex h-9 items-center justify-center gap-2 rounded-[var(--wb-radius)] px-3 text-[11px] font-semibold transition-[color,background-color,border-color,transform] active:scale-[0.96] disabled:cursor-not-allowed disabled:opacity-60';
 const controlPrimary = `${controlBase} border border-accent-400/2 bg-accent-500/18 text-accent-50 hover:bg-accent-500/28`;
 const controlGhost = `${controlBase} border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]`;
-const controlQuiet = `${controlBase} border border-[color:var(--wb-line)] bg-transparent text-[color:var(--wb-muted)] hover:border-rose-500/2 hover:bg-rose-500/10 hover:text-rose-100`;
+const controlQuiet = `${controlBase} border border-[color:var(--wb-line)] bg-transparent text-[color:var(--wb-muted)] hover:border-rose-500/2 hover:bg-rose-500/10 hover:text-[color:var(--wb-danger)] `;
 
 export function SubscriptionAuthControls({ providerId }: { providerId: SubscriptionProviderId }) {
   const [status, setStatus] = useState<SubscriptionAuthPublicStatus | null>(null);
@@ -125,7 +125,7 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
   return (
     <div className="mt-4 flex flex-col gap-3 border-t border-[color:var(--wb-line)] pt-3">
       {status?.status === 'pending' && browserUrl ? (
-        <div className="grid gap-3 rounded-lg border border-accent-400/2 bg-accent-500/10 p-3">
+        <div className="grid gap-3 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/10 p-3">
           <div className="flex items-start justify-between gap-2">
             <p className="text-[12px] leading-relaxed text-[color:var(--wb-ink)]">
               {status.userCode
@@ -133,14 +133,14 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
                 : 'Approve access in the browser. Studio finishes Sign in automatically.'}
             </p>
             <span
-              className={`inline-flex h-6 shrink-0 items-center rounded-md border px-2 text-[10px] font-semibold ${subscriptionAuthPillClass(status.status)}`}
+              className={`inline-flex h-6 shrink-0 items-center rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold ${subscriptionAuthPillClass(status.status)}`}
             >
               {statusLabel}
             </span>
           </div>
           {status.userCode ? (
             <div className="flex items-center gap-2">
-              <code className="min-w-0 flex-1 truncate rounded-lg bg-[color:var(--wb-well)] px-3 py-2 font-mono text-sm tracking-[0.18em] text-[color:var(--wb-ink)]">
+              <code className="min-w-0 flex-1 truncate rounded-[var(--wb-radius)] bg-[color:var(--wb-well)] px-3 py-2 font-mono text-sm tracking-normal text-[color:var(--wb-ink)]">
                 {status.userCode}
               </code>
               <button
@@ -171,7 +171,7 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
       ) : (
         <div className="flex items-center justify-between gap-2">
           <span
-            className={`inline-flex h-6 items-center rounded-md border px-2 text-[10px] font-semibold ${subscriptionAuthPillClass(status?.status)}`}
+            className={`inline-flex h-6 items-center rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold ${subscriptionAuthPillClass(status?.status)}`}
           >
             {statusLabel}
           </span>
@@ -188,13 +188,15 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
         </div>
       )}
       {status?.accountLabel ? (
-        <p className="truncate text-[12px] leading-relaxed text-[color:var(--wb-ink)]">{status.accountLabel}</p>
+        <p className="truncate text-[12px] leading-relaxed text-[color:var(--wb-ink)]">
+          {status.accountLabel}
+        </p>
       ) : null}
       <span role="status" aria-live="polite" className="sr-only">
         {copied ? 'User code copied.' : ''}
       </span>
       {error || status?.lastError ? (
-        <p role="alert" className="text-[12px] leading-relaxed text-rose-300">
+        <p role="alert" className="text-[12px] leading-relaxed text-[color:var(--wb-danger)] ">
           {error || status?.lastError}
         </p>
       ) : null}

@@ -385,3 +385,118 @@
 .studio-menu-item:hover {
   background: color-mix(in srgb, var(--wb-ink) 8%, transparent);
 }
+
+/* Remaining React inspectors consume the same Workbench control contract.
+   Canvas pixels, swatches, and output images keep their domain-specific paint. */
+.wb :is(button, a, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--wb-accent);
+  outline-offset: 2px;
+}
+
+.wb
+  :is(.recipe-controls, .create-side-panel-body, .studio-dialog-body, .studio-inspector)
+  :is(
+    input:not(
+      [type='range'],
+      [type='checkbox'],
+      [type='radio'],
+      [type='color'],
+      [type='file'],
+      [type='hidden']
+    ),
+    select,
+    textarea
+  ) {
+  min-width: 0;
+  min-height: var(--wb-control-height);
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+  background: var(--wb-well);
+  color: var(--wb-ink);
+  font-size: var(--wb-font-size);
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.wb
+  :is(.recipe-controls, .create-side-panel-body, .studio-dialog-body, .studio-inspector)
+  :is(input, textarea)::placeholder {
+  color: var(--wb-dim);
+  opacity: 1;
+}
+
+.wb .studio-icon-action {
+  position: relative;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  transition:
+    background-color var(--wb-fast),
+    color var(--wb-fast);
+}
+.wb .studio-icon-action.is-active {
+  color: var(--wb-ink);
+  border-color: var(--wb-accent);
+  background: color-mix(in srgb, var(--wb-accent) 16%, var(--wb-panel));
+}
+.wb .studio-icon-action.is-danger {
+  color: var(--wb-danger);
+}
+.wb .studio-icon-action:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.wb .studio-range {
+  appearance: none;
+  width: 100%;
+  min-width: 0;
+  height: var(--wb-control-height);
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.wb .studio-range::-webkit-slider-runnable-track {
+  height: 3px;
+  background: var(--wb-border);
+  border-radius: 1px;
+}
+.wb .studio-range::-moz-range-track {
+  height: 3px;
+  background: var(--wb-border);
+  border-radius: 1px;
+}
+.wb .studio-range::-webkit-slider-thumb {
+  appearance: none;
+  width: var(--wbp-thumb);
+  height: calc(var(--wbp-thumb) + 4px);
+  margin-top: calc((3px - var(--wbp-thumb) - 4px) / 2);
+  border: 1px solid var(--wb-border);
+  border-radius: 2px;
+  background: var(--wb-ink);
+}
+.wb .studio-range::-moz-range-thumb {
+  width: var(--wbp-thumb);
+  height: calc(var(--wbp-thumb) + 4px);
+  border: 1px solid var(--wb-border);
+  border-radius: 2px;
+  background: var(--wb-ink);
+}
+.wb .studio-range:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.wb .recipe-options-toggle {
+  min-height: var(--wb-control-height);
+  font: 500 var(--wb-font-size)/1.4 var(--wbp-font-label);
+}
+.wb .create-side-panel-head {
+  min-height: calc(var(--wb-control-height) + 8px);
+  background: var(--wb-bar);
+}
+.wb .studio-tab {
+  flex-shrink: 0;
+}

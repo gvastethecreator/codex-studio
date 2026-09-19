@@ -34,6 +34,8 @@ export function RecipeResultPreview({
   onToggleFavorite,
   onUseAsReference,
   variant = 'default',
+  emptyTitle = 'Your next result starts here',
+  isGenerating = false,
 }: {
   images: GeneratedImageWithConfig[];
   reference?: Attachment;
@@ -41,6 +43,8 @@ export function RecipeResultPreview({
   onToggleFavorite?: (id: string) => void;
   onUseAsReference?: (image: GeneratedImageWithConfig) => void;
   variant?: 'default' | 'stage';
+  emptyTitle?: string;
+  isGenerating?: boolean;
 }) {
   const { addToast } = useToastUi();
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -117,7 +121,13 @@ export function RecipeResultPreview({
       data-result-variant={variant}
       data-stage-background={isStage ? background : undefined}
       aria-label="Result preview"
+      aria-busy={isGenerating}
     >
+      {isGenerating && (
+        <div className="recipe-result-progress" role="status">
+          Generating… Your result will appear here.
+        </div>
+      )}
       {!isStage ? (
         <div className="recipe-result-heading">
           <span>{showReference || !selected ? 'Reference preview' : 'Result'}</span>
@@ -300,7 +310,7 @@ export function RecipeResultPreview({
           </>
         ) : (
           <div>
-            <h2>Your next result starts here</h2>
+            <h2>{emptyTitle}</h2>
             <p>Add a prompt or reference, choose your settings, then generate.</p>
           </div>
         )}

@@ -18,9 +18,10 @@ export interface StudioStatusBarProps {
 }
 
 function runtimeToneClass(tone: StudioCommandCenterProjection['runtimeStatus']['tone']) {
-  if (tone === 'success') return 'border-emerald-500/2 bg-emerald-500/8 text-emerald-200';
-  if (tone === 'warning') return 'border-amber-500/2 bg-amber-500/8 text-amber-200';
-  return 'border-rose-500/2 bg-rose-500/8 text-rose-200';
+  if (tone === 'success')
+    return 'border-emerald-500/2 bg-emerald-500/8 text-[color:var(--wb-success)]';
+  if (tone === 'warning') return 'border-amber-500/2 bg-amber-500/8 text-[color:var(--wb-warning)]';
+  return 'border-rose-500/2 bg-rose-500/8 text-[color:var(--wb-danger)]';
 }
 
 export function StudioStatusBar({
@@ -75,10 +76,10 @@ export function StudioStatusBar({
           type="button"
           onClick={onOpenOnboarding}
           aria-label={`Open runtime status: ${runtimeStatus.label}`}
-          className={`studio-command-surface studio-hit-target flex h-7 items-center justify-center gap-1.5 rounded-md border px-2 ${runtimeToneClass(runtimeStatus.tone)}`}
+          className={`studio-command-surface studio-hit-target flex h-7 items-center justify-center gap-1.5 rounded-[var(--wb-radius)] border px-2 ${runtimeToneClass(runtimeStatus.tone)}`}
         >
           <Server size={13} />
-          <span className="hidden text-[10px] font-black uppercase tracking-[0.16em] sm:inline">
+          <span className="hidden text-[length:var(--wbp-label)] font-semibold tracking-normal sm:inline">
             {runtimeStatus.label}
           </span>
         </button>
@@ -91,7 +92,7 @@ export function StudioStatusBar({
           aria-label={`${isQueueOpen ? 'Close' : 'Open'} jobs (${queueLabel})`}
           aria-pressed={isQueueOpen}
           className={cn(
-            'studio-command-surface studio-hit-target flex h-7 items-center justify-center gap-1.5 rounded-md border px-2 text-xs transition-colors',
+            'studio-command-surface studio-hit-target flex h-7 items-center justify-center gap-1.5 rounded-[var(--wb-radius)] border px-2 text-xs transition-colors',
             isQueueOpen
               ? 'border-[color:var(--wb-accent)] bg-[color-mix(in_srgb,var(--wb-accent)_18%,transparent)] text-[color:var(--wb-ink)]'
               : 'border-[color:var(--wb-border)] text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]',
@@ -103,7 +104,7 @@ export function StudioStatusBar({
             <span className="tabular-nums text-accent-200">{queueCount} active</span>
           ) : null}
           {reviewCount > 0 ? (
-            <span className="border-l border-[color:var(--wb-line)] pl-1.5 text-amber-300">
+            <span className="border-l border-[color:var(--wb-line)] pl-1.5 text-[color:var(--wb-warning)]">
               {reviewCount} review
             </span>
           ) : null}

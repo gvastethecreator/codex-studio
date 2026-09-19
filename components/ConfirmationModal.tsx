@@ -29,15 +29,15 @@ const TONE_STYLES: Record<
 > = {
   danger: {
     icon: <ShieldAlert size={18} />,
-    shell: 'bg-rose-500/10 text-rose-300 border border-rose-500/2',
+    shell: 'bg-rose-500/10 text-[color:var(--wb-danger)] border border-rose-500/2',
     button:
-      'bg-rose-500/15 text-rose-100 border border-rose-500/2 hover:bg-rose-500/20 hover:border-rose-400/2',
+      'bg-rose-500/15 text-[color:var(--wb-danger)] border border-rose-500/2 hover:bg-rose-500/20 hover:border-rose-400/2',
   },
   warning: {
     icon: <AlertTriangle size={18} />,
-    shell: 'bg-amber-500/10 text-amber-300 border border-amber-500/2',
+    shell: 'bg-amber-500/10 text-[color:var(--wb-warning)] border border-amber-500/2',
     button:
-      'bg-amber-500/15 text-amber-100 border border-amber-500/2 hover:bg-amber-500/20 hover:border-amber-400/2',
+      'bg-amber-500/15 text-[color:var(--wb-warning)] border border-amber-500/2 hover:bg-amber-500/20 hover:border-amber-400/2',
   },
   accent: {
     icon: <RotateCcw size={18} />,
@@ -89,22 +89,24 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
           <div className="flex items-start justify-between gap-4 border-b border-[color:var(--wb-line)] p-6 bg-[color:var(--wb-panel)]">
             <div className="flex min-w-0 items-start gap-3">
               <div
-                className={`flex size-11 shrink-0 items-center justify-center rounded-2xl ${toneStyles.shell}`}
+                className={`flex size-11 shrink-0 items-center justify-center rounded-[var(--wb-radius)] ${toneStyles.shell}`}
               >
                 {toneStyles.icon}
               </div>
               <div className="min-w-0">
-                <h2 className="text-sm font-black uppercase tracking-[0.22em] text-[color:var(--wb-ink)]">
+                <h2 className="text-sm font-semibold tracking-normal text-[color:var(--wb-ink)]">
                   {title}
                 </h2>
-                <p className="mt-2 text-sm leading-relaxed text-[color:var(--wb-ink)]">{description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--wb-ink)]">
+                  {description}
+                </p>
               </div>
             </div>
             <button
               type="button"
               aria-label="Close confirmation"
               onClick={onClose}
-              className="rounded-xl p-2 text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
+              className="rounded-[var(--wb-radius)] p-2 text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
             >
               <X size={18} />
             </button>
@@ -126,7 +128,7 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
                 </ul>
               ) : null}
               {note ? (
-                <p className="mt-3 text-[10px] font-bold uppercase tracking-wider text-[color:var(--wb-muted)]">
+                <p className="mt-3 text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)]">
                   {note}
                 </p>
               ) : null}
@@ -137,14 +139,14 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="h-11 rounded-2xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-4 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
+              className="h-11 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-4 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
             >
               {cancelLabel}
             </button>
             <button
               type="button"
               onClick={() => void onConfirm()}
-              className={`h-11 rounded-2xl px-4 text-[10px] font-black uppercase tracking-widest transition-[color,background-color,border-color,opacity,box-shadow,transform] cursor-pointer ${toneStyles.button}`}
+              className={`h-11 rounded-[var(--wb-radius)] px-4 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[color,background-color,border-color,opacity,box-shadow,transform] cursor-pointer ${toneStyles.button}`}
             >
               {confirmLabel}
             </button>

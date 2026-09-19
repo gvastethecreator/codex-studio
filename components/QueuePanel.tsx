@@ -55,13 +55,13 @@ const EMPTY_SERVER_JOBS: StudioJob[] = [];
 function getServerStatusColor(status: StudioJob['status']) {
   switch (status) {
     case 'completed':
-      return 'text-emerald-400';
+      return 'text-[color:var(--wb-success)]';
     case 'failed':
-      return 'text-rose-400';
+      return 'text-[color:var(--wb-danger)]';
     case 'cancelled':
       return 'text-[color:var(--wb-muted)]';
     case 'needs_review':
-      return 'text-amber-300';
+      return 'text-[color:var(--wb-warning)] ';
     default:
       return 'text-accent-400';
   }
@@ -179,7 +179,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               type="button"
               aria-label="Close jobs"
               onClick={onClose}
-              className="studio-hit-target rounded-lg p-1.5 text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+              className="studio-hit-target rounded-[var(--wb-radius)] p-1.5 text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             >
               <XCircle size={18} />
             </button>
@@ -195,7 +195,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 setWorkspaceFilter(event.target.value);
                 setVisibleCount(20);
               }}
-              className="mt-1 w-full rounded-lg border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-2 text-xs text-[color:var(--wb-ink)]"
+              className="mt-1 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-2 text-xs text-[color:var(--wb-ink)]"
             >
               <option value="">All workspaces</option>
               {jobHistory.workspaces.map((workspace) => (
@@ -208,7 +208,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
           <div
             role="group"
             aria-label="Job views"
-            className="grid grid-cols-3 gap-1 rounded-lg bg-[color:var(--wb-well)] p-1"
+            className="grid grid-cols-3 gap-1 rounded-[var(--wb-radius)] bg-[color:var(--wb-well)] p-1"
           >
             {(['active', 'review', 'history'] as const).map((item) => (
               <button
@@ -220,7 +220,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   setVisibleCount(20);
                 }}
                 className={cn(
-                  'min-h-9 rounded-md px-1 text-xs transition-colors',
+                  'min-h-9 rounded-[var(--wb-radius)] px-1 text-xs transition-colors',
                   view === item
                     ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
                     : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]',
@@ -231,7 +231,9 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   <span
                     className={cn(
                       'ml-1 tabular-nums',
-                      item === 'review' && reviewJobs.length > 0 && 'text-amber-300',
+                      item === 'review' &&
+                        reviewJobs.length > 0 &&
+                        'text-[color:var(--wb-warning)] ',
                     )}
                   >
                     {item === 'active' ? activeJobs.length : reviewJobs.length}
@@ -248,7 +250,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
           {jobHistory.error ? (
             <div
               role="alert"
-              className="space-y-2 rounded-lg border border-rose-500/20 p-3 text-xs text-rose-300"
+              className="space-y-2 rounded-[var(--wb-radius)] border border-rose-500/20 p-3 text-xs text-[color:var(--wb-danger)] "
             >
               <p>{jobHistory.error}</p>
               <button type="button" onClick={jobHistory.retry} className="min-h-8 underline">
@@ -271,7 +273,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   onChange={(event) =>
                     setStatusFilter(event.target.value as TerminalJobStatus | '')
                   }
-                  className="mt-1 w-full rounded-lg border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-2 text-xs text-[color:var(--wb-ink)]"
+                  className="mt-1 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-2 text-xs text-[color:var(--wb-ink)]"
                 >
                   <option value="">All finished jobs</option>
                   <option value="completed">Completed</option>
@@ -280,7 +282,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 </select>
               </label>
               {results.length > 0 ? (
-                <details className="rounded-lg border border-[color:var(--wb-border)] p-2 text-xs text-[color:var(--wb-muted)]">
+                <details className="rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] p-2 text-xs text-[color:var(--wb-muted)]">
                   <summary className="cursor-pointer py-1">
                     Recent images · current workspace
                   </summary>
@@ -383,7 +385,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <button
               type="button"
               onClick={() => setVisibleCount((count) => count + 20)}
-              className="min-h-9 w-full rounded-lg bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] px-2 text-xs text-[color:var(--wb-ink)]"
+              className="min-h-9 w-full rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] px-2 text-xs text-[color:var(--wb-ink)]"
             >
               Show more · {visibleJobs.length} of {jobs.length}
             </button>
@@ -391,7 +393,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <button
               type="button"
               onClick={jobHistory.loadMore}
-              className="min-h-9 w-full rounded-lg bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] px-2 text-xs text-[color:var(--wb-ink)]"
+              className="min-h-9 w-full rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] px-2 text-xs text-[color:var(--wb-ink)]"
             >
               Load older jobs
             </button>
@@ -477,7 +479,7 @@ const RecentResultViewer: React.FC<{
           <p className="truncate text-xs font-semibold text-[color:var(--wb-ink)]/90">
             {result.prompt || 'Generated result'}
           </p>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-ink)]/35">
+          <p className="text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-ink)]/35">
             {index + 1} / {total}
           </p>
         </div>
@@ -486,7 +488,7 @@ const RecentResultViewer: React.FC<{
             <button
               type="button"
               onClick={onInspect}
-              className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+              className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             >
               Inspect
             </button>
@@ -494,7 +496,7 @@ const RecentResultViewer: React.FC<{
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg p-2 text-[color:var(--wb-ink)]/50 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+            className="rounded-[var(--wb-radius)] p-2 text-[color:var(--wb-ink)]/50 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             aria-label="Close recent result"
           >
             <XCircle size={18} />
@@ -505,7 +507,7 @@ const RecentResultViewer: React.FC<{
         <button
           type="button"
           onClick={onPrevious}
-          className="absolute left-3 z-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-[color:var(--wb-ink)]/65 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+          className="absolute left-3 z-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-[color:var(--wb-ink)]/65 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           aria-label="Previous recent result"
         >
           <ChevronLeft size={20} />
@@ -515,13 +517,13 @@ const RecentResultViewer: React.FC<{
           alt={result.prompt || 'Generated result'}
           width={1024}
           height={1024}
-          className="max-h-full max-w-full rounded-lg object-contain shadow-2xl"
+          className="max-h-full max-w-full rounded-[var(--wb-radius)] object-contain shadow-2xl"
           decoding="async"
         />
         <button
           type="button"
           onClick={onNext}
-          className="absolute right-3 z-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-[color:var(--wb-ink)]/65 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+          className="absolute right-3 z-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-[color:var(--wb-ink)]/65 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           aria-label="Next recent result"
         >
           <ChevronRight size={20} />
@@ -573,8 +575,10 @@ const ServerJobItem: React.FC<{
   return (
     <article
       className={cn(
-        'overflow-hidden rounded-lg border p-2.5',
-        isSelected ? 'border-accent-500/50 bg-accent-500/10' : 'border-[color:var(--wb-border)] bg-white/[0.025]',
+        'overflow-hidden rounded-[var(--wb-radius)] border p-2.5',
+        isSelected
+          ? 'border-accent-500/50 bg-accent-500/10'
+          : 'border-[color:var(--wb-border)] bg-white/[0.025]',
       )}
     >
       <button
@@ -617,9 +621,13 @@ const ServerJobItem: React.FC<{
           <span className="float-right text-[color:var(--wb-ink)]">Details →</span>
         </p>
       </button>
-      {waitReason ? <p className="mt-2 text-xs text-amber-300">{waitReason}</p> : null}
+      {waitReason ? (
+        <p className="mt-2 text-xs text-[color:var(--wb-warning)] ">{waitReason}</p>
+      ) : null}
       {job.error ? (
-        <p className="mt-2 line-clamp-2 text-[11px] leading-relaxed text-rose-300">{job.error}</p>
+        <p className="mt-2 line-clamp-2 text-[11px] leading-relaxed text-[color:var(--wb-danger)] ">
+          {job.error}
+        </p>
       ) : null}
       {canCancel || canRetry ? (
         <div className="mt-2 flex justify-end">
@@ -628,7 +636,7 @@ const ServerJobItem: React.FC<{
               type="button"
               aria-label={`Cancel backend job ${job.id}`}
               onClick={onCancel}
-              className="min-h-8 rounded-md px-2 text-xs text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
+              className="min-h-8 rounded-[var(--wb-radius)] px-2 text-xs text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
             >
               Cancel
             </button>
@@ -639,7 +647,7 @@ const ServerJobItem: React.FC<{
               aria-label={`${canResume ? 'Resume' : 'Retry'} backend job ${job.id}`}
               onClick={onRetry}
               title={canResume ? 'Resume existing remote job' : 'Retry this job'}
-              className="flex min-h-8 items-center gap-1.5 rounded-md bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 text-xs text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
+              className="flex min-h-8 items-center gap-1.5 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 text-xs text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
             >
               <RotateCcw size={13} />
               {canResume ? 'Resume' : 'Retry'}

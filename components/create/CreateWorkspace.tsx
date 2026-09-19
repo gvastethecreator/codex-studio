@@ -34,6 +34,8 @@ export interface CreateWorkspaceProps {
   onToggleFavorite?: (imageId: string) => void;
   onUseAsReference?: (image: GeneratedImageWithConfig) => void;
   tools?: React.ReactNode;
+  action?: React.ReactNode;
+  stage?: React.ReactNode;
   images?: GeneratedImageWithConfig[];
   routeKey?: string;
   onSidePanelTarget?: (node: HTMLElement | null) => void;
@@ -47,11 +49,12 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
   onToggleFavorite,
   onUseAsReference,
   tools,
+  action,
+  stage,
   images,
   routeKey = 'recipes-list',
   onSidePanelTarget,
 }) => {
-  const draft = useGenerationDraft();
   const stageImages = images ?? recipePageProps.imagesWithConfig;
 
   useEffect(() => {
@@ -67,25 +70,56 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
           className={`create-tools studio-surface${tools ? ' workbench-config' : ''}`}
           aria-label="Create tools"
         >
-          {tools}
           {hasGenerationDock ? (
             <Suspense fallback={<StudioGenerationDockFallback />}>
-              <GenerationDock {...generationDockProps} layout="rail" />
+              <GenerationDock
+                {...generationDockProps}
+                layout="rail"
+                railTools={tools}
+                railAction={action}
+              />
             </Suspense>
-          ) : null}
+          ) : (
+            tools
+          )}
         </aside>
         <div ref={onSidePanelTarget} className="create-side-panel" />
       </div>
       <section className="create-stage studio-well" aria-label="Create canvas">
-        <RecipeResultPreview
-          variant="stage"
-          images={stageImages}
-          reference={draft.generationConfig.attachments[0]}
-          onOpen={recipePageProps.openModal}
-          onToggleFavorite={onToggleFavorite}
-          onUseAsReference={onUseAsReference}
-        />
+        {stage ?? (
+          <CreateResults
+            recipePageProps={recipePageProps}
+            images={stageImages}
+            onToggleFavorite={onToggleFavorite}
+            onUseAsReference={onUseAsReference}
+          />
+        )}
       </section>
     </div>
   );
 };
+
+export function CreateResults({
+  recipePageProps,
+  images,
+  onToggleFavorite,
+  onUseAsReference,
+  title,
+}: Pick<
+  CreateWorkspaceProps,
+  'recipePageProps' | 'images' | 'onToggleFavorite' | 'onUseAsReference'
+> & { title?: string }) {
+  const draft = useGenerationDraft();
+  return (
+    <RecipeResultPreview
+      variant="stage"
+      images={images ?? recipePageProps.imagesWithConfig}
+      reference={draft.generationConfig.attachments[0]}
+      onOpen={recipePageProps.openModal}
+      onToggleFavorite={onToggleFavorite}
+      onUseAsReference={onUseAsReference}
+      emptyTitle={title ? `${title} results` : undefined}
+      isGenerating={recipePageProps.isGenerating}
+    />
+  );
+}

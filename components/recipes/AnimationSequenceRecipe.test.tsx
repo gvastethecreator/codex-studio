@@ -31,9 +31,12 @@ describe('AnimationSequenceRecipe', () => {
 
     expect(html).toContain('data-animation-workbench="true"');
     expect(html).toContain('overflow-y-auto');
-    expect(html).toContain('lg:grid-cols-[18rem_minmax(0,1fr)]');
+    expect(html).toContain('Frame details');
+    expect(html).toContain('aria-expanded="false"');
     expect(html).toContain('A motion prompt is required to prepare a run.');
-    expect(html).toContain('Enter a motion prompt to preview frame instructions.');
+    expect(html).toContain(
+      'The playable preview appears after every frame is attached and exported.',
+    );
     expect(html).toContain('Loading runs...');
     expect(html).toContain('aria-pressed="true"');
   });

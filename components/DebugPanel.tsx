@@ -63,7 +63,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
       <div className="studio-dialog absolute inset-y-3 right-3 left-3 lg:left-auto lg:w-[min(960px,90vw)] overflow-hidden">
         <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-6 py-5">
           <div>
-            <div className="text-[10px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
+            <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               Studio activity
             </div>
             <h2 className="mt-1 text-xl font-semibold text-[color:var(--wb-ink)]">Job details</h2>
@@ -101,13 +101,15 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
                 onRetryJob={onRetryJob}
               />
             ) : isLoadingSelectedJob ? (
-              <div className="flex h-full min-h-80 items-center justify-center rounded-[28px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] text-[color:var(--wb-muted)]">
+              <div className="flex h-full min-h-80 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] text-[color:var(--wb-muted)]">
                 Loading job detail…
               </div>
             ) : (
-              <div className="flex h-full min-h-80 flex-col items-center justify-center rounded-[28px] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-8 text-center">
+              <div className="flex h-full min-h-80 flex-col items-center justify-center rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-8 text-center">
                 <BrainCircuit size={30} className="mb-4 text-accent-400" />
-                <h3 className="text-xl font-semibold text-[color:var(--wb-ink)]">Pick a job to inspect</h3>
+                <h3 className="text-xl font-semibold text-[color:var(--wb-ink)]">
+                  Pick a job to inspect
+                </h3>
                 <p className="mt-3 max-w-2xl text-sm leading-7 text-[color:var(--wb-muted)]">
                   Select any backend job from the session rail to open a readable timeline with
                   formatted transcript steps, structured event facts, and any images or file

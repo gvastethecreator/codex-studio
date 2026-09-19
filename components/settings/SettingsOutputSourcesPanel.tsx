@@ -99,13 +99,13 @@ export function SettingsOutputSourcesPanel({
   };
 
   return (
-    <div className="mt-4 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
+    <div className="mt-4 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
       <div className="mb-3 flex items-center justify-between gap-3">
         <div>
-          <h3 className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+          <h3 className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
             External Output Sources
           </h3>
-          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
+          <p className="mt-1 text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-dim)]">
             Detect, Register, Import Copy
           </p>
         </div>
@@ -130,14 +130,14 @@ export function SettingsOutputSourcesPanel({
           return (
             <div
               key={source.id}
-              className="rounded-lg border border-emerald-500/2 bg-emerald-500/8 p-3"
+              className="rounded-[var(--wb-radius)] border border-emerald-500/2 bg-emerald-500/8 p-3"
             >
               <div className="flex items-center justify-between gap-3">
                 <div className="min-w-0">
-                  <div className="text-[10px] font-black uppercase tracking-widest text-emerald-200">
+                  <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-success)] ">
                     {source.label}
                   </div>
-                  <div className="truncate font-mono text-[10px] text-emerald-100/70">
+                  <div className="truncate font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-success)] ">
                     {source.path}
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export function SettingsOutputSourcesPanel({
                     type="button"
                     onClick={() => void onLoadOutputSourceFiles(source.id)}
                     disabled={isScanning || isImporting}
-                    className="flex h-8 items-center gap-2 rounded-lg border border-emerald-400/2 px-3 text-[9px] font-black uppercase tracking-widest text-emerald-200 transition-colors hover:bg-emerald-400/10 disabled:opacity-40"
+                    className="flex h-8 items-center gap-2 rounded-[var(--wb-radius)] border border-emerald-400/2 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-success)]  transition-colors hover:bg-emerald-400/10 disabled:opacity-40"
                   >
                     {isScanning ? (
                       <LoaderCircle size={13} className="animate-spin" />
@@ -159,7 +159,7 @@ export function SettingsOutputSourcesPanel({
                     type="button"
                     onClick={() => void handleImportSelected(source.id)}
                     disabled={isImporting || isScanning || selected.length === 0}
-                    className="flex h-8 items-center gap-2 rounded-lg bg-emerald-600 px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-emerald-500 disabled:opacity-40"
+                    className="flex h-8 items-center gap-2 rounded-[var(--wb-radius)] bg-emerald-600 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-emerald-500 disabled:opacity-40"
                   >
                     {isImporting ? (
                       <LoaderCircle size={13} className="animate-spin" />
@@ -215,7 +215,7 @@ export function SettingsOutputSourcesPanel({
                   {files.map((file) => (
                     <label
                       key={file.relativePath}
-                      className="flex cursor-pointer items-center justify-between gap-3 rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
+                      className="flex cursor-pointer items-center justify-between gap-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
                     >
                       <span className="flex min-w-0 items-center gap-2">
                         <input
@@ -226,11 +226,11 @@ export function SettingsOutputSourcesPanel({
                           aria-label={`Select ${file.relativePath}`}
                           className="size-3.5 accent-emerald-400"
                         />
-                        <span className="truncate font-mono text-[10px] text-[color:var(--wb-ink)]">
+                        <span className="truncate font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-ink)]">
                           {file.relativePath}
                         </span>
                       </span>
-                      <span className="shrink-0 text-[9px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
+                      <span className="shrink-0 text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-dim)]">
                         {formatBytes(file.sizeBytes)}
                       </span>
                     </label>
@@ -244,14 +244,16 @@ export function SettingsOutputSourcesPanel({
         {outputSourceCandidates.map((candidate) => (
           <div
             key={candidate.id}
-            className="flex items-center justify-between gap-3 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2"
+            className="flex items-center justify-between gap-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2"
           >
             <div className="min-w-0">
-              <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+              <div className="flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                 <span>{candidate.label}</span>
                 <span className="text-[color:var(--wb-dim)]">{candidate.status}</span>
               </div>
-              <div className="truncate font-mono text-[10px] text-[color:var(--wb-muted)]">{candidate.path}</div>
+              <div className="truncate font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-muted)]">
+                {candidate.path}
+              </div>
             </div>
             <button
               type="button"
@@ -262,7 +264,7 @@ export function SettingsOutputSourcesPanel({
                 candidate.status !== 'detected' ||
                 candidate.isInsideStudioLibrary
               }
-              className="h-8 rounded-lg border border-[color:var(--wb-line)] px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
+              className="h-8 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
             >
               Register
             </button>
@@ -272,7 +274,7 @@ export function SettingsOutputSourcesPanel({
         {outputSources &&
         outputSources.registry.sources.length === 0 &&
         outputSourceCandidates.length === 0 ? (
-          <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
+          <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-dim)]">
             No external output sources detected.
           </div>
         ) : null}

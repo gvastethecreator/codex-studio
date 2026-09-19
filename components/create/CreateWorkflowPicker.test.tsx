@@ -4,6 +4,11 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { CreateWorkflowPicker } from './CreateWorkflowPicker';
 
+vi.mock('../../lib/recipeRouteModules', () => ({ preloadRecipeComponent: vi.fn() }));
+vi.mock('../../lib/studioViewportRouteSurfaces', () => ({
+  preloadStudioViewportSurface: vi.fn(),
+}));
+
 afterEach(cleanup);
 
 describe('CreateWorkflowPicker', () => {
@@ -55,5 +60,26 @@ describe('CreateWorkflowPicker', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Workflow: Styles' }));
     fireEvent.click(screen.getByRole('option', { name: 'Default' }));
     expect(onSelectDefault).toHaveBeenCalledTimes(1);
+  });
+  it('marks an alias selected and supports keyboard navigation and focus return', () => {
+    render(
+      <CreateWorkflowPicker
+        selectedId="character-poses"
+        selectedLabel="Character Poses"
+        onSelectRecipe={vi.fn()}
+      />,
+    );
+    const trigger = screen.getByRole('button', { name: 'Workflow: Character Poses' });
+    fireEvent.keyDown(trigger, { key: 'ArrowDown' });
+    const selected = screen.getByRole('option', { name: 'Open character poses' });
+    expect(selected.getAttribute('aria-selected')).toBe('true');
+    expect(document.activeElement).toBe(selected);
+    fireEvent.keyDown(selected, { key: 'ArrowDown' });
+    expect(document.activeElement).toBe(
+      screen.getByRole('option', { name: 'Open character sprites' }),
+    );
+    fireEvent.keyDown(document.activeElement!, { key: 'Escape' });
+    expect(screen.queryByRole('listbox')).toBeNull();
+    expect(document.activeElement).toBe(trigger);
   });
 });

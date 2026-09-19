@@ -1,86 +1,10 @@
 {
   "added_nodes": [],
   "removed_nodes": [],
-  "added_edges": [
-    {
-      "id": "edge:17e6e4a4bd53dcea0e7d",
-      "from": "components/ImageCarousel.tsx",
-      "to": "hooks/useDialogFocus.ts",
-      "type": "calls",
-      "type_only": false,
-      "evidence_count": 1,
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/ImageCarousel.tsx",
-            "symbol": "useDialogFocus(Boolean(activeImage), () => {\n    if (document.fullscreenElement) void document.exitFullscreen();\n    else onClose();\n  })",
-            "start_line": 584,
-            "end_line": 587,
-            "extractor": "tree-sitter-tsx",
-            "source_digest": "aff973b0a16c5befb04d6fea296344476a95b0617e33907ce2e32976414e1249",
-            "kind": "call",
-            "resolved_target": "hooks/useDialogFocus.ts",
-            "target_symbol": "useDialogFocus"
-          }
-        ]
-      }
-    },
-    {
-      "id": "edge:cbcd0d83121d7b34ff77",
-      "from": "components/ImageCarousel.tsx",
-      "to": "hooks/useDialogFocus.ts",
-      "type": "imports",
-      "type_only": false,
-      "evidence_count": 1,
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/ImageCarousel.tsx",
-            "symbol": "import { useDialogFocus } from '../hooks/useDialogFocus';",
-            "start_line": 36,
-            "end_line": 36,
-            "extractor": "tree-sitter-tsx",
-            "source_digest": "aff973b0a16c5befb04d6fea296344476a95b0617e33907ce2e32976414e1249",
-            "kind": "import",
-            "resolved_target": "hooks/useDialogFocus.ts"
-          }
-        ]
-      }
-    },
-    {
-      "id": "edge:5a45ea83219e43091d3a",
-      "from": "components/recipes/StylesBrowser.tsx",
-      "to": "contexts/GlobalContext.tsx",
-      "type": "imports",
-      "type_only": false,
-      "evidence_count": 1,
-      "evidence": {
-        "status": "verified",
-        "locations": [
-          {
-            "path": "components/recipes/StylesBrowser.tsx",
-            "symbol": "import { useWorkspaceState } from '../../contexts/GlobalContext';",
-            "start_line": 1,
-            "end_line": 1,
-            "extractor": "tree-sitter-tsx",
-            "source_digest": "2b8a353abc259467b4041f87956e24924d0c213040ece5705d42595fa186b7ad",
-            "kind": "import",
-            "resolved_target": "contexts/GlobalContext.tsx"
-          }
-        ]
-      }
-    }
-  ],
+  "added_edges": [],
   "removed_edges": [],
   "boundary_changes": [],
   "new_cycles": [],
-  "changed": true,
-  "changed_node_ids": [
-    "components/ImageCarousel.tsx",
-    "components/recipes/StylesBrowser.tsx",
-    "contexts/GlobalContext.tsx",
-    "hooks/useDialogFocus.ts"
-  ]
+  "changed": false,
+  "changed_node_ids": []
 }

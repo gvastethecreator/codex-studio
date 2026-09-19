@@ -23,6 +23,8 @@ export interface StudioGenerationDockProps {
   isDragging: boolean;
   toolbarArgs: GenerationToolbarRuntimeArgs;
   layout?: GenerationToolbarLayout;
+  railTools?: React.ReactNode;
+  railAction?: React.ReactNode;
 }
 
 function ConnectedGenerationToolbar({
@@ -30,7 +32,12 @@ function ConnectedGenerationToolbar({
   currentView,
   toolbarArgs,
   layout = 'dock',
-}: Pick<StudioGenerationDockProps, 'activeRecipe' | 'currentView' | 'toolbarArgs' | 'layout'>) {
+  railTools,
+  railAction,
+}: Pick<
+  StudioGenerationDockProps,
+  'activeRecipe' | 'currentView' | 'toolbarArgs' | 'layout' | 'railTools' | 'railAction'
+>) {
   const draft = useGenerationDraft();
   const toolbarProps = useGenerationToolbarConfig({
     ...toolbarArgs,
@@ -52,6 +59,8 @@ function ConnectedGenerationToolbar({
     <Toolbar
       {...toolbarProps}
       layout={layout}
+      railTools={railTools}
+      railAction={railAction}
       activeRecipe={activeRecipe}
       mode={
         ['animation-sequence', 'sprite-atlas', 'character-lab'].includes(activeRecipe ?? '')
@@ -71,6 +80,8 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   isDragging,
   toolbarArgs,
   layout = 'dock',
+  railTools,
+  railAction,
 }) => {
   const isVisible =
     !isModalOpen && !isUiChromeSuppressed && (currentView === 'recipes' || !!activeRecipe);
@@ -85,6 +96,8 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
       currentView={currentView}
       toolbarArgs={toolbarArgs}
       layout={layout}
+      railTools={railTools}
+      railAction={railAction}
     />
   );
 

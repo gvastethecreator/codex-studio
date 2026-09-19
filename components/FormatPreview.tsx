@@ -32,7 +32,7 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
             animate={{ scale: 1, opacity: 1, filter: 'blur(0px)' }}
             exit={{ scale: 1.05, opacity: 0, filter: 'blur(10px)' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-            className={`relative size-full max-w-full max-h-full border-2 border-dashed rounded-2xl flex items-center justify-center overflow-hidden
+            className={`relative size-full max-w-full max-h-full border-2 border-dashed rounded-[var(--wb-radius)] flex items-center justify-center overflow-hidden
               ${
                 isWorkspaceEmpty
                   ? 'border-[color:var(--wb-line)] bg-white/[0.01]'
@@ -49,15 +49,15 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
             <div
               className={`flex flex-col items-center gap-2 transition-opacity duration-700 ${isWorkspaceEmpty ? 'opacity-20' : 'opacity-60'}`}
             >
-              <span className="text-4xl md:text-8xl font-black text-[color:var(--wb-ink)] font-sans tracking-tighter drop-shadow-2xl select-none mix-blend-overlay">
+              <span className="text-4xl md:text-8xl font-semibold text-[color:var(--wb-ink)] font-sans tracking-tighter drop-shadow-2xl select-none mix-blend-overlay">
                 {ratio}
               </span>
               <div className="flex items-center gap-3 px-3 py-1 bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] border border-[color:var(--wb-line)] rounded-full">
-                <span className="text-[10px] font-mono font-black text-accent-400 uppercase tracking-widest">
+                <span className="text-[length:var(--wbp-label)] font-mono font-semibold text-accent-400 tracking-normal">
                   {data.width}px
                 </span>
                 <div className="size-1 bg-white/20 rounded-full" />
-                <span className="text-[10px] font-mono font-black text-accent-400 uppercase tracking-widest">
+                <span className="text-[length:var(--wbp-label)] font-mono font-semibold text-accent-400 tracking-normal">
                   {data.height}px
                 </span>
               </div>
@@ -90,7 +90,7 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
             {/* Floating Calibration Tag */}
             {!isWorkspaceEmpty && (
               <div className="absolute bottom-10 left-10 flex flex-col items-start gap-1">
-                <span className="text-[7px] font-black text-accent-500 uppercase tracking-[0.3em]">
+                <span className="text-[7px] font-semibold text-accent-500 tracking-normal">
                   Calibration Active
                 </span>
                 <div className="w-24 h-0.5 bg-accent-950/40 rounded-full overflow-hidden">

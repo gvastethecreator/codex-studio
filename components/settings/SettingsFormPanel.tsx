@@ -60,14 +60,14 @@ export function SettingsFormPanel({
     <div className={domain === 'providers' ? 'grid gap-4' : 'grid gap-4 md:grid-cols-2'}>
       {domain === 'library' ? (
         <>
-          <div className="md:col-span-2 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
+          <div className="md:col-span-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
             <div className="flex items-center gap-3">
               <FolderOpen size={16} className="text-[color:var(--wb-muted)]" />
               <div className="min-w-0">
-                <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Studio Library
                 </div>
-                <div className="truncate font-mono text-[10px] text-[color:var(--wb-ink)]">
+                <div className="truncate font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-ink)]">
                   {libraryDir ?? 'Waiting for local library path...'}
                 </div>
               </div>
@@ -78,18 +78,18 @@ export function SettingsFormPanel({
             type="button"
             onClick={() => void onResetStudio()}
             disabled={isResettingStudio}
-            className="flex items-center justify-between rounded-lg border border-rose-500/2 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
+            className="flex items-center justify-between rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 p-4 text-left transition-colors hover:bg-rose-500/15 disabled:opacity-60"
           >
             <span className="flex items-center gap-3">
-              <Database size={16} className="text-rose-300" />
-              <span className="text-[10px] font-black uppercase tracking-widest text-rose-100">
+              <Database size={16} className="text-[color:var(--wb-danger)] " />
+              <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] ">
                 Rebuild Library
               </span>
             </span>
             {isResettingStudio ? (
-              <LoaderCircle size={16} className="animate-spin text-rose-300" />
+              <LoaderCircle size={16} className="animate-spin text-[color:var(--wb-danger)] " />
             ) : (
-              <RotateCcw size={16} className="text-rose-300" />
+              <RotateCcw size={16} className="text-[color:var(--wb-danger)] " />
             )}
           </button>
         </>
@@ -104,14 +104,16 @@ export function SettingsFormPanel({
               commandCenterCompactMode: !prev.commandCenterCompactMode,
             }))
           }
-          className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
+          className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
         >
           <span className="flex items-center gap-3">
             <Settings
               size={16}
-              className={commandCenterCompactMode ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'}
+              className={
+                commandCenterCompactMode ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'
+              }
             />
-            <span className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
               Compact workspace controls
             </span>
           </span>
@@ -133,8 +135,8 @@ export function SettingsFormPanel({
 
       {domain === 'output' ? (
         <>
-          <label className="flex flex-col gap-2 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
-            <span className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+          <label className="flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               Output Mode
             </span>
             <select
@@ -145,15 +147,15 @@ export function SettingsFormPanel({
                   defaultOutputMode: event.target.value as StudioOutputMode,
                 }))
               }
-              className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-black uppercase tracking-widest text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
             >
               <option value="studio_library">Studio Library</option>
               <option value="external_source">External Source</option>
             </select>
           </label>
 
-          <label className="flex flex-col gap-2 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
-            <span className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+          <label className="flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               Output Subfolders
             </span>
             <select
@@ -161,7 +163,7 @@ export function SettingsFormPanel({
               onChange={(event) =>
                 setFormState((prev) => ({ ...prev, outputSubfolderPreset: event.target.value }))
               }
-              className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-black uppercase tracking-widest text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
             >
               {OUTPUT_SUBFOLDER_PRESETS.map((preset) => (
                 <option
@@ -174,8 +176,8 @@ export function SettingsFormPanel({
             </select>
           </label>
 
-          <label className="flex flex-col gap-2 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
-            <span className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+          <label className="flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               File Name Template
             </span>
             <input
@@ -187,20 +189,22 @@ export function SettingsFormPanel({
               }
               placeholder="{timestamp}-{provider}-{jobId}"
               aria-label="File name template"
-              className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
+              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
             />
             {fileNameError ? (
-              <span id="output-filename-error" className="text-xs text-rose-300">
+              <span id="output-filename-error" className="text-xs text-[color:var(--wb-danger)] ">
                 {fileNameError}
               </span>
             ) : null}
           </label>
 
-          <label className="md:col-span-2 flex flex-col gap-2 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
-            <span className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+          <label className="md:col-span-2 flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               {EXTERNAL_SCAN_PATH_LABEL}
             </span>
-            <p className="text-[11px] leading-relaxed text-[color:var(--wb-muted)]">{EXTERNAL_SCAN_PATH_HELP}</p>
+            <p className="text-[11px] leading-relaxed text-[color:var(--wb-muted)]">
+              {EXTERNAL_SCAN_PATH_HELP}
+            </p>
             <input
               value={preferredOutputPath}
               onChange={(event) =>
@@ -208,7 +212,7 @@ export function SettingsFormPanel({
               }
               placeholder={libraryDir ?? 'D:/outputs'}
               aria-label={EXTERNAL_SCAN_PATH_LABEL}
-              className="h-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
+              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
             />
           </label>
 
@@ -220,14 +224,16 @@ export function SettingsFormPanel({
                 autoDetectOutputSources: !prev.autoDetectOutputSources,
               }))
             }
-            className={`flex items-center justify-between rounded-lg border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
+            className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
           >
             <span className="flex items-center gap-3">
               <FolderOpen
                 size={16}
-                className={autoDetectOutputSources ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'}
+                className={
+                  autoDetectOutputSources ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'
+                }
               />
-              <span className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+              <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                 Auto Detect Outputs
               </span>
             </span>

@@ -219,7 +219,7 @@ export function WorkspaceStrip({
           workspace.firstImageCreatedAt ?? workspace.createdAt,
         );
         const tooltipContent = `${workspaceName} - ${formattedImageCount} images - updated ${updatedLabel}`;
-        const workspaceButtonClassName = `studio-command-surface studio-hit-target min-h-10 ${isCompact ? 'w-full min-w-0 max-w-none' : 'min-w-[8.5rem] max-w-[11rem]'} rounded-lg border transition-[color,background-color,border-color,opacity,transform,box-shadow] relative flex items-center gap-2 overflow-hidden px-1.5 pr-2 text-left cursor-pointer ${
+        const workspaceButtonClassName = `studio-command-surface studio-hit-target min-h-10 ${isCompact ? 'w-full min-w-0 max-w-none' : 'min-w-[8.5rem] max-w-[11rem]'} rounded-[var(--wb-radius)] border transition-[color,background-color,border-color,opacity,transform,box-shadow] relative flex items-center gap-2 overflow-hidden px-1.5 pr-2 text-left cursor-pointer ${
           isActive
             ? 'border-accent-500/2 bg-accent-500/12 text-[color:var(--wb-ink)] shadow-[0_0_18px_rgba(var(--accent-500),0.12)]'
             : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-muted)] opacity-75 hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] hover:opacity-100'
@@ -277,7 +277,7 @@ export function WorkspaceStrip({
                 }}
                 className={workspaceButtonClassName}
               >
-                <span className="size-6 shrink-0 overflow-hidden rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]">
+                <span className="size-6 shrink-0 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]">
                   {workspace.lastImage ? (
                     <img
                       src={workspace.lastImage}
@@ -292,19 +292,21 @@ export function WorkspaceStrip({
                     <span
                       className={`flex size-full items-center justify-center bg-linear-to-br ${gradientClass}`}
                     >
-                      <span className="text-[9px] font-black text-[color:var(--wb-ink)] drop-shadow-md">
+                      <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] drop-shadow-md">
                         {label}
                       </span>
                     </span>
                   )}
                 </span>
-                <span className="min-w-0 flex-1 truncate text-[10px] font-black uppercase tracking-widest">
+                <span className="min-w-0 flex-1 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
                   {workspaceName}
                 </span>
                 <span
                   aria-label={`${imageCount} images`}
-                  className={`shrink-0 rounded-md px-1.5 py-0.5 text-[9px] font-black tabular-nums ${
-                    isActive ? 'bg-accent-400/18 text-accent-100' : 'bg-[color:var(--wb-well)] text-[color:var(--wb-muted)]'
+                  className={`shrink-0 rounded-[var(--wb-radius)] px-1.5 py-0.5 text-[length:var(--wbp-label)] font-semibold tabular-nums ${
+                    isActive
+                      ? 'bg-accent-400/18 text-accent-100'
+                      : 'bg-[color:var(--wb-well)] text-[color:var(--wb-muted)]'
                   }`}
                 >
                   {formattedImageCount}
@@ -337,7 +339,7 @@ export function WorkspaceStrip({
                     clientY: event.clientY,
                   });
                 }}
-                className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity] ${
+                className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-[var(--wb-radius)] border transition-[color,background-color,border-color,opacity] ${
                   contextMenuWorkspaceId === workspace.id
                     ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
                     : 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)] opacity-75 hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] hover:opacity-100'
@@ -355,7 +357,7 @@ export function WorkspaceStrip({
                 placement="bottom-right"
                 role="dialog"
                 aria-label="Rename workspace"
-                className="absolute left-1/2 top-full z-50 mt-1.5 flex -translate-x-1/2 gap-2 rounded-lg p-1.5"
+                className="absolute left-1/2 top-full z-50 mt-1.5 flex -translate-x-1/2 gap-2 rounded-[var(--wb-radius)] p-1.5"
               >
                 <input
                   ref={(el) => el?.focus()}
@@ -368,7 +370,7 @@ export function WorkspaceStrip({
                     }
                   }}
                   aria-label="Rename workspace"
-                  className="w-36 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-1.5 text-xs text-[color:var(--wb-ink)] outline-none focus:border-accent-500/2"
+                  className="w-36 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-1.5 text-xs text-[color:var(--wb-ink)] outline-none focus:border-accent-500/2"
                   placeholder="Workspace name"
                 />
               </DemandMountedGsapDropdown>
@@ -384,63 +386,68 @@ export function WorkspaceStrip({
                 }}
                 role="menu"
                 aria-label={`Workspace actions for ${workspaceName}`}
-                className="fixed z-50 max-h-[min(80vh,420px)] w-80 max-w-[calc(100vw-1rem)] overflow-y-auto rounded-lg p-2"
+                className="fixed z-50 max-h-[min(80vh,420px)] w-80 max-w-[calc(100vw-1rem)] overflow-y-auto rounded-[var(--wb-radius)] p-2"
                 style={{
                   left: contextMenuPosition?.left ?? 8,
                   top: contextMenuPosition?.top ?? 44,
                 }}
               >
                 <div className="border-b border-[color:var(--wb-line)] pb-2">
-                  <div className="truncate text-[11px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+                  <div className="truncate text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                     {workspaceName}
                   </div>
-                  <div className="mt-1 truncate text-[10px] font-semibold text-[color:var(--wb-muted)]">
+                  <div className="mt-1 truncate text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)]">
                     {workspace.id}
                   </div>
                 </div>
-                <div className="space-y-1 py-2 text-[10px] font-semibold text-[color:var(--wb-ink)]">
-                  <div className="flex items-start gap-2 rounded-md bg-white/[0.025] px-2 py-1.5">
+                <div className="space-y-1 py-2 text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)]">
+                  <div className="flex items-start gap-2 rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
                     <Folder size={13} className="mt-0.5 shrink-0 text-[color:var(--wb-muted)]" />
                     <div className="min-w-0 flex-1">
-                      <div className="font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                      <div className="font-semibold tracking-normal text-[color:var(--wb-muted)]">
                         Location
                       </div>
-                      <div className="truncate text-[color:var(--wb-ink)]" title={workspaceLocation}>
+                      <div
+                        className="truncate text-[color:var(--wb-ink)]"
+                        title={workspaceLocation}
+                      >
                         {workspaceLocation}
                       </div>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-1">
-                    <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                    <div className="rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
+                      <div className="flex items-center gap-1.5 font-semibold tracking-normal text-[color:var(--wb-muted)]">
                         <Photo size={12} />
                         Images
                       </div>
-                      <div className="mt-1 text-[color:var(--wb-ink)] tabular-nums">{formattedImageCount}</div>
+                      <div className="mt-1 text-[color:var(--wb-ink)] tabular-nums">
+                        {formattedImageCount}
+                      </div>
                     </div>
-                    <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                    <div className="rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
+                      <div className="flex items-center gap-1.5 font-semibold tracking-normal text-[color:var(--wb-muted)]">
                         <Database size={12} />
                         Storage
                       </div>
                       <div className="mt-1 truncate text-[color:var(--wb-ink)]">{storageLabel}</div>
                     </div>
-                    <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                    <div className="rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
+                      <div className="flex items-center gap-1.5 font-semibold tracking-normal text-[color:var(--wb-muted)]">
                         <Clock size={12} />
                         Updated
                       </div>
                       <div className="mt-1 text-[color:var(--wb-ink)]">{updatedLabel}</div>
                     </div>
-                    <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                      <div className="font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                    <div className="rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
+                      <div className="font-semibold tracking-normal text-[color:var(--wb-muted)]">
                         Created
                       </div>
                       <div className="mt-1 text-[color:var(--wb-ink)]">{createdLabel}</div>
                     </div>
                   </div>
-                  <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                    <div className="font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                  <div className="rounded-[var(--wb-radius)] bg-white/[0.025] px-2 py-1.5">
+                    <div className="font-semibold tracking-normal text-[color:var(--wb-muted)]">
                       Libraries
                     </div>
                     <div
@@ -462,7 +469,7 @@ export function WorkspaceStrip({
                     setContextMenuPosition(null);
                     onDeleteWorkspace(workspace.id);
                   }}
-                  className="flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-[10px] font-black uppercase tracking-widest text-red-300 transition-colors hover:bg-red-500/10 hover:text-red-200 disabled:cursor-not-allowed disabled:text-red-200/35 disabled:hover:bg-transparent"
+                  className="flex w-full items-center gap-2 rounded-[var(--wb-radius)] px-2 py-1.5 text-left text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] transition-colors hover:bg-red-500/10 hover:text-[color:var(--wb-danger)] disabled:cursor-not-allowed disabled:text-[color:var(--wb-danger)] disabled:hover:bg-transparent"
                 >
                   <Trash2 size={13} />
                   <span>{canDeleteWorkspace ? 'Delete workspace' : 'Default locked'}</span>
@@ -481,7 +488,7 @@ export function WorkspaceStrip({
             onAddWorkspace();
           }}
           aria-label="Create workspace"
-          className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-dim)] transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-[color:var(--wb-ink)] ${isCompact ? 'w-full' : ''}`}
+          className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-dim)] transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-[color:var(--wb-ink)] ${isCompact ? 'w-full' : ''}`}
         >
           <Plus size={16} />
         </button>

@@ -20,25 +20,9 @@ const ActionButton: React.FC<ActionButtonProps> = ({
   disabled = false,
   tooltipPosition = 'top',
 }) => {
-  let baseClasses =
-    'relative flex min-h-10 min-w-10 touch-manipulation items-center justify-center rounded-xl p-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] duration-200 outline-none group active:scale-90 ghost-btn';
-
-  if (disabled) {
-    baseClasses += ' opacity-20 cursor-not-allowed';
-  } else {
-    baseClasses += ' cursor-pointer';
-  }
-
-  // Pure Ghost Logic based on variant
-  if (variant === 'danger') {
-    baseClasses += disabled ? '' : ' text-red-500/60 hover:text-red-400 hover:bg-red-500/10';
-  } else if (variant === 'primary' || isActive) {
-    baseClasses += disabled
-      ? ''
-      : ' bg-gradient-to-b from-accent-950 to-accent-800 border border-accent-700/2 text-accent-300 shadow-[0_2px_8px_rgba(0,0,0,0.4)] hover:text-[color:var(--wb-ink)] hover:border-accent-500/2';
-  } else {
-    baseClasses += disabled ? '' : ' text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]';
-  }
+  const baseClasses = `studio-icon-action studio-ghost-control ${
+    variant === 'danger' ? 'is-danger' : variant === 'primary' || isActive ? 'is-active' : ''
+  }`;
 
   return (
     <Tooltip content={label} position={tooltipPosition}>
@@ -55,7 +39,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({
       >
         {icon}
         {isActive && variant !== 'primary' && (
-          <span className="absolute -top-0.5 -right-0.5 size-1.5 bg-accent-500 rounded-2xl shadow-[0_0_10px_rgb(var(--accent-500)/0.8)]" />
+          <span className="absolute -top-0.5 -right-0.5 size-1.5 bg-[color:var(--wb-accent)] rounded-full" />
         )}
       </button>
     </Tooltip>

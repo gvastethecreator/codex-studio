@@ -971,56 +971,6 @@
   font-size: 12px;
 }
 
-.create-recipe-canvas:has(.styles-workbench) {
-  display: none;
-}
-
-.create-tools:has([data-compact-style-selector]) .create-recipe-controls {
-  flex: 1 1 auto;
-  max-height: none;
-  min-height: 0;
-  margin-bottom: 0;
-  padding: 12px 18px 8px;
-  overflow: auto;
-}
-
-.create-tools:has([data-compact-style-selector]) .create-tool-dock,
-.create-tools:has([data-compact-style-selector]) .create-tool-dock-loading {
-  flex: 0 0 auto;
-  min-height: 0;
-  margin-top: 0;
-}
-
-.create-tools:has([data-compact-style-selector]) .create-prompt-section,
-.create-tools:has([data-compact-style-selector]) .create-composer {
-  flex: 0 0 auto;
-  min-height: 0;
-}
-
-.create-tools:has([data-compact-style-selector]) .create-prompt-input {
-  min-height: 84px;
-  flex: 0 1 auto;
-}
-
-.create-tools:has([data-compact-style-selector]) .create-reference-area {
-  padding: 8px 12px 10px;
-}
-
-.create-tools:has([data-compact-style-selector]) .create-reference-heading {
-  margin-bottom: 6px;
-}
-
-.create-tools:has([data-compact-style-selector]) .create-reference-list {
-  min-height: 48px;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
-.create-tools:has([data-compact-style-selector]) .create-reference-empty {
-  max-width: none;
-  white-space: nowrap;
-}
-
 @media (pointer: coarse) {
   .cs-row {
     min-height: 44px;

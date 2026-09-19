@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { IconChevronDown, IconSitemap, IconSparkles } from '@tabler/icons-react';
 
 import type { RecipeAliasId } from '../../lib/recipeAliases';
-import { createRecipesGridProjection } from '../../lib/recipeDiscoveryProjection';
+import { createRecipeDiscoveryProjection } from '../../lib/recipeDiscoveryProjection';
 import { preloadRecipeComponent } from '../../lib/recipeRouteModules';
 import { buildRecipeIntentPreloadPlan } from '../../lib/routePreloadBudget';
 import { preloadStudioViewportSurface } from '../../lib/studioViewportRouteSurfaces';
@@ -14,6 +14,7 @@ export interface CreateWorkflowPickerProps {
   onPreviewRecipe?: (id: RecipeId) => void;
   onSelectDefault?: () => void;
   selectedLabel?: string;
+  selectedId?: string | null;
 }
 
 function preloadRecipeIntent(recipeId: RecipeId) {
@@ -31,11 +32,17 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
   onPreviewRecipe,
   onSelectDefault,
   selectedLabel = 'Default',
+  selectedId,
 }) => {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
-  const recipeDiscovery = useMemo(() => createRecipesGridProjection(), []);
+  const recipeDiscovery = useMemo(() => createRecipeDiscoveryProjection(), []);
   const isDefaultSelected = selectedLabel === 'Default';
+  const activeId =
+    selectedId ??
+    recipeDiscovery.entries.find(
+      (entry) => entry.title.toLowerCase() === selectedLabel.toLowerCase(),
+    )?.id;
 
   const handlePreviewRecipe = useCallback(
     (recipeId: RecipeId) => {
@@ -48,13 +55,19 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
   useEffect(() => {
     if (!open) return;
 
+    rootRef.current?.querySelector<HTMLElement>('[role=option][aria-selected=true]')?.focus();
+
     const handlePointerDown = (event: PointerEvent) => {
       if (rootRef.current && !rootRef.current.contains(event.target as Node)) {
         setOpen(false);
       }
     };
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setOpen(false);
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        setOpen(false);
+        rootRef.current?.querySelector<HTMLButtonElement>('[aria-haspopup]')?.focus();
+      }
     };
 
     document.addEventListener('pointerdown', handlePointerDown);
@@ -64,6 +77,11 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [open]);
+
+  const closeAndFocus = () => {
+    setOpen(false);
+    rootRef.current?.querySelector<HTMLButtonElement>('[aria-haspopup]')?.focus();
+  };
 
   return (
     <section className="create-workflow-block is-header" aria-label="Workflow">
@@ -76,6 +94,12 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
           aria-expanded={open}
           aria-controls="create-workflow-list"
           onClick={() => setOpen((value) => !value)}
+          onKeyDown={(event) => {
+            if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+              event.preventDefault();
+              setOpen(true);
+            }
+          }}
         >
           <IconSitemap size={16} aria-hidden="true" />
           <span id="create-workflow-value">{selectedLabel}</span>
@@ -91,6 +115,28 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
             role="listbox"
             aria-label="Workflows"
             className="create-workflow-popover custom-scrollbar"
+            onKeyDown={(event) => {
+              const options = Array.from(
+                event.currentTarget.querySelectorAll<HTMLButtonElement>('[role=option]'),
+              );
+              const index = options.indexOf(document.activeElement as HTMLButtonElement);
+              const last = options.length - 1;
+              const next =
+                event.key === 'Home'
+                  ? 0
+                  : event.key === 'End'
+                    ? last
+                    : event.key === 'ArrowDown'
+                      ? (index + 1) % options.length
+                      : event.key === 'ArrowUp'
+                        ? (index - 1 + options.length) % options.length
+                        : null;
+              if (next !== null) {
+                event.preventDefault();
+                options[next]?.focus();
+              }
+              if (event.key === 'Tab') setOpen(false);
+            }}
           >
             <div className="create-popover-title">Workflow</div>
             <button
@@ -98,9 +144,10 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
               role="option"
               aria-label="Default"
               aria-selected={isDefaultSelected}
+              tabIndex={-1}
               className="create-workflow-default"
               onClick={() => {
-                setOpen(false);
+                closeAndFocus();
                 onSelectDefault?.();
               }}
             >
@@ -114,16 +161,15 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
             </button>
             <RecipeDiscoveryList
               entries={recipeDiscovery.entries}
+              selectedId={activeId}
               density="compact"
               onSelectRecipe={(id, aliasId) => {
-                setOpen(false);
+                closeAndFocus();
                 onSelectRecipe(id, aliasId);
               }}
               onPreviewRecipe={handlePreviewRecipe}
             />
-            <div className="create-popover-note">
-              Default stays on this canvas. Recipes open their own workspace.
-            </div>
+            <div className="create-popover-note">Each workflow adds tools to Create.</div>
           </div>
         ) : null}
       </div>

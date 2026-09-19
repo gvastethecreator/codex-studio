@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs';
+import { CHARACTER_LAB_RECIPE_ALIASES } from './recipeAliases';
 import { describe, expect, it } from 'vitest';
 
 import {
@@ -6,6 +7,7 @@ import {
   characterLabModes,
   getCharacterLabIconFrame,
   getFirstReadyCharacterLabAction,
+  resolveInitialCharacterLabAction,
 } from './characterLabView';
 
 describe('characterLabView', () => {
@@ -36,5 +38,20 @@ describe('characterLabView', () => {
     );
     expect(identity.includes('characterLabCatalog.generated')).toBe(false);
     expect(stylesPage.includes('characterLabCatalog.generated')).toBe(false);
+  });
+  it('opens the requested alias mode without replacing a saved action in that mode', () => {
+    const front = getFirstReadyCharacterLabAction('poses');
+    for (const alias of CHARACTER_LAB_RECIPE_ALIASES) {
+      const action = resolveInitialCharacterLabAction(
+        { mode: front.mode, actionId: front.id },
+        alias.id,
+      );
+      expect(action.mode).toBe(alias.characterLabMode);
+      const saved = characterLabActions
+        .filter((candidate) => candidate.mode === alias.characterLabMode)
+        .at(-1)!;
+      expect(resolveInitialCharacterLabAction({ actionId: saved.id }, alias.id).id).toBe(saved.id);
+    }
+    expect(resolveInitialCharacterLabAction({ actionId: front.id }).id).toBe(front.id);
   });
 });

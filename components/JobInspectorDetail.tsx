@@ -39,13 +39,13 @@ interface JobInspectorDetailProps {
 function toneForStatus(status: StudioJob['status']) {
   switch (status) {
     case 'completed':
-      return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
+      return 'border-emerald-500/2 bg-emerald-500/10 text-[color:var(--wb-success)] ';
     case 'cancelled':
       return 'border-[color:var(--wb-border)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)]';
     case 'failed':
-      return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
+      return 'border-rose-500/2 bg-rose-500/10 text-[color:var(--wb-danger)] ';
     case 'needs_review':
-      return 'border-amber-500/2 bg-amber-500/10 text-amber-100';
+      return 'border-amber-500/2 bg-amber-500/10 text-[color:var(--wb-warning)] ';
     default:
       return 'border-accent-500/2 bg-accent-500/10 text-accent-200';
   }
@@ -62,7 +62,7 @@ function toneForTimeline(item: JobInspectorTimelineItem) {
     case 'tool':
       return 'border-cyan-500/2 bg-cyan-500/8 text-cyan-100';
     case 'message':
-      return 'border-emerald-500/2 bg-emerald-500/8 text-emerald-100';
+      return 'border-emerald-500/2 bg-emerald-500/8 text-[color:var(--wb-success)] ';
     default:
       return 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-ink)]';
   }
@@ -115,13 +115,13 @@ function JobStatusBanner({
         : 'This job was cancelled before it could complete.';
 
     return (
-      <section className="rounded-[22px] border border-rose-500/2 bg-rose-500/8 p-5">
+      <section className="rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/8 p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex items-start gap-3">
-            <AlertCircle size={18} className="mt-0.5 shrink-0 text-rose-400" />
+            <AlertCircle size={18} className="mt-0.5 shrink-0 text-[color:var(--wb-danger)]" />
             <div className="min-w-0">
-              <h3 className="text-sm font-semibold text-rose-200">{title}</h3>
-              <p className="mt-2 text-[13px] leading-6 text-rose-100/75 [overflow-wrap:anywhere]">
+              <h3 className="text-sm font-semibold text-[color:var(--wb-danger)] ">{title}</h3>
+              <p className="mt-2 text-[13px] leading-6 text-[color:var(--wb-danger)]  [overflow-wrap:anywhere]">
                 {body}
               </p>
             </div>
@@ -135,14 +135,16 @@ function JobStatusBanner({
     const transcriptPath = detail.turn?.transcriptPath;
 
     return (
-      <section className="rounded-[22px] border border-amber-500/2 bg-amber-500/8 p-5">
+      <section className="rounded-[var(--wb-radius)] border border-amber-500/2 bg-amber-500/8 p-5">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex items-start gap-3">
-            <Eye size={18} className="mt-0.5 shrink-0 text-amber-400" />
+            <Eye size={18} className="mt-0.5 shrink-0 text-[color:var(--wb-warning)]" />
             <div className="min-w-0 space-y-3">
               <div>
-                <h3 className="text-sm font-semibold text-amber-200">Review the provider result</h3>
-                <p className="mt-2 text-[13px] leading-6 text-amber-100/70">
+                <h3 className="text-sm font-semibold text-[color:var(--wb-warning)] ">
+                  Review the provider result
+                </h3>
+                <p className="mt-2 text-[13px] leading-6 text-[color:var(--wb-warning)] ">
                   {error || 'The provider did not return a confirmed, usable image result.'} Check
                   the activity timeline and the provider runtime for this job. Retry and
                   cancellation stay unavailable until its result is reconciled. When a remote ID is
@@ -151,18 +153,18 @@ function JobStatusBanner({
               </div>
 
               {hasReadableAssistantReply ? (
-                <div className="rounded-2xl border border-amber-500/2 bg-[color:var(--wb-well)] px-3 py-2.5 text-[12px] leading-5 text-amber-100/70">
+                <div className="rounded-[var(--wb-radius)] border border-amber-500/2 bg-[color:var(--wb-well)] px-3 py-2.5 text-[12px] leading-5 text-[color:var(--wb-warning)] ">
                   The final assistant response is already captured in the timeline below, so we do
                   not repeat it here.
                 </div>
               ) : null}
 
               {transcriptPath ? (
-                <div className="rounded-2xl border border-amber-500/2 bg-[color:var(--wb-well)] px-3 py-2.5">
-                  <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-400/50">
+                <div className="rounded-[var(--wb-radius)] border border-amber-500/2 bg-[color:var(--wb-well)] px-3 py-2.5">
+                  <p className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)]">
                     Transcript path
                   </p>
-                  <p className="mt-1 font-mono text-[11px] text-amber-200/40 [overflow-wrap:anywhere]">
+                  <p className="mt-1 font-mono text-[11px] text-[color:var(--wb-warning)]  [overflow-wrap:anywhere]">
                     {transcriptPath}
                   </p>
                 </div>
@@ -204,7 +206,7 @@ function SectionCard({
         {icon ? <span className="text-accent-300">{icon}</span> : null}
         <div>
           {eyebrow ? (
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
+            <p className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               {eyebrow}
             </p>
           ) : null}
@@ -225,7 +227,7 @@ function RenderTextBlocks({ blocks }: { blocks: JobInspectorTextBlock[] }) {
         block.kind === 'code' ? (
           <pre
             key={`${block.kind}-${block.text}`}
-            className="custom-scrollbar overflow-x-auto rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-6 text-[color:var(--wb-ink)]"
+            className="custom-scrollbar overflow-x-auto rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-6 text-[color:var(--wb-ink)]"
           >
             {block.text}
           </pre>
@@ -252,7 +254,7 @@ function ArtifactTile({
   const tile = (
     <div
       className={cn(
-        'min-w-0 overflow-hidden rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-well)]',
+        'min-w-0 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-well)]',
         className,
       )}
     >
@@ -278,7 +280,7 @@ function ArtifactTile({
           ) : (
             <FileText size={14} />
           )}
-          <span className="text-[10px] font-black uppercase tracking-[0.18em]">
+          <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
             {artifact.sourceLabel}
           </span>
         </div>
@@ -313,11 +315,11 @@ function OutputPreviewStrip({
   if (artifacts.length === 0) {
     return (
       <div>
-        <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+        <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
           <ImageIcon size={14} className="text-accent-300" />
           <span>{title}</span>
         </div>
-        <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
+        <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
           {emptyMessage}
         </div>
       </div>
@@ -326,7 +328,7 @@ function OutputPreviewStrip({
 
   return (
     <div>
-      <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+      <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
         <ImageIcon size={14} className="text-accent-300" />
         <span>{title}</span>
       </div>
@@ -336,7 +338,7 @@ function OutputPreviewStrip({
         ))}
       </div>
       {artifacts.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
+        <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
           {emptyMessage}
         </div>
       ) : null}
@@ -353,7 +355,7 @@ function ArtifactGallery({
 }) {
   if (artifacts.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
+      <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
         {emptyMessage}
       </div>
     );
@@ -376,9 +378,9 @@ function FactGrid({ facts }: { facts: JobInspectorTimelineItem['facts'] }) {
       {facts.map((fact) => (
         <div
           key={`${fact.label}-${fact.value}`}
-          className="min-w-0 rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2.5"
+          className="min-w-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2.5"
         >
-          <dt className="text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+          <dt className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             {fact.label}
           </dt>
           <dd className="mt-1 text-[13px] leading-5 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
@@ -403,16 +405,16 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
         execution. Elapsed time includes this attempt's queue and interruptions.
       </p>
       <div className="grid gap-2 sm:grid-cols-2">
-        <div className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3.5">
-          <div className="text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+        <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3.5">
+          <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             Attempt elapsed
           </div>
           <div className="mt-1.5 font-mono text-xl font-semibold text-[color:var(--wb-ink)]">
             {formatDuration(findTiming(metrics.timings, 'total'))}
           </div>
         </div>
-        <div className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3.5">
-          <div className="text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+        <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3.5">
+          <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
             Tokens spent
           </div>
           <div className="mt-1.5 font-mono text-xl font-semibold text-accent-200">
@@ -431,11 +433,16 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
           ['Latest provider execution', formatDuration(providerMs)],
           ['Latest asset import', formatDuration(assetImportMs)],
         ].map(([label, value]) => (
-          <div key={label} className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2.5">
-            <div className="text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+          <div
+            key={label}
+            className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2.5"
+          >
+            <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               {label}
             </div>
-            <div className="mt-1 font-mono text-[13px] font-semibold text-[color:var(--wb-ink)]">{value}</div>
+            <div className="mt-1 font-mono text-[13px] font-semibold text-[color:var(--wb-ink)]">
+              {value}
+            </div>
           </div>
         ))}
       </div>
@@ -453,7 +460,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
   return (
     <article
       className={cn(
-        'rounded-[20px] border p-3 transition-colors',
+        'rounded-[var(--wb-radius)] border p-3 transition-colors',
         isExpanded ? 'border-[color:var(--wb-line)] bg-white/[0.055]' : toneForTimeline(item),
       )}
     >
@@ -463,7 +470,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
         aria-expanded={isExpanded}
         className="flex w-full items-start gap-3 text-left cursor-pointer"
       >
-        <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-ink)]">
+        <div className="flex size-10 shrink-0 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-ink)]">
           <TimelineIcon item={item} />
         </div>
 
@@ -472,10 +479,10 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
             <h4 className="text-[14px] font-semibold leading-5 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
               {item.title}
             </h4>
-            <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+            <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               {item.sourceType === 'transcript' ? 'Transcript' : 'Event'}
             </span>
-            <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+            <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               {formatTimestamp(item.timestamp)}
             </span>
           </div>
@@ -484,7 +491,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
             {truncateHeadline(previewText, 180)}
           </p>
 
-          <div className="flex flex-wrap items-center gap-2 text-[9px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
+          <div className="flex flex-wrap items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-[0.16em] text-[color:var(--wb-muted)]">
             <span>{item.facts.length} facts</span>
             <span>•</span>
             <span>{item.artifacts.length} refs</span>
@@ -497,7 +504,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
           </div>
         </div>
 
-        <div className="mt-1 shrink-0 rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)] transition-colors hover:border-[color:var(--wb-border)] hover:text-[color:var(--wb-ink)]">
+        <div className="mt-1 shrink-0 rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)] transition-colors hover:border-[color:var(--wb-border)] hover:text-[color:var(--wb-ink)]">
           {isExpanded ? 'Hide' : 'Open'}
         </div>
       </button>
@@ -509,7 +516,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
 
           {item.artifacts.length > 0 ? (
             <div>
-              <div className="mb-2 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+              <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 Attachments and outputs
               </div>
               <ArtifactGallery
@@ -520,11 +527,11 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
           ) : null}
 
           {item.rawJson && item.tone !== 'reasoning' && item.tone !== 'message' ? (
-            <details className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
-              <summary className="cursor-pointer text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+            <details className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+              <summary className="cursor-pointer text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 {item.tone === 'tool' ? 'Tool call payload' : 'Event payload'}
               </summary>
-              <pre className="custom-scrollbar mt-3 max-h-72 overflow-auto rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-6 text-[color:var(--wb-ink)]">
+              <pre className="custom-scrollbar mt-3 max-h-72 overflow-auto rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-6 text-[color:var(--wb-ink)]">
                 {item.rawJson}
               </pre>
             </details>
@@ -611,28 +618,28 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
   ] as const;
 
   return (
-    <section className="overflow-hidden rounded-[28px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_28px_90px_rgba(0,0,0,0.45)]">
+    <section className="overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_28px_90px_rgba(0,0,0,0.45)]">
       <div className="border-b border-[color:var(--wb-line)] px-5 py-4 sm:px-6">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="min-w-0">
             <div className="mb-3 flex flex-wrap items-center gap-2">
               <span
                 className={cn(
-                  'rounded-full border px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em]',
+                  'rounded-full border px-2.5 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal',
                   toneForStatus(detail.job.status),
                 )}
               >
                 {detail.job.status}
               </span>
-              <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
+              <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                 {detail.job.kind.replace(/_/g, ' ')}
               </span>
-              <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
+              <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 {detail.job.providerId ?? 'provider unknown'}
               </span>
             </div>
 
-            <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
+            <p className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               Job inspector
             </p>
             <h2 className="mt-2 max-w-5xl text-[21px] font-semibold leading-tight text-[color:var(--wb-ink)]">
@@ -692,7 +699,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               <button
                 type="button"
                 onClick={() => onRetryJob(detail.job.id)}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-accent-500/2 bg-[color:var(--wb-well)] px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-accent-100 transition-colors hover:border-accent-400/2 hover:bg-[color:var(--wb-well)] hover:text-[color:var(--wb-ink)] cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-accent-500/2 bg-[color:var(--wb-well)] px-4 py-2.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-colors hover:border-accent-400/2 hover:bg-[color:var(--wb-well)] hover:text-[color:var(--wb-ink)] cursor-pointer"
               >
                 <RotateCcw size={14} />
                 <span>{canResumeStudioJob(detail.job) ? 'Resume job' : 'Retry job'}</span>
@@ -701,7 +708,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             <button
               type="button"
               onClick={onClearSelectedJob}
-              className="shrink-0 rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
+              className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-2.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
             >
               Back to activity
             </button>
@@ -719,15 +726,15 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
         >
           <JobStatusBanner detail={detail} hasReadableAssistantReply={hasReadableAssistantReply} />
 
-          <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
+          <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
             <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-4 py-3">
-              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
-                <ImageIcon size={14} className="text-emerald-400" />
+              <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+                <ImageIcon size={14} className="text-[color:var(--wb-success)]" />
                 <span>Returned image</span>
               </div>
               <span
                 className={cn(
-                  'rounded-md border px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em]',
+                  'rounded-[var(--wb-radius)] border px-2 py-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal',
                   toneForStatus(detail.job.status),
                 )}
               >
@@ -755,7 +762,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
 
             <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[color:var(--wb-line)] px-4 py-3">
               <div className="min-w-0">
-                <p className="truncate text-xs font-semibold uppercase tracking-wide text-[color:var(--wb-ink)]">
+                <p className="truncate text-xs font-semibold tracking-normal text-[color:var(--wb-ink)]">
                   {outputName}
                 </p>
                 <p className="mt-1 text-[11px] text-[color:var(--wb-muted)]">
@@ -767,7 +774,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                   href={primaryOutput.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:text-[color:var(--wb-ink)]"
+                  className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-1.5 text-[length:var(--wbp-label)] font-semibold tracking-[0.16em] text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:text-[color:var(--wb-ink)]"
                 >
                   Open image
                 </a>
@@ -776,8 +783,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </section>
 
           {primaryReference && (
-            <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
-              <div className="flex items-center gap-2 border-b border-[color:var(--wb-line)] px-4 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
+            <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
+              <div className="flex items-center gap-2 border-b border-[color:var(--wb-line)] px-4 py-3 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                 <Layers3 size={14} className="text-indigo-300" />
                 <span>Reference context</span>
               </div>
@@ -789,23 +796,23 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                     alt={primaryReference.label}
                     width={512}
                     height={512}
-                    className="h-[214px] w-full rounded-xl border border-[color:var(--wb-line)] object-cover"
+                    className="h-[214px] w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] object-cover"
                     loading="lazy"
                     decoding="async"
                   />
                 ) : (
-                  <div className="flex h-[214px] items-center justify-center rounded-xl border border-dashed border-[color:var(--wb-line)] text-sm text-[color:var(--wb-muted)]">
+                  <div className="flex h-[214px] items-center justify-center rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] text-sm text-[color:var(--wb-muted)]">
                     No reference image.
                   </div>
                 )}
               </div>
 
               <div className="border-t border-[color:var(--wb-line)] px-4 py-3 space-y-2">
-                <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-[color:var(--wb-ink)]">
+                <p className="truncate text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                   {primaryReference?.label ?? 'Reference unavailable'}
                 </p>
                 <div className="flex items-center justify-between text-[11px] text-[color:var(--wb-muted)]">
-                  <span className="uppercase tracking-[0.16em] text-[color:var(--wb-muted)] text-[9px] font-black">
+                  <span className="tracking-[0.16em] text-[color:var(--wb-muted)] text-[length:var(--wbp-label)] font-semibold">
                     Reference strength
                   </span>
                   <span className="font-mono text-[color:var(--wb-ink)]">
@@ -825,7 +832,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
 
                 {additionalReferences.length > 0 ? (
                   <div className="space-y-2 pt-1">
-                    <p className="text-[9px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
+                    <p className="text-[length:var(--wbp-label)] font-semibold tracking-[0.16em] text-[color:var(--wb-muted)]">
                       More references ({additionalReferences.length})
                     </p>
                     <div className="custom-scrollbar flex gap-2 overflow-x-auto pb-1">
@@ -839,7 +846,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                             rel="noreferrer"
                             className="block size-16 shrink-0"
                           >
-                            <div className="size-16 overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)]">
+                            <div className="size-16 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)]">
                               {preview ? (
                                 <img
                                   src={preview}
@@ -851,7 +858,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                                   decoding="async"
                                 />
                               ) : (
-                                <div className="flex h-full w-full items-center justify-center text-[9px] text-[color:var(--wb-muted)]">
+                                <div className="flex h-full w-full items-center justify-center text-[length:var(--wbp-label)] text-[color:var(--wb-muted)]">
                                   N/A
                                 </div>
                               )}
@@ -867,9 +874,9 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           )}
         </div>
 
-        <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
+        <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
           <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-4 py-3">
-            <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
+            <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
               <FileText size={14} className="text-violet-300" />
               <span>Prompt used</span>
             </div>
@@ -880,27 +887,29 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                 “{model.prompt.blocks.map((block) => block.text).join('\n\n')}”
               </p>
             ) : (
-              <p className="text-sm text-[color:var(--wb-muted)]">No prompt text captured for this job.</p>
+              <p className="text-sm text-[color:var(--wb-muted)]">
+                No prompt text captured for this job.
+              </p>
             )}
           </div>
         </section>
 
-        <details className="rounded-2xl border border-[color:var(--wb-border)] p-4">
+        <details className="rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] p-4">
           <summary className="cursor-pointer text-sm">Execution details and metrics</summary>{' '}
           <div className="grid gap-4 xl:grid-cols-3">
-            <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4">
+            <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4">
               <TaskMetricSummary metrics={detail.metrics} />
             </section>
 
-            <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 space-y-3">
-              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
-                <BrainCircuit size={14} className="text-emerald-300" />
+            <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 space-y-3">
+              <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+                <BrainCircuit size={14} className="text-[color:var(--wb-success)] " />
                 <span>Execution facts</span>
               </div>
               <dl className="space-y-2.5">
                 {executionItems.map(([label, value]) => (
                   <div key={label} className="flex items-start justify-between gap-3">
-                    <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
+                    <dt className="text-[length:var(--wbp-label)] font-semibold tracking-[0.16em] text-[color:var(--wb-muted)]">
                       {label}
                     </dt>
                     <dd className="text-right text-[12px] leading-5 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
@@ -911,15 +920,15 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               </dl>
             </section>
 
-            <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 space-y-3">
-              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
-                <Layers3 size={14} className="text-amber-300" />
+            <section className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 space-y-3">
+              <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+                <Layers3 size={14} className="text-[color:var(--wb-warning)] " />
                 <span>Job snapshot</span>
               </div>
               <dl className="space-y-2.5">
                 {snapshotItems.map(([label, value]) => (
                   <div key={label} className="flex items-start justify-between gap-3">
-                    <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
+                    <dt className="text-[length:var(--wbp-label)] font-semibold tracking-[0.16em] text-[color:var(--wb-muted)]">
                       {label}
                     </dt>
                     <dd className="text-right text-[12px] leading-5 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
@@ -932,15 +941,15 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </div>
         </details>
 
-        <details className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4">
-          <summary className="cursor-pointer text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
+        <details className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4">
+          <summary className="cursor-pointer text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
             Activity timeline ({model.timeline.length})
           </summary>
           <div className="mt-4 space-y-3">
             {model.timeline.length > 0 ? (
               model.timeline.map((item) => <TimelineItemCard key={item.id} item={item} />)
             ) : (
-              <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-6 text-sm text-[color:var(--wb-muted)]">
+              <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-6 text-sm text-[color:var(--wb-muted)]">
                 No transcript or event history was recorded for this job.
               </div>
             )}

@@ -231,7 +231,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               <h2 id="studio-settings-title" className="studio-dialog-title">
                 Studio Settings
               </h2>
-              <p className="mt-0.5 text-[10px] font-medium studio-muted">
+              <p className="mt-0.5 text-[length:var(--wbp-label)] font-medium studio-muted">
                 Accounts, library, and output
               </p>
             </div>
@@ -261,7 +261,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </div>
         </div>
 
-        <div className="flex gap-1 overflow-x-auto border-b border-[color:var(--wb-line)] px-3 sm:px-5">
+        <div className="flex shrink-0 gap-1 overflow-x-auto border-b border-[color:var(--wb-line)] px-3 sm:px-5">
           {STUDIO_SETTINGS_DOMAIN_TABS.map((tab) => (
             <button
               key={tab.id}
@@ -282,7 +282,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           {error && (
             <div
               role="alert"
-              className="mb-4 rounded-lg border border-rose-500/2 bg-rose-500/10 px-4 py-3 text-xs font-bold text-rose-100"
+              className="mb-4 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 px-4 py-3 text-xs font-bold text-[color:var(--wb-danger)] "
             >
               {error}
             </div>

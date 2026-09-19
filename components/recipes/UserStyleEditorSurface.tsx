@@ -524,24 +524,24 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
       tabIndex={-1}
       className="absolute inset-0 z-50 flex items-center justify-center bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] backdrop-blur-md sm:p-4"
     >
-      <div className="flex h-full max-h-[calc(100vh-4.5rem)] w-full max-w-[1180px] flex-col overflow-hidden rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_24px_80px_rgba(0,0,0,0.72)]">
+      <div className="flex h-full max-h-[calc(100vh-4.5rem)] w-full max-w-[1180px] flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_24px_80px_rgba(0,0,0,0.72)]">
         <div className="flex min-h-14 shrink-0 items-center justify-between gap-3 border-b border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/98 px-4 sm:px-5">
           <div className="min-w-0">
-            <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
+            <div className="flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               <Sparkles size={13} />
               <span>{mode === 'edit' ? 'Edit Style' : 'Style Editor'}</span>
-              <span className="rounded-[5px] border border-[color:var(--wb-line)] bg-white/8 px-1.5 py-0.5 text-[8px] text-[color:var(--wb-ink)]">
+              <span className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/8 px-1.5 py-0.5 text-[length:var(--wbp-label)] text-[color:var(--wb-ink)]">
                 {sourceKind.replace(/_/g, ' ')}
               </span>
             </div>
-            <h2 className="mt-1 truncate text-base font-black uppercase tracking-tight text-[color:var(--wb-ink)]">
+            <h2 className="mt-1 truncate text-base font-semibold tracking-tight text-[color:var(--wb-ink)]">
               {normalizedDraft.name}
             </h2>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="flex size-9 shrink-0 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-white/7 text-[color:var(--wb-ink)] transition-colors hover:bg-white/12 hover:text-[color:var(--wb-ink)]"
+            className="flex size-9 shrink-0 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/7 text-[color:var(--wb-ink)] transition-colors hover:bg-white/12 hover:text-[color:var(--wb-ink)]"
             aria-label="Close style editor"
           >
             <X size={16} />
@@ -549,46 +549,46 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
         </div>
 
         <div className="grid min-h-0 flex-1 grid-cols-1 gap-3 overflow-hidden bg-[color:var(--wb-panel)]/95 p-3 lg:grid-cols-[minmax(0,1fr)_360px] lg:p-4">
-          <section className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/88 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
+          <section className="min-h-0 min-w-0 overflow-y-auto rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/88 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
             <div className="grid gap-3 sm:grid-cols-2">
               <label className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Name
                 </span>
                 <input
                   value={draft.name}
                   onChange={(event) => updateDraft('name', event.target.value)}
-                  className="h-10 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+                  className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
               <label className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Category
                 </span>
                 <input
                   value={draft.category}
                   onChange={(event) => updateDraft('category', event.target.value)}
-                  className="h-10 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+                  className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
             </div>
 
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
               <label className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Tags
                 </span>
                 <input
                   value={tagsText}
                   onChange={(event) => setTagsText(event.target.value)}
-                  className="h-10 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-xs font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+                  className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-xs font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
               <div className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Tasks
                 </span>
-                <div className="flex min-h-10 flex-wrap items-center gap-1.5 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1">
+                <div className="flex min-h-10 flex-wrap items-center gap-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1">
                   {USER_STYLE_SUPPORTED_TASKS.map((task) => {
                     const active = draft.supportedTasks.includes(task);
                     return (
@@ -597,7 +597,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                         type="button"
                         onClick={() => toggleTask(task)}
                         aria-pressed={active}
-                        className={`flex h-7 items-center gap-1 rounded-[5px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
+                        className={`flex h-7 items-center gap-1 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-colors ${
                           active
                             ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
                             : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'
@@ -613,7 +613,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             </div>
 
             <label className="mt-3 grid gap-1.5">
-              <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+              <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 Creative Brief
               </span>
               <textarea
@@ -621,47 +621,47 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 value={draft.visualDna.creative_brief ?? ''}
                 onChange={(event) => updateVisualDna('creative_brief', event.target.value)}
                 rows={3}
-                className="resize-none rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+                className="resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
               />
             </label>
 
             <div className="mt-3 grid gap-3 xl:grid-cols-2">
               {USER_STYLE_DNA_FIELDS.map((field) => (
                 <label key={field.key} className="grid gap-1.5">
-                  <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                  <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                     {field.label}
                   </span>
                   <textarea
                     value={draft.visualDna[field.key] ?? ''}
                     onChange={(event) => updateVisualDna(field.key, event.target.value)}
                     rows={4}
-                    className="resize-none rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+                    className="resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
                   />
                 </label>
               ))}
             </div>
 
             <label className="mt-3 grid gap-1.5">
-              <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+              <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 Avoid
               </span>
               <textarea
                 value={avoidRulesText}
                 onChange={(event) => setAvoidRulesText(event.target.value)}
                 rows={3}
-                className="resize-none rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+                className="resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
               />
             </label>
           </section>
 
-          <aside className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/92 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
-            <div className="rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
+          <aside className="min-h-0 min-w-0 overflow-y-auto rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/92 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
+            <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
               <div className="mb-3 flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
+                <div className="flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   <Sparkles size={13} />
                   Source
                 </div>
-                <span className="rounded-[5px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 py-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <span className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   {authoringMode === 'codex_assist' ? 'Codex' : 'Manual'}
                 </span>
               </div>
@@ -676,9 +676,9 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     type="button"
                     onClick={() => setAuthoringMode(item.id)}
                     aria-pressed={authoringMode === item.id}
-                    className={`h-8 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
+                    className={`h-8 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-colors ${
                       authoringMode === item.id
-                        ? 'border-sky-300/2 bg-sky-500/15 text-sky-100'
+                        ? 'border-sky-300/2 bg-sky-500/15 text-[color:var(--wb-info)] '
                         : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'
                     }`}
                   >
@@ -691,30 +691,32 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 {workflowSteps.map((step) => (
                   <div
                     key={step.label}
-                    className={`grid grid-cols-[72px_minmax(0,1fr)] items-center gap-2 rounded-[6px] border px-2 py-1.5 ${
+                    className={`grid grid-cols-[72px_minmax(0,1fr)] items-center gap-2 rounded-[var(--wb-radius)] border px-2 py-1.5 ${
                       step.state === 'complete'
-                        ? 'border-emerald-400/2 bg-emerald-500/8 text-emerald-100'
+                        ? 'border-emerald-400/2 bg-emerald-500/8 text-[color:var(--wb-success)] '
                         : step.state === 'active'
-                          ? 'border-sky-400/2 bg-sky-500/8 text-sky-100'
+                          ? 'border-sky-400/2 bg-sky-500/8 text-[color:var(--wb-info)] '
                           : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-muted)]'
                     }`}
                   >
-                    <span className="text-[8px] font-black uppercase tracking-widest">
+                    <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
                       {step.label}
                     </span>
-                    <span className="truncate text-right font-mono text-[9px]">{step.detail}</span>
+                    <span className="truncate text-right font-mono text-[length:var(--wbp-label)]">
+                      {step.detail}
+                    </span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
-              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
+            <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
+              <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 <Photo size={13} />
                 References
               </div>
 
-              <label className="flex min-h-24 cursor-pointer flex-col items-center justify-center rounded-[7px] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-3 py-4 text-center transition-colors hover:border-sky-300/2 hover:bg-sky-500/8">
+              <label className="flex min-h-24 cursor-pointer flex-col items-center justify-center rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-3 py-4 text-center transition-colors hover:border-sky-300/2 hover:bg-sky-500/8">
                 <input
                   type="file"
                   accept="image/*"
@@ -725,11 +727,11 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     event.currentTarget.value = '';
                   }}
                 />
-                <Upload size={18} className="text-sky-200" />
-                <span className="mt-2 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+                <Upload size={18} className="text-[color:var(--wb-info)] " />
+                <span className="mt-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                   Add Images
                 </span>
-                <span className="mt-1 text-[10px] font-medium leading-relaxed text-[color:var(--wb-muted)]">
+                <span className="mt-1 text-[length:var(--wbp-label)] font-medium leading-relaxed text-[color:var(--wb-muted)]">
                   {referenceImages.length}/{MAX_REFERENCE_IMAGES} references
                 </span>
               </label>
@@ -739,7 +741,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                   {referenceImages.map((image) => (
                     <div
                       key={image.id}
-                      className={`rounded-[7px] border p-2 ${
+                      className={`rounded-[var(--wb-radius)] border p-2 ${
                         image.included
                           ? 'border-[color:var(--wb-line)] bg-white/[0.045]'
                           : 'border-[color:var(--wb-line)] bg-white/[0.02] opacity-60'
@@ -749,13 +751,13 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                         <img
                           src={image.previewUrl}
                           alt=""
-                          className="h-14 w-14 shrink-0 rounded-[6px] object-cover"
+                          className="h-14 w-14 shrink-0 rounded-[var(--wb-radius)] object-cover"
                         />
                         <div className="min-w-0 flex-1">
-                          <div className="truncate text-[10px] font-black text-[color:var(--wb-ink)]">
+                          <div className="truncate text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)]">
                             {image.name}
                           </div>
-                          <div className="mt-0.5 truncate font-mono text-[9px] text-[color:var(--wb-muted)]">
+                          <div className="mt-0.5 truncate font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-muted)]">
                             {image.mimeType || 'image'} {formatFileSize(image.sizeBytes)}
                           </div>
                           <div className="mt-2 flex flex-wrap gap-1.5">
@@ -765,9 +767,9 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                                 updateReferenceImage(image.id, { included: !image.included })
                               }
                               aria-pressed={image.included}
-                              className={`h-6 rounded-[5px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
+                              className={`h-6 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-colors ${
                                 image.included
-                                  ? 'border-emerald-400/2 bg-emerald-500/12 text-emerald-100'
+                                  ? 'border-emerald-400/2 bg-emerald-500/12 text-[color:var(--wb-success)] '
                                   : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)]'
                               }`}
                             >
@@ -783,14 +785,14 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                                       : 'avoid_reference',
                                 })
                               }
-                              className="h-6 rounded-[5px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)] transition-colors hover:text-[color:var(--wb-ink)]"
+                              className="h-6 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)] transition-colors hover:text-[color:var(--wb-ink)]"
                             >
                               {image.role === 'avoid_reference' ? 'Avoid' : 'Style'}
                             </button>
                             <button
                               type="button"
                               onClick={() => handleRemoveReferenceImage(image.id)}
-                              className="h-6 rounded-[5px] border border-red-400/14 bg-red-500/8 px-2 text-[8px] font-black uppercase tracking-widest text-red-100 transition-colors hover:bg-red-500/14"
+                              className="h-6 rounded-[var(--wb-radius)] border border-red-400/14 bg-red-500/8 px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)]  transition-colors hover:bg-red-500/14"
                             >
                               Remove
                             </button>
@@ -798,7 +800,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                         </div>
                       </div>
                       <label className="mt-2 grid gap-1">
-                        <span className="text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                        <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                           Reference notes
                         </span>
                         <input
@@ -807,7 +809,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                             updateReferenceImage(image.id, { notes: event.target.value })
                           }
                           placeholder={`Notes for ${image.name}`}
-                          className="h-8 w-full rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-2 text-[10px] font-medium text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-sky-300/2"
+                          className="h-8 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-2 text-[length:var(--wbp-label)] font-medium text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-sky-300/2"
                         />
                       </label>
                     </div>
@@ -816,8 +818,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
               )}
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
-              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
+            <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
+              <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 <Check size={13} />
                 Apply
               </div>
@@ -830,9 +832,9 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                       type="button"
                       onClick={() => toggleDraftField(field.id)}
                       aria-pressed={enabled}
-                      className={`flex h-8 items-center justify-between gap-2 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
+                      className={`flex h-8 items-center justify-between gap-2 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-colors ${
                         enabled
-                          ? 'border-emerald-400/2 bg-emerald-500/8 text-emerald-100'
+                          ? 'border-emerald-400/2 bg-emerald-500/8 text-[color:var(--wb-success)] '
                           : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-dim)]'
                       }`}
                     >
@@ -844,8 +846,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
               </div>
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
-              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
+            <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
+              <div className="mb-3 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 <Wand2 size={13} />
                 Assist
               </div>
@@ -856,7 +858,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     type="button"
                     onClick={() => setAssistAction(action.id)}
                     aria-pressed={assistAction === action.id}
-                    className={`h-8 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
+                    className={`h-8 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-colors ${
                       assistAction === action.id
                         ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
                         : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'
@@ -871,13 +873,13 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 value={assistPrompt}
                 onChange={(event) => setAssistPrompt(event.target.value)}
                 rows={8}
-                className="mt-3 w-full resize-none rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
+                className="mt-3 w-full resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
               />
               <button
                 type="button"
                 onClick={handleAssist}
                 disabled={isAssisting}
-                className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/25 disabled:opacity-45"
+                className="mt-3 flex h-10 w-full items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/18 px-4 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-colors hover:bg-accent-500/25 disabled:opacity-45"
               >
                 <Sparkles size={14} />
                 {isAssisting ? 'Working' : 'Assist'}
@@ -889,7 +891,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 {assistWarnings.map((warning) => (
                   <div
                     key={warning}
-                    className="rounded-[6px] border border-amber-400/2 bg-amber-500/8 px-3 py-2 text-[10px] font-medium leading-relaxed text-amber-100/85"
+                    className="rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/8 px-3 py-2 text-[length:var(--wbp-label)] font-medium leading-relaxed text-[color:var(--wb-warning)] "
                   >
                     {warning}
                   </div>
@@ -898,7 +900,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             )}
 
             {error && (
-              <div className="mt-3 rounded-[6px] border border-red-400/20 bg-red-500/10 px-3 py-2 text-[10px] font-bold leading-relaxed text-red-100">
+              <div className="mt-3 rounded-[var(--wb-radius)] border border-red-400/20 bg-red-500/10 px-3 py-2 text-[length:var(--wbp-label)] font-bold leading-relaxed text-[color:var(--wb-danger)] ">
                 {error}
               </div>
             )}
@@ -913,7 +915,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                   type="button"
                   onClick={handleDuplicate}
                   disabled={isSaving}
-                  className="flex h-9 items-center gap-2 rounded-[6px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:opacity-45"
+                  className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:opacity-45"
                 >
                   <Copy size={14} />
                   Duplicate
@@ -922,7 +924,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                   type="button"
                   onClick={handleArchive}
                   disabled={isSaving}
-                  className="flex h-9 items-center gap-2 rounded-[6px] border border-red-400/15 bg-red-500/8 px-3 text-[9px] font-black uppercase tracking-widest text-red-100 transition-colors hover:bg-red-500/14 disabled:opacity-45"
+                  className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-red-400/15 bg-red-500/8 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)]  transition-colors hover:bg-red-500/14 disabled:opacity-45"
                 >
                   <Trash2 size={14} />
                   Archive
@@ -935,7 +937,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             type="button"
             onClick={handleSave}
             disabled={!canSave}
-            className="flex h-10 items-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
+            className="studio-primary-control h-10 disabled:cursor-not-allowed disabled:opacity-40"
           >
             <Save size={15} />
             {isSaving ? 'Saving' : 'Save Style'}

@@ -139,27 +139,31 @@ function TimelineBottomDock({
     <>
       {/* GROUP 1: SEQUENCE */}
       <div className="flex flex-col gap-1.5">
-        <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
+        <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] tracking-normal pl-1">
           Sequence
         </span>
-        <div className="flex items-center p-1 bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] rounded-xl border border-[color:var(--wb-line)] relative">
+        <div className="flex items-center p-1 bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] relative">
           <div
-            className={`absolute inset-y-1 w-1/2 bg-teal-600/20 border border-teal-500/2 rounded-lg transition-transform duration-300 ${direction === 'forward' ? 'translate-x-full' : 'translate-x-0'}`}
+            className={`absolute inset-y-1 w-1/2 bg-teal-600/20 border border-teal-500/2 rounded-[var(--wb-radius)] transition-transform duration-300 ${direction === 'forward' ? 'translate-x-full' : 'translate-x-0'}`}
           />
           <button
             type="button"
             onClick={() => onSetDirection('backward')}
-            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
+            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-[var(--wb-radius)] transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
           >
             <StepBack size={14} fill={direction === 'backward' ? 'currentColor' : 'none'} />
-            <span className="text-[10px] font-black uppercase tracking-widest">Prev</span>
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
+              Prev
+            </span>
           </button>
           <button
             type="button"
             onClick={() => onSetDirection('forward')}
-            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'forward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
+            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-[var(--wb-radius)] transition-colors ${direction === 'forward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
           >
-            <span className="text-[10px] font-black uppercase tracking-widest">Next</span>
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
+              Next
+            </span>
             <StepForward size={14} fill={direction === 'forward' ? 'currentColor' : 'none'} />
           </button>
         </div>
@@ -210,31 +214,35 @@ function TimelineBottomDock({
       {/* GROUP 4: CAMERA & VIEW */}
       <div className="flex gap-2">
         <div className="flex flex-col gap-1.5">
-          <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
+          <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] tracking-normal pl-1">
             Cam
           </span>
           <button
             type="button"
             onClick={() => onSetCameraMode(cameraMode === 'locked' ? 'dynamic' : 'locked')}
-            className={`flex min-w-25 items-center gap-2 rounded-xl border px-4 transition-colors h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-red-400' : 'bg-blue-500/10 border-blue-500/2 text-blue-400'}`}
+            className={`flex min-w-25 items-center gap-2 rounded-[var(--wb-radius)] border px-4 transition-colors h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-[color:var(--wb-danger)]' : 'bg-blue-500/10 border-blue-500/2 text-blue-400'}`}
           >
             {cameraMode === 'locked' ? <Lock size={14} /> : <Video size={14} />}
-            <span className="text-[10px] font-black uppercase tracking-widest">{cameraMode}</span>
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
+              {cameraMode}
+            </span>
           </button>
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
+          <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] tracking-normal pl-1">
             View
           </span>
           <button
             type="button"
             onClick={onToggleOnionSkin}
-            className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]' : 'bg-transparent border-[color:var(--wb-line)] text-[color:var(--wb-muted)]'}`}
+            className={`h-10 px-4 rounded-[var(--wb-radius)] border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]' : 'bg-transparent border-[color:var(--wb-line)] text-[color:var(--wb-muted)]'}`}
             title="Toggle Onion Skin"
           >
             <Layers size={14} />
-            <span className="text-[10px] font-black uppercase tracking-widest">Ghost</span>
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
+              Ghost
+            </span>
           </button>
         </div>
       </div>
@@ -281,7 +289,7 @@ function TimelineCanvas({
       {/* Main Viewport */}
       <div className="flex-1 w-full flex items-center justify-center min-h-0 relative">
         <div
-          className="relative rounded-2xl overflow-hidden border border-[color:var(--wb-line)] shadow-2xl bg-[color:var(--wb-panel)]"
+          className="relative rounded-[var(--wb-radius)] overflow-hidden border border-[color:var(--wb-line)] shadow-2xl bg-[color:var(--wb-panel)]"
           style={{
             aspectRatio: ratioValue,
             width: 'min(86vw, 72vh)',
@@ -317,20 +325,22 @@ function TimelineCanvas({
                 </div>
               </div>
               <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-[color:var(--wb-panel)]/60 rounded-full border border-[color:var(--wb-line)] flex items-center gap-3 backdrop-blur-md z-30">
-                <span className="text-[9px] font-bold text-[color:var(--wb-muted)] uppercase">
+                <span className="text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-muted)]">
                   Frame: {currentRefIndex}
                 </span>
                 <div className="size-1 bg-white/20 rounded-full" />
-                <span className="text-[9px] font-black text-teal-400 uppercase tracking-widest">
+                <span className="text-[length:var(--wbp-label)] font-semibold text-teal-400 tracking-normal">
                   {direction === 'forward' ? 'Next frame' : 'Previous frame'}
                 </span>
               </div>
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-[color:var(--wb-panel)]/60 text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] transition-colors pointer-events-auto border border-[color:var(--wb-line)] flex items-center gap-2"
+                className="absolute top-4 right-4 z-30 p-2 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)]/60 text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] transition-colors pointer-events-auto border border-[color:var(--wb-line)] flex items-center gap-2"
               >
-                <span className="text-[9px] font-bold uppercase hidden sm:block">Replace</span>
+                <span className="text-[length:var(--wbp-label)] font-bold hidden sm:block">
+                  Replace
+                </span>
                 <Upload size={14} />
               </button>
               <input
@@ -380,7 +390,9 @@ function TimelineCanvas({
         <div className="flex items-center justify-between px-6 pt-2">
           <div className="flex items-center gap-2 text-teal-500/60">
             <Film size={12} />
-            <span className="text-[9px] font-black uppercase tracking-widest">Film Strip</span>
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
+              Film Strip
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex gap-1 opacity-20">
@@ -391,7 +403,7 @@ function TimelineCanvas({
                 />
               ))}
             </div>
-            <span className="text-[9px] font-bold text-[color:var(--wb-dim)] uppercase">
+            <span className="text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-dim)]">
               {timelineItems.length} Frames
             </span>
           </div>
@@ -416,7 +428,7 @@ function TimelineCanvas({
 
             <div className="flex items-center gap-4 px-4">
               {timelineItems.length === 0 && (
-                <div className="h-20 w-48 flex items-center justify-center text-[10px] text-[color:var(--wb-dim)] font-bold uppercase tracking-widest italic opacity-50 border border-[color:var(--wb-line)] rounded-lg snap-center mx-auto border-dashed">
+                <div className="h-20 w-48 flex items-center justify-center text-[length:var(--wbp-label)] text-[color:var(--wb-dim)] font-bold tracking-normal italic opacity-50 border border-[color:var(--wb-line)] rounded-[var(--wb-radius)] snap-center mx-auto border-dashed">
                   Sequence Empty
                 </div>
               )}
@@ -436,7 +448,7 @@ function TimelineCanvas({
                         if (el) itemRefs.current.set(item.id, el);
                         else itemRefs.current.delete(item.id);
                       }}
-                      className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-lg border-2 bg-[color:var(--wb-panel)] transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo
+                      className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-[var(--wb-radius)] border-2 bg-[color:var(--wb-panel)] transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo
                                             ${
                                               isActive
                                                 ? 'border-teal-500/2 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
@@ -454,13 +466,13 @@ function TimelineCanvas({
 
                       {/* Frame Number Tag */}
                       <div
-                        className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-[7px] font-black font-mono border backdrop-blur-md uppercase tracking-wider ${isActive ? 'bg-teal-500 text-black border-teal-400/2' : 'bg-[color:var(--wb-panel)] text-[color:var(--wb-ink)]/50 border-[color:var(--wb-line)]'}`}
+                        className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-[7px] font-semibold font-mono border backdrop-blur-md tracking-normal ${isActive ? 'bg-teal-500 text-black border-teal-400/2' : 'bg-[color:var(--wb-panel)] text-[color:var(--wb-ink)]/50 border-[color:var(--wb-line)]'}`}
                       >
                         {item.isOrigin ? 'ORIGIN' : `SEQ.${item.index}`}
                       </div>
 
                       {isAnchor && !isActive && (
-                        <div className="absolute inset-0 border-2 border-dashed border-teal-500/2 rounded-lg pointer-events-none" />
+                        <div className="absolute inset-0 border-2 border-dashed border-teal-500/2 rounded-[var(--wb-radius)] pointer-events-none" />
                       )}
                     </MotionButton>
                   );
@@ -792,7 +804,7 @@ export const TimelineRecipe: React.FC<TimelineRecipeProps> = ({
     <RecipeLayout
       isGenerating={isGenerating}
       bottomDock={timelineController.bottomDock}
-      className="p-0 pb-[var(--studio-recipe-dock-space)] sm:pb-28 flex flex-col items-center justify-center relative h-full"
+      className="p-0 flex min-h-0 flex-col items-center justify-center relative h-full"
     >
       <TimelineCanvas
         activeImage={timelineController.activeImage}

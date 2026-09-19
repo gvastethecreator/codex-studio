@@ -135,21 +135,21 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
     >
       <div className="flex h-16 shrink-0 items-center justify-between border-b border-[color:var(--wb-line)] px-6">
         <div className="flex min-w-0 items-center gap-3">
-          <div className="flex size-9 items-center justify-center rounded-xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)]">
+          <div className="flex size-9 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)]">
             <Database size={17} />
           </div>
           <div className="min-w-0">
-            <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[color:var(--wb-ink)]">
+            <h3 className="text-xs font-semibold tracking-normal text-[color:var(--wb-ink)]">
               Style Catalog
             </h3>
             {searchIndex ? (
-              <p className="mt-1 truncate text-[10px] font-bold uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
+              <p className="mt-1 truncate text-[length:var(--wbp-label)] font-bold tracking-[0.16em] text-[color:var(--wb-muted)]">
                 {searchIndex.totalPresetCount} loaded / {totalPresetCount} presets
               </p>
             ) : catalogLoad.status === 'loading' ? (
               <div className="mt-1 flex items-center gap-1.5 text-[color:var(--wb-muted)]">
                 <LoaderCircle size={10} className="animate-spin" />
-                <span className="text-[10px] font-bold uppercase tracking-[0.16em]">
+                <span className="text-[length:var(--wbp-label)] font-bold tracking-[0.16em]">
                   Loading...
                 </span>
               </div>
@@ -160,7 +160,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         <button
           type="button"
           onClick={onClose}
-          className="flex size-9 items-center justify-center rounded-xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+          className="flex size-9 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           aria-label="Close style catalog"
         >
           <X size={16} />
@@ -168,7 +168,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
       </div>
 
       <div className="flex shrink-0 flex-wrap items-center gap-3 border-b border-[color:var(--wb-line)] px-6 py-4">
-        <div className="flex min-w-70 flex-1 items-center gap-2 rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2">
+        <div className="flex min-w-70 flex-1 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2">
           <Search size={15} className="text-[color:var(--wb-muted)]" />
           <input
             data-style-catalog-search-input
@@ -181,7 +181,10 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           />
           {query && (
             <button type="button" onClick={() => setQuery('')} aria-label="Clear catalog search">
-              <X size={13} className="text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]" />
+              <X
+                size={13}
+                className="text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]"
+              />
             </button>
           )}
         </div>
@@ -191,7 +194,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             ref={packFilterButtonRef}
             type="button"
             onClick={() => setIsPackFilterOpen((open) => !open)}
-            className={`flex min-h-10 w-full items-center justify-between gap-3 rounded-xl border bg-[color:var(--wb-well)] px-3 text-left transition-[background-color,border-color,color,transform] ${
+            className={`flex min-h-10 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] border bg-[color:var(--wb-well)] px-3 text-left transition-[background-color,border-color,color,transform] ${
               isPackFilterOpen
                 ? 'border-[color:var(--wb-line)] text-[color:var(--wb-ink)]'
                 : 'border-[color:var(--wb-line)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]'
@@ -202,10 +205,10 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             aria-controls={packFilterId}
           >
             <span className="min-w-0">
-              <span className="block truncate text-[10px] font-black uppercase tracking-widest">
+              <span className="block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
                 {activePackFilter?.name ?? 'All Packs'}
               </span>
-              <span className="mt-0.5 block truncate text-[8px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
+              <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-dim)]">
                 {activePackFilter?.presetCount ?? totalPresetCount} presets
               </span>
             </span>
@@ -241,18 +244,18 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                     setPackId(pack.id);
                     setIsPackFilterOpen(false);
                   }}
-                  className={`flex min-h-10 w-full items-center justify-between gap-3 rounded-lg px-3 py-2 text-left transition-[background-color,color] ${
+                  className={`flex min-h-10 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] px-3 py-2 text-left transition-[background-color,color] ${
                     selected
                       ? 'bg-white text-black'
                       : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
                   }`}
                 >
                   <span className="min-w-0">
-                    <span className="block truncate text-[10px] font-black uppercase tracking-widest">
+                    <span className="block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
                       {pack.name}
                     </span>
                     <span
-                      className={`mt-0.5 block text-[8px] font-bold uppercase tracking-widest ${
+                      className={`mt-0.5 block text-[length:var(--wbp-label)] font-bold tracking-normal ${
                         selected ? 'text-black/55' : 'text-[color:var(--wb-dim)]'
                       }`}
                     >
@@ -266,13 +269,13 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           </DemandMountedGsapDropdown>
         </div>
 
-        <div className="flex items-center gap-1 rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-1">
+        <div className="flex items-center gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-1">
           {STYLE_SEARCH_TASK_FILTERS.map((filter) => (
             <button
               type="button"
               key={filter.id || 'all'}
               onClick={() => setTask(filter.id)}
-              className={`h-8 rounded-lg px-2.5 text-[9px] font-black uppercase tracking-widest transition-colors ${
+              className={`h-8 rounded-[var(--wb-radius)] px-2.5 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-colors ${
                 task === filter.id
                   ? 'bg-white text-black'
                   : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
@@ -293,7 +296,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             <button
               type="button"
               onClick={() => setLoadAttempt((attempt) => attempt + 1)}
-              className="rounded-lg border border-[color:var(--wb-border)] px-4 py-2 text-sm font-semibold text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              className="rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] px-4 py-2 text-sm font-semibold text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               Try again
             </button>
@@ -304,7 +307,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-[color:var(--wb-dim)]"
           >
             <LoaderCircle size={32} className="animate-spin opacity-25" />
-            <span className="text-xs font-black uppercase tracking-widest">Loading catalog…</span>
+            <span className="text-xs font-semibold tracking-normal">Loading catalog…</span>
           </div>
         ) : results.length > 0 ? (
           <div data-style-catalog-results className="grid grid-cols-1 gap-3 2xl:grid-cols-2">
@@ -325,9 +328,9 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                   key={result.id}
                   data-style-catalog-result
                   data-style-catalog-result-id={result.id}
-                  className="group flex min-w-0 gap-4 rounded-2xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3 transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]"
+                  className="group flex min-w-0 gap-4 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3 transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]"
                 >
-                  <div className="relative h-24 w-18 shrink-0 overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]">
+                  <div className="relative h-24 w-18 shrink-0 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]">
                     {resultImage ? (
                       <>
                         <img
@@ -338,7 +341,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                           className="size-full object-cover transition-transform duration-200 motion-safe:group-hover:scale-[1.02]"
                         />
                         {resultImageIsPreview ? (
-                          <div className="absolute left-2 top-2 z-10 rounded-full border border-sky-400/2 bg-sky-500/15 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-sky-100 shadow-lg">
+                          <div className="absolute left-2 top-2 z-10 rounded-full border border-sky-400/2 bg-sky-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-[0.14em] text-[color:var(--wb-info)]  shadow-lg">
                             Preview
                           </div>
                         ) : null}
@@ -354,17 +357,17 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                     <div className="flex min-w-0 items-start justify-between gap-3">
                       <div className="min-w-0">
                         <div className="flex min-w-0 flex-wrap items-center gap-2">
-                          <span className="rounded-full border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 py-0.5 text-[7px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
+                          <span className="rounded-full border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 py-0.5 text-[7px] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                             {result.id}
                           </span>
-                          <span className="rounded-full border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 py-0.5 text-[7px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
+                          <span className="rounded-full border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 py-0.5 text-[7px] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                             {result.categoryName}
                           </span>
                         </div>
-                        <h4 className="mt-2 truncate text-sm font-black uppercase tracking-tight text-[color:var(--wb-ink)]">
+                        <h4 className="mt-2 truncate text-sm font-semibold tracking-tight text-[color:var(--wb-ink)]">
                           {result.name}
                         </h4>
-                        <p className="mt-1 truncate text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
+                        <p className="mt-1 truncate text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)]">
                           {result.packName}
                         </p>
                       </div>
@@ -374,7 +377,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                       {result.tags.slice(0, 5).map((tag) => (
                         <span
                           key={tag}
-                          className="rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-1.5 py-1 text-[8px] font-bold text-[color:var(--wb-muted)]"
+                          className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-1.5 py-1 text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-muted)]"
                         >
                           {tag}
                         </span>
@@ -385,7 +388,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                       <button
                         type="button"
                         onClick={() => onSelectPreset(result)}
-                        className="flex h-9 items-center gap-2 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                       >
                         <ArrowRight size={13} />
                         Select
@@ -393,7 +396,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                       <button
                         type="button"
                         onClick={() => onApplyPreset(result)}
-                        className="flex h-9 items-center gap-2 rounded-lg border border-accent-500/2 bg-accent-500/12 px-3 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/20"
+                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-accent-500/2 bg-accent-500/12 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-colors hover:bg-accent-500/20"
                       >
                         <Sparkles size={13} />
                         Apply
@@ -407,7 +410,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         ) : (
           <div className="flex h-full min-h-80 flex-col items-center justify-center gap-4 text-[color:var(--wb-dim)]">
             <Search size={32} className="opacity-25" />
-            <span className="text-xs font-black uppercase tracking-widest">No presets found</span>
+            <span className="text-xs font-semibold tracking-normal">No presets found</span>
           </div>
         )}
       </div>

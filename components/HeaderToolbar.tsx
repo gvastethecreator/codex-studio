@@ -147,6 +147,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
         </div>
 
         <CreateWorkflowPicker
+          selectedId={isRecipeView ? (activeRecipeAliasId ?? activeRecipe) : null}
           selectedLabel={isRecipeView && activeRecipeData ? activeRecipeData.name : 'Default'}
           onSelectRecipe={onSelectRecipe}
           onSelectDefault={() => {
@@ -325,7 +326,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   <Trash2 size={15} />
                   Archive
                   {trashCount > 0 && (
-                    <span className="ml-auto rounded-full bg-red-500/20 px-1.5 py-0.5 text-[9px] text-red-200">
+                    <span className="ml-auto rounded-full bg-red-500/20 px-1.5 py-0.5 text-[9px] text-[color:var(--wb-danger)]">
                       {trashCount}
                     </span>
                   )}

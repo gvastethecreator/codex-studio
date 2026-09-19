@@ -56,7 +56,12 @@ import { resolveGrokImagineGenerateBlock } from '../../lib/grokImagineUiPolicy';
 import { useStyleRuntimePacks } from '../../hooks/useStyleRuntimePacks';
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
-import { RecipeControls, RecipeOverlay, RecipeSidePanel } from './RecipeWorkbenchContext';
+import {
+  RecipeControls,
+  RecipeOverlay,
+  RecipeSidePanel,
+  RecipeResults,
+} from './RecipeWorkbenchContext';
 import { RecipeLayout } from './RecipeLayout';
 import {
   STYLE_BROWSER_EAGER_SECTION_LIMIT,
@@ -232,7 +237,7 @@ const PACK_THEMES: Record<string, StyleTheme> = {
     color: 'sky',
     bg: 'bg-sky-500',
     border: 'border-sky-500/2',
-    text: 'text-sky-400',
+    text: 'text-[color:var(--wb-info)]',
   },
   [FAVORITES_PACK_ID]: {
     color: 'rose',
@@ -256,7 +261,7 @@ const PACK_THEMES: Record<string, StyleTheme> = {
     color: 'rose',
     bg: 'bg-rose-500',
     border: 'border-rose-500/2',
-    text: 'text-rose-400',
+    text: 'text-[color:var(--wb-danger)]',
   }, // 3D & CGI Rendering
   pack_04: {
     color: 'fuchsia',
@@ -274,13 +279,13 @@ const PACK_THEMES: Record<string, StyleTheme> = {
     color: 'amber',
     bg: 'bg-amber-500',
     border: 'border-amber-500/2',
-    text: 'text-amber-400',
+    text: 'text-[color:var(--wb-warning)]',
   }, // Essential Art Styles
   pack_07: {
     color: 'emerald',
     bg: 'bg-emerald-500',
     border: 'border-emerald-500/2',
-    text: 'text-emerald-400',
+    text: 'text-[color:var(--wb-success)]',
   }, // Architecture & Interior
   pack_08: {
     color: 'violet',
@@ -310,7 +315,7 @@ const PACK_THEMES: Record<string, StyleTheme> = {
     color: 'emerald',
     bg: 'bg-emerald-500',
     border: 'border-emerald-500/2',
-    text: 'text-emerald-400',
+    text: 'text-[color:var(--wb-success)]',
   }, // Video Game Originals Vault
   pack_13: {
     color: 'pink',
@@ -334,7 +339,7 @@ const PACK_THEMES: Record<string, StyleTheme> = {
     color: 'rose',
     bg: 'bg-rose-500',
     border: 'border-rose-500/2',
-    text: 'text-rose-400',
+    text: 'text-[color:var(--wb-danger)]',
   }, // Anime Classics & Prestige
   pack_17: {
     color: 'green',
@@ -462,9 +467,9 @@ function StyleGridPlaceholderCells({
         <div
           key={index}
           data-style-grid-placeholder-card
-          className="aspect-[3/4] rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/32 shadow-[inset_0_1px_0_rgba(255,255,255,0.035)]"
+          className="aspect-[3/4] rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/32 shadow-[inset_0_1px_0_rgba(255,255,255,0.035)]"
         >
-          <div className="h-full rounded-[6px] bg-linear-to-b from-white/[0.035] via-transparent to-black/20" />
+          <div className="h-full rounded-[var(--wb-radius)] bg-linear-to-b from-white/[0.035] via-transparent to-black/20" />
         </div>
       ))}
     </div>
@@ -699,9 +704,11 @@ const StylePresetGroupSection = React.memo(
         <div
           className={`sticky top-0 z-30 mb-2 flex items-center gap-2 border-y border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-2 py-2 shadow-[0_10px_18px_rgba(0,0,0,0.28)] ${headerClassName}`}
         >
-          <div className={`h-4 w-1 rounded-[2px] ${accentClassName}`} />
+          <div className={`h-4 w-1 rounded-[var(--wb-radius)] ${accentClassName}`} />
           {icon ? <span className="text-[color:var(--wb-muted)]">{icon}</span> : null}
-          <h3 className={`text-[10px] font-black uppercase tracking-[0.2em] ${titleClassName}`}>
+          <h3
+            className={`text-[length:var(--wbp-label)] font-semibold tracking-normal ${titleClassName}`}
+          >
             {title}
           </h3>
           <div className={`h-px flex-1 ${dividerClassName}`} />
@@ -742,7 +749,7 @@ const StylePresetGroupSection = React.memo(
           <div
             aria-hidden="true"
             data-style-group-placeholder
-            className="relative overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/20 p-2"
+            className="relative overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/20 p-2"
             style={{ height: Math.max(120, placeholderHeight - 40) }}
           >
             <StyleGridPlaceholderCells gridColumns={gridColumns} presetCount={presets.length} />
@@ -1001,7 +1008,10 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       );
     }
     window.setTimeout(() => {
-      document.querySelector<HTMLElement>('[data-open-style-catalog]')?.focus();
+      const focusTarget =
+        document.querySelector<HTMLElement>('#style-advanced-panel button') ??
+        document.querySelector<HTMLElement>('[data-open-style-catalog]');
+      focusTarget?.focus();
     }, 0);
   }, []);
   const openStyleCatalog = useCallback(() => {
@@ -1099,8 +1109,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
 
   useEffect(() => {
     if (!explorerOpen) return;
-    const workspace = document.querySelector<HTMLElement>('.create-workspace');
-    workspace?.setAttribute('inert', '');
     catalogRootRef.current?.focus({ preventScroll: true });
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key !== 'Escape' || event.defaultPrevented) return;
@@ -1110,7 +1118,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     };
     document.addEventListener('keydown', onKeyDown);
     return () => {
-      workspace?.removeAttribute('inert');
       document.removeEventListener('keydown', onKeyDown);
     };
   }, [closeStyleCatalog, explorerOpen, userStyleEditorSession]);
@@ -1965,6 +1972,7 @@ ${styleAnchorLine}
 
   return (
     <RecipeLayout isGenerating={isGenerating} className="styles-workbench flex size-full">
+      <RecipeResults />
       <input
         type="file"
         ref={fileInputRef}
@@ -1980,13 +1988,13 @@ ${styleAnchorLine}
         multiple
       />
       {explorerOpen ? (
-        <RecipeOverlay>
-          <div className="styles-catalog-overlay">
+        <RecipeSidePanel>
+          <div className="studio-surface create-side-panel-dialog styles-catalog-panel">
             <div
               ref={catalogRootRef}
               data-style-browser-root
               role="dialog"
-              aria-modal="true"
+              aria-modal="false"
               aria-label="Style catalog"
               tabIndex={-1}
               onKeyDown={(event) => {
@@ -2164,7 +2172,7 @@ ${styleAnchorLine}
                   userStylePresets.length > 0 ? (
                     <div
                       role="alert"
-                      className="flex items-center justify-between gap-2 p-3 text-xs text-amber-300"
+                      className="flex items-center justify-between gap-2 p-3 text-xs text-[color:var(--wb-warning)] "
                     >
                       <span>{userStyleError} The list may be incomplete.</span>
                       <button type="button" onClick={() => void refreshUserStyles()}>
@@ -2174,7 +2182,7 @@ ${styleAnchorLine}
                   ) : null}
                   {/* Pack Header Info + Search Bar */}
                   <div
-                    className={`grid min-h-12 min-w-0 items-center gap-4 border-b border-[color:var(--wb-line)] px-4 py-2.5 sm:px-5 2xl:px-6 ${
+                    className={`style-folder-heading grid min-h-12 min-w-0 items-center gap-4 border-b border-[color:var(--wb-line)] px-4 py-2.5 sm:px-5 2xl:px-6 ${
                       isStyleNavigationPanelOpen
                         ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
                         : 'lg:grid-cols-[40px_minmax(0,1fr)]'
@@ -2192,17 +2200,17 @@ ${styleAnchorLine}
                       </div>
 
                       {/* Search & Filter Toolbar */}
-                      <div className="vt-style-actionbar flex min-h-9 shrink-0 flex-wrap items-center gap-1.5 rounded-[6px] border border-[color:var(--wb-line)] p-1">
+                      <div className="vt-style-actionbar flex min-h-9 shrink-0 flex-wrap items-center gap-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] p-1">
                         <details className="relative">
                           <summary className="cursor-pointer px-2 text-xs text-[color:var(--wb-ink)]">
                             Manage styles
                           </summary>
-                          <div className="absolute right-0 top-8 z-50 grid w-44 gap-2 rounded-lg border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-2">
+                          <div className="absolute right-0 top-8 z-50 grid w-44 gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-2">
                             <button
                               type="button"
                               onClick={handleCreateUserStyle}
                               data-style-create-user-style
-                              className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-sky-300 transition-colors hover:bg-sky-500/10 hover:text-sky-100"
+                              className="flex h-7 items-center gap-2 rounded-[var(--wb-radius)] px-2.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/10 hover:text-[color:var(--wb-info)] "
                               title="Create Style"
                             >
                               <Plus size={15} />
@@ -2214,7 +2222,7 @@ ${styleAnchorLine}
                               onClick={handleSaveSelectedStyleBlend}
                               disabled={!canSaveStyleBlend}
                               data-style-save-blend
-                              className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-35"
+                              className="flex h-7 items-center gap-2 rounded-[var(--wb-radius)] px-2.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-35"
                               title="Save Blend"
                             >
                               <Layers size={15} />
@@ -2230,7 +2238,7 @@ ${styleAnchorLine}
                               }
                               disabled={!canEditActiveUserStyle && !canCloneActiveStyle}
                               data-style-edit-or-clone
-                              className="flex h-7 items-center gap-2 rounded-[6px] px-2.5 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-35"
+                              className="flex h-7 items-center gap-2 rounded-[var(--wb-radius)] px-2.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] disabled:cursor-not-allowed disabled:opacity-35"
                               title={canEditActiveUserStyle ? 'Edit Style' : 'Clone Style'}
                             >
                               {canEditActiveUserStyle ? <PenTool size={15} /> : <Copy size={15} />}
@@ -2243,14 +2251,14 @@ ${styleAnchorLine}
                         {isGlobalStyleBrowseTab ? null : (
                           <div
                             data-style-view-mode={activeStyleViewMode}
-                            className="flex h-7 items-center rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/40 p-0.5"
+                            className="flex h-7 items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/40 p-0.5"
                           >
                             <button
                               type="button"
                               onClick={() => updateFilters({ viewMode: 'grouped' })}
                               aria-label="Show grouped style categories"
                               aria-pressed={activeStyleViewMode === 'grouped'}
-                              className={`flex size-6 items-center justify-center rounded-[5px] transition-colors ${
+                              className={`flex size-6 items-center justify-center rounded-[var(--wb-radius)] transition-colors ${
                                 activeStyleViewMode === 'grouped'
                                   ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
                                   : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]'
@@ -2264,7 +2272,7 @@ ${styleAnchorLine}
                               onClick={() => updateFilters({ viewMode: 'flat' })}
                               aria-label="Show all style cards in one grid"
                               aria-pressed={activeStyleViewMode === 'flat'}
-                              className={`flex size-6 items-center justify-center rounded-[5px] transition-colors ${
+                              className={`flex size-6 items-center justify-center rounded-[var(--wb-radius)] transition-colors ${
                                 activeStyleViewMode === 'flat'
                                   ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
                                   : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]'
@@ -2285,7 +2293,7 @@ ${styleAnchorLine}
                             aria-haspopup="listbox"
                             aria-expanded={isSortDropdownOpen}
                             aria-controls={sortMenuId}
-                            className={`flex min-h-9 w-[9.75rem] touch-manipulation items-center gap-1.5 rounded-[6px] border px-2 text-left transition-[border-color,background-color,color,transform] ${
+                            className={`flex min-h-9 w-[9.75rem] touch-manipulation items-center gap-1.5 rounded-[var(--wb-radius)] border px-2 text-left transition-[border-color,background-color,color,transform] ${
                               isSortDropdownOpen
                                 ? 'border-[color:var(--wb-line)] bg-white/[0.075] text-[color:var(--wb-ink)] shadow-[0_0_0_1px_rgba(255,255,255,0.035),0_10px_28px_rgba(0,0,0,0.28)]'
                                 : 'border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/40 text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-white/[0.045] hover:text-[color:var(--wb-ink)]'
@@ -2293,7 +2301,7 @@ ${styleAnchorLine}
                             title="Sort styles"
                           >
                             <ArrowUpDown size={14} className="shrink-0" />
-                            <span className="min-w-0 flex-1 truncate text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+                            <span className="min-w-0 flex-1 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                               {activeSortOption.label}
                             </span>
                             <ChevronDown
@@ -2311,9 +2319,9 @@ ${styleAnchorLine}
                             portal
                             role="listbox"
                             aria-label="Sort style cards"
-                            className="absolute right-0 top-[calc(100%+0.45rem)] z-50 w-52 overflow-hidden rounded-[6px] p-1"
+                            className="absolute right-0 top-[calc(100%+0.45rem)] z-50 w-52 overflow-hidden rounded-[var(--wb-radius)] p-1"
                           >
-                            <div className="px-2 pb-1 pt-1 text-[8px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-dim)]">
+                            <div className="px-2 pb-1 pt-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
                               Sort
                             </div>
                             <div className="space-y-0.5">
@@ -2331,7 +2339,7 @@ ${styleAnchorLine}
                                       updateFilters({ sortOrder: option.value });
                                       setIsSortDropdownOpen(false);
                                     }}
-                                    className={`flex min-h-9 w-full items-center justify-between gap-3 rounded-[5px] px-2 text-left text-[9px] font-black uppercase tracking-widest transition-[background-color,color,transform] ${
+                                    className={`flex min-h-9 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] px-2 text-left text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[background-color,color,transform] ${
                                       selected
                                         ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
                                         : 'text-[color:var(--wb-muted)] hover:bg-white/[0.055] hover:text-[color:var(--wb-ink)]'
@@ -2351,7 +2359,7 @@ ${styleAnchorLine}
                             type="button"
                             aria-label="Filter favorite styles"
                             onClick={() => toggleFavoritesOnly()}
-                            className={`rounded-[6px] p-1.5 transition-colors ${showFavoritesOnly ? 'text-rose-400 bg-rose-500/10' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'}`}
+                            className={`rounded-[var(--wb-radius)] p-1.5 transition-colors ${showFavoritesOnly ? 'text-[color:var(--wb-danger)] bg-rose-500/10' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'}`}
                             title="Filter Favorites in this Pack"
                           >
                             <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
@@ -2360,8 +2368,8 @@ ${styleAnchorLine}
 
                         <div className="h-6 w-px bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]" />
 
-                        <div className="hidden items-center gap-2 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/40 px-2 py-1 md:flex">
-                          <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                        <div className="hidden items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/40 px-2 py-1 md:flex">
+                          <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                             Zoom
                           </span>
                           <input
@@ -2375,7 +2383,7 @@ ${styleAnchorLine}
                             aria-label="Style grid zoom"
                             title="Style card columns"
                           />
-                          <span className="w-4 text-[9px] font-black text-[color:var(--wb-ink)] tabular-nums">
+                          <span className="w-4 text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tabular-nums">
                             {gridColumns}
                           </span>
                         </div>
@@ -2398,7 +2406,7 @@ ${styleAnchorLine}
                     </select>
                   </label>
                   <div
-                    className={`grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6 ${
+                    className={`style-folder-layout grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6 ${
                       isStyleNavigationPanelOpen
                         ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
                         : 'lg:grid-cols-[40px_minmax(0,1fr)]'
@@ -2423,13 +2431,13 @@ ${styleAnchorLine}
                     ) : (
                       <aside
                         data-style-detail-navigation-rail
-                        className="hidden min-h-0 min-w-0 items-start justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
+                        className="hidden min-h-0 min-w-0 items-start justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
                       >
                         <button
                           type="button"
                           onClick={() => toggleStylePanel('navigation')}
                           data-style-detail-navigation-toggle
-                          className="flex size-7 items-center justify-center rounded-[6px] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                          className="flex size-7 items-center justify-center rounded-[var(--wb-radius)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                           aria-label="Show style map"
                           title="Show style map"
                         >
@@ -2464,7 +2472,7 @@ ${styleAnchorLine}
                                 initiallyVisible
                                 headerClassName="opacity-100"
                                 accentClassName="bg-rose-500"
-                                titleClassName="text-rose-400"
+                                titleClassName="text-[color:var(--wb-danger)]"
                                 dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
                                 renderPresetCard={renderPresetCard}
                               />
@@ -2515,13 +2523,13 @@ ${styleAnchorLine}
                               {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
                                 <>
                                   <Filter size={32} className="opacity-20" />
-                                  <span className="text-xs font-bold uppercase tracking-widest">
+                                  <span className="text-xs font-bold tracking-normal">
                                     Could not load this style pack
                                   </span>
                                   <button
                                     type="button"
                                     onClick={retryStylePacks}
-                                    className="flex h-9 items-center gap-2 rounded-[6px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                                    className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                                   >
                                     <Wand2 size={13} />
                                     Retry
@@ -2530,13 +2538,13 @@ ${styleAnchorLine}
                               ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
                                 <>
                                   <Filter size={32} className="opacity-20" />
-                                  <span className="text-xs font-bold uppercase tracking-widest">
+                                  <span className="text-xs font-bold tracking-normal">
                                     Could not load styles
                                   </span>
                                   <button
                                     type="button"
                                     onClick={() => void refreshUserStyles()}
-                                    className="flex h-9 items-center gap-2 rounded-[6px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                                    className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                                   >
                                     <Wand2 size={13} />
                                     Retry
@@ -2546,14 +2554,17 @@ ${styleAnchorLine}
                                 !isLoadingUserStyles &&
                                 normalizedStyleSearchQuery.length === 0 ? (
                                 <>
-                                  <Sparkles size={32} className="opacity-30 text-sky-300" />
-                                  <span className="text-xs font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
+                                  <Sparkles
+                                    size={32}
+                                    className="opacity-30 text-[color:var(--wb-info)] "
+                                  />
+                                  <span className="text-xs font-bold tracking-normal text-[color:var(--wb-muted)]">
                                     No custom styles yet
                                   </span>
                                   <button
                                     type="button"
                                     onClick={handleCreateUserStyle}
-                                    className="flex h-9 items-center gap-2 rounded-[6px] border border-sky-400/2 bg-sky-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-sky-100 transition-colors hover:bg-sky-500/16"
+                                    className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/16"
                                   >
                                     <Plus size={13} />
                                     Create Style
@@ -2562,7 +2573,7 @@ ${styleAnchorLine}
                               ) : (
                                 <>
                                   <Filter size={32} className="opacity-20" />
-                                  <span className="text-xs font-bold uppercase tracking-widest">
+                                  <span className="text-xs font-bold tracking-normal">
                                     {isLoadingUserStyles || isLoadingStylePacks
                                       ? 'Loading styles'
                                       : 'No styles found matching criteria'}
@@ -2596,7 +2607,7 @@ ${styleAnchorLine}
               )}
             </div>
           </div>
-        </RecipeOverlay>
+        </RecipeSidePanel>
       ) : null}
 
       <RecipeControls>
@@ -2622,7 +2633,10 @@ ${styleAnchorLine}
             data-style-advanced-toggle
             aria-expanded={advancedOpen}
             aria-controls="style-advanced-panel"
-            onClick={() => setAdvancedOpen((open) => !open)}
+            onClick={() => {
+              if (explorerOpen) closeStyleCatalog();
+              setAdvancedOpen((open) => !open);
+            }}
           >
             <span>Advanced layers</span>
             <SlidersHorizontal size={13} />
@@ -2636,7 +2650,7 @@ ${styleAnchorLine}
           hidden
           data-style-generate-button
           data-generate-active={isGenerating ? 'true' : 'false'}
-          className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/2 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
+          className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/18 px-4 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/2 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
         >
           <Play size={16} />
           {isGenerating ? 'Queue' : 'Generate'}
@@ -2647,7 +2661,7 @@ ${styleAnchorLine}
           <div
             ref={advancedPanelRef}
             id="style-advanced-panel"
-            className="create-side-panel-dialog"
+            className="studio-surface create-side-panel-dialog"
             role="dialog"
             aria-modal="false"
             aria-label="Advanced layers"
@@ -2658,7 +2672,10 @@ ${styleAnchorLine}
               <button
                 type="button"
                 aria-label="Close advanced layers"
-                onClick={() => setAdvancedOpen(false)}
+                onClick={() => {
+                  setAdvancedOpen(false);
+                  document.querySelector<HTMLElement>('[data-style-advanced-toggle]')?.focus();
+                }}
               >
                 <X size={14} />
               </button>

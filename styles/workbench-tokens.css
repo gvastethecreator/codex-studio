@@ -26,8 +26,11 @@
   --wb-radius: 4px;
   --wb-control-height: 30px;
   --wb-font-size: 12px;
-  --wb-font:
-    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --wb-success: #8fd5ae;
+  --wb-warning: #edc47d;
+  --wb-danger: #f5a3b1;
+  --wb-info: #a0c9f5;
+  --wb-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --wb-mono: ui-monospace, 'SF Mono', Consolas, monospace;
   --wb-fast: 100ms;
   --wb-ease: cubic-bezier(0.16, 1, 0.3, 1);
@@ -86,6 +89,10 @@
   --wb-line: #d4cfc4;
   --wb-border: #c9c2b4;
   --wb-selection: #c9c2b4;
+  --wb-success: #24683f;
+  --wb-warning: #805500;
+  --wb-danger: #a02943;
+  --wb-info: #245d91;
   --wba-bg: #efece4;
   --wba-panel-albedo: #e4e0d6;
   --wba-control-albedo: #d8d2c4;

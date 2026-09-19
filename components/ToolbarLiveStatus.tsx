@@ -135,7 +135,7 @@ export function GenerationElapsedStatus({
       <div className="relative z-10 flex items-center gap-2" data-generation-elapsed-status>
         <Send size={14} className="text-accent-200" />
         <span className="text-white">QUEUE</span>
-        <span className="hidden w-12 text-right text-[8px] tabular-nums text-accent-300/80 sm:inline">
+        <span className="hidden w-12 text-right text-[length:var(--wbp-label)] tabular-nums text-accent-300/80 sm:inline">
           {elapsedTime}s
         </span>
       </div>

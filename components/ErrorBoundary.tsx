@@ -32,9 +32,9 @@ export class ErrorBoundary extends Component<Props, State> {
   public override render() {
     if (this.state.hasError) {
       return (
-        <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-[color:var(--wb-panel)]/50 border border-red-500/20 rounded-2xl">
+        <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-[color:var(--wb-panel)]/50 border border-red-500/20 rounded-[var(--wb-radius)]">
           <AlertTriangle size={48} className="text-red-500 mb-4" />
-          <h2 className="text-lg font-black text-[color:var(--wb-ink)] uppercase tracking-widest mb-2">
+          <h2 className="text-lg font-semibold text-[color:var(--wb-ink)] tracking-normal mb-2">
             System Error
           </h2>
           <p className="text-xs text-[color:var(--wb-muted)] text-center max-w-md">
@@ -44,7 +44,7 @@ export class ErrorBoundary extends Component<Props, State> {
           <button
             type="button"
             onClick={() => this.setState({ hasError: false, error: null })}
-            className="mt-6 px-4 py-2 bg-red-500/10 text-red-400 hover:bg-red-500/20 rounded-lg text-xs font-bold uppercase tracking-widest transition-colors"
+            className="mt-6 px-4 py-2 bg-red-500/10 text-[color:var(--wb-danger)] hover:bg-red-500/20 rounded-[var(--wb-radius)] text-xs font-bold tracking-normal transition-colors"
           >
             Retry
           </button>

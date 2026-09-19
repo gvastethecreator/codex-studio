@@ -67,24 +67,24 @@ function loadStyleFolderGsap() {
 type StyleTheme = { bg: string; text: string };
 
 const PACK_THEMES: Record<string, StyleTheme> = {
-  [USER_STYLE_PACK_ID]: { bg: 'bg-sky-500', text: 'text-sky-400' },
+  [USER_STYLE_PACK_ID]: { bg: 'bg-sky-500', text: 'text-[color:var(--wb-info)]' },
   [FAVORITES_PACK_ID]: { bg: 'bg-rose-600', text: 'text-rose-500' },
   pack_01: { bg: 'bg-cyan-500', text: 'text-cyan-400' },
   pack_02: { bg: 'bg-indigo-500', text: 'text-indigo-400' },
-  pack_03: { bg: 'bg-rose-500', text: 'text-rose-400' },
+  pack_03: { bg: 'bg-rose-500', text: 'text-[color:var(--wb-danger)]' },
   pack_04: { bg: 'bg-fuchsia-500', text: 'text-fuchsia-400' },
   pack_05: { bg: 'bg-red-600', text: 'text-red-500' },
-  pack_06: { bg: 'bg-amber-500', text: 'text-amber-400' },
-  pack_07: { bg: 'bg-emerald-500', text: 'text-emerald-400' },
+  pack_06: { bg: 'bg-amber-500', text: 'text-[color:var(--wb-warning)]' },
+  pack_07: { bg: 'bg-emerald-500', text: 'text-[color:var(--wb-success)]' },
   pack_08: { bg: 'bg-violet-500', text: 'text-violet-400' },
   pack_09: { bg: 'bg-lime-500', text: 'text-lime-400' },
   pack_10: { bg: 'bg-blue-500', text: 'text-blue-400' },
   pack_11: { bg: 'bg-orange-500', text: 'text-orange-400' },
-  pack_12: { bg: 'bg-emerald-500', text: 'text-emerald-400' },
+  pack_12: { bg: 'bg-emerald-500', text: 'text-[color:var(--wb-success)]' },
   pack_13: { bg: 'bg-pink-500', text: 'text-pink-400' },
   pack_14: { bg: 'bg-violet-500', text: 'text-violet-400' },
   pack_15: { bg: 'bg-teal-500', text: 'text-teal-400' },
-  pack_16: { bg: 'bg-rose-500', text: 'text-rose-400' },
+  pack_16: { bg: 'bg-rose-500', text: 'text-[color:var(--wb-danger)]' },
   pack_17: { bg: 'bg-green-500', text: 'text-green-400' },
 };
 
@@ -298,7 +298,7 @@ function getStyleCollectionTheme(collection: StyleCollection): StyleTheme {
 }
 
 function getStyleCollectionTitleClassName(title: string) {
-  if (title.length > 33) return 'text-[10px]';
+  if (title.length > 33) return 'text-[length:var(--wbp-label)]';
   if (title.length > 25) return 'text-[11px]';
   if (title.length > 17) return 'text-xs';
   return 'text-sm';
@@ -482,7 +482,7 @@ function StyleFolderCard({
       onPointerLeave={() => void animateFolder(false)}
       onFocus={handleFolderEnter}
       onBlur={() => void animateFolder(false)}
-      className={`style-folder-enter group relative z-0 block aspect-[3/4] w-full cursor-pointer overflow-visible rounded-[6px] text-left outline-none transition-[filter] duration-200 hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 ${
+      className={`style-folder-enter group relative z-0 block aspect-[3/4] w-full cursor-pointer overflow-visible rounded-[var(--wb-radius)] text-left outline-none transition-[filter] duration-200 hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 ${
         isHighlighted ? 'z-30 brightness-[1.08]' : ''
       }`}
       style={
@@ -494,9 +494,9 @@ function StyleFolderCard({
       {...dataAttributes}
     >
       {isHighlighted && (
-        <span className="pointer-events-none absolute -inset-2 z-[70] rounded-[9px] border border-[color:var(--wb-line)] shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_22px_55px_rgba(255,255,255,0.10)]" />
+        <span className="pointer-events-none absolute -inset-2 z-[70] rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_22px_55px_rgba(255,255,255,0.10)]" />
       )}
-      <div className="absolute inset-0 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]" />
+      <div className="absolute inset-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]" />
       <div
         className={`absolute -top-2 left-0 h-4 w-[46%] rounded-t-[6px] border-x border-t border-[color:var(--wb-line)] ${theme.bg} opacity-60 shadow-[0_8px_22px_rgba(0,0,0,0.28)]`}
       />
@@ -509,7 +509,7 @@ function StyleFolderCard({
           }}
           data-style-pack-folder-file={file.id}
           aria-hidden="true"
-          className="absolute inset-x-4 bottom-11 top-8 overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_18px_34px_rgba(0,0,0,0.38)]"
+          className="absolute inset-x-4 bottom-11 top-8 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_18px_34px_rgba(0,0,0,0.38)]"
         >
           {filesMounted && file.src ? (
             <img
@@ -532,7 +532,7 @@ function StyleFolderCard({
           )}
           <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-white/10" />
           <div
-            className={`absolute left-2 top-2 flex size-6 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-black/42 ${theme.text} backdrop-blur`}
+            className={`absolute left-2 top-2 flex size-6 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-black/42 ${theme.text} backdrop-blur`}
           >
             {icon}
           </div>
@@ -542,13 +542,13 @@ function StyleFolderCard({
       <div
         ref={coverRef}
         data-style-pack-folder-cover={id}
-        className="absolute inset-0 overflow-visible rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_18px_42px_rgba(0,0,0,0.38)]"
+        className="absolute inset-0 overflow-visible rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_18px_42px_rgba(0,0,0,0.38)]"
         style={{ transformOrigin: 'center bottom' }}
       >
         <div
           className={`absolute -top-3 left-0 h-5 w-[54%] rounded-t-[6px] border-x border-t border-[color:var(--wb-line)] ${theme.bg} opacity-75 shadow-[0_8px_22px_rgba(0,0,0,0.32)]`}
         />
-        <div className="absolute inset-0 overflow-hidden rounded-[6px]">
+        <div className="absolute inset-0 overflow-hidden rounded-[var(--wb-radius)]">
           <div className="absolute inset-0 bg-[color:var(--wb-panel)]">
             {coverImage ? (
               <img
@@ -574,7 +574,7 @@ function StyleFolderCard({
               <span
                 data-style-pack-count={id}
                 aria-label={countAriaLabel}
-                className={`flex min-w-9 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] ${theme.bg} px-2 py-1 text-[10px] font-black tabular-nums text-[color:var(--wb-ink)]/95 shadow-[0_8px_18px_rgba(0,0,0,0.28)] backdrop-blur-md`}
+                className={`flex min-w-9 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] ${theme.bg} px-2 py-1 text-[length:var(--wbp-label)] font-semibold tabular-nums text-[color:var(--wb-ink)]/95 shadow-[0_8px_18px_rgba(0,0,0,0.28)] backdrop-blur-md`}
                 style={
                   {
                     '--tw-bg-opacity': '0.76',
@@ -587,19 +587,21 @@ function StyleFolderCard({
             </div>
 
             <div className="min-w-0">
-              <p className={`mb-1 text-[9px] font-black uppercase tracking-widest ${theme.text}`}>
+              <p
+                className={`mb-1 text-[length:var(--wbp-label)] font-semibold tracking-normal ${theme.text}`}
+              >
                 {eyebrow}
               </p>
               <h3
                 data-style-pack-card-title={id}
-                className={`flex min-w-0 items-center gap-1.5 whitespace-nowrap font-black leading-tight tracking-normal text-[color:var(--wb-ink)] ${titleClassName}`}
+                className={`flex min-w-0 items-center gap-1.5 whitespace-nowrap font-semibold leading-tight tracking-normal text-[color:var(--wb-ink)] ${titleClassName}`}
               >
                 <span className={`flex size-6 shrink-0 items-center justify-center ${theme.text}`}>
                   {icon}
                 </span>
                 <span className="min-w-0 truncate">{title}</span>
               </h3>
-              <p className="mt-1.5 line-clamp-2 text-[10px] font-medium leading-snug text-[color:var(--wb-ink)]/86">
+              <p className="mt-1.5 line-clamp-2 text-[length:var(--wbp-label)] font-medium leading-snug text-[color:var(--wb-ink)]/86">
                 {description}
               </p>
             </div>
@@ -840,13 +842,13 @@ function StyleFolderPlaceholder({
       data-style-tab-url={`#${tabHash}`}
       aria-label={`Open ${title}`}
       onClick={onOpen}
-      className={`group relative z-0 block aspect-[3/4] w-full cursor-pointer overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left outline-none focus-visible:ring-2 focus-visible:ring-white/35 ${
+      className={`group relative z-0 block aspect-[3/4] w-full cursor-pointer overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left outline-none focus-visible:ring-2 focus-visible:ring-white/35 ${
         isHighlighted ? 'z-30 brightness-[1.08]' : ''
       }`}
       {...dataAttributes}
     >
       <span className={`absolute inset-x-0 top-0 h-1 ${theme.bg}`} />
-      <span className="absolute inset-x-3 bottom-3 truncate text-xs font-black uppercase text-[color:var(--wb-muted)]">
+      <span className="absolute inset-x-3 bottom-3 truncate text-xs font-semibold text-[color:var(--wb-muted)]">
         {title}
       </span>
     </button>
@@ -888,12 +890,12 @@ function StyleCollectionFamilySection({
       className="min-w-0"
     >
       <div className="mb-2 flex items-center gap-2">
-        <div className={`h-4 w-1 rounded-[2px] ${familyTheme.bg}`} />
+        <div className={`h-4 w-1 rounded-[var(--wb-radius)] ${familyTheme.bg}`} />
         <div className="min-w-0">
-          <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-ink)]">
+          <h3 className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
             {family.title}
           </h3>
-          <p className="mt-0.5 line-clamp-1 text-[10px] font-medium text-[color:var(--wb-dim)]">
+          <p className="mt-0.5 line-clamp-1 text-[length:var(--wbp-label)] font-medium text-[color:var(--wb-dim)]">
             {family.description}
           </p>
         </div>
@@ -961,15 +963,15 @@ function StyleSourcePacksSection({
       ref={sectionRef}
       data-style-source-packs-section
       data-style-source-packs-mounted={isMounted ? 'true' : 'false'}
-      className="rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]"
+      className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]"
     >
       <div
         data-style-source-packs-summary
-        className="flex items-center gap-2 px-3 py-3 text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]"
+        className="flex items-center gap-2 px-3 py-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]"
       >
         <Layers size={16} />
         Source Packs
-        <span className="ml-auto rounded-[6px] border border-[color:var(--wb-line)] bg-white/[0.035] px-2 py-1 text-[9px] text-[color:var(--wb-muted)]">
+        <span className="ml-auto rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.035] px-2 py-1 text-[length:var(--wbp-label)] text-[color:var(--wb-muted)]">
           {STYLE_RUNTIME_PACK_SUMMARIES.length}
         </span>
       </div>
@@ -1043,10 +1045,10 @@ function StyleNavigationPanel({
 
   return (
     <aside className="hidden min-h-0 min-w-0 lg:block" data-style-landing-navigation>
-      <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+      <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
         <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-[color:var(--wb-line)] px-3">
           <div className="min-w-0">
-            <p className="text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
+            <p className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               Quick Map
             </p>
           </div>
@@ -1054,7 +1056,7 @@ function StyleNavigationPanel({
             type="button"
             onClick={onClose}
             data-style-landing-navigation-toggle
-            className="flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+            className="flex size-7 shrink-0 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             aria-label="Hide style map"
             title="Hide style map"
           >
@@ -1066,7 +1068,7 @@ function StyleNavigationPanel({
             <div key={section.id} className="mb-3 last:mb-0">
               <div className="mb-1.5 flex items-center gap-2 px-1">
                 <span className="h-px flex-1 bg-white/6" />
-                <span className="text-[8px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-dim)]">
+                <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
                   {section.title}
                 </span>
                 <span className="h-px flex-1 bg-white/6" />
@@ -1092,20 +1094,20 @@ function StyleNavigationPanel({
                         cancelDelayedPreview();
                         onOpen(item.tabId);
                       }}
-                      className={`group/nav flex min-h-9 w-full items-center gap-2 rounded-[6px] border px-2 py-1.5 text-left outline-none transition-[background-color,border-color,transform,color] duration-150 focus-visible:ring-2 focus-visible:ring-white/30 ${
+                      className={`group/nav flex min-h-9 w-full items-center gap-2 rounded-[var(--wb-radius)] border px-2 py-1.5 text-left outline-none transition-[background-color,border-color,transform,color] duration-150 focus-visible:ring-2 focus-visible:ring-white/30 ${
                         active
                           ? 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
                           : 'border-transparent bg-transparent text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-white/[0.045] hover:text-[color:var(--wb-ink)]'
                       }`}
                     >
                       <span
-                        className={`flex size-6 shrink-0 items-center justify-center rounded-[5px] border border-[color:var(--wb-line)] bg-white/[0.035] ${item.theme.text}`}
+                        className={`flex size-6 shrink-0 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.035] ${item.theme.text}`}
                       >
                         {item.icon}
                       </span>
                       <span className="min-w-0 flex-1">
                         <span
-                          className={`block truncate text-[10px] font-black uppercase tracking-normal ${
+                          className={`block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal ${
                             active
                               ? item.theme.text
                               : 'text-[color:var(--wb-ink)] group-hover/nav:text-[color:var(--wb-ink)]'
@@ -1113,12 +1115,12 @@ function StyleNavigationPanel({
                         >
                           {item.label}
                         </span>
-                        <span className="block truncate text-[9px] font-medium text-[color:var(--wb-dim)]">
+                        <span className="block truncate text-[length:var(--wbp-label)] font-medium text-[color:var(--wb-dim)]">
                           {item.caption}
                         </span>
                       </span>
                       <span
-                        className={`rounded-[5px] border border-[color:var(--wb-line)] px-1.5 py-0.5 text-[8px] font-black tabular-nums ${active ? `${item.theme.bg} text-[color:var(--wb-ink)]` : 'bg-white/[0.035] text-[color:var(--wb-muted)]'}`}
+                        className={`rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-1.5 py-0.5 text-[length:var(--wbp-label)] font-semibold tabular-nums ${active ? `${item.theme.bg} text-[color:var(--wb-ink)]` : 'bg-white/[0.035] text-[color:var(--wb-muted)]'}`}
                         style={
                           active
                             ? ({ '--tw-bg-opacity': '0.68' } as React.CSSProperties)
@@ -1250,7 +1252,7 @@ export function StyleCollectionsLandingSurface({
         <h2 className="vt-style-pack-title truncate text-lg font-semibold tracking-tight text-[color:var(--wb-ink)]">
           Style Packs
         </h2>
-        <p className="max-w-3xl text-[10px] font-medium leading-relaxed text-[color:var(--wb-muted)]">
+        <p className="max-w-3xl text-[length:var(--wbp-label)] font-medium leading-relaxed text-[color:var(--wb-muted)]">
           Collection-first style systems grouped by creative intent.
         </p>
         <label className="styles-catalog-map-select lg:hidden">
@@ -1277,7 +1279,7 @@ export function StyleCollectionsLandingSurface({
       </div>
 
       <div
-        className={`grid min-h-0 min-w-0 flex-1 gap-4 overflow-hidden ${
+        className={`style-landing-layout grid min-h-0 min-w-0 flex-1 gap-4 overflow-hidden ${
           isNavigationPanelOpen
             ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
             : 'lg:grid-cols-[40px_minmax(0,1fr)]'
@@ -1294,13 +1296,13 @@ export function StyleCollectionsLandingSurface({
         ) : (
           <aside
             data-style-landing-navigation-rail
-            className="hidden min-h-0 min-w-0 items-start justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
+            className="hidden min-h-0 min-w-0 items-start justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
           >
             <button
               type="button"
               onClick={onToggleNavigationPanel}
               data-style-landing-navigation-toggle
-              className="flex size-7 items-center justify-center rounded-[6px] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+              className="flex size-7 items-center justify-center rounded-[var(--wb-radius)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
               aria-label="Show style map"
               title="Show style map"
             >
@@ -1317,8 +1319,8 @@ export function StyleCollectionsLandingSurface({
           <div className="flex min-w-0 flex-col gap-5 pb-16">
             <section data-style-collection-family="personal" className="min-w-0">
               <div className="mb-2 flex items-center gap-2">
-                <div className="h-4 w-1 rounded-[2px] bg-sky-500" />
-                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-ink)]">
+                <div className="h-4 w-1 rounded-[var(--wb-radius)] bg-sky-500" />
+                <h3 className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                   Personal
                 </h3>
                 <div className="h-px flex-1 bg-white/6" />

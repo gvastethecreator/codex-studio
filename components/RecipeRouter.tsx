@@ -111,9 +111,6 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
           <LoadedRemasterRecipe
             config={generationConfig}
             updateConfig={updateGenerationConfig}
-            updateAttachment={updateAttachment}
-            onFileSelect={handlePastedFiles}
-            onGenerate={handleGenerate}
             isGenerating={isGenerating}
           />
         )}
@@ -121,12 +118,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
           <LoadedCameraAnglesRecipe
             config={generationConfig}
             updateConfig={updateGenerationConfig}
-            updateAttachment={updateAttachment}
-            onFileSelect={handlePastedFiles}
-            onGenerate={(prompt) => handleGenerate(prompt, undefined, { preventModal: true })}
             isGenerating={isGenerating}
-            images={imagesWithConfig}
-            onSelectImage={openModal}
           />
         )}
         {activeRecipe === 'timeline' && (
@@ -171,9 +163,6 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
           <LoadedCharacterSheetRecipe
             config={generationConfig}
             updateConfig={updateGenerationConfig}
-            updateAttachment={updateAttachment}
-            onFileSelect={handlePastedFiles}
-            onGenerate={handleGenerate}
             isGenerating={isGenerating}
           />
         )}
@@ -182,12 +171,8 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             recipeAliasId={activeRecipeAliasId}
             config={generationConfig}
             updateConfig={updateGenerationConfig}
-            updateAttachment={updateAttachment}
             onGenerate={handleGenerate}
             isGenerating={isGenerating}
-            images={imagesWithConfig}
-            onSelectImage={openModal}
-            onUseAsSource={handleAddToContext}
           />
         )}
       </React.Suspense>

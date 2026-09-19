@@ -52,16 +52,19 @@ function ImageEditorControlsPanel({
   requireMask = true,
 }: ImageEditorControlsPanelProps) {
   return (
-    <div className="custom-scrollbar flex max-h-[44vh] w-full flex-col gap-5 overflow-y-auto bg-[color:var(--wb-panel)] p-4 shadow-[20px_0_60px_rgba(0,0,0,1)] sm:p-6 md:max-h-none md:w-96 md:gap-10 md:p-8">
+    <div className="studio-inspector custom-scrollbar flex max-h-[44vh] w-full flex-col gap-5 overflow-y-auto bg-[color:var(--wb-panel)] p-4 sm:p-5 md:max-h-none md:w-80 md:gap-6 md:p-5">
       {notice ? (
-        <p role="status" className="text-[11px] font-medium leading-relaxed text-[color:var(--wb-muted)]">
+        <p
+          role="status"
+          className="text-[11px] font-medium leading-relaxed text-[color:var(--wb-muted)]"
+        >
           {notice}
         </p>
       ) : null}
       <div className="space-y-3 sm:space-y-4">
         <label
           htmlFor="image-editor-prompt"
-          className="text-[10px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest"
+          className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] tracking-normal"
         >
           Edit Prompt
         </label>
@@ -72,7 +75,7 @@ function ImageEditorControlsPanel({
           onChange={(e) => onEditPromptChange(e.target.value)}
           placeholder="Describe the changes..."
           aria-label="Edit prompt"
-          className="w-full min-h-24 max-h-44 bg-[color:var(--wb-well)] rounded-2xl p-4 text-[13px] font-bold leading-relaxed focus:bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar sm:min-h-40 sm:max-h-75 sm:p-5"
+          className="w-full min-h-24 max-h-44 bg-[color:var(--wb-well)] rounded-[var(--wb-radius)] p-4 text-[13px] font-bold leading-relaxed focus:bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] transition-colors outline-none resize-none placeholder:text-[color:var(--wb-dim)] custom-scrollbar sm:min-h-40 sm:max-h-75 sm:p-5"
         />
       </div>
 
@@ -92,14 +95,14 @@ function ImageEditorControlsPanel({
             type="button"
             onClick={onUndo}
             disabled={historyIndex < 0}
-            className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:opacity-10 transition-[color,background-color,border-color,opacity,box-shadow,transform]"
+            className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-[var(--wb-radius)] text-[length:var(--wbp-label)] font-semibold tracking-normal hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:opacity-40 transition-[color,background-color,border-color,opacity,box-shadow,transform]"
           >
             Undo
           </button>
           <button
             type="button"
             onClick={onReset}
-            className="flex-1 h-11 flex items-center justify-center gap-2 bg-red-500/5 rounded-xl text-[10px] font-black uppercase tracking-widest text-red-500/60 hover:text-red-400 hover:bg-red-500/10 transition-[color,background-color,border-color,opacity,box-shadow,transform]"
+            className="flex-1 h-11 flex items-center justify-center gap-2 bg-red-500/5 rounded-[var(--wb-radius)] text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] hover:text-[color:var(--wb-danger)] hover:bg-red-500/10 transition-[color,background-color,border-color,opacity,box-shadow,transform]"
           >
             Reset
           </button>
@@ -117,15 +120,10 @@ function ImageEditorControlsPanel({
             historyIndex,
             requireMask,
           })}
-          className={`w-full h-12 sm:h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-[color,background-color,border-color,opacity,box-shadow,transform] active:scale-95 shadow-2xl
-                    ${
-                      isGenerating
-                        ? 'bg-accent-500/10 text-accent-500/40'
-                        : 'bg-accent-600 text-[color:var(--wb-ink)] hover:bg-accent-500 shadow-accent-950/40'
-                    } disabled:opacity-20 disabled:pointer-events-none`}
+          className="studio-primary-control w-full h-10 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           {isGenerating ? (
-            <div className="size-4 border-2 border-[color:var(--wb-line)]0 border-t-white rounded-full animate-spin" />
+            <div className="size-4 border-2 border-[color:var(--wb-border)] border-t-[color:var(--wb-ink)] rounded-full animate-spin" />
           ) : (
             <Sparkles size={18} />
           )}
@@ -199,6 +197,27 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   useEffect(() => {
     setupCanvas();
   }, [setupCanvas]);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    const observer = new ResizeObserver(() => {
+      const canvas = canvasRef.current;
+      if (!canvas) return;
+      const scale = Math.max(
+        0,
+        Math.min(
+          (container.clientWidth - 48) / canvas.width,
+          (container.clientHeight - 48) / canvas.height,
+        ),
+      );
+      // Resize only the display. Changing bitmap dimensions would erase the mask.
+      canvas.style.width = `${canvas.width * scale}px`;
+      canvas.style.height = `${canvas.height * scale}px`;
+    });
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, [isOpen]);
 
   const getPointerPos = (e: React.PointerEvent<HTMLCanvasElement>) => {
     const canvas = canvasRef.current;
@@ -357,16 +376,16 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       aria-label="Image editor"
       className="fixed inset-0 z-100 m-0 flex h-full w-full flex-col border-none bg-[color:var(--wba-bg)] p-0 backdrop-blur-3xl animate-in fade-in duration-500"
     >
-      <div className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-[color:var(--wb-line)] px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
+      <div className="studio-bar flex shrink-0 min-h-16 w-full items-center justify-between gap-3 border-b border-[color:var(--wb-line)] px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
         <div className="flex min-w-0 items-center gap-3 sm:gap-5">
-          <div className="rounded-xl bg-accent-500/10 p-2 sm:p-2.5">
+          <div className="rounded-[var(--wb-radius)] bg-accent-500/10 p-2 sm:p-2.5">
             <Sparkles size={18} className="text-accent-400 sm:size-5" />
           </div>
           <div className="min-w-0">
-            <h2 className="truncate text-xs font-black tracking-widest uppercase text-[color:var(--wb-ink)] sm:text-sm">
+            <h2 className="truncate text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] sm:text-sm">
               {requireMask ? 'Precision Inpaint' : 'Prompt Edit'}
             </h2>
-            <p className="hidden text-[10px] text-[color:var(--wb-dim)] font-bold uppercase tracking-tight sm:block">
+            <p className="hidden text-[length:var(--wbp-label)] text-[color:var(--wb-dim)] font-bold tracking-tight sm:block">
               {requireMask ? 'Edit masked area and regenerate' : 'Describe the change, then apply'}
             </p>
           </div>
@@ -375,7 +394,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           type="button"
           aria-label="Close image editor"
           onClick={handleClose}
-          className="rounded-xl bg-[color:var(--wb-panel)] p-3 text-[color:var(--wb-dim)] shadow-xl transition-[background-color,color] hover:bg-[color:var(--wb-bar)] hover:text-[color:var(--wb-ink)]"
+          className="rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] p-3 text-[color:var(--wb-dim)] shadow-xl transition-[background-color,color] hover:bg-[color:var(--wb-bar)] hover:text-[color:var(--wb-ink)]"
         >
           <X size={24} />
         </button>
@@ -383,17 +402,17 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
 
       <div className="flex min-h-0 flex-1 flex-col md:flex-row">
         <div
-          className="relative flex min-h-[42vh] flex-1 items-center justify-center bg-[#010101] p-3 sm:p-8"
+          className="relative flex min-h-[42vh] min-w-0 flex-1 items-center justify-center overflow-hidden bg-[color:var(--wb-canvas)] p-6"
           ref={containerRef}
         >
           {image && (
             <img
               src={image.dataUrl}
               alt=""
-              className="absolute object-contain pointer-events-none opacity-100"
+              className="absolute inset-6 object-contain pointer-events-none opacity-100"
               style={{
-                width: canvasRef.current?.style.width,
-                height: canvasRef.current?.style.height,
+                width: 'calc(100% - 48px)',
+                height: 'calc(100% - 48px)',
               }}
             />
           )}

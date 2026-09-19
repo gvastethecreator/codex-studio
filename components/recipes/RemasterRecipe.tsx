@@ -1,20 +1,17 @@
-import React, { useState, useRef, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import {
-  IconUpload as Upload,
   IconSun as Sun,
   IconCamera as Camera,
-  IconX as X,
   IconPalette as Palette,
   IconDeviceTv as MonitorPlay,
   IconFingerprint as Fingerprint,
   IconTypography as TextIcon,
 } from '@tabler/icons-react';
-import type { Attachment, ImageGenerationConfig } from '../../types';
-import { RATIO_MAP } from '../../constants';
+import type { ImageGenerationConfig } from '../../types';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
+import { RecipeResults } from './RecipeWorkbenchContext';
 import { ControlDropdown } from './RecipeUI';
-import { QuickStartText } from './QuickStartText';
 import {
   getRecipeModuleUiModel,
   getRecipeNumberDefault,
@@ -29,9 +26,6 @@ interface RemasterRecipeProps {
     key: K,
     value: ImageGenerationConfig[K],
   ) => void;
-  updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
-  onFileSelect: (files: File[]) => void;
-  onGenerate: (prompt?: string) => void;
   isGenerating: boolean;
 }
 
@@ -61,9 +55,6 @@ const DEFAULT_PARAMS = {
 export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   config,
   updateConfig,
-  updateAttachment,
-  onFileSelect,
-  onGenerate,
   isGenerating,
 }) => {
   const [params, setParams] = useState(
@@ -74,10 +65,6 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
       }) as typeof DEFAULT_PARAMS,
   );
 
-  const fileInputRef = useRef<HTMLInputElement>(null);
-  const activeImage = config.attachments[0];
-
-  const ratioValue = useMemo(() => RATIO_MAP[config.aspectRatio] || 1, [config.aspectRatio]);
   const recipeParams = useMemo(
     () => ({
       style: params.style,
@@ -101,17 +88,11 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
 
   useRecipeContextRegistration(updateConfig, 'remaster', recipeParams);
 
-  const handleDrop = (e: React.DragEvent) => {
-    e.preventDefault();
-    const files = Array.from(e.dataTransfer.files).filter((f: File) => f.type.startsWith('image/'));
-    if (files.length > 0) onFileSelect(files);
-  };
-
   const BottomDock = useMemo(
     () => (
       <>
         <div className="flex flex-col gap-2 px-6 border-r border-[color:var(--wb-line)] min-w-[240px]">
-          <div className="flex justify-between text-[8px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-dim)]">
+          <div className="flex justify-between text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
             <span>Creative Freedom</span>
             <span>Faithful to Original</span>
           </div>
@@ -182,70 +163,8 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   );
 
   return (
-    <RecipeLayout
-      isGenerating={isGenerating}
-      bottomDock={BottomDock}
-      className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-8 sm:pt-20 sm:pb-48 flex items-center justify-center"
-    >
-      <div
-        className="relative shadow-2xl transition-[background-color,border-color,box-shadow,opacity,transform] duration-500 ease-out-expo bg-[color:var(--wb-panel)] border border-[color:var(--wb-line)] rounded-lg overflow-hidden group"
-        style={{
-          aspectRatio: ratioValue,
-          width: 'min(86vw, 72vh)',
-          maxWidth: '100%',
-          maxHeight: 'calc(100dvh - var(--studio-chrome-block))',
-        }}
-      >
-        {activeImage ? (
-          <div className="size-full relative">
-            <img
-              src={activeImage.dataUrl}
-              alt="Original"
-              className="size-full object-contain opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-[filter,opacity] duration-1000"
-            />
-            <div className="absolute top-4 right-4">
-              <div className="px-3 py-1.5 rounded-lg bg-[color:var(--wb-well)] backdrop-blur-sm border border-[color:var(--wb-line)] flex items-center gap-2">
-                <span className="text-[9px] font-black text-[color:var(--wb-ink)] uppercase tracking-widest">
-                  Original reference
-                </span>
-              </div>
-            </div>
-            <button
-              type="button"
-              aria-label="Remove remaster reference"
-              onClick={() => updateConfig('attachments', [])}
-              className="absolute top-4 left-4 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-[color:var(--wb-ink)] transition-[color,background-color,opacity,transform] opacity-0 group-hover:opacity-100"
-            >
-              <X size={14} />
-            </button>
-          </div>
-        ) : (
-          <button
-            type="button"
-            onDragOver={(e) => e.preventDefault()}
-            onDrop={handleDrop}
-            onClick={() => fileInputRef.current?.click()}
-            className="size-full border-2 border-dashed border-[color:var(--wb-line)] hover:border-accent-500/2 bg-white/[0.01] flex flex-col items-center justify-center gap-6 cursor-pointer transition-[background-color,border-color,opacity,transform] group appearance-none p-0 m-0"
-          >
-            <input
-              type="file"
-              ref={fileInputRef}
-              onChange={(e) => e.target.files && onFileSelect(Array.from(e.target.files))}
-              aria-label="Upload image"
-              className="hidden"
-              accept="image/*"
-            />
-            <div className="size-16 rounded-full bg-[color:var(--wb-panel)] border border-[color:var(--wb-line)] flex items-center justify-center group-hover:scale-110 transition-transform">
-              <Upload size={24} className="text-[color:var(--wb-dim)] group-hover:text-accent-400" />
-            </div>
-            <QuickStartText
-              title="Load image or type a prompt"
-              subtitle="Supported formats: JPG, PNG, WEBP"
-              maxTitleFontSize={20}
-            />
-          </button>
-        )}
-      </div>
+    <RecipeLayout isGenerating={isGenerating} bottomDock={BottomDock}>
+      <RecipeResults />
     </RecipeLayout>
   );
 };

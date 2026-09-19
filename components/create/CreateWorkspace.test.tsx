@@ -1,6 +1,6 @@
 /** @vitest-environment jsdom */
 import React from 'react';
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('../../contexts/GenerationContext', () => ({
@@ -24,11 +24,20 @@ vi.mock('../../lib/recipeRouteModules', () => ({
 import type { RecipePageRuntimeProps } from '../RecipePage';
 import type { StudioGenerationDockProps } from '../shell/StudioGenerationDock';
 import { CreateWorkspace } from './CreateWorkspace';
+import {
+  RecipeControls,
+  RecipeEditor,
+  RecipeOptionsPanel,
+  RecipeWorkbenchContext,
+} from '../recipes/RecipeWorkbenchContext';
 
 afterEach(cleanup);
 
 const GenerationDock = ((props: StudioGenerationDockProps) => (
-  <div data-generation-dock-layout={props.layout ?? 'dock'} data-testid="generation-dock" />
+  <div data-generation-dock-layout={props.layout ?? 'dock'} data-testid="generation-dock">
+    {props.railTools}
+    {props.railAction}
+  </div>
 )) as unknown as React.LazyExoticComponent<React.ComponentType<StudioGenerationDockProps>>;
 
 const recipePageProps = {
@@ -88,7 +97,7 @@ describe('CreateWorkspace', () => {
     );
   });
 
-  it('keeps recipe tools on the left and results with a carousel on the right', () => {
+  it('keeps recipe tools on the left and a specialized stage on the right', () => {
     const { container } = render(
       <CreateWorkspace
         recipePageProps={recipePageProps}
@@ -97,6 +106,7 @@ describe('CreateWorkspace', () => {
         generationDockProps={generationDockProps}
         routeKey="recipe-camera"
         tools={<div data-testid="recipe-tools">Camera tools</div>}
+        stage={<div data-testid="camera-stage">Camera editor</div>}
       />,
     );
 
@@ -109,10 +119,85 @@ describe('CreateWorkspace', () => {
     expect(workspace?.getAttribute('data-route-key')).toBe('recipe-camera');
     expect(toolsRail.contains(recipeTools)).toBe(true);
     expect(toolsRail.contains(generate)).toBe(true);
-    expect(stage.contains(screen.getByRole('region', { name: 'Result preview' }))).toBe(true);
+    expect(stage.contains(screen.getByTestId('camera-stage'))).toBe(true);
+    expect(screen.queryByRole('region', { name: 'Result preview' })).toBeNull();
     expect(
       recipeTools.compareDocumentPosition(stage) & Node.DOCUMENT_POSITION_FOLLOWING,
     ).toBeTruthy();
     expect(toolsRail.className).toContain('workbench-config');
+  });
+  it('preserves the editor draft when results arrive and removes old workflow panels', async () => {
+    function Workspace({
+      resultId,
+      workflow = 'camera',
+    }: {
+      resultId?: string;
+      workflow?: string;
+    }) {
+      const [controls, setControls] = React.useState<HTMLElement | null>(null);
+      const [sidePanel, setSidePanel] = React.useState<HTMLElement | null>(null);
+      return (
+        <RecipeWorkbenchContext
+          value={{
+            controls,
+            sidePanel,
+            action: null,
+            overlay: null,
+            compare: null,
+            setCompare: () => {},
+            latestResultId: resultId,
+            results: <div>Workflow result</div>,
+          }}
+        >
+          <CreateWorkspace
+            recipePageProps={recipePageProps}
+            hasGenerationDock
+            GenerationDock={GenerationDock}
+            generationDockProps={generationDockProps}
+            tools={<div ref={setControls} />}
+            onSidePanelTarget={setSidePanel}
+            stage={
+              <React.Fragment key={workflow}>
+                <RecipeControls>
+                  <button>Workflow control</button>
+                </RecipeControls>
+                <RecipeOptionsPanel title="Frame details">
+                  <input aria-label="Correction" />
+                </RecipeOptionsPanel>
+                <RecipeEditor label="Camera">
+                  <input aria-label="Editor draft" defaultValue="Keep this" />
+                </RecipeEditor>
+              </React.Fragment>
+            }
+          />
+        </RecipeWorkbenchContext>
+      );
+    }
+    const { rerender } = render(<Workspace resultId="old" />);
+    const rail = screen.getByRole('complementary', { name: 'Create tools' });
+    expect(rail.contains(screen.getByRole('button', { name: 'Workflow control' }))).toBe(true);
+    const trigger = screen.getByRole('button', { name: 'Frame details' });
+    fireEvent.click(trigger);
+    const panel = screen.getByRole('dialog', { name: 'Frame details' });
+    expect(document.activeElement).toBe(panel);
+    fireEvent.keyDown(panel, { key: 'Escape' });
+    expect(screen.queryByRole('dialog')).toBeNull();
+    expect(document.activeElement).toBe(trigger);
+    fireEvent.change(screen.getByRole('textbox', { name: 'Editor draft' }), {
+      target: { value: 'Edited draft' },
+    });
+    rerender(<Workspace resultId="new" />);
+    await waitFor(() =>
+      expect(screen.getByRole('tab', { name: 'Results' }).getAttribute('aria-selected')).toBe(
+        'true',
+      ),
+    );
+    fireEvent.click(screen.getByRole('tab', { name: 'Camera' }));
+    expect((screen.getByRole('textbox', { name: 'Editor draft' }) as HTMLInputElement).value).toBe(
+      'Edited draft',
+    );
+    fireEvent.click(trigger);
+    rerender(<Workspace resultId="new" workflow="timeline" />);
+    expect(screen.queryByRole('dialog')).toBeNull();
   });
 });

@@ -18,12 +18,7 @@ import {
   IconSparkles as Sparkles,
   IconX as X,
 } from '@tabler/icons-react';
-import type {
-  AspectRatio,
-  Attachment,
-  GeneratedImageWithConfig,
-  ImageGenerationConfig,
-} from '../../types';
+import type { AspectRatio, Attachment, ImageGenerationConfig } from '../../types';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
 import {
@@ -38,13 +33,18 @@ import {
   getCharacterLabIconFrame,
   getCharacterLabOptionIconFrame,
   getFirstReadyCharacterLabAction,
+  resolveInitialCharacterLabAction,
   type CharacterLabAction,
   type CharacterLabModeId,
 } from '../../lib/characterLabView';
-import { resolveRecipeAlias, type RecipeAliasId } from '../../lib/recipeAliases';
+import { type RecipeAliasId } from '../../lib/recipeAliases';
 import { normalizeImageGenRatio } from '../../utils/imageGenSizing';
-import { RecipeResultPreview } from './RecipeResultPreview';
-import { RecipeControls, RecipePrimaryAction } from './RecipeWorkbenchContext';
+import {
+  RecipeControls,
+  RecipePrimaryAction,
+  RecipeOptionsPanel,
+  RecipeResults,
+} from './RecipeWorkbenchContext';
 import { RecipeLayout } from './RecipeLayout';
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
@@ -55,7 +55,6 @@ interface CharacterLabRecipeProps {
     key: K,
     value: ImageGenerationConfig[K],
   ) => void;
-  updateAttachment: (id: string, newProps: Partial<Attachment>) => void;
   onGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
@@ -65,9 +64,6 @@ interface CharacterLabRecipeProps {
     },
   ) => void;
   isGenerating: boolean;
-  images: GeneratedImageWithConfig[];
-  onSelectImage: (image: GeneratedImageWithConfig) => void;
-  onUseAsSource: (image: GeneratedImageWithConfig) => void;
 }
 
 const MODE_ICON_IDS: Record<CharacterLabModeId, string> = {
@@ -89,7 +85,7 @@ const SELECTED_INPUT_PREVIEW_SLOT_IDS = [
 
 const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string; soft: string }> = {
   amber: {
-    text: 'text-amber-300',
+    text: 'text-[color:var(--wb-warning)] ',
     border: 'border-amber-500/2',
     bg: 'bg-amber-500',
     soft: 'bg-amber-500/10',
@@ -113,7 +109,7 @@ const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string;
     soft: 'bg-cyan-500/10',
   },
   emerald: {
-    text: 'text-emerald-300',
+    text: 'text-[color:var(--wb-success)] ',
     border: 'border-emerald-500/2',
     bg: 'bg-emerald-500',
     soft: 'bg-emerald-500/10',
@@ -143,7 +139,7 @@ const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string;
     soft: 'bg-purple-500/10',
   },
   red: {
-    text: 'text-red-300',
+    text: 'text-[color:var(--wb-danger)] ',
     border: 'border-red-500/40',
     bg: 'bg-red-500',
     soft: 'bg-red-500/10',
@@ -174,11 +170,6 @@ const FIRST_READY_ACTION = getFirstReadyCharacterLabAction();
 
 function getFirstReadyActionForMode(mode: CharacterLabModeId) {
   return getFirstReadyCharacterLabAction(mode);
-}
-
-function resolveCharacterLabModeFromAlias(aliasId: RecipeAliasId | null | undefined) {
-  const alias = resolveRecipeAlias(aliasId);
-  return alias?.targetRecipeId === 'character-lab' ? alias.characterLabMode : 'poses';
 }
 
 function getAccent(accent: string) {
@@ -503,7 +494,10 @@ function SelectField({
 
   return (
     <div ref={rootRef} className={`relative flex min-w-0 flex-col gap-1.5 ${className}`}>
-      <span id={labelId} className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
+      <span
+        id={labelId}
+        className="text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)]"
+      >
         {label}
       </span>
       <input type="hidden" name={fieldName} value={value} />
@@ -516,7 +510,7 @@ function SelectField({
         aria-expanded={isOpen}
         aria-haspopup="listbox"
         onKeyDown={handleKeyDown}
-        className={`character-lab-control-card flex min-h-12 w-full min-w-0 items-center gap-3 rounded-xl border px-2.5 py-2 text-left outline-none transition-[background-color,border-color,color,transform] duration-150 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+        className={`character-lab-control-card flex min-h-12 w-full min-w-0 items-center gap-3 rounded-[var(--wb-radius)] border px-2.5 py-2 text-left outline-none transition-[background-color,border-color,color,transform] duration-150 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
           isOpen
             ? 'border-violet-400/2 bg-violet-500/10 text-[color:var(--wb-ink)]'
             : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-white/[0.05]'
@@ -526,14 +520,14 @@ function SelectField({
           else openDropdown();
         }}
       >
-        <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-black">
+        <span className="grid size-9 shrink-0 place-items-center rounded-[var(--wb-radius)] bg-black">
           <CharacterLabOptionIcon id={selectedIconId} fallbackId={fallbackIconId} size={27} />
         </span>
         <span className="min-w-0 flex-1">
-          <span className="block truncate text-[12px] font-black leading-tight text-[color:var(--wb-ink)]">
+          <span className="block truncate text-[12px] font-semibold leading-tight text-[color:var(--wb-ink)]">
             {selectedText.primary}
           </span>
-          <span className="mt-0.5 block truncate text-[9px] font-bold leading-tight text-[color:var(--wb-dim)]">
+          <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-bold leading-tight text-[color:var(--wb-dim)]">
             {selectedText.detail}
           </span>
         </span>
@@ -558,7 +552,7 @@ function SelectField({
         role="listbox"
         aria-labelledby={labelId}
         aria-activedescendant={`${listboxId}-${activeIndex}`}
-        className="t-dropdown custom-scrollbar absolute left-0 right-0 top-full z-50 mt-2 max-h-64 overflow-y-auto rounded-xl p-1.5"
+        className="t-dropdown custom-scrollbar absolute left-0 right-0 top-full z-50 mt-2 max-h-64 overflow-y-auto rounded-[var(--wb-radius)] p-1.5"
         data-origin="top-right"
       >
         {options.map((option, index) => {
@@ -577,7 +571,7 @@ function SelectField({
               data-dropdown-item
               onMouseEnter={() => setActiveIndex(index)}
               onClick={() => chooseOption(option)}
-              className={`flex min-h-12 w-full min-w-0 items-center gap-3 rounded-lg px-2 py-2 text-left transition-[background-color,color,transform] duration-150 ${
+              className={`flex min-h-12 w-full min-w-0 items-center gap-3 rounded-[var(--wb-radius)] px-2 py-2 text-left transition-[background-color,color,transform] duration-150 ${
                 selected
                   ? 'bg-violet-500/15 text-[color:var(--wb-ink)]'
                   : active
@@ -585,14 +579,14 @@ function SelectField({
                     : 'text-[color:var(--wb-muted)] hover:bg-white/[0.05] hover:text-[color:var(--wb-ink)]'
               }`}
             >
-              <span className="grid size-8 shrink-0 place-items-center rounded-md bg-black">
+              <span className="grid size-8 shrink-0 place-items-center rounded-[var(--wb-radius)] bg-black">
                 <CharacterLabOptionIcon id={optionIconId} fallbackId={fallbackIconId} size={24} />
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-[11px] font-black leading-tight">
+                <span className="block truncate text-[11px] font-semibold leading-tight">
                   {optionText.primary}
                 </span>
-                <span className="mt-0.5 block truncate text-[8px] font-bold leading-tight text-[color:var(--wb-dim)]">
+                <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-bold leading-tight text-[color:var(--wb-dim)]">
                   {optionText.detail}
                 </span>
               </span>
@@ -622,22 +616,22 @@ function PreviewOptionCard({
 }) {
   return (
     <div
-      className={`character-lab-preview-option group flex h-full min-h-[132px] min-w-0 flex-col rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition-[border-color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:border-[color:var(--wb-border)] hover:bg-white/[0.045] ${
+      className={`character-lab-preview-option group flex h-full min-h-[132px] min-w-0 flex-col rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition-[border-color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:border-[color:var(--wb-border)] hover:bg-white/[0.045] ${
         prominent ? 'sm:col-span-2 xl:col-span-1' : ''
       }`}
     >
-      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg bg-black">
+      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-[var(--wb-radius)] bg-black">
         <CharacterLabOptionIcon id={item.iconId} fallbackId={item.fallbackIconId} size={64} />
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
-        <span className="absolute left-1.5 top-1.5 rounded-md border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+        <span className="absolute left-1.5 top-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[7px] font-semibold tracking-normal text-[color:var(--wb-muted)]">
           {item.label}
         </span>
       </div>
       <div className="min-w-0 shrink-0 px-0.5 pt-1.5">
-        <div className="line-clamp-1 text-[10px] font-black leading-tight text-[color:var(--wb-ink)]">
+        <div className="line-clamp-1 text-[length:var(--wbp-label)] font-semibold leading-tight text-[color:var(--wb-ink)]">
           {item.value}
         </div>
-        <div className="mt-0.5 line-clamp-1 text-[8px] font-bold leading-tight text-[color:var(--wb-dim)]">
+        <div className="mt-0.5 line-clamp-1 text-[length:var(--wbp-label)] font-bold leading-tight text-[color:var(--wb-dim)]">
           {item.detail}
         </div>
       </div>
@@ -666,7 +660,7 @@ function AttachmentSetupSlot({
 
   return (
     <div
-      className={`group relative min-w-0 overflow-hidden rounded-xl border bg-[color:var(--wb-well)] transition-[border-color,opacity] duration-150 ${
+      className={`group relative min-w-0 overflow-hidden rounded-[var(--wb-radius)] border bg-[color:var(--wb-well)] transition-[border-color,opacity] duration-150 ${
         attachment ? 'border-[color:var(--wb-line)]' : 'border-dashed border-[color:var(--wb-line)]'
       } ${disabled ? 'opacity-45' : 'hover:border-[color:var(--wb-border)]'}`}
     >
@@ -695,12 +689,12 @@ function AttachmentSetupSlot({
         ) : (
           <>
             <CharacterLabIcon id={isSource ? 'control:source' : 'control:reference'} size={42} />
-            <span className="mt-1 max-w-full px-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
+            <span className="mt-1 max-w-full px-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
               {isSource ? 'Main' : 'Ref'}
             </span>
           </>
         )}
-        <span className="absolute bottom-1 left-1 rounded-md bg-black/75 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+        <span className="absolute bottom-1 left-1 rounded-[var(--wb-radius)] bg-black/75 px-1.5 py-0.5 text-[7px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
           {label}
         </span>
       </button>
@@ -712,7 +706,7 @@ function AttachmentSetupSlot({
             event.stopPropagation();
             onRemove();
           }}
-          className="absolute right-1 top-1 rounded-md bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-ink)] opacity-0 transition-[opacity,color] duration-150 hover:text-red-200 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70"
+          className="absolute right-1 top-1 rounded-[var(--wb-radius)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-ink)] opacity-0 transition-[opacity,color] duration-150 hover:text-[color:var(--wb-danger)]  group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70"
           aria-label={`Remove ${label}`}
         >
           <X size={11} />
@@ -724,8 +718,8 @@ function AttachmentSetupSlot({
 
 function SourcePreviewCard({ source }: { source: Attachment | null }) {
   return (
-    <div className="character-lab-preview-option group flex h-full min-h-[180px] flex-col rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 shadow-[0_16px_36px_rgba(0,0,0,0.28)] transition-[border-color,background-color] duration-200 hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]">
-      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-black">
+    <div className="character-lab-preview-option group flex h-full min-h-[180px] flex-col rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 shadow-[0_16px_36px_rgba(0,0,0,0.28)] transition-[border-color,background-color] duration-200 hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]">
+      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-black">
         {source ? (
           <img
             src={source.dataUrl}
@@ -736,15 +730,15 @@ function SourcePreviewCard({ source }: { source: Attachment | null }) {
           <CharacterLabIcon id="control:source" size={76} />
         )}
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
-        <span className="absolute left-3 top-3 rounded-lg border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-2 py-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+        <span className="absolute left-3 top-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
           Source Image
         </span>
       </div>
       <div className="min-w-0 px-0.5 pt-1.5">
-        <div className="truncate text-[11px] font-black uppercase tracking-wide text-[color:var(--wb-ink)]">
+        <div className="truncate text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
           {source ? 'Source Attached' : 'Prompt Guided'}
         </div>
-        <div className="mt-0.5 truncate text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+        <div className="mt-0.5 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
           {source?.name ?? 'No image source'}
         </div>
       </div>
@@ -769,42 +763,44 @@ function ActionButton({
       type="button"
       onClick={() => onSelect(action)}
       title={action.prompt}
-      className={`character-lab-action-card group relative flex aspect-[5/6] min-h-[132px] w-full min-w-0 flex-col overflow-hidden rounded-xl border p-1.5 text-left shadow-[0_10px_22px_rgba(0,0,0,0.22)] transition-[background-color,border-color,color,opacity,transform] duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+      className={`character-lab-action-card group relative flex aspect-[5/6] min-h-[132px] w-full min-w-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border p-1.5 text-left shadow-[0_10px_22px_rgba(0,0,0,0.22)] transition-[background-color,border-color,color,opacity,transform] duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
         selected
           ? `${accent.border} ${accent.soft} text-[color:var(--wb-ink)] ring-1 ring-inset ring-white/10`
           : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]'
       }`}
     >
-      <span className="relative flex min-h-0 w-full flex-1 items-center justify-center overflow-hidden rounded-lg bg-black">
+      <span className="relative flex min-h-0 w-full flex-1 items-center justify-center overflow-hidden rounded-[var(--wb-radius)] bg-black">
         <CharacterLabIcon id={action.id} size={58} />
         <span className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
         {selected && (
           <span
-            className={`absolute left-2 top-2 rounded-md border bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest ${accent.border} ${accent.text}`}
+            className={`absolute left-2 top-2 rounded-[var(--wb-radius)] border bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[7px] font-semibold tracking-normal ${accent.border} ${accent.text}`}
           >
             Selected
           </span>
         )}
       </span>
       <span className="min-w-0 shrink-0 px-1 pb-1 pt-1">
-        <span className="line-clamp-1 text-[9px] font-black leading-tight text-pretty">
+        <span className="line-clamp-1 text-[length:var(--wbp-label)] font-semibold leading-tight text-pretty">
           {action.label}
         </span>
         <span
-          className={`mt-0.5 line-clamp-2 text-[8px] font-semibold leading-snug text-pretty ${
-            selected ? 'text-[color:var(--wb-ink)]/85' : 'text-[color:var(--wb-muted)] group-hover:text-[color:var(--wb-muted)]'
+          className={`mt-0.5 line-clamp-2 text-[length:var(--wbp-label)] font-semibold leading-snug text-pretty ${
+            selected
+              ? 'text-[color:var(--wb-ink)]/85'
+              : 'text-[color:var(--wb-muted)] group-hover:text-[color:var(--wb-muted)]'
           }`}
         >
           {action.prompt}
         </span>
         <span
-          className={`mt-0.5 block truncate text-[7px] font-black uppercase tracking-widest ${selected ? accent.text : 'text-[color:var(--wb-dim)]'}`}
+          className={`mt-0.5 block truncate text-[7px] font-semibold tracking-normal ${selected ? accent.text : 'text-[color:var(--wb-dim)]'}`}
         >
           {action.capability === 'ready' ? 'Prompt or reference' : 'Not yet available'}
         </span>
       </span>
       {locked && (
-        <span className="absolute right-2 top-2 rounded-md bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-muted)]">
+        <span className="absolute right-2 top-2 rounded-[var(--wb-radius)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-muted)]">
           <Lock size={10} aria-hidden="true" />
         </span>
       )}
@@ -818,19 +814,14 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   updateConfig,
   onGenerate,
   isGenerating,
-  images,
-  onSelectImage,
-  onUseAsSource,
 }) => {
-  const [actionBrowserOpen, setActionBrowserOpen] = useState(true);
+  const [actionBrowserOpen, setActionBrowserOpen] = useState(false);
   const actionToggleRef = useRef<HTMLButtonElement>(null);
-  const initialAliasMode =
-    (config.recipeParams?.mode as CharacterLabModeId) ??
-    resolveCharacterLabModeFromAlias(recipeAliasId);
-  const [selectedMode, setSelectedMode] = useState<CharacterLabModeId>(initialAliasMode);
-  const [selectedActionId, setSelectedActionId] = useState(() =>
-    getRecipeStringParam(config, 'actionId', getFirstReadyActionForMode(initialAliasMode).id),
+  const [initialAction] = useState(() =>
+    resolveInitialCharacterLabAction(config.recipeParams, recipeAliasId),
   );
+  const [selectedMode, setSelectedMode] = useState<CharacterLabModeId>(initialAction.mode);
+  const [selectedActionId, setSelectedActionId] = useState(initialAction.id);
   const [search, setSearch] = useState(() => getRecipeStringParam(config, 'actionSearch', ''));
   const [capabilityNotice, setCapabilityNotice] = useState('');
   const [subject, setSubject] = useState(() => getRecipeStringParam(config, 'subject', ''));
@@ -1015,10 +1006,6 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
       .filter((group) => group.actions.length > 0);
   }, [search, selectedMode]);
 
-  const recentImages = images
-    .filter((image) => image.config.recipeId === 'character-lab')
-    .slice(0, 8);
-
   const setAction = (action: CharacterLabAction) => {
     setSelectedActionId(action.id);
     setSelectedMode(action.mode);
@@ -1116,37 +1103,148 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   };
 
   return (
-    <RecipeLayout
-      isGenerating={isGenerating}
-      className="character-lab-shell studio-surface overflow-hidden bg-[color:var(--wb-bg)] p-2 pb-[var(--studio-recipe-dock-space)] sm:p-3 sm:pb-3 max-xl:overflow-y-auto"
-    >
-      <div className="grid size-full min-h-0 grid-cols-[minmax(250px,5fr)_minmax(320px,6fr)_minmax(440px,9fr)] gap-3 max-xl:flex max-xl:h-auto max-xl:min-h-[1120px] max-xl:flex-col max-sm:min-h-0">
+    <RecipeLayout isGenerating={isGenerating} className="character-lab-shell flex min-h-0 flex-col">
+      <div className="flex size-full min-h-0 flex-col">
+        <RecipeOptionsPanel
+          title="Choose action"
+          open={actionBrowserOpen}
+          onOpenChange={setActionBrowserOpen}
+          triggerRef={actionToggleRef}
+        >
+          <div className="character-action-catalog flex min-h-0 flex-col" data-panel="main">
+            <div className="shrink-0 border-b border-[color:var(--wb-line)] p-2.5">
+              <div className="custom-scrollbar flex gap-1 overflow-x-auto pb-1">
+                {characterLabModes.map((mode) => {
+                  const active = selectedMode === mode.id;
+                  return (
+                    <button
+                      key={mode.id}
+                      type="button"
+                      title={mode.description}
+                      onClick={() => {
+                        setSelectedMode(mode.id);
+                        setAction(getFirstReadyActionForMode(mode.id));
+                      }}
+                      className={`character-lab-control-card flex h-10 min-w-[76px] flex-none items-center justify-center gap-1.5 rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold transition-[background-color,border-color,color,transform] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+                        active
+                          ? 'border-violet-400/2 bg-violet-500/10 text-[color:var(--wb-ink)]'
+                          : 'border-[color:var(--wb-line)] bg-black/25 text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:text-[color:var(--wb-ink)]'
+                      }`}
+                    >
+                      <CharacterLabIcon id={MODE_ICON_IDS[mode.id]} size={18} />
+                      <span className="min-w-0 truncate">{mode.label.replace(' Sheets', '')}</span>
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="mt-2 flex items-center gap-2">
+                <div className="relative min-w-0 flex-1">
+                  <Search
+                    size={14}
+                    className="absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--wb-dim)]"
+                    aria-hidden="true"
+                  />
+                  <input
+                    name="character-lab-action-search"
+                    aria-label="Search character actions"
+                    value={search}
+                    onChange={(event) => setSearch(event.target.value)}
+                    placeholder={`Search ${characterLabOptionCounts.total} actions`}
+                    className="h-9 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] pl-9 pr-3 text-[12px] text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)] transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  />
+                </div>
+                <div className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-1.5 text-right">
+                  <div className="text-[length:var(--wbp-label)] font-semibold tabular-nums text-[color:var(--wb-ink)]">
+                    {selectedModeReadyActions.length}/{selectedModeActions.length}
+                  </div>
+                  <div className="text-[7px] font-semibold tracking-normal text-[color:var(--wb-dim)]">
+                    ready
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="min-h-0 flex-1 overflow-y-auto p-2.5 custom-scrollbar">
+              {filteredCategoryGroups.map(({ category, actions }) => {
+                const firstAction = actions[0];
+                const accent = firstAction ? getAccent(firstAction.accent) : getAccent('zinc');
+                const batchCount = actions.filter((action) => action.batchRecommended).length;
+
+                return (
+                  <section key={category.id} className="mb-4 last:mb-0">
+                    <div className="mb-1.5 flex items-center gap-2">
+                      <div className={`flex min-w-0 flex-1 items-center gap-2 ${accent.text}`}>
+                        {firstAction && <CharacterLabIcon id={firstAction.id} size={22} />}
+                        <span className="truncate text-[11px] font-semibold tracking-normal">
+                          {category.label}
+                        </span>
+                        <span className="text-[length:var(--wbp-label)] font-bold tabular-nums text-[color:var(--wb-dim)]">
+                          {actions.length}
+                        </span>
+                      </div>
+                      {batchCount > 0 && (
+                        <button
+                          type="button"
+                          onClick={() => runCategoryBatch(actions)}
+                          className="flex h-7 items-center gap-1 rounded-[var(--wb-radius)] border border-violet-400/2 bg-violet-500/15 px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-violet-100 transition-[background-color,border-color] duration-150 hover:border-violet-300/2 hover:bg-violet-500/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                        >
+                          <CharacterLabIcon id="control:batch" size={16} />
+                          Batch
+                        </button>
+                      )}
+                    </div>
+                    <div className="grid grid-cols-[repeat(auto-fit,minmax(124px,1fr))] gap-2">
+                      {actions.map((action) => (
+                        <ActionButton
+                          key={action.id}
+                          action={action}
+                          selected={action.id === selectedAction.id}
+                          onSelect={(action) => {
+                            setAction(action);
+                            setActionBrowserOpen(false);
+                            actionToggleRef.current?.focus();
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </section>
+                );
+              })}
+
+              {filteredCategoryGroups.length === 0 && (
+                <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] p-6 text-center text-[11px] font-bold tracking-normal text-[color:var(--wb-dim)]">
+                  No matching actions
+                </div>
+              )}
+            </div>
+          </div>
+        </RecipeOptionsPanel>
         <RecipeControls>
           <aside
-            className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl max-xl:min-h-[680px] max-sm:min-h-[680px]"
+            className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl"
             data-panel="left"
           >
             <div className="shrink-0 border-b border-[color:var(--wb-line)] p-3">
               <div className="flex items-center justify-between gap-2">
                 <div>
-                  <h2 className="text-[12px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+                  <h2 className="text-[12px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                     Action Setup
                   </h2>
-                  <p className="mt-1 text-[10px] font-semibold text-[color:var(--wb-dim)]">
+                  <p className="mt-1 text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-dim)]">
                     {selectedAction.label} · {sourceLabel}
                   </p>
                 </div>
                 <span
-                  className={`rounded-lg border px-2 py-1 text-[9px] font-black uppercase tracking-widest ${selectedAccent.border} ${selectedAccent.text}`}
+                  className={`rounded-[var(--wb-radius)] border px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal ${selectedAccent.border} ${selectedAccent.text}`}
                 >
                   {capabilityLabel}
                 </span>
               </div>
             </div>
 
-            <div className="min-h-0 flex-1 overflow-y-auto p-3 pb-20 custom-scrollbar">
+            <div className="min-h-0 flex-1 overflow-y-auto p-3 custom-scrollbar">
               <label className="flex flex-col gap-1.5">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <span className="text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)]">
                   Character Brief
                 </span>
                 <textarea
@@ -1154,7 +1252,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   value={subject}
                   onChange={(event) => setSubject(event.target.value)}
                   placeholder="e.g. Brave elven ranger, scar over left eye..."
-                  className="h-20 resize-none rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5 text-[12px] leading-relaxed text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)] transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="h-20 resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5 text-[12px] leading-relaxed text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)] transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 />
               </label>
 
@@ -1200,7 +1298,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               </div>
 
               <div className="mt-3">
-                <div className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <div className="mb-1.5 text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-muted)]">
                   Background Color
                 </div>
                 <div className="grid grid-cols-4 gap-1.5">
@@ -1209,7 +1307,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                       key={palette.name}
                       type="button"
                       onClick={() => setBackgroundColor(palette.backgroundColor)}
-                      className={`flex h-8 items-center justify-center rounded-lg border bg-[color:var(--wb-well)] transition-[border-color,background-color] duration-150 hover:border-[color:var(--wb-border)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+                      className={`flex h-8 items-center justify-center rounded-[var(--wb-radius)] border bg-[color:var(--wb-well)] transition-[border-color,background-color] duration-150 hover:border-[color:var(--wb-border)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
                         backgroundColor === palette.backgroundColor
                           ? 'border-violet-400/2 bg-violet-500/10'
                           : 'border-[color:var(--wb-line)]'
@@ -1233,156 +1331,22 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
           </aside>
         </RecipeControls>
 
-        <div className="character-result-area" hidden={actionBrowserOpen}>
-          <RecipeResultPreview
-            images={images.filter((image) => image.config.recipeId === 'character-lab')}
-            reference={config.attachments[0]}
-            onOpen={onSelectImage}
-          />
-        </div>
-        <button
-          type="button"
-          className="style-explorer-toggle"
-          ref={actionToggleRef}
-          aria-expanded={actionBrowserOpen}
-          onClick={() => setActionBrowserOpen(!actionBrowserOpen)}
-        >
-          {actionBrowserOpen ? 'Back to result' : 'Choose action'}
-        </button>
-        <main
-          hidden={!actionBrowserOpen}
-          onKeyDown={(event) => {
-            if (event.key === 'Escape' && !event.defaultPrevented) {
-              event.stopPropagation();
-              setActionBrowserOpen(false);
-              actionToggleRef.current?.focus();
-            }
-          }}
-          data-recipe-stage
-          className="character-lab-panel z-10 flex min-h-0 flex-col overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl max-xl:min-h-[560px] max-sm:min-h-[500px]"
-          data-panel="main"
-        >
-          <div className="shrink-0 border-b border-[color:var(--wb-line)] p-2.5">
-            <div className="custom-scrollbar flex gap-1 overflow-x-auto pb-1">
-              {characterLabModes.map((mode) => {
-                const active = selectedMode === mode.id;
-                return (
-                  <button
-                    key={mode.id}
-                    type="button"
-                    title={mode.description}
-                    onClick={() => {
-                      setSelectedMode(mode.id);
-                      setAction(getFirstReadyActionForMode(mode.id));
-                    }}
-                    className={`character-lab-control-card flex h-10 min-w-[76px] flex-none items-center justify-center gap-1.5 rounded-lg border px-2 text-[8px] font-black transition-[background-color,border-color,color,transform] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
-                      active
-                        ? 'border-violet-400/2 bg-violet-500/10 text-[color:var(--wb-ink)]'
-                        : 'border-[color:var(--wb-line)] bg-black/25 text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:text-[color:var(--wb-ink)]'
-                    }`}
-                  >
-                    <CharacterLabIcon id={MODE_ICON_IDS[mode.id]} size={18} />
-                    <span className="min-w-0 truncate">{mode.label.replace(' Sheets', '')}</span>
-                  </button>
-                );
-              })}
-            </div>
-            <div className="mt-2 flex items-center gap-2">
-              <div className="relative min-w-0 flex-1">
-                <Search
-                  size={14}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--wb-dim)]"
-                  aria-hidden="true"
-                />
-                <input
-                  name="character-lab-action-search"
-                  aria-label="Search character actions"
-                  value={search}
-                  onChange={(event) => setSearch(event.target.value)}
-                  placeholder={`Search ${characterLabOptionCounts.total} actions`}
-                  className="h-9 w-full rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] pl-9 pr-3 text-[12px] text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)] transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-                />
-              </div>
-              <div className="shrink-0 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-1.5 text-right">
-                <div className="text-[9px] font-black tabular-nums text-[color:var(--wb-ink)]">
-                  {selectedModeReadyActions.length}/{selectedModeActions.length}
-                </div>
-                <div className="text-[7px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
-                  ready
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="min-h-0 flex-1 overflow-y-auto p-2.5 custom-scrollbar">
-            {filteredCategoryGroups.map(({ category, actions }) => {
-              const firstAction = actions[0];
-              const accent = firstAction ? getAccent(firstAction.accent) : getAccent('zinc');
-              const batchCount = actions.filter((action) => action.batchRecommended).length;
-
-              return (
-                <section key={category.id} className="mb-4 last:mb-0">
-                  <div className="mb-1.5 flex items-center gap-2">
-                    <div className={`flex min-w-0 flex-1 items-center gap-2 ${accent.text}`}>
-                      {firstAction && <CharacterLabIcon id={firstAction.id} size={22} />}
-                      <span className="truncate text-[11px] font-black uppercase tracking-wide">
-                        {category.label}
-                      </span>
-                      <span className="text-[9px] font-bold tabular-nums text-[color:var(--wb-dim)]">
-                        {actions.length}
-                      </span>
-                    </div>
-                    {batchCount > 0 && (
-                      <button
-                        type="button"
-                        onClick={() => runCategoryBatch(actions)}
-                        className="flex h-7 items-center gap-1 rounded-lg border border-violet-400/2 bg-violet-500/15 px-2 text-[8px] font-black uppercase tracking-wide text-violet-100 transition-[background-color,border-color] duration-150 hover:border-violet-300/2 hover:bg-violet-500/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-                      >
-                        <CharacterLabIcon id="control:batch" size={16} />
-                        Batch
-                      </button>
-                    )}
-                  </div>
-                  <div className="grid grid-cols-[repeat(auto-fit,minmax(124px,1fr))] gap-2">
-                    {actions.map((action) => (
-                      <ActionButton
-                        key={action.id}
-                        action={action}
-                        selected={action.id === selectedAction.id}
-                        onSelect={(action) => {
-                          setAction(action);
-                          setActionBrowserOpen(false);
-                          actionToggleRef.current?.focus();
-                        }}
-                      />
-                    ))}
-                  </div>
-                </section>
-              );
-            })}
-
-            {filteredCategoryGroups.length === 0 && (
-              <div className="rounded-xl border border-dashed border-[color:var(--wb-line)] p-6 text-center text-[11px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
-                No matching actions
-              </div>
-            )}
-          </div>
-        </main>
+        <RecipeResults />
 
         <RecipeControls>
           <aside
-            className="character-lab-panel relative z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl max-xl:min-h-[680px]"
+            className="character-lab-panel relative z-20 flex min-h-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl"
             data-panel="right"
           >
             <div className="shrink-0 border-b border-[color:var(--wb-line)] p-3">
               <div className="flex items-start gap-2.5">
                 <span
-                  className={`grid size-10 shrink-0 place-items-center rounded-lg border ${selectedAccent.border} ${selectedAccent.soft}`}
+                  className={`grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border ${selectedAccent.border} ${selectedAccent.soft}`}
                 >
                   <CharacterLabIcon id={selectedAction.id} size={32} />
                 </span>
                 <div className="min-w-0">
-                  <h2 className="text-[16px] font-black leading-tight text-balance text-[color:var(--wb-ink)]">
+                  <h2 className="text-[16px] font-semibold leading-tight text-balance text-[color:var(--wb-ink)]">
                     {workflowStateTitle}
                   </h2>
                   <p className="mt-1 text-[11px] leading-relaxed text-pretty text-[color:var(--wb-muted)]">
@@ -1392,64 +1356,22 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               </div>
             </div>
 
-            <div className="min-h-0 flex-1 overflow-y-auto p-2.5 pb-20 custom-scrollbar">
+            <div className="min-h-0 flex-1 overflow-y-auto p-2.5 custom-scrollbar">
               <div className="mt-2.5">
-                <details className="rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5">
+                <details className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5">
                   <summary>Compiled prompt</summary>
-                  <div className="mb-1.5 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                  <div className="mb-1.5 flex items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                     <FileText size={12} aria-hidden="true" />
                     Compiled prompt
                   </div>
-                  <p className="max-h-56 overflow-y-auto whitespace-pre-wrap text-[10px] leading-relaxed text-[color:var(--wb-muted)] custom-scrollbar">
+                  <p className="max-h-56 overflow-y-auto whitespace-pre-wrap text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-muted)] custom-scrollbar">
                     {selectedPrompt}
                   </p>
                 </details>
               </div>
 
-              {recentImages.length > 0 && (
-                <div className="mt-2.5">
-                  <div className="mb-1.5 flex items-center justify-between gap-2">
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
-                      Recent Outputs
-                    </div>
-                    <span className="text-[9px] font-black tabular-nums text-[color:var(--wb-dim)]">
-                      {recentImages.length}
-                    </span>
-                  </div>
-                  <div className="grid grid-cols-4 gap-1.5 max-sm:grid-cols-2">
-                    {recentImages.map((image) => (
-                      <div
-                        key={image.id}
-                        className="group relative aspect-square overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-xl"
-                      >
-                        <button
-                          type="button"
-                          onClick={() => onSelectImage(image)}
-                          className="size-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-                          aria-label="Open generated image"
-                        >
-                          <img
-                            src={image.thumbnail ?? image.preview ?? image.src}
-                            alt=""
-                            className="size-full object-cover opacity-90 transition-[opacity] duration-150 group-hover:opacity-100"
-                          />
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => onUseAsSource(image)}
-                          className="absolute inset-x-1 bottom-1 flex min-h-7 items-center justify-center gap-1 rounded-lg bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] opacity-0 transition-[opacity] duration-150 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-                        >
-                          <CharacterLabIcon id="control:use-as-source" size={14} />
-                          Source
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
               {capabilityNotice && (
-                <div className="mt-4 rounded-xl border border-amber-500/2 bg-amber-500/10 px-4 py-3 text-[12px] font-semibold text-amber-100">
+                <div className="mt-4 rounded-[var(--wb-radius)] border border-amber-500/2 bg-amber-500/10 px-4 py-3 text-[12px] font-semibold text-[color:var(--wb-warning)] ">
                   {capabilityNotice}
                 </div>
               )}
@@ -1461,9 +1383,9 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 onClick={() => runAction(selectedAction)}
                 data-character-lab-generate-button
                 data-generate-active={isGenerating ? 'true' : 'false'}
-                className="group relative flex min-h-11 w-full min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/2 bg-violet-500/20 px-3 py-2 text-left text-[color:var(--wb-ink)] shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/2 hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="studio-primary-control group relative min-h-11 w-full gap-2 py-2 text-left"
               >
-                <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-black">
+                <span className="grid size-8 shrink-0 place-items-center rounded-[var(--wb-radius)] bg-black">
                   {isGenerating ? (
                     <Loader2 size={15} className="animate-spin" />
                   ) : (
@@ -1471,10 +1393,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   )}
                 </span>
                 <span className="min-w-0">
-                  <span className="block truncate text-[10px] font-black uppercase tracking-widest">
+                  <span className="block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
                     {isGenerating ? 'Queue' : 'Generate'}
                   </span>
-                  <span className="mt-0.5 block truncate text-[8px] font-bold uppercase tracking-wider text-violet-200/70">
+                  <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-on-fill)]">
                     Current action
                   </span>
                 </span>

@@ -1,5 +1,5 @@
 import { useLinkedJobStatuses } from '../../hooks/useLinkedJobStatuses';
-import { RecipeControls, RecipePrimaryAction } from './RecipeWorkbenchContext';
+import { RecipeControls, RecipePrimaryAction, RecipeOptionsPanel } from './RecipeWorkbenchContext';
 import React from 'react';
 import {
   IconAlertTriangle as AlertTriangle,
@@ -99,23 +99,26 @@ function getParams(recipeParams: ImageGenerationConfig['recipeParams']) {
 
 function getFrameTone(frame: Pick<AnimationSequenceFrameState, 'status'> | null | undefined) {
   if (!frame) return 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)]';
-  if (frame.status === 'blocked') return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
+  if (frame.status === 'blocked')
+    return 'border-rose-500/2 bg-rose-500/10 text-[color:var(--wb-danger)] ';
   if (frame.status === 'generated') {
-    return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
+    return 'border-emerald-500/2 bg-emerald-500/10 text-[color:var(--wb-success)] ';
   }
   if (frame.status === 'generating' || frame.status === 'correcting') {
-    return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
+    return 'border-sky-500/2 bg-sky-500/10 text-[color:var(--wb-info)] ';
   }
   return 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-ink)]';
 }
 
 function getRunTone(status: AnimationSequenceRun['status'] | null | undefined) {
-  if (status === 'blocked') return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
-  if (status === 'qa_passed') return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
+  if (status === 'blocked')
+    return 'border-rose-500/2 bg-rose-500/10 text-[color:var(--wb-danger)] ';
+  if (status === 'qa_passed')
+    return 'border-emerald-500/2 bg-emerald-500/10 text-[color:var(--wb-success)] ';
   if (status === 'exported' || status === 'ready_for_review') {
-    return 'border-amber-500/2 bg-amber-500/10 text-amber-200';
+    return 'border-amber-500/2 bg-amber-500/10 text-[color:var(--wb-warning)] ';
   }
-  return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
+  return 'border-sky-500/2 bg-sky-500/10 text-[color:var(--wb-info)] ';
 }
 
 function frameMatchesRun(image: GeneratedImageWithConfig, runId: string, frameId: string) {
@@ -158,7 +161,9 @@ function NumberField({
 }) {
   return (
     <label className="grid gap-1.5">
-      <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">{label}</span>
+      <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+        {label}
+      </span>
       <input
         type="number"
         min={min}
@@ -168,7 +173,7 @@ function NumberField({
           const nextValue = parseBoundedNumberInput(event.target.value, min, max);
           if (nextValue !== null) onChange(nextValue);
         }}
-        className="h-9 rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
+        className="h-9 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
       />
     </label>
   );
@@ -187,11 +192,13 @@ function SelectField({
 }) {
   return (
     <label className="grid gap-1.5">
-      <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">{label}</span>
+      <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+        {label}
+      </span>
       <select
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="h-9 rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-xs font-bold uppercase tracking-wide text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
+        className="h-9 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-xs font-bold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
       >
         {options.map((option) => (
           <option key={option} value={option}>
@@ -217,9 +224,9 @@ function ToggleField({
       type="button"
       onClick={() => onChange(!value)}
       aria-pressed={value}
-      className={`flex h-9 items-center justify-between rounded-md border px-2 text-[10px] font-black uppercase tracking-widest transition-colors ${
+      className={`flex h-9 items-center justify-between rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-colors ${
         value
-          ? 'border-amber-400/2 bg-amber-500/10 text-amber-100'
+          ? 'border-amber-400/2 bg-amber-500/10 text-[color:var(--wb-warning)] '
           : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-muted)]'
       }`}
     >
@@ -247,9 +254,9 @@ function ActionButton({
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className={`inline-flex h-9 items-center justify-center gap-2 rounded-md border px-3 text-[10px] font-black uppercase tracking-widest transition-[background-color,border-color,color,opacity] disabled:cursor-not-allowed disabled:opacity-45 ${
+      className={`inline-flex h-9 items-center justify-center gap-2 rounded-[var(--wb-radius)] border px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[background-color,border-color,color,opacity] disabled:cursor-not-allowed disabled:opacity-45 ${
         tone === 'primary'
-          ? 'border-amber-400/2 bg-amber-500/15 text-amber-100 hover:bg-amber-500/20'
+          ? 'studio-primary-control'
           : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-white/[0.07]'
       } ${className}`}
     >
@@ -578,28 +585,128 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
   return (
     <div className="studio-surface flex h-full min-h-0 flex-col bg-[color:var(--wb-panel)] text-[color:var(--wb-ink)]">
-      <div
-        data-animation-workbench="true"
-        className="custom-scrollbar grid min-h-0 flex-1 grid-cols-1 gap-2 overflow-y-auto p-3 lg:grid-cols-[18rem_minmax(0,1fr)] xl:grid-cols-[20rem_minmax(0,1fr)_24rem] xl:overflow-hidden"
-      >
+      <div data-animation-workbench="true" className="recipe-run-stage">
+        <RecipeOptionsPanel title="Frame details">
+          <aside className="flex min-h-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] lg:col-span-2 xl:col-span-1 xl:min-h-0">
+            <div className="border-b border-[color:var(--wb-line)] p-3">
+              <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+                Frame Inspector
+              </div>
+              <h3 className="mt-1 truncate text-sm font-semibold text-[color:var(--wb-ink)]">
+                {selectedFrame?.id ?? selectedPlanFrame?.id ?? 'No frame'}
+              </h3>
+            </div>
+
+            <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
+              <textarea
+                aria-label="Animation frame prompt"
+                value={
+                  isPromptLoading
+                    ? 'Loading prompt...'
+                    : promptLoadError
+                      ? ''
+                      : !activeRun && !prompt.trim()
+                        ? 'Enter a motion prompt to preview frame instructions.'
+                        : selectedPrompt
+                }
+                readOnly
+                rows={12}
+                aria-describedby={promptLoadError ? 'animation-frame-prompt-error' : undefined}
+                className="w-full resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 font-mono text-[11px] leading-relaxed text-[color:var(--wb-ink)] outline-none"
+              />
+
+              {promptLoadError ? (
+                <div
+                  id="animation-frame-prompt-error"
+                  role="alert"
+                  className="mt-2 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 p-2 text-xs text-[color:var(--wb-danger)] "
+                >
+                  <div>{promptLoadError}</div>
+                  <button
+                    type="button"
+                    onClick={() => setPromptReloadVersion((version) => version + 1)}
+                    className="mt-2 h-8 rounded-[var(--wb-radius)] border border-rose-400/2 bg-rose-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] "
+                  >
+                    Retry prompt
+                  </button>
+                </div>
+              ) : null}
+
+              <div className="mt-3 grid gap-2">
+                <ActionButton
+                  tone="primary"
+                  onClick={() => generateFrame(false)}
+                  disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
+                >
+                  <Play size={13} />
+                  Generate
+                </ActionButton>
+                <ActionButton
+                  onClick={() => generateFrame(true)}
+                  disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
+                >
+                  <Sparkles size={13} />
+                  Correct
+                </ActionButton>
+                <ActionButton onClick={attachSelectedGeneratedFrame} disabled={!activeRun || busy}>
+                  <RefreshCw size={13} />
+                  Attach
+                </ActionButton>
+              </div>
+
+              {activeRun && selectedFrame ? (
+                <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2 text-[length:var(--wbp-label)] text-[color:var(--wb-muted)]">
+                  <div className="flex justify-between gap-2">
+                    <span>Job status</span>
+                    <span className="font-semibold text-[color:var(--wb-ink)]">
+                      {selectedFrame.jobId
+                        ? (linkedJobs[selectedFrame.jobId] ?? 'Checking job')
+                        : FRAME_STATUS_LABELS[selectedFrame.status]}
+                    </span>
+                  </div>
+                  <div className="mt-1 flex justify-between gap-2">
+                    <span>Catalog</span>
+                    <span className="truncate font-mono text-[color:var(--wb-ink)]">
+                      {selectedFrame.catalogImageId ?? 'none'}
+                    </span>
+                  </div>
+                  {selectedFrame.catalogImageId && onSelectImage ? (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const image = images.find(
+                          (item) => item.id === selectedFrame.catalogImageId,
+                        );
+                        if (image) onSelectImage(image);
+                      }}
+                      className="mt-2 h-8 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]"
+                    >
+                      Preview
+                    </button>
+                  ) : null}
+                </div>
+              ) : null}
+            </div>
+          </aside>
+        </RecipeOptionsPanel>
         <RecipeControls>
-          <aside className="flex min-h-[34rem] flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:min-h-0">
+          <aside className="flex min-h-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:min-h-0">
             <details open={!activeRun} className="recipe-draft-settings">
               <summary>New sequence configuration</summary>
               <div className="border-b border-[color:var(--wb-line)] p-3">
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
-                    <div className="text-[10px] font-black uppercase tracking-widest text-amber-300">
+                    <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)] ">
                       New sequence draft
                     </div>
-                    <h2 className="mt-1 truncate text-base font-black text-[color:var(--wb-ink)]">
+                    <h2 className="mt-1 truncate text-base font-semibold text-[color:var(--wb-ink)]">
                       Frame Sequence
                     </h2>
                     <p className="mt-1 truncate text-xs text-[color:var(--wb-muted)]">
                       {contract.frameCount} frames / {contract.fps} fps / GIF
                     </p>
                   </div>
-                  <span className="grid size-10 shrink-0 place-items-center rounded-lg border border-amber-400/2 bg-amber-500/10 text-amber-200">
+                  <span className="grid size-10 shrink-0 place-items-center rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/10 text-[color:var(--wb-warning)] ">
                     <Gif size={20} />
                   </span>
                 </div>
@@ -607,7 +714,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
               <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
                 <label className="grid gap-1.5">
-                  <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                  <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                     Motion Prompt
                   </span>
                   <textarea
@@ -616,7 +723,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     rows={5}
                     placeholder="Describe motion, timing, camera, and the visual anchor to preserve."
                     aria-describedby={!prompt.trim() ? 'animation-prompt-requirement' : undefined}
-                    className="resize-none rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-sm text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
+                    className="resize-none rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-sm text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
                   />
                 </label>
 
@@ -657,14 +764,14 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     onChange={(value) => setParam('continuity', value)}
                   />
                   <label className="grid gap-1.5">
-                    <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                    <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                       Matte
                     </span>
                     <input
                       type="color"
                       value={contract.matteColor}
                       onChange={(event) => setParam('matteColor', event.target.value)}
-                      className="h-9 w-full rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)]"
+                      className="h-9 w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)]"
                     />
                   </label>
                 </div>
@@ -701,7 +808,10 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 )}
 
                 {!prompt.trim() ? (
-                  <p id="animation-prompt-requirement" className="mt-2 text-[11px] text-[color:var(--wb-muted)]">
+                  <p
+                    id="animation-prompt-requirement"
+                    className="mt-2 text-[11px] text-[color:var(--wb-muted)]"
+                  >
                     A motion prompt is required to prepare a run.
                   </p>
                 ) : null}
@@ -709,14 +819,14 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
             </details>
             <div className="p-3">
               <div className="mt-4">
-                <div className="mb-2 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   Recent runs
                 </div>
                 <div className="grid gap-2">
                   {isRunsLoading ? (
                     <div
                       role="status"
-                      className="rounded-md border border-[color:var(--wb-line)] px-3 py-4 text-xs text-[color:var(--wb-muted)]"
+                      className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-3 py-4 text-xs text-[color:var(--wb-muted)]"
                     >
                       Loading runs...
                     </div>
@@ -724,20 +834,20 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   {!isRunsLoading && runsLoadError ? (
                     <div
                       role="alert"
-                      className="rounded-md border border-rose-500/2 bg-rose-500/10 p-3 text-xs text-rose-200"
+                      className="rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 p-3 text-xs text-[color:var(--wb-danger)] "
                     >
                       <div>{runsLoadError}</div>
                       <button
                         type="button"
                         onClick={() => void refreshRuns().catch(() => {})}
-                        className="mt-2 h-8 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
+                        className="mt-2 h-8 rounded-[var(--wb-radius)] border border-rose-400/2 bg-rose-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] "
                       >
                         Retry runs
                       </button>
                     </div>
                   ) : null}
                   {!isRunsLoading && !runsLoadError && runs.length === 0 ? (
-                    <div className="rounded-md border border-dashed border-[color:var(--wb-line)] px-3 py-4 text-xs leading-relaxed text-[color:var(--wb-dim)]">
+                    <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] px-3 py-4 text-xs leading-relaxed text-[color:var(--wb-dim)]">
                       Prepared runs will appear here and remain available after refresh.
                     </div>
                   ) : null}
@@ -747,21 +857,23 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       type="button"
                       onClick={() => setActiveRun(run)}
                       aria-pressed={activeRun?.id === run.id}
-                      className={`rounded-md border p-2 text-left transition-colors ${
+                      className={`rounded-[var(--wb-radius)] border p-2 text-left transition-colors ${
                         activeRun?.id === run.id
                           ? 'border-amber-400/2 bg-amber-500/10'
                           : 'border-[color:var(--wb-line)] bg-white/[0.035] hover:border-[color:var(--wb-border)]'
                       }`}
                     >
                       <div className="flex items-center justify-between gap-2">
-                        <span className="truncate text-xs font-black text-[color:var(--wb-ink)]">{run.title}</span>
+                        <span className="truncate text-xs font-semibold text-[color:var(--wb-ink)]">
+                          {run.title}
+                        </span>
                         <span
-                          className={`rounded px-1.5 py-0.5 text-[8px] font-black uppercase ${getRunTone(run.status)}`}
+                          className={`rounded px-1.5 py-0.5 text-[length:var(--wbp-label)] font-semibold ${getRunTone(run.status)}`}
                         >
                           {STATUS_LABELS[run.status]}
                         </span>
                       </div>
-                      <div className="mt-1 truncate font-mono text-[10px] text-[color:var(--wb-dim)]">
+                      <div className="mt-1 truncate font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-dim)]">
                         {run.id}
                       </div>
                     </button>
@@ -774,14 +886,14 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
         <main
           data-recipe-stage
-          className="flex min-h-[40rem] flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:min-h-0"
+          className="flex min-h-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:min-h-0"
         >
           <div className="flex items-center justify-between gap-3 border-b border-[color:var(--wb-line)] p-3">
             <div className="min-w-0">
-              <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+              <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                 {activeRun ? 'Selected sequence' : 'New sequence draft'}
               </div>
-              <h3 className="truncate text-sm font-black text-[color:var(--wb-ink)]">
+              <h3 className="truncate text-sm font-semibold text-[color:var(--wb-ink)]">
                 {activeRun?.title ?? 'Draft plan'}
               </h3>
             </div>
@@ -811,7 +923,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
           <div className="grid min-h-0 flex-1 grid-rows-[minmax(0,1fr)_auto] overflow-hidden">
             <div className="custom-scrollbar overflow-y-auto p-3">
               {activeRun && gifExport ? (
-                <div className="mb-3 overflow-hidden rounded-lg border border-emerald-500/2 bg-emerald-500/10">
+                <div className="mb-3 overflow-hidden rounded-[var(--wb-radius)] border border-emerald-500/2 bg-emerald-500/10">
                   <img
                     src={`${getAnimationSequenceGifUrl(activeRun.id)}?t=${encodeURIComponent(activeRun.updatedAt)}`}
                     alt="Exported animation preview"
@@ -819,7 +931,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   />
                 </div>
               ) : (
-                <div className="mb-3 grid min-h-[220px] place-items-center rounded-lg border border-[color:var(--wb-line)] bg-white/[0.025] text-center">
+                <div className="mb-3 grid min-h-[220px] place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.025] text-center">
                   <div>
                     <Gif size={44} className="mx-auto text-[color:var(--wb-dim)]" />
                     <p className="mt-3 text-xs font-bold text-[color:var(--wb-muted)]">
@@ -829,7 +941,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 </div>
               )}
 
-              <div className="grid grid-cols-2 gap-2 md:grid-cols-4 xl:grid-cols-6">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(112px,1fr))] gap-2">
                 {framePlan.frames.map((planFrame) => {
                   const state =
                     activeRun?.frames.find((frame) => frame.id === planFrame.id) ?? null;
@@ -850,7 +962,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       onClick={() => setSelectedFrameId(planFrame.id)}
                       aria-label={`Select ${frameLabel}, ${frameStatus}`}
                       aria-pressed={selected}
-                      className={`group min-h-28 overflow-hidden rounded-lg border text-left transition-colors ${
+                      className={`group min-h-28 overflow-hidden rounded-[var(--wb-radius)] border text-left transition-colors ${
                         selected ? 'border-amber-400/2 bg-amber-500/10' : getFrameTone(state)
                       }`}
                     >
@@ -873,8 +985,10 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                         )}
                       </div>
                       <div className="p-2">
-                        <div className="font-mono text-[10px] font-black">{frameLabel}</div>
-                        <div className="mt-0.5 truncate text-[8px] font-black uppercase tracking-widest opacity-70">
+                        <div className="font-mono text-[length:var(--wbp-label)] font-semibold">
+                          {frameLabel}
+                        </div>
+                        <div className="mt-0.5 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal opacity-70">
                           {frameStatus}
                         </div>
                       </div>
@@ -886,13 +1000,19 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
             <div className="border-t border-[color:var(--wb-line)] p-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <div className="flex flex-wrap items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
+                <div className="flex flex-wrap items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
                   <span>
                     {generatedCount}/{activeRun?.frames.length ?? contract.frameCount} frames
                   </span>
                   <span>{executionLabel}</span>
                   {activeRun?.qa ? (
-                    <span className={activeRun.qa.ok ? 'text-emerald-300' : 'text-rose-300'}>
+                    <span
+                      className={
+                        activeRun.qa.ok
+                          ? 'text-[color:var(--wb-success)] '
+                          : 'text-[color:var(--wb-danger)] '
+                      }
+                    >
                       QA {activeRun.qa.ok ? 'OK' : 'Issues'}
                     </span>
                   ) : null}
@@ -906,10 +1026,10 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 <div
                   role={error ? 'alert' : 'status'}
                   aria-live={error ? 'assertive' : 'polite'}
-                  className={`mt-2 flex items-center gap-2 rounded-md border px-2 py-1.5 text-xs ${
+                  className={`mt-2 flex items-center gap-2 rounded-[var(--wb-radius)] border px-2 py-1.5 text-xs ${
                     error
-                      ? 'border-rose-500/2 bg-rose-500/10 text-rose-200'
-                      : 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200'
+                      ? 'border-rose-500/2 bg-rose-500/10 text-[color:var(--wb-danger)] '
+                      : 'border-emerald-500/2 bg-emerald-500/10 text-[color:var(--wb-success)] '
                   }`}
                 >
                   {error ? <AlertTriangle size={14} /> : <Check size={14} />}
@@ -919,110 +1039,6 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
             </div>
           </div>
         </main>
-
-        <RecipeControls>
-          <aside className="flex min-h-[30rem] flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] lg:col-span-2 xl:col-span-1 xl:min-h-0">
-            <div className="border-b border-[color:var(--wb-line)] p-3">
-              <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
-                Frame Inspector
-              </div>
-              <h3 className="mt-1 truncate text-sm font-black text-[color:var(--wb-ink)]">
-                {selectedFrame?.id ?? selectedPlanFrame?.id ?? 'No frame'}
-              </h3>
-            </div>
-
-            <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
-              <textarea
-                aria-label="Animation frame prompt"
-                value={
-                  isPromptLoading
-                    ? 'Loading prompt...'
-                    : promptLoadError
-                      ? ''
-                      : !activeRun && !prompt.trim()
-                        ? 'Enter a motion prompt to preview frame instructions.'
-                        : selectedPrompt
-                }
-                readOnly
-                rows={12}
-                aria-describedby={promptLoadError ? 'animation-frame-prompt-error' : undefined}
-                className="w-full resize-none rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 font-mono text-[11px] leading-relaxed text-[color:var(--wb-ink)] outline-none"
-              />
-
-              {promptLoadError ? (
-                <div
-                  id="animation-frame-prompt-error"
-                  role="alert"
-                  className="mt-2 rounded-md border border-rose-500/2 bg-rose-500/10 p-2 text-xs text-rose-200"
-                >
-                  <div>{promptLoadError}</div>
-                  <button
-                    type="button"
-                    onClick={() => setPromptReloadVersion((version) => version + 1)}
-                    className="mt-2 h-8 rounded-md border border-rose-400/2 bg-rose-500/10 px-3 text-[10px] font-black uppercase tracking-widest text-rose-100"
-                  >
-                    Retry prompt
-                  </button>
-                </div>
-              ) : null}
-
-              <div className="mt-3 grid gap-2">
-                <ActionButton
-                  tone="primary"
-                  onClick={() => generateFrame(false)}
-                  disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
-                >
-                  <Play size={13} />
-                  Generate
-                </ActionButton>
-                <ActionButton
-                  onClick={() => generateFrame(true)}
-                  disabled={!activeRun || !selectedPlanFrame || !isSelectedPromptReady || busy}
-                >
-                  <Sparkles size={13} />
-                  Correct
-                </ActionButton>
-                <ActionButton onClick={attachSelectedGeneratedFrame} disabled={!activeRun || busy}>
-                  <RefreshCw size={13} />
-                  Attach
-                </ActionButton>
-              </div>
-
-              {activeRun && selectedFrame ? (
-                <div className="mt-3 rounded-md border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2 text-[10px] text-[color:var(--wb-muted)]">
-                  <div className="flex justify-between gap-2">
-                    <span>Job status</span>
-                    <span className="font-black uppercase text-[color:var(--wb-ink)]">
-                      {selectedFrame.jobId
-                        ? (linkedJobs[selectedFrame.jobId] ?? 'Checking job')
-                        : FRAME_STATUS_LABELS[selectedFrame.status]}
-                    </span>
-                  </div>
-                  <div className="mt-1 flex justify-between gap-2">
-                    <span>Catalog</span>
-                    <span className="truncate font-mono text-[color:var(--wb-ink)]">
-                      {selectedFrame.catalogImageId ?? 'none'}
-                    </span>
-                  </div>
-                  {selectedFrame.catalogImageId && onSelectImage ? (
-                    <button
-                      type="button"
-                      onClick={() => {
-                        const image = images.find(
-                          (item) => item.id === selectedFrame.catalogImageId,
-                        );
-                        if (image) onSelectImage(image);
-                      }}
-                      className="mt-2 h-8 w-full rounded-md border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]"
-                    >
-                      Preview
-                    </button>
-                  ) : null}
-                </div>
-              ) : null}
-            </div>
-          </aside>
-        </RecipeControls>
       </div>
     </div>
   );

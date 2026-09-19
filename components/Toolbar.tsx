@@ -109,6 +109,8 @@ export interface ToolbarProps {
   onOpenSettings?: () => void;
   activeRecipe?: ImageGenerationConfig['recipeId'];
   mode?: 'full' | 'context-only';
+  railTools?: React.ReactNode;
+  railAction?: React.ReactNode;
   layout?: 'dock' | 'rail';
 }
 
@@ -193,6 +195,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     onOpenSettings,
     activeRecipe = null,
     mode = 'full',
+    railTools,
+    railAction,
     layout = 'dock',
   }) => {
     const { addToast } = useToastUi();
@@ -537,7 +541,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const currentSizes = executionImageSizeOptions;
 
     const btnClass =
-      'studio-ghost-control h-10 min-h-10 w-full touch-manipulation sm:w-auto flex items-center justify-center gap-2 px-3 text-[10px] font-black uppercase leading-none tracking-[0.18em] transition-[color,background-color,border-color,opacity,transform] hover:text-[color:var(--wb-ink)] active:scale-95 disabled:opacity-30 group whitespace-nowrap cursor-pointer';
+      'studio-ghost-control h-10 min-h-10 w-full touch-manipulation sm:w-auto flex items-center justify-center gap-2 px-3 text-[length:var(--wbp-label)] font-semibold leading-none tracking-normal transition-[color,background-color,border-color,opacity,transform] hover:text-[color:var(--wb-ink)] active:scale-95 disabled:opacity-30 group whitespace-nowrap cursor-pointer';
     const iconBtnClass =
       'studio-ghost-control size-10 min-w-10 flex-shrink-0 touch-manipulation flex items-center justify-center transition-[color,background-color,border-color,opacity,transform] hover:text-[color:var(--wb-ink)] active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
     const activeIconBtnClass =
@@ -689,6 +693,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
           {isRail ? (
             <div className="create-tool-scroll min-h-0 flex-1" onScroll={() => closeAllMenus()}>
+              {railTools}
               {isContextOnly ? (
                 <>
                   <section className="create-tool-block" aria-label="Attachments">
@@ -796,7 +801,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           >
                             <label
                               htmlFor="rail-magic-edit-input"
-                              className="mb-2 block text-[10px] font-bold tracking-wide text-zinc-500"
+                              className="mb-2 block text-[length:var(--wbp-label)] font-bold tracking-normal text-zinc-500"
                             >
                               Instructions to Edit
                             </label>
@@ -810,14 +815,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                 autoComplete="off"
                                 onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
                                 aria-label="Edit instructions"
-                                className="h-10 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
+                                className="h-10 flex-1 rounded-[var(--wb-radius)] border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
                               />
                               <button
                                 type="button"
                                 onClick={handleMagicEdit}
                                 disabled={isRefactoring}
                                 aria-label="Apply edit instructions"
-                                className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
+                                className="flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
                               >
                                 {isRefactoring ? (
                                   <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
@@ -879,7 +884,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       }}
                     >
                       {showQuickStartErrorText ? (
-                        <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200">
+                        <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)]">
                           Add prompt or image to generate
                         </div>
                       ) : null}
@@ -1191,7 +1196,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 className={`studio-field flex min-h-9 items-end gap-1.5 p-1 px-2 transition-colors duration-300 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
               >
                 {showQuickStartErrorText && (
-                  <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200 animate-in fade-in-0 slide-in-from-bottom-1 duration-150">
+                  <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] animate-in fade-in-0 slide-in-from-bottom-1 duration-150">
                     Add prompt or image to generate
                   </div>
                 )}
@@ -1220,19 +1225,19 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     data-active-recipe-card={activeRecipeIndicator.id}
                     aria-label={`Active recipe: ${activeRecipeIndicator.title}. ${activeRecipeIndicator.summary}.`}
                     title={`${activeRecipeIndicator.title}: ${activeRecipeIndicator.summary}`}
-                    className={`group flex h-10 min-h-10 min-w-[6rem] max-w-[10.75rem] flex-[0_1_10.75rem] items-center gap-1.5 overflow-hidden rounded-xl border px-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-[border-color,background-color,box-shadow] hover:shadow-[0_0_18px_rgba(255,255,255,0.05)] sm:flex-[0_0_10.75rem] ${activeRecipeIndicator.toneClassName}`}
+                    className={`group flex h-10 min-h-10 min-w-[6rem] max-w-[10.75rem] flex-[0_1_10.75rem] items-center gap-1.5 overflow-hidden rounded-[var(--wb-radius)] border px-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-[border-color,background-color,box-shadow] hover:shadow-[0_0_18px_rgba(255,255,255,0.05)] sm:flex-[0_0_10.75rem] ${activeRecipeIndicator.toneClassName}`}
                   >
                     <span
-                      className={`h-5 w-1 shrink-0 rounded-[2px] shadow-[0_0_12px_currentColor] ${activeRecipeIndicator.dotClassName}`}
+                      className={`h-5 w-1 shrink-0 rounded-[var(--wb-radius)] shadow-[0_0_12px_currentColor] ${activeRecipeIndicator.dotClassName}`}
                     />
                     <span className="min-w-0">
-                      <span className="block text-[10px] font-black uppercase leading-none tracking-[0.12em] opacity-60">
+                      <span className="block text-[length:var(--wbp-label)] font-semibold leading-none tracking-[0.12em] opacity-60">
                         Recipe
                       </span>
-                      <span className="block truncate text-[11px] font-black uppercase leading-tight tracking-[0.06em] text-[color:var(--wb-ink)]">
+                      <span className="block truncate text-[11px] font-semibold leading-tight tracking-[0.06em] text-[color:var(--wb-ink)]">
                         {activeRecipeIndicator.title}
                       </span>
-                      <span className="block truncate text-[10px] font-medium leading-none opacity-70">
+                      <span className="block truncate text-[length:var(--wbp-label)] font-medium leading-none opacity-70">
                         {activeRecipeIndicator.summary}
                       </span>
                     </span>
@@ -1273,7 +1278,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         aria-label="Open negative prompt"
                         aria-haspopup="dialog"
                         aria-expanded={isNegativeOpen}
-                        className={`${iconBtnClass} ${isNegativeOpen || generationConfig.negativePrompt ? 'text-red-400' : ''}`}
+                        className={`${iconBtnClass} ${isNegativeOpen || generationConfig.negativePrompt ? 'text-[color:var(--wb-danger)]' : ''}`}
                       >
                         <Ban size={15} />
                         {generationConfig.negativePrompt && (
@@ -1294,7 +1299,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     >
                       <label
                         htmlFor="negative-prompt-input"
-                        className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
+                        className="text-[length:var(--wbp-label)] font-bold text-zinc-500 tracking-normal block mb-2"
                       >
                         Exclude from Image
                       </label>
@@ -1307,7 +1312,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         autoComplete="off"
                         ref={(el) => el?.focus()}
                         aria-label="Negative prompt"
-                        className="h-10 w-full rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
+                        className="h-10 w-full rounded-[var(--wb-radius)] border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
                       />
                     </DemandMountedGsapDropdown>
                   </div>
@@ -1345,7 +1350,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         >
                           <label
                             htmlFor="magic-edit-input"
-                            className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
+                            className="text-[length:var(--wbp-label)] font-bold text-zinc-500 tracking-normal block mb-2"
                           >
                             Instructions to Edit
                           </label>
@@ -1360,14 +1365,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                               ref={(el) => el?.focus()}
                               onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
                               aria-label="Edit instructions"
-                              className="h-10 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
+                              className="h-10 flex-1 rounded-[var(--wb-radius)] border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
                             />
                             <button
                               type="button"
                               onClick={handleMagicEdit}
                               disabled={isRefactoring}
                               aria-label="Apply edit instructions"
-                              className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
+                              className="flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
                             >
                               {isRefactoring ? (
                                 <div className="size-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
@@ -1452,7 +1457,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     : 'flex items-center justify-between border-b border-white/2 pb-2 sm:hidden'
                 }
               >
-                <div className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                <div className="text-[length:var(--wbp-label)] font-semibold tracking-[0.16em] text-zinc-500">
                   {isContextOnly ? 'Frame context' : 'Generation'}
                 </div>
                 <button
@@ -1462,18 +1467,18 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     setIsMobileControlsOpen(false);
                   }}
                   aria-label="Close generation controls"
-                  className="flex size-10 items-center justify-center rounded-xl border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+                  className="flex size-10 items-center justify-center rounded-[var(--wb-radius)] border border-white/2 bg-white/5 text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
                 >
                   <X size={14} />
                 </button>
               </div>
 
               {showCodexPromptTools && !isContextOnly && !isRail ? (
-                <div className="grid gap-2 rounded-xl border border-white/2 bg-white/[0.03] p-2 sm:hidden">
+                <div className="grid gap-2 rounded-[var(--wb-radius)] border border-white/2 bg-white/[0.03] p-2 sm:hidden">
                   <div className="grid gap-1.5">
                     <label
                       htmlFor="mobile-negative-prompt-input"
-                      className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                      className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500"
                     >
                       Negative
                     </label>
@@ -1485,13 +1490,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       placeholder="Blurry, low quality, distortion..."
                       autoComplete="off"
                       aria-label="Negative prompt"
-                      className="h-10 rounded-xl border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
+                      className="h-10 rounded-[var(--wb-radius)] border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
                     />
                   </div>
                   <div className="grid gap-1.5">
                     <label
                       htmlFor="mobile-magic-edit-input"
-                      className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                      className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500"
                     >
                       Refine
                     </label>
@@ -1505,14 +1510,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         autoComplete="off"
                         onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
                         aria-label="Edit instructions"
-                        className="h-10 min-w-0 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
+                        className="h-10 min-w-0 flex-1 rounded-[var(--wb-radius)] border border-white/2 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
                       />
                       <button
                         type="button"
                         onClick={handleMagicEdit}
                         disabled={isRefactoring}
                         aria-label="Apply edit instructions"
-                        className="flex size-10 items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:opacity-50"
+                        className="flex size-10 items-center justify-center rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:opacity-50"
                       >
                         {isRefactoring ? (
                           <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
@@ -1528,7 +1533,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       onClick={onEnhancePrompt}
                       disabled={isEnhancingPrompt}
                       aria-label="Enhance prompt"
-                      className="flex h-10 items-center justify-center gap-2 rounded-xl border border-white/2 bg-white/5 text-[10px] font-black uppercase leading-none tracking-[0.18em] text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
+                      className="flex h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-white/2 bg-white/5 text-[length:var(--wbp-label)] font-semibold leading-none tracking-normal text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-50"
                     >
                       {isEnhancingPrompt ? (
                         <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
@@ -1583,14 +1588,16 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           }}
                           onMouseEnter={() => setPreviewRatio(option.ratio)}
                           title={`${option.label}: ${option.size}`}
-                          className={`aspect-square rounded-xl flex flex-col items-center justify-center gap-1 transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                          className={`aspect-square rounded-[var(--wb-radius)] flex flex-col items-center justify-center gap-1 transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                             generationConfig.aspectRatio === option.ratio
                               ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/2 text-white shadow-lg'
                               : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
                           }`}
                         >
                           <AspectRatioIcon ratio={option.ratio} />
-                          <span className="text-[8px] font-black">{option.ratio}</span>
+                          <span className="text-[length:var(--wbp-label)] font-semibold">
+                            {option.ratio}
+                          </span>
                           <span className="text-[6px] font-bold text-zinc-500">{option.size}</span>
                         </button>
                       ))}
@@ -1636,10 +1643,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             handleSelectExecutionImageSize(option.tier);
                             setIsSizeOpen(false);
                           }}
-                          className={`min-h-10 w-full rounded-xl px-3 text-left text-[10px] font-black transition-[color,background-color,border-color,opacity,transform] ${selectedExecutionImageSize?.tier === option.tier ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white' : 'text-zinc-400 hover:bg-white/10'}`}
+                          className={`min-h-10 w-full rounded-[var(--wb-radius)] px-3 text-left text-[length:var(--wbp-label)] font-semibold transition-[color,background-color,border-color,opacity,transform] ${selectedExecutionImageSize?.tier === option.tier ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white' : 'text-zinc-400 hover:bg-white/10'}`}
                         >
                           {option.tier}
-                          <span className="mt-0.5 block text-[8px] font-bold tracking-normal text-zinc-500">
+                          <span className="mt-0.5 block text-[length:var(--wbp-label)] font-bold tracking-normal text-zinc-500">
                             {option.width}×{option.height}
                           </span>
                         </button>
@@ -1685,7 +1692,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             updateConfig('batchCount', count);
                             setIsBatchOpen(false);
                           }}
-                          className={`flex size-10 touch-manipulation items-center justify-center rounded-xl text-[10px] font-black transition-[color,background-color,border-color,opacity,transform] ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/2 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
+                          className={`flex size-10 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] text-[length:var(--wbp-label)] font-semibold transition-[color,background-color,border-color,opacity,transform] ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/2 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
                         >
                           {count}
                         </button>
@@ -1734,7 +1741,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             <span className="create-engine-name">{executionChipLabel}</span>
                           </span>
                         ) : (
-                          <span className="min-w-0 truncate text-[8px]">{executionSummary}</span>
+                          <span className="min-w-0 truncate text-[length:var(--wbp-label)]">
+                            {executionSummary}
+                          </span>
                         )}
                         {isRail ? <ChevronDown size={12} aria-hidden="true" /> : null}
                       </button>
@@ -1751,10 +1760,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       >
                         <div className="mb-3 flex items-center justify-between gap-3">
                           <div className="min-w-0">
-                            <div className="text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                            <div className="text-[length:var(--wbp-label)] font-semibold tracking-[0.16em] text-zinc-500">
                               Execution
                             </div>
-                            <div className="mt-1 truncate text-xs font-black uppercase tracking-wide text-zinc-100">
+                            <div className="mt-1 truncate text-xs font-semibold tracking-normal text-zinc-100">
                               {formatCodexModelLabel(
                                 selectedExecutionModel?.id ?? generationConfig.executionModel,
                                 selectedExecutionModel?.displayName,
@@ -1765,7 +1774,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             {isLoadingCodexModelCatalog && (
                               <Loader2 size={12} className="animate-spin text-accent-300" />
                             )}
-                            <div className="text-[9px] font-black uppercase tracking-[0.12em] text-zinc-500">
+                            <div className="text-[length:var(--wbp-label)] font-semibold tracking-[0.12em] text-zinc-500">
                               {selectedCodexTransport === 'subscription_http'
                                 ? (selectedExecutionImageModel?.shortName ?? 'Image')
                                 : codexModelCatalog?.source === 'fallback'
@@ -1779,7 +1788,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           <section aria-labelledby="codex-execution-provider-label">
                             <div
                               id="codex-execution-provider-label"
-                              className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                              className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500"
                             >
                               Provider
                             </div>
@@ -1803,7 +1812,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                     title={option.accessibleLabel}
                                     disabled={!isAvailable}
                                     onClick={() => handleSelectExecutionTransport(option.id)}
-                                    className={`flex min-h-[52px] w-full flex-col justify-between rounded-xl border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] disabled:cursor-not-allowed disabled:opacity-45 ${
+                                    className={`flex min-h-[52px] w-full flex-col justify-between rounded-[var(--wb-radius)] border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] disabled:cursor-not-allowed disabled:opacity-45 ${
                                       isSelected
                                         ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
                                         : 'border-transparent bg-white/5 hover:bg-white/10'
@@ -1817,7 +1826,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                           <Key size={12} className="text-accent-300" />
                                         )}
                                         <span
-                                          className={`text-[9px] font-black uppercase tracking-wide ${
+                                          className={`text-[length:var(--wbp-label)] font-semibold tracking-normal ${
                                             isSelected ? 'text-accent-300' : 'text-zinc-200'
                                           }`}
                                         >
@@ -1828,12 +1837,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                         <Check size={11} className="text-accent-300" />
                                       )}
                                     </div>
-                                    <div className="mt-1 text-[7px] font-bold uppercase tracking-wide text-zinc-500">
+                                    <div className="mt-1 text-[7px] font-bold tracking-normal text-zinc-500">
                                       {option.detail}
                                     </div>
                                     <div
-                                      className={`text-[7px] font-black uppercase tracking-wide ${
-                                        isAvailable ? 'text-emerald-300' : 'text-zinc-600'
+                                      className={`text-[7px] font-semibold tracking-normal ${
+                                        isAvailable
+                                          ? 'text-[color:var(--wb-success)]'
+                                          : 'text-zinc-600'
                                       }`}
                                     >
                                       {isAvailable ? 'Ready' : 'Unavailable'}
@@ -1850,7 +1861,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           >
                             <div
                               id="codex-execution-model-label"
-                              className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500"
+                              className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500"
                             >
                               Model
                             </div>
@@ -1879,20 +1890,20 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                     title={model.description || modelLabel}
                                     disabled={selectedCodexTransport === 'subscription_http'}
                                     onClick={() => handleSelectExecutionModel(model)}
-                                    className={`flex min-h-[42px] w-full items-center justify-between gap-2 rounded-lg border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] disabled:cursor-default disabled:opacity-100 ${
+                                    className={`flex min-h-[42px] w-full items-center justify-between gap-2 rounded-[var(--wb-radius)] border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] disabled:cursor-default disabled:opacity-100 ${
                                       isSelected
                                         ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
                                         : 'border-transparent bg-white/5 text-zinc-400 hover:bg-white/10'
                                     }`}
                                   >
-                                    <span className="min-w-0 truncate text-[10px] font-black uppercase tracking-wide text-zinc-100">
+                                    <span className="min-w-0 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-100">
                                       {modelLabel}
                                     </span>
                                     <span className="flex shrink-0 items-center gap-1.5">
                                       {modelMeta.map((meta) => (
                                         <span
                                           key={meta}
-                                          className="rounded-md bg-white/8 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-wide text-zinc-400"
+                                          className="rounded-[var(--wb-radius)] bg-white/8 px-1.5 py-0.5 text-[7px] font-semibold tracking-normal text-zinc-400"
                                         >
                                           {meta}
                                         </span>
@@ -1908,7 +1919,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
                             {selectedCodexTransport === 'subscription_http' ? (
                               <div className="mt-3">
-                                <div className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                                <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500">
                                   Image
                                 </div>
                                 <div className="grid grid-cols-2 gap-1.5">
@@ -1924,14 +1935,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                         aria-label={imageModel.displayName}
                                         title={imageModel.displayName}
                                         onClick={() => handleSelectExecutionImageModel(imageModel)}
-                                        className={`flex min-h-[40px] items-center justify-between gap-2 rounded-lg border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                        className={`flex min-h-[40px] items-center justify-between gap-2 rounded-[var(--wb-radius)] border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                                           isSelected
                                             ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
                                             : 'border-transparent bg-white/5 hover:bg-white/10'
                                         }`}
                                       >
                                         <span
-                                          className={`truncate text-[9px] font-black uppercase tracking-wide ${
+                                          className={`truncate text-[length:var(--wbp-label)] font-semibold tracking-normal ${
                                             isSelected ? 'text-accent-300' : 'text-zinc-200'
                                           }`}
                                         >
@@ -1939,7 +1950,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                         </span>
                                         <span className="flex shrink-0 items-center gap-1.5">
                                           {imageModel.lifecycle === 'previous' ? (
-                                            <span className="rounded-md bg-white/8 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-wide text-zinc-500">
+                                            <span className="rounded-[var(--wb-radius)] bg-white/8 px-1.5 py-0.5 text-[7px] font-semibold tracking-normal text-zinc-500">
                                               Previous
                                             </span>
                                           ) : null}
@@ -1952,7 +1963,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                   })}
                                 </div>
                                 <div className="mt-3">
-                                  <div className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                                  <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500">
                                     Size
                                   </div>
                                   <div
@@ -1974,20 +1985,20 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                           onClick={() =>
                                             handleSelectExecutionImageSize(option.tier)
                                           }
-                                          className={`flex min-h-[40px] flex-col justify-center rounded-lg border px-2 py-1.5 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                          className={`flex min-h-[40px] flex-col justify-center rounded-[var(--wb-radius)] border px-2 py-1.5 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                                             isSelected
                                               ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
                                               : 'border-transparent bg-white/5 hover:bg-white/10'
                                           }`}
                                         >
                                           <span
-                                            className={`text-[9px] font-black uppercase tracking-wide ${
+                                            className={`text-[length:var(--wbp-label)] font-semibold tracking-normal ${
                                               isSelected ? 'text-accent-300' : 'text-zinc-200'
                                             }`}
                                           >
                                             {option.tier}
                                           </span>
-                                          <span className="text-[7px] font-bold uppercase tracking-wide text-zinc-500">
+                                          <span className="text-[7px] font-bold tracking-normal text-zinc-500">
                                             {option.width}×{option.height}
                                           </span>
                                         </button>
@@ -1995,7 +2006,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                     })}
                                   </div>
                                   {selectedExecutionImageSize?.experimental ? (
-                                    <p className="mt-1.5 text-[8px] font-bold leading-snug text-zinc-500">
+                                    <p className="mt-1.5 text-[length:var(--wbp-label)] font-bold leading-snug text-zinc-500">
                                       ChatGPT marks output above 2560×1440 as experimental.
                                     </p>
                                   ) : null}
@@ -2004,7 +2015,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             ) : null}
 
                             <div className="mt-3">
-                              <div className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                              <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500">
                                 Mode
                               </div>
                               <div className="flex flex-wrap gap-1.5">
@@ -2024,7 +2035,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                           updateConfig('executionReasoningEffort', effort);
                                         }
                                       }}
-                                      className={`min-h-[32px] rounded-lg px-2.5 py-1.5 text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                      className={`min-h-[32px] rounded-[var(--wb-radius)] px-2.5 py-1.5 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                                         selectedCodexTransport === 'subscription_http' ||
                                         generationConfig.executionReasoningEffort === effort
                                           ? 'border border-accent-500/2 bg-gradient-to-r from-accent-700 to-accent-800 text-white'
@@ -2039,7 +2050,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             </div>
 
                             <div className="mt-3">
-                              <div className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                              <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500">
                                 Speed
                               </div>
                               <div className="flex flex-wrap gap-1.5">
@@ -2051,7 +2062,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                       key={speed}
                                       aria-label={`Speed: ${isManaged ? 'Managed' : formatCodexSpeedLabel(speed)}`}
                                       onClick={() => handleSelectExecutionSpeed(speed)}
-                                      className={`min-h-[32px] rounded-lg px-2.5 py-1.5 text-[9px] font-black uppercase tracking-wide transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                      className={`min-h-[32px] rounded-[var(--wb-radius)] px-2.5 py-1.5 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                                         isManaged || generationConfig.executionSpeed === speed
                                           ? 'border border-accent-500/2 bg-gradient-to-r from-accent-700 to-accent-800 text-white'
                                           : 'bg-white/5 text-zinc-400 hover:bg-white/10'
@@ -2067,7 +2078,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         </div>
 
                         {executionSourceMessage && (
-                          <div className="mt-3 rounded-xl border border-amber-500/2 bg-amber-500/10 px-3 py-2 text-[8px] font-bold text-amber-200">
+                          <div className="mt-3 rounded-[var(--wb-radius)] border border-amber-500/2 bg-amber-500/10 px-3 py-2 text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-warning)]">
                             {executionSourceMessage}
                           </div>
                         )}
@@ -2081,7 +2092,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       className={`${btnClass} cursor-default`}
                     >
                       <Zap size={14} />
-                      <span className="text-[8px] font-black uppercase tracking-wide">
+                      <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">
                         {formatGenerationProviderLabel(activeProviderId)}
                       </span>
                     </div>
@@ -2091,6 +2102,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             </div>
 
             {/* GENERATE BUTTON - Dark Gradient Premium */}
+            {isRail ? railAction : null}
             {!isContextOnly ? (
               <button
                 type="button"
@@ -2108,8 +2120,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 className={
                   isRail
                     ? `create-generate-button ${isGenerating ? 'is-busy' : ''}`
-                    : `group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-xl flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
-                    text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer disabled:cursor-not-allowed disabled:opacity-45 ${
+                    : `group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-[var(--wb-radius)] flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
+                    text-[length:var(--wbp-label)] tracking-normal font-semibold transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer disabled:cursor-not-allowed disabled:opacity-45 ${
                       isGenerating
                         ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-200 border border-accent-500/2 shadow-lg hover:border-accent-300/2 hover:text-white active:scale-95'
                         : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/2 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
@@ -2166,7 +2178,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             <p
               id="grok-generate-block"
               role="status"
-              className="order-first mt-0 max-w-xl text-[11px] font-medium leading-relaxed text-amber-200/90 sm:order-none sm:mt-2"
+              className="order-first mt-0 max-w-xl text-[11px] font-medium leading-relaxed text-[color:var(--wb-warning)] sm:order-none sm:mt-2"
             >
               {generateBlock.message}
             </p>

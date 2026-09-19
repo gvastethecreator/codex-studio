@@ -41,10 +41,12 @@ const IMAGE_TWO: GeneratedImageWithConfig = {
 describe('RecipeResultPreview', () => {
   it('uses the stage presentation without writing draft state on select', () => {
     const onOpen = vi.fn();
-    render(<RecipeResultPreview variant="stage" images={[IMAGE]} onOpen={onOpen} />);
+    render(<RecipeResultPreview variant="stage" images={[IMAGE]} onOpen={onOpen} isGenerating />);
 
     const preview = screen.getByRole('region', { name: 'Result preview' });
     expect(preview.getAttribute('data-result-variant')).toBe('stage');
+    expect(preview.getAttribute('aria-busy')).toBe('true');
+    expect(screen.getByRole('status').textContent).toContain('Generating');
 
     fireEvent.click(screen.getByRole('button', { name: 'View result 1' }));
     expect(screen.getByRole('button', { name: 'View result 1' }).getAttribute('aria-pressed')).toBe(

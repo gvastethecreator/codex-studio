@@ -9,7 +9,8 @@ import { StudioViewport } from './shell/StudioViewport';
 import { ErrorBoundary } from './ErrorBoundary';
 import { RecipeWorkbenchContext, type CanvasCompareChrome } from './recipes/RecipeWorkbenchContext';
 import ToastContainer from './ToastContainer';
-import { CreateWorkspace } from './create/CreateWorkspace';
+import { CreateWorkspace, CreateResults } from './create/CreateWorkspace';
+import { getRecipeShellTitle } from '../lib/recipeShellMetadata';
 import { StudioStatusBar } from './shell/StudioStatusBar';
 import {
   applyWorkbenchAmbientToDocument,
@@ -101,6 +102,17 @@ export const AppContent: React.FC = () => {
         sidePanel: sidePanelTarget,
         compare,
         setCompare,
+        latestResultId: stageImages[0]?.id,
+        results: (
+          <CreateResults
+            key={`${shell.headerToolbar.props.activeWorkspaceId}:${activeRecipe ?? 'default'}`}
+            title={activeRecipe ? getRecipeShellTitle(activeRecipe) : undefined}
+            recipePageProps={shell.viewport.recipePageProps}
+            images={stageImages}
+            onToggleFavorite={shell.viewport.studioPageController.grid.handleToggleFavorite}
+            onUseAsReference={shell.viewport.studioPageController.grid.handleAddToContext}
+          />
+        ),
       }}
     >
       <div
@@ -138,17 +150,39 @@ export const AppContent: React.FC = () => {
             className="workbench-tabs"
             role="tablist"
             aria-label={isRecipe ? 'Recipe workspace' : 'Create workspace'}
+            onKeyDown={(event) => {
+              if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+              event.preventDefault();
+              const next =
+                event.key === 'Home'
+                  ? 'configure'
+                  : event.key === 'End'
+                    ? 'preview'
+                    : workspaceTab === 'configure'
+                      ? 'preview'
+                      : 'configure';
+              setWorkspaceTab(next);
+              event.currentTarget
+                .querySelector<HTMLButtonElement>(`[data-workspace-tab="${next}"]`)
+                ?.focus();
+            }}
           >
             <button
+              type="button"
               role="tab"
               data-configure-tab
+              data-workspace-tab="configure"
+              tabIndex={workspaceTab === 'configure' ? 0 : -1}
               aria-selected={workspaceTab === 'configure'}
               onClick={() => setWorkspaceTab('configure')}
             >
               Configure
             </button>
             <button
+              type="button"
               role="tab"
+              data-workspace-tab="preview"
+              tabIndex={workspaceTab === 'preview' ? 0 : -1}
               aria-selected={workspaceTab === 'preview'}
               onClick={() => setWorkspaceTab('preview')}
             >
@@ -173,16 +207,14 @@ export const AppContent: React.FC = () => {
               images={stageImages}
               routeKey={isRecipe ? `recipe-${activeRecipe ?? 'active'}` : 'recipes-list'}
               onSidePanelTarget={setSidePanelTarget}
-              tools={
+              stage={isRecipe ? <StudioViewport {...shell.viewport} /> : undefined}
+              action={
                 isRecipe ? (
-                  <>
-                    <div className="create-recipe-canvas">
-                      <StudioViewport {...shell.viewport} />
-                    </div>
-                    <div ref={setControlsTarget} className="create-recipe-controls" />
-                    <div className="recipe-primary-action" ref={setActionTarget} />
-                  </>
-                ) : null
+                  <div className="recipe-primary-action" ref={setActionTarget} />
+                ) : undefined
+              }
+              tools={
+                isRecipe ? <div ref={setControlsTarget} className="create-recipe-controls" /> : null
               }
             />
           ) : (

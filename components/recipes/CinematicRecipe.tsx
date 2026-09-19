@@ -85,7 +85,7 @@ const ShotTypeDropdown: React.FC<{
         ref={triggerRef}
         type="button"
         onClick={() => setIsOpen((open) => !open)}
-        className={`flex min-h-7 max-w-[120px] items-center gap-1.5 rounded border px-2 py-1 text-center text-[9px] font-bold uppercase tracking-wider transition-[background-color,border-color,color,transform] ${
+        className={`flex min-h-7 max-w-[120px] items-center gap-1.5 rounded border px-2 py-1 text-center text-[length:var(--wbp-label)] font-bold tracking-normal transition-[background-color,border-color,color,transform] ${
           isOpen
             ? 'border-rose-400/2 bg-rose-500/14 text-[color:var(--wb-ink)]'
             : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
@@ -112,7 +112,7 @@ const ShotTypeDropdown: React.FC<{
         placement={openBelow ? 'bottom-left' : 'top-left'}
         role="listbox"
         aria-label={`${sceneLabel} shot type`}
-        className={`absolute left-1/2 z-40 max-h-48 w-44 -translate-x-1/2 overflow-y-auto rounded-[6px] p-1 ${
+        className={`absolute left-1/2 z-40 max-h-48 w-44 -translate-x-1/2 overflow-y-auto rounded-[var(--wb-radius)] p-1 ${
           openBelow ? 'top-[calc(100%+0.35rem)]' : 'bottom-[calc(100%+0.35rem)]'
         }`}
       >
@@ -129,14 +129,16 @@ const ShotTypeDropdown: React.FC<{
                 onChange(shot);
                 setIsOpen(false);
               }}
-              className={`flex min-h-8 w-full items-center justify-between gap-2 rounded-[5px] px-2 py-1.5 text-left text-[9px] font-black uppercase tracking-wider transition-[background-color,color] ${
+              className={`flex min-h-8 w-full items-center justify-between gap-2 rounded-[var(--wb-radius)] px-2 py-1.5 text-left text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[background-color,color] ${
                 selected
                   ? 'bg-rose-500/18 text-[color:var(--wb-ink)]'
                   : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
               }`}
             >
               <span className="truncate">{shot}</span>
-              {selected ? <Check size={11} className="shrink-0 text-rose-100" /> : null}
+              {selected ? (
+                <Check size={11} className="shrink-0 text-[color:var(--wb-danger)]" />
+              ) : null}
             </button>
           );
         })}
@@ -225,16 +227,16 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
     () => (
       <>
         <div className="flex flex-col gap-1.5">
-          <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
+          <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] tracking-normal pl-1">
             Layout
           </span>
-          <div className="flex items-center gap-2 p-1 bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] rounded-xl border border-[color:var(--wb-line)]">
+          <div className="flex items-center gap-2 p-1 bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] rounded-[var(--wb-radius)] border border-[color:var(--wb-line)]">
             {FRAME_COUNTS.map((count) => (
               <button
                 type="button"
                 key={count}
                 onClick={() => handleFrameChange(count)}
-                className={`h-9 px-4 rounded-lg flex items-center gap-2 transition-[background-color,color,box-shadow,transform] ${
+                className={`h-9 px-4 rounded-[var(--wb-radius)] flex items-center gap-2 transition-[background-color,color,box-shadow,transform] ${
                   params.frames === count
                     ? 'bg-rose-600 text-[color:var(--wb-ink)] shadow-lg'
                     : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'
@@ -243,7 +245,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
                 {count === 3 && <LayoutTemplate size={14} />}
                 {count === 6 && <RectangleHorizontal size={14} />}
                 {count === 9 && <Grid3X3 size={14} />}
-                <span className="text-[10px] font-black uppercase">{count} Scenes</span>
+                <span className="text-[length:var(--wbp-label)] font-semibold">{count} Scenes</span>
               </button>
             ))}
           </div>
@@ -324,12 +326,13 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
 
   return (
     <RecipeLayout
+      editorLabel="Storyboard"
       isGenerating={isGenerating}
       bottomDock={BottomDock}
-      className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-6 sm:pt-20 sm:pb-48 flex items-center justify-center"
+      className="flex min-h-0 flex-col"
     >
       <div
-        className="relative overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl transition-[background-color,border-color,box-shadow,transform] duration-500 ease-out-expo group"
+        className="relative overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl transition-[background-color,border-color,box-shadow,transform] duration-500 ease-out-expo group"
         style={{
           aspectRatio: ratioValue,
           width: 'min(90vw, 74vh)',
@@ -357,7 +360,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               key={i}
               className="relative bg-white/[0.02] backdrop-blur-[1px] flex flex-col items-center justify-center border border-[color:var(--wb-line)] group/cell pointer-events-auto"
             >
-              <span className="text-[9px] font-black text-[color:var(--wb-ink)]/30 group-hover/cell:text-[color:var(--wb-ink)]/60 uppercase tracking-widest transition-colors mb-2">
+              <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)]/30 group-hover/cell:text-[color:var(--wb-ink)]/60 tracking-normal transition-colors mb-2">
                 {i === 0 ? 'START' : i === params.frames - 1 ? 'END' : `SCENE ${i + 1}`}
               </span>
               <ShotTypeDropdown
@@ -377,7 +380,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
             type="button"
             aria-label="Remove cinematic reference"
             onClick={() => updateConfig('attachments', [])}
-            className="pointer-events-auto absolute right-4 top-4 z-20 rounded-lg border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] transition-[background-color,color] hover:bg-red-500 hover:text-[color:var(--wb-ink)]"
+            className="pointer-events-auto absolute right-4 top-4 z-20 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] transition-[background-color,color] hover:bg-red-500 hover:text-[color:var(--wb-ink)]"
           >
             <X size={14} />
           </button>

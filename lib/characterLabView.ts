@@ -1,3 +1,4 @@
+import { resolveRecipeAlias, type RecipeAliasId } from './recipeAliases';
 import {
   CHARACTER_LAB_ACTIONS,
   CHARACTER_LAB_CATEGORIES,
@@ -73,4 +74,15 @@ export function getFirstReadyCharacterLabAction(mode?: CharacterLabModeId): Char
     CHARACTER_LAB_ACTIONS.find((action) => action.mode === mode) ??
     ready
   );
+}
+
+export function resolveInitialCharacterLabAction(
+  params: Record<string, unknown> | null | undefined,
+  aliasId?: RecipeAliasId | null,
+): CharacterLabAction {
+  const aliasMode = resolveRecipeAlias(aliasId)?.characterLabMode;
+  const savedAction = CHARACTER_LAB_ACTIONS.find((action) => action.id === params?.actionId);
+  if (savedAction && (!aliasMode || savedAction.mode === aliasMode)) return savedAction;
+  const savedMode = CHARACTER_LAB_MODES.find((mode) => mode.id === params?.mode)?.id;
+  return getFirstReadyCharacterLabAction(aliasMode ?? savedMode ?? 'poses');
 }
