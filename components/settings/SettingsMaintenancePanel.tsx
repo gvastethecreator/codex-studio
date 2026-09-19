@@ -91,13 +91,13 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
   };
 
   return (
-    <div className="mt-4 rounded-lg border border-white/2 bg-white/4 p-4">
+    <div className="mt-4 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
       <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h3 className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+          <h3 className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
             Storage Maintenance
           </h3>
-          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
             Audit, Compact, Backfill, Prune
           </p>
         </div>
@@ -105,7 +105,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
           type="button"
           onClick={() => void refreshAudit()}
           disabled={isLoadingAudit}
-          className="flex h-9 items-center gap-2 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+          className="flex h-9 items-center gap-2 rounded-lg border border-[color:var(--wb-line)] px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
         >
           {isLoadingAudit ? (
             <LoaderCircle size={13} className="animate-spin" />
@@ -118,49 +118,49 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
 
       {audit ? (
         <div className="grid gap-2 md:grid-cols-4">
-          <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+          <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
               SQLite
             </div>
-            <div className="mt-1 font-mono text-xs font-bold text-zinc-200">
+            <div className="mt-1 font-mono text-xs font-bold text-[color:var(--wb-ink)]">
               {audit.database.formattedBytes}
             </div>
           </div>
-          <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+          <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
               Inline Payloads
             </div>
-            <div className="mt-1 font-mono text-xs font-bold text-zinc-200">
+            <div className="mt-1 font-mono text-xs font-bold text-[color:var(--wb-ink)]">
               {formatBytes(inlineBytes)}
             </div>
           </div>
-          <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+          <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
               Missing Thumbs
             </div>
-            <div className="mt-1 font-mono text-xs font-bold text-zinc-200">
+            <div className="mt-1 font-mono text-xs font-bold text-[color:var(--wb-ink)]">
               {audit.catalog.missingThumbnails}
             </div>
           </div>
-          <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+          <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+            <div className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
               Tooling Logs
             </div>
-            <div className="mt-1 font-mono text-xs font-bold text-zinc-200">
+            <div className="mt-1 font-mono text-xs font-bold text-[color:var(--wb-ink)]">
               {audit.directories.toolingLogs?.formattedBytes ?? '0 B'}
             </div>
           </div>
         </div>
       ) : (
-        <div className="rounded-lg border border-white/2 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+        <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
           Run audit to load current storage metrics.
         </div>
       )}
 
       <div className="mt-3 grid gap-2 md:grid-cols-3">
-        <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
-            <Database size={14} className="text-zinc-500" />
+        <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+            <Database size={14} className="text-[color:var(--wb-muted)]" />
             Payloads
           </div>
           <div className="flex flex-wrap gap-2">
@@ -169,7 +169,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
               aria-label="Plan storage compaction"
               onClick={() => void compactStorage()}
               disabled={isCompactRunning}
-              className="flex h-8 items-center gap-2 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+              className="flex h-8 items-center gap-2 rounded-lg border border-[color:var(--wb-line)] px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
             >
               {isCompactRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
               Plan
@@ -185,9 +185,9 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
           </div>
         </div>
 
-        <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
-            <FileImage size={14} className="text-zinc-500" />
+        <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+            <FileImage size={14} className="text-[color:var(--wb-muted)]" />
             Thumbnails
           </div>
           <div className="flex flex-wrap gap-2">
@@ -195,7 +195,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
               type="button"
               onClick={() => void backfillThumbnails({ limit: 1000 })}
               disabled={isThumbnailRunning}
-              className="flex h-8 items-center gap-2 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+              className="flex h-8 items-center gap-2 rounded-lg border border-[color:var(--wb-line)] px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
             >
               {isThumbnailRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
               Plan
@@ -211,16 +211,16 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
           </div>
         </div>
 
-        <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
-            <RefreshCw size={14} className="text-zinc-500" />
+        <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+          <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
+            <RefreshCw size={14} className="text-[color:var(--wb-muted)]" />
             Tooling Logs
           </div>
           <button
             type="button"
             onClick={() => void pruneToolingLogs({ retainPerTask: 20 })}
             disabled={isPruneRunning}
-            className="flex h-8 items-center gap-2 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+            className="flex h-8 items-center gap-2 rounded-lg border border-[color:var(--wb-line)] px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
           >
             {isPruneRunning ? <LoaderCircle size={13} className="animate-spin" /> : null}
             Prune
@@ -229,12 +229,12 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
       </div>
 
       {repairPlan ? (
-        <div className="mt-3 rounded-lg border border-white/2 bg-black/20 p-3">
+        <div className="mt-3 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
           <div className="mb-2 flex items-center justify-between gap-3">
-            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+            <div className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
               Repair Plan
             </div>
-            <div className="font-mono text-[9px] font-bold text-zinc-500">
+            <div className="font-mono text-[9px] font-bold text-[color:var(--wb-muted)]">
               {repairPlan.summary.itemCount} items / {formatBytes(repairPlan.summary.totalBytes)}
             </div>
           </div>
@@ -243,29 +243,29 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
               {repairPlan.items.map((item) => (
                 <div
                   key={item.id}
-                  className="rounded-md border border-white/2 bg-white/[0.03] px-3 py-2"
+                  className="rounded-md border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-3 py-2"
                 >
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+                    <span className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
                       {item.title}
                     </span>
                     <span
                       className={`text-[8px] font-black uppercase tracking-widest ${
-                        item.severity === 'warning' ? 'text-amber-300' : 'text-zinc-500'
+                        item.severity === 'warning' ? 'text-amber-300' : 'text-[color:var(--wb-muted)]'
                       }`}
                     >
                       {item.severity}
                     </span>
                   </div>
-                  <p className="mt-1 text-[10px] leading-relaxed text-zinc-500">{item.detail}</p>
-                  <div className="mt-2 truncate font-mono text-[9px] text-zinc-600">
+                  <p className="mt-1 text-[10px] leading-relaxed text-[color:var(--wb-muted)]">{item.detail}</p>
+                  <div className="mt-2 truncate font-mono text-[9px] text-[color:var(--wb-dim)]">
                     {item.command}
                   </div>
                 </div>
               ))}
             </div>
           ) : (
-            <div className="text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+            <div className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
               No repair actions recommended by the current audit.
             </div>
           )}
@@ -273,28 +273,28 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
       ) : null}
 
       {(compactResult || thumbnailBackfillResult || toolingLogsPruneResult) && (
-        <div className="mt-3 grid gap-2 text-[10px] font-bold uppercase tracking-widest text-zinc-500 md:grid-cols-3">
+        <div className="mt-3 grid gap-2 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)] md:grid-cols-3">
           {compactResult ? (
-            <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-              <span className="text-zinc-300">Compact {compactResult.mode}</span>
-              <div className="mt-1 font-mono text-zinc-500">
+            <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+              <span className="text-[color:var(--wb-ink)]">Compact {compactResult.mode}</span>
+              <div className="mt-1 font-mono text-[color:var(--wb-muted)]">
                 {compactRows} rows / {formatBytes(compactBytes)}
               </div>
             </div>
           ) : null}
           {thumbnailBackfillResult ? (
-            <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-              <span className="text-zinc-300">Thumbs {thumbnailBackfillResult.mode}</span>
-              <div className="mt-1 font-mono text-zinc-500">
+            <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+              <span className="text-[color:var(--wb-ink)]">Thumbs {thumbnailBackfillResult.mode}</span>
+              <div className="mt-1 font-mono text-[color:var(--wb-muted)]">
                 {thumbnailBackfillResult.wroteRows} wrote / {thumbnailBackfillResult.plannedRows}{' '}
                 planned / {thumbnailBackfillResult.missingSourceFiles} missing
               </div>
             </div>
           ) : null}
           {toolingLogsPruneResult ? (
-            <div className="rounded-lg border border-white/2 bg-black/20 p-3">
-              <span className="text-zinc-300">Logs pruned</span>
-              <div className="mt-1 font-mono text-zinc-500">
+            <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+              <span className="text-[color:var(--wb-ink)]">Logs pruned</span>
+              <div className="mt-1 font-mono text-[color:var(--wb-muted)]">
                 {toolingLogsPruneResult.pruned} files / keep {toolingLogsPruneResult.retainPerTask}
               </div>
             </div>

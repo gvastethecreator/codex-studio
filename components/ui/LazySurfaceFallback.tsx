@@ -1,6 +1,8 @@
 import React from 'react';
 import { IconLoader2 as Loader2 } from '@tabler/icons-react';
 
+import { cn } from '../../lib/utils';
+
 interface LazySurfaceFallbackProps {
   label: string;
   className?: string;
@@ -8,15 +10,15 @@ interface LazySurfaceFallbackProps {
 
 export const LazySurfaceFallback: React.FC<LazySurfaceFallbackProps> = ({
   label,
-  className = 'absolute inset-0 grid place-items-center bg-black/30 text-zinc-400',
+  className = 'absolute inset-0 grid place-items-center studio-scrim studio-muted',
 }) => (
-  <output aria-live="polite" className={className}>
-    <div className="flex flex-col items-center gap-2 text-[10px] font-black uppercase tracking-widest">
+  <output aria-live="polite" className={cn('studio-muted', className)}>
+    <div className="flex flex-col items-center gap-2 text-[10px] font-medium tracking-wide">
       <Loader2
         aria-hidden="true"
         size={30}
         strokeWidth={1.8}
-        className="block animate-spin text-zinc-100 drop-shadow-[0_0_12px_rgba(255,255,255,0.18)]"
+        className="block animate-spin text-[color:var(--wb-ink)]"
       />
       <span>{label}</span>
     </div>

@@ -37,7 +37,7 @@ const routes = [
   {
     name: 'Styles',
     hash: '#recipe-styles',
-    selector: '[data-route-key="recipe-styles"] [data-style-browser-root]',
+    selector: '[data-route-key="recipe-styles"] [data-compact-style-selector]',
   },
   {
     name: 'Character Lab',

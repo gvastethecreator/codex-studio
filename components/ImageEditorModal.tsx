@@ -52,16 +52,16 @@ function ImageEditorControlsPanel({
   requireMask = true,
 }: ImageEditorControlsPanelProps) {
   return (
-    <div className="custom-scrollbar flex max-h-[44vh] w-full flex-col gap-5 overflow-y-auto bg-zinc-950 p-4 shadow-[20px_0_60px_rgba(0,0,0,1)] sm:p-6 md:max-h-none md:w-96 md:gap-10 md:p-8">
+    <div className="custom-scrollbar flex max-h-[44vh] w-full flex-col gap-5 overflow-y-auto bg-[color:var(--wb-panel)] p-4 shadow-[20px_0_60px_rgba(0,0,0,1)] sm:p-6 md:max-h-none md:w-96 md:gap-10 md:p-8">
       {notice ? (
-        <p role="status" className="text-[11px] font-medium leading-relaxed text-zinc-400">
+        <p role="status" className="text-[11px] font-medium leading-relaxed text-[color:var(--wb-muted)]">
           {notice}
         </p>
       ) : null}
       <div className="space-y-3 sm:space-y-4">
         <label
           htmlFor="image-editor-prompt"
-          className="text-[10px] font-black text-zinc-400 uppercase tracking-widest"
+          className="text-[10px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest"
         >
           Edit Prompt
         </label>
@@ -72,13 +72,13 @@ function ImageEditorControlsPanel({
           onChange={(e) => onEditPromptChange(e.target.value)}
           placeholder="Describe the changes..."
           aria-label="Edit prompt"
-          className="w-full min-h-24 max-h-44 bg-black/40 rounded-2xl p-4 text-[13px] font-bold leading-relaxed focus:bg-black/60 transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar sm:min-h-40 sm:max-h-75 sm:p-5"
+          className="w-full min-h-24 max-h-44 bg-[color:var(--wb-well)] rounded-2xl p-4 text-[13px] font-bold leading-relaxed focus:bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] transition-colors outline-none resize-none placeholder-zinc-800 custom-scrollbar sm:min-h-40 sm:max-h-75 sm:p-5"
         />
       </div>
 
       <div className="space-y-5 sm:space-y-8">
         <Slider
-          icon={<Brush className="size-4 text-zinc-600" />}
+          icon={<Brush className="size-4 text-[color:var(--wb-dim)]" />}
           label="Brush Size"
           value={brushSize}
           min={5}
@@ -92,7 +92,7 @@ function ImageEditorControlsPanel({
             type="button"
             onClick={onUndo}
             disabled={historyIndex < 0}
-            className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 disabled:opacity-10 transition-[color,background-color,border-color,opacity,box-shadow,transform]"
+            className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:opacity-10 transition-[color,background-color,border-color,opacity,box-shadow,transform]"
           >
             Undo
           </button>
@@ -121,11 +121,11 @@ function ImageEditorControlsPanel({
                     ${
                       isGenerating
                         ? 'bg-accent-500/10 text-accent-500/40'
-                        : 'bg-accent-600 text-white hover:bg-accent-500 shadow-accent-950/40'
+                        : 'bg-accent-600 text-[color:var(--wb-ink)] hover:bg-accent-500 shadow-accent-950/40'
                     } disabled:opacity-20 disabled:pointer-events-none`}
         >
           {isGenerating ? (
-            <div className="size-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+            <div className="size-4 border-2 border-[color:var(--wb-line)]0 border-t-white rounded-full animate-spin" />
           ) : (
             <Sparkles size={18} />
           )}
@@ -355,18 +355,18 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       aria-modal="true"
       tabIndex={-1}
       aria-label="Image editor"
-      className="fixed inset-0 z-100 m-0 flex h-full w-full flex-col border-none bg-black/98 p-0 backdrop-blur-3xl animate-in fade-in duration-500"
+      className="fixed inset-0 z-100 m-0 flex h-full w-full flex-col border-none bg-[color:var(--wba-bg)] p-0 backdrop-blur-3xl animate-in fade-in duration-500"
     >
-      <div className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-white/2 px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
+      <div className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-[color:var(--wb-line)] px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
         <div className="flex min-w-0 items-center gap-3 sm:gap-5">
           <div className="rounded-xl bg-accent-500/10 p-2 sm:p-2.5">
             <Sparkles size={18} className="text-accent-400 sm:size-5" />
           </div>
           <div className="min-w-0">
-            <h2 className="truncate text-xs font-black tracking-widest uppercase text-white sm:text-sm">
+            <h2 className="truncate text-xs font-black tracking-widest uppercase text-[color:var(--wb-ink)] sm:text-sm">
               {requireMask ? 'Precision Inpaint' : 'Prompt Edit'}
             </h2>
-            <p className="hidden text-[10px] text-zinc-600 font-bold uppercase tracking-tight sm:block">
+            <p className="hidden text-[10px] text-[color:var(--wb-dim)] font-bold uppercase tracking-tight sm:block">
               {requireMask ? 'Edit masked area and regenerate' : 'Describe the change, then apply'}
             </p>
           </div>
@@ -375,7 +375,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           type="button"
           aria-label="Close image editor"
           onClick={handleClose}
-          className="rounded-xl bg-zinc-900/60 p-3 text-zinc-600 shadow-xl transition-[background-color,color] hover:bg-zinc-800 hover:text-white"
+          className="rounded-xl bg-[color:var(--wb-panel)] p-3 text-[color:var(--wb-dim)] shadow-xl transition-[background-color,color] hover:bg-[color:var(--wb-bar)] hover:text-[color:var(--wb-ink)]"
         >
           <X size={24} />
         </button>
@@ -408,7 +408,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
           />
           <div
             ref={brushCursorRef}
-            className="fixed pointer-events-none border border-white/2 shadow-2xl rounded-full mix-blend-difference z-110"
+            className="fixed pointer-events-none border border-[color:var(--wb-line)] shadow-2xl rounded-full mix-blend-difference z-110"
             style={{
               width: brushSize,
               height: brushSize,

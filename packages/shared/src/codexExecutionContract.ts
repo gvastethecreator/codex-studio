@@ -48,6 +48,14 @@ export const CODEX_HTTP_IMAGE_MODELS: readonly CodexHttpImageModelOption[] = [
 ];
 export const CODEX_HTTP_REASONING = 'provider_default';
 export const CODEX_HTTP_MAX_INPUT_IMAGES = 16;
+export const CODEX_HTTP_IMAGE_SIZE_TIERS = ['1K', '2K', '4K'] as const;
+export type CodexHttpImageSizeTier = (typeof CODEX_HTTP_IMAGE_SIZE_TIERS)[number];
+export const CODEX_HTTP_IMAGE_SIZE_TIER_TARGETS: Record<CodexHttpImageSizeTier, number> = {
+  '1K': 1536,
+  '2K': 2048,
+  '4K': 3840,
+};
+export const CODEX_HTTP_EXPERIMENTAL_PIXELS = 3_686_400;
 export const CODEX_HTTP_RATIO_SIZES: Record<string, string> = {
   '21:9': '1792x768',
   '16:9': '1536x864',
@@ -96,11 +104,89 @@ export function getCodexHttpImageModelOption(value?: string | null): CodexHttpIm
   );
 }
 
+export function isCodexHttpImageSizeTier(value: unknown): value is CodexHttpImageSizeTier {
+  return CODEX_HTTP_IMAGE_SIZE_TIERS.some((tier) => tier === value);
+}
+
+export function resolveCodexHttpImageSizeTier(value?: string | null): CodexHttpImageSizeTier {
+  return isCodexHttpImageSizeTier(value) ? value : '1K';
+}
+
+function gcd(a: number, b: number) {
+  let x = Math.abs(a);
+  let y = Math.abs(b);
+  while (y) {
+    const next = x % y;
+    x = y;
+    y = next;
+  }
+  return x || 1;
+}
+
+function fitCodexHttpPixelSize(aspect: string, targetLongEdge: number): string | null {
+  const [ratioWidth, ratioHeight] = aspect.split(':').map(Number);
+  if (!ratioWidth || !ratioHeight) return null;
+  const divisor = gcd(ratioWidth, ratioHeight);
+  const stepWidth = 16 * (ratioWidth / divisor);
+  const stepHeight = 16 * (ratioHeight / divisor);
+  const maxEdge = Math.min(targetLongEdge, 3840);
+  let best: string | null = null;
+  for (let scale = 1; ; scale += 1) {
+    const width = stepWidth * scale;
+    const height = stepHeight * scale;
+    if (Math.max(width, height) > maxEdge) break;
+    const pixels = width * height;
+    if (
+      pixels < 655_360 ||
+      pixels > 8_294_400 ||
+      Math.max(width, height) > Math.min(width, height) * 3
+    ) {
+      continue;
+    }
+    best = `${width}x${height}`;
+  }
+  return best;
+}
+
+export interface CodexHttpImageSizeOption {
+  tier: CodexHttpImageSizeTier;
+  size: string;
+  width: number;
+  height: number;
+  experimental: boolean;
+}
+
+export function describeCodexHttpImageSize(
+  aspectRatio: string,
+  tier: CodexHttpImageSizeTier,
+): CodexHttpImageSizeOption {
+  const size = resolveCodexHttpImageSize({ aspectRatio, imageSize: tier });
+  const [width, height] = size.split('x').map(Number);
+  return {
+    tier,
+    size,
+    width,
+    height,
+    experimental: width * height > CODEX_HTTP_EXPERIMENTAL_PIXELS,
+  };
+}
+
+export function listCodexHttpImageSizeOptions(aspectRatio: string): CodexHttpImageSizeOption[] {
+  return CODEX_HTTP_IMAGE_SIZE_TIERS.map((tier) => describeCodexHttpImageSize(aspectRatio, tier));
+}
+
 type CodexImageOutput = Partial<Pick<GenerationTaskSpec['output'], 'imageSize' | 'aspectRatio'>>;
 export function resolveCodexHttpImageSize(output?: CodexImageOutput | null): string {
   const aspect = output?.aspectRatio?.trim() || '1:1';
   const requested = output?.imageSize?.trim();
-  const size = !requested || requested === '1K' ? CODEX_HTTP_RATIO_SIZES[aspect] : requested;
+  const size =
+    !requested || requested === '1K' || requested === '512px'
+      ? (CODEX_HTTP_RATIO_SIZES[aspect] ?? fitCodexHttpPixelSize(aspect, 1536))
+      : requested === '2K'
+        ? fitCodexHttpPixelSize(aspect, CODEX_HTTP_IMAGE_SIZE_TIER_TARGETS['2K'])
+        : requested === '4K'
+          ? fitCodexHttpPixelSize(aspect, CODEX_HTTP_IMAGE_SIZE_TIER_TARGETS['4K'])
+          : requested;
   const dimensions = size?.match(/^(\d+)x(\d+)$/);
   const width = Number(dimensions?.[1]);
   const height = Number(dimensions?.[2]);

@@ -46,7 +46,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
       {title && (
         <span
           id={labelId}
-          className="pl-1 text-[8px] font-black uppercase tracking-widest text-zinc-500"
+          className="pl-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]"
         >
           {title}
         </span>
@@ -58,8 +58,8 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
           onClick={() => setIsOpen((open) => !open)}
           className={`group flex min-h-10 min-w-[140px] items-center gap-3 rounded-xl border px-4 shadow-lg transition-[background-color,border-color,color,transform] active:scale-95 ${
             isOpen
-              ? 'border-white/2 bg-white/8 text-white'
-              : 'border-white/2 bg-zinc-900 text-zinc-200 hover:border-white/2 hover:bg-white/[0.04]'
+              ? 'border-[color:var(--wb-line)] bg-white/8 text-[color:var(--wb-ink)]'
+              : 'border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]'
           }`}
           aria-labelledby={title ? labelId : undefined}
           aria-label={title ? undefined : label}
@@ -67,7 +67,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
           aria-expanded={isOpen}
           aria-controls={menuId}
         >
-          <span className="shrink-0 text-zinc-500 transition-colors group-hover:text-zinc-400">
+          <span className="shrink-0 text-[color:var(--wb-muted)] transition-colors group-hover:text-[color:var(--wb-muted)]">
             {icon}
           </span>
           <span className="min-w-0 flex-1 truncate text-left text-[10px] font-bold uppercase">
@@ -75,8 +75,8 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
           </span>
           <ChevronDown
             size={13}
-            className={`shrink-0 text-zinc-600 transition-[color,transform] ${
-              isOpen ? 'rotate-180 text-zinc-200' : ''
+            className={`shrink-0 text-[color:var(--wb-dim)] transition-[color,transform] ${
+              isOpen ? 'rotate-180 text-[color:var(--wb-ink)]' : ''
             }`}
             aria-hidden="true"
           />
@@ -109,7 +109,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
                 className={`flex min-h-10 w-full items-center justify-between gap-3 rounded-lg border px-3 py-2.5 text-left text-[10px] font-bold uppercase transition-[background-color,border-color,color,transform] ${
                   selected
                     ? `${activeStyle.text} ${activeStyle.bg} ${activeStyle.border}`
-                    : 'border-transparent text-zinc-400 hover:bg-white/5 hover:text-zinc-200'
+                    : 'border-transparent text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]'
                 }`}
               >
                 <span className="truncate">{opt}</span>
@@ -137,7 +137,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
         ref={triggerRef}
         type="button"
         onClick={() => setIsOpen((open) => !open)}
-        className="group relative flex h-10 w-12 items-center justify-center overflow-hidden rounded-xl border border-white/2 transition-[border-color,transform] hover:border-emerald-500/2 active:scale-95"
+        className="group relative flex h-10 w-12 items-center justify-center overflow-hidden rounded-xl border border-[color:var(--wb-line)] transition-[border-color,transform] hover:border-emerald-500/2 active:scale-95"
         style={{ backgroundColor: color }}
         aria-label="Open color picker"
         aria-haspopup="dialog"
@@ -147,7 +147,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 mix-blend-overlay" />
         <Pipette
           size={14}
-          className="text-white drop-shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
+          className="text-[color:var(--wb-ink)] drop-shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
         />
       </button>
       <DemandMountedGsapDropdown
@@ -165,7 +165,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
           type="button"
           data-dropdown-item
           onClick={() => nativePickerRef.current?.click()}
-          className="flex h-8 w-full items-center justify-center gap-2 rounded-lg bg-white/5 text-[10px] font-bold uppercase tracking-wide text-zinc-400 transition-colors hover:bg-white/10 hover:text-white"
+          className="flex h-8 w-full items-center justify-center gap-2 rounded-lg bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[10px] font-bold uppercase tracking-wide text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
         >
           <Pipette size={12} /> Custom Color
         </button>

@@ -53,8 +53,8 @@ export function UsageStatusCard({
     usage.tone === 'offline'
       ? 'border-rose-500/2 bg-rose-500/8 text-rose-200'
       : usage.tone === 'available'
-        ? 'border-accent-500/2 bg-accent-500/8 text-white'
-        : 'border-white/2 bg-white/5 text-zinc-200';
+        ? 'border-accent-500/2 bg-accent-500/8 text-[color:var(--wb-ink)]'
+        : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)]';
   const tooltip =
     visibleLimits.length > 0
       ? `${usage.tooltip} · ${visibleLimits
@@ -73,10 +73,10 @@ export function UsageStatusCard({
           ref={trigger}
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
-          className={`studio-hit-target flex items-center gap-1.5 rounded-lg border px-2 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-white/8 cursor-pointer ${popoverPlacement === 'top' ? 'h-7' : 'h-8'} ${usageToneClasses}`}
+          className={`studio-hit-target flex items-center gap-1.5 rounded-lg border px-2 text-left transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] cursor-pointer ${popoverPlacement === 'top' ? 'h-7' : 'h-8'} ${usageToneClasses}`}
           aria-label="Usage status"
         >
-          <div className="flex size-5 shrink-0 items-center justify-center rounded-md bg-black/20 text-inherit">
+          <div className="flex size-5 shrink-0 items-center justify-center rounded-md bg-[color:var(--wb-well)] text-inherit">
             {usage.tone === 'offline' ? <WifiOff size={13} /> : <Gauge size={13} />}
           </div>
           {visibleLimits.length > 0 ? (
@@ -84,10 +84,10 @@ export function UsageStatusCard({
               {visibleLimits.map((limit) => (
                 <div key={limit.id} className="grid w-20 gap-1 leading-none">
                   <span className="flex min-w-0 items-center justify-between gap-1">
-                    <span className="truncate text-[8px] font-black uppercase tracking-widest text-zinc-400">
+                    <span className="truncate text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                       {limit.label}
                     </span>
-                    <span className="text-[9px] font-black tabular-nums text-white">
+                    <span className="text-[9px] font-black tabular-nums text-[color:var(--wb-ink)]">
                       {Math.round(limit.availablePercent)}%
                     </span>
                   </span>
@@ -104,15 +104,15 @@ export function UsageStatusCard({
             </div>
           ) : (
             <div className="min-w-0">
-              <p className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+              <p className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                 Codex Usage
               </p>
               <div className="flex items-center gap-2 leading-none">
-                <span className="max-w-28 truncate text-[11px] font-black tabular-nums text-white">
+                <span className="max-w-28 truncate text-[11px] font-black tabular-nums text-[color:var(--wb-ink)]">
                   {usage.value}
                 </span>
                 {!usage.isLoading && usage.unitLabel && (
-                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                     {usage.unitLabel}
                   </span>
                 )}
@@ -125,7 +125,7 @@ export function UsageStatusCard({
         <div
           role="region"
           aria-label="Account usage"
-          className={`absolute right-0 z-[100] w-80 rounded-xl border border-white/10 bg-zinc-900 p-4 shadow-xl ${popoverPlacement === 'top' ? 'bottom-9' : 'top-11'}`}
+          className={`absolute right-0 z-[100] w-80 rounded-xl border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-4 shadow-xl ${popoverPlacement === 'top' ? 'bottom-9' : 'top-11'}`}
         >
           <div className="flex items-center justify-between">
             <strong>Account usage</strong>
@@ -133,7 +133,7 @@ export function UsageStatusCard({
               Close
             </button>
           </div>
-          <p className="my-3 text-sm text-zinc-300">{usage.tooltip}</p>
+          <p className="my-3 text-sm text-[color:var(--wb-ink)]">{usage.tooltip}</p>
           {usage.limits.map((limit) => (
             <p key={limit.id} className="my-2 text-sm">
               {limit.label}: {Math.round(limit.availablePercent)}% available · {limit.resetLabel}

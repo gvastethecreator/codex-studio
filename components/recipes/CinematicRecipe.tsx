@@ -87,8 +87,8 @@ const ShotTypeDropdown: React.FC<{
         onClick={() => setIsOpen((open) => !open)}
         className={`flex min-h-7 max-w-[120px] items-center gap-1.5 rounded border px-2 py-1 text-center text-[9px] font-bold uppercase tracking-wider transition-[background-color,border-color,color,transform] ${
           isOpen
-            ? 'border-rose-400/2 bg-rose-500/14 text-white'
-            : 'border-white/2 bg-black/50 text-white/70 hover:bg-white/10 hover:text-white'
+            ? 'border-rose-400/2 bg-rose-500/14 text-[color:var(--wb-ink)]'
+            : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
         }`}
         aria-label={`${sceneLabel} shot type: ${value}`}
         aria-haspopup="listbox"
@@ -98,8 +98,8 @@ const ShotTypeDropdown: React.FC<{
         <span className="truncate">{value}</span>
         <ChevronDown
           size={11}
-          className={`shrink-0 text-white/45 transition-[color,transform] ${
-            isOpen ? 'rotate-180 text-white' : ''
+          className={`shrink-0 text-[color:var(--wb-ink)]/45 transition-[color,transform] ${
+            isOpen ? 'rotate-180 text-[color:var(--wb-ink)]' : ''
           }`}
           aria-hidden="true"
         />
@@ -131,8 +131,8 @@ const ShotTypeDropdown: React.FC<{
               }}
               className={`flex min-h-8 w-full items-center justify-between gap-2 rounded-[5px] px-2 py-1.5 text-left text-[9px] font-black uppercase tracking-wider transition-[background-color,color] ${
                 selected
-                  ? 'bg-rose-500/18 text-white'
-                  : 'text-zinc-400 hover:bg-white/8 hover:text-zinc-100'
+                  ? 'bg-rose-500/18 text-[color:var(--wb-ink)]'
+                  : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
               }`}
             >
               <span className="truncate">{shot}</span>
@@ -225,10 +225,10 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
     () => (
       <>
         <div className="flex flex-col gap-1.5">
-          <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest pl-1">
+          <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
             Layout
           </span>
-          <div className="flex items-center gap-2 p-1 bg-white/5 rounded-xl border border-white/2">
+          <div className="flex items-center gap-2 p-1 bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] rounded-xl border border-[color:var(--wb-line)]">
             {FRAME_COUNTS.map((count) => (
               <button
                 type="button"
@@ -236,8 +236,8 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
                 onClick={() => handleFrameChange(count)}
                 className={`h-9 px-4 rounded-lg flex items-center gap-2 transition-[background-color,color,box-shadow,transform] ${
                   params.frames === count
-                    ? 'bg-rose-600 text-white shadow-lg'
-                    : 'text-zinc-500 hover:text-zinc-300 hover:bg-white/5'
+                    ? 'bg-rose-600 text-[color:var(--wb-ink)] shadow-lg'
+                    : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'
                 }`}
               >
                 {count === 3 && <LayoutTemplate size={14} />}
@@ -249,7 +249,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           </div>
         </div>
 
-        <div className="h-10 w-px bg-white/10 mx-2 hidden xl:block" />
+        <div className="h-10 w-px bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-2 hidden xl:block" />
 
         <div className="flex items-center gap-3 flex-wrap justify-center">
           <ControlDropdown
@@ -278,7 +278,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           />
         </div>
 
-        <div className="h-10 w-px bg-white/10 mx-2 hidden xl:block" />
+        <div className="h-10 w-px bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-2 hidden xl:block" />
 
         <details className="recipe-advanced">
           <summary>Advanced camera and mood</summary>
@@ -329,7 +329,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
       className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-6 sm:pt-20 sm:pb-48 flex items-center justify-center"
     >
       <div
-        className="relative overflow-hidden rounded-lg border border-white/2 bg-zinc-900 shadow-2xl transition-[background-color,border-color,box-shadow,transform] duration-500 ease-out-expo group"
+        className="relative overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl transition-[background-color,border-color,box-shadow,transform] duration-500 ease-out-expo group"
         style={{
           aspectRatio: ratioValue,
           width: 'min(90vw, 74vh)',
@@ -346,7 +346,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
         )}
 
         <div
-          className="pointer-events-none absolute inset-0 grid gap-px bg-black/50 transition-colors duration-500"
+          className="pointer-events-none absolute inset-0 grid gap-px bg-[color:var(--wb-well)] transition-colors duration-500"
           style={{
             gridTemplateColumns: `repeat(${gridLayout.cols}, 1fr)`,
             gridTemplateRows: `repeat(${gridLayout.rows}, 1fr)`,
@@ -355,9 +355,9 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           {Array.from({ length: params.frames }).map((_, i) => (
             <div
               key={i}
-              className="relative bg-white/[0.02] backdrop-blur-[1px] flex flex-col items-center justify-center border border-white/2 group/cell pointer-events-auto"
+              className="relative bg-white/[0.02] backdrop-blur-[1px] flex flex-col items-center justify-center border border-[color:var(--wb-line)] group/cell pointer-events-auto"
             >
-              <span className="text-[9px] font-black text-white/30 group-hover/cell:text-white/60 uppercase tracking-widest transition-colors mb-2">
+              <span className="text-[9px] font-black text-[color:var(--wb-ink)]/30 group-hover/cell:text-[color:var(--wb-ink)]/60 uppercase tracking-widest transition-colors mb-2">
                 {i === 0 ? 'START' : i === params.frames - 1 ? 'END' : `SCENE ${i + 1}`}
               </span>
               <ShotTypeDropdown
@@ -377,7 +377,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
             type="button"
             aria-label="Remove cinematic reference"
             onClick={() => updateConfig('attachments', [])}
-            className="pointer-events-auto absolute right-4 top-4 z-20 rounded-lg border border-white/2 bg-black/60 p-2 text-white transition-[background-color,color] hover:bg-red-500 hover:text-white"
+            className="pointer-events-auto absolute right-4 top-4 z-20 rounded-lg border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] transition-[background-color,color] hover:bg-red-500 hover:text-[color:var(--wb-ink)]"
           >
             <X size={14} />
           </button>

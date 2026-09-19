@@ -22,7 +22,7 @@ import {
   SPRITE_ATLAS_BACKGROUND_REMOVAL,
   SPRITE_ATLAS_FRAME_BUDGETS,
 } from '../packages/shared/src/spriteAtlasContracts';
-import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
+import { resolveCodexHttpImageSize } from '../packages/shared/src/codexExecutionContract';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { type RegisteredRecipeId } from './recipeIds';
 import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
@@ -1460,7 +1460,10 @@ export function buildGenerationTaskSpecFromRecipe({
       ? requestedTask
       : (module?.defaultTask ?? 'image_generate'));
   const resolvedImageSize = config.aspectRatio
-    ? getImageGenSizeForRatio(config.aspectRatio).size
+    ? resolveCodexHttpImageSize({
+        aspectRatio: config.aspectRatio,
+        imageSize: config.imageSize ?? '1K',
+      })
     : (config.imageSize ?? null);
   const recipeNegativePrompt =
     config.recipeId === 'styles' && typeof config.recipeParams?.negativePrompt === 'string'

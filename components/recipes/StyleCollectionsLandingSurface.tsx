@@ -494,11 +494,11 @@ function StyleFolderCard({
       {...dataAttributes}
     >
       {isHighlighted && (
-        <span className="pointer-events-none absolute -inset-2 z-[70] rounded-[9px] border border-white/2 shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_22px_55px_rgba(255,255,255,0.10)]" />
+        <span className="pointer-events-none absolute -inset-2 z-[70] rounded-[9px] border border-[color:var(--wb-line)] shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_22px_55px_rgba(255,255,255,0.10)]" />
       )}
-      <div className="absolute inset-0 rounded-[6px] border border-white/2 bg-zinc-950 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]" />
+      <div className="absolute inset-0 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]" />
       <div
-        className={`absolute -top-2 left-0 h-4 w-[46%] rounded-t-[6px] border-x border-t border-white/2 ${theme.bg} opacity-60 shadow-[0_8px_22px_rgba(0,0,0,0.28)]`}
+        className={`absolute -top-2 left-0 h-4 w-[46%] rounded-t-[6px] border-x border-t border-[color:var(--wb-line)] ${theme.bg} opacity-60 shadow-[0_8px_22px_rgba(0,0,0,0.28)]`}
       />
 
       {files.map((file, fileIndex) => (
@@ -509,7 +509,7 @@ function StyleFolderCard({
           }}
           data-style-pack-folder-file={file.id}
           aria-hidden="true"
-          className="absolute inset-x-4 bottom-11 top-8 overflow-hidden rounded-[6px] border border-white/2 bg-zinc-900 shadow-[0_18px_34px_rgba(0,0,0,0.38)]"
+          className="absolute inset-x-4 bottom-11 top-8 overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_18px_34px_rgba(0,0,0,0.38)]"
         >
           {filesMounted && file.src ? (
             <img
@@ -522,15 +522,15 @@ function StyleFolderCard({
               className="size-full object-cover"
             />
           ) : filesMounted ? (
-            <div className={`flex size-full items-center justify-center bg-zinc-900 ${theme.text}`}>
+            <div className={`flex size-full items-center justify-center bg-[color:var(--wb-panel)] ${theme.text}`}>
               {icon}
             </div>
           ) : (
-            <div className="size-full bg-zinc-900" />
+            <div className="size-full bg-[color:var(--wb-panel)]" />
           )}
           <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-white/10" />
           <div
-            className={`absolute left-2 top-2 flex size-6 items-center justify-center rounded-[6px] border border-white/2 bg-black/42 ${theme.text} backdrop-blur`}
+            className={`absolute left-2 top-2 flex size-6 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-black/42 ${theme.text} backdrop-blur`}
           >
             {icon}
           </div>
@@ -540,14 +540,14 @@ function StyleFolderCard({
       <div
         ref={coverRef}
         data-style-pack-folder-cover={id}
-        className="absolute inset-0 overflow-visible rounded-[6px] border border-white/2 bg-zinc-900 shadow-[0_18px_42px_rgba(0,0,0,0.38)]"
+        className="absolute inset-0 overflow-visible rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_18px_42px_rgba(0,0,0,0.38)]"
         style={{ transformOrigin: 'center bottom' }}
       >
         <div
-          className={`absolute -top-3 left-0 h-5 w-[54%] rounded-t-[6px] border-x border-t border-white/2 ${theme.bg} opacity-75 shadow-[0_8px_22px_rgba(0,0,0,0.32)]`}
+          className={`absolute -top-3 left-0 h-5 w-[54%] rounded-t-[6px] border-x border-t border-[color:var(--wb-line)] ${theme.bg} opacity-75 shadow-[0_8px_22px_rgba(0,0,0,0.32)]`}
         />
         <div className="absolute inset-0 overflow-hidden rounded-[6px]">
-          <div className="absolute inset-0 bg-zinc-950">
+          <div className="absolute inset-0 bg-[color:var(--wb-panel)]">
             {coverImage ? (
               <img
                 src={coverImage}
@@ -572,7 +572,7 @@ function StyleFolderCard({
               <span
                 data-style-pack-count={id}
                 aria-label={countAriaLabel}
-                className={`flex min-w-9 items-center justify-center rounded-[6px] border border-white/2 ${theme.bg} px-2 py-1 text-[10px] font-black tabular-nums text-white/95 shadow-[0_8px_18px_rgba(0,0,0,0.28)] backdrop-blur-md`}
+                className={`flex min-w-9 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] ${theme.bg} px-2 py-1 text-[10px] font-black tabular-nums text-[color:var(--wb-ink)]/95 shadow-[0_8px_18px_rgba(0,0,0,0.28)] backdrop-blur-md`}
                 style={
                   {
                     '--tw-bg-opacity': '0.76',
@@ -590,14 +590,14 @@ function StyleFolderCard({
               </p>
               <h3
                 data-style-pack-card-title={id}
-                className={`flex min-w-0 items-center gap-1.5 whitespace-nowrap font-black leading-tight tracking-normal text-white ${titleClassName}`}
+                className={`flex min-w-0 items-center gap-1.5 whitespace-nowrap font-black leading-tight tracking-normal text-[color:var(--wb-ink)] ${titleClassName}`}
               >
                 <span className={`flex size-6 shrink-0 items-center justify-center ${theme.text}`}>
                   {icon}
                 </span>
                 <span className="min-w-0 truncate">{title}</span>
               </h3>
-              <p className="mt-1.5 line-clamp-2 text-[10px] font-medium leading-snug text-zinc-300/86">
+              <p className="mt-1.5 line-clamp-2 text-[10px] font-medium leading-snug text-[color:var(--wb-ink)]/86">
                 {description}
               </p>
             </div>
@@ -838,13 +838,13 @@ function StyleFolderPlaceholder({
       data-style-tab-url={`#${tabHash}`}
       aria-label={`Open ${title}`}
       onClick={onOpen}
-      className={`group relative z-0 block aspect-[3/4] min-h-[252px] w-full cursor-pointer overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950 text-left outline-none focus-visible:ring-2 focus-visible:ring-white/35 sm:min-h-[286px] ${
+      className={`group relative z-0 block aspect-[3/4] min-h-[252px] w-full cursor-pointer overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left outline-none focus-visible:ring-2 focus-visible:ring-white/35 sm:min-h-[286px] ${
         isHighlighted ? 'z-30 brightness-[1.08]' : ''
       }`}
       {...dataAttributes}
     >
       <span className={`absolute inset-x-0 top-0 h-1 ${theme.bg}`} />
-      <span className="absolute inset-x-3 bottom-3 truncate text-xs font-black uppercase text-zinc-500">
+      <span className="absolute inset-x-3 bottom-3 truncate text-xs font-black uppercase text-[color:var(--wb-muted)]">
         {title}
       </span>
     </button>
@@ -888,16 +888,16 @@ function StyleCollectionFamilySection({
       <div className="mb-2 flex items-center gap-2">
         <div className={`h-4 w-1 rounded-[2px] ${familyTheme.bg}`} />
         <div className="min-w-0">
-          <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-300">
+          <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-ink)]">
             {family.title}
           </h3>
-          <p className="mt-0.5 line-clamp-1 text-[10px] font-medium text-zinc-600">
+          <p className="mt-0.5 line-clamp-1 text-[10px] font-medium text-[color:var(--wb-dim)]">
             {family.description}
           </p>
         </div>
         <div className="h-px flex-1 bg-white/6" />
       </div>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-3 xl:grid-cols-[repeat(auto-fill,minmax(210px,1fr))]">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {collections.map((collection, index) => {
           const tabId = getCollectionTabId(collection.id);
           const targetId = `collection:${collection.id}`;
@@ -959,19 +959,19 @@ function StyleSourcePacksSection({
       ref={sectionRef}
       data-style-source-packs-section
       data-style-source-packs-mounted={isMounted ? 'true' : 'false'}
-      className="rounded-[6px] border border-white/2 bg-zinc-950/72"
+      className="rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]"
     >
       <div
         data-style-source-packs-summary
-        className="flex items-center gap-2 px-3 py-3 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-400"
+        className="flex items-center gap-2 px-3 py-3 text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]"
       >
         <Layers size={16} />
         Source Packs
-        <span className="ml-auto rounded-[6px] border border-white/2 bg-white/[0.035] px-2 py-1 text-[9px] text-zinc-500">
+        <span className="ml-auto rounded-[6px] border border-[color:var(--wb-line)] bg-white/[0.035] px-2 py-1 text-[9px] text-[color:var(--wb-muted)]">
           {STYLE_RUNTIME_PACK_SUMMARIES.length}
         </span>
       </div>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(158px,1fr))] gap-3 border-t border-white/2 p-3 sm:grid-cols-[repeat(auto-fill,minmax(190px,1fr))] xl:grid-cols-[repeat(auto-fill,minmax(204px,1fr))]">
+      <div className="grid grid-cols-2 gap-3 border-t border-[color:var(--wb-line)] p-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
         {STYLE_RUNTIME_PACK_SUMMARIES.map((pack, index) => {
           const targetId = `source:${pack.id}`;
           const sharedProps = {
@@ -1041,10 +1041,10 @@ function StyleNavigationPanel({
 
   return (
     <aside className="hidden min-h-0 min-w-0 lg:block" data-style-landing-navigation>
-      <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-[6px] border border-white/2 bg-zinc-950/78 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
-        <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-white/2 px-3">
+      <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+        <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-[color:var(--wb-line)] px-3">
           <div className="min-w-0">
-            <p className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
+            <p className="text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
               Quick Map
             </p>
           </div>
@@ -1052,7 +1052,7 @@ function StyleNavigationPanel({
             type="button"
             onClick={onClose}
             data-style-landing-navigation-toggle
-            className="flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/[0.035] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
+            className="flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             aria-label="Hide style map"
             title="Hide style map"
           >
@@ -1064,7 +1064,7 @@ function StyleNavigationPanel({
             <div key={section.id} className="mb-3 last:mb-0">
               <div className="mb-1.5 flex items-center gap-2 px-1">
                 <span className="h-px flex-1 bg-white/6" />
-                <span className="text-[8px] font-black uppercase tracking-[0.2em] text-zinc-600">
+                <span className="text-[8px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-dim)]">
                   {section.title}
                 </span>
                 <span className="h-px flex-1 bg-white/6" />
@@ -1092,29 +1092,29 @@ function StyleNavigationPanel({
                       }}
                       className={`group/nav flex min-h-9 w-full items-center gap-2 rounded-[6px] border px-2 py-1.5 text-left outline-none transition-[background-color,border-color,transform,color] duration-150 focus-visible:ring-2 focus-visible:ring-white/30 ${
                         active
-                          ? 'border-white/2 bg-white/10 text-white'
-                          : 'border-transparent bg-transparent text-zinc-500 hover:border-white/2 hover:bg-white/[0.045] hover:text-zinc-200'
+                          ? 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
+                          : 'border-transparent bg-transparent text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-white/[0.045] hover:text-[color:var(--wb-ink)]'
                       }`}
                     >
                       <span
-                        className={`flex size-6 shrink-0 items-center justify-center rounded-[5px] border border-white/2 bg-white/[0.035] ${item.theme.text}`}
+                        className={`flex size-6 shrink-0 items-center justify-center rounded-[5px] border border-[color:var(--wb-line)] bg-white/[0.035] ${item.theme.text}`}
                       >
                         {item.icon}
                       </span>
                       <span className="min-w-0 flex-1">
                         <span
                           className={`block truncate text-[10px] font-black uppercase tracking-normal ${
-                            active ? item.theme.text : 'text-zinc-300 group-hover/nav:text-white'
+                            active ? item.theme.text : 'text-[color:var(--wb-ink)] group-hover/nav:text-[color:var(--wb-ink)]'
                           }`}
                         >
                           {item.label}
                         </span>
-                        <span className="block truncate text-[9px] font-medium text-zinc-600">
+                        <span className="block truncate text-[9px] font-medium text-[color:var(--wb-dim)]">
                           {item.caption}
                         </span>
                       </span>
                       <span
-                        className={`rounded-[5px] border border-white/2 px-1.5 py-0.5 text-[8px] font-black tabular-nums ${active ? `${item.theme.bg} text-white` : 'bg-white/[0.035] text-zinc-500'}`}
+                        className={`rounded-[5px] border border-[color:var(--wb-line)] px-1.5 py-0.5 text-[8px] font-black tabular-nums ${active ? `${item.theme.bg} text-[color:var(--wb-ink)]` : 'bg-white/[0.035] text-[color:var(--wb-muted)]'}`}
                         style={
                           active
                             ? ({ '--tw-bg-opacity': '0.68' } as React.CSSProperties)
@@ -1241,12 +1241,12 @@ export function StyleCollectionsLandingSurface({
   );
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col overflow-hidden px-4 py-4 sm:px-5 sm:py-5 2xl:px-6">
-      <div className="mb-4 shrink-0 flex flex-col gap-1">
-        <h2 className="vt-style-pack-title text-2xl font-black uppercase tracking-normal text-white sm:tracking-tight">
+    <div className="flex min-h-0 flex-1 flex-col overflow-hidden px-4 pt-3 pb-4 sm:px-5 sm:pt-4 sm:pb-5 2xl:px-6">
+      <div className="mb-3 shrink-0 flex flex-col gap-1">
+        <h2 className="vt-style-pack-title truncate text-lg font-semibold tracking-tight text-[color:var(--wb-ink)]">
           Style Packs
         </h2>
-        <p className="max-w-3xl text-[10px] font-medium leading-relaxed text-zinc-500">
+        <p className="max-w-3xl text-[10px] font-medium leading-relaxed text-[color:var(--wb-muted)]">
           Collection-first style systems grouped by creative intent.
         </p>
       </div>
@@ -1269,13 +1269,13 @@ export function StyleCollectionsLandingSurface({
         ) : (
           <aside
             data-style-landing-navigation-rail
-            className="hidden min-h-0 min-w-0 items-start justify-center rounded-[6px] border border-white/2 bg-zinc-950/70 p-1.5 lg:flex"
+            className="hidden min-h-0 min-w-0 items-start justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
           >
             <button
               type="button"
               onClick={onToggleNavigationPanel}
               data-style-landing-navigation-toggle
-              className="flex size-7 items-center justify-center rounded-[6px] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
+              className="flex size-7 items-center justify-center rounded-[6px] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
               aria-label="Show style map"
               title="Show style map"
             >
@@ -1293,12 +1293,12 @@ export function StyleCollectionsLandingSurface({
             <section data-style-collection-family="personal" className="min-w-0">
               <div className="mb-2 flex items-center gap-2">
                 <div className="h-4 w-1 rounded-[2px] bg-sky-500" />
-                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-300">
+                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-ink)]">
                   Personal
                 </h3>
                 <div className="h-px flex-1 bg-white/6" />
               </div>
-              <div className="grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-3 xl:grid-cols-[repeat(auto-fill,minmax(210px,1fr))]">
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
                 {personalStyleCollections.map((collection, index) => {
                   const tabId =
                     collection.id === 'my_styles' ? USER_STYLE_PACK_ID : FAVORITES_PACK_ID;

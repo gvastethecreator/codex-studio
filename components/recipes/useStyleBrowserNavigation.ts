@@ -7,7 +7,6 @@ import {
   readStyleTabIdFromHash as readStyleTabIdFromRouteHash,
   normalizeStyleTabId as normalizeStyleTabRouteId,
   STYLE_PACKS_TAB_ID,
-  STYLE_RECIPE_HASH_PREFIX,
   type StyleTabId,
   type StyleTabRouteOptions,
 } from './styleTabRouting';
@@ -131,12 +130,6 @@ export function useStyleBrowserNavigation({
     const syncStyleTabFromHash = () => {
       const hashTabId = readStyleTabIdFromRouteHash(window.location.hash, routeOptions);
       if (!hashTabId) return;
-
-      if (window.location.hash === `#${STYLE_RECIPE_HASH_PREFIX}`) {
-        writeStyleTabHash(lastTab, 'replace');
-        return;
-      }
-
       if (currentStyleTabRef.current === hashTabId) return;
       applyStyleTab(hashTabId, { resetSearch: false });
     };
@@ -144,7 +137,7 @@ export function useStyleBrowserNavigation({
     syncStyleTabFromHash();
     window.addEventListener('hashchange', syncStyleTabFromHash);
     return () => window.removeEventListener('hashchange', syncStyleTabFromHash);
-  }, [applyStyleTab, routeOptions, writeStyleTabHash, lastTab]);
+  }, [applyStyleTab, routeOptions]);
 
   const toggleFavorite = useCallback(
     (presetId: string) => {

@@ -59,7 +59,7 @@ function getServerStatusColor(status: StudioJob['status']) {
     case 'failed':
       return 'text-rose-400';
     case 'cancelled':
-      return 'text-zinc-400';
+      return 'text-[color:var(--wb-muted)]';
     case 'needs_review':
       return 'text-amber-300';
     default:
@@ -159,12 +159,12 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     return (
       <div
         aria-label="Jobs"
-        className="flex h-full min-h-0 w-full flex-col border border-white/10 bg-zinc-950 sm:w-[304px] sm:border-y-0 sm:border-r-0"
+        className="studio-surface flex h-full min-h-0 w-full flex-col border border-[color:var(--wb-border)] sm:w-[304px] sm:border-y-0 sm:border-r-0"
       >
         <div className="flex items-center justify-between px-3 py-3">
           <div>
-            <h3 className="text-sm font-semibold text-white/90">Jobs</h3>
-            <p className="mt-0.5 text-xs text-zinc-400">
+            <h3 className="text-sm font-semibold text-[color:var(--wb-ink)]/90">Jobs</h3>
+            <p className="mt-0.5 text-xs text-[color:var(--wb-muted)]">
               {jobHistory.error
                 ? 'Updates unavailable · last confirmed state'
                 : jobHistory.loading && !jobHistory.page
@@ -179,14 +179,14 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               type="button"
               aria-label="Close jobs"
               onClick={onClose}
-              className="studio-hit-target rounded-lg p-1.5 text-zinc-400 hover:bg-white/10 hover:text-white"
+              className="studio-hit-target rounded-lg p-1.5 text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             >
               <XCircle size={18} />
             </button>
           ) : null}
         </div>
-        <div className="space-y-3 border-b border-white/10 px-3 pb-3">
-          <label className="block text-xs text-zinc-400">
+        <div className="space-y-3 border-b border-[color:var(--wb-border)] px-3 pb-3">
+          <label className="block text-xs text-[color:var(--wb-muted)]">
             Workspace
             <select
               aria-label="Job workspace"
@@ -195,7 +195,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 setWorkspaceFilter(event.target.value);
                 setVisibleCount(20);
               }}
-              className="mt-1 w-full rounded-lg border border-white/10 bg-zinc-900 p-2 text-xs text-white"
+              className="mt-1 w-full rounded-lg border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-2 text-xs text-[color:var(--wb-ink)]"
             >
               <option value="">All workspaces</option>
               {jobHistory.workspaces.map((workspace) => (
@@ -208,7 +208,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
           <div
             role="group"
             aria-label="Job views"
-            className="grid grid-cols-3 gap-1 rounded-lg bg-black/40 p-1"
+            className="grid grid-cols-3 gap-1 rounded-lg bg-[color:var(--wb-well)] p-1"
           >
             {(['active', 'review', 'history'] as const).map((item) => (
               <button
@@ -222,8 +222,8 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 className={cn(
                   'min-h-9 rounded-md px-1 text-xs transition-colors',
                   view === item
-                    ? 'bg-white/10 text-white'
-                    : 'text-zinc-400 hover:bg-white/5 hover:text-white',
+                    ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
+                    : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]',
                 )}
               >
                 {item === 'active' ? 'Active' : item === 'review' ? 'Review' : 'History'}
@@ -257,13 +257,13 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             </div>
           ) : null}
           {view === 'review' ? (
-            <p className="text-xs leading-relaxed text-zinc-400">
+            <p className="text-xs leading-relaxed text-[color:var(--wb-muted)]">
               These jobs have stopped and need a decision. Open a job to review what happened.
             </p>
           ) : null}
           {view === 'history' ? (
             <>
-              <label className="block text-xs text-zinc-400">
+              <label className="block text-xs text-[color:var(--wb-muted)]">
                 Status
                 <select
                   aria-label="Job history status"
@@ -271,7 +271,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   onChange={(event) =>
                     setStatusFilter(event.target.value as TerminalJobStatus | '')
                   }
-                  className="mt-1 w-full rounded-lg border border-white/10 bg-zinc-900 p-2 text-xs text-white"
+                  className="mt-1 w-full rounded-lg border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-2 text-xs text-[color:var(--wb-ink)]"
                 >
                   <option value="">All finished jobs</option>
                   <option value="completed">Completed</option>
@@ -280,7 +280,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                 </select>
               </label>
               {results.length > 0 ? (
-                <details className="rounded-lg border border-white/10 p-2 text-xs text-zinc-400">
+                <details className="rounded-lg border border-[color:var(--wb-border)] p-2 text-xs text-[color:var(--wb-muted)]">
                   <summary className="cursor-pointer py-1">
                     Recent images · current workspace
                   </summary>
@@ -290,7 +290,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                         type="button"
                         key={result.id}
                         onClick={() => setActiveResultId(result.id)}
-                        className="group relative overflow-hidden rounded border border-white/10"
+                        className="group relative overflow-hidden rounded border border-[color:var(--wb-border)]"
                         title={result.prompt || 'Generated result'}
                       >
                         <img
@@ -302,7 +302,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                           loading="lazy"
                           decoding="async"
                         />
-                        <span className="absolute inset-0 grid place-items-center text-white opacity-0 group-hover:bg-black/35 group-hover:opacity-100 group-focus-visible:opacity-100">
+                        <span className="absolute inset-0 grid place-items-center text-[color:var(--wb-ink)] opacity-0 group-hover:bg-[color:var(--wb-well)] group-hover:opacity-100 group-focus-visible:opacity-100">
                           <Maximize2 size={14} />
                         </span>
                       </button>
@@ -310,7 +310,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   </div>
                 </details>
               ) : null}
-              <p className="text-xs text-zinc-400">
+              <p className="text-xs text-[color:var(--wb-muted)]">
                 {jobHistory.page?.counts.history ?? '—'} matching jobs
               </p>
             </>
@@ -328,7 +328,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             {jobGroups.map(([groupId, group]) => (
               <div key={groupId} className="space-y-2">
                 {group.length > 1 && (
-                  <p className="pt-3 text-xs text-zinc-300">
+                  <p className="pt-3 text-xs text-[color:var(--wb-ink)]">
                     {resolveQueueRecipeLabel(group[0].recipeId, group[0].kind)} · {group.length}{' '}
                     jobs on this page · {group.filter((job) => job.status === 'completed').length}{' '}
                     completed
@@ -357,15 +357,15 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
           </section>
           {!jobHistory.loading && !jobHistory.error && jobs.length === 0 ? (
             <div className="py-8 text-center">
-              <Layers size={24} className="mx-auto mb-3 text-zinc-500" />
-              <p className="text-sm text-zinc-200">
+              <Layers size={24} className="mx-auto mb-3 text-[color:var(--wb-muted)]" />
+              <p className="text-sm text-[color:var(--wb-ink)]">
                 {view === 'active'
                   ? 'No active jobs'
                   : view === 'review'
                     ? 'Nothing to review'
                     : 'No matching history'}
               </p>
-              <p className="mt-1 text-xs leading-relaxed text-zinc-400">
+              <p className="mt-1 text-xs leading-relaxed text-[color:var(--wb-muted)]">
                 {view === 'active'
                   ? 'New generations will appear here.'
                   : view === 'review'
@@ -375,7 +375,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             </div>
           ) : null}
           {jobHistory.loading ? (
-            <p role="status" className="text-xs text-zinc-400">
+            <p role="status" className="text-xs text-[color:var(--wb-muted)]">
               Loading jobs…
             </p>
           ) : null}
@@ -383,7 +383,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <button
               type="button"
               onClick={() => setVisibleCount((count) => count + 20)}
-              className="min-h-9 w-full rounded-lg bg-white/10 px-2 text-xs text-white"
+              className="min-h-9 w-full rounded-lg bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] px-2 text-xs text-[color:var(--wb-ink)]"
             >
               Show more · {visibleJobs.length} of {jobs.length}
             </button>
@@ -391,13 +391,13 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <button
               type="button"
               onClick={jobHistory.loadMore}
-              className="min-h-9 w-full rounded-lg bg-white/10 px-2 text-xs text-white"
+              className="min-h-9 w-full rounded-lg bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] px-2 text-xs text-[color:var(--wb-ink)]"
             >
               Load older jobs
             </button>
           ) : null}
           {view === 'active' ? (
-            <details className="border-t border-white/10 pt-3 text-xs text-zinc-400">
+            <details className="border-t border-[color:var(--wb-border)] pt-3 text-xs text-[color:var(--wb-muted)]">
               <summary className="cursor-pointer py-1">Worker details</summary>
               <div className="mt-2 space-y-1" aria-label="Worker capacity">
                 {worker.status ? (
@@ -471,13 +471,13 @@ const RecentResultViewer: React.FC<{
   }, [navigationRef]);
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col bg-black/92 backdrop-blur-md">
-      <div className="flex h-14 shrink-0 items-center justify-between border-b border-white/2 px-3">
+    <div className="fixed inset-0 z-50 flex flex-col bg-[color:var(--wba-bg)] backdrop-blur-md">
+      <div className="flex h-14 shrink-0 items-center justify-between border-b border-[color:var(--wb-line)] px-3">
         <div className="min-w-0">
-          <p className="truncate text-xs font-semibold text-white/90">
+          <p className="truncate text-xs font-semibold text-[color:var(--wb-ink)]/90">
             {result.prompt || 'Generated result'}
           </p>
-          <p className="text-[10px] font-bold uppercase tracking-widest text-white/35">
+          <p className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-ink)]/35">
             {index + 1} / {total}
           </p>
         </div>
@@ -486,7 +486,7 @@ const RecentResultViewer: React.FC<{
             <button
               type="button"
               onClick={onInspect}
-              className="rounded-lg border border-white/2 bg-white/5 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-white/70 transition-colors hover:bg-white/10 hover:text-white"
+              className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             >
               Inspect
             </button>
@@ -494,7 +494,7 @@ const RecentResultViewer: React.FC<{
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg p-2 text-white/50 transition-colors hover:bg-white/10 hover:text-white"
+            className="rounded-lg p-2 text-[color:var(--wb-ink)]/50 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             aria-label="Close recent result"
           >
             <XCircle size={18} />
@@ -505,7 +505,7 @@ const RecentResultViewer: React.FC<{
         <button
           type="button"
           onClick={onPrevious}
-          className="absolute left-3 z-10 rounded-lg border border-white/2 bg-black/50 p-2 text-white/65 transition-colors hover:bg-white/10 hover:text-white"
+          className="absolute left-3 z-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-[color:var(--wb-ink)]/65 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           aria-label="Previous recent result"
         >
           <ChevronLeft size={20} />
@@ -521,7 +521,7 @@ const RecentResultViewer: React.FC<{
         <button
           type="button"
           onClick={onNext}
-          className="absolute right-3 z-10 rounded-lg border border-white/2 bg-black/50 p-2 text-white/65 transition-colors hover:bg-white/10 hover:text-white"
+          className="absolute right-3 z-10 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-[color:var(--wb-ink)]/65 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           aria-label="Next recent result"
         >
           <ChevronRight size={20} />
@@ -574,7 +574,7 @@ const ServerJobItem: React.FC<{
     <article
       className={cn(
         'overflow-hidden rounded-lg border p-2.5',
-        isSelected ? 'border-accent-500/50 bg-accent-500/10' : 'border-white/10 bg-white/[0.025]',
+        isSelected ? 'border-accent-500/50 bg-accent-500/10' : 'border-[color:var(--wb-border)] bg-white/[0.025]',
       )}
     >
       <button
@@ -588,7 +588,7 @@ const ServerJobItem: React.FC<{
             {icon}
             {statusLabel}
           </span>
-          <span className="truncate text-zinc-400">{recipeLabel}</span>
+          <span className="truncate text-[color:var(--wb-muted)]">{recipeLabel}</span>
         </div>
         <div className="flex items-start gap-2">
           {previewSrc ? (
@@ -602,11 +602,11 @@ const ServerJobItem: React.FC<{
               decoding="async"
             />
           ) : null}
-          <p className="line-clamp-2 text-xs leading-relaxed text-zinc-200">
+          <p className="line-clamp-2 text-xs leading-relaxed text-[color:var(--wb-ink)]">
             {job.originalPrompt || 'Untitled job'}
           </p>
         </div>
-        <p className="mt-2 text-[11px] text-zinc-400">
+        <p className="mt-2 text-[11px] text-[color:var(--wb-muted)]">
           {job.status === 'running'
             ? `Submitted ${formatDurationMs(createdAtMs === null ? null : nowMs - createdAtMs)} ago`
             : job.status === 'queued'
@@ -614,7 +614,7 @@ const ServerJobItem: React.FC<{
               : new Date(job.createdAt).toLocaleDateString([], { month: 'short', day: 'numeric' })}
           <span className="mx-1.5">·</span>
           {formatClockTime(createdAtMs)}
-          <span className="float-right text-zinc-300">Details →</span>
+          <span className="float-right text-[color:var(--wb-ink)]">Details →</span>
         </p>
       </button>
       {waitReason ? <p className="mt-2 text-xs text-amber-300">{waitReason}</p> : null}
@@ -628,7 +628,7 @@ const ServerJobItem: React.FC<{
               type="button"
               aria-label={`Cancel backend job ${job.id}`}
               onClick={onCancel}
-              className="min-h-8 rounded-md px-2 text-xs text-zinc-300 hover:bg-white/10"
+              className="min-h-8 rounded-md px-2 text-xs text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
             >
               Cancel
             </button>
@@ -639,7 +639,7 @@ const ServerJobItem: React.FC<{
               aria-label={`${canResume ? 'Resume' : 'Retry'} backend job ${job.id}`}
               onClick={onRetry}
               title={canResume ? 'Resume existing remote job' : 'Retry this job'}
-              className="flex min-h-8 items-center gap-1.5 rounded-md bg-white/5 px-2 text-xs text-zinc-200 hover:bg-white/10"
+              className="flex min-h-8 items-center gap-1.5 rounded-md bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 text-xs text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
             >
               <RotateCcw size={13} />
               {canResume ? 'Resume' : 'Retry'}
@@ -650,7 +650,7 @@ const ServerJobItem: React.FC<{
       {job.batchId && showBatch ? (
         <details
           onToggle={(event) => setBatchOpen(event.currentTarget.open)}
-          className="mt-2 border-t border-white/10 pt-1 text-[11px] text-zinc-400"
+          className="mt-2 border-t border-[color:var(--wb-border)] pt-1 text-[11px] text-[color:var(--wb-muted)]"
         >
           <summary className="cursor-pointer py-1">Batch progress and retry</summary>
           {batchOpen ? <QueueBatchCard batchId={job.batchId} revision={job.updatedAt} /> : null}

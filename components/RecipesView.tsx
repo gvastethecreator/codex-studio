@@ -12,7 +12,7 @@ export const RecipesView: React.FC<RecipesViewProps> = ({ onSelectRecipe, onPrev
   return (
     <div className="h-full overflow-y-auto custom-scrollbar p-4">
       <h2 className="text-lg font-semibold">Recipes</h2>
-      <p className="mt-1 mb-4 text-sm text-zinc-400">Choose a guided workflow.</p>
+      <p className="mt-1 mb-4 text-sm text-[color:var(--wb-muted)]">Choose a guided workflow.</p>
       <RecipeDiscoveryList onSelectRecipe={onSelectRecipe} onPreviewRecipe={onPreviewRecipe} />
     </div>
   );

@@ -1,8 +1,20 @@
-import { useCallback, useEffect } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo } from 'react';
+
+import {
+  APPEARANCE_STORAGE_KEY,
+  applyWorkbenchAmbientToDocument,
+  type WorkbenchAppearance,
+} from '../lib/workbenchAmbient';
 import { useLocalStorage } from './useLocalStorage';
 
 const STORAGE_KEY = 'codex-studio-theme-index';
 const LEGACY_STORAGE_KEY = 'chorita-theme-index';
+const BRASS_OFFSET_KEY = 'codex-studio-accent-includes-brass';
+
+export type AccentPalette = {
+  name: string;
+  colors: Record<'50' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900' | '950', string>;
+};
 
 function parseStoredPaletteIndex(value: string | null) {
   if (!value) return null;
@@ -15,17 +27,38 @@ function parseStoredPaletteIndex(value: string | null) {
   }
 }
 
-function readStoredPaletteIndex() {
-  if (typeof window === 'undefined') return 0;
-
-  return (
-    parseStoredPaletteIndex(window.localStorage.getItem(STORAGE_KEY)) ??
-    parseStoredPaletteIndex(window.localStorage.getItem(LEGACY_STORAGE_KEY)) ??
-    0
-  );
+export function rgbTripletToHex(rgb: string): string {
+  const [r, g, b] = rgb.trim().split(/\s+/).map((part) => Number.parseInt(part, 10));
+  const toHex = (channel: number) =>
+    Math.max(0, Math.min(255, Number.isFinite(channel) ? channel : 0))
+      .toString(16)
+      .padStart(2, '0');
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
 
-const PALETTES = [
+export function accentOnColor(rgb: string): string {
+  const [r, g, b] = rgb.trim().split(/\s+/).map((part) => Number.parseInt(part, 10));
+  const y = ((r || 0) * 299 + (g || 0) * 587 + (b || 0) * 114) / 1000;
+  return y >= 150 ? '#141414' : '#f4f4f4';
+}
+
+export const ACCENT_PALETTES: AccentPalette[] = [
+  {
+    name: 'Brass',
+    colors: {
+      50: '247 243 234',
+      100: '239 232 212',
+      200: '224 212 179',
+      300: '212 196 154',
+      400: '203 184 144',
+      500: '195 178 141',
+      600: '168 148 108',
+      700: '126 110 79',
+      800: '82 72 51',
+      900: '50 44 32',
+      950: '26 23 18',
+    },
+  },
   {
     name: 'Neutral',
     colors: {
@@ -172,21 +205,85 @@ const PALETTES = [
   },
 ];
 
-export const useTheme = () => {
+export function readStoredPaletteIndex() {
+  if (typeof window === 'undefined') return 0;
+
+  const stored =
+    parseStoredPaletteIndex(window.localStorage.getItem(STORAGE_KEY)) ??
+    parseStoredPaletteIndex(window.localStorage.getItem(LEGACY_STORAGE_KEY));
+
+  if (stored === null) {
+    try {
+      window.localStorage.setItem(BRASS_OFFSET_KEY, '1');
+    } catch {
+      // noop
+    }
+    return 0;
+  }
+
+  try {
+    if (window.localStorage.getItem(BRASS_OFFSET_KEY) === '1') {
+      return stored;
+    }
+    const shifted = stored + 1;
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(shifted));
+    window.localStorage.setItem(BRASS_OFFSET_KEY, '1');
+    return shifted;
+  } catch {
+    return stored + 1;
+  }
+}
+
+export function applyAccentPaletteToDocument(
+  palette: AccentPalette,
+  root: CSSStyleDeclaration | HTMLElement = document.documentElement,
+) {
+  const style = 'style' in root ? root.style : root;
+  Object.entries(palette.colors).forEach(([shade, value]) => {
+    style.setProperty(`--accent-${shade}`, value);
+  });
+  const hex = rgbTripletToHex(palette.colors[500]);
+  const onAccent = accentOnColor(palette.colors[500]);
+  style.setProperty('--wb-accent', hex);
+  style.setProperty('--wba-accent', hex);
+  style.setProperty('--wbp-accent', hex);
+  style.setProperty('--create-primary', hex);
+  style.setProperty('--wb-on-accent', onAccent);
+  style.setProperty('--create-on-primary', onAccent);
+}
+
+type ThemeContextValue = {
+  appearance: WorkbenchAppearance;
+  currentTheme: string;
+  cycleTheme: () => void;
+  toggleAppearance: () => void;
+};
+
+const ThemeContext = createContext<ThemeContextValue | null>(null);
+
+function useThemeState(): ThemeContextValue {
   const [currentPaletteIndex, setCurrentPaletteIndex] = useLocalStorage<number>(
     STORAGE_KEY,
     readStoredPaletteIndex(),
   );
+  const [appearance, setAppearance] = useLocalStorage<WorkbenchAppearance>(
+    APPEARANCE_STORAGE_KEY,
+    typeof window === 'undefined' ? 'dark' : (() => {
+      try {
+        const raw = window.localStorage.getItem(APPEARANCE_STORAGE_KEY);
+        if (!raw) return 'dark';
+        const parsed = JSON.parse(raw) as unknown;
+        return parsed === 'light' ? 'light' : 'dark';
+      } catch {
+        return 'dark';
+      }
+    })(),
+  );
 
   const applyTheme = useCallback(
     (index: number) => {
-      const safeIndex = ((index % PALETTES.length) + PALETTES.length) % PALETTES.length;
-      const palette = PALETTES[safeIndex];
-      const root = document.documentElement;
-
-      Object.entries(palette.colors).forEach(([shade, value]) => {
-        root.style.setProperty(`--accent-${shade}`, value);
-      });
+      const safeIndex = ((index % ACCENT_PALETTES.length) + ACCENT_PALETTES.length) % ACCENT_PALETTES.length;
+      applyAccentPaletteToDocument(ACCENT_PALETTES[safeIndex]);
       setCurrentPaletteIndex(safeIndex);
     },
     [setCurrentPaletteIndex],
@@ -194,11 +291,19 @@ export const useTheme = () => {
 
   const cycleTheme = useCallback(() => {
     setCurrentPaletteIndex((prevIndex) => {
-      const nextIndex = (prevIndex + 1) % PALETTES.length;
-      applyTheme(nextIndex);
+      const nextIndex = (prevIndex + 1) % ACCENT_PALETTES.length;
+      applyAccentPaletteToDocument(ACCENT_PALETTES[nextIndex]);
       return nextIndex;
     });
-  }, [applyTheme, setCurrentPaletteIndex]);
+  }, [setCurrentPaletteIndex]);
+
+  const toggleAppearance = useCallback(() => {
+    setAppearance((current) => {
+      const next: WorkbenchAppearance = current === 'light' ? 'dark' : 'light';
+      applyWorkbenchAmbientToDocument(document, next);
+      return next;
+    });
+  }, [setAppearance]);
 
   useEffect(() => {
     try {
@@ -210,12 +315,37 @@ export const useTheme = () => {
     }
   }, []);
 
+  useLayoutEffect(() => {
+    applyWorkbenchAmbientToDocument(document, appearance);
+  }, [appearance]);
+
   useEffect(() => {
     applyTheme(currentPaletteIndex);
   }, [applyTheme, currentPaletteIndex]);
 
-  return {
-    currentTheme: PALETTES[currentPaletteIndex].name,
-    cycleTheme,
-  };
+  const safeIndex =
+    ((currentPaletteIndex % ACCENT_PALETTES.length) + ACCENT_PALETTES.length) % ACCENT_PALETTES.length;
+
+  return useMemo(
+    () => ({
+      appearance,
+      currentTheme: ACCENT_PALETTES[safeIndex].name,
+      cycleTheme,
+      toggleAppearance,
+    }),
+    [appearance, cycleTheme, safeIndex, toggleAppearance],
+  );
+}
+
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const value = useThemeState();
+  return React.createElement(ThemeContext, { value }, children);
+}
+
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error('useTheme requires ThemeProvider');
+  }
+  return context;
 };

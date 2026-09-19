@@ -130,7 +130,7 @@ const TooltipPortal = ({
         zIndex: 50,
         pointerEvents: 'none',
       }}
-      className="rounded-[6px] border border-white/2 bg-zinc-900/95 shadow-2xl backdrop-blur-xl"
+      className="studio-popover rounded-[6px] border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] shadow-2xl"
     >
       {content}
     </MotionDiv>

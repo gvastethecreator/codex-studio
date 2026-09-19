@@ -22,9 +22,12 @@ import {
   CODEX_HTTP_MODEL,
   CODEX_HTTP_REASONING,
   getCodexHttpImageModelOption,
+  listCodexHttpImageSizeOptions,
   resolveCodexExecutionPolicy,
+  resolveCodexHttpImageSizeTier,
   type CodexExecutionTransport,
   type CodexHttpImageModelOption,
+  type CodexHttpImageSizeOption,
 } from '../packages/shared/src/codexExecutionContract';
 
 const EMPTY_CODEX_MODELS: CodexModel[] = [];
@@ -54,6 +57,9 @@ export interface ComposerProviderProjection {
     selectedTransport: CodexExecutionTransport | null;
     imageModels: CodexHttpImageModelOption[];
     selectedImageModel: CodexHttpImageModelOption | null;
+    imageSizeOptions: CodexHttpImageSizeOption[];
+    selectedImageSize: CodexHttpImageSizeOption | null;
+    showImageSizeControl: boolean;
     reasoningOptions: ReturnType<typeof getCodexReasoningOptions>;
     speedOptions: ReturnType<typeof getCodexSpeedOptions>;
     summary: string;
@@ -92,6 +98,7 @@ export function buildComposerProviderProjection({
   executionReasoningEffort,
   executionSpeed,
   codexImageModel,
+  imageSize,
   catalogError,
 }: {
   providerId: GenerationProviderId;
@@ -108,6 +115,7 @@ export function buildComposerProviderProjection({
   executionReasoningEffort: ImageGenerationConfig['executionReasoningEffort'];
   executionSpeed: ImageGenerationConfig['executionSpeed'];
   codexImageModel?: ImageGenerationConfig['codexImageModel'];
+  imageSize?: ImageGenerationConfig['imageSize'];
   catalogError: string | null;
 }): ComposerProviderProjection {
   const kind = resolveComposerProviderKind(providerId);
@@ -131,6 +139,10 @@ export function buildComposerProviderProjection({
     : (models.find((model) => model.id === executionModel) ?? null);
   const imageModels = isHttp ? [...CODEX_HTTP_IMAGE_MODELS] : [];
   const selectedImageModel = isHttp ? getCodexHttpImageModelOption(codexImageModel) : null;
+  const imageSizeOptions = isHttp ? listCodexHttpImageSizeOptions(aspectRatio) : [];
+  const selectedImageSizeTier = resolveCodexHttpImageSizeTier(imageSize);
+  const selectedImageSize =
+    imageSizeOptions.find((option) => option.tier === selectedImageSizeTier) ?? null;
   const effectiveModelId = selectedModel?.id ?? executionModel;
   const effectiveReasoningEffort = isHttp ? CODEX_HTTP_REASONING : executionReasoningEffort;
   const effectiveSpeed = isHttp ? 'standard' : executionSpeed;
@@ -177,7 +189,10 @@ export function buildComposerProviderProjection({
               },
             },
           },
-          { output: { aspectRatio }, assets: attachments },
+          {
+            output: { aspectRatio, imageSize: selectedImageSizeTier },
+            assets: attachments,
+          },
           codexTransport,
         );
       } catch (error) {
@@ -224,12 +239,16 @@ export function buildComposerProviderProjection({
       selectedTransport,
       imageModels,
       selectedImageModel,
+      imageSizeOptions,
+      selectedImageSize,
+      showImageSizeControl: isHttp,
       reasoningOptions: isHttp ? [CODEX_HTTP_REASONING] : getCodexReasoningOptions(selectedModel),
       speedOptions: isHttp ? ['standard'] : getCodexSpeedOptions(selectedModel),
       summary: [
         modelLabel,
         transportSummary,
         isHttp ? selectedImageModel?.shortName : null,
+        isHttp ? selectedImageSizeTier : null,
         isHttp ? 'AUTO' : executionReasoningEffort?.toUpperCase(),
         !isHttp && executionSpeed !== 'standard' ? formatCodexSpeedLabel(executionSpeed) : null,
       ]

@@ -92,7 +92,7 @@ function getRowTone(row: SpriteAtlasRowState) {
   if (row.status === 'handoff_ready' || row.status === 'generating') {
     return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
   }
-  return 'border-white/2 bg-white/[0.035] text-zinc-300';
+  return 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-ink)]';
 }
 
 function getRunTone(status: SpriteAtlasRun['status'] | null | undefined) {
@@ -461,20 +461,20 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   };
 
   return (
-    <div className="flex h-full min-h-0 flex-col bg-zinc-950 text-zinc-100">
+    <div className="studio-surface flex h-full min-h-0 flex-col bg-[color:var(--wb-panel)] text-[color:var(--wb-ink)]">
       <div className="grid min-h-0 flex-1 grid-cols-1 gap-2 overflow-hidden p-3 xl:grid-cols-[20rem_minmax(0,1fr)_24rem] xl:grid-rows-[minmax(0,1fr)_auto]">
         <RecipeControls>
           <details open={!activeRun} className="recipe-draft-settings">
             <summary>New atlas configuration</summary>
-            <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 shadow-2xl">
-              <div className="border-b border-white/2 p-3">
+            <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] shadow-2xl">
+              <div className="border-b border-[color:var(--wb-line)] p-3">
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
                     <div className="text-[10px] font-black uppercase tracking-widest text-sky-300">
                       Atlas Recipe
                     </div>
-                    <h2 className="mt-1 truncate text-base font-black text-white">Sprite Atlas</h2>
-                    <p className="mt-1 truncate text-xs text-zinc-500">
+                    <h2 className="mt-1 truncate text-base font-black text-[color:var(--wb-ink)]">Sprite Atlas</h2>
+                    <p className="mt-1 truncate text-xs text-[color:var(--wb-muted)]">
                       {contract.assetKind} / {contract.extractionMode}
                     </p>
                   </div>
@@ -483,7 +483,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   </span>
                 </div>
 
-                <div className="mt-3 grid grid-cols-3 gap-2 rounded-lg border border-white/2 bg-white/[0.03] p-2">
+                <div className="mt-3 grid grid-cols-3 gap-2 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2">
                   <Metric label="Rows" value={String(contract.rows.length)} />
                   <Metric label="Frames" value={String(getFrameTotal(contract.rows))} />
                   <Metric label="Cell" value={`${contract.cell.width}px`} />
@@ -511,18 +511,18 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         key={preset.id}
                         type="button"
                         onClick={() => selectPreset(preset)}
-                        className={`group grid gap-2 rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-white/2 ${
+                        className={`group grid gap-2 rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-[color:var(--wb-border)] ${
                           active
                             ? 'border-sky-400/2 bg-sky-500/10'
-                            : 'border-white/2 bg-white/[0.035]'
+                            : 'border-[color:var(--wb-line)] bg-white/[0.035]'
                         }`}
                       >
                         <div className="flex items-start justify-between gap-2">
                           <div className="min-w-0">
-                            <div className="truncate text-sm font-black text-white">
+                            <div className="truncate text-sm font-black text-[color:var(--wb-ink)]">
                               {preset.label}
                             </div>
-                            <div className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+                            <div className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
                               {preset.rows} rows / {preset.frames} frames / {preset.cell.width}px
                             </div>
                           </div>
@@ -534,7 +534,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                             {preset.assetKind}
                           </span>
                         </div>
-                        <p className="line-clamp-2 text-xs leading-relaxed text-zinc-500">
+                        <p className="line-clamp-2 text-xs leading-relaxed text-[color:var(--wb-muted)]">
                           {preset.description}
                         </p>
                       </button>
@@ -573,9 +573,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                 </div>
               </div>
 
-              <div className="border-t border-white/2 p-3">
+              <div className="border-t border-[color:var(--wb-line)] p-3">
                 {currentPreset && (
-                  <div className="mb-2 rounded-lg border border-white/2 bg-white/[0.03] p-2 text-xs leading-relaxed text-zinc-400">
+                  <div className="mb-2 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2 text-xs leading-relaxed text-[color:var(--wb-muted)]">
                     {currentPreset.description}
                   </div>
                 )}
@@ -595,9 +595,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
         <main
           data-recipe-stage
-          className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/25 shadow-2xl xl:row-span-2"
+          className="flex min-h-0 min-w-0 flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-black/25 shadow-2xl xl:row-span-2"
         >
-          <div className="border-b border-white/2 p-3">
+          <div className="border-b border-[color:var(--wb-line)] p-3">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
@@ -608,18 +608,18 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   >
                     {activeRun ? STAGE_LABELS[activeRun.status] : 'No Run'}
                   </span>
-                  <h3 className="truncate text-sm font-black uppercase tracking-widest text-white">
+                  <h3 className="truncate text-sm font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
                     {activeRun?.title ?? 'Sprite Atlas Workbench'}
                   </h3>
                 </div>
                 {activeRun ? (
-                  <p className="mt-1 truncate font-mono text-[11px] text-zinc-500">
+                  <p className="mt-1 truncate font-mono text-[11px] text-[color:var(--wb-muted)]">
                     {activeRun.qa?.mode === 'fixture_smoke'
                       ? 'Fixture check only. Generated rows still require import and validation.'
                       : 'Import rows, compose the atlas, then validate the generated art.'}
                   </p>
                 ) : (
-                  <p className="mt-1 text-xs text-zinc-500">Choose a preset and prepare a run.</p>
+                  <p className="mt-1 text-xs text-[color:var(--wb-muted)]">Choose a preset and prepare a run.</p>
                 )}
               </div>
 
@@ -640,11 +640,11 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   <ClipboardList size={14} />
                 </IconButton>
                 <details className="relative">
-                  <summary className="cursor-pointer rounded-lg bg-white/5 px-3 py-2 text-xs">
+                  <summary className="cursor-pointer rounded-lg bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-2 text-xs">
                     Diagnostics
                   </summary>
-                  <div className="absolute right-0 z-50 mt-2 w-60 rounded-xl bg-zinc-800 p-3">
-                    <p className="mb-2 text-xs text-zinc-300">
+                  <div className="absolute right-0 z-50 mt-2 w-60 rounded-xl bg-[color:var(--wb-bar)] p-3">
+                    <p className="mb-2 text-xs text-[color:var(--wb-ink)]">
                       Creates test art to check the pipeline. This does not compose your imported
                       rows.
                     </p>
@@ -672,7 +672,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
             </div>
 
             {activeRun && (
-              <p className="mt-3 text-sm text-zinc-300">
+              <p className="mt-3 text-sm text-[color:var(--wb-ink)]">
                 {activeRun.rows.some((row) => !row.rawPath)
                   ? 'Next: generate and import the missing row images. Select a row to see its prompt and import controls.'
                   : 'Rows imported. Review their artifacts. Production atlas composition is not available in Studio yet.'}
@@ -700,22 +700,22 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           <div className="min-h-0 flex-1 overflow-hidden">
             {activeRun ? (
               <section className="flex h-full min-h-0 flex-col">
-                <div className="grid gap-2 border-b border-white/2 p-3 lg:grid-cols-[minmax(0,1fr)_auto]">
+                <div className="grid gap-2 border-b border-[color:var(--wb-line)] p-3 lg:grid-cols-[minmax(0,1fr)_auto]">
                   <label className="grid min-w-0 gap-1">
-                    <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                    <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                       Search rows
                     </span>
                     <span className="relative min-w-0">
                       <Search
                         size={14}
-                        className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-600"
+                        className="absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--wb-dim)]"
                         aria-hidden="true"
                       />
                       <input
                         value={rowQuery}
                         onChange={(event) => setRowQuery(event.target.value)}
                         placeholder="Names, jobs, paths"
-                        className="h-9 w-full rounded-lg border border-white/2 bg-black/45 pl-9 pr-3 text-xs text-zinc-200 outline-none placeholder:text-zinc-600 transition focus:border-sky-400/2"
+                        className="h-9 w-full rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] pl-9 pr-3 text-xs text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)] transition focus:border-sky-400/2"
                       />
                     </span>
                   </label>
@@ -732,7 +732,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   </div>
                 </div>
 
-                <div className="grid grid-cols-4 gap-2 border-b border-white/2 p-3">
+                <div className="grid grid-cols-4 gap-2 border-b border-[color:var(--wb-line)] p-3">
                   <Metric label="Handoff" value={String(rowCounts.handoff_ready)} />
                   <Metric label="Imported" value={String(rowCounts.raw_imported)} />
                   <Metric label="Blocked" value={String(rowCounts.blocked)} />
@@ -750,16 +750,16 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                             setSelectedRowId(row.id);
                             setInspectorTab('guide');
                           }}
-                          className={`group flex min-h-[96px] flex-col justify-between rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-white/2 ${
+                          className={`group flex min-h-[96px] flex-col justify-between rounded-lg border p-3 text-left transition-[background-color,border-color,transform] duration-150 hover:-translate-y-0.5 hover:border-[color:var(--wb-border)] ${
                             selectedRow?.id === row.id
                               ? 'border-sky-400/2 bg-sky-500/10'
-                              : 'border-white/2 bg-white/[0.035]'
+                              : 'border-[color:var(--wb-line)] bg-white/[0.035]'
                           }`}
                         >
                           <div className="flex items-start justify-between gap-3">
                             <div className="min-w-0">
-                              <div className="truncate text-sm font-black text-white">{row.id}</div>
-                              <div className="mt-1 font-mono text-[10px] text-zinc-600">
+                              <div className="truncate text-sm font-black text-[color:var(--wb-ink)]">{row.id}</div>
+                              <div className="mt-1 font-mono text-[10px] text-[color:var(--wb-dim)]">
                                 {row.frames} frames / {row.jobId ? 'job ready' : 'no job'}
                               </div>
                             </div>
@@ -801,16 +801,16 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
         </main>
 
         <RecipeControls>
-          <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-white/2 bg-black/35 shadow-2xl xl:row-span-2">
+          <aside className="flex min-h-0 flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] shadow-2xl xl:row-span-2">
             {activeRun && selectedRow ? (
               <>
-                <div className="border-b border-white/2 p-3">
+                <div className="border-b border-[color:var(--wb-line)] p-3">
                   <div className="flex items-start justify-between gap-3">
                     <div className="min-w-0">
-                      <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                      <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                         Row Inspector
                       </div>
-                      <h3 className="mt-1 truncate text-base font-black text-white">
+                      <h3 className="mt-1 truncate text-base font-black text-[color:var(--wb-ink)]">
                         {selectedRow.id}
                       </h3>
                     </div>
@@ -823,7 +823,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                     </span>
                   </div>
 
-                  <div className="mt-3 grid grid-cols-3 gap-1.5 rounded-lg border border-white/2 bg-white/[0.03] p-1.5">
+                  <div className="mt-3 grid grid-cols-3 gap-1.5 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-1.5">
                     {(['guide', 'prompt', 'artifacts'] as const).map((tab) => (
                       <button
                         key={tab}
@@ -831,8 +831,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         onClick={() => setInspectorTab(tab)}
                         className={`min-h-8 rounded-md px-2 text-[9px] font-black uppercase tracking-widest transition ${
                           inspectorTab === tab
-                            ? 'bg-white/12 text-white'
-                            : 'text-zinc-500 hover:bg-white/[0.06] hover:text-zinc-200'
+                            ? 'bg-white/12 text-[color:var(--wb-ink)]'
+                            : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]'
                         }`}
                       >
                         {tab}
@@ -844,17 +844,17 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                 <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
                   {inspectorTab === 'guide' && (
                     <div className="grid gap-3">
-                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-2">
+                      <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2">
                         <div className="mb-2 flex items-center justify-between gap-2">
-                          <span className="text-xs font-black uppercase tracking-widest text-zinc-500">
+                          <span className="text-xs font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                             Layout Guide
                           </span>
-                          <FileText size={14} className="text-zinc-500" />
+                          <FileText size={14} className="text-[color:var(--wb-muted)]" />
                         </div>
                         <img
                           src={getSpriteAtlasLayoutGuideUrl(activeRun.id, selectedRow.id)}
                           alt=""
-                          className="h-auto w-full rounded-md border border-white/2 bg-black object-contain"
+                          className="h-auto w-full rounded-md border border-[color:var(--wb-line)] bg-black object-contain"
                         />
                       </div>
 
@@ -881,14 +881,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
                       <div className="flex items-end gap-2">
                         <label className="grid min-w-0 flex-1 gap-1">
-                          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                          <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                             Source image
                           </span>
                           <select
                             aria-label="Row source image"
                             value={rowSourcePath}
                             onChange={(event) => setRowSourcePath(event.target.value)}
-                            className="min-h-10 w-full rounded-md bg-zinc-900 px-2 text-sm text-white"
+                            className="min-h-10 w-full rounded-md bg-[color:var(--wb-panel)] px-2 text-sm text-[color:var(--wb-ink)]"
                           >
                             <option value="">Choose a library image</option>
                             {images
@@ -899,7 +899,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                                 </option>
                               ))}
                           </select>
-                          <span className="text-xs text-zinc-400">
+                          <span className="text-xs text-[color:var(--wb-muted)]">
                             Import external images through Settings → Library &amp; imports.
                           </span>
                         </label>
@@ -907,7 +907,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           type="button"
                           onClick={handleImportRow}
                           disabled={busy || !rowSourcePath.trim()}
-                          className="inline-flex min-h-10 items-center justify-center rounded-md border border-white/2 bg-white/[0.04] px-3 text-zinc-200 hover:bg-white/10 disabled:opacity-50"
+                          className="inline-flex min-h-10 items-center justify-center rounded-md border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] px-3 text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-50"
                           aria-label="Import selected row"
                         >
                           <FileImport size={15} />
@@ -918,18 +918,18 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
                   {inspectorTab === 'prompt' && (
                     <div className="grid gap-3">
-                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
+                      <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3">
                         <div className="mb-2 flex items-center justify-between gap-2">
-                          <span className="text-xs font-black uppercase tracking-widest text-zinc-500">
+                          <span className="text-xs font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                             Prompt
                           </span>
                           {isPromptLoading && <Loader2 size={14} className="animate-spin" />}
                         </div>
-                        <pre className="custom-scrollbar max-h-[420px] overflow-y-auto whitespace-pre-wrap rounded-md border border-white/2 bg-black/45 p-3 text-[11px] leading-relaxed text-zinc-300">
+                        <pre className="custom-scrollbar max-h-[420px] overflow-y-auto whitespace-pre-wrap rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-relaxed text-[color:var(--wb-ink)]">
                           {selectedPrompt || 'Prompt unavailable.'}
                         </pre>
                       </div>
-                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
+                      <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3">
                         <dl className="grid gap-2 text-xs">
                           <PathRow label="Prompt" value={selectedRow.promptPath} />
                           <PathRow label="Request" value={activeRun.paths.requestPath} />
@@ -941,8 +941,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
                   {inspectorTab === 'artifacts' && (
                     <div className="grid gap-3">
-                      <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3">
-                        <div className="text-xs font-black uppercase tracking-widest text-zinc-500">
+                      <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3">
+                        <div className="text-xs font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                           Row Paths
                         </div>
                         <dl className="mt-2 grid gap-2 text-xs">
@@ -954,14 +954,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       </div>
 
                       {activeRun.status === 'composed' || activeRun.status === 'qa_passed' ? (
-                        <div className="rounded-lg border border-white/2 bg-white/[0.03] p-2">
-                          <div className="mb-2 text-xs font-black uppercase tracking-widest text-zinc-500">
+                        <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2">
+                          <div className="mb-2 text-xs font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                             Atlas
                           </div>
                           <img
                             src={getSpriteAtlasAtlasUrl(activeRun.id)}
                             alt=""
-                            className="h-auto w-full rounded-md border border-white/2 bg-black object-contain"
+                            className="h-auto w-full rounded-md border border-[color:var(--wb-line)] bg-black object-contain"
                           />
                         </div>
                       ) : (
@@ -973,14 +973,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       )}
 
                       {activeRun.qa && (
-                        <div className="rounded-lg border border-white/2 bg-white/[0.03] p-3 text-xs text-zinc-300">
+                        <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3 text-xs text-[color:var(--wb-ink)]">
                           <div className="flex items-center justify-between gap-2">
-                            <span className="font-black uppercase tracking-widest text-zinc-500">
+                            <span className="font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                               QA Report
                             </span>
-                            <span className="font-mono text-zinc-500">{activeRun.qa.mode}</span>
+                            <span className="font-mono text-[color:var(--wb-muted)]">{activeRun.qa.mode}</span>
                           </div>
-                          <p className="mt-2 text-zinc-300">{activeRun.qa.summary}</p>
+                          <p className="mt-2 text-[color:var(--wb-ink)]">{activeRun.qa.summary}</p>
                           {activeRun.qa.issues.length > 0 && (
                             <ul className="mt-2 grid gap-1 text-amber-200">
                               {activeRun.qa.issues.map((issue) => (
@@ -1007,12 +1007,12 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
         </RecipeControls>
 
         <RecipeControls>
-          <aside className="min-h-0 overflow-hidden rounded-lg border border-white/2 bg-black/30 xl:col-start-1 xl:row-start-2">
-            <div className="flex items-center justify-between gap-2 border-b border-white/2 p-3">
-              <div className="text-xs font-black uppercase tracking-widest text-zinc-500">
+          <aside className="min-h-0 overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:col-start-1 xl:row-start-2">
+            <div className="flex items-center justify-between gap-2 border-b border-[color:var(--wb-line)] p-3">
+              <div className="text-xs font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                 Recent Runs
               </div>
-              <span className="font-mono text-[10px] text-zinc-600">{runs.length}</span>
+              <span className="font-mono text-[10px] text-[color:var(--wb-dim)]">{runs.length}</span>
             </div>
             <div className="custom-scrollbar max-h-52 overflow-y-auto p-2 xl:max-h-64">
               {runs.length > 0 ? (
@@ -1025,14 +1025,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         setActiveRun(run);
                         setSelectedRowId(run.rows[0]?.id ?? null);
                       }}
-                      className={`rounded-lg border p-2 text-left transition hover:border-white/2 ${
+                      className={`rounded-lg border p-2 text-left transition hover:border-[color:var(--wb-border)] ${
                         activeRun?.id === run.id
                           ? 'border-sky-400/2 bg-sky-500/10'
-                          : 'border-white/2 bg-white/[0.025]'
+                          : 'border-[color:var(--wb-line)] bg-white/[0.025]'
                       }`}
                     >
                       <div className="flex items-center justify-between gap-2">
-                        <span className="min-w-0 truncate text-xs font-bold text-zinc-200">
+                        <span className="min-w-0 truncate text-xs font-bold text-[color:var(--wb-ink)]">
                           {run.title}
                         </span>
                         <span
@@ -1043,7 +1043,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           {STAGE_LABELS[run.status]}
                         </span>
                       </div>
-                      <div className="mt-1 flex items-center justify-between gap-2 text-[10px] text-zinc-600">
+                      <div className="mt-1 flex items-center justify-between gap-2 text-[10px] text-[color:var(--wb-dim)]">
                         <span>{run.contract.presetId}</span>
                         <span>{formatUpdatedAt(run.updatedAt)}</span>
                       </div>
@@ -1051,7 +1051,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   ))}
                 </div>
               ) : (
-                <div className="py-5 text-center text-xs text-zinc-600">No runs yet</div>
+                <div className="py-5 text-center text-xs text-[color:var(--wb-dim)]">No runs yet</div>
               )}
             </div>
           </aside>
@@ -1063,8 +1063,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
 const Metric: React.FC<{ label: string; value: string }> = ({ label, value }) => (
   <div className="min-w-0 text-center">
-    <div className="truncate text-sm font-black text-white">{value}</div>
-    <div className="mt-0.5 truncate text-[9px] font-black uppercase tracking-widest text-zinc-500">
+    <div className="truncate text-sm font-black text-[color:var(--wb-ink)]">{value}</div>
+    <div className="mt-0.5 truncate text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
       {label}
     </div>
   </div>
@@ -1072,8 +1072,8 @@ const Metric: React.FC<{ label: string; value: string }> = ({ label, value }) =>
 
 const PathRow: React.FC<{ label: string; value: string }> = ({ label, value }) => (
   <div className="grid gap-1">
-    <dt className="font-black uppercase tracking-widest text-zinc-500">{label}</dt>
-    <dd className="break-all font-mono text-[11px] text-zinc-300">{value}</dd>
+    <dt className="font-black uppercase tracking-widest text-[color:var(--wb-muted)]">{label}</dt>
+    <dd className="break-all font-mono text-[11px] text-[color:var(--wb-ink)]">{value}</dd>
   </div>
 );
 
@@ -1091,7 +1091,7 @@ const SelectField: React.FC<{
 
   return (
     <div
-      className={`grid gap-1 text-[10px] font-black uppercase tracking-widest text-zinc-500 ${className}`}
+      className={`grid gap-1 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)] ${className}`}
     >
       <span id={labelId}>{label}</span>
       <div className="relative">
@@ -1101,8 +1101,8 @@ const SelectField: React.FC<{
           onClick={() => setIsOpen((open) => !open)}
           className={`flex min-h-10 w-full items-center justify-between gap-2 rounded-md border px-2 text-left text-sm font-bold normal-case tracking-normal transition-[background-color,border-color,color,transform] ${
             isOpen
-              ? 'border-sky-400/2 bg-sky-500/10 text-white'
-              : 'border-white/2 bg-zinc-900 text-white hover:border-white/2 hover:bg-white/[0.04]'
+              ? 'border-sky-400/2 bg-sky-500/10 text-[color:var(--wb-ink)]'
+              : 'border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]'
           }`}
           aria-labelledby={labelId}
           aria-haspopup="listbox"
@@ -1112,7 +1112,7 @@ const SelectField: React.FC<{
           <span className="truncate">{value}</span>
           <ChevronDown
             size={14}
-            className={`shrink-0 text-zinc-500 transition-[color,transform] ${
+            className={`shrink-0 text-[color:var(--wb-muted)] transition-[color,transform] ${
               isOpen ? 'rotate-180 text-sky-100' : ''
             }`}
             aria-hidden="true"
@@ -1143,8 +1143,8 @@ const SelectField: React.FC<{
                 }}
                 className={`flex min-h-9 w-full items-center justify-between gap-2 rounded-[6px] px-2 py-1.5 text-left text-xs font-bold normal-case tracking-normal transition-[background-color,color] ${
                   selected
-                    ? 'bg-sky-500/18 text-white'
-                    : 'text-zinc-400 hover:bg-white/8 hover:text-zinc-100'
+                    ? 'bg-sky-500/18 text-[color:var(--wb-ink)]'
+                    : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
                 }`}
               >
                 <span className="truncate">{option}</span>
@@ -1168,8 +1168,8 @@ const FilterChip: React.FC<{
     onClick={onClick}
     className={`min-h-8 rounded-md border px-2 text-[9px] font-black uppercase tracking-widest transition ${
       active
-        ? 'border-sky-400/2 bg-sky-500/15 text-white'
-        : 'border-white/2 bg-white/[0.035] text-zinc-500 hover:border-white/2 hover:text-zinc-200'
+        ? 'border-sky-400/2 bg-sky-500/15 text-[color:var(--wb-ink)]'
+        : 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:text-[color:var(--wb-ink)]'
     }`}
   >
     {children}
@@ -1190,7 +1190,7 @@ const IconButton: React.FC<{
         ? 'border-amber-400/2 bg-amber-500/10 text-amber-100 hover:bg-amber-500/15'
         : tone === 'emerald'
           ? 'border-emerald-400/2 bg-emerald-500/10 text-emerald-100 hover:bg-emerald-500/15'
-          : 'border-white/2 bg-white/[0.04] text-zinc-300 hover:bg-white/10';
+          : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]';
   return (
     <button
       type="button"
@@ -1214,7 +1214,7 @@ const PipelineStep: React.FC<{
         ? 'border-rose-500/2 bg-rose-500/10 text-rose-200'
         : stage.state === 'active'
           ? 'border-sky-500/2 bg-sky-500/10 text-sky-200'
-          : 'border-white/2 bg-white/[0.025] text-zinc-500';
+          : 'border-[color:var(--wb-line)] bg-white/[0.025] text-[color:var(--wb-muted)]';
   return (
     <div className={`min-w-0 rounded-lg border p-2 ${tone}`}>
       <div className="truncate text-[9px] font-black uppercase tracking-widest">{stage.label}</div>
@@ -1228,13 +1228,13 @@ const EmptyState: React.FC<{
   title: string;
   copy: string;
 }> = ({ icon, title, copy }) => (
-  <div className="grid min-h-44 place-items-center rounded-lg border border-dashed border-white/2 bg-white/[0.02] p-5 text-center">
+  <div className="grid min-h-44 place-items-center rounded-lg border border-dashed border-[color:var(--wb-line)] bg-white/[0.02] p-5 text-center">
     <div>
-      <div className="mx-auto grid size-12 place-items-center rounded-lg border border-white/2 bg-black/30 text-zinc-600">
+      <div className="mx-auto grid size-12 place-items-center rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-dim)]">
         {icon}
       </div>
-      <p className="mt-3 text-sm font-bold text-zinc-300">{title}</p>
-      <p className="mt-1 text-xs text-zinc-500">{copy}</p>
+      <p className="mt-3 text-sm font-bold text-[color:var(--wb-ink)]">{title}</p>
+      <p className="mt-1 text-xs text-[color:var(--wb-muted)]">{copy}</p>
     </div>
   </div>
 );

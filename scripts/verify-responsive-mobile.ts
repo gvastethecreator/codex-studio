@@ -82,7 +82,7 @@ const SCENARIOS: ResponsiveScenario[] = [
     expectedRoute: 'recipe-styles',
     closeQueue: true,
     requiresComposer: true,
-    requiredSelectors: ['[data-style-browser-root]'],
+    requiredSelectors: ['[data-compact-style-selector]'],
   },
   {
     name: 'spritesheet',

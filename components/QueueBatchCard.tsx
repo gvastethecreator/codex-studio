@@ -48,7 +48,7 @@ export function QueueBatchCard({ batchId, revision }: { batchId: string; revisio
   return (
     <section
       aria-label={`Batch ${batchId}`}
-      className="space-y-1 rounded-lg border border-white/10 bg-white/5 p-2 text-[11px] text-white/70"
+      className="space-y-1 rounded-lg border border-[color:var(--wb-border)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2 text-[11px] text-[color:var(--wb-muted)]"
     >
       <div className="flex justify-between gap-2">
         <span>Batch · {batch?.requestedCount ?? '—'} requested</span>
@@ -89,7 +89,7 @@ export function QueueBatchCard({ batchId, revision }: { batchId: string; revisio
           type="button"
           disabled={busy || Boolean(error)}
           onClick={() => void retryFailed()}
-          className="rounded bg-white/10 px-2 py-1 disabled:opacity-50"
+          className="rounded bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] px-2 py-1 disabled:opacity-50"
         >
           {busy
             ? 'Queuing retry…'

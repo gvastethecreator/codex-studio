@@ -13,10 +13,11 @@ export function ReferenceTray({
   onEdit: (attachment: Attachment) => void;
   onRemove: (id: string) => void;
   onFiles: (files: File[], replaceId?: string) => void;
-  density?: 'default' | 'compact';
+  density?: 'default' | 'compact' | 'thumbs';
 }) {
   const [failed, setFailed] = useState<string[]>([]);
   const isCompact = density === 'compact';
+  const isThumbs = density === 'thumbs';
   return (
     <div className="reference-tray" aria-label="Image references">
       {attachments.map((attachment, index) => {
@@ -28,12 +29,13 @@ export function ReferenceTray({
             : roleLabel;
         return (
           <div
-            className="reference-item"
+            className={`reference-item${isThumbs ? ' is-thumb' : ''}`}
             key={attachment.id}
             title={`${attachment.name} · ${statusLabel}`}
           >
             <button
               type="button"
+              className="reference-item-preview"
               onClick={() => onEdit(attachment)}
               disabled={attachment.isProcessing}
               aria-label={`Edit ${attachment.name}`}
@@ -48,49 +50,63 @@ export function ReferenceTray({
                 }
               />
             </button>
-            <div className="min-w-0 flex-1">
-              <span className="reference-item-copy block truncate" title={attachment.name}>
-                {attachment.name}
-              </span>
-              <span className="reference-item-copy block text-xs text-zinc-400">{statusLabel}</span>
-              <div className="reference-item-actions flex gap-3 text-xs">
-                <button
-                  type="button"
-                  onClick={() => onEdit(attachment)}
-                  disabled={attachment.isProcessing}
-                  aria-label={`Edit ${attachment.name}`}
-                  title="Edit"
-                  className="inline-flex size-7 items-center justify-center rounded-md text-zinc-400 hover:bg-white/10 hover:text-white"
-                >
-                  <Pencil size={14} />
-                  {isCompact ? null : <span className="sr-only">Edit</span>}
-                </button>
-                <label className="relative inline-flex size-7 cursor-pointer items-center justify-center rounded-md text-zinc-400 hover:bg-white/10 hover:text-white">
-                  <Refresh size={14} aria-hidden="true" />
-                  <input
-                    type="file"
-                    accept="image/*"
-                    aria-label={`Replace ${attachment.name}`}
-                    className="absolute inset-0 w-full opacity-0 cursor-pointer"
-                    onChange={(event) => {
-                      const file = event.target.files?.[0];
-                      if (!file) return;
-                      onFiles([file], attachment.id);
-                      event.target.value = '';
-                    }}
-                  />
-                </label>
-                <button
-                  type="button"
-                  onClick={() => onRemove(attachment.id)}
-                  aria-label={`Remove ${attachment.name}`}
-                  title="Remove"
-                  className="inline-flex size-7 items-center justify-center rounded-md text-zinc-400 hover:bg-white/10 hover:text-white"
-                >
-                  <X size={14} />
-                </button>
+            {isThumbs ? (
+              <button
+                type="button"
+                className="reference-item-remove"
+                onClick={() => onRemove(attachment.id)}
+                aria-label={`Remove ${attachment.name}`}
+                title="Remove"
+              >
+                <X size={12} />
+              </button>
+            ) : (
+              <div className="min-w-0 flex-1">
+                <span className="reference-item-copy block truncate" title={attachment.name}>
+                  {attachment.name}
+                </span>
+                <span className="reference-item-copy block text-xs text-[color:var(--wb-muted)]">
+                  {statusLabel}
+                </span>
+                <div className="reference-item-actions flex gap-3 text-xs">
+                  <button
+                    type="button"
+                    onClick={() => onEdit(attachment)}
+                    disabled={attachment.isProcessing}
+                    aria-label={`Edit ${attachment.name}`}
+                    title="Edit"
+                    className="inline-flex size-7 items-center justify-center rounded-md text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                  >
+                    <Pencil size={14} />
+                    {isCompact ? null : <span className="sr-only">Edit</span>}
+                  </button>
+                  <label className="relative inline-flex size-7 cursor-pointer items-center justify-center rounded-md text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]">
+                    <Refresh size={14} aria-hidden="true" />
+                    <input
+                      type="file"
+                      accept="image/*"
+                      aria-label={`Replace ${attachment.name}`}
+                      className="absolute inset-0 w-full opacity-0 cursor-pointer"
+                      onChange={(event) => {
+                        const file = event.target.files?.[0];
+                        if (!file) return;
+                        onFiles([file], attachment.id);
+                        event.target.value = '';
+                      }}
+                    />
+                  </label>
+                  <button
+                    type="button"
+                    onClick={() => onRemove(attachment.id)}
+                    aria-label={`Remove ${attachment.name}`}
+                    title="Remove"
+                    className="inline-flex size-7 items-center justify-center rounded-md text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                  >
+                    <X size={14} />
+                  </button>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         );
       })}

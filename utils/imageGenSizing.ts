@@ -45,6 +45,17 @@ export function getRatioOrientation(ratio: string): RatioOrientation {
   return width > height ? 'landscape' : 'portrait';
 }
 
+export function getRatioShapeStyle(ratio: string, maxWidth = 27, maxHeight = 24) {
+  const [width = 1, height = 1] = ratio.split(':').map(Number);
+  const safeWidth = Math.max(width, 1);
+  const safeHeight = Math.max(height, 1);
+  const scale = Math.min(maxWidth / safeWidth, maxHeight / safeHeight);
+  return {
+    width: `${Math.max(6, safeWidth * scale)}px`,
+    height: `${Math.max(6, safeHeight * scale)}px`,
+  };
+}
+
 export function groupImageGenRatiosByOrientation<
   T extends { ratio: string; width: number; height: number },
 >(options: readonly T[]) {

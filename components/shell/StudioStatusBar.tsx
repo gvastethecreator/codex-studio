@@ -37,7 +37,7 @@ export function StudioStatusBar({
   const queueLabel = `${queueCount} active, ${reviewCount} need review`;
 
   return (
-    <footer className="studio-status-bar" aria-label="Studio status">
+    <footer className="studio-status-bar studio-bar" aria-label="Studio status">
       <div className="studio-status-providers" role="list" aria-label="Provider status">
         {commandCenter.providerOptions.map((provider) => (
           <div
@@ -93,8 +93,8 @@ export function StudioStatusBar({
           className={cn(
             'studio-command-surface studio-hit-target flex h-7 items-center justify-center gap-1.5 rounded-md border px-2 text-xs transition-colors',
             isQueueOpen
-              ? 'border-accent-500/20 bg-accent-500/12 text-white'
-              : 'border-white/10 bg-white/5 text-zinc-300 hover:bg-white/10',
+              ? 'border-[color:var(--wb-accent)] bg-[color-mix(in_srgb,var(--wb-accent)_18%,transparent)] text-[color:var(--wb-ink)]'
+              : 'border-[color:var(--wb-border)] text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]',
           )}
         >
           <SidebarRight size={13} />
@@ -103,7 +103,7 @@ export function StudioStatusBar({
             <span className="tabular-nums text-accent-200">{queueCount} active</span>
           ) : null}
           {reviewCount > 0 ? (
-            <span className="border-l border-white/15 pl-1.5 text-amber-300">
+            <span className="border-l border-[color:var(--wb-line)] pl-1.5 text-amber-300">
               {reviewCount} review
             </span>
           ) : null}

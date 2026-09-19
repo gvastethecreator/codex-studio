@@ -139,17 +139,17 @@ function TimelineBottomDock({
     <>
       {/* GROUP 1: SEQUENCE */}
       <div className="flex flex-col gap-1.5">
-        <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest pl-1">
+        <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
           Sequence
         </span>
-        <div className="flex items-center p-1 bg-white/5 rounded-xl border border-white/2 relative">
+        <div className="flex items-center p-1 bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] rounded-xl border border-[color:var(--wb-line)] relative">
           <div
             className={`absolute inset-y-1 w-1/2 bg-teal-600/20 border border-teal-500/2 rounded-lg transition-transform duration-300 ${direction === 'forward' ? 'translate-x-full' : 'translate-x-0'}`}
           />
           <button
             type="button"
             onClick={() => onSetDirection('backward')}
-            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-zinc-500 hover:text-zinc-300'}`}
+            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
           >
             <StepBack size={14} fill={direction === 'backward' ? 'currentColor' : 'none'} />
             <span className="text-[10px] font-black uppercase tracking-widest">Prev</span>
@@ -157,7 +157,7 @@ function TimelineBottomDock({
           <button
             type="button"
             onClick={() => onSetDirection('forward')}
-            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'forward' ? 'text-teal-400' : 'text-zinc-500 hover:text-zinc-300'}`}
+            className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-lg transition-colors ${direction === 'forward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
           >
             <span className="text-[10px] font-black uppercase tracking-widest">Next</span>
             <StepForward size={14} fill={direction === 'forward' ? 'currentColor' : 'none'} />
@@ -165,7 +165,7 @@ function TimelineBottomDock({
         </div>
       </div>
 
-      <div className="h-8 w-px bg-white/10 mx-2 hidden sm:block" />
+      <div className="h-8 w-px bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-2 hidden sm:block" />
 
       {/* GROUP 2: TIME */}
       <ControlDropdown
@@ -180,7 +180,7 @@ function TimelineBottomDock({
         activeColor="teal"
       />
 
-      <div className="h-8 w-px bg-white/10 mx-2 hidden sm:block" />
+      <div className="h-8 w-px bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-2 hidden sm:block" />
 
       {/* GROUP 3: PHYSICS (Motion & Light) */}
       <details className="recipe-advanced">
@@ -205,12 +205,12 @@ function TimelineBottomDock({
         </div>
       </details>
 
-      <div className="h-8 w-px bg-white/10 mx-2 hidden sm:block" />
+      <div className="h-8 w-px bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-2 hidden sm:block" />
 
       {/* GROUP 4: CAMERA & VIEW */}
       <div className="flex gap-2">
         <div className="flex flex-col gap-1.5">
-          <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest pl-1">
+          <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
             Cam
           </span>
           <button
@@ -224,13 +224,13 @@ function TimelineBottomDock({
         </div>
 
         <div className="flex flex-col gap-1.5">
-          <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest pl-1">
+          <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
             View
           </span>
           <button
             type="button"
             onClick={onToggleOnionSkin}
-            className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-white/10 border-white/2 text-white' : 'bg-transparent border-white/2 text-zinc-500'}`}
+            className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]' : 'bg-transparent border-[color:var(--wb-line)] text-[color:var(--wb-muted)]'}`}
             title="Toggle Onion Skin"
           >
             <Layers size={14} />
@@ -281,7 +281,7 @@ function TimelineCanvas({
       {/* Main Viewport */}
       <div className="flex-1 w-full flex items-center justify-center min-h-0 relative">
         <div
-          className="relative rounded-2xl overflow-hidden border border-white/2 shadow-2xl bg-zinc-950"
+          className="relative rounded-2xl overflow-hidden border border-[color:var(--wb-line)] shadow-2xl bg-[color:var(--wb-panel)]"
           style={{
             aspectRatio: ratioValue,
             width: 'min(86vw, 72vh)',
@@ -306,18 +306,18 @@ function TimelineCanvas({
               )}
               <div className="absolute inset-0 z-30 flex items-center justify-between px-8 pointer-events-none">
                 <div
-                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/2 transition-[opacity,transform] duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+                  className={`p-4 rounded-full bg-[color:var(--wb-panel)]/60 border border-[color:var(--wb-line)] transition-[opacity,transform] duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
                 >
                   <Rewind size={32} className="text-teal-400" />
                 </div>
                 <div
-                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/2 transition-[opacity,transform] duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                  className={`p-4 rounded-full bg-[color:var(--wb-panel)]/60 border border-[color:var(--wb-line)] transition-[opacity,transform] duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                 >
                   <FastForward size={32} className="text-teal-400" />
                 </div>
               </div>
-              <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-zinc-950/60 rounded-full border border-white/2 flex items-center gap-3 backdrop-blur-md z-30">
-                <span className="text-[9px] font-bold text-zinc-400 uppercase">
+              <div className="absolute top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-[color:var(--wb-panel)]/60 rounded-full border border-[color:var(--wb-line)] flex items-center gap-3 backdrop-blur-md z-30">
+                <span className="text-[9px] font-bold text-[color:var(--wb-muted)] uppercase">
                   Frame: {currentRefIndex}
                 </span>
                 <div className="size-1 bg-white/20 rounded-full" />
@@ -328,7 +328,7 @@ function TimelineCanvas({
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-zinc-950/60 text-zinc-400 hover:text-white hover:bg-white/10 transition-colors pointer-events-auto border border-white/2 flex items-center gap-2"
+                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-[color:var(--wb-panel)]/60 text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] transition-colors pointer-events-auto border border-[color:var(--wb-line)] flex items-center gap-2"
               >
                 <span className="text-[9px] font-bold uppercase hidden sm:block">Replace</span>
                 <Upload size={14} />
@@ -362,8 +362,8 @@ function TimelineCanvas({
                 className="hidden"
                 accept="image/*"
               />
-              <div className="size-20 rounded-full bg-zinc-900 border border-white/2 flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
-                <Clock size={32} className="text-zinc-600 group-hover:text-teal-400" />
+              <div className="size-20 rounded-full bg-[color:var(--wb-panel)] border border-[color:var(--wb-line)] flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                <Clock size={32} className="text-[color:var(--wb-dim)] group-hover:text-teal-400" />
               </div>
               <QuickStartText
                 title="Load Scene Keyframe or Prompt"
@@ -376,7 +376,7 @@ function TimelineCanvas({
       </div>
 
       {/* Timeline Strip (Carousel) */}
-      <div className="relative z-20 flex h-auto w-full shrink-0 flex-col gap-2 border-t border-white/2 bg-[#060606] pb-4">
+      <div className="relative z-20 flex h-auto w-full shrink-0 flex-col gap-2 border-t border-[color:var(--wb-line)] bg-[color:var(--wb-bg)] pb-4">
         <div className="flex items-center justify-between px-6 pt-2">
           <div className="flex items-center gap-2 text-teal-500/60">
             <Film size={12} />
@@ -391,7 +391,7 @@ function TimelineCanvas({
                 />
               ))}
             </div>
-            <span className="text-[9px] font-bold text-zinc-600 uppercase">
+            <span className="text-[9px] font-bold text-[color:var(--wb-dim)] uppercase">
               {timelineItems.length} Frames
             </span>
           </div>
@@ -407,7 +407,7 @@ function TimelineCanvas({
           {/* SCROLL CONTAINER */}
           <div
             ref={scrollContainerRef}
-            className="size-full bg-zinc-950/40 flex items-center overflow-x-auto custom-scrollbar relative snap-x snap-mandatory"
+            className="size-full bg-[color:var(--wb-panel)]/40 flex items-center overflow-x-auto custom-scrollbar relative snap-x snap-mandatory"
             // Center padding calculation: 50% screen - half item width (assuming w-48/192px approx)
             style={{ paddingLeft: 'calc(50% - 96px)', paddingRight: 'calc(50% - 96px)' }}
           >
@@ -416,7 +416,7 @@ function TimelineCanvas({
 
             <div className="flex items-center gap-4 px-4">
               {timelineItems.length === 0 && (
-                <div className="h-20 w-48 flex items-center justify-center text-[10px] text-zinc-600 font-bold uppercase tracking-widest italic opacity-50 border border-white/2 rounded-lg snap-center mx-auto border-dashed">
+                <div className="h-20 w-48 flex items-center justify-center text-[10px] text-[color:var(--wb-dim)] font-bold uppercase tracking-widest italic opacity-50 border border-[color:var(--wb-line)] rounded-lg snap-center mx-auto border-dashed">
                   Sequence Empty
                 </div>
               )}
@@ -436,11 +436,11 @@ function TimelineCanvas({
                         if (el) itemRefs.current.set(item.id, el);
                         else itemRefs.current.delete(item.id);
                       }}
-                      className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-lg border-2 bg-zinc-900 transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo
+                      className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-lg border-2 bg-[color:var(--wb-panel)] transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo
                                             ${
                                               isActive
                                                 ? 'border-teal-500/2 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
-                                                : 'border-white/2 opacity-40 scale-90 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-95'
+                                                : 'border-[color:var(--wb-line)] opacity-40 scale-90 grayscale hover:grayscale-0 hover:opacity-100 hover:scale-95'
                                             }
                                         `}
                       onClick={() => onItemClick(item)}
@@ -454,7 +454,7 @@ function TimelineCanvas({
 
                       {/* Frame Number Tag */}
                       <div
-                        className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-[7px] font-black font-mono border backdrop-blur-md uppercase tracking-wider ${isActive ? 'bg-teal-500 text-black border-teal-400/2' : 'bg-zinc-950/80 text-white/50 border-white/2'}`}
+                        className={`absolute top-1 left-1 px-1.5 py-0.5 rounded text-[7px] font-black font-mono border backdrop-blur-md uppercase tracking-wider ${isActive ? 'bg-teal-500 text-black border-teal-400/2' : 'bg-[color:var(--wb-panel)] text-[color:var(--wb-ink)]/50 border-[color:var(--wb-line)]'}`}
                       >
                         {item.isOrigin ? 'ORIGIN' : `SEQ.${item.index}`}
                       </div>

@@ -99,20 +99,20 @@ export function SettingsOutputSourcesPanel({
   };
 
   return (
-    <div className="mt-4 rounded-lg border border-white/2 bg-white/4 p-4">
+    <div className="mt-4 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
       <div className="mb-3 flex items-center justify-between gap-3">
         <div>
-          <h3 className="text-[10px] font-black uppercase tracking-widest text-zinc-300">
+          <h3 className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
             External Output Sources
           </h3>
-          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+          <p className="mt-1 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
             Detect, Register, Import Copy
           </p>
         </div>
         {isLoadingOutputSources ? (
-          <LoaderCircle size={16} className="animate-spin text-zinc-500" />
+          <LoaderCircle size={16} className="animate-spin text-[color:var(--wb-muted)]" />
         ) : (
-          <FolderPlus size={16} className="text-zinc-500" />
+          <FolderPlus size={16} className="text-[color:var(--wb-muted)]" />
         )}
       </div>
 
@@ -159,7 +159,7 @@ export function SettingsOutputSourcesPanel({
                     type="button"
                     onClick={() => void handleImportSelected(source.id)}
                     disabled={isImporting || isScanning || selected.length === 0}
-                    className="flex h-8 items-center gap-2 rounded-lg bg-emerald-600 px-3 text-[9px] font-black uppercase tracking-widest text-white transition-colors hover:bg-emerald-500 disabled:opacity-40"
+                    className="flex h-8 items-center gap-2 rounded-lg bg-emerald-600 px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-emerald-500 disabled:opacity-40"
                   >
                     {isImporting ? (
                       <LoaderCircle size={13} className="animate-spin" />
@@ -171,7 +171,7 @@ export function SettingsOutputSourcesPanel({
                 </div>
               </div>
 
-              <p role="status" className="mt-2 text-xs text-zinc-400">
+              <p role="status" className="mt-2 text-xs text-[color:var(--wb-muted)]">
                 {isScanning
                   ? 'Scanning files…'
                   : outputSourceFiles[source.id] === undefined
@@ -181,7 +181,7 @@ export function SettingsOutputSourcesPanel({
                       : `${files.length} files available to import.`}
               </p>
               {files.length > 0 ? (
-                <div className="mt-3 flex items-center gap-3 text-xs text-zinc-400">
+                <div className="mt-3 flex items-center gap-3 text-xs text-[color:var(--wb-muted)]">
                   <button
                     type="button"
                     disabled={isImporting || isScanning}
@@ -215,7 +215,7 @@ export function SettingsOutputSourcesPanel({
                   {files.map((file) => (
                     <label
                       key={file.relativePath}
-                      className="flex cursor-pointer items-center justify-between gap-3 rounded-md border border-white/2 bg-black/20 px-3 py-2 transition-colors hover:bg-white/8"
+                      className="flex cursor-pointer items-center justify-between gap-3 rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2 transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
                     >
                       <span className="flex min-w-0 items-center gap-2">
                         <input
@@ -226,11 +226,11 @@ export function SettingsOutputSourcesPanel({
                           aria-label={`Select ${file.relativePath}`}
                           className="size-3.5 accent-emerald-400"
                         />
-                        <span className="truncate font-mono text-[10px] text-zinc-300">
+                        <span className="truncate font-mono text-[10px] text-[color:var(--wb-ink)]">
                           {file.relativePath}
                         </span>
                       </span>
-                      <span className="shrink-0 text-[9px] font-bold uppercase tracking-widest text-zinc-600">
+                      <span className="shrink-0 text-[9px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
                         {formatBytes(file.sizeBytes)}
                       </span>
                     </label>
@@ -244,14 +244,14 @@ export function SettingsOutputSourcesPanel({
         {outputSourceCandidates.map((candidate) => (
           <div
             key={candidate.id}
-            className="flex items-center justify-between gap-3 rounded-lg border border-white/2 bg-black/20 px-3 py-2"
+            className="flex items-center justify-between gap-3 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2"
           >
             <div className="min-w-0">
-              <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-300">
+              <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
                 <span>{candidate.label}</span>
-                <span className="text-zinc-600">{candidate.status}</span>
+                <span className="text-[color:var(--wb-dim)]">{candidate.status}</span>
               </div>
-              <div className="truncate font-mono text-[10px] text-zinc-500">{candidate.path}</div>
+              <div className="truncate font-mono text-[10px] text-[color:var(--wb-muted)]">{candidate.path}</div>
             </div>
             <button
               type="button"
@@ -262,7 +262,7 @@ export function SettingsOutputSourcesPanel({
                 candidate.status !== 'detected' ||
                 candidate.isInsideStudioLibrary
               }
-              className="h-8 rounded-lg border border-white/2 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
+              className="h-8 rounded-lg border border-[color:var(--wb-line)] px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
             >
               Register
             </button>
@@ -272,7 +272,7 @@ export function SettingsOutputSourcesPanel({
         {outputSources &&
         outputSources.registry.sources.length === 0 &&
         outputSourceCandidates.length === 0 ? (
-          <div className="rounded-lg border border-white/2 bg-black/20 p-3 text-[10px] font-bold uppercase tracking-widest text-zinc-600">
+          <div className="rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
             No external output sources detected.
           </div>
         ) : null}

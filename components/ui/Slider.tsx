@@ -25,7 +25,7 @@ const Slider: React.FC<SliderProps> = ({
 
   return (
     <div className={`flex flex-col gap-3 ${className}`}>
-      <div className="flex justify-between items-center text-xs text-zinc-400 font-medium tracking-wide">
+      <div className="flex justify-between items-center text-xs text-[color:var(--wb-muted)] font-medium tracking-wide">
         <div className="flex items-center gap-2">
           {icon}
           <span>{label}</span>
@@ -35,7 +35,7 @@ const Slider: React.FC<SliderProps> = ({
         </span>
       </div>
 
-      <div className="relative h-2 w-full rounded-full input-groove flex items-center transition-colors bg-zinc-800">
+      <div className="relative h-2 w-full rounded-full input-groove flex items-center transition-colors bg-[color:var(--wb-bar)]">
         <div
           className="absolute h-full rounded-full bg-accent-600 shadow-[0_0_10px_rgb(var(--accent-600)/0.5)] transition-[width] duration-300"
           style={{ width: `${percentage}%` }}

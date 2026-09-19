@@ -1,12 +1,20 @@
 /** @vitest-environment jsdom */
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import type { StudioUsageSummary } from '../lib/studioDiagnostics';
+import { ThemeProvider } from '../hooks/useTheme';
 import { HeaderToolbar, type HeaderToolbarProps } from './HeaderToolbar';
+import { RecipeWorkbenchContext } from './recipes/RecipeWorkbenchContext';
 
-afterEach(cleanup);
+afterEach(() => {
+  cleanup();
+  window.localStorage.removeItem('codex-studio-appearance');
+  window.localStorage.removeItem('codex-studio-theme-index');
+  document.documentElement.removeAttribute('data-theme');
+  document.documentElement.removeAttribute('data-appearance');
+});
 
 const usage: StudioUsageSummary = {
   value: '120',
@@ -36,7 +44,10 @@ const commandCenter: StudioCommandCenterProjection = {
   queue: { activeCount: 1, reviewCount: 4, isOpen: false },
 };
 
-function renderHeader(overrides: Partial<HeaderToolbarProps> = {}) {
+function renderHeader(
+  overrides: Partial<HeaderToolbarProps> = {},
+  compare?: { showReference: boolean; toggle: () => void } | null,
+) {
   const props: HeaderToolbarProps = {
     isGenerating: false,
     workspaces: [{ id: 'default', name: 'Shots', createdAt: 1, imageCount: 3 }],
@@ -63,9 +74,24 @@ function renderHeader(overrides: Partial<HeaderToolbarProps> = {}) {
     onOpenSettings: vi.fn(),
     onSelectProvider: vi.fn(),
     isProviderSaving: false,
+    onSelectRecipe: vi.fn(),
     ...overrides,
   };
-  return render(<HeaderToolbar {...props} />);
+  return render(
+    <ThemeProvider>
+      <RecipeWorkbenchContext
+        value={{
+          controls: null,
+          action: null,
+          overlay: null,
+          compare: compare ?? null,
+          setCompare: vi.fn(),
+        }}
+      >
+        <HeaderToolbar {...props} />
+      </RecipeWorkbenchContext>
+    </ThemeProvider>,
+  );
 }
 
 describe('HeaderToolbar chrome', () => {
@@ -75,7 +101,47 @@ describe('HeaderToolbar chrome', () => {
     expect(screen.getByRole('button', { name: 'Open recipes' })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Go to studio' })).toBeTruthy();
     expect(screen.getByRole('button', { name: /open workspace switcher: shots/i })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Workflow: Default' })).toBeTruthy();
+    expect(document.querySelector('.create-workflow-block.is-header')).toBeTruthy();
     expect(screen.queryByRole('button', { name: /change provider/i })).toBeNull();
     expect(screen.queryByRole('button', { name: /open jobs/i })).toBeNull();
+    expect(document.querySelector('.studio-toolbar-shell.studio-bar')).toBeTruthy();
+  });
+
+  it('toggles light and dark appearance from the toolbar', () => {
+    renderHeader();
+    const toggle = screen.getByRole('button', { name: 'Switch to light appearance' });
+    fireEvent.click(toggle);
+    expect(screen.getByRole('button', { name: 'Switch to dark appearance' })).toBeTruthy();
+    expect(document.documentElement.getAttribute('data-theme')).toBe('paper');
+  });
+
+  it('paints Tools with Workbench popover chrome', () => {
+    renderHeader();
+    expect(document.querySelector('.studio-popover')).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Open help and setup' }).className).toContain(
+      'studio-menu-item',
+    );
+  });
+
+  it('moves compare reference onto the header when the canvas registers it', () => {
+    const toggle = vi.fn();
+    renderHeader({}, { showReference: false, toggle });
+    fireEvent.click(screen.getByRole('button', { name: 'Compare reference' }));
+    expect(toggle).toHaveBeenCalledTimes(1);
+  });
+
+  it('shows the active recipe in the centered workflow control', () => {
+    const onCloseRecipe = vi.fn();
+    renderHeader({
+      routeView: 'recipe',
+      currentView: 'recipes',
+      activeRecipe: 'styles',
+      onCloseRecipe,
+    });
+
+    fireEvent.click(screen.getByRole('button', { name: 'Workflow: Styles' }));
+    fireEvent.click(screen.getByRole('option', { name: 'Default' }));
+    expect(onCloseRecipe).toHaveBeenCalledTimes(1);
   });
 });

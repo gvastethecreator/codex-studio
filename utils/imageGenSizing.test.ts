@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
   IMAGE_GEN_RATIO_OPTIONS,
   getImageGenSizeForRatio,
+  getRatioShapeStyle,
   groupImageGenRatiosByOrientation,
   normalizeImageGenRatio,
 } from './imageGenSizing';
@@ -42,6 +43,12 @@ describe('imageGenSizing', () => {
     expect(normalizeImageGenRatio('4:1')).toBe('21:9');
     expect(normalizeImageGenRatio('1:4')).toBe('9:16');
     expect(normalizeImageGenRatio('unknown')).toBe('1:1');
+  });
+
+  it('sizes ratio glyphs to a shared bounding box', () => {
+    expect(getRatioShapeStyle('1:1')).toEqual({ width: '24px', height: '24px' });
+    expect(getRatioShapeStyle('3:2').width).toBe('27px');
+    expect(getRatioShapeStyle('2:3').height).toBe('24px');
   });
 
   it('groups generation ratios by orientation', () => {

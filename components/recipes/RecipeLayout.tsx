@@ -22,7 +22,7 @@ export const RecipeLayout: React.FC<RecipeLayoutProps> = ({
       data-generating={isGenerating ? 'true' : 'false'}
     >
       {/* Main Content Area */}
-      <div className={`recipe-layout-content flex-1 w-full overflow-hidden relative ${className}`}>
+      <div className={`recipe-layout-content studio-well flex-1 w-full overflow-hidden relative ${className}`}>
         {children}
       </div>
 

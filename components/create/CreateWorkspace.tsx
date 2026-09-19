@@ -1,19 +1,13 @@
-import React, { Suspense, useCallback, useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 
 import { useGenerationDraft } from '../../contexts/GenerationContext';
-import {
-  buildRecipeIntentPreloadPlan,
-  buildRoutePreloadPlan,
-  type RoutePreloadPlan,
-} from '../../lib/routePreloadBudget';
+import { buildRoutePreloadPlan, type RoutePreloadPlan } from '../../lib/routePreloadBudget';
 import { preloadRecipeComponent } from '../../lib/recipeRouteModules';
 import { preloadStudioViewportSurface } from '../../lib/studioViewportRouteSurfaces';
-import type { RecipeAliasId } from '../../lib/recipeAliases';
-import type { GeneratedImageWithConfig, RecipeId } from '../../types';
+import type { GeneratedImageWithConfig } from '../../types';
 import type { RecipePageRuntimeProps } from '../RecipePage';
 import { RecipeResultPreview } from '../recipes/RecipeResultPreview';
 import type { StudioGenerationDockProps } from '../shell/StudioGenerationDock';
-import { CreateWorkflowPicker } from './CreateWorkflowPicker';
 
 function preloadStudioViewportPlan(plan: RoutePreloadPlan) {
   for (const surface of plan.surfaces) {
@@ -34,28 +28,29 @@ const StudioGenerationDockFallback: React.FC = () => (
 
 export interface CreateWorkspaceProps {
   recipePageProps: RecipePageRuntimeProps;
-  onSelectRecipe: (recipeId: RecipeId, aliasId?: RecipeAliasId | null) => void;
   hasGenerationDock: boolean;
   GenerationDock: React.LazyExoticComponent<React.ComponentType<StudioGenerationDockProps>>;
   generationDockProps: StudioGenerationDockProps;
   onToggleFavorite?: (imageId: string) => void;
   onUseAsReference?: (image: GeneratedImageWithConfig) => void;
+  tools?: React.ReactNode;
+  images?: GeneratedImageWithConfig[];
+  routeKey?: string;
 }
 
 export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
   recipePageProps,
-  onSelectRecipe,
   hasGenerationDock,
   GenerationDock,
   generationDockProps,
   onToggleFavorite,
   onUseAsReference,
+  tools,
+  images,
+  routeKey = 'recipes-list',
 }) => {
   const draft = useGenerationDraft();
-
-  const handlePreviewRecipe = useCallback((recipeId: RecipeId) => {
-    preloadStudioViewportPlan(buildRecipeIntentPreloadPlan(recipeId));
-  }, []);
+  const stageImages = images ?? recipePageProps.imagesWithConfig;
 
   useEffect(() => {
     const plan = buildRoutePreloadPlan({ routeView: 'recipes', activeRecipe: null });
@@ -64,22 +59,22 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
   }, []);
 
   return (
-    <div className="create-workspace" data-route-key="recipes-list">
-      <aside className="create-tools" aria-label="Create tools">
-        <CreateWorkflowPicker
-          onSelectRecipe={onSelectRecipe}
-          onPreviewRecipe={handlePreviewRecipe}
-        />
+    <div className="create-workspace" data-route-key={routeKey}>
+      <aside
+        className={`create-tools studio-surface${tools ? ' workbench-config' : ''}`}
+        aria-label="Create tools"
+      >
+        {tools}
         {hasGenerationDock ? (
           <Suspense fallback={<StudioGenerationDockFallback />}>
             <GenerationDock {...generationDockProps} layout="rail" />
           </Suspense>
         ) : null}
       </aside>
-      <section className="create-stage" aria-label="Create canvas">
+      <section className="create-stage studio-well" aria-label="Create canvas">
         <RecipeResultPreview
           variant="stage"
-          images={recipePageProps.imagesWithConfig}
+          images={stageImages}
           reference={draft.generationConfig.attachments[0]}
           onOpen={recipePageProps.openModal}
           onToggleFavorite={onToggleFavorite}

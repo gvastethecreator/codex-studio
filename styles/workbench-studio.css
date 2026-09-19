@@ -1,0 +1,387 @@
+/* Studio chrome remapped onto Workbench UI 0.4.0 tokens.
+   Product layout stays; radii, type, and control height follow `--wbp-*`. */
+
+.studio-toolbar-shell.vt-top-toolbar,
+.vt-top-toolbar.studio-toolbar-shell {
+  min-height: 42px;
+  padding: 6px 10px;
+  gap: var(--wbp-gap, 12px);
+  background: var(--wb-bar);
+  border-bottom: 1px solid var(--wb-line) !important;
+  box-shadow: none !important;
+  color: var(--wb-ink);
+}
+
+.vt-top-toolbar .studio-command-group,
+.vt-top-toolbar .studio-command-surface,
+.vt-top-toolbar .studio-control,
+.vt-top-toolbar [data-gsap-dropdown] {
+  border: 1px solid var(--wb-border) !important;
+  box-shadow: none !important;
+  border-radius: var(--wb-radius);
+  min-height: var(--wb-control-height);
+  font-size: var(--wb-font-size);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.studio-toolbar-shell .studio-nav-tab {
+  display: inline-flex;
+  height: var(--wb-control-height);
+  align-items: center;
+  padding: 0 10px;
+  border: 0;
+  border-radius: var(--wb-radius);
+  background: transparent;
+  color: var(--wb-muted);
+  font-size: var(--wb-font-size);
+  font-weight: 500;
+}
+
+.studio-toolbar-shell .studio-nav-tab:hover {
+  color: var(--wb-ink);
+  background: color-mix(in srgb, var(--wb-ink) 8%, transparent);
+}
+
+.studio-toolbar-shell .studio-nav-tab[aria-current='page'] {
+  color: var(--wb-ink);
+  background: var(--wb-bar);
+  box-shadow: inset 0 -2px var(--wb-accent);
+}
+
+.workbench-tabs {
+  flex-shrink: 0;
+  gap: 0;
+  min-height: 31px;
+  background: var(--wb-bg);
+  border-bottom: 1px solid var(--wb-line);
+}
+
+.workbench-tabs [role='tab'] {
+  display: flex;
+  height: 31px;
+  align-items: center;
+  gap: 7px;
+  padding: 0 13px;
+  border: 0;
+  border-right: 1px solid var(--wb-line);
+  background: transparent;
+  color: var(--wb-muted);
+  font-size: var(--wb-font-size);
+  cursor: pointer;
+}
+
+.workbench-tabs [role='tab'][aria-selected='true'] {
+  background: var(--wb-bar);
+  color: var(--wb-ink);
+  box-shadow: inset 0 -2px var(--wb-accent);
+}
+
+.studio-experience .studio-status-bar,
+.studio-status-bar.studio-bar {
+  min-height: 24px;
+  height: auto;
+  padding: 3px 10px;
+  border-top: 1px solid var(--wb-line);
+  background: var(--wb-bg);
+  font-size: 10px;
+  color: var(--wb-muted);
+}
+
+.studio-status-provider {
+  height: var(--wb-control-height);
+  border-radius: var(--wb-radius);
+  font-size: 10px;
+}
+
+.studio-experience .create-tools {
+  border: 1px solid var(--wb-line);
+  border-radius: 5px;
+  background: var(--wb-panel);
+  box-shadow: none;
+}
+
+.studio-experience .create-stage {
+  border: 1px solid var(--wb-line);
+  border-radius: 5px;
+  background: var(--wb-canvas);
+}
+
+.studio-experience .create-select-field,
+.studio-experience .create-stepper,
+.studio-experience .create-tool-chip,
+.studio-experience .create-workflow-quiet-select {
+  min-height: var(--wb-control-height);
+  height: var(--wb-control-height);
+  border-radius: var(--wb-radius);
+  font-size: var(--wb-font-size);
+}
+
+.studio-experience .create-select-field,
+.studio-experience .create-stepper {
+  height: 36px;
+  min-height: 36px;
+}
+
+.studio-experience .create-step-button {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  border-radius: var(--wb-radius);
+}
+
+.studio-experience .create-tool-footer .create-generate-button {
+  height: 36px;
+  min-height: 36px;
+  border-radius: var(--wb-radius);
+  --amb-albedo: var(--wb-accent-fill);
+  background: var(--wb-accent-fill, color-mix(in srgb, var(--wb-accent) 50%, #0a0a0a));
+  color: var(--wb-on-fill, #f4f4f4);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.studio-experience .create-tool-footer .create-generate-button:hover:not(:disabled) {
+  --amb-albedo: color-mix(in srgb, var(--wb-accent) 62%, #0a0a0a);
+  background: color-mix(in srgb, var(--wb-accent) 62%, #0a0a0a);
+  filter: none;
+}
+
+.studio-experience .create-composer {
+  border-radius: 6px;
+}
+
+.studio-experience .create-format-popover,
+.studio-experience .create-workflow-popover,
+.wb-ambient [data-gsap-dropdown],
+.wb-ambient.studio-popover {
+  border: 1px solid var(--wb-border);
+  border-radius: 6px;
+  background: var(--wb-panel);
+  color: var(--wb-ink);
+  box-shadow: 0 8px 30px color-mix(in srgb, #000 35%, transparent);
+}
+
+.studio-experience .workbench-config {
+  background: var(--wb-panel);
+  border-left: 1px solid var(--wb-line);
+}
+
+.studio-experience .create-tools.workbench-config {
+  border-left: 0;
+}
+
+.studio-experience input[type='search'] {
+  height: var(--wb-control-height);
+  border-radius: var(--wb-radius);
+  background: var(--wb-canvas);
+  color: var(--wb-ink);
+  font-size: var(--wb-font-size);
+}
+
+.studio-status-bar .studio-hit-target {
+  min-height: 0;
+  min-width: 0;
+}
+
+.studio-status-bar .studio-hit-target::after {
+  width: 30px;
+  height: 24px;
+}
+
+.studio-experience .studio-status-bar,
+.studio-status-bar.studio-bar {
+  min-height: 24px;
+  height: 28px;
+  max-height: 28px;
+  padding: 0 10px;
+}
+
+/* Re-apply Ambient paint at Studio specificity; :where() in the kernel loses to chrome CSS. */
+.wb-ambient[data-ambient-enabled='true']
+  :is(
+    .studio-surface,
+    .studio-control,
+    .studio-well,
+    .studio-bar,
+    .studio-popover,
+    .create-tools,
+    .create-stage,
+    .workbench-config,
+    .studio-status-bar,
+    .studio-toolbar-shell,
+    .create-select-field,
+    .create-stepper,
+    .create-tool-chip,
+    .create-generate-button,
+    .create-workflow-quiet-select,
+    .create-composer,
+    .create-negative-input,
+    .create-format-popover,
+    .create-workflow-popover,
+    .studio-dialog,
+    .studio-field,
+    .studio-list-row,
+    .studio-ghost-control,
+    .studio-primary-control,
+    .wbp-dial-face,
+    .wbp-thumb,
+    [data-gsap-dropdown]
+  ) {
+  background-color: var(--amb-lit);
+  background-image: var(--wba-specular-image), var(--wba-curve-image);
+  box-shadow: var(--wba-cast-shadow);
+}
+
+.wb-ambient[data-ambient-enabled='true']
+  :is(.create-composer, .create-negative-input, .studio-well, .studio-field, .create-stage) {
+  background: var(--wba-groove-color);
+  background-image: none;
+  box-shadow: var(--wba-groove-shadow);
+}
+
+.studio-first-ready-scrim {
+  background: var(--wba-bg);
+}
+
+.studio-ink {
+  color: var(--wb-ink);
+}
+
+.studio-muted {
+  color: var(--wb-muted);
+}
+
+.studio-dim {
+  color: var(--wb-dim);
+}
+
+.studio-scrim {
+  background: color-mix(in srgb, var(--wba-bg, #0a0a0a) 72%, #000);
+  color: var(--wb-ink);
+}
+
+.studio-dialog {
+  border: 1px solid var(--wb-line);
+  border-radius: 6px;
+  background: var(--wb-panel);
+  color: var(--wb-ink);
+  box-shadow: 0 20px 100px color-mix(in srgb, #000 45%, transparent);
+  font-size: var(--wb-font-size);
+}
+
+.studio-dialog-header,
+.studio-dialog-actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--wbp-gap, 12px);
+  padding: calc(var(--wbp-pad, 18px) * 0.6) var(--wbp-pad, 18px);
+  border-color: var(--wb-line);
+  border-style: solid;
+}
+
+.studio-dialog-header {
+  justify-content: space-between;
+  border-bottom-width: 1px;
+}
+
+.studio-dialog-body {
+  min-height: 0;
+  flex: 1;
+  color: var(--wb-ink);
+}
+
+.studio-dialog-actions {
+  justify-content: flex-end;
+  border-top-width: 1px;
+}
+
+.studio-dialog-title {
+  margin: 0;
+  color: var(--wb-ink);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.studio-tab {
+  display: inline-flex;
+  height: 31px;
+  align-items: center;
+  padding: 0 12px;
+  border: 0;
+  background: transparent;
+  color: var(--wb-muted);
+  font-size: var(--wb-font-size);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.studio-tab:hover {
+  color: var(--wb-ink);
+}
+
+.studio-tab[aria-selected='true'],
+.studio-tab.is-active {
+  color: var(--wb-ink);
+  box-shadow: inset 0 -2px var(--wb-accent);
+}
+
+.studio-field,
+.studio-list-row {
+  border: 1px solid var(--wb-line);
+  border-radius: var(--wb-radius);
+  background: var(--wb-well);
+  color: var(--wb-ink);
+}
+
+.studio-field {
+  min-height: var(--wb-control-height);
+}
+
+.studio-ghost-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+  background: transparent;
+  color: var(--wb-muted);
+  min-height: var(--wb-control-height);
+  min-width: var(--wb-control-height);
+}
+
+.studio-ghost-control:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--wb-ink) 8%, transparent);
+  color: var(--wb-ink);
+}
+
+.studio-primary-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--wb-control-height);
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: var(--wb-radius);
+  background: var(--wb-accent-fill, color-mix(in srgb, var(--wb-accent) 50%, #0a0a0a));
+  color: var(--wb-on-fill, #f4f4f4);
+  font-size: var(--wb-font-size);
+  font-weight: 600;
+}
+
+.studio-primary-control:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--wb-accent) 62%, #0a0a0a);
+}
+
+.studio-menu-item {
+  color: var(--wb-ink);
+}
+
+.studio-menu-item:hover {
+  background: color-mix(in srgb, var(--wb-ink) 8%, transparent);
+}

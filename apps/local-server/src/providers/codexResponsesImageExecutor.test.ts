@@ -88,6 +88,50 @@ describe('codex responses image executor', () => {
     expect(String(transcript?.content)).not.toContain('codex-secret');
   });
 
+  it('sends a 4K ChatGPT image size on the HTTP tool', async () => {
+    let payload: Record<string, unknown> | undefined;
+    const executor = createCodexResponsesImageExecutor({
+      getAccessToken: async () => 'codex-secret',
+      fetch: async (_url, init) => {
+        payload = JSON.parse(typeof init?.body === 'string' ? init.body : '{}') as Record<
+          string,
+          unknown
+        >;
+        return new Response(
+          [
+            'event: response.output_item.done',
+            `data: {"type":"image_generation_call","result":"${PNG_B64}"}`,
+            '',
+            'data: [DONE]',
+            '',
+          ].join('\n'),
+          { headers: { 'content-type': 'text/event-stream' } },
+        );
+      },
+      resolveLibraryPath: (...segments) => `D:/studio-library/${segments.join('/')}`,
+      mkdir: (() => undefined) as typeof import('node:fs').mkdirSync,
+      writeFile: (() => undefined) as typeof import('node:fs').writeFileSync,
+      now: () => 1,
+    });
+    await executor({
+      id: 'job-4k',
+      workspaceId: 'workspace-1',
+      prompt: 'stone keep',
+      checkpointRemoteExecution: vi.fn(),
+      execution: httpExecution('3840x2160'),
+      sourceSpec: createGenerationTaskSpec({
+        id: 'spec-4k',
+        task: 'image_generate',
+        providerId: 'codex',
+        prompt: 'stone keep',
+        output: { aspectRatio: '16:9', imageSize: '3840x2160' },
+      }),
+    });
+    expect(payload).toMatchObject({
+      tools: [{ type: 'image_generation', size: '3840x2160' }],
+    });
+  });
+
   it('accepts each available GPT Image contract without changing the selected model', () => {
     for (const imageModel of CODEX_HTTP_IMAGE_MODELS) {
       const policy = resolveCodexExecutionPolicy(

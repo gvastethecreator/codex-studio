@@ -8,7 +8,8 @@ vi.mock('../../contexts/GlobalContext', () => ({
 
 import { MODELS } from '../../constants';
 import { RecipeResultPreview } from './RecipeResultPreview';
-import type { GeneratedImageWithConfig } from '../../types';
+import type { Attachment, GeneratedImageWithConfig } from '../../types';
+import { RecipeWorkbenchContext } from './RecipeWorkbenchContext';
 
 afterEach(cleanup);
 
@@ -51,6 +52,8 @@ describe('RecipeResultPreview', () => {
       'true',
     );
     expect(onOpen).not.toHaveBeenCalled();
+    expect(screen.queryByText('Compare reference')).toBeNull();
+    expect(screen.queryByText('Result')).toBeNull();
   });
 
   it('keeps recipe images in the library stage and exposes canvas actions', () => {
@@ -79,5 +82,27 @@ describe('RecipeResultPreview', () => {
     expect(
       screen.getByRole('region', { name: 'Result preview' }).getAttribute('data-stage-background'),
     ).toBe('checkered');
+  });
+
+  it('registers compare chrome for the header and keeps it off the stage heading', () => {
+    const setCompare = vi.fn();
+    const reference: Attachment = {
+      id: 'ref-1',
+      name: 'ref.png',
+      dataUrl: '/library/ref.png',
+      strength: 1,
+    };
+    render(
+      <RecipeWorkbenchContext
+        value={{ controls: null, action: null, overlay: null, compare: null, setCompare }}
+      >
+        <RecipeResultPreview variant="stage" images={[IMAGE]} reference={reference} />
+      </RecipeWorkbenchContext>,
+    );
+
+    expect(setCompare).toHaveBeenCalledWith(
+      expect.objectContaining({ showReference: false, toggle: expect.any(Function) }),
+    );
+    expect(screen.queryByRole('button', { name: 'Compare reference' })).toBeNull();
   });
 });

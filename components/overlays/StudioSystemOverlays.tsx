@@ -119,7 +119,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             fallback={
               <LazySurfaceFallback
                 label="Loading activity"
-                className="fixed inset-y-0 left-0 z-50 grid w-96 max-w-full place-items-center border-r border-white/2 bg-black/80 text-zinc-400"
+                className="fixed inset-y-0 left-0 z-50 grid w-96 max-w-full place-items-center border-r border-[color:var(--wb-line)] studio-dialog"
               />
             }
           >
@@ -146,7 +146,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             fallback={
               <LazySurfaceFallback
                 label="Loading dashboard"
-                className="fixed inset-0 z-50 grid place-items-center bg-black/60 text-zinc-400"
+                className="fixed inset-0 z-50 grid place-items-center studio-scrim"
               />
             }
           >
@@ -165,7 +165,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             fallback={
               <LazySurfaceFallback
                 label="Loading setup"
-                className="fixed inset-0 z-50 grid place-items-center bg-black/60 text-zinc-400"
+                className="fixed inset-0 z-50 grid place-items-center studio-scrim"
               />
             }
           >
@@ -205,7 +205,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             fallback={
               <LazySurfaceFallback
                 label="Loading settings"
-                className="fixed inset-0 z-50 grid place-items-center bg-black/60 text-zinc-400"
+                className="fixed inset-0 z-50 grid place-items-center studio-scrim"
               />
             }
           >
@@ -244,7 +244,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
             fallback={
               <LazySurfaceFallback
                 label="Loading chat"
-                className="fixed inset-0 z-50 grid place-items-center bg-black/60 text-zinc-400"
+                className="fixed inset-0 z-50 grid place-items-center studio-scrim"
               />
             }
           >

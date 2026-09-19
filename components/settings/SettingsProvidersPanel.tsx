@@ -77,8 +77,8 @@ export function SettingsProvidersPanel({
 
   return (
     <>
-      <div className="md:col-span-2 flex flex-col gap-2 rounded-xl border border-white/2 bg-white/[0.03] p-4">
-        <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+      <div className="md:col-span-2 flex flex-col gap-2 rounded-xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-4">
+        <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
           Default Provider
         </div>
         <fieldset className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
@@ -90,8 +90,8 @@ export function SettingsProvidersPanel({
                 key={providerId}
                 className={`flex h-11 min-w-0 cursor-pointer items-center gap-2.5 rounded-lg border px-2.5 text-left transition-[color,background-color,border-color,transform] focus-within:ring-2 focus-within:ring-accent-300 active:scale-[0.98] ${
                   isSelected
-                    ? 'border-accent-400/2 bg-accent-500/14 text-white'
-                    : 'border-white/2 bg-white/[0.03] text-zinc-300 hover:border-white/2 hover:bg-white/[0.06]'
+                    ? 'border-accent-400/2 bg-accent-500/14 text-[color:var(--wb-ink)]'
+                    : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'
                 }`}
               >
                 <input
@@ -132,10 +132,10 @@ export function SettingsProvidersPanel({
       {providerCapabilities ? (
         <div className="md:col-span-2 grid gap-3">
           <div>
-            <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+            <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
               Accounts
             </div>
-            <p className="mt-1 text-[12px] leading-relaxed text-zinc-500">
+            <p className="mt-1 text-[12px] leading-relaxed text-[color:var(--wb-muted)]">
               Connect HTTP accounts here. Local CLI providers keep their own authenticated sessions.
             </p>
           </div>
@@ -158,7 +158,7 @@ export function SettingsProvidersPanel({
                   className={`rounded-xl border p-4 ${
                     provider.isDefault
                       ? 'border-accent-400/2 bg-accent-500/[0.06]'
-                      : 'border-white/2 bg-white/[0.03]'
+                      : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)]'
                   }`}
                 >
                   <div className="flex items-start gap-3">
@@ -171,11 +171,11 @@ export function SettingsProvidersPanel({
                     <div className="min-w-0 flex-1">
                       <div className="flex items-start justify-between gap-2">
                         <div className="min-w-0">
-                          <div className="truncate text-sm font-semibold text-white">
+                          <div className="truncate text-sm font-semibold text-[color:var(--wb-ink)]">
                             {provider.label}
                           </div>
                           {provider.isDefault ? (
-                            <p className="mt-0.5 text-[11px] text-zinc-500">Default provider</p>
+                            <p className="mt-0.5 text-[11px] text-[color:var(--wb-muted)]">Default provider</p>
                           ) : null}
                         </div>
                         <StatusPill
@@ -189,16 +189,16 @@ export function SettingsProvidersPanel({
                       </div>
                     </div>
                   </div>
-                  <p className="mt-3 text-[12px] leading-relaxed text-zinc-400">
+                  <p className="mt-3 text-[12px] leading-relaxed text-[color:var(--wb-muted)]">
                     {provider.detail}
                   </p>
                   {runtimeLabel || secretLabel ? (
-                    <p className="mt-2 text-[11px] leading-relaxed text-zinc-400">
+                    <p className="mt-2 text-[11px] leading-relaxed text-[color:var(--wb-muted)]">
                       {[runtimeLabel, secretLabel].filter(Boolean).join(' · ')}
                     </p>
                   ) : null}
                   {preflight?.diagnostics.length ? (
-                    <p className="mt-2 text-[12px] leading-relaxed text-zinc-400">
+                    <p className="mt-2 text-[12px] leading-relaxed text-[color:var(--wb-muted)]">
                       {preflight.diagnostics.join(' ')}
                     </p>
                   ) : null}
@@ -209,7 +209,7 @@ export function SettingsProvidersPanel({
           </div>
         </div>
       ) : (
-        <p className="md:col-span-2 text-[12px] leading-relaxed text-zinc-500">
+        <p className="md:col-span-2 text-[12px] leading-relaxed text-[color:var(--wb-muted)]">
           Provider status loads with Studio Settings.
         </p>
       )}

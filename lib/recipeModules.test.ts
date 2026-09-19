@@ -219,6 +219,32 @@ describe('recipeModules', () => {
     });
   });
 
+  it('maps ChatGPT 2K and 4K size choices onto exact pixel output', () => {
+    const wide2k = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-2k',
+      providerId: 'codex',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'a ceramic bird',
+        aspectRatio: '16:9',
+        imageSize: '2K',
+      },
+    });
+    expect(wide2k.output.imageSize).toBe('2048x1152');
+
+    const wide4k = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-4k',
+      providerId: 'codex',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'a ceramic bird',
+        aspectRatio: '16:9',
+        imageSize: '4K',
+      },
+    });
+    expect(wide4k.output.imageSize).toBe('3840x2160');
+  });
+
   it('adds compact provider directives for style preset specs without dropping legacy context', () => {
     const spec = buildGenerationTaskSpecFromRecipe({
       id: 'spec-style',

@@ -24,7 +24,7 @@ export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = (
             fallback={
               <LazySurfaceFallback
                 label="Loading archive"
-                className="fixed inset-0 z-50 grid place-items-center bg-black/60 text-zinc-400"
+                className="fixed inset-0 z-50 grid place-items-center studio-scrim"
               />
             }
           >

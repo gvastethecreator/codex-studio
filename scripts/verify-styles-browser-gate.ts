@@ -205,10 +205,14 @@ export async function verifyStylesBrowserGate({
     });
 
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: timeoutMs });
+    await page.waitForSelector('[data-compact-style-selector]', { timeout: timeoutMs });
+    await clickViaDom(page, '[data-open-style-catalog]', timeoutMs);
     await page.waitForSelector('[data-style-browser-root]', { timeout: timeoutMs });
 
     const captureStart = Date.now();
     await page.reload({ waitUntil: 'domcontentloaded', timeout: timeoutMs });
+    await page.waitForSelector('[data-compact-style-selector]', { timeout: timeoutMs });
+    await clickViaDom(page, '[data-open-style-catalog]', timeoutMs);
     await page.waitForSelector('[data-style-browser-root]', { timeout: timeoutMs });
 
     await page.waitForSelector(`[data-style-collection-card="${collectionId}"]`, {

@@ -40,7 +40,7 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
             onPointerEnter={() => onPreviewRecipe(recipe.targetRecipeId)}
             className={
               isCompact
-                ? 'flex min-w-0 items-center gap-2 rounded-lg px-2 py-1.5 text-left transition-colors hover:bg-white/8 focus-visible:outline-2 focus-visible:outline-accent-400'
+                ? 'flex min-w-0 items-center gap-2 rounded-lg px-2 py-1.5 text-left transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] focus-visible:outline-2 focus-visible:outline-accent-400'
                 : 'flex min-w-0 items-center gap-3 rounded-xl bg-white/[0.035] p-2 text-left transition-colors hover:bg-white/[0.08] focus-visible:outline-2 focus-visible:outline-accent-400'
             }
           >
@@ -63,11 +63,11 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
               <span className="block truncate text-sm font-semibold capitalize">
                 {recipe.title.toLowerCase()}
               </span>
-              <span className="mt-0.5 block truncate text-xs text-zinc-400">
+              <span className="mt-0.5 block truncate text-xs text-[color:var(--wb-muted)]">
                 {recipe.description}
               </span>
             </span>
-            <IconArrowRight size={16} className="shrink-0 text-zinc-500" aria-hidden="true" />
+            <IconArrowRight size={16} className="shrink-0 text-[color:var(--wb-muted)]" aria-hidden="true" />
           </button>
         );
       })}

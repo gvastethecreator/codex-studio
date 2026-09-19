@@ -62,28 +62,28 @@ function CameraAnglesInfoPanel({
   return (
     <>
       {/* Output Stats */}
-      <div className="shrink-0 rounded-2xl border border-white/2 bg-zinc-900/40 p-5 shadow-xl">
+      <div className="shrink-0 rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-5 shadow-xl">
         <div className="flex items-center gap-3 mb-3">
           <div className="p-2 bg-cyan-500/10 rounded-lg">
             <Eye size={14} className="text-cyan-400" />
           </div>
           <div>
-            <h3 className="text-[10px] font-black text-white uppercase tracking-widest">
+            <h3 className="text-[10px] font-black text-[color:var(--wb-ink)] uppercase tracking-widest">
               Virtual framing
             </h3>
-            <p className="text-[8px] text-zinc-500 font-bold uppercase">
+            <p className="text-[8px] text-[color:var(--wb-muted)] font-bold uppercase">
               Camera settings for the next image
             </p>
           </div>
         </div>
-        <div className="p-3 bg-black/40 rounded-xl border border-white/2 space-y-2">
-          <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+        <div className="p-3 bg-[color:var(--wb-well)] rounded-xl border border-[color:var(--wb-line)] space-y-2">
+          <p className="text-[10px] font-bold text-[color:var(--wb-ink)] leading-relaxed">
             <span className="text-cyan-500">POS:</span> {hPos}
           </p>
-          <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+          <p className="text-[10px] font-bold text-[color:var(--wb-ink)] leading-relaxed">
             <span className="text-pink-500">ANG:</span> {vPos}
           </p>
-          <p className="text-[10px] font-bold text-zinc-300 leading-relaxed">
+          <p className="text-[10px] font-bold text-[color:var(--wb-ink)] leading-relaxed">
             <span className="text-yellow-500">LENS:</span> {framing}
           </p>
         </div>
@@ -91,12 +91,12 @@ function CameraAnglesInfoPanel({
 
       {/* Workspace Gallery */}
       {cameraImages.length > 0 && (
-        <div className="flex-1 min-h-0 bg-black/40 border border-white/2 rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
+        <div className="flex-1 min-h-0 bg-[color:var(--wb-well)] border border-[color:var(--wb-line)] rounded-2xl p-2 flex flex-col gap-2 overflow-hidden shadow-inner">
           <div className="flex shrink-0 items-center justify-between px-2">
-            <span className="text-[9px] font-black text-zinc-500 uppercase tracking-widest">
+            <span className="text-[9px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest">
               Workspace Gallery
             </span>
-            <span className="text-[9px] font-bold text-zinc-600 uppercase">
+            <span className="text-[9px] font-bold text-[color:var(--wb-dim)] uppercase">
               {cameraImages.length} Renders
             </span>
           </div>
@@ -108,7 +108,7 @@ function CameraAnglesInfoPanel({
                 aria-label={`Select camera image ${img.id}`}
                 key={img.id}
                 onClick={() => onSelectImage(img)}
-                className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/2 hover:border-cyan-500/2 transition-[border-color,box-shadow] group shadow-sm hover:shadow-lg"
+                className="relative aspect-square w-full rounded-xl overflow-hidden border border-[color:var(--wb-line)] hover:border-cyan-500/2 transition-[border-color,box-shadow] group shadow-sm hover:shadow-lg"
               >
                 <img
                   src={img.thumbnail || img.src}
@@ -116,8 +116,8 @@ function CameraAnglesInfoPanel({
                   loading="lazy"
                   alt=""
                 />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                  <Maximize2 size={16} className="text-white drop-shadow-md" />
+                <div className="absolute inset-0 bg-[color:var(--wb-well)] opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                  <Maximize2 size={16} className="text-[color:var(--wb-ink)] drop-shadow-md" />
                 </div>
                 {img.isFavorite && (
                   <div className="absolute top-1 right-1 size-2 bg-cyan-500 rounded-full shadow-lg" />
@@ -206,7 +206,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
     () => (
       <div className="w-full flex flex-wrap items-center gap-4">
         <div className="flex-1 min-w-45 space-y-3">
-          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
+          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
               <RotateCw size={12} className="text-cyan-400" /> Azimuth
             </div>
@@ -220,12 +220,12 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             value={azimuth}
             onChange={(e) => setAzimuth(parseInt(e.target.value))}
             aria-label="Azimuth"
-            className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-cyan-400 hover:accent-cyan-300"
+            className="w-full h-1.5 bg-[color:var(--wb-bar)] rounded-full appearance-none cursor-pointer accent-cyan-400 hover:accent-cyan-300"
           />
         </div>
 
         <div className="flex-1 min-w-45 space-y-3">
-          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
+          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
               <ArrowUpFromLine size={12} className="text-pink-400" /> Elevation
             </div>
@@ -239,12 +239,12 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             value={elevation}
             onChange={(e) => setElevation(parseInt(e.target.value))}
             aria-label="Elevation"
-            className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-pink-400 hover:accent-pink-300"
+            className="w-full h-1.5 bg-[color:var(--wb-bar)] rounded-full appearance-none cursor-pointer accent-pink-400 hover:accent-pink-300"
           />
         </div>
 
         <div className="flex-1 min-w-45 space-y-3">
-          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-zinc-500">
+          <div className="flex justify-between text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
             <div className="flex items-center gap-2">
               <ZoomIn size={12} className="text-yellow-400" /> Zoom
             </div>
@@ -258,7 +258,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
             value={distance}
             onChange={(e) => setDistance(parseInt(e.target.value))}
             aria-label="Zoom"
-            className="w-full h-1.5 bg-zinc-800 rounded-full appearance-none cursor-pointer accent-yellow-400 hover:accent-yellow-300"
+            className="w-full h-1.5 bg-[color:var(--wb-bar)] rounded-full appearance-none cursor-pointer accent-yellow-400 hover:accent-yellow-300"
           />
         </div>
       </div>
@@ -274,16 +274,16 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
     >
       <div className="custom-scrollbar flex h-full flex-col gap-4 overflow-y-auto lg:flex-row lg:gap-6 lg:overflow-hidden">
         {/* LEFT: THREE.JS VIEWPORT */}
-        <div className="relative flex min-h-[320px] flex-1 flex-col overflow-hidden rounded-2xl border border-white/2 shadow-2xl sm:rounded-3xl sm:min-h-100 lg:min-h-0">
+        <div className="relative flex min-h-[320px] flex-1 flex-col overflow-hidden rounded-2xl border border-[color:var(--wb-line)] shadow-2xl sm:rounded-3xl sm:min-h-100 lg:min-h-0">
           {/* Viewport Overlay Controls */}
           <div className="absolute top-6 left-6 z-20 flex flex-col gap-2 pointer-events-none">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/2 bg-black/40 backdrop-blur-sm">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] backdrop-blur-sm">
               <Move3d size={12} className="text-cyan-400" />
-              <span className="text-[9px] font-black text-zinc-300 uppercase tracking-widest">
+              <span className="text-[9px] font-black text-[color:var(--wb-ink)] uppercase tracking-widest">
                 Orbit & Zoom
               </span>
             </div>
-            <div className="flex flex-col gap-1 text-[9px] font-mono text-zinc-500 bg-black/40 p-2 rounded-lg border border-white/2">
+            <div className="flex flex-col gap-1 text-[9px] font-mono text-[color:var(--wb-muted)] bg-[color:var(--wb-well)] p-2 rounded-lg border border-[color:var(--wb-line)]">
               <span className="text-cyan-400">AZ: {Math.round(azimuth)}°</span>
               <span className="text-pink-400">EL: {Math.round(elevation)}°</span>
               <span className="text-yellow-400">DIST: {Math.round(distance)}%</span>
@@ -292,20 +292,20 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
 
           {/* CANVAS CONTAINER */}
           <div ref={mountRef} className="flex-1 size-full relative cursor-move touch-none group">
-            <div className="pip-viewport absolute right-3 top-3 z-30 hidden h-28 w-36 overflow-hidden rounded-lg border-2 border-white/2 bg-black/50 shadow-2xl backdrop-blur-sm pointer-events-none sm:block lg:right-6 lg:top-6 lg:h-45 lg:w-60">
-              <div className="absolute top-0 left-0 px-2 py-0.5 bg-black/50 text-cyan-400 text-[8px] font-black uppercase tracking-widest">
+            <div className="pip-viewport absolute right-3 top-3 z-30 hidden h-28 w-36 overflow-hidden rounded-lg border-2 border-[color:var(--wb-line)] bg-[color:var(--wb-well)] shadow-2xl backdrop-blur-sm pointer-events-none sm:block lg:right-6 lg:top-6 lg:h-45 lg:w-60">
+              <div className="absolute top-0 left-0 px-2 py-0.5 bg-[color:var(--wb-well)] text-cyan-400 text-[8px] font-black uppercase tracking-widest">
                 CAM VIEW
               </div>
             </div>
 
             {/* Instruction Overlay */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-black/40 border border-white/2 backdrop-blur-sm text-zinc-400 text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-xl bg-[color:var(--wb-well)] border border-[color:var(--wb-line)] backdrop-blur-sm text-[color:var(--wb-muted)] text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
               <span className="flex items-center gap-1.5">
-                <MousePointer2 size={12} className="text-white" /> Drag to Orbit
+                <MousePointer2 size={12} className="text-[color:var(--wb-ink)]" /> Drag to Orbit
               </span>
               <span className="w-px h-3 bg-white/20" />
               <span className="flex items-center gap-1.5">
-                <ZoomIn size={12} className="text-white" /> Scroll to Zoom
+                <ZoomIn size={12} className="text-[color:var(--wb-ink)]" /> Scroll to Zoom
               </span>
             </div>
           </div>

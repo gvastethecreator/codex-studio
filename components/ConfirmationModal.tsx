@@ -72,7 +72,7 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="absolute inset-0 bg-black/80 backdrop-blur-md"
+          className="absolute inset-0 studio-scrim backdrop-blur-md"
         />
 
         <MotionDiv
@@ -84,9 +84,9 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative w-full max-w-lg overflow-hidden rounded-3xl border border-white/2 bg-zinc-900 shadow-2xl"
+          className="studio-dialog relative w-full max-w-lg overflow-hidden"
         >
-          <div className="flex items-start justify-between gap-4 border-b border-white/2 p-6 bg-zinc-900/50">
+          <div className="flex items-start justify-between gap-4 border-b border-[color:var(--wb-line)] p-6 bg-[color:var(--wb-panel)]">
             <div className="flex min-w-0 items-start gap-3">
               <div
                 className={`flex size-11 shrink-0 items-center justify-center rounded-2xl ${toneStyles.shell}`}
@@ -94,30 +94,30 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
                 {toneStyles.icon}
               </div>
               <div className="min-w-0">
-                <h2 className="text-sm font-black uppercase tracking-[0.22em] text-white">
+                <h2 className="text-sm font-black uppercase tracking-[0.22em] text-[color:var(--wb-ink)]">
                   {title}
                 </h2>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-300">{description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-[color:var(--wb-ink)]">{description}</p>
               </div>
             </div>
             <button
               type="button"
               aria-label="Close confirmation"
               onClick={onClose}
-              className="rounded-xl p-2 text-zinc-500 transition-colors hover:bg-white/5 hover:text-white cursor-pointer"
+              className="rounded-xl p-2 text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
             >
               <X size={18} />
             </button>
           </div>
 
           {(details?.length || note) && (
-            <div className="border-b border-white/2 px-6 py-5">
+            <div className="border-b border-[color:var(--wb-line)] px-6 py-5">
               {details?.length ? (
                 <ul className="space-y-2">
                   {details.map((detail) => (
                     <li
                       key={detail}
-                      className="flex items-start gap-2 text-[11px] leading-relaxed text-zinc-400"
+                      className="flex items-start gap-2 text-[11px] leading-relaxed text-[color:var(--wb-muted)]"
                     >
                       <span className="mt-1 size-1.5 shrink-0 rounded-full bg-white/20" />
                       <span>{detail}</span>
@@ -126,18 +126,18 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
                 </ul>
               ) : null}
               {note ? (
-                <p className="mt-3 text-[10px] font-bold uppercase tracking-wider text-zinc-500">
+                <p className="mt-3 text-[10px] font-bold uppercase tracking-wider text-[color:var(--wb-muted)]">
                   {note}
                 </p>
               ) : null}
             </div>
           )}
 
-          <div className="flex items-center justify-end gap-3 p-6 bg-black/20">
+          <div className="flex items-center justify-end gap-3 p-6 bg-[color:var(--wb-well)]">
             <button
               type="button"
               onClick={onClose}
-              className="h-11 rounded-2xl border border-white/2 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-white/10 hover:text-white cursor-pointer"
+              className="h-11 rounded-2xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-4 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
             >
               {cancelLabel}
             </button>

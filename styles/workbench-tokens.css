@@ -1,0 +1,155 @@
+/* Workbench UI 0.4.0 tokens — Studio Carbon (near-black) + Paper.
+   Catalog Carbon is #202020/#282828; Studio keeps #0a0a0a/#161616.
+   Precision size/gap/type live in workbench-precision.css (`--wbp-*`). */
+
+:root {
+  --wb-accent: #c3b28d;
+  --wb-on-accent: #141414;
+  --wba-accent: #c3b28d;
+  --wb-accent-fill: color-mix(in srgb, var(--wb-accent) 50%, #0a0a0a);
+  --wb-on-fill: #f4f4f4;
+}
+
+:root,
+.wb {
+  --wb-bg: #0a0a0a;
+  --wb-panel: #161616;
+  --wb-bar: #1a1a1a;
+  --wb-canvas: #0d0d0d;
+  --wb-well: #0d0d0d;
+  --wb-ink: #ededed;
+  --wb-muted: #a6a6a6;
+  --wb-dim: #777;
+  --wb-line: #1f1f1f;
+  --wb-border: #2e2e2e;
+  --wb-selection: #626262;
+  --wb-radius: 4px;
+  --wb-control-height: 30px;
+  --wb-font-size: 12px;
+  --wb-font:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --wb-mono: ui-monospace, 'SF Mono', Consolas, monospace;
+  --wb-fast: 100ms;
+  --wb-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --amb-light-x: -0.65;
+  --amb-light-y: -0.8;
+  --amb-key-light-intensity: 0.85;
+  --amb-fill-light-intensity: 0.76;
+  --amb-light-hue: 0;
+  --amb-light-saturation: 0%;
+  --amb-curve-scale: 0.55;
+  --wba-depth: 0.65;
+  --wba-panel-albedo: #161616;
+  --wba-control-albedo: #2a2a2a;
+  --wba-knob-albedo: #909090;
+  --wba-well-albedo: #0d0d0d;
+  --wba-bg: #0a0a0a;
+  --wba-control-shiny: 0.12;
+  color-scheme: dark;
+}
+
+.wb[data-density='comfortable'] {
+  --wb-control-height: calc(var(--wbp-row, 30px) * var(--wbp-scale, 1));
+  --wb-font-size: calc(var(--wbp-text, 12px) * var(--wbp-scale, 1));
+}
+
+.wb[data-theme='carbon'],
+.wb-ambient[data-theme='carbon'] {
+  --wb-bg: #0a0a0a;
+  --wb-panel: #161616;
+  --wb-bar: #1a1a1a;
+  --wb-canvas: #0d0d0d;
+  --wb-well: #0d0d0d;
+  --wb-ink: #ededed;
+  --wb-muted: #a6a6a6;
+  --wb-dim: #777;
+  --wb-line: #1f1f1f;
+  --wb-border: #2e2e2e;
+  --wba-bg: #0a0a0a;
+  --wba-panel-albedo: #161616;
+  --wba-control-albedo: #2a2a2a;
+  --wba-well-albedo: #0d0d0d;
+  --wba-knob-albedo: #909090;
+  color-scheme: dark;
+}
+
+.wb[data-theme='paper'],
+.wb-ambient[data-theme='paper'] {
+  --wb-bg: #efece4;
+  --wb-panel: #e4e0d6;
+  --wb-bar: #e4e0d6;
+  --wb-canvas: #f6f3eb;
+  --wb-well: #f6f3eb;
+  --wb-ink: #1c1b18;
+  --wb-muted: #5e5b54;
+  --wb-dim: #8a857c;
+  --wb-line: #d4cfc4;
+  --wb-border: #c9c2b4;
+  --wb-selection: #c9c2b4;
+  --wba-bg: #efece4;
+  --wba-panel-albedo: #e4e0d6;
+  --wba-control-albedo: #d8d2c4;
+  --wba-well-albedo: #f6f3eb;
+  --wba-knob-albedo: #8a857c;
+  color-scheme: light;
+}
+
+.wb-ambient {
+  --amb-light-x: -0.65;
+  --amb-light-y: -0.8;
+  --amb-key-light-intensity: 0.85;
+  --amb-fill-light-intensity: 0.76;
+  --amb-light-hue: 0;
+  --amb-light-saturation: 0%;
+  --amb-curve-scale: 0.55;
+  --wba-depth: 0.65;
+  --wba-control-shiny: 0.12;
+}
+
+.wb-ambient[data-ambient-enabled='true'] {
+  --wb-bg: var(--wba-bg);
+  --wb-panel: var(--wba-panel-albedo);
+  --wb-bar: var(--wba-panel-albedo);
+  --wb-canvas: var(--wba-well-albedo);
+  --wb-well: var(--wba-well-albedo);
+  background-color: var(--wba-bg);
+}
+
+.wb-ambient[data-theme='carbon'][data-ambient-enabled='true'] {
+  --wb-border: #ffffff12;
+  --wb-line: #ffffff0d;
+  --wb-ink: #eee;
+  --wb-muted: #acacac;
+}
+
+.wb-ambient[data-theme='paper'][data-ambient-enabled='true'] {
+  --wb-border: #c9c2b4;
+  --wb-line: #d4cfc4;
+  --wb-ink: #1c1b18;
+  --wb-muted: #5e5b54;
+}
+
+:root,
+.studio-experience {
+  --create-panel: var(--wb-panel);
+  --create-input: var(--wb-well);
+  --create-hover: var(--wb-bar);
+  --create-raised: var(--wb-bar);
+  --create-text: var(--wb-ink);
+  --create-secondary: var(--wb-muted);
+  --create-muted: var(--wb-dim);
+  --create-line: var(--wb-line);
+  --create-line-hover: var(--wb-border);
+  --create-focus: var(--wb-accent);
+  --create-primary: var(--wb-accent);
+  --create-on-primary: var(--wb-on-accent);
+  --create-danger: #ffb2b2;
+  --create-radius: var(--wb-radius);
+}
+
+.studio-experience {
+  color: var(--wb-ink);
+  background: var(--wba-bg, var(--wb-bg));
+  font-size: var(--wb-font-size);
+  font-family: var(--wb-font);
+}

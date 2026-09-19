@@ -79,7 +79,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
         fallback={
           <LazySurfaceFallback
             label="Loading recipe"
-            className="grid h-full min-h-[420px] place-items-center bg-transparent text-zinc-500"
+            className="grid h-full min-h-[420px] place-items-center bg-transparent text-[color:var(--wb-muted)]"
           />
         }
       >

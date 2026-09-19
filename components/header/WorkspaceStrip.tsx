@@ -221,8 +221,8 @@ export function WorkspaceStrip({
         const tooltipContent = `${workspaceName} - ${formattedImageCount} images - updated ${updatedLabel}`;
         const workspaceButtonClassName = `studio-command-surface studio-hit-target min-h-10 ${isCompact ? 'w-full min-w-0 max-w-none' : 'min-w-[8.5rem] max-w-[11rem]'} rounded-lg border transition-[color,background-color,border-color,opacity,transform,box-shadow] relative flex items-center gap-2 overflow-hidden px-1.5 pr-2 text-left cursor-pointer ${
           isActive
-            ? 'border-accent-500/2 bg-accent-500/12 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.12)]'
-            : 'border-white/2 bg-white/[0.04] text-zinc-400 opacity-75 hover:border-white/2 hover:bg-white/8 hover:text-zinc-100 hover:opacity-100'
+            ? 'border-accent-500/2 bg-accent-500/12 text-[color:var(--wb-ink)] shadow-[0_0_18px_rgba(var(--accent-500),0.12)]'
+            : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-muted)] opacity-75 hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] hover:opacity-100'
         }`;
 
         return (
@@ -277,7 +277,7 @@ export function WorkspaceStrip({
                 }}
                 className={workspaceButtonClassName}
               >
-                <span className="size-6 shrink-0 overflow-hidden rounded-md border border-white/2 bg-zinc-900">
+                <span className="size-6 shrink-0 overflow-hidden rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]">
                   {workspace.lastImage ? (
                     <img
                       src={workspace.lastImage}
@@ -292,7 +292,7 @@ export function WorkspaceStrip({
                     <span
                       className={`flex size-full items-center justify-center bg-linear-to-br ${gradientClass}`}
                     >
-                      <span className="text-[9px] font-black text-white drop-shadow-md">
+                      <span className="text-[9px] font-black text-[color:var(--wb-ink)] drop-shadow-md">
                         {label}
                       </span>
                     </span>
@@ -304,7 +304,7 @@ export function WorkspaceStrip({
                 <span
                   aria-label={`${imageCount} images`}
                   className={`shrink-0 rounded-md px-1.5 py-0.5 text-[9px] font-black tabular-nums ${
-                    isActive ? 'bg-accent-400/18 text-accent-100' : 'bg-black/30 text-zinc-500'
+                    isActive ? 'bg-accent-400/18 text-accent-100' : 'bg-[color:var(--wb-well)] text-[color:var(--wb-muted)]'
                   }`}
                 >
                   {formattedImageCount}
@@ -340,7 +340,7 @@ export function WorkspaceStrip({
                 className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity] ${
                   contextMenuWorkspaceId === workspace.id
                     ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
-                    : 'border-white/2 bg-white/[0.035] text-zinc-500 opacity-75 hover:border-white/2 hover:bg-white/8 hover:text-zinc-200 hover:opacity-100'
+                    : 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)] opacity-75 hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] hover:opacity-100'
                 }`}
               >
                 <DotsVertical size={15} />
@@ -368,7 +368,7 @@ export function WorkspaceStrip({
                     }
                   }}
                   aria-label="Rename workspace"
-                  className="w-36 rounded-lg border border-white/2 bg-black/50 px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500/2"
+                  className="w-36 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-1.5 text-xs text-[color:var(--wb-ink)] outline-none focus:border-accent-500/2"
                   placeholder="Workspace name"
                 />
               </DemandMountedGsapDropdown>
@@ -390,61 +390,61 @@ export function WorkspaceStrip({
                   top: contextMenuPosition?.top ?? 44,
                 }}
               >
-                <div className="border-b border-white/2 pb-2">
-                  <div className="truncate text-[11px] font-black uppercase tracking-widest text-zinc-100">
+                <div className="border-b border-[color:var(--wb-line)] pb-2">
+                  <div className="truncate text-[11px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
                     {workspaceName}
                   </div>
-                  <div className="mt-1 truncate text-[10px] font-semibold text-zinc-500">
+                  <div className="mt-1 truncate text-[10px] font-semibold text-[color:var(--wb-muted)]">
                     {workspace.id}
                   </div>
                 </div>
-                <div className="space-y-1 py-2 text-[10px] font-semibold text-zinc-300">
+                <div className="space-y-1 py-2 text-[10px] font-semibold text-[color:var(--wb-ink)]">
                   <div className="flex items-start gap-2 rounded-md bg-white/[0.025] px-2 py-1.5">
-                    <Folder size={13} className="mt-0.5 shrink-0 text-zinc-500" />
+                    <Folder size={13} className="mt-0.5 shrink-0 text-[color:var(--wb-muted)]" />
                     <div className="min-w-0 flex-1">
-                      <div className="font-black uppercase tracking-widest text-zinc-500">
+                      <div className="font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                         Location
                       </div>
-                      <div className="truncate text-zinc-200" title={workspaceLocation}>
+                      <div className="truncate text-[color:var(--wb-ink)]" title={workspaceLocation}>
                         {workspaceLocation}
                       </div>
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-1">
                     <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-zinc-500">
+                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                         <Photo size={12} />
                         Images
                       </div>
-                      <div className="mt-1 text-zinc-100 tabular-nums">{formattedImageCount}</div>
+                      <div className="mt-1 text-[color:var(--wb-ink)] tabular-nums">{formattedImageCount}</div>
                     </div>
                     <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-zinc-500">
+                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                         <Database size={12} />
                         Storage
                       </div>
-                      <div className="mt-1 truncate text-zinc-100">{storageLabel}</div>
+                      <div className="mt-1 truncate text-[color:var(--wb-ink)]">{storageLabel}</div>
                     </div>
                     <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-zinc-500">
+                      <div className="flex items-center gap-1.5 font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                         <Clock size={12} />
                         Updated
                       </div>
-                      <div className="mt-1 text-zinc-100">{updatedLabel}</div>
+                      <div className="mt-1 text-[color:var(--wb-ink)]">{updatedLabel}</div>
                     </div>
                     <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                      <div className="font-black uppercase tracking-widest text-zinc-500">
+                      <div className="font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                         Created
                       </div>
-                      <div className="mt-1 text-zinc-100">{createdLabel}</div>
+                      <div className="mt-1 text-[color:var(--wb-ink)]">{createdLabel}</div>
                     </div>
                   </div>
                   <div className="rounded-md bg-white/[0.025] px-2 py-1.5">
-                    <div className="font-black uppercase tracking-widest text-zinc-500">
+                    <div className="font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                       Libraries
                     </div>
                     <div
-                      className="mt-1 truncate text-zinc-100"
+                      className="mt-1 truncate text-[color:var(--wb-ink)]"
                       title={workspace.libraryIds?.join(', ')}
                     >
                       {librariesLabel}
@@ -481,7 +481,7 @@ export function WorkspaceStrip({
             onAddWorkspace();
           }}
           aria-label="Create workspace"
-          className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border border-dashed border-white/2 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200 ${isCompact ? 'w-full' : ''}`}
+          className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-dim)] transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-[color:var(--wb-ink)] ${isCompact ? 'w-full' : ''}`}
         >
           <Plus size={16} />
         </button>

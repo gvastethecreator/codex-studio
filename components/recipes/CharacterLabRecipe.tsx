@@ -161,10 +161,10 @@ const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string;
     soft: 'bg-yellow-500/10',
   },
   zinc: {
-    text: 'text-zinc-300',
-    border: 'border-white/2',
+    text: 'text-[color:var(--wb-ink)]',
+    border: 'border-[color:var(--wb-line)]',
     bg: 'bg-zinc-500',
-    soft: 'bg-white/[0.04]',
+    soft: 'bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]',
   },
 };
 
@@ -503,7 +503,7 @@ function SelectField({
 
   return (
     <div ref={rootRef} className={`relative flex min-w-0 flex-col gap-1.5 ${className}`}>
-      <span id={labelId} className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+      <span id={labelId} className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
         {label}
       </span>
       <input type="hidden" name={fieldName} value={value} />
@@ -518,8 +518,8 @@ function SelectField({
         onKeyDown={handleKeyDown}
         className={`character-lab-control-card flex min-h-12 w-full min-w-0 items-center gap-3 rounded-xl border px-2.5 py-2 text-left outline-none transition-[background-color,border-color,color,transform] duration-150 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
           isOpen
-            ? 'border-violet-400/2 bg-violet-500/10 text-white'
-            : 'border-white/2 bg-black/35 text-zinc-100 hover:border-white/2 hover:bg-white/[0.05]'
+            ? 'border-violet-400/2 bg-violet-500/10 text-[color:var(--wb-ink)]'
+            : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-white/[0.05]'
         }`}
         onClick={() => {
           if (isOpen) closeDropdown();
@@ -530,16 +530,16 @@ function SelectField({
           <CharacterLabOptionIcon id={selectedIconId} fallbackId={fallbackIconId} size={27} />
         </span>
         <span className="min-w-0 flex-1">
-          <span className="block truncate text-[12px] font-black leading-tight text-zinc-100">
+          <span className="block truncate text-[12px] font-black leading-tight text-[color:var(--wb-ink)]">
             {selectedText.primary}
           </span>
-          <span className="mt-0.5 block truncate text-[9px] font-bold leading-tight text-zinc-600">
+          <span className="mt-0.5 block truncate text-[9px] font-bold leading-tight text-[color:var(--wb-dim)]">
             {selectedText.detail}
           </span>
         </span>
         <ChevronDown
           size={15}
-          className={`shrink-0 text-zinc-500 transition-[transform,color] duration-150 ${
+          className={`shrink-0 text-[color:var(--wb-muted)] transition-[transform,color] duration-150 ${
             isOpen ? 'rotate-180 text-violet-200' : ''
           }`}
           aria-hidden="true"
@@ -579,10 +579,10 @@ function SelectField({
               onClick={() => chooseOption(option)}
               className={`flex min-h-12 w-full min-w-0 items-center gap-3 rounded-lg px-2 py-2 text-left transition-[background-color,color,transform] duration-150 ${
                 selected
-                  ? 'bg-violet-500/15 text-white'
+                  ? 'bg-violet-500/15 text-[color:var(--wb-ink)]'
                   : active
-                    ? 'bg-white/[0.06] text-zinc-100'
-                    : 'text-zinc-400 hover:bg-white/[0.05] hover:text-zinc-100'
+                    ? 'bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)]'
+                    : 'text-[color:var(--wb-muted)] hover:bg-white/[0.05] hover:text-[color:var(--wb-ink)]'
               }`}
             >
               <span className="grid size-8 shrink-0 place-items-center rounded-md bg-black">
@@ -592,7 +592,7 @@ function SelectField({
                 <span className="block truncate text-[11px] font-black leading-tight">
                   {optionText.primary}
                 </span>
-                <span className="mt-0.5 block truncate text-[8px] font-bold leading-tight text-zinc-600">
+                <span className="mt-0.5 block truncate text-[8px] font-bold leading-tight text-[color:var(--wb-dim)]">
                   {optionText.detail}
                 </span>
               </span>
@@ -622,22 +622,22 @@ function PreviewOptionCard({
 }) {
   return (
     <div
-      className={`character-lab-preview-option group flex h-full min-h-[132px] min-w-0 flex-col rounded-xl border border-white/2 bg-black/40 p-2 shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition-[border-color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:border-white/2 hover:bg-white/[0.045] ${
+      className={`character-lab-preview-option group flex h-full min-h-[132px] min-w-0 flex-col rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 shadow-[0_12px_26px_rgba(0,0,0,0.22)] transition-[border-color,background-color,transform] duration-200 hover:-translate-y-0.5 hover:border-[color:var(--wb-border)] hover:bg-white/[0.045] ${
         prominent ? 'sm:col-span-2 xl:col-span-1' : ''
       }`}
     >
       <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg bg-black">
         <CharacterLabOptionIcon id={item.iconId} fallbackId={item.fallbackIconId} size={64} />
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
-        <span className="absolute left-1.5 top-1.5 rounded-md border border-white/2 bg-black/70 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-zinc-500">
+        <span className="absolute left-1.5 top-1.5 rounded-md border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
           {item.label}
         </span>
       </div>
       <div className="min-w-0 shrink-0 px-0.5 pt-1.5">
-        <div className="line-clamp-1 text-[10px] font-black leading-tight text-zinc-100">
+        <div className="line-clamp-1 text-[10px] font-black leading-tight text-[color:var(--wb-ink)]">
           {item.value}
         </div>
-        <div className="mt-0.5 line-clamp-1 text-[8px] font-bold leading-tight text-zinc-600">
+        <div className="mt-0.5 line-clamp-1 text-[8px] font-bold leading-tight text-[color:var(--wb-dim)]">
           {item.detail}
         </div>
       </div>
@@ -666,9 +666,9 @@ function AttachmentSetupSlot({
 
   return (
     <div
-      className={`group relative min-w-0 overflow-hidden rounded-xl border bg-black/45 transition-[border-color,opacity] duration-150 ${
-        attachment ? 'border-white/2' : 'border-dashed border-white/2'
-      } ${disabled ? 'opacity-45' : 'hover:border-white/2'}`}
+      className={`group relative min-w-0 overflow-hidden rounded-xl border bg-[color:var(--wb-well)] transition-[border-color,opacity] duration-150 ${
+        attachment ? 'border-[color:var(--wb-line)]' : 'border-dashed border-[color:var(--wb-line)]'
+      } ${disabled ? 'opacity-45' : 'hover:border-[color:var(--wb-border)]'}`}
     >
       <button
         type="button"
@@ -695,12 +695,12 @@ function AttachmentSetupSlot({
         ) : (
           <>
             <CharacterLabIcon id={isSource ? 'control:source' : 'control:reference'} size={42} />
-            <span className="mt-1 max-w-full px-1 text-[8px] font-black uppercase tracking-widest text-zinc-600">
+            <span className="mt-1 max-w-full px-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
               {isSource ? 'Main' : 'Ref'}
             </span>
           </>
         )}
-        <span className="absolute bottom-1 left-1 rounded-md bg-black/75 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-zinc-300">
+        <span className="absolute bottom-1 left-1 rounded-md bg-black/75 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
           {label}
         </span>
       </button>
@@ -712,7 +712,7 @@ function AttachmentSetupSlot({
             event.stopPropagation();
             onRemove();
           }}
-          className="absolute right-1 top-1 rounded-md bg-black/80 p-1 text-zinc-300 opacity-0 transition-[opacity,color] duration-150 hover:text-red-200 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70"
+          className="absolute right-1 top-1 rounded-md bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-ink)] opacity-0 transition-[opacity,color] duration-150 hover:text-red-200 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70"
           aria-label={`Remove ${label}`}
         >
           <X size={11} />
@@ -724,8 +724,8 @@ function AttachmentSetupSlot({
 
 function SourcePreviewCard({ source }: { source: Attachment | null }) {
   return (
-    <div className="character-lab-preview-option group flex h-full min-h-[180px] flex-col rounded-xl border border-white/2 bg-black/45 p-2 shadow-[0_16px_36px_rgba(0,0,0,0.28)] transition-[border-color,background-color] duration-200 hover:border-white/2 hover:bg-white/[0.04]">
-      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg border border-white/2 bg-black">
+    <div className="character-lab-preview-option group flex h-full min-h-[180px] flex-col rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 shadow-[0_16px_36px_rgba(0,0,0,0.28)] transition-[border-color,background-color] duration-200 hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)]">
+      <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-black">
         {source ? (
           <img
             src={source.dataUrl}
@@ -736,15 +736,15 @@ function SourcePreviewCard({ source }: { source: Attachment | null }) {
           <CharacterLabIcon id="control:source" size={76} />
         )}
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
-        <span className="absolute left-3 top-3 rounded-lg border border-white/2 bg-black/70 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-300">
+        <span className="absolute left-3 top-3 rounded-lg border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-2 py-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
           Source Image
         </span>
       </div>
       <div className="min-w-0 px-0.5 pt-1.5">
-        <div className="truncate text-[11px] font-black uppercase tracking-wide text-white">
+        <div className="truncate text-[11px] font-black uppercase tracking-wide text-[color:var(--wb-ink)]">
           {source ? 'Source Attached' : 'Prompt Guided'}
         </div>
-        <div className="mt-0.5 truncate text-[8px] font-black uppercase tracking-widest text-zinc-500">
+        <div className="mt-0.5 truncate text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
           {source?.name ?? 'No image source'}
         </div>
       </div>
@@ -771,8 +771,8 @@ function ActionButton({
       title={action.prompt}
       className={`character-lab-action-card group relative flex aspect-[5/6] min-h-[132px] w-full min-w-0 flex-col overflow-hidden rounded-xl border p-1.5 text-left shadow-[0_10px_22px_rgba(0,0,0,0.22)] transition-[background-color,border-color,color,opacity,transform] duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
         selected
-          ? `${accent.border} ${accent.soft} text-white ring-1 ring-inset ring-white/10`
-          : 'border-white/2 bg-black/35 text-zinc-400 hover:border-white/2 hover:bg-white/[0.06] hover:text-zinc-100'
+          ? `${accent.border} ${accent.soft} text-[color:var(--wb-ink)] ring-1 ring-inset ring-white/10`
+          : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]'
       }`}
     >
       <span className="relative flex min-h-0 w-full flex-1 items-center justify-center overflow-hidden rounded-lg bg-black">
@@ -780,7 +780,7 @@ function ActionButton({
         <span className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
         {selected && (
           <span
-            className={`absolute left-2 top-2 rounded-md border bg-black/60 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest ${accent.border} ${accent.text}`}
+            className={`absolute left-2 top-2 rounded-md border bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest ${accent.border} ${accent.text}`}
           >
             Selected
           </span>
@@ -792,19 +792,19 @@ function ActionButton({
         </span>
         <span
           className={`mt-0.5 line-clamp-2 text-[8px] font-semibold leading-snug text-pretty ${
-            selected ? 'text-zinc-300/85' : 'text-zinc-500 group-hover:text-zinc-400'
+            selected ? 'text-[color:var(--wb-ink)]/85' : 'text-[color:var(--wb-muted)] group-hover:text-[color:var(--wb-muted)]'
           }`}
         >
           {action.prompt}
         </span>
         <span
-          className={`mt-0.5 block truncate text-[7px] font-black uppercase tracking-widest ${selected ? accent.text : 'text-zinc-600'}`}
+          className={`mt-0.5 block truncate text-[7px] font-black uppercase tracking-widest ${selected ? accent.text : 'text-[color:var(--wb-dim)]'}`}
         >
           {action.capability === 'ready' ? 'Prompt or reference' : 'Not yet available'}
         </span>
       </span>
       {locked && (
-        <span className="absolute right-2 top-2 rounded-md bg-black/70 p-1 text-zinc-500">
+        <span className="absolute right-2 top-2 rounded-md bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-1 text-[color:var(--wb-muted)]">
           <Lock size={10} aria-hidden="true" />
         </span>
       )}
@@ -822,7 +822,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   onSelectImage,
   onUseAsSource,
 }) => {
-  const [actionBrowserOpen, setActionBrowserOpen] = useState(false);
+  const [actionBrowserOpen, setActionBrowserOpen] = useState(true);
   const actionToggleRef = useRef<HTMLButtonElement>(null);
   const initialAliasMode =
     (config.recipeParams?.mode as CharacterLabModeId) ??
@@ -1118,21 +1118,21 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   return (
     <RecipeLayout
       isGenerating={isGenerating}
-      className="character-lab-shell overflow-hidden bg-[#101010] p-2 pb-[var(--studio-recipe-dock-space)] sm:p-3 sm:pb-3 max-xl:overflow-y-auto"
+      className="character-lab-shell studio-surface overflow-hidden bg-[color:var(--wb-bg)] p-2 pb-[var(--studio-recipe-dock-space)] sm:p-3 sm:pb-3 max-xl:overflow-y-auto"
     >
       <div className="grid size-full min-h-0 grid-cols-[minmax(250px,5fr)_minmax(320px,6fr)_minmax(440px,9fr)] gap-3 max-xl:flex max-xl:h-auto max-xl:min-h-[1120px] max-xl:flex-col max-sm:min-h-0">
         <RecipeControls>
           <aside
-            className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px] max-sm:min-h-[680px]"
+            className="character-lab-panel z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl max-xl:min-h-[680px] max-sm:min-h-[680px]"
             data-panel="left"
           >
-            <div className="shrink-0 border-b border-white/2 p-3">
+            <div className="shrink-0 border-b border-[color:var(--wb-line)] p-3">
               <div className="flex items-center justify-between gap-2">
                 <div>
-                  <h2 className="text-[12px] font-black uppercase tracking-widest text-zinc-200">
+                  <h2 className="text-[12px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
                     Action Setup
                   </h2>
-                  <p className="mt-1 text-[10px] font-semibold text-zinc-600">
+                  <p className="mt-1 text-[10px] font-semibold text-[color:var(--wb-dim)]">
                     {selectedAction.label} · {sourceLabel}
                   </p>
                 </div>
@@ -1146,7 +1146,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
 
             <div className="min-h-0 flex-1 overflow-y-auto p-3 pb-20 custom-scrollbar">
               <label className="flex flex-col gap-1.5">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
                   Character Brief
                 </span>
                 <textarea
@@ -1154,7 +1154,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   value={subject}
                   onChange={(event) => setSubject(event.target.value)}
                   placeholder="e.g. Brave elven ranger, scar over left eye..."
-                  className="h-20 resize-none rounded-xl border border-white/2 bg-black/35 p-2.5 text-[12px] leading-relaxed text-zinc-100 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="h-20 resize-none rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5 text-[12px] leading-relaxed text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)] transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 />
               </label>
 
@@ -1200,7 +1200,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               </div>
 
               <div className="mt-3">
-                <div className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+                <div className="mb-1.5 text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
                   Background Color
                 </div>
                 <div className="grid grid-cols-4 gap-1.5">
@@ -1209,10 +1209,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                       key={palette.name}
                       type="button"
                       onClick={() => setBackgroundColor(palette.backgroundColor)}
-                      className={`flex h-8 items-center justify-center rounded-lg border bg-black/35 transition-[border-color,background-color] duration-150 hover:border-white/2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+                      className={`flex h-8 items-center justify-center rounded-lg border bg-[color:var(--wb-well)] transition-[border-color,background-color] duration-150 hover:border-[color:var(--wb-border)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
                         backgroundColor === palette.backgroundColor
                           ? 'border-violet-400/2 bg-violet-500/10'
-                          : 'border-white/2'
+                          : 'border-[color:var(--wb-line)]'
                       }`}
                       aria-label={`Background ${palette.name}`}
                     >
@@ -1259,10 +1259,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
             }
           }}
           data-recipe-stage
-          className="character-lab-panel z-10 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/75 shadow-2xl max-xl:min-h-[560px] max-sm:min-h-[500px]"
+          className="character-lab-panel z-10 flex min-h-0 flex-col overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl max-xl:min-h-[560px] max-sm:min-h-[500px]"
           data-panel="main"
         >
-          <div className="shrink-0 border-b border-white/2 p-2.5">
+          <div className="shrink-0 border-b border-[color:var(--wb-line)] p-2.5">
             <div className="custom-scrollbar flex gap-1 overflow-x-auto pb-1">
               {characterLabModes.map((mode) => {
                 const active = selectedMode === mode.id;
@@ -1277,8 +1277,8 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     }}
                     className={`character-lab-control-card flex h-10 min-w-[76px] flex-none items-center justify-center gap-1.5 rounded-lg border px-2 text-[8px] font-black transition-[background-color,border-color,color,transform] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
                       active
-                        ? 'border-violet-400/2 bg-violet-500/10 text-white'
-                        : 'border-white/2 bg-black/25 text-zinc-500 hover:border-white/2 hover:bg-white/[0.04] hover:text-zinc-200'
+                        ? 'border-violet-400/2 bg-violet-500/10 text-[color:var(--wb-ink)]'
+                        : 'border-[color:var(--wb-line)] bg-black/25 text-[color:var(--wb-muted)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:text-[color:var(--wb-ink)]'
                     }`}
                   >
                     <CharacterLabIcon id={MODE_ICON_IDS[mode.id]} size={18} />
@@ -1291,7 +1291,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               <div className="relative min-w-0 flex-1">
                 <Search
                   size={14}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-600"
+                  className="absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--wb-dim)]"
                   aria-hidden="true"
                 />
                 <input
@@ -1300,14 +1300,14 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
                   placeholder={`Search ${characterLabOptionCounts.total} actions`}
-                  className="h-9 w-full rounded-lg border border-white/2 bg-black/40 pl-9 pr-3 text-[12px] text-zinc-200 outline-none placeholder:text-zinc-600 transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="h-9 w-full rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] pl-9 pr-3 text-[12px] text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)] transition-[border-color,background-color] duration-150 focus:border-violet-500/2 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 />
               </div>
-              <div className="shrink-0 rounded-lg border border-white/2 bg-black/30 px-2 py-1.5 text-right">
-                <div className="text-[9px] font-black tabular-nums text-zinc-300">
+              <div className="shrink-0 rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-1.5 text-right">
+                <div className="text-[9px] font-black tabular-nums text-[color:var(--wb-ink)]">
                   {selectedModeReadyActions.length}/{selectedModeActions.length}
                 </div>
-                <div className="text-[7px] font-black uppercase tracking-widest text-zinc-600">
+                <div className="text-[7px] font-black uppercase tracking-widest text-[color:var(--wb-dim)]">
                   ready
                 </div>
               </div>
@@ -1328,7 +1328,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                       <span className="truncate text-[11px] font-black uppercase tracking-wide">
                         {category.label}
                       </span>
-                      <span className="text-[9px] font-bold tabular-nums text-zinc-600">
+                      <span className="text-[9px] font-bold tabular-nums text-[color:var(--wb-dim)]">
                         {actions.length}
                       </span>
                     </div>
@@ -1362,7 +1362,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
             })}
 
             {filteredCategoryGroups.length === 0 && (
-              <div className="rounded-xl border border-dashed border-white/2 p-6 text-center text-[11px] font-bold uppercase tracking-widest text-zinc-600">
+              <div className="rounded-xl border border-dashed border-[color:var(--wb-line)] p-6 text-center text-[11px] font-bold uppercase tracking-widest text-[color:var(--wb-dim)]">
                 No matching actions
               </div>
             )}
@@ -1371,10 +1371,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
 
         <RecipeControls>
           <aside
-            className="character-lab-panel relative z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950/90 shadow-2xl max-xl:min-h-[680px]"
+            className="character-lab-panel relative z-20 flex min-h-0 flex-col overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-2xl max-xl:min-h-[680px]"
             data-panel="right"
           >
-            <div className="shrink-0 border-b border-white/2 p-3">
+            <div className="shrink-0 border-b border-[color:var(--wb-line)] p-3">
               <div className="flex items-start gap-2.5">
                 <span
                   className={`grid size-10 shrink-0 place-items-center rounded-lg border ${selectedAccent.border} ${selectedAccent.soft}`}
@@ -1382,10 +1382,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   <CharacterLabIcon id={selectedAction.id} size={32} />
                 </span>
                 <div className="min-w-0">
-                  <h2 className="text-[16px] font-black leading-tight text-balance text-zinc-100">
+                  <h2 className="text-[16px] font-black leading-tight text-balance text-[color:var(--wb-ink)]">
                     {workflowStateTitle}
                   </h2>
-                  <p className="mt-1 text-[11px] leading-relaxed text-pretty text-zinc-500">
+                  <p className="mt-1 text-[11px] leading-relaxed text-pretty text-[color:var(--wb-muted)]">
                     {workflowStateCopy}
                   </p>
                 </div>
@@ -1394,13 +1394,13 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
 
             <div className="min-h-0 flex-1 overflow-y-auto p-2.5 pb-20 custom-scrollbar">
               <div className="mt-2.5">
-                <details className="rounded-xl border border-white/2 bg-black/45 p-2.5">
+                <details className="rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2.5">
                   <summary>Compiled prompt</summary>
-                  <div className="mb-1.5 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                  <div className="mb-1.5 flex items-center gap-2 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                     <FileText size={12} aria-hidden="true" />
                     Compiled prompt
                   </div>
-                  <p className="max-h-56 overflow-y-auto whitespace-pre-wrap text-[10px] leading-relaxed text-zinc-500 custom-scrollbar">
+                  <p className="max-h-56 overflow-y-auto whitespace-pre-wrap text-[10px] leading-relaxed text-[color:var(--wb-muted)] custom-scrollbar">
                     {selectedPrompt}
                   </p>
                 </details>
@@ -1409,10 +1409,10 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               {recentImages.length > 0 && (
                 <div className="mt-2.5">
                   <div className="mb-1.5 flex items-center justify-between gap-2">
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
+                    <div className="text-[10px] font-bold uppercase tracking-widest text-[color:var(--wb-muted)]">
                       Recent Outputs
                     </div>
-                    <span className="text-[9px] font-black tabular-nums text-zinc-600">
+                    <span className="text-[9px] font-black tabular-nums text-[color:var(--wb-dim)]">
                       {recentImages.length}
                     </span>
                   </div>
@@ -1420,7 +1420,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     {recentImages.map((image) => (
                       <div
                         key={image.id}
-                        className="group relative aspect-square overflow-hidden rounded-xl border border-white/2 bg-zinc-900 shadow-xl"
+                        className="group relative aspect-square overflow-hidden rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-xl"
                       >
                         <button
                           type="button"
@@ -1437,7 +1437,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                         <button
                           type="button"
                           onClick={() => onUseAsSource(image)}
-                          className="absolute inset-x-1 bottom-1 flex min-h-7 items-center justify-center gap-1 rounded-lg bg-black/80 px-1.5 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-200 opacity-0 transition-[opacity] duration-150 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                          className="absolute inset-x-1 bottom-1 flex min-h-7 items-center justify-center gap-1 rounded-lg bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] opacity-0 transition-[opacity] duration-150 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                         >
                           <CharacterLabIcon id="control:use-as-source" size={14} />
                           Source
@@ -1461,7 +1461,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 onClick={() => runAction(selectedAction)}
                 data-character-lab-generate-button
                 data-generate-active={isGenerating ? 'true' : 'false'}
-                className="group relative flex min-h-11 w-full min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/2 bg-violet-500/20 px-3 py-2 text-left text-white shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/2 hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="group relative flex min-h-11 w-full min-w-[172px] items-center justify-center gap-2 rounded-xl border border-violet-400/2 bg-violet-500/20 px-3 py-2 text-left text-[color:var(--wb-ink)] shadow-[0_18px_38px_rgba(0,0,0,0.38),0_12px_28px_rgba(139,92,246,0.18)] backdrop-blur-md transition-[border-color,background-color,opacity,transform] duration-150 hover:-translate-y-0.5 hover:border-violet-300/2 hover:bg-violet-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-black">
                   {isGenerating ? (

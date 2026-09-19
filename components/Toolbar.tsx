@@ -1,3 +1,4 @@
+import { CreatePromptExpandDialog } from './create/CreatePromptExpandDialog';
 import { ReferenceTray } from './ReferenceTray';
 import {
   IconBan as Ban,
@@ -26,6 +27,7 @@ import {
   IconSend as Send,
   IconShieldExclamation as ShieldAlert,
   IconSquare as Square,
+  IconSparkles as Sparkles,
   IconWand as Wand,
   IconWand as Wand2,
   IconX as X,
@@ -50,9 +52,14 @@ import type {
 import type {
   CodexExecutionTransport,
   CodexHttpImageModelOption,
+  CodexHttpImageSizeTier,
 } from '../packages/shared/src/codexExecutionContract';
-import type { AspectRatio, Attachment, ImageGenerationConfig, ImageSize } from '../types';
-import { groupImageGenRatiosByOrientation } from '../utils/imageGenSizing';
+import type { AspectRatio, Attachment, ImageGenerationConfig } from '../types';
+import {
+  getRatioOrientation,
+  getRatioShapeStyle,
+  RATIO_ORIENTATION_LABELS,
+} from '../utils/imageGenSizing';
 import KeyPopover from './KeyPopover';
 import Tooltip from './Tooltip';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
@@ -134,7 +141,6 @@ const AspectRatioIcon: React.FC<{ ratio: AspectRatio }> = ({ ratio }) => {
   return <RectangleVertical size={ICON_SIZE} />;
 };
 
-const PRO_SIZES: ImageSize[] = ['1K'];
 const BATCH_COUNTS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const GENERATION_PROVIDER_LABELS: Partial<Record<GenerationProviderId, string>> = {
@@ -198,6 +204,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const aspectRatioButtonRef = useRef<HTMLButtonElement>(null);
     const sizeButtonRef = useRef<HTMLButtonElement>(null);
     const batchButtonRef = useRef<HTMLButtonElement>(null);
+    const negativeInputRef = useRef<HTMLTextAreaElement>(null);
     const executionButtonRef = useRef<HTMLButtonElement>(null);
 
     const [localPrompt, setLocalPrompt] = useState(generationConfig.prompt || '');
@@ -215,6 +222,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     // Logic AI Popover States
     const [isNegativeOpen, setIsNegativeOpen] = useState(false);
     const [isRefineOpen, setIsRefineOpen] = useState(false);
+    const [isAdvancedOpen, setIsAdvancedOpen] = useState(false);
+    const [isPromptExpanded, setIsPromptExpanded] = useState(false);
+    const [expandedPrompt, setExpandedPrompt] = useState('');
+    const [composerDragDepth, setComposerDragDepth] = useState(0);
 
     const [magicInstruction, setMagicInstruction] = useState('');
     const [isRefactoring, setIsRefactoring] = useState(false);
@@ -238,6 +249,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           executionModel: generationConfig.executionModel,
           executionReasoningEffort: generationConfig.executionReasoningEffort,
           executionSpeed: generationConfig.executionSpeed,
+          imageSize: generationConfig.imageSize,
           catalogError: codexModelCatalogError,
         }),
       [
@@ -254,6 +266,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         generationConfig.executionModel,
         generationConfig.executionReasoningEffort,
         generationConfig.executionSpeed,
+        generationConfig.imageSize,
         grokCanExecute,
         grokDiagnostics,
         grokStatus,
@@ -273,6 +286,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const executionSpeedOptions = execution.speedOptions;
     const executionImageModels = execution.imageModels;
     const selectedExecutionImageModel = execution.selectedImageModel;
+    const executionImageSizeOptions = execution.imageSizeOptions;
+    const selectedExecutionImageSize = execution.selectedImageSize;
+    const showSizeControl = execution.showImageSizeControl;
     const executionSourceMessage = execution.sourceMessage;
     const executionSummary = execution.summary;
     const executionChipLabel = formatCodexModelLabel(
@@ -311,6 +327,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       (model: CodexHttpImageModelOption) => {
         if (selectedCodexTransport !== 'subscription_http') return;
         updateConfig('codexImageModel', model.id);
+      },
+      [selectedCodexTransport, updateConfig],
+    );
+
+    const handleSelectExecutionImageSize = useCallback(
+      (size: CodexHttpImageSizeTier) => {
+        if (selectedCodexTransport !== 'subscription_http') return;
+        updateConfig('imageSize', size);
       },
       [selectedCodexTransport, updateConfig],
     );
@@ -385,6 +409,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     }, [generationConfig.batchCount, maxOutputCount, updateConfig]);
 
+    useEffect(() => {
+      if (selectedCodexTransport === 'subscription_http') return;
+      if (generationConfig.imageSize === '2K' || generationConfig.imageSize === '4K') {
+        updateConfig('imageSize', '1K');
+      }
+    }, [generationConfig.imageSize, selectedCodexTransport, updateConfig]);
+
     const handleTriggerGenerate = useCallback(() => {
       if (
         generateBlock ||
@@ -429,6 +460,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     ]);
 
     const handleKeyDown = (e: React.KeyboardEvent) => {
+      if (layout === 'rail') {
+        if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) e.preventDefault();
+        return;
+      }
       if (e.key === 'Enter' && !e.shiftKey) {
         e.preventDefault();
         handleTriggerGenerate();
@@ -477,13 +512,34 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     };
 
-    const showSizeControl = false;
-    const currentSizes = PRO_SIZES;
+    const saveExpandedPrompt = useCallback(() => {
+      const next = expandedPrompt.slice(0, 12000);
+      setLocalPrompt(next);
+      lastPushedPromptRef.current = next;
+      updateConfig('prompt', next);
+      setIsPromptExpanded(false);
+    }, [expandedPrompt, updateConfig]);
+
+    useEffect(() => {
+      if (layout !== 'rail') return;
+      const handleGlobalGenerate = (event: KeyboardEvent) => {
+        if (event.defaultPrevented) return;
+        if (document.querySelector('[aria-modal="true"]')) return;
+        if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
+          event.preventDefault();
+          handleTriggerGenerate();
+        }
+      };
+      document.addEventListener('keydown', handleGlobalGenerate);
+      return () => document.removeEventListener('keydown', handleGlobalGenerate);
+    }, [handleTriggerGenerate, layout]);
+
+    const currentSizes = executionImageSizeOptions;
 
     const btnClass =
-      'h-10 min-h-10 w-full touch-manipulation sm:w-auto flex items-center justify-center gap-2 px-3 rounded-xl border border-white/2 bg-white/5 text-[10px] font-black uppercase leading-none tracking-[0.18em] text-zinc-400 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-[color,background-color,border-color,opacity,transform,box-shadow] hover:border-white/2 hover:bg-white/10 hover:text-white active:scale-95 disabled:opacity-30 group whitespace-nowrap cursor-pointer';
+      'studio-ghost-control h-10 min-h-10 w-full touch-manipulation sm:w-auto flex items-center justify-center gap-2 px-3 text-[10px] font-black uppercase leading-none tracking-[0.18em] transition-[color,background-color,border-color,opacity,transform] hover:text-[color:var(--wb-ink)] active:scale-95 disabled:opacity-30 group whitespace-nowrap cursor-pointer';
     const iconBtnClass =
-      'size-10 min-w-10 flex-shrink-0 touch-manipulation flex items-center justify-center rounded-xl border border-white/2 bg-white/5 text-zinc-500 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] transition-[color,background-color,border-color,opacity,transform,box-shadow] hover:border-white/2 hover:bg-white/10 hover:text-white active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
+      'studio-ghost-control size-10 min-w-10 flex-shrink-0 touch-manipulation flex items-center justify-center transition-[color,background-color,border-color,opacity,transform] hover:text-[color:var(--wb-ink)] active:scale-90 relative cursor-pointer disabled:cursor-not-allowed';
     const activeIconBtnClass =
       'bg-gradient-to-b from-accent-800 to-accent-950 border border-accent-700/2 text-accent-300 shadow-[0_2px_10px_rgba(0,0,0,0.5)] cursor-pointer';
 
@@ -505,10 +561,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const batchCounts = BATCH_COUNTS.filter((count) => count <= maxOutputCount);
     const nextBatchCount = Math.min(maxOutputCount, currentBatch + 1);
     const previousBatchCount = Math.max(1, currentBatch - 1);
-    const ratioGroups = useMemo(
-      () => groupImageGenRatiosByOrientation(currentRatios),
-      [currentRatios],
-    );
+    const formatOrientation =
+      RATIO_ORIENTATION_LABELS[getRatioOrientation(generationConfig.aspectRatio)];
+    const shortcutHint =
+      typeof navigator !== 'undefined' && /Mac|iPhone|iPad/i.test(navigator.userAgent)
+        ? '⌘ ↵'
+        : 'Ctrl ↵';
     const acceptRailImageDrop = useCallback(
       (event: React.DragEvent) => {
         event.preventDefault();
@@ -537,6 +595,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const promptField = (
       <LivePromptTextarea
         textareaRef={textareaRef}
+        id={isRail ? 'create-prompt-input' : undefined}
+        variant={isRail ? 'rail' : 'dock'}
         prompt={localPrompt}
         isScrambling={isScrambling}
         isHidden={isContextOnly}
@@ -628,255 +688,499 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           {fileInput}
 
           {isRail ? (
-            <div className="create-tool-scroll custom-scrollbar min-h-0 flex-1 overflow-y-auto">
-              <section className="create-tool-block" aria-label="Attachments">
-                <div className="create-tool-heading">
-                  <span>Attachments</span>
-                  <span className="create-tool-heading-meta">
-                    {generationConfig.attachments.length} / {maxAttachments}
-                  </span>
-                </div>
-                {hasAttachments ? (
-                  <div
-                    className="create-reference-strip"
-                    onDragOver={(event) => {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }}
-                    onDrop={acceptRailImageDrop}
-                  >
-                    <ReferenceTray
-                      attachments={generationConfig.attachments}
-                      onEdit={onOpenEditor}
-                      onRemove={onRemoveAttachment}
-                      onFiles={onFilesDrop}
-                      density="compact"
-                    />
-                    <button
-                      type="button"
-                      className="create-upload-add"
-                      onClick={() => fileInputRef.current?.click()}
-                      disabled={isNearLimit}
-                      aria-label="Add image reference"
-                    >
-                      <PlusCircle size={18} />
-                    </button>
-                  </div>
-                ) : (
-                  <button
-                    type="button"
-                    className="create-upload-control"
-                    onClick={() => fileInputRef.current?.click()}
-                    disabled={isNearLimit}
-                    aria-label="Add image reference"
-                    onDragOver={(event) => {
-                      event.preventDefault();
-                      event.stopPropagation();
-                    }}
-                    onDrop={acceptRailImageDrop}
-                  >
-                    <PlusCircle size={16} />
-                    <span>
-                      Drop an image or <span className="create-upload-accent">browse</span>
-                    </span>
-                  </button>
-                )}
-              </section>
-
+            <div className="create-tool-scroll min-h-0 flex-1" onScroll={() => closeAllMenus()}>
               {isContextOnly ? (
-                <p className="create-tool-hint">
-                  Add references here. Use the selected task action above to continue.
-                </p>
+                <>
+                  <section className="create-tool-block" aria-label="Attachments">
+                    <div className="create-section-header">
+                      <span>References</span>
+                      <span className="create-reference-count">
+                        {generationConfig.attachments.length} / {maxAttachments}
+                      </span>
+                    </div>
+                    <div
+                      className={`create-composer ${composerDragDepth > 0 ? 'is-dragover' : ''}`}
+                      onDragEnter={(event) => {
+                        if (!event.dataTransfer?.types.includes('Files')) return;
+                        event.preventDefault();
+                        setComposerDragDepth((depth) => depth + 1);
+                      }}
+                      onDragOver={(event) => {
+                        if (!event.dataTransfer?.types.includes('Files')) return;
+                        event.preventDefault();
+                        event.dataTransfer.dropEffect = 'copy';
+                      }}
+                      onDragLeave={() => setComposerDragDepth((depth) => Math.max(0, depth - 1))}
+                      onDrop={(event) => {
+                        setComposerDragDepth(0);
+                        acceptRailImageDrop(event);
+                      }}
+                    >
+                      <div className="create-reference-area">
+                        <div className="create-reference-list">
+                          {hasAttachments ? (
+                            <ReferenceTray
+                              attachments={generationConfig.attachments}
+                              onEdit={onOpenEditor}
+                              onRemove={onRemoveAttachment}
+                              onFiles={onFilesDrop}
+                              density="thumbs"
+                            />
+                          ) : (
+                            <span className="create-reference-empty">
+                              Drop an image or paste it into the prompt.
+                            </span>
+                          )}
+                          {isNearLimit ? null : (
+                            <button
+                              type="button"
+                              className="create-add-reference"
+                              onClick={() => fileInputRef.current?.click()}
+                              aria-label="Add image reference"
+                            >
+                              <Plus size={16} aria-hidden="true" />
+                              <span>Add</span>
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <p className="create-tool-hint">
+                    Add references here. Use the selected task action above to continue.
+                  </p>
+                </>
               ) : (
-                <section className="create-tool-block" aria-label="Prompt">
-                  <div className="create-tool-heading">
-                    <span>Prompt</span>
-                    <div className="create-prompt-tools">
-                      <Tooltip content="Analyze references">
-                        <button
-                          type="button"
-                          onClick={handleAnalyzeReferences}
-                          aria-label="Analyze references"
-                          className="create-prompt-tool"
-                        >
-                          <Scan size={15} />
-                        </button>
-                      </Tooltip>
-                      <div className="relative">
-                        <Tooltip content="Edit with AI (Refine)">
+                <>
+                  <section className="create-prompt-section" aria-label="Prompt">
+                    <div className="create-section-header">
+                      <label htmlFor="create-prompt-input">Prompt</label>
+                      <div className="create-prompt-tools">
+                        <Tooltip content="Analyze references">
                           <button
-                            ref={refineButtonRef}
                             type="button"
-                            onClick={() => {
-                              setIsRefineOpen(!isRefineOpen);
-                              setIsNegativeOpen(false);
-                            }}
-                            aria-label="Open edit instructions"
-                            aria-haspopup="dialog"
-                            aria-expanded={isRefineOpen}
-                            className={`create-prompt-tool ${isRefineOpen ? 'is-active' : ''}`}
+                            onClick={handleAnalyzeReferences}
+                            aria-label="Analyze references"
+                            className="create-icon-button"
                           >
-                            <Edit3 size={15} />
+                            <Scan size={16} />
                           </button>
                         </Tooltip>
+                        <div className="relative">
+                          <Tooltip content="Edit with AI (Refine)">
+                            <button
+                              ref={refineButtonRef}
+                              type="button"
+                              onClick={() => {
+                                setIsRefineOpen(!isRefineOpen);
+                                setIsNegativeOpen(false);
+                              }}
+                              aria-label="Open edit instructions"
+                              aria-haspopup="dialog"
+                              aria-expanded={isRefineOpen}
+                              className={`create-icon-button ${isRefineOpen ? 'is-active' : ''}`}
+                            >
+                              <Edit3 size={16} />
+                            </button>
+                          </Tooltip>
+                          <DemandMountedGsapDropdown
+                            portal
+                            data-toolbar-popup
+                            open={isRefineOpen}
+                            onOpenChange={setIsRefineOpen}
+                            triggerRef={refineButtonRef}
+                            placement="bottom-right"
+                            role="dialog"
+                            aria-label="Edit instructions"
+                            className="studio-mobile-popover z-[100] w-72 p-3"
+                          >
+                            <label
+                              htmlFor="rail-magic-edit-input"
+                              className="mb-2 block text-[10px] font-bold tracking-wide text-zinc-500"
+                            >
+                              Instructions to Edit
+                            </label>
+                            <div className="flex gap-2">
+                              <input
+                                id="rail-magic-edit-input"
+                                type="text"
+                                value={magicInstruction}
+                                onChange={(e) => setMagicInstruction(e.target.value)}
+                                placeholder="e.g. Make it cyberpunk style..."
+                                autoComplete="off"
+                                onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
+                                aria-label="Edit instructions"
+                                className="h-10 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
+                              />
+                              <button
+                                type="button"
+                                onClick={handleMagicEdit}
+                                disabled={isRefactoring}
+                                aria-label="Apply edit instructions"
+                                className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
+                              >
+                                {isRefactoring ? (
+                                  <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
+                                ) : (
+                                  <Send size={12} />
+                                )}
+                              </button>
+                            </div>
+                          </DemandMountedGsapDropdown>
+                        </div>
+                        <Tooltip content="Auto Enhance Prompt">
+                          <button
+                            type="button"
+                            onClick={onEnhancePrompt}
+                            disabled={isEnhancingPrompt}
+                            aria-label="Enhance prompt"
+                            className={`create-icon-button ${isEnhancingPrompt ? 'is-active' : ''}`}
+                          >
+                            {isEnhancingPrompt ? (
+                              <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
+                            ) : (
+                              <Wand2 size={16} />
+                            )}
+                          </button>
+                        </Tooltip>
+                        <Tooltip content="Expand editor">
+                          <button
+                            type="button"
+                            className="create-icon-button"
+                            aria-label="Expand prompt editor"
+                            onClick={() => {
+                              setExpandedPrompt(localPrompt);
+                              setIsPromptExpanded(true);
+                              setIsRefineOpen(false);
+                            }}
+                          >
+                            <Maximize size={16} />
+                          </button>
+                        </Tooltip>
+                      </div>
+                    </div>
+                    <div
+                      data-composer-input
+                      className={`create-composer ${composerDragDepth > 0 ? 'is-dragover' : ''} ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
+                      onDragEnter={(event) => {
+                        if (!event.dataTransfer?.types.includes('Files')) return;
+                        event.preventDefault();
+                        setComposerDragDepth((depth) => depth + 1);
+                      }}
+                      onDragOver={(event) => {
+                        if (!event.dataTransfer?.types.includes('Files')) return;
+                        event.preventDefault();
+                        event.dataTransfer.dropEffect = 'copy';
+                      }}
+                      onDragLeave={() => setComposerDragDepth((depth) => Math.max(0, depth - 1))}
+                      onDrop={(event) => {
+                        setComposerDragDepth(0);
+                        acceptRailImageDrop(event);
+                      }}
+                    >
+                      {showQuickStartErrorText ? (
+                        <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200">
+                          Add prompt or image to generate
+                        </div>
+                      ) : null}
+                      {promptField}
+                      <div className="create-reference-area" aria-label="Reference images">
+                        <div className="create-reference-heading">
+                          <span>References</span>
+                          <span className="create-reference-count">
+                            {generationConfig.attachments.length} / {maxAttachments}
+                          </span>
+                        </div>
+                        <div className="create-reference-list">
+                          {hasAttachments ? (
+                            <ReferenceTray
+                              attachments={generationConfig.attachments}
+                              onEdit={onOpenEditor}
+                              onRemove={onRemoveAttachment}
+                              onFiles={onFilesDrop}
+                              density="thumbs"
+                            />
+                          ) : (
+                            <span className="create-reference-empty">
+                              Drop an image or paste it into the prompt.
+                            </span>
+                          )}
+                          {isNearLimit ? null : (
+                            <button
+                              type="button"
+                              className="create-add-reference"
+                              onClick={() => fileInputRef.current?.click()}
+                              aria-label="Add image reference"
+                            >
+                              <Plus size={16} aria-hidden="true" />
+                              <span>Add</span>
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                    {shouldShowQuickStartError ? (
+                      <p className="create-prompt-error">Add a prompt or image to generate.</p>
+                    ) : null}
+                  </section>
+
+                  <div
+                    className="create-output-grid"
+                    data-has-size={showSizeControl ? 'true' : undefined}
+                  >
+                    <div className="create-field">
+                      <span className="create-field-label" id="create-format-label">
+                        Format
+                      </span>
+                      <button
+                        ref={aspectRatioButtonRef}
+                        type="button"
+                        className="create-select-field"
+                        aria-haspopup="listbox"
+                        aria-expanded={isAspectRatioOpen}
+                        aria-label={`Format: ${generationConfig.aspectRatio}, ${formatOrientation}`}
+                        onClick={() => {
+                          setIsAspectRatioOpen(!isAspectRatioOpen);
+                          setIsExecutionOpen(false);
+                          setIsSizeOpen(false);
+                          setIsBatchOpen(false);
+                        }}
+                      >
+                        <span className="create-ratio-symbol" aria-hidden="true">
+                          <span
+                            className="create-ratio-shape"
+                            style={getRatioShapeStyle(generationConfig.aspectRatio)}
+                          />
+                        </span>
+                        <span className="create-select-value">
+                          <strong id="create-format-value">{generationConfig.aspectRatio}</strong>
+                          <small id="create-format-orientation">{formatOrientation}</small>
+                        </span>
+                        <ChevronDown size={14} aria-hidden="true" />
+                      </button>
+                      <DemandMountedGsapDropdown
+                        portal
+                        data-toolbar-popup
+                        open={isAspectRatioOpen}
+                        onOpenChange={setIsAspectRatioOpen}
+                        triggerRef={aspectRatioButtonRef}
+                        placement="bottom-left"
+                        role="listbox"
+                        aria-label="Output format"
+                        className="create-format-popover"
+                      >
+                        <div className="create-popover-title">Output format</div>
+                        <div className="create-ratio-grid">
+                          {currentRatios.map((option) => {
+                            const selected = generationConfig.aspectRatio === option.ratio;
+                            const orientation =
+                              RATIO_ORIENTATION_LABELS[getRatioOrientation(option.ratio)];
+                            return (
+                              <button
+                                type="button"
+                                key={option.ratio}
+                                role="option"
+                                aria-selected={selected}
+                                aria-label={`${option.ratio} · ${orientation}`}
+                                className={`create-ratio-choice${selected ? ' is-selected' : ''}`}
+                                onClick={() => {
+                                  updateConfig('aspectRatio', option.ratio);
+                                  setIsAspectRatioOpen(false);
+                                  setPreviewRatio(null);
+                                }}
+                                onMouseEnter={() => setPreviewRatio(option.ratio)}
+                                onMouseLeave={() => setPreviewRatio(null)}
+                              >
+                                <span className="create-ratio-symbol" aria-hidden="true">
+                                  <span
+                                    className="create-ratio-shape"
+                                    style={getRatioShapeStyle(option.ratio, 31, 27)}
+                                  />
+                                </span>
+                                <span className="create-ratio-label">{option.ratio}</span>
+                              </button>
+                            );
+                          })}
+                        </div>
+                        <div className="create-popover-note">
+                          {showSizeControl
+                            ? 'Aspect ratio. Choose 1K, 2K, or 4K next to it.'
+                            : 'Aspect ratio, not resolution.'}
+                        </div>
+                      </DemandMountedGsapDropdown>
+                    </div>
+                    {showSizeControl ? (
+                      <div className="create-field">
+                        <span className="create-field-label" id="create-size-label">
+                          Size
+                        </span>
+                        <button
+                          ref={sizeButtonRef}
+                          type="button"
+                          className="create-select-field"
+                          aria-haspopup="listbox"
+                          aria-expanded={isSizeOpen}
+                          aria-label={`Image size: ${selectedExecutionImageSize?.tier ?? generationConfig.imageSize ?? '1K'}`}
+                          onClick={() => {
+                            setIsSizeOpen(!isSizeOpen);
+                            setIsAspectRatioOpen(false);
+                            setIsExecutionOpen(false);
+                            setIsBatchOpen(false);
+                          }}
+                        >
+                          <span className="create-select-value">
+                            <strong>{selectedExecutionImageSize?.tier ?? '1K'}</strong>
+                            <small>
+                              {selectedExecutionImageSize
+                                ? `${selectedExecutionImageSize.width}×${selectedExecutionImageSize.height}`
+                                : 'Default'}
+                            </small>
+                          </span>
+                          <ChevronDown size={14} aria-hidden="true" />
+                        </button>
                         <DemandMountedGsapDropdown
                           portal
                           data-toolbar-popup
-                          open={isRefineOpen}
-                          onOpenChange={setIsRefineOpen}
-                          triggerRef={refineButtonRef}
-                          placement="bottom-right"
-                          role="dialog"
-                          aria-label="Edit instructions"
-                          className="studio-mobile-popover z-[100] w-72 p-3"
+                          open={isSizeOpen}
+                          onOpenChange={setIsSizeOpen}
+                          triggerRef={sizeButtonRef}
+                          placement="bottom-left"
+                          role="listbox"
+                          aria-label="Image size"
+                          className="create-format-popover"
                         >
-                          <label
-                            htmlFor="rail-magic-edit-input"
-                            className="mb-2 block text-[10px] font-bold tracking-wide text-zinc-500"
-                          >
-                            Instructions to Edit
-                          </label>
-                          <div className="flex gap-2">
-                            <input
-                              id="rail-magic-edit-input"
-                              type="text"
-                              value={magicInstruction}
-                              onChange={(e) => setMagicInstruction(e.target.value)}
-                              placeholder="e.g. Make it cyberpunk style..."
-                              autoComplete="off"
-                              onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
-                              aria-label="Edit instructions"
-                              className="h-10 flex-1 rounded-xl border border-white/2 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/2"
-                            />
-                            <button
-                              type="button"
-                              onClick={handleMagicEdit}
-                              disabled={isRefactoring}
-                              aria-label="Apply edit instructions"
-                              className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/2 bg-accent-600 text-white transition-colors hover:bg-accent-500"
-                            >
-                              {isRefactoring ? (
-                                <div className="size-3 animate-spin rounded-full border-2 border-white/20 border-t-white" />
-                              ) : (
-                                <Send size={12} />
-                              )}
-                            </button>
+                          <div className="create-popover-title">Image size</div>
+                          <div className="flex flex-col gap-1.5">
+                            {executionImageSizeOptions.map((option) => {
+                              const selected = selectedExecutionImageSize?.tier === option.tier;
+                              return (
+                                <button
+                                  type="button"
+                                  key={option.tier}
+                                  role="option"
+                                  aria-selected={selected}
+                                  aria-label={`${option.tier}: ${option.width}×${option.height}`}
+                                  className={`create-size-choice${selected ? ' is-selected' : ''}`}
+                                  onClick={() => {
+                                    handleSelectExecutionImageSize(option.tier);
+                                    setIsSizeOpen(false);
+                                  }}
+                                >
+                                  <span className="create-select-value">
+                                    <strong>{option.tier}</strong>
+                                    <small>
+                                      {option.width}×{option.height}
+                                      {option.experimental ? ' · experimental' : ''}
+                                    </small>
+                                  </span>
+                                </button>
+                              );
+                            })}
                           </div>
+                          {selectedExecutionImageSize?.experimental ? (
+                            <div className="create-popover-note">
+                              ChatGPT marks output above 2560×1440 as experimental.
+                            </div>
+                          ) : (
+                            <div className="create-popover-note">
+                              Available with ChatGPT Sign in and GPT Image models.
+                            </div>
+                          )}
                         </DemandMountedGsapDropdown>
                       </div>
-                      <Tooltip content="Auto Enhance Prompt">
+                    ) : null}
+                    <div className="create-field">
+                      <label className="create-field-label" htmlFor="create-quantity-input">
+                        Images
+                      </label>
+                      <div className="create-stepper">
                         <button
                           type="button"
-                          onClick={onEnhancePrompt}
-                          disabled={isEnhancingPrompt}
-                          aria-label="Enhance prompt"
-                          className={`create-prompt-tool ${isEnhancingPrompt ? 'is-active' : ''}`}
+                          className="create-step-button"
+                          aria-label="Decrease image count"
+                          disabled={currentBatch === previousBatchCount}
+                          onClick={() => updateConfig('batchCount', previousBatchCount)}
                         >
-                          {isEnhancingPrompt ? (
-                            <div className="size-3 animate-spin rounded-full border-2 border-accent-400/30 border-t-accent-400" />
-                          ) : (
-                            <Wand2 size={15} />
-                          )}
+                          <Minus size={16} />
                         </button>
-                      </Tooltip>
+                        <input
+                          id="create-quantity-input"
+                          className="create-quantity-input"
+                          type="text"
+                          inputMode="numeric"
+                          value={String(currentBatch)}
+                          role="spinbutton"
+                          aria-valuemin={1}
+                          aria-valuemax={maxOutputCount}
+                          aria-valuenow={currentBatch}
+                          aria-label="Image count"
+                          autoComplete="off"
+                          onChange={(event) => {
+                            const value = Number(event.target.value);
+                            if (Number.isInteger(value) && value >= 1 && value <= maxOutputCount) {
+                              updateConfig('batchCount', value);
+                            }
+                          }}
+                          onBlur={() => updateConfig('batchCount', currentBatch)}
+                        />
+                        <button
+                          type="button"
+                          className="create-step-button"
+                          aria-label="Increase image count"
+                          disabled={currentBatch === nextBatchCount}
+                          onClick={() => updateConfig('batchCount', nextBatchCount)}
+                        >
+                          <Plus size={16} />
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  <div
-                    data-composer-input
-                    className={`create-prompt-box ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
-                  >
-                    {showQuickStartErrorText ? (
-                      <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200">
-                        Add prompt or image to generate
-                      </div>
-                    ) : null}
-                    {promptField}
-                  </div>
-                </section>
-              )}
 
-              {isContextOnly ? null : (
-                <section className="create-tool-block" aria-label="Output settings">
-                  <div className="create-tool-heading">
-                    <span>Aspect ratio</span>
-                    <span className="create-tool-heading-meta">{generationConfig.aspectRatio}</span>
-                  </div>
-                  <div className="create-ratio-groups" role="group" aria-label="Aspect ratio">
-                    {ratioGroups.map((group) => (
-                      <div
-                        key={group.orientation}
-                        className="create-ratio-group"
-                        role="group"
-                        aria-label={group.label}
+                  {showCodexPromptTools ? (
+                    <div className="create-advanced-section">
+                      <button
+                        type="button"
+                        className="create-advanced-toggle"
+                        aria-expanded={isAdvancedOpen}
+                        aria-controls="create-advanced-body"
+                        aria-label="Advanced settings"
+                        onClick={() => {
+                          const next = !isAdvancedOpen;
+                          setIsAdvancedOpen(next);
+                          if (next) {
+                            requestAnimationFrame(() =>
+                              negativeInputRef.current?.focus({ preventScroll: false }),
+                            );
+                          }
+                        }}
                       >
-                        <span className="create-ratio-group-label">{group.label}</span>
-                        <div className="create-ratio-segment">
-                          {group.options.map((option) => (
-                            <button
-                              type="button"
-                              key={option.ratio}
-                              aria-label={`${option.ratio} ${option.label}`}
-                              aria-pressed={generationConfig.aspectRatio === option.ratio}
-                              className="create-ratio-option"
-                              onClick={() => {
-                                updateConfig('aspectRatio', option.ratio);
-                                setPreviewRatio(null);
-                              }}
-                              onMouseEnter={() => setPreviewRatio(option.ratio)}
-                              onMouseLeave={() => setPreviewRatio(null)}
-                            >
-                              <span
-                                className="create-ratio-frame"
-                                style={{ aspectRatio: `${option.width} / ${option.height}` }}
-                                aria-hidden="true"
-                              />
-                              <span className="create-ratio-code">{option.ratio}</span>
-                            </button>
-                          ))}
+                        <SlidersHorizontal size={15} aria-hidden="true" />
+                        <span>Advanced</span>
+                        <span className="create-advanced-meta">
+                          {generationConfig.negativePrompt?.trim() ? '1 active' : 'Optional'}
+                        </span>
+                        <ChevronDown size={13} aria-hidden="true" />
+                      </button>
+                      {isAdvancedOpen ? (
+                        <div className="create-advanced-body" id="create-advanced-body">
+                          <label className="create-field-label" htmlFor="create-negative-input">
+                            Negative prompt
+                          </label>
+                          <textarea
+                            ref={negativeInputRef}
+                            id="create-negative-input"
+                            className="create-negative-input"
+                            value={generationConfig.negativePrompt || ''}
+                            onChange={(event) => updateConfig('negativePrompt', event.target.value)}
+                            placeholder="Blurry, low quality, distortion..."
+                            spellCheck={false}
+                            aria-label="Negative prompt"
+                          />
                         </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="create-images-line">
-                    <span className="create-tool-heading">Images</span>
-                    <div className="create-stepper">
-                      <button
-                        type="button"
-                        aria-label="Decrease image count"
-                        disabled={currentBatch === previousBatchCount}
-                        onClick={() => updateConfig('batchCount', previousBatchCount)}
-                      >
-                        <Minus size={14} />
-                      </button>
-                      <output aria-live="polite">{currentBatch}</output>
-                      <button
-                        type="button"
-                        aria-label="Increase image count"
-                        disabled={currentBatch === nextBatchCount}
-                        onClick={() => updateConfig('batchCount', nextBatchCount)}
-                      >
-                        <Plus size={14} />
-                      </button>
+                      ) : null}
                     </div>
-                  </div>
-                </section>
-              )}
-
-              {isContextOnly || !showCodexPromptTools ? null : (
-                <section className="create-tool-block" aria-label="Negative prompt">
-                  <div className="create-tool-heading">
-                    <span>Negative prompt</span>
-                  </div>
-                  <input
-                    type="text"
-                    value={generationConfig.negativePrompt || ''}
-                    onChange={(event) => updateConfig('negativePrompt', event.target.value)}
-                    placeholder="Blurry, low quality, distortion..."
-                    autoComplete="off"
-                    aria-label="Negative prompt"
-                    className="create-field-input"
-                  />
-                </section>
+                  ) : null}
+                </>
               )}
             </div>
           ) : (
@@ -884,7 +1188,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               {/* Input Container */}
               <div
                 data-composer-input
-                className={`flex min-h-9 items-end gap-1.5 rounded-lg border border-white/2 bg-zinc-900/50 p-1 px-2 shadow-lg transition-colors duration-300 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
+                className={`studio-field flex min-h-9 items-end gap-1.5 p-1 px-2 transition-colors duration-300 ${shouldShowQuickStartError ? 'quick-start-error-frame' : ''}`}
               >
                 {showQuickStartErrorText && (
                   <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[9px] font-black uppercase tracking-[0.18em] text-red-200 animate-in fade-in-0 slide-in-from-bottom-1 duration-150">
@@ -925,7 +1229,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <span className="block text-[10px] font-black uppercase leading-none tracking-[0.12em] opacity-60">
                         Recipe
                       </span>
-                      <span className="block truncate text-[11px] font-black uppercase leading-tight tracking-[0.06em] text-white">
+                      <span className="block truncate text-[11px] font-black uppercase leading-tight tracking-[0.06em] text-[color:var(--wb-ink)]">
                         {activeRecipeIndicator.title}
                       </span>
                       <span className="block truncate text-[10px] font-medium leading-none opacity-70">
@@ -938,7 +1242,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 {isContextOnly ? (
                   <div
                     data-task-context
-                    className="hidden min-w-0 flex-1 px-1.5 py-1 text-[11px] leading-relaxed text-zinc-500 sm:block"
+                    className="studio-muted hidden min-w-0 flex-1 px-1.5 py-1 text-[11px] leading-relaxed sm:block"
                   >
                     Add references here. Use the selected task action above to continue.
                   </div>
@@ -1103,7 +1407,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             className={
               isRail
                 ? 'create-tool-footer'
-                : 'pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1 rounded-lg border border-white/2 bg-zinc-900/50 p-1 shadow-lg transition-colors duration-300 sm:w-auto sm:justify-start'
+                : 'studio-field pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1 p-1 transition-colors duration-300 sm:w-auto sm:justify-start'
             }
           >
             {isRail ? null : (
@@ -1130,7 +1434,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               className={
                 isRail
                   ? 'create-tool-execution'
-                  : `${isMobileControlsOpen ? 'fixed' : 'hidden'} custom-scrollbar inset-x-2 z-[90] flex-col gap-3 overflow-y-auto rounded-2xl border border-white/2 bg-zinc-950/95 p-3 shadow-2xl sm:static sm:flex sm:max-h-none sm:flex-row sm:items-end sm:gap-1 sm:overflow-visible sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none`
+                  : `${isMobileControlsOpen ? 'fixed' : 'hidden'} studio-popover custom-scrollbar inset-x-2 z-[90] flex-col gap-3 overflow-y-auto p-3 sm:static sm:flex sm:max-h-none sm:flex-row sm:items-end sm:gap-1 sm:overflow-visible sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none`
               }
               style={
                 !isRail && isMobileControlsOpen
@@ -1238,63 +1542,64 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               ) : null}
 
               <div className="grid grid-cols-2 gap-2 sm:contents">
-                {/* Aspect Ratio */}
-                <div className={`${isRail || isContextOnly ? 'hidden' : 'relative min-w-0'}`}>
-                  <button
-                    ref={aspectRatioButtonRef}
-                    type="button"
-                    onClick={() => {
-                      setIsAspectRatioOpen(!isAspectRatioOpen);
-                      setIsExecutionOpen(false);
-                      setIsBatchOpen(false);
-                    }}
-                    aria-label={`Aspect ratio: ${generationConfig.aspectRatio}`}
-                    aria-haspopup="menu"
-                    aria-expanded={isAspectRatioOpen}
-                    className={btnClass}
-                  >
-                    <AspectRatioIcon ratio={generationConfig.aspectRatio} />
-                    <span>{generationConfig.aspectRatio}</span>
-                  </button>
-                  <DemandMountedGsapDropdown
-                    portal
-                    data-toolbar-popup
-                    open={isAspectRatioOpen}
-                    onOpenChange={setIsAspectRatioOpen}
-                    triggerRef={aspectRatioButtonRef}
-                    placement="top-left"
-                    className="studio-mobile-popover absolute bottom-full left-0 z-[100] mb-4 grid w-[270px] grid-cols-3 gap-2 p-3"
-                  >
-                    {currentRatios.map((option) => (
-                      <button
-                        type="button"
-                        key={option.ratio}
-                        role="menuitemradio"
-                        aria-checked={generationConfig.aspectRatio === option.ratio}
-                        data-dropdown-item
-                        onClick={() => {
-                          updateConfig('aspectRatio', option.ratio);
-                          setIsAspectRatioOpen(false);
-                          setPreviewRatio(null);
-                        }}
-                        onMouseEnter={() => setPreviewRatio(option.ratio)}
-                        title={`${option.label}: ${option.size}`}
-                        className={`aspect-square rounded-xl flex flex-col items-center justify-center gap-1 transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                          generationConfig.aspectRatio === option.ratio
-                            ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/2 text-white shadow-lg'
-                            : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
-                        }`}
-                      >
-                        <AspectRatioIcon ratio={option.ratio} />
-                        <span className="text-[8px] font-black">{option.ratio}</span>
-                        <span className="text-[6px] font-bold text-zinc-500">{option.size}</span>
-                      </button>
-                    ))}
-                  </DemandMountedGsapDropdown>
-                </div>
+                {isRail || isContextOnly ? null : (
+                  <div className="relative min-w-0">
+                    <button
+                      ref={aspectRatioButtonRef}
+                      type="button"
+                      onClick={() => {
+                        setIsAspectRatioOpen(!isAspectRatioOpen);
+                        setIsExecutionOpen(false);
+                        setIsBatchOpen(false);
+                      }}
+                      aria-label={`Aspect ratio: ${generationConfig.aspectRatio}`}
+                      aria-haspopup="menu"
+                      aria-expanded={isAspectRatioOpen}
+                      className={btnClass}
+                    >
+                      <AspectRatioIcon ratio={generationConfig.aspectRatio} />
+                      <span>{generationConfig.aspectRatio}</span>
+                    </button>
+                    <DemandMountedGsapDropdown
+                      portal
+                      data-toolbar-popup
+                      open={isAspectRatioOpen}
+                      onOpenChange={setIsAspectRatioOpen}
+                      triggerRef={aspectRatioButtonRef}
+                      placement="top-left"
+                      className="studio-mobile-popover absolute bottom-full left-0 z-[100] mb-4 grid w-[270px] grid-cols-3 gap-2 p-3"
+                    >
+                      {currentRatios.map((option) => (
+                        <button
+                          type="button"
+                          key={option.ratio}
+                          role="menuitemradio"
+                          aria-checked={generationConfig.aspectRatio === option.ratio}
+                          data-dropdown-item
+                          onClick={() => {
+                            updateConfig('aspectRatio', option.ratio);
+                            setIsAspectRatioOpen(false);
+                            setPreviewRatio(null);
+                          }}
+                          onMouseEnter={() => setPreviewRatio(option.ratio)}
+                          title={`${option.label}: ${option.size}`}
+                          className={`aspect-square rounded-xl flex flex-col items-center justify-center gap-1 transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                            generationConfig.aspectRatio === option.ratio
+                              ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/2 text-white shadow-lg'
+                              : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'
+                          }`}
+                        >
+                          <AspectRatioIcon ratio={option.ratio} />
+                          <span className="text-[8px] font-black">{option.ratio}</span>
+                          <span className="text-[6px] font-bold text-zinc-500">{option.size}</span>
+                        </button>
+                      ))}
+                    </DemandMountedGsapDropdown>
+                  </div>
+                )}
 
                 {/* Resolution */}
-                {showSizeControl && (
+                {showSizeControl && !isRail ? (
                   <div className="relative min-w-0">
                     <button
                       ref={sizeButtonRef}
@@ -1320,70 +1625,74 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       placement="top-left"
                       className="studio-mobile-popover absolute bottom-full left-0 z-[100] mb-4 flex min-w-24 flex-col gap-1 p-2"
                     >
-                      {currentSizes.map((size) => (
+                      {currentSizes.map((option) => (
                         <button
                           type="button"
-                          key={size}
+                          key={option.tier}
                           role="menuitemradio"
-                          aria-checked={generationConfig.imageSize === size}
+                          aria-checked={selectedExecutionImageSize?.tier === option.tier}
                           data-dropdown-item
                           onClick={() => {
-                            updateConfig('imageSize', size);
+                            handleSelectExecutionImageSize(option.tier);
                             setIsSizeOpen(false);
                           }}
-                          className={`min-h-10 w-full rounded-xl px-3 text-left text-[10px] font-black transition-[color,background-color,border-color,opacity,transform] ${generationConfig.imageSize === size ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white' : 'text-zinc-400 hover:bg-white/10'}`}
+                          className={`min-h-10 w-full rounded-xl px-3 text-left text-[10px] font-black transition-[color,background-color,border-color,opacity,transform] ${selectedExecutionImageSize?.tier === option.tier ? 'bg-gradient-to-r from-accent-700 to-accent-800 text-white' : 'text-zinc-400 hover:bg-white/10'}`}
                         >
-                          {size}
+                          {option.tier}
+                          <span className="mt-0.5 block text-[8px] font-bold tracking-normal text-zinc-500">
+                            {option.width}×{option.height}
+                          </span>
+                        </button>
+                      ))}
+                    </DemandMountedGsapDropdown>
+                  </div>
+                ) : null}
+
+                {isRail || isContextOnly ? null : (
+                  <div className="relative min-w-0">
+                    <button
+                      ref={batchButtonRef}
+                      type="button"
+                      onClick={() => {
+                        setIsBatchOpen(!isBatchOpen);
+                        setIsExecutionOpen(false);
+                      }}
+                      aria-label={`Batch count: ${generationConfig.batchCount || 1}`}
+                      aria-haspopup="menu"
+                      aria-expanded={isBatchOpen}
+                      className={btnClass}
+                    >
+                      <Layers size={14} />
+                      <span>{generationConfig.batchCount || 1}x</span>
+                    </button>
+                    <DemandMountedGsapDropdown
+                      portal
+                      data-toolbar-popup
+                      open={isBatchOpen}
+                      onOpenChange={setIsBatchOpen}
+                      triggerRef={batchButtonRef}
+                      placement="top-left"
+                      className="studio-mobile-popover absolute bottom-full left-0 z-[100] mb-4 flex gap-2 p-2"
+                    >
+                      {batchCounts.map((count) => (
+                        <button
+                          type="button"
+                          key={count}
+                          role="menuitemradio"
+                          aria-checked={generationConfig.batchCount === count}
+                          data-dropdown-item
+                          onClick={() => {
+                            updateConfig('batchCount', count);
+                            setIsBatchOpen(false);
+                          }}
+                          className={`flex size-10 touch-manipulation items-center justify-center rounded-xl text-[10px] font-black transition-[color,background-color,border-color,opacity,transform] ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/2 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
+                        >
+                          {count}
                         </button>
                       ))}
                     </DemandMountedGsapDropdown>
                   </div>
                 )}
-
-                {/* Batch Count */}
-                <div className={`${isRail || isContextOnly ? 'hidden' : 'relative min-w-0'}`}>
-                  <button
-                    ref={batchButtonRef}
-                    type="button"
-                    onClick={() => {
-                      setIsBatchOpen(!isBatchOpen);
-                      setIsExecutionOpen(false);
-                    }}
-                    aria-label={`Batch count: ${generationConfig.batchCount || 1}`}
-                    aria-haspopup="menu"
-                    aria-expanded={isBatchOpen}
-                    className={btnClass}
-                  >
-                    <Layers size={14} />
-                    <span>{generationConfig.batchCount || 1}x</span>
-                  </button>
-                  <DemandMountedGsapDropdown
-                    portal
-                    data-toolbar-popup
-                    open={isBatchOpen}
-                    onOpenChange={setIsBatchOpen}
-                    triggerRef={batchButtonRef}
-                    placement="top-left"
-                    className="studio-mobile-popover absolute bottom-full left-0 z-[100] mb-4 flex gap-2 p-2"
-                  >
-                    {batchCounts.map((count) => (
-                      <button
-                        type="button"
-                        key={count}
-                        role="menuitemradio"
-                        aria-checked={generationConfig.batchCount === count}
-                        data-dropdown-item
-                        onClick={() => {
-                          updateConfig('batchCount', count);
-                          setIsBatchOpen(false);
-                        }}
-                        className={`flex size-10 touch-manipulation items-center justify-center rounded-xl text-[10px] font-black transition-[color,background-color,border-color,opacity,transform] ${generationConfig.batchCount === count ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/2 text-white' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}
-                      >
-                        {count}
-                      </button>
-                    ))}
-                  </DemandMountedGsapDropdown>
-                </div>
 
                 <div className={isRail ? 'create-tool-provider-row' : 'contents'}>
                   {commandCenter && onSelectProvider ? (
@@ -1396,8 +1705,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       onOpenSettings={onOpenSettings}
                       placement="top-left"
                       showLabel
+                      variant={isRail ? 'rail' : 'toolbar'}
                       className={isRail ? 'min-w-0' : undefined}
-                      triggerClassName={`${btnClass} ${isRail ? 'create-tool-chip' : ''}`}
+                      triggerClassName={isRail ? 'create-tool-chip' : btnClass}
                     />
                   ) : null}
 
@@ -1409,17 +1719,23 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         onClick={() => {
                           setIsExecutionOpen(!isExecutionOpen);
                           setIsAspectRatioOpen(false);
+                          setIsSizeOpen(false);
                           setIsBatchOpen(false);
                         }}
                         aria-label={`Codex task execution: ${executionSummary}`}
                         aria-haspopup="dialog"
                         aria-expanded={isExecutionOpen}
-                        className={`${btnClass} ${isRail ? 'create-tool-chip' : ''}`}
+                        className={isRail ? 'create-tool-chip' : btnClass}
                       >
                         {isRail ? null : <BrainCircuit size={14} />}
-                        <span className="min-w-0 truncate text-[8px]">
-                          {isRail ? executionChipLabel : executionSummary}
-                        </span>
+                        {isRail ? (
+                          <span className="create-engine-copy">
+                            <span className="create-engine-kicker">Model</span>
+                            <span className="create-engine-name">{executionChipLabel}</span>
+                          </span>
+                        ) : (
+                          <span className="min-w-0 truncate text-[8px]">{executionSummary}</span>
+                        )}
                         {isRail ? <ChevronDown size={12} aria-hidden="true" /> : null}
                       </button>
                       <DemandMountedGsapDropdown
@@ -1635,6 +1951,55 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                     );
                                   })}
                                 </div>
+                                <div className="mt-3">
+                                  <div className="mb-2 text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                                    Size
+                                  </div>
+                                  <div
+                                    className="grid grid-cols-3 gap-1.5"
+                                    role="group"
+                                    aria-label="ChatGPT image size"
+                                  >
+                                    {executionImageSizeOptions.map((option) => {
+                                      const isSelected =
+                                        selectedExecutionImageSize?.tier === option.tier;
+                                      return (
+                                        <button
+                                          type="button"
+                                          key={option.tier}
+                                          data-codex-image-size={option.tier}
+                                          aria-pressed={isSelected}
+                                          aria-label={`${option.tier}: ${option.width}×${option.height}`}
+                                          title={`${option.width}×${option.height}${option.experimental ? ' · experimental' : ''}`}
+                                          onClick={() =>
+                                            handleSelectExecutionImageSize(option.tier)
+                                          }
+                                          className={`flex min-h-[40px] flex-col justify-center rounded-lg border px-2 py-1.5 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
+                                            isSelected
+                                              ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
+                                              : 'border-transparent bg-white/5 hover:bg-white/10'
+                                          }`}
+                                        >
+                                          <span
+                                            className={`text-[9px] font-black uppercase tracking-wide ${
+                                              isSelected ? 'text-accent-300' : 'text-zinc-200'
+                                            }`}
+                                          >
+                                            {option.tier}
+                                          </span>
+                                          <span className="text-[7px] font-bold uppercase tracking-wide text-zinc-500">
+                                            {option.width}×{option.height}
+                                          </span>
+                                        </button>
+                                      );
+                                    })}
+                                  </div>
+                                  {selectedExecutionImageSize?.experimental ? (
+                                    <p className="mt-1.5 text-[8px] font-bold leading-snug text-zinc-500">
+                                      ChatGPT marks output above 2560×1440 as experimental.
+                                    </p>
+                                  ) : null}
+                                </div>
                               </div>
                             ) : null}
 
@@ -1740,20 +2105,29 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 aria-describedby={generateBlock ? 'grok-generate-block' : undefined}
                 data-studio-generate-button
                 data-generate-active={isGenerating ? 'true' : 'false'}
-                className={`
-                    group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-xl flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
-                    text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer disabled:cursor-not-allowed disabled:opacity-45
-                    ${
-                      isRail
-                        ? `create-generate-button ${isGenerating ? 'is-busy' : ''}`
-                        : isGenerating
-                          ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-200 border border-accent-500/2 shadow-lg hover:border-accent-300/2 hover:text-white active:scale-95'
-                          : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/2 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
-                    }
-                `}
+                className={
+                  isRail
+                    ? `create-generate-button ${isGenerating ? 'is-busy' : ''}`
+                    : `group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-xl flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
+                    text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer disabled:cursor-not-allowed disabled:opacity-45 ${
+                      isGenerating
+                        ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-200 border border-accent-500/2 shadow-lg hover:border-accent-300/2 hover:text-white active:scale-95'
+                        : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/2 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
+                    }`
+                }
               >
                 {isGenerating ? (
-                  <GenerationElapsedStatus startTime={generationStartTime} />
+                  <GenerationElapsedStatus
+                    startTime={generationStartTime}
+                    variant={isRail ? 'rail' : 'dock'}
+                  />
+                ) : isRail ? (
+                  <>
+                    <Sparkles size={17} aria-hidden="true" />
+                    <span>
+                      {`Generate ${currentBatch} ${currentBatch === 1 ? 'image' : 'images'}`}
+                    </span>
+                  </>
                 ) : (
                   <>
                     <div className="absolute inset-0 z-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:animate-[shimmer_1.5s_infinite]" />
@@ -1761,17 +2135,34 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <>
                         <Wand2
                           size={14}
-                          className={`group-hover:rotate-12 transition-transform ${isRail ? '' : 'text-accent-300'}`}
+                          className="group-hover:rotate-12 transition-transform text-accent-300"
                         />
-                        <span className={isRail ? '' : 'text-white'}>GENERATE</span>
+                        <span className="text-white">GENERATE</span>
                       </>
                     </div>
                   </>
                 )}
               </button>
             ) : null}
+            {isRail ? (
+              <div className="create-footer-meta">
+                <span className="create-local-status">
+                  <span className="create-status-dot" aria-hidden="true" />
+                  <span
+                    id={generateBlock ? 'grok-generate-block' : undefined}
+                    role={generateBlock ? 'status' : undefined}
+                  >
+                    {generateBlock?.message ??
+                      (isGenerating
+                        ? 'Generating'
+                        : (commandCenter?.runtimeStatus.label ?? 'Ready'))}
+                  </span>
+                </span>
+                {isGenerating ? null : <kbd className="create-shortcut-hint">{shortcutHint}</kbd>}
+              </div>
+            ) : null}
           </div>
-          {generateBlock ? (
+          {generateBlock && !isRail ? (
             <p
               id="grok-generate-block"
               role="status"
@@ -1781,6 +2172,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             </p>
           ) : null}
         </div>
+
+        <CreatePromptExpandDialog
+          isOpen={isRail && isPromptExpanded}
+          value={expandedPrompt}
+          onChange={setExpandedPrompt}
+          onClose={() => setIsPromptExpanded(false)}
+          onSave={saveExpandedPrompt}
+        />
 
         {/* Key Selector Popover (External) */}
         <KeyPopover

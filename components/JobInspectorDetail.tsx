@@ -41,7 +41,7 @@ function toneForStatus(status: StudioJob['status']) {
     case 'completed':
       return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
     case 'cancelled':
-      return 'border-white/10 bg-white/5 text-zinc-300';
+      return 'border-[color:var(--wb-border)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-ink)]';
     case 'failed':
       return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
     case 'needs_review':
@@ -53,7 +53,7 @@ function toneForStatus(status: StudioJob['status']) {
 
 function toneForTimeline(item: JobInspectorTimelineItem) {
   if (item.sourceType === 'event') {
-    return 'border-white/2 bg-white/[0.04] text-zinc-100';
+    return 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-ink)]';
   }
 
   switch (item.tone) {
@@ -64,7 +64,7 @@ function toneForTimeline(item: JobInspectorTimelineItem) {
     case 'message':
       return 'border-emerald-500/2 bg-emerald-500/8 text-emerald-100';
     default:
-      return 'border-white/2 bg-white/[0.04] text-zinc-100';
+      return 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-ink)]';
   }
 }
 
@@ -151,14 +151,14 @@ function JobStatusBanner({
               </div>
 
               {hasReadableAssistantReply ? (
-                <div className="rounded-2xl border border-amber-500/2 bg-black/20 px-3 py-2.5 text-[12px] leading-5 text-amber-100/70">
+                <div className="rounded-2xl border border-amber-500/2 bg-[color:var(--wb-well)] px-3 py-2.5 text-[12px] leading-5 text-amber-100/70">
                   The final assistant response is already captured in the timeline below, so we do
                   not repeat it here.
                 </div>
               ) : null}
 
               {transcriptPath ? (
-                <div className="rounded-2xl border border-amber-500/2 bg-black/20 px-3 py-2.5">
+                <div className="rounded-2xl border border-amber-500/2 bg-[color:var(--wb-well)] px-3 py-2.5">
                   <p className="text-[10px] font-black uppercase tracking-[0.18em] text-amber-400/50">
                     Transcript path
                   </p>
@@ -204,11 +204,11 @@ function SectionCard({
         {icon ? <span className="text-accent-300">{icon}</span> : null}
         <div>
           {eyebrow ? (
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500">
+            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
               {eyebrow}
             </p>
           ) : null}
-          <h3 className="text-sm font-semibold text-white">{title}</h3>
+          <h3 className="text-sm font-semibold text-[color:var(--wb-ink)]">{title}</h3>
         </div>
       </div>
       {children}
@@ -225,14 +225,14 @@ function RenderTextBlocks({ blocks }: { blocks: JobInspectorTextBlock[] }) {
         block.kind === 'code' ? (
           <pre
             key={`${block.kind}-${block.text}`}
-            className="custom-scrollbar overflow-x-auto rounded-2xl border border-white/2 bg-black/30 p-3 text-[11px] leading-6 text-zinc-300"
+            className="custom-scrollbar overflow-x-auto rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-6 text-[color:var(--wb-ink)]"
           >
             {block.text}
           </pre>
         ) : (
           <p
             key={`${block.kind}-${block.text}`}
-            className="whitespace-pre-wrap text-[13px] leading-6 text-zinc-200 [overflow-wrap:anywhere]"
+            className="whitespace-pre-wrap text-[13px] leading-6 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]"
           >
             {block.text}
           </p>
@@ -252,12 +252,12 @@ function ArtifactTile({
   const tile = (
     <div
       className={cn(
-        'min-w-0 overflow-hidden rounded-2xl border border-white/2 bg-black/30 transition-colors hover:border-white/2 hover:bg-black/40',
+        'min-w-0 overflow-hidden rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-well)]',
         className,
       )}
     >
       {artifact.previewSrc ? (
-        <div className="aspect-[4/3] overflow-hidden border-b border-white/2 bg-black/50">
+        <div className="aspect-[4/3] overflow-hidden border-b border-[color:var(--wb-line)] bg-[color:var(--wb-well)]">
           <img
             src={artifact.previewSrc}
             alt={artifact.label}
@@ -270,7 +270,7 @@ function ArtifactTile({
         </div>
       ) : null}
       <div className="space-y-1 p-3">
-        <div className="flex items-center gap-2 text-zinc-400">
+        <div className="flex items-center gap-2 text-[color:var(--wb-muted)]">
           {artifact.kind === 'image' ? (
             <ImageIcon size={14} />
           ) : artifact.kind === 'link' ? (
@@ -282,10 +282,10 @@ function ArtifactTile({
             {artifact.sourceLabel}
           </span>
         </div>
-        <p className="line-clamp-2 text-sm font-medium text-white [overflow-wrap:anywhere]">
+        <p className="line-clamp-2 text-sm font-medium text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
           {artifact.label}
         </p>
-        <p className="line-clamp-2 text-[11px] leading-5 text-zinc-500 [overflow-wrap:anywhere]">
+        <p className="line-clamp-2 text-[11px] leading-5 text-[color:var(--wb-muted)] [overflow-wrap:anywhere]">
           {artifact.value}
         </p>
       </div>
@@ -313,11 +313,11 @@ function OutputPreviewStrip({
   if (artifacts.length === 0) {
     return (
       <div>
-        <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+        <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
           <ImageIcon size={14} className="text-accent-300" />
           <span>{title}</span>
         </div>
-        <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 px-4 py-5 text-sm text-zinc-500">
+        <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
           {emptyMessage}
         </div>
       </div>
@@ -326,7 +326,7 @@ function OutputPreviewStrip({
 
   return (
     <div>
-      <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+      <div className="mb-3 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
         <ImageIcon size={14} className="text-accent-300" />
         <span>{title}</span>
       </div>
@@ -336,7 +336,7 @@ function OutputPreviewStrip({
         ))}
       </div>
       {artifacts.length === 0 ? (
-        <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 px-4 py-5 text-sm text-zinc-500">
+        <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
           {emptyMessage}
         </div>
       ) : null}
@@ -353,7 +353,7 @@ function ArtifactGallery({
 }) {
   if (artifacts.length === 0) {
     return (
-      <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 px-4 py-5 text-sm text-zinc-500">
+      <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-5 text-sm text-[color:var(--wb-muted)]">
         {emptyMessage}
       </div>
     );
@@ -376,12 +376,12 @@ function FactGrid({ facts }: { facts: JobInspectorTimelineItem['facts'] }) {
       {facts.map((fact) => (
         <div
           key={`${fact.label}-${fact.value}`}
-          className="min-w-0 rounded-2xl border border-white/2 bg-black/25 px-3 py-2.5"
+          className="min-w-0 rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2.5"
         >
-          <dt className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+          <dt className="text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
             {fact.label}
           </dt>
-          <dd className="mt-1 text-[13px] leading-5 text-zinc-200 [overflow-wrap:anywhere]">
+          <dd className="mt-1 text-[13px] leading-5 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
             {fact.value}
           </dd>
         </div>
@@ -397,28 +397,28 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
 
   return (
     <SectionCard title="Runtime summary" eyebrow="Metrics" icon={<Clock3 size={16} />}>
-      <p className="mb-2 text-xs text-zinc-400">
+      <p className="mb-2 text-xs text-[color:var(--wb-muted)]">
         Attempt {metrics.attempt ?? 'unknown'} ·{' '}
         {metrics.transport ?? 'Execution transport unavailable'}. Stages describe the latest worker
         execution. Elapsed time includes this attempt's queue and interruptions.
       </p>
       <div className="grid gap-2 sm:grid-cols-2">
-        <div className="rounded-2xl border border-white/2 bg-black/25 p-3.5">
-          <div className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+        <div className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3.5">
+          <div className="text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
             Attempt elapsed
           </div>
-          <div className="mt-1.5 font-mono text-xl font-semibold text-white">
+          <div className="mt-1.5 font-mono text-xl font-semibold text-[color:var(--wb-ink)]">
             {formatDuration(findTiming(metrics.timings, 'total'))}
           </div>
         </div>
-        <div className="rounded-2xl border border-white/2 bg-black/25 p-3.5">
-          <div className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+        <div className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3.5">
+          <div className="text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
             Tokens spent
           </div>
           <div className="mt-1.5 font-mono text-xl font-semibold text-accent-200">
             {formatTokenCount(metrics.tokenUsage?.totalTokens)}
           </div>
-          <div className="mt-1 text-[11px] text-zinc-500">
+          <div className="mt-1 text-[11px] text-[color:var(--wb-muted)]">
             in {formatTokenCount(metrics.tokenUsage?.inputTokens)} · out{' '}
             {formatTokenCount(metrics.tokenUsage?.outputTokens)}
           </div>
@@ -431,11 +431,11 @@ function TaskMetricSummary({ metrics }: { metrics: JobDetailResponse['metrics'] 
           ['Latest provider execution', formatDuration(providerMs)],
           ['Latest asset import', formatDuration(assetImportMs)],
         ].map(([label, value]) => (
-          <div key={label} className="rounded-2xl border border-white/2 bg-black/25 px-3 py-2.5">
-            <div className="text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+          <div key={label} className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-2.5">
+            <div className="text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
               {label}
             </div>
-            <div className="mt-1 font-mono text-[13px] font-semibold text-white">{value}</div>
+            <div className="mt-1 font-mono text-[13px] font-semibold text-[color:var(--wb-ink)]">{value}</div>
           </div>
         ))}
       </div>
@@ -454,7 +454,7 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
     <article
       className={cn(
         'rounded-[20px] border p-3 transition-colors',
-        isExpanded ? 'border-white/2 bg-white/[0.055]' : toneForTimeline(item),
+        isExpanded ? 'border-[color:var(--wb-line)] bg-white/[0.055]' : toneForTimeline(item),
       )}
     >
       <button
@@ -463,28 +463,28 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
         aria-expanded={isExpanded}
         className="flex w-full items-start gap-3 text-left cursor-pointer"
       >
-        <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-white/2 bg-black/25 text-zinc-100">
+        <div className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-ink)]">
           <TimelineIcon item={item} />
         </div>
 
         <div className="min-w-0 flex-1 space-y-1">
           <div className="flex flex-wrap items-center gap-2">
-            <h4 className="text-[14px] font-semibold leading-5 text-white [overflow-wrap:anywhere]">
+            <h4 className="text-[14px] font-semibold leading-5 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
               {item.title}
             </h4>
-            <span className="rounded-full border border-white/2 bg-black/25 px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-400">
+            <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
               {item.sourceType === 'transcript' ? 'Transcript' : 'Event'}
             </span>
-            <span className="rounded-full border border-white/2 bg-black/25 px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-500">
+            <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-0.5 text-[9px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
               {formatTimestamp(item.timestamp)}
             </span>
           </div>
 
-          <p className="max-w-4xl text-[12px] leading-5 text-zinc-400 [overflow-wrap:anywhere]">
+          <p className="max-w-4xl text-[12px] leading-5 text-[color:var(--wb-muted)] [overflow-wrap:anywhere]">
             {truncateHeadline(previewText, 180)}
           </p>
 
-          <div className="flex flex-wrap items-center gap-2 text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
+          <div className="flex flex-wrap items-center gap-2 text-[9px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
             <span>{item.facts.length} facts</span>
             <span>•</span>
             <span>{item.artifacts.length} refs</span>
@@ -497,19 +497,19 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
           </div>
         </div>
 
-        <div className="mt-1 shrink-0 rounded-full border border-white/2 bg-black/20 px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.18em] text-zinc-400 transition-colors hover:border-white/2 hover:text-white">
+        <div className="mt-1 shrink-0 rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[9px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)] transition-colors hover:border-[color:var(--wb-border)] hover:text-[color:var(--wb-ink)]">
           {isExpanded ? 'Hide' : 'Open'}
         </div>
       </button>
 
       {isExpanded ? (
-        <div className="mt-3 space-y-3 border-t border-white/2 pt-3">
+        <div className="mt-3 space-y-3 border-t border-[color:var(--wb-line)] pt-3">
           <RenderTextBlocks blocks={item.blocks} />
           <FactGrid facts={item.facts} />
 
           {item.artifacts.length > 0 ? (
             <div>
-              <div className="mb-2 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+              <div className="mb-2 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
                 Attachments and outputs
               </div>
               <ArtifactGallery
@@ -520,11 +520,11 @@ function TimelineItemCard({ item }: { item: JobInspectorTimelineItem }) {
           ) : null}
 
           {item.rawJson && item.tone !== 'reasoning' && item.tone !== 'message' ? (
-            <details className="rounded-2xl border border-white/2 bg-black/25 p-3">
-              <summary className="cursor-pointer text-[10px] font-black uppercase tracking-[0.18em] text-zinc-400">
+            <details className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3">
+              <summary className="cursor-pointer text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
                 {item.tone === 'tool' ? 'Tool call payload' : 'Event payload'}
               </summary>
-              <pre className="custom-scrollbar mt-3 max-h-72 overflow-auto rounded-2xl border border-white/2 bg-black/40 p-3 text-[11px] leading-6 text-zinc-300">
+              <pre className="custom-scrollbar mt-3 max-h-72 overflow-auto rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 text-[11px] leading-6 text-[color:var(--wb-ink)]">
                 {item.rawJson}
               </pre>
             </details>
@@ -611,8 +611,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
   ] as const;
 
   return (
-    <section className="overflow-hidden rounded-[28px] border border-white/2 bg-zinc-950 shadow-[0_28px_90px_rgba(0,0,0,0.45)]">
-      <div className="border-b border-white/2 px-5 py-4 sm:px-6">
+    <section className="overflow-hidden rounded-[28px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_28px_90px_rgba(0,0,0,0.45)]">
+      <div className="border-b border-[color:var(--wb-line)] px-5 py-4 sm:px-6">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="min-w-0">
             <div className="mb-3 flex flex-wrap items-center gap-2">
@@ -624,22 +624,22 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               >
                 {detail.job.status}
               </span>
-              <span className="rounded-full border border-white/2 bg-black/25 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-300">
+              <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
                 {detail.job.kind.replace(/_/g, ' ')}
               </span>
-              <span className="rounded-full border border-white/2 bg-black/25 px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-500">
+              <span className="rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
                 {detail.job.providerId ?? 'provider unknown'}
               </span>
             </div>
 
-            <p className="text-[10px] font-black uppercase tracking-[0.22em] text-zinc-500">
+            <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
               Job inspector
             </p>
-            <h2 className="mt-2 max-w-5xl text-[21px] font-semibold leading-tight text-white">
+            <h2 className="mt-2 max-w-5xl text-[21px] font-semibold leading-tight text-[color:var(--wb-ink)]">
               {truncateHeadline(titlePrompt)}
             </h2>
             {detail.attempts?.length ? (
-              <details className="mt-2 text-xs text-zinc-400">
+              <details className="mt-2 text-xs text-[color:var(--wb-muted)]">
                 <summary className="cursor-pointer">
                   Previous attempts ({detail.attempts.length})
                 </summary>
@@ -654,15 +654,15 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                 ))}
               </details>
             ) : null}
-            <p className="mt-2 text-sm text-zinc-400">
+            <p className="mt-2 text-sm text-[color:var(--wb-muted)]">
               Accepted execution:{' '}
               {detail.job.execution?.providerOptions?.codex
                 ? describeCodexExecution(detail.job.execution.providerOptions.codex)
                 : `${detail.job.providerId ?? 'Provider unavailable'} · transport not recorded`}
             </p>
-            <details className="mt-3 text-xs text-zinc-400">
+            <details className="mt-3 text-xs text-[color:var(--wb-muted)]">
               <summary className="cursor-pointer">Execution details</summary>
-              <div className="mt-3 flex flex-wrap items-center gap-3 text-[11px] text-zinc-500">
+              <div className="mt-3 flex flex-wrap items-center gap-3 text-[11px] text-[color:var(--wb-muted)]">
                 <span className="font-mono [overflow-wrap:anywhere]">{detail.job.id}</span>
                 <span>
                   {detail.job.attemptQueuedAt
@@ -692,7 +692,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               <button
                 type="button"
                 onClick={() => onRetryJob(detail.job.id)}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-accent-500/2 bg-black/25 px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-accent-100 transition-colors hover:border-accent-400/2 hover:bg-black/35 hover:text-white cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border border-accent-500/2 bg-[color:var(--wb-well)] px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-accent-100 transition-colors hover:border-accent-400/2 hover:bg-[color:var(--wb-well)] hover:text-[color:var(--wb-ink)] cursor-pointer"
               >
                 <RotateCcw size={14} />
                 <span>{canResumeStudioJob(detail.job) ? 'Resume job' : 'Retry job'}</span>
@@ -701,7 +701,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             <button
               type="button"
               onClick={onClearSelectedJob}
-              className="shrink-0 rounded-2xl border border-white/2 bg-black/25 px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-zinc-300 transition-colors hover:border-white/2 hover:bg-white/10 hover:text-white cursor-pointer"
+              className="shrink-0 rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-2.5 text-[10px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
             >
               Back to activity
             </button>
@@ -719,9 +719,9 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
         >
           <JobStatusBanner detail={detail} hasReadableAssistantReply={hasReadableAssistantReply} />
 
-          <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
-            <div className="flex items-center justify-between border-b border-white/2 px-4 py-3">
-              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+          <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
+            <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-4 py-3">
+              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
                 <ImageIcon size={14} className="text-emerald-400" />
                 <span>Returned image</span>
               </div>
@@ -735,30 +735,30 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               </span>
             </div>
 
-            <div className="bg-black/35">
+            <div className="bg-[color:var(--wb-well)]">
               {primaryOutput?.previewSrc || primaryOutput?.href ? (
                 <img
                   src={primaryOutput.previewSrc ?? primaryOutput?.href ?? ''}
                   alt={outputName}
                   width={1024}
                   height={1024}
-                  className="h-[320px] w-full object-contain bg-zinc-950"
+                  className="h-[320px] w-full object-contain bg-[color:var(--wb-panel)]"
                   loading="lazy"
                   decoding="async"
                 />
               ) : (
-                <div className="flex h-[320px] items-center justify-center text-sm text-zinc-500">
+                <div className="flex h-[320px] items-center justify-center text-sm text-[color:var(--wb-muted)]">
                   No returned image available.
                 </div>
               )}
             </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/2 px-4 py-3">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[color:var(--wb-line)] px-4 py-3">
               <div className="min-w-0">
-                <p className="truncate text-xs font-semibold uppercase tracking-wide text-zinc-200">
+                <p className="truncate text-xs font-semibold uppercase tracking-wide text-[color:var(--wb-ink)]">
                   {outputName}
                 </p>
-                <p className="mt-1 text-[11px] text-zinc-500">
+                <p className="mt-1 text-[11px] text-[color:var(--wb-muted)]">
                   {outputMeta.length > 0 ? outputMeta.join(' · ') : 'No output metadata available'}
                 </p>
               </div>
@@ -767,7 +767,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                   href={primaryOutput.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-lg border border-white/2 bg-white/5 px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-300 transition-colors hover:border-white/2 hover:text-white"
+                  className="rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:text-[color:var(--wb-ink)]"
                 >
                   Open image
                 </a>
@@ -776,8 +776,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </section>
 
           {primaryReference && (
-            <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
-              <div className="flex items-center gap-2 border-b border-white/2 px-4 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+            <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
+              <div className="flex items-center gap-2 border-b border-[color:var(--wb-line)] px-4 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
                 <Layers3 size={14} className="text-indigo-300" />
                 <span>Reference context</span>
               </div>
@@ -789,32 +789,32 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                     alt={primaryReference.label}
                     width={512}
                     height={512}
-                    className="h-[214px] w-full rounded-xl border border-white/2 object-cover"
+                    className="h-[214px] w-full rounded-xl border border-[color:var(--wb-line)] object-cover"
                     loading="lazy"
                     decoding="async"
                   />
                 ) : (
-                  <div className="flex h-[214px] items-center justify-center rounded-xl border border-dashed border-white/2 text-sm text-zinc-500">
+                  <div className="flex h-[214px] items-center justify-center rounded-xl border border-dashed border-[color:var(--wb-line)] text-sm text-[color:var(--wb-muted)]">
                     No reference image.
                   </div>
                 )}
               </div>
 
-              <div className="border-t border-white/2 px-4 py-3 space-y-2">
-                <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-zinc-300">
+              <div className="border-t border-[color:var(--wb-line)] px-4 py-3 space-y-2">
+                <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-[color:var(--wb-ink)]">
                   {primaryReference?.label ?? 'Reference unavailable'}
                 </p>
-                <div className="flex items-center justify-between text-[11px] text-zinc-400">
-                  <span className="uppercase tracking-[0.16em] text-zinc-500 text-[9px] font-black">
+                <div className="flex items-center justify-between text-[11px] text-[color:var(--wb-muted)]">
+                  <span className="uppercase tracking-[0.16em] text-[color:var(--wb-muted)] text-[9px] font-black">
                     Reference strength
                   </span>
-                  <span className="font-mono text-zinc-200">
+                  <span className="font-mono text-[color:var(--wb-ink)]">
                     {referenceSourceSpec?.strength != null
                       ? referenceSourceSpec.strength.toFixed(2)
                       : '—'}
                   </span>
                 </div>
-                <div className="h-1.5 rounded-full bg-white/10">
+                <div className="h-1.5 rounded-full bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]">
                   <div
                     className="h-full rounded-full bg-indigo-300"
                     style={{
@@ -825,7 +825,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
 
                 {additionalReferences.length > 0 ? (
                   <div className="space-y-2 pt-1">
-                    <p className="text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                    <p className="text-[9px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
                       More references ({additionalReferences.length})
                     </p>
                     <div className="custom-scrollbar flex gap-2 overflow-x-auto pb-1">
@@ -839,7 +839,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                             rel="noreferrer"
                             className="block size-16 shrink-0"
                           >
-                            <div className="size-16 overflow-hidden rounded-lg border border-white/2 bg-black/30">
+                            <div className="size-16 overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)]">
                               {preview ? (
                                 <img
                                   src={preview}
@@ -851,7 +851,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                                   decoding="async"
                                 />
                               ) : (
-                                <div className="flex h-full w-full items-center justify-center text-[9px] text-zinc-500">
+                                <div className="flex h-full w-full items-center justify-center text-[9px] text-[color:var(--wb-muted)]">
                                   N/A
                                 </div>
                               )}
@@ -867,43 +867,43 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           )}
         </div>
 
-        <section className="rounded-2xl border border-white/2 bg-zinc-900/80 overflow-hidden">
-          <div className="flex items-center justify-between border-b border-white/2 px-4 py-3">
-            <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+        <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] overflow-hidden">
+          <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-4 py-3">
+            <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
               <FileText size={14} className="text-violet-300" />
               <span>Prompt used</span>
             </div>
           </div>
           <div className="p-4">
             {model.prompt.blocks.length > 0 ? (
-              <p className="whitespace-pre-wrap text-[14px] leading-7 text-zinc-200">
+              <p className="whitespace-pre-wrap text-[14px] leading-7 text-[color:var(--wb-ink)]">
                 “{model.prompt.blocks.map((block) => block.text).join('\n\n')}”
               </p>
             ) : (
-              <p className="text-sm text-zinc-500">No prompt text captured for this job.</p>
+              <p className="text-sm text-[color:var(--wb-muted)]">No prompt text captured for this job.</p>
             )}
           </div>
         </section>
 
-        <details className="rounded-2xl border border-white/10 p-4">
+        <details className="rounded-2xl border border-[color:var(--wb-border)] p-4">
           <summary className="cursor-pointer text-sm">Execution details and metrics</summary>{' '}
           <div className="grid gap-4 xl:grid-cols-3">
-            <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4">
+            <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4">
               <TaskMetricSummary metrics={detail.metrics} />
             </section>
 
-            <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4 space-y-3">
-              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+            <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 space-y-3">
+              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
                 <BrainCircuit size={14} className="text-emerald-300" />
                 <span>Execution facts</span>
               </div>
               <dl className="space-y-2.5">
                 {executionItems.map(([label, value]) => (
                   <div key={label} className="flex items-start justify-between gap-3">
-                    <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                    <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
                       {label}
                     </dt>
-                    <dd className="text-right text-[12px] leading-5 text-zinc-200 [overflow-wrap:anywhere]">
+                    <dd className="text-right text-[12px] leading-5 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
                       {value}
                     </dd>
                   </div>
@@ -911,18 +911,18 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               </dl>
             </section>
 
-            <section className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4 space-y-3">
-              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-zinc-200">
+            <section className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 space-y-3">
+              <div className="flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
                 <Layers3 size={14} className="text-amber-300" />
                 <span>Job snapshot</span>
               </div>
               <dl className="space-y-2.5">
                 {snapshotItems.map(([label, value]) => (
                   <div key={label} className="flex items-start justify-between gap-3">
-                    <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                    <dt className="text-[10px] font-black uppercase tracking-[0.16em] text-[color:var(--wb-muted)]">
                       {label}
                     </dt>
-                    <dd className="text-right text-[12px] leading-5 text-zinc-200 [overflow-wrap:anywhere]">
+                    <dd className="text-right text-[12px] leading-5 text-[color:var(--wb-ink)] [overflow-wrap:anywhere]">
                       {value}
                     </dd>
                   </div>
@@ -932,15 +932,15 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
           </div>
         </details>
 
-        <details className="rounded-2xl border border-white/2 bg-zinc-900/80 p-4">
-          <summary className="cursor-pointer text-[11px] font-black uppercase tracking-[0.18em] text-zinc-300">
+        <details className="rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4">
+          <summary className="cursor-pointer text-[11px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-ink)]">
             Activity timeline ({model.timeline.length})
           </summary>
           <div className="mt-4 space-y-3">
             {model.timeline.length > 0 ? (
               model.timeline.map((item) => <TimelineItemCard key={item.id} item={item} />)
             ) : (
-              <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 px-4 py-6 text-sm text-zinc-500">
+              <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-4 py-6 text-sm text-[color:var(--wb-muted)]">
                 No transcript or event history was recorded for this job.
               </div>
             )}

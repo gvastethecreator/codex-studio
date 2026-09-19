@@ -58,6 +58,8 @@ export function readStyleTabIdFromHash(
     .split(/[?#]/)[0]
     .replace(/\/$/, '');
 
+  if (!segment) return null;
+
   return normalizeStyleTabId(segment, options);
 }
 

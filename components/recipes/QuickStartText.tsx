@@ -12,8 +12,8 @@ interface QuickStartTextProps {
 export const QuickStartText: React.FC<QuickStartTextProps> = ({
   title,
   subtitle,
-  toneClassName = 'text-zinc-500 group-hover:text-white',
-  subtitleClassName = 'text-zinc-700',
+  toneClassName = 'text-[color:var(--wb-muted)] group-hover:text-[color:var(--wb-ink)]',
+  subtitleClassName = 'text-[color:var(--wb-dim)]',
   maxTitleFontSize = 24,
 }) => {
   const titleFit = usePretextFitText({

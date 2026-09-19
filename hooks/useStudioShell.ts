@@ -798,6 +798,7 @@ export function useStudioShell(): StudioShellController {
           activeRecipe: recipe.activeRecipe,
           activeRecipeAliasId: route.activeRecipeAliasId,
           onCloseRecipe: handleCloseRecipe,
+          onSelectRecipe: handleRecipeSelection,
           usage: studioRuntime.status.diagnostics.usage,
         },
         workspace: {
@@ -849,6 +850,7 @@ export function useStudioShell(): StudioShellController {
       recipe.activeRecipe,
       route.activeRecipeAliasId,
       handleCloseRecipe,
+      handleRecipeSelection,
       studioRuntime.status.diagnostics.usage,
       workspacesWithThumbs,
       activeWorkspaceId,

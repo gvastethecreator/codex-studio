@@ -70,7 +70,6 @@ describe('CreateWorkspace', () => {
     const { container } = render(
       <CreateWorkspace
         recipePageProps={recipePageProps}
-        onSelectRecipe={vi.fn()}
         hasGenerationDock
         GenerationDock={GenerationDock}
         generationDockProps={generationDockProps}
@@ -83,9 +82,37 @@ describe('CreateWorkspace', () => {
     expect(screen.getByRole('region', { name: 'Create canvas' })).toBeTruthy();
     expect(screen.getByRole('region', { name: 'Result preview' })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'View result 1' })).toBeTruthy();
-    expect(screen.getByRole('button', { name: 'Workflow: Default' })).toBeTruthy();
+    expect(screen.queryByRole('button', { name: 'Workflow: Default' })).toBeNull();
     expect(screen.getByTestId('generation-dock').getAttribute('data-generation-dock-layout')).toBe(
       'rail',
     );
+  });
+
+  it('keeps recipe tools on the left and results with a carousel on the right', () => {
+    const { container } = render(
+      <CreateWorkspace
+        recipePageProps={recipePageProps}
+        hasGenerationDock
+        GenerationDock={GenerationDock}
+        generationDockProps={generationDockProps}
+        routeKey="recipe-camera"
+        tools={<div data-testid="recipe-tools">Camera tools</div>}
+      />,
+    );
+
+    const workspace = container.querySelector('.create-workspace');
+    const toolsRail = screen.getByRole('complementary', { name: 'Create tools' });
+    const stage = screen.getByRole('region', { name: 'Create canvas' });
+    const recipeTools = screen.getByTestId('recipe-tools');
+    const generate = screen.getByTestId('generation-dock');
+
+    expect(workspace?.getAttribute('data-route-key')).toBe('recipe-camera');
+    expect(toolsRail.contains(recipeTools)).toBe(true);
+    expect(toolsRail.contains(generate)).toBe(true);
+    expect(stage.contains(screen.getByRole('region', { name: 'Result preview' }))).toBe(true);
+    expect(
+      recipeTools.compareDocumentPosition(stage) & Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy();
+    expect(toolsRail.className).toContain('workbench-config');
   });
 });

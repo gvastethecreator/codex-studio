@@ -86,6 +86,17 @@ describe('composerProviderProjection', () => {
       'gpt-image-2.5-sunburst',
       'gpt-image-2',
     ]);
+    expect(projection.execution.showImageSizeControl).toBe(true);
+    expect(projection.execution.imageSizeOptions.map((option) => option.tier)).toEqual([
+      '1K',
+      '2K',
+      '4K',
+    ]);
+    expect(projection.execution.selectedImageSize).toMatchObject({
+      tier: '1K',
+      size: '1536x864',
+    });
+    expect(projection.execution.summary).toContain('1K');
     expect(projection.execution.reasoningOptions).toEqual(['provider_default']);
     expect(projection.execution.speedOptions).toEqual(['standard']);
     expect(projection.execution.availableTransports).toEqual([
@@ -117,6 +128,8 @@ describe('composerProviderProjection', () => {
     expect(appProjection.generateBlock).toBeNull();
     expect(appProjection.execution.selectedModel?.id).toBe('gpt-5.6-luna');
     expect(appProjection.execution.summary).toContain('MAX');
+    expect(appProjection.execution.showImageSizeControl).toBe(false);
+    expect(appProjection.execution.imageSizeOptions).toEqual([]);
 
     expect(
       buildComposerProviderProjection({ ...input, codexAvailableTransports: ['codex_app_server'] })

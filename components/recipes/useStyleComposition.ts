@@ -221,6 +221,18 @@ export function useStyleComposition({
     setSelectedStyles((current) => current.filter((slot) => slot.preset.id !== presetId));
   }, []);
 
+  const moveSelectedStyle = useCallback((presetId: string, direction: -1 | 1) => {
+    setSelectedStyles((current) => {
+      const index = current.findIndex((slot) => slot.preset.id === presetId);
+      const nextIndex = index + direction;
+      if (index < 0 || nextIndex < 0 || nextIndex >= current.length) return current;
+      const next = [...current];
+      const [moved] = next.splice(index, 1);
+      next.splice(nextIndex, 0, moved);
+      return next;
+    });
+  }, []);
+
   const handleGenerateSelectedStyles = useCallback(() => {
     const diversityPrompts = [
       'Introduce a noticeably different camera distance and framing from previous renders.',
@@ -299,6 +311,7 @@ export function useStyleComposition({
     updateSelectedStyleFieldWeight,
     setSelectedStyleAvoidRulesMode,
     removeSelectedStyle,
+    moveSelectedStyle,
     handleGenerateSelectedStyles,
   };
 }

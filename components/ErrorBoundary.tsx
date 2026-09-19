@@ -32,12 +32,12 @@ export class ErrorBoundary extends Component<Props, State> {
   public override render() {
     if (this.state.hasError) {
       return (
-        <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-zinc-950/50 border border-red-500/20 rounded-2xl">
+        <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-[color:var(--wb-panel)]/50 border border-red-500/20 rounded-2xl">
           <AlertTriangle size={48} className="text-red-500 mb-4" />
-          <h2 className="text-lg font-black text-zinc-200 uppercase tracking-widest mb-2">
+          <h2 className="text-lg font-black text-[color:var(--wb-ink)] uppercase tracking-widest mb-2">
             System Error
           </h2>
-          <p className="text-xs text-zinc-500 text-center max-w-md">
+          <p className="text-xs text-[color:var(--wb-muted)] text-center max-w-md">
             {this.props.fallbackMessage ||
               'A critical error occurred while rendering this component. Review the session logs or devtools output for details.'}
           </p>

@@ -137,13 +137,13 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
       <button
         type="button"
         aria-label="Close Codex chat"
-        className="absolute inset-0 h-full w-full bg-black/70 backdrop-blur-sm"
+        className="absolute inset-0 h-full w-full studio-scrim backdrop-blur-sm"
         onClick={onClose}
       />
 
-      <section className="absolute inset-x-3 bottom-3 top-3 mx-auto flex max-w-5xl overflow-hidden rounded-[28px] border border-white/2 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.7)] sm:inset-x-6 sm:bottom-6 sm:top-6">
+      <section className="studio-dialog absolute inset-x-3 bottom-3 top-3 mx-auto flex max-w-5xl overflow-hidden sm:inset-x-6 sm:bottom-6 sm:top-6">
         <div className="flex min-w-0 flex-1 flex-col">
-          <header className="flex items-center justify-between border-b border-white/2 px-5 py-4 sm:px-6">
+          <header className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-5 py-4 sm:px-6">
             <div className="flex min-w-0 items-center gap-3">
               <div className="grid size-10 shrink-0 place-items-center rounded-2xl border border-accent-500/2 bg-accent-500/10 text-accent-300">
                 <MessageSquare size={18} />
@@ -151,11 +151,11 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
               <div className="min-w-0">
                 <h2
                   id="studio-chat-panel-title"
-                  className="truncate text-lg font-semibold text-white"
+                  className="truncate text-lg font-semibold text-[color:var(--wb-ink)]"
                 >
                   Codex Chat
                 </h2>
-                <p className="mt-0.5 text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500">
+                <p className="mt-0.5 text-[10px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
                   {activeCount > 0
                     ? `${activeCount} live job${activeCount === 1 ? '' : 's'}`
                     : 'Idle'}
@@ -165,7 +165,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="rounded-full border border-white/2 bg-white/5 p-2.5 text-zinc-300 transition-colors hover:border-white/2 hover:bg-white/10 hover:text-white"
+              className="rounded-full border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2.5 text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
               aria-label="Close Codex chat"
             >
               <X size={18} />
@@ -197,12 +197,12 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                         className={cn(
                           'max-w-[min(680px,88%)] rounded-2xl border px-4 py-3',
                           message.role === 'user'
-                            ? 'border-white/2 bg-white/10 text-white'
-                            : 'border-white/2 bg-black/30 text-zinc-300',
+                            ? 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
+                            : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-ink)]',
                         )}
                       >
                         <p className="whitespace-pre-wrap text-sm leading-6">{message.text}</p>
-                        <div className="mt-2 text-[9px] font-bold uppercase tracking-wider text-zinc-600">
+                        <div className="mt-2 text-[9px] font-bold uppercase tracking-wider text-[color:var(--wb-dim)]">
                           {formatTime(message.createdAt)}
                         </div>
                       </div>
@@ -211,8 +211,8 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                 })}
               </div>
 
-              <div className="border-t border-white/2 p-4 sm:p-5">
-                <div className="flex min-h-14 items-end gap-2 rounded-2xl border border-white/2 bg-black/30 p-2">
+              <div className="border-t border-[color:var(--wb-line)] p-4 sm:p-5">
+                <div className="flex min-h-14 items-end gap-2 rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2">
                   <textarea
                     ref={textareaRef}
                     value={prompt}
@@ -226,13 +226,13 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     rows={2}
                     placeholder="Describe the image..."
                     aria-label="Codex chat prompt"
-                    className="custom-scrollbar max-h-40 min-h-10 flex-1 resize-none bg-transparent px-2 py-2 text-sm leading-6 text-zinc-100 outline-none placeholder:text-zinc-700"
+                    className="custom-scrollbar max-h-40 min-h-10 flex-1 resize-none bg-transparent px-2 py-2 text-sm leading-6 text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-dim)]"
                   />
                   <button
                     type="button"
                     onClick={submit}
                     disabled={!prompt.trim()}
-                    className="grid size-11 shrink-0 place-items-center rounded-2xl border border-accent-500/2 bg-accent-600 text-white transition-colors hover:bg-accent-500 disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
+                    className="grid size-11 shrink-0 place-items-center rounded-2xl border border-accent-500/2 bg-accent-600 text-[color:var(--wb-ink)] transition-colors hover:bg-accent-500 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
                     aria-label="Send generation prompt"
                   >
                     {isGenerating ? (
@@ -245,9 +245,9 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
               </div>
             </main>
 
-            <aside className="hidden min-h-0 flex-col border-l border-white/2 bg-black/20 xl:flex">
-              <div className="border-b border-white/2 px-4 py-3">
-                <div className="text-[9px] font-black uppercase tracking-[0.2em] text-zinc-500">
+            <aside className="hidden min-h-0 flex-col border-l border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:flex">
+              <div className="border-b border-[color:var(--wb-line)] px-4 py-3">
+                <div className="text-[9px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
                   Live jobs
                 </div>
               </div>
@@ -258,7 +258,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                     return (
                       <div
                         key={job.id}
-                        className="rounded-2xl border border-white/2 bg-white/[0.03] p-3"
+                        className="rounded-2xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3"
                       >
                         <div className="flex items-center justify-between gap-2">
                           <span
@@ -273,35 +273,35 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
                             />
                             {job.status}
                           </span>
-                          <span className="text-[9px] text-zinc-600">#{job.id.slice(0, 8)}</span>
+                          <span className="text-[9px] text-[color:var(--wb-dim)]">#{job.id.slice(0, 8)}</span>
                         </div>
-                        <p className="mt-2 line-clamp-3 text-[11px] leading-5 text-zinc-300">
+                        <p className="mt-2 line-clamp-3 text-[11px] leading-5 text-[color:var(--wb-ink)]">
                           {job.originalPrompt}
                         </p>
                       </div>
                     );
                   })
                 ) : (
-                  <div className="rounded-2xl border border-dashed border-white/2 bg-black/20 p-4 text-xs text-zinc-600">
+                  <div className="rounded-2xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-4 text-xs text-[color:var(--wb-dim)]">
                     No jobs yet.
                   </div>
                 )}
               </div>
-              <div className="border-t border-white/2 p-3">
-                <div className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-zinc-500">
+              <div className="border-t border-[color:var(--wb-line)] p-3">
+                <div className="mb-2 text-[9px] font-black uppercase tracking-[0.2em] text-[color:var(--wb-muted)]">
                   Recent logs
                 </div>
                 <div className="space-y-1.5">
                   {latestLogs.length > 0 ? (
                     latestLogs.map((log) => (
-                      <div key={log.id} className="rounded-xl bg-white/[0.03] px-3 py-2">
-                        <div className="line-clamp-2 text-[10px] leading-4 text-zinc-500">
+                      <div key={log.id} className="rounded-xl bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-3 py-2">
+                        <div className="line-clamp-2 text-[10px] leading-4 text-[color:var(--wb-muted)]">
                           {log.message}
                         </div>
                       </div>
                     ))
                   ) : (
-                    <div className="text-[10px] text-zinc-700">No logs yet.</div>
+                    <div className="text-[10px] text-[color:var(--wb-dim)]">No logs yet.</div>
                   )}
                 </div>
               </div>

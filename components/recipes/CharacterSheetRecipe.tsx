@@ -92,7 +92,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           onSelect={(v) => setParams((p) => ({ ...p, layout: v }))}
           activeColor="indigo"
         />
-        <div className="w-px h-8 bg-white/10 mx-1 hidden sm:block" />
+        <div className="w-px h-8 bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-1 hidden sm:block" />
         <ControlDropdown
           title="Framing"
           icon={<Camera size={14} />}
@@ -113,7 +113,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
               onSelect={(v) => setParams((p) => ({ ...p, focus: v }))}
               activeColor="indigo"
             />
-            <div className="w-px h-8 bg-white/10 mx-1 hidden sm:block" />
+            <div className="w-px h-8 bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-1 hidden sm:block" />
             <ControlDropdown
               title="Art Style"
               icon={<Palette size={14} />}
@@ -164,7 +164,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 type="button"
                 aria-label="Remove character reference"
                 onClick={() => updateConfig('attachments', [])}
-                className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white transition-[color,background-color,border-color,opacity,transform] opacity-0 group-hover:opacity-100 shadow-lg border border-red-500/30"
+                className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-[color:var(--wb-ink)] transition-[color,background-color,border-color,opacity,transform] opacity-0 group-hover:opacity-100 shadow-lg border border-red-500/30"
               >
                 <X size={14} />
               </button>
@@ -187,18 +187,18 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 accept="image/*"
               />
 
-              <div className="size-24 rounded-full bg-zinc-900 border border-white/2 flex items-center justify-center group-hover:scale-110 group-hover:border-indigo-500/2 transition-[border-color,transform] shadow-2xl relative z-10">
+              <div className="size-24 rounded-full bg-[color:var(--wb-panel)] border border-[color:var(--wb-line)] flex items-center justify-center group-hover:scale-110 group-hover:border-indigo-500/2 transition-[border-color,transform] shadow-2xl relative z-10">
                 <Brush
                   size={32}
-                  className="text-zinc-600 group-hover:text-indigo-400 transition-colors"
+                  className="text-[color:var(--wb-dim)] group-hover:text-indigo-400 transition-colors"
                 />
               </div>
               <div className="relative z-10 w-full">
                 <QuickStartText
                   title="Character Source"
                   subtitle="Upload reference or describe below"
-                  toneClassName="text-zinc-300 group-hover:text-white"
-                  subtitleClassName="text-zinc-500 group-hover:text-white"
+                  toneClassName="text-[color:var(--wb-ink)] group-hover:text-[color:var(--wb-ink)]"
+                  subtitleClassName="text-[color:var(--wb-muted)] group-hover:text-[color:var(--wb-ink)]"
                 />
               </div>
             </button>

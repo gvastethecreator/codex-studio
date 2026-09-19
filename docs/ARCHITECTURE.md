@@ -59,7 +59,7 @@ graph TD
 - `components/shell/StudioViewport.tsx` demand-loads route surfaces.
 - `hooks/useStyleRuntimePacks.ts` projects the Style Packs that the current browser intent needs. `components/recipes/stylesData.ts` owns the shared value or promise registry and retry boundary.
   Catalog search loads raw generated packs without forcing all thumbnails. Its surface owns loading, failure, and explicit retry; it reuses the search index while the effective pack set is unchanged. It does not retain rejected loader promises.
-- Styles separates three state owners: `useStyleBrowserNavigation` owns routes, filters and favorites; `useStyleComposition` owns selected layers and generation inputs; `useUserStyleLibrary` owns catalog reads and editor sessions. Draft preparation and the editor remain demand-loaded. Late mutation responses update catalog and selected layers only when their version is current, even after the editor closes.
+- Styles separates three state owners: `useStyleBrowserNavigation` owns routes, filters and favorites; `useStyleComposition` owns selected layers and generation inputs; `useUserStyleLibrary` owns catalog reads and editor sessions. The Styles recipe has two views: a compact selector in the Create tray as the primary selection surface, and a demand-mounted fullscreen catalog overlay for visual browsing. Draft preparation and the editor remain demand-loaded. Late mutation responses update catalog and selected layers only when their version is current, even after the editor closes.
   Clone and blend inputs pass through `prepareUserStyleEditorSession` and `createUserStyleInputFromDraft`; clone provenance preserves the preset display name.
 - `StudioViewport` keeps each lazy route component's identity stable after preloading. Switching to its loaded component during a later render would remount the route and discard an open editor or selection.
 - Settings covers the shell while keeping its header mounted. The modal can capture and restore the opening control; suppressing and unmounting that header discards the focus target before the modal opens.
@@ -169,9 +169,12 @@ Current concrete adapters:
   Studio's subscription HTTP adapter currently exposes `gpt-5.5`, GPT Image 2.5 Flare, GPT Image 2.5
   Sunburst, and GPT Image 2 when available, with medium quality,
   and provider-managed reasoning and speed. This is Studio's supported contract, not a claim
-  about every option offered by the public API. Exact 16:9 output stays 1536x864.
-  The public [image generation guide](https://developers.openai.com/api/docs/guides/image-generation)
-  defines the image size constraints; it does not prove subscription endpoint entitlement.
+  about every option offered by the public API. ChatGPT HTTP image jobs can request 1K, 2K, or
+  4K output. Exact 16:9 sizes are 1536x864, 2048x1152, and 3840x2160. Square 4K is 2880x2880
+  because the documented pixel budget cannot hold 3840x3840. The public
+  [image generation guide](https://developers.openai.com/api/docs/guides/image-generation)
+  defines those size constraints; it does not prove subscription endpoint entitlement.
+  Output above 2560x1440 is experimental on the GPT Image contract.
   An auth change revalidates the preview and never changes an accepted job's transport.
   HTTP persists a submission marker before its single POST. A lost acknowledgement or restart
   moves the job to review without a second POST or CLI fallback. Only confirmed rejection permits

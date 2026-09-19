@@ -49,6 +49,8 @@ describe('styleTabRouting', () => {
   });
 
   it('reads style route hashes and strips trailing slash/query fragments', () => {
+    expect(readStyleTabIdFromHash('#recipe-styles', routeOptions)).toBeNull();
+    expect(readStyleTabIdFromHash('#recipe-styles/', routeOptions)).toBeNull();
     expect(readStyleTabIdFromHash('#recipe-styles/pack_04?x=1', routeOptions)).toBe('pack_04');
     expect(
       readStyleTabIdFromHash('#recipe-styles/collection/analog_film_process/', routeOptions),

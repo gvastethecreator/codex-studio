@@ -40,7 +40,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
 }) => {
   if (selectedStyles.length === 0) {
     return (
-      <div className="rounded-[8px] border border-dashed border-white/2 bg-zinc-950/88 px-3 py-4 text-center text-[9px] font-black uppercase tracking-widest text-zinc-500 shadow-lg shadow-black/25">
+      <div className="rounded-[8px] border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-4 text-center text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)] shadow-lg shadow-black/25">
         Select styles first
       </div>
     );
@@ -49,13 +49,13 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
   return (
     <div
       data-style-advanced-controls
-      className="rounded-[8px] border border-white/2 bg-zinc-950/92 p-2 shadow-lg shadow-black/35"
+      className="rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-2 shadow-lg shadow-black/35"
     >
-      <div className="mb-2 flex items-center justify-between gap-2 border-b border-white/2 px-1 pb-2">
-        <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
+      <div className="mb-2 flex items-center justify-between gap-2 border-b border-[color:var(--wb-line)] px-1 pb-2">
+        <div className="text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
           Advanced Layers
         </div>
-        <div className="rounded-[5px] border border-white/2 bg-white/6 px-1.5 py-0.5 text-[8px] font-black uppercase tracking-widest text-zinc-500">
+        <div className="rounded-[5px] border border-[color:var(--wb-line)] bg-white/6 px-1.5 py-0.5 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
           {selectedStyles.length} active
         </div>
       </div>
@@ -69,16 +69,16 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
               key={slot.preset.id}
               className={`rounded-[7px] border p-2.5 transition-colors ${
                 enabled
-                  ? 'border-white/2 bg-zinc-900/84'
-                  : 'border-white/2 bg-zinc-900/52 text-zinc-500 opacity-75'
+                  ? 'border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/84'
+                  : 'border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/52 text-[color:var(--wb-muted)] opacity-75'
               }`}
             >
               <div className="mb-2 flex items-start justify-between gap-2">
                 <div className="min-w-0">
-                  <div className="truncate text-[8px] font-black uppercase tracking-widest text-zinc-500">
+                  <div className="truncate text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                     Slot {index + 1} / {slot.packName}
                   </div>
-                  <div className="truncate text-[10px] font-black uppercase tracking-tight text-white">
+                  <div className="truncate text-[10px] font-black uppercase tracking-tight text-[color:var(--wb-ink)]">
                     {presetName}
                   </div>
                 </div>
@@ -89,7 +89,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                   className={`flex h-7 shrink-0 items-center gap-1 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                     enabled
                       ? 'border-emerald-400/2 bg-emerald-500/14 text-emerald-100'
-                      : 'border-white/2 bg-white/7 text-zinc-500'
+                      : 'border-[color:var(--wb-line)] bg-white/7 text-[color:var(--wb-muted)]'
                   }`}
                 >
                   <Check size={11} />
@@ -108,7 +108,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                       className={`h-7 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                         active
                           ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
-                          : 'border-white/2 bg-white/[0.05] text-zinc-500 hover:text-zinc-300'
+                          : 'border-[color:var(--wb-line)] bg-white/[0.05] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'
                       }`}
                     >
                       {mode.label}
@@ -124,7 +124,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                   return (
                     <div
                       key={field.id}
-                      className="grid grid-cols-[4.9rem_minmax(0,1fr)] items-center gap-2 rounded-[6px] border border-white/2 bg-black/22 p-1.5"
+                      className="grid grid-cols-[4.9rem_minmax(0,1fr)] items-center gap-2 rounded-[6px] border border-[color:var(--wb-line)] bg-black/22 p-1.5"
                     >
                       <button
                         type="button"
@@ -132,8 +132,8 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                         aria-pressed={fieldEnabled}
                         className={`h-7 rounded-[6px] border px-2 text-left text-[8px] font-black uppercase tracking-widest transition-colors ${
                           fieldEnabled
-                            ? 'border-white/2 bg-white/10 text-zinc-100'
-                            : 'border-white/2 bg-white/[0.03] text-zinc-600'
+                            ? 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
+                            : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] text-[color:var(--wb-dim)]'
                         }`}
                       >
                         {field.label}
@@ -156,7 +156,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                           className="h-1 min-w-0 flex-1 accent-white disabled:opacity-30"
                           aria-label={`${field.label} weight ${presetName}`}
                         />
-                        <span className="w-7 text-right text-[8px] font-black tabular-nums text-zinc-400">
+                        <span className="w-7 text-right text-[8px] font-black tabular-nums text-[color:var(--wb-muted)]">
                           {formatStyleLayerFieldWeight(fieldState.weight)}
                         </span>
                       </div>

@@ -345,11 +345,11 @@ function CarouselBottomBar({
   onDelete,
 }: CarouselBottomBarProps) {
   return (
-    <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-white/2 bg-black/80 px-6 py-3 backdrop-blur-sm">
+    <BottomToolbar className="absolute bottom-0 left-0 right-0 z-50 flex w-full min-h-17 items-center border-t border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-6 py-3 backdrop-blur-sm">
       <div className="mx-auto flex w-full max-w-480 flex-col items-start justify-between gap-4 md:flex-row md:items-center">
         <details className="flex-1 min-w-0 w-full">
-          <summary className="cursor-pointer text-sm text-zinc-300">Image details</summary>
-          <p className="mt-3 whitespace-pre-wrap max-h-40 overflow-auto text-[12px] font-medium text-zinc-300 tracking-tight leading-relaxed">
+          <summary className="cursor-pointer text-sm text-[color:var(--wb-ink)]">Image details</summary>
+          <p className="mt-3 whitespace-pre-wrap max-h-40 overflow-auto text-[12px] font-medium text-[color:var(--wb-ink)] tracking-tight leading-relaxed">
             {currentImage.config.prompt}
           </p>
           <div className="flex gap-4 mt-2">
@@ -359,7 +359,7 @@ function CarouselBottomBar({
                 prompt: currentImage.config.prompt,
               })}
             </span>
-            <span className="text-[9px] font-black text-zinc-700 uppercase tracking-widest">
+            <span className="text-[9px] font-black text-[color:var(--wb-dim)] uppercase tracking-widest">
               {currentImage.config.aspectRatio} OUTPUT
             </span>
           </div>
@@ -384,7 +384,7 @@ function CarouselBottomBar({
                 onPointerDown={onCompareStart}
                 onPointerUp={onCompareEnd}
                 onPointerLeave={onCompareEnd}
-                className={`relative flex items-center justify-center rounded-lg p-2 outline-none transition-[background-color,color,box-shadow,transform] duration-300 group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-white shadow-lg' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
+                className={`relative flex items-center justify-center rounded-lg p-2 outline-none transition-[background-color,color,box-shadow,transform] duration-300 group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-[color:var(--wb-ink)] shadow-lg' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'}`}
                 title="Hold to Compare with Original"
               >
                 <SplitSquareHorizontal size={16} />
@@ -471,7 +471,7 @@ function CarouselTopBar({
   thumbnailWindow,
 }: CarouselTopBarProps) {
   return (
-    <TopToolbar className="absolute top-0 left-0 right-0 w-full h-14 bg-black/80 backdrop-blur-sm flex items-center px-6 z-50 border-b border-white/2">
+    <TopToolbar className="absolute top-0 left-0 right-0 w-full h-14 bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] backdrop-blur-sm flex items-center px-6 z-50 border-b border-[color:var(--wb-line)]">
       <div className="mx-auto flex w-full max-w-480 items-center justify-between gap-4">
         <Logo />
         <div
@@ -515,7 +515,7 @@ function CarouselTopBar({
             type="button"
             onClick={onToggleFullscreen}
             aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
-            className="min-h-10 min-w-10 rounded-xl bg-white/5 p-2 text-zinc-500 transition-[background-color,color,transform] hover:bg-white/10 hover:text-white cursor-pointer"
+            className="min-h-10 min-w-10 rounded-xl bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
           >
             {isFullscreen ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
           </button>
@@ -523,7 +523,7 @@ function CarouselTopBar({
             type="button"
             onClick={onClose}
             aria-label="Close image carousel"
-            className="min-h-10 min-w-10 rounded-xl bg-zinc-900/60 p-2 text-white shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
+            className="min-h-10 min-w-10 rounded-xl bg-[color:var(--wb-panel)] p-2 text-[color:var(--wb-ink)] shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
           >
             <X size={16} />
           </button>
@@ -717,7 +717,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       aria-modal="true"
       aria-label="Image viewer"
       tabIndex={-1}
-      className="fixed inset-0 z-100 flex flex-col bg-black/90 overflow-hidden pt-12 pb-12"
+      className="fixed inset-0 z-100 flex flex-col studio-scrim overflow-hidden pt-12 pb-12"
       style={{ viewTransitionName: 'modal-backdrop' }}
     >
       <CarouselTopBar
@@ -741,7 +741,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               }}
               disabled={isSliding}
               aria-label="Previous image"
-              className="absolute left-8 z-50 rounded-full bg-black/50 p-6 text-white/10 backdrop-blur-3xl transition-[background-color,color,opacity,transform] hover:bg-white/5 hover:text-white disabled:opacity-0 active:scale-90 group cursor-pointer"
+              className="absolute left-8 z-50 rounded-full bg-[color:var(--wb-well)] p-6 text-[color:var(--wb-ink)]/10 backdrop-blur-3xl transition-[background-color,color,opacity,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] disabled:opacity-0 active:scale-90 group cursor-pointer"
             >
               <ChevronLeft size={40} className="group-hover:-translate-x-1 transition-transform" />
             </button>
@@ -753,7 +753,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               }}
               disabled={isSliding}
               aria-label="Next image"
-              className="absolute right-8 z-50 rounded-full bg-black/50 p-6 text-white/10 backdrop-blur-3xl transition-[background-color,color,opacity,transform] hover:bg-white/5 hover:text-white disabled:opacity-0 active:scale-90 group cursor-pointer"
+              className="absolute right-8 z-50 rounded-full bg-[color:var(--wb-well)] p-6 text-[color:var(--wb-ink)]/10 backdrop-blur-3xl transition-[background-color,color,opacity,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)] disabled:opacity-0 active:scale-90 group cursor-pointer"
             >
               <ChevronRight size={40} className="group-hover:translate-x-1 transition-transform" />
             </button>

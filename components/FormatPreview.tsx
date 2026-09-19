@@ -35,8 +35,8 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
             className={`relative size-full max-w-full max-h-full border-2 border-dashed rounded-2xl flex items-center justify-center overflow-hidden
               ${
                 isWorkspaceEmpty
-                  ? 'border-white/2 bg-white/[0.01]'
-                  : 'border-accent-500/2 bg-black/40 shadow-[0_0_100px_rgba(0,0,0,0.8),inset_0_0_60px_rgba(0,0,0,0.5)]'
+                  ? 'border-[color:var(--wb-line)] bg-white/[0.01]'
+                  : 'border-accent-500/2 bg-[color:var(--wb-well)] shadow-[0_0_100px_rgba(0,0,0,0.8),inset_0_0_60px_rgba(0,0,0,0.5)]'
               }
             `}
             style={{
@@ -49,10 +49,10 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
             <div
               className={`flex flex-col items-center gap-2 transition-opacity duration-700 ${isWorkspaceEmpty ? 'opacity-20' : 'opacity-60'}`}
             >
-              <span className="text-4xl md:text-8xl font-black text-white font-sans tracking-tighter drop-shadow-2xl select-none mix-blend-overlay">
+              <span className="text-4xl md:text-8xl font-black text-[color:var(--wb-ink)] font-sans tracking-tighter drop-shadow-2xl select-none mix-blend-overlay">
                 {ratio}
               </span>
-              <div className="flex items-center gap-3 px-3 py-1 bg-white/5 border border-white/2 rounded-full">
+              <div className="flex items-center gap-3 px-3 py-1 bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] border border-[color:var(--wb-line)] rounded-full">
                 <span className="text-[10px] font-mono font-black text-accent-400 uppercase tracking-widest">
                   {data.width}px
                 </span>
@@ -65,16 +65,16 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
 
             {/* Technical Corner Accents */}
             <div
-              className={`absolute top-6 left-6 size-6 border-t border-l rounded-tl-sm ${isWorkspaceEmpty ? 'border-white/2' : 'border-accent-400/2'}`}
+              className={`absolute top-6 left-6 size-6 border-t border-l rounded-tl-sm ${isWorkspaceEmpty ? 'border-[color:var(--wb-line)]' : 'border-accent-400/2'}`}
             />
             <div
-              className={`absolute top-6 right-6 size-6 border-t border-r rounded-tr-sm ${isWorkspaceEmpty ? 'border-white/2' : 'border-accent-400/2'}`}
+              className={`absolute top-6 right-6 size-6 border-t border-r rounded-tr-sm ${isWorkspaceEmpty ? 'border-[color:var(--wb-line)]' : 'border-accent-400/2'}`}
             />
             <div
-              className={`absolute bottom-6 left-6 size-6 border-b border-l rounded-bl-sm ${isWorkspaceEmpty ? 'border-white/2' : 'border-accent-400/2'}`}
+              className={`absolute bottom-6 left-6 size-6 border-b border-l rounded-bl-sm ${isWorkspaceEmpty ? 'border-[color:var(--wb-line)]' : 'border-accent-400/2'}`}
             />
             <div
-              className={`absolute bottom-6 right-6 size-6 border-b border-r rounded-br-sm ${isWorkspaceEmpty ? 'border-white/2' : 'border-accent-400/2'}`}
+              className={`absolute bottom-6 right-6 size-6 border-b border-r rounded-br-sm ${isWorkspaceEmpty ? 'border-[color:var(--wb-line)]' : 'border-accent-400/2'}`}
             />
 
             {/* Technical Grid (Rule of Thirds) */}

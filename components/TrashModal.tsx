@@ -39,7 +39,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
-          className="absolute inset-0 bg-black/80 backdrop-blur-md"
+          className="absolute inset-0 studio-scrim backdrop-blur-md"
         />
 
         <MotionDiv
@@ -51,19 +51,19 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
-          className="relative flex h-full w-full max-w-4xl flex-col overflow-hidden bg-zinc-900 shadow-2xl sm:h-auto sm:max-h-[88vh] sm:rounded-3xl sm:border sm:border-white/2"
+          className="studio-dialog relative flex h-full w-full max-w-4xl flex-col overflow-hidden sm:h-auto sm:max-h-[88vh] sm:rounded-3xl"
         >
           {/* Header */}
-          <div className="flex shrink-0 items-start justify-between gap-3 border-b border-white/2 bg-zinc-900/50 p-4 sm:items-center sm:p-6">
+          <div className="flex shrink-0 items-start justify-between gap-3 border-b border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-4 sm:items-center sm:p-6">
             <div className="flex min-w-0 items-center gap-3">
               <div className="rounded-xl bg-red-500/10 p-2.5 text-red-400">
                 <Trash2 size={20} />
               </div>
               <div className="min-w-0">
-                <h2 className="truncate text-base font-black uppercase tracking-widest text-white sm:text-lg">
+                <h2 className="truncate text-base font-black uppercase tracking-widest text-[color:var(--wb-ink)] sm:text-lg">
                   Trash
                 </h2>
-                <p className="text-[10px] text-zinc-500 font-bold uppercase tracking-wider">
+                <p className="text-[10px] text-[color:var(--wb-muted)] font-bold uppercase tracking-wider">
                   {trash.length} image groups available to restore
                 </p>
               </div>
@@ -94,7 +94,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                 type="button"
                 aria-label="Close trash"
                 onClick={onClose}
-                className="p-2 rounded-xl hover:bg-white/5 text-zinc-500 hover:text-white transition-colors cursor-pointer"
+                className="p-2 rounded-xl hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] transition-colors cursor-pointer"
               >
                 <X size={20} />
               </button>
@@ -105,13 +105,13 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           <div className="flex-1 overflow-y-auto p-4 sm:p-6 custom-scrollbar">
             {trash.length === 0 ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-20">
-                <div className="size-16 rounded-full bg-white/5 flex items-center justify-center text-zinc-700 mb-4">
+                <div className="size-16 rounded-full bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] flex items-center justify-center text-[color:var(--wb-dim)] mb-4">
                   <Trash2 size={32} />
                 </div>
-                <h3 className="text-zinc-400 font-bold uppercase tracking-widest text-sm mb-1">
+                <h3 className="text-[color:var(--wb-muted)] font-bold uppercase tracking-widest text-sm mb-1">
                   Trash is empty
                 </h3>
-                <p className="text-zinc-600 text-xs max-w-[240px]">
+                <p className="text-[color:var(--wb-dim)] text-xs max-w-[240px]">
                   Images moved to trash appear here until you restore or permanently delete them.
                 </p>
               </div>
@@ -120,9 +120,9 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                 {trash.map((group) => (
                   <div
                     key={group.id}
-                    className="group flex flex-col gap-3 rounded-2xl border border-white/2 bg-white/5 p-3 transition-[background-color,border-color,box-shadow] hover:border-white/2 sm:flex-row sm:items-center sm:gap-4 sm:p-4"
+                    className="group flex flex-col gap-3 rounded-2xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-3 transition-[background-color,border-color,box-shadow] hover:border-[color:var(--wb-border)] sm:flex-row sm:items-center sm:gap-4 sm:p-4"
                   >
-                    <div className="size-20 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/2">
+                    <div className="size-20 rounded-xl overflow-hidden bg-[color:var(--wb-well)] flex-shrink-0 border border-[color:var(--wb-line)]">
                       {group.thumbnail && (
                         <img
                           src={group.thumbnail}
@@ -134,23 +134,23 @@ export const TrashModal: React.FC<TrashModalProps> = ({
 
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-[10px] font-black text-zinc-500 uppercase tracking-widest">
+                        <span className="text-[10px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest">
                           {new Date(group.createdAt).toLocaleString()}
                         </span>
-                        <span className="size-1 rounded-full bg-zinc-800" />
+                        <span className="size-1 rounded-full bg-[color:var(--wb-bar)]" />
                         <span className="text-[10px] font-bold text-accent-500 uppercase tracking-widest">
                           {group.workspaceId || 'Default'}
                         </span>
                       </div>
-                      <h4 className="text-xs text-zinc-300 font-medium line-clamp-1 mb-2">
+                      <h4 className="text-xs text-[color:var(--wb-ink)] font-medium line-clamp-1 mb-2">
                         {group.prompt}
                       </h4>
                       <div className="flex items-center gap-3">
-                        <div className="flex items-center gap-1 text-[10px] text-zinc-500 font-bold uppercase">
-                          <span className="size-1.5 rounded-full bg-zinc-700" />
+                        <div className="flex items-center gap-1 text-[10px] text-[color:var(--wb-muted)] font-bold uppercase">
+                          <span className="size-1.5 rounded-full bg-[color:var(--wb-dim)]" />
                           {group.imageCount} Images
                         </div>
-                        <div className="text-[10px] text-zinc-500 font-bold uppercase">
+                        <div className="text-[10px] text-[color:var(--wb-muted)] font-bold uppercase">
                           {group.model}
                         </div>
                       </div>
@@ -160,7 +160,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                       type="button"
                       aria-label={`Restore batch ${group.id}`}
                       onClick={() => onRestore(group.id)}
-                      className="flex h-11 w-full items-center justify-center rounded-xl bg-accent-500/10 p-3 text-accent-400 transition-[color,background-color,transform] hover:bg-accent-500 hover:text-white active:scale-90 sm:w-auto cursor-pointer"
+                      className="flex h-11 w-full items-center justify-center rounded-xl bg-accent-500/10 p-3 text-accent-400 transition-[color,background-color,transform] hover:bg-accent-500 hover:text-[color:var(--wb-ink)] active:scale-90 sm:w-auto cursor-pointer"
                       title="Restore image group"
                     >
                       <RotateCcw size={18} />
@@ -172,9 +172,9 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           </div>
 
           {/* Footer */}
-          <div className="p-4 bg-black/20 border-t border-white/2 flex items-center gap-3">
-            <AlertCircle size={14} className="text-zinc-600" />
-            <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-wider">
+          <div className="p-4 bg-[color:var(--wb-well)] border-t border-[color:var(--wb-line)] flex items-center gap-3">
+            <AlertCircle size={14} className="text-[color:var(--wb-dim)]" />
+            <p className="text-[10px] text-[color:var(--wb-dim)] font-bold uppercase tracking-wider">
               Restore images to return them to their workspace. Emptying trash permanently deletes
               them.
             </p>

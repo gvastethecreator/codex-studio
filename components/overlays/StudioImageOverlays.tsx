@@ -62,7 +62,7 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps> = ({
             fallback={
               <LazySurfaceFallback
                 label="Loading editor"
-                className="fixed inset-0 z-50 grid place-items-center bg-black/60 text-zinc-400"
+                className="fixed inset-0 z-50 grid place-items-center studio-scrim"
               />
             }
           >

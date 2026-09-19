@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import {
   IconChevronLeft as ChevronLeft,
   IconChevronRight as ChevronRight,
@@ -17,7 +17,7 @@ import { buildCarouselThumbnailWindow } from '../../lib/imageCarouselThumbnails'
 import { useImagePanZoom } from '../../lib/imagePanZoom';
 import { useToastUi } from '../../contexts/GlobalContext';
 import type { Attachment, GeneratedImageWithConfig } from '../../types';
-import { copyImageToClipboard, downloadImage, generateSmartFilename } from '../../utils/fileUtils';
+import { RecipeWorkbenchContext } from './RecipeWorkbenchContext';
 
 type StageBackground = 'dark' | 'light' | 'checkered';
 
@@ -37,6 +37,7 @@ export function RecipeResultPreview({
   variant?: 'default' | 'stage';
 }) {
   const { addToast } = useToastUi();
+  const { setCompare } = useContext(RecipeWorkbenchContext);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [showReference, setShowReference] = useState(false);
   const [background, setBackground] = useState<StageBackground>('dark');
@@ -44,11 +45,24 @@ export function RecipeResultPreview({
   const selectedIndex = selected ? images.findIndex((image) => image.id === selected.id) : -1;
   const src = showReference || !selected ? reference?.dataUrl : selected?.src;
   const isStage = variant === 'stage';
+  const canCompare = Boolean(isStage && reference && selected);
+  const toggleCompare = useCallback(() => {
+    setShowReference((current) => !current);
+  }, []);
   const panZoom = useImagePanZoom(isStage && Boolean(src) && !showReference);
   const thumbnailWindow = useMemo(
     () => buildCarouselThumbnailWindow(images, Math.max(selectedIndex, 0)),
     [images, selectedIndex],
   );
+
+  useEffect(() => {
+    if (!canCompare) {
+      setCompare(null);
+      return;
+    }
+    setCompare({ showReference, toggle: toggleCompare });
+    return () => setCompare(null);
+  }, [canCompare, setCompare, showReference, toggleCompare]);
 
   const selectIndex = (index: number) => {
     const image = images[index];
@@ -88,7 +102,7 @@ export function RecipeResultPreview({
       data-stage-background={isStage ? background : undefined}
       aria-label="Result preview"
     >
-      {!isStage || (reference && selected) ? (
+      {!isStage ? (
         <div className="recipe-result-heading">
           <span>{showReference || !selected ? 'Reference preview' : 'Result'}</span>
           {reference && selected && (
@@ -100,11 +114,11 @@ export function RecipeResultPreview({
               {showReference ? 'Show result' : 'Compare reference'}
             </button>
           )}
-          {selected && !showReference && onOpen && !isStage && (
+          {selected && !showReference && onOpen ? (
             <button type="button" onClick={() => onOpen(selected)}>
               Open result
             </button>
-          )}
+          ) : null}
         </div>
       ) : null}
       <div

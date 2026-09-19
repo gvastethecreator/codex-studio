@@ -213,28 +213,25 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
+    <div className="fixed inset-0 z-100 flex items-center justify-center studio-scrim p-4">
       <div
         ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="studio-settings-title"
         tabIndex={-1}
-        className="flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-white/2 bg-zinc-950 shadow-2xl"
+        className="studio-dialog flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden"
       >
-        <div className="flex items-center justify-between border-b border-white/2 px-5 py-4">
+        <div className="studio-dialog-header">
           <div className="flex items-center gap-3">
-            <div className="flex size-9 items-center justify-center rounded-lg bg-accent-500/10 text-accent-300">
+            <div className="flex size-9 items-center justify-center rounded studio-ghost-control text-[color:var(--wb-accent)]">
               <Settings size={18} />
             </div>
             <div>
-              <h2
-                id="studio-settings-title"
-                className="text-sm font-black uppercase tracking-widest text-white"
-              >
+              <h2 id="studio-settings-title" className="studio-dialog-title">
                 Studio Settings
               </h2>
-              <p className="mt-0.5 text-[10px] font-bold uppercase tracking-widest text-zinc-500">
+              <p className="mt-0.5 text-[10px] font-medium studio-muted">
                 Accounts, library, and output
               </p>
             </div>
@@ -245,7 +242,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               aria-label="Refresh settings"
               onClick={() => void onRefresh()}
               disabled={isLoading}
-              className="flex size-9 items-center justify-center rounded-lg border border-white/2 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 disabled:opacity-60"
+              className="studio-ghost-control disabled:opacity-60"
             >
               {isLoading ? (
                 <LoaderCircle size={16} className="animate-spin" />
@@ -257,25 +254,21 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               type="button"
               aria-label="Close settings"
               onClick={requestClose}
-              className="flex size-9 items-center justify-center rounded-lg text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
+              className="studio-ghost-control"
             >
               <X size={18} />
             </button>
           </div>
         </div>
 
-        <div className="flex gap-1 overflow-x-auto border-b border-white/2 px-3 sm:px-5">
+        <div className="flex gap-1 overflow-x-auto border-b border-[color:var(--wb-line)] px-3 sm:px-5">
           {STUDIO_SETTINGS_DOMAIN_TABS.map((tab) => (
             <button
               key={tab.id}
               type="button"
               onClick={() => setActiveDomain(tab.id)}
               aria-pressed={activeDomain === tab.id}
-              className={`h-10 shrink-0 px-3 text-[10px] font-black uppercase tracking-widest transition-colors ${
-                activeDomain === tab.id
-                  ? 'border-b-2 border-accent-400/2 text-white'
-                  : 'text-zinc-500 hover:text-white'
-              }`}
+              className={`studio-tab ${activeDomain === tab.id ? 'is-active' : ''}`}
             >
               {tab.label}
             </button>
@@ -284,7 +277,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
 
         <div
           aria-busy={isLoading || isSaving}
-          className="custom-scrollbar flex-1 overflow-y-auto p-5"
+          className="studio-dialog-body custom-scrollbar overflow-y-auto p-5"
         >
           {error && (
             <div
@@ -330,15 +323,15 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             </div>
           ) : null}
           {activeDomain === 'library' && (
-            <section className="mt-4 rounded-lg border border-white/10 p-4">
+            <section className="studio-list-row mt-4 p-4">
               <h3 className="text-sm font-semibold">Export workspace metadata</h3>
-              <p className="my-2 text-xs text-zinc-400">
+              <p className="my-2 text-xs studio-muted">
                 Legacy snapshot of workspace settings. This does not include image files or replace
                 a library backup.
               </p>
               <button
                 type="button"
-                className="rounded-lg bg-white/10 px-3 py-2 text-sm"
+                className="studio-ghost-control px-3"
                 onClick={onExportLegacyWorkspaceSnapshot}
               >
                 Export legacy snapshot
@@ -350,22 +343,18 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           ) : null}
         </div>
 
-        <div className="flex items-center justify-end gap-3 border-t border-white/2 px-5 py-4">
-          <span role="status" className="mr-auto text-xs text-zinc-400">
+        <div className="studio-dialog-actions">
+          <span role="status" className="mr-auto text-xs studio-muted">
             {isSaving ? 'Saving settings…' : hasChanges ? 'Unsaved changes' : 'No unsaved changes'}
           </span>
-          <button
-            type="button"
-            onClick={requestClose}
-            className="h-10 rounded-lg px-4 text-[10px] font-black uppercase tracking-widest text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
-          >
+          <button type="button" onClick={requestClose} className="studio-ghost-control px-4">
             Close
           </button>
           <button
             type="button"
             onClick={handleSave}
             disabled={isSaving || isLoading || !settings || !hasChanges || Boolean(fileNameError)}
-            className="flex h-10 items-center gap-2 rounded-lg bg-accent-600 px-4 text-[10px] font-black uppercase tracking-widest text-white transition-colors hover:bg-accent-500 disabled:opacity-60"
+            className="studio-primary-control disabled:opacity-60"
           >
             {isSaving ? <LoaderCircle size={15} className="animate-spin" /> : <Save size={15} />}
             {isSaving ? 'Saving…' : 'Save'}

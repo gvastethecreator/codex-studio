@@ -1,5 +1,9 @@
 import React from 'react';
-import { IconCheck as Check, IconChevronDown as ChevronDown } from '@tabler/icons-react';
+import {
+  IconCheck as Check,
+  IconChevronDown as ChevronDown,
+  IconCpu as Cpu,
+} from '@tabler/icons-react';
 
 import { cn } from '../../lib/utils';
 import type { CommandCenterProviderProjection } from '../../lib/commandCenterProjection';
@@ -19,6 +23,7 @@ export interface ProviderQuickSwitchProps {
   triggerClassName?: string;
   showLabel?: boolean;
   className?: string;
+  variant?: 'toolbar' | 'rail';
 }
 
 export function ProviderQuickSwitch({
@@ -32,10 +37,12 @@ export function ProviderQuickSwitch({
   triggerClassName,
   showLabel = true,
   className,
+  variant = 'toolbar',
 }: ProviderQuickSwitchProps) {
   const [open, setOpen] = React.useState(false);
   const triggerRef = React.useRef<HTMLButtonElement>(null);
   const providerLabel = provider.id === 'codex' ? 'Codex' : provider.label;
+  const isRail = variant === 'rail';
 
   const selectProvider = React.useCallback(
     (providerId: GenerationProviderId) => {
@@ -47,12 +54,12 @@ export function ProviderQuickSwitch({
   );
 
   return (
-    <div className={cn('relative min-w-0', className)}>
+    <div className={cn('relative min-w-0', isRail ? 'flex w-full min-w-0' : null, className)}>
       <Tooltip
         content="Change image generation provider"
         position="top"
-        hidden={open}
-        className="w-full"
+        hidden={open || isRail}
+        className="flex w-full min-w-0"
       >
         <button
           ref={triggerRef}
@@ -64,19 +71,33 @@ export function ProviderQuickSwitch({
           aria-controls="provider-quick-switch"
           className={
             triggerClassName ??
-            `studio-command-surface studio-hit-target flex h-8 w-8 items-center justify-center gap-1 rounded-lg border border-white/2 bg-white/5 px-1 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-white lg:w-auto lg:justify-start lg:gap-1.5 lg:px-2 ${compactMode ? 'lg:max-w-20' : 'lg:max-w-32'}`
+            `studio-command-surface studio-hit-target flex h-8 w-8 items-center justify-center gap-1 rounded-lg border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-1 text-[color:var(--wb-ink)] transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-[color:var(--wb-ink)] lg:w-auto lg:justify-start lg:gap-1.5 lg:px-2 ${compactMode ? 'lg:max-w-20' : 'lg:max-w-32'}`
           }
         >
-          <ProviderBrandMark providerId={provider.id} size="xs" />
+          {isRail ? (
+            <Cpu size={15} aria-hidden="true" />
+          ) : (
+            <ProviderBrandMark providerId={provider.id} size="xs" />
+          )}
           {showLabel ? (
-            <span className="hidden min-w-0 truncate text-[10px] font-black uppercase tracking-[0.16em] lg:inline">
-              {provider.toolbarLabel}
+            <span
+              className={
+                isRail
+                  ? 'create-engine-name'
+                  : `hidden min-w-0 truncate text-[10px] font-black uppercase tracking-[0.16em] lg:inline`
+              }
+            >
+              {isRail ? providerLabel : provider.toolbarLabel}
             </span>
           ) : null}
           <ChevronDown
             size={12}
             aria-hidden="true"
-            className={`hidden shrink-0 transition-transform lg:block ${open ? 'rotate-180' : ''}`}
+            className={
+              isRail
+                ? `shrink-0 transition-transform ${open ? 'rotate-180' : ''}`
+                : `hidden shrink-0 transition-transform lg:block ${open ? 'rotate-180' : ''}`
+            }
           />
         </button>
       </Tooltip>
@@ -92,10 +113,10 @@ export function ProviderQuickSwitch({
         className="w-72 p-2"
       >
         <div className="px-2 pb-2 pt-1">
-          <div className="text-[9px] font-black uppercase tracking-[0.18em] text-zinc-500">
+          <div className="text-[9px] font-black uppercase tracking-[0.18em] text-[color:var(--wb-muted)]">
             Image provider
           </div>
-          <div className="mt-1 text-[11px] font-semibold text-zinc-300">
+          <div className="mt-1 text-[11px] font-semibold text-[color:var(--wb-ink)]">
             Applies to the next generation.
           </div>
         </div>
@@ -115,8 +136,8 @@ export function ProviderQuickSwitch({
                 onClick={() => selectProvider(option.id)}
                 className={`flex min-h-12 w-full items-center gap-3 rounded-xl border px-3 py-2 text-left transition-[color,background-color,border-color,opacity,transform] ${
                   isSelected
-                    ? 'border-accent-400/2 bg-accent-500/12 text-white'
-                    : 'border-transparent bg-white/[0.03] text-zinc-300 hover:border-white/2 hover:bg-white/[0.07]'
+                    ? 'border-accent-400/2 bg-accent-500/12 text-[color:var(--wb-ink)]'
+                    : 'border-transparent bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-white/[0.07]'
                 } disabled:cursor-not-allowed disabled:opacity-55`}
               >
                 <ProviderBrandMark
@@ -129,7 +150,7 @@ export function ProviderQuickSwitch({
                   <span className="block truncate text-[10px] font-black uppercase tracking-[0.14em]">
                     {option.label}
                   </span>
-                  <span className="mt-0.5 block text-[9px] font-bold text-zinc-500">
+                  <span className="mt-0.5 block text-[9px] font-bold text-[color:var(--wb-muted)]">
                     {option.statusDetail}
                   </span>
                 </span>
@@ -146,7 +167,7 @@ export function ProviderQuickSwitch({
               setOpen(false);
               onOpenSettings();
             }}
-            className="mt-2 w-full rounded-lg border-t border-white/2 px-3 py-2 text-left text-[9px] font-black uppercase tracking-[0.14em] text-zinc-500 transition-colors hover:text-zinc-200"
+            className="mt-2 w-full rounded-lg border-t border-[color:var(--wb-line)] px-3 py-2 text-left text-[9px] font-black uppercase tracking-[0.14em] text-[color:var(--wb-muted)] transition-colors hover:text-[color:var(--wb-ink)]"
           >
             Provider settings and diagnostics
           </button>

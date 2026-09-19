@@ -522,73 +522,73 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
       aria-modal="true"
       aria-label="Style editor"
       tabIndex={-1}
-      className="absolute inset-0 z-50 flex items-center justify-center bg-black/76 p-2 text-white backdrop-blur-md sm:p-4"
+      className="absolute inset-0 z-50 flex items-center justify-center bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] backdrop-blur-md sm:p-4"
     >
-      <div className="flex h-full max-h-[calc(100vh-4.5rem)] w-full max-w-[1180px] flex-col overflow-hidden rounded-[8px] border border-white/2 bg-zinc-950 shadow-[0_24px_80px_rgba(0,0,0,0.72)]">
-        <div className="flex min-h-14 shrink-0 items-center justify-between gap-3 border-b border-white/2 bg-zinc-950/98 px-4 sm:px-5">
+      <div className="flex h-full max-h-[calc(100vh-4.5rem)] w-full max-w-[1180px] flex-col overflow-hidden rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_24px_80px_rgba(0,0,0,0.72)]">
+        <div className="flex min-h-14 shrink-0 items-center justify-between gap-3 border-b border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/98 px-4 sm:px-5">
           <div className="min-w-0">
-            <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
+            <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
               <Sparkles size={13} />
               <span>{mode === 'edit' ? 'Edit Style' : 'Style Editor'}</span>
-              <span className="rounded-[5px] border border-white/2 bg-white/8 px-1.5 py-0.5 text-[8px] text-zinc-300">
+              <span className="rounded-[5px] border border-[color:var(--wb-line)] bg-white/8 px-1.5 py-0.5 text-[8px] text-[color:var(--wb-ink)]">
                 {sourceKind.replace(/_/g, ' ')}
               </span>
             </div>
-            <h2 className="mt-1 truncate text-base font-black uppercase tracking-tight text-white">
+            <h2 className="mt-1 truncate text-base font-black uppercase tracking-tight text-[color:var(--wb-ink)]">
               {normalizedDraft.name}
             </h2>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="flex size-9 shrink-0 items-center justify-center rounded-[6px] border border-white/2 bg-white/7 text-zinc-300 transition-colors hover:bg-white/12 hover:text-white"
+            className="flex size-9 shrink-0 items-center justify-center rounded-[6px] border border-[color:var(--wb-line)] bg-white/7 text-[color:var(--wb-ink)] transition-colors hover:bg-white/12 hover:text-[color:var(--wb-ink)]"
             aria-label="Close style editor"
           >
             <X size={16} />
           </button>
         </div>
 
-        <div className="grid min-h-0 flex-1 grid-cols-1 gap-3 overflow-hidden bg-zinc-950/95 p-3 lg:grid-cols-[minmax(0,1fr)_360px] lg:p-4">
-          <section className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-white/2 bg-zinc-900/88 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
+        <div className="grid min-h-0 flex-1 grid-cols-1 gap-3 overflow-hidden bg-[color:var(--wb-panel)]/95 p-3 lg:grid-cols-[minmax(0,1fr)_360px] lg:p-4">
+          <section className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/88 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
             <div className="grid gap-3 sm:grid-cols-2">
               <label className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                   Name
                 </span>
                 <input
                   value={draft.name}
                   onChange={(event) => updateDraft('name', event.target.value)}
-                  className="h-10 rounded-[6px] border border-white/2 bg-zinc-950 px-3 text-sm font-bold text-white outline-none transition-colors focus:border-accent-400/2"
+                  className="h-10 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
               <label className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                   Category
                 </span>
                 <input
                   value={draft.category}
                   onChange={(event) => updateDraft('category', event.target.value)}
-                  className="h-10 rounded-[6px] border border-white/2 bg-zinc-950 px-3 text-sm font-bold text-white outline-none transition-colors focus:border-accent-400/2"
+                  className="h-10 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
             </div>
 
             <div className="mt-3 grid gap-3 sm:grid-cols-2">
               <label className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                   Tags
                 </span>
                 <input
                   value={tagsText}
                   onChange={(event) => setTagsText(event.target.value)}
-                  className="h-10 rounded-[6px] border border-white/2 bg-zinc-950 px-3 text-xs font-bold text-white outline-none transition-colors focus:border-accent-400/2"
+                  className="h-10 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 text-xs font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
                 />
               </label>
               <div className="grid gap-1.5">
-                <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                   Tasks
                 </span>
-                <div className="flex min-h-10 flex-wrap items-center gap-1.5 rounded-[6px] border border-white/2 bg-zinc-950 p-1">
+                <div className="flex min-h-10 flex-wrap items-center gap-1.5 rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1">
                   {USER_STYLE_SUPPORTED_TASKS.map((task) => {
                     const active = draft.supportedTasks.includes(task);
                     return (
@@ -600,7 +600,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                         className={`flex h-7 items-center gap-1 rounded-[5px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                           active
                             ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
-                            : 'border-white/2 bg-white/5 text-zinc-500 hover:text-white'
+                            : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'
                         }`}
                       >
                         {active && <Check size={10} />}
@@ -613,7 +613,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             </div>
 
             <label className="mt-3 grid gap-1.5">
-              <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+              <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                 Creative Brief
               </span>
               <textarea
@@ -621,47 +621,47 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 value={draft.visualDna.creative_brief ?? ''}
                 onChange={(event) => updateVisualDna('creative_brief', event.target.value)}
                 rows={3}
-                className="resize-none rounded-[6px] border border-white/2 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/2"
+                className="resize-none rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
               />
             </label>
 
             <div className="mt-3 grid gap-3 xl:grid-cols-2">
               {USER_STYLE_DNA_FIELDS.map((field) => (
                 <label key={field.key} className="grid gap-1.5">
-                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                     {field.label}
                   </span>
                   <textarea
                     value={draft.visualDna[field.key] ?? ''}
                     onChange={(event) => updateVisualDna(field.key, event.target.value)}
                     rows={4}
-                    className="resize-none rounded-[6px] border border-white/2 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/2"
+                    className="resize-none rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
                   />
                 </label>
               ))}
             </div>
 
             <label className="mt-3 grid gap-1.5">
-              <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400">
+              <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                 Avoid
               </span>
               <textarea
                 value={avoidRulesText}
                 onChange={(event) => setAvoidRulesText(event.target.value)}
                 rows={3}
-                className="resize-none rounded-[6px] border border-white/2 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/2"
+                className="resize-none rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
               />
             </label>
           </section>
 
-          <aside className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-white/2 bg-zinc-900/92 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
-            <div className="rounded-[8px] border border-white/2 bg-zinc-950/70 p-3">
+          <aside className="min-h-0 min-w-0 overflow-y-auto rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/92 p-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] custom-scrollbar">
+            <div className="rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
               <div className="mb-3 flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
+                <div className="flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
                   <Sparkles size={13} />
                   Source
                 </div>
-                <span className="rounded-[5px] border border-white/2 bg-white/5 px-2 py-1 text-[8px] font-black uppercase tracking-widest text-zinc-500">
+                <span className="rounded-[5px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 py-1 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                   {authoringMode === 'codex_assist' ? 'Codex' : 'Manual'}
                 </span>
               </div>
@@ -679,7 +679,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     className={`h-8 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                       authoringMode === item.id
                         ? 'border-sky-300/2 bg-sky-500/15 text-sky-100'
-                        : 'border-white/2 bg-white/5 text-zinc-500 hover:text-white'
+                        : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'
                     }`}
                   >
                     {item.label}
@@ -696,7 +696,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                         ? 'border-emerald-400/2 bg-emerald-500/8 text-emerald-100'
                         : step.state === 'active'
                           ? 'border-sky-400/2 bg-sky-500/8 text-sky-100'
-                          : 'border-white/2 bg-white/4 text-zinc-500'
+                          : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-muted)]'
                     }`}
                   >
                     <span className="text-[8px] font-black uppercase tracking-widest">
@@ -708,13 +708,13 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
               </div>
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-white/2 bg-zinc-950/70 p-3">
-              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
+            <div className="mt-3 rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
+              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
                 <Photo size={13} />
                 References
               </div>
 
-              <label className="flex min-h-24 cursor-pointer flex-col items-center justify-center rounded-[7px] border border-dashed border-white/2 bg-white/[0.03] px-3 py-4 text-center transition-colors hover:border-sky-300/2 hover:bg-sky-500/8">
+              <label className="flex min-h-24 cursor-pointer flex-col items-center justify-center rounded-[7px] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-3 py-4 text-center transition-colors hover:border-sky-300/2 hover:bg-sky-500/8">
                 <input
                   type="file"
                   accept="image/*"
@@ -726,10 +726,10 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                   }}
                 />
                 <Upload size={18} className="text-sky-200" />
-                <span className="mt-2 text-[9px] font-black uppercase tracking-widest text-zinc-300">
+                <span className="mt-2 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]">
                   Add Images
                 </span>
-                <span className="mt-1 text-[10px] font-medium leading-relaxed text-zinc-500">
+                <span className="mt-1 text-[10px] font-medium leading-relaxed text-[color:var(--wb-muted)]">
                   {referenceImages.length}/{MAX_REFERENCE_IMAGES} references
                 </span>
               </label>
@@ -741,8 +741,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                       key={image.id}
                       className={`rounded-[7px] border p-2 ${
                         image.included
-                          ? 'border-white/2 bg-white/[0.045]'
-                          : 'border-white/2 bg-white/[0.02] opacity-60'
+                          ? 'border-[color:var(--wb-line)] bg-white/[0.045]'
+                          : 'border-[color:var(--wb-line)] bg-white/[0.02] opacity-60'
                       }`}
                     >
                       <div className="flex items-start gap-2">
@@ -752,10 +752,10 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                           className="h-14 w-14 shrink-0 rounded-[6px] object-cover"
                         />
                         <div className="min-w-0 flex-1">
-                          <div className="truncate text-[10px] font-black text-zinc-100">
+                          <div className="truncate text-[10px] font-black text-[color:var(--wb-ink)]">
                             {image.name}
                           </div>
-                          <div className="mt-0.5 truncate font-mono text-[9px] text-zinc-500">
+                          <div className="mt-0.5 truncate font-mono text-[9px] text-[color:var(--wb-muted)]">
                             {image.mimeType || 'image'} {formatFileSize(image.sizeBytes)}
                           </div>
                           <div className="mt-2 flex flex-wrap gap-1.5">
@@ -768,7 +768,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                               className={`h-6 rounded-[5px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                                 image.included
                                   ? 'border-emerald-400/2 bg-emerald-500/12 text-emerald-100'
-                                  : 'border-white/2 bg-white/5 text-zinc-500'
+                                  : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)]'
                               }`}
                             >
                               {image.included ? 'On' : 'Off'}
@@ -783,7 +783,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                                       : 'avoid_reference',
                                 })
                               }
-                              className="h-6 rounded-[5px] border border-white/2 bg-white/5 px-2 text-[8px] font-black uppercase tracking-widest text-zinc-400 transition-colors hover:text-white"
+                              className="h-6 rounded-[5px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)] transition-colors hover:text-[color:var(--wb-ink)]"
                             >
                               {image.role === 'avoid_reference' ? 'Avoid' : 'Style'}
                             </button>
@@ -798,7 +798,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                         </div>
                       </div>
                       <label className="mt-2 grid gap-1">
-                        <span className="text-[8px] font-black uppercase tracking-widest text-zinc-500">
+                        <span className="text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                           Reference notes
                         </span>
                         <input
@@ -807,7 +807,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                             updateReferenceImage(image.id, { notes: event.target.value })
                           }
                           placeholder={`Notes for ${image.name}`}
-                          className="h-8 w-full rounded-[6px] border border-white/2 bg-zinc-950 px-2 text-[10px] font-medium text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-sky-300/2"
+                          className="h-8 w-full rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-2 text-[10px] font-medium text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-sky-300/2"
                         />
                       </label>
                     </div>
@@ -816,8 +816,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
               )}
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-white/2 bg-zinc-950/70 p-3">
-              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
+            <div className="mt-3 rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
+              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
                 <Check size={13} />
                 Apply
               </div>
@@ -833,7 +833,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                       className={`flex h-8 items-center justify-between gap-2 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                         enabled
                           ? 'border-emerald-400/2 bg-emerald-500/8 text-emerald-100'
-                          : 'border-white/2 bg-white/4 text-zinc-600'
+                          : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-dim)]'
                       }`}
                     >
                       <span className="truncate">{field.label}</span>
@@ -844,8 +844,8 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
               </div>
             </div>
 
-            <div className="mt-3 rounded-[8px] border border-white/2 bg-zinc-950/70 p-3">
-              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-zinc-400">
+            <div className="mt-3 rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-3">
+              <div className="mb-3 flex items-center gap-2 text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
                 <Wand2 size={13} />
                 Assist
               </div>
@@ -859,7 +859,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                     className={`h-8 rounded-[6px] border px-2 text-[8px] font-black uppercase tracking-widest transition-colors ${
                       assistAction === action.id
                         ? 'border-accent-400/2 bg-accent-500/15 text-accent-100'
-                        : 'border-white/2 bg-white/5 text-zinc-500 hover:text-white'
+                        : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'
                     }`}
                   >
                     {action.label}
@@ -871,7 +871,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                 value={assistPrompt}
                 onChange={(event) => setAssistPrompt(event.target.value)}
                 rows={8}
-                className="mt-3 w-full resize-none rounded-[6px] border border-white/2 bg-zinc-950 px-3 py-2 text-xs font-medium leading-relaxed text-white outline-none transition-colors focus:border-accent-400/2"
+                className="mt-3 w-full resize-none rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-3 py-2 text-xs font-medium leading-relaxed text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
               />
               <button
                 type="button"
@@ -905,7 +905,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
           </aside>
         </div>
 
-        <div className="flex min-h-14 shrink-0 flex-wrap items-center justify-between gap-2 border-t border-white/2 bg-zinc-950/98 px-4 py-2 sm:px-5">
+        <div className="flex min-h-14 shrink-0 flex-wrap items-center justify-between gap-2 border-t border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/98 px-4 py-2 sm:px-5">
           <div className="flex items-center gap-2">
             {mode === 'edit' && (
               <>
@@ -913,7 +913,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                   type="button"
                   onClick={handleDuplicate}
                   disabled={isSaving}
-                  className="flex h-9 items-center gap-2 rounded-[6px] border border-white/2 bg-white/5 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white disabled:opacity-45"
+                  className="flex h-9 items-center gap-2 rounded-[6px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] disabled:opacity-45"
                 >
                   <Copy size={14} />
                   Duplicate
@@ -935,7 +935,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
             type="button"
             onClick={handleSave}
             disabled={!canSave}
-            className="flex h-10 items-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-white/2 disabled:bg-white/5 disabled:text-zinc-600"
+            className="flex h-10 items-center gap-2 rounded-[6px] border border-accent-400/2 bg-accent-500/18 px-4 text-[10px] font-black uppercase tracking-widest text-accent-100 transition-colors hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
           >
             <Save size={15} />
             {isSaving ? 'Saving' : 'Save Style'}

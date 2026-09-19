@@ -22,6 +22,7 @@ interface StudioHeaderToolbarViewContext {
   activeRecipe: HeaderToolbarProps['activeRecipe'];
   activeRecipeAliasId: HeaderToolbarProps['activeRecipeAliasId'];
   onCloseRecipe: HeaderToolbarProps['onCloseRecipe'];
+  onSelectRecipe: HeaderToolbarProps['onSelectRecipe'];
   usage: HeaderToolbarProps['usage'];
 }
 
@@ -104,6 +105,7 @@ export function buildStudioHeaderToolbarProps({
     activeRecipe: view.activeRecipe,
     activeRecipeAliasId: view.activeRecipeAliasId,
     onCloseRecipe: view.onCloseRecipe,
+    onSelectRecipe: view.onSelectRecipe,
     onOpenDashboard: overlays.onOpenDashboard,
     onOpenOnboarding: () => startTransition(() => overlays.openOnboarding()),
     onOpenChat: overlays.onOpenChat,

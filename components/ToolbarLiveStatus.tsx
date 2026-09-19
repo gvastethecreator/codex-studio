@@ -28,6 +28,8 @@ export function LivePromptTextarea({
   onPaste,
   onDrop,
   onDragOver,
+  id,
+  variant = 'dock',
 }: {
   textareaRef: React.RefObject<HTMLTextAreaElement | null>;
   prompt: string;
@@ -40,6 +42,8 @@ export function LivePromptTextarea({
   onPaste: React.ClipboardEventHandler<HTMLTextAreaElement>;
   onDrop: React.DragEventHandler<HTMLTextAreaElement>;
   onDragOver: React.DragEventHandler<HTMLTextAreaElement>;
+  id?: string;
+  variant?: 'dock' | 'rail';
 }) {
   const [scrambleTick, setScrambleTick] = useState(0);
 
@@ -56,17 +60,19 @@ export function LivePromptTextarea({
   }, [isScrambling, prompt, scrambleTick]);
 
   useLayoutEffect(() => {
+    if (variant === 'rail') return;
     const target = textareaRef.current;
     if (!target) return;
     const scrollPosition = target.scrollTop;
     target.style.height = '28px';
     target.style.height = `${Math.min(Math.max(target.scrollHeight, 28), 320)}px`;
     target.scrollTop = scrollPosition;
-  }, [displayedPrompt, textareaRef]);
+  }, [displayedPrompt, textareaRef, variant]);
 
   return (
     <textarea
       ref={textareaRef}
+      id={id}
       value={displayedPrompt}
       readOnly={isScrambling}
       onFocus={onFocus}
@@ -77,15 +83,29 @@ export function LivePromptTextarea({
       onPaste={onPaste}
       onDrop={onDrop}
       onDragOver={onDragOver}
-      placeholder="Describe what you want to create..."
-      rows={1}
-      className={`custom-scrollbar max-h-[320px] min-w-0 flex-1 self-end overflow-y-auto resize-none border-none bg-transparent px-1.5 py-1 text-[13px] font-medium leading-normal tracking-tight text-zinc-200 outline-none placeholder-zinc-700 sm:min-w-[100px] ${isScrambling ? 'font-mono text-accent-400 opacity-80' : ''} ${isHidden ? 'hidden' : ''}`}
-      style={{ minHeight: '28px' }}
+      placeholder={
+        variant === 'rail'
+          ? 'Describe the image you want to create…'
+          : 'Describe what you want to create...'
+      }
+      rows={variant === 'rail' ? 6 : 1}
+      className={
+        variant === 'rail'
+          ? `create-prompt-input ${isScrambling ? 'is-scrambling' : ''} ${isHidden ? 'hidden' : ''}`
+          : `custom-scrollbar max-h-[320px] min-w-0 flex-1 self-end overflow-y-auto resize-none border-none bg-transparent px-1.5 py-1 text-[13px] font-medium leading-normal tracking-tight text-[color:var(--wb-ink)] outline-none placeholder:text-[color:var(--wb-muted)] sm:min-w-[100px] ${isScrambling ? 'font-mono text-accent-400 opacity-80' : ''} ${isHidden ? 'hidden' : ''}`
+      }
+      style={variant === 'rail' ? undefined : { minHeight: '28px' }}
     />
   );
 }
 
-export function GenerationElapsedStatus({ startTime }: { startTime: number | null }) {
+export function GenerationElapsedStatus({
+  startTime,
+  variant = 'dock',
+}: {
+  startTime: number | null;
+  variant?: 'dock' | 'rail';
+}) {
   const [tick, setTick] = useState(0);
 
   useEffect(() => {
@@ -99,6 +119,16 @@ export function GenerationElapsedStatus({ startTime }: { startTime: number | nul
     void tick;
     return ((Date.now() - startTime) / 1000).toFixed(1);
   }, [startTime, tick]);
+
+  if (variant === 'rail') {
+    return (
+      <div className="create-generate-status" data-generation-elapsed-status>
+        <span className="create-generate-spinner" aria-hidden="true" />
+        <span>Generating</span>
+        <span className="create-generate-elapsed">{elapsedTime}s</span>
+      </div>
+    );
+  }
 
   return (
     <>

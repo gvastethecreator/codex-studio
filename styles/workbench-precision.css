@@ -1,0 +1,160 @@
+/* Workbench UI 0.4.0 precision token scope — Studio chrome bridge only.
+   Catalog source: Workbench UI 0.4.0 `src/precision.css` (token root, density,
+   size, typography, edges, and shell bridges). Not imported: Precision
+   sliders/knobs/faders/XY pads, Compose editors, or Workbench.js. */
+
+:where(.wb, .wbp-system) {
+  --wbp-font-ui: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --wbp-font-condensed:
+    'Bahnschrift SemiCondensed', 'Roboto Condensed', 'Arial Narrow', 'Liberation Sans Narrow',
+    sans-serif;
+  --wbp-font-mono: var(--wb-mono, ui-monospace, 'SF Mono', Consolas, monospace);
+  --wbp-font-label: var(--wbp-font-ui);
+  --wbp-font-value: var(--wbp-font-mono);
+  --wbp-font-heading: var(--wbp-font-ui);
+  --wbp-font-caption: var(--wbp-font-ui);
+  --wbp-scale: 1;
+  --wbp-accent: var(--wb-accent, #c3b28d);
+  --wbp-modulation: #b9a3d0;
+  --wbp-track: var(--wb-well, #0d0d0d);
+  --wbp-ink: var(--wb-ink, #e3e3e3);
+  --wbp-muted: var(--wb-muted, #a4a4a4);
+  --wbp-row: 30px;
+  --wbp-dial: 86px;
+  --wbp-text: 12px;
+  --wbp-label: 11px;
+  --wbp-thumb: 12px;
+  --wbp-gap: 12px;
+  --wbp-pad: 18px;
+  --wbp-radius: 4px;
+}
+
+:where(.wbp-system)[data-wbp-density='compact'] {
+  --wbp-gap: 7px;
+  --wbp-pad: 12px;
+}
+
+:where(.wbp-system)[data-wbp-density='cozy'] {
+  --wbp-gap: 12px;
+  --wbp-pad: 18px;
+}
+
+:where(.wbp-system)[data-wbp-density='comfortable'] {
+  --wbp-gap: 18px;
+  --wbp-pad: 24px;
+}
+
+:where(.wbp-system)[data-wbp-typography='technical'] {
+  --wbp-font-label: var(--wbp-font-condensed);
+  --wbp-font-heading: var(--wbp-font-condensed);
+  --wbp-font-caption: var(--wbp-font-condensed);
+}
+
+:where(.wbp-system)[data-wbp-typography='instrument'] {
+  --wbp-font-label: var(--wbp-font-mono);
+  --wbp-font-heading: var(--wbp-font-condensed);
+  --wbp-font-caption: var(--wbp-font-mono);
+}
+
+:where(.wbp-system)[data-wbp-typography='editorial'] {
+  --wbp-font-heading: Georgia, 'Times New Roman', serif;
+  --wbp-font-label: var(--wbp-font-ui);
+}
+
+:where(.wbp-system)[data-wbp-edges='square'] {
+  --wbp-radius: 1px;
+}
+
+:where(.wbp-system)[data-wbp-edges='notched'] {
+  --wbp-radius: 3px;
+}
+
+.wbp-system[data-wbp-size='xs'],
+.wbp[data-size='xs'] {
+  --wbp-row: 24px;
+  --wbp-dial: 54px;
+  --wbp-text: 11px;
+  --wbp-label: 10px;
+  --wbp-thumb: 10px;
+}
+
+.wbp-system[data-wbp-size='sm'],
+.wbp[data-size='sm'] {
+  --wbp-row: 28px;
+  --wbp-dial: 70px;
+  --wbp-text: 12px;
+  --wbp-label: 11px;
+  --wbp-thumb: 11px;
+}
+
+.wbp-system[data-wbp-size='md'],
+.wbp[data-size='md'] {
+  --wbp-row: 32px;
+  --wbp-dial: 90px;
+  --wbp-text: 13px;
+  --wbp-label: 11px;
+  --wbp-thumb: 13px;
+}
+
+.wbp-system[data-wbp-size='lg'],
+.wbp[data-size='lg'] {
+  --wbp-row: 40px;
+  --wbp-dial: 116px;
+  --wbp-text: 15px;
+  --wbp-label: 12px;
+  --wbp-thumb: 16px;
+}
+
+.wb,
+.wbp-system {
+  --wb-control-height: calc(var(--wbp-row) * var(--wbp-scale, 1));
+  --wb-font-size: calc(var(--wbp-text) * var(--wbp-scale, 1));
+  --wb-radius: var(--wbp-radius);
+}
+
+.wbp-system
+  :is(
+    .studio-control,
+    .studio-field,
+    .studio-ghost-control,
+    .studio-primary-control,
+    .studio-nav-tab,
+    .studio-tab,
+    .create-select-field,
+    .create-tool-chip,
+    .create-workflow-quiet-select,
+    .create-generate-button
+  ) {
+  font-family: var(--wbp-font-label);
+  font-size: calc(var(--wbp-text) * var(--wbp-scale));
+  min-height: calc(var(--wbp-row) * var(--wbp-scale));
+  line-height: 1.3;
+  border-radius: var(--wbp-radius);
+}
+
+.wbp-system :is(.studio-toolbar-shell, .studio-status-bar, .studio-dialog-header) {
+  font-family: var(--wbp-font-label);
+  font-size: calc(var(--wbp-text) * var(--wbp-scale));
+}
+
+.wbp-system :is(.studio-toolbar-shell, .studio-dialog-header, .studio-dialog-actions) {
+  gap: var(--wbp-gap);
+}
+
+.wbp-system :is(.studio-dialog-header, .studio-dialog-actions, .studio-dialog-body) {
+  padding-inline: var(--wbp-pad);
+}
+
+.wbp-system .wb-mono {
+  font-family: var(--wbp-font-value);
+  font-variant-numeric: tabular-nums;
+}
+
+.wbp-system .studio-status-bar {
+  font-variant-numeric: tabular-nums;
+}
+
+.wbp-system .wb-label {
+  font-family: var(--wbp-font-label);
+  font-size: calc(var(--wbp-label) * var(--wbp-scale));
+}

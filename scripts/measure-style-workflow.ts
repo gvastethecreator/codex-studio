@@ -237,8 +237,10 @@ export async function measureStyleWorkflow({
         const { context, page } = await openPage();
         const started = performance.now();
         await page.goto(variant.url, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+        await page.locator('[data-compact-style-selector]').waitFor({ timeout: 60_000 });
+        await page.locator('[data-open-style-catalog]').click();
         await page.locator('[data-style-browser-root]').waitFor({ timeout: 60_000 });
-        await page.getByRole('button', { name: 'Catalog', exact: true }).waitFor();
+        await page.locator('[data-close-style-catalog]').waitFor();
         await nextPaint(page);
         data.cold.push({ index, routeMs: performance.now() - started });
         await page.screenshot({ path: path.join(captureDir, `${variant.name}-entry.png`) });

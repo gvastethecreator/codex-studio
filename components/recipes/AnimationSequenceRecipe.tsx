@@ -98,7 +98,7 @@ function getParams(recipeParams: ImageGenerationConfig['recipeParams']) {
 }
 
 function getFrameTone(frame: Pick<AnimationSequenceFrameState, 'status'> | null | undefined) {
-  if (!frame) return 'border-white/2 bg-white/[0.035] text-zinc-400';
+  if (!frame) return 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)]';
   if (frame.status === 'blocked') return 'border-rose-500/2 bg-rose-500/10 text-rose-200';
   if (frame.status === 'generated') {
     return 'border-emerald-500/2 bg-emerald-500/10 text-emerald-200';
@@ -106,7 +106,7 @@ function getFrameTone(frame: Pick<AnimationSequenceFrameState, 'status'> | null 
   if (frame.status === 'generating' || frame.status === 'correcting') {
     return 'border-sky-500/2 bg-sky-500/10 text-sky-200';
   }
-  return 'border-white/2 bg-white/[0.035] text-zinc-300';
+  return 'border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-ink)]';
 }
 
 function getRunTone(status: AnimationSequenceRun['status'] | null | undefined) {
@@ -158,7 +158,7 @@ function NumberField({
 }) {
   return (
     <label className="grid gap-1.5">
-      <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">{label}</span>
+      <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">{label}</span>
       <input
         type="number"
         min={min}
@@ -168,7 +168,7 @@ function NumberField({
           const nextValue = parseBoundedNumberInput(event.target.value, min, max);
           if (nextValue !== null) onChange(nextValue);
         }}
-        className="h-9 rounded-md border border-white/2 bg-black/35 px-2 text-sm font-bold text-white outline-none transition-colors focus:border-amber-400/2"
+        className="h-9 rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-sm font-bold text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
       />
     </label>
   );
@@ -187,11 +187,11 @@ function SelectField({
 }) {
   return (
     <label className="grid gap-1.5">
-      <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">{label}</span>
+      <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">{label}</span>
       <select
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        className="h-9 rounded-md border border-white/2 bg-black/35 px-2 text-xs font-bold uppercase tracking-wide text-white outline-none transition-colors focus:border-amber-400/2"
+        className="h-9 rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-xs font-bold uppercase tracking-wide text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
       >
         {options.map((option) => (
           <option key={option} value={option}>
@@ -220,7 +220,7 @@ function ToggleField({
       className={`flex h-9 items-center justify-between rounded-md border px-2 text-[10px] font-black uppercase tracking-widest transition-colors ${
         value
           ? 'border-amber-400/2 bg-amber-500/10 text-amber-100'
-          : 'border-white/2 bg-black/30 text-zinc-500'
+          : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-muted)]'
       }`}
     >
       {label}
@@ -250,7 +250,7 @@ function ActionButton({
       className={`inline-flex h-9 items-center justify-center gap-2 rounded-md border px-3 text-[10px] font-black uppercase tracking-widest transition-[background-color,border-color,color,opacity] disabled:cursor-not-allowed disabled:opacity-45 ${
         tone === 'primary'
           ? 'border-amber-400/2 bg-amber-500/15 text-amber-100 hover:bg-amber-500/20'
-          : 'border-white/2 bg-white/[0.04] text-zinc-300 hover:border-white/2 hover:bg-white/[0.07]'
+          : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-white/[0.07]'
       } ${className}`}
     >
       {children}
@@ -577,25 +577,25 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
   };
 
   return (
-    <div className="flex h-full min-h-0 flex-col bg-zinc-950 text-zinc-100">
+    <div className="studio-surface flex h-full min-h-0 flex-col bg-[color:var(--wb-panel)] text-[color:var(--wb-ink)]">
       <div
         data-animation-workbench="true"
         className="custom-scrollbar grid min-h-0 flex-1 grid-cols-1 gap-2 overflow-y-auto p-3 lg:grid-cols-[18rem_minmax(0,1fr)] xl:grid-cols-[20rem_minmax(0,1fr)_24rem] xl:overflow-hidden"
       >
         <RecipeControls>
-          <aside className="flex min-h-[34rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 xl:min-h-0">
+          <aside className="flex min-h-[34rem] flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:min-h-0">
             <details open={!activeRun} className="recipe-draft-settings">
               <summary>New sequence configuration</summary>
-              <div className="border-b border-white/2 p-3">
+              <div className="border-b border-[color:var(--wb-line)] p-3">
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
                     <div className="text-[10px] font-black uppercase tracking-widest text-amber-300">
                       New sequence draft
                     </div>
-                    <h2 className="mt-1 truncate text-base font-black text-white">
+                    <h2 className="mt-1 truncate text-base font-black text-[color:var(--wb-ink)]">
                       Frame Sequence
                     </h2>
-                    <p className="mt-1 truncate text-xs text-zinc-500">
+                    <p className="mt-1 truncate text-xs text-[color:var(--wb-muted)]">
                       {contract.frameCount} frames / {contract.fps} fps / GIF
                     </p>
                   </div>
@@ -607,7 +607,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
               <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
                 <label className="grid gap-1.5">
-                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                     Motion Prompt
                   </span>
                   <textarea
@@ -616,7 +616,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     rows={5}
                     placeholder="Describe motion, timing, camera, and the visual anchor to preserve."
                     aria-describedby={!prompt.trim() ? 'animation-prompt-requirement' : undefined}
-                    className="resize-none rounded-md border border-white/2 bg-black/35 p-2 text-sm text-zinc-100 outline-none transition-colors focus:border-amber-400/2"
+                    className="resize-none rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 text-sm text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
                   />
                 </label>
 
@@ -657,14 +657,14 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     onChange={(value) => setParam('continuity', value)}
                   />
                   <label className="grid gap-1.5">
-                    <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                    <span className="text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                       Matte
                     </span>
                     <input
                       type="color"
                       value={contract.matteColor}
                       onChange={(event) => setParam('matteColor', event.target.value)}
-                      className="h-9 w-full rounded-md border border-white/2 bg-black/35"
+                      className="h-9 w-full rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)]"
                     />
                   </label>
                 </div>
@@ -701,7 +701,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 )}
 
                 {!prompt.trim() ? (
-                  <p id="animation-prompt-requirement" className="mt-2 text-[11px] text-zinc-500">
+                  <p id="animation-prompt-requirement" className="mt-2 text-[11px] text-[color:var(--wb-muted)]">
                     A motion prompt is required to prepare a run.
                   </p>
                 ) : null}
@@ -709,14 +709,14 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
             </details>
             <div className="p-3">
               <div className="mt-4">
-                <div className="mb-2 text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                <div className="mb-2 text-[9px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                   Recent runs
                 </div>
                 <div className="grid gap-2">
                   {isRunsLoading ? (
                     <div
                       role="status"
-                      className="rounded-md border border-white/2 px-3 py-4 text-xs text-zinc-500"
+                      className="rounded-md border border-[color:var(--wb-line)] px-3 py-4 text-xs text-[color:var(--wb-muted)]"
                     >
                       Loading runs...
                     </div>
@@ -737,7 +737,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                     </div>
                   ) : null}
                   {!isRunsLoading && !runsLoadError && runs.length === 0 ? (
-                    <div className="rounded-md border border-dashed border-white/2 px-3 py-4 text-xs leading-relaxed text-zinc-600">
+                    <div className="rounded-md border border-dashed border-[color:var(--wb-line)] px-3 py-4 text-xs leading-relaxed text-[color:var(--wb-dim)]">
                       Prepared runs will appear here and remain available after refresh.
                     </div>
                   ) : null}
@@ -750,18 +750,18 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                       className={`rounded-md border p-2 text-left transition-colors ${
                         activeRun?.id === run.id
                           ? 'border-amber-400/2 bg-amber-500/10'
-                          : 'border-white/2 bg-white/[0.035] hover:border-white/2'
+                          : 'border-[color:var(--wb-line)] bg-white/[0.035] hover:border-[color:var(--wb-border)]'
                       }`}
                     >
                       <div className="flex items-center justify-between gap-2">
-                        <span className="truncate text-xs font-black text-white">{run.title}</span>
+                        <span className="truncate text-xs font-black text-[color:var(--wb-ink)]">{run.title}</span>
                         <span
                           className={`rounded px-1.5 py-0.5 text-[8px] font-black uppercase ${getRunTone(run.status)}`}
                         >
                           {STATUS_LABELS[run.status]}
                         </span>
                       </div>
-                      <div className="mt-1 truncate font-mono text-[10px] text-zinc-600">
+                      <div className="mt-1 truncate font-mono text-[10px] text-[color:var(--wb-dim)]">
                         {run.id}
                       </div>
                     </button>
@@ -774,14 +774,14 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
         <main
           data-recipe-stage
-          className="flex min-h-[40rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/35 xl:min-h-0"
+          className="flex min-h-[40rem] flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] xl:min-h-0"
         >
-          <div className="flex items-center justify-between gap-3 border-b border-white/2 p-3">
+          <div className="flex items-center justify-between gap-3 border-b border-[color:var(--wb-line)] p-3">
             <div className="min-w-0">
-              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+              <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                 {activeRun ? 'Selected sequence' : 'New sequence draft'}
               </div>
-              <h3 className="truncate text-sm font-black text-white">
+              <h3 className="truncate text-sm font-black text-[color:var(--wb-ink)]">
                 {activeRun?.title ?? 'Draft plan'}
               </h3>
             </div>
@@ -819,10 +819,10 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   />
                 </div>
               ) : (
-                <div className="mb-3 grid min-h-[220px] place-items-center rounded-lg border border-white/2 bg-white/[0.025] text-center">
+                <div className="mb-3 grid min-h-[220px] place-items-center rounded-lg border border-[color:var(--wb-line)] bg-white/[0.025] text-center">
                   <div>
-                    <Gif size={44} className="mx-auto text-white/15" />
-                    <p className="mt-3 text-xs font-bold text-zinc-500">
+                    <Gif size={44} className="mx-auto text-[color:var(--wb-dim)]" />
+                    <p className="mt-3 text-xs font-bold text-[color:var(--wb-muted)]">
                       The playable preview appears after every frame is attached and exported.
                     </p>
                   </div>
@@ -854,7 +854,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                         selected ? 'border-amber-400/2 bg-amber-500/10' : getFrameTone(state)
                       }`}
                     >
-                      <div className="aspect-video bg-black/45">
+                      <div className="aspect-video bg-[color:var(--wb-well)]">
                         {generatedImage ? (
                           <img
                             src={generatedImage.thumbnail ?? generatedImage.src}
@@ -863,7 +863,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                             loading="lazy"
                           />
                         ) : (
-                          <div className="grid h-full place-items-center text-white/15">
+                          <div className="grid h-full place-items-center text-[color:var(--wb-dim)]">
                             {state?.status === 'generated' ? (
                               <Check size={20} />
                             ) : (
@@ -884,9 +884,9 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
               </div>
             </div>
 
-            <div className="border-t border-white/2 p-3">
+            <div className="border-t border-[color:var(--wb-line)] p-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <div className="flex flex-wrap items-center gap-2 text-[10px] font-black uppercase tracking-widest text-zinc-500">
+                <div className="flex flex-wrap items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                   <span>
                     {generatedCount}/{activeRun?.frames.length ?? contract.frameCount} frames
                   </span>
@@ -921,12 +921,12 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
         </main>
 
         <RecipeControls>
-          <aside className="flex min-h-[30rem] flex-col overflow-hidden rounded-lg border border-white/2 bg-black/40 lg:col-span-2 xl:col-span-1 xl:min-h-0">
-            <div className="border-b border-white/2 p-3">
-              <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+          <aside className="flex min-h-[30rem] flex-col overflow-hidden rounded-lg border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] lg:col-span-2 xl:col-span-1 xl:min-h-0">
+            <div className="border-b border-[color:var(--wb-line)] p-3">
+              <div className="text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
                 Frame Inspector
               </div>
-              <h3 className="mt-1 truncate text-sm font-black text-white">
+              <h3 className="mt-1 truncate text-sm font-black text-[color:var(--wb-ink)]">
                 {selectedFrame?.id ?? selectedPlanFrame?.id ?? 'No frame'}
               </h3>
             </div>
@@ -946,7 +946,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 readOnly
                 rows={12}
                 aria-describedby={promptLoadError ? 'animation-frame-prompt-error' : undefined}
-                className="w-full resize-none rounded-md border border-white/2 bg-black/35 p-2 font-mono text-[11px] leading-relaxed text-zinc-300 outline-none"
+                className="w-full resize-none rounded-md border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-2 font-mono text-[11px] leading-relaxed text-[color:var(--wb-ink)] outline-none"
               />
 
               {promptLoadError ? (
@@ -989,10 +989,10 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
               </div>
 
               {activeRun && selectedFrame ? (
-                <div className="mt-3 rounded-md border border-white/2 bg-white/[0.03] p-2 text-[10px] text-zinc-500">
+                <div className="mt-3 rounded-md border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2 text-[10px] text-[color:var(--wb-muted)]">
                   <div className="flex justify-between gap-2">
                     <span>Job status</span>
-                    <span className="font-black uppercase text-zinc-300">
+                    <span className="font-black uppercase text-[color:var(--wb-ink)]">
                       {selectedFrame.jobId
                         ? (linkedJobs[selectedFrame.jobId] ?? 'Checking job')
                         : FRAME_STATUS_LABELS[selectedFrame.status]}
@@ -1000,7 +1000,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   </div>
                   <div className="mt-1 flex justify-between gap-2">
                     <span>Catalog</span>
-                    <span className="truncate font-mono text-zinc-300">
+                    <span className="truncate font-mono text-[color:var(--wb-ink)]">
                       {selectedFrame.catalogImageId ?? 'none'}
                     </span>
                   </div>
@@ -1013,7 +1013,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                         );
                         if (image) onSelectImage(image);
                       }}
-                      className="mt-2 h-8 w-full rounded-md border border-white/2 bg-white/[0.04] text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                      className="mt-2 h-8 w-full rounded-md border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[10px] font-black uppercase tracking-widest text-[color:var(--wb-ink)]"
                     >
                       Preview
                     </button>

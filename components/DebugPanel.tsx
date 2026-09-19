@@ -56,30 +56,30 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
         type="button"
         aria-label="Close activity inspector"
         tabIndex={-1}
-        className="absolute inset-0 h-full w-full bg-black/70 backdrop-blur-sm"
+        className="absolute inset-0 h-full w-full studio-scrim backdrop-blur-sm"
         onClick={onClose}
       />
 
-      <div className="absolute inset-y-3 right-3 left-3 lg:left-auto lg:w-[min(960px,90vw)] overflow-hidden rounded-xl border border-white/2 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.65)]">
-        <div className="flex items-center justify-between border-b border-white/2 px-6 py-5">
+      <div className="studio-dialog absolute inset-y-3 right-3 left-3 lg:left-auto lg:w-[min(960px,90vw)] overflow-hidden">
+        <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-6 py-5">
           <div>
-            <div className="text-[10px] font-black uppercase tracking-[0.22em] text-zinc-500">
+            <div className="text-[10px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
               Studio activity
             </div>
-            <h2 className="mt-1 text-xl font-semibold text-white">Job details</h2>
+            <h2 className="mt-1 text-xl font-semibold text-[color:var(--wb-ink)]">Job details</h2>
           </div>
           <button
             type="button"
             aria-label="Close job inspector"
             onClick={onClose}
-            className="rounded-full border border-white/2 bg-white/5 p-2.5 text-zinc-300 transition-colors hover:border-white/2 hover:bg-white/10 hover:text-white"
+            className="rounded-full border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2.5 text-[color:var(--wb-ink)] transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
           >
             <X size={18} />
           </button>
         </div>
 
         <div className="flex h-[calc(100%-88px)] flex-col overflow-y-auto">
-          <details className="custom-scrollbar overflow-y-auto border-b border-white/2 bg-black/20 px-5 py-5 xl:border-b-0 xl:border-r xl:px-6">
+          <details className="custom-scrollbar overflow-y-auto border-b border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-5 py-5 xl:border-b-0 xl:border-r xl:px-6">
             <summary className="cursor-pointer text-sm">Workspace activity and logs</summary>
             <SessionOverview
               variant="drawer"
@@ -101,14 +101,14 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
                 onRetryJob={onRetryJob}
               />
             ) : isLoadingSelectedJob ? (
-              <div className="flex h-full min-h-80 items-center justify-center rounded-[28px] border border-white/2 bg-white/[0.03] text-zinc-500">
+              <div className="flex h-full min-h-80 items-center justify-center rounded-[28px] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] text-[color:var(--wb-muted)]">
                 Loading job detail…
               </div>
             ) : (
-              <div className="flex h-full min-h-80 flex-col items-center justify-center rounded-[28px] border border-dashed border-white/2 bg-white/[0.03] p-8 text-center">
+              <div className="flex h-full min-h-80 flex-col items-center justify-center rounded-[28px] border border-dashed border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-8 text-center">
                 <BrainCircuit size={30} className="mb-4 text-accent-400" />
-                <h3 className="text-xl font-semibold text-white">Pick a job to inspect</h3>
-                <p className="mt-3 max-w-2xl text-sm leading-7 text-zinc-500">
+                <h3 className="text-xl font-semibold text-[color:var(--wb-ink)]">Pick a job to inspect</h3>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-[color:var(--wb-muted)]">
                   Select any backend job from the session rail to open a readable timeline with
                   formatted transcript steps, structured event facts, and any images or file
                   references we can detect from the recorded payloads.

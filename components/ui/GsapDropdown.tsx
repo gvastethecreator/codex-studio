@@ -12,6 +12,7 @@ import { useGSAP } from '@gsap/react';
 
 import gsap from '../../lib/motionRuntime';
 import { cn } from '../../lib/utils';
+import { workbenchAmbientPortalProps } from '../../lib/workbenchAmbient';
 
 gsap.registerPlugin(useGSAP);
 
@@ -71,7 +72,13 @@ function resolvePortalStyle({
   const desiredLeft = placement.endsWith('right')
     ? triggerRect.right - panelWidth
     : triggerRect.left;
-  const desiredTop = placement.startsWith('top')
+  const spaceBelow = window.innerHeight - triggerRect.bottom - portalOffset - viewportPadding;
+  const spaceAbove = triggerRect.top - portalOffset - viewportPadding;
+  const preferAbove = placement.startsWith('top');
+  const placeAbove = preferAbove
+    ? spaceAbove >= panelHeight || spaceAbove > spaceBelow
+    : spaceBelow < panelHeight && spaceAbove > spaceBelow;
+  const desiredTop = placeAbove
     ? triggerRect.top - panelHeight - portalOffset
     : triggerRect.bottom + portalOffset;
 
@@ -245,9 +252,12 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
 
     if (!isMounted) return null;
 
+    const ambient = workbenchAmbientPortalProps();
+
     const dropdown = (
       <div
         {...props}
+        {...ambient}
         id={dropdownId}
         ref={setRefs}
         role={role}
@@ -255,7 +265,8 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         data-state={open ? 'open' : 'closed'}
         style={portal ? { ...style, ...portalStyle } : style}
         className={cn(
-          'origin-top-right rounded-xl border border-white/2 bg-zinc-950/96 shadow-[0_20px_60px_rgba(0,0,0,0.46)] outline-none',
+          ambient.className,
+          'origin-top-right rounded-md border border-[color:var(--wb-border)] outline-none',
           className,
         )}
       >

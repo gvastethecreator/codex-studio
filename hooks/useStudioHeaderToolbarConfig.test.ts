@@ -16,6 +16,7 @@ describe('buildStudioHeaderToolbarProps', () => {
         activeRecipe: null,
         activeRecipeAliasId: null,
         onCloseRecipe: () => calls.push('closeRecipe'),
+        onSelectRecipe: (recipeId) => calls.push(`recipe:${recipeId}`),
         usage: {
           value: '120',
           meta: 'ChatGPT Pro',
@@ -122,6 +123,7 @@ describe('buildStudioHeaderToolbarProps', () => {
     props.onOpenSettings();
 
     expect(props.activeWorkspaceId).toBe('default');
+    expect(props.onSelectRecipe).toBeTypeOf('function');
     expect(props.trashCount).toBe(2);
     expect(props.usage.value).toBe('120');
     expect(props.commandCenter.compactMode).toBe(true);

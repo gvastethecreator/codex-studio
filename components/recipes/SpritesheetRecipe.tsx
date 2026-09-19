@@ -70,11 +70,11 @@ function getDividerStyle(dividers: string): string {
 
 function getBackgroundClass(background: string): string {
   if (background === 'Checkerboard')
-    return 'bg-[linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a),linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a)] bg-[length:20px_20px] bg-[position:0_0,10px_10px] bg-zinc-900';
+    return 'bg-[linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a),linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a)] bg-[length:20px_20px] bg-[position:0_0,10px_10px] bg-[color:var(--wb-panel)]';
   if (background.includes('Green')) return 'bg-[#00FF00]';
   if (background === 'White') return 'bg-white';
   if (background === 'Black') return 'bg-black';
-  if (background === 'Dark Grey') return 'bg-zinc-800';
+  if (background === 'Dark Grey') return 'bg-[color:var(--wb-bar)]';
   return '';
 }
 
@@ -105,21 +105,21 @@ function SpritesheetSidebar({
     <>
       <div
         className={`
-              fixed inset-x-3 z-50 flex max-h-[42vh] flex-col overflow-hidden rounded-2xl border border-white/2 bg-zinc-950/95 shadow-2xl backdrop-blur-xl transition-[color,background-color,border-color,opacity,box-shadow,transform,filter] duration-500 ease-out-expo sm:relative sm:inset-auto sm:z-auto sm:max-h-none sm:flex-shrink-0 sm:bg-black/40 sm:rounded-3xl
+              fixed inset-x-3 z-50 flex max-h-[42vh] flex-col overflow-hidden rounded-2xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/95 shadow-2xl backdrop-blur-xl transition-[color,background-color,border-color,opacity,box-shadow,transform,filter] duration-500 ease-out-expo sm:relative sm:inset-auto sm:z-auto sm:max-h-none sm:flex-shrink-0 sm:bg-[color:var(--wb-well)] sm:rounded-3xl
               ${isOpen ? 'translate-y-0 opacity-100 sm:w-72' : 'pointer-events-none translate-y-4 opacity-0 sm:w-0 sm:border-0'}
            `}
         style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
       >
-        <div className="h-14 border-b border-white/2 flex items-center px-5 gap-2 bg-white/[0.02]">
+        <div className="h-14 border-b border-[color:var(--wb-line)] flex items-center px-5 gap-2 bg-white/[0.02]">
           <Hash size={14} className="text-emerald-500" />
-          <span className="text-[10px] font-black text-white uppercase tracking-widest">
+          <span className="text-[10px] font-black text-[color:var(--wb-ink)] uppercase tracking-widest">
             Edit Cells
           </span>
           <button
             type="button"
             aria-label="Close cell editor"
             onClick={onClose}
-            className="ml-auto text-zinc-500 hover:text-white"
+            className="ml-auto text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]"
           >
             <X size={14} />
           </button>
@@ -131,13 +131,13 @@ function SpritesheetSidebar({
               key={i}
               onClick={() => onSetEditingCell(i)}
               className={`group p-2.5 rounded-xl border transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-200 cursor-pointer appearance-none
-                              ${hoveredCell === i || editingCell === i ? 'bg-white/10 border-emerald-500/2 shadow-lg' : 'bg-black/20 border-white/2 hover:bg-white/5'}\n                          `}
+                              ${hoveredCell === i || editingCell === i ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] border-emerald-500/2 shadow-lg' : 'bg-[color:var(--wb-well)] border-[color:var(--wb-line)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'}\n                          `}
               onMouseEnter={() => onSetHoveredCell(i)}
               onMouseLeave={() => onSetHoveredCell(null)}
             >
               <div className="flex items-center justify-between mb-1.5">
                 <span
-                  className={`text-[9px] font-black uppercase tracking-widest ${hoveredCell === i || editingCell === i ? 'text-emerald-400' : 'text-zinc-600'}`}
+                  className={`text-[9px] font-black uppercase tracking-widest ${hoveredCell === i || editingCell === i ? 'text-emerald-400' : 'text-[color:var(--wb-dim)]'}`}
                 >
                   Cell {i + 1}
                 </span>
@@ -149,7 +149,7 @@ function SpritesheetSidebar({
                   </div>
                 )}
               </div>
-              <div className="text-[10px] text-zinc-400 truncate h-4">
+              <div className="text-[10px] text-[color:var(--wb-muted)] truncate h-4">
                 {cellPrompts[i] || 'Empty...'}
               </div>
             </button>
@@ -161,7 +161,7 @@ function SpritesheetSidebar({
         <button
           type="button"
           onClick={onOpen}
-          className="fixed right-3 z-50 rounded-xl border border-white/2 bg-zinc-900 p-3 text-zinc-400 shadow-lg transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-zinc-800 hover:text-white sm:absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 sm:rounded-l-xl sm:p-2"
+          className="fixed right-3 z-50 rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-3 text-[color:var(--wb-muted)] shadow-lg transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-[color:var(--wb-bar)] hover:text-[color:var(--wb-ink)] sm:absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 sm:rounded-l-xl sm:p-2"
           style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
           aria-label="Open cell editor"
         >
@@ -280,7 +280,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
         />
         {params.background === 'Custom' && (
           <div className="flex flex-col gap-1.5">
-            <span className="text-[8px] font-black text-zinc-500 uppercase tracking-widest pl-1">
+            <span className="text-[8px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest pl-1">
               Hex
             </span>
             <MinimalColorPicker color={customColor} onChange={setCustomColor} />
@@ -294,12 +294,12 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           onSelect={(v) => setParams((p) => ({ ...p, dividers: v }))}
           activeColor="emerald"
         />
-        <div className="w-px h-8 bg-white/10 mx-2 hidden sm:block" />
+        <div className="w-px h-8 bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-2 hidden sm:block" />
         <div className="px-2 hidden sm:block">
           <div className="text-[8px] font-black text-emerald-500 uppercase tracking-widest mb-0.5">
             Status
           </div>
-          <div className="text-[10px] font-bold text-white leading-none">Ready</div>
+          <div className="text-[10px] font-bold text-[color:var(--wb-ink)] leading-none">Ready</div>
         </div>
       </>
     ),
@@ -332,8 +332,8 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
         <div className="flex-1 flex flex-col items-center justify-center relative min-w-0 h-full">
           {/* Auto-Scaling Container */}
           <div
-            className={`relative border-2 border-dashed transition-[background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo overflow-hidden shadow-2xl bg-zinc-900/30
-                        ${hasDividers ? getDividerStyle(params.dividers) : 'border-white/2'}
+            className={`relative border-2 border-dashed transition-[background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo overflow-hidden shadow-2xl bg-[color:var(--wb-panel)]/30
+                        ${hasDividers ? getDividerStyle(params.dividers) : 'border-[color:var(--wb-line)]'}
                     `}
             style={gridContainerStyle}
           >
@@ -351,7 +351,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                             `}
               >
                 {editingCell === i ? (
-                  <div className="absolute inset-0 z-20 bg-zinc-900/95 flex flex-col p-1 animate-in fade-in zoom-in-95 duration-200">
+                  <div className="absolute inset-0 z-20 bg-[color:var(--wb-panel)]/95 flex flex-col p-1 animate-in fade-in zoom-in-95 duration-200">
                     <textarea
                       ref={cellInputRef}
                       value={cellPrompts[i] || ''}
@@ -365,7 +365,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                         }
                       }}
                       placeholder={`Cell ${i + 1}`}
-                      className="size-full bg-transparent text-[10px] font-bold text-white resize-none outline-none placeholder-zinc-600 leading-tight"
+                      className="size-full bg-transparent text-[10px] font-bold text-[color:var(--wb-ink)] resize-none outline-none placeholder-zinc-600 leading-tight"
                     />
                   </div>
                 ) : (
@@ -379,19 +379,19 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                     aria-label={`Edit cell ${i + 1} prompt`}
                   >
                     <span
-                      className={`text-[10px] font-black mb-0.5 drop-shadow-md ${isLightBg ? 'text-black/50' : 'text-white/30'}`}
+                      className={`text-[10px] font-black mb-0.5 drop-shadow-md ${isLightBg ? 'text-black/50' : 'text-[color:var(--wb-ink)]/30'}`}
                     >
                       {i + 1}
                     </span>
                     {cellPrompts[i] && (
                       <span
-                        className={`line-clamp-3 text-xs leading-relaxed ${isLightBg ? 'text-black' : 'text-white'}`}
+                        className={`line-clamp-3 text-xs leading-relaxed ${isLightBg ? 'text-black' : 'text-[color:var(--wb-ink)]'}`}
                       >
                         {cellPrompts[i]}
                       </span>
                     )}
                     {hoveredCell === i && !cellPrompts[i] && (
-                      <Edit3 size={12} className={isLightBg ? 'text-black/30' : 'text-white/30'} />
+                      <Edit3 size={12} className={isLightBg ? 'text-black/30' : 'text-[color:var(--wb-ink)]/30'} />
                     )}
                   </button>
                 )}
@@ -399,13 +399,13 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
             ))}
           </div>
 
-          <div className="absolute bottom-2 left-2 right-2 justify-center bg-black/60 border border-white/2 px-3 py-2 rounded-xl flex items-center gap-3 shadow-lg pointer-events-none sm:-bottom-12 sm:left-auto sm:right-auto sm:justify-start sm:px-4">
+          <div className="absolute bottom-2 left-2 right-2 justify-center bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] border border-[color:var(--wb-line)] px-3 py-2 rounded-xl flex items-center gap-3 shadow-lg pointer-events-none sm:-bottom-12 sm:left-auto sm:right-auto sm:justify-start sm:px-4">
             <ScanLine size={16} className="text-emerald-400" />
             <div className="flex flex-col">
-              <span className="text-[10px] font-black text-white uppercase tracking-widest">
+              <span className="text-[10px] font-black text-[color:var(--wb-ink)] uppercase tracking-widest">
                 {config.aspectRatio} Canvas
               </span>
-              <span className="text-[8px] font-bold text-zinc-500 uppercase">
+              <span className="text-[8px] font-bold text-[color:var(--wb-muted)] uppercase">
                 {gridCols}x{gridRows} Grid • {params.dividers}
               </span>
             </div>

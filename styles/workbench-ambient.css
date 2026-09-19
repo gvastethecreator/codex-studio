@@ -1,0 +1,373 @@
+/*! Third-party notice: selected AmbientCSS equations
+MIT License — Copyright (c) 2026 Ramakrishnan Veeraragavan
+Full text: third-party/ambientcss/LICENSE
+*/
+/*! Workbench Ambient 0.4.0 · SELECTED, ADAPTED AmbientCSS lighting equations.
+ * Source: kikkupico/ambientcss/packages/ambient-css/src/ambient.css, inspected
+ * 2026-09-16; package manifest 3.1.0. NOT an unmodified/full upstream package.
+ * Copyright (c) 2026 Ramakrishnan Veeraragavan. MIT; see third-party/ambientcss/LICENSE.
+ * Changes: scoped rules, explicit per-part depth reset, reusable shadow outputs,
+ * separate curvature/specular layers, depth gain for dense editor controls,
+ * and Studio chrome selectors (studio-surface/control/well/bar/popover).
+ * No global reset, @property registration, textures, pseudo-elements or filters.
+ */
+
+@scope (.wb-ambient[data-ambient-enabled='true']) {
+  :where(
+    [data-wba-surface],
+    .wb-button:not([data-variant='ghost']),
+    .wb-select-trigger,
+    .wb-knob,
+    .wb-panel,
+    .wb-channel-strip,
+    .wb-input,
+    .wb-popover,
+    .wb-toolbar,
+    .wb-transport,
+    .wb-timecode,
+    .wb-fader-input,
+    .wb-range,
+    .studio-surface,
+    .studio-control,
+    .studio-well,
+    .studio-bar,
+    .studio-popover,
+    .create-tools,
+    .create-stage,
+    .workbench-config,
+    .studio-status-bar,
+    .studio-toolbar-shell,
+    .create-select-field,
+    .create-stepper,
+    .create-tool-chip,
+    .create-generate-button,
+    .create-workflow-quiet-select,
+    .create-composer,
+    .create-negative-input,
+    .create-format-popover,
+    .create-workflow-popover,
+    .studio-dialog,
+    .studio-field,
+    .studio-list-row,
+    .studio-ghost-control,
+    .studio-primary-control,
+    .wbp-dial-face,
+    .wbp-thumb,
+    [data-gsap-dropdown]
+  ) {
+    --amb-elevation: 0;
+    --amb-thickness: 0.35;
+    --amb-chamfer: 0.3;
+    --amb-fillet: 0;
+    --amb-chamfer-width: 1;
+    --amb-fillet-width: 1;
+    --amb-shade: 1;
+    --amb-albedo: var(--wba-control-albedo, #444444);
+    --wba-shape: 0;
+    --wba-shape-axis: var(--amb-light-y);
+    --wba-shape-angle: 180deg;
+    --wba-shiny: 0;
+    --wba-recess: 0;
+    --_amb-chamfer-w: max(-1 * var(--amb-thickness), min(var(--amb-chamfer-width), var(--amb-thickness)));
+    --_amb-fillet-w: max(-1 * var(--amb-thickness), min(var(--amb-fillet-width), var(--amb-thickness)));
+    --_amb-sh-gate: max(0, min(var(--amb-elevation) + var(--amb-thickness), 1));
+    --_amb-body-gate: max(0, min(var(--amb-thickness), 1));
+    --_amb-sweep-a: calc(
+      var(--_amb-sh-gate) * var(--_amb-body-gate) * max(0, 1 - var(--amb-elevation) / 3) *
+        (var(--amb-thickness) * 0.02 + 0.047)
+    );
+    --amb-exposure: calc(var(--amb-key-light-intensity) * 0.6396 + var(--amb-fill-light-intensity) * 0.5496);
+    --_amb-diffuse: color(
+      from var(--amb-albedo) srgb-linear calc(r * var(--amb-shade) * var(--amb-exposure))
+        calc(g * var(--amb-shade) * var(--amb-exposure)) calc(b * var(--amb-shade) * var(--amb-exposure))
+    );
+    --amb-lit: color-mix(
+      in srgb,
+      var(--_amb-diffuse),
+      hsl(from var(--_amb-diffuse) var(--amb-light-hue) calc(100 - s) l) var(--amb-light-saturation)
+    );
+    --amb-curve-delta: calc(
+      ((var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 3.16 + 3.78) * var(--amb-curve-scale)
+    );
+    --_wba-curve: calc(max(-1, min(var(--wba-shape-axis), 1)) * var(--amb-curve-delta) * var(--wba-shape));
+    --wba-curve-image: linear-gradient(
+      var(--wba-shape-angle),
+      hsl(from var(--amb-lit) h s calc(l + var(--_wba-curve))) 0%,
+      hsl(from var(--amb-lit) h s calc(l + var(--_wba-curve) * 0.33)) 35%,
+      hsl(from var(--amb-lit) h s l) 50%,
+      hsl(from var(--amb-lit) h s calc(l - var(--_wba-curve) * 0.33)) 65%,
+      hsl(from var(--amb-lit) h s calc(l - var(--_wba-curve))) 100%
+    );
+    --_shiny-angle: calc(atan2(var(--amb-light-y), var(--amb-light-x)) + 270deg);
+    --wba-specular-image:
+      linear-gradient(
+        var(--_shiny-angle),
+        hsl(
+            var(--amb-light-hue) var(--amb-light-saturation) 100% /
+              calc((var(--amb-key-light-intensity) * 0.09 + 0.07) * var(--wba-shiny))
+          )
+          0%,
+        transparent 10% 24%,
+        hsl(
+            var(--amb-light-hue) var(--amb-light-saturation) 100% /
+              calc((var(--amb-key-light-intensity) * 0.04 + 0.31) * var(--wba-shiny))
+          )
+          30%,
+        transparent 36% 100%
+      ),
+      linear-gradient(
+        to bottom,
+        hsl(
+            var(--amb-light-hue) var(--amb-light-saturation) 100% /
+              calc(var(--amb-fill-light-intensity) * 0.22 * var(--wba-shiny))
+          )
+          0%,
+        transparent 45% 60%,
+        hsl(
+            var(--amb-light-hue) var(--amb-light-saturation) 0% /
+              calc(var(--amb-fill-light-intensity) * 0.1 * var(--wba-shiny))
+          )
+          100%
+      );
+    --wba-cast-shadow:
+      hsl(
+          var(--amb-light-hue) var(--amb-light-saturation) 0% /
+            calc(
+              var(--_amb-sh-gate) *
+                (
+                  (var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 0.13 + var(--amb-elevation) *
+                    -0.077 + 0.368 - var(--_amb-body-gate) * max(0, 1 - var(--amb-elevation)) * 0.14
+                )
+            )
+        )
+        calc(var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 3.8px) * -1 * var(--wba-depth))
+        calc(var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 3.8px) * -1 * var(--wba-depth))
+        calc((var(--amb-elevation) * 4.8px + var(--amb-thickness) * 2.7px) * var(--wba-depth)) 0.8px,
+      hsl(var(--amb-light-hue) var(--amb-light-saturation) 0% / var(--_amb-sweep-a))
+        calc(var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 2.85px) * -1 * var(--wba-depth))
+        calc(var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 2.85px) * -1 * var(--wba-depth))
+        calc((var(--amb-elevation) * 4.8px + var(--amb-thickness) * 2px) * var(--wba-depth))
+        calc(var(--amb-thickness) * 0.9px),
+      hsl(var(--amb-light-hue) var(--amb-light-saturation) 0% / var(--_amb-sweep-a))
+        calc(var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 1.9px) * -1 * var(--wba-depth))
+        calc(var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 1.9px) * -1 * var(--wba-depth))
+        calc((var(--amb-elevation) * 4.8px + var(--amb-thickness) * 1.35px) * var(--wba-depth))
+        calc(var(--amb-thickness) * 0.6px),
+      hsl(var(--amb-light-hue) var(--amb-light-saturation) 0% / var(--_amb-sweep-a))
+        calc(var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 0.95px) * -1 * var(--wba-depth))
+        calc(var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 0.95px) * -1 * var(--wba-depth))
+        calc((var(--amb-elevation) * 4.8px + var(--amb-thickness) * 0.7px) * var(--wba-depth))
+        calc(var(--amb-thickness) * 0.3px),
+      inset calc(var(--amb-light-x) * var(--_amb-chamfer-w) * -1px)
+        calc(var(--amb-light-y) * var(--_amb-chamfer-w) * -1px) 0 0
+        hsl(
+          var(--amb-light-hue) var(--amb-light-saturation) 100% /
+            calc(
+              var(--amb-chamfer) * max(0, min(var(--amb-thickness), 1)) *
+                (var(--amb-key-light-intensity) * 1.57 + var(--amb-fill-light-intensity) * 0.85 - 1.03)
+            )
+        ),
+      inset calc(var(--amb-light-x) * var(--_amb-chamfer-w) * 1px)
+        calc(var(--amb-light-y) * var(--_amb-chamfer-w) * 1px) 0 0
+        hsl(
+          var(--amb-light-hue) var(--amb-light-saturation) 0% /
+            calc(
+              var(--amb-chamfer) * max(0, min(var(--amb-thickness), 1)) *
+                ((var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 0.19 + 0.24)
+            )
+        ),
+      inset calc(var(--amb-light-x) * var(--_amb-fillet-w) * -1.4px)
+        calc(var(--amb-light-y) * var(--_amb-fillet-w) * -1.4px) 2px 0
+        hsl(
+          var(--amb-light-hue) var(--amb-light-saturation) 100% /
+            calc(
+              var(--amb-fillet) * max(0, min(var(--amb-thickness), 1)) *
+                (var(--amb-key-light-intensity) * 1.44 + var(--amb-fill-light-intensity) * 0.85 - 0.99)
+            )
+        ),
+      inset calc(var(--amb-light-x) * var(--_amb-fillet-w) * 1.4px)
+        calc(var(--amb-light-y) * var(--_amb-fillet-w) * 1.4px) 2px 0
+        hsl(
+          var(--amb-light-hue) var(--amb-light-saturation) 0% /
+            calc(
+              var(--amb-fillet) * max(0, min(var(--amb-thickness), 1)) *
+                ((var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 0.23 + 0.3)
+            )
+        );
+    --_amb-groove-exposure: calc(var(--amb-key-light-intensity) * 0.6623 + var(--amb-fill-light-intensity) * 0.5527);
+    --_amb-groove-diffuse: color(
+      from var(--amb-albedo) srgb-linear calc(r * var(--amb-shade) * var(--_amb-groove-exposure))
+        calc(g * var(--amb-shade) * var(--_amb-groove-exposure)) calc(b * var(--amb-shade) * var(--_amb-groove-exposure))
+    );
+    --wba-groove-color: color-mix(
+      in srgb,
+      var(--_amb-groove-diffuse),
+      hsl(from var(--_amb-groove-diffuse) var(--amb-light-hue) calc(100 - s) l) var(--amb-light-saturation)
+    );
+    --wba-groove-shadow:
+      inset calc(var(--amb-light-x) * var(--amb-thickness) * -3.6px)
+        calc(var(--amb-light-y) * var(--amb-thickness) * -3.6px) calc(var(--amb-thickness) * 2.7px) 0
+        hsl(
+          var(--amb-light-hue) var(--amb-light-saturation) 0% /
+            calc(
+              max(0, min(var(--amb-thickness), 1)) *
+                ((var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 0.24 + 0.31)
+            )
+        ),
+      inset calc(var(--amb-light-x) * var(--amb-thickness) * 2.7px)
+        calc(var(--amb-light-y) * var(--amb-thickness) * 2.7px) calc(var(--amb-thickness) * 5.1px) 0
+        hsl(
+          var(--amb-light-hue) var(--amb-light-saturation) 100% /
+            calc(
+              max(0, min(var(--amb-thickness), 1)) *
+                max(0, min(var(--amb-key-light-intensity) * 1.5 + var(--amb-fill-light-intensity) * 0.72 - 0.96, 1))
+            )
+        );
+  }
+}
+
+@supports (color: color(from #333 srgb-linear calc(r * 0.9) g b)) and
+  (background: linear-gradient(calc(atan2(-1, -1) + 270deg), #fff, #000)) {
+  @scope (.wb-ambient[data-ambient-enabled='true']) {
+    :is(
+      [data-wba-surface],
+      .wb-button,
+      .wb-select-trigger,
+      .wb-knob,
+      .wb-panel,
+      .wb-channel-strip,
+      .wb-toolbar,
+      .wb-transport,
+      .wb-input,
+      .wb-timecode,
+      .wb-popover,
+      .studio-surface,
+      .studio-control,
+      .studio-well,
+      .studio-bar,
+      .studio-popover,
+      .create-tools,
+      .create-stage,
+      .workbench-config,
+      .studio-status-bar,
+      .studio-toolbar-shell,
+      .create-select-field,
+      .create-stepper,
+      .create-tool-chip,
+      .create-generate-button,
+      .create-workflow-quiet-select,
+      .create-composer,
+      .create-negative-input,
+      .create-format-popover,
+      .create-workflow-popover,
+      .studio-dialog,
+      .studio-field,
+      .studio-list-row,
+      .studio-ghost-control,
+      .studio-primary-control,
+      .wbp-dial-face,
+      .wbp-thumb,
+      [data-gsap-dropdown]
+    ) {
+      background-color: var(--amb-lit);
+      background-image: var(--wba-specular-image), var(--wba-curve-image);
+      box-shadow: var(--wba-cast-shadow);
+    }
+    :is(.wbp-dial-face, .wbp-thumb) {
+      --amb-albedo: var(--wba-knob-albedo);
+      --amb-thickness: 0.8;
+      --amb-elevation: 0.15;
+      --amb-fillet: 0.6;
+      --wba-shape: -1;
+      --wba-shiny: var(--wba-control-shiny);
+    }
+    :is(
+      .wb-panel,
+      .wb-channel-strip,
+      .wb-toolbar,
+      .wb-transport,
+      .wb-popover,
+      .studio-surface,
+      .studio-bar,
+      .studio-popover,
+      .studio-dialog,
+      .create-tools,
+      .create-stage,
+      .workbench-config,
+      .studio-status-bar,
+      .studio-toolbar-shell,
+      .create-format-popover,
+      .create-workflow-popover,
+      [data-gsap-dropdown]
+    ) {
+      --amb-albedo: var(--wba-panel-albedo);
+      --amb-thickness: 0.55;
+      --amb-chamfer: 0.3;
+      border-color: rgb(255 255 255 / 0.05);
+    }
+    :is(
+      .wb-button:not([data-variant='ghost']),
+      .wb-select-trigger,
+      .studio-control,
+      .create-select-field,
+      .create-stepper,
+      .create-tool-chip,
+      .create-workflow-quiet-select,
+      .studio-field,
+      .studio-ghost-control
+    ) {
+      --amb-thickness: 0.55;
+      --amb-elevation: 0.08;
+      --amb-chamfer: 0.55;
+      --wba-shape: 1;
+      --wba-shiny: var(--wba-control-shiny);
+    }
+    .create-generate-button,
+    .studio-primary-control,
+    .wb-button[data-variant='primary'] {
+      --amb-albedo: var(--wb-accent-fill, color-mix(in srgb, var(--wba-accent) 50%, #0a0a0a));
+      --amb-thickness: 0.25;
+      color: var(--wb-on-fill, #f4f4f4);
+    }
+    :is(.create-composer, .create-negative-input, .studio-well, .studio-field, .studio-list-row, .wb-input) {
+      --amb-albedo: var(--wba-well-albedo);
+      --amb-thickness: 0.32;
+      --amb-chamfer: 0;
+      background: var(--wba-groove-color);
+      box-shadow: var(--wba-groove-shadow);
+      background-image: none;
+    }
+  }
+}
+
+@media (forced-colors: active) {
+  .wb-ambient[data-ambient-enabled='true'] {
+    background: Canvas;
+    --wb-ink: CanvasText;
+  }
+  .wb-ambient
+    :is(
+      [data-wba-surface],
+      .wb-button,
+      .wb-input,
+      .studio-surface,
+      .studio-control,
+      .studio-well,
+      .studio-dialog,
+      .create-tools,
+      .create-generate-button,
+      .studio-primary-control
+    ) {
+    box-shadow: none !important;
+    background: Canvas !important;
+    color: CanvasText !important;
+    border: 1px solid ButtonText;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wb-ambient * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

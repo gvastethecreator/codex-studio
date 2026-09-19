@@ -27,7 +27,7 @@ function getJobTone(job: StudioJob) {
     case 'completed':
       return 'text-emerald-300 border-emerald-500/2 bg-emerald-500/10';
     case 'cancelled':
-      return 'text-zinc-300 border-white/10 bg-white/5';
+      return 'text-[color:var(--wb-ink)] border-[color:var(--wb-border)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]';
     case 'failed':
       return 'text-rose-300 border-rose-500/2 bg-rose-500/10';
     case 'needs_review':
@@ -54,8 +54,8 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
   const activeJobCount = jobSummary.queued + jobSummary.running;
 
   const sectionTitleClass = isDrawer
-    ? 'text-[11px] font-black text-zinc-400 uppercase tracking-[0.18em]'
-    : 'text-[10px] font-black text-zinc-400 uppercase tracking-widest';
+    ? 'text-[11px] font-black text-[color:var(--wb-muted)] uppercase tracking-[0.18em]'
+    : 'text-[10px] font-black text-[color:var(--wb-muted)] uppercase tracking-widest';
 
   return (
     <div className="flex flex-col gap-6">
@@ -65,16 +65,16 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
           <h3 className={sectionTitleClass}>Session Metrics</h3>
         </div>
         <div className="grid grid-cols-3 gap-2">
-          <div className="rounded-xl border border-white/2 bg-white/5 p-3">
-            <span className="block text-[8px] uppercase tracking-widest text-zinc-600">Groups</span>
-            <span className="text-lg font-black text-zinc-200">{visualGroupsCount}</span>
+          <div className="rounded-xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-3">
+            <span className="block text-[8px] uppercase tracking-widest text-[color:var(--wb-dim)]">Groups</span>
+            <span className="text-lg font-black text-[color:var(--wb-ink)]">{visualGroupsCount}</span>
           </div>
-          <div className="rounded-xl border border-white/2 bg-white/5 p-3">
-            <span className="block text-[8px] uppercase tracking-widest text-zinc-600">Images</span>
-            <span className="text-lg font-black text-zinc-200">{imagesCount}</span>
+          <div className="rounded-xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-3">
+            <span className="block text-[8px] uppercase tracking-widest text-[color:var(--wb-dim)]">Images</span>
+            <span className="text-lg font-black text-[color:var(--wb-ink)]">{imagesCount}</span>
           </div>
-          <div className="rounded-xl border border-white/2 bg-white/5 p-3">
-            <span className="block text-[8px] uppercase tracking-widest text-zinc-600">
+          <div className="rounded-xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-3">
+            <span className="block text-[8px] uppercase tracking-widest text-[color:var(--wb-dim)]">
               Active Jobs
             </span>
             <span className="text-lg font-black text-accent-300">{activeJobCount}</span>
@@ -92,18 +92,18 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
             workspaces.slice(0, isDrawer ? 12 : 8).map((workspace) => (
               <div
                 key={workspace.id}
-                className="flex items-center justify-between rounded-xl border border-white/2 bg-white/5 px-3 py-2"
+                className="flex items-center justify-between rounded-xl border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 py-2"
               >
-                <span className="min-w-0 truncate text-[10px] font-mono text-zinc-300">
+                <span className="min-w-0 truncate text-[10px] font-mono text-[color:var(--wb-ink)]">
                   {workspace.name || workspace.id.slice(0, 8)}
                 </span>
-                <span className="text-[8px] font-black uppercase tracking-wider text-zinc-600">
+                <span className="text-[8px] font-black uppercase tracking-wider text-[color:var(--wb-dim)]">
                   {new Date(workspace.createdAt).toLocaleDateString()}
                 </span>
               </div>
             ))
           ) : (
-            <div className="rounded-xl border border-dashed border-white/2 bg-black/20 px-3 py-4 text-[10px] text-zinc-600">
+            <div className="rounded-xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-4 text-[10px] text-[color:var(--wb-dim)]">
               No workspaces yet.
             </div>
           )}
@@ -131,17 +131,17 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
                     >
                       {job.status}
                     </span>
-                    <span className="text-[8px] uppercase tracking-widest text-zinc-600">
+                    <span className="text-[8px] uppercase tracking-widest text-[color:var(--wb-dim)]">
                       {new Date(job.createdAt).toLocaleTimeString([], {
                         hour: '2-digit',
                         minute: '2-digit',
                       })}
                     </span>
                   </div>
-                  <div className="line-clamp-2 text-[10px] leading-relaxed text-zinc-300">
+                  <div className="line-clamp-2 text-[10px] leading-relaxed text-[color:var(--wb-ink)]">
                     {job.originalPrompt}
                   </div>
-                  <div className="mt-2 flex items-center justify-between gap-2 text-[8px] font-bold uppercase tracking-wider text-zinc-600">
+                  <div className="mt-2 flex items-center justify-between gap-2 text-[8px] font-bold uppercase tracking-wider text-[color:var(--wb-dim)]">
                     <span>{job.kind.replace('_', ' ')}</span>
                     {job.execution?.model ? <span>{job.execution.model}</span> : null}
                   </div>
@@ -156,7 +156,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
                       'rounded-xl border px-3 py-2.5',
                       isSelected
                         ? 'border-accent-500/2 bg-accent-500/10'
-                        : 'border-white/2 bg-black/20',
+                        : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)]',
                     )}
                   >
                     {content}
@@ -173,7 +173,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
                     'w-full rounded-xl border px-3 py-2.5 text-left transition-colors',
                     isSelected
                       ? 'border-accent-500/2 bg-accent-500/10'
-                      : 'border-white/2 bg-black/20 hover:border-white/2 hover:bg-white/5',
+                      : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]',
                   )}
                 >
                   {content}
@@ -181,7 +181,7 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
               );
             })
           ) : (
-            <div className="rounded-xl border border-dashed border-white/2 bg-black/20 px-3 py-4 text-[10px] text-zinc-600">
+            <div className="rounded-xl border border-dashed border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 py-4 text-[10px] text-[color:var(--wb-dim)]">
               No backend jobs yet.
             </div>
           )}
@@ -193,18 +193,18 @@ export const SessionOverview: React.FC<SessionOverviewProps> = ({
           <Terminal size={14} className="text-accent-400" />
           <h3 className={sectionTitleClass}>Recent Activity</h3>
         </div>
-        <div className="custom-scrollbar max-h-110 space-y-1.5 overflow-y-auto rounded-xl border border-white/2 bg-black/30 p-3 font-mono text-[10px] leading-relaxed">
+        <div className="custom-scrollbar max-h-110 space-y-1.5 overflow-y-auto rounded-xl border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-3 font-mono text-[10px] leading-relaxed">
           {recentLogs.length > 0 ? (
             recentLogs.map((log) => (
               <div key={log.id} className="flex gap-2">
-                <span className="shrink-0 select-none text-zinc-600">
+                <span className="shrink-0 select-none text-[color:var(--wb-dim)]">
                   {new Date(log.timestamp).toLocaleTimeString([], { hour12: false })}
                 </span>
-                <span className="wrap-break-word text-zinc-400">{log.message}</span>
+                <span className="wrap-break-word text-[color:var(--wb-muted)]">{log.message}</span>
               </div>
             ))
           ) : (
-            <span className="italic text-zinc-700">No recent activity</span>
+            <span className="italic text-[color:var(--wb-dim)]">No recent activity</span>
           )}
         </div>
       </div>
