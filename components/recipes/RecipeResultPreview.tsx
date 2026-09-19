@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import {
   IconChevronLeft as ChevronLeft,
   IconChevronRight as ChevronRight,
@@ -17,9 +17,15 @@ import { buildCarouselThumbnailWindow } from '../../lib/imageCarouselThumbnails'
 import { useImagePanZoom } from '../../lib/imagePanZoom';
 import { useToastUi } from '../../contexts/GlobalContext';
 import type { Attachment, GeneratedImageWithConfig } from '../../types';
-import { RecipeWorkbenchContext } from './RecipeWorkbenchContext';
+import { copyImageToClipboard, downloadImage, generateSmartFilename } from '../../utils/fileUtils';
 
 type StageBackground = 'dark' | 'light' | 'checkered';
+type NavSide = 'prev' | 'next' | null;
+
+function hasFineHoverPointer() {
+  if (typeof window.matchMedia !== 'function') return true;
+  return window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+}
 
 export function RecipeResultPreview({
   images,
@@ -37,32 +43,33 @@ export function RecipeResultPreview({
   variant?: 'default' | 'stage';
 }) {
   const { addToast } = useToastUi();
-  const { setCompare } = useContext(RecipeWorkbenchContext);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [showReference, setShowReference] = useState(false);
   const [background, setBackground] = useState<StageBackground>('dark');
+  const [navSide, setNavSide] = useState<NavSide>(null);
+  const [canvasFocused, setCanvasFocused] = useState(false);
   const selected = images.find((image) => image.id === selectedId) ?? images[0];
   const selectedIndex = selected ? images.findIndex((image) => image.id === selected.id) : -1;
   const src = showReference || !selected ? reference?.dataUrl : selected?.src;
   const isStage = variant === 'stage';
   const canCompare = Boolean(isStage && reference && selected);
-  const toggleCompare = useCallback(() => {
-    setShowReference((current) => !current);
-  }, []);
   const panZoom = useImagePanZoom(isStage && Boolean(src) && !showReference);
   const thumbnailWindow = useMemo(
     () => buildCarouselThumbnailWindow(images, Math.max(selectedIndex, 0)),
     [images, selectedIndex],
   );
-
-  useEffect(() => {
-    if (!canCompare) {
-      setCompare(null);
-      return;
-    }
-    setCompare({ showReference, toggle: toggleCompare });
-    return () => setCompare(null);
-  }, [canCompare, setCompare, showReference, toggleCompare]);
+  const fineHover = hasFineHoverPointer();
+  const showPrevNav =
+    isStage &&
+    images.length > 1 &&
+    selectedIndex > 0 &&
+    (!fineHover || canvasFocused || navSide === 'prev');
+  const showNextNav =
+    isStage &&
+    images.length > 1 &&
+    selectedIndex >= 0 &&
+    selectedIndex < images.length - 1 &&
+    (!fineHover || canvasFocused || navSide === 'next');
 
   const selectIndex = (index: number) => {
     const image = images[index];
@@ -83,17 +90,26 @@ export function RecipeResultPreview({
   };
 
   const handleDownload = () => {
-    if (!selected) return;
+    if (!src) return;
     downloadImage(
-      selected.src,
-      generateSmartFilename(
-        selected.config.prompt,
-        selected.id,
-        selected.config.model,
-        selected.config.aspectRatio,
-      ),
+      src,
+      selected
+        ? generateSmartFilename(
+            selected.config.prompt,
+            selected.id,
+            selected.config.model,
+            selected.config.aspectRatio,
+          )
+        : 'reference.png',
     );
   };
+
+  const handleCanvasPointerMove = useCallback((event: React.PointerEvent<HTMLDivElement>) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const width = rect.width || event.currentTarget.clientWidth || 1;
+    const x = event.clientX - rect.left;
+    setNavSide(x < width / 2 ? 'prev' : 'next');
+  }, []);
 
   return (
     <section
@@ -121,10 +137,110 @@ export function RecipeResultPreview({
           ) : null}
         </div>
       ) : null}
+      {isStage && src ? (
+        <div className="recipe-result-toolbar">
+          <div
+            className="recipe-result-toolbar-row"
+            role="toolbar"
+            aria-label="Selected result actions"
+          >
+            {canCompare ? (
+              <button
+                type="button"
+                aria-pressed={showReference}
+                onClick={() => setShowReference((current) => !current)}
+              >
+                {showReference ? 'Show result' : 'Compare reference'}
+              </button>
+            ) : null}
+            <button type="button" aria-label="Copy image" onClick={() => void handleCopy()}>
+              <Copy size={15} />
+            </button>
+            <button type="button" aria-label="Download image" onClick={handleDownload}>
+              <Download size={15} />
+            </button>
+            {onToggleFavorite ? (
+              <button
+                type="button"
+                aria-label={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                aria-pressed={Boolean(selected?.isFavorite)}
+                onClick={() => selected && onToggleFavorite(selected.id)}
+              >
+                <Heart size={15} />
+              </button>
+            ) : null}
+            {onUseAsReference && selected ? (
+              <button
+                type="button"
+                aria-label="Use as reference"
+                onClick={() => onUseAsReference(selected)}
+              >
+                <Paperclip size={15} />
+              </button>
+            ) : null}
+            {onOpen && selected ? (
+              <button type="button" aria-label="Open result" onClick={() => onOpen(selected)}>
+                <OpenFull size={15} />
+              </button>
+            ) : null}
+            <div className="recipe-result-background" role="group" aria-label="Canvas background">
+              <button
+                type="button"
+                aria-pressed={background === 'dark'}
+                aria-label="Dark background"
+                onClick={() => setBackground('dark')}
+              />
+              <button
+                type="button"
+                aria-pressed={background === 'light'}
+                aria-label="Light background"
+                onClick={() => setBackground('light')}
+              />
+              <button
+                type="button"
+                aria-pressed={background === 'checkered'}
+                aria-label="Checkered background"
+                onClick={() => setBackground('checkered')}
+              />
+            </div>
+          </div>
+          {selected?.config.prompt ? (
+            <p className="recipe-result-prompt" title={selected.config.prompt}>
+              {selected.config.prompt}
+            </p>
+          ) : null}
+        </div>
+      ) : null}
       <div
         className={`recipe-result-image${isStage ? ` is-${background}` : ''}`}
+        data-nav-side={isStage ? (navSide ?? undefined) : undefined}
         {...(isStage ? panZoom.viewportProps : {})}
         ref={isStage ? panZoom.viewportRef : undefined}
+        onPointerMove={
+          isStage
+            ? (event) => {
+                panZoom.viewportProps.onPointerMove(event);
+                handleCanvasPointerMove(event);
+              }
+            : undefined
+        }
+        onPointerLeave={
+          isStage
+            ? () => {
+                setNavSide(null);
+              }
+            : undefined
+        }
+        onFocusCapture={isStage ? () => setCanvasFocused(true) : undefined}
+        onBlurCapture={
+          isStage
+            ? (event) => {
+                if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                  setCanvasFocused(false);
+                }
+              }
+            : undefined
+        }
       >
         {src ? (
           <>
@@ -134,6 +250,7 @@ export function RecipeResultPreview({
                   type="button"
                   className="recipe-result-nav is-prev"
                   aria-label="Previous result"
+                  hidden={!showPrevNav}
                   disabled={selectedIndex <= 0}
                   onPointerDown={(event) => event.stopPropagation()}
                   onClick={() => selectIndex(selectedIndex - 1)}
@@ -144,6 +261,7 @@ export function RecipeResultPreview({
                   type="button"
                   className="recipe-result-nav is-next"
                   aria-label="Next result"
+                  hidden={!showNextNav}
                   disabled={selectedIndex >= images.length - 1}
                   onPointerDown={(event) => event.stopPropagation()}
                   onClick={() => selectIndex(selectedIndex + 1)}
@@ -159,91 +277,25 @@ export function RecipeResultPreview({
               draggable={false}
             />
             {isStage ? (
-              <>
-                <div
-                  className="recipe-result-actions"
-                  role="toolbar"
-                  aria-label="Selected result actions"
-                  onPointerDown={(event) => event.stopPropagation()}
-                >
-                  <button type="button" aria-label="Copy image" onClick={() => void handleCopy()}>
-                    <Copy size={15} />
-                  </button>
-                  <button type="button" aria-label="Download image" onClick={handleDownload}>
-                    <Download size={15} />
-                  </button>
-                  {onToggleFavorite ? (
-                    <button
-                      type="button"
-                      aria-label={
-                        selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'
-                      }
-                      aria-pressed={Boolean(selected?.isFavorite)}
-                      onClick={() => selected && onToggleFavorite(selected.id)}
-                    >
-                      <Heart size={15} />
-                    </button>
-                  ) : null}
-                  {onUseAsReference && selected ? (
-                    <button
-                      type="button"
-                      aria-label="Use as reference"
-                      onClick={() => onUseAsReference(selected)}
-                    >
-                      <Paperclip size={15} />
-                    </button>
-                  ) : null}
-                  {onOpen && selected ? (
-                    <button type="button" aria-label="Open result" onClick={() => onOpen(selected)}>
-                      <OpenFull size={15} />
-                    </button>
-                  ) : null}
-                </div>
-                <div
-                  className="recipe-result-background"
-                  role="group"
-                  aria-label="Canvas background"
-                  onPointerDown={(event) => event.stopPropagation()}
-                >
-                  <button
-                    type="button"
-                    aria-pressed={background === 'dark'}
-                    aria-label="Dark background"
-                    onClick={() => setBackground('dark')}
-                  />
-                  <button
-                    type="button"
-                    aria-pressed={background === 'light'}
-                    aria-label="Light background"
-                    onClick={() => setBackground('light')}
-                  />
-                  <button
-                    type="button"
-                    aria-pressed={background === 'checkered'}
-                    aria-label="Checkered background"
-                    onClick={() => setBackground('checkered')}
-                  />
-                </div>
-                <div
-                  className="recipe-result-zoom"
-                  role="group"
-                  aria-label="Zoom controls"
-                  onPointerDown={(event) => event.stopPropagation()}
-                >
-                  <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
-                    <Plus size={14} />
-                  </button>
-                  <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
-                    <Minus size={14} />
-                  </button>
-                  <button type="button" aria-label="Fit image" onClick={panZoom.fit}>
-                    <Fit size={14} />
-                  </button>
-                  <button type="button" aria-label="Reset zoom" onClick={panZoom.reset}>
-                    <Reset size={14} />
-                  </button>
-                </div>
-              </>
+              <div
+                className="recipe-result-zoom"
+                role="group"
+                aria-label="Zoom controls"
+                onPointerDown={(event) => event.stopPropagation()}
+              >
+                <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
+                  <Plus size={14} />
+                </button>
+                <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
+                  <Minus size={14} />
+                </button>
+                <button type="button" aria-label="Fit image" onClick={panZoom.fit}>
+                  <Fit size={14} />
+                </button>
+                <button type="button" aria-label="Reset zoom" onClick={panZoom.reset}>
+                  <Reset size={14} />
+                </button>
+              </div>
             ) : null}
           </>
         ) : (

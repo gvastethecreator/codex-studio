@@ -117,10 +117,10 @@ describe('CompactStyleSelector', () => {
     await waitFor(() => expect(screen.getByRole('dialog', { name: 'Add styles' })).toBeTruthy());
     fireEvent.click(screen.getByRole('button', { name: 'Photography, 2 styles' }));
     await waitFor(() =>
-      expect(screen.getByRole('button', { name: 'Film Stocks, 1 style' })).toBeTruthy(),
+      expect(screen.getByRole('button', { name: 'Add Silver Grain' })).toBeTruthy(),
     );
-    fireEvent.click(screen.getByRole('button', { name: 'Film Stocks, 1 style' }));
-    await waitFor(() => expect(screen.getByRole('button', { name: 'Add Silver Grain' })).toBeTruthy());
+    expect(screen.getByText('Film Stocks')).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Add Noir Lighting' })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Add Silver Grain' }));
     expect(onChooseStyle).toHaveBeenCalledWith(
       expect.objectContaining({ id: 'SP01-001', name: 'Silver Grain' }),
@@ -146,5 +146,35 @@ describe('CompactStyleSelector', () => {
     expect(onSetStrength).toHaveBeenCalledWith('SP01-001', 0.8);
     fireEvent.click(screen.getByRole('button', { name: 'Remove Silver Grain' }));
     expect(onRemove).toHaveBeenCalledWith('SP01-001');
+  });
+
+  it('closes the add menu on Escape while a hover preview is open', async () => {
+    renderSelector();
+    fireEvent.click(screen.getByRole('button', { name: 'Add a style' }));
+    await waitFor(() => expect(screen.getByRole('dialog', { name: 'Add styles' })).toBeTruthy());
+    fireEvent.click(screen.getByRole('button', { name: 'Photography, 2 styles' }));
+    await waitFor(() =>
+      expect(screen.getByRole('button', { name: 'Add Silver Grain' })).toBeTruthy(),
+    );
+    fireEvent.pointerEnter(screen.getByRole('button', { name: 'Add Silver Grain' }));
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(screen.queryByRole('dialog', { name: 'Add styles' })).toBeNull();
+  });
+
+  it('keeps one floating preview host while hovering presets', async () => {
+    renderSelector();
+    fireEvent.click(screen.getByRole('button', { name: 'Add a style' }));
+    await waitFor(() => expect(screen.getByRole('dialog', { name: 'Add styles' })).toBeTruthy());
+    fireEvent.click(screen.getByRole('button', { name: 'Photography, 2 styles' }));
+    await waitFor(() =>
+      expect(screen.getByRole('button', { name: 'Add Silver Grain' })).toBeTruthy(),
+    );
+
+    const node = document.querySelector('.cs-preview');
+    expect(node).toBeTruthy();
+    fireEvent.pointerEnter(screen.getByRole('button', { name: 'Add Silver Grain' }));
+    fireEvent.pointerEnter(screen.getByRole('button', { name: 'Add Noir Lighting' }));
+    expect(document.querySelectorAll('.cs-preview')).toHaveLength(1);
+    expect(document.querySelector('.cs-preview')).toBe(node);
   });
 });

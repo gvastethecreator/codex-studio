@@ -5,6 +5,7 @@ import {
   compactStyleParentRoute,
   filterCompactStyleCatalog,
   formatCompactStyleStrength,
+  groupCompactStylePresetsByCategory,
   listCompactStyleCategories,
   listCompactStylePacks,
   mergeCompactStyleSearchIndexes,
@@ -62,22 +63,30 @@ const index: StylePresetCatalogSearchIndex = {
 describe('compactStyleCatalog', () => {
   it('formats intensity as a percent and keeps pack/category navigation bounded', () => {
     expect(formatCompactStyleStrength(0.75)).toBe('75%');
-    expect(planCompactStyleCatalogPackIds({
-      route: { view: 'packs' },
-      query: '',
-      packSummaries: index.packs,
-    })).toEqual([]);
-    expect(planCompactStyleCatalogPackIds({
-      route: { view: 'styles', packId: 'pack_01', categoryId: 'film' },
-      query: '',
-      packSummaries: index.packs,
-    })).toEqual(['pack_01']);
-    expect(planCompactStyleCatalogPackIds({
-      route: { view: 'all' },
-      query: 'grain',
-      packSummaries: index.packs,
-    })).toEqual(['pack_01', 'pack_06']);
-    expect(compactStyleParentRoute({ view: 'styles', packId: 'pack_01', categoryId: 'film' })).toEqual({
+    expect(
+      planCompactStyleCatalogPackIds({
+        route: { view: 'packs' },
+        query: '',
+        packSummaries: index.packs,
+      }),
+    ).toEqual([]);
+    expect(
+      planCompactStyleCatalogPackIds({
+        route: { view: 'styles', packId: 'pack_01', categoryId: 'film' },
+        query: '',
+        packSummaries: index.packs,
+      }),
+    ).toEqual(['pack_01']);
+    expect(
+      planCompactStyleCatalogPackIds({
+        route: { view: 'all' },
+        query: 'grain',
+        packSummaries: index.packs,
+      }),
+    ).toEqual(['pack_01', 'pack_06']);
+    expect(
+      compactStyleParentRoute({ view: 'styles', packId: 'pack_01', categoryId: 'film' }),
+    ).toEqual({
       view: 'categories',
       packId: 'pack_01',
     });
@@ -85,12 +94,14 @@ describe('compactStyleCatalog', () => {
 
   it('filters search, favorites, and category lists from the loaded index', () => {
     const packsRoute: CompactStyleRoute = { view: 'packs' };
-    expect(filterCompactStyleCatalog({
-      index,
-      route: packsRoute,
-      query: '',
-      favorites: ['SP06-001'],
-    })).toEqual([]);
+    expect(
+      filterCompactStyleCatalog({
+        index,
+        route: packsRoute,
+        query: '',
+        favorites: ['SP06-001'],
+      }),
+    ).toEqual([]);
     expect(
       filterCompactStyleCatalog({
         index,
@@ -111,12 +122,35 @@ describe('compactStyleCatalog', () => {
       { id: 'film', name: 'Film Stocks', count: 1 },
       { id: 'light', name: 'Lighting', count: 1 },
     ]);
-    expect(compactStyleMenuTitle({
-      route: { view: 'categories', packId: 'pack_01' },
-      query: '',
-      resultCount: 0,
-      packs: index.packs,
-    })).toBe('Photography');
+    expect(
+      filterCompactStyleCatalog({
+        index,
+        route: { view: 'categories', packId: 'pack_01' },
+        query: '',
+        favorites: [],
+      }).map((item) => item.id),
+    ).toEqual(['SP01-001', 'SP01-002']);
+    expect(
+      groupCompactStylePresetsByCategory(
+        filterCompactStyleCatalog({
+          index,
+          route: { view: 'categories', packId: 'pack_01' },
+          query: '',
+          favorites: [],
+        }),
+      ).map((group) => ({ id: group.id, names: group.presets.map((preset) => preset.name) })),
+    ).toEqual([
+      { id: 'film', names: ['Silver Grain'] },
+      { id: 'light', names: ['Noir Lighting'] },
+    ]);
+    expect(
+      compactStyleMenuTitle({
+        route: { view: 'categories', packId: 'pack_01' },
+        query: '',
+        resultCount: 0,
+        packs: index.packs,
+      }),
+    ).toBe('Photography');
   });
 
   it('merges extra user styles without duplicating runtime presets', () => {

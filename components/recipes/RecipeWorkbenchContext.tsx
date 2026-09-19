@@ -10,12 +10,14 @@ export const RecipeWorkbenchContext = createContext<{
   controls: HTMLElement | null;
   action: HTMLElement | null;
   overlay: HTMLElement | null;
+  sidePanel: HTMLElement | null;
   compare: CanvasCompareChrome;
   setCompare: (compare: CanvasCompareChrome) => void;
 }>({
   controls: null,
   action: null,
   overlay: null,
+  sidePanel: null,
   compare: null,
   setCompare: () => {},
 });
@@ -35,4 +37,9 @@ export function RecipePrimaryAction({ children }: { children: React.ReactNode })
 export function RecipeOverlay({ children }: { children: React.ReactNode }) {
   const { overlay } = useContext(RecipeWorkbenchContext);
   return overlay ? createPortal(children, overlay) : children;
+}
+
+export function RecipeSidePanel({ children }: { children: React.ReactNode }) {
+  const { sidePanel } = useContext(RecipeWorkbenchContext);
+  return sidePanel ? createPortal(children, sidePanel) : null;
 }

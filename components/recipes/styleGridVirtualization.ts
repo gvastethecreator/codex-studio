@@ -54,6 +54,31 @@ export const STYLE_GRID_DEFAULT_VIEWPORT_HEIGHT_PX = 760;
 export const STYLE_GRID_OVERSCAN_ROWS = 4;
 export const STYLE_GRID_WINDOW_TARGET_PRESET_COUNT = 150;
 
+export function fitStyleGridColumns(
+  containerWidth: number,
+  minCardWidth = STYLE_GRID_MIN_CARD_WIDTH_PX,
+  gap = STYLE_GRID_CARD_GAP_PX,
+) {
+  if (!(containerWidth > 0)) return 1;
+  return Math.max(1, Math.floor((containerWidth + gap) / (minCardWidth + gap)));
+}
+
+export function resolveStyleGridColumns(
+  stored: number | 'auto' | null | undefined,
+  fitColumns: number,
+) {
+  const fit = Math.max(1, Math.floor(fitColumns));
+  if (
+    stored == null ||
+    stored === 'auto' ||
+    typeof stored !== 'number' ||
+    !Number.isFinite(stored)
+  ) {
+    return fit;
+  }
+  return Math.max(1, Math.min(Math.floor(stored), fit));
+}
+
 export function createStyleGridMetrics({
   presetCount,
   gridColumns,

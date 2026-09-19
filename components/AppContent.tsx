@@ -73,6 +73,7 @@ export const AppContent: React.FC = () => {
   const [actionTarget, setActionTarget] = useState<HTMLElement | null>(null);
   const [controlsTarget, setControlsTarget] = useState<HTMLElement | null>(null);
   const [overlayTarget, setOverlayTarget] = useState<HTMLElement | null>(null);
+  const [sidePanelTarget, setSidePanelTarget] = useState<HTMLElement | null>(null);
   const [workspaceTab, setWorkspaceTab] = useState<'configure' | 'preview'>('configure');
   const [compare, setCompare] = useState<CanvasCompareChrome>(null);
   const ambient = workbenchAmbientRootProps(appearance);
@@ -81,9 +82,7 @@ export const AppContent: React.FC = () => {
     applyWorkbenchAmbientToDocument(document, appearance);
   }, [appearance]);
   const hasGenerationDock =
-    !shell.generationDock.isModalOpen &&
-    !shell.generationDock.isUiChromeSuppressed &&
-    isWorkspace;
+    !shell.generationDock.isModalOpen && !shell.generationDock.isUiChromeSuppressed && isWorkspace;
   const activeRecipe = shell.viewport.activeRecipe;
   const stageImages =
     isRecipe && activeRecipe
@@ -99,6 +98,7 @@ export const AppContent: React.FC = () => {
         controls: controlsTarget,
         action: actionTarget,
         overlay: overlayTarget,
+        sidePanel: sidePanelTarget,
         compare,
         setCompare,
       }}
@@ -172,6 +172,7 @@ export const AppContent: React.FC = () => {
               onUseAsReference={shell.viewport.studioPageController.grid.handleAddToContext}
               images={stageImages}
               routeKey={isRecipe ? `recipe-${activeRecipe ?? 'active'}` : 'recipes-list'}
+              onSidePanelTarget={setSidePanelTarget}
               tools={
                 isRecipe ? (
                   <>

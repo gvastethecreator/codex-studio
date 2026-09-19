@@ -149,7 +149,8 @@ export function filterCompactStyleCatalog({
     if (route.view === 'styles') {
       return preset.packId === route.packId && preset.categoryId === route.categoryId;
     }
-    if (route.view === 'categories' || route.view === 'packs') return false;
+    if (route.view === 'categories') return preset.packId === route.packId;
+    if (route.view === 'packs') return false;
     return true;
   });
 }
@@ -182,4 +183,35 @@ export function compactStyleParentRoute(route: CompactStyleRoute): CompactStyleR
   if (route.view === 'styles') return { view: 'categories', packId: route.packId };
   if (route.view === 'categories') return { view: 'packs' };
   return { view: 'all' };
+}
+
+export interface CompactStyleCategoryGroup {
+  id: string;
+  name: string;
+  packId: string;
+  presets: StylePresetCatalogSearchResult[];
+}
+
+export function groupCompactStylePresetsByCategory(
+  presets: readonly StylePresetCatalogSearchResult[],
+): CompactStyleCategoryGroup[] {
+  const groups: CompactStyleCategoryGroup[] = [];
+  const byKey = new Map<string, CompactStyleCategoryGroup>();
+  for (const preset of presets) {
+    const key = `${preset.packId}:${preset.categoryId}`;
+    const existing = byKey.get(key);
+    if (existing) {
+      existing.presets.push(preset);
+      continue;
+    }
+    const next: CompactStyleCategoryGroup = {
+      id: preset.categoryId,
+      name: preset.categoryName,
+      packId: preset.packId,
+      presets: [preset],
+    };
+    byKey.set(key, next);
+    groups.push(next);
+  }
+  return groups;
 }

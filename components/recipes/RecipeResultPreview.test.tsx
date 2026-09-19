@@ -9,7 +9,6 @@ vi.mock('../../contexts/GlobalContext', () => ({
 import { MODELS } from '../../constants';
 import { RecipeResultPreview } from './RecipeResultPreview';
 import type { Attachment, GeneratedImageWithConfig } from '../../types';
-import { RecipeWorkbenchContext } from './RecipeWorkbenchContext';
 
 afterEach(cleanup);
 
@@ -70,6 +69,23 @@ describe('RecipeResultPreview', () => {
     );
 
     expect(screen.getByRole('button', { name: 'View result 2' })).toBeTruthy();
+    expect(screen.queryByRole('button', { name: 'Next result' })).toBeNull();
+    const canvas = screen.getByRole('img', { name: 'Generated result' }).parentElement;
+    expect(canvas).toBeTruthy();
+    vi.spyOn(canvas as HTMLElement, 'getBoundingClientRect').mockReturnValue({
+      x: 0,
+      y: 0,
+      top: 0,
+      left: 0,
+      right: 400,
+      bottom: 300,
+      width: 400,
+      height: 300,
+      toJSON() {
+        return {};
+      },
+    });
+    fireEvent.pointerMove(canvas as HTMLElement, { clientX: 300, clientY: 80 });
     fireEvent.click(screen.getByRole('button', { name: 'Next result' }));
     fireEvent.click(screen.getByRole('button', { name: 'Add to favorites' }));
     fireEvent.click(screen.getByRole('button', { name: 'Use as reference' }));
@@ -84,25 +100,20 @@ describe('RecipeResultPreview', () => {
     ).toBe('checkered');
   });
 
-  it('registers compare chrome for the header and keeps it off the stage heading', () => {
-    const setCompare = vi.fn();
+  it('puts Compare, the prompt, and backgrounds on the stage toolbar', () => {
     const reference: Attachment = {
       id: 'ref-1',
       name: 'ref.png',
       dataUrl: '/library/ref.png',
       strength: 1,
     };
-    render(
-      <RecipeWorkbenchContext
-        value={{ controls: null, action: null, overlay: null, compare: null, setCompare }}
-      >
-        <RecipeResultPreview variant="stage" images={[IMAGE]} reference={reference} />
-      </RecipeWorkbenchContext>,
-    );
+    render(<RecipeResultPreview variant="stage" images={[IMAGE]} reference={reference} />);
 
-    expect(setCompare).toHaveBeenCalledWith(
-      expect.objectContaining({ showReference: false, toggle: expect.any(Function) }),
-    );
-    expect(screen.queryByRole('button', { name: 'Compare reference' })).toBeNull();
+    expect(screen.getByRole('button', { name: 'Compare reference' })).toBeTruthy();
+    expect(screen.getByText('A lantern')).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Copy image' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Download image' })).toBeTruthy();
+    expect(screen.getByRole('group', { name: 'Canvas background' })).toBeTruthy();
+    expect(screen.queryByRole('button', { name: 'Previous result' })).toBeNull();
   });
 });

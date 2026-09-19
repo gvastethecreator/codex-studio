@@ -84,6 +84,7 @@ function renderHeader(
           controls: null,
           action: null,
           overlay: null,
+          sidePanel: null,
           compare: compare ?? null,
           setCompare: vi.fn(),
         }}
@@ -98,7 +99,7 @@ describe('HeaderToolbar chrome', () => {
   it('keeps workspace on the right and drops provider and jobs from the top bar', () => {
     renderHeader();
 
-    expect(screen.getByRole('button', { name: 'Open recipes' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Open create workspace' })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Go to studio' })).toBeTruthy();
     expect(screen.getByRole('button', { name: /open workspace switcher: shots/i })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Workflow: Default' })).toBeTruthy();
@@ -124,11 +125,9 @@ describe('HeaderToolbar chrome', () => {
     );
   });
 
-  it('moves compare reference onto the header when the canvas registers it', () => {
-    const toggle = vi.fn();
-    renderHeader({}, { showReference: false, toggle });
-    fireEvent.click(screen.getByRole('button', { name: 'Compare reference' }));
-    expect(toggle).toHaveBeenCalledTimes(1);
+  it('keeps Compare off the header', () => {
+    renderHeader({}, { showReference: false, toggle: vi.fn() });
+    expect(screen.queryByRole('button', { name: 'Compare reference' })).toBeNull();
   });
 
   it('shows the active recipe in the centered workflow control', () => {

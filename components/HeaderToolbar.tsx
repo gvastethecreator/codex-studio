@@ -23,7 +23,6 @@ import { getRecipeShellTitle } from '../lib/recipeShellMetadata';
 import type { GenerationProviderId } from '../packages/shared/src';
 import { useTheme } from '../hooks/useTheme';
 import { CreateWorkflowPicker } from './create/CreateWorkflowPicker';
-import { RecipeWorkbenchContext } from './recipes/RecipeWorkbenchContext';
 
 export interface HeaderToolbarProps {
   isGenerating: boolean;
@@ -77,7 +76,6 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   onSelectRecipe,
 }) => {
   const { appearance, toggleAppearance } = useTheme();
-  const { compare } = React.useContext(RecipeWorkbenchContext);
   const [isWorkspaceOpen, setIsWorkspaceOpen] = React.useState(false);
   const [isMobileCommandOpen, setIsMobileCommandOpen] = React.useState(false);
   const workspaceRef = React.useRef<HTMLDivElement>(null);
@@ -130,7 +128,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             <button
               type="button"
               className="studio-nav-tab studio-control"
-              aria-label="Open recipes"
+              aria-label="Open create workspace"
               aria-current={currentView !== 'studio' ? 'page' : undefined}
               onClick={() => onViewChange('recipes')}
             >
@@ -145,16 +143,6 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             >
               Library
             </button>
-            {compare ? (
-              <button
-                type="button"
-                className="studio-nav-tab studio-control"
-                aria-pressed={compare.showReference}
-                onClick={compare.toggle}
-              >
-                {compare.showReference ? 'Show result' : 'Compare reference'}
-              </button>
-            ) : null}
           </nav>
         </div>
 
@@ -229,9 +217,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             </DemandMountedGsapDropdown>
           </div>
           <details className="relative hidden sm:block">
-            <summary className="studio-nav-tab studio-control cursor-pointer">
-              Tools
-            </summary>
+            <summary className="studio-nav-tab studio-control cursor-pointer">Tools</summary>
             <div className="studio-popover absolute right-0 top-11 z-50 grid w-48 gap-2 rounded-md p-3">
               <button
                 type="button"

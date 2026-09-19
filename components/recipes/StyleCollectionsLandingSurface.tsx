@@ -482,7 +482,7 @@ function StyleFolderCard({
       onPointerLeave={() => void animateFolder(false)}
       onFocus={handleFolderEnter}
       onBlur={() => void animateFolder(false)}
-      className={`style-folder-enter group relative z-0 block aspect-[3/4] min-h-[252px] w-full cursor-pointer overflow-visible rounded-[6px] text-left outline-none transition-[filter] duration-200 hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 sm:min-h-[286px] ${
+      className={`style-folder-enter group relative z-0 block aspect-[3/4] w-full cursor-pointer overflow-visible rounded-[6px] text-left outline-none transition-[filter] duration-200 hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 ${
         isHighlighted ? 'z-30 brightness-[1.08]' : ''
       }`}
       style={
@@ -522,7 +522,9 @@ function StyleFolderCard({
               className="size-full object-cover"
             />
           ) : filesMounted ? (
-            <div className={`flex size-full items-center justify-center bg-[color:var(--wb-panel)] ${theme.text}`}>
+            <div
+              className={`flex size-full items-center justify-center bg-[color:var(--wb-panel)] ${theme.text}`}
+            >
               {icon}
             </div>
           ) : (
@@ -838,7 +840,7 @@ function StyleFolderPlaceholder({
       data-style-tab-url={`#${tabHash}`}
       aria-label={`Open ${title}`}
       onClick={onOpen}
-      className={`group relative z-0 block aspect-[3/4] min-h-[252px] w-full cursor-pointer overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left outline-none focus-visible:ring-2 focus-visible:ring-white/35 sm:min-h-[286px] ${
+      className={`group relative z-0 block aspect-[3/4] w-full cursor-pointer overflow-hidden rounded-[6px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left outline-none focus-visible:ring-2 focus-visible:ring-white/35 ${
         isHighlighted ? 'z-30 brightness-[1.08]' : ''
       }`}
       {...dataAttributes}
@@ -897,7 +899,7 @@ function StyleCollectionFamilySection({
         </div>
         <div className="h-px flex-1 bg-white/6" />
       </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-3">
         {collections.map((collection, index) => {
           const tabId = getCollectionTabId(collection.id);
           const targetId = `collection:${collection.id}`;
@@ -971,7 +973,7 @@ function StyleSourcePacksSection({
           {STYLE_RUNTIME_PACK_SUMMARIES.length}
         </span>
       </div>
-      <div className="grid grid-cols-2 gap-3 border-t border-[color:var(--wb-line)] p-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-3 border-t border-[color:var(--wb-line)] p-3">
         {STYLE_RUNTIME_PACK_SUMMARIES.map((pack, index) => {
           const targetId = `source:${pack.id}`;
           const sharedProps = {
@@ -1104,7 +1106,9 @@ function StyleNavigationPanel({
                       <span className="min-w-0 flex-1">
                         <span
                           className={`block truncate text-[10px] font-black uppercase tracking-normal ${
-                            active ? item.theme.text : 'text-[color:var(--wb-ink)] group-hover/nav:text-[color:var(--wb-ink)]'
+                            active
+                              ? item.theme.text
+                              : 'text-[color:var(--wb-ink)] group-hover/nav:text-[color:var(--wb-ink)]'
                           }`}
                         >
                           {item.label}
@@ -1249,12 +1253,33 @@ export function StyleCollectionsLandingSurface({
         <p className="max-w-3xl text-[10px] font-medium leading-relaxed text-[color:var(--wb-muted)]">
           Collection-first style systems grouped by creative intent.
         </p>
+        <label className="styles-catalog-map-select lg:hidden">
+          <span>Map</span>
+          <select
+            aria-label="Style map"
+            value={activeNavigationTargetId ?? ''}
+            onChange={(event) => {
+              const item = navigationSections
+                .flatMap((section) => section.items)
+                .find((entry) => entry.targetId === event.target.value);
+              if (item) onNavigateToStyleTab(item.tabId);
+            }}
+          >
+            {navigationSections.flatMap((section) =>
+              section.items.map((item) => (
+                <option key={item.id} value={item.targetId}>
+                  {item.label}
+                </option>
+              )),
+            )}
+          </select>
+        </label>
       </div>
 
       <div
         className={`grid min-h-0 min-w-0 flex-1 gap-4 overflow-hidden ${
           isNavigationPanelOpen
-            ? 'lg:grid-cols-[216px_minmax(0,1fr)]'
+            ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
             : 'lg:grid-cols-[40px_minmax(0,1fr)]'
         }`}
       >
@@ -1298,7 +1323,7 @@ export function StyleCollectionsLandingSurface({
                 </h3>
                 <div className="h-px flex-1 bg-white/6" />
               </div>
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+              <div className="grid grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-3">
                 {personalStyleCollections.map((collection, index) => {
                   const tabId =
                     collection.id === 'my_styles' ? USER_STYLE_PACK_ID : FAVORITES_PACK_ID;

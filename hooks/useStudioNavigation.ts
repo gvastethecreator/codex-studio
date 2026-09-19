@@ -1,5 +1,10 @@
 import { useCallback, useLayoutEffect, useRef } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
+import {
+  persistCreateRoute,
+  readLastCreateRoute,
+  resolveCreateTabAction,
+} from '../lib/lastCreateRoute';
 import { preloadStudioViewportRoute } from '../lib/studioViewportRouteSurfaces';
 import { useLatestRef } from './useLatestRef';
 import type { RecipeAliasId } from '../lib/recipeAliases';
@@ -142,20 +147,45 @@ export function useStudioNavigation({
     return () => {};
   }, [syncRouteState]);
 
+  useLayoutEffect(() => {
+    persistCreateRoute(route);
+  }, [route]);
+
   const handleViewChange = useCallback(
     (newView: 'studio' | 'recipes') => {
-      const commitViewChange = () => {
-        if (newView === 'studio') {
-          navigateToStudio(() => setActiveRecipe(null));
-          return;
-        }
+      persistCreateRoute(route);
+      const action = resolveCreateTabAction(route, newView, readLastCreateRoute());
 
-        navigateToRecipes(() => setActiveRecipe(null));
-      };
+      if (action.kind === 'noop') return;
 
-      void preloadStudioViewportRoute(newView, null).then(commitViewChange, commitViewChange);
+      if (action.kind === 'studio') {
+        void preloadStudioViewportRoute('studio', null).then(
+          () => navigateToStudio(() => setActiveRecipe(null)),
+          () => navigateToStudio(() => setActiveRecipe(null)),
+        );
+        return;
+      }
+
+      if (action.kind === 'recipe') {
+        void preloadStudioViewportRoute('recipe', action.recipeId).then(
+          () =>
+            navigateToRecipe(action.recipeId, action.aliasId, () =>
+              setActiveRecipe(action.recipeId),
+            ),
+          () =>
+            navigateToRecipe(action.recipeId, action.aliasId, () =>
+              setActiveRecipe(action.recipeId),
+            ),
+        );
+        return;
+      }
+
+      void preloadStudioViewportRoute('recipes', null).then(
+        () => navigateToRecipes(() => setActiveRecipe(null)),
+        () => navigateToRecipes(() => setActiveRecipe(null)),
+      );
     },
-    [navigateToRecipes, navigateToStudio, setActiveRecipe],
+    [navigateToRecipe, navigateToRecipes, navigateToStudio, route, setActiveRecipe],
   );
 
   const handleRecipeSelection = useCallback(

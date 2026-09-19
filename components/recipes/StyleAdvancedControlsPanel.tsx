@@ -51,14 +51,6 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
       data-style-advanced-controls
       className="rounded-[8px] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-2 shadow-lg shadow-black/35"
     >
-      <div className="mb-2 flex items-center justify-between gap-2 border-b border-[color:var(--wb-line)] px-1 pb-2">
-        <div className="text-[9px] font-black uppercase tracking-[0.22em] text-[color:var(--wb-muted)]">
-          Advanced Layers
-        </div>
-        <div className="rounded-[5px] border border-[color:var(--wb-line)] bg-white/6 px-1.5 py-0.5 text-[8px] font-black uppercase tracking-widest text-[color:var(--wb-muted)]">
-          {selectedStyles.length} active
-        </div>
-      </div>
       <div className="space-y-2">
         {selectedStyles.map((slot, index) => {
           const layer = selectedStyleLayers[index] ?? createSelectedStyleLayer(slot, index);

@@ -5,9 +5,20 @@ import {
   createStyleGridVirtualWindow,
   estimateStyleGridMountedPresetCount,
   estimateStyleGroupPlaceholderHeight,
+  fitStyleGridColumns,
+  resolveStyleGridColumns,
 } from './styleGridVirtualization';
 
 describe('styleGridVirtualization', () => {
+  it('fits more than 7 columns on a 2400px catalog at the 120px min card', () => {
+    expect(fitStyleGridColumns(2400)).toBeGreaterThan(7);
+    expect(resolveStyleGridColumns('auto', fitStyleGridColumns(2400))).toBe(
+      fitStyleGridColumns(2400),
+    );
+    expect(resolveStyleGridColumns(4, 12)).toBe(4);
+    expect(resolveStyleGridColumns(20, 9)).toBe(9);
+  });
+
   it('estimates enough placeholder height to keep offscreen group layout stable', () => {
     const compactHeight = estimateStyleGroupPlaceholderHeight({
       renderedPresetCount: 12,

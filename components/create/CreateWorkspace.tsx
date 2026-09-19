@@ -36,6 +36,7 @@ export interface CreateWorkspaceProps {
   tools?: React.ReactNode;
   images?: GeneratedImageWithConfig[];
   routeKey?: string;
+  onSidePanelTarget?: (node: HTMLElement | null) => void;
 }
 
 export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
@@ -48,6 +49,7 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
   tools,
   images,
   routeKey = 'recipes-list',
+  onSidePanelTarget,
 }) => {
   const draft = useGenerationDraft();
   const stageImages = images ?? recipePageProps.imagesWithConfig;
@@ -60,17 +62,20 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
 
   return (
     <div className="create-workspace" data-route-key={routeKey}>
-      <aside
-        className={`create-tools studio-surface${tools ? ' workbench-config' : ''}`}
-        aria-label="Create tools"
-      >
-        {tools}
-        {hasGenerationDock ? (
-          <Suspense fallback={<StudioGenerationDockFallback />}>
-            <GenerationDock {...generationDockProps} layout="rail" />
-          </Suspense>
-        ) : null}
-      </aside>
+      <div className="create-tray-stack">
+        <aside
+          className={`create-tools studio-surface${tools ? ' workbench-config' : ''}`}
+          aria-label="Create tools"
+        >
+          {tools}
+          {hasGenerationDock ? (
+            <Suspense fallback={<StudioGenerationDockFallback />}>
+              <GenerationDock {...generationDockProps} layout="rail" />
+            </Suspense>
+          ) : null}
+        </aside>
+        <div ref={onSidePanelTarget} className="create-side-panel" />
+      </div>
       <section className="create-stage studio-well" aria-label="Create canvas">
         <RecipeResultPreview
           variant="stage"

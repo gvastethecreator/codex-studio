@@ -25,15 +25,23 @@ import React, {
 } from 'react';
 import { createPortal } from 'react-dom';
 
+import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { workbenchAmbientPortalProps } from '../../lib/workbenchAmbient';
-import { getStyleThumbnail, loadStyleThumbnailPack } from '../../lib/styleThumbnailCatalog';
+import {
+  getStyleCategoryImage,
+  getStyleThumbnail,
+  loadStyleThumbnailPack,
+  subscribeStyleThumbnailCatalog,
+} from '../../lib/styleThumbnailCatalog';
 import { getStyleRuntimePresetDisplayName } from './stylesData';
+import { StyleCategoryGlyph } from './StyleCategoryGlyph';
+import { resolveStyleCategoryIdentity } from './styleCategoryIdentity';
 import {
   compactStyleMenuTitle,
   compactStyleParentRoute,
   filterCompactStyleCatalog,
   formatCompactStyleStrength,
-  listCompactStyleCategories,
+  groupCompactStylePresetsByCategory,
   listCompactStylePacks,
   mergeCompactStyleSearchIndexes,
   planCompactStyleCatalogPackIds,
@@ -112,11 +120,12 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   const [route, setRoute] = useState<CompactStyleRoute>({ view: 'packs' });
   const [catalog, setCatalog] = useState<CatalogLoadState>({ status: 'idle' });
   const [preview, setPreview] = useState<{
-    result: StylePresetCatalogSearchResult;
+    result: StylePresetCatalogSearchResult | null;
     pinned: boolean;
     src: string | null;
-    status: 'loading' | 'ready' | 'empty' | 'error';
-  } | null>(null);
+    status: 'idle' | 'loading' | 'ready' | 'empty';
+  }>({ result: null, pinned: false, src: null, status: 'idle' });
+  const [thumbRevision, setThumbRevision] = useState(0);
   const hideTimerRef = useRef(0);
   const showTimerRef = useRef(0);
   const keyboardRef = useRef(false);
@@ -142,12 +151,12 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
       }),
     [favorites, mergedIndex, query, route],
   );
-  const categories = useMemo(
+  const categoryGroups = useMemo(
     () =>
-      route.view === 'categories' || route.view === 'styles'
-        ? listCompactStyleCategories(mergedIndex, route.packId)
+      !query.trim() && route.view === 'categories'
+        ? groupCompactStylePresetsByCategory(results)
         : [],
-    [mergedIndex, route],
+    [query, results, route.view],
   );
   const selectedIds = useMemo(
     () => new Set(selectedStyles.map((slot) => slot.preset.id)),
@@ -163,11 +172,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     packs,
   });
   const showBack = Boolean(query.trim()) || route.view !== 'packs';
-  const browseLabel = query.trim()
-    ? ''
-    : route.view === 'all'
-      ? 'Browse packs'
-      : 'All styles';
+  const browseLabel = query.trim() ? '' : route.view === 'all' ? 'Browse packs' : 'All styles';
   const portalProps = workbenchAmbientPortalProps();
 
   useEffect(() => {
@@ -179,6 +184,9 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     }
     let cancelled = false;
     setCatalog({ status: 'loading' });
+    for (const packId of packIds) {
+      if (/^pack_\d+$/.test(packId)) void loadStyleThumbnailPack(packId);
+    }
     void loadIndex(packIds).then(
       (index) => {
         if (!cancelled) setCatalog({ status: 'ready', index });
@@ -192,12 +200,19 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     };
   }, [loadIndex, menuOpen, packIdsKey]);
 
+  useEffect(() => subscribeStyleThumbnailCatalog(() => setThumbRevision((value) => value + 1)), []);
+
   const closePreview = useCallback((restore = false) => {
     window.clearTimeout(showTimerRef.current);
     window.clearTimeout(hideTimerRef.current);
     const anchor = previewAnchorRef.current;
     anchor?.removeAttribute('aria-describedby');
-    setPreview(null);
+    setPreview((current) => ({
+      result: null,
+      pinned: false,
+      src: current.src,
+      status: current.src ? 'ready' : 'idle',
+    }));
     if (restore) anchor?.focus({ preventScroll: true });
   }, []);
 
@@ -237,35 +252,33 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     const pop = popRef.current;
     const root = rootRef.current;
     if (!pop || !root || !menuOpen) return;
+    const tray = root.closest<HTMLElement>('.create-tools') ?? root;
+    const trayRect = tray.getBoundingClientRect();
     const rootRect = root.getBoundingClientRect();
-    const anchor =
-      root.querySelector<HTMLElement>('[data-add]:not([hidden])')?.getBoundingClientRect() ??
-      rootRect;
     const vw = document.documentElement.clientWidth;
     const vh = window.innerHeight;
-    const width = Math.min(Math.max(rootRect.width, 280), vw - 16);
+    const width = Math.min(Math.max(rootRect.width, 280), Math.max(280, vw - trayRect.right - 16));
     pop.style.width = `${width}px`;
-    const below = vh - anchor.bottom - 12;
-    const above = anchor.top - 12;
     const footer = selectedCount >= maxSlots ? 64 : 37;
     const list = listRef.current;
+    const listCap = list?.classList.contains('is-pack') ? 420 : 264;
     if (list) {
-      list.style.maxHeight = `${Math.max(58, Math.min(264, Math.max(Math.max(below, above), 160) - 43 - 35 - footer - 10))}px`;
+      list.style.maxHeight = `${Math.max(58, Math.min(listCap, vh - 8 - 43 - 35 - footer - 16))}px`;
     }
     const height = pop.offsetHeight;
-    let top = below >= height || below >= above ? anchor.bottom + 7 : anchor.top - height - 7;
-    top = clamp(top, 8, Math.max(8, vh - height - 8));
-    pop.style.left = `${clamp(rootRect.left, 8, Math.max(8, vw - width - 8))}px`;
-    pop.style.top = `${top}px`;
+    let left = trayRect.right + 8;
+    if (left + width > vw - 8) {
+      left = Math.max(8, trayRect.left - width - 8);
+    }
+    pop.style.left = `${clamp(left, 8, Math.max(8, vw - width - 8))}px`;
+    pop.style.top = `${clamp(trayRect.top, 8, Math.max(8, vh - height - 8))}px`;
   }, [maxSlots, menuOpen, selectedCount]);
 
   const positionWeight = useCallback(() => {
     const panel = weightRef.current;
     const root = rootRef.current;
     if (!panel || !root || !weightId) return;
-    const anchor = root.querySelector<HTMLElement>(
-      `[data-strength="${CSS.escape(weightId)}"]`,
-    );
+    const anchor = root.querySelector<HTMLElement>(`[data-strength="${CSS.escape(weightId)}"]`);
     if (!anchor) return;
     const rect = anchor.getBoundingClientRect();
     const vw = document.documentElement.clientWidth;
@@ -283,12 +296,12 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   const positionPreview = useCallback(() => {
     const panel = previewRef.current;
     const anchor = previewAnchorRef.current;
-    if (!panel || !anchor || !preview) return;
+    if (!panel || !anchor || !preview.result) return;
     const a = anchor.getBoundingClientRect();
-    const boundary =
-      menuOpen && popRef.current?.contains(anchor)
-        ? popRef.current.getBoundingClientRect()
-        : (rootRef.current?.getBoundingClientRect() ?? a);
+    const dockToMenu = Boolean(menuOpen && popRef.current?.contains(anchor));
+    const boundary = dockToMenu
+      ? popRef.current!.getBoundingClientRect()
+      : (rootRef.current?.getBoundingClientRect() ?? a);
     const vw = document.documentElement.clientWidth;
     const vh = window.innerHeight;
     const width = panel.offsetWidth;
@@ -297,17 +310,17 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     let top: number;
     if (boundary.right + 10 + width <= vw - 8) {
       left = boundary.right + 10;
-      top = a.top - 7;
+      top = dockToMenu ? boundary.top : a.top - 7;
     } else if (boundary.left - 10 - width >= 8) {
       left = boundary.left - 10 - width;
-      top = a.top - 7;
+      top = dockToMenu ? boundary.top : a.top - 7;
     } else {
       left = clamp(a.left, 8, vw - width - 8);
       top = a.bottom + 8 + height <= vh - 8 ? a.bottom + 8 : a.top - height - 8;
     }
     panel.style.left = `${clamp(left, 8, Math.max(8, vw - width - 8))}px`;
     panel.style.top = `${clamp(top, 8, Math.max(8, vh - height - 8))}px`;
-  }, [menuOpen, preview]);
+  }, [menuOpen, preview.result]);
 
   useLayoutEffect(() => {
     positionPopover();
@@ -333,11 +346,20 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     async (result: StylePresetCatalogSearchResult, anchor: HTMLElement, pinned: boolean) => {
       previewAnchorRef.current = anchor;
       anchor.setAttribute('aria-describedby', previewId);
-      setPreview({ result, pinned, src: null, status: 'loading' });
+      setPreview((current) => ({
+        result,
+        pinned,
+        src: current.src,
+        status: current.result?.id === result.id && current.src ? current.status : 'loading',
+      }));
       const src = result.defaultImage || (await loadPreview(result.id, result.packId));
       setPreview((current) =>
-        current?.result.id === result.id
-          ? { ...current, src, status: src ? 'ready' : 'empty' }
+        current.result?.id === result.id
+          ? {
+              ...current,
+              src: src || current.src,
+              status: src ? 'ready' : current.src ? 'ready' : 'empty',
+            }
           : current,
       );
     },
@@ -348,7 +370,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     (result: StylePresetCatalogSearchResult, anchor: HTMLElement, delay = 220) => {
       window.clearTimeout(hideTimerRef.current);
       window.clearTimeout(showTimerRef.current);
-      if (preview?.result.id === result.id) {
+      if (preview.result?.id === result.id) {
         previewAnchorRef.current = anchor;
         return;
       }
@@ -356,17 +378,17 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
         if (anchor.isConnected) void showPreview(result, anchor, false);
       }, delay);
     },
-    [preview?.result.id, showPreview],
+    [preview.result?.id, showPreview],
   );
 
   const deferHidePreview = useCallback(() => {
-    if (preview?.pinned) return;
+    if (preview.pinned) return;
     window.clearTimeout(hideTimerRef.current);
     hideTimerRef.current = window.setTimeout(() => {
       if (previewRef.current?.matches(':hover')) return;
       closePreview();
     }, 260);
-  }, [closePreview, preview?.pinned]);
+  }, [closePreview, preview.pinned]);
 
   useEffect(() => {
     const onPointerDown = (event: PointerEvent) => {
@@ -386,17 +408,21 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     };
     const onKeyDown = (event: KeyboardEvent) => {
       keyboardRef.current = true;
-      if (event.altKey && event.key.toLowerCase() === 's' && rootRef.current?.getClientRects().length) {
+      if (
+        event.altKey &&
+        event.key.toLowerCase() === 's' &&
+        rootRef.current?.getClientRects().length
+      ) {
         if (document.querySelector('[data-style-browser-root]')) return;
         event.preventDefault();
         openMenu();
         return;
       }
       if (event.key !== 'Escape') return;
-      if (preview) {
+      if (preview.pinned && preview.result) {
         event.preventDefault();
         event.stopPropagation();
-        closePreview(preview.pinned);
+        closePreview(true);
         return;
       }
       if (weightId) {
@@ -409,6 +435,12 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
         event.preventDefault();
         event.stopPropagation();
         closeMenu();
+        return;
+      }
+      if (preview.result) {
+        event.preventDefault();
+        event.stopPropagation();
+        closePreview();
       }
     };
     document.addEventListener('pointerdown', onPointerDown, true);
@@ -440,6 +472,61 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   };
 
   const selectedSlot = (id: string) => selectedStyles.find((slot) => slot.preset.id === id);
+
+  const renderStyleChoice = (result: StylePresetCatalogSearchResult) => {
+    const chosen = selectedIds.has(result.id);
+    const full = selectedCount >= maxSlots && !chosen;
+    const fav = favorites.includes(result.id);
+    return (
+      <div key={result.id} className="cs-option-wrap">
+        <button
+          type="button"
+          className="cs-choice cs-style-choice"
+          data-preview={result.id}
+          aria-pressed={chosen}
+          aria-disabled={full ? 'true' : undefined}
+          aria-label={`${chosen ? 'Remove' : 'Add'} ${result.name}${full ? '; all slots are used' : ''}`}
+          onClick={() => {
+            if (full) return;
+            void onChooseStyle(result);
+          }}
+          onPointerEnter={(event) => {
+            if (event.pointerType === 'touch' || weightId) return;
+            queuePreview(result, event.currentTarget);
+          }}
+          onPointerLeave={() => deferHidePreview()}
+        >
+          <span className="cs-check">{chosen ? <Check size={14} /> : null}</span>
+          <span className="cs-option-text">
+            {result.name}
+            {query.trim() ? <span className="cs-option-sub">{result.categoryName}</span> : null}
+          </span>
+        </button>
+        <button
+          type="button"
+          className="cs-peek"
+          aria-label={`Preview ${result.name}`}
+          onClick={() => {
+            const choice = listRef.current?.querySelector<HTMLElement>(
+              `[data-preview="${CSS.escape(result.id)}"]`,
+            );
+            if (choice) void showPreview(result, choice, true);
+          }}
+        >
+          <Eye size={13} />
+        </button>
+        <button
+          type="button"
+          className="cs-favorite-option"
+          aria-label={`${fav ? 'Unfavorite' : 'Favorite'} ${result.name}`}
+          aria-pressed={fav}
+          onClick={() => onToggleFavorite(result.id)}
+        >
+          <Heart size={13} fill={fav ? 'currentColor' : 'none'} />
+        </button>
+      </div>
+    );
+  };
 
   const menu = menuOpen
     ? createPortal(
@@ -475,16 +562,16 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
               });
               return;
             }
-            if (event.key === 'ArrowLeft' && index >= 0 && (query.trim() || route.view !== 'packs')) {
+            if (
+              event.key === 'ArrowLeft' &&
+              index >= 0 &&
+              (query.trim() || route.view !== 'packs')
+            ) {
               event.preventDefault();
               goBack();
               return;
             }
-            if (
-              event.key === 'ArrowRight' &&
-              index >= 0 &&
-              (route.view === 'packs' || route.view === 'categories')
-            ) {
+            if (event.key === 'ArrowRight' && index >= 0 && route.view === 'packs') {
               event.preventDefault();
               choices[index]?.click();
             }
@@ -543,7 +630,11 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
               </button>
             ) : null}
           </div>
-          <div ref={listRef} className="cs-menu-list" aria-label="Style catalog">
+          <div
+            ref={listRef}
+            className={`cs-menu-list${route.view === 'categories' && !query.trim() ? ' is-pack' : ''}`}
+            aria-label="Style catalog"
+          >
             {catalog.status === 'loading' ? (
               <div className="cs-empty-result">
                 <strong>Loading styles</strong>
@@ -571,26 +662,40 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                 </div>
               ))
             ) : !query.trim() && route.view === 'categories' ? (
-              categories.map((category) => (
-                <div key={category.id} className="cs-option-wrap">
-                  <button
-                    type="button"
-                    className="cs-choice"
-                    aria-label={`${category.name}, ${category.count} ${category.count === 1 ? 'style' : 'styles'}`}
-                    onClick={() =>
-                      navigate({
-                        view: 'styles',
-                        packId: route.packId,
-                        categoryId: category.id,
-                      })
-                    }
-                  >
-                    <span className="cs-option-text">{category.name}</span>
-                    <span className="cs-dir-count">{category.count}</span>
-                    <ChevronRight size={13} />
-                  </button>
+              categoryGroups.length === 0 ? (
+                <div className="cs-empty-result">
+                  <strong>No styles found</strong>
+                  <p>Try another pack or search by name.</p>
                 </div>
-              ))
+              ) : (
+                categoryGroups.map((group) => {
+                  const identity = resolveStyleCategoryIdentity(group.packId, group.name);
+                  const thumb =
+                    getStyleCategoryImage(styleCategoryImageKey(group.packId, group.name)) ??
+                    getStyleThumbnail(styleCategoryImageKey(group.packId, group.name));
+                  void thumbRevision;
+                  return (
+                    <div key={`${group.packId}:${group.id}`} className="cs-category-block">
+                      <div className="cs-category-head" data-category-header={group.id}>
+                        <span className={`cs-category-accent ${identity.accentClassName}`} />
+                        <span className="cs-category-thumb">
+                          {thumb ? (
+                            <img src={thumb} alt="" />
+                          ) : (
+                            <StyleCategoryGlyph iconId={identity.iconId} size={14} />
+                          )}
+                        </span>
+                        <span className={`cs-category-icon ${identity.titleClassName}`}>
+                          <StyleCategoryGlyph iconId={identity.iconId} size={12} />
+                        </span>
+                        <strong className={identity.titleClassName}>{group.name}</strong>
+                        <span className="cs-dir-count">{group.presets.length}</span>
+                      </div>
+                      {group.presets.map((result) => renderStyleChoice(result))}
+                    </div>
+                  );
+                })
+              )
             ) : results.length === 0 ? (
               <div className="cs-empty-result">
                 <strong>
@@ -606,9 +711,6 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
               </div>
             ) : (
               results.map((result, index) => {
-                const chosen = selectedIds.has(result.id);
-                const full = selectedCount >= maxSlots && !chosen;
-                const fav = favorites.includes(result.id);
                 const showGroup =
                   Boolean(query.trim()) || route.view === 'all' || route.view === 'favorites';
                 const previous = results[index - 1];
@@ -617,55 +719,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                 return (
                   <React.Fragment key={result.id}>
                     {heading ? <div className="cs-group-heading">{heading}</div> : null}
-                    <div className="cs-option-wrap">
-                      <button
-                        type="button"
-                        className="cs-choice cs-style-choice"
-                        data-preview={result.id}
-                        aria-pressed={chosen}
-                        aria-disabled={full ? 'true' : undefined}
-                        aria-label={`${chosen ? 'Remove' : 'Add'} ${result.name}${full ? '; all slots are used' : ''}`}
-                        onClick={() => {
-                          if (full) return;
-                          void onChooseStyle(result);
-                        }}
-                        onPointerEnter={(event) => {
-                          if (event.pointerType === 'touch' || weightId) return;
-                          queuePreview(result, event.currentTarget);
-                        }}
-                        onPointerLeave={() => deferHidePreview()}
-                      >
-                        <span className="cs-check">{chosen ? <Check size={14} /> : null}</span>
-                        <span className="cs-option-text">
-                          {result.name}
-                          {query.trim() ? (
-                            <span className="cs-option-sub">{result.categoryName}</span>
-                          ) : null}
-                        </span>
-                      </button>
-                      <button
-                        type="button"
-                        className="cs-peek"
-                        aria-label={`Preview ${result.name}`}
-                        onClick={() => {
-                          const choice = listRef.current?.querySelector<HTMLElement>(
-                            `[data-preview="${CSS.escape(result.id)}"]`,
-                          );
-                          if (choice) void showPreview(result, choice, true);
-                        }}
-                      >
-                        <Eye size={13} />
-                      </button>
-                      <button
-                        type="button"
-                        className="cs-favorite-option"
-                        aria-label={`${fav ? 'Unfavorite' : 'Favorite'} ${result.name}`}
-                        aria-pressed={fav}
-                        onClick={() => onToggleFavorite(result.id)}
-                      >
-                        <Heart size={13} fill={fav ? 'currentColor' : 'none'} />
-                      </button>
-                    </div>
+                    {renderStyleChoice(result)}
                   </React.Fragment>
                 );
               })
@@ -681,9 +735,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
               type="button"
               className="cs-favorites-view"
               aria-pressed={route.view === 'favorites'}
-              onClick={() =>
-                navigate({ view: route.view === 'favorites' ? 'all' : 'favorites' })
-              }
+              onClick={() => navigate({ view: route.view === 'favorites' ? 'all' : 'favorites' })}
             >
               <Heart size={12} />
               Favorites
@@ -782,50 +834,50 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
       )
     : null;
 
-  const previewPanel = preview
-    ? createPortal(
-        <div
-          {...portalProps}
-          ref={previewRef}
-          id={previewId}
-          className={`${portalProps.className} cs-preview`}
-          data-pinned={String(preview.pinned)}
-          role={preview.pinned ? 'dialog' : 'tooltip'}
-          aria-label={preview.pinned ? `Preview ${preview.result.name}` : undefined}
-          onPointerEnter={() => window.clearTimeout(hideTimerRef.current)}
-          onPointerLeave={() => deferHidePreview()}
-        >
-          <button
-            type="button"
-            className="cs-preview-close"
-            aria-label="Close preview"
-            onClick={() => closePreview(true)}
-          >
-            <X size={14} />
-          </button>
-          <div className="cs-preview-image">
-            {preview.status === 'ready' && preview.src ? (
-              <img src={preview.src} alt="" />
-            ) : (
-              <span className="cs-no-preview">
-                {preview.status === 'loading'
-                  ? 'Loading preview…'
-                  : 'No preview available'}
-              </span>
-            )}
-          </div>
-          <div className="cs-preview-body">
-            <h3>{preview.result.name}</h3>
-            <p>
-              {preview.result.packName}
-              <br />
-              {preview.result.categoryName}
-            </p>
-          </div>
-        </div>,
-        document.body,
-      )
-    : null;
+  const previewVisible = Boolean(preview.result);
+  const previewPanel = createPortal(
+    <div
+      {...portalProps}
+      ref={previewRef}
+      id={previewId}
+      className={`${portalProps.className} cs-preview`}
+      data-pinned={String(preview.pinned)}
+      data-visible={String(previewVisible)}
+      hidden={!previewVisible}
+      role={preview.pinned ? 'dialog' : 'tooltip'}
+      aria-hidden={previewVisible ? undefined : true}
+      aria-label={preview.pinned && preview.result ? `Preview ${preview.result.name}` : undefined}
+      onPointerEnter={() => window.clearTimeout(hideTimerRef.current)}
+      onPointerLeave={() => deferHidePreview()}
+    >
+      <button
+        type="button"
+        className="cs-preview-close"
+        aria-label="Close preview"
+        onClick={() => closePreview(true)}
+      >
+        <X size={14} />
+      </button>
+      <div className="cs-preview-image">
+        {preview.src ? (
+          <img src={preview.src} alt="" />
+        ) : (
+          <span className="cs-no-preview">
+            {preview.status === 'loading' ? 'Loading preview…' : 'No preview available'}
+          </span>
+        )}
+      </div>
+      <div className="cs-preview-body">
+        <h3>{preview.result?.name ?? ''}</h3>
+        <p>
+          {preview.result?.packName}
+          {preview.result ? <br /> : null}
+          {preview.result?.categoryName}
+        </p>
+      </div>
+    </div>,
+    document.body,
+  );
 
   return (
     <div ref={rootRef} className="cs-root" data-compact-style-selector>
