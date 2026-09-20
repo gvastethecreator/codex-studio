@@ -17,6 +17,7 @@ vi.mock('../services/studio-api/jobs', () => ({
 afterEach(() => {
   cleanup();
   vi.clearAllMocks();
+  window.localStorage.removeItem('studio-jobs-history-cleared-at');
 });
 
 import { summarizePersistentJobs } from '../lib/persistentJobSummary';
@@ -124,5 +125,33 @@ describe('QueuePanel views', () => {
     expect(screen.getByText('Queued image')).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Refresh jobs' }));
     expect(state.retry).toHaveBeenCalledOnce();
+  });
+
+  it('clears completed history from the jobs list', () => {
+    const state: ReturnType<typeof useJobHistory> = {
+      key: '',
+      page: null,
+      open: [],
+      history: [job('failed', 'failed')],
+      nextCursor: null,
+      seenHistoryIds: ['failed'],
+      knownAtRequest: [],
+      workspaces: [],
+      loading: false,
+      error: null,
+      loadMore: vi.fn(),
+      retry: vi.fn(),
+    };
+    vi.mocked(useJobHistory).mockReturnValue(state);
+    render(
+      React.createElement(QueuePanel, {
+        onInspectJob: vi.fn(),
+        onCancelServerJob: vi.fn(),
+      }),
+    );
+    fireEvent.click(screen.getByRole('button', { name: 'History' }));
+    expect(screen.getByRole('button', { name: 'Inspect job: Prompt' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Clear job history' }));
+    expect(screen.queryByRole('button', { name: 'Inspect job: Prompt' })).toBeNull();
   });
 });

@@ -122,7 +122,7 @@ function renderToolbar(overrides: Partial<ToolbarProps> = {}) {
 }
 
 describe('Toolbar composer chrome', () => {
-  it('places provider and Codex execution on one row', () => {
+  it('places provider above Codex execution in the Create rail', () => {
     const { container } = renderToolbar();
     const row = container.querySelector('.create-tool-provider-row');
     const provider = screen.getByRole('button', { name: /change provider/i });
@@ -138,7 +138,11 @@ describe('Toolbar composer chrome', () => {
     expect(
       execution.compareDocumentPosition(generate) & Node.DOCUMENT_POSITION_FOLLOWING,
     ).toBeTruthy();
-    expect(container.querySelector('.create-tool-execution')?.nextElementSibling).toBe(generate);
+    expect(
+      container
+        .querySelector('.create-tool-execution')
+        ?.nextElementSibling?.querySelector('[data-studio-generate-button]'),
+    ).toBe(generate);
     expect(generate.getAttribute('data-studio-generate-button')).not.toBeNull();
     expect(screen.getByRole('button', { name: 'Format: 1:1, Square' })).toBeTruthy();
     expect(screen.queryByRole('button', { name: 'Aspect ratio: 1:1' })).toBeNull();

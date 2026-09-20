@@ -307,19 +307,16 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     const width = panel.offsetWidth;
     const height = panel.offsetHeight;
     let left: number;
-    let top: number;
     if (boundary.right + 10 + width <= vw - 8) {
       left = boundary.right + 10;
-      top = dockToMenu ? boundary.top : a.top - 7;
     } else if (boundary.left - 10 - width >= 8) {
       left = boundary.left - 10 - width;
-      top = dockToMenu ? boundary.top : a.top - 7;
     } else {
       left = clamp(a.left, 8, vw - width - 8);
-      top = a.bottom + 8 + height <= vh - 8 ? a.bottom + 8 : a.top - height - 8;
     }
+    const top = clamp(a.top + a.height / 2 - height / 2, 8, Math.max(8, vh - height - 8));
     panel.style.left = `${clamp(left, 8, Math.max(8, vw - width - 8))}px`;
-    panel.style.top = `${clamp(top, 8, Math.max(8, vh - height - 8))}px`;
+    panel.style.top = `${top}px`;
   }, [menuOpen, preview.result]);
 
   useLayoutEffect(() => {
@@ -372,13 +369,14 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
       window.clearTimeout(showTimerRef.current);
       if (preview.result?.id === result.id) {
         previewAnchorRef.current = anchor;
+        positionPreview();
         return;
       }
       showTimerRef.current = window.setTimeout(() => {
         if (anchor.isConnected) void showPreview(result, anchor, false);
       }, delay);
     },
-    [preview.result?.id, showPreview],
+    [positionPreview, preview.result?.id, showPreview],
   );
 
   const deferHidePreview = useCallback(() => {

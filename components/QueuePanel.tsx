@@ -120,10 +120,16 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const waitReasons = new Map(worker.status?.waiting.map((entry) => [entry.jobId, entry]) ?? []);
     const [view, setView] = useState<'active' | 'review' | 'history'>('active');
     const [visibleCount, setVisibleCount] = useState(20);
+    const [historyClearedAt, setHistoryClearedAt] = useState(() => {
+      const stored = Number(window.localStorage.getItem('studio-jobs-history-cleared-at') ?? 0);
+      return Number.isFinite(stored) ? stored : 0;
+    });
     const activeJobs = jobHistory.open.filter((job) => job.status !== 'needs_review');
     const reviewJobs = jobHistory.open.filter((job) => job.status === 'needs_review');
-    const jobs =
-      view === 'history' ? jobHistory.history : view === 'review' ? reviewJobs : activeJobs;
+    const visibleHistory = jobHistory.history.filter(
+      (job) => Date.parse(job.createdAt) > historyClearedAt,
+    );
+    const jobs = view === 'history' ? visibleHistory : view === 'review' ? reviewJobs : activeJobs;
     const visibleJobs = view === 'history' ? jobs : jobs.slice(0, visibleCount);
     const jobGroups = Array.from(
       visibleJobs
@@ -174,16 +180,33 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                     : 'No jobs running or queued'}
             </p>
           </div>
-          {onClose ? (
+          <div className="flex items-center gap-1">
             <button
               type="button"
-              aria-label="Close jobs"
-              onClick={onClose}
-              className="studio-hit-target rounded-[var(--wb-radius)] p-1.5 text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+              aria-label="Clear job history"
+              title="Clear job history"
+              onClick={() => {
+                const now = Date.now();
+                window.localStorage.setItem('studio-jobs-history-cleared-at', String(now));
+                setHistoryClearedAt(now);
+                setView('history');
+              }}
+              className="studio-hit-target rounded-[var(--wb-radius)] px-2 py-1.5 text-xs text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             >
-              <XCircle size={18} />
+              Clear
             </button>
-          ) : null}
+            {onClose ? (
+              <button
+                type="button"
+                aria-label="Close jobs"
+                title="Close jobs"
+                onClick={onClose}
+                className="studio-hit-target rounded-[var(--wb-radius)] p-1.5 text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+              >
+                <XCircle size={18} />
+              </button>
+            ) : null}
+          </div>
         </div>
         <div className="space-y-3 border-b border-[color:var(--wb-border)] px-3 pb-3">
           <label className="block text-xs text-[color:var(--wb-muted)]">

@@ -1,6 +1,7 @@
 import type { GenerationProviderId } from '../packages/shared/src/generationContracts';
 import type { CodexExecutionTransport } from '../packages/shared/src/codexExecutionContract';
 import type { ImageGenerationConfig } from '../types';
+import { resolveProviderMaxInputImages } from './composerProviderProjection';
 import { resolveGrokImagineGenerateBlock } from './grokImagineUiPolicy';
 
 export type StudioGenerationRequest =
@@ -56,13 +57,11 @@ export function prepareStudioGenerationRequest({
     generationConfig.recipeId,
   );
   const maxAttachments =
-    effectiveRecipeId === 'styles'
-      ? 5
-      : effectiveRecipeId === 'timeline' ||
-          effectiveRecipeId === 'character-lab' ||
-          effectiveRecipeId === 'animation-sequence'
-        ? 4
-        : 1;
+    effectiveRecipeId === 'timeline' ||
+    effectiveRecipeId === 'character-lab' ||
+    effectiveRecipeId === 'animation-sequence'
+      ? 4
+      : resolveProviderMaxInputImages(providerId);
   const finalAttachments = baseAttachments.slice(0, maxAttachments);
   if (finalAttachments.some((attachment) => attachment.isProcessing)) {
     return { ok: false, message: 'Wait for reference images to finish loading before generating.' };

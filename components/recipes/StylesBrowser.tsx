@@ -1086,10 +1086,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   }, []);
 
   useEffect(() => {
-    if (explorerOpen) setAdvancedOpen(false);
-  }, [explorerOpen]);
-
-  useEffect(() => {
     if (!advancedOpen) return;
     const root = advancedPanelRef.current;
     root
@@ -2634,7 +2630,6 @@ ${styleAnchorLine}
             aria-expanded={advancedOpen}
             aria-controls="style-advanced-panel"
             onClick={() => {
-              if (explorerOpen) closeStyleCatalog();
               setAdvancedOpen((open) => !open);
             }}
           >
@@ -2642,28 +2637,12 @@ ${styleAnchorLine}
             <SlidersHorizontal size={13} />
           </button>
         ) : null}
-        <button
-          type="button"
-          onClick={handleGenerateSelectedStyles}
-          disabled={activeSelectedStyleCount === 0 || Boolean(grokGenerateBlock)}
-          title={grokGenerateBlock?.message}
-          hidden
-          data-style-generate-button
-          data-generate-active={isGenerating ? 'true' : 'false'}
-          className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/18 px-4 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/2 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
-        >
-          <Play size={16} />
-          {isGenerating ? 'Queue' : 'Generate'}
-        </button>
-      </RecipeControls>
-      {advancedOpen && selectedStyles.length > 0 ? (
-        <RecipeSidePanel>
+        {advancedOpen && selectedStyles.length > 0 ? (
           <div
             ref={advancedPanelRef}
             id="style-advanced-panel"
-            className="studio-surface create-side-panel-dialog"
-            role="dialog"
-            aria-modal="false"
+            className="studio-surface style-advanced-rail"
+            role="region"
             aria-label="Advanced layers"
           >
             <div className="create-side-panel-head">
@@ -2693,8 +2672,21 @@ ${styleAnchorLine}
               </React.Suspense>
             </div>
           </div>
-        </RecipeSidePanel>
-      ) : null}
+        ) : null}
+        <button
+          type="button"
+          onClick={handleGenerateSelectedStyles}
+          disabled={activeSelectedStyleCount === 0 || Boolean(grokGenerateBlock)}
+          title={grokGenerateBlock?.message}
+          hidden
+          data-style-generate-button
+          data-generate-active={isGenerating ? 'true' : 'false'}
+          className="mt-3 flex h-11 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/18 px-4 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-[background-color,border-color,opacity] hover:border-accent-300/2 hover:bg-accent-500/25 disabled:cursor-not-allowed disabled:border-[color:var(--wb-line)] disabled:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] disabled:text-[color:var(--wb-dim)]"
+        >
+          <Play size={16} />
+          {isGenerating ? 'Queue' : 'Generate'}
+        </button>
+      </RecipeControls>
       {userStyleEditorSession && (
         <RecipeOverlay>
           <React.Suspense

@@ -18,6 +18,7 @@ import { useImagePanZoom } from '../../lib/imagePanZoom';
 import { useToastUi } from '../../contexts/GlobalContext';
 import type { Attachment, GeneratedImageWithConfig } from '../../types';
 import { copyImageToClipboard, downloadImage, generateSmartFilename } from '../../utils/fileUtils';
+import Tooltip from '../Tooltip';
 
 type StageBackground = 'dark' | 'light' | 'checkered';
 type NavSide = 'prev' | 'next' | null;
@@ -155,70 +156,65 @@ export function RecipeResultPreview({
             aria-label="Selected result actions"
           >
             {canCompare ? (
-              <button
-                type="button"
-                aria-pressed={showReference}
-                onClick={() => setShowReference((current) => !current)}
-              >
-                {showReference ? 'Show result' : 'Compare reference'}
-              </button>
+              <Tooltip content={showReference ? 'Show result' : 'Compare reference'}>
+                <button
+                  type="button"
+                  aria-pressed={showReference}
+                  aria-label={showReference ? 'Show result' : 'Compare reference'}
+                  onClick={() => setShowReference((current) => !current)}
+                >
+                  {showReference ? 'Result' : 'Compare'}
+                </button>
+              </Tooltip>
             ) : null}
-            <button type="button" aria-label="Copy image" onClick={() => void handleCopy()}>
-              <Copy size={15} />
-            </button>
-            <button type="button" aria-label="Download image" onClick={handleDownload}>
-              <Download size={15} />
-            </button>
-            {onToggleFavorite ? (
-              <button
-                type="button"
-                aria-label={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
-                aria-pressed={Boolean(selected?.isFavorite)}
-                onClick={() => selected && onToggleFavorite(selected.id)}
-              >
-                <Heart size={15} />
+            <Tooltip content="Copy image">
+              <button type="button" aria-label="Copy image" onClick={() => void handleCopy()}>
+                <Copy size={14} />
               </button>
+            </Tooltip>
+            <Tooltip content="Download image">
+              <button type="button" aria-label="Download image" onClick={handleDownload}>
+                <Download size={14} />
+              </button>
+            </Tooltip>
+            {onToggleFavorite ? (
+              <Tooltip
+                content={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+              >
+                <button
+                  type="button"
+                  aria-label={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                  aria-pressed={Boolean(selected?.isFavorite)}
+                  onClick={() => selected && onToggleFavorite(selected.id)}
+                >
+                  <Heart size={14} />
+                </button>
+              </Tooltip>
             ) : null}
             {onUseAsReference && selected ? (
-              <button
-                type="button"
-                aria-label="Use as reference"
-                onClick={() => onUseAsReference(selected)}
-              >
-                <Paperclip size={15} />
-              </button>
+              <Tooltip content="Use as reference">
+                <button
+                  type="button"
+                  aria-label="Use as reference"
+                  onClick={() => onUseAsReference(selected)}
+                >
+                  <Paperclip size={14} />
+                </button>
+              </Tooltip>
             ) : null}
             {onOpen && selected ? (
-              <button type="button" aria-label="Open result" onClick={() => onOpen(selected)}>
-                <OpenFull size={15} />
-              </button>
+              <Tooltip content="Open result">
+                <button type="button" aria-label="Open result" onClick={() => onOpen(selected)}>
+                  <OpenFull size={14} />
+                </button>
+              </Tooltip>
             ) : null}
-            <div className="recipe-result-background" role="group" aria-label="Canvas background">
-              <button
-                type="button"
-                aria-pressed={background === 'dark'}
-                aria-label="Dark background"
-                onClick={() => setBackground('dark')}
-              />
-              <button
-                type="button"
-                aria-pressed={background === 'light'}
-                aria-label="Light background"
-                onClick={() => setBackground('light')}
-              />
-              <button
-                type="button"
-                aria-pressed={background === 'checkered'}
-                aria-label="Checkered background"
-                onClick={() => setBackground('checkered')}
-              />
-            </div>
+            {selected?.config.prompt ? (
+              <p className="recipe-result-prompt" title={selected.config.prompt}>
+                {selected.config.prompt}
+              </p>
+            ) : null}
           </div>
-          {selected?.config.prompt ? (
-            <p className="recipe-result-prompt" title={selected.config.prompt}>
-              {selected.config.prompt}
-            </p>
-          ) : null}
         </div>
       ) : null}
       <div
@@ -287,25 +283,66 @@ export function RecipeResultPreview({
               draggable={false}
             />
             {isStage ? (
-              <div
-                className="recipe-result-zoom"
-                role="group"
-                aria-label="Zoom controls"
-                onPointerDown={(event) => event.stopPropagation()}
-              >
-                <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
-                  <Plus size={14} />
-                </button>
-                <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
-                  <Minus size={14} />
-                </button>
-                <button type="button" aria-label="Fit image" onClick={panZoom.fit}>
-                  <Fit size={14} />
-                </button>
-                <button type="button" aria-label="Reset zoom" onClick={panZoom.reset}>
-                  <Reset size={14} />
-                </button>
-              </div>
+              <>
+                <div
+                  className="recipe-result-background"
+                  role="group"
+                  aria-label="Canvas background"
+                  onPointerDown={(event) => event.stopPropagation()}
+                >
+                  <Tooltip content="Dark background">
+                    <button
+                      type="button"
+                      aria-pressed={background === 'dark'}
+                      aria-label="Dark background"
+                      onClick={() => setBackground('dark')}
+                    />
+                  </Tooltip>
+                  <Tooltip content="Light background">
+                    <button
+                      type="button"
+                      aria-pressed={background === 'light'}
+                      aria-label="Light background"
+                      onClick={() => setBackground('light')}
+                    />
+                  </Tooltip>
+                  <Tooltip content="Checkered background">
+                    <button
+                      type="button"
+                      aria-pressed={background === 'checkered'}
+                      aria-label="Checkered background"
+                      onClick={() => setBackground('checkered')}
+                    />
+                  </Tooltip>
+                </div>
+                <div
+                  className="recipe-result-zoom"
+                  role="group"
+                  aria-label="Zoom controls"
+                  onPointerDown={(event) => event.stopPropagation()}
+                >
+                  <Tooltip content="Zoom in">
+                    <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
+                      <Plus size={14} />
+                    </button>
+                  </Tooltip>
+                  <Tooltip content="Zoom out">
+                    <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
+                      <Minus size={14} />
+                    </button>
+                  </Tooltip>
+                  <Tooltip content="Fit image">
+                    <button type="button" aria-label="Fit image" onClick={panZoom.fit}>
+                      <Fit size={14} />
+                    </button>
+                  </Tooltip>
+                  <Tooltip content="Reset zoom">
+                    <button type="button" aria-label="Reset zoom" onClick={panZoom.reset}>
+                      <Reset size={14} />
+                    </button>
+                  </Tooltip>
+                </div>
+              </>
             ) : null}
           </>
         ) : (

@@ -42,7 +42,7 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
 
   return (
     <div
-      className="studio-surface fixed inset-x-2 z-40 flex overflow-hidden rounded-md border border-[color:var(--wb-line)] shadow-2xl studio-route-enter studio-route-enter-forward sm:static sm:h-full sm:shrink-0 sm:rounded-none sm:border-none sm:shadow-none"
+      className="studio-operations-rail studio-surface fixed inset-x-2 z-40 flex overflow-hidden rounded-md border border-[color:var(--wb-line)] shadow-2xl studio-route-enter studio-route-enter-forward sm:static sm:inset-auto sm:h-full sm:w-[304px] sm:shrink-0 sm:rounded-none sm:border-none sm:shadow-none"
       style={{
         top: 'var(--studio-mobile-header-height)',
         bottom: hasGenerationDock

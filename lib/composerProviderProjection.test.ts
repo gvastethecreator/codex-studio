@@ -1,6 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { CODEX_HTTP_MODEL } from '../packages/shared/src/codexExecutionContract';
-import { buildComposerProviderProjection } from './composerProviderProjection';
+import {
+  buildComposerProviderProjection,
+  resolveProviderMaxInputImages,
+} from './composerProviderProjection';
 
 const emptyAttachments: never[] = [];
 
@@ -39,6 +42,8 @@ describe('composerProviderProjection', () => {
     expect(projection.showCodexPromptTools).toBe(true);
     expect(projection.maxOutputCount).toBe(10);
     expect(projection.generateBlock).toBeNull();
+    expect(resolveProviderMaxInputImages('codex')).toBe(10);
+    expect(resolveProviderMaxInputImages('grok')).toBe(5);
   });
 
   it('blocks Grok generate for an unsupported recipe and hides Codex chrome', () => {

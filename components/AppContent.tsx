@@ -85,12 +85,7 @@ export const AppContent: React.FC = () => {
   const hasGenerationDock =
     !shell.generationDock.isModalOpen && !shell.generationDock.isUiChromeSuppressed && isWorkspace;
   const activeRecipe = shell.viewport.activeRecipe;
-  const stageImages =
-    isRecipe && activeRecipe
-      ? shell.viewport.recipePageProps.imagesWithConfig.filter(
-          (image) => image.config.recipeId === activeRecipe,
-        )
-      : shell.viewport.recipePageProps.imagesWithConfig;
+  const stageImages = shell.viewport.recipePageProps.imagesWithConfig;
   const hasActiveOverlay = hasMountedStudioOverlay(shell.overlays);
 
   return (
@@ -193,6 +188,7 @@ export const AppContent: React.FC = () => {
         <div
           data-workbench={isRecipe ? 'recipe' : isCreate ? 'create' : 'library'}
           data-workbench-tab={isWorkspace ? workspaceTab : undefined}
+          data-jobs-open={shell.headerToolbar.props.isQueueOpen ? 'true' : undefined}
           className="studio-workbench relative z-10 flex w-full flex-1 min-h-0 overflow-hidden appearance-none border-none p-0 m-0 bg-transparent"
           onPointerDownCapture={shell.root.onMainClick}
         >

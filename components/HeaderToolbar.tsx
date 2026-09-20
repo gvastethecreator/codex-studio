@@ -121,42 +121,45 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
 
   return (
     <TopToolbar className="studio-toolbar-shell studio-bar w-full min-h-10 flex items-center px-2 py-1 z-40 shrink-0">
-      <div className="relative z-50 grid w-full grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-1 sm:gap-2">
+      <div className="relative z-50 flex w-full items-center gap-1 sm:gap-2">
         <div className="flex min-w-0 flex-nowrap items-center gap-1 sm:gap-1.5 lg:gap-2">
           <Logo isGenerating={isGenerating} />
           <nav className="flex min-w-0 items-center gap-1" aria-label="Studio navigation">
-            <button
-              type="button"
-              className="studio-nav-tab studio-control"
-              aria-label="Open create workspace"
-              aria-current={currentView !== 'studio' ? 'page' : undefined}
-              onClick={() => onViewChange('recipes')}
-            >
-              Create
-            </button>
-            <button
-              type="button"
-              className="studio-nav-tab studio-control"
-              aria-label="Go to studio"
-              aria-current={currentView === 'studio' ? 'page' : undefined}
-              onClick={() => onViewChange('studio')}
-            >
-              Library
-            </button>
+            <Tooltip content="Create" position="bottom">
+              <button
+                type="button"
+                className="studio-nav-tab studio-control"
+                aria-label="Open create workspace"
+                aria-current={currentView !== 'studio' ? 'page' : undefined}
+                onClick={() => onViewChange('recipes')}
+              >
+                Create
+              </button>
+            </Tooltip>
+            <CreateWorkflowPicker
+              selectedId={isRecipeView ? (activeRecipeAliasId ?? activeRecipe) : null}
+              selectedLabel={isRecipeView && activeRecipeData ? activeRecipeData.name : 'Default'}
+              onSelectRecipe={onSelectRecipe}
+              onSelectDefault={() => {
+                if (isRecipeView) onCloseRecipe();
+                else if (currentView === 'studio') onViewChange('recipes');
+              }}
+            />
+            <Tooltip content="Library" position="bottom">
+              <button
+                type="button"
+                className="studio-nav-tab studio-control"
+                aria-label="Go to studio"
+                aria-current={currentView === 'studio' ? 'page' : undefined}
+                onClick={() => onViewChange('studio')}
+              >
+                Library
+              </button>
+            </Tooltip>
           </nav>
         </div>
 
-        <CreateWorkflowPicker
-          selectedId={isRecipeView ? (activeRecipeAliasId ?? activeRecipe) : null}
-          selectedLabel={isRecipeView && activeRecipeData ? activeRecipeData.name : 'Default'}
-          onSelectRecipe={onSelectRecipe}
-          onSelectDefault={() => {
-            if (isRecipeView) onCloseRecipe();
-            else if (currentView === 'studio') onViewChange('recipes');
-          }}
-        />
-
-        <div className="flex shrink-0 items-center justify-end gap-1">
+        <div className="ml-auto flex shrink-0 items-center justify-end gap-1">
           <Tooltip
             content={appearance === 'light' ? 'Dark appearance' : 'Light appearance'}
             position="bottom"
@@ -218,7 +221,9 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             </DemandMountedGsapDropdown>
           </div>
           <details className="relative hidden sm:block">
-            <summary className="studio-nav-tab studio-control cursor-pointer">Tools</summary>
+            <summary className="studio-nav-tab studio-control cursor-pointer" title="Tools">
+              Tools
+            </summary>
             <div className="studio-popover absolute right-0 top-11 z-50 grid w-48 gap-2 rounded-md p-3">
               <button
                 type="button"

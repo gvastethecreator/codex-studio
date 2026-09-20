@@ -1,6 +1,7 @@
 import { startViewTransition } from '../utils/transitionUtils';
 
 import type { ToolbarProps } from '../components/Toolbar';
+import { resolveProviderMaxInputImages } from '../lib/composerProviderProjection';
 import type { GenerationProviderId } from '../packages/shared/src';
 import type { Attachment } from '../types';
 
@@ -87,7 +88,19 @@ export function buildGenerationToolbarProps({
     isGenerating: actions.isGenerating,
     generationStartTime: actions.generationStartTime,
     onFileSelect: config.onFileSelect,
-    onFilesDrop: config.onFilesDrop,
+    onFilesDrop: (files, replaceId) => {
+      const cap = Math.min(
+        config.maxAttachments,
+        resolveProviderMaxInputImages(provider.activeProviderId),
+      );
+      if (replaceId) {
+        config.onFilesDrop(files.slice(0, 1), replaceId);
+        return;
+      }
+      const remaining = Math.max(0, cap - config.generationConfig.attachments.length);
+      if (remaining === 0) return;
+      config.onFilesDrop(files.slice(0, remaining));
+    },
     onRemoveAttachment: config.onRemoveAttachment,
     codexModelCatalog: config.codexModelCatalog,
     isLoadingCodexModelCatalog: config.isLoadingCodexModelCatalog,
@@ -103,7 +116,10 @@ export function buildGenerationToolbarProps({
       await sync.verifyCodexSession();
       startTransition(() => ui.setIsKeyPopoverOpen(false));
     },
-    maxAttachments: config.maxAttachments,
+    maxAttachments: Math.min(
+      config.maxAttachments,
+      resolveProviderMaxInputImages(provider.activeProviderId),
+    ),
     activeProviderId: provider.activeProviderId,
     commandCenter: provider.commandCenter,
     onSelectProvider: provider.onSelectProvider,

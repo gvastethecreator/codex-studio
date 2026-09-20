@@ -170,10 +170,41 @@ describe('CompactStyleSelector', () => {
       expect(screen.getByRole('button', { name: 'Add Silver Grain' })).toBeTruthy(),
     );
 
-    const node = document.querySelector('.cs-preview');
+    const node = document.querySelector('.cs-preview') as HTMLElement | null;
     expect(node).toBeTruthy();
-    fireEvent.pointerEnter(screen.getByRole('button', { name: 'Add Silver Grain' }));
-    fireEvent.pointerEnter(screen.getByRole('button', { name: 'Add Noir Lighting' }));
+    const grain = screen.getByRole('button', { name: 'Add Silver Grain' });
+    const noir = screen.getByRole('button', { name: 'Add Noir Lighting' });
+    grain.getBoundingClientRect = () =>
+      ({
+        top: 40,
+        left: 12,
+        right: 220,
+        bottom: 72,
+        width: 208,
+        height: 32,
+        x: 12,
+        y: 40,
+        toJSON() {},
+      }) as DOMRect;
+    noir.getBoundingClientRect = () =>
+      ({
+        top: 200,
+        left: 12,
+        right: 220,
+        bottom: 232,
+        width: 208,
+        height: 32,
+        x: 12,
+        y: 200,
+        toJSON() {},
+      }) as DOMRect;
+    fireEvent.click(screen.getByRole('button', { name: 'Preview Silver Grain' }));
+    await waitFor(() => expect(Number.parseFloat(node?.style.top || '0')).toBeGreaterThan(0));
+    const topGrain = Number.parseFloat(node?.style.top || '0');
+    fireEvent.click(screen.getByRole('button', { name: 'Preview Noir Lighting' }));
+    await waitFor(() =>
+      expect(Number.parseFloat(node?.style.top || '0')).toBeGreaterThan(topGrain),
+    );
     expect(document.querySelectorAll('.cs-preview')).toHaveLength(1);
     expect(document.querySelector('.cs-preview')).toBe(node);
   });

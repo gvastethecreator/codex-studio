@@ -19,6 +19,7 @@ import type { AspectRatio, Attachment, ImageGenerationConfig, RecipeId } from '.
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 import {
   CODEX_HTTP_IMAGE_MODELS,
+  CODEX_HTTP_MAX_INPUT_IMAGES,
   CODEX_HTTP_MODEL,
   CODEX_HTTP_REASONING,
   getCodexHttpImageModelOption,
@@ -29,17 +30,26 @@ import {
   type CodexHttpImageModelOption,
   type CodexHttpImageSizeOption,
 } from '../packages/shared/src/codexExecutionContract';
+import { MAX_GROK_IMAGINE_SOURCE_IMAGES } from '../packages/shared/src/grokImagineContract';
 
 const EMPTY_CODEX_MODELS: CodexModel[] = [];
 
 export type ComposerProviderKind = 'codex' | 'grok' | 'other';
 
 export const PROVIDER_BATCH_MAX = 10;
+export const STUDIO_MAX_INPUT_IMAGES = 10;
 
 export function resolveProviderMaxOutputCount(providerId: GenerationProviderId): number {
   if (providerId === 'grok' || providerId === 'google' || providerId === 'antigravity') return 1;
   if (providerId === 'fal') return 4;
   return PROVIDER_BATCH_MAX;
+}
+
+export function resolveProviderMaxInputImages(providerId: GenerationProviderId): number {
+  if (providerId === 'grok') return MAX_GROK_IMAGINE_SOURCE_IMAGES;
+  if (providerId === 'google' || providerId === 'antigravity') return STUDIO_MAX_INPUT_IMAGES;
+  if (providerId === 'codex') return Math.min(STUDIO_MAX_INPUT_IMAGES, CODEX_HTTP_MAX_INPUT_IMAGES);
+  return STUDIO_MAX_INPUT_IMAGES;
 }
 
 export interface ComposerProviderProjection {

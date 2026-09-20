@@ -54,7 +54,7 @@ vi.mock('../hooks/useGenerationConfig', async () => {
         handlePastedFiles: stable.handlePastedFiles,
         handleRemoveAttachment: stable.handleRemoveAttachment,
         handleAddToContext: stable.handleAddToContext,
-        maxAttachments: 5,
+        maxAttachments: 10,
         codexModelCatalog: null,
         isLoadingCodexModelCatalog: false,
         codexModelCatalogError: null,

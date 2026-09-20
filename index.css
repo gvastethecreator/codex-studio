@@ -734,15 +734,16 @@ react-scan-overlay,
 .studio-status-bar {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
-  min-height: 24px;
+  min-height: 28px;
   height: auto;
   flex-shrink: 0;
   padding: 3px 10px;
   border-top: 1px solid var(--wb-line, #ffffff12);
   background: var(--wb-bg, #121212);
   color: var(--wb-muted, #a6a6a6);
-  overflow: hidden;
+  overflow: visible;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -1005,11 +1006,20 @@ react-scan-overlay,
   width: 100%;
   order: -1;
 }
-.workbench-config [data-style-needs-selection='true']::after {
-  content: 'Choose at least one style to generate.';
-  color: #a1a1aa;
+.create-style-empty {
+  margin: 0 0 8px;
+  color: var(--wb-muted);
   font-size: 12px;
-  margin-top: 10px;
+  line-height: 1.4;
+}
+.style-advanced-rail {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  max-height: 42vh;
+  overflow: hidden;
+  border: 1px solid var(--wb-line);
+  border-radius: var(--wb-radius);
 }
 .workbench-config [data-task-context] {
   flex-basis: 100%;
@@ -1142,6 +1152,17 @@ react-scan-overlay,
 
 .workbench-canvas {
   --studio-chrome-block: 224px;
+  flex: 1 1 0%;
+  min-width: 0;
+}
+.studio-workbench[data-jobs-open='true'] .create-workspace,
+.studio-workbench[data-jobs-open='true'] .workbench-canvas {
+  flex: 1 1 0%;
+  min-width: 0;
+  width: auto;
+}
+.studio-operations-rail {
+  flex: 0 0 304px;
 }
 @media (max-width: 1023px) {
   .workbench-canvas {
@@ -1154,8 +1175,8 @@ react-scan-overlay,
   display: grid;
   grid-template-columns: minmax(320px, 384px) minmax(0, 1fr);
   gap: 12px;
-  flex: 1;
-  width: 100%;
+  flex: 1 1 0%;
+  width: auto;
   min-width: 0;
   min-height: 0;
   height: 100%;
@@ -1169,22 +1190,15 @@ react-scan-overlay,
   display: none;
 }
 .create-side-panel {
-  position: absolute;
-  z-index: 40;
-  inset-block: 8px 12px;
-  left: 408px;
-  width: 300px;
+  position: relative;
+  z-index: 30;
+  width: auto;
+  min-width: 0;
   min-height: 0;
+  height: 100%;
 }
-@media (min-width: 1280px) {
-  .create-workspace:has(.create-side-panel:not(:empty)) {
-    grid-template-columns: minmax(320px, 384px) 300px minmax(0, 1fr);
-  }
-  .create-side-panel {
-    position: relative;
-    inset: auto;
-    height: 100%;
-  }
+.create-workspace:has(.create-side-panel:not(:empty)) {
+  grid-template-columns: minmax(280px, 360px) minmax(360px, 440px) minmax(0, 1fr);
 }
 .create-side-panel-dialog {
   pointer-events: auto;
@@ -1311,7 +1325,7 @@ react-scan-overlay,
   min-height: 36px;
 }
 .create-workflow-block.is-header .create-workflow-row {
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 32px;
 }
 .create-workflow-context {
@@ -1373,9 +1387,9 @@ react-scan-overlay,
   max-height: min(52vh, 360px);
 }
 .create-workflow-block.is-header .create-workflow-popover {
-  left: 50%;
+  left: 0;
   right: auto;
-  transform: translateX(-50%);
+  transform: none;
 }
 .create-format-popover {
   width: min(326px, calc(100vw - 20px));
@@ -1591,7 +1605,7 @@ react-scan-overlay,
   font-variant-numeric: tabular-nums;
 }
 .create-reference-list {
-  min-height: 48px;
+  min-height: 72px;
   gap: 8px;
 }
 .create-reference-list .reference-tray {
@@ -1603,11 +1617,11 @@ react-scan-overlay,
 .create-tools .reference-item,
 .create-reference-list .reference-item,
 .create-add-reference {
-  width: 48px;
-  height: 48px;
-  min-width: 36px;
-  max-width: 48px;
-  flex: 0 0 48px;
+  width: 72px;
+  height: 72px;
+  min-width: 56px;
+  max-width: 72px;
+  flex: 0 0 72px;
   padding: 0;
   overflow: hidden;
   border: 1px solid var(--create-line);
@@ -1619,10 +1633,34 @@ react-scan-overlay,
   width: 100%;
   height: 100%;
 }
-.reference-item-remove {
+.reference-item-actions.is-overlay {
   position: absolute;
-  top: 3px;
-  right: 3px;
+  inset: auto 3px 3px 3px;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  opacity: 0;
+}
+.reference-item:hover .reference-item-actions.is-overlay,
+.reference-item:focus-within .reference-item-actions.is-overlay {
+  opacity: 1;
+}
+.reference-item-actions.is-overlay > * {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--wb-panel);
+  color: var(--wb-ink);
+  border: 1px solid var(--wb-border);
+}
+.reference-item-remove {
+  position: static;
+  top: auto;
+  right: auto;
   z-index: 3;
   display: inline-flex;
   width: 18px;
@@ -1748,7 +1786,7 @@ react-scan-overlay,
 }
 .create-ratio-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(52px, 1fr));
   gap: 5px;
 }
 .create-ratio-choice {
@@ -1926,7 +1964,7 @@ react-scan-overlay,
   display: grid;
   width: 100%;
   min-width: 0;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--create-control-gap);
   border: 0;
   background: transparent;
@@ -2015,6 +2053,9 @@ react-scan-overlay,
   width: 100%;
   min-width: 0;
   margin: var(--create-control-gap) 0 0;
+}
+.create-tool-footer .tooltip {
+  width: 100%;
 }
 .create-tool-footer .create-generate-button {
   display: flex;
@@ -2269,10 +2310,10 @@ react-scan-overlay,
 }
 .recipe-result-toolbar {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
+  flex-direction: row;
+  gap: 0;
   flex: 0 0 auto;
-  padding: 8px 10px 6px;
+  padding: 4px 8px;
   border-bottom: 1px solid var(--wb-line);
   background: var(--wb-panel);
 }
@@ -2280,32 +2321,32 @@ react-scan-overlay,
   display: flex;
   align-items: center;
   gap: 4px;
-  min-height: 36px;
+  min-height: 28px;
+  width: 100%;
 }
-.recipe-result-toolbar-row > button {
+.recipe-result-toolbar-row button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 32px;
-  padding: 0 8px;
-  border-radius: 8px;
+  min-height: 28px;
+  min-width: 28px;
+  padding: 0 6px;
+  border-radius: 6px;
   background: color-mix(in srgb, var(--wb-ink) 8%, transparent);
   color: var(--wb-ink);
-  font-size: 12px;
-}
-.recipe-result-toolbar .recipe-result-background {
-  position: static;
-  margin-inline-start: auto;
+  font-size: 11px;
 }
 .recipe-result-prompt {
-  margin: 0;
+  margin: 0 0 0 auto;
   min-width: 0;
+  flex: 1 1 0%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: var(--wb-muted);
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: 11px;
+  line-height: 1.3;
+  text-align: right;
 }
 .recipe-result-actions {
   position: absolute;
@@ -2556,6 +2597,10 @@ react-scan-overlay,
 .character-action-catalog {
   min-height: 0;
 }
+.styles-catalog-panel {
+  height: 100%;
+  min-height: 0;
+}
 .styles-catalog-panel .styles-catalog-header {
   gap: 6px;
   padding: 8px;
@@ -2577,9 +2622,15 @@ react-scan-overlay,
   .create-workspace {
     grid-template-columns: minmax(0, 1fr);
   }
+  .create-workspace:has(.create-side-panel:not(:empty)) {
+    grid-template-columns: minmax(0, 1fr);
+  }
   .create-side-panel {
+    position: absolute;
+    z-index: 40;
+    inset-block: 8px 12px;
     left: 10px;
-    width: min(300px, calc(100% - 20px));
+    width: min(360px, calc(100% - 20px));
   }
   [data-workbench-tab='preview'] .create-side-panel {
     display: none;

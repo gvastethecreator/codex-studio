@@ -194,10 +194,11 @@
 
 .studio-experience .studio-status-bar,
 .studio-status-bar.studio-bar {
-  min-height: 24px;
-  height: 28px;
-  max-height: 28px;
-  padding: 0 10px;
+  min-height: 28px;
+  height: auto;
+  max-height: none;
+  padding: 2px 10px;
+  overflow: visible;
 }
 
 /* Re-apply Ambient paint at Studio specificity; :where() in the kernel loses to chrome CSS. */

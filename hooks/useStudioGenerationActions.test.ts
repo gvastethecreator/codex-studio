@@ -74,11 +74,11 @@ describe('prepareStudioGenerationRequest', () => {
     expect(request.shouldClearComposerAttachments).toBe(false);
   });
 
-  it('limits non-multi-reference requests to a single attachment to avoid cross-job leakage', () => {
+  it('keeps multiple references on the default Create request up to the provider cap', () => {
     const request = prepareStudioGenerationRequest({
       generationConfig: {
         ...DEFAULT_GENERATION_CONFIG,
-        prompt: 'single ref expected',
+        prompt: 'multi ref expected',
         attachments: [
           {
             id: 'att-1',
@@ -99,8 +99,7 @@ describe('prepareStudioGenerationRequest', () => {
     expect(request.ok).toBe(true);
     if (!request.ok) return;
 
-    expect(request.finalConfig.attachments).toHaveLength(1);
-    expect(request.finalConfig.attachments[0]?.id).toBe('att-1');
+    expect(request.finalConfig.attachments.map((item) => item.id)).toEqual(['att-1', 'att-2']);
   });
 
   it('preserves timeline multi-image attachment payloads', () => {
@@ -132,8 +131,8 @@ describe('prepareStudioGenerationRequest', () => {
     expect(request.finalConfig.attachments).toHaveLength(2);
   });
 
-  it('preserves up to five style reference images', () => {
-    const attachments = Array.from({ length: 6 }, (_, index) => ({
+  it('preserves up to ten style reference images', () => {
+    const attachments = Array.from({ length: 11 }, (_, index) => ({
       id: `att-${index + 1}`,
       name: `ref-${index + 1}.png`,
       dataUrl: `data:image/png;base64,REF${index + 1}`,
@@ -152,13 +151,9 @@ describe('prepareStudioGenerationRequest', () => {
     expect(request.ok).toBe(true);
     if (!request.ok) return;
 
-    expect(request.finalConfig.attachments.map((attachment) => attachment.id)).toEqual([
-      'att-1',
-      'att-2',
-      'att-3',
-      'att-4',
-      'att-5',
-    ]);
+    expect(request.finalConfig.attachments.map((attachment) => attachment.id)).toEqual(
+      Array.from({ length: 10 }, (_, index) => `att-${index + 1}`),
+    );
   });
 
   it('rejects empty generation without prompt or reference image', () => {

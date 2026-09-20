@@ -8,6 +8,7 @@ import { buildRecipeIntentPreloadPlan } from '../../lib/routePreloadBudget';
 import { preloadStudioViewportSurface } from '../../lib/studioViewportRouteSurfaces';
 import type { RecipeId } from '../../types';
 import { RecipeDiscoveryList } from '../recipes/RecipeDiscoveryList';
+import Tooltip from '../Tooltip';
 
 export interface CreateWorkflowPickerProps {
   onSelectRecipe: (id: RecipeId, aliasId?: RecipeAliasId | null) => void;
@@ -86,29 +87,31 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
   return (
     <section className="create-workflow-block is-header" aria-label="Workflow">
       <div ref={rootRef} className="create-workflow-row">
-        <button
-          type="button"
-          className="create-workflow-quiet-select studio-control"
-          aria-label={`Workflow: ${selectedLabel}`}
-          aria-haspopup="listbox"
-          aria-expanded={open}
-          aria-controls="create-workflow-list"
-          onClick={() => setOpen((value) => !value)}
-          onKeyDown={(event) => {
-            if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
-              event.preventDefault();
-              setOpen(true);
-            }
-          }}
-        >
-          <IconSitemap size={16} aria-hidden="true" />
-          <span id="create-workflow-value">{selectedLabel}</span>
-          <IconChevronDown
-            size={14}
-            className={`create-workflow-chevron${open ? ' is-open' : ''}`}
-            aria-hidden="true"
-          />
-        </button>
+        <Tooltip content="Workflow" position="bottom">
+          <button
+            type="button"
+            className="create-workflow-quiet-select studio-control"
+            aria-label={`Workflow: ${selectedLabel}`}
+            aria-haspopup="listbox"
+            aria-expanded={open}
+            aria-controls="create-workflow-list"
+            onClick={() => setOpen((value) => !value)}
+            onKeyDown={(event) => {
+              if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+                event.preventDefault();
+                setOpen(true);
+              }
+            }}
+          >
+            <IconSitemap size={16} aria-hidden="true" />
+            <span id="create-workflow-value">{selectedLabel}</span>
+            <IconChevronDown
+              size={14}
+              className={`create-workflow-chevron${open ? ' is-open' : ''}`}
+              aria-hidden="true"
+            />
+          </button>
+        </Tooltip>
         {open ? (
           <div
             id="create-workflow-list"

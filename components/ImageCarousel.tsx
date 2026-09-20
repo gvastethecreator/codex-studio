@@ -473,12 +473,12 @@ function CarouselTopBar({
   thumbnailWindow,
 }: CarouselTopBarProps) {
   return (
-    <TopToolbar className="absolute top-0 left-0 right-0 w-full h-14 bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] backdrop-blur-sm flex items-center px-6 z-50 border-b border-[color:var(--wb-line)]">
-      <div className="mx-auto flex w-full max-w-480 items-center justify-between gap-4">
+    <TopToolbar className="absolute top-0 left-0 right-0 w-full h-10 bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] backdrop-blur-sm flex items-center px-3 z-50 border-b border-[color:var(--wb-line)]">
+      <div className="mx-auto flex w-full max-w-480 items-center justify-between gap-2">
         <Logo />
         <div
           ref={navScrollRef}
-          className="flex-1 flex items-center gap-2 overflow-x-auto custom-scrollbar p-1 snap-x justify-center"
+          className="flex-1 flex items-center gap-1.5 overflow-x-auto custom-scrollbar py-1 snap-x justify-center"
         >
           {thumbnailWindow.map(({ item: img, index: idx }) => (
             <button
@@ -487,7 +487,7 @@ function CarouselTopBar({
               data-carousel-index={idx}
               aria-label={`Open image ${idx + 1} of ${thumbnailWindow.length}`}
               onClick={() => onJumpTo(idx)}
-              className={`relative size-10 shrink-0 rounded-[var(--wb-radius)] overflow-hidden border snap-center cursor-pointer transition-[border-color,box-shadow,opacity,transform] duration-300
+              className={`relative size-8 shrink-0 rounded-[var(--wb-radius)] overflow-hidden border snap-center cursor-pointer transition-[border-color,box-shadow,opacity,transform] duration-300
                             ${
                               idx === activeIndex
                                 ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500/2 opacity-100'
@@ -517,17 +517,19 @@ function CarouselTopBar({
             type="button"
             onClick={onToggleFullscreen}
             aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
-            className="min-h-10 min-w-10 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-2 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
+            title={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
+            className="min-h-8 min-w-8 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-1.5 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
           >
-            {isFullscreen ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
+            {isFullscreen ? <Minimize2 size={15} /> : <Maximize2 size={15} />}
           </button>
           <button
             type="button"
             onClick={onClose}
             aria-label="Close image carousel"
-            className="min-h-10 min-w-10 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] p-2 text-[color:var(--wb-ink)] shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
+            title="Close"
+            className="min-h-8 min-w-8 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] p-1.5 text-[color:var(--wb-ink)] shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
           >
-            <X size={16} />
+            <X size={15} />
           </button>
         </div>
       </div>

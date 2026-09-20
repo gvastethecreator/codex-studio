@@ -664,11 +664,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         ref={containerRef}
         data-toolbar-mode={mode}
         data-toolbar-layout={layout}
-        data-style-needs-selection={
-          activeRecipe === 'styles' &&
-          !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)?.selectedStyles
-            ?.length
-        }
         onMouseEnter={handleToolbarMouseEnter}
         onMouseMove={handleToolbarMouseEnter}
         onMouseLeave={handleToolbarMouseLeave}
@@ -2101,60 +2096,73 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </div>
             </div>
 
-            {/* GENERATE BUTTON - Dark Gradient Premium */}
+            {isRail &&
+            activeRecipe === 'styles' &&
+            !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)
+              ?.selectedStyles?.length ? (
+              <p className="create-style-empty" role="status">
+                Choose a style before generating.
+              </p>
+            ) : null}
             {isRail ? railAction : null}
             {!isContextOnly ? (
-              <button
-                type="button"
-                onClick={handleTriggerGenerate}
-                disabled={
-                  Boolean(generateBlock) ||
-                  (activeRecipe === 'styles' &&
-                    !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)
-                      ?.selectedStyles?.length)
-                }
-                title={generateBlock?.message}
-                aria-describedby={generateBlock ? 'grok-generate-block' : undefined}
-                data-studio-generate-button
-                data-generate-active={isGenerating ? 'true' : 'false'}
-                className={
-                  isRail
-                    ? `create-generate-button ${isGenerating ? 'is-busy' : ''}`
-                    : `group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-[var(--wb-radius)] flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
+              <Tooltip
+                content={generateBlock?.message || 'Generate images'}
+                position="top"
+                className={isRail ? 'w-full' : undefined}
+              >
+                <button
+                  type="button"
+                  onClick={handleTriggerGenerate}
+                  disabled={
+                    Boolean(generateBlock) ||
+                    (activeRecipe === 'styles' &&
+                      !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)
+                        ?.selectedStyles?.length)
+                  }
+                  title={generateBlock?.message}
+                  aria-describedby={generateBlock ? 'grok-generate-block' : undefined}
+                  data-studio-generate-button
+                  data-generate-active={isGenerating ? 'true' : 'false'}
+                  className={
+                    isRail
+                      ? `create-generate-button ${isGenerating ? 'is-busy' : ''}`
+                      : `group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-[var(--wb-radius)] flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
                     text-[length:var(--wbp-label)] tracking-normal font-semibold transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer disabled:cursor-not-allowed disabled:opacity-45 ${
                       isGenerating
                         ? 'bg-gradient-to-b from-accent-800 to-accent-950 text-accent-200 border border-accent-500/2 shadow-lg hover:border-accent-300/2 hover:text-white active:scale-95'
                         : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/2 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
                     }`
-                }
-              >
-                {isGenerating ? (
-                  <GenerationElapsedStatus
-                    startTime={generationStartTime}
-                    variant={isRail ? 'rail' : 'dock'}
-                  />
-                ) : isRail ? (
-                  <>
-                    <Sparkles size={17} aria-hidden="true" />
-                    <span>
-                      {`Generate ${currentBatch} ${currentBatch === 1 ? 'image' : 'images'}`}
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <div className="absolute inset-0 z-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:animate-[shimmer_1.5s_infinite]" />
-                    <div className="relative z-10 flex items-center gap-2">
-                      <>
-                        <Wand2
-                          size={14}
-                          className="group-hover:rotate-12 transition-transform text-accent-300"
-                        />
-                        <span className="text-white">GENERATE</span>
-                      </>
-                    </div>
-                  </>
-                )}
-              </button>
+                  }
+                >
+                  {isGenerating ? (
+                    <GenerationElapsedStatus
+                      startTime={generationStartTime}
+                      variant={isRail ? 'rail' : 'dock'}
+                    />
+                  ) : isRail ? (
+                    <>
+                      <Sparkles size={17} aria-hidden="true" />
+                      <span>
+                        {`Generate ${currentBatch} ${currentBatch === 1 ? 'image' : 'images'}`}
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <div className="absolute inset-0 z-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:animate-[shimmer_1.5s_infinite]" />
+                      <div className="relative z-10 flex items-center gap-2">
+                        <>
+                          <Wand2
+                            size={14}
+                            className="group-hover:rotate-12 transition-transform text-accent-300"
+                          />
+                          <span className="text-white">GENERATE</span>
+                        </>
+                      </div>
+                    </>
+                  )}
+                </button>
+              </Tooltip>
             ) : null}
             {isRail ? (
               <div className="create-footer-meta">

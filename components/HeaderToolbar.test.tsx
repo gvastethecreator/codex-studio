@@ -104,6 +104,10 @@ describe('HeaderToolbar chrome', () => {
     expect(screen.getByRole('button', { name: /open workspace switcher: shots/i })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Workflow: Default' })).toBeTruthy();
     expect(document.querySelector('.create-workflow-block.is-header')).toBeTruthy();
+    const nav = screen.getByRole('navigation', { name: 'Studio navigation' });
+    expect(
+      [...nav.querySelectorAll('button')].map((button) => button.getAttribute('aria-label')),
+    ).toEqual(['Open create workspace', 'Workflow: Default', 'Go to studio']);
     expect(screen.queryByRole('button', { name: /change provider/i })).toBeNull();
     expect(screen.queryByRole('button', { name: /open jobs/i })).toBeNull();
     expect(document.querySelector('.studio-toolbar-shell.studio-bar')).toBeTruthy();
@@ -130,7 +134,7 @@ describe('HeaderToolbar chrome', () => {
     expect(screen.queryByRole('button', { name: 'Compare reference' })).toBeNull();
   });
 
-  it('shows the active recipe in the centered workflow control', () => {
+  it('shows the active recipe in the workflow control between Create and Library', () => {
     const onCloseRecipe = vi.fn();
     renderHeader({
       routeView: 'recipe',

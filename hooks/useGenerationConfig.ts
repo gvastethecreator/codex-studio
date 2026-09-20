@@ -163,7 +163,7 @@ export const useGenerationConfig = ({
     };
   }, []);
 
-  const maxAttachments = 5;
+  const maxAttachments = 10;
 
   useEffect(() => {
     if (generationConfig.attachments.length > maxAttachments) {

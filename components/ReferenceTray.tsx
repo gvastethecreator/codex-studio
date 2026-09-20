@@ -51,15 +51,41 @@ export function ReferenceTray({
               />
             </button>
             {isThumbs ? (
-              <button
-                type="button"
-                className="reference-item-remove"
-                onClick={() => onRemove(attachment.id)}
-                aria-label={`Remove ${attachment.name}`}
-                title="Remove"
-              >
-                <X size={12} />
-              </button>
+              <div className="reference-item-actions is-overlay">
+                <button
+                  type="button"
+                  onClick={() => onEdit(attachment)}
+                  disabled={attachment.isProcessing}
+                  aria-label={`Edit ${attachment.name}`}
+                  title="Edit"
+                >
+                  <Pencil size={11} />
+                </button>
+                <label className="relative inline-flex size-5 cursor-pointer items-center justify-center">
+                  <Refresh size={11} aria-hidden="true" />
+                  <input
+                    type="file"
+                    accept="image/*"
+                    aria-label={`Replace ${attachment.name}`}
+                    className="absolute inset-0 w-full opacity-0 cursor-pointer"
+                    onChange={(event) => {
+                      const file = event.target.files?.[0];
+                      if (!file) return;
+                      onFiles([file], attachment.id);
+                      event.target.value = '';
+                    }}
+                  />
+                </label>
+                <button
+                  type="button"
+                  className="reference-item-remove"
+                  onClick={() => onRemove(attachment.id)}
+                  aria-label={`Remove ${attachment.name}`}
+                  title="Remove"
+                >
+                  <X size={11} />
+                </button>
+              </div>
             ) : (
               <div className="min-w-0 flex-1">
                 <span className="reference-item-copy block truncate" title={attachment.name}>
