@@ -125,10 +125,18 @@ export function SettingsProvidersPanel({
             {providerCapabilities.providers.map((provider) => {
               const preflight = preflightByProvider.get(provider.providerId);
               const subscriptionId = subscriptionProviderIdForGeneration(provider.providerId);
-              const runtimeLabel = providerRuntimeLabel(preflight?.localRuntimeState);
-              const secretLabel = subscriptionId
-                ? null
-                : providerSecretLabel(preflight?.secretState, preflight?.secretSource);
+              const runtimeLabel =
+                provider.providerId === 'comfy'
+                  ? provider.canExecute
+                    ? 'Endpoint and workflow ready'
+                    : 'Set an endpoint and workflow'
+                  : ['codex', 'grok', 'antigravity'].includes(provider.providerId)
+                    ? providerRuntimeLabel(preflight?.localRuntimeState)
+                    : null;
+              const secretLabel =
+                subscriptionId || provider.providerId === 'comfy'
+                  ? null
+                  : providerSecretLabel(preflight?.secretState, preflight?.secretSource);
               const readyLabel = providerReadyLabel({
                 canExecute: provider.canExecute,
                 status: provider.status,

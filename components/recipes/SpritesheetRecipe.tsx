@@ -1,3 +1,4 @@
+import { getGenerationRequirement } from '../../packages/shared/src/generationRequirements';
 import { getRecipeStringParam } from '../../lib/recipeIdentity';
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
@@ -189,6 +190,7 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   const [customColor, setCustomColor] = useState(() =>
     getRecipeStringParam(config, 'customColor', '#3f3f46'),
   );
+  const [showGuides, setShowGuides] = useState(true);
   const [cellPrompts, setCellPrompts] = useState<Record<number, string>>(
     () => (config.recipeParams?.cellPrompts as Record<number, string>) ?? {},
   );
@@ -246,13 +248,40 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
   const BottomDock = useMemo(
     () => (
       <>
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            className="studio-ghost-control px-3 py-2"
+            onClick={() =>
+              setParams((p) => ({ ...p, view: 'Front View', style: 'Pixel Art (16-bit)' }))
+            }
+          >
+            From prompt
+          </button>
+          <button
+            type="button"
+            className="studio-ghost-control px-3 py-2"
+            onClick={() =>
+              setParams((p) => ({ ...p, view: 'Match Source', style: 'Preserve Style' }))
+            }
+          >
+            Use source
+          </button>
+          <label className="flex items-center gap-2 text-xs">
+            <input
+              type="checkbox"
+              checked={showGuides}
+              onChange={(event) => setShowGuides(event.target.checked)}
+            />
+            Show guides (editor only)
+          </label>
+        </div>
         <ControlDropdown
           title="Perspective"
           icon={<Eye size={14} />}
           label={params.view}
           options={CONTROL_OPTIONS.view}
           onSelect={(v) => setParams((p) => ({ ...p, view: v }))}
-          activeColor="emerald"
         />
         <ControlDropdown
           title="Render Style"
@@ -260,7 +289,6 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           label={params.style}
           options={CONTROL_OPTIONS.style}
           onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
-          activeColor="emerald"
         />
         <ControlDropdown
           title="Layout"
@@ -268,7 +296,6 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           label={params.grid}
           options={CONTROL_OPTIONS.grid}
           onSelect={(v) => setParams((p) => ({ ...p, grid: v }))}
-          activeColor="emerald"
         />
         <ControlDropdown
           title="Background"
@@ -276,7 +303,6 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           label={params.background}
           options={CONTROL_OPTIONS.background}
           onSelect={(v) => setParams((p) => ({ ...p, background: v }))}
-          activeColor="emerald"
         />
         {params.background === 'Custom' && (
           <div className="flex flex-col gap-1.5">
@@ -292,7 +318,6 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           label={params.dividers}
           options={CONTROL_OPTIONS.dividers}
           onSelect={(v) => setParams((p) => ({ ...p, dividers: v }))}
-          activeColor="emerald"
         />
         <div className="w-px h-8 bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-2 hidden sm:block" />
         <div className="px-2 hidden sm:block">
@@ -300,12 +325,17 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
             Status
           </div>
           <div className="text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-ink)] leading-none">
-            Ready
+            {getGenerationRequirement({
+              recipeId: 'spritesheet',
+              prompt: config.prompt,
+              referenceCount: config.attachments.length,
+              recipeParams: params,
+            })?.message ?? 'Ready to generate'}
           </div>
         </div>
       </>
     ),
-    [params, customColor],
+    [params, customColor, showGuides, config.prompt, config.attachments.length],
   );
 
   const hasDividers = params.dividers !== 'No Dividers';
@@ -347,6 +377,8 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                 onMouseLeave={() => setHoveredCell(null)}
                 style={{
                   backgroundColor: params.background === 'Custom' ? customColor : undefined,
+                  outline: showGuides ? '1px solid var(--wb-muted)' : undefined,
+                  outlineOffset: '-1px',
                 }}
                 className={`relative flex min-h-0 min-w-0 items-center justify-center overflow-hidden transition-[box-shadow] duration-200 group
                                 ${getBackgroundClass(params.background)}
@@ -378,11 +410,11 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                       e.stopPropagation();
                       setEditingCell(i);
                     }}
-                    className="absolute inset-0 flex cursor-text appearance-none flex-col items-center justify-center border-none bg-transparent p-1 opacity-60 transition-opacity group-hover:opacity-100"
+                    className="absolute inset-0 flex cursor-text appearance-none flex-col items-center justify-center border-none bg-transparent p-1"
                     aria-label={`Edit cell ${i + 1} prompt`}
                   >
                     <span
-                      className={`text-[length:var(--wbp-label)] font-semibold mb-0.5 drop-shadow-md ${isLightBg ? 'text-black/50' : 'text-[color:var(--wb-ink)]/30'}`}
+                      className={`text-[length:var(--wbp-label)] font-semibold mb-0.5 rounded bg-[color:var(--wb-panel)] px-1 text-[color:var(--wb-ink)] ${showGuides ? '' : 'sr-only'}`}
                     >
                       {i + 1}
                     </span>

@@ -791,11 +791,12 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   <p className="mt-1 truncate font-mono text-[11px] text-[color:var(--wb-muted)]">
                     {activeRun.qa?.mode === 'fixture_smoke'
                       ? 'Fixture check only. Generated rows still require import and validation.'
-                      : 'Import rows, compose the atlas, then validate the generated art.'}
+                      : 'Generate and import rows. Production atlas composition is not yet available.'}
                   </p>
                 ) : (
                   <p className="mt-1 text-xs text-[color:var(--wb-muted)]">
-                    Choose a preset and prepare a run.
+                    Prepare {contract.rows.length} rows · {getFrameTotal(contract.rows)} frames ·{' '}
+                    {contract.cell.width}px cells.
                   </p>
                 )}
               </div>
@@ -809,7 +810,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   <RefreshCw size={14} />
                 </IconButton>
                 <IconButton
-                  label={`Jobs ${missingJobRows.length}`}
+                  label={`Create ${missingJobRows.length} row jobs`}
                   onClick={handleCreateMissingJobs}
                   disabled={busy || !activeRun || missingJobRows.length === 0}
                   tone="sky"
@@ -848,6 +849,10 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
               </div>
             </div>
 
+            <p className="mt-3 text-sm font-semibold">
+              Current step:{' '}
+              {pipeline.find((stage) => stage.state !== 'complete')?.label ?? 'Review'}
+            </p>
             {activeRun && (
               <p className="mt-3 text-sm text-[color:var(--wb-ink)]">
                 {activeRun.rows.some((row) => !row.rawPath)
@@ -855,7 +860,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   : 'Rows imported. Review their artifacts. Production atlas composition is not available in Studio yet.'}
               </p>
             )}
-            <div className="mt-3 grid grid-cols-5 gap-1.5">
+            <div className="mt-3 grid grid-cols-[repeat(auto-fit,minmax(90px,1fr))] gap-1.5">
               {pipeline.map((stage) => (
                 <PipelineStep key={stage.id} stage={stage} />
               ))}

@@ -75,7 +75,6 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           label={params.layout}
           options={CONTROL_OPTIONS.layout}
           onSelect={(v) => setParams((p) => ({ ...p, layout: v }))}
-          activeColor="indigo"
         />
         <div className="w-px h-8 bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-1 hidden sm:block" />
         <ControlDropdown
@@ -84,7 +83,6 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
           label={params.shot}
           options={CONTROL_OPTIONS.shot}
           onSelect={(v) => setParams((p) => ({ ...p, shot: v }))}
-          activeColor="indigo"
         />
         <details className="recipe-advanced">
           <summary>Advanced appearance</summary>
@@ -96,7 +94,6 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
               label={params.focus}
               options={CONTROL_OPTIONS.focus}
               onSelect={(v) => setParams((p) => ({ ...p, focus: v }))}
-              activeColor="indigo"
             />
             <div className="w-px h-8 bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-1 hidden sm:block" />
             <ControlDropdown
@@ -105,7 +102,6 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
               label={params.style}
               options={CONTROL_OPTIONS.style}
               onSelect={(v) => setParams((p) => ({ ...p, style: v }))}
-              activeColor="indigo"
             />
           </div>
         </details>

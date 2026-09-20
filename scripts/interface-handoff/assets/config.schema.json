@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local Interface Handoff configuration; agent-filled, never exported as cache",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "project_id",
+    "source_roots",
+    "global_inputs",
+    "integration_files",
+    "export_command",
+    "output_dir",
+    "task_file",
+    "scope",
+    "portability_target",
+    "capture_profile",
+    "toolchain",
+    "inventory_file",
+    "discovery"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.1"
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_roots": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+      }
+    },
+    "global_inputs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+      }
+    },
+    "integration_files": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+      }
+    },
+    "export_command": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "output_dir": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+    },
+    "task_file": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "portability_target": {
+      "enum": [
+        "file",
+        "localhost",
+        "evidence-only"
+      ]
+    },
+    "capture_profile": {
+      "type": "object"
+    },
+    "toolchain": {
+      "type": "object"
+    },
+    "inventory_file": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+    },
+    "discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exclude_roots",
+        "max_files",
+        "max_bytes"
+      ],
+      "properties": {
+        "exclude_roots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "path",
+              "reason"
+            ],
+            "properties": {
+              "path": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "max_files": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 100000
+        },
+        "max_bytes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4294967296
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

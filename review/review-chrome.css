@@ -1,0 +1,72 @@
+.handoff-chrome {
+  position: fixed;
+  z-index: 10000;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  pointer-events: none;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.handoff-chrome * {
+  pointer-events: auto;
+}
+
+.handoff-chrome[data-collapsed='true'] .handoff-chrome-panel {
+  display: none;
+}
+
+.handoff-chrome-toggle,
+.handoff-chrome-panel button,
+.handoff-chrome-panel select {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(12, 12, 12, 0.92);
+  color: #f4f1ea;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.handoff-chrome-toggle {
+  min-height: 32px;
+  padding: 0 10px;
+}
+
+.handoff-chrome-panel {
+  width: min(320px, calc(100vw - 24px));
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(12, 12, 12, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.handoff-chrome-panel p {
+  margin: 0 0 8px;
+  color: #cfc8b8;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.handoff-chrome-row {
+  display: flex;
+  gap: 6px;
+}
+
+.handoff-chrome-panel select {
+  flex: 1;
+  min-height: 32px;
+  padding: 0 8px;
+}
+
+.handoff-chrome-panel button {
+  min-height: 32px;
+  padding: 0 10px;
+}
+
+html[data-handoff-chrome='hidden'] .handoff-chrome {
+  display: none;
+}

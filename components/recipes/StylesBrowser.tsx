@@ -1,4 +1,5 @@
-﻿import { useWorkspaceState } from '../../contexts/GlobalContext';
+import { AnimatePresence } from '../../lib/gsapMotion';
+import { useWorkspaceState } from '../../contexts/GlobalContext';
 import {
   IconArchive as Archive,
   IconArrowsSort as ArrowUpDown,
@@ -1871,7 +1872,7 @@ ${styleAnchorLine}
       },
       {
         id: 'browse:all_cards',
-        label: 'All Cards',
+        label: 'All styles',
         caption: 'Global',
         countLabel: `${globalStylePresetCount}`,
         tabId: ALL_STYLE_CARDS_TAB_ID,
@@ -1954,7 +1955,7 @@ ${styleAnchorLine}
   ]);
   const styleTabNavigationItems = useMemo(
     () => [
-      { id: STYLE_PACKS_TAB_ID, label: 'Packs' },
+      { id: STYLE_PACKS_TAB_ID, label: 'Collections' },
       ...styleRecipeNavigationSections.flatMap((section) =>
         section.items.map((item) => ({ id: item.tabId, label: item.label })),
       ),
@@ -1985,642 +1986,657 @@ ${styleAnchorLine}
         accept="image/*"
         multiple
       />
-      {explorerOpen ? (
-        <RecipeSidePanel>
-          <div className="studio-surface create-side-panel-dialog styles-catalog-panel">
-            <div
-              ref={catalogRootRef}
-              data-style-browser-root
-              role="dialog"
-              aria-modal="false"
-              aria-label="Style catalog"
-              tabIndex={-1}
-              onKeyDown={(event) => {
-                if (event.key === 'Escape' && !event.defaultPrevented) {
-                  event.preventDefault();
-                  event.stopPropagation();
-                  closeStyleCatalog();
-                }
-              }}
-              className="vt-style-browser-surface studio-surface relative flex h-full min-w-0 flex-1 flex-col bg-[color:var(--wb-bg)] outline-none"
-            >
-              <div className="styles-catalog-chrome">
-                <div className="styles-catalog-header">
-                  <h2 className="styles-catalog-title">Styles</h2>
-                  <label className="styles-catalog-search">
-                    <Search size={16} aria-hidden="true" />
-                    <input
-                      type="search"
-                      aria-label="Search styles"
-                      placeholder="Search styles…"
-                      value={searchQuery}
-                      onChange={(event) => {
-                        const nextQuery = event.target.value;
-                        if (isPackLandingOpen) {
-                          applyStyleTab(ALL_STYLE_CARDS_TAB_ID, {
-                            browserStatePatch: { searchQuery: nextQuery },
-                          });
-                          writeStyleTabHash(ALL_STYLE_CARDS_TAB_ID);
-                        } else updateFilters({ searchQuery: nextQuery });
-                      }}
-                    />
-                  </label>
-                  <button
-                    type="button"
-                    className="styles-catalog-close"
-                    data-close-style-catalog
-                    aria-label="Close style catalog"
-                    onClick={closeStyleCatalog}
-                  >
-                    <X size={14} />
-                    Close
-                  </button>
-                  <div className="styles-catalog-tabs vt-recipe-tabs vt-style-tabs">
-                    <div className="styles-catalog-tab-stepper">
-                      <button
-                        type="button"
-                        onClick={() => previousStyleTab && navigateToStyleTab(previousStyleTab.id)}
-                        disabled={!previousStyleTab}
-                        data-style-tab-previous
-                        aria-label="Previous style tab"
-                        title={
-                          previousStyleTab
-                            ? `Previous: ${previousStyleTab.label}`
-                            : 'No previous tab'
-                        }
-                      >
-                        <ChevronLeft size={15} />
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => nextStyleTab && navigateToStyleTab(nextStyleTab.id)}
-                        disabled={!nextStyleTab}
-                        data-style-tab-next
-                        aria-label="Next style tab"
-                        title={nextStyleTab ? `Next: ${nextStyleTab.label}` : 'No next tab'}
-                      >
-                        <ChevronRight size={15} />
-                      </button>
-                    </div>
-                    <div className="styles-catalog-tab-group">
-                      <button
-                        type="button"
-                        onClick={() => navigateToStyleTab(STYLE_PACKS_TAB_ID)}
-                        data-style-tab-url={`#${getStyleTabHash(STYLE_PACKS_TAB_ID)}`}
-                        aria-label="Show style packs"
-                        aria-pressed={isPackLandingOpen}
-                        className={styleCatalogTabClass(isPackLandingOpen)}
-                      >
-                        <Layers size={15} />
-                        Packs
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => navigateToStyleTab(ALL_STYLE_CATEGORIES_TAB_ID)}
-                        data-style-tab-url={`#${getStyleTabHash(ALL_STYLE_CATEGORIES_TAB_ID)}`}
-                        aria-label="Show all style categories"
-                        aria-pressed={
-                          !isPackLandingOpen && currentPackId === ALL_STYLE_CATEGORIES_TAB_ID
-                        }
-                        className={styleCatalogTabClass(
-                          !isPackLandingOpen && currentPackId === ALL_STYLE_CATEGORIES_TAB_ID,
-                        )}
-                      >
-                        <Folders size={15} />
-                        Categories
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => navigateToStyleTab(ALL_STYLE_CARDS_TAB_ID)}
-                        data-style-tab-url={`#${getStyleTabHash(ALL_STYLE_CARDS_TAB_ID)}`}
-                        aria-label="Show all style cards"
-                        aria-pressed={
-                          !isPackLandingOpen && currentPackId === ALL_STYLE_CARDS_TAB_ID
-                        }
-                        className={styleCatalogTabClass(
-                          !isPackLandingOpen && currentPackId === ALL_STYLE_CARDS_TAB_ID,
-                        )}
-                      >
-                        <LayoutGrid size={15} />
-                        Cards
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => navigateToStyleTab(USER_STYLE_PACK_ID)}
-                        data-style-pack-id={USER_STYLE_PACK_ID}
-                        data-style-pack-active={
-                          !isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID
-                            ? 'true'
-                            : 'false'
-                        }
-                        data-style-tab-url={`#${getStyleTabHash(USER_STYLE_PACK_ID)}`}
-                        aria-label={`Show ${USER_STYLE_PACK_NAME}`}
-                        aria-pressed={!isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID}
-                        className={styleCatalogTabClass(
-                          !isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID,
-                        )}
-                      >
-                        <Sparkles size={15} />
-                        {USER_STYLE_PACK_NAME}
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => navigateToStyleTab(FAVORITES_PACK_ID)}
-                        data-style-tab-url={`#${getStyleTabHash(FAVORITES_PACK_ID)}`}
-                        aria-label="Show favorite styles"
-                        aria-pressed={!isPackLandingOpen && currentPackId === FAVORITES_PACK_ID}
-                        className={styleCatalogTabClass(
-                          !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID,
-                        )}
-                      >
-                        <Heart
-                          size={15}
-                          fill={
-                            !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID
-                              ? 'currentColor'
-                              : 'none'
-                          }
-                        />
-                        Favorites
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {isPackLandingOpen ? (
-                <React.Suspense
-                  fallback={
-                    <LazySurfaceFallback
-                      label="Loading style packs"
-                      className="flex flex-1 items-center justify-center bg-[color:var(--wb-panel)]/40 text-[color:var(--wb-muted)]"
-                    />
+      <RecipeSidePanel>
+        <AnimatePresence>
+          {explorerOpen ? (
+            <div className="studio-surface create-side-panel-dialog styles-catalog-panel">
+              <div
+                ref={catalogRootRef}
+                data-style-browser-root
+                role="dialog"
+                aria-modal="false"
+                aria-label="Style catalog"
+                tabIndex={-1}
+                onKeyDown={(event) => {
+                  if (event.key === 'Escape' && !event.defaultPrevented) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    closeStyleCatalog();
                   }
-                >
-                  <StyleCollectionsLandingSurface
-                    favoritesCount={favorites.length}
-                    userStyleCount={userStylePresets.length}
-                    isNavigationPanelOpen={isStyleNavigationPanelOpen}
-                    getCollectionTabId={getStyleCollectionTabId}
-                    getStyleTabHash={getStyleTabHash}
-                    onNavigateToStyleTab={navigateToStyleTab}
-                    onPrefetchStyleTab={prefetchStyleTab}
-                    onToggleNavigationPanel={() => toggleStylePanel('navigation')}
-                  />
-                </React.Suspense>
-              ) : (
-                <div data-style-folder={currentPackId} className="flex min-h-0 flex-1 flex-col">
-                  {currentPackId === USER_STYLE_PACK_ID &&
-                  userStyleError &&
-                  userStylePresets.length > 0 ? (
-                    <div
-                      role="alert"
-                      className="flex items-center justify-between gap-2 p-3 text-xs text-[color:var(--wb-warning)] "
+                }}
+                className="vt-style-browser-surface studio-surface relative flex h-full min-w-0 flex-1 flex-col bg-[color:var(--wb-bg)] outline-none"
+              >
+                <div className="styles-catalog-chrome">
+                  <div className="styles-catalog-header">
+                    <h2 className="styles-catalog-title">Styles</h2>
+                    <label className="styles-catalog-search">
+                      <Search size={16} aria-hidden="true" />
+                      <input
+                        type="search"
+                        aria-label="Search styles"
+                        placeholder="Search styles…"
+                        value={searchQuery}
+                        onChange={(event) => {
+                          const nextQuery = event.target.value;
+                          if (isPackLandingOpen) {
+                            applyStyleTab(ALL_STYLE_CARDS_TAB_ID, {
+                              browserStatePatch: { searchQuery: nextQuery },
+                            });
+                            writeStyleTabHash(ALL_STYLE_CARDS_TAB_ID);
+                          } else updateFilters({ searchQuery: nextQuery });
+                        }}
+                      />
+                    </label>
+                    <button
+                      type="button"
+                      className="styles-catalog-close"
+                      data-close-style-catalog
+                      aria-label="Close style catalog"
+                      onClick={closeStyleCatalog}
                     >
-                      <span>{userStyleError} The list may be incomplete.</span>
-                      <button type="button" onClick={() => void refreshUserStyles()}>
-                        Retry
-                      </button>
-                    </div>
-                  ) : null}
-                  {/* Pack Header Info + Search Bar */}
-                  <div
-                    className={`style-folder-heading grid min-h-12 min-w-0 items-center gap-4 border-b border-[color:var(--wb-line)] px-4 py-2.5 sm:px-5 2xl:px-6 ${
-                      isStyleNavigationPanelOpen
-                        ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
-                        : 'lg:grid-cols-[40px_minmax(0,1fr)]'
-                    }`}
-                  >
-                    <div className="hidden lg:block" aria-hidden="true" />
-                    <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-                      <label className="styles-catalog-map-select">
-                        <select
-                          aria-label="Style map"
-                          value={currentStyleTabId}
-                          onChange={(event) => navigateToStyleTab(event.target.value)}
+                      <X size={14} />
+                      Close
+                    </button>
+                    <div className="styles-catalog-tabs vt-recipe-tabs vt-style-tabs">
+                      <div className="styles-catalog-tab-stepper">
+                        <button
+                          type="button"
+                          onClick={() =>
+                            previousStyleTab && navigateToStyleTab(previousStyleTab.id)
+                          }
+                          disabled={!previousStyleTab}
+                          data-style-tab-previous
+                          aria-label="Previous style tab"
+                          title={
+                            previousStyleTab
+                              ? `Previous: ${previousStyleTab.label}`
+                              : 'No previous tab'
+                          }
                         >
-                          {styleTabNavigationItems.map((item) => (
-                            <option key={item.id} value={item.id}>
-                              {item.label}
-                            </option>
-                          ))}
-                        </select>
-                      </label>
-                      {/* Search & Filter Toolbar */}
-                      <div className="vt-style-actionbar flex min-h-9 shrink-0 flex-wrap items-center gap-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] p-1">
-                        <div className="relative">
-                          <button
-                            ref={manageStylesButtonRef}
-                            type="button"
-                            aria-haspopup="menu"
-                            aria-label="Manage styles"
-                            aria-expanded={isManageStylesOpen}
-                            onClick={() => setIsManageStylesOpen((open) => !open)}
-                            className="studio-ghost-control style-catalog-control"
-                          >
-                            Manage
-                            <ChevronDown size={12} aria-hidden="true" />
-                          </button>
-                          <DemandMountedGsapDropdown
-                            open={isManageStylesOpen}
-                            onOpenChange={setIsManageStylesOpen}
-                            triggerRef={manageStylesButtonRef}
-                            placement="bottom-left"
-                            portal
-                            role="menu"
-                            aria-label="Manage styles"
-                            className="grid w-44 gap-1 p-2"
-                          >
-                            <button
-                              type="button"
-                              role="menuitem"
-                              data-dropdown-item
-                              onClick={() => {
-                                setIsManageStylesOpen(false);
-                                handleCreateUserStyle();
-                              }}
-                              data-style-create-user-style
-                              className="studio-ghost-control style-catalog-control style-catalog-menu-action"
-                              title="Create Style"
-                            >
-                              <Plus size={15} />
-                              <span className="inline">Create</span>
-                            </button>
-
-                            <button
-                              type="button"
-                              role="menuitem"
-                              data-dropdown-item
-                              onClick={() => {
-                                setIsManageStylesOpen(false);
-                                handleSaveSelectedStyleBlend();
-                              }}
-                              disabled={!canSaveStyleBlend}
-                              data-style-save-blend
-                              className="studio-ghost-control style-catalog-control style-catalog-menu-action"
-                              title="Save Blend"
-                            >
-                              <Layers size={15} />
-                              <span className="inline">Blend</span>
-                            </button>
-
-                            <button
-                              type="button"
-                              role="menuitem"
-                              data-dropdown-item
-                              onClick={() => {
-                                setIsManageStylesOpen(false);
-                                if (canEditActiveUserStyle) handleEditActiveUserStyle();
-                                else handleCloneActiveStyle();
-                              }}
-                              disabled={!canEditActiveUserStyle && !canCloneActiveStyle}
-                              data-style-edit-or-clone
-                              className="studio-ghost-control style-catalog-control style-catalog-menu-action"
-                              title={canEditActiveUserStyle ? 'Edit Style' : 'Clone Style'}
-                            >
-                              {canEditActiveUserStyle ? <PenTool size={15} /> : <Copy size={15} />}
-                              <span className="inline">
-                                {canEditActiveUserStyle ? 'Edit' : 'Clone'}
-                              </span>
-                            </button>
-                          </DemandMountedGsapDropdown>
-                        </div>
-                        {isGlobalStyleBrowseTab ? null : (
-                          <div
-                            data-style-view-mode={activeStyleViewMode}
-                            className="flex items-center gap-1"
-                          >
-                            <button
-                              type="button"
-                              onClick={() => updateFilters({ viewMode: 'grouped' })}
-                              aria-label="Show grouped style categories"
-                              aria-pressed={activeStyleViewMode === 'grouped'}
-                              className="studio-ghost-control style-catalog-control style-catalog-icon"
-                              title="Categories"
-                            >
-                              <Layers size={14} />
-                            </button>
-                            <button
-                              type="button"
-                              onClick={() => updateFilters({ viewMode: 'flat' })}
-                              aria-label="Show all style cards in one grid"
-                              aria-pressed={activeStyleViewMode === 'flat'}
-                              className="studio-ghost-control style-catalog-control style-catalog-icon"
-                              title="All cards"
-                            >
-                              <LayoutGrid size={14} />
-                            </button>
-                          </div>
-                        )}
-
-                        <div ref={sortDropdownRef} className="relative" data-style-sort-dropdown>
-                          <button
-                            ref={sortButtonRef}
-                            type="button"
-                            onClick={() => setIsSortDropdownOpen((open) => !open)}
-                            aria-label={`Sort style cards: ${activeSortOption.label}`}
-                            aria-haspopup="listbox"
-                            aria-expanded={isSortDropdownOpen}
-                            aria-controls={sortMenuId}
-                            className="studio-ghost-control style-catalog-control style-catalog-sort"
-                            title="Sort styles"
-                          >
-                            <ArrowUpDown size={14} className="shrink-0" />
-                            <span className="min-w-0 flex-1 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-                              {activeSortOption.label}
-                            </span>
-                            <ChevronDown
-                              size={13}
-                              className={`shrink-0 transition-transform ${isSortDropdownOpen ? 'rotate-180 text-[color:var(--wb-ink)]' : 'text-[color:var(--wb-dim)]'}`}
-                            />
-                          </button>
-
-                          <DemandMountedGsapDropdown
-                            id={sortMenuId}
-                            open={isSortDropdownOpen}
-                            onOpenChange={setIsSortDropdownOpen}
-                            triggerRef={sortButtonRef}
-                            placement="bottom-right"
-                            portal
-                            role="listbox"
-                            aria-label="Sort style cards"
-                            className="absolute right-0 top-[calc(100%+0.45rem)] z-50 w-52 overflow-hidden rounded-[var(--wb-radius)] p-1"
-                          >
-                            <div className="px-2 pb-1 pt-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
-                              Sort
-                            </div>
-                            <div className="space-y-0.5">
-                              {STYLE_BROWSER_SORT_OPTIONS.map((option) => {
-                                const selected = option.value === sortOrder;
-
-                                return (
-                                  <button
-                                    key={option.value}
-                                    type="button"
-                                    role="option"
-                                    aria-selected={selected}
-                                    data-dropdown-item
-                                    onClick={() => {
-                                      updateFilters({ sortOrder: option.value });
-                                      setIsSortDropdownOpen(false);
-                                    }}
-                                    className={`flex min-h-9 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] px-2 text-left text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[background-color,color,transform] ${
-                                      selected
-                                        ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
-                                        : 'text-[color:var(--wb-muted)] hover:bg-white/[0.055] hover:text-[color:var(--wb-ink)]'
-                                    }`}
-                                  >
-                                    <span>{option.label}</span>
-                                    {selected ? <Check size={13} className="shrink-0" /> : null}
-                                  </button>
-                                );
-                              })}
-                            </div>
-                          </DemandMountedGsapDropdown>
-                        </div>
-
-                        {currentPackId !== FAVORITES_PACK_ID && (
-                          <button
-                            type="button"
-                            aria-label="Filter favorite styles"
-                            onClick={() => toggleFavoritesOnly()}
-                            aria-pressed={showFavoritesOnly}
-                            className="studio-ghost-control style-catalog-control style-catalog-icon"
-                            title="Filter Favorites in this Pack"
-                          >
-                            <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
-                          </button>
-                        )}
-
-                        <div className="h-6 w-px bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]" />
-
-                        <div className="hidden items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/40 px-2 py-1 md:flex">
-                          <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                            Zoom
-                          </span>
-                          <input
-                            type="range"
-                            min={1}
-                            max={Math.max(1, fitColumns)}
-                            step={1}
-                            value={gridColumns}
-                            onChange={(e) => setGridColumnPref(Number(e.target.value))}
-                            className="h-1.5 w-20 accent-white"
-                            aria-label="Style grid zoom"
-                            title="Style card columns"
+                          <ChevronLeft size={15} />
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => nextStyleTab && navigateToStyleTab(nextStyleTab.id)}
+                          disabled={!nextStyleTab}
+                          data-style-tab-next
+                          aria-label="Next style tab"
+                          title={nextStyleTab ? `Next: ${nextStyleTab.label}` : 'No next tab'}
+                        >
+                          <ChevronRight size={15} />
+                        </button>
+                      </div>
+                      <div className="styles-catalog-tab-group">
+                        <button
+                          type="button"
+                          onClick={() => navigateToStyleTab(ALL_STYLE_CARDS_TAB_ID)}
+                          data-style-tab-url={`#${getStyleTabHash(ALL_STYLE_CARDS_TAB_ID)}`}
+                          aria-label="Show all styles"
+                          aria-pressed={
+                            !isPackLandingOpen && currentPackId === ALL_STYLE_CARDS_TAB_ID
+                          }
+                          className={styleCatalogTabClass(
+                            !isPackLandingOpen && currentPackId === ALL_STYLE_CARDS_TAB_ID,
+                          )}
+                        >
+                          <LayoutGrid size={15} />
+                          All styles
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => navigateToStyleTab(STYLE_PACKS_TAB_ID)}
+                          data-style-tab-url={`#${getStyleTabHash(STYLE_PACKS_TAB_ID)}`}
+                          aria-label="Show collections"
+                          aria-pressed={isPackLandingOpen}
+                          className={styleCatalogTabClass(isPackLandingOpen)}
+                        >
+                          <Layers size={15} />
+                          Collections
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => navigateToStyleTab(USER_STYLE_PACK_ID)}
+                          data-style-pack-id={USER_STYLE_PACK_ID}
+                          data-style-pack-active={
+                            !isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID
+                              ? 'true'
+                              : 'false'
+                          }
+                          data-style-tab-url={`#${getStyleTabHash(USER_STYLE_PACK_ID)}`}
+                          aria-label={`Show ${USER_STYLE_PACK_NAME}`}
+                          aria-pressed={!isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID}
+                          className={styleCatalogTabClass(
+                            !isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID,
+                          )}
+                        >
+                          <Sparkles size={15} />
+                          {USER_STYLE_PACK_NAME}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => navigateToStyleTab(FAVORITES_PACK_ID)}
+                          data-style-tab-url={`#${getStyleTabHash(FAVORITES_PACK_ID)}`}
+                          aria-label="Show favorite styles"
+                          aria-pressed={!isPackLandingOpen && currentPackId === FAVORITES_PACK_ID}
+                          className={styleCatalogTabClass(
+                            !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID,
+                          )}
+                        >
+                          <Heart
+                            size={15}
+                            fill={
+                              !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID
+                                ? 'currentColor'
+                                : 'none'
+                            }
                           />
-                          <span className="w-4 text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tabular-nums">
-                            {gridColumns}
-                          </span>
-                        </div>
+                          Favorites
+                        </button>
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  <div
-                    className={`style-folder-layout grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6 ${
-                      isStyleNavigationPanelOpen
-                        ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
-                        : 'lg:grid-cols-[40px_minmax(0,1fr)]'
-                    }`}
+                <label className="flex items-center gap-2 px-3 py-2 text-xs text-[color:var(--wb-muted)]">
+                  Source pack
+                  <select
+                    aria-label="Filter styles by source pack"
+                    className="min-w-0 flex-1 bg-[color:var(--wb-panel)] p-1"
+                    value={
+                      STYLE_RUNTIME_PACK_IDS.includes(currentPackId) && !isPackLandingOpen
+                        ? currentPackId
+                        : ''
+                    }
+                    onChange={(event) =>
+                      navigateToStyleTab(event.target.value || ALL_STYLE_CARDS_TAB_ID)
+                    }
                   >
-                    {isStyleNavigationPanelOpen ? (
-                      <React.Suspense
-                        fallback={
-                          <LazySurfaceFallback
-                            label="Loading style map"
-                            className="hidden min-h-0 lg:flex"
-                          />
-                        }
+                    <option value="">All sources</option>
+                    {STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => (
+                      <option key={pack.id} value={pack.id}>
+                        {pack.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                {isPackLandingOpen ? (
+                  <React.Suspense
+                    fallback={
+                      <LazySurfaceFallback
+                        label="Loading collections"
+                        className="flex flex-1 items-center justify-center bg-[color:var(--wb-panel)]/40 text-[color:var(--wb-muted)]"
+                      />
+                    }
+                  >
+                    <StyleCollectionsLandingSurface
+                      favoritesCount={favorites.length}
+                      userStyleCount={userStylePresets.length}
+                      isNavigationPanelOpen={isStyleNavigationPanelOpen}
+                      getCollectionTabId={getStyleCollectionTabId}
+                      getStyleTabHash={getStyleTabHash}
+                      onNavigateToStyleTab={navigateToStyleTab}
+                      onPrefetchStyleTab={prefetchStyleTab}
+                      onToggleNavigationPanel={() => toggleStylePanel('navigation')}
+                    />
+                  </React.Suspense>
+                ) : (
+                  <div data-style-folder={currentPackId} className="flex min-h-0 flex-1 flex-col">
+                    {currentPackId === USER_STYLE_PACK_ID &&
+                    userStyleError &&
+                    userStylePresets.length > 0 ? (
+                      <div
+                        role="alert"
+                        className="flex items-center justify-between gap-2 p-3 text-xs text-[color:var(--wb-warning)] "
                       >
-                        <StyleRecipeNavigationPanel
-                          sections={styleRecipeNavigationSections}
-                          activeTabId={currentStyleTabId}
-                          onOpen={navigateToStyleTab}
-                          onClose={() => toggleStylePanel('navigation')}
-                        />
-                      </React.Suspense>
-                    ) : (
-                      <aside
-                        data-style-detail-navigation-rail
-                        className="hidden min-h-0 min-w-0 items-start justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
-                      >
-                        <button
-                          type="button"
-                          onClick={() => toggleStylePanel('navigation')}
-                          data-style-detail-navigation-toggle
-                          className="flex size-7 items-center justify-center rounded-[var(--wb-radius)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                          aria-label="Show style map"
-                          title="Show style map"
-                        >
-                          <ChevronRight size={14} />
+                        <span>{userStyleError} The list may be incomplete.</span>
+                        <button type="button" onClick={() => void refreshUserStyles()}>
+                          Retry
                         </button>
-                      </aside>
-                    )}
+                      </div>
+                    ) : null}
+                    {/* Pack Header Info + Search Bar */}
                     <div
-                      ref={styleScrollRootRef}
-                      className="min-h-0 min-w-0 overflow-y-auto pb-12 custom-scrollbar"
+                      className={`style-folder-heading grid min-h-12 min-w-0 items-center gap-4 border-b border-[color:var(--wb-line)] px-4 py-2.5 sm:px-5 2xl:px-6 ${
+                        isStyleNavigationPanelOpen
+                          ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
+                          : 'lg:grid-cols-[40px_minmax(0,1fr)]'
+                      }`}
                     >
-                      <React.Suspense
-                        fallback={
-                          <LazySurfaceFallback
-                            label="Loading style cards"
-                            className="flex min-h-64 items-center justify-center text-[color:var(--wb-muted)]"
-                          />
-                        }
-                      >
-                        <div className="w-full space-y-6 pb-20">
-                          {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
-                          {processedData.favorites.length > 0 &&
-                            currentPackId !== FAVORITES_PACK_ID && (
-                              <StylePresetGroupSection
-                                key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
-                                groupKey="favorites"
-                                title="Pinned / Favorites"
-                                presets={processedData.favorites}
-                                gridColumns={gridColumns}
-                                scrollRootRef={styleScrollRootRef}
-                                scrollContainerWidth={styleScrollWidth}
-                                initiallyVisible
-                                headerClassName="opacity-100"
-                                accentClassName="bg-rose-500"
-                                titleClassName="text-[color:var(--wb-danger)]"
-                                dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
-                                renderPresetCard={renderPresetCard}
-                              />
-                            )}
+                      <div className="hidden lg:block" aria-hidden="true" />
+                      <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                        <label className="styles-catalog-map-select">
+                          <select
+                            aria-label="Browse collections and categories"
+                            value={currentStyleTabId}
+                            onChange={(event) => navigateToStyleTab(event.target.value)}
+                          >
+                            {styleTabNavigationItems.map((item) => (
+                              <option key={item.id} value={item.id}>
+                                {item.label}
+                              </option>
+                            ))}
+                          </select>
+                        </label>
+                        {/* Search & Filter Toolbar */}
+                        <div className="vt-style-actionbar flex min-h-9 shrink-0 flex-wrap items-center gap-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] p-1">
+                          <div className="relative">
+                            <button
+                              ref={manageStylesButtonRef}
+                              type="button"
+                              aria-haspopup="menu"
+                              aria-label="Manage styles"
+                              aria-expanded={isManageStylesOpen}
+                              onClick={() => setIsManageStylesOpen((open) => !open)}
+                              className="studio-ghost-control style-catalog-control"
+                            >
+                              Manage
+                              <ChevronDown size={12} aria-hidden="true" />
+                            </button>
+                            <DemandMountedGsapDropdown
+                              open={isManageStylesOpen}
+                              onOpenChange={setIsManageStylesOpen}
+                              triggerRef={manageStylesButtonRef}
+                              placement="bottom-left"
+                              portal
+                              role="menu"
+                              aria-label="Manage styles"
+                              className="grid w-44 gap-1 p-2"
+                            >
+                              <button
+                                type="button"
+                                role="menuitem"
+                                data-dropdown-item
+                                onClick={() => {
+                                  setIsManageStylesOpen(false);
+                                  handleCreateUserStyle();
+                                }}
+                                data-style-create-user-style
+                                className="studio-ghost-control style-catalog-control style-catalog-menu-action"
+                                title="Create Style"
+                              >
+                                <Plus size={15} />
+                                <span className="inline">Create</span>
+                              </button>
 
-                          {visibleStyleGroupEntries.map(([groupKey, presets], index) => {
-                            const isFlatStyleGroup =
-                              activeStyleViewMode === 'flat' &&
-                              groupKey === STYLE_BROWSER_FLAT_GROUP_KEY;
-                            const categoryIdentity = isFlatStyleGroup
-                              ? null
-                              : resolveStyleCategoryIdentity(currentPackId, groupKey);
-                            return (
-                              <StylePresetGroupSection
-                                key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
-                                groupKey={groupKey}
-                                title={isFlatStyleGroup ? 'All Styles' : groupKey}
-                                icon={
-                                  isFlatStyleGroup || !categoryIdentity ? (
-                                    <LayoutGrid size={12} />
-                                  ) : (
-                                    <StyleCategoryGlyph
-                                      iconId={categoryIdentity.iconId}
-                                      size={12}
-                                    />
-                                  )
-                                }
-                                presets={presets}
-                                gridColumns={gridColumns}
-                                scrollRootRef={styleScrollRootRef}
-                                scrollContainerWidth={styleScrollWidth}
-                                initiallyVisible={index < styleCategoryEagerBudget}
-                                headerClassName=""
-                                accentClassName={
-                                  categoryIdentity?.accentClassName ?? activeTheme.bg
-                                }
-                                titleClassName={
-                                  categoryIdentity?.titleClassName ?? 'text-[color:var(--wb-ink)]'
-                                }
-                                dividerClassName="bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
-                                renderPresetCard={renderPresetCard}
-                              />
-                            );
-                          })}
+                              <button
+                                type="button"
+                                role="menuitem"
+                                data-dropdown-item
+                                onClick={() => {
+                                  setIsManageStylesOpen(false);
+                                  handleSaveSelectedStyleBlend();
+                                }}
+                                disabled={!canSaveStyleBlend}
+                                data-style-save-blend
+                                className="studio-ghost-control style-catalog-control style-catalog-menu-action"
+                                title="Save Blend"
+                              >
+                                <Layers size={15} />
+                                <span className="inline">Blend</span>
+                              </button>
 
-                          {filteredStylePresets.length === 0 && (
-                            <div className="h-64 flex flex-col items-center justify-center text-[color:var(--wb-dim)] gap-4">
-                              {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
-                                <>
-                                  <Filter size={32} className="opacity-20" />
-                                  <span className="text-xs font-bold tracking-normal">
-                                    Could not load this style pack
-                                  </span>
-                                  <button
-                                    type="button"
-                                    onClick={retryStylePacks}
-                                    className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                                  >
-                                    <Wand2 size={13} />
-                                    Retry
-                                  </button>
-                                </>
-                              ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
-                                <>
-                                  <Filter size={32} className="opacity-20" />
-                                  <span className="text-xs font-bold tracking-normal">
-                                    Could not load styles
-                                  </span>
-                                  <button
-                                    type="button"
-                                    onClick={() => void refreshUserStyles()}
-                                    className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                                  >
-                                    <Wand2 size={13} />
-                                    Retry
-                                  </button>
-                                </>
-                              ) : currentPackId === USER_STYLE_PACK_ID &&
-                                !isLoadingUserStyles &&
-                                normalizedStyleSearchQuery.length === 0 ? (
-                                <>
-                                  <Sparkles
-                                    size={32}
-                                    className="opacity-30 text-[color:var(--wb-info)] "
-                                  />
-                                  <span className="text-xs font-bold tracking-normal text-[color:var(--wb-muted)]">
-                                    No custom styles yet
-                                  </span>
-                                  <button
-                                    type="button"
-                                    onClick={handleCreateUserStyle}
-                                    className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/16"
-                                  >
-                                    <Plus size={13} />
-                                    Create Style
-                                  </button>
-                                </>
-                              ) : (
-                                <>
-                                  <Filter size={32} className="opacity-20" />
-                                  <span className="text-xs font-bold tracking-normal">
-                                    {isLoadingUserStyles || isLoadingStylePacks
-                                      ? 'Loading styles'
-                                      : 'No styles found matching criteria'}
-                                  </span>
-                                </>
-                              )}
+                              <button
+                                type="button"
+                                role="menuitem"
+                                data-dropdown-item
+                                onClick={() => {
+                                  setIsManageStylesOpen(false);
+                                  if (canEditActiveUserStyle) handleEditActiveUserStyle();
+                                  else handleCloneActiveStyle();
+                                }}
+                                disabled={!canEditActiveUserStyle && !canCloneActiveStyle}
+                                data-style-edit-or-clone
+                                className="studio-ghost-control style-catalog-control style-catalog-menu-action"
+                                title={canEditActiveUserStyle ? 'Edit Style' : 'Clone Style'}
+                              >
+                                {canEditActiveUserStyle ? (
+                                  <PenTool size={15} />
+                                ) : (
+                                  <Copy size={15} />
+                                )}
+                                <span className="inline">
+                                  {canEditActiveUserStyle ? 'Edit' : 'Clone'}
+                                </span>
+                              </button>
+                            </DemandMountedGsapDropdown>
+                          </div>
+                          {isGlobalStyleBrowseTab ? null : (
+                            <div
+                              data-style-view-mode={activeStyleViewMode}
+                              className="flex items-center gap-1"
+                            >
+                              <button
+                                type="button"
+                                onClick={() => updateFilters({ viewMode: 'grouped' })}
+                                aria-label="Show grouped style categories"
+                                aria-pressed={activeStyleViewMode === 'grouped'}
+                                className="studio-ghost-control style-catalog-control style-catalog-icon"
+                                title="Categories"
+                              >
+                                <Layers size={14} />
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => updateFilters({ viewMode: 'flat' })}
+                                aria-label="Show all style cards in one grid"
+                                aria-pressed={activeStyleViewMode === 'flat'}
+                                className="studio-ghost-control style-catalog-control style-catalog-icon"
+                                title="All cards"
+                              >
+                                <LayoutGrid size={14} />
+                              </button>
                             </div>
                           )}
+
+                          <div ref={sortDropdownRef} className="relative" data-style-sort-dropdown>
+                            <button
+                              ref={sortButtonRef}
+                              type="button"
+                              onClick={() => setIsSortDropdownOpen((open) => !open)}
+                              aria-label={`Sort style cards: ${activeSortOption.label}`}
+                              aria-haspopup="listbox"
+                              aria-expanded={isSortDropdownOpen}
+                              aria-controls={sortMenuId}
+                              className="studio-ghost-control style-catalog-control style-catalog-sort"
+                              title="Sort styles"
+                            >
+                              <ArrowUpDown size={14} className="shrink-0" />
+                              <span className="min-w-0 flex-1 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+                                {activeSortOption.label}
+                              </span>
+                              <ChevronDown
+                                size={13}
+                                className={`shrink-0 transition-transform ${isSortDropdownOpen ? 'rotate-180 text-[color:var(--wb-ink)]' : 'text-[color:var(--wb-dim)]'}`}
+                              />
+                            </button>
+
+                            <DemandMountedGsapDropdown
+                              id={sortMenuId}
+                              open={isSortDropdownOpen}
+                              onOpenChange={setIsSortDropdownOpen}
+                              triggerRef={sortButtonRef}
+                              placement="bottom-right"
+                              portal
+                              role="listbox"
+                              aria-label="Sort style cards"
+                              className="absolute right-0 top-[calc(100%+0.45rem)] z-50 w-52 overflow-hidden rounded-[var(--wb-radius)] p-1"
+                            >
+                              <div className="px-2 pb-1 pt-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
+                                Sort
+                              </div>
+                              <div className="space-y-0.5">
+                                {STYLE_BROWSER_SORT_OPTIONS.map((option) => {
+                                  const selected = option.value === sortOrder;
+
+                                  return (
+                                    <button
+                                      key={option.value}
+                                      type="button"
+                                      role="option"
+                                      aria-selected={selected}
+                                      data-dropdown-item
+                                      onClick={() => {
+                                        updateFilters({ sortOrder: option.value });
+                                        setIsSortDropdownOpen(false);
+                                      }}
+                                      className={`flex min-h-9 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] px-2 text-left text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[background-color,color,transform] ${
+                                        selected
+                                          ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
+                                          : 'text-[color:var(--wb-muted)] hover:bg-white/[0.055] hover:text-[color:var(--wb-ink)]'
+                                      }`}
+                                    >
+                                      <span>{option.label}</span>
+                                      {selected ? <Check size={13} className="shrink-0" /> : null}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                            </DemandMountedGsapDropdown>
+                          </div>
+
+                          {currentPackId !== FAVORITES_PACK_ID && (
+                            <button
+                              type="button"
+                              aria-label="Filter favorite styles"
+                              onClick={() => toggleFavoritesOnly()}
+                              aria-pressed={showFavoritesOnly}
+                              className="studio-ghost-control style-catalog-control style-catalog-icon"
+                              title="Filter Favorites in this Pack"
+                            >
+                              <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
+                            </button>
+                          )}
+
+                          <div className="h-6 w-px bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]" />
+
+                          <div className="hidden items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/40 px-2 py-1 md:flex">
+                            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+                              Zoom
+                            </span>
+                            <input
+                              type="range"
+                              min={1}
+                              max={Math.max(1, fitColumns)}
+                              step={1}
+                              value={gridColumns}
+                              onChange={(e) => setGridColumnPref(Number(e.target.value))}
+                              className="h-1.5 w-20 accent-white"
+                              aria-label="Style grid zoom"
+                              title="Style card columns"
+                            />
+                            <span className="w-4 text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tabular-nums">
+                              {gridColumns}
+                            </span>
+                          </div>
                         </div>
-                      </React.Suspense>
+                      </div>
+                    </div>
+
+                    <div
+                      className={`style-folder-layout grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6 ${
+                        isStyleNavigationPanelOpen
+                          ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
+                          : 'lg:grid-cols-[40px_minmax(0,1fr)]'
+                      }`}
+                    >
+                      {isStyleNavigationPanelOpen ? (
+                        <React.Suspense
+                          fallback={
+                            <LazySurfaceFallback
+                              label="Loading style map"
+                              className="hidden min-h-0 lg:flex"
+                            />
+                          }
+                        >
+                          <StyleRecipeNavigationPanel
+                            sections={styleRecipeNavigationSections}
+                            activeTabId={currentStyleTabId}
+                            onOpen={navigateToStyleTab}
+                            onClose={() => toggleStylePanel('navigation')}
+                          />
+                        </React.Suspense>
+                      ) : (
+                        <aside
+                          data-style-detail-navigation-rail
+                          className="hidden min-h-0 min-w-0 items-start justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
+                        >
+                          <button
+                            type="button"
+                            onClick={() => toggleStylePanel('navigation')}
+                            data-style-detail-navigation-toggle
+                            className="flex size-7 items-center justify-center rounded-[var(--wb-radius)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                            aria-label="Show style map"
+                            title="Show style map"
+                          >
+                            <ChevronRight size={14} />
+                          </button>
+                        </aside>
+                      )}
+                      <div
+                        ref={styleScrollRootRef}
+                        className="min-h-0 min-w-0 overflow-y-auto pb-12 custom-scrollbar"
+                      >
+                        <React.Suspense
+                          fallback={
+                            <LazySurfaceFallback
+                              label="Loading style cards"
+                              className="flex min-h-64 items-center justify-center text-[color:var(--wb-muted)]"
+                            />
+                          }
+                        >
+                          <div className="w-full space-y-6 pb-20">
+                            {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
+                            {processedData.favorites.length > 0 &&
+                              currentPackId !== FAVORITES_PACK_ID && (
+                                <StylePresetGroupSection
+                                  key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
+                                  groupKey="favorites"
+                                  title="Pinned / Favorites"
+                                  presets={processedData.favorites}
+                                  gridColumns={gridColumns}
+                                  scrollRootRef={styleScrollRootRef}
+                                  scrollContainerWidth={styleScrollWidth}
+                                  initiallyVisible
+                                  headerClassName="opacity-100"
+                                  accentClassName="bg-rose-500"
+                                  titleClassName="text-[color:var(--wb-danger)]"
+                                  dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
+                                  renderPresetCard={renderPresetCard}
+                                />
+                              )}
+
+                            {visibleStyleGroupEntries.map(([groupKey, presets], index) => {
+                              const isFlatStyleGroup =
+                                activeStyleViewMode === 'flat' &&
+                                groupKey === STYLE_BROWSER_FLAT_GROUP_KEY;
+                              const categoryIdentity = isFlatStyleGroup
+                                ? null
+                                : resolveStyleCategoryIdentity(currentPackId, groupKey);
+                              return (
+                                <StylePresetGroupSection
+                                  key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
+                                  groupKey={groupKey}
+                                  title={isFlatStyleGroup ? 'All Styles' : groupKey}
+                                  icon={
+                                    isFlatStyleGroup || !categoryIdentity ? (
+                                      <LayoutGrid size={12} />
+                                    ) : (
+                                      <StyleCategoryGlyph
+                                        iconId={categoryIdentity.iconId}
+                                        size={12}
+                                      />
+                                    )
+                                  }
+                                  presets={presets}
+                                  gridColumns={gridColumns}
+                                  scrollRootRef={styleScrollRootRef}
+                                  scrollContainerWidth={styleScrollWidth}
+                                  initiallyVisible={index < styleCategoryEagerBudget}
+                                  headerClassName=""
+                                  accentClassName={
+                                    categoryIdentity?.accentClassName ?? activeTheme.bg
+                                  }
+                                  titleClassName={
+                                    categoryIdentity?.titleClassName ?? 'text-[color:var(--wb-ink)]'
+                                  }
+                                  dividerClassName="bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
+                                  renderPresetCard={renderPresetCard}
+                                />
+                              );
+                            })}
+
+                            {filteredStylePresets.length === 0 && (
+                              <div className="h-64 flex flex-col items-center justify-center text-[color:var(--wb-dim)] gap-4">
+                                {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
+                                  <>
+                                    <Filter size={32} className="opacity-20" />
+                                    <span className="text-xs font-bold tracking-normal">
+                                      Could not load this style pack
+                                    </span>
+                                    <button
+                                      type="button"
+                                      onClick={retryStylePacks}
+                                      className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                                    >
+                                      <Wand2 size={13} />
+                                      Retry
+                                    </button>
+                                  </>
+                                ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
+                                  <>
+                                    <Filter size={32} className="opacity-20" />
+                                    <span className="text-xs font-bold tracking-normal">
+                                      Could not load styles
+                                    </span>
+                                    <button
+                                      type="button"
+                                      onClick={() => void refreshUserStyles()}
+                                      className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                                    >
+                                      <Wand2 size={13} />
+                                      Retry
+                                    </button>
+                                  </>
+                                ) : currentPackId === USER_STYLE_PACK_ID &&
+                                  !isLoadingUserStyles &&
+                                  normalizedStyleSearchQuery.length === 0 ? (
+                                  <>
+                                    <Sparkles
+                                      size={32}
+                                      className="opacity-30 text-[color:var(--wb-info)] "
+                                    />
+                                    <span className="text-xs font-bold tracking-normal text-[color:var(--wb-muted)]">
+                                      No custom styles yet
+                                    </span>
+                                    <button
+                                      type="button"
+                                      onClick={handleCreateUserStyle}
+                                      className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/16"
+                                    >
+                                      <Plus size={13} />
+                                      Create Style
+                                    </button>
+                                  </>
+                                ) : (
+                                  <>
+                                    <Filter size={32} className="opacity-20" />
+                                    <span className="text-xs font-bold tracking-normal">
+                                      {isLoadingUserStyles || isLoadingStylePacks
+                                        ? 'Loading styles'
+                                        : 'No styles found matching criteria'}
+                                    </span>
+                                  </>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                        </React.Suspense>
+                      </div>
                     </div>
                   </div>
-                </div>
-              )}
+                )}
 
-              {isCatalogSearchOpen && (
-                <React.Suspense
-                  fallback={
-                    <LazySurfaceFallback
-                      label="Loading catalog"
-                      className="absolute inset-0 z-40 grid place-items-center bg-[color:var(--wb-panel)] text-[color:var(--wb-muted)]"
+                {isCatalogSearchOpen && (
+                  <React.Suspense
+                    fallback={
+                      <LazySurfaceFallback
+                        label="Loading catalog"
+                        className="absolute inset-0 z-40 grid place-items-center bg-[color:var(--wb-panel)] text-[color:var(--wb-muted)]"
+                      />
+                    }
+                  >
+                    <StylePresetCatalogSearchSurface
+                      onClose={handleCloseCatalogSearch}
+                      onSelectPreset={handleSelectCatalogPreset}
+                      onApplyPreset={handleApplyCatalogPreset}
                     />
-                  }
-                >
-                  <StylePresetCatalogSearchSurface
-                    onClose={handleCloseCatalogSearch}
-                    onSelectPreset={handleSelectCatalogPreset}
-                    onApplyPreset={handleApplyCatalogPreset}
-                  />
-                </React.Suspense>
-              )}
+                  </React.Suspense>
+                )}
+              </div>
             </div>
-          </div>
-        </RecipeSidePanel>
-      ) : null}
+          ) : null}
+        </AnimatePresence>
+      </RecipeSidePanel>
 
       <RecipeControls>
         <React.Suspense fallback={<LazySurfaceFallback label="Loading styles" />}>
@@ -2704,30 +2720,32 @@ ${styleAnchorLine}
           {isGenerating ? 'Queue' : 'Generate'}
         </button>
       </RecipeControls>
-      {userStyleEditorSession && (
-        <RecipeOverlay>
-          <React.Suspense
-            fallback={
-              <LazySurfaceFallback
-                label="Loading style editor"
-                className="absolute inset-0 z-50 grid place-items-center bg-[color:var(--wb-panel)]/86 text-[color:var(--wb-muted)] backdrop-blur-xl"
+      <RecipeOverlay>
+        <AnimatePresence>
+          {userStyleEditorSession && (
+            <React.Suspense
+              fallback={
+                <LazySurfaceFallback
+                  label="Loading style editor"
+                  className="absolute inset-0 z-50 grid place-items-center bg-[color:var(--wb-panel)]/86 text-[color:var(--wb-muted)] backdrop-blur-xl"
+                />
+              }
+            >
+              <UserStyleEditorSurface
+                sessionId={userStyleEditorSession.id}
+                mode={userStyleEditorSession.mode}
+                initialDraft={userStyleEditorSession.draft}
+                initialSource={userStyleEditorSession.source}
+                editingStyleId={userStyleEditorSession.editingStyleId}
+                selectedStyleLayers={selectedStyleLayers}
+                onClose={userStyles.close}
+                onSaved={(style) => userStyles.reconcile(userStyleEditorSession.id, style, false)}
+                onArchived={(style) => userStyles.reconcile(userStyleEditorSession.id, style, true)}
               />
-            }
-          >
-            <UserStyleEditorSurface
-              sessionId={userStyleEditorSession.id}
-              mode={userStyleEditorSession.mode}
-              initialDraft={userStyleEditorSession.draft}
-              initialSource={userStyleEditorSession.source}
-              editingStyleId={userStyleEditorSession.editingStyleId}
-              selectedStyleLayers={selectedStyleLayers}
-              onClose={userStyles.close}
-              onSaved={(style) => userStyles.reconcile(userStyleEditorSession.id, style, false)}
-              onArchived={(style) => userStyles.reconcile(userStyleEditorSession.id, style, true)}
-            />
-          </React.Suspense>
-        </RecipeOverlay>
-      )}
+            </React.Suspense>
+          )}
+        </AnimatePresence>
+      </RecipeOverlay>
     </RecipeLayout>
   );
 };

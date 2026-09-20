@@ -522,7 +522,7 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
       aria-modal="true"
       aria-label="Style editor"
       tabIndex={-1}
-      className="absolute inset-0 z-50 flex items-center justify-center bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] backdrop-blur-md sm:p-4"
+      className="studio-style-editor absolute inset-0 z-50 flex items-center justify-center bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] p-2 text-[color:var(--wb-ink)] backdrop-blur-md sm:p-4"
     >
       <div className="flex h-full max-h-[calc(100vh-4.5rem)] w-full max-w-[1180px] flex-col overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_24px_80px_rgba(0,0,0,0.72)]">
         <div className="flex min-h-14 shrink-0 items-center justify-between gap-3 border-b border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/98 px-4 sm:px-5">

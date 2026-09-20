@@ -375,48 +375,61 @@ describe('persistentJobIntake', () => {
     expect(processReferences).not.toHaveBeenCalled();
   });
 
-  it('rejects malformed source specs before reference persistence', async () => {
-    const processReferences = vi.fn(async () => ({ augmentedPrompt: 'x', persistedRefs: [] }));
-    const intake = createPersistentJobIntake({
-      createJobId: () => 'job-new',
-      createJob: () => createJob(),
-      updateJobFinalPrompt: () => null,
-      processReferences,
-      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
-      readLibraryDir: () => 'D:/library',
-      resolveProviderExecutionBlocker: () => null,
-      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
-      publishEvent: () => ({ type: 'job.created', payload: {}, createdAt: '' }),
-      logJobCreated: () => {},
-      enqueueJob: () => {},
-    });
+  it.each([
+    { prompt: 'draw' } as GenerationTaskSpec,
+    createGenerationTaskSpec({
+      id: 'missing-source',
+      task: 'image_generate',
+      prompt: 'restore the photograph',
+      recipeId: 'remaster',
+    }),
+  ])(
+    'rejects invalid input before reference persistence or job creation: %j',
+    async (sourceSpec) => {
+      const createJobFn = vi.fn(() => createJob());
+      const processReferences = vi.fn(async () => ({ augmentedPrompt: 'x', persistedRefs: [] }));
+      const intake = createPersistentJobIntake({
+        createJobId: () => 'job-new',
+        createJob: createJobFn,
+        updateJobFinalPrompt: () => null,
+        processReferences,
+        hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+        readCodexTransport: () => 'codex_app_server',
+        readLibraryDir: () => 'D:/library',
+        resolveProviderExecutionBlocker: () => null,
+        isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+        publishEvent: () => ({ type: 'job.created', payload: {}, createdAt: '' }),
+        logJobCreated: () => {},
+        enqueueJob: () => {},
+      });
 
-    const result = await intake.createJob({
-      kind: 'image_generate',
-      prompt: 'draw',
-      sourceSpec: { prompt: 'draw' } as GenerationTaskSpec,
-      references: [
-        {
-          name: 'ref.png',
-          dataUrl: `data:image/png;base64,${Buffer.from('abc').toString('base64')}`,
-          strength: 0.5,
+      const result = await intake.createJob({
+        kind: 'image_generate',
+        prompt: 'draw',
+        sourceSpec,
+        references: [
+          {
+            name: 'ref.png',
+            dataUrl: `data:image/png;base64,${Buffer.from('abc').toString('base64')}`,
+            strength: 0.5,
+          },
+        ],
+      });
+
+      expect(result).toEqual({
+        ok: false,
+        error: {
+          status: 400,
+          body: expect.objectContaining({
+            error: 'Invalid Generation Task Spec',
+            code: 'invalid_task_spec',
+          }),
         },
-      ],
-    });
-
-    expect(result).toEqual({
-      ok: false,
-      error: {
-        status: 400,
-        body: expect.objectContaining({
-          error: 'Invalid Generation Task Spec',
-          code: 'invalid_task_spec',
-        }),
-      },
-    });
-    expect(processReferences).not.toHaveBeenCalled();
-  });
+      });
+      expect(processReferences).not.toHaveBeenCalled();
+      expect(createJobFn).not.toHaveBeenCalled();
+    },
+  );
 
   it('rejects hydrated provider assets outside the captured Library Context', async () => {
     const createJobFn = vi.fn();

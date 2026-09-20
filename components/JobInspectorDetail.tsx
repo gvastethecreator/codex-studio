@@ -665,7 +665,7 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
               Accepted execution:{' '}
               {detail.job.execution?.providerOptions?.codex
                 ? describeCodexExecution(detail.job.execution.providerOptions.codex)
-                : `${detail.job.providerId ?? 'Provider unavailable'} · transport not recorded`}
+                : `${detail.job.providerId ?? 'Provider'} · ${detail.job.status === 'queued' || detail.job.status === 'running' ? 'execution details pending' : 'transport not recorded'}`}
             </p>
             <details className="mt-3 text-xs text-[color:var(--wb-muted)]">
               <summary className="cursor-pointer">Execution details</summary>
@@ -730,7 +730,11 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
             <div className="flex items-center justify-between border-b border-[color:var(--wb-line)] px-4 py-3">
               <div className="flex items-center gap-2 text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
                 <ImageIcon size={14} className="text-[color:var(--wb-success)]" />
-                <span>Returned image</span>
+                <span>
+                  {detail.job.status === 'queued' || detail.job.status === 'running'
+                    ? 'Output pending'
+                    : 'Returned image'}
+                </span>
               </div>
               <span
                 className={cn(
@@ -754,8 +758,10 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                   decoding="async"
                 />
               ) : (
-                <div className="flex h-[320px] items-center justify-center text-sm text-[color:var(--wb-muted)]">
-                  No returned image available.
+                <div className="flex min-h-20 items-center justify-center p-4 text-sm text-[color:var(--wb-muted)]">
+                  {detail.job.status === 'queued' || detail.job.status === 'running'
+                    ? 'The image will appear here when the provider returns it.'
+                    : 'This job returned no image.'}
                 </div>
               )}
             </div>
@@ -766,7 +772,11 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                   {outputName}
                 </p>
                 <p className="mt-1 text-[11px] text-[color:var(--wb-muted)]">
-                  {outputMeta.length > 0 ? outputMeta.join(' · ') : 'No output metadata available'}
+                  {outputMeta.length > 0
+                    ? outputMeta.join(' · ')
+                    : detail.job.status === 'queued' || detail.job.status === 'running'
+                      ? 'Details appear when the output arrives'
+                      : 'No output metadata available'}
                 </p>
               </div>
               {primaryOutput?.href ? (

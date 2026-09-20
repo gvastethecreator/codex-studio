@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1",
+  "export_id": "replace-project-and-run-id",
+  "created_at": "2026-09-18T00:00:00Z",
+  "project": {
+    "name": "REEMPLAZAR",
+    "revision": null,
+    "working_tree": "unknown",
+    "source_fingerprint": null
+  },
+  "entrypoint": "index.html",
+  "portability": {
+    "target": "file",
+    "verified": false,
+    "notes": [
+      "PLANTILLA: todavía no hay exportación ni pruebas."
+    ]
+  },
+  "scope": {
+    "coverage": "partial",
+    "included": [
+      "replace-view-id"
+    ],
+    "excluded": []
+  },
+  "views": [
+    {
+      "id": "replace-view-id",
+      "title": "REEMPLAZAR",
+      "source_refs": [],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html#replace-view-id/ready",
+          "render": "original-components",
+          "behavior": "simulated",
+          "test": "not_run",
+          "evidence": []
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "portability": {
+      "status": "not_run",
+      "evidence": [],
+      "note": "Todavía no ejecutado."
+    },
+    "fidelity": {
+      "status": "not_run",
+      "evidence": [],
+      "note": "Todavía no ejecutado."
+    },
+    "interactions": {
+      "status": "not_run",
+      "evidence": [],
+      "note": "Todavía no ejecutado."
+    },
+    "privacy": {
+      "status": "not_run",
+      "evidence": [],
+      "note": "Todavía no ejecutado."
+    }
+  },
+  "artifacts": {
+    "start_here": "START-HERE.md",
+    "review_prompt": "REVIEW-PROMPT.md",
+    "product": "context/product.md",
+    "design_system": "context/design-system.md",
+    "coverage": "context/coverage.md",
+    "source_map": "context/source-map.json",
+    "limitations": "context/limitations.md",
+    "qa": "evidence/qa.json"
+  },
+  "files": [
+    "index.html",
+    "demo/index.html",
+    "START-HERE.md",
+    "REVIEW-PROMPT.md",
+    "context/product.md",
+    "context/design-system.md",
+    "context/coverage.md",
+    "context/source-map.json",
+    "context/limitations.md",
+    "evidence/qa.json",
+    "context/interface-inventory.json",
+    "context/changes.md",
+    "AGENTS.md",
+    "agent/brief.json",
+    "agent/file-index.json",
+    "agent/review-plan.json",
+    "agent/review.schema.json",
+    "agent/review-contract.md"
+  ],
+  "delivery": {
+    "format": "interface-handoff-delivery/1.0",
+    "generator_version": "0.4.0",
+    "profile": "agent",
+    "agent_ready": true,
+    "agent_entrypoint": "AGENTS.md",
+    "brief": "agent/brief.json",
+    "file_index": "agent/file-index.json",
+    "review_plan": "agent/review-plan.json",
+    "review_schema": "agent/review.schema.json",
+    "review_contract": "agent/review-contract.md",
+    "human_entrypoint": null,
+    "content_fingerprint": "0000000000000000000000000000000000000000000000000000000000000000"
+  }
+}

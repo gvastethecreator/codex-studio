@@ -7,6 +7,9 @@ import { FormatPreview } from '../FormatPreview';
 import { ImageGrid } from '../ImageGrid';
 
 export interface StudioGridSurfaceProps {
+  searchQuery?: string;
+  onClearSearch?: () => void;
+  onCreate?: () => void;
   activeWorkspaceId: string;
   allImages: GeneratedImage[];
   imagesWithConfig: GeneratedImageWithConfig[];
@@ -49,6 +52,9 @@ export interface StudioGridSurfaceProps {
 }
 
 export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
+  searchQuery,
+  onClearSearch,
+  onCreate,
   activeWorkspaceId,
   allImages,
   imagesWithConfig,
@@ -123,6 +129,9 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
       <div className="flex-1 relative min-h-0">
         <ErrorBoundary fallbackMessage="Failed to render the image grid.">
           <ImageGrid
+            searchQuery={searchQuery}
+            onClearSearch={onClearSearch}
+            onCreate={onCreate}
             key={activeWorkspaceId}
             images={imagesWithConfig}
             selectedImageIds={selectedImageIds}

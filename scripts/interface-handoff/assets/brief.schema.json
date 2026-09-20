@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Inspected interface handoff brief",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "export_id",
+    "language",
+    "product_summary",
+    "audience",
+    "primary_task",
+    "review_focus",
+    "preserve",
+    "known_limitations",
+    "journeys"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "export_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "language": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "product_summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "audience": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "primary_task": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4000
+    },
+    "review_focus": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4000
+      },
+      "minItems": 1
+    },
+    "preserve": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4000
+      }
+    },
+    "known_limitations": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 4000
+      }
+    },
+    "journeys": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "view_id",
+          "state_id",
+          "steps",
+          "expected",
+          "reset"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "view_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "state_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "steps": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            },
+            "minItems": 1
+          },
+          "expected": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          },
+          "reset": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 4000
+          }
+        }
+      }
+    }
+  }
+}

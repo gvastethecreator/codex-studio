@@ -895,90 +895,99 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   </div>
 
                   <div className="min-w-0 lg:border-l lg:border-[color:var(--wb-line)] lg:pl-7 xl:min-h-0 xl:pl-6">
-                    <p className="text-[11px] font-semibold tracking-[0.24em] text-blue-300 xl:text-[length:var(--wbp-label)]">
-                      Local environment check
-                    </p>
-                    <div className="mt-4 xl:mt-3">
-                      {probe ? (
-                        probe.checks.map((row) => (
-                          <CheckRow
-                            key={row.id}
-                            icon={checkIcon(row.id)}
-                            title={row.label}
-                            detail={row.detail}
-                            meta={row.meta}
-                            status={row.ready ? 'Ready' : 'Needs attention'}
-                            tone={checkTone(row.ready, backendReachable)}
-                          />
-                        ))
-                      ) : (
-                        <>
-                          <CheckRow
-                            icon={<Folder size={18} />}
-                            title="Studio Library"
-                            detail={
-                              libraryReady
-                                ? 'Your assets and generations are stored locally.'
-                                : 'Repair the local library path or permissions.'
-                            }
-                            meta={health?.libraryDir || 'path not set'}
-                            status={libraryReady ? 'Ready' : 'Needs attention'}
-                            tone={libraryTone}
-                          />
-                          <CheckRow
-                            icon={<Sparkles size={18} />}
-                            title="ChatGPT Codex login"
-                            detail={sessionDetail}
-                            meta={localCodexSession?.authLabel}
-                            status={codexReady ? 'Ready' : 'Action needed'}
-                            tone={sessionTone}
-                          />
-                          <CheckRow
-                            icon={<Terminal size={18} />}
-                            title="app-server connection"
-                            detail={appServerDetail}
-                            meta={appServerReady ? health?.appServer.wsUrl : apiBase}
-                            status={
-                              appServerReady
-                                ? 'Running'
-                                : codexRuntimeBlocked
-                                  ? 'Blocked'
-                                  : 'Not running'
-                            }
-                            tone={serverTone}
-                          />
-                        </>
-                      )}
-                    </div>
-                    <OnboardingLogPanel lines={logLines} />
-                    <CodexRuntimeRepairCard
-                      health={health}
-                      subscriptionReady={subscriptionReady}
-                      onRefresh={onRefresh}
-                    />
-                    {probe?.grok ? (
-                      <OptionalGrokRow
-                        row={probe.grok}
-                        busy={false}
-                        onInstall={() => {
-                          window.open(ONBOARDING_GROK_INSTALL_URL, '_blank', 'noopener,noreferrer');
-                        }}
-                        onLogin={onOpenSettings}
+                    <details open={isReady ? undefined : true}>
+                      <summary className="cursor-pointer text-sm text-[color:var(--wb-muted)]">
+                        {isReady ? 'All checks passed · Setup details' : 'Setup requirements'}
+                      </summary>
+                      <p className="mt-3 text-xs font-semibold text-[color:var(--wb-muted)]">
+                        Local environment check
+                      </p>
+                      <div className="mt-4 xl:mt-3">
+                        {probe ? (
+                          probe.checks.map((row) => (
+                            <CheckRow
+                              key={row.id}
+                              icon={checkIcon(row.id)}
+                              title={row.label}
+                              detail={row.detail}
+                              meta={row.meta}
+                              status={row.ready ? 'Ready' : 'Needs attention'}
+                              tone={checkTone(row.ready, backendReachable)}
+                            />
+                          ))
+                        ) : (
+                          <>
+                            <CheckRow
+                              icon={<Folder size={18} />}
+                              title="Studio Library"
+                              detail={
+                                libraryReady
+                                  ? 'Your assets and generations are stored locally.'
+                                  : 'Repair the local library path or permissions.'
+                              }
+                              meta={health?.libraryDir || 'path not set'}
+                              status={libraryReady ? 'Ready' : 'Needs attention'}
+                              tone={libraryTone}
+                            />
+                            <CheckRow
+                              icon={<Sparkles size={18} />}
+                              title="ChatGPT Codex login"
+                              detail={sessionDetail}
+                              meta={localCodexSession?.authLabel}
+                              status={codexReady ? 'Ready' : 'Action needed'}
+                              tone={sessionTone}
+                            />
+                            <CheckRow
+                              icon={<Terminal size={18} />}
+                              title="app-server connection"
+                              detail={appServerDetail}
+                              meta={appServerReady ? health?.appServer.wsUrl : apiBase}
+                              status={
+                                appServerReady
+                                  ? 'Running'
+                                  : codexRuntimeBlocked
+                                    ? 'Blocked'
+                                    : 'Not running'
+                              }
+                              tone={serverTone}
+                            />
+                          </>
+                        )}
+                      </div>
+                      <OnboardingLogPanel lines={logLines} />
+                      <CodexRuntimeRepairCard
+                        health={health}
+                        subscriptionReady={subscriptionReady}
+                        onRefresh={onRefresh}
                       />
-                    ) : null}
-                    {showInAppSetup ? (
-                      <InAppSetupForm
-                        libraryPath={libraryPathDraft}
-                        consent={consent}
-                        confirmCloudSync={confirmCloudSync}
-                        cloudProvider={cloudProvider}
-                        error={setupError}
-                        onLibraryPathChange={setLibraryPathDraft}
-                        onConsentChange={setConsent}
-                        onConfirmCloudSyncChange={setConfirmCloudSync}
-                      />
-                    ) : null}
-                    <SetupPromptCard prompt={setupPrompt} />
+                      {probe?.grok ? (
+                        <OptionalGrokRow
+                          row={probe.grok}
+                          busy={false}
+                          onInstall={() => {
+                            window.open(
+                              ONBOARDING_GROK_INSTALL_URL,
+                              '_blank',
+                              'noopener,noreferrer',
+                            );
+                          }}
+                          onLogin={onOpenSettings}
+                        />
+                      ) : null}
+                      {showInAppSetup ? (
+                        <InAppSetupForm
+                          libraryPath={libraryPathDraft}
+                          consent={consent}
+                          confirmCloudSync={confirmCloudSync}
+                          cloudProvider={cloudProvider}
+                          error={setupError}
+                          onLibraryPathChange={setLibraryPathDraft}
+                          onConsentChange={setConsent}
+                          onConfirmCloudSyncChange={setConfirmCloudSync}
+                        />
+                      ) : null}
+                      <SetupPromptCard prompt={setupPrompt} />
+                    </details>
                   </div>
                 </section>
               </div>
@@ -994,7 +1003,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       (primaryAction?.type === 'start_app_server' && isStartingAppServer) ||
                       (primaryAction?.type === 'in_app_setup' && (!canSubmitSetup || setupBusy))
                     }
-                    className="inline-flex items-center justify-center gap-3 rounded-[var(--wb-radius)] bg-blue-600 px-7 py-3 text-sm font-semibold text-[color:var(--wb-ink)] shadow-[0_14px_40px_rgba(37,99,235,0.28)] transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-60 xl:px-5 xl:py-2.5"
+                    className="inline-flex items-center justify-center gap-3 rounded-[var(--wb-radius)] bg-[color:var(--wb-accent)] px-7 py-3 text-sm font-semibold text-[color:var(--wb-ink)] shadow-[0_14px_40px_rgba(37,99,235,0.28)] transition-colors hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60 xl:px-5 xl:py-2.5"
                   >
                     {primaryAction?.type === 'start_app_server' && isStartingAppServer
                       ? 'Starting'

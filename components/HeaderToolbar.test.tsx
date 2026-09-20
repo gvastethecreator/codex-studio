@@ -100,14 +100,14 @@ describe('HeaderToolbar chrome', () => {
     renderHeader();
 
     expect(screen.getByRole('button', { name: 'Open create workspace' })).toBeTruthy();
-    expect(screen.getByRole('button', { name: 'Go to studio' })).toBeTruthy();
+    expect(screen.getByRole('button', { name: 'Open Library' })).toBeTruthy();
     expect(screen.getByRole('button', { name: /open workspace switcher: shots/i })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Workflow: Default' })).toBeTruthy();
     expect(document.querySelector('.create-workflow-block.is-header')).toBeTruthy();
     const nav = screen.getByRole('navigation', { name: 'Studio navigation' });
     expect(
       [...nav.querySelectorAll('button')].map((button) => button.getAttribute('aria-label')),
-    ).toEqual(['Open create workspace', 'Workflow: Default', 'Go to studio']);
+    ).toEqual(['Open create workspace', 'Workflow: Default', 'Open Library']);
     expect(screen.queryByRole('button', { name: /change provider/i })).toBeNull();
     expect(screen.queryByRole('button', { name: /open jobs/i })).toBeNull();
     expect(document.querySelector('.studio-toolbar-shell.studio-bar')).toBeTruthy();

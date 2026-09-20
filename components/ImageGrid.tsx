@@ -349,7 +349,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             onDelete(image.id);
           }}
           icon={<Trash2 size={14} />}
-          label="Delete"
+          label="Archive"
           variant="danger"
         />
       </div>
@@ -569,7 +569,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                   onDelete(image.id);
                 }}
                 icon={<Trash2 size={14} />}
-                label="Delete"
+                label="Archive"
                 variant="danger"
               />
             </div>
@@ -716,6 +716,9 @@ export interface ImageGridProps {
   onDownloadAll: (images: GeneratedImageWithConfig[]) => void;
   onDeleteSelected: (images: GeneratedImageWithConfig[]) => void;
   onClearWorkspace: () => void;
+  searchQuery?: string;
+  onClearSearch?: () => void;
+  onCreate?: () => void;
   catalogTotal?: number;
   hasMore?: boolean;
   isCatalogLoading?: boolean;
@@ -764,6 +767,9 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     onDownloadAll,
     onDeleteSelected,
     onClearWorkspace,
+    searchQuery = '',
+    onClearSearch,
+    onCreate,
     catalogTotal,
     hasMore = false,
     isCatalogLoading = false,
@@ -1134,7 +1140,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
         </div>
       );
 
-    if (sourceImageCount === 0 && generationPlaceholders.length === 0) {
+    if (imageCount === 0 && generationPlaceholders.length === 0) {
       return (
         <div className="flex h-full w-full items-center justify-center px-6 text-center">
           {catalogError ? (
@@ -1151,13 +1157,52 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                 </button>
               )}
             </div>
-          ) : null}
+          ) : isCatalogLoading ? (
+            <p role="status">Loading images…</p>
+          ) : (
+            <div className="max-w-md space-y-3">
+              <h2 className="text-lg font-semibold">
+                {searchQuery || showFavoritesOnly
+                  ? 'No matching images'
+                  : 'Your library starts here'}
+              </h2>
+              <p className="text-sm text-[color:var(--wb-muted)]">
+                {searchQuery
+                  ? `No results for “${searchQuery}” in this workspace.`
+                  : showFavoritesOnly
+                    ? 'No favorite images in this view.'
+                    : 'Create an image to add your first result to this workspace.'}
+              </p>
+              {searchQuery || showFavoritesOnly ? (
+                <button
+                  type="button"
+                  className="studio-ghost-control px-4 py-2"
+                  onClick={() => {
+                    onClearSearch?.();
+                    setShowFavoritesOnly(false);
+                  }}
+                >
+                  Clear filters
+                </button>
+              ) : (
+                <button type="button" className="studio-ghost-control px-4 py-2" onClick={onCreate}>
+                  Create an image
+                </button>
+              )}
+            </div>
+          )}
         </div>
       );
     }
 
     return (
       <div className="w-full h-full relative">
+        <p
+          className="absolute bottom-2 left-3 z-30 rounded bg-[color:var(--wb-panel)] px-2 py-1 text-xs"
+          role="status"
+        >
+          {selectedImageCount} selected · {imageCount} loaded · {totalCount} results
+        </p>
         <div className="absolute left-3 right-3 top-3 z-30 flex items-center justify-end gap-2 sm:left-auto sm:right-8 sm:top-4">
           {sourceImageCount > 0 && (
             <div className="flex items-center gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1 shadow-2xl backdrop-blur-md">
@@ -1171,7 +1216,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                       <Square size={16} />
                     )
                   }
-                  label={isAllSelected ? 'Deselect' : 'Select loaded images'}
+                  label={isAllSelected ? 'Deselect' : `Select loaded images (${imageCount})`}
                   isActive={isAllSelected}
                   tooltipPosition="bottom"
                 />
@@ -1196,13 +1241,13 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   <ActionButton
                     onClick={() => onDownloadAll(sortedImages)}
                     icon={<Download size={16} />}
-                    label="Download All"
+                    label={`Download ${imageCount} images`}
                     tooltipPosition="bottom"
                   />
                   <ActionButton
                     onClick={onClearWorkspace}
                     icon={<Trash2 size={16} />}
-                    label="Clear Workspace"
+                    label="Archive workspace images"
                     variant="danger"
                     tooltipPosition="bottom"
                   />
@@ -1213,13 +1258,13 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   <ActionButton
                     onClick={() => onDownloadSelected(sortedImages)}
                     icon={<Download size={16} />}
-                    label="Download Selected"
+                    label={`Download selected (${selectedImageCount})`}
                     tooltipPosition="bottom"
                   />
                   <ActionButton
                     onClick={() => onDeleteSelected(sortedImages)}
                     icon={<Trash2 size={16} />}
-                    label="Purge Selected"
+                    label={`Archive selected (${selectedImageCount})`}
                     variant="danger"
                     tooltipPosition="bottom"
                   />

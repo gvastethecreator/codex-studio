@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { Suspense } from 'react';
 
 import { ErrorBoundary } from '../ErrorBoundary';
@@ -17,7 +18,7 @@ export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = (
   emptyTrash,
 }) => {
   return (
-    <>
+    <AnimatePresence>
       {isTrashModalOpen && (
         <ErrorBoundary fallbackMessage="Could not load archived images.">
           <Suspense
@@ -39,6 +40,6 @@ export const StudioWorkspaceOverlays: React.FC<StudioWorkspaceOverlaysProps> = (
           </Suspense>
         </ErrorBoundary>
       )}
-    </>
+    </AnimatePresence>
   );
 };

@@ -6,6 +6,8 @@ import React, {
   useMemo,
   useRef,
   useCallback,
+  useState,
+  useEffectEvent,
   type ComponentPropsWithoutRef,
   type PropsWithChildren,
   type ReactNode,
@@ -55,6 +57,7 @@ type MotionProps = {
 type PresenceConfig = {
   initial: boolean;
   custom?: unknown;
+  present?: boolean;
 };
 
 type MotionRenderableState = false | string | MotionState | undefined;
@@ -198,7 +201,7 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
   return function GsapMotionComponent({
     initial,
     animate,
-    exit: _exit,
+    exit,
     variants,
     custom,
     transition,
@@ -218,8 +221,11 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
       [initial, variants, resolvedCustom],
     );
     const animateState = useMemo(
-      () => stripTransition(resolveState(animate, variants, resolvedCustom)),
-      [animate, variants, resolvedCustom],
+      () =>
+        stripTransition(
+          resolveState(presenceConfig.present === false ? exit : animate, variants, resolvedCustom),
+        ),
+      [animate, exit, variants, resolvedCustom, presenceConfig.present],
     );
     const mergedTransition = useMemo(
       () => normalizeTransition(animateState?.transition ?? transition),
@@ -246,8 +252,14 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
         if (isCancelled || !element || !animateState) return;
 
         const runAnimation = () => {
-          const shouldSkipInitial = !hasAnimatedRef.current && presenceConfig.initial === false;
-          const startValues = shouldSkipInitial ? animateState.values : initialState?.values;
+          const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+          const shouldSkipInitial =
+            reduce || (!hasAnimatedRef.current && presenceConfig.initial === false);
+          const startValues = shouldSkipInitial
+            ? animateState.values
+            : !hasAnimatedRef.current
+              ? initialState?.values
+              : null;
 
           if (startValues) {
             gsap.set(element, startValues as Record<string, unknown>);
@@ -256,8 +268,12 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
           if (!shouldSkipInitial || hasAnimatedRef.current) {
             tween = gsap.to(element, {
               ...(animateState.values as Record<string, unknown>),
-              duration: mergedTransition.duration,
-              delay: mergedTransition.delay,
+              duration: reduce
+                ? 0
+                : presenceConfig.present === false
+                  ? 0.12
+                  : Math.min(mergedTransition.duration, 0.25),
+              delay: reduce ? 0 : mergedTransition.delay,
               ease: mergedTransition.ease,
               overwrite: 'auto',
               onComplete: onAnimationComplete,
@@ -285,6 +301,7 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
       animateStateKey,
       mergedTransitionKey,
       presenceConfig.initial,
+      presenceConfig.present,
       onAnimationComplete,
     ]);
 
@@ -295,6 +312,7 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
           {...(rest as ComponentPropsWithoutRef<'button'>)}
           ref={setRefs as Ref<HTMLButtonElement>}
           style={style}
+          data-motion-surface
         />
       );
     }
@@ -304,30 +322,87 @@ function createMotionComponent<Tag extends MotionTag>(tagName: Tag) {
         {...(rest as ComponentPropsWithoutRef<'div'>)}
         ref={setRefs as Ref<HTMLDivElement>}
         style={style}
+        data-motion-surface
       />
     );
   };
 }
 
-/**
- * Minimal presence wrapper backed by context so existing components can opt out
- * of the first mount animation while the project transitions away from
- * `motion/react`.
- */
+function PresenceItem({
+  children,
+  present,
+  onExit,
+  initial,
+  custom,
+}: PropsWithChildren<PresenceConfig & { present: boolean; onExit: () => void }>) {
+  const parent = use(PresenceConfigContext);
+  const finish = useEffectEvent(onExit);
+  useEffect(() => {
+    if (present) return;
+    const duration = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 0 : 120;
+    const timer = window.setTimeout(finish, duration);
+    return () => window.clearTimeout(timer);
+  }, [present]);
+  const active = present && parent.present !== false;
+  const value = useMemo(() => ({ initial, custom, present: active }), [initial, custom, active]);
+  return (
+    <PresenceConfigContext.Provider value={value}>
+      <div
+        className="studio-presence"
+        data-state={present ? 'open' : 'closed'}
+        inert={!present}
+        aria-hidden={!present || undefined}
+      >
+        {children}
+      </div>
+    </PresenceConfigContext.Provider>
+  );
+}
+
+/** Retain removed keyed surfaces for their exit; hidden surfaces cannot receive input. */
 export function AnimatePresence({
   children,
   initial = true,
   custom,
+  mode = 'sync',
 }: PropsWithChildren<{
   initial?: boolean;
   mode?: 'wait' | 'sync' | 'popLayout';
   custom?: unknown;
 }>) {
-  const value = useMemo(() => ({ initial, custom }), [initial, custom]);
+  const [previous, setPrevious] = useState(children);
+  const [retained, setRetained] = useState(() =>
+    React.Children.toArray(children).filter(React.isValidElement),
+  );
+  const current = React.Children.toArray(children).filter(React.isValidElement);
+  const waiting =
+    mode === 'wait' && retained.some((child) => !current.some((item) => item.key === child.key));
+  if (previous !== children) {
+    setPrevious(children);
+    setRetained([
+      ...current,
+      ...retained.filter((child) => !current.some((next) => next.key === child.key)),
+    ]);
+  }
   return (
-    <PresenceConfigContext.Provider value={value}>
-      <>{children}</>
-    </PresenceConfigContext.Provider>
+    <>
+      {retained
+        .filter((child) => !waiting || !current.some((item) => item.key === child.key))
+        .map((child) => {
+          const next = current.find((item) => item.key === child.key);
+          return (
+            <PresenceItem
+              key={child.key}
+              initial={initial}
+              custom={custom}
+              present={Boolean(next)}
+              onExit={() => setRetained((items) => items.filter((item) => item.key !== child.key))}
+            >
+              {next ?? child}
+            </PresenceItem>
+          );
+        })}
+    </>
   );
 }
 

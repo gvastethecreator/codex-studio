@@ -13,30 +13,7 @@ interface ControlDropdownProps {
   label: string;
   options: string[];
   onSelect: (v: string) => void;
-  activeColor?: string;
 }
-
-// Static color mapping for Tailwind classes
-const colorMap: Record<string, { text: string; bg: string; border: string }> = {
-  accent: { text: 'text-accent-400', bg: 'bg-accent-500/10', border: 'border-accent-500/2' },
-  rose: {
-    text: 'text-[color:var(--wb-danger)]',
-    bg: 'bg-rose-500/10',
-    border: 'border-rose-500/2',
-  },
-  emerald: {
-    text: 'text-[color:var(--wb-success)]',
-    bg: 'bg-emerald-500/10',
-    border: 'border-emerald-500/2',
-  },
-  blue: { text: 'text-blue-400', bg: 'bg-blue-500/10', border: 'border-blue-500/2' },
-  amber: {
-    text: 'text-[color:var(--wb-warning)]',
-    bg: 'bg-amber-500/10',
-    border: 'border-amber-500/2',
-  },
-  violet: { text: 'text-violet-400', bg: 'bg-violet-500/10', border: 'border-violet-500/2' },
-};
 
 export const ControlDropdown: React.FC<ControlDropdownProps> = ({
   title,
@@ -44,14 +21,11 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
   label,
   options,
   onSelect,
-  activeColor = 'accent',
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const labelId = useId();
   const menuId = useId();
-
-  const activeStyle = colorMap[activeColor] || colorMap['accent'];
 
   return (
     <div className="flex flex-col gap-1.5">
@@ -120,7 +94,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
                 }}
                 className={`flex min-h-10 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] border px-3 py-2.5 text-left text-[length:var(--wbp-label)] font-bold transition-[background-color,border-color,color,transform] ${
                   selected
-                    ? `${activeStyle.text} ${activeStyle.bg} ${activeStyle.border}`
+                    ? 'text-[color:var(--wb-accent)] bg-[color-mix(in_srgb,var(--wb-accent)_12%,transparent)] border-[color:var(--wb-accent)]'
                     : 'border-transparent text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] hover:text-[color:var(--wb-ink)]'
                 }`}
               >

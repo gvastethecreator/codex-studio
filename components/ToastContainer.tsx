@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../lib/gsapMotion';
 import React from 'react';
 import { useToastList, useToastUi } from '../contexts/ToastUiContext';
 import Toast from './Toast';
@@ -11,10 +12,12 @@ const ToastContainer: React.FC = () => {
   const { removeToast } = useToastUi();
 
   return (
-    <div className="fixed top-4 right-4 z-50 w-full max-w-sm space-y-3">
-      {toasts.map((toast) => (
-        <Toast key={toast.id} toast={toast} onDismiss={removeToast} />
-      ))}
+    <div className="fixed top-4 right-4 z-50 flex w-full max-w-sm flex-col gap-3">
+      <AnimatePresence>
+        {toasts.map((toast) => (
+          <Toast key={toast.id} toast={toast} onDismiss={removeToast} />
+        ))}
+      </AnimatePresence>
     </div>
   );
 };

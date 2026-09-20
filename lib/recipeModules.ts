@@ -117,6 +117,7 @@ const REMASTER_OPTIONS = {
     'Oil Detail',
   ],
   lighting: [
+    'Preserve Lighting',
     'Lighting Correction',
     'Volumetric Light',
     'Studio Lighting',
@@ -124,10 +125,22 @@ const REMASTER_OPTIONS = {
     'Golden Hour',
     'Dramatic Contrast',
   ],
-  camera: ['Sharp Focus', 'Depth of Field', 'Texture Enhancement', 'Wide Angle'],
-  anatomy: ['Fix Anatomy', 'Improve Faces and Eyes', 'Fix Hands', 'Skin Detail'],
+  camera: ['Preserve Detail', 'Sharp Focus', 'Depth of Field', 'Texture Enhancement', 'Wide Angle'],
+  anatomy: [
+    'Preserve Geometry and Identity',
+    'Fix Anatomy',
+    'Improve Faces and Eyes',
+    'Fix Hands',
+    'Skin Detail',
+  ],
   text: ['Keep Original', 'Remove Text', 'Rewrite Logically'],
-  color: ['Expanded Dynamic Range', 'Natural Colors', 'Deep Vibrance', 'Color Correction'],
+  color: [
+    'Preserve Colors',
+    'Expanded Dynamic Range',
+    'Natural Colors',
+    'Deep Vibrance',
+    'Color Correction',
+  ],
 } as const;
 
 const SPRITESHEET_OPTIONS = {
@@ -535,7 +548,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         kind: 'enum',
         control: 'select',
         group: 'aesthetic',
-        defaultValue: 'Realistic Reconstruction',
+        defaultValue: 'Archive Restoration',
         options: options(REMASTER_OPTIONS.style),
       },
       {
@@ -544,7 +557,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         kind: 'enum',
         control: 'select',
         group: 'look',
-        defaultValue: 'Lighting Correction',
+        defaultValue: 'Preserve Lighting',
         options: options(REMASTER_OPTIONS.lighting),
       },
       {
@@ -553,7 +566,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         kind: 'enum',
         control: 'select',
         group: 'look',
-        defaultValue: 'Sharp Focus',
+        defaultValue: 'Preserve Detail',
         options: options(REMASTER_OPTIONS.camera),
       },
       {
@@ -562,7 +575,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         kind: 'enum',
         control: 'select',
         group: 'correction',
-        defaultValue: 'Fix Anatomy',
+        defaultValue: 'Preserve Geometry and Identity',
         options: options(REMASTER_OPTIONS.anatomy),
       },
       {
@@ -571,7 +584,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         kind: 'enum',
         control: 'select',
         group: 'correction',
-        defaultValue: 'Rewrite Logically',
+        defaultValue: 'Keep Original',
         options: options(REMASTER_OPTIONS.text),
       },
       {
@@ -580,7 +593,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         kind: 'enum',
         control: 'select',
         group: 'look',
-        defaultValue: 'Expanded Dynamic Range',
+        defaultValue: 'Preserve Colors',
         options: options(REMASTER_OPTIONS.color),
       },
       {
@@ -589,7 +602,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         kind: 'number',
         control: 'slider',
         group: 'source',
-        defaultValue: 35,
+        defaultValue: 100,
         min: 0,
         max: 100,
         step: 1,

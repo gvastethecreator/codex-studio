@@ -1,0 +1,435 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent reconciliation; helper validates structure and content identity, not semantic truth",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project_id",
+    "status",
+    "created_at",
+    "previous_state_sha256",
+    "previous_export_id",
+    "inputs_fingerprint",
+    "discovery_fingerprint",
+    "inventory_sha256",
+    "minimum_strategy",
+    "strategy",
+    "inventory_delta",
+    "decisions",
+    "unresolved",
+    "assessments"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "pending",
+        "resolved"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "previous_state_sha256": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "previous_export_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "inputs_fingerprint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "discovery_fingerprint": {
+      "type": "string",
+      "minLength": 1
+    },
+    "inventory_sha256": {
+      "type": "string",
+      "minLength": 1
+    },
+    "minimum_strategy": {
+      "enum": [
+        "reuse",
+        "incremental",
+        "full"
+      ]
+    },
+    "strategy": {
+      "enum": [
+        "reuse",
+        "incremental",
+        "full"
+      ]
+    },
+    "inventory_delta": {
+      "type": "object"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "change",
+          "watched",
+          "disposition",
+          "reason"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+          },
+          "change": {
+            "enum": [
+              "added",
+              "modified",
+              "removed"
+            ]
+          },
+          "watched": {
+            "type": "boolean"
+          },
+          "disposition": {
+            "enum": [
+              "pending",
+              "adapted",
+              "covered",
+              "unrelated",
+              "retired"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "assessments": {
+      "type": "object",
+      "required": [
+        "current_inventory",
+        "scope_and_dependencies",
+        "exporter_and_adapters",
+        "scenarios_and_fixtures",
+        "capture_and_checks",
+        "documentation",
+        "stale_artifacts"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "current_inventory": {
+          "type": "object",
+          "required": [
+            "status",
+            "basis",
+            "evidence_refs",
+            "note"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "resolved"
+              ]
+            },
+            "basis": {
+              "enum": [
+                "source-inspection",
+                "typecheck",
+                "runtime",
+                "reused-inspection"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "source_export_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "scope_and_dependencies": {
+          "type": "object",
+          "required": [
+            "status",
+            "basis",
+            "evidence_refs",
+            "note"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "resolved"
+              ]
+            },
+            "basis": {
+              "enum": [
+                "source-inspection",
+                "typecheck",
+                "runtime",
+                "reused-inspection"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "source_export_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "exporter_and_adapters": {
+          "type": "object",
+          "required": [
+            "status",
+            "basis",
+            "evidence_refs",
+            "note"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "resolved"
+              ]
+            },
+            "basis": {
+              "enum": [
+                "source-inspection",
+                "typecheck",
+                "runtime",
+                "reused-inspection"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "source_export_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "scenarios_and_fixtures": {
+          "type": "object",
+          "required": [
+            "status",
+            "basis",
+            "evidence_refs",
+            "note"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "resolved"
+              ]
+            },
+            "basis": {
+              "enum": [
+                "source-inspection",
+                "typecheck",
+                "runtime",
+                "reused-inspection"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "source_export_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "capture_and_checks": {
+          "type": "object",
+          "required": [
+            "status",
+            "basis",
+            "evidence_refs",
+            "note"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "resolved"
+              ]
+            },
+            "basis": {
+              "enum": [
+                "source-inspection",
+                "typecheck",
+                "runtime",
+                "reused-inspection"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "source_export_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "documentation": {
+          "type": "object",
+          "required": [
+            "status",
+            "basis",
+            "evidence_refs",
+            "note"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "resolved"
+              ]
+            },
+            "basis": {
+              "enum": [
+                "source-inspection",
+                "typecheck",
+                "runtime",
+                "reused-inspection"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "source_export_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "stale_artifacts": {
+          "type": "object",
+          "required": [
+            "status",
+            "basis",
+            "evidence_refs",
+            "note"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "status": {
+              "enum": [
+                "pending",
+                "resolved"
+              ]
+            },
+            "basis": {
+              "enum": [
+                "source-inspection",
+                "typecheck",
+                "runtime",
+                "reused-inspection"
+              ]
+            },
+            "evidence_refs": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
+              }
+            },
+            "note": {
+              "type": "string"
+            },
+            "source_export_id": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

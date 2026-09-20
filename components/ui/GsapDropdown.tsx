@@ -114,6 +114,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
     const generatedId = useId();
     const dropdownId = id ?? generatedId;
     const panelRef = useRef<HTMLDivElement | null>(null);
+    const keyboardInput = useRef(Boolean(triggerRef?.current?.matches(':focus-visible')));
     const [isMounted, setIsMounted] = useState(open);
     const [portalStyle, setPortalStyle] = useState<React.CSSProperties | null>(null);
 
@@ -129,6 +130,21 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
     useEffect(() => {
       if (open) setIsMounted(true);
     }, [open]);
+
+    useEffect(() => {
+      const pointer = () => {
+        keyboardInput.current = false;
+      };
+      const keyboard = () => {
+        keyboardInput.current = true;
+      };
+      document.addEventListener('pointerdown', pointer, true);
+      document.addEventListener('keydown', keyboard, true);
+      return () => {
+        document.removeEventListener('pointerdown', pointer, true);
+        document.removeEventListener('keydown', keyboard, true);
+      };
+    }, []);
 
     const updatePortalPosition = useCallback(() => {
       if (!portal || !triggerRef?.current || !panelRef.current || typeof window === 'undefined') {
@@ -196,44 +212,32 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         const panel = panelRef.current;
         if (!panel || !isMounted) return;
 
-        const reduceMotion = prefersReducedMotion();
-        const items = Array.from(panel.querySelectorAll('[data-dropdown-item]'));
-        gsap.killTweensOf([panel, ...items]);
+        const reduceMotion = prefersReducedMotion() || keyboardInput.current;
+        const tokens = getComputedStyle(panel);
+        const duration = (name: string, fallback: number) =>
+          (Number.parseFloat(tokens.getPropertyValue(name)) || fallback) / 1000;
+        gsap.killTweensOf(panel);
 
         if (open) {
-          gsap.set(panel, {
-            autoAlpha: 0,
-            scale: reduceMotion ? 1 : 0.985,
-            y: reduceMotion ? 0 : resolveOffset(placement, true),
-            transformOrigin: resolveTransformOrigin(placement),
-            willChange: 'transform, opacity',
-          });
+          if (!panel.style.opacity)
+            gsap.set(panel, {
+              autoAlpha: 0,
+              scale: reduceMotion ? 1 : 0.985,
+              y: reduceMotion ? 0 : resolveOffset(placement, true),
+              transformOrigin: resolveTransformOrigin(placement),
+              willChange: 'transform, opacity',
+            });
           gsap.to(panel, {
             autoAlpha: 1,
             scale: 1,
             y: 0,
-            duration: reduceMotion ? 0 : 0.18,
+            duration: reduceMotion ? 0 : duration('--dropdown-open-dur', 180),
             ease: 'power3.out',
             overwrite: 'auto',
             clearProps: 'visibility',
             onComplete: () => gsap.set(panel, { willChange: 'auto' }),
           });
 
-          if (!reduceMotion && items.length > 0) {
-            gsap.fromTo(
-              items,
-              { autoAlpha: 0, y: 3 },
-              {
-                autoAlpha: 1,
-                y: 0,
-                duration: 0.16,
-                ease: 'power2.out',
-                stagger: 0.025,
-                overwrite: 'auto',
-                clearProps: 'visibility',
-              },
-            );
-          }
           return;
         }
 
@@ -241,13 +245,13 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
           autoAlpha: 0,
           scale: reduceMotion ? 1 : 0.99,
           y: reduceMotion ? 0 : resolveOffset(placement, false),
-          duration: reduceMotion ? 0 : 0.12,
-          ease: 'power2.in',
+          duration: reduceMotion ? 0 : duration('--dropdown-close-dur', 120),
+          ease: 'power3.out',
           overwrite: 'auto',
           onComplete: () => setIsMounted(false),
         });
       },
-      { dependencies: [isMounted, open, placement], scope: panelRef, revertOnUpdate: true },
+      { dependencies: [isMounted, open, placement], scope: panelRef },
     );
 
     if (!isMounted) return null;
@@ -263,6 +267,8 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         role={role}
         data-gsap-dropdown
         data-state={open ? 'open' : 'closed'}
+        inert={!open}
+        aria-hidden={!open || undefined}
         style={portal ? { ...style, ...portalStyle } : style}
         className={cn(
           ambient.className,

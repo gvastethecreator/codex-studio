@@ -8,13 +8,13 @@ import {
 } from './shared';
 
 function buildRemasterContext(params: RecipeContextParams) {
-  const style = getString(params, 'style', 'Realistic Reconstruction');
-  const lighting = getString(params, 'lighting', 'Lighting Correction');
-  const camera = getString(params, 'camera', 'Sharp Focus');
-  const anatomy = getString(params, 'anatomy', 'Fix Anatomy');
-  const text = getString(params, 'text', 'Rewrite Logically');
-  const color = getString(params, 'color', 'Expanded Dynamic Range');
-  const fidelity = Math.max(0, Math.min(100, getNumber(params, 'fidelity', 35)));
+  const style = getString(params, 'style', 'Archive Restoration');
+  const lighting = getString(params, 'lighting', 'Preserve Lighting');
+  const camera = getString(params, 'camera', 'Preserve Detail');
+  const anatomy = getString(params, 'anatomy', 'Preserve Geometry and Identity');
+  const text = getString(params, 'text', 'Keep Original');
+  const color = getString(params, 'color', 'Preserve Colors');
+  const fidelity = Math.max(0, Math.min(100, getNumber(params, 'fidelity', 100)));
   const adherence = fidelity / 100;
   const creativity = (100 - fidelity) / 100;
 
@@ -28,11 +28,11 @@ function buildRemasterContext(params: RecipeContextParams) {
 
 **Core Directives:**
 - **Style Interpretation:** Apply a '${style}' aesthetic.
-- **Lighting Correction:** Adjust lighting based on '${lighting}'. Favor realistic light falloff and shadow detail.
-- **Anatomical Correction:** ${anatomy}. Reduce visible structural inconsistencies or artifacts where possible.
+- **Lighting:** ${lighting}. Do not relight when preservation is selected.
+- **Geometry and identity:** ${anatomy}. Do not reconstruct anatomy when preservation is selected.
 - **Text Handling:** ${text}.
-- **Lens & Detail:** Focus on '${camera}'. Enhance micro-contrast and edge sharpness.
-- **Color Grading:** Apply '${color}' grading. Balance white levels and enhance tonal range.
+- **Lens & Detail:** ${camera}. Preserve framing and existing detail unless a change is selected.
+- **Color:** ${color}. Do not apply new grading when preservation is selected.
 
 **Fidelity Control:**
 - **Adherence to Original Composition:** ${adherence.toFixed(2)} (High value means stay very close to the source structure and layout).

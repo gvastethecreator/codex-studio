@@ -39,8 +39,8 @@ describe('recipeCatalog', () => {
     });
     expect(RECIPE_CATALOG.find((recipe) => recipe.id === 'remaster')).toMatchObject({
       defaultParams: {
-        style: 'Realistic Reconstruction',
-        fidelity: 35,
+        style: 'Archive Restoration',
+        fidelity: 100,
       },
     });
   });

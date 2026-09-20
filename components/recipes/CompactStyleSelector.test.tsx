@@ -159,6 +159,11 @@ describe('CompactStyleSelector', () => {
     fireEvent.pointerEnter(screen.getByRole('button', { name: 'Add Silver Grain' }));
     fireEvent.keyDown(document, { key: 'Escape' });
     expect(screen.queryByRole('dialog', { name: 'Add styles' })).toBeNull();
+    expect(document.activeElement).toBe(screen.getByRole('button', { name: 'Add a style' }));
+    expect(document.querySelector('.cs-popover')?.hasAttribute('inert')).toBe(true);
+    fireEvent.click(screen.getByRole('button', { name: 'Add a style' }));
+    expect(screen.getByRole('dialog', { name: 'Add styles' }).hasAttribute('inert')).toBe(false);
+    expect(await screen.findByRole('button', { name: 'Add Silver Grain' })).toBeTruthy();
   });
 
   it('keeps the preview visible when moving between presets with the keyboard', async () => {

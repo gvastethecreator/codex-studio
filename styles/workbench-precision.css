@@ -21,8 +21,8 @@
   --wbp-muted: var(--wb-muted, #a4a4a4);
   --wbp-row: 30px;
   --wbp-dial: 86px;
-  --wbp-text: 12px;
-  --wbp-label: 11px;
+  --wbp-text: 13px;
+  --wbp-label: 12px;
   --wbp-thumb: 12px;
   --wbp-gap: 12px;
   --wbp-pad: 18px;
@@ -74,7 +74,7 @@
   --wbp-row: 24px;
   --wbp-dial: 54px;
   --wbp-text: 11px;
-  --wbp-label: 10px;
+  --wbp-label: 12px;
   --wbp-thumb: 10px;
 }
 
@@ -82,8 +82,8 @@
 .wbp[data-size='sm'] {
   --wbp-row: 28px;
   --wbp-dial: 70px;
-  --wbp-text: 12px;
-  --wbp-label: 11px;
+  --wbp-text: 13px;
+  --wbp-label: 12px;
   --wbp-thumb: 11px;
 }
 
@@ -92,7 +92,7 @@
   --wbp-row: 32px;
   --wbp-dial: 90px;
   --wbp-text: 13px;
-  --wbp-label: 11px;
+  --wbp-label: 12px;
   --wbp-thumb: 13px;
 }
 

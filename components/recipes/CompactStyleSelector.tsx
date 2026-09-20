@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../../lib/gsapMotion';
 import {
   IconCheck as Check,
   IconChevronDown as ChevronDown,
@@ -117,6 +118,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   const previewRef = useRef<HTMLDivElement>(null);
   const previewAnchorRef = useRef<HTMLElement | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuHasOpened, setMenuHasOpened] = useState(false);
   const [weightId, setWeightId] = useState<string | null>(null);
   const [query, setQuery] = useState('');
   const [route, setRoute] = useState<CompactStyleRoute>({ view: 'packs' });
@@ -247,6 +249,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   const openMenu = useCallback(() => {
     closeWeight(false);
     closePreview();
+    setMenuHasOpened(true);
     setMenuOpen(true);
   }, [closePreview, closeWeight]);
 
@@ -268,6 +271,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     if (left + width > vw - 8) {
       left = Math.max(8, trayRect.left - width - 8);
     }
+    pop.style.transformOrigin = left >= trayRect.right ? 'top left' : 'top right';
     pop.style.left = `${clamp(left, 8, Math.max(8, vw - width - 8))}px`;
     pop.style.top = `${top}px`;
   }, [menuOpen]);
@@ -537,13 +541,16 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     );
   };
 
-  const menu = menuOpen
+  const menu = menuHasOpened
     ? createPortal(
         <div
           {...portalProps}
           ref={popRef}
           id={popoverId}
           className={`${portalProps.className} cs-popover`}
+          hidden={!menuOpen}
+          inert={!menuOpen}
+          data-keyboard={keyboardRef.current || undefined}
           role="dialog"
           aria-label="Add styles"
           onKeyDown={(event) => {
@@ -766,13 +773,15 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   const weightIndex = weightSlot
     ? selectedStyles.findIndex((slot) => slot.preset.id === weightSlot.preset.id)
     : -1;
-  const weight = weightSlot
-    ? createPortal(
+  const weight = createPortal(
+    <AnimatePresence>
+      {weightSlot ? (
         <div
           {...portalProps}
           ref={weightRef}
           id={weightIdAttr}
           className={`${portalProps.className} cs-weight`}
+          data-keyboard={keyboardRef.current || undefined}
           role="dialog"
           aria-label="Style intensity"
         >
@@ -838,10 +847,11 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
               </button>
             </div>
           </div>
-        </div>,
-        document.body,
-      )
-    : null;
+        </div>
+      ) : null}
+    </AnimatePresence>,
+    document.body,
+  );
 
   const previewVisible = Boolean(preview.result);
   const previewPanel = createPortal(
@@ -850,6 +860,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
       ref={previewRef}
       id={previewId}
       className={`${portalProps.className} cs-preview`}
+      data-keyboard={keyboardRef.current || undefined}
       data-pinned={String(preview.pinned)}
       data-visible={String(previewVisible)}
       hidden={!previewVisible}

@@ -583,7 +583,7 @@ function SelectField({
                 <CharacterLabOptionIcon id={optionIconId} fallbackId={fallbackIconId} size={24} />
               </span>
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-[11px] font-semibold leading-tight">
+                <span className="block truncate text-[length:var(--wbp-label)] font-semibold leading-tight">
                   {optionText.primary}
                 </span>
                 <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-bold leading-tight text-[color:var(--wb-dim)]">
@@ -623,7 +623,7 @@ function PreviewOptionCard({
       <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-[var(--wb-radius)] bg-black">
         <CharacterLabOptionIcon id={item.iconId} fallbackId={item.fallbackIconId} size={64} />
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
-        <span className="absolute left-1.5 top-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[7px] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+        <span className="absolute left-1.5 top-1.5 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
           {item.label}
         </span>
       </div>
@@ -694,7 +694,7 @@ function AttachmentSetupSlot({
             </span>
           </>
         )}
-        <span className="absolute bottom-1 left-1 rounded-[var(--wb-radius)] bg-black/75 px-1.5 py-0.5 text-[7px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+        <span className="absolute bottom-1 left-1 rounded-[var(--wb-radius)] bg-black/75 px-1.5 py-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
           {label}
         </span>
       </button>
@@ -735,7 +735,7 @@ function SourcePreviewCard({ source }: { source: Attachment | null }) {
         </span>
       </div>
       <div className="min-w-0 px-0.5 pt-1.5">
-        <div className="truncate text-[11px] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+        <div className="truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
           {source ? 'Source Attached' : 'Prompt Guided'}
         </div>
         <div className="mt-0.5 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
@@ -762,7 +762,7 @@ function ActionButton({
     <button
       type="button"
       onClick={() => onSelect(action)}
-      title={action.prompt}
+      title={action.label}
       className={`character-lab-action-card group relative flex aspect-[5/6] min-h-[132px] w-full min-w-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border p-1.5 text-left shadow-[0_10px_22px_rgba(0,0,0,0.22)] transition-[background-color,border-color,color,opacity,transform] duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
         selected
           ? `${accent.border} ${accent.soft} text-[color:var(--wb-ink)] ring-1 ring-inset ring-white/10`
@@ -774,7 +774,7 @@ function ActionButton({
         <span className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
         {selected && (
           <span
-            className={`absolute left-2 top-2 rounded-[var(--wb-radius)] border bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[7px] font-semibold tracking-normal ${accent.border} ${accent.text}`}
+            className={`absolute left-2 top-2 rounded-[var(--wb-radius)] border bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] px-1.5 py-0.5 text-[length:var(--wbp-label)] font-semibold tracking-normal ${accent.border} ${accent.text}`}
           >
             Selected
           </span>
@@ -791,10 +791,11 @@ function ActionButton({
               : 'text-[color:var(--wb-muted)] group-hover:text-[color:var(--wb-muted)]'
           }`}
         >
-          {action.prompt}
+          {action.category} ·{' '}
+          {action.mediaType === 'image' ? 'Create or transform a character' : action.mediaType}
         </span>
         <span
-          className={`mt-0.5 block truncate text-[7px] font-semibold tracking-normal ${selected ? accent.text : 'text-[color:var(--wb-dim)]'}`}
+          className={`mt-0.5 block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal ${selected ? accent.text : 'text-[color:var(--wb-dim)]'}`}
         >
           {action.capability === 'ready' ? 'Prompt or reference' : 'Not yet available'}
         </span>
@@ -1155,10 +1156,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                 </div>
                 <div className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 py-1.5 text-right">
                   <div className="text-[length:var(--wbp-label)] font-semibold tabular-nums text-[color:var(--wb-ink)]">
-                    {selectedModeReadyActions.length}/{selectedModeActions.length}
-                  </div>
-                  <div className="text-[7px] font-semibold tracking-normal text-[color:var(--wb-dim)]">
-                    ready
+                    {selectedModeReadyActions.length} actions available
                   </div>
                 </div>
               </div>
@@ -1175,7 +1173,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     <div className="mb-1.5 flex items-center gap-2">
                       <div className={`flex min-w-0 flex-1 items-center gap-2 ${accent.text}`}>
                         {firstAction && <CharacterLabIcon id={firstAction.id} size={22} />}
-                        <span className="truncate text-[11px] font-semibold tracking-normal">
+                        <span className="truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
                           {category.label}
                         </span>
                         <span className="text-[length:var(--wbp-label)] font-bold tabular-nums text-[color:var(--wb-dim)]">
@@ -1212,7 +1210,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
               })}
 
               {filteredCategoryGroups.length === 0 && (
-                <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] p-6 text-center text-[11px] font-bold tracking-normal text-[color:var(--wb-dim)]">
+                <div className="rounded-[var(--wb-radius)] border border-dashed border-[color:var(--wb-line)] p-6 text-center text-[length:var(--wbp-label)] font-bold tracking-normal text-[color:var(--wb-dim)]">
                   No matching actions
                 </div>
               )}
@@ -1349,7 +1347,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                   <h2 className="text-[16px] font-semibold leading-tight text-balance text-[color:var(--wb-ink)]">
                     {workflowStateTitle}
                   </h2>
-                  <p className="mt-1 text-[11px] leading-relaxed text-pretty text-[color:var(--wb-muted)]">
+                  <p className="mt-1 text-[length:var(--wbp-label)] leading-relaxed text-pretty text-[color:var(--wb-muted)]">
                     {workflowStateCopy}
                   </p>
                 </div>

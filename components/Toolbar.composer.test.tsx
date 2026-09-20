@@ -123,6 +123,41 @@ function renderToolbar(overrides: Partial<ToolbarProps> = {}) {
 }
 
 describe('Toolbar composer chrome', () => {
+  it('blocks Remaster click and shortcut until a source is attached', () => {
+    const onGenerate = vi.fn();
+    const view = renderToolbar({
+      activeRecipe: 'remaster',
+      codexTransport: 'subscription_http',
+      codexAvailableTransports: ['subscription_http'],
+      generationConfig: config({ recipeId: 'remaster' }),
+      onGenerate,
+    });
+    fireEvent.click(screen.getByRole('button', { name: /generate 4 images/i }));
+    fireEvent.keyDown(document, { key: 'Enter', ctrlKey: true });
+    expect(onGenerate).not.toHaveBeenCalled();
+    expect(screen.getAllByText('Add a source image to restore.').length).toBeGreaterThan(0);
+    view.unmount();
+    renderToolbar({
+      activeRecipe: 'remaster',
+      codexTransport: 'subscription_http',
+      codexAvailableTransports: ['subscription_http'],
+      generationConfig: config({
+        recipeId: 'remaster',
+        attachments: [
+          {
+            id: 'source',
+            name: 'original.png',
+            dataUrl: 'data:image/png;base64,aaaa',
+            strength: 1,
+          },
+        ],
+      }),
+      onGenerate,
+    });
+    fireEvent.click(screen.getByRole('button', { name: /generate 4 images/i }));
+    expect(onGenerate).toHaveBeenCalledOnce();
+  });
+
   it('groups provider and Codex execution in the same Create rail row', () => {
     const { container } = renderToolbar();
     const row = container.querySelector('.create-tool-provider-row');

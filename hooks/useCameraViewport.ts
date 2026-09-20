@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useReducer, useRef } from 'react';
+import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import { useLatestRef } from './useLatestRef';
 
 type ThreeModule = typeof import('three');
@@ -57,6 +57,7 @@ export interface UseCameraViewportOptions {
 export interface UseCameraViewportResult {
   mountRef: React.RefObject<HTMLDivElement | null>;
   cameraState: CameraViewportState;
+  viewportError: string | null;
   setAzimuth: React.Dispatch<React.SetStateAction<number>>;
   setElevation: React.Dispatch<React.SetStateAction<number>>;
   setDistance: React.Dispatch<React.SetStateAction<number>>;
@@ -177,6 +178,7 @@ export const useCameraViewport = ({
     [],
   );
 
+  const [viewportError, setViewportError] = useState<string | null>(null);
   const mountRef = useRef<HTMLDivElement>(null);
   const sceneObjects = useRef<Record<string, any>>({});
   const requestRenderRef = useRef<() => void>(() => {});
@@ -212,10 +214,12 @@ export const useCameraViewport = ({
     if (!mountRef.current) return;
 
     const mountNode = mountRef.current;
+    setViewportError(null);
     let cancelled = false;
     let cleanupViewport: (() => void) | undefined;
 
-    void loadThree().then((THREE) => {
+    const initialize = async () => {
+      const THREE = await loadThree();
       if (cancelled || mountRef.current !== mountNode) return;
 
       const { planeRatio } = parseAspectRatio(aspectRatio);
@@ -229,11 +233,19 @@ export const useCameraViewport = ({
       camera.position.set(20, 16, 20);
       camera.lookAt(0, 1, 0);
 
+      let pipRenderer: import('three').WebGLRenderer | null = null;
       const renderer = new THREE.WebGLRenderer({
         antialias: true,
         alpha: true,
         powerPreference: 'high-performance',
       });
+      cleanupViewport = () => {
+        renderer.domElement.remove();
+        renderer.dispose();
+        pipRenderer?.domElement.remove();
+        pipRenderer?.dispose();
+        disposeScene(scene);
+      };
       renderer.setSize(width, height);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.shadowMap.enabled = true;
@@ -241,7 +253,6 @@ export const useCameraViewport = ({
       mountNode.appendChild(renderer.domElement);
 
       const pipMountNode = mountNode.querySelector('.pip-viewport') as HTMLElement | null;
-      let pipRenderer: import('three').WebGLRenderer | null = null;
       let pipCamera: import('three').PerspectiveCamera | null = null;
 
       if (pipMountNode) {
@@ -787,6 +798,14 @@ export const useCameraViewport = ({
         disposeScene(scene);
         sceneObjects.current = {};
       };
+    };
+    void initialize().catch(() => {
+      cleanupViewport?.();
+      cleanupViewport = undefined;
+      if (!cancelled)
+        setViewportError(
+          '3D preview is unavailable. You can still set the camera using the numeric controls.',
+        );
     });
 
     return () => {
@@ -854,6 +873,7 @@ export const useCameraViewport = ({
   }, [referenceImageSrc]);
 
   return {
+    viewportError,
     mountRef,
     cameraState: { azimuth, elevation, distance },
     setAzimuth,

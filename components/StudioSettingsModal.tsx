@@ -290,6 +290,8 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
 
           <div
             aria-busy={isLoading || isSaving}
+            data-motion-panel
+            key={activeDomain}
             className="studio-dialog-body studio-settings-content custom-scrollbar"
           >
             {error && (

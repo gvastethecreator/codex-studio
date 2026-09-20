@@ -8,6 +8,7 @@ const rootDir = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
   base: './',
+  optimizeDeps: { entries: ['index.html'] },
   server: {
     port: 17222,
     host: '0.0.0.0',

@@ -87,7 +87,7 @@ const ShotTypeDropdown: React.FC<{
         onClick={() => setIsOpen((open) => !open)}
         className={`flex min-h-7 max-w-[120px] items-center gap-1.5 rounded border px-2 py-1 text-center text-[length:var(--wbp-label)] font-bold tracking-normal transition-[background-color,border-color,color,transform] ${
           isOpen
-            ? 'border-rose-400/2 bg-rose-500/14 text-[color:var(--wb-ink)]'
+            ? 'border-[color:var(--wb-accent)] bg-[color-mix(in_srgb,var(--wb-accent)_14%,transparent)] text-[color:var(--wb-ink)]'
             : 'border-[color:var(--wb-line)] bg-[color:var(--wb-well)] text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
         }`}
         aria-label={`${sceneLabel} shot type: ${value}`}
@@ -131,7 +131,7 @@ const ShotTypeDropdown: React.FC<{
               }}
               className={`flex min-h-8 w-full items-center justify-between gap-2 rounded-[var(--wb-radius)] px-2 py-1.5 text-left text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[background-color,color] ${
                 selected
-                  ? 'bg-rose-500/18 text-[color:var(--wb-ink)]'
+                  ? 'bg-[color-mix(in_srgb,var(--wb-accent)_18%,transparent)] text-[color:var(--wb-ink)]'
                   : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
               }`}
             >
@@ -235,10 +235,11 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               <button
                 type="button"
                 key={count}
+                aria-pressed={params.frames === count}
                 onClick={() => handleFrameChange(count)}
                 className={`h-9 px-4 rounded-[var(--wb-radius)] flex items-center gap-2 transition-[background-color,color,box-shadow,transform] ${
                   params.frames === count
-                    ? 'bg-rose-600 text-[color:var(--wb-ink)] shadow-lg'
+                    ? 'bg-[color:var(--wb-accent)] text-[color:var(--wb-on-accent)] ring-1 ring-current'
                     : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'
                 }`}
               >
@@ -260,7 +261,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
             label={params.time}
             options={CONTROL_OPTIONS.time}
             onSelect={(v) => setParams((p) => ({ ...p, time: v }))}
-            activeColor="rose"
           />
           <ControlDropdown
             title="Weather"
@@ -268,7 +268,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
             label={params.weather}
             options={CONTROL_OPTIONS.weather}
             onSelect={(v) => setParams((p) => ({ ...p, weather: v }))}
-            activeColor="rose"
           />
           <ControlDropdown
             title="Lighting"
@@ -276,7 +275,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
             label={params.lighting}
             options={CONTROL_OPTIONS.lighting}
             onSelect={(v) => setParams((p) => ({ ...p, lighting: v }))}
-            activeColor="rose"
           />
         </div>
 
@@ -291,7 +289,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               label={params.genre}
               options={CONTROL_OPTIONS.genre}
               onSelect={(v) => setParams((p) => ({ ...p, genre: v }))}
-              activeColor="rose"
             />
             <ControlDropdown
               title="Tone"
@@ -299,7 +296,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               label={params.tone}
               options={CONTROL_OPTIONS.tone}
               onSelect={(v) => setParams((p) => ({ ...p, tone: v }))}
-              activeColor="rose"
             />
             <ControlDropdown
               title="Camera"
@@ -307,7 +303,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               label={params.movement}
               options={CONTROL_OPTIONS.movement}
               onSelect={(v) => setParams((p) => ({ ...p, movement: v }))}
-              activeColor="rose"
             />
             <ControlDropdown
               title="Lens"
@@ -315,7 +310,6 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               label={params.lens}
               options={CONTROL_OPTIONS.lens}
               onSelect={(v) => setParams((p) => ({ ...p, lens: v }))}
-              activeColor="rose"
             />
           </div>
         </details>

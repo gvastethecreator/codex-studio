@@ -682,3 +682,208 @@
 .wb .studio-tab {
   flex-shrink: 0;
 }
+
+/* Shared feedback for menu choices; the panel moves, its rows stay stable. */
+:is(.studio-menu-item, [data-dropdown-item], .cs-choice, .cs-done, .cs-breadcrumb) {
+  transition:
+    color var(--dropdown-close-dur) ease,
+    background-color var(--dropdown-close-dur) ease,
+    border-color var(--dropdown-close-dur) ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :is(.studio-menu-item, [data-dropdown-item], .cs-choice):not(:disabled):not(
+      [aria-disabled='true']
+    ):hover {
+    background-color: color-mix(in srgb, var(--wb-ink) 7%, transparent);
+  }
+}
+
+:is(.studio-menu-item, [data-dropdown-item], .cs-choice):focus-visible {
+  outline: 2px solid var(--wb-accent);
+  outline-offset: -2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  details::details-content {
+    opacity: 0;
+    transition:
+      opacity var(--dropdown-close-dur) var(--dropdown-ease),
+      content-visibility var(--dropdown-close-dur) allow-discrete;
+  }
+
+  details[open]::details-content {
+    opacity: 1;
+    transition-duration: var(--dropdown-open-dur);
+  }
+
+  details:has(> summary:focus-visible)::details-content {
+    transition: none;
+  }
+
+  details > .studio-popover {
+    transform-origin: top right;
+    transition: transform var(--dropdown-open-dur) var(--dropdown-ease);
+  }
+
+  @starting-style {
+    details[open] > .studio-popover {
+      transform: scale(0.985);
+    }
+  }
+}
+
+/* Motion applies to control semantics, including controls in portals. */
+:where(
+  button,
+  a[href],
+  summary,
+  [role='tab'],
+  [role='option'],
+  [role='switch'],
+  input,
+  select,
+  textarea
+) {
+  transition-property: color, background-color, border-color, box-shadow, opacity, scale;
+  transition-duration: var(--dropdown-close-dur);
+  transition-timing-function: var(--dropdown-ease);
+}
+
+:where(button, a[href], summary, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--wb-accent);
+  outline-offset: 2px;
+}
+
+.studio-presence {
+  display: contents;
+}
+.studio-presence > :not([data-motion-surface]):not([data-gsap-dropdown]) {
+  transition: opacity var(--dropdown-close-dur) var(--dropdown-ease);
+}
+.studio-presence[data-state='closed'] > :not([data-motion-surface]):not([data-gsap-dropdown]) {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :where(button, summary, [role='tab']):not(:disabled):not([aria-disabled='true']):active {
+    scale: 0.98;
+  }
+
+  :is(
+      .studio-dialog,
+      .create-prompt-dialog,
+      .create-side-panel-dialog,
+      .create-workflow-popover,
+      .style-detail-dialog,
+      .studio-operations-rail
+    ):not([data-motion-surface]):not([data-gsap-dropdown]) {
+    opacity: 1;
+    translate: 0 0;
+    transition:
+      opacity var(--dropdown-open-dur) var(--dropdown-ease),
+      translate var(--dropdown-open-dur) var(--dropdown-ease),
+      display var(--dropdown-close-dur) allow-discrete,
+      overlay var(--dropdown-close-dur) allow-discrete;
+  }
+
+  @starting-style {
+    :is(
+        .studio-dialog,
+        .create-prompt-dialog,
+        .create-side-panel-dialog,
+        .create-workflow-popover,
+        .style-detail-dialog[open],
+        .studio-operations-rail
+      ):not([data-motion-surface]):not([data-gsap-dropdown]) {
+      opacity: 0;
+      translate: 0 -4px;
+    }
+    :is(.studio-scrim, .create-dialog-backdrop, [role='tabpanel']:not([hidden])) {
+      opacity: 0;
+    }
+  }
+
+  :is(.studio-scrim, .create-dialog-backdrop, [role='tabpanel']) {
+    transition: opacity var(--dropdown-open-dur) var(--dropdown-ease);
+  }
+
+  .style-detail-dialog:not([open]) {
+    opacity: 0;
+  }
+  .style-detail-dialog::backdrop {
+    transition:
+      opacity var(--dropdown-close-dur),
+      display var(--dropdown-close-dur) allow-discrete,
+      overlay var(--dropdown-close-dur) allow-discrete;
+  }
+  @starting-style {
+    .style-detail-dialog[open]::backdrop {
+      opacity: 0;
+    }
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    transition:
+      scale var(--dropdown-close-dur) var(--dropdown-ease),
+      box-shadow var(--dropdown-close-dur) ease;
+  }
+  input[type='range']:active::-webkit-slider-thumb {
+    scale: 1.12;
+  }
+  input[type='range']::-moz-range-thumb {
+    transition: scale var(--dropdown-close-dur) var(--dropdown-ease);
+  }
+  input[type='range']:active::-moz-range-thumb {
+    scale: 1.12;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :where(button, summary, [role='option'], [role='tab']):not(:disabled):not(
+      [aria-disabled='true']
+    ):hover {
+    box-shadow: inset 0 0 0 999px color-mix(in srgb, var(--wb-ink) 4%, transparent);
+  }
+}
+
+.tooltip:has(:focus-visible) .tooltip-content {
+  opacity: 1;
+}
+.tooltip:has(:focus-visible) .tooltip-content:is(.top, .bottom) {
+  transform: translateX(-50%) scale(1);
+}
+.tooltip-content.top {
+  transform-origin: bottom center;
+}
+.tooltip-content.bottom {
+  transform-origin: top center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :is(.studio-toast, .studio-image-editor, .studio-style-editor, [data-motion-panel]) {
+    opacity: 1;
+    transition: opacity var(--dropdown-open-dur) var(--dropdown-ease);
+  }
+  @starting-style {
+    :is(.studio-toast, .studio-image-editor, .studio-style-editor, [data-motion-panel]) {
+      opacity: 0;
+    }
+  }
+}
+
+:where(.style-preset-tile, [data-studio-image-id], .recipe-card, .studio-field) {
+  transition:
+    border-color var(--dropdown-close-dur) ease,
+    background-color var(--dropdown-close-dur) ease,
+    box-shadow var(--dropdown-close-dur) ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .studio-presence > *,
+  :where(button, a[href], summary, input, select, textarea, [role='tab'], [role='option']),
+  .tooltip-content {
+    transition: none !important;
+  }
+}

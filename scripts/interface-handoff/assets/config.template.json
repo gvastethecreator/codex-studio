@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.1",
+  "project_id": "REEMPLAZAR-CON-ID-LOCAL-ESTABLE",
+  "source_roots": [
+    "src",
+    "public",
+    "scripts",
+    "package.json",
+    "pnpm-lock.yaml",
+    "vite.config.ts",
+    "docs/interface-handoff.md"
+  ],
+  "global_inputs": [
+    "package.json",
+    "pnpm-lock.yaml",
+    "vite.config.ts",
+    "src/styles",
+    "src/components",
+    "src/review",
+    "scripts"
+  ],
+  "integration_files": [
+    "scripts/export-interface.mjs",
+    "src/review/entry.tsx"
+  ],
+  "export_command": [
+    "pnpm",
+    "run",
+    "handoff:export"
+  ],
+  "output_dir": "artifacts/interface-handoff",
+  "task_file": "docs/tasks/interface-handoff.md",
+  "scope": "all-implemented-views",
+  "portability_target": "file",
+  "capture_profile": {
+    "browser": "REEMPLAZAR-con-version-real",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "dpr": 1,
+    "theme": "current-product-theme",
+    "locale": "REEMPLAZAR",
+    "timezone": "REEMPLAZAR",
+    "seed": "interface-handoff",
+    "motion": "deterministic-capture-and-normal-interaction"
+  },
+  "toolchain": {
+    "runtime": "REEMPLAZAR",
+    "package_manager": "REEMPLAZAR"
+  },
+  "inventory_file": "scripts/interface-handoff/inventory.json",
+  "discovery": {
+    "exclude_roots": [
+      {
+        "path": "dist",
+        "reason": "Salida generada; revisar que no contenga fuentes del producto."
+      },
+      {
+        "path": "coverage",
+        "reason": "Salida de cobertura generada; no es una fuente de UI."
+      }
+    ],
+    "max_files": 100000,
+    "max_bytes": 536870912
+  }
+}

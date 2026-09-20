@@ -1,3 +1,4 @@
+import { useTheme } from '../../hooks/useTheme';
 import {
   IconDatabase as Database,
   IconFolderOpen as FolderOpen,
@@ -11,7 +12,6 @@ import type {
   GenerationProviderCapabilitiesResponse,
   GenerationProviderRuntimePreflightResponse,
 } from '../../packages/shared/src/providerCapabilities';
-import type { StudioOutputMode } from '../../packages/shared/src/studioSettings';
 import {
   encodeSubfolderTokens,
   EXTERNAL_SCAN_PATH_HELP,
@@ -47,8 +47,8 @@ export function SettingsFormPanel({
   onResetStudio,
   isResettingStudio,
 }: SettingsFormPanelProps) {
+  const { appearance, toggleAppearance, currentTheme, cycleTheme } = useTheme();
   const {
-    defaultOutputMode,
     preferredOutputPath,
     outputSubfolderPreset,
     outputFileNameTemplate,
@@ -95,32 +95,101 @@ export function SettingsFormPanel({
         </>
       ) : null}
 
-      {domain === 'appearance' ? (
-        <button
-          type="button"
-          onClick={() =>
-            setFormState((prev) => ({
-              ...prev,
-              commandCenterCompactMode: !prev.commandCenterCompactMode,
-            }))
-          }
-          className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
-        >
-          <span className="flex items-center gap-3">
-            <Settings
-              size={16}
-              className={
-                commandCenterCompactMode ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'
-              }
-            />
-            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-              Compact workspace controls
+      {domain === 'library' ? (
+        <>
+          <label className="md:col-span-2 flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
+            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+              {EXTERNAL_SCAN_PATH_LABEL}
             </span>
-          </span>
-          <span
-            className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-[color:var(--wb-dim)]'}`}
-          />
-        </button>
+            <p className="text-[11px] leading-relaxed text-[color:var(--wb-muted)]">
+              {EXTERNAL_SCAN_PATH_HELP}
+            </p>
+            <input
+              value={preferredOutputPath}
+              onChange={(event) =>
+                setFormState((prev) => ({ ...prev, preferredOutputPath: event.target.value }))
+              }
+              placeholder={libraryDir ?? 'D:/outputs'}
+              aria-label={EXTERNAL_SCAN_PATH_LABEL}
+              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
+            />
+          </label>
+
+          <button
+            type="button"
+            onClick={() =>
+              setFormState((prev) => ({
+                ...prev,
+                autoDetectOutputSources: !prev.autoDetectOutputSources,
+              }))
+            }
+            className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
+          >
+            <span className="flex items-center gap-3">
+              <FolderOpen
+                size={16}
+                className={
+                  autoDetectOutputSources ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'
+                }
+              />
+              <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+                Discover external images
+              </span>
+            </span>
+            <span
+              className={`size-2.5 rounded-full ${autoDetectOutputSources ? 'bg-accent-300' : 'bg-[color:var(--wb-dim)]'}`}
+            />
+          </button>
+        </>
+      ) : null}
+
+      {domain === 'appearance' ? (
+        <>
+          <div className="grid gap-3">
+            <button
+              type="button"
+              onClick={toggleAppearance}
+              className="studio-ghost-control p-4 text-left"
+            >
+              Appearance: {appearance === 'light' ? 'Light' : 'Dark'} · Switch
+            </button>
+            <button
+              type="button"
+              onClick={cycleTheme}
+              className="studio-ghost-control p-4 text-left"
+            >
+              Accent: {currentTheme} · Change color
+            </button>
+            <p className="text-xs text-[color:var(--wb-muted)]">
+              Theme and accent changes apply immediately.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() =>
+              setFormState((prev) => ({
+                ...prev,
+                commandCenterCompactMode: !prev.commandCenterCompactMode,
+              }))
+            }
+            className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${commandCenterCompactMode ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
+          >
+            <span className="flex items-center gap-3">
+              <Settings
+                size={16}
+                className={
+                  commandCenterCompactMode ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'
+                }
+              />
+              <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+                Compact workspace controls
+              </span>
+            </span>
+            <span
+              className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-[color:var(--wb-dim)]'}`}
+            />
+          </button>
+        </>
       ) : null}
 
       {domain === 'providers' ? (
@@ -135,24 +204,16 @@ export function SettingsFormPanel({
 
       {domain === 'output' ? (
         <>
-          <label className="flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
-            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-              Output Mode
-            </span>
-            <select
-              value={defaultOutputMode}
-              onChange={(event) =>
-                setFormState((prev) => ({
-                  ...prev,
-                  defaultOutputMode: event.target.value as StudioOutputMode,
-                }))
-              }
-              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
-            >
-              <option value="studio_library">Studio Library</option>
-              <option value="external_source">External Source</option>
-            </select>
-          </label>
+          <div className="md:col-span-2 rounded border border-[color:var(--wb-line)] p-4">
+            <h3 className="text-sm font-semibold">Generation destination</h3>
+            <p className="mt-1 text-xs">Studio Library</p>
+            <p className="mt-1 break-all font-mono text-xs text-[color:var(--wb-muted)]">
+              {libraryDir ?? 'Waiting for Studio Library…'}
+            </p>
+            <p className="mt-2 text-xs text-[color:var(--wb-muted)]">
+              To discover images from another folder, open Library &amp; imports.
+            </p>
+          </div>
 
           <label className="flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
             <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
@@ -197,50 +258,6 @@ export function SettingsFormPanel({
               </span>
             ) : null}
           </label>
-
-          <label className="md:col-span-2 flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4">
-            <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-              {EXTERNAL_SCAN_PATH_LABEL}
-            </span>
-            <p className="text-[11px] leading-relaxed text-[color:var(--wb-muted)]">
-              {EXTERNAL_SCAN_PATH_HELP}
-            </p>
-            <input
-              value={preferredOutputPath}
-              onChange={(event) =>
-                setFormState((prev) => ({ ...prev, preferredOutputPath: event.target.value }))
-              }
-              placeholder={libraryDir ?? 'D:/outputs'}
-              aria-label={EXTERNAL_SCAN_PATH_LABEL}
-              className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
-            />
-          </label>
-
-          <button
-            type="button"
-            onClick={() =>
-              setFormState((prev) => ({
-                ...prev,
-                autoDetectOutputSources: !prev.autoDetectOutputSources,
-              }))
-            }
-            className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${autoDetectOutputSources ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
-          >
-            <span className="flex items-center gap-3">
-              <FolderOpen
-                size={16}
-                className={
-                  autoDetectOutputSources ? 'text-accent-300' : 'text-[color:var(--wb-muted)]'
-                }
-              />
-              <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
-                Auto Detect Outputs
-              </span>
-            </span>
-            <span
-              className={`size-2.5 rounded-full ${autoDetectOutputSources ? 'bg-accent-300' : 'bg-[color:var(--wb-dim)]'}`}
-            />
-          </button>
         </>
       ) : null}
     </div>

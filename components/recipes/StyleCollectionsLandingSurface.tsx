@@ -497,9 +497,6 @@ function StyleFolderCard({
         <span className="pointer-events-none absolute -inset-2 z-[70] rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_22px_55px_rgba(255,255,255,0.10)]" />
       )}
       <div className="absolute inset-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]" />
-      <div
-        className={`absolute -top-2 left-0 h-4 w-[46%] rounded-t-[6px] border-x border-t border-[color:var(--wb-line)] ${theme.bg} opacity-60 shadow-[0_8px_22px_rgba(0,0,0,0.28)]`}
-      />
 
       {files.map((file, fileIndex) => (
         <div
@@ -545,9 +542,6 @@ function StyleFolderCard({
         className="absolute inset-0 overflow-visible rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] shadow-[0_18px_42px_rgba(0,0,0,0.38)]"
         style={{ transformOrigin: 'center bottom' }}
       >
-        <div
-          className={`absolute -top-3 left-0 h-5 w-[54%] rounded-t-[6px] border-x border-t border-[color:var(--wb-line)] ${theme.bg} opacity-75 shadow-[0_8px_22px_rgba(0,0,0,0.32)]`}
-        />
         <div className="absolute inset-0 overflow-hidden rounded-[var(--wb-radius)]">
           <div className="absolute inset-0 bg-[color:var(--wb-panel)]">
             {coverImage ? (
@@ -558,14 +552,14 @@ function StyleFolderCard({
                 height={560}
                 loading="lazy"
                 decoding="async"
-                className="size-full object-cover opacity-[0.72] transition-[opacity,transform,filter] duration-300 group-hover:scale-[1.025] group-hover:opacity-[0.88] group-hover:saturate-[1.05]"
+                className="size-full object-cover transition-transform duration-300 group-hover:scale-[1.025]"
               />
             ) : (
               <div className={`flex size-full items-center justify-center ${theme.text}`}>
                 {icon}
               </div>
             )}
-            <div className="absolute inset-0 bg-linear-to-t from-black via-black/46 to-black/8" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/15 to-transparent" />
             <div className={`absolute inset-x-0 top-0 h-1 ${theme.bg}`} />
           </div>
 
@@ -574,24 +568,14 @@ function StyleFolderCard({
               <span
                 data-style-pack-count={id}
                 aria-label={countAriaLabel}
-                className={`flex min-w-9 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] ${theme.bg} px-2 py-1 text-[length:var(--wbp-label)] font-semibold tabular-nums text-[color:var(--wb-ink)]/95 shadow-[0_8px_18px_rgba(0,0,0,0.28)] backdrop-blur-md`}
-                style={
-                  {
-                    '--tw-bg-opacity': '0.76',
-                    textShadow: '0 1px 5px rgba(0,0,0,0.78)',
-                  } as React.CSSProperties
-                }
+                className="flex min-w-9 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] px-2 py-1 text-[length:var(--wbp-label)] font-semibold tabular-nums text-[color:var(--wb-muted)]"
               >
                 {countLabel}
               </span>
             </div>
 
             <div className="min-w-0">
-              <p
-                className={`mb-1 text-[length:var(--wbp-label)] font-semibold tracking-normal ${theme.text}`}
-              >
-                {eyebrow}
-              </p>
+              <span className="sr-only">{eyebrow}</span>
               <h3
                 data-style-pack-card-title={id}
                 className={`flex min-w-0 items-center gap-1.5 whitespace-nowrap font-semibold leading-tight tracking-normal text-[color:var(--wb-ink)] ${titleClassName}`}
@@ -601,7 +585,7 @@ function StyleFolderCard({
                 </span>
                 <span className="min-w-0 truncate">{title}</span>
               </h3>
-              <p className="mt-1.5 line-clamp-2 text-[length:var(--wbp-label)] font-medium leading-snug text-[color:var(--wb-ink)]/86">
+              <p className="mt-1.5 line-clamp-1 text-[length:var(--wbp-label)] font-medium leading-snug text-[color:var(--wb-ink)]/86">
                 {description}
               </p>
             </div>
@@ -1049,7 +1033,7 @@ function StyleNavigationPanel({
         <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-[color:var(--wb-line)] px-3">
           <div className="min-w-0">
             <p className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-              Quick Map
+              Collections
             </p>
           </div>
           <button
@@ -1250,15 +1234,15 @@ export function StyleCollectionsLandingSurface({
     <div className="flex min-h-0 flex-1 flex-col overflow-hidden px-4 pt-3 pb-4 sm:px-5 sm:pt-4 sm:pb-5 2xl:px-6">
       <div className="mb-3 shrink-0 flex flex-col gap-1">
         <h2 className="vt-style-pack-title truncate text-lg font-semibold tracking-tight text-[color:var(--wb-ink)]">
-          Style Packs
+          Collections
         </h2>
         <p className="max-w-3xl text-[length:var(--wbp-label)] font-medium leading-relaxed text-[color:var(--wb-muted)]">
-          Collection-first style systems grouped by creative intent.
+          Browse styles by creative intent. Source packs show where styles come from.
         </p>
         <label className="styles-catalog-map-select lg:hidden">
-          <span>Map</span>
+          <span>Collections</span>
           <select
-            aria-label="Style map"
+            aria-label="Browse collections"
             value={activeNavigationTargetId ?? ''}
             onChange={(event) => {
               const item = navigationSections
@@ -1331,6 +1315,18 @@ export function StyleCollectionsLandingSurface({
                     collection.id === 'my_styles' ? USER_STYLE_PACK_ID : FAVORITES_PACK_ID;
                   const isUserStyles = collection.id === 'my_styles';
                   const targetId = `collection:${collection.id}`;
+                  if ((isUserStyles ? userStyleCount : favoritesCount) === 0)
+                    return (
+                      <button
+                        key={collection.id}
+                        type="button"
+                        className="studio-ghost-control flex items-center justify-between gap-2 p-3 text-xs"
+                        onClick={() => onNavigateToStyleTab(tabId)}
+                      >
+                        <span>{isUserStyles ? 'My styles' : 'Favorites'}</span>
+                        <span className="text-[color:var(--wb-muted)]">0 styles</span>
+                      </button>
+                    );
                   return (
                     <StyleCollectionCard
                       key={collection.id}

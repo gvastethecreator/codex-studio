@@ -1,0 +1,327 @@
+{
+  "schema_version": "1.0",
+  "project_id": "codex-studio",
+  "views": [
+    {
+      "id": "library",
+      "title": "Library",
+      "source_refs": [
+        "components/AppContent.tsx",
+        "components/shell/StudioViewport.tsx",
+        "components/ImageGrid.tsx",
+        "hooks/useHashRouter.ts"
+      ],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=library.ready"
+        },
+        {
+          "id": "empty",
+          "entry": "demo/index.html?scenario=library.empty"
+        },
+        {
+          "id": "error",
+          "entry": "demo/index.html?scenario=library.error"
+        }
+      ]
+    },
+    {
+      "id": "create",
+      "title": "Create",
+      "source_refs": [
+        "components/create/CreateWorkspace.tsx",
+        "components/create/CreateWorkflowPicker.tsx",
+        "components/HeaderToolbar.tsx",
+        "components/Toolbar.tsx"
+      ],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=create.ready"
+        },
+        {
+          "id": "workflow-open",
+          "entry": "demo/index.html?scenario=create.workflow-open"
+        }
+      ]
+    },
+    {
+      "id": "recipe-styles",
+      "title": "Styles recipe",
+      "source_refs": [
+        "components/recipes/StylesRecipe.tsx",
+        "components/recipes/StylesBrowser.tsx",
+        "components/recipes/CompactStyleSelector.tsx",
+        "components/RecipeRouter.tsx"
+      ],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-styles.ready"
+        }
+      ]
+    },
+    {
+      "id": "recipe-cinematic",
+      "title": "Cinematic recipe",
+      "source_refs": ["components/recipes/CinematicRecipe.tsx", "components/RecipeRouter.tsx"],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-cinematic.ready"
+        }
+      ]
+    },
+    {
+      "id": "recipe-character",
+      "title": "Character sheet recipe",
+      "source_refs": ["components/recipes/CharacterSheetRecipe.tsx", "components/RecipeRouter.tsx"],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-character.ready"
+        }
+      ]
+    },
+    {
+      "id": "recipe-character-lab",
+      "title": "Character Lab",
+      "source_refs": [
+        "components/recipes/CharacterLabRecipe.tsx",
+        "lib/recipeAliases.ts",
+        "components/RecipeRouter.tsx"
+      ],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-character-lab.ready"
+        },
+        {
+          "id": "poses",
+          "entry": "demo/index.html?scenario=recipe-character-lab.poses"
+        }
+      ]
+    },
+    {
+      "id": "recipe-camera",
+      "title": "Camera angles recipe",
+      "source_refs": ["components/recipes/CameraAnglesRecipe.tsx", "components/RecipeRouter.tsx"],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-camera.ready"
+        },
+        {
+          "id": "error",
+          "entry": "demo/index.html?scenario=recipe-camera.error"
+        }
+      ]
+    },
+    {
+      "id": "recipe-spritesheet",
+      "title": "Spritesheet recipe",
+      "source_refs": ["components/recipes/SpritesheetRecipe.tsx", "components/RecipeRouter.tsx"],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-spritesheet.ready"
+        }
+      ]
+    },
+    {
+      "id": "recipe-sprite-atlas",
+      "title": "Sprite Atlas recipe",
+      "source_refs": ["components/recipes/SpriteAtlasRecipe.tsx", "components/RecipeRouter.tsx"],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-sprite-atlas.ready"
+        }
+      ]
+    },
+    {
+      "id": "recipe-remaster",
+      "title": "Remaster recipe",
+      "source_refs": ["components/recipes/RemasterRecipe.tsx", "components/RecipeRouter.tsx"],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-remaster.ready"
+        }
+      ]
+    },
+    {
+      "id": "recipe-timeline",
+      "title": "Timeline recipe",
+      "source_refs": ["components/recipes/TimelineRecipe.tsx", "components/RecipeRouter.tsx"],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-timeline.ready"
+        }
+      ]
+    },
+    {
+      "id": "recipe-animation-sequence",
+      "title": "Animation sequence recipe",
+      "source_refs": [
+        "components/recipes/AnimationSequenceRecipe.tsx",
+        "components/RecipeRouter.tsx"
+      ],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=recipe-animation-sequence.ready"
+        },
+        {
+          "id": "partial",
+          "entry": "demo/index.html?scenario=recipe-animation-sequence.partial"
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Studio Settings",
+      "source_refs": [
+        "components/StudioSettingsModal.tsx",
+        "components/settings/SettingsFormPanel.tsx",
+        "hooks/useStudioSettings.ts"
+      ],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=settings.ready"
+        }
+      ]
+    },
+    {
+      "id": "jobs",
+      "title": "Jobs rail",
+      "source_refs": [
+        "components/studio/StudioOperationsRail.tsx",
+        "components/QueuePanel.tsx",
+        "components/shell/StudioStatusBar.tsx"
+      ],
+      "states": [
+        {
+          "id": "open",
+          "entry": "demo/index.html?scenario=jobs.open"
+        },
+        {
+          "id": "failed",
+          "entry": "demo/index.html?scenario=jobs.failed"
+        },
+        {
+          "id": "needs_review",
+          "entry": "demo/index.html?scenario=jobs.needs_review"
+        },
+        {
+          "id": "cancelled",
+          "entry": "demo/index.html?scenario=jobs.cancelled"
+        },
+        {
+          "id": "retry",
+          "entry": "demo/index.html?scenario=jobs.retry"
+        },
+        {
+          "id": "partial",
+          "entry": "demo/index.html?scenario=jobs.partial"
+        }
+      ]
+    },
+    {
+      "id": "onboarding",
+      "title": "Help and setup",
+      "source_refs": ["components/OnboardingModal.tsx", "hooks/useStudioOnboarding.ts"],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html?scenario=onboarding.ready"
+        }
+      ]
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "header-nav",
+      "kind": "navigation",
+      "source_refs": ["components/HeaderToolbar.tsx", "components/header/WorkspaceStrip.tsx"]
+    },
+    {
+      "id": "workflow-picker",
+      "kind": "navigation",
+      "source_refs": [
+        "components/create/CreateWorkflowPicker.tsx",
+        "components/recipes/RecipeDiscoveryList.tsx"
+      ]
+    },
+    {
+      "id": "status-bar",
+      "kind": "status",
+      "source_refs": ["components/shell/StudioStatusBar.tsx"]
+    },
+    {
+      "id": "generation-dock",
+      "kind": "composer",
+      "source_refs": ["components/shell/StudioGenerationDock.tsx", "components/Toolbar.tsx"]
+    },
+    {
+      "id": "jobs-rail",
+      "kind": "drawer",
+      "source_refs": ["components/studio/StudioOperationsRail.tsx", "components/QueuePanel.tsx"]
+    },
+    {
+      "id": "image-overlays",
+      "kind": "overlay",
+      "source_refs": [
+        "components/AppOverlays.tsx",
+        "components/overlays/StudioImageOverlays.tsx",
+        "components/ImageEditorModal.tsx"
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "browse-library",
+      "description": "Open Library, scan catalog cards, search the workspace.",
+      "view_ids": ["library"],
+      "source_refs": ["components/ImageGrid.tsx", "components/AppContent.tsx"]
+    },
+    {
+      "id": "create-and-generate",
+      "description": "Open Create, write a prompt, run Generate against the simulated job queue.",
+      "view_ids": ["create", "jobs"],
+      "source_refs": ["components/Toolbar.tsx", "hooks/useGenerationPipeline.ts"]
+    },
+    {
+      "id": "open-styles-recipe",
+      "description": "Pick Styles from the workflow picker and inspect the compact selector plus catalog.",
+      "view_ids": ["create", "recipe-styles"],
+      "source_refs": [
+        "components/create/CreateWorkflowPicker.tsx",
+        "components/recipes/StylesRecipe.tsx"
+      ]
+    },
+    {
+      "id": "inspect-jobs",
+      "description": "Open the Jobs rail from the status bar and inspect simulated job rows.",
+      "view_ids": ["library", "jobs"],
+      "source_refs": ["components/shell/StudioStatusBar.tsx", "components/QueuePanel.tsx"]
+    }
+  ],
+  "excluded": [
+    {
+      "id": "recipes-grid",
+      "reason": "RecipesView still exists in StudioViewport, but Create now lands on CreateWorkspace; the grid is not the current Create route."
+    },
+    {
+      "id": "electron-bridge",
+      "reason": "Desktop host and native filesystem bridges are out of the web review target."
+    },
+    {
+      "id": "production-backend",
+      "reason": "Local Hono/SQLite/Codex runtime is replaced by in-memory demo adapters."
+    }
+  ]
+}

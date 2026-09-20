@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "project_id": "REEMPLAZAR-CON-ID-LOCAL-ESTABLE",
+  "views": [
+    {
+      "id": "replace-view-id",
+      "title": "REEMPLAZAR",
+      "source_refs": [
+        "src/views/REEMPLAZAR.tsx"
+      ],
+      "states": [
+        {
+          "id": "ready",
+          "entry": "demo/index.html#replace-view-id/ready"
+        }
+      ]
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "replace-navigation",
+      "kind": "navigation",
+      "source_refs": [
+        "src/REEMPLAZAR.tsx"
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "replace-main-flow",
+      "description": "REEMPLAZAR con el flujo real observado",
+      "view_ids": [
+        "replace-view-id"
+      ],
+      "source_refs": [
+        "src/views/REEMPLAZAR.tsx"
+      ]
+    }
+  ],
+  "excluded": []
+}

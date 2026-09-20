@@ -32,6 +32,13 @@ import {
 } from '../recipes/RecipeWorkbenchContext';
 
 afterEach(cleanup);
+vi.stubGlobal(
+  'ResizeObserver',
+  class {
+    observe() {}
+    disconnect() {}
+  },
+);
 
 const GenerationDock = ((props: StudioGenerationDockProps) => (
   <div data-generation-dock-layout={props.layout ?? 'dock'} data-testid="generation-dock">

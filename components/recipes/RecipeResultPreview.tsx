@@ -155,6 +155,15 @@ export function RecipeResultPreview({
             role="toolbar"
             aria-label="Selected result actions"
           >
+            <span className="result-context-label">
+              {showReference || !selected
+                ? 'Source image'
+                : isGenerating
+                  ? 'Previous result'
+                  : reference?.dataUrl === selected.src
+                    ? 'Result · used as source'
+                    : 'Recent result · not attached as source'}
+            </span>
             {canCompare ? (
               <Tooltip content={showReference ? 'Show result' : 'Compare reference'}>
                 <button
@@ -192,10 +201,10 @@ export function RecipeResultPreview({
               </Tooltip>
             ) : null}
             {onUseAsReference && selected ? (
-              <Tooltip content="Use as reference">
+              <Tooltip content="Use as source">
                 <button
                   type="button"
-                  aria-label="Use as reference"
+                  aria-label="Use as source"
                   onClick={() => onUseAsReference(selected)}
                 >
                   <Paperclip size={14} />

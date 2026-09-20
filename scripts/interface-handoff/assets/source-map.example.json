@@ -1,0 +1,17 @@
+{
+  "note": "Ejemplo sintético: reemplazar con rutas y símbolos existentes. No es un sourcemap de bundler.",
+  "sources": {
+    "ui.workspace": {
+      "path": "src/views/Workspace.tsx",
+      "symbol": "Workspace",
+      "sha256": null,
+      "included_path": null
+    },
+    "design.tokens": {
+      "path": "src/styles/tokens.css",
+      "symbol": ":root",
+      "sha256": null,
+      "included_path": null
+    }
+  }
+}

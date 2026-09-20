@@ -1,4 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
+import { getGenerationRequirement } from '../packages/shared/src/generationRequirements';
 import type {
   Attachment,
   ImageGenerationConfig,
@@ -217,7 +218,6 @@ export const useGenerationPipeline = ({
         activeRecipeRef.current,
       );
       const runId = beginRun(configToUse);
-      const recipeId = configToUse.recipeId;
       const workspaceId = resolveGenerationWorkspaceId(
         activeWorkspaceIdRef.current,
         options?.workspaceId,
@@ -225,9 +225,11 @@ export const useGenerationPipeline = ({
 
       try {
         // Validate Recipe Requirements
-        if (recipeId && configToUse.attachments.length === 0 && !configToUse.prompt?.trim()) {
-          throw new Error('This recipe needs a reference image or a prompt before it can run.');
-        }
+        const requirement = getGenerationRequirement({
+          ...configToUse,
+          referenceCount: configToUse.attachments.length,
+        });
+        if (requirement) throw new Error(requirement.message);
 
         const outcome = await runLocalGeneration({
           config: configToUse,

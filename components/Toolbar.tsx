@@ -1,3 +1,8 @@
+import { AnimatePresence } from '../lib/gsapMotion';
+import {
+  getGenerationRequirement,
+  getGenerationOutputSummary,
+} from '../packages/shared/src/generationRequirements';
 import { CreatePromptExpandDialog } from './create/CreatePromptExpandDialog';
 import { ReferenceTray } from './ReferenceTray';
 import {
@@ -420,27 +425,37 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       }
     }, [generationConfig.imageSize, selectedCodexTransport, updateConfig]);
 
+    const requirement = getGenerationRequirement({
+      ...generationConfig,
+      recipeId: activeRecipe,
+      prompt: localPrompt,
+      referenceCount: generationConfig.attachments.length,
+    });
+    const sourceFirst =
+      activeRecipe === 'remaster' || activeRecipe === 'camera' || activeRecipe === 'character-lab';
+
     const handleTriggerGenerate = useCallback(() => {
-      if (
-        generateBlock ||
-        (activeRecipe === 'styles' &&
-          !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)?.selectedStyles
-            ?.length)
-      )
+      if (generateBlock) return;
+      if (requirement) {
+        setQuickStartErrorScope(interactionScope);
+        setQuickStartError(requirement.field === 'prompt');
+        const target =
+          requirement.field === 'source'
+            ? '[aria-label="Add image reference"]'
+            : requirement.field === 'styles'
+              ? '[aria-label="Add a style"]'
+              : 'textarea';
+        containerRef.current?.querySelector<HTMLElement>(target)?.focus();
         return;
+      }
       const trimmedPrompt =
         localPrompt.trim() ||
         (activeRecipe === 'styles'
           ? 'Create a balanced composition using the selected styles.'
-          : '');
-      if (!trimmedPrompt && generationConfig.attachments.length === 0) {
-        setQuickStartErrorScope(interactionScope);
-        setQuickStartError(true);
-        setIsInteracting(true);
-        requestAnimationFrame(() => textareaRef.current?.focus({ preventScroll: true }));
-        return;
-      }
-
+          : activeRecipe === 'character-lab' &&
+              typeof generationConfig.recipeParams?.subject === 'string'
+            ? generationConfig.recipeParams.subject
+            : '');
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
       onGenerate(trimmedPrompt, { codexTransport: selectedCodexTransport }, { preventModal: true });
@@ -451,6 +466,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       setIsMobileControlsOpen(false);
     }, [
       localPrompt,
+      requirement,
       activeRecipe,
       generationConfig.recipeParams,
       generationConfig.attachments.length,
@@ -563,6 +579,11 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const isRail = layout === 'rail';
     const currentBatch = Math.min(generationConfig.batchCount || 1, maxOutputCount);
     const batchCounts = BATCH_COUNTS.filter((count) => count <= maxOutputCount);
+    const outputSummary = getGenerationOutputSummary(
+      activeRecipe,
+      generationConfig.recipeParams,
+      currentBatch,
+    );
     const nextBatchCount = Math.min(maxOutputCount, currentBatch + 1);
     const previousBatchCount = Math.max(1, currentBatch - 1);
     const formatOrientation =
@@ -659,6 +680,43 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       />
     );
 
+    const referenceField = (
+      <div className="create-reference-area" aria-label="Reference images">
+        <div className="create-reference-heading">
+          <span>{sourceFirst ? 'Source image' : 'References'}</span>
+          <span className="create-reference-count">
+            {generationConfig.attachments.length} / {maxAttachments}
+          </span>
+        </div>
+        <div className="create-reference-list">
+          {hasAttachments ? (
+            <ReferenceTray
+              attachments={generationConfig.attachments}
+              onEdit={onOpenEditor}
+              onRemove={onRemoveAttachment}
+              onFiles={onFilesDrop}
+              density="thumbs"
+            />
+          ) : (
+            <span className="create-reference-empty">
+              Drop an image or paste it into the prompt.
+            </span>
+          )}
+          {isNearLimit ? null : (
+            <button
+              type="button"
+              className="create-add-reference"
+              onClick={() => fileInputRef.current?.click()}
+              aria-label="Add image reference"
+            >
+              <Plus size={16} aria-hidden="true" />
+              <span>Add</span>
+            </button>
+          )}
+        </div>
+      </div>
+    );
+
     return (
       <div
         ref={containerRef}
@@ -688,7 +746,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
           {isRail ? (
             <div className="create-tool-scroll min-h-0 flex-1" onScroll={() => closeAllMenus()}>
-              {railTools}
+              {!sourceFirst || isContextOnly ? railTools : null}
               {isContextOnly ? (
                 <>
                   <section className="create-tool-block" aria-label="Attachments">
@@ -883,47 +941,16 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           Add prompt or image to generate
                         </div>
                       ) : null}
+                      {sourceFirst ? referenceField : null}
                       {promptField}
-                      <div className="create-reference-area" aria-label="Reference images">
-                        <div className="create-reference-heading">
-                          <span>References</span>
-                          <span className="create-reference-count">
-                            {generationConfig.attachments.length} / {maxAttachments}
-                          </span>
-                        </div>
-                        <div className="create-reference-list">
-                          {hasAttachments ? (
-                            <ReferenceTray
-                              attachments={generationConfig.attachments}
-                              onEdit={onOpenEditor}
-                              onRemove={onRemoveAttachment}
-                              onFiles={onFilesDrop}
-                              density="thumbs"
-                            />
-                          ) : (
-                            <span className="create-reference-empty">
-                              Drop an image or paste it into the prompt.
-                            </span>
-                          )}
-                          {isNearLimit ? null : (
-                            <button
-                              type="button"
-                              className="create-add-reference"
-                              onClick={() => fileInputRef.current?.click()}
-                              aria-label="Add image reference"
-                            >
-                              <Plus size={16} aria-hidden="true" />
-                              <span>Add</span>
-                            </button>
-                          )}
-                        </div>
-                      </div>
+                      {!sourceFirst ? referenceField : null}
                     </div>
                     {shouldShowQuickStartError ? (
                       <p className="create-prompt-error">Add a prompt or image to generate.</p>
                     ) : null}
                   </section>
 
+                  {sourceFirst ? railTools : null}
                   <div
                     className="create-output-grid"
                     data-has-size={showSizeControl ? 'true' : undefined}
@@ -1161,23 +1188,31 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         </span>
                         <ChevronDown size={13} aria-hidden="true" />
                       </button>
-                      {isAdvancedOpen ? (
-                        <div className="create-advanced-body" id="create-advanced-body">
-                          <label className="create-field-label" htmlFor="create-negative-input">
-                            Negative prompt
-                          </label>
-                          <textarea
-                            ref={negativeInputRef}
-                            id="create-negative-input"
-                            className="create-negative-input"
-                            value={generationConfig.negativePrompt || ''}
-                            onChange={(event) => updateConfig('negativePrompt', event.target.value)}
-                            placeholder="Blurry, low quality, distortion..."
-                            spellCheck={false}
-                            aria-label="Negative prompt"
-                          />
-                        </div>
-                      ) : null}
+                      <AnimatePresence>
+                        {isAdvancedOpen ? (
+                          <div
+                            data-motion-panel
+                            className="create-advanced-body"
+                            id="create-advanced-body"
+                          >
+                            <label className="create-field-label" htmlFor="create-negative-input">
+                              Negative prompt
+                            </label>
+                            <textarea
+                              ref={negativeInputRef}
+                              id="create-negative-input"
+                              className="create-negative-input"
+                              value={generationConfig.negativePrompt || ''}
+                              onChange={(event) =>
+                                updateConfig('negativePrompt', event.target.value)
+                              }
+                              placeholder="Blurry, low quality, distortion..."
+                              spellCheck={false}
+                              aria-label="Negative prompt"
+                            />
+                          </div>
+                        ) : null}
+                      </AnimatePresence>
                     </div>
                   ) : null}
                 </>
@@ -1996,12 +2031,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </div>
             </div>
 
-            {isRail &&
-            activeRecipe === 'styles' &&
-            !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)
-              ?.selectedStyles?.length ? (
-              <p className="create-style-empty" role="status">
-                Choose a style before generating.
+            {requirement ? (
+              <p id="generation-requirement" className="create-style-empty" role="status">
+                {requirement.message}
               </p>
             ) : null}
             {isRail ? railAction : null}
@@ -2014,14 +2046,16 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 <button
                   type="button"
                   onClick={handleTriggerGenerate}
-                  disabled={
-                    Boolean(generateBlock) ||
-                    (activeRecipe === 'styles' &&
-                      !(generationConfig.recipeParams as { selectedStyles?: unknown[] } | null)
-                        ?.selectedStyles?.length)
+                  disabled={Boolean(generateBlock)}
+                  aria-disabled={Boolean(requirement) || undefined}
+                  title={generateBlock?.message ?? requirement?.message}
+                  aria-describedby={
+                    requirement
+                      ? 'generation-requirement'
+                      : generateBlock
+                        ? 'grok-generate-block'
+                        : undefined
                   }
-                  title={generateBlock?.message}
-                  aria-describedby={generateBlock ? 'grok-generate-block' : undefined}
                   data-studio-generate-button
                   data-generate-active={isGenerating ? 'true' : 'false'}
                   className={
@@ -2043,9 +2077,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   ) : isRail ? (
                     <>
                       <Sparkles size={17} aria-hidden="true" />
-                      <span>
-                        {`Generate ${currentBatch} ${currentBatch === 1 ? 'image' : 'images'}`}
-                      </span>
+                      <span>{`Generate ${outputSummary}`}</span>
                     </>
                   ) : (
                     <>
@@ -2073,9 +2105,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     role={generateBlock ? 'status' : undefined}
                   >
                     {generateBlock?.message ??
-                      (isGenerating
-                        ? 'Generating'
-                        : (commandCenter?.runtimeStatus.label ?? 'Ready'))}
+                      (isGenerating ? 'Generating' : (requirement?.message ?? 'Ready to generate'))}
                   </span>
                 </span>
                 {isGenerating ? null : <kbd className="create-shortcut-hint">{shortcutHint}</kbd>}
@@ -2093,13 +2123,17 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           ) : null}
         </div>
 
-        <CreatePromptExpandDialog
-          isOpen={isRail && isPromptExpanded}
-          value={expandedPrompt}
-          onChange={setExpandedPrompt}
-          onClose={() => setIsPromptExpanded(false)}
-          onSave={saveExpandedPrompt}
-        />
+        <AnimatePresence>
+          {isRail && isPromptExpanded && (
+            <CreatePromptExpandDialog
+              isOpen={isRail && isPromptExpanded}
+              value={expandedPrompt}
+              onChange={setExpandedPrompt}
+              onClose={() => setIsPromptExpanded(false)}
+              onSave={saveExpandedPrompt}
+            />
+          )}
+        </AnimatePresence>
 
         {/* Key Selector Popover (External) */}
         <KeyPopover

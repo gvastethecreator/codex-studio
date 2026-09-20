@@ -613,9 +613,6 @@
   width: 228px;
   z-index: 80;
   padding: 7px;
-  transition:
-    top 180ms ease-out,
-    left 180ms ease-out;
 }
 
 .cs-preview-image {
@@ -1241,6 +1238,53 @@
 
 .cs-add > svg:last-child {
   margin-inline-start: auto;
+}
+
+.cs-popover[hidden] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cs-popover,
+  .cs-weight,
+  .cs-preview {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: top left;
+    transition:
+      opacity var(--dropdown-open-dur) var(--dropdown-ease),
+      transform var(--dropdown-open-dur) var(--dropdown-ease),
+      display var(--dropdown-open-dur) allow-discrete;
+  }
+
+  .cs-popover[hidden],
+  .cs-preview[hidden] {
+    opacity: 0;
+    transform: scale(0.985);
+    transition-duration: var(--dropdown-close-dur);
+    pointer-events: none;
+  }
+
+  @starting-style {
+    .cs-popover:not([hidden]),
+    .cs-weight,
+    .cs-preview:not([hidden]) {
+      opacity: 0;
+      transform: scale(0.985);
+    }
+  }
+
+  :is(.cs-popover, .cs-weight, .cs-preview)[data-keyboard] {
+    transition: none;
+  }
+
+  :is(.cs-add, .cs-empty) > svg:last-child {
+    transition: rotate var(--dropdown-open-dur) var(--dropdown-ease);
+  }
+
+  :is(.cs-add, .cs-empty)[aria-expanded='true'] > svg:last-child {
+    rotate: 180deg;
+  }
 }
 .style-preset-tile [data-style-active-image-label] {
   opacity: 0;

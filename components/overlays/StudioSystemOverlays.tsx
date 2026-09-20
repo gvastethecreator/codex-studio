@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { Suspense, useMemo } from 'react';
 
 import { ErrorBoundary } from '../ErrorBoundary';
@@ -112,7 +113,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   });
 
   return (
-    <>
+    <AnimatePresence>
       {mountedSurfaces.includes('debug') ? (
         <ErrorBoundary fallbackMessage="Could not load studio activity.">
           <Suspense
@@ -260,6 +261,6 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
           </Suspense>
         </ErrorBoundary>
       ) : null}
-    </>
+    </AnimatePresence>
   );
 };

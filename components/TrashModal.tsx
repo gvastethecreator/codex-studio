@@ -34,7 +34,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
     <AnimatePresence>
       <div className="fixed inset-0 z-[100] flex items-center justify-center p-0 sm:p-4 md:p-8">
         <MotionDiv
-          aria-label="Close trash"
+          aria-label="Close archive"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -46,7 +46,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           ref={dialogRef}
           role="dialog"
           aria-modal="true"
-          aria-label="Trash"
+          aria-label="Archive"
           tabIndex={-1}
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -61,7 +61,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
               </div>
               <div className="min-w-0">
                 <h2 className="truncate text-base font-semibold tracking-normal text-[color:var(--wb-ink)] sm:text-lg">
-                  Trash
+                  Archive
                 </h2>
                 <p className="text-[length:var(--wbp-label)] text-[color:var(--wb-muted)] font-bold tracking-normal">
                   {trash.length} image groups available to restore
@@ -86,13 +86,13 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                     className="flex items-center gap-2 rounded-[var(--wb-radius)] bg-red-500/10 px-3 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] transition-colors hover:bg-red-500/20 sm:px-4 cursor-pointer"
                   >
                     <Trash size={14} />
-                    <span>Empty trash</span>
+                    <span>Delete permanently</span>
                   </button>
                 </>
               )}
               <button
                 type="button"
-                aria-label="Close trash"
+                aria-label="Close archive"
                 onClick={onClose}
                 className="p-2 rounded-[var(--wb-radius)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] transition-colors cursor-pointer"
               >
@@ -109,10 +109,10 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                   <Trash2 size={32} />
                 </div>
                 <h3 className="text-[color:var(--wb-muted)] font-bold tracking-normal text-sm mb-1">
-                  Trash is empty
+                  Archive is empty
                 </h3>
                 <p className="text-[color:var(--wb-dim)] text-xs max-w-[240px]">
-                  Images moved to trash appear here until you restore or permanently delete them.
+                  Images archived appear here until you restore or permanently delete them.
                 </p>
               </div>
             ) : (
@@ -175,8 +175,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
           <div className="p-4 bg-[color:var(--wb-well)] border-t border-[color:var(--wb-line)] flex items-center gap-3">
             <AlertCircle size={14} className="text-[color:var(--wb-dim)]" />
             <p className="text-[length:var(--wbp-label)] text-[color:var(--wb-dim)] font-bold tracking-normal">
-              Restore images to return them to their workspace. Emptying trash permanently deletes
-              them.
+              Restore images to return them to their workspace. Deleting permanently removes them.
             </p>
           </div>
         </MotionDiv>

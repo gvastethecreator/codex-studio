@@ -63,14 +63,16 @@ const Toast: React.FC<ToastProps> = ({ toast, onDismiss }) => {
 
   return (
     <div
-      className={`relative w-full max-w-md bg-[color:var(--wb-panel)]/95 backdrop-blur-xl rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.5)] p-5 border-l-4 ${borderColors[toast.type]} animate-in slide-in-from-top-4 fade-in-0 duration-300 overflow-hidden`}
+      className={`relative w-full max-w-md bg-[color:var(--wb-panel)]/95 backdrop-blur-xl rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.5)] p-5 border-l-4 ${borderColors[toast.type]} studio-toast overflow-hidden`}
       role={toast.type === 'error' ? 'alert' : 'status'}
       aria-live={toast.type === 'error' ? 'assertive' : 'polite'}
     >
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0 mt-0.5">{icons[toast.type]}</div>
         <div className="flex-grow flex flex-col justify-center min-h-[1.5rem]">
-          <p className="text-base text-[color:var(--wb-ink)] font-medium leading-snug">{toast.message}</p>
+          <p className="text-base text-[color:var(--wb-ink)] font-medium leading-snug">
+            {toast.message}
+          </p>
         </div>
         <button
           type="button"
@@ -83,8 +85,8 @@ const Toast: React.FC<ToastProps> = ({ toast, onDismiss }) => {
       </div>
       <div className="absolute bottom-0 left-0 h-1 w-full bg-[color:color-mix(in_srgb,var(--wb-ink)_12%,transparent)]">
         <div
-          className={`h-full ${progressColors[toast.type]} transition-[width] duration-75 ease-linear`}
-          style={{ width: `${progress}%` }}
+          className={`h-full ${progressColors[toast.type]} origin-left transition-transform duration-75 ease-linear`}
+          style={{ transform: `scaleX(${progress / 100})` }}
         />
       </div>
     </div>

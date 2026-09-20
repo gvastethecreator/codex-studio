@@ -56,8 +56,13 @@ describe('recipeModules', () => {
     const camera = getRecipeModule('camera');
 
     expect(remaster && createRecipeDefaultParams(remaster)).toMatchObject({
-      style: 'Realistic Reconstruction',
-      fidelity: 35,
+      style: 'Archive Restoration',
+      lighting: 'Preserve Lighting',
+      camera: 'Preserve Detail',
+      anatomy: 'Preserve Geometry and Identity',
+      text: 'Keep Original',
+      color: 'Preserve Colors',
+      fidelity: 100,
     });
     expect(camera?.parameters.find((parameter) => parameter.id === 'azimuth')).toMatchObject({
       control: 'slider',

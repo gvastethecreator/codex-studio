@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../../lib/gsapMotion';
 import React from 'react';
 
 import { ConfirmationModal } from '../ConfirmationModal';
@@ -9,17 +10,21 @@ export const StudioConfirmationOverlay: React.FC<StudioConfirmationOverlayProps>
   confirmPendingAction,
 }) => {
   return (
-    <ConfirmationModal
-      isOpen={!!pendingConfirmation}
-      title={pendingConfirmation?.title ?? ''}
-      description={pendingConfirmation?.description ?? ''}
-      confirmLabel={pendingConfirmation?.confirmLabel ?? 'Confirm'}
-      cancelLabel={pendingConfirmation?.cancelLabel}
-      tone={pendingConfirmation?.tone}
-      details={pendingConfirmation?.details}
-      note={pendingConfirmation?.note}
-      onClose={closeConfirmation}
-      onConfirm={confirmPendingAction}
-    />
+    <AnimatePresence>
+      {pendingConfirmation && (
+        <ConfirmationModal
+          isOpen={!!pendingConfirmation}
+          title={pendingConfirmation?.title ?? ''}
+          description={pendingConfirmation?.description ?? ''}
+          confirmLabel={pendingConfirmation?.confirmLabel ?? 'Confirm'}
+          cancelLabel={pendingConfirmation?.cancelLabel}
+          tone={pendingConfirmation?.tone}
+          details={pendingConfirmation?.details}
+          note={pendingConfirmation?.note}
+          onClose={closeConfirmation}
+          onConfirm={confirmPendingAction}
+        />
+      )}
+    </AnimatePresence>
   );
 };

@@ -59,6 +59,14 @@ artifacts/
 !artifacts/.gitkeep
 port-this/
 
+# Interface handoff runtime (keep config.json)
+.interface-handoff/state.json
+.interface-handoff/reconciliation.json
+.interface-handoff/inputs.*.json
+.interface-handoff/runs/
+.interface-handoff/cache/
+.interface-handoff/*.lock
+
 # Project-specific generated style data
 components/recipes/styles/defaults/.locks/
 components/recipes/styleRuntimeData.generated.check.*.tmp.ts

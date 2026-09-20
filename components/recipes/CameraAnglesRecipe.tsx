@@ -85,6 +85,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
   const hasReference = !!activeImage;
   const {
     mountRef,
+    viewportError,
     cameraState: { azimuth, elevation, distance },
     setAzimuth,
     setElevation,
@@ -226,6 +227,14 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
               </div>
             </div>
 
+            {viewportError ? (
+              <div
+                role="status"
+                className="absolute inset-0 z-40 grid place-items-center bg-[color:var(--wb-panel)] p-6 text-center text-sm text-[color:var(--wb-ink)]"
+              >
+                {viewportError}
+              </div>
+            ) : null}
             {/* Instruction Overlay */}
             <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-4 py-2 rounded-[var(--wb-radius)] bg-[color:var(--wb-well)] border border-[color:var(--wb-line)] backdrop-blur-sm text-[color:var(--wb-muted)] text-[length:var(--wbp-label)] font-bold opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none flex items-center gap-3">
               <span className="flex items-center gap-1.5">

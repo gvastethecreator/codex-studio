@@ -43,13 +43,13 @@ const CONTROL_OPTIONS = {
 const FIDELITY_RANGE = getRecipeRange(REMASTER_MODULE, 'fidelity', { min: 0, max: 100, step: 1 });
 
 const DEFAULT_PARAMS = {
-  style: getRecipeStringDefault(REMASTER_DEFAULTS, 'style', 'Realistic Reconstruction'),
-  lighting: getRecipeStringDefault(REMASTER_DEFAULTS, 'lighting', 'Lighting Correction'),
-  camera: getRecipeStringDefault(REMASTER_DEFAULTS, 'camera', 'Sharp Focus'),
-  anatomy: getRecipeStringDefault(REMASTER_DEFAULTS, 'anatomy', 'Fix Anatomy'),
-  text: getRecipeStringDefault(REMASTER_DEFAULTS, 'text', 'Rewrite Logically'),
-  color: getRecipeStringDefault(REMASTER_DEFAULTS, 'color', 'Expanded Dynamic Range'),
-  fidelity: getRecipeNumberDefault(REMASTER_DEFAULTS, 'fidelity', 35),
+  style: getRecipeStringDefault(REMASTER_DEFAULTS, 'style', 'Archive Restoration'),
+  lighting: getRecipeStringDefault(REMASTER_DEFAULTS, 'lighting', 'Preserve Lighting'),
+  camera: getRecipeStringDefault(REMASTER_DEFAULTS, 'camera', 'Preserve Detail'),
+  anatomy: getRecipeStringDefault(REMASTER_DEFAULTS, 'anatomy', 'Preserve Geometry and Identity'),
+  text: getRecipeStringDefault(REMASTER_DEFAULTS, 'text', 'Keep Original'),
+  color: getRecipeStringDefault(REMASTER_DEFAULTS, 'color', 'Preserve Colors'),
+  fidelity: getRecipeNumberDefault(REMASTER_DEFAULTS, 'fidelity', 100),
 };
 
 export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
@@ -91,11 +91,53 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
   const BottomDock = useMemo(
     () => (
       <>
+        <div className="create-tool-block">
+          <div className="flex gap-2">
+            <button
+              type="button"
+              className="studio-ghost-control px-3 py-2"
+              onClick={() => setParams({ ...DEFAULT_PARAMS })}
+            >
+              Restore safely
+            </button>
+            <button
+              type="button"
+              className="studio-ghost-control px-3 py-2"
+              onClick={() =>
+                setParams((p) => ({ ...p, style: 'Realistic Reconstruction', fidelity: 35 }))
+              }
+            >
+              Reinterpret
+            </button>
+          </div>
+          <p className="mt-2 text-xs text-[color:var(--wb-muted)]">
+            {params.anatomy} · {params.text} · {params.lighting} · {params.color} · {params.camera}.
+            These are instructions, not a guarantee of exact preservation.
+          </p>
+        </div>
         <div className="flex flex-col gap-2 px-6 border-r border-[color:var(--wb-line)] min-w-[240px]">
           <div className="flex justify-between text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
             <span>Creative Freedom</span>
             <span>Faithful to Original</span>
           </div>
+          <label className="flex items-center justify-between gap-2 text-xs">
+            Fidelity
+            <input
+              type="number"
+              min={0}
+              max={100}
+              step={1}
+              aria-label="Fidelity value"
+              value={params.fidelity}
+              onChange={(event) =>
+                setParams((p) => ({
+                  ...p,
+                  fidelity: Math.max(0, Math.min(100, Number(event.target.value) || 0)),
+                }))
+              }
+              className="w-16 rounded border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-1"
+            />
+          </label>
           <input
             type="range"
             min={FIDELITY_RANGE.min}

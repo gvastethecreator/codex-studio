@@ -606,6 +606,9 @@ export function useStudioShell(): StudioShellController {
           previewRatio: viewState.preview.ratio,
           generationAspectRatio: config.aspectRatio,
           isInteractingWithToolbar: ui.isInteractingWithToolbar,
+          searchQuery: catalogQuery,
+          onClearSearch: () => setCatalogQuery(''),
+          onCreate: () => handleRecipeSelection(null),
           catalogTotal: activeCatalog.total,
           catalogHasMore: activeCatalog.hasMore,
           isCatalogLoading: activeCatalog.isLoading,
@@ -625,6 +628,8 @@ export function useStudioShell(): StudioShellController {
         },
       }),
     [
+      catalogQuery,
+      handleRecipeSelection,
       workspaces,
       studioRuntime.activity.mergedLogs,
       catalogVisualGroupCount,

@@ -374,7 +374,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
       aria-modal="true"
       tabIndex={-1}
       aria-label="Image editor"
-      className="fixed inset-0 z-100 m-0 flex h-full w-full flex-col border-none bg-[color:var(--wba-bg)] p-0 backdrop-blur-3xl animate-in fade-in duration-500"
+      className="fixed inset-0 z-100 m-0 flex h-full w-full flex-col border-none bg-[color:var(--wba-bg)] p-0 backdrop-blur-3xl studio-image-editor"
     >
       <div className="studio-bar flex shrink-0 min-h-16 w-full items-center justify-between gap-3 border-b border-[color:var(--wb-line)] px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
         <div className="flex min-w-0 items-center gap-3 sm:gap-5">

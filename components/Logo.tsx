@@ -1,33 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logoSvg from '../assets/logo.svg?raw';
-import { useTheme } from '../hooks/useTheme';
 
 interface LogoProps {
   isGenerating?: boolean;
 }
 
 const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
-  const { cycleTheme } = useTheme();
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleCycleTheme = () => {
-    if (isAnimating) return;
-
-    setIsAnimating(true);
-    cycleTheme();
-
-    setTimeout(() => {
-      setIsAnimating(false);
-    }, 500);
-  };
-
   return (
-    <button
-      type="button"
-      onClick={handleCycleTheme}
-      className={`group relative flex items-center gap-2 rounded-lg p-0.5 outline-none select-none transition-transform active:scale-95 ${isAnimating ? 'animate-logo-pop' : ''}`}
-      aria-label="Cycle accent color"
-      title="Click to cycle accent color"
+    <div
+      className="studio-logo relative flex items-center gap-2 rounded-lg p-0.5 select-none"
+      aria-label="Codex Studio"
     >
       <div className="relative flex size-7 items-center justify-center">
         <div className="absolute inset-0 rounded-xl bg-accent-500/18 transition-[opacity,transform] duration-500 ease-out-expo group-hover:scale-110 group-hover:opacity-100" />
@@ -55,7 +37,7 @@ const Logo: React.FC<LogoProps> = ({ isGenerating = false }) => {
           STUDIO
         </span>
       </div>
-    </button>
+    </div>
   );
 };
 

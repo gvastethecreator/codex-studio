@@ -18,13 +18,16 @@ export function useDialogFocus(isOpen: boolean, onClose: () => void, returnFocus
         root.querySelectorAll<HTMLElement>('button, input, textarea, select, a[href], [tabindex]'),
       ).filter(
         (node) =>
-          !node.matches(':disabled') && node.tabIndex >= 0 && node.getClientRects().length > 0,
+          !node.matches(':disabled') &&
+          !node.closest('[inert]') &&
+          node.tabIndex >= 0 &&
+          node.getClientRects().length > 0,
       );
     (controls()[0] ?? root).focus();
     const keydown = (event: KeyboardEvent) => {
       const dialogs = Array.from(
         document.querySelectorAll<HTMLElement>('[aria-modal="true"]'),
-      ).filter((node) => node.getClientRects().length > 0);
+      ).filter((node) => !node.closest('[inert]') && node.getClientRects().length > 0);
       if (dialogs.at(-1) !== root) return;
       if (event.key === 'Escape') {
         event.preventDefault();
@@ -49,6 +52,9 @@ export function useDialogFocus(isOpen: boolean, onClose: () => void, returnFocus
       restoreFrameRef.current = requestAnimationFrame(() => {
         restoreFrameRef.current = null;
         openerRef.current = null;
+        // An exit can finish after the user has already focused another control.
+        if (document.activeElement !== document.body && !root.contains(document.activeElement))
+          return;
         if (previous instanceof HTMLElement && previous !== document.body && previous.isConnected)
           previous.focus();
         else if (returnFocusSelector)

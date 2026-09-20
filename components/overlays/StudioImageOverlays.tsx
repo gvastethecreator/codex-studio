@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { Suspense } from 'react';
 
 import { ErrorBoundary } from '../ErrorBoundary';
@@ -56,28 +57,30 @@ export const StudioImageOverlays: React.FC<StudioImageOverlaysProps> = ({
           transitionName="master-canvas"
         />
       )}
-      {isEditorOpen && (
-        <ErrorBoundary fallbackMessage="Could not load the image editor.">
-          <Suspense
-            fallback={
-              <LazySurfaceFallback
-                label="Loading editor"
-                className="fixed inset-0 z-50 grid place-items-center studio-scrim"
+      <AnimatePresence>
+        {isEditorOpen && (
+          <ErrorBoundary fallbackMessage="Could not load the image editor.">
+            <Suspense
+              fallback={
+                <LazySurfaceFallback
+                  label="Loading editor"
+                  className="fixed inset-0 z-50 grid place-items-center studio-scrim"
+                />
+              }
+            >
+              <ImageEditorModal
+                isOpen={isEditorOpen}
+                onClose={closeEditor}
+                image={imageToEdit}
+                onGenerate={handleExecuteEdit}
+                isGenerating={isEditingImage}
+                notice={imageEditNotice}
+                requireMask={requireMask}
               />
-            }
-          >
-            <ImageEditorModal
-              isOpen={isEditorOpen}
-              onClose={closeEditor}
-              image={imageToEdit}
-              onGenerate={handleExecuteEdit}
-              isGenerating={isEditingImage}
-              notice={imageEditNotice}
-              requireMask={requireMask}
-            />
-          </Suspense>
-        </ErrorBoundary>
-      )}
+            </Suspense>
+          </ErrorBoundary>
+        )}
+      </AnimatePresence>
     </>
   );
 };

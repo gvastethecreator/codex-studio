@@ -1,6 +1,7 @@
 import { useLinkedJobStatuses } from '../../hooks/useLinkedJobStatuses';
 import { RecipeControls, RecipePrimaryAction, RecipeOptionsPanel } from './RecipeWorkbenchContext';
 import React from 'react';
+import { AnimationFramePreview } from './AnimationFramePreview';
 import {
   IconAlertTriangle as AlertTriangle,
   IconCheck as Check,
@@ -922,24 +923,27 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
           <div className="grid min-h-0 flex-1 grid-rows-[minmax(0,1fr)_auto] overflow-hidden">
             <div className="custom-scrollbar overflow-y-auto p-3">
+              <AnimationFramePreview
+                key={activeRun?.id ?? 'draft'}
+                fps={activeRun?.contract.fps ?? contract.fps}
+                frames={framePlan.frames.map((frame) => ({
+                  id: frame.id,
+                  catalogImageId: activeRun?.frames.find((item) => item.id === frame.id)
+                    ?.catalogImageId,
+                  src: activeRun
+                    ? findGeneratedFrameImage(images, activeRun.id, frame.id)?.src
+                    : undefined,
+                }))}
+              />
               {activeRun && gifExport ? (
-                <div className="mb-3 overflow-hidden rounded-[var(--wb-radius)] border border-emerald-500/2 bg-emerald-500/10">
-                  <img
-                    src={`${getAnimationSequenceGifUrl(activeRun.id)}?t=${encodeURIComponent(activeRun.updatedAt)}`}
-                    alt="Exported animation preview"
-                    className="mx-auto max-h-[340px] w-auto max-w-full object-contain"
-                  />
-                </div>
-              ) : (
-                <div className="mb-3 grid min-h-[220px] place-items-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.025] text-center">
-                  <div>
-                    <Gif size={44} className="mx-auto text-[color:var(--wb-dim)]" />
-                    <p className="mt-3 text-xs font-bold text-[color:var(--wb-muted)]">
-                      The playable preview appears after every frame is attached and exported.
-                    </p>
-                  </div>
-                </div>
-              )}
+                <a
+                  className="mb-3 inline-block text-xs underline"
+                  href={getAnimationSequenceGifUrl(activeRun.id)}
+                  download
+                >
+                  Download exported GIF
+                </a>
+              ) : null}
 
               <div className="grid grid-cols-[repeat(auto-fit,minmax(112px,1fr))] gap-2">
                 {framePlan.frames.map((planFrame) => {

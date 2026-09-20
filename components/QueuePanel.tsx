@@ -268,6 +268,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
         </div>
         <div
           key={`${view}:${workspaceFilter}`}
+          data-motion-panel
           className="custom-scrollbar min-h-0 flex-1 space-y-3 overflow-y-auto p-3"
         >
           {jobHistory.error ? (

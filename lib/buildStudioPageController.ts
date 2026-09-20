@@ -81,6 +81,9 @@ interface StudioPageGridContext {
   previewRatio: AspectRatio | null;
   generationAspectRatio: AspectRatio;
   isInteractingWithToolbar: boolean;
+  searchQuery?: string;
+  onClearSearch?: () => void;
+  onCreate?: () => void;
   catalogTotal: number;
   catalogHasMore: boolean;
   isCatalogLoading: boolean;
@@ -187,6 +190,9 @@ export function buildStudioPageController(
       },
     },
     grid: {
+      searchQuery: args.grid.searchQuery,
+      onClearSearch: args.grid.onClearSearch,
+      onCreate: args.grid.onCreate,
       activeWorkspaceId: args.grid.activeWorkspaceId,
       allImages: args.grid.allImages,
       imagesWithConfig: args.grid.imagesWithConfig,

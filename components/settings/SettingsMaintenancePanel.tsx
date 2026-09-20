@@ -76,7 +76,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
 
   const handleWriteCompact = () => {
     const confirmed = window.confirm(
-      'Compact historical inline image payloads now? A local SQLite backup will be created first.',
+      `Compact ${compactRows} historical rows (${formatBytes(compactBytes)})? A local SQLite backup will be created first. Original image files stay in your library.`,
     );
     if (!confirmed) return;
     void compactStorage({ write: true, confirm: 'compact-inline-payloads' });
@@ -84,7 +84,7 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
 
   const handleWriteThumbnails = () => {
     const confirmed = window.confirm(
-      'Backfill thumbnails for source files that still exist? A local SQLite backup will be created first.',
+      `Create ${thumbnailBackfillResult?.plannedRows ?? 0} missing thumbnails for available source files? A local SQLite backup will be created first.`,
     );
     if (!confirmed) return;
     void backfillThumbnails({ write: true, confirm: 'backfill-thumbnails', limit: 1000 });
@@ -163,6 +163,9 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
             <Database size={14} className="text-[color:var(--wb-muted)]" />
             Payloads
           </div>
+          <p className="mb-3 text-xs text-[color:var(--wb-muted)]">
+            Preview the affected rows with Plan before applying changes.
+          </p>
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
@@ -177,10 +180,10 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
             <button
               type="button"
               onClick={handleWriteCompact}
-              disabled={isCompactRunning}
+              disabled={isCompactRunning || compactResult?.mode !== 'dry-run' || compactRows === 0}
               className="h-8 rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)]  transition-colors hover:bg-amber-500/15 disabled:opacity-40"
             >
-              Write
+              Apply plan
             </button>
           </div>
         </div>
@@ -190,6 +193,9 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
             <FileImage size={14} className="text-[color:var(--wb-muted)]" />
             Thumbnails
           </div>
+          <p className="mb-3 text-xs text-[color:var(--wb-muted)]">
+            Preview the affected rows with Plan before applying changes.
+          </p>
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
@@ -203,10 +209,14 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
             <button
               type="button"
               onClick={handleWriteThumbnails}
-              disabled={isThumbnailRunning}
+              disabled={
+                isThumbnailRunning ||
+                thumbnailBackfillResult?.mode !== 'dry-run' ||
+                thumbnailBackfillResult.plannedRows === 0
+              }
               className="h-8 rounded-[var(--wb-radius)] border border-emerald-400/2 bg-emerald-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-success)]  transition-colors hover:bg-emerald-500/15 disabled:opacity-40"
             >
-              Write
+              Apply plan
             </button>
           </div>
         </div>
@@ -218,7 +228,14 @@ export function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePan
           </div>
           <button
             type="button"
-            onClick={() => void pruneToolingLogs({ retainPerTask: 20 })}
+            onClick={() => {
+              if (
+                window.confirm(
+                  'Remove older tooling logs, keeping the newest 20 per task? Generated images and jobs are preserved.',
+                )
+              )
+                void pruneToolingLogs({ retainPerTask: 20 });
+            }}
             disabled={isPruneRunning}
             className="flex h-8 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-40"
           >

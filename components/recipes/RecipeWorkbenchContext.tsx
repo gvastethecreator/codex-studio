@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { createContext, useContext, useEffect, useId, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -161,34 +162,36 @@ export function RecipeOptionsPanel({
           {title}
         </button>
       </RecipeControls>
-      {open && (
-        <RecipeSidePanel>
-          <div
-            ref={panelRef}
-            id={id}
-            role="dialog"
-            aria-modal="false"
-            aria-label={title}
-            tabIndex={-1}
-            className="studio-surface create-side-panel-dialog"
-          >
-            <div className="create-side-panel-head">
-              <strong>{title}</strong>
-              <button
-                type="button"
-                aria-label={`Close ${title.toLowerCase()}`}
-                onClick={() => {
-                  setOpen(false);
-                  triggerRef.current?.focus();
-                }}
-              >
-                ×
-              </button>
+      <RecipeSidePanel>
+        <AnimatePresence>
+          {open && (
+            <div
+              ref={panelRef}
+              id={id}
+              role="dialog"
+              aria-modal="false"
+              aria-label={title}
+              tabIndex={-1}
+              className="studio-surface create-side-panel-dialog"
+            >
+              <div className="create-side-panel-head">
+                <strong>{title}</strong>
+                <button
+                  type="button"
+                  aria-label={`Close ${title.toLowerCase()}`}
+                  onClick={() => {
+                    setOpen(false);
+                    triggerRef.current?.focus();
+                  }}
+                >
+                  ×
+                </button>
+              </div>
+              <div className="create-side-panel-body custom-scrollbar">{children}</div>
             </div>
-            <div className="create-side-panel-body custom-scrollbar">{children}</div>
-          </div>
-        </RecipeSidePanel>
-      )}
+          )}
+        </AnimatePresence>
+      </RecipeSidePanel>
     </>
   );
 }

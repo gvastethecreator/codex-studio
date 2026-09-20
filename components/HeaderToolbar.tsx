@@ -149,7 +149,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               <button
                 type="button"
                 className="studio-nav-tab studio-control"
-                aria-label="Go to studio"
+                aria-label="Open Library"
                 aria-current={currentView === 'studio' ? 'page' : undefined}
                 onClick={() => onViewChange('studio')}
               >
@@ -247,7 +247,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 onClick={onOpenTrash}
                 aria-label="Open archived images"
               >
-                Trash
+                Archive
               </button>
             </div>
           </details>

@@ -107,6 +107,7 @@ function useTimelineKeyboard(
 }
 
 interface TimelineBottomDockProps {
+  hasFrames: boolean;
   direction: 'forward' | 'backward';
   timeDelta: { label: string };
   motionAmount: string;
@@ -122,6 +123,7 @@ interface TimelineBottomDockProps {
 }
 
 function TimelineBottomDock({
+  hasFrames,
   direction,
   timeDelta,
   motionAmount,
@@ -148,6 +150,7 @@ function TimelineBottomDock({
           />
           <button
             type="button"
+            disabled={!hasFrames}
             onClick={() => onSetDirection('backward')}
             className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-[var(--wb-radius)] transition-colors ${direction === 'backward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
           >
@@ -158,6 +161,7 @@ function TimelineBottomDock({
           </button>
           <button
             type="button"
+            disabled={!hasFrames}
             onClick={() => onSetDirection('forward')}
             className={`relative flex-1 justify-center px-4 py-2 flex items-center gap-2 rounded-[var(--wb-radius)] transition-colors ${direction === 'forward' ? 'text-teal-400' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)]'}`}
           >
@@ -181,7 +185,6 @@ function TimelineBottomDock({
           const opt = TIME_OPTIONS.find((o) => o.label === l);
           if (opt) onSetTimeDelta(opt);
         }}
-        activeColor="teal"
       />
 
       <div className="h-8 w-px bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] mx-2 hidden sm:block" />
@@ -196,7 +199,6 @@ function TimelineBottomDock({
             label={motionAmount}
             options={MOTION_OPTIONS}
             onSelect={onSetMotionAmount}
-            activeColor="orange"
           />
           <ControlDropdown
             title="Lighting"
@@ -204,7 +206,6 @@ function TimelineBottomDock({
             label={lightingMode}
             options={LIGHTING_OPTIONS}
             onSelect={onSetLightingMode}
-            activeColor="yellow"
           />
         </div>
       </details>
@@ -355,32 +356,53 @@ function TimelineCanvas({
               />
             </>
           ) : (
-            <button
-              type="button"
-              onDragOver={(e) => e.preventDefault()}
-              onDrop={handleDrop}
-              onClick={() => fileInputRef.current?.click()}
-              className="group flex size-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-colors hover:bg-white/3 appearance-none border-none p-0 m-0"
-            >
-              <input
-                type="file"
-                ref={fileInputRef}
-                onChange={(e) =>
-                  e.target.files && onLocalUpload(Array.from(e.target.files) as File[])
-                }
-                aria-label="Upload file"
-                className="hidden"
-                accept="image/*"
-              />
-              <div className="size-20 rounded-full bg-[color:var(--wb-panel)] border border-[color:var(--wb-line)] flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
-                <Clock size={32} className="text-[color:var(--wb-dim)] group-hover:text-teal-400" />
-              </div>
-              <QuickStartText
-                title="Load Scene Keyframe or Prompt"
-                subtitle="The starting point of time"
-                maxTitleFontSize={20}
-              />
-            </button>
+            <div className="flex size-full flex-col items-center justify-center">
+              <button
+                type="button"
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={handleDrop}
+                onClick={() => fileInputRef.current?.click()}
+                className="group flex size-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-colors hover:bg-white/3 appearance-none border-none p-0 m-0"
+              >
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  onChange={(e) =>
+                    e.target.files && onLocalUpload(Array.from(e.target.files) as File[])
+                  }
+                  aria-label="Upload file"
+                  className="hidden"
+                  accept="image/*"
+                />
+                <div className="size-20 rounded-full bg-[color:var(--wb-panel)] border border-[color:var(--wb-line)] flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
+                  <Clock
+                    size={32}
+                    className="text-[color:var(--wb-dim)] group-hover:text-teal-400"
+                  />
+                </div>
+                <QuickStartText
+                  title="Add first keyframe"
+                  subtitle="Choose an image to start the sequence"
+                  maxTitleFontSize={20}
+                />
+              </button>
+              <button
+                type="button"
+                className="studio-ghost-control mb-6 px-4 py-2"
+                onClick={() => {
+                  document
+                    .querySelector<HTMLButtonElement>('[role="tab"][data-configure-tab]')
+                    ?.click();
+                  requestAnimationFrame(() =>
+                    document
+                      .querySelector<HTMLTextAreaElement>('[aria-label="Prompt input"]')
+                      ?.focus(),
+                  );
+                }}
+              >
+                Create from prompt
+              </button>
+            </div>
           )}
         </div>
       </div>
@@ -742,6 +764,7 @@ function useTimelineRecipeController({
   const bottomDock = useMemo(
     () => (
       <TimelineBottomDock
+        hasFrames={timelineItems.length > 0}
         direction={direction}
         timeDelta={timeDelta}
         motionAmount={motionAmount}
@@ -757,6 +780,7 @@ function useTimelineRecipeController({
       />
     ),
     [
+      timelineItems.length,
       direction,
       timeDelta,
       motionAmount,

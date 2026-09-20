@@ -75,6 +75,7 @@ export const AppContent: React.FC = () => {
   const [controlsTarget, setControlsTarget] = useState<HTMLElement | null>(null);
   const [overlayTarget, setOverlayTarget] = useState<HTMLElement | null>(null);
   const [sidePanelTarget, setSidePanelTarget] = useState<HTMLElement | null>(null);
+  const [isNarrowWorkbench, setIsNarrowWorkbench] = useState(false);
   const [workspaceTab, setWorkspaceTab] = useState<'configure' | 'preview'>('configure');
   const [compare, setCompare] = useState<CanvasCompareChrome>(null);
   const ambient = workbenchAmbientRootProps(appearance);
@@ -143,6 +144,7 @@ export const AppContent: React.FC = () => {
         {isWorkspace && (
           <div
             className="workbench-tabs"
+            data-narrow={isNarrowWorkbench}
             role="tablist"
             aria-label={isRecipe ? 'Recipe workspace' : 'Create workspace'}
             onKeyDown={(event) => {
@@ -194,6 +196,8 @@ export const AppContent: React.FC = () => {
         >
           {isWorkspace ? (
             <CreateWorkspace
+              workspaceTab={workspaceTab}
+              onNarrowChange={setIsNarrowWorkbench}
               recipePageProps={shell.viewport.recipePageProps}
               hasGenerationDock={hasGenerationDock}
               GenerationDock={StudioGenerationDock}

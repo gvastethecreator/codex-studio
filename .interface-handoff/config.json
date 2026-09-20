@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.1",
+  "project_id": "codex-studio",
+  "source_roots": [
+    "App.tsx",
+    "main.tsx",
+    "index.html",
+    "index.css",
+    "constants.ts",
+    "types.ts",
+    "components",
+    "hooks",
+    "contexts",
+    "services",
+    "lib",
+    "styles",
+    "utils",
+    "packages/shared/src",
+    "review",
+    "scripts/interface-handoff",
+    "vite.config.ts",
+    "vite.handoff.config.ts",
+    "package.json",
+    "bun.lock",
+    "docs/interface-handoff.md",
+    "tsconfig.web.json",
+    "assets/logo.svg",
+    "assets/recipes/cards",
+    "assets/recipes/onboarding",
+    "assets/recipes/character-lab/character-lab-option-atlas.webp",
+    "assets/recipes/character-lab/character-lab-control-atlas.webp"
+  ],
+  "global_inputs": [
+    "package.json",
+    "bun.lock",
+    "vite.config.ts",
+    "vite.handoff.config.ts",
+    "index.css",
+    "styles",
+    "components",
+    "hooks",
+    "contexts",
+    "services",
+    "lib",
+    "review",
+    "scripts/interface-handoff"
+  ],
+  "integration_files": [
+    "review/entry.tsx",
+    "review/demo-http.ts",
+    "review/demo-events.ts",
+    "review/demo-store.ts",
+    "review/scenarios.ts",
+    "scripts/interface-handoff/export.ts",
+    "vite.handoff.config.ts"
+  ],
+  "export_command": ["bun", "run", "handoff:export"],
+  "output_dir": "artifacts/interface-handoff",
+  "task_file": "docs/tasks/interface-handoff.md",
+  "scope": "all-implemented-views",
+  "portability_target": "localhost",
+  "capture_profile": {
+    "browser": "chromium",
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "dpr": 1,
+    "theme": "carbon",
+    "locale": "en-US",
+    "timezone": "UTC",
+    "seed": "interface-handoff",
+    "motion": "deterministic-capture-and-normal-interaction"
+  },
+  "toolchain": {
+    "runtime": "bun@1.3.14",
+    "package_manager": "bun"
+  },
+  "inventory_file": "scripts/interface-handoff/inventory.json",
+  "discovery": {
+    "exclude_roots": [
+      {
+        "path": "dist",
+        "reason": "Vite build output; not a UI source tree."
+      },
+      {
+        "path": "coverage",
+        "reason": "Generated coverage reports."
+      },
+      {
+        "path": "logs",
+        "reason": "Local tooling logs; not UI source."
+      },
+      {
+        "path": "tmp",
+        "reason": "Scratch output; not UI source."
+      },
+      {
+        "path": "apps",
+        "reason": "Local backend and other packages; UI talks through services/studio-api, not this tree."
+      },
+      {
+        "path": "electron",
+        "reason": "Desktop host bridge; review target is the web UI."
+      },
+      {
+        "path": "assets/recipes/styles/defaults",
+        "reason": "Thousands of style card webps; demo aliases thumbnails to a small fixture set."
+      },
+      {
+        "path": "assets/recipes/styles/category-bases",
+        "reason": "Category base rasters unused by the review thumbnail alias."
+      },
+      {
+        "path": "assets/recipes/character-lab/sources",
+        "reason": "Authoring sources for Character Lab; not the runtime UI bundle."
+      },
+      {
+        "path": "generated",
+        "reason": "Generated artifacts, not hand-authored UI."
+      },
+      {
+        "path": "output",
+        "reason": "Local generation output folder."
+      },
+      {
+        "path": "outputs",
+        "reason": "Local generation output folder."
+      },
+      {
+        "path": "docs/codemap",
+        "reason": "Code map artifacts; not rendered Studio UI."
+      },
+      {
+        "path": "skills",
+        "reason": "Agent skills, not the product interface."
+      },
+      {
+        "path": "test-files",
+        "reason": "Local scratch images; gitignored and not part of the UI bundle."
+      },
+      {
+        "path": ".scratch",
+        "reason": "Local agent scratch and archived docs; not rendered Studio UI."
+      },
+      {
+        "path": ".css-sanitization",
+        "reason": "CSS audit receipts; not UI source."
+      },
+      {
+        "path": ".code-review-graph",
+        "reason": "Local code-review graph database."
+      },
+      {
+        "path": ".playwright-mcp",
+        "reason": "Playwright MCP session dumps."
+      },
+      {
+        "path": ".agents",
+        "reason": "Local agent skills; not the product interface."
+      },
+      {
+        "path": ".github",
+        "reason": "CI and GitHub templates; not Studio UI."
+      },
+      {
+        "path": "third-party",
+        "reason": "Vendored license text, not runtime UI modules."
+      },
+      {
+        "path": "docs/assets",
+        "reason": "Marketing/docs screenshots, not the app bundle."
+      },
+      {
+        "path": "docs/adr",
+        "reason": "Architecture records, not rendered views."
+      }
+    ],
+    "max_files": 100000,
+    "max_bytes": 536870912
+  }
+}

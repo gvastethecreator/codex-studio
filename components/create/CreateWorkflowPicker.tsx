@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { IconChevronDown, IconSitemap, IconSparkles } from '@tabler/icons-react';
 
@@ -112,69 +113,71 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
             />
           </button>
         </Tooltip>
-        {open ? (
-          <div
-            id="create-workflow-list"
-            role="listbox"
-            aria-label="Workflows"
-            className="create-workflow-popover custom-scrollbar"
-            onKeyDown={(event) => {
-              const options = Array.from(
-                event.currentTarget.querySelectorAll<HTMLButtonElement>('[role=option]'),
-              );
-              const index = options.indexOf(document.activeElement as HTMLButtonElement);
-              const last = options.length - 1;
-              const next =
-                event.key === 'Home'
-                  ? 0
-                  : event.key === 'End'
-                    ? last
-                    : event.key === 'ArrowDown'
-                      ? (index + 1) % options.length
-                      : event.key === 'ArrowUp'
-                        ? (index - 1 + options.length) % options.length
-                        : null;
-              if (next !== null) {
-                event.preventDefault();
-                options[next]?.focus();
-              }
-              if (event.key === 'Tab') setOpen(false);
-            }}
-          >
-            <div className="create-popover-title">Workflow</div>
-            <button
-              type="button"
-              role="option"
-              aria-label="Default"
-              aria-selected={isDefaultSelected}
-              tabIndex={-1}
-              className="create-workflow-default"
-              onClick={() => {
-                closeAndFocus();
-                onSelectDefault?.();
+        <AnimatePresence>
+          {open ? (
+            <div
+              id="create-workflow-list"
+              role="listbox"
+              aria-label="Workflows"
+              className="create-workflow-popover custom-scrollbar"
+              onKeyDown={(event) => {
+                const options = Array.from(
+                  event.currentTarget.querySelectorAll<HTMLButtonElement>('[role=option]'),
+                );
+                const index = options.indexOf(document.activeElement as HTMLButtonElement);
+                const last = options.length - 1;
+                const next =
+                  event.key === 'Home'
+                    ? 0
+                    : event.key === 'End'
+                      ? last
+                      : event.key === 'ArrowDown'
+                        ? (index + 1) % options.length
+                        : event.key === 'ArrowUp'
+                          ? (index - 1 + options.length) % options.length
+                          : null;
+                if (next !== null) {
+                  event.preventDefault();
+                  options[next]?.focus();
+                }
+                if (event.key === 'Tab') setOpen(false);
               }}
             >
-              <span className="create-workflow-default-icon" aria-hidden="true">
-                <IconSparkles size={14} />
-              </span>
-              <span className="create-workflow-option-copy">
-                <strong>Default</strong>
-                <small>Create or edit with a prompt</small>
-              </span>
-            </button>
-            <RecipeDiscoveryList
-              entries={recipeDiscovery.entries}
-              selectedId={activeId}
-              density="compact"
-              onSelectRecipe={(id, aliasId) => {
-                closeAndFocus();
-                onSelectRecipe(id, aliasId);
-              }}
-              onPreviewRecipe={handlePreviewRecipe}
-            />
-            <div className="create-popover-note">Each workflow adds tools to Create.</div>
-          </div>
-        ) : null}
+              <div className="create-popover-title">Workflow</div>
+              <button
+                type="button"
+                role="option"
+                aria-label="Default"
+                aria-selected={isDefaultSelected}
+                tabIndex={-1}
+                className="create-workflow-default"
+                onClick={() => {
+                  closeAndFocus();
+                  onSelectDefault?.();
+                }}
+              >
+                <span className="create-workflow-default-icon" aria-hidden="true">
+                  <IconSparkles size={14} />
+                </span>
+                <span className="create-workflow-option-copy">
+                  <strong>Default</strong>
+                  <small>Create or edit with a prompt</small>
+                </span>
+              </button>
+              <RecipeDiscoveryList
+                entries={recipeDiscovery.entries}
+                selectedId={activeId}
+                density="compact"
+                onSelectRecipe={(id, aliasId) => {
+                  closeAndFocus();
+                  onSelectRecipe(id, aliasId);
+                }}
+                onPreviewRecipe={handlePreviewRecipe}
+              />
+              <div className="create-popover-note">Each workflow adds tools to Create.</div>
+            </div>
+          ) : null}
+        </AnimatePresence>
       </div>
     </section>
   );

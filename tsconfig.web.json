@@ -35,7 +35,9 @@
     "services/**/*.ts",
     "services/**/*.tsx",
     "utils/**/*.ts",
-    "utils/**/*.tsx"
+    "utils/**/*.tsx",
+    "review/**/*.ts",
+    "review/**/*.tsx"
   ],
   "exclude": ["**/*.test.ts", "**/*.test.tsx"]
 }

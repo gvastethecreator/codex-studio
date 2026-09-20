@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "export_id": "replace-project-and-run-id",
+  "language": "es",
+  "product_summary": "REEMPLAZAR: describir el producto actual observado, sin inventar intención.",
+  "audience": "REEMPLAZAR: usuario principal del producto.",
+  "primary_task": "REEMPLAZAR: tarea principal que la UI debe permitir.",
+  "review_focus": [
+    "REEMPLAZAR: foco de la revisión solicitado o inferido explícitamente."
+  ],
+  "preserve": [],
+  "known_limitations": [
+    "PLANTILLA: el agente debe completar este brief con información del proyecto actual."
+  ],
+  "journeys": []
+}

@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from 'react';
+import React, { Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import { useGenerationDraft } from '../../contexts/GenerationContext';
 import { buildRoutePreloadPlan, type RoutePreloadPlan } from '../../lib/routePreloadBudget';
@@ -38,6 +38,8 @@ export interface CreateWorkspaceProps {
   stage?: React.ReactNode;
   images?: GeneratedImageWithConfig[];
   routeKey?: string;
+  workspaceTab?: 'configure' | 'preview';
+  onNarrowChange?: (narrow: boolean) => void;
   onSidePanelTarget?: (node: HTMLElement | null) => void;
 }
 
@@ -53,8 +55,34 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
   stage,
   images,
   routeKey = 'recipes-list',
+  workspaceTab = 'configure',
+  onNarrowChange,
   onSidePanelTarget,
 }) => {
+  const workspaceRef = useRef<HTMLDivElement>(null);
+  const [layout, setLayout] = useState<'wide' | 'split' | 'single'>('split');
+  const [catalogPane, setCatalogPane] = useState(true);
+  useLayoutEffect(() => {
+    const element = workspaceRef.current;
+    if (!element) return;
+    const resize = () => {
+      const width = element.clientWidth;
+      setLayout(width >= 1128 ? 'wide' : width >= 800 ? 'split' : 'single');
+      onNarrowChange?.(width < 800);
+    };
+    resize();
+    const observer = new ResizeObserver(resize);
+    observer.observe(element);
+    const panel = element.querySelector('.create-side-panel');
+    const contentObserver = new MutationObserver(() => {
+      if (panel?.childElementCount) setCatalogPane(true);
+    });
+    if (panel) contentObserver.observe(panel, { childList: true });
+    return () => {
+      observer.disconnect();
+      contentObserver.disconnect();
+    };
+  }, [onNarrowChange]);
   const stageImages = images ?? recipePageProps.imagesWithConfig;
 
   useEffect(() => {
@@ -64,8 +92,23 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
   }, []);
 
   return (
-    <div className="create-workspace" data-route-key={routeKey}>
+    <div
+      ref={workspaceRef}
+      className="create-workspace"
+      data-route-key={routeKey}
+      data-layout={layout}
+      data-catalog-pane={catalogPane}
+      data-workspace-view={workspaceTab}
+    >
       <div className="create-tray-stack">
+        <div className="create-pane-switch" role="group" aria-label="Configure panel">
+          <button type="button" aria-pressed={!catalogPane} onClick={() => setCatalogPane(false)}>
+            Configure
+          </button>
+          <button type="button" aria-pressed={catalogPane} onClick={() => setCatalogPane(true)}>
+            Catalog
+          </button>
+        </div>
         <aside
           className={`create-tools studio-surface${tools ? ' workbench-config' : ''}`}
           aria-label="Create tools"

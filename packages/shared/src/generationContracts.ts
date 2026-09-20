@@ -1,3 +1,5 @@
+import { getGenerationRequirement } from './generationRequirements';
+
 const GENERATION_TASK_SPEC_VERSION = 'generation-task-spec/v1' as const;
 
 const GENERATION_TASK_KINDS = [
@@ -467,6 +469,26 @@ export function validateGenerationTaskSpec(
       code: 'invalid_prompt',
       message: 'Generation Task Spec prompt is required.',
       field: 'sourceSpec.prompt',
+    });
+  }
+
+  const requirement = getGenerationRequirement({
+    recipeId: spec.recipeId,
+    prompt: typeof spec.prompt === 'string' ? spec.prompt : '',
+    referenceCount: Array.isArray(spec.assets)
+      ? spec.assets.filter(
+          (asset) => asset && (asset.role === 'input' || asset.role === 'reference'),
+        ).length
+      : 0,
+    recipeParams: isRecord(spec.recipeParams) ? spec.recipeParams : null,
+    task: spec.task,
+    stylePresetId: spec.stylePresetId,
+  });
+  if (requirement) {
+    issues.push({
+      code: 'invalid_task_spec',
+      message: requirement.message,
+      field: `sourceSpec.${requirement.field === 'source' ? 'assets' : requirement.field === 'styles' ? 'recipeParams' : 'prompt'}`,
     });
   }
 

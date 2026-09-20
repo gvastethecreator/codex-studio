@@ -141,7 +141,7 @@ describe('RecipeResultPreview', () => {
     fireEvent.pointerMove(canvas as HTMLElement, { clientX: 300, clientY: 80 });
     fireEvent.click(screen.getByRole('button', { name: 'Next result' }));
     fireEvent.click(screen.getByRole('button', { name: 'Add to favorites' }));
-    fireEvent.click(screen.getByRole('button', { name: 'Use as reference' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Use as source' }));
     fireEvent.click(screen.getByRole('button', { name: 'Checkered background' }));
     expect(screen.getByRole('toolbar', { name: 'Selected result actions' })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Open result' })).toBeTruthy();

@@ -1,3 +1,4 @@
+import { AnimatePresence } from '../../lib/gsapMotion';
 import {
   IconCheck as Check,
   IconChevronLeft as ChevronLeft,
@@ -427,82 +428,88 @@ export const StylePresetCard = React.memo(function StylePresetCard({
           {presetDisplayName}
         </button>
       </div>
-      {previewOpen ? (
-        <dialog
-          ref={previewDialogRef}
-          className="style-detail-dialog"
-          aria-label={`Preview ${presetDisplayName}`}
-          onClose={() => setPreviewOpen(false)}
-          onKeyDown={(event) => {
-            if (event.key === 'Escape') event.stopPropagation();
-            if (event.key !== 'Tab') return;
-            const controls = Array.from(
-              event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), summary'),
-            );
-            const first = controls[0];
-            const last = controls.at(-1);
-            if (
-              event.shiftKey ? document.activeElement === first : document.activeElement === last
-            ) {
-              event.preventDefault();
-              (event.shiftKey ? last : first)?.focus();
-            }
-          }}
-        >
-          <header>
-            <h2>{presetDisplayName}</h2>
-            <button
-              type="button"
-              aria-label="Close style preview"
-              onClick={() => previewDialogRef.current?.close()}
-            >
-              <X size={16} />
-            </button>
-          </header>
-          {activeCardImage ? (
-            <img className="style-detail-image" src={activeCardImage.src} alt={presetDisplayName} />
-          ) : (
-            <p>No preview available</p>
-          )}
-          <div className="style-detail-copy">
-            <p>
-              {sourceProvenance
-                ? `${sourceProvenance.sourcePackName} / ${sourceProvenance.sourceCategory}`
-                : `${visualState?.presetPackName ?? 'Styles'} / ${preset.category ?? 'General'}`}
-            </p>
-            <p>{preset.style.aesthetic}</p>
-            <details>
-              <summary>Style prompt</summary>
-              <dl>
-                {Object.entries(preset.style).map(([key, value]) => {
-                  const description = describePreviewValue(value);
-                  return description ? (
-                    <div key={key}>
-                      <dt>{key.replace(/_/g, ' ')}</dt>
-                      <dd>{description}</dd>
-                    </div>
-                  ) : null;
-                })}
-              </dl>
-            </details>
-          </div>
-          <footer>
-            <button type="button" onClick={(event) => onCopy(event, preset)}>
-              {copied ? <Check size={14} /> : <Copy size={14} />} Copy prompt
-            </button>
-            <button
-              type="button"
-              className="style-detail-apply"
-              aria-pressed={active}
-              disabled={selectionDisabled}
-              onClick={() => onApply(preset)}
-            >
-              {active ? <Check size={14} /> : <Plus size={14} />}
-              {active ? 'Remove from mix' : 'Add to mix'}
-            </button>
-          </footer>
-        </dialog>
-      ) : null}
+      <AnimatePresence>
+        {previewOpen ? (
+          <dialog
+            ref={previewDialogRef}
+            className="style-detail-dialog"
+            aria-label={`Preview ${presetDisplayName}`}
+            onClose={() => setPreviewOpen(false)}
+            onKeyDown={(event) => {
+              if (event.key === 'Escape') event.stopPropagation();
+              if (event.key !== 'Tab') return;
+              const controls = Array.from(
+                event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), summary'),
+              );
+              const first = controls[0];
+              const last = controls.at(-1);
+              if (
+                event.shiftKey ? document.activeElement === first : document.activeElement === last
+              ) {
+                event.preventDefault();
+                (event.shiftKey ? last : first)?.focus();
+              }
+            }}
+          >
+            <header>
+              <h2>{presetDisplayName}</h2>
+              <button
+                type="button"
+                aria-label="Close style preview"
+                onClick={() => previewDialogRef.current?.close()}
+              >
+                <X size={16} />
+              </button>
+            </header>
+            {activeCardImage ? (
+              <img
+                className="style-detail-image"
+                src={activeCardImage.src}
+                alt={presetDisplayName}
+              />
+            ) : (
+              <p>No preview available</p>
+            )}
+            <div className="style-detail-copy">
+              <p>
+                {sourceProvenance
+                  ? `${sourceProvenance.sourcePackName} / ${sourceProvenance.sourceCategory}`
+                  : `${visualState?.presetPackName ?? 'Styles'} / ${preset.category ?? 'General'}`}
+              </p>
+              <p>{preset.style.aesthetic}</p>
+              <details>
+                <summary>Style prompt</summary>
+                <dl>
+                  {Object.entries(preset.style).map(([key, value]) => {
+                    const description = describePreviewValue(value);
+                    return description ? (
+                      <div key={key}>
+                        <dt>{key.replace(/_/g, ' ')}</dt>
+                        <dd>{description}</dd>
+                      </div>
+                    ) : null;
+                  })}
+                </dl>
+              </details>
+            </div>
+            <footer>
+              <button type="button" onClick={(event) => onCopy(event, preset)}>
+                {copied ? <Check size={14} /> : <Copy size={14} />} Copy prompt
+              </button>
+              <button
+                type="button"
+                className="style-detail-apply"
+                aria-pressed={active}
+                disabled={selectionDisabled}
+                onClick={() => onApply(preset)}
+              >
+                {active ? <Check size={14} /> : <Plus size={14} />}
+                {active ? 'Remove from mix' : 'Add to mix'}
+              </button>
+            </footer>
+          </dialog>
+        ) : null}
+      </AnimatePresence>
     </>
   );
 });

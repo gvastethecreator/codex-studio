@@ -285,7 +285,7 @@ function buildCinematicProviderDirectives(module: RecipeModule, params: Record<s
 }
 
 function buildRemasterProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
-  const fidelity = Math.max(0, Math.min(100, getNumber(params, 'fidelity', 35)));
+  const fidelity = Math.max(0, Math.min(100, getNumber(params, 'fidelity', 100)));
   const adherence = fidelity / 100;
   const creativity = (100 - fidelity) / 100;
 
@@ -296,15 +296,15 @@ function buildRemasterProviderDirectives(module: RecipeModule, params: Record<st
       {
         title: 'Restoration Goals',
         directives: [
+          directive('Style Interpretation', getString(params, 'style') || 'Archive Restoration'),
+          directive('Lighting Correction', getString(params, 'lighting') || 'Preserve Lighting'),
+          directive('Lens And Detail', getString(params, 'camera') || 'Preserve Detail'),
           directive(
-            'Style Interpretation',
-            getString(params, 'style') || 'Realistic Reconstruction',
+            'Anatomy Handling',
+            getString(params, 'anatomy') || 'Preserve Geometry and Identity',
           ),
-          directive('Lighting Correction', getString(params, 'lighting') || 'Lighting Correction'),
-          directive('Lens And Detail', getString(params, 'camera') || 'Sharp Focus'),
-          directive('Anatomy Handling', getString(params, 'anatomy') || 'Fix Anatomy'),
-          directive('Text Handling', getString(params, 'text') || 'Rewrite Logically'),
-          directive('Color Grading', getString(params, 'color') || 'Expanded Dynamic Range'),
+          directive('Text Handling', getString(params, 'text') || 'Keep Original'),
+          directive('Color Grading', getString(params, 'color') || 'Preserve Colors'),
         ],
       },
       {
