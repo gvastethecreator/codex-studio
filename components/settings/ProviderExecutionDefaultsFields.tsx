@@ -60,17 +60,16 @@ export function ProviderExecutionDefaultsFields({
     ? `${isAgentCli ? 'CLI' : 'Provider'} default (${providerDefaultModel})`
     : isAgentCli
       ? 'CLI default'
-      : 'Provider bootstrap';
+      : 'Provider default';
 
   return (
     <div className="md:col-span-2 grid gap-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] p-4 md:grid-cols-3">
       <div className="md:col-span-3">
         <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-          Provider Execution Defaults
+          Execution defaults
         </div>
         <p className="mt-1 text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-dim)]">
-          Used when a job does not send an explicit override. Empty values fall back to the provider
-          bootstrap configuration.
+          Used unless a generation overrides them. Leave blank to use provider defaults.
         </p>
       </div>
       <label className="flex flex-col gap-2">
@@ -98,7 +97,7 @@ export function ProviderExecutionDefaultsFields({
           <input
             value={value.model ?? ''}
             onChange={(event) => onChange({ model: event.target.value.trim() || null })}
-            placeholder="Provider bootstrap"
+            placeholder="Provider default"
             aria-label="Provider default model"
             className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
           />
@@ -124,7 +123,7 @@ export function ProviderExecutionDefaultsFields({
             aria-label="Provider default reasoning effort"
             className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
           >
-            <option value="">Provider bootstrap</option>
+            <option value="">Provider default</option>
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
@@ -133,7 +132,7 @@ export function ProviderExecutionDefaultsFields({
           <input
             value={value.reasoningEffort ?? ''}
             onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
-            placeholder="Provider bootstrap"
+            placeholder="Provider default"
             aria-label="Provider default reasoning effort"
             className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 font-mono text-xs text-[color:var(--wb-ink)] outline-none transition-colors placeholder:text-[color:var(--wb-dim)] focus:border-accent-400/2"
           />
@@ -157,7 +156,7 @@ export function ProviderExecutionDefaultsFields({
             aria-label="Provider default service tier"
             className="h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-ink)] outline-none transition-colors focus:border-accent-400/2"
           >
-            <option value="">Provider bootstrap</option>
+            <option value="">Provider default</option>
             <option value="fast">Fast</option>
             <option value="flex">Flex</option>
           </select>

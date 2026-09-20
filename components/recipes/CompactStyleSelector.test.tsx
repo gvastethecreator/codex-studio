@@ -112,7 +112,7 @@ describe('CompactStyleSelector', () => {
   it('keeps the tray empty until a style is added from the menu', async () => {
     const { onChooseStyle, onBrowseCatalog } = renderSelector();
 
-    expect(screen.getByRole('heading', { name: 'Styles' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'Style mix' })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Add a style' }));
     await waitFor(() => expect(screen.getByRole('dialog', { name: 'Add styles' })).toBeTruthy());
     fireEvent.click(screen.getByRole('button', { name: 'Photography, 2 styles' }));
@@ -161,7 +161,7 @@ describe('CompactStyleSelector', () => {
     expect(screen.queryByRole('dialog', { name: 'Add styles' })).toBeNull();
   });
 
-  it('keeps one floating preview host while hovering presets', async () => {
+  it('keeps the preview visible when moving between presets with the keyboard', async () => {
     renderSelector();
     fireEvent.click(screen.getByRole('button', { name: 'Add a style' }));
     await waitFor(() => expect(screen.getByRole('dialog', { name: 'Add styles' })).toBeTruthy());
@@ -198,10 +198,16 @@ describe('CompactStyleSelector', () => {
         y: 200,
         toJSON() {},
       }) as DOMRect;
-    fireEvent.click(screen.getByRole('button', { name: 'Preview Silver Grain' }));
+    fireEvent.keyDown(document, { key: 'Tab' });
+    fireEvent.focus(grain);
     await waitFor(() => expect(Number.parseFloat(node?.style.top || '0')).toBeGreaterThan(0));
     const topGrain = Number.parseFloat(node?.style.top || '0');
-    fireEvent.click(screen.getByRole('button', { name: 'Preview Noir Lighting' }));
+    fireEvent.blur(grain);
+    fireEvent.focus(noir);
+    expect(node?.hidden).toBe(false);
+    expect(node?.textContent).toContain('Noir Lighting');
+    expect(grain.hasAttribute('aria-describedby')).toBe(false);
+    expect(noir.getAttribute('aria-describedby')).toBe(node?.id);
     await waitFor(() =>
       expect(Number.parseFloat(node?.style.top || '0')).toBeGreaterThan(topGrain),
     );

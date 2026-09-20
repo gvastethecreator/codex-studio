@@ -1,10 +1,62 @@
 {
   "added_nodes": [],
   "removed_nodes": [],
-  "added_edges": [],
+  "added_edges": [
+    {
+      "id": "edge:3ae2eb47b4af26be6672",
+      "from": "components/Toolbar.composer.test.tsx",
+      "to": "external:javascript:react",
+      "type": "imports",
+      "type_only": true,
+      "evidence_count": 1,
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "components/Toolbar.composer.test.tsx",
+            "symbol": "import type { ReactNode } from 'react';",
+            "start_line": 3,
+            "end_line": 3,
+            "extractor": "tree-sitter-tsx",
+            "source_digest": "0a46e16c71c370c859a162ad6adda1c78cec3f5e603c4efda3adc25544aa208a",
+            "kind": "import",
+            "resolved_target": "external:javascript:react"
+          }
+        ]
+      }
+    },
+    {
+      "id": "edge:017cca179c10fc089fff",
+      "from": "components/Toolbar.tsx",
+      "to": "components/ProviderBrandMark.tsx",
+      "type": "imports",
+      "type_only": false,
+      "evidence_count": 1,
+      "evidence": {
+        "status": "verified",
+        "locations": [
+          {
+            "path": "components/Toolbar.tsx",
+            "symbol": "import { ProviderBrandMark } from './ProviderBrandMark';",
+            "start_line": 67,
+            "end_line": 67,
+            "extractor": "tree-sitter-tsx",
+            "source_digest": "cd177b75543260209263c8d64d4ee2fd0cfa84e9f096cb67844a3f424fa77cce",
+            "kind": "import",
+            "resolved_target": "components/ProviderBrandMark.tsx"
+          }
+        ]
+      }
+    }
+  ],
   "removed_edges": [],
   "boundary_changes": [],
   "new_cycles": [],
-  "changed": false,
-  "changed_node_ids": []
+  "changed": true,
+  "changed_node_ids": [
+    "components/ProviderBrandMark.tsx",
+    "components/Toolbar.composer.test.tsx",
+    "components/Toolbar.tsx",
+    "external:javascript:react"
+  ]
 }

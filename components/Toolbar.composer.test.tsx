@@ -1,5 +1,6 @@
 /** @vitest-environment jsdom */
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import type { ReactNode } from 'react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('../contexts/GlobalContext', () => ({
@@ -14,7 +15,7 @@ vi.mock('./ui/DemandMountedGsapDropdown', () => ({
     'aria-label': ariaLabel,
   }: {
     open: boolean;
-    children: unknown;
+    children: ReactNode;
     role?: string;
     'aria-label'?: string;
   }) =>
@@ -122,7 +123,7 @@ function renderToolbar(overrides: Partial<ToolbarProps> = {}) {
 }
 
 describe('Toolbar composer chrome', () => {
-  it('places provider above Codex execution in the Create rail', () => {
+  it('groups provider and Codex execution in the same Create rail row', () => {
     const { container } = renderToolbar();
     const row = container.querySelector('.create-tool-provider-row');
     const provider = screen.getByRole('button', { name: /change provider/i });
@@ -244,8 +245,15 @@ describe('Toolbar composer chrome', () => {
     expect(updateConfig).toHaveBeenCalledWith('imageSize', '4K');
 
     fireEvent.click(screen.getByRole('button', { name: /codex task execution/i }));
+    expect(screen.getByRole('heading', { name: 'Connection' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'Text model' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'Image model' })).toBeTruthy();
+    expect(screen.getByText('Managed by ChatGPT')).toBeTruthy();
+    expect(screen.queryByRole('button', { name: 'Reasoning: Managed' })).toBeNull();
     expect(screen.getByRole('group', { name: 'ChatGPT image size' })).toBeTruthy();
     expect(screen.getByRole('button', { name: '2K: 2048×1152' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Close generation settings' }));
+    expect(screen.queryByRole('dialog', { name: 'Codex task execution' })).toBeNull();
   });
 
   it('hides ChatGPT size choices on Codex app-server', () => {
@@ -255,5 +263,9 @@ describe('Toolbar composer chrome', () => {
       codexAvailableTransports: ['codex_app_server', 'subscription_http'],
     });
     expect(screen.queryByRole('button', { name: 'Image size: 1K' })).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: /codex task execution/i }));
+    expect(screen.getByRole('heading', { name: 'Reasoning' })).toBeTruthy();
+    expect(screen.getByRole('heading', { name: 'Speed' })).toBeTruthy();
+    expect(screen.queryByRole('heading', { name: 'Image model' })).toBeNull();
   });
 });

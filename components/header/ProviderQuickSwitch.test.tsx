@@ -1,9 +1,10 @@
 /** @vitest-environment jsdom */
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import type { ReactNode } from 'react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('../ui/DemandMountedGsapDropdown', () => ({
-  DemandMountedGsapDropdown: ({ open, children }: { open: boolean; children: unknown }) =>
+  DemandMountedGsapDropdown: ({ open, children }: { open: boolean; children: ReactNode }) =>
     open ? <div role="dialog">{children}</div> : null,
 }));
 

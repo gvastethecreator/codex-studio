@@ -77,22 +77,19 @@ export function SettingsProvidersPanel({
 
   return (
     <>
-      <div className="md:col-span-2 flex flex-col gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-4">
+      <div className="settings-provider-section">
         <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-          Default Provider
+          Default provider
         </div>
-        <fieldset className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
+        <fieldset className="settings-provider-picker">
           <legend className="sr-only">Default provider</legend>
           {providerOptions.map((providerId) => {
             const isSelected = providerId === defaultProviderId;
             return (
               <label
                 key={providerId}
-                className={`flex h-11 min-w-0 cursor-pointer items-center gap-2.5 rounded-[var(--wb-radius)] border px-2.5 text-left transition-[color,background-color,border-color,transform] focus-within:ring-2 focus-within:ring-accent-300 active:scale-[0.98] ${
-                  isSelected
-                    ? 'border-accent-400/2 bg-accent-500/14 text-[color:var(--wb-ink)]'
-                    : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] text-[color:var(--wb-ink)] hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'
-                }`}
+                className="studio-ghost-control settings-provider-option"
+                data-selected={isSelected}
               >
                 <input
                   type="radio"
@@ -108,7 +105,7 @@ export function SettingsProvidersPanel({
                   className="sr-only"
                 />
                 <ProviderBrandMark providerId={providerId} size="sm" />
-                <span className="min-w-0 truncate text-[11px] font-semibold">
+                <span className="min-w-0 text-xs font-medium">
                   {providerBrandChipLabel(providerId)}
                 </span>
               </label>
@@ -117,29 +114,14 @@ export function SettingsProvidersPanel({
         </fieldset>
       </div>
 
-      <ProviderExecutionDefaultsFields
-        value={selectedProviderDefaults}
-        onChange={updateSelectedProviderDefaults}
-        availableModels={preflightByProvider.get(defaultProviderId)?.availableModels}
-        providerDefaultModel={preflightByProvider.get(defaultProviderId)?.defaultModel}
-        codexTransport={
-          preflightByProvider.get('codex')?.runtimeKind === 'subscription_http'
-            ? 'subscription_http'
-            : 'codex_app_server'
-        }
-      />
-
       {providerCapabilities ? (
-        <div className="md:col-span-2 grid gap-3">
+        <div className="settings-provider-section">
           <div>
             <div className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
               Accounts
             </div>
-            <p className="mt-1 text-[12px] leading-relaxed text-[color:var(--wb-muted)]">
-              Connect HTTP accounts here. Local CLI providers keep their own authenticated sessions.
-            </p>
           </div>
-          <div className="grid gap-3 md:grid-cols-2">
+          <div className="settings-provider-accounts">
             {providerCapabilities.providers.map((provider) => {
               const preflight = preflightByProvider.get(provider.providerId);
               const subscriptionId = subscriptionProviderIdForGeneration(provider.providerId);
@@ -153,14 +135,7 @@ export function SettingsProvidersPanel({
               });
 
               return (
-                <div
-                  key={provider.providerId}
-                  className={`rounded-[var(--wb-radius)] border p-4 ${
-                    provider.isDefault
-                      ? 'border-accent-400/2 bg-accent-500/[0.06]'
-                      : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)]'
-                  }`}
-                >
+                <div key={provider.providerId} className="settings-provider-account">
                   <div className="flex items-start gap-3">
                     <ProviderBrandMark
                       providerId={provider.providerId}
@@ -171,7 +146,7 @@ export function SettingsProvidersPanel({
                     <div className="min-w-0 flex-1">
                       <div className="flex items-start justify-between gap-2">
                         <div className="min-w-0">
-                          <div className="truncate text-sm font-semibold text-[color:var(--wb-ink)]">
+                          <div className="text-xs font-semibold text-[color:var(--wb-ink)]">
                             {provider.label}
                           </div>
                           {provider.isDefault ? (
@@ -191,20 +166,22 @@ export function SettingsProvidersPanel({
                       </div>
                     </div>
                   </div>
-                  <p className="mt-3 text-[12px] leading-relaxed text-[color:var(--wb-muted)]">
-                    {provider.detail}
-                  </p>
                   {runtimeLabel || secretLabel ? (
-                    <p className="mt-2 text-[11px] leading-relaxed text-[color:var(--wb-muted)]">
+                    <p className="settings-provider-runtime">
                       {[runtimeLabel, secretLabel].filter(Boolean).join(' · ')}
                     </p>
                   ) : null}
-                  {preflight?.diagnostics.length ? (
-                    <p className="mt-2 text-[12px] leading-relaxed text-[color:var(--wb-muted)]">
-                      {preflight.diagnostics.join(' ')}
-                    </p>
-                  ) : null}
+                  {!provider.canExecute && (
+                    <p className="settings-provider-attention">{provider.detail}</p>
+                  )}
                   {subscriptionId ? <SubscriptionAuthControls providerId={subscriptionId} /> : null}
+                  <details className="settings-provider-details">
+                    <summary>Connection details</summary>
+                    {provider.canExecute && <p>{provider.detail}</p>}
+                    {preflight?.diagnostics.length ? (
+                      <p>{preflight.diagnostics.join(' ')}</p>
+                    ) : null}
+                  </details>
                 </div>
               );
             })}
@@ -215,6 +192,22 @@ export function SettingsProvidersPanel({
           Provider status loads with Studio Settings.
         </p>
       )}
+      <details className="settings-provider-defaults">
+        <summary>
+          Generation defaults <span>{providerBrandChipLabel(defaultProviderId)}</span>
+        </summary>
+        <ProviderExecutionDefaultsFields
+          value={selectedProviderDefaults}
+          onChange={updateSelectedProviderDefaults}
+          availableModels={preflightByProvider.get(defaultProviderId)?.availableModels}
+          providerDefaultModel={preflightByProvider.get(defaultProviderId)?.defaultModel}
+          codexTransport={
+            preflightByProvider.get('codex')?.runtimeKind === 'subscription_http'
+              ? 'subscription_http'
+              : 'codex_app_server'
+          }
+        />
+      </details>
     </>
   );
 }

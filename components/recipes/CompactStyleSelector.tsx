@@ -73,6 +73,7 @@ export interface CompactStyleSelectorProps {
   onToggleEnabled: (presetId: string) => void;
   onMove: (presetId: string, direction: -1 | 1) => void;
   onBrowseCatalog: () => void;
+  catalogOpen?: boolean;
 }
 
 type CatalogLoadState =
@@ -105,6 +106,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   onToggleEnabled,
   onMove,
   onBrowseCatalog,
+  catalogOpen = false,
 }) => {
   const instanceId = useId();
   const rootRef = useRef<HTMLDivElement>(null);
@@ -257,22 +259,18 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     const rootRect = root.getBoundingClientRect();
     const vw = document.documentElement.clientWidth;
     const vh = window.innerHeight;
-    const width = Math.min(Math.max(rootRect.width, 280), Math.max(280, vw - trayRect.right - 16));
+    const width = Math.min(Math.max(rootRect.width, 320), vw - 16);
     pop.style.width = `${width}px`;
-    const footer = selectedCount >= maxSlots ? 64 : 37;
-    const list = listRef.current;
-    const listCap = list?.classList.contains('is-pack') ? 420 : 264;
-    if (list) {
-      list.style.maxHeight = `${Math.max(58, Math.min(listCap, vh - 8 - 43 - 35 - footer - 16))}px`;
-    }
-    const height = pop.offsetHeight;
+    const top = clamp(trayRect.top, 8, Math.max(8, vh - 200));
+    const bottom = Math.min(vh - 8, Math.max(top + 200, trayRect.bottom));
+    pop.style.height = `${bottom - top}px`;
     let left = trayRect.right + 8;
     if (left + width > vw - 8) {
       left = Math.max(8, trayRect.left - width - 8);
     }
     pop.style.left = `${clamp(left, 8, Math.max(8, vw - width - 8))}px`;
-    pop.style.top = `${clamp(trayRect.top, 8, Math.max(8, vh - height - 8))}px`;
-  }, [maxSlots, menuOpen, selectedCount]);
+    pop.style.top = `${top}px`;
+  }, [menuOpen]);
 
   const positionWeight = useCallback(() => {
     const panel = weightRef.current;
@@ -341,12 +339,15 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
 
   const showPreview = useCallback(
     async (result: StylePresetCatalogSearchResult, anchor: HTMLElement, pinned: boolean) => {
+      window.clearTimeout(hideTimerRef.current);
+      window.clearTimeout(showTimerRef.current);
+      previewAnchorRef.current?.removeAttribute('aria-describedby');
       previewAnchorRef.current = anchor;
       anchor.setAttribute('aria-describedby', previewId);
       setPreview((current) => ({
         result,
         pinned,
-        src: current.src,
+        src: result.defaultImage || current.src,
         status: current.result?.id === result.id && current.src ? current.status : 'loading',
       }));
       const src = result.defaultImage || (await loadPreview(result.id, result.packId));
@@ -354,8 +355,8 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
         current.result?.id === result.id
           ? {
               ...current,
-              src: src || current.src,
-              status: src ? 'ready' : current.src ? 'ready' : 'empty',
+              src: src || null,
+              status: src ? 'ready' : 'empty',
             }
           : current,
       );
@@ -368,15 +369,21 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
       window.clearTimeout(hideTimerRef.current);
       window.clearTimeout(showTimerRef.current);
       if (preview.result?.id === result.id) {
+        previewAnchorRef.current?.removeAttribute('aria-describedby');
         previewAnchorRef.current = anchor;
+        anchor.setAttribute('aria-describedby', previewId);
         positionPreview();
+        return;
+      }
+      if (preview.result) {
+        void showPreview(result, anchor, false);
         return;
       }
       showTimerRef.current = window.setTimeout(() => {
         if (anchor.isConnected) void showPreview(result, anchor, false);
       }, delay);
     },
-    [positionPreview, preview.result?.id, showPreview],
+    [positionPreview, preview.result, previewId, showPreview],
   );
 
   const deferHidePreview = useCallback(() => {
@@ -493,6 +500,10 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
             queuePreview(result, event.currentTarget);
           }}
           onPointerLeave={() => deferHidePreview()}
+          onFocus={(event) => {
+            if (keyboardRef.current) queuePreview(result, event.currentTarget, 0);
+          }}
+          onBlur={deferHidePreview}
         >
           <span className="cs-check">{chosen ? <Check size={14} /> : null}</span>
           <span className="cs-option-text">
@@ -880,7 +891,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   return (
     <div ref={rootRef} className="cs-root" data-compact-style-selector>
       <div className="cs-heading">
-        <h2>Styles</h2>
+        <h2>Style mix</h2>
         <span className="cs-count" aria-label={`${selectedCount} of ${maxSlots} style slots`}>
           {selectedCount} / {maxSlots}
         </span>
@@ -889,6 +900,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
           className="cs-catalog"
           data-open-style-catalog
           aria-label="Open style catalog"
+          aria-expanded={catalogOpen}
           onClick={() => {
             closeMenu(false);
             closeWeight(false);
@@ -898,20 +910,6 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
         >
           <LayoutGrid size={13} />
           Catalog
-        </button>
-        <button
-          type="button"
-          className="cs-add"
-          data-add
-          hidden={selectedCount === 0}
-          aria-haspopup="dialog"
-          aria-expanded={menuOpen}
-          aria-controls={popoverId}
-          onClick={() => (menuOpen ? closeMenu(false) : openMenu())}
-        >
-          <Plus size={13} />
-          Add
-          <ChevronDown size={11} />
         </button>
       </div>
       <div className="cs-rows">
@@ -971,7 +969,16 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                   }}
                   onPointerLeave={() => deferHidePreview()}
                 >
-                  {name}
+                  {getStyleThumbnail(slot.preset.id) ? (
+                    <img src={getStyleThumbnail(slot.preset.id)} alt="" loading="lazy" />
+                  ) : (
+                    <span className="cs-thumbnail-empty" aria-hidden="true">
+                      <LayoutGrid size={16} />
+                    </span>
+                  )}
+                  <span className="cs-name-text" title={name}>
+                    {name}
+                  </span>
                 </button>
                 <button
                   type="button"
@@ -1002,6 +1009,20 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
           })
         )}
       </div>
+      <button
+        type="button"
+        className="cs-add"
+        data-add
+        hidden={selectedCount === 0}
+        aria-haspopup="dialog"
+        aria-expanded={menuOpen}
+        aria-controls={popoverId}
+        onClick={() => (menuOpen ? closeMenu(false) : openMenu())}
+      >
+        <Plus size={13} />
+        Add
+        <ChevronDown size={11} />
+      </button>
       <div className="cs-live sr-only" role="status" aria-live="polite" aria-atomic="true">
         {selectedCount} of {maxSlots} styles selected
       </div>

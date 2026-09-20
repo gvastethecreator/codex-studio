@@ -21,11 +21,13 @@ describe('provider brand chrome', () => {
 
   it('tints ready and sign-in pills by state, not by wrapping the whole card', () => {
     expect(providerReadyPillClass({ canExecute: true, status: 'not_configured' })).toContain(
-      'emerald',
+      'var(--wb-success)',
     );
-    expect(providerReadyPillClass({ canExecute: false, status: 'planned' })).toContain('amber');
-    expect(subscriptionAuthPillClass('logged_in')).toContain('emerald');
-    expect(subscriptionAuthPillClass('pending')).toContain('accent');
-    expect(subscriptionAuthPillClass('refresh_failed')).toContain('rose');
+    expect(providerReadyPillClass({ canExecute: false, status: 'planned' })).toContain(
+      'var(--wb-warning)',
+    );
+    expect(subscriptionAuthPillClass('logged_in')).toContain('var(--wb-success)');
+    expect(subscriptionAuthPillClass('pending')).toContain('var(--wb-info)');
+    expect(subscriptionAuthPillClass('refresh_failed')).toContain('var(--wb-danger)');
   });
 });

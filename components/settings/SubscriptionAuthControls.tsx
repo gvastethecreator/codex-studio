@@ -20,8 +20,8 @@ import {
 
 const controlBase =
   'inline-flex h-9 items-center justify-center gap-2 rounded-[var(--wb-radius)] px-3 text-[11px] font-semibold transition-[color,background-color,border-color,transform] active:scale-[0.96] disabled:cursor-not-allowed disabled:opacity-60';
-const controlPrimary = `${controlBase} border border-accent-400/2 bg-accent-500/18 text-accent-50 hover:bg-accent-500/28`;
-const controlGhost = `${controlBase} border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]`;
+const controlPrimary = `${controlBase} studio-primary-control`;
+const controlGhost = `${controlBase} studio-ghost-control`;
 const controlQuiet = `${controlBase} border border-[color:var(--wb-line)] bg-transparent text-[color:var(--wb-muted)] hover:border-rose-500/2 hover:bg-rose-500/10 hover:text-[color:var(--wb-danger)] `;
 
 export function SubscriptionAuthControls({ providerId }: { providerId: SubscriptionProviderId }) {
@@ -123,7 +123,7 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
   };
 
   return (
-    <div className="mt-4 flex flex-col gap-3 border-t border-[color:var(--wb-line)] pt-3">
+    <div className="settings-account-auth">
       {status?.status === 'pending' && browserUrl ? (
         <div className="grid gap-3 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/10 p-3">
           <div className="flex items-start justify-between gap-2">
@@ -169,12 +169,18 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
           </div>
         </div>
       ) : (
-        <div className="flex items-center justify-between gap-2">
-          <span
-            className={`inline-flex h-6 items-center rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold ${subscriptionAuthPillClass(status?.status)}`}
-          >
-            {statusLabel}
-          </span>
+        <div className="settings-account-auth-row">
+          <div className="settings-account-identity">
+            <span className="settings-account-label">Web account</span>
+            <span
+              className={`settings-account-status ${subscriptionAuthPillClass(status?.status)}`}
+            >
+              {statusLabel}
+            </span>
+            {status?.accountLabel && (
+              <span className="settings-account-name">{status.accountLabel}</span>
+            )}
+          </div>
           {status?.status === 'logged_in' ? (
             <button
               type="button"
@@ -184,14 +190,27 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
             >
               Sign out
             </button>
-          ) : null}
+          ) : status === null ? (
+            <button
+              type="button"
+              disabled={busy || isLoadingStatus}
+              onClick={() => void loadStatus()}
+              className={controlGhost}
+            >
+              {isLoadingStatus ? 'Loading status' : 'Retry status'}
+            </button>
+          ) : (
+            <button
+              type="button"
+              disabled={signInDisabled}
+              onClick={() => void run(() => startSubscriptionAuth(providerId))}
+              className={controlPrimary}
+            >
+              Sign in
+            </button>
+          )}
         </div>
       )}
-      {status?.accountLabel ? (
-        <p className="truncate text-[12px] leading-relaxed text-[color:var(--wb-ink)]">
-          {status.accountLabel}
-        </p>
-      ) : null}
       <span role="status" aria-live="polite" className="sr-only">
         {copied ? 'User code copied.' : ''}
       </span>
@@ -200,30 +219,11 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
           {error || status?.lastError}
         </p>
       ) : null}
-      {status === null ? (
-        <button
-          type="button"
-          disabled={busy || isLoadingStatus}
-          onClick={() => void loadStatus()}
-          className={`${controlGhost} w-full`}
-        >
-          {isLoadingStatus ? 'Loading status' : 'Retry status'}
-        </button>
-      ) : status.status === 'pending' ? null : status.status === 'logged_in' ? null : (
-        <button
-          type="button"
-          disabled={signInDisabled}
-          onClick={() => void run(() => startSubscriptionAuth(providerId))}
-          className={`${controlPrimary} w-full`}
-        >
-          Sign in
-        </button>
+      {providerId === 'google' && (
+        <p className="settings-account-note">
+          Uses your Google Cloud project for billing and quota.
+        </p>
       )}
-      <p className="text-[11px] leading-relaxed text-[color:var(--wb-dim)]">
-        {providerId === 'google'
-          ? 'Tokens stay in your private app-data folder. Requests use your configured Google Cloud project for billing and quota.'
-          : 'Tokens stay in your private app-data folder. CLI stays as automatic fallback.'}
-      </p>
     </div>
   );
 }

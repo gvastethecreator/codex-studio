@@ -1,5 +1,6 @@
 /** @vitest-environment jsdom */
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { act, cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { StrictMode } from 'react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('../../contexts/GlobalContext', () => ({
@@ -10,7 +11,10 @@ import { MODELS } from '../../constants';
 import { RecipeResultPreview } from './RecipeResultPreview';
 import type { Attachment, GeneratedImageWithConfig } from '../../types';
 
-afterEach(cleanup);
+afterEach(() => {
+  cleanup();
+  vi.useRealTimers();
+});
 
 const IMAGE: GeneratedImageWithConfig = {
   id: 'img-1',
@@ -39,6 +43,53 @@ const IMAGE_TWO: GeneratedImageWithConfig = {
 };
 
 describe('RecipeResultPreview', () => {
+  it('keeps zoom working after StrictMode cleanup and resets when switching images', () => {
+    vi.useFakeTimers();
+    render(
+      <StrictMode>
+        <RecipeResultPreview
+          variant="stage"
+          images={[IMAGE, IMAGE_TWO]}
+          reference={{
+            id: 'ref-1',
+            name: 'Reference',
+            dataUrl: '/library/reference.png',
+            strength: 1,
+          }}
+        />
+      </StrictMode>,
+    );
+    const zoomIn = () =>
+      act(() => {
+        fireEvent.click(screen.getByRole('button', { name: 'Zoom in' }));
+        vi.advanceTimersByTime(500);
+      });
+    zoomIn();
+    expect(screen.getByRole('img', { name: 'Generated result' }).style.transform).toContain(
+      'scale(1.25)',
+    );
+    fireEvent.click(screen.getByRole('button', { name: 'View result 2' }));
+    expect(screen.getByRole('img', { name: 'Generated result' }).style.transform).toContain(
+      'scale(1)',
+    );
+    zoomIn();
+    expect(screen.getByRole('img', { name: 'Generated result' }).style.transform).toContain(
+      'scale(1.25)',
+    );
+    fireEvent.click(screen.getByRole('button', { name: 'Compare reference' }));
+    expect(screen.getByRole('img', { name: 'Reference image' }).style.transform).toContain(
+      'scale(1)',
+    );
+    zoomIn();
+    expect(screen.getByRole('img', { name: 'Reference image' }).style.transform).toContain(
+      'scale(1.25)',
+    );
+    fireEvent.click(screen.getByRole('button', { name: 'Fit image' }));
+    expect(screen.getByRole('img', { name: 'Reference image' }).style.transform).toContain(
+      'scale(1)',
+    );
+  });
+
   it('uses the stage presentation without writing draft state on select', () => {
     const onOpen = vi.fn();
     render(<RecipeResultPreview variant="stage" images={[IMAGE]} onOpen={onOpen} isGenerating />);

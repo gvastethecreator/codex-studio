@@ -387,6 +387,187 @@
   background: color-mix(in srgb, var(--wb-ink) 8%, transparent);
 }
 
+.studio-settings-dialog {
+  display: flex;
+  flex-direction: column;
+  width: min(100%, 980px);
+  max-height: min(88dvh, 900px);
+  overflow: hidden;
+}
+.studio-settings-layout {
+  display: grid;
+  grid-template-columns: 176px minmax(0, 1fr);
+  flex: 1;
+  min-height: 0;
+}
+.studio-settings-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 8px;
+  border-right: 1px solid var(--wb-line);
+  background: var(--wb-canvas);
+}
+.studio-settings-nav .studio-tab {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: var(--wb-radius);
+  text-align: left;
+  white-space: normal;
+}
+.studio-settings-nav .studio-tab.is-active {
+  border-color: var(--wb-border);
+  background: var(--wb-bar);
+}
+.studio-settings-content {
+  min-width: 0;
+  min-height: 0;
+  padding: 18px;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+.studio-settings-section-select {
+  display: none;
+}
+.settings-provider-section {
+  display: grid;
+  gap: 10px;
+}
+.settings-provider-picker {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+  gap: 6px;
+}
+.settings-provider-option {
+  min-width: 0;
+  min-height: 44px;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+.settings-provider-option[data-selected='true'] {
+  border-color: var(--wb-accent);
+  color: var(--wb-ink);
+}
+.settings-provider-option:focus-within {
+  outline: 2px solid var(--wb-accent);
+  outline-offset: 2px;
+}
+.settings-provider-accounts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  align-items: start;
+}
+.settings-provider-account,
+.settings-provider-defaults {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--wb-line);
+  border-radius: var(--wb-radius);
+  background: var(--wb-panel);
+}
+.settings-provider-runtime,
+.settings-provider-attention,
+.settings-provider-details,
+.settings-account-note {
+  margin-top: 8px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--wb-muted);
+}
+.settings-provider-attention {
+  color: var(--wb-warning);
+}
+.settings-provider-details summary,
+.settings-provider-defaults summary {
+  cursor: pointer;
+}
+.settings-provider-details p {
+  margin-top: 8px;
+}
+.settings-provider-defaults summary {
+  font-size: 12px;
+  font-weight: 500;
+}
+.settings-provider-defaults summary span {
+  margin-left: 8px;
+  color: var(--wb-muted);
+  font-weight: 400;
+}
+.settings-provider-defaults > div {
+  margin-top: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.settings-account-auth {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--wb-line);
+}
+.settings-account-auth-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.settings-account-identity {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+  font-size: 11px;
+}
+.settings-account-label {
+  color: var(--wb-muted);
+}
+.settings-account-status {
+  justify-self: start;
+  padding: 1px 5px;
+  border-radius: var(--wb-radius);
+}
+.settings-account-name {
+  overflow-wrap: anywhere;
+}
+.settings-account-auth-row > button {
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  .studio-settings-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  .studio-settings-nav {
+    display: none;
+  }
+  .studio-settings-section-select {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 10px;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--wb-line);
+    font-size: 12px;
+    color: var(--wb-muted);
+  }
+  .studio-settings-section-select select {
+    min-width: 0;
+    flex: 1;
+    padding: 0 8px;
+  }
+  .studio-settings-content {
+    padding: 12px;
+  }
+  .settings-provider-accounts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* Remaining React inspectors consume the same Workbench control contract.
    Canvas pixels, swatches, and output images keep their domain-specific paint. */
 .wb :is(button, a, input, select, textarea, summary):focus-visible {

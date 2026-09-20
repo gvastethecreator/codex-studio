@@ -28,6 +28,7 @@ $null
 *.bak
 *.tsbuildinfo
 .scratch/
+.css-sanitization/
 .snapshots/
 docs/codemap/.staging/
 

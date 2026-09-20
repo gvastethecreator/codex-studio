@@ -1,23 +1,42 @@
 diff --git "a/X:\\codex-studio\\docs\\codemap\\codemap.md" "b/X:\\codex-studio\\docs\\codemap\\.staging\\codemap.md"
-index 3e5883fd..4407ecef 100644
+index 42c85f15..1a6e488d 100644
 --- "a/X:\\codex-studio\\docs\\codemap\\codemap.md"
 +++ "b/X:\\codex-studio\\docs\\codemap\\.staging\\codemap.md"
-@@ -1,7 +1,7 @@
+@@ -1,15 +1,15 @@
  # Code map: codex-studio
  
--Generated: 2026-09-19T20:10:42Z | Commit: `a49981f5e1d5` | Schema: 2
--Generation: `91e6b0f4c3ec676db4b1865373480589ae7cb1c7e46d0f971e30b7e913acca00`
-+Generated: 2026-09-19T20:33:34Z | Commit: `a49981f5e1d5` | Schema: 2
-+Generation: `b9a7e380b940676ec07ba51da58dd0341817427b38c83e740b0c4658c65276bf`
+-Generated: 2026-09-20T03:31:54Z | Commit: `62f2ac2b2f05` | Schema: 2
+-Generation: `90d23c30e32d9c8d48c7562c2c7036bb503eb4ba455d9b77c2b64158acf8414d`
++Generated: 2026-09-20T04:22:45Z | Commit: `62f2ac2b2f05` | Schema: 2
++Generation: `a09942ffce0a2236ddfda62f4e62d4a3be93da13cb4db816a7e1ac6f8b474b6f`
  Scope: . | Inventory: working-tree
- Nodes: 1100 | Edges: 5595 | Flows: 5
+-Nodes: 1100 | Edges: 5602 | Flows: 5
++Nodes: 1100 | Edges: 5604 | Flows: 5
  
-@@ -115,7 +115,7 @@ Nodes: 1100 | Edges: 5595 | Flows: 5
+ ## Coverage
+ 
+ - Analysis: **partial**; 1035 analyzed of 1046 included files.
+ - Configuration files: 7; omitted untracked files: 0.
+-- Unresolved references and analysis limits: 2978.
++- Unresolved references and analysis limits: 2992.
+ - Static references and call paths do not prove runtime execution or test coverage.
+ 
+ ## Modules
+@@ -88,7 +88,7 @@ Nodes: 1100 | Edges: 5602 | Flows: 5
+ - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | imports
+ - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:path` | imports
+ - `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | calls
+-- Showing 50 of 5602 edges; JSON contains every edge and its evidence.
++- Showing 50 of 5604 edges; JSON contains every edge and its evidence.
+ 
+ ## Unknown
+ 
+@@ -115,7 +115,7 @@ Nodes: 1100 | Edges: 5602 | Flows: 5
  
  ## Architecture changes
  
--- Nodes: +30 / -0; edges: +244 / -29.
-+- Nodes: +0 / -0; edges: +0 / -0.
+-- Nodes: +0 / -0; edges: +1 / -0.
++- Nodes: +0 / -0; edges: +2 / -0.
  - Boundary changes: 0; new cycles: 0.
  
  ## Read next

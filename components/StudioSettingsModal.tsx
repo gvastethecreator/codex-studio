@@ -220,7 +220,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
         aria-modal="true"
         aria-labelledby="studio-settings-title"
         tabIndex={-1}
-        className="studio-dialog flex max-h-[88vh] w-full max-w-3xl flex-col overflow-hidden"
+        className="studio-dialog studio-settings-dialog"
       >
         <div className="studio-dialog-header">
           <div className="flex items-center gap-3">
@@ -231,9 +231,6 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
               <h2 id="studio-settings-title" className="studio-dialog-title">
                 Studio Settings
               </h2>
-              <p className="mt-0.5 text-[length:var(--wbp-label)] font-medium studio-muted">
-                Accounts, library, and output
-              </p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -261,88 +258,104 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           </div>
         </div>
 
-        <div className="flex shrink-0 gap-1 overflow-x-auto border-b border-[color:var(--wb-line)] px-3 sm:px-5">
-          {STUDIO_SETTINGS_DOMAIN_TABS.map((tab) => (
-            <button
-              key={tab.id}
-              type="button"
-              onClick={() => setActiveDomain(tab.id)}
-              aria-pressed={activeDomain === tab.id}
-              className={`studio-tab ${activeDomain === tab.id ? 'is-active' : ''}`}
+        <div className="studio-settings-layout">
+          <label className="studio-settings-section-select">
+            <span>Section</span>
+            <select
+              className="studio-field"
+              aria-label="Settings section"
+              value={activeDomain}
+              onChange={(event) => setActiveDomain(event.target.value as StudioSettingsDomainId)}
             >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
-        <div
-          aria-busy={isLoading || isSaving}
-          className="studio-dialog-body custom-scrollbar overflow-y-auto p-5"
-        >
-          {error && (
-            <div
-              role="alert"
-              className="mb-4 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 px-4 py-3 text-xs font-bold text-[color:var(--wb-danger)] "
-            >
-              {error}
-            </div>
-          )}
-
-          {activeDomain === 'appearance' ||
-          activeDomain === 'library' ||
-          activeDomain === 'providers' ||
-          activeDomain === 'output' ? (
-            <div className={activeDomain === 'output' ? 'grid gap-4' : undefined}>
-              <fieldset disabled={isSaving || !settings} className="min-w-0">
-                <SettingsFormPanel
-                  domain={activeDomain}
-                  formState={formState}
-                  fileNameError={fileNameError}
-                  onFormChange={setFormState}
-                  libraryDir={libraryDir}
-                  providerOptions={providerOptions}
-                  providerCapabilities={providerCapabilities}
-                  providerRuntimePreflight={providerRuntimePreflight}
-                  onResetStudio={onResetStudio}
-                  isResettingStudio={isResettingStudio}
-                />
-              </fieldset>
-              {activeDomain === 'library' ? (
-                <SettingsOutputSourcesPanel
-                  outputSources={outputSources}
-                  outputSourceFiles={outputSourceFiles}
-                  loadingOutputSourceFiles={loadingOutputSourceFiles}
-                  importingOutputSources={importingOutputSources}
-                  isLoadingOutputSources={isLoadingOutputSources}
-                  isRegisteringOutputSource={isRegisteringOutputSource}
-                  onLoadOutputSourceFiles={onLoadOutputSourceFiles}
-                  onImportOutputSourceFiles={onImportOutputSourceFiles}
-                  onRegisterOutputSource={onRegisterOutputSource}
-                />
-              ) : null}
-            </div>
-          ) : null}
-          {activeDomain === 'library' && (
-            <section className="studio-list-row mt-4 p-4">
-              <h3 className="text-sm font-semibold">Export workspace metadata</h3>
-              <p className="my-2 text-xs studio-muted">
-                Legacy snapshot of workspace settings. This does not include image files or replace
-                a library backup.
-              </p>
+              {STUDIO_SETTINGS_DOMAIN_TABS.map((tab) => (
+                <option key={tab.id} value={tab.id}>
+                  {tab.label}
+                </option>
+              ))}
+            </select>
+          </label>
+          <nav className="studio-settings-nav" aria-label="Settings sections">
+            {STUDIO_SETTINGS_DOMAIN_TABS.map((tab) => (
               <button
+                key={tab.id}
                 type="button"
-                className="studio-ghost-control px-3"
-                onClick={onExportLegacyWorkspaceSnapshot}
+                onClick={() => setActiveDomain(tab.id)}
+                aria-pressed={activeDomain === tab.id}
+                className={`studio-tab ${activeDomain === tab.id ? 'is-active' : ''}`}
               >
-                Export legacy snapshot
+                {tab.label}
               </button>
-            </section>
-          )}
-          {activeDomain === 'maintenance' ? (
-            <SettingsMaintenancePanel maintenance={maintenance} />
-          ) : null}
-        </div>
+            ))}
+          </nav>
 
+          <div
+            aria-busy={isLoading || isSaving}
+            className="studio-dialog-body studio-settings-content custom-scrollbar"
+          >
+            {error && (
+              <div
+                role="alert"
+                className="mb-4 rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-500/10 px-4 py-3 text-xs font-bold text-[color:var(--wb-danger)] "
+              >
+                {error}
+              </div>
+            )}
+
+            {activeDomain === 'appearance' ||
+            activeDomain === 'library' ||
+            activeDomain === 'providers' ||
+            activeDomain === 'output' ? (
+              <div className={activeDomain === 'output' ? 'grid gap-4' : undefined}>
+                <fieldset disabled={isSaving || !settings} className="min-w-0">
+                  <SettingsFormPanel
+                    domain={activeDomain}
+                    formState={formState}
+                    fileNameError={fileNameError}
+                    onFormChange={setFormState}
+                    libraryDir={libraryDir}
+                    providerOptions={providerOptions}
+                    providerCapabilities={providerCapabilities}
+                    providerRuntimePreflight={providerRuntimePreflight}
+                    onResetStudio={onResetStudio}
+                    isResettingStudio={isResettingStudio}
+                  />
+                </fieldset>
+                {activeDomain === 'library' ? (
+                  <SettingsOutputSourcesPanel
+                    outputSources={outputSources}
+                    outputSourceFiles={outputSourceFiles}
+                    loadingOutputSourceFiles={loadingOutputSourceFiles}
+                    importingOutputSources={importingOutputSources}
+                    isLoadingOutputSources={isLoadingOutputSources}
+                    isRegisteringOutputSource={isRegisteringOutputSource}
+                    onLoadOutputSourceFiles={onLoadOutputSourceFiles}
+                    onImportOutputSourceFiles={onImportOutputSourceFiles}
+                    onRegisterOutputSource={onRegisterOutputSource}
+                  />
+                ) : null}
+              </div>
+            ) : null}
+            {activeDomain === 'library' && (
+              <section className="studio-list-row mt-4 p-4">
+                <h3 className="text-sm font-semibold">Export workspace metadata</h3>
+                <p className="my-2 text-xs studio-muted">
+                  Legacy snapshot of workspace settings. This does not include image files or
+                  replace a library backup.
+                </p>
+                <button
+                  type="button"
+                  className="studio-ghost-control px-3"
+                  onClick={onExportLegacyWorkspaceSnapshot}
+                >
+                  Export legacy snapshot
+                </button>
+              </section>
+            )}
+            {activeDomain === 'maintenance' ? (
+              <SettingsMaintenancePanel maintenance={maintenance} />
+            ) : null}
+          </div>
+        </div>
         <div className="studio-dialog-actions">
           <span role="status" className="mr-auto text-xs studio-muted">
             {isSaving ? 'Saving settings…' : hasChanges ? 'Unsaved changes' : 'No unsaved changes'}

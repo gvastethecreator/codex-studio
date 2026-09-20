@@ -10,7 +10,6 @@ import {
   IconEraser as Eraser,
   IconHash as Hash,
   IconPhotoPlus as ImagePlus,
-  IconKey as Key,
   IconStack as Layers,
   IconLoader2 as Loader2,
   IconMaximize as Maximize,
@@ -65,6 +64,7 @@ import Tooltip from './Tooltip';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import { ProviderQuickSwitch } from './header/ProviderQuickSwitch';
+import { ProviderBrandMark } from './ProviderBrandMark';
 import { GenerationElapsedStatus, LivePromptTextarea } from './ToolbarLiveStatus';
 
 export interface ToolbarProps {
@@ -1751,44 +1751,30 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         placement="top-right"
                         role="dialog"
                         aria-label="Codex task execution"
-                        className={`studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 p-3 ${isRail ? 'create-execution-menu' : 'w-[min(94vw,560px)]'}`}
+                        className="create-execution-menu"
                       >
-                        <div className="mb-3 flex items-center justify-between gap-3">
-                          <div className="min-w-0">
-                            <div className="text-[length:var(--wbp-label)] font-semibold tracking-[0.16em] text-zinc-500">
-                              Execution
-                            </div>
-                            <div className="mt-1 truncate text-xs font-semibold tracking-normal text-zinc-100">
-                              {formatCodexModelLabel(
-                                selectedExecutionModel?.id ?? generationConfig.executionModel,
-                                selectedExecutionModel?.displayName,
-                              )}
-                            </div>
+                        <header className="create-execution-header">
+                          <div>
+                            <h3>Generation settings</h3>
+                            <p>Applies to the next image.</p>
                           </div>
-                          <div className="flex items-center gap-2 shrink-0">
-                            {isLoadingCodexModelCatalog && (
-                              <Loader2 size={12} className="animate-spin text-accent-300" />
-                            )}
-                            <div className="text-[length:var(--wbp-label)] font-semibold tracking-[0.12em] text-zinc-500">
-                              {selectedCodexTransport === 'subscription_http'
-                                ? (selectedExecutionImageModel?.shortName ?? 'Image')
-                                : codexModelCatalog?.source === 'fallback'
-                                  ? 'Fallback'
-                                  : 'Live'}
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="grid grid-cols-[112px_minmax(0,1fr)] gap-3">
+                          {isLoadingCodexModelCatalog && (
+                            <Loader2 size={14} className="animate-spin" />
+                          )}
+                          <button
+                            type="button"
+                            className="studio-ghost-control"
+                            aria-label="Close generation settings"
+                            onClick={() => setIsExecutionOpen(false)}
+                          >
+                            <X size={14} />
+                          </button>
+                        </header>
+                        <div className="create-execution-body">
                           <section aria-labelledby="codex-execution-provider-label">
+                            <h4 id="codex-execution-provider-label">Connection</h4>
                             <div
-                              id="codex-execution-provider-label"
-                              className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500"
-                            >
-                              Provider
-                            </div>
-                            <div
-                              className="space-y-1.5"
+                              className="create-execution-connections"
                               role="group"
                               aria-label="Codex execution provider"
                             >
@@ -1804,120 +1790,75 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                     data-codex-transport={option.id}
                                     aria-pressed={isSelected}
                                     aria-label={`${option.accessibleLabel}: ${isAvailable ? 'Ready' : 'Unavailable'}`}
-                                    title={option.accessibleLabel}
                                     disabled={!isAvailable}
                                     onClick={() => handleSelectExecutionTransport(option.id)}
-                                    className={`flex min-h-[52px] w-full flex-col justify-between rounded-[var(--wb-radius)] border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] disabled:cursor-not-allowed disabled:opacity-45 ${
-                                      isSelected
-                                        ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
-                                        : 'border-transparent bg-white/5 hover:bg-white/10'
-                                    }`}
+                                    className="studio-ghost-control create-execution-choice"
                                   >
-                                    <div className="flex items-center justify-between gap-2">
-                                      <div className="flex items-center gap-1.5">
-                                        {option.id === 'codex_app_server' ? (
-                                          <Monitor size={12} className="text-accent-300" />
-                                        ) : (
-                                          <Key size={12} className="text-accent-300" />
-                                        )}
-                                        <span
-                                          className={`text-[length:var(--wbp-label)] font-semibold tracking-normal ${
-                                            isSelected ? 'text-accent-300' : 'text-zinc-200'
-                                          }`}
-                                        >
-                                          {option.label}
-                                        </span>
-                                      </div>
-                                      {isSelected && (
-                                        <Check size={11} className="text-accent-300" />
-                                      )}
-                                    </div>
-                                    <div className="mt-1 text-[7px] font-bold tracking-normal text-zinc-500">
-                                      {option.detail}
-                                    </div>
-                                    <div
-                                      className={`text-[7px] font-semibold tracking-normal ${
-                                        isAvailable
-                                          ? 'text-[color:var(--wb-success)]'
-                                          : 'text-zinc-600'
-                                      }`}
-                                    >
-                                      {isAvailable ? 'Ready' : 'Unavailable'}
-                                    </div>
+                                    <ProviderBrandMark providerId="codex" size="xs" />
+                                    <span className="create-execution-copy">
+                                      <strong>{option.label}</strong>
+                                      <small>
+                                        {option.detail} · {isAvailable ? 'Ready' : 'Unavailable'}
+                                      </small>
+                                    </span>
+                                    {isSelected && <Check size={14} aria-hidden="true" />}
                                   </button>
                                 );
                               })}
                             </div>
                           </section>
 
-                          <section
-                            className="min-w-0 border-l border-white/2 pl-3"
-                            aria-labelledby="codex-execution-model-label"
-                          >
-                            <div
-                              id="codex-execution-model-label"
-                              className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500"
-                            >
-                              Model
-                            </div>
-                            <div className="max-h-[176px] space-y-1.5 overflow-y-auto pr-1 custom-scrollbar">
-                              {codexModels.map((model) => {
-                                const isSelected = model.id === selectedExecutionModel?.id;
-                                const modelLabel = formatCodexModelLabel(
-                                  model.id,
-                                  model.displayName,
-                                );
-                                const modelSpeedOptions = getCodexSpeedOptions(model);
-                                const modelMeta = [
-                                  model.isDefault ? 'Default' : null,
-                                  modelSpeedOptions.includes('fast') ? 'Fast' : null,
-                                  codexModelCatalog?.planType && model.id === 'gpt-5.3-codex-spark'
-                                    ? codexModelCatalog.planType
-                                    : null,
-                                ].filter(Boolean);
-                                return (
-                                  <button
-                                    type="button"
-                                    key={model.id}
-                                    data-codex-model={model.id}
-                                    aria-pressed={isSelected}
-                                    aria-label={modelLabel}
-                                    title={model.description || modelLabel}
-                                    disabled={selectedCodexTransport === 'subscription_http'}
-                                    onClick={() => handleSelectExecutionModel(model)}
-                                    className={`flex min-h-[42px] w-full items-center justify-between gap-2 rounded-[var(--wb-radius)] border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] disabled:cursor-default disabled:opacity-100 ${
-                                      isSelected
-                                        ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
-                                        : 'border-transparent bg-white/5 text-zinc-400 hover:bg-white/10'
-                                    }`}
-                                  >
-                                    <span className="min-w-0 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-100">
-                                      {modelLabel}
-                                    </span>
-                                    <span className="flex shrink-0 items-center gap-1.5">
-                                      {modelMeta.map((meta) => (
-                                        <span
-                                          key={meta}
-                                          className="rounded-[var(--wb-radius)] bg-white/8 px-1.5 py-0.5 text-[7px] font-semibold tracking-normal text-zinc-400"
-                                        >
-                                          {meta}
-                                        </span>
-                                      ))}
-                                      {isSelected ? (
-                                        <Check size={12} className="shrink-0 text-accent-300" />
-                                      ) : null}
-                                    </span>
-                                  </button>
-                                );
-                              })}
-                            </div>
-
+                          <section aria-labelledby="codex-execution-model-label">
+                            <h4 id="codex-execution-model-label">Text model</h4>
                             {selectedCodexTransport === 'subscription_http' ? (
-                              <div className="mt-3">
-                                <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500">
-                                  Image
-                                </div>
-                                <div className="grid grid-cols-2 gap-1.5">
+                              <div className="create-execution-managed">
+                                <strong>
+                                  {selectedExecutionModel?.displayName ||
+                                    generationConfig.executionModel}
+                                </strong>
+                                <span>Managed by ChatGPT</span>
+                              </div>
+                            ) : (
+                              <div className="create-execution-model-list">
+                                {codexModels.map((model) => {
+                                  const isSelected = model.id === selectedExecutionModel?.id;
+                                  const modelLabel = formatCodexModelLabel(
+                                    model.id,
+                                    model.displayName,
+                                  );
+                                  return (
+                                    <button
+                                      type="button"
+                                      key={model.id}
+                                      data-codex-model={model.id}
+                                      aria-pressed={isSelected}
+                                      aria-label={modelLabel}
+                                      title={model.description || modelLabel}
+                                      onClick={() => handleSelectExecutionModel(model)}
+                                      className="studio-ghost-control create-execution-choice"
+                                    >
+                                      <span className="create-execution-copy">
+                                        <strong>{model.displayName || modelLabel}</strong>
+                                      </span>
+                                      {model.isDefault && (
+                                        <span className="create-execution-badge">Default</span>
+                                      )}
+                                      {getCodexSpeedOptions(model).includes('fast') && (
+                                        <span className="create-execution-badge">Fast</span>
+                                      )}
+                                      {isSelected && <Check size={14} aria-hidden="true" />}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                            )}
+                          </section>
+
+                          {selectedCodexTransport === 'subscription_http' ? (
+                            <>
+                              <section aria-labelledby="codex-image-model-label">
+                                <h4 id="codex-image-model-label">Image model</h4>
+                                <div className="create-execution-options">
                                   {executionImageModels.map((imageModel) => {
                                     const isSelected =
                                       imageModel.id === selectedExecutionImageModel?.id;
@@ -1928,154 +1869,113 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                         data-codex-image-model={imageModel.id}
                                         aria-pressed={isSelected}
                                         aria-label={imageModel.displayName}
-                                        title={imageModel.displayName}
                                         onClick={() => handleSelectExecutionImageModel(imageModel)}
-                                        className={`flex min-h-[40px] items-center justify-between gap-2 rounded-[var(--wb-radius)] border px-2.5 py-2 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                                          isSelected
-                                            ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
-                                            : 'border-transparent bg-white/5 hover:bg-white/10'
-                                        }`}
+                                        className="studio-ghost-control create-execution-choice"
                                       >
-                                        <span
-                                          className={`truncate text-[length:var(--wbp-label)] font-semibold tracking-normal ${
-                                            isSelected ? 'text-accent-300' : 'text-zinc-200'
-                                          }`}
-                                        >
-                                          {imageModel.displayName}
+                                        <span className="create-execution-copy">
+                                          <strong>{imageModel.displayName}</strong>
                                         </span>
-                                        <span className="flex shrink-0 items-center gap-1.5">
-                                          {imageModel.lifecycle === 'previous' ? (
-                                            <span className="rounded-[var(--wb-radius)] bg-white/8 px-1.5 py-0.5 text-[7px] font-semibold tracking-normal text-zinc-500">
-                                              Previous
-                                            </span>
-                                          ) : null}
-                                          {isSelected ? (
-                                            <Check size={12} className="shrink-0 text-accent-300" />
-                                          ) : null}
-                                        </span>
+                                        {imageModel.lifecycle === 'previous' && (
+                                          <span className="create-execution-badge">Previous</span>
+                                        )}
+                                        {isSelected && <Check size={14} aria-hidden="true" />}
                                       </button>
                                     );
                                   })}
                                 </div>
-                                <div className="mt-3">
-                                  <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500">
-                                    Size
-                                  </div>
-                                  <div
-                                    className="grid grid-cols-3 gap-1.5"
-                                    role="group"
-                                    aria-label="ChatGPT image size"
-                                  >
-                                    {executionImageSizeOptions.map((option) => {
-                                      const isSelected =
-                                        selectedExecutionImageSize?.tier === option.tier;
-                                      return (
-                                        <button
-                                          type="button"
-                                          key={option.tier}
-                                          data-codex-image-size={option.tier}
-                                          aria-pressed={isSelected}
-                                          aria-label={`${option.tier}: ${option.width}×${option.height}`}
-                                          title={`${option.width}×${option.height}${option.experimental ? ' · experimental' : ''}`}
-                                          onClick={() =>
-                                            handleSelectExecutionImageSize(option.tier)
-                                          }
-                                          className={`flex min-h-[40px] flex-col justify-center rounded-[var(--wb-radius)] border px-2 py-1.5 text-left transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                                            isSelected
-                                              ? 'border-accent-700/2 bg-gradient-to-r from-accent-900/50 to-accent-800/50'
-                                              : 'border-transparent bg-white/5 hover:bg-white/10'
-                                          }`}
-                                        >
-                                          <span
-                                            className={`text-[length:var(--wbp-label)] font-semibold tracking-normal ${
-                                              isSelected ? 'text-accent-300' : 'text-zinc-200'
-                                            }`}
-                                          >
-                                            {option.tier}
-                                          </span>
-                                          <span className="text-[7px] font-bold tracking-normal text-zinc-500">
-                                            {option.width}×{option.height}
-                                          </span>
-                                        </button>
-                                      );
-                                    })}
-                                  </div>
-                                  {selectedExecutionImageSize?.experimental ? (
-                                    <p className="mt-1.5 text-[length:var(--wbp-label)] font-bold leading-snug text-zinc-500">
-                                      ChatGPT marks output above 2560×1440 as experimental.
-                                    </p>
-                                  ) : null}
-                                </div>
-                              </div>
-                            ) : null}
-
-                            <div className="mt-3">
-                              <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500">
-                                Mode
-                              </div>
-                              <div className="flex flex-wrap gap-1.5">
-                                {executionReasoningOptions.map((effort) => {
-                                  const isManaged = effort === 'provider_default';
-                                  const label = isManaged ? 'Auto' : effort.toUpperCase();
-                                  return (
+                              </section>
+                              <section aria-labelledby="codex-image-size-label">
+                                <h4 id="codex-image-size-label">Output size</h4>
+                                <div
+                                  className="create-execution-sizes"
+                                  role="group"
+                                  aria-label="ChatGPT image size"
+                                >
+                                  {executionImageSizeOptions.map((option) => (
                                     <button
                                       type="button"
-                                      key={effort}
-                                      aria-label={`Reasoning: ${isManaged ? 'Managed' : effort}`}
-                                      onClick={() => {
-                                        if (
-                                          !isManaged &&
-                                          selectedCodexTransport !== 'subscription_http'
-                                        ) {
-                                          updateConfig('executionReasoningEffort', effort);
-                                        }
-                                      }}
-                                      className={`min-h-[32px] rounded-[var(--wb-radius)] px-2.5 py-1.5 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                                        selectedCodexTransport === 'subscription_http' ||
-                                        generationConfig.executionReasoningEffort === effort
-                                          ? 'border border-accent-500/2 bg-gradient-to-r from-accent-700 to-accent-800 text-white'
-                                          : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                                      }`}
+                                      key={option.tier}
+                                      data-codex-image-size={option.tier}
+                                      aria-pressed={
+                                        selectedExecutionImageSize?.tier === option.tier
+                                      }
+                                      aria-label={`${option.tier}: ${option.width}×${option.height}`}
+                                      title={`${option.width}×${option.height}${option.experimental ? ' · experimental' : ''}`}
+                                      onClick={() => handleSelectExecutionImageSize(option.tier)}
+                                      className="studio-ghost-control create-execution-choice"
                                     >
-                                      {label}
+                                      <span className="create-execution-copy">
+                                        <strong>{option.tier}</strong>
+                                        <small>
+                                          {option.width}×{option.height}
+                                        </small>
+                                      </span>
                                     </button>
-                                  );
-                                })}
-                              </div>
-                            </div>
-
-                            <div className="mt-3">
-                              <div className="mb-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-zinc-500">
-                                Speed
-                              </div>
-                              <div className="flex flex-wrap gap-1.5">
-                                {executionSpeedOptions.map((speed) => {
-                                  const isManaged = selectedCodexTransport === 'subscription_http';
-                                  return (
+                                  ))}
+                                </div>
+                                {selectedExecutionImageSize?.experimental && (
+                                  <p className="create-execution-note">
+                                    ChatGPT marks output above 2560×1440 as experimental.
+                                  </p>
+                                )}
+                              </section>
+                              <p className="create-execution-note">
+                                Reasoning and speed are managed by ChatGPT.
+                              </p>
+                            </>
+                          ) : (
+                            <div className="create-execution-tuning">
+                              <section aria-labelledby="codex-reasoning-label">
+                                <h4 id="codex-reasoning-label">Reasoning</h4>
+                                <div className="create-execution-segments">
+                                  {executionReasoningOptions.map((effort) => {
+                                    const isManaged = effort === 'provider_default';
+                                    const label = isManaged
+                                      ? 'Auto'
+                                      : effort.charAt(0).toUpperCase() + effort.slice(1);
+                                    return (
+                                      <button
+                                        type="button"
+                                        key={effort}
+                                        aria-label={`Reasoning: ${isManaged ? 'Managed' : effort}`}
+                                        aria-pressed={
+                                          generationConfig.executionReasoningEffort === effort
+                                        }
+                                        onClick={() => {
+                                          if (!isManaged)
+                                            updateConfig('executionReasoningEffort', effort);
+                                        }}
+                                        className="studio-ghost-control create-execution-choice"
+                                      >
+                                        {label}
+                                      </button>
+                                    );
+                                  })}
+                                </div>
+                              </section>
+                              <section aria-labelledby="codex-speed-label">
+                                <h4 id="codex-speed-label">Speed</h4>
+                                <div className="create-execution-segments">
+                                  {executionSpeedOptions.map((speed) => (
                                     <button
                                       type="button"
                                       key={speed}
-                                      aria-label={`Speed: ${isManaged ? 'Managed' : formatCodexSpeedLabel(speed)}`}
+                                      aria-label={`Speed: ${formatCodexSpeedLabel(speed)}`}
+                                      aria-pressed={generationConfig.executionSpeed === speed}
                                       onClick={() => handleSelectExecutionSpeed(speed)}
-                                      className={`min-h-[32px] rounded-[var(--wb-radius)] px-2.5 py-1.5 text-[length:var(--wbp-label)] font-semibold tracking-normal transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
-                                        isManaged || generationConfig.executionSpeed === speed
-                                          ? 'border border-accent-500/2 bg-gradient-to-r from-accent-700 to-accent-800 text-white'
-                                          : 'bg-white/5 text-zinc-400 hover:bg-white/10'
-                                      }`}
+                                      className="studio-ghost-control create-execution-choice"
                                     >
-                                      {isManaged ? 'Auto' : formatCodexSpeedLabel(speed)}
+                                      {formatCodexSpeedLabel(speed)}
                                     </button>
-                                  );
-                                })}
-                              </div>
+                                  ))}
+                                </div>
+                              </section>
                             </div>
-                          </section>
+                          )}
                         </div>
 
                         {executionSourceMessage && (
-                          <div className="mt-3 rounded-[var(--wb-radius)] border border-amber-500/2 bg-amber-500/10 px-3 py-2 text-[length:var(--wbp-label)] font-bold text-[color:var(--wb-warning)]">
-                            {executionSourceMessage}
-                          </div>
+                          <div className="create-execution-warning">{executionSourceMessage}</div>
                         )}
                       </DemandMountedGsapDropdown>
                     </div>

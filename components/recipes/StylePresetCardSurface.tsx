@@ -6,6 +6,8 @@ import {
   IconHeart as Heart,
   IconPalette as Palette,
   IconPlus as Plus,
+  IconEye as Eye,
+  IconX as X,
 } from '@tabler/icons-react';
 import React, { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
@@ -15,7 +17,6 @@ import {
   type StylePresetCardImage,
   type StylePresetImageVariant,
 } from '../../lib/stylePresetVisuals';
-import { FloatingTooltip } from '../ui/FloatingTooltip';
 import { getStyleRuntimePresetDisplayName, type StyleRuntimePreset } from './stylesData';
 import type { StyleCollectionRuntimePreset } from './styles/collections';
 import type { StyleTheme } from './StyleRecipeNavigationPanel';
@@ -90,6 +91,7 @@ interface StylePresetResultButtonProps {
   active: boolean;
   selectionDisabled: boolean;
   onCycle: (dir: number) => void;
+  onPreview: () => void;
   hasMultipleImages: boolean;
   theme: StyleTheme;
   FadeImageComponent: StylePresetFadeImageComponent;
@@ -102,20 +104,13 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   active,
   selectionDisabled,
   onCycle,
+  onPreview,
   hasMultipleImages,
   theme,
   FadeImageComponent,
   onApply,
 }) => {
   const presetDisplayName = getStyleRuntimePresetDisplayName(preset);
-
-  const handleApplyFromKeyboard = (e: React.KeyboardEvent) => {
-    if (selectionDisabled) return;
-    if (e.key !== 'Enter' && e.key !== ' ') return;
-    e.preventDefault();
-    e.stopPropagation();
-    onApply(preset);
-  };
 
   const handleCycleFromKeyboard = (e: React.KeyboardEvent, direction: number) => {
     if (e.key !== 'Enter' && e.key !== ' ') return;
@@ -138,11 +133,11 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
 
     const staleBadge =
       activeCardImage.kind === 'stale-default' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)] shadow-lg backdrop-blur-md">
+        <div className="pointer-events-none absolute left-2 top-11 z-20 rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)] shadow-lg backdrop-blur-md">
           Stale
         </div>
       ) : activeCardImage.kind === 'preview' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)] shadow-lg backdrop-blur-md">
+        <div className="pointer-events-none absolute left-2 top-11 z-20 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)] shadow-lg backdrop-blur-md">
           Preview
         </div>
       ) : null;
@@ -151,10 +146,8 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       <div className="absolute inset-0 group/image">
         <button
           type="button"
-          aria-label={`${active ? 'Remove' : 'Select'} ${presetDisplayName}`}
-          onClick={() => onApply(preset)}
-          disabled={selectionDisabled}
-          title={selectionDisabled ? 'Maximum 5 styles selected' : undefined}
+          aria-label={`Preview ${presetDisplayName}`}
+          onClick={onPreview}
           className="absolute inset-0 z-10 cursor-pointer disabled:cursor-not-allowed"
         >
           <FadeImageComponent
@@ -178,7 +171,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           <div className="absolute inset-0 bg-[color:var(--wb-panel)]/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
             <div className="flex size-10 items-center justify-center rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/55 text-[color:var(--wb-ink)] backdrop-blur-md">
-              {active ? <Check size={18} /> : <Plus size={18} />}
+              <Eye size={18} />
             </div>
           </div>
         </button>
@@ -195,7 +188,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(-1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 text-[color:var(--wb-ink)]/90 shadow-lg backdrop-blur-md transition-colors hover:bg-[color:var(--wb-panel)]/85"
+              className="studio-ghost-control style-image-control pointer-events-auto"
               aria-label={`Previous image for ${presetDisplayName}`}
             >
               <ChevronLeft size={14} />
@@ -207,7 +200,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                 onCycle(1);
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 text-[color:var(--wb-ink)]/90 shadow-lg backdrop-blur-md transition-colors hover:bg-[color:var(--wb-panel)]/85"
+              className="studio-ghost-control style-image-control pointer-events-auto"
               aria-label={`Next image for ${presetDisplayName}`}
             >
               <ChevronRight size={14} />
@@ -215,7 +208,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
           </div>
         )}
 
-        <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100">
+        <div className="style-card-select absolute right-2 top-2 z-30">
           <button
             type="button"
             aria-label={`${active ? 'Remove' : 'Select'} style ${presetDisplayName}`}
@@ -223,9 +216,9 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
               e.stopPropagation();
               onApply(preset);
             }}
-            onKeyDown={handleApplyFromKeyboard}
             disabled={selectionDisabled}
-            className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/60 p-1.5 text-[color:var(--wb-ink)] shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600 disabled:cursor-not-allowed disabled:opacity-45"
+            aria-pressed={active}
+            className="studio-ghost-control style-image-control"
             title={
               selectionDisabled
                 ? 'Maximum 5 styles selected'
@@ -244,11 +237,9 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   return (
     <button
       type="button"
-      onClick={() => onApply(preset)}
-      disabled={selectionDisabled}
+      onClick={onPreview}
       className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-[color:var(--wb-panel)] transition-colors hover:bg-[color:var(--wb-bar)] disabled:cursor-not-allowed"
-      aria-pressed={active}
-      aria-label={`${active ? 'Remove' : 'Select'} ${presetDisplayName}`}
+      aria-label={`Preview ${presetDisplayName}`}
     >
       <div
         className={`flex size-14 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] transition-colors duration-300 group-hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] ${theme.text}`}
@@ -256,7 +247,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
         <Palette size={24} />
       </div>
       <span className="translate-y-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)] opacity-0 transition-[opacity,transform] group-hover:translate-y-0 group-hover:opacity-100">
-        {active ? 'Selected' : 'Select'}
+        Preview
       </span>
     </button>
   );
@@ -280,6 +271,12 @@ export const StylePresetCard = React.memo(function StylePresetCard({
 }: StylePresetCardProps) {
   const [imageIndex, setImageIndex] = useState(0);
   const isHoveredRef = useRef(false);
+  const previewDialogRef = useRef<HTMLDialogElement>(null);
+  const [previewOpen, setPreviewOpen] = useState(false);
+
+  useLayoutEffect(() => {
+    if (previewOpen) previewDialogRef.current?.showModal();
+  }, [previewOpen]);
 
   const resultImages = visualState?.resultImages ?? EMPTY_IMAGES;
   const cardImages = useMemo(
@@ -344,30 +341,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
   );
 
   return (
-    <FloatingTooltip
-      delay={200}
-      content={
-        <div className="flex w-64 flex-col gap-2 p-3 text-left">
-          <div className="mb-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
-            Prompt Preview
-          </div>
-          <div className="flex max-h-48 flex-col gap-1 overflow-y-auto font-mono text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-ink)] custom-scrollbar">
-            {Object.entries(preset.style).map(([key, value]) => {
-              const previewValue = describePreviewValue(value);
-              if (!previewValue) return null;
-              return (
-                <div key={key}>
-                  <span className="capitalize text-[color:var(--wb-muted)]">
-                    {key.replace(/_/g, ' ')}:
-                  </span>{' '}
-                  {previewValue}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      }
-    >
+    <>
       <div
         onPointerEnter={() => {
           isHoveredRef.current = true;
@@ -387,11 +361,8 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         data-style-source-pack-id={sourceProvenance?.sourcePackId ?? ''}
         data-style-source-category={sourceProvenance?.sourceCategory ?? ''}
         data-style-collection-role={sourceProvenance?.collectionRole ?? ''}
-        className={`group relative aspect-[3/4] overflow-hidden rounded-[var(--wb-radius)] text-left transition-[border-color,background-color,box-shadow,transform] duration-200 ease-out hover:-translate-y-0.5 ${
-          active
-            ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-[color:var(--wb-panel)] shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
-            : 'border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-panel)]/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
-        }`}
+        data-selected={active}
+        className="style-preset-tile group relative aspect-[3/4] overflow-hidden rounded-[var(--wb-radius)] text-left"
         style={
           {
             contentVisibility: 'auto',
@@ -406,6 +377,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
             active={active}
             selectionDisabled={selectionDisabled}
             onCycle={handleCycle}
+            onPreview={() => setPreviewOpen(true)}
             hasMultipleImages={hasMultipleImages}
             theme={theme}
             FadeImageComponent={FadeImageComponent}
@@ -413,15 +385,16 @@ export const StylePresetCard = React.memo(function StylePresetCard({
           />
         </div>
 
-        <div className="pointer-events-none absolute right-2 top-2 z-30 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
+        <div className="style-card-favorite absolute left-2 top-2 z-30">
           <button
             type="button"
             aria-label={`${favorite ? 'Unpin' : 'Pin'} style ${presetDisplayName}`}
+            aria-pressed={favorite}
             onClick={(e) => {
               e.stopPropagation();
               onToggleFavorite(preset.id);
             }}
-            className={`rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] p-1.5 backdrop-blur-md transition-[background-color,color,border-color,transform] duration-150 ${favorite ? 'bg-[color:var(--wb-panel)]/60 text-rose-500' : 'bg-[color:var(--wb-panel)]/35 text-[color:var(--wb-muted)] hover:bg-[color:var(--wb-panel)]/60 hover:text-[color:var(--wb-danger)]'}`}
+            className="studio-ghost-control style-image-control"
             title={favorite ? 'Unpin' : 'Pin to top'}
           >
             <Heart
@@ -432,74 +405,104 @@ export const StylePresetCard = React.memo(function StylePresetCard({
           </button>
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 z-20">
-          <div className="relative w-full rounded-t-[6px] rounded-b-none border-t border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/58 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md transition-transform duration-200 ease-out group-hover:-translate-y-1 group-focus-within:-translate-y-1">
-            {sourceProvenance ? (
-              <div
-                data-style-source-provenance
-                data-style-source-pack-id={sourceProvenance.sourcePackId}
-                data-style-source-category={sourceProvenance.sourceCategory}
-                data-style-collection-role={sourceProvenance.collectionRole}
-                className="mb-1 flex min-w-0 items-center gap-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]"
-                title={`${sourceProvenance.sourcePackName} / ${sourceProvenance.sourceCategory}`}
-              >
-                <span className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.045] px-1.5 py-0.5 text-[color:var(--wb-ink)]">
-                  {sourceProvenance.sourcePackName}
-                </span>
-                <span className="min-w-0 truncate rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-black/18 px-1.5 py-0.5 text-[color:var(--wb-muted)]">
-                  {sourceProvenance.sourceCategory}
-                </span>
-                {sourceProvenance.collectionRole !== 'primary' ? (
-                  <span className="shrink-0 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-1 py-0.5 text-[color:var(--wb-muted)]">
-                    {sourceProvenance.collectionRole.replace('_', ' ')}
-                  </span>
-                ) : null}
-              </div>
-            ) : null}
-
+        {!activeCardImage ? (
+          <button
+            type="button"
+            className="studio-ghost-control style-card-select style-tile-action style-image-control"
+            aria-label={`${active ? 'Remove' : 'Select'} style ${presetDisplayName}`}
+            aria-pressed={active}
+            disabled={selectionDisabled}
+            onClick={() => onApply(preset)}
+          >
+            {active ? <Check size={14} /> : <Plus size={14} />}
+          </button>
+        ) : null}
+        <button
+          type="button"
+          className="style-tile-caption"
+          onClick={() => setPreviewOpen(true)}
+          aria-label={`Details for ${presetDisplayName}`}
+          title={presetDisplayName}
+        >
+          {presetDisplayName}
+        </button>
+      </div>
+      {previewOpen ? (
+        <dialog
+          ref={previewDialogRef}
+          className="style-detail-dialog"
+          aria-label={`Preview ${presetDisplayName}`}
+          onClose={() => setPreviewOpen(false)}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape') event.stopPropagation();
+            if (event.key !== 'Tab') return;
+            const controls = Array.from(
+              event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), summary'),
+            );
+            const first = controls[0];
+            const last = controls.at(-1);
+            if (
+              event.shiftKey ? document.activeElement === first : document.activeElement === last
+            ) {
+              event.preventDefault();
+              (event.shiftKey ? last : first)?.focus();
+            }
+          }}
+        >
+          <header>
+            <h2>{presetDisplayName}</h2>
             <button
               type="button"
-              onClick={() => onApply(preset)}
-              disabled={selectionDisabled}
-              aria-pressed={active}
-              title={selectionDisabled ? 'Maximum 5 styles selected' : undefined}
-              className="flex cursor-pointer flex-col justify-center appearance-none border-none p-0 m-0 bg-transparent text-left w-full disabled:cursor-not-allowed"
+              aria-label="Close style preview"
+              onClick={() => previewDialogRef.current?.close()}
             >
-              <div className="flex w-full items-center justify-between gap-2">
-                <span
-                  className={`truncate pr-8 text-[length:var(--wbp-label)] font-semibold tracking-tight transition-colors ${active ? 'text-[color:var(--wb-ink)]' : 'text-[color:var(--wb-ink)] group-hover:text-[color:var(--wb-ink)]'}`}
-                >
-                  {presetDisplayName}
-                </span>
-                {activeCardImage?.kind === 'result' && (
-                  <div className="size-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
-                )}
-              </div>
-              <span className="mt-1 block max-h-0 overflow-hidden pr-7 text-[length:var(--wbp-label)] leading-relaxed text-[color:var(--wb-ink)]/80 opacity-0 transition-[max-height,opacity,transform,color] duration-200 ease-out group-hover:max-h-10 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-[color:var(--wb-ink)]/90 group-focus-within:max-h-10 group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                {preset.style.aesthetic}
-              </span>
+              <X size={16} />
             </button>
-
-            <div className="pointer-events-none absolute bottom-2 right-2 flex items-center gap-1 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
-              <button
-                type="button"
-                aria-label={`Copy style prompt for ${presetDisplayName}`}
-                onClick={(e) => onCopy(e, preset)}
-                className="rounded-[var(--wb-radius)] p-1 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                title="Copy Style Prompt"
-              >
-                {copied ? <Check size={12} className="text-green-500" /> : <Copy size={12} />}
-              </button>
-            </div>
-
-            {active && (
-              <div
-                className={`absolute top-0 right-0 h-0.5 w-full ${theme.bg} shadow-[0_0_10px_currentColor]`}
-              />
-            )}
+          </header>
+          {activeCardImage ? (
+            <img className="style-detail-image" src={activeCardImage.src} alt={presetDisplayName} />
+          ) : (
+            <p>No preview available</p>
+          )}
+          <div className="style-detail-copy">
+            <p>
+              {sourceProvenance
+                ? `${sourceProvenance.sourcePackName} / ${sourceProvenance.sourceCategory}`
+                : `${visualState?.presetPackName ?? 'Styles'} / ${preset.category ?? 'General'}`}
+            </p>
+            <p>{preset.style.aesthetic}</p>
+            <details>
+              <summary>Style prompt</summary>
+              <dl>
+                {Object.entries(preset.style).map(([key, value]) => {
+                  const description = describePreviewValue(value);
+                  return description ? (
+                    <div key={key}>
+                      <dt>{key.replace(/_/g, ' ')}</dt>
+                      <dd>{description}</dd>
+                    </div>
+                  ) : null;
+                })}
+              </dl>
+            </details>
           </div>
-        </div>
-      </div>
-    </FloatingTooltip>
+          <footer>
+            <button type="button" onClick={(event) => onCopy(event, preset)}>
+              {copied ? <Check size={14} /> : <Copy size={14} />} Copy prompt
+            </button>
+            <button
+              type="button"
+              className="style-detail-apply"
+              aria-pressed={active}
+              disabled={selectionDisabled}
+              onClick={() => onApply(preset)}
+            >
+              {active ? <Check size={14} /> : <Plus size={14} />}
+              {active ? 'Remove from mix' : 'Add to mix'}
+            </button>
+          </footer>
+        </dialog>
+      ) : null}
+    </>
   );
 });

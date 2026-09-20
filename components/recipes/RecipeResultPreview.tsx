@@ -58,7 +58,7 @@ export function RecipeResultPreview({
   const src = showReference || !selected ? reference?.dataUrl : selected?.src;
   const isStage = variant === 'stage';
   const canCompare = Boolean(isStage && reference && selected);
-  const panZoom = useImagePanZoom(isStage && Boolean(src) && !showReference);
+  const panZoom = useImagePanZoom(isStage && Boolean(src), src);
   const thumbnailWindow = useMemo(
     () => buildCarouselThumbnailWindow(images, Math.max(selectedIndex, 0)),
     [images, selectedIndex],
@@ -219,6 +219,14 @@ export function RecipeResultPreview({
       ) : null}
       <div
         className={`recipe-result-image${isStage ? ` is-${background}` : ''}`}
+        role={isStage ? 'group' : undefined}
+        aria-label={isStage ? 'Image canvas' : undefined}
+        aria-description={
+          isStage
+            ? 'Drag to pan. Scroll or press + and - to zoom. Press 0 to fit the image.'
+            : undefined
+        }
+        tabIndex={isStage && src ? 0 : undefined}
         data-nav-side={isStage ? (navSide ?? undefined) : undefined}
         {...(isStage ? panZoom.viewportProps : {})}
         ref={isStage ? panZoom.viewportRef : undefined}
@@ -331,6 +339,9 @@ export function RecipeResultPreview({
                       <Minus size={14} />
                     </button>
                   </Tooltip>
+                  <span className="recipe-result-scale" aria-label="Canvas zoom">
+                    {Math.round(panZoom.scale * 100)}%
+                  </span>
                   <Tooltip content="Fit image">
                     <button type="button" aria-label="Fit image" onClick={panZoom.fit}>
                       <Fit size={14} />

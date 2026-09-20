@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  IconCheck as Check,
-  IconChevronDown as ChevronDown,
-  IconCpu as Cpu,
-} from '@tabler/icons-react';
+import { IconCheck as Check, IconChevronDown as ChevronDown } from '@tabler/icons-react';
 
 import { cn } from '../../lib/utils';
 import type { CommandCenterProviderProjection } from '../../lib/commandCenterProjection';
@@ -74,11 +70,7 @@ export function ProviderQuickSwitch({
             `studio-command-surface studio-hit-target flex h-8 w-8 items-center justify-center gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-1 text-[color:var(--wb-ink)] transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/2 hover:bg-accent-500/10 hover:text-[color:var(--wb-ink)] lg:w-auto lg:justify-start lg:gap-1.5 lg:px-2 ${compactMode ? 'lg:max-w-20' : 'lg:max-w-32'}`
           }
         >
-          {isRail ? (
-            <Cpu size={15} aria-hidden="true" />
-          ) : (
-            <ProviderBrandMark providerId={provider.id} size="xs" />
-          )}
+          <ProviderBrandMark providerId={provider.id} size="xs" />
           {showLabel ? (
             <span
               className={

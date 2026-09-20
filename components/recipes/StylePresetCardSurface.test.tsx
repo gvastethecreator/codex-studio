@@ -68,7 +68,7 @@ describe('StylePresetCard', () => {
     );
   });
 
-  it('disables unselected style actions when all five slots are occupied', () => {
+  it('keeps preview available but disables adding when all five slots are occupied', () => {
     const onApply = vi.fn();
 
     render(
@@ -102,12 +102,11 @@ describe('StylePresetCard', () => {
       />,
     );
 
-    const imageAction = screen.getByRole('button', { name: 'Select Polished Glass' });
+    const imageAction = screen.getByRole('button', { name: 'Preview Polished Glass' });
     const compactAction = screen.getByRole('button', { name: 'Select style Polished Glass' });
 
-    expect((imageAction as HTMLButtonElement).disabled).toBe(true);
+    expect((imageAction as HTMLButtonElement).disabled).toBe(false);
     expect((compactAction as HTMLButtonElement).disabled).toBe(true);
-    fireEvent.click(imageAction);
     fireEvent.click(compactAction);
     expect(onApply).not.toHaveBeenCalled();
   });
