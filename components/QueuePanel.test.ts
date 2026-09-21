@@ -127,6 +127,73 @@ describe('QueuePanel views', () => {
     expect(state.retry).toHaveBeenCalledOnce();
   });
 
+  it('opens Review when nothing is running and jobs need a decision', () => {
+    const review = {
+      ...job('review-only', 'needs_review'),
+      originalPrompt: 'Review image only',
+    };
+    vi.mocked(useJobHistory).mockReturnValue({
+      key: '',
+      page: null,
+      open: [review],
+      history: [],
+      nextCursor: null,
+      seenHistoryIds: [],
+      knownAtRequest: [],
+      workspaces: [],
+      loading: false,
+      error: null,
+      loadMore: vi.fn(),
+      retry: vi.fn(),
+    });
+    render(
+      React.createElement(QueuePanel, {
+        onInspectJob: vi.fn(),
+        onCancelServerJob: vi.fn(),
+      }),
+    );
+    expect(screen.getByRole('button', { name: /Review\s*1/ }).getAttribute('aria-pressed')).toBe(
+      'true',
+    );
+    expect(screen.getByText('Review image only')).toBeTruthy();
+    expect(screen.getByText('1 need review')).toBeTruthy();
+    expect(screen.queryByText('No jobs running or queued')).toBeNull();
+  });
+
+  it('hides the review backlog from Review and stays on that tab', () => {
+    const review = {
+      ...job('review-only', 'needs_review'),
+      originalPrompt: 'Review image only',
+    };
+    vi.mocked(useJobHistory).mockReturnValue({
+      key: '',
+      page: null,
+      open: [review],
+      history: [],
+      nextCursor: null,
+      seenHistoryIds: [],
+      knownAtRequest: [],
+      workspaces: [],
+      loading: false,
+      error: null,
+      loadMore: vi.fn(),
+      retry: vi.fn(),
+    });
+    render(
+      React.createElement(QueuePanel, {
+        onInspectJob: vi.fn(),
+        onCancelServerJob: vi.fn(),
+      }),
+    );
+    expect(screen.getByText('Review image only')).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'Hide jobs from this list' }));
+    expect(screen.queryByText('Review image only')).toBeNull();
+    expect(screen.getByText('Nothing to review')).toBeTruthy();
+    expect(screen.getByRole('button', { name: /Review\s*0/ }).getAttribute('aria-pressed')).toBe(
+      'true',
+    );
+  });
+
   it('clears completed history from the jobs list', () => {
     const state: ReturnType<typeof useJobHistory> = {
       key: '',
@@ -151,7 +218,7 @@ describe('QueuePanel views', () => {
     );
     fireEvent.click(screen.getByRole('button', { name: 'History' }));
     expect(screen.getByRole('button', { name: 'Inspect job: Prompt' })).toBeTruthy();
-    fireEvent.click(screen.getByRole('button', { name: 'Clear job history' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Hide jobs from this list' }));
     expect(screen.queryByRole('button', { name: 'Inspect job: Prompt' })).toBeNull();
   });
 });

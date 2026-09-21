@@ -567,14 +567,17 @@ react-scan-overlay,
     opacity: 0;
     transform: scale(0.95);
     transition:
-      opacity 0.2s var(--ease-out-expo),
-      transform 0.2s var(--ease-out-expo);
+      opacity 150ms var(--ease-out-expo),
+      transform 150ms var(--ease-out-expo);
+    transition-delay: 0ms;
     border: 1px solid rgb(255 255 255 / 2%);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   }
-  .tooltip:hover .tooltip-content {
+  .tooltip:hover .tooltip-content,
+  .tooltip:has(:focus-visible) .tooltip-content {
     opacity: 1;
     transform: scale(1);
+    transition-delay: 80ms;
   }
 
   .tooltip-content.top {
@@ -582,8 +585,10 @@ react-scan-overlay,
     left: 50%;
     transform: translateX(-50%) scale(0.95);
   }
-  .tooltip:hover .tooltip-content.top {
+  .tooltip:hover .tooltip-content.top,
+  .tooltip:has(:focus-visible) .tooltip-content.top {
     transform: translateX(-50%) scale(1);
+    transition-delay: 80ms;
   }
 
   .tooltip-content.bottom {
@@ -591,8 +596,10 @@ react-scan-overlay,
     left: 50%;
     transform: translateX(-50%) scale(0.95);
   }
-  .tooltip:hover .tooltip-content.bottom {
+  .tooltip:hover .tooltip-content.bottom,
+  .tooltip:has(:focus-visible) .tooltip-content.bottom {
     transform: translateX(-50%) scale(1);
+    transition-delay: 80ms;
   }
 
   ::view-transition-group(master-canvas),
@@ -2475,6 +2482,24 @@ react-scan-overlay,
   gap: 4px;
   min-height: 28px;
   width: 100%;
+  min-width: 0;
+}
+.recipe-result-toolbar .recipe-result-background,
+.recipe-result-toolbar .recipe-result-zoom {
+  position: static;
+  inset: auto;
+  z-index: auto;
+  flex-shrink: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.recipe-result-toolbar .recipe-result-zoom button,
+.recipe-result-toolbar .recipe-result-background button {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
 }
 .recipe-result-toolbar-row button {
   display: inline-flex;
@@ -3032,9 +3057,13 @@ react-scan-overlay,
   min-height: 96px;
 }
 .result-context-label {
+  flex-shrink: 0;
+  max-width: 11rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 12px;
   color: var(--wb-muted);
-  white-space: normal;
+  white-space: nowrap;
 }
 @media (max-width: 639px) {
   .studio-toolbar-shell > div {

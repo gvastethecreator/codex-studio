@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   IconAlertTriangle as AlertTriangle,
   IconCircleCheck as CheckCircle2,
@@ -21,7 +21,9 @@ import { cn } from '../lib/utils';
 import { useLatestRef } from '../hooks/useLatestRef';
 import { isRegisteredRecipeId } from '../lib/recipeIds';
 import { useJobHistory } from '../hooks/useJobHistory';
+import { useStudioJobsListClearedAt } from '../hooks/useStudioJobsListClearedAt';
 import { useWorkerDiagnostics } from '../hooks/useWorkerDiagnostics';
+import { isStudioJobVisibleAfterListClear } from '../lib/studioJobsListClear';
 import { QueueBatchCard } from './QueueBatchCard';
 import type { TerminalJobStatus } from '../packages/shared/src';
 import type { WorkerStatus } from '../packages/shared/src/workerContracts';
@@ -119,15 +121,16 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const worker = useWorkerDiagnostics();
     const waitReasons = new Map(worker.status?.waiting.map((entry) => [entry.jobId, entry]) ?? []);
     const [view, setView] = useState<'active' | 'review' | 'history'>('active');
+    const autoSelectedView = useRef(false);
     const [visibleCount, setVisibleCount] = useState(20);
-    const [historyClearedAt, setHistoryClearedAt] = useState(() => {
-      const stored = Number(window.localStorage.getItem('studio-jobs-history-cleared-at') ?? 0);
-      return Number.isFinite(stored) ? stored : 0;
-    });
+    const { clearedAt, clearListedJobs } = useStudioJobsListClearedAt();
     const activeJobs = jobHistory.open.filter((job) => job.status !== 'needs_review');
-    const reviewJobs = jobHistory.open.filter((job) => job.status === 'needs_review');
-    const visibleHistory = jobHistory.history.filter(
-      (job) => Date.parse(job.createdAt) > historyClearedAt,
+    const reviewJobs = jobHistory.open.filter(
+      (job) =>
+        job.status === 'needs_review' && isStudioJobVisibleAfterListClear(job.createdAt, clearedAt),
+    );
+    const visibleHistory = jobHistory.history.filter((job) =>
+      isStudioJobVisibleAfterListClear(job.createdAt, clearedAt),
     );
     const jobs = view === 'history' ? visibleHistory : view === 'review' ? reviewJobs : activeJobs;
     const visibleJobs = view === 'history' ? jobs : jobs.slice(0, visibleCount);
@@ -157,6 +160,12 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const hasLiveDurations = summary.queued + summary.running > 0;
 
     useEffect(() => {
+      if (autoSelectedView.current || jobHistory.loading) return;
+      autoSelectedView.current = true;
+      if (activeJobs.length === 0 && reviewJobs.length > 0) setView('review');
+    }, [activeJobs.length, jobHistory.loading, reviewJobs.length]);
+
+    useEffect(() => {
       if (!hasLiveDurations) return;
       const id = window.setInterval(() => setNowMs(Date.now()), 1000);
       return () => window.clearInterval(id);
@@ -177,20 +186,17 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                   ? 'Loading jobs…'
                   : summary.running + summary.queued > 0
                     ? `${summary.running} running · ${summary.queued} queued`
-                    : 'No jobs running or queued'}
+                    : reviewJobs.length > 0
+                      ? `${reviewJobs.length} need review`
+                      : 'No jobs running or queued'}
             </p>
           </div>
           <div className="flex items-center gap-1">
             <button
               type="button"
-              aria-label="Clear job history"
-              title="Clear job history"
-              onClick={() => {
-                const now = Date.now();
-                window.localStorage.setItem('studio-jobs-history-cleared-at', String(now));
-                setHistoryClearedAt(now);
-                setView('history');
-              }}
+              aria-label="Hide jobs from this list"
+              title="Hide jobs from this list"
+              onClick={() => clearListedJobs()}
               className="studio-hit-target rounded-[var(--wb-radius)] px-2 py-1.5 text-xs text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             >
               Clear
@@ -282,7 +288,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               </button>
             </div>
           ) : null}
-          {view === 'review' ? (
+          {view === 'review' && reviewJobs.length > 0 ? (
             <p className="text-xs leading-relaxed text-[color:var(--wb-muted)]">
               These jobs have stopped and need a decision. Open a job to review what happened.
             </p>

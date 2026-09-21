@@ -167,6 +167,10 @@ describe('RecipeResultPreview', () => {
     expect(screen.getByRole('button', { name: 'Copy image' })).toBeTruthy();
     expect(screen.getByRole('button', { name: 'Download image' })).toBeTruthy();
     expect(screen.getByRole('group', { name: 'Canvas background' })).toBeTruthy();
+    const toolbar = screen.getByRole('toolbar', { name: 'Selected result actions' });
+    expect(toolbar.contains(screen.getByRole('group', { name: 'Canvas background' }))).toBe(true);
+    expect(toolbar.contains(screen.getByRole('group', { name: 'Zoom controls' }))).toBe(true);
+    expect(screen.getByText('Not a source')).toBeTruthy();
     expect(screen.queryByRole('button', { name: 'Previous result' })).toBeNull();
   });
 });

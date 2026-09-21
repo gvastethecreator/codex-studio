@@ -938,7 +938,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     >
                       {showQuickStartErrorText ? (
                         <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)]">
-                          Add prompt or image to generate
+                          {requirement?.message ?? 'Add a prompt or image.'}
                         </div>
                       ) : null}
                       {sourceFirst ? referenceField : null}
@@ -946,7 +946,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       {!sourceFirst ? referenceField : null}
                     </div>
                     {shouldShowQuickStartError ? (
-                      <p className="create-prompt-error">Add a prompt or image to generate.</p>
+                      <p id="generation-requirement" className="create-prompt-error" role="status">
+                        {requirement?.message ?? 'Add a prompt or image.'}
+                      </p>
                     ) : null}
                   </section>
 
@@ -1227,7 +1229,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               >
                 {showQuickStartErrorText && (
                   <div className="quick-start-error-float pointer-events-none absolute -top-5 left-4 z-[120] text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)] animate-in fade-in-0 slide-in-from-bottom-1 duration-150">
-                    Add prompt or image to generate
+                    {requirement?.message ?? 'Add a prompt or image.'}
                   </div>
                 )}
                 <button
@@ -2031,7 +2033,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               </div>
             </div>
 
-            {requirement ? (
+            {!isRail && requirement ? (
               <p id="generation-requirement" className="create-style-empty" role="status">
                 {requirement.message}
               </p>
@@ -2042,12 +2044,12 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 content={generateBlock?.message || 'Generate images'}
                 position="top"
                 className={isRail ? 'w-full' : undefined}
+                hidden={isRail && !generateBlock}
               >
                 <button
                   type="button"
                   onClick={handleTriggerGenerate}
                   disabled={Boolean(generateBlock)}
-                  aria-disabled={Boolean(requirement) || undefined}
                   title={generateBlock?.message ?? requirement?.message}
                   aria-describedby={
                     requirement
@@ -2101,11 +2103,25 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 <span className="create-local-status">
                   <span className="create-status-dot" aria-hidden="true" />
                   <span
-                    id={generateBlock ? 'grok-generate-block' : undefined}
-                    role={generateBlock ? 'status' : undefined}
+                    id={
+                      generateBlock
+                        ? 'grok-generate-block'
+                        : requirement && !shouldShowQuickStartError
+                          ? 'generation-requirement'
+                          : undefined
+                    }
+                    role={
+                      generateBlock || (requirement && !shouldShowQuickStartError)
+                        ? 'status'
+                        : undefined
+                    }
                   >
                     {generateBlock?.message ??
-                      (isGenerating ? 'Generating' : (requirement?.message ?? 'Ready to generate'))}
+                      (isGenerating
+                        ? 'Generating'
+                        : shouldShowQuickStartError
+                          ? ''
+                          : (requirement?.message ?? 'Ready to generate'))}
                   </span>
                 </span>
                 {isGenerating ? null : <kbd className="create-shortcut-hint">{shortcutHint}</kbd>}

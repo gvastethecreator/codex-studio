@@ -1,6 +1,28 @@
 /** @vitest-environment jsdom */
 import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import type { ReactNode } from 'react';
 import { afterEach, describe, expect, it, vi } from 'vitest';
+
+vi.mock('./ui/DemandMountedGsapDropdown', () => ({
+  DemandMountedGsapDropdown: ({
+    open,
+    children,
+    role,
+    className,
+    'aria-label': ariaLabel,
+  }: {
+    open: boolean;
+    children: ReactNode;
+    role?: string;
+    className?: string;
+    'aria-label'?: string;
+  }) =>
+    open ? (
+      <div role={role ?? 'menu'} aria-label={ariaLabel} className={className}>
+        {children}
+      </div>
+    ) : null,
+}));
 
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import type { StudioUsageSummary } from '../lib/studioDiagnostics';
@@ -121,12 +143,12 @@ describe('HeaderToolbar chrome', () => {
     expect(document.documentElement.getAttribute('data-theme')).toBe('paper');
   });
 
-  it('paints Tools with Workbench popover chrome', () => {
+  it('paints Tools with Workbench popover chrome', async () => {
     renderHeader();
+    fireEvent.click(screen.getByRole('button', { name: 'Open tools' }));
+    const help = await screen.findByRole('menuitem', { name: 'Open help and setup' });
+    expect(help.className).toContain('studio-menu-item');
     expect(document.querySelector('.studio-popover')).toBeTruthy();
-    expect(screen.getByRole('button', { name: 'Open help and setup' }).className).toContain(
-      'studio-menu-item',
-    );
   });
 
   it('keeps Compare off the header', () => {

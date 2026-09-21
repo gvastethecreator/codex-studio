@@ -77,9 +77,11 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
 }) => {
   const { appearance, toggleAppearance } = useTheme();
   const [isWorkspaceOpen, setIsWorkspaceOpen] = React.useState(false);
+  const [isToolsOpen, setIsToolsOpen] = React.useState(false);
   const [isMobileCommandOpen, setIsMobileCommandOpen] = React.useState(false);
   const workspaceRef = React.useRef<HTMLDivElement>(null);
   const workspaceButtonRef = React.useRef<HTMLButtonElement>(null);
+  const toolsButtonRef = React.useRef<HTMLButtonElement>(null);
   const mobileCommandRef = React.useRef<HTMLDivElement>(null);
   const mobileCommandButtonRef = React.useRef<HTMLButtonElement>(null);
   const activeRecipeAlias = resolveRecipeAlias(activeRecipeAliasId);
@@ -125,17 +127,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
         <div className="flex min-w-0 flex-nowrap items-center gap-1 sm:gap-1.5 lg:gap-2">
           <Logo isGenerating={isGenerating} />
           <nav className="flex min-w-0 items-center gap-1" aria-label="Studio navigation">
-            <Tooltip content="Create" position="bottom">
-              <button
-                type="button"
-                className="studio-nav-tab studio-control"
-                aria-label="Open create workspace"
-                aria-current={currentView !== 'studio' ? 'page' : undefined}
-                onClick={() => onViewChange('recipes')}
-              >
-                Create
-              </button>
-            </Tooltip>
+            <button
+              type="button"
+              className="studio-nav-tab studio-control"
+              aria-label="Open create workspace"
+              aria-current={currentView !== 'studio' ? 'page' : undefined}
+              onClick={() => onViewChange('recipes')}
+            >
+              Create
+            </button>
             <CreateWorkflowPicker
               selectedId={isRecipeView ? (activeRecipeAliasId ?? activeRecipe) : null}
               selectedLabel={isRecipeView && activeRecipeData ? activeRecipeData.name : 'Default'}
@@ -145,17 +145,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 else if (currentView === 'studio') onViewChange('recipes');
               }}
             />
-            <Tooltip content="Library" position="bottom">
-              <button
-                type="button"
-                className="studio-nav-tab studio-control"
-                aria-label="Open Library"
-                aria-current={currentView === 'studio' ? 'page' : undefined}
-                onClick={() => onViewChange('studio')}
-              >
-                Library
-              </button>
-            </Tooltip>
+            <button
+              type="button"
+              className="studio-nav-tab studio-control"
+              aria-label="Open Library"
+              aria-current={currentView === 'studio' ? 'page' : undefined}
+              onClick={() => onViewChange('studio')}
+            >
+              Library
+            </button>
           </nav>
         </div>
 
@@ -220,37 +218,71 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               />
             </DemandMountedGsapDropdown>
           </div>
-          <details className="relative hidden sm:block">
-            <summary className="studio-nav-tab studio-control cursor-pointer" title="Tools">
+          <div className="relative hidden sm:block">
+            <button
+              ref={toolsButtonRef}
+              type="button"
+              className="studio-nav-tab studio-control"
+              aria-label="Open tools"
+              aria-haspopup="menu"
+              aria-expanded={isToolsOpen}
+              aria-controls="studio-tools-menu"
+              onClick={() => setIsToolsOpen((isOpen) => !isOpen)}
+            >
               Tools
-            </summary>
-            <div className="studio-popover absolute right-0 top-11 z-50 grid w-48 gap-2 rounded-md p-3">
+            </button>
+            <DemandMountedGsapDropdown
+              id="studio-tools-menu"
+              open={isToolsOpen}
+              onOpenChange={setIsToolsOpen}
+              triggerRef={toolsButtonRef}
+              portal
+              placement="bottom-right"
+              role="menu"
+              aria-label="Tools"
+              className="studio-popover grid w-48 gap-2 p-3"
+            >
               <button
                 type="button"
+                role="menuitem"
+                data-dropdown-item
                 className="studio-menu-item rounded p-2 text-left"
-                onClick={onOpenOnboarding}
+                onClick={() => {
+                  setIsToolsOpen(false);
+                  onOpenOnboarding();
+                }}
                 aria-label="Open help and setup"
               >
                 Help &amp; setup
               </button>
               <button
                 type="button"
+                role="menuitem"
+                data-dropdown-item
                 className="studio-menu-item rounded p-2 text-left"
-                onClick={onToggleDebug}
+                onClick={() => {
+                  setIsToolsOpen(false);
+                  onToggleDebug();
+                }}
                 aria-label="Open studio activity"
               >
                 Activity
               </button>
               <button
                 type="button"
+                role="menuitem"
+                data-dropdown-item
                 className="studio-menu-item rounded p-2 text-left"
-                onClick={onOpenTrash}
+                onClick={() => {
+                  setIsToolsOpen(false);
+                  onOpenTrash();
+                }}
                 aria-label="Open archived images"
               >
                 Archive
               </button>
-            </div>
-          </details>
+            </DemandMountedGsapDropdown>
+          </div>
           <Tooltip content="Studio settings" position="bottom">
             <button
               type="button"

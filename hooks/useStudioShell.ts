@@ -1,6 +1,7 @@
 import { useCallback, useMemo, useState, useDeferredValue } from 'react';
 
 import { buildStudioCommandCenterProjection } from '../lib/commandCenterProjection';
+import { isStudioJobVisibleAfterListClear } from '../lib/studioJobsListClear';
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
 import type { RecipePageRuntimeProps } from '../components/RecipePage';
@@ -29,6 +30,7 @@ import { useStudioReset } from './useStudioReset';
 import { useStudioRuntime } from './useStudioRuntime';
 import { useStudioSettings } from './useStudioSettings';
 import { useSettingsSurface } from './useSettingsSurface';
+import { useStudioJobsListClearedAt } from './useStudioJobsListClearedAt';
 import { useStudioViewState } from './useStudioViewState';
 import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
@@ -145,6 +147,7 @@ export function useStudioShell(): StudioShellController {
 
   // Browser session logs are empty here so log-list updates never invalidate the shell.
   // Overlays that display logs subscribe to the log-list context and merge client-side.
+  const { clearedAt: jobsListClearedAt } = useStudioJobsListClearedAt();
   const studioRuntime = useStudioRuntime({
     logs: EMPTY_RUNTIME_LOGS,
     log,
@@ -153,6 +156,18 @@ export function useStudioShell(): StudioShellController {
     onCatalogChanged: refreshCatalogs,
   });
   const studioSettings = useStudioSettings({ addToast });
+  const queueCounts = useMemo(() => {
+    const jobs = studioRuntime.activity.studioJobs;
+    return {
+      activeJobCount: jobs.filter((job) => job.status === 'queued' || job.status === 'running')
+        .length,
+      reviewJobCount: jobs.filter(
+        (job) =>
+          job.status === 'needs_review' &&
+          isStudioJobVisibleAfterListClear(job.createdAt, jobsListClearedAt),
+      ).length,
+    };
+  }, [jobsListClearedAt, studioRuntime.activity.studioJobs]);
 
   const codexAvailableTransports = useMemo<readonly CodexExecutionTransport[] | undefined>(() => {
     const preflight = studioSettings.data.providerDomain.runtimePreflight?.providers.find(
@@ -701,12 +716,8 @@ export function useStudioShell(): StudioShellController {
           providerCapabilities: studioSettings.data.providerDomain.capabilities,
           providerRuntimePreflight: studioSettings.data.providerDomain.runtimePreflight,
           statusItems: studioRuntime.status.diagnostics.statusItems,
-          activeJobCount: studioRuntime.activity.studioJobs.filter(
-            (job) => job.status === 'queued' || job.status === 'running',
-          ).length,
-          reviewJobCount: studioRuntime.activity.studioJobs.filter(
-            (job) => job.status === 'needs_review',
-          ).length,
+          activeJobCount: queueCounts.activeJobCount,
+          reviewJobCount: queueCounts.reviewJobCount,
           isQueueOpen: viewState.queue.isOpen,
         }),
         onSelectProvider: (providerId) =>
@@ -751,6 +762,7 @@ export function useStudioShell(): StudioShellController {
       studioSettings.data.providerDomain.runtimePreflight,
       studioRuntime.status.diagnostics.statusItems,
       studioRuntime.activity.studioJobs,
+      queueCounts,
       viewState.queue.isOpen,
       viewState.overlays.settings.open,
       codexAvailableTransports,
@@ -831,12 +843,8 @@ export function useStudioShell(): StudioShellController {
           },
           queue: {
             statusItems: studioRuntime.status.diagnostics.statusItems,
-            activeJobCount: studioRuntime.activity.studioJobs.filter(
-              (job) => job.status === 'queued' || job.status === 'running',
-            ).length,
-            reviewJobCount: studioRuntime.activity.studioJobs.filter(
-              (job) => job.status === 'needs_review',
-            ).length,
+            activeJobCount: queueCounts.activeJobCount,
+            reviewJobCount: queueCounts.reviewJobCount,
             isQueueOpen: viewState.queue.isOpen,
             setIsQueueOpen: viewState.queue.setIsOpen,
           },
@@ -876,6 +884,7 @@ export function useStudioShell(): StudioShellController {
       studioSettings.data.settingsDomain.update,
       studioRuntime.status.diagnostics.statusItems,
       studioRuntime.activity.studioJobs,
+      queueCounts,
       viewState.queue.isOpen,
       viewState.queue.setIsOpen,
       viewState.overlays.settings.open,

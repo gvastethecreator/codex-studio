@@ -85,7 +85,7 @@ export function StudioStatusBar({
         </button>
       </Tooltip>
 
-      <Tooltip content={`Jobs · ${queueLabel}`} position="top">
+      <Tooltip content={`Jobs · ${queueLabel}`} position="top" hidden>
         <button
           type="button"
           onClick={onToggleQueue}

@@ -158,6 +158,26 @@ describe('Toolbar composer chrome', () => {
     expect(onGenerate).toHaveBeenCalledOnce();
   });
 
+  it('shows one generate requirement next to Generate and keeps the action usable', () => {
+    const { container } = renderToolbar({
+      codexTransport: 'subscription_http',
+      codexAvailableTransports: ['subscription_http'],
+      generationConfig: config({ prompt: '' }),
+    });
+    const requirement = container.querySelector('#generation-requirement');
+    expect(requirement?.textContent).toBe('Add a prompt or image.');
+    expect(container.querySelectorAll('#generation-requirement')).toHaveLength(1);
+    const generate = screen.getByRole('button', { name: /generate 4 images/i });
+    expect(generate.getAttribute('aria-disabled')).toBeNull();
+    expect(generate).toHaveProperty('disabled', false);
+    fireEvent.click(generate);
+    expect(document.activeElement).toBe(screen.getByRole('textbox', { name: 'Prompt input' }));
+    expect(container.querySelector('.create-prompt-error')?.textContent).toBe(
+      'Add a prompt or image.',
+    );
+    expect(container.querySelectorAll('#generation-requirement')).toHaveLength(1);
+  });
+
   it('groups provider and Codex execution in the same Create rail row', () => {
     const { container } = renderToolbar();
     const row = container.querySelector('.create-tool-provider-row');

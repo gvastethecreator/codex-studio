@@ -155,14 +155,25 @@ export function RecipeResultPreview({
             role="toolbar"
             aria-label="Selected result actions"
           >
-            <span className="result-context-label">
+            <span
+              className="result-context-label"
+              title={
+                showReference || !selected
+                  ? 'Source image'
+                  : isGenerating
+                    ? 'Previous result'
+                    : reference?.dataUrl === selected.src
+                      ? 'Result · used as source'
+                      : 'Recent result · not attached as source'
+              }
+            >
               {showReference || !selected
                 ? 'Source image'
                 : isGenerating
                   ? 'Previous result'
                   : reference?.dataUrl === selected.src
-                    ? 'Result · used as source'
-                    : 'Recent result · not attached as source'}
+                    ? 'Used as source'
+                    : 'Not a source'}
             </span>
             {canCompare ? (
               <Tooltip content={showReference ? 'Show result' : 'Compare reference'}>
@@ -218,6 +229,57 @@ export function RecipeResultPreview({
                 </button>
               </Tooltip>
             ) : null}
+            <div className="recipe-result-background" role="group" aria-label="Canvas background">
+              <Tooltip content="Dark background">
+                <button
+                  type="button"
+                  aria-pressed={background === 'dark'}
+                  aria-label="Dark background"
+                  onClick={() => setBackground('dark')}
+                />
+              </Tooltip>
+              <Tooltip content="Light background">
+                <button
+                  type="button"
+                  aria-pressed={background === 'light'}
+                  aria-label="Light background"
+                  onClick={() => setBackground('light')}
+                />
+              </Tooltip>
+              <Tooltip content="Checkered background">
+                <button
+                  type="button"
+                  aria-pressed={background === 'checkered'}
+                  aria-label="Checkered background"
+                  onClick={() => setBackground('checkered')}
+                />
+              </Tooltip>
+            </div>
+            <div className="recipe-result-zoom" role="group" aria-label="Zoom controls">
+              <Tooltip content="Zoom in">
+                <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
+                  <Plus size={14} />
+                </button>
+              </Tooltip>
+              <Tooltip content="Zoom out">
+                <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
+                  <Minus size={14} />
+                </button>
+              </Tooltip>
+              <span className="recipe-result-scale" aria-label="Canvas zoom">
+                {Math.round(panZoom.scale * 100)}%
+              </span>
+              <Tooltip content="Fit image">
+                <button type="button" aria-label="Fit image" onClick={panZoom.fit}>
+                  <Fit size={14} />
+                </button>
+              </Tooltip>
+              <Tooltip content="Reset zoom">
+                <button type="button" aria-label="Reset zoom" onClick={panZoom.reset}>
+                  <Reset size={14} />
+                </button>
+              </Tooltip>
+            </div>
             {selected?.config.prompt ? (
               <p className="recipe-result-prompt" title={selected.config.prompt}>
                 {selected.config.prompt}
@@ -299,71 +361,6 @@ export function RecipeResultPreview({
               alt={showReference || !selected ? 'Reference image' : 'Generated result'}
               draggable={false}
             />
-            {isStage ? (
-              <>
-                <div
-                  className="recipe-result-background"
-                  role="group"
-                  aria-label="Canvas background"
-                  onPointerDown={(event) => event.stopPropagation()}
-                >
-                  <Tooltip content="Dark background">
-                    <button
-                      type="button"
-                      aria-pressed={background === 'dark'}
-                      aria-label="Dark background"
-                      onClick={() => setBackground('dark')}
-                    />
-                  </Tooltip>
-                  <Tooltip content="Light background">
-                    <button
-                      type="button"
-                      aria-pressed={background === 'light'}
-                      aria-label="Light background"
-                      onClick={() => setBackground('light')}
-                    />
-                  </Tooltip>
-                  <Tooltip content="Checkered background">
-                    <button
-                      type="button"
-                      aria-pressed={background === 'checkered'}
-                      aria-label="Checkered background"
-                      onClick={() => setBackground('checkered')}
-                    />
-                  </Tooltip>
-                </div>
-                <div
-                  className="recipe-result-zoom"
-                  role="group"
-                  aria-label="Zoom controls"
-                  onPointerDown={(event) => event.stopPropagation()}
-                >
-                  <Tooltip content="Zoom in">
-                    <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
-                      <Plus size={14} />
-                    </button>
-                  </Tooltip>
-                  <Tooltip content="Zoom out">
-                    <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
-                      <Minus size={14} />
-                    </button>
-                  </Tooltip>
-                  <span className="recipe-result-scale" aria-label="Canvas zoom">
-                    {Math.round(panZoom.scale * 100)}%
-                  </span>
-                  <Tooltip content="Fit image">
-                    <button type="button" aria-label="Fit image" onClick={panZoom.fit}>
-                      <Fit size={14} />
-                    </button>
-                  </Tooltip>
-                  <Tooltip content="Reset zoom">
-                    <button type="button" aria-label="Reset zoom" onClick={panZoom.reset}>
-                      <Reset size={14} />
-                    </button>
-                  </Tooltip>
-                </div>
-              </>
-            ) : null}
           </>
         ) : (
           <div>
