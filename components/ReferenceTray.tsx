@@ -31,7 +31,7 @@ export function ReferenceTray({
           <div
             className={`reference-item${isThumbs ? ' is-thumb' : ''}`}
             key={attachment.id}
-            title={`${attachment.name} · ${statusLabel}`}
+            data-tooltip={`${attachment.name} · ${statusLabel}`}
           >
             <button
               type="button"
@@ -57,7 +57,7 @@ export function ReferenceTray({
                   onClick={() => onEdit(attachment)}
                   disabled={attachment.isProcessing}
                   aria-label={`Edit ${attachment.name}`}
-                  title="Edit"
+                  data-tooltip="Edit"
                 >
                   <Pencil size={11} />
                 </button>
@@ -81,14 +81,14 @@ export function ReferenceTray({
                   className="reference-item-remove"
                   onClick={() => onRemove(attachment.id)}
                   aria-label={`Remove ${attachment.name}`}
-                  title="Remove"
+                  data-tooltip="Remove"
                 >
                   <X size={11} />
                 </button>
               </div>
             ) : (
               <div className="min-w-0 flex-1">
-                <span className="reference-item-copy block truncate" title={attachment.name}>
+                <span className="reference-item-copy block truncate" data-tooltip={attachment.name}>
                   {attachment.name}
                 </span>
                 <span className="reference-item-copy block text-xs text-[color:var(--wb-muted)]">
@@ -100,7 +100,7 @@ export function ReferenceTray({
                     onClick={() => onEdit(attachment)}
                     disabled={attachment.isProcessing}
                     aria-label={`Edit ${attachment.name}`}
-                    title="Edit"
+                    data-tooltip="Edit"
                     className="inline-flex size-7 items-center justify-center rounded-md text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                   >
                     <Pencil size={14} />
@@ -125,7 +125,7 @@ export function ReferenceTray({
                     type="button"
                     onClick={() => onRemove(attachment.id)}
                     aria-label={`Remove ${attachment.name}`}
-                    title="Remove"
+                    data-tooltip="Remove"
                     className="inline-flex size-7 items-center justify-center rounded-md text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
                   >
                     <X size={14} />

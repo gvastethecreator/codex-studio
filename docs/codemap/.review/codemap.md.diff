@@ -1,42 +1,32 @@
 diff --git "a/X:\\codex-studio\\docs\\codemap\\codemap.md" "b/X:\\codex-studio\\docs\\codemap\\.staging\\codemap.md"
-index 42c85f15..1a6e488d 100644
+index 9296851d..8a167ade 100644
 --- "a/X:\\codex-studio\\docs\\codemap\\codemap.md"
 +++ "b/X:\\codex-studio\\docs\\codemap\\.staging\\codemap.md"
-@@ -1,15 +1,15 @@
+@@ -1,7 +1,7 @@
  # Code map: codex-studio
  
--Generated: 2026-09-20T03:31:54Z | Commit: `62f2ac2b2f05` | Schema: 2
--Generation: `90d23c30e32d9c8d48c7562c2c7036bb503eb4ba455d9b77c2b64158acf8414d`
-+Generated: 2026-09-20T04:22:45Z | Commit: `62f2ac2b2f05` | Schema: 2
-+Generation: `a09942ffce0a2236ddfda62f4e62d4a3be93da13cb4db816a7e1ac6f8b474b6f`
+-Generated: 2026-09-22T05:54:12Z | Commit: `be3541666a65` | Schema: 2
+-Generation: `b8affa3fd5ab95e7cb68851c7ae6420db4d7246c91bc891fc80bc6ae568d9890`
++Generated: 2026-09-22T06:13:56Z | Commit: `be3541666a65` | Schema: 2
++Generation: `64967d69123c2158b14f1c3281dbf818071da7ef7ed3a9fe05a8167099348d82`
  Scope: . | Inventory: working-tree
--Nodes: 1100 | Edges: 5602 | Flows: 5
-+Nodes: 1100 | Edges: 5604 | Flows: 5
+ Nodes: 1155 | Edges: 5878 | Flows: 5
  
- ## Coverage
+@@ -9,7 +9,7 @@ Nodes: 1155 | Edges: 5878 | Flows: 5
  
- - Analysis: **partial**; 1035 analyzed of 1046 included files.
+ - Analysis: **partial**; 1075 analyzed of 1087 included files.
  - Configuration files: 7; omitted untracked files: 0.
--- Unresolved references and analysis limits: 2978.
-+- Unresolved references and analysis limits: 2992.
+-- Unresolved references and analysis limits: 3388.
++- Unresolved references and analysis limits: 3399.
  - Static references and call paths do not prove runtime execution or test coverage.
  
  ## Modules
-@@ -88,7 +88,7 @@ Nodes: 1100 | Edges: 5602 | Flows: 5
- - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | imports
- - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:path` | imports
- - `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | calls
--- Showing 50 of 5602 edges; JSON contains every edge and its evidence.
-+- Showing 50 of 5604 edges; JSON contains every edge and its evidence.
- 
- ## Unknown
- 
-@@ -115,7 +115,7 @@ Nodes: 1100 | Edges: 5602 | Flows: 5
+@@ -115,7 +115,7 @@ Nodes: 1155 | Edges: 5878 | Flows: 5
  
  ## Architecture changes
  
--- Nodes: +0 / -0; edges: +1 / -0.
-+- Nodes: +0 / -0; edges: +2 / -0.
+-- Nodes: +1 / -3; edges: +6 / -24.
++- Nodes: +0 / -0; edges: +0 / -0.
  - Boundary changes: 0; new cycles: 0.
  
  ## Read next

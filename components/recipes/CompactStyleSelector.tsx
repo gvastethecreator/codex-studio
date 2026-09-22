@@ -68,6 +68,8 @@ export interface CompactStyleSelectorProps {
   loadIndex?: (packIds: readonly string[]) => Promise<StylePresetCatalogSearchIndex>;
   loadPreview?: (presetId: string, packId: string) => Promise<string | null>;
   onToggleFavorite: (presetId: string) => void;
+  onCopyPrompt?: (result: StylePresetCatalogSearchResult) => void;
+  onUsePrompt?: (result: StylePresetCatalogSearchResult) => void;
   onChooseStyle: (result: StylePresetCatalogSearchResult) => void | Promise<void>;
   onRemove: (presetId: string) => void;
   onSetStrength: (presetId: string, strength: number) => void;
@@ -102,6 +104,8 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
   loadPreview = defaultLoadPreview,
   onToggleFavorite,
   onChooseStyle,
+  onCopyPrompt,
+  onUsePrompt,
   onRemove,
   onSetStrength,
   onToggleEnabled,
@@ -487,7 +491,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
     const full = selectedCount >= maxSlots && !chosen;
     const fav = favorites.includes(result.id);
     return (
-      <div key={result.id} className="cs-option-wrap">
+      <div key={result.id} className="cs-option-wrap group">
         <button
           type="button"
           className="cs-choice cs-style-choice"
@@ -537,6 +541,26 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
         >
           <Heart size={13} fill={fav ? 'currentColor' : 'none'} />
         </button>
+        {onCopyPrompt && (
+          <button
+            type="button"
+            className="cs-prompt-action"
+            aria-label="Copy prompt"
+            onClick={() => onCopyPrompt(result)}
+          >
+            Copy
+          </button>
+        )}
+        {onUsePrompt && (
+          <button
+            type="button"
+            className="cs-prompt-action"
+            aria-label="Use as prompt"
+            onClick={() => onUsePrompt(result)}
+          >
+            Prompt
+          </button>
+        )}
       </div>
     );
   };
@@ -634,7 +658,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                 <ChevronLeft size={13} />
               </button>
             ) : null}
-            <strong title={title}>{title}</strong>
+            <strong data-tooltip={title}>{title}</strong>
             {browseLabel ? (
               <button
                 type="button"
@@ -684,33 +708,39 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                   <p>Try another pack or search by name.</p>
                 </div>
               ) : (
-                categoryGroups.map((group) => {
-                  const identity = resolveStyleCategoryIdentity(group.packId, group.name);
-                  const thumb =
-                    getStyleCategoryImage(styleCategoryImageKey(group.packId, group.name)) ??
-                    getStyleThumbnail(styleCategoryImageKey(group.packId, group.name));
-                  void thumbRevision;
-                  return (
-                    <div key={`${group.packId}:${group.id}`} className="cs-category-block">
-                      <div className="cs-category-head" data-category-header={group.id}>
-                        <span className={`cs-category-accent ${identity.accentClassName}`} />
-                        <span className="cs-category-thumb">
-                          {thumb ? (
-                            <img src={thumb} alt="" />
-                          ) : (
-                            <StyleCategoryGlyph iconId={identity.iconId} size={14} />
-                          )}
-                        </span>
-                        <span className={`cs-category-icon ${identity.titleClassName}`}>
-                          <StyleCategoryGlyph iconId={identity.iconId} size={12} />
-                        </span>
-                        <strong className={identity.titleClassName}>{group.name}</strong>
-                        <span className="cs-dir-count">{group.presets.length}</span>
+                categoryGroups
+                  .map((group) => ({
+                    ...group,
+                    presets: group.presets,
+                  }))
+                  .filter((group) => group.presets.length)
+                  .map((group) => {
+                    const identity = resolveStyleCategoryIdentity(group.packId, group.name);
+                    const thumb =
+                      getStyleCategoryImage(styleCategoryImageKey(group.packId, group.name)) ??
+                      getStyleThumbnail(styleCategoryImageKey(group.packId, group.name));
+                    void thumbRevision;
+                    return (
+                      <div key={`${group.packId}:${group.id}`} className="cs-category-block">
+                        <div className="cs-category-head" data-category-header={group.id}>
+                          <span className={`cs-category-accent ${identity.accentClassName}`} />
+                          <span className="cs-category-thumb">
+                            {thumb ? (
+                              <img src={thumb} alt="" />
+                            ) : (
+                              <StyleCategoryGlyph iconId={identity.iconId} size={14} />
+                            )}
+                          </span>
+                          <span className={`cs-category-icon ${identity.titleClassName}`}>
+                            <StyleCategoryGlyph iconId={identity.iconId} size={12} />
+                          </span>
+                          <strong className={identity.titleClassName}>{group.name}</strong>
+                          <span className="cs-dir-count">{group.presets.length}</span>
+                        </div>
+                        {group.presets.map((result) => renderStyleChoice(result))}
                       </div>
-                      {group.presets.map((result) => renderStyleChoice(result))}
-                    </div>
-                  );
-                })
+                    );
+                  })
               )
             ) : results.length === 0 ? (
               <div className="cs-empty-result">
@@ -965,7 +995,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                   className="cs-enable"
                   aria-pressed={enabled}
                   aria-label={`${enabled ? 'Pause' : 'Enable'} ${name}`}
-                  title={`${enabled ? 'Pause' : 'Enable'} style`}
+                  data-tooltip={`${enabled ? 'Pause' : 'Enable'} style`}
                   onClick={() => onToggleEnabled(slot.preset.id)}
                 />
                 <button
@@ -987,7 +1017,7 @@ export const CompactStyleSelector: React.FC<CompactStyleSelectorProps> = ({
                       <LayoutGrid size={16} />
                     </span>
                   )}
-                  <span className="cs-name-text" title={name}>
+                  <span className="cs-name-text" data-tooltip={name}>
                     {name}
                   </span>
                 </button>

@@ -63,6 +63,12 @@ export async function composeSpriteAtlasFixture(runId: string) {
   );
 }
 
+export async function composeSpriteAtlas(runId: string) {
+  return request<SpriteAtlasRun>(`/api/sprite-atlas/runs/${encodeURIComponent(runId)}/compose`, {
+    method: 'POST',
+  });
+}
+
 export async function runSpriteAtlasQa(runId: string) {
   return request<SpriteAtlasRun>(`/api/sprite-atlas/runs/${encodeURIComponent(runId)}/qa`, {
     method: 'POST',

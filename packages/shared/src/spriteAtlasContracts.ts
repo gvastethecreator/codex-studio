@@ -31,6 +31,19 @@ const SPRITE_ATLAS_EXTRACTION_MODES = ['components', 'slots'] as const;
 
 export type SpriteAtlasExtractionMode = (typeof SPRITE_ATLAS_EXTRACTION_MODES)[number];
 
+export const SPRITE_ATLAS_WORKFLOW_LANES = [
+  'static-items',
+  'true-grid',
+  'animation',
+  'tileset',
+] as const;
+
+export type SpriteAtlasWorkflowLane = (typeof SPRITE_ATLAS_WORKFLOW_LANES)[number];
+
+export const SPRITE_ATLAS_FRAME_SEMANTICS = ['items', 'variants', 'temporal', 'tiles'] as const;
+
+export type SpriteAtlasFrameSemantics = (typeof SPRITE_ATLAS_FRAME_SEMANTICS)[number];
+
 export const SPRITE_ATLAS_BACKGROUND_REMOVAL = ['chroma', 'rembg', 'auto', 'alpha'] as const;
 
 export type SpriteAtlasBackgroundRemoval = (typeof SPRITE_ATLAS_BACKGROUND_REMOVAL)[number];
@@ -92,6 +105,8 @@ export interface SpriteAtlasContract {
   presetId: SpriteAtlasPresetId;
   assetKind: SpriteAtlasAssetKind;
   extractionMode: SpriteAtlasExtractionMode;
+  workflowLane: SpriteAtlasWorkflowLane;
+  frameSemantics: SpriteAtlasFrameSemantics;
   stylePreset: string;
   customStyle: string | null;
   frameBudget: SpriteAtlasFrameBudget;
@@ -713,11 +728,29 @@ export function createSpriteAtlasContract(
   const cellHeight = Math.max(16, Math.round(readNumber(input, 'cellHeight', preset.cell.height)));
   const columns = Math.max(1, Math.round(readNumber(input, 'columns', preset.columns)));
   const formats = readStringList(input, 'formats', preset.formats);
+  const workflowLane: SpriteAtlasWorkflowLane =
+    preset.assetKind === 'tileset' || preset.assetKind === 'texture'
+      ? 'tileset'
+      : preset.assetKind === 'sprite' && presetId !== 'ui-avatar'
+        ? 'animation'
+        : preset.extractionMode === 'slots'
+          ? 'true-grid'
+          : 'static-items';
+  const frameSemantics: SpriteAtlasFrameSemantics =
+    workflowLane === 'animation'
+      ? 'temporal'
+      : workflowLane === 'tileset'
+        ? 'tiles'
+        : workflowLane === 'true-grid'
+          ? 'variants'
+          : 'items';
 
   return {
     presetId,
     assetKind: preset.assetKind,
     extractionMode: preset.extractionMode,
+    workflowLane,
+    frameSemantics,
     stylePreset,
     customStyle: customStyle || null,
     frameBudget: isSpriteAtlasFrameBudget(frameBudgetValue) ? frameBudgetValue : 'preset',

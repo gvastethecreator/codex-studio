@@ -1,3 +1,4 @@
+import type { UseCatalogResult } from '../../hooks/useCatalogPage';
 import React, { Suspense, useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 import { useGenerationDraft } from '../../contexts/GenerationContext';
@@ -37,6 +38,9 @@ export interface CreateWorkspaceProps {
   action?: React.ReactNode;
   stage?: React.ReactNode;
   images?: GeneratedImageWithConfig[];
+  history?: UseCatalogResult;
+  selectedId?: string | null;
+  onSelectId?: (id: string) => void;
   routeKey?: string;
   workspaceTab?: 'configure' | 'preview';
   onNarrowChange?: (narrow: boolean) => void;
@@ -54,6 +58,9 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
   action,
   stage,
   images,
+  history,
+  selectedId,
+  onSelectId,
   routeKey = 'recipes-list',
   workspaceTab = 'configure',
   onNarrowChange,
@@ -67,8 +74,8 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
     if (!element) return;
     const resize = () => {
       const width = element.clientWidth;
-      setLayout(width >= 1128 ? 'wide' : width >= 800 ? 'split' : 'single');
-      onNarrowChange?.(width < 800);
+      setLayout(width >= 1312 ? 'wide' : width >= 820 ? 'split' : 'single');
+      onNarrowChange?.(width < 820);
     };
     resize();
     const observer = new ResizeObserver(resize);
@@ -133,6 +140,9 @@ export const CreateWorkspace: React.FC<CreateWorkspaceProps> = ({
           <CreateResults
             recipePageProps={recipePageProps}
             images={stageImages}
+            history={history}
+            selectedId={selectedId}
+            onSelectId={onSelectId}
             onToggleFavorite={onToggleFavorite}
             onUseAsReference={onUseAsReference}
           />
@@ -148,14 +158,26 @@ export function CreateResults({
   onToggleFavorite,
   onUseAsReference,
   title,
+  history,
+  selectedId,
+  onSelectId,
 }: Pick<
   CreateWorkspaceProps,
-  'recipePageProps' | 'images' | 'onToggleFavorite' | 'onUseAsReference'
+  | 'recipePageProps'
+  | 'images'
+  | 'onToggleFavorite'
+  | 'onUseAsReference'
+  | 'history'
+  | 'selectedId'
+  | 'onSelectId'
 > & { title?: string }) {
   const draft = useGenerationDraft();
   return (
     <RecipeResultPreview
       variant="stage"
+      history={history}
+      selectedId={selectedId}
+      onSelectId={onSelectId}
       images={images ?? recipePageProps.imagesWithConfig}
       reference={draft.generationConfig.attachments[0]}
       onOpen={recipePageProps.openModal}

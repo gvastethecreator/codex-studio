@@ -14,7 +14,7 @@
   --wbp-font-heading: var(--wbp-font-ui);
   --wbp-font-caption: var(--wbp-font-ui);
   --wbp-scale: 1;
-  --wbp-accent: var(--wb-accent, #c3b28d);
+  --wbp-accent: var(--wb-accent, #737373);
   --wbp-modulation: #b9a3d0;
   --wbp-track: var(--wb-well, #0d0d0d);
   --wbp-ink: var(--wb-ink, #e3e3e3);

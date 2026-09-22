@@ -189,7 +189,9 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   const hasChanges =
     JSON.stringify(buildStudioSettingsPatch(formState)) !==
     JSON.stringify(buildStudioSettingsPatch(savedForm));
-  dirtyRef.current = hasChanges;
+  useLayoutEffect(() => {
+    dirtyRef.current = hasChanges;
+  }, [hasChanges]);
   const fileNameError = formState.outputFileNameTemplate.trim()
     ? null
     : 'Enter an output filename template.';

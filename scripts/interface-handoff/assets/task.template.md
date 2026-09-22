@@ -7,29 +7,35 @@ No exigir aprobación adicional ni duplicar tareas de instalación.
 Estado: planned | in_progress | blocked | implemented | verified
 
 ## Baseline y objetivo
+
 Proyecto / commit / working tree / fecha / instrucciones del proyecto.
 Qué UI se exporta y qué review debe habilitar. Alcance total o parcial e inventario base.
 
 ## Observado / desconocido / preservar
+
 Framework y versión instalada, gestor, routing, estilos, providers, pruebas.
 Restricciones y decisiones reales. No atribuir aprobaciones no documentadas.
 
 ## Estrategia elegida
+
 Target: file preferido / localhost justificado / evidence-only parcial.
 UI reutilizada, fronteras de IO, fixtures, escenarios y exclusiones.
 Motivo de elección y alternativas descartadas con evidencia.
 
 ## Reconciliación con el proyecto actual
+
 Export_id previo / inventario actual / vistas-estados agregados, retirados o movidos.
 Cambios de contratos, estilos, arquitectura y dependencias fuera de raíces antiguas.
 Adaptaciones necesarias al exporter, workflow, mocks, fixtures, pruebas y contexto.
 Impacto sobre caché/evidencia, validación pendiente y referencias obsoletas que retirar.
 
 ## Cambios por archivo
+
 Ruta real | cambio | razón | riesgo | prueba.
 Nombres propuestos se marcan como propuestos hasta crearlos.
 
 ## Secuencia de implementación
+
 1. Inventario y baseline comparable con datos seguros.
 2. Entrypoint de review y adapters sin efectos de producción.
 3. Escenarios, navegación, flujos y reset.
@@ -38,6 +44,7 @@ Nombres propuestos se marcan como propuestos hasta crearlos.
 6. Documentación, comando repetible y receipt de entrega.
 
 ## Criterios de aceptación
+
 - [ ] No hay reinterpretación visual ni bypass de auth de producción.
 - [ ] Cada vista/estado incluido se localiza y reproduce.
 - [ ] Acciones relevantes operan sobre estado coherente o declaran su indisponibilidad.
@@ -61,9 +68,11 @@ Nombres propuestos se marcan como propuestos hasta crearlos.
 - [ ] Fidelidad comparada contra producto actual; sin original observable, no verificada.
 
 ## Pruebas ejecutadas
+
 Comando/pasos | entorno | pass/failed/not_run | evidencia | limitaciones.
 
 ## Rollback y entrega
+
 Cómo revertir solo esta integración sin tocar cambios previos del usuario.
 Archivos modificados, comando real, ZIP, pendientes, diferencias frente al plan.
 

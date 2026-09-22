@@ -1,3 +1,4 @@
+import type { UseCatalogResult } from '../../hooks/useCatalogPage';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import React, { createContext, useContext, useEffect, useId, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
@@ -14,6 +15,7 @@ export const RecipeWorkbenchContext = createContext<{
   sidePanel: HTMLElement | null;
   compare: CanvasCompareChrome;
   setCompare: (compare: CanvasCompareChrome) => void;
+  history?: UseCatalogResult;
   results?: React.ReactNode;
   latestResultId?: string;
 }>({

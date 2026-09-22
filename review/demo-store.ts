@@ -253,7 +253,8 @@ function seedJobs() {
         completedAt: iso(2000),
       });
       jobs.set(completed.id, completed);
-      jobs.get(id)!.batchId = 'batch-partial';
+      const pending = jobs.get(id);
+      if (pending) pending.batchId = 'batch-partial';
       const image = makeImage('img-partial', completed.originalPrompt, stylesCard, null);
       image.jobId = completed.id;
       image.batchId = completed.batchId ?? null;
@@ -284,6 +285,8 @@ export function resetDemoStore(
     defaultOutputMode: 'studio_library',
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,
+    intentionalStylesV1: false,
+    showWorkspaceHistoryInCarousel: true,
     preferredLibraryId: LIBRARY_ID,
     preferredOutputPath: null,
     outputOrganization: {

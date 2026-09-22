@@ -79,11 +79,7 @@
       "minLength": 1
     },
     "portability_target": {
-      "enum": [
-        "file",
-        "localhost",
-        "evidence-only"
-      ]
+      "enum": ["file", "localhost", "evidence-only"]
     },
     "capture_profile": {
       "type": "object"
@@ -99,21 +95,14 @@
     "discovery": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "exclude_roots",
-        "max_files",
-        "max_bytes"
-      ],
+      "required": ["exclude_roots", "max_files", "max_bytes"],
       "properties": {
         "exclude_roots": {
           "type": "array",
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": [
-              "path",
-              "reason"
-            ],
+            "required": ["path", "reason"],
             "properties": {
               "path": {
                 "type": "string",

@@ -161,7 +161,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                       aria-label={`Restore batch ${group.id}`}
                       onClick={() => onRestore(group.id)}
                       className="flex h-11 w-full items-center justify-center rounded-[var(--wb-radius)] bg-accent-500/10 p-3 text-accent-400 transition-[color,background-color,transform] hover:bg-accent-500 hover:text-[color:var(--wb-ink)] active:scale-90 sm:w-auto cursor-pointer"
-                      title="Restore image group"
+                      data-tooltip="Restore image group"
                     >
                       <RotateCcw size={18} />
                     </button>

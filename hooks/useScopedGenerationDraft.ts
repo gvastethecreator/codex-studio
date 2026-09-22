@@ -5,6 +5,39 @@ import useIndexedDBStorage from './useIndexedDBStorage';
 
 const EMPTY_DRAFTS: Record<string, ImageGenerationConfig> = {};
 
+function getWorkspaceScope(scope: string) {
+  return scope.slice(0, scope.lastIndexOf(':'));
+}
+
+function collectWorkspaceAttachments(
+  drafts: Record<string, ImageGenerationConfig>,
+  workspace: string,
+  active: ImageGenerationConfig,
+) {
+  const attachments = [
+    ...active.attachments,
+    ...Object.entries(drafts)
+      .filter(([key]) => key.startsWith(`${workspace}:`))
+      .flatMap(([, draft]) => draft.attachments),
+  ];
+  return attachments.filter(
+    (attachment, index) => attachments.findIndex((item) => item.id === attachment.id) === index,
+  );
+}
+
+function shareWorkspaceAttachments(
+  drafts: Record<string, ImageGenerationConfig>,
+  workspace: string,
+  attachments: ImageGenerationConfig['attachments'],
+) {
+  return Object.fromEntries(
+    Object.entries(drafts).map(([key, draft]) => [
+      key,
+      key.startsWith(`${workspace}:`) ? { ...draft, attachments } : draft,
+    ]),
+  );
+}
+
 export function useScopedGenerationDraft(
   scope: string,
   prepare: (config: ImageGenerationConfig) => ImageGenerationConfig,
@@ -36,25 +69,42 @@ export function useScopedGenerationDraft(
           },
     [scope, legacy],
   );
-  const config = drafts[scope] ?? initial;
+  const workspace = useMemo(() => getWorkspaceScope(scope), [scope]);
+  const config = useMemo(() => {
+    const active = drafts[scope] ?? initial;
+    return {
+      ...active,
+      attachments: collectWorkspaceAttachments(drafts, workspace, active),
+    };
+  }, [drafts, initial, scope, workspace]);
   const setConfig = useCallback(
     (
       update: ImageGenerationConfig | ((current: ImageGenerationConfig) => ImageGenerationConfig),
     ) => {
       if (!legacyReady || !draftsReady) return;
-      setDrafts((current) => ({
-        ...current,
-        [scope]: typeof update === 'function' ? update(current[scope] ?? initial) : update,
-      }));
+      setDrafts((current) => {
+        const active = current[scope] ?? initial;
+        const sharedAttachments = collectWorkspaceAttachments(current, workspace, active);
+        const updated =
+          typeof update === 'function'
+            ? update({ ...active, attachments: sharedAttachments })
+            : update;
+        return {
+          ...shareWorkspaceAttachments(current, workspace, updated.attachments),
+          [scope]: updated,
+        };
+      });
     },
-    [scope, initial, setDrafts, legacyReady, draftsReady],
+    [scope, initial, setDrafts, legacyReady, draftsReady, workspace],
   );
   const setRecipeDraft = useCallback(
     (recipeId: ImageGenerationConfig['recipeId'], value: ImageGenerationConfig) => {
-      const workspace = scope.slice(0, scope.lastIndexOf(':'));
-      setDrafts((current) => ({ ...current, [`${workspace}:${recipeId ?? 'studio'}`]: value }));
+      setDrafts((current) => ({
+        ...shareWorkspaceAttachments(current, workspace, value.attachments),
+        [`${workspace}:${recipeId ?? 'studio'}`]: value,
+      }));
     },
-    [scope, setDrafts],
+    [workspace, setDrafts],
   );
   return [config, setConfig, setRecipeDraft, legacyReady && draftsReady] as const;
 }

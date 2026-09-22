@@ -31,6 +31,8 @@ export interface StudioSettingsFormState {
   outputFileNameTemplate: string;
   autoDetectOutputSources: boolean;
   commandCenterCompactMode: boolean;
+  intentionalStylesV1: boolean;
+  showWorkspaceHistoryInCarousel: boolean;
   providerDefaults: EditableStudioSettings['providerDefaults'];
 }
 
@@ -47,6 +49,8 @@ export function createInitialStudioSettingsFormState(): StudioSettingsFormState 
     outputFileNameTemplate: '{timestamp}-{provider}-{jobId}',
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,
+    intentionalStylesV1: false,
+    showWorkspaceHistoryInCarousel: true,
     providerDefaults: {},
   };
 }
@@ -62,6 +66,8 @@ export function getStudioSettingsFormState(
     outputFileNameTemplate: settings.outputOrganization.fileNameTemplate,
     autoDetectOutputSources: settings.autoDetectOutputSources,
     commandCenterCompactMode: settings.commandCenterCompactMode,
+    intentionalStylesV1: settings.intentionalStylesV1,
+    showWorkspaceHistoryInCarousel: settings.showWorkspaceHistoryInCarousel ?? true,
     providerDefaults: settings.providerDefaults,
   };
 }
@@ -83,6 +89,8 @@ export function buildStudioSettingsPatch(
     },
     autoDetectOutputSources: formState.autoDetectOutputSources,
     commandCenterCompactMode: formState.commandCenterCompactMode,
+    intentionalStylesV1: formState.intentionalStylesV1,
+    showWorkspaceHistoryInCarousel: formState.showWorkspaceHistoryInCarousel,
     providerDefaults: formState.providerDefaults,
   };
 }

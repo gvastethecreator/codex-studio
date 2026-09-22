@@ -409,7 +409,7 @@ export function WorkspaceStrip({
                       </div>
                       <div
                         className="truncate text-[color:var(--wb-ink)]"
-                        title={workspaceLocation}
+                        data-tooltip={workspaceLocation}
                       >
                         {workspaceLocation}
                       </div>
@@ -452,7 +452,7 @@ export function WorkspaceStrip({
                     </div>
                     <div
                       className="mt-1 truncate text-[color:var(--wb-ink)]"
-                      title={workspace.libraryIds?.join(', ')}
+                      data-tooltip={workspace.libraryIds?.join(', ')}
                     >
                       {librariesLabel}
                     </div>

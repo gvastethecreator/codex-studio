@@ -9,6 +9,8 @@ import { StudioViewport } from './shell/StudioViewport';
 import { ErrorBoundary } from './ErrorBoundary';
 import { RecipeWorkbenchContext, type CanvasCompareChrome } from './recipes/RecipeWorkbenchContext';
 import ToastContainer from './ToastContainer';
+import { materializeCatalogEntryImageWithConfig } from '../lib/studioCatalogImageAdapter';
+import { ControlTooltips } from './Tooltip';
 import { CreateWorkspace, CreateResults } from './create/CreateWorkspace';
 import { getRecipeShellTitle } from '../lib/recipeShellMetadata';
 import { StudioStatusBar } from './shell/StudioStatusBar';
@@ -86,7 +88,11 @@ export const AppContent: React.FC = () => {
   const hasGenerationDock =
     !shell.generationDock.isModalOpen && !shell.generationDock.isUiChromeSuppressed && isWorkspace;
   const activeRecipe = shell.viewport.activeRecipe;
-  const stageImages = shell.viewport.recipePageProps.imagesWithConfig;
+  const workflowImages = shell.viewport.recipePageProps.imagesWithConfig;
+  const stageImages = React.useMemo(
+    () => shell.history.entries.map(materializeCatalogEntryImageWithConfig),
+    [shell.history.entries],
+  );
   const hasActiveOverlay = hasMountedStudioOverlay(shell.overlays);
 
   return (
@@ -98,13 +104,19 @@ export const AppContent: React.FC = () => {
         sidePanel: sidePanelTarget,
         compare,
         setCompare,
-        latestResultId: stageImages[0]?.id,
+        history: isWorkspace ? shell.history : undefined,
+        latestResultId: workflowImages.find(
+          (image) => (image.config.recipeId ?? null) === (activeRecipe ?? null),
+        )?.id,
         results: (
           <CreateResults
             key={`${shell.headerToolbar.props.activeWorkspaceId}:${activeRecipe ?? 'default'}`}
             title={activeRecipe ? getRecipeShellTitle(activeRecipe) : undefined}
             recipePageProps={shell.viewport.recipePageProps}
             images={stageImages}
+            history={shell.history}
+            selectedId={shell.historySelection.id}
+            onSelectId={shell.historySelection.setId}
             onToggleFavorite={shell.viewport.studioPageController.grid.handleToggleFavorite}
             onUseAsReference={shell.viewport.studioPageController.grid.handleAddToContext}
           />
@@ -123,6 +135,7 @@ export const AppContent: React.FC = () => {
         onDrop={shell.root.onDrop}
       >
         <ToastContainer />
+        <ControlTooltips />
 
         {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
 
@@ -205,6 +218,9 @@ export const AppContent: React.FC = () => {
               onToggleFavorite={shell.viewport.studioPageController.grid.handleToggleFavorite}
               onUseAsReference={shell.viewport.studioPageController.grid.handleAddToContext}
               images={stageImages}
+              history={shell.history}
+              selectedId={shell.historySelection.id}
+              onSelectId={shell.historySelection.setId}
               routeKey={isRecipe ? `recipe-${activeRecipe ?? 'active'}` : 'recipes-list'}
               onSidePanelTarget={setSidePanelTarget}
               stage={isRecipe ? <StudioViewport {...shell.viewport} /> : undefined}

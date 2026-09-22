@@ -24,6 +24,8 @@ export interface EditableStudioSettings {
   defaultOutputMode: StudioOutputMode;
   autoDetectOutputSources: boolean;
   commandCenterCompactMode: boolean;
+  intentionalStylesV1: boolean;
+  showWorkspaceHistoryInCarousel: boolean;
   preferredLibraryId: string | null;
   preferredOutputPath: string | null;
   outputOrganization: StudioOutputOrganizationSettings;
@@ -41,6 +43,8 @@ export interface EditableStudioSettingsPatch {
   defaultOutputMode?: StudioOutputMode;
   autoDetectOutputSources?: boolean;
   commandCenterCompactMode?: boolean;
+  intentionalStylesV1?: boolean;
+  showWorkspaceHistoryInCarousel?: boolean;
   preferredLibraryId?: string | null;
   preferredOutputPath?: string | null;
   outputOrganization?: Partial<StudioOutputOrganizationSettings> | null;
@@ -153,6 +157,8 @@ export function createDefaultEditableStudioSettings(): EditableStudioSettings {
     defaultOutputMode: 'studio_library',
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,
+    intentionalStylesV1: false,
+    showWorkspaceHistoryInCarousel: true,
     preferredLibraryId: null,
     preferredOutputPath: null,
     outputOrganization: {
@@ -199,6 +205,12 @@ export function sanitizeEditableStudioSettingsPatch(value: unknown): EditableStu
   }
   if (typeof value.commandCenterCompactMode === 'boolean') {
     patch.commandCenterCompactMode = value.commandCenterCompactMode;
+  }
+  if (typeof value.showWorkspaceHistoryInCarousel === 'boolean') {
+    patch.showWorkspaceHistoryInCarousel = value.showWorkspaceHistoryInCarousel;
+  }
+  if (typeof value.intentionalStylesV1 === 'boolean') {
+    patch.intentionalStylesV1 = value.intentionalStylesV1;
   }
   if (preferredLibraryId !== undefined) patch.preferredLibraryId = preferredLibraryId;
   if (preferredOutputPath !== undefined) patch.preferredOutputPath = preferredOutputPath;
@@ -264,6 +276,9 @@ export function mergeEditableStudioSettingsPatch(
     defaultOutputMode: patch.defaultOutputMode ?? current.defaultOutputMode,
     autoDetectOutputSources: patch.autoDetectOutputSources ?? current.autoDetectOutputSources,
     commandCenterCompactMode: patch.commandCenterCompactMode ?? current.commandCenterCompactMode,
+    intentionalStylesV1: patch.intentionalStylesV1 ?? current.intentionalStylesV1,
+    showWorkspaceHistoryInCarousel:
+      patch.showWorkspaceHistoryInCarousel ?? current.showWorkspaceHistoryInCarousel ?? true,
     preferredLibraryId:
       patch.preferredLibraryId !== undefined
         ? patch.preferredLibraryId

@@ -427,13 +427,19 @@ export const useGenerationConfig = ({
 
   const handleAddToContext = useCallback(
     (image: GeneratedImageWithConfig) => {
-      setGenerationConfig((prev) => ({
-        ...prev,
-        attachments: [buildGeneratedImageContextAttachment(image)],
-      }));
-      log('Added generated image as the active reference context.');
+      setGenerationConfig((prev) => {
+        const attachment = buildGeneratedImageContextAttachment(image);
+        return {
+          ...prev,
+          attachments: [
+            ...prev.attachments.filter((item) => item.id !== attachment.id),
+            attachment,
+          ].slice(-maxAttachments),
+        };
+      });
+      log('Added generated image to the shared workspace references.');
     },
-    [log, setGenerationConfig],
+    [log, maxAttachments, setGenerationConfig],
   );
 
   return {

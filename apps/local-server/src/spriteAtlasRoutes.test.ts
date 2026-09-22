@@ -1,4 +1,4 @@
-import { existsSync, mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
@@ -6,7 +6,7 @@ import { describe, expect, it } from 'vitest';
 import { createSpriteAtlasRoutes } from './spriteAtlasRoutes';
 
 describe('spriteAtlasRoutes', () => {
-  it('creates a real run folder, handoff job, blocked sidecar, fixture atlas, and QA report', async () => {
+  it('creates handoff artifacts and composes imported rows into a production atlas', async () => {
     const root = mkdtempSync(path.join(os.tmpdir(), 'sprite-atlas-routes-'));
     try {
       const routes = createSpriteAtlasRoutes({ readLibraryDir: () => root });
@@ -113,6 +113,35 @@ describe('spriteAtlasRoutes', () => {
         qa: { ok: true, mode: 'fixture_smoke' },
       });
       expect(existsSync(run.paths.qaReportPath)).toBe(true);
+
+      for (const row of run.rows) {
+        const response = await routes.request(`/runs/${run.id}/import-row`, {
+          method: 'POST',
+          body: JSON.stringify({ rowId: row.id, sourcePath: run.paths.atlasPath }),
+          headers: { 'Content-Type': 'application/json' },
+        });
+        expect(response.status).toBe(200);
+      }
+      const productionComposeResponse = await routes.request(`/runs/${run.id}/compose`, {
+        method: 'POST',
+      });
+      expect(productionComposeResponse.status).toBe(200);
+      await expect(productionComposeResponse.json()).resolves.toMatchObject({
+        status: 'composed',
+        rows: run.rows.map((row) => expect.objectContaining({ id: row.id, status: 'extracted' })),
+      });
+      const manifest = JSON.parse(readFileSync(run.paths.manifestPath, 'utf8')) as {
+        mode: string;
+        frame_semantics: string;
+      };
+      expect(manifest).toMatchObject({ mode: 'generated_art', frame_semantics: 'temporal' });
+      const productionQaResponse = await routes.request(`/runs/${run.id}/qa`, {
+        method: 'POST',
+      });
+      expect(productionQaResponse.status).toBe(200);
+      await expect(productionQaResponse.json()).resolves.toMatchObject({
+        qa: { ok: true, mode: 'generated_art' },
+      });
     } finally {
       rmSync(root, { recursive: true, force: true });
     }

@@ -1,4 +1,5 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import type { UseCatalogResult } from '../../hooks/useCatalogPage';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   IconChevronLeft as ChevronLeft,
   IconChevronRight as ChevronRight,
@@ -7,14 +8,13 @@ import {
   IconHeart as Heart,
   IconMinus as Minus,
   IconPlus as Plus,
-  IconRefresh as Reset,
-  IconMaximize as Fit,
   IconArrowsMaximize as OpenFull,
   IconPaperclip as Paperclip,
 } from '@tabler/icons-react';
 
 import { buildCarouselThumbnailWindow } from '../../lib/imageCarouselThumbnails';
 import { useImagePanZoom } from '../../lib/imagePanZoom';
+import { useHorizontalDragScroll } from '../../hooks/useHorizontalDragScroll';
 import { useToastUi } from '../../contexts/GlobalContext';
 import type { Attachment, GeneratedImageWithConfig } from '../../types';
 import { copyImageToClipboard, downloadImage, generateSmartFilename } from '../../utils/fileUtils';
@@ -37,6 +37,9 @@ export function RecipeResultPreview({
   variant = 'default',
   emptyTitle = 'Your next result starts here',
   isGenerating = false,
+  history,
+  selectedId: externalSelectedId,
+  onSelectId,
 }: {
   images: GeneratedImageWithConfig[];
   reference?: Attachment;
@@ -46,19 +49,47 @@ export function RecipeResultPreview({
   variant?: 'default' | 'stage';
   emptyTitle?: string;
   isGenerating?: boolean;
+  history?: UseCatalogResult;
+  selectedId?: string | null;
+  onSelectId?: (id: string) => void;
 }) {
   const { addToast } = useToastUi();
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [localSelectedId, setLocalSelectedId] = useState<string | null>(null);
+  const selectedId = externalSelectedId === undefined ? localSelectedId : externalSelectedId;
+  const setSelectedId = onSelectId ?? setLocalSelectedId;
+  const previousIndex = useRef(0);
+  const previousScope = useRef(history?.scopeKey);
   const [showReference, setShowReference] = useState(false);
   const [background, setBackground] = useState<StageBackground>('dark');
   const [navSide, setNavSide] = useState<NavSide>(null);
   const [canvasFocused, setCanvasFocused] = useState(false);
   const selected = images.find((image) => image.id === selectedId) ?? images[0];
   const selectedIndex = selected ? images.findIndex((image) => image.id === selected.id) : -1;
+  useEffect(() => {
+    if (previousScope.current !== history?.scopeKey) {
+      previousIndex.current = 0;
+      previousScope.current = history?.scopeKey;
+    }
+    if (!selectedId && images.length) setSelectedId(images[0].id);
+    else if (selectedId && !images.some((image) => image.id === selectedId) && images.length) {
+      setSelectedId(images[Math.min(previousIndex.current, images.length - 1)].id);
+    } else if (selectedIndex >= 0) previousIndex.current = selectedIndex;
+  }, [images, selectedId, selectedIndex, setSelectedId, history?.scopeKey]);
+  useEffect(() => {
+    if (
+      history?.hasMore &&
+      !history.isLoading &&
+      !history.error &&
+      selectedIndex >= images.length - 12
+    )
+      void history.loadMore();
+  }, [history, images.length, selectedIndex]);
   const src = showReference || !selected ? reference?.dataUrl : selected?.src;
   const isStage = variant === 'stage';
   const canCompare = Boolean(isStage && reference && selected);
   const panZoom = useImagePanZoom(isStage && Boolean(src), src);
+  const stripRef = useRef<HTMLDivElement>(null);
+  const stripDrag = useHorizontalDragScroll(stripRef);
   const thumbnailWindow = useMemo(
     () => buildCarouselThumbnailWindow(images, Math.max(selectedIndex, 0)),
     [images, selectedIndex],
@@ -124,6 +155,23 @@ export function RecipeResultPreview({
       aria-label="Result preview"
       aria-busy={isGenerating}
     >
+      {history && (
+        <div className="carousel-history-status" role="status">
+          <span>{history.isLoading ? 'Loading images…' : `${history.total} images`}</span>
+          {history.error && (
+            <button
+              type="button"
+              onClick={() =>
+                void (history.hasMore ? history.loadMore() : history.refresh()).catch(
+                  () => undefined,
+                )
+              }
+            >
+              Could not load images · Retry
+            </button>
+          )}
+        </div>
+      )}
       {isGenerating && (
         <div className="recipe-result-progress" role="status">
           Generating… Your result will appear here.
@@ -157,7 +205,7 @@ export function RecipeResultPreview({
           >
             <span
               className="result-context-label"
-              title={
+              data-tooltip={
                 showReference || !selected
                   ? 'Source image'
                   : isGenerating
@@ -229,59 +277,58 @@ export function RecipeResultPreview({
                 </button>
               </Tooltip>
             ) : null}
-            <div className="recipe-result-background" role="group" aria-label="Canvas background">
-              <Tooltip content="Dark background">
-                <button
-                  type="button"
-                  aria-pressed={background === 'dark'}
-                  aria-label="Dark background"
-                  onClick={() => setBackground('dark')}
-                />
-              </Tooltip>
-              <Tooltip content="Light background">
-                <button
-                  type="button"
-                  aria-pressed={background === 'light'}
-                  aria-label="Light background"
-                  onClick={() => setBackground('light')}
-                />
-              </Tooltip>
-              <Tooltip content="Checkered background">
-                <button
-                  type="button"
-                  aria-pressed={background === 'checkered'}
-                  aria-label="Checkered background"
-                  onClick={() => setBackground('checkered')}
-                />
-              </Tooltip>
-            </div>
-            <div className="recipe-result-zoom" role="group" aria-label="Zoom controls">
-              <Tooltip content="Zoom in">
-                <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
-                  <Plus size={14} />
-                </button>
-              </Tooltip>
-              <Tooltip content="Zoom out">
-                <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
-                  <Minus size={14} />
-                </button>
-              </Tooltip>
-              <span className="recipe-result-scale" aria-label="Canvas zoom">
-                {Math.round(panZoom.scale * 100)}%
-              </span>
-              <Tooltip content="Fit image">
-                <button type="button" aria-label="Fit image" onClick={panZoom.fit}>
-                  <Fit size={14} />
-                </button>
-              </Tooltip>
-              <Tooltip content="Reset zoom">
-                <button type="button" aria-label="Reset zoom" onClick={panZoom.reset}>
-                  <Reset size={14} />
-                </button>
-              </Tooltip>
+            <div className="result-view-controls">
+              <div className="recipe-result-background" role="group" aria-label="Canvas background">
+                <Tooltip content="Dark background">
+                  <button
+                    type="button"
+                    aria-pressed={background === 'dark'}
+                    aria-label="Dark background"
+                    onClick={() => setBackground('dark')}
+                  />
+                </Tooltip>
+                <Tooltip content="Light background">
+                  <button
+                    type="button"
+                    aria-pressed={background === 'light'}
+                    aria-label="Light background"
+                    onClick={() => setBackground('light')}
+                  />
+                </Tooltip>
+                <Tooltip content="Checkered background">
+                  <button
+                    type="button"
+                    aria-pressed={background === 'checkered'}
+                    aria-label="Checkered background"
+                    onClick={() => setBackground('checkered')}
+                  />
+                </Tooltip>
+              </div>
+              <div className="recipe-result-zoom" role="group" aria-label="Zoom controls">
+                <Tooltip content="Zoom out">
+                  <button type="button" aria-label="Zoom out" onClick={panZoom.zoomOut}>
+                    <Minus size={14} />
+                  </button>
+                </Tooltip>
+                <Tooltip content="Reset zoom to 100%">
+                  <button
+                    type="button"
+                    className="recipe-result-scale"
+                    aria-label="Reset zoom to 100%"
+                    onClick={panZoom.reset}
+                  >
+                    {Math.round(panZoom.scale * 100)}%
+                  </button>
+                </Tooltip>
+                <Tooltip content="Zoom in">
+                  <button type="button" aria-label="Zoom in" onClick={panZoom.zoomIn}>
+                    <Plus size={14} />
+                  </button>
+                </Tooltip>
+              </div>
             </div>
             {selected?.config.prompt ? (
-              <p className="recipe-result-prompt" title={selected.config.prompt}>
+              <p className="recipe-result-prompt" data-tooltip={selected.config.prompt}>
                 {selected.config.prompt}
               </p>
             ) : null}
@@ -371,8 +418,10 @@ export function RecipeResultPreview({
       </div>
       {images.length > 0 && (
         <div
+          ref={stripRef}
           className="recipe-result-strip"
           aria-label={isStage ? 'Library results' : 'Recipe results'}
+          {...stripDrag}
         >
           {(isStage ? thumbnailWindow.map((entry) => entry.item) : images.slice(0, 20)).map(
             (image, index) => {

@@ -14,9 +14,7 @@ const DropZoneOverlay: React.FC<DropZoneOverlayProps> = ({ isVisible }) => {
     <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none animate-in fade-in-0 duration-200 rounded-xl border-2 border-dashed border-accent-400/2">
       <div className="text-center studio-ink">
         <Paperclip className="size-8 mx-auto text-[color:var(--wb-accent)]" />
-        <h2 className="mt-2 text-lg font-semibold studio-ink">
-          Drop images to synthesize
-        </h2>
+        <h2 className="mt-2 text-lg font-semibold studio-ink">Drop images to synthesize</h2>
       </div>
     </div>
   );

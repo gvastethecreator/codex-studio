@@ -78,15 +78,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "id",
-          "title",
-          "view_id",
-          "state_id",
-          "steps",
-          "expected",
-          "reset"
-        ],
+        "required": ["id", "title", "view_id", "state_id", "steps", "expected", "reset"],
         "properties": {
           "id": {
             "type": "string",

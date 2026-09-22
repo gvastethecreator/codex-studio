@@ -3,14 +3,7 @@
   "title": "Interface Handoff Review",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "schema_version",
-    "export_id",
-    "summary",
-    "preserve",
-    "limitations",
-    "findings"
-  ],
+  "required": ["schema_version", "export_id", "summary", "preserve", "limitations", "findings"],
   "properties": {
     "schema_version": {
       "const": "1.0"
@@ -63,12 +56,7 @@
             "minLength": 1
           },
           "priority": {
-            "enum": [
-              "P0",
-              "P1",
-              "P2",
-              "P3"
-            ]
+            "enum": ["P0", "P1", "P2", "P3"]
           },
           "kind": {
             "enum": [
@@ -83,30 +71,16 @@
             ]
           },
           "origin": {
-            "enum": [
-              "product",
-              "export",
-              "unknown"
-            ]
+            "enum": ["product", "export", "unknown"]
           },
           "certainty": {
-            "enum": [
-              "observed",
-              "inferred",
-              "needs-validation"
-            ]
+            "enum": ["observed", "inferred", "needs-validation"]
           },
           "view_id": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": ["string", "null"]
           },
           "state_id": {
-            "type": [
-              "string",
-              "null"
-            ]
+            "type": ["string", "null"]
           },
           "evidence": {
             "type": "array",

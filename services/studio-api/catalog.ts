@@ -13,7 +13,9 @@ export async function listLibraries() {
 }
 
 export interface CatalogQueryParams {
+  id?: string;
   workspaceId?: string;
+  recipeId?: string | null;
   libraryId?: string;
   jobId?: string;
   batchId?: string;
@@ -26,7 +28,9 @@ export interface CatalogQueryParams {
 
 export function buildCatalogQuery(params: CatalogQueryParams = {}) {
   const search = new URLSearchParams();
+  if (params.id) search.set('id', params.id);
   if (params.workspaceId) search.set('workspace_id', params.workspaceId);
+  if (params.recipeId !== undefined) search.set('recipe_id', params.recipeId ?? 'default');
   if (params.libraryId) search.set('library_id', params.libraryId);
   if (params.jobId) search.set('job_id', params.jobId);
   if (params.batchId) search.set('batch_id', params.batchId);

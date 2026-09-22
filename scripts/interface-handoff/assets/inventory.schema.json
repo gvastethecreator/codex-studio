@@ -3,14 +3,7 @@
   "title": "Current interface inventory; agent-maintained from actual UI, not copied from previous ZIP",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "schema_version",
-    "project_id",
-    "views",
-    "surfaces",
-    "flows",
-    "excluded"
-  ],
+  "required": ["schema_version", "project_id", "views", "surfaces", "flows", "excluded"],
   "properties": {
     "schema_version": {
       "const": "1.0"
@@ -25,12 +18,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "id",
-          "title",
-          "source_refs",
-          "states"
-        ],
+        "required": ["id", "title", "source_refs", "states"],
         "properties": {
           "id": {
             "type": "string",
@@ -56,20 +44,14 @@
             "items": {
               "type": "object",
               "additionalProperties": false,
-              "required": [
-                "id",
-                "entry"
-              ],
+              "required": ["id", "entry"],
               "properties": {
                 "id": {
                   "type": "string",
                   "minLength": 1
                 },
                 "entry": {
-                  "type": [
-                    "string",
-                    "null"
-                  ],
+                  "type": ["string", "null"],
                   "minLength": 1
                 }
               }
@@ -83,11 +65,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "id",
-          "kind",
-          "source_refs"
-        ],
+        "required": ["id", "kind", "source_refs"],
         "properties": {
           "id": {
             "type": "string",
@@ -115,12 +93,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "id",
-          "description",
-          "view_ids",
-          "source_refs"
-        ],
+        "required": ["id", "description", "view_ids", "source_refs"],
         "properties": {
           "id": {
             "type": "string",
@@ -157,10 +130,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "id",
-          "reason"
-        ],
+        "required": ["id", "reason"],
         "properties": {
           "id": {
             "type": "string",

@@ -35,8 +35,14 @@ function jsonNotFound(c: { json: (payload: unknown, status: 404) => Response }) 
 function catalogFiltersFromUrl(url: string) {
   const searchParams = new URL(url).searchParams;
   return {
+    ...(searchParams.has('id') ? { id: searchParams.get('id')! } : {}),
     libraryId: searchParams.get('library_id'),
     workspaceId: searchParams.get('workspace_id'),
+    recipeId: searchParams.has('recipe_id')
+      ? searchParams.get('recipe_id') === 'default'
+        ? null
+        : searchParams.get('recipe_id')
+      : undefined,
     jobId: searchParams.get('job_id'),
     batchId: searchParams.get('batch_id'),
     favorite: searchParams.has('favorite') ? searchParams.get('favorite') === 'true' : undefined,

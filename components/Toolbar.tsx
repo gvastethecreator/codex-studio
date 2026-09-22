@@ -469,12 +469,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       requirement,
       activeRecipe,
       generationConfig.recipeParams,
-      generationConfig.attachments.length,
       updateConfig,
       onGenerate,
       selectedCodexTransport,
       closeAllMenus,
-      setIsInteracting,
       interactionScope,
       generateBlock,
     ]);
@@ -1145,7 +1143,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           aria-label="Image count"
                           autoComplete="off"
                           onChange={(event) => {
-                            const value = Number(event.target.value);
+                            const rawValue = event.target.value.trim();
+                            if (!/^\d+$/.test(rawValue)) return;
+                            const value = Number.parseInt(rawValue, 10);
                             if (Number.isInteger(value) && value >= 1 && value <= maxOutputCount) {
                               updateConfig('batchCount', value);
                             }
@@ -1238,7 +1238,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   disabled={isNearLimit}
                   aria-label="Add image reference"
                   className={iconBtnClass}
-                  title="Add Image"
+                  data-tooltip="Add Image"
                 >
                   <PlusCircle size={17} />
                 </button>
@@ -1256,7 +1256,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   <div
                     data-active-recipe-card={activeRecipeIndicator.id}
                     aria-label={`Active recipe: ${activeRecipeIndicator.title}. ${activeRecipeIndicator.summary}.`}
-                    title={`${activeRecipeIndicator.title}: ${activeRecipeIndicator.summary}`}
+                    data-tooltip={`${activeRecipeIndicator.title}: ${activeRecipeIndicator.summary}`}
                     className={`group flex h-10 min-h-10 min-w-[6rem] max-w-[10.75rem] flex-[0_1_10.75rem] items-center gap-1.5 overflow-hidden rounded-[var(--wb-radius)] border px-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-[border-color,background-color,box-shadow] hover:shadow-[0_0_18px_rgba(255,255,255,0.05)] sm:flex-[0_0_10.75rem] ${activeRecipeIndicator.toneClassName}`}
                   >
                     <span
@@ -1619,7 +1619,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             setPreviewRatio(null);
                           }}
                           onMouseEnter={() => setPreviewRatio(option.ratio)}
-                          title={`${option.label}: ${option.size}`}
+                          data-tooltip={`${option.label}: ${option.size}`}
                           className={`aspect-square rounded-[var(--wb-radius)] flex flex-col items-center justify-center gap-1 transition-[color,background-color,border-color,opacity,transform,box-shadow] ${
                             generationConfig.aspectRatio === option.ratio
                               ? 'bg-gradient-to-b from-accent-700 to-accent-900 border border-accent-600/2 text-white shadow-lg'
@@ -1870,7 +1870,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                       data-codex-model={model.id}
                                       aria-pressed={isSelected}
                                       aria-label={modelLabel}
-                                      title={model.description || modelLabel}
+                                      data-tooltip={model.description || modelLabel}
                                       onClick={() => handleSelectExecutionModel(model)}
                                       className="studio-ghost-control create-execution-choice"
                                     >
@@ -1937,7 +1937,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                                         selectedExecutionImageSize?.tier === option.tier
                                       }
                                       aria-label={`${option.tier}: ${option.width}×${option.height}`}
-                                      title={`${option.width}×${option.height}${option.experimental ? ' · experimental' : ''}`}
+                                      data-tooltip={`${option.width}×${option.height}${option.experimental ? ' · experimental' : ''}`}
                                       onClick={() => handleSelectExecutionImageSize(option.tier)}
                                       className="studio-ghost-control create-execution-choice"
                                     >
@@ -2020,7 +2020,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     <div
                       role="status"
                       aria-label={`Generation provider: ${formatGenerationProviderLabel(activeProviderId)}`}
-                      title="Generation provider"
+                      data-tooltip="Generation provider"
                       className={`${btnClass} cursor-default`}
                     >
                       <Zap size={14} />
@@ -2050,7 +2050,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   type="button"
                   onClick={handleTriggerGenerate}
                   disabled={Boolean(generateBlock)}
-                  title={generateBlock?.message ?? requirement?.message}
+                  data-tooltip={generateBlock?.message ?? requirement?.message}
                   aria-describedby={
                     requirement
                       ? 'generation-requirement'

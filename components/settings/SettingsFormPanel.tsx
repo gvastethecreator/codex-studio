@@ -54,6 +54,7 @@ export function SettingsFormPanel({
     outputFileNameTemplate,
     autoDetectOutputSources,
     commandCenterCompactMode,
+    intentionalStylesV1,
   } = formState;
 
   return (
@@ -145,6 +146,22 @@ export function SettingsFormPanel({
 
       {domain === 'appearance' ? (
         <>
+          <label className="studio-setting-toggle">
+            <span>
+              <strong>Show workspace history in carousel</strong>
+              <small>On: all workflows in this workspace. Off: only the current workflow.</small>
+            </span>
+            <input
+              type="checkbox"
+              checked={formState.showWorkspaceHistoryInCarousel}
+              onChange={(event) =>
+                setFormState((prev) => ({
+                  ...prev,
+                  showWorkspaceHistoryInCarousel: event.target.checked,
+                }))
+              }
+            />
+          </label>
           <div className="grid gap-3">
             <button
               type="button"
@@ -187,6 +204,29 @@ export function SettingsFormPanel({
             </span>
             <span
               className={`size-2.5 rounded-full ${commandCenterCompactMode ? 'bg-accent-300' : 'bg-[color:var(--wb-dim)]'}`}
+            />
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              setFormState((prev) => ({
+                ...prev,
+                intentionalStylesV1: !prev.intentionalStylesV1,
+              }))
+            }
+            className={`flex items-center justify-between rounded-[var(--wb-radius)] border p-4 text-left transition-colors ${intentionalStylesV1 ? 'border-accent-500/2 bg-accent-500/10' : 'border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]'}`}
+          >
+            <span className="flex min-w-0 flex-col gap-1 text-left">
+              <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
+                Intentional style compiler
+              </span>
+              <span className="text-xs text-[color:var(--wb-muted)]">
+                Apply selected style fields without hidden restage. Off keeps the current Styles
+                path.
+              </span>
+            </span>
+            <span
+              className={`size-2.5 shrink-0 rounded-full ${intentionalStylesV1 ? 'bg-accent-300' : 'bg-[color:var(--wb-dim)]'}`}
             />
           </button>
         </>

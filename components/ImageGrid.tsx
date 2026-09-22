@@ -24,10 +24,14 @@ import {
   IconLoader2 as Loader2,
   IconSquare as Square,
 } from '@tabler/icons-react';
-import ActionButton from './ui/ActionButton';
 import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import Tooltip from './Tooltip';
+import ActionButton from './ui/ActionButton';
+import { getCatalogImageDetail } from '../services/studio-api/catalog';
+import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
+import { useToastUi } from '../contexts/GlobalContext';
+import { providerBrandChipLabel } from '../lib/providerBrand';
 import {
   shouldAlwaysShowCatalogCardActions,
   shouldMountCatalogCardActions,
@@ -135,6 +139,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     thumbnailSize,
   }) => {
     const itemRef = useRef<HTMLDivElement>(null);
+    const { addToast } = useToastUi();
     const [copiedPrompt, setCopiedPrompt] = useState(false);
     const [isActionSurfaceActive, setIsActionSurfaceActive] = useState(false);
     const timeoutRef = useRef<number | null>(null);
@@ -168,9 +173,11 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       image.height > 0
         ? `${image.width}x${image.height}`
         : null;
-    const metaItems = [image.config.aspectRatio, dimensionsLabel, image.config.model].filter(
-      Boolean,
-    );
+    const metaItems = [
+      image.providerId ? providerBrandChipLabel(image.providerId) : null,
+      dimensionsLabel || image.config.aspectRatio,
+      image.mimeType?.split('/')[1]?.toUpperCase(),
+    ].filter(Boolean);
 
     React.useEffect(() => {
       const timeout = timeoutRef.current;
@@ -218,13 +225,26 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       downloadImage(image.src, smartName);
     };
 
+    const withFullConfig = async (
+      action: (config: ImageGenerationConfig) => void | Promise<void>,
+    ) => {
+      try {
+        const detail = await getCatalogImageDetail(image.id);
+        await action(buildGenerationConfigFromCatalogImage(detail));
+      } catch {
+        addToast('Could not complete image action. Please try again.', 'error');
+      }
+    };
+
     const handleCopyPrompt = (e: React.MouseEvent) => {
       e.stopPropagation();
       if (copiedPrompt) return;
-      void navigator.clipboard.writeText(image.config.prompt || '');
-      setCopiedPrompt(true);
-      if (timeoutRef.current) clearTimeout(timeoutRef.current);
-      timeoutRef.current = window.setTimeout(() => setCopiedPrompt(false), 2000);
+      void withFullConfig(async (config) => {
+        await navigator.clipboard.writeText(config.prompt || '');
+        setCopiedPrompt(true);
+        if (timeoutRef.current) clearTimeout(timeoutRef.current);
+        timeoutRef.current = window.setTimeout(() => setCopiedPrompt(false), 2000);
+      });
     };
 
     const renderImageFrame = ({
@@ -277,88 +297,65 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       </div>
     );
 
-    const compactPrimaryActions = (
-      <div className="flex min-w-0 items-center gap-1">
+    const visibleActionGroup = (
+      <div className="library-card-actions catalog-hover-actions">
         <CompactActionButton
-          onClick={(e) => {
-            e.stopPropagation();
-            onAddToContext(image);
-          }}
+          onClick={() => onAddToContext(image)}
           icon={<PlusCircle size={14} />}
-          label="Use"
+          label="Use as reference"
           variant="primary"
         />
         <CompactActionButton
-          onClick={(e) => {
-            e.stopPropagation();
-            onLoadConfig(image.config);
-          }}
-          icon={<History size={14} />}
-          label="Recipe"
-        />
-        <CompactActionButton
-          onClick={(e) => {
-            e.stopPropagation();
-            onRegenerate(image.config);
-          }}
-          icon={<RefreshCw size={14} />}
-          label="Regen"
-        />
-      </div>
-    );
-
-    const compactStateActions = (
-      <div className="flex min-w-0 items-center gap-1">
-        <CompactActionButton
-          onClick={(e) => {
-            e.stopPropagation();
-            onToggleFavorite(image.id);
-          }}
-          icon={<Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} />}
-          label={image.isFavorite ? 'Remove Favorite' : 'Add Favorite'}
-          isActive={image.isFavorite}
-        />
-        <CompactActionButton
-          onClick={handleSelectClick}
-          icon={<Check size={14} strokeWidth={3} />}
-          label={isSelected ? 'Deselect' : 'Select'}
-          isActive={isSelected}
-        />
-        <CompactActionButton
-          onClick={(e) => {
-            e.stopPropagation();
-            handleDownload();
-          }}
-          icon={<Download size={14} />}
-          label="Save"
-        />
-        <CompactActionButton
           onClick={handleCopyPrompt}
-          icon={
-            copiedPrompt ? (
-              <Check size={14} className="text-green-400" />
-            ) : (
-              <ClipboardList size={14} />
-            )
-          }
-          label="Copy Prompt"
+          icon={copiedPrompt ? <Check size={14} /> : <ClipboardList size={14} />}
+          label={copiedPrompt ? 'Prompt copied' : 'Copy prompt'}
         />
         <CompactActionButton
-          onClick={(e) => {
-            e.stopPropagation();
-            onDelete(image.id);
-          }}
-          icon={<Trash2 size={14} />}
-          label="Archive"
-          variant="danger"
+          onClick={handleDownload}
+          icon={<Download size={14} />}
+          label="Download"
         />
-      </div>
-    );
-
-    const visibleActionGroup = (
-      <div className="flex flex-wrap items-center justify-between gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] p-1 shadow-inner shadow-black/30">
-        {compactPrimaryActions}
-        {compactStateActions}
+        {(isListView || isCardView) && (
+          <CompactActionButton
+            onClick={() => onToggleFavorite(image.id)}
+            icon={<Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} />}
+            label={image.isFavorite ? 'Remove favorite' : 'Add favorite'}
+            isActive={image.isFavorite}
+          />
+        )}
+        {(isListView || isCardView) && (
+          <CompactActionButton
+            onClick={handleSelectClick}
+            icon={<Check size={14} />}
+            label={isSelected ? 'Deselect' : 'Select'}
+            isActive={isSelected}
+          />
+        )}
+        <details
+          className="library-card-menu"
+          onClick={(event) => event.stopPropagation()}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape') {
+              event.currentTarget.open = false;
+              event.currentTarget.querySelector('summary')?.focus();
+            }
+          }}
+        >
+          <summary aria-label="More image actions" data-tooltip="More image actions">
+            •••
+          </summary>
+          <div>
+            <button type="button" onClick={() => void withFullConfig(onLoadConfig)}>
+              <History size={14} /> Load configuration
+            </button>
+            <button type="button" onClick={() => void withFullConfig(onRegenerate)}>
+              <RefreshCw size={14} /> Regenerate
+            </button>
+            <button type="button" className="is-danger" onClick={() => onDelete(image.id)}>
+              <Trash2 size={14} /> Move to trash
+            </button>
+          </div>
+        </details>
       </div>
     );
 
@@ -387,7 +384,10 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
               style: { width: listThumbnailSize, height: listThumbnailSize },
             })}
             <span className="min-w-0 flex-1">
-              <span className="line-clamp-2 text-sm font-semibold leading-5 text-[color:var(--wb-ink)]">
+              <span
+                data-tooltip={promptText}
+                className="line-clamp-2 text-sm font-semibold leading-5 text-[color:var(--wb-ink)]"
+              >
                 {promptText}
               </span>
               <span className="mt-2 block">{metadataLine}</span>
@@ -427,7 +427,10 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           </button>
           <div className="space-y-2.5 p-3">
             <div className="min-w-0 border-b border-[color:var(--wb-line)] pb-2.5">
-              <div className="line-clamp-2 text-[13px] font-semibold leading-5 text-[color:var(--wb-ink)]">
+              <div
+                data-tooltip={promptText}
+                className="line-clamp-2 text-[13px] font-semibold leading-5 text-[color:var(--wb-ink)]"
+              >
                 {promptText}
               </div>
               <div className="mt-2">{metadataLine}</div>
@@ -482,10 +485,10 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                   e.stopPropagation();
                   onToggleFavorite(image.id);
                 }}
-                className={`flex size-10 items-center justify-center rounded-[var(--wb-radius)] border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
+                className={`studio-icon-action flex size-8 items-center justify-center rounded-[var(--wb-radius)] border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
                         ${
                           image.isFavorite
-                            ? 'bg-accent-500 border-accent-400/2 text-[color:var(--wb-ink)] scale-110'
+                            ? 'bg-accent-500 border-accent-400/2 text-[color:var(--wb-ink)]'
                             : 'bg-[color:var(--wb-well)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]/60 hover:border-[color:var(--wb-border)] hover:bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] hover:text-[color:var(--wb-ink)] group-hover:text-[color:var(--wb-ink)]/80'
                         }`}
               >
@@ -502,10 +505,10 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
                 aria-label={isSelected ? 'Deselect image' : 'Select image'}
                 aria-pressed={isSelected}
                 onClick={handleSelectClick}
-                className={`flex size-10 items-center justify-center rounded-[var(--wb-radius)] border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
+                className={`studio-icon-action flex size-8 items-center justify-center rounded-[var(--wb-radius)] border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
                         ${
                           isSelected
-                            ? 'bg-accent-600 border-accent-400/2 text-[color:var(--wb-ink)] scale-110'
+                            ? 'bg-accent-600 border-accent-400/2 text-[color:var(--wb-ink)]'
                             : 'bg-[color:var(--wb-well)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]/60 hover:border-[color:var(--wb-border)] hover:bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] hover:text-[color:var(--wb-ink)] group-hover:text-[color:var(--wb-ink)]/80'
                         }`}
               >
@@ -516,64 +519,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         )}
 
         {shouldMountActions && (
-          <div className="absolute bottom-2 left-2 right-2 z-20 flex translate-y-0 flex-col gap-1 opacity-100 transition-[opacity,transform] sm:bottom-3 sm:left-3 sm:right-3 sm:flex-row sm:items-center sm:justify-between sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:group-focus-within:translate-y-0 sm:group-focus-within:opacity-100">
-            <div className="flex items-center gap-1.5 p-1 rounded-[var(--wb-radius)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] backdrop-blur-md border border-[color:var(--wb-line)]">
-              <ActionButton
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onAddToContext(image);
-                }}
-                icon={<PlusCircle size={14} />}
-                label="Use"
-              />
-              <ActionButton
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onLoadConfig(image.config);
-                }}
-                icon={<History size={14} />}
-                label="Recipe"
-              />
-              <ActionButton
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onRegenerate(image.config);
-                }}
-                icon={<RefreshCw size={14} />}
-                label="Regen"
-              />
-            </div>
-            <div className="flex items-center gap-1.5 p-1 rounded-[var(--wb-radius)] bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] backdrop-blur-md border border-[color:var(--wb-line)]">
-              <ActionButton
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleDownload();
-                }}
-                icon={<Download size={14} />}
-                label="Save"
-              />
-              <ActionButton
-                onClick={handleCopyPrompt}
-                icon={
-                  copiedPrompt ? (
-                    <Check size={14} className="text-green-400" />
-                  ) : (
-                    <ClipboardList size={14} />
-                  )
-                }
-                label="Copy Prompt"
-              />
-              <ActionButton
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onDelete(image.id);
-                }}
-                icon={<Trash2 size={14} />}
-                label="Archive"
-                variant="danger"
-              />
-            </div>
-          </div>
+          <div className="absolute bottom-2 left-2 right-2 z-20">{visibleActionGroup}</div>
         )}
       </div>
     );

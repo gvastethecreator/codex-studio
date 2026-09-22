@@ -217,6 +217,8 @@ export const useCameraViewport = ({
     setViewportError(null);
     let cancelled = false;
     let cleanupViewport: (() => void) | undefined;
+    let resizeObserver: ResizeObserver | null = null;
+    let resizeFrameId = 0;
 
     const initialize = async () => {
       const THREE = await loadThree();
@@ -749,10 +751,14 @@ export const useCameraViewport = ({
       window.addEventListener('mousemove', onMouseMove);
       window.addEventListener('mouseup', onMouseUp);
 
-      const resizeObserver = new ResizeObserver((entries) => {
+      // The effect cleanup disconnects this observer and cancels its pending animation frame.
+      // react-doctor-disable-next-line react-doctor/effect-observer-needs-disconnect
+      const observer = new ResizeObserver((entries) => {
         if (!Array.isArray(entries) || entries.length === 0) return;
 
-        window.requestAnimationFrame(() => {
+        if (resizeFrameId !== 0) window.cancelAnimationFrame(resizeFrameId);
+        resizeFrameId = window.requestAnimationFrame(() => {
+          resizeFrameId = 0;
           if (!mountRef.current) return;
 
           const nextWidth = mountNode.clientWidth;
@@ -772,13 +778,19 @@ export const useCameraViewport = ({
           requestRender();
         });
       });
-      resizeObserver.observe(mountNode);
+      resizeObserver = observer;
+      observer.observe(mountNode);
 
       cleanupViewport = () => {
         disposed = true;
         if (requestIdRef.current !== 0) cancelAnimationFrame(requestIdRef.current);
+        if (resizeFrameId !== 0) {
+          window.cancelAnimationFrame(resizeFrameId);
+          resizeFrameId = 0;
+        }
         if (requestRenderRef.current === requestRender) requestRenderRef.current = () => {};
-        resizeObserver.disconnect();
+        observer.disconnect();
+        if (resizeObserver === observer) resizeObserver = null;
         canvasElement.removeEventListener('mousedown', onMouseDown);
         canvasElement.removeEventListener('wheel', onWheel);
         window.removeEventListener('mousemove', onMouseMove);
@@ -810,6 +822,12 @@ export const useCameraViewport = ({
 
     return () => {
       cancelled = true;
+      resizeObserver?.disconnect();
+      resizeObserver = null;
+      if (resizeFrameId !== 0) {
+        window.cancelAnimationFrame(resizeFrameId);
+        resizeFrameId = 0;
+      }
       cleanupViewport?.();
     };
   }, [

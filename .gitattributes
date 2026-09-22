@@ -57,3 +57,6 @@
 
 # SVG is XML and diffs better as text
 *.svg text
+
+# Generated review patches contain the standard unified-diff prefix on blank context lines.
+docs/codemap/.review/*.diff -whitespace

@@ -326,6 +326,16 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
   );
   const generatedCount =
     activeRun?.frames.filter((frame) => frame.status === 'generated').length ?? 0;
+  const keyframeIds = new Set(
+    framePlan.frames.filter((frame) => frame.isKeyframe).map((frame) => frame.id),
+  );
+  const generatedKeyframeCount =
+    activeRun?.frames.filter((frame) => keyframeIds.has(frame.id) && frame.status === 'generated')
+      .length ?? 0;
+  const nextFrameId = framePlan.generationOrder.find((frameId) => {
+    const frame = activeRun?.frames.find((candidate) => candidate.id === frameId);
+    return frame && frame.status !== 'generated' && !frame.jobId;
+  });
   const gifExport = activeRun?.exports.find((item) => item.format === 'gif') ?? null;
   const busy = isBusy || isGenerating;
 
@@ -376,6 +386,32 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
   const linkedJobs = useLinkedJobStatuses(
     activeRun?.frames.flatMap((frame) => (frame.jobId ? [frame.jobId] : [])) ?? [],
   );
+  const completedJobKey =
+    activeRun?.frames
+      .filter(
+        (frame) => frame.jobId && !frame.catalogImageId && linkedJobs[frame.jobId] === 'completed',
+      )
+      .map((frame) => frame.jobId)
+      .sort()
+      .join('|') ?? '';
+  const autoSyncKeyRef = React.useRef('');
+  React.useEffect(() => {
+    if (!activeRun || !completedJobKey || autoSyncKeyRef.current === completedJobKey) return;
+    autoSyncKeyRef.current = completedJobKey;
+    let cancelled = false;
+    void animationSequenceRunCoordinator
+      .reconcile(activeRun)
+      .then((run) => {
+        if (!cancelled) setActiveRun(run);
+      })
+      .catch((syncError) => {
+        if (!cancelled)
+          setError(syncError instanceof Error ? syncError.message : String(syncError));
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [activeRun, completedJobKey]);
   const executionLabel = activeRun?.frames.some(
     (frame) => frame.jobId && ['queued', 'running'].includes(linkedJobs[frame.jobId]),
   )
@@ -459,6 +495,8 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
         createAnimationSequenceRun({
           title: prompt ? `${contract.frameCount}-frame ${contract.method} sequence` : undefined,
           prompt,
+          identityAnchor: contract.identityAnchor,
+          motionDriver: contract.motionDriver,
           frameCount: contract.frameCount,
           fps: contract.fps,
           aspectRatio: contract.aspectRatio,
@@ -498,6 +536,21 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
       setError(handoff.blockingReason);
       return;
     }
+    const frameAttachments = [
+      ...handoff.assets.map((asset) => ({
+        id: `${activeRun.id}-${asset.frameId}-${asset.role}`,
+        name: asset.name,
+        dataUrl: asset.sourceUrl,
+        sourceUrl: asset.sourceUrl,
+        strength: 1,
+      })),
+      ...config.attachments,
+    ]
+      .filter(
+        (attachment, index, attachments) =>
+          attachments.findIndex((candidate) => candidate.id === attachment.id) === index,
+      )
+      .slice(0, 10);
     onGenerate(
       selectedPrompt || selectedPlanFrame.prompt,
       {
@@ -505,13 +558,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
         recipeParams: handoff.recipeParams,
         aspectRatio: activeRun.contract.aspectRatio,
         batchCount: handoff.outputCount,
-        attachments: handoff.assets.map((asset) => ({
-          id: `${activeRun.id}-${asset.frameId}-${asset.role}`,
-          name: asset.name,
-          dataUrl: asset.sourceUrl,
-          sourceUrl: asset.sourceUrl,
-          strength: 1,
-        })),
+        attachments: frameAttachments,
       },
       {
         preventModal: true,
@@ -728,6 +775,35 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                   />
                 </label>
 
+                <label className="mt-3 grid gap-1.5">
+                  <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+                    Identity anchor
+                  </span>
+                  <input
+                    value={contract.identityAnchor}
+                    onChange={(event) => setParam('identityAnchor', event.target.value)}
+                    placeholder="What must remain identical across every frame?"
+                    className="h-9 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-xs text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
+                  />
+                </label>
+                <label className="mt-2 grid gap-1.5">
+                  <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+                    Motion driver
+                  </span>
+                  <input
+                    value={contract.motionDriver}
+                    onChange={(event) => setParam('motionDriver', event.target.value)}
+                    placeholder="The force or action that drives the motion"
+                    className="h-9 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-well)] px-2 text-xs text-[color:var(--wb-ink)] outline-none transition-colors focus:border-amber-400/2"
+                  />
+                </label>
+
+                <div className="mt-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2 text-[11px] leading-relaxed text-[color:var(--wb-muted)]">
+                  {config.attachments.length > 0
+                    ? `${config.attachments.length} shared workspace reference${config.attachments.length === 1 ? '' : 's'} will anchor the sequence.`
+                    : 'Add a shared reference to anchor identity, camera, palette, and scale across frames.'}
+                </div>
+
                 <div className="mt-3 grid grid-cols-2 gap-2">
                   <NumberField
                     label="Frames"
@@ -912,6 +988,13 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                 Sync
               </ActionButton>
               <ActionButton
+                onClick={() => nextFrameId && setSelectedFrameId(nextFrameId)}
+                disabled={!activeRun || !nextFrameId || busy}
+              >
+                <Play size={13} />
+                Next frame
+              </ActionButton>
+              <ActionButton
                 onClick={exportGif}
                 disabled={!activeRun || generatedCount < (activeRun?.frames.length ?? 1) || busy}
               >
@@ -993,7 +1076,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
                           {frameLabel}
                         </div>
                         <div className="mt-0.5 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal opacity-70">
-                          {frameStatus}
+                          {planFrame.semanticPhase} · {frameStatus}
                         </div>
                       </div>
                     </button>
@@ -1005,6 +1088,28 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
             <div className="border-t border-[color:var(--wb-line)] p-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="flex flex-wrap items-center gap-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-muted)]">
+                  <span className={activeRun ? 'text-[color:var(--wb-success)]' : ''}>1 Plan</span>
+                  <span
+                    className={
+                      generatedKeyframeCount === keyframeIds.size && activeRun
+                        ? 'text-[color:var(--wb-success)]'
+                        : ''
+                    }
+                  >
+                    2 Keyframes {generatedKeyframeCount}/{keyframeIds.size}
+                  </span>
+                  <span
+                    className={
+                      activeRun && generatedCount === activeRun.frames.length
+                        ? 'text-[color:var(--wb-success)]'
+                        : ''
+                    }
+                  >
+                    3 In-betweens
+                  </span>
+                  <span className={gifExport ? 'text-[color:var(--wb-success)]' : ''}>
+                    4 Export
+                  </span>
                   <span>
                     {generatedCount}/{activeRun?.frames.length ?? contract.frameCount} frames
                   </span>

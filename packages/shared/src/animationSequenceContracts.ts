@@ -62,6 +62,8 @@ export interface AnimationSequenceDimensions {
 
 export interface AnimationSequenceContract {
   prompt: string;
+  identityAnchor: string;
+  motionDriver: string;
   frameCount: number;
   fps: number;
   aspectRatio: AnimationSequenceAspectRatio;
@@ -86,6 +88,7 @@ export interface AnimationSequenceFramePlanItem {
   generationOrder: number;
   referenceFrameIds: string[];
   strategy: 'anchor' | 'recursive_inbetween' | 'sequential_followup';
+  semanticPhase: 'start' | 'anticipation' | 'action' | 'settle' | 'loop-return';
 }
 
 export interface AnimationSequenceFramePlan {
@@ -183,6 +186,8 @@ export interface AnimationSequenceRunView extends Omit<
 export interface CreateAnimationSequenceRunRequest {
   title?: string;
   prompt?: string;
+  identityAnchor?: string;
+  motionDriver?: string;
   frameCount?: number;
   fps?: number;
   aspectRatio?: AnimationSequenceAspectRatio;
@@ -323,10 +328,14 @@ function createFramePrompt(contract: AnimationSequenceContract, index: number) {
       : contract.continuity === 'loose'
         ? 'Allow visible motion and composition change while preserving recognizable identity.'
         : 'Balance visible motion with stable identity, camera language, and palette.';
+  const semanticPhase = createSemanticPhase(contract, index);
 
   return [
     `Animation frame ${ordinal} of ${contract.frameCount}.`,
     `Base motion prompt: ${contract.prompt}`,
+    `Identity anchor: ${contract.identityAnchor}`,
+    `Motion driver: ${contract.motionDriver}`,
+    `Semantic phase: ${semanticPhase}.`,
     `Sequence progress: ${progress.toFixed(2)}.`,
     `Method: ${contract.method}.`,
     loopHint,
@@ -336,6 +345,18 @@ function createFramePrompt(contract: AnimationSequenceContract, index: number) {
       : 'Style may evolve slightly if it improves the motion read.',
     'Generate a single finished frame, not a grid, contact sheet, storyboard page, UI, caption, or video still with text.',
   ].join('\n');
+}
+
+function createSemanticPhase(
+  contract: Pick<AnimationSequenceContract, 'frameCount' | 'cyclic'>,
+  index: number,
+): AnimationSequenceFramePlanItem['semanticPhase'] {
+  if (index === 0) return 'start';
+  if (contract.cyclic && index === contract.frameCount - 1) return 'loop-return';
+  const progress = index / Math.max(1, contract.frameCount - 1);
+  if (progress < 0.3) return 'anticipation';
+  if (progress < 0.72) return 'action';
+  return 'settle';
 }
 
 function createReferenceFrameIds(contract: AnimationSequenceContract, index: number) {
@@ -369,6 +390,12 @@ export function createAnimationSequenceContract(
 
   return {
     prompt: readString(input, 'prompt', DEFAULT_PROMPT),
+    identityAnchor: readString(
+      input,
+      'identityAnchor',
+      'Preserve the primary subject, silhouette, proportions, palette, and defining details.',
+    ),
+    motionDriver: readString(input, 'motionDriver', readString(input, 'prompt', DEFAULT_PROMPT)),
     frameCount: clampInt(readNumber(input, 'frameCount', 8), 2, 48),
     fps: clampInt(readNumber(input, 'fps', 12), 1, 30),
     aspectRatio,
@@ -417,6 +444,7 @@ export function createAnimationSequenceFramePlan(
           : contract.method === 'recursive'
             ? 'recursive_inbetween'
             : 'sequential_followup',
+        semanticPhase: createSemanticPhase(contract, index),
       };
     }),
   };

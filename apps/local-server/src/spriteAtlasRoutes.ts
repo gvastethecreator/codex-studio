@@ -116,6 +116,19 @@ export function createSpriteAtlasRoutes({
     return c.json(run);
   });
 
+  routes.post('/runs/:id/compose', async (c) => {
+    try {
+      const run = await spriteAtlas.compose(c.req.param('id'));
+      if (!run) return c.json({ error: 'Sprite Atlas run not found' }, 404);
+      return c.json(run);
+    } catch (error) {
+      return c.json(
+        { error: error instanceof Error ? error.message : 'Could not compose Sprite Atlas' },
+        409,
+      );
+    }
+  });
+
   routes.post('/runs/:id/qa', async (c) => {
     const run = await spriteAtlas.runQa(c.req.param('id'));
     if (!run) return c.json({ error: 'Sprite Atlas run not found' }, 404);

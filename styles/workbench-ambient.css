@@ -68,18 +68,27 @@ Full text: third-party/ambientcss/LICENSE
     --wba-shape-angle: 180deg;
     --wba-shiny: 0;
     --wba-recess: 0;
-    --_amb-chamfer-w: max(-1 * var(--amb-thickness), min(var(--amb-chamfer-width), var(--amb-thickness)));
-    --_amb-fillet-w: max(-1 * var(--amb-thickness), min(var(--amb-fillet-width), var(--amb-thickness)));
+    --_amb-chamfer-w: max(
+      -1 * var(--amb-thickness),
+      min(var(--amb-chamfer-width), var(--amb-thickness))
+    );
+    --_amb-fillet-w: max(
+      -1 * var(--amb-thickness),
+      min(var(--amb-fillet-width), var(--amb-thickness))
+    );
     --_amb-sh-gate: max(0, min(var(--amb-elevation) + var(--amb-thickness), 1));
     --_amb-body-gate: max(0, min(var(--amb-thickness), 1));
     --_amb-sweep-a: calc(
       var(--_amb-sh-gate) * var(--_amb-body-gate) * max(0, 1 - var(--amb-elevation) / 3) *
         (var(--amb-thickness) * 0.02 + 0.047)
     );
-    --amb-exposure: calc(var(--amb-key-light-intensity) * 0.6396 + var(--amb-fill-light-intensity) * 0.5496);
+    --amb-exposure: calc(
+      var(--amb-key-light-intensity) * 0.6396 + var(--amb-fill-light-intensity) * 0.5496
+    );
     --_amb-diffuse: color(
       from var(--amb-albedo) srgb-linear calc(r * var(--amb-shade) * var(--amb-exposure))
-        calc(g * var(--amb-shade) * var(--amb-exposure)) calc(b * var(--amb-shade) * var(--amb-exposure))
+        calc(g * var(--amb-shade) * var(--amb-exposure))
+        calc(b * var(--amb-shade) * var(--amb-exposure))
     );
     --amb-lit: color-mix(
       in srgb,
@@ -87,9 +96,12 @@ Full text: third-party/ambientcss/LICENSE
       hsl(from var(--_amb-diffuse) var(--amb-light-hue) calc(100 - s) l) var(--amb-light-saturation)
     );
     --amb-curve-delta: calc(
-      ((var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 3.16 + 3.78) * var(--amb-curve-scale)
+      ((var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 3.16 + 3.78) *
+        var(--amb-curve-scale)
     );
-    --_wba-curve: calc(max(-1, min(var(--wba-shape-axis), 1)) * var(--amb-curve-delta) * var(--wba-shape));
+    --_wba-curve: calc(
+      max(-1, min(var(--wba-shape-axis), 1)) * var(--amb-curve-delta) * var(--wba-shape)
+    );
     --wba-curve-image: linear-gradient(
       var(--wba-shape-angle),
       hsl(from var(--amb-lit) h s calc(l + var(--_wba-curve))) 0%,
@@ -134,28 +146,51 @@ Full text: third-party/ambientcss/LICENSE
           var(--amb-light-hue) var(--amb-light-saturation) 0% /
             calc(
               var(--_amb-sh-gate) *
-                (
-                  (var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 0.13 + var(--amb-elevation) *
-                    -0.077 + 0.368 - var(--_amb-body-gate) * max(0, 1 - var(--amb-elevation)) * 0.14
-                )
+                ((var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 0.13 +
+                  var(--amb-elevation) * -0.077 + 0.368 - var(--_amb-body-gate) *
+                  max(0, 1 - var(--amb-elevation)) * 0.14)
             )
         )
-        calc(var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 3.8px) * -1 * var(--wba-depth))
-        calc(var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 3.8px) * -1 * var(--wba-depth))
+        calc(
+          var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 3.8px) * -1 *
+            var(--wba-depth)
+        )
+        calc(
+          var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 3.8px) * -1 *
+            var(--wba-depth)
+        )
         calc((var(--amb-elevation) * 4.8px + var(--amb-thickness) * 2.7px) * var(--wba-depth)) 0.8px,
       hsl(var(--amb-light-hue) var(--amb-light-saturation) 0% / var(--_amb-sweep-a))
-        calc(var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 2.85px) * -1 * var(--wba-depth))
-        calc(var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 2.85px) * -1 * var(--wba-depth))
+        calc(
+          var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 2.85px) * -1 *
+            var(--wba-depth)
+        )
+        calc(
+          var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 2.85px) * -1 *
+            var(--wba-depth)
+        )
         calc((var(--amb-elevation) * 4.8px + var(--amb-thickness) * 2px) * var(--wba-depth))
         calc(var(--amb-thickness) * 0.9px),
       hsl(var(--amb-light-hue) var(--amb-light-saturation) 0% / var(--_amb-sweep-a))
-        calc(var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 1.9px) * -1 * var(--wba-depth))
-        calc(var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 1.9px) * -1 * var(--wba-depth))
+        calc(
+          var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 1.9px) * -1 *
+            var(--wba-depth)
+        )
+        calc(
+          var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 1.9px) * -1 *
+            var(--wba-depth)
+        )
         calc((var(--amb-elevation) * 4.8px + var(--amb-thickness) * 1.35px) * var(--wba-depth))
         calc(var(--amb-thickness) * 0.6px),
       hsl(var(--amb-light-hue) var(--amb-light-saturation) 0% / var(--_amb-sweep-a))
-        calc(var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 0.95px) * -1 * var(--wba-depth))
-        calc(var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 0.95px) * -1 * var(--wba-depth))
+        calc(
+          var(--amb-light-x) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 0.95px) * -1 *
+            var(--wba-depth)
+        )
+        calc(
+          var(--amb-light-y) * (var(--amb-elevation) * 6.8px + var(--amb-thickness) * 0.95px) * -1 *
+            var(--wba-depth)
+        )
         calc((var(--amb-elevation) * 4.8px + var(--amb-thickness) * 0.7px) * var(--wba-depth))
         calc(var(--amb-thickness) * 0.3px),
       inset calc(var(--amb-light-x) * var(--_amb-chamfer-w) * -1px)
@@ -164,7 +199,8 @@ Full text: third-party/ambientcss/LICENSE
           var(--amb-light-hue) var(--amb-light-saturation) 100% /
             calc(
               var(--amb-chamfer) * max(0, min(var(--amb-thickness), 1)) *
-                (var(--amb-key-light-intensity) * 1.57 + var(--amb-fill-light-intensity) * 0.85 - 1.03)
+                (var(--amb-key-light-intensity) * 1.57 + var(--amb-fill-light-intensity) * 0.85 -
+                  1.03)
             )
         ),
       inset calc(var(--amb-light-x) * var(--_amb-chamfer-w) * 1px)
@@ -182,7 +218,8 @@ Full text: third-party/ambientcss/LICENSE
           var(--amb-light-hue) var(--amb-light-saturation) 100% /
             calc(
               var(--amb-fillet) * max(0, min(var(--amb-thickness), 1)) *
-                (var(--amb-key-light-intensity) * 1.44 + var(--amb-fill-light-intensity) * 0.85 - 0.99)
+                (var(--amb-key-light-intensity) * 1.44 + var(--amb-fill-light-intensity) * 0.85 -
+                  0.99)
             )
         ),
       inset calc(var(--amb-light-x) * var(--_amb-fillet-w) * 1.4px)
@@ -194,19 +231,24 @@ Full text: third-party/ambientcss/LICENSE
                 ((var(--amb-key-light-intensity) - var(--amb-fill-light-intensity)) * 0.23 + 0.3)
             )
         );
-    --_amb-groove-exposure: calc(var(--amb-key-light-intensity) * 0.6623 + var(--amb-fill-light-intensity) * 0.5527);
+    --_amb-groove-exposure: calc(
+      var(--amb-key-light-intensity) * 0.6623 + var(--amb-fill-light-intensity) * 0.5527
+    );
     --_amb-groove-diffuse: color(
       from var(--amb-albedo) srgb-linear calc(r * var(--amb-shade) * var(--_amb-groove-exposure))
-        calc(g * var(--amb-shade) * var(--_amb-groove-exposure)) calc(b * var(--amb-shade) * var(--_amb-groove-exposure))
+        calc(g * var(--amb-shade) * var(--_amb-groove-exposure))
+        calc(b * var(--amb-shade) * var(--_amb-groove-exposure))
     );
     --wba-groove-color: color-mix(
       in srgb,
       var(--_amb-groove-diffuse),
-      hsl(from var(--_amb-groove-diffuse) var(--amb-light-hue) calc(100 - s) l) var(--amb-light-saturation)
+      hsl(from var(--_amb-groove-diffuse) var(--amb-light-hue) calc(100 - s) l)
+        var(--amb-light-saturation)
     );
     --wba-groove-shadow:
       inset calc(var(--amb-light-x) * var(--amb-thickness) * -3.6px)
-        calc(var(--amb-light-y) * var(--amb-thickness) * -3.6px) calc(var(--amb-thickness) * 2.7px) 0
+        calc(var(--amb-light-y) * var(--amb-thickness) * -3.6px) calc(var(--amb-thickness) * 2.7px)
+        0
         hsl(
           var(--amb-light-hue) var(--amb-light-saturation) 0% /
             calc(
@@ -220,7 +262,14 @@ Full text: third-party/ambientcss/LICENSE
           var(--amb-light-hue) var(--amb-light-saturation) 100% /
             calc(
               max(0, min(var(--amb-thickness), 1)) *
-                max(0, min(var(--amb-key-light-intensity) * 1.5 + var(--amb-fill-light-intensity) * 0.72 - 0.96, 1))
+                max(
+                  0,
+                  min(
+                    var(--amb-key-light-intensity) * 1.5 + var(--amb-fill-light-intensity) * 0.72 -
+                      0.96,
+                    1
+                  )
+                )
             )
         );
   }
@@ -329,7 +378,14 @@ Full text: third-party/ambientcss/LICENSE
       --amb-thickness: 0.25;
       color: var(--wb-on-fill, #f4f4f4);
     }
-    :is(.create-composer, .create-negative-input, .studio-well, .studio-field, .studio-list-row, .wb-input) {
+    :is(
+      .create-composer,
+      .create-negative-input,
+      .studio-well,
+      .studio-field,
+      .studio-list-row,
+      .wb-input
+    ) {
       --amb-albedo: var(--wba-well-albedo);
       --amb-thickness: 0.32;
       --amb-chamfer: 0;

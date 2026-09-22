@@ -27,9 +27,9 @@ describe('workbenchAmbient', () => {
     expect(props['data-wbp-edges']).toBe(WORKBENCH_EDGES);
     expect(props['data-wbc-presentation']).toBe(WORKBENCH_PRESENTATION);
     expect(props['data-ambient-preset']).toBe('carbon');
-    expect(props['data-ambient-enabled'] === 'true' || props['data-ambient-enabled'] === 'false').toBe(
-      true,
-    );
+    expect(
+      props['data-ambient-enabled'] === 'true' || props['data-ambient-enabled'] === 'false',
+    ).toBe(true);
     if (props['data-ambient-enabled'] === 'false') {
       expect(props['data-ambient-fallback']).toBe('unsupported-css');
     }

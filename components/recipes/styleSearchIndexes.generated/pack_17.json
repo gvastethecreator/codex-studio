@@ -1,0 +1,1390 @@
+{
+  "packs": [
+    {
+      "id": "pack_17",
+      "name": "Medieval Fantasy & Dungeon Zine",
+      "presetCount": 72
+    }
+  ],
+  "presets": [
+    {
+      "id": "SP17-001",
+      "name": "Ashen Relic Fantasy",
+      "sourceName": "Ashen Soulslike Ruins",
+      "styleAnchors": ["Ashen Soulslike Ruins"],
+      "ref": "pack_17/SP17-001.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-001 ashen relic fantasy ashen soulslike ruins 1. dark fantasy & gothic courts medieval fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts medieval-fantasy"
+    },
+    {
+      "id": "SP17-002",
+      "name": "Gilded Rune Mythic",
+      "sourceName": "Gilded Rune Epic",
+      "styleAnchors": ["Gilded Rune Epic"],
+      "ref": "pack_17/SP17-002.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-002 gilded rune mythic gilded rune epic 1. dark fantasy & gothic courts medieval fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts medieval-fantasy"
+    },
+    {
+      "id": "SP17-003",
+      "name": "Grimdark War Chronicle",
+      "sourceName": "Grimdark Siege Chronicle",
+      "styleAnchors": ["Grimdark Siege Chronicle"],
+      "ref": "pack_17/SP17-003.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-003 grimdark war chronicle grimdark siege chronicle 1. dark fantasy & gothic courts medieval fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts medieval-fantasy"
+    },
+    {
+      "id": "SP17-004",
+      "name": "Cathedral Chiaroscuro",
+      "ref": "pack_17/SP17-004.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-004 cathedral chiaroscuro 1. dark fantasy & gothic courts medieval fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts medieval-fantasy"
+    },
+    {
+      "id": "SP17-005",
+      "name": "Black Iron Relic Fantasy",
+      "sourceName": "Black Iron Crusade",
+      "styleAnchors": ["Black Iron Crusade"],
+      "ref": "pack_17/SP17-005.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-005 black iron relic fantasy black iron crusade 1. dark fantasy & gothic courts medieval fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts medieval-fantasy"
+    },
+    {
+      "id": "SP17-006",
+      "name": "Ruined Tapestry Mythic",
+      "sourceName": "Ruined Tapestry Legend",
+      "styleAnchors": ["Ruined Tapestry Legend"],
+      "ref": "pack_17/SP17-006.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-006 ruined tapestry mythic ruined tapestry legend 1. dark fantasy & gothic courts medieval fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts medieval-fantasy"
+    },
+    {
+      "id": "SP17-007",
+      "name": "Moonlit Hunter Gothic",
+      "ref": "pack_17/SP17-007.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-007 moonlit hunter gothic 1. dark fantasy & gothic courts gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts gothic-fantasy"
+    },
+    {
+      "id": "SP17-008",
+      "name": "Plague Doctor Baroque",
+      "ref": "pack_17/SP17-008.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-008 plague doctor baroque 1. dark fantasy & gothic courts gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts gothic-fantasy"
+    },
+    {
+      "id": "SP17-009",
+      "name": "Crimson Moon Gothic",
+      "sourceName": "Crimson Moon Alley Gothic",
+      "styleAnchors": ["Crimson Moon Alley Gothic"],
+      "ref": "pack_17/SP17-009.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-009 crimson moon gothic crimson moon alley gothic 1. dark fantasy & gothic courts gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts gothic-fantasy"
+    },
+    {
+      "id": "SP17-010",
+      "name": "Surgical Reliquary Horror",
+      "ref": "pack_17/SP17-010.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-010 surgical reliquary horror 1. dark fantasy & gothic courts gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts gothic-fantasy"
+    },
+    {
+      "id": "SP17-011",
+      "name": "Fogbound Witch Gothic",
+      "sourceName": "Fogbound Witch Trial",
+      "styleAnchors": ["Fogbound Witch Trial"],
+      "ref": "pack_17/SP17-011.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-011 fogbound witch gothic fogbound witch trial 1. dark fantasy & gothic courts gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts gothic-fantasy"
+    },
+    {
+      "id": "SP17-012",
+      "name": "Candlelit Bestiary Gothic",
+      "sourceName": "Candlelit Bestiary Court",
+      "styleAnchors": ["Candlelit Bestiary Court"],
+      "ref": "pack_17/SP17-012.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-012 candlelit bestiary gothic candlelit bestiary court 1. dark fantasy & gothic courts gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts gothic-fantasy"
+    },
+    {
+      "id": "SP17-045",
+      "name": "Rotten Gold Gothic Editorial",
+      "sourceName": "Rotten Gold Court Romance",
+      "styleAnchors": ["Rotten Gold Court Romance"],
+      "ref": "pack_17/SP17-045.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "decadent gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "decadent-gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-045 rotten gold gothic editorial rotten gold court romance 1. dark fantasy & gothic courts decadent gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts decadent-gothic-fantasy"
+    },
+    {
+      "id": "SP17-046",
+      "name": "Moth Abbey Vellum Gothic",
+      "sourceName": "Moth Abbey Vellum Horror",
+      "styleAnchors": ["Moth Abbey Vellum Horror"],
+      "ref": "pack_17/SP17-046.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "monastic gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "monastic-gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-046 moth abbey vellum gothic moth abbey vellum horror 1. dark fantasy & gothic courts monastic gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts monastic-gothic-fantasy"
+    },
+    {
+      "id": "SP17-047",
+      "name": "Salt Cathedral Vellum Gothic",
+      "sourceName": "Salt Cathedral Pilgrimage",
+      "styleAnchors": ["Salt Cathedral Pilgrimage"],
+      "ref": "pack_17/SP17-047.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "desert sacred fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "desert-sacred-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-047 salt cathedral vellum gothic salt cathedral pilgrimage 1. dark fantasy & gothic courts desert sacred fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts desert-sacred-fantasy"
+    },
+    {
+      "id": "SP17-048",
+      "name": "Leech Moon Apothecary",
+      "ref": "pack_17/SP17-048.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "apothecary gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "apothecary-gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-048 leech moon apothecary 1. dark fantasy & gothic courts apothecary gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts apothecary-gothic-fantasy"
+    },
+    {
+      "id": "SP17-049",
+      "name": "Debt-Saint Ledger Gothic",
+      "ref": "pack_17/SP17-049.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "bureaucratic gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "bureaucratic-gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-049 debt-saint ledger gothic 1. dark fantasy & gothic courts bureaucratic gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts bureaucratic-gothic-fantasy"
+    },
+    {
+      "id": "SP17-050",
+      "name": "Wormwood Carnival Gothic",
+      "sourceName": "Wormwood Carnival Feudal",
+      "styleAnchors": ["Wormwood Carnival Feudal"],
+      "ref": "pack_17/SP17-050.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "carnival gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "carnival-gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-050 wormwood carnival gothic wormwood carnival feudal 1. dark fantasy & gothic courts carnival gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts carnival-gothic-fantasy"
+    },
+    {
+      "id": "SP17-051",
+      "name": "Opal Bone Masquerade",
+      "ref": "pack_17/SP17-051.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "masquerade gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "masquerade-gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-051 opal bone masquerade 1. dark fantasy & gothic courts masquerade gothic fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts masquerade-gothic-fantasy"
+    },
+    {
+      "id": "SP17-052",
+      "name": "Black Parchment Omen",
+      "sourceName": "Black Parchment Siege Omen",
+      "styleAnchors": ["Black Parchment Siege Omen"],
+      "ref": "pack_17/SP17-052.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dark-fantasy-and-gothic-courts",
+      "categoryName": "1. Dark Fantasy & Gothic Courts",
+      "domain": "tactical omen fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dark-fantasy-and-gothic-courts",
+        "tactical-omen-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-052 black parchment omen black parchment siege omen 1. dark fantasy & gothic courts tactical omen fantasy pack_17 medieval fantasy & dungeon zine dark-fantasy-and-gothic-courts medieval-fantasy-and-dungeon-zine dark-fantasy-and-gothic-courts tactical-omen-fantasy"
+    },
+    {
+      "id": "SP17-013",
+      "name": "Acid Dungeon Zine",
+      "ref": "pack_17/SP17-013.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "dungeon zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "dungeon-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-013 acid dungeon zine 2. dungeon zine & risograph prints dungeon zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints dungeon-zine"
+    },
+    {
+      "id": "SP17-014",
+      "name": "Occult Xerox Bestiary",
+      "ref": "pack_17/SP17-014.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "dungeon zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "dungeon-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-014 occult xerox bestiary 2. dungeon zine & risograph prints dungeon zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints dungeon-zine"
+    },
+    {
+      "id": "SP17-015",
+      "name": "Neon Risograph Necromancy",
+      "ref": "pack_17/SP17-015.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "dungeon zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "dungeon-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-015 neon risograph necromancy 2. dungeon zine & risograph prints dungeon zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints dungeon-zine"
+    },
+    {
+      "id": "SP17-016",
+      "name": "Blacklight Monster Manual",
+      "ref": "pack_17/SP17-016.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "dungeon zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "dungeon-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-016 blacklight monster manual 2. dungeon zine & risograph prints dungeon zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints dungeon-zine"
+    },
+    {
+      "id": "SP17-017",
+      "name": "Punk Heraldry Dungeon",
+      "sourceName": "Punk Heraldry Dungeon Cards",
+      "styleAnchors": ["Punk Heraldry Dungeon Cards"],
+      "ref": "pack_17/SP17-017.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "dungeon zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "dungeon-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-017 punk heraldry dungeon punk heraldry dungeon cards 2. dungeon zine & risograph prints dungeon zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints dungeon-zine"
+    },
+    {
+      "id": "SP17-018",
+      "name": "Tape-Scanned Sword & Sorcery",
+      "ref": "pack_17/SP17-018.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "dungeon zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "dungeon-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-018 tape-scanned sword & sorcery 2. dungeon zine & risograph prints dungeon zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints dungeon-zine"
+    },
+    {
+      "id": "SP17-059",
+      "name": "Rust Red Dungeon Riso",
+      "styleAnchors": [
+        "Rust Red Dungeon Riso",
+        "rust red dungeon risograph",
+        "rough zine dungeon print"
+      ],
+      "ref": "pack_17/SP17-059.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "rustic risograph dungeon zine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "rustic-risograph-dungeon-zine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-059 rust red dungeon riso rust red dungeon risograph rough zine dungeon print 2. dungeon zine & risograph prints rustic risograph dungeon zine pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints rustic-risograph-dungeon-zine"
+    },
+    {
+      "id": "SP17-060",
+      "name": "Toxic Lime Crawl Flyer",
+      "styleAnchors": [
+        "Toxic Lime Crawl Flyer",
+        "toxic lime dungeon flyer",
+        "rough acid crawl print"
+      ],
+      "ref": "pack_17/SP17-060.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "toxic neon dungeon flyer",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "toxic-neon-dungeon-flyer"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-060 toxic lime crawl flyer toxic lime dungeon flyer rough acid crawl print 2. dungeon zine & risograph prints toxic neon dungeon flyer pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints toxic-neon-dungeon-flyer"
+    },
+    {
+      "id": "SP17-061",
+      "name": "Cobalt Rot Risograph",
+      "styleAnchors": ["Cobalt Rot Risograph", "cobalt rot risograph", "blue orange dungeon zine"],
+      "ref": "pack_17/SP17-061.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "cold rot risograph fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "cold-rot-risograph-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-061 cobalt rot risograph cobalt rot risograph blue orange dungeon zine 2. dungeon zine & risograph prints cold rot risograph fantasy pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints cold-rot-risograph-fantasy"
+    },
+    {
+      "id": "SP17-062",
+      "name": "Mold Pulp Dungeon Print",
+      "styleAnchors": [
+        "Mold Pulp Dungeon Print",
+        "mold pulp dungeon print",
+        "aged green zine fantasy"
+      ],
+      "ref": "pack_17/SP17-062.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "moldy pulp dungeon print",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "moldy-pulp-dungeon-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-062 mold pulp dungeon print mold pulp dungeon print aged green zine fantasy 2. dungeon zine & risograph prints moldy pulp dungeon print pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints moldy-pulp-dungeon-print"
+    },
+    {
+      "id": "SP17-063",
+      "name": "Bone Pink Catacomb Riso",
+      "styleAnchors": [
+        "Bone Pink Catacomb Riso",
+        "bone pink catacomb riso",
+        "pastel toxic dungeon print"
+      ],
+      "ref": "pack_17/SP17-063.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-and-risograph-prints",
+      "categoryName": "2. Dungeon Zine & Risograph Prints",
+      "domain": "bone pink catacomb risograph",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-and-risograph-prints",
+        "bone-pink-catacomb-risograph"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-063 bone pink catacomb riso bone pink catacomb riso pastel toxic dungeon print 2. dungeon zine & risograph prints bone pink catacomb risograph pack_17 medieval fantasy & dungeon zine dungeon-zine-and-risograph-prints medieval-fantasy-and-dungeon-zine dungeon-zine-and-risograph-prints bone-pink-catacomb-risograph"
+    },
+    {
+      "id": "SP17-033",
+      "name": "Bone Tarot Arcana",
+      "sourceName": "Bone Tarot Horror Arcana",
+      "styleAnchors": ["Bone Tarot Horror Arcana"],
+      "ref": "pack_17/SP17-033.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "monochrome medieval horror",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "monochrome-medieval-horror"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-033 bone tarot arcana bone tarot horror arcana 3. ink, tarot & bestiary plates monochrome medieval horror pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates monochrome-medieval-horror"
+    },
+    {
+      "id": "SP17-034",
+      "name": "Medieval Ink Fantasy Plate",
+      "ref": "pack_17/SP17-034.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "monochrome medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "monochrome-medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-034 medieval ink fantasy plate 3. ink, tarot & bestiary plates monochrome medieval fantasy pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates monochrome-medieval-fantasy"
+    },
+    {
+      "id": "SP17-035",
+      "name": "Penitent Baroque Icon",
+      "ref": "pack_17/SP17-035.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "penitential gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "penitential-gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-035 penitent baroque icon 3. ink, tarot & bestiary plates penitential gothic fantasy pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates penitential-gothic-fantasy"
+    },
+    {
+      "id": "SP17-036",
+      "name": "Starved Dungeon Gothic",
+      "sourceName": "Starved Dungeon Pilgrimage",
+      "styleAnchors": ["Starved Dungeon Pilgrimage"],
+      "ref": "pack_17/SP17-036.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "survival dungeon fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "survival-dungeon-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-036 starved dungeon gothic starved dungeon pilgrimage 3. ink, tarot & bestiary plates survival dungeon fantasy pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates survival-dungeon-fantasy"
+    },
+    {
+      "id": "SP17-037",
+      "name": "Woodcut Beast Plate",
+      "sourceName": "Woodcut Beast Chronicle",
+      "styleAnchors": ["Woodcut Beast Chronicle"],
+      "ref": "pack_17/SP17-037.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "medieval bestiary illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "medieval-bestiary-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-037 woodcut beast plate woodcut beast chronicle 3. ink, tarot & bestiary plates medieval bestiary illustration pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates medieval-bestiary-illustration"
+    },
+    {
+      "id": "SP17-038",
+      "name": "Illuminated Monster Codex",
+      "ref": "pack_17/SP17-038.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "illuminated medieval bestiary",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "illuminated-medieval-bestiary"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-038 illuminated monster codex 3. ink, tarot & bestiary plates illuminated medieval bestiary pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates illuminated-medieval-bestiary"
+    },
+    {
+      "id": "SP17-039",
+      "name": "Scholastic Marginalia Bestiary",
+      "sourceName": "Scholastic Marginalia Beasts",
+      "styleAnchors": ["Scholastic Marginalia Beasts"],
+      "ref": "pack_17/SP17-039.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "medieval marginalia fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "medieval-marginalia-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-039 scholastic marginalia bestiary scholastic marginalia beasts 3. ink, tarot & bestiary plates medieval marginalia fantasy pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates medieval-marginalia-fantasy"
+    },
+    {
+      "id": "SP17-040",
+      "name": "Heraldic Chimera Plate",
+      "ref": "pack_17/SP17-040.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "heraldic medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "heraldic-medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-040 heraldic chimera plate 3. ink, tarot & bestiary plates heraldic medieval fantasy pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates heraldic-medieval-fantasy"
+    },
+    {
+      "id": "SP17-041",
+      "name": "Stained Glass Bestiary Icon",
+      "ref": "pack_17/SP17-041.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "stained glass fantasy bestiary",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "stained-glass-fantasy-bestiary"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-041 stained glass bestiary icon 3. ink, tarot & bestiary plates stained glass fantasy bestiary pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates stained-glass-fantasy-bestiary"
+    },
+    {
+      "id": "SP17-042",
+      "name": "Tapestry Creature Mythic",
+      "sourceName": "Tapestry Creature Legend",
+      "styleAnchors": ["Tapestry Creature Legend"],
+      "ref": "pack_17/SP17-042.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "medieval tapestry fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "medieval-tapestry-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-042 tapestry creature mythic tapestry creature legend 3. ink, tarot & bestiary plates medieval tapestry fantasy pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates medieval-tapestry-fantasy"
+    },
+    {
+      "id": "SP17-043",
+      "name": "Anatomist Wyvern Field Guide",
+      "ref": "pack_17/SP17-043.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "fantasy field guide illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "fantasy-field-guide-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-043 anatomist wyvern field guide 3. ink, tarot & bestiary plates fantasy field guide illustration pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates fantasy-field-guide-illustration"
+    },
+    {
+      "id": "SP17-044",
+      "name": "Moon Parchment Oracle",
+      "sourceName": "Moon Parchment Oracle Beasts",
+      "styleAnchors": ["Moon Parchment Oracle Beasts"],
+      "ref": "pack_17/SP17-044.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "oracle bestiary fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "oracle-bestiary-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-044 moon parchment oracle moon parchment oracle beasts 3. ink, tarot & bestiary plates oracle bestiary fantasy pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates oracle-bestiary-fantasy"
+    },
+    {
+      "id": "SP17-053",
+      "name": "Black Veil Anatomical Arcana",
+      "styleAnchors": [
+        "Black Veil Anatomical Arcana",
+        "black ground white ink anatomical arcana",
+        "ritual anatomy engraving"
+      ],
+      "ref": "pack_17/SP17-053.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "white ink occult anatomy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "white-ink-occult-anatomy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-053 black veil anatomical arcana black ground white ink anatomical arcana ritual anatomy engraving 3. ink, tarot & bestiary plates white ink occult anatomy pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates white-ink-occult-anatomy"
+    },
+    {
+      "id": "SP17-054",
+      "name": "White Thread Omen Cards",
+      "styleAnchors": [
+        "White Thread Omen Cards",
+        "minimal white thread occult card",
+        "black negative space tarot engraving"
+      ],
+      "ref": "pack_17/SP17-054.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "minimal occult white linework",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "minimal-occult-white-linework"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-054 white thread omen cards minimal white thread occult card black negative space tarot engraving 3. ink, tarot & bestiary plates minimal occult white linework pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates minimal-occult-white-linework"
+    },
+    {
+      "id": "SP17-055",
+      "name": "Crooked White Ink Horror Cards",
+      "styleAnchors": [
+        "Crooked White Ink Horror Cards",
+        "crude white ink horror card",
+        "grotesque bad drawing black ground"
+      ],
+      "ref": "pack_17/SP17-055.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "grotesque crude horror ink",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "grotesque-crude-horror-ink"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-055 crooked white ink horror cards crude white ink horror card grotesque bad drawing black ground 3. ink, tarot & bestiary plates grotesque crude horror ink pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates grotesque-crude-horror-ink"
+    },
+    {
+      "id": "SP17-056",
+      "name": "Gutter Saint Scratchcards",
+      "styleAnchors": [
+        "Gutter Saint Scratchcards",
+        "gutter saint scratch card",
+        "white ink devotional horror"
+      ],
+      "ref": "pack_17/SP17-056.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "devotional scratch horror",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "devotional-scratch-horror"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-056 gutter saint scratchcards gutter saint scratch card white ink devotional horror 3. ink, tarot & bestiary plates devotional scratch horror pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates devotional-scratch-horror"
+    },
+    {
+      "id": "SP17-057",
+      "name": "Malformed Bestiary Xerox",
+      "styleAnchors": [
+        "Malformed Bestiary Xerox",
+        "bad bestiary xerox",
+        "malformed creature field guide"
+      ],
+      "ref": "pack_17/SP17-057.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "low fidelity bestiary horror",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "low-fidelity-bestiary-horror"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-057 malformed bestiary xerox bad bestiary xerox malformed creature field guide 3. ink, tarot & bestiary plates low fidelity bestiary horror pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates low-fidelity-bestiary-horror"
+    },
+    {
+      "id": "SP17-058",
+      "name": "Dark Medieval Ink Plate",
+      "styleAnchors": [
+        "Dark Medieval Ink Plate",
+        "dark medieval ink plate",
+        "inverted manuscript plate"
+      ],
+      "ref": "pack_17/SP17-058.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "ink-tarot-and-bestiary-plates",
+      "categoryName": "3. Ink, Tarot & Bestiary Plates",
+      "domain": "dark inverted medieval ink",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "ink-tarot-and-bestiary-plates",
+        "dark-inverted-medieval-ink"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-058 dark medieval ink plate dark medieval ink plate inverted manuscript plate 3. ink, tarot & bestiary plates dark inverted medieval ink pack_17 medieval fantasy & dungeon zine ink-tarot-and-bestiary-plates medieval-fantasy-and-dungeon-zine ink-tarot-and-bestiary-plates dark-inverted-medieval-ink"
+    },
+    {
+      "id": "SP17-019",
+      "name": "Futuristic Medieval Citadel",
+      "ref": "pack_17/SP17-019.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "futuristic medieval",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "futuristic-medieval"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-019 futuristic medieval citadel 4. rune-tech & apocalyptic warfronts futuristic medieval pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts futuristic-medieval"
+    },
+    {
+      "id": "SP17-020",
+      "name": "Techno Reliquary Armor",
+      "sourceName": "Techno Crusader Armor",
+      "styleAnchors": ["Techno Crusader Armor"],
+      "ref": "pack_17/SP17-020.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "futuristic medieval",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "futuristic-medieval"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-020 techno reliquary armor techno crusader armor 4. rune-tech & apocalyptic warfronts futuristic medieval pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts futuristic-medieval"
+    },
+    {
+      "id": "SP17-021",
+      "name": "Synth Castle Gothic",
+      "sourceName": "Synth Castle Prophecy",
+      "styleAnchors": ["Synth Castle Prophecy"],
+      "ref": "pack_17/SP17-021.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "futuristic medieval",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "futuristic-medieval"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-021 synth castle gothic synth castle prophecy 4. rune-tech & apocalyptic warfronts futuristic medieval pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts futuristic-medieval"
+    },
+    {
+      "id": "SP17-022",
+      "name": "Mecha Reliquary Gothic",
+      "sourceName": "Mecha Reliquary Knight",
+      "styleAnchors": ["Mecha Reliquary Knight"],
+      "ref": "pack_17/SP17-022.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "futuristic medieval",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "futuristic-medieval"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-022 mecha reliquary gothic mecha reliquary knight 4. rune-tech & apocalyptic warfronts futuristic medieval pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts futuristic-medieval"
+    },
+    {
+      "id": "SP17-023",
+      "name": "Bio-Arcane Catacomb",
+      "ref": "pack_17/SP17-023.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "futuristic medieval",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "futuristic-medieval"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-023 bio-arcane catacomb 4. rune-tech & apocalyptic warfronts futuristic medieval pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts futuristic-medieval"
+    },
+    {
+      "id": "SP17-024",
+      "name": "Stained Glass Starforge",
+      "ref": "pack_17/SP17-024.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "futuristic medieval",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "futuristic-medieval"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-024 stained glass starforge 4. rune-tech & apocalyptic warfronts futuristic medieval pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts futuristic-medieval"
+    },
+    {
+      "id": "SP17-025",
+      "name": "Mud-Cathedral War Gothic",
+      "sourceName": "Mud-Cathedral Crusade",
+      "styleAnchors": ["Mud-Cathedral Crusade"],
+      "ref": "pack_17/SP17-025.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "apocalyptic medieval",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "apocalyptic-medieval"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-025 mud-cathedral war gothic mud-cathedral crusade 4. rune-tech & apocalyptic warfronts apocalyptic medieval pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts apocalyptic-medieval"
+    },
+    {
+      "id": "SP17-026",
+      "name": "Gothic Miniature Wargame",
+      "sourceName": "Gothic Miniature Warfront",
+      "styleAnchors": ["Gothic Miniature Warfront"],
+      "ref": "pack_17/SP17-026.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "gothic wargame fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "gothic-wargame-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-026 gothic miniature wargame gothic miniature warfront 4. rune-tech & apocalyptic warfronts gothic wargame fantasy pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts gothic-wargame-fantasy"
+    },
+    {
+      "id": "SP17-027",
+      "name": "Stress-Ink Dungeon",
+      "sourceName": "Stress-Ink Dungeon Crawl",
+      "styleAnchors": ["Stress-Ink Dungeon Crawl"],
+      "ref": "pack_17/SP17-027.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "inked dungeon drama",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "inked-dungeon-drama"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-027 stress-ink dungeon stress-ink dungeon crawl 4. rune-tech & apocalyptic warfronts inked dungeon drama pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts inked-dungeon-drama"
+    },
+    {
+      "id": "SP17-028",
+      "name": "Sepulcher Warband Engraving",
+      "ref": "pack_17/SP17-028.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "medieval engraving fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "medieval-engraving-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-028 sepulcher warband engraving 4. rune-tech & apocalyptic warfronts medieval engraving fantasy pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts medieval-engraving-fantasy"
+    },
+    {
+      "id": "SP17-029",
+      "name": "Iron Reliquary Apocalypse",
+      "ref": "pack_17/SP17-029.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "apocalyptic reliquary fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "apocalyptic-reliquary-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-029 iron reliquary apocalypse 4. rune-tech & apocalyptic warfronts apocalyptic reliquary fantasy pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts apocalyptic-reliquary-fantasy"
+    },
+    {
+      "id": "SP17-030",
+      "name": "Hexenwood Witch-Knight Gothic",
+      "sourceName": "Hexenwood Witch-Knight Covenant",
+      "styleAnchors": ["Hexenwood Witch-Knight Covenant"],
+      "ref": "pack_17/SP17-030.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "folk horror medieval",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "folk-horror-medieval"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-030 hexenwood witch-knight gothic hexenwood witch-knight covenant 4. rune-tech & apocalyptic warfronts folk horror medieval pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts folk-horror-medieval"
+    },
+    {
+      "id": "SP17-031",
+      "name": "Bone-Script Monastery Gothic",
+      "sourceName": "Bone-Script Monastery Siege",
+      "styleAnchors": ["Bone-Script Monastery Siege"],
+      "ref": "pack_17/SP17-031.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "siege monastery fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "siege-monastery-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-031 bone-script monastery gothic bone-script monastery siege 4. rune-tech & apocalyptic warfronts siege monastery fantasy pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts siege-monastery-fantasy"
+    },
+    {
+      "id": "SP17-032",
+      "name": "Astral Feudal Exorcism",
+      "sourceName": "Astral Feudal Exorcists",
+      "styleAnchors": ["Astral Feudal Exorcists"],
+      "ref": "pack_17/SP17-032.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "astral medieval fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "astral-medieval-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-032 astral feudal exorcism astral feudal exorcists 4. rune-tech & apocalyptic warfronts astral medieval fantasy pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts astral-medieval-fantasy"
+    },
+    {
+      "id": "SP17-064",
+      "name": "Monochrome Dungeon Pixels",
+      "styleAnchors": [
+        "Monochrome Dungeon Pixels",
+        "grimdark monochrome pixel art",
+        "one-bit dungeon pixel aesthetic"
+      ],
+      "ref": "pack_17/SP17-064.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "grimdark monochrome pixel art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "grimdark-monochrome-pixel-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-064 monochrome dungeon pixels grimdark monochrome pixel art one-bit dungeon pixel aesthetic 5. grimdark game systems & tabletop grimdark monochrome pixel art pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop grimdark-monochrome-pixel-art"
+    },
+    {
+      "id": "SP17-065",
+      "name": "Ashen Isometric ARPG",
+      "styleAnchors": [
+        "Ashen Isometric ARPG",
+        "dark isometric loot ARPG",
+        "ash gothic 2.5D dungeon game"
+      ],
+      "ref": "pack_17/SP17-065.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "dark isometric action RPG art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "dark-isometric-action-rpg-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-065 ashen isometric arpg dark isometric loot arpg ash gothic 2.5d dungeon game 5. grimdark game systems & tabletop dark isometric action rpg art pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop dark-isometric-action-rpg-art"
+    },
+    {
+      "id": "SP17-066",
+      "name": "Obsidian 2.5D Catacombs",
+      "styleAnchors": [
+        "Obsidian 2.5D Catacombs",
+        "monochrome isometric dungeon game",
+        "obsidian 2.5D catacomb aesthetic"
+      ],
+      "ref": "pack_17/SP17-066.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "monochrome isometric dungeon game",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "monochrome-isometric-dungeon-game"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-066 obsidian 2.5d catacombs monochrome isometric dungeon game obsidian 2.5d catacomb aesthetic 5. grimdark game systems & tabletop monochrome isometric dungeon game pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop monochrome-isometric-dungeon-game"
+    },
+    {
+      "id": "SP17-067",
+      "name": "Robust Adventurer Portraits",
+      "styleAnchors": [
+        "Robust Adventurer Portraits",
+        "robust tabletop adventurer portrait",
+        "dark fantasy RPG character portrait"
+      ],
+      "ref": "pack_17/SP17-067.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "robust tabletop fantasy portrait",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "robust-tabletop-fantasy-portrait"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-067 robust adventurer portraits robust tabletop adventurer portrait dark fantasy rpg character portrait 5. grimdark game systems & tabletop robust tabletop fantasy portrait pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop robust-tabletop-fantasy-portrait"
+    },
+    {
+      "id": "SP17-068",
+      "name": "Rusted Vault Grimdark",
+      "styleAnchors": [
+        "Rusted Vault Grimdark",
+        "post nuclear retrofuturist grimdark fantasy",
+        "rusted vault medieval apocalypse"
+      ],
+      "ref": "pack_17/SP17-068.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "post-nuclear grimdark fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "post-nuclear-grimdark-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-068 rusted vault grimdark post nuclear retrofuturist grimdark fantasy rusted vault medieval apocalypse 5. grimdark game systems & tabletop post-nuclear grimdark fantasy pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop post-nuclear-grimdark-fantasy"
+    },
+    {
+      "id": "SP17-069",
+      "name": "Cosmic Chapel Horror",
+      "styleAnchors": [
+        "Cosmic Chapel Horror",
+        "cosmic gothic chapel horror",
+        "non euclidean medieval horror"
+      ],
+      "ref": "pack_17/SP17-069.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "cosmic gothic fantasy horror",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "cosmic-gothic-fantasy-horror"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-069 cosmic chapel horror cosmic gothic chapel horror non euclidean medieval horror 5. grimdark game systems & tabletop cosmic gothic fantasy horror pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop cosmic-gothic-fantasy-horror"
+    },
+    {
+      "id": "SP17-070",
+      "name": "Biomechanical Reliquary",
+      "styleAnchors": [
+        "Biomechanical Reliquary",
+        "biomechanical gothic reliquary",
+        "flesh machine medieval horror"
+      ],
+      "ref": "pack_17/SP17-070.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "biomechanical medieval reliquary",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "biomechanical-medieval-reliquary"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-070 biomechanical reliquary biomechanical gothic reliquary flesh machine medieval horror 5. grimdark game systems & tabletop biomechanical medieval reliquary pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop biomechanical-medieval-reliquary"
+    },
+    {
+      "id": "SP17-071",
+      "name": "Future Torture Apocalypse",
+      "styleAnchors": [
+        "Future Torture Apocalypse",
+        "future torture apocalyptic horror",
+        "grimdark punishment machine fantasy"
+      ],
+      "ref": "pack_17/SP17-071.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "future apocalyptic horror machinery",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "future-apocalyptic-horror-machinery"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-071 future torture apocalypse future torture apocalyptic horror grimdark punishment machine fantasy 5. grimdark game systems & tabletop future apocalyptic horror machinery pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop future-apocalyptic-horror-machinery"
+    },
+    {
+      "id": "SP17-072",
+      "name": "Endless War Gothic",
+      "styleAnchors": [
+        "Endless War Gothic",
+        "endless modern war gothic fantasy",
+        "trench cathedral grimdark"
+      ],
+      "ref": "pack_17/SP17-072.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "modern endless war gothic fantasy",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "modern-endless-war-gothic-fantasy"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-072 endless war gothic endless modern war gothic fantasy trench cathedral grimdark 5. grimdark game systems & tabletop modern endless war gothic fantasy pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop modern-endless-war-gothic-fantasy"
+    }
+  ],
+  "totalPresetCount": 72
+}

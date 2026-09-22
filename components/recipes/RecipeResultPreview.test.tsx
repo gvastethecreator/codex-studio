@@ -84,7 +84,7 @@ describe('RecipeResultPreview', () => {
     expect(screen.getByRole('img', { name: 'Reference image' }).style.transform).toContain(
       'scale(1.25)',
     );
-    fireEvent.click(screen.getByRole('button', { name: 'Fit image' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Reset zoom to 100%' }));
     expect(screen.getByRole('img', { name: 'Reference image' }).style.transform).toContain(
       'scale(1)',
     );
@@ -106,6 +106,41 @@ describe('RecipeResultPreview', () => {
     expect(onOpen).not.toHaveBeenCalled();
     expect(screen.queryByText('Compare reference')).toBeNull();
     expect(screen.queryByText('Result')).toBeNull();
+  });
+
+  it('keeps thumbnail clicks active after dragging the result strip', () => {
+    render(<RecipeResultPreview variant="stage" images={[IMAGE, IMAGE_TWO]} onOpen={vi.fn()} />);
+
+    const strip = screen.getByLabelText('Library results');
+    Object.defineProperties(strip, {
+      clientWidth: { configurable: true, value: 120 },
+      scrollWidth: { configurable: true, value: 400 },
+      setPointerCapture: { configurable: true, value: vi.fn() },
+      hasPointerCapture: { configurable: true, value: vi.fn(() => false) },
+    });
+
+    fireEvent.pointerDown(strip, {
+      button: 0,
+      clientX: 100,
+      isPrimary: true,
+      pointerId: 1,
+      pointerType: 'mouse',
+    });
+    fireEvent.pointerMove(strip, { clientX: 60, pointerId: 1 });
+    fireEvent.pointerUp(strip, { clientX: 60, pointerId: 1 });
+
+    const secondResult = screen.getByRole('button', { name: 'View result 2' });
+    fireEvent.pointerDown(secondResult, {
+      button: 0,
+      clientX: 60,
+      isPrimary: true,
+      pointerId: 2,
+      pointerType: 'mouse',
+    });
+    fireEvent.pointerUp(secondResult, { clientX: 60, pointerId: 2 });
+    fireEvent.click(secondResult);
+
+    expect(secondResult.getAttribute('aria-pressed')).toBe('true');
   });
 
   it('keeps recipe images in the library stage and exposes canvas actions', () => {

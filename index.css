@@ -86,17 +86,17 @@ react-scan-overlay,
     --studio-recipe-dock-space: 11rem;
     --studio-chrome-block: 350px;
 
-    --accent-50: 247 243 234;
-    --accent-100: 239 232 212;
-    --accent-200: 224 212 179;
-    --accent-300: 212 196 154;
-    --accent-400: 203 184 144;
-    --accent-500: 195 178 141;
-    --accent-600: 168 148 108;
-    --accent-700: 126 110 79;
-    --accent-800: 82 72 51;
-    --accent-900: 50 44 32;
-    --accent-950: 26 23 18;
+    --accent-50: 250 250 250;
+    --accent-100: 245 245 245;
+    --accent-200: 229 229 229;
+    --accent-300: 212 212 212;
+    --accent-400: 163 163 163;
+    --accent-500: 115 115 115;
+    --accent-600: 82 82 82;
+    --accent-700: 64 64 64;
+    --accent-800: 38 38 38;
+    --accent-900: 23 23 23;
+    --accent-950: 10 10 10;
   }
 
   html,
@@ -115,7 +115,7 @@ react-scan-overlay,
   }
 
   ::selection {
-    background-color: rgba(var(--accent-500), 0.35);
+    background-color: rgb(var(--accent-500) / 0.35);
     color: #fff;
   }
 
@@ -946,6 +946,13 @@ react-scan-overlay,
   overflow-x: auto;
   flex-shrink: 0;
   padding: 4px;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+.recipe-result-strip[data-dragging='true'] {
+  cursor: grabbing;
+  scroll-snap-type: none;
 }
 .recipe-result-strip button {
   width: 64px;
@@ -1384,8 +1391,8 @@ react-scan-overlay,
   position: absolute;
   top: calc(100% + 7px);
   right: 0;
-  width: min(312px, calc(100vw - 20px));
-  max-height: min(52vh, 360px);
+  width: min(392px, calc(100vw - 20px));
+  max-height: min(68vh, 520px);
 }
 .create-workflow-block.is-header .create-workflow-popover {
   left: 0;
@@ -1417,7 +1424,7 @@ react-scan-overlay,
 .create-workflow-default {
   display: flex;
   width: 100%;
-  min-height: 36px;
+  min-height: 48px;
   align-items: center;
   gap: 10px;
   padding: 8px 9px;
@@ -1433,8 +1440,8 @@ react-scan-overlay,
 }
 .create-workflow-default-icon {
   display: grid;
-  width: 25px;
-  height: 25px;
+  width: 36px;
+  height: 36px;
   place-items: center;
   border: 1px solid var(--wb-border);
   border-radius: 6px;
@@ -1458,6 +1465,60 @@ react-scan-overlay,
 }
 .create-workflow-popover [role='option'] {
   border-radius: 8px;
+}
+.create-workflow-options {
+  display: grid;
+  gap: 3px;
+}
+.create-workflow-option {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  min-height: 50px;
+  align-items: center;
+  gap: 11px;
+  padding: 6px 9px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--create-text);
+  text-align: left;
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease;
+}
+.create-workflow-option:hover,
+.create-workflow-option:focus-visible {
+  border-color: var(--create-line);
+  background: color-mix(in srgb, var(--wb-ink) 8%, transparent);
+  outline: none;
+}
+.create-workflow-option[aria-selected='true'] {
+  border-color: color-mix(in srgb, var(--wb-accent) 55%, var(--create-line));
+  background: color-mix(in srgb, var(--wb-accent) 12%, var(--create-raised));
+}
+.create-workflow-option-thumbnail {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.create-workflow-option-text {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.create-workflow-option-text > span:last-child {
+  margin-top: 2px;
+}
+.create-workflow-option-arrow {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: var(--wb-muted);
+  opacity: 0.7;
 }
 .create-tool-dock,
 .create-tool-composer,
@@ -2443,7 +2504,8 @@ react-scan-overlay,
   outline-offset: -2px;
 }
 .recipe-result-scale {
-  min-width: 42px;
+  min-width: 52px !important;
+  width: 52px !important;
   align-self: center;
   text-align: center;
   font-size: var(--wbp-label, 12px);
@@ -2873,7 +2935,8 @@ react-scan-overlay,
   scrollbar-width: none;
 }
 .styles-catalog-panel .styles-catalog-tab-stepper {
-  display: none;
+  display: flex;
+  flex: 0 0 auto;
 }
 .styles-catalog-panel .styles-catalog-tab {
   height: 28px;
@@ -2982,19 +3045,19 @@ react-scan-overlay,
   display: none;
 }
 .create-workspace[data-layout='wide'] {
-  grid-template-columns: minmax(320px, 384px) minmax(400px, 1fr);
+  grid-template-columns: 384px minmax(400px, 1fr);
 }
 .create-workspace[data-layout='wide']:has(.create-side-panel:not(:empty)) {
-  grid-template-columns: minmax(320px, 360px) minmax(360px, 440px) minmax(400px, 1fr);
+  grid-template-columns: 384px 480px minmax(400px, 1fr);
 }
 .create-workspace[data-layout='split'] {
-  grid-template-columns: minmax(360px, 384px) minmax(400px, 1fr);
+  grid-template-columns: 384px minmax(400px, 1fr);
 }
 .create-workspace[data-layout='single'] {
   display: flex;
   flex-direction: column;
 }
-.create-workspace:not([data-layout='wide']) .create-tray-stack {
+.create-workspace[data-layout='single'] .create-tray-stack {
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -3002,8 +3065,7 @@ react-scan-overlay,
   height: 100%;
   gap: 8px;
 }
-.create-workspace:not([data-layout='wide']):has(.create-side-panel:not(:empty))
-  .create-pane-switch {
+.create-workspace[data-layout='single']:has(.create-side-panel:not(:empty)) .create-pane-switch {
   display: flex;
   gap: 4px;
 }
@@ -3018,16 +3080,16 @@ react-scan-overlay,
   border-color: var(--wb-accent);
   background: var(--wb-panel);
 }
-.create-workspace:not([data-layout='wide']) .create-tools,
-.create-workspace:not([data-layout='wide']) .create-side-panel:not(:empty) {
+.create-workspace[data-layout='single'] .create-tools,
+.create-workspace[data-layout='single'] .create-side-panel:not(:empty) {
   flex: 1;
   min-height: 0;
 }
-.create-workspace:not([data-layout='wide'])[data-catalog-pane='true']:has(
+.create-workspace[data-layout='single'][data-catalog-pane='true']:has(
     .create-side-panel:not(:empty)
   )
   .create-tools,
-.create-workspace:not([data-layout='wide'])[data-catalog-pane='false'] .create-side-panel {
+.create-workspace[data-layout='single'][data-catalog-pane='false'] .create-side-panel {
   display: none;
 }
 .create-workspace[data-layout] .create-stage {
@@ -3121,4 +3183,558 @@ react-scan-overlay,
 .studio-experience button:disabled {
   color: var(--wb-disabled, #777);
   cursor: not-allowed;
+}
+
+/* Shared action metrics and stable workbench surfaces. */
+:root {
+  --studio-action-height: 32px;
+}
+.studio-tooltip {
+  position: fixed;
+  z-index: 2147483647;
+  pointer-events: none;
+  max-width: min(360px, calc(100vw - 16px));
+  max-height: min(280px, 60vh);
+  overflow: hidden;
+  padding: 7px 10px;
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius, 6px);
+  background: var(--wb-panel);
+  color: var(--wb-ink);
+  box-shadow: 0 4px 16px #0004;
+  font: 12px/1.4 var(--font-sans);
+  overflow-wrap: anywhere;
+}
+.tooltip {
+  vertical-align: middle;
+  flex-shrink: 0;
+  align-items: center;
+}
+.studio-experience
+  :is(
+    .studio-nav-tab,
+    .studio-icon-action,
+    .studio-control,
+    .create-generate-button,
+    .library-card-actions button,
+    .style-card-actions button,
+    .style-image-control,
+    .recipe-result-toolbar button,
+    .vt-top-toolbar button
+  ) {
+  min-height: var(--studio-action-height);
+  height: var(--studio-action-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+  line-height: 1;
+  padding-block: 0;
+  flex-shrink: 0;
+}
+.studio-experience
+  :is(
+    .studio-icon-action,
+    .style-image-control,
+    .style-card-actions button,
+    .library-card-actions button,
+    button[aria-label^='Close'],
+    button[aria-label^='Enter fullscreen'],
+    button[aria-label^='Exit fullscreen']
+  ) {
+  width: var(--studio-action-height);
+  min-width: var(--studio-action-height);
+  height: var(--studio-action-height);
+  min-height: var(--studio-action-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+.studio-experience button > svg {
+  flex-shrink: 0;
+}
+.studio-experience button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+.studio-experience button:focus-visible,
+.library-card-menu summary:focus-visible {
+  outline: 2px solid var(--wb-accent);
+  outline-offset: 2px;
+}
+.studio-setting-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+}
+.studio-setting-toggle strong,
+.studio-setting-toggle small {
+  display: block;
+}
+.studio-setting-toggle small {
+  margin-top: 6px;
+  color: var(--wb-muted);
+}
+.studio-setting-toggle input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--wb-accent);
+}
+.create-workspace[data-layout='split'] .create-side-panel:not(:empty) {
+  position: absolute;
+  z-index: 35;
+  top: 8px;
+  bottom: 12px;
+  left: 408px;
+  width: min(480px, calc(100% - 420px));
+  box-shadow: 12px 0 36px #0005;
+}
+.create-workspace[data-layout='split'] .create-pane-switch {
+  display: none;
+}
+.create-stage {
+  container-type: inline-size;
+  container-name: result-stage;
+}
+.recipe-result-toolbar-row {
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.recipe-result-toolbar .recipe-result-background,
+.recipe-result-toolbar .recipe-result-zoom {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-inline-start: 8px;
+}
+.recipe-result-toolbar .recipe-result-background button,
+.recipe-result-toolbar .recipe-result-zoom button {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+}
+.recipe-result-prompt {
+  flex: 1 1 180px;
+}
+.recipe-result-toolbar-row > .tooltip {
+  flex-shrink: 0;
+}
+.result-context-label {
+  flex-shrink: 0;
+}
+.carousel-history-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 24px;
+  padding: 0 8px;
+  gap: 8px;
+  color: var(--wb-muted);
+  font-size: 11px;
+}
+@container result-stage (max-width: 720px) {
+  .recipe-result-prompt {
+    flex-basis: 100%;
+    text-align: left;
+  }
+  .recipe-result-toolbar-row {
+    row-gap: 8px;
+  }
+}
+.style-prompt-notice button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 32px;
+  min-height: 32px;
+  white-space: nowrap;
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+  padding-inline: 8px;
+  color: var(--wb-ink);
+}
+.catalog-result-count {
+  color: var(--wb-muted);
+}
+.style-card-actions {
+  position: absolute;
+  inset-inline: 8px;
+  bottom: 42px;
+  z-index: 35;
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+}
+.style-card-actions button {
+  background: var(--wb-panel);
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+}
+.catalog-hover-actions,
+.style-card-favorite,
+.cs-option-wrap > :is(.cs-peek, .cs-favorite-option, .cs-prompt-action) {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease;
+}
+.group:hover .catalog-hover-actions,
+.group:focus-within .catalog-hover-actions,
+.style-preset-tile:hover .style-card-favorite,
+.style-preset-tile:focus-within .style-card-favorite,
+.cs-option-wrap:hover > button,
+.cs-option-wrap:focus-within > button {
+  opacity: 1;
+  pointer-events: auto;
+}
+@media (hover: none), (pointer: coarse) {
+  .catalog-hover-actions,
+  .style-card-favorite,
+  .cs-option-wrap > button {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .catalog-hover-actions {
+    transition: none;
+  }
+}
+.style-prompt-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px;
+  font-size: 12px;
+  color: var(--wb-ink);
+}
+.catalog-card-hit {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  border-radius: inherit;
+  cursor: pointer;
+}
+.catalog-card-hit[aria-pressed='true'] {
+  outline: 2px solid var(--wb-accent);
+  outline-offset: -2px;
+}
+.catalog-selected-mark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 8;
+  color: var(--wb-accent);
+  pointer-events: none;
+}
+.cs-option-wrap {
+  flex-wrap: wrap;
+}
+.cs-prompt-action {
+  min-height: 32px;
+  padding-inline: 5px;
+  font-size: 10px;
+  color: var(--wb-muted);
+}
+.library-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  min-height: 40px;
+  padding: 4px;
+  background: var(--wb-panel);
+  border-radius: var(--wb-radius);
+}
+.library-card-menu {
+  position: relative;
+  margin-inline-start: auto;
+}
+.library-card-menu summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  list-style: none;
+}
+.library-card-menu > div {
+  position: absolute;
+  inset-inline-end: 0;
+  bottom: 100%;
+  z-index: 40;
+  display: grid;
+  min-width: 180px;
+  padding: 4px;
+  background: var(--wb-panel);
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+}
+.studio-experience .library-card-menu button {
+  width: 100%;
+  justify-content: flex-start;
+  padding-inline: 8px;
+}
+.library-card-actions:has(details[open]) {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Provider symbols are transparent; operational state is a separate dot. */
+.provider-brand-well {
+  border: 0;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--wb-ink);
+}
+.provider-mark {
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: transparent !important;
+}
+.provider-mark-monochrome {
+  display: block;
+  background: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+.carousel-top-toolbar {
+  min-height: 56px;
+  padding-block: 8px;
+}
+.carousel-top-toolbar > div {
+  min-width: 0;
+}
+
+.result-view-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+@container result-stage (max-width: 720px) {
+  .result-view-controls {
+    flex-basis: 100%;
+  }
+  .recipe-result-prompt {
+    display: none;
+  }
+  .recipe-result-toolbar .recipe-result-background {
+    margin-inline-start: 0;
+  }
+}
+
+.paged-style-catalog {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
+}
+.paged-style-catalog-scroll {
+  min-height: 0;
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+.paged-style-grid {
+  display: grid;
+  gap: 12px;
+}
+.paged-style-catalog h3 {
+  margin-block: 12px 8px;
+  font-size: 12px;
+  color: var(--wb-muted);
+}
+.style-card-loading {
+  aspect-ratio: 3 / 4;
+  background: var(--wb-well);
+  border: 1px solid var(--wb-line);
+  border-radius: var(--wb-radius);
+}
+
+.carousel-viewer {
+  padding-top: 92px;
+  container-type: inline-size;
+  container-name: expanded-viewer;
+}
+.carousel-top-toolbar {
+  gap: 4px;
+  padding-block: 4px;
+}
+.carousel-viewer-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 40px;
+}
+.carousel-image-context {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--wb-muted);
+  font-size: 12px;
+}
+.carousel-image-actions,
+.carousel-view-tools,
+.carousel-background-controls,
+.carousel-zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.carousel-view-tools {
+  gap: 12px;
+}
+.carousel-zoom-level {
+  min-width: 48px;
+  height: 32px;
+  border-radius: var(--wb-radius);
+  text-align: center;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--wb-muted);
+  background: color-mix(in srgb, var(--wb-ink) 6%, transparent);
+}
+.carousel-zoom-level:hover,
+.carousel-zoom-level:focus-visible {
+  color: var(--wb-ink);
+  background: color-mix(in srgb, var(--wb-ink) 10%, transparent);
+}
+.carousel-top-toolbar [aria-label^='Open image'] {
+  cursor: grab;
+}
+.carousel-top-toolbar [data-dragging='true'] {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+  touch-action: pan-y;
+}
+.carousel-background-controls button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--wb-border);
+  border-radius: var(--wb-radius);
+}
+.carousel-background-controls button[aria-pressed='true'] {
+  outline: 2px solid var(--wb-accent);
+  outline-offset: -2px;
+}
+[data-viewer-background='dark'] {
+  background: #111;
+}
+[data-viewer-background='light'] {
+  background: #f4f4f4;
+}
+[data-viewer-background='checkered'] {
+  background: repeating-conic-gradient(#ccc 0% 25%, #fff 0% 50%) 0 / 16px 16px;
+}
+@container expanded-viewer (max-width: 720px) {
+  .carousel-viewer-controls {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .carousel-view-tools {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 720px) {
+  .carousel-viewer {
+    padding-top: 132px;
+  }
+  .carousel-count {
+    font-size: 10px;
+  }
+}
+
+/* Card actions live below the image, with no overlapping hover targets. */
+.style-preset-tile .style-card-media {
+  position: absolute;
+  inset: 0 0 62px;
+  overflow: hidden;
+  background: var(--wb-well);
+}
+.style-card-image-hit {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.style-card-selection-mark {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--wb-bg);
+  background: var(--wb-ink);
+  box-shadow: 0 1px 4px #0005;
+}
+.style-preset-tile .style-tile-caption {
+  position: absolute;
+  inset: auto 0 30px;
+  height: 32px;
+  padding: 5px 8px;
+  background: var(--wb-panel);
+  color: var(--wb-ink);
+  text-shadow: none;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.style-preset-tile .style-card-actions {
+  inset: auto 0 0;
+  height: 30px;
+  padding: 2px 5px;
+  justify-content: space-between;
+  gap: 2px;
+  background: var(--wb-panel);
+  border-top: 1px solid var(--wb-line);
+}
+.studio-experience .style-card-actions button {
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  min-height: 26px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--wb-muted);
+  box-shadow: none;
+}
+.studio-experience .style-card-actions button:is(:hover, :focus-visible) {
+  color: var(--wb-ink);
+  background: var(--wb-well);
+}
+.style-card-actions button[aria-pressed='true'] {
+  color: var(--wb-accent);
+}
+.style-detail-variants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 8px;
 }

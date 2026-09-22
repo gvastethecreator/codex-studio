@@ -12,15 +12,11 @@
   "portability": {
     "target": "file",
     "verified": false,
-    "notes": [
-      "PLANTILLA: todavía no hay exportación ni pruebas."
-    ]
+    "notes": ["PLANTILLA: todavía no hay exportación ni pruebas."]
   },
   "scope": {
     "coverage": "partial",
-    "included": [
-      "replace-view-id"
-    ],
+    "included": ["replace-view-id"],
     "excluded": []
   },
   "views": [

@@ -297,7 +297,7 @@ describe('normalizeGenerationConfigForCodexModels', () => {
 });
 
 describe('workspace recipe drafts', () => {
-  it('restores each prompt and references without sharing them with another recipe', async () => {
+  it('restores each prompt while sharing references across workspace recipes', async () => {
     const { result, rerender } = renderHook(
       ({ scopeKey }) => useGenerationConfig({ log: vi.fn(), scopeKey }),
       { initialProps: { scopeKey: 'workspace:styles' } },
@@ -316,10 +316,15 @@ describe('workspace recipe drafts', () => {
     );
     rerender({ scopeKey: 'workspace:camera' });
     expect(result.current.generationConfig.prompt).toBe('');
-    expect(result.current.generationConfig.attachments).toEqual([]);
+    expect(result.current.generationConfig.attachments[0]?.id).toBe('reference');
     act(() => result.current.updateGenerationConfig('prompt', 'Overhead view'));
+    act(() => result.current.updateAttachment('reference', { strength: 0.75 }));
     rerender({ scopeKey: 'workspace:styles' });
     expect(result.current.generationConfig.prompt).toBe('Watercolor scene');
     expect(result.current.generationConfig.attachments[0]?.id).toBe('reference');
+    expect(result.current.generationConfig.attachments[0]?.strength).toBe(0.75);
+    act(() => result.current.handleRemoveAttachment('reference'));
+    rerender({ scopeKey: 'workspace:camera' });
+    expect(result.current.generationConfig.attachments).toEqual([]);
   });
 });

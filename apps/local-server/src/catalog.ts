@@ -9,6 +9,7 @@ import type { CatalogCommandFilter, CatalogWorkspaceSummary } from '../../../pac
 
 export interface CatalogImage {
   id: string;
+  providerId?: string | null;
   libraryId: string;
   filePath: string;
   thumbnailPath: string | null;
@@ -99,6 +100,7 @@ function mapCatalogImage(
   const summary = options.summary === true;
   return {
     id: row.id,
+    providerId: row.provider_id ?? null,
     libraryId: row.library_id,
     filePath: row.file_path,
     thumbnailPath: row.thumbnail_path,
@@ -200,7 +202,11 @@ export function registerCatalogImage(input: {
 }
 
 export function getCatalogImage(id: string) {
-  const row = getDb().query('SELECT * FROM catalog_images WHERE id = ?').get(id);
+  const row = getDb()
+    .query(
+      'SELECT *, (SELECT provider_id FROM jobs WHERE jobs.id = catalog_images.job_id) AS provider_id FROM catalog_images WHERE id = ?',
+    )
+    .get(id);
   return row ? mapCatalogImage(row, { includeGenerationConfig: true }) : null;
 }
 
@@ -219,8 +225,10 @@ export function getCatalogImageByJobId(jobId: string, filePath?: string | null) 
 
 function queryCatalogInternal(
   filters: {
+    id?: string;
     libraryId?: string | null;
     workspaceId?: string | null;
+    recipeId?: string | null;
     jobId?: string | null;
     batchId?: string | null;
     favorite?: boolean;
@@ -233,6 +241,10 @@ function queryCatalogInternal(
 ): CatalogPage {
   const clauses: string[] = [];
   const params: any[] = [];
+  if (filters.id) {
+    clauses.push('id = ?');
+    params.push(filters.id);
+  }
   if (filters.libraryId) {
     clauses.push('library_id = ?');
     params.push(filters.libraryId);
@@ -241,6 +253,13 @@ function queryCatalogInternal(
   if (workspaceClause) {
     clauses.push(workspaceClause.clause);
     params.push(...workspaceClause.params);
+  }
+  if (filters.recipeId !== undefined) {
+    if (filters.recipeId === null) clauses.push("(recipe_id IS NULL OR recipe_id = '')");
+    else {
+      clauses.push('recipe_id = ?');
+      params.push(filters.recipeId);
+    }
   }
   if (filters.jobId) {
     clauses.push('job_id = ?');
@@ -273,7 +292,7 @@ function queryCatalogInternal(
     .query(
       `SELECT ${
         options.includeGenerationConfig ? '*' : CATALOG_IMAGE_SUMMARY_COLUMNS
-      } FROM catalog_images ${where} ORDER BY created_at DESC LIMIT ? OFFSET ?`,
+      }, (SELECT provider_id FROM jobs WHERE jobs.id = catalog_images.job_id) AS provider_id FROM catalog_images ${where} ORDER BY created_at DESC, id DESC LIMIT ? OFFSET ?`,
     )
     .all(...params, limit, offset)
     .map((row) => mapCatalogImage(row, options));

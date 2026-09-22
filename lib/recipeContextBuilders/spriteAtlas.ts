@@ -21,6 +21,8 @@ function buildSpriteAtlasContext(params: RecipeContextParams) {
     task_id: 'SPRITE_ATLAS_WORKFLOW',
     asset_kind: contract.assetKind,
     extraction_mode: contract.extractionMode,
+    workflow_lane: contract.workflowLane,
+    frame_semantics: contract.frameSemantics,
     preset: contract.presetId,
     camera: contract.camera,
     style: contract.customStyle || contract.stylePreset,
@@ -44,9 +46,11 @@ function buildSpriteAtlasContext(params: RecipeContextParams) {
       'Target: Runtime-ready game atlas workflow.',
       `Context: ${JSON.stringify(recipeSchema, null, 2)}`,
       `Rows: ${summarizeRows(contract) || 'custom rows required before generation.'}`,
+      `Frame semantics: ${contract.frameSemantics}. Treat slots as ${contract.frameSemantics === 'temporal' ? 'ordered motion phases' : contract.frameSemantics === 'tiles' ? 'adjacent runtime tiles' : 'independent items or variants'}.`,
       'Output intent: one row strip per state before extraction, then transparent frames, atlas PNG, and manifest.json.frame_layout.',
       'Do not generate a whole atlas as one final image unless importing an existing sheet.',
       'Keep every row isolated on a clean alpha-safe or chroma-safe background.',
+      'Preserve identity, camera, scale, pivot, and cell occupancy across every row. Do not rotate individual cells.',
     ].join('\n'),
   );
 }

@@ -14,6 +14,8 @@ describe('studioSettings', () => {
       defaultOutputMode: 'studio_library',
       autoDetectOutputSources: true,
       commandCenterCompactMode: false,
+      intentionalStylesV1: false,
+      showWorkspaceHistoryInCarousel: true,
       preferredLibraryId: null,
       preferredOutputPath: null,
       outputOrganization: {
@@ -62,6 +64,7 @@ describe('studioSettings', () => {
       {
         defaultProviderId: 'comfy',
         commandCenterCompactMode: true,
+        showWorkspaceHistoryInCarousel: false,
         preferredOutputPath: 'D:/DEV/codex-studio/outputs',
         outputOrganization: {
           subfolderTokens: ['date', 'model', 'recipe', 'invalid'],
@@ -80,6 +83,14 @@ describe('studioSettings', () => {
 
     expect(settings.defaultProviderId).toBe('comfy');
     expect(settings.commandCenterCompactMode).toBe(true);
+    expect(settings.showWorkspaceHistoryInCarousel).toBe(false);
+    expect(mergeEditableStudioSettingsPatch(settings, {}).showWorkspaceHistoryInCarousel).toBe(
+      false,
+    );
+    expect(
+      mergeEditableStudioSettingsPatch(createDefaultEditableStudioSettings(), {})
+        .showWorkspaceHistoryInCarousel,
+    ).toBe(true);
     expect(settings.preferredOutputPath).toBe('D:/DEV/codex-studio/outputs');
     expect(settings.outputOrganization).toEqual({
       subfolderTokens: ['date', 'model', 'recipe'],
