@@ -39,12 +39,11 @@ export function StudioStatusBar({
 
   return (
     <footer className="studio-status-bar studio-bar" aria-label="Studio status">
-      <div className="studio-status-providers" role="list" aria-label="Provider status">
+      <ul className="studio-status-providers m-0 list-none p-0" aria-label="Provider status">
         {commandCenter.providerOptions.map((provider) => (
-          <div
+          <li
             key={provider.id}
-            role="listitem"
-            title={provider.tooltip}
+            data-tooltip={provider.tooltip}
             aria-label={`${provider.shortLabel}: ${provider.statusDetail}`}
             className={cn(
               'studio-status-provider',
@@ -58,9 +57,9 @@ export function StudioStatusBar({
               status={provider.status}
             />
             <span className="studio-status-provider-label">{provider.shortLabel}</span>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
 
       <div className="studio-status-spacer" />
 

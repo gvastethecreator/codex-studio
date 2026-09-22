@@ -1,5 +1,7 @@
 import React from 'react';
 import {
+  IconSparkles,
+  IconLibrary,
   IconTrash as Trash2,
   IconHelpCircle as CircleHelp,
   IconActivity as Activity,
@@ -134,7 +136,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               aria-current={currentView !== 'studio' ? 'page' : undefined}
               onClick={() => onViewChange('recipes')}
             >
-              Create
+              <IconSparkles size={16} aria-hidden="true" /> Create
             </button>
             <CreateWorkflowPicker
               selectedId={isRecipeView ? (activeRecipeAliasId ?? activeRecipe) : null}
@@ -152,7 +154,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               aria-current={currentView === 'studio' ? 'page' : undefined}
               onClick={() => onViewChange('studio')}
             >
-              Library
+              <IconLibrary size={16} aria-hidden="true" /> Library
             </button>
           </nav>
         </div>

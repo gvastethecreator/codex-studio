@@ -14,6 +14,7 @@ import {
   type StyleLayerAvoidRulesMode,
   type StyleLayerFieldId,
 } from './styleLayerComposer';
+import * as Intentional from '../../packages/shared/src/styles/intentional-v1';
 
 interface StyleCompositionInput {
   config: ImageGenerationConfig;
@@ -29,6 +30,7 @@ interface StyleCompositionInput {
   referenceImages: Attachment[];
   generationBlocked: boolean;
   maxSlots: number;
+  intentionalStylesV1?: boolean;
 }
 
 /** Owns selected layers and their provider-independent recipe output. */
@@ -39,8 +41,11 @@ export function useStyleComposition({
   referenceImages,
   generationBlocked,
   maxSlots,
+  intentionalStylesV1 = false,
 }: StyleCompositionInput) {
   const [selectedStyles, setSelectedStyles] = useState<SelectedStyleSlot[]>([]);
+  const [intentionalMode, setIntentionalMode] = useState<Intentional.Mode>('generate');
+  const [compileIssues, setCompileIssues] = useState<Intentional.Issue[]>([]);
   const didRestoreSelection = useRef(false);
   useEffect(() => {
     if (didRestoreSelection.current) return;
@@ -135,6 +140,7 @@ export function useStyleComposition({
   );
   useEffect(() => {
     if (!didRestoreSelection.current && selectedStyles.length === 0) return;
+    if (intentionalStylesV1) return;
     updateConfig('recipeId', 'styles');
     updateConfig('recipeParams', {
       ...registeredStyleGenerationPlan?.recipeParams,
@@ -142,7 +148,84 @@ export function useStyleComposition({
       selectedStyleDraft: selectedStyles,
     });
     updateConfig('recipeContext', '');
-  }, [registeredStyleGenerationPlan, selectedStyles, updateConfig]);
+  }, [intentionalStylesV1, registeredStyleGenerationPlan, selectedStyles, updateConfig]);
+
+  useEffect(() => {
+    if (!intentionalStylesV1) return;
+    if (!didRestoreSelection.current && selectedStyles.length === 0) return;
+    let cancelled = false;
+    updateConfig('recipeId', 'styles');
+    void (async () => {
+      try {
+        const { compileIntentionalStylePlan } = await import('./intentionalStyleCompile');
+        if (cancelled) return;
+        const compiled = await compileIntentionalStylePlan({
+          slots: selectedStyles,
+          prompt: config.prompt || '',
+          attachments: referenceImages,
+          mode: intentionalMode,
+          locks:
+            intentionalMode === 'preserve'
+              ? Intentional.PRESERVE_LOCKS
+              : Intentional.FREE_LAYOUT_LOCKS,
+          variation: Intentional.NO_VARIATION,
+          permissions: { ...Intentional.NO_PERMISSIONS },
+          baseAvoidRules: config.negativePrompt
+            ? config.negativePrompt
+                .split(',')
+                .map((rule) => rule.trim())
+                .filter(Boolean)
+            : [],
+        });
+        if (cancelled) return;
+        setCompileIssues(compiled.issues);
+        updateConfig('recipeParams', {
+          ...compiled.recipeParams,
+          selectedStyleDraft: selectedStyles,
+        });
+        updateConfig('recipeContext', '');
+      } catch (error) {
+        if (cancelled) return;
+        const issues =
+          error instanceof Intentional.CompilationBlocked
+            ? error.issues
+            : [
+                {
+                  severity: 'error' as const,
+                  code: 'COMPILE_FAILED',
+                  message: error instanceof Error ? error.message : 'Style compile failed.',
+                  layerIds: [],
+                },
+              ];
+        setCompileIssues(issues);
+        const message = issues
+          .filter((issue) => issue.severity === 'error')
+          .map((issue) => issue.message)
+          .join(' ');
+        updateConfig('recipeParams', {
+          selectedStyleDraft: selectedStyles,
+          selectedStyles: selectedStyles.map((slot) => ({
+            presetId: slot.preset.id,
+            presetName: slot.preset.displayName || slot.preset.name,
+            enabled: slot.enabled ?? true,
+          })),
+          intentionalCompileError: message,
+        });
+        updateConfig('recipeContext', '');
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    config.negativePrompt,
+    config.prompt,
+    intentionalMode,
+    intentionalStylesV1,
+    referenceImages,
+    selectedStyles,
+    updateConfig,
+  ]);
   const updateSelectedStyleStrength = useCallback((presetId: string, strength: number) => {
     setSelectedStyles((current) =>
       current.map((slot) =>
@@ -234,6 +317,12 @@ export function useStyleComposition({
   }, []);
 
   const handleGenerateSelectedStyles = useCallback(() => {
+    if (intentionalStylesV1) {
+      const error = compileIssues.find((issue) => issue.severity === 'error');
+      if (error || generationBlocked) return;
+      onGenerate(config.prompt?.trim() || undefined, undefined, { preventModal: true });
+      return;
+    }
     const diversityPrompts = [
       'Introduce a noticeably different camera distance and framing from previous renders.',
       'Shift scene energy with a different gesture or action beat while preserving the subject intent.',
@@ -281,6 +370,8 @@ export function useStyleComposition({
     onGenerate,
     referenceImages,
     selectedStyles,
+    compileIssues,
+    intentionalStylesV1,
   ]);
 
   const clear = useCallback(() => setSelectedStyles([]), []);
@@ -313,5 +404,8 @@ export function useStyleComposition({
     removeSelectedStyle,
     moveSelectedStyle,
     handleGenerateSelectedStyles,
+    compileIssues,
+    intentionalMode,
+    setIntentionalMode,
   };
 }

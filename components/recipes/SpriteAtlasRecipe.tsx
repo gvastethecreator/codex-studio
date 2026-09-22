@@ -25,6 +25,7 @@ import {
 } from '../../packages/shared/src/spriteAtlasContracts';
 import type { ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import {
+  composeSpriteAtlas,
   composeSpriteAtlasFixture,
   createSpriteAtlasRowJob,
   createSpriteAtlasRowJobs,
@@ -262,6 +263,12 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   const pipeline = React.useMemo(() => buildPipeline(activeRun), [activeRun]);
   const currentPreset = presets.find((preset) => preset.id === contract.presetId);
   const busy = isBusy || isGenerating;
+  const canCompose = Boolean(
+    activeRun?.rows.length &&
+    activeRun.rows.every(
+      (row) => row.rawPath && (row.status === 'raw_imported' || row.status === 'extracted'),
+    ),
+  );
 
   const filteredPresets = React.useMemo(() => {
     return presets.filter(
@@ -448,6 +455,11 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   const handleComposeFixture = () => {
     if (!activeRun) return;
     void runAction(() => composeSpriteAtlasFixture(activeRun.id), 'Fixture atlas composed.');
+  };
+
+  const handleCompose = () => {
+    if (!activeRun) return;
+    void runAction(() => composeSpriteAtlas(activeRun.id), 'Production atlas composed.');
   };
 
   const handleRunQa = () => {
@@ -791,7 +803,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   <p className="mt-1 truncate font-mono text-[11px] text-[color:var(--wb-muted)]">
                     {activeRun.qa?.mode === 'fixture_smoke'
                       ? 'Fixture check only. Generated rows still require import and validation.'
-                      : 'Generate and import rows. Production atlas composition is not yet available.'}
+                      : `${activeRun.contract.workflowLane} · ${activeRun.contract.frameSemantics} · ${activeRun.contract.camera}`}
                   </p>
                 ) : (
                   <p className="mt-1 text-xs text-[color:var(--wb-muted)]">
@@ -837,6 +849,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   </div>
                 </details>
                 <IconButton
+                  label="Compose imported rows"
+                  onClick={handleCompose}
+                  disabled={busy || !activeRun || !canCompose}
+                  tone="sky"
+                >
+                  <Package size={14} />
+                </IconButton>
+                <IconButton
                   label="Validate artifact"
                   onClick={handleRunQa}
                   disabled={
@@ -857,7 +877,9 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
               <p className="mt-3 text-sm text-[color:var(--wb-ink)]">
                 {activeRun.rows.some((row) => !row.rawPath)
                   ? 'Next: generate and import the missing row images. Select a row to see its prompt and import controls.'
-                  : 'Rows imported. Review their artifacts. Production atlas composition is not available in Studio yet.'}
+                  : activeRun.status === 'composed' || activeRun.status === 'qa_passed'
+                    ? 'Atlas composed. Review the extracted cells, then validate the artifact.'
+                    : 'Rows imported. Compose them into atlas.png and manifest.json.'}
               </p>
             )}
             <div className="mt-3 grid grid-cols-[repeat(auto-fit,minmax(90px,1fr))] gap-1.5">

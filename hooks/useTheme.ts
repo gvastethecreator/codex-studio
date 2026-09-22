@@ -1,4 +1,11 @@
-import React, { createContext, useCallback, useContext, useEffect, useLayoutEffect, useMemo } from 'react';
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+} from 'react';
 
 import {
   APPEARANCE_STORAGE_KEY,
@@ -7,28 +14,21 @@ import {
 } from '../lib/workbenchAmbient';
 import { useLocalStorage } from './useLocalStorage';
 
-const STORAGE_KEY = 'codex-studio-theme-index';
-const LEGACY_STORAGE_KEY = 'chorita-theme-index';
-const BRASS_OFFSET_KEY = 'codex-studio-accent-includes-brass';
+const STORAGE_KEY = 'codex-studio-accent-palette';
 
 export type AccentPalette = {
   name: string;
-  colors: Record<'50' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900' | '950', string>;
+  colors: Record<
+    '50' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900' | '950',
+    string
+  >;
 };
 
-function parseStoredPaletteIndex(value: string | null) {
-  if (!value) return null;
-
-  try {
-    const parsed = JSON.parse(value);
-    return typeof parsed === 'number' && Number.isFinite(parsed) ? parsed : null;
-  } catch {
-    return null;
-  }
-}
-
 export function rgbTripletToHex(rgb: string): string {
-  const [r, g, b] = rgb.trim().split(/\s+/).map((part) => Number.parseInt(part, 10));
+  const [r, g, b] = rgb
+    .trim()
+    .split(/\s+/)
+    .map((part) => Number.parseInt(part, 10));
   const toHex = (channel: number) =>
     Math.max(0, Math.min(255, Number.isFinite(channel) ? channel : 0))
       .toString(16)
@@ -37,28 +37,15 @@ export function rgbTripletToHex(rgb: string): string {
 }
 
 export function accentOnColor(rgb: string): string {
-  const [r, g, b] = rgb.trim().split(/\s+/).map((part) => Number.parseInt(part, 10));
+  const [r, g, b] = rgb
+    .trim()
+    .split(/\s+/)
+    .map((part) => Number.parseInt(part, 10));
   const y = ((r || 0) * 299 + (g || 0) * 587 + (b || 0) * 114) / 1000;
   return y >= 150 ? '#141414' : '#f4f4f4';
 }
 
 export const ACCENT_PALETTES: AccentPalette[] = [
-  {
-    name: 'Brass',
-    colors: {
-      50: '247 243 234',
-      100: '239 232 212',
-      200: '224 212 179',
-      300: '212 196 154',
-      400: '203 184 144',
-      500: '195 178 141',
-      600: '168 148 108',
-      700: '126 110 79',
-      800: '82 72 51',
-      900: '50 44 32',
-      950: '26 23 18',
-    },
-  },
   {
     name: 'Neutral',
     colors: {
@@ -140,22 +127,6 @@ export const ACCENT_PALETTES: AccentPalette[] = [
     },
   },
   {
-    name: 'Emerald',
-    colors: {
-      50: '236 253 245',
-      100: '209 250 229',
-      200: '167 243 208',
-      300: '110 231 183',
-      400: '52 211 153',
-      500: '16 185 129',
-      600: '5 150 105',
-      700: '4 120 87',
-      800: '6 95 70',
-      900: '6 78 59',
-      950: '2 44 34',
-    },
-  },
-  {
     name: 'Cyan',
     colors: {
       50: '236 254 255',
@@ -205,35 +176,6 @@ export const ACCENT_PALETTES: AccentPalette[] = [
   },
 ];
 
-export function readStoredPaletteIndex() {
-  if (typeof window === 'undefined') return 0;
-
-  const stored =
-    parseStoredPaletteIndex(window.localStorage.getItem(STORAGE_KEY)) ??
-    parseStoredPaletteIndex(window.localStorage.getItem(LEGACY_STORAGE_KEY));
-
-  if (stored === null) {
-    try {
-      window.localStorage.setItem(BRASS_OFFSET_KEY, '1');
-    } catch {
-      // noop
-    }
-    return 0;
-  }
-
-  try {
-    if (window.localStorage.getItem(BRASS_OFFSET_KEY) === '1') {
-      return stored;
-    }
-    const shifted = stored + 1;
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(shifted));
-    window.localStorage.setItem(BRASS_OFFSET_KEY, '1');
-    return shifted;
-  } catch {
-    return stored + 1;
-  }
-}
-
 export function applyAccentPaletteToDocument(
   palette: AccentPalette,
   root: CSSStyleDeclaration | HTMLElement = document.documentElement,
@@ -262,40 +204,35 @@ type ThemeContextValue = {
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 function useThemeState(): ThemeContextValue {
-  const [currentPaletteIndex, setCurrentPaletteIndex] = useLocalStorage<number>(
-    STORAGE_KEY,
-    readStoredPaletteIndex(),
-  );
+  const [storedPalette, setStoredPalette] = useLocalStorage<string>(STORAGE_KEY, 'Neutral');
+  const palette =
+    ACCENT_PALETTES.find((entry) => entry.name === storedPalette) ?? ACCENT_PALETTES[0];
+  const initialized = useRef(false);
   const [appearance, setAppearance] = useLocalStorage<WorkbenchAppearance>(
     APPEARANCE_STORAGE_KEY,
-    typeof window === 'undefined' ? 'dark' : (() => {
-      try {
-        const raw = window.localStorage.getItem(APPEARANCE_STORAGE_KEY);
-        if (!raw) return 'dark';
-        const parsed = JSON.parse(raw) as unknown;
-        return parsed === 'light' ? 'light' : 'dark';
-      } catch {
-        return 'dark';
-      }
-    })(),
-  );
-
-  const applyTheme = useCallback(
-    (index: number) => {
-      const safeIndex = ((index % ACCENT_PALETTES.length) + ACCENT_PALETTES.length) % ACCENT_PALETTES.length;
-      applyAccentPaletteToDocument(ACCENT_PALETTES[safeIndex]);
-      setCurrentPaletteIndex(safeIndex);
-    },
-    [setCurrentPaletteIndex],
+    typeof window === 'undefined'
+      ? 'dark'
+      : (() => {
+          try {
+            const raw = window.localStorage.getItem(APPEARANCE_STORAGE_KEY);
+            if (!raw) return 'dark';
+            const parsed = JSON.parse(raw) as unknown;
+            return parsed === 'light' ? 'light' : 'dark';
+          } catch {
+            return 'dark';
+          }
+        })(),
   );
 
   const cycleTheme = useCallback(() => {
-    setCurrentPaletteIndex((prevIndex) => {
-      const nextIndex = (prevIndex + 1) % ACCENT_PALETTES.length;
-      applyAccentPaletteToDocument(ACCENT_PALETTES[nextIndex]);
-      return nextIndex;
+    setStoredPalette((current) => {
+      const index = Math.max(
+        0,
+        ACCENT_PALETTES.findIndex((entry) => entry.name === current),
+      );
+      return ACCENT_PALETTES[(index + 1) % ACCENT_PALETTES.length].name;
     });
-  }, [setCurrentPaletteIndex]);
+  }, [setStoredPalette]);
 
   const toggleAppearance = useCallback(() => {
     setAppearance((current) => {
@@ -305,35 +242,63 @@ function useThemeState(): ThemeContextValue {
     });
   }, [setAppearance]);
 
-  useEffect(() => {
-    try {
-      if (window.localStorage.getItem(LEGACY_STORAGE_KEY) !== null) {
-        window.localStorage.removeItem(LEGACY_STORAGE_KEY);
-      }
-    } catch {
-      // noop: theme persistence is non-critical
-    }
-  }, []);
-
   useLayoutEffect(() => {
     applyWorkbenchAmbientToDocument(document, appearance);
   }, [appearance]);
 
-  useEffect(() => {
-    applyTheme(currentPaletteIndex);
-  }, [applyTheme, currentPaletteIndex]);
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+    if (!initialized.current || reducedMotion?.matches) {
+      initialized.current = true;
+      applyAccentPaletteToDocument(palette);
+      return;
+    }
 
-  const safeIndex =
-    ((currentPaletteIndex % ACCENT_PALETTES.length) + ACCENT_PALETTES.length) % ACCENT_PALETTES.length;
+    // Interpolate shared tokens once per frame, including portal and SVG consumers.
+    // A new click starts from the displayed colors and cancels the previous frame.
+    const computed = getComputedStyle(root);
+    const shades = Object.entries(palette.colors).map(([shade, target]) => ({
+      shade,
+      from: computed.getPropertyValue(`--accent-${shade}`).trim().split(/\s+/).map(Number),
+      to: target.split(' ').map(Number),
+    }));
+    const start = performance.now();
+    let frame = 0;
+    const finish = () => {
+      cancelAnimationFrame(frame);
+      applyAccentPaletteToDocument(palette);
+    };
+    const tick = (now: number) => {
+      const progress = Math.max(0, Math.min(1, (now - start) / 280));
+      const eased = 1 - (1 - progress) ** 3;
+      const colors = Object.fromEntries(
+        shades.map(({ shade, from, to }) => [
+          shade,
+          to
+            .map((channel, index) => Math.round(from[index] + (channel - from[index]) * eased))
+            .join(' '),
+        ]),
+      ) as AccentPalette['colors'];
+      applyAccentPaletteToDocument({ name: palette.name, colors });
+      if (progress < 1) frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+    reducedMotion?.addEventListener('change', finish);
+    return () => {
+      cancelAnimationFrame(frame);
+      reducedMotion?.removeEventListener('change', finish);
+    };
+  }, [palette]);
 
   return useMemo(
     () => ({
       appearance,
-      currentTheme: ACCENT_PALETTES[safeIndex].name,
+      currentTheme: palette.name,
       cycleTheme,
       toggleAppearance,
     }),
-    [appearance, cycleTheme, safeIndex, toggleAppearance],
+    [appearance, cycleTheme, palette.name, toggleAppearance],
   );
 }
 

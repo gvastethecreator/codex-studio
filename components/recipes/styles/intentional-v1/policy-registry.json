@@ -1,0 +1,2362 @@
+{
+  "SP01-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "photography",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "photography"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "waxy retouching",
+        "field": "global"
+      },
+      {
+        "text": "double catchlights from inconsistent light sources",
+        "field": "global"
+      },
+      {
+        "text": "sharpening halos",
+        "field": "global"
+      },
+      {
+        "text": "painted-over surface detail",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Studio Headshot",
+    "packId": "pack_01"
+  },
+  "SP02-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "photography",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "photography"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "crushed subject detail",
+        "field": "global"
+      },
+      {
+        "text": "uniform gray wash",
+        "field": "global"
+      },
+      {
+        "text": "unmotivated slatted shadows",
+        "field": "global"
+      },
+      {
+        "text": "oversized film scratches",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Film Noir",
+    "packId": "pack_02"
+  },
+  "SP03-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "cgi",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "cgi"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "clipped spectral bloom",
+        "field": "global"
+      },
+      {
+        "text": "uniform plastic gloss",
+        "field": "global"
+      },
+      {
+        "text": "floating contact shadows",
+        "field": "global"
+      },
+      {
+        "text": "faceting on intended smooth geometry",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Spectral CGI Polish",
+    "packId": "pack_03"
+  },
+  "SP04-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "automatic speech balloons",
+        "field": "global"
+      },
+      {
+        "text": "random comic lettering",
+        "field": "global"
+      },
+      {
+        "text": "uniform dot noise",
+        "field": "global"
+      },
+      {
+        "text": "unrequested superhero costume",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Golden Age Comic",
+    "packId": "pack_04"
+  },
+  "SP06-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "embossed photo filter",
+        "field": "global"
+      },
+      {
+        "text": "impasto on every edge",
+        "field": "global"
+      },
+      {
+        "text": "muddy mixed pigments",
+        "field": "global"
+      },
+      {
+        "text": "unrequested decorative frame",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Oil Painting (Classic)",
+    "packId": "pack_06"
+  },
+  "SP08-001": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "color_and_tone", "texture_and_material"],
+    "requires": "wardrobe",
+    "medium": "wardrobe",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "floating trims",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "impossible seam joins",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested body reshaping",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "ornament covering garment construction",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Haute Couture",
+    "packId": "pack_08"
+  },
+  "SP09-001": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone", "texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "grain crossing unrelated objects",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "varnished plastic coating",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "identical repeated knots",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "wood grain pasted over eyes",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Oak Wood (Raw)",
+    "packId": "pack_09"
+  },
+  "SP10-001": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "view",
+        "value": "multi-view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "random polygon filter",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "facets without structural relationships",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "uniform low-poly CGI gloss",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Cubism",
+    "packId": "pack_10"
+  },
+  "SP12-001": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "pixel-art",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "view",
+        "value": "side-on"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "mixed pixel grids",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "unrequested HUD",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "copied official character",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "poster composition replacing gameplay view",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Katana Zero Neo-Noir Sideview",
+    "packId": "pack_12"
+  },
+  "SP14-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "random occult symbol collage",
+        "field": "global"
+      },
+      {
+        "text": "mandatory halo disk",
+        "field": "global"
+      },
+      {
+        "text": "muddy black crush",
+        "field": "global"
+      },
+      {
+        "text": "gold texture on every surface",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Eclipse Reliquary Processional",
+    "packId": "pack_14"
+  },
+  "SP15-001": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "texture_and_material",
+      "rendering_and_quality"
+    ],
+    "requires": "design",
+    "medium": "illustration",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "decorative gears without function",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "dense rivet wallpaper",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unmotivated machinery background",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "uniform dirt overlay",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Brass Gear Commons",
+    "packId": "pack_15"
+  },
+  "SP17-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform torn-cloth costume",
+        "field": "global"
+      },
+      {
+        "text": "dense soot speckles",
+        "field": "global"
+      },
+      {
+        "text": "glossy fantasy splash finish",
+        "field": "global"
+      },
+      {
+        "text": "crushed overlapping silhouettes",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 2,
+    "name": "Ashen Relic Fantasy",
+    "packId": "pack_17"
+  },
+  "SP18-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "scratch noise everywhere",
+        "field": "global"
+      },
+      {
+        "text": "continuous neon rim",
+        "field": "global"
+      },
+      {
+        "text": "black masses hiding identity",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Obsidian Editorial",
+    "packId": "pack_18"
+  },
+  "SP18-002": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform vector stroke",
+        "field": "global"
+      },
+      {
+        "text": "excess construction marks",
+        "field": "global"
+      },
+      {
+        "text": "blank generic facial features",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Ivory Contour",
+    "packId": "pack_18"
+  },
+  "SP18-003": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "plastic beveled paper",
+        "field": "global"
+      },
+      {
+        "text": "shadows at inconsistent depths",
+        "field": "global"
+      },
+      {
+        "text": "identical torn-edge pattern",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Cut-Paper Geometry",
+    "packId": "pack_18"
+  },
+  "SP18-004": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested dimension labels",
+        "field": "global"
+      },
+      {
+        "text": "wobbly structural joints",
+        "field": "global"
+      },
+      {
+        "text": "wash hiding construction",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Architectural Ink Wash",
+    "packId": "pack_18"
+  },
+  "SP18-005": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "automatic chibi proportions",
+        "field": "global"
+      },
+      {
+        "text": "decorative clutter",
+        "field": "global"
+      },
+      {
+        "text": "heavy texture covering contour",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Heavy-Line Storybook",
+    "packId": "pack_18"
+  },
+  "SP18-006": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested technical labels",
+        "field": "global"
+      },
+      {
+        "text": "registration errors on identifying features",
+        "field": "global"
+      },
+      {
+        "text": "fake exploded parts",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Technical Screenprint",
+    "packId": "pack_18"
+  },
+  "SP18-007": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "generic anime face replacement",
+        "field": "global"
+      },
+      {
+        "text": "airbrush everywhere",
+        "field": "global"
+      },
+      {
+        "text": "glossy plastic skin",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Soft Cel Drama",
+    "packId": "pack_18"
+  },
+  "SP18-008": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "hatch mesh obscuring identity",
+        "field": "global"
+      },
+      {
+        "text": "automatic antique border",
+        "field": "global"
+      },
+      {
+        "text": "uniform line density",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Etched Silhouette",
+    "packId": "pack_18"
+  },
+  "SP18-009": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested cover typography",
+        "field": "global"
+      },
+      {
+        "text": "automatic weapon pose",
+        "field": "global"
+      },
+      {
+        "text": "over-rendered background clutter",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Bold Pulp Shadows",
+    "packId": "pack_18"
+  },
+  "SP18-010": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "generic beauty retouch",
+        "field": "global"
+      },
+      {
+        "text": "uniform hard outline",
+        "field": "global"
+      },
+      {
+        "text": "microtexture over every surface",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Quiet Graphic Realism",
+    "packId": "pack_18"
+  },
+  "SP18-011": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "chalk haze on all values",
+        "field": "global"
+      },
+      {
+        "text": "muddy mixed pigments",
+        "field": "global"
+      },
+      {
+        "text": "plastic specular highlights",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Mineral Gouache",
+    "packId": "pack_18"
+  },
+  "SP18-012": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "opaque plastic watercolor",
+        "field": "global"
+      },
+      {
+        "text": "blooms on every surface",
+        "field": "global"
+      },
+      {
+        "text": "random washed-out facial details",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Transparent Watercolor",
+    "packId": "pack_18"
+  },
+  "SP18-013": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "drawing",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "drawing"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "scribble obscuring identity",
+        "field": "global"
+      },
+      {
+        "text": "uniform digital grit",
+        "field": "global"
+      },
+      {
+        "text": "white outline around every form",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Dry-Brush Charcoal",
+    "packId": "pack_18"
+  },
+  "SP18-014": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "misregistration at key features",
+        "field": "global"
+      },
+      {
+        "text": "extra saturated inks",
+        "field": "global"
+      },
+      {
+        "text": "large random paper stains",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Two-Ink Risograph",
+    "packId": "pack_18"
+  },
+  "SP18-015": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "hairline carving everywhere",
+        "field": "global"
+      },
+      {
+        "text": "random scratch texture",
+        "field": "global"
+      },
+      {
+        "text": "solid ink burying key features",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Linocut Massing",
+    "packId": "pack_18"
+  },
+  "SP18-016": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "thick impasto",
+        "field": "global"
+      },
+      {
+        "text": "automatic gold icon background",
+        "field": "global"
+      },
+      {
+        "text": "uniform stroke stripes",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Egg-Tempera Planes",
+    "packId": "pack_18"
+  },
+  "SP18-017": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested wall setting",
+        "field": "global"
+      },
+      {
+        "text": "heavy crack overlay",
+        "field": "global"
+      },
+      {
+        "text": "missing chunks over key features",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Fresco Chalk",
+    "packId": "pack_18"
+  },
+  "SP18-018": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "drawing",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "drawing"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "multiple competing spot colors",
+        "field": "global"
+      },
+      {
+        "text": "unrequested notebook border",
+        "field": "global"
+      },
+      {
+        "text": "graphite smudge hiding identity",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Pencil and Spot Color",
+    "packId": "pack_18"
+  },
+  "SP18-019": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "moire patterns",
+        "field": "global"
+      },
+      {
+        "text": "dots covering all highlights",
+        "field": "global"
+      },
+      {
+        "text": "unrequested headline typography",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Silk-Screen Halftone",
+    "packId": "pack_18"
+  },
+  "SP18-020": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "featureless black fields",
+        "field": "global"
+      },
+      {
+        "text": "automatic moon scenery",
+        "field": "global"
+      },
+      {
+        "text": "glow fog obscuring depth",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Glazed Nocturne",
+    "packId": "pack_18"
+  },
+  "SP18-021": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone"],
+    "requires": null,
+    "medium": "palette",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "adjacent dark forms merging",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "important pale detail clipping",
+        "field": "color_and_tone"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Bone and Charcoal",
+    "packId": "pack_18"
+  },
+  "SP18-022": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["lighting_and_shadow"],
+    "requires": null,
+    "medium": "lighting",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "flat volume-free illumination",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "inconsistent catchlights",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "missing contact shadows",
+        "field": "lighting_and_shadow"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Overcast Softbox",
+    "packId": "pack_18"
+  },
+  "SP18-023": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["lighting_and_shadow"],
+    "requires": null,
+    "medium": "lighting",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "continuous neon outline",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "rim on occluded edges",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "interior details crushed to black",
+        "field": "lighting_and_shadow"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Hard Rim Separation",
+    "packId": "pack_18"
+  },
+  "SP18-024": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone"],
+    "requires": null,
+    "medium": "palette",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "orange skin clipping",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "teal tint on every surface",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "lost identifying colors",
+        "field": "color_and_tone"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Amber Cyan Separation",
+    "packId": "pack_18"
+  },
+  "SP18-025": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone"],
+    "requires": null,
+    "medium": "palette",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "merged adjacent color regions",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "posterized tonal bands",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "muddy middle values",
+        "field": "color_and_tone"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Silver Monochrome",
+    "packId": "pack_18"
+  },
+  "SP18-026": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone"],
+    "requires": null,
+    "medium": "palette",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "purple cast on every surface",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "washed-out identifying accents",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "violet fog overlay",
+        "field": "color_and_tone"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Dusk Lavender",
+    "packId": "pack_18"
+  },
+  "SP18-027": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["lighting_and_shadow"],
+    "requires": null,
+    "medium": "lighting",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "crushed important shadow detail",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "multiple conflicting key directions",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "automatic candle props",
+        "field": "lighting_and_shadow"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Single-Key Chiaroscuro",
+    "packId": "pack_18"
+  },
+  "SP18-028": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["lighting_and_shadow"],
+    "requires": null,
+    "medium": "lighting",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "white haze erasing form",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "clipped pale edges",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "missing grounding shadows",
+        "field": "lighting_and_shadow"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "High-Key Chalk Light",
+    "packId": "pack_18"
+  },
+  "SP18-029": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone"],
+    "requires": "accent",
+    "medium": "palette",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "accent color flooding the frame",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "arbitrary eye recoloring",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "lost functional color coding",
+        "field": "color_and_tone"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Muted Signal Accent",
+    "packId": "pack_18"
+  },
+  "SP18-030": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["lighting_and_shadow"],
+    "requires": null,
+    "medium": "lighting",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "double conflicting shadows",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "orange-blue clipping",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "unmotivated colored halos",
+        "field": "lighting_and_shadow"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Warm Bounce Cool Key",
+    "packId": "pack_18"
+  },
+  "SP18-031": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone", "texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "uniform black coating",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "oversized pores",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "stone leaking onto excluded surfaces",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Basalt Matte",
+    "packId": "pack_18"
+  },
+  "SP18-032": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone", "texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "chrome mirror instead of satin",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "random brush directions",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "metal leaking outside target",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Brushed Titanium",
+    "packId": "pack_18"
+  },
+  "SP18-033": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone", "texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "glossy clear coat",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "waxy skin-like translucency",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested crack network",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Unglazed Porcelain",
+    "packId": "pack_18"
+  },
+  "SP18-034": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone", "texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "regular golf-ball dimples",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "uniform green patina",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "deep dents changing silhouette",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Hammered Copper",
+    "packId": "pack_18"
+  },
+  "SP18-035": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "shaggy fur instead of felt",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "knitted loops",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "fuzzy halo erasing silhouette",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Dense Wool Felt",
+    "packId": "pack_18"
+  },
+  "SP18-036": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone", "texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "latex gloss",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "random torn leather",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "uniform crack wallpaper",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Worn Black Leather",
+    "packId": "pack_18"
+  },
+  "SP18-037": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "automatic wax drips",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "glass transparency",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "melting without permission",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Translucent Wax",
+    "packId": "pack_18"
+  },
+  "SP18-038": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone", "texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "large dirt stains",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "repeating fleck pattern",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested torn holes",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Recycled Pulp",
+    "packId": "pack_18"
+  },
+  "SP18-039": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "uniform chipped-paint overlay",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "plastic shell appearance",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "random exposed metal patches",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Enameled Steel",
+    "packId": "pack_18"
+  },
+  "SP18-040": {
+    "schemaVersion": 1,
+    "kind": "modifier",
+    "defaultFields": ["color_and_tone", "texture_and_material"],
+    "requires": "materialTarget",
+    "medium": "material",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "chrome shine",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "rubber-like deformation",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "featureless dark coating",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Graphite Ceramic",
+    "packId": "pack_18"
+  },
+  "SP18-041": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "view",
+        "value": "top-down"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "diamond-isometric ground",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "visible horizon",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "inconsistent debris scale",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "True Top-Down Ground",
+    "packId": "pack_18"
+  },
+  "SP18-042": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "view",
+        "value": "oblique-overhead"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "diamond tile beneath prop",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "floating ground anchor",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "unrequested environmental scene",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Oblique RPG Prop",
+    "packId": "pack_18"
+  },
+  "SP18-043": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "view",
+        "value": "right-facing"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "clipped extremities",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "unrequested sprite grid",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "duplicated limbs",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Right-Facing Action Sprite",
+    "packId": "pack_18"
+  },
+  "SP18-044": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "view",
+        "value": "side-on"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested HUD",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "promotional title layout",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "inconsistent actor scale",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Side-On Playable Capture",
+    "packId": "pack_18"
+  },
+  "SP18-045": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "layout",
+        "value": "isolated-icon"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested item frame",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "display pedestal",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "cropped item silhouette",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Clean Inventory Icon",
+    "packId": "pack_18"
+  },
+  "SP18-046": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "lighting_and_shadow",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "view",
+        "value": "top-down"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "perspective material sample",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "large focal highlight",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "baked directional shadow",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Seamless Surface Study",
+    "packId": "pack_18"
+  },
+  "SP18-047": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "layout",
+        "value": "two-view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "mismatched subject designs",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "unrequested extra views",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "decorative typography",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Two-View Design Plate",
+    "packId": "pack_18"
+  },
+  "SP18-048": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "layout",
+        "value": "product"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "invented product features",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "lifestyle props",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "cropped functional details",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Neutral Product Capture",
+    "packId": "pack_18"
+  },
+  "SP18-049": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "camera_and_composition",
+      "rendering_and_quality"
+    ],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "view",
+        "value": "orthographic"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "invented dimensions",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "fake technical labels",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "perspective distortion in orthographic view",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Flat Technical Plate",
+    "packId": "pack_18"
+  },
+  "SP18-050": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": ["camera_and_composition"],
+    "requires": "structure",
+    "medium": "representation",
+    "constraints": [
+      {
+        "field": "camera_and_composition",
+        "group": "layout",
+        "value": "wide"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "invented filler actors",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "automatic epic sunset",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "incoherent wide-angle object scale",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Wide Spatial Establishing",
+    "packId": "pack_18"
+  },
+  "SP18-051": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "color_and_tone", "texture_and_material"],
+    "requires": "wardrobe",
+    "medium": "wardrobe",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "identical ragged robes",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested gore",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "accessories without function",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Grimdark Tailoring",
+    "packId": "pack_18"
+  },
+  "SP18-052": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "texture_and_material"],
+    "requires": "wardrobe",
+    "medium": "wardrobe",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "unrequested religious symbols",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "gravity-defying folds",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "automatic relic accessories",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Monastic Minimalism",
+    "packId": "pack_18"
+  },
+  "SP18-053": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "texture_and_material"],
+    "requires": "design",
+    "medium": "design",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "random bolts without function",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "all-over rust",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested scrapyard scenery",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Salvage Utility",
+    "packId": "pack_18"
+  },
+  "SP18-054": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "texture_and_material"],
+    "requires": "wardrobe",
+    "medium": "wardrobe",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "floating decorative panels",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "random straps",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "ornament covering every surface",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Ceremonial Asymmetry",
+    "packId": "pack_18"
+  },
+  "SP18-055": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "texture_and_material"],
+    "requires": "design",
+    "medium": "design",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "mechanical spaghetti",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested exposed tissue",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "arbitrary implants on excluded areas",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Biomechanical Restraint",
+    "packId": "pack_18"
+  },
+  "SP18-056": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "color_and_tone", "texture_and_material"],
+    "requires": "wardrobe",
+    "medium": "wardrobe",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "automatic crown",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "full-body ceramic coating",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "rigid trim blocking joints",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Porcelain Court Attire",
+    "packId": "pack_18"
+  },
+  "SP18-057": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "texture_and_material"],
+    "requires": "environment",
+    "medium": "environment",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "decorative overgrowth blocking routes",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "ideological slogan text",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "fantasy machinery without function",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Climate-Ready Workshop",
+    "packId": "pack_18"
+  },
+  "SP18-058": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "texture_and_material"],
+    "requires": "wardrobe",
+    "medium": "wardrobe",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "stereotyped cultural ornament",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "automatic dunes",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "uniform tattered hems",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Desert Nomad Layers",
+    "packId": "pack_18"
+  },
+  "SP18-059": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "texture_and_material"],
+    "requires": "design",
+    "medium": "design",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "random occult logo collage",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested altar scene",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "nonfunctional decorative cables",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Industrial Ritual Objects",
+    "packId": "pack_18"
+  },
+  "SP18-060": {
+    "schemaVersion": 1,
+    "kind": "thematic_direction",
+    "defaultFields": ["aesthetic", "subject_treatment", "color_and_tone", "texture_and_material"],
+    "requires": "environment",
+    "medium": "environment",
+    "constraints": [],
+    "avoidRules": [
+      {
+        "text": "automatic castle",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested giant statue",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "fantasy clutter covering terrain",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "name": "Quiet Mythic Landscape",
+    "packId": "pack_18"
+  }
+}

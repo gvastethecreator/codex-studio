@@ -195,7 +195,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <button
               type="button"
               aria-label="Hide jobs from this list"
-              title="Hide jobs from this list"
+              data-tooltip="Hide jobs from this list"
               onClick={() => clearListedJobs()}
               className="studio-hit-target rounded-[var(--wb-radius)] px-2 py-1.5 text-xs text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             >
@@ -205,7 +205,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               <button
                 type="button"
                 aria-label="Close jobs"
-                title="Close jobs"
+                data-tooltip="Close jobs"
                 onClick={onClose}
                 className="studio-hit-target rounded-[var(--wb-radius)] p-1.5 text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
               >
@@ -323,7 +323,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                         key={result.id}
                         onClick={() => setActiveResultId(result.id)}
                         className="group relative overflow-hidden rounded border border-[color:var(--wb-border)]"
-                        title={result.prompt || 'Generated result'}
+                        data-tooltip={result.prompt || 'Generated result'}
                       >
                         <img
                           src={result.src}
@@ -676,7 +676,7 @@ const ServerJobItem: React.FC<{
               type="button"
               aria-label={`${canResume ? 'Resume' : 'Retry'} backend job ${job.id}`}
               onClick={onRetry}
-              title={canResume ? 'Resume existing remote job' : 'Retry this job'}
+              data-tooltip={canResume ? 'Resume existing remote job' : 'Retry this job'}
               className="flex min-h-8 items-center gap-1.5 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-2 text-xs text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
             >
               <RotateCcw size={13} />

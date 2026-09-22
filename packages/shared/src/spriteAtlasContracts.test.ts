@@ -18,6 +18,8 @@ describe('spriteAtlasContracts', () => {
       presetId: 'tileset-topdown',
       assetKind: 'tileset',
       extractionMode: 'slots',
+      workflowLane: 'tileset',
+      frameSemantics: 'tiles',
       stylePreset: 'illustration',
       backgroundRemoval: 'auto',
       columns: 12,
@@ -44,6 +46,8 @@ describe('spriteAtlasContracts', () => {
     expect(contract.frameBudget).toBe('preset');
     expect(contract.backgroundRemoval).toBe('chroma');
     expect(contract.qaMode).toBe('standard');
+    expect(contract.workflowLane).toBe('animation');
+    expect(contract.frameSemantics).toBe('temporal');
   });
 
   it('exposes preset summaries for recipe and backend discovery', () => {

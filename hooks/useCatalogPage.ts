@@ -12,10 +12,13 @@ import {
 export interface UseCatalogOptions extends CatalogQueryParams {
   pageSize?: number;
   enabled?: boolean;
+  preserveLoadedPages?: boolean;
+  selectedId?: string | null;
   queryCatalogPage?: (params: CatalogQueryParams) => Promise<CatalogPage>;
 }
 
 export interface UseCatalogResult {
+  scopeKey?: string;
   entries: CatalogImage[];
   view: StudioCatalogView;
   total: number;
@@ -39,10 +42,15 @@ function createCatalogFilterKey(filters: CatalogQueryParams) {
 export function useCatalogPage({
   pageSize = 200,
   enabled = true,
+  preserveLoadedPages = false,
+  selectedId,
   queryCatalogPage = queryCatalog,
   ...filters
 }: UseCatalogOptions = {}): UseCatalogResult {
   const [entries, setEntries] = useState<CatalogImage[]>([]);
+  const [retainedSelection, setRetainedSelection] = useState<CatalogImage | null>(null);
+  const selectedIdRef = useLatestRef(selectedId);
+  const entriesRef = useLatestRef(entries);
   const [total, setTotal] = useState(0);
   const [hasMore, setHasMore] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -60,9 +68,34 @@ export function useCatalogPage({
   useLayoutEffect(() => {
     if (filtersKeyRef.current === filtersKey) return;
     filtersKeyRef.current = filtersKey;
+    entriesRef.current = [];
+    setEntries([]);
+    setRetainedSelection(null);
+    setIsLoading(enabled);
+    setTotal(0);
+    setHasMore(false);
+    setError(null);
     requestGate.invalidate();
     detailRequestsRef.current.clear();
-  }, [filtersKey, requestGate]);
+  }, [enabled, entriesRef, filtersKey, requestGate]);
+
+  const retainSelection = useCallback(
+    async (
+      images: CatalogImage[],
+      requestFilters: CatalogQueryParams,
+      token: CatalogRequestToken,
+    ) => {
+      const id = selectedIdRef.current;
+      const selected =
+        preserveLoadedPages && id && !images.some((image) => image.id === id)
+          ? ((await queryCatalogPage({ ...requestFilters, id, offset: 0, limit: 1 })).images.find(
+              (image) => image.id === id,
+            ) ?? null)
+          : null;
+      if (requestGate.isCurrent(token)) setRetainedSelection(selected);
+    },
+    [preserveLoadedPages, queryCatalogPage, requestGate, selectedIdRef],
+  );
 
   const loadPage = useCallback(
     async (
@@ -81,7 +114,13 @@ export function useCatalogPage({
           limit: requestFilters.limit ?? pageSize,
         });
         if (!requestGate.isCurrent(token)) return;
-        setEntries((previous) => (mode === 'append' ? [...previous, ...page.images] : page.images));
+        if (mode === 'replace') await retainSelection(page.images, requestFilters, token);
+        if (!requestGate.isCurrent(token)) return;
+        setEntries((previous) =>
+          mode === 'append'
+            ? [...new Map([...previous, ...page.images].map((entry) => [entry.id, entry])).values()]
+            : page.images,
+        );
         setTotal(page.total);
         setHasMore(page.hasMore);
       } catch (loadError) {
@@ -93,13 +132,50 @@ export function useCatalogPage({
         if (requestGate.finish(token)) setIsLoading(false);
       }
     },
-    [pageSize, queryCatalogPage, requestGate],
+    [pageSize, queryCatalogPage, requestGate, retainSelection],
   );
 
   const refresh = useCallback(async () => {
     const token = requestGate.beginReplace();
-    await loadPage(0, 'replace', token, { ...filtersRef.current }, true);
-  }, [filtersRef, loadPage, requestGate]);
+    if (!preserveLoadedPages || entriesRef.current.length <= pageSize) {
+      await loadPage(0, 'replace', token, { ...filtersRef.current }, true);
+      return;
+    }
+    setIsLoading(true);
+    setError(null);
+    try {
+      const target = entriesRef.current.length;
+      const refreshed: CatalogImage[] = [];
+      let page: CatalogPage;
+      do {
+        page = await queryCatalogPage({
+          ...filtersRef.current,
+          offset: refreshed.length,
+          limit: pageSize,
+        });
+        if (!requestGate.isCurrent(token)) return;
+        refreshed.push(...page.images);
+      } while (page.hasMore && page.images.length && refreshed.length < target);
+      await retainSelection(refreshed, { ...filtersRef.current }, token);
+      if (!requestGate.isCurrent(token)) return;
+      setEntries([...new Map(refreshed.map((entry) => [entry.id, entry])).values()]);
+      setTotal(page.total);
+      setHasMore(page.hasMore);
+    } catch (error) {
+      if (requestGate.isCurrent(token)) setError(normalizeCatalogError(error));
+    } finally {
+      if (requestGate.finish(token)) setIsLoading(false);
+    }
+  }, [
+    entriesRef,
+    filtersRef,
+    loadPage,
+    pageSize,
+    preserveLoadedPages,
+    retainSelection,
+    queryCatalogPage,
+    requestGate,
+  ]);
 
   const loadMore = useCallback(async () => {
     if (!hasMore) return;
@@ -116,6 +192,7 @@ export function useCatalogPage({
       const promise = getCatalogImageDetail(imageId)
         .then((detail) => {
           if (requestGate.getGeneration() !== generation) return;
+          setRetainedSelection((entry) => (entry?.id === imageId ? detail : entry));
           setEntries((previous) =>
             previous.map((entry) => (entry.id === imageId ? detail : entry)),
           );
@@ -144,10 +221,22 @@ export function useCatalogPage({
     };
   }, [enabled, filtersKey, refresh, requestGate]);
 
-  const view = useMemo(() => createCatalogView(entries), [entries]);
+  const visibleEntries = useMemo(
+    () =>
+      retainedSelection &&
+      retainedSelection.id === selectedId &&
+      !entries.some((entry) => entry.id === retainedSelection.id)
+        ? [...entries, retainedSelection].sort(
+            (a, b) => b.createdAt.localeCompare(a.createdAt) || b.id.localeCompare(a.id),
+          )
+        : entries,
+    [entries, retainedSelection, selectedId],
+  );
+  const view = useMemo(() => createCatalogView(visibleEntries), [visibleEntries]);
 
   return {
-    entries,
+    scopeKey: filtersKey,
+    entries: visibleEntries,
     view,
     total,
     hasMore,

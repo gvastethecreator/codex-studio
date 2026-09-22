@@ -69,7 +69,7 @@ describe('catalog routes', () => {
     );
 
     const response = await routes.request(
-      '/?workspace_id=workspace-1&job_id=job-1&batch_id=batch-1&favorite=true&deleted=false&q=studio&offset=5&limit=10',
+      '/?workspace_id=workspace-1&recipe_id=styles&job_id=job-1&batch_id=batch-1&favorite=true&deleted=false&q=studio&offset=5&limit=10',
     );
 
     await expect(response.json()).resolves.toEqual({
@@ -81,6 +81,7 @@ describe('catalog routes', () => {
       {
         libraryId: null,
         workspaceId: 'workspace-1',
+        recipeId: 'styles',
         jobId: 'job-1',
         batchId: 'batch-1',
         favorite: true,
@@ -90,6 +91,10 @@ describe('catalog routes', () => {
         limit: 10,
       },
     ]);
+    await routes.request('/?recipe_id=default');
+    expect(calls.at(-1)?.recipeId).toBeNull();
+    await routes.request('/');
+    expect(calls.at(-1)?.recipeId).toBeUndefined();
   });
 
   it('updates and restores Catalog Entries without DB globals', async () => {

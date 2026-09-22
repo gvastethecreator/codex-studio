@@ -32,35 +32,20 @@
     "project": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "name",
-        "revision",
-        "working_tree",
-        "source_fingerprint"
-      ],
+      "required": ["name", "revision", "working_tree", "source_fingerprint"],
       "properties": {
         "name": {
           "type": "string",
           "minLength": 1
         },
         "revision": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": ["string", "null"]
         },
         "working_tree": {
-          "enum": [
-            "clean",
-            "dirty",
-            "unknown"
-          ]
+          "enum": ["clean", "dirty", "unknown"]
         },
         "source_fingerprint": {
-          "type": [
-            "string",
-            "null"
-          ],
+          "type": ["string", "null"],
           "pattern": "^[a-f0-9]{64}$"
         }
       }
@@ -72,18 +57,10 @@
     "portability": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "target",
-        "verified",
-        "notes"
-      ],
+      "required": ["target", "verified", "notes"],
       "properties": {
         "target": {
-          "enum": [
-            "file",
-            "localhost",
-            "evidence-only"
-          ]
+          "enum": ["file", "localhost", "evidence-only"]
         },
         "verified": {
           "type": "boolean"
@@ -99,17 +76,10 @@
     "scope": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "coverage",
-        "included",
-        "excluded"
-      ],
+      "required": ["coverage", "included", "excluded"],
       "properties": {
         "coverage": {
-          "enum": [
-            "full",
-            "partial"
-          ]
+          "enum": ["full", "partial"]
         },
         "included": {
           "type": "array",
@@ -122,10 +92,7 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": [
-              "id",
-              "reason"
-            ],
+            "required": ["id", "reason"],
             "properties": {
               "id": {
                 "type": "string",
@@ -147,12 +114,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "id",
-          "title",
-          "source_refs",
-          "states"
-        ],
+        "required": ["id", "title", "source_refs", "states"],
         "properties": {
           "id": {
             "type": "string",
@@ -174,14 +136,7 @@
             "minItems": 1,
             "items": {
               "type": "object",
-              "required": [
-                "id",
-                "entry",
-                "render",
-                "behavior",
-                "test",
-                "evidence"
-              ],
+              "required": ["id", "entry", "render", "behavior", "test", "evidence"],
               "additionalProperties": false,
               "properties": {
                 "id": {
@@ -189,35 +144,17 @@
                   "pattern": "^[a-z0-9][a-z0-9._-]*$"
                 },
                 "entry": {
-                  "type": [
-                    "string",
-                    "null"
-                  ]
+                  "type": ["string", "null"]
                 },
                 "render": {
-                  "enum": [
-                    "original-components",
-                    "original-static",
-                    "approximation",
-                    "unavailable"
-                  ]
+                  "enum": ["original-components", "original-static", "approximation", "unavailable"]
                 },
                 "behavior": {
-                  "enum": [
-                    "original-local",
-                    "simulated",
-                    "mixed",
-                    "unavailable"
-                  ]
+                  "enum": ["original-local", "simulated", "mixed", "unavailable"]
                 },
                 "test": {
                   "type": "string",
-                  "enum": [
-                    "pass",
-                    "failed",
-                    "not_run",
-                    "not_applicable"
-                  ]
+                  "enum": ["pass", "failed", "not_run", "not_applicable"]
                 },
                 "evidence": {
                   "type": "array",
@@ -235,30 +172,16 @@
     "checks": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "portability",
-        "fidelity",
-        "interactions",
-        "privacy"
-      ],
+      "required": ["portability", "fidelity", "interactions", "privacy"],
       "properties": {
         "portability": {
           "type": "object",
-          "required": [
-            "status",
-            "evidence",
-            "note"
-          ],
+          "required": ["status", "evidence", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
               "type": "string",
-              "enum": [
-                "pass",
-                "failed",
-                "not_run",
-                "not_applicable"
-              ]
+              "enum": ["pass", "failed", "not_run", "not_applicable"]
             },
             "evidence": {
               "type": "array",
@@ -274,21 +197,12 @@
         },
         "fidelity": {
           "type": "object",
-          "required": [
-            "status",
-            "evidence",
-            "note"
-          ],
+          "required": ["status", "evidence", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
               "type": "string",
-              "enum": [
-                "pass",
-                "failed",
-                "not_run",
-                "not_applicable"
-              ]
+              "enum": ["pass", "failed", "not_run", "not_applicable"]
             },
             "evidence": {
               "type": "array",
@@ -304,21 +218,12 @@
         },
         "interactions": {
           "type": "object",
-          "required": [
-            "status",
-            "evidence",
-            "note"
-          ],
+          "required": ["status", "evidence", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
               "type": "string",
-              "enum": [
-                "pass",
-                "failed",
-                "not_run",
-                "not_applicable"
-              ]
+              "enum": ["pass", "failed", "not_run", "not_applicable"]
             },
             "evidence": {
               "type": "array",
@@ -334,21 +239,12 @@
         },
         "privacy": {
           "type": "object",
-          "required": [
-            "status",
-            "evidence",
-            "note"
-          ],
+          "required": ["status", "evidence", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
               "type": "string",
-              "enum": [
-                "pass",
-                "failed",
-                "not_run",
-                "not_applicable"
-              ]
+              "enum": ["pass", "failed", "not_run", "not_applicable"]
             },
             "evidence": {
               "type": "array",
@@ -446,10 +342,7 @@
           "const": "0.4.0"
         },
         "profile": {
-          "enum": [
-            "agent",
-            "human"
-          ]
+          "enum": ["agent", "human"]
         },
         "agent_ready": {
           "const": true
@@ -473,10 +366,7 @@
           "const": "agent/review-contract.md"
         },
         "human_entrypoint": {
-          "enum": [
-            null,
-            "LEEME.html"
-          ]
+          "enum": [null, "LEEME.html"]
         },
         "content_fingerprint": {
           "type": "string",

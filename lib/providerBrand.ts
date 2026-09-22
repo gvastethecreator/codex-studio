@@ -1,18 +1,5 @@
 export function providerBrandWellClass(providerId: string) {
-  if (providerId === 'codex')
-    return 'border-[color:var(--wb-border)] bg-emerald-500/15 text-[color:var(--wb-ink)]';
-  if (providerId === 'grok') return 'border-white/2 bg-zinc-950 text-white';
-  if (providerId === 'google')
-    return 'border-[color:var(--wb-border)] bg-sky-500/15 text-[color:var(--wb-ink)]';
-  if (providerId === 'antigravity')
-    return 'border-[color:var(--wb-border)] bg-violet-500/15 text-[color:var(--wb-ink)]';
-  if (providerId === 'fal')
-    return 'border-[color:var(--wb-border)] bg-fuchsia-500/15 text-[color:var(--wb-ink)]';
-  if (providerId === 'comfy')
-    return 'border-[color:var(--wb-border)] bg-orange-500/15 text-[color:var(--wb-ink)]';
-  if (providerId === 'dry_run')
-    return 'border-[color:var(--wb-border)] bg-white/[0.06] text-[color:var(--wb-ink)]';
-  return 'border-[color:var(--wb-border)] bg-white/[0.06] text-[color:var(--wb-ink)]';
+  return `provider-brand-well provider-brand-${['codex', 'grok', 'google', 'antigravity', 'fal', 'comfy', 'dry_run'].includes(providerId) ? providerId : 'unknown'}`;
 }
 
 export function providerBrandChipLabel(providerId: string) {

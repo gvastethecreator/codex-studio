@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import { createPortal } from 'react-dom';
+import { useToastUi } from '../contexts/GlobalContext';
 import {
   IconChevronLeft as ChevronLeft,
   IconChevronRight as ChevronRight,
@@ -14,12 +16,16 @@ import {
   IconCheck as Check,
   IconHeart as Heart,
   IconLayoutBoardSplit as SplitSquareHorizontal,
+  IconPlus as Plus,
+  IconMinus as Minus,
+  IconCopy as Copy,
 } from '@tabler/icons-react';
 import { AnimatePresence, MotionDiv, type Variants } from '../lib/gsapMotion';
 import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
 import ActionButton from './ui/ActionButton';
+import { RecipeWorkbenchContext } from './recipes/RecipeWorkbenchContext';
 import Logo from './Logo';
-import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
+import { copyImageToClipboard, downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import { finishCarouselSlideState } from '../lib/imageCarouselState';
 import {
   buildCarouselThumbnailWindow,
@@ -34,6 +40,7 @@ import {
 } from '../lib/studioCarouselImage';
 import { useLatestRef } from '../hooks/useLatestRef';
 import { useDialogFocus } from '../hooks/useDialogFocus';
+import { useHorizontalDragScroll } from '../hooks/useHorizontalDragScroll';
 import { formatCarouselPromptPreview, formatCarouselSourceLabel } from '../lib/grokImagineUiPolicy';
 
 interface ImageCarouselProps {
@@ -77,8 +84,10 @@ const CarouselImageItem: React.FC<{
   isActive: boolean;
   isSliding: boolean;
   isComparing: boolean;
-}> = React.memo(({ image, transitionName, isActive, isSliding, isComparing }) => {
+  controlsTarget: HTMLElement | null;
+}> = React.memo(({ image, transitionName, isActive, isSliding, isComparing, controlsTarget }) => {
   const [uiScale, setUiScale] = useState(1);
+  const [background, setBackground] = useState('dark');
 
   const imgRef = useRef<HTMLImageElement>(null);
   const [failedDisplaySrcs, setFailedDisplaySrcs] = useState<string[]>([]);
@@ -104,7 +113,7 @@ const CarouselImageItem: React.FC<{
 
   const animate = useCallback(() => {
     if (!isActive) return;
-    const LERP_FACTOR = 0.32;
+    const LERP_FACTOR = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 1 : 0.32;
 
     current.current.scale = lerp(current.current.scale, target.current.scale, LERP_FACTOR);
     current.current.x = lerp(current.current.x, target.current.x, LERP_FACTOR);
@@ -223,6 +232,7 @@ const CarouselImageItem: React.FC<{
   return (
     <div
       className="size-full flex items-center justify-center relative overflow-hidden touch-none select-none"
+      data-viewer-background={background}
       role="group"
       tabIndex={isActive ? 0 : -1}
       aria-label="Image pan and zoom area. Use plus and minus to zoom, arrows to pan, zero to reset."
@@ -240,6 +250,58 @@ const CarouselImageItem: React.FC<{
         startAnimation();
       }}
     >
+      {isActive &&
+        controlsTarget &&
+        createPortal(
+          <>
+            <div
+              role="group"
+              aria-label="Canvas background"
+              className="carousel-background-controls"
+              onPointerDown={(event) => event.stopPropagation()}
+              onDoubleClick={(event) => event.stopPropagation()}
+            >
+              {['dark', 'light', 'checkered'].map((value) => (
+                <button
+                  key={value}
+                  type="button"
+                  aria-label={`${value[0].toUpperCase() + value.slice(1)} background`}
+                  aria-pressed={background === value}
+                  data-viewer-background={value}
+                  onClick={() => setBackground(value)}
+                />
+              ))}
+            </div>
+            <div
+              role="group"
+              aria-label="Zoom controls"
+              className="carousel-zoom-controls"
+              onPointerDown={(event) => event.stopPropagation()}
+              onDoubleClick={(event) => event.stopPropagation()}
+            >
+              <ActionButton
+                icon={<Minus size={16} />}
+                label="Zoom out"
+                onClick={() => updateZoom(target.current.scale / 1.25)}
+              />
+              <button
+                type="button"
+                className="carousel-zoom-level"
+                aria-label="Reset zoom to 100%"
+                data-tooltip="Reset zoom to 100%"
+                onClick={() => updateZoom(1)}
+              >
+                {Math.round(uiScale * 100)}%
+              </button>
+              <ActionButton
+                icon={<Plus size={16} />}
+                label="Zoom in"
+                onClick={() => updateZoom(target.current.scale * 1.25)}
+              />
+            </div>
+          </>,
+          controlsTarget,
+        )}
       <img
         ref={imgRef}
         src={displaySrc}
@@ -387,7 +449,7 @@ function CarouselBottomBar({
                 onPointerUp={onCompareEnd}
                 onPointerLeave={onCompareEnd}
                 className={`relative flex items-center justify-center rounded-[var(--wb-radius)] p-2 outline-none transition-[background-color,color,box-shadow,transform] duration-300 group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-[color:var(--wb-ink)] shadow-lg' : 'text-[color:var(--wb-muted)] hover:text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]'}`}
-                title="Hold to Compare with Original"
+                data-tooltip="Hold to Compare with Original"
               >
                 <SplitSquareHorizontal size={16} />
                 <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal ml-2 hidden lg:inline">
@@ -454,7 +516,14 @@ function CarouselBottomBar({
 }
 
 interface CarouselTopBarProps {
+  context: string;
+  actions: React.ReactNode;
+  setControlsTarget: (element: HTMLDivElement | null) => void;
   activeIndex: number;
+  total: number;
+  loading: boolean;
+  error: boolean;
+  onRetry: () => void;
   isFullscreen: boolean;
   navScrollRef: React.RefObject<HTMLDivElement | null>;
   onClose: () => void;
@@ -464,7 +533,14 @@ interface CarouselTopBarProps {
 }
 
 function CarouselTopBar({
+  context,
+  actions,
+  setControlsTarget,
   activeIndex,
+  total,
+  loading,
+  error,
+  onRetry,
   isFullscreen,
   navScrollRef,
   onClose,
@@ -472,20 +548,22 @@ function CarouselTopBar({
   onToggleFullscreen,
   thumbnailWindow,
 }: CarouselTopBarProps) {
+  const thumbnailDrag = useHorizontalDragScroll(navScrollRef);
   return (
-    <TopToolbar className="absolute top-0 left-0 right-0 w-full h-10 bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] backdrop-blur-sm flex items-center px-3 z-50 border-b border-[color:var(--wb-line)]">
+    <TopToolbar className="carousel-top-toolbar absolute top-0 left-0 right-0 w-full bg-[color:var(--wb-panel)] flex flex-col px-3 z-50 border-b border-[color:var(--wb-line)]">
       <div className="mx-auto flex w-full max-w-480 items-center justify-between gap-2">
         <Logo />
         <div
           ref={navScrollRef}
-          className="flex-1 flex items-center gap-1.5 overflow-x-auto custom-scrollbar py-1 snap-x justify-center"
+          className="min-w-0 flex-1 flex items-center gap-1.5 overflow-x-auto custom-scrollbar py-1 snap-x justify-center"
+          {...thumbnailDrag}
         >
           {thumbnailWindow.map(({ item: img, index: idx }) => (
             <button
               type="button"
               key={img.id}
               data-carousel-index={idx}
-              aria-label={`Open image ${idx + 1} of ${thumbnailWindow.length}`}
+              aria-label={`Open image ${idx + 1} of ${total}`}
               onClick={() => onJumpTo(idx)}
               className={`relative size-8 shrink-0 rounded-[var(--wb-radius)] overflow-hidden border snap-center cursor-pointer transition-[border-color,box-shadow,opacity,transform] duration-300
                             ${
@@ -512,12 +590,21 @@ function CarouselTopBar({
             </button>
           ))}
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex shrink-0 items-center gap-1">
+          <span className="carousel-count" role="status">
+            {activeIndex + 1} / {total}
+            {loading ? ' · Loading…' : ''}
+          </span>
+          {error && (
+            <button type="button" onClick={onRetry} aria-label="Retry loading history">
+              Retry
+            </button>
+          )}
           <button
             type="button"
             onClick={onToggleFullscreen}
             aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
-            title={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
+            data-tooltip={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
             className="min-h-8 min-w-8 rounded-[var(--wb-radius)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] p-1.5 text-[color:var(--wb-muted)] transition-[background-color,color,transform] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)] cursor-pointer"
           >
             {isFullscreen ? <Minimize2 size={15} /> : <Maximize2 size={15} />}
@@ -526,12 +613,23 @@ function CarouselTopBar({
             type="button"
             onClick={onClose}
             aria-label="Close image carousel"
-            title="Close"
+            data-tooltip="Close"
             className="min-h-8 min-w-8 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] p-1.5 text-[color:var(--wb-ink)] shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
           >
             <X size={15} />
           </button>
         </div>
+      </div>
+      <div
+        className="carousel-viewer-controls"
+        role="toolbar"
+        aria-label="Selected image actions and view"
+      >
+        <span className="carousel-image-context" data-tooltip={context}>
+          {context}
+        </span>
+        <div className="carousel-image-actions">{actions}</div>
+        <div className="carousel-view-tools" ref={setControlsTarget} />
       </div>
     </TopToolbar>
   );
@@ -550,20 +648,33 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   onActiveImageChange,
   transitionName,
 }) => {
+  const { addToast } = useToastUi();
+  const [controlsTarget, setControlsTarget] = useState<HTMLDivElement | null>(null);
+  const { history } = React.useContext(RecipeWorkbenchContext);
   const activeIndex = useMemo(() => {
     if (!activeImage || allImages.length === 0) return 0;
     const idx = allImages.findIndex((img) => img.id === activeImage.id);
     return idx !== -1 ? idx : 0;
   }, [activeImage, allImages]);
 
+  useEffect(() => {
+    if (
+      history?.hasMore &&
+      !history.isLoading &&
+      !history.error &&
+      activeIndex >= allImages.length - 12
+    )
+      void history.loadMore();
+  }, [history, activeIndex, allImages.length]);
+
   const prevActiveImageIdRef = useRef(activeImage?.id);
   const lastSetIndexRef = useRef(activeIndex);
 
   React.useLayoutEffect(() => {
-    if (prevActiveImageIdRef.current === activeImage?.id) return;
+    if (!allImages.some((image) => image.id === activeImage?.id)) return;
     prevActiveImageIdRef.current = activeImage?.id;
     lastSetIndexRef.current = activeIndex;
-  }, [activeImage?.id, activeIndex]);
+  }, [activeImage?.id, activeIndex, allImages]);
 
   const [carouselState, setCarouselState] = useState({
     direction: 0,
@@ -592,11 +703,28 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   const navScrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (activeIndex < allImages.length || allImages.length === 0) return;
-    const clampedIndex = allImages.length - 1;
+    if (allImages.length === 0 && !history?.isLoading && !history?.error) {
+      onClose();
+      return;
+    }
+    if (
+      !activeImage ||
+      allImages.some((image) => image.id === activeImage.id) ||
+      allImages.length === 0
+    )
+      return;
+    const clampedIndex = Math.min(lastSetIndexRef.current, allImages.length - 1);
     lastSetIndexRef.current = clampedIndex;
     onActiveImageChange(allImages[clampedIndex].id);
-  }, [activeIndex, allImages, onActiveImageChange]);
+  }, [
+    activeImage,
+    activeIndex,
+    allImages,
+    onActiveImageChange,
+    onClose,
+    history?.isLoading,
+    history?.error,
+  ]);
 
   const handleJumpTo = useCallback(
     (index: number) => {
@@ -721,11 +849,49 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       aria-modal="true"
       aria-label="Image viewer"
       tabIndex={-1}
-      className="fixed inset-0 z-100 flex flex-col studio-scrim overflow-hidden pt-12 pb-12"
+      className="carousel-viewer fixed inset-0 z-100 flex flex-col studio-scrim overflow-hidden pb-12"
       style={{ viewTransitionName: 'modal-backdrop' }}
     >
       <CarouselTopBar
+        context={currentImage.config.prompt || 'Generated image'}
+        setControlsTarget={setControlsTarget}
+        actions={
+          <>
+            <ActionButton
+              icon={<Copy size={16} />}
+              label="Copy image"
+              onClick={() => {
+                void copyImageToClipboard(currentImage.src).then(
+                  () => addToast('Image copied', 'success'),
+                  () => addToast('Could not copy image', 'error'),
+                );
+              }}
+            />
+            <ActionButton
+              icon={<Download size={16} />}
+              label="Download image"
+              onClick={handleDownloadClick}
+            />
+            <ActionButton
+              icon={<Heart size={16} />}
+              label={currentImage.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+              isActive={currentImage.isFavorite}
+              onClick={() => onToggleFavorite(currentImage.id)}
+            />
+            <ActionButton
+              icon={<PlusCircle size={16} />}
+              label="Use as reference"
+              onClick={() => onAddToContext(currentImage)}
+            />
+          </>
+        }
         activeIndex={activeIndex}
+        total={history?.total ?? allImages.length}
+        loading={history?.isLoading ?? false}
+        error={Boolean(history?.error)}
+        onRetry={() => {
+          void history?.refresh().catch(() => undefined);
+        }}
         isFullscreen={isFullscreen}
         navScrollRef={navScrollRef}
         onClose={onClose}
@@ -777,6 +943,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
               className={`absolute inset-0 size-full flex items-center justify-center pointer-events-auto ${isSliding ? 'will-change-transform' : ''}`}
             >
               <CarouselImageItem
+                controlsTarget={controlsTarget}
                 key={`${currentImage.id}:${isComparing ? 'compare' : 'result'}`}
                 image={currentImage}
                 transitionName={transitionName}

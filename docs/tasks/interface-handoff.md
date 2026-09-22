@@ -33,13 +33,13 @@ No hay evidencia reutilizada.
 
 ## Cambios por archivo
 
-| Ruta | cambio | razón | riesgo | prueba |
-| --- | --- | --- | --- | --- |
-| `review/*` | nuevo | entry, adapters, escenarios | bajo | navegación demo |
-| `vite.handoff.config.ts` | nuevo | build de review con aliases | medio | build |
-| `scripts/interface-handoff/*` | nuevo | export + helpers | medio | pack |
-| `.interface-handoff/config.json` | nuevo | config 1.1 | bajo | reconcile |
-| `package.json` | script `handoff:export` | comando único | bajo | bun run |
+| Ruta                             | cambio                  | razón                       | riesgo | prueba          |
+| -------------------------------- | ----------------------- | --------------------------- | ------ | --------------- |
+| `review/*`                       | nuevo                   | entry, adapters, escenarios | bajo   | navegación demo |
+| `vite.handoff.config.ts`         | nuevo                   | build de review con aliases | medio  | build           |
+| `scripts/interface-handoff/*`    | nuevo                   | export + helpers            | medio  | pack            |
+| `.interface-handoff/config.json` | nuevo                   | config 1.1                  | bajo   | reconcile       |
+| `package.json`                   | script `handoff:export` | comando único               | bajo   | bun run         |
 
 ## Secuencia de implementación
 

@@ -1042,7 +1042,7 @@ function StyleNavigationPanel({
             data-style-landing-navigation-toggle
             className="flex size-7 shrink-0 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-white/[0.035] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             aria-label="Hide style map"
-            title="Hide style map"
+            data-tooltip="Hide style map"
           >
             <ChevronLeft size={14} />
           </button>
@@ -1288,7 +1288,7 @@ export function StyleCollectionsLandingSurface({
               data-style-landing-navigation-toggle
               className="flex size-7 items-center justify-center rounded-[var(--wb-radius)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
               aria-label="Show style map"
-              title="Show style map"
+              data-tooltip="Show style map"
             >
               <ChevronRight size={14} />
             </button>

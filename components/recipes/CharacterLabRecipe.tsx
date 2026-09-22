@@ -762,7 +762,7 @@ function ActionButton({
     <button
       type="button"
       onClick={() => onSelect(action)}
-      title={action.label}
+      data-tooltip={action.label}
       className={`character-lab-action-card group relative flex aspect-[5/6] min-h-[132px] w-full min-w-0 flex-col overflow-hidden rounded-[var(--wb-radius)] border p-1.5 text-left shadow-[0_10px_22px_rgba(0,0,0,0.22)] transition-[background-color,border-color,color,opacity,transform] duration-150 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
         selected
           ? `${accent.border} ${accent.soft} text-[color:var(--wb-ink)] ring-1 ring-inset ring-white/10`
@@ -929,6 +929,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
       expression,
       labAspectRatio,
       references.length,
+      search,
       source,
       style,
       subject,
@@ -1121,7 +1122,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     <button
                       key={mode.id}
                       type="button"
-                      title={mode.description}
+                      data-tooltip={mode.description}
                       onClick={() => {
                         setSelectedMode(mode.id);
                         setAction(getFirstReadyActionForMode(mode.id));
@@ -1183,7 +1184,13 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                       {batchCount > 0 && (
                         <button
                           type="button"
-                          onClick={() => runCategoryBatch(actions)}
+                          onClick={() =>
+                            runCategoryBatch(
+                              filteredCategoryGroups.find(
+                                (group) => group.category.id === category.id,
+                              )?.actions ?? actions,
+                            )
+                          }
                           className="flex h-7 items-center gap-1 rounded-[var(--wb-radius)] border border-violet-400/2 bg-violet-500/15 px-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-violet-100 transition-[background-color,border-color] duration-150 hover:border-violet-300/2 hover:bg-violet-500/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                         >
                           <CharacterLabIcon id="control:batch" size={16} />

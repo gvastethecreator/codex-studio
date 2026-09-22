@@ -29,26 +29,17 @@
       "minLength": 1
     },
     "status": {
-      "enum": [
-        "pending",
-        "resolved"
-      ]
+      "enum": ["pending", "resolved"]
     },
     "created_at": {
       "type": "string",
       "format": "date-time"
     },
     "previous_state_sha256": {
-      "type": [
-        "string",
-        "null"
-      ]
+      "type": ["string", "null"]
     },
     "previous_export_id": {
-      "type": [
-        "string",
-        "null"
-      ]
+      "type": ["string", "null"]
     },
     "inputs_fingerprint": {
       "type": "string",
@@ -63,18 +54,10 @@
       "minLength": 1
     },
     "minimum_strategy": {
-      "enum": [
-        "reuse",
-        "incremental",
-        "full"
-      ]
+      "enum": ["reuse", "incremental", "full"]
     },
     "strategy": {
-      "enum": [
-        "reuse",
-        "incremental",
-        "full"
-      ]
+      "enum": ["reuse", "incremental", "full"]
     },
     "inventory_delta": {
       "type": "object"
@@ -84,13 +67,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": [
-          "path",
-          "change",
-          "watched",
-          "disposition",
-          "reason"
-        ],
+        "required": ["path", "change", "watched", "disposition", "reason"],
         "properties": {
           "path": {
             "type": "string",
@@ -98,23 +75,13 @@
             "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\:?#%\\x00-\\x1f]+$"
           },
           "change": {
-            "enum": [
-              "added",
-              "modified",
-              "removed"
-            ]
+            "enum": ["added", "modified", "removed"]
           },
           "watched": {
             "type": "boolean"
           },
           "disposition": {
-            "enum": [
-              "pending",
-              "adapted",
-              "covered",
-              "unrelated",
-              "retired"
-            ]
+            "enum": ["pending", "adapted", "covered", "unrelated", "retired"]
           },
           "reason": {
             "type": "string"
@@ -144,27 +111,14 @@
       "properties": {
         "current_inventory": {
           "type": "object",
-          "required": [
-            "status",
-            "basis",
-            "evidence_refs",
-            "note"
-          ],
+          "required": ["status", "basis", "evidence_refs", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
-              "enum": [
-                "pending",
-                "resolved"
-              ]
+              "enum": ["pending", "resolved"]
             },
             "basis": {
-              "enum": [
-                "source-inspection",
-                "typecheck",
-                "runtime",
-                "reused-inspection"
-              ]
+              "enum": ["source-inspection", "typecheck", "runtime", "reused-inspection"]
             },
             "evidence_refs": {
               "type": "array",
@@ -185,27 +139,14 @@
         },
         "scope_and_dependencies": {
           "type": "object",
-          "required": [
-            "status",
-            "basis",
-            "evidence_refs",
-            "note"
-          ],
+          "required": ["status", "basis", "evidence_refs", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
-              "enum": [
-                "pending",
-                "resolved"
-              ]
+              "enum": ["pending", "resolved"]
             },
             "basis": {
-              "enum": [
-                "source-inspection",
-                "typecheck",
-                "runtime",
-                "reused-inspection"
-              ]
+              "enum": ["source-inspection", "typecheck", "runtime", "reused-inspection"]
             },
             "evidence_refs": {
               "type": "array",
@@ -226,27 +167,14 @@
         },
         "exporter_and_adapters": {
           "type": "object",
-          "required": [
-            "status",
-            "basis",
-            "evidence_refs",
-            "note"
-          ],
+          "required": ["status", "basis", "evidence_refs", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
-              "enum": [
-                "pending",
-                "resolved"
-              ]
+              "enum": ["pending", "resolved"]
             },
             "basis": {
-              "enum": [
-                "source-inspection",
-                "typecheck",
-                "runtime",
-                "reused-inspection"
-              ]
+              "enum": ["source-inspection", "typecheck", "runtime", "reused-inspection"]
             },
             "evidence_refs": {
               "type": "array",
@@ -267,27 +195,14 @@
         },
         "scenarios_and_fixtures": {
           "type": "object",
-          "required": [
-            "status",
-            "basis",
-            "evidence_refs",
-            "note"
-          ],
+          "required": ["status", "basis", "evidence_refs", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
-              "enum": [
-                "pending",
-                "resolved"
-              ]
+              "enum": ["pending", "resolved"]
             },
             "basis": {
-              "enum": [
-                "source-inspection",
-                "typecheck",
-                "runtime",
-                "reused-inspection"
-              ]
+              "enum": ["source-inspection", "typecheck", "runtime", "reused-inspection"]
             },
             "evidence_refs": {
               "type": "array",
@@ -308,27 +223,14 @@
         },
         "capture_and_checks": {
           "type": "object",
-          "required": [
-            "status",
-            "basis",
-            "evidence_refs",
-            "note"
-          ],
+          "required": ["status", "basis", "evidence_refs", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
-              "enum": [
-                "pending",
-                "resolved"
-              ]
+              "enum": ["pending", "resolved"]
             },
             "basis": {
-              "enum": [
-                "source-inspection",
-                "typecheck",
-                "runtime",
-                "reused-inspection"
-              ]
+              "enum": ["source-inspection", "typecheck", "runtime", "reused-inspection"]
             },
             "evidence_refs": {
               "type": "array",
@@ -349,27 +251,14 @@
         },
         "documentation": {
           "type": "object",
-          "required": [
-            "status",
-            "basis",
-            "evidence_refs",
-            "note"
-          ],
+          "required": ["status", "basis", "evidence_refs", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
-              "enum": [
-                "pending",
-                "resolved"
-              ]
+              "enum": ["pending", "resolved"]
             },
             "basis": {
-              "enum": [
-                "source-inspection",
-                "typecheck",
-                "runtime",
-                "reused-inspection"
-              ]
+              "enum": ["source-inspection", "typecheck", "runtime", "reused-inspection"]
             },
             "evidence_refs": {
               "type": "array",
@@ -390,27 +279,14 @@
         },
         "stale_artifacts": {
           "type": "object",
-          "required": [
-            "status",
-            "basis",
-            "evidence_refs",
-            "note"
-          ],
+          "required": ["status", "basis", "evidence_refs", "note"],
           "additionalProperties": false,
           "properties": {
             "status": {
-              "enum": [
-                "pending",
-                "resolved"
-              ]
+              "enum": ["pending", "resolved"]
             },
             "basis": {
-              "enum": [
-                "source-inspection",
-                "typecheck",
-                "runtime",
-                "reused-inspection"
-              ]
+              "enum": ["source-inspection", "typecheck", "runtime", "reused-inspection"]
             },
             "evidence_refs": {
               "type": "array",

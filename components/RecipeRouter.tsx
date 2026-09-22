@@ -43,6 +43,7 @@ interface RecipeRouterProps {
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
   activeProviderId?: GenerationProviderId;
   grokCanExecute?: boolean;
+  intentionalStylesV1?: boolean;
 }
 
 export const RecipeRouter: React.FC<RecipeRouterProps> = ({
@@ -59,6 +60,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
   handleAddToContext,
   activeProviderId = 'codex',
   grokCanExecute = false,
+  intentionalStylesV1 = false,
 }) => {
   if (!activeRecipe) return null;
 
@@ -104,6 +106,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             images={imagesWithConfig}
             activeProviderId={activeProviderId}
             grokCanExecute={grokCanExecute}
+            intentionalStylesV1={intentionalStylesV1}
             onSelectImage={openModal}
           />
         )}

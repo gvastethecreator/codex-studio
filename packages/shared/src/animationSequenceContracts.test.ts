@@ -10,6 +10,8 @@ describe('animationSequenceContracts', () => {
   it('normalizes animation sequence params into a safe frame contract', () => {
     const contract = createAnimationSequenceContract({
       prompt: 'small lantern rotates in place',
+      identityAnchor: 'the same brass lantern',
+      motionDriver: 'rotation around the vertical axis',
       frameCount: 99,
       fps: 0,
       aspectRatio: '16:9',
@@ -20,6 +22,8 @@ describe('animationSequenceContracts', () => {
 
     expect(contract).toMatchObject({
       prompt: 'small lantern rotates in place',
+      identityAnchor: 'the same brass lantern',
+      motionDriver: 'rotation around the vertical axis',
       frameCount: 48,
       fps: 1,
       aspectRatio: '16:9',
@@ -53,6 +57,7 @@ describe('animationSequenceContracts', () => {
       id: 'frame-0006',
       isKeyframe: true,
       referenceFrameIds: ['frame-0005', 'frame-0001'],
+      semanticPhase: 'loop-return',
     });
   });
 

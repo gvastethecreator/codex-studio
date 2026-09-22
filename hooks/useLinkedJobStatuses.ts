@@ -9,9 +9,11 @@ export function useLinkedJobStatuses(ids: string[]) {
     key: string;
     jobs: Record<string, Job['status'] | 'unavailable'>;
   }>({ key: '', jobs: {} });
+  // The recursive one-shot timer is cleared below and cannot reschedule after cancellation.
+  // react-doctor-disable-next-line react-doctor/effect-needs-cleanup
   useEffect(() => {
     let cancelled = false;
-    let timer: ReturnType<typeof setTimeout>;
+    let timer: ReturnType<typeof setTimeout> | null = null;
     const refresh = async () => {
       const entries = await Promise.all(
         key
@@ -37,7 +39,10 @@ export function useLinkedJobStatuses(ids: string[]) {
     void refresh();
     return () => {
       cancelled = true;
-      clearTimeout(timer);
+      if (timer !== null) {
+        clearTimeout(timer);
+        timer = null;
+      }
     };
   }, [key]);
   return snapshot.key === key ? snapshot.jobs : {};

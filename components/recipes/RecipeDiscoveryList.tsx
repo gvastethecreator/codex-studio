@@ -28,7 +28,7 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
   const isCompact = density === 'compact';
 
   return (
-    <div className={isCompact ? 'grid gap-1' : 'grid gap-2'}>
+    <div className={isCompact ? 'create-workflow-options' : 'grid gap-2'}>
       {recipeDiscovery.entries.map((recipe) => {
         const image = RECIPE_CARD_IMAGES[recipe.cardImageKey];
         return (
@@ -44,7 +44,7 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
             onPointerEnter={() => onPreviewRecipe(recipe.targetRecipeId)}
             className={
               isCompact
-                ? 'flex min-w-0 items-center gap-2 rounded-lg px-2 py-1.5 text-left transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] focus-visible:outline-2 focus-visible:outline-accent-400'
+                ? 'create-workflow-option'
                 : 'flex min-w-0 items-center gap-3 rounded-xl bg-white/[0.035] p-2 text-left transition-colors hover:bg-white/[0.08] focus-visible:outline-2 focus-visible:outline-accent-400'
             }
           >
@@ -58,12 +58,12 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
                 decoding="async"
                 className={
                   isCompact
-                    ? 'size-8 shrink-0 rounded-md object-cover'
+                    ? 'create-workflow-option-thumbnail'
                     : 'size-12 shrink-0 rounded-lg object-cover'
                 }
               />
             )}
-            <span className="min-w-0 flex-1">
+            <span className={isCompact ? 'create-workflow-option-text' : 'min-w-0 flex-1'}>
               <span className="block truncate text-sm font-semibold capitalize">
                 {recipe.title.toLowerCase()}
               </span>
@@ -73,7 +73,9 @@ export const RecipeDiscoveryList: React.FC<RecipeDiscoveryListProps> = ({
             </span>
             <IconArrowRight
               size={16}
-              className="shrink-0 text-[color:var(--wb-muted)]"
+              className={
+                isCompact ? 'create-workflow-option-arrow' : 'shrink-0 text-[color:var(--wb-muted)]'
+              }
               aria-hidden="true"
             />
           </button>

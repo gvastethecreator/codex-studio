@@ -388,6 +388,7 @@ export interface StudioLibrary {
 
 export interface CatalogImage {
   id: string;
+  providerId?: string | null;
   libraryId: string;
   filePath: string;
   thumbnailPath: string | null;

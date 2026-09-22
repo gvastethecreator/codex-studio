@@ -49,7 +49,9 @@ export function isTerminalStudioJobStatus(status: Job['status']) {
 
 export class JobObservationError extends Error {
   constructor(readonly jobId: string) {
-    super(`Could not confirm job ${jobId}. Open Queue to reconnect and inspect its current status.`);
+    super(
+      `Could not confirm job ${jobId}. Open Queue to reconnect and inspect its current status.`,
+    );
     this.name = 'JobObservationError';
   }
 }

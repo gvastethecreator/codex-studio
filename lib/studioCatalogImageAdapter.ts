@@ -50,6 +50,8 @@ export function materializeCatalogEntryImage(
 
   return {
     id: entry.id,
+    providerId: entry.providerId,
+    mimeType: entry.mimeType,
     src: sourceAvailable ? sourceUrl : thumbnail,
     thumbnail,
     preview: sourceAvailable ? preview : thumbnail,

@@ -124,7 +124,7 @@ export function ProviderQuickSwitch({
                 aria-pressed={isSelected}
                 aria-label={option.label}
                 disabled={isProviderSaving || isUnavailable}
-                title={option.tooltip}
+                data-tooltip={option.tooltip}
                 onClick={() => selectProvider(option.id)}
                 className={`flex min-h-12 w-full items-center gap-3 rounded-[var(--wb-radius)] border px-3 py-2 text-left transition-[color,background-color,border-color,opacity,transform] ${
                   isSelected

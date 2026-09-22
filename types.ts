@@ -68,6 +68,8 @@ export interface ImageGenerationConfig {
 
 export interface GeneratedImage {
   id: string;
+  providerId?: string | null;
+  mimeType?: string;
   src: string;
   thumbnail?: string;
   preview?: string;

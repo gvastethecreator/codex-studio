@@ -6,9 +6,11 @@ import { getStudioHealth } from '../services/studio-api/runtime';
 export function useWorkerDiagnostics() {
   const [status, setStatus] = useState<WorkerStatus | null>(null);
   const [error, setError] = useState(false);
+  // The recursive one-shot timer is cleared below and the request is aborted on cleanup.
+  // react-doctor-disable-next-line react-doctor/effect-needs-cleanup
   useEffect(() => {
     const controller = new AbortController();
-    let timer: ReturnType<typeof setTimeout>;
+    let timer: ReturnType<typeof setTimeout> | null = null;
     const refresh = async () => {
       try {
         const health = await getStudioHealth(
@@ -30,7 +32,10 @@ export function useWorkerDiagnostics() {
     void refresh();
     return () => {
       controller.abort();
-      clearTimeout(timer);
+      if (timer !== null) {
+        clearTimeout(timer);
+        timer = null;
+      }
     };
   }, []);
   return { status, error };

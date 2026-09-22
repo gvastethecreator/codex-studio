@@ -7,7 +7,8 @@ import {
   IconHeart as Heart,
   IconPalette as Palette,
   IconPlus as Plus,
-  IconEye as Eye,
+  IconInfoCircle as Eye,
+  IconTextPlus as TextPlus,
   IconX as X,
 } from '@tabler/icons-react';
 import React, { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
@@ -66,6 +67,7 @@ export interface StylePresetCardProps {
   theme: StyleTheme;
   FadeImageComponent: StylePresetFadeImageComponent;
   onApply: (preset: StyleRuntimePreset) => void;
+  onUsePrompt?: (preset: StyleRuntimePreset) => void;
   onCopy: (e: React.MouseEvent, preset: StyleRuntimePreset) => void;
   onToggleFavorite: (presetId: string) => void;
   onHoverPreviewChange: (preview: StyleCardHoverPreview | null) => void;
@@ -91,168 +93,49 @@ interface StylePresetResultButtonProps {
   preset: StyleRuntimePreset;
   active: boolean;
   selectionDisabled: boolean;
-  onCycle: (dir: number) => void;
-  onPreview: () => void;
-  hasMultipleImages: boolean;
-  theme: StyleTheme;
   FadeImageComponent: StylePresetFadeImageComponent;
   onApply: (preset: StyleRuntimePreset) => void;
 }
 
-const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
+function StylePresetResultButton({
   activeCardImage,
   preset,
   active,
   selectionDisabled,
-  onCycle,
-  onPreview,
-  hasMultipleImages,
-  theme,
   FadeImageComponent,
   onApply,
-}) => {
-  const presetDisplayName = getStyleRuntimePresetDisplayName(preset);
-
-  const handleCycleFromKeyboard = (e: React.KeyboardEvent, direction: number) => {
-    if (e.key !== 'Enter' && e.key !== ' ') return;
-    e.preventDefault();
-    e.stopPropagation();
-    onCycle(direction);
-  };
-
-  if (activeCardImage) {
-    const variantBadge = hasMultipleImages ? (
-      <div
-        aria-live="polite"
-        aria-atomic="true"
-        data-style-active-image-label={activeCardImage.label}
-        className="pointer-events-none absolute left-1/2 top-2 z-20 -translate-x-1/2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/65 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] shadow-lg backdrop-blur-md"
-      >
-        {activeCardImage.label}
-      </div>
-    ) : null;
-
-    const staleBadge =
-      activeCardImage.kind === 'stale-default' ? (
-        <div className="pointer-events-none absolute left-2 top-11 z-20 rounded-[var(--wb-radius)] border border-amber-400/2 bg-amber-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-warning)] shadow-lg backdrop-blur-md">
-          Stale
-        </div>
-      ) : activeCardImage.kind === 'preview' ? (
-        <div className="pointer-events-none absolute left-2 top-11 z-20 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/15 px-2 py-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)] shadow-lg backdrop-blur-md">
-          Preview
-        </div>
-      ) : null;
-
-    return (
-      <div className="absolute inset-0 group/image">
-        <button
-          type="button"
-          aria-label={`Preview ${presetDisplayName}`}
-          onClick={onPreview}
-          className="absolute inset-0 z-10 cursor-pointer disabled:cursor-not-allowed"
-        >
-          <FadeImageComponent
-            src={activeCardImage.src}
-            width={300}
-            height={400}
-            loading="lazy"
-            decoding="async"
-            className={`style-preset-thumbnail size-full object-cover transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02] ${
-              activeCardImage.kind === 'stale-default'
-                ? 'opacity-[0.82] saturate-[0.86] brightness-[0.92]'
-                : activeCardImage.kind === 'preview'
-                  ? 'opacity-75 saturate-[0.9]'
-                  : 'opacity-[0.96]'
-            }`}
-            alt={presetDisplayName}
-          />
-          {activeCardImage.kind === 'stale-default' ? (
-            <div className="absolute inset-0 bg-[color:var(--wb-panel)]/18 transition-colors group-hover/image:bg-[color:var(--wb-panel)]/10" />
-          ) : null}
-          <div className="absolute inset-0 bg-[color:var(--wb-panel)]/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
-            <div className="flex size-10 items-center justify-center rounded-full border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/55 text-[color:var(--wb-ink)] backdrop-blur-md">
-              <Eye size={18} />
-            </div>
-          </div>
-        </button>
-
-        {staleBadge}
-        {variantBadge}
-
-        {hasMultipleImages && (
-          <div className="pointer-events-none absolute inset-y-0 left-2 right-2 z-30 flex items-center justify-between opacity-0 transition-opacity group-hover/image:opacity-100 group-focus-within/image:opacity-100 [@media(hover:none)]:opacity-100 [@media(pointer:coarse)]:opacity-100">
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                onCycle(-1);
-              }}
-              onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
-              className="studio-ghost-control style-image-control pointer-events-auto"
-              aria-label={`Previous image for ${presetDisplayName}`}
-            >
-              <ChevronLeft size={14} />
-            </button>
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                onCycle(1);
-              }}
-              onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
-              className="studio-ghost-control style-image-control pointer-events-auto"
-              aria-label={`Next image for ${presetDisplayName}`}
-            >
-              <ChevronRight size={14} />
-            </button>
-          </div>
-        )}
-
-        <div className="style-card-select absolute right-2 top-2 z-30">
-          <button
-            type="button"
-            aria-label={`${active ? 'Remove' : 'Select'} style ${presetDisplayName}`}
-            onClick={(e) => {
-              e.stopPropagation();
-              onApply(preset);
-            }}
-            disabled={selectionDisabled}
-            aria-pressed={active}
-            className="studio-ghost-control style-image-control"
-            title={
-              selectionDisabled
-                ? 'Maximum 5 styles selected'
-                : active
-                  ? 'Remove style'
-                  : 'Select style'
-            }
-          >
-            {active ? <Check size={14} /> : <Plus size={14} />}
-          </button>
-        </div>
-      </div>
-    );
-  }
-
+}: StylePresetResultButtonProps) {
+  const name = getStyleRuntimePresetDisplayName(preset);
   return (
     <button
       type="button"
-      onClick={onPreview}
-      className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-[color:var(--wb-panel)] transition-colors hover:bg-[color:var(--wb-bar)] disabled:cursor-not-allowed"
-      aria-label={`Preview ${presetDisplayName}`}
+      className="style-card-image-hit"
+      aria-label={`${active ? 'Remove' : 'Select'} style ${name}`}
+      aria-pressed={active}
+      disabled={selectionDisabled}
+      onClick={() => onApply(preset)}
     >
-      <div
-        className={`flex size-14 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] transition-colors duration-300 group-hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] ${theme.text}`}
-      >
+      {activeCardImage ? (
+        <FadeImageComponent
+          src={activeCardImage.src}
+          width={300}
+          height={400}
+          loading="lazy"
+          decoding="async"
+          className="style-preset-thumbnail size-full object-cover"
+          alt={name}
+        />
+      ) : (
         <Palette size={24} />
-      </div>
-      <span className="translate-y-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)] opacity-0 transition-[opacity,transform] group-hover:translate-y-0 group-hover:opacity-100">
-        Preview
-      </span>
+      )}
+      {active && (
+        <span className="style-card-selection-mark" aria-hidden="true">
+          <Check size={14} />
+        </span>
+      )}
     </button>
   );
-};
+}
 
 export const StylePresetCard = React.memo(function StylePresetCard({
   preset,
@@ -263,10 +146,10 @@ export const StylePresetCard = React.memo(function StylePresetCard({
   selectionDisabled = false,
   copied,
   favorite,
-  theme,
   FadeImageComponent,
   onApply,
   onCopy,
+  onUsePrompt,
   onToggleFavorite,
   onHoverPreviewChange,
 }: StylePresetCardProps) {
@@ -371,69 +254,74 @@ export const StylePresetCard = React.memo(function StylePresetCard({
           } as React.CSSProperties
         }
       >
-        <div className="absolute inset-0 overflow-hidden bg-[color:var(--wb-panel)]">
+        <div className="style-card-media">
           <StylePresetResultButton
             activeCardImage={activeCardImage}
             preset={preset}
             active={active}
             selectionDisabled={selectionDisabled}
-            onCycle={handleCycle}
-            onPreview={() => setPreviewOpen(true)}
-            hasMultipleImages={hasMultipleImages}
-            theme={theme}
             FadeImageComponent={FadeImageComponent}
             onApply={onApply}
           />
         </div>
 
-        <div className="style-card-favorite absolute left-2 top-2 z-30">
-          <button
-            type="button"
-            aria-label={`${favorite ? 'Unpin' : 'Pin'} style ${presetDisplayName}`}
-            aria-pressed={favorite}
-            onClick={(e) => {
-              e.stopPropagation();
-              onToggleFavorite(preset.id);
-            }}
-            className="studio-ghost-control style-image-control"
-            title={favorite ? 'Unpin' : 'Pin to top'}
-          >
-            <Heart
-              size={14}
-              fill={favorite ? 'currentColor' : 'none'}
-              strokeWidth={favorite ? 0 : 2}
-            />
-          </button>
-        </div>
-
-        {!activeCardImage ? (
-          <button
-            type="button"
-            className="studio-ghost-control style-card-select style-tile-action style-image-control"
-            aria-label={`${active ? 'Remove' : 'Select'} style ${presetDisplayName}`}
-            aria-pressed={active}
-            disabled={selectionDisabled}
-            onClick={() => onApply(preset)}
-          >
-            {active ? <Check size={14} /> : <Plus size={14} />}
-          </button>
-        ) : null}
         <button
           type="button"
           className="style-tile-caption"
-          onClick={() => setPreviewOpen(true)}
-          aria-label={`Details for ${presetDisplayName}`}
-          title={presetDisplayName}
+          onClick={() => onApply(preset)}
+          disabled={selectionDisabled}
+          aria-pressed={active}
+          aria-label={`${active ? 'Remove' : 'Select'} style ${presetDisplayName}`}
+          data-tooltip={presetDisplayName}
         >
           {presetDisplayName}
         </button>
+        <div className="style-card-actions catalog-hover-actions">
+          <button
+            type="button"
+            aria-label={`${favorite ? 'Unfavorite' : 'Favorite'} ${presetDisplayName}`}
+            aria-pressed={favorite}
+            onClick={() => onToggleFavorite(preset.id)}
+          >
+            <Heart size={14} fill={favorite ? 'currentColor' : 'none'} />
+          </button>
+          <button
+            type="button"
+            aria-label={`Information about ${presetDisplayName}`}
+            onClick={(event) => {
+              event.stopPropagation();
+              setPreviewOpen(true);
+            }}
+          >
+            <Eye size={16} />
+          </button>
+          <button
+            type="button"
+            aria-label={copied ? 'Prompt copied' : 'Copy prompt'}
+            onClick={(event) => onCopy(event, preset)}
+          >
+            {copied ? <Check size={16} /> : <Copy size={16} />}
+          </button>
+          {onUsePrompt && (
+            <button
+              type="button"
+              aria-label="Use as prompt"
+              onClick={(event) => {
+                event.stopPropagation();
+                onUsePrompt(preset);
+              }}
+            >
+              <TextPlus size={16} />
+            </button>
+          )}
+        </div>
       </div>
       <AnimatePresence>
         {previewOpen ? (
           <dialog
             ref={previewDialogRef}
             className="style-detail-dialog"
-            aria-label={`Preview ${presetDisplayName}`}
+            aria-label={`Information about ${presetDisplayName}`}
             onClose={() => setPreviewOpen(false)}
             onKeyDown={(event) => {
               if (event.key === 'Escape') event.stopPropagation();
@@ -469,6 +357,27 @@ export const StylePresetCard = React.memo(function StylePresetCard({
               />
             ) : (
               <p>No preview available</p>
+            )}
+            {hasMultipleImages && (
+              <div className="style-detail-variants">
+                <button
+                  type="button"
+                  aria-label={`Previous image for ${presetDisplayName}`}
+                  onClick={() => handleCycle(-1)}
+                >
+                  <ChevronLeft size={16} />
+                </button>
+                <span role="status" data-style-active-image-label={activeCardImage?.label}>
+                  {activeCardImage?.label}
+                </span>
+                <button
+                  type="button"
+                  aria-label={`Next image for ${presetDisplayName}`}
+                  onClick={() => handleCycle(1)}
+                >
+                  <ChevronRight size={16} />
+                </button>
+              </div>
             )}
             <div className="style-detail-copy">
               <p>

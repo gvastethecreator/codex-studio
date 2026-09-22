@@ -20,6 +20,7 @@ import { useImageInputSurface } from './useImageInputSurface';
 import { useStudioActionConfirmations } from './useStudioActionConfirmations';
 import { useStudioActivitySession } from './useStudioActivitySession';
 import { useStudioCatalogController } from './useCatalog';
+import { useCarouselSelection } from './useCarouselSelection';
 import { useStudioGallery } from './useStudioGallery';
 import { useCatalogModalDetailHydration } from './useCatalogModalDetailHydration';
 import { useGenerationQueueController } from './useGenerationQueueController';
@@ -45,6 +46,7 @@ import {
   buildStudioViewportController,
   type StudioPageController,
 } from '../lib/buildStudioPageController';
+import { materializeCatalogEntryImageWithConfig } from '../lib/studioCatalogImageAdapter';
 import { resolveStudioCarouselImage } from '../lib/studioCarouselImage';
 import type { LogEntry } from '../types';
 import type { CodexExecutionTransport } from '../packages/shared/src/codexExecutionContract';
@@ -52,6 +54,8 @@ import type { CodexExecutionTransport } from '../packages/shared/src/codexExecut
 const EMPTY_RUNTIME_LOGS: LogEntry[] = [];
 
 export interface StudioShellController {
+  history: ReturnType<typeof useStudioCatalogController>['historyCatalog'];
+  historySelection: { id: string | null; setId: (id: string) => void };
   librarySearch: { query: string; setQuery: (value: string) => void };
   root: {
     onDragOver: ReturnType<typeof useImageInputSurface>['handleDragOver'];
@@ -120,9 +124,16 @@ export function useStudioShell(): StudioShellController {
   const pipeline = useGenerationRun();
   const { recipe, ui } = useGenerationChrome();
   const modal = useGenerationModal();
+  const { id: historySelectedId, select: selectHistoryImage } = useCarouselSelection(
+    activeWorkspaceId,
+    modal.activeCarouselId,
+    modal.isModalOpen && route.view !== 'studio',
+  );
   const viewState = useStudioViewState({ closeOverlay });
+  const studioSettings = useStudioSettings({ addToast });
   const {
     activeCatalog,
+    historyCatalog,
     workspaceSummaries,
     trashCatalog,
     catalogVisualGroupCount,
@@ -140,6 +151,12 @@ export function useStudioShell(): StudioShellController {
     hydrateCatalogDetail,
   } = useStudioCatalogController({
     query: route.view === 'studio' ? deferredCatalogQuery : '',
+    historyEnabled: route.view !== 'studio',
+    historySelectedId,
+    historyRecipeId:
+      studioSettings.data.settingsDomain.settings?.showWorkspaceHistoryInCarousel === false
+        ? (recipe.activeRecipe ?? null)
+        : undefined,
     activeWorkspaceId,
     isTrashOpen: viewState.overlays.trash.isOpen,
     addToast,
@@ -155,7 +172,6 @@ export function useStudioShell(): StudioShellController {
     shouldAutoOpen: workspaceSummaries.length === 0 && route.view === 'studio',
     onCatalogChanged: refreshCatalogs,
   });
-  const studioSettings = useStudioSettings({ addToast });
   const queueCounts = useMemo(() => {
     const jobs = studioRuntime.activity.studioJobs;
     return {
@@ -376,21 +392,27 @@ export function useStudioShell(): StudioShellController {
     closeModal: handleCloseModal,
     onRequestClearWorkspace: requestClearWorkspace,
   });
+  const historyImages = useMemo(
+    () => historyCatalog.entries.map(materializeCatalogEntryImageWithConfig),
+    [historyCatalog.entries],
+  );
+  const carouselImages = route.view === 'studio' ? imagesWithConfig : historyImages;
   const activeCarouselImage = useMemo(
     () =>
       resolveStudioCarouselImage({
         activeCarouselId: modal.activeCarouselId,
         modalImage: modal.modalImage,
-        images: imagesWithConfig,
+        images: carouselImages,
       }),
-    [imagesWithConfig, modal.activeCarouselId, modal.modalImage],
+    [carouselImages, modal.activeCarouselId, modal.modalImage],
   );
 
   useCatalogModalDetailHydration({
     isModalOpen: modal.isModalOpen,
     activeImageId: modal.activeCarouselId,
-    catalogById: activeCatalog.view.byId,
-    hydrateCatalogDetail,
+    catalogById: route.view === 'studio' ? activeCatalog.view.byId : historyCatalog.view.byId,
+    hydrateCatalogDetail:
+      route.view === 'studio' ? hydrateCatalogDetail : historyCatalog.hydrateDetail,
     log,
   });
 
@@ -410,11 +432,11 @@ export function useStudioShell(): StudioShellController {
     () =>
       buildStudioShellOverlayController({
         image: {
-          modalImage: activeCarouselImage,
-          imagesWithConfig,
+          modalImage: modal.isModalOpen ? activeCarouselImage : null,
+          imagesWithConfig: carouselImages,
           activeGenerationConfig: pipeline.activeGenerationConfig,
           closeModal: handleCloseModal,
-          handleDelete,
+          handleDelete: deleteCatalogImage,
           handleGenerate,
           handleAddToContext: handleUseAsReference,
           handleLoadRecipe,
@@ -503,9 +525,12 @@ export function useStudioShell(): StudioShellController {
       }),
     [
       activeCarouselImage,
+      modal.isModalOpen,
+      carouselImages,
       imagesWithConfig,
       pipeline.activeGenerationConfig,
       handleCloseModal,
+      deleteCatalogImage,
       handleDelete,
       handleGenerate,
       handleUseAsReference,
@@ -578,6 +603,9 @@ export function useStudioShell(): StudioShellController {
           (provider) => provider.providerId === 'grok',
         )?.canAttemptExecution,
       }),
+      intentionalStylesV1: Boolean(
+        studioSettings.data.settingsDomain.settings?.intentionalStylesV1,
+      ),
     }),
     [
       handleGenerate,
@@ -587,6 +615,7 @@ export function useStudioShell(): StudioShellController {
       studioSettings.data.settingsDomain.settings?.defaultProviderId,
       studioSettings.data.providerDomain.capabilities,
       studioSettings.data.providerDomain.runtimePreflight,
+      studioSettings.data.settingsDomain.settings?.intentionalStylesV1,
     ],
   );
 
@@ -643,6 +672,9 @@ export function useStudioShell(): StudioShellController {
         },
       }),
     [
+      historyCatalog,
+      historySelectedId,
+      selectHistoryImage,
       catalogQuery,
       handleRecipeSelection,
       workspaces,
@@ -755,8 +787,8 @@ export function useStudioShell(): StudioShellController {
       viewState.editor.open,
       openEditorRoute,
       studioRuntime.maintenance.verifyCodexSession,
-      studioSettings.data.settingsDomain.settings?.defaultProviderId,
       studioSettings.data.settingsDomain.settings,
+      studioSettings.data.settingsDomain.update,
       studioSettings.data.settingsDomain.isSaving,
       studioSettings.data.providerDomain.capabilities,
       studioSettings.data.providerDomain.runtimePreflight,
@@ -906,6 +938,8 @@ export function useStudioShell(): StudioShellController {
 
   return useMemo(
     (): StudioShellController => ({
+      history: historyCatalog,
+      historySelection: { id: historySelectedId, setId: selectHistoryImage },
       librarySearch: { query: catalogQuery, setQuery: setCatalogQuery },
       root: {
         onDragOver: handleDragOver,
@@ -926,6 +960,9 @@ export function useStudioShell(): StudioShellController {
       overlays: overlayController,
     }),
     [
+      historyCatalog,
+      historySelectedId,
+      selectHistoryImage,
       catalogQuery,
       handleDragOver,
       handleDragLeave,

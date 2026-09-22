@@ -238,7 +238,7 @@ function TimelineBottomDock({
             type="button"
             onClick={onToggleOnionSkin}
             className={`h-10 px-4 rounded-[var(--wb-radius)] border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]' : 'bg-transparent border-[color:var(--wb-line)] text-[color:var(--wb-muted)]'}`}
-            title="Toggle Onion Skin"
+            data-tooltip="Toggle Onion Skin"
           >
             <Layers size={14} />
             <span className="text-[length:var(--wbp-label)] font-semibold tracking-normal">

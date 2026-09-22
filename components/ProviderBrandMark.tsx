@@ -1,30 +1,51 @@
-import {
-  IconApi,
-  IconBolt,
-  IconBrandGoogle,
-  IconBrandOpenai,
-  IconBrandX,
-  IconFlask,
-  IconTopologyStar3,
-} from '@tabler/icons-react';
-
+import { IconApi, IconFlask } from '@tabler/icons-react';
+import codexMark from '../assets/providers/codex.svg';
+import grokMark from '../assets/providers/grok.svg';
+import googleMark from '../assets/providers/google.svg';
+import antigravityMark from '../assets/providers/antigravity.svg';
+import falMark from '../assets/providers/fal.svg';
+import comfyMark from '../assets/providers/comfy.svg';
 import { providerBrandWellClass, providerRuntimeStatusDotClass } from '../lib/providerBrand';
 
 const SIZE = {
-  xs: { well: 'size-6 rounded-md', icon: 14 },
-  sm: { well: 'size-8 rounded-lg', icon: 16 },
-  md: { well: 'size-9 rounded-lg', icon: 18 },
+  xs: { well: 'size-6', icon: 18 },
+  sm: { well: 'size-8', icon: 22 },
+  md: { well: 'size-9', icon: 24 },
 } as const;
 
+const PROVIDER_MARKS: Record<string, string> = {
+  codex: codexMark,
+  grok: grokMark,
+  google: googleMark,
+  antigravity: antigravityMark,
+  fal: falMark,
+  comfy: comfyMark,
+};
+
 function ProviderGlyph({ providerId, size }: { providerId: string; size: number }) {
-  if (providerId === 'codex') return <IconBrandOpenai size={size} stroke={1.7} />;
-  if (providerId === 'grok') return <IconBrandX size={size} stroke={1.7} />;
-  if (providerId === 'google') return <IconBrandGoogle size={size} stroke={1.7} />;
-  if (providerId === 'antigravity') return <IconTopologyStar3 size={size} stroke={1.7} />;
-  if (providerId === 'fal') return <IconBolt size={size} stroke={1.7} />;
-  if (providerId === 'comfy') return <IconTopologyStar3 size={size} stroke={1.7} />;
-  if (providerId === 'dry_run') return <IconFlask size={size} stroke={1.7} />;
-  return <IconApi size={size} stroke={1.7} />;
+  const src = PROVIDER_MARKS[providerId];
+  if (src && ['codex', 'grok', 'fal'].includes(providerId))
+    return (
+      <span
+        className={`provider-mark provider-mark-${providerId} provider-mark-monochrome`}
+        style={{
+          width: providerId === 'fal' ? size * 2 : size,
+          height: size,
+          maskImage: `url("${src}")`,
+        }}
+      />
+    );
+  if (src)
+    return (
+      <img
+        src={src}
+        width={size}
+        height={size}
+        alt=""
+        className={`provider-mark provider-mark-${providerId}`}
+      />
+    );
+  return providerId === 'dry_run' ? <IconFlask size={size} /> : <IconApi size={size} />;
 }
 
 export function ProviderBrandMark({
@@ -47,7 +68,7 @@ export function ProviderBrandMark({
     <span className={`relative shrink-0 ${className}`}>
       <span
         aria-hidden="true"
-        className={`grid place-items-center border ${metric.well} ${providerBrandWellClass(providerId)}`}
+        className={`grid place-items-center ${metric.well} ${providerBrandWellClass(providerId)}`}
       >
         <ProviderGlyph providerId={providerId} size={metric.icon} />
       </span>

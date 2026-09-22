@@ -37,6 +37,7 @@ function buildAnimationSequenceContext(params: RecipeContextParams) {
       total: contract.frameCount,
       generation_order: frame.generationOrder,
       strategy: frame.strategy,
+      semantic_phase: frame.semanticPhase,
       keyframe: frame.isKeyframe,
       references: executableReferenceFrameIds,
     },
@@ -50,6 +51,8 @@ function buildAnimationSequenceContext(params: RecipeContextParams) {
       continuity: contract.continuity,
       style_lock: contract.styleLock,
       background: contract.background,
+      identity_anchor: contract.identityAnchor,
+      motion_driver: contract.motionDriver,
     },
     instructions: [
       frame.prompt,

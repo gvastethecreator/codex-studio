@@ -25,6 +25,12 @@ const PRESET: StyleRuntimePreset = {
 
 describe('StylePresetCard', () => {
   it('shows the active image label while cycling provider variants', () => {
+    HTMLDialogElement.prototype.showModal = function () {
+      this.setAttribute('open', '');
+    };
+    const onApply = vi.fn();
+    const onUsePrompt = vi.fn();
+    const onCopy = vi.fn();
     const { container } = render(
       <StylePresetCard
         preset={PRESET}
@@ -49,23 +55,31 @@ describe('StylePresetCard', () => {
           text: 'text-cyan-400',
         }}
         FadeImageComponent={(props) => <img {...props} />}
-        onApply={() => {}}
-        onCopy={() => {}}
+        onApply={onApply}
+        onCopy={onCopy}
+        onUsePrompt={onUsePrompt}
         onToggleFavorite={() => {}}
         onHoverPreviewChange={() => {}}
       />,
     );
 
+    fireEvent.click(screen.getAllByRole('button', { name: 'Select style Polished Glass' })[0]);
+    expect(onApply).toHaveBeenCalledExactlyOnceWith(PRESET);
+    expect(screen.queryByRole('dialog')).toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'Copy prompt' }));
+    fireEvent.click(screen.getByRole('button', { name: 'Use as prompt' }));
+    expect(onCopy).toHaveBeenCalledTimes(1);
+    expect(onUsePrompt).toHaveBeenCalledExactlyOnceWith(PRESET);
+    expect(onApply).toHaveBeenCalledTimes(1);
+    fireEvent.click(screen.getByRole('button', { name: 'Information about Polished Glass' }));
     expect(screen.getByText('Card', { selector: '[data-style-active-image-label]' })).toBeTruthy();
-    expect(container.querySelector('[data-style-image-label="Card"]')).toBeTruthy();
-
     fireEvent.click(screen.getByRole('button', { name: 'Next image for Polished Glass' }));
-
     expect(screen.getByText('Grok', { selector: '[data-style-active-image-label]' })).toBeTruthy();
     expect(container.querySelector('[data-style-image-label="Grok"]')).toBeTruthy();
-    expect((screen.getByAltText('Polished Glass') as HTMLImageElement).src).toContain(
+    expect((screen.getAllByAltText('Polished Glass')[0] as HTMLImageElement).src).toContain(
       '/style-grok.webp',
     );
+    expect(onApply).toHaveBeenCalledTimes(1);
   });
 
   it('keeps preview available but disables adding when all five slots are occupied', () => {
@@ -102,12 +116,14 @@ describe('StylePresetCard', () => {
       />,
     );
 
-    const imageAction = screen.getByRole('button', { name: 'Preview Polished Glass' });
-    const compactAction = screen.getByRole('button', { name: 'Select style Polished Glass' });
+    const imageAction = screen.getByRole('button', { name: 'Information about Polished Glass' });
+    const selectionActions = screen.getAllByRole('button', { name: 'Select style Polished Glass' });
 
     expect((imageAction as HTMLButtonElement).disabled).toBe(false);
-    expect((compactAction as HTMLButtonElement).disabled).toBe(true);
-    fireEvent.click(compactAction);
+    for (const action of selectionActions) {
+      expect((action as HTMLButtonElement).disabled).toBe(true);
+      fireEvent.click(action);
+    }
     expect(onApply).not.toHaveBeenCalled();
   });
 });

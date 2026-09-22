@@ -1,3 +1,4 @@
+import { PagedStyleCatalog } from './PagedStyleCatalog';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import { useWorkspaceState } from '../../contexts/GlobalContext';
 import {
@@ -80,14 +81,13 @@ import {
   estimateStyleGroupPlaceholderHeight,
   type StyleGridVirtualWindow,
 } from './styleGridVirtualization';
-import { describeStyleValue } from './styleLayerComposer';
+import { buildStylePromptText } from './stylePromptText';
 import {
   createStylePresetCatalogSearchIndexFromRuntimePacks,
   type StylePresetCatalogSearchResult,
 } from './stylePresetManifests';
 import {
   getStyleRuntimePresetDisplayName,
-  getStyleRuntimePresetSearchNames,
   STYLE_RUNTIME_PACK_SUMMARIES,
   type StyleRuntimePack,
   type StyleRuntimePreset,
@@ -143,6 +143,7 @@ export interface StylesBrowserProps {
   onSelectImage?: (image: GeneratedImageWithConfig) => void;
   activeProviderId?: GenerationProviderId;
   grokCanExecute?: boolean;
+  intentionalStylesV1?: boolean;
 }
 
 const FAVORITES_PACK_ID = 'favorites';
@@ -612,7 +613,7 @@ const StylePresetGroupSection = React.memo(
       if (rect.bottom >= rootRect.top - 220 && rect.top <= rootRect.bottom + 220) {
         setIsNearViewport(true);
       }
-    }, [initiallyVisible, isNearViewport]);
+    }, [initiallyVisible, isNearViewport, scrollRootRef]);
 
     useEffect(() => {
       if (initiallyVisible) {
@@ -883,6 +884,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   images = EMPTY_IMAGES,
   activeProviderId = 'codex',
   grokCanExecute = false,
+  intentionalStylesV1 = false,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const referenceImages = config.attachments.slice(0, MAX_STYLE_REFERENCE_IMAGES);
@@ -902,6 +904,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     referenceImages,
     generationBlocked: Boolean(grokGenerateBlock),
     maxSlots: MAX_SELECTED_STYLE_SLOTS,
+    intentionalStylesV1,
   });
   const {
     selectedStyles,
@@ -917,6 +920,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     removeSelectedStyle,
     moveSelectedStyle,
     handleGenerateSelectedStyles,
+    compileIssues,
+    intentionalMode,
+    setIntentionalMode,
   } = composition;
   const [styleCollectionsModule, setStyleCollectionsModule] =
     useState<StyleCollectionsModule | null>(null);
@@ -1178,8 +1184,11 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     styleRuntimeError,
     retryStylePacks,
   } = useStyleRuntimePacks({
-    requiredPackIds: explorerOpen ? styleRuntimePackLoadRequest.requiredPackIds : [],
-    loadAll: explorerOpen && styleRuntimePackLoadRequest.loadAll,
+    requiredPackIds:
+      explorerOpen && !styleRuntimePackLoadRequest.loadAll
+        ? styleRuntimePackLoadRequest.requiredPackIds
+        : [],
+    loadAll: false,
   });
 
   const prefetchStyleTab = useCallback(
@@ -1271,9 +1280,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   const allRuntimeStylePacksLoaded = STYLE_RUNTIME_PACK_IDS.every((packId) =>
     Boolean(loadedStylePacksById[packId]),
   );
-  const globalStylePresetCount = globalStylePacks.reduce(
-    (total, pack) => total + pack.presets.length,
-    0,
+  const globalStylePresetCount = STYLE_RUNTIME_PACK_SUMMARIES.reduce(
+    (total, pack) => total + pack.presetCount,
+    userStylePack.presets.length,
   );
   const globalStyleCategoryCount = useMemo(() => {
     const keys = new Set<string>();
@@ -1489,7 +1498,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: null }));
   }, [filterKey]);
 
-  const processedData = useMemo(
+  const fullProcessedData = useMemo(
     () =>
       createStyleBrowserProcessedData({
         activePack,
@@ -1527,6 +1536,8 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       showFavoritesOnly,
     ],
   );
+
+  const processedData = fullProcessedData;
 
   const styleRenderPlan = useMemo(
     () =>
@@ -1702,37 +1713,6 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     [applyStyleTab, setCatalogOpen, writeStyleTabHash],
   );
 
-  const handleApplyCatalogPreset = useCallback(
-    async (result: StylePresetCatalogSearchResult) => {
-      let loadedPack = loadedStylePacksById[result.packId];
-      if (!loadedPack) {
-        try {
-          [loadedPack] = await loadStyleRuntimePacks([result.packId]);
-        } catch {
-          return;
-        }
-      }
-      const preset = loadedPack?.presets.find((candidate) => candidate.id === result.id);
-      if (!preset) return;
-
-      applyStyleTab(result.packId, {
-        browserStatePatch: {
-          isCatalogSearchOpen: false,
-        },
-      });
-      writeStyleTabHash(result.packId);
-      setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
-      handleApplyStyleRef.current(preset, result.packId);
-    },
-    [
-      loadedStylePacksById,
-      loadStyleRuntimePacks,
-      applyStyleTab,
-      writeStyleTabHash,
-      handleApplyStyleRef,
-    ],
-  );
-
   const handleChooseCompactStyle = useCallback(
     async (result: StylePresetCatalogSearchResult) => {
       if (selectedStyleIds.has(result.id)) {
@@ -1767,34 +1747,57 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     ],
   );
 
-  const handleCopyStylePrompt = useCallback((e: React.MouseEvent, preset: StyleRuntimePreset) => {
-    e.stopPropagation();
-    const displayName = getStyleRuntimePresetDisplayName(preset);
-    const styleAnchors = getStyleRuntimePresetSearchNames(preset).filter(
-      (name) => name !== displayName,
-    );
-    const styleAnchorLine =
-      styleAnchors.length > 0 ? `**Style Anchors:** ${styleAnchors.join(', ')}\n` : '';
-    const promptText = `
-**Style:** ${displayName}
-${styleAnchorLine}
-**Aesthetic:** ${preset.style.aesthetic}
-**Subject:** ${describeStyleValue(preset.style.subject_treatment ?? preset.style.form_and_line)}
-**Color:** ${describeStyleValue(preset.style.color_and_tone ?? preset.style.color_palette)}
-**Lighting:** ${describeStyleValue(preset.style.lighting_and_shadow ?? preset.style.lighting_setup)}
-**Texture:** ${describeStyleValue(preset.style.texture_and_material ?? preset.style.material_texture)}
-**Camera:** ${describeStyleValue(preset.style.camera_and_composition ?? preset.style.spatial_distortion)}
-**Mood:** ${describeStyleValue(preset.style.atmosphere_and_mood ?? preset.style.atmosphere)}
-**Quality:** ${describeStyleValue(preset.style.rendering_and_quality ?? preset.style.render_quality)}
-`.trim();
-    void navigator.clipboard.writeText(promptText);
-    setInteractionState((prev) => ({ ...prev, copiedStyleId: preset.id }));
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    timeoutRef.current = window.setTimeout(
-      () => setInteractionState((prev) => ({ ...prev, copiedStyleId: null })),
-      2000,
-    );
-  }, []);
+  const [previousPrompt, setPreviousPrompt] = useState<string | null>(null);
+  const [promptNotice, setPromptNotice] = useState('');
+  const handleUseStylePrompt = useCallback(
+    (preset: StyleRuntimePreset) => {
+      setPreviousPrompt(config.prompt ?? '');
+      updateConfig('prompt', buildStylePromptText(preset));
+      setPromptNotice('Style added as prompt.');
+    },
+    [config.prompt, updateConfig],
+  );
+  const handleCatalogPrompt = async (
+    result: StylePresetCatalogSearchResult,
+    action: 'copy' | 'use',
+  ) => {
+    try {
+      const pack =
+        result.packId === USER_STYLE_PACK_ID
+          ? userStylePack
+          : (loadedStylePacksById[result.packId] ??
+            (await loadStyleRuntimePacks([result.packId]))[0]);
+      const preset = pack?.presets.find((candidate) => candidate.id === result.id);
+      if (!preset) throw new Error('Style unavailable');
+      if (action === 'use') handleUseStylePrompt(preset);
+      else {
+        await navigator.clipboard.writeText(buildStylePromptText(preset));
+        setPromptNotice('Prompt copied.');
+      }
+    } catch {
+      setPromptNotice('Could not load or copy this style. Please try again.');
+    }
+  };
+
+  const handleCopyStylePrompt = useCallback(
+    async (e: React.MouseEvent, preset: StyleRuntimePreset) => {
+      e.stopPropagation();
+      const promptText = buildStylePromptText(preset);
+      try {
+        await navigator.clipboard.writeText(promptText);
+      } catch {
+        setPromptNotice('Could not copy prompt. Please try again.');
+        return;
+      }
+      setInteractionState((prev) => ({ ...prev, copiedStyleId: preset.id }));
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      timeoutRef.current = window.setTimeout(
+        () => setInteractionState((prev) => ({ ...prev, copiedStyleId: null })),
+        2000,
+      );
+    },
+    [],
+  );
 
   const handleHoverPreviewChange = useCallback(
     (preview: StyleCardHoverPreview | null) => {
@@ -1836,6 +1839,7 @@ ${styleAnchorLine}
           FadeImageComponent={StyleFadeImage}
           onApply={(selectedPreset) => handleApplyStyleRef.current(selectedPreset, presetPackId)}
           onCopy={handleCopyStylePrompt}
+          onUsePrompt={handleUseStylePrompt}
           onToggleFavorite={toggleFavorite}
           onHoverPreviewChange={handleHoverPreviewChange}
         />
@@ -1854,6 +1858,7 @@ ${styleAnchorLine}
       getPresetVisualState,
       handleHoverPreviewChange,
       handleCopyStylePrompt,
+      handleUseStylePrompt,
       handleApplyStyleRef,
     ],
   );
@@ -2046,11 +2051,11 @@ ${styleAnchorLine}
                           }
                           disabled={!previousStyleTab}
                           data-style-tab-previous
-                          aria-label="Previous style tab"
-                          title={
+                          aria-label="Previous category"
+                          data-tooltip={
                             previousStyleTab
                               ? `Previous: ${previousStyleTab.label}`
-                              : 'No previous tab'
+                              : 'No previous category'
                           }
                         >
                           <ChevronLeft size={15} />
@@ -2060,8 +2065,10 @@ ${styleAnchorLine}
                           onClick={() => nextStyleTab && navigateToStyleTab(nextStyleTab.id)}
                           disabled={!nextStyleTab}
                           data-style-tab-next
-                          aria-label="Next style tab"
-                          title={nextStyleTab ? `Next: ${nextStyleTab.label}` : 'No next tab'}
+                          aria-label="Next category"
+                          data-tooltip={
+                            nextStyleTab ? `Next: ${nextStyleTab.label}` : 'No next category'
+                          }
                         >
                           <ChevronRight size={15} />
                         </button>
@@ -2137,28 +2144,6 @@ ${styleAnchorLine}
                   </div>
                 </div>
 
-                <label className="flex items-center gap-2 px-3 py-2 text-xs text-[color:var(--wb-muted)]">
-                  Source pack
-                  <select
-                    aria-label="Filter styles by source pack"
-                    className="min-w-0 flex-1 bg-[color:var(--wb-panel)] p-1"
-                    value={
-                      STYLE_RUNTIME_PACK_IDS.includes(currentPackId) && !isPackLandingOpen
-                        ? currentPackId
-                        : ''
-                    }
-                    onChange={(event) =>
-                      navigateToStyleTab(event.target.value || ALL_STYLE_CARDS_TAB_ID)
-                    }
-                  >
-                    <option value="">All sources</option>
-                    {STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => (
-                      <option key={pack.id} value={pack.id}>
-                        {pack.name}
-                      </option>
-                    ))}
-                  </select>
-                </label>
                 {isPackLandingOpen ? (
                   <React.Suspense
                     fallback={
@@ -2252,7 +2237,7 @@ ${styleAnchorLine}
                                 }}
                                 data-style-create-user-style
                                 className="studio-ghost-control style-catalog-control style-catalog-menu-action"
-                                title="Create Style"
+                                data-tooltip="Create Style"
                               >
                                 <Plus size={15} />
                                 <span className="inline">Create</span>
@@ -2269,7 +2254,7 @@ ${styleAnchorLine}
                                 disabled={!canSaveStyleBlend}
                                 data-style-save-blend
                                 className="studio-ghost-control style-catalog-control style-catalog-menu-action"
-                                title="Save Blend"
+                                data-tooltip="Save Blend"
                               >
                                 <Layers size={15} />
                                 <span className="inline">Blend</span>
@@ -2287,7 +2272,7 @@ ${styleAnchorLine}
                                 disabled={!canEditActiveUserStyle && !canCloneActiveStyle}
                                 data-style-edit-or-clone
                                 className="studio-ghost-control style-catalog-control style-catalog-menu-action"
-                                title={canEditActiveUserStyle ? 'Edit Style' : 'Clone Style'}
+                                data-tooltip={canEditActiveUserStyle ? 'Edit Style' : 'Clone Style'}
                               >
                                 {canEditActiveUserStyle ? (
                                   <PenTool size={15} />
@@ -2311,7 +2296,7 @@ ${styleAnchorLine}
                                 aria-label="Show grouped style categories"
                                 aria-pressed={activeStyleViewMode === 'grouped'}
                                 className="studio-ghost-control style-catalog-control style-catalog-icon"
-                                title="Categories"
+                                data-tooltip="Categories"
                               >
                                 <Layers size={14} />
                               </button>
@@ -2321,7 +2306,7 @@ ${styleAnchorLine}
                                 aria-label="Show all style cards in one grid"
                                 aria-pressed={activeStyleViewMode === 'flat'}
                                 className="studio-ghost-control style-catalog-control style-catalog-icon"
-                                title="All cards"
+                                data-tooltip="All cards"
                               >
                                 <LayoutGrid size={14} />
                               </button>
@@ -2338,7 +2323,7 @@ ${styleAnchorLine}
                               aria-expanded={isSortDropdownOpen}
                               aria-controls={sortMenuId}
                               className="studio-ghost-control style-catalog-control style-catalog-sort"
-                              title="Sort styles"
+                              data-tooltip="Sort styles"
                             >
                               <ArrowUpDown size={14} className="shrink-0" />
                               <span className="min-w-0 flex-1 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)]">
@@ -2401,7 +2386,7 @@ ${styleAnchorLine}
                               onClick={() => toggleFavoritesOnly()}
                               aria-pressed={showFavoritesOnly}
                               className="studio-ghost-control style-catalog-control style-catalog-icon"
-                              title="Filter Favorites in this Pack"
+                              data-tooltip="Filter Favorites in this Pack"
                             >
                               <Heart size={16} fill={showFavoritesOnly ? 'currentColor' : 'none'} />
                             </button>
@@ -2422,7 +2407,7 @@ ${styleAnchorLine}
                               onChange={(e) => setGridColumnPref(Number(e.target.value))}
                               className="h-1.5 w-20 accent-white"
                               aria-label="Style grid zoom"
-                              title="Style card columns"
+                              data-tooltip="Style card columns"
                             />
                             <span className="w-4 text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-ink)] tabular-nums">
                               {gridColumns}
@@ -2432,187 +2417,207 @@ ${styleAnchorLine}
                       </div>
                     </div>
 
-                    <div
-                      className={`style-folder-layout grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6 ${
-                        isStyleNavigationPanelOpen
-                          ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
-                          : 'lg:grid-cols-[40px_minmax(0,1fr)]'
-                      }`}
-                    >
-                      {isStyleNavigationPanelOpen ? (
-                        <React.Suspense
-                          fallback={
-                            <LazySurfaceFallback
-                              label="Loading style map"
-                              className="hidden min-h-0 lg:flex"
-                            />
-                          }
-                        >
-                          <StyleRecipeNavigationPanel
-                            sections={styleRecipeNavigationSections}
-                            activeTabId={currentStyleTabId}
-                            onOpen={navigateToStyleTab}
-                            onClose={() => toggleStylePanel('navigation')}
-                          />
-                        </React.Suspense>
-                      ) : (
-                        <aside
-                          data-style-detail-navigation-rail
-                          className="hidden min-h-0 min-w-0 items-start justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
-                        >
-                          <button
-                            type="button"
-                            onClick={() => toggleStylePanel('navigation')}
-                            data-style-detail-navigation-toggle
-                            className="flex size-7 items-center justify-center rounded-[var(--wb-radius)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                            aria-label="Show style map"
-                            title="Show style map"
-                          >
-                            <ChevronRight size={14} />
-                          </button>
-                        </aside>
-                      )}
+                    {styleRuntimePackLoadRequest.loadAll ? (
+                      <PagedStyleCatalog
+                        query={searchQuery}
+                        sortOrder={sortOrder}
+                        favorites={favorites}
+                        favoritesOnly={showFavoritesOnly || currentPackId === FAVORITES_PACK_ID}
+                        extraIndex={userSearchIndex}
+                        loadedPacks={{
+                          ...loadedStylePacksById,
+                          [USER_STYLE_PACK_ID]: userStylePack,
+                        }}
+                        loadPacks={loadStyleRuntimePacks}
+                        renderCard={renderPresetCard}
+                        columns={gridColumns}
+                        onWidthChange={setStyleScrollWidth}
+                        grouped={activeStyleViewMode === 'grouped'}
+                      />
+                    ) : (
                       <div
-                        ref={styleScrollRootRef}
-                        className="min-h-0 min-w-0 overflow-y-auto pb-12 custom-scrollbar"
+                        className={`style-folder-layout grid min-h-0 min-w-0 flex-1 gap-4 px-4 py-3 sm:px-5 2xl:px-6 ${
+                          isStyleNavigationPanelOpen
+                            ? 'lg:grid-cols-[260px_minmax(0,1fr)]'
+                            : 'lg:grid-cols-[40px_minmax(0,1fr)]'
+                        }`}
                       >
-                        <React.Suspense
-                          fallback={
-                            <LazySurfaceFallback
-                              label="Loading style cards"
-                              className="flex min-h-64 items-center justify-center text-[color:var(--wb-muted)]"
+                        {isStyleNavigationPanelOpen ? (
+                          <React.Suspense
+                            fallback={
+                              <LazySurfaceFallback
+                                label="Loading style map"
+                                className="hidden min-h-0 lg:flex"
+                              />
+                            }
+                          >
+                            <StyleRecipeNavigationPanel
+                              sections={styleRecipeNavigationSections}
+                              activeTabId={currentStyleTabId}
+                              onOpen={navigateToStyleTab}
+                              onClose={() => toggleStylePanel('navigation')}
                             />
-                          }
+                          </React.Suspense>
+                        ) : (
+                          <aside
+                            data-style-detail-navigation-rail
+                            className="hidden min-h-0 min-w-0 items-start justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]/70 p-1.5 lg:flex"
+                          >
+                            <button
+                              type="button"
+                              onClick={() => toggleStylePanel('navigation')}
+                              data-style-detail-navigation-toggle
+                              className="flex size-7 items-center justify-center rounded-[var(--wb-radius)] text-[color:var(--wb-muted)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                              aria-label="Show style map"
+                              data-tooltip="Show style map"
+                            >
+                              <ChevronRight size={14} />
+                            </button>
+                          </aside>
+                        )}
+                        <div
+                          ref={styleScrollRootRef}
+                          className="min-h-0 min-w-0 overflow-y-auto pb-12 custom-scrollbar"
                         >
-                          <div className="w-full space-y-6 pb-20">
-                            {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
-                            {processedData.favorites.length > 0 &&
-                              currentPackId !== FAVORITES_PACK_ID && (
-                                <StylePresetGroupSection
-                                  key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
-                                  groupKey="favorites"
-                                  title="Pinned / Favorites"
-                                  presets={processedData.favorites}
-                                  gridColumns={gridColumns}
-                                  scrollRootRef={styleScrollRootRef}
-                                  scrollContainerWidth={styleScrollWidth}
-                                  initiallyVisible
-                                  headerClassName="opacity-100"
-                                  accentClassName="bg-rose-500"
-                                  titleClassName="text-[color:var(--wb-danger)]"
-                                  dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
-                                  renderPresetCard={renderPresetCard}
-                                />
-                              )}
-
-                            {visibleStyleGroupEntries.map(([groupKey, presets], index) => {
-                              const isFlatStyleGroup =
-                                activeStyleViewMode === 'flat' &&
-                                groupKey === STYLE_BROWSER_FLAT_GROUP_KEY;
-                              const categoryIdentity = isFlatStyleGroup
-                                ? null
-                                : resolveStyleCategoryIdentity(currentPackId, groupKey);
-                              return (
-                                <StylePresetGroupSection
-                                  key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
-                                  groupKey={groupKey}
-                                  title={isFlatStyleGroup ? 'All Styles' : groupKey}
-                                  icon={
-                                    isFlatStyleGroup || !categoryIdentity ? (
-                                      <LayoutGrid size={12} />
-                                    ) : (
-                                      <StyleCategoryGlyph
-                                        iconId={categoryIdentity.iconId}
-                                        size={12}
-                                      />
-                                    )
-                                  }
-                                  presets={presets}
-                                  gridColumns={gridColumns}
-                                  scrollRootRef={styleScrollRootRef}
-                                  scrollContainerWidth={styleScrollWidth}
-                                  initiallyVisible={index < styleCategoryEagerBudget}
-                                  headerClassName=""
-                                  accentClassName={
-                                    categoryIdentity?.accentClassName ?? activeTheme.bg
-                                  }
-                                  titleClassName={
-                                    categoryIdentity?.titleClassName ?? 'text-[color:var(--wb-ink)]'
-                                  }
-                                  dividerClassName="bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
-                                  renderPresetCard={renderPresetCard}
-                                />
-                              );
-                            })}
-
-                            {filteredStylePresets.length === 0 && (
-                              <div className="h-64 flex flex-col items-center justify-center text-[color:var(--wb-dim)] gap-4">
-                                {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
-                                  <>
-                                    <Filter size={32} className="opacity-20" />
-                                    <span className="text-xs font-bold tracking-normal">
-                                      Could not load this style pack
-                                    </span>
-                                    <button
-                                      type="button"
-                                      onClick={retryStylePacks}
-                                      className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                                    >
-                                      <Wand2 size={13} />
-                                      Retry
-                                    </button>
-                                  </>
-                                ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
-                                  <>
-                                    <Filter size={32} className="opacity-20" />
-                                    <span className="text-xs font-bold tracking-normal">
-                                      Could not load styles
-                                    </span>
-                                    <button
-                                      type="button"
-                                      onClick={() => void refreshUserStyles()}
-                                      className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
-                                    >
-                                      <Wand2 size={13} />
-                                      Retry
-                                    </button>
-                                  </>
-                                ) : currentPackId === USER_STYLE_PACK_ID &&
-                                  !isLoadingUserStyles &&
-                                  normalizedStyleSearchQuery.length === 0 ? (
-                                  <>
-                                    <Sparkles
-                                      size={32}
-                                      className="opacity-30 text-[color:var(--wb-info)] "
-                                    />
-                                    <span className="text-xs font-bold tracking-normal text-[color:var(--wb-muted)]">
-                                      No custom styles yet
-                                    </span>
-                                    <button
-                                      type="button"
-                                      onClick={handleCreateUserStyle}
-                                      className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/16"
-                                    >
-                                      <Plus size={13} />
-                                      Create Style
-                                    </button>
-                                  </>
-                                ) : (
-                                  <>
-                                    <Filter size={32} className="opacity-20" />
-                                    <span className="text-xs font-bold tracking-normal">
-                                      {isLoadingUserStyles || isLoadingStylePacks
-                                        ? 'Loading styles'
-                                        : 'No styles found matching criteria'}
-                                    </span>
-                                  </>
+                          <React.Suspense
+                            fallback={
+                              <LazySurfaceFallback
+                                label="Loading style cards"
+                                className="flex min-h-64 items-center justify-center text-[color:var(--wb-muted)]"
+                              />
+                            }
+                          >
+                            <div className="w-full space-y-6 pb-20">
+                              {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
+                              {processedData.favorites.length > 0 &&
+                                currentPackId !== FAVORITES_PACK_ID && (
+                                  <StylePresetGroupSection
+                                    key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
+                                    groupKey="favorites"
+                                    title="Pinned / Favorites"
+                                    presets={processedData.favorites}
+                                    gridColumns={gridColumns}
+                                    scrollRootRef={styleScrollRootRef}
+                                    scrollContainerWidth={styleScrollWidth}
+                                    initiallyVisible
+                                    headerClassName="opacity-100"
+                                    accentClassName="bg-rose-500"
+                                    titleClassName="text-[color:var(--wb-danger)]"
+                                    dividerClassName="bg-linear-to-r from-rose-500/20 to-transparent"
+                                    renderPresetCard={renderPresetCard}
+                                  />
                                 )}
-                              </div>
-                            )}
-                          </div>
-                        </React.Suspense>
+
+                              {visibleStyleGroupEntries.map(([groupKey, presets], index) => {
+                                const isFlatStyleGroup =
+                                  activeStyleViewMode === 'flat' &&
+                                  groupKey === STYLE_BROWSER_FLAT_GROUP_KEY;
+                                const categoryIdentity = isFlatStyleGroup
+                                  ? null
+                                  : resolveStyleCategoryIdentity(currentPackId, groupKey);
+                                return (
+                                  <StylePresetGroupSection
+                                    key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
+                                    groupKey={groupKey}
+                                    title={isFlatStyleGroup ? 'All Styles' : groupKey}
+                                    icon={
+                                      isFlatStyleGroup || !categoryIdentity ? (
+                                        <LayoutGrid size={12} />
+                                      ) : (
+                                        <StyleCategoryGlyph
+                                          iconId={categoryIdentity.iconId}
+                                          size={12}
+                                        />
+                                      )
+                                    }
+                                    presets={presets}
+                                    gridColumns={gridColumns}
+                                    scrollRootRef={styleScrollRootRef}
+                                    scrollContainerWidth={styleScrollWidth}
+                                    initiallyVisible={index < styleCategoryEagerBudget}
+                                    headerClassName=""
+                                    accentClassName={
+                                      categoryIdentity?.accentClassName ?? activeTheme.bg
+                                    }
+                                    titleClassName={
+                                      categoryIdentity?.titleClassName ??
+                                      'text-[color:var(--wb-ink)]'
+                                    }
+                                    dividerClassName="bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
+                                    renderPresetCard={renderPresetCard}
+                                  />
+                                );
+                              })}
+
+                              {filteredStylePresets.length === 0 && (
+                                <div className="h-64 flex flex-col items-center justify-center text-[color:var(--wb-dim)] gap-4">
+                                  {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
+                                    <>
+                                      <Filter size={32} className="opacity-20" />
+                                      <span className="text-xs font-bold tracking-normal">
+                                        Could not load this style pack
+                                      </span>
+                                      <button
+                                        type="button"
+                                        onClick={retryStylePacks}
+                                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                                      >
+                                        <Wand2 size={13} />
+                                        Retry
+                                      </button>
+                                    </>
+                                  ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
+                                    <>
+                                      <Filter size={32} className="opacity-20" />
+                                      <span className="text-xs font-bold tracking-normal">
+                                        Could not load styles
+                                      </span>
+                                      <button
+                                        type="button"
+                                        onClick={() => void refreshUserStyles()}
+                                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                                      >
+                                        <Wand2 size={13} />
+                                        Retry
+                                      </button>
+                                    </>
+                                  ) : currentPackId === USER_STYLE_PACK_ID &&
+                                    !isLoadingUserStyles &&
+                                    normalizedStyleSearchQuery.length === 0 ? (
+                                    <>
+                                      <Sparkles
+                                        size={32}
+                                        className="opacity-30 text-[color:var(--wb-info)] "
+                                      />
+                                      <span className="text-xs font-bold tracking-normal text-[color:var(--wb-muted)]">
+                                        No custom styles yet
+                                      </span>
+                                      <button
+                                        type="button"
+                                        onClick={handleCreateUserStyle}
+                                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-info)]  transition-colors hover:bg-sky-500/16"
+                                      >
+                                        <Plus size={13} />
+                                        Create Style
+                                      </button>
+                                    </>
+                                  ) : (
+                                    <>
+                                      <Filter size={32} className="opacity-20" />
+                                      <span className="text-xs font-bold tracking-normal">
+                                        {isLoadingUserStyles || isLoadingStylePacks
+                                          ? 'Loading styles'
+                                          : 'No styles found matching criteria'}
+                                      </span>
+                                    </>
+                                  )}
+                                </div>
+                              )}
+                            </div>
+                          </React.Suspense>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 )}
 
@@ -2628,7 +2633,12 @@ ${styleAnchorLine}
                     <StylePresetCatalogSearchSurface
                       onClose={handleCloseCatalogSearch}
                       onSelectPreset={handleSelectCatalogPreset}
-                      onApplyPreset={handleApplyCatalogPreset}
+                      onApplyPreset={handleChooseCompactStyle}
+                      selectedIds={selectedStyleIds}
+                      favorites={favorites}
+                      onToggleFavorite={toggleFavorite}
+                      onCopyPrompt={(result) => void handleCatalogPrompt(result, 'copy')}
+                      onUsePrompt={(result) => void handleCatalogPrompt(result, 'use')}
                     />
                   </React.Suspense>
                 )}
@@ -2639,6 +2649,23 @@ ${styleAnchorLine}
       </RecipeSidePanel>
 
       <RecipeControls>
+        {promptNotice && (
+          <div className="style-prompt-notice" role="status">
+            {promptNotice}
+            {previousPrompt !== null && (
+              <button
+                type="button"
+                onClick={() => {
+                  updateConfig('prompt', previousPrompt);
+                  setPreviousPrompt(null);
+                  setPromptNotice('Previous prompt restored.');
+                }}
+              >
+                Undo
+              </button>
+            )}
+          </div>
+        )}
         <React.Suspense fallback={<LazySurfaceFallback label="Loading styles" />}>
           <CompactStyleSelector
             catalogOpen={explorerOpen}
@@ -2648,6 +2675,8 @@ ${styleAnchorLine}
             extraIndex={userSearchIndex}
             onToggleFavorite={toggleFavorite}
             onChooseStyle={handleChooseCompactStyle}
+            onCopyPrompt={(result) => void handleCatalogPrompt(result, 'copy')}
+            onUsePrompt={(result) => void handleCatalogPrompt(result, 'use')}
             onRemove={removeSelectedStyle}
             onSetStrength={updateSelectedStyleStrength}
             onToggleEnabled={toggleSelectedStyleEnabled}
@@ -2706,11 +2735,35 @@ ${styleAnchorLine}
             </div>
           </div>
         ) : null}
+        {intentionalStylesV1 ? (
+          <div className="mt-3 space-y-2">
+            <div role="group" aria-label="Style application mode" className="flex gap-1">
+              {(['generate', 'preserve', 'reinterpret'] as const).map((mode) => (
+                <button
+                  key={mode}
+                  type="button"
+                  aria-pressed={intentionalMode === mode}
+                  onClick={() => setIntentionalMode(mode)}
+                  className="studio-ghost-control min-h-8 flex-1 px-2 text-xs capitalize"
+                >
+                  {mode}
+                </button>
+              ))}
+            </div>
+            {compileIssues.length > 0 ? (
+              <ul className="space-y-1 text-xs text-[color:var(--wb-warning)]">
+                {compileIssues.map((issue) => (
+                  <li key={`${issue.code}:${issue.message}`}>{issue.message}</li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
+        ) : null}
         <button
           type="button"
           onClick={handleGenerateSelectedStyles}
           disabled={activeSelectedStyleCount === 0 || Boolean(grokGenerateBlock)}
-          title={grokGenerateBlock?.message}
+          data-tooltip={grokGenerateBlock?.message}
           hidden
           data-style-generate-button
           data-generate-active={isGenerating ? 'true' : 'false'}

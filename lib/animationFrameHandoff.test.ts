@@ -33,6 +33,11 @@ describe('Animation Frame Handoff', () => {
           frame.generationOrder,
       ),
     );
+    expect(handoff.recipeParams).toMatchObject({
+      identityAnchor: contract.identityAnchor,
+      motionDriver: contract.motionDriver,
+      semanticPhase: frame.semanticPhase,
+    });
   });
 
   it('blocks correction without an input and emits the selected frame as input when present', () => {

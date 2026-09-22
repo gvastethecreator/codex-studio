@@ -30,6 +30,7 @@ export interface RecipePageProps {
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
   activeProviderId?: GenerationProviderId;
   grokCanExecute?: boolean;
+  intentionalStylesV1?: boolean;
 }
 
 export type RecipePageRuntimeProps = Omit<

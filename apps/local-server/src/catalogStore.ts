@@ -26,6 +26,8 @@ export interface RegisterCatalogImageInput {
 }
 
 export interface QueryCatalogFilters {
+  id?: string;
+  recipeId?: string | null;
   libraryId?: string | null;
   workspaceId?: string | null;
   jobId?: string | null;

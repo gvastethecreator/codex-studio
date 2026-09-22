@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { writePngFromSvg } from './sharpAuthoringAdapter';
+import { authoringSharp, writePngFromSvg } from './sharpAuthoringAdapter';
 import {
   createSpriteAtlasContract,
   createSpriteAtlasPresetSummaries,
@@ -28,6 +28,7 @@ export interface SpriteAtlasService {
   createRowJobs(runId: string, rowIds?: string[]): Promise<CreateSpriteAtlasRowJobsResponse | null>;
   readRowPrompt(runId: string, rowId: string): Promise<SpriteAtlasRowPromptResponse | null>;
   importRow(runId: string, input: ImportSpriteAtlasRowRequest): Promise<SpriteAtlasRun | null>;
+  compose(runId: string): Promise<SpriteAtlasRun | null>;
   composeFixture(runId: string): Promise<SpriteAtlasRun | null>;
   runQa(runId: string): Promise<SpriteAtlasRun | null>;
 }
@@ -114,6 +115,8 @@ function createRowPrompt(run: SpriteAtlasRun, row: SpriteAtlasRowState, baseProm
     `Base prompt: ${basePrompt || run.title}`,
     `Preset: ${contract.presetId}`,
     `Asset kind: ${contract.assetKind}`,
+    `Workflow lane: ${contract.workflowLane}`,
+    `Frame semantics: ${contract.frameSemantics}`,
     `Row: ${row.id}`,
     `Frames: ${row.frames}`,
     `Action: ${rowSpec?.action || row.id}`,
@@ -124,6 +127,12 @@ function createRowPrompt(run: SpriteAtlasRun, row: SpriteAtlasRowState, baseProm
     '',
     'Generate exactly one horizontal row strip for this state.',
     'Keep the character or asset identity, scale, baseline, outline weight, and palette stable.',
+    contract.frameSemantics === 'temporal'
+      ? 'Frames are temporal phases in order. Preserve contact points and use a coherent motion arc.'
+      : contract.frameSemantics === 'tiles'
+        ? 'Frames are adjacent tile states. Preserve edge continuity, projection, and pivot.'
+        : 'Frames are distinct items or variants. Do not imply animation between slots.',
+    'Keep every frame upright at the requested camera and scale. Do not rotate or resize individual frames.',
     'Use clean slot separation. No text, labels, guide marks, scene background, watermarks, or merged atlas pages.',
   ].join('\n');
 }
@@ -171,6 +180,7 @@ function createRows(run: Pick<SpriteAtlasRun, 'contract' | 'paths'>, timestamp: 
 function resolveRunStatus(run: SpriteAtlasRun): SpriteAtlasRun['status'] {
   if (run.rows.some((row) => row.status === 'blocked')) return 'blocked';
   if (run.qa?.ok) return 'qa_passed';
+  if (run.status === 'composed') return 'composed';
   if (
     run.rows.length > 0 &&
     run.rows.every((row) => row.status === 'raw_imported' || row.status === 'extracted')
@@ -383,6 +393,112 @@ export function createSpriteAtlasService({
       row.status = 'raw_imported';
       row.blocked = null;
       row.updatedAt = timestamp;
+      run.qa = null;
+      run.status = 'ready_to_extract';
+      return saveRun(run);
+    },
+    async compose(runId) {
+      const run = await getRun(runId);
+      if (!run) return null;
+      const missingRows = run.rows.filter(
+        (row) => !row.rawPath || !(row.status === 'raw_imported' || row.status === 'extracted'),
+      );
+      if (missingRows.length > 0) {
+        throw new Error(
+          `Import every row before composing: ${missingRows.map((row) => row.id).join(', ')}`,
+        );
+      }
+
+      const columns = Math.max(1, run.contract.columns);
+      const cellWidth = run.contract.cell.width;
+      const cellHeight = run.contract.cell.height;
+      const rowOffsets = new Map<string, number>();
+      let atlasRowCount = 0;
+      for (const row of run.rows) {
+        rowOffsets.set(row.id, atlasRowCount);
+        atlasRowCount += Math.ceil(row.frames / columns);
+      }
+      const width = columns * cellWidth;
+      const height = Math.max(1, atlasRowCount) * cellHeight;
+      const composites: Array<{ input: string; left: number; top: number }> = [];
+      const frameLayout: Array<{
+        id: string;
+        fps: number;
+        loop: boolean;
+        frames: Array<{
+          source: string;
+          x: number;
+          y: number;
+          width: number;
+          height: number;
+          origin: { x: number; y: number };
+        }>;
+      }> = [];
+
+      for (const row of run.rows) {
+        const rawPath = row.rawPath!;
+        const normalized = await authoringSharp(rawPath)
+          .rotate()
+          .resize(cellWidth * row.frames, cellHeight, { fit: 'fill' })
+          .ensureAlpha()
+          .png()
+          .toBuffer();
+        const baseRow = rowOffsets.get(row.id) ?? 0;
+        const frames = [];
+        for (let frameIndex = 0; frameIndex < row.frames; frameIndex += 1) {
+          const framePath = path.join(
+            run.paths.framesDir,
+            `${safeSegment(row.id)}-${String(frameIndex + 1).padStart(2, '0')}.png`,
+          );
+          await authoringSharp(normalized)
+            .extract({ left: frameIndex * cellWidth, top: 0, width: cellWidth, height: cellHeight })
+            .png()
+            .toFile(framePath);
+          const x = (frameIndex % columns) * cellWidth;
+          const y = (baseRow + Math.floor(frameIndex / columns)) * cellHeight;
+          composites.push({ input: framePath, left: x, top: y });
+          frames.push({
+            source: framePath,
+            x,
+            y,
+            width: cellWidth,
+            height: cellHeight,
+            origin: { x: Math.floor(cellWidth / 2), y: cellHeight },
+          });
+        }
+        const rowSpec = run.contract.rows.find((candidate) => candidate.id === row.id);
+        frameLayout.push({
+          id: row.id,
+          fps: rowSpec?.fps ?? 1,
+          loop: rowSpec?.loop ?? false,
+          frames,
+        });
+        row.status = 'extracted';
+        row.updatedAt = now();
+      }
+
+      await authoringSharp({
+        create: {
+          width,
+          height,
+          channels: 4,
+          background: { r: 0, g: 0, b: 0, alpha: 0 },
+        },
+      })
+        .composite(composites)
+        .png()
+        .toFile(run.paths.atlasPath);
+      await writeJson(run.paths.manifestPath, {
+        version: 1,
+        mode: 'generated_art',
+        workflow_lane: run.contract.workflowLane,
+        frame_semantics: run.contract.frameSemantics,
+        cell: run.contract.cell,
+        columns,
+        frame_layout: frameLayout,
+      });
+      run.qa = null;
+      run.status = 'composed';
       return saveRun(run);
     },
     async composeFixture(runId) {

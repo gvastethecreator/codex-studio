@@ -1,16 +1,17 @@
 /** @vitest-environment jsdom */
 import { act, cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { loadGeneratedStyleRuntimePack } from './styleRuntimeData.generated';
+import { loadStylePresetCatalogSearchIndex } from './stylePresetCatalogSearchData';
+import { createStylePresetCatalogSearchIndexFromRuntimePacks } from './stylePresetManifests';
 import type { StyleRuntimePack } from './styles/runtimeTypes';
 import { StylePresetCatalogSearchSurface } from './StylePresetCatalogSearchSurface';
 
-vi.mock('./styleRuntimeData.generated', () => ({
-  GENERATED_STYLE_RUNTIME_PACK_SUMMARIES: [
+vi.mock('./stylePresetCatalogSearchData', () => ({
+  STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES: [
     { id: 'pack_01', name: 'First pack', presetCount: 100 },
     { id: 'pack_02', name: 'Second pack', presetCount: 1 },
   ],
-  loadGeneratedStyleRuntimePack: vi.fn(),
+  loadStylePresetCatalogSearchIndex: vi.fn(),
 }));
 vi.mock('../../lib/styleThumbnailCatalog', () => ({
   getStyleThumbnail: () => null,
@@ -50,65 +51,78 @@ const mount = () =>
       onApplyPreset={vi.fn()}
     />,
   );
-const ready = () => waitFor(() => expect(screen.queryByRole('status')).toBeNull());
+const ready = () => waitFor(() => expect(screen.queryByText('Loading catalog…')).toBeNull());
 
 beforeEach(() => {
-  vi.mocked(loadGeneratedStyleRuntimePack)
+  vi.stubGlobal('matchMedia', () => ({
+    matches: true,
+    addEventListener() {},
+    removeEventListener() {},
+  }));
+  vi.mocked(loadStylePresetCatalogSearchIndex)
     .mockReset()
-    .mockImplementation(async (id) => pack(id));
+    .mockImplementation(async (ids) =>
+      createStylePresetCatalogSearchIndexFromRuntimePacks(ids.map(pack)),
+    );
 });
-afterEach(cleanup);
+afterEach(() => {
+  cleanup();
+  vi.unstubAllGlobals();
+});
 
 describe('Style catalog loading', () => {
   it('keeps the loaded index while typing within the same pack scope', async () => {
     mount();
     await ready();
     const input = screen.getByRole('textbox', { name: 'Search presets' });
-    expect(loadGeneratedStyleRuntimePack).toHaveBeenCalledTimes(1);
+    expect(loadStylePresetCatalogSearchIndex).toHaveBeenCalledTimes(1);
     fireEvent.change(input, { target: { value: 'b' } });
     await ready();
-    expect(loadGeneratedStyleRuntimePack).toHaveBeenCalledTimes(3);
+    expect(loadStylePresetCatalogSearchIndex).toHaveBeenCalledTimes(1);
     expect(screen.getAllByText('Boudoir')).toHaveLength(2);
     for (const query of ['bo', 'bou', 'boud', 'boudo', 'boudoi', 'boudoir']) {
       fireEvent.change(input, { target: { value: query } });
-      expect(screen.queryByRole('status')).toBeNull();
+      expect(screen.queryByText('Loading catalog…')).toBeNull();
       expect(screen.getAllByText('Boudoir')).toHaveLength(2);
     }
-    expect(loadGeneratedStyleRuntimePack).toHaveBeenCalledTimes(3);
+    expect(loadStylePresetCatalogSearchIndex).toHaveBeenCalledTimes(1);
     fireEvent.click(screen.getByRole('button', { name: 'Clear catalog search' }));
     await ready();
-    expect(loadGeneratedStyleRuntimePack).toHaveBeenCalledTimes(4);
-    expect(screen.getAllByText('Boudoir')).toHaveLength(1);
+    expect(loadStylePresetCatalogSearchIndex).toHaveBeenCalledTimes(1);
+    expect(screen.getAllByText('Boudoir')).toHaveLength(2);
   });
 
-  it('retries a failed load through the real search loader', async () => {
-    vi.mocked(loadGeneratedStyleRuntimePack).mockRejectedValueOnce(new Error('Temporary failure'));
+  it('retries a failed load through the search index loader', async () => {
+    vi.mocked(loadStylePresetCatalogSearchIndex).mockRejectedValueOnce(
+      new Error('Temporary failure'),
+    );
     mount();
     await screen.findByRole('alert');
     expect(screen.getByRole('alert').textContent).toBe('Could not load the style catalog.');
-    expect(screen.queryByRole('status')).toBeNull();
+    expect(screen.queryByText('Loading catalog…')).toBeNull();
     fireEvent.click(screen.getByRole('button', { name: 'Try again' }));
     await ready();
     expect(screen.queryByRole('alert')).toBeNull();
-    expect(screen.getByText('Boudoir')).toBeTruthy();
-    expect(loadGeneratedStyleRuntimePack).toHaveBeenCalledTimes(2);
+    expect(screen.getAllByText('Boudoir')).toHaveLength(2);
+    expect(loadStylePresetCatalogSearchIndex).toHaveBeenCalledTimes(2);
   });
 
   it('ignores a late rejection from the previous pack scope', async () => {
     let rejectInitial!: (error: Error) => void;
-    vi.mocked(loadGeneratedStyleRuntimePack).mockImplementationOnce(
+    vi.mocked(loadStylePresetCatalogSearchIndex).mockImplementationOnce(
       () =>
         new Promise((_, reject) => {
           rejectInitial = reject;
         }),
     );
     mount();
-    fireEvent.change(screen.getByRole('textbox', { name: 'Search presets' }), {
-      target: { value: 'b' },
-    });
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Filter style catalog by pack: All Packs' }),
+    );
+    fireEvent.click(await screen.findByRole('option', { name: /Second pack/ }));
     await ready();
     await act(async () => rejectInitial(new Error('Old request failed')));
     expect(screen.queryByRole('alert')).toBeNull();
-    expect(screen.getAllByText('Boudoir')).toHaveLength(2);
+    expect(screen.getAllByText('Boudoir')).toHaveLength(1);
   });
 });

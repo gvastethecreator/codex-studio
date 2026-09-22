@@ -24,6 +24,9 @@ import { toStudioAssetUrl } from '../services/studio-api/assetUrls';
 
 export interface UseStudioCatalogControllerOptions {
   query?: string;
+  historyEnabled?: boolean;
+  historyRecipeId?: string | null;
+  historySelectedId?: string | null;
   activeWorkspaceId: string;
   isTrashOpen: boolean;
   addToast: (message: string, type: 'success' | 'error' | 'info') => void;
@@ -31,6 +34,7 @@ export interface UseStudioCatalogControllerOptions {
 
 export interface UseStudioCatalogControllerResult {
   activeCatalog: UseCatalogResult;
+  historyCatalog: UseCatalogResult;
   workspaceSummaries: CatalogWorkspaceSummary[];
   trashCatalog: UseCatalogResult;
   catalogVisualGroupCount: number;
@@ -67,6 +71,9 @@ export function collectWorkspaceCatalogImageIds(entries: CatalogImage[], workspa
 
 export function useStudioCatalogController({
   query = '',
+  historyEnabled = false,
+  historyRecipeId,
+  historySelectedId,
   activeWorkspaceId,
   isTrashOpen,
   addToast,
@@ -77,6 +84,16 @@ export function useStudioCatalogController({
     deleted: false,
     pageSize: CATALOG_RENDER_BUDGET.activePageSize,
   });
+  const historyCatalog = useCatalogPage({
+    selectedId: historySelectedId,
+    workspaceId: activeWorkspaceId,
+    recipeId: historyRecipeId,
+    deleted: false,
+    enabled: historyEnabled,
+    pageSize: CATALOG_RENDER_BUDGET.activePageSize,
+    preserveLoadedPages: true,
+  });
+  const refreshHistory = historyCatalog.refresh;
   const workspaceSummaryCatalog = useCatalogWorkspaceSummaries();
   const trashCatalog = useCatalogPage({
     deleted: true,
@@ -109,6 +126,7 @@ export function useStudioCatalogController({
   const mutationReconciliationRef = useRef<CatalogMutationReconciliationPolicy | null>(null);
   const refreshCatalogs = useCallback(
     async (scope: CatalogRefreshScope = { kind: 'all' }) => {
+      if (historyEnabled) await refreshHistory().catch(() => undefined);
       const reconciliationPolicy = mutationReconciliationRef.current;
       const reconciliationGeneration = reconciliationPolicy?.getGeneration();
       if (scope.kind === 'active') {
@@ -136,7 +154,14 @@ export function useStudioCatalogController({
       ]);
       reconciliationPolicy?.acknowledge(scope, reconciliationGeneration);
     },
-    [refreshActiveCatalog, refreshWorkspaceSummaries, refreshTrashCatalog, isTrashOpen],
+    [
+      refreshActiveCatalog,
+      refreshWorkspaceSummaries,
+      refreshTrashCatalog,
+      isTrashOpen,
+      historyEnabled,
+      refreshHistory,
+    ],
   );
 
   useEffect(() => {
@@ -192,7 +217,7 @@ export function useStudioCatalogController({
 
   const toggleCatalogFavorite = useCallback(
     (imageId: string) => {
-      const current = activeCatalog.view.byId.get(imageId);
+      const current = historyCatalog.view.byId.get(imageId) ?? activeCatalog.view.byId.get(imageId);
 
       void runCatalogMutation(
         updateCatalogImageRequest(imageId, {
@@ -201,7 +226,7 @@ export function useStudioCatalogController({
         'Unable to update favorite',
       );
     },
-    [activeCatalog.view.byId, runCatalogMutation],
+    [activeCatalog.view.byId, historyCatalog.view.byId, runCatalogMutation],
   );
 
   const clearCatalogWorkspace = useCallback(
@@ -254,6 +279,7 @@ export function useStudioCatalogController({
 
   return {
     activeCatalog,
+    historyCatalog,
     workspaceSummaries: workspaceSummaryCatalog.summaries,
     trashCatalog,
     catalogVisualGroupCount,

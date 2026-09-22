@@ -53,6 +53,13 @@ export function getGenerationRequirement(
   ) {
     return { field: 'styles', message: 'Choose a style before generating.' };
   }
+  if (
+    input.recipeId === 'styles' &&
+    typeof params.intentionalCompileError === 'string' &&
+    params.intentionalCompileError.trim()
+  ) {
+    return { field: 'styles', message: params.intentionalCompileError };
+  }
   if (input.recipeId === 'animation-sequence' && !prompt) {
     return { field: 'prompt', message: 'Add a motion prompt.' };
   }

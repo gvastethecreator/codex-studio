@@ -69,6 +69,8 @@ export function createAnimationFrameHandoff({
   const recipeParams = {
     runId: runId ?? '',
     prompt: contract.prompt,
+    identityAnchor: contract.identityAnchor,
+    motionDriver: contract.motionDriver,
     frameCount: contract.frameCount,
     fps: contract.fps,
     aspectRatio: contract.aspectRatio,
@@ -84,6 +86,7 @@ export function createAnimationFrameHandoff({
     frameIndex: frame.index,
     frameOrdinal: frame.ordinal,
     generationOrder: frame.generationOrder,
+    semanticPhase: frame.semanticPhase,
     referenceFrameIds: frame.referenceFrameIds,
     executableReferenceFrameIds,
     unresolvedReferenceFrameIds,

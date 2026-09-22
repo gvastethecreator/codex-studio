@@ -5,9 +5,7 @@
     {
       "id": "replace-view-id",
       "title": "REEMPLAZAR",
-      "source_refs": [
-        "src/views/REEMPLAZAR.tsx"
-      ],
+      "source_refs": ["src/views/REEMPLAZAR.tsx"],
       "states": [
         {
           "id": "ready",
@@ -20,21 +18,15 @@
     {
       "id": "replace-navigation",
       "kind": "navigation",
-      "source_refs": [
-        "src/REEMPLAZAR.tsx"
-      ]
+      "source_refs": ["src/REEMPLAZAR.tsx"]
     }
   ],
   "flows": [
     {
       "id": "replace-main-flow",
       "description": "REEMPLAZAR con el flujo real observado",
-      "view_ids": [
-        "replace-view-id"
-      ],
-      "source_refs": [
-        "src/views/REEMPLAZAR.tsx"
-      ]
+      "view_ids": ["replace-view-id"],
+      "source_refs": ["src/views/REEMPLAZAR.tsx"]
     }
   ],
   "excluded": []

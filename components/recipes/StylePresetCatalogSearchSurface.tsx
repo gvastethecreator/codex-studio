@@ -8,6 +8,10 @@ import {
   IconDatabase as Database,
   IconSparkles as Sparkles,
   IconLoader as LoaderCircle,
+  IconInfoCircle as Info,
+  IconHeart as Heart,
+  IconCopy as Copy,
+  IconTextPlus as TextPlus,
 } from '@tabler/icons-react';
 import {
   getStyleCategoryImage,
@@ -34,6 +38,12 @@ import {
 } from './styleSearchProjection';
 
 interface StylePresetCatalogSearchSurfaceProps {
+  selectedIds?: ReadonlySet<string>;
+  maxSlots?: number;
+  favorites?: string[];
+  onToggleFavorite?: (id: string) => void;
+  onCopyPrompt?: (result: StylePresetCatalogSearchResult) => void;
+  onUsePrompt?: (result: StylePresetCatalogSearchResult) => void;
   onClose: () => void;
   onSelectPreset: (result: StylePresetCatalogSearchResult) => void;
   onApplyPreset: (result: StylePresetCatalogSearchResult) => void;
@@ -48,6 +58,12 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   onClose,
   onSelectPreset,
   onApplyPreset,
+  selectedIds,
+  maxSlots = 5,
+  favorites = [],
+  onToggleFavorite,
+  onCopyPrompt,
+  onUsePrompt,
 }) => {
   const [catalogLoad, setCatalogLoad] = useState<StyleCatalogLoadState>({
     status: 'loading',
@@ -55,6 +71,11 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   const searchIndex = catalogLoad.status === 'ready' ? catalogLoad.searchIndex : null;
   const [loadAttempt, setLoadAttempt] = useState(0);
   const [query, setQuery] = useState('');
+  const [information, setInformation] = useState<StylePresetCatalogSearchResult | null>(null);
+  const informationRef = useRef<HTMLDialogElement>(null);
+  useEffect(() => {
+    if (information) informationRef.current?.showModal();
+  }, [information]);
   const [packId, setPackId] = useState('');
   const [task, setTask] = useState('');
   const [isPackFilterOpen, setIsPackFilterOpen] = useState(false);
@@ -72,7 +93,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
         query,
         packId: packId || undefined,
         task: task || undefined,
-        limit: 80,
+        limit: 100000,
       }),
     [packId, query, task],
   );
@@ -328,8 +349,21 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                   key={result.id}
                   data-style-catalog-result
                   data-style-catalog-result-id={result.id}
-                  className="group flex min-w-0 gap-4 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3 transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]"
+                  className="group relative flex min-w-0 gap-4 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3 transition-colors hover:border-[color:var(--wb-border)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)]"
                 >
+                  <button
+                    type="button"
+                    className="catalog-card-hit"
+                    aria-label={`${selectedIds?.has(result.id) ? 'Remove' : 'Select'} style ${result.name}`}
+                    aria-pressed={selectedIds?.has(result.id) ?? false}
+                    disabled={(selectedIds?.size ?? 0) >= maxSlots && !selectedIds?.has(result.id)}
+                    onClick={() => onApplyPreset(result)}
+                  />
+                  {selectedIds?.has(result.id) && (
+                    <span className="catalog-selected-mark" aria-hidden="true">
+                      ✓
+                    </span>
+                  )}
                   <div className="relative h-24 w-18 shrink-0 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)]">
                     {resultImage ? (
                       <>
@@ -384,23 +418,45 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                       ))}
                     </div>
 
-                    <div className="mt-4 flex items-center gap-2">
+                    <div className="catalog-hover-actions relative z-10 mt-4 flex flex-wrap items-center gap-2">
                       <button
                         type="button"
-                        onClick={() => onSelectPreset(result)}
-                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+                        aria-label={`Information about ${result.name}`}
+                        onClick={() => setInformation(result)}
                       >
-                        <ArrowRight size={13} />
-                        Select
+                        <Info size={16} />
                       </button>
-                      <button
-                        type="button"
-                        onClick={() => onApplyPreset(result)}
-                        className="flex h-9 items-center gap-2 rounded-[var(--wb-radius)] border border-accent-500/2 bg-accent-500/12 px-3 text-[length:var(--wbp-label)] font-semibold tracking-normal text-accent-100 transition-colors hover:bg-accent-500/20"
-                      >
-                        <Sparkles size={13} />
-                        Apply
-                      </button>
+                      {onToggleFavorite && (
+                        <button
+                          type="button"
+                          aria-label={`${favorites.includes(result.id) ? 'Unfavorite' : 'Favorite'} ${result.name}`}
+                          aria-pressed={favorites.includes(result.id)}
+                          onClick={() => onToggleFavorite(result.id)}
+                        >
+                          <Heart
+                            size={16}
+                            fill={favorites.includes(result.id) ? 'currentColor' : 'none'}
+                          />
+                        </button>
+                      )}
+                      {onCopyPrompt && (
+                        <button
+                          type="button"
+                          aria-label={`Copy prompt for ${result.name}`}
+                          onClick={() => onCopyPrompt(result)}
+                        >
+                          <Copy size={16} />
+                        </button>
+                      )}
+                      {onUsePrompt && (
+                        <button
+                          type="button"
+                          aria-label={`Use ${result.name} as prompt`}
+                          onClick={() => onUsePrompt(result)}
+                        >
+                          <TextPlus size={16} />
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -414,6 +470,42 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           </div>
         )}
       </div>
+      {information && (
+        <dialog
+          ref={informationRef}
+          className="style-detail-dialog"
+          aria-label={`Information about ${information.name}`}
+          onClose={() => setInformation(null)}
+          onCancel={() => setInformation(null)}
+        >
+          <div className="flex items-center justify-between gap-4 p-4">
+            <h3>{information.name}</h3>
+            <button
+              type="button"
+              aria-label="Close style information"
+              onClick={() => informationRef.current?.close()}
+            >
+              <X size={16} />
+            </button>
+          </div>
+          <div className="p-4 space-y-3">
+            <p>
+              {information.packName} · {information.categoryName}
+            </p>
+            <p>{information.styleAnchors?.join(', ') || information.tags.join(', ')}</p>
+            <p>Supports: {information.supportedTasks.join(', ')}</p>
+            <button
+              type="button"
+              onClick={() => {
+                onSelectPreset(information);
+                setInformation(null);
+              }}
+            >
+              <ArrowRight size={14} /> Browse category
+            </button>
+          </div>
+        </dialog>
+      )}
     </div>
   );
 };

@@ -67,6 +67,8 @@ export interface StylePresetCatalogSearchFilters {
 }
 
 export interface StylePresetCatalogSearchResult {
+  createdAt?: string | number;
+  updatedAt?: string | number;
   id: string;
   name: string;
   sourceName?: string;
@@ -811,7 +813,10 @@ export function searchStylePresetCatalog(
 
 export function createStylePresetCatalogSearchIndexFromRuntimePacks(
   packs: StyleRuntimePack[],
-  options: { resolveDefaultImage?: (presetId: string) => string | null | undefined } = {},
+  options: {
+    resolveDefaultImage?: (presetId: string) => string | null | undefined;
+    includeStyleText?: boolean;
+  } = {},
 ): StylePresetCatalogSearchIndex {
   return {
     packs: packs.map((pack) => ({
@@ -835,8 +840,10 @@ export function createStylePresetCatalogSearchIndexFromRuntimePacks(
           pack.name,
           categoryId,
           ...tags,
-          ...avoidRules,
-          ...Object.values(preset.style).map((value) => String(value)),
+          ...(options.includeStyleText === false ? [] : avoidRules),
+          ...(options.includeStyleText === false
+            ? []
+            : Object.values(preset.style).map((value) => String(value))),
         ]
           .filter((value): value is string => Boolean(value))
           .join(' ')
@@ -850,6 +857,8 @@ export function createStylePresetCatalogSearchIndexFromRuntimePacks(
             ? { sourceName: preset.name }
             : {}),
           ...(preset.styleAnchors?.length ? { styleAnchors: preset.styleAnchors } : {}),
+          createdAt: preset.createdAt,
+          updatedAt: preset.updatedAt,
           ref: toStylePresetManifestRef(pack.id, preset.id),
           packId: pack.id,
           packName: pack.name,

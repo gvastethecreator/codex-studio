@@ -58,6 +58,21 @@ function getSelectedStyleLayers(params: RecipeContextParams) {
 }
 
 function buildStylesContext(params: RecipeContextParams) {
+  const effectivePrompt = getString(params, 'effectivePrompt');
+  const styleRequestHash = getString(params, 'styleRequestHash');
+  if (effectivePrompt && styleRequestHash) {
+    return recipeDocument(
+      'styles',
+      'INTENTIONAL STYLE REQUEST',
+      `
+${effectivePrompt}
+
+styleRequestHash: ${styleRequestHash}
+DO NOT output text or explanations. Just the image.
+`,
+    );
+  }
+
   const presetName = getString(params, 'presetName', 'Unnamed Style');
   const mode = getString(params, 'mode', 'DIRECT_STYLE_SYNTHESIS');
   const roleInstruction = getString(params, 'roleInstruction');

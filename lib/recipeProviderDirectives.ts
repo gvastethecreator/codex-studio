@@ -386,6 +386,8 @@ function buildSpriteAtlasProviderDirectives(module: RecipeModule, params: Record
           directive('Preset', contract.presetId),
           directive('Asset Kind', contract.assetKind),
           directive('Extraction Mode', contract.extractionMode),
+          directive('Workflow Lane', contract.workflowLane),
+          directive('Frame Semantics', contract.frameSemantics),
           directive('Camera', contract.camera),
           directive('Style', contract.customStyle || contract.stylePreset),
           directive('Frame Budget', contract.frameBudget),
@@ -487,6 +489,8 @@ function buildAnimationSequenceProviderDirectives(
           directive('Looping GIF', contract.cyclic ? 'yes' : 'no'),
           directive('Continuity', contract.continuity),
           directive('Style Lock', contract.styleLock ? 'yes' : 'no'),
+          directive('Identity Anchor', contract.identityAnchor),
+          directive('Motion Driver', contract.motionDriver),
         ],
       },
       {
@@ -495,6 +499,7 @@ function buildAnimationSequenceProviderDirectives(
           directive('Frame', `${frame.id} (${frame.ordinal}/${contract.frameCount})`),
           directive('Generation Order', frame.generationOrder),
           directive('Strategy', frame.strategy),
+          directive('Semantic Phase', frame.semanticPhase),
           directive(
             'References',
             createAnimationSequenceReferenceDirective(

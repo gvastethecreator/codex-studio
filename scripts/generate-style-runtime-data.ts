@@ -1,7 +1,10 @@
 import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
-import { composeStyleRuntimePacksFromManifests } from '../components/recipes/stylePresetManifests';
+import {
+  composeStyleRuntimePacksFromManifests,
+  createStylePresetCatalogSearchIndexFromRuntimePacks,
+} from '../components/recipes/stylePresetManifests';
 import type {
   StyleRuntimePack,
   StyleRuntimePreset,
@@ -261,6 +264,31 @@ async function readCheckFileWithRecovery(filePath: string, source: string) {
 
   await ensureCheckFilePresent(filePath, source);
   return readFile(filePath, 'utf8');
+}
+
+const searchIndexDir = path.join(rootDir, 'components/recipes/styleSearchIndexes.generated');
+const searchIndex = createStylePresetCatalogSearchIndexFromRuntimePacks(packs, {
+  includeStyleText: false,
+});
+if (!checkMode) await mkdir(searchIndexDir, { recursive: true });
+for (const pack of searchIndex.packs) {
+  const packIndex = {
+    packs: [pack],
+    presets: searchIndex.presets.filter((preset) => preset.packId === pack.id),
+    totalPresetCount: pack.presetCount,
+  };
+  const indexPath = path.join(searchIndexDir, `${pack.id}.json`);
+  if (checkMode) {
+    const saved = JSON.parse(await readFile(indexPath, 'utf8'));
+    if (JSON.stringify(saved) !== JSON.stringify(JSON.parse(JSON.stringify(packIndex))))
+      throw new Error(
+        `Style search index ${pack.id} is stale. Run bun run styles:runtime -- --search-index-only.`,
+      );
+  } else await writeFile(indexPath, `${JSON.stringify(packIndex, null, 2)}\n`, 'utf8');
+}
+if (process.argv.includes('--search-index-only')) {
+  console.log(`[styles:runtime] search index: ${searchIndex.totalPresetCount} presets`);
+  process.exit(0);
 }
 
 if (checkMode) {
