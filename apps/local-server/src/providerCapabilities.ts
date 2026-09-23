@@ -20,9 +20,18 @@ const PROVIDER_CAPABILITIES: ProviderCapabilityDefinition[] = [
     requiresSecret: false,
     requiresLocalRuntime: true,
     activeDetail: 'Codex Product Runtime adapter is available.',
-    subscriptionReadyDetail: 'ChatGPT HTTP is ready. Each job keeps its accepted execution route.',
     plannedDetail: 'Codex adapter is available.',
-    missingDetail: 'Sign in with ChatGPT in Studio Settings, or start Codex Product Runtime.',
+    missingDetail: 'Start Codex Product Runtime and sign in through Codex.',
+  },
+  {
+    providerId: 'chatgpt',
+    label: 'ChatGPT',
+    runtimeKind: 'subscription_http',
+    hasAdapter: true,
+    requiresSecret: true,
+    activeDetail: 'ChatGPT session connected. Availability is checked when generating.',
+    plannedDetail: 'ChatGPT direct HTTP adapter is available.',
+    missingDetail: 'Sign in with ChatGPT in Studio Settings.',
   },
   {
     providerId: 'grok',
@@ -115,8 +124,7 @@ export function readProviderCapabilities(
     ...subscriptionReady,
     antigravityRuntime,
   });
-  readiness.localRuntimeConfigured.codex =
-    (codexRuntime?.canRunJobs ?? true) || Boolean(readiness.subscriptionAuthConfigured.codex);
+  readiness.localRuntimeConfigured.codex = codexRuntime?.canRunJobs ?? true;
 
   return createGenerationProviderCapabilities({
     settings,

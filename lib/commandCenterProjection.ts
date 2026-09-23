@@ -87,6 +87,7 @@ export function summarizeCommandCenterRuntimeStatus(
 
 const QUICK_SWITCH_PROVIDER_IDS = [
   'codex',
+  'chatgpt',
   'grok',
   'google',
   'antigravity',
@@ -94,6 +95,7 @@ const QUICK_SWITCH_PROVIDER_IDS = [
 
 function resolveProviderFallbackLabel(providerId: GenerationProviderId) {
   if (providerId === 'codex') return 'Codex app-server';
+  if (providerId === 'chatgpt') return 'ChatGPT';
   if (providerId === 'grok') return 'Grok Imagine';
   if (providerId === 'google') return 'Google Nano Banana';
   if (providerId === 'antigravity') return 'Antigravity';
@@ -102,6 +104,7 @@ function resolveProviderFallbackLabel(providerId: GenerationProviderId) {
 
 export function resolveProviderShortLabel(providerId: GenerationProviderId) {
   if (providerId === 'codex') return 'Codex';
+  if (providerId === 'chatgpt') return 'ChatGPT';
   if (providerId === 'grok') return 'Grok';
   if (providerId === 'google') return 'Google';
   if (providerId === 'antigravity') return 'AGY';
@@ -152,7 +155,9 @@ function buildProviderProjection({
           subscriptionAuthState: capability?.subscriptionAuthState,
         })
       : canExecute
-        ? 'Ready'
+        ? providerId === 'chatgpt'
+          ? 'Session connected'
+          : 'Ready'
         : status === 'unknown'
           ? 'Checking runtime'
           : 'Needs setup';

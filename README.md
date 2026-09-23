@@ -17,14 +17,14 @@ Codex Studio is a local image studio. You create, review, and organize AI images
 
 [Project site](https://gvastethecreator.github.io/codex-studio/) · [Source and issues](https://github.com/gvastethecreator/codex-studio)
 
-The app runs on your machine. The UI is React/Vite. The API is Bun/Hono. Each image job can use either ChatGPT HTTP (GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, or GPT Image 2 when available) or `codex app-server`; when both are ready, the Studio execution selector keeps both routes available.
+The app runs on your machine. The UI is React/Vite. The API is Bun/Hono. Choose a provider for each image job: **ChatGPT** uses direct subscription HTTP (GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, or GPT Image 2 when available), while **Codex** uses local `codex app-server`. ChatGPT does not require the Codex executable or its model catalog and does not create Codex threads.
 
 The main Codex path does not need `OPENAI_API_KEY`. Assets, job history, logs, and SQLite state live in your Studio Library, not in this repo.
 
 - Generate and edit images in the studio UI.
 - Browse workspaces, recipes, recent jobs, and assets in one place.
 - Keep job history and catalog metadata in local SQLite.
-- Use Codex first. Optional Grok Imagine, Google Nano Banana, and Antigravity providers stay behind the backend.
+- Choose ChatGPT or Codex. Optional Grok Imagine, Google Nano Banana, and Antigravity providers stay behind the backend.
 - Keep local assets out of git.
 
 ## Product tour
@@ -44,7 +44,7 @@ Library search queries the whole workspace catalog. Jobs separates active work, 
 You need:
 
 - Bun on `PATH`. Install it yourself from <https://bun.sh/docs/installation>. Codex Studio never silent-installs Bun.
-- Codex CLI from <https://github.com/openai/codex>
+- Codex CLI from <https://github.com/openai/codex> only for the Codex provider
 - Codex CLI with `codex login` for the local app-server route.
 - Optional ChatGPT subscription login through Studio Settings Sign in for the HTTP route. That login is not bundled.
 - A modern browser
@@ -86,7 +86,7 @@ To use Nano Banana through Antigravity:
 
 Studio never reads or copies Antigravity credentials. It runs one sandboxed headless conversation in a temporary workspace, imports one validated image, and leaves Antigravity's own artifact history in place.
 
-Studio stores xAI, Google, and ChatGPT OAuth tokens in the current user's private app-data folder, separate from the portable or shareable Studio Library and never in SQLite. Grok Build and Antigravity keep their own CLI login state. Provider API keys stay in the backend environment. Home and the Styles recipe support Codex, Grok, Google, and Antigravity. Styles can generate from a prompt or from managed library references. Codex stays the first default provider.
+Studio stores xAI, Google, and ChatGPT OAuth tokens in the current user's private app-data folder, separate from the portable or shareable Studio Library and never in SQLite. Grok Build and Antigravity keep their own CLI login state. Provider API keys stay in the backend environment. Home and the Styles recipe support ChatGPT, Codex, Grok, Google, and Antigravity. Styles can generate from a prompt or from managed library references. Provider selection and execution defaults are stored separately in Studio Settings.
 
 App readiness is the source of truth. Bun and Codex version strings are only diagnosis. If the Codex path or app-server support is unclear, run `bun run runtime:doctor`.
 
@@ -147,7 +147,7 @@ If you use optional external adapters, keep Provider Secrets in backend environm
 
 Grok Build CLI login stays under `GROK_HOME`. Antigravity owns its CLI login and artifacts. Studio Sign in tokens stay in the current user's private app-data folder.
 
-Use the provider control in the top Command Center to switch the next image job between Codex, Grok, Google, and Antigravity. The control shows runtime readiness. It stores the choice in Studio Settings. Deeper diagnostics stay in the same menu. Codex stays the initial default.
+Use the provider control in the top Command Center to switch the next image job between ChatGPT, Codex, Grok, Google, and Antigravity. The control shows runtime readiness. It stores the choice in Studio Settings. Deeper diagnostics stay in the same menu. Selecting ChatGPT shows its existing Studio Sign in; selecting Codex shows local runtime readiness. A connected session confirms authentication, not available quota.
 
 ## Useful commands
 
@@ -192,7 +192,7 @@ bun run tooling:logs:prune
 Codex Studio is in open-source preview.
 
 - Local development is documented and works.
-- The default path is Codex-first and local-first.
+- The app is local-first, with separate ChatGPT HTTP and Codex app-server providers.
 - Optional provider adapters are backend integrations, not the product center.
 - Grok Imagine image generation and managed local image edits use Studio Sign in, `XAI_API_KEY`, or Grok Build CLI login.
 - Google Nano Banana uses the Interactions API through a restricted API key or Studio-owned desktop OAuth. Antigravity is a separate local CLI path and never supplies Google credentials to Studio.

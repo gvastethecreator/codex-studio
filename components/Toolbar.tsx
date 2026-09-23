@@ -121,26 +121,6 @@ export interface ToolbarProps {
 
 const ICON_SIZE = 14;
 
-const CODEX_EXECUTION_TRANSPORTS: readonly {
-  id: CodexExecutionTransport;
-  label: string;
-  detail: string;
-  accessibleLabel: string;
-}[] = [
-  {
-    id: 'codex_app_server',
-    label: 'Codex app',
-    detail: 'Local',
-    accessibleLabel: 'Codex app-server',
-  },
-  {
-    id: 'subscription_http',
-    label: 'ChatGPT',
-    detail: 'Sign in',
-    accessibleLabel: 'ChatGPT Sign in',
-  },
-];
-
 const AspectRatioIcon: React.FC<{ ratio: AspectRatio }> = ({ ratio }) => {
   const [width = 1, height = 1] = ratio.split(':').map(Number);
   if (width === height) return <Square size={ICON_SIZE} />;
@@ -239,7 +219,8 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const [magicInstruction, setMagicInstruction] = useState('');
     const [isRefactoring, setIsRefactoring] = useState(false);
 
-    const selectedCodexTransport = generationConfig.codexTransport ?? codexTransport;
+    const selectedCodexTransport =
+      activeProviderId === 'chatgpt' ? 'subscription_http' : 'codex_app_server';
 
     const providerChrome = useMemo(
       () =>
@@ -323,13 +304,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         selectedCodexTransport,
         updateConfig,
       ],
-    );
-
-    const handleSelectExecutionTransport = useCallback(
-      (transport: CodexExecutionTransport) => {
-        updateConfig('codexTransport', transport);
-      },
-      [updateConfig],
     );
 
     const handleSelectExecutionImageModel = useCallback(
@@ -1761,7 +1735,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           setIsSizeOpen(false);
                           setIsBatchOpen(false);
                         }}
-                        aria-label={`Codex task execution: ${executionSummary}`}
+                        aria-label={`${activeProviderId === 'chatgpt' ? 'ChatGPT' : 'Codex'} task execution: ${executionSummary}`}
                         aria-haspopup="dialog"
                         aria-expanded={isExecutionOpen}
                         className={isRail ? 'create-tool-chip' : btnClass}
@@ -1787,7 +1761,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         triggerRef={executionButtonRef}
                         placement="top-right"
                         role="dialog"
-                        aria-label="Codex task execution"
+                        aria-label="Image generation settings"
                         className="create-execution-menu"
                       >
                         <header className="create-execution-header">
@@ -1795,7 +1769,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             <h3>Generation settings</h3>
                             <p>Applies to the next image.</p>
                           </div>
-                          {isLoadingCodexModelCatalog && (
+                          {activeProviderId === 'codex' && isLoadingCodexModelCatalog && (
                             <Loader2 size={14} className="animate-spin" />
                           )}
                           <button
@@ -1808,43 +1782,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           </button>
                         </header>
                         <div className="create-execution-body">
-                          <section aria-labelledby="codex-execution-provider-label">
-                            <h4 id="codex-execution-provider-label">Connection</h4>
-                            <div
-                              className="create-execution-connections"
-                              role="group"
-                              aria-label="Codex execution provider"
-                            >
-                              {CODEX_EXECUTION_TRANSPORTS.map((option) => {
-                                const isAvailable = codexAvailableTransports
-                                  ? codexAvailableTransports.includes(option.id)
-                                  : option.id === selectedCodexTransport;
-                                const isSelected = selectedCodexTransport === option.id;
-                                return (
-                                  <button
-                                    type="button"
-                                    key={option.id}
-                                    data-codex-transport={option.id}
-                                    aria-pressed={isSelected}
-                                    aria-label={`${option.accessibleLabel}: ${isAvailable ? 'Ready' : 'Unavailable'}`}
-                                    disabled={!isAvailable}
-                                    onClick={() => handleSelectExecutionTransport(option.id)}
-                                    className="studio-ghost-control create-execution-choice"
-                                  >
-                                    <ProviderBrandMark providerId="codex" size="xs" />
-                                    <span className="create-execution-copy">
-                                      <strong>{option.label}</strong>
-                                      <small>
-                                        {option.detail} · {isAvailable ? 'Ready' : 'Unavailable'}
-                                      </small>
-                                    </span>
-                                    {isSelected && <Check size={14} aria-hidden="true" />}
-                                  </button>
-                                );
-                              })}
-                            </div>
-                          </section>
-
                           <section aria-labelledby="codex-execution-model-label">
                             <h4 id="codex-execution-model-label">Text model</h4>
                             {selectedCodexTransport === 'subscription_http' ? (

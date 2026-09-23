@@ -9,6 +9,7 @@ import type {
 import {
   CODEX_HTTP_EXECUTION_DEFAULTS,
   resolveCodexExecutionPolicy,
+  resolveChatgptExecutionPolicy,
 } from '../../../packages/shared/src/codexExecutionContract';
 import { collectGrokImagineJobIssues } from '../../../packages/shared/src/grokImagineContract';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src/studioSettings';
@@ -66,7 +67,6 @@ export interface PersistentJobIntakeDependencies {
   readLibraryContext?: () => JobLibraryContext;
   readEditableSettings?: () => EditableStudioSettings;
   resolveBootstrapExecution?: typeof resolveBootstrapProviderExecutionOptions;
-  readCodexTransport: () => CodexExecutionTransport;
   readCodexTransportAvailability?: () => Partial<Record<CodexExecutionTransport, boolean>>;
   validateManagedAssets?: typeof validateManagedGenerationAssets;
   resolveProviderExecutionBlocker: (
@@ -181,7 +181,6 @@ export function createPersistentJobIntake({
   readLibraryContext,
   readEditableSettings = createDefaultEditableStudioSettings,
   resolveBootstrapExecution = resolveBootstrapProviderExecutionOptions,
-  readCodexTransport,
   readCodexTransportAvailability,
   validateManagedAssets = validateManagedGenerationAssets,
   resolveProviderExecutionBlocker,
@@ -296,64 +295,64 @@ export function createPersistentJobIntake({
       }
     }
 
-    const requestedCodexTransport =
-      providerId === 'codex' ? request.execution?.providerOptions?.codex?.transport : undefined;
-    const requestedCodexImageModel =
-      providerId === 'codex'
-        ? (request.execution?.providerOptions?.codex?.imageModel ??
-          request.execution?.providerOptions?.codex?.image?.model)
-        : undefined;
-    const codexTransport =
-      providerId === 'codex' ? (requestedCodexTransport ?? readCodexTransport()) : null;
     const execution = resolveEffectiveJobExecutionOptions({
       providerId,
       explicit: request.execution,
       settings: readEditableSettings(),
       bootstrap:
-        codexTransport === 'subscription_http'
+        providerId === 'chatgpt'
           ? CODEX_HTTP_EXECUTION_DEFAULTS
           : resolveBootstrapExecution(providerId),
     });
-    if (codexTransport) {
-      const transportAvailability = readCodexTransportAvailability?.();
-      if (transportAvailability && transportAvailability[codexTransport] !== true) {
-        const routeLabel =
-          codexTransport === 'subscription_http' ? 'ChatGPT Sign in' : 'Codex app-server';
+    if (providerId === 'codex' || providerId === 'chatgpt') {
+      const transport = providerId === 'chatgpt' ? 'subscription_http' : 'codex_app_server';
+      if (
+        providerId === 'codex' &&
+        request.execution?.providerOptions?.codex?.transport === 'subscription_http'
+      ) {
         return {
           ok: false,
           error: {
             status: 400,
             body: {
-              error: `${routeLabel} is not ready. Open Studio Settings and complete its setup before generating.`,
+              error: 'Select the ChatGPT provider for direct HTTP generation.',
               code: 'codex_transport_unavailable',
-              transport: codexTransport,
+            },
+          },
+        };
+      }
+      const availability = readCodexTransportAvailability?.();
+      if (availability && availability[transport] !== true) {
+        return {
+          ok: false,
+          error: {
+            status: 400,
+            body: {
+              error: `${providerId === 'chatgpt' ? 'ChatGPT Sign in' : 'Codex app-server'} is not ready. Open Studio Settings and complete its setup before generating.`,
+              code: `${providerId}_transport_unavailable`,
+              transport,
             },
           },
         };
       }
       try {
-        const executionForPolicy = requestedCodexImageModel
-          ? {
-              ...execution,
-              providerOptions: {
-                codex: {
-                  transport: codexTransport,
-                  imageModel: requestedCodexImageModel,
-                },
-              },
-            }
-          : execution;
-        execution.providerOptions = {
-          codex: resolveCodexExecutionPolicy(executionForPolicy, sourceSpec, codexTransport),
-        };
+        execution.providerOptions =
+          providerId === 'chatgpt'
+            ? {
+                chatgpt: resolveChatgptExecutionPolicy(
+                  { ...execution, providerOptions: request.execution?.providerOptions },
+                  sourceSpec,
+                ),
+              }
+            : { codex: resolveCodexExecutionPolicy(execution, sourceSpec, 'codex_app_server') };
       } catch (error) {
         return {
           ok: false,
           error: {
             status: 400,
             body: {
-              error: error instanceof Error ? error.message : 'Invalid Codex execution options.',
-              code: 'codex_execution_unsupported',
+              error: error instanceof Error ? error.message : 'Invalid execution options.',
+              code: `${providerId}_execution_unsupported`,
             },
           },
         };

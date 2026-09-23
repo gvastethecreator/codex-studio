@@ -14,6 +14,7 @@ export type GenerationTaskKind = (typeof GENERATION_TASK_KINDS)[number];
 
 export const BUILT_IN_GENERATION_PROVIDERS = [
   'codex',
+  'chatgpt',
   'grok',
   'google',
   'antigravity',

@@ -3,31 +3,33 @@ import { describe, expect, it } from 'vitest';
 import { createGenerationProviderCapabilities } from './providerCapabilities';
 
 describe('providerCapabilities', () => {
-  it('marks Codex executable from Studio Sign in when Product Runtime is missing', () => {
+  it('keeps ChatGPT executable without Codex and does not make Codex executable from HTTP auth', () => {
     const report = createGenerationProviderCapabilities({
       settings: { defaultProviderId: 'codex' },
       localRuntimeConfigured: { codex: false },
-      subscriptionAuthConfigured: { codex: true },
-      subscriptionAuthState: { codex: 'logged_in' },
+      subscriptionAuthConfigured: { chatgpt: true },
+      subscriptionAuthState: { chatgpt: 'logged_in' },
     });
 
     expect(report.providers).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
-          providerId: 'codex',
+          providerId: 'chatgpt',
           runtimeKind: 'subscription_http',
           canExecute: true,
           subscriptionAuthState: 'logged_in',
+          secretState: 'configured',
         }),
+        expect.objectContaining({ providerId: 'codex', canExecute: false }),
       ]),
     );
   });
-  it('keeps Codex app-server primary while exposing the signed-in HTTP route', () => {
+  it('keeps the Codex app-server provider independent from HTTP auth', () => {
     const report = createGenerationProviderCapabilities({
       settings: { defaultProviderId: 'codex' },
       localRuntimeConfigured: { codex: true },
-      subscriptionAuthConfigured: { codex: true },
-      subscriptionAuthState: { codex: 'logged_in' },
+      subscriptionAuthConfigured: { chatgpt: true },
+      subscriptionAuthState: { chatgpt: 'logged_in' },
     });
 
     expect(report.providers).toEqual(
@@ -36,8 +38,7 @@ describe('providerCapabilities', () => {
           providerId: 'codex',
           runtimeKind: 'codex_app_server',
           canExecute: true,
-          detail:
-            'Codex app-server and ChatGPT HTTP are ready. Choose the execution route per job.',
+          subscriptionAuthState: 'not_applicable',
         }),
       ]),
     );

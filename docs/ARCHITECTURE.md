@@ -31,7 +31,7 @@ graph TD
 
 ## Product shape
 
-- **Codex-first:** the default image workflow uses the local Codex/ChatGPT session through `codex app-server`.
+- **Provider execution:** Codex uses local `codex app-server`; ChatGPT uses its existing subscription HTTP endpoint, credential store and SSE image executor without creating Codex threads.
 - **Local-first:** assets, SQLite state, transcripts, thumbnails, and logs live in the Studio Library, outside the repo.
 - **Library-backed:** the repo contains source code and public assets. Generated user data belongs in the Studio Library.
 - **Provider-aware:** supported built-in providers run behind backend adapters. They do not change the product center.
@@ -126,7 +126,7 @@ Studio Readiness combines:
 - `codex app-server` lifecycle
 - Local Codex Session state
 
-The main product flow is blocked when the local Codex/ChatGPT login cannot run jobs.
+Generation readiness belongs to the selected provider. ChatGPT authentication and fixed HTTP models do not depend on local Codex availability.
 The default Codex flow does not need `OPENAI_API_KEY`.
 Codex job intake uses this same non-secret runtime readiness signal before it persists or requeues jobs.
 Known-bad local runtimes fail fast instead of creating doomed queue rows.

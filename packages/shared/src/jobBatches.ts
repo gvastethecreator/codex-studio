@@ -39,7 +39,8 @@ export interface JobAttemptRecord {
 export function canRetryFailedBatchItem(job: Pick<Job, 'status' | 'providerId' | 'execution'>) {
   return (
     job.status === 'failed' &&
-    (job.providerId !== 'codex' || Boolean(job.execution?.providerOptions?.codex))
+    (job.providerId !== 'codex' || Boolean(job.execution?.providerOptions?.codex)) &&
+    (job.providerId !== 'chatgpt' || Boolean(job.execution?.providerOptions?.chatgpt))
   );
 }
 export function summarizeJobBatch(

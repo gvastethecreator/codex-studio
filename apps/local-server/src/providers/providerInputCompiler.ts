@@ -1,5 +1,5 @@
 import type { CompiledProviderInput, GenerationProviderId } from '../../../../packages/shared/src';
-import { compileCodexImagegenInput } from './codexProvider';
+import { compileCodexImagegenInput, compileChatgptImageInput } from './openaiImageInput';
 import { compileAntigravityImageInput } from './antigravityImageInput';
 import { compileDryRunInput } from './dryRunProvider';
 import { compileGrokImagineInput } from './grokImagineInput';
@@ -14,6 +14,7 @@ export type ProviderInputCompiler = (job: GenerationProviderJob) => CompiledProv
 
 const PROVIDER_INPUT_COMPILERS = {
   codex: compileCodexImagegenInput,
+  chatgpt: compileChatgptImageInput,
   grok: compileGrokImagineInput,
   antigravity: compileAntigravityImageInput,
   dry_run: compileDryRunInput,

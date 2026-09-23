@@ -92,7 +92,7 @@ export interface BuildGenerationTaskSpecFromRecipeArgs {
   task?: GenerationTaskKind;
 }
 
-const CODEX_FIRST_PROVIDERS: GenerationProviderId[] = ['codex', 'dry_run'];
+const CODEX_FIRST_PROVIDERS: GenerationProviderId[] = ['codex', 'chatgpt', 'dry_run'];
 
 const RECIPE_LIST_ORDER: RegisteredRecipeId[] = [
   'animation-sequence',
@@ -1067,7 +1067,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
     description: 'Browse and apply styles, or generate style-card assets.',
     defaultTask: 'image_generate',
     supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
-    supportedProviders: ['codex', 'grok', 'google', 'antigravity', 'dry_run'],
+    supportedProviders: ['codex', 'chatgpt', 'grok', 'google', 'antigravity', 'dry_run'],
     parameters: [
       {
         id: 'presetId',

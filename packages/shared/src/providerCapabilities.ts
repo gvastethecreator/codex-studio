@@ -78,9 +78,18 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     requiresSecret: false,
     requiresLocalRuntime: true,
     activeDetail: 'Codex Product Runtime adapter is available.',
-    subscriptionReadyDetail: 'ChatGPT HTTP is ready. Each job keeps its accepted execution route.',
     plannedDetail: 'Codex adapter is available.',
-    missingDetail: 'Sign in with ChatGPT in Studio Settings, or start Codex Product Runtime.',
+    missingDetail: 'Start Codex Product Runtime and sign in through Codex.',
+  },
+  {
+    providerId: 'chatgpt',
+    label: 'ChatGPT',
+    runtimeKind: 'subscription_http',
+    hasAdapter: true,
+    requiresSecret: true,
+    activeDetail: 'ChatGPT session connected. Availability is checked when generating.',
+    plannedDetail: 'ChatGPT direct HTTP adapter is available.',
+    missingDetail: 'Sign in with ChatGPT in Studio Settings.',
   },
   {
     providerId: 'grok',
@@ -161,7 +170,7 @@ function resolveSubscriptionAuthState(
   providerId: GenerationProviderId,
   subscriptionAuthState: Partial<Record<GenerationProviderId, ProviderSubscriptionAuthState>>,
 ): ProviderSubscriptionAuthState {
-  if (providerId === 'codex' || providerId === 'grok' || providerId === 'google') {
+  if (providerId === 'chatgpt' || providerId === 'grok' || providerId === 'google') {
     return subscriptionAuthState[providerId] ?? 'logged_out';
   }
   return 'not_applicable';
@@ -189,17 +198,12 @@ export function createGenerationProviderCapabilities({
         : configured
           ? 'planned'
           : 'not_configured';
-      const codexHasLocalAndSubscriptionRoutes =
-        provider.providerId === 'codex' && localReady && subscriptionReady;
       const runtimeKind =
-        subscriptionReady &&
-        (provider.providerId === 'codex' || provider.providerId === 'grok') &&
-        !codexHasLocalAndSubscriptionRoutes
+        subscriptionReady && provider.providerId === 'grok'
           ? 'subscription_http'
           : provider.runtimeKind;
-      const activeDetail = codexHasLocalAndSubscriptionRoutes
-        ? 'Codex app-server and ChatGPT HTTP are ready. Choose the execution route per job.'
-        : subscriptionReady && provider.subscriptionReadyDetail
+      const activeDetail =
+        subscriptionReady && provider.subscriptionReadyDetail
           ? provider.subscriptionReadyDetail
           : provider.activeDetail;
 
@@ -211,7 +215,7 @@ export function createGenerationProviderCapabilities({
         isDefault: settings.defaultProviderId === provider.providerId,
         hasAdapter: provider.hasAdapter,
         canExecute,
-        secretState: resolveSecretState(provider.requiresSecret, secretReady),
+        secretState: resolveSecretState(provider.requiresSecret, secretReady || subscriptionReady),
         subscriptionAuthState: resolveSubscriptionAuthState(
           provider.providerId,
           subscriptionAuthState,

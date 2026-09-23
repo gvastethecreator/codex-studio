@@ -163,13 +163,12 @@ export function resolveGenerationExecutionOverride(
     | 'codexTransport'
   >,
 ) {
-  if (providerId !== 'codex') return undefined;
-  if (config.codexTransport === 'subscription_http') {
+  if (providerId !== 'codex' && providerId !== 'chatgpt') return undefined;
+  if (providerId === 'chatgpt') {
     return {
       ...CODEX_HTTP_EXECUTION_DEFAULTS,
       providerOptions: {
-        codex: {
-          transport: 'subscription_http' as const,
+        chatgpt: {
           imageModel: resolveCodexHttpImageModel(config.codexImageModel),
         },
       },
@@ -179,9 +178,7 @@ export function resolveGenerationExecutionOverride(
     model: config.executionModel,
     reasoningEffort: config.executionReasoningEffort,
     serviceTier: config.executionSpeed === 'standard' ? null : config.executionSpeed,
-    ...(config.codexTransport
-      ? { providerOptions: { codex: { transport: config.codexTransport } } }
-      : {}),
+    providerOptions: { codex: { transport: 'codex_app_server' as const } },
   };
 }
 

@@ -114,12 +114,13 @@ describe('localGenerationRun', () => {
         DEFAULT_GENERATION_CONFIG.executionSpeed === 'standard'
           ? null
           : DEFAULT_GENERATION_CONFIG.executionSpeed,
+      providerOptions: { codex: { transport: 'codex_app_server' } },
     });
   });
 
   it('uses the fixed HTTP contract while preserving app-server choices in the draft', () => {
     expect(
-      resolveGenerationExecutionOverride('codex', {
+      resolveGenerationExecutionOverride('chatgpt', {
         ...DEFAULT_GENERATION_CONFIG,
         codexTransport: 'subscription_http',
         executionModel: 'gpt-5.6-luna',
@@ -131,7 +132,7 @@ describe('localGenerationRun', () => {
       reasoningEffort: 'provider_default',
       serviceTier: null,
       providerOptions: {
-        codex: { transport: 'subscription_http', imageModel: 'gpt-image-2.5-flare' },
+        chatgpt: { imageModel: 'gpt-image-2.5-flare' },
       },
     });
   });

@@ -201,14 +201,14 @@ export function resolveCodexHttpImageSize(output?: CodexImageOutput | null): str
     width * height > 8_294_400
   ) {
     throw new Error(
-      'Codex HTTP needs an exact supported pixel size. Choose a listed aspect ratio or valid dimensions.',
+      'ChatGPT HTTP needs an exact supported pixel size. Choose a listed aspect ratio or valid dimensions.',
     );
   }
   if (
     output?.aspectRatio &&
     (!ratioWidth || !ratioHeight || width * ratioHeight !== height * ratioWidth)
   ) {
-    throw new Error('Codex HTTP image size must match the requested aspect ratio.');
+    throw new Error('ChatGPT HTTP image size must match the requested aspect ratio.');
   }
   return `${width}x${height}`;
 }
@@ -224,9 +224,12 @@ export function resolveCodexExecutionPolicy(
     return { transport };
   }
   const requestedImageModel =
-    execution.providerOptions?.codex?.imageModel ?? execution.providerOptions?.codex?.image?.model;
+    execution.providerOptions?.chatgpt?.imageModel ??
+    execution.providerOptions?.chatgpt?.image?.model ??
+    execution.providerOptions?.codex?.imageModel ??
+    execution.providerOptions?.codex?.image?.model;
   if (requestedImageModel !== undefined && !isCodexHttpImageModel(requestedImageModel)) {
-    throw new Error('Codex HTTP image model is not available in the current contract.');
+    throw new Error('ChatGPT HTTP image model is not available in the current contract.');
   }
   if (
     execution.model !== CODEX_HTTP_CHAT_MODEL ||
@@ -234,12 +237,12 @@ export function resolveCodexExecutionPolicy(
     execution.serviceTier
   ) {
     throw new Error(
-      'Codex HTTP uses GPT-5.5 with provider-managed reasoning and speed. Apply the HTTP settings before generating.',
+      'ChatGPT HTTP uses GPT-5.5 with provider-managed reasoning and speed. Apply the HTTP settings before generating.',
     );
   }
   if ((sourceSpec?.assets.length ?? 0) > CODEX_HTTP_MAX_INPUT_IMAGES) {
     throw new Error(
-      `Codex HTTP accepts at most ${CODEX_HTTP_MAX_INPUT_IMAGES} input images. Remove extra images before generating.`,
+      `ChatGPT HTTP accepts at most ${CODEX_HTTP_MAX_INPUT_IMAGES} input images. Remove extra images before generating.`,
     );
   }
   return {
@@ -256,4 +259,13 @@ export function describeCodexExecution(policy?: CodexExecutionPolicy | null) {
   if (!policy) return 'Execution policy was not captured';
   if (policy.transport === 'codex_app_server') return 'Codex app-server';
   return `ChatGPT HTTP · ${policy.image?.model} · ${policy.image?.size} · medium image quality`;
+}
+
+/** Captures the direct HTTP contract without exposing a route selector. */
+export function resolveChatgptExecutionPolicy(
+  execution: JobExecutionOptions,
+  sourceSpec: { output: CodexImageOutput; assets: readonly unknown[] } | null | undefined,
+): NonNullable<NonNullable<JobExecutionOptions['providerOptions']>['chatgpt']> {
+  const { image } = resolveCodexExecutionPolicy(execution, sourceSpec, 'subscription_http');
+  return { image };
 }

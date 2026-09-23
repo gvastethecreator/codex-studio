@@ -58,7 +58,10 @@ export interface JobExecutionOptions {
   model: string;
   reasoningEffort: CodexReasoningEffort;
   serviceTier?: Exclude<CodexServiceTier, 'standard'> | null;
-  providerOptions?: { codex?: CodexExecutionPolicy };
+  providerOptions?: {
+    codex?: CodexExecutionPolicy;
+    chatgpt?: Omit<CodexExecutionPolicy, 'transport'>;
+  };
 }
 
 export interface JobLibraryContext {
@@ -241,12 +244,12 @@ export interface ComfyRemoteExecution {
 }
 
 /** A subscription POST may have been accepted; it has no supported resume API. */
-export interface CodexHttpSubmission {
-  providerId: 'codex';
+export interface SubscriptionHttpSubmission {
+  providerId: 'codex' | 'chatgpt';
   phase: 'submitting' | 'completed' | 'failed';
   startedAt: number;
 }
-export type JobRemoteExecution = ComfyRemoteExecution | CodexHttpSubmission;
+export type JobRemoteExecution = ComfyRemoteExecution | SubscriptionHttpSubmission;
 
 export interface JobSummary {
   id: string;

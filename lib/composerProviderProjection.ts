@@ -34,7 +34,7 @@ import { MAX_GROK_IMAGINE_SOURCE_IMAGES } from '../packages/shared/src/grokImagi
 
 const EMPTY_CODEX_MODELS: CodexModel[] = [];
 
-export type ComposerProviderKind = 'codex' | 'grok' | 'other';
+export type ComposerProviderKind = 'codex' | 'chatgpt' | 'grok' | 'other';
 
 export const PROVIDER_BATCH_MAX = 10;
 export const STUDIO_MAX_INPUT_IMAGES = 10;
@@ -81,6 +81,7 @@ export function resolveComposerProviderKind(
   providerId: GenerationProviderId,
 ): ComposerProviderKind {
   if (providerId === 'codex') return 'codex';
+  if (providerId === 'chatgpt') return 'chatgpt';
   if (providerId === 'grok') return 'grok';
   return 'other';
 }
@@ -129,6 +130,8 @@ export function buildComposerProviderProjection({
   catalogError: string | null;
 }): ComposerProviderProjection {
   const kind = resolveComposerProviderKind(providerId);
+  if (kind === 'chatgpt') codexTransport = 'subscription_http';
+  else if (kind === 'codex') codexTransport = 'codex_app_server';
   const availableTransports = codexAvailableTransports
     ? [...new Set(codexAvailableTransports)]
     : codexTransport
@@ -137,11 +140,11 @@ export function buildComposerProviderProjection({
   const selectedTransport = codexTransport ?? null;
   const transportAvailabilityKnown = codexAvailableTransports !== undefined;
   const selectedTransportAvailable =
-    kind !== 'codex' ||
+    (kind !== 'codex' && kind !== 'chatgpt') ||
     !selectedTransport ||
     !transportAvailabilityKnown ||
     availableTransports.includes(selectedTransport);
-  const isHttp = kind === 'codex' && codexTransport === 'subscription_http';
+  const isHttp = kind === 'chatgpt';
   const models = isHttp ? [CODEX_HTTP_MODEL] : (codexModelCatalog?.models ?? EMPTY_CODEX_MODELS);
   const preferredModelId = pickPreferredCodexModel(models, executionModel);
   const selectedModel = isHttp
@@ -167,7 +170,7 @@ export function buildComposerProviderProjection({
       : codexTransport === 'subscription_http'
         ? 'ChatGPT'
         : '';
-  if (kind === 'codex') {
+  if (kind === 'codex' || kind === 'chatgpt') {
     if (!codexTransport)
       codexBlock = {
         code: 'codex_execution_checking',
@@ -228,7 +231,7 @@ export function buildComposerProviderProjection({
     kind,
     ratios: kind === 'grok' ? listGrokImagineRatioOptions() : IMAGE_GEN_RATIO_OPTIONS,
     showCodexPromptTools: kind !== 'grok',
-    showCodexModelChrome: kind === 'codex',
+    showCodexModelChrome: kind === 'codex' || kind === 'chatgpt',
     maxOutputCount: resolveProviderMaxOutputCount(providerId),
     generateBlock:
       codexBlock ??

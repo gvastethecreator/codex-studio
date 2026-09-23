@@ -312,7 +312,7 @@ async function inspectJobBatches() {
       processReferences: async (_id, prompt) => ({ augmentedPrompt: prompt, persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (spec) => spec,
       readLibraryDir: () => 'X:/isolated-fixture',
-      readCodexTransport: () => 'codex_app_server',
+
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError: (_error): _error is never => false,
       publishEvent: (type, payload) => ({ type, payload, createdAt: new Date().toISOString() }),

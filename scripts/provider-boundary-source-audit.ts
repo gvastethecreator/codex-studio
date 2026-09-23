@@ -18,7 +18,7 @@ const forbiddenMarkers = [
   'createGrokImagineHttpExecutor',
   'createGrokRuntimeExecutor',
   'createAntigravityImageExecutor',
-  'createCodexResponsesImageExecutor',
+  'createChatgptResponsesImageExecutor',
   'googleExecutor',
   'falExecutor',
   'comfyExecutor',
@@ -26,7 +26,7 @@ const forbiddenMarkers = [
   'grokImagineHttpExecutor',
   'grokRuntimeExecutor',
   'antigravityImageExecutor',
-  'codexResponsesImageExecutor',
+  'chatgptResponsesImageExecutor',
 ] as const;
 
 export interface ProviderBoundarySourceAuditUsage {
@@ -46,6 +46,8 @@ function toRepoPath(rootDir: string, filePath: string) {
 function shouldScan(repoPath: string) {
   if (!repoPath.startsWith(`${scannedRoot}/`)) return false;
   if (repoPath.startsWith(`${providerBoundaryDir}/`)) return false;
+  // Integration tests exercise concrete adapters; this boundary applies to production modules.
+  if (/\.test\.tsx?$/.test(repoPath)) return false;
   return /\.(ts|tsx)$/.test(repoPath);
 }
 

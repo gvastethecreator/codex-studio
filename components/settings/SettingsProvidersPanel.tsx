@@ -137,10 +137,13 @@ export function SettingsProvidersPanel({
                 subscriptionId || provider.providerId === 'comfy'
                   ? null
                   : providerSecretLabel(preflight?.secretState, preflight?.secretSource);
-              const readyLabel = providerReadyLabel({
-                canExecute: provider.canExecute,
-                status: provider.status,
-              });
+              const readyLabel =
+                provider.providerId === 'chatgpt' && provider.canExecute
+                  ? 'Session connected'
+                  : providerReadyLabel({
+                      canExecute: provider.canExecute,
+                      status: provider.status,
+                    });
 
               return (
                 <div key={provider.providerId} className="settings-provider-account">
@@ -209,11 +212,6 @@ export function SettingsProvidersPanel({
           onChange={updateSelectedProviderDefaults}
           availableModels={preflightByProvider.get(defaultProviderId)?.availableModels}
           providerDefaultModel={preflightByProvider.get(defaultProviderId)?.defaultModel}
-          codexTransport={
-            preflightByProvider.get('codex')?.runtimeKind === 'subscription_http'
-              ? 'subscription_http'
-              : 'codex_app_server'
-          }
         />
       </details>
     </>

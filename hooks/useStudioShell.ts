@@ -187,14 +187,19 @@ export function useStudioShell(): StudioShellController {
 
   const codexAvailableTransports = useMemo<readonly CodexExecutionTransport[] | undefined>(() => {
     const preflight = studioSettings.data.providerDomain.runtimePreflight?.providers.find(
-      (provider) => provider.providerId === 'codex',
+      (provider) =>
+        provider.providerId ===
+        (studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex'),
     );
     if (!preflight?.availableRuntimeKinds) return undefined;
     return preflight.availableRuntimeKinds.filter(
       (runtimeKind): runtimeKind is CodexExecutionTransport =>
         runtimeKind === 'codex_app_server' || runtimeKind === 'subscription_http',
     );
-  }, [studioSettings.data.providerDomain.runtimePreflight]);
+  }, [
+    studioSettings.data.providerDomain.runtimePreflight,
+    studioSettings.data.settingsDomain.settings?.defaultProviderId,
+  ]);
 
   const codexDefaultTransport: CodexExecutionTransport | undefined =
     codexAvailableTransports?.includes('codex_app_server')

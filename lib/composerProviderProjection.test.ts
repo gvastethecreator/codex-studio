@@ -66,11 +66,11 @@ describe('composerProviderProjection', () => {
     expect(projection.maxOutputCount).toBe(1);
     expect(projection.generateBlock).toMatchObject({ code: 'unsupported_grok_recipe' });
   });
-  it('projects both Codex routes without overwriting the app-server settings', () => {
+  it('projects ChatGPT independently of the Codex catalog and keeps app-server settings', () => {
     const input = {
-      providerId: 'codex' as const,
+      providerId: 'chatgpt' as const,
       codexTransport: 'subscription_http' as const,
-      codexAvailableTransports: ['codex_app_server', 'subscription_http'] as const,
+      codexAvailableTransports: ['subscription_http'] as const,
       recipeId: null,
       aspectRatio: '16:9' as const,
       attachments: [],
@@ -104,13 +104,12 @@ describe('composerProviderProjection', () => {
     expect(projection.execution.summary).toContain('1K');
     expect(projection.execution.reasoningOptions).toEqual(['provider_default']);
     expect(projection.execution.speedOptions).toEqual(['standard']);
-    expect(projection.execution.availableTransports).toEqual([
-      'codex_app_server',
-      'subscription_http',
-    ]);
+    expect(projection.execution.availableTransports).toEqual(['subscription_http']);
 
     const appProjection = buildComposerProviderProjection({
       ...input,
+      providerId: 'codex',
+      codexAvailableTransports: ['codex_app_server'],
       codexTransport: 'codex_app_server',
       codexModelCatalog: {
         models: [

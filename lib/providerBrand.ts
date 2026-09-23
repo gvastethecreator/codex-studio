@@ -1,9 +1,10 @@
 export function providerBrandWellClass(providerId: string) {
-  return `provider-brand-well provider-brand-${['codex', 'grok', 'google', 'antigravity', 'fal', 'comfy', 'dry_run'].includes(providerId) ? providerId : 'unknown'}`;
+  return `provider-brand-well provider-brand-${['codex', 'chatgpt', 'grok', 'google', 'antigravity', 'fal', 'comfy', 'dry_run'].includes(providerId) ? providerId : 'unknown'}`;
 }
 
 export function providerBrandChipLabel(providerId: string) {
   if (providerId === 'codex') return 'Codex';
+  if (providerId === 'chatgpt') return 'ChatGPT';
   if (providerId === 'grok') return 'Grok';
   if (providerId === 'google') return 'Google';
   if (providerId === 'antigravity') return 'Antigravity';

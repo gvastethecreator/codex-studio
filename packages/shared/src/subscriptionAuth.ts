@@ -35,6 +35,7 @@ export function isSubscriptionProviderId(value: string): value is SubscriptionPr
 }
 
 export function generationProviderIdForSubscription(providerId: SubscriptionProviderId) {
+  if (providerId === 'codex') return 'chatgpt';
   if (providerId === 'xai') return 'grok';
   return providerId;
 }
@@ -42,7 +43,7 @@ export function generationProviderIdForSubscription(providerId: SubscriptionProv
 export function subscriptionProviderIdForGeneration(
   providerId: string,
 ): SubscriptionProviderId | null {
-  if (providerId === 'codex') return 'codex';
+  if (providerId === 'chatgpt') return 'codex';
   if (providerId === 'grok') return 'xai';
   if (providerId === 'google') return 'google';
   return null;

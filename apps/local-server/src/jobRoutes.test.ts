@@ -138,7 +138,7 @@ describe('jobRoutes', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError,
@@ -195,7 +195,7 @@ describe('jobRoutes', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError,
@@ -246,7 +246,7 @@ describe('jobRoutes', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError,
@@ -280,7 +280,7 @@ describe('jobRoutes', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError,
@@ -315,7 +315,7 @@ describe('jobRoutes', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => ({
         error: 'Provider cannot execute jobs yet.',
@@ -366,7 +366,7 @@ describe('jobRoutes', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'x', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       readGrokAvailableModels: () => ['grok-4.6'],
       resolveProviderExecutionBlocker: () => null,
@@ -415,7 +415,7 @@ describe('jobRoutes', () => {
         persistedRefs: [{ id: 'ref-1' }],
       }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: (providerId) =>
         providerId === 'blocked' ? { error: 'provider_blocked' } : null,
@@ -477,7 +477,7 @@ describe('jobRoutes', () => {
         persistedRefs: [],
       }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError,
@@ -523,7 +523,7 @@ describe('jobRoutes', () => {
         persistedRefs: [],
       }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError,
@@ -566,7 +566,7 @@ describe('jobRoutes', () => {
         persistedRefs: [],
       }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError,
@@ -613,7 +613,7 @@ describe('jobRoutes', () => {
       updateJobFinalPrompt: () => null,
       processReferences,
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError,

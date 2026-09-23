@@ -9,7 +9,7 @@ import { validateWorkerLimits } from '../../../packages/shared/src/workerContrac
 import type { GenerationProvider } from './providers/types';
 import { ProviderExecutionUncertainError } from './workerErrors';
 import { createJobRoutes } from './jobRoutes';
-import { createCodexResponsesImageExecutor } from './providers/codexResponsesImageExecutor';
+import { createChatgptResponsesImageExecutor } from './providers/chatgptResponsesImageExecutor';
 import {
   CODEX_HTTP_EXECUTION_DEFAULTS,
   resolveCodexExecutionPolicy,
@@ -319,7 +319,7 @@ describe('worker shutdown', () => {
       });
       throw new Error('connection lost');
     });
-    const run = createCodexResponsesImageExecutor({
+    const run = createChatgptResponsesImageExecutor({
       fetch,
       getAccessToken: async () => 'test-token',
     });
@@ -383,7 +383,7 @@ describe('worker shutdown', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'prompt', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (spec) => spec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'unused',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError: (

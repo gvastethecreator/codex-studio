@@ -1,3 +1,4 @@
+import { CatalogCardBackdrop } from './CatalogCardBackdrop';
 import React, { useRef, useState, useMemo, useSyncExternalStore } from 'react';
 import type {
   GeneratedImageWithConfig,
@@ -35,7 +36,6 @@ import { providerBrandChipLabel } from '../lib/providerBrand';
 import {
   shouldAlwaysShowCatalogCardActions,
   shouldMountCatalogCardActions,
-  shouldShowCatalogCardQuickActions,
 } from '../lib/catalogCardActionSurface';
 import {
   DEFAULT_THUMBNAIL_SIZE,
@@ -142,6 +142,9 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const { addToast } = useToastUi();
     const [copiedPrompt, setCopiedPrompt] = useState(false);
     const [isActionSurfaceActive, setIsActionSurfaceActive] = useState(false);
+    const [isActionSurfaceFocused, setIsActionSurfaceFocused] = useState(false);
+    const [isActionMenuOpen, setIsActionMenuOpen] = useState(false);
+    const [isActionPanelExpanded, setIsActionPanelExpanded] = useState(false);
     const timeoutRef = useRef<number | null>(null);
     const primaryImageSrc = image.thumbnail || image.src;
     const [failedSrc, setFailedSrc] = useState<string | null>(null);
@@ -151,12 +154,12 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     const imageIntrinsicSize = resolveImageGridIntrinsicSize(image);
     const shouldMountActions = shouldMountCatalogCardActions({
       alwaysShowActions,
-      isActionSurfaceActive,
+      isActionSurfaceActive:
+        isActionSurfaceActive ||
+        isActionSurfaceFocused ||
+        isActionMenuOpen ||
+        isActionPanelExpanded,
       isSelected,
-    });
-    const shouldShowQuickActions = shouldShowCatalogCardQuickActions({
-      alwaysShowActions,
-      isActionSurfaceActive,
     });
     const isGridView = viewMode === 'grid';
     const isListView = viewMode === 'list';
@@ -204,7 +207,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     };
 
     const handleFocusCapture = () => {
-      setIsActionSurfaceActive(true);
+      setIsActionSurfaceFocused(true);
     };
 
     const handleBlurCapture = (event: React.FocusEvent<HTMLDivElement>) => {
@@ -212,7 +215,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         return;
       }
 
-      setIsActionSurfaceActive(false);
+      setIsActionSurfaceFocused(false);
     };
 
     const handleDownload = () => {
@@ -315,24 +318,25 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           icon={<Download size={14} />}
           label="Download"
         />
-        {(isListView || isCardView) && (
+        {
           <CompactActionButton
             onClick={() => onToggleFavorite(image.id)}
             icon={<Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} />}
             label={image.isFavorite ? 'Remove favorite' : 'Add favorite'}
             isActive={image.isFavorite}
           />
-        )}
-        {(isListView || isCardView) && (
+        }
+        {
           <CompactActionButton
             onClick={handleSelectClick}
             icon={<Check size={14} />}
             label={isSelected ? 'Deselect' : 'Select'}
             isActive={isSelected}
           />
-        )}
+        }
         <details
           className="library-card-menu"
+          onToggle={(event) => setIsActionMenuOpen(event.currentTarget.open)}
           onClick={(event) => event.stopPropagation()}
           onKeyDown={(event) => {
             if (event.key === 'Escape') {
@@ -406,7 +410,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           onMouseLeave={() => setIsActionSurfaceActive(false)}
           onFocusCapture={handleFocusCapture}
           onBlurCapture={handleBlurCapture}
-          className={`group min-w-0 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow]
+          className={`catalog-art-card relative group min-w-0 overflow-hidden rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow]
           ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-panel)]/85'}
         `}
           style={{ contentVisibility: 'auto', containIntrinsicSize: '320px 460px' }}
@@ -425,18 +429,14 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
               className={`absolute inset-0 transition-opacity duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100'}`}
             />
           </button>
-          <div className="space-y-2.5 p-3">
-            <div className="min-w-0 border-b border-[color:var(--wb-line)] pb-2.5">
-              <div
-                data-tooltip={promptText}
-                className="line-clamp-2 text-[13px] font-semibold leading-5 text-[color:var(--wb-ink)]"
-              >
-                {promptText}
-              </div>
-              <div className="mt-2">{metadataLine}</div>
-            </div>
+          <CatalogCardBackdrop
+            label={promptText}
+            title={<span>{promptText}</span>}
+            onExpandedChange={setIsActionPanelExpanded}
+          >
+            {metadataLine}
             {visibleActionGroup}
-          </div>
+          </CatalogCardBackdrop>
         </div>
       );
     }
@@ -448,7 +448,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         onMouseLeave={() => setIsActionSurfaceActive(false)}
         onFocusCapture={handleFocusCapture}
         onBlurCapture={handleBlurCapture}
-        className={`masonry-item relative group overflow-hidden rounded-[var(--wb-radius)] cursor-pointer transition-[opacity,transform,box-shadow] duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
+        className={`catalog-art-card masonry-item relative group overflow-hidden rounded-[var(--wb-radius)] cursor-pointer transition-[opacity,transform,box-shadow] duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
         ${viewMode === 'mosaic' ? 'mb-4' : ''}
         ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
         animate-in fade-in-0 zoom-in-95
@@ -471,56 +471,21 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           ></div>
         </button>
 
-        {shouldShowQuickActions && (
-          <div className="absolute top-2 right-2 z-20 flex gap-2">
-            <Tooltip
-              content={image.isFavorite ? 'Remove Favorite' : 'Add Favorite'}
-              position="bottom"
-            >
-              <button
-                type="button"
-                aria-label={image.isFavorite ? 'Remove favorite' : 'Add favorite'}
-                aria-pressed={image.isFavorite}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onToggleFavorite(image.id);
-                }}
-                className={`studio-icon-action flex size-8 items-center justify-center rounded-[var(--wb-radius)] border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
-                        ${
-                          image.isFavorite
-                            ? 'bg-accent-500 border-accent-400/2 text-[color:var(--wb-ink)]'
-                            : 'bg-[color:var(--wb-well)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]/60 hover:border-[color:var(--wb-border)] hover:bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] hover:text-[color:var(--wb-ink)] group-hover:text-[color:var(--wb-ink)]/80'
-                        }`}
-              >
-                <Heart
-                  size={14}
-                  fill={image.isFavorite ? 'currentColor' : 'none'}
-                  strokeWidth={3}
-                />
-              </button>
-            </Tooltip>
-            <Tooltip content={isSelected ? 'Deselect' : 'Select'} position="bottom">
-              <button
-                type="button"
-                aria-label={isSelected ? 'Deselect image' : 'Select image'}
-                aria-pressed={isSelected}
-                onClick={handleSelectClick}
-                className={`studio-icon-action flex size-8 items-center justify-center rounded-[var(--wb-radius)] border shadow-lg backdrop-blur-md transition-[color,background-color,border-color,opacity,transform]
-                        ${
-                          isSelected
-                            ? 'bg-accent-600 border-accent-400/2 text-[color:var(--wb-ink)]'
-                            : 'bg-[color:var(--wb-well)] border-[color:var(--wb-line)] text-[color:var(--wb-ink)]/60 hover:border-[color:var(--wb-border)] hover:bg-[color:color-mix(in_srgb,var(--wba-bg)_72%,#000)] hover:text-[color:var(--wb-ink)] group-hover:text-[color:var(--wb-ink)]/80'
-                        }`}
-              >
-                <Check size={14} strokeWidth={3} />
-              </button>
-            </Tooltip>
+        {isSelected ? (
+          <span className="catalog-selected-mark" aria-label="Selected">
+            <Check size={14} />
+          </span>
+        ) : null}
+        <CatalogCardBackdrop
+          label={promptText}
+          title={<span>{promptText}</span>}
+          onExpandedChange={setIsActionPanelExpanded}
+        >
+          {metadataLine}
+          <div className="catalog-backdrop-action-slot">
+            {shouldMountActions ? visibleActionGroup : null}
           </div>
-        )}
-
-        {shouldMountActions && (
-          <div className="absolute bottom-2 left-2 right-2 z-20">{visibleActionGroup}</div>
-        )}
+        </CatalogCardBackdrop>
       </div>
     );
   },

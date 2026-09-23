@@ -6,6 +6,7 @@ export type SubscriptionHttpErrorCode =
   | 'timeout'
   | 'entitlement_denied'
   | 'source_limit'
+  | 'rate_limit'
   | 'cancelled'
   | 'not_signed_in'
   | 'moderation'
@@ -15,6 +16,8 @@ export class SubscriptionHttpError extends Error {
   readonly code: SubscriptionHttpErrorCode;
   readonly fallbackAllowed: boolean;
   readonly httpStatus: number | null;
+  readonly providerCode: string | null;
+  readonly retryAfterSeconds: number | null;
 
   constructor(
     message: string,
@@ -22,6 +25,8 @@ export class SubscriptionHttpError extends Error {
       code: SubscriptionHttpErrorCode;
       fallbackAllowed: boolean;
       httpStatus?: number | null;
+      providerCode?: string | null;
+      retryAfterSeconds?: number | null;
     },
   ) {
     super(message);
@@ -29,6 +34,8 @@ export class SubscriptionHttpError extends Error {
     this.code = options.code;
     this.fallbackAllowed = options.fallbackAllowed;
     this.httpStatus = options.httpStatus ?? null;
+    this.providerCode = options.providerCode ?? null;
+    this.retryAfterSeconds = options.retryAfterSeconds ?? null;
   }
 }
 

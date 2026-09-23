@@ -8,8 +8,8 @@ export type WorkerErrorCode =
 export class ProviderExecutionUncertainError extends Error {
   readonly code = 'execution_uncertain';
 
-  constructor(message: string) {
-    super(message);
+  constructor(message: string, options?: ErrorOptions) {
+    super(message, options);
     this.name = 'ProviderExecutionUncertainError';
   }
 }
