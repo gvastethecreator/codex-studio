@@ -18,6 +18,7 @@ import { canRetryStudioJob, canResumeStudioJob } from '../lib/studioJobRetry';
 import type { StudioQueueResultPreview } from '../lib/studioQueueResults';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import { cn } from '../lib/utils';
+import { useDialogFocus } from '../hooks/useDialogFocus';
 import { useLatestRef } from '../hooks/useLatestRef';
 import { isRegisteredRecipeId } from '../lib/recipeIds';
 import { useJobHistory } from '../hooks/useJobHistory';
@@ -114,6 +115,9 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     onClose,
   }) => {
     const [activeResultId, setActiveResultId] = useState<string | null>(null);
+    const panelRef = useRef<HTMLDivElement>(null);
+    const closeRef = useLatestRef(onClose);
+    const hasClose = Boolean(onClose);
     const [nowMs, setNowMs] = useState(() => Date.now());
     const [workspaceFilter, setWorkspaceFilter] = useState('');
     const [statusFilter, setStatusFilter] = useState<TerminalJobStatus | ''>('');
@@ -171,9 +175,39 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
       return () => window.clearInterval(id);
     }, [hasLiveDurations]);
 
+    useEffect(() => {
+      if (!hasClose || !panelRef.current) return;
+      const panel = panelRef.current;
+      const opener = document.activeElement;
+      panel.focus({ preventScroll: true });
+      const onKeyDown = (event: KeyboardEvent) => {
+        if (
+          event.key !== 'Escape' ||
+          event.defaultPrevented ||
+          !panel.contains(document.activeElement)
+        )
+          return;
+        event.preventDefault();
+        closeRef.current?.();
+      };
+      document.addEventListener('keydown', onKeyDown);
+      return () => {
+        document.removeEventListener('keydown', onKeyDown);
+        if (
+          opener instanceof HTMLElement &&
+          opener.isConnected &&
+          (panel.contains(document.activeElement) || document.activeElement === document.body)
+        )
+          opener.focus({ preventScroll: true });
+      };
+    }, [hasClose, closeRef]);
+
     return (
       <div
+        ref={panelRef}
+        role="region"
         aria-label="Jobs"
+        tabIndex={hasClose ? -1 : undefined}
         className="studio-surface flex h-full min-h-0 w-full flex-col border border-[color:var(--wb-border)] sm:w-[304px] sm:border-y-0 sm:border-r-0"
       >
         <div className="flex items-center justify-between px-3 py-3">
@@ -486,24 +520,24 @@ const RecentResultViewer: React.FC<{
   onNext: () => void;
   onInspect?: () => void;
 }> = ({ result, index, total, onClose, onPrevious, onNext, onInspect }) => {
-  const navigation = useMemo(
-    () => ({ onClose, onPrevious, onNext }),
-    [onClose, onNext, onPrevious],
-  );
-  const navigationRef = useLatestRef(navigation);
-
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') navigationRef.current.onClose();
-      if (event.key === 'ArrowLeft') navigationRef.current.onPrevious();
-      if (event.key === 'ArrowRight') navigationRef.current.onNext();
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [navigationRef]);
+  const dialogRef = useDialogFocus(true, onClose);
 
   return (
-    <div className="fixed inset-0 z-50 flex flex-col bg-[color:var(--wba-bg)] backdrop-blur-md">
+    <div
+      ref={dialogRef}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Recent result viewer"
+      tabIndex={-1}
+      onKeyDown={(event) => {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+          event.preventDefault();
+          if (event.key === 'ArrowLeft') onPrevious();
+          else onNext();
+        }
+      }}
+      className="fixed inset-0 z-50 flex flex-col bg-[color:var(--wba-bg)] backdrop-blur-md"
+    >
       <div className="flex h-14 shrink-0 items-center justify-between border-b border-[color:var(--wb-line)] px-3">
         <div className="min-w-0">
           <p className="truncate text-xs font-semibold text-[color:var(--wb-ink)]/90">

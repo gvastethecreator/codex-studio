@@ -139,21 +139,6 @@ export const AppContent: React.FC = () => {
 
         {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
 
-        {shell.viewport.routeView === 'studio' && (
-          <div className="studio-bar flex items-center gap-3 px-4 py-2">
-            <label className="flex flex-1 items-center gap-3 text-sm">
-              Search library
-              <input
-                type="search"
-                aria-label="Search library"
-                placeholder="Search all images in this workspace"
-                value={shell.librarySearch.query}
-                onChange={(event) => shell.librarySearch.setQuery(event.target.value)}
-                className="studio-well h-10 w-full max-w-xl rounded px-3"
-              />
-            </label>
-          </div>
-        )}
         {isWorkspace && (
           <div
             className="workbench-tabs"
@@ -255,6 +240,7 @@ export const AppContent: React.FC = () => {
           <StudioStatusBar
             usage={shell.headerToolbar.props.usage}
             commandCenter={shell.headerToolbar.props.commandCenter}
+            imageHistory={isWorkspace ? shell.history : undefined}
             isQueueOpen={shell.headerToolbar.props.isQueueOpen}
             onToggleQueue={shell.headerToolbar.props.onToggleQueue}
             onOpenDashboard={shell.headerToolbar.props.onOpenDashboard}

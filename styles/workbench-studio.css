@@ -157,10 +157,12 @@
 .studio-experience .create-format-popover,
 .studio-experience .create-workflow-popover,
 .wb-ambient [data-gsap-dropdown],
-.wb-ambient.studio-popover {
+.wb-ambient.studio-popover,
+.studio-experience .recipe-control-popover,
+.studio-experience .studio-mobile-popover {
   border: 1px solid var(--wb-border);
   border-radius: 6px;
-  background: var(--wb-panel);
+  background: var(--wb-popover);
   color: var(--wb-ink);
   box-shadow: 0 8px 30px color-mix(in srgb, #000 35%, transparent);
 }
@@ -235,6 +237,22 @@
   background-color: var(--amb-lit);
   background-image: var(--wba-specular-image), var(--wba-curve-image);
   box-shadow: var(--wba-cast-shadow);
+}
+
+/* Floating menus need a distinct surface even when Ambient lighting is enabled. */
+.wb-ambient:is(.studio-popover, [data-gsap-dropdown]),
+.wb-ambient[data-ambient-enabled]
+  :is(
+    .studio-popover,
+    [data-gsap-dropdown],
+    .create-format-popover,
+    .create-workflow-popover,
+    .recipe-control-popover,
+    .studio-mobile-popover
+  ) {
+  --amb-albedo: var(--wb-popover);
+  background: var(--wb-popover);
+  border-color: var(--wb-border);
 }
 
 .wb-ambient[data-ambient-enabled='true']
@@ -803,6 +821,19 @@
     :is(.studio-scrim, .create-dialog-backdrop, [role='tabpanel']:not([hidden])) {
       opacity: 0;
     }
+    .studio-operations-rail:not([data-motion-surface]) {
+      translate: 8px 0;
+    }
+  }
+
+  .studio-presence[data-state='closed']
+    :is(.studio-dialog, .create-side-panel-dialog):not([data-motion-surface]) {
+    translate: 0 -6px;
+    transition-duration: var(--dropdown-close-dur);
+  }
+  .studio-presence[data-state='closed'] .studio-operations-rail:not([data-motion-surface]) {
+    translate: 8px 0;
+    transition-duration: var(--dropdown-close-dur);
   }
 
   :is(.studio-scrim, .create-dialog-backdrop, [role='tabpanel']) {

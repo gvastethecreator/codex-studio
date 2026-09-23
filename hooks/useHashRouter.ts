@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { RecipeId } from '../types';
+import { startViewTransition } from '../utils/transitionUtils';
 import {
   resolveRecipeAlias,
   resolveRecipeAliasHashSegment,
@@ -141,7 +142,22 @@ export function useHashRouter() {
       setRoute(nextRoute);
     };
 
-    applyRoute();
+    const direction = resolveHashRouterTransition(routeRef.current, nextRoute);
+    if (!direction || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      applyRoute();
+      return;
+    }
+
+    document.documentElement.dataset.transitionType = 'route';
+    document.documentElement.dataset.routeDirection = direction;
+    const transition = startViewTransition(applyRoute, { useNative: true });
+    const clearTransition = () => {
+      if (document.documentElement.dataset.transitionType !== 'route') return;
+      document.documentElement.removeAttribute('data-transition-type');
+      document.documentElement.removeAttribute('data-route-direction');
+    };
+    if (transition) void transition.finished.then(clearTransition, clearTransition);
+    else clearTransition();
   }, []);
 
   useEffect(() => {

@@ -1,5 +1,5 @@
 import type React from 'react';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Attachment, AspectRatio } from '../types';
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -68,6 +68,7 @@ export function useStudioViewState({
   const [previewRatio, setPreviewRatio] = useState<AspectRatio | null>(null);
   const [isDashboardModalOpen, setIsDashboardModalOpen] = useState(false);
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
+  const settingsOpenRef = useRef(false);
   const [isTrashModalOpen, setIsTrashModalOpen] = useState(false);
   const [isChatPanelOpen, setIsChatPanelOpen] = useState(false);
 
@@ -80,12 +81,28 @@ export function useStudioViewState({
   }, []);
 
   const openSettings = useCallback(() => {
+    settingsOpenRef.current = true;
     startViewTransition(() => setIsSettingsModalOpen(true));
   }, []);
 
   const closeSettings = useCallback(() => {
+    settingsOpenRef.current = false;
     startViewTransition(() => setIsSettingsModalOpen(false));
   }, []);
+
+  useEffect(() => {
+    const closeBeforeSettingsMounts = (event: KeyboardEvent) => {
+      if (!settingsOpenRef.current || event.key !== 'Escape' || event.defaultPrevented) return;
+      const activeDialog = Array.from(
+        document.querySelectorAll<HTMLElement>('[aria-modal="true"], dialog[open]'),
+      ).some((dialog) => !dialog.closest('[inert]') && dialog.getClientRects().length > 0);
+      if (activeDialog) return;
+      event.preventDefault();
+      closeSettings();
+    };
+    document.addEventListener('keydown', closeBeforeSettingsMounts);
+    return () => document.removeEventListener('keydown', closeBeforeSettingsMounts);
+  }, [closeSettings]);
 
   const openTrash = useCallback(() => {
     startViewTransition(() => setIsTrashModalOpen(true));
@@ -125,6 +142,7 @@ export function useStudioViewState({
   }, []);
 
   const resetViewState = useCallback(() => {
+    settingsOpenRef.current = false;
     setIsQueueOpen(false);
     setEditorState(INITIAL_EDITOR_STATE);
     setPreviewRatio(null);

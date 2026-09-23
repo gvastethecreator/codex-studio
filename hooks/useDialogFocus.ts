@@ -1,7 +1,12 @@
 import { useEffect, useRef } from 'react';
 import { useLatestRef } from './useLatestRef';
 
-export function useDialogFocus(isOpen: boolean, onClose: () => void, returnFocusSelector?: string) {
+export function useDialogFocus(
+  isOpen: boolean,
+  onClose: () => void,
+  returnFocusSelector?: string,
+  initialFocusSelector?: string,
+) {
   const ref = useRef<HTMLDivElement>(null);
   const openerRef = useRef<Element | null>(null);
   const restoreFrameRef = useRef<number | null>(null);
@@ -23,10 +28,13 @@ export function useDialogFocus(isOpen: boolean, onClose: () => void, returnFocus
           node.tabIndex >= 0 &&
           node.getClientRects().length > 0,
       );
-    (controls()[0] ?? root).focus();
+    const preferred = initialFocusSelector
+      ? root.querySelector<HTMLElement>(initialFocusSelector)
+      : null;
+    (preferred && controls().includes(preferred) ? preferred : (controls()[0] ?? root)).focus();
     const keydown = (event: KeyboardEvent) => {
       const dialogs = Array.from(
-        document.querySelectorAll<HTMLElement>('[aria-modal="true"]'),
+        document.querySelectorAll<HTMLElement>('[aria-modal="true"], dialog[open]'),
       ).filter((node) => !node.closest('[inert]') && node.getClientRects().length > 0);
       if (dialogs.at(-1) !== root) return;
       if (event.key === 'Escape') {
@@ -65,6 +73,6 @@ export function useDialogFocus(isOpen: boolean, onClose: () => void, returnFocus
             ?.focus();
       });
     };
-  }, [isOpen, close, returnFocusSelector]);
+  }, [isOpen, close, returnFocusSelector, initialFocusSelector]);
   return ref;
 }

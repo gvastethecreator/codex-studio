@@ -56,7 +56,6 @@ const EMPTY_RUNTIME_LOGS: LogEntry[] = [];
 export interface StudioShellController {
   history: ReturnType<typeof useStudioCatalogController>['historyCatalog'];
   historySelection: { id: string | null; setId: (id: string) => void };
-  librarySearch: { query: string; setQuery: (value: string) => void };
   root: {
     onDragOver: ReturnType<typeof useImageInputSurface>['handleDragOver'];
     onDragLeave: ReturnType<typeof useImageInputSurface>['handleDragLeave'];
@@ -656,6 +655,7 @@ export function useStudioShell(): StudioShellController {
           generationAspectRatio: config.aspectRatio,
           isInteractingWithToolbar: ui.isInteractingWithToolbar,
           searchQuery: catalogQuery,
+          onSearchQueryChange: setCatalogQuery,
           onClearSearch: () => setCatalogQuery(''),
           onCreate: () => handleRecipeSelection(null),
           catalogTotal: activeCatalog.total,
@@ -945,7 +945,6 @@ export function useStudioShell(): StudioShellController {
     (): StudioShellController => ({
       history: historyCatalog,
       historySelection: { id: historySelectedId, setId: selectHistoryImage },
-      librarySearch: { query: catalogQuery, setQuery: setCatalogQuery },
       root: {
         onDragOver: handleDragOver,
         onDragLeave: handleDragLeave,

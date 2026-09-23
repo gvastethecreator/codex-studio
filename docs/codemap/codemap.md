@@ -1,15 +1,15 @@
 # Code map: codex-studio
 
-Generated: 2026-09-23T04:00:41Z | Commit: `5a799ee06d6f` | Schema: 2
-Generation: `3484156585fe7021097a438d37cc7f5266cac0fcdb5acf33e069b7f90c85b1d6`
+Generated: 2026-09-23T06:18:11Z | Commit: `efc8bd40de1c` | Schema: 2
+Generation: `34958c1a0cc8f2cfcd6d549795ae8065bbf2a4a42d40bc923b84edbd53ddcfd8`
 Scope: . | Inventory: working-tree
-Nodes: 1157 | Edges: 5890 | Flows: 5
+Nodes: 1159 | Edges: 5914 | Flows: 5
 
 ## Coverage
 
-- Analysis: **partial**; 1077 analyzed of 1090 included files.
+- Analysis: **partial**; 1079 analyzed of 1091 included files.
 - Configuration files: 7; omitted untracked files: 0.
-- Unresolved references and analysis limits: 3416.
+- Unresolved references and analysis limits: 3476.
 - Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules
@@ -34,7 +34,7 @@ Nodes: 1157 | Edges: 5890 | Flows: 5
 - `apps/local-server/src/auth/controller.ts` | module | Repository | callers: apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.test.ts, apps/local-server/src/auth/authRoutes.ts, apps/local-server/src/reset.ts | callees: apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/googleAuthorizationCode.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
 - `apps/local-server/src/auth/deviceCode.test.ts` | module | Repository | callers: none | callees: apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/deviceCode.ts, apps/local-server/src/auth/deviceCode.ts, external:javascript:vitest | tests: 0 | entry: none
 - `apps/local-server/src/auth/deviceCode.ts` | module | Repository | callers: apps/local-server/src/auth/controller.ts, apps/local-server/src/auth/deviceCode.test.ts, apps/local-server/src/auth/deviceCode.test.ts | callees: apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/constants.ts, apps/local-server/src/auth/oauthHttp.ts, apps/local-server/src/auth/oauthHttp.ts | tests: 1 | entry: none
-- Showing 20 of 1157 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
+- Showing 20 of 1159 nodes. Query `impact --module <path>` or open the HTML hierarchy for the rest.
 
 ## Edges
 
@@ -88,7 +88,7 @@ Nodes: 1157 | Edges: 5890 | Flows: 5
 - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | imports
 - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:path` | imports
 - `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | calls
-- Showing 50 of 5890 edges; JSON contains every edge and its evidence.
+- Showing 50 of 5914 edges; JSON contains every edge and its evidence.
 
 ## Unknown
 
@@ -115,7 +115,7 @@ Nodes: 1157 | Edges: 5890 | Flows: 5
 
 ## Architecture changes
 
-- Nodes: +0 / -0; edges: +0 / -0.
+- Nodes: +1 / -0; edges: +11 / -1.
 - Boundary changes: 0; new cycles: 0.
 
 ## Read next

@@ -119,11 +119,14 @@ const WorkspaceContext = createContext<WorkspaceContextValue | undefined>(undefi
 export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [state, dispatch] = useReducer(workspaceReducer, undefined, createInitialWorkspaceState);
   const [isHydrated, setIsHydrated] = useState(false);
+  const [hydrationError, setHydrationError] = useState(false);
+  const [retryVersion, setRetryVersion] = useState(0);
   const { addToast } = useToastUi();
   const activePersistRef = useRef<number | null>(null);
 
   useEffect(() => {
     let cancelled = false;
+    setHydrationError(false);
     const hydrate = async () => {
       try {
         let workspaces: Workspace[] | undefined;
@@ -139,20 +142,22 @@ export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children 
             workspaces = remote.workspaces;
             activeWorkspaceId = remote.activeWorkspaceId;
           } catch (remoteError) {
-            runtimeLogger.error('Workspace API unavailable; keeping local defaults', remoteError);
+            throw new Error('Workspace API unavailable', { cause: remoteError });
           }
         }
         if (cancelled) return;
         dispatch({ type: 'HYDRATE', workspaces, activeWorkspaceId });
-      } finally {
-        if (!cancelled) setIsHydrated(true);
+        setIsHydrated(true);
+      } catch (error) {
+        runtimeLogger.error('Unable to resolve the active workspace', error);
+        if (!cancelled) setHydrationError(true);
       }
     };
     void hydrate();
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [retryVersion]);
 
   useEffect(() => {
     if (!isHydrated) return;
@@ -265,7 +270,24 @@ export const WorkspaceProvider: React.FC<{ children: ReactNode }> = ({ children 
     ],
   );
 
-  return <WorkspaceContext.Provider value={value}>{children}</WorkspaceContext.Provider>;
+  return (
+    <WorkspaceContext.Provider value={value}>
+      {isHydrated ? (
+        children
+      ) : (
+        <div className="studio-startup-state" role={hydrationError ? 'alert' : 'status'}>
+          <span>
+            {hydrationError ? 'Could not load the current workspace.' : 'Loading workspace…'}
+          </span>
+          {hydrationError && (
+            <button type="button" onClick={() => setRetryVersion((version) => version + 1)}>
+              Retry
+            </button>
+          )}
+        </div>
+      )}
+    </WorkspaceContext.Provider>
+  );
 };
 
 export function useWorkspaceState() {

@@ -628,6 +628,7 @@ export interface ImageGridProps {
   onDeleteSelected: (images: GeneratedImageWithConfig[]) => void;
   onClearWorkspace: () => void;
   searchQuery?: string;
+  onSearchQueryChange?: (value: string) => void;
   onClearSearch?: () => void;
   onCreate?: () => void;
   catalogTotal?: number;
@@ -679,6 +680,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     onDeleteSelected,
     onClearWorkspace,
     searchQuery = '',
+    onSearchQueryChange,
     onClearSearch,
     onCreate,
     catalogTotal,
@@ -897,9 +899,9 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
 
       return columnBuckets.map((bucket) => {
         const itemSizes = bucket.map((item) => {
-          if (item.type === 'placeholder') return thumbnailSize + IMAGE_GRID_COLUMN_GAP;
+          if (item.type === 'placeholder') return gridItemWidth + IMAGE_GRID_COLUMN_GAP;
           return (
-            estimateImageGridItemHeight({ image: item.image, thumbnailSize }) +
+            estimateImageGridItemHeight({ image: item.image, thumbnailSize: gridItemWidth }) +
             IMAGE_GRID_COLUMN_GAP
           );
         });
@@ -915,7 +917,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
           visibleItems: bucket.slice(window.startIndex, window.endIndex),
         };
       });
-    }, [columnBuckets, scrollTop, scrollViewportHeight, thumbnailSize, viewMode]);
+    }, [columnBuckets, scrollTop, scrollViewportHeight, gridItemWidth, viewMode]);
 
     const priorityImageIds = useMemo(() => {
       const ids = new Set<string>();
@@ -949,17 +951,25 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
             }
 
             estimatedTop +=
-              estimateImageGridItemHeight({ image: item.image, thumbnailSize }) +
+              estimateImageGridItemHeight({ image: item.image, thumbnailSize: gridItemWidth }) +
               IMAGE_GRID_COLUMN_GAP;
             continue;
           }
 
-          estimatedTop += thumbnailSize + IMAGE_GRID_COLUMN_GAP;
+          estimatedTop += gridItemWidth + IMAGE_GRID_COLUMN_GAP;
         }
       }
 
       return ids;
-    }, [columnBuckets, columnCount, gridItems, thumbnailSize, viewportHeight, viewMode]);
+    }, [
+      columnBuckets,
+      columnCount,
+      gridItems,
+      thumbnailSize,
+      gridItemWidth,
+      viewportHeight,
+      viewMode,
+    ]);
 
     const requestAutoLoadMore = React.useCallback(() => {
       if (!hasMore || isCatalogLoading || !onLoadMore || autoLoadPendingRef.current) return;
@@ -1051,8 +1061,8 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
         </div>
       );
 
-    if (imageCount === 0 && generationPlaceholders.length === 0) {
-      return (
+    const emptyContent =
+      imageCount === 0 && generationPlaceholders.length === 0 ? (
         <div className="flex h-full w-full items-center justify-center px-6 text-center">
           {catalogError ? (
             <div className="max-w-md rounded-[var(--wb-radius)] border border-rose-500/2 bg-rose-950/20 p-4 text-sm text-[color:var(--wb-danger)] ">
@@ -1103,313 +1113,313 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
             </div>
           )}
         </div>
-      );
-    }
+      ) : null;
 
     return (
-      <div className="w-full h-full relative">
+      <div className="w-full h-full relative flex min-h-0 flex-col">
         <p
           className="absolute bottom-2 left-3 z-30 rounded bg-[color:var(--wb-panel)] px-2 py-1 text-xs"
           role="status"
         >
           {selectedImageCount} selected · {imageCount} loaded · {totalCount} results
         </p>
-        <div className="absolute left-3 right-3 top-3 z-30 flex items-center justify-end gap-2 sm:left-auto sm:right-8 sm:top-4">
-          {sourceImageCount > 0 && (
-            <div className="flex items-center gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1 shadow-2xl backdrop-blur-md">
-              {imageCount > 1 && (
+        <div className="library-toolbar studio-bar" aria-label="Library controls">
+          <label className="library-search">
+            <span className="sr-only">Search library</span>
+            <input
+              type="search"
+              aria-label="Search library"
+              placeholder="Search all images in this workspace"
+              value={searchQuery}
+              onChange={(event) => onSearchQueryChange?.(event.target.value)}
+              className="studio-well"
+            />
+          </label>
+          <div className="library-toolbar-actions" role="toolbar" aria-label="Library actions">
+            {sourceImageCount > 0 && (
+              <div className="flex items-center gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1 shadow-2xl backdrop-blur-md">
+                {imageCount > 1 && (
+                  <ActionButton
+                    onClick={isAllSelected ? onDeselectAll : () => onSelectAll(sortedImages)}
+                    icon={
+                      isAllSelected ? (
+                        <CheckSquare size={16} className="text-accent-400" />
+                      ) : (
+                        <Square size={16} />
+                      )
+                    }
+                    label={isAllSelected ? 'Deselect' : `Select loaded images (${imageCount})`}
+                    isActive={isAllSelected}
+                    tooltipPosition="bottom"
+                  />
+                )}
                 <ActionButton
-                  onClick={isAllSelected ? onDeselectAll : () => onSelectAll(sortedImages)}
+                  onClick={() => setShowFavoritesOnly((current) => !current)}
                   icon={
-                    isAllSelected ? (
-                      <CheckSquare size={16} className="text-accent-400" />
-                    ) : (
-                      <Square size={16} />
-                    )
+                    <Heart
+                      size={16}
+                      fill={showFavoritesOnly ? 'currentColor' : 'none'}
+                      strokeWidth={2.5}
+                    />
                   }
-                  label={isAllSelected ? 'Deselect' : `Select loaded images (${imageCount})`}
-                  isActive={isAllSelected}
+                  label={
+                    showFavoritesOnly ? `All (${sourceImageCount})` : `Favorites (${favoriteCount})`
+                  }
+                  isActive={showFavoritesOnly}
                   tooltipPosition="bottom"
                 />
-              )}
-              <ActionButton
-                onClick={() => setShowFavoritesOnly((current) => !current)}
-                icon={
-                  <Heart
-                    size={16}
-                    fill={showFavoritesOnly ? 'currentColor' : 'none'}
-                    strokeWidth={2.5}
-                  />
-                }
-                label={
-                  showFavoritesOnly ? `All (${sourceImageCount})` : `Favorites (${favoriteCount})`
-                }
-                isActive={showFavoritesOnly}
-                tooltipPosition="bottom"
-              />
-              {selectedImageCount === 0 && imageCount > 0 && !isPartialCatalog && (
-                <>
-                  <ActionButton
-                    onClick={() => onDownloadAll(sortedImages)}
-                    icon={<Download size={16} />}
-                    label={`Download ${imageCount} images`}
-                    tooltipPosition="bottom"
-                  />
-                  <ActionButton
-                    onClick={onClearWorkspace}
-                    icon={<Trash2 size={16} />}
-                    label="Archive workspace images"
-                    variant="danger"
-                    tooltipPosition="bottom"
-                  />
-                </>
-              )}
-              {selectedImageCount > 0 && (
-                <>
-                  <ActionButton
-                    onClick={() => onDownloadSelected(sortedImages)}
-                    icon={<Download size={16} />}
-                    label={`Download selected (${selectedImageCount})`}
-                    tooltipPosition="bottom"
-                  />
-                  <ActionButton
-                    onClick={() => onDeleteSelected(sortedImages)}
-                    icon={<Trash2 size={16} />}
-                    label={`Archive selected (${selectedImageCount})`}
-                    variant="danger"
-                    tooltipPosition="bottom"
-                  />
-                </>
-              )}
-            </div>
-          )}
-          <details className="relative">
-            <summary className="cursor-pointer rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] px-3 py-2 text-sm">
-              View
-            </summary>
-            <div className="absolute right-0 top-12 z-50 grid gap-3 rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] p-3 shadow-xl">
-              {' '}
-              <div
-                role="group"
-                aria-label={`Image view: ${activeViewOption.label}`}
-                className="flex h-10 items-center gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1 shadow-2xl backdrop-blur-md"
-              >
-                {IMAGE_GRID_VIEW_OPTIONS.map(({ value, label, description, Icon }) => {
-                  const selected = value === viewMode;
-
-                  return (
-                    <Tooltip key={value} content={`${label}: ${description}`} position="bottom">
-                      <button
-                        type="button"
-                        onClick={() => handleViewModeChange(value)}
-                        aria-label={`${label} view`}
-                        aria-pressed={selected}
-                        className={`flex min-h-8 min-w-8 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] transition-[background-color,color,transform,box-shadow] focus-visible:ring-2 focus-visible:ring-white/25 ${
-                          selected
-                            ? 'bg-accent-600 text-[color:var(--wb-ink)] shadow-[0_0_18px_rgba(var(--accent-500),0.18)]'
-                            : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
-                        }`}
-                      >
-                        <Icon size={16} className="pointer-events-none" />
-                      </button>
-                    </Tooltip>
-                  );
-                })}
+                {selectedImageCount === 0 && imageCount > 0 && !isPartialCatalog && (
+                  <>
+                    <ActionButton
+                      onClick={() => onDownloadAll(sortedImages)}
+                      icon={<Download size={16} />}
+                      label={`Download ${imageCount} images`}
+                      tooltipPosition="bottom"
+                    />
+                    <ActionButton
+                      onClick={onClearWorkspace}
+                      icon={<Trash2 size={16} />}
+                      label="Archive workspace images"
+                      variant="danger"
+                      tooltipPosition="bottom"
+                    />
+                  </>
+                )}
+                {selectedImageCount > 0 && (
+                  <>
+                    <ActionButton
+                      onClick={() => onDownloadSelected(sortedImages)}
+                      icon={<Download size={16} />}
+                      label={`Download selected (${selectedImageCount})`}
+                      tooltipPosition="bottom"
+                    />
+                    <ActionButton
+                      onClick={() => onDeleteSelected(sortedImages)}
+                      icon={<Trash2 size={16} />}
+                      label={`Archive selected (${selectedImageCount})`}
+                      variant="danger"
+                      tooltipPosition="bottom"
+                    />
+                  </>
+                )}
               </div>
-              <Tooltip content="Thumbnail size" position="bottom">
-                <label className="hidden h-10 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-2 text-[color:var(--wb-muted)] shadow-2xl backdrop-blur-md sm:flex">
-                  <Photo size={15} />
-                  <input
-                    type="range"
-                    aria-label="Thumbnail size"
-                    min={MIN_THUMBNAIL_SIZE}
-                    max={MAX_THUMBNAIL_SIZE}
-                    step={THUMBNAIL_SIZE_STEP}
-                    value={thumbnailSize}
-                    onChange={(event) => setThumbnailSize(Number(event.target.value))}
-                    className="h-1 w-24 cursor-pointer accent-accent-500 sm:w-28"
-                  />
-                </label>
-              </Tooltip>
-            </div>
-          </details>
-          <div className="relative">
-            <Tooltip content="Sort Images" position="bottom">
-              <button
-                ref={sortButtonRef}
-                type="button"
-                onClick={() => setIsSortMenuOpen((open) => !open)}
-                aria-label={`Sort images: ${activeSortOption.label}`}
-                aria-haspopup="menu"
-                aria-expanded={isSortMenuOpen}
-                aria-controls={sortMenuId}
-                className={`flex min-h-10 min-w-10 touch-manipulation items-center justify-center gap-2 rounded-[var(--wb-radius)] border px-2.5 text-[color:var(--wb-ink)] shadow-2xl backdrop-blur-md transition-[background-color,border-color,color,transform] focus-visible:ring-2 focus-visible:ring-white/25 ${
-                  isSortMenuOpen
-                    ? 'border-[color:var(--wb-line)] bg-[color:var(--wb-bar)]/95 text-[color:var(--wb-ink)]'
-                    : 'border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-bar)] hover:text-[color:var(--wb-ink)]'
-                }`}
-              >
-                <ArrowUpDown size={16} />
-                <span className="hidden max-w-28 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal lg:inline">
-                  {activeSortOption.label}
-                </span>
-              </button>
-            </Tooltip>
-            <DemandMountedGsapDropdown
-              id={sortMenuId}
-              open={isSortMenuOpen}
-              onOpenChange={setIsSortMenuOpen}
-              triggerRef={sortButtonRef}
-              placement="bottom-right"
-              className="absolute right-0 top-[calc(100%+0.5rem)] z-50 w-64 overflow-hidden p-1.5"
+            )}
+            <div
+              role="group"
+              aria-label={`Image view: ${activeViewOption.label}`}
+              className="flex h-10 items-center gap-1 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] p-1 shadow-2xl backdrop-blur-md"
             >
-              <div className="px-2 pb-1 pt-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
-                Sort images
-              </div>
-              <div className="grid gap-1">
-                {IMAGE_GRID_SORT_OPTIONS.map((option) => {
-                  const selected = option.value === sortOrder;
-
-                  return (
-                    <button
-                      key={option.value}
-                      type="button"
-                      role="menuitemradio"
-                      aria-checked={selected}
-                      data-dropdown-item
-                      onClick={() => {
-                        setSortOrder(option.value);
-                        setIsSortMenuOpen(false);
-                      }}
-                      className={`flex min-h-11 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] px-2.5 text-left transition-[background-color,color,transform] ${
-                        selected
-                          ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
-                          : 'text-[color:var(--wb-muted)] hover:bg-white/[0.055] hover:text-[color:var(--wb-ink)]'
-                      }`}
-                    >
-                      <span className="min-w-0">
-                        <span className="block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
-                          {option.label}
-                        </span>
-                        <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-semibold normal-case tracking-normal text-[color:var(--wb-dim)]">
-                          {option.description}
-                        </span>
-                      </span>
-                      {selected ? <Check size={14} className="shrink-0 text-accent-200" /> : null}
-                    </button>
-                  );
-                })}
-              </div>
-            </DemandMountedGsapDropdown>
-          </div>
-        </div>
-        <div
-          ref={scrollContainerRef}
-          onScroll={handleScroll}
-          className="custom-scrollbar absolute inset-x-0 bottom-0 top-16 overflow-y-auto px-3 pt-3 pb-8 sm:px-8"
-        >
-          {showFavoritesOnly && imageCount === 0 && generationPlaceholders.length === 0 && (
-            <div className="flex min-h-[45vh] items-center justify-center text-center">
-              <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-4 py-3 text-xs font-semibold text-[color:var(--wb-muted)]">
-                No favorite images in this workspace.
-              </div>
-            </div>
-          )}
-          <div
-            ref={gridMeasureRef}
-            className="grid gap-4"
-            style={{
-              gridTemplateColumns: resolveImageGridTemplateColumns(
-                columnCount,
-                thumbnailSize,
-                viewMode,
-              ),
-              justifyContent:
-                viewMode === 'mosaic' && columnCount > 1 ? 'space-between' : 'stretch',
-              alignItems: viewMode === 'mosaic' ? 'start' : 'stretch',
-            }}
-          >
-            {viewMode === 'mosaic' ? (
-              virtualColumnBuckets.map(({ window, visibleItems }, columnIndex) => {
-                const bucket = columnBuckets[columnIndex] ?? [];
-                const firstItem = bucket[0];
-                const firstItemId = firstItem ? getGridItemKey(firstItem) : null;
-                const columnKey = firstItemId
-                  ? `column-${firstItemId}-${bucket.length}`
-                  : `column-empty-${columnIndex}`;
+              {IMAGE_GRID_VIEW_OPTIONS.map(({ value, label, description, Icon }) => {
+                const selected = value === viewMode;
 
                 return (
-                  <div key={columnKey} className="flex min-w-0 flex-col gap-0">
-                    {window.beforeHeight > 0 && (
-                      <div style={{ height: window.beforeHeight }} aria-hidden="true" />
-                    )}
-                    {visibleItems.map(renderGridItem)}
-                    {window.afterHeight > 0 && (
-                      <div style={{ height: window.afterHeight }} aria-hidden="true" />
-                    )}
-                  </div>
+                  <Tooltip key={value} content={`${label}: ${description}`} position="bottom">
+                    <button
+                      type="button"
+                      onClick={() => handleViewModeChange(value)}
+                      aria-label={`${label} view`}
+                      aria-pressed={selected}
+                      className={`flex min-h-8 min-w-8 touch-manipulation items-center justify-center rounded-[var(--wb-radius)] transition-[background-color,color,transform,box-shadow] focus-visible:ring-2 focus-visible:ring-white/25 ${
+                        selected
+                          ? 'bg-accent-600 text-[color:var(--wb-ink)] shadow-[0_0_18px_rgba(var(--accent-500),0.18)]'
+                          : 'text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]'
+                      }`}
+                    >
+                      <Icon size={16} className="pointer-events-none" />
+                    </button>
+                  </Tooltip>
                 );
-              })
-            ) : (
-              <>
-                {virtualGridWindow.beforeHeight > 0 && (
-                  <div
-                    style={{
-                      gridColumn: '1 / -1',
-                      height: virtualGridWindow.beforeHeight,
-                    }}
-                    aria-hidden="true"
-                  />
-                )}
-                {gridRows
-                  .slice(virtualGridWindow.startIndex, virtualGridWindow.endIndex)
-                  .flatMap((row) => row.items.map(renderGridItem))}
-                {virtualGridWindow.afterHeight > 0 && (
-                  <div
-                    style={{
-                      gridColumn: '1 / -1',
-                      height: virtualGridWindow.afterHeight,
-                    }}
-                    aria-hidden="true"
-                  />
-                )}
-              </>
-            )}
-          </div>
-          <div ref={autoLoadSentinelRef} className="h-px w-full" aria-hidden="true" />
-          {(hasMore || isCatalogLoading || catalogError || totalCount > sourceImageCount) && (
-            <div className="flex flex-col items-center gap-3 py-6 text-center">
-              <div className="text-[length:var(--wbp-label)] font-semibold tabular-nums tracking-normal text-[color:var(--wb-muted)]">
-                {sourceImageCount} / {totalCount} loaded
-              </div>
-              {catalogError && (
-                <div className="max-w-lg text-xs text-[color:var(--wb-danger)] ">
-                  {catalogError}
+              })}
+            </div>
+            <Tooltip content="Thumbnail size" position="bottom">
+              <label className="flex h-10 items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] px-2 text-[color:var(--wb-muted)] shadow-2xl backdrop-blur-md sm:flex">
+                <Photo size={15} />
+                <input
+                  type="range"
+                  aria-label="Thumbnail size"
+                  min={MIN_THUMBNAIL_SIZE}
+                  max={MAX_THUMBNAIL_SIZE}
+                  step={THUMBNAIL_SIZE_STEP}
+                  value={thumbnailSize}
+                  onChange={(event) => setThumbnailSize(Number(event.target.value))}
+                  className="h-1 w-24 cursor-pointer accent-accent-500 sm:w-28"
+                />
+              </label>
+            </Tooltip>
+            <div className="relative">
+              <Tooltip content="Sort Images" position="bottom">
+                <button
+                  ref={sortButtonRef}
+                  type="button"
+                  onClick={() => setIsSortMenuOpen((open) => !open)}
+                  aria-label={`Sort images: ${activeSortOption.label}`}
+                  aria-haspopup="menu"
+                  aria-expanded={isSortMenuOpen}
+                  aria-controls={sortMenuId}
+                  className={`flex min-h-10 min-w-10 touch-manipulation items-center justify-center gap-2 rounded-[var(--wb-radius)] border px-2.5 text-[color:var(--wb-ink)] shadow-2xl backdrop-blur-md transition-[background-color,border-color,color,transform] focus-visible:ring-2 focus-visible:ring-white/25 ${
+                    isSortMenuOpen
+                      ? 'border-[color:var(--wb-line)] bg-[color:var(--wb-bar)]/95 text-[color:var(--wb-ink)]'
+                      : 'border-[color:var(--wb-line)] bg-[color:var(--wb-panel)] hover:border-[color:var(--wb-border)] hover:bg-[color:var(--wb-bar)] hover:text-[color:var(--wb-ink)]'
+                  }`}
+                >
+                  <ArrowUpDown size={16} />
+                  <span className="hidden max-w-28 truncate text-[length:var(--wbp-label)] font-semibold tracking-normal lg:inline">
+                    {activeSortOption.label}
+                  </span>
+                </button>
+              </Tooltip>
+              <DemandMountedGsapDropdown
+                id={sortMenuId}
+                open={isSortMenuOpen}
+                onOpenChange={setIsSortMenuOpen}
+                triggerRef={sortButtonRef}
+                placement="bottom-right"
+                className="absolute right-0 top-[calc(100%+0.5rem)] z-50 w-64 overflow-hidden p-1.5"
+              >
+                <div className="px-2 pb-1 pt-1 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-dim)]">
+                  Sort images
                 </div>
-              )}
-              {hasMore && onLoadMore && (
-                <button
-                  type="button"
-                  onClick={onLoadMore}
-                  disabled={isCatalogLoading}
-                  className="inline-flex items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-4 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  <RefreshCw size={14} className={isCatalogLoading ? 'animate-spin' : ''} />
-                  {isCatalogLoading ? 'Loading' : 'Load more'}
-                </button>
-              )}
-              {!hasMore && catalogError && onRetryCatalog && (
-                <button
-                  type="button"
-                  onClick={onRetryCatalog}
-                  className="rounded-[var(--wb-radius)] border border-rose-300/2 bg-rose-500/10 px-4 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)]  hover:bg-rose-500/20"
-                >
-                  Retry
-                </button>
+                <div className="grid gap-1">
+                  {IMAGE_GRID_SORT_OPTIONS.map((option) => {
+                    const selected = option.value === sortOrder;
+
+                    return (
+                      <button
+                        key={option.value}
+                        type="button"
+                        role="menuitemradio"
+                        aria-checked={selected}
+                        data-dropdown-item
+                        onClick={() => {
+                          setSortOrder(option.value);
+                          setIsSortMenuOpen(false);
+                        }}
+                        className={`flex min-h-11 w-full items-center justify-between gap-3 rounded-[var(--wb-radius)] px-2.5 text-left transition-[background-color,color,transform] ${
+                          selected
+                            ? 'bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] text-[color:var(--wb-ink)]'
+                            : 'text-[color:var(--wb-muted)] hover:bg-white/[0.055] hover:text-[color:var(--wb-ink)]'
+                        }`}
+                      >
+                        <span className="min-w-0">
+                          <span className="block truncate text-[length:var(--wbp-label)] font-semibold tracking-normal">
+                            {option.label}
+                          </span>
+                          <span className="mt-0.5 block truncate text-[length:var(--wbp-label)] font-semibold normal-case tracking-normal text-[color:var(--wb-dim)]">
+                            {option.description}
+                          </span>
+                        </span>
+                        {selected ? <Check size={14} className="shrink-0 text-accent-200" /> : null}
+                      </button>
+                    );
+                  })}
+                </div>
+              </DemandMountedGsapDropdown>
+            </div>
+          </div>
+        </div>
+        {emptyContent || (
+          <div
+            ref={scrollContainerRef}
+            onScroll={handleScroll}
+            className="custom-scrollbar relative min-h-0 flex-1 overflow-y-auto px-3 pt-3 pb-8 sm:px-8"
+          >
+            {showFavoritesOnly && imageCount === 0 && generationPlaceholders.length === 0 && (
+              <div className="flex min-h-[45vh] items-center justify-center text-center">
+                <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] px-4 py-3 text-xs font-semibold text-[color:var(--wb-muted)]">
+                  No favorite images in this workspace.
+                </div>
+              </div>
+            )}
+            <div
+              ref={gridMeasureRef}
+              className="grid gap-4"
+              style={{
+                gridTemplateColumns: resolveImageGridTemplateColumns(columnCount, viewMode),
+                alignItems: viewMode === 'mosaic' ? 'start' : 'stretch',
+              }}
+            >
+              {viewMode === 'mosaic' ? (
+                virtualColumnBuckets.map(({ window, visibleItems }, columnIndex) => {
+                  const bucket = columnBuckets[columnIndex] ?? [];
+                  const firstItem = bucket[0];
+                  const firstItemId = firstItem ? getGridItemKey(firstItem) : null;
+                  const columnKey = firstItemId
+                    ? `column-${firstItemId}-${bucket.length}`
+                    : `column-empty-${columnIndex}`;
+
+                  return (
+                    <div key={columnKey} className="flex min-w-0 flex-col gap-0">
+                      {window.beforeHeight > 0 && (
+                        <div style={{ height: window.beforeHeight }} aria-hidden="true" />
+                      )}
+                      {visibleItems.map(renderGridItem)}
+                      {window.afterHeight > 0 && (
+                        <div style={{ height: window.afterHeight }} aria-hidden="true" />
+                      )}
+                    </div>
+                  );
+                })
+              ) : (
+                <>
+                  {virtualGridWindow.beforeHeight > 0 && (
+                    <div
+                      style={{
+                        gridColumn: '1 / -1',
+                        height: virtualGridWindow.beforeHeight,
+                      }}
+                      aria-hidden="true"
+                    />
+                  )}
+                  {gridRows
+                    .slice(virtualGridWindow.startIndex, virtualGridWindow.endIndex)
+                    .flatMap((row) => row.items.map(renderGridItem))}
+                  {virtualGridWindow.afterHeight > 0 && (
+                    <div
+                      style={{
+                        gridColumn: '1 / -1',
+                        height: virtualGridWindow.afterHeight,
+                      }}
+                      aria-hidden="true"
+                    />
+                  )}
+                </>
               )}
             </div>
-          )}
-        </div>
+            <div ref={autoLoadSentinelRef} className="h-px w-full" aria-hidden="true" />
+            {(hasMore || isCatalogLoading || catalogError || totalCount > sourceImageCount) && (
+              <div className="flex flex-col items-center gap-3 py-6 text-center">
+                <div className="text-[length:var(--wbp-label)] font-semibold tabular-nums tracking-normal text-[color:var(--wb-muted)]">
+                  {sourceImageCount} / {totalCount} loaded
+                </div>
+                {catalogError && (
+                  <div className="max-w-lg text-xs text-[color:var(--wb-danger)] ">
+                    {catalogError}
+                  </div>
+                )}
+                {hasMore && onLoadMore && (
+                  <button
+                    type="button"
+                    onClick={onLoadMore}
+                    disabled={isCatalogLoading}
+                    className="inline-flex items-center gap-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_6%,transparent)] px-4 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-ink)] transition-colors hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    <RefreshCw size={14} className={isCatalogLoading ? 'animate-spin' : ''} />
+                    {isCatalogLoading ? 'Loading' : 'Load more'}
+                  </button>
+                )}
+                {!hasMore && catalogError && onRetryCatalog && (
+                  <button
+                    type="button"
+                    onClick={onRetryCatalog}
+                    className="rounded-[var(--wb-radius)] border border-rose-300/2 bg-rose-500/10 px-4 py-2 text-[length:var(--wbp-label)] font-semibold tracking-normal text-[color:var(--wb-danger)]  hover:bg-rose-500/20"
+                  >
+                    Retry
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
+        )}
       </div>
     );
   },

@@ -27,9 +27,13 @@ export async function loadDurableWorkspacesFromApi(): Promise<{
   if (!workspaces.some((workspace) => workspace.id === DEFAULT_WORKSPACE_ID)) {
     workspaces.unshift({ id: DEFAULT_WORKSPACE_ID, name: 'Default', createdAt: Date.now() });
   }
+  const storedActiveId = await get<string>('app-active-workspace-id');
   return {
     workspaces,
-    activeWorkspaceId: DEFAULT_WORKSPACE_ID,
+    activeWorkspaceId:
+      storedActiveId && workspaces.some((workspace) => workspace.id === storedActiveId)
+        ? storedActiveId
+        : DEFAULT_WORKSPACE_ID,
   };
 }
 

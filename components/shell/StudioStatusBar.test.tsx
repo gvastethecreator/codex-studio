@@ -81,4 +81,33 @@ describe('StudioStatusBar', () => {
     fireEvent.click(screen.getByRole('button', { name: /open jobs/i }));
     expect(onToggleQueue).toHaveBeenCalled();
   });
+
+  it('shows the image total and recovery action in the status bar', () => {
+    const loadMore = vi.fn().mockResolvedValue(undefined);
+    const refresh = vi.fn().mockResolvedValue(undefined);
+    render(
+      <StudioStatusBar
+        usage={usage}
+        commandCenter={commandCenter}
+        imageHistory={{
+          total: 6094,
+          isLoading: false,
+          error: new Error('Connection lost'),
+          hasMore: true,
+          loadMore,
+          refresh,
+        }}
+        isQueueOpen={false}
+        onToggleQueue={vi.fn()}
+        onOpenDashboard={vi.fn()}
+        onOpenOnboarding={vi.fn()}
+      />,
+    );
+
+    const statusBar = screen.getByRole('contentinfo', { name: 'Studio status' });
+    expect(statusBar.querySelector('[role="status"]')?.textContent).toBe('6094 images');
+    fireEvent.click(screen.getByRole('button', { name: 'Retry loading images' }));
+    expect(loadMore).toHaveBeenCalledOnce();
+    expect(refresh).not.toHaveBeenCalled();
+  });
 });

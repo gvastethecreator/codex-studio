@@ -1,12 +1,38 @@
 import { describe, expect, it, vi } from 'vitest';
 import type { StudioWorkspace, StudioWorkspaceSortOrder } from '../packages/shared/src';
+import { listWorkspaces } from '../services/studio-api/workspaces';
+import { get } from '../utils/idb';
 import {
+  loadDurableWorkspacesFromApi,
   mapStudioWorkspaceToUi,
   migrateIndexedDbWorkspacesToServer,
   WORKSPACE_IDB_MIGRATION_MARKER,
 } from './workspaceIdbMigration';
 
+vi.mock('../services/studio-api/workspaces', () => ({ listWorkspaces: vi.fn() }));
+vi.mock('../utils/idb', () => ({ get: vi.fn() }));
+
 describe('workspaceIdbMigration', () => {
+  it('restores the saved active workspace when migration falls back to the API', async () => {
+    vi.mocked(listWorkspaces).mockResolvedValueOnce([
+      {
+        id: 'current',
+        name: 'Current',
+        libraryId: null,
+        filter: {},
+        sortOrder: 'newest',
+        createdAt: '2026-01-01T00:00:00.000Z',
+        updatedAt: '2026-01-01T00:00:00.000Z',
+      },
+    ]);
+    vi.mocked(get).mockResolvedValueOnce('current');
+
+    const result = await loadDurableWorkspacesFromApi();
+
+    expect(result.activeWorkspaceId).toBe('current');
+    expect(result.workspaces.map((workspace) => workspace.id)).toEqual(['default', 'current']);
+  });
+
   it('maps server workspace DTOs into UI workspace rows', () => {
     const mapped = mapStudioWorkspaceToUi({
       id: 'ws-1',

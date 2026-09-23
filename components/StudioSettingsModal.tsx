@@ -38,6 +38,7 @@ import {
   SettingsMaintenancePanel,
   type SettingsMaintenancePanelProps,
 } from './settings/SettingsMaintenancePanel';
+import { useDialogFocus } from '../hooks/useDialogFocus';
 
 interface StudioSettingsModalProps {
   onExportLegacyWorkspaceSnapshot: () => void;
@@ -100,74 +101,18 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     createInitialStudioSettingsFormState,
   );
   const [activeDomain, setActiveDomain] = useState<StudioSettingsDomainId>('providers');
-  const dialogRef = useRef<HTMLDivElement>(null);
   const dirtyRef = useRef(false);
   const [confirmDiscard, setConfirmDiscard] = useState(false);
   const requestClose = () => {
     if (dirtyRef.current) setConfirmDiscard(true);
     else onClose();
   };
-  const closeRef = useRef(requestClose);
-  useEffect(() => {
-    closeRef.current = requestClose;
-  });
-  useEffect(() => {
-    if (!isOpen) return;
-    const previousFocus = document.activeElement;
-    dialogRef.current?.querySelector<HTMLButtonElement>('[aria-label="Close settings"]')?.focus();
-    const handleKey = (event: KeyboardEvent) => {
-      const dialog = dialogRef.current;
-      if (
-        !dialog ||
-        document
-          .querySelectorAll('[aria-modal="true"]')
-          .item(document.querySelectorAll('[aria-modal="true"]').length - 1) !== dialog
-      )
-        return;
-      if (event.key === 'Escape') {
-        event.preventDefault();
-        event.stopPropagation();
-        closeRef.current();
-        return;
-      }
-      if (event.key !== 'Tab') return;
-      const controls = Array.from(
-        dialog.querySelectorAll<HTMLElement>(
-          'button, input, select, textarea, a[href], [tabindex]',
-        ),
-      ).filter(
-        (element) =>
-          element.tabIndex >= 0 &&
-          !element.matches(':disabled') &&
-          element.getClientRects().length > 0,
-      );
-      const first = controls[0];
-      const last = controls[controls.length - 1];
-      if (!first) {
-        event.preventDefault();
-        dialog.focus();
-        return;
-      }
-      if (
-        event.shiftKey &&
-        (document.activeElement === first || !dialog.contains(document.activeElement))
-      ) {
-        event.preventDefault();
-        last.focus();
-      } else if (
-        !event.shiftKey &&
-        (document.activeElement === last || !dialog.contains(document.activeElement))
-      ) {
-        event.preventDefault();
-        first.focus();
-      }
-    };
-    document.addEventListener('keydown', handleKey, true);
-    return () => {
-      document.removeEventListener('keydown', handleKey, true);
-      if (previousFocus instanceof HTMLElement && previousFocus.isConnected) previousFocus.focus();
-    };
-  }, [isOpen]);
+  const dialogRef = useDialogFocus(
+    isOpen,
+    requestClose,
+    undefined,
+    '[aria-label="Close settings"]',
+  );
 
   const [savedForm, setSavedForm] = useState(createInitialStudioSettingsFormState);
   const savedFormRef = useRef(savedForm);
