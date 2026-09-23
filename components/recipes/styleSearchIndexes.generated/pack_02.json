@@ -17,7 +17,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-001 film noir 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-001 film noir 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-002",
@@ -29,7 +29,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-002 spaghetti western 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-002 spaghetti western 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-003",
@@ -41,7 +41,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-003 80s sci-fi 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-003 80s sci-fi 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-004",
@@ -53,7 +53,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-004 technicolor musical 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-004 technicolor musical 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-005",
@@ -65,7 +65,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-005 french new wave 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-005 french new wave 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-006",
@@ -77,7 +77,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-006 grindhouse/exploitation 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-006 grindhouse/exploitation 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-007",
@@ -89,7 +89,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-007 silent film 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-007 silent film 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-008",
@@ -101,7 +101,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-008 found footage horror 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-008 found footage horror 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-009",
@@ -113,7 +113,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-009 kaiju movie (suitmation) 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-009 kaiju movie (suitmation) 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-010",
@@ -125,7 +125,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-010 kung fu studio epic (shaw brothers) 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-010 kung fu studio epic (shaw brothers) 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-011",
@@ -137,7 +137,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-011 cyberpunk anime (90s) 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-011 cyberpunk anime (90s) 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-012",
@@ -149,7 +149,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-012 wes anderson symmetrical storybook cinema 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-012 wes anderson symmetrical storybook cinema 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-013",
@@ -161,7 +161,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-013 blockbuster teal & orange 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-013 blockbuster teal & orange 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-014",
@@ -173,7 +173,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-014 giallo horror 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-014 giallo horror 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-015",
@@ -185,7 +185,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-015 mumblecore 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-015 mumblecore 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-016",
@@ -197,7 +197,7 @@
       "categoryName": "1. Film Genres",
       "tags": ["cinematic-and-media", "film-genres"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-016 space opera (70s) 1. film genres pack_02 cinematic & media film-genres cinematic-and-media film-genres"
+      "searchableText": "sp02-016 space opera (70s) 1. film genres cinema languages pack_02 cinematic & media film-genres cinematic-and-media film-genres"
     },
     {
       "id": "SP02-017",
@@ -209,7 +209,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-017 90s sitcom 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-017 90s sitcom 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-018",
@@ -221,7 +221,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-018 news broadcast 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-018 news broadcast 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-019",
@@ -233,7 +233,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-019 soap opera 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-019 soap opera 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-020",
@@ -245,7 +245,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-020 reality tv confessional 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-020 reality tv confessional 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-021",
@@ -257,7 +257,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-021 hype williams fisheye glam video 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-021 hype williams fisheye glam video 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-022",
@@ -269,7 +269,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-022 cctv/security cam 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-022 cctv/security cam 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-023",
@@ -281,7 +281,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-023 vhs home video 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-023 vhs home video 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-024",
@@ -293,7 +293,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-024 public access tv 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-024 public access tv 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-025",
@@ -305,7 +305,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-025 infomercial 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-025 infomercial 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-026",
@@ -317,7 +317,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-026 sports broadcast 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-026 sports broadcast 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-027",
@@ -329,7 +329,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-027 weather channel 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-027 weather channel 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-028",
@@ -341,7 +341,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-028 mtv 90s grunge broadcast 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-028 mtv 90s grunge broadcast 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-029",
@@ -353,7 +353,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-029 cooking show 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-029 cooking show 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-030",
@@ -365,7 +365,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-030 nature documentary 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-030 nature documentary 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-115",
@@ -377,7 +377,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-115 home movies - marker-edge improvised sitcom 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-115 home movies - marker-edge improvised sitcom 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-121",
@@ -389,7 +389,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-121 analog sitcom multicam 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-121 analog sitcom multicam 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-122",
@@ -401,7 +401,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-122 local news chroma key package 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-122 local news chroma key package 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-123",
@@ -413,7 +413,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-123 public access cable crawl 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-123 public access cable crawl 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-124",
@@ -425,7 +425,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-124 vhs sports replay broadcast 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-124 vhs sports replay broadcast 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-125",
@@ -437,7 +437,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-125 weather radar doppler graphic 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-125 weather radar doppler graphic 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-126",
@@ -449,7 +449,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-126 late night infomercial gloss 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-126 late night infomercial gloss 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-127",
@@ -461,7 +461,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-127 interlaced music video glow 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-127 interlaced music video glow 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-128",
@@ -473,7 +473,7 @@
       "categoryName": "2. TV And Broadcast",
       "tags": ["cinematic-and-media", "tv-and-broadcast"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-128 emergency broadcast signal break 2. tv and broadcast pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
+      "searchableText": "sp02-128 emergency broadcast signal break 2. tv and broadcast broadcast formats pack_02 cinematic & media tv-and-broadcast cinematic-and-media tv-and-broadcast"
     },
     {
       "id": "SP02-031",
@@ -485,7 +485,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-031 classic disney golden age cel feature 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-031 classic disney golden age cel feature 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-032",
@@ -497,7 +497,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-032 studio ghibli painterly nature anime 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-032 studio ghibli painterly nature anime 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-033",
@@ -509,7 +509,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-033 pixar style family feature cg 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-033 pixar style family feature cg 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-034",
@@ -521,7 +521,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-034 laika moody stop-motion 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-034 laika moody stop-motion 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-035",
@@ -533,7 +533,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-035 looney tunes chuck jones golden age cartoon frenzy 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-035 looney tunes chuck jones golden age cartoon frenzy 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-036",
@@ -545,7 +545,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-036 fleischer rubber hose cartoon 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-036 fleischer rubber hose cartoon 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-037",
@@ -557,7 +557,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-037 anime (90s aesthetic) 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-037 anime (90s aesthetic) 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-038",
@@ -569,7 +569,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-038 spider-verse comic offset 3d 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-038 spider-verse comic offset 3d 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-039",
@@ -581,7 +581,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-039 upa style (mid-century) 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-039 upa style (mid-century) 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-040",
@@ -593,7 +593,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-040 south park style 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-040 south park style 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-041",
@@ -605,7 +605,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-041 rotoscoping 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-041 rotoscoping 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-042",
@@ -617,7 +617,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-042 papercraft animation 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-042 papercraft animation 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-043",
@@ -629,7 +629,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-043 flash animation (2000s) 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-043 flash animation (2000s) 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-044",
@@ -641,7 +641,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-044 oil paint animation 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-044 oil paint animation 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-045",
@@ -653,7 +653,7 @@
       "categoryName": "3. Animation Styles",
       "tags": ["cinematic-and-media", "animation-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-045 pixel art animation 3. animation styles pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
+      "searchableText": "sp02-045 pixel art animation 3. animation styles animation craft pack_02 cinematic & media animation-styles cinematic-and-media animation-styles"
     },
     {
       "id": "SP02-046",
@@ -665,7 +665,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-046 daguerreotype (1840s) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-046 daguerreotype (1840s) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-047",
@@ -677,7 +677,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-047 tintype (civil war) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-047 tintype (civil war) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-048",
@@ -689,7 +689,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-048 autochrome (1900s) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-048 autochrome (1900s) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-049",
@@ -701,7 +701,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-049 kodachrome (50s) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-049 kodachrome (50s) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-050",
@@ -713,7 +713,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-050 polaroid (instant) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-050 polaroid (instant) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-051",
@@ -725,7 +725,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-051 disposable camera (90s) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-051 disposable camera (90s) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-052",
@@ -737,7 +737,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-052 lomography 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-052 lomography 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-053",
@@ -749,7 +749,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-053 wet plate collodion 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-053 wet plate collodion 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-054",
@@ -761,7 +761,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-054 infrared film (aerochrome) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-054 infrared film (aerochrome) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-055",
@@ -773,7 +773,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-055 cyanotype (photo) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-055 cyanotype (photo) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-056",
@@ -785,7 +785,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-056 early digital (2000s) 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-056 early digital (2000s) 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-057",
@@ -797,7 +797,7 @@
       "categoryName": "4. Photography Eras",
       "tags": ["cinematic-and-media", "photography-eras"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-057 pinhole camera 4. photography eras pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
+      "searchableText": "sp02-057 pinhole camera 4. photography eras historic photo processes pack_02 cinematic & media photography-eras cinematic-and-media photography-eras"
     },
     {
       "id": "SP02-061",
@@ -809,7 +809,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-061 golden hour 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-061 golden hour 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-062",
@@ -821,7 +821,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-062 blue hour 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-062 blue hour 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-063",
@@ -833,7 +833,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-063 rembrandt lighting 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-063 rembrandt lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-064",
@@ -845,7 +845,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-064 neon noir 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-064 neon noir 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-065",
@@ -857,7 +857,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-065 god rays (volumetric) 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-065 god rays (volumetric) 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-066",
@@ -869,7 +869,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-066 silhouette 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-066 silhouette 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-067",
@@ -881,7 +881,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-067 double exposure 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-067 double exposure 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-068",
@@ -893,7 +893,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-068 bokeh (macro) 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-068 bokeh (macro) 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-069",
@@ -905,7 +905,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-069 split lighting 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-069 split lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-070",
@@ -917,7 +917,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-070 butterfly lighting 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-070 butterfly lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-071",
@@ -929,7 +929,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-071 day for night 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-071 day for night 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-072",
@@ -941,7 +941,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-072 candlelight 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-072 candlelight 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-073",
@@ -953,7 +953,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-073 bioluminescence 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-073 bioluminescence 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-074",
@@ -965,7 +965,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-074 strobe light 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-074 strobe light 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-075",
@@ -977,7 +977,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-075 prism effect 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-075 prism effect 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-076",
@@ -989,7 +989,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-076 rim lighting 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-076 rim lighting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-077",
@@ -1001,7 +1001,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-077 underwater light 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-077 underwater light 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-078",
@@ -1013,7 +1013,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-078 light painting 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-078 light painting 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-079",
@@ -1025,7 +1025,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-079 softbox studio 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-079 softbox studio 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-080",
@@ -1037,7 +1037,7 @@
       "categoryName": "5. Lighting And Atmosphere",
       "tags": ["cinematic-and-media", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-080 jj abrams anamorphic overflare 5. lighting and atmosphere pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
+      "searchableText": "sp02-080 jj abrams anamorphic overflare 5. lighting and atmosphere cinematic lighting pack_02 cinematic & media lighting-and-atmosphere cinematic-and-media lighting-and-atmosphere"
     },
     {
       "id": "SP02-081",
@@ -1049,7 +1049,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-081 grotesque exaggeration cartoon 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-081 grotesque exaggeration cartoon 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-082",
@@ -1061,7 +1061,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-082 silly scribble doodle 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-082 silly scribble doodle 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-083",
@@ -1073,7 +1073,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-083 uncanny valley caricature 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-083 uncanny valley caricature 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-084",
@@ -1085,7 +1085,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-084 political satire cartoon 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-084 political satire cartoon 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-085",
@@ -1097,7 +1097,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-085 liquid melt caricature 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-085 liquid melt caricature 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-086",
@@ -1109,7 +1109,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-086 ugly-cute creature 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-086 ugly-cute creature 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-087",
@@ -1121,7 +1121,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-087 rubber-hose insanity 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-087 rubber-hose insanity 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-088",
@@ -1133,7 +1133,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-088 crude crayon monster 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-088 crude crayon monster 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-089",
@@ -1145,7 +1145,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-089 grotesque meat puppet 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-089 grotesque meat puppet 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-090",
@@ -1157,7 +1157,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-090 spiky edgy attitude cartoon 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-090 spiky edgy attitude cartoon 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-094",
@@ -1169,7 +1169,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-094 kindergarten family portrait 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-094 kindergarten family portrait 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-095",
@@ -1181,7 +1181,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-095 newspaper sunday funnies 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-095 newspaper sunday funnies 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-097",
@@ -1193,7 +1193,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-097 rejected corporate mascot 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-097 rejected corporate mascot 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-100",
@@ -1205,7 +1205,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-100 flipbook rough animation 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-100 flipbook rough animation 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-101",
@@ -1217,7 +1217,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-101 ren & stimpy - veiny close-up grossout 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-101 ren & stimpy - veiny close-up grossout 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-102",
@@ -1229,7 +1229,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-102 smiling friends - flat weird dayjob chaos 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-102 smiling friends - flat weird dayjob chaos 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-103",
@@ -1241,7 +1241,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-103 aaahh!!! real monsters - sewer kid grotesque 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-103 aaahh!!! real monsters - sewer kid grotesque 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-104",
@@ -1253,7 +1253,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-104 rugrats - toddler crayon panic 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-104 rugrats - toddler crayon panic 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-105",
@@ -1265,7 +1265,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-105 ed, edd n eddy - jawbreaker scam cartoon 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-105 ed, edd n eddy - jawbreaker scam cartoon 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-106",
@@ -1277,7 +1277,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-106 rocko's modern life - beige suburban anxiety 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-106 rocko's modern life - beige suburban anxiety 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-107",
@@ -1289,7 +1289,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-107 courage the cowardly dog - rural nightmare pastel 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-107 courage the cowardly dog - rural nightmare pastel 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-108",
@@ -1301,7 +1301,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-108 cow and chicken - loud primary derangement 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-108 cow and chicken - loud primary derangement 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-109",
@@ -1313,7 +1313,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-109 catdog - shared-body elastic nonsense 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-109 catdog - shared-body elastic nonsense 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-110",
@@ -1325,7 +1325,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-110 spongebob gross-up freeze frame 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-110 spongebob gross-up freeze frame 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-111",
@@ -1337,7 +1337,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-111 beavis and butt-head - dumb couch slouch 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-111 beavis and butt-head - dumb couch slouch 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-112",
@@ -1349,7 +1349,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-112 mike judge office boredom sketch 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-112 mike judge office boredom sketch 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-113",
@@ -1361,7 +1361,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-113 the oblongs - toxic suburb family 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-113 the oblongs - toxic suburb family 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-114",
@@ -1373,7 +1373,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-114 dr. katz - squigglevision therapy doodle 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-114 dr. katz - squigglevision therapy doodle 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-116",
@@ -1385,7 +1385,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-116 doug notebook anxiety cartoon 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-116 doug notebook anxiety cartoon 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-117",
@@ -1397,7 +1397,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-117 angela anaconda photo-cutout menace 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-117 angela anaconda photo-cutout menace 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-118",
@@ -1409,7 +1409,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-118 crash zoom garbage pail caricature 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-118 crash zoom garbage pail caricature 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-119",
@@ -1421,7 +1421,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-119 public pool mucus monster doodle 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-119 public pool mucus monster doodle 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-120",
@@ -1433,7 +1433,7 @@
       "categoryName": "6. Caricature And Cartoon Styles",
       "tags": ["cinematic-and-media", "caricature-and-cartoon-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-120 toxic marker classroom freakout 6. caricature and cartoon styles pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
+      "searchableText": "sp02-120 toxic marker classroom freakout 6. caricature and cartoon styles cartoon & caricature pack_02 cinematic & media caricature-and-cartoon-styles cinematic-and-media caricature-and-cartoon-styles"
     },
     {
       "id": "SP02-058",
@@ -1445,7 +1445,7 @@
       "categoryName": "7. Sensor And Technical Imaging",
       "tags": ["cinematic-and-media", "sensor-and-technical-imaging"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-058 x-ray photography 7. sensor and technical imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging"
+      "searchableText": "sp02-058 x-ray photography 7. sensor and technical imaging sensor looks pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging"
     },
     {
       "id": "SP02-059",
@@ -1457,7 +1457,7 @@
       "categoryName": "7. Sensor And Technical Imaging",
       "tags": ["cinematic-and-media", "sensor-and-technical-imaging"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-059 thermal camera 7. sensor and technical imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging"
+      "searchableText": "sp02-059 thermal camera 7. sensor and technical imaging sensor looks pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging"
     },
     {
       "id": "SP02-060",
@@ -1469,7 +1469,7 @@
       "categoryName": "7. Sensor And Technical Imaging",
       "tags": ["cinematic-and-media", "sensor-and-technical-imaging"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-060 night vision (green) 7. sensor and technical imaging pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging"
+      "searchableText": "sp02-060 night vision (green) 7. sensor and technical imaging sensor looks pack_02 cinematic & media sensor-and-technical-imaging cinematic-and-media sensor-and-technical-imaging"
     },
     {
       "id": "SP02-091",
@@ -1481,7 +1481,7 @@
       "categoryName": "8. Hand-Drawn And DIY Media",
       "tags": ["cinematic-and-media", "hand-drawn-and-diy-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-091 office whiteboard doodle 8. hand-drawn and diy media pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
+      "searchableText": "sp02-091 office whiteboard doodle 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     },
     {
       "id": "SP02-092",
@@ -1493,7 +1493,7 @@
       "categoryName": "8. Hand-Drawn And DIY Media",
       "tags": ["cinematic-and-media", "hand-drawn-and-diy-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-092 crumpled-paper scribble 8. hand-drawn and diy media pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
+      "searchableText": "sp02-092 crumpled-paper scribble 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     },
     {
       "id": "SP02-093",
@@ -1505,7 +1505,7 @@
       "categoryName": "8. Hand-Drawn And DIY Media",
       "tags": ["cinematic-and-media", "hand-drawn-and-diy-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-093 prehistoric cave painting 8. hand-drawn and diy media pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
+      "searchableText": "sp02-093 prehistoric cave painting 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     },
     {
       "id": "SP02-096",
@@ -1517,7 +1517,7 @@
       "categoryName": "8. Hand-Drawn And DIY Media",
       "tags": ["cinematic-and-media", "hand-drawn-and-diy-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-096 skateboard deck graphic 8. hand-drawn and diy media pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
+      "searchableText": "sp02-096 skateboard deck graphic 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     },
     {
       "id": "SP02-098",
@@ -1529,7 +1529,7 @@
       "categoryName": "8. Hand-Drawn And DIY Media",
       "tags": ["cinematic-and-media", "hand-drawn-and-diy-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-098 napkin scribble blueprint 8. hand-drawn and diy media pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
+      "searchableText": "sp02-098 napkin scribble blueprint 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     },
     {
       "id": "SP02-099",
@@ -1541,7 +1541,7 @@
       "categoryName": "8. Hand-Drawn And DIY Media",
       "tags": ["cinematic-and-media", "hand-drawn-and-diy-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp02-099 punk zine cut-and-paste 8. hand-drawn and diy media pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
+      "searchableText": "sp02-099 punk zine cut-and-paste 8. hand-drawn and diy media diy drawing surfaces pack_02 cinematic & media hand-drawn-and-diy-media cinematic-and-media hand-drawn-and-diy-media"
     }
   ],
   "totalPresetCount": 128

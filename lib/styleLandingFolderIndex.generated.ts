@@ -10,6 +10,12 @@ export interface StyleLandingFolderSummary {
 
 export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
+    id: 'portable_visual_studies',
+    kind: 'collection',
+    presetCount: 12,
+    imageKeys: [],
+  },
+  {
     id: 'photography_camera',
     kind: 'collection',
     presetCount: 47,
@@ -440,6 +446,24 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
       'pack_17__grimdark_game_systems_and_tabletop',
       'SP17-001',
     ],
+  },
+  {
+    id: 'pack_19',
+    kind: 'source',
+    presetCount: 4,
+    imageKeys: [],
+  },
+  {
+    id: 'pack_20',
+    kind: 'source',
+    presetCount: 4,
+    imageKeys: [],
+  },
+  {
+    id: 'pack_21',
+    kind: 'source',
+    presetCount: 4,
+    imageKeys: [],
   },
 ];
 

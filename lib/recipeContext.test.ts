@@ -59,11 +59,19 @@ describe('recipeContext', () => {
       ],
     });
 
-    expect(context).toContain('[SELECTED STYLE LAYERS]');
-    expect(context).toContain(
-      'Slot 1: Studio Headshot | Pack: Photography & Realism | Strength: 0.70',
-    );
-    expect(context).toContain('Slot 2: Film Noir | Pack: Cinematic & Media | Strength: 0.40');
+    expect(context).toContain('[ACTIVE VISUAL FIELDS]');
+    expect(context).toContain('Style layer 1 (influence 0.70)');
+    expect(context).toContain('Style layer 2 (influence 0.40)');
+    expect(context).toContain('clean studio portrait');
+    expect(context).toContain('hard shadow crime drama');
+    for (const metadata of [
+      'Studio Headshot',
+      'Film Noir',
+      'Photography & Realism',
+      'Cinematic & Media',
+    ]) {
+      expect(context).not.toContain(metadata);
+    }
   });
 
   it('does not parse recipe ids from title substrings without the protocol envelope', () => {

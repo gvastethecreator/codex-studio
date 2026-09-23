@@ -1,3 +1,4 @@
+import { getStyleCategoryDisplayName } from './styles/collections/categoryDisplayNames';
 import type {
   StylePackManifest,
   StylePresetEditorialTaxonomy,
@@ -473,7 +474,21 @@ export function validateStyleManifestGraph(
     if (!hasNonEmptyStringList(preset.avoidRules)) {
       errors.push(`Style preset ${preset.id} has no avoidRules`);
     }
-    if (!isCompletePresetText(preset.assets?.defaultImage)) {
+    const previewPending = preset.attributes?.previewStatus === 'pending';
+    const ui = preset.attributes?.ui;
+    const uiPreviewPending = Boolean(
+      ui && typeof ui === 'object' && 'previewStatus' in ui && ui.previewStatus === 'pending',
+    );
+    if (previewPending !== uiPreviewPending) {
+      errors.push(`Style preset ${preset.id} previewStatus and ui.previewStatus must agree`);
+    }
+    if (previewPending) {
+      if (preset.assets?.defaultImage || preset.taxonomy?.hasDefaultImage !== false) {
+        errors.push(
+          `Style preset ${preset.id} pending preview must have no defaultImage and hasDefaultImage=false`,
+        );
+      }
+    } else if (!isCompletePresetText(preset.assets?.defaultImage)) {
       errors.push(`Style preset ${preset.id} has empty assets.defaultImage`);
     }
     if (!isCompletePresetText(preset.attributes?.negativePrompt)) {
@@ -768,6 +783,7 @@ export function searchStylePresetCatalog(
       taxonomy.packName,
       taxonomy.categoryId,
       taxonomy.categoryName,
+      getStyleCategoryDisplayName(taxonomy.packId, taxonomy.categoryName),
       taxonomy.domain,
       ...taxonomy.tags,
       ...manifest.avoidRules,
@@ -835,6 +851,7 @@ export function createStylePresetCatalogSearchIndexFromRuntimePacks(
           preset.id,
           ...getStyleRuntimePresetSearchNames(preset),
           categoryName,
+          getStyleCategoryDisplayName(pack.id, categoryName),
           preset.domain,
           pack.id,
           pack.name,

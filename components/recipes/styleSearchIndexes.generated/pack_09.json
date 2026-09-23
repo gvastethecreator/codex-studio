@@ -17,7 +17,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-001 oak wood (raw) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-001 oak wood (raw) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-002",
@@ -29,7 +29,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-002 mahogany (polished) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-002 mahogany (polished) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-003",
@@ -41,7 +41,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-003 birch bark 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-003 birch bark 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-004",
@@ -53,7 +53,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-004 granite (polished) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-004 granite (polished) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-005",
@@ -65,7 +65,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-005 sandstone (rough) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-005 sandstone (rough) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-006",
@@ -77,7 +77,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-006 marble (carrara) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-006 marble (carrara) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-007",
@@ -89,7 +89,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-007 slate (split) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-007 slate (split) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-008",
@@ -101,7 +101,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-008 mossy rock 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-008 mossy rock 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-009",
@@ -113,7 +113,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-009 river stones 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-009 river stones 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-010",
@@ -125,7 +125,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-010 obsidian 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-010 obsidian 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-011",
@@ -137,7 +137,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-011 wolf fur 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-011 wolf fur 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-012",
@@ -149,7 +149,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-012 snake scales 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-012 snake scales 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-013",
@@ -161,7 +161,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-013 bird feathers 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-013 bird feathers 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-014",
@@ -173,7 +173,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-014 coral reef 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-014 coral reef 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-015",
@@ -185,7 +185,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-015 honeycomb wax 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-015 honeycomb wax 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-016",
@@ -197,7 +197,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-016 glacier ice 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-016 glacier ice 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-044",
@@ -209,7 +209,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-044 sponge (sea) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-044 sponge (sea) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-055",
@@ -221,7 +221,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-055 crystal/gemstone 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-055 crystal/gemstone 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-063",
@@ -233,7 +233,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-063 cobweb 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-063 cobweb 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-066",
@@ -245,7 +245,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-066 sand (beach) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-066 sand (beach) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-068",
@@ -257,7 +257,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-068 lava rock (cooled) 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-068 lava rock (cooled) 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-079",
@@ -269,7 +269,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-079 mother of pearl 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-079 mother of pearl 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-080",
@@ -281,7 +281,7 @@
       "categoryName": "1. Natural Materials",
       "tags": ["texture-and-materiality", "natural-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-080 dragon scale 1. natural materials pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
+      "searchableText": "sp09-080 dragon scale 1. natural materials natural surfaces pack_09 texture & materiality natural-materials texture-and-materiality natural-materials"
     },
     {
       "id": "SP09-017",
@@ -293,7 +293,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-017 brushed aluminum 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-017 brushed aluminum 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-019",
@@ -305,7 +305,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-019 gold leaf 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-019 gold leaf 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-020",
@@ -317,7 +317,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-020 copper patina 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-020 copper patina 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-021",
@@ -329,7 +329,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-021 carbon fiber (forged) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-021 carbon fiber (forged) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-022",
@@ -341,7 +341,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-022 concrete (raw) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-022 concrete (raw) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-023",
@@ -353,7 +353,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-023 brick wall (aged) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-023 brick wall (aged) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-024",
@@ -365,7 +365,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-024 asphalt (wet) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-024 asphalt (wet) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-026",
@@ -377,7 +377,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-026 plastic (injection molded) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-026 plastic (injection molded) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-027",
@@ -389,7 +389,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-027 rubber (tire) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-027 rubber (tire) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-028",
@@ -401,7 +401,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-028 glass (shattered) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-028 glass (shattered) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-031",
@@ -413,7 +413,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-031 latex (shiny) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-031 latex (shiny) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-032",
@@ -425,7 +425,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-032 cardboard 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-032 cardboard 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-042",
@@ -437,7 +437,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-042 bubble wrap 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-042 bubble wrap 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-046",
@@ -449,7 +449,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-046 sequins 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-046 sequins 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-048",
@@ -461,7 +461,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-048 cork board 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-048 cork board 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-049",
@@ -473,7 +473,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-049 velcro 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-049 velcro 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-060",
@@ -485,7 +485,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-060 mercury (liquid metal) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-060 mercury (liquid metal) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-070",
@@ -497,7 +497,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-070 polystyrene (styrofoam) 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-070 polystyrene (styrofoam) 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-071",
@@ -509,7 +509,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-071 plywood 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-071 plywood 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-072",
@@ -521,7 +521,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-072 osb board 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-072 osb board 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-073",
@@ -533,7 +533,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-073 linoleum floor 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-073 linoleum floor 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-076",
@@ -545,7 +545,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-076 chain link fence 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-076 chain link fence 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-077",
@@ -557,7 +557,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-077 barbed wire 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-077 barbed wire 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-078",
@@ -569,7 +569,7 @@
       "categoryName": "2. Man-Made Materials",
       "tags": ["texture-and-materiality", "man-made-materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-078 solar panel 2. man-made materials pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
+      "searchableText": "sp09-078 solar panel 2. man-made materials manufactured surfaces pack_09 texture & materiality man-made-materials texture-and-materiality man-made-materials"
     },
     {
       "id": "SP09-018",
@@ -581,7 +581,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-018 rusty iron 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-018 rusty iron 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-025",
@@ -593,7 +593,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-025 porcelain (cracked) 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-025 porcelain (cracked) 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-030",
@@ -605,7 +605,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-030 burlap sack 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-030 burlap sack 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-033",
@@ -617,7 +617,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-033 peeling paint 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-033 peeling paint 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-034",
@@ -629,7 +629,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-034 mold & mildew 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-034 mold & mildew 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-035",
@@ -641,7 +641,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-035 burnt wood (shou sugi ban) 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-035 burnt wood (shou sugi ban) 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-036",
@@ -653,7 +653,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-036 water damage 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-036 water damage 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-037",
@@ -665,7 +665,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-037 scratched metal 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-037 scratched metal 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-038",
@@ -677,7 +677,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-038 dusty surface 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-038 dusty surface 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-040",
@@ -689,7 +689,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-040 oil stains 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-040 oil stains 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-041",
@@ -701,7 +701,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-041 sandpaper 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-041 sandpaper 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-064",
@@ -713,7 +713,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-064 mud (cracked) 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-064 mud (cracked) 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-065",
@@ -725,7 +725,7 @@
       "categoryName": "3. Weathering And Decay",
       "tags": ["texture-and-materiality", "weathering-and-decay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-065 tar 3. weathering and decay pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
+      "searchableText": "sp09-065 tar 3. weathering and decay wear & weathering pack_09 texture & materiality weathering-and-decay texture-and-materiality weathering-and-decay"
     },
     {
       "id": "SP09-029",
@@ -737,7 +737,7 @@
       "categoryName": "4. Tactile Surfaces",
       "tags": ["texture-and-materiality", "tactile-surfaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-029 velvet fabric 4. tactile surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
+      "searchableText": "sp09-029 velvet fabric 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
       "id": "SP09-039",
@@ -749,7 +749,7 @@
       "categoryName": "4. Tactile Surfaces",
       "tags": ["texture-and-materiality", "tactile-surfaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-039 frozen/frosted 4. tactile surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
+      "searchableText": "sp09-039 frozen/frosted 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
       "id": "SP09-045",
@@ -761,7 +761,7 @@
       "categoryName": "4. Tactile Surfaces",
       "tags": ["texture-and-materiality", "tactile-surfaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-045 felt fabric 4. tactile surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
+      "searchableText": "sp09-045 felt fabric 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
       "id": "SP09-047",
@@ -773,7 +773,7 @@
       "categoryName": "4. Tactile Surfaces",
       "tags": ["texture-and-materiality", "tactile-surfaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-047 fur (synthetic) 4. tactile surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
+      "searchableText": "sp09-047 fur (synthetic) 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
       "id": "SP09-050",
@@ -785,7 +785,7 @@
       "categoryName": "4. Tactile Surfaces",
       "tags": ["texture-and-materiality", "tactile-surfaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-050 chalk (dry) 4. tactile surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
+      "searchableText": "sp09-050 chalk (dry) 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
       "id": "SP09-069",
@@ -797,7 +797,7 @@
       "categoryName": "4. Tactile Surfaces",
       "tags": ["texture-and-materiality", "tactile-surfaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-069 fiberglass insulation 4. tactile surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
+      "searchableText": "sp09-069 fiberglass insulation 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
       "id": "SP09-074",
@@ -809,7 +809,7 @@
       "categoryName": "4. Tactile Surfaces",
       "tags": ["texture-and-materiality", "tactile-surfaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-074 carpet (shag) 4. tactile surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
+      "searchableText": "sp09-074 carpet (shag) 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
       "id": "SP09-075",
@@ -821,7 +821,7 @@
       "categoryName": "4. Tactile Surfaces",
       "tags": ["texture-and-materiality", "tactile-surfaces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-075 astroturf 4. tactile surfaces pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
+      "searchableText": "sp09-075 astroturf 4. tactile surfaces tactile response pack_09 texture & materiality tactile-surfaces texture-and-materiality tactile-surfaces"
     },
     {
       "id": "SP09-043",
@@ -833,7 +833,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-043 slime/goo 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-043 slime/goo 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-051",
@@ -845,7 +845,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-051 fire & magma 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-051 fire & magma 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-052",
@@ -857,7 +857,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-052 electricity/lightning 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-052 electricity/lightning 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-053",
@@ -869,7 +869,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-053 smoke/fog 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-053 smoke/fog 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-054",
@@ -881,7 +881,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-054 water splash 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-054 water splash 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-056",
@@ -893,7 +893,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-056 plasma/energy 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-056 plasma/energy 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-057",
@@ -905,7 +905,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-057 oil on water 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-057 oil on water 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-058",
@@ -917,7 +917,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-058 sparks 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-058 sparks 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-059",
@@ -929,7 +929,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-059 soap bubbles 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-059 soap bubbles 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-061",
@@ -941,7 +941,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-061 dry ice fog 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-061 dry ice fog 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-062",
@@ -953,7 +953,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-062 confetti 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-062 confetti 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     },
     {
       "id": "SP09-067",
@@ -965,7 +965,7 @@
       "categoryName": "5. Elemental And FX",
       "tags": ["texture-and-materiality", "elemental-and-fx"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp09-067 snow (powder) 5. elemental and fx pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
+      "searchableText": "sp09-067 snow (powder) 5. elemental and fx elemental effects pack_09 texture & materiality elemental-and-fx texture-and-materiality elemental-and-fx"
     }
   ],
   "totalPresetCount": 80

@@ -1,6 +1,7 @@
 import * as Intentional from '../../packages/shared/src/styles/intentional-v1';
 import type { Attachment } from '../../types';
 import policyRegistryJson from './styles/intentional-v1/policy-registry.json';
+import curationPoliciesJson from './styles/curation-v2/policies.generated.json';
 import {
   createDefaultStyleLayerFieldControls,
   STYLE_LAYER_FIELD_DEFINITIONS,
@@ -13,7 +14,10 @@ type PolicyRegistryEntry = Intentional.Policy & {
   packId?: string;
 };
 
-const POLICY_REGISTRY = policyRegistryJson as Record<string, PolicyRegistryEntry>;
+const POLICY_REGISTRY = { ...policyRegistryJson, ...curationPoliciesJson } as Record<
+  string,
+  PolicyRegistryEntry
+>;
 
 export function getIntentionalPolicy(presetId: string): {
   policy: Intentional.Policy;

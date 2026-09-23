@@ -1,0 +1,60 @@
+{
+  "packs": [
+    {
+      "id": "pack_21",
+      "name": "Paper & Pigment",
+      "presetCount": 4
+    }
+  ],
+  "presets": [
+    {
+      "id": "SP21-001",
+      "name": "Stacked Paper",
+      "ref": "pack_21/SP21-001.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-001 stacked paper 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-002",
+      "name": "Resist Wash",
+      "ref": "pack_21/SP21-002.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-002 resist wash 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-003",
+      "name": "Opaque Planes",
+      "ref": "pack_21/SP21-003.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-003 opaque planes 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-004",
+      "name": "Pressed Relief",
+      "ref": "pack_21/SP21-004.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-004 pressed relief 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    }
+  ],
+  "totalPresetCount": 4
+}

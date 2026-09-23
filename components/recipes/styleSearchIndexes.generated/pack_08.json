@@ -17,7 +17,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-004 boho festival 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-004 boho festival 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-001",
@@ -29,7 +29,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-001 haute couture 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-001 haute couture 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-020",
@@ -41,7 +41,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-020 red carpet gown 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-020 red carpet gown 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-019",
@@ -53,7 +53,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-019 business casual 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-019 business casual 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-002",
@@ -65,7 +65,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-002 streetwear hypebeast 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-002 streetwear hypebeast 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-005",
@@ -77,7 +77,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-005 athleisure sport 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-005 athleisure sport 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-017",
@@ -89,7 +89,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-017 tech-industry uniform 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-017 tech-industry uniform 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-018",
@@ -101,7 +101,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-018 pop-performance tailoring 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-018 pop-performance tailoring 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-003",
@@ -113,7 +113,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-003 minimalist chic 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-003 minimalist chic 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-016",
@@ -125,7 +125,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-016 normcore 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-016 normcore 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-033",
@@ -137,7 +137,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-033 ancient egyptian 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-033 ancient egyptian 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-037",
@@ -149,7 +149,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-037 frontier workwear 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-037 frontier workwear 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-040",
@@ -161,7 +161,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-040 space suit (retro) 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-040 space suit (retro) 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-035",
@@ -173,7 +173,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-035 samurai armor 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-035 samurai armor 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-012",
@@ -185,7 +185,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-012 renaissance royal 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-012 renaissance royal 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-015",
@@ -197,7 +197,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-015 convention craft costume 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-015 convention craft costume 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-032",
@@ -209,7 +209,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-032 victorian mourning 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-032 victorian mourning 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-011",
@@ -221,7 +221,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-011 vintage 1950s 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-011 vintage 1950s 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-031",
@@ -233,7 +233,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-031 roaring 20s (flapper) 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-031 roaring 20s (flapper) 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-034",
@@ -245,7 +245,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-034 roman ceremonial regalia 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-034 roman ceremonial regalia 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-013",
@@ -257,7 +257,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-013 ethereal fantasy 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-013 ethereal fantasy 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-038",
@@ -269,7 +269,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-038 disco (70s) 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-038 disco (70s) 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-039",
@@ -281,7 +281,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-039 french revolution 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-039 french revolution 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-014",
@@ -293,7 +293,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-014 field utility textile 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-014 field utility textile 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-036",
@@ -305,7 +305,7 @@
       "categoryName": "3. Historical & Fantasy",
       "tags": ["fashion-and-costume", "historical-and-fantasy"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-036 norse seafaring regalia 3. historical & fantasy pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
+      "searchableText": "sp08-036 norse seafaring regalia 3. historical & fantasy historical clothing pack_08 fashion & costume historical-and-fantasy fashion-and-costume historical-and-fantasy"
     },
     {
       "id": "SP08-028",
@@ -317,7 +317,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-028 cottagecore 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-028 cottagecore 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-010",
@@ -329,7 +329,7 @@
       "categoryName": "1. Contemporary Fashion",
       "tags": ["fashion-and-costume", "contemporary-fashion"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-010 preppy ivy league 1. contemporary fashion pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
+      "searchableText": "sp08-010 preppy ivy league 1. contemporary fashion contemporary clothing pack_08 fashion & costume contemporary-fashion fashion-and-costume contemporary-fashion"
     },
     {
       "id": "SP08-024",
@@ -341,7 +341,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-024 rockabilly 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-024 rockabilly 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-021",
@@ -353,7 +353,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-021 pastel goth 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-021 pastel goth 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-008",
@@ -365,7 +365,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-008 punk rock 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-008 punk rock 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-029",
@@ -377,7 +377,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-029 dark academia 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-029 dark academia 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-026",
@@ -389,7 +389,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-026 road-worn biker leather 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-026 road-worn biker leather 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-027",
@@ -401,7 +401,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-027 skater style 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-027 skater style 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-030",
@@ -413,7 +413,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-030 raver (90s) 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-030 raver (90s) 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-009",
@@ -425,7 +425,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-009 steampunk engineering attire 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-009 steampunk engineering attire 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-023",
@@ -437,7 +437,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-023 lolita fashion 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-023 lolita fashion 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-025",
@@ -449,7 +449,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-025 hippie (60s) 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-025 hippie (60s) 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-007",
@@ -461,7 +461,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-007 goth darkwave 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-007 goth darkwave 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-022",
@@ -473,7 +473,7 @@
       "categoryName": "2. Subcultures",
       "tags": ["fashion-and-costume", "subcultures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-022 grunge (90s) 2. subcultures pack_08 fashion & costume subcultures fashion-and-costume subcultures"
+      "searchableText": "sp08-022 grunge (90s) 2. subcultures subcultural clothing pack_08 fashion & costume subcultures fashion-and-costume subcultures"
     },
     {
       "id": "SP08-006",
@@ -485,7 +485,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-006 technical modular outerwear 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-006 technical modular outerwear 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-077",
@@ -497,7 +497,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-077 stone statue 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-077 stone statue 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-052",
@@ -509,7 +509,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-052 denim on denim 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-052 denim on denim 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-051",
@@ -521,7 +521,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-051 high-gloss polymer 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-051 high-gloss polymer 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-053",
@@ -533,7 +533,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-053 fur coat 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-053 fur coat 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-056",
@@ -545,7 +545,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-056 liquid satin drape 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-056 liquid satin drape 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-059",
@@ -557,7 +557,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-059 transparent plastic 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-059 transparent plastic 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-073",
@@ -569,7 +569,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-073 body paint 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-073 body paint 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-057",
@@ -581,7 +581,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-057 tweed suit 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-057 tweed suit 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-072",
@@ -593,7 +593,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-072 tattoo skin 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-072 tattoo skin 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-062",
@@ -605,7 +605,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-062 leather armor 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-062 leather armor 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-074",
@@ -617,7 +617,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-074 bandage/mummy 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-074 bandage/mummy 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-079",
@@ -629,7 +629,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-079 refractive concealment veil 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-079 refractive concealment veil 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-064",
@@ -641,7 +641,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-064 burlap/rags 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-064 burlap/rags 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-061",
@@ -653,7 +653,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-061 lace 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-061 lace 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-054",
@@ -665,7 +665,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-054 chainmail 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-054 chainmail 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-055",
@@ -677,7 +677,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-055 knitted wool 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-055 knitted wool 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-060",
@@ -689,7 +689,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-060 velvet 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-060 velvet 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-065",
@@ -701,7 +701,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-065 neon light suit 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-065 neon light suit 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-066",
@@ -713,7 +713,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-066 origami paper 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-066 origami paper 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-068",
@@ -725,7 +725,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-068 smoke dress 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-068 smoke dress 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-071",
@@ -737,7 +737,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-071 porcelain doll 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-071 porcelain doll 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-076",
@@ -749,7 +749,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-076 viscous gel couture 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-076 viscous gel couture 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-078",
@@ -761,7 +761,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-078 hologram 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-078 hologram 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-080",
@@ -773,7 +773,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-080 shadow form 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-080 shadow form 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-058",
@@ -785,7 +785,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-058 sequins 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-058 sequins 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-063",
@@ -797,7 +797,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-063 feathers 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-063 feathers 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-067",
@@ -809,7 +809,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-067 bubble wrap 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-067 bubble wrap 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-070",
@@ -821,7 +821,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-070 fire dress 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-070 fire dress 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-075",
@@ -833,7 +833,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-075 gold leaf 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-075 gold leaf 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-069",
@@ -845,7 +845,7 @@
       "categoryName": "5. Fabric & Texture Focus",
       "tags": ["fashion-and-costume", "fabric-and-texture-focus"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-069 water dress 5. fabric & texture focus pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
+      "searchableText": "sp08-069 water dress 5. fabric & texture focus fabric studies pack_08 fashion & costume fabric-and-texture-focus fashion-and-costume fabric-and-texture-focus"
     },
     {
       "id": "SP08-044",
@@ -857,7 +857,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-044 wizard robes 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-044 wizard robes 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-048",
@@ -869,7 +869,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-048 zombie survivor 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-048 zombie survivor 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-043",
@@ -881,7 +881,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-043 space opera royal 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-043 space opera royal 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-045",
@@ -893,7 +893,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-045 superhero spandex 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-045 superhero spandex 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-050",
@@ -905,7 +905,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-050 alien fashion 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-050 alien fashion 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-042",
@@ -917,7 +917,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-042 post-apocalyptic scavenger 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-042 post-apocalyptic scavenger 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-047",
@@ -929,7 +929,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-047 vampire lord 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-047 vampire lord 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-046",
@@ -941,7 +941,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-046 mech pilot suit 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-046 mech pilot suit 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-041",
@@ -953,7 +953,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-041 cybernetic implant 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-041 cybernetic implant 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     },
     {
       "id": "SP08-049",
@@ -965,7 +965,7 @@
       "categoryName": "4. Fantasy Sci-Fi Costume",
       "tags": ["fashion-and-costume", "fantasy-sci-fi-costume"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp08-049 pelagic tail couture 4. fantasy sci-fi costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
+      "searchableText": "sp08-049 pelagic tail couture 4. fantasy sci-fi costume speculative costume pack_08 fashion & costume fantasy-sci-fi-costume fashion-and-costume fantasy-sci-fi-costume"
     }
   ],
   "totalPresetCount": 80

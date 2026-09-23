@@ -126,7 +126,17 @@ function StylePresetResultButton({
           alt={name}
         />
       ) : (
-        <Palette size={24} />
+        <span className="flex flex-col items-center gap-2 text-xs text-[color:var(--wb-muted)]">
+          <Palette size={24} aria-hidden="true" />
+          <span>
+            {preset.ui &&
+            typeof preset.ui === 'object' &&
+            'previewStatus' in preset.ui &&
+            preset.ui.previewStatus === 'pending'
+              ? 'Preview pending'
+              : 'No preview'}
+          </span>
+        </span>
       )}
       {active && (
         <span className="style-card-selection-mark" aria-hidden="true">

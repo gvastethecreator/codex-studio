@@ -1,3 +1,4 @@
+import { getStyleCategoryDisplayName } from './styles/collections/categoryDisplayNames';
 import { PagedStyleCatalog } from './PagedStyleCatalog';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import { useWorkspaceState } from '../../contexts/GlobalContext';
@@ -1510,6 +1511,8 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
             ? searchableStylePresets
             : undefined,
         favoriteIds: favorites,
+        categoryLabelForPreset: (preset) =>
+          getStyleCategoryDisplayName(getPackIdForPreset(preset), preset.category || 'General'),
         categoryKeyForPreset: isAllStyleCategoriesTab
           ? getGlobalStyleCategoryKeyForPreset
           : undefined,
@@ -1526,6 +1529,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
       currentPackId,
       favoritePresets,
       getGlobalStyleCategoryKeyForPreset,
+      getPackIdForPreset,
       isGlobalStyleSearchActive,
       isGlobalStyleBrowseTab,
       isAllStyleCategoriesTab,
@@ -2519,7 +2523,13 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                   <StylePresetGroupSection
                                     key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
                                     groupKey={groupKey}
-                                    title={isFlatStyleGroup ? 'All Styles' : groupKey}
+                                    title={
+                                      isFlatStyleGroup
+                                        ? 'All Styles'
+                                        : presets[0]
+                                          ? `${groupKey.includes(' / ') ? `${getPackNameForId(getPackIdForPreset(presets[0]))} / ` : ''}${getStyleCategoryDisplayName(getPackIdForPreset(presets[0]), presets[0].category || 'General')}`
+                                          : groupKey
+                                    }
                                     icon={
                                       isFlatStyleGroup || !categoryIdentity ? (
                                         <LayoutGrid size={12} />
@@ -2735,14 +2745,23 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
             </div>
           </div>
         ) : null}
-        {intentionalStylesV1 ? (
+        {intentionalStylesV1 || referenceImages.length > 0 ? (
           <div className="mt-3 space-y-2">
             <div role="group" aria-label="Style application mode" className="flex gap-1">
-              {(['generate', 'preserve', 'reinterpret'] as const).map((mode) => (
+              {(intentionalStylesV1
+                ? (['generate', 'preserve', 'reinterpret'] as const)
+                : (['preserve', 'reinterpret'] as const)
+              ).map((mode) => (
                 <button
                   key={mode}
                   type="button"
-                  aria-pressed={intentionalMode === mode}
+                  aria-pressed={
+                    (intentionalStylesV1
+                      ? intentionalMode
+                      : intentionalMode === 'reinterpret'
+                        ? 'reinterpret'
+                        : 'preserve') === mode
+                  }
                   onClick={() => setIntentionalMode(mode)}
                   className="studio-ghost-control min-h-8 flex-1 px-2 text-xs capitalize"
                 >
@@ -2750,7 +2769,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                 </button>
               ))}
             </div>
-            {compileIssues.length > 0 ? (
+            {intentionalStylesV1 && compileIssues.length > 0 ? (
               <ul className="space-y-1 text-xs text-[color:var(--wb-warning)]">
                 {compileIssues.map((issue) => (
                   <li key={`${issue.code}:${issue.message}`}>{issue.message}</li>

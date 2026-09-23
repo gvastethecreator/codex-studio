@@ -17,7 +17,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-001 eclipse reliquary processional 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-001 eclipse reliquary processional 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-002",
@@ -29,7 +29,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-002 velvet relic conservation noir 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-002 velvet relic conservation noir 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-003",
@@ -41,7 +41,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-003 broken neon saint icon 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-003 broken neon saint icon 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-004",
@@ -53,7 +53,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-004 glass-thorn warden botany 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-004 glass-thorn warden botany 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-005",
@@ -65,7 +65,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-005 petrified banquet etiquette 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-005 petrified banquet etiquette 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-006",
@@ -77,7 +77,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-006 ash-crown oracle decree 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-006 ash-crown oracle decree 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-007",
@@ -89,7 +89,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-007 moonsteel relic infiltration 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-007 moonsteel relic infiltration 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-008",
@@ -101,7 +101,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-008 funeral rose psychopomp 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-008 funeral rose psychopomp 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-009",
@@ -113,7 +113,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-009 abyssal leviathan chapel 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-009 abyssal leviathan chapel 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-010",
@@ -125,7 +125,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-010 clockwork exorcism tribunal 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-010 clockwork exorcism tribunal 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-011",
@@ -137,7 +137,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-011 obsidian mask stagecraft 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-011 obsidian mask stagecraft 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-012",
@@ -149,7 +149,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-012 frostbound reliquary endurance 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-012 frostbound reliquary endurance 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-013",
@@ -161,7 +161,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-013 grave bell astral warning 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-013 grave bell astral warning 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-014",
@@ -173,7 +173,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-014 aegean titan judgment 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-014 aegean titan judgment 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-015",
@@ -185,7 +185,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-015 worldroot oathforged prophecy 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-015 worldroot oathforged prophecy 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-016",
@@ -197,7 +197,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-016 cenote sun-serpent cycle 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-016 cenote sun-serpent cycle 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-017",
@@ -209,7 +209,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-017 feathered scale afterlife verdict 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-017 feathered scale afterlife verdict 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-018",
@@ -221,7 +221,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-018 aegis storm command 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-018 aegis storm command 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-019",
@@ -233,7 +233,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-019 red thread labyrinth logic 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-019 red thread labyrinth logic 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-020",
@@ -245,7 +245,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-020 bronze smoke oracle fragment 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-020 bronze smoke oracle fragment 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-021",
@@ -257,7 +257,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-021 griot star memory ring 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-021 griot star memory ring 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-022",
@@ -269,7 +269,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-022 orisha thunder verdict 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-022 orisha thunder verdict 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-023",
@@ -281,7 +281,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-023 anansi moon fate weave 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-023 anansi moon fate weave 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-024",
@@ -293,7 +293,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-024 whispering foxfire threshold 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-024 whispering foxfire threshold 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-025",
@@ -305,7 +305,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-025 kappa water jurisprudence 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-025 kappa water jurisprudence 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-026",
@@ -317,7 +317,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-026 eight storm kagura motion 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-026 eight storm kagura motion 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-027",
@@ -329,7 +329,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-027 ashen worldtree threshold 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-027 ashen worldtree threshold 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-028",
@@ -341,7 +341,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-028 valkyrie ice weighing 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-028 valkyrie ice weighing 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-029",
@@ -353,7 +353,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-029 longnight rune forging 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-029 longnight rune forging 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-030",
@@ -365,7 +365,7 @@
       "categoryName": "9. Mythic — Mesoamerican Suns",
       "tags": ["mythic-noir-curated-vault", "mythic-mesoamerican-suns"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-030 feathered eclipse continuity 9. mythic — mesoamerican suns pack_14 mythic noir curated vault mythic-mesoamerican-suns mythic-noir-curated-vault mythic-mesoamerican-suns"
+      "searchableText": "sp14-030 feathered eclipse continuity 9. mythic — mesoamerican suns solar motifs pack_14 mythic noir curated vault mythic-mesoamerican-suns mythic-noir-curated-vault mythic-mesoamerican-suns"
     },
     {
       "id": "SP14-031",
@@ -377,7 +377,7 @@
       "categoryName": "9. Mythic — Mesoamerican Suns",
       "tags": ["mythic-noir-curated-vault", "mythic-mesoamerican-suns"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-031 jade cenote echo reading 9. mythic — mesoamerican suns pack_14 mythic noir curated vault mythic-mesoamerican-suns mythic-noir-curated-vault mythic-mesoamerican-suns"
+      "searchableText": "sp14-031 jade cenote echo reading 9. mythic — mesoamerican suns solar motifs pack_14 mythic noir curated vault mythic-mesoamerican-suns mythic-noir-curated-vault mythic-mesoamerican-suns"
     },
     {
       "id": "SP14-032",
@@ -389,7 +389,7 @@
       "categoryName": "9. Mythic — Mesoamerican Suns",
       "tags": ["mythic-noir-curated-vault", "mythic-mesoamerican-suns"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-032 obsidian ballcourt solar oath 9. mythic — mesoamerican suns pack_14 mythic noir curated vault mythic-mesoamerican-suns mythic-noir-curated-vault mythic-mesoamerican-suns"
+      "searchableText": "sp14-032 obsidian ballcourt solar oath 9. mythic — mesoamerican suns solar motifs pack_14 mythic noir curated vault mythic-mesoamerican-suns mythic-noir-curated-vault mythic-mesoamerican-suns"
     },
     {
       "id": "SP14-033",
@@ -401,7 +401,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-033 paper lantern exorcism protocol 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-033 paper lantern exorcism protocol 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-034",
@@ -413,7 +413,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-034 snow shrine boundary seals 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-034 snow shrine boundary seals 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-035",
@@ -425,7 +425,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-035 rain-wet yokai bargain 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-035 rain-wet yokai bargain 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-036",
@@ -437,7 +437,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-036 hungry ghost bell shelter 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-036 hungry ghost bell shelter 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-037",
@@ -449,7 +449,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-037 moon carp vow crossing 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-037 moon carp vow crossing 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-038",
@@ -461,7 +461,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-038 serpent kami oath path 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-038 serpent kami oath path 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-039",
@@ -473,7 +473,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-039 hundred mask ritual function 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-039 hundred mask ritual function 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-040",
@@ -485,7 +485,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-040 borrowed faces fate archive 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-040 borrowed faces fate archive 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-041",
@@ -497,7 +497,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-041 cormorant kami appeasement 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-041 cormorant kami appeasement 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-042",
@@ -509,7 +509,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-042 willow fox oath arbitration 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-042 willow fox oath arbitration 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-043",
@@ -521,7 +521,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-043 storm drum weather command 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-043 storm drum weather command 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-044",
@@ -533,7 +533,7 @@
       "categoryName": "7. Mythic — Japanese Yokai & Kami",
       "tags": ["mythic-noir-curated-vault", "mythic-japanese-yokai-and-kami"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-044 dawn purification silence 7. mythic — japanese yokai & kami pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
+      "searchableText": "sp14-044 dawn purification silence 7. mythic — japanese yokai & kami folklore references pack_14 mythic noir curated vault mythic-japanese-yokai-and-kami mythic-noir-curated-vault mythic-japanese-yokai-and-kami"
     },
     {
       "id": "SP14-045",
@@ -545,7 +545,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-045 bronze spear public oath 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-045 bronze spear public oath 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-046",
@@ -557,7 +557,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-046 cyclops prophecy forge 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-046 cyclops prophecy forge 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-047",
@@ -569,7 +569,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-047 trireme omen strategy 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-047 trireme omen strategy 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-048",
@@ -581,7 +581,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-048 olive crown jurisprudence 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-048 olive crown jurisprudence 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-049",
@@ -593,7 +593,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-049 chariot sun transit 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-049 chariot sun transit 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-050",
@@ -605,7 +605,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-050 river styx passage toll 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-050 river styx passage toll 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-051",
@@ -617,7 +617,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-051 laurel academy governance 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-051 laurel academy governance 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-052",
@@ -629,7 +629,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-052 helios beacon signal 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-052 helios beacon signal 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-053",
@@ -641,7 +641,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-053 medusa reliquary warning 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-053 medusa reliquary warning 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-054",
@@ -653,7 +653,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-054 oracle wind legal instrument 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-054 oracle wind legal instrument 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-055",
@@ -665,7 +665,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-055 hoplite dawn discipline 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-055 hoplite dawn discipline 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-056",
@@ -677,7 +677,7 @@
       "categoryName": "5. Mythic — Greek Epics",
       "tags": ["mythic-noir-curated-vault", "mythic-greek-epics"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-056 returning heroes memorial 5. mythic — greek epics pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
+      "searchableText": "sp14-056 returning heroes memorial 5. mythic — greek epics epic motifs pack_14 mythic noir curated vault mythic-greek-epics mythic-noir-curated-vault mythic-greek-epics"
     },
     {
       "id": "SP14-057",
@@ -689,7 +689,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-057 baobab star counsel 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-057 baobab star counsel 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-058",
@@ -701,7 +701,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-058 lion rain sovereignty 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-058 lion rain sovereignty 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-059",
@@ -713,7 +713,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-059 crocodile river pact 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-059 crocodile river pact 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-060",
@@ -725,7 +725,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-060 lineage mask carving 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-060 lineage mask carving 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-061",
@@ -737,7 +737,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-061 savannah eclipse civic law 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-061 savannah eclipse civic law 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-062",
@@ -749,7 +749,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-062 calabash sky knowledge 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-062 calabash sky knowledge 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-063",
@@ -761,7 +761,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-063 ancestor drum relay 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-063 ancestor drum relay 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-064",
@@ -773,7 +773,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-064 spirit elephant stewardship 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-064 spirit elephant stewardship 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-065",
@@ -785,7 +785,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-065 hyena moon border wit 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-065 hyena moon border wit 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-066",
@@ -797,7 +797,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-066 rainmaker commons engine 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-066 rainmaker commons engine 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-067",
@@ -809,7 +809,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-067 palm crown astral navigation 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-067 palm crown astral navigation 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-068",
@@ -821,7 +821,7 @@
       "categoryName": "6. Mythic — African Cosmologies",
       "tags": ["mythic-noir-curated-vault", "mythic-african-cosmologies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-068 ancestor fire deliberation 6. mythic — african cosmologies pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
+      "searchableText": "sp14-068 ancestor fire deliberation 6. mythic — african cosmologies cosmology references pack_14 mythic noir curated vault mythic-african-cosmologies mythic-noir-curated-vault mythic-african-cosmologies"
     },
     {
       "id": "SP14-069",
@@ -833,7 +833,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-069 frost jarl authority 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-069 frost jarl authority 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-070",
@@ -845,7 +845,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-070 valkyrie soul departure 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-070 valkyrie soul departure 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-071",
@@ -857,7 +857,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-071 longnight saga doctrine 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-071 longnight saga doctrine 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-072",
@@ -869,7 +869,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-072 fjord rune navigation 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-072 fjord rune navigation 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-073",
@@ -881,7 +881,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-073 wolf oath momentum 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-073 wolf oath momentum 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-074",
@@ -893,7 +893,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-074 serpent ash crossing 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-074 serpent ash crossing 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-075",
@@ -905,7 +905,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-075 raven signal intelligence 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-075 raven signal intelligence 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-076",
@@ -917,7 +917,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-076 iceblade quench rite 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-076 iceblade quench rite 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-077",
@@ -929,7 +929,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-077 glacier thing deliberation 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-077 glacier thing deliberation 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-078",
@@ -941,7 +941,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-078 frostbound burial memory 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-078 frostbound burial memory 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-079",
@@ -953,7 +953,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-079 ashen ragnarok last stand 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-079 ashen ragnarok last stand 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-080",
@@ -965,7 +965,7 @@
       "categoryName": "8. Mythic — Norse Sagas",
       "tags": ["mythic-noir-curated-vault", "mythic-norse-sagas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-080 yew nine-path fate 8. mythic — norse sagas pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
+      "searchableText": "sp14-080 yew nine-path fate 8. mythic — norse sagas saga motifs pack_14 mythic noir curated vault mythic-norse-sagas mythic-noir-curated-vault mythic-norse-sagas"
     },
     {
       "id": "SP14-081",
@@ -977,7 +977,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-081 broken comet omen archive 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-081 broken comet omen archive 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-082",
@@ -989,7 +989,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-082 eclipse meridian verdict 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-082 eclipse meridian verdict 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-083",
@@ -1001,7 +1001,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-083 zodiac tempered destiny 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-083 zodiac tempered destiny 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-084",
@@ -1013,7 +1013,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-084 orbital death spiral 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-084 orbital death spiral 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-085",
@@ -1025,7 +1025,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-085 nebula pilgrim ascent 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-085 nebula pilgrim ascent 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-086",
@@ -1037,7 +1037,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-086 starfall precedent basin 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-086 starfall precedent basin 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-087",
@@ -1049,7 +1049,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-087 lunar salt divination 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-087 lunar salt divination 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-088",
@@ -1061,7 +1061,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-088 planetary bell alarm 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-088 planetary bell alarm 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-089",
@@ -1073,7 +1073,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-089 glass astrolabe navigation 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-089 glass astrolabe navigation 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-090",
@@ -1085,7 +1085,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-090 auroral omen containment 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-090 auroral omen containment 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-091",
@@ -1097,7 +1097,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-091 falling suns memory spiral 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-091 falling suns memory spiral 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-092",
@@ -1109,7 +1109,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-092 equinox balance axis 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-092 equinox balance axis 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-093",
@@ -1121,7 +1121,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-093 omen salt processing 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-093 omen salt processing 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-094",
@@ -1133,7 +1133,7 @@
       "categoryName": "4. Mythic — Cosmology & Omens",
       "tags": ["mythic-noir-curated-vault", "mythic-cosmology-and-omens"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-094 night meridian state secret 4. mythic — cosmology & omens pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
+      "searchableText": "sp14-094 night meridian state secret 4. mythic — cosmology & omens cosmic symbolism pack_14 mythic noir curated vault mythic-cosmology-and-omens mythic-noir-curated-vault mythic-cosmology-and-omens"
     },
     {
       "id": "SP14-095",
@@ -1145,7 +1145,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-095 thorned solar relic icon 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-095 thorned solar relic icon 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-096",
@@ -1157,7 +1157,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-096 mirror oracle refraction archive 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-096 mirror oracle refraction archive 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-097",
@@ -1169,7 +1169,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-097 serpent knot renewal glyph 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-097 serpent knot renewal glyph 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-098",
@@ -1181,7 +1181,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-098 ash-crown residue authority 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-098 ash-crown residue authority 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-099",
@@ -1193,7 +1193,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-099 underworld lantern threshold 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-099 underworld lantern threshold 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-100",
@@ -1205,7 +1205,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-100 broken halo regrowth 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-100 broken halo regrowth 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-101",
@@ -1217,7 +1217,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-101 blackwater totem memory 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-101 blackwater totem memory 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-102",
@@ -1229,7 +1229,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-102 veil of erased names 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-102 veil of erased names 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-103",
@@ -1241,7 +1241,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-103 salt-bone sigil liturgy 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-103 salt-bone sigil liturgy 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-104",
@@ -1253,7 +1253,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-104 eclipse cipher knowledge 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-104 eclipse cipher knowledge 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-105",
@@ -1265,7 +1265,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-105 feathered ascent threshold 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-105 feathered ascent threshold 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-106",
@@ -1277,7 +1277,7 @@
       "categoryName": "1. Mythic — Symbolism",
       "tags": ["mythic-noir-curated-vault", "mythic-symbolism"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-106 stone psalm celestial marker 1. mythic — symbolism pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
+      "searchableText": "sp14-106 stone psalm celestial marker 1. mythic — symbolism symbolic composition pack_14 mythic noir curated vault mythic-symbolism mythic-noir-curated-vault mythic-symbolism"
     },
     {
       "id": "SP14-107",
@@ -1289,7 +1289,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-107 midnight candle compression 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-107 midnight candle compression 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-108",
@@ -1301,7 +1301,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-108 blood moon processional omen 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-108 blood moon processional omen 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-109",
@@ -1313,7 +1313,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-109 blackwater confessional reflection 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-109 blackwater confessional reflection 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-110",
@@ -1325,7 +1325,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-110 oath knife binding 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-110 oath knife binding 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-111",
@@ -1337,7 +1337,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-111 ash choir absence 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-111 ash choir absence 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-112",
@@ -1349,7 +1349,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-112 veiled grimoire secrecy 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-112 veiled grimoire secrecy 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-113",
@@ -1361,7 +1361,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-113 silent bell warning 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-113 silent bell warning 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-114",
@@ -1373,7 +1373,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-114 crimson ledger judgment 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-114 crimson ledger judgment 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-115",
@@ -1385,7 +1385,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-115 wax seal verdict grid 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-115 wax seal verdict grid 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-116",
@@ -1397,7 +1397,7 @@
       "categoryName": "2. Mythic — Ritual Noir",
       "tags": ["mythic-noir-curated-vault", "mythic-ritual-noir"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-116 night orchid witness 2. mythic — ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
+      "searchableText": "sp14-116 night orchid witness 2. mythic — ritual noir ritual noir pack_14 mythic noir curated vault mythic-ritual-noir mythic-noir-curated-vault mythic-ritual-noir"
     },
     {
       "id": "SP14-117",
@@ -1409,7 +1409,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-117 river king thunder sovereignty 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-117 river king thunder sovereignty 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-118",
@@ -1421,7 +1421,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-118 cinder sun pantheon trial 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-118 cinder sun pantheon trial 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-119",
@@ -1433,7 +1433,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-119 moon judge tribunal ring 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-119 moon judge tribunal ring 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-120",
@@ -1445,7 +1445,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-120 twin gods tidal duality 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-120 twin gods tidal duality 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-121",
@@ -1457,7 +1457,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-121 iron harvest stewardship 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-121 iron harvest stewardship 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-122",
@@ -1469,7 +1469,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-122 serpent oracle lineage 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-122 serpent oracle lineage 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     },
     {
       "id": "SP14-123",
@@ -1481,7 +1481,7 @@
       "categoryName": "3. Mythic — Pantheons & Legends",
       "tags": ["mythic-noir-curated-vault", "mythic-pantheons-and-legends"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp14-123 ashen hearth guardian warmth 3. mythic — pantheons & legends pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
+      "searchableText": "sp14-123 ashen hearth guardian warmth 3. mythic — pantheons & legends legends & myth pack_14 mythic noir curated vault mythic-pantheons-and-legends mythic-noir-curated-vault mythic-pantheons-and-legends"
     }
   ],
   "totalPresetCount": 123

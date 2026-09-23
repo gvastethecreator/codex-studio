@@ -1,0 +1,19 @@
+schemaVersion: 1
+id: pack_20
+name: Print Registers
+description:
+  Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals;
+  live visual evaluation and preview images are pending.
+categories:
+  - id: print-registers
+    name: 1. Print Registers
+    presetRefs:
+      - pack_20/SP20-001.yaml
+      - pack_20/SP20-002.yaml
+      - pack_20/SP20-003.yaml
+      - pack_20/SP20-004.yaml
+presetRefs:
+  - pack_20/SP20-001.yaml
+  - pack_20/SP20-002.yaml
+  - pack_20/SP20-003.yaml
+  - pack_20/SP20-004.yaml
