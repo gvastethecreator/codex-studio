@@ -9,43 +9,59 @@ export const STYLE_COLLECTION_FAMILIES = [
   },
   {
     id: 'capture_reality',
-    title: 'Capture & Reality',
+    title: 'Photography',
     description: 'Camera, optics, lighting, analog processes, and technical imaging.',
     order: 20,
   },
   {
     id: 'screen_motion',
-    title: 'Screen & Motion',
+    title: 'Screen & Animation',
     description: 'Film, broadcast, animation, cartoons, anime, and manga.',
     order: 30,
   },
   {
     id: 'illustration_art_media',
-    title: 'Illustration & Art Media',
+    title: 'Illustration & Print',
     description: 'Comics, publishing, painting, drawing, printmaking, and digital art.',
     order: 40,
   },
   {
     id: 'design_assets_materials',
-    title: 'Design, Assets & Materials',
+    title: '3D, Materials & Design',
     description: '3D render, surfaces, patterns, fashion, spaces, games, and UI.',
     order: 50,
   },
   {
     id: 'worlds_genres',
-    title: 'Worlds & Genres',
+    title: 'World Directions',
     description: 'Mythic, fantasy, punk, symbolic, and genre-world visual systems.',
     order: 60,
   },
   {
     id: 'experimental_play',
-    title: 'Experimental & Play',
+    title: 'Experimental',
     description: 'Abstract systems, glitch, toys, craft, food, and scale play.',
     order: 70,
   },
 ] as const satisfies StyleCollectionFamily[];
 
 export const STYLE_COLLECTIONS = [
+  {
+    id: 'portable_visual_studies',
+    title: 'Portable Studies',
+    familyId: 'illustration_art_media',
+    description:
+      'Twelve authored ink, print and paper studies. Preview images and visual evaluation are pending.',
+    icon: 'pen',
+    order: 5,
+    sourcePackIds: ['pack_19', 'pack_20', 'pack_21'],
+    entries: [
+      { id: 'portable-ink', kind: 'pack', packId: 'pack_19' },
+      { id: 'portable-print', kind: 'pack', packId: 'pack_20' },
+      { id: 'portable-paper', kind: 'pack', packId: 'pack_21' },
+    ],
+    facets: { medium: ['ink', 'print', 'paper'], workflow: ['image', 'edit'] },
+  },
   {
     id: 'my_styles',
     title: 'My Styles',
@@ -79,7 +95,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'photography_camera',
-    title: 'Photography & Camera Styles',
+    title: 'Photography',
     familyId: 'capture_reality',
     description:
       'Real-world photographic language, portrait, documentary, product, and nature looks.',
@@ -116,7 +132,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'analog_film_process',
-    title: 'Analog Film & Photo Processes',
+    title: 'Film & Analog',
     familyId: 'capture_reality',
     description: 'Film stocks, historical photo eras, darkroom processes, and camera artifacts.',
     icon: 'film',
@@ -144,7 +160,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'lighting_optics_atmosphere',
-    title: 'Lighting, Optics & Atmosphere',
+    title: 'Light & Optics',
     familyId: 'capture_reality',
     description: 'Lighting setups, optical effects, atmosphere, and camera-adjacent techniques.',
     icon: 'bolt',
@@ -193,7 +209,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'technical_imaging',
-    title: 'Scientific, Surveillance & Technical Imaging',
+    title: 'Technical Imaging',
     familyId: 'capture_reality',
     description:
       'Specialist imaging, surveillance looks, x-ray, thermal, micro, and macro scale views.',
@@ -245,7 +261,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'cinema_film_genres',
-    title: 'Cinema & Film Genres',
+    title: 'Cinema',
     familyId: 'screen_motion',
     description: 'Film genre grammar, cinematic staging, and feature-film looks.',
     icon: 'clapperboard',
@@ -258,7 +274,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'tv_broadcast_analog_video',
-    title: 'TV, Broadcast & Analog Video',
+    title: 'Broadcast & Video',
     familyId: 'screen_motion',
     description: 'Television, broadcast graphics, home video, CCTV, and analog media packages.',
     icon: 'tv',
@@ -276,7 +292,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'animation_cartoons',
-    title: 'Animation & Cartoons',
+    title: 'Animation & Cartoon',
     familyId: 'screen_motion',
     description: 'Animation traditions, cartoon exaggeration, caricature, and graphic humor.',
     icon: 'play',
@@ -341,7 +357,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'comics_sequential',
-    title: 'Comics & Sequential Art',
+    title: 'Comics',
     familyId: 'illustration_art_media',
     description: 'Comic book language, panels, sequential marks, and graphic storytelling.',
     icon: 'book',
@@ -359,7 +375,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'illustration_publishing',
-    title: 'Illustration & Publishing',
+    title: 'Editorial Illustration',
     familyId: 'illustration_art_media',
     description: 'Children books, posters, editorial systems, and concept illustration.',
     icon: 'palette',
@@ -384,7 +400,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'drawing_ink_print',
-    title: 'Drawing, Ink & Printmaking',
+    title: 'Drawing & Print',
     familyId: 'illustration_art_media',
     description: 'Draftsmanship, ink, engraving, printmaking, and reproducible marks.',
     icon: 'pen',
@@ -440,7 +456,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'painting_traditional',
-    title: 'Painting & Traditional Media',
+    title: 'Painting',
     familyId: 'illustration_art_media',
     description: 'Pigment, paint handling, traditional surfaces, and mixed media.',
     icon: 'brush',
@@ -466,7 +482,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'digital_concept_art',
-    title: 'Digital Art & Concept Art',
+    title: 'Digital Art',
     familyId: 'illustration_art_media',
     description: 'Digital painting, matte/concept art, vector languages, and production art.',
     icon: 'wand',
@@ -491,7 +507,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'cgi_product_render',
-    title: '3D, CGI & Product Render',
+    title: '3D Rendering',
     familyId: 'design_assets_materials',
     description: 'Render engines, CGI styles, hard-surface product visuals, and 3D asset looks.',
     icon: 'box',
@@ -502,7 +518,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'materials_textures_surfaces',
-    title: 'Materials, Textures & Surfaces',
+    title: 'Materials & Surfaces',
     familyId: 'design_assets_materials',
     description:
       'Natural and synthetic materials, tactile surfaces, fabrics, and texture workflows.',
@@ -537,7 +553,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'patterns_ornament',
-    title: 'Patterns & Ornament',
+    title: 'Pattern & Ornament',
     familyId: 'design_assets_materials',
     description: 'Textile, ornamental, repeat, and decorative surface systems.',
     icon: 'grid',
@@ -563,7 +579,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'diagrams_blueprints_technical_sheets',
-    title: 'Diagrams, Blueprints & Technical Sheets',
+    title: 'Diagrams & Sheets',
     familyId: 'design_assets_materials',
     description:
       'Blueprints, callout sheets, wireframes, data diagrams, maps, and reference plates.',
@@ -619,7 +635,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'fashion_costume_wearables',
-    title: 'Fashion, Costume & Wearables',
+    title: 'Wardrobe Directions',
     familyId: 'design_assets_materials',
     description: 'Fashion systems, costumes, subcultures, textiles, and wearable identities.',
     icon: 'shirt',
@@ -630,7 +646,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'architecture_interiors_places',
-    title: 'Architecture, Interiors & Places',
+    title: 'Architecture & Interiors',
     familyId: 'design_assets_materials',
     description: 'Interior design, architecture, civic spaces, gardens, and spatial worldbuilding.',
     icon: 'building',
@@ -685,7 +701,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'games_ui_worlds',
-    title: 'Games, UI & Interactive Worlds',
+    title: 'Game Formats & UI',
     familyId: 'design_assets_materials',
     description:
       'Game worlds, UI systems, retro visuals, playable spaces, and sprite-adjacent styles.',
@@ -711,7 +727,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'speculative_architecture_places',
-    title: 'Speculative Architecture & Impossible Places',
+    title: 'Speculative Spaces',
     familyId: 'worlds_genres',
     description:
       'Fantasy architecture, impossible space, megastructures, and spatial world systems.',
@@ -737,7 +753,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'myth_folklore_ritual',
-    title: 'Myth, Folklore & Ritual',
+    title: 'Myth & Folklore',
     familyId: 'worlds_genres',
     description: 'Mythic symbolism, pantheons, rituals, omens, and folklore visual systems.',
     icon: 'moon',
@@ -748,7 +764,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'dungeon_dark_fantasy_wargame',
-    title: 'Dungeon, Dark Fantasy & Wargame',
+    title: 'Dark Fantasy',
     familyId: 'worlds_genres',
     description: 'Dungeon zines, dark fantasy, gothic wargame, bestiary, and inked fantasy plates.',
     icon: 'sword',
@@ -759,7 +775,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'punk_alt_futures',
-    title: 'Punk & Alternate Futures',
+    title: 'Alternate Futures',
     familyId: 'worlds_genres',
     description:
       'Punk futures, civic alt-tech, subcultures, climate futures, and speculative systems.',
@@ -787,7 +803,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'surreal_dream_symbolic',
-    title: 'Surreal, Dream & Symbolic',
+    title: 'Surreal Directions',
     familyId: 'worlds_genres',
     description: 'Surrealism, dream spaces, symbolism, liminal moods, and strange narrative logic.',
     icon: 'moon-stars',
@@ -812,7 +828,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'abstract_glitch_systems',
-    title: 'Abstract, Glitch & Systems',
+    title: 'Abstract & Signal',
     familyId: 'experimental_play',
     description:
       'Geometric abstraction, glitch, digital noise, diagrams, and systemic visual languages.',
@@ -849,7 +865,7 @@ export const STYLE_COLLECTIONS = [
   },
   {
     id: 'toys_craft_food_scale',
-    title: 'Toys, Craft, Food & Scale Play',
+    title: 'Craft, Food & Scale',
     familyId: 'experimental_play',
     description:
       'Toys, handmade craft, food looks, playful objects, and scale-shift visual systems.',

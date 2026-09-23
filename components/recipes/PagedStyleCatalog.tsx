@@ -1,3 +1,4 @@
+import { getStyleCategoryDisplayName } from './styles/collections/categoryDisplayNames';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   loadStylePresetCatalogSearchIndex,
@@ -128,7 +129,13 @@ export function PagedStyleCatalog({
         ) : null}
         {[...groups].map(([name, entries]) => (
           <section key={name}>
-            {name && <h3>{name}</h3>}
+            {name && (
+              <h3>
+                {entries[0]
+                  ? `${entries[0].packName} / ${getStyleCategoryDisplayName(entries[0].packId, entries[0].categoryName)}`
+                  : name}
+              </h3>
+            )}
             <div
               className="paged-style-grid"
               style={{ gridTemplateColumns: `repeat(${Math.max(1, columns)}, minmax(0, 1fr))` }}

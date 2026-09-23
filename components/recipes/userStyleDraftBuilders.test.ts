@@ -83,7 +83,8 @@ describe('userStyleDraftBuilders', () => {
 
     expect(draft.name).toContain('Ink Circuit');
     expect(draft.tags).toContain('blend');
-    expect(draft.visualDna.aesthetic).toContain('Ink Circuit 0.75');
+    expect(draft.visualDna.aesthetic).toContain('Style layer 1 0.75');
+    expect(draft.visualDna.aesthetic).not.toContain('Ink Circuit');
     expect(draft.avoidRules).toEqual(['watermark', 'logo']);
   });
 

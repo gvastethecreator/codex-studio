@@ -1,0 +1,91 @@
+schemaVersion: 1
+id: SP20-001
+packId: pack_20
+name: Offset Drift
+category: 1. Print Registers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: Layered print illustration with small controlled registration differences between color plates.
+  subject_treatment:
+    Keep the requested shapes aligned as a readable whole. Limit color-plate displacement to edge
+    fringes; it must not become a duplicated subject.
+  color_and_tone:
+    Separate the user palette into a few printed color layers. Let overprints produce darker intersections
+    rather than arbitrary extra colors.
+  lighting_and_shadow:
+    Build shading from overlapping color shapes and sparse screening, preserving the requested
+    direction of illumination.
+  texture_and_material:
+    Use mild ink-transfer variation and a consistent paper-scale grain. Registration offsets
+    remain small relative to the smallest important form.
+  camera_and_composition:
+    Preserve framing, pose and camera. The registration shift belongs to the print layers,
+    not to the depicted geometry.
+  atmosphere_and_mood:
+    Keep the requested tone. Print imperfection adds physical character without mandatory nostalgia,
+    decay or poster content.
+  rendering_and_quality:
+    Retain sharp master silhouettes and controlled plate fringes. Avoid global blur or uncontrolled
+    chromatic aberration.
+avoidRules:
+  - large ghost duplicates
+  - uncontrolled color fringing
+  - invented poster typography
+assets: {}
+attributes:
+  negativePrompt: large ghost duplicates, uncontrolled color fringing, invented poster typography
+  previewStatus: pending
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: print
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: print
+    avoidRules:
+      - text: large ghost duplicates
+        field: rendering_and_quality
+      - text: uncontrolled color fringing
+        field: rendering_and_quality
+      - text: invented poster typography
+        field: rendering_and_quality
+  ui:
+    previewStatus: pending
+    kind: full_style
+    derivedFrom:
+      - SP04-015
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

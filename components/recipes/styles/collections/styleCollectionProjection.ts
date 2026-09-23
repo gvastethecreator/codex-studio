@@ -1,3 +1,4 @@
+import { getStyleCategoryDisplayName } from './categoryDisplayNames';
 import type { StyleRuntimePack, StyleRuntimePreset } from '../runtimeTypes';
 import type {
   ResolvedStyleCollection,
@@ -140,7 +141,9 @@ export function resolveStyleCollection(
         presetId,
         sourcePackId: resolved.pack.id,
         sourceCategory: resolved.preset.category ?? 'General',
-        displayCategory: resolved.entry.displayCategory ?? resolved.preset.category ?? 'General',
+        displayCategory:
+          resolved.entry.displayCategory ??
+          getStyleCategoryDisplayName(resolved.pack.id, resolved.preset.category ?? 'General'),
         collectionId: collection.id,
         collectionEntryId: resolved.entry.id,
         collectionRole: fallbackRole(resolved.entry.role),

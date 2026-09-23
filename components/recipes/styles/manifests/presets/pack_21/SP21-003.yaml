@@ -1,0 +1,91 @@
+schemaVersion: 1
+id: SP21-003
+packId: pack_21
+name: Opaque Planes
+category: 1. Paper & Pigment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - painting
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: Opaque painted illustration organized into broad color planes with selective visible brush edges.
+  subject_treatment:
+    Preserve defining shapes and proportions while grouping small surface details into larger planar
+    statements.
+  color_and_tone:
+    Build a compact palette from the requested colors. Separate light, middle and dark planes clearly
+    without outlining every boundary.
+  lighting_and_shadow:
+    Represent illumination as connected changes of plane and value. Reserve soft transitions
+    for selected turning surfaces.
+  texture_and_material:
+    Use matte paint coverage with occasional dry drag at a few edges. Keep the bulk of each
+    plane calm and opaque.
+  camera_and_composition:
+    Preserve user viewpoint and placement. Alternate found and lost edges around the requested
+    focal hierarchy.
+  atmosphere_and_mood:
+    Retain the requested mood through chroma, value spacing and edge softness instead of substituting
+    a storybook scene.
+  rendering_and_quality:
+    Maintain readable planes, intentional brush boundaries and restrained microtexture. Avoid
+    photographic gloss or a blanket canvas overlay.
+avoidRules:
+  - blanket canvas texture
+  - indiscriminate soft blending
+  - unrequested photographic gloss
+assets: {}
+attributes:
+  negativePrompt: blanket canvas texture, indiscriminate soft blending, unrequested photographic gloss
+  previewStatus: pending
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: painting
+    avoidRules:
+      - text: blanket canvas texture
+        field: rendering_and_quality
+      - text: indiscriminate soft blending
+        field: rendering_and_quality
+      - text: unrequested photographic gloss
+        field: rendering_and_quality
+  ui:
+    previewStatus: pending
+    kind: full_style
+    derivedFrom:
+      - SP04-021
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - painting
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

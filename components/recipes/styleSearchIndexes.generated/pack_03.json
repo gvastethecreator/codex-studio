@@ -17,7 +17,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-001 octane spectral gpu path tracer 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-001 octane spectral gpu path tracer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-002",
@@ -29,7 +29,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-002 unreal engine 5 next-gen real-time engine 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-002 unreal engine 5 next-gen real-time engine 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-003",
@@ -41,7 +41,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-003 redshift biased gpu renderer 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-003 redshift biased gpu renderer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-004",
@@ -53,7 +53,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-004 arnold feature film path tracer 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-004 arnold feature film path tracer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-005",
@@ -65,7 +65,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-005 blender cycles open path tracer 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-005 blender cycles open path tracer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-006",
@@ -77,7 +77,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-006 v-ray archviz raytracer 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-006 v-ray archviz raytracer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-007",
@@ -89,7 +89,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-007 keyshot product studio renderer 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-007 keyshot product studio renderer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-008",
@@ -101,7 +101,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-008 pixar renderman feature animation renderer 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-008 pixar renderman feature animation renderer 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-009",
@@ -113,7 +113,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-009 zbrush digital clay sculpt 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-009 zbrush digital clay sculpt 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-010",
@@ -125,7 +125,7 @@
       "categoryName": "1. Render Engines",
       "tags": ["3d-and-cgi-rendering", "render-engines"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-010 unity hdrp high-end game pipeline 1. render engines pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
+      "searchableText": "sp03-010 unity hdrp high-end game pipeline 1. render engines cgi rendering pack_03 3d & cgi rendering render-engines 3d-and-cgi-rendering render-engines"
     },
     {
       "id": "SP03-011",
@@ -137,7 +137,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-011 glass & crystal 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-011 glass & crystal 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-012",
@@ -149,7 +149,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-012 liquid simulation 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-012 liquid simulation 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-013",
@@ -161,7 +161,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-013 subsurface scattering (sss) 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-013 subsurface scattering (sss) 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-014",
@@ -173,7 +173,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-014 chrome & metal 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-014 chrome & metal 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-016",
@@ -185,7 +185,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-016 fur & hair 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-016 fur & hair 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-017",
@@ -197,7 +197,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-017 slime & goo 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-017 slime & goo 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-018",
@@ -209,7 +209,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-018 carbon fiber 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-018 carbon fiber 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-019",
@@ -221,7 +221,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-019 hologram 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-019 hologram 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-020",
@@ -233,7 +233,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-020 porcelain 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-020 porcelain 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-036",
@@ -245,7 +245,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-036 caustics 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-036 caustics 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-075",
@@ -257,7 +257,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-075 ice sculpture 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-075 ice sculpture 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-079",
@@ -269,7 +269,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-079 bronze statue 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-079 bronze statue 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-080",
@@ -281,7 +281,7 @@
       "categoryName": "2. Materials",
       "tags": ["3d-and-cgi-rendering", "materials"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-080 marble statue 2. materials pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
+      "searchableText": "sp03-080 marble statue 2. materials cgi material response pack_03 3d & cgi rendering materials 3d-and-cgi-rendering materials"
     },
     {
       "id": "SP03-031",
@@ -293,7 +293,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-031 global illumination 3. lighting and atmosphere pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-031 global illumination 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-032",
@@ -305,7 +305,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-032 volumetric fog 3. lighting and atmosphere pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-032 volumetric fog 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-034",
@@ -317,7 +317,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-034 studio lighting (3 point) 3. lighting and atmosphere pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-034 studio lighting (3 point) 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-035",
@@ -329,7 +329,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-035 hdri environment 3. lighting and atmosphere pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-035 hdri environment 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-037",
@@ -341,7 +341,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-037 ambient occlusion pass 3. lighting and atmosphere pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-037 ambient occlusion pass 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-038",
@@ -353,7 +353,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-038 rim lighting 3. lighting and atmosphere pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-038 rim lighting 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-041",
@@ -365,7 +365,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-041 god rays (volumetric) 3. lighting and atmosphere pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-041 god rays (volumetric) 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-042",
@@ -377,7 +377,7 @@
       "categoryName": "3. Lighting And Atmosphere",
       "tags": ["3d-and-cgi-rendering", "lighting-and-atmosphere"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-042 diorama lighting 3. lighting and atmosphere pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
+      "searchableText": "sp03-042 diorama lighting 3. lighting and atmosphere cgi light pack_03 3d & cgi rendering lighting-and-atmosphere 3d-and-cgi-rendering lighting-and-atmosphere"
     },
     {
       "id": "SP03-015",
@@ -389,7 +389,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-015 claymation (stop motion) 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-015 claymation (stop motion) 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-021",
@@ -401,7 +401,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-021 low poly 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-021 low poly 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-022",
@@ -413,7 +413,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-022 voxel art 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-022 voxel art 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-023",
@@ -425,7 +425,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-023 isometric 3d 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-023 isometric 3d 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-024",
@@ -437,7 +437,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-024 wireframe render 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-024 wireframe render 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-026",
@@ -449,7 +449,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-026 knolling (flat lay) 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-026 knolling (flat lay) 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-027",
@@ -461,7 +461,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-027 metaballs 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-027 metaballs 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-028",
@@ -473,7 +473,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-028 nurbs surface 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-028 nurbs surface 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-029",
@@ -485,7 +485,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-029 fractal 3d 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-029 fractal 3d 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-030",
@@ -497,7 +497,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-030 glitch 3d 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-030 glitch 3d 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-040",
@@ -509,7 +509,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-040 toon shader (cel shaded) 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-040 toon shader (cel shaded) 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-045",
@@ -521,7 +521,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-045 wireframe on shaded 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-045 wireframe on shaded 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-050",
@@ -533,7 +533,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-050 motion graphics 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-050 motion graphics 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-058",
@@ -545,7 +545,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-058 3d typography 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-058 3d typography 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-065",
@@ -557,7 +557,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-065 3d icon 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-065 3d icon 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-070",
@@ -569,7 +569,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-070 retro cgi (90s) 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-070 retro cgi (90s) 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-072",
@@ -581,7 +581,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-072 clay ui 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-072 clay ui 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-073",
@@ -593,7 +593,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-073 papercraft 3d 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-073 papercraft 3d 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-077",
@@ -605,7 +605,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-077 lego brick-built 3d 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-077 lego brick-built 3d 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-078",
@@ -617,7 +617,7 @@
       "categoryName": "4. 3D Styles",
       "tags": ["3d-and-cgi-rendering", "3d-styles"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-078 origami 3d 4. 3d styles pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
+      "searchableText": "sp03-078 origami 3d 4. 3d styles stylized 3d pack_03 3d & cgi rendering 3d-styles 3d-and-cgi-rendering 3d-styles"
     },
     {
       "id": "SP03-025",
@@ -629,7 +629,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-025 kitbash 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-025 kitbash 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-046",
@@ -641,7 +641,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-046 game asset (pbr) 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-046 game asset (pbr) 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-047",
@@ -653,7 +653,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-047 architectural visualization 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-047 architectural visualization 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-048",
@@ -665,7 +665,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-048 product render 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-048 product render 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-052",
@@ -677,7 +677,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-052 automotive render 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-052 automotive render 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-053",
@@ -689,7 +689,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-053 jewelry render 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-053 jewelry render 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-061",
@@ -701,7 +701,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-061 hard surface modeling 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-061 hard surface modeling 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-064",
@@ -713,7 +713,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-064 exploded view 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-064 exploded view 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-067",
@@ -725,7 +725,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-067 cybernetic implant 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-067 cybernetic implant 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-071",
@@ -737,7 +737,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-071 glassmorphism ui 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-071 glassmorphism ui 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-074",
@@ -749,7 +749,7 @@
       "categoryName": "5. Hard Surface And Product CGI",
       "tags": ["3d-and-cgi-rendering", "hard-surface-and-product-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-074 neon sign 3d 5. hard surface and product cgi pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
+      "searchableText": "sp03-074 neon sign 3d 5. hard surface and product cgi hard-surface production pack_03 3d & cgi rendering hard-surface-and-product-cgi 3d-and-cgi-rendering hard-surface-and-product-cgi"
     },
     {
       "id": "SP03-049",
@@ -761,7 +761,7 @@
       "categoryName": "6. Organic Character And Bio CGI",
       "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-049 character design (t-pose) 6. organic character and bio cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+      "searchableText": "sp03-049 character design (t-pose) 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
     },
     {
       "id": "SP03-051",
@@ -773,7 +773,7 @@
       "categoryName": "6. Organic Character And Bio CGI",
       "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-051 medical illustration 3d 6. organic character and bio cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+      "searchableText": "sp03-051 medical illustration 3d 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
     },
     {
       "id": "SP03-054",
@@ -785,7 +785,7 @@
       "categoryName": "6. Organic Character And Bio CGI",
       "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-054 food cgi 6. organic character and bio cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+      "searchableText": "sp03-054 food cgi 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
     },
     {
       "id": "SP03-057",
@@ -797,7 +797,7 @@
       "categoryName": "6. Organic Character And Bio CGI",
       "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-057 nft collectible avatar render 6. organic character and bio cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+      "searchableText": "sp03-057 nft collectible avatar render 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
     },
     {
       "id": "SP03-059",
@@ -809,7 +809,7 @@
       "categoryName": "6. Organic Character And Bio CGI",
       "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-059 digital fashion 6. organic character and bio cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+      "searchableText": "sp03-059 digital fashion 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
     },
     {
       "id": "SP03-062",
@@ -821,7 +821,7 @@
       "categoryName": "6. Organic Character And Bio CGI",
       "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-062 organic modeling 6. organic character and bio cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+      "searchableText": "sp03-062 organic modeling 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
     },
     {
       "id": "SP03-076",
@@ -833,7 +833,7 @@
       "categoryName": "6. Organic Character And Bio CGI",
       "tags": ["3d-and-cgi-rendering", "organic-character-and-bio-cgi"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-076 balloon art (inflatable) 6. organic character and bio cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
+      "searchableText": "sp03-076 balloon art (inflatable) 6. organic character and bio cgi organic cgi pack_03 3d & cgi rendering organic-character-and-bio-cgi 3d-and-cgi-rendering organic-character-and-bio-cgi"
     },
     {
       "id": "SP03-033",
@@ -845,7 +845,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-033 neon city (cyberpunk) 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-033 neon city (cyberpunk) 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-039",
@@ -857,7 +857,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-039 bioluminescent forest 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-039 bioluminescent forest 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-055",
@@ -869,7 +869,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-055 virtual reality environment 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-055 virtual reality environment 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-056",
@@ -881,7 +881,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-056 scientific visualization 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-056 scientific visualization 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-060",
@@ -893,7 +893,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-060 environment design 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-060 environment design 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-063",
@@ -905,7 +905,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-063 3d map 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-063 3d map 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-066",
@@ -917,7 +917,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-066 abstract background 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-066 abstract background 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-068",
@@ -929,7 +929,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-068 3d scan (photogrammetry) 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-068 3d scan (photogrammetry) 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-069",
@@ -941,7 +941,7 @@
       "categoryName": "7. Environment And Worldbuilding",
       "tags": ["3d-and-cgi-rendering", "environment-and-worldbuilding"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-069 vfx simulation (fire/smoke) 7. environment and worldbuilding pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
+      "searchableText": "sp03-069 vfx simulation (fire/smoke) 7. environment and worldbuilding environment directions pack_03 3d & cgi rendering environment-and-worldbuilding 3d-and-cgi-rendering environment-and-worldbuilding"
     },
     {
       "id": "SP03-043",
@@ -953,7 +953,7 @@
       "categoryName": "8. Sensor And Technical Shaders",
       "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-043 x-ray shader 8. sensor and technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
+      "searchableText": "sp03-043 x-ray shader 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
     },
     {
       "id": "SP03-044",
@@ -965,7 +965,7 @@
       "categoryName": "8. Sensor And Technical Shaders",
       "tags": ["3d-and-cgi-rendering", "sensor-and-technical-shaders"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
+      "searchableText": "sp03-044 thermal vision 8. sensor and technical shaders technical shaders pack_03 3d & cgi rendering sensor-and-technical-shaders 3d-and-cgi-rendering sensor-and-technical-shaders"
     }
   ],
   "totalPresetCount": 80

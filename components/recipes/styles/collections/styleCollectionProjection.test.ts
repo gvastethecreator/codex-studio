@@ -48,12 +48,12 @@ describe('style collection projection', () => {
   it('keeps user-facing families in the planned order', () => {
     expect(STYLE_COLLECTION_FAMILIES.map((family) => family.title)).toEqual([
       'Personal',
-      'Capture & Reality',
-      'Screen & Motion',
-      'Illustration & Art Media',
-      'Design, Assets & Materials',
-      'Worlds & Genres',
-      'Experimental & Play',
+      'Photography',
+      'Screen & Animation',
+      'Illustration & Print',
+      '3D, Materials & Design',
+      'World Directions',
+      'Experimental',
     ]);
   });
 

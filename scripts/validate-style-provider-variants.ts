@@ -48,16 +48,30 @@ const packs = await loadPacks();
 const expectedByPreset = new Map(
   packs.flatMap((pack) => pack.presets.map((preset) => [preset.id, { pack, preset }] as const)),
 );
-const expectedFileNames = new Set(
-  [...expectedByPreset.keys()].map((presetId) => `${presetId}.webp`),
+// Pending studies are explicitly authored without preview claims. Existing
+// presets still require their provider variants; this is not --allow-incomplete.
+const pendingPreviewIds = new Set(
+  [...expectedByPreset.entries()]
+    .filter(([, { preset }]) => {
+      const ui = preset.ui;
+      return Boolean(
+        ui && typeof ui === 'object' && 'previewStatus' in ui && ui.previewStatus === 'pending',
+      );
+    })
+    .map(([id]) => id),
 );
+const knownFileNames = new Set([...expectedByPreset.keys()].map((id) => `${id}.webp`));
+const expectedFileNames = new Set(
+  [...expectedByPreset.keys()].filter((id) => !pendingPreviewIds.has(id)).map((id) => `${id}.webp`),
+);
+console.log(`[styles:provider-variants] explicitly pending previews=${pendingPreviewIds.size}`);
 const actualFileNames = (await readdir(providerDir, { withFileTypes: true }).catch(() => []))
   .filter((entry) => entry.isFile() && entry.name.toLowerCase().endsWith('.webp'))
   .map((entry) => entry.name)
   .sort((left, right) => left.localeCompare(right));
 const actualFileNameSet = new Set(actualFileNames);
 const missing = [...expectedFileNames].filter((fileName) => !actualFileNameSet.has(fileName));
-const unexpected = actualFileNames.filter((fileName) => !expectedFileNames.has(fileName));
+const unexpected = actualFileNames.filter((fileName) => !knownFileNames.has(fileName));
 const issues: string[] = [];
 
 if (!allowIncomplete && missing.length > 0) {
