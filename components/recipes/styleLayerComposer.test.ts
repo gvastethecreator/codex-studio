@@ -55,11 +55,11 @@ describe('styleLayerComposer', () => {
       textureMaterial: 'polished glass caustics',
     });
     expect(joinSelectedStyleLayerValue([createSlot()], 'colorTone')).toBe(
-      'Polished Glass (0.75): cool mineral blues',
+      'Style layer 1 (0.75): cool mineral blues',
     );
   });
 
-  it('uses display names in UI layers while keeping source anchors in prompts', () => {
+  it('keeps display names and search anchors in metadata, not prompts', () => {
     const slot = createSlot({
       preset: {
         ...PRESET,
@@ -77,10 +77,10 @@ describe('styleLayerComposer', () => {
       'commercial glass render',
     ]);
     expect(createSelectedStylesPrompt([slot])).toBe(
-      'Apply selected style layers: Clean Glass Material [style anchors: Polished Glass, commercial glass render]',
+      'Apply 1 selected visual style layer to the requested subject.',
     );
     expect(joinSelectedStyleLayerValue([slot], 'colorTone')).toBe(
-      'Clean Glass Material [style anchors: Polished Glass, commercial glass render] (0.75): cool mineral blues',
+      'Style layer 1 (0.75): cool mineral blues',
     );
   });
 
@@ -143,22 +143,22 @@ describe('styleLayerComposer', () => {
       negativePrompt: 'watermark, muddy reflections, text',
     });
     expect(plan?.recipeParams.selectedStyles).toHaveLength(1);
-    expect(plan?.recipeParams.styleEmphasis).toContain('Slot 1: Polished Glass');
+    expect(plan?.recipeParams.styleEmphasis).toContain('Slot 1: influence 0.75');
   });
 
-  it('switches to creative reimagining when reference images are present', () => {
+  it('preserves reference layout instead of silently restaging', () => {
     const plan = createSelectedStylesGenerationPlan({
       slots: [createSlot()],
       hasReferenceImages: true,
     });
 
     expect(plan?.recipeParams).toMatchObject({
-      mode: 'CREATIVE_REIMAGINING',
+      mode: 'PRESERVE_REFERENCE',
       compositionRule:
-        'Preserve only subject intent from the uploaded references; force substantial variation in pose, camera, composition, lighting, and scene staging.',
+        'Preserve the reference layout, pose and camera. The camera/composition style field is suppressed; use reinterpretation for structural changes.',
     });
     expect(plan?.recipeParams.roleInstruction).toContain(
-      'Do not preserve pose, framing, camera angle, or original composition',
+      'Preserve subject identity, pose, framing, camera and composition',
     );
   });
 });

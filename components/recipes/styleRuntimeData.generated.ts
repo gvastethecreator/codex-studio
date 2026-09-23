@@ -127,6 +127,27 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, and isometric game aesthetics.',
     presetCount: 72,
   },
+  {
+    id: 'pack_19',
+    name: 'Ink Structures',
+    description:
+      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; live visual evaluation and preview images are pending.',
+    presetCount: 4,
+  },
+  {
+    id: 'pack_20',
+    name: 'Print Registers',
+    description:
+      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; live visual evaluation and preview images are pending.',
+    presetCount: 4,
+  },
+  {
+    id: 'pack_21',
+    name: 'Paper & Pigment',
+    description:
+      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; live visual evaluation and preview images are pending.',
+    presetCount: 4,
+  },
 ] as GeneratedStyleRuntimePackSummary[];
 
 const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {
@@ -196,6 +217,18 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_17: () =>
     import('./styleRuntimePacks.generated/pack_17').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_19: () =>
+    import('./styleRuntimePacks.generated/pack_19').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_20: () =>
+    import('./styleRuntimePacks.generated/pack_20').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_21: () =>
+    import('./styleRuntimePacks.generated/pack_21').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };

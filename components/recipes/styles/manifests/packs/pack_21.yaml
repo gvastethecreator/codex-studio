@@ -1,0 +1,19 @@
+schemaVersion: 1
+id: pack_21
+name: Paper & Pigment
+description:
+  Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals;
+  live visual evaluation and preview images are pending.
+categories:
+  - id: paper-and-pigment
+    name: 1. Paper & Pigment
+    presetRefs:
+      - pack_21/SP21-001.yaml
+      - pack_21/SP21-002.yaml
+      - pack_21/SP21-003.yaml
+      - pack_21/SP21-004.yaml
+presetRefs:
+  - pack_21/SP21-001.yaml
+  - pack_21/SP21-002.yaml
+  - pack_21/SP21-003.yaml
+  - pack_21/SP21-004.yaml

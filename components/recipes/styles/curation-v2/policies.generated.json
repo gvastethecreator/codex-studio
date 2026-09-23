@@ -1,0 +1,470 @@
+{
+  "SP19-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "linocut",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "linocut"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform scratch overlay",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "accidental closed negative spaces",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "photographic gradient fills",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Dry Cut"
+  },
+  "SP19-002": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "ink",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "ink"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform-width outlines",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "redundant tracing contours",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested facial exaggeration",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Elastic Contour"
+  },
+  "SP19-003": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "ink",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "ink"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform grunge overlay",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "random directional scratches",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "muddy disconnected shadow noise",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Bristle Rhythm"
+  },
+  "SP19-004": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "ink",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "ink"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform stain overlay",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unmotivated ink splatters",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "lost focal contours",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Pooled Ink"
+  },
+  "SP20-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "large ghost duplicates",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "uncontrolled color fringing",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "invented poster typography",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Offset Drift"
+  },
+  "SP20-002": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "airbrushed gradients",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested page borders",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "indiscriminate halftone overlay",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Stencil Duotone"
+  },
+  "SP20-003": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "full-frame dirt overlay",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested torn page edges",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "indiscriminate crushed detail",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Toner Blocks"
+  },
+  "SP20-004": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "print"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform crosshatch grid",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested specimen labels",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "random scratch noise",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Engraved Tone"
+  },
+  "SP21-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "paper",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "paper"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested toy proportions",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "inconsistent layer shadows",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "excessive edge fibers",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Stacked Paper"
+  },
+  "SP21-002": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform resist scribble",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "opaque muddy washes",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unmotivated decorative symbols",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Resist Wash"
+  },
+  "SP21-003": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "blanket canvas texture",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "indiscriminate soft blending",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested photographic gloss",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Opaque Planes"
+  },
+  "SP21-004": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "paper",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "paper"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "deep extrusions",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested typography",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "conflicting relief shadows",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Pressed Relief"
+  }
+}

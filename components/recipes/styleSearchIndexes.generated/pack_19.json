@@ -1,0 +1,60 @@
+{
+  "packs": [
+    {
+      "id": "pack_19",
+      "name": "Ink Structures",
+      "presetCount": 4
+    }
+  ],
+  "presets": [
+    {
+      "id": "SP19-001",
+      "name": "Dry Cut",
+      "ref": "pack_19/SP19-001.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-001 dry cut 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-002",
+      "name": "Elastic Contour",
+      "ref": "pack_19/SP19-002.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-002 elastic contour 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-003",
+      "name": "Bristle Rhythm",
+      "ref": "pack_19/SP19-003.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-003 bristle rhythm 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-004",
+      "name": "Pooled Ink",
+      "ref": "pack_19/SP19-004.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-004 pooled ink 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    }
+  ],
+  "totalPresetCount": 4
+}

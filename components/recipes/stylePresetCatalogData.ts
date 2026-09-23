@@ -27,6 +27,9 @@ export const STYLE_PRESET_CATALOG_PACK_IDS = [
   'pack_14',
   'pack_15',
   'pack_17',
+  'pack_19',
+  'pack_20',
+  'pack_21',
 ] as const;
 
 export type StylePresetCatalogPackId = (typeof STYLE_PRESET_CATALOG_PACK_IDS)[number];
@@ -101,6 +104,18 @@ const catalogPackDataLoaders: Record<
     ),
   pack_17: () =>
     import('./stylePresetCatalogData.pack_17').then((module) =>
+      module.loadStylePresetCatalogPackData(),
+    ),
+  pack_19: () =>
+    import('./stylePresetCatalogData.pack_19').then((module) =>
+      module.loadStylePresetCatalogPackData(),
+    ),
+  pack_20: () =>
+    import('./stylePresetCatalogData.pack_20').then((module) =>
+      module.loadStylePresetCatalogPackData(),
+    ),
+  pack_21: () =>
+    import('./stylePresetCatalogData.pack_21').then((module) =>
       module.loadStylePresetCatalogPackData(),
     ),
 };

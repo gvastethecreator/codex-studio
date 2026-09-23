@@ -44,7 +44,10 @@ export function useStyleComposition({
   intentionalStylesV1 = false,
 }: StyleCompositionInput) {
   const [selectedStyles, setSelectedStyles] = useState<SelectedStyleSlot[]>([]);
-  const [intentionalMode, setIntentionalMode] = useState<Intentional.Mode>('generate');
+  const [intentionalMode, setIntentionalMode] = useState<Intentional.Mode>(() => {
+    const savedMode = config.recipeParams?.styleReferenceMode;
+    return savedMode === 'reinterpret' ? 'reinterpret' : 'generate';
+  });
   const [compileIssues, setCompileIssues] = useState<Intentional.Issue[]>([]);
   const didRestoreSelection = useRef(false);
   useEffect(() => {
@@ -128,16 +131,23 @@ export function useStyleComposition({
     () => selectedStyles.map(createSelectedStyleLayer),
     [selectedStyles],
   );
-  const activeSelectedStyleCount = selectedStyleLayers.filter((layer) => layer.enabled).length;
   const registeredStyleGenerationPlan = useMemo(
     () =>
       createSelectedStylesGenerationPlan({
         slots: selectedStyles,
         hasReferenceImages: referenceImages.length > 0,
+        referenceMode: intentionalMode === 'reinterpret' ? 'reinterpret' : 'preserve',
         baseNegativePrompt: config.negativePrompt,
       }),
-    [config.negativePrompt, referenceImages.length, selectedStyles],
+    [config.negativePrompt, intentionalMode, referenceImages.length, selectedStyles],
   );
+  const activeSelectedStyleCount = intentionalStylesV1
+    ? selectedStyleLayers.filter((layer) => layer.enabled).length
+    : ((
+        registeredStyleGenerationPlan?.recipeParams.selectedStyles as
+          | SelectedStyleLayer[]
+          | undefined
+      )?.length ?? 0);
   useEffect(() => {
     if (!didRestoreSelection.current && selectedStyles.length === 0) return;
     if (intentionalStylesV1) return;
@@ -323,26 +333,15 @@ export function useStyleComposition({
       onGenerate(config.prompt?.trim() || undefined, undefined, { preventModal: true });
       return;
     }
-    const diversityPrompts = [
-      'Introduce a noticeably different camera distance and framing from previous renders.',
-      'Shift scene energy with a different gesture or action beat while preserving the subject intent.',
-      'Use a clearly distinct lighting setup and color balance versus prior attempts.',
-      'Vary background staging and spatial depth so this render is visibly unique.',
-    ] as const;
-    const diversityHint = diversityPrompts[Math.floor(Math.random() * diversityPrompts.length)];
-    const generationPlan = createSelectedStylesGenerationPlan({
-      slots: selectedStyles,
-      hasReferenceImages: referenceImages.length > 0,
-      baseNegativePrompt: config.negativePrompt,
-      diversityHint,
-    });
+    // Generate exactly the plan already shown/registered, not a random rewrite.
+    const generationPlan = registeredStyleGenerationPlan;
     if (!generationPlan || generationBlocked) return;
 
     onGenerate(
       config.prompt?.trim() || generationPlan.fallbackPrompt,
       {
         recipeId: 'styles',
-        recipeParams: generationPlan.recipeParams,
+        recipeParams: { ...generationPlan.recipeParams, selectedStyleDraft: selectedStyles },
         recipeContext: '',
         attachments: referenceImages,
         model: config.model,
@@ -357,6 +356,7 @@ export function useStyleComposition({
       { preventModal: true },
     );
   }, [
+    registeredStyleGenerationPlan,
     generationBlocked,
     config.aspectRatio,
     config.batchCount,

@@ -30,8 +30,8 @@
     "styles:validate": "bun run scripts/validate-style-preset-manifests.ts",
     "styles:taxonomy": "bun run scripts/backfill-style-preset-taxonomy.ts",
     "styles:catalog": "bun run scripts/query-style-preset-catalog.ts",
-    "styles:runtime": "bun run scripts/generate-style-runtime-data.ts",
-    "styles:runtime:check": "bun run scripts/generate-style-runtime-data.ts --check",
+    "styles:runtime": "bun run styles:curation:policies && bun run scripts/generate-style-runtime-data.ts",
+    "styles:runtime:check": "bun run scripts/generate-style-curation-policies.ts --check && bun run scripts/generate-style-runtime-data.ts --check",
     "styles:thumbnails": "bun run scripts/generate-style-thumbnail-projections.ts",
     "styles:thumbnails:check": "bun run scripts/generate-style-thumbnail-projections.ts --check",
     "styles:templates:verify": "bun run scripts/validate-style-preset-templates.ts",
@@ -44,7 +44,7 @@
     "styles:provider-variants:verify": "bun run scripts/validate-style-provider-variants.ts",
     "styles:thumbs": "bun run scripts/build-style-pack-card-thumbnails.ts",
     "styles:pack-thumbs": "bun run scripts/build-style-pack-card-thumbnails.ts",
-    "styles:verify": "bun run styles:validate -- --coverage --strict-taxonomy && bun run styles:provider-variants:verify -- --provider=grok && bun run styles:runtime:check && bun run styles:thumbnails:check && bun run styles:templates:verify && bun run styles:source:verify && bun run styles:render:verify",
+    "styles:verify": "bun run styles:validate -- --coverage --strict-taxonomy && bun run styles:provider-variants:verify -- --provider=grok && bun run styles:runtime:check && bun run styles:thumbnails:check && bun run styles:templates:verify && bun run styles:source:verify && bun run styles:render:verify && bun run styles:curation:verify",
     "styles:browser": "tsx ./scripts/verify-styles-browser-gate.ts",
     "styles:browser:verify": "tsx ./scripts/verify-styles-browser-gate.ts --verify",
     "recipes:catalog": "bun run scripts/query-recipe-modules.ts",
@@ -104,7 +104,10 @@
     "preview:electron": "bun run scripts/preview-electron.ts",
     "tooling:logs": "bun run scripts/open-tooling-logs.ts",
     "tooling:logs:prune": "bun run scripts/tooling-task.ts tooling:logs:prune",
-    "doctor": "bunx react-doctor@0.9.7"
+    "doctor": "bunx react-doctor@0.9.7",
+    "styles:curation:audit": "bun run scripts/audit-style-curation.ts",
+    "styles:curation:verify": "bun run scripts/audit-style-curation.ts --verify",
+    "styles:curation:policies": "bun run scripts/generate-style-curation-policies.ts"
   },
   "dependencies": {
     "@chenglou/pretext": "^0.0.8",

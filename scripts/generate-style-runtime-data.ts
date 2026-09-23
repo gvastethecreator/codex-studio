@@ -286,6 +286,11 @@ for (const pack of searchIndex.packs) {
       );
   } else await writeFile(indexPath, `${JSON.stringify(packIndex, null, 2)}\n`, 'utf8');
 }
+if (!checkMode && !skipFormat) {
+  await formatGeneratedFiles(
+    searchIndex.packs.map((pack) => path.join(searchIndexDir, `${pack.id}.json`)),
+  );
+}
 if (process.argv.includes('--search-index-only')) {
   console.log(`[styles:runtime] search index: ${searchIndex.totalPresetCount} presets`);
   process.exit(0);

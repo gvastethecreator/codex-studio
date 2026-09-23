@@ -320,7 +320,7 @@ export function createUserStyleDraftFromBlend(
         if (!layerField.enabled) return [];
         const value = cleanText(layerField.value);
         if (!value) return [];
-        return [`${layer.presetName} ${formatStyleStrength(layer.strength)}: ${value}`];
+        return [`Style layer ${layer.slot} ${formatStyleStrength(layer.strength)}: ${value}`];
       })
       .join(' | ');
     acc[field.key] = limitText(fieldValue || DEFAULT_VISUAL_DNA[field.key]);

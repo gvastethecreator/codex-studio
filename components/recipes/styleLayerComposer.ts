@@ -6,7 +6,7 @@ import {
 
 export const DEFAULT_SELECTED_STYLE_STRENGTH = 0.75;
 export const DEFAULT_STYLE_DIVERSITY_HINT =
-  'Vary camera framing, composition, lighting, palette, or staging enough to avoid near-duplicate renders.';
+  'Respect the requested content, palette, lighting and framing. Do not introduce unrequested variation.';
 
 export const STYLE_LAYER_FIELD_DEFINITIONS = [
   {
@@ -62,6 +62,7 @@ export const STYLE_LAYER_FIELD_DEFINITIONS = [
 export type StyleLayerFieldId = (typeof STYLE_LAYER_FIELD_DEFINITIONS)[number]['id'];
 export type StyleLayerFieldParamKey = (typeof STYLE_LAYER_FIELD_DEFINITIONS)[number]['paramKey'];
 export type StyleLayerAvoidRulesMode = 'merge' | 'ignore' | 'strict';
+export type StyleReferenceMode = 'preserve' | 'reinterpret';
 
 export interface StyleLayerFieldControl {
   enabled: boolean;
@@ -195,23 +196,17 @@ export function normalizeStyleLayerFieldControls(
   return defaults;
 }
 
-export function getStyleNegativePrompt(preset: StyleRuntimePreset, packId: string) {
-  const isPhotoPackFallback = ['pack_09', 'pack_10', 'pack_11'].includes(packId);
-  return (
-    preset.negativePrompt ||
-    (isPhotoPackFallback
-      ? 'illustration, drawing, painting, sketch, cartoon, anime, 2d, graphic, flat, vector, ink'
-      : '')
-  );
+export function getStyleNegativePrompt(preset: StyleRuntimePreset, _packId: string) {
+  // Pack membership is navigation metadata, not permission to ban other media.
+  return preset.negativePrompt || '';
 }
 
 function readPresetStyleValue(preset: StyleRuntimePreset, sourceKeys: readonly string[]) {
   for (const key of sourceKeys) {
-    const value = preset.style[key];
-    const described = describeStyleValue(value, '');
+    const described = describeStyleValue(preset.style[key], '');
     if (described) return described;
   }
-  return 'Standard';
+  return '';
 }
 
 function applyFieldWeightToValue(value: string, weight: number) {
@@ -221,13 +216,8 @@ function applyFieldWeightToValue(value: string, weight: number) {
   return `${cleanValue} (field weight ${formatStyleLayerFieldWeight(weight)})`;
 }
 
-function formatStyleLayerPromptName(
-  layer: Pick<SelectedStyleLayer, 'presetName' | 'styleAnchors'>,
-) {
-  const anchors = layer.styleAnchors.filter((anchor) => anchor !== layer.presetName);
-  return anchors.length
-    ? `${layer.presetName} [style anchors: ${anchors.join(', ')}]`
-    : layer.presetName;
+function formatStyleLayerPromptName(layer: Pick<SelectedStyleLayer, 'slot'>) {
+  return `Style layer ${layer.slot}`;
 }
 
 export function createSelectedStyleLayer(
@@ -306,48 +296,37 @@ export function joinSelectedStyleLayerValue(
     .join(' | ');
 }
 
-export function joinSelectedStyleCreativeBrief(slots: SelectedStyleSlot[]) {
-  return slots
-    .flatMap((slot, index) => {
-      const layer = createSelectedStyleLayer(slot, index);
-      if (!layer.enabled) return [];
-      const value = layer.creativeBrief.trim();
-      return value
-        ? [
-            `${formatStyleLayerPromptName(layer)} (${formatStyleStrength(layer.strength)}): ${value}`,
-          ]
-        : [];
-    })
-    .join(' | ');
+/** Legacy API retained, but briefs cannot override field masks or reintroduce sample scenes. */
+export function joinSelectedStyleCreativeBrief(_slots: SelectedStyleSlot[]): string {
+  return '';
 }
 
 export function createSelectedStylesPrompt(slots: SelectedStyleSlot[]) {
-  const names = slots
-    .filter((slot) => slot.enabled ?? true)
-    .map((slot, index) => formatStyleLayerPromptName(createSelectedStyleLayer(slot, index)))
-    .join(' + ');
-  return `Apply selected style layers: ${names}`;
+  const count = slots.map(createSelectedStyleLayer).filter(hasEffectiveFields).length;
+  return `Apply ${count} selected visual style layer${count === 1 ? '' : 's'} to the requested subject.`;
 }
 
 export function createSelectedStyleEmphasis(slots: SelectedStyleSlot[], diversityHint: string) {
-  const layers = slots.map(createSelectedStyleLayer).filter((layer) => layer.enabled);
+  const layers = slots.map(createSelectedStyleLayer).filter(hasEffectiveFields);
   return [
-    `Blend ${layers.length} selected style layer${layers.length === 1 ? '' : 's'}; respect each layer strength as its visual influence.`,
+    `Blend ${layers.length} selected style layer${layers.length === 1 ? '' : 's'} using the active visual fields.`,
+    'Influence and field weights are language-level priorities, not calibrated pixel percentages.',
     ...layers.map((layer) => {
       const activeFields = STYLE_LAYER_FIELD_DEFINITIONS.flatMap((field) => {
-        const fieldState = layer.fields[field.id];
-        if (!fieldState.enabled) return [];
-        return fieldState.weight >= 0.995
-          ? [field.label]
-          : [`${field.label} ${formatStyleLayerFieldWeight(fieldState.weight)}`];
+        const state = layer.fields[field.id];
+        if (!state.enabled) return [];
+        return [
+          state.weight >= 0.995
+            ? field.label
+            : `${field.label} ${formatStyleLayerFieldWeight(state.weight)}`,
+        ];
       });
-      const fieldSummary = activeFields.length ? ` Active fields: ${activeFields.join(', ')}.` : '';
-      const anchorSummary =
-        layer.styleAnchors.length > 1 ? ` Style anchors: ${layer.styleAnchors.join(', ')}.` : '';
-      return `Slot ${layer.slot}: ${layer.presetName} at ${formatStyleStrength(layer.strength)} strength.${anchorSummary}${fieldSummary}`;
+      return `Slot ${layer.slot}: influence ${formatStyleStrength(layer.strength)}. Active fields: ${activeFields.join(', ')}.`;
     }),
     diversityHint,
-  ].join('\n');
+  ]
+    .filter(Boolean)
+    .join('\n');
 }
 
 export function mergeSelectedStyleNegativePrompts({
@@ -357,9 +336,15 @@ export function mergeSelectedStyleNegativePrompts({
   baseNegativePrompt?: string | null;
   slots: SelectedStyleSlot[];
 }) {
-  const rules = new Map<string, { text: string; strict: boolean; order: number }>();
+  const rules = new Map<
+    string,
+    {
+      text: string;
+      strict: boolean;
+      order: number;
+    }
+  >();
   let nextOrder = 0;
-
   const addRules = (value: string | null | undefined, strict: boolean) => {
     value
       ?.split(',')
@@ -369,33 +354,31 @@ export function mergeSelectedStyleNegativePrompts({
         const key = rule.toLocaleLowerCase();
         const existing = rules.get(key);
         if (existing) {
-          if (strict && !existing.strict) existing.strict = true;
+          if (strict) existing.strict = true;
           return;
         }
-        rules.set(key, { text: rule, strict, order: nextOrder });
-        nextOrder += 1;
+        rules.set(key, { text: rule, strict, order: nextOrder++ });
       });
   };
-
   addRules(baseNegativePrompt, false);
-  slots.forEach((slot) => {
-    if (!(slot.enabled ?? true)) return;
-    const avoidRulesMode = slot.avoidRulesMode ?? 'merge';
-    if (avoidRulesMode === 'ignore') return;
-    addRules(getStyleNegativePrompt(slot.preset, slot.packId), avoidRulesMode === 'strict');
+  slots.forEach((slot, index) => {
+    if (!hasEffectiveFields(createSelectedStyleLayer(slot, index))) return;
+    const mode = slot.avoidRulesMode ?? 'merge';
+    if (mode !== 'ignore')
+      addRules(getStyleNegativePrompt(slot.preset, slot.packId), mode === 'strict');
   });
-
-  const orderedRules = [...rules.values()].sort((left, right) => left.order - right.order);
-  const groups: Array<{ strict: boolean; rules: string[] }> = [];
-  orderedRules.forEach((rule) => {
-    const currentGroup = groups.at(-1);
-    if (!currentGroup || currentGroup.strict !== rule.strict) {
-      groups.push({ strict: rule.strict, rules: [rule.text] });
-      return;
-    }
-    currentGroup.rules.push(rule.text);
-  });
-
+  const groups: Array<{
+    strict: boolean;
+    rules: string[];
+  }> = [];
+  [...rules.values()]
+    .sort((a, b) => a.order - b.order)
+    .forEach((rule) => {
+      const group = groups.at(-1);
+      if (!group || group.strict !== rule.strict)
+        groups.push({ strict: rule.strict, rules: [rule.text] });
+      else group.rules.push(rule.text);
+    });
   return groups
     .map((group) => `${group.strict ? 'strictly avoid: ' : ''}${group.rules.join(', ')}`)
     .join(', ');
@@ -406,57 +389,77 @@ export function createSelectedStylesGenerationPlan({
   hasReferenceImages,
   baseNegativePrompt,
   diversityHint = DEFAULT_STYLE_DIVERSITY_HINT,
+  referenceMode = 'preserve',
 }: {
   slots: SelectedStyleSlot[];
   hasReferenceImages: boolean;
   baseNegativePrompt?: string | null;
   diversityHint?: string;
+  referenceMode?: StyleReferenceMode;
 }): SelectedStylesGenerationPlan | null {
-  const layers = slots.map(createSelectedStyleLayer).filter((layer) => layer.enabled);
-  if (layers.length === 0) return null;
-
-  const presetName = layers.map((layer) => layer.presetName).join(' + ');
-  const roleInstruction = hasReferenceImages
-    ? [
-        'Use the uploaded images as loose semantic references for subject intent.',
-        'Do not preserve pose, framing, camera angle, or original composition unless the prompt explicitly asks.',
-        'Re-stage the subject with clearly different gesture, perspective, and environment while applying the selected style layers.',
-        'Make the result feel freshly generated, not a repaint of the input.',
-      ].join(' ')
-    : [
-        'Synthesize the requested subject from the prompt and selected style layers.',
-        'Make the selected style DNA the primary driver of the visual output.',
-        'Focus on a coherent, high-quality image that exposes the combined aesthetic.',
-      ].join(' ');
-  const compositionRule = hasReferenceImages
-    ? 'Preserve only subject intent from the uploaded references; force substantial variation in pose, camera, composition, lighting, and scene staging.'
-    : 'Create a balanced composition from scratch using the selected style layers as the visual system.';
+  const preserveReference = hasReferenceImages && referenceMode === 'preserve';
+  // A projection, never a mutation of the saved preset, user mask or historical draft.
+  const effectiveSlots = preserveReference
+    ? slots.map((slot) => ({
+        ...slot,
+        fieldControls: {
+          ...slot.fieldControls,
+          cameraComposition: { ...slot.fieldControls?.cameraComposition, enabled: false },
+        },
+      }))
+    : slots;
+  const layers = effectiveSlots.map(createSelectedStyleLayer).filter(hasEffectiveFields);
+  if (!layers.length) return null;
+  const roleInstruction = preserveReference
+    ? 'Apply visual treatment to the supplied references. Preserve subject identity, pose, framing, camera and composition. The user prompt supplies requested changes; do not invent props, subjects or a setting.'
+    : hasReferenceImages
+      ? 'Reinterpret the supplied references only where the user requests changes. Retain subject identity and requested content. Do not introduce unrelated subjects, props or themes.'
+      : 'The user prompt supplies subject, action, setting and requested text. Apply the selected visual fields to that content without substituting a sample scene.';
+  const compositionRule = preserveReference
+    ? 'Preserve the reference layout, pose and camera. The camera/composition style field is suppressed; use reinterpretation for structural changes.'
+    : 'Respect explicit framing and composition in the user prompt. Otherwise compose the requested content using the enabled visual fields.';
   const negativePrompt = mergeSelectedStyleNegativePrompts({
     baseNegativePrompt,
-    slots,
+    slots: effectiveSlots,
   });
-
   return {
-    fallbackPrompt: createSelectedStylesPrompt(slots),
+    fallbackPrompt: createSelectedStylesPrompt(effectiveSlots),
     negativePrompt,
     recipeParams: {
       presetId: layers[0]?.presetId ?? '',
-      presetName,
+      presetName: layers.map((layer) => layer.presetName).join(' + '),
       selectedStyles: layers,
-      mode: hasReferenceImages ? 'CREATIVE_REIMAGINING' : 'DIRECT_STYLE_SYNTHESIS',
+      mode: preserveReference
+        ? 'PRESERVE_REFERENCE'
+        : hasReferenceImages
+          ? 'CREATIVE_REIMAGINING'
+          : 'DIRECT_STYLE_SYNTHESIS',
+      styleReferenceMode: referenceMode,
       roleInstruction,
       compositionRule,
-      styleEmphasis: createSelectedStyleEmphasis(slots, diversityHint),
-      aesthetic: joinSelectedStyleLayerValue(slots, 'aesthetic'),
-      subjectTreatment: joinSelectedStyleLayerValue(slots, 'subjectTreatment'),
-      colorTone: joinSelectedStyleLayerValue(slots, 'colorTone'),
-      lightingShadow: joinSelectedStyleLayerValue(slots, 'lightingShadow'),
-      textureMaterial: joinSelectedStyleLayerValue(slots, 'textureMaterial'),
-      cameraComposition: joinSelectedStyleLayerValue(slots, 'cameraComposition'),
-      atmosphereMood: joinSelectedStyleLayerValue(slots, 'atmosphereMood'),
-      renderingQuality: joinSelectedStyleLayerValue(slots, 'renderingQuality'),
-      creativeBrief: joinSelectedStyleCreativeBrief(slots),
+      styleEmphasis: createSelectedStyleEmphasis(
+        effectiveSlots,
+        preserveReference ? DEFAULT_STYLE_DIVERSITY_HINT : diversityHint,
+      ),
+      aesthetic: joinSelectedStyleLayerValue(effectiveSlots, 'aesthetic'),
+      subjectTreatment: joinSelectedStyleLayerValue(effectiveSlots, 'subjectTreatment'),
+      colorTone: joinSelectedStyleLayerValue(effectiveSlots, 'colorTone'),
+      lightingShadow: joinSelectedStyleLayerValue(effectiveSlots, 'lightingShadow'),
+      textureMaterial: joinSelectedStyleLayerValue(effectiveSlots, 'textureMaterial'),
+      cameraComposition: joinSelectedStyleLayerValue(effectiveSlots, 'cameraComposition'),
+      atmosphereMood: joinSelectedStyleLayerValue(effectiveSlots, 'atmosphereMood'),
+      renderingQuality: joinSelectedStyleLayerValue(effectiveSlots, 'renderingQuality'),
+      creativeBrief: '',
       negativePrompt,
     },
   };
+}
+
+function hasEffectiveFields(layer: SelectedStyleLayer) {
+  return (
+    layer.enabled &&
+    STYLE_LAYER_FIELD_DEFINITIONS.some((field) =>
+      Boolean(getSelectedStyleLayerFieldValue(layer, field.id).trim()),
+    )
+  );
 }

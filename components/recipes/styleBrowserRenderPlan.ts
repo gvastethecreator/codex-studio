@@ -33,6 +33,7 @@ export interface CreateStyleBrowserProcessedDataInput {
   searchPresets?: StyleRuntimePreset[];
   favoriteIds: string[];
   categoryKeyForPreset?: (preset: StyleRuntimePreset) => string;
+  categoryLabelForPreset?: (preset: StyleRuntimePreset) => string;
   pinFavorites?: boolean;
   searchQuery: string;
   sortOrder: StyleBrowserSortOrder;
@@ -262,6 +263,7 @@ export function createStyleBrowserProcessedData({
   searchPresets,
   favoriteIds,
   categoryKeyForPreset,
+  categoryLabelForPreset,
   pinFavorites = true,
   searchQuery,
   sortOrder,
@@ -278,7 +280,10 @@ export function createStyleBrowserProcessedData({
         : activePack.presets || [];
   let filtered = rawPresets.filter((preset) => {
     if (!normalizedSearch) return true;
-    return createStylePresetSearchText(preset).includes(normalizedSearch);
+    return [createStylePresetSearchText(preset), categoryLabelForPreset?.(preset) ?? '']
+      .join(' ')
+      .toLowerCase()
+      .includes(normalizedSearch);
   });
 
   if (showFavoritesOnly && currentPackId !== favoritesPackId) {
