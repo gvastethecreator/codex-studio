@@ -155,23 +155,6 @@ export function RecipeResultPreview({
       aria-label="Result preview"
       aria-busy={isGenerating}
     >
-      {history && (
-        <div className="carousel-history-status" role="status">
-          <span>{history.isLoading ? 'Loading images…' : `${history.total} images`}</span>
-          {history.error && (
-            <button
-              type="button"
-              onClick={() =>
-                void (history.hasMore ? history.loadMore() : history.refresh()).catch(
-                  () => undefined,
-                )
-              }
-            >
-              Could not load images · Retry
-            </button>
-          )}
-        </div>
-      )}
       {isGenerating && (
         <div className="recipe-result-progress" role="status">
           Generating… Your result will appear here.
@@ -203,80 +186,84 @@ export function RecipeResultPreview({
             role="toolbar"
             aria-label="Selected result actions"
           >
-            <span
-              className="result-context-label"
-              data-tooltip={
-                showReference || !selected
+            <div className="result-context-controls" role="group" aria-label="Result context">
+              <span
+                className="result-context-label"
+                data-tooltip={
+                  showReference || !selected
+                    ? 'Source image'
+                    : isGenerating
+                      ? 'Previous result'
+                      : reference?.dataUrl === selected.src
+                        ? 'Result · used as source'
+                        : 'Recent result · not attached as source'
+                }
+              >
+                {showReference || !selected
                   ? 'Source image'
                   : isGenerating
                     ? 'Previous result'
                     : reference?.dataUrl === selected.src
-                      ? 'Result · used as source'
-                      : 'Recent result · not attached as source'
-              }
-            >
-              {showReference || !selected
-                ? 'Source image'
-                : isGenerating
-                  ? 'Previous result'
-                  : reference?.dataUrl === selected.src
-                    ? 'Used as source'
-                    : 'Not a source'}
-            </span>
-            {canCompare ? (
-              <Tooltip content={showReference ? 'Show result' : 'Compare reference'}>
-                <button
-                  type="button"
-                  aria-pressed={showReference}
-                  aria-label={showReference ? 'Show result' : 'Compare reference'}
-                  onClick={() => setShowReference((current) => !current)}
+                      ? 'Used as source'
+                      : 'Not a source'}
+              </span>
+              {canCompare ? (
+                <Tooltip content={showReference ? 'Show result' : 'Compare reference'}>
+                  <button
+                    type="button"
+                    aria-pressed={showReference}
+                    aria-label={showReference ? 'Show result' : 'Compare reference'}
+                    onClick={() => setShowReference((current) => !current)}
+                  >
+                    {showReference ? 'Result' : 'Compare'}
+                  </button>
+                </Tooltip>
+              ) : null}
+            </div>
+            <div className="result-image-controls" role="group" aria-label="Image actions">
+              <Tooltip content="Copy image">
+                <button type="button" aria-label="Copy image" onClick={() => void handleCopy()}>
+                  <Copy size={14} />
+                </button>
+              </Tooltip>
+              <Tooltip content="Download image">
+                <button type="button" aria-label="Download image" onClick={handleDownload}>
+                  <Download size={14} />
+                </button>
+              </Tooltip>
+              {onToggleFavorite ? (
+                <Tooltip
+                  content={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
                 >
-                  {showReference ? 'Result' : 'Compare'}
-                </button>
-              </Tooltip>
-            ) : null}
-            <Tooltip content="Copy image">
-              <button type="button" aria-label="Copy image" onClick={() => void handleCopy()}>
-                <Copy size={14} />
-              </button>
-            </Tooltip>
-            <Tooltip content="Download image">
-              <button type="button" aria-label="Download image" onClick={handleDownload}>
-                <Download size={14} />
-              </button>
-            </Tooltip>
-            {onToggleFavorite ? (
-              <Tooltip
-                content={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
-              >
-                <button
-                  type="button"
-                  aria-label={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
-                  aria-pressed={Boolean(selected?.isFavorite)}
-                  onClick={() => selected && onToggleFavorite(selected.id)}
-                >
-                  <Heart size={14} />
-                </button>
-              </Tooltip>
-            ) : null}
-            {onUseAsReference && selected ? (
-              <Tooltip content="Use as source">
-                <button
-                  type="button"
-                  aria-label="Use as source"
-                  onClick={() => onUseAsReference(selected)}
-                >
-                  <Paperclip size={14} />
-                </button>
-              </Tooltip>
-            ) : null}
-            {onOpen && selected ? (
-              <Tooltip content="Open result">
-                <button type="button" aria-label="Open result" onClick={() => onOpen(selected)}>
-                  <OpenFull size={14} />
-                </button>
-              </Tooltip>
-            ) : null}
+                  <button
+                    type="button"
+                    aria-label={selected?.isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+                    aria-pressed={Boolean(selected?.isFavorite)}
+                    onClick={() => selected && onToggleFavorite(selected.id)}
+                  >
+                    <Heart size={14} />
+                  </button>
+                </Tooltip>
+              ) : null}
+              {onUseAsReference && selected ? (
+                <Tooltip content="Use as source">
+                  <button
+                    type="button"
+                    aria-label="Use as source"
+                    onClick={() => onUseAsReference(selected)}
+                  >
+                    <Paperclip size={14} />
+                  </button>
+                </Tooltip>
+              ) : null}
+              {onOpen && selected ? (
+                <Tooltip content="Open result">
+                  <button type="button" aria-label="Open result" onClick={() => onOpen(selected)}>
+                    <OpenFull size={14} />
+                  </button>
+                </Tooltip>
+              ) : null}
+            </div>
             <div className="result-view-controls">
               <div className="recipe-result-background" role="group" aria-label="Canvas background">
                 <Tooltip content="Dark background">

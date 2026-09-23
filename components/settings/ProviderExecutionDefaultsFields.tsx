@@ -3,7 +3,6 @@ import {
   CODEX_HTTP_CHAT_MODEL,
   CODEX_HTTP_IMAGE_DISPLAY_NAME,
   CODEX_HTTP_REASONING,
-  type CodexExecutionTransport,
 } from '../../packages/shared/src/codexExecutionContract';
 
 export function ProviderExecutionDefaultsFields({
@@ -11,15 +10,13 @@ export function ProviderExecutionDefaultsFields({
   onChange,
   availableModels,
   providerDefaultModel,
-  codexTransport,
 }: {
   value: ProviderDefaultSettings;
   onChange: (patch: Partial<ProviderDefaultSettings>) => void;
   availableModels?: string[];
   providerDefaultModel?: string | null;
-  codexTransport?: CodexExecutionTransport;
 }) {
-  if (value.providerId === 'codex' && codexTransport === 'subscription_http') {
+  if (value.providerId === 'chatgpt') {
     const incompatible =
       (value.model && value.model !== CODEX_HTTP_CHAT_MODEL) ||
       (value.reasoningEffort && value.reasoningEffort !== CODEX_HTTP_REASONING) ||

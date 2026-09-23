@@ -1,3 +1,4 @@
+import { CatalogCardBackdrop } from '../CatalogCardBackdrop';
 import {
   IconBolt as Bolt,
   IconBook as BookOpen,
@@ -350,7 +351,6 @@ function StyleFolderCard({
   }, [folderImages]);
   const { cover, files } = folderImages;
   const coverImage = cover.src;
-  const titleClassName = getStyleCollectionTitleClassName(title);
   const getFileNodes = useCallback(
     () => fileRefs.current.slice(0, files.length).filter((node): node is HTMLDivElement => !!node),
     [files.length],
@@ -482,7 +482,7 @@ function StyleFolderCard({
       onPointerLeave={() => void animateFolder(false)}
       onFocus={handleFolderEnter}
       onBlur={() => void animateFolder(false)}
-      className={`style-folder-enter group relative z-0 block aspect-[3/4] w-full cursor-pointer overflow-visible rounded-[var(--wb-radius)] text-left outline-none transition-[filter] duration-200 hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 ${
+      className={`catalog-art-card style-folder-enter group relative z-0 block aspect-[3/4] w-full cursor-pointer overflow-visible rounded-[var(--wb-radius)] text-left outline-none transition-[filter] duration-200 hover:z-20 focus-visible:z-20 focus-visible:ring-2 focus-visible:ring-white/35 ${
         isHighlighted ? 'z-30 brightness-[1.08]' : ''
       }`}
       style={
@@ -559,37 +559,29 @@ function StyleFolderCard({
                 {icon}
               </div>
             )}
-            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/15 to-transparent" />
             <div className={`absolute inset-x-0 top-0 h-1 ${theme.bg}`} />
           </div>
 
-          <div className="relative z-10 flex h-full flex-col justify-end p-3.5 sm:p-4">
-            <div className="absolute right-3 top-3 sm:right-4 sm:top-4">
-              <span
-                data-style-pack-count={id}
-                aria-label={countAriaLabel}
-                className="flex min-w-9 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-border)] bg-[color:var(--wb-panel)] px-2 py-1 text-[length:var(--wbp-label)] font-semibold tabular-nums text-[color:var(--wb-muted)]"
-              >
-                {countLabel}
+          <span
+            data-style-pack-count={id}
+            aria-label={countAriaLabel}
+            className="absolute right-2 top-2 rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] px-2 py-1 text-xs"
+          >
+            {countLabel}
+          </span>
+          <CatalogCardBackdrop
+            interactive={false}
+            label={title}
+            title={
+              <span data-style-pack-card-title={id} className="flex min-w-0 items-center gap-1.5">
+                <span className={theme.text}>{icon}</span>
+                <span className="truncate">{title}</span>
               </span>
-            </div>
-
-            <div className="min-w-0">
-              <span className="sr-only">{eyebrow}</span>
-              <h3
-                data-style-pack-card-title={id}
-                className={`flex min-w-0 items-center gap-1.5 whitespace-nowrap font-semibold leading-tight tracking-normal text-[color:var(--wb-ink)] ${titleClassName}`}
-              >
-                <span className={`flex size-6 shrink-0 items-center justify-center ${theme.text}`}>
-                  {icon}
-                </span>
-                <span className="min-w-0 truncate">{title}</span>
-              </h3>
-              <p className="mt-1.5 line-clamp-1 text-[length:var(--wbp-label)] font-medium leading-snug text-[color:var(--wb-ink)]/86">
-                {description}
-              </p>
-            </div>
-          </div>
+            }
+          >
+            <span className="sr-only">{eyebrow}</span>
+            <p>{description}</p>
+          </CatalogCardBackdrop>
         </div>
       </div>
     </button>

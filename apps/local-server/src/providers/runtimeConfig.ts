@@ -28,7 +28,13 @@ import {
 import { getSubscriptionAuthStore } from '../auth/store';
 import { readGoogleOAuthConfig } from '../auth/googleOAuthConfig';
 
-export type ExternalExecutableProviderId = 'grok' | 'google' | 'antigravity' | 'fal' | 'comfy';
+export type ExternalExecutableProviderId =
+  | 'chatgpt'
+  | 'grok'
+  | 'google'
+  | 'antigravity'
+  | 'fal'
+  | 'comfy';
 
 interface ExternalProviderRuntimeDefinition {
   providerId: ExternalExecutableProviderId;
@@ -58,6 +64,7 @@ export function isExternalExecutableProviderId(
   providerId: GenerationProviderId | null | undefined,
 ): providerId is ExternalExecutableProviderId {
   return (
+    providerId === 'chatgpt' ||
     providerId === 'grok' ||
     providerId === 'google' ||
     providerId === 'antigravity' ||
@@ -206,38 +213,40 @@ export function createGoogleRuntimePreflight(
 
 export function createCodexRuntimePreflight(
   codexRuntime: CodexRuntimeDoctorReport,
-  options: { httpReady?: boolean } = {},
 ): GenerationProviderRuntimePreflight {
   const unavailable = codexRuntime.issues.some((issue) => issue.code === 'codex_cli_unavailable');
-  const httpReady = options.httpReady ?? safeCodexHttpReady();
-  const cliReady = codexRuntime.canRunJobs;
-  const availableRuntimeKinds = [
-    ...(cliReady ? (['codex_app_server'] as const) : []),
-    ...(httpReady ? (['subscription_http'] as const) : []),
-  ];
-  const diagnostics: string[] = [];
-  if (cliReady) diagnostics.push('Codex app-server is ready. Live Codex models are available.');
-  if (httpReady)
-    diagnostics.push('ChatGPT HTTP is ready. Each job keeps its accepted execution route.');
-  if (codexRuntime.issues.length > 0) {
-    diagnostics.push(...codexRuntime.issues.map((issue) => `${issue.message} ${issue.action}`));
-  } else if (!cliReady && !httpReady) {
-    diagnostics.push(codexRuntime.recommendedAction);
-  }
   return {
     providerId: 'codex',
-    runtimeKind: cliReady
-      ? 'codex_app_server'
-      : httpReady
-        ? 'subscription_http'
-        : 'codex_app_server',
-    availableRuntimeKinds,
+    runtimeKind: 'codex_app_server',
+    availableRuntimeKinds: codexRuntime.canRunJobs ? ['codex_app_server'] : [],
     secretState: 'not_required',
     secretSource: null,
-    localRuntimeState: cliReady ? 'configured' : unavailable ? 'missing' : 'invalid',
+    localRuntimeState: codexRuntime.canRunJobs ? 'configured' : unavailable ? 'missing' : 'invalid',
     localRuntimeSource: codexRuntime.selectedExecutable,
-    canAttemptExecution: httpReady || cliReady,
-    diagnostics,
+    canAttemptExecution: codexRuntime.canRunJobs,
+    diagnostics: codexRuntime.canRunJobs
+      ? ['Codex app-server is ready. Live Codex models are available.']
+      : [...codexRuntime.issues.map((issue) => issue.message), codexRuntime.recommendedAction],
+  };
+}
+
+export function createChatgptRuntimePreflight(
+  httpReady = safeCodexHttpReady(),
+): ProviderRuntimePreflight {
+  return {
+    providerId: 'chatgpt',
+    runtimeKind: 'subscription_http',
+    availableRuntimeKinds: httpReady ? ['subscription_http'] : [],
+    secretState: httpReady ? 'configured' : 'missing',
+    secretSource: null,
+    localRuntimeState: 'not_required',
+    localRuntimeSource: null,
+    canAttemptExecution: httpReady,
+    diagnostics: [
+      httpReady
+        ? 'ChatGPT session connected. Availability is checked when generating.'
+        : 'Sign in with ChatGPT in Studio Settings.',
+    ],
   };
 }
 
@@ -324,6 +333,7 @@ export function readGenerationProviderRuntimePreflights(
 ) {
   return [
     createCodexRuntimePreflight(codexRuntime),
+    createChatgptRuntimePreflight(),
     createGrokRuntimePreflight(grokRuntime, { env }),
     createAntigravityRuntimePreflight(antigravityRuntime),
     ...readExternalProviderRuntimePreflights(env),
@@ -335,6 +345,7 @@ export function getExternalProviderRuntimePreflight(
   env: Record<string, string | undefined> = process.env,
   grokRuntime?: GrokRuntimeDoctorReport,
 ) {
+  if (providerId === 'chatgpt') return createChatgptRuntimePreflight();
   if (providerId === 'grok') {
     return createGrokRuntimePreflight(grokRuntime ?? readGrokRuntimeDoctor(), { env });
   }
@@ -389,8 +400,9 @@ export function createProviderReadinessMaps(
   subscriptionAuthConfigured.grok = grokHttpReady;
   subscriptionAuthState.grok = readStoredSubscriptionState('xai');
   const codexHttpReady = options.codexHttpReady ?? safeCodexHttpReady();
-  subscriptionAuthConfigured.codex = codexHttpReady;
-  subscriptionAuthState.codex = readStoredSubscriptionState('codex');
+  subscriptionAuthConfigured.chatgpt = codexHttpReady;
+  subscriptionAuthState.chatgpt = readStoredSubscriptionState('codex');
+  subscriptionAuthState.codex = 'not_applicable';
 
   return {
     secretConfigured,

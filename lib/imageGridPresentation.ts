@@ -74,7 +74,6 @@ export function resolveImageGridColumnCount({
 
 export function resolveImageGridTemplateColumns(
   columnCount: number,
-  thumbnailSize: number,
   viewMode: ImageGridViewMode = DEFAULT_IMAGE_GRID_VIEW_MODE,
 ) {
   const safeColumnCount = Math.max(1, columnCount);
@@ -82,15 +81,7 @@ export function resolveImageGridTemplateColumns(
     return 'minmax(0, 1fr)';
   }
 
-  if (safeColumnCount === 1) {
-    return 'repeat(1, minmax(0, 1fr))';
-  }
-
-  if (viewMode === 'grid' || viewMode === 'cards') {
-    return `repeat(${safeColumnCount}, minmax(0, 1fr))`;
-  }
-
-  return `repeat(${safeColumnCount}, ${thumbnailSize}px)`;
+  return `repeat(${safeColumnCount}, minmax(0, 1fr))`;
 }
 
 export function resolveImageGridAspectRatio(

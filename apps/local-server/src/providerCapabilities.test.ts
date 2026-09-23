@@ -49,6 +49,7 @@ describe('providerCapabilities', () => {
     );
     expect(report.providers.map((provider) => provider.providerId)).toEqual([
       'codex',
+      'chatgpt',
       'grok',
       'google',
       'antigravity',

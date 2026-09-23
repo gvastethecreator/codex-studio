@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 
 import { createGenerationTaskSpec } from '../../../../packages/shared/src';
-import { createCodexResponsesImageExecutor } from './codexResponsesImageExecutor';
+import { createChatgptResponsesImageExecutor } from './chatgptResponsesImageExecutor';
 import {
   CODEX_HTTP_EXECUTION_DEFAULTS,
   CODEX_HTTP_IMAGE_MODEL,
@@ -27,11 +27,12 @@ function httpExecution(size = '1024x1024'): JobExecutionOptions {
   };
 }
 
-describe('codex responses image executor', () => {
-  it('saves only a final image_generation_call result from SSE', async () => {
+describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => {
+  it('sends a ChatGPT reference and saves only the final image result without an app-server thread', async () => {
     const writes: Array<{ filePath: string; content: unknown }> = [];
     let payload: Record<string, unknown> | undefined;
-    const executor = createCodexResponsesImageExecutor({
+    const executor = createChatgptResponsesImageExecutor({
+      readFile: () => Buffer.from(PNG_B64, 'base64'),
       getAccessToken: async () => 'codex-secret',
       fetch: async (_url, init) => {
         payload = JSON.parse(typeof init?.body === 'string' ? init.body : '{}') as Record<
@@ -57,20 +58,40 @@ describe('codex responses image executor', () => {
       now: () => 1,
     });
     const result = await executor({
-      id: 'job-codex',
+      id: 'job-chatgpt',
+      providerId: 'chatgpt',
       workspaceId: 'workspace-1',
       prompt: 'stone keep',
       checkpointRemoteExecution: vi.fn(),
-      execution: httpExecution('1536x864'),
+      execution: {
+        ...CODEX_HTTP_EXECUTION_DEFAULTS,
+        providerOptions: {
+          chatgpt: {
+            image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1536x864', quality: 'medium' },
+          },
+        },
+      },
       sourceSpec: createGenerationTaskSpec({
         id: 'spec-wide',
         task: 'image_generate',
-        providerId: 'codex',
+        providerId: 'chatgpt',
         prompt: 'stone keep',
+        assets: [{ role: 'reference', name: 'ref.png', localPath: 'D:/studio-library/ref.png' }],
         output: { aspectRatio: '16:9', imageSize: '1536x864' },
       }),
     });
     expect(result.assets).toHaveLength(1);
+    expect(result).toMatchObject({ threadId: null, turnId: null });
+    expect(payload).toMatchObject({
+      input: [
+        {
+          content: [
+            expect.objectContaining({ type: 'input_text' }),
+            { type: 'input_image', image_url: `data:image/png;base64,${PNG_B64}` },
+          ],
+        },
+      ],
+    });
     expect(payload).toMatchObject({
       model: 'gpt-5.5',
       tools: [
@@ -90,7 +111,7 @@ describe('codex responses image executor', () => {
 
   it('sends a 4K ChatGPT image size on the HTTP tool', async () => {
     let payload: Record<string, unknown> | undefined;
-    const executor = createCodexResponsesImageExecutor({
+    const executor = createChatgptResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
       fetch: async (_url, init) => {
         payload = JSON.parse(typeof init?.body === 'string' ? init.body : '{}') as Record<
@@ -149,7 +170,7 @@ describe('codex responses image executor', () => {
   });
 
   it('keeps a tool-less stream uncertain without permitting another submission', async () => {
-    const executor = createCodexResponsesImageExecutor({
+    const executor = createChatgptResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
       fetch: async () =>
         new Response('data: {"type":"response.completed"}\n\n', {
@@ -173,7 +194,7 @@ describe('codex responses image executor', () => {
   });
 
   it('reports ChatGPT 403 as entitlement without switching transports', async () => {
-    const executor = createCodexResponsesImageExecutor({
+    const executor = createChatgptResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
       fetch: async () =>
         new Response(JSON.stringify({ error: { message: 'forbidden' } }), { status: 403 }),
@@ -196,31 +217,65 @@ describe('codex responses image executor', () => {
     } satisfies Partial<SubscriptionHttpError>);
   });
 
-  it('reports HTTP usage exhaustion as a route-specific limit instead of empty output', async () => {
-    const executor = createCodexResponsesImageExecutor({
-      getAccessToken: async () => 'codex-secret',
-      fetch: async () =>
-        new Response(JSON.stringify({ error: { message: 'The usage limit has been reached' } }), {
-          status: 429,
+  it.each([
+    {
+      status: 429,
+      error: { code: 'insufficient_quota', message: 'Usage exhausted' },
+      expected: 'source_limit',
+    },
+    {
+      status: 429,
+      error: { code: 'rate_limit_exceeded', message: 'The usage limit has been reached' },
+      expected: 'rate_limit',
+    },
+    { status: 429, error: { message: 'Too many requests' }, expected: 'rate_limit' },
+    {
+      status: 429,
+      error: { message: 'The usage limit has been reached' },
+      expected: 'source_limit',
+    },
+    {
+      status: 400,
+      error: { code: 'access_denied', message: 'Rate limit' },
+      expected: 'entitlement_denied',
+    },
+  ])(
+    'classifies HTTP $status/$expected from structured codes before text',
+    async ({ status, error, expected }) => {
+      const executor = createChatgptResponsesImageExecutor({
+        getAccessToken: async () => 'codex-secret',
+        fetch: async () =>
+          new Response(JSON.stringify({ error }), { status, headers: { 'Retry-After': '30' } }),
+      });
+      await expect(
+        executor({
+          id: 'job-http-limit',
+          workspaceId: 'workspace-1',
+          prompt: 'stone keep',
+          checkpointRemoteExecution: vi.fn(),
+          execution: httpExecution(),
         }),
-    });
-
-    await expect(
-      executor({
-        id: 'job-http-usage-limit',
-        workspaceId: 'workspace-1',
-        prompt: 'stone keep',
-        checkpointRemoteExecution: vi.fn(),
-        execution: httpExecution(),
-      }),
-    ).rejects.toMatchObject({
-      code: 'source_limit',
-      fallbackAllowed: false,
-      message: expect.stringContaining('this HTTP route'),
-    } satisfies Partial<SubscriptionHttpError>);
-  });
+      ).rejects.toMatchObject({ code: expected, fallbackAllowed: false, retryAfterSeconds: 30 });
+    },
+  );
 
   it.each([
+    {
+      event: {
+        type: 'response.failed',
+        response: { error: { code: 'rate_limit_exceeded', message: 'quota exhausted' } },
+      },
+      code: 'rate_limit',
+      message: expect.stringContaining('temporarily limited'),
+    },
+    {
+      event: {
+        type: 'response.failed',
+        response: { error: { code: 'insufficient_quota', message: 'retry later' } },
+      },
+      code: 'source_limit',
+      message: expect.stringContaining('exhausted usage'),
+    },
     {
       event: {
         type: 'response.failed',
@@ -260,7 +315,7 @@ describe('codex responses image executor', () => {
     'reports terminal SSE failure details: $event.type $code',
     async ({ event, code, message }) => {
       const checkpoint = vi.fn();
-      const executor = createCodexResponsesImageExecutor({
+      const executor = createChatgptResponsesImageExecutor({
         getAccessToken: async () => 'codex-secret',
         fetch: async () =>
           new Response([`event: ${event.type}`, `data: ${JSON.stringify(event)}`, ''].join('\n'), {
@@ -289,7 +344,7 @@ describe('codex responses image executor', () => {
 
   it('invalidates rejected credentials and redacts the access token from the error', async () => {
     const invalidations: string[] = [];
-    const executor = createCodexResponsesImageExecutor({
+    const executor = createChatgptResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
       invalidateAccessToken: (message) => invalidations.push(message),
       fetch: async () =>
@@ -309,8 +364,11 @@ describe('codex responses image executor', () => {
         checkpointRemoteExecution: vi.fn(),
         execution: httpExecution(),
       }),
-    ).rejects.toMatchObject({ code: 'invalid_grant', message: 'rejected [redacted]' });
-    expect(invalidations).toEqual(['rejected [redacted]']);
+    ).rejects.toMatchObject({
+      code: 'invalid_grant',
+      message: expect.stringContaining('rejected [redacted]'),
+    });
+    expect(invalidations).toEqual([expect.stringContaining('rejected [redacted]')]);
   });
 
   it('rejects source images beyond the HTTP limit before reading credentials', async () => {
@@ -319,7 +377,7 @@ describe('codex responses image executor', () => {
       name: `source-${index}.png`,
       localPath: `D:/inputs/source-${index}.png`,
     }));
-    const executor = createCodexResponsesImageExecutor({
+    const executor = createChatgptResponsesImageExecutor({
       getAccessToken: async () => {
         throw new Error('must not load credentials');
       },
@@ -348,7 +406,7 @@ describe('codex responses image executor', () => {
   it('rejects unsupported execution settings before credentials or submission', async () => {
     const getAccessToken = vi.fn();
     const fetch = vi.fn();
-    const executor = createCodexResponsesImageExecutor({ getAccessToken, fetch });
+    const executor = createChatgptResponsesImageExecutor({ getAccessToken, fetch });
     await expect(
       executor({
         id: 'invalid',
@@ -373,35 +431,51 @@ describe('codex responses image executor', () => {
       stored = JSON.parse(JSON.stringify(value)) as JobRemoteExecution;
     };
     const fetch = vi.fn(async () => {
-      expect(stored).toMatchObject({ providerId: 'codex', phase: 'submitting' });
+      expect(stored).toMatchObject({ providerId: 'chatgpt', phase: 'submitting' });
       throw new Error('socket closed codex-secret');
     });
-    const executor = createCodexResponsesImageExecutor({
+    const executor = createChatgptResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
       fetch,
     });
     await expect(
       executor({
         id: 'lost',
+        providerId: 'chatgpt',
         workspaceId: 'a',
         prompt: 'prompt',
-        execution: httpExecution(),
+        execution: {
+          ...CODEX_HTTP_EXECUTION_DEFAULTS,
+          providerOptions: {
+            chatgpt: {
+              image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+            },
+          },
+        },
         checkpointRemoteExecution,
       }),
     ).rejects.toMatchObject({
       code: 'execution_uncertain',
       message: expect.not.stringContaining('codex-secret'),
     });
-    const restarted = createCodexResponsesImageExecutor({
+    const restarted = createChatgptResponsesImageExecutor({
       getAccessToken: async () => 'codex-secret',
       fetch,
     });
     await expect(
       restarted({
         id: 'lost',
+        providerId: 'chatgpt',
         workspaceId: 'a',
         prompt: 'prompt',
-        execution: httpExecution(),
+        execution: {
+          ...CODEX_HTTP_EXECUTION_DEFAULTS,
+          providerOptions: {
+            chatgpt: {
+              image: { model: CODEX_HTTP_IMAGE_MODEL, size: '1024x1024', quality: 'medium' },
+            },
+          },
+        },
         remoteExecution: stored,
         checkpointRemoteExecution,
       }),

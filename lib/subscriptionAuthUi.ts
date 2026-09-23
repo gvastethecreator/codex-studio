@@ -10,7 +10,7 @@ export function subscriptionAccountTitle(providerId: SubscriptionProviderId) {
 }
 
 export function subscriptionAccountUsedBy(providerId: SubscriptionProviderId) {
-  if (providerId === 'codex') return 'Codex image generation';
+  if (providerId === 'codex') return 'ChatGPT image generation';
   if (providerId === 'xai') return 'Grok Imagine';
   return 'Nano Banana image generation';
 }

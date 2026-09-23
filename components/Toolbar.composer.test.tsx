@@ -127,6 +127,7 @@ describe('Toolbar composer chrome', () => {
     const onGenerate = vi.fn();
     const view = renderToolbar({
       activeRecipe: 'remaster',
+      activeProviderId: 'chatgpt',
       codexTransport: 'subscription_http',
       codexAvailableTransports: ['subscription_http'],
       generationConfig: config({ recipeId: 'remaster' }),
@@ -139,6 +140,7 @@ describe('Toolbar composer chrome', () => {
     view.unmount();
     renderToolbar({
       activeRecipe: 'remaster',
+      activeProviderId: 'chatgpt',
       codexTransport: 'subscription_http',
       codexAvailableTransports: ['subscription_http'],
       generationConfig: config({
@@ -160,6 +162,7 @@ describe('Toolbar composer chrome', () => {
 
   it('shows one generate requirement next to Generate and keeps the action usable', () => {
     const { container } = renderToolbar({
+      activeProviderId: 'chatgpt',
       codexTransport: 'subscription_http',
       codexAvailableTransports: ['subscription_http'],
       generationConfig: config({ prompt: '' }),
@@ -281,7 +284,7 @@ describe('Toolbar composer chrome', () => {
   it('shows 1K, 2K, and 4K when ChatGPT Sign in is selected', () => {
     const updateConfig = vi.fn();
     renderToolbar({
-      activeProviderId: 'codex',
+      activeProviderId: 'chatgpt',
       codexTransport: 'subscription_http',
       codexAvailableTransports: ['codex_app_server', 'subscription_http'],
       generationConfig: config({
@@ -299,8 +302,8 @@ describe('Toolbar composer chrome', () => {
     fireEvent.click(screen.getByRole('option', { name: '4K: 3840×2160' }));
     expect(updateConfig).toHaveBeenCalledWith('imageSize', '4K');
 
-    fireEvent.click(screen.getByRole('button', { name: /codex task execution/i }));
-    expect(screen.getByRole('heading', { name: 'Connection' })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: /chatgpt task execution/i }));
+    expect(screen.queryByRole('heading', { name: 'Connection' })).toBeNull();
     expect(screen.getByRole('heading', { name: 'Text model' })).toBeTruthy();
     expect(screen.getByRole('heading', { name: 'Image model' })).toBeTruthy();
     expect(screen.getByText('Managed by ChatGPT')).toBeTruthy();
@@ -308,7 +311,7 @@ describe('Toolbar composer chrome', () => {
     expect(screen.getByRole('group', { name: 'ChatGPT image size' })).toBeTruthy();
     expect(screen.getByRole('button', { name: '2K: 2048×1152' })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Close generation settings' }));
-    expect(screen.queryByRole('dialog', { name: 'Codex task execution' })).toBeNull();
+    expect(screen.queryByRole('dialog', { name: 'Image generation settings' })).toBeNull();
   });
 
   it('hides ChatGPT size choices on Codex app-server', () => {

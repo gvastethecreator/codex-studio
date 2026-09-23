@@ -1,1 +1,492 @@
-{"schemaVersion":1,"status":"execution-guidance-not-visual-approval","maxSelectedPresets":3,"routing":{"pack_01::1. Portrait And Studio":"photo","pack_01::2. Lighting Techniques":"light","pack_01::3. Film And Analog Process":"analog","pack_01::4. Documentary And Street":"photo","pack_01::5. Commercial And Product":"photo","pack_01::6. Nature And Wildlife":"photo","pack_01::7. Technical And Specialist Imaging":"sensor","pack_02::1. Film Genres":"theme-render","pack_02::2. TV And Broadcast":"broadcast","pack_02::3. Animation Styles":"drawing","pack_02::4. Photography Eras":"analog","pack_02::5. Lighting And Atmosphere":"light","pack_02::6. Caricature And Cartoon Styles":"drawing","pack_02::7. Sensor And Technical Imaging":"sensor","pack_02::8. Hand-Drawn And DIY Media":"craft","pack_03::1. Render Engines":"render","pack_03::2. Materials":"material","pack_03::3. Lighting And Atmosphere":"light","pack_03::4. 3D Styles":"render","pack_03::5. Hard Surface And Product CGI":"render","pack_03::6. Organic Character And Bio CGI":"render","pack_03::7. Environment And Worldbuilding":"architecture","pack_03::8. Sensor And Technical Shaders":"sensor","pack_04::1. Comic Book Styles":"drawing","pack_04::2. Children's Illustration":"drawing","pack_04::3. Editorial And Poster":"print","pack_04::4. Concept Art":"deliverable","pack_04::5. Ink And Print":"print","pack_04::6. Technical And Reference Sheets":"diagram","pack_05::1. Modern Shonen & Action":"anime","pack_05::2. Mecha & Cyberpunk":"anime","pack_05::3. Isekai & High Fantasy":"anime","pack_05::4. Dark Fantasy & Seinen":"anime","pack_05::5. Action Motion Setpieces":"game-profile","pack_06::1. Traditional Painting":"paint","pack_06::2. Drawing & Sketching":"drawing","pack_06::3. Printmaking":"print","pack_06::4. Digital Art":"render","pack_06::5. Mixed Media":"craft","pack_06::6. Retro Game Visual Systems":"pixel","pack_06::7. Game Art Directions & UI":"game-profile","pack_07::1. Interior Design Systems":"architecture","pack_07::2. Architectural Movements And Vernaculars":"architecture","pack_07::3. Civic Infrastructure And Specialty Spaces":"architecture","pack_07::4. Landscape And Garden Systems":"architecture","pack_07::5. Fantasy And Mythic Architecture":"architecture","pack_07::6. Toy Craft And Miniature Architecture":"craft","pack_07::7. Megastructure And Impossible Space":"distortion","pack_08::1. Contemporary Fashion":"wardrobe","pack_08::2. Subcultures":"wardrobe","pack_08::3. Historical & Fantasy":"wardrobe","pack_08::4. Fantasy Sci-Fi Costume":"wardrobe","pack_08::5. Fabric & Texture Focus":"material","pack_09::1. Natural Materials":"material","pack_09::2. Man-Made Materials":"material","pack_09::3. Weathering And Decay":"weathering","pack_09::4. Tactile Surfaces":"material","pack_09::5. Elemental And FX":"material","pack_10::1. Geometric Abstraction":"distortion","pack_10::2. Fluid & Organic":"distortion","pack_10::3. Digital Glitch & Noise":"signal","pack_10::4. Surrealism & Dream":"distortion","pack_10::5. Textile & Ornamental Patterns":"material","pack_10::6. Material Surface Textures":"material","pack_10::7. Diagram And Data Systems":"diagram","pack_10::8. Point, Mosaic And Glass Systems":"craft","pack_10::9. Print And Light Finishes":"print","pack_11::1. Toys And Crafts":"craft","pack_11::2. Artistic Mediums":"craft","pack_11::3. Aesthetics":"theme-render","pack_11::4. Food And Drink":"food","pack_11::5. Micro Macro":"sensor","pack_11::6. Sensor And Technical Imaging":"sensor","pack_11::7. Diagram And Technical Drawing":"diagram","pack_12::1. Neon Urban & Night Ops":"game-profile","pack_12::2. Arcane Temples & Mythic Realms":"game-profile","pack_12::3. Sci-Fi Frontiers & Mech Zones":"game-profile","pack_12::4. Sieges, Warfronts & Last Stands":"game-profile","pack_12::5. Speed, Sport & Competitive Arenas":"game-profile","pack_12::6. Wilderness Hunts & Harsh Frontiers":"game-profile","pack_12::7. Heists, Horror & Underworld Runs":"game-profile","pack_12::8. Puzzle Chambers & Adventure Setpieces":"game-profile","pack_13::1. Core Anime":"anime","pack_13::2. Slice Of Life, School And Music":"anime","pack_13::3. Shojo, Magical Girl & Visionary Classics":"anime","pack_13::4. Slice Of Life & Moe":"anime","pack_13::5. Anime Style Spectrum":"anime","pack_14::1. Mythic — Symbolism":"cultural-theme","pack_14::2. Mythic — Ritual Noir":"cultural-theme","pack_14::3. Mythic — Pantheons & Legends":"cultural-theme","pack_14::4. Mythic — Cosmology & Omens":"cultural-theme","pack_14::5. Mythic — Greek Epics":"cultural-theme","pack_14::6. Mythic — African Cosmologies":"cultural-theme","pack_14::7. Mythic — Japanese Yokai & Kami":"cultural-theme","pack_14::8. Mythic — Norse Sagas":"cultural-theme","pack_14::9. Mythic — Mesoamerican Suns":"cultural-theme","pack_15::1. Classic Industrial Punks":"theme-render","pack_15::2. Neon, Net & Signal Punks":"theme-render","pack_15::3. Eco, Repair & Climate Punks":"theme-render","pack_15::4. Bio, Myco & Body Punks":"theme-render","pack_15::5. Ocean, Ice & Terrain Punks":"theme-render","pack_15::6. Street, Riot & DIY Punks":"theme-render","pack_15::7. Media, Vapor & Glitch Punks":"signal","pack_15::8. Occult, Myth & Gothic Punks":"theme-render","pack_15::9. Space, Atomic & Ray Punks":"theme-render","pack_15::10. Primitive, Stone & Salvage Punks":"theme-render","pack_16::1. 70s & 80s Retro Anime":"anime","pack_16::2. 90s Golden Era":"anime","pack_16::3. 2000s Classics":"anime","pack_16::4. Studio Masterpieces":"anime","pack_16::5. Sports, Competition & Performance":"anime","pack_16::6. Samurai & Medieval":"anime","pack_16::7. Horror":"anime","pack_17::1. Dark Fantasy & Gothic Courts":"theme-render","pack_17::2. Dungeon Zine & Risograph Prints":"print","pack_17::3. Ink, Tarot & Bestiary Plates":"deliverable","pack_17::4. Rune-Tech & Apocalyptic Warfronts":"theme-render","pack_17::5. Grimdark Game Systems & Tabletop":"game-profile","pack_19::1. Ink Structures":"drawing","pack_20::1. Print Registers":"print","pack_21::1. Paper & Pigment":"paint"},"playbooks":{"photo":{"title":"Fotografía y encuadre","decision":"Distinguir tratamiento fotográfico de perfil de cámara y receta temática.","preserve":["Relación focal/distancia, agrupación tonal, detalle de piel o producto cuando corresponda.","Conservar por separado perfiles de documento, macro, dron y flat lay."],"doNot":["No imponer un retratado al pedir un objeto.","No convertir un estilo de calle en una calle obligatoria."],"steps":["Registrar qué frases describen lente, iluminación, sujeto y formato.","Derivar solo el tratamiento; mantener el perfil especializado original."],"extraBenchmark":"neutral-object"},"light":{"title":"Luz localizada","decision":"Separar comportamiento lumínico, medio de representación y escenario.","preserve":["Dirección, tamaño aparente de fuente, suavidad, caída y contraste cromático.","La luz puede cambiar si se selecciona el modificador; el escenario no por ese solo motivo."],"doNot":["No agregar un atardecer exterior, carteles o ventanas para justificar luz cálida.","No colapsar fotografía y CGI solo porque ambos usan rim light."],"steps":["Extraer descripción de fuente y sombras.","Identificar conflictos con iluminación explícita; registrar incompatibilidad antes de generar."],"extraBenchmark":"daylight-conflict"},"analog":{"title":"Proceso analógico","decision":"Separar respuesta de imagen de época, cámara y soporte físico.","preserve":["Escala de grano, curva de contraste, altas luces y sesgo cromático."],"doNot":["No agregar marcos, fechas, vestuario de época o una cámara física salvo selección del perfil."],"steps":["Conservar marcas y referencias en procedencia; no prometer emulación medida sin mediciones.","Comparar respuestas bajo el mismo encuadre."],"extraBenchmark":"neutral-interior"},"broadcast":{"title":"Broadcast y vídeo","decision":"Separar apariencia de señal de estructura de emisión.","preserve":["Raster, entrelazado simulado, contraste y errores de señal.","El perfil de emisión puede conservar su layout si se eligió explícitamente."],"doNot":["No inventar presentador, noticiero, rótulos o interfaz al seleccionar solo acabado de vídeo."],"steps":["Clasificar layout como perfil, artefactos como modificador.","Derivar acabado sin borrar el formato especializado."],"extraBenchmark":"requested-text"},"sensor":{"title":"Imagen técnica y escala","decision":"Mantener explícita la representación especializada y sus límites.","preserve":["Mapa de densidad o falso color, capas visibles, escala y proyección propias del perfil."],"doNot":["No afirmar diagnóstico, medición o adquisición real a partir de una imagen generada.","No convertir automáticamente radiografía en esqueleto humano."],"steps":["Definir qué transformación técnica está autorizada.","Comparar sensores por mecanismo, no por nombre o paleta."],"extraBenchmark":"technical-profile"},"render":{"title":"Render y CGI","decision":"Separar técnica de modelado/render de objeto de muestra o entregable.","preserve":["Facetas, topología visible, respuesta de materiales y economía de detalle que sean distintivas."],"doNot":["No introducir una esfera de muestra, producto de estudio o anatomía específica.","No quitar geometría voxel por considerarla demasiado literal."],"steps":["Identificar si se transforma geometría, superficie, cámara o medio.","Derivar un sistema concreto; no enumerar motores ni mecanismos incompatibles."],"extraBenchmark":"neutral-object"},"drawing":{"title":"Dibujo, tinta y cómic","decision":"Describir marcas y valores; separar anatomía, página y relato.","preserve":["Presión, grosor, continuidad, relación línea/mancha, bordes y detalle interno."],"doNot":["No agregar superhéroes, poses, bocadillos o paneles salvo perfil.","No sustituir precisión visual por artistic/high quality."],"steps":["Redactar una diferencia observable en marcas y otra en construcción de valores.","Comparar con los derivados SP19 existentes antes de añadir otro."],"extraBenchmark":"neutral-person"},"paint":{"title":"Pigmento y pintura","decision":"Separar manipulación del pigmento de géneros pictóricos y soportes de muestra.","preserve":["Opacidad, transparencia, impasto, reserva, absorción y jerarquía de bordes."],"doNot":["No aplicar todos los verbos pictóricos a todos los medios.","No introducir caballete, lienzo enmarcado o naturaleza muerta por defecto."],"steps":["Elegir mecanismos compatibles con el medio concreto.","Comparar con Paper & Pigment sin asumir equivalencia por nombre."],"extraBenchmark":"neutral-exterior"},"print":{"title":"Impresión y acabados","decision":"Separar formación de la imagen, paleta, tema y formato de publicación.","preserve":["Registro, trama, ganancia de punto, sobreimpresión o presión según técnica."],"doNot":["No agregar símbolos ocultistas ni bordes de póster al extraer risografía.","No confundir emisión de luz con tinta, foil o relieve; separar esos casos."],"steps":["Identificar unidad de reproducción y mecanismo de borde.","Candidatos que solo cambian paleta se comparan como variantes, no se fusionan automáticamente."],"extraBenchmark":"requested-text"},"deliverable":{"title":"Láminas y entregables","decision":"Preservar formatos útiles sin presentarlos como estilos universales.","preserve":["Turnaround, carta, bestiario, layout de paneles y vistas cuando el formato se solicita."],"doNot":["No forzar carta vertical al pedir ilustración horizontal.","No inventar anotaciones, etiquetas ni medidas."],"steps":["Mantener el perfil original y derivar por separado el tratamiento de tinta o pintura.","Comprobar tarea compatible antes de activar estructura de salida."],"extraBenchmark":"profile-camera"},"diagram":{"title":"Diagramas y datos","decision":"Separar representación ilustrativa de datos funcionales.","preserve":["Jerarquía de líneas, proyección, rutas y módulos indicados por el formato."],"doNot":["No afirmar que un QR, circuito o dimensión generados funcionan.","No rellenar datos ausentes con cifras plausibles."],"steps":["Etiquetar ilustrativo cuando no hay validación independiente.","Tratar texto/datos requeridos como contenido, no como ruido eliminable."],"extraBenchmark":"technical-profile"},"anime":{"title":"Anime y manga","decision":"Separar dibujo, sombreado, época, vestuario, mundo y acción.","preserve":["Economía de línea, formas de sombra cel, proporciones solicitadas y tratamiento de fondos."],"doNot":["No agregar uniformes, armas, ninja, escuela, monstruo o festival por el título.","No uniformar todo a clean cel shading; conservar mecanismos distintivos."],"steps":["En categorías mixed clasificar cada preset, nunca el pack entero.","Usar packId real: los prefijos SP05/SP13 pueden aparecer fuera del pack homónimo.","Comparar una acción cotidiana, no solo escenas canónicas de combate."],"extraBenchmark":"neutral-person"},"pixel":{"title":"Pixel y sistemas retro","decision":"Separar lógica de píxel de hardware y cámara.","preserve":["Clusters, rampas de valor, resolución lógica propuesta y tramado."],"doNot":["No agregar consola, marco LCD, dungeon, vista isométrica ni HUD automáticamente.","No prometer dimensiones exactas de un asset sin inspeccionar el archivo."],"steps":["Aislar perfil de resolución/cámara y medio de representación.","No fusionar 1-bit y paleta limitada solo por compartir píxeles."],"extraBenchmark":"neutral-object"},"game-profile":{"title":"Captura jugable y acción","decision":"Conservar perfiles deliberados; extraer un derivado de apariencia cuando sea necesario.","preserve":["Cámara, escala jugable, jerarquía interactiva y HUD cuando la función los exige."],"doNot":["No quitar el perfil lateral/isométrico del original para hacerlo universal.","No introducir motel, misión, enemigo, guerra o nivel reconocible en un derivado solo visual."],"steps":["Decidir primero si el pedido es captura o tratamiento libre.","Mantener original especializado, crear derivado con ID nuevo y procedencia.","En preserve, respetar encuadre; un conflicto con perfil estructural requiere decisión explícita."],"extraBenchmark":"profile-camera"},"architecture":{"title":"Arquitectura y espacio","decision":"Clasificar como dirección de diseño cuando cambia construcciones o distribución.","preserve":["Proporciones, uniones, materialidad y reglas espaciales autorizadas."],"doNot":["No convertir un interior existente en otro sitio sin permiso.","No convertir estilo de iluminación en un listado de muebles obligatorios."],"steps":["Separar cambio arquitectónico de luz/acabado superficial.","Registrar permiso estructural, elementos bloqueados y plano solicitado."],"extraBenchmark":"preserve-reference"},"wardrobe":{"title":"Vestuario y subculturas","decision":"Separar diseño de prendas, material textil y escena social.","preserve":["Corte, confección, caída, superposición y materiales de las prendas objetivo."],"doNot":["No cambiar rostro, cuerpo, profesión, época del fondo ni venue sin solicitud."],"steps":["Pedir al contrato una prenda/objetivo; no deducir un cuerpo nuevo.","Mover referencias culturales y de época a procedencia/tema explícito."],"extraBenchmark":"wardrobe-target"},"material":{"title":"Material dirigido","decision":"Conservar identidad material y explicitar la superficie objetivo.","preserve":["Veta, poro, rugosidad, reflexión, translucencia y escala coherentes."],"doNot":["No agregar la tabla/aserradero del ejemplo.","No transformar toda la escena o anatomía al pedir una superficie."],"steps":["Identificar objetivo y modo: acabado superficial o reemplazo material.","Separar trama/material de la estructura que lo soporta.","Comparar medio, reflectancia y escala antes de consolidar con otro pack."],"extraBenchmark":"material-target"},"weathering":{"title":"Desgaste y efectos","decision":"Separar microdesgaste de daño estructural y emisión de partículas.","preserve":["Mecanismo de corrosión, distribución, escala e intensidad autorizada."],"doNot":["No derrumbar arquitectura por pedir pátina leve.","No agregar humo, llamas o escombros si solo se solicita superficie."],"steps":["Registrar objetivo e intensidad como parte del contrato.","Limitar fractura, pérdida de material y efectos externos según permiso."],"extraBenchmark":"weathering-target"},"signal":{"title":"Glitch y señal","decision":"Describir artefacto de imagen sin importar universo tecnológico.","preserve":["Arrastre de bloques, discontinuidades, muestreo, canales y orientación de artefactos."],"doNot":["No sumar hackers, pantallas o ciudad neón.","No afirmar corrupción real de vídeo cuando se produce una ilustración estática."],"steps":["Distinguir efectos de señal de representación con glifos y de medio impreso.","Controlar región e intensidad; no usar ruido uniforme como sustituto."],"extraBenchmark":"neutral-graphic"},"distortion":{"title":"Abstracción y extrañeza","decision":"Separar cambios de representación de geometría y espacio.","preserve":["Planos, ritmos, unidades, perspectiva o deformación específica seleccionada."],"doNot":["No introducir relojes, pasillos, piscinas o entidades por asociación con un nombre.","No aplicar distorsión estructural en preserve ni quitarla de un perfil explícito."],"steps":["Clasificar el mecanismo como acabado o transformación estructural.","Si el contrato no permite alterar geometría, no fingir compatibilidad: proponer derivado o bloquear."],"extraBenchmark":"distortion-conflict"},"craft":{"title":"Construcción artesanal","decision":"Separar la superficie de imagen del material del objeto y del soporte físico.","preserve":["Capas, marcas de ensamblado, grosor, costuras o absorción propios del proceso."],"doNot":["No convertir siempre en juguete humanoide o miniatura.","No agregar una mesa, objeto de soporte ni set de taller obligatorio."],"steps":["Definir si se transforma el dibujo, el objeto o su soporte.","Conservar recetas de objeto/soporte especializado fuera del derivado libre."],"extraBenchmark":"neutral-person"},"food":{"title":"Alimento y presentación","decision":"Mantener recetas culinarias como contenido explícito.","preserve":["Vertido, espuma, reflejos, textura o tratamiento gráfico que se seleccione."],"doNot":["No forzar taza o plato al pedir solamente trazos de espuma.","No disfrazar una receta alimentaria de estilo universal."],"steps":["Separar receta completa de derivado de luz/marcas.","El derivado debe conservar el sujeto; la receta puede requerir comida."],"extraBenchmark":"neutral-graphic"},"cultural-theme":{"title":"Mito y procedencia","decision":"Mantener contenido cultural específico como dirección explícita; separar medio visual.","preserve":["Procedencia documentada, contexto concreto y motivos pedidos."],"doNot":["No fusionar culturas por paleta o por una etiqueta continental.","No inventar una tradición, significado de símbolo o validación histórica."],"steps":["Clasificar nombres y motivos como contexto, no instrucciones universales.","Derivar técnica visual sin presentarla como representación auténtica de una cultura.","Si falta fuente, registrar needs-source y no rellenar historia con inferencias."],"extraBenchmark":"neutral-object"},"theme-render":{"title":"Tema frente a representación","decision":"Separar narrativa, diseño, atmósfera y acabado.","preserve":["Relaciones de valor, tratamiento de borde, peso, materiales y color realmente distintivos."],"doNot":["No hacer obligatorios reliquias, engranajes, ejércitos, símbolos o biomas en el derivado.","No borrar el tema del original que sirve precisamente para worldbuilding."],"steps":["Mantener tema especializado y derivar apariencia con procedencia.","Revisar también negativos y campos de atmósfera; no basta con limpiar aesthetic."],"extraBenchmark":"neutral-interior"}}}
+{
+  "schemaVersion": 1,
+  "status": "execution-guidance-not-visual-approval",
+  "maxSelectedPresets": 3,
+  "routing": {
+    "pack_01::1. Portrait And Studio": "photo",
+    "pack_01::2. Lighting Techniques": "light",
+    "pack_01::3. Film And Analog Process": "analog",
+    "pack_01::4. Documentary And Street": "photo",
+    "pack_01::5. Commercial And Product": "photo",
+    "pack_01::6. Nature And Wildlife": "photo",
+    "pack_01::7. Technical And Specialist Imaging": "sensor",
+    "pack_02::1. Film Genres": "theme-render",
+    "pack_02::2. TV And Broadcast": "broadcast",
+    "pack_02::3. Animation Styles": "drawing",
+    "pack_02::4. Photography Eras": "analog",
+    "pack_02::5. Lighting And Atmosphere": "light",
+    "pack_02::6. Caricature And Cartoon Styles": "drawing",
+    "pack_02::7. Sensor And Technical Imaging": "sensor",
+    "pack_02::8. Hand-Drawn And DIY Media": "craft",
+    "pack_03::1. Render Engines": "render",
+    "pack_03::2. Materials": "material",
+    "pack_03::3. Lighting And Atmosphere": "light",
+    "pack_03::4. 3D Styles": "render",
+    "pack_03::5. Hard Surface And Product CGI": "render",
+    "pack_03::6. Organic Character And Bio CGI": "render",
+    "pack_03::7. Environment And Worldbuilding": "architecture",
+    "pack_03::8. Sensor And Technical Shaders": "sensor",
+    "pack_04::1. Comic Book Styles": "drawing",
+    "pack_04::2. Children's Illustration": "drawing",
+    "pack_04::3. Editorial And Poster": "print",
+    "pack_04::4. Concept Art": "deliverable",
+    "pack_04::5. Ink And Print": "print",
+    "pack_04::6. Technical And Reference Sheets": "diagram",
+    "pack_05::1. Modern Shonen & Action": "anime",
+    "pack_05::2. Mecha & Cyberpunk": "anime",
+    "pack_05::3. Isekai & High Fantasy": "anime",
+    "pack_05::4. Dark Fantasy & Seinen": "anime",
+    "pack_05::5. Action Motion Setpieces": "game-profile",
+    "pack_06::1. Traditional Painting": "paint",
+    "pack_06::2. Drawing & Sketching": "drawing",
+    "pack_06::3. Printmaking": "print",
+    "pack_06::4. Digital Art": "render",
+    "pack_06::5. Mixed Media": "craft",
+    "pack_06::6. Retro Game Visual Systems": "pixel",
+    "pack_06::7. Game Art Directions & UI": "game-profile",
+    "pack_07::1. Interior Design Systems": "architecture",
+    "pack_07::2. Architectural Movements And Vernaculars": "architecture",
+    "pack_07::3. Civic Infrastructure And Specialty Spaces": "architecture",
+    "pack_07::4. Landscape And Garden Systems": "architecture",
+    "pack_07::5. Fantasy And Mythic Architecture": "architecture",
+    "pack_07::6. Toy Craft And Miniature Architecture": "craft",
+    "pack_07::7. Megastructure And Impossible Space": "distortion",
+    "pack_08::1. Contemporary Fashion": "wardrobe",
+    "pack_08::2. Subcultures": "wardrobe",
+    "pack_08::3. Historical & Fantasy": "wardrobe",
+    "pack_08::4. Fantasy Sci-Fi Costume": "wardrobe",
+    "pack_08::5. Fabric & Texture Focus": "material",
+    "pack_09::1. Natural Materials": "material",
+    "pack_09::2. Man-Made Materials": "material",
+    "pack_09::3. Weathering And Decay": "weathering",
+    "pack_09::4. Tactile Surfaces": "material",
+    "pack_09::5. Elemental And FX": "material",
+    "pack_10::1. Geometric Abstraction": "distortion",
+    "pack_10::2. Fluid & Organic": "distortion",
+    "pack_10::3. Digital Glitch & Noise": "signal",
+    "pack_10::4. Surrealism & Dream": "distortion",
+    "pack_10::5. Textile & Ornamental Patterns": "material",
+    "pack_10::6. Material Surface Textures": "material",
+    "pack_10::7. Diagram And Data Systems": "diagram",
+    "pack_10::8. Point, Mosaic And Glass Systems": "craft",
+    "pack_10::9. Print And Light Finishes": "print",
+    "pack_11::1. Toys And Crafts": "craft",
+    "pack_11::2. Artistic Mediums": "craft",
+    "pack_11::3. Aesthetics": "theme-render",
+    "pack_11::4. Food And Drink": "food",
+    "pack_11::5. Micro Macro": "sensor",
+    "pack_11::6. Sensor And Technical Imaging": "sensor",
+    "pack_11::7. Diagram And Technical Drawing": "diagram",
+    "pack_12::1. Neon Urban & Night Ops": "game-profile",
+    "pack_12::2. Arcane Temples & Mythic Realms": "game-profile",
+    "pack_12::3. Sci-Fi Frontiers & Mech Zones": "game-profile",
+    "pack_12::4. Sieges, Warfronts & Last Stands": "game-profile",
+    "pack_12::5. Speed, Sport & Competitive Arenas": "game-profile",
+    "pack_12::6. Wilderness Hunts & Harsh Frontiers": "game-profile",
+    "pack_12::7. Heists, Horror & Underworld Runs": "game-profile",
+    "pack_12::8. Puzzle Chambers & Adventure Setpieces": "game-profile",
+    "pack_13::1. Core Anime": "anime",
+    "pack_13::2. Slice Of Life, School And Music": "anime",
+    "pack_13::3. Shojo, Magical Girl & Visionary Classics": "anime",
+    "pack_13::4. Slice Of Life & Moe": "anime",
+    "pack_13::5. Anime Style Spectrum": "anime",
+    "pack_14::1. Mythic — Symbolism": "cultural-theme",
+    "pack_14::2. Mythic — Ritual Noir": "cultural-theme",
+    "pack_14::3. Mythic — Pantheons & Legends": "cultural-theme",
+    "pack_14::4. Mythic — Cosmology & Omens": "cultural-theme",
+    "pack_14::5. Mythic — Greek Epics": "cultural-theme",
+    "pack_14::6. Mythic — African Cosmologies": "cultural-theme",
+    "pack_14::7. Mythic — Japanese Yokai & Kami": "cultural-theme",
+    "pack_14::8. Mythic — Norse Sagas": "cultural-theme",
+    "pack_14::9. Mythic — Mesoamerican Suns": "cultural-theme",
+    "pack_15::1. Classic Industrial Punks": "theme-render",
+    "pack_15::2. Neon, Net & Signal Punks": "theme-render",
+    "pack_15::3. Eco, Repair & Climate Punks": "theme-render",
+    "pack_15::4. Bio, Myco & Body Punks": "theme-render",
+    "pack_15::5. Ocean, Ice & Terrain Punks": "theme-render",
+    "pack_15::6. Street, Riot & DIY Punks": "theme-render",
+    "pack_15::7. Media, Vapor & Glitch Punks": "signal",
+    "pack_15::8. Occult, Myth & Gothic Punks": "theme-render",
+    "pack_15::9. Space, Atomic & Ray Punks": "theme-render",
+    "pack_15::10. Primitive, Stone & Salvage Punks": "theme-render",
+    "pack_16::1. 70s & 80s Retro Anime": "anime",
+    "pack_16::2. 90s Golden Era": "anime",
+    "pack_16::3. 2000s Classics": "anime",
+    "pack_16::4. Studio Masterpieces": "anime",
+    "pack_16::5. Sports, Competition & Performance": "anime",
+    "pack_16::6. Samurai & Medieval": "anime",
+    "pack_16::7. Horror": "anime",
+    "pack_17::1. Dark Fantasy & Gothic Courts": "theme-render",
+    "pack_17::2. Dungeon Zine & Risograph Prints": "print",
+    "pack_17::3. Ink, Tarot & Bestiary Plates": "deliverable",
+    "pack_17::4. Rune-Tech & Apocalyptic Warfronts": "theme-render",
+    "pack_17::5. Grimdark Game Systems & Tabletop": "game-profile",
+    "pack_19::1. Ink Structures": "drawing",
+    "pack_20::1. Print Registers": "print",
+    "pack_21::1. Paper & Pigment": "paint"
+  },
+  "playbooks": {
+    "photo": {
+      "title": "Fotografía y encuadre",
+      "decision": "Distinguir tratamiento fotográfico de perfil de cámara y receta temática.",
+      "preserve": [
+        "Relación focal/distancia, agrupación tonal, detalle de piel o producto cuando corresponda.",
+        "Conservar por separado perfiles de documento, macro, dron y flat lay."
+      ],
+      "doNot": [
+        "No imponer un retratado al pedir un objeto.",
+        "No convertir un estilo de calle en una calle obligatoria."
+      ],
+      "steps": [
+        "Registrar qué frases describen lente, iluminación, sujeto y formato.",
+        "Derivar solo el tratamiento; mantener el perfil especializado original."
+      ],
+      "extraBenchmark": "neutral-object"
+    },
+    "light": {
+      "title": "Luz localizada",
+      "decision": "Separar comportamiento lumínico, medio de representación y escenario.",
+      "preserve": [
+        "Dirección, tamaño aparente de fuente, suavidad, caída y contraste cromático.",
+        "La luz puede cambiar si se selecciona el modificador; el escenario no por ese solo motivo."
+      ],
+      "doNot": [
+        "No agregar un atardecer exterior, carteles o ventanas para justificar luz cálida.",
+        "No colapsar fotografía y CGI solo porque ambos usan rim light."
+      ],
+      "steps": [
+        "Extraer descripción de fuente y sombras.",
+        "Identificar conflictos con iluminación explícita; registrar incompatibilidad antes de generar."
+      ],
+      "extraBenchmark": "daylight-conflict"
+    },
+    "analog": {
+      "title": "Proceso analógico",
+      "decision": "Separar respuesta de imagen de época, cámara y soporte físico.",
+      "preserve": ["Escala de grano, curva de contraste, altas luces y sesgo cromático."],
+      "doNot": [
+        "No agregar marcos, fechas, vestuario de época o una cámara física salvo selección del perfil."
+      ],
+      "steps": [
+        "Conservar marcas y referencias en procedencia; no prometer emulación medida sin mediciones.",
+        "Comparar respuestas bajo el mismo encuadre."
+      ],
+      "extraBenchmark": "neutral-interior"
+    },
+    "broadcast": {
+      "title": "Broadcast y vídeo",
+      "decision": "Separar apariencia de señal de estructura de emisión.",
+      "preserve": [
+        "Raster, entrelazado simulado, contraste y errores de señal.",
+        "El perfil de emisión puede conservar su layout si se eligió explícitamente."
+      ],
+      "doNot": [
+        "No inventar presentador, noticiero, rótulos o interfaz al seleccionar solo acabado de vídeo."
+      ],
+      "steps": [
+        "Clasificar layout como perfil, artefactos como modificador.",
+        "Derivar acabado sin borrar el formato especializado."
+      ],
+      "extraBenchmark": "requested-text"
+    },
+    "sensor": {
+      "title": "Imagen técnica y escala",
+      "decision": "Mantener explícita la representación especializada y sus límites.",
+      "preserve": [
+        "Mapa de densidad o falso color, capas visibles, escala y proyección propias del perfil."
+      ],
+      "doNot": [
+        "No afirmar diagnóstico, medición o adquisición real a partir de una imagen generada.",
+        "No convertir automáticamente radiografía en esqueleto humano."
+      ],
+      "steps": [
+        "Definir qué transformación técnica está autorizada.",
+        "Comparar sensores por mecanismo, no por nombre o paleta."
+      ],
+      "extraBenchmark": "technical-profile"
+    },
+    "render": {
+      "title": "Render y CGI",
+      "decision": "Separar técnica de modelado/render de objeto de muestra o entregable.",
+      "preserve": [
+        "Facetas, topología visible, respuesta de materiales y economía de detalle que sean distintivas."
+      ],
+      "doNot": [
+        "No introducir una esfera de muestra, producto de estudio o anatomía específica.",
+        "No quitar geometría voxel por considerarla demasiado literal."
+      ],
+      "steps": [
+        "Identificar si se transforma geometría, superficie, cámara o medio.",
+        "Derivar un sistema concreto; no enumerar motores ni mecanismos incompatibles."
+      ],
+      "extraBenchmark": "neutral-object"
+    },
+    "drawing": {
+      "title": "Dibujo, tinta y cómic",
+      "decision": "Describir marcas y valores; separar anatomía, página y relato.",
+      "preserve": [
+        "Presión, grosor, continuidad, relación línea/mancha, bordes y detalle interno."
+      ],
+      "doNot": [
+        "No agregar superhéroes, poses, bocadillos o paneles salvo perfil.",
+        "No sustituir precisión visual por artistic/high quality."
+      ],
+      "steps": [
+        "Redactar una diferencia observable en marcas y otra en construcción de valores.",
+        "Comparar con los derivados SP19 existentes antes de añadir otro."
+      ],
+      "extraBenchmark": "neutral-person"
+    },
+    "paint": {
+      "title": "Pigmento y pintura",
+      "decision": "Separar manipulación del pigmento de géneros pictóricos y soportes de muestra.",
+      "preserve": ["Opacidad, transparencia, impasto, reserva, absorción y jerarquía de bordes."],
+      "doNot": [
+        "No aplicar todos los verbos pictóricos a todos los medios.",
+        "No introducir caballete, lienzo enmarcado o naturaleza muerta por defecto."
+      ],
+      "steps": [
+        "Elegir mecanismos compatibles con el medio concreto.",
+        "Comparar con Paper & Pigment sin asumir equivalencia por nombre."
+      ],
+      "extraBenchmark": "neutral-exterior"
+    },
+    "print": {
+      "title": "Impresión y acabados",
+      "decision": "Separar formación de la imagen, paleta, tema y formato de publicación.",
+      "preserve": ["Registro, trama, ganancia de punto, sobreimpresión o presión según técnica."],
+      "doNot": [
+        "No agregar símbolos ocultistas ni bordes de póster al extraer risografía.",
+        "No confundir emisión de luz con tinta, foil o relieve; separar esos casos."
+      ],
+      "steps": [
+        "Identificar unidad de reproducción y mecanismo de borde.",
+        "Candidatos que solo cambian paleta se comparan como variantes, no se fusionan automáticamente."
+      ],
+      "extraBenchmark": "requested-text"
+    },
+    "deliverable": {
+      "title": "Láminas y entregables",
+      "decision": "Preservar formatos útiles sin presentarlos como estilos universales.",
+      "preserve": [
+        "Turnaround, carta, bestiario, layout de paneles y vistas cuando el formato se solicita."
+      ],
+      "doNot": [
+        "No forzar carta vertical al pedir ilustración horizontal.",
+        "No inventar anotaciones, etiquetas ni medidas."
+      ],
+      "steps": [
+        "Mantener el perfil original y derivar por separado el tratamiento de tinta o pintura.",
+        "Comprobar tarea compatible antes de activar estructura de salida."
+      ],
+      "extraBenchmark": "profile-camera"
+    },
+    "diagram": {
+      "title": "Diagramas y datos",
+      "decision": "Separar representación ilustrativa de datos funcionales.",
+      "preserve": ["Jerarquía de líneas, proyección, rutas y módulos indicados por el formato."],
+      "doNot": [
+        "No afirmar que un QR, circuito o dimensión generados funcionan.",
+        "No rellenar datos ausentes con cifras plausibles."
+      ],
+      "steps": [
+        "Etiquetar ilustrativo cuando no hay validación independiente.",
+        "Tratar texto/datos requeridos como contenido, no como ruido eliminable."
+      ],
+      "extraBenchmark": "technical-profile"
+    },
+    "anime": {
+      "title": "Anime y manga",
+      "decision": "Separar dibujo, sombreado, época, vestuario, mundo y acción.",
+      "preserve": [
+        "Economía de línea, formas de sombra cel, proporciones solicitadas y tratamiento de fondos."
+      ],
+      "doNot": [
+        "No agregar uniformes, armas, ninja, escuela, monstruo o festival por el título.",
+        "No uniformar todo a clean cel shading; conservar mecanismos distintivos."
+      ],
+      "steps": [
+        "En categorías mixed clasificar cada preset, nunca el pack entero.",
+        "Usar packId real: los prefijos SP05/SP13 pueden aparecer fuera del pack homónimo.",
+        "Comparar una acción cotidiana, no solo escenas canónicas de combate."
+      ],
+      "extraBenchmark": "neutral-person"
+    },
+    "pixel": {
+      "title": "Pixel y sistemas retro",
+      "decision": "Separar lógica de píxel de hardware y cámara.",
+      "preserve": ["Clusters, rampas de valor, resolución lógica propuesta y tramado."],
+      "doNot": [
+        "No agregar consola, marco LCD, dungeon, vista isométrica ni HUD automáticamente.",
+        "No prometer dimensiones exactas de un asset sin inspeccionar el archivo."
+      ],
+      "steps": [
+        "Aislar perfil de resolución/cámara y medio de representación.",
+        "No fusionar 1-bit y paleta limitada solo por compartir píxeles."
+      ],
+      "extraBenchmark": "neutral-object"
+    },
+    "game-profile": {
+      "title": "Captura jugable y acción",
+      "decision": "Conservar perfiles deliberados; extraer un derivado de apariencia cuando sea necesario.",
+      "preserve": [
+        "Cámara, escala jugable, jerarquía interactiva y HUD cuando la función los exige."
+      ],
+      "doNot": [
+        "No quitar el perfil lateral/isométrico del original para hacerlo universal.",
+        "No introducir motel, misión, enemigo, guerra o nivel reconocible en un derivado solo visual."
+      ],
+      "steps": [
+        "Decidir primero si el pedido es captura o tratamiento libre.",
+        "Mantener original especializado, crear derivado con ID nuevo y procedencia.",
+        "En preserve, respetar encuadre; un conflicto con perfil estructural requiere decisión explícita."
+      ],
+      "extraBenchmark": "profile-camera"
+    },
+    "architecture": {
+      "title": "Arquitectura y espacio",
+      "decision": "Clasificar como dirección de diseño cuando cambia construcciones o distribución.",
+      "preserve": ["Proporciones, uniones, materialidad y reglas espaciales autorizadas."],
+      "doNot": [
+        "No convertir un interior existente en otro sitio sin permiso.",
+        "No convertir estilo de iluminación en un listado de muebles obligatorios."
+      ],
+      "steps": [
+        "Separar cambio arquitectónico de luz/acabado superficial.",
+        "Registrar permiso estructural, elementos bloqueados y plano solicitado."
+      ],
+      "extraBenchmark": "preserve-reference"
+    },
+    "wardrobe": {
+      "title": "Vestuario y subculturas",
+      "decision": "Separar diseño de prendas, material textil y escena social.",
+      "preserve": ["Corte, confección, caída, superposición y materiales de las prendas objetivo."],
+      "doNot": ["No cambiar rostro, cuerpo, profesión, época del fondo ni venue sin solicitud."],
+      "steps": [
+        "Pedir al contrato una prenda/objetivo; no deducir un cuerpo nuevo.",
+        "Mover referencias culturales y de época a procedencia/tema explícito."
+      ],
+      "extraBenchmark": "wardrobe-target"
+    },
+    "material": {
+      "title": "Material dirigido",
+      "decision": "Conservar identidad material y explicitar la superficie objetivo.",
+      "preserve": ["Veta, poro, rugosidad, reflexión, translucencia y escala coherentes."],
+      "doNot": [
+        "No agregar la tabla/aserradero del ejemplo.",
+        "No transformar toda la escena o anatomía al pedir una superficie."
+      ],
+      "steps": [
+        "Identificar objetivo y modo: acabado superficial o reemplazo material.",
+        "Separar trama/material de la estructura que lo soporta.",
+        "Comparar medio, reflectancia y escala antes de consolidar con otro pack."
+      ],
+      "extraBenchmark": "material-target"
+    },
+    "weathering": {
+      "title": "Desgaste y efectos",
+      "decision": "Separar microdesgaste de daño estructural y emisión de partículas.",
+      "preserve": ["Mecanismo de corrosión, distribución, escala e intensidad autorizada."],
+      "doNot": [
+        "No derrumbar arquitectura por pedir pátina leve.",
+        "No agregar humo, llamas o escombros si solo se solicita superficie."
+      ],
+      "steps": [
+        "Registrar objetivo e intensidad como parte del contrato.",
+        "Limitar fractura, pérdida de material y efectos externos según permiso."
+      ],
+      "extraBenchmark": "weathering-target"
+    },
+    "signal": {
+      "title": "Glitch y señal",
+      "decision": "Describir artefacto de imagen sin importar universo tecnológico.",
+      "preserve": [
+        "Arrastre de bloques, discontinuidades, muestreo, canales y orientación de artefactos."
+      ],
+      "doNot": [
+        "No sumar hackers, pantallas o ciudad neón.",
+        "No afirmar corrupción real de vídeo cuando se produce una ilustración estática."
+      ],
+      "steps": [
+        "Distinguir efectos de señal de representación con glifos y de medio impreso.",
+        "Controlar región e intensidad; no usar ruido uniforme como sustituto."
+      ],
+      "extraBenchmark": "neutral-graphic"
+    },
+    "distortion": {
+      "title": "Abstracción y extrañeza",
+      "decision": "Separar cambios de representación de geometría y espacio.",
+      "preserve": ["Planos, ritmos, unidades, perspectiva o deformación específica seleccionada."],
+      "doNot": [
+        "No introducir relojes, pasillos, piscinas o entidades por asociación con un nombre.",
+        "No aplicar distorsión estructural en preserve ni quitarla de un perfil explícito."
+      ],
+      "steps": [
+        "Clasificar el mecanismo como acabado o transformación estructural.",
+        "Si el contrato no permite alterar geometría, no fingir compatibilidad: proponer derivado o bloquear."
+      ],
+      "extraBenchmark": "distortion-conflict"
+    },
+    "craft": {
+      "title": "Construcción artesanal",
+      "decision": "Separar la superficie de imagen del material del objeto y del soporte físico.",
+      "preserve": [
+        "Capas, marcas de ensamblado, grosor, costuras o absorción propios del proceso."
+      ],
+      "doNot": [
+        "No convertir siempre en juguete humanoide o miniatura.",
+        "No agregar una mesa, objeto de soporte ni set de taller obligatorio."
+      ],
+      "steps": [
+        "Definir si se transforma el dibujo, el objeto o su soporte.",
+        "Conservar recetas de objeto/soporte especializado fuera del derivado libre."
+      ],
+      "extraBenchmark": "neutral-person"
+    },
+    "food": {
+      "title": "Alimento y presentación",
+      "decision": "Mantener recetas culinarias como contenido explícito.",
+      "preserve": ["Vertido, espuma, reflejos, textura o tratamiento gráfico que se seleccione."],
+      "doNot": [
+        "No forzar taza o plato al pedir solamente trazos de espuma.",
+        "No disfrazar una receta alimentaria de estilo universal."
+      ],
+      "steps": [
+        "Separar receta completa de derivado de luz/marcas.",
+        "El derivado debe conservar el sujeto; la receta puede requerir comida."
+      ],
+      "extraBenchmark": "neutral-graphic"
+    },
+    "cultural-theme": {
+      "title": "Mito y procedencia",
+      "decision": "Mantener contenido cultural específico como dirección explícita; separar medio visual.",
+      "preserve": ["Procedencia documentada, contexto concreto y motivos pedidos."],
+      "doNot": [
+        "No fusionar culturas por paleta o por una etiqueta continental.",
+        "No inventar una tradición, significado de símbolo o validación histórica."
+      ],
+      "steps": [
+        "Clasificar nombres y motivos como contexto, no instrucciones universales.",
+        "Derivar técnica visual sin presentarla como representación auténtica de una cultura.",
+        "Si falta fuente, registrar needs-source y no rellenar historia con inferencias."
+      ],
+      "extraBenchmark": "neutral-object"
+    },
+    "theme-render": {
+      "title": "Tema frente a representación",
+      "decision": "Separar narrativa, diseño, atmósfera y acabado.",
+      "preserve": [
+        "Relaciones de valor, tratamiento de borde, peso, materiales y color realmente distintivos."
+      ],
+      "doNot": [
+        "No hacer obligatorios reliquias, engranajes, ejércitos, símbolos o biomas en el derivado.",
+        "No borrar el tema del original que sirve precisamente para worldbuilding."
+      ],
+      "steps": [
+        "Mantener tema especializado y derivar apariencia con procedencia.",
+        "Revisar también negativos y campos de atmósfera; no basta con limpiar aesthetic."
+      ],
+      "extraBenchmark": "neutral-interior"
+    }
+  }
+}

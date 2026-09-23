@@ -378,12 +378,6 @@ export async function createStudioApp(
           grokRuntime: readGrokRuntimeDoctorFn(),
         }),
       readGrokAvailableModels: () => readGrokRuntimeDoctorFn().availableModels,
-      readCodexTransport: () =>
-        readCodexRuntimeDoctorFn().canRunJobs
-          ? 'codex_app_server'
-          : isCodexHttpCredentialReady()
-            ? 'subscription_http'
-            : 'codex_app_server',
       readCodexTransportAvailability: () => ({
         codex_app_server: readCodexRuntimeDoctorFn().canRunJobs,
         subscription_http: isCodexHttpCredentialReady(),

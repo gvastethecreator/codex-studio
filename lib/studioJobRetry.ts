@@ -9,6 +9,7 @@ export function canRetryStudioJob(
   return (
     RETRYABLE_JOB_STATUSES.has(job.status) &&
     !(job.batchId && job.status === 'cancelled') &&
-    (job.providerId !== 'codex' || Boolean(job.execution?.providerOptions?.codex))
+    (job.providerId !== 'codex' || Boolean(job.execution?.providerOptions?.codex)) &&
+    (job.providerId !== 'chatgpt' || Boolean(job.execution?.providerOptions?.chatgpt))
   );
 }

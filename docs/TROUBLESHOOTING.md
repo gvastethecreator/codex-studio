@@ -95,9 +95,15 @@ Symptoms: Codex CLI exists but jobs fail with permission or authorization errors
 
 Sign in from Studio Settings for the ChatGPT HTTP route, or run `codex login` and choose ChatGPT for the local app-server route. Then restart `bun run dev:server` if the runtime was already running.
 
-Studio ChatGPT Sign in uses the Codex device-code flow. OpenAI does not document this as a supported Studio API. The execution selector shows ChatGPT HTTP and Codex app-server independently, and captures the selected route when the job is accepted. If the selected route is unavailable, Studio blocks the job with the route-specific setup action instead of silently switching accounts.
+Studio ChatGPT Sign in uses the Codex device-code flow. OpenAI does not document this as a supported Studio API. The provider selector separates ChatGPT HTTP from Codex app-server and captures the provider contract when the job is accepted. ChatGPT uses the existing credential store, so splitting providers does not require another login. If the selected route is unavailable, Studio blocks the job with the route-specific setup action instead of silently switching accounts.
 
-Luna Reserve belongs to the signed-in Codex app-server session. When the regular Codex bucket is exhausted, select `GPT-Reserve` and the desired reasoning mode, such as `MAX`. ChatGPT Sign in is a separate subscription HTTP route: it does not consume Luna Reserve, and it does not provide public OpenAI API credits. An API-key route requires separate OpenAI API credentials and billing.
+Luna Reserve belongs to the signed-in Codex app-server session. When the regular Codex bucket is exhausted, select `GPT-Reserve` and the desired reasoning mode, such as `MAX`. ChatGPT uses a separate HTTP execution path. This separation does not establish independent subscription quotas, and does not provide public OpenAI API credits. An API-key route requires separate OpenAI API credentials and billing.
+
+### ChatGPT HTTP generation is rejected
+
+A connected session only confirms authentication. Structured provider error codes distinguish exhausted quota, temporary rate limits, expired sessions, missing access, and service failures. A generic HTTP 429 or “rate limit” message is a temporary limit, not proof that the subscription is exhausted. Job diagnostics retain a sanitized provider message and `Retry-After` when supplied.
+
+New ChatGPT jobs capture HTTP settings under `providerOptions.chatgpt`; new Codex jobs capture app-server settings under `providerOptions.codex`. Existing jobs keep their captured contracts, including historical Codex HTTP jobs. No provider switch occurs after failure. Interrupted or ambiguous submissions require review rather than automatic resubmission.
 
 ### Grok Imagine is missing or blocked
 

@@ -76,7 +76,7 @@ describe('persistentJobIntake', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
@@ -118,7 +118,6 @@ describe('persistentJobIntake', () => {
   });
 
   it('captures the selected execution route and validates its availability', async () => {
-    let transport: 'codex_app_server' | 'subscription_http' = 'codex_app_server';
     let httpReady = true;
     const createJobFn = vi.fn((input: CreateJobInput) =>
       createJob({
@@ -132,7 +131,7 @@ describe('persistentJobIntake', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => transport,
+
       readCodexTransportAvailability: () => ({
         codex_app_server: true,
         subscription_http: httpReady,
@@ -181,7 +180,6 @@ describe('persistentJobIntake', () => {
       }),
     );
 
-    transport = 'subscription_http';
     const captured = createJobFn.mock.calls[0][0].execution!;
     const changed = await intake.createJob({
       kind: 'image_generate',
@@ -194,29 +192,31 @@ describe('persistentJobIntake', () => {
     });
     const unsupported = await intake.createJob({
       kind: 'image_generate',
+      providerId: 'chatgpt',
       prompt: 'draw',
       execution: { model: 'gpt-5.4', reasoningEffort: 'high', serviceTier: 'fast' },
     });
     expect(unsupported).toMatchObject({
       ok: false,
-      error: { body: { code: 'codex_execution_unsupported' } },
+      error: { body: { code: 'chatgpt_execution_unsupported' } },
     });
     expect(createJobFn).toHaveBeenCalledTimes(2);
     const accepted = await intake.createJob({
       kind: 'image_generate',
+      providerId: 'chatgpt',
       prompt: 'draw',
       execution: {
         model: 'gpt-5.5',
         reasoningEffort: 'provider_default',
         serviceTier: null,
         providerOptions: {
-          codex: { transport: 'subscription_http', imageModel: 'gpt-image-2.5-sunburst' },
+          chatgpt: { imageModel: 'gpt-image-2.5-sunburst' },
         },
       },
       sourceSpec: createGenerationTaskSpec({
         id: 'http-wide',
         task: 'image_generate',
-        providerId: 'codex',
+        providerId: 'chatgpt',
         prompt: 'draw',
         output: { aspectRatio: '16:9' },
       }),
@@ -226,8 +226,7 @@ describe('persistentJobIntake', () => {
       job: {
         execution: {
           providerOptions: {
-            codex: {
-              transport: 'subscription_http',
+            chatgpt: {
               image: { model: 'gpt-image-2.5-sunburst', size: '1536x864', quality: 'medium' },
             },
           },
@@ -239,24 +238,24 @@ describe('persistentJobIntake', () => {
     httpReady = false;
     const unavailable = await intake.createJob({
       kind: 'image_generate',
-      providerId: 'codex',
+      providerId: 'chatgpt',
       prompt: 'draw',
       execution: {
         model: 'gpt-5.5',
         reasoningEffort: 'provider_default',
         serviceTier: null,
-        providerOptions: { codex: { transport: 'subscription_http' } },
+        providerOptions: { chatgpt: {} },
       },
       sourceSpec: createGenerationTaskSpec({
         id: 'http-unavailable',
         task: 'image_generate',
-        providerId: 'codex',
+        providerId: 'chatgpt',
         prompt: 'draw',
       }),
     });
     expect(unavailable).toMatchObject({
       ok: false,
-      error: { body: { code: 'codex_transport_unavailable', transport: 'subscription_http' } },
+      error: { body: { code: 'chatgpt_transport_unavailable', transport: 'subscription_http' } },
     });
     expect(createJobFn).toHaveBeenCalledTimes(3);
   });
@@ -291,7 +290,7 @@ describe('persistentJobIntake', () => {
           persistedRefs as Parameters<typeof hydrateSourceSpecAssetPaths>[2],
           libraryDir,
         ),
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/AI-Studio-Library',
       resolveProviderExecutionBlocker: () => null,
       isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
@@ -355,7 +354,7 @@ describe('persistentJobIntake', () => {
       updateJobFinalPrompt: () => null,
       processReferences,
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveProviderExecutionBlocker: (providerId) =>
         providerId === 'google' ? { error: 'blocked' } : null,
@@ -394,7 +393,7 @@ describe('persistentJobIntake', () => {
         updateJobFinalPrompt: () => null,
         processReferences,
         hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-        readCodexTransport: () => 'codex_app_server',
+
         readLibraryDir: () => 'D:/library',
         resolveProviderExecutionBlocker: () => null,
         isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
@@ -439,7 +438,7 @@ describe('persistentJobIntake', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'edit', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/StudioLibrary',
       readLibraryContext: () => ({
         libraryId: 'library-1',
@@ -487,7 +486,7 @@ describe('persistentJobIntake', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveBootstrapExecution: () => ({
         model: 'grok-4.6',
@@ -537,7 +536,7 @@ describe('persistentJobIntake', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveBootstrapExecution: () => ({
         model: 'grok-4.6',
@@ -579,7 +578,7 @@ describe('persistentJobIntake', () => {
       updateJobFinalPrompt: () => null,
       processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
       hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
-      readCodexTransport: () => 'codex_app_server',
+
       readLibraryDir: () => 'D:/library',
       resolveBootstrapExecution: () => ({
         model: 'grok-next-missing',

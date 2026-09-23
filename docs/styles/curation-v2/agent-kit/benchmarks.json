@@ -1,7 +1,13 @@
 {
   "schemaVersion": 1,
   "status": "fixtures-only-not-executed",
-  "common": ["neutral-object", "neutral-person", "neutral-interior", "neutral-exterior", "neutral-graphic"],
+  "common": [
+    "neutral-object",
+    "neutral-person",
+    "neutral-interior",
+    "neutral-exterior",
+    "neutral-graphic"
+  ],
   "referenceCases": ["preserve-reference", "reinterpret-reference"],
   "comparisonProtocol": {
     "repetitions": 2,
@@ -15,70 +21,99 @@
       "prompt": "Una jarra de cerámica sencilla sobre una mesa lisa. Sin otros objetos.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Solo jarra y mesa; no sujeto sustituto.", "La identidad visual elegida debe seguir visible."]
+      "checks": [
+        "Solo jarra y mesa; no sujeto sustituto.",
+        "La identidad visual elegida debe seguir visible."
+      ]
     },
     {
       "id": "neutral-person",
       "prompt": "Una persona adulta doblando una toalla en una habitación sencilla.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Mantener actividad cotidiana y anatomía solicitada.", "No armas, uniformes ni acción de combate no pedidos."]
+      "checks": [
+        "Mantener actividad cotidiana y anatomía solicitada.",
+        "No armas, uniformes ni acción de combate no pedidos."
+      ]
     },
     {
       "id": "neutral-interior",
       "prompt": "Una sala de espera pequeña con tres sillas, una puerta y paredes lisas.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Conservar tres sillas y distribución solicitada.", "No reconvertir en templo, dungeon, motel o taller."]
+      "checks": [
+        "Conservar tres sillas y distribución solicitada.",
+        "No reconvertir en templo, dungeon, motel o taller."
+      ]
     },
     {
       "id": "neutral-exterior",
       "prompt": "Un patio sencillo con un banco y un árbol durante el día.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Conservar banco, árbol y condición diurna.", "No añadir historia, facciones o paisaje no solicitado."]
+      "checks": [
+        "Conservar banco, árbol y condición diurna.",
+        "No añadir historia, facciones o paisaje no solicitado."
+      ]
     },
     {
       "id": "neutral-graphic",
       "prompt": "Composición abstracta de tres formas curvas y dos rectángulos, sin texto.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Respetar entidades gráficas y conteos.", "No introducir personaje ni escena figurativa."]
+      "checks": [
+        "Respetar entidades gráficas y conteos.",
+        "No introducir personaje ni escena figurativa."
+      ]
     },
     {
       "id": "requested-text",
       "prompt": "Un cartel sencillo con una única palabra: PAUSA. Mantenerla legible.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["La palabra pedida no está prohibida por negativos globales.", "Sin texto adicional; verificar imagen real, no solo prompt."]
+      "checks": [
+        "La palabra pedida no está prohibida por negativos globales.",
+        "Sin texto adicional; verificar imagen real, no solo prompt."
+      ]
     },
     {
       "id": "daylight-conflict",
       "prompt": "Interior al mediodía con luz neutra y sombras suaves. Mantener esa iluminación.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Detectar conflicto si el modificador impone atardecer duro; no combinar instrucciones opuestas."]
+      "checks": [
+        "Detectar conflicto si el modificador impone atardecer duro; no combinar instrucciones opuestas."
+      ]
     },
     {
       "id": "profile-camera",
       "prompt": "Representar una jarra utilizando el formato y la cámara propios del perfil seleccionado. Mantener el sujeto; añadir HUD o paneles solo si se solicitan explícitamente.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Conservar el formato declarado del perfil; no forzar vista lateral en tarot, blueprint u otros perfiles.", "No introducir misión, enemigos, símbolos ni interfaz ajenos al contrato."]
+      "checks": [
+        "Conservar el formato declarado del perfil; no forzar vista lateral en tarot, blueprint u otros perfiles.",
+        "No introducir misión, enemigos, símbolos ni interfaz ajenos al contrato."
+      ]
     },
     {
       "id": "technical-profile",
       "prompt": "Representación ilustrativa de una jarra mediante el perfil técnico seleccionado. No inventar medidas ni afirmar diagnóstico o funcionalidad.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Conservar sujeto y mecanismo técnico del perfil seleccionado.", "No convertir todo perfil técnico en radiografía; no inventar datos verificables."]
+      "checks": [
+        "Conservar sujeto y mecanismo técnico del perfil seleccionado.",
+        "No convertir todo perfil técnico en radiografía; no inventar datos verificables."
+      ]
     },
     {
       "id": "preserve-reference",
       "prompt": "Aplicar el tratamiento visual conservando el sujeto, su pose, el encuadre y la distribución de esta imagen.",
       "mode": "preserve",
       "referenceRequirement": "real-user-authorized-reference",
-      "checks": ["Registrar archivo/hash y rol explícito.", "No movimiento de cámara, cambio de pose ni reconstrucción del lugar."]
+      "checks": [
+        "Registrar archivo/hash y rol explícito.",
+        "No movimiento de cámara, cambio de pose ni reconstrucción del lugar."
+      ]
     },
     {
       "id": "reinterpret-reference",
@@ -92,7 +127,10 @@
       "prompt": "Cambiar solo el material de la jarra al material del modificador seleccionado. Conservar forma, mesa, fondo y cámara.",
       "mode": "generate",
       "referenceRequirement": null,
-      "checks": ["Preservar el material seleccionado y su comportamiento propio; no imponer roble a vidrio o metal.", "Aplicar escala superficial coherente; mesa y fondo conservan sus materiales."]
+      "checks": [
+        "Preservar el material seleccionado y su comportamiento propio; no imponer roble a vidrio o metal.",
+        "Aplicar escala superficial coherente; mesa y fondo conservan sus materiales."
+      ]
     },
     {
       "id": "weathering-target",
@@ -113,7 +151,10 @@
       "prompt": "Aplicar únicamente color y acabado. No deformar la geometría ni cambiar la perspectiva.",
       "mode": "preserve",
       "referenceRequirement": "real-user-authorized-reference",
-      "checks": ["No usar la perspectiva plegada en este contrato.", "Incompatibilidad del perfil estructural debe registrarse, no ocultarse."]
+      "checks": [
+        "No usar la perspectiva plegada en este contrato.",
+        "Incompatibilidad del perfil estructural debe registrarse, no ocultarse."
+      ]
     }
   ]
 }

@@ -27,6 +27,7 @@ export function resolveWorkerRuntimeTarget(
   }
 
   if (
+    providerId === 'chatgpt' ||
     providerId === 'grok' ||
     providerId === 'google' ||
     providerId === 'antigravity' ||

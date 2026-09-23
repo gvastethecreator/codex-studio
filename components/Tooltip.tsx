@@ -25,7 +25,6 @@ const Tooltip: React.FC<TooltipProps> = ({
     if (!open) return;
     const close = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        event.stopPropagation();
         setOpen(false);
       }
     };
@@ -83,8 +82,6 @@ export function ControlTooltips() {
     const leave = () => setAnchor(null);
     const key = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && activeAnchor.current) {
-        event.preventDefault();
-        event.stopImmediatePropagation();
         setAnchor(null);
       }
     };

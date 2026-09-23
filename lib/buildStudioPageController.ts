@@ -82,6 +82,7 @@ interface StudioPageGridContext {
   generationAspectRatio: AspectRatio;
   isInteractingWithToolbar: boolean;
   searchQuery?: string;
+  onSearchQueryChange?: (value: string) => void;
   onClearSearch?: () => void;
   onCreate?: () => void;
   catalogTotal: number;
@@ -191,6 +192,7 @@ export function buildStudioPageController(
     },
     grid: {
       searchQuery: args.grid.searchQuery,
+      onSearchQueryChange: args.grid.onSearchQueryChange,
       onClearSearch: args.grid.onClearSearch,
       onCreate: args.grid.onCreate,
       activeWorkspaceId: args.grid.activeWorkspaceId,

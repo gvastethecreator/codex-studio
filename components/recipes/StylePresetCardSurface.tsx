@@ -1,3 +1,4 @@
+import { CatalogCardBackdrop } from '../CatalogCardBackdrop';
 import { AnimatePresence } from '../../lib/gsapMotion';
 import {
   IconCheck as Check,
@@ -256,7 +257,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         data-style-source-category={sourceProvenance?.sourceCategory ?? ''}
         data-style-collection-role={sourceProvenance?.collectionRole ?? ''}
         data-selected={active}
-        className="style-preset-tile group relative aspect-[3/4] overflow-hidden rounded-[var(--wb-radius)] text-left"
+        className="style-preset-tile catalog-art-card group relative aspect-[3/4] overflow-hidden rounded-[var(--wb-radius)] text-left"
         style={
           {
             contentVisibility: 'auto',
@@ -275,56 +276,62 @@ export const StylePresetCard = React.memo(function StylePresetCard({
           />
         </div>
 
-        <button
-          type="button"
-          className="style-tile-caption"
-          onClick={() => onApply(preset)}
-          disabled={selectionDisabled}
-          aria-pressed={active}
-          aria-label={`${active ? 'Remove' : 'Select'} style ${presetDisplayName}`}
-          data-tooltip={presetDisplayName}
-        >
-          {presetDisplayName}
-        </button>
-        <div className="style-card-actions catalog-hover-actions">
-          <button
-            type="button"
-            aria-label={`${favorite ? 'Unfavorite' : 'Favorite'} ${presetDisplayName}`}
-            aria-pressed={favorite}
-            onClick={() => onToggleFavorite(preset.id)}
-          >
-            <Heart size={14} fill={favorite ? 'currentColor' : 'none'} />
-          </button>
-          <button
-            type="button"
-            aria-label={`Information about ${presetDisplayName}`}
-            onClick={(event) => {
-              event.stopPropagation();
-              setPreviewOpen(true);
-            }}
-          >
-            <Eye size={16} />
-          </button>
-          <button
-            type="button"
-            aria-label={copied ? 'Prompt copied' : 'Copy prompt'}
-            onClick={(event) => onCopy(event, preset)}
-          >
-            {copied ? <Check size={16} /> : <Copy size={16} />}
-          </button>
-          {onUsePrompt && (
+        <CatalogCardBackdrop
+          label={presetDisplayName}
+          title={
             <button
               type="button"
-              aria-label="Use as prompt"
+              className="style-tile-caption"
+              onClick={() => onApply(preset)}
+              disabled={selectionDisabled}
+              aria-pressed={active}
+              aria-label={`${active ? 'Remove' : 'Select'} style ${presetDisplayName}`}
+              data-tooltip={presetDisplayName}
+            >
+              {presetDisplayName}
+            </button>
+          }
+        >
+          <div className="style-card-actions catalog-hover-actions">
+            <button
+              type="button"
+              aria-label={`${favorite ? 'Unfavorite' : 'Favorite'} ${presetDisplayName}`}
+              aria-pressed={favorite}
+              onClick={() => onToggleFavorite(preset.id)}
+            >
+              <Heart size={14} fill={favorite ? 'currentColor' : 'none'} />
+            </button>
+            <button
+              type="button"
+              aria-label={`Information about ${presetDisplayName}`}
               onClick={(event) => {
                 event.stopPropagation();
-                onUsePrompt(preset);
+                setPreviewOpen(true);
               }}
             >
-              <TextPlus size={16} />
+              <Eye size={16} />
             </button>
-          )}
-        </div>
+            <button
+              type="button"
+              aria-label={copied ? 'Prompt copied' : 'Copy prompt'}
+              onClick={(event) => onCopy(event, preset)}
+            >
+              {copied ? <Check size={16} /> : <Copy size={16} />}
+            </button>
+            {onUsePrompt && (
+              <button
+                type="button"
+                aria-label="Use as prompt"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  onUsePrompt(preset);
+                }}
+              >
+                <TextPlus size={16} />
+              </button>
+            )}
+          </div>
+        </CatalogCardBackdrop>
       </div>
       <AnimatePresence>
         {previewOpen ? (

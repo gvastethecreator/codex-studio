@@ -33,6 +33,7 @@ import {
 } from '../../../packages/shared/src/workerContracts';
 import { readEditableStudioSettings } from './studioSettingsStore';
 import { resolveJobCatalogContext } from './workerCatalogContext';
+import { SubscriptionHttpError } from './providers/subscriptionHttpError';
 import { resolveWorkerRuntimeTarget } from './workerRouting';
 import { createWorkerAssetPathing, inferGeneratedAssetMimeType } from './workerAssetPathing';
 import { createWorkerAssetFinalizer } from './workerAssetFinalizer';
@@ -512,7 +513,20 @@ export function createWorkerController({
           error instanceof ProviderExecutionUncertainError
             ? error.message
             : 'Provider execution was recorded, but local completion could not be confirmed. Review this job before creating another request.';
-        recordJobEvent(job.id, 'job.needs_review', message);
+        const cause = error instanceof Error ? error.cause : null;
+        recordJobEvent(
+          job.id,
+          'job.needs_review',
+          message,
+          cause instanceof SubscriptionHttpError
+            ? {
+                code: cause.code,
+                providerCode: cause.providerCode,
+                httpStatus: cause.httpStatus,
+                retryAfterSeconds: cause.retryAfterSeconds,
+              }
+            : undefined,
+        );
         updateJobStatusFn(job.id, 'needs_review', message);
         publishEventFn('job.progress', getJobFn(job.id));
         logger('warn', 'worker', message, job.id);
@@ -541,6 +555,19 @@ export function createWorkerController({
         }
       } else {
         const message = formatWorkerErrorMessage(error);
+        recordJobEvent(
+          job.id,
+          'job.failed',
+          message,
+          error instanceof SubscriptionHttpError
+            ? {
+                code: error.code,
+                providerCode: error.providerCode,
+                httpStatus: error.httpStatus,
+                retryAfterSeconds: error.retryAfterSeconds,
+              }
+            : undefined,
+        );
         updateJobStatusFn(job.id, 'failed', message);
         publishEventFn('job.failed', getJobFn(job.id));
         logger('error', 'worker', message, job.id);

@@ -221,4 +221,67 @@ describe('QueuePanel views', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Hide jobs from this list' }));
     expect(screen.queryByRole('button', { name: 'Inspect job: Prompt' })).toBeNull();
   });
+
+  it('keeps the recent-result viewer keyboard-contained and closes it with Escape', () => {
+    vi.mocked(useJobHistory).mockReturnValue({
+      key: '',
+      page: null,
+      open: [],
+      history: [],
+      nextCursor: null,
+      seenHistoryIds: [],
+      knownAtRequest: [],
+      workspaces: [],
+      loading: false,
+      error: null,
+      loadMore: vi.fn(),
+      retry: vi.fn(),
+    });
+    const closePanel = vi.fn();
+    render(
+      React.createElement(QueuePanel, {
+        results: [
+          {
+            id: 'first',
+            src: '/first.png',
+            fullSrc: '/first.png',
+            prompt: 'First result',
+            jobId: null,
+            recipeId: null,
+            createdAt: '',
+          },
+          {
+            id: 'second',
+            src: '/second.png',
+            fullSrc: '/second.png',
+            prompt: 'Second result',
+            jobId: null,
+            recipeId: null,
+            createdAt: '',
+          },
+        ],
+        onInspectJob: vi.fn(),
+        onCancelServerJob: vi.fn(),
+        onClose: closePanel,
+      }),
+    );
+
+    const jobsPanel = screen.getByRole('region', { name: 'Jobs' });
+    expect(document.activeElement).toBe(jobsPanel);
+
+    fireEvent.click(screen.getByRole('button', { name: 'History' }));
+    fireEvent.click(screen.getByText('Recent images · current workspace'));
+    fireEvent.click(screen.getByRole('button', { name: 'First result' }));
+    const viewer = screen.getByRole('dialog', { name: 'Recent result viewer' });
+    expect(viewer.contains(document.activeElement)).toBe(true);
+    fireEvent.keyDown(viewer, { key: 'ArrowRight' });
+    expect(screen.getByText('2 / 2')).toBeTruthy();
+    vi.spyOn(viewer, 'getClientRects').mockReturnValue([{}] as unknown as DOMRectList);
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(screen.queryByRole('dialog', { name: 'Recent result viewer' })).toBeNull();
+    expect(closePanel).not.toHaveBeenCalled();
+    jobsPanel.focus();
+    fireEvent.keyDown(document, { key: 'Escape' });
+    expect(closePanel).toHaveBeenCalledOnce();
+  });
 });

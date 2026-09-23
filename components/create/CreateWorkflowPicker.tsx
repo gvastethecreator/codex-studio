@@ -1,5 +1,5 @@
 import { AnimatePresence } from '../../lib/gsapMotion';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { IconChevronDown, IconSitemap, IconSparkles } from '@tabler/icons-react';
 
 import type { RecipeAliasId } from '../../lib/recipeAliases';
@@ -38,6 +38,7 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
 }) => {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const popoverRef = useRef<HTMLDivElement>(null);
   const recipeDiscovery = useMemo(() => createRecipeDiscoveryProjection(), []);
   const isDefaultSelected = selectedLabel === 'Default';
   const activeId =
@@ -53,6 +54,24 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
     },
     [onPreviewRecipe],
   );
+
+  useLayoutEffect(() => {
+    if (!open) return;
+    const updatePopoverPosition = () => {
+      if (!rootRef.current || !popoverRef.current) return;
+      popoverRef.current.style.setProperty(
+        '--create-workflow-popover-top',
+        `${rootRef.current.getBoundingClientRect().bottom + 7}px`,
+      );
+    };
+    updatePopoverPosition();
+    window.addEventListener('resize', updatePopoverPosition);
+    window.addEventListener('scroll', updatePopoverPosition, true);
+    return () => {
+      window.removeEventListener('resize', updatePopoverPosition);
+      window.removeEventListener('scroll', updatePopoverPosition, true);
+    };
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -116,6 +135,7 @@ export const CreateWorkflowPicker: React.FC<CreateWorkflowPickerProps> = ({
         <AnimatePresence>
           {open ? (
             <div
+              ref={popoverRef}
               id="create-workflow-list"
               role="listbox"
               aria-label="Workflows"

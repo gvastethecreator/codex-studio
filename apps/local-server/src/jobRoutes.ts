@@ -64,7 +64,7 @@ export function createJobRoutes({
   validateManagedAssets,
   resolveProviderExecutionBlocker,
   readGrokAvailableModels,
-  readCodexTransport,
+
   readCodexTransportAvailability,
   resolveBootstrapExecution,
   readEditableSettings,
@@ -86,7 +86,7 @@ export function createJobRoutes({
     validateManagedAssets,
     resolveProviderExecutionBlocker,
     readGrokAvailableModels,
-    readCodexTransport,
+
     readCodexTransportAvailability,
     resolveBootstrapExecution,
     readEditableSettings,
@@ -210,19 +210,27 @@ export function createJobRoutes({
     }
 
     const providerId = resolveJobProviderId(job);
-    if (providerId === 'codex' && !job.execution?.providerOptions?.codex) {
+    if (
+      (providerId === 'codex' && !job.execution?.providerOptions?.codex) ||
+      (providerId === 'chatgpt' && !job.execution?.providerOptions?.chatgpt)
+    ) {
       return c.json(
         {
           error:
             'This job has no captured execution policy. Review its result and create a new job.',
-          code: 'codex_execution_missing',
+          code: `${providerId}_execution_missing`,
         },
         409,
       );
     }
     const providerBlocker = resumeRemoteExecution
       ? null
-      : await resolveProviderExecutionBlocker(providerId);
+      : await resolveProviderExecutionBlocker(
+          providerId === 'codex' &&
+            job.execution?.providerOptions?.codex?.transport === 'subscription_http'
+            ? 'chatgpt'
+            : providerId,
+        );
     if (providerBlocker) {
       return c.json(providerBlocker as Record<string, unknown>, 400);
     }

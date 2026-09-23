@@ -15,6 +15,7 @@ const SIZE = {
 
 const PROVIDER_MARKS: Record<string, string> = {
   codex: codexMark,
+  chatgpt: codexMark,
   grok: grokMark,
   google: googleMark,
   antigravity: antigravityMark,
@@ -24,7 +25,7 @@ const PROVIDER_MARKS: Record<string, string> = {
 
 function ProviderGlyph({ providerId, size }: { providerId: string; size: number }) {
   const src = PROVIDER_MARKS[providerId];
-  if (src && ['codex', 'grok', 'fal'].includes(providerId))
+  if (src && ['codex', 'chatgpt', 'grok', 'fal'].includes(providerId))
     return (
       <span
         className={`provider-mark provider-mark-${providerId} provider-mark-monochrome`}

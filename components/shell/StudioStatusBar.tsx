@@ -1,6 +1,7 @@
 import React from 'react';
 import { IconLayoutSidebarRight as SidebarRight, IconServer as Server } from '@tabler/icons-react';
 
+import type { UseCatalogResult } from '../../hooks/useCatalogPage';
 import type { StudioCommandCenterProjection } from '../../lib/commandCenterProjection';
 import type { StudioUsageSummary } from '../../lib/studioDiagnostics';
 import { cn } from '../../lib/utils';
@@ -11,6 +12,10 @@ import Tooltip from '../Tooltip';
 export interface StudioStatusBarProps {
   usage: StudioUsageSummary;
   commandCenter: StudioCommandCenterProjection;
+  imageHistory?: Pick<
+    UseCatalogResult,
+    'total' | 'isLoading' | 'error' | 'hasMore' | 'loadMore' | 'refresh'
+  >;
   isQueueOpen: boolean;
   onToggleQueue: () => void;
   onOpenDashboard: () => void;
@@ -27,6 +32,7 @@ function runtimeToneClass(tone: StudioCommandCenterProjection['runtimeStatus']['
 export function StudioStatusBar({
   usage,
   commandCenter,
+  imageHistory,
   isQueueOpen,
   onToggleQueue,
   onOpenDashboard,
@@ -60,6 +66,27 @@ export function StudioStatusBar({
           </li>
         ))}
       </ul>
+
+      {imageHistory && (
+        <div className="studio-status-image-history">
+          <span role="status">
+            {imageHistory.isLoading ? 'Loading images…' : `${imageHistory.total} images`}
+          </span>
+          {imageHistory.error && (
+            <button
+              type="button"
+              aria-label="Retry loading images"
+              onClick={() =>
+                void (
+                  imageHistory.hasMore ? imageHistory.loadMore() : imageHistory.refresh()
+                ).catch(() => undefined)
+              }
+            >
+              Retry
+            </button>
+          )}
+        </div>
+      )}
 
       <div className="studio-status-spacer" />
 

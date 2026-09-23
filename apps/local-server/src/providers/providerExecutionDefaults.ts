@@ -1,5 +1,6 @@
 import type { GenerationProviderId, JobExecutionOptions } from '../../../../packages/shared/src';
 import { DEFAULT_GOOGLE_IMAGE_MODEL } from '../../../../packages/shared/src/googleImageContract';
+import { CODEX_HTTP_EXECUTION_DEFAULTS } from '../../../../packages/shared/src/codexExecutionContract';
 import { getSettings } from '../config';
 import { readGrokRuntimeDoctor, type GrokRuntimeDoctorReport } from '../grokRuntimeDoctor';
 
@@ -16,6 +17,7 @@ export function resolveBootstrapProviderExecutionOptions(
   env: Record<string, string | undefined> = process.env,
   options: ResolveBootstrapProviderExecutionOptionsInput = {},
 ): JobExecutionOptions {
+  if (providerId === 'chatgpt') return { ...CODEX_HTTP_EXECUTION_DEFAULTS };
   if (providerId === 'codex') {
     const settings = getSettings();
     return {

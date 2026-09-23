@@ -8,6 +8,7 @@ import { ImageGrid } from '../ImageGrid';
 
 export interface StudioGridSurfaceProps {
   searchQuery?: string;
+  onSearchQueryChange?: (value: string) => void;
   onClearSearch?: () => void;
   onCreate?: () => void;
   activeWorkspaceId: string;
@@ -53,6 +54,7 @@ export interface StudioGridSurfaceProps {
 
 export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
   searchQuery,
+  onSearchQueryChange,
   onClearSearch,
   onCreate,
   activeWorkspaceId,
@@ -130,6 +132,7 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
         <ErrorBoundary fallbackMessage="Failed to render the image grid.">
           <ImageGrid
             searchQuery={searchQuery}
+            onSearchQueryChange={onSearchQueryChange}
             onClearSearch={onClearSearch}
             onCreate={onCreate}
             key={activeWorkspaceId}

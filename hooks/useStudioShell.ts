@@ -56,7 +56,6 @@ const EMPTY_RUNTIME_LOGS: LogEntry[] = [];
 export interface StudioShellController {
   history: ReturnType<typeof useStudioCatalogController>['historyCatalog'];
   historySelection: { id: string | null; setId: (id: string) => void };
-  librarySearch: { query: string; setQuery: (value: string) => void };
   root: {
     onDragOver: ReturnType<typeof useImageInputSurface>['handleDragOver'];
     onDragLeave: ReturnType<typeof useImageInputSurface>['handleDragLeave'];
@@ -187,14 +186,19 @@ export function useStudioShell(): StudioShellController {
 
   const codexAvailableTransports = useMemo<readonly CodexExecutionTransport[] | undefined>(() => {
     const preflight = studioSettings.data.providerDomain.runtimePreflight?.providers.find(
-      (provider) => provider.providerId === 'codex',
+      (provider) =>
+        provider.providerId ===
+        (studioSettings.data.settingsDomain.settings?.defaultProviderId ?? 'codex'),
     );
     if (!preflight?.availableRuntimeKinds) return undefined;
     return preflight.availableRuntimeKinds.filter(
       (runtimeKind): runtimeKind is CodexExecutionTransport =>
         runtimeKind === 'codex_app_server' || runtimeKind === 'subscription_http',
     );
-  }, [studioSettings.data.providerDomain.runtimePreflight]);
+  }, [
+    studioSettings.data.providerDomain.runtimePreflight,
+    studioSettings.data.settingsDomain.settings?.defaultProviderId,
+  ]);
 
   const codexDefaultTransport: CodexExecutionTransport | undefined =
     codexAvailableTransports?.includes('codex_app_server')
@@ -651,6 +655,7 @@ export function useStudioShell(): StudioShellController {
           generationAspectRatio: config.aspectRatio,
           isInteractingWithToolbar: ui.isInteractingWithToolbar,
           searchQuery: catalogQuery,
+          onSearchQueryChange: setCatalogQuery,
           onClearSearch: () => setCatalogQuery(''),
           onCreate: () => handleRecipeSelection(null),
           catalogTotal: activeCatalog.total,
@@ -940,7 +945,6 @@ export function useStudioShell(): StudioShellController {
     (): StudioShellController => ({
       history: historyCatalog,
       historySelection: { id: historySelectedId, setId: selectHistoryImage },
-      librarySearch: { query: catalogQuery, setQuery: setCatalogQuery },
       root: {
         onDragOver: handleDragOver,
         onDragLeave: handleDragLeave,

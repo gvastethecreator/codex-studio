@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 
 import {
   createCodexRuntimePreflight,
+  createChatgptRuntimePreflight,
   createAntigravityRuntimePreflight,
   createGrokRuntimePreflight,
   createProviderReadinessMaps,
@@ -152,29 +153,26 @@ describe('provider runtime config', () => {
   });
 
   it('maps Codex Runtime Doctor blockers into provider preflight diagnostics', () => {
-    const preflight = createCodexRuntimePreflight(
-      {
-        status: 'blocked',
-        canRunJobs: false,
-        checkedAt: '2026-05-31T00:00:00.000Z',
-        selectedExecutable: 'C:/Users/dev/AppData/Roaming/npm/codex.cmd',
-        selectedCommand: 'codex --version',
-        selectedVersion: 'codex 0.2.3',
-        selectedVersionNumber: '0.2.3',
-        appServerSupported: false,
-        recommendedAction: 'Use the OpenAI Codex desktop CLI binary.',
-        issues: [
-          {
-            code: 'codex_cli_legacy',
-            severity: 'error',
-            message: 'Selected Codex CLI looks legacy.',
-            action: 'Use the OpenAI Codex desktop CLI binary.',
-          },
-        ],
-        candidates: [],
-      },
-      { httpReady: false },
-    );
+    const preflight = createCodexRuntimePreflight({
+      status: 'blocked',
+      canRunJobs: false,
+      checkedAt: '2026-05-31T00:00:00.000Z',
+      selectedExecutable: 'C:/Users/dev/AppData/Roaming/npm/codex.cmd',
+      selectedCommand: 'codex --version',
+      selectedVersion: 'codex 0.2.3',
+      selectedVersionNumber: '0.2.3',
+      appServerSupported: false,
+      recommendedAction: 'Use the OpenAI Codex desktop CLI binary.',
+      issues: [
+        {
+          code: 'codex_cli_legacy',
+          severity: 'error',
+          message: 'Selected Codex CLI looks legacy.',
+          action: 'Use the OpenAI Codex desktop CLI binary.',
+        },
+      ],
+      candidates: [],
+    });
 
     expect(preflight).toMatchObject({
       providerId: 'codex',
@@ -183,29 +181,32 @@ describe('provider runtime config', () => {
       canAttemptExecution: false,
     });
     expect(preflight.diagnostics.join(' ')).toContain('legacy');
+    expect(createChatgptRuntimePreflight(true)).toMatchObject({
+      providerId: 'chatgpt',
+      runtimeKind: 'subscription_http',
+      localRuntimeState: 'not_required',
+      canAttemptExecution: true,
+    });
   });
 
   it('reports Codex app-server and ChatGPT HTTP as separate usable routes', () => {
-    const preflight = createCodexRuntimePreflight(
-      {
-        status: 'ready',
-        canRunJobs: true,
-        checkedAt: '2026-05-31T00:00:00.000Z',
-        selectedExecutable: 'C:/Users/dev/AppData/Roaming/npm/codex.cmd',
-        selectedCommand: 'codex --version',
-        selectedVersion: 'codex 0.2.3',
-        selectedVersionNumber: '0.2.3',
-        appServerSupported: true,
-        recommendedAction: 'Codex app-server is ready.',
-        issues: [],
-        candidates: [],
-      },
-      { httpReady: true },
-    );
+    const preflight = createCodexRuntimePreflight({
+      status: 'ready',
+      canRunJobs: true,
+      checkedAt: '2026-05-31T00:00:00.000Z',
+      selectedExecutable: 'C:/Users/dev/AppData/Roaming/npm/codex.cmd',
+      selectedCommand: 'codex --version',
+      selectedVersion: 'codex 0.2.3',
+      selectedVersionNumber: '0.2.3',
+      appServerSupported: true,
+      recommendedAction: 'Codex app-server is ready.',
+      issues: [],
+      candidates: [],
+    });
 
     expect(preflight).toMatchObject({
       runtimeKind: 'codex_app_server',
-      availableRuntimeKinds: ['codex_app_server', 'subscription_http'],
+      availableRuntimeKinds: ['codex_app_server'],
       canAttemptExecution: true,
     });
   });

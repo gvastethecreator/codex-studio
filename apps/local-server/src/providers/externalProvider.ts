@@ -1,5 +1,6 @@
 import type { CompiledProviderInput, GenerationProviderId } from '../../../../packages/shared/src';
 import type { TurnResult } from '../codex/turn';
+import { createChatgptResponsesImageExecutor } from './chatgptResponsesImageExecutor';
 import { createComfyWorkflowExecutor } from './comfyExecutor';
 import { createAntigravityImageExecutor } from './antigravityImageExecutor';
 import { createFalImageExecutor } from './falExecutor';
@@ -33,6 +34,10 @@ export interface CreateExternalGenerationProviderDependencies {
 
 function createDefaultExecutor(providerId: ExternalExecutableProviderId) {
   switch (providerId) {
+    case 'chatgpt': {
+      const execute = createChatgptResponsesImageExecutor();
+      return ({ job }: ExternalProviderExecutionContext) => execute(job);
+    }
     case 'google':
       return createGoogleImageExecutor();
     case 'antigravity':

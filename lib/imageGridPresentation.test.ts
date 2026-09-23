@@ -143,10 +143,10 @@ describe('imageGridPresentation', () => {
   });
 
   it('resolves template columns by gallery view mode', () => {
-    expect(resolveImageGridTemplateColumns(3, 176, 'mosaic')).toBe('repeat(3, 176px)');
-    expect(resolveImageGridTemplateColumns(3, 176, 'grid')).toBe('repeat(3, minmax(0, 1fr))');
-    expect(resolveImageGridTemplateColumns(3, 176, 'cards')).toBe('repeat(3, minmax(0, 1fr))');
-    expect(resolveImageGridTemplateColumns(3, 176, 'list')).toBe('minmax(0, 1fr)');
+    expect(resolveImageGridTemplateColumns(3, 'mosaic')).toBe('repeat(3, minmax(0, 1fr))');
+    expect(resolveImageGridTemplateColumns(3, 'grid')).toBe('repeat(3, minmax(0, 1fr))');
+    expect(resolveImageGridTemplateColumns(3, 'cards')).toBe('repeat(3, minmax(0, 1fr))');
+    expect(resolveImageGridTemplateColumns(3, 'list')).toBe('minmax(0, 1fr)');
   });
 
   it('sorts generated images by explicit gallery actions', () => {

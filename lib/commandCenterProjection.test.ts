@@ -289,6 +289,12 @@ describe('buildStudioCommandCenterProjection', () => {
         statusDetail: 'Ready',
       }),
       expect.objectContaining({
+        id: 'chatgpt',
+        label: 'ChatGPT',
+        status: 'unknown',
+        canExecute: false,
+      }),
+      expect.objectContaining({
         id: 'grok',
         label: 'Grok Imagine',
         canExecute: true,

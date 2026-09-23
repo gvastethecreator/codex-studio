@@ -39,7 +39,7 @@ describe('recipeModules', () => {
       title: 'Styles',
       defaultTask: 'image_generate',
       supportedTasks: ['image_generate', 'image_edit', 'style_preset_card'],
-      supportedProviders: ['codex', 'grok', 'google', 'antigravity', 'dry_run'],
+      supportedProviders: ['codex', 'chatgpt', 'grok', 'google', 'antigravity', 'dry_run'],
     });
     expect(styles?.parameters.map((parameter) => parameter.id)).toContain('presetId');
     expect(spritesheet?.defaultTask).toBe('sprite_sheet');
@@ -158,7 +158,7 @@ describe('recipeModules', () => {
       output: { count: 1, aspectRatio: '1:1' },
       metadata: {
         recipeModule: {
-          supportedProviders: ['codex', 'grok', 'google', 'antigravity', 'dry_run'],
+          supportedProviders: ['codex', 'chatgpt', 'grok', 'google', 'antigravity', 'dry_run'],
         },
       },
     });
@@ -215,7 +215,7 @@ describe('recipeModules', () => {
     expect(spec.metadata.recipeModule).toMatchObject({
       id: 'camera',
       defaultTask: 'image_generate',
-      supportedProviders: ['codex', 'dry_run'],
+      supportedProviders: ['codex', 'chatgpt', 'dry_run'],
     });
     expect(spec.quality).toMatchObject({
       qualityPresetId: 'image_general',
