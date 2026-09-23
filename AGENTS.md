@@ -68,6 +68,10 @@ Use `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, or `wont
 
 This repository uses one product context. Read the root `CONTEXT.md` and relevant `docs/adr/` entries when they exist. See `docs/agents/domain.md`.
 
+### Style curation continuation
+
+For category/preset curation, read `docs/styles/curation-v2/agent-kit/START-HERE.md`. Generate one bounded packet with `bun scripts/style-curation/agent-kit.mjs packet --key="<exact key from list>"`. Keep original identities, distinguish visual styles from modifiers/profiles/themes, and record real validation separately from pending image review. The kit is not permission to archive, migrate user data, call providers or mark the PR accepted. Its report validator checks records, not image quality.
+
 ## Closeout
 
 Do not claim completion without fresh command output. Minimum closeout for broad changes:
