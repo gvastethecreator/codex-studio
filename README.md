@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://github.com/gvastethecreator/codex-studio/actions/workflows/ci.yml"><img alt="CI status" src="https://shieldcn.dev/github/ci/gvastethecreator/codex-studio.svg?workflow=ci&branch=main&variant=secondary&size=xs" /></a>
   <a href="https://gvastethecreator.github.io/codex-studio/"><img alt="Project site" src="https://shieldcn.dev/badge/site-pages-087f86.svg?logo=githubpages&variant=branded&size=xs" /></a>
-  <a href="https://bun.com"><img alt="Bun 1.3.14" src="https://shieldcn.dev/badge/runtime-Bun%201.3.14-000000.svg?logo=bun&variant=branded&size=xs" /></a>
+  <a href="https://bun.com"><img alt="Bun 1.4.2" src="https://shieldcn.dev/badge/runtime-Bun%201.4.2-000000.svg?logo=bun&variant=branded&size=xs" /></a>
   <a href="https://github.com/gvastethecreator/codex-studio/stargazers"><img alt="GitHub stars" src="https://shieldcn.dev/github/stars/gvastethecreator/codex-studio.svg?variant=secondary&size=xs" /></a>
   <a href="LICENSE"><img alt="MIT license" src="https://shieldcn.dev/github/license/gvastethecreator/codex-studio.svg?variant=secondary&size=xs" /></a>
 </p>

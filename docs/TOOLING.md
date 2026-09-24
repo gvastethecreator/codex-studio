@@ -4,7 +4,7 @@
 
 Codex Studio uses **Bun** as package manager and backend runtime. Use `bun` or `bunx` for operational scripts. Do not use `npm`, `npx`, `pnpm`, or `yarn` for those scripts.
 
-The repository and CI pin Bun `1.3.14` through `packageManager` and the workflow setup step. Use `bun install` for a local dependency refresh. Use `bun install --frozen-lockfile` for reproducible validation and CI.
+The repository and CI pin Bun `1.4.2` through `packageManager` and the workflow setup step. Use `bun install` for a local dependency refresh. Use `bun install --frozen-lockfile` for reproducible validation and CI.
 
 The repository is one Bun package. Nested `apps/*` and `packages/*` folders are source boundaries, not separate package manifests, until real `package.json` files exist.
 
@@ -21,7 +21,7 @@ Use one validation level per integration. Each broader gate includes the narrowe
 | `bun run validate:release`       | Release gate                                 |
 | `bun run validate:full`          | Compatibility alias of the release gate      |
 | `bun run typecheck:environments` | Web, server, shared, and script boundaries   |
-| `bun run doctor`                 | `bunx react-doctor@0.9.7`                    |
+| `bun run doctor`                 | `bunx react-doctor@0.9.13`                   |
 | `bun run docs:check`             | Broken local doc links                       |
 | `bun run repo:hygiene:verify`    | Reject tracked secrets, DBs, and scratch     |
 | `bun run repo:assets:audit`      | Core budget and optional pack hashes         |

@@ -22,21 +22,30 @@ export default defineConfig({
     rolldownOptions: {
       output: {
         codeSplitting: {
-          groups: [14, 15].flatMap((pack) =>
-            Array.from({ length: pack === 14 ? 8 : 5 }, (_, batch) => ({
-              name: `archived-style-presets-${pack}-${batch + 1}`,
-              test: (id: string) => {
-                const match = id.match(
-                  /[\\/]styles[\\/]manifests[\\/]archive[\\/](?:conceptual-refactor-20260923|identity-repair-20260923)[\\/]presets[\\/]pack_(14|15)[\\/][^\\/]+-(\d{3})\.yaml(?:\?.*)?$/,
-                );
-                return (
-                  match !== null &&
-                  Number(match[1]) === pack &&
-                  Math.floor((Number(match[2]) - 1) / 20) === batch
-                );
-              },
-            })),
-          ),
+          groups: [
+            {
+              name: 'styles-browser-support',
+              test: (id: string) =>
+                /[\\/]components[\\/]recipes[\\/](?:stylePresetManifests|styleLayerComposer|styleBrowserRenderPlan|useStyleComposition|styleCategoryIdentity|styleGridVirtualization|useStyleBrowserNavigation|useUserStyleLibrary)\.tsx?(?:\?.*)?$/.test(
+                  id,
+                ),
+            },
+            ...[14, 15].flatMap((pack) =>
+              Array.from({ length: pack === 14 ? 8 : 5 }, (_, batch) => ({
+                name: `archived-style-presets-${pack}-${batch + 1}`,
+                test: (id: string) => {
+                  const match = id.match(
+                    /[\\/]styles[\\/]manifests[\\/]archive[\\/](?:conceptual-refactor-20260923|identity-repair-20260923)[\\/]presets[\\/]pack_(14|15)[\\/][^\\/]+-(\d{3})\.yaml(?:\?.*)?$/,
+                  );
+                  return (
+                    match !== null &&
+                    Number(match[1]) === pack &&
+                    Math.floor((Number(match[2]) - 1) / 20) === batch
+                  );
+                },
+              })),
+            ),
+          ],
         },
       },
     },
@@ -86,6 +95,15 @@ export default defineConfig({
           'react/rules-of-hooks': 'error',
           'react/exhaustive-deps': 'off',
           'react/only-export-components': 'off',
+          // The React Compiler diagnostics introduced by newer Oxlint are a separate
+          // component migration; keep this upgrade on the existing lint contract.
+          'react/set-state-in-effect': 'off',
+          'react/refs': 'off',
+          'react/immutability': 'off',
+          'react/preserve-manual-memoization': 'off',
+          'react/purity': 'off',
+          'react/globals': 'off',
+          'react/static-components': 'off',
         },
         env: {
           es2022: true,
