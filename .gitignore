@@ -31,6 +31,9 @@ $null
 .css-sanitization/
 .snapshots/
 docs/codemap/.staging/
+docs/codemap/.review/
+docs/codemap/.publication/
+docs/codemap/.publisher.lock
 
 # Local DB / WAL
 *.sqlite
