@@ -24,7 +24,13 @@ const controlPrimary = `${controlBase} studio-primary-control`;
 const controlGhost = `${controlBase} studio-ghost-control`;
 const controlQuiet = `${controlBase} border border-[color:var(--wb-line)] bg-transparent text-[color:var(--wb-muted)] hover:border-rose-500/2 hover:bg-rose-500/10 hover:text-[color:var(--wb-danger)] `;
 
-export function SubscriptionAuthControls({ providerId }: { providerId: SubscriptionProviderId }) {
+export function SubscriptionAuthControls({
+  providerId,
+  compact = false,
+}: {
+  providerId: SubscriptionProviderId;
+  compact?: boolean;
+}) {
   const [status, setStatus] = useState<SubscriptionAuthPublicStatus | null>(null);
   const [isLoadingStatus, setIsLoadingStatus] = useState(true);
   const [busy, setBusy] = useState(false);
@@ -123,7 +129,11 @@ export function SubscriptionAuthControls({ providerId }: { providerId: Subscript
   };
 
   return (
-    <div className="settings-account-auth">
+    <div
+      className="settings-account-auth"
+      data-compact={compact || undefined}
+      data-has-account={status?.status === 'logged_in' && status.accountLabel ? true : undefined}
+    >
       {status?.status === 'pending' && browserUrl ? (
         <div className="grid gap-3 rounded-[var(--wb-radius)] border border-accent-400/2 bg-accent-500/10 p-3">
           <div className="flex items-start justify-between gap-2">

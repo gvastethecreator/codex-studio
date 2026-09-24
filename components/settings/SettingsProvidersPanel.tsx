@@ -28,7 +28,7 @@ interface SettingsProvidersPanelProps {
 function StatusPill({ children, className }: { children: ReactNode; className: string }) {
   return (
     <span
-      className={`inline-flex h-6 shrink-0 items-center rounded-[var(--wb-radius)] border px-2 text-[length:var(--wbp-label)] font-semibold ${className}`}
+      className={`inline-flex h-6 shrink-0 items-center rounded-[var(--wb-radius)] border px-1.5 text-[length:var(--wbp-label)] font-semibold ${className}`}
     >
       {children}
     </span>
@@ -137,44 +137,41 @@ export function SettingsProvidersPanel({
                 subscriptionId || provider.providerId === 'comfy'
                   ? null
                   : providerSecretLabel(preflight?.secretState, preflight?.secretSource);
-              const readyLabel =
+              const readinessLabel =
                 provider.providerId === 'chatgpt' && provider.canExecute
-                  ? 'Session connected'
+                  ? 'Connected'
                   : providerReadyLabel({
                       canExecute: provider.canExecute,
                       status: provider.status,
                     });
+              const readyLabel = readinessLabel === 'Needs setup' ? 'Setup' : readinessLabel;
 
               return (
-                <div key={provider.providerId} className="settings-provider-account">
-                  <div className="flex items-start gap-3">
+                <div
+                  key={provider.providerId}
+                  className="settings-provider-account"
+                  data-provider={provider.providerId}
+                >
+                  <div className="settings-provider-account-header">
                     <ProviderBrandMark
                       providerId={provider.providerId}
                       size="md"
                       canExecute={provider.canExecute}
                       status={provider.status}
                     />
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-start justify-between gap-2">
-                        <div className="min-w-0">
-                          <div className="text-xs font-semibold text-[color:var(--wb-ink)]">
-                            {provider.label}
-                          </div>
-                          {provider.isDefault ? (
-                            <p className="mt-0.5 text-[11px] text-[color:var(--wb-muted)]">
-                              Default provider
-                            </p>
-                          ) : null}
-                        </div>
-                        <StatusPill
-                          className={providerReadyPillClass({
-                            canExecute: provider.canExecute,
-                            status: provider.status,
-                          })}
-                        >
-                          {readyLabel}
-                        </StatusPill>
+                    <div className="settings-provider-account-heading">
+                      <div className="settings-provider-account-title">
+                        <span>{provider.label}</span>
+                        {provider.isDefault ? <small>Default</small> : null}
                       </div>
+                      <StatusPill
+                        className={providerReadyPillClass({
+                          canExecute: provider.canExecute,
+                          status: provider.status,
+                        })}
+                      >
+                        {readyLabel}
+                      </StatusPill>
                     </div>
                   </div>
                   {runtimeLabel || secretLabel ? (
@@ -183,12 +180,19 @@ export function SettingsProvidersPanel({
                     </p>
                   ) : null}
                   {!provider.canExecute && (
-                    <p className="settings-provider-attention">{provider.detail}</p>
+                    <p className="settings-provider-attention" title={provider.detail}>
+                      {provider.detail}
+                    </p>
                   )}
-                  {subscriptionId ? <SubscriptionAuthControls providerId={subscriptionId} /> : null}
+                  {subscriptionId ? (
+                    <SubscriptionAuthControls providerId={subscriptionId} compact />
+                  ) : null}
                   <details className="settings-provider-details">
                     <summary>Connection details</summary>
-                    {provider.canExecute && <p>{provider.detail}</p>}
+                    <p>{provider.detail}</p>
+                    {provider.providerId === 'google' ? (
+                      <p>Uses your Google Cloud project for billing and quota.</p>
+                    ) : null}
                     {preflight?.diagnostics.length ? (
                       <p>{preflight.diagnostics.join(' ')}</p>
                     ) : null}

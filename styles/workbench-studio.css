@@ -408,13 +408,13 @@
 .studio-settings-dialog {
   display: flex;
   flex-direction: column;
-  width: min(100%, 980px);
-  max-height: min(88dvh, 900px);
+  width: min(100%, 1120px);
+  max-height: min(calc(100dvh - 24px), 940px);
   overflow: hidden;
 }
 .studio-settings-layout {
   display: grid;
-  grid-template-columns: 176px minmax(0, 1fr);
+  grid-template-columns: 164px minmax(0, 1fr);
   flex: 1;
   min-height: 0;
 }
@@ -442,7 +442,7 @@
 .studio-settings-content {
   min-width: 0;
   min-height: 0;
-  padding: 18px;
+  padding: 16px;
   overflow-y: auto;
   scrollbar-gutter: stable;
 }
@@ -455,7 +455,7 @@
 }
 .settings-provider-picker {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(124px, 1fr));
   gap: 6px;
 }
 .settings-provider-option {
@@ -476,9 +476,9 @@
 }
 .settings-provider-accounts {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
   gap: 10px;
-  align-items: start;
+  align-items: stretch;
 }
 .settings-provider-account,
 .settings-provider-defaults {
@@ -487,6 +487,44 @@
   border: 1px solid var(--wb-line);
   border-radius: var(--wb-radius);
   background: var(--wb-panel);
+}
+.settings-provider-account {
+  display: flex;
+  min-height: 124px;
+  flex-direction: column;
+  padding: 10px;
+}
+.settings-provider-account-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 10px;
+}
+.settings-provider-account-heading {
+  display: flex;
+  min-width: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+}
+.settings-provider-account-title {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--wb-ink);
+}
+.settings-provider-account-title span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.settings-provider-account-title small {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--wb-muted);
 }
 .settings-provider-runtime,
 .settings-provider-attention,
@@ -499,6 +537,14 @@
 }
 .settings-provider-attention {
   color: var(--wb-warning);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.settings-provider-details {
+  margin-top: auto;
+  padding-top: 8px;
 }
 .settings-provider-details summary,
 .settings-provider-defaults summary {
@@ -554,6 +600,36 @@
 }
 .settings-account-auth-row > button {
   flex-shrink: 0;
+}
+.settings-account-auth[data-compact='true'] {
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.settings-account-auth[data-compact='true'] .settings-account-auth-row {
+  align-items: center;
+}
+.settings-account-auth[data-compact='true'] .settings-account-identity {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+.settings-account-auth[data-compact='true'] .settings-account-label,
+.settings-account-auth[data-compact='true'] .settings-account-note {
+  display: none;
+}
+.settings-account-auth[data-compact='true'] .settings-account-status {
+  display: inline-flex;
+}
+.settings-account-auth[data-compact='true'] .settings-account-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.settings-account-auth[data-compact='true'][data-has-account='true'] .settings-account-status {
+  display: none;
 }
 @media (max-width: 700px) {
   .studio-settings-layout {
