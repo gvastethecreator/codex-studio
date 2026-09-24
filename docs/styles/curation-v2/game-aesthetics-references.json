@@ -1,0 +1,1121 @@
+{
+  "reviewedAt": "2026-09-24",
+  "scope": "Official source research and authored visual interpretations; these are generated artwork and gameplay-style profiles, not captured game assets. Cross-subject visual acceptance remains pending.",
+  "games": [
+    {
+      "key": "darksiders-2010",
+      "game": "Darksiders",
+      "version": "2010 original release; use the original game's visual era as the target",
+      "aestheticPresetId": "SP17-090",
+      "capturePresetId": "SP12-087",
+      "sources": [
+        {
+          "title": "Darksiders on Steam — original product listing",
+          "url": "https://store.steampowered.com/app/50620/Darksiders/",
+          "evidence": "Observed from the official store listing: release date 2010-09-23, developer Vigil Games, publisher THQ Nordic, single-player action/adventure framing, and a product media gallery. Steam's community tags include Third Person, which is a useful camera clue but user-supplied metadata, not a developer camera specification. The gallery is a source pointer; individual frames were not visually reviewed in this research pass."
+        },
+        {
+          "title": "Darksiders Warmastered Edition — official THQ Nordic game site",
+          "url": "https://darksiders.thqnordic.com/",
+          "evidence": "Observed: THQ Nordic identifies Warmastered as a version of the original first Darksiders, describes ruined Earth, demon-infested dungeons, brutal attacks and supernatural abilities, and provides a screenshot gallery. The page separately lists remaster changes including doubled texture resolution and improved shadows; those upgrades are not attributed to the 2010 original."
+        }
+      ],
+      "mechanisms": [
+        "Observed source facts: the original is an action-adventure about a ruined Earth, with traversal, combat, weapons and supernatural abilities.",
+        "Visual inference for a transferable style: build identity through forceful, angular silhouettes, large graphic masses and sharp separation between figure and broken architecture; this is an editorial direction, not a verified studio technique.",
+        "Visual inference for materials: make stone, forged metal, leather and cloth read as distinct designed forms, with localized wear rather than a uniform distressed overlay.",
+        "Boundary: preserve the prompt's subject, action, setting and camera. Use apocalyptic symbols, horsemen, angel/demon lore, weapons or ember colors only when the prompt supports them."
+      ],
+      "distinctFromNeighbors": "The proposed style is graphic and monumental rather than the fixed-scene feudal naturalism of Onimusha, the grounded battlefield materials of For Honor, or Mortal Kombat 1's arena spectacle. Its capture profile is a third-person action moment, unlike Blasphemous's pixel side-scroll, Darkest Dungeon's illustrated tactical side view, or the two-fighter MK1 plane. It should not become a tarot frame, tapestry surface or colored-pencil drawing from nearby pack_17 presets."
+    },
+    {
+      "key": "blasphemous-2019",
+      "game": "Blasphemous",
+      "version": "2019 base game by The Game Kitchen; Steam PC listing and Team17 publisher gallery",
+      "aestheticPresetId": "SP17-091",
+      "capturePresetId": "SP12-088",
+      "sources": [
+        {
+          "title": "Blasphemous on Steam — product listing and gallery",
+          "url": "https://store.steampowered.com/app/774361/Blasphemous/",
+          "evidence": "Observed from the official store listing: release date 2019-09-10, developer The Game Kitchen, publisher Team17, and the description of a brutal action-platformer in Cvstodia. The store tags identify 2D, Pixel Graphics and Side Scroller; tags are community metadata. Product screenshots and image assets are present, but individual frames were not visually reviewed in this pass."
+        },
+        {
+          "title": "Blasphemous — official Team17 game page",
+          "url": "https://www.team17.com/games/blasphemous",
+          "evidence": "Observed: Team17 describes a dark, nightmarish Metroidvania world with hack-and-slash combat, grotesque monsters, relics and prayers. The page groups official images under non-linear world, combat, customization and gameplay sections. Those descriptions establish subject matter and game modes; visual shape and palette language below remains an editorial transfer proposal."
+        }
+      ],
+      "mechanisms": [
+        "Observed source facts: the 2019 game is a 2D action-platformer with pixel-graphics and side-scroller metadata, set in the fictional Cvstodia.",
+        "Observed source facts: Team17 names grotesque monsters, relics, prayers, a non-linear world and brutal combat; it does not require every new subject to become a penitent or a religious object.",
+        "Visual inference for a transferable style: make crisp pixel clusters, strong silhouette hierarchy and solemn icon-like balance do more work than added grain or a fixed church scene.",
+        "Local reuse boundary: SP12-060 already records a Blasphemous screenshot treatment with specific basilica, combat and HUD cues. The proposed SP12-088 generalizes the 2D pixel gameplay grammar; keep SP12-060 unchanged and do not copy its fixed scene."
+      ],
+      "distinctFromNeighbors": "This style uses crisp pixel clusters and an authored devotional-grotesque design vocabulary; Darkest Dungeon uses loose, imperfect hand-drawn linework and character-focused claustrophobia. Its gameplay camera is a side-scrolling platform plane, not the tactical side-view formation in Darkest Dungeon. Keep this work separate from SP12-060's scene-specific Basilica preset, and from pack_17's tarot borders, tapestry weave and colored-pencil strokes."
+    },
+    {
+      "key": "onimusha-warlords-remaster",
+      "game": "Onimusha: Warlords",
+      "version": "2019 HD remaster of the 2001 original; Capcom's remaster preserves fixed-scene camera behavior",
+      "aestheticPresetId": "SP17-092",
+      "capturePresetId": "SP12-089",
+      "sources": [
+        {
+          "title": "Onimusha: Warlords on Steam — Capcom product listing",
+          "url": "https://store.steampowered.com/app/761600/Onimusha_Warlords/",
+          "evidence": "Observed from Capcom's official store listing: developer and publisher CAPCOM CO., LTD., release date 2019-01-15, improved controls, HD visuals, 16:9 widescreen and the original 4:3 display option. The product page provides trailers and screenshots; individual gallery frames were not visually reviewed in this pass."
+        },
+        {
+          "title": "Capcom fan-favourite Onimusha: Warlords is coming to PS4 — PlayStation Blog",
+          "url": "https://blog.playstation.com/archive/2018/08/28/capcom-fan-favourite-onimusha-warlords-is-coming-to-ps4-with-a-host-of-new-features",
+          "evidence": "Observed in a post by Capcom's Senior Manager of Social Media and Community: the 2019 version upgrades characters, environments and cinematics to HD; supports the original and widescreen display modes; and adds a scroll feature across fixed screens as the player moves. This is direct evidence for the capture profile's camera behavior."
+        },
+        {
+          "title": "Onimusha: Warlords now available — Capcom News",
+          "url": "https://news.capcomusa.com/lets/browse/onimusha-warlords-j-disponvel",
+          "evidence": "Observed: Capcom says the 2019 release revisits the 2001 original, adding HD graphics, widescreen, analog controls and a new soundtrack. The source frames the setting as feudal Japan with samurai and demons; those are source context, not mandatory additions to unrelated prompts."
+        }
+      ],
+      "mechanisms": [
+        "Observed source facts: the remaster is based on the 2001 game and adds HD presentation, widescreen support, analog movement and a soundtrack update.",
+        "Observed source fact: Capcom explicitly describes movement across fixed screens, with the widescreen camera scrolling in response to player movement.",
+        "Visual inference for a transferable aesthetic: contrast finely staged feudal materials and measured supernatural accents; keep the style as authored illustration rather than reproducing the game's 3D models or fixed room.",
+        "Boundary: the fixed camera and aspect behavior belong to the capture profile. The full style preserves the user's requested camera and does not automatically add samurai, ninja, demons, castle rooms or Japanese symbols."
+      ],
+      "distinctFromNeighbors": "The capture's fixed-scene and scroll-window logic separates it from For Honor's third-person battlefield camera and Darksiders' inferred follow camera. Its supernatural feudal material direction is distinct from For Honor's grounded faction warfare, MK1's staged 1v1 plane and Blasphemous's pixel platformer. Keep the illustrated style distinct from SP17-083's pencil grain and pack_17's tarot or tapestry formats."
+    },
+    {
+      "key": "for-honor",
+      "game": "For Honor",
+      "version": "2017 original release; use base-game combat grammar and leave live-service cosmetics out",
+      "aestheticPresetId": "SP17-093",
+      "capturePresetId": "SP12-090",
+      "sources": [
+        {
+          "title": "FOR HONOR on Steam — product listing and screenshots",
+          "url": "https://store.steampowered.com/app/304390/FOR_HONOR/",
+          "evidence": "Observed from the official store listing: release date 2017-02-13, Ubisoft developer studios and publisher, and the description of a third-person, hero-based melee game. The listing has an official product screenshot gallery; individual frames were not visually reviewed in this pass."
+        },
+        {
+          "title": "For Honor — official Ubisoft game page",
+          "url": "https://www.ubisoft.com/en-ca/game/for-honor",
+          "evidence": "Observed: Ubisoft describes a medieval-inspired world, Knights, Vikings, Samurai, Wu Lin and Outlanders, with separate duel, brawl, objective and team modes. The page contains official game media. Faction names are evidence about the game, not instructions to copy them into new prompts."
+        },
+        {
+          "title": "For Honor Unveiled — Ubisoft News",
+          "url": "https://news.ubisoft.com/en-us/article/3Y7pyV1e0BCI6fVWFqQc4C/for-honor-unveiled",
+          "evidence": "Observed: Ubisoft describes deliberate swordplay, large battle scenarios and duels; it explains the Art of Battle system's directional guard and attack stance. This supports action readability and camera/profile separation, not a specific universal HUD layout."
+        }
+      ],
+      "mechanisms": [
+        "Observed source facts: Ubisoft describes a third-person hero-based melee game with duels, large battles and distinct modes; its official page shows the roster is faction-based.",
+        "Observed source fact: directional guard/attack stance is central to the Art of Battle system, so a capture should keep weapon orientation, opposing fighter and action space legible.",
+        "Visual inference for transferable style: emphasize believable weight, protective geometry and differentiated metal, leather and cloth through illustration rather than copying any faction's exact design.",
+        "Boundary: a style request does not authorize a Knight, Viking, Samurai, Wu Lin, Outlander, specific emblem or a battle scene when the prompt supplies another subject."
+      ],
+      "distinctFromNeighbors": "For Honor's capture profile is a third-person melee viewpoint with weapon-stance and battlefield spacing, unlike Onimusha's authored fixed screens or the suggested Darksiders follow camera. Its style foregrounds practical armor and material weight without supernatural ruin lore; MK1 is a staged 1v1 fighting plane, while Blasphemous and Darkest Dungeon remain 2D side-view systems."
+    },
+    {
+      "key": "mortal-kombat-1-2023",
+      "game": "Mortal Kombat 1",
+      "version": "2023 initial release by NetherRealm Studios and QLOC; ignore later DLC-specific designs unless requested",
+      "aestheticPresetId": "SP17-094",
+      "capturePresetId": "SP12-091",
+      "sources": [
+        {
+          "title": "Mortal Kombat 1 on Steam — product listing and screenshots",
+          "url": "https://store.steampowered.com/app/1971870/Mortal_Kombat_1/",
+          "evidence": "Observed from the official store listing: release date 2023-09-19, developers NetherRealm Studios and QLOC, publisher Warner Bros. Games, and the description of a new fighting system, modes and fatalities. Product media includes screenshots and trailers; individual frames were not visually reviewed in this pass."
+        },
+        {
+          "title": "Warner Bros. Games launches Mortal Kombat 1",
+          "url": "https://warnerbrosgames.com/article/mk1",
+          "evidence": "Observed: the publisher identifies NetherRealm Studios as developer and describes the 2023 game as a new beginning with a reborn Mortal Kombat universe. This anchors the version; the transferable style below does not copy characters, costumes or fatalities."
+        },
+        {
+          "title": "Mortal Kombat 1 — Official Gameplay Debut Trailer",
+          "url": "https://www.youtube.com/watch?v=mr8kkXnMTxw",
+          "evidence": "Observed: official Warner Bros. Games channel, verified, published the gameplay debut trailer on 2023-06-08. It is a primary moving-image source for the 2023 game; individual frames were not visually reviewed in this pass."
+        }
+      ],
+      "mechanisms": [
+        "Observed source facts: the 2023 release is a NetherRealm Studios fighting game with a new combat system and a reborn franchise setting.",
+        "Visual inference for a transferable style: emphasize sculptural anatomy, precise costume-material detail and theatrical arena contrast without requiring violence, gore or a named fighter.",
+        "Camera inference: the requested capture profile treats the title as a side-plane fighting match; official store and gameplay media are the primary frame references, but exact camera details remain pending frame-level review.",
+        "Boundary: preserve subject identity and action. Franchise characters, fatalities, arenas, logos and move names are not transferable defaults."
+      ],
+      "distinctFromNeighbors": "MK1 is the staged two-fighter, side-plane capture profile; For Honor is a third-person battlefield with directional guard readability. The aesthetic is polished theatrical martial illustration, distinct from Darksiders' angular ruin-scale graphic fantasy, Onimusha's quiet fixed-scene feudal tone and the 2D pixel/ink approaches of Blasphemous and Darkest Dungeon."
+    },
+    {
+      "key": "darkest-dungeon-2016",
+      "game": "Darkest Dungeon",
+      "version": "2016 release by Red Hook Studios",
+      "aestheticPresetId": "SP17-095",
+      "capturePresetId": "SP12-092",
+      "sources": [
+        {
+          "title": "Darkest Dungeon on Steam — Red Hook Studios product listing",
+          "url": "https://store.steampowered.com/app/262060/Darkest_Dungeon/",
+          "evidence": "Observed from the official store listing: release date 2016-01-19, developer and publisher Red Hook Studios, a gothic roguelike turn-based RPG about psychological stress, and a team of flawed heroes. The page identifies 2D among its tags and provides product media; individual screenshot frames were not visually reviewed in this pass."
+        },
+        {
+          "title": "Darkest Dungeon Media — official Red Hook Studios gallery",
+          "url": "https://www.darkestdungeon.com/darkest-dungeon/media/",
+          "evidence": "Observed: Red Hook's official media page separates official screenshots, concept art and promotional art from fan creations. Use the official screenshot and concept-art sections as primary visual references; this research pass did not inspect individual gallery frames."
+        },
+        {
+          "title": "A Torch in the Dark: Using Creative Direction to Light the Darkest Dungeon — GDC Vault",
+          "url": "https://media.gdcvault.com/gdc2016/Presentations/Bourassa_Chris_a%20torch%20in.pdf",
+          "evidence": "Observed in the 2016 talk by Chris Bourassa, Creative Director at Red Hook: the team rejected a trending pixel-art direction in favor of a loose, melancholic, morose and black style; the presentation prioritized character focus, used side-scrolling dungeon/combat presentation, and avoided wide views that weakened claustrophobia. This is direct primary evidence for style and camera intent."
+        }
+      ],
+      "mechanisms": [
+        "Observed from the creator's GDC talk: Darkest Dungeon's art direction was intentionally loose, melancholic, morose and black, with imperfection used as a design principle.",
+        "Observed from the same talk: character focus and side-scrolling dungeon/combat presentation were chosen to protect claustrophobia and tension; the team explicitly rejected a trending pixel-art direction.",
+        "Visual inference for a transferable style: use expressive silhouettes, irregular contour and selective dark masses to give an existing subject emotional weight; do not convert every subject into a hero or monster.",
+        "Boundary: this is hand-authored illustration, not a screenshot profile. Preserve requested camera and content; dungeon, party, stress, torch and horror props are not compulsory."
+      ],
+      "distinctFromNeighbors": "The intentionally loose, imperfect, character-focused drawing separates Darkest Dungeon from Blasphemous's crisp pixel clusters, Darksiders' angular graphic masses and Onimusha/For Honor/MK1's real-time 3D capture profiles. Keep its illustration distinct from SP17-083's directional colored-pencil strokes, SP17-033's tarot symmetry and SP17-042's woven tapestry surfaces."
+    },
+    {
+      "key": "diablo-ii-resurrected",
+      "game": "Diablo II: Resurrected",
+      "version": "2021 remaster; base-game visual direction",
+      "aestheticPresetId": "SP17-084",
+      "capturePresetId": "SP12-081",
+      "sources": [
+        {
+          "title": "Diablo II: Resurrected — Official Game Site",
+          "url": "https://diablo2.blizzard.com/",
+          "evidence": "Blizzard describes remastered graphics up to UHD 4K and a toggle to the original Diablo II graphics; the page also links gameplay media. This supports a faithful-upgrade premise. Textual page evidence only; I did not inspect its gameplay frames, so the classic elevated camera below is labeled as a curation inference."
+        },
+        {
+          "title": "Technical Alpha Learnings — Diablo II: Resurrected — Blizzard News",
+          "url": "https://news.blizzard.com/en-us/article/23695734/technical-alpha-learnings",
+          "evidence": "Blizzard says artists remastered monsters, heroes, items and spells while preserving the familiar original aesthetic, and describes distinct revisions to Lightning, Blizzard and Holy Freeze effects. This directly supports faithful form preservation and differentiated effect cues; no screenshot-specific palette or material claim is made here."
+        }
+      ],
+      "mechanisms": [
+        "Faithful remaster hierarchy: retain recognizable silhouettes and original visual grouping while adding detail to forms and surfaces (stated by Blizzard).",
+        "Spell-specific accents: give each requested energy effect a distinct contour and hue instead of a shared bloom; this is inferred from Blizzard's separate revisions to Lightning, Blizzard and Holy Freeze VFX.",
+        "Compact ARPG readability: prioritize character, target and effect separation at small elevated-view scale; the classic camera treatment is an informed inference pending direct frame review."
+      ],
+      "distinctFromNeighbors": "Compared with Diablo IV, this direction favors a classic, compact ARPG graphic hierarchy and separated effect signatures over grounded PBR material realism and broad atmospheric depth. Compared with Bloodborne, it reads from a high, small-character gameplay scale instead of intimate street-level horror framing."
+    },
+    {
+      "key": "diablo-iv",
+      "game": "Diablo IV",
+      "version": "2023 base game; launch-era art-direction sources",
+      "aestheticPresetId": "SP17-085",
+      "capturePresetId": "SP12-082",
+      "sources": [
+        {
+          "title": "Peeling Back the Varnish: The Graphics of Diablo IV — Blizzard News",
+          "url": "https://news.blizzard.com/en-us/article/23964183/peeling-back-the-varnish-the-graphics-of-diablo-iv",
+          "evidence": "Blizzard describes a darker tone, physically based materials and lighting, complex shadows, volumetric dust and particles, and close-up in-game cinematics. These are direct statements about the rendering approach and support the material/light mechanisms below."
+        },
+        {
+          "title": "Diablo IV Quarterly Update—March 2022 — Blizzard News",
+          "url": "https://news.blizzard.com/en-us/article/23788294/diablo-iv-quarterly-updatemarch-2022",
+          "evidence": "The art team describes handcrafted locations, the paired pillars of 'old masters' and 'a return to darkness,' a grounded natural palette, and the iconic Diablo gameplay camera with detail balanced for readability. It also describes foggy, frigid Scosglen light. No still was individually inspected for this packet."
+        }
+      ],
+      "mechanisms": [
+        "Material-specific PBR response: surface roughness and metalness shape light rather than a universal painted overlay (stated by Blizzard).",
+        "Darkness with readable light: layered shadow calculation and volumetric particles let light scatter through dusty air (stated by Blizzard).",
+        "Old-master tonal control plus a grounded natural palette, composed around a readable elevated ARPG camera (stated by the environment-art update)."
+      ],
+      "distinctFromNeighbors": "Compared with Diablo II: Resurrected, this is more materially grounded and atmospheric, with broad environment depth and physically described light rather than compact classic remaster grouping. Compared with Lords of the Fallen, its identity rests more on naturalistic PBR and navigable ARPG clarity than on an allegorical torment/darkness/fantasy triangle or dual-realm imagery."
+    },
+    {
+      "key": "bloodborne",
+      "game": "Bloodborne",
+      "version": "2015 PS4 original; official launch-era material",
+      "aestheticPresetId": "SP17-086",
+      "capturePresetId": "SP12-083",
+      "sources": [
+        {
+          "title": "Bloodborne — Official PlayStation Game Page",
+          "url": "https://www.playstation.com/en-us/games/bloodborne/",
+          "evidence": "PlayStation describes a horror-filled gothic city, Yharnam, deranged mobs, nightmarish creatures and an arsenal including guns and saw cleavers. This supports gothic urban horror and close combat as game identity; the page's images were not individually inspected."
+        },
+        {
+          "title": "New Bloodborne Environments, Characters and Weapons Unveiled — PlayStation.Blog",
+          "url": "https://blog.playstation.com/archive/2014/11/20/new-bloodborne-environments-characters-weapons-unveiled",
+          "evidence": "The producer discusses abandoned Yharnam, a forbidden forest, a fogbound Cainhurst castle, a transforming cane that becomes a bladed whip, and the game's more proactive combat. The post publishes screenshots, but this packet records its text and does not claim a frame-by-frame image review."
+        },
+        {
+          "title": "New Bloodborne Screens and More Detail on Chalice Dungeons — PlayStation.Blog",
+          "url": "https://blog.playstation.com/archive/2014/12/18/new-bloodborne-screens-detail-chalice-dungeons/",
+          "evidence": "The official post describes screenshots of vast subterranean ruins, oily swamps, intricate gothic grand halls and blood-caked guillotine traps. This supports layered vertical architecture and a mix of elegant and gruesome forms; no claim is made that the screenshots were visually inspected."
+        }
+      ],
+      "mechanisms": [
+        "Gothic-city verticality and fog depth, with abandoned urban fabric and older multi-level ruins (official PlayStation descriptions).",
+        "Weapon silhouette transformation and proactive close-range combat, yielding long/short shape contrast (stated in the official launch-era post).",
+        "Beautiful or warm ambient color held against nightmarish subjects and threatening locations, rather than a uniform monochrome horror wash (inferred from the official description of the warm-sky Hemwick graveyard and its residents)."
+      ],
+      "distinctFromNeighbors": "Compared with Amnesia: The Dark Descent, Bloodborne is an external, active hunter-versus-threat action view rather than a first-person hide-and-survive experience. Compared with Lords of the Fallen, it is urban gaslamp Gothic with fast transforming melee silhouettes, not a 2023 dual-realm medieval allegory."
+    },
+    {
+      "key": "mortal-shell",
+      "game": "Mortal Shell",
+      "version": "2020 original game; 2021 Enhanced Edition material references",
+      "aestheticPresetId": "SP17-087",
+      "capturePresetId": "SP12-084",
+      "sources": [
+        {
+          "title": "Mortal Shell — Cold Symmetry",
+          "url": "https://www.coldsymmetry.com/mortal-shell",
+          "evidence": "The developer identifies the game as a haunting action-RPG and describes its world-premiere trailer as showing crafted worlds, fearsome combat and menacing foes. This establishes the game's tone and confirms the official trailer source; no trailer frame is claimed as visually reviewed."
+        },
+        {
+          "title": "Mortal Shell: Enhanced Edition Comes to PS5 March 4 — PlayStation.Blog",
+          "url": "https://blog.playstation.com/?p=346826",
+          "evidence": "The post is by Playstack producer Kiron Ramdewar and describes enhanced textures, glistening water, shimmering armor and a glowing tarnished seal, alongside the intended weight and feel of weapons and armor. These explicit material and gameplay notes support the texture and combat-read cues below."
+        },
+        {
+          "title": "Mortal Shell Embodies How a Small Studio Can Punch Above Its Weight Class — Unreal Engine",
+          "url": "https://www.unrealengine.com/developer-interviews/mortal-shell-embodies-how-a-small-studio-can-punch-above-its-weight-class",
+          "evidence": "In a developer interview, Cold Symmetry's game is described as letting players inhabit different lost-warrior shells and harden their bodies to block attacks. This supports a game-specific shell/stone-weight mechanic for capture profiles; it does not require that mechanic in unrelated user subjects."
+        }
+      ],
+      "mechanisms": [
+        "A body can harden mid-combat into a defensive state (stated by the developer interview); rendering that brief state with a mineral or stone-like read is a curation inference, not a source-confirmed material fact.",
+        "Weight is expressed through armor and weapon handling, not only dark color (Playstack producer's description of the design goal).",
+        "Wet reflective water and selective glints on armor or the tarnished seal provide controlled material contrast (publisher's Enhanced Edition description)."
+      ],
+      "distinctFromNeighbors": "Compared with Lords of the Fallen, Mortal Shell centers on inhabiting a warrior shell and briefly hardening the body, with tactile close-combat weight rather than a twin-realm traversal mechanic and explicit art-direction triangle. Compared with Diablo, it uses intimate third-person action scale rather than elevated party-and-enemy clusters."
+    },
+    {
+      "key": "lords-of-the-fallen-2023",
+      "game": "Lords of the Fallen (2023)",
+      "version": "2023 reboot; Axiom/Umbral presentation",
+      "aestheticPresetId": "SP17-088",
+      "capturePresetId": "SP12-085",
+      "sources": [
+        {
+          "title": "Art Direction — HEXWORKS Dev Journals — Lords of the Fallen",
+          "url": "https://www.lordsofthefallen.com/lords-of-the-fallen-2023/art-direction-hexworks-dev-journals/",
+          "evidence": "The art director explains a more grounded dark-medieval style, tormented fantasy, and an art-direction triangle of torment, darkness and fantasy. The journal also describes wax and thorn accumulation as visual language and distinguishes Radiant, Rhogar and Umbral themes. These are direct design statements; its embedded imagery was not inspected for this packet."
+        },
+        {
+          "title": "Umbral — Lords of the Fallen Official Site",
+          "url": "https://www.lordsofthefallen.com/lords-of-the-fallen-2023/umbral/",
+          "evidence": "The official site describes a vast dark-fantasy action-RPG and a nightmarish realm of the dead reached through the Umbral Lamp. It publishes trailer and screenshot sections. The paired-realm identity supports the capture profile; no screenshot frames are claimed as visually inspected."
+        },
+        {
+          "title": "All-New Screenshots — Explore the Lands of Lords of the Fallen — Official Site",
+          "url": "https://www.lordsofthefallen.com/lords-of-the-fallen-2023/?p=1322",
+          "evidence": "The official screenshot post describes a sallow realm crossed by colossal finger-like crags and a Forsaken Fen of ruins swallowed by mire. This provides textual evidence for allegorical landforms and corrupted environments, not a claim of direct image review."
+        }
+      ],
+      "mechanisms": [
+        "Three-axis mood design: torment, darkness and fantasy can combine in different proportions instead of becoming generic gloom (stated by HEXWORKS art direction).",
+        "Accumulated devotional matter: wax, candle growth, blood and thorns can build motif through clustered material forms when appropriate (stated by the art director; not a requirement for every subject).",
+        "Two co-present realities: grounded Axiom and invasive Umbral alter environmental character through a lamp-mediated transition (stated by the official site)."
+      ],
+      "distinctFromNeighbors": "Compared with Bloodborne, this is a 2023 medieval dark-fantasy world shaped by torment and a dual-realm premise, rather than Victorian/gaslamp urban horror and hunter combat. Compared with Mortal Shell, the defining signature is the Axiom/Umbral shift and allegorical art direction, not a player's body hardening as a defense."
+    },
+    {
+      "key": "amnesia-the-dark-descent",
+      "game": "Amnesia: The Dark Descent",
+      "version": "2010 original; Frictional Games launch-era material",
+      "aestheticPresetId": "SP17-089",
+      "capturePresetId": "SP12-086",
+      "sources": [
+        {
+          "title": "Frictional Games Press Kit — Amnesia: The Dark Descent",
+          "url": "https://frictionalgames.com/press-kit/",
+          "evidence": "Frictional identifies the title as first-person survival horror centered on immersion and discovery in a desolate castle, with physically simulated 3D spaces and no cutscenes. The description says the player's means of defense are hiding, running or using wits. This directly supports viewpoint and vulnerability; no press-kit images were individually reviewed."
+        },
+        {
+          "title": "Amnesia: The Dark Descent — Teaser, Web Site & Pre-order — Frictional Games",
+          "url": "https://frictionalgames.com/2010-02-amnesia-the-dark-descent-teaser-web-site-pre-order/",
+          "evidence": "The developer says its early gameplay teaser was a single continuous clip with no cutscenes or forced handoff of control. It confirms that the official site published actual in-game footage and screenshots; those frames were not individually inspected for this packet."
+        },
+        {
+          "title": "Closer Look at Teaser and More — Frictional Games",
+          "url": "https://frictionalgames.com/2010-02-closer-look-at-teaser-and-more/",
+          "evidence": "Frictional's timestamped developer commentary states that darkness decreases sanity and that the player uses a lantern or candles to light dark areas; it also notes simulated objects and blood/stain decals. This directly supports the light/dark resource mechanic and tactile environment cues, without requiring a particular hallway or creature."
+        }
+      ],
+      "mechanisms": [
+        "First-person continuity: keep perception at the player's eye level and preserve uninterrupted action rather than turning it into an external cinematic scene (stated by Frictional).",
+        "Light has psychological cost and function: small lantern/candle pools reveal a limited area against darkness, which the developer says decreases sanity (stated by Frictional).",
+        "Tactile environmental interaction: doors and loose objects feel physically handled; stains and blood can be localized decals rather than a generalized gore filter (developer commentary)."
+      ],
+      "distinctFromNeighbors": "Compared with Bloodborne, Amnesia is first-person, vulnerable survival horror shaped by light management and uninterrupted exploration; it does not center on agile close-combat silhouettes or a hunter-versus-enemy camera. Compared with Diablo and the Soulslikes, it uses human eye-level scale and environmental interaction instead of combat-readable third-person or isometric staging."
+    },
+    {
+      "key": "silent-hill-f",
+      "game": "SILENT HILL f",
+      "version": "Original release (2025)",
+      "aestheticPresetId": "SP24-001",
+      "capturePresetId": "SP12-093",
+      "sources": [
+        {
+          "title": "KONAMI Unveils SILENT HILL f: A Haunting New Chapter in the Iconic Horror Franchise",
+          "url": "https://www.konami.com/games/us/en/topics/2814/",
+          "evidence": "Konami describes 1960s Japan, psychological tension, beauty in terror, fog that makes a familiar place desolate, and a direction shaped by Japanese folklore."
+        },
+        {
+          "title": "Find Beauty In Terror With SILENT HILL f, The Next Step In The Acclaimed Franchise Launching Today",
+          "url": "https://www.konami.com/games/eu/en/topics/18839/",
+          "evidence": "Konami calls the vision beautiful yet horrifying, describes horror blooming in 1960s Japan, fog-covered surroundings, disturbing transformation, and dual worlds of fog and madness."
+        }
+      ],
+      "mechanisms": [
+        "Beauty and threat share a visual form: delicate growth can read as ornament and invasive transformation at once.",
+        "Folkloric and period cues ground psychological horror; they are material/cultural logic, not mandatory shrines, uniforms, or a named town.",
+        "Fog and transformation destabilize familiar space. Proposed visual expression: organic bloom interrupts worn surfaces; small vermilion accents, not a red wash."
+      ],
+      "distinctFromNeighbors": "Folkloric unease and invasive bloom distinguish f from SH2's guilt-weighted urban fog and SH4's sealed domestic thresholds."
+    },
+    {
+      "key": "silent-hill-2-original",
+      "game": "SILENT HILL 2",
+      "version": "Original PlayStation 2 release (2001), not the remake",
+      "aestheticPresetId": "SP24-002",
+      "capturePresetId": "SP12-094",
+      "sources": [
+        {
+          "title": "SILENT HILL 2",
+          "url": "https://www.konami.com/games/eu/en/products/silenthill2/",
+          "evidence": "Konami's legacy product page identifies the original title and PS2 release, and describes a return to a dark, mysterious Silent Hill. Its visible product material did not provide gameplay captures."
+        },
+        {
+          "title": "The SILENT HILL 2 remake has sold over 2 million copies worldwide",
+          "url": "https://www.konami.com/games/us/en/topics/3137/",
+          "evidence": "Konami identifies the original as a 2001 PS2 title and contrasts the remake's over-the-shoulder perspective, expanded areas, revamped combat, new cutscenes, and evolved graphics/sound."
+        },
+        {
+          "title": "SILENT HILL 2 Remake Announcement",
+          "url": "https://www.konami.com/games/us/en/topics/2078/",
+          "evidence": "Konami calls the remake a new version of the psychological horror game first released in 2001."
+        }
+      ],
+      "mechanisms": [
+        "Official sources anchor this to the original PS2 game and distinguish the remake's camera and modernization.",
+        "Soft detail and compact surface resolution are an era-informed art-direction inference from the 2001 PS2 release, not verified against official gameplay captures.",
+        "Use distance and interrupted visibility as spatial unease, without forcing monsters or story props."
+      ],
+      "distinctFromNeighbors": "Period-led 2001 PS2 abstraction and uncertain space; distinct from the remake's documented close over-shoulder, high-detail direction, SH4's domestic thresholds, and SHf's folkloric bloom. Exact original camera/aspect was not verified."
+    },
+    {
+      "key": "silent-hill-2-remake",
+      "game": "SILENT HILL 2",
+      "version": "Remake (2024)",
+      "aestheticPresetId": "SP24-003",
+      "capturePresetId": "SP12-095",
+      "sources": [
+        {
+          "title": "SILENT HILL 2 Remake",
+          "url": "https://www.konami.com/games/eu/en/products/silenthill2r/",
+          "evidence": "Konami identifies a full remake released in 2024 for PS5 and PC/Steam."
+        },
+        {
+          "title": "The SILENT HILL 2 remake has sold over 2 million copies worldwide",
+          "url": "https://www.konami.com/games/us/en/topics/3137/",
+          "evidence": "Konami documents over-the-shoulder perspective, expanded areas, revamped combat, new cutscenes, and evolved graphics and sound, explicitly contrasting the PS2 original."
+        },
+        {
+          "title": "SILENT HILL 2 Remake Announcement",
+          "url": "https://www.konami.com/games/us/en/topics/2078/",
+          "evidence": "Konami describes updated graphics, sound, and gameplay for the remake of the 2001 psychological-horror game. Official product page view was text/product material; no gameplay capture was inspected."
+        }
+      ],
+      "mechanisms": [
+        "Over-shoulder proximity, expanded spaces, and revamped combat are documented; surface/material treatments here are art-direction synthesis.",
+        "Fog and oppressive spatial transformation remain psychological-horror tools, but detail and camera language should feel contemporary.",
+        "Keep slow, uncertain looking; do not turn the remake into generic photoreal action."
+      ],
+      "distinctFromNeighbors": "Unlike the original PS2 entry's softened, period-informed abstraction, this direction uses documented over-shoulder proximity, expanded spaces, and modernized graphics; unlike SH4 it is not centered on domestic refuge."
+    },
+    {
+      "key": "silent-hill-4-the-room",
+      "game": "SILENT HILL 4: The Room",
+      "version": "Original release (2004)",
+      "aestheticPresetId": "SP24-004",
+      "capturePresetId": "SP12-096",
+      "sources": [
+        {
+          "title": "SILENT HILL 4: THE ROOM",
+          "url": "https://www.konami.com/games/eu/en/products/silenthill4/",
+          "evidence": "Konami identifies the original PS2 game and describes Henry confined in an apartment with a portal to alternate reality."
+        },
+        {
+          "title": "Classic Postmortem: Silent Hill 4: The Room",
+          "url": "https://www.gamedeveloper.com/audio/classic-postmortem-i-silent-hill-4-the-room-i-",
+          "evidence": "Developer-authored retrospective by Akihiro Imamura and Akira Yamaoka, hosted by Game Developer, documents first-person room presentation, third-person Otherworld play, a refuge eroding over time, and visibility limits from fog/darkness. Page art is not gameplay capture."
+        },
+        {
+          "title": "SILENT HILL 4: THE ROOM (Japan)",
+          "url": "https://www.konami.com/games/jp/ja/products/silenthill4/",
+          "evidence": "Konami's Japanese page identifies the PS2 title and summarizes apartment confinement and the opening as a way out."
+        }
+      ],
+      "mechanisms": [
+        "Domestic familiarity becomes threatening as the apartment refuge is compromised; ordinary proportions and materials stay recognizable.",
+        "Thresholds and apertures make movement between enclosure and hostile elsewhere legible without requiring a literal portal.",
+        "The developer postmortem documents first-person room and third-person Otherworld views; these belong to capture profile, not all style applications.",
+        "Domestic thresholds distinguish SH4 from SH2's town-scale fog and SHf's blossom/folklore."
+      ],
+      "distinctFromNeighbors": "Domestic refuge and thresholds losing safety, with a documented first/third-person presentation split; not SH2's town-scale fog or SHf's folkloric bloom."
+    },
+    {
+      "key": "metal-gear-solid-3-snake-eater-ps2",
+      "game": "METAL GEAR SOLID 3: SNAKE EATER",
+      "version": "Original PlayStation 2 release (2004/2005 regional releases), not Delta: Snake Eater",
+      "aestheticPresetId": "SP24-005",
+      "capturePresetId": "SP12-097",
+      "sources": [
+        {
+          "title": "METAL GEAR SOLID 3: SNAKE EATER",
+          "url": "https://www.konami.com/games/eu/en/products/mgs3se/",
+          "evidence": "Konami's legacy product page identifies the original PS2 game; its listed date is the European 2005 release."
+        },
+        {
+          "title": "METAL GEAR SOLID 3: SNAKE EATER — System",
+          "url": "https://www.konami.com/mg/archive/mgs3/uk/system_main.html",
+          "evidence": "Konami archive documents jungle infiltration, visibility blocked by rocks/trees, environment-matched camouflage, day/night, food/stamina, and CQC. Its official original-game gameplay/system tiles were visually inspected: muted dense greenery, partial foliage occlusion, period low-resolution rendering."
+        },
+        {
+          "title": "The Truth Behind METAL GEAR SOLID 3",
+          "url": "https://www.konami.com/mg/archive/mg25th/truth/mgs3.html",
+          "evidence": "Konami identifies the 2004 PS2 original and its survival systems: camouflage, cures, food, and capturing animals."
+        },
+        {
+          "title": "Xbox Wire interview with Noriaki Okamura — original overhead camera versus modern view",
+          "url": "https://news.xbox.com/en-us/podcast/xbox-games-showcase-deep-dive-metal-gear-solid-%CE%B4-snake-eater/",
+          "evidence": "The developer describes the original camera as overhead and contrasts it with the contemporary over-the-shoulder New Style. Root uses this to correct the 2004 profile and keeps Delta materials out."
+        }
+      ],
+      "mechanisms": [
+        "Camouflage is active visual behavior: pattern, color, and posture borrow concealment from terrain.",
+        "Foliage, rocks, and trees obstruct sightlines, shaping stealth and legibility.",
+        "Survival ties body to place through stamina, food, curing, day/night, and close combat.",
+        "Original PS2 only, not Delta. Official archive tiles inspected; their muted greenery, occlusion, and period rendering inform this direction."
+      ],
+      "distinctFromNeighbors": "Dense, close, foliage-driven fieldcraft contrasts Death Stranding's exposed long-distance travel and connective traces."
+    },
+    {
+      "key": "death-stranding-original",
+      "game": "DEATH STRANDING",
+      "version": "Original game (2019), not Director's Cut",
+      "aestheticPresetId": "SP24-006",
+      "capturePresetId": "SP12-098",
+      "sources": [
+        {
+          "title": "DEATH STRANDING for PlayStation 4",
+          "url": "https://www.kojimaproductions.jp/en/death-stranding-ps4",
+          "evidence": "Kojima Productions identifies the original PS4 game as an open-world action-adventure about crossing a ravaged landscape. Its media gallery is behind age verification; no gameplay image was inspected."
+        },
+        {
+          "title": "DEATH STRANDING journeys onto PC Game Pass",
+          "url": "https://www.kojimaproductions.jp/en/death-stranding-journeys-onto-PC-games-pass",
+          "evidence": "Kojima Productions explicitly describes the original game, traversing devastated America, and its Social Strand system where player-built infrastructure can appear in other worlds."
+        },
+        {
+          "title": "DEATH STRANDING on PlayStation Plus",
+          "url": "https://www.kojimaproductions.jp/en/psplus",
+          "evidence": "Kojima Productions distinguishes the PS4 original from Director's Cut on PS5 and describes reconnection and asynchronous social-strand interaction."
+        }
+      ],
+      "mechanisms": [
+        "Travel across ravaged open terrain is the action; distance, route, and bodily passage matter.",
+        "Social Strand is asynchronous: others' structures can shape a route without a companion being present.",
+        "A small traveler silhouette can signal isolation while infrastructure/traces imply connection.",
+        "Do not blend Director's Cut additions or claim inspected imagery; the official PS4 gallery was age-gated."
+      ],
+      "distinctFromNeighbors": "Exposed long-distance traversal and asynchronous connection contrast MGS3's dense foliage, tactical occlusion, and camouflage."
+    }
+  ],
+  "fidelityReviews": [
+    {
+      "group": "fidelity-psychological.json",
+      "sources": [
+        {
+          "presetIds": ["SP24-001", "SP12-093"],
+          "title": "SILENT HILL f — official screenshots and publisher-authorized materials",
+          "url": "https://www.konami.com/games/silenthill/f/guideline/jp/ja/available",
+          "evidence": "Visually inspected Konami's Main Visual and screenshot gallery in the browser. The key visual has a centered uniformed young woman split against a red floral side and a pale cyan/blue-green side; screenshot thumbnails show fogged Showa-era streets/interiors, red flower growth and saturated red encounter imagery. Thumbnails support broad palette, camera scale, and setting, not fine pixel-level surface claims. The page labels the frames as development-stage."
+        },
+        {
+          "presetIds": ["SP24-001", "SP12-093"],
+          "title": "KONAMI Unveils SILENT HILL f: A Haunting New Chapter in the Iconic Horror Franchise",
+          "url": "https://www.konami.com/games/us/en/topics/2814/",
+          "evidence": "Publisher text establishes 1960s Japan, thick fog transforming a familiar place, psychological tension, beauty in terror, Japanese folklore, and the distinction between Fog World and Otherworld."
+        },
+        {
+          "presetIds": ["SP24-002", "SP12-094"],
+          "title": "SILENT HILL 2 — original Konami product page",
+          "url": "https://www.konami.com/games/eu/en/products/silenthill2/",
+          "evidence": "Konami identifies PS2 and release date 21.11.2001. Browser inspection saw only original package/product art: a close blue-green eye/face crop over deep black/blue negative space, not gameplay."
+        },
+        {
+          "presetIds": ["SP24-002", "SP12-094", "SP24-003", "SP12-095"],
+          "title": "はじめての『SILENT HILL 2』 / First time playing SILENT HILL 2",
+          "url": "https://www.konami.com/games/silenthill/2r/beginner/jp/ja/",
+          "evidence": "Official Konami comparison states the 2001 PS2 original used a view looking down on James, while the remake adopted an over-the-shoulder camera. It also describes the original's deep fog, wandering creatures, observation/puzzle exploration, and radio noise warning of nearby creatures."
+        },
+        {
+          "presetIds": ["SP24-003", "SP12-095"],
+          "title": "SILENT HILL 2 — official screenshots available for posting",
+          "url": "https://www.konami.com/games/silenthill/2r/guideline/jp/ja/available",
+          "evidence": "Visually inspected Konami's official screenshot gallery in the browser: shoulder-follow player views; damp, reflective streets and facades; dense desaturated outdoor fog; dark interiors with localized warm practical lights; and several high-contrast red encounter images. Gallery thumbnails support composition, broad material/light treatment, and palette observations."
+        },
+        {
+          "presetIds": ["SP24-003", "SP12-095"],
+          "title": "SILENT HILL 2 Remake Releases October 8th",
+          "url": "https://www.konami.com/games/us/en/topics/2440/",
+          "evidence": "Konami describes guilt, grief, existential horror, the fog-shrouded symbolic town, expanded areas, and the remake's over-the-shoulder camera; the article links official extended gameplay footage."
+        },
+        {
+          "presetIds": ["SP24-003", "SP12-095"],
+          "title": "SILENT HILL 2 — official remake product page",
+          "url": "https://www.konami.com/games/eu/en/products/silenthill2r/",
+          "evidence": "Konami identifies this as a full remake of the 2001 PS2 original and dates the release to October 8, 2024."
+        }
+      ],
+      "reviewNotes": [
+        "The previous SHf direction read as interchangeable floral horror; this revision ties the card/DNA to the observed split red-infestation versus cyan Showa-world grammar.",
+        "The previous SH2 (2001) direction overclaimed gameplay rendering without a first-party original gameplay gallery. Its elevated camera has official comparative support, but its exact PS2 polygon, texture, lighting, and gameplay palette claims remain labeled as era-informed rather than pixel-inspected.",
+        "The remake now differs through observed 2024 detail, close shoulder framing, wet urban surfaces, deep fog, interior practicals, and localized red scenes—not merely higher resolution or a different gray palette.",
+        "Aesthetic card briefs are authored key-art/poster compositions; capture briefs are distinct illustrative gameplay views. Neither is presented as an official screenshot."
+      ],
+      "presets": [
+        {
+          "id": "SP24-001",
+          "reason": "Replaces generic floral horror with the official key visual's split crimson bloom/cyan world, Showa-era identity, and flower growth invading architecture and body-scale motifs."
+        },
+        {
+          "id": "SP12-093",
+          "reason": "Uses the inspected official gallery's actual third-person player scale, Japanese town/school spaces, red growth, and cool fog so this reads as traversal in SILENT HILL f rather than a generic horror frame."
+        },
+        {
+          "id": "SP24-002",
+          "reason": "Moves beyond gray fog to quiet guilt, visual illness, the original cover's blue-green eye/black negative-space motif, and period restraint. PS2 render details remain explicitly inferred because no official gameplay still was available to inspect."
+        },
+        {
+          "id": "SP12-094",
+          "reason": "Corrects the earlier vague external-camera direction using Konami's explicit comparison: the 2001 original looks down on James. The era-specific model/texture treatment is a bounded proposal, not a claimed visual inspection."
+        },
+        {
+          "id": "SP24-003",
+          "reason": "Replaces generic modern fog with the observed remake's wet urban reflectance, fogged facades, warm practicals, contemporary character detail, and emotional close-range unease."
+        },
+        {
+          "id": "SP12-095",
+          "reason": "Anchors the profile in observed official screenshot framing and Konami's documented shoulder camera; localized warm interiors and red encounter scenes distinguish it from the original's elevated PS2 view."
+        }
+      ],
+      "rootReview": "Root reviewed all proposed fields. Psychological art profiles corrected to painted media without PS2 geometry or gameplay camera; evidence qualifiers stay in research records."
+    },
+    {
+      "group": "root-materials-camera-and-illustration",
+      "sources": [
+        {
+          "presetIds": ["SP17-087", "SP12-084"],
+          "title": "Mortal Shell Enhanced Edition — publisher article and embedded capture",
+          "url": "https://blog.playstation.com/2021/03/02/mortal-shell-enhanced-edition-comes-to-ps5-march-4/",
+          "evidence": "Root inspected the embedded battle capture: gaunt ribbed golden armor contrasts with bulky dark armor, severe angled action and rough monumental stone. Enhanced-edition imagery informs material/design, not a claim that its texture resolution is the 2020 original."
+        },
+        {
+          "presetIds": ["SP17-088", "SP12-085"],
+          "title": "Lords of the Fallen 2023 — art director journal",
+          "url": "https://www.lordsofthefallen.com/lords-of-the-fallen-2023/art-direction-hexworks-dev-journals/",
+          "evidence": "Developer statements describe tormented medieval fantasy, bodily Umbral influences and accumulations of wax and devotional objects. Root used these concrete design mechanisms; image links were unavailable, so this is textual evidence."
+        },
+        {
+          "presetIds": ["SP17-089", "SP12-086"],
+          "title": "Frictional Games press kit",
+          "url": "https://frictionalgames.com/press-kit/",
+          "evidence": "Official collection description identifies The Dark Descent and HPL2. The chosen occlusion, lamp falloff and painted interpretation are editorial design choices, not a frame-by-frame source inspection."
+        },
+        {
+          "presetIds": ["SP17-092", "SP12-089"],
+          "title": "Onimusha Warlords — Capcom article and PS4 capture",
+          "url": "https://blog.playstation.com/2018/08/28/ps2-classic-onimusha-warlords-comes-to-ps4-january-15-2019/",
+          "evidence": "Root inspected the embedded corridor combat capture: small polygonal combatants, red lacquer/black cloth, warm timber framing and fixed-screen composition. Article documents fixed cameras and HD changes. Painted counterpart is authored interpretation."
+        },
+        {
+          "presetIds": ["SP17-093", "SP12-090"],
+          "title": "The Art of For Honor: Citadel Gate",
+          "url": "https://www.ubisoft.com/en-us/game/for-honor/news-updates/4kG1dLi9w3Ax5VqMJtwwXS/the-art-of-for-honor-citadel-gate",
+          "evidence": "Root inspected CourtyardsBattle_Final concept image: dark massive ramparts against a broad pale smoky opening, small combatants and selective sunlight. Developer describes practical construction and exaggerated fortification scale; this grounds the painted counterpart."
+        },
+        {
+          "presetIds": ["SP17-094", "SP12-091"],
+          "title": "Mortal Kombat 1 — official media",
+          "url": "https://www.mortalkombat.com/en-us/media",
+          "evidence": "Official version reference. Lush pageantry, original costume and arena composition are authored choices; root did not inspect a full official gameplay frame in this pass."
+        },
+        {
+          "presetIds": ["SP24-004", "SP12-096"],
+          "title": "Silent Hill 4: The Room — original product page",
+          "url": "https://www.konami.com/games/eu/en/products/silenthill4/",
+          "evidence": "Publisher describes domestic entrapment and a portal to another reality. Bodily threshold, sickly values and diffuse period rendering are authored interpretations, not newly verified gameplay pixels."
+        },
+        {
+          "presetIds": ["SP24-005"],
+          "title": "Yoji Shinkawa interview — Metal Gear illustration methods",
+          "url": "https://www.konami.com/mg/archive/mgs2/art/second.html",
+          "evidence": "Official interview discusses ink, photocopied roughness, white negative space and dark silhouette design. This establishes a franchise illustration technique lineage, not MGS3 engine rendering or proof that all MGS3 art uses one technique."
+        },
+        {
+          "presetIds": ["SP12-097"],
+          "title": "Metal Gear Solid 3 original system gallery",
+          "url": "https://www.konami.com/mg/archive/mgs3/uk/system_main.html",
+          "evidence": "Root inspected the small official screenshot mosaics: yellow-olive camouflage, compact figures and layered jungle textures. Small images constrain detail claims; period render restrictions are editorial approximations. Camera separately supported by developer comparison recorded in initial research."
+        },
+        {
+          "presetIds": ["SP24-006", "SP12-098"],
+          "title": "Death Stranding 2019 landscapes — PlayStation selection",
+          "url": "https://blog.playstation.com/2019/11/29/share-of-the-week-death-stranding-landscapes/",
+          "evidence": "Root inspected the lead image: dense modular cargo silhouette and engineered vehicle against broad dark mineral ground, sparse bright technical detail and atmospheric empty distance. Selection contains community captures curated by PlayStation. Painted counterpart and original scene are authored."
+        }
+      ],
+      "presets": [
+        {
+          "id": "SP17-087",
+          "reason": "The first card was a generic giant at a gate; introduce borrowed protective mass, frailty and mineral-organic tension."
+        },
+        {
+          "id": "SP17-088",
+          "reason": "Replace vague medieval allegory with the official art-direction mechanisms of accumulation, devotion and Umbral bodily forms."
+        },
+        {
+          "id": "SP17-089",
+          "reason": "Replace generic candle portrait with occluded space, fragile refuge and abrupt light falloff."
+        },
+        {
+          "id": "SP17-092",
+          "reason": "A falconer alone conveyed historical Japan but omitted supernatural martial tension."
+        },
+        {
+          "id": "SP17-093",
+          "reason": "Official Citadel Gate art emphasizes scale, practical fortification and painterly battle masses, absent from prior workshop card."
+        },
+        {
+          "id": "SP17-094",
+          "reason": "Prior fan performer lacked the distinctive ornate tailoring, energy and martial force."
+        },
+        {
+          "id": "SP24-004",
+          "reason": "Keep domestic scale but make the spatial bodily intrusion tangible instead of a generic tall shadow."
+        },
+        {
+          "id": "SP24-005",
+          "reason": "The previous naturalist biologist erased Metal Gear illustration identity; explicitly separate gestural concept art from PS2 capture."
+        },
+        {
+          "id": "SP24-006",
+          "reason": "The first hiking image lacked the contrast of engineered burden, volcanic emptiness and uncanny connection."
+        },
+        {
+          "id": "SP12-084",
+          "reason": "Retain successful refined combat composition; strengthen borrowed shell and mineral contrast."
+        },
+        {
+          "id": "SP12-085",
+          "reason": "More specific accumulation and bodily construction replace general roots."
+        },
+        {
+          "id": "SP12-086",
+          "reason": "Make the first-person interaction and old-engine lighting explicit."
+        },
+        {
+          "id": "SP12-089",
+          "reason": "Retain successful fixed room layout and restore supernatural action."
+        },
+        {
+          "id": "SP12-090",
+          "reason": "Retain duel readability while reinforcing original battlefield scale and constructed armor."
+        },
+        {
+          "id": "SP12-091",
+          "reason": "Modern lush pageantry distinguishes this from older gritty MK visual eras."
+        },
+        {
+          "id": "SP12-096",
+          "reason": "Prior generic dark hatch lost SH4 bodily portal and mundane confined scale."
+        },
+        {
+          "id": "SP12-097",
+          "reason": "Correct camera was insufficient; first card used modern naturalistic vegetation and materials."
+        },
+        {
+          "id": "SP12-098",
+          "reason": "Restore industrial burden and route interaction, absent from generic stream walker."
+        }
+      ],
+      "rootReview": "Explicit reference grammar restored as defaults while requested identity/action/count/camera remain authoritative. Original representative scenes do not copy source frames."
+    },
+    {
+      "group": "fidelity-feudal.json",
+      "sources": [
+        {
+          "id": "ds-shot-01",
+          "title": "Darksiders Warmastered official screenshot 01",
+          "url": "https://darksiders.thqnordic.com/game-sites/darksiders/content/screenshots/screenshot-01.jpg",
+          "evidenceType": "visually inspected official image; Warmastered remaster",
+          "observed": "3840x2160 trailing third-person frame: armored figure dominates lower-left foreground; long sword runs diagonally; bare branches, ruined city masonry and green ground growth frame a broad traversable street. Blue steel, dark metal and red cloth stand against grey stone and subdued green. The figure is modeled 3D, not a flat comic illustration.",
+          "inferenceBoundary": "Directly supports capture camera, silhouette, composition and palette of the remaster image. The official page says the remaster doubles textures and improves rendering and shadows; do not claim its surface fidelity is identical to the 2010 console build."
+        },
+        {
+          "id": "ds-official-page",
+          "title": "Darksiders Warmastered Edition official THQ Nordic site",
+          "url": "https://darksiders.thqnordic.com/",
+          "evidenceType": "official product and media page; page text reviewed",
+          "observed": "Identifies the release as a remaster of Darksiders/Wrath of War, credits Vigil Games as original developer, describes War, weapons, ruined Earth, angels and demons, and lists higher texture resolution, rendering rework, better shadows and post-processing as remaster changes. The hero artwork was visible in the page capture.",
+          "inferenceBoundary": "Narrative and remaster claims are page text. Comic-led massing and palette are visual interpretation from the official image, not a quoted art-direction specification."
+        },
+        {
+          "id": "ds-steam",
+          "title": "Darksiders official Steam listing",
+          "url": "https://store.steampowered.com/app/50620/Darksiders/",
+          "evidenceType": "official store record; listing verified in web search, browser age gate not passed",
+          "observed": "Official store identity and release listing are a source for the original game reference. The browser displayed Steam's age-verification screen, so no age-gated screenshots were opened.",
+          "inferenceBoundary": "Not used as visual evidence."
+        },
+        {
+          "id": "blasphemous-shot-4",
+          "title": "Blasphemous official Team17 screenshot: Hat-Screensot-4",
+          "url": "https://www.team17.com/hs-fs/hubfs/Hat-Screensot-4.png?length=2000&name=Hat-Screensot-4.png",
+          "evidenceType": "visually inspected official publisher image, 1920x1080",
+          "observed": "Side-plane pixel game frame with a small central combat figure, raised dark stone structures and broken ledge; pale cold-blue mountain distance contrasts with near-black foreground and a bright red/orange action effect."
+        },
+        {
+          "id": "blasphemous-shot-5",
+          "title": "Blasphemous official Team17 screenshot: Hat-Screenshot-5",
+          "url": "https://www.team17.com/hs-fs/hubfs/Hat-Screenshot-5.png?length=2000&name=Hat-Screenshot-5.png",
+          "evidenceType": "visually inspected official publisher image, 1920x1080",
+          "observed": "Strict side-scrolling platform frame in a dark crypt: continuous horizontal walkway and right-hand tower wall, small character/action near center-bottom, large near-black space, muted stone and small cool-purple, red and white highlights. The upper frame shows a compact ornate pixel health/resource display and a right-side counter."
+        },
+        {
+          "id": "blasphemous-team17",
+          "title": "Blasphemous official Team17 game page",
+          "url": "https://www.team17.com/games/blasphemous",
+          "evidenceType": "official publisher page; text and gallery reviewed",
+          "observed": "Describes the game as an action-adventure platformer in dark gothic Cvstodia, with grotesque monsters, combat, relics and the Penitent One; its gallery contains the two inspected images above.",
+          "inferenceBoundary": "The Spanish penitential/baroque interpretation is a style synthesis from the setting and visual motifs, not a literal claim quoted from the page."
+        },
+        {
+          "id": "blasphemous-steam",
+          "title": "Blasphemous official Steam listing",
+          "url": "https://store.steampowered.com/app/774361/Blasphemous/",
+          "evidenceType": "official store record",
+          "observed": "Supports product identity, developer/publisher and 2019 release reference; visual observations here come from the Team17 gallery, not Steam tags."
+        },
+        {
+          "id": "dd-steam-campfire",
+          "title": "Darkest Dungeon official Steam screenshot: campfire scene",
+          "url": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/262060/ss_897ef292768a8e413ffe2dbf18614ec8e1fdbc64.1920x1080.jpg?t=1730230071",
+          "evidenceType": "visually inspected official Steam image, 1920x1080",
+          "observed": "Four expressive hand-drawn party figures sit around a bright central orange-red campfire in a dark stone room; irregular heavy outlines, angular black shadows and compact color planes remain legible. A framed objective sits above; character details and inventory occupy a dense lower panel."
+        },
+        {
+          "id": "dd-redhook-media",
+          "title": "Darkest Dungeon official Red Hook media gallery",
+          "url": "https://www.darkestdungeon.com/darkest-dungeon/media/",
+          "evidenceType": "official studio gallery page; screenshot collection reviewed as thumbnails",
+          "observed": "The page separates official Screenshots, Concept Art and Promotional Art; its screenshot category shows battle, party, inventory and dungeon-scene captures. Only the Steam campfire image was opened full size for this pass, so unexpanded gallery tiles are not used to assert small visual details."
+        },
+        {
+          "id": "dd-gdc-talk",
+          "title": "A Torch in the Dark: Using Creative Direction to Light the Darkest Dungeon, Chris Bourassa, GDC Vault",
+          "url": "https://media.gdcvault.com/gdc2016/Presentations/Bourassa_Chris_a%20torch%20in.pdf",
+          "evidenceType": "primary creator presentation; extracted slide text reviewed, PDF screenshots unavailable in browser tool",
+          "observed": "The talk discusses a melancholic, morose, black visual direction and says looseness reinforced imperfection; it rejects top-down/isometric views because they reduce character focus and claustrophobia, and describes side-scrolling dungeon/combat presentation.",
+          "inferenceBoundary": "Used to substantiate design intent and camera/composition reasoning, not as a directly inspected reference image."
+        }
+      ],
+      "presets": [
+        {
+          "id": "SP17-090",
+          "reason": "The existing entry already has useful bevels and broad color planes, but it reads as broadly graphic fantasy. The official in-game image reviewed shows a heavy near-foreground armored body, an oversized sword diagonal, deep blue steel and a worn red cape against a layered, overgrown ruined street. I am making the comic-led sculptural silhouette, forceful equipment scale, material separation and restrained urban palette explicit. The paired capture brief will show an over-the-shoulder traversal through a different ruined street; this illustration remains an original gate-guardian composition. The screenshot is from the official Warmastered site, whose page identifies doubled textures and improved shadows, so its polish is not being claimed as an exact 2010 render sample."
+        },
+        {
+          "id": "SP12-087",
+          "reason": "The previous capture brief reused the illustration's observatory and large guardian subject. The official Warmastered screenshot reviewed instead gives a concrete capture grammar: close trailing camera, armored figure in the lower foreground, long weapon diagonal and overgrown ruined street ahead. This record now uses that distinct traversal composition while keeping source-era 3D materials and avoiding a mandatory HUD. The screenshot is remastered; its camera and staging are direct observations, while exact 2010 surface fidelity is a conservative inference from the official page's own remaster caveat."
+        },
+        {
+          "id": "SP17-091",
+          "reason": "The current entry names crisp clusters and solemn icon balance, but those cues could fit many pixel-gothic games. The two official Team17 images I inspected show a side-plane world with layered, cold mountain/ruin depth and a separate dark crypt frame whose few hot colors cut through near-black space; official copy also describes Cvstodia as dark gothic and nightmarish. I am adding the game's penitential/baroque silhouette and color logic while marking religious symbolism as an inference from its setting, not a mandatory replacement subject. The card stays a close three-quarter bell illustration; the paired capture uses a different playable route and strict side view."
+        },
+        {
+          "id": "SP12-088",
+          "reason": "The existing profile correctly locks the side plane but uses a generic route description and a warm/verdigris/violet palette as its default. The official images reviewed make layered side-on geometry, near-black foreground, cold blue-slate depth and small hot effects clearer; the second image also demonstrates period pixel HUD treatment, which should remain conditional rather than forced. The new capture brief differs from the SP17 funeral-bell illustration in camera, scale and action, while preserving the actual gameplay camera."
+        },
+        {
+          "id": "SP17-095",
+          "reason": "The existing DNA already states black masses and loose contour, but it misses how the game puts character gesture and readable, distorted anatomy first, with variable line and selective hatching doing expressive work. The official Steam campfire screenshot I inspected directly shows four separate expressive cutout figures around a bright fire, dark stone architecture and a deep lower interface panel; the GDC talk explains the deliberate move away from broad top-down views toward side-scrolling claustrophobia and says looseness reinforced imperfection. The new illustration uses a close, non-game subject to prove transferable mark language, not a generic horror texture study. The paired capture will instead use a side-view tactical encounter."
+        },
+        {
+          "id": "SP12-092",
+          "reason": "The existing capture has the right left-right tactical relation, but describes the image mostly as a palette/outline checklist and repeats generic side-view language. This rewrite makes the combat lane, individual acted silhouettes, fixed ground line and claustrophobic setting the primary read, grounded by the GDC discussion of character focus and side-scrolling space. I visually inspected the official Steam campfire screenshot for the 2D cutout drawing, expressive bodies, dark environment, warm fire and framed lower UI; I did not inspect a battle screenshot at full resolution, so the battle-specific details here are marked as inference from the official media gallery and GDC design talk. This frame is distinct from the beekeeper's close orchard illustration."
+        }
+      ],
+      "rootReview": "Root reviewed all proposed fields. Psychological art profiles corrected to painted media without PS2 geometry or gameplay camera; evidence qualifiers stay in research records."
+    },
+    {
+      "group": "fidelity-dark.json",
+      "sources": [
+        {
+          "id": "d2r-blizzard-art",
+          "title": "Technical Alpha Learnings — Diablo II: Resurrected — Blizzard News",
+          "url": "https://news.blizzard.com/en-us/article/23695734/technical-alpha-learnings",
+          "evidenceType": "official developer text",
+          "inspection": "Article text was retrieved and read. The in-browser Blizzard article is behind an age-verification page, so no screenshot from that page is claimed as visually inspected.",
+          "evidence": "Blizzard says the remaster advances monster, hero, item, and spell visuals while preserving the familiar original aesthetic. It also documents adjustments to the recognizable Lightning, Blizzard, and Holy Freeze effects. This supports continuity and effect-color clarity, not claims about an uninspected official still."
+        },
+        {
+          "id": "d2r-community-capture",
+          "title": "Diablo 2 Resurrected: Hoàn Hảo > hoàn hảo hơn! — Tinh tế, player-posted screenshot",
+          "url": "https://tinhte.vn/thread/diablo-2-resurrected-hoan-hao-hoan-hao-hon.3408703/",
+          "imageUrl": "https://photo2.tinhte.vn/data/attachment-files/2021/09/5657288_IMG_2689.jpg",
+          "evidenceType": "secondary community gameplay image",
+          "inspection": "The image was opened and visually inspected in the browser. The page dates it to the days after the September 23, 2021 launch and presents the author's own game images; it is not an official Blizzard asset.",
+          "evidence": "Observed: a fixed elevated view of a dark cavern; a small player figure faces multiple blue demon silhouettes; sharp blue-white effects cut across a blue-gray floor, orange lava occupies the lower-right edge, and the console capture shows red/blue resource orbs and a bottom skill bar. This single image grounds the capture description. Broader original-game continuity comes from the official Blizzard text above."
+        },
+        {
+          "id": "d4-quarterly-june",
+          "title": "Diablo IV Quarterly Update—June 2021 — Blizzard News",
+          "url": "https://news.blizzard.com/en-us/article/23665024/diablo-iv-quarterly-updatejune-2021",
+          "evidenceType": "official art-direction text",
+          "inspection": "Article text was retrieved and read; article images were not visually inspected in the browser.",
+          "evidence": "The art director describes handcrafted character art made with current tools, realism in material response, and detail scaled for the iconic isometric view. The character team names physically based rendering for material/light response and deliberately larger armor shapes for camera readability. These statements support modern material response plus silhouette simplification, not a claim that every image is close-up photorealism."
+        },
+        {
+          "id": "d4-quarterly-march",
+          "title": "Diablo IV Quarterly Update—March 2022 — Blizzard News",
+          "url": "https://news.blizzard.com/en-us/article/23788294/diablo-iv-quarterly-updatemarch-2022",
+          "evidenceType": "official environment art-direction text",
+          "inspection": "Article text was retrieved and read. It identifies all displayed images as work in progress.",
+          "evidence": "The art team describes a darker, grounded interpretation; deliberate construction and material history; weather, dampness, mud, fog, fire-lit warmth, and region-specific palettes. Its stated old-master pillar uses controlled detail, tonal range, and palette, while the return-to-darkness pillar informs dungeons and lighting. It says details are added or removed for combat and navigation readability."
+        },
+        {
+          "id": "d4-town-shot",
+          "title": "Official Diablo IV March 2022 quarterly-update image — arid town",
+          "url": "https://bnetcmsus-a.akamaihd.net/cms/page_media/3WN8QKB14MMC1647903396312.png",
+          "parentUrl": "https://news.blizzard.com/en-us/article/23788294/diablo-iv-quarterly-updatemarch-2022",
+          "evidenceType": "official pre-alpha environment image",
+          "inspection": "The image was opened and visually inspected in the browser. The article caption identifies it as an arid town and explains its dusty, warm oxidized palette.",
+          "evidence": "Observed: a strong raised diagonal view over a wide pale settlement lane; a small figure stands in the open center; low plaster-and-stone buildings, wood stalls, cloth awnings, and deep building shadows frame the route. The light creates long shadows and the scene uses dusty beige, pale ochre, muted brown, and a few small red/green notes. The exact camera tilt is an estimate, not a published specification."
+        },
+        {
+          "id": "d4-tavern-shot",
+          "title": "Official Diablo IV March 2022 quarterly-update image — fire-lit tavern",
+          "url": "https://bnetcmsus-a.akamaihd.net/cms/page_media/0MENR0DKW9M71647903393337.png",
+          "parentUrl": "https://news.blizzard.com/en-us/article/23788294/diablo-iv-quarterly-updatemarch-2022",
+          "evidenceType": "official pre-alpha environment image",
+          "inspection": "The image was opened and visually inspected in the browser. The article caption calls out the tavern's hazy warmth.",
+          "evidence": "Observed: an elevated view inside a dark timber-and-stone tavern, a compact amber fireplace and pools of candlelight, and small figures among tables, storage, and a counter. Warm lit areas sit inside broad near-black shadow. This supports local light contrast as an environmental option, not a requirement to add taverns or fire to other prompts."
+        },
+        {
+          "id": "bloodborne-playstation-blog",
+          "title": "New Bloodborne environments, characters and weapons unveiled — PlayStation.Blog",
+          "url": "https://blog.playstation.com/archive/2014/11/20/new-bloodborne-environments-characters-weapons-unveiled",
+          "evidenceType": "official publisher text and screenshot index",
+          "inspection": "Article text and its PlayStation Europe screenshot links were read. The source describes the setting as a more modern Gothic direction and names the abandoned city, frozen castle, and transforming weapon vocabulary.",
+          "evidence": "The article links to screenshots hosted by the PlayStation Europe account and describes tall, abandoned or frozen Gothic settings and transforming weapons. The screenshots provide the visual evidence below; these textual details are used as source context, not as a substitute for inspecting images."
+        },
+        {
+          "id": "bloodborne-castle-shot",
+          "title": "Bloodborne — Castle_1 — PlayStation Europe screenshot",
+          "url": "https://www.flickr.com/photos/playstationblogeurope/15213968804/",
+          "evidenceType": "official publisher-linked gameplay screenshot",
+          "inspection": "The screenshot was visually inspected in the browser; its Flickr page identifies PlayStation Europe as uploader and links back to the PlayStation.Blog article.",
+          "evidence": "Observed: a close third-person figure low in the foreground of a very tall interior gallery; repeated rails and columns run across the floor plane; high pointed windows admit strong cool blue light; sparse amber candles sit against deep wood and stone shadows."
+        },
+        {
+          "id": "bloodborne-hemwick-shot",
+          "title": "Bloodborne — Hemwick_2 — PlayStation Europe screenshot",
+          "url": "https://www.flickr.com/photos/playstationblogeurope/15214513473/",
+          "evidenceType": "official publisher-linked gameplay screenshot",
+          "inspection": "The screenshot was visually inspected in the browser; its Flickr page identifies PlayStation Europe as uploader and links back to the PlayStation.Blog article.",
+          "evidence": "Observed: a close player-scale encounter among oversized, irregular timber/stone forms, dark silhouette masses, and cold blue-gray atmospheric light with tiny white practical highlights. This complements the castle image with an outdoor/organic Gothic frame; it does not establish that all Bloodborne scenes use fog or enemies."
+        }
+      ],
+      "presets": [
+        {
+          "id": "SP17-084",
+          "reason": "The current proposal names a useful dark value structure but leans too heavily on a mineral palette and risks making every material read alike. This revision grounds the identity in compact chiaroscuro, preserved material differences, and discrete high-energy spell color. Its illustration uses a close lateral arrangement; the paired capture retains the classic elevated encounter view, so the two outputs no longer compete as near-identical screenshots."
+        },
+        {
+          "id": "SP12-081",
+          "reason": "The paired visual evidence shows D2R's compact elevated battle geometry, a small player among several enemies, saturated blue-white spell shapes, and a dark cavern with orange lava. This is the strongest point of difference from D4's broader, more environmentally readable lane and Bloodborne's close third-person camera. The official Blizzard text confirms that the remaster aimed to preserve the familiar original aesthetic while improving visual clarity; the specific screenshot details come from the separately labeled community capture."
+        },
+        {
+          "id": "SP17-085",
+          "reason": "The current description is close, but its natural palette and painted detail do not yet explain why this differs from neighboring dark-fantasy illustrations. Blizzard's art team explicitly describes controlled old-master detail, tonal range and palette, a return to darkness, handcrafted material construction, and detail tuned for the Diablo camera. The proposed style transfers those art decisions to a different close illustration rather than repeating the game's playable framing."
+        },
+        {
+          "id": "SP12-082",
+          "reason": "The present profile identifies a modern raised ARPG camera but risks reducing Diablo IV to generic PBR combat. The directly inspected official pre-alpha image instead shows the camera working with a broad town lane, small central figure, framing stalls and buildings, pale dusty stone, and long shadows. Blizzard's environment update adds the defining logic: handcrafted architecture, regional material/weather histories, and detail tuned for combat and navigation. This is more spacious and region-led than the D2R cavern encounter while remaining distinctly elevated gameplay."
+        },
+        {
+          "id": "SP17-086",
+          "reason": "The current DNA correctly avoids forcing Bloodborne lore, but its broad Gothic wording could describe many medieval horror games. The first-party screenshots show the sharper identity: a close hunter silhouette inside exceptionally tall dark interiors, repeated balcony rails, high pointed windows, cold blue window shafts, and scattered warm lights. The illustration translates that vertical architecture, tailored silhouettes, and cool/warm light contrast while keeping its own editorial composition, separate from the paired third-person game view."
+        },
+        {
+          "id": "SP12-083",
+          "reason": "The current profile identifies a close third-person view but still reads like generic action-horror because it lacks a concrete spatial signature. PlayStation-published images show the hunter low in the foreground of a tall interior, with a long gallery, rails, high windows, cool light shafts, dark timber/stone, and small warm lamps. That camera and architecture separate it decisively from both elevated Diablo profiles; the prompt's requested action remains free to vary."
+        }
+      ],
+      "rootReview": "Root reviewed all proposed fields. Psychological art profiles corrected to painted media without PS2 geometry or gameplay camera; evidence qualifiers stay in research records."
+    }
+  ],
+  "rootFidelityDecision": "All 36 new definitions reviewed. Root strengthened Diablo archaic/ritual design and Bloodborne tailored-versus-beast tension, kept investigation qualifiers outside active DNA, and separated illustrated media from game-engine representation. Source images are references, not copied scenes or acceptance proof.",
+  "cardCompositionReview": {
+    "direction": "User requested more epic and creative compositions, fewer melancholy people doing ordinary tasks. Root reviewed Luna briefs, removed game-engine language from illustrations, retained six readable active gameplay primaries, and selected 30 completed primaries for replacement.",
+    "reviewedPresets": [
+      {
+        "id": "SP17-084",
+        "reason": "Replaces the quiet messenger portrait with a high-energy battle while preserving D2R's defining compact isometric scale, dark mineral value blocks, vivid spell contrast, and painted rather than screenshot finish."
+      },
+      {
+        "id": "SP17-085",
+        "reason": "Trades the intimate knight-and-stag exchange for an environmental crisis. The grounded weather, handcrafted coast, material history, and controlled tonal contrast keep it specifically Diablo IV while making the card feel consequential."
+      },
+      {
+        "id": "SP17-086",
+        "reason": "Turns the small naturalist study into a Gothic ritual with vertical architecture and a supernatural event. Cool moonlit shadow, amber practicals, tailored silhouettes, and detailed ironwork preserve Bloodborne's gaslamp identity without copying its cast."
+      },
+      {
+        "id": "SP17-087",
+        "reason": "Replaces the portcullis-lifting giant with a readable combat instant that invokes Mortal Shell's hardening mechanic and heavy, tarnished material language without repeating a colossus composition."
+      },
+      {
+        "id": "SP17-088",
+        "reason": "Moves from a static creature-and-pilgrim tableau to the game's defining dual-realm tension. Layered Axiom/Umbral architecture, a small guiding lamp, and a single continuous bridge deliver the impossible scale without a split-screen or copied protagonist."
+      },
+      {
+        "id": "SP17-089",
+        "reason": "Makes Amnesia epic through a room-sized, ambiguous threat and distorted shadow scale rather than combat power. First-person height, candle falloff, restrained 2010-era rendering, and uncertainty keep its psychological horror distinct."
+      },
+      {
+        "id": "SP17-090",
+        "reason": "Replaces the quiet guardian tableau with a kinetic creature breach. It keeps Darksiders' oversized sculptural forms, hard comic contours and red/steel contrast while making the action unmistakable."
+      },
+      {
+        "id": "SP17-091",
+        "reason": "Moves beyond the kneeling bell keeper into a ceremonial procession and supernatural reveal. The vertical penitential page, carved grotesques and restrained hot pixels give the card a clearer Blasphemous identity."
+      },
+      {
+        "id": "SP17-092",
+        "reason": "Trades the calm falconer portrait for a leaping sword action and spectral reveal. The contrast between a sharply modeled warrior, painted feudal architecture and captured soul-light anchors it in Onimusha's hybrid visual identity."
+      },
+      {
+        "id": "SP17-093",
+        "reason": "Turns the workshop scene into a tactical breach with collective momentum. The card stresses For Honor's grounded armor, weapon weight and readable faction-scale conflict without copying a faction or hero."
+      },
+      {
+        "id": "SP17-094",
+        "reason": "Replaces the poised fan performer with a clear high-impact martial exchange. The crossed gesture, polished 2023 materials and ceremonial jewel palette distinguish MK1 from For Honor's muddy formation battle."
+      },
+      {
+        "id": "SP17-095",
+        "reason": "Replaces the everyday beekeeper portrait with a creature-led crypt rupture. It demonstrates Darkest Dungeon's loose, characterful ink, claustrophobic staging and selective torch color without repeating the hero-versus-colossus composition."
+      },
+      {
+        "id": "SP24-001",
+        "reason": "Turns SHf’s Showa rural setting, invasive flower imagery, and folklore ritual into a town-scale threat, rather than a portrait of a character beside generic fog."
+      },
+      {
+        "id": "SP24-002",
+        "reason": "Gives the 2001 original its hushed, sickly, dreamlike psychological grammar and a period-conscious painted treatment, while keeping PS2 geometry and game camera out of the aesthetic card."
+      },
+      {
+        "id": "SP24-003",
+        "reason": "Separates the remake through physically rendered wet surfaces, sharp material detail, and cinematic light, with an impossible landmark composition instead of a copied over-shoulder screenshot."
+      },
+      {
+        "id": "SP24-004",
+        "reason": "Centers SH4’s distinctive apartment refuge and invasive thresholds, expanding the domestic space into a surreal vertical structure rather than repeating foggy streets or hallways."
+      },
+      {
+        "id": "SP24-005",
+        "reason": "Makes MGS3’s CQC and jungle fieldcraft the explosive central gesture; the action reads as tactical leverage rather than generic shooting or a recreated game screenshot."
+      },
+      {
+        "id": "SP24-006",
+        "reason": "Builds Death Stranding’s signature contrast of delivery infrastructure and recovering nature into an epic landscape, with the tar-borne alien threat clearly distinct from Silent Hill’s floral or domestic horror."
+      },
+      {
+        "id": "SP12-082",
+        "reason": "Replace passive village walk with a readable large-scale ARPG incursion."
+      },
+      {
+        "id": "SP12-083",
+        "reason": "Replace quiet hallway traversal with a vertical Gothic confrontation."
+      },
+      {
+        "id": "SP12-085",
+        "reason": "Make the two-realm transformation a consequential playable event."
+      },
+      {
+        "id": "SP12-086",
+        "reason": "Give first-person helplessness a large spatial threat without turning Amnesia into an action shooter."
+      },
+      {
+        "id": "SP12-087",
+        "reason": "Exchange scenic traversal for exaggerated graphic action and scale."
+      },
+      {
+        "id": "SP12-088",
+        "reason": "Give the side-scrolling card a characteristic monumental, penitential silhouette."
+      },
+      {
+        "id": "SP12-089",
+        "reason": "Keep fixed-screen gameplay but replace a routine storehouse encounter with supernatural rupture."
+      },
+      {
+        "id": "SP12-093",
+        "reason": "Make floral invasion a startling spatial event instead of background decoration during a walk."
+      },
+      {
+        "id": "SP12-094",
+        "reason": "Use impossible scale and a readable threat while retaining old-game restraint."
+      },
+      {
+        "id": "SP12-095",
+        "reason": "Replace another empty corridor with a strong modern psychological-horror encounter."
+      },
+      {
+        "id": "SP12-096",
+        "reason": "Turn the domestic portal into an impossible view rather than another empty bathroom."
+      },
+      {
+        "id": "SP12-098",
+        "reason": "Make traversal visually consequential through weather, alien scale and engineered balance."
+      }
+    ],
+    "visualAcceptance": {
+      "status": "representative-cards-reviewed",
+      "reviewer": "root",
+      "date": "2026-09-24",
+      "count": 36,
+      "provider": "chatgpt",
+      "criteria": [
+        "Recognizable reference design language at card size",
+        "Varied active or uncanny compositions with clear focal shapes",
+        "Illustration and gameplay camera/render contracts kept separate",
+        "No unintended text, logos, UI or framing"
+      ],
+      "notes": [
+        "All 18 illustration primaries were replaced with epic compositions. Twelve gameplay primaries were replaced; six existing active gameplay compositions were retained.",
+        "A further root correction restored exaggerated graphic proportions to both Darksiders cards and broad hand-drawn ink masses to the Darkest Dungeon illustration.",
+        "Psychological horror gains scale through floral invasion, impossible architecture, reflections and threatening negative space; it is not uniformly converted to heroic combat.",
+        "Prior completed images remain alternatives. This review accepts representative compositions, not exact reproduction of game assets or cross-subject portability."
+      ],
+      "crossSubjectValidation": "pending"
+    },
+    "rootCorrections": {
+      "presets": ["SP17-090", "SP17-095", "SP12-087"],
+      "reason": "Rendered inspection found Darksiders too realistically proportioned and Darkest Dungeon too textured. Strengthen oversized graphic shapes, explicit medium and broad value separation while retaining epic active compositions."
+    }
+  }
+}

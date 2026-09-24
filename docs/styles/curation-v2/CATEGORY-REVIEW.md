@@ -1,8 +1,8 @@
-# Category review — 151 categories
+# Category review — 158 categories
 
 Generated from `scripts/style-curation/category-reviews.json` and current source manifests.
 
-**Scope:** source/text decisions covering 1,739 presets, including legacy categories, authored studies and the imported atlases. Each entry separates editorial state from cross-subject image validation. Representative evidence describes the source; generated cards alone do not certify transfer across subjects. Implementation details are recorded in README.md.
+**Scope:** source/text decisions covering 1,775 presets, including legacy categories, authored studies and the imported atlases. Each entry separates editorial state from cross-subject image validation. Representative evidence describes the source; generated cards alone do not certify transfer across subjects. Implementation details are recorded in README.md.
 
 Types: style = visual language; modifier = scoped treatment; profile = deliberate output/camera format; theme = content/design/world direction; mixed = individual presets need separation.
 
@@ -1990,3 +1990,100 @@ Evidence [SP15-120](../../../components/recipes/styles/manifests/presets/pack_15
 
 Evidence [SP15-121](../../../components/recipes/styles/manifests/presets/pack_15/SP15-121.yaml) — Stonepunk: `Organize forms as stepped masses and interlocking arcs with open intervals; preserve the subject's established focal hierarchy rather than building a fixed mechanism diagram.`
 Evidence [SP15-122](../../../components/recipes/styles/manifests/presets/pack_15/SP15-122.yaml) — Low-Tech Punk: `Arrange modules and lines with open intervals so load paths and cause-and-effect stay readable; preserve the requested crop and focal hierarchy.`
+
+## pack_12 / 9. Gothic & Dungeon Gameplay
+
+**Display:** Gothic & dungeon gameplay · **Scope:** profile · **Presets:** 6
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Game camera and renderer must be explicit without locking the request to a named protagonist or one level.
+**Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
+**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Image acceptance check:** Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.
+
+Evidence [SP12-081](../../../components/recipes/styles/manifests/presets/pack_12/SP12-081.yaml) — Diablo II: Resurrected Isometric Gameplay Capture: `Use a stable elevated three-quarter/isometric ARPG view. Keep the playable figure small relative to the area, with a diagonal floor plane and nearby targets arranged as a readable local encounter; avoid a free camera, shoulder-level follow view, or portrait cr`…
+Evidence [SP12-082](../../../components/recipes/styles/manifests/presets/pack_12/SP12-082.yaml) — Diablo IV Elevated ARPG Gameplay Capture: `Stable steep raised three-quarter ARPG camera, minimal horizon and broad navigable ground plane. A complete small playable figure remains readable among surrounding structures and local targets.`
+Evidence [SP12-083](../../../components/recipes/styles/manifests/presets/pack_12/SP12-083.yaml) — Bloodborne Third-Person Hunt Capture: `Use a close over-the-shoulder third-person camera at human height. Place the playable figure near the lower foreground and let rails, floor lines, tall windows, and columns lead forward into the playable space; do not switch to an isometric or first-person vie`…
+
+## pack_12 / 10. Graphic & Feudal Gameplay
+
+**Display:** Graphic & feudal gameplay · **Scope:** profile · **Presets:** 6
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Game camera and renderer must be explicit without locking the request to a named protagonist or one level.
+**Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
+**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Image acceptance check:** Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.
+
+Evidence [SP12-087](../../../components/recipes/styles/manifests/presets/pack_12/SP12-087.yaml) — Darksiders Third-Person Gameplay Capture: `Lock to a trailing third-person camera a little above and behind the playable character, looking into the traversable space. Keep the hero large in the near field, typically left or center-left, with ground plane and route ahead visible; use a long sword or ne`…
+Evidence [SP12-088](../../../components/recipes/styles/manifests/presets/pack_12/SP12-088.yaml) — Blasphemous Side-Scrolling Gameplay Capture: `Lock to a strict side-scrolling gameplay plane with a horizontal route, visible footing and a gap, obstacle or enemy ahead. A portrait card may crop to one compact section of the longer world, but must not tilt the camera or remove the lateral movement read. K`…
+Evidence [SP12-089](../../../components/recipes/styles/manifests/presets/pack_12/SP12-089.yaml) — Onimusha Warlords Fixed-Scene Gameplay Capture: `Use one authored fixed environmental camera with a smaller animated 3D subject moving through a composed background. Preserve the requested output aspect ratio and keep usable depth planes visible; if classic 4:3 presentation is requested, preserve that fixed-`…
+
+## pack_12 / 11. Psychological & Tactical Gameplay
+
+**Display:** Psychological & tactical gameplay · **Scope:** profile · **Presets:** 6
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Game camera and renderer must be explicit without locking the request to a named protagonist or one level.
+**Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
+**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Image acceptance check:** Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.
+
+Evidence [SP12-093](../../../components/recipes/styles/manifests/presets/pack_12/SP12-093.yaml) — Silent Hill f — Showa Folklore Gameplay: `Third-person camera behind or slightly above the playable subject, small-to-medium in frame; preserve forward traversal space and glimpses of town architecture.`
+Evidence [SP12-094](../../../components/recipes/styles/manifests/presets/pack_12/SP12-094.yaml) — Silent Hill 2 (2001) — Elevated PS2 Gameplay: `An elevated external camera looking down toward the player, with variable scene framing and environmental foreground; not an over-the-shoulder follow camera. The recent official Konami comparison explicitly contrasts the original looking-down view with the rem`…
+Evidence [SP12-095](../../../components/recipes/styles/manifests/presets/pack_12/SP12-095.yaml) — Silent Hill 2 (2024) — Shoulder-Follow Gameplay: `Documented over-the-shoulder follow camera: the player occupies the lower foreground, offset enough to reveal the immediate route and environmental threats; distinct from the original's looking-down camera.`
+
+## pack_17 / 9. Gothic & Dungeon Art Directions
+
+**Display:** Gothic & dungeon art · **Scope:** style · **Presets:** 6
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** A recognizable art direction must retain its material, palette and lighting mechanisms without imposing the reference game scene.
+**Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
+**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Image acceptance check:** Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.
+
+Evidence [SP17-084](../../../components/recipes/styles/manifests/presets/pack_17/SP17-084.yaml) — Diablo II — Mineral Chiaroscuro: `Preserve the camera, crop, and spatial relationships requested by the prompt. Where composition is open, favor compact lateral overlap and a concentrated focal cluster; the game's elevated ARPG view belongs to its separate capture profile.`
+Evidence [SP17-085](../../../components/recipes/styles/manifests/presets/pack_17/SP17-085.yaml) — Diablo IV — Old-Master Gloom: `Keep the requested viewpoint and crop. Organize the illustration with an old-master-like tonal focal hierarchy, not an imposed ARPG view, cathedral, monster, or cinematic close-up.`
+Evidence [SP17-086](../../../components/recipes/styles/manifests/presets/pack_17/SP17-086.yaml) — Bloodborne — Gaslamp Gothic: `Preserve the prompt's viewpoint and crop. Where open, use vertical window, column, railing, or stair rhythms to create depth and grandeur; the low third-person game camera is a separate capture treatment, not a requirement for every illustration.`
+
+## pack_17 / 10. Graphic & Feudal Art Directions
+
+**Display:** Graphic & feudal art · **Scope:** style · **Presets:** 6
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** A recognizable art direction must retain its material, palette and lighting mechanisms without imposing the reference game scene.
+**Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
+**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Image acceptance check:** Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.
+
+Evidence [SP17-090](../../../components/recipes/styles/manifests/presets/pack_17/SP17-090.yaml) — Darksiders — Apocalyptic Graphic Fantasy: `Keep the camera, crop and scale requested by the prompt. For an illustration, favor a readable foreground silhouette, a strong weapon or body diagonal and architecture that makes the subject feel large; let these devices support the chosen subject rather than `…
+Evidence [SP17-091](../../../components/recipes/styles/manifests/presets/pack_17/SP17-091.yaml) — Blasphemous — Penitent Pixel Gothic: `Respect the prompt's requested camera and crop. Let narrow vertical architecture, a stark silhouette and uneven negative space carry the image; use devotional balance or a ceremonial center only when the subject merits it. Do not make every illustration a side`…
+Evidence [SP17-092](../../../components/recipes/styles/manifests/presets/pack_17/SP17-092.yaml) — Onimusha — Feudal Supernatural Drama: `Strong diagonal gesture against rectilinear beams or a quiet architectural plane; foreground occlusion adds theatrical depth without prescribing a fixed game camera.`
+
+## pack_24 / 1. Psychological Horror Aesthetics
+
+**Display:** Psychological horror · **Scope:** style · **Presets:** 4
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** A recognizable art direction must retain its material, palette and lighting mechanisms without imposing the reference game scene.
+**Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
+**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Image acceptance check:** Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.
+
+Evidence [SP24-001](../../../components/recipes/styles/manifests/presets/pack_24/SP24-001.yaml) — Silent Hill f — Blooming Folkloric Horror: `Preserve the user's camera and crop. Build tension with a calm human-scale anchor surrounded or bisected by invading organic forms; asymmetry carries the beautiful-versus-horrifying turn.`
+Evidence [SP24-002](../../../components/recipes/styles/manifests/presets/pack_24/SP24-002.yaml) — Silent Hill 2 (2001) — Sickly Memory: `Preserve requested camera and crop. Use a quiet isolated anchor, disproportionate negative space and a subtle mismatch between reflection and physical space.`
+Evidence [SP24-003](../../../components/recipes/styles/manifests/presets/pack_24/SP24-003.yaml) — Silent Hill 2 (2024) — Wet Concrete, Near Dread: `Preserve requested camera and crop. Bring the focal human action close against receding obscured depth, using glass, doorways or reflection to separate uncertain layers.`
+
+## pack_24 / 2. Tactical & Solitary Frontiers
+
+**Display:** Tactical & solitary frontiers · **Scope:** style · **Presets:** 2
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** A recognizable art direction must retain its material, palette and lighting mechanisms without imposing the reference game scene.
+**Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
+**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Image acceptance check:** Review a complete representative composition, then test transfer to different subjects with explicit camera, text, palette and material requests.
+
+Evidence [SP24-005](../../../components/recipes/styles/manifests/presets/pack_24/SP24-005.yaml) — Metal Gear — Tactical Brushwork: `An assertive oblique gesture balanced by open paper and a few structural marks. Preserve the requested viewpoint; no mandatory jungle, gun or game camera.`
+Evidence [SP24-006](../../../components/recipes/styles/manifests/presets/pack_24/SP24-006.yaml) — Death Stranding — Industrial Sublime: `A distinct small anchor and a vast traversable void, with one engineered line crossing organic terrain. Preserve explicit framing; never reduce the subject to an invisible speck.`
