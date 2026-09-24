@@ -1,0 +1,111 @@
+schemaVersion: 1
+id: SP17-088
+packId: pack_17
+name: Lords of the Fallen — Tormented Allegory
+category: 9. Gothic & Dungeon Art Directions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - lords-of-the-fallen-2023
+  - lords of the fallen (2023)
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Lords of the Fallen (2023) concept-art grammar: grounded medieval construction transformed by
+    devotional excess and bodily cosmic horror. Accumulation changes the silhouette, not merely the
+    surface color.
+  subject_treatment: >-
+    Preserve explicit subject and action. On unspecified design areas, use thorn-like extensions,
+    layered votive forms and constrained postures; contrast living weight with pallid, emptied
+    shapes.
+  color_and_tone: >-
+    Soot, dried carmine, dull gilding and candle ivory contrasted with blue-green corpse-pale
+    mineral tones. Distinct local color families, not an all-blue horror filter.
+  lighting_and_shadow: >-
+    Small warm devotional lights confront cold diffuse dead-realm glow. Keep enough midtone to
+    reveal bodily growth and layered forms.
+  texture_and_material: >-
+    Waxy buildup, corroded iron, porous limestone and membranous seams; organic accretions join
+    existing structure through ribs, tendons and folds rather than random tentacles.
+  camera_and_composition: >-
+    A clear subject under a disproportionately oppressive vertical mass; repeating forms accumulate
+    toward the focal point. Preserve an explicitly requested crop or viewpoint.
+  atmosphere_and_mood: >-
+    Torment, fanaticism and fragile sanctity; bodily unease and cosmic scale coexist with worn
+    practical medieval craft.
+  rendering_and_quality: >-
+    Painterly dark-fantasy concept art, broad atmospheric masses with sharply selected grotesque
+    details. The ornamental accumulation must be readable before the microtexture.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-088.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: Lords of the Fallen (2023) (2023 reboot; Axiom/Umbral presentation)
+  pairedPresetId: SP12-085
+  sourceReferences:
+    - title: Art Direction — HEXWORKS Dev Journals — Lords of the Fallen
+      url: https://www.lordsofthefallen.com/lords-of-the-fallen-2023/art-direction-hexworks-dev-journals/
+    - title: Umbral — Lords of the Fallen Official Site
+      url: https://www.lordsofthefallen.com/lords-of-the-fallen-2023/umbral/
+    - title: All-New Screenshots — Explore the Lands of Lords of the Fallen — Official Site
+      url: https://www.lordsofthefallen.com/lords-of-the-fallen-2023/?p=1322
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Lords of the Fallen — Tormented Allegory
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Lords of the Fallen — Tormented Allegory
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - game-art-direction
+    - lords-of-the-fallen-2023
+    - lords of the fallen (2023)
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

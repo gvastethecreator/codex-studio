@@ -1,0 +1,115 @@
+schemaVersion: 1
+id: SP17-092
+packId: pack_17
+name: Onimusha — Feudal Supernatural Drama
+category: 10. Graphic & Feudal Art Directions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - onimusha-warlords-remaster
+  - 'onimusha: warlords'
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Onimusha: Warlords visual world translated into dramatic painted art: grounded Sengoku craft,
+    theatrical samurai silhouettes and sharply colored supernatural energy against dark
+    architectural framing.
+  subject_treatment: >-
+    Preserve explicit identity and action. Shape unspecified clothing and objects through tied
+    layers, overlapping lacquer plates and purposeful asymmetry; spectral accents attach to a
+    meaningful active form.
+  color_and_tone: >-
+    Vermilion lacquer, indigo cloth, warm plaster and almost-black timber, punctuated by
+    concentrated blue-violet or green spirit light.
+  lighting_and_shadow: >-
+    Strong side lighting catches lacquer ridges and blade-like edges; pale supernatural light stays
+    localized and interacts with nearby surfaces.
+  texture_and_material: >-
+    Laced armor, rubbed lacquer, fibrous rope, grainy timber and cracked plaster; material joins
+    remain designed and visible beneath painterly finish.
+  camera_and_composition: >-
+    Strong diagonal gesture against rectilinear beams or a quiet architectural plane; foreground
+    occlusion adds theatrical depth without prescribing a fixed game camera.
+  atmosphere_and_mood: >-
+    Grave martial resolve disturbed by uncanny luminous intrusion; feudal drama, not generic
+    European gothic or weightless anime spectacle.
+  rendering_and_quality: >-
+    Detailed, naturalistically proportioned painted key art with purposeful brush transitions; avoid
+    modern Souls-style desaturation or a photographed historical costume.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-092.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: >-
+    Onimusha: Warlords (2019 HD remaster of the 2001 original; Capcom's remaster preserves
+    fixed-scene camera behavior)
+  pairedPresetId: SP12-089
+  sourceReferences:
+    - title: 'Onimusha: Warlords on Steam — Capcom product listing'
+      url: https://store.steampowered.com/app/761600/Onimusha_Warlords/
+    - title: 'Capcom fan-favourite Onimusha: Warlords is coming to PS4 — PlayStation Blog'
+      url: https://blog.playstation.com/archive/2018/08/28/capcom-fan-favourite-onimusha-warlords-is-coming-to-ps4-with-a-host-of-new-features
+    - title: 'Onimusha: Warlords now available — Capcom News'
+      url: https://news.capcomusa.com/lets/browse/onimusha-warlords-j-disponvel
+    - title: Onimusha Warlords — Capcom article and PS4 capture
+      url: https://blog.playstation.com/2018/08/28/ps2-classic-onimusha-warlords-comes-to-ps4-january-15-2019/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Onimusha — Feudal Supernatural Drama
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Onimusha — Feudal Supernatural Drama
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - game-art-direction
+    - onimusha-warlords-remaster
+    - 'onimusha: warlords'
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

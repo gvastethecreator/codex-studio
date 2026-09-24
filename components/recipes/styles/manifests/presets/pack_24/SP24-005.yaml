@@ -1,0 +1,118 @@
+schemaVersion: 1
+id: SP24-005
+packId: pack_24
+name: Metal Gear — Tactical Brushwork
+category: 2. Tactical & Solitary Frontiers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - metal-gear-solid-3-snake-eater-ps2
+  - 'metal gear solid 3: snake eater'
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Metal Gear concept-illustration language, paired with MGS3 fieldcraft: expressive brush-ink
+    silhouettes, interrupted contours, dry-brush drag and sparse translucent color over confident
+    tactical design.
+  subject_treatment: >-
+    Preserve explicit identity and action. Shape anatomy and mechanical forms with tapering black
+    gestures, selected precise joints and unresolved edges; unspecified equipment has practical
+    military-industrial construction.
+  color_and_tone: >-
+    Bone paper, deep ink, smoke grey and olive with one muted ochre or crimson accent. Leave large
+    areas unpainted; explicit colors become selective washes.
+  lighting_and_shadow: >-
+    Light is expressed through untouched paper and abrupt black shadow shapes; a few grey washes
+    describe volume without photoreal shading.
+  texture_and_material: >-
+    Broken ink edges, brush pressure, translucent wash and occasional sharp technical line;
+    distinguish straps, hard plates and organic surfaces through mark direction rather than
+    photographic texture.
+  camera_and_composition: >-
+    An assertive oblique gesture balanced by open paper and a few structural marks. Preserve the
+    requested viewpoint; no mandatory jungle, gun or game camera.
+  atmosphere_and_mood: >-
+    Controlled urgency, secrecy and tactical concentration; the unfinished mark carries energy
+    without obscuring the subject.
+  rendering_and_quality: >-
+    High-contrast gestural ink-and-wash concept illustration with naturalistic structure. No generic
+    realistic jungle painting, anime face, smooth CGI or uniform grunge filter.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP24-005.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: >-
+    METAL GEAR SOLID 3: SNAKE EATER (Original PlayStation 2 release (2004/2005 regional releases),
+    not Delta: Snake Eater)
+  pairedPresetId: SP12-097
+  sourceReferences:
+    - title: 'METAL GEAR SOLID 3: SNAKE EATER'
+      url: https://www.konami.com/games/eu/en/products/mgs3se/
+    - title: 'METAL GEAR SOLID 3: SNAKE EATER — System'
+      url: https://www.konami.com/mg/archive/mgs3/uk/system_main.html
+    - title: The Truth Behind METAL GEAR SOLID 3
+      url: https://www.konami.com/mg/archive/mg25th/truth/mgs3.html
+    - title: Xbox Wire interview with Noriaki Okamura — original overhead camera versus modern view
+      url: https://news.xbox.com/en-us/podcast/xbox-games-showcase-deep-dive-metal-gear-solid-%CE%B4-snake-eater/
+    - title: Yoji Shinkawa interview — Metal Gear illustration methods
+      url: https://www.konami.com/mg/archive/mgs2/art/second.html
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Metal Gear — Tactical Brushwork
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Metal Gear — Tactical Brushwork
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - game-art-direction
+    - metal-gear-solid-3-snake-eater-ps2
+    - 'metal gear solid 3: snake eater'
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

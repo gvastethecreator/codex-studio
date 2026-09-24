@@ -1,0 +1,116 @@
+schemaVersion: 1
+id: SP17-093
+packId: pack_17
+name: For Honor — Battlefield Monumentality
+category: 10. Graphic & Feudal Art Directions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - for-honor
+  - for honor
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    For Honor (2017) painted art direction: credible medieval construction pushed into massive
+    heroic scale, practical martial silhouettes and battered faction colors against monumental
+    fortifications.
+  subject_treatment: >-
+    Preserve explicit identity and action. Favor functional layers, load-bearing joins and
+    substantial weight; exaggerate scale and silhouette without turning every object into decorative
+    fantasy armor.
+  color_and_tone: >-
+    Cold iron and grey-brown stone with muted heraldic yellow, blue or red, broken by warm sunlight
+    and pale battle smoke.
+  lighting_and_shadow: >-
+    Broad daylight across fortified masses, dark occluded foreground and selective bright openings;
+    make silhouettes and occupied ground readable.
+  texture_and_material: >-
+    Hammered plate over mail and quilted fabric, worn painted surfaces and massive fitted stone;
+    visible fastenings and localized field damage.
+  camera_and_composition: >-
+    Layered foreground action, midground ramparts and a large pale atmospheric opening; compressed
+    monumental scale and clear lines of force. Preserve explicit framing.
+  atmosphere_and_mood: >-
+    Embattled endurance, discipline and physical impact; practical martial grandeur rather than
+    magical apocalypse.
+  rendering_and_quality: >-
+    Painterly production concept art with broad value planning and selectively resolved
+    construction. Brush-built atmosphere around concrete silhouettes, not uniformly detailed
+    historical photography.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-093.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: >-
+    For Honor (2017 original release; use base-game combat grammar and leave live-service cosmetics
+    out)
+  pairedPresetId: SP12-090
+  sourceReferences:
+    - title: FOR HONOR on Steam — product listing and screenshots
+      url: https://store.steampowered.com/app/304390/FOR_HONOR/
+    - title: For Honor — official Ubisoft game page
+      url: https://www.ubisoft.com/en-ca/game/for-honor
+    - title: For Honor Unveiled — Ubisoft News
+      url: https://news.ubisoft.com/en-us/article/3Y7pyV1e0BCI6fVWFqQc4C/for-honor-unveiled
+    - title: 'The Art of For Honor: Citadel Gate'
+      url: https://www.ubisoft.com/en-us/game/for-honor/news-updates/4kG1dLi9w3Ax5VqMJtwwXS/the-art-of-for-honor-citadel-gate
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: For Honor — Battlefield Monumentality
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: For Honor — Battlefield Monumentality
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - game-art-direction
+    - for-honor
+    - for honor
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

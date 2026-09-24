@@ -1,14 +1,13 @@
 schemaVersion: 1
 id: pack_17
 name: Medieval Fantasy & Dungeon Zine
-cardTitle: 'Dungeon Zine'
-cardDescription: 'Fantasy zines, dungeons, bestiary, grim kingdoms.'
+cardTitle: Dungeon Zine
+cardDescription: Fantasy zines, dungeons, bestiary, grim kingdoms.
 description: >-
-  Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror,
-  weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates,
-  rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems,
-  isometric game aesthetics, analog zine processes, pulp fantasy painting, and transferable
-  drawing-media studies.
+  Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird
+  editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech
+  crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, isometric game
+  aesthetics, analog zine processes, pulp fantasy painting, and transferable drawing-media studies.
 categories:
   - id: dark-fantasy-and-gothic-courts
     name: 1. Dark Fantasy & Gothic Courts
@@ -117,6 +116,24 @@ categories:
       - pack_17/SP17-081.yaml
       - pack_17/SP17-082.yaml
       - pack_17/SP17-083.yaml
+  - id: gothic-and-dungeon-art-directions
+    name: 9. Gothic & Dungeon Art Directions
+    presetRefs:
+      - pack_17/SP17-084.yaml
+      - pack_17/SP17-085.yaml
+      - pack_17/SP17-086.yaml
+      - pack_17/SP17-087.yaml
+      - pack_17/SP17-088.yaml
+      - pack_17/SP17-089.yaml
+  - id: graphic-and-feudal-art-directions
+    name: 10. Graphic & Feudal Art Directions
+    presetRefs:
+      - pack_17/SP17-090.yaml
+      - pack_17/SP17-091.yaml
+      - pack_17/SP17-092.yaml
+      - pack_17/SP17-093.yaml
+      - pack_17/SP17-094.yaml
+      - pack_17/SP17-095.yaml
 presetRefs:
   - pack_17/SP17-001.yaml
   - pack_17/SP17-073.yaml
@@ -201,3 +218,15 @@ presetRefs:
   - pack_17/SP17-081.yaml
   - pack_17/SP17-082.yaml
   - pack_17/SP17-083.yaml
+  - pack_17/SP17-084.yaml
+  - pack_17/SP17-085.yaml
+  - pack_17/SP17-086.yaml
+  - pack_17/SP17-087.yaml
+  - pack_17/SP17-088.yaml
+  - pack_17/SP17-089.yaml
+  - pack_17/SP17-090.yaml
+  - pack_17/SP17-091.yaml
+  - pack_17/SP17-092.yaml
+  - pack_17/SP17-093.yaml
+  - pack_17/SP17-094.yaml
+  - pack_17/SP17-095.yaml

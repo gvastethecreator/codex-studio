@@ -1,0 +1,111 @@
+schemaVersion: 1
+id: SP24-004
+packId: pack_24
+name: Silent Hill 4 — Domestic Intrusion
+category: 1. Psychological Horror Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - silent-hill-4-the-room
+  - 'silent hill 4: the room'
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Silent Hill 4: The Room (2004) psychological-horror art direction: ordinary closed domestic
+    space turns subtly bodily and hostile, with compressed perspective and sickly analog tonal
+    instability.
+  subject_treatment: >-
+    Preserve explicit identity and action. Keep mundane subjects outwardly plausible; disturb their
+    relationship to space through an intrusive stain, doubled shadow or impossible threshold where
+    compatible.
+  color_and_tone: >-
+    Nicotine ivory, dirty beige, bruised brown and dim institutional green with narrow bloody rust
+    accents; few clean bright colors.
+  lighting_and_shadow: >-
+    Flat weak daylight or one tired practical lamp becomes unreliable near a threshold; shadow and
+    warm-cold shifts imply presence before a visible creature.
+  texture_and_material: >-
+    Thin wall paint, tired cloth, greasy glass and rusted fixtures with localized organic
+    discoloration. Unease belongs to the inhabited material, not an all-over grunge overlay.
+  camera_and_composition: >-
+    Tight domestic framing, blocked exits and off-center gaps that feel observed; an ordinary anchor
+    remains clear amid subtle spatial contradiction.
+  atmosphere_and_mood: >-
+    Entrapment, voyeurism and contaminated familiarity; private shelter becomes invasive rather than
+    a broad foggy town.
+  rendering_and_quality: >-
+    Unsettling painted mixed-media illustration with smoky edges and sparse abrasion; analog
+    restraint and human scale, not polished modern cinematic horror.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP24-004.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: 'SILENT HILL 4: The Room (Original release (2004))'
+  pairedPresetId: SP12-096
+  sourceReferences:
+    - title: 'SILENT HILL 4: THE ROOM'
+      url: https://www.konami.com/games/eu/en/products/silenthill4/
+    - title: 'Classic Postmortem: Silent Hill 4: The Room'
+      url: https://www.gamedeveloper.com/audio/classic-postmortem-i-silent-hill-4-the-room-i-
+    - title: 'SILENT HILL 4: THE ROOM (Japan)'
+      url: https://www.konami.com/games/jp/ja/products/silenthill4/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Silent Hill 4 — Domestic Intrusion
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Silent Hill 4 — Domestic Intrusion
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - game-art-direction
+    - silent-hill-4-the-room
+    - 'silent hill 4: the room'
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

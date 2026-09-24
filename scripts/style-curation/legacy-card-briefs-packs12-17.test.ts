@@ -38,7 +38,10 @@ describe('legacy preview briefs for packs 12–17', () => {
       const subjectsByCategory = new Map<string, string[]>();
 
       for (const preset of presets) {
-        if (packId === 'pack_17' && Number(preset.id.slice(-3)) >= 74) {
+        if (
+          (packId === 'pack_17' && Number(preset.id.slice(-3)) >= 74) ||
+          (packId === 'pack_12' && Number(preset.id.slice(-3)) >= 81)
+        ) {
           const reviewed = reviewedCardBriefs[preset.id];
           expect(reviewed, `${packId}/${preset.id} reviewed brief`).toBeTruthy();
           expect(reviewed).not.toMatch(/\b(vase|jar|amphora)\b/i);

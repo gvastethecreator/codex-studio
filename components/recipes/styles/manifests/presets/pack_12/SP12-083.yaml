@@ -1,0 +1,132 @@
+schemaVersion: 1
+id: SP12-083
+packId: pack_12
+name: Bloodborne Third-Person Hunt Capture
+category: 9. Gothic & Dungeon Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - bloodborne
+  - bloodborne
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    A 2015 PS4-generation real-time action-horror frame whose Gothic environment is experienced from
+    immediately behind the playable hunter. The environment rises around a human-scale figure
+    instead of being reduced to an elevated ARPG playfield.
+  subject_treatment: >-
+    Preserve the requested actor, action, and objects. When a playable figure is included, keep it
+    in the near foreground at close third-person scale; retain a clear silhouette and the relation
+    between the figure, weapon if requested, and nearby architecture without adding an opponent.
+  color_and_tone: >-
+    Use deep blue-gray and blue-black shadow, soot-dark wood or stone, and restrained umber. Small
+    amber candle or gaslight points and cool window light can separate planes; avoid a uniform
+    crimson tint.
+  lighting_and_shadow: >-
+    Favor low-key real-time lighting with strong local contrast: the inspected interior has cool
+    beams entering high windows and sparse warm lights against deep architecture shadow. Keep enough
+    midtone on the character and route for gameplay reading.
+  texture_and_material: >-
+    Show game-scale stone, timber, iron, glass, and worn cloth with the restrained detail of an
+    original PS4-era frame. Let light reveal the material transitions; wetness is scene-dependent
+    rather than a global surface treatment.
+  camera_and_composition: >-
+    Use a close over-the-shoulder third-person camera at human height. Place the playable figure
+    near the lower foreground and let rails, floor lines, tall windows, and columns lead forward
+    into the playable space; do not switch to an isometric or first-person view.
+  atmosphere_and_mood: >-
+    Keep immediate architectural oppression and uncertain depth around the player while leaving the
+    route and requested action legible. A hunt, enemy, or attack is not mandatory.
+  rendering_and_quality: >-
+    Read as interpreted 2015-era real-time PS4 gameplay with stable third-person perspective,
+    low-light environment detail, and clean actor-to-architecture separation. Include HUD or
+    captions only when explicitly requested; preserve requested text or interface rather than
+    banning it.
+avoidRules:
+  - isometric or first-person view
+  - static fashion portrait in place of gameplay-scale framing
+  - unreadable subject/architecture overlap
+  - unrequested canonical hunter, weapon, boss or landmark
+  - unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
+  - anime, manga or cel-shaded grammar
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-083.webp
+attributes:
+  negativePrompt: >-
+    isometric or first-person view, static fashion portrait in place of gameplay-scale framing,
+    unreadable subject/architecture overlap, unrequested canonical hunter, weapon, boss or landmark,
+    unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text, anime,
+    manga or cel-shaded grammar
+  referenceGame: Bloodborne (2015 PS4 original; official launch-era material)
+  pairedPresetId: SP17-086
+  sourceReferences:
+    - title: Bloodborne — Official PlayStation Game Page
+      url: https://www.playstation.com/en-us/games/bloodborne/
+    - title: New Bloodborne Environments, Characters and Weapons Unveiled — PlayStation.Blog
+      url: https://blog.playstation.com/archive/2014/11/20/new-bloodborne-environments-characters-weapons-unveiled
+    - title: New Bloodborne Screens and More Detail on Chalice Dungeons — PlayStation.Blog
+      url: https://blog.playstation.com/archive/2014/12/18/new-bloodborne-screens-detail-chalice-dungeons/
+    - title: Bloodborne — Castle_1 — PlayStation Europe screenshot
+      url: https://www.flickr.com/photos/playstationblogeurope/15213968804/
+    - title: Bloodborne — Hemwick_2 — PlayStation Europe screenshot
+      url: https://www.flickr.com/photos/playstationblogeurope/15214513473/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Bloodborne Third-Person Hunt Capture
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Bloodborne Third-Person Hunt Capture
+      - field: camera_and_composition
+        group: camera
+        value: bloodborne gameplay view
+    avoidRules:
+      - text: isometric or first-person view
+        field: global
+      - text: static fashion portrait in place of gameplay-scale framing
+        field: global
+      - text: unreadable subject/architecture overlap
+        field: global
+      - text: unrequested canonical hunter, weapon, boss or landmark
+        field: global
+      - text: unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
+        field: global
+      - text: anime, manga or cel-shaded grammar
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: gothic-and-dungeon-gameplay
+  categoryName: 9. Gothic & Dungeon Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - bloodborne
+    - bloodborne
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

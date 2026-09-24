@@ -3,7 +3,7 @@
     {
       "id": "pack_12",
       "name": "Video Game Originals Vault",
-      "presetCount": 80
+      "presetCount": 98
     }
   ],
   "presets": [
@@ -1150,7 +1150,223 @@
       "tags": ["video-game-originals-vault", "puzzle-chambers-and-adventure-setpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp12-080 hollow keep lock-on classic old-gen soulslike gameplay screenshots hostile ruined keep traversal-combat 8. puzzle chambers & adventure setpieces adventure game capture pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces"
+    },
+    {
+      "id": "SP12-081",
+      "name": "Diablo II: Resurrected Isometric Gameplay Capture",
+      "ref": "pack_12/SP12-081.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "tags": ["video-game-originals-vault", "gothic-and-dungeon-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-081 diablo ii: resurrected isometric gameplay capture 9. gothic & dungeon gameplay gothic & dungeon gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay"
+    },
+    {
+      "id": "SP12-082",
+      "name": "Diablo IV Elevated ARPG Gameplay Capture",
+      "ref": "pack_12/SP12-082.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "tags": ["video-game-originals-vault", "gothic-and-dungeon-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-082 diablo iv elevated arpg gameplay capture 9. gothic & dungeon gameplay gothic & dungeon gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay"
+    },
+    {
+      "id": "SP12-083",
+      "name": "Bloodborne Third-Person Hunt Capture",
+      "ref": "pack_12/SP12-083.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "tags": ["video-game-originals-vault", "gothic-and-dungeon-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-083 bloodborne third-person hunt capture 9. gothic & dungeon gameplay gothic & dungeon gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay"
+    },
+    {
+      "id": "SP12-084",
+      "name": "Mortal Shell Third-Person Gameplay",
+      "ref": "pack_12/SP12-084.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "tags": ["video-game-originals-vault", "gothic-and-dungeon-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-084 mortal shell third-person gameplay 9. gothic & dungeon gameplay gothic & dungeon gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay"
+    },
+    {
+      "id": "SP12-085",
+      "name": "Lords of the Fallen Dual-Realm Gameplay Capture",
+      "ref": "pack_12/SP12-085.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "tags": ["video-game-originals-vault", "gothic-and-dungeon-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-085 lords of the fallen dual-realm gameplay capture 9. gothic & dungeon gameplay gothic & dungeon gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay"
+    },
+    {
+      "id": "SP12-086",
+      "name": "Amnesia: The Dark Descent First-Person Gameplay Capture",
+      "ref": "pack_12/SP12-086.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "tags": ["video-game-originals-vault", "gothic-and-dungeon-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-086 amnesia: the dark descent first-person gameplay capture 9. gothic & dungeon gameplay gothic & dungeon gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay"
+    },
+    {
+      "id": "SP12-087",
+      "name": "Darksiders Third-Person Gameplay Capture",
+      "ref": "pack_12/SP12-087.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "tags": ["video-game-originals-vault", "graphic-and-feudal-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-087 darksiders third-person gameplay capture 10. graphic & feudal gameplay graphic & feudal gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay"
+    },
+    {
+      "id": "SP12-088",
+      "name": "Blasphemous Side-Scrolling Gameplay Capture",
+      "ref": "pack_12/SP12-088.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "tags": ["video-game-originals-vault", "graphic-and-feudal-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-088 blasphemous side-scrolling gameplay capture 10. graphic & feudal gameplay graphic & feudal gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay"
+    },
+    {
+      "id": "SP12-089",
+      "name": "Onimusha Warlords Fixed-Scene Gameplay Capture",
+      "ref": "pack_12/SP12-089.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "tags": ["video-game-originals-vault", "graphic-and-feudal-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-089 onimusha warlords fixed-scene gameplay capture 10. graphic & feudal gameplay graphic & feudal gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay"
+    },
+    {
+      "id": "SP12-090",
+      "name": "For Honor Third-Person Melee Capture",
+      "ref": "pack_12/SP12-090.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "tags": ["video-game-originals-vault", "graphic-and-feudal-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-090 for honor third-person melee capture 10. graphic & feudal gameplay graphic & feudal gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay"
+    },
+    {
+      "id": "SP12-091",
+      "name": "Mortal Kombat 1 2.5D Fighting Capture",
+      "ref": "pack_12/SP12-091.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "tags": ["video-game-originals-vault", "graphic-and-feudal-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-091 mortal kombat 1 2.5d fighting capture 10. graphic & feudal gameplay graphic & feudal gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay"
+    },
+    {
+      "id": "SP12-092",
+      "name": "Darkest Dungeon Side-View Tactical Capture",
+      "ref": "pack_12/SP12-092.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "tags": ["video-game-originals-vault", "graphic-and-feudal-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-092 darkest dungeon side-view tactical capture 10. graphic & feudal gameplay graphic & feudal gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay"
+    },
+    {
+      "id": "SP12-093",
+      "name": "Silent Hill f — Showa Folklore Gameplay",
+      "ref": "pack_12/SP12-093.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "tags": ["video-game-originals-vault", "psychological-and-tactical-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-093 silent hill f — showa folklore gameplay 11. psychological & tactical gameplay psychological & tactical gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay"
+    },
+    {
+      "id": "SP12-094",
+      "name": "Silent Hill 2 (2001) — Elevated PS2 Gameplay",
+      "ref": "pack_12/SP12-094.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "tags": ["video-game-originals-vault", "psychological-and-tactical-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-094 silent hill 2 (2001) — elevated ps2 gameplay 11. psychological & tactical gameplay psychological & tactical gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay"
+    },
+    {
+      "id": "SP12-095",
+      "name": "Silent Hill 2 (2024) — Shoulder-Follow Gameplay",
+      "ref": "pack_12/SP12-095.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "tags": ["video-game-originals-vault", "psychological-and-tactical-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-095 silent hill 2 (2024) — shoulder-follow gameplay 11. psychological & tactical gameplay psychological & tactical gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay"
+    },
+    {
+      "id": "SP12-096",
+      "name": "Silent Hill 4 Domestic Threshold Gameplay",
+      "ref": "pack_12/SP12-096.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "tags": ["video-game-originals-vault", "psychological-and-tactical-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-096 silent hill 4 domestic threshold gameplay 11. psychological & tactical gameplay psychological & tactical gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay"
+    },
+    {
+      "id": "SP12-097",
+      "name": "Metal Gear Solid 3 (2004) Overhead Gameplay",
+      "ref": "pack_12/SP12-097.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "tags": ["video-game-originals-vault", "psychological-and-tactical-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-097 metal gear solid 3 (2004) overhead gameplay 11. psychological & tactical gameplay psychological & tactical gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay"
+    },
+    {
+      "id": "SP12-098",
+      "name": "Death Stranding (2019) Traversal Gameplay",
+      "ref": "pack_12/SP12-098.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "tags": ["video-game-originals-vault", "psychological-and-tactical-gameplay"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-098 death stranding (2019) traversal gameplay 11. psychological & tactical gameplay psychological & tactical gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay"
     }
   ],
-  "totalPresetCount": 80
+  "totalPresetCount": 98
 }

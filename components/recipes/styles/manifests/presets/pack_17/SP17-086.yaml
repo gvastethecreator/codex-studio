@@ -1,0 +1,121 @@
+schemaVersion: 1
+id: SP17-086
+packId: pack_17
+name: Bloodborne — Gaslamp Gothic
+category: 9. Gothic & Dungeon Art Directions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - bloodborne
+  - bloodborne
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Bloodborne Gothic horror as painted art: dense vertical Victorian architecture and severe
+    tailored silhouettes disturbed by gaunt beast anatomy, ritual medicine and barely comprehensible
+    organic forms.
+  subject_treatment: >-
+    Preserve explicit identity, action and count. Give unspecified forms tapered tailored contours,
+    long articulated rhythms and a tension between refined craft and unsettling anatomy; compatible
+    ironwork, layered leather and delicate surgical details remain purposeful.
+  color_and_tone: >-
+    Anchor open palettes in blue-gray, blue-black, soot, and muted umber, with pale window light and
+    small amber practicals. A restrained crimson note may appear when appropriate, but Bloodborne is
+    not a mandatory blood-red filter; preserve explicitly requested colors.
+  lighting_and_shadow: >-
+    Set small warm lamps or candle points against broad cool architectural shadow, with pale window
+    shafts when the scene contains a light opening. Keep nearby forms legible in the dark; haze and
+    wet reflections depend on the requested setting.
+  texture_and_material: >-
+    Paint aged stone, dark wood, iron, glass, leather, and tailored cloth with controlled edge wear
+    and selective reflected light. Maintain a fine-grained, composed finish rather than covering
+    every surface with blood, wetness, or corrosion.
+  camera_and_composition: >-
+    Preserve the prompt's viewpoint and crop. Where open, use vertical window, column, railing, or
+    stair rhythms to create depth and grandeur; the low third-person game camera is a separate
+    capture treatment, not a requirement for every illustration.
+  atmosphere_and_mood: >-
+    Make elegance feel unsafe through scale, asymmetry, dark negative space, and isolated lights.
+    The style can suggest decayed grandeur without requiring a city, hunter, monster, bloodshed, or
+    named location.
+  rendering_and_quality: >-
+    Finish as a controlled Gothic illustration with crisp selected architectural and object edges,
+    layered cool shadow, and small warm focal highlights. It should remain an illustration rather
+    than imitating a PS4 screenshot or a glossy cinematic poster.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-086.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: Bloodborne (2015 PS4 original; official launch-era material)
+  pairedPresetId: SP12-083
+  sourceReferences:
+    - title: Bloodborne — Official PlayStation Game Page
+      url: https://www.playstation.com/en-us/games/bloodborne/
+    - title: New Bloodborne Environments, Characters and Weapons Unveiled — PlayStation.Blog
+      url: https://blog.playstation.com/archive/2014/11/20/new-bloodborne-environments-characters-weapons-unveiled
+    - title: New Bloodborne Screens and More Detail on Chalice Dungeons — PlayStation.Blog
+      url: https://blog.playstation.com/archive/2014/12/18/new-bloodborne-screens-detail-chalice-dungeons/
+    - title: Bloodborne — Castle_1 — PlayStation Europe screenshot
+      url: https://www.flickr.com/photos/playstationblogeurope/15213968804/
+    - title: Bloodborne — Hemwick_2 — PlayStation Europe screenshot
+      url: https://www.flickr.com/photos/playstationblogeurope/15214513473/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Bloodborne — Gaslamp Gothic
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Bloodborne — Gaslamp Gothic
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - game-art-direction
+    - bloodborne
+    - bloodborne
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

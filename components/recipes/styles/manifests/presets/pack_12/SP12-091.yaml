@@ -1,0 +1,120 @@
+schemaVersion: 1
+id: SP12-091
+packId: pack_12
+name: Mortal Kombat 1 2.5D Fighting Capture
+category: 10. Graphic & Feudal Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - mortal-kombat-1-2023
+  - mortal kombat 1
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Mortal Kombat 1 (2023) polished real-time fighting-game frame with naturalistic fighters, ornate
+    martial costume, jewel-toned scenery and precisely readable side-on action.
+  subject_treatment: >-
+    Keep the requested playable subject and opponent distinct, with limbs, pose and distance
+    readable at match scale. Preserve identity; do not replace either fighter with a named
+    character.
+  color_and_tone: >-
+    Let stage and character colors follow the prompt. Preserve contrast between two subjects and
+    their background without imposing franchise team colors or a particular arena.
+  lighting_and_shadow: >-
+    Use stage lighting that shapes bodies and action while keeping silhouettes and contact points
+    readable. Do not add fatality lighting or effects unless requested.
+  texture_and_material: >-
+    Use 2023 real-time 3D detail in skin, fabric, metal and stage surfaces, with action-ready
+    animation rather than a flat 2D sprite or painted tableau.
+  camera_and_composition: >-
+    Use a side-on fighting plane with enough horizontal room to show the active pair, their spacing
+    and the ground line. Keep the playfield level and action readable; do not turn the frame into a
+    third-person camera or cinematic close-up.
+  atmosphere_and_mood: >-
+    Show a plausible exchange, wind-up or recovery beat. Match the requested intensity and do not
+    force gore, a finishing move or a tournament narrative.
+  rendering_and_quality: >-
+    Keep the frame in the 2023 real-time 3D generation with clear bodies, contact points and arena
+    depth. Health bars, round indicators and other interface appear only when the user asks for a
+    gameplay screenshot with UI.
+avoidRules:
+  - unrequested use of franchise characters, costumes, exact arena or signature fatality
+  - switching the match plane to third-person roaming or a 2D pixel treatment
+  - unrequested gore, move names, round text or fabricated health bars
+  - key-art posing that hides playable spacing
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-091.webp
+attributes:
+  negativePrompt: >-
+    unrequested use of franchise characters, costumes, exact arena or signature fatality, switching
+    the match plane to third-person roaming or a 2D pixel treatment, unrequested gore, move names,
+    round text or fabricated health bars, key-art posing that hides playable spacing
+  referenceGame: >-
+    Mortal Kombat 1 (2023 initial release by NetherRealm Studios and QLOC; ignore later DLC-specific
+    designs unless requested)
+  pairedPresetId: SP17-094
+  sourceReferences:
+    - title: Mortal Kombat 1 on Steam — product listing and screenshots
+      url: https://store.steampowered.com/app/1971870/Mortal_Kombat_1/
+    - title: Warner Bros. Games launches Mortal Kombat 1
+      url: https://warnerbrosgames.com/article/mk1
+    - title: Mortal Kombat 1 — Official Gameplay Debut Trailer
+      url: https://www.youtube.com/watch?v=mr8kkXnMTxw
+    - title: Mortal Kombat 1 — official media
+      url: https://www.mortalkombat.com/en-us/media
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Mortal Kombat 1 2.5D Fighting Capture
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Mortal Kombat 1 2.5D Fighting Capture
+      - field: camera_and_composition
+        group: camera
+        value: mortal-kombat-1-2023 gameplay view
+    avoidRules:
+      - text: unrequested use of franchise characters, costumes, exact arena or signature fatality
+        field: global
+      - text: switching the match plane to third-person roaming or a 2D pixel treatment
+        field: global
+      - text: unrequested gore, move names, round text or fabricated health bars
+        field: global
+      - text: key-art posing that hides playable spacing
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: graphic-and-feudal-gameplay
+  categoryName: 10. Graphic & Feudal Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - mortal-kombat-1-2023
+    - mortal kombat 1
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

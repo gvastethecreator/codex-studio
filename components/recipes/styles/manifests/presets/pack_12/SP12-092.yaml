@@ -1,0 +1,128 @@
+schemaVersion: 1
+id: SP12-092
+packId: pack_12
+name: Darkest Dungeon Side-View Tactical Capture
+category: 10. Graphic & Feudal Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - darkest-dungeon-2016
+  - darkest dungeon
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Represent the original Darkest Dungeon (2016) combat presentation as hand-drawn 2D character
+    units in a compressed side-view encounter. Keep the readable line-and-ink drawing, expressive
+    profile silhouettes and dark, narrow setting; this is a game-screen representation, not a
+    cinematic adaptation or merely a black texture pass.
+  subject_treatment: >-
+    Keep the requested active party members and opposing threat count, roles and action legible
+    across the horizontal battle lane. Use individually posed, visibly different silhouettes and
+    expressive face/hand gestures; the four-hero formation is contextual, not mandatory when the
+    prompt specifies another count.
+  color_and_tone: >-
+    Use near-black and dark umber as structural masses, with parchment/ochre light, muted red or
+    rust and cool stone or green-blue accents where the scene supports them. Separate player units,
+    enemy and wall with value and hue rather than adding general brightness.
+  lighting_and_shadow: >-
+    Let a torch, fire or other scene light create a compact warm focal pool against deep uneven
+    darkness. Preserve facial and weapon silhouettes with small lit edges; do not add cinematic
+    volumetric beams or glossy 3D highlights.
+  texture_and_material: >-
+    Keep cloth, skin, armor, wood and stone in the game's hand-inked 2D grammar: variable contour,
+    angular black shadow shapes and occasional short hatching. It may be rough, but retain
+    form-specific mark direction and distinct unit silhouettes; do not use pixel clusters, realistic
+    materials or uniform grunge.
+  camera_and_composition: >-
+    Lock combat to a mostly side-on tactical tableau with heroes on one side, enemy or enemies
+    opposite and a stable ground line. Keep units large enough to read pose and role, with a
+    confined dungeon wall behind them. A portrait card can crop a portion of the wider battle lane,
+    but must retain the left-right encounter relation and not become a close-up character poster.
+  atmosphere_and_mood: >-
+    Show a consequential turn-based beat—aim, advance, defend, strike or recover—with pressure
+    carried by stillness and dark surroundings. Use psychological unease and fatigue without forcing
+    stress icons, gore or a horror reveal.
+  rendering_and_quality: >-
+    Use the 2016 hand-illustrated sprite-and-background look with rough expressive outlines,
+    articulated cutout units and limited, highly controlled color. Include interface only when
+    requested or visibly appropriate to the source frame; never fabricate text or status values.
+avoidRules:
+  - unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout
+  - changing the tactical side view to pixel-platformer or third-person 3D
+  - unrequested gore, stress symbols, torch icons or fabricated status text
+  - wide cinematic staging that makes units too small to read
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-092.webp
+attributes:
+  negativePrompt: >-
+    unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout,
+    changing the tactical side view to pixel-platformer or third-person 3D, unrequested gore, stress
+    symbols, torch icons or fabricated status text, wide cinematic staging that makes units too
+    small to read
+  referenceGame: Darkest Dungeon (2016 release by Red Hook Studios)
+  pairedPresetId: SP17-095
+  sourceReferences:
+    - title: Darkest Dungeon on Steam — Red Hook Studios product listing
+      url: https://store.steampowered.com/app/262060/Darkest_Dungeon/
+    - title: Darkest Dungeon Media — official Red Hook Studios gallery
+      url: https://www.darkestdungeon.com/darkest-dungeon/media/
+    - title: 'A Torch in the Dark: Using Creative Direction to Light the Darkest Dungeon — GDC Vault'
+      url: https://media.gdcvault.com/gdc2016/Presentations/Bourassa_Chris_a%20torch%20in.pdf
+    - title: 'Darkest Dungeon official Steam screenshot: campfire scene'
+      url: https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/262060/ss_897ef292768a8e413ffe2dbf18614ec8e1fdbc64.1920x1080.jpg?t=1730230071
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Darkest Dungeon Side-View Tactical Capture
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Darkest Dungeon Side-View Tactical Capture
+      - field: camera_and_composition
+        group: camera
+        value: darkest-dungeon-2016 gameplay view
+    avoidRules:
+      - text: unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout
+        field: global
+      - text: changing the tactical side view to pixel-platformer or third-person 3D
+        field: global
+      - text: unrequested gore, stress symbols, torch icons or fabricated status text
+        field: global
+      - text: wide cinematic staging that makes units too small to read
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: graphic-and-feudal-gameplay
+  categoryName: 10. Graphic & Feudal Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - darkest-dungeon-2016
+    - darkest dungeon
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

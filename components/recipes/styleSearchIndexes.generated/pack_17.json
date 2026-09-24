@@ -3,7 +3,7 @@
     {
       "id": "pack_17",
       "name": "Medieval Fantasy & Dungeon Zine",
-      "presetCount": 83
+      "presetCount": 95
     }
   ],
   "presets": [
@@ -1516,7 +1516,151 @@
       "tags": ["medieval-fantasy-and-dungeon-zine", "medieval-fantasy-drawing-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-083 colored-pencil grit fantasy 8. medieval fantasy drawing media fantasy drawing media pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media"
+    },
+    {
+      "id": "SP17-084",
+      "name": "Diablo II — Mineral Chiaroscuro",
+      "ref": "pack_17/SP17-084.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "gothic-and-dungeon-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-084 diablo ii — mineral chiaroscuro 9. gothic & dungeon art directions gothic & dungeon art pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions"
+    },
+    {
+      "id": "SP17-085",
+      "name": "Diablo IV — Old-Master Gloom",
+      "ref": "pack_17/SP17-085.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "gothic-and-dungeon-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-085 diablo iv — old-master gloom 9. gothic & dungeon art directions gothic & dungeon art pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions"
+    },
+    {
+      "id": "SP17-086",
+      "name": "Bloodborne — Gaslamp Gothic",
+      "ref": "pack_17/SP17-086.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "gothic-and-dungeon-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-086 bloodborne — gaslamp gothic 9. gothic & dungeon art directions gothic & dungeon art pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions"
+    },
+    {
+      "id": "SP17-087",
+      "name": "Mortal Shell — Tarnished Weight",
+      "ref": "pack_17/SP17-087.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "gothic-and-dungeon-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-087 mortal shell — tarnished weight 9. gothic & dungeon art directions gothic & dungeon art pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions"
+    },
+    {
+      "id": "SP17-088",
+      "name": "Lords of the Fallen — Tormented Allegory",
+      "ref": "pack_17/SP17-088.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "gothic-and-dungeon-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-088 lords of the fallen — tormented allegory 9. gothic & dungeon art directions gothic & dungeon art pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions"
+    },
+    {
+      "id": "SP17-089",
+      "name": "Amnesia — Candlelit Vulnerability",
+      "ref": "pack_17/SP17-089.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "gothic-and-dungeon-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-089 amnesia — candlelit vulnerability 9. gothic & dungeon art directions gothic & dungeon art pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions"
+    },
+    {
+      "id": "SP17-090",
+      "name": "Darksiders — Apocalyptic Graphic Fantasy",
+      "ref": "pack_17/SP17-090.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "graphic-and-feudal-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-090 darksiders — apocalyptic graphic fantasy 10. graphic & feudal art directions graphic & feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions"
+    },
+    {
+      "id": "SP17-091",
+      "name": "Blasphemous — Penitent Pixel Gothic",
+      "ref": "pack_17/SP17-091.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "graphic-and-feudal-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-091 blasphemous — penitent pixel gothic 10. graphic & feudal art directions graphic & feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions"
+    },
+    {
+      "id": "SP17-092",
+      "name": "Onimusha — Feudal Supernatural Drama",
+      "ref": "pack_17/SP17-092.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "graphic-and-feudal-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-092 onimusha — feudal supernatural drama 10. graphic & feudal art directions graphic & feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions"
+    },
+    {
+      "id": "SP17-093",
+      "name": "For Honor — Battlefield Monumentality",
+      "ref": "pack_17/SP17-093.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "graphic-and-feudal-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-093 for honor — battlefield monumentality 10. graphic & feudal art directions graphic & feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions"
+    },
+    {
+      "id": "SP17-094",
+      "name": "Mortal Kombat 1 — Martial Pageantry",
+      "ref": "pack_17/SP17-094.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "graphic-and-feudal-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-094 mortal kombat 1 — martial pageantry 10. graphic & feudal art directions graphic & feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions"
+    },
+    {
+      "id": "SP17-095",
+      "name": "Darkest Dungeon — Expressionist Ink",
+      "ref": "pack_17/SP17-095.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "graphic-and-feudal-art-directions"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-095 darkest dungeon — expressionist ink 10. graphic & feudal art directions graphic & feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions"
     }
   ],
-  "totalPresetCount": 83
+  "totalPresetCount": 95
 }

@@ -1,0 +1,125 @@
+schemaVersion: 1
+id: SP17-090
+packId: pack_17
+name: Darksiders — Apocalyptic Graphic Fantasy
+category: 10. Graphic & Feudal Art Directions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - darksiders-2010
+  - darksiders
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Make the Darksiders (2010) graphic-novel action-fantasy identity read through the combination of
+    broad, sculpted 3D-like masses and comic-led drawing: oversized heroic anatomy, unusually large
+    weapons, angular armor breaks, weighty dark contour accents and selectively painted color
+    planes. The result should feel forceful and authored, not like a generic beveled fantasy
+    illustration.
+  subject_treatment: >-
+    Preserve the requested identity, action and defining proportions, then clarify its silhouette
+    with an exaggerated shoulder, torso, hand, tool or garment mass where the subject supports it.
+    Build armor, clothing and equipment from a few large interlocking plates or wedges; use a
+    gestural pose and a strong object diagonal to communicate weight. Do not add armor, weapons or
+    Horseman lore to subjects that do not call for them.
+  color_and_tone: >-
+    Soot and weathered stone against blue-steel armor and dirty urban green; selective saturated
+    crimson and amber focal accents. Large graphic color masses stay clear without a uniform
+    orange-teal filter.
+  lighting_and_shadow: >-
+    Separate large planes with deliberate cool ambient shadow and narrow, readable light on steel,
+    stone and cloth. Let a warm impact or supernatural glow occupy a small focal area instead of
+    flooding the whole scene. Preserve the dimensionality of the modeled forms; the comic influence
+    comes from shape, contour and value grouping rather than a uniform cel-shader.
+  texture_and_material: >-
+    Describe armor through broad forged facets, scored bevels and a few crisp edge glints; stone
+    through broken block planes and large fractures; cloth through substantial, wind-pulled folds.
+    Use localized chips and dirt to explain use. Avoid a blanket scratch or grit pass that replaces
+    Darksiders' sculptural, graphic forms.
+  camera_and_composition: >-
+    Keep the camera, crop and scale requested by the prompt. For an illustration, favor a readable
+    foreground silhouette, a strong weapon or body diagonal and architecture that makes the subject
+    feel large; let these devices support the chosen subject rather than impose a game chase view or
+    poster pose.
+  atmosphere_and_mood: >-
+    Carry the series' biblical-apocalyptic scale, blunt heroic force and collision of ruined
+    civilization with supernatural power through shape and contrast. Keep the mood requested by the
+    prompt; a non-apocalyptic subject does not need ash, demons or a battle narrative.
+  rendering_and_quality: >-
+    Translate the original game's comic-book-led modeling into a finished illustration: broad
+    painted planes, controlled dark contour accents, distinct material edges and detail concentrated
+    on face, hands, armor and focal equipment. Preserve dimensional form without turning the image
+    into an in-engine screenshot, flat vector art or glossy photoreal fantasy.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-090.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: Darksiders (2010 original release; use the original game's visual era as the target)
+  pairedPresetId: SP12-087
+  sourceReferences:
+    - title: Darksiders on Steam — original product listing
+      url: https://store.steampowered.com/app/50620/Darksiders/
+    - title: Darksiders Warmastered Edition — official THQ Nordic game site
+      url: https://darksiders.thqnordic.com/
+    - title: Darksiders Warmastered official screenshot 01
+      url: https://darksiders.thqnordic.com/game-sites/darksiders/content/screenshots/screenshot-01.jpg
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Darksiders — Apocalyptic Graphic Fantasy
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Darksiders — Apocalyptic Graphic Fantasy
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - game-art-direction
+    - darksiders-2010
+    - darksiders
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

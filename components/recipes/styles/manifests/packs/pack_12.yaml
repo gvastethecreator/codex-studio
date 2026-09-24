@@ -1,9 +1,11 @@
 schemaVersion: 1
 id: pack_12
 name: Video Game Originals Vault
-cardTitle: 'Game Originals'
-cardDescription: 'Game-native worlds, arenas, quests, encounter moods.'
-description: An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.
+cardTitle: Game Originals
+cardDescription: Game-native worlds, arenas, quests, encounter moods.
+description: >-
+  An original game-art vault organized by world fantasy and encounter type, from neon night
+  districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.
 categories:
   - id: neon-urban-and-night-ops
     name: 1. Neon Urban & Night Ops
@@ -109,6 +111,33 @@ categories:
       - pack_12/SP12-074.yaml
       - pack_12/SP12-077.yaml
       - pack_12/SP12-080.yaml
+  - id: gothic-and-dungeon-gameplay
+    name: 9. Gothic & Dungeon Gameplay
+    presetRefs:
+      - pack_12/SP12-081.yaml
+      - pack_12/SP12-082.yaml
+      - pack_12/SP12-083.yaml
+      - pack_12/SP12-084.yaml
+      - pack_12/SP12-085.yaml
+      - pack_12/SP12-086.yaml
+  - id: graphic-and-feudal-gameplay
+    name: 10. Graphic & Feudal Gameplay
+    presetRefs:
+      - pack_12/SP12-087.yaml
+      - pack_12/SP12-088.yaml
+      - pack_12/SP12-089.yaml
+      - pack_12/SP12-090.yaml
+      - pack_12/SP12-091.yaml
+      - pack_12/SP12-092.yaml
+  - id: psychological-and-tactical-gameplay
+    name: 11. Psychological & Tactical Gameplay
+    presetRefs:
+      - pack_12/SP12-093.yaml
+      - pack_12/SP12-094.yaml
+      - pack_12/SP12-095.yaml
+      - pack_12/SP12-096.yaml
+      - pack_12/SP12-097.yaml
+      - pack_12/SP12-098.yaml
 presetRefs:
   - pack_12/SP12-001.yaml
   - pack_12/SP12-002.yaml
@@ -190,3 +219,21 @@ presetRefs:
   - pack_12/SP12-078.yaml
   - pack_12/SP12-079.yaml
   - pack_12/SP12-080.yaml
+  - pack_12/SP12-081.yaml
+  - pack_12/SP12-082.yaml
+  - pack_12/SP12-083.yaml
+  - pack_12/SP12-084.yaml
+  - pack_12/SP12-085.yaml
+  - pack_12/SP12-086.yaml
+  - pack_12/SP12-087.yaml
+  - pack_12/SP12-088.yaml
+  - pack_12/SP12-089.yaml
+  - pack_12/SP12-090.yaml
+  - pack_12/SP12-091.yaml
+  - pack_12/SP12-092.yaml
+  - pack_12/SP12-093.yaml
+  - pack_12/SP12-094.yaml
+  - pack_12/SP12-095.yaml
+  - pack_12/SP12-096.yaml
+  - pack_12/SP12-097.yaml
+  - pack_12/SP12-098.yaml

@@ -1,0 +1,84 @@
+{
+  "packs": [
+    {
+      "id": "pack_24",
+      "name": "Psychological & Frontier Aesthetics",
+      "presetCount": 6
+    }
+  ],
+  "presets": [
+    {
+      "id": "SP24-001",
+      "name": "Silent Hill f — Blooming Folkloric Horror",
+      "ref": "pack_24/SP24-001.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "tags": ["psychological-and-frontier-aesthetics", "psychological-horror-aesthetics"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-001 silent hill f — blooming folkloric horror 1. psychological horror aesthetics psychological horror pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics"
+    },
+    {
+      "id": "SP24-002",
+      "name": "Silent Hill 2 (2001) — Sickly Memory",
+      "ref": "pack_24/SP24-002.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "tags": ["psychological-and-frontier-aesthetics", "psychological-horror-aesthetics"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-002 silent hill 2 (2001) — sickly memory 1. psychological horror aesthetics psychological horror pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics"
+    },
+    {
+      "id": "SP24-003",
+      "name": "Silent Hill 2 (2024) — Wet Concrete, Near Dread",
+      "ref": "pack_24/SP24-003.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "tags": ["psychological-and-frontier-aesthetics", "psychological-horror-aesthetics"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-003 silent hill 2 (2024) — wet concrete, near dread 1. psychological horror aesthetics psychological horror pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics"
+    },
+    {
+      "id": "SP24-004",
+      "name": "Silent Hill 4 — Domestic Intrusion",
+      "ref": "pack_24/SP24-004.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "tags": ["psychological-and-frontier-aesthetics", "psychological-horror-aesthetics"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-004 silent hill 4 — domestic intrusion 1. psychological horror aesthetics psychological horror pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics"
+    },
+    {
+      "id": "SP24-005",
+      "name": "Metal Gear — Tactical Brushwork",
+      "ref": "pack_24/SP24-005.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "tags": ["psychological-and-frontier-aesthetics", "tactical-and-solitary-frontiers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-005 metal gear — tactical brushwork 2. tactical & solitary frontiers tactical & solitary frontiers pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers"
+    },
+    {
+      "id": "SP24-006",
+      "name": "Death Stranding — Industrial Sublime",
+      "ref": "pack_24/SP24-006.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "tags": ["psychological-and-frontier-aesthetics", "tactical-and-solitary-frontiers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-006 death stranding — industrial sublime 2. tactical & solitary frontiers tactical & solitary frontiers pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers"
+    }
+  ],
+  "totalPresetCount": 6
+}

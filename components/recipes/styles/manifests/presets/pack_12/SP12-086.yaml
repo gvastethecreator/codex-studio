@@ -1,0 +1,127 @@
+schemaVersion: 1
+id: SP12-086
+packId: pack_12
+name: 'Amnesia: The Dark Descent First-Person Gameplay Capture'
+category: 9. Gothic & Dungeon Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - amnesia-the-dark-descent
+  - 'amnesia: the dark descent'
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Amnesia: The Dark Descent (2010) first-person survival-horror frame: tactile HPL2-era masonry,
+    small failing lamplight and strong occlusion hiding the next space.
+  color_and_tone: >-
+    Keep most of the frame in subdued stone, wood and umber values. A small warm lantern or candle
+    pool can reveal a nearby interaction while leaving farther areas uncertain; avoid a full-screen
+    amber filter.
+  lighting_and_shadow: >-
+    Use one practical light source and strong distance falloff. Keep the immediate interaction
+    legible and allow the background to lose information gradually, not to pure black.
+  texture_and_material: >-
+    Show simple 2010-generation real-time stone, timber, metal and cloth, with localized physical
+    details and modest texture resolution. Do not add modern microdetail or generalized gore.
+  camera_and_composition: >-
+    Use a human eye-level first-person gameplay camera and keep the requested near-field action
+    legible. Do not add a door, lantern or interaction object unless the prompt calls for it.
+  rendering_and_quality: >-
+    Read as an authentic 2010 PC-era real-time screenshot translated to a crisp card: plain
+    geometry, restrained texture resolution, practical light falloff and stable first-person
+    perspective.
+  subject_treatment: >-
+    Preserve the prompt's subject and action. Visible hands or a held light may enter the frame only
+    when the requested action uses them; do not add Daniel or a threat.
+  atmosphere_and_mood: >-
+    Maintain vulnerable first-person perception and limited visibility while preserving the
+    requested event; combat and monster reveal are not required.
+avoidRules:
+  - third-person portrait, isometric view or cinematic cutaway
+  - mandatory monster, chase, castle landmark or named character
+  - bright modern PBR gloss, dense microtexture or exaggerated film grain
+  - total-black near field or unreadable requested action
+  - >-
+    unrequested sanity meter, oil gauge, HUD, crosshair, interface, logo or captions; preserve
+    explicitly requested UI and text
+  - anime, manga or cel-shaded grammar
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-086.webp
+attributes:
+  negativePrompt: >-
+    third-person portrait, isometric view or cinematic cutaway, mandatory monster, chase, castle
+    landmark or named character, bright modern PBR gloss, dense microtexture or exaggerated film
+    grain, total-black near field or unreadable requested action, unrequested sanity meter, oil
+    gauge, HUD, crosshair, interface, logo or captions; preserve explicitly requested UI and text,
+    anime, manga or cel-shaded grammar
+  referenceGame: 'Amnesia: The Dark Descent (2010 original; Frictional Games launch-era material)'
+  pairedPresetId: SP17-089
+  sourceReferences:
+    - title: 'Frictional Games Press Kit — Amnesia: The Dark Descent'
+      url: https://frictionalgames.com/press-kit/
+    - title: 'Amnesia: The Dark Descent — Teaser, Web Site & Pre-order — Frictional Games'
+      url: https://frictionalgames.com/2010-02-amnesia-the-dark-descent-teaser-web-site-pre-order/
+    - title: Closer Look at Teaser and More — Frictional Games
+      url: https://frictionalgames.com/2010-02-closer-look-at-teaser-and-more/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: 'Amnesia: The Dark Descent First-Person Gameplay Capture'
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: 'Amnesia: The Dark Descent First-Person Gameplay Capture'
+      - field: camera_and_composition
+        group: camera
+        value: amnesia-the-dark-descent gameplay view
+    avoidRules:
+      - text: third-person portrait, isometric view or cinematic cutaway
+        field: global
+      - text: mandatory monster, chase, castle landmark or named character
+        field: global
+      - text: bright modern PBR gloss, dense microtexture or exaggerated film grain
+        field: global
+      - text: total-black near field or unreadable requested action
+        field: global
+      - text: >-
+          unrequested sanity meter, oil gauge, HUD, crosshair, interface, logo or captions; preserve
+          explicitly requested UI and text
+        field: global
+      - text: anime, manga or cel-shaded grammar
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: gothic-and-dungeon-gameplay
+  categoryName: 9. Gothic & Dungeon Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - amnesia-the-dark-descent
+    - 'amnesia: the dark descent'
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

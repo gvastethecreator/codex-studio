@@ -47,6 +47,18 @@ export const STYLE_COLLECTION_FAMILIES = [
 
 export const STYLE_COLLECTIONS = [
   {
+    id: 'psychological_frontier_aesthetics',
+    title: 'Psychological & Frontier Aesthetics',
+    familyId: 'worlds_genres',
+    description:
+      'Psychological horror, tactical brushwork and industrial solitude. Paired gameplay profiles live in Game Originals.',
+    icon: 'layers',
+    order: 6,
+    sourcePackIds: ['pack_24'],
+    entries: [{ id: 'psychological-frontier-pack', kind: 'pack', packId: 'pack_24' }],
+    facets: { medium: ['illustration'], workflow: ['image', 'edit'] },
+  },
+  {
     id: 'tcg_visual_styles',
     title: 'Trading Card Illustration',
     familyId: 'illustration_art_media',

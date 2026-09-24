@@ -1,0 +1,115 @@
+schemaVersion: 1
+id: SP17-094
+packId: pack_17
+name: Mortal Kombat 1 — Martial Pageantry
+category: 10. Graphic & Feudal Art Directions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - mortal-kombat-1-2023
+  - mortal kombat 1
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Mortal Kombat 1 (2023) visual direction translated into polished painted illustration:
+    naturalistic athletic anatomy, ornate martial tailoring, lush ceremonial color and precise
+    theatrical action.
+  subject_treatment: >-
+    Preserve explicit identity and action. Show poised, physically committed gestures, elegant
+    asymmetrical fabric shapes and clean costume accents; supernatural color accents follow the
+    action when appropriate.
+  color_and_tone: >-
+    Rich jade, royal blue, vermilion, warm skin and brushed gold against luminous scenic color.
+    Avoid the uniformly gritty brown treatment of older fighting games.
+  lighting_and_shadow: >-
+    Bright cinematic key light and cool fill define athletic forms; small localized emissive accents
+    coexist with readable daylight or jewel-toned ambience.
+  texture_and_material: >-
+    Fine woven cloth, embossed trims, brushed metal and taut skin; contrast delicate ceremonial
+    finish with disciplined physical force.
+  camera_and_composition: >-
+    A legible arc of action and an offset balancing shape, with ornamental depth behind the subject.
+    Explicit framing stays intact; no obligatory two-fighter game plane.
+  atmosphere_and_mood: >-
+    Regal spectacle and immediate martial danger, luxurious and vivid rather than monochrome
+    grimdark.
+  rendering_and_quality: >-
+    Polished naturalistic digital painting with precise anatomy and rich controlled color; painted
+    key art, not anime cel shading or a glossy fashion photograph.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-094.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: >-
+    Mortal Kombat 1 (2023 initial release by NetherRealm Studios and QLOC; ignore later DLC-specific
+    designs unless requested)
+  pairedPresetId: SP12-091
+  sourceReferences:
+    - title: Mortal Kombat 1 on Steam — product listing and screenshots
+      url: https://store.steampowered.com/app/1971870/Mortal_Kombat_1/
+    - title: Warner Bros. Games launches Mortal Kombat 1
+      url: https://warnerbrosgames.com/article/mk1
+    - title: Mortal Kombat 1 — Official Gameplay Debut Trailer
+      url: https://www.youtube.com/watch?v=mr8kkXnMTxw
+    - title: Mortal Kombat 1 — official media
+      url: https://www.mortalkombat.com/en-us/media
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Mortal Kombat 1 — Martial Pageantry
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Mortal Kombat 1 — Martial Pageantry
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - game-art-direction
+    - mortal-kombat-1-2023
+    - mortal kombat 1
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

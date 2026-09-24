@@ -1,0 +1,129 @@
+schemaVersion: 1
+id: SP12-087
+packId: pack_12
+name: Darksiders Third-Person Gameplay Capture
+category: 10. Graphic & Feudal Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - darksiders-2010
+  - darksiders
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Represent a Darksiders (2010)-era third-person action-adventure frame: a substantial
+    controllable figure inhabits the lower foreground, with ruined city or dungeon scale opening in
+    front of the player. Keep the character's graphic armor silhouette, sword-sized equipment and
+    environment legible as real-time 3D game content rather than converting the frame into
+    comic-panel illustration.
+  subject_treatment: >-
+    Keep the requested playable subject and opponents distinct by silhouette, facing and distance.
+    Armor and cloth may be broad and angular, with an oversized weapon readable against the
+    environment. A red garment or blue-steel plate is a Darksiders-like cue only when it fits the
+    requested design; never substitute War or a named enemy.
+  color_and_tone: >-
+    Use the source's grounded ruined-city range of weathered grey stone, muted green growth and
+    blue-steel armor, with a selective red cloth accent or small warm effect. Let daylight, fire or
+    supernatural energy follow the scene; do not apply the illustration preset's palette as a fixed
+    filter.
+  lighting_and_shadow: >-
+    Use period-appropriate real-time 3D ambient light, firm contact shadows and readable highlights
+    on armor and stone. Keep the game-world exposure coherent; avoid drawn contour shadows, modern
+    ray-traced gloss or oversized promotional glow.
+  texture_and_material: >-
+    Original-era action-adventure 3D materials: broad hand-painted stone and metal texture planes,
+    simplified bevels, substantial cloth folds and localized wear. Sculptural chunky forms dominate
+    over modern scanned microdetail.
+  camera_and_composition: >-
+    Lock to a trailing third-person camera a little above and behind the playable character, looking
+    into the traversable space. Keep the hero large in the near field, typically left or
+    center-left, with ground plane and route ahead visible; use a long sword or nearby architecture
+    as leading diagonals. Do not switch to isometric, side-view or a detached cinematic establishing
+    shot.
+  atmosphere_and_mood: >-
+    Suggest exploration through a devastated but navigable urban or dungeon environment, with
+    monumental remnants and small signs of life such as weeds or distant lights. Keep a playable
+    moment and requested tone, not a posed key-art confrontation.
+  rendering_and_quality: >-
+    Read as a 2010 console-generation 3D gameplay capture with stylized proportions, textured
+    surfaces and practical scene lighting. Preserve navigable spatial depth and clear
+    character-environment scale. Interface elements are contextual and appear only when requested or
+    present in the chosen reference; never invent HUD text.
+avoidRules:
+  - unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art
+  - changing the requested camera into isometric or side-scrolling gameplay
+  - unrequested combat effects, copied health bars or fabricated interface labels
+  - modern rendering upgrades presented as the 2010 original
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-087.webp
+attributes:
+  negativePrompt: >-
+    unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art,
+    changing the requested camera into isometric or side-scrolling gameplay, unrequested combat
+    effects, copied health bars or fabricated interface labels, modern rendering upgrades presented
+    as the 2010 original
+  referenceGame: Darksiders (2010 original release; use the original game's visual era as the target)
+  pairedPresetId: SP17-090
+  sourceReferences:
+    - title: Darksiders on Steam — original product listing
+      url: https://store.steampowered.com/app/50620/Darksiders/
+    - title: Darksiders Warmastered Edition — official THQ Nordic game site
+      url: https://darksiders.thqnordic.com/
+    - title: Darksiders Warmastered official screenshot 01
+      url: https://darksiders.thqnordic.com/game-sites/darksiders/content/screenshots/screenshot-01.jpg
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Darksiders Third-Person Gameplay Capture
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Darksiders Third-Person Gameplay Capture
+      - field: camera_and_composition
+        group: camera
+        value: darksiders-2010 gameplay view
+    avoidRules:
+      - text: unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art
+        field: global
+      - text: changing the requested camera into isometric or side-scrolling gameplay
+        field: global
+      - text: unrequested combat effects, copied health bars or fabricated interface labels
+        field: global
+      - text: modern rendering upgrades presented as the 2010 original
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: graphic-and-feudal-gameplay
+  categoryName: 10. Graphic & Feudal Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - darksiders-2010
+    - darksiders
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

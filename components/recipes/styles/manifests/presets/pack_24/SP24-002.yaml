@@ -1,0 +1,112 @@
+schemaVersion: 1
+id: SP24-002
+packId: pack_24
+name: Silent Hill 2 (2001) — Sickly Memory
+category: 1. Psychological Horror Aesthetics
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - silent-hill-2-original
+  - silent hill 2
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Silent Hill 2 (2001) psychological art direction translated into distressed painted
+    illustration: inward grief, sickly stillness and ordinary space dissolving into uncertain
+    memory.
+  subject_treatment: >-
+    Preserve the requested person and action; make faces or gestures feel withdrawn, while a small
+    number of sharp details persist inside softened spatial information.
+  color_and_tone: >-
+    Tarnished blue-green, dirty cream and deep brown-black with one weak amber accent; isolated pale
+    features against unfilled darkness.
+  lighting_and_shadow: >-
+    Low, quiet illumination and long unfilled dark areas; isolate small pools of light instead of
+    adding modern cinematic rim light or spectacle.
+  texture_and_material: >-
+    Smoky rubbed charcoal, thin tarnished color washes and selective grain around worn domestic
+    materials. Abrasion interrupts edges rather than coating every surface in uniform dirt.
+  camera_and_composition: >-
+    Preserve requested camera and crop. Use a quiet isolated anchor, disproportionate negative space
+    and a subtle mismatch between reflection and physical space.
+  atmosphere_and_mood: >-
+    Still, sickly, lonely, and inward-looking; tension comes from waiting, distant noise, and the
+    sense that memory itself is unreliable.
+  rendering_and_quality: >-
+    Distressed painterly psychological-horror illustration with lost edges, rubbed value fields and
+    a few sharply resolved details; no PS2 geometry, screenshot framing or glossy modern realism.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP24-002.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: SILENT HILL 2 (Original PlayStation 2 release (2001), not the remake)
+  pairedPresetId: SP12-094
+  sourceReferences:
+    - title: SILENT HILL 2
+      url: https://www.konami.com/games/eu/en/products/silenthill2/
+    - title: The SILENT HILL 2 remake has sold over 2 million copies worldwide
+      url: https://www.konami.com/games/us/en/topics/3137/
+    - title: SILENT HILL 2 Remake Announcement
+      url: https://www.konami.com/games/us/en/topics/2078/
+    - title: はじめての『SILENT HILL 2』 / First time playing SILENT HILL 2
+      url: https://www.konami.com/games/silenthill/2r/beginner/jp/ja/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Silent Hill 2 (2001) — Sickly Memory
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Silent Hill 2 (2001) — Sickly Memory
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - game-art-direction
+    - silent-hill-2-original
+    - silent hill 2
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

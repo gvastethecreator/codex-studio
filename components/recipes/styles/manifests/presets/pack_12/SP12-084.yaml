@@ -1,0 +1,123 @@
+schemaVersion: 1
+id: SP12-084
+packId: pack_12
+name: Mortal Shell Third-Person Gameplay
+category: 9. Gothic & Dungeon Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - mortal-shell
+  - mortal shell
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Mortal Shell (2020) real-time third-person combat: compact blackened armor, gaunt opponents,
+    slick roots, peat-green air and selective mineral hardening with severe material contrast.
+  color_and_tone: >-
+    Use a muted mineral world with controlled green or warm accents when present in the environment;
+    keep requested actors, terrain and any defensive state separable.
+  lighting_and_shadow: >-
+    Use game-scale directional light and dense contact shadow; small glints may distinguish water
+    and armor, never a polished cinematic rim on every edge.
+  texture_and_material: >-
+    Use compact dark iron forms, tar-black recesses, worn leather and damp green-brown surfaces with
+    restrained specular edges. When defensive hardening is requested, confine the mineral crust to
+    the active figure for a clearly readable instant.
+  camera_and_composition: >-
+    Use a grounded third-person action camera behind or just above the playable figure when a figure
+    is part of the requested image. Preserve the prompt's action and maintain clear relation to the
+    ground; do not require melee combat or use top-down framing.
+  rendering_and_quality: >-
+    Read as a 2020 real-time action-RPG frame with solid material surfaces, grounded actor scale and
+    moderate environmental depth; no cinematic processing that hides play information.
+  subject_treatment: >-
+    Preserve the requested action and subject. When the prompt depicts the game mechanic, show
+    hardening as a brief defensive state; do not insert a shell-wearing figure, enemy or hardening
+    effect by default.
+  atmosphere_and_mood: Keep the measured, hostile-world mood without forcing a duel, attack or victory pose.
+avoidRules:
+  - isometric or first-person camera
+  - static cover portrait or crowded action that hides the playable figure
+  - unrequested canonical shell, weapon, character or arena
+  - invented hardening effect when the prompt does not request it
+  - unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
+  - anime, manga or cel-shaded grammar
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-084.webp
+attributes:
+  negativePrompt: >-
+    isometric or first-person camera, static cover portrait or crowded action that hides the
+    playable figure, unrequested canonical shell, weapon, character or arena, invented hardening
+    effect when the prompt does not request it, unrequested HUD, logo, interface or captions;
+    preserve explicitly requested UI and text, anime, manga or cel-shaded grammar
+  referenceGame: Mortal Shell (2020 original game; 2021 Enhanced Edition material references)
+  pairedPresetId: SP17-087
+  sourceReferences:
+    - title: Mortal Shell — Cold Symmetry
+      url: https://www.coldsymmetry.com/mortal-shell
+    - title: 'Mortal Shell: Enhanced Edition Comes to PS5 March 4 — PlayStation.Blog'
+      url: https://blog.playstation.com/?p=346826
+    - title: Mortal Shell Embodies How a Small Studio Can Punch Above Its Weight Class — Unreal Engine
+      url: https://www.unrealengine.com/developer-interviews/mortal-shell-embodies-how-a-small-studio-can-punch-above-its-weight-class
+    - title: Mortal Shell Enhanced Edition — publisher article and embedded capture
+      url: https://blog.playstation.com/2021/03/02/mortal-shell-enhanced-edition-comes-to-ps5-march-4/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Mortal Shell Third-Person Gameplay
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Mortal Shell Third-Person Gameplay
+      - field: camera_and_composition
+        group: camera
+        value: mortal-shell gameplay view
+    avoidRules:
+      - text: isometric or first-person camera
+        field: global
+      - text: static cover portrait or crowded action that hides the playable figure
+        field: global
+      - text: unrequested canonical shell, weapon, character or arena
+        field: global
+      - text: invented hardening effect when the prompt does not request it
+        field: global
+      - text: unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
+        field: global
+      - text: anime, manga or cel-shaded grammar
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: gothic-and-dungeon-gameplay
+  categoryName: 9. Gothic & Dungeon Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - mortal-shell
+    - mortal shell
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

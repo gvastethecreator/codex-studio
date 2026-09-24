@@ -1,0 +1,28 @@
+schemaVersion: 1
+id: pack_24
+name: Psychological & Frontier Aesthetics
+cardTitle: Psychological & Frontier
+cardDescription: Psychological horror, tactical brushwork, and industrial solitude.
+description: >-
+  Transferable art direction, mood, color and material studies drawn from researched game
+  references. Gameplay camera and engine profiles live separately in Video Game Originals Vault.
+categories:
+  - id: psychological-horror-aesthetics
+    name: 1. Psychological Horror Aesthetics
+    presetRefs:
+      - pack_24/SP24-001.yaml
+      - pack_24/SP24-002.yaml
+      - pack_24/SP24-003.yaml
+      - pack_24/SP24-004.yaml
+  - id: tactical-and-solitary-frontiers
+    name: 2. Tactical & Solitary Frontiers
+    presetRefs:
+      - pack_24/SP24-005.yaml
+      - pack_24/SP24-006.yaml
+presetRefs:
+  - pack_24/SP24-001.yaml
+  - pack_24/SP24-002.yaml
+  - pack_24/SP24-003.yaml
+  - pack_24/SP24-004.yaml
+  - pack_24/SP24-005.yaml
+  - pack_24/SP24-006.yaml

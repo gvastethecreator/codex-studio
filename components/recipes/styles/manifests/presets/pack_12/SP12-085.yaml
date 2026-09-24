@@ -1,0 +1,124 @@
+schemaVersion: 1
+id: SP12-085
+packId: pack_12
+name: Lords of the Fallen Dual-Realm Gameplay Capture
+category: 9. Gothic & Dungeon Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - lords-of-the-fallen-2023
+  - lords of the fallen (2023)
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Lords of the Fallen (2023) contemporary third-person dark fantasy, mixing medieval religious
+    excess with pallid Umbral bodily architecture and warm/cold realm contrast.
+  color_and_tone: >-
+    Use restrained grounded values for the living space and a deliberate pallid/blue-green shift for
+    the dead-space influence. Keep actor silhouettes readable through the shift and avoid a
+    full-frame color wash.
+  lighting_and_shadow: >-
+    Show game-world light and deep shadow with a localized transition cue. Keep contact points,
+    paths and enemy shape readable in the dark.
+  texture_and_material: >-
+    Use grounded dark medieval stone and iron with high-resolution surface response. Where the
+    dead-realm layer is requested, introduce pallid bone-like root vaults, membranous stone seams
+    and waxy organic accretions attached coherently to the same spatial structure, not a blue fog
+    overlay.
+  camera_and_composition: >-
+    Use a close third-person gameplay camera and compose a traversable area around the requested
+    subject and action. If the prompt shows a realm change, hold the camera position and spatial
+    anchors so the change remains legible.
+  rendering_and_quality: >-
+    Read as a 2023 real-time game capture with high-resolution surfaces, dark but legible
+    silhouettes and a coherent same-space realm shift.
+  subject_treatment: >-
+    Preserve the requested subject and action. If the prompt shows a realm change, make the altered
+    state visible around that same subject; do not add a playable hero, threat or lamp by default.
+  atmosphere_and_mood: >-
+    Retain a dark-medieval gameplay environment while following the scene and event requested; a
+    dual-realm transition is optional, not compulsory.
+avoidRules:
+  - isometric or first-person camera
+  - two unrelated places pasted together
+  - transition light that hides path, subject or nearby forms
+  - unrequested canonical protagonist, boss, shrine or lore symbol
+  - unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
+  - anime, manga or cel-shaded grammar
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-085.webp
+attributes:
+  negativePrompt: >-
+    isometric or first-person camera, two unrelated places pasted together, transition light that
+    hides path, subject or nearby forms, unrequested canonical protagonist, boss, shrine or lore
+    symbol, unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text,
+    anime, manga or cel-shaded grammar
+  referenceGame: Lords of the Fallen (2023) (2023 reboot; Axiom/Umbral presentation)
+  pairedPresetId: SP17-088
+  sourceReferences:
+    - title: Art Direction — HEXWORKS Dev Journals — Lords of the Fallen
+      url: https://www.lordsofthefallen.com/lords-of-the-fallen-2023/art-direction-hexworks-dev-journals/
+    - title: Umbral — Lords of the Fallen Official Site
+      url: https://www.lordsofthefallen.com/lords-of-the-fallen-2023/umbral/
+    - title: All-New Screenshots — Explore the Lands of Lords of the Fallen — Official Site
+      url: https://www.lordsofthefallen.com/lords-of-the-fallen-2023/?p=1322
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Lords of the Fallen Dual-Realm Gameplay Capture
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Lords of the Fallen Dual-Realm Gameplay Capture
+      - field: camera_and_composition
+        group: camera
+        value: lords-of-the-fallen-2023 gameplay view
+    avoidRules:
+      - text: isometric or first-person camera
+        field: global
+      - text: two unrelated places pasted together
+        field: global
+      - text: transition light that hides path, subject or nearby forms
+        field: global
+      - text: unrequested canonical protagonist, boss, shrine or lore symbol
+        field: global
+      - text: unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text
+        field: global
+      - text: anime, manga or cel-shaded grammar
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: gothic-and-dungeon-gameplay
+  categoryName: 9. Gothic & Dungeon Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - lords-of-the-fallen-2023
+    - lords of the fallen (2023)
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

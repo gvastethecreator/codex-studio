@@ -1,0 +1,127 @@
+schemaVersion: 1
+id: SP17-091
+packId: pack_17
+name: Blasphemous — Penitent Pixel Gothic
+category: 10. Graphic & Feudal Art Directions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - blasphemous-2019
+  - blasphemous
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Make this specifically Blasphemous (2019)'s penitential pixel-gothic language, not a generic
+    pixel filter: carved, processional silhouettes; severe grotesque faces; relic-like ornamental
+    shapes; and the tension between cramped horizontal travel and towering sacred architecture.
+    Translate the visual grammar into the requested subject without copying a named character or
+    requiring a religious scene.
+  subject_treatment: >-
+    Preserve the requested subject and action, then use elongated cloth or body shapes, mask-like
+    facial planes, carved edges and small ritual-looking ornaments only where the subject can
+    support them. Let an ordinary object read as a relic through deliberate silhouette and pixel
+    grouping, not by replacing it with a church prop, saint or monster.
+  color_and_tone: >-
+    Favor large blue-black, charcoal and cold slate areas with pale bone or moonlit stone, then
+    punctuate them with limited carmine, orange fire and occasional old-gold or violet details. The
+    reviewed Team17 screenshots shift from a cold mountain/ruin view to a near-black crypt with hot
+    action colors; preserve this cool-dark base and localized heat instead of defaulting to a warm
+    bone-and-gold palette.
+  lighting_and_shadow: >-
+    Make readable pixel-cut light against broad dark architecture: cold distance or moonlight can
+    frame silhouettes while a small warm effect or flame marks the action. Keep light clusters
+    hard-edged and separate from the platform and character outline; avoid smooth bloom and
+    generalized red grading.
+  texture_and_material: >-
+    Build stone, iron, cloth and organic matter from purposeful, scale-consistent pixel clusters.
+    Use carved stair-step edges, small inlaid gold or metal highlights and dark shape blocks to
+    distinguish materials. Let negative space remain clean; use dithering only where it describes a
+    form, never as a full-image noise layer.
+  camera_and_composition: >-
+    Respect the prompt's requested camera and crop. Let narrow vertical architecture, a stark
+    silhouette and uneven negative space carry the image; use devotional balance or a ceremonial
+    center only when the subject merits it. Do not make every illustration a side-scroller, centered
+    altar or shrine tableau.
+  atmosphere_and_mood: >-
+    Draw on Cvstodia's penitential, grotesque and mournful grandeur: quiet religious unease can sit
+    beside abrupt violence and a few fiercely bright effects. Keep the requested emotion primary;
+    religious iconography and gore are not mandatory content.
+  rendering_and_quality: >-
+    Use authored high-resolution 2D pixel illustration with deliberate stepped edges, layered
+    environmental planes and sparse, highly legible clusters. Keep the pixel medium visible in the
+    shape construction, not as scanlines laid over another rendering style or blurred retro noise.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-091.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: Blasphemous (2019 base game by The Game Kitchen; Steam PC listing and Team17 publisher gallery)
+  pairedPresetId: SP12-088
+  sourceReferences:
+    - title: Blasphemous on Steam — product listing and gallery
+      url: https://store.steampowered.com/app/774361/Blasphemous/
+    - title: Blasphemous — official Team17 game page
+      url: https://www.team17.com/games/blasphemous
+    - title: 'Blasphemous official Team17 screenshot: Hat-Screensot-4'
+      url: https://www.team17.com/hs-fs/hubfs/Hat-Screensot-4.png?length=2000&name=Hat-Screensot-4.png
+    - title: 'Blasphemous official Team17 screenshot: Hat-Screenshot-5'
+      url: https://www.team17.com/hs-fs/hubfs/Hat-Screenshot-5.png?length=2000&name=Hat-Screenshot-5.png
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Blasphemous — Penitent Pixel Gothic
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Blasphemous — Penitent Pixel Gothic
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - game-art-direction
+    - blasphemous-2019
+    - blasphemous
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

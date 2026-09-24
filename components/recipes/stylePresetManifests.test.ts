@@ -646,8 +646,8 @@ describe('stylePresetManifests', () => {
     );
 
     expect(catalog.graph.errors).toEqual([]);
-    expect(catalog.packManifests).toHaveLength(22);
-    expect(catalog.presetManifests).toHaveLength(1739);
+    expect(catalog.packManifests).toHaveLength(23);
+    expect(catalog.presetManifests).toHaveLength(1775);
     expect(composedPresetCount).toBe(catalog.presetManifests.length);
     expect(
       runtimeIndex.packs.map((pack) => ({
@@ -669,6 +669,9 @@ describe('stylePresetManifests', () => {
     expect(runtimeIndex.packs.find((pack) => pack.id === 'pack_23')?.name).toBe(
       'Medieval Visual Atlas',
     );
+    expect(runtimeIndex.presetPackIdById.get('SP24-001')).toBe('pack_24');
+    expect(runtimeIndex.presetPackIdById.get('SP17-095')).toBe('pack_17');
+    expect(runtimeIndex.presetPackIdById.get('SP12-098')).toBe('pack_12');
 
     const archivedFavorites = await loadArchivedStylePresetsByIds([
       'SP14-001',

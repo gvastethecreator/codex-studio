@@ -10,6 +10,12 @@ export interface StyleLandingFolderSummary {
 
 export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
+    id: 'psychological_frontier_aesthetics',
+    kind: 'collection',
+    presetCount: 6,
+    imageKeys: ['SP24-001', 'SP24-002', 'SP24-003', 'SP24-004', 'SP24-005', 'SP24-006'],
+  },
+  {
     id: 'tcg_visual_styles',
     kind: 'collection',
     presetCount: 120,
@@ -221,7 +227,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'games_ui_worlds',
     kind: 'collection',
-    presetCount: 120,
+    presetCount: 138,
     imageKeys: ['SP12-001', 'SP12-002', 'SP12-003', 'SP12-004', 'SP12-005', 'SP12-006'],
   },
   {
@@ -239,7 +245,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'dungeon_dark_fantasy_wargame',
     kind: 'collection',
-    presetCount: 83,
+    presetCount: 95,
     imageKeys: ['SP17-001', 'SP17-073', 'SP17-002', 'SP17-003', 'SP17-004', 'SP17-005'],
   },
   {
@@ -431,7 +437,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_12',
     kind: 'source',
-    presetCount: 80,
+    presetCount: 98,
     imageKeys: ['SP12-001', 'SP12-002', 'SP12-003', 'SP12-004', 'SP12-005', 'SP12-006'],
   },
   {
@@ -449,7 +455,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_17',
     kind: 'source',
-    presetCount: 83,
+    presetCount: 95,
     imageKeys: [
       'pack_17__dark_fantasy_and_gothic_courts',
       'pack_17__dungeon_zine_and_risograph_prints',
@@ -488,6 +494,12 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
     kind: 'source',
     presetCount: 58,
     imageKeys: ['SP23-001', 'SP23-002', 'SP23-003', 'SP23-004', 'SP23-005', 'SP23-006'],
+  },
+  {
+    id: 'pack_24',
+    kind: 'source',
+    presetCount: 6,
+    imageKeys: ['SP24-001', 'SP24-002', 'SP24-003', 'SP24-004', 'SP24-005', 'SP24-006'],
   },
 ];
 

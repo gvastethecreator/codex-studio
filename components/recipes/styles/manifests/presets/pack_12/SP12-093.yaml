@@ -1,0 +1,116 @@
+schemaVersion: 1
+id: SP12-093
+packId: pack_12
+name: Silent Hill f — Showa Folklore Gameplay
+category: 11. Psychological & Tactical Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - silent-hill-f
+  - silent hill f
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Third-person exploration/action in a lived-in 1960s Japanese town that is visibly being
+    overtaken by red organic bloom.
+  subject_treatment: >-
+    Keep the playable figure at readable game scale and preserve the requested action; red growth
+    may block a flank or route but must not hide the player.
+  color_and_tone: >-
+    Faded timber, gray-blue daylight, pale fog, and dark uniform cloth punctuated by unmistakable
+    crimson flower masses.
+  lighting_and_shadow: >-
+    Clouded exterior light and subdued school/interior practicals contrast with red-lit transformed
+    encounters; transitions stay spatially legible.
+  texture_and_material: >-
+    Showa wood lattice, papered rooms, roadside concrete, damp earth, and dense red petals/stems
+    each retain separate material response.
+  camera_and_composition: >-
+    Third-person camera behind or slightly above the playable subject, small-to-medium in frame;
+    preserve forward traversal space and glimpses of town architecture.
+  atmosphere_and_mood: >-
+    Familiar rural/school space crossed by folklore and sudden invasion; quiet exploration can turn
+    confrontational without losing route readability.
+  rendering_and_quality: >-
+    Modern detailed game capture with believable rural materials, soft distance fog, and localized
+    floral transformation, consistent with observed official gallery imagery.
+avoidRules:
+  - unrequested named characters, copied level layouts or franchise symbols
+  - invented interface text, meters or logos when no interface was requested
+  - obscured player silhouette, unusable terrain or effects that hide the requested action
+  - cinematic promotional posing or a camera that contradicts the selected gameplay profile
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-093.webp
+attributes:
+  negativePrompt: >-
+    unrequested named characters, copied level layouts or franchise symbols, invented interface
+    text, meters or logos when no interface was requested, obscured player silhouette, unusable
+    terrain or effects that hide the requested action, cinematic promotional posing or a camera that
+    contradicts the selected gameplay profile
+  referenceGame: SILENT HILL f (Original release (2025))
+  pairedPresetId: SP24-001
+  sourceReferences:
+    - title: 'KONAMI Unveils SILENT HILL f: A Haunting New Chapter in the Iconic Horror Franchise'
+      url: https://www.konami.com/games/us/en/topics/2814/
+    - title: >-
+        Find Beauty In Terror With SILENT HILL f, The Next Step In The Acclaimed Franchise Launching
+        Today
+      url: https://www.konami.com/games/eu/en/topics/18839/
+    - title: SILENT HILL f — official screenshots and publisher-authorized materials
+      url: https://www.konami.com/games/silenthill/f/guideline/jp/ja/available
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Silent Hill f — Showa Folklore Gameplay
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Silent Hill f — Showa Folklore Gameplay
+      - field: camera_and_composition
+        group: camera
+        value: silent-hill-f gameplay view
+    avoidRules:
+      - text: unrequested named characters, copied level layouts or franchise symbols
+        field: global
+      - text: invented interface text, meters or logos when no interface was requested
+        field: global
+      - text: obscured player silhouette, unusable terrain or effects that hide the requested action
+        field: global
+      - text: cinematic promotional posing or a camera that contradicts the selected gameplay profile
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: psychological-and-tactical-gameplay
+  categoryName: 11. Psychological & Tactical Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - silent-hill-f
+    - silent hill f
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

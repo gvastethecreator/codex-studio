@@ -33,6 +33,18 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
     import('./pack_12/heists-horror-and-underworld-runs-8').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
+  () =>
+    import('./pack_12/gothic-and-dungeon-gameplay-9').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_12/graphic-and-feudal-gameplay-10').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_12/psychological-and-tactical-gameplay-11').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

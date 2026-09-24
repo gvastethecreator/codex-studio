@@ -33,6 +33,14 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
     import('./pack_17/medieval-fantasy-drawing-media-8').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
+  () =>
+    import('./pack_17/gothic-and-dungeon-art-directions-9').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_17/graphic-and-feudal-art-directions-10').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

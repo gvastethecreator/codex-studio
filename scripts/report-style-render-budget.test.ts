@@ -10,7 +10,7 @@ describe('style render budget report', () => {
     expect(report.categoryInitialRenderLimit).toBe(Number.MAX_SAFE_INTEGER);
     expect(report.groupInitialRenderLimit).toBe(160);
     expect(report.expandedGroupRenderLimit).toBe(160);
-    expect(report.packs).toHaveLength(22);
+    expect(report.packs).toHaveLength(23);
     expect(Math.max(...report.packs.map((pack) => pack.initialRenderedCategories))).toBe(15);
     expect(Math.max(...report.packs.map((pack) => pack.initialRenderedPresetCards))).toBe(70);
     expect(Math.max(...report.packs.map((pack) => pack.eagerPresetCards))).toBeLessThanOrEqual(256);

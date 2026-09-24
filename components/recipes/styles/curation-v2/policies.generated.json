@@ -46,6 +46,932 @@
     "packId": "pack_02",
     "name": "Silver Plate Tonality"
   },
+  "SP12-081": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Diablo II: Resurrected Isometric Gameplay Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Diablo II: Resurrected Isometric Gameplay Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "diablo-ii-resurrected gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "free-camera portrait blur that breaks the elevated gameplay view",
+        "field": "global"
+      },
+      {
+        "text": "unrequested canonical figures, skills or item designs",
+        "field": "global"
+      },
+      {
+        "text": "effect bloom that hides target and silhouette separation",
+        "field": "global"
+      },
+      {
+        "text": "unrequested game marks or interface overlays; preserve explicitly requested UI and text",
+        "field": "global"
+      },
+      {
+        "text": "anime, manga or cel-shaded grammar",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Diablo II: Resurrected Isometric Gameplay Capture"
+  },
+  "SP12-082": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Diablo IV Elevated ARPG Gameplay Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Diablo IV Elevated ARPG Gameplay Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "diablo-iv gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "cutscene close-up or low-angle key art in place of the elevated gameplay camera",
+        "field": "global"
+      },
+      {
+        "text": "unreadable playable scale or terrain hierarchy",
+        "field": "global"
+      },
+      {
+        "text": "universal red lighting, black crush or indiscriminate fog",
+        "field": "global"
+      },
+      {
+        "text": "unrequested canonical characters, locations, monsters or skills",
+        "field": "global"
+      },
+      {
+        "text": "unrequested HUD, map, interface, logos or captions; preserve explicitly requested UI and text",
+        "field": "global"
+      },
+      {
+        "text": "anime or cel-shaded grammar",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Diablo IV Elevated ARPG Gameplay Capture"
+  },
+  "SP12-083": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Bloodborne Third-Person Hunt Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Bloodborne Third-Person Hunt Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "bloodborne gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "isometric or first-person view",
+        "field": "global"
+      },
+      {
+        "text": "static fashion portrait in place of gameplay-scale framing",
+        "field": "global"
+      },
+      {
+        "text": "unreadable subject/architecture overlap",
+        "field": "global"
+      },
+      {
+        "text": "unrequested canonical hunter, weapon, boss or landmark",
+        "field": "global"
+      },
+      {
+        "text": "unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text",
+        "field": "global"
+      },
+      {
+        "text": "anime, manga or cel-shaded grammar",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Bloodborne Third-Person Hunt Capture"
+  },
+  "SP12-084": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Mortal Shell Third-Person Gameplay",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Mortal Shell Third-Person Gameplay"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "mortal-shell gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "isometric or first-person camera",
+        "field": "global"
+      },
+      {
+        "text": "static cover portrait or crowded action that hides the playable figure",
+        "field": "global"
+      },
+      {
+        "text": "unrequested canonical shell, weapon, character or arena",
+        "field": "global"
+      },
+      {
+        "text": "invented hardening effect when the prompt does not request it",
+        "field": "global"
+      },
+      {
+        "text": "unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text",
+        "field": "global"
+      },
+      {
+        "text": "anime, manga or cel-shaded grammar",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Mortal Shell Third-Person Gameplay"
+  },
+  "SP12-085": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Lords of the Fallen Dual-Realm Gameplay Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Lords of the Fallen Dual-Realm Gameplay Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "lords-of-the-fallen-2023 gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "isometric or first-person camera",
+        "field": "global"
+      },
+      {
+        "text": "two unrelated places pasted together",
+        "field": "global"
+      },
+      {
+        "text": "transition light that hides path, subject or nearby forms",
+        "field": "global"
+      },
+      {
+        "text": "unrequested canonical protagonist, boss, shrine or lore symbol",
+        "field": "global"
+      },
+      {
+        "text": "unrequested HUD, logo, interface or captions; preserve explicitly requested UI and text",
+        "field": "global"
+      },
+      {
+        "text": "anime, manga or cel-shaded grammar",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Lords of the Fallen Dual-Realm Gameplay Capture"
+  },
+  "SP12-086": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Amnesia: The Dark Descent First-Person Gameplay Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Amnesia: The Dark Descent First-Person Gameplay Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "amnesia-the-dark-descent gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "third-person portrait, isometric view or cinematic cutaway",
+        "field": "global"
+      },
+      {
+        "text": "mandatory monster, chase, castle landmark or named character",
+        "field": "global"
+      },
+      {
+        "text": "bright modern PBR gloss, dense microtexture or exaggerated film grain",
+        "field": "global"
+      },
+      {
+        "text": "total-black near field or unreadable requested action",
+        "field": "global"
+      },
+      {
+        "text": "unrequested sanity meter, oil gauge, HUD, crosshair, interface, logo or captions; preserve explicitly requested UI and text",
+        "field": "global"
+      },
+      {
+        "text": "anime, manga or cel-shaded grammar",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Amnesia: The Dark Descent First-Person Gameplay Capture"
+  },
+  "SP12-087": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Darksiders Third-Person Gameplay Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Darksiders Third-Person Gameplay Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "darksiders-2010 gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art",
+        "field": "global"
+      },
+      {
+        "text": "changing the requested camera into isometric or side-scrolling gameplay",
+        "field": "global"
+      },
+      {
+        "text": "unrequested combat effects, copied health bars or fabricated interface labels",
+        "field": "global"
+      },
+      {
+        "text": "modern rendering upgrades presented as the 2010 original",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Darksiders Third-Person Gameplay Capture"
+  },
+  "SP12-088": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Blasphemous Side-Scrolling Gameplay Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Blasphemous Side-Scrolling Gameplay Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "blasphemous-2019 gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested use of The Penitent One, named bosses, exact room layouts or promotional key art",
+        "field": "global"
+      },
+      {
+        "text": "changing the side-scroll plane or inventing an alternate camera",
+        "field": "global"
+      },
+      {
+        "text": "unrequested gore, named religious props, copied meters or fabricated interface text",
+        "field": "global"
+      },
+      {
+        "text": "filtering non-pixel subjects with uniform scanlines or blur",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Blasphemous Side-Scrolling Gameplay Capture"
+  },
+  "SP12-089": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Onimusha Warlords Fixed-Scene Gameplay Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Onimusha Warlords Fixed-Scene Gameplay Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "onimusha-warlords-remaster gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested use of Samanosuke, Kaede, named demons, exact castle rooms or key art",
+        "field": "global"
+      },
+      {
+        "text": "mixing the 4:3 fixed composition with a free-moving 16:9 camera",
+        "field": "global"
+      },
+      {
+        "text": "unrequested supernatural effects, copied health/magic meters or fabricated interface labels",
+        "field": "global"
+      },
+      {
+        "text": "modern cinematic depth-of-field that hides scene layout",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Onimusha Warlords Fixed-Scene Gameplay Capture"
+  },
+  "SP12-090": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "For Honor Third-Person Melee Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "For Honor Third-Person Melee Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "for-honor gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested use of named heroes, faction gear, emblems or live-service event scenes",
+        "field": "global"
+      },
+      {
+        "text": "switching the third-person view to a side-on fighting-game plane",
+        "field": "global"
+      },
+      {
+        "text": "unrequested blood, objective markers, combat text or fabricated HUD",
+        "field": "global"
+      },
+      {
+        "text": "cinematic blur that hides guard direction or combat spacing",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "For Honor Third-Person Melee Capture"
+  },
+  "SP12-091": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Mortal Kombat 1 2.5D Fighting Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Mortal Kombat 1 2.5D Fighting Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "mortal-kombat-1-2023 gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested use of franchise characters, costumes, exact arena or signature fatality",
+        "field": "global"
+      },
+      {
+        "text": "switching the match plane to third-person roaming or a 2D pixel treatment",
+        "field": "global"
+      },
+      {
+        "text": "unrequested gore, move names, round text or fabricated health bars",
+        "field": "global"
+      },
+      {
+        "text": "key-art posing that hides playable spacing",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Mortal Kombat 1 2.5D Fighting Capture"
+  },
+  "SP12-092": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Darkest Dungeon Side-View Tactical Capture",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Darkest Dungeon Side-View Tactical Capture"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "darkest-dungeon-2016 gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout",
+        "field": "global"
+      },
+      {
+        "text": "changing the tactical side view to pixel-platformer or third-person 3D",
+        "field": "global"
+      },
+      {
+        "text": "unrequested gore, stress symbols, torch icons or fabricated status text",
+        "field": "global"
+      },
+      {
+        "text": "wide cinematic staging that makes units too small to read",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Darkest Dungeon Side-View Tactical Capture"
+  },
+  "SP12-093": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Silent Hill f — Showa Folklore Gameplay",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Silent Hill f — Showa Folklore Gameplay"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "silent-hill-f gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested named characters, copied level layouts or franchise symbols",
+        "field": "global"
+      },
+      {
+        "text": "invented interface text, meters or logos when no interface was requested",
+        "field": "global"
+      },
+      {
+        "text": "obscured player silhouette, unusable terrain or effects that hide the requested action",
+        "field": "global"
+      },
+      {
+        "text": "cinematic promotional posing or a camera that contradicts the selected gameplay profile",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Silent Hill f — Showa Folklore Gameplay"
+  },
+  "SP12-094": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Silent Hill 2 (2001) — Elevated PS2 Gameplay",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Silent Hill 2 (2001) — Elevated PS2 Gameplay"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "silent-hill-2-original gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested named characters, copied level layouts or franchise symbols",
+        "field": "global"
+      },
+      {
+        "text": "invented interface text, meters or logos when no interface was requested",
+        "field": "global"
+      },
+      {
+        "text": "obscured player silhouette, unusable terrain or effects that hide the requested action",
+        "field": "global"
+      },
+      {
+        "text": "cinematic promotional posing or a camera that contradicts the selected gameplay profile",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Silent Hill 2 (2001) — Elevated PS2 Gameplay"
+  },
+  "SP12-095": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Silent Hill 2 (2024) — Shoulder-Follow Gameplay",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Silent Hill 2 (2024) — Shoulder-Follow Gameplay"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "silent-hill-2-remake gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested named characters, copied level layouts or franchise symbols",
+        "field": "global"
+      },
+      {
+        "text": "invented interface text, meters or logos when no interface was requested",
+        "field": "global"
+      },
+      {
+        "text": "obscured player silhouette, unusable terrain or effects that hide the requested action",
+        "field": "global"
+      },
+      {
+        "text": "cinematic promotional posing or a camera that contradicts the selected gameplay profile",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Silent Hill 2 (2024) — Shoulder-Follow Gameplay"
+  },
+  "SP12-096": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Silent Hill 4 Domestic Threshold Gameplay",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Silent Hill 4 Domestic Threshold Gameplay"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "silent-hill-4-the-room gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested named characters, copied level layouts or franchise symbols",
+        "field": "global"
+      },
+      {
+        "text": "invented interface text, meters or logos when no interface was requested",
+        "field": "global"
+      },
+      {
+        "text": "obscured player silhouette, unusable terrain or effects that hide the requested action",
+        "field": "global"
+      },
+      {
+        "text": "cinematic promotional posing or a camera that contradicts the selected gameplay profile",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Silent Hill 4 Domestic Threshold Gameplay"
+  },
+  "SP12-097": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Metal Gear Solid 3 (2004) Overhead Gameplay",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Metal Gear Solid 3 (2004) Overhead Gameplay"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "metal-gear-solid-3-snake-eater-ps2 gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested named characters, copied level layouts or franchise symbols",
+        "field": "global"
+      },
+      {
+        "text": "invented interface text, meters or logos when no interface was requested",
+        "field": "global"
+      },
+      {
+        "text": "obscured player silhouette, unusable terrain or effects that hide the requested action",
+        "field": "global"
+      },
+      {
+        "text": "cinematic promotional posing or a camera that contradicts the selected gameplay profile",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Metal Gear Solid 3 (2004) Overhead Gameplay"
+  },
+  "SP12-098": {
+    "schemaVersion": 1,
+    "kind": "representation_profile",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "camera_and_composition",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Death Stranding (2019) Traversal Gameplay",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Death Stranding (2019) Traversal Gameplay"
+      },
+      {
+        "field": "camera_and_composition",
+        "group": "camera",
+        "value": "death-stranding-original gameplay view"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested named characters, copied level layouts or franchise symbols",
+        "field": "global"
+      },
+      {
+        "text": "invented interface text, meters or logos when no interface was requested",
+        "field": "global"
+      },
+      {
+        "text": "obscured player silhouette, unusable terrain or effects that hide the requested action",
+        "field": "global"
+      },
+      {
+        "text": "cinematic promotional posing or a camera that contradicts the selected gameplay profile",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_12",
+    "name": "Death Stranding (2019) Traversal Gameplay"
+  },
   "SP14-142": {
     "schemaVersion": 1,
     "kind": "full_style",
@@ -2441,6 +3367,522 @@
     "presetVersion": 1,
     "packId": "pack_17",
     "name": "Colored-Pencil Grit Fantasy"
+  },
+  "SP17-084": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Diablo II — Mineral Chiaroscuro",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Diablo II — Mineral Chiaroscuro"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Diablo II — Mineral Chiaroscuro"
+  },
+  "SP17-085": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Diablo IV — Old-Master Gloom",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Diablo IV — Old-Master Gloom"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Diablo IV — Old-Master Gloom"
+  },
+  "SP17-086": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Bloodborne — Gaslamp Gothic",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Bloodborne — Gaslamp Gothic"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Bloodborne — Gaslamp Gothic"
+  },
+  "SP17-087": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Mortal Shell — Tarnished Weight",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Mortal Shell — Tarnished Weight"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Mortal Shell — Tarnished Weight"
+  },
+  "SP17-088": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Lords of the Fallen — Tormented Allegory",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Lords of the Fallen — Tormented Allegory"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Lords of the Fallen — Tormented Allegory"
+  },
+  "SP17-089": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Amnesia — Candlelit Vulnerability",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Amnesia — Candlelit Vulnerability"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Amnesia — Candlelit Vulnerability"
+  },
+  "SP17-090": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Darksiders — Apocalyptic Graphic Fantasy",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Darksiders — Apocalyptic Graphic Fantasy"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Darksiders — Apocalyptic Graphic Fantasy"
+  },
+  "SP17-091": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Blasphemous — Penitent Pixel Gothic",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Blasphemous — Penitent Pixel Gothic"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Blasphemous — Penitent Pixel Gothic"
+  },
+  "SP17-092": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Onimusha — Feudal Supernatural Drama",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Onimusha — Feudal Supernatural Drama"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Onimusha — Feudal Supernatural Drama"
+  },
+  "SP17-093": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "For Honor — Battlefield Monumentality",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "For Honor — Battlefield Monumentality"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "For Honor — Battlefield Monumentality"
+  },
+  "SP17-094": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Mortal Kombat 1 — Martial Pageantry",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Mortal Kombat 1 — Martial Pageantry"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Mortal Kombat 1 — Martial Pageantry"
+  },
+  "SP17-095": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Darkest Dungeon — Expressionist Ink",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Darkest Dungeon — Expressionist Ink"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Darkest Dungeon — Expressionist Ink"
   },
   "SP19-001": {
     "schemaVersion": 1,
@@ -10446,5 +11888,263 @@
     "presetVersion": 1,
     "packId": "pack_23",
     "name": "Shallow Relief and Fine Marks"
+  },
+  "SP24-001": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Silent Hill f — Blooming Folkloric Horror",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Silent Hill f — Blooming Folkloric Horror"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_24",
+    "name": "Silent Hill f — Blooming Folkloric Horror"
+  },
+  "SP24-002": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Silent Hill 2 (2001) — Sickly Memory",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Silent Hill 2 (2001) — Sickly Memory"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_24",
+    "name": "Silent Hill 2 (2001) — Sickly Memory"
+  },
+  "SP24-003": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Silent Hill 2 (2024) — Wet Concrete, Near Dread",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Silent Hill 2 (2024) — Wet Concrete, Near Dread"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_24",
+    "name": "Silent Hill 2 (2024) — Wet Concrete, Near Dread"
+  },
+  "SP24-004": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Silent Hill 4 — Domestic Intrusion",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Silent Hill 4 — Domestic Intrusion"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_24",
+    "name": "Silent Hill 4 — Domestic Intrusion"
+  },
+  "SP24-005": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Metal Gear — Tactical Brushwork",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Metal Gear — Tactical Brushwork"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_24",
+    "name": "Metal Gear — Tactical Brushwork"
+  },
+  "SP24-006": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "Death Stranding — Industrial Sublime",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "Death Stranding — Industrial Sublime"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "overriding explicitly requested subject, action, identity, count or camera",
+        "field": "global"
+      },
+      {
+        "text": "generic neutral rendering that removes the reference visual grammar",
+        "field": "global"
+      },
+      {
+        "text": "unrequested franchise characters, logos or exact scene copies",
+        "field": "global"
+      },
+      {
+        "text": "interface overlays, text or frames unless requested",
+        "field": "global"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_24",
+    "name": "Death Stranding — Industrial Sublime"
   }
 }

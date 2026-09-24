@@ -1,0 +1,110 @@
+schemaVersion: 1
+id: SP17-089
+packId: pack_17
+name: Amnesia — Candlelit Vulnerability
+category: 9. Gothic & Dungeon Art Directions
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - game-art-direction
+  - amnesia-the-dark-descent
+  - 'amnesia: the dark descent'
+  - full-style
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Amnesia: The Dark Descent (2010) environmental-horror illustration: heavy European masonry,
+    vulnerable human scale and a small island of failing warmth surrounded by unreadable cold depth.
+  subject_treatment: >-
+    Keep requested identity and action. Convey vulnerability through hesitant weight, restricted
+    space and partial occlusion; unspecified objects have practical old construction, not heroic
+    ornament.
+  color_and_tone: >-
+    Warm tallow ochre and worn wood umber against desaturated blue-green darkness, with limited
+    sickly reddish organic accents.
+  lighting_and_shadow: >-
+    A short-range lamp or candle default produces abrupt falloff, deep occlusion and a distant cold
+    opening. Darkness leaves the focal action readable but conceals the next space.
+  texture_and_material: >-
+    Damp block stone, softened plaster, scratched wood and cloudy glass; occasional fleshy intrusion
+    appears structurally rooted when the subject permits it.
+  camera_and_composition: >-
+    Doorways, furniture and close walls cut off peripheral vision; use an off-center focal action
+    with a dark unconfirmed opening. Preserve explicit camera instructions.
+  atmosphere_and_mood: >-
+    Helpless anticipation and uncertain perception; safety occupies only a small part of the
+    composition, without turning every scene into a monster reveal.
+  rendering_and_quality: >-
+    Moody painted environmental study with soft transitions and selective tactile edges; avoid
+    glossy blockbuster horror, evenly lit dungeon art or an ornamental vignette.
+avoidRules:
+  - overriding explicitly requested subject, action, identity, count or camera
+  - generic neutral rendering that removes the reference visual grammar
+  - unrequested franchise characters, logos or exact scene copies
+  - interface overlays, text or frames unless requested
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-089.webp
+attributes:
+  negativePrompt: >-
+    overriding explicitly requested subject, action, identity, count or camera, generic neutral
+    rendering that removes the reference visual grammar, unrequested franchise characters, logos or
+    exact scene copies, interface overlays, text or frames unless requested
+  referenceGame: 'Amnesia: The Dark Descent (2010 original; Frictional Games launch-era material)'
+  pairedPresetId: SP12-086
+  sourceReferences:
+    - title: 'Frictional Games Press Kit — Amnesia: The Dark Descent'
+      url: https://frictionalgames.com/press-kit/
+    - title: 'Amnesia: The Dark Descent — Teaser, Web Site & Pre-order — Frictional Games'
+      url: https://frictionalgames.com/2010-02-amnesia-the-dark-descent-teaser-web-site-pre-order/
+    - title: Closer Look at Teaser and More — Frictional Games
+      url: https://frictionalgames.com/2010-02-closer-look-at-teaser-and-more/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: Amnesia — Candlelit Vulnerability
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: Amnesia — Candlelit Vulnerability
+    avoidRules:
+      - text: overriding explicitly requested subject, action, identity, count or camera
+        field: global
+      - text: generic neutral rendering that removes the reference visual grammar
+        field: global
+      - text: unrequested franchise characters, logos or exact scene copies
+        field: global
+      - text: interface overlays, text or frames unless requested
+        field: global
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - game-art-direction
+    - amnesia-the-dark-descent
+    - 'amnesia: the dark descent'
+    - full-style
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

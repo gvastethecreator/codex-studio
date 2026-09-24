@@ -1,0 +1,125 @@
+schemaVersion: 1
+id: SP12-081
+packId: pack_12
+name: 'Diablo II: Resurrected Isometric Gameplay Capture'
+category: 9. Gothic & Dungeon Gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gameplay-profile
+  - diablo-ii-resurrected
+  - 'diablo ii: resurrected'
+  - representation-profile
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    A faithful high-resolution 3D remaster presented at the compact, fixed scale of a classic
+    action-RPG play frame. Keep the small actor, surrounding threats, terrain, and effect shapes
+    legible together; do not turn the frame into a character close-up.
+  subject_treatment: >-
+    Preserve the requested actor, action, enemies, and objects. When gameplay figures are present,
+    show their full in-world silhouettes at small scale and separate overlapping bodies or spell
+    effects enough to read the encounter; do not add a hero, monster, or loot without a prompt for
+    it.
+  color_and_tone: >-
+    Dark earth, blue-black stone and bone-white material planes with intense localized ice-blue,
+    poison-green or ember effects; keep requested colors and separate effect silhouettes clearly.
+  lighting_and_shadow: >-
+    Use the game's contrast between a dim cavern and small pools of fire or spell light. Bright
+    effects can flare strongly against the dark floor, but they should leave the actor, target
+    silhouettes, and route around them understandable.
+  texture_and_material: >-
+    Suggest the 2021 remaster's rebuilt 3D surfaces with crisp stone, armor, and effect boundaries
+    at game scale. Preserve material distinction and the original screen hierarchy instead of
+    filling the small frame with cinematic micro-detail.
+  camera_and_composition: >-
+    Use a stable elevated three-quarter/isometric ARPG view. Keep the playable figure small relative
+    to the area, with a diagonal floor plane and nearby targets arranged as a readable local
+    encounter; avoid a free camera, shoulder-level follow view, or portrait crop.
+  atmosphere_and_mood: >-
+    Retain the original game's compressed dungeon danger and fast read of threats, terrain, and
+    effects. Combat is not mandatory if the requested content is exploration or another gameplay
+    action.
+  rendering_and_quality: >-
+    Read as a 2021 remaster of a classic game: restored 3D geometry, sharper edges and spell
+    effects, and older compact screen-space scale. Include interface elements only when the prompt
+    asks for a gameplay UI or capture; preserve explicitly requested text and interface details.
+avoidRules:
+  - free-camera portrait blur that breaks the elevated gameplay view
+  - unrequested canonical figures, skills or item designs
+  - effect bloom that hides target and silhouette separation
+  - unrequested game marks or interface overlays; preserve explicitly requested UI and text
+  - anime, manga or cel-shaded grammar
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP12-081.webp
+attributes:
+  negativePrompt: >-
+    free-camera portrait blur that breaks the elevated gameplay view, unrequested canonical figures,
+    skills or item designs, effect bloom that hides target and silhouette separation, unrequested
+    game marks or interface overlays; preserve explicitly requested UI and text, anime, manga or
+    cel-shaded grammar
+  referenceGame: 'Diablo II: Resurrected (2021 remaster; base-game visual direction)'
+  pairedPresetId: SP17-084
+  sourceReferences:
+    - title: 'Diablo II: Resurrected — Official Game Site'
+      url: https://diablo2.blizzard.com/
+    - title: 'Technical Alpha Learnings — Diablo II: Resurrected — Blizzard News'
+      url: https://news.blizzard.com/en-us/article/23695734/technical-alpha-learnings
+    - title: 'Diablo 2 Resurrected: Hoàn Hảo > hoàn hảo hơn! — Tinh tế, player-posted screenshot'
+      url: https://tinhte.vn/thread/diablo-2-resurrected-hoan-hao-hoan-hao-hon.3408703/
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: representation_profile
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - camera_and_composition
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: 'Diablo II: Resurrected Isometric Gameplay Capture'
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: 'Diablo II: Resurrected Isometric Gameplay Capture'
+      - field: camera_and_composition
+        group: camera
+        value: diablo-ii-resurrected gameplay view
+    avoidRules:
+      - text: free-camera portrait blur that breaks the elevated gameplay view
+        field: global
+      - text: unrequested canonical figures, skills or item designs
+        field: global
+      - text: effect bloom that hides target and silhouette separation
+        field: global
+      - text: unrequested game marks or interface overlays; preserve explicitly requested UI and text
+        field: global
+      - text: anime, manga or cel-shaded grammar
+        field: global
+  ui:
+    kind: representation_profile
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: gothic-and-dungeon-gameplay
+  categoryName: 9. Gothic & Dungeon Gameplay
+  tags:
+    - curation-v2
+    - gameplay-profile
+    - diablo-ii-resurrected
+    - 'diablo ii: resurrected'
+    - representation-profile
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

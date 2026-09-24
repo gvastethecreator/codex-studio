@@ -134,7 +134,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.',
     cardTitle: 'Game Originals',
     cardDescription: 'Game-native worlds, arenas, quests, encounter moods.',
-    presetCount: 80,
+    presetCount: 98,
   },
   {
     id: 'pack_14',
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, isometric game aesthetics, analog zine processes, pulp fantasy painting, and transferable drawing-media studies.',
     cardTitle: 'Dungeon Zine',
     cardDescription: 'Fantasy zines, dungeons, bestiary, grim kingdoms.',
-    presetCount: 83,
+    presetCount: 95,
   },
   {
     id: 'pack_19',
@@ -212,6 +212,15 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardDescription:
       'Transferable medieval visual studies of manuscript, print, textile, regional and later fantasy methods. Deliberate modifiers and representation profiles remain separate from full styles.',
     presetCount: 58,
+  },
+  {
+    id: 'pack_24',
+    name: 'Psychological & Frontier Aesthetics',
+    description:
+      'Transferable art direction, mood, color and material studies drawn from researched game references. Gameplay camera and engine profiles live separately in Video Game Originals Vault.',
+    cardTitle: 'Psychological & Frontier',
+    cardDescription: 'Psychological horror, tactical brushwork, and industrial solitude.',
+    presetCount: 6,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 
@@ -302,6 +311,10 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_23: () =>
     import('./styleRuntimePacks.generated/pack_23').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_24: () =>
+    import('./styleRuntimePacks.generated/pack_24').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };
