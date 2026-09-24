@@ -127,7 +127,6 @@ import type {
   StylePresetSourceProvenance,
   StylePresetVisualState,
 } from './StylePresetCardSurface';
-import { buildTcgRecipeArtPrompt } from './styles/tcgComponentModel';
 
 const TcgComponentStudio = React.lazy(() =>
   import('./styles/TcgComponentStudio').then((module) => ({ default: module.TcgComponentStudio })),
@@ -900,9 +899,9 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [tcgCatalogView, setTcgCatalogView] = useState<'visual' | 'components'>('visual');
-  const generateTcgRecipeArt = (recipeId: string, subjectPrompt: string) => {
+  const generateTcgRecipeArt = (artPrompt: string) => {
     onGenerate(
-      buildTcgRecipeArtPrompt(recipeId, subjectPrompt),
+      artPrompt,
       {
         recipeId: null,
         recipeParams: null,
@@ -2649,7 +2648,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                 <TcgComponentStudio
                                   query={searchQuery}
                                   images={images}
-                                  onGenerateRecipe={generateTcgRecipeArt}
+                                  onGenerateArtwork={generateTcgRecipeArt}
                                   isGenerating={isGenerating}
                                 />
                               ) : (
@@ -2915,23 +2914,34 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
               {(intentionalStylesV1
                 ? (['generate', 'preserve', 'reinterpret'] as const)
                 : (['preserve', 'reinterpret'] as const)
-              ).map((mode) => (
-                <button
-                  key={mode}
-                  type="button"
-                  aria-pressed={
-                    (intentionalStylesV1
-                      ? intentionalMode
-                      : intentionalMode === 'reinterpret'
-                        ? 'reinterpret'
-                        : 'preserve') === mode
-                  }
-                  onClick={() => setIntentionalMode(mode)}
-                  className="studio-ghost-control min-h-8 flex-1 px-2 text-xs capitalize"
-                >
-                  {mode}
-                </button>
-              ))}
+              ).map((mode) => {
+                const isActive =
+                  (intentionalStylesV1
+                    ? intentionalMode
+                    : intentionalMode === 'reinterpret'
+                      ? 'reinterpret'
+                      : 'preserve') === mode;
+
+                return (
+                  <button
+                    key={mode}
+                    type="button"
+                    aria-pressed={isActive}
+                    onClick={() => setIntentionalMode(mode)}
+                    className={`${
+                      isActive ? 'studio-primary-control' : 'studio-ghost-control'
+                    } min-h-8 flex-1 gap-1.5 px-2 text-xs font-semibold capitalize transition-[background-color,border-color,color,box-shadow]`}
+                  >
+                    <Check
+                      size={14}
+                      strokeWidth={3}
+                      aria-hidden="true"
+                      className={isActive ? 'opacity-100' : 'opacity-0'}
+                    />
+                    <span>{mode}</span>
+                  </button>
+                );
+              })}
             </div>
             {intentionalStylesV1 && compileIssues.length > 0 ? (
               <ul className="space-y-1 text-xs text-[color:var(--wb-warning)]">

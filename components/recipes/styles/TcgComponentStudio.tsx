@@ -1,7 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ChangeEvent } from 'react';
 import type { GeneratedImageWithConfig } from '../../../types';
-import { TCG_FINISHES, TCG_LAYOUTS, TCG_RECIPES, resolveTcgRecipe } from './tcgComponentModel';
+import {
+  TCG_FINISHES,
+  TCG_LAYOUTS,
+  TCG_RECIPES,
+  buildTcgRecipeArtPrompt,
+  resolveTcgRecipe,
+} from './tcgComponentModel';
 import type { TcgFinish, TcgLayout, TcgRecipe } from './tcgComponentModel';
 import {
   getRequiredTcgArtworkCount,
@@ -13,7 +19,7 @@ import type { TcgArtworkSource, TcgRenderInput } from './tcgCardRenderer';
 export interface TcgComponentStudioProps {
   query: string;
   images: GeneratedImageWithConfig[];
-  onGenerateRecipe: (recipeId: string, subjectPrompt: string) => void;
+  onGenerateArtwork: (artPrompt: string) => void;
   isGenerating?: boolean;
 }
 
@@ -51,7 +57,7 @@ const EMPTY_CARD_FIELDS: CardFields[] = [
 export function TcgComponentStudio({
   query,
   images,
-  onGenerateRecipe,
+  onGenerateArtwork,
   isGenerating = false,
 }: TcgComponentStudioProps) {
   const initialRecipe = TCG_RECIPES[0];
@@ -246,7 +252,7 @@ export function TcgComponentStudio({
     }
     setGenerationError('');
     try {
-      onGenerateRecipe(recipeId, subjectPrompt.trim());
+      onGenerateArtwork(buildTcgRecipeArtPrompt(recipeId, subjectPrompt.trim()));
     } catch (error) {
       setGenerationError(
         error instanceof Error ? error.message : 'No se pudo iniciar la generación.',
