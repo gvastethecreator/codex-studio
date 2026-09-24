@@ -24,7 +24,10 @@ import { isRegisteredRecipeId } from '../lib/recipeIds';
 import { useJobHistory } from '../hooks/useJobHistory';
 import { useStudioJobsListClearedAt } from '../hooks/useStudioJobsListClearedAt';
 import { useWorkerDiagnostics } from '../hooks/useWorkerDiagnostics';
-import { isStudioJobVisibleAfterListClear } from '../lib/studioJobsListClear';
+import {
+  isStudioJobVisibleAfterAttentionClear,
+  isStudioJobVisibleAfterListClear,
+} from '../lib/studioJobsListClear';
 import { QueueBatchCard } from './QueueBatchCard';
 import type { TerminalJobStatus } from '../packages/shared/src';
 import type { WorkerStatus } from '../packages/shared/src/workerContracts';
@@ -127,14 +130,24 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
     const [view, setView] = useState<'active' | 'review' | 'history'>('active');
     const autoSelectedView = useRef(false);
     const [visibleCount, setVisibleCount] = useState(20);
-    const { clearedAt, clearListedJobs } = useStudioJobsListClearedAt();
+    const {
+      clearedAt,
+      clearListedJobs,
+      attentionClearedAt,
+      clearAttentionJobs,
+      showAttentionJobs,
+    } = useStudioJobsListClearedAt();
     const activeJobs = jobHistory.open.filter((job) => job.status !== 'needs_review');
     const reviewJobs = jobHistory.open.filter(
       (job) =>
-        job.status === 'needs_review' && isStudioJobVisibleAfterListClear(job.createdAt, clearedAt),
+        job.status === 'needs_review' &&
+        isStudioJobVisibleAfterListClear(job.createdAt, clearedAt) &&
+        isStudioJobVisibleAfterAttentionClear(job.status, job.updatedAt, attentionClearedAt),
     );
-    const visibleHistory = jobHistory.history.filter((job) =>
-      isStudioJobVisibleAfterListClear(job.createdAt, clearedAt),
+    const visibleHistory = jobHistory.history.filter(
+      (job) =>
+        isStudioJobVisibleAfterListClear(job.createdAt, clearedAt) &&
+        isStudioJobVisibleAfterAttentionClear(job.status, job.updatedAt, attentionClearedAt),
     );
     const jobs = view === 'history' ? visibleHistory : view === 'review' ? reviewJobs : activeJobs;
     const visibleJobs = view === 'history' ? jobs : jobs.slice(0, visibleCount);
@@ -222,18 +235,27 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                     ? `${summary.running} running · ${summary.queued} queued`
                     : reviewJobs.length > 0
                       ? `${reviewJobs.length} need review`
-                      : 'No jobs running or queued'}
+                      : 'No active jobs'}
             </p>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex shrink-0 items-center gap-1">
+            <button
+              type="button"
+              aria-label="Hide failed and review jobs"
+              data-tooltip="Hide failed and review jobs from this list; records are kept"
+              onClick={clearAttentionJobs}
+              className="studio-hit-target whitespace-nowrap rounded-[var(--wb-radius)] px-2 py-1.5 text-xs text-[color:var(--wb-warning)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)]"
+            >
+              Clear issues
+            </button>
             <button
               type="button"
               aria-label="Hide jobs from this list"
               data-tooltip="Hide jobs from this list"
               onClick={() => clearListedJobs()}
-              className="studio-hit-target rounded-[var(--wb-radius)] px-2 py-1.5 text-xs text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
+              className="studio-hit-target whitespace-nowrap rounded-[var(--wb-radius)] px-2 py-1.5 text-xs text-[color:var(--wb-muted)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] hover:text-[color:var(--wb-ink)]"
             >
-              Clear
+              Clear list
             </button>
             {onClose ? (
               <button
@@ -248,6 +270,15 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             ) : null}
           </div>
         </div>
+        {attentionClearedAt > 0 ? (
+          <button
+            type="button"
+            onClick={showAttentionJobs}
+            className="border-b border-[color:var(--wb-border)] px-3 py-2 text-left text-xs text-[color:var(--wb-muted)] underline hover:text-[color:var(--wb-ink)]"
+          >
+            Show hidden failed/review jobs
+          </button>
+        ) : null}
         <div className="space-y-3 border-b border-[color:var(--wb-border)] px-3 pb-3">
           <label className="block text-xs text-[color:var(--wb-muted)]">
             Workspace
@@ -378,6 +409,9 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               ) : null}
               <p className="text-xs text-[color:var(--wb-muted)]">
                 {jobHistory.page?.counts.history ?? '—'} matching jobs
+                {attentionClearedAt > 0 && (statusFilter === '' || statusFilter === 'failed')
+                  ? ' · prior failures hidden from this list'
+                  : ''}
               </p>
             </>
           ) : null}

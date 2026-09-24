@@ -1,7 +1,10 @@
 import { useCallback, useMemo, useState, useDeferredValue } from 'react';
 
 import { buildStudioCommandCenterProjection } from '../lib/commandCenterProjection';
-import { isStudioJobVisibleAfterListClear } from '../lib/studioJobsListClear';
+import {
+  isStudioJobVisibleAfterAttentionClear,
+  isStudioJobVisibleAfterListClear,
+} from '../lib/studioJobsListClear';
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
 import type { RecipePageRuntimeProps } from '../components/RecipePage';
@@ -163,7 +166,8 @@ export function useStudioShell(): StudioShellController {
 
   // Browser session logs are empty here so log-list updates never invalidate the shell.
   // Overlays that display logs subscribe to the log-list context and merge client-side.
-  const { clearedAt: jobsListClearedAt } = useStudioJobsListClearedAt();
+  const { clearedAt: jobsListClearedAt, attentionClearedAt: jobsAttentionClearedAt } =
+    useStudioJobsListClearedAt();
   const studioRuntime = useStudioRuntime({
     logs: EMPTY_RUNTIME_LOGS,
     log,
@@ -179,10 +183,11 @@ export function useStudioShell(): StudioShellController {
       reviewJobCount: jobs.filter(
         (job) =>
           job.status === 'needs_review' &&
-          isStudioJobVisibleAfterListClear(job.createdAt, jobsListClearedAt),
+          isStudioJobVisibleAfterListClear(job.createdAt, jobsListClearedAt) &&
+          isStudioJobVisibleAfterAttentionClear(job.status, job.updatedAt, jobsAttentionClearedAt),
       ).length,
     };
-  }, [jobsListClearedAt, studioRuntime.activity.studioJobs]);
+  }, [jobsAttentionClearedAt, jobsListClearedAt, studioRuntime.activity.studioJobs]);
 
   const codexAvailableTransports = useMemo<readonly CodexExecutionTransport[] | undefined>(() => {
     const preflight = studioSettings.data.providerDomain.runtimePreflight?.providers.find(

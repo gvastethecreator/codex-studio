@@ -18,6 +18,7 @@ afterEach(() => {
   cleanup();
   vi.clearAllMocks();
   window.localStorage.removeItem('studio-jobs-history-cleared-at');
+  window.localStorage.removeItem('studio-jobs-attention-cleared-at');
 });
 
 import { summarizePersistentJobs } from '../lib/persistentJobSummary';
@@ -220,6 +221,46 @@ describe('QueuePanel views', () => {
     expect(screen.getByRole('button', { name: 'Inspect job: Prompt' })).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Hide jobs from this list' }));
     expect(screen.queryByRole('button', { name: 'Inspect job: Prompt' })).toBeNull();
+  });
+
+  it('clears failed and review jobs without hiding completed or active jobs', () => {
+    vi.mocked(useJobHistory).mockReturnValue({
+      key: '',
+      page: null,
+      open: [
+        { ...job('running', 'running'), originalPrompt: 'Running image' },
+        { ...job('review', 'needs_review'), originalPrompt: 'Review image' },
+      ],
+      history: [
+        { ...job('failed', 'failed'), originalPrompt: 'Failed image' },
+        { ...job('completed', 'completed'), originalPrompt: 'Completed image' },
+      ],
+      nextCursor: null,
+      seenHistoryIds: ['failed', 'completed'],
+      knownAtRequest: [],
+      workspaces: [],
+      loading: false,
+      error: null,
+      loadMore: vi.fn(),
+      retry: vi.fn(),
+    });
+    render(
+      React.createElement(QueuePanel, {
+        onInspectJob: vi.fn(),
+        onCancelServerJob: vi.fn(),
+      }),
+    );
+    fireEvent.click(screen.getByRole('button', { name: 'Hide failed and review jobs' }));
+    expect(screen.getByText('Running image')).toBeTruthy();
+    expect(screen.getByRole('button', { name: /Review\s*0/ })).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: 'History' }));
+    expect(screen.getByText('Completed image')).toBeTruthy();
+    expect(screen.queryByText('Failed image')).toBeNull();
+    expect(window.localStorage.getItem('studio-jobs-attention-cleared-at')).not.toBeNull();
+    fireEvent.click(screen.getByRole('button', { name: 'Show hidden failed/review jobs' }));
+    expect(screen.getByText('Failed image')).toBeTruthy();
+    fireEvent.click(screen.getByRole('button', { name: /Review\s*1/ }));
+    expect(screen.getByText('Review image')).toBeTruthy();
   });
 
   it('keeps the recent-result viewer keyboard-contained and closes it with Escape', () => {
