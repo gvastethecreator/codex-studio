@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "a0b16133f8aaf090353e183bb89d4c4e217f5ce1",
+  "source_commit": "be459c0998a0c3cbf92ef29c4b9098f8baba51ca",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-24T05:21:51Z",
-  "generation_id": "4d22ed45c30b610b1b111c94319a1872c8d2a9781c86ee395368ef24acfb9fb3",
+  "generated_at": "2026-09-24T05:39:40Z",
+  "generation_id": "ead39bad44a5b1b9548949dcf9606d2b06c803737b35f084c3c89b39e5359106",
   "analysis": {
     "version": "syntax-1",
     "digest": "277e322054c030f72811f774ad4e959bcf8d1244bfb70c076e298cf824ccdc3c"
@@ -123,8 +123,8 @@
         "path": "apps/local-server/src/appFactory.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a2e4089f5bae5b21e95be870fabf76817ee8e68e64c03c9902242eef45c5464d",
-        "size": 18911
+        "digest": "8ff8f5d837bb433d7d075a94938fb979ec1d6a9138424f9a0e5d9742dcce3168",
+        "size": 18872
       },
       {
         "path": "apps/local-server/src/assetLogRoutes.test.ts",
@@ -4169,8 +4169,8 @@
         "path": "components/settings/SubscriptionAuthControls.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "e5373e9dd9ffe0b19a97829ef1ce49afeaea04e5acc45e67709d331ec2d8afcf",
-        "size": 8665
+        "digest": "b6938d3bae19e91f389ea5ad54eccf6129f727c6b4e6074a2c5cd59b6f74c826",
+        "size": 8698
       },
       {
         "path": "components/shell/StudioGenerationDock.tsx",
@@ -6325,8 +6325,8 @@
         "path": "package.json",
         "origin": "tracked",
         "state": "present",
-        "digest": "3bbfca851b4c822fe4c17a1849801a2fb43e324d8f4a4c91f54a8d3463ed4d41",
-        "size": 9540
+        "digest": "79b32a5fe360b50b7e9e5db633fcf90cb0366a621bc35f0c0093d28371663248",
+        "size": 9541
       },
       {
         "path": "packages/shared/src/animationSequenceContracts.test.ts",
@@ -8163,12 +8163,12 @@
         "size": 710
       }
     ],
-    "digest": "1ea5143357991fe6200dbc4d7cae94ecee1e12ad883a253e472fc22d0b11792e"
+    "digest": "820f2be1bbfe8233fae12de2f57c02990695759eea1d282bfe4d48985a833e10"
   },
-  "source_digest": "5ac3294c8d4640bb6677a95f2ce3afa7769f7b0eafd8d37c7bfacf5bea089a4f",
+  "source_digest": "b9ad2ce3478508aec9863569ed92abe7559e4dd921c2a054d9be15c6c10ece7c",
   "artifact_hashes": {
-    "codemap.json": "8730c3c1d063fb8546a8dd956b300cff2f18600a28aff18eda49b7d70bd4579b",
-    "codemap.md": "93320875af945dc62ee632c1c4f587baf01b44a822e52378b808b8b1645602ef",
-    "codemap.html": "ce6cd3a5ef9dc4650add28a7bcb8094282ea865db936b303b3ebf4a7f4bd6e11"
+    "codemap.json": "c5778a136ae6608e25bee97eea81132482369b805ebd67fec878b7da63f589fe",
+    "codemap.md": "fb8083a9fccd97b507a90911ae4217120511829e6dfc822d031b6cb5356c2bad",
+    "codemap.html": "13a23bd76cc26d7e3b56a14f96ebc15af36d308880f102c20bba8078b34621fe"
   }
 }

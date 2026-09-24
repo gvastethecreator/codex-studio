@@ -1,7 +1,7 @@
 # Code map: codex-studio
 
-Generated: 2026-09-24T05:21:51Z | Commit: `a0b16133f8aa` | Schema: 2
-Generation: `4d22ed45c30b610b1b111c94319a1872c8d2a9781c86ee395368ef24acfb9fb3`
+Generated: 2026-09-24T05:39:40Z | Commit: `be459c0998a0` | Schema: 2
+Generation: `ead39bad44a5b1b9548949dcf9606d2b06c803737b35f084c3c89b39e5359106`
 Scope: . | Inventory: working-tree
 Nodes: 1228 | Edges: 6145 | Flows: 5
 
