@@ -19,6 +19,39 @@ const READY_GROK_RUNTIME = {
 };
 
 describe('providerCapabilities', () => {
+  it('projects execution from the supplied preflight rather than rereading credentials', () => {
+    const report = readProviderCapabilities(
+      { defaultProviderId: 'google' },
+      {},
+      { canRunJobs: false },
+      READY_GROK_RUNTIME,
+      undefined,
+      undefined,
+      [
+        {
+          providerId: 'google',
+          runtimeKind: 'hosted_api',
+          secretState: 'configured',
+          secretSource: 'fixture',
+          subscriptionAuthReady: true,
+          localRuntimeState: 'not_required',
+          localRuntimeSource: null,
+          canAttemptExecution: true,
+          diagnostics: [],
+        },
+      ],
+    );
+    expect(report.providers.find((provider) => provider.providerId === 'google')?.canExecute).toBe(
+      true,
+    );
+    expect(report.providers.find((provider) => provider.providerId === 'google')?.detail).toContain(
+      'Google OAuth is connected',
+    );
+    expect(report.providers.find((provider) => provider.providerId === 'codex')?.canExecute).toBe(
+      false,
+    );
+  });
+
   it('reports configured provider state without returning secret values', () => {
     const report = readProviderCapabilities(
       { defaultProviderId: 'google' },

@@ -9,7 +9,10 @@ import type { GrokRuntimeDoctorReport } from './grokRuntimeDoctor';
 import type { AntigravityRuntimeDoctorReport } from './antigravityRuntimeDoctor';
 import type { EditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import type { GenerationProviderId } from '../../../packages/shared/src/generationContracts';
-import { createProviderReadinessMaps } from './providers/runtimeConfig';
+import {
+  createProviderReadinessMaps,
+  createProviderReadinessMapsFromPreflights,
+} from './providers/runtimeConfig';
 
 export interface ProviderExecutionBlocker {
   [key: string]: unknown;
@@ -28,12 +31,15 @@ export function readProviderCapabilities(
   grokRuntime?: GrokRuntimeDoctorReport,
   subscriptionReady?: { codexHttpReady?: boolean; grokHttpReady?: boolean },
   antigravityRuntime?: AntigravityRuntimeDoctorReport,
+  preflights?: readonly GenerationProviderRuntimePreflight[],
 ): GenerationProviderCapabilitiesResponse {
-  const readiness = createProviderReadinessMaps(env, grokRuntime, {
-    ...subscriptionReady,
-    antigravityRuntime,
-  });
-  readiness.localRuntimeConfigured.codex = codexRuntime?.canRunJobs ?? true;
+  const readiness = preflights
+    ? createProviderReadinessMapsFromPreflights(preflights)
+    : createProviderReadinessMaps(env, grokRuntime, {
+        ...subscriptionReady,
+        antigravityRuntime,
+      });
+  if (!preflights) readiness.localRuntimeConfigured.codex = codexRuntime?.canRunJobs ?? true;
 
   return createGenerationProviderCapabilities({
     settings,

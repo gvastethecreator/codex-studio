@@ -9,6 +9,8 @@ import type {
   LocalCodexSessionResponse,
 } from '../../../packages/shared/src';
 import type { StudioCatalogStore } from './catalogStore';
+import { readAntigravityRuntimeDoctor } from './antigravityRuntimeDoctor';
+import { readGrokRuntimeDoctor } from './grokRuntimeDoctor';
 import {
   createStudioApp,
   type StudioAssetStore,
@@ -569,6 +571,9 @@ describe('createStudioApp', () => {
       },
     });
 
+    const grokReadsBeforeJob = vi.mocked(readGrokRuntimeDoctor).mock.calls.length;
+    const antigravityReadsBeforeJob = vi.mocked(readAntigravityRuntimeDoctor).mock.calls.length;
+
     const response = await studio.app.request('/api/jobs', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -583,6 +588,10 @@ describe('createStudioApp', () => {
     });
     expect(createJob).not.toHaveBeenCalled();
     expect(worker.enqueueJob).not.toHaveBeenCalled();
+    expect(vi.mocked(readGrokRuntimeDoctor).mock.calls.length - grokReadsBeforeJob).toBe(1);
+    expect(
+      vi.mocked(readAntigravityRuntimeDoctor).mock.calls.length - antigravityReadsBeforeJob,
+    ).toBe(1);
   });
 
   it('surfaces runtime start failures through the composition seam', async () => {

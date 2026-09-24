@@ -73,10 +73,7 @@ import {
 } from './libraryAssetVariants';
 import { getProviderExecutionBlocker, readProviderCapabilities } from './providerCapabilities';
 import { resolveBootstrapProviderExecutionOptions } from './providers/providerExecutionDefaults';
-import {
-  getGenerationProviderRuntimePreflight,
-  readGenerationProviderRuntimePreflights,
-} from './providers/runtimeConfig';
+import { readGenerationProviderRuntimePreflights } from './providers/runtimeConfig';
 import { createOutputSourceRoutes } from './outputSourceRoutes';
 import { createProviderRoutes } from './providerRoutes';
 import { createSettingsRoutes } from './settingsRoutes';
@@ -387,29 +384,24 @@ export async function createStudioApp(
           providerId === 'codex'
             ? (await readiness.refresh({ reason: 'passive' })).codexRuntime
             : readiness.readSnapshot().codexRuntime;
+        const evaluatedCodexRuntime = codexRuntime ?? readCodexRuntimeDoctorFn();
+        const grokRuntime = readGrokRuntimeDoctorFn();
+        const antigravityRuntime = readAntigravityRuntimeDoctorFn();
+        const runtimePreflights = readGenerationProviderRuntimePreflights(
+          process.env,
+          evaluatedCodexRuntime,
+          grokRuntime,
+          antigravityRuntime,
+        );
         const capabilityReport = readProviderCapabilities(
           readEditableStudioSettings(settingsStorage),
           process.env,
-          codexRuntime ?? undefined,
-          readGrokRuntimeDoctorFn(),
+          evaluatedCodexRuntime,
+          grokRuntime,
           undefined,
-          readAntigravityRuntimeDoctorFn(),
+          antigravityRuntime,
+          runtimePreflights,
         );
-        const runtimePreflights =
-          providerId === 'codex' && codexRuntime
-            ? readGenerationProviderRuntimePreflights(
-                process.env,
-                codexRuntime,
-                readGrokRuntimeDoctorFn(),
-                readAntigravityRuntimeDoctorFn(),
-              )
-            : [
-                getGenerationProviderRuntimePreflight(
-                  providerId,
-                  process.env,
-                  readGrokRuntimeDoctorFn(),
-                ),
-              ].filter((preflight) => preflight !== null);
         return getProviderExecutionBlocker(capabilityReport, providerId, runtimePreflights);
       },
       isReferenceProcessingError: (error): error is ReferenceProcessingError =>

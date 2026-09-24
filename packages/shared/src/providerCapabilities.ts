@@ -35,6 +35,8 @@ export interface GenerationProviderRuntimePreflight {
   availableRuntimeKinds?: ProviderRuntimeKind[];
   secretState: ProviderSecretState;
   secretSource: string | null;
+  /** Captured subscription route readiness, even when another secret source takes priority. */
+  subscriptionAuthReady?: boolean;
   localRuntimeState: ProviderLocalRuntimeState;
   localRuntimeSource: string | null;
   canAttemptExecution: boolean;

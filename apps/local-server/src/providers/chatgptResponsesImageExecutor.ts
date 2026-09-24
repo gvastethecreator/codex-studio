@@ -24,6 +24,7 @@ import {
 import { SubscriptionHttpError } from './subscriptionHttpError';
 import { ProviderExecutionUncertainError } from '../workerErrors';
 import { resolveCodexExecutionPolicy } from '../../../../packages/shared/src/codexExecutionContract';
+import { consumeSseJson } from './subscriptionSse';
 
 type ReadLocalFile = (path: string) => Uint8Array;
 
@@ -85,44 +86,6 @@ function extractImageCandidates(value: unknown): { final: string | null; partial
   };
   walk(value);
   return { final: finalB64, partial: partialB64 };
-}
-
-function parseSseJson(raw: string): unknown[] {
-  const events: unknown[] = [];
-  let eventName: string | null = null;
-  const dataLines: string[] = [];
-  const flush = () => {
-    if (dataLines.length === 0) {
-      eventName = null;
-      return;
-    }
-    const text = dataLines.join('\n').trim();
-    dataLines.length = 0;
-    const name = eventName;
-    eventName = null;
-    if (!text || text === '[DONE]') return;
-    try {
-      const payload = JSON.parse(text) as unknown;
-      if (isRecord(payload) && name && !('type' in payload)) payload.type = name;
-      events.push(payload);
-    } catch {
-      // Ignore malformed SSE frames.
-    }
-  };
-  for (const line of raw.split(/\r?\n/)) {
-    if (line === '') {
-      flush();
-      continue;
-    }
-    if (line.startsWith(':')) continue;
-    if (line.startsWith('event:')) {
-      eventName = line.slice('event:'.length).trim();
-    } else if (line.startsWith('data:')) {
-      dataLines.push(line.slice('data:'.length).trimStart());
-    }
-  }
-  flush();
-  return events;
 }
 
 function sseFailureMessage(event: Record<string, unknown>, secrets: readonly string[]) {
@@ -402,47 +365,63 @@ export function createChatgptResponsesImageExecutor({
       );
     }
 
-    let raw = '';
-    try {
-      raw = await readResponseTextLimited(response, 32 * 1024 * 1024);
-    } catch {
-      throw new ProviderExecutionUncertainError(
-        'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
-      );
-    }
-    if (job.signal?.aborted) {
-      throw new ProviderExecutionUncertainError(
-        'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
-      );
-    }
     const retryAfterSeconds = readRetryAfter(response.headers.get('retry-after'), now());
-    if (response.status >= 500) {
-      const failure = classifyCodexHttpFailure(response.status, raw, [token], retryAfterSeconds);
-      throw new ProviderExecutionUncertainError(
-        `ChatGPT HTTP returned ${response.status} after submission. Review this job before sending another request. ${failure.message}`,
-        { cause: failure },
-      );
-    }
     if (!response.ok) {
+      let raw: string;
+      try {
+        raw = await readResponseTextLimited(response, 32 * 1024 * 1024);
+      } catch {
+        throw new ProviderExecutionUncertainError(
+          'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
+        );
+      }
+      if (job.signal?.aborted) {
+        throw new ProviderExecutionUncertainError(
+          'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
+        );
+      }
       const failure = classifyCodexHttpFailure(response.status, raw, [token], retryAfterSeconds);
+      if (response.status >= 500) {
+        throw new ProviderExecutionUncertainError(
+          `ChatGPT HTTP returned ${response.status} after submission. Review this job before sending another request. ${failure.message}`,
+          { cause: failure },
+        );
+      }
       if (response.status === 401) invalidateAccessToken(failure.message);
       job.checkpointRemoteExecution({ providerId, phase: 'failed', startedAt });
       throw failure;
     }
 
-    const events = parseSseJson(raw);
-    for (const event of events) {
-      if (isFailedSseEvent(event)) {
-        job.checkpointRemoteExecution({ providerId, phase: 'failed', startedAt });
-        const failure = classifySseFailure(event, [token], retryAfterSeconds);
-        if (failure.code === 'invalid_grant') invalidateAccessToken(failure.message);
-        throw failure;
+    let finalB64: string | null = null;
+    let failedEvent: Record<string, unknown> | null = null;
+    try {
+      if (!response.body) throw new Error('ChatGPT HTTP response has no event stream.');
+      await consumeSseJson(response.body, (event) => {
+        if (isFailedSseEvent(event)) {
+          failedEvent = event;
+          return;
+        }
+        if (failedEvent) return;
+        const found = extractImageCandidates(event);
+        if (found.final) finalB64 = found.final;
+      });
+    } catch {
+      if (!failedEvent) {
+        throw new ProviderExecutionUncertainError(
+          'ChatGPT HTTP response was interrupted. The provider may still have generated an image. Review this job before sending another request.',
+        );
       }
     }
-    let finalB64: string | null = null;
-    for (const event of events) {
-      const found = extractImageCandidates(event);
-      if (found.final) finalB64 = found.final;
+    if (job.signal?.aborted && !failedEvent) {
+      throw new ProviderExecutionUncertainError(
+        'Local observation stopped after HTTP submission. Remote cancellation is not confirmed.',
+      );
+    }
+    if (failedEvent) {
+      job.checkpointRemoteExecution({ providerId, phase: 'failed', startedAt });
+      const failure = classifySseFailure(failedEvent, [token], retryAfterSeconds);
+      if (failure.code === 'invalid_grant') invalidateAccessToken(failure.message);
+      throw failure;
     }
     if (!finalB64) {
       throw new ProviderExecutionUncertainError(

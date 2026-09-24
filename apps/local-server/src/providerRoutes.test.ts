@@ -64,6 +64,30 @@ function createAntigravityRuntimeReport(): AntigravityRuntimeDoctorReport {
 }
 
 describe('providerRoutes', () => {
+  it('uses one doctor snapshot per capability response', async () => {
+    let codexReads = 0;
+    let grokReads = 0;
+    let antigravityReads = 0;
+    const routes = createProviderRoutes({
+      readSettings: () => createDefaultEditableStudioSettings(),
+      readCodexRuntimeDoctor: () => {
+        codexReads += 1;
+        return createCodexRuntimeReport();
+      },
+      readGrokRuntimeDoctor: () => {
+        grokReads += 1;
+        return createGrokRuntimeReport();
+      },
+      readAntigravityRuntimeDoctor: () => {
+        antigravityReads += 1;
+        return createAntigravityRuntimeReport();
+      },
+    });
+    const response = await routes.request('/');
+    expect(response.status).toBe(200);
+    expect([codexReads, grokReads, antigravityReads]).toEqual([1, 1, 1]);
+  });
+
   it('returns provider capabilities from Studio Settings', async () => {
     const routes = createProviderRoutes({
       readSettings: () => createDefaultEditableStudioSettings(),

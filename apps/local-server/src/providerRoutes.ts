@@ -24,18 +24,28 @@ export function createProviderRoutes({
 }: ProviderRoutesDependencies) {
   const routes = new Hono();
 
-  routes.get('/', (c) =>
-    c.json(
+  routes.get('/', (c) => {
+    const codexRuntime = readCodexRuntimeDoctorFn();
+    const grokRuntime = readGrokRuntimeDoctorFn();
+    const antigravityRuntime = readAntigravityRuntimeDoctorFn();
+    const preflights = readGenerationProviderRuntimePreflights(
+      process.env,
+      codexRuntime,
+      grokRuntime,
+      antigravityRuntime,
+    );
+    return c.json(
       readProviderCapabilities(
         readSettings(),
         process.env,
-        readCodexRuntimeDoctorFn(),
-        readGrokRuntimeDoctorFn(),
+        codexRuntime,
+        grokRuntime,
         undefined,
-        readAntigravityRuntimeDoctorFn(),
+        antigravityRuntime,
+        preflights,
       ),
-    ),
-  );
+    );
+  });
 
   routes.get('/preflight', (c) => {
     return c.json({

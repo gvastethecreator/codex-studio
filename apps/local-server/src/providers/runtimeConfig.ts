@@ -202,6 +202,7 @@ export function createGoogleRuntimePreflight(
     runtimeKind: 'hosted_api',
     secretState: credentialReady ? 'configured' : 'missing',
     secretSource: apiKeySource ?? (oauthReady ? 'Studio Google OAuth' : null),
+    subscriptionAuthReady: oauthReady,
     localRuntimeState: 'not_required',
     localRuntimeSource: null,
     canAttemptExecution: credentialReady,
@@ -239,6 +240,7 @@ export function createChatgptRuntimePreflight(
     availableRuntimeKinds: httpReady ? ['subscription_http'] : [],
     secretState: httpReady ? 'configured' : 'missing',
     secretSource: null,
+    subscriptionAuthReady: httpReady,
     localRuntimeState: 'not_required',
     localRuntimeSource: null,
     canAttemptExecution: httpReady,
@@ -275,6 +277,7 @@ export function createGrokRuntimePreflight(
     runtimeKind: httpReady ? 'subscription_http' : 'agent_cli',
     secretState: 'not_required',
     secretSource: null,
+    subscriptionAuthReady: httpReady,
     localRuntimeState: cliReady ? 'configured' : unavailable ? 'missing' : 'invalid',
     localRuntimeSource: grokRuntime.selectedExecutable,
     canAttemptExecution: httpReady || cliReady,
@@ -383,6 +386,43 @@ export function getGenerationProviderRuntimePreflight(
 ): GenerationProviderRuntimePreflight | null {
   if (providerId === 'dry_run') return createDryRunRuntimePreflight();
   return getExternalProviderRuntimePreflight(providerId, env, grokRuntime);
+}
+
+export function createProviderReadinessMapsFromPreflights(
+  preflights: readonly GenerationProviderRuntimePreflight[],
+) {
+  const secretConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
+  const localRuntimeConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
+  const subscriptionAuthConfigured: Partial<Record<GenerationProviderId, boolean>> = {};
+  const subscriptionAuthState: Partial<
+    Record<GenerationProviderId, ProviderSubscriptionAuthState>
+  > = {
+    google: readStoredSubscriptionState('google'),
+    grok: readStoredSubscriptionState('xai'),
+    chatgpt: readStoredSubscriptionState('codex'),
+    codex: 'not_applicable',
+    antigravity: 'not_applicable',
+    fal: 'not_applicable',
+    comfy: 'not_applicable',
+    dry_run: 'not_applicable',
+  };
+
+  for (const preflight of preflights) {
+    secretConfigured[preflight.providerId] = preflight.secretState !== 'missing';
+    localRuntimeConfigured[preflight.providerId] =
+      preflight.localRuntimeState === 'not_required' || preflight.canAttemptExecution;
+  }
+  const byId = new Map(preflights.map((preflight) => [preflight.providerId, preflight]));
+  subscriptionAuthConfigured.chatgpt = byId.get('chatgpt')?.subscriptionAuthReady ?? false;
+  subscriptionAuthConfigured.grok = byId.get('grok')?.subscriptionAuthReady ?? false;
+  subscriptionAuthConfigured.google = byId.get('google')?.subscriptionAuthReady ?? false;
+
+  return {
+    secretConfigured,
+    localRuntimeConfigured,
+    subscriptionAuthConfigured,
+    subscriptionAuthState,
+  };
 }
 
 export function createProviderReadinessMaps(

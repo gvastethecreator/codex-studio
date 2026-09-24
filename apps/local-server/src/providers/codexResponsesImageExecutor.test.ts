@@ -39,14 +39,23 @@ describe('ChatGPT responses image executor and captured Codex HTTP jobs', () => 
           string,
           unknown
         >;
+        const raw = [
+          'event: response.output_item.done',
+          `data: {"type":"image_generation_call","partial_image_b64":"partial","result":"${PNG_B64}"}`,
+          '',
+          'data: [DONE]',
+          '',
+        ].join('\n');
         return new Response(
-          [
-            'event: response.output_item.done',
-            `data: {"type":"image_generation_call","partial_image_b64":"partial","result":"${PNG_B64}"}`,
-            '',
-            'data: [DONE]',
-            '',
-          ].join('\n'),
+          new ReadableStream<Uint8Array>({
+            start(controller) {
+              const bytes = new TextEncoder().encode(raw);
+              controller.enqueue(bytes.slice(0, 23));
+              controller.enqueue(bytes.slice(23, 57));
+              controller.enqueue(bytes.slice(57));
+              controller.close();
+            },
+          }),
           { headers: { 'content-type': 'text/event-stream' } },
         );
       },
