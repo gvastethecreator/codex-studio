@@ -290,31 +290,59 @@ async function readCheckFileWithRecovery(filePath: string, source: string) {
 }
 
 const searchIndexDir = path.join(rootDir, 'components/recipes/styleSearchIndexes.generated');
+const stagedSearchIndexDir = `${searchIndexDir}.stage-${checkRunId}`;
 const searchIndex = createStylePresetCatalogSearchIndexFromRuntimePacks(packs, {
   includeStyleText: false,
 });
-if (!checkMode) await mkdir(searchIndexDir, { recursive: true });
-for (const pack of searchIndex.packs) {
+const searchIndexFiles = searchIndex.packs.map((pack) => {
   const packIndex = {
     packs: [pack],
     presets: searchIndex.presets.filter((preset) => preset.packId === pack.id),
     totalPresetCount: pack.presetCount,
   };
-  const indexPath = path.join(searchIndexDir, `${pack.id}.json`);
-  if (checkMode) {
+  return { fileName: `${pack.id}.json`, source: `${JSON.stringify(packIndex, null, 2)}\n` };
+});
+if (checkMode) {
+  for (const { fileName, source } of searchIndexFiles) {
+    const indexPath = path.join(searchIndexDir, fileName);
     const saved = JSON.parse(await readFile(indexPath, 'utf8'));
-    if (JSON.stringify(saved) !== JSON.stringify(JSON.parse(JSON.stringify(packIndex))))
+    if (JSON.stringify(saved) !== JSON.stringify(JSON.parse(source)))
       throw new Error(
-        `Style search index ${pack.id} is stale. Run bun run styles:runtime -- --search-index-only.`,
+        `Style search index ${fileName} is stale. Run bun run styles:runtime -- --search-index-only.`,
       );
-  } else await writeFile(indexPath, `${JSON.stringify(packIndex, null, 2)}\n`, 'utf8');
-}
-if (!checkMode && !skipFormat) {
-  await formatGeneratedFiles(
-    searchIndex.packs.map((pack) => path.join(searchIndexDir, `${pack.id}.json`)),
-  );
+  }
+  const actualFiles = (await readdir(searchIndexDir)).filter((name) => name.endsWith('.json'));
+  if (actualFiles.some((name) => !searchIndexFiles.some((file) => file.fileName === name))) {
+    throw new Error('Style search indexes contain stale files. Run bun run styles:runtime.');
+  }
+} else {
+  try {
+    await mkdir(stagedSearchIndexDir, { recursive: true });
+    await Promise.all(
+      searchIndexFiles.map(({ fileName, source }) =>
+        writeFile(path.join(stagedSearchIndexDir, fileName), source, 'utf8'),
+      ),
+    );
+    if (!skipFormat) {
+      await formatGeneratedFiles(
+        searchIndexFiles.map(({ fileName }) => path.join(stagedSearchIndexDir, fileName)),
+      );
+    }
+  } catch (error) {
+    await rm(stagedSearchIndexDir, { recursive: true, force: true });
+    throw error;
+  }
 }
 if (process.argv.includes('--search-index-only')) {
+  if (!checkMode) {
+    try {
+      await publishPreparedProjections([
+        { target: searchIndexDir, staged: stagedSearchIndexDir, kind: 'directory' },
+      ]);
+    } finally {
+      await rm(stagedSearchIndexDir, { recursive: true, force: true });
+    }
+  }
   console.log(`[styles:runtime] search index: ${searchIndex.totalPresetCount} presets`);
   process.exit(0);
 }
@@ -485,6 +513,7 @@ try {
     ]);
   }
   await publishPreparedProjections([
+    { target: searchIndexDir, staged: stagedSearchIndexDir, kind: 'directory' },
     { target: packOutputDir, staged: stagedPackOutputDir, kind: 'directory' },
     { target: outputPath, staged: stagedOutputPath, kind: 'file' },
     {
@@ -496,6 +525,7 @@ try {
 } finally {
   await Promise.all([
     rm(stagedPackOutputDir, { recursive: true, force: true }),
+    rm(stagedSearchIndexDir, { recursive: true, force: true }),
     rm(stagedOutputPath, { force: true }),
     rm(stagedStaleDefaultImagesOutputPath, { force: true }),
   ]);

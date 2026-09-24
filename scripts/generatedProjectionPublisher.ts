@@ -1,5 +1,5 @@
 import { randomUUID } from 'node:crypto';
-import { access, copyFile, cp, mkdir, readdir, rename, rm } from 'node:fs/promises';
+import { access, copyFile, cp, lstat, mkdir, readdir, rename, rm } from 'node:fs/promises';
 import path from 'node:path';
 
 export interface PreparedProjection {
@@ -43,6 +43,16 @@ async function listFiles(root: string, relative = ''): Promise<string[]> {
     else throw new Error(`Generated projection contains unsupported entry: ${child}`);
   }
   return files;
+}
+
+async function verifyStagedProjections(items: readonly PreparedProjection[]) {
+  for (const item of items) {
+    const staged = await lstat(item.staged);
+    if (item.kind === 'file' ? !staged.isFile() : !staged.isDirectory()) {
+      throw new Error(`Generated projection has the wrong staged kind: ${item.staged}`);
+    }
+    if (item.kind === 'directory') await listFiles(item.staged);
+  }
 }
 
 async function replaceFileFrom(source: string, target: string, token: string) {
@@ -99,6 +109,7 @@ async function restoreItem(item: PreparedProjection, backup: string | null, toke
 
 export async function publishPreparedProjections(items: readonly PreparedProjection[]) {
   validateProjectionPaths(items);
+  await verifyStagedProjections(items);
   const token = `${process.pid}-${randomUUID()}`;
   const backups: Array<{ item: PreparedProjection; backup: string | null }> = [];
   try {
