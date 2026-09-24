@@ -3,7 +3,7 @@
     {
       "id": "pack_19",
       "name": "Ink Structures",
-      "presetCount": 4
+      "presetCount": 10
     }
   ],
   "presets": [
@@ -54,7 +54,79 @@
       "tags": ["ink-structures", "ink-structures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp19-004 pooled ink 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-005",
+      "name": "Weighted Stipple",
+      "ref": "pack_19/SP19-005.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-005 weighted stipple 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-006",
+      "name": "Blot-Lift Ink",
+      "ref": "pack_19/SP19-006.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-006 blot-lift ink 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-007",
+      "name": "Chisel-Nib Fields",
+      "ref": "pack_19/SP19-007.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-007 chisel-nib fields 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-008",
+      "name": "Loaded Sweep",
+      "ref": "pack_19/SP19-008.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-008 loaded sweep 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-009",
+      "name": "Rake-Pulled Ink",
+      "ref": "pack_19/SP19-009.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-009 rake-pulled ink 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-010",
+      "name": "Aerosol Tone",
+      "ref": "pack_19/SP19-010.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "tags": ["ink-structures", "ink-structures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-010 aerosol tone 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
     }
   ],
-  "totalPresetCount": 4
+  "totalPresetCount": 10
 }

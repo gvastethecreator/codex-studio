@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP21-008
+packId: pack_21
+name: Granulating Wash
+category: 1. Paper & Pigment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - watercolor
+  - granulation
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Watercolor illustration whose value passages form through mineral pigment settling into the paper
+    tooth, leaving naturally separated grains within otherwise transparent washes.
+  subject_treatment: >-
+    Preserve the requested identity and proportions. Use grain density to describe existing planes
+    while keeping essential silhouettes and small defining details readable.
+  color_and_tone: >-
+    Follow the requested palette with transparent pigments. Build value through the concentration and
+    spacing of settled granules, keeping paper lights open and avoiding opaque muddy mixtures.
+  lighting_and_shadow: >-
+    Respect the requested light direction. Concentrate pigment on existing shadow planes and let
+    exposed support carry the brightest values; do not imply a new light source.
+  texture_and_material: >-
+    Show particles collecting in the paper's shallow valleys and loosening across damp passages.
+    Create this grain by pigment behavior rather than resist marks, stamped dots or a texture overlay.
+  camera_and_composition: >-
+    Maintain the requested framing, viewpoint and arrangement. Balance granular areas with calm washes
+    inside the existing composition so the subject remains the focal structure.
+  atmosphere_and_mood: >-
+    Retain the requested mood through wash openness and grain density; mineral granulation does not
+    prescribe a dreamy landscape or any other setting.
+  rendering_and_quality: >-
+    Keep individual granules subordinate to the form and preserve clean focal boundaries. Avoid
+    uniform speckling, cauliflower backruns and lost edges across the whole subject.
+avoidRules:
+  - uniform speckle overlay on dry areas
+  - opaque muddy pigment mixtures
+  - uncontrolled blooms or lost focal edges
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP21-008.webp
+attributes:
+  negativePrompt: uniform speckle overlay on dry areas, opaque muddy pigment mixtures, uncontrolled blooms or lost focal edges
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: granulating-watercolor
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: transparent-wash-values-from-settled-mineral-pigment
+    avoidRules:
+      - text: uniform speckle overlay on dry areas
+        field: texture_and_material
+      - text: opaque muddy pigment mixtures
+        field: color_and_tone
+      - text: uncontrolled blooms or lost focal edges
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - watercolor
+    - granulation
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -4,8 +4,9 @@ name: Medieval Fantasy & Dungeon Zine
 description: >-
   Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror,
   weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates,
-  rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, and
-  isometric game aesthetics.
+  rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems,
+  isometric game aesthetics, analog zine processes, pulp fantasy painting, and transferable
+  drawing-media studies.
 categories:
   - id: dark-fantasy-and-gothic-courts
     name: 1. Dark Fantasy & Gothic Courts
@@ -95,6 +96,25 @@ categories:
       - pack_17/SP17-070.yaml
       - pack_17/SP17-071.yaml
       - pack_17/SP17-072.yaml
+  - id: dungeon-zine-assemblage-and-stampwork
+    name: 6. Dungeon Zine Assemblage & Stampwork
+    presetRefs:
+      - pack_17/SP17-074.yaml
+      - pack_17/SP17-075.yaml
+      - pack_17/SP17-076.yaml
+  - id: pulp-fantasy-painting
+    name: 7. Pulp Fantasy Painting
+    presetRefs:
+      - pack_17/SP17-077.yaml
+      - pack_17/SP17-078.yaml
+  - id: medieval-fantasy-drawing-media
+    name: 8. Medieval Fantasy Drawing Media
+    presetRefs:
+      - pack_17/SP17-079.yaml
+      - pack_17/SP17-080.yaml
+      - pack_17/SP17-081.yaml
+      - pack_17/SP17-082.yaml
+      - pack_17/SP17-083.yaml
 presetRefs:
   - pack_17/SP17-001.yaml
   - pack_17/SP17-073.yaml
@@ -169,3 +189,13 @@ presetRefs:
   - pack_17/SP17-070.yaml
   - pack_17/SP17-071.yaml
   - pack_17/SP17-072.yaml
+  - pack_17/SP17-074.yaml
+  - pack_17/SP17-075.yaml
+  - pack_17/SP17-076.yaml
+  - pack_17/SP17-077.yaml
+  - pack_17/SP17-078.yaml
+  - pack_17/SP17-079.yaml
+  - pack_17/SP17-080.yaml
+  - pack_17/SP17-081.yaml
+  - pack_17/SP17-082.yaml
+  - pack_17/SP17-083.yaml

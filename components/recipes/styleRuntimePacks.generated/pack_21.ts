@@ -12,7 +12,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_21',
     name: 'Paper & Pigment',
     description:
-      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; representative preview images are available; cross-subject visual evaluation remains pending.',
+      'Portable paper and pigment studies defined by transferable material and mark-making mechanics. New entries have no default preview image; cross-subject visual evaluation remains pending.',
     presets: categoryPresets.flat(),
   };
 }

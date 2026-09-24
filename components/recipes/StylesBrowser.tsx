@@ -127,9 +127,10 @@ import type {
   StylePresetSourceProvenance,
   StylePresetVisualState,
 } from './StylePresetCardSurface';
+import { buildTcgRecipeArtPrompt } from './styles/tcgComponentModel';
 
-const TcgPendingCatalog = React.lazy(() =>
-  import('./styles/TcgPendingCatalog').then((module) => ({ default: module.TcgPendingCatalog })),
+const TcgComponentStudio = React.lazy(() =>
+  import('./styles/TcgComponentStudio').then((module) => ({ default: module.TcgComponentStudio })),
 );
 
 export interface StylesBrowserProps {
@@ -898,7 +899,21 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
   intentionalStylesV1 = false,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const [tcgCatalogView, setTcgCatalogView] = useState<'visual' | 'pending'>('visual');
+  const [tcgCatalogView, setTcgCatalogView] = useState<'visual' | 'components'>('visual');
+  const generateTcgRecipeArt = (recipeId: string, subjectPrompt: string) => {
+    onGenerate(
+      buildTcgRecipeArtPrompt(recipeId, subjectPrompt),
+      {
+        recipeId: null,
+        recipeParams: null,
+        recipeContext: '',
+        attachments: [],
+        aspectRatio: '3:4',
+        batchCount: 1,
+      },
+      { preventModal: true },
+    );
+  };
   const referenceImages = config.attachments.slice(0, MAX_STYLE_REFERENCE_IMAGES);
   const referenceSlotsRemaining = Math.max(0, MAX_STYLE_REFERENCE_IMAGES - referenceImages.length);
   const grokGenerateBlock = resolveGrokImagineGenerateBlock({
@@ -2622,16 +2637,21 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                                   </button>
                                   <button
                                     type="button"
-                                    onClick={() => setTcgCatalogView('pending')}
-                                    aria-pressed={tcgCatalogView === 'pending'}
+                                    onClick={() => setTcgCatalogView('components')}
+                                    aria-pressed={tcgCatalogView === 'components'}
                                     className="rounded-[var(--wb-radius)] px-3 py-1.5 text-xs font-semibold text-[color:var(--wb-ink)] transition-colors aria-pressed:bg-[color-mix(in_srgb,var(--wb-ink)_12%,transparent)]"
                                   >
-                                    Pending components · 42
+                                    Components · 42
                                   </button>
                                 </div>
                               ) : null}
-                              {currentPackId === 'pack_22' && tcgCatalogView === 'pending' ? (
-                                <TcgPendingCatalog query={searchQuery} />
+                              {currentPackId === 'pack_22' && tcgCatalogView === 'components' ? (
+                                <TcgComponentStudio
+                                  query={searchQuery}
+                                  images={images}
+                                  onGenerateRecipe={generateTcgRecipeArt}
+                                  isGenerating={isGenerating}
+                                />
                               ) : (
                                 <>
                                   {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}

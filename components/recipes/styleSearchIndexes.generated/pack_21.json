@@ -3,7 +3,7 @@
     {
       "id": "pack_21",
       "name": "Paper & Pigment",
-      "presetCount": 4
+      "presetCount": 10
     }
   ],
   "presets": [
@@ -54,7 +54,79 @@
       "tags": ["paper-and-pigment", "paper-and-pigment"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp21-004 pressed relief 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-005",
+      "name": "Toned Ground",
+      "ref": "pack_21/SP21-005.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-005 toned ground 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-006",
+      "name": "Pastel Tooth",
+      "ref": "pack_21/SP21-006.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-006 pastel tooth 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-007",
+      "name": "Sgraffito Reveal",
+      "ref": "pack_21/SP21-007.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-007 sgraffito reveal 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-008",
+      "name": "Granulating Wash",
+      "ref": "pack_21/SP21-008.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-008 granulating wash 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-009",
+      "name": "Optical Glaze",
+      "ref": "pack_21/SP21-009.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-009 optical glaze 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-010",
+      "name": "Palette-Knife Impasto",
+      "ref": "pack_21/SP21-010.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "tags": ["paper-and-pigment", "paper-and-pigment"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-010 palette-knife impasto 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
     }
   ],
-  "totalPresetCount": 4
+  "totalPresetCount": 10
 }

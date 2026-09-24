@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP17-082
+packId: pack_17
+name: Conté Crayon Fantasy Drawing
+category: 8. Medieval Fantasy Drawing Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Conté crayon drawing with compressed, velvety marks, firm contour strokes, and rubbed planes
+    that shift between crisp line and broad pigment.
+  subject_treatment: >-
+    Retain the requested subject, pose, identity, count, and identifying detail. Use contour and
+    directional crayon strokes to clarify existing structure without changing anatomy or costume.
+  color_and_tone: >-
+    Preserve requested color relationships. When unspecified, keep to a restrained earth-red,
+    umber, charcoal, and chalk range, using the lightest tone only for selected accents.
+  lighting_and_shadow: >-
+    Respect the requested light direction. Use overlapping crayon strokes and rubbed dark planes
+    to model existing forms without adding dramatic spotlights or glowing edges.
+  texture_and_material: >-
+    Show compressed pigment grain and occasional blunt stroke ends on the drawing surface. Keep the
+    crayon texture from converting skin, cloth, stone, or metal into wax.
+  camera_and_composition: >-
+    Preserve viewpoint, crop, scale, and spatial order. Let stroke direction support the given pose
+    and structure without imposing a figure-study sheet or border.
+  atmosphere_and_mood: >-
+    Use weight, contour pressure, and tonal restraint to express the requested mood. Crayon does not
+    require a historical costume, devotional subject, or aged paper.
+  rendering_and_quality: >-
+    Keep strokes purposeful and varied in width, with open mids and stable silhouettes. Avoid
+    uniform scribble, charcoal haze, and waxy digital shine.
+avoidRules:
+  - forced costume, devotional motif, or aged-paper setting
+  - crayon wax appearance on the depicted materials
+  - uniform scribbling or indiscriminate smudge
+  - forced figure-study layout or frame
+  - waxy digital shine
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-082.webp
+attributes:
+  negativePrompt: forced costume devotional motif or aged paper setting, crayon wax appearance on the depicted materials, uniform scribbling or indiscriminate smudge, forced figure study layout or frame, waxy digital shine
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: conté crayon drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: conté crayon drawing
+    avoidRules:
+      - text: forced costume, devotional motif, or aged-paper setting
+        field: global
+      - text: crayon wax appearance on the depicted materials
+        field: texture_and_material
+      - text: uniform scribbling or indiscriminate smudge
+        field: rendering_and_quality
+      - text: forced figure-study layout or frame
+        field: camera_and_composition
+      - text: waxy digital shine
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

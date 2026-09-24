@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP17-076
+packId: pack_17
+name: Hand-Stamped Dungeon Forms
+category: 6. Dungeon Zine Assemblage & Stampwork
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dungeon-zine-assemblage-and-stampwork
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Fantasy illustration with a hand-stamped print rhythm: compact ink shapes, uneven pressure,
+    incomplete impressions, and deliberate gaps across a mostly open ground.
+  subject_treatment: >-
+    Retain the requested subject, function, pose, count, and identity. Build its forms with varied
+    stamp-like marks that describe the existing contours; do not repeat a motif as a new creature or prop.
+  color_and_tone: >-
+    Honor requested colors and value relationships. When unspecified, use a narrow ink palette with
+    one restrained warm or acidic accent; let uneven ink coverage create secondary values.
+  lighting_and_shadow: >-
+    Preserve the stated light direction and group its shadows into sparse stamped masses. Let paper
+    show through naturally without adding a candle, spotlight, or other source.
+  texture_and_material: >-
+    Vary ink pickup and pressure at the printed mark edges. Keep impression texture on the image
+    surface and preserve the represented material rather than stamping damage onto it.
+  camera_and_composition: >-
+    Keep the requested viewpoint, crop, and placement. Let mark density support the existing focal
+    hierarchy without imposing a seal, border, repeated tile, or fixed card shape.
+  atmosphere_and_mood: >-
+    Use pauses, uneven repetition, and exposed ground to support the prompt's mood. The stamp process
+    does not imply a guild, heraldic emblem, occult rite, or dungeon narrative.
+  rendering_and_quality: >-
+    Make the stamp edges and pressure changes readable but restrained. Maintain clear silhouettes
+    and avoid uniform distress, muddy overlaps, or texture that replaces form description.
+avoidRules:
+  - unrequested heraldry, runes, or repeated symbols
+  - fixed seal, border, or tile pattern
+  - uniform stamp distress or ink splatter
+  - marks that obscure essential form or function
+  - readable text or logos
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-076.webp
+attributes:
+  negativePrompt: unrequested heraldry, runes, or repeated symbols, fixed seal border or tile pattern, uniform stamp distress or ink splatter, marks that obscure essential form or function, readable text or logos
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: hand-stamped ink illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: hand-stamped ink illustration
+    avoidRules:
+      - text: unrequested heraldry, runes, or repeated symbols
+        field: global
+      - text: fixed seal, border, or tile pattern
+        field: camera_and_composition
+      - text: uniform stamp distress or ink splatter
+        field: texture_and_material
+      - text: marks that obscure essential form or function
+        field: subject_treatment
+      - text: readable text or logos
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-assemblage-and-stampwork
+  categoryName: 6. Dungeon Zine Assemblage & Stampwork
+  tags:
+    - curation-v2
+    - dungeon-zine-assemblage-and-stampwork
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -3,7 +3,7 @@
     {
       "id": "pack_20",
       "name": "Print Registers",
-      "presetCount": 4
+      "presetCount": 10
     }
   ],
   "presets": [
@@ -54,7 +54,79 @@
       "tags": ["print-registers", "print-registers"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp20-004 engraved tone 1. print registers print registers pack_20 print registers print-registers print-registers print-registers"
+    },
+    {
+      "id": "SP20-005",
+      "name": "Crayon Lithograph",
+      "ref": "pack_20/SP20-005.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "tags": ["print-registers", "print-registers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-005 crayon lithograph 1. print registers print registers pack_20 print registers print-registers print-registers print-registers"
+    },
+    {
+      "id": "SP20-006",
+      "name": "Mezzotint Velvet",
+      "ref": "pack_20/SP20-006.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "tags": ["print-registers", "print-registers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-006 mezzotint velvet 1. print registers print registers pack_20 print registers print-registers print-registers print-registers"
+    },
+    {
+      "id": "SP20-007",
+      "name": "Monotype Wipe",
+      "ref": "pack_20/SP20-007.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "tags": ["print-registers", "print-registers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-007 monotype wipe 1. print registers print registers pack_20 print registers print-registers print-registers print-registers"
+    },
+    {
+      "id": "SP20-008",
+      "name": "Cyanotype Contact",
+      "ref": "pack_20/SP20-008.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "tags": ["print-registers", "print-registers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-008 cyanotype contact 1. print registers print registers pack_20 print registers print-registers print-registers print-registers"
+    },
+    {
+      "id": "SP20-009",
+      "name": "Collagraph Plate",
+      "ref": "pack_20/SP20-009.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "tags": ["print-registers", "print-registers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-009 collagraph plate 1. print registers print registers pack_20 print registers print-registers print-registers print-registers"
+    },
+    {
+      "id": "SP20-010",
+      "name": "Halftone Screen",
+      "ref": "pack_20/SP20-010.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "tags": ["print-registers", "print-registers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-010 halftone screen 1. print registers print registers pack_20 print registers print-registers print-registers print-registers"
     }
   ],
-  "totalPresetCount": 4
+  "totalPresetCount": 10
 }

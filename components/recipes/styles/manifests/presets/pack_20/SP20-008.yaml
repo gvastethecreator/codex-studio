@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP20-008
+packId: pack_20
+name: Cyanotype Contact
+category: 1. Print Registers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print
+  - cyanotype
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Photochemical contact-print illustration on iron-salt-sensitized support: exposed ground develops
+    Prussian blue while masked areas retain a pale reserve. Apply that exposure structure to the
+    requested image rather than adding incidental photograms.
+  subject_treatment: >-
+    Preserve the requested subject, pose, count and defining contours. Translate its tonal structure
+    into image-bearing exposure and protected paper values, rather than tinting each existing surface
+    blue or replacing the subject with other photogram silhouettes.
+  color_and_tone: >-
+    Use the characteristic cyanotype range of Prussian blue, intermediate blue and the pale support.
+    Treat this monochrome palette as part of the selected process and retain the requested value hierarchy.
+  lighting_and_shadow: >-
+    Keep the requested illumination legible in the exposure values. Do not add sunbeams, reverse
+    contours or imply a new light source to explain the print process.
+  texture_and_material: >-
+    Keep the exposed pigment field even with slight local exposure variation. The support remains a
+    print ground; do not turn the depicted materials into blue paper or fabric.
+  camera_and_composition: >-
+    Preserve the supplied viewpoint, framing and spatial relationships. Contact-print contrast may
+    simplify small values but must not crop, mirror or rearrange the subject.
+  atmosphere_and_mood: >-
+    Keep the requested mood. The cool monochrome exposure is a rendering choice and does not imply
+    archival age, botanicals or a laboratory setting.
+  rendering_and_quality: >-
+    Maintain distinct exposed and protected values with controlled edges and legible internal forms.
+    Avoid invented borders, captions or unrelated contact silhouettes.
+avoidRules:
+  - unrequested photogram objects or silhouettes
+  - non-cyanotype color palettes
+  - invented print borders or captions
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP20-008.webp
+attributes:
+  negativePrompt: unrequested photogram objects or silhouettes, non-cyanotype color palettes, invented print borders or captions
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: cyanotype-contact-print
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: iron-salt-contact-print
+      - field: color_and_tone
+        group: palette
+        value: prussian-blue-and-exposed-support
+    avoidRules:
+      - text: unrequested photogram objects or silhouettes
+        field: subject_treatment
+      - text: non-cyanotype color palettes
+        field: color_and_tone
+      - text: invented print borders or captions
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print
+    - cyanotype
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1972,6 +1972,476 @@
     "packId": "pack_17",
     "name": "Soot-Softened Planes"
   },
+  "SP17-074": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "torn-paper collage illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "torn-paper collage illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested medieval or occult props",
+        "field": "global"
+      },
+      {
+        "text": "fixed card frame or poster layout",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "blanket paper aging or damage to depicted materials",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "dense fibers or collage noise that obscures the subject",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "readable text or logos",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Torn-Paper Dungeon Assemblage"
+  },
+  "SP17-075": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "layered stencil-ink illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "layered stencil-ink illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested props, emblems, or occult marks",
+        "field": "global"
+      },
+      {
+        "text": "fixed flyer, badge, or title layout",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "broad airbrush gradients",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "overspray that hides silhouette or detail",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "distressed wear on the depicted material",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Three-Ink Stencil Bruise"
+  },
+  "SP17-076": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "hand-stamped ink illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "hand-stamped ink illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested heraldry, runes, or repeated symbols",
+        "field": "global"
+      },
+      {
+        "text": "fixed seal, border, or tile pattern",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "uniform stamp distress or ink splatter",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "marks that obscure essential form or function",
+        "field": "subject_treatment"
+      },
+      {
+        "text": "readable text or logos",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Hand-Stamped Dungeon Forms"
+  },
+  "SP17-077": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "airbrush-and-brush pulp illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "airbrush-and-brush pulp illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested fantasy props or action",
+        "field": "global"
+      },
+      {
+        "text": "fixed paperback-cover composition or title lettering",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "invented light sources or magical glow",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "chrome-like highlights on every material",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "plastic gradients or blurred contours",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Paperback Airbrush Fantasy"
+  },
+  "SP17-078": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "opaque drybrush pulp painting",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "opaque drybrush pulp painting"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested armor, weapons, monsters, or ruined settings",
+        "field": "global"
+      },
+      {
+        "text": "forced low angle or cover staging",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "uniform drybrush scratches across all surfaces",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "scumble that obscures identity or function",
+        "field": "subject_treatment"
+      },
+      {
+        "text": "fake canvas or paper damage",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Drybrush Pulp Illustration"
+  },
+  "SP17-079": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "silverpoint line drawing on toned ground",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "silverpoint line drawing on toned ground"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "forced metallic objects or reflective chrome",
+        "field": "subject_treatment"
+      },
+      {
+        "text": "unrequested manuscript symbols or annotations",
+        "field": "global"
+      },
+      {
+        "text": "broad charcoal smudging",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "dense cross-hatching that closes the forms",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "fixed frame or study-sheet layout",
+        "field": "camera_and_composition"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Silverpoint on Toned Ground"
+  },
+  "SP17-080": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "wax-resist and ink-wash drawing",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "wax-resist and ink-wash drawing"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "forced parchment or stained-page setting",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested symbols, diagrams, or lettering",
+        "field": "global"
+      },
+      {
+        "text": "resist lines that invent decoration or alter identity",
+        "field": "subject_treatment"
+      },
+      {
+        "text": "uniform wash blooms or paper speckle",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "muddy ink that closes important shapes",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Wax-Resist Ink Drawing"
+  },
+  "SP17-081": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "chalk drawing on dark ground",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "chalk drawing on dark ground"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "forced chalkboard, cave, or wall setting",
+        "field": "atmosphere_and_mood"
+      },
+      {
+        "text": "chalk texture applied to the depicted subject",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "unrequested spectral glow or figures",
+        "field": "global"
+      },
+      {
+        "text": "uniform powder noise or all-over smearing",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "changed palette when the prompt specifies color",
+        "field": "color_and_tone"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "White Chalk on Dark Stock"
+  },
+  "SP17-082": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "conté crayon drawing",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "conté crayon drawing"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "forced costume, devotional motif, or aged-paper setting",
+        "field": "global"
+      },
+      {
+        "text": "crayon wax appearance on the depicted materials",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "uniform scribbling or indiscriminate smudge",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "forced figure-study layout or frame",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "waxy digital shine",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Conté Crayon Fantasy Drawing"
+  },
+  "SP17-083": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "layered colored-pencil illustration",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "layered colored-pencil illustration"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested heraldry, runes, or narrative props",
+        "field": "global"
+      },
+      {
+        "text": "fixed frame, labels, or decorative corners",
+        "field": "camera_and_composition"
+      },
+      {
+        "text": "uniform scribble or all-over grain",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "waxy coating across every material",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "gradients that erase pencil structure",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_17",
+    "name": "Colored-Pencil Grit Fantasy"
+  },
   "SP19-001": {
     "schemaVersion": 1,
     "kind": "full_style",
@@ -2127,6 +2597,244 @@
     "presetVersion": 1,
     "packId": "pack_19",
     "name": "Pooled Ink"
+  },
+  "SP19-005": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "ink",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "ink"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform halftone screen",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "continuous outlines replacing the dot structure",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "random splatter fields",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Weighted Stipple"
+  },
+  "SP19-006": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "direct ink drawing",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "direct ink drawing with absorbent lift"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "plate-transfer or ghost impressions",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "uniform erasure of all detail",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "random distress overlay",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Blot-Lift Ink"
+  },
+  "SP19-007": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "ink marker",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "ink marker"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "fine engraved crosshatching",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "airbrushed gradients",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested lettering or signage",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Chisel-Nib Fields"
+  },
+  "SP19-008": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "brush ink",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "brush ink"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "split-bristle dry drag",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "translucent wash blooms",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested calligraphy or symbols",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Loaded Sweep"
+  },
+  "SP19-009": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "direct wet-ink drawing",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "raked wet-ink drawing"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform full-frame striping",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "channels that cut through identity-defining details",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested labels or craft tools",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Rake-Pulled Ink"
+  },
+  "SP19-010": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "aerosol ink",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "aerosol ink"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "blanket aerosol haze",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "hard stencil cutouts",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested graffiti lettering",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "arbitrary splatter",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_19",
+    "name": "Aerosol Tone"
   },
   "SP20-001": {
     "schemaVersion": 1,
@@ -2284,6 +2992,245 @@
     "packId": "pack_20",
     "name": "Engraved Tone"
   },
+  "SP20-005": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "planographic-lithography",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "crayon-and-tusche-lithograph"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "relief-cut channels or carved boundaries",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "uniform grain across unmarked support",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "invented registration offsets",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Crayon Lithograph"
+  },
+  "SP20-006": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "mezzotint",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "rocked-plate-tooth-and-burnished-lights"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "engraved crosshatching as the primary value mechanism",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "vignette-shaped darkening outside depicted forms",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "crushed shadows that erase focal details",
+        "field": "color_and_tone"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Mezzotint Velvet"
+  },
+  "SP20-007": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "monotype",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "single-plate-ink-transfer"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "large ghosted duplicate impressions",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "paper wrinkles or plate borders as unrequested props",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "global blur or uncontrolled ink bleed",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Monotype Wipe"
+  },
+  "SP20-008": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "cyanotype-contact-print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "iron-salt-contact-print"
+      },
+      {
+        "field": "color_and_tone",
+        "group": "palette",
+        "value": "prussian-blue-and-exposed-support"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "unrequested photogram objects or silhouettes",
+        "field": "subject_treatment"
+      },
+      {
+        "text": "non-cyanotype color palettes",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "invented print borders or captions",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Cyanotype Contact"
+  },
+  "SP20-009": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "collagraph-print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "ink-transfer-from-built-plate"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "pasted collage material over depicted surfaces",
+        "field": "subject_treatment"
+      },
+      {
+        "text": "deep embossed edges or support cast shadows",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "uniform plate texture across the whole image",
+        "field": "texture_and_material"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Collagraph Plate"
+  },
+  "SP20-010": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "screened-halftone-print",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "tone-by-screen-frequency-and-coverage"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform dots over highlights and open support",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "moire patterns or uncontrolled screen angles",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "unrequested page frames or lettering",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_20",
+    "name": "Halftone Screen"
+  },
   "SP21-001": {
     "schemaVersion": 1,
     "kind": "full_style",
@@ -2439,6 +3386,240 @@
     "presetVersion": 1,
     "packId": "pack_21",
     "name": "Pressed Relief"
+  },
+  "SP21-005": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "toned-paper-chalk",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "paper-as-midtone-with-additive-chalk-and-subtractive-dark"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "engraved crosshatching as the primary value method",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "dark plate ground with burnished highlights",
+        "field": "aesthetic"
+      },
+      {
+        "text": "chalk outlining every contour",
+        "field": "subject_treatment"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Toned Ground"
+  },
+  "SP21-006": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "dry-pastel-on-toothed-paper",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "layered-dry-pigment-broken-by-paper-tooth"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "greasy crayon or lithographic transfer marks",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "uniform powder haze over the whole image",
+        "field": "rendering_and_quality"
+      },
+      {
+        "text": "blurred focal boundaries",
+        "field": "subject_treatment"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Pastel Tooth"
+  },
+  "SP21-007": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "layered-pigment-sgraffito",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "subtractive-incisions-reveal-a-continuous-underlayer"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "repeated decorative scratches unrelated to form",
+        "field": "subject_treatment"
+      },
+      {
+        "text": "raised or embossed channels",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "carved-print hatch families",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Sgraffito Reveal"
+  },
+  "SP21-008": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "granulating-watercolor",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "transparent-wash-values-from-settled-mineral-pigment"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "uniform speckle overlay on dry areas",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "opaque muddy pigment mixtures",
+        "field": "color_and_tone"
+      },
+      {
+        "text": "uncontrolled blooms or lost focal edges",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Granulating Wash"
+  },
+  "SP21-009": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "transparent-pigment-glaze",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "sequential-dry-transparent-layers-with-optical-color-build"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "opaque repainting over the underlying value structure",
+        "field": "subject_treatment"
+      },
+      {
+        "text": "wet blooms or resist-edge patterns",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "blanket color filters across all forms",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Optical Glaze"
+  },
+  "SP21-010": {
+    "schemaVersion": 1,
+    "kind": "full_style",
+    "defaultFields": [
+      "aesthetic",
+      "subject_treatment",
+      "color_and_tone",
+      "lighting_and_shadow",
+      "texture_and_material",
+      "atmosphere_and_mood",
+      "rendering_and_quality"
+    ],
+    "requires": null,
+    "medium": "opaque-palette-knife-paint",
+    "constraints": [
+      {
+        "field": "aesthetic",
+        "group": "medium",
+        "value": "loaded-paint-ridges-shaped-by-a-palette-knife"
+      }
+    ],
+    "avoidRules": [
+      {
+        "text": "deep sculptural extrusions or embossed support",
+        "field": "texture_and_material"
+      },
+      {
+        "text": "highlights that contradict the requested lighting",
+        "field": "lighting_and_shadow"
+      },
+      {
+        "text": "knife ridges applied uniformly across the image",
+        "field": "rendering_and_quality"
+      }
+    ],
+    "presetVersion": 1,
+    "packId": "pack_21",
+    "name": "Palette-Knife Impasto"
   },
   "SP22-101": {
     "schemaVersion": 1,

@@ -130,7 +130,7 @@ describe('curation end-to-end boundaries', () => {
   it('new studies compile with explicit pending and published preview boundaries', async () => {
     const graph = await loadStyleManifestGraph('pack_19');
     expect(graph.graph.errors).toEqual([]);
-    expect(graph.presetManifests).toHaveLength(4);
+    expect(graph.presetManifests).toHaveLength(10);
     const packs = composeStyleRuntimePacksFromManifests(graph.packManifests, graph.presetManifests);
     const compiled = await compileIntentionalStylePlan({
       slots: [

@@ -122,4 +122,182 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP19-005',
+    name: 'Weighted Stipple',
+    category: '1. Ink Structures',
+    negativePrompt:
+      'uniform halftone screen, continuous outlines replacing the dot structure, random splatter fields',
+    style: {
+      aesthetic:
+        'Monochrome ink illustration built from discrete dot clusters whose density carries form and value.',
+      subject_treatment:
+        'Preserve the requested subject and proportions. Let clustered dots describe planes and turn contours; do not depend on continuous outlines to hold the image together.',
+      color_and_tone:
+        'Work in a strong ink-to-ground range, varying dot size and spacing before adding any supplied accent. Honor explicit palette requests without introducing unrelated colors.',
+      lighting_and_shadow:
+        'Build shadows through tighter point spacing and keep highlights readable as open ground. Follow the requested light direction without adding a new light source.',
+      texture_and_material:
+        'Keep dots individually legible at the intended scale. Let clusters follow the existing form and taper at their edges instead of spreading as uniform grain.',
+      camera_and_composition:
+        'Preserve the requested framing and viewpoint. Concentrate the densest clusters around existing focal forms, leaving useful open gaps between adjacent shapes.',
+      atmosphere_and_mood:
+        'Carry the requested tone through point density and the amount of open ground; do not impose a tattoo subject or ritual setting.',
+      rendering_and_quality:
+        'Maintain controlled dot sizes and smooth density steps with crisp focal silhouettes. Avoid mechanical screens and scattered filler marks.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP04-064'],
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP19-006',
+    name: 'Blot-Lift Ink',
+    category: '1. Ink Structures',
+    negativePrompt:
+      'plate-transfer or ghost impressions, uniform erasure of all detail, random distress overlay',
+    style: {
+      aesthetic:
+        'Direct ink drawing on paper shaped by absorbent blot-lift marks taken from still-wet washes.',
+      subject_treatment:
+        'Preserve the requested subject, silhouette and proportions. Build its forms with brushed ink, then lift selected lights with absorbent contact while the paper remains wet.',
+      color_and_tone:
+        "Honor the requested palette. Use retained ink for dark anchors and lifted paper-toned passages for light; keep accents subordinate to the subject's color identity.",
+      lighting_and_shadow:
+        'Follow the requested light direction with local lifted highlights and connected brushed shadows; do not introduce a new lamp or photographic lighting setup.',
+      texture_and_material:
+        'Show soft-edged absorbent lift marks and residual ink tide lines only where the wet paper was touched. The image remains a direct drawing, with no plate grain or transferred impression.',
+      camera_and_composition:
+        'Retain the requested frame and viewpoint. Place lifted lights along existing planes so the subject remains readable within its original arrangement.',
+      atmosphere_and_mood:
+        'Let the balance of retained and lifted ink carry the requested mood without requiring paper damage, archival props or a nostalgic scene.',
+      rendering_and_quality:
+        'Keep one coherent direct drawing, controlled wet edges and a clear focal silhouette. Avoid monotype transfer marks, global blur and random distress.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP19-007',
+    name: 'Chisel-Nib Fields',
+    category: '1. Ink Structures',
+    negativePrompt:
+      'fine engraved crosshatching, airbrushed gradients, unrequested lettering or signage',
+    style: {
+      aesthetic:
+        'Illustration constructed from broad, flat-nib ink passes with squared shoulders and clipped turns.',
+      subject_treatment:
+        'Keep the requested identity and proportions. Rebuild large shapes with adjacent nib-width bands, shifting stroke direction to describe planes rather than tracing every edge.',
+      color_and_tone:
+        'Use the requested palette in a small number of clearly separated ink values. Let overlaps deepen selectively and keep small accents subordinate to the main band structure.',
+      lighting_and_shadow:
+        "Form shadows by tightening and overlapping broad passes while leaving open ground for light. Follow the prompt's lighting without inventing a scene source.",
+      texture_and_material:
+        'Keep the flat nib edge crisp with slight ink skips only at selected starts and overlaps. Use stroke width, not fine crosshatching, to control tonal density.',
+      camera_and_composition:
+        'Preserve the requested composition and camera. Use changes in band direction to separate existing forms without adding a border or graphic layout.',
+      atmosphere_and_mood:
+        'Carry the requested tone through the weight and spacing of the bands; the marker-like construction does not require signage or street art.',
+      rendering_and_quality:
+        'Keep nib widths consistent within each mark group and maintain readable gaps between neighboring silhouettes. Avoid thin etched line families and airbrushed transitions.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP04-074'],
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP19-008',
+    name: 'Loaded Sweep',
+    category: '1. Ink Structures',
+    negativePrompt:
+      'split-bristle dry drag, translucent wash blooms, unrequested calligraphy or symbols',
+    style: {
+      aesthetic:
+        'Broad opaque brush-ink strokes turn through the requested forms in long, pressure-shaped sweeps.',
+      subject_treatment:
+        'Preserve the requested subject and gesture. Use a few continuous brush passes to establish its large forms, keeping small details subordinate to the stroke path.',
+      color_and_tone:
+        'Favor strong ink and ground separation within the requested palette. Keep accents sparse and use the colored ink to support shape hierarchy, not add motifs.',
+      lighting_and_shadow:
+        'Turn forms through overlap and changes in stroke width. Keep major light and dark regions connected rather than shading every surface.',
+      texture_and_material:
+        'Show a loaded, smooth stroke core with a controlled taper at entry or release. Keep the deposit opaque and continuous, distinct from dry split-bristle drag or translucent pooling.',
+      camera_and_composition:
+        "Respect the prompt's viewpoint and placement. Let stroke arcs follow existing direction and leave room around important contours.",
+      atmosphere_and_mood:
+        'Express the requested tone through pace, stroke weight and open ground without imposing a cultural setting or calligraphic text.',
+      rendering_and_quality:
+        'Maintain a clear hierarchy between broad sweeps and restrained detail. Avoid scratchy bristle fringes, wash blooms and decorative marks unrelated to the subject.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP04-080'],
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP19-009',
+    name: 'Rake-Pulled Ink',
+    category: '1. Ink Structures',
+    negativePrompt:
+      'uniform full-frame striping, channels that cut through identity-defining details, unrequested labels or craft tools',
+    style: {
+      aesthetic:
+        'Direct wet-ink illustration with parallel channels pulled through broad deposited masses.',
+      subject_treatment:
+        'Keep the requested identity and proportions. Establish solid form first, then rake short directional channels through selected masses to reveal planes and internal structure.',
+      color_and_tone:
+        "Honor the requested palette. Use deposited ink for dark anchors and exposed support in pulled channels for light; avoid changing the subject's named colors.",
+      lighting_and_shadow:
+        'Follow the requested light direction by varying channel spacing and mass coverage within existing planes. Do not add a new source to justify the marks.',
+      texture_and_material:
+        'Make the pulled channels visibly parallel within each local passage, with wet-ink ridges at their ends. Change direction by form; do not cover the entire image with one comb pattern.',
+      camera_and_composition:
+        'Preserve the requested camera and composition. Restrict raked marks to selected planes so major silhouette and negative-space decisions remain clear.',
+      atmosphere_and_mood:
+        'Let alternating solid masses and opened channels support the requested mood without adding craft tools, an archival setting or a required scene.',
+      rendering_and_quality:
+        'Keep channels distinct enough to describe volume at reduced size. Avoid uniform striping, accidental cuts across identity-defining features and decorative text.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP19-010',
+    name: 'Aerosol Tone',
+    category: '1. Ink Structures',
+    negativePrompt:
+      'blanket aerosol haze, hard stencil cutouts, unrequested graffiti lettering, arbitrary splatter',
+    style: {
+      aesthetic:
+        'Forms emerge from broad fields of atomized ink that merge into soft tonal veils with selectively feathered edges.',
+      subject_treatment:
+        'Preserve the requested subject and proportions. Use localized aerosol passes to describe its surfaces and silhouette instead of veiling the whole image in fog.',
+      color_and_tone:
+        'Layer a restrained range from the requested palette, building value through deposit density. Keep colors separated enough that adjacent forms remain easy to read.',
+      lighting_and_shadow:
+        'Use denser deposits for shadow planes and lighter passes for transitions. Follow the requested lighting direction without inventing neon or a new setting.',
+      texture_and_material:
+        'Let fine atomized pigment soften selected boundaries while retaining a few crisp edges at focal forms. The deposit should read as merged tone, not individually drawn dots.',
+      camera_and_composition:
+        'Retain the requested framing and viewpoint. Place soft transitions within existing forms and keep their outer silhouettes legible.',
+      atmosphere_and_mood:
+        'Follow the requested mood through the spread and contrast of the ink. Aerosol handling does not require graffiti, signage or an urban scene.',
+      rendering_and_quality:
+        'Keep spray density controlled and localized with clear form separation. Avoid blanket mist, hard stencil cutouts and arbitrary splatter.',
+    },
+    ui: {
+      kind: 'full_style',
+      derivedFrom: ['SP06-012'],
+      visualEvaluation: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

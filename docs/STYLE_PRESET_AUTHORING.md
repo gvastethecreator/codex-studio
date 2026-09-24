@@ -53,8 +53,12 @@ The original Medieval and TCG research records are preserved in
 `components/recipes/styles/atlas/medieval-research.source.json` and
 `components/recipes/styles/atlas/tcg-catalog.source.json`. `pack_23` contains 58
 Medieval visual presets. `pack_22` contains 120 TCG visual presets; its other
-42 research records are visible as pending catalog entries and are not executable
-styles. Historical titles and references belong in `sourceMetadata`, not in
+42 records are selectable in Component Studio as 18 digital finish previews,
+12 card layouts, and 12 crossover recipes. Recipes generate artwork through the
+selected provider; finishes and layouts are composed locally with editable card
+fields. Required PNG masks and multipiece artwork must be supplied before export.
+These components are not executable visual styles or print-certified effects.
+Historical titles and references belong in `sourceMetadata`, not in
 reusable visual DNA. Card subjects belong in `card-briefs.json`, not in the preset.
 
 The card generator requires an explicit `--provider`; launching it without one

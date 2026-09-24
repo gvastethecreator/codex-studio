@@ -3,7 +3,7 @@
     {
       "id": "pack_17",
       "name": "Medieval Fantasy & Dungeon Zine",
-      "presetCount": 73
+      "presetCount": 83
     }
   ],
   "presets": [
@@ -1396,7 +1396,127 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-072 endless war gothic endless modern war gothic fantasy trench cathedral grimdark 5. grimdark game systems & tabletop game & tabletop formats modern endless war gothic fantasy pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop modern-endless-war-gothic-fantasy"
+    },
+    {
+      "id": "SP17-074",
+      "name": "Torn-Paper Dungeon Assemblage",
+      "ref": "pack_17/SP17-074.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dungeon-zine-assemblage-and-stampwork"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-074 torn-paper dungeon assemblage 6. dungeon zine assemblage & stampwork dungeon zine assemblage pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork"
+    },
+    {
+      "id": "SP17-075",
+      "name": "Three-Ink Stencil Bruise",
+      "ref": "pack_17/SP17-075.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dungeon-zine-assemblage-and-stampwork"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-075 three-ink stencil bruise 6. dungeon zine assemblage & stampwork dungeon zine assemblage pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork"
+    },
+    {
+      "id": "SP17-076",
+      "name": "Hand-Stamped Dungeon Forms",
+      "ref": "pack_17/SP17-076.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "dungeon-zine-assemblage-and-stampwork"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-076 hand-stamped dungeon forms 6. dungeon zine assemblage & stampwork dungeon zine assemblage pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork"
+    },
+    {
+      "id": "SP17-077",
+      "name": "Paperback Airbrush Fantasy",
+      "ref": "pack_17/SP17-077.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "pulp-fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-077 paperback airbrush fantasy 7. pulp fantasy painting pulp fantasy painting pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting"
+    },
+    {
+      "id": "SP17-078",
+      "name": "Drybrush Pulp Illustration",
+      "ref": "pack_17/SP17-078.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "pulp-fantasy-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-078 drybrush pulp illustration 7. pulp fantasy painting pulp fantasy painting pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting"
+    },
+    {
+      "id": "SP17-079",
+      "name": "Silverpoint on Toned Ground",
+      "ref": "pack_17/SP17-079.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "medieval-fantasy-drawing-media"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-079 silverpoint on toned ground 8. medieval fantasy drawing media fantasy drawing media pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media"
+    },
+    {
+      "id": "SP17-080",
+      "name": "Wax-Resist Ink Drawing",
+      "ref": "pack_17/SP17-080.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "medieval-fantasy-drawing-media"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-080 wax-resist ink drawing 8. medieval fantasy drawing media fantasy drawing media pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media"
+    },
+    {
+      "id": "SP17-081",
+      "name": "White Chalk on Dark Stock",
+      "ref": "pack_17/SP17-081.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "medieval-fantasy-drawing-media"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-081 white chalk on dark stock 8. medieval fantasy drawing media fantasy drawing media pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media"
+    },
+    {
+      "id": "SP17-082",
+      "name": "Conté Crayon Fantasy Drawing",
+      "ref": "pack_17/SP17-082.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "medieval-fantasy-drawing-media"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-082 conté crayon fantasy drawing 8. medieval fantasy drawing media fantasy drawing media pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media"
+    },
+    {
+      "id": "SP17-083",
+      "name": "Colored-Pencil Grit Fantasy",
+      "ref": "pack_17/SP17-083.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "tags": ["medieval-fantasy-and-dungeon-zine", "medieval-fantasy-drawing-media"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-083 colored-pencil grit fantasy 8. medieval fantasy drawing media fantasy drawing media pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media"
     }
   ],
-  "totalPresetCount": 73
+  "totalPresetCount": 83
 }

@@ -33,7 +33,7 @@ Create pairs a freeform text/image workspace and composer on the left with compa
 
 Library search queries the whole workspace catalog. Jobs separates active work, results needing review, and history; the inspector shows returned images before technical details. Animation frames show linked job status separately from attached frames. Sprite Atlas labels fixture checks separately from validation of imported art.
 
-Styles includes the Medieval and TCG visual catalogs. The 42 TCG finish, layout, and crossover research entries are visible as pending and cannot be applied as styles yet.
+Styles includes the Medieval and TCG visual catalogs. The 42 TCG finishes, layouts, and crossover recipes are available in Component Studio: choose or upload artwork, edit card fields, supply the masks required by a finish, and export a digital PNG composition. These components do not act as visual style presets or certify a physical print process.
 
 | Catalog and persistent jobs                                                                                         | Studio Settings                                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |

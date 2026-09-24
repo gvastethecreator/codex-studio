@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP17-078
+packId: pack_17
+name: Drybrush Pulp Illustration
+category: 7. Pulp Fantasy Painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Pulp-fantasy painting driven by scumbled drybrush, broken bristle marks, and broad opaque
+    passages. The rough paint gives energy to the requested image without supplying a stock scene.
+  subject_treatment: >-
+    Preserve the subject's identity, silhouette, action, count, proportions, and functional details.
+    Place drybrush accents along existing form changes; keep important contours readable beneath them.
+  color_and_tone: >-
+    Preserve the requested palette. When unspecified, group a limited set of midtones between clear
+    light and dark anchors; use a bright accent sparingly and do not require blood, fire, or metal.
+  lighting_and_shadow: >-
+    Respect the requested light direction. Build shadows from opaque brush masses and reserve dry
+    broken highlights for lit edges already supported by the source.
+  texture_and_material: >-
+    Vary brush drag, bristle gaps, and pigment loading across the image. Keep the scumble scale
+    controlled and distinct from damage or weathering on the represented materials.
+  camera_and_composition: >-
+    Retain the requested viewpoint, crop, scale, and arrangement. Use broad painted masses to
+    reinforce its existing focal order without forcing a low angle or central figure.
+  atmosphere_and_mood: >-
+    Let broken strokes and strong value shifts support the requested tone. Do not add a battle,
+    menace, ruined setting, or pulp-cover staging unless the prompt requests it.
+  rendering_and_quality: >-
+    Keep bristle marks directional and attached to form, with enough unbroken paint to anchor the
+    image. Avoid uniform scratch texture, muddy overlaps, and simulated canvas grain.
+avoidRules:
+  - unrequested armor, weapons, monsters, or ruined settings
+  - forced low angle or cover staging
+  - uniform drybrush scratches across all surfaces
+  - scumble that obscures identity or function
+  - fake canvas or paper damage
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-078.webp
+attributes:
+  negativePrompt: unrequested armor weapons monsters or ruined settings, forced low angle or cover staging, uniform drybrush scratches across all surfaces, scumble that obscures identity or function, fake canvas or paper damage
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: opaque drybrush pulp painting
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: opaque drybrush pulp painting
+    avoidRules:
+      - text: unrequested armor, weapons, monsters, or ruined settings
+        field: global
+      - text: forced low angle or cover staging
+        field: camera_and_composition
+      - text: uniform drybrush scratches across all surfaces
+        field: texture_and_material
+      - text: scumble that obscures identity or function
+        field: subject_treatment
+      - text: fake canvas or paper damage
+        field: texture_and_material
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

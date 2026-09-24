@@ -55,10 +55,10 @@ describe('category curation coverage', () => {
     );
     expect(result.errors).toEqual([]);
     expect(result.totalPacks).toBe(22);
-    expect(result.totalCategories).toBe(148);
-    expect(result.totalPresets).toBe(1711);
+    expect(result.totalCategories).toBe(151);
+    expect(result.totalPresets).toBe(1739);
     expect(result.reviewedCategories).toBe(result.totalCategories);
-    expect(result.pendingVisualCategories).toBe(148);
+    expect(result.pendingVisualCategories).toBe(151);
     for (const review of reviews)
       expect(getStyleCategoryDisplayName(review.packId, review.category)).toBe(
         review.displayCategory,

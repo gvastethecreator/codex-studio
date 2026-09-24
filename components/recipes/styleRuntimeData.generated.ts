@@ -124,29 +124,29 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     id: 'pack_17',
     name: 'Medieval Fantasy & Dungeon Zine',
     description:
-      'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, and isometric game aesthetics.',
-    presetCount: 73,
+      'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, isometric game aesthetics, analog zine processes, pulp fantasy painting, and transferable drawing-media studies.',
+    presetCount: 83,
   },
   {
     id: 'pack_19',
     name: 'Ink Structures',
     description:
-      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; representative preview images are available; cross-subject visual evaluation remains pending.',
-    presetCount: 4,
+      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; existing representative previews remain available, while added previews and cross-subject visual evaluation are pending.',
+    presetCount: 10,
   },
   {
     id: 'pack_20',
     name: 'Print Registers',
     description:
-      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; representative preview images are available; cross-subject visual evaluation remains pending.',
-    presetCount: 4,
+      'Portable visual studies with explicit printmaking mechanics. Existing representative previews remain available; new entries await preview creation and cross-subject visual evaluation.',
+    presetCount: 10,
   },
   {
     id: 'pack_21',
     name: 'Paper & Pigment',
     description:
-      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; representative preview images are available; cross-subject visual evaluation remains pending.',
-    presetCount: 4,
+      'Portable paper and pigment studies defined by transferable material and mark-making mechanics. New entries have no default preview image; cross-subject visual evaluation remains pending.',
+    presetCount: 10,
   },
   {
     id: 'pack_22',

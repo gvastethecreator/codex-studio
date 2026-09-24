@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP17-079
+packId: pack_17
+name: Silverpoint on Toned Ground
+category: 8. Medieval Fantasy Drawing Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Fine-line fantasy drawing in the silverpoint tradition, with delicate metallic-gray strokes
+    accumulated over a softly toned ground and restrained drawn shadows.
+  subject_treatment: >-
+    Preserve requested anatomy, identity, expression, pose, count, and detail. Use measured contour
+    lines and fine cross-contours to explain existing forms rather than beautifying or redesigning them.
+  color_and_tone: >-
+    Honor requested colors. If none are specified, keep a quiet warm-gray ground, cool silver-gray
+    lines, and a narrow value range with enough dark accents to maintain legibility.
+  lighting_and_shadow: >-
+    Preserve the prompt's light direction. Build form with layered line density and soft drawn
+    shadow groups, avoiding a second source or metallic glow.
+  texture_and_material: >-
+    Keep lines fine, slightly varied in pressure, and integrated with the toned drawing surface.
+    Do not turn the depicted subject into metal or impose scratches on its material.
+  camera_and_composition: >-
+    Respect the requested crop, viewpoint, scale, and placement. Use line density for separation
+    within the existing composition without adding a study frame or annotation panel.
+  atmosphere_and_mood: >-
+    Allow delicacy, restraint, or unease to emerge from the narrow tonal range and patient lines.
+    Do not add manuscript symbols, courtly motifs, or historical narrative.
+  rendering_and_quality: >-
+    Keep contours fine but distinct, cross-hatching sparse, and larger shadow areas open. Avoid
+    broad charcoal masses, polished chrome reflections, and unreadable hairline clutter.
+avoidRules:
+  - forced metallic objects or reflective chrome
+  - unrequested manuscript symbols or annotations
+  - broad charcoal smudging
+  - dense cross-hatching that closes the forms
+  - fixed frame or study-sheet layout
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-079.webp
+attributes:
+  negativePrompt: forced metallic objects or reflective chrome, unrequested manuscript symbols or annotations, broad charcoal smudging, dense cross-hatching that closes the forms, fixed frame or study sheet layout
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: silverpoint line drawing on toned ground
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: silverpoint line drawing on toned ground
+    avoidRules:
+      - text: forced metallic objects or reflective chrome
+        field: subject_treatment
+      - text: unrequested manuscript symbols or annotations
+        field: global
+      - text: broad charcoal smudging
+        field: rendering_and_quality
+      - text: dense cross-hatching that closes the forms
+        field: rendering_and_quality
+      - text: fixed frame or study-sheet layout
+        field: camera_and_composition
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

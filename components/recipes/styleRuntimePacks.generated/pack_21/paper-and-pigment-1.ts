@@ -121,4 +121,178 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP21-005',
+    name: 'Toned Ground',
+    category: '1. Paper & Pigment',
+    negativePrompt:
+      'engraved crosshatching as the primary value method, dark plate ground with burnished highlights, chalk outlining every contour',
+    style: {
+      aesthetic:
+        'Drawing on mid-value colored paper, using the support as a continuous middle tone and placing broad dark and light marks selectively over it.',
+      subject_treatment:
+        'Preserve the requested identity, proportions and action. Model existing forms with connected dark masses and reserved chalk lights instead of replacing them with symbols or contours.',
+      color_and_tone:
+        'Let the paper carry the middle value, using charcoal or a palette-matched dark pigment for shadows and opaque chalk for chosen highlights. Keep the requested color direction recognizable.',
+      lighting_and_shadow:
+        'Follow the requested illumination: group the dark marks on its shadow side and place chalk only on existing planes that face the light. Do not add a separate spotlight.',
+      texture_and_material:
+        "Keep the support's even midtone visible between marks. Use broad rubbed charcoal and small opaque chalk accents without simulating an engraved plate or a black plate ground.",
+      camera_and_composition:
+        'Preserve the supplied framing, viewpoint and placement. Use value grouping to clarify the existing focal structure without introducing a portrait pose or new layout.',
+      atmosphere_and_mood:
+        'Carry the requested mood through the balance of open paper, dark mass and light accents; the drawing method does not imply a studio, memorial or historical scene.',
+      rendering_and_quality:
+        'Keep the three value families distinct and edges selective. Avoid crosshatching as the main value method, crushed dark grounds, and chalk outlining every edge.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP21-006',
+    name: 'Pastel Tooth',
+    category: '1. Paper & Pigment',
+    negativePrompt:
+      'greasy crayon or lithographic transfer marks, uniform powder haze over the whole image, blurred focal boundaries',
+    style: {
+      aesthetic:
+        'Dry-pastel illustration built by layering soft pigment across a toothed paper surface, with the exposed tooth breaking broad color passages into small coherent flecks.',
+      subject_treatment:
+        'Keep the requested identity, proportions and action legible. Shape existing forms through grouped pastel deposits and selective softened edges rather than a new pose or generic haze.',
+      color_and_tone:
+        'Respect the requested palette. Build a compact value range from adjacent pastel layers, leaving some support visible between marks and reserving the strongest chroma for existing focal forms.',
+      lighting_and_shadow:
+        'Preserve the requested light direction. Deepen existing shadow groups with denser dry pigment and soften selected transitions without spreading a glow beyond the forms.',
+      texture_and_material:
+        'Let the paper tooth interrupt the pigment visibly. Feather only chosen joins by rubbing; keep separate marks in the rest of each passage instead of creating a uniformly blended airbrush.',
+      camera_and_composition:
+        "Preserve the user's frame, viewpoint and arrangement. Organize pastel edges within the existing focal hierarchy without adding a page border, plate edge or print-shop marks.",
+      atmosphere_and_mood:
+        'Carry the requested mood through pigment density, softness and spacing. Dry pastel does not require a nostalgic scene, a theatrical backdrop or a particular subject.',
+      rendering_and_quality:
+        'Balance visible tooth with clean focal boundaries and readable value groups. Avoid greasy crayon lines, lithographic transfer grain and a powder layer spread uniformly across the image.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP21-007',
+    name: 'Sgraffito Reveal',
+    category: '1. Paper & Pigment',
+    negativePrompt:
+      'repeated decorative scratches unrelated to form, raised or embossed channels, carved-print hatch families',
+    style: {
+      aesthetic:
+        'Layered pigment illustration in which a few deliberate incisions through a dry upper color reveal a contrasting underlayer carried by the same image.',
+      subject_treatment:
+        'Preserve the requested subject and proportions. Place reveal marks along selected existing edges and planes so they clarify form instead of converting it into carved lettering or ornament.',
+      color_and_tone:
+        'Use colors from the requested palette for both layers, keeping their value difference large enough for the revealed ground to read as a purposeful part of the depicted form.',
+      lighting_and_shadow:
+        'Follow the requested illumination. Keep the exposed underlayer within existing lit or shadowed regions; incisions are marks in the pigment, not a new light source.',
+      texture_and_material:
+        'Show narrow, crisp channels where the upper pigment has been scraped aside, with limited roughness at their ends. Keep the lower layer flat and continuous rather than building a raised ridge.',
+      camera_and_composition:
+        'Preserve the requested viewpoint and framing. Use a small number of reveals to support the existing focal structure without changing crop or adding a print border.',
+      atmosphere_and_mood:
+        'Retain the requested mood through the amount and spacing of exposed marks. Scraping pigment does not require a distressed, antique or archaeological subject.',
+      rendering_and_quality:
+        'Make each incision intentional, legible and consistent with its form. Avoid hatch families, repeated decorative scratches and plate-printed relief effects.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP21-008',
+    name: 'Granulating Wash',
+    category: '1. Paper & Pigment',
+    negativePrompt:
+      'uniform speckle overlay on dry areas, opaque muddy pigment mixtures, uncontrolled blooms or lost focal edges',
+    style: {
+      aesthetic:
+        'Watercolor illustration whose value passages form through mineral pigment settling into the paper tooth, leaving naturally separated grains within otherwise transparent washes.',
+      subject_treatment:
+        'Preserve the requested identity and proportions. Use grain density to describe existing planes while keeping essential silhouettes and small defining details readable.',
+      color_and_tone:
+        'Follow the requested palette with transparent pigments. Build value through the concentration and spacing of settled granules, keeping paper lights open and avoiding opaque muddy mixtures.',
+      lighting_and_shadow:
+        'Respect the requested light direction. Concentrate pigment on existing shadow planes and let exposed support carry the brightest values; do not imply a new light source.',
+      texture_and_material:
+        "Show particles collecting in the paper's shallow valleys and loosening across damp passages. Create this grain by pigment behavior rather than resist marks, stamped dots or a texture overlay.",
+      camera_and_composition:
+        'Maintain the requested framing, viewpoint and arrangement. Balance granular areas with calm washes inside the existing composition so the subject remains the focal structure.',
+      atmosphere_and_mood:
+        'Retain the requested mood through wash openness and grain density; mineral granulation does not prescribe a dreamy landscape or any other setting.',
+      rendering_and_quality:
+        'Keep individual granules subordinate to the form and preserve clean focal boundaries. Avoid uniform speckling, cauliflower backruns and lost edges across the whole subject.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP21-009',
+    name: 'Optical Glaze',
+    category: '1. Paper & Pigment',
+    negativePrompt:
+      'opaque repainting over the underlying value structure, wet blooms or resist-edge patterns, blanket color filters across all forms',
+    style: {
+      aesthetic:
+        'Transparent-pigment illustration built by laying thin color films over fully dried passages, so each layer shifts the underlying hue without obscuring its structure.',
+      subject_treatment:
+        'Preserve the requested subject, pose and proportions. Add color depth over its existing planes rather than changing their shape, surface identity or defining detail.',
+      color_and_tone:
+        'Respect the requested palette and apply transparent layers sequentially, allowing their overlap to enrich selected colors. Keep each underlying value plane visible through the glazing.',
+      lighting_and_shadow:
+        'Follow the requested illumination and keep its shadow pattern stable between layers. Build depth with transparent color shifts, not added dark outlines or a new glow.',
+      texture_and_material:
+        'Show smooth, distinct dried layers with clean overlaps and only slight brush-edge variation. Keep pigment in place after drying instead of creating a wet bloom or resist boundary.',
+      camera_and_composition:
+        'Preserve the existing viewpoint, crop and placement. Distribute glaze changes within the supplied forms without adding a product mockup, frame or page layout.',
+      atmosphere_and_mood:
+        'Carry the requested mood through layered chroma and value depth. Transparent glazing does not require jewel tones, decorative ornament or an ethereal scene.',
+      rendering_and_quality:
+        'Keep layers transparent and their sequence perceptible in color while retaining crisp form boundaries. Avoid opaque repainting, muddy wet-on-wet pools and blanket color filters.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP21-010',
+    name: 'Palette-Knife Impasto',
+    category: '1. Paper & Pigment',
+    negativePrompt:
+      'deep sculptural extrusions or embossed support, highlights that contradict the requested lighting, knife ridges applied uniformly across the image',
+    style: {
+      aesthetic:
+        'Opaque-paint illustration on prepared paper, formed with loaded palette-knife deposits whose raised ridges turn across depicted shapes and leave neighboring areas broadly calm.',
+      subject_treatment:
+        'Preserve the requested identity, proportions and action. Use the direction of each paint deposit to clarify existing planes without changing the subject into a sculpted object.',
+      color_and_tone:
+        'Respect the requested palette. Mix opaque colors in compact groups and place the strongest light and dark deposits within the existing value structure, not as decorative accents.',
+      lighting_and_shadow:
+        'Follow the requested lighting. Let the paint ridges catch restrained highlights in that same direction while keeping their relief subordinate to the depicted form.',
+      texture_and_material:
+        'Show discrete knife-set ridges, occasional scraped gaps and broad flat passages. The texture is thick pigment on prepared paper, not an embossed support, fabric weave or universal crust.',
+      camera_and_composition:
+        'Keep the requested framing and viewpoint. Vary deposit scale inside the existing focal hierarchy without tilting the image into a painted-object mockup.',
+      atmosphere_and_mood:
+        'Retain the requested mood through paint density and edge rhythm. Impasto does not require a dramatic studio, landscape, still life or any other prescribed scene.',
+      rendering_and_quality:
+        'Balance physical paint ridges with readable silhouettes and quiet transitions. Avoid deep relief, conflicting surface highlights and a palette-knife mark on every edge.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -122,4 +122,178 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP20-005',
+    name: 'Crayon Lithograph',
+    category: '1. Print Registers',
+    negativePrompt:
+      'relief-cut channels or carved boundaries, uniform grain across unmarked support, invented registration offsets',
+    style: {
+      aesthetic:
+        'Planographic lithographic illustration drawn with greasy crayon and tusche on a flat image plane.',
+      subject_treatment:
+        'Preserve the requested identity, proportions and pose. Describe contours and internal form with pressure-shaped crayon marks and broad lithographic washes rather than carved cuts.',
+      color_and_tone:
+        'Respect the requested palette and keep printed color areas distinct. Build tonal passages through crayon density and tusche coverage, not arbitrary extra inks.',
+      lighting_and_shadow:
+        'Follow the requested light direction. Let grouped crayon and wash density turn the existing forms while leaving their brightest planes comparatively open.',
+      texture_and_material:
+        'Keep lithographic grain within marks and wash passages, with variation following stroke direction and pressure. Leave unmarked support quiet instead of laying grain over the full image.',
+      camera_and_composition:
+        'Preserve the requested framing and viewpoint. Let mark density clarify the existing focal hierarchy without adding a plate edge, label or print-shop layout.',
+      atmosphere_and_mood:
+        'Carry the requested mood through pressure, spacing and tonal openness; the drawing process does not require an old-fashioned scene or subject.',
+      rendering_and_quality:
+        'Keep crayon edges, wash transitions and open highlights distinct at the intended viewing scale. Avoid relief-cut boundaries and uniform support grain.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP20-006',
+    name: 'Mezzotint Velvet',
+    category: '1. Print Registers',
+    negativePrompt:
+      'engraved crosshatching as the primary value mechanism, vignette-shaped darkening outside depicted forms, crushed shadows that erase focal details',
+    style: {
+      aesthetic:
+        'Intaglio tonal illustration with a rocked plate tooth holding a broad velvety dark field, then scraped or burnished open into measured lights.',
+      subject_treatment:
+        'Preserve the requested silhouette, identity and proportions. Model existing planes by opening tonal light from dark fields rather than outlining every form with engraved lines.',
+      color_and_tone:
+        'Use the requested palette while retaining a strong dark-to-light range. Make midtones emerge between dense plate blacks and carefully lifted highlights.',
+      lighting_and_shadow:
+        'Follow the requested illumination. Let the brightest existing planes appear burnished from the inked field, with shadows remaining broad and connected.',
+      texture_and_material:
+        'Keep the fine plate-tooth softness consistent inside tonal areas. Avoid scratches or paper grain as substitutes for the even, ink-bearing mezzotint ground.',
+      camera_and_composition:
+        'Preserve the requested crop and viewpoint. Keep large dark passages inside the existing forms rather than turning them into a vignette around the image.',
+      atmosphere_and_mood:
+        'Carry the requested mood through the amount and placement of dark mass and the width of lifted lights; do not imply a genre or setting.',
+      rendering_and_quality:
+        'Maintain smooth, legible tonal transitions with selective crisp edges where forms meet. Avoid crosshatch as the primary value mechanism or crushed black fields that erase focal detail.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP20-007',
+    name: 'Monotype Wipe',
+    category: '1. Print Registers',
+    negativePrompt:
+      'large ghosted duplicate impressions, paper wrinkles or plate borders as unrequested props, global blur or uncontrolled ink bleed',
+    style: {
+      aesthetic:
+        'One-off plate-transfer illustration made by inking a smooth surface, selectively wiping or drawing through the ink, then pressing a single image onto its support.',
+      subject_treatment:
+        'Keep the requested identity, gesture and arrangement. Use wiped passages and plate-drawn marks to describe existing forms without introducing a second ghost image.',
+      color_and_tone:
+        'Work within the requested palette. Shape value with differences in ink coverage, wiped-back passages and selective overprinting rather than a fixed duotone.',
+      lighting_and_shadow:
+        'Respect the requested light direction. Make wiped-back areas read as lighter planes and denser plate ink read as existing shadows.',
+      texture_and_material:
+        'Confine soft pooling, wipe tracks and small pressure breaks to transferred ink. Keep these marks directional and local; do not add fingerprints, paper wrinkles or broad bleed.',
+      camera_and_composition:
+        'Preserve the requested framing and spatial relationships. A single transfer may soften some edges but must keep the focal silhouette and crop intact.',
+      atmosphere_and_mood:
+        'Let the requested tone guide the balance of fluid and wiped-back passages without requiring a studio, print table or other setting.',
+      rendering_and_quality:
+        'Preserve intentional plate marks and readable edges, with small transfer variation rather than repeated color-plate misregistration or global blur.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP20-008',
+    name: 'Cyanotype Contact',
+    category: '1. Print Registers',
+    negativePrompt:
+      'unrequested photogram objects or silhouettes, non-cyanotype color palettes, invented print borders or captions',
+    style: {
+      aesthetic:
+        'Photochemical contact-print illustration on iron-salt-sensitized support: exposed ground develops Prussian blue while masked areas retain a pale reserve. Apply that exposure structure to the requested image rather than adding incidental photograms.',
+      subject_treatment:
+        'Preserve the requested subject, pose, count and defining contours. Translate its tonal structure into image-bearing exposure and protected paper values, rather than tinting each existing surface blue or replacing the subject with other photogram silhouettes.',
+      color_and_tone:
+        'Use the characteristic cyanotype range of Prussian blue, intermediate blue and the pale support. Treat this monochrome palette as part of the selected process and retain the requested value hierarchy.',
+      lighting_and_shadow:
+        'Keep the requested illumination legible in the exposure values. Do not add sunbeams, reverse contours or imply a new light source to explain the print process.',
+      texture_and_material:
+        'Keep the exposed pigment field even with slight local exposure variation. The support remains a print ground; do not turn the depicted materials into blue paper or fabric.',
+      camera_and_composition:
+        'Preserve the supplied viewpoint, framing and spatial relationships. Contact-print contrast may simplify small values but must not crop, mirror or rearrange the subject.',
+      atmosphere_and_mood:
+        'Keep the requested mood. The cool monochrome exposure is a rendering choice and does not imply archival age, botanicals or a laboratory setting.',
+      rendering_and_quality:
+        'Maintain distinct exposed and protected values with controlled edges and legible internal forms. Avoid invented borders, captions or unrelated contact silhouettes.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP20-009',
+    name: 'Collagraph Plate',
+    category: '1. Print Registers',
+    negativePrompt:
+      'pasted collage material over depicted surfaces, deep embossed edges or support cast shadows, uniform plate texture across the whole image',
+    style: {
+      aesthetic:
+        'Printed illustration made from a deliberately built collagraph plate: raised shapes and recessed textures retain different amounts of ink and transfer them as controlled marks.',
+      subject_treatment:
+        'Preserve the requested identity, geometry and arrangement. Let plate seams and surface variations describe existing forms instead of attaching new collage pieces to the depicted subject.',
+      color_and_tone:
+        'Respect the requested palette. Separate broad values through ink held on raised plate areas and selective recess marks, not through arbitrary extra colors.',
+      lighting_and_shadow:
+        'Follow the requested illumination. Use plate-retained ink and open support to describe existing lights and shadows without casting a new light across the image.',
+      texture_and_material:
+        'Keep plate texture selective and scaled to the form it describes. Preserve the materials already depicted; do not paste a blanket collage texture over them.',
+      camera_and_composition:
+        'Honor the requested crop, viewpoint and layout. Plate marks stay within the existing composition and do not create a frame or product mockup.',
+      atmosphere_and_mood:
+        'Carry the requested mood through the density and spacing of printed plate marks, without implying handmade paper scraps or a craft-table setting.',
+      rendering_and_quality:
+        'Keep printed edges, recessed textures and open gaps distinct. Suggest ink transfer from a plate, not visible extrusion or a shadowed relief surface on the support.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP20-010',
+    name: 'Halftone Screen',
+    category: '1. Print Registers',
+    negativePrompt:
+      'uniform dots over highlights and open support, moire patterns or uncontrolled screen angles, unrequested page frames or lettering',
+    style: {
+      aesthetic:
+        'Screened print illustration in which a controlled dot or line lattice encodes continuous tones through changes in mark size and coverage rather than an added surface pattern.',
+      subject_treatment:
+        'Preserve the requested silhouette, proportions and recognizable detail. Let the screen resolve existing tonal forms instead of dissolving contours into generic dots.',
+      color_and_tone:
+        'Respect the requested palette and carry value through screen coverage within each ink. Keep light, middle and dark regions distinct without color fringing or crushed dot fields.',
+      lighting_and_shadow:
+        'Follow the requested illumination. Increase dot coverage through existing shadow planes and open the screen across lit areas, keeping transitions tied to the forms.',
+      texture_and_material:
+        'Keep the screen frequency and angle consistent within each printed ink, with dot size changing according to tone. Do not project the screen onto depicted materials or fill flat support with dots.',
+      camera_and_composition:
+        'Preserve framing and viewpoint. Maintain enough dot scale for the requested output size while keeping the focal silhouette and existing composition clear.',
+      atmosphere_and_mood:
+        'Retain the requested mood through contrast and screen density; the reproduction method does not imply a comic page, newspaper, poster or retro scene.',
+      rendering_and_quality:
+        'Resolve dot edges cleanly, avoid moire between screen angles and keep unprinted highlights open. The halftone must carry tonal information rather than sit as a uniform overlay.',
+    },
+    ui: {
+      kind: 'full_style',
+      visualEvaluation: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,95 @@
+schemaVersion: 1
+id: SP19-010
+packId: pack_19
+name: Aerosol Tone
+category: 1. Ink Structures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink
+  - aerosol
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: Forms emerge from broad fields of atomized ink that merge into soft tonal veils with selectively feathered edges.
+  subject_treatment:
+    Preserve the requested subject and proportions. Use localized aerosol passes to describe its
+    surfaces and silhouette instead of veiling the whole image in fog.
+  color_and_tone:
+    Layer a restrained range from the requested palette, building value through deposit density.
+    Keep colors separated enough that adjacent forms remain easy to read.
+  lighting_and_shadow:
+    Use denser deposits for shadow planes and lighter passes for transitions. Follow the requested
+    lighting direction without inventing neon or a new setting.
+  texture_and_material:
+    Let fine atomized pigment soften selected boundaries while retaining a few crisp edges at focal
+    forms. The deposit should read as merged tone, not individually drawn dots.
+  camera_and_composition:
+    Retain the requested framing and viewpoint. Place soft transitions within existing forms and
+    keep their outer silhouettes legible.
+  atmosphere_and_mood:
+    Follow the requested mood through the spread and contrast of the ink. Aerosol handling does not
+    require graffiti, signage or an urban scene.
+  rendering_and_quality:
+    Keep spray density controlled and localized with clear form separation. Avoid blanket mist,
+    hard stencil cutouts and arbitrary splatter.
+avoidRules:
+  - blanket aerosol haze
+  - hard stencil cutouts
+  - unrequested graffiti lettering
+  - arbitrary splatter
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP19-010.webp
+attributes:
+  negativePrompt: blanket aerosol haze, hard stencil cutouts, unrequested graffiti lettering, arbitrary splatter
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: aerosol ink
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: aerosol ink
+    avoidRules:
+      - text: blanket aerosol haze
+        field: rendering_and_quality
+      - text: hard stencil cutouts
+        field: rendering_and_quality
+      - text: unrequested graffiti lettering
+        field: rendering_and_quality
+      - text: arbitrary splatter
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP06-012
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink
+    - aerosol
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

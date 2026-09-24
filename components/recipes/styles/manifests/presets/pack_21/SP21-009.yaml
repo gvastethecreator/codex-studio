@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP21-009
+packId: pack_21
+name: Optical Glaze
+category: 1. Paper & Pigment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - watercolor
+  - transparent-layering
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Transparent-pigment illustration built by laying thin color films over fully dried passages, so
+    each layer shifts the underlying hue without obscuring its structure.
+  subject_treatment: >-
+    Preserve the requested subject, pose and proportions. Add color depth over its existing planes
+    rather than changing their shape, surface identity or defining detail.
+  color_and_tone: >-
+    Respect the requested palette and apply transparent layers sequentially, allowing their overlap to
+    enrich selected colors. Keep each underlying value plane visible through the glazing.
+  lighting_and_shadow: >-
+    Follow the requested illumination and keep its shadow pattern stable between layers. Build depth
+    with transparent color shifts, not added dark outlines or a new glow.
+  texture_and_material: >-
+    Show smooth, distinct dried layers with clean overlaps and only slight brush-edge variation.
+    Keep pigment in place after drying instead of creating a wet bloom or resist boundary.
+  camera_and_composition: >-
+    Preserve the existing viewpoint, crop and placement. Distribute glaze changes within the supplied
+    forms without adding a product mockup, frame or page layout.
+  atmosphere_and_mood: >-
+    Carry the requested mood through layered chroma and value depth. Transparent glazing does not
+    require jewel tones, decorative ornament or an ethereal scene.
+  rendering_and_quality: >-
+    Keep layers transparent and their sequence perceptible in color while retaining crisp form
+    boundaries. Avoid opaque repainting, muddy wet-on-wet pools and blanket color filters.
+avoidRules:
+  - opaque repainting over the underlying value structure
+  - wet blooms or resist-edge patterns
+  - blanket color filters across all forms
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP21-009.webp
+attributes:
+  negativePrompt: opaque repainting over the underlying value structure, wet blooms or resist-edge patterns, blanket color filters across all forms
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: transparent-pigment-glaze
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: sequential-dry-transparent-layers-with-optical-color-build
+    avoidRules:
+      - text: opaque repainting over the underlying value structure
+        field: subject_treatment
+      - text: wet blooms or resist-edge patterns
+        field: texture_and_material
+      - text: blanket color filters across all forms
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - watercolor
+    - transparent-layering
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -23,6 +23,16 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
     import('./pack_17/grimdark-game-systems-and-tabletop-5').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
+  () =>
+    import('./pack_17/dungeon-zine-assemblage-and-stampwork-6').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_17/pulp-fantasy-painting-7').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_17/medieval-fantasy-drawing-media-8').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
@@ -31,7 +41,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_17',
     name: 'Medieval Fantasy & Dungeon Zine',
     description:
-      'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, and isometric game aesthetics.',
+      'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, isometric game aesthetics, analog zine processes, pulp fantasy painting, and transferable drawing-media studies.',
     presets: categoryPresets.flat(),
   };
 }

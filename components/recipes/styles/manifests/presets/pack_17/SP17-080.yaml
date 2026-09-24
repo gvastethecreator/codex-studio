@@ -1,0 +1,96 @@
+schemaVersion: 1
+id: SP17-080
+packId: pack_17
+name: Wax-Resist Ink Drawing
+category: 8. Medieval Fantasy Drawing Media
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Graphic drawing that combines wax-resist strokes with translucent and opaque ink washes. The
+    wax leaves pale channels inside broader pigment fields, creating a legible layered surface.
+  subject_treatment: >-
+    Preserve the requested subject, gesture, count, silhouette, and defining details. Place resist
+    lines along existing contours and planes so they clarify form rather than adding ornament.
+  color_and_tone: >-
+    Keep specified colors intact. If the prompt leaves color open, use a restricted ink range over
+    a light ground with a single muted accent; make the resist marks read by value rather than hue.
+  lighting_and_shadow: >-
+    Follow stated lighting and use transparent wash layers to deepen existing shadows. Wax-resist
+    gaps are paper highlights, not extra light sources or magical energy.
+  texture_and_material: >-
+    Vary the width and continuity of wax lines, then let ink collect softly at selected wash edges.
+    Keep the process texture separate from the material shown in the image.
+  camera_and_composition: >-
+    Retain the requested framing and viewpoint. Organize wash shapes around the existing focal
+    structure without imposing a vignette, border, or illuminated-page layout.
+  atmosphere_and_mood: >-
+    Let broken resist, translucent overlap, and exposed ground support the requested mood. Do not
+    introduce alchemical diagrams, symbols, or a ritual setting.
+  rendering_and_quality: >-
+    Keep wax marks visible through pigment, preserve clean silhouette breaks, and limit blooms to
+    selected edges. Avoid muddy wash pooling, uniform speckle, or detail loss beneath the ink.
+avoidRules:
+  - forced parchment or stained-page setting
+  - unrequested symbols, diagrams, or lettering
+  - resist lines that invent decoration or alter identity
+  - uniform wash blooms or paper speckle
+  - muddy ink that closes important shapes
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-080.webp
+attributes:
+  negativePrompt: forced parchment or stained page setting, unrequested symbols diagrams or lettering, resist lines that invent decoration or alter identity, uniform wash blooms or paper speckle, muddy ink that closes important shapes
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: wax-resist and ink-wash drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: wax-resist and ink-wash drawing
+    avoidRules:
+      - text: forced parchment or stained-page setting
+        field: texture_and_material
+      - text: unrequested symbols, diagrams, or lettering
+        field: global
+      - text: resist lines that invent decoration or alter identity
+        field: subject_treatment
+      - text: uniform wash blooms or paper speckle
+        field: texture_and_material
+      - text: muddy ink that closes important shapes
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

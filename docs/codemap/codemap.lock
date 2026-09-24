@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "14a4908e5af5562cd997c8b65277b811248c9f0c",
+  "source_commit": "d43d1f8caa350aad19a3213d36fdbc17fb4ec57a",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-24T01:30:30Z",
-  "generation_id": "20637f7c7fbd5c938f945a9fcf91399c59480cfdccfd02e1098abd15deb0a8a7",
+  "generated_at": "2026-09-24T03:07:30Z",
+  "generation_id": "84599abeee656c9bacd1690d566e069f018d5a499f0bd8b77c2ef774e9dba25a",
   "analysis": {
     "version": "syntax-1",
     "digest": "277e322054c030f72811f774ad4e959bcf8d1244bfb70c076e298cf824ccdc3c"
@@ -123,8 +123,8 @@
         "path": "apps/local-server/src/appFactory.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "131f1e3c684fd88d92a5f8d2f64046a2de325bb0e17d398cba06f635f225040f",
-        "size": 18868
+        "digest": "a2e4089f5bae5b21e95be870fabf76817ee8e68e64c03c9902242eef45c5464d",
+        "size": 18911
       },
       {
         "path": "apps/local-server/src/assetLogRoutes.test.ts",
@@ -1019,15 +1019,15 @@
         "path": "apps/local-server/src/providerCapabilities.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "24011e7f8cfe439e6a412b0f52802e9aa98314cfe805641d059e45c4f4c73b13",
-        "size": 5284
+        "digest": "5598f80ac208466da08b4f3b60a9731860cf43fddffd9f3bd82b92d1cf2cb799",
+        "size": 5318
       },
       {
         "path": "apps/local-server/src/providerCapabilities.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "46ea53708fb087992ba85913bba21aa2cc11d97b1df0549531a1946d25541bce",
-        "size": 6378
+        "digest": "4b9f398605798ecc0056022d5c007fb7269c72123dd29aac72a3db3c367ec51d",
+        "size": 2989
       },
       {
         "path": "apps/local-server/src/providerExecutionPolicy.test.ts",
@@ -1278,8 +1278,8 @@
         "path": "apps/local-server/src/providers/grokImagineHttpExecutor.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "ad44bfb438d0f9859e4cb438fd353ec3cdac94390b01610a0066b810fc04a286",
-        "size": 10851
+        "digest": "20e2361c226553556b9fb0ff51056c940a2f682191c579e67b990490da896763",
+        "size": 10871
       },
       {
         "path": "apps/local-server/src/providers/grokImagineHttpExecutor.ts",
@@ -1355,15 +1355,15 @@
         "path": "apps/local-server/src/providers/runtimeConfig.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "f222349d141d5435d60f39b9d1815e5b09ae85ac56e5f53c7a256af112beafe1",
-        "size": 8758
+        "digest": "7ccfb2d9caf9d6439000ca0c4425b0ae7241d8719b294a3f68eb497cfef7d13d",
+        "size": 9292
       },
       {
         "path": "apps/local-server/src/providers/runtimeConfig.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "729ef259c80a1d8e838cc0fd0ca116baa3f1926bcaa20e32cde80cfc58607c6f",
-        "size": 15120
+        "digest": "9522f42ef00981e6bfbbc3b3024ec00e5373f6b3f7d358515c39f2a0ab0c8f13",
+        "size": 16022
       },
       {
         "path": "apps/local-server/src/providers/subscriptionHttpError.ts",
@@ -2342,8 +2342,8 @@
         "path": "components/recipes/StylesBrowser.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "977e381a39e45cf8814a2a2ef4e89d7ba7569eccc0fa0c357599b07e2c771468",
-        "size": 118213
+        "digest": "385a9fa2c36c6b76453044c9146efa685aa53a6009f627648b491ce30a094a95",
+        "size": 119401
       },
       {
         "path": "components/recipes/StylesRecipe.tsx",
@@ -2375,7 +2375,7 @@
       },
       {
         "path": "components/recipes/archivedStylePresets.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "1b68bd64e04882e506d0670f236328c83577e6ca7b8b422a9247fd9493f3652c",
         "size": 6371
@@ -2454,8 +2454,8 @@
         "path": "components/recipes/styleCurationBoundary.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "c38f8089ea515b3e75eb7a577ae9ee65971a623ef9c01cab8f52268da4d1601f",
-        "size": 9059
+        "digest": "3562cde12855a881e141dcdc7c3a7bcec4dd952c60e9a6410a96117aa8ecc03c",
+        "size": 9060
       },
       {
         "path": "components/recipes/styleGridVirtualization.test.ts",
@@ -2627,14 +2627,14 @@
       },
       {
         "path": "components/recipes/stylePresetCatalogData.pack_22.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "fae07270a827a11b570131dd4493e487afce638fd0886020721453565b457da1",
         "size": 634
       },
       {
         "path": "components/recipes/stylePresetCatalogData.pack_23.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "bdcf70b691874b86a1f988901e188203a61128fb51dbdd934e65ffe7d05aac20",
         "size": 634
@@ -2664,7 +2664,7 @@
         "path": "components/recipes/stylePresetManifests.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a6b8ade7db7c9209105037a731b39d5760043297afc4bfc1bccd7e87c8efd13b",
+        "digest": "b4559030a0d2d3f8f697f0bddf360f226e0321813840f3ea9986b24033c8586d",
         "size": 23501
       },
       {
@@ -2685,8 +2685,8 @@
         "path": "components/recipes/styleRuntimeData.generated.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "4d7f7aeda1df1b409d214d40c473977ff8dc5db82371cf41acc193f20819d82a",
-        "size": 9882
+        "digest": "df4fe08f820ce00e442d32890df7162fa36fdf842e4be0ecc0e8fd65fb337b12",
+        "size": 9973
       },
       {
         "path": "components/recipes/styleRuntimePackRequirements.test.ts",
@@ -3411,126 +3411,63 @@
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/akan-mythology-anansi-6.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "fe97fe86643b4c50046b2f3821a8f12d047904b34fbc6e2f331b240550bd3bb7",
         "size": 3419
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/egyptian-mythology-7.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "a4871e3c5c06be3adf74934aecb1026e2931e4c9fc9966dd05bc39b5f88ccb37",
         "size": 3356
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/greek-mythology-epic-noir-1.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "895eba52f07dc59eb0c9da9f798b1c32767b46203101cd5aad822a5a6228ae37",
         "size": 3583
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/japanese-mythology-kami-and-yokai-2.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "5741380706b7f83ca30992a952796a707dde40069658fbde053da45589d9abfb",
         "size": 3842
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mande-oral-epic-4.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "57e58a0c640cf6b96f666a7748fb4e42806cad12e8ab94952c2ad20b8c0055b4",
         "size": 3642
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/maya-mythology-8.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "f92508aa38e737120e0d273031a12144561e1a551d00e1855dce3e4f4bff2216",
         "size": 3763
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/mexica-mythology-9.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "51366392890019fc4acf604aff4dbeee80bde5a2883b6156ca2edb5ba5e9b654",
         "size": 3724
       },
       {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-african-cosmologies-6.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-cosmology-and-omens-4.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-greek-epics-5.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-japanese-yokai-and-kami-7.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-mesoamerican-suns-9.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-norse-sagas-8.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-pantheons-and-legends-3.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-ritual-noir-2.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "components/recipes/styleRuntimePacks.generated/pack_14/mythic-symbolism-1.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/norse-mythology-sagas-3.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "26668fcd4dff79843edac74950ac70b4e5a7743a42614124e85f2738da433a5b",
         "size": 3677
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_14/yoruba-mythology-orisha-5.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "b9a54cf5551ef930cef21719043201b37a209e4d8f6368ce6d40d0206a15db95",
         "size": 3651
@@ -3672,8 +3609,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_17.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "b1c2347007d35def11f1038d0d740e2ab083b7f9b22bc3e003c2cf6dbde4c500",
-        "size": 1564
+        "digest": "b47e02ec094ef0f61e9fa70fa3c84768a792f5ccd04fd2f690e65b90c229b3be",
+        "size": 2015
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/dark-fantasy-and-gothic-courts-1.ts",
@@ -3690,6 +3627,13 @@
         "size": 31222
       },
       {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_17/dungeon-zine-assemblage-and-stampwork-6.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "48571d18563196f88d930bc50050a851af414cfa8c1d9ec832e0d7e728c60a16",
+        "size": 6884
+      },
+      {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/grimdark-game-systems-and-tabletop-5.ts",
         "origin": "tracked",
         "state": "present",
@@ -3704,6 +3648,20 @@
         "size": 50996
       },
       {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_17/medieval-fantasy-drawing-media-8.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "58afea9ce2b0b0b49345ca91df23677949d825ca33ba90dda091cf014a89db44",
+        "size": 10902
+      },
+      {
+        "path": "components/recipes/styleRuntimePacks.generated/pack_17/pulp-fantasy-painting-7.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "2435cb8c0ac2d8afd1ace28418fc2a14c691d236437b3aadc20bd5085bbd61a3",
+        "size": 4645
+      },
+      {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/rune-tech-and-apocalyptic-warfronts-4.ts",
         "origin": "tracked",
         "state": "present",
@@ -3714,243 +3672,243 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_19.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "918b6a76414f55b2f22699da2a774b14f9f1e92ef6612eb2f2b63a889e0d314b",
-        "size": 888
+        "digest": "5e1467e541b7c95427096d7b25e289eeb276ea6c2e886542ed0bf1866abd5b87",
+        "size": 915
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_19/ink-structures-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "5e0b4b562553fd8fb9b5cc1a3fd4f69d5a0ec79dec422fc3ca35c234665ce844",
-        "size": 6999
+        "digest": "3db85f487522c3531af802fbe46963af83f7b47fcd0d53d32569f2061de5200f",
+        "size": 17910
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_20.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "1dab61f3b6bcacc91929853b6ce6230b79da74c4d3ef36635fc100f7aa678230",
-        "size": 890
+        "digest": "6aa3477ee8aa335cf10b9c91c49a1b3fb09f493bc8e9bf2cc0f04e63a0a7832a",
+        "size": 878
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_20/print-registers-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "6b30e9c6fbeca7949a39d2bc4076f77bc28adaf5d9325160864782d50d0d1c82",
-        "size": 6677
+        "digest": "5c7180184a9e65434e5d68f0e029ba17f6e42dc0fbe1fcffbd1112d7a5626207",
+        "size": 18407
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_21.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a2df27bc235e48dc4ceca94fcab52396f8cb527ddf2c080489328ee71416e72d",
-        "size": 892
+        "digest": "b202f064ec02e5fd55d73db52bedf79c7c63dc86c68063c5f15732d7e35c9950",
+        "size": 883
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_21/paper-and-pigment-1.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "e1b2febfd864d15abb2f0603fa08f7a5c5ae3fb9f5b5e9b00107b1ac953edaff",
-        "size": 6757
+        "digest": "7e7c3c9ec7f8bde9c56a6ed349de2ccbfb5474a08f3f72e19dd2fa20e2ff3b80",
+        "size": 18807
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "ebc2ac01cc5dccdd6ebad7f02c2ebe905c4a48605318ddcbcb58b24beba02fdf",
         "size": 2592
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/anime-illustration-6.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "0ad373c9aa6ae9dca5a35116150504508db9b819d3aac12e12ae04148c3d3742",
         "size": 15390
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/character-and-readable-forms-5.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "233acbce4bf6b447fe4a871fefc8ca38680ed21fd26610848c5aafe16659bbcc",
         "size": 14726
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/comic-and-cartoon-illustration-9.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "59f9cdb6362ba835865ae316f25e8cb1c49206601acdae9b032aaf58df145d28",
         "size": 14851
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/crafted-materials-and-miniatures-12.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "5fa1fb124fe164a9b3a2108acac7ba213a766ee911f04ff0e9629d669721c6c4",
         "size": 15238
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/digital-rendering-methods-15.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "bdf627de3ff5f73b45914162e4fd272883d0cd49e89f7c5fa0b7ef01fead82ae",
         "size": 15265
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/epic-digital-painting-2.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "9e44d77fd6012c39542a2e10ad1a8a17292ccb4a5605eb16595a83fa0ecad14b",
         "size": 14561
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/manga-ink-and-impact-7.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "8e634cdb8c7550c32f171108f3c684724e0d0faa3404c486dc0e95e18213a6cd",
         "size": 14997
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/ornament-and-symbolic-illustration-11.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "2ef31b10d6998850df9af70e04be22f3b78b93baef2fa6a02947d884ae1ea33e",
         "size": 15317
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/printmaking-and-reproduction-10.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "d2e211009a47c1baec83248b4d8a1286a342f846196543b94b75a9d1c24cc6cc",
         "size": 15123
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/storybook-and-animation-4.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "30d360b42bd4ae5aaed1e00de2f075c92b07e584986b9a53705afa08231f6568",
         "size": 14564
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/strange-ink-and-paint-3.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "bb92127642eb4bc0c82d6e34d2ae343c6650349883d92f4a1205fc50b24b9579",
         "size": 15912
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/symbolic-graphic-illustration-14.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "325e988f7c335a062c677cbdb63cd4359c20987ed306f6a812d1c05d5dfdacbb",
         "size": 14948
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/technical-illustration-8.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "d763955a613618bc5bcccd2e1a77dea916d1e7fcace931b3659edd8718e2b109",
         "size": 15053
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/vintage-collectible-illustration-13.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "48cdf92fff336bc435a07bdb698de0bf6f151a9401a2dc7fab7139dbf5818546",
         "size": 16255
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_22/workshop-painting-1.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "13faf6e2ffb45a26246c0743fccf3a5e856b717b673c034d0bd857706e028e95",
         "size": 14435
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "9ea133e93232a559e14f38d241995a6656c884a6bb699a90ccc6f14d376c51d1",
         "size": 2203
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/classic-rpg-visual-studies-6.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "58207c71b061dea390fcc9f268be7529cb3eef2e0548237213872ee10547ccc3",
         "size": 9838
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/hybrid-visual-studies-12.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "4e3092ccc259c114c7f7d609d4ce164ca666a9ebb144a6f76712ed0f2a45b216",
         "size": 12111
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/indexed-raster-language-7.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "2b1a2725fee18daa351ebd23489e1c2a330352c1ea8e0beefa23b856b4c6881a",
         "size": 9538
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/manuscript-visual-systems-1.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "861f3584febdcb8a8b495bc59a2ae5c3e9bbe14433809db1de05a97a22ef765c",
         "size": 11520
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/medieval-material-studies-3.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "fc34d5e6fe3bf47e7f7d784de0b3ddffc559fb2a8b8e54aa45836fcdeec64623",
         "size": 10601
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/modern-visual-techniques-11.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "ccc7db0ef07c8c9c95cc39b4800d6f6a4d0124ef4c03f37b3967648540912ef6",
         "size": 11774
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/painted-rpg-and-tactics-9.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "595a8f75115cbd1c26d26fe25dad943e2725be215f81e768cbc5b02a2a815411",
         "size": 10165
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/print-and-engraving-2.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "121ad3ef64e5f88d9d1f6aaf4c51631612c11857bc046a99eea133250d6dd517",
         "size": 11359
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/regional-manuscript-traditions-4.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "f658944f242575766d7b78778bb56b3cae35f422813cd2d359fd8a940e15434a",
         "size": 9715
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/retro-3d-visual-studies-8.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "2a4b6fa8324a916045de417973e5eb4bd31d4555374f71f3c457018a21a592fc",
         "size": 7216
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/revival-and-storybook-illustration-5.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "4587d8a4f31f5a4afedd78092b9ab756987a046ef13fd2fe4674b85167aed690",
         "size": 9308
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_23/tabletop-illustration-studies-10.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "2699ec13ffe7fc5f367a1fa2bebe80da90a03bf82e6f695d67475e00c43655c1",
         "size": 10850
@@ -3984,18 +3942,25 @@
         "size": 2132
       },
       {
-        "path": "components/recipes/styles/TcgPendingCatalog.tsx",
+        "path": "components/recipes/styles/TcgComponentStudio.tsx",
         "origin": "untracked",
         "state": "present",
-        "digest": "2cce6972e655ae55512a93837434df5fefe534b2126f7d133692f19ecb5de822",
-        "size": 3559
+        "digest": "b2d91a1e6bcf567543babe951fe47a7e8ff6810fc0a5290481215dd5074fe057",
+        "size": 39179
+      },
+      {
+        "path": "components/recipes/styles/TcgPendingCatalog.tsx",
+        "origin": "tracked",
+        "state": "missing",
+        "digest": null,
+        "size": 0
       },
       {
         "path": "components/recipes/styles/collections/categoryDisplayNames.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "f00b5b313bacf2c8170b966892e2802f345dfbdb1896c92bcb3d12db9905b39a",
-        "size": 9739
+        "digest": "698e6339294fca0d9ac522c46b447b225cd0238479f8916ca19b8527409239ae",
+        "size": 9956
       },
       {
         "path": "components/recipes/styles/collections/index.ts",
@@ -4089,6 +4054,27 @@
         "size": 1444
       },
       {
+        "path": "components/recipes/styles/tcgCardRenderer.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "761851b42c5e2c187a6a12c2fb9a6a5f07feaff555e0ccbb1ee6480988843614",
+        "size": 34642
+      },
+      {
+        "path": "components/recipes/styles/tcgComponentModel.test.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "7aa7a79dde2fe54ae72fe5bd541028301616f1b46aeb280be839ad2e76df8b48",
+        "size": 1232
+      },
+      {
+        "path": "components/recipes/styles/tcgComponentModel.ts",
+        "origin": "untracked",
+        "state": "present",
+        "digest": "228ce11590816fe849b366df7f278a306533fe71905a1edd28969c179520581b",
+        "size": 1751
+      },
+      {
         "path": "components/recipes/stylesData.test.ts",
         "origin": "tracked",
         "state": "present",
@@ -4176,8 +4162,8 @@
         "path": "components/settings/SettingsProvidersPanel.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "9213b3d553edb205e529db8284d02b2ac6c0b0de720a273461ed3345089cfb98",
-        "size": 8911
+        "digest": "8e1bd66adf6de45c38e79c6df61f313169a3845204177ebf9c8f6b74d3668d57",
+        "size": 9001
       },
       {
         "path": "components/settings/SubscriptionAuthControls.test.tsx",
@@ -4190,8 +4176,8 @@
         "path": "components/settings/SubscriptionAuthControls.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "2dba5ebd6533296b96ecbfc3eed6e1349bbb10ca533c40dd41c2984179fb7ace",
-        "size": 8501
+        "digest": "e5373e9dd9ffe0b19a97829ef1ce49afeaea04e5acc45e67709d331ec2d8afcf",
+        "size": 8665
       },
       {
         "path": "components/shell/StudioGenerationDock.tsx",
@@ -5226,8 +5212,8 @@
         "path": "lib/commandCenterProjection.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "aea112cf00bc4475ee4f8e18a2a3badf6f8dd8ac122babe08f5396660e062ab0",
-        "size": 6444
+        "digest": "0c6a65979718169ad270dcb04f4b3e4d499df11b258c4b75ab4192def0d3e489",
+        "size": 6439
       },
       {
         "path": "lib/composerProviderProjection.test.ts",
@@ -6059,8 +6045,8 @@
         "path": "lib/styleLandingFolderIndex.generated.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "b5f4012f1b3515ba968306827f059f29a6c32a5f5a4b6c218ad7ec903896a07d",
-        "size": 11897
+        "digest": "8feb4daf7a578104b8e6227fb05fdc725e6187f2e47e678ca5a84448e1afe45a",
+        "size": 11972
       },
       {
         "path": "lib/stylePresetVisuals.test.ts",
@@ -6213,40 +6199,40 @@
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_17.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "43c42eddad801914548e968330234538d4c5a1cdf9ae1df22d5f000315253e5b",
-        "size": 38713
+        "digest": "29c727370d959e118aaee19c8a0d1ae72703f0d15f7da811d8387414b340c220",
+        "size": 39723
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_18.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
-        "digest": "8f236aa70820878f5994894206d6c6c23f4aad127ebfaeb32deacc44facf1c9a",
-        "size": 773
+        "digest": "9bdd52783029235ac88d3be959072d75c34268285d7e0ccda1f7e35631293df6",
+        "size": 1379
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_19.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
-        "digest": "3a606380810733adf7a040fcb8ce960c6b23ad9b7aa0486a78c39badf0434fc8",
-        "size": 773
+        "digest": "ea7918dcfa56bf314bb560a1a9b4bc2eac29b9065f1b8082ac34d7b1840d033b",
+        "size": 1379
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_20.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
-        "digest": "a168955ab7d267958a977825ba338dc81ffa2b584e980ce5cf057120eea18c8a",
-        "size": 773
+        "digest": "771b62296af7b2fbb8ee3e1f2a41d230c523366a633ee0f795071946db4c267e",
+        "size": 1379
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_21.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "9404667ee1f4e0ffda4f350636de586661a5ff988705199a497acd6554fddee0",
         "size": 34410
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_22.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "fba30d55da13310bcdfacb06468ab79ad2dc51c36c3ce9463fd9474317d560b1",
         "size": 16434
@@ -6416,8 +6402,8 @@
         "path": "packages/shared/src/grokImagineContract.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "169f8fe602daff2a196a61a68e1b1d77d28a8f53d0223f9bf38d46e35a330e50",
-        "size": 3655
+        "digest": "922157081b774c55f7726324413789d742a165c9d13744ea4ef7c51276172c90",
+        "size": 3598
       },
       {
         "path": "packages/shared/src/index.ts",
@@ -6493,8 +6479,8 @@
         "path": "packages/shared/src/providerCapabilities.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "c2ff5358166200c972206dff76d0471a7eb6a7ef5262554cf9d239018ae27058",
-        "size": 8460
+        "digest": "f4edfadba4aecf03cd72231a30cdceb96cad53d2864c7ced8aa0c08319b0218b",
+        "size": 8518
       },
       {
         "path": "packages/shared/src/recipeProviderDirectives.test.ts",
@@ -6829,7 +6815,7 @@
         "path": "scripts/audit-style-curation.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "7d93f38208f3536bec8b1c69f7250c6c322c2683e3b9ecaaa337c399630bca8d",
+        "digest": "24346fb64c5986fd9faac58525871f9c96660d6ee73060c9e760f3ced98b5440",
         "size": 3762
       },
       {
@@ -7464,56 +7450,56 @@
       },
       {
         "path": "scripts/style-curation/legacy-card-briefs-packs02-06.test.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "cfb1afd0b6d86858deb2b8c4b0d661f7532ce23052012db57f23d58283c16546",
         "size": 16703
       },
       {
         "path": "scripts/style-curation/legacy-card-briefs-packs02-06.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "d2dc4874de40531daea7f6c6f31e0582d5e8b8595d1e08284dd0f82ec90ce7be",
         "size": 156416
       },
       {
         "path": "scripts/style-curation/legacy-card-briefs-packs07-11.test.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "43c7ee18aa6fd30abbafe31acc008c722128186a7bb93cf576982215a5013c95",
         "size": 6795
       },
       {
         "path": "scripts/style-curation/legacy-card-briefs-packs07-11.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "6e678e413baba05e242eba203b061f124071554aae2c6cfcabf37b8214a696d2",
         "size": 79619
       },
       {
         "path": "scripts/style-curation/legacy-card-briefs-packs12-17.test.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
-        "digest": "3804bffe3bce90e77774b8d3232711664eab15e29800079e5a58a98155b9767a",
-        "size": 4678
+        "digest": "22996fab5615edf534f57c98bcfac18eec4fd20aa5b32a6fc7a6fdc300de8cc3",
+        "size": 4988
       },
       {
         "path": "scripts/style-curation/legacy-card-briefs-packs12-17.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "8090ee0f8e60c09620e287ea95510e01a4be234c14e0f4647820b9385458852c",
         "size": 62925
       },
       {
         "path": "scripts/style-curation/legacy-card-briefs.test.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "a7dcc0f85ff7d68f3d7a1811e36e9073b285d630173c0eb0100f0181416640f3",
         "size": 2306
       },
       {
         "path": "scripts/style-curation/legacy-card-briefs.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "0cc2c3ad58bb49169ceb63feb505169510bb712d53adf3692c4fd9f0842383a5",
         "size": 22165
@@ -7650,20 +7636,6 @@
         "state": "present",
         "digest": "dccac13cd754846725f09c18b33030b10d6bcbe706f8aff2300192b2c2543a26",
         "size": 22886
-      },
-      {
-        "path": "scripts/style-migration/enrich-pack-14-mythic-noir-dna.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
-      },
-      {
-        "path": "scripts/style-migration/enrich-pack-15-punk-spectrum-dna.ts",
-        "origin": "tracked",
-        "state": "missing",
-        "digest": null,
-        "size": 0
       },
       {
         "path": "scripts/style-migration/enrich-pack-16-anime-prestige-dna.ts",
@@ -8198,12 +8170,12 @@
         "size": 710
       }
     ],
-    "digest": "d1def51df7ab98619f83906a0c75b85827bc1b2a56b25d36917005fd4d86db37"
+    "digest": "fed9860d9f76d52914c031559234139006a5a1fa8ed02fec69ece69242091750"
   },
-  "source_digest": "8be7e2d3586c5b8aba418ff646602a3a3156464d1eb87e0d38da1af2ffed1d11",
+  "source_digest": "28f6fd9636b1dea45ea61492558617a947d3bd7b094472d019fa326de9e88a95",
   "artifact_hashes": {
-    "codemap.json": "209afb9afc998a03679317aca457335aa2510b74250210b94f145312d9f6d766",
-    "codemap.md": "61772e16d9773586a833b40fc6e525a43790e05e4b5fa0b4e89d0ece8e293125",
-    "codemap.html": "854bf6a65fccf7da20150de2fed80d57d68927b625a142c335bc605b9e134ca4"
+    "codemap.json": "eab456db6c6d53faabfbadecd5e919a57401f21d9337babb4a51c5eb561644cb",
+    "codemap.md": "30716895f6a92b8fbc5685ba8df64d8a74a40ca50ce4b735afd8d7d500778b31",
+    "codemap.html": "b69821641905d96693920c80208a1af7165f84fdaa04545a42456f2e735e93a1"
   }
 }

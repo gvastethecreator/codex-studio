@@ -1,0 +1,90 @@
+schemaVersion: 1
+id: SP19-009
+packId: pack_19
+name: Rake-Pulled Ink
+category: 1. Ink Structures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink
+  - raked-ink
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: Direct wet-ink illustration with parallel channels pulled through broad deposited masses.
+  subject_treatment:
+    Keep the requested identity and proportions. Establish solid form first, then rake short
+    directional channels through selected masses to reveal planes and internal structure.
+  color_and_tone:
+    Honor the requested palette. Use deposited ink for dark anchors and exposed support in pulled
+    channels for light; avoid changing the subject's named colors.
+  lighting_and_shadow:
+    Follow the requested light direction by varying channel spacing and mass coverage within
+    existing planes. Do not add a new source to justify the marks.
+  texture_and_material:
+    Make the pulled channels visibly parallel within each local passage, with wet-ink ridges at
+    their ends. Change direction by form; do not cover the entire image with one comb pattern.
+  camera_and_composition:
+    Preserve the requested camera and composition. Restrict raked marks to selected planes so
+    major silhouette and negative-space decisions remain clear.
+  atmosphere_and_mood:
+    Let alternating solid masses and opened channels support the requested mood without adding
+    craft tools, an archival setting or a required scene.
+  rendering_and_quality:
+    Keep channels distinct enough to describe volume at reduced size. Avoid uniform striping,
+    accidental cuts across identity-defining features and decorative text.
+avoidRules:
+  - uniform full-frame striping
+  - channels that cut through identity-defining details
+  - unrequested labels or craft tools
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP19-009.webp
+attributes:
+  negativePrompt: uniform full-frame striping, channels that cut through identity-defining details, unrequested labels or craft tools
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: direct wet-ink drawing
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: raked wet-ink drawing
+    avoidRules:
+      - text: uniform full-frame striping
+        field: rendering_and_quality
+      - text: channels that cut through identity-defining details
+        field: rendering_and_quality
+      - text: unrequested labels or craft tools
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink
+    - raked-ink
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

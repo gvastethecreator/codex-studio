@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP19-005
+packId: pack_19
+name: Weighted Stipple
+category: 1. Ink Structures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink
+  - stipple
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: Monochrome ink illustration built from discrete dot clusters whose density carries form and value.
+  subject_treatment:
+    Preserve the requested subject and proportions. Let clustered dots describe planes and turn contours;
+    do not depend on continuous outlines to hold the image together.
+  color_and_tone:
+    Work in a strong ink-to-ground range, varying dot size and spacing before adding any supplied accent.
+    Honor explicit palette requests without introducing unrelated colors.
+  lighting_and_shadow:
+    Build shadows through tighter point spacing and keep highlights readable as open ground. Follow
+    the requested light direction without adding a new light source.
+  texture_and_material:
+    Keep dots individually legible at the intended scale. Let clusters follow the existing form and
+    taper at their edges instead of spreading as uniform grain.
+  camera_and_composition:
+    Preserve the requested framing and viewpoint. Concentrate the densest clusters around existing
+    focal forms, leaving useful open gaps between adjacent shapes.
+  atmosphere_and_mood:
+    Carry the requested tone through point density and the amount of open ground; do not impose
+    a tattoo subject or ritual setting.
+  rendering_and_quality:
+    Maintain controlled dot sizes and smooth density steps with crisp focal silhouettes. Avoid
+    mechanical screens and scattered filler marks.
+avoidRules:
+  - uniform halftone screen
+  - continuous outlines replacing the dot structure
+  - random splatter fields
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP19-005.webp
+attributes:
+  negativePrompt: uniform halftone screen, continuous outlines replacing the dot structure, random splatter fields
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: ink
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: ink
+    avoidRules:
+      - text: uniform halftone screen
+        field: rendering_and_quality
+      - text: continuous outlines replacing the dot structure
+        field: rendering_and_quality
+      - text: random splatter fields
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    derivedFrom:
+      - SP04-064
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink
+    - stipple
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

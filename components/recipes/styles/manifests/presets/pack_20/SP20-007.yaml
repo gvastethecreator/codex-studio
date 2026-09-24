@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP20-007
+packId: pack_20
+name: Monotype Wipe
+category: 1. Print Registers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print
+  - monotype
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    One-off plate-transfer illustration made by inking a smooth surface, selectively wiping or drawing
+    through the ink, then pressing a single image onto its support.
+  subject_treatment: >-
+    Keep the requested identity, gesture and arrangement. Use wiped passages and plate-drawn marks to
+    describe existing forms without introducing a second ghost image.
+  color_and_tone: >-
+    Work within the requested palette. Shape value with differences in ink coverage, wiped-back
+    passages and selective overprinting rather than a fixed duotone.
+  lighting_and_shadow: >-
+    Respect the requested light direction. Make wiped-back areas read as lighter planes and denser
+    plate ink read as existing shadows.
+  texture_and_material: >-
+    Confine soft pooling, wipe tracks and small pressure breaks to transferred ink. Keep these marks
+    directional and local; do not add fingerprints, paper wrinkles or broad bleed.
+  camera_and_composition: >-
+    Preserve the requested framing and spatial relationships. A single transfer may soften some edges
+    but must keep the focal silhouette and crop intact.
+  atmosphere_and_mood: >-
+    Let the requested tone guide the balance of fluid and wiped-back passages without requiring a
+    studio, print table or other setting.
+  rendering_and_quality: >-
+    Preserve intentional plate marks and readable edges, with small transfer variation rather than
+    repeated color-plate misregistration or global blur.
+avoidRules:
+  - large ghosted duplicate impressions
+  - paper wrinkles or plate borders as unrequested props
+  - global blur or uncontrolled ink bleed
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP20-007.webp
+attributes:
+  negativePrompt: large ghosted duplicate impressions, paper wrinkles or plate borders as unrequested props, global blur or uncontrolled ink bleed
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: monotype
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: single-plate-ink-transfer
+    avoidRules:
+      - text: large ghosted duplicate impressions
+        field: rendering_and_quality
+      - text: paper wrinkles or plate borders as unrequested props
+        field: rendering_and_quality
+      - text: global blur or uncontrolled ink bleed
+        field: texture_and_material
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print
+    - monotype
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

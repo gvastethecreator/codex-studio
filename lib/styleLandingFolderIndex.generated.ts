@@ -24,8 +24,8 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'portable_visual_studies',
     kind: 'collection',
-    presetCount: 12,
-    imageKeys: ['SP19-001', 'SP19-002', 'SP19-003', 'SP19-004', 'SP20-001', 'SP20-002'],
+    presetCount: 30,
+    imageKeys: ['SP19-001', 'SP19-002', 'SP19-003', 'SP19-004', 'SP19-005', 'SP19-006'],
   },
   {
     id: 'photography_camera',
@@ -239,7 +239,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'dungeon_dark_fantasy_wargame',
     kind: 'collection',
-    presetCount: 73,
+    presetCount: 83,
     imageKeys: ['SP17-001', 'SP17-073', 'SP17-002', 'SP17-003', 'SP17-004', 'SP17-005'],
   },
   {
@@ -449,7 +449,7 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_17',
     kind: 'source',
-    presetCount: 73,
+    presetCount: 83,
     imageKeys: [
       'pack_17__dark_fantasy_and_gothic_courts',
       'pack_17__dungeon_zine_and_risograph_prints',
@@ -462,20 +462,20 @@ export const STYLE_LANDING_FOLDER_SUMMARIES: StyleLandingFolderSummary[] = [
   {
     id: 'pack_19',
     kind: 'source',
-    presetCount: 4,
-    imageKeys: ['SP19-001', 'SP19-002', 'SP19-003', 'SP19-004'],
+    presetCount: 10,
+    imageKeys: ['SP19-001', 'SP19-002', 'SP19-003', 'SP19-004', 'SP19-005', 'SP19-006'],
   },
   {
     id: 'pack_20',
     kind: 'source',
-    presetCount: 4,
-    imageKeys: ['SP20-001', 'SP20-002', 'SP20-003', 'SP20-004'],
+    presetCount: 10,
+    imageKeys: ['SP20-001', 'SP20-002', 'SP20-003', 'SP20-004', 'SP20-005', 'SP20-006'],
   },
   {
     id: 'pack_21',
     kind: 'source',
-    presetCount: 4,
-    imageKeys: ['SP21-001', 'SP21-002', 'SP21-003', 'SP21-004'],
+    presetCount: 10,
+    imageKeys: ['SP21-001', 'SP21-002', 'SP21-003', 'SP21-004', 'SP21-005', 'SP21-006'],
   },
   {
     id: 'pack_22',

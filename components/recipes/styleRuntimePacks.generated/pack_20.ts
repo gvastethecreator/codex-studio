@@ -12,7 +12,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_20',
     name: 'Print Registers',
     description:
-      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; representative preview images are available; cross-subject visual evaluation remains pending.',
+      'Portable visual studies with explicit printmaking mechanics. Existing representative previews remain available; new entries await preview creation and cross-subject visual evaluation.',
     presets: categoryPresets.flat(),
   };
 }

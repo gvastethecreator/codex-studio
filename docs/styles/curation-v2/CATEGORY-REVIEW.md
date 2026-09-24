@@ -1,8 +1,8 @@
-# Category review — 148 categories
+# Category review — 151 categories
 
 Generated from `scripts/style-curation/category-reviews.json` and current source manifests.
 
-**Scope:** source/text decisions covering 1,711 presets, including legacy categories, authored studies and the imported atlases. Each entry separates editorial state from cross-subject image validation. Representative evidence describes the source; generated cards alone do not certify transfer across subjects. Implementation details are recorded in README.md.
+**Scope:** source/text decisions covering 1,739 presets, including legacy categories, authored studies and the imported atlases. Each entry separates editorial state from cross-subject image validation. Representative evidence describes the source; generated cards alone do not certify transfer across subjects. Implementation details are recorded in README.md.
 
 Types: style = visual language; modifier = scoped treatment; profile = deliberate output/camera format; theme = content/design/world direction; mixed = individual presets need separation.
 
@@ -1296,50 +1296,96 @@ Evidence [SP17-026](../../../components/recipes/styles/manifests/presets/pack_17
 Evidence [SP17-064](../../../components/recipes/styles/manifests/presets/pack_17/SP17-064.yaml) — Monochrome Dungeon Pixels: `Vertical card crop that can show a sprite portrait, isometric tile fragment, side-view scenelet, or symbolic pixel object with no interface.`
 Evidence [SP17-068](../../../components/recipes/styles/manifests/presets/pack_17/SP17-068.yaml) — Rusted Vault Grimdark: `Vertical grimdark card or sourcebook crop with one strong symbolic focal subject and background survival architecture as support.`
 
-## pack_19 / 1. Ink Structures
+## pack_17 / 6. Dungeon Zine Assemblage & Stampwork
 
-**Display:** Ink Structures · **Scope:** style · **Presets:** 4
+**Display:** Dungeon zine assemblage · **Scope:** style · **Presets:** 3
 **Editorial state:** text-authored · **Cross-subject image validation:** pending
 
-**Problem:** Representative cards are available; the authored derivatives still need cross-subject visual validation.
+**Problem:** Three new handmade zine processes need comparison with existing dungeon print treatments and with one another.
+**Retain:** The requested subject and action remain intact while torn paper, stencil ink or stamping constructs the image.
+**Proposed action:** Keep the three mark mechanisms distinct; do not make dungeon props or page furniture mandatory.
+**Image acceptance check:** Compare an ordinary animal, a working object and a human action; inspect complete cards and transfer before visual acceptance.
+
+Evidence [SP17-074](../../../components/recipes/styles/manifests/presets/pack_17/SP17-074.yaml) — Torn-Paper Dungeon Assemblage: `Respect the requested viewpoint, crop, scale, and placement. Fit layered shapes inside the supplied composition without adding a card border, cutout window, or fixed poster layout.`
+Evidence [SP17-075](../../../components/recipes/styles/manifests/presets/pack_17/SP17-075.yaml) — Three-Ink Stencil Bruise: `Preserve the requested framing, view, and spatial relationships. Stencil shapes must follow the given layout without adding a title band, border, emblem, or centered icon.`
+Evidence [SP17-076](../../../components/recipes/styles/manifests/presets/pack_17/SP17-076.yaml) — Hand-Stamped Dungeon Forms: `Keep the requested viewpoint, crop, and placement. Let mark density support the existing focal hierarchy without imposing a seal, border, repeated tile, or fixed card shape.`
+
+## pack_17 / 7. Pulp Fantasy Painting
+
+**Display:** Pulp fantasy painting · **Scope:** style · **Presets:** 2
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Airbrush and drybrush need clear medium identity without defaulting to stock cover scenes or realistic key art.
+**Retain:** Requested content, silhouette and framing; the painting process changes the rendering.
+**Proposed action:** Compare smooth sprayed transitions with skipped-pigment strokes and keep each transferable.
+**Image acceptance check:** Apply both processes to the same non-fantasy subject and inspect whether their marks remain distinguishable at card size.
+
+Evidence [SP17-077](../../../components/recipes/styles/manifests/presets/pack_17/SP17-077.yaml) — Paperback Airbrush Fantasy: `Honor the requested camera, crop, and placement. Use broad value separation to read within the given arrangement, without forcing a hero pose, diagonal, or paperback cover layout.`
+Evidence [SP17-078](../../../components/recipes/styles/manifests/presets/pack_17/SP17-078.yaml) — Drybrush Pulp Illustration: `Retain the requested viewpoint, crop, scale, and arrangement. Use broad painted masses to reinforce its existing focal order without forcing a low angle or central figure.`
+
+## pack_17 / 8. Medieval Fantasy Drawing Media
+
+**Display:** Fantasy drawing media · **Scope:** style · **Presets:** 5
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Silverpoint, resist, chalk, Conté and colored pencil require separate visible marks rather than a shared nostalgic fantasy scene.
+**Retain:** Identity, materials, pose and camera from the user request.
+**Proposed action:** Retain each drawing process as an independent style and keep fantasy subjects in representative cards only.
+**Image acceptance check:** Compare the five on the same ordinary subject and inspect whether support, line and pigment behavior remain distinct.
+
+Evidence [SP17-079](../../../components/recipes/styles/manifests/presets/pack_17/SP17-079.yaml) — Silverpoint on Toned Ground: `Respect the requested crop, viewpoint, scale, and placement. Use line density for separation within the existing composition without adding a study frame or annotation panel.`
+Evidence [SP17-080](../../../components/recipes/styles/manifests/presets/pack_17/SP17-080.yaml) — Wax-Resist Ink Drawing: `Retain the requested framing and viewpoint. Organize wash shapes around the existing focal structure without imposing a vignette, border, or illuminated-page layout.`
+Evidence [SP17-081](../../../components/recipes/styles/manifests/presets/pack_17/SP17-081.yaml) — White Chalk on Dark Stock: `Respect the requested view, crop, and placement. Balance light marks against the existing dark forms without forcing a centered portrait or chalkboard frame.`
+Evidence [SP17-082](../../../components/recipes/styles/manifests/presets/pack_17/SP17-082.yaml) — Conté Crayon Fantasy Drawing: `Preserve viewpoint, crop, scale, and spatial order. Let stroke direction support the given pose and structure without imposing a figure-study sheet or border.`
+Evidence [SP17-083](../../../components/recipes/styles/manifests/presets/pack_17/SP17-083.yaml) — Colored-Pencil Grit Fantasy: `Respect the requested viewpoint, crop, scale, and placement. Use stroke density to clarify the existing hierarchy without adding a border, labels, or decorative corners.`
+
+## pack_19 / 1. Ink Structures
+
+**Display:** Ink Structures · **Scope:** style · **Presets:** 10
+**Editorial state:** text-authored · **Cross-subject image validation:** pending
+
+**Problem:** Ten ink structures now cover direct marks, lifted ink and controlled tonal methods; overlapping print processes and cross-subject transfer still need visual comparison.
 **Retain:** Subject identity, requested pose, framing and scene content.
-**Proposed action:** Publish authored studies with representative cards; compare with recorded source presets across subjects before promoting or consolidating.
+**Proposed action:** Keep direct ink processes distinct from plate transfer; compare all ten across subjects before promoting or consolidating.
 **Image acceptance check:** Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.
 
 Evidence [SP19-001](../../../components/recipes/styles/manifests/presets/pack_19/SP19-001.yaml) — Dry Cut: `Preserve requested camera and framing. Use scale hierarchy and open gaps between adjacent silhouettes to keep the existing composition legible.`
 Evidence [SP19-002](../../../components/recipes/styles/manifests/presets/pack_19/SP19-002.yaml) — Elastic Contour: `Keep the requested viewpoint and placement. Establish hierarchy through stroke weight and omission of secondary edges.`
-Evidence [SP19-003](../../../components/recipes/styles/manifests/presets/pack_19/SP19-003.yaml) — Bristle Rhythm: `Preserve the user composition. Direct mark flow around its focal structure rather than adding diagonals or changing the camera.`
-Evidence [SP19-004](../../../components/recipes/styles/manifests/presets/pack_19/SP19-004.yaml) — Pooled Ink: `Respect the existing frame and viewpoint. Organize wet and dry edge transitions around the requested focal hierarchy.`
+Evidence [SP19-005](../../../components/recipes/styles/manifests/presets/pack_19/SP19-005.yaml) — Weighted Stipple: `Preserve the requested framing and viewpoint. Concentrate the densest clusters around existing focal forms, leaving useful open gaps between adjacent shapes.`
+Evidence [SP19-006](../../../components/recipes/styles/manifests/presets/pack_19/SP19-006.yaml) — Blot-Lift Ink: `Retain the requested frame and viewpoint. Place lifted lights along existing planes so the subject remains readable within its original arrangement.`
+Evidence [SP19-009](../../../components/recipes/styles/manifests/presets/pack_19/SP19-009.yaml) — Rake-Pulled Ink: `Preserve the requested camera and composition. Restrict raked marks to selected planes so major silhouette and negative-space decisions remain clear.`
 
 ## pack_20 / 1. Print Registers
 
-**Display:** Print Registers · **Scope:** style · **Presets:** 4
+**Display:** Print Registers · **Scope:** style · **Presets:** 10
 **Editorial state:** text-authored · **Cross-subject image validation:** pending
 
-**Problem:** Representative cards are available; the authored derivatives still need cross-subject visual validation.
+**Problem:** Ten print treatments now cover plate, transfer, exposure and screen mechanisms; image quality and transfer across subjects remain unproven.
 **Retain:** Subject identity, requested pose, framing and scene content.
-**Proposed action:** Publish authored studies with representative cards; compare with recorded source presets across subjects before promoting or consolidating.
+**Proposed action:** Keep reproduction processes distinct from surface-only texture and inspect representative cards before promotion.
 **Image acceptance check:** Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.
 
 Evidence [SP20-001](../../../components/recipes/styles/manifests/presets/pack_20/SP20-001.yaml) — Offset Drift: `Preserve framing, pose and camera. The registration shift belongs to the print layers, not to the depicted geometry.`
 Evidence [SP20-002](../../../components/recipes/styles/manifests/presets/pack_20/SP20-002.yaml) — Stencil Duotone: `Keep user framing and placement. Balance solid areas against open support without adding a page border or fixed layout.`
-Evidence [SP20-003](../../../components/recipes/styles/manifests/presets/pack_20/SP20-003.yaml) — Toner Blocks: `Preserve camera and composition. Toner breakup is a reproduction property, not permission to crop the subject or invent a zine page.`
-Evidence [SP20-004](../../../components/recipes/styles/manifests/presets/pack_20/SP20-004.yaml) — Engraved Tone: `Honor requested framing and viewpoint. Vary detail density around the existing focal hierarchy without adding a specimen plate or labels.`
+Evidence [SP20-005](../../../components/recipes/styles/manifests/presets/pack_20/SP20-005.yaml) — Crayon Lithograph: `Preserve the requested framing and viewpoint. Let mark density clarify the existing focal hierarchy without adding a plate edge, label or print-shop layout.`
+Evidence [SP20-007](../../../components/recipes/styles/manifests/presets/pack_20/SP20-007.yaml) — Monotype Wipe: `Preserve the requested framing and spatial relationships. A single transfer may soften some edges but must keep the focal silhouette and crop intact.`
+Evidence [SP20-008](../../../components/recipes/styles/manifests/presets/pack_20/SP20-008.yaml) — Cyanotype Contact: `Preserve the supplied viewpoint, framing and spatial relationships. Contact-print contrast may simplify small values but must not crop, mirror or rearrange the subject.`
 
 ## pack_21 / 1. Paper & Pigment
 
-**Display:** Paper & Pigment · **Scope:** style · **Presets:** 4
+**Display:** Paper & Pigment · **Scope:** style · **Presets:** 10
 **Editorial state:** text-authored · **Cross-subject image validation:** pending
 
-**Problem:** Representative cards are available; the authored derivatives still need cross-subject visual validation.
+**Problem:** Ten support and pigment mechanisms now span dry, wet, additive and subtractive treatment; their cross-subject behavior still needs visual review.
 **Retain:** Subject identity, requested pose, framing and scene content.
-**Proposed action:** Publish authored studies with representative cards; compare with recorded source presets across subjects before promoting or consolidating.
+**Proposed action:** Keep the paper or pigment mechanism visible without transferring a stock subject or support texture onto depicted materials.
 **Image acceptance check:** Test an object, ordinary action, interior, exterior and graphic composition with fixed requested content.
 
 Evidence [SP21-001](../../../components/recipes/styles/manifests/presets/pack_21/SP21-001.yaml) — Stacked Paper: `Preserve requested viewpoint, pose and frame. Depth comes from the illustration layers rather than a new isometric camera.`
 Evidence [SP21-002](../../../components/recipes/styles/manifests/presets/pack_21/SP21-002.yaml) — Resist Wash: `Respect requested framing and camera. Use the resist pattern to guide attention within the existing arrangement.`
-Evidence [SP21-003](../../../components/recipes/styles/manifests/presets/pack_21/SP21-003.yaml) — Opaque Planes: `Preserve user viewpoint and placement. Alternate found and lost edges around the requested focal hierarchy.`
-Evidence [SP21-004](../../../components/recipes/styles/manifests/presets/pack_21/SP21-004.yaml) — Pressed Relief: `Preserve the requested composition and viewpoint within the illustration. Do not tilt the entire image into a product mockup unless requested.`
+Evidence [SP21-005](../../../components/recipes/styles/manifests/presets/pack_21/SP21-005.yaml) — Toned Ground: `Preserve the supplied framing, viewpoint and placement. Use value grouping to clarify the existing focal structure without introducing a portrait pose or new layout.`
+Evidence [SP21-008](../../../components/recipes/styles/manifests/presets/pack_21/SP21-008.yaml) — Granulating Wash: `Maintain the requested framing, viewpoint and arrangement. Balance granular areas with calm washes inside the existing composition so the subject remains the focal structure.`
+Evidence [SP21-010](../../../components/recipes/styles/manifests/presets/pack_21/SP21-010.yaml) — Palette-Knife Impasto: `Keep the requested framing and viewpoint. Vary deposit scale inside the existing focal hierarchy without tilting the image into a painted-object mockup.`
 
 ## pack_22 / 1. Workshop Painting
 

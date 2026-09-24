@@ -1,0 +1,97 @@
+schemaVersion: 1
+id: SP17-074
+packId: pack_17
+name: Torn-Paper Dungeon Assemblage
+category: 6. Dungeon Zine Assemblage & Stampwork
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dungeon-zine-assemblage-and-stampwork
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    DIY fantasy illustration assembled from overlapping torn-paper silhouettes, blunt cut shapes,
+    and spare black-ink joins. The collage mechanics build the image without prescribing its subject.
+  subject_treatment: >-
+    Preserve the requested subject, identity, action, count, proportions, and distinguishing details.
+    Resolve its forms as a few connected paper layers, keeping important contours and functions
+    recognizable instead of substituting stock dungeon props.
+  color_and_tone: >-
+    Honor requested colors. When unspecified, use a compact mix of warm uncoated-paper neutrals,
+    deep ink, and one vivid pigment accent; keep the accent subordinate to clear light and dark groups.
+  lighting_and_shadow: >-
+    Preserve the stated light direction and express its value changes as adjacent paper planes.
+    Keep cast shadows attached to existing forms without adding a lamp, glow, or scene source.
+  texture_and_material: >-
+    Show sparse paper fibers and uneven torn edges at collage boundaries. Keep those marks on the
+    image surface; preserve the material identity of the depicted subject and avoid blanket aging.
+  camera_and_composition: >-
+    Respect the requested viewpoint, crop, scale, and placement. Fit layered shapes inside the
+    supplied composition without adding a card border, cutout window, or fixed poster layout.
+  atmosphere_and_mood: >-
+    Carry the requested mood through rough overlap, exposed paper gaps, and deliberate empty areas.
+    The handmade zine process adds no occult story, medieval object, or event by itself.
+  rendering_and_quality: >-
+    Keep silhouettes decisive, paper edges visibly distinct, and small fibers sparse enough to read
+    at reduced size. Avoid generic grime, accidental tangencies, and texture that obscures identity.
+avoidRules:
+  - unrequested medieval or occult props
+  - fixed card frame or poster layout
+  - blanket paper aging or damage to depicted materials
+  - dense fibers or collage noise that obscures the subject
+  - readable text or logos
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-074.webp
+attributes:
+  negativePrompt: unrequested medieval or occult props, fixed card frame or poster layout, blanket paper aging or damage to depicted materials, dense fibers or collage noise that obscures the subject, readable text or logos
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: torn-paper collage illustration
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: torn-paper collage illustration
+    avoidRules:
+      - text: unrequested medieval or occult props
+        field: global
+      - text: fixed card frame or poster layout
+        field: camera_and_composition
+      - text: blanket paper aging or damage to depicted materials
+        field: texture_and_material
+      - text: dense fibers or collage noise that obscures the subject
+        field: rendering_and_quality
+      - text: readable text or logos
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-assemblage-and-stampwork
+  categoryName: 6. Dungeon Zine Assemblage & Stampwork
+  tags:
+    - curation-v2
+    - dungeon-zine-assemblage-and-stampwork
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

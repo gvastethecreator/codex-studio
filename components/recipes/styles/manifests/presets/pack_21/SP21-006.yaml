@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP21-006
+packId: pack_21
+name: Pastel Tooth
+category: 1. Paper & Pigment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pastel
+  - dry-pigment
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Dry-pastel illustration built by layering soft pigment across a toothed paper surface, with the
+    exposed tooth breaking broad color passages into small coherent flecks.
+  subject_treatment: >-
+    Keep the requested identity, proportions and action legible. Shape existing forms through grouped
+    pastel deposits and selective softened edges rather than a new pose or generic haze.
+  color_and_tone: >-
+    Respect the requested palette. Build a compact value range from adjacent pastel layers, leaving
+    some support visible between marks and reserving the strongest chroma for existing focal forms.
+  lighting_and_shadow: >-
+    Preserve the requested light direction. Deepen existing shadow groups with denser dry pigment
+    and soften selected transitions without spreading a glow beyond the forms.
+  texture_and_material: >-
+    Let the paper tooth interrupt the pigment visibly. Feather only chosen joins by rubbing; keep
+    separate marks in the rest of each passage instead of creating a uniformly blended airbrush.
+  camera_and_composition: >-
+    Preserve the user's frame, viewpoint and arrangement. Organize pastel edges within the existing
+    focal hierarchy without adding a page border, plate edge or print-shop marks.
+  atmosphere_and_mood: >-
+    Carry the requested mood through pigment density, softness and spacing. Dry pastel does not
+    require a nostalgic scene, a theatrical backdrop or a particular subject.
+  rendering_and_quality: >-
+    Balance visible tooth with clean focal boundaries and readable value groups. Avoid greasy crayon
+    lines, lithographic transfer grain and a powder layer spread uniformly across the image.
+avoidRules:
+  - greasy crayon or lithographic transfer marks
+  - uniform powder haze over the whole image
+  - blurred focal boundaries
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP21-006.webp
+attributes:
+  negativePrompt: greasy crayon or lithographic transfer marks, uniform powder haze over the whole image, blurred focal boundaries
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: dry-pastel-on-toothed-paper
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: layered-dry-pigment-broken-by-paper-tooth
+    avoidRules:
+      - text: greasy crayon or lithographic transfer marks
+        field: texture_and_material
+      - text: uniform powder haze over the whole image
+        field: rendering_and_quality
+      - text: blurred focal boundaries
+        field: subject_treatment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - pastel
+    - dry-pigment
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

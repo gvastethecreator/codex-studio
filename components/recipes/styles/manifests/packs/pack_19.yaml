@@ -3,7 +3,7 @@ id: pack_19
 name: Ink Structures
 description:
   Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals;
-  representative preview images are available; cross-subject visual evaluation remains pending.
+  existing representative previews remain available, while added previews and cross-subject visual evaluation are pending.
 categories:
   - id: ink-structures
     name: 1. Ink Structures
@@ -12,8 +12,20 @@ categories:
       - pack_19/SP19-002.yaml
       - pack_19/SP19-003.yaml
       - pack_19/SP19-004.yaml
+      - pack_19/SP19-005.yaml
+      - pack_19/SP19-006.yaml
+      - pack_19/SP19-007.yaml
+      - pack_19/SP19-008.yaml
+      - pack_19/SP19-009.yaml
+      - pack_19/SP19-010.yaml
 presetRefs:
   - pack_19/SP19-001.yaml
   - pack_19/SP19-002.yaml
   - pack_19/SP19-003.yaml
   - pack_19/SP19-004.yaml
+  - pack_19/SP19-005.yaml
+  - pack_19/SP19-006.yaml
+  - pack_19/SP19-007.yaml
+  - pack_19/SP19-008.yaml
+  - pack_19/SP19-009.yaml
+  - pack_19/SP19-010.yaml

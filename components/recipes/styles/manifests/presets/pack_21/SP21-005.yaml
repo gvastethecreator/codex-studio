@@ -1,0 +1,92 @@
+schemaVersion: 1
+id: SP21-005
+packId: pack_21
+name: Toned Ground
+category: 1. Paper & Pigment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - paper
+  - chalk-drawing
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: >-
+    Drawing on mid-value colored paper, using the support as a continuous middle tone and placing
+    broad dark and light marks selectively over it.
+  subject_treatment: >-
+    Preserve the requested identity, proportions and action. Model existing forms with connected
+    dark masses and reserved chalk lights instead of replacing them with symbols or contours.
+  color_and_tone: >-
+    Let the paper carry the middle value, using charcoal or a palette-matched dark pigment for shadows
+    and opaque chalk for chosen highlights. Keep the requested color direction recognizable.
+  lighting_and_shadow: >-
+    Follow the requested illumination: group the dark marks on its shadow side and place chalk only
+    on existing planes that face the light. Do not add a separate spotlight.
+  texture_and_material: >-
+    Keep the support's even midtone visible between marks. Use broad rubbed charcoal and small opaque
+    chalk accents without simulating an engraved plate or a black plate ground.
+  camera_and_composition: >-
+    Preserve the supplied framing, viewpoint and placement. Use value grouping to clarify the existing
+    focal structure without introducing a portrait pose or new layout.
+  atmosphere_and_mood: >-
+    Carry the requested mood through the balance of open paper, dark mass and light accents; the
+    drawing method does not imply a studio, memorial or historical scene.
+  rendering_and_quality: >-
+    Keep the three value families distinct and edges selective. Avoid crosshatching as the main value
+    method, crushed dark grounds, and chalk outlining every edge.
+avoidRules:
+  - engraved crosshatching as the primary value method
+  - dark plate ground with burnished highlights
+  - chalk outlining every contour
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP21-005.webp
+attributes:
+  negativePrompt: engraved crosshatching as the primary value method, dark plate ground with burnished highlights, chalk outlining every contour
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: toned-paper-chalk
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: paper-as-midtone-with-additive-chalk-and-subtractive-dark
+    avoidRules:
+      - text: engraved crosshatching as the primary value method
+        field: rendering_and_quality
+      - text: dark plate ground with burnished highlights
+        field: aesthetic
+      - text: chalk outlining every contour
+        field: subject_treatment
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - paper
+    - chalk-drawing
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -19,5 +19,11 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/style-card-thumbnails/SP19-004.webp',
       import.meta.url,
     ).href,
+    'SP19-005': new URL('../../assets/recipes/styles/defaults/SP19-005.webp', import.meta.url).href,
+    'SP19-006': new URL('../../assets/recipes/styles/defaults/SP19-006.webp', import.meta.url).href,
+    'SP19-007': new URL('../../assets/recipes/styles/defaults/SP19-007.webp', import.meta.url).href,
+    'SP19-008': new URL('../../assets/recipes/styles/defaults/SP19-008.webp', import.meta.url).href,
+    'SP19-009': new URL('../../assets/recipes/styles/defaults/SP19-009.webp', import.meta.url).href,
+    'SP19-010': new URL('../../assets/recipes/styles/defaults/SP19-010.webp', import.meta.url).href,
   },
 };

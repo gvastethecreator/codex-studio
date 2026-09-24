@@ -1,0 +1,90 @@
+schemaVersion: 1
+id: SP20-005
+packId: pack_20
+name: Crayon Lithograph
+category: 1. Print Registers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print
+  - lithography
+  - portable-study
+  - visual-evaluation-pending
+visualDna:
+  aesthetic: Planographic lithographic illustration drawn with greasy crayon and tusche on a flat image plane.
+  subject_treatment: >-
+    Preserve the requested identity, proportions and pose. Describe contours and internal form with
+    pressure-shaped crayon marks and broad lithographic washes rather than carved cuts.
+  color_and_tone: >-
+    Respect the requested palette and keep printed color areas distinct. Build tonal passages through
+    crayon density and tusche coverage, not arbitrary extra inks.
+  lighting_and_shadow: >-
+    Follow the requested light direction. Let grouped crayon and wash density turn the existing forms
+    while leaving their brightest planes comparatively open.
+  texture_and_material: >-
+    Keep lithographic grain within marks and wash passages, with variation following stroke direction
+    and pressure. Leave unmarked support quiet instead of laying grain over the full image.
+  camera_and_composition: >-
+    Preserve the requested framing and viewpoint. Let mark density clarify the existing focal hierarchy
+    without adding a plate edge, label or print-shop layout.
+  atmosphere_and_mood: >-
+    Carry the requested mood through pressure, spacing and tonal openness; the drawing process does not
+    require an old-fashioned scene or subject.
+  rendering_and_quality: >-
+    Keep crayon edges, wash transitions and open highlights distinct at the intended viewing scale.
+    Avoid relief-cut boundaries and uniform support grain.
+avoidRules:
+  - relief-cut channels or carved boundaries
+  - uniform grain across unmarked support
+  - invented registration offsets
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP20-005.webp
+attributes:
+  negativePrompt: relief-cut channels or carved boundaries, uniform grain across unmarked support, invented registration offsets
+  intentionalPolicy:
+    schemaVersion: 1
+    kind: full_style
+    defaultFields:
+      - aesthetic
+      - subject_treatment
+      - color_and_tone
+      - lighting_and_shadow
+      - texture_and_material
+      - atmosphere_and_mood
+      - rendering_and_quality
+    requires: null
+    medium: planographic-lithography
+    constraints:
+      - field: aesthetic
+        group: medium
+        value: crayon-and-tusche-lithograph
+    avoidRules:
+      - text: relief-cut channels or carved boundaries
+        field: rendering_and_quality
+      - text: uniform grain across unmarked support
+        field: texture_and_material
+      - text: invented registration offsets
+        field: rendering_and_quality
+  ui:
+    kind: full_style
+    visualEvaluation: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print
+    - lithography
+    - portable-study
+    - visual-evaluation-pending
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true
