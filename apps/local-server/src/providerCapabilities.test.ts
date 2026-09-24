@@ -35,6 +35,7 @@ describe('providerCapabilities', () => {
       expect.arrayContaining([
         expect.objectContaining({
           providerId: 'google',
+          label: 'Nano Banana 2',
           isDefault: true,
           secretState: 'configured',
           status: 'active',

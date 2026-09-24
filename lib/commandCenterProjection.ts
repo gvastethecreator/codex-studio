@@ -97,7 +97,7 @@ function resolveProviderFallbackLabel(providerId: GenerationProviderId) {
   if (providerId === 'codex') return 'Codex app-server';
   if (providerId === 'chatgpt') return 'ChatGPT';
   if (providerId === 'grok') return 'Grok Imagine';
-  if (providerId === 'google') return 'Google Nano Banana';
+  if (providerId === 'google') return 'Nano Banana 2';
   if (providerId === 'antigravity') return 'Antigravity';
   return providerId;
 }

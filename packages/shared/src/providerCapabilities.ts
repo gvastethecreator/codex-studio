@@ -53,7 +53,7 @@ export interface CreateProviderCapabilitiesInput {
   localRuntimeConfigured?: Partial<Record<GenerationProviderId, boolean>>;
   subscriptionAuthConfigured?: Partial<Record<GenerationProviderId, boolean>>;
   subscriptionAuthState?: Partial<Record<GenerationProviderId, ProviderSubscriptionAuthState>>;
-  providers?: ProviderCapabilityDefinition[];
+  providers?: readonly ProviderCapabilityDefinition[];
 }
 
 export interface ProviderCapabilityDefinition {
@@ -69,7 +69,7 @@ export interface ProviderCapabilityDefinition {
   missingDetail: string;
 }
 
-const PROVIDERS: ProviderCapabilityDefinition[] = [
+export const BUILT_IN_PROVIDER_CAPABILITIES = [
   {
     providerId: 'codex',
     label: 'Codex app-server',
@@ -105,13 +105,13 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
   },
   {
     providerId: 'google',
-    label: 'Google Nano Banana',
+    label: 'Nano Banana 2',
     runtimeKind: 'hosted_api',
     hasAdapter: true,
     requiresSecret: true,
-    activeDetail: 'Nano Banana is ready through the Google Interactions API.',
-    subscriptionReadyDetail: 'Google OAuth is connected for direct Nano Banana requests.',
-    plannedDetail: 'Google Nano Banana adapter is available.',
+    activeDetail: 'Nano Banana 2 is ready through the Google Interactions API.',
+    subscriptionReadyDetail: 'Google OAuth is connected for direct Nano Banana 2 requests.',
+    plannedDetail: 'Google Nano Banana 2 adapter is available.',
     missingDetail: 'Add a Google API key or connect Google OAuth in Studio Settings.',
   },
   {
@@ -132,8 +132,7 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     hasAdapter: true,
     requiresSecret: true,
     activeDetail: 'fal.ai adapter is available.',
-    plannedDetail:
-      'API key detected. Compiler and preflight are ready; execution executor is still planned.',
+    plannedDetail: 'fal.ai adapter is available once the backend Provider Secret is configured.',
     missingDetail: 'Add a backend FAL_KEY or FAL_API_KEY before enabling this adapter.',
   },
   {
@@ -159,7 +158,7 @@ const PROVIDERS: ProviderCapabilityDefinition[] = [
     plannedDetail: 'Diagnostic local adapter is available.',
     missingDetail: 'Diagnostic local adapter is available.',
   },
-];
+] satisfies readonly ProviderCapabilityDefinition[];
 
 function resolveSecretState(requiresSecret: boolean, configured: boolean): ProviderSecretState {
   if (!requiresSecret) return 'not_required';
@@ -182,7 +181,7 @@ export function createGenerationProviderCapabilities({
   localRuntimeConfigured = {},
   subscriptionAuthConfigured = {},
   subscriptionAuthState = {},
-  providers = PROVIDERS,
+  providers = BUILT_IN_PROVIDER_CAPABILITIES,
 }: CreateProviderCapabilitiesInput): GenerationProviderCapabilitiesResponse {
   return {
     providers: providers.map((provider) => {
