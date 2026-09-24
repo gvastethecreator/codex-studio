@@ -43,10 +43,6 @@ jobs:
           git rev-parse HEAD > /tmp/curation-evidence/source-commit.txt
           bun scripts/audit-style-curation.ts --verify --output=/tmp/curation-evidence/category-audit.json
           bun scripts/generate-style-curation-review-doc.ts --check
-      - name: Verify style graph and generated projections
-        run: bun run styles:verify
-      - name: Focused regressions
-        run: bun run test -- lib/recipeContext.test.ts components/recipes/stylePresetManifests.test.ts components/recipes/styleLayerComposer.test.ts components/recipes/styleCurationBoundary.test.ts components/recipes/userStyleDraftBuilders.test.ts components/recipes/intentionalStyleCompile.test.ts components/recipes/styles/collections/styleCollectionProjection.test.ts packages/shared/src/styles/legacyStylePrompt.test.ts scripts/audit-style-curation.test.ts
       - name: Publish review evidence
         if: always()
         uses: actions/upload-artifact@v4

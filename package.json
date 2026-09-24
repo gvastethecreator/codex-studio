@@ -43,7 +43,6 @@
     "styles:defaults:grok": "bun run scripts/generate-style-defaults.ts --provider=grok",
     "styles:provider-variants:verify": "bun run scripts/validate-style-provider-variants.ts",
     "styles:thumbs": "bun run scripts/build-style-pack-card-thumbnails.ts",
-    "styles:pack-thumbs": "bun run scripts/build-style-pack-card-thumbnails.ts",
     "styles:verify": "bun run styles:validate -- --coverage --strict-taxonomy && bun run styles:provider-variants:verify -- --provider=grok && bun run styles:runtime:check && bun run styles:thumbnails:check && bun run styles:templates:verify && bun run styles:source:verify && bun run styles:render:verify && bun run styles:curation:verify",
     "styles:browser": "tsx ./scripts/verify-styles-browser-gate.ts",
     "styles:browser:verify": "tsx ./scripts/verify-styles-browser-gate.ts --verify",
