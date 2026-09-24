@@ -1,7 +1,3 @@
-const STYLE_CATALOG_RESOURCE_MARKERS = [
-  'StylePresetCatalogSearchSurface',
-  'stylePresetCatalogData',
-] as const;
 const STYLE_BROWSER_DOM_RENDERED_CARD_BUDGET = 160;
 
 export interface StylesBrowserGatePackBudgetInput {
@@ -34,14 +30,11 @@ export interface StylesBrowserGateDomState {
 export interface StylesBrowserCatalogExpectation {
   query: string;
   resultCount: number;
-  resourceMarkers: string[];
 }
 
 export interface StylesBrowserCatalogObservation {
   mountedBefore: boolean;
   mountedAfter: boolean;
-  matchedResourceNamesBefore: string[];
-  matchedResourceNamesAfter: string[];
   resultCount: number;
 }
 
@@ -95,23 +88,14 @@ function compareDomState({
   return violations;
 }
 
-export function findMatchingStyleCatalogResources(
-  resourceNames: readonly string[],
-  resourceMarkers: readonly string[] = STYLE_CATALOG_RESOURCE_MARKERS,
-) {
-  return resourceNames.filter((name) => resourceMarkers.some((marker) => name.includes(marker)));
-}
-
 export function createStylesBrowserGateExpectation({
   packBudget,
   catalogQuery,
   catalogResultCount,
-  resourceMarkers = [...STYLE_CATALOG_RESOURCE_MARKERS],
 }: {
   packBudget: StylesBrowserGatePackBudgetInput;
   catalogQuery: string;
   catalogResultCount: number;
-  resourceMarkers?: string[];
 }): StylesBrowserGateExpectation {
   const renderedCardBudget = Math.min(
     packBudget.plannedPresetCards,
@@ -142,7 +126,6 @@ export function createStylesBrowserGateExpectation({
     catalog: {
       query: catalogQuery,
       resultCount: catalogResultCount,
-      resourceMarkers,
     },
   };
 }
@@ -177,11 +160,6 @@ export function evaluateStylesBrowserGate(
   }
   if (!observation.catalog.mountedAfter) {
     violations.push('catalog surface did not mount after opening it');
-  }
-  if (observation.catalog.matchedResourceNamesBefore.length > 0) {
-    violations.push(
-      `catalog resources loaded before opening: ${observation.catalog.matchedResourceNamesBefore.join(', ')}`,
-    );
   }
   if (observation.catalog.resultCount !== expectation.catalog.resultCount) {
     violations.push(

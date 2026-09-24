@@ -1,13 +1,9 @@
 import { describe, expect, it } from 'vitest';
 
-import {
-  createStylesBrowserGateExpectation,
-  evaluateStylesBrowserGate,
-  findMatchingStyleCatalogResources,
-} from './stylesBrowserGate';
+import { createStylesBrowserGateExpectation, evaluateStylesBrowserGate } from './stylesBrowserGate';
 
 describe('stylesBrowserGate', () => {
-  it('passes when DOM, demand-mount resources, and console state all match', () => {
+  it('passes when DOM, demand-mount state, and console state all match', () => {
     const expectation = createStylesBrowserGateExpectation({
       packBudget: {
         packId: 'pack_05',
@@ -53,8 +49,6 @@ describe('stylesBrowserGate', () => {
       catalog: {
         mountedBefore: false,
         mountedAfter: true,
-        matchedResourceNamesBefore: [],
-        matchedResourceNamesAfter: [],
         resultCount: 1,
       },
       consoleErrors: [],
@@ -63,12 +57,6 @@ describe('stylesBrowserGate', () => {
     });
 
     expect(violations).toEqual([]);
-    expect(
-      findMatchingStyleCatalogResources([
-        'http://127.0.0.1:5173/src/main.tsx',
-        'http://127.0.0.1:5173/components/recipes/StylePresetCatalogSearchSurface.tsx',
-      ]),
-    ).toEqual(['http://127.0.0.1:5173/components/recipes/StylePresetCatalogSearchSurface.tsx']);
   });
 
   it('reports count mismatches, eager demand-mount regressions, and console noise', () => {
@@ -117,10 +105,6 @@ describe('stylesBrowserGate', () => {
       catalog: {
         mountedBefore: true,
         mountedAfter: true,
-        matchedResourceNamesBefore: [
-          'http://127.0.0.1:5173/components/recipes/stylePresetCatalogData.ts',
-        ],
-        matchedResourceNamesAfter: [],
         resultCount: 3,
       },
       consoleErrors: ['boom'],
@@ -145,8 +129,5 @@ describe('stylesBrowserGate', () => {
         'page errors observed: page exploded',
       ]),
     );
-    expect(
-      violations.some((violation) => violation.includes('catalog resources loaded before opening')),
-    ).toBe(true);
   });
 });

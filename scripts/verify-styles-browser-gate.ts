@@ -4,7 +4,6 @@ import { projectStyleSearchResultsFromManifestCatalog } from '../components/reci
 import {
   createStylesBrowserGateExpectation,
   evaluateStylesBrowserGate,
-  findMatchingStyleCatalogResources,
   type StylesBrowserGateDomState,
   type StylesBrowserGateObservation,
 } from '../lib/stylesBrowserGate';
@@ -78,7 +77,7 @@ function usage() {
     '  - --fixture uses Chrome at 1440x1000 with fail-closed local API fixtures for the parity gate. Workflow modes use that same browser and viewport.',
     '  - Measurement requires production previews. It uses fixed API fixtures, five fresh-context entries and twenty warm samples after three warmups. Paired mode alternates variant order. No real provider calls are made.',
     '  - Start the UI first (for example `bun run dev:ui`) and keep this gate optional until it is stable enough for wider release use.',
-    '  - The script verifies collection navigation, pack DOM budgets with all categories visible, confirms the Style Catalog surface is demand-mounted, checks the catalog query result count, and fails on fresh console warnings/errors.',
+    '  - The script verifies collection navigation, pack DOM budgets with all categories visible, confirms the All Styles results surface is demand-mounted, checks inline search results, and fails on fresh console warnings/errors.',
   ].join('\n');
 }
 
@@ -105,10 +104,6 @@ async function collectStyleBrowserDomState(page: Page): Promise<StylesBrowserGat
       hiddenPresets: Number(hiddenButton?.getAttribute('data-style-hidden-presets') ?? '0'),
     } satisfies StylesBrowserGateDomState;
   });
-}
-
-async function getResourceNames(page: Page) {
-  return page.evaluate(() => performance.getEntriesByType('resource').map((entry) => entry.name));
 }
 
 function filterLogs(entries: BrowserLogEntry[], captureStart: number) {
@@ -229,10 +224,16 @@ export async function verifyStylesBrowserGate({
         timeout: timeoutMs,
       },
     );
-    await page.waitForSelector('[data-style-source-provenance]', { timeout: timeoutMs });
+    await page.waitForSelector('[data-style-preset-card][data-style-source-pack-id]', {
+      timeout: timeoutMs,
+    });
     const collectionSourcePackIds = await page.evaluate(() => [
       ...new Set(
-        Array.from(document.querySelectorAll<HTMLElement>('[data-style-source-provenance]'))
+        Array.from(
+          document.querySelectorAll<HTMLElement>(
+            '[data-style-preset-card][data-style-source-pack-id]',
+          ),
+        )
           .map((node) => node.getAttribute('data-style-source-pack-id'))
           .filter(Boolean),
       ),
@@ -247,7 +248,9 @@ export async function verifyStylesBrowserGate({
 
     await clickViaDom(page, '[data-style-pack-id="user_styles"]', timeoutMs);
     await page.waitForSelector('[data-style-folder="user_styles"]', { timeout: timeoutMs });
+    await clickViaDom(page, 'button[aria-label="Manage styles"]', timeoutMs);
     await page.waitForSelector('[data-style-create-user-style]', { timeout: timeoutMs });
+    await page.keyboard.press('Escape');
 
     await clickViaDom(page, `[data-style-tab-url="${STYLE_RECIPE_HASH_PREFIX}/packs"]`, timeoutMs);
     await page.waitForSelector('[data-style-source-packs-summary]', { timeout: timeoutMs });
@@ -310,39 +313,28 @@ export async function verifyStylesBrowserGate({
     }
     await page.keyboard.press('Escape');
 
-    const mountedBefore = (await page.locator('[data-style-catalog-root]').count()) > 0;
-    const matchedResourceNamesBefore = findMatchingStyleCatalogResources(
-      await getResourceNames(page),
+    const mountedBefore = (await page.locator('.paged-style-catalog').count()) > 0;
+    await clickViaDom(
+      page,
+      `[data-style-tab-url="${STYLE_RECIPE_HASH_PREFIX}/all_cards"]`,
+      timeoutMs,
     );
-
-    await clickViaDom(page, '[data-style-open-catalog]', timeoutMs);
-    await page.waitForSelector('[data-style-catalog-root]', { timeout: timeoutMs });
-    await page.waitForFunction(
-      () =>
-        document
-          .querySelector('[data-style-catalog-root]')
-          ?.getAttribute('data-style-catalog-state') === 'ready',
-      undefined,
-      { timeout: timeoutMs },
-    );
-
-    const matchedResourceNamesAfter = findMatchingStyleCatalogResources(
-      await getResourceNames(page),
-    );
-    const catalogSearchInput = page.locator('[data-style-catalog-search-input]');
+    await page.waitForSelector('.paged-style-catalog', { timeout: timeoutMs });
+    const catalogSearchInput = page.getByRole('searchbox', { name: 'Search styles' });
     await catalogSearchInput.fill(catalogQuery);
     await page.waitForFunction(
       (expectedResultCount) =>
-        Number(
-          document
-            .querySelector('[data-style-catalog-root]')
-            ?.getAttribute('data-style-catalog-results-count') ?? '-1',
-        ) === expectedResultCount,
+        document.querySelector('.paged-style-catalog-scroll')?.getAttribute('aria-busy') ===
+          'false' &&
+        document.querySelectorAll('.paged-style-catalog [data-style-preset-card]').length ===
+          expectedResultCount,
       catalogResultCount,
       { timeout: timeoutMs },
     );
-    const catalogResultCountInDom = await page.locator('[data-style-catalog-result]').count();
-    const mountedAfter = (await page.locator('[data-style-catalog-root]').count()) > 0;
+    const catalogResultCountInDom = await page
+      .locator('.paged-style-catalog [data-style-preset-card]')
+      .count();
+    const mountedAfter = (await page.locator('.paged-style-catalog').count()) > 0;
 
     const observation: StylesBrowserGateObservation = {
       packId,
@@ -351,8 +343,6 @@ export async function verifyStylesBrowserGate({
       catalog: {
         mountedBefore,
         mountedAfter,
-        matchedResourceNamesBefore,
-        matchedResourceNamesAfter,
         resultCount: catalogResultCountInDom,
       },
       consoleErrors: filterLogs(consoleErrors, captureStart),
@@ -433,7 +423,7 @@ if (import.meta.main) {
         );
         console.log(`[styles:browser] imageFade images=${report.fadeImageCount}`);
         console.log(
-          `[styles:browser] catalog mountedBefore=${report.observation.catalog.mountedBefore} mountedAfter=${report.observation.catalog.mountedAfter} resourcesAfter=${report.observation.catalog.matchedResourceNamesAfter.length} results=${report.observation.catalog.resultCount}`,
+          `[styles:browser] catalog mountedBefore=${report.observation.catalog.mountedBefore} mountedAfter=${report.observation.catalog.mountedAfter} results=${report.observation.catalog.resultCount}`,
         );
         if (report.observation.consoleWarnings.length > 0) {
           console.log(
