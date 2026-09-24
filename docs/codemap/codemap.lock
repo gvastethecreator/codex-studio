@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "2a19b4c7fba9fbc50ced7ebf5205e5522be60d2a",
+  "source_commit": "a0b16133f8aaf090353e183bb89d4c4e217f5ce1",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-24T04:17:55Z",
-  "generation_id": "0f01a63c0d717c164e77ddc0c4524659c48d2bad9f09caa7d485454ccc660b0e",
+  "generated_at": "2026-09-24T05:21:51Z",
+  "generation_id": "4d22ed45c30b610b1b111c94319a1872c8d2a9781c86ee395368ef24acfb9fb3",
   "analysis": {
     "version": "syntax-1",
     "digest": "277e322054c030f72811f774ad4e959bcf8d1244bfb70c076e298cf824ccdc3c"
@@ -2342,8 +2342,8 @@
         "path": "components/recipes/StylesBrowser.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "385a9fa2c36c6b76453044c9146efa685aa53a6009f627648b491ce30a094a95",
-        "size": 119401
+        "digest": "a751aeedd3d888a688c9140f7e069a74b4ae406f1243a66b365916e23b303265",
+        "size": 119271
       },
       {
         "path": "components/recipes/StylesRecipe.tsx",
@@ -3945,8 +3945,8 @@
         "path": "components/recipes/styles/TcgComponentStudio.tsx",
         "origin": "tracked",
         "state": "present",
-        "digest": "3d8696f90165c734df14968a0a93109a5efa4f9efc00f2ab1434af12a5826136",
-        "size": 38878
+        "digest": "ebe41c86cbc8b907f7eca8b7940c8032f79e24fc7c3b3f8a5d49f2bac0f90df6",
+        "size": 38920
       },
       {
         "path": "components/recipes/styles/collections/categoryDisplayNames.ts",
@@ -6059,15 +6059,15 @@
         "path": "lib/styleThumbnailCatalog.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "3978d546e710a3ad9caf8ec3336238200baaa65a529cc1473508d8b482ed629e",
-        "size": 1945
+        "digest": "bd20d3c89a292a8535336b81a7ca0416088df95f5f8b05dc5d07cb77fe17af54",
+        "size": 2165
       },
       {
         "path": "lib/styleThumbnailCatalog.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d8b6ae331f808fd89d97e762bbd8bb1337a83c447f011166b04ac69d0f0eb6f3",
-        "size": 3452
+        "digest": "ca7f86dabbc63fbd1ce9b8dee63597f101391acc414bd85872c1cab30a1cdec2",
+        "size": 3440
       },
       {
         "path": "lib/styleThumbnailPacks.generated/index.ts",
@@ -6087,8 +6087,8 @@
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_02.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "954a68e3b0edc26a94a1ee3b79b79a23ce9cf8efd86746d5a62a7391597b51f0",
-        "size": 60831
+        "digest": "59785fae6a331f7df138ec89d211a2ed69f65eca7abd6f0e3dece9bcc0ec0fdb",
+        "size": 61463
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_03.ts",
@@ -6101,15 +6101,15 @@
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_04.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "1837e8ea528418f38003d75f36f3e3e4d8736d2eacfe7a133bfd89d96b3aa644",
-        "size": 60920
+        "digest": "ddacf1cb325f118a5e8e5735c78e58fd0699ae1c59958d1c09fe024d1ca0ffc6",
+        "size": 60750
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_05.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "2b0b874bf5efd6a6b05c7602186ff681251763a09c00738a3ef0f9cb2d6f64ae",
-        "size": 74452
+        "digest": "50bf41a9dace2b2fe87bcf63162ad35b83c12c49eb29c32e38bfc9f43530f16b",
+        "size": 74316
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_06.ts",
@@ -6122,36 +6122,36 @@
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_07.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "1b5314875f78ab5beb207d9748bdf6b91baf5897ea024fd9ed10d4e3ecdbf551",
-        "size": 36687
+        "digest": "8db656a856ac7641c471bccf81b8ed4376dab55c6fe70ab658e02b0eae597a74",
+        "size": 36670
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_08.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a55f184081b512a4f119b8ce8872d077d1a58a179c2b362d1afa32155f7a1413",
-        "size": 36083
+        "digest": "cce1977644dcb2c4ff65525b15965070ec83e8b4cfe20a0f1cf27c36fd604d73",
+        "size": 36557
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_09.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "db209ab05143ac4eb3cac417261fefad4d7ff5e99fa498bfa8578b6b9f01ad6b",
-        "size": 34994
+        "digest": "8eaf5df74690993af672142338ddc26bf17d97b04f3a06629dd9cdbf129d20a7",
+        "size": 35626
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_10.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "69861812973908907da5228bb88ce171fdcb6c4383da88680825d4fbea29bb65",
-        "size": 35272
+        "digest": "177d482dfe7506f8cfb8c71604e90d7243538490b38bea1c841affc5a3e49fff",
+        "size": 35588
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_11.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "0d587991552443608cc09560be30ea79c2c00be6756fb6b399a9f461860c33c3",
-        "size": 35288
+        "digest": "82f184c53a2efc4c8ee06a9cb6f5f2d3bd6c47c57dba6df1c4d9aa9a69b41b95",
+        "size": 35604
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_12.ts",
@@ -6164,8 +6164,8 @@
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_13.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "c25c03a83e18b44783ff09723a9185bb39c5eca199379bd7276aada9c240d89a",
-        "size": 57876
+        "digest": "dff4ed4be50362eca083e38ca92df2a422705b30379b334d24486b8f14e6bfa9",
+        "size": 58034
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_14.ts",
@@ -6192,29 +6192,29 @@
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_17.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "29c727370d959e118aaee19c8a0d1ae72703f0d15f7da811d8387414b340c220",
-        "size": 39723
+        "digest": "ce26611e8911ac404a1f8fb07a0fd83fa6b06e77781479f8e9c7fb89719d63f4",
+        "size": 39908
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_18.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "9bdd52783029235ac88d3be959072d75c34268285d7e0ccda1f7e35631293df6",
-        "size": 1379
+        "digest": "704b7768ead67520ea7862d0cf644bfc069abb21baddb9c24adf260644185e93",
+        "size": 1784
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_19.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "ea7918dcfa56bf314bb560a1a9b4bc2eac29b9065f1b8082ac34d7b1840d033b",
-        "size": 1379
+        "digest": "8ac952c4bab440df59eaa28749c95aae076103b85d6d9fec8cfb34b884155337",
+        "size": 1514
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_20.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "771b62296af7b2fbb8ee3e1f2a41d230c523366a633ee0f795071946db4c267e",
-        "size": 1379
+        "digest": "4c6741f0356549e65a60217c9edb15a99b27de08debb4ccedaa435d7b5fbebfa",
+        "size": 1649
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_21.ts",
@@ -6325,8 +6325,8 @@
         "path": "package.json",
         "origin": "tracked",
         "state": "present",
-        "digest": "336eb93de602ab7bd9fb874f1c81262121c9d093c3f83209d900564142874b35",
-        "size": 9463
+        "digest": "3bbfca851b4c822fe4c17a1849801a2fb43e324d8f4a4c91f54a8d3463ed4d41",
+        "size": 9540
       },
       {
         "path": "packages/shared/src/animationSequenceContracts.test.ts",
@@ -7074,8 +7074,8 @@
         "path": "scripts/generate-style-thumbnail-projections.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "c041206a946a181cbac61884cde9da2770d13a980c2fdb78e98c874f7c228eec",
-        "size": 15750
+        "digest": "394eb9ff513c7b4bba017deef72ed0d647e68a54cbbf1cbebd3820bc9489dfd5",
+        "size": 16422
       },
       {
         "path": "scripts/interface-handoff/export.ts",
@@ -8145,8 +8145,8 @@
         "path": "vite.config.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "375e8d0058d56e429cf9a8c3626d3238551068ed6393c22adac6d9bf3154f352",
-        "size": 3206
+        "digest": "50c7d631f5415d1ed7b88cb7a4c43b965b2102e2c1a206a2f7469bfc8e1e55ef",
+        "size": 4117
       },
       {
         "path": "vite.handoff.config.ts",
@@ -8163,12 +8163,12 @@
         "size": 710
       }
     ],
-    "digest": "4347e343c0ae2038aa0e2d1e6e9b1e5a481f2a03c9eb1b92af5e1354d9dc038d"
+    "digest": "1ea5143357991fe6200dbc4d7cae94ecee1e12ad883a253e472fc22d0b11792e"
   },
-  "source_digest": "0cca59ef06225f2c5d52ce32538db5548f2bc83000e5299476940e750f18cd8b",
+  "source_digest": "5ac3294c8d4640bb6677a95f2ce3afa7769f7b0eafd8d37c7bfacf5bea089a4f",
   "artifact_hashes": {
-    "codemap.json": "4c6374c8004193919b1b027f971dbebba9372b7c908e2b6fe1b3383401dcf58f",
-    "codemap.md": "489ae42e514d33df7852b26bc22d5660fb0a74bd5b92510770b1970e779e26b6",
-    "codemap.html": "c2f64017f9a6d645bfa29a6a6e079c28baafe22998398a41d904baff4645a757"
+    "codemap.json": "8730c3c1d063fb8546a8dd956b300cff2f18600a28aff18eda49b7d70bd4579b",
+    "codemap.md": "93320875af945dc62ee632c1c4f587baf01b44a822e52378b808b8b1645602ef",
+    "codemap.html": "ce6cd3a5ef9dc4650add28a7bcb8094282ea865db936b303b3ebf4a7f4bd6e11"
   }
 }

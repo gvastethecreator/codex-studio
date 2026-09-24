@@ -66,12 +66,13 @@
     "packName": "Abstract & Experimental",
     "category": "1. Geometric Abstraction",
     "file": "assets/recipes/styles/defaults/SP10-005.webp",
-    "jobId": "c66d8572-a096-4274-ae4d-3183fd121aa3",
+    "jobId": "a035041d-70df-448f-a628-01f2d713cdd9",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-005.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T05:04:48.219Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:54:03.258Z"
   },
   {
     "presetId": "SP10-006",
@@ -858,14 +859,15 @@
     "presetName": "Denim Texture",
     "packId": "pack_10",
     "packName": "Abstract & Experimental",
-    "category": "5. Pattern & Texture",
+    "category": "5. Textile & Ornamental Patterns",
     "file": "assets/recipes/styles/defaults/SP10-058.webp",
-    "jobId": "d9cd4ec9-d073-4ca2-8a9a-fe4ae04e1cd9",
+    "jobId": "6a11f65c-ad6b-4b4c-a00f-09c9b07a9663",
     "sourceAsset": "assets/recipes/styles/defaults/SP10-058.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-21T01:43:14.221Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:54:08.722Z"
   },
   {
     "presetId": "SP10-059",

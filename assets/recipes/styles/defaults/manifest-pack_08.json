@@ -306,12 +306,13 @@
     "packName": "Fashion & Costume",
     "category": "2. Subcultures",
     "file": "assets/recipes/styles/defaults/SP08-021.webp",
-    "jobId": "6bd997d0-dff8-4e99-bca6-15a957faf040",
+    "jobId": "98d22d8b-1c52-4a23-b28c-18381304241e",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-021.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-12T08:28:08.651Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:49:07.731Z"
   },
   {
     "presetId": "SP08-022",
@@ -485,12 +486,13 @@
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-033.webp",
-    "jobId": "399ffd94-56d8-4fff-82ed-aa6ac91fda69",
+    "jobId": "08a832e4-52f1-4113-86c7-91d6b4931198",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-033.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T22:12:41.934Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:49:54.513Z"
   },
   {
     "presetId": "SP08-034",
@@ -544,12 +546,13 @@
     "packName": "Fashion & Costume",
     "category": "3. Historical & Fantasy",
     "file": "assets/recipes/styles/defaults/SP08-037.webp",
-    "jobId": "c777c6aa-869c-43e2-8b8e-c62960d96b77",
+    "jobId": "c3bf9f8a-5027-4c8c-ada8-102636d2aa30",
     "sourceAsset": "assets/recipes/styles/defaults/SP08-037.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-20T22:13:54.766Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:48:32.215Z"
   },
   {
     "presetId": "SP08-038",

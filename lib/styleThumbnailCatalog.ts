@@ -88,8 +88,7 @@ export function resolveStyleDefaultImageVariantThumbnails(
   for (let index = 1; index <= 12; index += 1) {
     const key = `${presetId}-${String(index).padStart(2, '0')}`;
     const src = getThumbnail(key);
-    if (!src) break;
-    variants.push({ src, label: `Variant ${index}` });
+    if (src) variants.push({ src, label: `Variant ${index}` });
   }
 
   const grokSrc = getThumbnail(`${presetId}-grok`);

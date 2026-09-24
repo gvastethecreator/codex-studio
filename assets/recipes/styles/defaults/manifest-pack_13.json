@@ -844,14 +844,15 @@
     "presetName": "Skip Beat! - Revenge Idol Stardom Spark",
     "packId": "pack_13",
     "packName": "Anime 02 — Anime Character & Lifestyle",
-    "category": "4. Shojo, Magical Girl & Visionary Classics",
+    "category": "3. Shojo, Magical Girl & Visionary Classics",
     "file": "assets/recipes/styles/defaults/SP05-187.webp",
-    "jobId": "9ea165ed-4f74-4c08-a89f-cedd2b1fd5d0",
+    "jobId": "c86255f8-84c0-43bd-9cfe-3f43a70808a5",
     "sourceAsset": "assets/recipes/styles/defaults/SP05-187.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-18T19:02:58.230Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:56:13.500Z"
   },
   {
     "presetId": "SP05-188",

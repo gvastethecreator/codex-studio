@@ -703,6 +703,10 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       '../../assets/recipes/styles/defaults/providers/grok/SP05-187.webp',
       import.meta.url,
     ).href,
+    'SP05-187-previous': new URL(
+      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP05-187.webp',
+      import.meta.url,
+    ).href,
     'SP05-188': new URL(
       '../../assets/recipes/styles/style-card-thumbnails/SP05-188.webp',
       import.meta.url,

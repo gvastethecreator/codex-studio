@@ -884,7 +884,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP07-070-01': new URL(
-      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP07-070.webp',
+      '../../assets/recipes/styles/defaults/variants/SP07-070-01.webp',
       import.meta.url,
     ).href,
     'SP07-070-grok': new URL(

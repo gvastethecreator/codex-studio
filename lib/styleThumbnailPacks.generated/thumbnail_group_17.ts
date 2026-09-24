@@ -52,7 +52,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-002-05': new URL(
-      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP17-002.webp',
+      '../../assets/recipes/styles/defaults/variants/SP17-002-05.webp',
       import.meta.url,
     ).href,
     'SP17-002-grok': new URL(
@@ -124,7 +124,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-007-06': new URL(
-      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP17-007.webp',
+      '../../assets/recipes/styles/defaults/variants/SP17-007-06.webp',
       import.meta.url,
     ).href,
     'SP17-007-grok': new URL(
@@ -200,7 +200,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-011-06': new URL(
-      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP17-011.webp',
+      '../../assets/recipes/styles/defaults/variants/SP17-011-06.webp',
       import.meta.url,
     ).href,
     'SP17-011-grok': new URL(
@@ -268,7 +268,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-016-05': new URL(
-      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP17-016.webp',
+      '../../assets/recipes/styles/defaults/variants/SP17-016-05.webp',
       import.meta.url,
     ).href,
     'SP17-016-grok': new URL(
@@ -504,7 +504,7 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
       import.meta.url,
     ).href,
     'SP17-034-05': new URL(
-      '../../assets/recipes/styles/defaults/providers/previous-gpt-image/SP17-034.webp',
+      '../../assets/recipes/styles/defaults/variants/SP17-034-05.webp',
       import.meta.url,
     ).href,
     'SP17-034-grok': new URL(
@@ -1076,8 +1076,16 @@ export const STYLE_THUMBNAIL_PACKS: Record<string, Record<string, string>> = {
     'SP17-076': new URL('../../assets/recipes/styles/defaults/SP17-076.webp', import.meta.url).href,
     'SP17-077': new URL('../../assets/recipes/styles/defaults/SP17-077.webp', import.meta.url).href,
     'SP17-078': new URL('../../assets/recipes/styles/defaults/SP17-078.webp', import.meta.url).href,
+    'SP17-078-01': new URL(
+      '../../assets/recipes/styles/defaults/variants/SP17-078-01.webp',
+      import.meta.url,
+    ).href,
     'SP17-079': new URL('../../assets/recipes/styles/defaults/SP17-079.webp', import.meta.url).href,
     'SP17-080': new URL('../../assets/recipes/styles/defaults/SP17-080.webp', import.meta.url).href,
+    'SP17-080-01': new URL(
+      '../../assets/recipes/styles/defaults/variants/SP17-080-01.webp',
+      import.meta.url,
+    ).href,
     'SP17-081': new URL('../../assets/recipes/styles/defaults/SP17-081.webp', import.meta.url).href,
     'SP17-082': new URL('../../assets/recipes/styles/defaults/SP17-082.webp', import.meta.url).href,
     'SP17-083': new URL('../../assets/recipes/styles/defaults/SP17-083.webp', import.meta.url).href,

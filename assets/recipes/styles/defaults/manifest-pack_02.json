@@ -171,12 +171,13 @@
     "packName": "Cinematic & Media",
     "category": "1. Film Genres",
     "file": "assets/recipes/styles/defaults/SP02-012.webp",
-    "jobId": "c47bb646-44a5-4c4a-a23e-21feb60691e2",
+    "jobId": "c58945f6-adf3-4acd-a91e-32e47ce903d9",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-012.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-22T16:05:29.101Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:46:34.369Z"
   },
   {
     "presetId": "SP02-013",
@@ -528,14 +529,15 @@
     "presetName": "Fleischer Rubber Hose Cartoon",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "3. Animation Styles",
     "file": "assets/recipes/styles/defaults/SP02-036.webp",
-    "jobId": "a3b70ad8-46fe-4475-a736-6ad974cae524",
+    "jobId": "adaee893-e56a-4c16-8a75-ff778854652d",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-036.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-16T09:34:11.089Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:46:19.247Z"
   },
   {
     "presetId": "SP02-037",
@@ -557,14 +559,15 @@
     "presetName": "Spider-Verse Comic Offset 3D",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "3. Animation Styles",
     "file": "assets/recipes/styles/defaults/SP02-038.webp",
-    "jobId": "a6dee6ba-6bcd-4910-bceb-8e9902de1c64",
+    "jobId": "95105ab0-4c37-4ee1-9bfc-192d25720aaf",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-038.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-21T07:04:24.242Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:46:39.416Z"
   },
   {
     "presetId": "SP02-039",
@@ -751,14 +754,15 @@
     "presetName": "Disposable Camera (90s)",
     "packId": "pack_02",
     "packName": "Cinematic & Media",
-    "category": "1. Cinematic Lighting And Lenses",
+    "category": "4. Photography Eras",
     "file": "assets/recipes/styles/defaults/SP02-051.webp",
-    "jobId": "973c6cb2-f6f2-4986-b258-3fec616a08aa",
+    "jobId": "5ee64ee3-6c7c-474b-b9bf-9c73c9377941",
     "sourceAsset": "assets/recipes/styles/defaults/SP02-051.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-16T10:59:20.142Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:46:15.948Z"
   },
   {
     "presetId": "SP02-052",

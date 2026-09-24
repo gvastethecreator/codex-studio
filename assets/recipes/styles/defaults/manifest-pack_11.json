@@ -1114,14 +1114,15 @@
     "presetName": "Sponge",
     "packId": "pack_11",
     "packName": "Miscellaneous & Fun",
-    "category": "5. Oddities And Novelty",
+    "category": "5. Micro Macro",
     "file": "assets/recipes/styles/defaults/SP11-075.webp",
-    "jobId": "997a9cd6-ffb9-47b2-b4f4-8201cebff3ab",
+    "jobId": "26db0ac2-1234-410b-815b-fc2643addc8a",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-075.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T17:43:57.079Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:55:00.534Z"
   },
   {
     "presetId": "SP11-076",
@@ -1158,14 +1159,15 @@
     "presetName": "Cork",
     "packId": "pack_11",
     "packName": "Miscellaneous & Fun",
-    "category": "1. Toys And Miniatures",
+    "category": "5. Micro Macro",
     "file": "assets/recipes/styles/defaults/SP11-078.webp",
-    "jobId": "0524ca3b-a9dd-4c9b-b74a-2905b0a23192",
+    "jobId": "c726fc0b-5691-433c-8112-d782e18cfa8e",
     "sourceAsset": "assets/recipes/styles/defaults/SP11-078.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T17:55:07.882Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:54:57.475Z"
   },
   {
     "presetId": "SP11-079",

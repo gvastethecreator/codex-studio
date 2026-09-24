@@ -25,6 +25,7 @@ const rootDir = path.resolve(import.meta.dir, '..');
 const stylesAssetDir = path.join(rootDir, 'assets', 'recipes', 'styles');
 const thumbnailDirName = 'style-card-thumbnails';
 const defaultsDirName = 'defaults';
+const variantsDirName = 'defaults/variants';
 const grokVariantsDirName = 'defaults/providers/grok';
 const previousDefaultsDirName = 'defaults/providers/previous-gpt-image';
 const outputDir = path.join(rootDir, 'lib', 'styleThumbnailPacks.generated');
@@ -238,6 +239,9 @@ const thumbnailFiles = (await readdir(path.join(stylesAssetDir, thumbnailDirName
 const defaultFiles = (await readdir(path.join(stylesAssetDir, defaultsDirName)))
   .filter((fileName) => fileName.endsWith('.webp'))
   .sort((a, b) => a.localeCompare(b));
+const variantFiles = (await readdir(path.join(stylesAssetDir, variantsDirName)).catch(() => []))
+  .filter((fileName) => /^SP\d{2}-\d{3}-\d{2}\.webp$/i.test(fileName))
+  .sort((a, b) => a.localeCompare(b));
 const grokVariantFiles = (
   await readdir(path.join(stylesAssetDir, grokVariantsDirName)).catch(() => [])
 )
@@ -253,6 +257,10 @@ for (const fileName of defaultFiles) {
   const key = assetKey(fileName);
   assetsByKey.set(key, { key, fileName, sourceDirName: defaultsDirName });
 }
+for (const fileName of variantFiles) {
+  const key = assetKey(fileName);
+  assetsByKey.set(key, { key, fileName, sourceDirName: variantsDirName });
+}
 for (const fileName of thumbnailFiles) {
   const key = assetKey(fileName);
   assetsByKey.set(key, { key, fileName, sourceDirName: thumbnailDirName });
@@ -267,9 +275,6 @@ for (const fileName of previousDefaultFiles) {
 }
 const aliases = JSON.parse(await readFile(aliasesPath, 'utf8')) as ThumbnailAlias[];
 for (const alias of aliases) {
-  if (assetsByKey.has(alias.alias)) {
-    throw new Error(`Thumbnail alias collides with a physical asset: ${alias.alias}`);
-  }
   const target = assetsByKey.get(alias.target);
   if (!target) throw new Error(`Thumbnail alias target is missing: ${alias.target}`);
   const targetPath = path.join(stylesAssetDir, target.sourceDirName, target.fileName);
@@ -278,6 +283,16 @@ for (const alias of aliases) {
     .digest('hex');
   if (targetHash !== alias.sha256) {
     throw new Error(`Thumbnail alias target hash changed: ${alias.target}`);
+  }
+  const existing = assetsByKey.get(alias.alias);
+  if (existing) {
+    const existingHash = createHash('sha256')
+      .update(await readFile(path.join(stylesAssetDir, existing.sourceDirName, existing.fileName)))
+      .digest('hex');
+    if (existingHash !== alias.sha256) {
+      throw new Error(`Thumbnail alias collides with a different physical asset: ${alias.alias}`);
+    }
+    continue;
   }
   assetsByKey.set(alias.alias, { ...target, key: alias.alias });
 }

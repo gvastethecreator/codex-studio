@@ -12,6 +12,7 @@ describe('styleThumbnailCatalog', () => {
     const pack05 = await loadStyleThumbnailPack('pack_05');
     const pack13 = await loadStyleThumbnailPack('pack_13');
     const pack16 = await loadStyleThumbnailPack('pack_16');
+    const pack17 = await loadStyleThumbnailPack('pack_17');
 
     expect(pack05['SP05-034']).toBeTruthy();
     expect(pack05['SP05-001']).toBeUndefined();
@@ -21,6 +22,7 @@ describe('styleThumbnailCatalog', () => {
     expect(pack16['SP05-001']).toBeTruthy();
     expect(pack16['SP13-026']).toBeTruthy();
     expect(pack16['pack_16__70s_and_80s_retro_anime']).toBeTruthy();
+    expect(pack17['SP17-078-01']).toBeTruthy();
     expect(getStyleThumbnail('SP05-001')).toBe(pack16['SP05-001']);
   });
 
@@ -40,12 +42,14 @@ describe('styleThumbnailCatalog', () => {
   it('places the previous default after the other image variants', () => {
     const catalog: Record<string, string> = {
       'SP99-001-01': '/thumbs/SP99-001-01.webp',
+      'SP99-001-03': '/thumbs/SP99-001-03.webp',
       'SP99-001-grok': '/thumbs/SP99-001-grok.webp',
       'SP99-001-previous': '/thumbs/SP99-001-previous.webp',
     };
 
     expect(resolveStyleDefaultImageVariantThumbnails('SP99-001', (key) => catalog[key])).toEqual([
       { src: '/thumbs/SP99-001-01.webp', label: 'Variant 1' },
+      { src: '/thumbs/SP99-001-03.webp', label: 'Variant 3' },
       { src: '/thumbs/SP99-001-grok.webp', label: 'Grok' },
       { src: '/thumbs/SP99-001-previous.webp', label: 'Previous GPT Image' },
     ]);

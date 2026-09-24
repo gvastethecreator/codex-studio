@@ -409,14 +409,15 @@
     "presetName": "Glass (Shattered)",
     "packId": "pack_09",
     "packName": "Texture & Materiality",
-    "category": "5. Fx And Procedural Materiality",
+    "category": "2. Man-Made Materials",
     "file": "assets/recipes/styles/defaults/SP09-028.webp",
-    "jobId": "b1f18ed8-f948-456f-b382-9646a30cdc99",
+    "jobId": "732cfa2d-2fd2-4fca-bcaa-c90d7ea935d4",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-028.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-14T23:19:49.263Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:53:06.285Z"
   },
   {
     "presetId": "SP09-029",
@@ -438,14 +439,15 @@
     "presetName": "Burlap Sack",
     "packId": "pack_09",
     "packName": "Texture & Materiality",
-    "category": "4. Surface Wear And Aging",
+    "category": "3. Weathering And Decay",
     "file": "assets/recipes/styles/defaults/SP09-030.webp",
-    "jobId": "ccebe578-02fb-4894-804e-ef74d283d766",
+    "jobId": "3b5fde34-c2d8-48df-a73a-9c71af23b116",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-030.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-21T00:39:38.585Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:53:02.149Z"
   },
   {
     "presetId": "SP09-031",
@@ -662,14 +664,15 @@
     "presetName": "Felt Fabric",
     "packId": "pack_09",
     "packName": "Texture & Materiality",
-    "category": "3. Fabric And Soft Materials",
+    "category": "4. Tactile Surfaces",
     "file": "assets/recipes/styles/defaults/SP09-045.webp",
-    "jobId": "bfe1ac15-2984-4ad1-a50f-d8c9f210f7cf",
+    "jobId": "6f34a1b5-819d-4e60-ace6-163d97b62ba4",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-045.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-21T00:36:48.879Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:53:02.668Z"
   },
   {
     "presetId": "SP09-046",
@@ -1156,14 +1159,15 @@
     "presetName": "Solar Panel",
     "packId": "pack_09",
     "packName": "Texture & Materiality",
-    "category": "5. Fx And Procedural Materiality",
+    "category": "2. Man-Made Materials",
     "file": "assets/recipes/styles/defaults/SP09-078.webp",
-    "jobId": "be2c0b90-f28b-4811-ad38-c36d9cc2e3ad",
+    "jobId": "10787549-3fda-4f11-8870-3bcb9e52a14b",
     "sourceAsset": "assets/recipes/styles/defaults/SP09-078.webp",
     "generationMode": "text-to-image",
-    "model": "gpt-5.4-mini",
-    "reasoningEffort": "low",
-    "generatedAt": "2026-06-15T04:33:24.761Z"
+    "providerId": "chatgpt",
+    "model": "gpt-5.5",
+    "reasoningEffort": "provider_default",
+    "generatedAt": "2026-09-24T04:53:20.044Z"
   },
   {
     "presetId": "SP09-079",

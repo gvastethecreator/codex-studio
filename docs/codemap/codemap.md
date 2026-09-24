@@ -1,15 +1,15 @@
 # Code map: codex-studio
 
-Generated: 2026-09-24T04:17:55Z | Commit: `2a19b4c7fba9` | Schema: 2
-Generation: `0f01a63c0d717c164e77ddc0c4524659c48d2bad9f09caa7d485454ccc660b0e`
+Generated: 2026-09-24T05:21:51Z | Commit: `a0b16133f8aa` | Schema: 2
+Generation: `4d22ed45c30b610b1b111c94319a1872c8d2a9781c86ee395368ef24acfb9fb3`
 Scope: . | Inventory: working-tree
-Nodes: 1228 | Edges: 6147 | Flows: 5
+Nodes: 1228 | Edges: 6145 | Flows: 5
 
 ## Coverage
 
 - Analysis: **partial**; 1148 analyzed of 1160 included files.
 - Configuration files: 7; omitted untracked files: 0.
-- Unresolved references and analysis limits: 3544.
+- Unresolved references and analysis limits: 3546.
 - Static references and call paths do not prove runtime execution or test coverage.
 
 ## Modules
@@ -88,7 +88,7 @@ Nodes: 1228 | Edges: 6147 | Flows: 5
 - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:fs` | imports
 - `apps/local-server/src/antigravityExecutable.ts` -> `external:javascript:node:path` | imports
 - `apps/local-server/src/antigravityRuntimeDoctor.test.ts` -> `apps/local-server/src/antigravityExecutable.ts` | calls
-- Showing 50 of 6147 edges; JSON contains every edge and its evidence.
+- Showing 50 of 6145 edges; JSON contains every edge and its evidence.
 
 ## Unknown
 
