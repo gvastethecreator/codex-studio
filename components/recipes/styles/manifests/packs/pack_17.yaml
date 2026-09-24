@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_17
 name: Medieval Fantasy & Dungeon Zine
+cardTitle: 'Dungeon Zine'
+cardDescription: 'Fantasy zines, dungeons, bestiary, grim kingdoms.'
 description: >-
   Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror,
   weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates,

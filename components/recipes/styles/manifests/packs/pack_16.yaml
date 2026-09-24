@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_16
 name: Anime Classics & Prestige
+cardTitle: 'Anime Prestige'
+cardDescription: 'Classic anime craft, prestige drama, retro eras.'
 description: Timeless anime craft across classics, sports drama, auteur studio works, retro eras,
   samurai epics, and horror prestige.
 categories:

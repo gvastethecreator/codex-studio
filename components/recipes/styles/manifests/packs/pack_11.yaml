@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_11
 name: Miscellaneous & Fun
+cardTitle: 'Fun Oddities'
+cardDescription: 'Playful objects, food, toys, science curiosities.'
 description: Playful, toy-like, and niche aesthetic styles.
 categories:
   - id: toys-and-crafts

@@ -6,6 +6,8 @@ export interface GeneratedStyleRuntimePackSummary {
   id: string;
   name: string;
   description: string;
+  cardTitle: string;
+  cardDescription: string;
   presetCount: number;
 }
 
@@ -15,6 +17,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Photography & Realism',
     description:
       'A comprehensive collection of 80+ photographic styles, film stocks, and lighting setups.',
+    cardTitle: 'Photo Realism',
+    cardDescription: 'Photography, film stock, lens, portrait, lighting.',
     presetCount: 87,
   },
   {
@@ -22,6 +26,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Cinematic & Media',
     description:
       'A collection of 120+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.',
+    cardTitle: 'Cinematic Media',
+    cardDescription: 'Film, broadcast, animation, media-grade looks.',
     presetCount: 129,
   },
   {
@@ -29,6 +35,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: '3D & CGI Rendering',
     description:
       'A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.',
+    cardTitle: '3D CGI',
+    cardDescription: 'CGI, render engines, materials, stylized 3D.',
     presetCount: 80,
   },
   {
@@ -36,6 +44,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Illustration & Graphic Novel',
     description:
       "A versatile collection of 80+ illustration styles, covering comics, children's books, editorial art, and printmaking.",
+    cardTitle: 'Graphic Novel',
+    cardDescription: 'Comics, illustration, ink, posters, editorial art.',
     presetCount: 100,
   },
   {
@@ -43,6 +53,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Anime 01 — Anime Battle & Worlds',
     description:
       'High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.',
+    cardTitle: 'Anime Battle',
+    cardDescription: 'Action anime, battles, mecha, fantasy worlds.',
     presetCount: 135,
   },
   {
@@ -50,6 +62,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Anime 02 — Anime Character & Lifestyle',
     description:
       'Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.',
+    cardTitle: 'Anime Lifestyle',
+    cardDescription: 'Character anime, slice-of-life, shojo, magical moods.',
     presetCount: 132,
   },
   {
@@ -57,6 +71,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Anime 03 — Anime Classics & Prestige',
     description:
       'Timeless anime craft across classics, sports drama, auteur studio works, retro eras, samurai epics, and horror prestige.',
+    cardTitle: 'Anime Prestige',
+    cardDescription: 'Classic anime craft, prestige drama, retro eras.',
     presetCount: 141,
   },
   {
@@ -64,12 +80,16 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Essential Art Styles',
     description:
       'A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.',
+    cardTitle: 'Essential Art',
+    cardDescription: 'Painting, print, drawing, mixed media, digital art.',
     presetCount: 120,
   },
   {
     id: 'pack_07',
     name: 'Architecture & Interior',
     description: 'Architectural styles and interior design aesthetics.',
+    cardTitle: 'Architecture',
+    cardDescription: 'Architecture, interiors, landscapes, spatial design.',
     presetCount: 80,
   },
   {
@@ -77,6 +97,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Fashion & Costume',
     description:
       'A fashion and costume library spanning contemporary editorial looks, subcultural dress codes, historical silhouettes, character-costume fantasy, and material-forward transformation concepts.',
+    cardTitle: 'Fashion Costume',
+    cardDescription: 'Fashion, costume, fabric, subculture silhouettes.',
     presetCount: 80,
   },
   {
@@ -84,6 +106,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Texture & Materiality',
     description:
       'A deep dive into realistic materials, surfaces, and elemental effects, perfect for 3D artists and texture generation.',
+    cardTitle: 'Texture Material',
+    cardDescription: 'Materials, surfaces, texture, wear, procedural FX.',
     presetCount: 80,
   },
   {
@@ -91,12 +115,16 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Abstract & Experimental',
     description:
       'A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.',
+    cardTitle: 'Abstract Lab',
+    cardDescription: 'Glitch, geometry, surreal systems, visual experiments.',
     presetCount: 80,
   },
   {
     id: 'pack_11',
     name: 'Miscellaneous & Fun',
     description: 'Playful, toy-like, and niche aesthetic styles.',
+    cardTitle: 'Fun Oddities',
+    cardDescription: 'Playful objects, food, toys, science curiosities.',
     presetCount: 80,
   },
   {
@@ -104,6 +132,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Video Game Originals Vault',
     description:
       'An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.',
+    cardTitle: 'Game Originals',
+    cardDescription: 'Game-native worlds, arenas, quests, encounter moods.',
     presetCount: 80,
   },
   {
@@ -111,6 +141,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Mythic Noir Curated Vault',
     description:
       'Distinct cultures and mythologies expressed through recognizable motifs, material choices and illustrated design, adapted to the requested subject.',
+    cardTitle: 'Mythic Noir',
+    cardDescription: 'Cultures and mythologies, expressive motifs, mythic illustration.',
     presetCount: 9,
   },
   {
@@ -118,6 +150,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Punk Spectrum Vault',
     description:
       'Recognizable X-punk aesthetics with characteristic materials, technology, craft and motifs integrated into the requested design; one identity per punk direction.',
+    cardTitle: 'Punk Spectrum',
+    cardDescription: 'Punk languages, DIY rebellion, biotech, media ghosts.',
     presetCount: 35,
   },
   {
@@ -125,12 +159,17 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Medieval Fantasy & Dungeon Zine',
     description:
       'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, isometric game aesthetics, analog zine processes, pulp fantasy painting, and transferable drawing-media studies.',
+    cardTitle: 'Dungeon Zine',
+    cardDescription: 'Fantasy zines, dungeons, bestiary, grim kingdoms.',
     presetCount: 83,
   },
   {
     id: 'pack_19',
     name: 'Ink Structures',
     description:
+      'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; existing representative previews remain available, while added previews and cross-subject visual evaluation are pending.',
+    cardTitle: 'Ink Structures',
+    cardDescription:
       'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; existing representative previews remain available, while added previews and cross-subject visual evaluation are pending.',
     presetCount: 10,
   },
@@ -139,12 +178,18 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Print Registers',
     description:
       'Portable visual studies with explicit printmaking mechanics. Existing representative previews remain available; new entries await preview creation and cross-subject visual evaluation.',
+    cardTitle: 'Print Registers',
+    cardDescription:
+      'Portable visual studies with explicit printmaking mechanics. Existing representative previews remain available; new entries await preview creation and cross-subject visual evaluation.',
     presetCount: 10,
   },
   {
     id: 'pack_21',
     name: 'Paper & Pigment',
     description:
+      'Portable paper and pigment studies defined by transferable material and mark-making mechanics. New entries have no default preview image; cross-subject visual evaluation remains pending.',
+    cardTitle: 'Paper & Pigment',
+    cardDescription:
       'Portable paper and pigment studies defined by transferable material and mark-making mechanics. New entries have no default preview image; cross-subject visual evaluation remains pending.',
     presetCount: 10,
   },
@@ -153,12 +198,18 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Trading Card Illustration Styles',
     description:
       'Portable illustration mechanisms adapted from trading-card art research. They preserve the requested subject, action, palette, lighting, viewpoint and composition; card layouts and physical finishes remain separate choices.',
+    cardTitle: 'Trading Card Illustration Styles',
+    cardDescription:
+      'Portable illustration mechanisms adapted from trading-card art research. They preserve the requested subject, action, palette, lighting, viewpoint and composition; card layouts and physical finishes remain separate choices.',
     presetCount: 120,
   },
   {
     id: 'pack_23',
     name: 'Medieval Visual Atlas',
     description:
+      'Transferable medieval visual studies of manuscript, print, textile, regional and later fantasy methods. Deliberate modifiers and representation profiles remain separate from full styles.',
+    cardTitle: 'Medieval Visual Atlas',
+    cardDescription:
       'Transferable medieval visual studies of manuscript, print, textile, regional and later fantasy methods. Deliberate modifiers and representation profiles remain separate from full styles.',
     presetCount: 58,
   },

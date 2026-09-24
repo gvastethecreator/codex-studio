@@ -10,12 +10,12 @@ import {
 } from '../components/recipes/styles/collections/styleCollectionProjection';
 import { styleCategoryImageKey } from '../lib/recipeAssetKeys';
 import { loadStyleManifestGraph } from './style-manifest-files';
+import { publishPreparedProjections } from './generatedProjectionPublisher';
 import {
   categoryImageSuffix,
   collectStyleLandingFolderPreferredKeys,
   groupThumbnailPackIds,
-  isGeneratedThumbnailModuleStale,
-  isLandingFolderIndexStale,
+  isStyleProjectionStale,
   resolveThumbnailAssetPackId,
   selectStyleLandingFolderImageKeys,
   STYLE_LANDING_FOLDER_IMAGE_LIMIT,
@@ -362,61 +362,7 @@ const expected = new Map<string, string>([
   ),
 ]);
 
-if (checkMode) {
-  let stale = false;
-  for (const [fileName] of expected) {
-    const actual = await readFile(path.join(outputDir, fileName), 'utf8').catch(() => '');
-    const referencedFiles =
-      fileName === 'index.ts'
-        ? packGroups.flatMap((groupPackIds, groupIndex) =>
-            groupPackIds.map(() => `./thumbnail_group_${String(groupIndex + 1).padStart(2, '0')}`),
-          )
-        : (packGroups[Number(fileName.match(/(\d{2})/)?.[1] ?? 0) - 1] ?? []).flatMap((packId) =>
-            (filesByPack.get(packId) ?? []).map(
-              (asset) => `${asset.sourceDirName}/${asset.fileName}`,
-            ),
-          );
-    if (
-      isGeneratedThumbnailModuleStale({
-        actual,
-        referencedFiles,
-        isIndex: fileName === 'index.ts',
-      })
-    ) {
-      console.error(`[styles:thumbnails] ${fileName} is stale.`);
-      stale = true;
-    }
-  }
-  const actualFiles = await readdir(outputDir).catch(() => []);
-  if (actualFiles.some((fileName) => fileName.endsWith('.ts') && !expected.has(fileName))) {
-    console.error('[styles:thumbnails] generated directory contains stale modules.');
-    stale = true;
-  }
-  const actualLanding = await readFile(landingOutputPath, 'utf8').catch(() => '');
-  const landingIds = [...landingSource.matchAll(/id:\s*("[^"]+"|'[^']+')/g)].map((match) =>
-    match[1].replace(/['"]/g, ''),
-  );
-  const landingCounts = [...landingSource.matchAll(/presetCount:\s*\d+/g)].map((match) => match[0]);
-  if (
-    isLandingFolderIndexStale({
-      actual: actualLanding,
-      expectedIds: landingIds,
-      expectedCounts: landingCounts,
-    })
-  ) {
-    console.error('[styles:thumbnails] styleLandingFolderIndex.generated.ts is stale.');
-    stale = true;
-  }
-  if (stale) process.exit(1);
-  console.log(
-    `[styles:thumbnails] packs=${packIds.length} thumbnails=${assets.length} landing=${STYLE_COLLECTIONS.length} current`,
-  );
-  process.exit(0);
-}
-
-await rm(outputDir, { recursive: true, force: true });
-await mkdir(outputDir, { recursive: true });
-async function formatAndWriteProjection(filePath: string, source: string) {
+async function formatProjectionSource(filePath: string, source: string) {
   const formatter = Bun.spawn(
     ['bunx', 'vp', 'fmt', '--threads', '1', '--stdin-filepath', filePath],
     {
@@ -432,6 +378,42 @@ async function formatAndWriteProjection(filePath: string, source: string) {
     formatter.exited,
   ]);
   if (exitCode !== 0) throw new Error(`Could not format ${filePath}: ${error}`);
+  return formatted;
+}
+
+if (checkMode) {
+  let stale = false;
+  for (const [fileName, source] of expected) {
+    const filePath = path.join(outputDir, fileName);
+    const [actual, formatted] = await Promise.all([
+      readFile(filePath, 'utf8').catch(() => ''),
+      formatProjectionSource(filePath, source),
+    ]);
+    if (isStyleProjectionStale(actual, formatted)) {
+      console.error(`[styles:thumbnails] ${fileName} is stale.`);
+      stale = true;
+    }
+  }
+  const actualFiles = await readdir(outputDir).catch(() => []);
+  if (actualFiles.some((fileName) => fileName.endsWith('.ts') && !expected.has(fileName))) {
+    console.error('[styles:thumbnails] generated directory contains stale modules.');
+    stale = true;
+  }
+  const actualLanding = await readFile(landingOutputPath, 'utf8').catch(() => '');
+  const formattedLanding = await formatProjectionSource(landingOutputPath, landingSource);
+  if (isStyleProjectionStale(actualLanding, formattedLanding)) {
+    console.error('[styles:thumbnails] styleLandingFolderIndex.generated.ts is stale.');
+    stale = true;
+  }
+  if (stale) process.exit(1);
+  console.log(
+    `[styles:thumbnails] packs=${packIds.length} thumbnails=${assets.length} landing=${STYLE_COLLECTIONS.length} current`,
+  );
+  process.exit(0);
+}
+
+async function formatAndWriteProjection(filePath: string, source: string) {
+  const formatted = await formatProjectionSource(filePath, source);
   // Bun may map current projections on Windows. Replace them instead of truncating them.
   const temporaryPath = `${filePath}.${process.pid}.writing`;
   try {
@@ -441,17 +423,32 @@ async function formatAndWriteProjection(filePath: string, source: string) {
     await rm(temporaryPath, { force: true });
   }
 }
-const projections = [...expected].map(([fileName, source]) => [
-  path.join(outputDir, fileName),
-  source,
-]);
-projections.push([landingOutputPath, landingSource]);
-for (let index = 0; index < projections.length; index += 4) {
-  await Promise.all(
-    projections
-      .slice(index, index + 4)
-      .map(([filePath, source]) => formatAndWriteProjection(filePath, source)),
-  );
+const stageId = `${process.pid}-${Date.now()}`;
+const stagedOutputDir = `${outputDir}.stage-${stageId}`;
+const stagedLandingOutputPath = `${landingOutputPath}.stage-${stageId}.ts`;
+try {
+  await mkdir(stagedOutputDir, { recursive: true });
+  const projections = [...expected].map(([fileName, source]) => [
+    path.join(stagedOutputDir, fileName),
+    source,
+  ]);
+  projections.push([stagedLandingOutputPath, landingSource]);
+  for (let index = 0; index < projections.length; index += 4) {
+    await Promise.all(
+      projections
+        .slice(index, index + 4)
+        .map(([filePath, source]) => formatAndWriteProjection(filePath, source)),
+    );
+  }
+  await publishPreparedProjections([
+    { target: outputDir, staged: stagedOutputDir, kind: 'directory' },
+    { target: landingOutputPath, staged: stagedLandingOutputPath, kind: 'file' },
+  ]);
+} finally {
+  await Promise.all([
+    rm(stagedOutputDir, { recursive: true, force: true }),
+    rm(stagedLandingOutputPath, { force: true }),
+  ]);
 }
 console.log(
   `[styles:thumbnails] packs=${packIds.length} thumbnails=${assets.length} landing written`,

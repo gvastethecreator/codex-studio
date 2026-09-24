@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_02
 name: Cinematic & Media
+cardTitle: 'Cinematic Media'
+cardDescription: 'Film, broadcast, animation, media-grade looks.'
 description: A collection of 120+ styles covering film language, broadcast aesthetics, animation traditions, and historical photography.
 categories:
   - id: film-genres

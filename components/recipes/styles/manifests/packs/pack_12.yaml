@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_12
 name: Video Game Originals Vault
+cardTitle: 'Game Originals'
+cardDescription: 'Game-native worlds, arenas, quests, encounter moods.'
 description: An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.
 categories:
   - id: neon-urban-and-night-ops

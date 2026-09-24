@@ -10,6 +10,7 @@ import type {
   StyleRuntimePreset,
 } from '../components/recipes/styles/runtimeTypes';
 import { loadStyleManifestGraph, rootDir } from './style-manifest-files';
+import { publishPreparedProjections } from './generatedProjectionPublisher';
 
 const outputPath = path.join(rootDir, 'components', 'recipes', 'styleRuntimeData.generated.ts');
 const packOutputDir = path.join(rootDir, 'components', 'recipes', 'styleRuntimePacks.generated');
@@ -88,10 +89,13 @@ function categoryChunksForPack(pack: StyleRuntimePack): StyleRuntimeCategoryChun
 }
 
 function buildIndexSource() {
+  const manifestByPackId = new Map(packManifests.map((manifest) => [manifest.id, manifest]));
   const summaries = packs.map(({ id, name, description, presets }) => ({
     id,
     name,
     description,
+    cardTitle: manifestByPackId.get(id)?.cardTitle ?? name,
+    cardDescription: manifestByPackId.get(id)?.cardDescription ?? description,
     presetCount: presets.length,
   }));
   const loaderEntries = packs
@@ -110,6 +114,8 @@ function buildIndexSource() {
     '  id: string;',
     '  name: string;',
     '  description: string;',
+    '  cardTitle: string;',
+    '  cardDescription: string;',
     '  presetCount: number;',
     '}',
     '',
@@ -433,46 +439,65 @@ if (checkMode) {
   process.exit(0);
 }
 
-await rm(packOutputDir, { recursive: true, force: true });
-await mkdir(packOutputDir, { recursive: true });
-
-const packOutputPaths = packs.map((pack) => path.join(packOutputDir, `${pack.id}.ts`));
+const stagedPackOutputDir = `${packOutputDir}.stage-${checkRunId}`;
+const stagedOutputPath = `${outputPath}.stage-${checkRunId}.ts`;
+const stagedStaleDefaultImagesOutputPath = `${staleDefaultImagesOutputPath}.stage-${checkRunId}.ts`;
+const packOutputPaths = packs.map((pack) => path.join(stagedPackOutputDir, `${pack.id}.ts`));
 const categoryOutputPaths = packs.flatMap((pack) =>
   categoryChunksForPack(pack).map((category) =>
-    path.join(packOutputDir, pack.id, `${category.id}.ts`),
+    path.join(stagedPackOutputDir, pack.id, `${category.id}.ts`),
   ),
 );
-const staleDefaultImageIds = await loadStaleDefaultImageIds();
-await Promise.all(
-  packs.map((pack) => mkdir(path.join(packOutputDir, pack.id), { recursive: true })),
-);
-await Promise.all([
-  writeFile(outputPath, buildIndexSource(), 'utf8'),
-  writeFile(
-    staleDefaultImagesOutputPath,
-    buildStaleDefaultImagesSource(staleDefaultImageIds),
-    'utf8',
-  ),
-  ...packs.map((pack) =>
-    writeFile(path.join(packOutputDir, `${pack.id}.ts`), buildPackSource(pack), 'utf8'),
-  ),
-  ...packs.flatMap((pack) =>
-    categoryChunksForPack(pack).map((category) =>
-      writeFile(
-        path.join(packOutputDir, pack.id, `${category.id}.ts`),
-        buildCategorySource(category),
-        'utf8',
+
+try {
+  await mkdir(stagedPackOutputDir, { recursive: true });
+  const staleDefaultImageIds = await loadStaleDefaultImageIds();
+  await Promise.all(
+    packs.map((pack) => mkdir(path.join(stagedPackOutputDir, pack.id), { recursive: true })),
+  );
+  await Promise.all([
+    writeFile(stagedOutputPath, buildIndexSource(), 'utf8'),
+    writeFile(
+      stagedStaleDefaultImagesOutputPath,
+      buildStaleDefaultImagesSource(staleDefaultImageIds),
+      'utf8',
+    ),
+    ...packs.map((pack) =>
+      writeFile(path.join(stagedPackOutputDir, `${pack.id}.ts`), buildPackSource(pack), 'utf8'),
+    ),
+    ...packs.flatMap((pack) =>
+      categoryChunksForPack(pack).map((category) =>
+        writeFile(
+          path.join(stagedPackOutputDir, pack.id, `${category.id}.ts`),
+          buildCategorySource(category),
+          'utf8',
+        ),
       ),
     ),
-  ),
-]);
+  ]);
 
-if (!skipFormat) {
-  await formatGeneratedFiles([
-    outputPath,
-    staleDefaultImagesOutputPath,
-    ...packOutputPaths,
-    ...categoryOutputPaths,
+  if (!skipFormat) {
+    await formatGeneratedFiles([
+      stagedOutputPath,
+      stagedStaleDefaultImagesOutputPath,
+      ...packOutputPaths,
+      ...categoryOutputPaths,
+    ]);
+  }
+  await publishPreparedProjections([
+    { target: packOutputDir, staged: stagedPackOutputDir, kind: 'directory' },
+    { target: outputPath, staged: stagedOutputPath, kind: 'file' },
+    {
+      target: staleDefaultImagesOutputPath,
+      staged: stagedStaleDefaultImagesOutputPath,
+      kind: 'file',
+    },
+  ]);
+} finally {
+  await Promise.all([
+    rm(stagedPackOutputDir, { recursive: true, force: true }),
+    rm(stagedOutputPath, { force: true }),
+    rm(stagedStaleDefaultImagesOutputPath, { force: true }),
   ]);
 }
 

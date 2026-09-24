@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_06
 name: Essential Art Styles
+cardTitle: 'Essential Art'
+cardDescription: 'Painting, print, drawing, mixed media, digital art.'
 description: A broad survey of foundational art-making languages, from traditional pigment and draftsmanship to printmaking, digital workflows, mixed-media craft, and game-native visual systems.
 categories:
   - id: traditional-painting

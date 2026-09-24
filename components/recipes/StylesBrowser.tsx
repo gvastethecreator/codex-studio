@@ -6,37 +6,24 @@ import { useWorkspaceState } from '../../contexts/GlobalContext';
 import {
   IconArchive as Archive,
   IconArrowsSort as ArrowUpDown,
-  IconBolt as Bolt,
-  IconBook as BookOpen,
   IconBox as Box,
   IconBriefcase as Briefcase,
-  IconBuilding as Building,
-  IconCamera as Camera,
   IconCheck as Check,
   IconChevronDown as ChevronDown,
   IconChevronLeft as ChevronLeft,
   IconChevronRight as ChevronRight,
-  IconMovie as Clapperboard,
   IconCopy as Copy,
   IconFilter as Filter,
-  IconDeviceGamepad2 as Gamepad2,
   IconFolders as Folders,
   IconHeart as Heart,
   IconLayoutGrid as LayoutGrid,
-  IconMoonStars as MoonStars,
   IconStack as Layers,
-  IconPalette as Palette,
   IconPencil as PenTool,
   IconPlayerPlay as Play,
   IconPlus as Plus,
   IconSearch as Search,
-  IconShirt as Shirt,
   IconAdjustmentsHorizontal as SlidersHorizontal,
-  IconMoodPlus as SmilePlus,
   IconSparkles as Sparkles,
-  IconStar as Star,
-  IconSword as Sword,
-  IconDeviceTv as Tv,
   IconWand as Wand2,
   IconX as X,
 } from '@tabler/icons-react';
@@ -50,7 +37,7 @@ import {
   resolveStyleDefaultImageVariantThumbnails,
 } from '../../lib/styleThumbnailCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
-import { hasStylePresetIdentity, resolveRecipeIdentity } from '../../lib/recipeIdentity';
+import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
 import { StyleCategoryGlyph } from './StyleCategoryGlyph';
 import { resolveStyleCategoryIdentity } from './styleCategoryIdentity';
@@ -96,7 +83,6 @@ import {
 } from './stylesData';
 import type { ArchivedStylePresetEntry } from './archivedStylePresets';
 import { resolveStyleRuntimePackLoadRequest } from './styleRuntimePackRequirements';
-import type { StyleCollection } from './styles/collections';
 import {
   getStyleCollectionIdFromTabId,
   getStyleCollectionTabId,
@@ -117,10 +103,17 @@ import {
 import { useUserStyleLibrary } from './useUserStyleLibrary';
 import { useStyleComposition } from './useStyleComposition';
 import { useStyleBrowserNavigation } from './useStyleBrowserNavigation';
+import { projectActiveStylePack } from './styleActivePackProjection';
+import { groupStyleResultImagesByPreset } from './styleResultImagesByPreset';
+import {
+  PACK_THEMES,
+  getPackIcon,
+  getStyleCollectionIcon,
+  getStyleCollectionTheme,
+} from './styleNavigationPresentation';
 import type {
   StyleRecipeNavigationItem,
   StyleRecipeNavigationSection,
-  StyleTheme,
 } from './StyleRecipeNavigationPanel';
 import type {
   StyleCardHoverPreview,
@@ -241,132 +234,6 @@ const StylePresetCard = React.lazy(() =>
 );
 
 // Color mapping for each pack to give them distinct identities
-const PACK_THEMES: Record<string, StyleTheme> = {
-  [USER_STYLE_PACK_ID]: {
-    color: 'sky',
-    bg: 'bg-sky-500',
-    border: 'border-sky-500/2',
-    text: 'text-[color:var(--wb-info)]',
-  },
-  [FAVORITES_PACK_ID]: {
-    color: 'rose',
-    bg: 'bg-rose-600',
-    border: 'border-rose-600/2',
-    text: 'text-rose-500',
-  },
-  pack_01: {
-    color: 'cyan',
-    bg: 'bg-cyan-500',
-    border: 'border-cyan-500/2',
-    text: 'text-cyan-400',
-  }, // Photography & Realism
-  pack_02: {
-    color: 'indigo',
-    bg: 'bg-indigo-500',
-    border: 'border-indigo-500/2',
-    text: 'text-indigo-400',
-  }, // Cinematic & Media
-  pack_03: {
-    color: 'rose',
-    bg: 'bg-rose-500',
-    border: 'border-rose-500/2',
-    text: 'text-[color:var(--wb-danger)]',
-  }, // 3D & CGI Rendering
-  pack_04: {
-    color: 'fuchsia',
-    bg: 'bg-fuchsia-500',
-    border: 'border-fuchsia-500/2',
-    text: 'text-fuchsia-400',
-  }, // Illustration & Graphic Novel
-  pack_05: {
-    color: 'red',
-    bg: 'bg-red-600',
-    border: 'border-red-600',
-    text: 'text-red-500',
-  }, // Anime & Manga Universes
-  pack_06: {
-    color: 'amber',
-    bg: 'bg-amber-500',
-    border: 'border-amber-500/2',
-    text: 'text-[color:var(--wb-warning)]',
-  }, // Essential Art Styles
-  pack_07: {
-    color: 'emerald',
-    bg: 'bg-emerald-500',
-    border: 'border-emerald-500/2',
-    text: 'text-[color:var(--wb-success)]',
-  }, // Architecture & Interior
-  pack_08: {
-    color: 'violet',
-    bg: 'bg-violet-500',
-    border: 'border-violet-500/2',
-    text: 'text-violet-400',
-  }, // Fashion & Costume
-  pack_09: {
-    color: 'lime',
-    bg: 'bg-lime-500',
-    border: 'border-lime-500/2',
-    text: 'text-lime-400',
-  }, // Texture & Materiality
-  pack_10: {
-    color: 'blue',
-    bg: 'bg-blue-500',
-    border: 'border-blue-500/2',
-    text: 'text-blue-400',
-  }, // Abstract & Experimental
-  pack_11: {
-    color: 'orange',
-    bg: 'bg-orange-500',
-    border: 'border-orange-500/2',
-    text: 'text-orange-400',
-  }, // Miscellaneous & Fun
-  pack_12: {
-    color: 'emerald',
-    bg: 'bg-emerald-500',
-    border: 'border-emerald-500/2',
-    text: 'text-[color:var(--wb-success)]',
-  }, // Video Game Originals Vault
-  pack_13: {
-    color: 'pink',
-    bg: 'bg-pink-500',
-    border: 'border-pink-500/2',
-    text: 'text-pink-400',
-  }, // Anime Character & Lifestyle
-  pack_14: {
-    color: 'violet',
-    bg: 'bg-violet-500',
-    border: 'border-violet-500/2',
-    text: 'text-violet-400',
-  }, // Mythic Noir Curated Vault
-  pack_15: {
-    color: 'teal',
-    bg: 'bg-teal-500',
-    border: 'border-teal-500/2',
-    text: 'text-teal-400',
-  }, // Punk Spectrum Vault
-  pack_16: {
-    color: 'rose',
-    bg: 'bg-rose-500',
-    border: 'border-rose-500/2',
-    text: 'text-[color:var(--wb-danger)]',
-  }, // Anime Classics & Prestige
-  pack_17: {
-    color: 'green',
-    bg: 'bg-green-500',
-    border: 'border-green-500/2',
-    text: 'text-green-400',
-  }, // Medieval Fantasy & Dungeon Zine
-};
-
-const COLLECTION_FAMILY_THEMES: Record<string, StyleTheme> = {
-  personal: PACK_THEMES[USER_STYLE_PACK_ID],
-  capture_reality: PACK_THEMES.pack_01,
-  screen_motion: PACK_THEMES.pack_02,
-  illustration_art_media: PACK_THEMES.pack_04,
-  design_assets_materials: PACK_THEMES.pack_09,
-  worlds_genres: PACK_THEMES.pack_15,
-  experimental_play: PACK_THEMES.pack_10,
-};
 
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 
@@ -777,112 +644,6 @@ const StylePresetGroupSection = React.memo(
 function getStylePackSummary(packId: string) {
   if (packId === USER_STYLE_PACK_ID) return USER_STYLE_PACK_SUMMARY;
   return STYLE_RUNTIME_PACK_SUMMARIES.find((pack) => pack.id === packId) ?? null;
-}
-
-function getPackIcon(id: string): React.ReactNode {
-  const size = 18;
-  switch (id) {
-    case USER_STYLE_PACK_ID:
-      return <Sparkles size={size} />;
-    case FAVORITES_PACK_ID:
-      return <Heart size={size} fill="currentColor" />;
-    case 'pack_01':
-      return <Camera size={size} />;
-    case 'pack_02':
-      return <Clapperboard size={size} />;
-    case 'pack_03':
-      return <Box size={size} />;
-    case 'pack_04':
-      return <PenTool size={size} />;
-    case 'pack_05':
-      return <Sword size={size} />;
-    case 'pack_06':
-      return <Palette size={size} />;
-    case 'pack_07':
-      return <Building size={size} />;
-    case 'pack_08':
-      return <Shirt size={size} />;
-    case 'pack_09':
-      return <Layers size={size} />;
-    case 'pack_10':
-      return <Wand2 size={size} />;
-    case 'pack_11':
-      return <SmilePlus size={size} />;
-    case 'pack_12':
-      return <Gamepad2 size={size} />;
-    case 'pack_13':
-      return <Heart size={size} />;
-    case 'pack_14':
-      return <MoonStars size={size} />;
-    case 'pack_15':
-      return <Bolt size={size} />;
-    case 'pack_16':
-      return <Star size={size} />;
-    case 'pack_17':
-      return <BookOpen size={size} />;
-    default:
-      return <Layers size={size} />;
-  }
-}
-
-function getStyleCollectionIcon(icon: string, size = 18): React.ReactNode {
-  switch (icon) {
-    case 'sparkles':
-      return <Sparkles size={size} />;
-    case 'heart':
-      return <Heart size={size} fill="currentColor" />;
-    case 'clock':
-      return <Star size={size} />;
-    case 'camera':
-      return <Camera size={size} />;
-    case 'film':
-    case 'clapperboard':
-      return <Clapperboard size={size} />;
-    case 'bolt':
-    case 'zap':
-      return <Bolt size={size} />;
-    case 'scan':
-      return <Search size={size} />;
-    case 'tv':
-      return <Tv size={size} />;
-    case 'play':
-      return <Play size={size} />;
-    case 'book':
-      return <BookOpen size={size} />;
-    case 'palette':
-    case 'brush':
-      return <Palette size={size} />;
-    case 'pen':
-      return <PenTool size={size} />;
-    case 'wand':
-      return <Wand2 size={size} />;
-    case 'box':
-      return <Box size={size} />;
-    case 'layers':
-    case 'grid':
-      return <Layers size={size} />;
-    case 'shirt':
-      return <Shirt size={size} />;
-    case 'building':
-      return <Building size={size} />;
-    case 'gamepad':
-      return <Gamepad2 size={size} />;
-    case 'moon':
-    case 'moon-stars':
-      return <MoonStars size={size} />;
-    case 'sword':
-      return <Sword size={size} />;
-    case 'sliders':
-      return <SlidersHorizontal size={size} />;
-    case 'smile':
-      return <SmilePlus size={size} />;
-    default:
-      return <Layers size={size} />;
-  }
-}
-
-function getStyleCollectionTheme(collection: StyleCollection): StyleTheme {
-  return COLLECTION_FAMILY_THEMES[collection.familyId] ?? PACK_THEMES.pack_01;
 }
 
 // react-doctor-disable-next-line react-doctor/no-giant-component
@@ -1319,96 +1080,42 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     }
     return keys.size;
   }, [globalStylePacks]);
-  const activePack = useMemo(() => {
-    if (isGlobalStyleBrowseTab) {
-      return {
-        id: currentPackId,
-        name: isAllStyleCardsTab ? 'All Style Cards' : 'All Style Categories',
-        description: allRuntimeStylePacksLoaded
-          ? isAllStyleCardsTab
-            ? `${globalStylePresetCount} cards from every style pack.`
-            : `${globalStyleCategoryCount} categories from every style pack.`
-          : 'Loading the full style catalog.',
-        presets: globalStylePacks.flatMap((pack) => pack.presets),
-      } satisfies StyleRuntimePack;
-    }
-
-    if (activeStyleCollectionId) {
-      if (!activeStyleCollection || !styleCollectionsModule) {
-        return {
-          id: getStyleCollectionTabId(activeStyleCollectionId),
-          name: 'Style Collection',
-          description: styleCollectionsLoadError ?? 'Loading style collection.',
-          presets: [],
-        } satisfies StyleRuntimePack;
-      }
-
-      const sourcePacks = activeStyleCollection.sourcePackIds.flatMap((packId) => {
-        if (packId === USER_STYLE_PACK_ID) return [userStylePack];
-        const pack = loadedStylePacksById[packId];
-        return pack ? [pack] : [];
-      });
-      const missingSourcePack = activeStyleCollection.sourcePackIds.some(
-        (packId) => STYLE_RUNTIME_PACK_IDS.includes(packId) && !loadedStylePacksById[packId],
-      );
-
-      if (missingSourcePack) {
-        return {
-          id: getStyleCollectionTabId(activeStyleCollection.id),
-          name: activeStyleCollection.title,
-          description: 'Loading source packs for this style collection.',
-          presets: [],
-        } satisfies StyleRuntimePack;
-      }
-
-      const resolved = styleCollectionsModule.resolveStyleCollection(
+  const activePack = useMemo(
+    () =>
+      projectActiveStylePack({
+        currentPackId,
+        isGlobalStyleBrowseTab,
+        isAllStyleCardsTab,
+        activeStyleCollectionId,
         activeStyleCollection,
-        styleCollectionsModule.createStyleCollectionSourceIndex(sourcePacks),
-      );
-      return {
-        id: getStyleCollectionTabId(activeStyleCollection.id),
-        name: activeStyleCollection.title,
-        description: activeStyleCollection.description,
-        presets: resolved.presets.map((item) => item.preset),
-      } satisfies StyleRuntimePack;
-    }
-
-    if (currentPackId === FAVORITES_PACK_ID) {
-      return {
-        id: FAVORITES_PACK_ID,
-        name: 'Your Favorites',
-        description: 'A curated collection of your most used styles.',
-        presets: [], // Placeholder, populated in processedData
-      } satisfies StyleRuntimePack;
-    }
-    if (currentPackId === USER_STYLE_PACK_ID) return userStylePack;
-    const summary =
-      STYLE_RUNTIME_PACK_SUMMARIES.find((pack) => pack.id === currentPackId) ??
-      STYLE_RUNTIME_PACK_SUMMARIES[0];
-    return (
-      loadedStylePacksById[currentPackId] ??
-      ({
-        id: summary?.id ?? DEFAULT_STYLE_PACK_ID,
-        name: summary?.name ?? 'Styles',
-        description: summary?.description ?? 'Loading style presets.',
-        presets: [],
-      } satisfies StyleRuntimePack)
-    );
-  }, [
-    activeStyleCollection,
-    activeStyleCollectionId,
-    allRuntimeStylePacksLoaded,
-    currentPackId,
-    globalStyleCategoryCount,
-    globalStylePacks,
-    globalStylePresetCount,
-    isAllStyleCardsTab,
-    isGlobalStyleBrowseTab,
-    loadedStylePacksById,
-    styleCollectionsLoadError,
-    styleCollectionsModule,
-    userStylePack,
-  ]);
+        collectionProjection: styleCollectionsModule,
+        collectionLoadError: styleCollectionsLoadError,
+        allRuntimeStylePacksLoaded,
+        globalStylePresetCount,
+        globalStyleCategoryCount,
+        globalStylePacks,
+        userStylePack,
+        loadedStylePacksById,
+        runtimePackIds: STYLE_RUNTIME_PACK_IDS,
+        summaries: STYLE_RUNTIME_PACK_SUMMARIES,
+        favoritesPackId: FAVORITES_PACK_ID,
+      }),
+    [
+      activeStyleCollection,
+      activeStyleCollectionId,
+      allRuntimeStylePacksLoaded,
+      currentPackId,
+      globalStyleCategoryCount,
+      globalStylePacks,
+      globalStylePresetCount,
+      isAllStyleCardsTab,
+      isGlobalStyleBrowseTab,
+      loadedStylePacksById,
+      styleCollectionsLoadError,
+      styleCollectionsModule,
+      userStylePack,
+    ],
+  );
 
   const activeStyleCollectionSourceByPresetId = useMemo(() => {
     const sourceByPresetId = new Map<string, StylePresetSourceProvenance>();
@@ -1647,39 +1354,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
     return [...presetById.values()];
   }, [processedData]);
 
-  const resultImagesByPresetId = useMemo(() => {
-    const imagesByPresetId = new Map<string, GeneratedImageWithConfig[]>();
-    for (const image of images) {
-      const identity = resolveRecipeIdentity(image.config);
-      if (identity?.recipeId !== 'styles') continue;
-      const presetIds = new Set<string>();
-      if (typeof identity.recipeParams.presetId === 'string') {
-        presetIds.add(identity.recipeParams.presetId);
-      }
-      const selectedStylesParam = identity.recipeParams.selectedStyles;
-      if (Array.isArray(selectedStylesParam)) {
-        for (const entry of selectedStylesParam) {
-          if (
-            entry &&
-            typeof entry === 'object' &&
-            !Array.isArray(entry) &&
-            typeof (entry as { presetId?: unknown }).presetId === 'string'
-          ) {
-            presetIds.add((entry as { presetId: string }).presetId);
-          }
-        }
-      }
-      for (const presetId of presetIds) {
-        const current = imagesByPresetId.get(presetId);
-        if (current) current.push(image);
-        else imagesByPresetId.set(presetId, [image]);
-      }
-    }
-    for (const presetImages of imagesByPresetId.values()) {
-      presetImages.sort((first, second) => second.createdAt - first.createdAt);
-    }
-    return imagesByPresetId;
-  }, [images]);
+  const resultImagesByPresetId = useMemo(() => groupStyleResultImagesByPreset(images), [images]);
 
   const getPresetVisualState = useCallback(
     (preset: StyleRuntimePreset) => {

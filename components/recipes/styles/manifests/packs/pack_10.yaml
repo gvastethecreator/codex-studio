@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_10
 name: Abstract & Experimental
+cardTitle: 'Abstract Lab'
+cardDescription: 'Glitch, geometry, surreal systems, visual experiments.'
 description: A semantically grouped abstract library covering geometric systems, reactive material
   flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven
   surfaces.

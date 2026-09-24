@@ -464,4 +464,33 @@ describe('style collection projection', () => {
       }),
     ).toEqual([]);
   });
+
+  it('rejects collection entries whose pack is absent from its load dependencies', () => {
+    const sourceIndex = createStyleCollectionSourceIndex([pack('pack_a', []), pack('pack_b', [])]);
+    const collection = {
+      id: 'mixed',
+      title: 'Mixed',
+      familyId: 'family',
+      description: '',
+      icon: 'layers',
+      order: 1,
+      sourcePackIds: ['pack_a'],
+      entries: [
+        { id: 'a', kind: 'pack', packId: 'pack_a' },
+        {
+          id: 'b',
+          kind: 'manual_group',
+          entries: [{ id: 'nested', kind: 'pack', packId: 'pack_b' }],
+        },
+      ],
+    } satisfies StyleCollection;
+
+    expect(
+      validateStyleCollections({
+        families: [{ id: 'family', title: 'Family', description: '', order: 1 }],
+        collections: [collection],
+        sourceIndex,
+      }).map((issue) => issue.code),
+    ).toContain('collection_missing_source_pack');
+  });
 });

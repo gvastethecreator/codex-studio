@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_01
 name: Photography & Realism
+cardTitle: 'Photo Realism'
+cardDescription: 'Photography, film stock, lens, portrait, lighting.'
 description: A comprehensive collection of 80+ photographic styles, film stocks, and lighting setups.
 categories:
   - id: portrait-and-studio

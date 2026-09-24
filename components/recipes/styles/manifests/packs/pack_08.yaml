@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_08
 name: Fashion & Costume
+cardTitle: 'Fashion Costume'
+cardDescription: 'Fashion, costume, fabric, subculture silhouettes.'
 description: A fashion and costume library spanning contemporary editorial looks, subcultural dress codes, historical silhouettes, character-costume fantasy, and material-forward transformation concepts.
 categories:
   - id: contemporary-fashion

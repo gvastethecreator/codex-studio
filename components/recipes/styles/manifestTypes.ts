@@ -67,6 +67,8 @@ export interface StylePackManifest {
   id: string;
   name: string;
   description: string;
+  cardTitle?: string;
+  cardDescription?: string;
   categories: StylePackManifestCategory[];
   presetRefs: string[];
 }

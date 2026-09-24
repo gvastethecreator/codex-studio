@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_13
 name: Anime Character & Lifestyle
+cardTitle: 'Anime Lifestyle'
+cardDescription: 'Character anime, slice-of-life, shojo, magical moods.'
 description: Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and
   expressive everyday storytelling.
 categories:

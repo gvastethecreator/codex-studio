@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_05
 name: Anime Battle & Worlds
+cardTitle: 'Anime Battle'
+cardDescription: 'Action anime, battles, mecha, fantasy worlds.'
 description: High-energy anime styles focused on battles, power systems, mecha worlds, isekai
   adventures, and dark seinen action.
 categories:

@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_09
 name: Texture & Materiality
+cardTitle: 'Texture Material'
+cardDescription: 'Materials, surfaces, texture, wear, procedural FX.'
 description: A deep dive into realistic materials, surfaces, and elemental effects, perfect for 3D artists and texture generation.
 categories:
   - id: natural-materials

@@ -119,6 +119,16 @@ function validateEntry(
   }
 }
 
+function collectEntryPackIds(entries: readonly StyleCollectionEntry[]): Set<string> {
+  const packIds = new Set<string>();
+  for (const entry of entries) {
+    if (entry.packId) packIds.add(entry.packId);
+    for (const packId of entry.query?.packIds ?? []) packIds.add(packId);
+    for (const packId of collectEntryPackIds(entry.entries ?? [])) packIds.add(packId);
+  }
+  return packIds;
+}
+
 export function validateStyleCollections({
   families,
   collections,
@@ -157,6 +167,26 @@ export function validateStyleCollections({
         message: `Collection ${collection.id} has no entries.`,
         collectionId: collection.id,
       });
+    }
+    const requiredPackIds = collectEntryPackIds(collection.entries);
+    const declaredPackIds = new Set(collection.sourcePackIds);
+    for (const packId of requiredPackIds) {
+      if (!declaredPackIds.has(packId)) {
+        issues.push({
+          code: 'collection_missing_source_pack',
+          message: `Collection ${collection.id} uses ${packId} without declaring it for loading.`,
+          collectionId: collection.id,
+        });
+      }
+    }
+    for (const packId of declaredPackIds) {
+      if (!requiredPackIds.has(packId)) {
+        issues.push({
+          code: 'collection_unused_source_pack',
+          message: `Collection ${collection.id} declares unused source pack ${packId}.`,
+          collectionId: collection.id,
+        });
+      }
     }
     const entryIds = new Set<string>();
     for (const entry of collection.entries) {

@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_03
 name: 3D & CGI Rendering
+cardTitle: '3D CGI'
+cardDescription: 'CGI, render engines, materials, stylized 3D.'
 description: A comprehensive collection of 80+ 3D rendering pipelines, visual looks, and material simulations.
 categories:
   - id: render-engines

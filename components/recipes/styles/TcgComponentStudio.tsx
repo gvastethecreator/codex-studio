@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 import type { ChangeEvent } from 'react';
 import type { GeneratedImageWithConfig } from '../../../types';
 import {
@@ -9,12 +9,9 @@ import {
   resolveTcgRecipe,
 } from './tcgComponentModel';
 import type { TcgFinish, TcgLayout, TcgRecipe } from './tcgComponentModel';
-import {
-  getRequiredTcgArtworkCount,
-  getRequiredTcgMasks,
-  renderTcgComposition,
-} from './tcgCardRenderer';
+import { getRequiredTcgArtworkCount, getRequiredTcgMasks } from './tcgCardRenderer';
 import type { TcgArtworkSource, TcgRenderInput } from './tcgCardRenderer';
+import { getTcgCompositionReadiness, useTcgCompositionPreview } from './useTcgCompositionPreview';
 
 export interface TcgComponentStudioProps {
   query: string;
@@ -37,13 +34,6 @@ interface CardFields {
   name: string;
   type: string;
   rules: string;
-}
-
-interface RenderHealth {
-  input: TcgRenderInput;
-  missingMaskKeys: string[];
-  failedArtworkSlots: number[];
-  failedMaskKeys: string[];
 }
 
 const EMPTY_ARTWORK_CHOICES: ArtworkChoice[] = [null, null, null, null];
@@ -72,10 +62,6 @@ export function TcgComponentStudio({
   const [activeFace, setActiveFace] = useState<0 | 1>(0);
   const [fileError, setFileError] = useState('');
   const [generationError, setGenerationError] = useState('');
-  const [renderError, setRenderError] = useState('');
-  const [rendering, setRendering] = useState(false);
-  const [renderHealth, setRenderHealth] = useState<RenderHealth | null>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const selectedRecipe = TCG_RECIPES.find((entry) => entry.id === recipeId) ?? initialRecipe;
   const selectedFinish = TCG_FINISHES.find((entry) => entry.id === finishId) ?? TCG_FINISHES[0];
@@ -131,61 +117,18 @@ export function TcgComponentStudio({
   const filteredCatalogCount =
     matchedFinishes.length + matchedLayouts.length + matchedRecipes.length;
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return undefined;
-    let cancelled = false;
-    setRendering(true);
-    setRenderError('');
-    const timer = window.setTimeout(() => {
-      void renderTcgComposition(renderInput)
-        .then((result) => {
-          if (cancelled) return;
-          canvas.width = result.width;
-          canvas.height = result.height;
-          const context = canvas.getContext('2d');
-          if (!context) throw new Error('No se pudo dibujar la vista previa.');
-          context.clearRect(0, 0, result.width, result.height);
-          context.drawImage(result.canvas, 0, 0);
-          setRenderHealth({
-            input: renderInput,
-            missingMaskKeys: result.missingMaskKeys,
-            failedArtworkSlots: result.failedArtworkSlots,
-            failedMaskKeys: result.failedMaskKeys,
-          });
-          setRendering(false);
-        })
-        .catch((error: unknown) => {
-          if (cancelled) return;
-          setRenderError(
-            error instanceof Error ? error.message : 'No se pudo renderizar la composición.',
-          );
-          setRenderHealth(null);
-          setRendering(false);
-        });
-    }, 120);
-    return () => {
-      cancelled = true;
-      window.clearTimeout(timer);
-    };
-  }, [renderInput]);
-
-  const selectedArtCount = artwork
-    .slice(0, requiredArtworkCount)
-    .filter((entry) => !!entry.src).length;
-  const missingArtSlots = requiredArtworkCount - selectedArtCount;
-  const outstandingMasks =
-    renderHealth?.missingMaskKeys ?? requiredMaskKeys.filter((key) => !maskSources[key]);
-  const invalidMasks = renderHealth?.failedMaskKeys ?? [];
-  const invalidArt = renderHealth?.failedArtworkSlots ?? [];
-  const canExport =
-    renderHealth?.input === renderInput &&
-    !rendering &&
-    !renderError &&
-    missingArtSlots === 0 &&
-    outstandingMasks.length === 0 &&
-    invalidMasks.length === 0 &&
-    invalidArt.length === 0;
+  const { canvasRef, renderError, setRenderError, rendering, renderHealth } =
+    useTcgCompositionPreview(renderInput);
+  const { selectedArtCount, canExport, selectedReasons } = getTcgCompositionReadiness({
+    artwork,
+    requiredArtworkCount,
+    requiredMaskKeys,
+    maskSources,
+    renderInput,
+    renderHealth,
+    rendering,
+    renderError,
+  });
 
   const setRecipe = (newRecipeId: TcgRecipe['id']) => {
     const recipe = TCG_RECIPES.find((entry) => entry.id === newRecipeId);
@@ -293,15 +236,6 @@ export function TcgComponentStudio({
     if (layoutId === 'TCG-L006') return `Narrativa ${index + 1}`;
     return 'Arte principal';
   };
-
-  const selectedReasons = [
-    ...outstandingMasks.map((key) => `Falta la máscara PNG ${key}.`),
-    ...invalidMasks.map((key) => `No se pudo leer la máscara ${key}.`),
-    ...invalidArt.map((index) => `No se pudo cargar el arte ${index + 1}.`),
-    ...(missingArtSlots > 0
-      ? [`Falta(n) ${missingArtSlots} archivo(s) de arte para este layout.`]
-      : []),
-  ];
 
   return (
     <div className="space-y-5" data-tcg-component-studio>

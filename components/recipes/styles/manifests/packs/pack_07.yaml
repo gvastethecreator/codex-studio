@@ -1,6 +1,8 @@
 schemaVersion: 1
 id: pack_07
 name: Architecture & Interior
+cardTitle: 'Architecture'
+cardDescription: 'Architecture, interiors, landscapes, spatial design.'
 description: Architectural styles and interior design aesthetics.
 categories:
   - id: interior-design-systems

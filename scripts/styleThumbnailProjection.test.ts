@@ -3,8 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
   collectStyleLandingFolderPreferredKeys,
   groupThumbnailPackIds,
-  isGeneratedThumbnailModuleStale,
-  isLandingFolderIndexStale,
+  isStyleProjectionStale,
   packIdFromThumbnailAssetKey,
   presetIdFromThumbnailAssetKey,
   resolveThumbnailAssetPackId,
@@ -37,21 +36,13 @@ describe('style thumbnail projection helpers', () => {
       ['pack_13'],
       ['pack_16'],
     ]);
-    expect(
-      isGeneratedThumbnailModuleStale({
-        actual: "pack_16: () => import('./thumbnail_group_09')",
-        referencedFiles: ['./thumbnail_group_09'],
-        isIndex: true,
-      }),
-    ).toBe(false);
-    expect(
-      isLandingFolderIndexStale({
-        actual:
-          'export const STYLE_LANDING_FOLDER_SUMMARIES_BY_ID = { pack_16: true }\npresetCount: 12',
-        expectedIds: ['pack_16'],
-        expectedCounts: ['presetCount: 12'],
-      }),
-    ).toBe(false);
+  });
+
+  it('detects changed landing content even when IDs and counts stay the same', () => {
+    const expected = 'pack_16: { presetCount: 12, imageKeys: ["new-card"] }\n';
+    const actual = 'pack_16: { presetCount: 12, imageKeys: ["old-card"] }\r\n';
+    expect(isStyleProjectionStale(actual, expected)).toBe(true);
+    expect(isStyleProjectionStale(expected.replace(/\n/g, '\r\n'), expected)).toBe(false);
   });
 
   it('keeps landing folder keys unique and limited to available assets', () => {

@@ -1,29 +1,8 @@
 import { CatalogCardBackdrop } from '../CatalogCardBackdrop';
 import {
-  IconBolt as Bolt,
-  IconBook as BookOpen,
-  IconBox as Box,
-  IconBuilding as Building,
-  IconCamera as Camera,
   IconChevronLeft as ChevronLeft,
   IconChevronRight as ChevronRight,
-  IconMovie as Clapperboard,
-  IconDeviceGamepad2 as Gamepad2,
-  IconHeart as Heart,
   IconStack as Layers,
-  IconPalette as Palette,
-  IconPencil as PenTool,
-  IconPlayerPlay as Play,
-  IconSearch as Search,
-  IconShirt as Shirt,
-  IconAdjustmentsHorizontal as SlidersHorizontal,
-  IconMoodPlus as SmilePlus,
-  IconSparkles as Sparkles,
-  IconStar as Star,
-  IconSword as Sword,
-  IconDeviceTv as Tv,
-  IconWand as Wand2,
-  IconMoonStars as MoonStars,
 } from '@tabler/icons-react';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
@@ -47,6 +26,14 @@ import { STYLE_RUNTIME_PACK_SUMMARIES } from './stylesData';
 import { resolveStyleRuntimePackLoadRequest } from './styleRuntimePackRequirements';
 import { STYLE_PACKS_TAB_ID } from './styleTabRouting';
 import { USER_STYLE_PACK_ID } from './userStyleRuntimeAdapter';
+import {
+  COLLECTION_FAMILY_THEMES,
+  PACK_THEMES,
+  getPackIcon,
+  getStyleCollectionIcon,
+  getStyleCollectionTheme,
+} from './styleNavigationPresentation';
+import type { StyleTheme } from './StyleRecipeNavigationPanel';
 
 const FAVORITES_PACK_ID = 'favorites';
 const STYLE_FOLDER_EASE = 'power3.out';
@@ -65,86 +52,12 @@ function loadStyleFolderGsap() {
   return styleFolderGsapPromise;
 }
 
-type StyleTheme = { bg: string; text: string };
-
-const PACK_THEMES: Record<string, StyleTheme> = {
-  [USER_STYLE_PACK_ID]: { bg: 'bg-sky-500', text: 'text-[color:var(--wb-info)]' },
-  [FAVORITES_PACK_ID]: { bg: 'bg-rose-600', text: 'text-rose-500' },
-  pack_01: { bg: 'bg-cyan-500', text: 'text-cyan-400' },
-  pack_02: { bg: 'bg-indigo-500', text: 'text-indigo-400' },
-  pack_03: { bg: 'bg-rose-500', text: 'text-[color:var(--wb-danger)]' },
-  pack_04: { bg: 'bg-fuchsia-500', text: 'text-fuchsia-400' },
-  pack_05: { bg: 'bg-red-600', text: 'text-red-500' },
-  pack_06: { bg: 'bg-amber-500', text: 'text-[color:var(--wb-warning)]' },
-  pack_07: { bg: 'bg-emerald-500', text: 'text-[color:var(--wb-success)]' },
-  pack_08: { bg: 'bg-violet-500', text: 'text-violet-400' },
-  pack_09: { bg: 'bg-lime-500', text: 'text-lime-400' },
-  pack_10: { bg: 'bg-blue-500', text: 'text-blue-400' },
-  pack_11: { bg: 'bg-orange-500', text: 'text-orange-400' },
-  pack_12: { bg: 'bg-emerald-500', text: 'text-[color:var(--wb-success)]' },
-  pack_13: { bg: 'bg-pink-500', text: 'text-pink-400' },
-  pack_14: { bg: 'bg-violet-500', text: 'text-violet-400' },
-  pack_15: { bg: 'bg-teal-500', text: 'text-teal-400' },
-  pack_16: { bg: 'bg-rose-500', text: 'text-[color:var(--wb-danger)]' },
-  pack_17: { bg: 'bg-green-500', text: 'text-green-400' },
-};
-
-const COLLECTION_FAMILY_THEMES: Record<string, StyleTheme> = {
-  personal: PACK_THEMES[USER_STYLE_PACK_ID],
-  capture_reality: PACK_THEMES.pack_01,
-  screen_motion: PACK_THEMES.pack_02,
-  illustration_art_media: PACK_THEMES.pack_04,
-  design_assets_materials: PACK_THEMES.pack_09,
-  worlds_genres: PACK_THEMES.pack_15,
-  experimental_play: PACK_THEMES.pack_10,
-};
-
 const VISIBLE_STYLE_COLLECTIONS = STYLE_COLLECTIONS.filter(
   (collection) => collection.entries.length > 0 && collection.id !== 'my_styles',
 );
 const STYLE_NAVIGATION_COLLECTIONS = VISIBLE_STYLE_COLLECTIONS.filter(
   (collection) => collection.familyId !== 'personal',
 );
-
-const PACK_CARD_TITLES: Record<string, string> = {
-  pack_01: 'Photo Realism',
-  pack_02: 'Cinematic Media',
-  pack_03: '3D CGI',
-  pack_04: 'Graphic Novel',
-  pack_05: 'Anime Battle',
-  pack_06: 'Essential Art',
-  pack_07: 'Architecture',
-  pack_08: 'Fashion Costume',
-  pack_09: 'Texture Material',
-  pack_10: 'Abstract Lab',
-  pack_11: 'Fun Oddities',
-  pack_12: 'Game Originals',
-  pack_13: 'Anime Lifestyle',
-  pack_14: 'Mythic Noir',
-  pack_15: 'Punk Spectrum',
-  pack_16: 'Anime Prestige',
-  pack_17: 'Dungeon Zine',
-};
-
-const PACK_CARD_DESCRIPTIONS: Record<string, string> = {
-  pack_01: 'Photography, film stock, lens, portrait, lighting.',
-  pack_02: 'Film, broadcast, animation, media-grade looks.',
-  pack_03: 'CGI, render engines, materials, stylized 3D.',
-  pack_04: 'Comics, illustration, ink, posters, editorial art.',
-  pack_05: 'Action anime, battles, mecha, fantasy worlds.',
-  pack_06: 'Painting, print, drawing, mixed media, digital art.',
-  pack_07: 'Architecture, interiors, landscapes, spatial design.',
-  pack_08: 'Fashion, costume, fabric, subculture silhouettes.',
-  pack_09: 'Materials, surfaces, texture, wear, procedural FX.',
-  pack_10: 'Glitch, geometry, surreal systems, visual experiments.',
-  pack_11: 'Playful objects, food, toys, science curiosities.',
-  pack_12: 'Game-native worlds, arenas, quests, encounter moods.',
-  pack_13: 'Character anime, slice-of-life, shojo, magical moods.',
-  pack_14: 'Cultures and mythologies, expressive motifs, mythic illustration.',
-  pack_15: 'Punk languages, DIY rebellion, biotech, media ghosts.',
-  pack_16: 'Classic anime craft, prestige drama, retro eras.',
-  pack_17: 'Fantasy zines, dungeons, bestiary, grim kingdoms.',
-};
 
 interface StyleCollectionsLandingSurfaceProps {
   favoritesCount: number;
@@ -194,108 +107,6 @@ interface StyleNavigationSection {
   id: string;
   title: string;
   items: StyleNavigationItem[];
-}
-
-function getStyleCollectionIcon(icon: string, size = 18): React.ReactNode {
-  switch (icon) {
-    case 'sparkles':
-      return <Sparkles size={size} />;
-    case 'heart':
-      return <Heart size={size} fill="currentColor" />;
-    case 'clock':
-      return <Star size={size} />;
-    case 'camera':
-      return <Camera size={size} />;
-    case 'film':
-    case 'clapperboard':
-      return <Clapperboard size={size} />;
-    case 'bolt':
-    case 'zap':
-      return <Bolt size={size} />;
-    case 'scan':
-      return <Search size={size} />;
-    case 'tv':
-      return <Tv size={size} />;
-    case 'play':
-      return <Play size={size} />;
-    case 'book':
-      return <BookOpen size={size} />;
-    case 'palette':
-    case 'brush':
-      return <Palette size={size} />;
-    case 'pen':
-      return <PenTool size={size} />;
-    case 'wand':
-      return <Wand2 size={size} />;
-    case 'box':
-      return <Box size={size} />;
-    case 'layers':
-    case 'grid':
-      return <Layers size={size} />;
-    case 'shirt':
-      return <Shirt size={size} />;
-    case 'building':
-      return <Building size={size} />;
-    case 'gamepad':
-      return <Gamepad2 size={size} />;
-    case 'moon':
-    case 'moon-stars':
-      return <MoonStars size={size} />;
-    case 'sword':
-      return <Sword size={size} />;
-    case 'sliders':
-      return <SlidersHorizontal size={size} />;
-    case 'smile':
-      return <SmilePlus size={size} />;
-    default:
-      return <Layers size={size} />;
-  }
-}
-
-function getPackIcon(id: string): React.ReactNode {
-  const size = 18;
-  switch (id) {
-    case 'pack_01':
-      return <Camera size={size} />;
-    case 'pack_02':
-      return <Clapperboard size={size} />;
-    case 'pack_03':
-      return <Box size={size} />;
-    case 'pack_04':
-      return <PenTool size={size} />;
-    case 'pack_05':
-      return <Sword size={size} />;
-    case 'pack_06':
-      return <Palette size={size} />;
-    case 'pack_07':
-      return <Building size={size} />;
-    case 'pack_08':
-      return <Shirt size={size} />;
-    case 'pack_09':
-      return <Layers size={size} />;
-    case 'pack_10':
-      return <Wand2 size={size} />;
-    case 'pack_11':
-      return <SmilePlus size={size} />;
-    case 'pack_12':
-      return <Gamepad2 size={size} />;
-    case 'pack_13':
-      return <Heart size={size} />;
-    case 'pack_14':
-      return <MoonStars size={size} />;
-    case 'pack_15':
-      return <Bolt size={size} />;
-    case 'pack_16':
-      return <Star size={size} />;
-    case 'pack_17':
-      return <BookOpen size={size} />;
-    default:
-      return <Layers size={size} />;
-  }
-}
-
-function getStyleCollectionTheme(collection: StyleCollection): StyleTheme {
-  return COLLECTION_FAMILY_THEMES[collection.familyId] ?? PACK_THEMES.pack_01;
 }
 
 function getStyleCollectionTitleClassName(title: string) {
@@ -724,7 +535,7 @@ function SourcePackCard({
   thumbnailRevision: number;
 }) {
   const theme = PACK_THEMES[pack.id] ?? PACK_THEMES.pack_01;
-  const title = PACK_CARD_TITLES[pack.id] ?? pack.name;
+  const title = pack.cardTitle;
   const imageCandidates = useMemo(
     () => getLandingFolderImageCandidates(pack.id),
     [pack.id, thumbnailRevision],
@@ -735,7 +546,7 @@ function SourcePackCard({
       id={pack.id}
       targetId={targetId}
       title={title}
-      description={PACK_CARD_DESCRIPTIONS[pack.id] ?? pack.description}
+      description={pack.cardDescription}
       countLabel={`${pack.presetCount}`}
       countAriaLabel={`${pack.name} presets ${pack.presetCount}`}
       eyebrow="Source pack"
@@ -973,7 +784,7 @@ function StyleSourcePacksSection({
             <StyleFolderPlaceholder
               key={pack.id}
               {...sharedProps}
-              title={PACK_CARD_TITLES[pack.id] ?? pack.name}
+              title={pack.cardTitle}
               tabHash={getStyleTabHash(pack.id)}
               theme={PACK_THEMES[pack.id] ?? PACK_THEMES.pack_01}
               dataAttributes={{ 'data-style-pack-card': pack.id }}
@@ -1195,7 +1006,7 @@ export function StyleCollectionsLandingSurface({
           return {
             id: `source:${pack.id}`,
             targetId: `source:${pack.id}`,
-            label: PACK_CARD_TITLES[pack.id] ?? pack.name,
+            label: pack.cardTitle,
             caption: 'Source pack',
             countLabel: `${pack.presetCount}`,
             tabId: pack.id,
