@@ -4,9 +4,11 @@ import {
   createCodexRuntimePreflight,
   createChatgptRuntimePreflight,
   createAntigravityRuntimePreflight,
+  createDryRunRuntimePreflight,
   createGrokRuntimePreflight,
   createProviderReadinessMaps,
   getExternalProviderRuntimePreflight,
+  getGenerationProviderRuntimePreflight,
   readExternalProviderRuntimePreflights,
 } from './runtimeConfig';
 
@@ -230,6 +232,20 @@ describe('provider runtime config', () => {
       localRuntimeState: 'configured',
       canAttemptExecution: true,
       availableModels: ['gemini-3.8-flash-low'],
+    });
+  });
+
+  it('reports the diagnostic dry run provider in runtime preflight', () => {
+    expect(createDryRunRuntimePreflight()).toMatchObject({
+      providerId: 'dry_run',
+      runtimeKind: 'dry_run',
+      canAttemptExecution: true,
+      availableModels: ['dry-run'],
+      defaultModel: 'dry-run',
+    });
+    expect(getGenerationProviderRuntimePreflight('dry_run', {})).toMatchObject({
+      providerId: 'dry_run',
+      canAttemptExecution: true,
     });
   });
 

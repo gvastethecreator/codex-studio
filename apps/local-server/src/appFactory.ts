@@ -74,7 +74,7 @@ import {
 import { getProviderExecutionBlocker, readProviderCapabilities } from './providerCapabilities';
 import { resolveBootstrapProviderExecutionOptions } from './providers/providerExecutionDefaults';
 import {
-  getExternalProviderRuntimePreflight,
+  getGenerationProviderRuntimePreflight,
   readGenerationProviderRuntimePreflights,
 } from './providers/runtimeConfig';
 import { createOutputSourceRoutes } from './outputSourceRoutes';
@@ -404,7 +404,7 @@ export async function createStudioApp(
                 readAntigravityRuntimeDoctorFn(),
               )
             : [
-                getExternalProviderRuntimePreflight(
+                getGenerationProviderRuntimePreflight(
                   providerId,
                   process.env,
                   readGrokRuntimeDoctorFn(),

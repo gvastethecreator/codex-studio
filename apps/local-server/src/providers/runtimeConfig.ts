@@ -305,6 +305,22 @@ export function createAntigravityRuntimePreflight(
   };
 }
 
+export function createDryRunRuntimePreflight(): GenerationProviderRuntimePreflight {
+  return {
+    providerId: 'dry_run',
+    runtimeKind: 'dry_run',
+    availableRuntimeKinds: ['dry_run'],
+    secretState: 'not_required',
+    secretSource: null,
+    localRuntimeState: 'not_required',
+    localRuntimeSource: null,
+    canAttemptExecution: true,
+    diagnostics: ['Diagnostic local adapter is available.'],
+    availableModels: ['dry-run'],
+    defaultModel: 'dry-run',
+  };
+}
+
 function uniqueStrings(values: readonly string[]) {
   return [...new Set(values.filter(Boolean))];
 }
@@ -337,6 +353,7 @@ export function readGenerationProviderRuntimePreflights(
     createGrokRuntimePreflight(grokRuntime, { env }),
     createAntigravityRuntimePreflight(antigravityRuntime),
     ...readExternalProviderRuntimePreflights(env),
+    createDryRunRuntimePreflight(),
   ];
 }
 
@@ -357,6 +374,15 @@ export function getExternalProviderRuntimePreflight(
       (preflight) => preflight.providerId === providerId,
     ) ?? null
   );
+}
+
+export function getGenerationProviderRuntimePreflight(
+  providerId: GenerationProviderId,
+  env: Record<string, string | undefined> = process.env,
+  grokRuntime?: GrokRuntimeDoctorReport,
+): GenerationProviderRuntimePreflight | null {
+  if (providerId === 'dry_run') return createDryRunRuntimePreflight();
+  return getExternalProviderRuntimePreflight(providerId, env, grokRuntime);
 }
 
 export function createProviderReadinessMaps(
