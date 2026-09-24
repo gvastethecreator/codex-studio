@@ -18,13 +18,9 @@ export const MAX_GROK_IMAGINE_SOURCE_IMAGES = 5;
 
 export const MAX_GROK_IMAGINE_HTTP_SOURCE_IMAGES = 3;
 
-export const GROK_IMAGINE_HTTP_MODELS = [
-  'grok-imagine-image',
-  'grok-imagine-image-2.0',
-  'grok-imagine-image-quality',
-] as const;
+export const GROK_IMAGINE_HTTP_MODELS = ['grok-imagine-image-2.0'] as const;
 
-export const DEFAULT_GROK_IMAGINE_HTTP_MODEL = 'grok-imagine-image';
+export const DEFAULT_GROK_IMAGINE_HTTP_MODEL = 'grok-imagine-image-2.0';
 
 export const GROK_IMAGINE_RECIPE_IDS = ['styles'] as const;
 

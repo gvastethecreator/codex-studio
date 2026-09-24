@@ -121,7 +121,7 @@ Some SuperGrok tiers return HTTP 403 after a successful xAI Sign in. That is an 
 
 If Studio selects the wrong binary, set `STUDIO_GROK_CLI_PATH` to the stable native Grok executable and restart the backend.
 
-`grok models` on Grok Build 1.0.4 prints `Default model:` plus a `*` default and `-` other models. HTTP generation uses `grok-imagine-image` unless `GROK_IMAGE_MODEL` or Settings store a `grok-imagine-*` id. If a stored Settings model is missing from the list, intake rejects the job before enqueue.
+`grok models` on Grok Build 1.0.4 prints `Default model:` plus a `*` default and `-` other models. HTTP generation uses `grok-imagine-image-2.0` unless `GROK_IMAGE_MODEL` or Settings store a current `grok-imagine-*` id. If a stored Settings model is missing from the list, intake rejects the job before enqueue.
 
 Grok Jobs reject these cases before enqueue:
 

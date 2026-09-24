@@ -106,14 +106,14 @@ describe('Grok Imagine HTTP executor', () => {
     ).toThrow('must use HTTPS');
   });
 
-  it('maps chat models to grok-imagine-image and stores inline PNG without leaking the token', async () => {
-    expect(resolveGrokImagineHttpModel('grok-4.5', {})).toBe('grok-imagine-image');
+  it('maps chat models to grok-imagine-image-2.0 and stores inline PNG without leaking the token', async () => {
+    expect(resolveGrokImagineHttpModel('grok-4.5', {})).toBe('grok-imagine-image-2.0');
     const writes: Array<{ filePath: string; content: unknown }> = [];
     const fetchMock = async (input: string | URL | Request, init?: RequestInit) => {
       expect(inputToUrl(input)).toBe('https://api.x.ai/v1/images/generations');
       if (typeof init?.body !== 'string') throw new Error('Expected string request body.');
       const body = JSON.parse(init.body) as Record<string, unknown>;
-      expect(body.model).toBe('grok-imagine-image');
+      expect(body.model).toBe('grok-imagine-image-2.0');
       expect(body.response_format).toBe('b64_json');
       expect(body.aspect_ratio).toBe('16:9');
       expect(JSON.stringify(init?.headers)).toContain('xai-secret');
@@ -175,11 +175,11 @@ describe('Grok Imagine HTTP executor', () => {
     });
   });
 
-  it('posts image_url objects for edits and maps chat models to grok-imagine-image', async () => {
+  it('posts image_url objects for edits and maps chat models to grok-imagine-image-2.0', async () => {
     const fetchMock = async (_input: string | URL | Request, init?: RequestInit) => {
       if (typeof init?.body !== 'string') throw new Error('Expected string request body.');
       const body = JSON.parse(init.body) as Record<string, unknown>;
-      expect(body.model).toBe('grok-imagine-image');
+      expect(body.model).toBe('grok-imagine-image-2.0');
       expect(body.response_format).toBe('b64_json');
       expect(body.image).toEqual({
         url: expect.stringMatching(/^data:image\/png;base64,/),
